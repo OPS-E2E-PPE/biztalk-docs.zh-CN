@@ -1,5 +1,5 @@
 ---
-title: 如何将映射单一登录凭据 |Microsoft 文档
+title: 如何将映射单一登录凭据 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,33 +12,33 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1a2717a990cf6ac2bac92067354afd42931c9a75
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5534eb63d7b9586017d77ffd84606a842f12a48d
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254205"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37002892"
 ---
 # <a name="how-to-map-single-sign-on-credentials"></a>如何将单一登录凭据的映射
-在企业单一登录数据库中已具有关联应用程序之后，即可将用户的凭据映射到该应用程序。 将当前用户的凭据映射到关联的应用程序需要结合使用`ISSOMapper`和`ISSOMapping`接口。  
+在企业单一登录数据库中已具有关联应用程序之后，即可将用户的凭据映射到该应用程序。 将当前用户的凭据映射到关联应用程序需要您使用的组合`ISSOMapper`和`ISSOMapping`接口。  
   
 ### <a name="to-map-between-an-affiliated-application-and-user-credentials"></a>在关联应用程序与用户凭据之间建立映射  
   
-1.  创建的新实例`ISSOMapper`和`ISSOMapping`。  
+1. 创建的新实例`ISSOMapper`和`ISSOMapping`。  
   
-2.  设置`ISSOMapping`为相关的值的属性。  
+2. 设置`ISSOMapping`相关值的属性。  
   
-     相关属性`ISSOMapping`是用户的 Microsoft Windows 域名、 的 Windows 用户名、 关联的应用程序，名称和外部用户名称。  
+    相关属性`ISSOMapping`是用户的 Microsoft Windows 域名、 Windows 用户名称、 关联应用程序的名称和外部用户名称。  
   
-3.  通过调用 ISSOMapping.Create 来创建该映射。  
+3. 通过调用 ISSOMapping.Create 来创建该映射。  
   
-     调用`ISSOMapping.Create`传播出的映射到企业单一登录服务器的本地副本。  
+    调用`ISSOMapping.Create`传播映射到企业单一登录服务器的本地副本。  
   
-4.  通过调用映射上设置凭据`ISSOMapper.SetExternalCredentials`。  
+4. 通过调用映射设置凭据`ISSOMapper.SetExternalCredentials`。  
   
-5.  启用通过调用映射`ISSOMapping.Enable`。  
+5. 启用通过调用映射`ISSOMapping.Enable`。  
   
- 以下示例显示了如何在指定的企业单一登录应用程序与用户之间添加映射：  
+   以下示例显示了如何在指定的企业单一登录应用程序与用户之间添加映射：  
   
 ```  
 public static bool AddMapping(string application, string user, string XU, string XP)  
@@ -68,5 +68,5 @@ public static bool AddMapping(string application, string user, string XU, string
       }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [使用企业单一登录进行编程](../core/programming-with-enterprise-single-sign-on.md)
+## <a name="see-also"></a>请参阅  
+ [使用企业单一登录编程](../core/programming-with-enterprise-single-sign-on.md)

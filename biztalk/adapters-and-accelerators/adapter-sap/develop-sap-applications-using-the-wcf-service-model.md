@@ -1,5 +1,5 @@
 ---
-title: 开发使用 WCF 服务模型的 SAP 应用程序 |Microsoft 文档
+title: 开发 SAP 应用程序使用 WCF 服务模型 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,52 +14,52 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4933610f8416b2c7fb81861562480e355dd8d373
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5e47e652f01f29c33952187f165c428df63a45c9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22217173"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36998646"
 ---
-# <a name="develop-sap-applications-using-the-wcf-service-model"></a>开发使用 WCF 服务模型的 SAP 应用程序
-在最低级别，[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]提供一个在其中客户端调用服务上的操作通过在客户端和服务终结点之间建立信道交换 SOAP 消息的编程模型。 此模型中，称为 WCF 通道模型，公开数据类型和方法，您可以直接对 WCF 通道体系结构进行操作。 WCF 通道模型为您提供通过你创建的 SOAP 消息的内容和方式这两个应用程序的直接控制和[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]使用它们; 但是，创建格式正确的 SOAP 消息在通道上发送和验证返回答复消息可以是详细、 更严格的任务。  
+# <a name="develop-sap-applications-using-the-wcf-service-model"></a>开发 SAP 应用程序使用 WCF 服务模型
+最低级别[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]显示在其中客户端调用服务上的操作由客户端和服务终结点之间建立的通道通过交换 SOAP 消息的编程模型。 此模型中，名为 WCF 通道模型，公开的数据类型和方法，使你能够直接在 WCF 通道体系结构上运行。 WCF 通道模型为您提供直接控制对您创建的 SOAP 消息的内容和方式这两个应用程序和[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]使用它们; 但是，创建格式正确的 SOAP 消息在通道上发送和验证返回答复消息可以是详细、 更严格的任务。  
   
- 为此，[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]提供另一个调用 WCF 服务模型的编程模型。 WCF 服务模型涉及使用代理类来调用针对目标服务的操作或从客户端接收操作。  
+ 出于此原因，[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]提供了另一个名为 WCF 服务模型的编程模型。 WCF 服务模型涉及到使用代理类来调用目标服务上的操作，或若要从客户端接收操作。  
   
--   用于调用操作将针对目标服务的代理类调用 WCF 客户端类。 此类模型作为使用强类型参数的.NET 方法由服务公开的操作。 通过使用 WCF 服务模型，你可以调用公开的运算[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]为 WCF 客户端上的.NET 方法。 有关 WCF 客户端的详细信息，请参阅[WCF 客户端概述](https://msdn.microsoft.com/library/ms735103.aspx)。
+- 用于目标服务调用操作的代理类调用 WCF 客户端类。 此类模型由服务公开为强类型化参数使用的.NET 方法的操作。 通过使用 WCF 服务模型，可以调用公开的操作[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]为 WCF 客户端上的.NET 方法。 有关 WCF 客户端的详细信息，请参阅[WCF 客户端概述](https://msdn.microsoft.com/library/ms735103.aspx)。
   
--   用于从客户端接收操作的代理类调用 WCF 服务协定类。 此类模型作为具有强类型参数的回调方法的代码公开的操作。 然后可以托管在此类的实例**System.ServiceModel.ServiceHost**使客户端以调用你的代码上的操作。 可以通过使用 WCF 服务模型和指向 POLLINGSTMT 操作一个 WCF 服务协定类，接收从轮询查询的结果[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。  
+- 用于从客户端接收操作的代理类调用 WCF 服务协定类。 此类模型具有强类型化参数的回调方法作为你的代码公开的操作。 然后可以托管在此类的实例**System.ServiceModel.ServiceHost**启用客户端以调用代码操作。 可以通过使用 WCF 服务模型和针对 POLLINGSTMT 操作的 WCF 服务协定类，接收从轮询查询的结果[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。  
   
- 使用工具来生成 WCF 客户端类或 WCF 服务协定和关联的服务元数据中的帮助器代码，[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]公开。 你可以使用以下工具之一：  
+  使用工具来生成 WCF 客户端类或 WCF 服务协定和关联的服务元数据中的帮助器代码的[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]公开。 您可以使用以下工具：  
   
--   ServiceModel 元数据实用工具 (svcutil.exe)，其中附带 WCF  
+- ServiceModel Metadata Utility Tool (svcutil.exe)，其中附带了 WCF  
   
--   [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]，其中附带[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]  
+- [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]，附带的 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]  
   
- [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]与集成[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]设计体验和显示标准的 Microsoft Windows 接口提供了功能强大的浏览和搜索功能公开的适配器操作。 有关如何生成 WCF 客户端或 WCF 服务协定类的详细信息，请参阅[生成 WCF 客户端或 WCF 服务协定 SAP 解决方案项目](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)。  
+  [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]与集成[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]设计体验并提供标准的 Microsoft Windows 接口提供了功能强大的浏览和搜索功能对由适配器公开的操作。 有关如何生成 WCF 客户端或 WCF 服务协定类的详细信息，请参阅[生成 WCF 客户端或 WCF 服务约定的 SAP 解决方案项目](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)。  
   
- 因为它提供的模型，可为.NET 程序员所熟悉和，以通过通道隐藏基础 SOAP 消息交换的复杂性，WCF 服务模型通常是最佳选择，以编程的开发解决方案[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。 但是，有在其中 WCF 通道模型可能是更好的选择; 的方案特别是在中哪种流式处理方案非常重要。 这是因为序列化和反序列化的 XML 表示形式在 SOAP 消息的对象和用于表示它们的服务模型中的.NET 类型之间涉及到读取到内存的整个消息。 有关使用 WCF 通道模型的详细信息，请参阅[开发 SAP 应用程序使用 WCF 通道模型](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)。
+  因为它提供的模型，这就是.NET 程序员所熟悉的和，以通过通道隐藏基础 SOAP 消息交换的复杂性时，WCF 服务模型通常是最佳选择开发的编程解决方案[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。 但是，有些的方案中的 WCF 通道模型可能更好的选择;特别是在哪种流式处理方案非常重要。 这是因为序列化和反序列化的 XML 表示形式中的 SOAP 消息的对象和用来表示它们的服务模型中的.NET 类型之间涉及到读取到内存中的整个消息。 有关使用 WCF 通道模型的详细信息，请参阅[开发 SAP 应用程序使用 WCF 通道模型](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)。
   
- 本部分中的主题包含信息、 过程和示例来帮助你创建并使用 WCF 服务模型来开发应用程序使用[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。  
+  在本部分中的主题包含信息、 步骤和示例来帮助你创建和使用 WCF 服务模型开发应用程序使用[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [与 SAP 适配器的 WCF 服务模型概述](../../adapters-and-accelerators/adapter-sap/overview-of-the-wcf-service-model-with-the-sap-adapter.md)  
+-   [使用 SAP 适配器的 WCF 服务模型概述](../../adapters-and-accelerators/adapter-sap/overview-of-the-wcf-service-model-with-the-sap-adapter.md)  
   
--   [元数据和 WCF 服务模型与 SAP](../../adapters-and-accelerators/adapter-sap/metadata-and-the-wcf-service-model-with-sap.md)  
+-   [元数据和具有 SAP 的 WCF 服务模型](../../adapters-and-accelerators/adapter-sap/metadata-and-the-wcf-service-model-with-sap.md)  
   
--   [生成 WCF 客户端或 WCF 服务协定 SAP 解决方案项目](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)  
+-   [生成 WCF 客户端或 WCF 服务约定的 SAP 解决方案项目](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)  
   
 -   [为 SAP 系统配置客户端绑定](../../adapters-and-accelerators/adapter-sap/configure-a-client-binding-for-the-sap-system.md)  
   
--   [使用 WCF 服务模型调用中 SAP Rfc](../../adapters-and-accelerators/adapter-sap/invoke-rfcs-in-sap-using-the-wcf-service-model.md)  
+-   [在 SAP 中的 Rfc 调用通过使用 WCF 服务模型](../../adapters-and-accelerators/adapter-sap/invoke-rfcs-in-sap-using-the-wcf-service-model.md)  
   
--   [通过使用 WCF 服务模型在 SAP 中收到入站的 RFC 调用](../../adapters-and-accelerators/adapter-sap/receive-inbound-rfc-calls-in-sap-using-the-wcf-service-model.md)  
+-   [使用 WCF 服务模型在 SAP 中接收入站的 RFC 调用](../../adapters-and-accelerators/adapter-sap/receive-inbound-rfc-calls-in-sap-using-the-wcf-service-model.md)  
   
--   [使用 WCF 服务模型调用 tRFCs](../../adapters-and-accelerators/adapter-sap/invoke-trfcs-in-sap-using-the-wcf-service-model.md)  
+-   [使用 WCF 服务模型调用 Trfc](../../adapters-and-accelerators/adapter-sap/invoke-trfcs-in-sap-using-the-wcf-service-model.md)  
   
--   [通过使用 WCF 服务模型在 SAP 中收到入站的 tRFC 调用](../../adapters-and-accelerators/adapter-sap/receive-inbound-trfc-calls-in-sap-using-the-wcf-service-model.md)  
+-   [使用 WCF 服务模型在 SAP 中接收入站的 tRFC 调用](../../adapters-and-accelerators/adapter-sap/receive-inbound-trfc-calls-in-sap-using-the-wcf-service-model.md)  
   
--   [使用 WCF 服务模型调用 BAPIs SAP 中](../../adapters-and-accelerators/adapter-sap/invoke-bapis-in-sap-using-the-wcf-service-model.md)  
+-   [使用 WCF 服务模型调用在 SAP 中的 Bapi](../../adapters-and-accelerators/adapter-sap/invoke-bapis-in-sap-using-the-wcf-service-model.md)  
   
--   [使用 WCF 服务模型将 Idoc 发送到 SAP](../../adapters-and-accelerators/adapter-sap/send-idocs-to-sap-using-the-wcf-service-model.md)
+-   [通过使用 WCF 服务模型向 SAP 发送 Idoc](../../adapters-and-accelerators/adapter-sap/send-idocs-to-sap-using-the-wcf-service-model.md)

@@ -1,5 +1,5 @@
 ---
-title: 如何开发相互依赖的业务流程 |Microsoft 文档
+title: 如何开发相互依赖的业务流程 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,43 +12,43 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 93f8d086a60487e144b02c01a393eb6f10a63b40
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a6375add6d27e6ce0d3dff89bd2b172a2b693356
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22249477"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36992398"
 ---
 # <a name="how-to-develop-interdependent-orchestrations"></a>如何开发相互依赖的业务流程
-你可以使用[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]开发一套提供相互依赖 Web 服务的业务流程。 当必须引用数据类型和/或业务流程从中调用它们中的端口的业务流程时，会发生此情况。 这种方案的示例的特征如下：  
+可以使用[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]开发一组具有相互依赖的 Web 服务的业务流程。 当有引用数据类型和/或从其调用它们的业务流程中的端口的业务流程时，会发生此情况。 这种情况下的示例是具有以下特征：  
   
--   具有两个或多个业务流程。  
+- 有两个或多个业务流程。  
   
--   第一个业务流程 (Orch1) 使用单向 Web 服务调用调用第二个业务流程 (Orch2)。  
+- 第一个业务流程 (Orch1) 使用一个单向 Web 服务调用调用第二个业务流程 (Orch2)。  
   
--   Orch2 响应回 Orch1 与 Web 服务调用。  
+- Orch2 响应回 Orch1 的 Web 服务调用。  
   
- 有关此类型的项目的一个示例，请参阅[教程 2： 采购订单过程](http://msdn.microsoft.com/library/a324ef1b-39b3-49ab-9719-a13f526cb467)。  
+  此类型的项目的一个示例，请参阅[教程 2： 采购订单流程](http://msdn.microsoft.com/library/a324ef1b-39b3-49ab-9719-a13f526cb467)。  
   
 ### <a name="to-develop-two-interdependent-orchestrations-orch1-and-orch2"></a>若要开发 Orch1 和 Orch2 的两个相互依赖业务流程  
   
-1.  使用[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，创建具有接收端口将作为 Web 服务公开 Orch1 的部分版本。  
+1. 使用[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，创建具有将作为 Web 服务公开的接收端口 Orch1 的部分版本。  
   
-2.  编译 Orch1。  
+2. 编译 Orch1。  
   
-3.  运行 Web 服务发布向导并发布该端口。  
+3. 运行 Web Services 发布向导并发布端口。  
   
-4.  使用[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、 创建和完成所有 Orch2，使用 Orch1 的 web 服务。  
+4. 使用[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]、 创建和完成所有 Orch2，使用 Orch1 的 web 服务。  
   
-5.  编译 Orch2。  
+5. 编译 Orch2。  
   
-6.  运行 Web 服务发布向导并发布端口。  
+6. 运行 Web Services 发布向导并发布端口。  
   
-7.  完成 Orch1，使用 Orch2 的 web 服务根据需要。  
+7. 完成 Orch1，使用 Orch2 的 web 服务根据需要。  
   
-8.  重新编译 Orch1。  
+8. 重新编译 Orch1。  
   
 9. 部署 Orch1 和 Orch2。  
   
-## <a name="see-also"></a>另请参阅  
- [如何使用发布向导的 BizTalk Web 服务发布作为 Web 服务业务流程](../core/publish-orchestration-as-web-service--biztalk-web-services-publishing-wizard.md)
+## <a name="see-also"></a>请参阅  
+ [如何使用 BizTalk Web Services 发布向导业务流程发布为 Web 服务](../core/publish-orchestration-as-web-service--biztalk-web-services-publishing-wizard.md)

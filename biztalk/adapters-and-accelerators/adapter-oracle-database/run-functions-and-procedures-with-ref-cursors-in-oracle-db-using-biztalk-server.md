@@ -1,5 +1,5 @@
 ---
-title: 调用函数和过程与使用 BizTalk Server 的 Oracle 数据库中的 REF CURSOR |Microsoft 文档
+title: 调用函数和过程与使用 BizTalk Server 的 Oracle 数据库中的 REF CURSOR |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,64 +17,64 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f9072f3df5c85ed09c5efbdc5e690a8eccc97b2f
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 1b4ba20e8cef6e60ca8bfd669ee05cc49d5c4890
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25967475"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36997886"
 ---
 # <a name="invoke-functions-and-procedures-with-ref-cursors-in-oracle-database-using-biztalk-server"></a>调用函数和过程与使用 BizTalk Server 的 Oracle 数据库中的 REF CURSOR
-REF CURSOR 是表示指向服务器端结果集通过执行查询生成的指针的 PL/SQL 数据类型。 REF CURSOR 类型使输入和输出流的数据非常适合传输大量数据传入和传出的 PL/SQL 代码。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]提供支持强类型和弱类型 (SYS_REFCURSOR) REF Cursor，可在缩小，传递给 PL/SQL 过程和函数中或在 OUT 参数。 有关详细信息，如何[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]支持 REF Cursor，请参阅[函数和过程与 REF CURSOR 参数上的操作](../../adapters-and-accelerators/adapter-oracle-database/ref-cursor-parameters-in-oracle-database-adapter.md)。 REF CURSOR 的 XML 结构的信息，请参阅[REF CURSOR 的消息架构](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-ref-cursors.md)。  
+REF CURSOR 是 PL/SQL 数据类型表示的指针指向服务器端结果集生成的执行查询。 REF CURSOR 类型支持输入和输出数据的流，适合用于传输大量数据传入和传出 PL/SQL 代码。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]提供强类型化和弱类型 (SYS_REFCURSOR) REF Cursor，可缩小，传递给 PL/SQL 过程和函数中，或在 OUT 参数的支持。 详细了解如何[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]支持 REF Cursor，请参阅[对包含 REF CURSOR 参数函数和过程的操作](../../adapters-and-accelerators/adapter-oracle-database/ref-cursor-parameters-in-oracle-database-adapter.md)。 REF CURSOR 的 XML 结构的信息，请参阅[REF CURSORS 的消息架构](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-ref-cursors.md)。  
   
-## <a name="how-to-invoke-functions-in-an-oracle-database"></a>如何在 Oracle 数据库中调用函数？  
- 使用 Oracle 数据库上执行操作[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]与[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]涉及过程中所述的任务[开发与 Oracle 数据库的 BizTalk 应用程序的构建基块](../../adapters-and-accelerators/adapter-oracle-database/building-blocks-to-develop-biztalk-applications-with-oracle-database.md)。 若要调用作为 in 参数接受 REF CURSOR 并作为输出参数提供 REF CURSOR 的 Oracle 数据库中的函数，这些任务包括：  
+## <a name="how-to-invoke-functions-in-an-oracle-database"></a>如何调用 Oracle 数据库中的函数？  
+ 执行对 Oracle 数据库使用的操作[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]与[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]涉及过程中所述的任务[构建基块来开发 BizTalk 应用程序与 Oracle 数据库](../../adapters-and-accelerators/adapter-oracle-database/building-blocks-to-develop-biztalk-applications-with-oracle-database.md)。 若要调用作为 in 参数接受 REF CURSOR 并为输出参数提供 REF CURSOR 的 Oracle 数据库中的函数，这些任务包括：  
   
-1.  创建 BizTalk 项目，并生成你想要在 Oracle 数据库中调用的函数的架构。  
+1. 创建 BizTalk 项目，并为你想要在 Oracle 数据库中调用该函数生成架构。  
   
-2.  在发送和接收消息从 Oracle 数据库的 BizTalk 项目中创建消息。  
+2. 在 BizTalk 项目中为发送和接收消息从 Oracle 数据库创建消息。  
   
-3.  创建业务流程来调用该函数的 Oracle 数据库中。  
+3. 创建一个业务流程调用的 Oracle 数据库中的函数。  
   
-4.  生成和部署 BizTalk 项目。  
+4. 生成并部署 BizTalk 项目。  
   
-5.  配置的 BizTalk 应用程序创建的物理发送和接收端口。  
+5. 配置的 BizTalk 应用程序通过创建物理发送端口和接收端口。  
   
-6.  启动 BizTalk 应用程序。  
+6. 启动 BizTalk 应用程序。  
   
- 本主题提供执行这些任务的说明。  
+   本主题介绍如何执行这些任务。  
   
 ## <a name="sample-based-on-this-topic"></a>基于本主题的示例  
- 示例中，Func_RefCursor，基于本主题还提供与[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。 有关详细信息，请参阅[适配器示例](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)。  
+ 示例中，Func_RefCursor，根据本主题还提供与[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。 有关详细信息，请参阅[适配器示例](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)。  
   
 ## <a name="generating-schema"></a>生成架构  
- 在此主题中，以演示如何[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]支持调用带 REF CURSOR 参数函数，我们将调用 GET_ACTIVITY 过程。 此过程使用弱类型在 REF CURSOR 和强类型 IN 出 REF CURSOR 作为参数。 该函数返回的状态，弱类型出 REF CURSOR 和强类型 IN 出 REF CURSOR。 GET_ACTIVITY 过程可通过运行这些示例提供的 SQL 脚本创建 ACCOUNT_PKG 的一部分。 若要了解有关这些示例和 SQL 脚本的详细信息，请参阅[架构示例](../../adapters-and-accelerators/accelerator-rosettanet/schema-samples.md)。  
+ 本主题演示如何将[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]支持调用带 REF CURSOR 参数函数，我们将调用 GET_ACTIVITY 过程。 此过程将弱类型在 REF CURSOR 和强类型化 IN 出 REF CURSOR 作为参数。 该函数返回的状态，弱类型化 OUT REF CURSOR 和强类型化 IN 出 REF CURSOR。 GET_ACTIVITY 过程可通过在运行这些示例提供的 SQL 脚本 ACCOUNT_PKG 的一部分。 若要了解有关这些示例和 SQL 脚本的详细信息，请参阅[架构示例](../../adapters-and-accelerators/accelerator-rosettanet/schema-samples.md)。  
   
- 因此，若要调用 GET_ACTIVITY 过程，我们生成架构 SCOTT\Package\ACCOUNT_PKG 架构在相同的过程。 请参阅[为 Visual Studio 中的 Oracle 数据库操作获取元数据](../../adapters-and-accelerators/adapter-oracle-database/get-metadata-for-oracle-database-operations-in-visual-studio.md)有关如何生成架构的详细信息。  
+ 因此，若要调用 GET_ACTIVITY 过程，我们生成 SCOTT\Package\ACCOUNT_PKG 架构下的相同过程的架构。 请参阅[获取 Visual Studio 中的 Oracle 数据库操作的元数据](../../adapters-and-accelerators/adapter-oracle-database/get-metadata-for-oracle-database-operations-in-visual-studio.md)有关如何生成架构的详细信息。  
   
 ## <a name="defining-messages-and-message-types"></a>定义消息和消息类型  
- 你先前生成的架构描述业务流程中的消息所需的"类型"。 一条消息通常是一个变量，为其类型由相应的架构定义。 你必须链接您生成第一步中的邮件从 BizTalk 项目的业务流程视图窗口的架构。  
+ 先前生成的架构描述业务流程中的消息所需的"类型"。 一条消息通常是一个变量，要为其类型定义由相应的架构。 必须链接生成的架构，第一步中的消息从 BizTalk 项目的业务流程视图窗口。  
   
- 对于本主题中，你必须创建两条消息，另一个用于将请求发送到 Oracle 数据库，另一个用于接收响应。  
+ 对于本主题中，您必须创建两条消息，另一个用于将请求发送到 Oracle 数据库，另一个用于接收响应。  
   
- 执行以下步骤以创建消息并将它们链接到该架构：  
+ 执行以下步骤以创建消息并将其链接到该架构：  
   
-#### <a name="to-create-messages-and-link-to-schema"></a>创建消息并将链接到架构  
+#### <a name="to-create-messages-and-link-to-schema"></a>若要创建消息并将链接到架构  
   
-1.  如果尚未打开，请打开 BizTalk 项目的业务流程视图窗口。 若要执行此操作，请单击**视图**，指向**其他窗口**，然后单击**业务流程视图**。  
+1.  如果尚未打开，请打开 BizTalk 项目的业务流程视图窗口。 若要执行此操作，请单击**视图**，依次指向**其他 Windows**，然后单击**业务流程视图**。  
   
 2.  在业务流程视图中，右键单击**消息**，然后单击**新消息**。  
   
-3.  右键单击新创建的消息中，，然后选择**属性窗口**。  
+3.  右键单击新创建的消息，然后依次**属性窗口**。  
   
-4.  在**属性**窗格**Message_1**，执行以下操作：  
+4.  在中**属性**窗格**Message_1**，执行以下操作：  
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
     |Identifier|类型**请求**。|  
-    |消息类型|从下拉列表中，展开**架构**，然后选择*Func_RefCursor.OracleDBBindingSchema.GET_ACTIVITY*，其中*Func_RefCursor*是你的 BizTalk 的名称项目。 *OracleDBBindingSchema*是为 GET_ACTIVITY 过程生成的架构。|  
+    |消息类型|从下拉列表中，展开**架构**，然后选择*Func_RefCursor.OracleDBBindingSchema.GET_ACTIVITY*，其中*Func_RefCursor*是 BizTalk 的名称项目。 *OracleDBBindingSchema*是为 GET_ACTIVITY 过程生成的架构。|  
   
-5.  重复上述步骤以创建新的消息。 在**属性**窗格中，为新的消息中，执行以下操作：  
+5.  重复上述步骤以创建新的消息。 在中**属性**窗格中的新消息，执行以下操作：  
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
@@ -82,88 +82,88 @@ REF CURSOR 是表示指向服务器端结果集通过执行查询生成的指针
     |消息类型|*Func_RefCursor.OracleDBBindingSchema.GET_ACTIVITYResponse*|  
   
 ## <a name="setting-up-the-orchestration"></a>设置业务流程  
- 你必须创建要使用 BizTalk 业务流程[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]调用带 REF CURSOR 参数的过程。 此业务流程，在你删除时的请求消息的定义接收位置。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]使用此消息，并通过 ODP 将其传递到 Oracle 数据库。 从 Oracle 数据库的响应保存到另一个位置。 调用函数和过程与 REF Cursor 典型业务流程会包含：  
+ 必须创建 BizTalk 业务流程使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]调用带有 REF CURSOR 参数的过程。 在将请求消息放在此业务流程，定义接收位置。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]使用此消息并通过 ODP 将其传递到 Oracle 数据库。 从 Oracle 数据库的响应保存到另一个位置。 将包含一个典型的业务流程调用包含 REF Cursor 函数和过程：  
   
--   发送和接收形状来将消息发送到 Oracle 数据库和接收响应。  
+- 发送和接收形状来将消息发送到 Oracle 数据库和接收响应。  
   
--   单向接收端口接收请求消息发送到 Oracle 数据库。  
+- 一个单向接收端口接收请求消息将发送到 Oracle 数据库。  
   
--   双向发送端口发送请求消息到 Oracle 数据库和接收响应。  
+- 一个双向发送端口以发送请求消息到 Oracle 数据库和接收响应。  
   
--   单向发送端口将响应从 Oracle 数据库发送到的文件夹。  
+- 一个单向发送端口用于从 Oracle 数据库将响应发送到的文件夹。  
   
- 示例业务流程如下所示：  
+  示例业务流程如下所示：  
   
- ![在 Oracle 中使用 Ref Cursor 的业务流程](../../adapters-and-accelerators/adapter-oracle-database/media/41ed9647-a49d-4122-b9fc-c5ce4dca3533.gif "41ed9647-a49d-4122-b9fc-c5ce4dca3533")  
+  ![用于使用 Oracle 中的 Ref Cursor 的业务流程](../../adapters-and-accelerators/adapter-oracle-database/media/41ed9647-a49d-4122-b9fc-c5ce4dca3533.gif "41ed9647-a49d-4122-b9fc-c5ce4dca3533")  
   
 ### <a name="adding-message-shapes"></a>添加消息形状  
- 请确保为每个消息形状指定以下属性。 刚提到业务流程中所示，形状列中列出的名称将是消息形状的名称。  
+ 请确保为每个消息形状中指定以下属性。 形状列中列出的名称是在刚提到的业务流程中显示的消息形状的名称。  
   
 |形状|形状类型|属性|  
 |-----------|----------------|----------------|  
-|ReceiveMessage|Receive|-将设置**名称**到*ReceiveMessage*<br />-将设置**激活**到*True*|  
-|发送消息|Send|-将设置**名称**到*SendMessage*|  
-|ReceiveResponse|Receive|-将设置**名称**到*ReceiveResponse*<br />-将设置**激活**到*False*|  
-|SendResponse|Send|-将设置**名称**到*SendResponse*|  
+|ReceiveMessage|Receive|-设置**名称**到*ReceiveMessage*<br />-设置**激活**到 *，则返回 True*|  
+|SendMessage|Send|-设置**名称**到*SendMessage*|  
+|ReceiveResponse|Receive|-设置**名称**到*ReceiveResponse*<br />-设置**激活**到*False*|  
+|SendResponse|Send|-设置**名称**到*SendResponse*|  
   
 ### <a name="adding-ports"></a>添加端口  
- 请确保为每个逻辑端口指定以下属性。 端口列中列出的名称是在业务流程中显示的端口的名称。  
+ 请确保为每个逻辑端口中指定以下属性。 端口列中列出的名称是在业务流程中显示的端口的名称。  
   
 |端口|属性|  
 |----------|----------------|  
-|文件|-将设置**标识符**到*文件*<br />-将设置**类型**到*FileInType*<br />-将设置**通信模式**到*单向*<br />-将设置**通信方向**到*接收*|  
-|LOBPort|-将设置**标识符**到*LOBPort*<br />-将设置**类型**到*LOBPortType*<br />-将设置**通信模式**到*请求-响应*<br />-将设置**通信方向**到*发送接收*|  
-|SaveResponse|-将设置**标识符**到*SaveResponse*<br />-将设置**类型**到*SaveResponseType*<br />-将设置**通信模式**到*单向*<br />-将设置**通信方向**到*发送*|  
+|FileIn|-设置**标识符**到*FileIn*<br />-设置**类型**到*FileInType*<br />-设置**通信模式**到*单向*<br />-设置**通信方向**到*接收*|  
+|LOBPort|-设置**标识符**到*LOBPort*<br />-设置**类型**到*LOBPortType*<br />-设置**通信模式**到*请求-响应*<br />-设置**通信方向**到*发送接收*|  
+|SaveResponse|-设置**标识符**到*SaveResponse*<br />-设置**类型**到*SaveResponseType*<br />-设置**通信模式**到*单向*<br />-设置**通信方向**到*发送*|  
   
-## <a name="specify-messages-for-action-shapes-and-connect-them-to-ports"></a>对于操作形状，指定消息并将其连接到端口  
- 下表指定属性应设置为指定操作形状的消息并将它们链接到端口及其值。 前面提到的业务流程中所示，形状列中列出的名称将是消息形状的名称。  
+## <a name="specify-messages-for-action-shapes-and-connect-them-to-ports"></a>为操作形状指定消息并将它们连接到端口  
+ 下表指定的属性和它们应设置为指定操作形状的消息并将其链接到的端口的值。 形状列中列出的名称是消息形状的名称，前面所述的业务流程中所示。  
   
 |形状|属性|  
 |-----------|----------------|  
-|ReceiveMessage|-将设置**消息**到*请求*<br />-将设置**操作**到*FileIn.REFCURSOR.Request*|  
-|发送消息|-将设置**消息**到*请求*<br />-将设置**操作**到*LOBPort.REFCURSOR.Request*|  
-|ReceiveResponse|-将设置**消息**到*响应*<br />-将设置**操作**到*LOBPort.REFCURSOR.Response*|  
-|SendResponse|-将设置**消息**到*响应*<br />-将设置**操作**到*SaveResponse.REFCURSOR.Request*|  
+|ReceiveMessage|-设置**消息**到*请求*<br />-设置**操作**到*FileIn.REFCURSOR.Request*|  
+|SendMessage|-设置**消息**到*请求*<br />-设置**操作**到*LOBPort.REFCURSOR.Request*|  
+|ReceiveResponse|-设置**消息**到*响应*<br />-设置**操作**到*LOBPort.REFCURSOR.Response*|  
+|SendResponse|-设置**消息**到*响应*<br />-设置**操作**到*SaveResponse.REFCURSOR.Request*|  
   
- 指定这些属性后，连接的消息形状和端口，您的业务流程已完成。  
+ 指定这些属性后，消息形状和端口进行连接，您的业务流程已完成。  
   
- 现在必须生成 BizTalk 解决方案，并将其部署到[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 有关详细信息，请参阅[生成和运行业务流程](../../core/building-and-running-orchestrations.md)。  
+ 现在必须生成 BizTalk 解决方案，并将其部署到[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 有关详细信息，请参阅[构建和运行业务流程](../../core/building-and-running-orchestrations.md)。  
   
 ## <a name="configuring-the-biztalk-application"></a>配置 BizTalk 应用程序  
- 部署 BizTalk 项目后，业务流程之前创建下列出**业务流程**BizTalk Server 管理控制台窗格中的。 必须使用 BizTalk Server 管理控制台配置该应用程序。 有关演练，请参阅[演练： 将基本的 BizTalk 应用程序部署](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)。
+ 部署 BizTalk 项目后，将前面创建的业务流程下列出**业务流程**BizTalk Server 管理控制台窗格中的。 必须使用 BizTalk Server 管理控制台来配置应用程序。 有关演练，请参阅[演练： 部署基本 BizTalk 应用程序](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)。
   
- 配置应用程序涉及：  
+ 配置应用程序包括：  
   
--   选择应用程序的主机。  
+- 选择应用程序的主机。  
   
--   映射到在 BizTalk Server 管理控制台中的物理端口业务流程中创建的端口。 对于此业务流程，您必须：  
+- 映射到 BizTalk Server 管理控制台中的物理端口在业务流程中创建的端口。 对于此业务流程，您必须：  
   
-    -   硬盘和放置请求消息的位置的相应文件端口上定义的位置。 BizTalk 业务流程将使用请求消息并将其发送到 Oracle 数据库。  
+  - 硬盘和相应 file 端口将放置请求消息的位置上定义的位置。 BizTalk 业务流程将使用请求消息并将其发送到 Oracle 数据库。  
   
-    -   硬盘和 BizTalk 业务流程放置包含从 Oracle 数据库响应的响应消息的位置的相应文件端口上定义的位置。  
+  - 硬盘和相应的 BizTalk 业务流程放置包含从 Oracle 数据库响应的响应消息的位置的文件端口上定义的位置。  
   
-    -   定义物理 WCF 自定义或 WCF OracleDB 发送端口将消息发送到 Oracle 数据库。 你必须在发送端口中指定的操作。 有关如何创建 WCF 自定义或 WCF OracleDB 端口的信息，请参阅[手动配置到 Oracle 数据库适配器的物理端口绑定](../../adapters-and-accelerators/adapter-oracle-database/manually-configure-a-physical-port-binding-to-the-oracle-database-adapter.md)。  
+  - 定义一个物理 WCF 自定义或 Wcf-oracledb 发送端口将消息发送到 Oracle 数据库。 您必须在发送端口中指定的操作。 有关如何创建 WCF 自定义或 Wcf-oracledb 端口的信息，请参阅[手动配置物理端口绑定到 Oracle 数据库适配器](../../adapters-and-accelerators/adapter-oracle-database/manually-configure-a-physical-port-binding-to-the-oracle-database-adapter.md)。  
   
-        > [!NOTE]
-        >  生成架构使用[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]还会创建包含有关端口和要为这些端口设置的操作的信息的绑定文件。 从 BizTalk Server 管理控制台来创建发送端口 （对于出站调用），或接收 （对于入站调用） 的端口，可以导入此绑定文件。 有关详细信息，请参阅[配置使用端口绑定到 Oracle 数据库的文件的物理端口绑定](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md)。  
+    > [!NOTE]
+    >  生成架构使用[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]还会创建包含有关端口和要为这些端口设置的操作信息的绑定文件。 从 BizTalk Server 管理控制台来创建 （对于出站调用） 的发送端口或接收端口 （对于入站调用），可以导入此绑定文件。 有关详细信息，请参阅[使用到 Oracle 数据库的端口绑定文件配置物理端口绑定](../../adapters-and-accelerators/adapter-oracle-database/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-database.md)。  
   
 ## <a name="starting-the-application"></a>启动应用程序  
- 你必须启动的 BizTalk 应用程序调用一个 Oracle 数据库表中的过程。 有关启动 BizTalk 应用程序的说明，请参阅[如何启动 Orchestration](../../core/how-to-start-an-orchestration.md)。  
+ 必须启动调用的过程为 Oracle 数据库表中的 BizTalk 应用程序。 在启动 BizTalk 应用程序的说明，请参阅[如何启动业务流程](../../core/how-to-start-an-orchestration.md)。  
   
  在此阶段，请确保：  
   
--   FILE 接收端口，以便运行业务流程的是接收请求消息。  
+-   文件接收端口接收请求消息的业务流程正在运行。  
   
--   要从业务流程接收响应消息的文件发送端口正在运行。  
+-   运行文件发送端口以接收来自业务流程的响应消息。  
   
--   WCF 自定义或 WCF OracleDB 发送端口将消息发送到 Oracle 数据库正在运行。  
+-   WCF 自定义或 Wcf-oracledb 发送端口将消息发送到 Oracle 数据库正在运行。  
   
--   BizTalk 业务流程操作正在运行。  
+-   该操作的 BizTalk 业务流程正在运行。  
   
 ## <a name="executing-the-operation"></a>执行该操作  
- 运行应用程序后，必须放到该文件的请求消息接收位置。 请求消息的架构必须符合你先前生成的过程的架构。 请参阅[函数和过程的消息架构](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-functions-and-procedures.md)为调用的请求消息架构有关的详细信息函数使用[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。  
+ 在运行该应用程序后，必须放置到的文件的请求消息接收位置。 请求消息的架构必须符合前面生成的过程的架构。 请参阅[函数和过程的消息架构](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-functions-and-procedures.md)的调用的请求消息架构有关的详细信息函数使用[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。  
   
- 若要调用 GET_ACTIVITY 过程，必须指定弱类型在 REF CURSOR 和强类型 IN 出 REF CURSOR 作为参数。 因此，要调用此过程的请求消息是：  
+ 若要调用 GET_ACTIVITY 过程，必须指定弱类型在 REF CURSOR 和强类型化 IN 出 REF CURSOR 作为参数。 因此，要调用此过程的请求消息是：  
   
 ```  
 <GET_ACTIVITY xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Package/ACCOUNT_PKG">  
@@ -172,9 +172,9 @@ REF CURSOR 是表示指向服务器端结果集通过执行查询生成的指针
 </GET_ACTIVITY>  
 ```  
   
- 业务流程使用请求消息，并将其发送到 Oracle 数据库。 从 Oracle 数据库的响应保存在定义为业务流程的一部分的其他文件位置中。  
+ 业务流程使用请求消息，并将其发送到 Oracle 数据库。 从 Oracle 数据库的响应保存在定义为业务流程的一部分的其他文件位置。  
   
- 以上的请求消息的响应是：  
+ 上面的请求消息的响应是：  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>   
@@ -221,13 +221,13 @@ REF CURSOR 是表示指向服务器端结果集通过执行查询生成的指针
 </GET_ACTIVITYResponse>  
 ```  
   
- 请注意，响应包含状态、 弱类型出 REF CURSOR 和强类型 IN 出 REF CUROSR。  
+ 请注意，响应包含状态，弱类型化 OUT REF CURSOR 和强类型化 IN 出 REF CUROSR。  
   
 ## <a name="possible-exceptions"></a>可能的异常  
- 有关异常的信息可能会遇到时调用函数和过程使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，请参阅[异常和错误处理](../../adapters-and-accelerators/adapter-oracle-database/exceptions-and-error-handling-with-the-oracle-database-adapter.md)。  
+ 调用函数和过程使用时可能遇到的有关异常的信息[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，请参阅[异常和错误处理](../../adapters-and-accelerators/adapter-oracle-database/exceptions-and-error-handling-with-the-oracle-database-adapter.md)。  
   
 ## <a name="best-practices"></a>最佳实践  
- 已部署并配置 BizTalk 项目之后，你可以将配置设置导出到 XML 文件称为绑定文件。 一旦生成绑定文件，你可以从文件导的配置设置，以便不需要创建发送端口，接收端口等相同的业务流程。 有关绑定文件的详细信息，请参阅[重复使用 Oracle 数据库适配器绑定](../../adapters-and-accelerators/adapter-oracle-database/reuse-oracle-database-adapter-bindings.md)。  
+ 部署和配置 BizTalk 项目后，你可以配置设置导出到名为绑定文件的 XML 文件。 一旦生成绑定文件，可以以便不需要创建发送端口、 接收端口，等等。 对于同一业务流程从文件导的配置设置。 有关绑定文件的详细信息，请参阅[重复使用 Oracle 数据库适配器绑定](../../adapters-and-accelerators/adapter-oracle-database/reuse-oracle-database-adapter-bindings.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发 BizTalk 应用程序](../../core/develop-your-biztalk-applications.md)

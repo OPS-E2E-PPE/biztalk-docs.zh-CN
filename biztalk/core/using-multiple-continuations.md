@@ -1,5 +1,5 @@
 ---
-title: 使用多个延续 |Microsoft 文档
+title: 使用多个继续符 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0e27a73fae39a55f05650c08397616f3cbe4fa80
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 78468438dbd04583f8936bab28e80bf400e83d72
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288933"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36987134"
 ---
 # <a name="using-multiple-continuations"></a>使用多个继续符
 在有多个活动的环境中使用跟踪配置文件编辑器 (TPE)，您需要知道在哪些情况下跟踪活动，这是为了以正确的顺序映射接收端口、业务流程和发送端口。  
@@ -41,50 +41,50 @@ ms.locfileid: "22288933"
   
  继续符的创建过程如下：  
   
-1.  在跟踪配置文件的文件夹活动树视图中创建一个继续符。  
+1. 在跟踪配置文件的文件夹活动树视图中创建一个继续符。  
   
-2.  通过单击来选择上下文属性架构**选择事件源**按钮，，然后单击**选择上下文属性**菜单项。  
+2. 通过单击来选择上下文属性架构**选择事件源**按钮，，然后单击**选择上下文属性**菜单项。  
   
-3.  找到**interchangeId 属性**中**上下文属性名称**列表，，然后选择它。  
+3. 找到**interchangeId 属性**中**上下文属性名称**列表，并选择它。  
   
-4.  将 interchangeID 从属性架构映射到刚创建的继续符文件夹。  
+4. 将 interchangeID 从属性架构映射到刚创建的继续符文件夹。  
   
-5.  右键单击活动树中新创建的 interchangeID 节点，然后选择映射自哪些端口。  
+5. 右键单击活动树中新创建的 interchangeID 节点，然后选择映射自哪些端口。  
   
-6.  在**选择端口**显示的对话框中选择所有**N**接收端口。  
+6. 在中**选择端口**将显示的对话框中选择所有**N**接收端口。  
   
-7.  在文件夹活动树中创建 continuationID 文件夹。  
+7. 在文件夹活动树中创建 continuationID 文件夹。  
   
-8.  通过单击打开每个业务流程**选择事件源**按钮，，然后单击**选择业务流程计划**菜单项。 对每个业务流程，右键单击业务流程中的形状，然后将 interchangeID 上下文属性映射到新创建的 continuationID。  
+8. 通过单击打开每个业务流程**选择事件源**按钮，，然后单击**选择业务流程计划**菜单项。 对每个业务流程，右键单击业务流程中的形状，然后将 interchangeID 上下文属性映射到新创建的 continuationID。  
   
- 在具有三个业务流程的部署中，跟踪配置文件如下所示：  
+   在具有三个业务流程的部署中，跟踪配置文件如下所示：  
   
- ![键入多个延续方案 1](../core/media/4761d680-7218-4404-a636-06739f70f344.gif "4761d680-7218-4404-a636-06739f70f344")  
+   ![TPE 多继续符方案 1](../core/media/4761d680-7218-4404-a636-06739f70f344.gif "4761d680-7218-4404-a636-06739f70f344")  
   
 #### <a name="scenario-solution-2---one-receive-port-and-multiple-orchestrations"></a>解决方案 2 - 一个接收端口和多个业务流程  
  在此方案中，消息只发送到一个接收端口，然后由每个业务流程分别处理。 这发生在消息同时发送到每个业务流程时。  
   
- 在这种情况下，我们需要为每个业务流程创建继续符和 continuationID。 用于创建延续的过程将类似于方案解决方案 1 中所述的步骤。 对于三业务流程部署，你生成的跟踪配置文件如下所示：  
+ 在这种情况下，我们需要为每个业务流程创建继续符和 continuationID。 创建继续符的过程将类似于解决方案 1 中所述的步骤。 对于三个业务流程部署，产生的跟踪配置文件如下所示：  
   
- ![键入多个延续方案 2](../core/media/3cebd82f-9192-4d52-84c7-584f24e8ecca.gif "3cebd82f-9192-4d52-84c7-584f24e8ecca")  
+ ![TPE 多继续符方案 2](../core/media/3cebd82f-9192-4d52-84c7-584f24e8ecca.gif "3cebd82f-9192-4d52-84c7-584f24e8ecca")  
   
 #### <a name="scenario-solution-3---content-based-routing"></a>解决方案 3 - 基于内容的路由  
  此方案定义基于内容的路由 (CBR) 解决方案。 消息只发送到一个接收端口，并且仅由一个发送端口发送。 此路由基于消息中的上下文属性值来执行。 在这种情况下，需要一个继续符。 映射如下所示：  
   
- ![延续 CBR 方案。] (../core/media/4459a73d-515f-4d6d-a68f-b18eee072df8.gif "4459a73d-515f-4d6d-a68f-b18eee072df8")  
+ ![连续 CBR 方案。] (../core/media/4459a73d-515f-4d6d-a68f-b18eee072df8.gif "4459a73d-515f-4d6d-a68f-b18eee072df8")  
   
 > [!NOTE]
 >  上面的映射还对只发送到一个接收端口并由所有发送端口发送的消息有效。  
   
 #### <a name="scenario-solution-4---one-orchestration-multiple-send-ports"></a>解决方案 4 - 一个业务流程，多个发送端口  
- 在此方案中，有多个发送。 端口。 由业务流程，也不能由处理规则中，会发送到所有发送端口中恰好有一个处理一条消息。 在这种情况下，需要一个继续符。 映射如下所示：  
+ 在此方案中，有多个发送。 端口。 由一个业务流程，它由处理规则，并发送到所有发送端口处理消息。 在这种情况下，需要一个继续符。 映射如下所示：  
   
- ![Coninuation 方案 4](../core/media/3ab10b51-d306-4ad1-acb6-6731e23394ac.gif "3ab10b51-d306-4ad1-acb6-6731e23394ac")  
+ ![继续符方案 4](../core/media/3ab10b51-d306-4ad1-acb6-6731e23394ac.gif "3ab10b51-d306-4ad1-acb6-6731e23394ac")  
   
 #### <a name="scenario-solution-5---sequential-orchestrations"></a>解决方案 5 - 序列化业务流程  
  在此方案中，消息由每个业务流程一个接一个地按顺序处理，通过继续符传递给下一个业务流程。 映射如下所示：  
   
- ![延续方案 5](../core/media/563cacee-104c-4f8a-9836-da90aecb7487.gif "563cacee-104c-4f8a-9836-da90aecb7487")  
+ ![继续符方案 5](../core/media/563cacee-104c-4f8a-9836-da90aecb7487.gif "563cacee-104c-4f8a-9836-da90aecb7487")  
   
 ### <a name="collecting-data-in-an-asynchronous-environment"></a>在异步环境中收集数据  
  在设置继续符后，BAM 等待数据到来。 但在异步环境中可能接收不到后端进程的响应。  
@@ -97,5 +97,5 @@ ms.locfileid: "22288933"
   
  有关相关活动的详细信息，请参阅[活动关系](../core/activity-relationships.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [跟踪配置文件编辑器](../core/tracking-profile-editor.md)

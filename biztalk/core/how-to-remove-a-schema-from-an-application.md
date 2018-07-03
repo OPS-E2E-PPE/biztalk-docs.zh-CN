@@ -1,5 +1,5 @@
 ---
-title: 如何从应用程序中删除架构 |Microsoft 文档
+title: 如何从应用程序中删除架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,12 +19,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6535764af00156325c006388a88803207329e5fc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0693d94736c4ef3d8ad5ee561ed6b42650c90ab3
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254645"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36985430"
 ---
 # <a name="how-to-remove-a-schema-from-an-application"></a>如何从应用程序中删除架构
 本主题介绍如何使用 BizTalk Server 管理控制台从应用程序中删除架构。 此过程也可以从 BizTalk 管理数据库中删除针对组的架构。 您可能要在部署某一架构的新版本后删除该架构。 有关详细信息和更新应用程序项目的重要注意事项，请参阅[更新 BizTalk 应用程序](../core/updating-biztalk-applications.md)。  
@@ -39,16 +39,16 @@ ms.locfileid: "22254645"
   
 -   一旦删除该 BizTalk 程序集，该程序集中所包含的所有项目也将从 BizTalk 管理数据库中删除。  
   
-## <a name="prerequisites"></a>先决条件  
- 若要执行本主题中的过程，必须使用 BizTalk Server Administrators 组的成员帐户登录。 有关更多详细权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
+## <a name="prerequisites"></a>必要條件  
+ 若要执行本主题中的过程，必须是 BizTalk Server Administrators 组的成员的帐户登录。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
   
-### <a name="to-remove-a-schema"></a>若要删除架构  
+### <a name="to-remove-a-schema"></a>若要删除某一架构  
   
-1.  单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
+1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
-2.  在控制台树中，展开**BizTalk Server 管理**，展开包含架构的 BizTalk 组删除和包含架构的应用程序。  
+2. 在控制台树中，展开**BizTalk Server 管理**，展开包含该架构的 BizTalk 组删除和包含该架构的应用程序。  
   
-3.  单击**架构**，右键单击的架构，然后单击**删除**。  
+3. 单击**架构**，右键单击该架构，然后单击**删除**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [管理架构](../core/managing-schemas.md)

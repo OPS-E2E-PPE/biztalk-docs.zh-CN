@@ -1,5 +1,5 @@
 ---
-title: BizTalk ESB 工具包简介 |Microsoft 文档
+title: BizTalk ESB 工具包简介 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,26 +14,26 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e44d3a100cdaefe04cf9d3aedfa8cf969811fc5e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 5cfab980a869029d565d378aaf0f75a147403f3e
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25976203"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36986718"
 ---
 # <a name="introduction-to-the-biztalk-esb-toolkit"></a>BizTalk ESB 工具包简介
-说明的体系结构和内容的 Microsoft [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。 文档还演示了如何应用来开发企业应用程序启用灵活、 更安全的企业服务总线 (ESB) 体系结构模式和可重用的服务和快速单位的现有服务分成若干个新的端到端业务流程。  
-  
+介绍体系结构和内容的 Microsoft [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。 文档还演示了如何将应用开发企业应用程序，使灵活、 更安全，企业服务总线 (ESB) 体系结构模式和可重用的服务和新端到端的现有服务快速组织业务流程。  
+
 ## <a name="what-is-an-enterprise-service-bus"></a>什么是企业服务总线？  
- 实现用于启用面向服务的体系结构 (SOA) 的基础结构的上下文中广泛使用企业服务总线的术语。 但是，SOA 解决方案部署的实际经验已经演示了 ESB 是生成全面面向服务基础结构 (SOI) 所需的许多组件之一。 术语"ESB"的发展经历了大量的方向-其定义各不相同，这是与单个 ESB 和集成平台供应商的解释和特定 SOA 方案的要求。  
-  
- 根据从许多成功的实际 SOI 实现已收集了 Microsoft 的体验，Microsoft 认为企业服务总线体系结构模式基于上传统企业应用程序集成 (EAI) 中的集合面向消息的中间件、 Web 服务、.NET 和 Java 的互操作性、 主机系统集成和与服务注册表和资产存储库互操作性。 图 1 说明企业服务总线体系的结构。  
-  
+ 在实现启用面向服务的体系结构 (SOA) 的基础结构的上下文中广泛使用企业服务总线术语。 但是，与 SOA 解决方案的部署的实际经验已经演示了 ESB 是生成全面面向服务的基础结构 (SOI) 所需的许多组件之一。 术语"ESB"发展的数方向-与各个 ESB 和集成平台供应商的解释以及特定 SOA 计划的要求，其定义而异。  
+
+ 根据从许多成功的实际 SOI 实现收集了 Microsoft 的经验，Microsoft 认为企业服务总线体系结构模式基于在传统企业应用程序集成 (EAI) 中，为集合面向消息的中间件、 Web 服务、.NET 和 Java 互操作性、 主机系统集成和与服务注册表和资产储存库的互操作性。 图 1 演示了企业服务总线的体系结构。  
+
  ![ESB 概述](../esb-toolkit/media/esboverview.gif "ESBOverview")  
-  
+
  **图 1**  
-  
- **高级表示形式由企业服务总线体系结构提供的连接**  
+
+ **提供的企业服务总线体系结构的连接的高级表示**  
 
 <!---  Old text with old links
 ## The Industry View of ESB  
@@ -55,30 +55,30 @@ ms.locfileid: "25976203"
 -   Chappell, David. Enterprise Service Bus. Sebastopol, CA: O'Reilly Media, Inc. 2004.  
 -->
 
-  
+
 ## <a name="the-biztalk-esb-toolkit"></a>BizTalk ESB 工具包
- 本文档中的，作为一个整体，引入了架构师和开发人员 ESB 体系结构概念作为通过寻址[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]，并解释了一套广为接受 ESB 用例通过 ESB 组件的功能。  
-  
- 本部分提供的简介[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]，并包括以下主题：  
-  
--   [BizTalk ESB 工具包概述](../esb-toolkit/overview-of-the-biztalk-esb-toolkit.md)  
-  
--   [BizTalk ESB 工具包内容](../esb-toolkit/contents-of-the-biztalk-esb-toolkit.md)  
-  
- 本文档还包括以下主题各节：  
-  
--   [BizTalk ESB 工具包入门](../esb-toolkit/getting-started-with-the-biztalk-esb-toolkit.md)  
-  
--   [主要方案和开发任务](../esb-toolkit/key-scenarios-and-development-tasks.md)  
-  
--   [使用路线设计器创建路线](../esb-toolkit/creating-itineraries-using-itinerary-designer.md)  
-  
--   [BizTalk ESB 工具包示例应用程序](../esb-toolkit/biztalk-esb-toolkit-sample-applications.md)  
-  
--   [修改和扩展 BizTalk ESB 工具包](../esb-toolkit/modifying-and-extending-the-biztalk-esb-toolkit.md)  
-  
--   [BizTalk ESB 工具包管理](../esb-toolkit/administration-with-the-biztalk-esb-toolkit.md)  
-  
--   [SOA 管理集成](../esb-toolkit/soa-governance-integration.md)  
-  
--   [故障排除](../esb-toolkit/troubleshooting-the-biztalk-esb-toolkit.md)
+ 本文档中的，作为一个整体，引入了架构师和开发人员到 ESB 体系结构概念由[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]，并介绍了通过一系列普遍接受的 ESB 用例的 ESB 组件的功能。  
+
+ 本部分提供了简介[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]，并包括以下主题：  
+
+- [BizTalk ESB 工具包概述](../esb-toolkit/overview-of-the-biztalk-esb-toolkit.md)  
+
+- [BizTalk ESB 工具包内容](../esb-toolkit/contents-of-the-biztalk-esb-toolkit.md)  
+
+  本文档还包括以下主题部分：  
+
+- [BizTalk ESB 工具包入门](../esb-toolkit/getting-started-with-the-biztalk-esb-toolkit.md)  
+
+- [主要方案和开发任务](../esb-toolkit/key-scenarios-and-development-tasks.md)  
+
+- [使用路线设计器创建路线](../esb-toolkit/creating-itineraries-using-itinerary-designer.md)  
+
+- [BizTalk ESB 工具包示例应用程序](../esb-toolkit/biztalk-esb-toolkit-sample-applications.md)  
+
+- [修改和扩展 BizTalk ESB 工具包](../esb-toolkit/modifying-and-extending-the-biztalk-esb-toolkit.md)  
+
+- [BizTalk ESB 工具包管理](../esb-toolkit/administration-with-the-biztalk-esb-toolkit.md)  
+
+- [SOA 管理集成](../esb-toolkit/soa-governance-integration.md)  
+
+- [故障排除](../esb-toolkit/troubleshooting-the-biztalk-esb-toolkit.md)

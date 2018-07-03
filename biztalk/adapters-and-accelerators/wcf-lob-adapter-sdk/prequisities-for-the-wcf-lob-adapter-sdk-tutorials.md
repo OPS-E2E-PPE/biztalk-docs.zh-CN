@@ -1,5 +1,5 @@
 ---
-title: 有关 WCF LOB 适配器 SDK 教程 Prequisities |Microsoft 文档
+title: 为了使 WCF LOB 适配器 SDK 教程 Prequisities |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,52 +12,52 @@ caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e16ba0911026508a40f234456c0b5d379f69bc4d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d9e0f1959563b0a0f1273de6341e2402f90f8f34
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22224077"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36995446"
 ---
-# <a name="prequisities-for-the-wcf-lob-adapter-sdk-tutorials"></a>有关 WCF LOB 适配器 SDK 教程 Prequisities
-本部分提供有关你应该熟悉以充分利用教程，以及完成它们所需的软件的概念的详细信息。  
+# <a name="prequisities-for-the-wcf-lob-adapter-sdk-tutorials"></a>为了使 WCF LOB 适配器 SDK 教程 Prequisities
+本部分提供有关您应该熟悉以充分利用这些教程中，以及完成所需的软件的概念的详细信息。  
   
 ## <a name="what-to-install"></a>安装的内容  
- 若要开始本教程，你必须在计算机上安装以下软件。  
+ 若要开始本教程，必须已在计算机上安装以下软件。  
   
--   [!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]
+- [!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]
   
--   Internet 信息服务 (IIS)  
+- Internet 信息服务 (IIS)  
   
--   [!INCLUDE[btsDotNetFramework_md](../../includes/btsdotnetframework-md.md)]
+- [!INCLUDE[btsDotNetFramework_md](../../includes/btsdotnetframework-md.md)]
   
--   [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]（适用于你的 BizTalk Server 安装文件，并命名 ASDK_x64 和 ASDK_x86）  
+- [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] （适用于您的 BizTalk Server 安装文件，并命名 ASDK_x64 和 ASDK_x86）  
   
- 若要完成本教程 3，你必须在计算机上安装以下软件。  
+  若要完成教程 3，必须已在计算机上安装以下软件。  
   
--   Microsoft SharePoint  
+- Microsoft SharePoint  
   
--   Microsoft SharePoint SDK  
+- Microsoft SharePoint SDK  
   
 > [!CAUTION]
 >  不要在生产环境中执行这些教程。  
   
-已完成的 Echo 适配器是在你 BizTalk 安装文件附带`\BizTalk Server\ASDK_x86\Program Files\WCF LOB Adapter SDK\Documents\Samples`或`\BizTalk Server\ASDK_x64\Program Files\WCF LOB Adapter SDK\Documents\Samples`。
+已完成的 Echo 适配器随 BizTalk 安装文件`\BizTalk Server\ASDK_x86\Program Files\WCF LOB Adapter SDK\Documents\Samples`或`\BizTalk Server\ASDK_x64\Program Files\WCF LOB Adapter SDK\Documents\Samples`。
   
-## <a name="prerequisites"></a>先决条件  
- 本教程假定你熟悉以下：  
+## <a name="prerequisites"></a>必要條件  
+ 这些教程假定您已熟悉以下：  
   
--   面向对象的软件设计和开发  
+- 面向对象的软件设计和开发  
   
--   Windows Communication Foundation (WCF)，具体而言，渠道模型编程和服务模型编程  
+- Windows Communication Foundation (WCF)，具体而言，渠道模型编程和服务模型编程  
   
--   XSD、 XML、 WSDL 和 Web 服务描述语言 (WSDL) 和一个 API 之间的关系  
+- XSD、 XML、 WSDL 文件和 Web 服务描述语言 (WSDL) 和 API 之间的关系  
   
--   C# 编程语言  
+- C# 编程语言  
   
--   .NET Framework  
+- .NET Framework  
   
- 在开始之前教程，很有帮助，如果你已经查看概念性主题的此 SDK 中，并且可以大致了解中的通道[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]，包括中的类型**T:Microsoft.ServiceModel.Channels**和**T:Microsoft.ServiceModel.Channels.Common**命名空间。  有关通道的详细信息，请参阅[通道模型概述](https://msdn.microsoft.com/library/ms729840.aspx)。  
+  在开始之前的教程，很有帮助，如果你已经查看了此 SDK 的概念性主题并具有大致了解中的频道[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]，包括中的类型**T:Microsoft.ServiceModel.Channels**并**T:Microsoft.ServiceModel.Channels.Common**命名空间。  有关通道的详细信息，请参阅[通道模型概述](https://msdn.microsoft.com/library/ms729840.aspx)。  
   
-## <a name="see-also"></a>另请参阅  
- [若要了解 WCF LOB 适配器 SDK 的教程](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorials-to-learn-the-wcf-lob-adapter-sdk.md)
+## <a name="see-also"></a>请参阅  
+ [教程，了解 WCF LOB 适配器 SDK](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorials-to-learn-the-wcf-lob-adapter-sdk.md)

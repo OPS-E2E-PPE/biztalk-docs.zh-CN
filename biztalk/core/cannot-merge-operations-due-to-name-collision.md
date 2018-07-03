@@ -1,5 +1,5 @@
 ---
-title: 无法合并由于名称冲突的操作 |Microsoft 文档
+title: 由于名称冲突无法合并操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a8f884b4eea6be64f1d1575b157805703d12cee3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 57bbb3b085af45ede5632e20f67d5e6c0c4e304e
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231709"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36992318"
 ---
 # <a name="cannot-merge-operations-due-to-name-collision"></a>由于名称冲突，无法合并操作
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
-|事件 ID|0|  
-|事件源|0|  
-|组件|0|  
-|符号名称|0|  
-|消息正文|由于名称冲突而无法合并操作“{0}”。 Web Services 中的所有操作都必须具有唯一的名称。|  
+|                 |                                                                                                             |
+|-----------------|-------------------------------------------------------------------------------------------------------------|
+|  产品名称   |             [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]              |
+| 产品版本 |                         [!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]                          |
+|    事件 ID     |                                                      0                                                      |
+|  事件源   |                                                      0                                                      |
+|    组件    |                                                      0                                                      |
+|  符号名称  |                                                      0                                                      |
+|  消息正文   | 无法合并操作"{0}"由于名称冲突。 Web Services 中的所有操作都必须具有唯一的名称。 |
   
 ## <a name="explanation"></a>解释  
  此错误表示端口名称或合并的两个不同端口的操作名称具有相同的名称。  

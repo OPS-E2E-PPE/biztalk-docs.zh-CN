@@ -1,5 +1,5 @@
 ---
-title: 活动和 ActivityID 节点 |Microsoft 文档
+title: 活动和 ActivityID 节点 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d100c88eec5f5a05db2bb651968aa987e3ec4e33
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dbe92c28a3ca84cdd94236c1069c9d340cc4630f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22224669"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36983558"
 ---
 # <a name="activity-and-activityid-nodes"></a>活动和 ActivityID 节点
 活动节点 和 ActivityID 节点用于包含和标识活动定义。 活动节点是活动定义中项的父文件夹。 所有数据项和业务事件节点都属于或包含于相关的活动节点中。 活动节点的名称应该反映活动本身的名称。  
@@ -36,23 +36,23 @@ ms.locfileid: "22224669"
 ## <a name="working-with-activity-id-nodes"></a>使用 ActivityID 节点  
  例如，考虑以下方案： EquityLoan 业务流程包含活动文件夹 LoanProcess。 它引用如下所示的业务事件：  
   
--   LoanApplicationReceived  
+- LoanApplicationReceived  
   
--   CHRequest  
+- CHRequest  
   
--   CHResponse  
+- CHResponse  
   
--   AppraisalRequest  
+- AppraisalRequest  
   
--   AppraisalResponse  
+- AppraisalResponse  
   
--   已同意  
+- 已同意  
   
--   拒绝  
+- 拒绝  
   
- 解决方案开发人员使用 ActivityID 节点可以提取唯一标识活动的数据，如采购订单编号；而对于实例情形而言，应该提取的是消息的 SSN 字段。 如果没有向 ActivityID 节点拖放任何数据，则自动生成的 GUID 将标识业务活动。  
+  解决方案开发人员使用 ActivityID 节点可以提取唯一标识活动的数据，如采购订单编号；而对于实例情形而言，应该提取的是消息的 SSN 字段。 如果没有向 ActivityID 节点拖放任何数据，则自动生成的 GUID 将标识业务活动。  
   
- 若要在不同业务流程中的业务事件或里程碑之间定义关系，则目标业务流程必须引用 ActivityID。 有关如何实现使用键入的关系的详细信息，请参阅[关系节点](../core/relationship-nodes.md)。  
+  若要在不同业务流程中的业务事件或里程碑之间定义关系，则目标业务流程必须引用 ActivityID。 有关如何使用 TPE 实现关系的详细信息，请参阅[关系节点](../core/relationship-nodes.md)。  
   
-## <a name="see-also"></a>另请参阅  
- [键入活动视图节点](../core/tpe-activity-view-nodes.md)
+## <a name="see-also"></a>请参阅  
+ [“TPE 活动视图”节点](../core/tpe-activity-view-nodes.md)

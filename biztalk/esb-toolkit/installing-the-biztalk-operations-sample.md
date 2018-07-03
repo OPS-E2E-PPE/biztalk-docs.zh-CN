@@ -1,5 +1,5 @@
 ---
-title: 安装 BizTalk 操作示例 |Microsoft 文档
+title: 安装 BizTalk 操作示例 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa8fb289e5bb7950f9ad8bca3dac98035bada176
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 6a4fa6aeb56c9d5e4ed65e80f0a43c2cdedcf8b9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26007310"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37002574"
 ---
 # <a name="installing-the-biztalk-operations-sample"></a>安装 BizTalk 操作示例
-Microsoft BizTalk Operations 示例要求 ESB BizTalk Operations 服务安装和配置。 ESB BizTalk Operations 服务是可以安装和配置使用 ESB 配置工具的核心 Web 服务之一。 有关使用 ESB 配置工具的详细信息，请参阅[http://msdn.microsoft.com/library/jj684558(v=bts.80).aspx](http://msdn.microsoft.com/library/jj684558\(v=bts.80\).aspx). BizTalk 操作 Web 服务的默认位置是 http://localhost/ESB.BizTalkOperationsService/Operations.asmx;但是，你可以在应用程序配置文件更改此如果部署中的不同位置或远程服务器的服务。  
-  
- 从解决方案项目，必须安装 BizTalk 操作示例。  
-  
+Microsoft BizTalk 操作示例需要安装和配置 ESB BizTalk 操作服务。 ESB BizTalk 操作服务是可以安装和配置使用 ESB 配置工具的核心 Web 服务。 有关使用 ESB 配置工具的详细信息，请参阅[ http://msdn.microsoft.com/library/jj684558(v=bts.80).aspx ](http://msdn.microsoft.com/library/jj684558\(v=bts.80\).aspx)。 BizTalk 操作 Web 服务的默认位置是<http://localhost/ESB.BizTalkOperationsService/Operations.asmx>; 但是，您可以更改此应用程序配置文件中如果部署中的其他位置或远程服务器的服务。  
+
+ 你必须从解决方案项目中安装 BizTalk 操作示例。  
+
  **若要安装 BizTalk 操作示例**  
-  
-1.  打开名为 ESB.BizTalkOperations.Test.Client.csproj 从 \Source\Samples\BizTalkOperations 文件夹安装解决方案[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]到 Visual Studio 示例。  
-  
-2.  使用上的命令**生成**菜单以编译该解决方案。
+
+1. 打开名为 ESB.BizTalkOperations.Test.Client.csproj 从 \Source\Samples\BizTalkOperations 文件夹安装解决方案[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]到 Visual Studio 中的示例。  
+
+2. 在使用命令**生成**菜单编译解决方案。

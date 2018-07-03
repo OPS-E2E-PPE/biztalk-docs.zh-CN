@@ -1,9 +1,9 @@
 ---
-title: BizTalk Server 2016 的新增功能 |Microsoft 文档
+title: 什么是 BizTalk Server 2016 中的新增功能 |Microsoft Docs
 description: 更改和改进，包括功能包、 适配器、 安全、 跟踪、 性能和 BizTalk Server 2016 中的详细信息
 ms.custom: ''
 ms.prod: biztalk-server
-ms.date: 11/15/2017
+ms.date: 6/22/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -13,30 +13,31 @@ caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa8e28b3c54afd130176e9bb19b2e0b1a59415d0
-ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
+ms.openlocfilehash: 75f9dcce6fceb9816df05549a5a4a1e9ddcd7318
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2017
-ms.locfileid: "25497758"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36992958"
 ---
 # <a name="whats-new-in-biztalk-server-2016"></a>BizTalk Server 2016 的新增功能
 了解 [!INCLUDE[bts2016](../includes/bts2016-md.md)] 中的新增功能。 
   
 ## <a name="new-in-biztalk-server-2016"></a>BizTalk Server 2016 中的新增功能  
   
-|功能|说明|  
+|功能|Description|  
 |-------------|-----------------|  
 |对较新平台的支持|[!INCLUDE[bts2016](../includes/bts2016-md.md)] 添加了对以下 Microsoft 平台的支持：<br /><br /> -   Visual Studio 2015<br />-   Windows Server 2016<br />-   [!INCLUDE[sqlserver2016](../includes/sqlserver2016-md.md)]<br />-   Office 2016<br/><br/>[BizTalk Server 2016 的硬件和软件要求](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)|  
-| 功能包 2 | 改进包括使用 API 管理的集成更紧密，Azure 事件中心适配器、 备份到 Azure blob 存储帐户、 对服务总线分区的支持和的详细信息。 <br/><br/>[安装功能包](https://www.microsoft.com/download/details.aspx?id=55100)<br/>[请参阅什么包含的并配置它的功能](../core/configure-the-feature-pack.md) |
-| 功能包 1 | 包括支持使用 VSTS 自动部署、将跟踪数据发送到 Azure Application Insights 和 Power BI 以及有关接收位置的高级计划选项等等。<br/><br/>[安装功能包](https://www.microsoft.com/download/details.aspx?id=55100)<br/>[请参阅什么包含的并配置它的功能](../core/configure-the-feature-pack.md) |
-|[!INCLUDE[sqlserver2016](../includes/sqlserver2016-md.md)] AlwaysOn 可用性组|支持包括：<br /><br /> -   在本地和 [!INCLUDE[winazure](../includes/winazure-md.md)] IaaS 虚拟机内使用<br />-   用于生产工作负荷<br />-   在 [!INCLUDE[winazure](../includes/winazure-md.md)] 中提供高度可用 (HA) 的解决方案 <br/><br/>[使用 SQL Server AlwaysOn 实现高可用性](../core/high-availability-using-sql-server-always-on-availability-groups.md)<br/><br/> 请参阅[分布式事务用于始终在 AG](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/transactions-always-on-availability-and-database-mirroring)任何特定于 SQL 的要求和功能。|  
+| 功能包 3 | 包括 Office 365 适配器，以使用电子邮件、 日历和联系人。 <br/><br/>[安装功能包](https://aka.ms/bts2016fp3)<br/>[请参阅已包含和配置其功能的内容](../core/configure-the-feature-pack.md) |
+| 功能包 2 | 改进包括更紧密集成 API 管理中，使用 Azure 事件中心适配器、 备份到 Azure blob 存储帐户、 对服务总线分区的支持和的详细信息。 <br/><br/>[安装功能包](https://www.microsoft.com/download/details.aspx?id=55100)<br/>[请参阅已包含和配置其功能的内容](../core/configure-the-feature-pack.md) |
+| 功能包 1 | 包括支持使用 VSTS 自动部署、将跟踪数据发送到 Azure Application Insights 和 Power BI 以及有关接收位置的高级计划选项等等。<br/><br/>[安装功能包](https://www.microsoft.com/download/details.aspx?id=55100)<br/>[请参阅已包含和配置其功能的内容](../core/configure-the-feature-pack.md) |
+|[!INCLUDE[sqlserver2016](../includes/sqlserver2016-md.md)] AlwaysOn 可用性组|支持包括：<br /><br /> -   在本地和 [!INCLUDE[winazure](../includes/winazure-md.md)] IaaS 虚拟机内使用<br />-   用于生产工作负荷<br />-   在 [!INCLUDE[winazure](../includes/winazure-md.md)] 中提供高度可用 (HA) 的解决方案 <br/><br/>[使用 SQL Server AlwaysOn 实现高可用性](../core/high-availability-using-sql-server-always-on-availability-groups.md)<br/><br/> 请参阅[Always On AG 的分布式事务](https://docs.microsoft.com/sql/database-engine/availability-groups/windows/transactions-always-on-availability-and-database-mirroring)有关任何特定于 SQL 的要求和功能。|  
 |生产中的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Azure VM|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Azure 虚拟机现在完全支持用于生产环境。 使用 [!INCLUDE[sqlserver2016](../includes/sqlserver2016-md.md)] AlwaysOn，高度可用的解决方案现已成为可能。<br/><br/>[使用 SQL Server AlwaysOn 实现高可用性](../core/high-availability-using-sql-server-always-on-availability-groups.md)|  
 |逻辑应用适配器|连接到 Azure 中托管的逻辑应用，获取对所有连接器的访问权限，其中包括：Salesforce、SharePoint、CRM Online 等。 例如，可以在 BizTalk Server 中接收指令，连接到逻辑应用，然后更新 Salesforce。<br/><br/>[逻辑应用适配器](../core/logic-app-adapter.md)|  
 | 文件适配器 | 连接到 Azure 存储文件共享。 可以接收来自 Azure 文件共享的文件，并将消息发送到 Azure 文件共享。 <br/><br/>[配置文件适配器](../core/configure-the-file-adapter.md)|
 | FTP 适配器 | 不再需要 SYST 命令。 在接收位置或发送端口处配置 FTP 适配器时，有一个名为“FTP 服务器类型”的属性。 使用此属性，可以选择所需的 FTP 服务器；该服务器可确定是否需要 SYST。 <br/><br/>此更改的结果是，有了更多“受支持的”FTP 服务器。 <br/><br/> [配置 FTP 适配器](../core/configuring-the-ftp-adapter.md)|
 |SFTP 适配器| SFTP 适配器已重新进行设计，可使用 WinSCP 连接到 SFTP；从而可支持更多 SFTP 服务器。 客户端日志记录和其他加密密码也是新增内容。 <br/><br/>[SFTP 适配器](../core/sftp-adapter.md)|  
-| 允许导入跟踪设置 | 导入绑定文件时，可以选择导入（或不导入）在业务流程、发送端口等中启用的跟踪属性。 这属于全局设置（组级别设置），因此可以在不同环境中设置此功能。 例如，可以导入开发环境的现有跟踪属性，以及不导入生产环境的跟踪属性。<br/><br/>请参阅**BizTalk 设置仪表板，组页** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。|
+| 允许导入跟踪设置 | 导入绑定文件时，可以选择导入（或不导入）在业务流程、发送端口等中启用的跟踪属性。 这属于全局设置（组级别设置），因此可以在不同环境中设置此功能。 例如，可以导入开发环境的现有跟踪属性，以及不导入生产环境的跟踪属性。<br/><br/>请参阅**BizTalk 设置仪表板，组页面** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。|
 | 共享访问签名 (SAS) | 可将 SAS 身份验证用于服务总线与 BasicHttpRelay、NetTcpRelay、BasicHttp 和 WebHttp 适配器的连接。<br/><br/>[WCF-BasicHttpRelay 适配器](../core/wcf-basichttprelay-adapter.md)<br/>[WCF-NetTcpRelay 适配器](../core/wcf-nettcprelay-adapter.md)<br/>[WCF-BasicHttp 适配器](../core/wcf-basichttp-adapter.md)<br/>[WCF-WebHTTP 适配器](../core/wcf-webhttp-adapter.md)<br/><br/> [SB-Messaging 适配器](../core/sb-messaging-adapter.md)现包括使用 PowerShell 获取访问控制 (ACS) 值的步骤。|
 |动态端口按序送达|适用于支持静态发送端口按序送达的适配器。 可以在“BizTalk 管理员控制台”中启用“按序送达”选项。<br /><br />[如何为发送端口配置传输高级选项](../core/how-to-configure-backup-transport-options-for-a-send-port.md)<br />[消息按序送达](../core/ordered-delivery-of-messages.md)|  
 |SHA-2 哈希函数|完全支持 SHA-2，其中包括：<br /><br /> <ul><li>BizTalk 可跨其所有组件使用 SHA2 签名的证书，包括 HTTPS、FTPS、POP3 和 WCF 适配器中的 SSL 消息传递 </li><li>支持以下用于 AS2、RosettaNet 和 MIME/SMIME 编码器中签名密钥的高级加密标准 (AES) 交换系统：<ul><li>AES128（默认）</li><li>AES192</li><li>AES256</li><br /></ul></li><li>针对 AS2 支持以下基于 SHA2 的 MIC 计算：<ul><li>SHA256（默认）</li><li>SHA384</li><li>SHA512</li><br /></ul></li><li>支持 RosettaNet 中以下基于 SHA2 的摘要式方法：<ul><li>SHA256（默认）</li><li>SHA384</li><li>SHA512</li><br /></ul></li><li>SHA1 证书继续用于后向兼容性</li></ul><br />[配置验证（AS2）](../core/configuring-validation-as2.md)<br />[配置确认 (MDN) (AS2)](../core/configuring-acknowledgements-mdns-as2.md)<br />[如何配置 MIME-SMIME 解码器管道组件](../core/how-to-configure-the-mime-smime-encoder-pipeline-component.md)|  
@@ -49,22 +50,22 @@ ms.locfileid: "25497758"
   
 ## <a name="deprecated--removed-list"></a>已弃用和已删除的列表  
   
-|Program|状态|替代功能|  
-|-------------|------------|-----------------|  
-|RFID Mobile|已删除|无|  
-|RFID Server|已删除|无|  
-|SharePoint SSOM/Web Service 适配器|已删除|使用 CSOM（客户端对象模型）选项。<br /><br /> [Windows SharePoint Services 适配器](../core/windows-sharepoint-services-adapter.md)<br /><br /> [附录 B：安装 Microsoft SharePoint 适配器](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md)|  
-|SOAP 适配器|不推荐使用|[WCF-BasicHttp 适配器](../core/wcf-basichttp-adapter.md)|  
-|旧 SQL 适配器|不推荐使用|[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] 中的基于 WCF 的 SQL 适配器|  
-|UDDI|已删除|无|  
+|               Program               |   “登录属性”   |                                                                                                                                                替代功能                                                                                                                                                |
+|-------------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|             RFID Mobile             |  已删除   |                                                                                                                                                   InclusionThresholdSetting                                                                                                                                                    |
+|             RFID Server             |  已删除   |                                                                                                                                                   InclusionThresholdSetting                                                                                                                                                    |
+| SharePoint SSOM/Web Service 适配器 |  已删除   | 使用 CSOM（客户端对象模型）选项。<br /><br /> [Windows SharePoint Services 适配器](../core/windows-sharepoint-services-adapter.md)<br /><br /> [附录 B：安装 Microsoft SharePoint 适配器](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md) |
+|            SOAP 适配器             | 不推荐使用 |                                                                                                                         [WCF-BasicHttp 适配器](../core/wcf-basichttp-adapter.md)                                                                                                                         |
+|           旧 SQL 适配器           | 不推荐使用 |                                                                                                   [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] 中的基于 WCF 的 SQL 适配器                                                                                                   |
+|                UDDI                 |  已删除   |                                                                                                                                                   InclusionThresholdSetting                                                                                                                                                    |
   
 > [!IMPORTANT]
 >  较新版本的 BizTalk 中可能包含其中一些已弃用的功能。 在这些情况下，请考虑以下方面：  
 >   
-> -   此功能可能 BizTalk，在内部使用，并不是由客户解决方案。 它在客户解决方案中不受支持。  
-> -   接口可能已由 Microsoft、 修改和可能不能公开。
+> -   该功能可能会在 BizTalk 中，在内部使用，并不表示用于通过客户解决方案。 它在客户解决方案中不受支持。  
+> -   接口可能已由 Microsoft、 修改和可能公开可用。
 
 ## <a name="next-steps"></a>后续步骤
 [硬件和软件要求](hardware-and-software-requirements-for-biztalk-server-2016.md)  
-[安装程序和安装必备组件](set-up-and-install-prerequisites-for-biztalk-server-2016.md)  
+[安装与安装的必备组件](set-up-and-install-prerequisites-for-biztalk-server-2016.md)  
 [安装 BizTalk](install-biztalk-server-2016.md)

@@ -1,5 +1,5 @@
 ---
-title: 适配器示例 |Microsoft 文档
+title: 适配器示例 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d7d1aea5afa53bb334d61a1c560326b67361686
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 10dac21957095f7e7e78c7b5243541ec61e41653
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206493"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36989270"
 ---
 # <a name="adapter-samples"></a>适配器示例
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]包括几个适配器示例在其软件开发工具包 (SDK)。 本节提供每个适配器示例所演示功能的详细信息、生成和运行每个示例的说明以及预期得到的结果。  
+Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]包含其软件开发工具包 (SDK) 中的几个适配器示例。 本节提供每个适配器示例所演示功能的详细信息、生成和运行每个示例的说明以及预期得到的结果。  
   
 ## <a name="in-this-section"></a>本节内容  
   

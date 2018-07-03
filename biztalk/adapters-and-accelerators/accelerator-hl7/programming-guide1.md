@@ -1,5 +1,5 @@
 ---
-title: 编程 Guide1 |Microsoft 文档
+title: 编程 Guide1 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,18 +15,18 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 230ecf4cf9b735bdc2d4e68fc233799e95bb3182
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: f0a36c2714c8da07f054553466f4e9105c4f6517
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26004678"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36980686"
 ---
 # <a name="programming-guide"></a>编程指南
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]编程指南为编写代码与 BTAHL7 的开发人员说明了概念和过程。 将本指南中结合使用[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]文档。  
+Microsoft[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]编程指南面向开发人员编写的代码具有 BTAHL7 介绍的概念和过程。 使用本指南中与 Microsoft[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]文档。  
   
 > [!NOTE]
->  阅读此指南之前，你应该熟悉[!INCLUDE[btsVCSharp](../../includes/btsvcsharp-md.md)]开发，BizTalk Server 中，和[了解 HL7 快捷键和提供的 BizTalk 工具](../../adapters-and-accelerators/accelerator-hl7/learn-the-hl7-accelerator-and-the-biztalk-tools-available.md)。  
+>  阅读本指南之前，您应熟悉[!INCLUDE[btsVCSharp](../../includes/btsvcsharp-md.md)]开发，BizTalk Server 中，并[了解 HL7 加速器及可用的 BizTalk 工具](../../adapters-and-accelerators/accelerator-hl7/learn-the-hl7-accelerator-and-the-biztalk-tools-available.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
   

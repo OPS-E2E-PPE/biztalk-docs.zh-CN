@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 11071 |Microsoft 文档
+title: 单一登录： 事件 11071 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e744e4f477ee45e6f634e8e4b2ca976754cbecf1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 74bc4793937574cc90021b95b6c1850409d57871
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276293"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36975886"
 ---
 # <a name="single-sign-on-event-11071"></a>单一登录： 事件 11071
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|11071|  
-|事件源|ENTSSO|  
-|组件|N/A|  
-|符号名称|SSO_WARN_PS_WIN_CHANGE_DISCARDED_ZERO_LENGTH|  
-|消息正文|已放弃 Windows 密码更改，因为 Windows 密码长度为零个字符。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> Windows 帐户: %2 %r<br /><br /> 客户端用户： %3|  
+|                 |                                                                                                                                                                                               |
+|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                                                                   企业单一登录                                                                                   |
+| 产品版本 |                                                                  [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                   |
+|    事件 ID     |                                                                                             11071                                                                                             |
+|  事件源   |                                                                                            ENTSSO                                                                                             |
+|    组件    |                                                                                              N/A                                                                                              |
+|  符号名称  |                                                                         SSO_WARN_PS_WIN_CHANGE_DISCARDED_ZERO_LENGTH                                                                          |
+|  消息正文   | 已放弃 Windows 密码更改，因为 Windows 密码长度为零个字符。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> Windows 帐户: %2 %r<br /><br /> 客户端用户： %3 |
   
 ## <a name="explanation"></a>解释  
  已放弃 Windows 密码更改，因为 Windows 密码长度为零个字符。 已提供 Windows 帐户和客户端用户名。  

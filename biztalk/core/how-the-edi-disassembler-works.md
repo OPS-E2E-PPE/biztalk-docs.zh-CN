@@ -1,5 +1,5 @@
 ---
-title: EDI 反汇编程序的工作原理 |Microsoft 文档
+title: EDI 拆装器的工作原理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,83 +12,83 @@ caps.latest.revision: 43
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4edf1353a9f06103205e1e6e4296c2aa77e74dc6
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 030a27433b4d8df5a2185a4f7d932af23abe19b8
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "26010662"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36971870"
 ---
 # <a name="how-the-edi-disassembler-works"></a>EDI 拆装器的工作方式
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 执行 EDI 接收管道 (`Microsoft.BizTalk.DefaultPipelines.EDIReceivePipeline`) 中接收的 EDI 编码交换的大多数处理。 此管道包括用于执行下列处理的 EDI 拆装器管道组件：  
   
--   将单个消息中的多个交换拆分为单独的交换（条件是接收位置的“DetectMID”管道属性设置为 True）。 EDI 拆装器执行此操作的方法是：即使在遇到交换控制尾部（IEA 或 UNZ）之后，也仍将搜索交换控制标头（ISA、UNA 或 UNB）。  
+- 将单个消息中的多个交换拆分为单独的交换（条件是接收位置的“DetectMID”管道属性设置为 True）。 EDI 拆装器执行此操作的方法是：即使在遇到交换控制尾部（IEA 或 UNZ）之后，也仍将搜索交换控制标头（ISA、UNA 或 UNB）。  
   
--   验证信封。  
+- 验证信封。  
   
--   反汇编交换。  
+- 分解交换。  
   
--   处理 HIPAA 交换的触发字段。  
+- 处理 HIPAA 交换的触发字段。  
   
--   根据需要验证 EDI 和特定于合作伙伴的属性。 这包括 EDI 架构验证、X12 编码消息的跨字段验证（如果已配置）、EDI 结构验证和扩展架构验证（如果此架构是使用具有非 EDI 数据类型的节点自定义的）。 有关详细信息，请参阅[验证的接收 EDI 消息](../core/validation-of-received-edi-messages.md)。  
+- 根据需要验证 EDI 和特定于合作伙伴的属性。 这包括 EDI 架构验证、X12 编码消息的跨字段验证（如果已配置）、EDI 结构验证和扩展架构验证（如果此架构是使用具有非 EDI 数据类型的节点自定义的）。 有关详细信息，请参阅[验证的接收 EDI 消息](../core/validation-of-received-edi-messages.md)。  
   
--   验证交换、 组和事务集控制编号是否不存在重复项，如果在启用了检查 **验证** 页 (下 **交换设置**) 的双向协议选项卡 **协议属性** 对话框。 根据以前收到的交换检查交换控制编号。 根据交换中的其他组控制编号检查组控制编号。 根据该组中的其他事务集控制编号检查事务集控制编号。 如果发现重复项，状态报告将指示存在重复记录。  
+- 验证交换、 组和事务集控制编号不重复，如果在启用了这些检查**验证**页 (下**交换设置**) 的双向语言协议选项卡**协议属性**对话框。 根据以前收到的交换检查交换控制编号。 根据交换中的其他组控制编号检查组控制编号。 根据该组中的其他事务集控制编号检查事务集控制编号。 如果发现重复项，状态报告将指示存在重复记录。  
   
--   为每个事务集生成一个 XML 文档。 在每个 XML 文件中，升级 BTS.MessageType 上下文属性，将其设置为带有命名空间的架构名称。  
+- 为每个事务集生成一个 XML 文档。 在每个 XML 文件中，升级 BTS.MessageType 上下文属性，将其设置为带有命名空间的架构名称。  
   
--   将整个交换转换为 XML，如果 **入站批处理选项** 属性设置为两种状态之一 **保留交换** 值。 此属性可以设置从 **本地主机设置** 下页上 **交换设置** 的双向协议选项卡 **协议属性** 对话框。 接收管道将升级 ReuseEnvelope 属性以将交换标识为保留。  
+- 将整个交换转换为 XML，如果**入站批处理选项**属性设置为两种状态之一**保留交换**值。 此属性可以设置从**本地主机设置**页**交换设置**的双向协议选项卡的**协议属性**对话框。 接收管道将升级 ReuseEnvelope 属性以将交换标识为保留。  
   
--   生成技术确认和/或功能确认（如果已配置）。 这包括对确认进行批处理（如果已配置）。 提升 BTS 的上下文属性。MessageType，将其设置等于中的控件模式http://schemas.microsoft.com/EDI/ \<X12 或 EDIFACT\> （例如，对于 997 确认 X12_997_Root） 的命名空间。 同时，还将升级 EDI.DestinationPartyName 上下文属性，此属性可确保提取确认以便发送。 有关详细信息，请参阅[发送 EDI 确认](../core/sending-an-edi-acknowledgment.md)。  
+- 生成技术确认和/或功能确认（如果已配置）。 这包括对确认进行批处理（如果已配置）。 将升级 BTS 上下文的属性。MessageType，将其设置为控制架构中等于http://schemas.microsoft.com/EDI/\<X12或 EDIFACT\> （的 x12_997_root 997 确认) 的命名空间。 同时，还将升级 EDI.DestinationPartyName 上下文属性，此属性可确保提取确认以便发送。 有关详细信息，请参阅[发送 EDI 确认](../core/sending-an-edi-acknowledgment.md)。  
   
--   执行 HIPAA 276/277（仅版本 5010 ）834、835（仅版本 4010）和 837 文档拆分（如果适用）。  
+- 执行 HIPAA 276/277（仅版本 5010 ）834、835（仅版本 4010）和 837 文档拆分（如果适用）。  
   
--   将属性升级或写入到消息上下文（请参阅下一部分）。  
+- 将属性升级或写入到消息上下文（请参阅下一部分）。  
   
 ## <a name="promoting-or-writing-properties-to-the-context"></a>将属性升级或写入到上下文  
  当 EDI 拆装器处理收到的消息时，该拆装器会将下列属性升级或写入到消息上下文：  
   
--   对于 X12 编码 unbatched 消息中，将以下属性提升从信封︰ ISA06、 ISA08、 ISA15;GS01、 GS02、 GS03，GS08;ST03 和 ST01。  
+- 对于 X12 编码的未批处理消息，请从信封升级下列属性： ISA06、 ISA08、 ISA15;GS01，GS02，GS03，GS08;ST03 和 ST01。  
   
-    > [!NOTE]
-    >  为传入的 HIPAA 837 交换，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]支持三个 HIPAA 837 架构： 声明 Dental_837D、 声明 Institutional_837I 和声明 Professional_837P。 其中每项的 ST01 是"837"。这三个架构版本 5010 中具有不同的值为 GS08: 837I、 837 d"005010X224A1"和"005010 X 222"为 837 P."005010X223A1" 架构版本 4010 中为 GS08 具有不同的值:"004010X096A1"为 837I、 837 d"004010X097A1"和"004010X098A1"为 837 P.  
+  > [!NOTE]
+  >  对于传入 HIPAA 837 交换，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]支持三种 HIPAA 837 架构： 声明 Dental_837D、-Institutional_837I 和 Claim-Professional_837P。 有关其中每项功能的 ST01 是"837"。这三种架构版本 5010 中对于 GS08 有不同的值:"005010X223A1"837I、 837 d"005010X224A1"和"005010 X 222"的 837 p。 架构版本 4010 中对于 GS08 有不同的值:"004010X096A1"837I、 837 d"004010X097A1"和"004010X098A1"的 837 p。  
   
--   对于 EDIFACT 编码 unbatched 消息中，将以下属性提升从信封︰ UNB2.1、 UNB2.3、 UNB3.1、 UNB11;UNG1，UNG2.1，UNG3.1;UNH2.1，UNH2.2，UNH2.3。  
+- 对于 EDIFACT 编码的未批处理消息，请从信封升级下列属性： UNB2.1、 UNB2.3、 UNB3.1、 UNB11;UNG1，UNG2.1 UNG3.1;UNH2.1、 UNH2.2、 UNH2.3。  
   
--   如果拆分批交换，请将 ISA_Segment 和 GS_Segment 写入到 X12 编码消息的上下文，或者将 UNA_Segment、UNB_Segment 和 UNG_Segment 写入到 EDIFACT 编码消息的上下文。  
+- 如果拆分批交换，请将 ISA_Segment 和 GS_Segment 写入到 X12 编码消息的上下文，或者将 UNA_Segment、UNB_Segment 和 UNG_Segment 写入到 EDIFACT 编码消息的上下文。  
   
-    > [!NOTE]
-    >  上述各段将被写入到上下文中， 而不是升级。 但是，您可以使用消息收集示例将这些段附加到事务集中。 您还可以采用附加示例的代码将其添加到自定义管道组件中。 有关详细信息，请参阅[消息扩充示例 （BizTalk Server 示例）](../core/message-enrichment-sample-biztalk-server-sample.md)。  
+  > [!NOTE]
+  >  上述各段将被写入到上下文中， 而不是升级。 但是，您可以使用消息收集示例将这些段附加到事务集中。 您还可以采用附加示例的代码将其添加到自定义管道组件中。 有关详细信息，请参阅[消息充实示例 （BizTalk Server 示例）](../core/message-enrichment-sample-biztalk-server-sample.md)。  
   
-    > [!NOTE]
-    >  升级的 ISA_Segment 属性包含安全/授权信息（ISA02 包含授权信息，ISA04 包含安全信息），这可能导致信息泄漏。 你可以使用 **屏蔽上下文属性中的安全/授权/密码信息属性** (中 **本地主机设置** 页面 **交换设置** 双向协议属性) 将替换 # 字符 ISA02 和 ISA04 字段中的每个字符。 这是一个单向过程︰ 无法将 '#' 字符转换为实际字符。  
+  > [!NOTE]
+  >  升级的 ISA_Segment 属性包含安全/授权信息（ISA02 包含授权信息，ISA04 包含安全信息），这可能导致信息泄漏。 可以使用**屏蔽上下文属性中的安全/授权/密码信息属性**(在**本地主机设置**页**交换设置**为双向协议属性） 使用 # 字符替换 ISA02 和 ISA04 字段中的每个字符。 这是一个单向过程： 无法将 '#' 字符转换为实际的字符。  
   
--   对于 X12 和 EDIFACT 编码的消息，升级 ReuseEnvelope，该属性指示拆分或保留批交换。  
+- 对于 X12 和 EDIFACT 编码的消息，升级 ReuseEnvelope，该属性指示拆分或保留批交换。  
   
--   如果批交换得以保留，请升级下列属性：  
+- 如果批交换得以保留，请升级下列属性：  
   
-    -   InboundTransportatLocation  
+  -   InboundTransportatLocation  
   
-    -   InboundTransportType  
+  -   InboundTransportType  
   
-    -   ISA05  
+  -   ISA05  
   
-    -   ISA07  
+  -   ISA07  
   
-    -   ISA06  
+  -   ISA06  
   
-    -   ISA08  
+  -   ISA08  
   
-    -   ISA15  
+  -   ISA15  
   
-    -   LastInterchangeMessage = {True &#124;False}  
+  -   LastInterchangeMessage = {True&#124;False}  
   
-    -   MessageType  
+  -   MessageType  
   
-    -   ReceivePortID  
+  -   ReceivePortID  
   
-    -   ReceivePortName  
+  -   ReceivePortName  
   
-    -   ReuseEnvelope  
+  -   ReuseEnvelope  
   
 ## <a name="parsing-the-envelope"></a>解析信封  
  EDI 接收管道使用标头控制架构解析收到的 EDI 消息的信封，并使用 EDI 文档架构解析交换中的事务集/消息。  
@@ -101,7 +101,7 @@ ms.locfileid: "26010662"
   
  对于 X12 交换，“管道组件属性”确定在处理交换时 EDI 拆装器将使用的字符集。 字符集可以是“基本”、“扩展”或“UTF8/Unicode”。 EDIFACT 交换的默认值是 UTF8，UNB1.1 字段决定该字符集。  
   
- **动态分隔符发现**  
+ **动态发现分隔符**  
   
  当 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 接收 EDI 交换时，没有任何协议属性指示应在交换中使用哪些分隔符。 EDI 拆装器而是在运行时发现应使用哪些分隔符（对于 X12 或 EDIFACT）。  
   
@@ -112,8 +112,8 @@ ms.locfileid: "26010662"
 |数据元素分隔符|ISA 的第 4 个字符|  
 |组件元素分隔符|ISA16|  
 |段分隔符|ISA 的第 106 个字符|  
-|段终止符后缀|ISA 段和 GS 段之间的字符<br /><br /> **值︰** 无、 CR、 LF 或 CRLF **注意︰**  分隔符可以采用仅上面的值。|  
-|重复分隔符或标准标识符<br /><br /> (具体取决于上的"ISA11 用法"协议属性 **包络线** 双向协议选项卡页)|ISA11|  
+|段终止符后缀|ISA 段和 GS 段之间的字符<br /><br /> **值：** 无、 CR、 LF 或 CRLF**注意：** 分隔符可以采用仅上述值。|  
+|重复分隔符或标准标识符<br /><br /> (具体取决于上的"ISA11 用法"协议属性**信封**的双向协议选项卡页)|ISA11|  
   
  对于 EDIFACT 交换，EDI 拆装器将检查在交换中定义分隔符的 UNA 段。 如果交换没有 UNA 段（可选），拆装器将使用在管道组件属性中定义的默认值。  
   
@@ -125,7 +125,7 @@ ms.locfileid: "26010662"
 |转义符|第 7 个字符|  
 |重复字符|第 8 个字符|  
 |段分隔符|第 9 个字符|  
-|段分隔符后缀|UNA 段和 UNB 段之间的字符<br /><br /> **值︰** 无、 CR、 LF 或 CRLF **注意︰**  分隔符可以采用仅上面的值。|  
+|段分隔符后缀|UNA 段和 UNB 段之间的字符<br /><br /> **值：** 无、 CR、 LF 或 CRLF**注意：** 分隔符可以采用仅上述值。|  
   
  UNA 字符串是可选的。 如果存在，它定义文件的所有分隔符。 如果不存在，EDI 拆装器将使用 EfactDelimiters 管道组件属性确定分隔符。 有关详细信息，请参阅[配置 EDI 管道属性](../core/configuring-edi-pipeline-properties.md)。  
   
@@ -133,31 +133,31 @@ ms.locfileid: "26010662"
   
  如果 EDI 拆装器遇到 EDI 处理错误，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将在事件查看器中发布以下两个错误（如果已启用此发布功能）：  
   
--   源 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 挂起消息时记录的错误。 该错误是与 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 处理相关的必需错误。  
+- 源 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 挂起消息时记录的错误。 该错误是与 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 处理相关的必需错误。  
   
--   源 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI 记录的报告事务集中的问题的错误。 该错误特定于 EDI。  
+- 源 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI 记录的报告事务集中的问题的错误。 该错误特定于 EDI。  
   
 ## <a name="using-agreement-properties"></a>使用协议属性  
- 如果它可以确定该协议，EDI 反汇编程序将使用协议属性 (请参阅[协议解析、 架构发现和接收 EDI 消息的授权](../core/agreement-resolution-schema-discovery-and-authorization-for-received-edi.md))。 如果找不到匹配的协议和相应的值不可用回退协议中，在设置了 EDI 反汇编程序属性 **属性** 将使用 Visual Studio 窗口。 但是，此回退不会发生如果身份验证需要在接收端口属性 (如果 **丢弃的消息，如果身份验证失败** 或 **身份验证失败时保留消息** 选择)。 在这种情况下，必须配置协议；否则，交换将挂起。  
+ 如果它可标识协议，EDI 拆装器将使用协议属性 (请参阅[协议解析、 架构发现和收到的 EDI 消息的授权](../core/agreement-resolution-schema-discovery-and-authorization-for-received-edi.md))。 如果找不到匹配的协议和相应的值不是后备协议中可用，EDI 拆装器属性中设置**属性**将使用 Visual Studio 窗口。 但是，以上后备机制将不发生身份验证需要在接收端口属性 (如果**身份验证失败时删除消息**或**身份验证失败时保留消息**选择). 在这种情况下，必须配置协议；否则，交换将挂起。  
   
  当 EDI 拆装器使用协议属性时，需要设置下列协议属性：  
   
-|属性|协议属性页|  
+|“属性”|协议属性页|  
 |--------------|-------------------------------|  
-|重复分隔符|**包络线** 页 (下 **交换设置**) 中的双向协议选项卡|  
-|执行 EDI 数据类型验证|**验证** 下页上 **事务设置设置** 在双向协议选项卡中 （对于 X12 和 EDIFACT 协议）|  
-|扩展验证|**验证** 下页上 **事务设置设置** 在双向协议选项卡中 （对于 X12 和 EDIFACT 协议）|  
-|允许前导和尾随零和空间|**验证** 下页上 **事务设置设置** 在双向协议选项卡中 （对于 X12 和 EDIFACT 协议）|  
-|创建空 XML 标记（如果尾部分隔符允许）|**本地主机设置** 下页上 **事务设置设置** 在双向协议选项卡中 （对于 X12 和 EDIFACT 协议）|  
-|入站批处理选项|**本地主机设置** 页 (下 **交换设置**) 中的双向协议选项卡 （对于 X12 和 EDIFACT 协议）|  
+|重复分隔符|**信封**页 (下**交换设置**) 中的双向协议选项卡|  
+|执行 EDI 数据类型验证|**验证**页上下**事务集设置**在双向协议选项卡中 （针对 X12 和 EDIFACT 协议）|  
+|扩展验证|**验证**页上下**事务集设置**在双向协议选项卡中 （针对 X12 和 EDIFACT 协议）|  
+|允许前导和尾随零及空格|**验证**页上下**事务集设置**在双向协议选项卡中 （针对 X12 和 EDIFACT 协议）|  
+|创建空 XML 标记（如果尾部分隔符允许）|**本地主机设置**页上下**事务集设置**在双向协议选项卡中 （针对 X12 和 EDIFACT 协议）|  
+|入站批处理选项|**本地主机设置**页 (下**交换设置**) 中的双向协议选项卡 （对于 X12 和 EDIFACT 协议）|  
 |默认 EDIFACT 分隔符|-|  
-|屏蔽安全/授权/密码信息|**本地主机设置** 页 (下 **交换设置**) 中的双向协议选项卡 （对于 X12 和 EDIFACT 协议）|  
-|将隐式小数格式 Nn 转换为十进制数值|**本地主机设置** 下页上 **事务设置设置** 双向协议选项卡中 (对于 X12 协议)|  
-|将确认路由到请求-响应接收端口的发送管道|**本地主机设置** 页 (**接收方设置** 部分) 下 **交换设置** 在双向协议选项卡中 （对于 X12 和 EDIFACT 协议）|  
-|X12 字符集|X12 交换信封生成 **注意︰**  此设置仅用于验证输入的协议属性的值。 用于运行时处理的 X12 字符集在管道属性中选择。 有关详细信息，请参阅[EDI 字符集](../core/edi-character-sets.md)。|  
+|屏蔽安全/授权/密码信息|**本地主机设置**页 (下**交换设置**) 中的双向协议选项卡 （对于 X12 和 EDIFACT 协议）|  
+|将隐式小数格式 Nn 转换为十进制数值|**本地主机设置**页上下**事务集设置**的双向协议选项卡中 (对于 X12 协议)|  
+|将确认路由到请求-响应接收端口的发送管道|**本地主机设置**页 (**接收方设置**一节) 下**交换设置**在双向协议选项卡中 （针对 X12 和 EDIFACT 协议）|  
+|X12 字符集|X12 交换信封生成**注意：** 此设置仅用于验证为协议属性输入的值。 用于运行时处理的 X12 字符集在管道属性中选择。 有关详细信息，请参阅[EDI 字符集](../core/edi-character-sets.md)。|  
   
 ## <a name="using-hipaa-trigger-fields"></a>使用 HIPAA 触发器字段  
- EDI 段通常包含修改段含义的限定符值。 例如，N1 段可包含一个限定元素“BT”，表示“帐单收件人名字”，或可能包含一个限定元素“ST”，表示“收货方名字”。 通常它从左到业务逻辑来确定如何解释这些字段并拆装器将 N1 段的所有实例都解析为相同的 XML 记录名称;但是，BizTalk 服务器随附的 HIPAA 架构包含允许 EDI 反汇编程序，创建基于是否存在限定值的唯一 XML 记录的批注 (请参阅[HIPAA 架构触发器字段批注](../core/hipaa-schema-trigger-field-annotations.md))。  
+ EDI 段通常包含修改段含义的限定符值。 例如，N1 段可包含一个限定元素“BT”，表示“帐单收件人名字”，或可能包含一个限定元素“ST”，表示“收货方名字”。 通常情况下将由业务逻辑来确定如何解释这些字段和拆装器将 N1 段的所有实例都解析为相同的 XML 记录名称;但是，BizTalk Server 所附带的 HIPAA 架构包含批注允许 EDI 拆装器以便创建唯一 XML 记录根据是否存在限定值 (请参阅[HIPAA 架构触发器字段批注](../core/hipaa-schema-trigger-field-annotations.md))。  
   
  当收到一个 HIPAA 事务集时，如果 EDI 拆装器遇到一个包含触发器字段的段，它将使用触发器信息来生成一个特定于该段和触发器组合的 XML 记录。  
   
@@ -168,5 +168,5 @@ ms.locfileid: "26010662"
 |N1 * PR\*Contoso\*XV\*0000000 ~|`<ns0:TS835W1_1000A_Loop>  <N1_PayerIdentification_TS835W1_1000A>   <N101__EntityIdentifierCode>PR</N101__EntityIdentifierCode>    <N102__PayerName>Contoso</N102__PayerName>    <N103__IdentificationCodeQualifier>XV</N103__IdentificationCodeQualifier>    <N104__PayerIdentifier>0000000</N104__PayerIdentifier>   </N1_PayerIdentification_TS835W1_1000A>`|  
 |N1 * PE\*Fabrikam\*FI\*9999999 ~|`<TS835W1_1000B_Loop>   <N1_PayeeIdentification_TS835W1_1000B>    <N101__EntityIdentifierCode>PE</N101__EntityIdentifierCode>    <N102__PayeeName>Fabrikam</N102__PayeeName>    <N103__IdentificationCodeQualifier>FI</N103__IdentificationCodeQualifier>    <N104__PayeeIdentificationCode>9999999</N104__PayeeIdentificationCode>   </N1_PayeeIdentification_TS835W1_1000B>`|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [BizTalk Server 如何接收 EDI 消息](../core/how-biztalk-server-receives-edi-messages.md)

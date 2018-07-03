@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 11044 |Microsoft 文档
+title: 单一登录： 事件 11044 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4cb97fa7d42706ea32d3ea13be55920d98272e8c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 22716acaf34b894f4072164e140029f1d3eabda7
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276285"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36984390"
 ---
 # <a name="single-sign-on-event-11044"></a>单一登录： 事件 11044
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|11044|  
-|事件源|ENTSSO|  
-|组件|N/A|  
-|符号名称|SSO_WARN_DEFAULT_FLAGS|  
-|消息正文|已忽略某些标志并将其更改为默认值。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 应用程序名称: %2 %r<br /><br /> 请求的标志: %3 %r<br /><br /> 已更改的标志: %4 %r<br /><br /> 实际标志： %5|  
+|                 |                                                                                                                                                                                                                                          |
+|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                                                                                        企业单一登录                                                                                                         |
+| 产品版本 |                                                                                        [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                                        |
+|    事件 ID     |                                                                                                                  11044                                                                                                                   |
+|  事件源   |                                                                                                                  ENTSSO                                                                                                                  |
+|    组件    |                                                                                                                   N/A                                                                                                                    |
+|  符号名称  |                                                                                                          SSO_WARN_DEFAULT_FLAGS                                                                                                          |
+|  消息正文   | 已忽略某些标志并将其更改为默认值。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 应用程序名称: %2 %r<br /><br /> 请求的标志: %3 %r<br /><br /> 更改的标志: %4 %r<br /><br /> 实际的标志： %5 |
   
 ## <a name="explanation"></a>解释  
  这些标志可能具有无效值。  

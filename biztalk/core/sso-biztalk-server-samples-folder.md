@@ -1,5 +1,5 @@
 ---
-title: SSO （BizTalk Server 示例文件夹中） |Microsoft 文档
+title: SSO （BizTalk Server 示例文件夹） |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,18 +16,18 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eb3cca35aec7715e9efe888ad7b79d27da75b106
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fdcbe5ff9063db629da59bc98941350fe800b5db
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276413"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36983078"
 ---
-# <a name="sso-biztalk-server-samples-folder"></a>SSO （BizTalk Server 示例文件夹中）
+# <a name="sso-biztalk-server-samples-folder"></a>SSO （BizTalk Server 示例文件夹）
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 在其软件开发工具包 (SDK) 中包含了两个企业单一登录 (SSO) 示例。 本部分详细介绍了 SSO 示例所演示的功能，说明了如何生成和运行这些示例，并提供了您可以预期的结果。  
-  
+
 ## <a name="in-this-section"></a>本节内容  
-  
--   [HTTPSSO （BizTalk Server 示例）](../core/httpsso-biztalk-server-sample.md)。 演示如何将企业单一登录与 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] HTTP 适配器一起使用。  
-  
--   [管理 （BizTalk Server 示例）](../core/manage-biztalk-server-sample.md)。 演示如何构造可与命令行实用工具 ssomanage.exe 一起用来执行管理操作的 .xml 文件。
+
+- [HTTPSSO （BizTalk Server 示例）](../core/httpsso-biztalk-server-sample.md)。 演示如何将企业单一登录与 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] HTTP 适配器一起使用。  
+
+- [管理 （BizTalk Server 示例）](../core/manage-biztalk-server-sample.md)。 演示如何构造可与命令行实用工具 ssomanage.exe 一起用来执行管理操作的 .xml 文件。

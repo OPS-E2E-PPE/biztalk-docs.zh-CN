@@ -1,5 +1,5 @@
 ---
-title: 第 2 部分： 批处理中的批处理方案出 |Microsoft 文档
+title: 第 2 部分： 批处理中的批处理方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,41 +15,41 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 56ffac38676fe6b163a39ff06be5fe0538800d2c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 593f1e57b12eb30f47db65bfacd34a988f701f07
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206181"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36975414"
 ---
-# <a name="part-2-batch-inbatch-out-scenario"></a>第 2 部分： 中的批处理 / 批处理出方案
-在本教程的此部分中，你会收到 HL7 编码批处理文件，将其传递[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]碎片，而发送到目标的不变的批处理文件。 下图显示了此过程中，流和以下子节介绍工作流。  
+# <a name="part-2-batch-inbatch-out-scenario"></a>第 2 部分： 中的批处理 / 出站批处理方案
+在本教程的此部分中，接收 HL7 编码的批文件，将通过其传递[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]而无需碎片，并发送到目标不变的批处理文件。 下图显示了此过程中，流和以下子节介绍了工作流。  
   
 > [!NOTE]
->  在开始之前在本教程的此部分，请关闭 MllpReceive 和 MllpSend 的工具，可通过关闭命令提示符的第 1 部分中使用。  
+>  开始本教程的此部分之前，请关闭您的关闭该命令会提示使用第 1 部分，MllpReceive 和 MllpSend 工具。  
   
  ![](../../adapters-and-accelerators/accelerator-hl7/media/hl7-batch-in-batch-out-scenario.gif "hl7_batch_in_batch_out_scenario")  
   
- **消息在批处理作业中的流动方式在 / 批处理出方案**  
+ **在 Batch 中的消息流的方式在 / 出站批处理方案**  
   
  此方案包括以下工作流：  
   
-1.  工作流一开始时的业务线应用程序发送消息批为[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 集成引擎使用 FILE 协议。 批处理包含两个版本的 ADT ^ A03 消息。 源应用程序所属 Tutorial_BatchSource 方。  
+1. 在工作流开始时的业务线应用程序中将消息批发送到 Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 集成引擎使用 FILE 协议。 批处理包含两个版本的 ADT ^ A03 消息。 源应用程序属于 Tutorial_BatchSource 参与方。  
   
-2.  集成引擎接收文件上的批处理接收端口，并验证消息批处理。 (的验证级别取决于为中的源方选择设置[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]配置资源管理器。)  
+2. 集成引擎接收的批处理文件中的接收端口，并验证消息批。 (的验证级别取决于选择中的源参与方设置[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]配置资源管理器。)  
   
-3.  基于中的设置[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]禁用批处理碎片当事方，接口引擎的配置资源管理器不会转换为单个消息，分析批处理，但会作为批处理批处理。 它会验证各条消息，根据为中的源方选择设置重新[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]配置资源管理器。  
+3. 根据中的设置[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]配置资源管理器，以禁用批处理碎片的参与方，接口引擎未分析为单个消息批，但保留作为批处理的批处理。 它会验证各条消息，根据在源参与方选择的设置重新[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]配置资源管理器。  
   
-4.  接口引擎生成基于中的确认定义设置批处理消息的确认[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]方的配置编辑器。 在这种情况下，选择原始确认模式，以便接口引擎生成在验证的消息标头和正文之后消息批处理的单个应用程序接受确认。 引擎生成基于 ACK_024_GLO_DEF 架构该确认，该确认 MSA2 字段中输入"AA"，在 MSH3，输入目标方并在 MSH5 输入源方。  
+4. 接口引擎生成批消息，根据中的确认定义设置确认[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]的参与方的配置编辑器。 在这种情况下，选择原始确认模式，因此接口引擎在验证消息标头和正文后会生成消息批的单个应用程序接受确认。 引擎生成确认基于 ACK_024_GLO_DEF 架构、 在确认 MSA2 字段中输入"AA"、 在 MSH3，输入目标参与方和 MSH5 中输入的源参与方。  
   
-5.  确认批处理到源方通过文件的接口引擎路由发送适配器设置来处理确认。 在这种情况下，[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]将批处理路由到 \Tutorial_BatchACKDrop 文件夹。  
+5. 确认批处理到源参与方通过文件的接口引擎路由发送适配器设置来处理确认。 在这种情况下，[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]将批处理路由到 \Tutorial_BatchACKDrop 文件夹。  
   
-6.  [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]将发送到目标消息批处理为指定目标方中，在此情况下文件夹 \Tutorial_BTAHL7Drop。  
+6. [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 将发送到目标消息批次为指定目标参与方，在此情况下文件夹 \Tutorial_BTAHL7Drop。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [步骤 1： 配置对批次中的当事方信息/批处理出](../../adapters-and-accelerators/accelerator-hl7/step-1-configure-party-information-for-batch-in-batch-out.md)  
+-   [步骤 1：为入站批处理/出站批处理配置参与方信息](../../adapters-and-accelerators/accelerator-hl7/step-1-configure-party-information-for-batch-in-batch-out.md)  
   
--   [步骤 2： 修改或创建发送方和接收端口](../../adapters-and-accelerators/accelerator-hl7/step-2-modify-or-create-the-send-and-receive-ports.md)  
+-   [步骤 2：修改或创建发送端口和接收端口](../../adapters-and-accelerators/accelerator-hl7/step-2-modify-or-create-the-send-and-receive-ports.md)  
   
--   [步骤 3： 测试中的批处理/批处理出方案](../../adapters-and-accelerators/accelerator-hl7/step-3-test-the-batch-in-batch-out-scenario.md)
+-   [步骤 3：测试入站批处理/出站批处理方案](../../adapters-and-accelerators/accelerator-hl7/step-3-test-the-batch-in-batch-out-scenario.md)

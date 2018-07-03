@@ -1,5 +1,5 @@
 ---
-title: 更改主机实例属性 |Microsoft 文档
+title: 更改主机实例属性 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 859170362ce804db6eff5b0e928998f008d0c2c5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 53a64257f752e161963539256dcaca3f7f8f1077
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22255149"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37003342"
 ---
 # <a name="update-host-instance-properties"></a>更新主机实例属性
 
@@ -38,9 +38,9 @@ ms.locfileid: "22255149"
 > [!CAUTION]
 >  如果更改主机实例的凭据，则还必须更改相应的 SQL Server 凭据。 如果不更新 SQL Server 凭据，则主机实例将无法正常工作。  
   
- 有关使用 WMI 修改的主机实例的信息，请参阅**MSBTS_HostInstance (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
+ 有关使用 WMI 修改主机实例的信息，请参阅**MSBTS_HostInstance (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>必要條件  
  若要执行此过程，则必须以 Administrators 组和 BizTalk Server Administrators 组成员的身份登录。  
   
  此外，您还必需是以下数据库所在服务器上的 db_securityadmin SQL Server 数据库角色和 securityadmin SQL Server 角色的成员：  
@@ -60,29 +60,29 @@ ms.locfileid: "22255149"
   
 ## <a name="steps"></a>步骤
   
-1.  单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
+1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
-2.  在控制台树中，展开[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，展开 BizTalk 组，单击**平台设置**，然后单击**主机实例**。  
+2. 在控制台树中，展开[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，展开 BizTalk 组，单击**平台设置**，然后单击**主机实例**。  
   
-3.  在详细信息窗格中，右键单击你想要修改，，然后单击该主机实例**属性**。  
+3. 在详细信息窗格中，右键单击你想要修改，然后单击该主机实例**属性**。  
   
-4.  在**主机实例属性**对话框中，单击**配置**若要修改的服务帐户信息。  
+4. 在中**主机实例属性**对话框中，单击**配置**若要修改的服务帐户信息。  
   
-5.  在**登录凭据**对话框框中，输入的帐户名称和密码的帐户的主机实例将在其下运行，并依次**确定**。  
+5. 在中**登录凭据**对话框框中，输入帐户名和密码的帐户的主机实例将在其下运行，然后依次**确定**。  
   
-6.  在**主机实例属性**对话框中，执行以下操作，并依次**确定**:  
+6. 在中**主机实例属性**对话框中，执行以下操作，然后依次**确定**:  
   
-    |使用此选项|执行的操作|  
-    |--------------|----------------|  
-    |**主机名**|显示与所选服务器关联的主机名称。|  
-    |**Server**|显示与所选主机关联的服务器。|  
-    |**登录**|显示用于运行主机实例的新服务帐户的帐户名。|  
-    |**配置**|单击此项可显示**登录凭据**对话框中，你可以在其中输入帐户名和主机实例将在其下运行的帐户的密码。|  
-    |**禁用主机启动的实例**|选中此复选框可将所选主机的状态从“已启用”改为“已禁用”。 如果不希望启动主机实例，但还要保留其设置，禁用主机实例就十分有用。|  
+   |使用此选项|执行的操作|  
+   |--------------|----------------|  
+   |**主机名**|显示与所选服务器关联的主机名称。|  
+   |**Server**|显示与所选主机关联的服务器。|  
+   |**登录**|显示用于运行主机实例的新服务帐户的帐户名。|  
+   |**配置**|单击此项可显示**登录凭据**对话框框中，您可以在其中输入帐户名称和主机实例将运行的帐户的密码。|  
+   |**禁止主机实例启动**|选中此复选框可将所选主机的状态从“已启用”改为“已禁用”。 如果不希望启动主机实例，但还要保留其设置，禁用主机实例就十分有用。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [管理 BizTalk 主机和主机实例](../core/managing-biztalk-hosts-and-host-instances.md)   
- [添加一个主机实例](../core/how-to-add-a-host-instance.md)   
+ [添加主机实例](../core/how-to-add-a-host-instance.md)   
  [启动主机实例](../core/how-to-start-a-host-instance.md)   
  [停止主机实例](../core/how-to-stop-a-host-instance.md)   
- [删除的主机实例](../core/how-to-delete-a-host-instance.md)
+ [删除主机实例](../core/how-to-delete-a-host-instance.md)

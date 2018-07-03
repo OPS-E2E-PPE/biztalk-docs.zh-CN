@@ -1,5 +1,5 @@
 ---
-title: 消息提交 ASPX 示例 |Microsoft 文档
+title: 消息提交 ASPX 示例 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,31 +12,31 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 12fb7d90485014a62ed9010590d27a79ecd925c5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a36a41e5bb60169632072445ff4685e1df5dbce9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22207197"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36979590"
 ---
 # <a name="message-submission-aspx-sample"></a>消息提交 ASPX 示例
-本主题提供可用于提交到专用的进程的服务内容的.aspx 代码示例。 你可以使用此.aspx 代码，而不是-的业务线 (LOB) 应用程序。  
+本主题提供可用于提交给专用流程的服务内容的示例.aspx 代码。 而不是业务 (LOB) 应用程序，可以使用此.aspx 代码。  
   
 ## <a name="demonstrates"></a>演示  
- 此代码演示如何调用`SubmitRNIF`方法来提交消息，其中包括：  
+ 此代码演示如何调用`SubmitRNIF`方法来提交一条消息，其中包括：  
   
--   设置消息从应用程序的参数输入  
+-   设置从应用程序的消息参数输入  
   
 -   设置消息类别  
   
--   生成消息的合作伙伴接口过程 (PIP) 实例，如果提交的值为 null 或为空  
+-   如果提交的值为 null 或为空，则生成消息的合作伙伴接口流程 (PIP) 实例  
   
--   生成输入的附件文件数组和备注  
+-   生成输入的附件的文件数组和备注  
   
 ## <a name="example"></a>示例  
- 此代码接受前端应用程序（如浏览器、[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]® 或 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® Word）的输入，并生成发起方专用流程可以使用的 XML 文档。  
+ 此代码接受前端应用程序，如浏览器中，输入[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]®，或 Microsoft® Word，并生成发起方专用流程可以使用的 XML 文档。  
   
- 此 LOBWebApplication 实用程序包括下面的代码。 有关详细信息，请参阅[LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md)。  
+ LOBWebApplication 实用工具包括下面的代码。 有关详细信息，请参阅[LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md)。  
   
 ```  
 using System;  
@@ -109,6 +109,6 @@ namespace Microsoft.Solutions.BTARN.SDK
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md)   
  [消息传送示例](../../adapters-and-accelerators/accelerator-rosettanet/messaging-samples.md)

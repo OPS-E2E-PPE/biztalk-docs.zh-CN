@@ -1,5 +1,5 @@
 ---
-title: 配置消息修复和新提交 |Microsoft 文档
+title: 配置消息修复和新提交 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,19 +16,19 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d2cdbad69b017a3927d3912de42053072d061b6
-ms.sourcegitcommit: 3371ffd8ceca02e2b3715d53a1e0c0a59045912e
+ms.openlocfilehash: 0544adb9fc2ffa60bfc3b69ebee1937e5eb7a18a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34848965"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36995790"
 ---
-# <a name="configuring-message-repair-and-new-submission"></a>配置消息修复和新的提交
-以下各节中，若要配置的消息修复和新提交功能，必须执行步骤[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]下, 图中所示。  
+# <a name="configuring-message-repair-and-new-submission"></a>配置消息修复和新提交
+必须执行以下各节中，若要配置 Microsoft 消息修复和新提交功能中的步骤[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]下, 图中所示。  
   
  ![](../../adapters-and-accelerators/accelerator-swift/media/a4swift-message-repair-configuration.gif "A4SWIFT_Message_Repair_Configuration")  
   
- 在 A4SWIFT 安装向导中，你可以选择安装消息修复和新的提交和 FIN 响应对帐 (FRR) 或消息修复和新的提交，而无需 FRR 或如果没有消息修复和新提交 FRR。 因此，本部分中的说明进行操作不会假定安装和配置 FRR。 它们，但是，假定你已执行中的步骤[A4SWIFT 组件配置指南](../../adapters-and-accelerators/accelerator-swift/a4swift-component-configuration-guide.md)部分。  
+ 在 A4SWIFT 安装向导中，您可以选择安装消息修复和新提交和 FIN 响应对帐 (FRR) 或消息修复和新提交，而无需 FRR 或如果没有消息修复和新提交的 FRR。 因此，在本部分中的说明进行操作不要假定您在安装和配置 FRR。 它们执行操作，但是，假设已执行中的步骤[A4SWIFT 组件配置指南](../../adapters-and-accelerators/accelerator-swift/a4swift-component-configuration-guide.md)部分。  
   
  本部分包含：  
   
@@ -42,4 +42,4 @@ ms.locfileid: "34848965"
   
 -   [部署 A4SWIFT 信封架构](../../adapters-and-accelerators/accelerator-swift/deploying-a4swift-envelope-schemas.md)  
   
--   [发布 InfoPath 表单模板](http://msdn.microsoft.com/2947e1ad-8c44-4cdb-bbde-7683e186b41b)
+-   [发布 InfoPath 窗体模板](http://msdn.microsoft.com/2947e1ad-8c44-4cdb-bbde-7683e186b41b)

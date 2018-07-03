@@ -1,5 +1,5 @@
 ---
-title: 步骤 6： 配置业务流程形状 (Contoso) |Microsoft 文档
+title: 步骤 6： 配置业务流程形状 (Contoso) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,23 +15,23 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9310e9b287f35876a137d13dbcc2d1fa39ba9588
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 31ffbdbe5cea810f08b5dc08b8d3dcae265c9f04
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26009382"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36980646"
 ---
 # <a name="step-6-configuring-orchestration-shapes-contoso"></a>步骤 6： 配置业务流程形状 (Contoso)
-在此步骤中，你将配置添加到 PrivateResponder 业务流程中创建的业务流程形状[步骤 5： 修改 Contoso 私有进程业务流程](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)。 这包括设置之间的通信[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server 和 Contoso 的企业资源规划 (ERP) 系统。  
+在此步骤中，配置添加到你在中创建的 PrivateResponder 业务流程的业务流程形状[步骤 5： 修改 Contoso 专用业务流程](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)。 这包括设置 Contoso 的 Microsoft® BizTalk Server 和企业资源规划 (ERP) 系统之间的通信。  
   
 ### <a name="to-configure-the-constructmessagepip3a2requestmessage-shape"></a>配置 ConstructMessagePIP3A2RequestMessage 形状  
   
-1.  在解决方案资源管理器，业务流程设计图面上选择，PrivateResponder.odx 选择**ConstructPIP3A2RequestMessage**形状。  
+1.  在解决方案资源管理器，在业务流程设计图面上，选中 privateresponder.odx 选择**ConstructPIP3A2RequestMessage**形状。  
   
-2.  在属性窗口中，选择**消息构造**属性中，选择**PIP3A2RequestMessage**从下拉列表，然后按**Enter**。  
+2.  在属性窗口中，选择**构造的消息**属性中，选择**PIP3A2RequestMessage**从下拉列表，然后按**Enter**。  
   
-3.  双击**消息分配**中调整**ConstructPIP3A2RequestMessage**形状以打开 BizTalk 表达式编辑器。  
+3.  双击**消息赋值**形状中**ConstructPIP3A2RequestMessage**形状以打开 BizTalk 表达式编辑器。  
   
 4.  在 BizTalk 表达式编辑器中，键入以下内容：  
   
@@ -39,68 +39,68 @@ ms.locfileid: "26009382"
     PIP3A2RequestMessage = Helper.NormalizeHeader(Microsoft.Solutions.BTARN.Shared.SCContainer.ConvertFromContainer(ActionMessage));  
     ```  
   
-5.  单击 **“确定”**。  
+5.  单击“确定” 。  
   
 ### <a name="to-configure-the-constructcontoso3a2requestmessage-transform-shape"></a>配置“ConstructContoso3A2RequestMessage 转换”形状  
   
 1.  在业务流程设计图面上，单击**ConstructContoso3A2RequestMessage**形状。  
   
-2.  在属性窗口中，选择**构造消息**属性，，然后选择**Contoso3A2RequestMessage**从下拉列表。  
+2.  在属性窗口中，选择**构造的消息**属性，并选择**Contoso3A2RequestMessage**从下拉列表。  
   
-3.  选择**Transform_1**中调整**ConstructContoso3A2RequestMessage**形状。  
+3.  选择**Transform_1**形状内**ConstructContoso3A2RequestMessage**形状。  
   
-4.  在属性窗口中，选择**映射名称**属性，然后单击省略号按钮 (**...**) 以打开转换的配置对话框。  
+4.  在属性窗口中，选择**映射名称**属性，然后单击省略号按钮 (**...**) 以打开转换配置对话框。  
   
-5.  在转换的配置对话框中，单击**现有映射**，然后在**完全限定的映射名称框**，选择**\<从引用程序集中选择\>** 从下拉列表以打开选择项目类型对话框。  
+5.  在转换配置对话框中，单击**现有的映射**，然后在**完全限定的映射名称框**，选择**\<从引用的程序集中\>** 从下拉列表中打开选择项目类型对话框。  
   
-6.  在选择项目类型对话框中，选择**ContosoPriceAndAvailability**程序集在左窗格中，选择**PIP3A2RequestToContosoPriceRequest**映射在右窗格中，并依次**确定**。  
+6.  在选择项目类型对话框中，选择**ContosoPriceAndAvailability**程序集的左窗格中选择**PIP3A2RequestToContosoPriceRequest**在右窗格中，映射，然后单击**确定**。  
   
-7.  在转换的配置对话框中，选择**源**的左窗格中。  
+7.  在转换配置对话框中，选择**源**的左窗格中。  
   
-8.  单击下的空框中**变量名称**，然后选择**PIP3A2RequestMessage**从下拉列表。  
+8.  单击下的空框**变量名**，然后选择**PIP3A2RequestMessage**从下拉列表。  
   
-9. 选择**目标**在左窗格中，单击**Contoso3A2RequestMessage**从**VariableName**下拉列表，然后单击**确定**.  
+9. 选择**目标**在左窗格中，单击**Contoso3A2RequestMessage**从**VariableName**下拉列表中，并单击**确定**.  
   
 ### <a name="to-configure-the-execute3a2vocabulary-call-rules-shape"></a>配置“Execute3A2Vocabulary 调用规则”形状  
   
-1.  在业务流程设计图面上，双击**Execute3A2Vocabulary**中调整**Scope_1**形状。  
+1.  在业务流程设计图面上，双击**Execute3A2Vocabulary**形状内**Scope_1**形状。  
   
-2.  在调用规则策略的配置对话框中，选择**3A2PriceAvailabilityPolicy**从**选择你想要调用的业务策略**下拉列表。  
+2.  在 CallRules 策略配置对话框中，选择**3A2PriceAvailabilityPolicy**从**选择你想要调用的业务策略**下拉列表。  
   
-3.  在**指定策略参数**列表中，单击**单击此处以添加新行**，然后选择**Contoso3A2ResponseMessage**从下拉列表。  
+3.  在中**指定策略参数**列表中，单击**单击此处可添加新行**，然后选择**Contoso3A2ResponseMessage**从下拉列表。  
   
-4.  单击 **“确定”**。  
+4.  单击“确定” 。  
   
 ### <a name="to-configure-the-construct3a2responsemessage-transform-shape"></a>配置“Construct3A2ResponseMessage 转换”形状  
   
-1.  在业务流程设计图面上，单击**Construct3A2ResponseMessage**形状。  
+1. 在业务流程设计图面上，单击**Construct3A2ResponseMessage**形状。  
   
-2.  在属性窗口中，选择**消息构造**属性，，然后选择**PIP3A2ResponseMessage**从下拉列表，然后按**Enter**。  
+2. 在属性窗口中，选择**构造的消息**属性，并选择**PIP3A2ResponseMessage**从下拉列表，然后按**Enter**。  
   
-3.  选择**Transform_2**中调整**Construct3A2ResponseMessage**形状。  
+3. 选择**Transform_2**形状内**Construct3A2ResponseMessage**形状。  
   
-4.  在属性窗口中，单击**映射名称**，然后单击省略号按钮 (**...**).  
+4. 在属性窗口中，单击**映射名称**，然后单击省略号按钮 (**...**).  
   
-5.  在转换的配置对话框中，单击**新映射。**  
+5. 在转换配置对话框中，单击**新映射。**  
   
-6.  在**完全限定的映射名称**框中，键入**ContosoPriceAndAvailability.ContosoResponse3A2RequestMerge**。  
+6. 在中**完全限定的映射名称**框中，键入**ContosoPriceAndAvailability.ContosoResponse3A2RequestMerge**。  
   
-7.  在转换的配置对话框中，选择**源**的左窗格中。  
+7. 在转换配置对话框中，选择**源**的左窗格中。  
   
-8.  单击**单击此处以添加新行**标记下**变量名称**，然后选择**PIP3A2RequestMessage**从下拉列表。  
+8. 单击**单击此处可添加新行**标签下**变量的名称**，然后选择**PIP3A2RequestMessage**从下拉列表。  
   
-9. 单击**单击此处以添加新行**标记下**变量名称**下一行，然后选择上**Contoso3A2ResponseMessage**从下拉列表。  
+9. 单击**单击此处可添加新行**标签下**变量的名称**下一行中，然后再选择**Contoso3A2ResponseMessage**从下拉列表。  
   
-10. 选择**目标**在左窗格中，选择**PIP3A2ResponseMessage**从**变量名称**下拉列表，然后单击**确定**.  
+10. 选择**目标**在左窗格中，选择**PIP3A2ResponseMessage**从**变量名称**下拉列表中，并单击**确定**.  
   
-11. 在解决方案资源管理器，右键单击**ContosoResponse3A2RequestMerge.btm**文件，，然后单击**打开**。  
+11. 在解决方案资源管理器中右键单击**ContosoResponse3A2RequestMerge.btm**文件，，然后单击**打开**。  
   
-12. 在**打开方式-ContosoResponse3A2RequestMerge.btm**对话框中，选择**XML 编辑器**从列表中的程序，然后单击**确定**。 单击 **“是”**。  
+12. 在中**打开方式-ContosoResponse3A2RequestMerge.btm**对话框中，选择**XML 编辑器**从列表中的程序，并单击**确定**。 单击 **“是”**。  
   
     > [!NOTE]
-    >  由于大量的所需的此映射的链接，本教程使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]2008 HTML/XML 编辑器，若要手动复制映射信息构造映射。  
+    >  由于大量的所需的此映射的链接，本教程使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]2008 HTML/XML 编辑器来构造映射通过手动复制映射信息。  
   
-13. 上**编辑**菜单上，单击**选择所有**。  
+13. 上**编辑**菜单上，单击**全**。  
   
 14. 将以下 XML 复制到剪贴板中。 上**编辑**菜单上，单击**粘贴**覆盖当前映射：  
   
@@ -156,7 +156,7 @@ ms.locfileid: "26009382"
   
 ### <a name="to-configure-the-expression1-shape"></a>配置 Expression_1 形状  
   
-1.  在解决方案资源管理器中，双击**PrivateResponder.odx**。  
+1.  在解决方案资源管理器中双击**PrivateResponder.odx**。  
   
 2.  在业务流程设计图面上，双击**Expression_1**形状以打开 BizTalk 表达式编辑器。  
   
@@ -175,7 +175,7 @@ ms.locfileid: "26009382"
     Helper.ReturnSCWithDocType(contosoResponseXML) );  
     ```  
   
-4.  单击 **“确定”**。  
+4.  单击“确定” 。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [步骤 7：创建和配置端口](../../adapters-and-accelerators/accelerator-rosettanet/step-7-creating-and-configuring-ports.md)

@@ -1,5 +1,5 @@
 ---
-title: 找不到的应用程序 |Microsoft 文档
+title: 未找到应用程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,36 +12,36 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e2a2b42a74001cfdc374d20052a8369ae535347d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 98499420c773328d647a9c7fa1c80e3ab09ba1b1
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230197"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37003454"
 ---
 # <a name="application-not-found"></a>找不到应用程序
 ## <a name="details"></a>详细信息  
-  
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
-|事件 ID|0|  
-|事件源|0|  
-|组件|0|  
-|符号名称|0|  
-|消息正文|未找到应用程序“{0}”。请验证默认的 BizTalk 配置数据库中是否存在此应用程序|  
-  
+
+|                 |                                                                                                         |
+|-----------------|---------------------------------------------------------------------------------------------------------|
+|  产品名称   |           [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]            |
+| 产品版本 |                       [!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]                        |
+|    事件 ID     |                                                    0                                                    |
+|  事件源   |                                                    0                                                    |
+|    组件    |                                                    0                                                    |
+|  符号名称  |                                                    0                                                    |
+|  消息正文   | 应用程序"{0}"找不到。验证应用程序的默认 BizTalk 配置数据库中存在 |
+
 ## <a name="explanation"></a>解释  
  此错误表示 BizTalk 使用的是 BizTalk 数据库中没有的应用程序。  
-  
+
 ## <a name="user-action"></a>用户操作  
  使用以下过程配置有效的应用程序。  
-  
+
 #### <a name="to-configure-a-valid-application"></a>配置有效应用程序的步骤  
-  
-1.  单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
-  
-2.  在控制台根目录中，展开[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，展开**BizTalk 组**，然后展开**应用程序**。  
-  
-3.  确保应用程序在此处存在。 如果不存在，请选择其他有效应用程序。
+
+1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
+
+2. 在控制台根目录中，展开[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，展开**BizTalk 组**，然后展开**应用程序**。  
+
+3. 确保应用程序在此处存在。 如果不存在，请选择其他有效应用程序。

@@ -1,5 +1,5 @@
 ---
-title: 与已发布的 WCF 服务的 SOAP 标头 |Microsoft 文档
+title: 与已发布的 WCF 服务的 SOAP 标头 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 78f36e778930a781ac797e18308240ecb4bef667
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: ea48ab7afeae2b54136c9134d3ef92878b802924
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25975683"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36985366"
 ---
 # <a name="soap-headers-with-published-wcf-services"></a>SOAP 标头与发布的 WCF 服务
-WCF 接收适配器可以将所有 SOAP 标头值都复制到入站消息中**InboundHeaders**属性，也可以编写或提升为 BizTalk 消息上下文的指定的值。 这些适配器可以处理 WCF 基础结构使用的自定义 SOAP 标头和标准 SOAP 标头，如 WS-Addressing、WS-Security 和 WS-AtomicTransaction。 **InboundHeaders**上下文属性是目标命名空间中**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**，并包含在 soap 的字符串表示形式入站消息中的标头值。  
+WCF 接收适配器可以将所有 SOAP 标头值都复制到的入站消息中**InboundHeaders**属性，也可以写入或升级到 BizTalk 消息上下文的指定的值。 这些适配器可以处理 WCF 基础结构使用的自定义 SOAP 标头和标准 SOAP 标头，如 WS-Addressing、WS-Security 和 WS-AtomicTransaction。 **InboundHeaders**上下文属性位于目标命名空间**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**，并包含入站消息中的 SOAP 标头值的字符串表示形式。  
   
 > [!NOTE]
 >  如果要升级您指定的 SOAP 标头值，BizTalk 项目中必须有与您要升级的值对应的已部署属性架构。  
@@ -32,7 +32,7 @@ WCF 接收适配器可以将所有 SOAP 标头值都复制到入站消息中**In
 > [!NOTE]
 >  升级后的属性不得超过 256 个字符。  
   
- 下面的 XML 数据显示的字符串表示形式的 SOAP 标头的示例**InboundHeaders**属性。 这来自客户端，并将发送到 BizTalk 接收位置。  
+ 以下 XML 数据显示为 SOAP 标头的字符串表示形式的示例**InboundHeaders**属性。 这来自客户端，并将发送到 BizTalk 接收位置。  
   
 ```  
 <headers>  
@@ -46,15 +46,15 @@ WCF 接收适配器可以将所有 SOAP 标头值都复制到入站消息中**In
   
  若要将 SOAP 标头值写入或升级到 BizTalk 消息上下文，需要将由属性名称和命名空间组成的值对的集合放入 WCF 消息中，这样 WCF 适配器就可以知道将写入或升级这些标头值。 在将 SOAP 标头值写入或升级到 BizTalk 消息上下文时，WCF 适配器需要获取 WCF 消息中的以下消息属性：  
   
--   若要升级到 BizTalk 消息上下文的 SOAP 标头值，WCF 适配器要查找的键对**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote**和值**列表\<KeyValuePair\<XmlQualifiedName，对象\>\>**。  
+- 若要升级到 BizTalk 消息上下文的 SOAP 标头值，WCF 适配器会寻找的密钥对**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote**和值**列表\<KeyValuePair\<XmlQualifiedName，对象\>\>**.  
   
-     使用此对，WCF 适配器采取命名空间、 名称和值从**XmlQualifiedName**对象，并将其用于升级的标头值。  
+   使用此对 WCF 适配器采用命名空间、 名称和值从**XmlQualifiedName**对象，并将其用于升级标头值。  
   
--   若要编写，但不是将提升为 BizTalk 消息上下文的 SOAP 标头值，WCF 适配器要查找的键对**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/WriteToContext**和值**列表\<KeyValuePair\<XmlQualifiedName，对象\>\>**。  
+- 若要编写，而不是升级到 BizTalk 消息上下文的 SOAP 标头值，WCF 适配器会寻找的密钥对**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/WriteToContext**和值**列表\<KeyValuePair\<XmlQualifiedName，对象\>\>**。  
   
-     WCF 适配器使用此对将这些值写入消息上下文。  
+   WCF 适配器使用此对将这些值写入消息上下文。  
   
- 以下代码显示的是如何将 SOAP 标头值写入或升级到 BizTalk 消息上下文：  
+  以下代码显示的是如何将 SOAP 标头值写入或升级到 BizTalk 消息上下文：  
   
 ```  
 const string PropertiesToPromoteKey="http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote";  
@@ -75,7 +75,7 @@ writeProps.Add(new KeyValuePair<XmlQualifiedName, object>(PropName2, "Property v
 wcfMessage.Properties[PropertiesToWriteKey]=writeProps;  
 ```  
   
- BizTalk WCF 服务发布向导未将自定义 SOAP 标头定义包含在生成的元数据中。 若要使用自定义 SOAP 标头发布 WCF 服务的元数据，应手动创建 Web Services 描述语言 (WSDL) 文件。 你可以使用**externalMetadataLocation**属性[ \<serviceMetadata\> ](http://go.microsoft.com/fwlink/?LinkId=89121)向导生成指定的位置的 Web.config 文件中的元素WSDL 文件。 会向用户返回该 WSDL 文件以响应 WSDL 和元数据交换 (MEX) 请求，而不是返回自动生成的 WSDL。  
+ BizTalk WCF 服务发布向导未将自定义 SOAP 标头定义包含在生成的元数据中。 若要使用自定义 SOAP 标头发布 WCF 服务的元数据，应手动创建 Web Services 描述语言 (WSDL) 文件。 可以使用**externalMetadataLocation**的属性[ \<serviceMetadata\> ](http://go.microsoft.com/fwlink/?LinkId=89121)元素中的 Web.config 文件，该向导将生成指定的位置WSDL 文件。 会向用户返回该 WSDL 文件以响应 WSDL 和元数据交换 (MEX) 请求，而不是返回自动生成的 WSDL。  
   
  以下 XML 数据显示的示例是定义自定义 SOAP 标头的 WSDL 文件的一部分：  
   
@@ -99,6 +99,6 @@ wcfMessage.Properties[PropertiesToWriteKey]=writeProps;
   
 -   [使用管道组件访问 WCF 消息中的 SOAP 标头](../core/accessing-soap-headers-in-wcf-messages-with-pipeline-components.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [WCF 适配器属性架构和属性](../core/wcf-adapters-property-schema-and-properties.md)   
  [SOAP 标头与使用的 WCF 服务](../core/soap-headers-with-consumed-wcf-services.md)

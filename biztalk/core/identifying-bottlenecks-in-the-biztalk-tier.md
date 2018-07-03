@@ -1,5 +1,5 @@
 ---
-title: 识别 BizTalk 层中的瓶颈 |Microsoft 文档
+title: 确定 BizTalk 层的瓶颈 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,27 +12,27 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a5dd356ac3b8563d207e3534fc503711f11a9c8e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8b53410466478ea7e493d043f42b5de86ec9921c
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22258181"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36996246"
 ---
-# <a name="identifying-bottlenecks-in-the-biztalk-tier"></a>识别瓶颈 BizTalk 层中
+# <a name="identifying-bottlenecks-in-the-biztalk-tier"></a>确定 BizTalk 层的瓶颈
 BizTalk 层可分为以下功能区域：  
   
--   接收  
+- 接收  
   
--   处理  
+- 处理  
   
--   传输  
+- 传输  
   
--   跟踪  
+- 跟踪  
   
--   其他  
+- 其他  
   
- 对于这些区域，如果系统资源（CPU、内存和磁盘）似乎趋于饱和，请通过向上扩展来升级服务器。 如果系统资源不饱和，请执行本部分中介绍的这些步骤。  
+  对于这些区域，如果系统资源（CPU、内存和磁盘）似乎趋于饱和，请通过向上扩展来升级服务器。 如果系统资源不饱和，请执行本部分中介绍的这些步骤。  
   
 ## <a name="bottlenecks-in-the-receive-location"></a>接收位置中的瓶颈  
  如果消息在接收位置开始累积（例如，文件接收文件夹不断增大或传出队列没有很快清空），则说明可能由于内部受阻而导致系统处理数据的速率不够快，无法跟上传入负载的速率（如果订户无法足够快速地处理数据而导致数据库表中出现积压，BizTalk 将会降低接收速率）。 如果是由于硬件限制所导致的瓶颈，请尝试向上扩展。 通过向映射到接收处理程序的主机添加主机实例（服务器）也能够得到扩展。 使用 Perfmon 来监视系统资源的利用率。 确认外部接收位置不是导致瓶颈的原因至关重要。 例如，高速磁盘 IO 导致远程文件共享饱和，远程传出队列的宿主服务器不饱和，或者线程中用于生成 HTTP/SOAP 负载的客户端饱和。  
@@ -63,14 +63,14 @@ BizTalk 层可分为以下功能区域：
   
  此主机实例可能会受到 CPU 的约束。 如果的确是这种情况，请考虑向上扩展服务器，或者将其他服务器配置为启用主机跟踪以实现向外扩展。 多个主机实例将自动平衡多个配置的 MessageBox 的负载。  
   
- 如果 MessageBox 数据库的 TrackingData 表开始备份，这通常是由于在 BizTalkDTADb 和/或 BAMPrimaryImport 数据库上的数据维护作业没有按照配置来运行，导致 BizTalkDTADb 和/或 BAMPrimaryImport 数据库的增大所致。 一旦这些数据库变得过大，将会对跟踪主机将数据插入这些表的能力产生负面影响，并导致在 MessageBox 数据库表中备份跟踪数据。 MessageBox 的增长-> TrackingData 表将导致限制进行计划。  
+ 如果 MessageBox 数据库的 TrackingData 表开始备份，这通常是由于在 BizTalkDTADb 和/或 BAMPrimaryImport 数据库上的数据维护作业没有按照配置来运行，导致 BizTalkDTADb 和/或 BAMPrimaryImport 数据库的增大所致。 一旦这些数据库变得过大，将会对跟踪主机将数据插入这些表的能力产生负面影响，并导致在 MessageBox 数据库表中备份跟踪数据。 MessageBox 的增长-> TrackingData 表将会导致限流。  
   
 ## <a name="other"></a>其他  
  配置部署拓扑结构，以使不同的功能运行在专用的独立主机实例中。 这样，每个主机实例将获得自己的资源集（在 32 位系统中、2GB 虚拟内存地址空间、句柄和线程）。 如果服务器足够强大（足够的 CPU 余量、内存）并能够承载多个主机实例，则可以将它们全部配置为在相同的物理计算机上运行。 如果不是，也可通过将功能移动到专用服务器上以方便向外扩展。 在多个服务器上运行相同的功能也可用于提供高可用性的配置。  
   
 ## <a name="biztalk-system-performance-counters"></a>BizTalk 系统性能计数器  
   
-|对象|实例|计数器|监视目的|  
+|Object|实例|计数器|监视目的|  
 |------------|--------------|-------------|------------------------|  
 |处理器|_Total|% Processor Time|资源争用|  
 |处理|BTSNTSvc|Virtual Bytes|内存泄漏/膨胀|  
@@ -85,13 +85,13 @@ BizTalk 层可分为以下功能区域：
   
  如果部署了多个业务流程，可以将业务流程登记到不同的专用业务流程主机上。 将不同的物理服务器映射到专用业务流程主机，将确保不同的业务流程独立并且不会争用同一物理地址空间或同一服务器上的共享资源。  
   
-### <a name="memory-starvation"></a>内存资源不足  
- 高吞吐量情况可能会增加对系统内存的要求。 由于 32 位进程受到可使用的内存数量的限制，建议将接收/处理/发送功能分别放在单独的主机实例中，以使每个主机接收自己的 2GB 地址空间。 此外，如果多个主机实例运行在相同的物理服务器上，则升级到 4/8GB 内存将非常有用，这样可避免在实际内存到磁盘之间进行不必要的数据交换。 长时间运行的业务流程可以存放到分配的内存再导致内存膨胀和因此限制进行计划。 大型消息也会导致高内存消耗。  
+### <a name="memory-starvation"></a>内存不足  
+ 高吞吐量情况可能会增加对系统内存的要求。 由于 32 位进程受到可使用的内存数量的限制，建议将接收/处理/发送功能分别放在单独的主机实例中，以使每个主机接收自己的 2GB 地址空间。 此外，如果多个主机实例运行在相同的物理服务器上，则升级到 4/8GB 内存将非常有用，这样可避免在实际内存到磁盘之间进行不必要的数据交换。 长时间运行的业务流程可容纳再导致内存膨胀和限流分配的内存。 大消息也会导致高内存消耗。  
   
- 可以通过降低处理大消息时克服此内存膨胀问题**内部消息队列大小**和**每个 CPU 进程内消息**特定主机的值。  
+ 可以通过降低来处理大消息时解决此内存膨胀问题**内部消息队列大小**并**每 CPU 进程内消息**特定主机的值。  
   
 ### <a name="disk-contention"></a>磁盘争用  
- 如果磁盘饱和 （例如，文件/MSMQ 传输） 请考虑升级到多个轴和条带化磁盘具有 RAID 1 + 0。 此外每当使用文件传输时务必要确保 （接收和发送） 的文件夹不执行增长得太大 (> 50000 文件)。  
+ 如果磁盘趋于饱和 （例如，文件 /MSMQ 传输），请考虑升级到多个心轴和条带化磁盘并用 RAID 1 + 0。 此外一旦使用文件传输是必须确保该文件夹 （接收和发送） 不会变得过大 (> 50,000 文件)。  
   
  如果 BizTalk Server 由于以下提到的各种原因而选择阻止传入数据进入系统，则接收文件夹可能变得很大。 将数据从发送文件夹中移出也是十分重要的，这使得该文件夹的增大不会影响 BizTalk Server 写入其他数据的能力。 对于非事务性 MSMQ 队列，建议远程创建接收队列，以便减少 BizTalk Server 上的磁盘争用。  
   
@@ -110,22 +110,22 @@ BizTalk 层可分为以下功能区域：
   
 ## <a name="biztalk-application-counters"></a>BizTalk 应用程序计数器  
   
-|对象|实例|计数器|Description|  
+|Object|实例|计数器|Description|  
 |------------|--------------|-------------|-----------------|  
 |BizTalk 消息传送|RxHost|Documents received/sec|传入速率|  
 |BizTalk 消息传送|TxHost|Documents processed/Sec|传出速率|  
 |XLANG/s 业务流程|PxHost|Orchestrations Completed/Sec.|处理速率|  
-|BizTalk: MessageBox： 常规计数器|MsgBoxName|假脱机大小|所有主机队列的累积大小|  
+|BizTalk: MessageBox： 常规计数器|MsgBoxName|后台处理大小|所有主机队列的累积大小|  
 |BizTalk: MessageBox： 常规计数器|MsgBoxName|Tracking Data Size|MessageBox 上 TrackingData 表的大小|  
 |BizTalk:MessageBox:主机计数器|PxHost:MsgBoxName|Host Queue - Length|特定主机队列中的消息数|  
 |BizTalk:MessageBox:主机计数器|TxHost:MsgBoxName|Host Queue - Length|特定主机队列中的消息数|  
 |BizTalk：消息代理|RxHost|Database Size|发布 (PxHost) 队列的大小|  
 |BizTalk：消息代理|PxHost|Database Size|发布 (TxHost) 队列的大小|  
 |BizTalk：消息代理|HostName|Message delivery throttling state|影响 XLANG 和出站传输|  
-|BizTalk：消息代理|HostName|限制状态消息发布|影响 XLANG 和入站传输|  
+|BizTalk：消息代理|HostName|消息发布阻止状态|影响 XLANG 和入站传输|  
   
 ### <a name="where-do-i-start"></a>应该从何处开始？  
- 监视**消息传递限制状态**和**消息发布限制状态**对于每个主机实例通常是启动的好时机。 如果这些计数器的值不为零，则表示 BizTalk 系统内正发生限流，并可进一步分析导致瓶颈的原因。 有关的其他性能计数器的说明，请参阅[标识数据库层中的瓶颈](http://msdn.microsoft.com/library/f1dc58b5-73b0-41b5-9a1e-c0698485c732)。  
+ 监视**Message Delivery Throttling State**并**Message Publishing Throttling State**对于每个主机实例通常是启动的好时机。 如果这些计数器的值不为零，则表示 BizTalk 系统内正发生限流，并可进一步分析导致瓶颈的原因。 有关其他性能计数器的说明，请参阅[标识数据库层的瓶颈](http://msdn.microsoft.com/library/f1dc58b5-73b0-41b5-9a1e-c0698485c732)。  
   
 ## <a name="backlog-buildup"></a>出现积压  
  对于 1-1 部署方案，接收 1 个消息将导致处理并传输 1 个消息，如果传出速率不等于传入速率，积压将在系统中的某处累积。 在这种情况下，可以监视 Spool Size。  

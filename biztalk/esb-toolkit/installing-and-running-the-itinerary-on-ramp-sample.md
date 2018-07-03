@@ -1,5 +1,5 @@
 ---
-title: 安装和运行路线入口示例 |Microsoft 文档
+title: 安装和运行路线接入点示例 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19a34f2aba7a4933bd69aab52e91a98fce43a16b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a4fcad54e40ad489b5a5d55ceabac50f6381e4e0
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22293949"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36994934"
 ---
-# <a name="installing-and-running-the-itinerary-on-ramp-sample"></a>安装和运行路线上负载增加示例
-路线入口示例演示如何配置 ESB 路线属性和运行单向和请求-响应消息传递方案，如下所示：  
-  
--   执行使用消息传递服务路线  
-  
--   执行使用业务流程路线  
-  
--   执行路线使用消息传递服务和业务流程的步骤的组合  
-  
- 路线入口示例使用 Windows 窗体测试客户端应用程序用于执行路线 Web 服务的方法以及显示返回的消息。 你可以打开测试客户端项目，以便运行它，并检查代码以了解如何使用你自己的面向服务的体系结构 (SOA) 和 ESB 应用程序中的路线 Web 服务。  
-  
- 本节包含下列主题：  
-  
--   [安装路线上负载增加示例](../esb-toolkit/installing-the-itinerary-on-ramp-sample.md)  
-  
--   [运行路线上负载增加示例](../esb-toolkit/running-the-itinerary-on-ramp-sample.md)
+# <a name="installing-and-running-the-itinerary-on-ramp-sample"></a>安装和运行路线接入点示例
+路线接入点示例演示了如何配置 ESB 路线属性和运行单向和请求-响应消息传送方案，如下所示：  
+
+- 执行路线，以使用消息传送服务  
+
+- 执行路线，使用业务流程  
+
+- 执行路线使用消息传送服务和业务流程的步骤的组合  
+
+  路线接入点示例使用 Windows 窗体测试客户端应用程序执行路线 Web 服务的方法，并显示返回的消息。 您可以打开测试客户端项目以运行它并检查代码，请参阅如何使用你自己的面向服务的体系结构 (SOA) 和 ESB 应用程序中的路线 Web 服务。  
+
+  本节包含下列主题：  
+
+- [安装路线接入点示例](../esb-toolkit/installing-the-itinerary-on-ramp-sample.md)  
+
+- [运行路线接入点示例](../esb-toolkit/running-the-itinerary-on-ramp-sample.md)

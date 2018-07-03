@@ -1,5 +1,5 @@
 ---
-title: 该交换包含格式不正确的 ISA 或服务架构不可用 |Microsoft 文档
+title: 交换包含格式不正确的 ISA 或服务架构不可用 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 84aec7600b71d48becfdeb30e34f837292c5ecfa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cce469b25a2ba15c3038ea9079c3f22fc4f8c0c2
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241653"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37010710"
 ---
 # <a name="the-interchange-contained-a-malformed-isa-or-the-service-schema-was-not-available"></a>交换包含格式不正确的 ISA 或服务架构不可用
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|EDI 引擎|  
-|符号名称|MalformedIsaError|  
-|消息正文|交换包含格式不正确的 ISA 或服务架构不可用，因此它被完全拒绝|  
+|                 |                                                                                                                    |
+|-----------------|--------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                 |
+| 产品版本 |                             [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                             |
+|    事件 ID     |                                                         -                                                          |
+|  事件源   |               [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI               |
+|    组件    |                                                     EDI 引擎                                                     |
+|  符号名称  |                                                 MalformedIsaError                                                  |
+|  消息正文   | 交换包含格式不正确的 ISA 或服务架构不可用，因此它被完全拒绝 |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明接收管道无法处理传入的交换，因为交换中的 ISA 或 IEA 段不符合 X12ServiceSchema，或者未部署 X12ServiceSchema（在 BaseArtifacts.dll 中）。  

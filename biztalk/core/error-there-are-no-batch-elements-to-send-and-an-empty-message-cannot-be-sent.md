@@ -1,5 +1,5 @@
 ---
-title: 没有要发送的批处理元素和不能发送一个空消息，因为它不配置为当事方 |Microsoft 文档
+title: 没有要发送的批处理元素并且无法发送空消息，因为它未配置为参与方 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 80dcf96feef006a2576afc5829e7927e003524a5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 73d0d44c8a5a206748eb128cd2461d1d04b54c93
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241957"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36976662"
 ---
 # <a name="there-are-no-batch-elements-to-send-and-an-empty-message-cannot-be-sent-as-it-is-not-configured-for-party"></a>There are no batch elements to send and an empty message cannot be sent as it is not configured for party
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|批处理引擎|  
-|符号名称|EmptyMessageNotAllowed|  
-|消息正文|没有要发送的批处理元素并且无法发送空消息，因为没有为参与方 {0} 进行此配置|  
+|                 |                                                                                                               |
+|-----------------|---------------------------------------------------------------------------------------------------------------|
+|  产品名称   |              [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]               |
+| 产品版本 |                          [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                           |
+|    事件 ID     |                                                       -                                                       |
+|  事件源   |            [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI             |
+|    组件    |                                                批处理引擎                                                |
+|  符号名称  |                                            EmptyMessageNotAllowed                                             |
+|  消息正文   | 没有要发送的批处理元素并且无法发送空消息，因为它未配置为参与方 {0} |
   
 ## <a name="explanation"></a>解释  
  此警告表明在基于计划的批处理过程中没有发送批处理消息，因为当计划批处理发布时未收到任何批处理元素，并且尚未启用空的批处理信号。  

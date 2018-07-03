@@ -1,5 +1,5 @@
 ---
-title: 如何导入 BPEL4WS |Microsoft 文档
+title: 如何导入 BPEL4WS |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e82dd80e280eff39ff5c1678b5c9751e378ee1b
-ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
+ms.openlocfilehash: 0043cca1305f0acf7f07878acd7e75b1390ffea5
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31008472"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36995966"
 ---
-# <a name="import-bpel4ws-in-biztalk-server"></a>BizTalk Server 中的导入 BPEL4WS
+# <a name="import-bpel4ws-in-biztalk-server"></a>在 BizTalk Server 中导入 BPEL4WS
 可以从现有的 BPEL4WS 进行导入以创建业务流程。  
   
 > [!IMPORTANT]
@@ -29,25 +29,25 @@ ms.locfileid: "31008472"
   
 ## <a name="import-bpel4ws-into-an-orchestration"></a>导入 BPEL4WS 到业务流程  
   
-1.  创建一个新的项目。  
+1. 创建一个新的项目。  
   
-2.  在 BizTalk 项目类型中，双击“BizTalk Server BPEL 导入项目”，或选择“BizTalk Server BPEL 导入项目”，然后按“确定”。  
+2. 在 BizTalk 项目类型中，双击“BizTalk Server BPEL 导入项目”，或选择“BizTalk Server BPEL 导入项目”，然后按“确定”。  
   
-3.  在向导中，选择要导入以形成新的 BizTalk 项目的 BPEL、WSDL 和 XSD 文件。 包括通过 import 和 include 语句引用的所有文件。  
+3. 在向导中，选择要导入以形成新的 BizTalk 项目的 BPEL、WSDL 和 XSD 文件。 包括通过 import 和 include 语句引用的所有文件。  
   
-4.  为所调用的 Web Services 选择 WSDL 文件。  
+4. 为所调用的 Web Services 选择 WSDL 文件。  
   
-     现在，您可以修改或部署新的业务流程。  
+    现在，您可以修改或部署新的业务流程。  
   
- **导入 BPEL4WS 的限制**  
+   **导入对 BPEL4WS 的限制**  
   
 -   在导入 BPEL 和 WSDL 时，请确保 WSDL 定义节点和 BPEL 过程节点的 Name 属性不匹配。  
   
--   不要在导入的 BPEL4WS 中使用 XLANG/s 保留字。 完整列表，请参阅[XLANG/s 保留字](../core/xlang-s-reserved-words.md)。  
+-   不要在导入的 BPEL4WS 中使用 XLANG/s 保留字。 有关完整列表，请参阅[XLANG/s 保留字](../core/xlang-s-reserved-words.md)。  
   
 -   仅支持 XSD 预定义的简单类型。  
   
--   不支持 xsd:QName;它是作为 System.String 导入。 改为使用 xsd: string。  
+-   不支持 xsd: qname;它将作为 System.String 导入。 改为使用 xsd: string。  
   
 -   请考虑在导入 BPEL4WS 时使用规范化的 XPaths。  
   
@@ -69,8 +69,8 @@ ms.locfileid: "31008472"
   
     |规范化 XPath|非规范化 XPath|  
     |---------------------|--------------------------|  
-    |BizTalk 编辑器将显示一个特殊图标 (![](../core/media/ebiz-orch-promotedprop.gif "ebiz_orch_promotedprop")) 来表示字段已被提升。 如果使用规范化 XPath 表达式升级字段，则可以通过更有效地遍历 XML 来改进性能。|BizTalk 编辑器不显示特殊图标。 编译器和升级对话框都会发出警告。 随着消息大小的增长，会对性能产生明显的线性影响。|  
+    |BizTalk 编辑器将显示一个特殊的图标 (![](../core/media/ebiz-orch-promotedprop.gif "ebiz_orch_promotedprop")) 来表示字段已升级。 如果使用规范化 XPath 表达式升级字段，则可以通过更有效地遍历 XML 来改进性能。|BizTalk 编辑器不显示特殊图标。 编译器和升级对话框都会发出警告。 随着消息大小的增长，会对性能产生明显的线性影响。|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何导出 BPEL4WS](../core/how-to-export-bpel4ws.md)   
  [XLANG-s 到 BPEL4WS 的类型转换](../core/xlang-s-to-bpel4ws-type-conversions.md)

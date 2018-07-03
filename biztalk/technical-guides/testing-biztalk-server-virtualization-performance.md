@@ -1,5 +1,5 @@
 ---
-title: 测试 BizTalk Server 虚拟化性能 |Microsoft 文档
+title: 测试 BizTalk Server 虚拟化性能 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8d45567918cebd18bfea7bf30f31b299f6bed02d
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 3f07c6bf8371e1db84ed574d7c737d4cc5b3903b
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26008566"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36993694"
 ---
 # <a name="testing-biztalk-server-virtualization-performance"></a>测试 BizTalk Server 虚拟化性能
-在本指南中所述的性能测试方案的每个已部署在 Microsoft 测试实验室中，物理计算机上以及然后在每个不同的系统体系结构上执行相同的负载测试了。 每台物理计算机上的主机操作系统已完全安装的[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]Enterprise、 64 位版本，安装了 HYPER-V 服务器角色。 用于测试 BizTalk Server 中的虚拟机使用已设置[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]Enterprise、 作为来宾操作系统的 64 位版本。 用于测试 SQL Server 的虚拟机使用已设置[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]Enterprise、 作为来宾操作系统的 64 位版本。 测试方案、 测试方法、 性能测试结果和后续分析用于制定一系列的最佳实践和指南设计，实现时，以及优化虚拟化[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
+在本指南中所述的性能测试方案的每个已部署在 Microsoft 测试实验室中，物理计算机上，然后在每个不同的系统体系结构上执行相同的负载测试。 每台物理计算机上的主机操作系统已完全安装的[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]企业版、 64 位版本，安装了 HYPER-V 服务器角色。 用于测试 BizTalk Server 使用的虚拟机设置的[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]企业版、 作为来宾操作系统的 64 位版本。 用于测试 SQL Server 的虚拟机使用已设置[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]企业版、 作为来宾操作系统的 64 位版本。 测试方案、 测试方法、 性能测试结果和后续分析已用于明确表述一系列最佳实践和设计、 实现、 指南和优化虚拟化[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
   
--   **测试方案 1： 基线**– 第一个方案旨在来确定在仅物理硬件上运行的 BizTalk Server 环境的基准性能。 对于此方案 BizTalk Server 和 SQL Server 已安装，在仅物理硬件上运行。  
+- **测试方案 1： 基线**– 确定基准性能的仅物理硬件上运行的 BizTalk Server 环境所需的第一个方案。 这种情况下为 BizTalk Server 和 SQL Server 已安装，并仅物理硬件上运行。  
   
--   **测试方案 2： 虚拟 BizTalk Server/物理 SQL Server**的第二个方案都可以确定在同一台物理服务器上的多个来宾虚拟机上托管 BizTalk Server 的性能影响。 从多个虚拟机配置了然后相比物理机处理具有相同数量的逻辑处理器的总的数字的形式执行的测试结果分散的所有虚拟机。  
+- **测试方案 2： 虚拟 BizTalk/物理服务器的 SQL Server** -第二个方案都可以确定在同一台物理服务器上的多个来宾虚拟机上托管 BizTalk Server 的性能影响。 测试结果来自配置已然后处理的物理机到比较具有相同数量的逻辑处理器的总数的多个虚拟机分布在所有虚拟机。  
   
--   **在单独的物理 HYPER-V 主机上的测试方案 3： 虚拟 BizTalk Server/虚拟 SQL Server** -执行的第三个方案，以确定虚拟化环境中运行 BizTalk Server 和 SQL Server 的性能影响。 使用 BizTalk Server HYPER-V 虚拟机上运行与 BizTalk 数据库托管在 HYPER-V 虚拟机上运行的 SQL Server 实例上执行测试。 对于此方案中，BizTalk Server 虚拟机和 SQL Server 虚拟机已托管在单独的物理 HYPER-V 主机。  
+- **在单独的物理 HYPER-V 主机上的测试方案 3： 虚拟 BizTalk 服务器/虚拟 SQL Server** -执行的第三个方案，以确定虚拟化环境中运行 BizTalk Server 和 SQL Server 的性能影响。 使用 BizTalk Server 与 BizTalk 数据库托管在 HYPER-V 虚拟机上运行的 SQL Server 实例上运行的 HYPER-V 虚拟机上执行测试。 对于此方案，BizTalk Server 虚拟机和 SQL Server 虚拟机已托管在单独的物理 HYPER-V 主机上。  
   
--   **测试方案 4： 服务器合并-将完整 BizTalk 组包括 SQL 到 HYPER-V 上的一台物理服务器合并**– 在此方案中，运行测试应用程序所需的所有虚拟机 (Vm) 将都托管在一台物理服务器。 这种情况下的用途是确定承载 SQL Server 和 BizTalk Server 中合并的环境的虚拟机的性能成本。  
+- **测试方案 4： 服务器合并的合并完整 BizTalk 组包括 SQL 到一台物理服务器上的 HYPER-V** – 在方案中，运行测试应用程序所需的所有虚拟机 (Vm) 都位于一台物理服务器上。 此方案的目的是确定的托管 SQL Server 和统一的环境中的 BizTalk Server 虚拟机的性能成本。  
   
- 本部分提供测试应用程序和用于每个方案的服务器体系结构的概述，并还会显示在测试期间观察到的关键性能指标 (Kpi)。  
+  本部分提供了测试应用程序和用于每个方案的服务器体系结构的概述，并还展示了在测试期间观察到的关键绩效指标 (Kpi)。  
   
 ## <a name="in-this-section"></a>本节内容  
   

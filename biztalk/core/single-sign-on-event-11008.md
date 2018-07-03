@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 11008 |Microsoft 文档
+title: 单一登录： 事件 11008 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 88d2dfa2cfb71d66b43cfaa77b24b1dfce70fd7c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7f3a77dcfb89a3040cf6c1acb71a053d57393591
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276901"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36983726"
 ---
 # <a name="single-sign-on-event-11008"></a>单一登录： 事件 11008
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|11008|  
-|事件源|ENTSSO|  
-|组件|N/A|  
-|符号名称|SSO_WARN_CHECK_GROUP|  
-|消息正文|检查组成员失败。%r<br /><br /> 组名称: %1 %r<br /><br /> 帐户名称: %2 %r<br /><br /> 其他数据: %3 %r<br /><br /> 错误代码： %4|  
+|                 |                                                                                                                                                           |
+|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                                                 企业单一登录                                                                 |
+| 产品版本 |                                                [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                 |
+|    事件 ID     |                                                                           11008                                                                           |
+|  事件源   |                                                                          ENTSSO                                                                           |
+|    组件    |                                                                            N/A                                                                            |
+|  符号名称  |                                                                   SSO_WARN_CHECK_GROUP                                                                    |
+|  消息正文   | 检查组成员失败。%r<br /><br /> 组名称: %1 %r<br /><br /> 帐户名称: %2 %r<br /><br /> 其他数据: %3 %r<br /><br /> 错误代码： %4 |
   
 ## <a name="explanation"></a>解释  
  引起此问题的主要原因可能是网络问题、跨域使用或混合使用不同级别的域控制器（例如，您的系统使用来自 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] 和 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] 的域控制器）。  

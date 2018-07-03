@@ -1,5 +1,5 @@
 ---
-title: 绑定和启动 FRR 业务流程 |Microsoft 文档
+title: 绑定和启动 FRR 业务流程 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 81cf116fc03a8f2d898752a077e8347fd395a4a5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b01386cedbd25148e5ea0ce2ac44fb56e9fe3d03
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209053"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36987438"
 ---
 # <a name="binding-and-starting-the-frr-orchestration"></a>绑定和启动 FRR 业务流程
-[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]包括 FRR 业务流程为已部署的程序集 ([!INCLUDE[btsCoName](../../includes/btsconame-md.md)]。Solutions.FinancialServices.SWIFT.FrrOrchestration)。 你需要启动此业务流程。  
+[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] 包括 FRR 业务流程，作为部署的程序集 (Microsoft。Solutions.FinancialServices.SWIFT.FrrOrchestration)。 您需要启动此业务流程。  
   
  **摘要**  
   
@@ -35,12 +35,12 @@ ms.locfileid: "22209053"
   
 -   启动 FrrOrchestration.FrrMain 业务流程。  
   
-### <a name="to-bind-and-start-the-frr-orchestration"></a>若要将绑定和启动 FRR 业务流程  
+### <a name="to-bind-and-start-the-frr-orchestration"></a>绑定和启动 FRR 业务流程  
   
-1.  在 BizTalk Server 管理控制台中，展开**BizTalk Server 管理**， **BizTalk 组**，**应用程序**，，然后**BizTalk应用程序 1**。 单击**业务流程**。  
+1.  在 BizTalk Server 管理控制台中，展开**BizTalk Server 管理**， **BizTalk 组**，**应用程序**，然后**BizTalk应用程序 1**。 单击**业务流程**。  
   
-2.  在业务流程窗格中，右键单击**FrrOrchestration.FrrMain**业务流程，，然后单击**属性**。  
+2.  在业务流程窗格中，右键单击**FrrOrchestration.FrrMain**业务流程，并单击**属性**。  
   
-3.  在业务流程属性对话框中，单击**绑定**的左窗格中。 有关**主机**，选择**BizTalkServerApplication**。 单击**应用**，然后单击**确定**。  
+3.  在业务流程属性对话框中，单击**绑定**的左窗格中。 有关**主机**，选择**BizTalkServerApplication**。 单击**Apply**，然后单击**确定**。  
   
-4.  在业务流程窗格中，右键单击**FrrMain**业务流程，，然后单击**启动**。
+4.  在业务流程窗格中，右键单击**FrrMain**业务流程，并单击**启动**。

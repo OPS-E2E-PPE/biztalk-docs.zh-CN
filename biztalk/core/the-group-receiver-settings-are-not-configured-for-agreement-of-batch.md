@@ -1,5 +1,5 @@
 ---
-title: 批处理的协议未配置组接收方设置 |Microsoft 文档
+title: 未批处理的协议配置组接收器设置 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8ea41ad5c8de88e446a86745b57ff282d5b90af5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 534d426d192e27bbe7c6c7e866399b42360a8e3a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279069"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36990638"
 ---
 # <a name="the-group-receiver-settings-are-not-configured-for-agreement-of-batch"></a>未针对批协议配置组接收器设置
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|批处理引擎|  
-|符号名称|GroupReceiverNotSelected|  
-|消息正文|没有为批处理 {0} 的协议配置组接收方设置。 需要先完成此设置才能进行批处理。|  
+|                 |                                                                                                                                     |
+|-----------------|-------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                         [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                          |
+| 产品版本 |                                     [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                                      |
+|    事件 ID     |                                                                  -                                                                  |
+|  事件源   |                       [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                        |
+|    组件    |                                                           批处理引擎                                                           |
+|  符号名称  |                                                      GroupReceiverNotSelected                                                       |
+|  消息正文   | 未批处理的协议配置组接收器设置{0}。 需要先完成此设置才能进行批处理。 |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明发生了以下两种情况之一：  

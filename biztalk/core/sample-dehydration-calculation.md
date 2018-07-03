@@ -1,5 +1,5 @@
 ---
-title: 示例冻结计算 |Microsoft 文档
+title: 示例冻结计算 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,29 +12,29 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0ff231b630a5848494c45cd8d4d05f89e764eb41
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 77701083272da9e09c21cb05daf3c4e9764b604c
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268877"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36993038"
 ---
 # <a name="sample-dehydration-calculation"></a>示例冻结计算
 下面是一个计算示例，它使用专用字节来确定 BizTalk 是否将冻结计算。 它使用默认配置值以及一些示例运行时值。  
   
  假定冻结属性值如下：  
   
--   **TimeBlocked** = 60 （以秒为单位阻止示例时间）  
+- **TimeBlocked** = 60 （示例时间以秒为单位）  
   
--   **WaitingHistory** = 90 （示例等待历史记录以秒为单位）  
+- **WaitingHistory** = 90 （示例等待历史记录以秒为单位）  
   
--   **ActualPrivateBytes** = 250 （专用字节示例值）  
+- **ActualPrivateBytes** = 250 （专用字节数的示例值）  
   
--   **OptimalUsage** = 50 （默认配置值）  
+- **OptimalUsage** = 50 （默认配置值）  
   
--   **MaximalUsage** = 350 （默认配置值）  
+- **MaximalUsage** = 350 （默认配置值）  
   
- 由于**ActualPrivateBytes**之间**OptimalUsage**和**MaximalUsage**，字母的计算方式如下：  
+  由于**ActualPrivateBytes**之间**OptimalUsage**并**MaximalUsage**，所以 alpha 计算为：  
   
 ```  
 alpha(private) = (350 – 250) / 350 – 50)  
@@ -42,7 +42,7 @@ alpha(private) = 100 / 300
 alpha(private) = 0.33  
 ```  
   
- 然后你计算**TestThreshold** ，如下所示：  
+ 然后计算**TestThreshold** ，如下所示：  
   
 ```  
 TestThreshold = 1 + (0.33 * (1800 – 1))  

@@ -1,5 +1,5 @@
 ---
-title: 协议设置 |Microsoft 文档
+title: 协议设置 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0a8fe9e7024bfe3a9d5f1d5d7727a2115bcd31a2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3c5d32f7a691aa9781760f0d7711d7f20851a038
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22271917"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36989278"
 ---
 # <a name="protocol-settings"></a>协议设置
 ## <a name="overview"></a>概述
 创建用于反映组织内业务部门的业务配置文件之后，企业需要声明用于定义业务配置文件之间如何通信的参数。 这些通信参数被定义为协议设置。 协议设置定义对于特定 B2B 协议如何支持业务事务。 对于合作伙伴可以通过其进行通信的每个 B2B 协议，每个业务配置文件定义用于处理消息（编码）或传输消息（传输）的各种设置。 定义的业务配置文件的通信参数分为以下两个类别：  
   
--   **编码协议设置**： 编码协议控制结构和 B2B 消息的内容。 业务配置文件的编码协议设置定义业务部门用于发送和接收 B2B 消息的编码协议。 编码的协议的一些示例包括 X12、 EDIFACT HL7，等等。有关详细的讨论大约支持编码的协议[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]，请参阅[EDI 标准支持](../core/edi-standards-support.md)。 作为编码的协议的一部分，你可以提供各种设置，例如是否发送方需要确认时，是否对消息进行批处理，还是单独，发送等。你始终可以作为贸易合作伙伴协议的一部分来覆盖这些设置。 请参阅[贸易合作伙伴协议](../core/trading-partner-agreement.md)。  
+- **编码协议设置**： 编码协议控制结构和 B2B 消息的内容。 业务配置文件的编码协议设置定义业务部门用于发送和接收 B2B 消息的编码协议。 编码协议的一些示例包括 X12、 EDIFACT、 HL7，等等。对于大约详细的讨论受支持的编码协议[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]，请参阅[EDI 标准支持](../core/edi-standards-support.md)。 作为编码协议的一部分，您可以提供各种设置，例如是否发送参与方期望确认、 消息进行批处理还是立即发送等。你可以始终覆盖这些设置作为贸易合作伙伴协议的一部分。 请参阅[贸易合作伙伴协议](../core/trading-partner-agreement.md)。  
   
--   **传输协议设置**： 传输协议控制传输通道用于发送两个合作伙伴之间来回的消息。 由于传输实质上是在两个传输终结点之间进行，因此每个业务配置文件定义其自身的“传输终结点”配置，并与其贸易合作伙伴的业务配置文件的单一“传输终结点”进行通信。 有关支持的传输协议的信息，请参阅[BizTalk Server 中的 AS2 支持](../core/as2-support-in-biztalk-server.md)。 作为传输协议的一部分，你可以提供各种设置，例如是否应对消息进行签名，是否应对消息进行加密，等等。你始终可以作为贸易合作伙伴协议的一部分来覆盖这些设置。 有关协议的详细信息，请参阅[贸易合作伙伴协议](../core/trading-partner-agreement.md)。  
+- **传输协议设置**： 传输协议控制用于发送两个合作伙伴之间来回的消息的传输通道。 由于传输实质上是在两个传输终结点之间进行，因此每个业务配置文件定义其自身的“传输终结点”配置，并与其贸易合作伙伴的业务配置文件的单一“传输终结点”进行通信。 有关支持的传输协议的信息，请参阅[BizTalk Server 中的 AS2 支持](../core/as2-support-in-biztalk-server.md)。 作为传输协议的一部分，您可以提供各种设置，例如是否应对消息进行签名，是否应对消息进行加密，等等。你可以始终覆盖这些设置作为贸易合作伙伴协议的一部分。 有关协议的详细信息，请参阅[贸易合作伙伴协议](../core/trading-partner-agreement.md)。  
   
- 通过定义协议设置，业务配置文件声明用于在贸易合作伙伴之间发送 B2B 消息的消息格式和传输协议。  
+  通过定义协议设置，业务配置文件声明用于在贸易合作伙伴之间发送 B2B 消息的消息格式和传输协议。  
   
 > [!NOTE]
 >  将协议设置定义为业务配置文件的一部分是可选的。 如果您不指定协议设置作为业务配置文件的一部分，则可以始终在协议中指定这些设置。  
@@ -46,9 +46,9 @@ ms.locfileid: "22271917"
 > [!IMPORTANT]
 >  如果未将协议设置定义为业务配置文件的一部分，则将需要输入值作为该业务配置文件的每个协议的一部分，因此阻止了新 TPM 解决方案的可伸缩性模型。 因此，Microsoft 建议您为每个业务配置文件定义协议设置。 如果需要，您可以在创建贸易合作伙伴协议时始终覆盖这些设置。  
 
-## <a name="learn-next"></a>了解下一步
+## <a name="learn-next"></a>接下来了解
 [贸易合作伙伴协议](../core/trading-partner-agreement.md)  
-[综合： 定义一个贸易合作伙伴管理解决方案](../core/putting-it-all-together-defining-a-trading-partner-management-solution.md)  
+[总结：定义贸易合作伙伴管理解决方案](../core/putting-it-all-together-defining-a-trading-partner-management-solution.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [贸易合作伙伴管理解决方案的构建基块](../core/building-blocks-of-a-trading-partner-management-solution.md)

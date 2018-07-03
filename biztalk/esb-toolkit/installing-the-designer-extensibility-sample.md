@@ -1,5 +1,5 @@
 ---
-title: 安装设计器扩展性示例 |Microsoft 文档
+title: 安装设计器扩展性示例 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,30 +12,30 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ea0cd71c22fdd614d2e49c996939b785ecadf8bd
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 7068f86f3e6be2cd71741a6afe5f2438ac3800b4
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26007974"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36985710"
 ---
 # <a name="installing-the-designer-extensibility-sample"></a>安装设计器扩展性示例
-本部分介绍安装设计器扩展性示例的过程。 你必须安装中的示例[安装和运行路线上负载增加示例](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)和[安装和运行动态解析示例](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md)安装和使用此示例之前。  
-  
+本部分介绍安装设计器扩展性示例的过程。 必须安装中的示例[安装和运行路线接入点示例](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)并[安装和运行动态解析示例](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md)安装和使用此示例之前。  
+
  **若要安装设计器扩展性示例**  
-  
-1.  在 Windows 资源管理器中打开文件夹 \Source\Samples\Designer Extensibility Samples\Extenders.Itinerary.OrchestrationSample，其中安装[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]示例，，然后打开名为的 Microsoft Visual Studio 解决方案文件Extenders.Itinerary.OrchestrationSample.sln。  
-  
-2.  在 Visual Studio 中，单击**生成解决方案**上**生成**菜单。  
-  
-3.  关闭 Visual Studio。  
-  
-4.  在 Windows 资源管理器中打开文件夹 \Source\Samples\Designer Extensibility Samples\Extenders.Resolvers.ResolverSample，其中安装[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]示例，，然后打开名为的 Visual Studio 解决方案文件Extenders.Resolvers.ResolverSample.sln。  
-  
-5.  在 Visual Studio 中，单击**生成解决方案**上**生成**菜单。  
-  
-6.  关闭 Visual Studio。  
-  
-7.  在 Windows 资源管理器，打开路线设计器安装路径下的 \Lib 文件夹。  
-  
-8.  在前面的步骤中生成的 Visual Studio 解决方案的 \bin\Debug 文件夹中，从复制到的 \Lib 目录的文件 Extenders.Resolvers.ResolverSample.dll 和 Extenders.Itinerary.OrchestrationSample.dll。
+
+1. 在 Windows 资源管理器中打开文件夹 \Source\Samples\Designer Extensibility Samples\Extenders.Itinerary.OrchestrationSample，其中安装[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]示例，并打开名为 Microsoft Visual Studio 解决方案文件Extenders.Itinerary.OrchestrationSample.sln。  
+
+2. 在 Visual Studio 中，单击**生成解决方案**上**生成**菜单。  
+
+3. 关闭 Visual Studio。  
+
+4. 在 Windows 资源管理器中打开文件夹 \Source\Samples\Designer Extensibility Samples\Extenders.Resolvers.ResolverSample，其中安装[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]示例，并打开名为 Visual Studio 解决方案文件Extenders.Resolvers.ResolverSample.sln。  
+
+5. 在 Visual Studio 中，单击**生成解决方案**上**生成**菜单。  
+
+6. 关闭 Visual Studio。  
+
+7. 在 Windows 资源管理器中，打开路线设计器安装路径下的 \Lib 文件夹。  
+
+8. 从前面步骤中生成的 Visual Studio 解决方案的 \bin\Debug 文件夹，Extenders.Resolvers.ResolverSample.dll 和 Extenders.Itinerary.OrchestrationSample.dll 的文件复制到的 \Lib 目录。

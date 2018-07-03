@@ -1,5 +1,5 @@
 ---
-title: 活动延续 |Microsoft 文档
+title: 活动继续符 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,32 +18,32 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c7568da0647ae9847c3de2d060d75a53466b9709
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 91eadd02e3b0a8792b9b27ea6c913b847b534456
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22224789"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36981990"
 ---
-# <a name="activity-continuation"></a>活动延续
-BAM 活动（也称为业务活动）可涉及多个异类应用程序（例如，一个管道、两个业务流程、一个行业应用程序以及另一个管道）。 BAM 基础结构可以关联多个应用程序开发人员 – 调用一个概念的一些帮助中的事件"*延续*，"在下图中所显示。  
+# <a name="activity-continuation"></a>活动继续符
+BAM 活动（也称为业务活动）可涉及多个异类应用程序（例如，一个管道、两个业务流程、一个行业应用程序以及另一个管道）。 BAM 基础结构可以关联来自多个应用程序的一些帮助开发人员 – 名为的概念事件"*延续*，"这在下图中所示。  
   
  ![](../core/media/ebiz-prog-bam-fig4-app-scopes-cont-tokens.gif "ebiz_prog_bam_fig4_app_scopes_cont_tokens")  
 
 ## <a name="applications"></a>应用程序  
- 活动的第一部分发生在销售应用程序中，活动的第二部分发生在打包和程序集应用程序中，最后，发货流程在发货应用程序中。 当前的工作单位，每个应用程序使用不同的 Id： 采购订单 (PO) 编号、 销售订单号 （等） 和传送订单号 (UPS)。 若要关联两个不同应用程序间的事件，必须执行以下操作：  
+ 活动的第一部分发生在销售应用程序中，活动的第二部分发生在打包和程序集应用程序中，最后，发货流程在发货应用程序中。 每个应用程序使用不同的 Id 为当前的工作单位： 采购订单 (PO) 编号、 销售订单数 (SO) 以及发货订单数 (UPS)。 若要关联两个不同应用程序间的事件，必须执行以下操作：  
   
--   标识继续符，继续符是两个应用程序都可用的唯一数据片断（例如，正在交换的消息部分）。  
+- 标识继续符，继续符是两个应用程序都可用的唯一数据片断（例如，正在交换的消息部分）。  
   
--   在第一个应用程序中调用 EnableContinuation，然后将继续符与当前 ActivityID 一起传递。  
+- 在第一个应用程序中调用 EnableContinuation，然后将继续符与当前 ActivityID 一起传递。  
   
--   不要在第二个应用程序中调用 BeginActivity。  
+- 不要在第二个应用程序中调用 BeginActivity。  
   
--   使用继续符而不是 ActivityID 在第二个应用程序中触发所有后续事件。  
+- 使用继续符而不是 ActivityID 在第二个应用程序中触发所有后续事件。  
   
- 以下代码示例阐释了如何在三个应用程序之间使用活动继续符：  
+  以下代码示例阐释了如何在三个应用程序之间使用活动继续符：  
   
- **采购订单的应用程序**  
+  **采购订单应用程序**  
   
 ```  
 string oID="PO#123";  
@@ -58,7 +58,7 @@ es.EnableContinuation(
 es.EndActivity("PurchaseOrder",poID);  
 ```  
   
- **履行应用程序**  
+ **执行应用程序**  
   
 ```  
 string soID="SO#265";  
@@ -71,7 +71,7 @@ es.EnableContinuation(
 es.EndActivity("PurchaseOrder",soID);  
 ```  
   
- **传送应用程序**  
+ **发货应用程序**  
   
 ```  
 string upsID="UPS#97892"  
@@ -93,8 +93,8 @@ es.EndActivity("PurchaseOrder",upsID)
   
 -   使用继续符无需在交换更多数据的时候重写应用程序。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
   
  [BAM 动态基础结构](../core/bam-dynamic-infrastructure.md)   
  [BAM API （BizTalk Server 示例）](../core/bam-api-biztalk-server-sample.md)   
- [BAM 端到端 （BizTalk Server 示例）](../core/bam-end-to-end-biztalk-server-sample.md)
+ [BAM 端对端（BizTalk Server 示例）](../core/bam-end-to-end-biztalk-server-sample.md)

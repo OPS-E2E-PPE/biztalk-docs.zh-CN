@@ -1,5 +1,5 @@
 ---
-title: 如何创建关联应用程序 |Microsoft 文档
+title: 如何创建关联应用程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2f621faef7694a3dba7885bab5641e0baa58e8f
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 8775ea82843641600c9156d79afab49e6cd7c634
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "25969019"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37003102"
 ---
 # <a name="how-to-create-an-affiliate-application"></a>如何创建关联应用程序
 您可以使用 MMC 管理单元或此命令根据 XML 文件指定的内容创建一个或多个应用程序。 以下为 Windows 启动的 SSO 的 XML 文件示例：  
@@ -57,30 +57,30 @@ ms.locfileid: "25969019"
 > [!IMPORTANT]
 >  只有 SSO 管理员或 SSO 关联管理员才能执行此任务。  
   
- 只有在创建关联应用程序后才能启用该应用程序。 有关详细信息，请参阅[如何启用 Affiliate 应用程序](../core/how-to-enable-an-affiliate-application.md)。  
+ 只有在创建关联应用程序后才能启用该应用程序。 有关详细信息，请参阅[如何启用关联应用程序](../core/how-to-enable-an-affiliate-application.md)。  
   
 ### <a name="to-create-an-affiliate-application-using-the-mmc-snap-in"></a>使用 MMC 管理单元创建关联应用程序  
   
-1.  上 **启动** 菜单上，单击 **程序**, ，单击 **Microsoft Enterprise 上单一登录**, ，然后单击 **SSO 管理**。  
+1.  上**启动**菜单上，单击**程序**，单击**Microsoft 企业单一登录**，然后单击**SSO 管理**。  
   
 2.  在 ENTSSO MMC 管理单元的作用域窗格中，展开“企业单一登录”  节点。  
   
-3.  右键单击 **Affiliate 应用程序**, ，然后单击 **创建应用程序**。  
+3.  右键单击**关联应用程序**，然后单击**创建应用程序**。  
   
-4.  按照中的说明 **企业单一登录在应用程序向导**。  
+4.  按照中的说明**企业单一登录应用程序向导**。  
   
 ### <a name="to-create-an-affiliate-application-using-the-command-line"></a>使用命令行创建关联应用程序  
   
-1.  上 **启动** 菜单上，单击 **运行**, ，然后键入 **cmd**。  
+1. 上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
+2. 在命令行上，转至企业单一登录安装目录。 默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。  
   
-3.  类型 * * ssomanage-createapps *\<应用程序文件名称\>* * *，其中*\<应用程序文件名称\>* 是 XML 文件。  
+3. 类型 * * ssomanage – createapps *\<应用程序的文件名\>**<em>，其中 *\<应用程序文件的名称\></em>是 XML 文件。  
   
-    > [!NOTE]
-    >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
+   > [!NOTE]
+   >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [SSO 关联应用程序](../core/sso-affiliate-applications.md)   
  [如何启用关联应用程序](../core/how-to-enable-an-affiliate-application.md)   
  [如何删除关联应用程序](../core/how-to-delete-an-affiliate-application.md)   

@@ -1,5 +1,5 @@
 ---
-title: 常见解决方案开发人员任务 |Microsoft 文档
+title: 常见解决方案开发人员任务 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,20 @@ caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 89cfff3486d27f9f599f1c5b1b385d677a92bbaa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 608ed9e991dca2e118e89c4e338a212006b52a0c
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232357"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36978038"
 ---
 # <a name="common-solution-developer-tasks"></a>常见解决方案开发人员任务
 解决方案开发人员使用 BizTalk Server 开发工具和技术以及 Microsoft .NET Framework 来设计和开发 BizTalk Server 解决方案。  
-  
+
  为了帮助解决方案开发人员获得尽可能高的工作效率，以下列表提供了有关开发 BizTalk Server 应用程序的教程、演练和常规信息的链接。  
-  
-|||  
-|-|-|  
-|**概念**<br /><br /> -   [BizTalk Server 体系结构](../core/biztalk-server-architecture.md)<br /><br /> **开发**<br /><br /> -   [开发 BizTalk Server 应用程序](../core/developing-biztalk-server-applications.md)<br />-   [部署到 BizTalk 应用程序从 Visual Studio BizTalk 程序集](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)<br />-   [SDK 中的实用程序](../core/utilities-in-the-sdk.md)<br />-   [SDK 中的示例](../core/samples-in-the-sdk.md)<br />-   **开发人员参考**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]<br /><br /> **教程和演练**<br /><br /> -   [BizTalk Server 教程](../core/biztalk-server-tutorials.md)<br />-   [BizTalk 应用程序部署和管理演练](http://msdn.microsoft.com/library/5321f8e0-1e2a-4ac4-a4a2-fc244071bc5b)<br /><br /> **端到端方案**<br /><br /> -   [面向服务的解决方案](../core/service-oriented-solution.md)<br />-   [业务流程管理解决方案](../core/business-process-management-solution.md)|**安装 BizTalk Server**<br /><br /> -   [BizTalk Server 2013 和 2013 R2 的安装概述](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)<br /><br /> **BizTalk Server 安全性**<br /><br /> 安全和保护 1<br /><br /> **其他资源**<br /><br /> -   [获取 BizTalk Server 帮助](../core/getting-biztalk-server-assistance.md)<br />-   [社区资源](../core/community-resources5.md)<br />-   [针对残障人士的辅助功能](../core/accessibility-for-people-with-disabilities1.md)|  
-  
+
+
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **概念**<br /><br /> -   [BizTalk Server 体系结构](../core/biztalk-server-architecture.md)<br /><br /> **开发**<br /><br /> -   [开发 BizTalk Server 应用程序](../core/developing-biztalk-server-applications.md)<br />-   [部署 BizTalk 程序集从 Visual Studio 到 BizTalk 应用程序](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)<br />-   [SDK 中的实用工具](../core/utilities-in-the-sdk.md)<br />-   [SDK 中的示例](../core/samples-in-the-sdk.md)<br />-   **开发人员参考** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]<br /><br /> **教程和演练**<br /><br /> -   [BizTalk Server 教程](../core/biztalk-server-tutorials.md)<br />-   [BizTalk 应用程序部署和管理演练](http://msdn.microsoft.com/library/5321f8e0-1e2a-4ac4-a4a2-fc244071bc5b)<br /><br /> **端到端方案**<br /><br /> -   [面向服务的解决方案](../core/service-oriented-solution.md)<br />-   [业务流程管理解决方案](../core/business-process-management-solution.md) | **安装 BizTalk Server**<br /><br /> -   [BizTalk Server 2013 和 2013 R2 安装概述](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)<br /><br /> **BizTalk Server 安全性**<br /><br /> 安全和防护 1<br /><br /> **其他资源**<br /><br /> -   [获取 BizTalk Server 帮助](../core/getting-biztalk-server-assistance.md)<br />-   [社区资源](../core/community-resources5.md)<br />-   [针对残障人士的辅助功能](../core/accessibility-for-people-with-disabilities1.md) |
+

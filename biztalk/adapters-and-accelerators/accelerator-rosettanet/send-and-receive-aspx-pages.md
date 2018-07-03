@@ -1,5 +1,5 @@
 ---
-title: 发送和接收 ASPX 页 |Microsoft 文档
+title: 发送和接收 ASPX 页 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -31,15 +31,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0782c421dfe771cd024b5ce4df893e2aaa45721d
-ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
+ms.openlocfilehash: e688686e8bd787e22d7e5a246e0cce62f469649c
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "25967443"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36982046"
 ---
 # <a name="send-and-receive-aspx-pages"></a>发送和接收 ASPX 页
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] ASPX 页是间的直接接口[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]和 Internet。 两个 ASPX 页分别是接收页 (RNIFReceive.aspx) 和发送页 (RNIFSend.aspx)。 每个 ASPX 页都是相应 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 管道的扩展。 该管道需要 ASPX 页来处理 RosettaNet 实现框架 (RNIF) 头。 管道执行大部分 HTTP 处理，而每个 ASPX 页执行 RNIF 头的 HTTP 处理。 这些 ASPX 页对 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] HTTP 适配器的功能进行了补充。  
+在 Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] ASPX 页是之间的直接接口[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]和 Internet。 两个 ASPX 页分别是接收页 (RNIFReceive.aspx) 和发送页 (RNIFSend.aspx)。 每个 ASPX 页都是相应 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 管道的扩展。 该管道需要 ASPX 页来处理 RosettaNet 实现框架 (RNIF) 头。 管道执行大部分 HTTP 处理，而每个 ASPX 页执行 RNIF 头的 HTTP 处理。 这些 ASPX 页对 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] HTTP 适配器的功能进行了补充。  
   
  每个 ASPX 页都是一个没有用户界面的 ASP[!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] Web 应用程序。 它们使用 ASP[!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] Web 安全以确保与外部参与方的安全连接。 这些 ASPX 页提供了一个层，您可以在该层实现容错、可伸缩性和高可用性的服务。  
   
@@ -54,13 +54,13 @@ http://localhost:<port number>/RNIFSend.aspx?<query string>
   
  查询字符串包括下列数据，分别是发送页向合作伙伴发送消息所需数据，以及合作伙伴处理消息所需数据：  
   
--   贸易合作伙伴 URL: http://www。\<*地址*\>.com/RNIFReceive.aspx  
+- 贸易合作伙伴 URL: http://www.\<*地址*\>.com/RNIFReceive.aspx  
   
--   响应类型： 同步或异步  
+- 响应类型： sync 或 async  
   
--   RNIF 版本： 1.1 或 2.0。  
+- RNIF 版本： 1.1 或 2.0。  
   
- BizTalk HTTP 适配器将 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 发送管道生成的一个 MIME 消息发送到发起方的 RNIFSend.aspx 页。 RNIFSend.aspx 按以下方式处理该消息：  
+  BizTalk HTTP 适配器将 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 发送管道生成的一个 MIME 消息发送到发起方的 RNIFSend.aspx 页。 RNIFSend.aspx 按以下方式处理该消息：  
   
 1.  发送页对消息进行验证。  
   
@@ -102,46 +102,46 @@ http://localhost:<port number>/RNIFSend.aspx?<query string>
 ## <a name="how-initiator-and-responder-aspx-pages-interact"></a>发起方 ASPX 页和响应方 ASPX 页的交互方式  
  如果发起方和响应方都使用 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]，则双方的四个 ASPX 页将根据连接是同步还是异步、消息是单操作还是双操作分别进行不同的交互。 以下各个子节对全部交互方案进行说明。  
   
- **异步双操作**  
+ **双操作异步**  
   
  此方案涉及四个单独的 HTTP 连接，每步一个连接：  
   
-1.  发起方发送页将操作请求消息发送到响应方接收页。  
+1. 发起方发送页将操作请求消息发送到响应方接收页。  
   
-    > [!NOTE]
-    >  根据系统负载情况，下面的步骤 2 和步骤 3 的次序可能会颠倒。  
+   > [!NOTE]
+   >  根据系统负载情况，下面的步骤 2 和步骤 3 的次序可能会颠倒。  
   
-2.  响应方发送页将请求信号消息发送到发起方接收页。  
+2. 响应方发送页将请求信号消息发送到发起方接收页。  
   
-3.  响应方发送页将操作响应消息发送到发起方接收页。  
+3. 响应方发送页将操作响应消息发送到发起方接收页。  
   
-4.  发起方发送页将响应信号消息发送到响应方接收页。  
+4. 发起方发送页将响应信号消息发送到响应方接收页。  
   
- **异步单操作**  
+   **单操作异步**  
   
- 此方案涉及两个单独的 HTTP 连接，每步一个连接。 请注意，此方案由双操作异步方案的步骤 1 和步骤 2 组成。  
+   此方案涉及两个单独的 HTTP 连接，每步一个连接。 请注意，此方案由双操作异步方案的步骤 1 和步骤 2 组成。  
   
-1.  发起方发送页将操作请求消息发送到响应方接收页。  
+5. 发起方发送页将操作请求消息发送到响应方接收页。  
   
-2.  响应方发送页将请求信号消息发送到发起方接收页。  
+6. 响应方发送页将请求信号消息发送到发起方接收页。  
   
- **同步双操作**  
+   **双操作同步**  
   
- 此方案涉及一个 HTTP 连接：  
+   此方案涉及一个 HTTP 连接：  
   
-1.  发起方发送页将操作请求消息发送到响应方接收页。  
+7. 发起方发送页将操作请求消息发送到响应方接收页。  
   
-2.  响应方接收页将操作响应消息（如果出现问题则为异常消息）发送到与步骤 1 所用连接相同的发起方发送页。  
+8. 响应方接收页将操作响应消息（如果出现问题则为异常消息）发送到与步骤 1 所用连接相同的发起方发送页。  
   
- **同步单操作**  
+   **单操作同步**  
   
- 此方案涉及一个 HTTP 连接：  
+   此方案涉及一个 HTTP 连接：  
   
-1.  发起方发送页将操作请求消息发送到响应方接收页。  
+9. 发起方发送页将操作请求消息发送到响应方接收页。  
   
-2.  响应方接收页将请求信号消息（如果出现问题则为异常消息）发送到同一连接的发起方发送页。  
+10. 响应方接收页将请求信号消息（如果出现问题则为异常消息）发送到同一连接的发起方发送页。  
   
-## <a name="see-also"></a>另请参阅  
- [消息处理在 BTARN](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)   
+## <a name="see-also"></a>请参阅  
+ [BTARN 中的消息处理](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)   
  [BTARN 接收管道](../../adapters-and-accelerators/accelerator-rosettanet/btarn-receive-pipeline.md)   
  [BTARN 发送管道](../../adapters-and-accelerators/accelerator-rosettanet/btarn-send-pipeline.md)

@@ -1,5 +1,5 @@
 ---
-title: 设计你的适配器的提示 |Microsoft 文档
+title: 设计您的适配器的提示 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 93c59efc2ae811827cd0cb1cf4763485b675f4ea
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 306cb2ae9aeca57804a57f0dfa8c1de1bfd0025d
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279861"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36982678"
 ---
 # <a name="tips-for-designing-your-adapter"></a>设计适配器的提示
 本部分包含适配器开发人员在设计适配器时所发现的技巧。  
   
 ## <a name="handler-properties-should-be-strings-if-used-as-default-configurations"></a>处理程序属性用作默认配置时应为字符串  
- 似乎具吸引力，若要使用 XSD 生成的处理程序属性页上的属性，为默认值为其**位置**属性因为未设置值**位置**运行时自动使用设置处理程序中的值。 但是有几个问题使这个想法没有多大意义。  
+ 它看起来很有吸引力的默认值为使用 XSD 生成的处理程序属性表的属性及其**位置**属性因为未设置值**位置**运行时自动使用处理程序中设置的值。 但是有几个问题使这个想法没有多大意义。  
   
  问题在于不知道提供给运行时的值是否会被重写。 为此，通常为值定义 NULL 概念，然后针对该值运行测试。 在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中使用基于 XSD 的属性表的问题是仅针对字符串支持 NULL。 即使您希望适配器通过使用此 NULL 测试来得到默认设置并且愿意将适配器限制为字符串类型，它所显示的用户界面也非常别扭。  
   
- XSD 生成的属性表仅支持返回为 NULL 的属性的设置，请右键单击该属性，此时**废除？** 出现上下文菜单和该属性可以设置为 NULL。 屏幕上不会显示任何信息以指示属性是否为 NULL。  
+ XSD 生成的属性表仅支持回 NULL 属性的设置，请右键单击该属性，此时**置空？** 出现上下文菜单和属性可以设置为 NULL。 屏幕上不会显示任何信息以指示属性是否为 NULL。  
   
 ## <a name="considerations-for-implementing-schema-generation-wizards"></a>实现架构生成向导的注意事项  
  程序员喜欢针对强类型对象模型编写代码。 在代码中操作 XML 乍看起来比较笨拙，而且容易出错。 不过，通过一些技巧并巧妙使用 .NET Framework 提供的支持可以在很大程度上简化问题。  
@@ -55,11 +55,11 @@ ms.locfileid: "22279861"
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中的解决方案将执行以下操作：  
   
--   在业务流程中使用相关集  
+- 在业务流程中使用相关集  
   
--   配置两个单独的端口： 一个用于发送，一个用于接收  
+- 配置两个单独的端口： 一个用于发送和接收  
   
- 在简单的情形中，业务流程按适配器指定与消息有关的相关 ID。 它作为消息的上下文属性传递给适配器。 在更复杂的情况下，该应用场景要求外部消息传递系统分配的 id。 在这种情况下它可以被传递回从发送端口到响应消息的业务流程。 此响应消息只是传回 ID，并不是真正的消息响应。  
+  在简单的情形中，业务流程按适配器指定与消息有关的相关 ID。 它作为消息的上下文属性传递给适配器。 在更复杂的情况下，该方案调用外部消息传送系统分配 id。 在这种情况下它可以传递从发送端口业务流程并带有响应消息。 此响应消息只是传回 ID，并不是真正的消息响应。  
   
 > [!NOTE]
 >  在业务流程引擎中有一个争用条件，可能会显示消息的真正响应而不显示发送端口的 ID 响应。 此争用条件必须在业务流程自身中处理。
