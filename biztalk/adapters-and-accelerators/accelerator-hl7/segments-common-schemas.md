@@ -1,5 +1,5 @@
 ---
-title: 段通用架构 |Microsoft 文档
+title: 段通用架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,24 +16,24 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 50bdcacfe1459ba4a236c3701b786d97217db8ef
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.openlocfilehash: 46e961934b1595217b94aab82b2adae9fd3e456f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2018
-ms.locfileid: "25960691"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36985478"
 ---
-# <a name="segments-common-schemas"></a><span data-ttu-id="3ed17-102">段通用架构</span><span class="sxs-lookup"><span data-stu-id="3ed17-102">Segments Common Schemas</span></span>
-<span data-ttu-id="3ed17-103">**Segments_\<*版本*\>.xsd**文件包括 datatypes_\<*版本*\>.xsd 和包含与 HL7 版本相关的所有线段的定义。</span><span class="sxs-lookup"><span data-stu-id="3ed17-103">The **segments_\<*version*\>.xsd** file includes datatypes_\<*version*\>.xsd and contains the definition of all the segments related to the HL7 version.</span></span> <span data-ttu-id="3ed17-104">每个消息架构使用 segments_\<*版本*\>.xsd。</span><span class="sxs-lookup"><span data-stu-id="3ed17-104">Each message schema uses segments_\<*version*\>.xsd.</span></span> <span data-ttu-id="3ed17-105">HL7 消息定义的每个子文件夹下，包括 segments_\<*版本*\>.xsd。</span><span class="sxs-lookup"><span data-stu-id="3ed17-105">HL7 message definitions are under each subfolder and include segments_\<*version*\>.xsd.</span></span> <span data-ttu-id="3ed17-106">SegmentDataElements 和 DataElements 访问数据库表生成 segments_\<*版本*\>.xsd 文件，其中包含指向所有数据类型的 Fields.xsd 架构文件的指针。</span><span class="sxs-lookup"><span data-stu-id="3ed17-106">The SegmentDataElements and DataElements Access database tables generate the segments_\<*version*\>.xsd file, which includes a pointer to the Fields.xsd schema file for all data types.</span></span> <span data-ttu-id="3ed17-107">架构文件名称格式为：</span><span class="sxs-lookup"><span data-stu-id="3ed17-107">The schema file name format is:</span></span>  
+# <a name="segments-common-schemas"></a><span data-ttu-id="eb91a-102">段通用架构</span><span class="sxs-lookup"><span data-stu-id="eb91a-102">Segments Common Schemas</span></span>
+<span data-ttu-id="eb91a-103">**Segments_\<*版本*\>.xsd**文件包括 datatypes_\<*版本*\>.xsd 和包含HL7 版本与相关的所有段的定义。</span><span class="sxs-lookup"><span data-stu-id="eb91a-103">The **segments_\<*version*\>.xsd** file includes datatypes_\<*version*\>.xsd and contains the definition of all the segments related to the HL7 version.</span></span> <span data-ttu-id="eb91a-104">每个消息架构使用 segments_\<*版本*\>.xsd。</span><span class="sxs-lookup"><span data-stu-id="eb91a-104">Each message schema uses segments_\<*version*\>.xsd.</span></span> <span data-ttu-id="eb91a-105">HL7 消息定义下每个子文件夹，并且包括 segments_\<*版本*\>.xsd。</span><span class="sxs-lookup"><span data-stu-id="eb91a-105">HL7 message definitions are under each subfolder and include segments_\<*version*\>.xsd.</span></span> <span data-ttu-id="eb91a-106">SegmentDataElements 和 DataElements 访问数据库表生成 segments_\<*版本*\>.xsd 文件，其中包含指向所有数据类型的 Fields.xsd 架构文件的指针。</span><span class="sxs-lookup"><span data-stu-id="eb91a-106">The SegmentDataElements and DataElements Access database tables generate the segments_\<*version*\>.xsd file, which includes a pointer to the Fields.xsd schema file for all data types.</span></span> <span data-ttu-id="eb91a-107">架构文件的格式为：</span><span class="sxs-lookup"><span data-stu-id="eb91a-107">The schema file name format is:</span></span>  
   
 ```  
   
 <xxx>_<nnn>_<vaa>_GLO_DEF.xsd  
 ```  
   
- <span data-ttu-id="3ed17-108">其中*xxx*是消息类型，  *nnn* 是触发器事件， *vaa*是版本号，GLO 指示全球化，并 DEF 指示默认值。</span><span class="sxs-lookup"><span data-stu-id="3ed17-108">Where *xxx* is the message type, *nnn* is the trigger event, *vaa* is the version number, GLO indicates globalize, and DEF indicates default.</span></span> <span data-ttu-id="3ed17-109">架构文件 *\<xxx\>*_*\<nnn\>*\_*\<vaa\>*  \_  *\<glo\>*\_*\<def\>*.xsdis 从生成EventMessageTypeSegments 和 SegmentDataElements 访问数据库表，并包含指向段的\_\<*版本*\>.xsd 架构文件。</span><span class="sxs-lookup"><span data-stu-id="3ed17-109">The schema file *\<xxx\>*_*\<nnn\>*\_*\<vaa\>*\_*\<glo\>*\_*\<def\>*.xsdis generated from the EventMessageTypeSegments and SegmentDataElements Access database tables and includes a pointer to the Segments\_\<*version*\>.xsd schema file.</span></span>  
+ <span data-ttu-id="eb91a-108">其中*xxx*是消息类型*nnn*是触发器事件*vaa*是版本号，GLO 指示全球化，和 DEF 指示默认值。</span><span class="sxs-lookup"><span data-stu-id="eb91a-108">Where *xxx* is the message type, *nnn* is the trigger event, *vaa* is the version number, GLO indicates globalize, and DEF indicates default.</span></span> <span data-ttu-id="eb91a-109">架构文件 *\<xxx\>*<em>*\<nnn\>*  \\</em>   *\<vaa\>*\_*\<glo\>*\_*\<def\>*.xsdis从 EventMessageTypeSegments 和 SegmentDataElements 访问数据库表生成的包括指向段\_\<*版本*\>.xsd 架构文件。</span><span class="sxs-lookup"><span data-stu-id="eb91a-109">The schema file *\<xxx\>*<em>*\<nnn\>*\\</em>*\<vaa\>*\_*\<glo\>*\_*\<def\>*.xsdis generated from the EventMessageTypeSegments and SegmentDataElements Access database tables and includes a pointer to the Segments\_\<*version*\>.xsd schema file.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="3ed17-110">另请参阅</span><span class="sxs-lookup"><span data-stu-id="3ed17-110">See Also</span></span>  
- <span data-ttu-id="3ed17-111">[HL7 2.X 公共架构文件](../../adapters-and-accelerators/accelerator-hl7/hl7-2-x-common-schema-files.md) </span><span class="sxs-lookup"><span data-stu-id="3ed17-111">[HL7 2.X Common Schema Files](../../adapters-and-accelerators/accelerator-hl7/hl7-2-x-common-schema-files.md) </span></span>  
- <span data-ttu-id="3ed17-112">[数据类型的通用架构](../../adapters-and-accelerators/accelerator-hl7/data-types-common-schemas.md) </span><span class="sxs-lookup"><span data-stu-id="3ed17-112">[Data Types Common Schemas](../../adapters-and-accelerators/accelerator-hl7/data-types-common-schemas.md) </span></span>  
- [<span data-ttu-id="3ed17-113">表值通用架构</span><span class="sxs-lookup"><span data-stu-id="3ed17-113">Table Values Common Schemas</span></span>](../../adapters-and-accelerators/accelerator-hl7/table-values-common-schemas.md)
+## <a name="see-also"></a><span data-ttu-id="eb91a-110">请参阅</span><span class="sxs-lookup"><span data-stu-id="eb91a-110">See Also</span></span>  
+ <span data-ttu-id="eb91a-111">[HL7 2.X 通用架构文件](../../adapters-and-accelerators/accelerator-hl7/hl7-2-x-common-schema-files.md) </span><span class="sxs-lookup"><span data-stu-id="eb91a-111">[HL7 2.X Common Schema Files](../../adapters-and-accelerators/accelerator-hl7/hl7-2-x-common-schema-files.md) </span></span>  
+ <span data-ttu-id="eb91a-112">[数据类型通用架构](../../adapters-and-accelerators/accelerator-hl7/data-types-common-schemas.md) </span><span class="sxs-lookup"><span data-stu-id="eb91a-112">[Data Types Common Schemas](../../adapters-and-accelerators/accelerator-hl7/data-types-common-schemas.md) </span></span>  
+ [<span data-ttu-id="eb91a-113">表值通用架构</span><span class="sxs-lookup"><span data-stu-id="eb91a-113">Table Values Common Schemas</span></span>](../../adapters-and-accelerators/accelerator-hl7/table-values-common-schemas.md)

@@ -1,5 +1,5 @@
 ---
-title: 如何： 选择使用业务规则策略路线 |Microsoft 文档
+title: 如何： 选择使用业务规则策略路线 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,338 +12,338 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 521b3768251cfcd31defe271a21d4b2d0bc771e6
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 12496da0de4057e96be0b714ad1af048ee6b8ef1
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26010582"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36976958"
 ---
-# <a name="how-to-select-an-itinerary-using-a-business-rules-policy"></a><span data-ttu-id="9ecc2-102">如何： 选择使用业务规则策略路线</span><span class="sxs-lookup"><span data-stu-id="9ecc2-102">How to: Select an Itinerary Using a Business Rules Policy</span></span>
-## <a name="goal"></a><span data-ttu-id="9ecc2-103">目的</span><span class="sxs-lookup"><span data-stu-id="9ecc2-103">Goal</span></span>  
- <span data-ttu-id="9ecc2-104">本部分演示如何创建可用于选择一条路线基于收到的消息内容的业务规则以及如何配置路线选择器管道组件内泛型路线入口以调用这些规则。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-104">This section demonstrates how to create business rules that can be used to select an itinerary based on the content of a received message and how to configure the Itinerary Selector pipeline component within a generic itinerary on-ramp to call these rules.</span></span> <span data-ttu-id="9ecc2-105">本部分介绍在该消息将路由以不同方式，根据客户所在的地区一个业务方案。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-105">This section describes a business scenario in which messages are routed differently, based on the region in which the customer resides.</span></span>  
+# <a name="how-to-select-an-itinerary-using-a-business-rules-policy"></a><span data-ttu-id="00012-102">如何： 选择使用业务规则策略路线</span><span class="sxs-lookup"><span data-stu-id="00012-102">How to: Select an Itinerary Using a Business Rules Policy</span></span>
+## <a name="goal"></a><span data-ttu-id="00012-103">目的</span><span class="sxs-lookup"><span data-stu-id="00012-103">Goal</span></span>  
+ <span data-ttu-id="00012-104">本部分演示如何创建可用于选择路线根据收到的消息的内容的业务规则以及如何配置路线选择器管道组件中泛型路线接入点来调用这些规则。</span><span class="sxs-lookup"><span data-stu-id="00012-104">This section demonstrates how to create business rules that can be used to select an itinerary based on the content of a received message and how to configure the Itinerary Selector pipeline component within a generic itinerary on-ramp to call these rules.</span></span> <span data-ttu-id="00012-105">本部分介绍业务方案中的消息路由以不同的方式，根据客户所在的区域。</span><span class="sxs-lookup"><span data-stu-id="00012-105">This section describes a business scenario in which messages are routed differently, based on the region in which the customer resides.</span></span>  
   
- <span data-ttu-id="9ecc2-106">在本操作方法主题中，你将完成以下步骤：</span><span class="sxs-lookup"><span data-stu-id="9ecc2-106">In this How-to topic, you will complete the following steps:</span></span>  
+ <span data-ttu-id="00012-106">在本操作指南主题中，您将完成以下步骤：</span><span class="sxs-lookup"><span data-stu-id="00012-106">In this How-to topic, you will complete the following steps:</span></span>  
   
--   <span data-ttu-id="9ecc2-107">客户全局 Bank 西部和美国东部部门的的模型路线。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-107">Model itineraries for the Western and Eastern divisions of customer Global Bank.</span></span>  
+-   <span data-ttu-id="00012-107">有关客户 Global Bank 的西欧和美国东部部门的模型路线。</span><span class="sxs-lookup"><span data-stu-id="00012-107">Model itineraries for the Western and Eastern divisions of customer Global Bank.</span></span>  
   
--   <span data-ttu-id="9ecc2-108">创建将用于选择的处理请求路线的业务规则策略。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-108">Create business rules policies that will be used to select an itinerary for processing request.</span></span>  
+-   <span data-ttu-id="00012-108">创建将用于选择用于处理请求路线的业务规则策略。</span><span class="sxs-lookup"><span data-stu-id="00012-108">Create business rules policies that will be used to select an itinerary for processing request.</span></span>  
   
--   <span data-ttu-id="9ecc2-109">配置要使用业务规则策略来选择适当的路线的路线选择器管道组件。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-109">Configure the Itinerary Selector pipeline component to use a business rules policy to select the appropriate itinerary.</span></span>  
+-   <span data-ttu-id="00012-109">配置路线选择器管道组件以使用业务规则策略选择适当的路线。</span><span class="sxs-lookup"><span data-stu-id="00012-109">Configure the Itinerary Selector pipeline component to use a business rules policy to select the appropriate itinerary.</span></span>  
   
-## <a name="prerequisites"></a><span data-ttu-id="9ecc2-110">先决条件</span><span class="sxs-lookup"><span data-stu-id="9ecc2-110">Prerequisites</span></span>  
- <span data-ttu-id="9ecc2-111">此操作指南主题中的过程要求在完成[开发活动的先决条件](../esb-toolkit/prerequisites-for-the-development-activities.md)。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-111">The procedures in this How-to topic require the completion of the [Prerequisites for the Development Activities](../esb-toolkit/prerequisites-for-the-development-activities.md).</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="00012-110">必要條件</span><span class="sxs-lookup"><span data-stu-id="00012-110">Prerequisites</span></span>  
+ <span data-ttu-id="00012-111">本操作指南主题中的过程要求在完成[开发活动的先决条件](../esb-toolkit/prerequisites-for-the-development-activities.md)。</span><span class="sxs-lookup"><span data-stu-id="00012-111">The procedures in this How-to topic require the completion of the [Prerequisites for the Development Activities](../esb-toolkit/prerequisites-for-the-development-activities.md).</span></span>  
   
-## <a name="before-you-begin"></a><span data-ttu-id="9ecc2-112">开始之前</span><span class="sxs-lookup"><span data-stu-id="9ecc2-112">Before You Begin</span></span>  
- <span data-ttu-id="9ecc2-113">本操作方法主题中的更高版本执行的步骤之前，请完成以下任务：</span><span class="sxs-lookup"><span data-stu-id="9ecc2-113">Complete the following tasks before you perform the steps later in this How-to topic:</span></span>  
+## <a name="before-you-begin"></a><span data-ttu-id="00012-112">开始之前</span><span class="sxs-lookup"><span data-stu-id="00012-112">Before You Begin</span></span>  
+ <span data-ttu-id="00012-113">在本操作指南主题的后面部分执行的步骤之前，请完成以下任务：</span><span class="sxs-lookup"><span data-stu-id="00012-113">Complete the following tasks before you perform the steps later in this How-to topic:</span></span>  
   
--   <span data-ttu-id="9ecc2-114">创建 GlobalBank 西部测试消息。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-114">Create the GlobalBank West test message.</span></span>  
+- <span data-ttu-id="00012-114">创建 GlobalBank 西部测试消息。</span><span class="sxs-lookup"><span data-stu-id="00012-114">Create the GlobalBank West test message.</span></span>  
   
--   <span data-ttu-id="9ecc2-115">创建 GlobalBank 东部测试消息。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-115">Create the GlobalBank East test message.</span></span>  
+- <span data-ttu-id="00012-115">创建 GlobalBank 东部测试消息。</span><span class="sxs-lookup"><span data-stu-id="00012-115">Create the GlobalBank East test message.</span></span>  
   
- <span data-ttu-id="9ecc2-116">下面的过程介绍如何执行其中每个操作。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-116">The following procedures describe how to do each of these.</span></span>  
+  <span data-ttu-id="00012-116">以下过程介绍如何执行其中每项功能。</span><span class="sxs-lookup"><span data-stu-id="00012-116">The following procedures describe how to do each of these.</span></span>  
   
-#### <a name="to-create-the-globalbank-west-test-message"></a><span data-ttu-id="9ecc2-117">若要创建 GlobalBank 西部测试消息</span><span class="sxs-lookup"><span data-stu-id="9ecc2-117">To create the GlobalBank West test message</span></span>  
+#### <a name="to-create-the-globalbank-west-test-message"></a><span data-ttu-id="00012-117">若要创建 GlobalBank 西部测试消息</span><span class="sxs-lookup"><span data-stu-id="00012-117">To create the GlobalBank West test message</span></span>  
   
-1.  <span data-ttu-id="9ecc2-118">在 Windows 资源管理器，浏览到 C:\HowTos。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-118">In Windows Explorer, browse to C:\HowTos.</span></span>  
+1.  <span data-ttu-id="00012-118">在 Windows 资源管理器，浏览到 C:\HowTos。</span><span class="sxs-lookup"><span data-stu-id="00012-118">In Windows Explorer, browse to C:\HowTos.</span></span>  
   
-2.  <span data-ttu-id="9ecc2-119">创建一份 NAOrderDoc.xml，并将其命名为复制 West.xml。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-119">Create a copy of NAOrderDoc.xml, and then name the copy West.xml.</span></span>  
+2.  <span data-ttu-id="00012-119">创建一份 NAOrderDoc.xml，并将其命名为 West.xml 的副本。</span><span class="sxs-lookup"><span data-stu-id="00012-119">Create a copy of NAOrderDoc.xml, and then name the copy West.xml.</span></span>  
   
-3.  <span data-ttu-id="9ecc2-120">在记事本中，打开 West.xml，并将的值**customerName**元素**GlobalBankWest**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-120">In Notepad, open West.xml, and then change the value of the **customerName** element to **GlobalBankWest**.</span></span>  
+3.  <span data-ttu-id="00012-120">在记事本中，打开 West.xml，并更改的值**customerName**元素**GlobalBankWest**。</span><span class="sxs-lookup"><span data-stu-id="00012-120">In Notepad, open West.xml, and then change the value of the **customerName** element to **GlobalBankWest**.</span></span>  
   
-4.  <span data-ttu-id="9ecc2-121">将 West.xml 另存为 utf-8，，然后关闭记事本。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-121">Save West.xml as UTF-8, and then close Notepad.</span></span>  
+4.  <span data-ttu-id="00012-121">将 West.xml 另存为 utf-8，，然后关闭记事本。</span><span class="sxs-lookup"><span data-stu-id="00012-121">Save West.xml as UTF-8, and then close Notepad.</span></span>  
   
-#### <a name="to-create-the-globalbank-east-test-message"></a><span data-ttu-id="9ecc2-122">若要创建 GlobalBank 东部测试消息</span><span class="sxs-lookup"><span data-stu-id="9ecc2-122">To create the GlobalBank East test message</span></span>  
+#### <a name="to-create-the-globalbank-east-test-message"></a><span data-ttu-id="00012-122">若要创建 GlobalBank 东部测试消息</span><span class="sxs-lookup"><span data-stu-id="00012-122">To create the GlobalBank East test message</span></span>  
   
-1.  <span data-ttu-id="9ecc2-123">在 Windows 资源管理器，浏览到 C:\HowTos。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-123">In Windows Explorer, browse to C:\HowTos.</span></span>  
+1.  <span data-ttu-id="00012-123">在 Windows 资源管理器，浏览到 C:\HowTos。</span><span class="sxs-lookup"><span data-stu-id="00012-123">In Windows Explorer, browse to C:\HowTos.</span></span>  
   
-2.  <span data-ttu-id="9ecc2-124">创建一份 NAOrderDoc.xml，并将其命名为复制 East.xml。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-124">Create a copy of NAOrderDoc.xml, and then name the copy East.xml.</span></span>  
+2.  <span data-ttu-id="00012-124">创建一份 NAOrderDoc.xml，并将其命名为 East.xml 的副本。</span><span class="sxs-lookup"><span data-stu-id="00012-124">Create a copy of NAOrderDoc.xml, and then name the copy East.xml.</span></span>  
   
-3.  <span data-ttu-id="9ecc2-125">在记事本中，打开 East.xml，并将的值**customerName**元素**GlobalBankEast**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-125">In Notepad, open East.xml, and then change the value of the **customerName** element to **GlobalBankEast**.</span></span>  
+3.  <span data-ttu-id="00012-125">在记事本中，打开 East.xml，并更改的值**customerName**元素**GlobalBankEast**。</span><span class="sxs-lookup"><span data-stu-id="00012-125">In Notepad, open East.xml, and then change the value of the **customerName** element to **GlobalBankEast**.</span></span>  
   
-4.  <span data-ttu-id="9ecc2-126">将 East.xml 另存为 utf-8，，然后关闭记事本。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-126">Save East.xml as UTF-8, and then close Notepad.</span></span>  
+4.  <span data-ttu-id="00012-126">将 East.xml 另存为 utf-8，，然后关闭记事本。</span><span class="sxs-lookup"><span data-stu-id="00012-126">Save East.xml as UTF-8, and then close Notepad.</span></span>  
   
-## <a name="steps"></a><span data-ttu-id="9ecc2-127">步骤</span><span class="sxs-lookup"><span data-stu-id="9ecc2-127">Steps</span></span>  
+## <a name="steps"></a><span data-ttu-id="00012-127">步骤</span><span class="sxs-lookup"><span data-stu-id="00012-127">Steps</span></span>  
   
-#### <a name="to-create-a-business-rules-engine-bre-policy-to-select-an-itinerary-using-custom-message-properties"></a><span data-ttu-id="9ecc2-128">若要创建业务规则引擎 (BRE) 策略来选择使用自定义消息属性路线</span><span class="sxs-lookup"><span data-stu-id="9ecc2-128">To create a Business Rules Engine (BRE) policy to select an itinerary using custom message properties</span></span>  
+#### <a name="to-create-a-business-rules-engine-bre-policy-to-select-an-itinerary-using-custom-message-properties"></a><span data-ttu-id="00012-128">若要创建业务规则引擎 (BRE) 策略来选择使用自定义消息属性路线</span><span class="sxs-lookup"><span data-stu-id="00012-128">To create a Business Rules Engine (BRE) policy to select an itinerary using custom message properties</span></span>  
   
-1.  <span data-ttu-id="9ecc2-129">单击**启动**在任务栏中，指向**所有程序**，指向**BizTalk Server**，然后单击**业务规则编辑器**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-129">Click **Start** on the taskbar, point to **All Programs**, point to **BizTalk Server**, and then click **Business Rule Composer**.</span></span>  
+1.  <span data-ttu-id="00012-129">单击**启动**在任务栏上，依次指向**所有程序**，指向**BizTalk Server**，然后单击**业务规则编辑器**。</span><span class="sxs-lookup"><span data-stu-id="00012-129">Click **Start** on the taskbar, point to **All Programs**, point to **BizTalk Server**, and then click **Business Rule Composer**.</span></span>  
   
-2.  <span data-ttu-id="9ecc2-130">在策略资源管理器中，右键单击**策略**，然后单击**添加新策略**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-130">In Policy Explorer, right-click **Policies**, and then click **Add New Policy**.</span></span> <span data-ttu-id="9ecc2-131">命名策略时**ResolveItineraryBasedOnCustomer**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-131">Name the policy **ResolveItineraryBasedOnCustomer**.</span></span>  
-  
-    > [!NOTE]
-    >  <span data-ttu-id="9ecc2-132">本操作指南主题的主题中创建使用相同的业务规则策略和路线[如何： 拆分将交换并将生成的消息路由到多个文件的位置使用不同路线](../esb-toolkit/split-an-interchange-and-route-messages-to-multiple-locations-using-itineraries.md)。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-132">This How-to topic uses the same business rules policy and itineraries as those created in the topic [How to: Split an Interchange and Route the Resulting Messages to Multiple File Locations Using Distinct Itineraries](../esb-toolkit/split-an-interchange-and-route-messages-to-multiple-locations-using-itineraries.md).</span></span> <span data-ttu-id="9ecc2-133">如果你已完成该部分，可以跳过本主题中后面到过程中，"以创建和配置 ESB 入口"。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-133">If you have already completed that section, you can skip to the procedure, "To create and configure an ESB on-ramp" later in this topic.</span></span>  
-  
-#### <a name="to-add-a-selection-rule-for-customer-globalbank-west"></a><span data-ttu-id="9ecc2-134">若要添加客户 GlobalBank 西部选择规则</span><span class="sxs-lookup"><span data-stu-id="9ecc2-134">To add a selection rule for customer GlobalBank West</span></span>  
-  
-1.  <span data-ttu-id="9ecc2-135">在**ResolveItineraryBasedOnCustomer**策略，右键单击 **（不保存） 1.0 版**，然后单击**添加新规则**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-135">In the **ResolveItineraryBasedOnCustomer** policy, right-click **Version 1.0 (not saved)**, and then click **Add New Rule**.</span></span> <span data-ttu-id="9ecc2-136">命名规则**SetGlobalBankWestItinerary**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-136">Name the rule **SetGlobalBankWestItinerary**.</span></span>  
-  
-2.  <span data-ttu-id="9ecc2-137">在事实数据资源管理器，单击**XML 架构**选项卡上，右键单击**架构**，然后单击**浏览**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-137">In Facts Explorer, click the **XML Schemas** tab, right-click **Schemas**, and then click **Browse**.</span></span>  
-  
-3.  <span data-ttu-id="9ecc2-138">在**架构文件**对话框中，浏览到 C:\Projects\Microsoft.Practices.ESB\Source\Samples\DynamicResolution\Source\ESB。DynamicResolution.Schemas，选择**NAOrderDoc.xsd**，然后单击**打开**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-138">In the **Schema Files** dialog box, browse to C:\Projects\Microsoft.Practices.ESB\Source\Samples\DynamicResolution\Source\ESB.DynamicResolution.Schemas, select **NAOrderDoc.xsd**, and then click **Open**.</span></span>  
+2.  <span data-ttu-id="00012-130">在策略浏览器中右键单击**策略**，然后单击**添加新策略**。</span><span class="sxs-lookup"><span data-stu-id="00012-130">In Policy Explorer, right-click **Policies**, and then click **Add New Policy**.</span></span> <span data-ttu-id="00012-131">将策略命名**ResolveItineraryBasedOnCustomer**。</span><span class="sxs-lookup"><span data-stu-id="00012-131">Name the policy **ResolveItineraryBasedOnCustomer**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="9ecc2-139">这是定义 NAOrderDoc.xml 消息，用于创建将用于测试的西部和东部消息的架构。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-139">This is the schema that defines the NAOrderDoc.xml message, which was used to create the West and East messages you will use for testing.</span></span>  
+    >  <span data-ttu-id="00012-132">本操作指南主题的主题中创建使用相同的业务规则策略和路线[如何： 拆分交换并将生成的消息路由到多个文件的位置使用不同的路线](../esb-toolkit/split-an-interchange-and-route-messages-to-multiple-locations-using-itineraries.md)。</span><span class="sxs-lookup"><span data-stu-id="00012-132">This How-to topic uses the same business rules policy and itineraries as those created in the topic [How to: Split an Interchange and Route the Resulting Messages to Multiple File Locations Using Distinct Itineraries](../esb-toolkit/split-an-interchange-and-route-messages-to-multiple-locations-using-itineraries.md).</span></span> <span data-ttu-id="00012-133">如果你已完成该部分，可以跳过本主题中后面到过程中，"以创建和配置 ESB 接入点"。</span><span class="sxs-lookup"><span data-stu-id="00012-133">If you have already completed that section, you can skip to the procedure, "To create and configure an ESB on-ramp" later in this topic.</span></span>  
   
-4.  <span data-ttu-id="9ecc2-140">在事实数据资源管理器，单击**NAOrderDoc.xsd**，单击**文档类型**属性在属性窗格中，然后键入**GlobalBank.ESB.DynamicResolution.Schemas.NAOrderDoc**.</span><span class="sxs-lookup"><span data-stu-id="9ecc2-140">In Facts Explorer, click **NAOrderDoc.xsd**, click the **Document Type** property in the Properties pane, and then type **GlobalBank.ESB.DynamicResolution.Schemas.NAOrderDoc**.</span></span>  
+#### <a name="to-add-a-selection-rule-for-customer-globalbank-west"></a><span data-ttu-id="00012-134">若要添加客户 GlobalBank 西部选择规则</span><span class="sxs-lookup"><span data-stu-id="00012-134">To add a selection rule for customer GlobalBank West</span></span>  
   
-    > [!NOTE]
-    >  <span data-ttu-id="9ecc2-141">这是架构的完全限定的名称。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-141">This is the fully qualified name of the schema.</span></span>  
+1.  <span data-ttu-id="00012-135">在中**ResolveItineraryBasedOnCustomer**策略中，右键单击**版本 1.0 （未保存）**，然后单击**添加新规则**。</span><span class="sxs-lookup"><span data-stu-id="00012-135">In the **ResolveItineraryBasedOnCustomer** policy, right-click **Version 1.0 (not saved)**, and then click **Add New Rule**.</span></span> <span data-ttu-id="00012-136">命名规则**SetGlobalBankWestItinerary**。</span><span class="sxs-lookup"><span data-stu-id="00012-136">Name the rule **SetGlobalBankWestItinerary**.</span></span>  
   
-5.  <span data-ttu-id="9ecc2-142">在事实数据资源管理器中，展开**NAOrderDoc.xsd**，然后展开**OrderDoc**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-142">In Facts Explorer, expand **NAOrderDoc.xsd**, and then expand **OrderDoc**.</span></span>  
+2.  <span data-ttu-id="00012-137">在事实浏览器中单击**XML 架构**选项卡上，右键单击**架构**，然后单击**浏览**。</span><span class="sxs-lookup"><span data-stu-id="00012-137">In Facts Explorer, click the **XML Schemas** tab, right-click **Schemas**, and then click **Browse**.</span></span>  
   
-6.  <span data-ttu-id="9ecc2-143">在规则窗口中，右键单击**条件**，指向**谓词**，然后单击**相等**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-143">In the Rule window, right-click **Conditions**, point to **Predicates**, and then click **Equal**.</span></span>  
-  
-7.  <span data-ttu-id="9ecc2-144">从事实数据资源管理器拖动**customerName**元素**argument1**节点下的**条件**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-144">From Facts Explorer, drag the **customerName** element to the **argument1** node under **Conditions**.</span></span>  
-  
-8.  <span data-ttu-id="9ecc2-145">单击**argument2**节点，并键入**GlobalBankWest**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-145">Click the **argument2** node, and then type **GlobalBankWest**.</span></span>  
-  
-9. <span data-ttu-id="9ecc2-146">在事实数据资源管理器，单击**词汇**选项卡。展开**ESB。路线**词汇，展开**版本 1.1**，然后拖动**设置路线名称**定义与**操作**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-146">In Facts Explorer, click the **Vocabularies** tab. Expand the **ESB.Itinerary** vocabulary, expand **Version 1.1**, and then drag the **Set Itinerary Name** definition to **Actions**.</span></span>  
-  
-10. <span data-ttu-id="9ecc2-147">单击**\<空字符串\>**，然后键入**GlobalBankWestItinerary**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-147">Click **\<empty string\>**, and then type **GlobalBankWestItinerary**.</span></span>  
+3.  <span data-ttu-id="00012-138">在中**架构文件**对话框中，浏览到 C:\Projects\Microsoft.Practices.ESB\Source\Samples\DynamicResolution\Source\ESB。DynamicResolution.Schemas，选择**NAOrderDoc.xsd**，然后单击**打开**。</span><span class="sxs-lookup"><span data-stu-id="00012-138">In the **Schema Files** dialog box, browse to C:\Projects\Microsoft.Practices.ESB\Source\Samples\DynamicResolution\Source\ESB.DynamicResolution.Schemas, select **NAOrderDoc.xsd**, and then click **Open**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="9ecc2-148">更高版本在本操作方法主题中，你将创建处理这些消息的此路线，从 GlobalBank 西部。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-148">Later in this How-to topic, you will create this itinerary to process messages from GlobalBank West.</span></span>  
+    >  <span data-ttu-id="00012-139">这是定义 NAOrderDoc.xml 消息，用于创建将用于测试的左和右消息的架构。</span><span class="sxs-lookup"><span data-stu-id="00012-139">This is the schema that defines the NAOrderDoc.xml message, which was used to create the West and East messages you will use for testing.</span></span>  
   
-#### <a name="to-add-a-selection-rule-for-customer-globalbank-east"></a><span data-ttu-id="9ecc2-149">若要为客户 GlobalBank 东部添加一个选择规则</span><span class="sxs-lookup"><span data-stu-id="9ecc2-149">To add a selection rule for Customer GlobalBank East</span></span>  
-  
-1.  <span data-ttu-id="9ecc2-150">在策略资源管理器中，右键单击**SetGlobalBankWestItinerary**规则，并依次**复制**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-150">In Policy Explorer, right-click the **SetGlobalBankWestItinerary** rule, and then click **Copy**.</span></span>  
-  
-2.  <span data-ttu-id="9ecc2-151">右键单击 **（不保存） 1.0 版**，然后单击**粘贴**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-151">Right-click **Version 1.0 (not saved)**, and then click **Paste**.</span></span>  
-  
-3.  <span data-ttu-id="9ecc2-152">在**新规则名称**对话框中，键入**SetGlobalBankEastItinerary**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-152">In the **New Rule Name** dialog box, type **SetGlobalBankEastItinerary**, and then click **OK**.</span></span>  
-  
-4.  <span data-ttu-id="9ecc2-153">在策略资源管理器，单击**SetGlobalBankEastItinerary**规则。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-153">In Policy Explorer, click the **SetGlobalBankEastItinerary** rule.</span></span>  
-  
-5.  <span data-ttu-id="9ecc2-154">在**条件**部分中，右键单击**GlobalBankWest**，然后单击**重置参数**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-154">In the **Conditions** section, right-click **GlobalBankWest**, and then click **Reset argument**.</span></span>  
-  
-6.  <span data-ttu-id="9ecc2-155">单击**argument2**，然后键入**GlobalBankEast**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-155">Click **argument2**, and then type **GlobalBankEast**.</span></span>  
-  
-7.  <span data-ttu-id="9ecc2-156">在**操作**部分中，右键单击**GlobalBankWestItinerary**，然后单击**重置参数**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-156">In the **Actions** section, right-click **GlobalBankWestItinerary**, and then click **Reset argument**.</span></span>  
-  
-8.  <span data-ttu-id="9ecc2-157">单击**\<空字符串\>** 然后键入**GlobalBankEastItinerary**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-157">Click **\<empty string\>** and then type **GlobalBankEastItinerary**.</span></span>  
+4.  <span data-ttu-id="00012-140">在事实浏览器中单击**NAOrderDoc.xsd**，单击**文档类型**属性中为属性窗格，然后按**GlobalBank.ESB.DynamicResolution.Schemas.NAOrderDoc**.</span><span class="sxs-lookup"><span data-stu-id="00012-140">In Facts Explorer, click **NAOrderDoc.xsd**, click the **Document Type** property in the Properties pane, and then type **GlobalBank.ESB.DynamicResolution.Schemas.NAOrderDoc**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="9ecc2-158">更高版本中的操作方法主题，你将从 GlobalBank 东处理这些消息创建此路线。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-158">Later in the How-to topic, you will create this itinerary to process messages from GlobalBank East.</span></span>  
+    >  <span data-ttu-id="00012-141">这是架构的完全限定的名称。</span><span class="sxs-lookup"><span data-stu-id="00012-141">This is the fully qualified name of the schema.</span></span>  
   
-#### <a name="to-publish-and-deploy-the-policy"></a><span data-ttu-id="9ecc2-159">若要发布和部署策略</span><span class="sxs-lookup"><span data-stu-id="9ecc2-159">To publish and deploy the policy</span></span>  
+5.  <span data-ttu-id="00012-142">在事实浏览器中，展开**NAOrderDoc.xsd**，然后展开**OrderDoc**。</span><span class="sxs-lookup"><span data-stu-id="00012-142">In Facts Explorer, expand **NAOrderDoc.xsd**, and then expand **OrderDoc**.</span></span>  
   
-1.  <span data-ttu-id="9ecc2-160">在策略资源管理器下**ResolveItineraryBasedOnCustomer**策略中，右击 **（不保存） 1.0 版**，然后单击**发布**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-160">In Policy Explorer, under the **ResolveItineraryBasedOnCustomer** policy, right click **Version 1.0 (not saved)**, and then click **Publish**.</span></span>  
+6.  <span data-ttu-id="00012-143">在规则窗口中，右键单击**条件**，依次指向**谓词**，然后单击**相等**。</span><span class="sxs-lookup"><span data-stu-id="00012-143">In the Rule window, right-click **Conditions**, point to **Predicates**, and then click **Equal**.</span></span>  
   
-2.  <span data-ttu-id="9ecc2-161">在策略资源管理器下**ResolveItineraryBasedOnCustomer**策略中，右击**版本 1.0-发布**，然后单击**部署**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-161">In Policy Explorer, under the **ResolveItineraryBasedOnCustomer** policy, right click **Version 1.0 - Published**, and then click **Deploy**.</span></span>  
+7.  <span data-ttu-id="00012-144">从事实浏览器中，将**customerName**元素**argument1**节点下的**条件**。</span><span class="sxs-lookup"><span data-stu-id="00012-144">From Facts Explorer, drag the **customerName** element to the **argument1** node under **Conditions**.</span></span>  
   
-#### <a name="to-create-an-esb-itinerary-domain-specific-language-dsl-model-for-globalbank-west-messages"></a><span data-ttu-id="9ecc2-162">若要创建 GlobalBank 西部消息 ESB 路线域特定语言 (DSL) 模型</span><span class="sxs-lookup"><span data-stu-id="9ecc2-162">To create an ESB itinerary domain-specific language (DSL) model for GlobalBank West messages</span></span>  
+8.  <span data-ttu-id="00012-145">单击**argument2**节点，并键入**GlobalBankWest**。</span><span class="sxs-lookup"><span data-stu-id="00012-145">Click the **argument2** node, and then type **GlobalBankWest**.</span></span>  
   
-1.  <span data-ttu-id="9ecc2-163">在 Visual Studio 中，打开 C:\HowTos\Patterns\Patterns.sln。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-163">In Visual Studio, open C:\HowTos\Patterns\Patterns.sln.</span></span>  
+9. <span data-ttu-id="00012-146">在事实浏览器中单击**词汇**选项卡。展开**ESB。路线**词汇，展开**版本 1.1**，然后将拖**集路线名称**定义**操作**。</span><span class="sxs-lookup"><span data-stu-id="00012-146">In Facts Explorer, click the **Vocabularies** tab. Expand the **ESB.Itinerary** vocabulary, expand **Version 1.1**, and then drag the **Set Itinerary Name** definition to **Actions**.</span></span>  
   
-2.  <span data-ttu-id="9ecc2-164">在解决方案资源管理器，右键单击**ItineraryLibrary**项目，指向**添加**，然后单击**新路线**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-164">In Solution Explorer, right-click the **ItineraryLibrary** project, point to **Add**, and then click **New Itinerary**.</span></span>  
-  
-3.  <span data-ttu-id="9ecc2-165">在**添加新项**对话框中，在模板窗格中，单击**ItineraryDsl**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-165">In the **Add New Item** dialog box, in the Templates pane, click **ItineraryDsl**.</span></span>  
-  
-4.  <span data-ttu-id="9ecc2-166">在**名称**框中，键入**GlobalBankWestItinerary**，然后单击**添加**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-166">In the **Name** box, type **GlobalBankWestItinerary**, and then click **Add**.</span></span>  
-  
-#### <a name="to-configure-the-properties-of-the-globalbank-west-itinerary"></a><span data-ttu-id="9ecc2-167">若要配置 GlobalBank 西部路线的属性</span><span class="sxs-lookup"><span data-stu-id="9ecc2-167">To configure the properties of the GlobalBank West itinerary</span></span>  
-  
-1.  <span data-ttu-id="9ecc2-168">在 Visual Studio 中，单击的设计图面**GlobalBankWestItinerary.itinerary**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-168">In Visual Studio, click the design surface of **GlobalBankWestItinerary.itinerary**.</span></span> <span data-ttu-id="9ecc2-169">在**GlobalBankWestItinerary**属性窗口中，配置以下属性：</span><span class="sxs-lookup"><span data-stu-id="9ecc2-169">In the **GlobalBankWestItinerary** Properties window, configure the following properties:</span></span>  
-  
-    1.  <span data-ttu-id="9ecc2-170">在**模型导出程序**下拉列表中，单击**数据库路线导出程序**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-170">In the **Model Exporter** drop-down list, click **Database Itinerary Exporter**.</span></span>  
-  
-    2.  <span data-ttu-id="9ecc2-171">单击旁边的省略号按钮 （...）**路线数据库**属性。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-171">Click the ellipsis button (...) next to the **Itinerary Database** property.</span></span>  
-  
-    3.  <span data-ttu-id="9ecc2-172">在**连接属性**对话框中，选择承载路线存储库数据库中，SQL Server，然后指定数据库的名称 (默认名称是**EsbItineraryDb**)。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-172">In the **Connection Properties** dialog box, choose the SQL Server that hosts the itinerary repository database, and then specify the name of the database (the default name is **EsbItineraryDb**).</span></span>  
-  
-2.  <span data-ttu-id="9ecc2-173">在**路线状态**下拉列表中，单击**已部署**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-173">In the **Itinerary Status** drop-down list, click **Deployed**.</span></span>  
+10. <span data-ttu-id="00012-147">单击**\<空字符串\>**，然后键入**GlobalBankWestItinerary**。</span><span class="sxs-lookup"><span data-stu-id="00012-147">Click **\<empty string\>**, and then type **GlobalBankWestItinerary**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="9ecc2-174">此步骤允许您将导出到一个中心存储库; 路线可以选择路线，并将其附加从在接收到消息时此存储库。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-174">This step enables you to export the itinerary to a central repository; itineraries can be selected and attached from this repository upon message reception.</span></span> <span data-ttu-id="9ecc2-175">更高版本，你将配置路线选择器管道组件配置为使用业务规则引擎冲突解决程序 (BRI) 要评估的入站的消息和从此存储库中选择相应的路线。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-175">You will later configure the Itinerary Selector pipeline component to use the Business Rules Engine resolver (BRI) to evaluate inbound messages and select the appropriate itinerary from this repository.</span></span>  
+    >  <span data-ttu-id="00012-148">本操作指南主题中稍后将此路线创建处理消息从 GlobalBank 西部。</span><span class="sxs-lookup"><span data-stu-id="00012-148">Later in this How-to topic, you will create this itinerary to process messages from GlobalBank West.</span></span>  
   
-#### <a name="to-define-the-structure-of-the-itinerary"></a><span data-ttu-id="9ecc2-176">若要定义路线的结构</span><span class="sxs-lookup"><span data-stu-id="9ecc2-176">To define the structure of the itinerary</span></span>  
+#### <a name="to-add-a-selection-rule-for-customer-globalbank-east"></a><span data-ttu-id="00012-149">若要添加客户 GlobalBank 东部的选择规则</span><span class="sxs-lookup"><span data-stu-id="00012-149">To add a selection rule for Customer GlobalBank East</span></span>  
   
-1.  <span data-ttu-id="9ecc2-177">从工具箱中，拖动**上负载增加**到设计图面上的模型元素。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-177">From the Toolbox, drag an **On-Ramp** model element to the design surface.</span></span> <span data-ttu-id="9ecc2-178">在**OnRamp1**属性窗口中，配置以下属性：</span><span class="sxs-lookup"><span data-stu-id="9ecc2-178">In the **OnRamp1** Properties window, configure the following properties:</span></span>  
+1.  <span data-ttu-id="00012-150">在策略浏览器中右键单击**SetGlobalBankWestItinerary**规则，然后依次**副本**。</span><span class="sxs-lookup"><span data-stu-id="00012-150">In Policy Explorer, right-click the **SetGlobalBankWestItinerary** rule, and then click **Copy**.</span></span>  
   
-    1.  <span data-ttu-id="9ecc2-179">单击**名称**属性，再然后键入**ReceiveNAOrder**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-179">Click the **Name** property, and then type **ReceiveNAOrder**.</span></span>  
+2.  <span data-ttu-id="00012-151">右键单击**版本 1.0 （未保存）**，然后单击**粘贴**。</span><span class="sxs-lookup"><span data-stu-id="00012-151">Right-click **Version 1.0 (not saved)**, and then click **Paste**.</span></span>  
   
-    2.  <span data-ttu-id="9ecc2-180">在**扩展程序**下拉列表中，单击**上负载增加 ESB 服务扩展**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-180">In the **Extender** drop-down list, click **On-Ramp ESB Service Extension**.</span></span>  
+3.  <span data-ttu-id="00012-152">在中**新建规则名称**对话框中，键入**SetGlobalBankEastItinerary**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="00012-152">In the **New Rule Name** dialog box, type **SetGlobalBankEastItinerary**, and then click **OK**.</span></span>  
   
-    3.  <span data-ttu-id="9ecc2-181">在**BizTalk 应用程序**下拉列表中，单击**Microsoft.Practices.ESB**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-181">In the **BizTalk Application** drop-down list, click **Microsoft.Practices.ESB**.</span></span>  
+4.  <span data-ttu-id="00012-153">在策略浏览器中单击**SetGlobalBankEastItinerary**规则。</span><span class="sxs-lookup"><span data-stu-id="00012-153">In Policy Explorer, click the **SetGlobalBankEastItinerary** rule.</span></span>  
   
-    4.  <span data-ttu-id="9ecc2-182">在**接收端口**下拉列表中，单击**OnRamp.Itinerary**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-182">In the **Receive Port** drop-down list, click **OnRamp.Itinerary**.</span></span>  
+5.  <span data-ttu-id="00012-154">在中**条件**部分中，右键单击**GlobalBankWest**，然后单击**重置参数**。</span><span class="sxs-lookup"><span data-stu-id="00012-154">In the **Conditions** section, right-click **GlobalBankWest**, and then click **Reset argument**.</span></span>  
   
-2.  <span data-ttu-id="9ecc2-183">从工具箱中，拖动**关闭负载增加**模型元素到设计图面，然后将其放到右侧**ReceiveNAOrder**模型元素。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-183">From the Toolbox, drag an **Off-Ramp** model element to the design surface, and then place it to the right of the **ReceiveNAOrder** model element.</span></span> <span data-ttu-id="9ecc2-184">在**OffRamp1**属性窗口中，配置以下属性：</span><span class="sxs-lookup"><span data-stu-id="9ecc2-184">In the **OffRamp1** Properties window, configure the following properties:</span></span>  
+6.  <span data-ttu-id="00012-155">单击**argument2**，然后键入**GlobalBankEast**。</span><span class="sxs-lookup"><span data-stu-id="00012-155">Click **argument2**, and then type **GlobalBankEast**.</span></span>  
   
-    1.  <span data-ttu-id="9ecc2-185">单击**名称**属性，再然后键入**SendNAOrder**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-185">Click the **Name** property, and then type **SendNAOrder**.</span></span>  
+7.  <span data-ttu-id="00012-156">在中**操作**部分中，右键单击**GlobalBankWestItinerary**，然后单击**重置参数**。</span><span class="sxs-lookup"><span data-stu-id="00012-156">In the **Actions** section, right-click **GlobalBankWestItinerary**, and then click **Reset argument**.</span></span>  
   
-    2.  <span data-ttu-id="9ecc2-186">在**扩展程序**下拉列表中，单击**关闭负载增加 ESB 服务扩展**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-186">In the **Extender** drop-down list, click **Off-Ramp ESB Service Extension**.</span></span>  
-  
-    3.  <span data-ttu-id="9ecc2-187">在**BizTalk 应用程序**下拉列表中，单击**GlobalBank.ESB**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-187">In the **BizTalk Application** drop-down list, click **GlobalBank.ESB**.</span></span>  
-  
-    4.  <span data-ttu-id="9ecc2-188">在**发送端口**下拉列表中，单击**DynamicResolutionOneWay**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-188">In the **Send Port** drop-down list, click **DynamicResolutionOneWay**.</span></span>  
-  
-3.  <span data-ttu-id="9ecc2-189">从工具箱中，拖动**路线服务**模型元素到设计图面，然后将它之间**ReceiveNAOrder**模型元素和**SendNAOrder**模型元素。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-189">From the Toolbox, drag an **Itinerary Service** model element to the design surface, and then place it between the **ReceiveNAOrder** model element and the **SendNAOrder** model element.</span></span> <span data-ttu-id="9ecc2-190">在**ItineraryService1**属性窗口中，配置以下属性：</span><span class="sxs-lookup"><span data-stu-id="9ecc2-190">In the **ItineraryService1** Properties window, configure the following properties:</span></span>  
-  
-    1.  <span data-ttu-id="9ecc2-191">单击**名称**属性，再然后键入**RouteMessage**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-191">Click the **Name** property, and then type **RouteMessage**.</span></span>  
-  
-    2.  <span data-ttu-id="9ecc2-192">在**路线服务扩展程序**下拉列表中，单击**关闭负载增加路线服务扩展**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-192">In the **Itinerary Service Extender** drop-down list, click **Off-Ramp Itinerary Service Extension**.</span></span>  
-  
-    3.  <span data-ttu-id="9ecc2-193">在**关闭负载增加**下拉列表中，展开**SendNAOrder**，然后单击**发送处理程序**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-193">In the **Off-Ramp** drop-down list, expand **SendNAOrder**, and then click **Send Handlers**.</span></span>  
-  
-4.  <span data-ttu-id="9ecc2-194">右键单击**冲突解决程序**集合**RouteMessage**模型元素，并依次**添加新解析程序**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-194">Right-click the **Resolver** collection of the **RouteMessage** model element, and then click **Add new Resolver**.</span></span> <span data-ttu-id="9ecc2-195">在**Resolver1**属性窗口中，配置以下属性：</span><span class="sxs-lookup"><span data-stu-id="9ecc2-195">In the **Resolver1** Properties window, configure the following properties:</span></span>  
-  
-    1.  <span data-ttu-id="9ecc2-196">单击**名称**属性，再然后键入**StaticResolver**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-196">Click the **Name** property, and then type **StaticResolver**.</span></span>  
-  
-    2.  <span data-ttu-id="9ecc2-197">在**解析程序实现**下拉列表中，单击**静态冲突解决程序扩展**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-197">In the **Resolver Implementation** drop-down list, click **Static Resolver Extension**.</span></span>  
-  
-    3.  <span data-ttu-id="9ecc2-198">在**传输名称**下拉列表中，单击**文件**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-198">In the **Transport Name** drop-down list, click **FILE**.</span></span>  
-  
-    4.  <span data-ttu-id="9ecc2-199">单击**传输位置**属性，再然后键入**C:\HowTos\Out\West%MessageID%.xml**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-199">Click the **Transport Location** property, and then type **C:\HowTos\Out\West%MessageID%.xml**.</span></span>  
-  
-5.  <span data-ttu-id="9ecc2-200">在工具箱中，单击**连接器**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-200">In the Toolbox, click **Connector**.</span></span> <span data-ttu-id="9ecc2-201">将从连接**ReceiveNAOrder**到模型元素**RouteMessage**模型元素。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-201">Drag a connection from the **ReceiveNAOrder** model element to the **RouteMessage** model element.</span></span>  
-  
-6.  <span data-ttu-id="9ecc2-202">在工具箱中，单击**连接器**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-202">In the Toolbox, click **Connector**.</span></span> <span data-ttu-id="9ecc2-203">将从连接**RouteMessage**到模型元素**SendNAOrder**模型元素。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-203">Drag a connection from the **RouteMessage** model element to the **SendNAOrder** model element.</span></span>  
-  
-#### <a name="to-export-the-model-to-the-itinerary-database"></a><span data-ttu-id="9ecc2-204">将导出到路线的数据库的模型</span><span class="sxs-lookup"><span data-stu-id="9ecc2-204">To export the model to the itinerary database</span></span>  
-  
-1.  <span data-ttu-id="9ecc2-205">在 Visual Studio 中，右键单击的设计图面**GlobalBankWestItinerary**路线，，然后单击**导出模型**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-205">In Visual Studio, right-click the design surface of the **GlobalBankWestItinerary** itinerary, and then click **Export Model**.</span></span>  
+8.  <span data-ttu-id="00012-157">单击**\<空字符串\>** ，然后键入**GlobalBankEastItinerary**。</span><span class="sxs-lookup"><span data-stu-id="00012-157">Click **\<empty string\>** and then type **GlobalBankEastItinerary**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="9ecc2-206">路线已导出到路线的数据库，现在可以使用由路线选择器组件。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-206">The itinerary has been exported to the itinerary database and can now be used by the Itinerary Selector component.</span></span>  
+    >  <span data-ttu-id="00012-158">更高版本中的操作方法主题，您将创建来处理消息的此路线，从 GlobalBank 东部。</span><span class="sxs-lookup"><span data-stu-id="00012-158">Later in the How-to topic, you will create this itinerary to process messages from GlobalBank East.</span></span>  
   
-2.  <span data-ttu-id="9ecc2-207">保存所有项目。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-207">Save all project artifacts.</span></span>  
+#### <a name="to-publish-and-deploy-the-policy"></a><span data-ttu-id="00012-159">若要发布和部署策略</span><span class="sxs-lookup"><span data-stu-id="00012-159">To publish and deploy the policy</span></span>  
   
-#### <a name="to-create-an-esb-itinerary-dsl-model-for-globalbank-east-message"></a><span data-ttu-id="9ecc2-208">若要创建 GlobalBank 东部消息 ESB 路线 DSL 模型</span><span class="sxs-lookup"><span data-stu-id="9ecc2-208">To create an ESB itinerary DSL model for GlobalBank East message</span></span>  
+1.  <span data-ttu-id="00012-160">在策略浏览器下**ResolveItineraryBasedOnCustomer**策略中，右键单击**版本 1.0 （未保存）**，然后单击**发布**。</span><span class="sxs-lookup"><span data-stu-id="00012-160">In Policy Explorer, under the **ResolveItineraryBasedOnCustomer** policy, right click **Version 1.0 (not saved)**, and then click **Publish**.</span></span>  
   
-1.  <span data-ttu-id="9ecc2-209">在 Visual Studio 中，打开 C:\HowTos\Patterns.sln。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-209">In Visual Studio, open C:\HowTos\Patterns.sln.</span></span>  
+2.  <span data-ttu-id="00012-161">在策略浏览器下**ResolveItineraryBasedOnCustomer**策略中，右键单击**版本 1.0-已发布**，然后单击**部署**。</span><span class="sxs-lookup"><span data-stu-id="00012-161">In Policy Explorer, under the **ResolveItineraryBasedOnCustomer** policy, right click **Version 1.0 - Published**, and then click **Deploy**.</span></span>  
   
-2.  <span data-ttu-id="9ecc2-210">在解决方案资源管理器，右键单击**ItineraryLibrary**项目，指向**添加**，然后单击**新路线**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-210">In Solution Explorer, right-click the **ItineraryLibrary** project, point to **Add**, and then click **New Itinerary**.</span></span>  
+#### <a name="to-create-an-esb-itinerary-domain-specific-language-dsl-model-for-globalbank-west-messages"></a><span data-ttu-id="00012-162">若要创建 GlobalBank 西部消息 ESB 路线域特定语言 (DSL) 模型</span><span class="sxs-lookup"><span data-stu-id="00012-162">To create an ESB itinerary domain-specific language (DSL) model for GlobalBank West messages</span></span>  
   
-3.  <span data-ttu-id="9ecc2-211">在**添加新项**对话框中，在模板窗格中，单击**ItineraryDsl**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-211">In the **Add New Item** dialog box, in the Templates pane, click **ItineraryDsl**.</span></span>  
+1.  <span data-ttu-id="00012-163">在 Visual Studio 中，打开 C:\HowTos\Patterns\Patterns.sln。</span><span class="sxs-lookup"><span data-stu-id="00012-163">In Visual Studio, open C:\HowTos\Patterns\Patterns.sln.</span></span>  
   
-4.  <span data-ttu-id="9ecc2-212">在**名称**框中，键入**GlobalBankEastItinerary**，然后单击**添加**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-212">In the **Name** box, type **GlobalBankEastItinerary**, and then click **Add**.</span></span>  
+2.  <span data-ttu-id="00012-164">在解决方案资源管理器中右键单击**ItineraryLibrary**项目，指向**添加**，然后单击**新路线**。</span><span class="sxs-lookup"><span data-stu-id="00012-164">In Solution Explorer, right-click the **ItineraryLibrary** project, point to **Add**, and then click **New Itinerary**.</span></span>  
   
-#### <a name="to-configure-the-properties-of-the-globalbank-east-itinerary"></a><span data-ttu-id="9ecc2-213">若要配置 GlobalBank 东部路线的属性</span><span class="sxs-lookup"><span data-stu-id="9ecc2-213">To configure the properties of the GlobalBank East itinerary</span></span>  
+3.  <span data-ttu-id="00012-165">在中**添加新项**对话框中，在模板窗格中，单击**ItineraryDsl**。</span><span class="sxs-lookup"><span data-stu-id="00012-165">In the **Add New Item** dialog box, in the Templates pane, click **ItineraryDsl**.</span></span>  
   
-1.  <span data-ttu-id="9ecc2-214">在 Visual Studio 中，单击的设计图面**GlobalBankEastItinerary.itinerary**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-214">In Visual Studio, click the design surface of **GlobalBankEastItinerary.itinerary**.</span></span> <span data-ttu-id="9ecc2-215">在**GlobalBankEastItinerary**属性窗口中，配置以下属性：</span><span class="sxs-lookup"><span data-stu-id="9ecc2-215">In the **GlobalBankEastItinerary** Properties window, configure the following properties:</span></span>  
+4.  <span data-ttu-id="00012-166">在中**名称**框中，键入**GlobalBankWestItinerary**，然后单击**添加**。</span><span class="sxs-lookup"><span data-stu-id="00012-166">In the **Name** box, type **GlobalBankWestItinerary**, and then click **Add**.</span></span>  
   
-    1.  <span data-ttu-id="9ecc2-216">在**模型导出程序**下拉列表中，单击**数据库路线导出程序**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-216">In the **Model Exporter** drop-down list, click **Database Itinerary Exporter**.</span></span>  
+#### <a name="to-configure-the-properties-of-the-globalbank-west-itinerary"></a><span data-ttu-id="00012-167">若要配置 GlobalBank 西部路线的属性</span><span class="sxs-lookup"><span data-stu-id="00012-167">To configure the properties of the GlobalBank West itinerary</span></span>  
   
-    2.  <span data-ttu-id="9ecc2-217">单击旁边的省略号按钮 （...）**路线数据库**属性。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-217">Click the ellipsis button (...) next to the **Itinerary Database** property.</span></span>  
+1.  <span data-ttu-id="00012-168">在 Visual Studio 中，单击的设计图面**GlobalBankWestItinerary.itinerary**。</span><span class="sxs-lookup"><span data-stu-id="00012-168">In Visual Studio, click the design surface of **GlobalBankWestItinerary.itinerary**.</span></span> <span data-ttu-id="00012-169">在中**GlobalBankWestItinerary**属性窗口中，配置以下属性：</span><span class="sxs-lookup"><span data-stu-id="00012-169">In the **GlobalBankWestItinerary** Properties window, configure the following properties:</span></span>  
   
-    3.  <span data-ttu-id="9ecc2-218">在**连接属性**对话框中，选择承载路线存储库数据库中，SQL Server，然后指定数据库的名称 (默认名称是**EsbItineraryDb**)。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-218">In the **Connection Properties** dialog box, choose the SQL Server that hosts the itinerary repository database, and then specify the name of the database (the default name is **EsbItineraryDb**).</span></span>  
+    1.  <span data-ttu-id="00012-170">在中**模型导出程序**下拉列表中，单击**数据库路线导出程序**。</span><span class="sxs-lookup"><span data-stu-id="00012-170">In the **Model Exporter** drop-down list, click **Database Itinerary Exporter**.</span></span>  
   
-2.  <span data-ttu-id="9ecc2-219">在**路线状态**下拉列表中，单击**已部署**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-219">In the **Itinerary Status** drop-down list, click **Deployed**.</span></span>  
+    2.  <span data-ttu-id="00012-171">单击省略号按钮 （...） 下一步**行程数据库**属性。</span><span class="sxs-lookup"><span data-stu-id="00012-171">Click the ellipsis button (...) next to the **Itinerary Database** property.</span></span>  
   
-    > [!NOTE]
-    >  <span data-ttu-id="9ecc2-220">此步骤允许您将导出到一个中心存储库; 路线可以选择路线，并将其从此存储库中接收消息时附加。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-220">This step enables you to export the itinerary to a central repository; itineraries can be selected and attached from this repository when messages are received.</span></span> <span data-ttu-id="9ecc2-221">更高版本，你将配置路线选择器管道组件配置为使用 BRI 解析程序要评估的入站的消息和从此存储库中选择相应的路线。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-221">You will later configure the Itinerary Selector pipeline component to use the BRI resolver to evaluate inbound messages and select the appropriate itinerary from this repository.</span></span>  
+    3.  <span data-ttu-id="00012-172">在中**连接属性**对话框中，选择承载路线的存储库数据库的 SQL 服务器，然后指定数据库的名称 (默认名称是**EsbItineraryDb**)。</span><span class="sxs-lookup"><span data-stu-id="00012-172">In the **Connection Properties** dialog box, choose the SQL Server that hosts the itinerary repository database, and then specify the name of the database (the default name is **EsbItineraryDb**).</span></span>  
   
-#### <a name="to-define-the-structure-of-the-itinerary"></a><span data-ttu-id="9ecc2-222">若要定义路线的结构</span><span class="sxs-lookup"><span data-stu-id="9ecc2-222">To define the structure of the itinerary</span></span>  
-  
-1.  <span data-ttu-id="9ecc2-223">从工具箱中，拖动**上负载增加**到设计图面上的模型元素。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-223">From the Toolbox, drag an **On-Ramp** model element to the design surface.</span></span> <span data-ttu-id="9ecc2-224">在**OnRamp1**属性窗口中，配置以下属性：</span><span class="sxs-lookup"><span data-stu-id="9ecc2-224">In the **OnRamp1** Properties window, configure the following properties:</span></span>  
-  
-    1.  <span data-ttu-id="9ecc2-225">单击**名称**属性，再然后键入**ReceiveNAOrder**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-225">Click the **Name** property, and then type **ReceiveNAOrder**.</span></span>  
-  
-    2.  <span data-ttu-id="9ecc2-226">在**扩展程序**下拉列表中，单击**上负载增加 ESB 服务扩展**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-226">In the **Extender** drop-down list, click **On-Ramp ESB Service Extension**.</span></span>  
-  
-    3.  <span data-ttu-id="9ecc2-227">在**BizTalk 应用程序**下拉列表中，单击**Microsoft.Practices.ESB**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-227">In the **BizTalk Application** drop-down list, click **Microsoft.Practices.ESB**.</span></span>  
-  
-    4.  <span data-ttu-id="9ecc2-228">在**接收端口**下拉列表中，单击**OnRamp.Itinerary**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-228">In the **Receive Port** drop-down list, click **OnRamp.Itinerary**.</span></span>  
-  
-2.  <span data-ttu-id="9ecc2-229">从工具箱中，拖动**关闭负载增加**模型元素到设计图面，然后将其放到右侧**ReceiveNAOrder**模型元素。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-229">From the Toolbox, drag an **Off-Ramp** model element to the design surface, and then place it to the right of the **ReceiveNAOrder** model element.</span></span> <span data-ttu-id="9ecc2-230">在**OffRamp1**属性窗口中，配置以下属性：</span><span class="sxs-lookup"><span data-stu-id="9ecc2-230">In the **OffRamp1** Properties window, configure the following properties:</span></span>  
-  
-    1.  <span data-ttu-id="9ecc2-231">单击**名称**属性，再然后键入**SendNAOrder**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-231">Click the **Name** property, and then type **SendNAOrder**.</span></span>  
-  
-    2.  <span data-ttu-id="9ecc2-232">在**扩展程序**下拉列表中，单击**关闭负载增加 ESB 服务扩展**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-232">In the **Extender** drop-down list, click **Off-Ramp ESB Service Extension**.</span></span>  
-  
-    3.  <span data-ttu-id="9ecc2-233">在**BizTalk 应用程序**下拉列表中，单击**GlobalBank.ESB**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-233">In the **BizTalk Application** drop-down list, click **GlobalBank.ESB**.</span></span>  
-  
-    4.  <span data-ttu-id="9ecc2-234">在**发送端口**下拉列表中，单击**DynamicResolutionOneWay**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-234">In the **Send Port** drop-down list, click **DynamicResolutionOneWay**.</span></span>  
-  
-3.  <span data-ttu-id="9ecc2-235">从工具箱中，拖动**路线服务**模型元素到设计图面，然后将它之间**ReceiveNAOrder**模型元素和**SendNAOrder**模型元素。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-235">From the Toolbox, drag an **Itinerary Service** model element to the design surface, and then place it between the **ReceiveNAOrder** model element and the **SendNAOrder** model element.</span></span> <span data-ttu-id="9ecc2-236">在**ItineraryService1**属性窗口中，配置以下属性：</span><span class="sxs-lookup"><span data-stu-id="9ecc2-236">In the **ItineraryService1** Properties window, configure the following properties:</span></span>  
-  
-    1.  <span data-ttu-id="9ecc2-237">单击**名称**属性，再然后键入**RouteMessage**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-237">Click the **Name** property, and then type **RouteMessage**.</span></span>  
-  
-    2.  <span data-ttu-id="9ecc2-238">在**路线服务扩展程序**下拉列表中，单击**关闭负载增加路线服务扩展**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-238">In the **Itinerary Service Extender** drop-down list, click **Off-Ramp Itinerary Service Extension**.</span></span>  
-  
-    3.  <span data-ttu-id="9ecc2-239">在**关闭负载增加**下拉列表中，展开**SendNAOrder**，然后单击**发送处理程序**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-239">In the **Off-Ramp** drop-down list, expand **SendNAOrder**, and then click **Send Handlers**.</span></span>  
-  
-4.  <span data-ttu-id="9ecc2-240">右键单击**冲突解决程序**集合**RouteMessage**模型元素，并依次**添加新解析程序**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-240">Right-click the **Resolver** collection of the **RouteMessage** model element, and then click **Add new Resolver**.</span></span> <span data-ttu-id="9ecc2-241">在**Resolver1**属性窗口中，配置以下属性：</span><span class="sxs-lookup"><span data-stu-id="9ecc2-241">In the **Resolver1** Properties window, configure the following properties:</span></span>  
-  
-    1.  <span data-ttu-id="9ecc2-242">单击**名称**属性，再然后键入**StaticResolver**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-242">Click the **Name** property, and then type **StaticResolver**.</span></span>  
-  
-    2.  <span data-ttu-id="9ecc2-243">在**解析程序实现**下拉列表中，单击**静态冲突解决程序扩展**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-243">In the **Resolver Implementation** drop-down list, click **Static Resolver Extension**.</span></span>  
-  
-    3.  <span data-ttu-id="9ecc2-244">在**传输名称**下拉列表中，单击**文件**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-244">In the **Transport Name** drop-down list, click **FILE**.</span></span>  
-  
-    4.  <span data-ttu-id="9ecc2-245">单击**传输位置**属性，再然后键入**C:\HowTos\Out\East%MessageID%.xml**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-245">Click the **Transport Location** property, and then type **C:\HowTos\Out\East%MessageID%.xml**.</span></span>  
-  
-5.  <span data-ttu-id="9ecc2-246">在工具箱中，单击**连接器**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-246">In the Toolbox, click **Connector**.</span></span> <span data-ttu-id="9ecc2-247">将从连接**ReceiveNAOrder**到模型元素**RouteMessage**模型元素。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-247">Drag a connection from the **ReceiveNAOrder** model element to the **RouteMessage** model element.</span></span>  
-  
-6.  <span data-ttu-id="9ecc2-248">在工具箱中，单击**连接器**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-248">In the Toolbox, click **Connector**.</span></span> <span data-ttu-id="9ecc2-249">将从连接**RouteMessage**到模型元素**SendNAOrder**模型元素。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-249">Drag a connection from the **RouteMessage** model element to the **SendNAOrder** model element.</span></span>  
-  
-#### <a name="to-export-the-model-to-the-itinerary-database"></a><span data-ttu-id="9ecc2-250">将导出到路线的数据库的模型</span><span class="sxs-lookup"><span data-stu-id="9ecc2-250">To export the model to the itinerary database</span></span>  
-  
-1.  <span data-ttu-id="9ecc2-251">在 Visual Studio 中，右键单击的设计图面**GlobalBankEastItinerary**路线，，然后单击**导出模型**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-251">In Visual Studio, right-click the design surface of the **GlobalBankEastItinerary** itinerary, and then click **Export Model**.</span></span>  
+2.  <span data-ttu-id="00012-173">在中**路线状态**下拉列表中，单击**已部署**。</span><span class="sxs-lookup"><span data-stu-id="00012-173">In the **Itinerary Status** drop-down list, click **Deployed**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="9ecc2-252">路线已导出到路线的数据库，现在可以使用由路线选择器组件。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-252">The itinerary has been exported to the itinerary database and can now be used by the Itinerary Selector component.</span></span>  
+    >  <span data-ttu-id="00012-174">此步骤允许您将导出到一个中央存储库; 路线可以选择并在接收到消息时此存储库从附加的路线。</span><span class="sxs-lookup"><span data-stu-id="00012-174">This step enables you to export the itinerary to a central repository; itineraries can be selected and attached from this repository upon message reception.</span></span> <span data-ttu-id="00012-175">稍后将配置路线选择器管道组件以使用业务规则引擎冲突解决程序 (BRI) 评估入站的消息，并从此存储库中选择相应的路线。</span><span class="sxs-lookup"><span data-stu-id="00012-175">You will later configure the Itinerary Selector pipeline component to use the Business Rules Engine resolver (BRI) to evaluate inbound messages and select the appropriate itinerary from this repository.</span></span>  
   
-2.  <span data-ttu-id="9ecc2-253">保存所有项目。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-253">Save all project artifacts.</span></span>  
+#### <a name="to-define-the-structure-of-the-itinerary"></a><span data-ttu-id="00012-176">若要定义路线的结构</span><span class="sxs-lookup"><span data-stu-id="00012-176">To define the structure of the itinerary</span></span>  
   
-#### <a name="to-create-and-configure-an-esb-on-ramp"></a><span data-ttu-id="9ecc2-254">若要创建和配置 ESB 入口</span><span class="sxs-lookup"><span data-stu-id="9ecc2-254">To create and configure an ESB on-ramp</span></span>  
+1.  <span data-ttu-id="00012-177">从工具箱拖动**接入点**至设计图面上的模型元素。</span><span class="sxs-lookup"><span data-stu-id="00012-177">From the Toolbox, drag an **On-Ramp** model element to the design surface.</span></span> <span data-ttu-id="00012-178">在中**OnRamp1**属性窗口中，配置以下属性：</span><span class="sxs-lookup"><span data-stu-id="00012-178">In the **OnRamp1** Properties window, configure the following properties:</span></span>  
   
-1.  <span data-ttu-id="9ecc2-255">单击**启动**在任务栏中，指向**所有程序**，指向**BizTalk Server**，然后单击**BizTalk Server 管理**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-255">Click **Start** on the taskbar, point to **All Programs**, point to **BizTalk Server**, and then click **BizTalk Server Administration**.</span></span>  
+    1.  <span data-ttu-id="00012-179">单击**名称**属性，并键入**ReceiveNAOrder**。</span><span class="sxs-lookup"><span data-stu-id="00012-179">Click the **Name** property, and then type **ReceiveNAOrder**.</span></span>  
   
-2.  <span data-ttu-id="9ecc2-256">在 BizTalk Server 管理控制台中，展开**BizTalk 组**，展开**应用程序**，然后展开**Microsoft.Practices.ESB**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-256">In the BizTalk Server Administration Console, expand **BizTalk Group**, expand **Applications**, and then expand **Microsoft.Practices.ESB**.</span></span>  
+    2.  <span data-ttu-id="00012-180">在中**Extender**下拉列表中，单击**接入点 ESB 服务扩展**。</span><span class="sxs-lookup"><span data-stu-id="00012-180">In the **Extender** drop-down list, click **On-Ramp ESB Service Extension**.</span></span>  
   
-3.  <span data-ttu-id="9ecc2-257">右键单击**接收位置**，指向**新建**，然后单击**单向接收位置**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-257">Right-click **Receive Locations**, point to **New**, and then click **One-way Receive Location**.</span></span>  
+    3.  <span data-ttu-id="00012-181">在中**BizTalk 应用程序**下拉列表中，单击**Microsoft.Practices.ESB**。</span><span class="sxs-lookup"><span data-stu-id="00012-181">In the **BizTalk Application** drop-down list, click **Microsoft.Practices.ESB**.</span></span>  
   
-4.  <span data-ttu-id="9ecc2-258">在**选择接收端口**对话框中，单击**OnRamp.Itinerary**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-258">In the **Select a Receive Port** dialog box, click **OnRamp.Itinerary**, and then click **OK**.</span></span>  
+    4.  <span data-ttu-id="00012-182">在中**接收端口**下拉列表中，单击**OnRamp.Itinerary**。</span><span class="sxs-lookup"><span data-stu-id="00012-182">In the **Receive Port** drop-down list, click **OnRamp.Itinerary**.</span></span>  
   
-5.  <span data-ttu-id="9ecc2-259">在**接收位置属性**对话框中，在**名称**框中，键入**OnRamp.Itinerary.HowTo**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-259">In the **Receive Location Properties** dialog box, in the **Name** box, type **OnRamp.Itinerary.HowTo**.</span></span>  
+2.  <span data-ttu-id="00012-183">从工具箱拖动**关闭负载增加**模型元素到设计图面，然后将它放到右侧**ReceiveNAOrder**模型元素。</span><span class="sxs-lookup"><span data-stu-id="00012-183">From the Toolbox, drag an **Off-Ramp** model element to the design surface, and then place it to the right of the **ReceiveNAOrder** model element.</span></span> <span data-ttu-id="00012-184">在中**OffRamp1**属性窗口中，配置以下属性：</span><span class="sxs-lookup"><span data-stu-id="00012-184">In the **OffRamp1** Properties window, configure the following properties:</span></span>  
   
-6.  <span data-ttu-id="9ecc2-260">在**类型**下拉列表中，单击**文件**，然后单击**配置**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-260">In the **Type** drop-down list, click **FILE**, and then click **Configure**.</span></span>  
+    1.  <span data-ttu-id="00012-185">单击**名称**属性，并键入**SendNAOrder**。</span><span class="sxs-lookup"><span data-stu-id="00012-185">Click the **Name** property, and then type **SendNAOrder**.</span></span>  
   
-7.  <span data-ttu-id="9ecc2-261">在**文件传输属性**对话框中，在**接收文件夹**框中，键入**C:\HowTos\DropFolder**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-261">In the **FILE Transport Properties** dialog box, in the **Receive folder** box, type **C:\HowTos\DropFolder**, and then click **OK**.</span></span>  
+    2.  <span data-ttu-id="00012-186">在中**Extender**下拉列表中，单击**关闭负载增加 ESB 服务扩展**。</span><span class="sxs-lookup"><span data-stu-id="00012-186">In the **Extender** drop-down list, click **Off-Ramp ESB Service Extension**.</span></span>  
   
-#### <a name="to-configure-the-itinerary-selector-pipeline-component"></a><span data-ttu-id="9ecc2-262">若要配置路线选择器管道组件</span><span class="sxs-lookup"><span data-stu-id="9ecc2-262">To configure the Itinerary Selector pipeline component</span></span>  
+    3.  <span data-ttu-id="00012-187">在中**BizTalk 应用程序**下拉列表中，单击**GlobalBank.ESB**。</span><span class="sxs-lookup"><span data-stu-id="00012-187">In the **BizTalk Application** drop-down list, click **GlobalBank.ESB**.</span></span>  
   
-1.  <span data-ttu-id="9ecc2-263">在**接收位置属性**对话框中，在**接收管道**下拉列表中，单击**ItinerarySelectReceiveXml**，然后单击省略号按钮 （...).</span><span class="sxs-lookup"><span data-stu-id="9ecc2-263">In the **Receive Location Properties** dialog box, in the **Receive pipeline** drop-down list, click **ItinerarySelectReceiveXml**, and then click the ellipsis button (...).</span></span>  
+    4.  <span data-ttu-id="00012-188">在中**发送端口**下拉列表中，单击**DynamicResolutionOneWay**。</span><span class="sxs-lookup"><span data-stu-id="00012-188">In the **Send Port** drop-down list, click **DynamicResolutionOneWay**.</span></span>  
   
-2.  <span data-ttu-id="9ecc2-264">使用**配置管道**对话框中，配置以下各项**路线选择器**组件属性：</span><span class="sxs-lookup"><span data-stu-id="9ecc2-264">Use the **Configure Pipeline** dialog box to configure the following **Itinerary Selector** component properties:</span></span>  
+3.  <span data-ttu-id="00012-189">从工具箱拖动**路线服务**模型元素到设计图面，然后将其之间放置**ReceiveNAOrder**模型元素和**SendNAOrder**模型元素。</span><span class="sxs-lookup"><span data-stu-id="00012-189">From the Toolbox, drag an **Itinerary Service** model element to the design surface, and then place it between the **ReceiveNAOrder** model element and the **SendNAOrder** model element.</span></span> <span data-ttu-id="00012-190">在中**ItineraryService1**属性窗口中，配置以下属性：</span><span class="sxs-lookup"><span data-stu-id="00012-190">In the **ItineraryService1** Properties window, configure the following properties:</span></span>  
   
-    1.  <span data-ttu-id="9ecc2-265">单击**ItineraryFactKey**属性，再然后键入**Resolver.Itinerary**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-265">Click the **ItineraryFactKey** property, and then type **Resolver.Itinerary**.</span></span>  
+    1.  <span data-ttu-id="00012-191">单击**名称**属性，并键入**RouteMessage**。</span><span class="sxs-lookup"><span data-stu-id="00012-191">Click the **Name** property, and then type **RouteMessage**.</span></span>  
   
-    2.  <span data-ttu-id="9ecc2-266">单击**ResolverConnectionString**属性，再然后键入**BRI:\\\policy=ResolveItineraryBasedOnCustomer;useMsg=true;recognizeMessageFormat=true;**</span><span class="sxs-lookup"><span data-stu-id="9ecc2-266">Click the **ResolverConnectionString** property, and then type **BRI:\\\policy=ResolveItineraryBasedOnCustomer;useMsg=true;recognizeMessageFormat=true;**</span></span>  
+    2.  <span data-ttu-id="00012-192">在**路线服务 Extender**下拉列表中，单击**接入点关闭路线服务扩展**。</span><span class="sxs-lookup"><span data-stu-id="00012-192">In the **Itinerary Service Extender** drop-down list, click **Off-Ramp Itinerary Service Extension**.</span></span>  
   
-    3.  <span data-ttu-id="9ecc2-267">单击**确定**关闭**配置管道**对话框。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-267">Click **OK** to close the **Configure Pipeline** dialog box.</span></span>  
+    3.  <span data-ttu-id="00012-193">在中**关闭负载增加**下拉列表中，展开**SendNAOrder**，然后单击**发送处理程序**。</span><span class="sxs-lookup"><span data-stu-id="00012-193">In the **Off-Ramp** drop-down list, expand **SendNAOrder**, and then click **Send Handlers**.</span></span>  
   
-3.  <span data-ttu-id="9ecc2-268">单击**确定**关闭**接收位置属性**对话框。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-268">Click **OK** to close the **Receive Location Properties** dialog box.</span></span>  
+4.  <span data-ttu-id="00012-194">右键单击**冲突解决程序**系列**RouteMessage**模型元素，然后单击**添加新解析程序**。</span><span class="sxs-lookup"><span data-stu-id="00012-194">Right-click the **Resolver** collection of the **RouteMessage** model element, and then click **Add new Resolver**.</span></span> <span data-ttu-id="00012-195">在中**Resolver1**属性窗口中，配置以下属性：</span><span class="sxs-lookup"><span data-stu-id="00012-195">In the **Resolver1** Properties window, configure the following properties:</span></span>  
   
-4.  <span data-ttu-id="9ecc2-269">在 BizTalk Server 管理控制台中，右键单击**OnRamp.Itinerary.HowTo**接收位置，并依次**启用**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-269">In the BizTalk Server Administration Console, right-click the **OnRamp.Itinerary.HowTo** receive location, and then click **Enable**.</span></span>  
+    1.  <span data-ttu-id="00012-196">单击**名称**属性，并键入**StaticResolver**。</span><span class="sxs-lookup"><span data-stu-id="00012-196">Click the **Name** property, and then type **StaticResolver**.</span></span>  
   
-#### <a name="to-test-the-itinerary-selector-and-business-rules"></a><span data-ttu-id="9ecc2-270">若要测试的路线的选择器和业务规则</span><span class="sxs-lookup"><span data-stu-id="9ecc2-270">To test the itinerary selector and business rules</span></span>  
+    2.  <span data-ttu-id="00012-197">在中**解析程序实现**下拉列表中，单击**静态解析程序扩展**。</span><span class="sxs-lookup"><span data-stu-id="00012-197">In the **Resolver Implementation** drop-down list, click **Static Resolver Extension**.</span></span>  
   
-1.  <span data-ttu-id="9ecc2-271">在 Windows 资源管理器，浏览到 C:\HowTos。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-271">In Windows Explorer, browse to C:\HowTos.</span></span>  
+    3.  <span data-ttu-id="00012-198">在中**传输名称**下拉列表中，单击**文件**。</span><span class="sxs-lookup"><span data-stu-id="00012-198">In the **Transport Name** drop-down list, click **FILE**.</span></span>  
   
-2.  <span data-ttu-id="9ecc2-272">复制 （不移动） 到 DropFolder 文件夹 East.xml 和 West.xml 的文件。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-272">Copy (do not move) the files East.xml and West.xml to the DropFolder folder.</span></span>  
+    4.  <span data-ttu-id="00012-199">单击**传输位置**属性，并键入**C:\HowTos\Out\West%MessageID%.xml**。</span><span class="sxs-lookup"><span data-stu-id="00012-199">Click the **Transport Location** property, and then type **C:\HowTos\Out\West%MessageID%.xml**.</span></span>  
   
-3.  <span data-ttu-id="9ecc2-273">浏览到 C:\HowTos\Out。验证目录中已写的 East%MessageID%.xml 和 West%MessageID%.xml 消息。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-273">Browse to C:\HowTos\Out. Verify that the East%MessageID%.xml and West%MessageID%.xml messages have been written to the directory.</span></span>  
+5.  <span data-ttu-id="00012-200">在工具箱中，单击**连接器**。</span><span class="sxs-lookup"><span data-stu-id="00012-200">In the Toolbox, click **Connector**.</span></span> <span data-ttu-id="00012-201">将从连接**ReceiveNAOrder**到模型元素**RouteMessage**模型元素。</span><span class="sxs-lookup"><span data-stu-id="00012-201">Drag a connection from the **ReceiveNAOrder** model element to the **RouteMessage** model element.</span></span>  
+  
+6.  <span data-ttu-id="00012-202">在工具箱中，单击**连接器**。</span><span class="sxs-lookup"><span data-stu-id="00012-202">In the Toolbox, click **Connector**.</span></span> <span data-ttu-id="00012-203">将从连接**RouteMessage**到模型元素**SendNAOrder**模型元素。</span><span class="sxs-lookup"><span data-stu-id="00012-203">Drag a connection from the **RouteMessage** model element to the **SendNAOrder** model element.</span></span>  
+  
+#### <a name="to-export-the-model-to-the-itinerary-database"></a><span data-ttu-id="00012-204">若要将模型导出到路线的数据库</span><span class="sxs-lookup"><span data-stu-id="00012-204">To export the model to the itinerary database</span></span>  
+  
+1.  <span data-ttu-id="00012-205">在 Visual Studio 中，右键单击设计图面的**GlobalBankWestItinerary**路线，并单击**导出模型**。</span><span class="sxs-lookup"><span data-stu-id="00012-205">In Visual Studio, right-click the design surface of the **GlobalBankWestItinerary** itinerary, and then click **Export Model**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="9ecc2-274">尽管除外客户元素的值相同，消息已处理使用不同路线，根据路线选择器管道组件的分辨率。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-274">Though identical except for the value of the customer element, the messages were processed using different itineraries, based on the resolution of the Itinerary Selector pipeline component.</span></span>  
+    >  <span data-ttu-id="00012-206">路线已导出到行程数据库，并且现在可由路线选择器组件。</span><span class="sxs-lookup"><span data-stu-id="00012-206">The itinerary has been exported to the itinerary database and can now be used by the Itinerary Selector component.</span></span>  
   
-4.  <span data-ttu-id="9ecc2-275">在 BizTalk Server 管理控制台中，右键单击**OnRamp.Itinerary.HowTo**接收位置，并依次**禁用**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-275">In the BizTalk Server Administration Console, right-click the **OnRamp.Itinerary.HowTo** receive location, and then click **Disable**.</span></span>  
+2.  <span data-ttu-id="00012-207">保存项目的所有项目。</span><span class="sxs-lookup"><span data-stu-id="00012-207">Save all project artifacts.</span></span>  
   
-5.  <span data-ttu-id="9ecc2-276">后**OnRamp.Itinerary.HowTo**接收位置处于禁用状态，右键单击它，，然后单击**删除**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-276">After the **OnRamp.Itinerary.HowTo** receive location is disabled, right-click it, and then click **Delete**.</span></span> <span data-ttu-id="9ecc2-277">在**确认删除接收位置**对话框中，单击**是**。</span><span class="sxs-lookup"><span data-stu-id="9ecc2-277">In the **Confirm delete receive location** dialog box, click **Yes**.</span></span>  
+#### <a name="to-create-an-esb-itinerary-dsl-model-for-globalbank-east-message"></a><span data-ttu-id="00012-208">若要创建 GlobalBank 东部消息 ESB 路线 DSL 模型</span><span class="sxs-lookup"><span data-stu-id="00012-208">To create an ESB itinerary DSL model for GlobalBank East message</span></span>  
   
-## <a name="additional-resources"></a><span data-ttu-id="9ecc2-278">其他资源</span><span class="sxs-lookup"><span data-stu-id="9ecc2-278">Additional Resources</span></span>  
- <span data-ttu-id="9ecc2-279">有关详细信息，请参阅下列相关主题：</span><span class="sxs-lookup"><span data-stu-id="9ecc2-279">For more information, see the following related topics:</span></span>  
+1.  <span data-ttu-id="00012-209">在 Visual Studio 中，打开 C:\HowTos\Patterns.sln。</span><span class="sxs-lookup"><span data-stu-id="00012-209">In Visual Studio, open C:\HowTos\Patterns.sln.</span></span>  
   
--   [<span data-ttu-id="9ecc2-280">如何：拆分交换并使用不同的路线将生成的消息路由至多个文件位置</span><span class="sxs-lookup"><span data-stu-id="9ecc2-280">How to: Split an Interchange and Route the Resulting Messages to Multiple File Locations Using Distinct Itineraries</span></span>](../esb-toolkit/split-an-interchange-and-route-messages-to-multiple-locations-using-itineraries.md)  
+2.  <span data-ttu-id="00012-210">在解决方案资源管理器中右键单击**ItineraryLibrary**项目，指向**添加**，然后单击**新路线**。</span><span class="sxs-lookup"><span data-stu-id="00012-210">In Solution Explorer, right-click the **ItineraryLibrary** project, point to **Add**, and then click **New Itinerary**.</span></span>  
   
--   [<span data-ttu-id="9ecc2-281">开发活动</span><span class="sxs-lookup"><span data-stu-id="9ecc2-281">Development Activities</span></span>](../esb-toolkit/development-activities.md)  
+3.  <span data-ttu-id="00012-211">在中**添加新项**对话框中，在模板窗格中，单击**ItineraryDsl**。</span><span class="sxs-lookup"><span data-stu-id="00012-211">In the **Add New Item** dialog box, in the Templates pane, click **ItineraryDsl**.</span></span>  
   
--   [<span data-ttu-id="9ecc2-282">安装和运行动态解析示例</span><span class="sxs-lookup"><span data-stu-id="9ecc2-282">Installing and Running the Dynamic Resolution Sample</span></span>](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md)  
+4.  <span data-ttu-id="00012-212">在中**名称**框中，键入**GlobalBankEastItinerary**，然后单击**添加**。</span><span class="sxs-lookup"><span data-stu-id="00012-212">In the **Name** box, type **GlobalBankEastItinerary**, and then click **Add**.</span></span>  
   
--   [<span data-ttu-id="9ecc2-283">使用动态解析和路由</span><span class="sxs-lookup"><span data-stu-id="9ecc2-283">Using Dynamic Resolution and Routing</span></span>](../esb-toolkit/using-dynamic-resolution-and-routing.md)  
+#### <a name="to-configure-the-properties-of-the-globalbank-east-itinerary"></a><span data-ttu-id="00012-213">若要配置 GlobalBank 东部路线的属性</span><span class="sxs-lookup"><span data-stu-id="00012-213">To configure the properties of the GlobalBank East itinerary</span></span>  
   
--   [<span data-ttu-id="9ecc2-284">消息路由模式</span><span class="sxs-lookup"><span data-stu-id="9ecc2-284">Message Routing Patterns</span></span>](../esb-toolkit/message-routing-patterns.md)
+1.  <span data-ttu-id="00012-214">在 Visual Studio 中，单击的设计图面**GlobalBankEastItinerary.itinerary**。</span><span class="sxs-lookup"><span data-stu-id="00012-214">In Visual Studio, click the design surface of **GlobalBankEastItinerary.itinerary**.</span></span> <span data-ttu-id="00012-215">在中**GlobalBankEastItinerary**属性窗口中，配置以下属性：</span><span class="sxs-lookup"><span data-stu-id="00012-215">In the **GlobalBankEastItinerary** Properties window, configure the following properties:</span></span>  
+  
+    1.  <span data-ttu-id="00012-216">在中**模型导出程序**下拉列表中，单击**数据库路线导出程序**。</span><span class="sxs-lookup"><span data-stu-id="00012-216">In the **Model Exporter** drop-down list, click **Database Itinerary Exporter**.</span></span>  
+  
+    2.  <span data-ttu-id="00012-217">单击省略号按钮 （...） 下一步**行程数据库**属性。</span><span class="sxs-lookup"><span data-stu-id="00012-217">Click the ellipsis button (...) next to the **Itinerary Database** property.</span></span>  
+  
+    3.  <span data-ttu-id="00012-218">在中**连接属性**对话框中，选择承载路线的存储库数据库的 SQL 服务器，然后指定数据库的名称 (默认名称是**EsbItineraryDb**)。</span><span class="sxs-lookup"><span data-stu-id="00012-218">In the **Connection Properties** dialog box, choose the SQL Server that hosts the itinerary repository database, and then specify the name of the database (the default name is **EsbItineraryDb**).</span></span>  
+  
+2.  <span data-ttu-id="00012-219">在中**路线状态**下拉列表中，单击**已部署**。</span><span class="sxs-lookup"><span data-stu-id="00012-219">In the **Itinerary Status** drop-down list, click **Deployed**.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="00012-220">此步骤允许您将导出到一个中央存储库; 路线可以选择和接收消息时，此存储库中附加路线。</span><span class="sxs-lookup"><span data-stu-id="00012-220">This step enables you to export the itinerary to a central repository; itineraries can be selected and attached from this repository when messages are received.</span></span> <span data-ttu-id="00012-221">稍后将配置路线选择器管道组件以使用 BRI 冲突解决程序来评估入站的消息，并从此存储库中选择相应的路线。</span><span class="sxs-lookup"><span data-stu-id="00012-221">You will later configure the Itinerary Selector pipeline component to use the BRI resolver to evaluate inbound messages and select the appropriate itinerary from this repository.</span></span>  
+  
+#### <a name="to-define-the-structure-of-the-itinerary"></a><span data-ttu-id="00012-222">若要定义路线的结构</span><span class="sxs-lookup"><span data-stu-id="00012-222">To define the structure of the itinerary</span></span>  
+  
+1.  <span data-ttu-id="00012-223">从工具箱拖动**接入点**至设计图面上的模型元素。</span><span class="sxs-lookup"><span data-stu-id="00012-223">From the Toolbox, drag an **On-Ramp** model element to the design surface.</span></span> <span data-ttu-id="00012-224">在中**OnRamp1**属性窗口中，配置以下属性：</span><span class="sxs-lookup"><span data-stu-id="00012-224">In the **OnRamp1** Properties window, configure the following properties:</span></span>  
+  
+    1.  <span data-ttu-id="00012-225">单击**名称**属性，并键入**ReceiveNAOrder**。</span><span class="sxs-lookup"><span data-stu-id="00012-225">Click the **Name** property, and then type **ReceiveNAOrder**.</span></span>  
+  
+    2.  <span data-ttu-id="00012-226">在中**Extender**下拉列表中，单击**接入点 ESB 服务扩展**。</span><span class="sxs-lookup"><span data-stu-id="00012-226">In the **Extender** drop-down list, click **On-Ramp ESB Service Extension**.</span></span>  
+  
+    3.  <span data-ttu-id="00012-227">在中**BizTalk 应用程序**下拉列表中，单击**Microsoft.Practices.ESB**。</span><span class="sxs-lookup"><span data-stu-id="00012-227">In the **BizTalk Application** drop-down list, click **Microsoft.Practices.ESB**.</span></span>  
+  
+    4.  <span data-ttu-id="00012-228">在中**接收端口**下拉列表中，单击**OnRamp.Itinerary**。</span><span class="sxs-lookup"><span data-stu-id="00012-228">In the **Receive Port** drop-down list, click **OnRamp.Itinerary**.</span></span>  
+  
+2.  <span data-ttu-id="00012-229">从工具箱拖动**关闭负载增加**模型元素到设计图面，然后将它放到右侧**ReceiveNAOrder**模型元素。</span><span class="sxs-lookup"><span data-stu-id="00012-229">From the Toolbox, drag an **Off-Ramp** model element to the design surface, and then place it to the right of the **ReceiveNAOrder** model element.</span></span> <span data-ttu-id="00012-230">在中**OffRamp1**属性窗口中，配置以下属性：</span><span class="sxs-lookup"><span data-stu-id="00012-230">In the **OffRamp1** Properties window, configure the following properties:</span></span>  
+  
+    1.  <span data-ttu-id="00012-231">单击**名称**属性，并键入**SendNAOrder**。</span><span class="sxs-lookup"><span data-stu-id="00012-231">Click the **Name** property, and then type **SendNAOrder**.</span></span>  
+  
+    2.  <span data-ttu-id="00012-232">在中**Extender**下拉列表中，单击**关闭负载增加 ESB 服务扩展**。</span><span class="sxs-lookup"><span data-stu-id="00012-232">In the **Extender** drop-down list, click **Off-Ramp ESB Service Extension**.</span></span>  
+  
+    3.  <span data-ttu-id="00012-233">在中**BizTalk 应用程序**下拉列表中，单击**GlobalBank.ESB**。</span><span class="sxs-lookup"><span data-stu-id="00012-233">In the **BizTalk Application** drop-down list, click **GlobalBank.ESB**.</span></span>  
+  
+    4.  <span data-ttu-id="00012-234">在中**发送端口**下拉列表中，单击**DynamicResolutionOneWay**。</span><span class="sxs-lookup"><span data-stu-id="00012-234">In the **Send Port** drop-down list, click **DynamicResolutionOneWay**.</span></span>  
+  
+3.  <span data-ttu-id="00012-235">从工具箱拖动**路线服务**模型元素到设计图面，然后将其之间放置**ReceiveNAOrder**模型元素和**SendNAOrder**模型元素。</span><span class="sxs-lookup"><span data-stu-id="00012-235">From the Toolbox, drag an **Itinerary Service** model element to the design surface, and then place it between the **ReceiveNAOrder** model element and the **SendNAOrder** model element.</span></span> <span data-ttu-id="00012-236">在中**ItineraryService1**属性窗口中，配置以下属性：</span><span class="sxs-lookup"><span data-stu-id="00012-236">In the **ItineraryService1** Properties window, configure the following properties:</span></span>  
+  
+    1.  <span data-ttu-id="00012-237">单击**名称**属性，并键入**RouteMessage**。</span><span class="sxs-lookup"><span data-stu-id="00012-237">Click the **Name** property, and then type **RouteMessage**.</span></span>  
+  
+    2.  <span data-ttu-id="00012-238">在**路线服务 Extender**下拉列表中，单击**接入点关闭路线服务扩展**。</span><span class="sxs-lookup"><span data-stu-id="00012-238">In the **Itinerary Service Extender** drop-down list, click **Off-Ramp Itinerary Service Extension**.</span></span>  
+  
+    3.  <span data-ttu-id="00012-239">在中**关闭负载增加**下拉列表中，展开**SendNAOrder**，然后单击**发送处理程序**。</span><span class="sxs-lookup"><span data-stu-id="00012-239">In the **Off-Ramp** drop-down list, expand **SendNAOrder**, and then click **Send Handlers**.</span></span>  
+  
+4.  <span data-ttu-id="00012-240">右键单击**冲突解决程序**系列**RouteMessage**模型元素，然后单击**添加新解析程序**。</span><span class="sxs-lookup"><span data-stu-id="00012-240">Right-click the **Resolver** collection of the **RouteMessage** model element, and then click **Add new Resolver**.</span></span> <span data-ttu-id="00012-241">在中**Resolver1**属性窗口中，配置以下属性：</span><span class="sxs-lookup"><span data-stu-id="00012-241">In the **Resolver1** Properties window, configure the following properties:</span></span>  
+  
+    1.  <span data-ttu-id="00012-242">单击**名称**属性，并键入**StaticResolver**。</span><span class="sxs-lookup"><span data-stu-id="00012-242">Click the **Name** property, and then type **StaticResolver**.</span></span>  
+  
+    2.  <span data-ttu-id="00012-243">在中**解析程序实现**下拉列表中，单击**静态解析程序扩展**。</span><span class="sxs-lookup"><span data-stu-id="00012-243">In the **Resolver Implementation** drop-down list, click **Static Resolver Extension**.</span></span>  
+  
+    3.  <span data-ttu-id="00012-244">在中**传输名称**下拉列表中，单击**文件**。</span><span class="sxs-lookup"><span data-stu-id="00012-244">In the **Transport Name** drop-down list, click **FILE**.</span></span>  
+  
+    4.  <span data-ttu-id="00012-245">单击**传输位置**属性，并键入**C:\HowTos\Out\East%MessageID%.xml**。</span><span class="sxs-lookup"><span data-stu-id="00012-245">Click the **Transport Location** property, and then type **C:\HowTos\Out\East%MessageID%.xml**.</span></span>  
+  
+5.  <span data-ttu-id="00012-246">在工具箱中，单击**连接器**。</span><span class="sxs-lookup"><span data-stu-id="00012-246">In the Toolbox, click **Connector**.</span></span> <span data-ttu-id="00012-247">将从连接**ReceiveNAOrder**到模型元素**RouteMessage**模型元素。</span><span class="sxs-lookup"><span data-stu-id="00012-247">Drag a connection from the **ReceiveNAOrder** model element to the **RouteMessage** model element.</span></span>  
+  
+6.  <span data-ttu-id="00012-248">在工具箱中，单击**连接器**。</span><span class="sxs-lookup"><span data-stu-id="00012-248">In the Toolbox, click **Connector**.</span></span> <span data-ttu-id="00012-249">将从连接**RouteMessage**到模型元素**SendNAOrder**模型元素。</span><span class="sxs-lookup"><span data-stu-id="00012-249">Drag a connection from the **RouteMessage** model element to the **SendNAOrder** model element.</span></span>  
+  
+#### <a name="to-export-the-model-to-the-itinerary-database"></a><span data-ttu-id="00012-250">若要将模型导出到路线的数据库</span><span class="sxs-lookup"><span data-stu-id="00012-250">To export the model to the itinerary database</span></span>  
+  
+1.  <span data-ttu-id="00012-251">在 Visual Studio 中，右键单击设计图面的**GlobalBankEastItinerary**路线，并单击**导出模型**。</span><span class="sxs-lookup"><span data-stu-id="00012-251">In Visual Studio, right-click the design surface of the **GlobalBankEastItinerary** itinerary, and then click **Export Model**.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="00012-252">路线已导出到行程数据库，并且现在可由路线选择器组件。</span><span class="sxs-lookup"><span data-stu-id="00012-252">The itinerary has been exported to the itinerary database and can now be used by the Itinerary Selector component.</span></span>  
+  
+2.  <span data-ttu-id="00012-253">保存项目的所有项目。</span><span class="sxs-lookup"><span data-stu-id="00012-253">Save all project artifacts.</span></span>  
+  
+#### <a name="to-create-and-configure-an-esb-on-ramp"></a><span data-ttu-id="00012-254">若要创建和配置 ESB 接入点</span><span class="sxs-lookup"><span data-stu-id="00012-254">To create and configure an ESB on-ramp</span></span>  
+  
+1.  <span data-ttu-id="00012-255">单击**启动**在任务栏上，依次指向**所有程序**，指向**BizTalk Server**，然后单击**BizTalk Server 管理**。</span><span class="sxs-lookup"><span data-stu-id="00012-255">Click **Start** on the taskbar, point to **All Programs**, point to **BizTalk Server**, and then click **BizTalk Server Administration**.</span></span>  
+  
+2.  <span data-ttu-id="00012-256">在 BizTalk Server 管理控制台中，展开**BizTalk 组**，展开**应用程序**，然后展开**Microsoft.Practices.ESB**。</span><span class="sxs-lookup"><span data-stu-id="00012-256">In the BizTalk Server Administration Console, expand **BizTalk Group**, expand **Applications**, and then expand **Microsoft.Practices.ESB**.</span></span>  
+  
+3.  <span data-ttu-id="00012-257">右键单击**接收位置**，依次指向**新建**，然后单击**单向接收位置**。</span><span class="sxs-lookup"><span data-stu-id="00012-257">Right-click **Receive Locations**, point to **New**, and then click **One-way Receive Location**.</span></span>  
+  
+4.  <span data-ttu-id="00012-258">在中**选择接收端口**对话框中，单击**OnRamp.Itinerary**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="00012-258">In the **Select a Receive Port** dialog box, click **OnRamp.Itinerary**, and then click **OK**.</span></span>  
+  
+5.  <span data-ttu-id="00012-259">在中**接收位置属性**对话框中**名称**框中，键入**OnRamp.Itinerary.HowTo**。</span><span class="sxs-lookup"><span data-stu-id="00012-259">In the **Receive Location Properties** dialog box, in the **Name** box, type **OnRamp.Itinerary.HowTo**.</span></span>  
+  
+6.  <span data-ttu-id="00012-260">在中**类型**下拉列表中，单击**文件**，然后单击**配置**。</span><span class="sxs-lookup"><span data-stu-id="00012-260">In the **Type** drop-down list, click **FILE**, and then click **Configure**.</span></span>  
+  
+7.  <span data-ttu-id="00012-261">在中**FILE 传输属性**对话框中**接收文件夹**框中，键入**C:\HowTos\DropFolder**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="00012-261">In the **FILE Transport Properties** dialog box, in the **Receive folder** box, type **C:\HowTos\DropFolder**, and then click **OK**.</span></span>  
+  
+#### <a name="to-configure-the-itinerary-selector-pipeline-component"></a><span data-ttu-id="00012-262">若要配置路线选择器管道组件</span><span class="sxs-lookup"><span data-stu-id="00012-262">To configure the Itinerary Selector pipeline component</span></span>  
+  
+1.  <span data-ttu-id="00012-263">在中**接收位置属性**对话框中**接收管道**下拉列表中，单击**ItinerarySelectReceiveXml**，然后单击省略号按钮 （...).</span><span class="sxs-lookup"><span data-stu-id="00012-263">In the **Receive Location Properties** dialog box, in the **Receive pipeline** drop-down list, click **ItinerarySelectReceiveXml**, and then click the ellipsis button (...).</span></span>  
+  
+2.  <span data-ttu-id="00012-264">使用**配置管道**对话框可以配置以下**路线选择器**组件属性：</span><span class="sxs-lookup"><span data-stu-id="00012-264">Use the **Configure Pipeline** dialog box to configure the following **Itinerary Selector** component properties:</span></span>  
+  
+    1.  <span data-ttu-id="00012-265">单击**ItineraryFactKey**属性，并键入**Resolver.Itinerary**。</span><span class="sxs-lookup"><span data-stu-id="00012-265">Click the **ItineraryFactKey** property, and then type **Resolver.Itinerary**.</span></span>  
+  
+    2.  <span data-ttu-id="00012-266">单击**ResolverConnectionString**属性，并键入**BRI:\\\policy=ResolveItineraryBasedOnCustomer;useMsg=true;recognizeMessageFormat=true;**</span><span class="sxs-lookup"><span data-stu-id="00012-266">Click the **ResolverConnectionString** property, and then type **BRI:\\\policy=ResolveItineraryBasedOnCustomer;useMsg=true;recognizeMessageFormat=true;**</span></span>  
+  
+    3.  <span data-ttu-id="00012-267">单击**确定**以关闭**配置管道**对话框。</span><span class="sxs-lookup"><span data-stu-id="00012-267">Click **OK** to close the **Configure Pipeline** dialog box.</span></span>  
+  
+3.  <span data-ttu-id="00012-268">单击**确定**以关闭**接收位置属性**对话框。</span><span class="sxs-lookup"><span data-stu-id="00012-268">Click **OK** to close the **Receive Location Properties** dialog box.</span></span>  
+  
+4.  <span data-ttu-id="00012-269">在 BizTalk Server 管理控制台中，右键单击**OnRamp.Itinerary.HowTo**接收位置，然后依次**启用**。</span><span class="sxs-lookup"><span data-stu-id="00012-269">In the BizTalk Server Administration Console, right-click the **OnRamp.Itinerary.HowTo** receive location, and then click **Enable**.</span></span>  
+  
+#### <a name="to-test-the-itinerary-selector-and-business-rules"></a><span data-ttu-id="00012-270">若要测试的路线选择器和业务规则</span><span class="sxs-lookup"><span data-stu-id="00012-270">To test the itinerary selector and business rules</span></span>  
+  
+1.  <span data-ttu-id="00012-271">在 Windows 资源管理器，浏览到 C:\HowTos。</span><span class="sxs-lookup"><span data-stu-id="00012-271">In Windows Explorer, browse to C:\HowTos.</span></span>  
+  
+2.  <span data-ttu-id="00012-272">复制 （不移动） 到 DropFolder 文件夹 East.xml 和 West.xml 的文件。</span><span class="sxs-lookup"><span data-stu-id="00012-272">Copy (do not move) the files East.xml and West.xml to the DropFolder folder.</span></span>  
+  
+3.  <span data-ttu-id="00012-273">浏览到 C:\HowTos\Out。验证已将 East%MessageID%.xml 和 West%MessageID%.xml 消息写入到目录。</span><span class="sxs-lookup"><span data-stu-id="00012-273">Browse to C:\HowTos\Out. Verify that the East%MessageID%.xml and West%MessageID%.xml messages have been written to the directory.</span></span>  
+  
+    > [!NOTE]
+    >  <span data-ttu-id="00012-274">除了客户元素的值完全相同，但使用不同路线，路线选择器管道组件的分辨率处理消息。</span><span class="sxs-lookup"><span data-stu-id="00012-274">Though identical except for the value of the customer element, the messages were processed using different itineraries, based on the resolution of the Itinerary Selector pipeline component.</span></span>  
+  
+4.  <span data-ttu-id="00012-275">在 BizTalk Server 管理控制台中，右键单击**OnRamp.Itinerary.HowTo**接收位置，然后依次**禁用**。</span><span class="sxs-lookup"><span data-stu-id="00012-275">In the BizTalk Server Administration Console, right-click the **OnRamp.Itinerary.HowTo** receive location, and then click **Disable**.</span></span>  
+  
+5.  <span data-ttu-id="00012-276">之后**OnRamp.Itinerary.HowTo**接收位置被禁用，右键单击它，并单击**删除**。</span><span class="sxs-lookup"><span data-stu-id="00012-276">After the **OnRamp.Itinerary.HowTo** receive location is disabled, right-click it, and then click **Delete**.</span></span> <span data-ttu-id="00012-277">在中**确认删除接收位置**对话框中，单击**是**。</span><span class="sxs-lookup"><span data-stu-id="00012-277">In the **Confirm delete receive location** dialog box, click **Yes**.</span></span>  
+  
+## <a name="additional-resources"></a><span data-ttu-id="00012-278">其他资源</span><span class="sxs-lookup"><span data-stu-id="00012-278">Additional Resources</span></span>  
+ <span data-ttu-id="00012-279">有关详细信息，请参阅下列相关主题：</span><span class="sxs-lookup"><span data-stu-id="00012-279">For more information, see the following related topics:</span></span>  
+  
+-   [<span data-ttu-id="00012-280">如何：拆分交换并使用不同的路线将生成的消息路由至多个文件位置</span><span class="sxs-lookup"><span data-stu-id="00012-280">How to: Split an Interchange and Route the Resulting Messages to Multiple File Locations Using Distinct Itineraries</span></span>](../esb-toolkit/split-an-interchange-and-route-messages-to-multiple-locations-using-itineraries.md)  
+  
+-   [<span data-ttu-id="00012-281">开发活动</span><span class="sxs-lookup"><span data-stu-id="00012-281">Development Activities</span></span>](../esb-toolkit/development-activities.md)  
+  
+-   [<span data-ttu-id="00012-282">安装和运行动态解析示例</span><span class="sxs-lookup"><span data-stu-id="00012-282">Installing and Running the Dynamic Resolution Sample</span></span>](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md)  
+  
+-   [<span data-ttu-id="00012-283">使用动态解析和路由</span><span class="sxs-lookup"><span data-stu-id="00012-283">Using Dynamic Resolution and Routing</span></span>](../esb-toolkit/using-dynamic-resolution-and-routing.md)  
+  
+-   [<span data-ttu-id="00012-284">消息路由模式</span><span class="sxs-lookup"><span data-stu-id="00012-284">Message Routing Patterns</span></span>](../esb-toolkit/message-routing-patterns.md)

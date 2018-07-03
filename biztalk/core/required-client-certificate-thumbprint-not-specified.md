@@ -1,5 +1,5 @@
 ---
-title: 所需未指定的客户端证书指纹 |Microsoft 文档
+title: 指定必需的客户端证书指纹不 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,52 +12,52 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 17eb34655ab0acd379e493540f8cd0922e5d8be9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4bea510fba1a9c4ab972229042e7af1e22cc2ad8
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269365"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36993470"
 ---
-# <a name="required-client-certificate-thumbprint-not-specified"></a><span data-ttu-id="d9b4f-102">未指定必需的客户端证书指纹</span><span class="sxs-lookup"><span data-stu-id="d9b4f-102">Required client certificate thumbprint not specified</span></span>
-## <a name="details"></a><span data-ttu-id="d9b4f-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="d9b4f-103">Details</span></span>  
+# <a name="required-client-certificate-thumbprint-not-specified"></a><span data-ttu-id="eb72d-102">未指定必需的客户端证书指纹</span><span class="sxs-lookup"><span data-stu-id="eb72d-102">Required client certificate thumbprint not specified</span></span>
+## <a name="details"></a><span data-ttu-id="eb72d-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="eb72d-103">Details</span></span>  
   
-|||  
-|-|-|  
-|<span data-ttu-id="d9b4f-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="d9b4f-104">Product Name</span></span>|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|<span data-ttu-id="d9b4f-105">产品版本</span><span class="sxs-lookup"><span data-stu-id="d9b4f-105">Product Version</span></span>|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
-|<span data-ttu-id="d9b4f-106">事件 ID</span><span class="sxs-lookup"><span data-stu-id="d9b4f-106">Event ID</span></span>|<span data-ttu-id="d9b4f-107">0</span><span class="sxs-lookup"><span data-stu-id="d9b4f-107">0</span></span>|  
-|<span data-ttu-id="d9b4f-108">事件源</span><span class="sxs-lookup"><span data-stu-id="d9b4f-108">Event Source</span></span>|<span data-ttu-id="d9b4f-109">0</span><span class="sxs-lookup"><span data-stu-id="d9b4f-109">0</span></span>|  
-|<span data-ttu-id="d9b4f-110">组件</span><span class="sxs-lookup"><span data-stu-id="d9b4f-110">Component</span></span>|<span data-ttu-id="d9b4f-111">0</span><span class="sxs-lookup"><span data-stu-id="d9b4f-111">0</span></span>|  
-|<span data-ttu-id="d9b4f-112">符号名称</span><span class="sxs-lookup"><span data-stu-id="d9b4f-112">Symbolic Name</span></span>|<span data-ttu-id="d9b4f-113">0</span><span class="sxs-lookup"><span data-stu-id="d9b4f-113">0</span></span>|  
-|<span data-ttu-id="d9b4f-114">消息正文</span><span class="sxs-lookup"><span data-stu-id="d9b4f-114">Message Text</span></span>|<span data-ttu-id="d9b4f-115">未指定所需的客户端证书指纹。</span><span class="sxs-lookup"><span data-stu-id="d9b4f-115">Required client certificate thumbprint not specified.</span></span>|  
+|                 |                                                                                    |
+|-----------------|------------------------------------------------------------------------------------|
+|  <span data-ttu-id="eb72d-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="eb72d-104">Product Name</span></span>   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] |
+| <span data-ttu-id="eb72d-105">产品版本</span><span class="sxs-lookup"><span data-stu-id="eb72d-105">Product Version</span></span> |             [!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]             |
+|    <span data-ttu-id="eb72d-106">事件 ID</span><span class="sxs-lookup"><span data-stu-id="eb72d-106">Event ID</span></span>     |                                         <span data-ttu-id="eb72d-107">0</span><span class="sxs-lookup"><span data-stu-id="eb72d-107">0</span></span>                                          |
+|  <span data-ttu-id="eb72d-108">事件源</span><span class="sxs-lookup"><span data-stu-id="eb72d-108">Event Source</span></span>   |                                         <span data-ttu-id="eb72d-109">0</span><span class="sxs-lookup"><span data-stu-id="eb72d-109">0</span></span>                                          |
+|    <span data-ttu-id="eb72d-110">组件</span><span class="sxs-lookup"><span data-stu-id="eb72d-110">Component</span></span>    |                                         <span data-ttu-id="eb72d-111">0</span><span class="sxs-lookup"><span data-stu-id="eb72d-111">0</span></span>                                          |
+|  <span data-ttu-id="eb72d-112">符号名称</span><span class="sxs-lookup"><span data-stu-id="eb72d-112">Symbolic Name</span></span>  |                                         <span data-ttu-id="eb72d-113">0</span><span class="sxs-lookup"><span data-stu-id="eb72d-113">0</span></span>                                          |
+|  <span data-ttu-id="eb72d-114">消息正文</span><span class="sxs-lookup"><span data-stu-id="eb72d-114">Message Text</span></span>   |               <span data-ttu-id="eb72d-115">未指定所需的客户端证书指纹。</span><span class="sxs-lookup"><span data-stu-id="eb72d-115">Required client certificate thumbprint not specified.</span></span>                |
   
-## <a name="explanation"></a><span data-ttu-id="d9b4f-116">解释</span><span class="sxs-lookup"><span data-stu-id="d9b4f-116">Explanation</span></span>  
- <span data-ttu-id="d9b4f-117">您未设置 WCF 发送端口的安全设置所需的客户端证书属性。</span><span class="sxs-lookup"><span data-stu-id="d9b4f-117">You did not set the Client certificate property required for the security settings of a WCF send port.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="eb72d-116">解释</span><span class="sxs-lookup"><span data-stu-id="eb72d-116">Explanation</span></span>  
+ <span data-ttu-id="eb72d-117">您未设置 WCF 发送端口的安全设置所需的客户端证书属性。</span><span class="sxs-lookup"><span data-stu-id="eb72d-117">You did not set the Client certificate property required for the security settings of a WCF send port.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="d9b4f-118">用户操作</span><span class="sxs-lookup"><span data-stu-id="d9b4f-118">User Action</span></span>  
- <span data-ttu-id="d9b4f-119">使用以下过程配置 WCF 发送端口的安全设置。</span><span class="sxs-lookup"><span data-stu-id="d9b4f-119">Use the following procedure to configure security settings of a WCF send port.</span></span>  
+## <a name="user-action"></a><span data-ttu-id="eb72d-118">用户操作</span><span class="sxs-lookup"><span data-stu-id="eb72d-118">User Action</span></span>  
+ <span data-ttu-id="eb72d-119">使用以下过程配置 WCF 发送端口的安全设置。</span><span class="sxs-lookup"><span data-stu-id="eb72d-119">Use the following procedure to configure security settings of a WCF send port.</span></span>  
   
-#### <a name="to-configure-security-settings"></a><span data-ttu-id="d9b4f-120">配置安全设置</span><span class="sxs-lookup"><span data-stu-id="d9b4f-120">To configure security settings</span></span>  
+#### <a name="to-configure-security-settings"></a><span data-ttu-id="eb72d-120">配置安全设置</span><span class="sxs-lookup"><span data-stu-id="eb72d-120">To configure security settings</span></span>  
   
-1.  <span data-ttu-id="d9b4f-121">单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。</span><span class="sxs-lookup"><span data-stu-id="d9b4f-121">Click **Start**, click **All Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and click **BizTalk Server Administration**.</span></span>  
+1. <span data-ttu-id="eb72d-121">单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。</span><span class="sxs-lookup"><span data-stu-id="eb72d-121">Click **Start**, click **All Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and click **BizTalk Server Administration**.</span></span>  
   
-2.  <span data-ttu-id="d9b4f-122">在控制台根目录中，展开[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，展开**BizTalk 组**，然后展开**应用程序**。</span><span class="sxs-lookup"><span data-stu-id="d9b4f-122">In the Console Root, expand [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], expand **BizTalk Group**, and expand  **Applications**.</span></span>  
+2. <span data-ttu-id="eb72d-122">在控制台根目录中，展开[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，展开**BizTalk 组**，然后展开**应用程序**。</span><span class="sxs-lookup"><span data-stu-id="eb72d-122">In the Console Root, expand [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], expand **BizTalk Group**, and expand  **Applications**.</span></span>  
   
-3.  <span data-ttu-id="d9b4f-123">找到应用程序，然后找到您的传输。</span><span class="sxs-lookup"><span data-stu-id="d9b4f-123">Locate your application and then locate your transport.</span></span>  
+3. <span data-ttu-id="eb72d-123">找到你的应用程序，然后找到您的传输。</span><span class="sxs-lookup"><span data-stu-id="eb72d-123">Locate your application and then locate your transport.</span></span>  
   
-4.  <span data-ttu-id="d9b4f-124">右键单击传输名称。</span><span class="sxs-lookup"><span data-stu-id="d9b4f-124">Right-click the transport name.</span></span>  
+4. <span data-ttu-id="eb72d-124">右键单击传输名称。</span><span class="sxs-lookup"><span data-stu-id="eb72d-124">Right-click the transport name.</span></span>  
   
-5.  <span data-ttu-id="d9b4f-125">单击 **“属性”**。</span><span class="sxs-lookup"><span data-stu-id="d9b4f-125">Click **Properties**.</span></span>  
+5. <span data-ttu-id="eb72d-125">单击 **“属性”**。</span><span class="sxs-lookup"><span data-stu-id="eb72d-125">Click **Properties**.</span></span>  
   
-6.  <span data-ttu-id="d9b4f-126">在端口**类型**列表中，选择正确的端口。</span><span class="sxs-lookup"><span data-stu-id="d9b4f-126">In the port **Type** list, select the correct port.</span></span>  
+6. <span data-ttu-id="eb72d-126">在端口**类型**列表中，选择正确的端口。</span><span class="sxs-lookup"><span data-stu-id="eb72d-126">In the port **Type** list, select the correct port.</span></span>  
   
-7.  <span data-ttu-id="d9b4f-127">单击**配置**。</span><span class="sxs-lookup"><span data-stu-id="d9b4f-127">Click **Configure**.</span></span>  
+7. <span data-ttu-id="eb72d-127">单击**配置**。</span><span class="sxs-lookup"><span data-stu-id="eb72d-127">Click **Configure**.</span></span>  
   
-8.  <span data-ttu-id="d9b4f-128">在**WCF [***传输类型***] 传输属性**对话框中，单击**安全**选项卡。</span><span class="sxs-lookup"><span data-stu-id="d9b4f-128">In the **WCF [***transport type***] Transport Properties** dialog box, click the **Security** tab.</span></span>  
+8. <span data-ttu-id="eb72d-128">在中**WCF [**<em>传输类型</em>**] 传输属性**对话框中，单击**安全**选项卡。</span><span class="sxs-lookup"><span data-stu-id="eb72d-128">In the **WCF [**<em>transport type</em>**] Transport Properties** dialog box, click the **Security** tab.</span></span>  
   
-9. <span data-ttu-id="d9b4f-129">确保**客户端证书**属性配置。</span><span class="sxs-lookup"><span data-stu-id="d9b4f-129">Ensure that the **Client certificate** property is configured.</span></span>  
+9. <span data-ttu-id="eb72d-129">絋粄**客户端证书**配置属性。</span><span class="sxs-lookup"><span data-stu-id="eb72d-129">Ensure that the **Client certificate** property is configured.</span></span>  
   
- <span data-ttu-id="d9b4f-130">有关证书的其他信息，请参阅以下资源：</span><span class="sxs-lookup"><span data-stu-id="d9b4f-130">For additional information on certificates, see the following resource:</span></span>  
+   <span data-ttu-id="eb72d-130">有关证书的其他信息，请参阅以下资源：</span><span class="sxs-lookup"><span data-stu-id="eb72d-130">For additional information on certificates, see the following resource:</span></span>  
   
--   [<span data-ttu-id="d9b4f-131">将证书安装适用于这些 WCF 适配器</span><span class="sxs-lookup"><span data-stu-id="d9b4f-131">Installing Certificates for the WCF Adapters</span></span>](../core/installing-certificates-for-the-wcf-adapters.md)
+-   [<span data-ttu-id="eb72d-131">安装用于 WCF 适配器的证书</span><span class="sxs-lookup"><span data-stu-id="eb72d-131">Installing Certificates for the WCF Adapters</span></span>](../core/installing-certificates-for-the-wcf-adapters.md)

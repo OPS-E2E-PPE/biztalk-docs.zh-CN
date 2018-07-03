@@ -1,5 +1,5 @@
 ---
-title: 步骤 3： 测试迁移使用的应用程序的 SQL 适配器 |Microsoft 文档
+title: 步骤 3： 测试使用 SQL 适配器的迁移应用程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,54 +12,54 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 32314638b3352dccb2c30eb0b99a4d328d22b092
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 0c2487c6bdf05ae926b8bb962ed9dae6c770298e
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25964019"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36973286"
 ---
-# <a name="step-3-test-the-migrated-application-that-uses-the-sql-adapter"></a><span data-ttu-id="24532-102">步骤 3： 测试迁移使用的应用程序的 SQL 适配器</span><span class="sxs-lookup"><span data-stu-id="24532-102">Step 3: Test the Migrated Application that uses the SQL adapter</span></span>
-<span data-ttu-id="24532-103">![步骤 3 / 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span><span class="sxs-lookup"><span data-stu-id="24532-103">![Step 3 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span></span>  
+# <a name="step-3-test-the-migrated-application-that-uses-the-sql-adapter"></a><span data-ttu-id="e5cd0-102">步骤 3： 测试迁移应用程序使用 SQL 适配器</span><span class="sxs-lookup"><span data-stu-id="e5cd0-102">Step 3: Test the Migrated Application that uses the SQL adapter</span></span>
+<span data-ttu-id="e5cd0-103">![第 3 部分，共 3 步](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span><span class="sxs-lookup"><span data-stu-id="e5cd0-103">![Step 3 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span></span>  
   
- <span data-ttu-id="24532-104">**完成时间：** 5 分钟</span><span class="sxs-lookup"><span data-stu-id="24532-104">**Time to complete:** 5 minutes</span></span>  
+ <span data-ttu-id="e5cd0-104">**完成时间：** 5 分钟</span><span class="sxs-lookup"><span data-stu-id="e5cd0-104">**Time to complete:** 5 minutes</span></span>  
   
- <span data-ttu-id="24532-105">**目标：** 在此步骤中，将测试已迁移应用程序，通过执行对 Customer 表的插入操作。</span><span class="sxs-lookup"><span data-stu-id="24532-105">**Objective:** In this step, you will test the migrated application by performing an Insert operation on the Customer table.</span></span> <span data-ttu-id="24532-106">若要执行此操作，你可以删除符合架构使用 vPrev 生成的请求消息[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="24532-106">To do this, you drop a request message that conforms to the schema generated using the vPrev [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span>  
+ <span data-ttu-id="e5cd0-105">**目标：** 在此步骤中，您将通过执行插入操作的客户表上测试已迁移应用程序。</span><span class="sxs-lookup"><span data-stu-id="e5cd0-105">**Objective:** In this step, you will test the migrated application by performing an Insert operation on the Customer table.</span></span> <span data-ttu-id="e5cd0-106">若要执行此操作，应删除与使用 vPrev 生成的架构一致的请求消息[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="e5cd0-106">To do this, you drop a request message that conforms to the schema generated using the vPrev [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span>  
   
-## <a name="prerequisites"></a><span data-ttu-id="24532-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="24532-107">Prerequisites</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="e5cd0-107">必要條件</span><span class="sxs-lookup"><span data-stu-id="e5cd0-107">Prerequisites</span></span>  
   
--   <span data-ttu-id="24532-108">通过将 BizTalk 业务流程中的逻辑端口映射到在 BizTalk Server 管理控制台中的物理端口来配置 BizTalk 应用程序。</span><span class="sxs-lookup"><span data-stu-id="24532-108">Configure the BizTalk application by mapping the logical ports in the BizTalk orchestration to physical ports in the BizTalk Server Administration console.</span></span>  
+- <span data-ttu-id="e5cd0-108">通过将 BizTalk 业务流程中的逻辑端口映射到物理端口在 BizTalk Server 管理控制台中配置的 BizTalk 应用程序。</span><span class="sxs-lookup"><span data-stu-id="e5cd0-108">Configure the BizTalk application by mapping the logical ports in the BizTalk orchestration to physical ports in the BizTalk Server Administration console.</span></span>  
   
--   <span data-ttu-id="24532-109">配置 BizTalk 应用程序使用 WCF 自定义发送端口进行基于 WCF 的[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="24532-109">Configure the BizTalk application to use the WCF-Custom send port for the WCF-based [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span>  
+- <span data-ttu-id="e5cd0-109">配置 BizTalk 应用程序要用于 Wcf-custom 发送端口基于 WCF 的[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="e5cd0-109">Configure the BizTalk application to use the WCF-Custom send port for the WCF-based [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span>  
   
-### <a name="to-test-the-migrated-application"></a><span data-ttu-id="24532-110">测试已迁移应用程序</span><span class="sxs-lookup"><span data-stu-id="24532-110">To test the migrated application</span></span>  
+### <a name="to-test-the-migrated-application"></a><span data-ttu-id="e5cd0-110">若要测试已迁移应用程序</span><span class="sxs-lookup"><span data-stu-id="e5cd0-110">To test the migrated application</span></span>  
   
-1.  <span data-ttu-id="24532-111">创建请求符合 vPrev 所生成的架构的 XML [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="24532-111">Create a request XML that conforms to the schema generated by the vPrev [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span> <span data-ttu-id="24532-112">使用出站映射，WCF 自定义发送端口将这以符合为基于 WCF 的架构[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]并将其发送到 SQL Server 数据库。</span><span class="sxs-lookup"><span data-stu-id="24532-112">Using the outbound map, the WCF-Custom send port converts this to conform to the schema for the WCF-based [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] and sends it to the SQL Server database.</span></span>  
+1. <span data-ttu-id="e5cd0-111">创建请求符合由 vPrev 生成架构的 XML [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="e5cd0-111">Create a request XML that conforms to the schema generated by the vPrev [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span> <span data-ttu-id="e5cd0-112">使用出站映射时，WCF 自定义发送端口将此选项以符合架构的基于 WCF 的[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]并将其发送到 SQL Server 数据库。</span><span class="sxs-lookup"><span data-stu-id="e5cd0-112">Using the outbound map, the WCF-Custom send port converts this to conform to the schema for the WCF-based [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] and sends it to the SQL Server database.</span></span>  
   
-    ```  
-    <Insert xmlns="http://SQLInsert">  
-      <sync>  
-        <after>  
-          <CustomerTable Name="John" />  
-        </after>  
-      </sync>  
-    </Insert>  
-    ```  
+   ```  
+   <Insert xmlns="http://SQLInsert">  
+     <sync>  
+       <after>  
+         <CustomerTable Name="John" />  
+       </after>  
+     </sync>  
+   </Insert>  
+   ```  
   
-2.  <span data-ttu-id="24532-113">粘贴到映射到文件的文件夹的请求消息接收位置。</span><span class="sxs-lookup"><span data-stu-id="24532-113">Paste the request message to the folder that is mapped to the file receive location.</span></span>  
+2. <span data-ttu-id="e5cd0-113">粘贴到映射到文件的文件夹的请求消息的接收位置。</span><span class="sxs-lookup"><span data-stu-id="e5cd0-113">Paste the request message to the folder that is mapped to the file receive location.</span></span>  
   
-3.  <span data-ttu-id="24532-114">业务流程使用请求消息，并将其发送到 SQL Server 数据库。</span><span class="sxs-lookup"><span data-stu-id="24532-114">The orchestration consumes the request message and sends it to the SQL Server database.</span></span> <span data-ttu-id="24532-115">在与基于 WCF 的架构一致的架构中接收从 SQL Server 数据库响应[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="24532-115">The response from the SQL Server database is received in the schema that conforms to the schema of the WCF-based [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span> <span data-ttu-id="24532-116">使用入站的映射，WCF 自定义发送端口将这 vPrev 的架构[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="24532-116">Using the inbound map, the WCF-Custom send port converts this to the schema for the vPrev [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span> <span data-ttu-id="24532-117">从 SQL Server 数据库响应保存到定义为业务流程的一部分的其他文件位置。</span><span class="sxs-lookup"><span data-stu-id="24532-117">The response from the SQL Server database is saved to the other file location defined as part of the orchestration.</span></span> <span data-ttu-id="24532-118">前面的请求消息的响应是：</span><span class="sxs-lookup"><span data-stu-id="24532-118">The response for the preceding request message is:</span></span>  
+3. <span data-ttu-id="e5cd0-114">业务流程使用请求消息，并将其发送到 SQL Server 数据库。</span><span class="sxs-lookup"><span data-stu-id="e5cd0-114">The orchestration consumes the request message and sends it to the SQL Server database.</span></span> <span data-ttu-id="e5cd0-115">在与基于 WCF 的架构一致的架构中收到从 SQL Server 数据库响应[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="e5cd0-115">The response from the SQL Server database is received in the schema that conforms to the schema of the WCF-based [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span> <span data-ttu-id="e5cd0-116">使用入站的映射时，WCF 自定义发送端口将此 vPrev 架构[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="e5cd0-116">Using the inbound map, the WCF-Custom send port converts this to the schema for the vPrev [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].</span></span> <span data-ttu-id="e5cd0-117">从 SQL Server 数据库响应保存到其他文件位置定义为业务流程的一部分。</span><span class="sxs-lookup"><span data-stu-id="e5cd0-117">The response from the SQL Server database is saved to the other file location defined as part of the orchestration.</span></span> <span data-ttu-id="e5cd0-118">前面的请求消息的响应是：</span><span class="sxs-lookup"><span data-stu-id="e5cd0-118">The response for the preceding request message is:</span></span>  
   
-    ```  
-    <?xml version="1.0" encoding="utf-8" ?>   
-    <InsertResponse xmlns="http://SQLInsert">  
-      <Success>  
-        <long xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">101</long>   
-      </Success>  
-    </InsertResponse>  
-    ```  
+   ```  
+   <?xml version="1.0" encoding="utf-8" ?>   
+   <InsertResponse xmlns="http://SQLInsert">  
+     <Success>  
+       <long xmlns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">101</long>   
+     </Success>  
+   </InsertResponse>  
+   ```  
   
-     <span data-ttu-id="24532-119">在前面的响应中，"101"是标识列插入 Customer 表中的值。</span><span class="sxs-lookup"><span data-stu-id="24532-119">In the preceding response, “101” is the value of the identity column inserted in the Customer table.</span></span>  
+    <span data-ttu-id="e5cd0-119">在前面的响应中，"101"是标识列插入 Customer 表中的值。</span><span class="sxs-lookup"><span data-stu-id="e5cd0-119">In the preceding response, “101” is the value of the identity column inserted in the Customer table.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="24532-120">另请参阅</span><span class="sxs-lookup"><span data-stu-id="24532-120">See Also</span></span>  
- [<span data-ttu-id="24532-121">教程 1： 将 BizTalk 项目迁移到 SQL 适配器</span><span class="sxs-lookup"><span data-stu-id="24532-121">Tutorial 1: Migrate BizTalk Projects to the SQL adapter</span></span>](../../adapters-and-accelerators/adapter-sql/tutorial-1-migrate-biztalk-projects-to-the-sql-adapter.md)
+## <a name="see-also"></a><span data-ttu-id="e5cd0-120">请参阅</span><span class="sxs-lookup"><span data-stu-id="e5cd0-120">See Also</span></span>  
+ [<span data-ttu-id="e5cd0-121">教程 1： 将 BizTalk 项目迁移到 SQL 适配器</span><span class="sxs-lookup"><span data-stu-id="e5cd0-121">Tutorial 1: Migrate BizTalk Projects to the SQL adapter</span></span>](../../adapters-and-accelerators/adapter-sql/tutorial-1-migrate-biztalk-projects-to-the-sql-adapter.md)

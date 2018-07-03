@@ -1,5 +1,5 @@
 ---
-title: 接收使用 WCF 服务 Model1 Oracle 数据库更改通知 |Microsoft 文档
+title: Oracle 数据库使用接收更改通知 WCF 服务 Model1 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,44 +12,44 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed8723cef3351420cbe35e0f9fc85d2ba400b410
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d980b13224918ae66d4ae35ec67f1bf3c3dba8ca
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22217045"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36971086"
 ---
-# <a name="receive-oracle-database-change-notifications-using-the-wcf-service-model1"></a><span data-ttu-id="39b44-102">接收使用 WCF 服务 Model1 Oracle 数据库更改通知</span><span class="sxs-lookup"><span data-stu-id="39b44-102">Receive Oracle Database Change Notifications Using the WCF Service Model1</span></span>
-<span data-ttu-id="39b44-103">本主题演示如何配置[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]从 Oracle 数据库接收查询通知消息。</span><span class="sxs-lookup"><span data-stu-id="39b44-103">This topic demonstrates how to configure the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] to receive query notification messages from an Oracle database.</span></span> <span data-ttu-id="39b44-104">为了演示通知，考虑一个表，ACCOUNTACTIVITY，与"处理"列。</span><span class="sxs-lookup"><span data-stu-id="39b44-104">To demonstrate notifications, consider a table, ACCOUNTACTIVITY, with a “Processed” column.</span></span> <span data-ttu-id="39b44-105">一条新记录插入到此表时，状态列的值设置为 ' n '。</span><span class="sxs-lookup"><span data-stu-id="39b44-105">When a new record is inserted to this table, the value of the Status column is set to ‘n’.</span></span> <span data-ttu-id="39b44-106">你可以配置要通过使用 SQL 语句，以检索具有与"处理"列的所有记录的通知注册接收通知的适配器 ' n '。</span><span class="sxs-lookup"><span data-stu-id="39b44-106">You can configure the adapter to receive notifications by registering for notifications using a SQL statement that retrieves all records that have “Processed” column as ‘n’.</span></span> <span data-ttu-id="39b44-107">你可以通过指定的 SQL 语句来实现**NotificationStatement**绑定属性。</span><span class="sxs-lookup"><span data-stu-id="39b44-107">You can do so by specifying the SQL statement for the **NotificationStatement** binding property.</span></span> <span data-ttu-id="39b44-108">一旦适配器客户端收到通知，它可以包含执行对 Oracle 数据库的任何后续任务的逻辑。</span><span class="sxs-lookup"><span data-stu-id="39b44-108">Once the adapter client receives the notification, it can contain the logic to do any subsequent tasks on the Oracle database.</span></span> <span data-ttu-id="39b44-109">在此示例中，为简单起见，适配器客户端列出具有的"处理"列的表中的所有记录 ' n '。</span><span class="sxs-lookup"><span data-stu-id="39b44-109">In this example, for the sake of simplicity, the adapter client lists all the records in the table that have the “Processed” column as ‘n’.</span></span>  
+# <a name="receive-oracle-database-change-notifications-using-the-wcf-service-model1"></a><span data-ttu-id="ca37d-102">接收使用 WCF 服务 Model1 Oracle 数据库更改通知</span><span class="sxs-lookup"><span data-stu-id="ca37d-102">Receive Oracle Database Change Notifications Using the WCF Service Model1</span></span>
+<span data-ttu-id="ca37d-103">本主题演示如何配置[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]从 Oracle 数据库接收查询通知消息。</span><span class="sxs-lookup"><span data-stu-id="ca37d-103">This topic demonstrates how to configure the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] to receive query notification messages from an Oracle database.</span></span> <span data-ttu-id="ca37d-104">为了演示通知，请考虑表中的，ACCOUNTACTIVITY，"处理"列。</span><span class="sxs-lookup"><span data-stu-id="ca37d-104">To demonstrate notifications, consider a table, ACCOUNTACTIVITY, with a “Processed” column.</span></span> <span data-ttu-id="ca37d-105">一条新记录插入到此表时，状态列的值设置为 ' n '。</span><span class="sxs-lookup"><span data-stu-id="ca37d-105">When a new record is inserted to this table, the value of the Status column is set to ‘n’.</span></span> <span data-ttu-id="ca37d-106">可以配置要通过使用用于检索具有与"处理"列的所有记录的 SQL 语句注册通知接收通知的适配器 ' n '。</span><span class="sxs-lookup"><span data-stu-id="ca37d-106">You can configure the adapter to receive notifications by registering for notifications using a SQL statement that retrieves all records that have “Processed” column as ‘n’.</span></span> <span data-ttu-id="ca37d-107">您可以通过指定的 SQL 语句来实现**NotificationStatement**属性绑定。</span><span class="sxs-lookup"><span data-stu-id="ca37d-107">You can do so by specifying the SQL statement for the **NotificationStatement** binding property.</span></span> <span data-ttu-id="ca37d-108">一旦适配器客户端收到通知，它可以包含用于执行对 Oracle 数据库的所有后续任务的逻辑。</span><span class="sxs-lookup"><span data-stu-id="ca37d-108">Once the adapter client receives the notification, it can contain the logic to do any subsequent tasks on the Oracle database.</span></span> <span data-ttu-id="ca37d-109">在此示例中，为简单起见，适配器客户端列出具有"处理"列作为表中的所有记录 ' n '。</span><span class="sxs-lookup"><span data-stu-id="ca37d-109">In this example, for the sake of simplicity, the adapter client lists all the records in the table that have the “Processed” column as ‘n’.</span></span>  
   
-## <a name="configuring-notifications-with-the-oracle-database-adapter-binding-properties"></a><span data-ttu-id="39b44-110">与 Oracle 数据库适配器绑定属性中配置通知</span><span class="sxs-lookup"><span data-stu-id="39b44-110">Configuring Notifications with the Oracle Database Adapter Binding Properties</span></span>  
- <span data-ttu-id="39b44-111">下表总结了[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]绑定属性，用于配置从 Oracle 数据库接收通知。</span><span class="sxs-lookup"><span data-stu-id="39b44-111">The table below summarizes the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] binding properties that you use to configure receiving notifications from Oracle database.</span></span> <span data-ttu-id="39b44-112">在运行.NET 应用程序以接收通知时，必须指定这些绑定属性。</span><span class="sxs-lookup"><span data-stu-id="39b44-112">You must specify these binding properties while running the .NET application to receive notifications.</span></span>  
+## <a name="configuring-notifications-with-the-oracle-database-adapter-binding-properties"></a><span data-ttu-id="ca37d-110">使用 Oracle 数据库适配器的绑定属性中配置通知</span><span class="sxs-lookup"><span data-stu-id="ca37d-110">Configuring Notifications with the Oracle Database Adapter Binding Properties</span></span>  
+ <span data-ttu-id="ca37d-111">下表总结了[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]绑定用于配置从 Oracle 数据库接收通知的属性。</span><span class="sxs-lookup"><span data-stu-id="ca37d-111">The table below summarizes the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] binding properties that you use to configure receiving notifications from Oracle database.</span></span> <span data-ttu-id="ca37d-112">必须运行.NET 应用程序以接收通知时指定这些绑定属性。</span><span class="sxs-lookup"><span data-stu-id="ca37d-112">You must specify these binding properties while running the .NET application to receive notifications.</span></span>  
   
-|<span data-ttu-id="39b44-113">绑定属性</span><span class="sxs-lookup"><span data-stu-id="39b44-113">Binding Property</span></span>|<span data-ttu-id="39b44-114">Description</span><span class="sxs-lookup"><span data-stu-id="39b44-114">Description</span></span>|  
+|<span data-ttu-id="ca37d-113">绑定属性</span><span class="sxs-lookup"><span data-stu-id="ca37d-113">Binding Property</span></span>|<span data-ttu-id="ca37d-114">Description</span><span class="sxs-lookup"><span data-stu-id="ca37d-114">Description</span></span>|  
 |----------------------|-----------------|  
-|<span data-ttu-id="39b44-115">**InboundOperationType**</span><span class="sxs-lookup"><span data-stu-id="39b44-115">**InboundOperationType**</span></span>|<span data-ttu-id="39b44-116">指定你想要执行的入站的操作。</span><span class="sxs-lookup"><span data-stu-id="39b44-116">Specifies the inbound operation that you want to perform.</span></span> <span data-ttu-id="39b44-117">若要接收通知消息，请将此设置为**通知**。</span><span class="sxs-lookup"><span data-stu-id="39b44-117">To receive notification messages, set this to **Notification**.</span></span>|  
-|<span data-ttu-id="39b44-118">**NotificationPort**</span><span class="sxs-lookup"><span data-stu-id="39b44-118">**NotificationPort**</span></span>|<span data-ttu-id="39b44-119">指定 ODP.NET 必须打开侦听从 Oracle 数据库的数据库更改通知的端口号。</span><span class="sxs-lookup"><span data-stu-id="39b44-119">Specifies the port number that ODP.NET must open to listen for database change notification from Oracle database.</span></span>|  
-|<span data-ttu-id="39b44-120">**NotificationStatement**</span><span class="sxs-lookup"><span data-stu-id="39b44-120">**NotificationStatement**</span></span>|<span data-ttu-id="39b44-121">指定用来注册查询通知的 SELECT 语句。</span><span class="sxs-lookup"><span data-stu-id="39b44-121">Specifies the SELECT statement used to register for query notifications.</span></span> <span data-ttu-id="39b44-122">仅当指定的 SELECT 语句更改的结果集时，适配器获取一条通知消息。</span><span class="sxs-lookup"><span data-stu-id="39b44-122">The adapter gets a notification message only when the result set for the specified SELECT statement changes.</span></span>|  
-|<span data-ttu-id="39b44-123">**NotifyOnListenerStart**</span><span class="sxs-lookup"><span data-stu-id="39b44-123">**NotifyOnListenerStart**</span></span>|<span data-ttu-id="39b44-124">指定启动侦听器时，适配器是否发送到适配器客户端通知。</span><span class="sxs-lookup"><span data-stu-id="39b44-124">Specifies whether the adapter sends a notification to the adapter clients when the listener is started.</span></span>|  
+|<span data-ttu-id="ca37d-115">**InboundOperationType**</span><span class="sxs-lookup"><span data-stu-id="ca37d-115">**InboundOperationType**</span></span>|<span data-ttu-id="ca37d-116">指定你想要执行的入站的操作。</span><span class="sxs-lookup"><span data-stu-id="ca37d-116">Specifies the inbound operation that you want to perform.</span></span> <span data-ttu-id="ca37d-117">若要接收通知消息，请将此设置为**通知**。</span><span class="sxs-lookup"><span data-stu-id="ca37d-117">To receive notification messages, set this to **Notification**.</span></span>|  
+|<span data-ttu-id="ca37d-118">**NotificationPort**</span><span class="sxs-lookup"><span data-stu-id="ca37d-118">**NotificationPort**</span></span>|<span data-ttu-id="ca37d-119">指定 ODP.NET 必须打开从 Oracle 数据库的数据库更改通知侦听的端口号。</span><span class="sxs-lookup"><span data-stu-id="ca37d-119">Specifies the port number that ODP.NET must open to listen for database change notification from Oracle database.</span></span>|  
+|<span data-ttu-id="ca37d-120">**NotificationStatement**</span><span class="sxs-lookup"><span data-stu-id="ca37d-120">**NotificationStatement**</span></span>|<span data-ttu-id="ca37d-121">指定用于对查询通知注册的 SELECT 语句。</span><span class="sxs-lookup"><span data-stu-id="ca37d-121">Specifies the SELECT statement used to register for query notifications.</span></span> <span data-ttu-id="ca37d-122">仅当指定的 SELECT 语句更改的结果集时，适配器将获取一条通知消息。</span><span class="sxs-lookup"><span data-stu-id="ca37d-122">The adapter gets a notification message only when the result set for the specified SELECT statement changes.</span></span>|  
+|<span data-ttu-id="ca37d-123">**NotifyOnListenerStart**</span><span class="sxs-lookup"><span data-stu-id="ca37d-123">**NotifyOnListenerStart**</span></span>|<span data-ttu-id="ca37d-124">指定适配器是否启动侦听器时在向适配器客户端发送了通知。</span><span class="sxs-lookup"><span data-stu-id="ca37d-124">Specifies whether the adapter sends a notification to the adapter clients when the listener is started.</span></span>|  
   
- <span data-ttu-id="39b44-125">有关这些属性的更完整说明，请参阅[用于 Oracle 数据库配置的绑定属性](../../adapters-and-accelerators/adapter-oracle-database/configure-the-binding-properties-for-oracle-database.md)。</span><span class="sxs-lookup"><span data-stu-id="39b44-125">For a more complete description of these properties, see [Configure the binding properties for Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/configure-the-binding-properties-for-oracle-database.md).</span></span> <span data-ttu-id="39b44-126">有关如何使用的完整说明[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]若要从 Oracle 数据库接收通知，请阅读更多。</span><span class="sxs-lookup"><span data-stu-id="39b44-126">For a complete description of how to use the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] to receive notifications from Oracle database, read further.</span></span>  
+ <span data-ttu-id="ca37d-125">有关这些属性的更完整说明，请参阅[用于 Oracle 数据库配置的绑定属性](../../adapters-and-accelerators/adapter-oracle-database/configure-the-binding-properties-for-oracle-database.md)。</span><span class="sxs-lookup"><span data-stu-id="ca37d-125">For a more complete description of these properties, see [Configure the binding properties for Oracle Database](../../adapters-and-accelerators/adapter-oracle-database/configure-the-binding-properties-for-oracle-database.md).</span></span> <span data-ttu-id="ca37d-126">有关如何使用的完整说明[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]若要从 Oracle 数据库接收通知，请阅读更多。</span><span class="sxs-lookup"><span data-stu-id="ca37d-126">For a complete description of how to use the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] to receive notifications from Oracle database, read further.</span></span>  
   
-## <a name="configuring-notifications-using-the-wcf-service-model"></a><span data-ttu-id="39b44-127">使用 WCF 服务模型配置通知</span><span class="sxs-lookup"><span data-stu-id="39b44-127">Configuring Notifications Using the WCF Service Model</span></span>  
- <span data-ttu-id="39b44-128">若要接收使用 WCF 服务模型的通知，你必须：</span><span class="sxs-lookup"><span data-stu-id="39b44-128">To receive the notifications using the WCF service model, you must:</span></span>  
+## <a name="configuring-notifications-using-the-wcf-service-model"></a><span data-ttu-id="ca37d-127">配置通知使用 WCF 服务模型</span><span class="sxs-lookup"><span data-stu-id="ca37d-127">Configuring Notifications Using the WCF Service Model</span></span>  
+ <span data-ttu-id="ca37d-128">若要接收的通知使用 WCF 服务模型，您必须：</span><span class="sxs-lookup"><span data-stu-id="ca37d-128">To receive the notifications using the WCF service model, you must:</span></span>  
   
--   <span data-ttu-id="39b44-129">为生成的 WCF 服务协定 （接口）**通知**从适配器公开的元数据的操作。</span><span class="sxs-lookup"><span data-stu-id="39b44-129">Generate a WCF service contract (interface) for the **Notification** operation from the metadata exposed by the adapter.</span></span> <span data-ttu-id="39b44-130">若要执行此操作，你无法使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="39b44-130">To do this, you could use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].</span></span>  
+- <span data-ttu-id="ca37d-129">为生成的 WCF 服务协定 （接口）**通知**从由适配器公开的元数据的操作。</span><span class="sxs-lookup"><span data-stu-id="ca37d-129">Generate a WCF service contract (interface) for the **Notification** operation from the metadata exposed by the adapter.</span></span> <span data-ttu-id="ca37d-130">若要执行此操作，可以使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="ca37d-130">To do this, you could use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].</span></span>  
   
--   <span data-ttu-id="39b44-131">生成的 WCF 客户端**选择**ACCOUNTACTIVITY 表上的操作。</span><span class="sxs-lookup"><span data-stu-id="39b44-131">Generate a WCF client for the **Select** operation on the ACCOUNTACTIVITY table.</span></span> <span data-ttu-id="39b44-132">若要执行此操作，你无法使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="39b44-132">To do this, you could use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].</span></span>  
+- <span data-ttu-id="ca37d-131">生成的 WCF 客户端**选择**ACCOUNTACTIVITY 表上的操作。</span><span class="sxs-lookup"><span data-stu-id="ca37d-131">Generate a WCF client for the **Select** operation on the ACCOUNTACTIVITY table.</span></span> <span data-ttu-id="ca37d-132">若要执行此操作，可以使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="ca37d-132">To do this, you could use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].</span></span>  
   
--   <span data-ttu-id="39b44-133">实现此接口从 WCF 服务。</span><span class="sxs-lookup"><span data-stu-id="39b44-133">Implement a WCF service from this interface.</span></span>  
+- <span data-ttu-id="ca37d-133">实现此接口中的 WCF 服务。</span><span class="sxs-lookup"><span data-stu-id="ca37d-133">Implement a WCF service from this interface.</span></span>  
   
--   <span data-ttu-id="39b44-134">托管此 WCF 服务使用服务主机 (**System.ServiceModel.ServiceHost**)。</span><span class="sxs-lookup"><span data-stu-id="39b44-134">Host this WCF service using a service host (**System.ServiceModel.ServiceHost**).</span></span>  
+- <span data-ttu-id="ca37d-134">托管此 WCF 服务使用服务主机 (**System.ServiceModel.ServiceHost**)。</span><span class="sxs-lookup"><span data-stu-id="ca37d-134">Host this WCF service using a service host (**System.ServiceModel.ServiceHost**).</span></span>  
   
-## <a name="the-wcf-service-contract-and-class"></a><span data-ttu-id="39b44-135">WCF 服务协定和类</span><span class="sxs-lookup"><span data-stu-id="39b44-135">The WCF Service Contract and Class</span></span>  
- <span data-ttu-id="39b44-136">你可以使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]创建 WCF 服务协定 （接口） 和支持类**通知**操作。</span><span class="sxs-lookup"><span data-stu-id="39b44-136">You can use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] to create a WCF service contract (interface) and supporting classes for the **Notification** operation.</span></span> <span data-ttu-id="39b44-137">有关生成的 WCF 服务协定的详细信息，请参阅[生成 WCF 客户端或 Oracle 数据库解决方案项目关联的 WCF 服务协定](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)。</span><span class="sxs-lookup"><span data-stu-id="39b44-137">For more information about generating a WCF service contract, see [Generate a WCF client or a WCF service contract for Oracle Database solution artifacts](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md).</span></span>  
+## <a name="the-wcf-service-contract-and-class"></a><span data-ttu-id="ca37d-135">WCF 服务约定和类</span><span class="sxs-lookup"><span data-stu-id="ca37d-135">The WCF Service Contract and Class</span></span>  
+ <span data-ttu-id="ca37d-136">可以使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]若要创建 WCF 服务协定 （接口） 和支持类**通知**操作。</span><span class="sxs-lookup"><span data-stu-id="ca37d-136">You can use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] to create a WCF service contract (interface) and supporting classes for the **Notification** operation.</span></span> <span data-ttu-id="ca37d-137">有关生成的 WCF 服务协定的详细信息，请参阅[生成 WCF 客户端或 WCF 服务协定用于 Oracle 数据库解决方案项目](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)。</span><span class="sxs-lookup"><span data-stu-id="ca37d-137">For more information about generating a WCF service contract, see [Generate a WCF client or a WCF service contract for Oracle Database solution artifacts](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md).</span></span>  
   
-### <a name="the-wcf-service-contract-interface"></a><span data-ttu-id="39b44-138">WCF 服务协定 （接口）</span><span class="sxs-lookup"><span data-stu-id="39b44-138">The WCF Service Contract (Interface)</span></span>  
- <span data-ttu-id="39b44-139">下面的代码演示为生成的 WCF 服务协定 （接口）**通知**操作。</span><span class="sxs-lookup"><span data-stu-id="39b44-139">The following code shows the WCF service contract (interface) generated for the **Notification** operation.</span></span>  
+### <a name="the-wcf-service-contract-interface"></a><span data-ttu-id="ca37d-138">WCF 服务协定 （接口）</span><span class="sxs-lookup"><span data-stu-id="ca37d-138">The WCF Service Contract (Interface)</span></span>  
+ <span data-ttu-id="ca37d-139">下面的代码演示 WCF 服务协定 （接口） 为生成**通知**操作。</span><span class="sxs-lookup"><span data-stu-id="ca37d-139">The following code shows the WCF service contract (interface) generated for the **Notification** operation.</span></span>  
   
 ```  
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]  
@@ -63,8 +63,8 @@ public interface Notification_OperationGroup {
 }  
 ```  
   
-### <a name="the-message-contracts"></a><span data-ttu-id="39b44-140">消息协定</span><span class="sxs-lookup"><span data-stu-id="39b44-140">The Message Contracts</span></span>  
- <span data-ttu-id="39b44-141">下面是通知操作的消息协定。</span><span class="sxs-lookup"><span data-stu-id="39b44-141">Following is the message contract for the Notification operation.</span></span>  
+### <a name="the-message-contracts"></a><span data-ttu-id="ca37d-140">消息协定</span><span class="sxs-lookup"><span data-stu-id="ca37d-140">The Message Contracts</span></span>  
+ <span data-ttu-id="ca37d-141">下面是通知操作的消息约定。</span><span class="sxs-lookup"><span data-stu-id="ca37d-141">Following is the message contract for the Notification operation.</span></span>  
   
 ```  
 [System.Diagnostics.DebuggerStepThroughAttribute()]  
@@ -100,8 +100,8 @@ public partial class Notification {
 }  
 ```  
   
-### <a name="wcf-service-class"></a><span data-ttu-id="39b44-142">WCF 服务类</span><span class="sxs-lookup"><span data-stu-id="39b44-142">WCF Service Class</span></span>  
- <span data-ttu-id="39b44-143">[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]还会生成一个具有为 WCF 服务类实现服务协定 （接口） 从存根 （stub） 文件。</span><span class="sxs-lookup"><span data-stu-id="39b44-143">The [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] also generates a file that has a stub for the WCF service class implemented from the service contract (interface).</span></span> <span data-ttu-id="39b44-144">文件的名称是 OracleDBBindingService.cs。</span><span class="sxs-lookup"><span data-stu-id="39b44-144">The name of the file is OracleDBBindingService.cs.</span></span> <span data-ttu-id="39b44-145">你可以将插入的逻辑来处理**通知**直接插入此类操作。</span><span class="sxs-lookup"><span data-stu-id="39b44-145">You can insert the logic to process the **Notification** operation directly into this class.</span></span> <span data-ttu-id="39b44-146">下面的代码演示生成的 WCF 服务类[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="39b44-146">The following code shows the WCF service class generated by the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].</span></span>  
+### <a name="wcf-service-class"></a><span data-ttu-id="ca37d-142">WCF 服务类</span><span class="sxs-lookup"><span data-stu-id="ca37d-142">WCF Service Class</span></span>  
+ <span data-ttu-id="ca37d-143">[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]还会生成一个具有实现服务协定 （接口） 中的 WCF 服务类的存根文件。</span><span class="sxs-lookup"><span data-stu-id="ca37d-143">The [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] also generates a file that has a stub for the WCF service class implemented from the service contract (interface).</span></span> <span data-ttu-id="ca37d-144">文件的名称是 OracleDBBindingService.cs。</span><span class="sxs-lookup"><span data-stu-id="ca37d-144">The name of the file is OracleDBBindingService.cs.</span></span> <span data-ttu-id="ca37d-145">您可以将逻辑来处理**通知**直接在此类操作。</span><span class="sxs-lookup"><span data-stu-id="ca37d-145">You can insert the logic to process the **Notification** operation directly into this class.</span></span> <span data-ttu-id="ca37d-146">下面的代码演示生成的 WCF 服务类[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="ca37d-146">The following code shows the WCF service class generated by the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)].</span></span>  
   
 ```  
 namespace OracleDBBindingNamespace {  
@@ -117,213 +117,213 @@ namespace OracleDBBindingNamespace {
 }  
 ```  
   
-## <a name="receiving-database-change-notifications-using-wcf-service-model"></a><span data-ttu-id="39b44-147">使用 WCF 服务模型的接收数据库更改通知</span><span class="sxs-lookup"><span data-stu-id="39b44-147">Receiving Database Change Notifications Using WCF Service Model</span></span>  
- <span data-ttu-id="39b44-148">本部分将说明了如何编写.NET 应用程序以接收查询通知使用[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="39b44-148">This section provides instructions on how to write a .NET application to receive query notifications using the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span>  
+## <a name="receiving-database-change-notifications-using-wcf-service-model"></a><span data-ttu-id="ca37d-147">使用 WCF 服务模型的接收数据库更改通知</span><span class="sxs-lookup"><span data-stu-id="ca37d-147">Receiving Database Change Notifications Using WCF Service Model</span></span>  
+ <span data-ttu-id="ca37d-148">本部分说明了如何编写.NET 应用程序以接收查询通知使用[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="ca37d-148">This section provides instructions on how to write a .NET application to receive query notifications using the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span>  
   
-#### <a name="to-receive-query-notifications"></a><span data-ttu-id="39b44-149">若要接收查询通知</span><span class="sxs-lookup"><span data-stu-id="39b44-149">To receive query notifications</span></span>  
+#### <a name="to-receive-query-notifications"></a><span data-ttu-id="ca37d-149">若要接收查询通知</span><span class="sxs-lookup"><span data-stu-id="ca37d-149">To receive query notifications</span></span>  
   
-1.  <span data-ttu-id="39b44-150">使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]生成的 WCF 客户端**选择**操作**ACCOUNTACTIVITY**表。</span><span class="sxs-lookup"><span data-stu-id="39b44-150">Use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] to generate a WCF client for **Select** operation on the **ACCOUNTACTIVITY** table.</span></span> <span data-ttu-id="39b44-151">此客户端将用于接收通知邮件后执行选择操作。</span><span class="sxs-lookup"><span data-stu-id="39b44-151">You will use this client to perform Select operations after receiving a notification message.</span></span> <span data-ttu-id="39b44-152">添加新类，TableOperation.cs 到你的项目并添加下面的代码段，以执行选择操作。</span><span class="sxs-lookup"><span data-stu-id="39b44-152">Add a new class, TableOperation.cs to your project and add the following code snippet to perform a Select operation.</span></span>  
+1. <span data-ttu-id="ca37d-150">使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]生成的 WCF 客户端**选择**上的操作**ACCOUNTACTIVITY**表。</span><span class="sxs-lookup"><span data-stu-id="ca37d-150">Use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] to generate a WCF client for **Select** operation on the **ACCOUNTACTIVITY** table.</span></span> <span data-ttu-id="ca37d-151">将使用此客户端收到通知消息后执行的 Select 操作。</span><span class="sxs-lookup"><span data-stu-id="ca37d-151">You will use this client to perform Select operations after receiving a notification message.</span></span> <span data-ttu-id="ca37d-152">添加新类，TableOperation.cs 到你的项目并添加下面的代码段，以执行选择操作。</span><span class="sxs-lookup"><span data-stu-id="ca37d-152">Add a new class, TableOperation.cs to your project and add the following code snippet to perform a Select operation.</span></span>  
   
-    ```  
-    using System;  
-    using System.Collections.Generic;  
-    using System.Linq;  
-    using System.Text;  
+   ```  
+   using System;  
+   using System.Collections.Generic;  
+   using System.Linq;  
+   using System.Text;  
   
-    namespace Notification_ServiceModel  
-    {  
-        class TableOperation  
-        {  
-            public void TableOp()  
-            {  
-                //////////////////////////////////////////////////////////////////////  
-                // CREATING THE CLIENT AND SETTING CLIENT CREDENTIALS  
-                //////////////////////////////////////////////////////////////////////  
+   namespace Notification_ServiceModel  
+   {  
+       class TableOperation  
+       {  
+           public void TableOp()  
+           {  
+               //////////////////////////////////////////////////////////////////////  
+               // CREATING THE CLIENT AND SETTING CLIENT CREDENTIALS  
+               //////////////////////////////////////////////////////////////////////  
   
-                SCOTT_Table_ACCOUNTACTIVITYClient client = new SCOTT_Table_ACCOUNTACTIVITYClient("OracleDBBinding_SCOTT_Table_ACCOUNTACTIVITY");  
-                client.ClientCredentials.UserName.UserName = "SCOTT";  
-                client.ClientCredentials.UserName.Password = "TIGER";  
+               SCOTT_Table_ACCOUNTACTIVITYClient client = new SCOTT_Table_ACCOUNTACTIVITYClient("OracleDBBinding_SCOTT_Table_ACCOUNTACTIVITY");  
+               client.ClientCredentials.UserName.UserName = "SCOTT";  
+               client.ClientCredentials.UserName.Password = "TIGER";  
   
-                ////////////////////////////////////////////////////////////////////  
-                // OPENING THE CLIENT  
-                //////////////////////////////////////////////////////////////////////  
-                try  
-                {  
-                    Console.WriteLine("Opening the client ...");  
-                    client.Open();  
-                }  
-                catch (Exception ex)  
-                {  
-                    Console.WriteLine("Exception: " + ex.Message);  
-                    throw;  
-                }  
+               ////////////////////////////////////////////////////////////////////  
+               // OPENING THE CLIENT  
+               //////////////////////////////////////////////////////////////////////  
+               try  
+               {  
+                   Console.WriteLine("Opening the client ...");  
+                   client.Open();  
+               }  
+               catch (Exception ex)  
+               {  
+                   Console.WriteLine("Exception: " + ex.Message);  
+                   throw;  
+               }  
   
-                ////////////////////////////////////////////////////////////////////////////////////////  
-                // SELECTING THE LAST INSERTED VALUE  
-                ////////////////////////////////////////////////////////////////////////////////////////  
+               ////////////////////////////////////////////////////////////////////////////////////////  
+               // SELECTING THE LAST INSERTED VALUE  
+               ////////////////////////////////////////////////////////////////////////////////////////  
   
-                Console.WriteLine("The application will now select the last inserted record");  
+               Console.WriteLine("The application will now select the last inserted record");  
   
-                microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDSELECT[] selectRecords;  
+               microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDSELECT[] selectRecords;  
   
-                try  
-                {  
-                    selectRecords = client.Select("*", "WHERE PROCESSED = 'n'");  
-                }  
-                catch (Exception ex)  
-                {  
-                    Console.WriteLine("Exception: " + ex.Message);  
-                    throw;  
-                }  
+               try  
+               {  
+                   selectRecords = client.Select("*", "WHERE PROCESSED = 'n'");  
+               }  
+               catch (Exception ex)  
+               {  
+                   Console.WriteLine("Exception: " + ex.Message);  
+                   throw;  
+               }  
   
-                Console.WriteLine("The details of the newly added records are:");  
-                Console.WriteLine("********************************************");  
-                for (int i = 0; i < selectRecords.Length; i++)  
-                {  
-                    Console.WriteLine("Transaction ID   : " + selectRecords[i].TID);  
-                    Console.WriteLine("Account ID       : " + selectRecords[i].ACCOUNT);  
-                    Console.WriteLine("Processed Status : " + selectRecords[i].PROCESSED);  
-                    Console.WriteLine();  
-                }  
-                Console.WriteLine("********************************************");  
-            }  
-        }  
-    }  
+               Console.WriteLine("The details of the newly added records are:");  
+               Console.WriteLine("********************************************");  
+               for (int i = 0; i < selectRecords.Length; i++)  
+               {  
+                   Console.WriteLine("Transaction ID   : " + selectRecords[i].TID);  
+                   Console.WriteLine("Account ID       : " + selectRecords[i].ACCOUNT);  
+                   Console.WriteLine("Processed Status : " + selectRecords[i].PROCESSED);  
+                   Console.WriteLine();  
+               }  
+               Console.WriteLine("********************************************");  
+           }  
+       }  
+   }  
   
-    ```  
+   ```  
   
-2.  <span data-ttu-id="39b44-153">使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]以生成 WCF 服务协定 （接口） 和用于帮助器类**通知**操作。</span><span class="sxs-lookup"><span data-stu-id="39b44-153">Use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] to generate a WCF service contract (interface) and helper classes for the **Notification** operation.</span></span>  
+2. <span data-ttu-id="ca37d-153">使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]生成的 WCF 服务协定 （接口） 和帮助器类实现**通知**操作。</span><span class="sxs-lookup"><span data-stu-id="ca37d-153">Use the [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)] to generate a WCF service contract (interface) and helper classes for the **Notification** operation.</span></span>  
   
-     <span data-ttu-id="39b44-154">有关详细信息，请参阅[生成 WCF 客户端或 Oracle 数据库解决方案项目关联的 WCF 服务协定](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)。</span><span class="sxs-lookup"><span data-stu-id="39b44-154">For more information, see [Generate a WCF client or a WCF service contract for Oracle Database solution artifacts](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md).</span></span> <span data-ttu-id="39b44-155">生成服务协定和帮助程序类时，可以选择指定的绑定属性。</span><span class="sxs-lookup"><span data-stu-id="39b44-155">You can optionally specify the binding properties while generating the service contract and helper classes.</span></span> <span data-ttu-id="39b44-156">这可确保它们正确设置生成的配置文件中。</span><span class="sxs-lookup"><span data-stu-id="39b44-156">This guarantees that they are properly set in the generated configuration file.</span></span>  
+    <span data-ttu-id="ca37d-154">有关详细信息，请参阅[生成 WCF 客户端或 WCF 服务协定用于 Oracle 数据库解决方案项目](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)。</span><span class="sxs-lookup"><span data-stu-id="ca37d-154">For more information, see [Generate a WCF client or a WCF service contract for Oracle Database solution artifacts](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md).</span></span> <span data-ttu-id="ca37d-155">在生成服务协定和帮助程序类时，可以选择指定的绑定属性。</span><span class="sxs-lookup"><span data-stu-id="ca37d-155">You can optionally specify the binding properties while generating the service contract and helper classes.</span></span> <span data-ttu-id="ca37d-156">这可确保它们正确设置生成的配置文件中。</span><span class="sxs-lookup"><span data-stu-id="ca37d-156">This guarantees that they are properly set in the generated configuration file.</span></span>  
   
-3.  <span data-ttu-id="39b44-157">实现 WCF 服务从在步骤 2 中生成的接口和帮助程序类。</span><span class="sxs-lookup"><span data-stu-id="39b44-157">Implement a WCF service from the interface and helper classes generated in step 2.</span></span> <span data-ttu-id="39b44-158">**通知**此类的方法可以处理从接收的数据遇到错误时引发异常中止操作，**通知**操作; 否则该方法将执行不返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="39b44-158">The **Notification** method of this class can throw an exception to abort the operation, if an error is encountered processing the data received from the **Notification** operation; otherwise the method does not return anything.</span></span> <span data-ttu-id="39b44-159">必须属性 WCF 服务类，如下所示：</span><span class="sxs-lookup"><span data-stu-id="39b44-159">You must attribute the WCF service class as follows:</span></span>  
+3. <span data-ttu-id="ca37d-157">实现在步骤 2 中生成的接口和帮助程序类中的 WCF 服务。</span><span class="sxs-lookup"><span data-stu-id="ca37d-157">Implement a WCF service from the interface and helper classes generated in step 2.</span></span> <span data-ttu-id="ca37d-158">**通知**此类方法可以引发异常来中止操作，如果遇到错误，处理从接收的数据**通知**操作; 否则该方法执行不返回任何内容。</span><span class="sxs-lookup"><span data-stu-id="ca37d-158">The **Notification** method of this class can throw an exception to abort the operation, if an error is encountered processing the data received from the **Notification** operation; otherwise the method does not return anything.</span></span> <span data-ttu-id="ca37d-159">必须按如下所示属性的 WCF 服务类：</span><span class="sxs-lookup"><span data-stu-id="ca37d-159">You must attribute the WCF service class as follows:</span></span>  
   
-    ```  
-    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]  
-    ```  
+   ```  
+   [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]  
+   ```  
   
-     <span data-ttu-id="39b44-160">在**通知**方法，你可以直接实现你的应用程序逻辑。</span><span class="sxs-lookup"><span data-stu-id="39b44-160">Within the **Notification** method, you can implement your application logic directly.</span></span> <span data-ttu-id="39b44-161">OracleDBBindingService.cs 中找不到此类。</span><span class="sxs-lookup"><span data-stu-id="39b44-161">This class can be found in OracleDBBindingService.cs.</span></span> <span data-ttu-id="39b44-162">此示例中的此代码子类**OracleDBBindingService**类。</span><span class="sxs-lookup"><span data-stu-id="39b44-162">This code in this example sub-classes the **OracleDBBindingService** class.</span></span> <span data-ttu-id="39b44-163">在此代码中，接收的通知消息写入控制台。</span><span class="sxs-lookup"><span data-stu-id="39b44-163">In this code, the notification message received is written to the console.</span></span> <span data-ttu-id="39b44-164">此外， **TableOp**方法内的**TableOperation**类调用以执行选择操作。</span><span class="sxs-lookup"><span data-stu-id="39b44-164">Additionally, the **TableOp** method within the **TableOperation** class is invoked to perform the Select operation.</span></span>  
+    <span data-ttu-id="ca37d-160">内**通知**方法，可以直接实现应用程序逻辑。</span><span class="sxs-lookup"><span data-stu-id="ca37d-160">Within the **Notification** method, you can implement your application logic directly.</span></span> <span data-ttu-id="ca37d-161">可以 OracleDBBindingService.cs 中找到此类。</span><span class="sxs-lookup"><span data-stu-id="ca37d-161">This class can be found in OracleDBBindingService.cs.</span></span> <span data-ttu-id="ca37d-162">此代码在此示例中的嵌套类**OracleDBBindingService**类。</span><span class="sxs-lookup"><span data-stu-id="ca37d-162">This code in this example sub-classes the **OracleDBBindingService** class.</span></span> <span data-ttu-id="ca37d-163">在此代码中，收到的通知消息写入控制台。</span><span class="sxs-lookup"><span data-stu-id="ca37d-163">In this code, the notification message received is written to the console.</span></span> <span data-ttu-id="ca37d-164">此外， **TableOp**方法内的**TableOperation**类调用以执行选择操作。</span><span class="sxs-lookup"><span data-stu-id="ca37d-164">Additionally, the **TableOp** method within the **TableOperation** class is invoked to perform the Select operation.</span></span>  
   
-    ```  
-    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]  
+   ```  
+   [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]  
   
-        public class NotificationService : OracleDBBindingNamespace.OracleDBBindingService  
-        {  
-            public override void Notification(Notification request)  
-            {  
-                Console.WriteLine("\nNew Notification Received");  
-                Console.WriteLine("*************************************************");  
-                Console.WriteLine(request.Info);  
-                Console.WriteLine(request.Source);  
-                Console.WriteLine(request.Type);  
-                Console.WriteLine("*************************************************");  
+       public class NotificationService : OracleDBBindingNamespace.OracleDBBindingService  
+       {  
+           public override void Notification(Notification request)  
+           {  
+               Console.WriteLine("\nNew Notification Received");  
+               Console.WriteLine("*************************************************");  
+               Console.WriteLine(request.Info);  
+               Console.WriteLine(request.Source);  
+               Console.WriteLine(request.Type);  
+               Console.WriteLine("*************************************************");  
   
-                TableOperation Ops = new TableOperation();  
-                Ops.TableOp();  
+               TableOperation Ops = new TableOperation();  
+               Ops.TableOp();  
   
-            }  
-        }  
-    ```  
+           }  
+       }  
+   ```  
   
-4.  <span data-ttu-id="39b44-165">必须实现以下类用于传递 Oracle 数据库的凭据。</span><span class="sxs-lookup"><span data-stu-id="39b44-165">You must implement the following class to pass credentials for the Oracle database.</span></span> <span data-ttu-id="39b44-166">在应用程序的后半部分，将实例化此类，以传递凭据。</span><span class="sxs-lookup"><span data-stu-id="39b44-166">In the latter part of the application, you will instantiate this class to pass on the credentials.</span></span>  
+4. <span data-ttu-id="ca37d-165">必须实现以下类用于传递 Oracle 数据库的凭据。</span><span class="sxs-lookup"><span data-stu-id="ca37d-165">You must implement the following class to pass credentials for the Oracle database.</span></span> <span data-ttu-id="ca37d-166">在应用程序的后半部分，将实例化此类，以传递凭据。</span><span class="sxs-lookup"><span data-stu-id="ca37d-166">In the latter part of the application, you will instantiate this class to pass on the credentials.</span></span>  
   
-    ```  
-    class NotificationCredentials : ClientCredentials, IServiceBehavior  
-    {  
-        public void AddBindingParameters(ServiceDescription serviceDescription, ServiceHostBase serviceHostBase, Collection<ServiceEndpoint> endpoints, BindingParameterCollection bindingParameters)  
-        {  
-            bindingParameters.Add(this);  
-        }  
+   ```  
+   class NotificationCredentials : ClientCredentials, IServiceBehavior  
+   {  
+       public void AddBindingParameters(ServiceDescription serviceDescription, ServiceHostBase serviceHostBase, Collection<ServiceEndpoint> endpoints, BindingParameterCollection bindingParameters)  
+       {  
+           bindingParameters.Add(this);  
+       }  
   
-        public void ApplyDispatchBehavior(ServiceDescription serviceDescription, ServiceHostBase serviceHostBase)  
-        { }  
+       public void ApplyDispatchBehavior(ServiceDescription serviceDescription, ServiceHostBase serviceHostBase)  
+       { }  
   
-        public void Validate(ServiceDescription serviceDescription, ServiceHostBase serviceHostBase)  
-        { }  
+       public void Validate(ServiceDescription serviceDescription, ServiceHostBase serviceHostBase)  
+       { }  
   
-        protected override ClientCredentials CloneCore()  
-        {  
-            ClientCredentials clone = new NotificationCredentials();  
-            clone.UserName.UserName = this.UserName.UserName;  
-            clone.UserName.Password = this.UserName.Password;  
-            return clone;  
-        }  
-    }  
-    ```  
+       protected override ClientCredentials CloneCore()  
+       {  
+           ClientCredentials clone = new NotificationCredentials();  
+           clone.UserName.UserName = this.UserName.UserName;  
+           clone.UserName.Password = this.UserName.Password;  
+           return clone;  
+       }  
+   }  
+   ```  
   
-5.  <span data-ttu-id="39b44-167">创建**OracleDBBinding**并配置适配器后，若要通过指定绑定属性接收查询通知。</span><span class="sxs-lookup"><span data-stu-id="39b44-167">Create an **OracleDBBinding** and configure the adapter to receive query notifications by specifying the binding properties.</span></span> <span data-ttu-id="39b44-168">可以在代码中显式或配置中以声明方式执行此操作。</span><span class="sxs-lookup"><span data-stu-id="39b44-168">You can do this either explicitly in code or declaratively in configuration.</span></span> <span data-ttu-id="39b44-169">至少，你必须指定**InboundOperationType**和**NotificationStatement**绑定属性。</span><span class="sxs-lookup"><span data-stu-id="39b44-169">At a minimum, you must specify the **InboundOperationType** and **NotificationStatement** binding properties.</span></span>  
+5. <span data-ttu-id="ca37d-167">创建**OracleDBBinding**并配置适配器后，若要通过指定的绑定属性接收查询通知。</span><span class="sxs-lookup"><span data-stu-id="ca37d-167">Create an **OracleDBBinding** and configure the adapter to receive query notifications by specifying the binding properties.</span></span> <span data-ttu-id="ca37d-168">可以在代码中显式或配置中以声明方式执行此操作。</span><span class="sxs-lookup"><span data-stu-id="ca37d-168">You can do this either explicitly in code or declaratively in configuration.</span></span> <span data-ttu-id="ca37d-169">至少，您必须指定**InboundOperationType**并**NotificationStatement**绑定属性。</span><span class="sxs-lookup"><span data-stu-id="ca37d-169">At a minimum, you must specify the **InboundOperationType** and **NotificationStatement** binding properties.</span></span>  
   
-    ```  
-    OracleDBBinding binding = new OracleDBBinding();  
-    binding.InboundOperationType = InboundOperation.Notification;  
-    binding.NotificationStatement = "SELECT TID,ACCOUNT,PROCESSED FROM APPS.ACCOUNTACTIVITY WHERE PROCESSED = 'n'";  
-    binding.NotifyOnListenerStart = true;  
-    binding.NotificationPort = 10;  
-    ```  
+   ```  
+   OracleDBBinding binding = new OracleDBBinding();  
+   binding.InboundOperationType = InboundOperation.Notification;  
+   binding.NotificationStatement = "SELECT TID,ACCOUNT,PROCESSED FROM APPS.ACCOUNTACTIVITY WHERE PROCESSED = 'n'";  
+   binding.NotifyOnListenerStart = true;  
+   binding.NotificationPort = 10;  
+   ```  
   
-    > [!IMPORTANT]
-    >  <span data-ttu-id="39b44-170">值**NotificationPort**绑定属性必须设置为相同的端口号必须已添加到 Windows 防火墙例外列表。</span><span class="sxs-lookup"><span data-stu-id="39b44-170">The value for the **NotificationPort** binding property must be set to the same port number that you must have added to the Windows Firewall exceptions list.</span></span> <span data-ttu-id="39b44-171">有关如何将端口添加到 Windows 防火墙例外列表的说明，请参阅[http://go.microsoft.com/fwlink/?LinkId=196959](http://go.microsoft.com/fwlink/?LinkId=196959)。</span><span class="sxs-lookup"><span data-stu-id="39b44-171">For instructions on how to add ports to Windows Firewall exceptions list, see [http://go.microsoft.com/fwlink/?LinkId=196959](http://go.microsoft.com/fwlink/?LinkId=196959).</span></span>  
+   > [!IMPORTANT]
+   >  <span data-ttu-id="ca37d-170">值**NotificationPort**绑定属性必须设置为相同的端口号必须已添加到 Windows 防火墙例外列表。</span><span class="sxs-lookup"><span data-stu-id="ca37d-170">The value for the **NotificationPort** binding property must be set to the same port number that you must have added to the Windows Firewall exceptions list.</span></span> <span data-ttu-id="ca37d-171">有关如何将端口添加到 Windows 防火墙例外列表的说明，请参阅[ http://go.microsoft.com/fwlink/?LinkId=196959 ](http://go.microsoft.com/fwlink/?LinkId=196959)。</span><span class="sxs-lookup"><span data-stu-id="ca37d-171">For instructions on how to add ports to Windows Firewall exceptions list, see [http://go.microsoft.com/fwlink/?LinkId=196959](http://go.microsoft.com/fwlink/?LinkId=196959).</span></span>  
   
-    > [!IMPORTANT]
-    >  <span data-ttu-id="39b44-172">如果你未设置**NotificationPort**绑定属性，该适配器将假定默认值为-1 表示此绑定属性。</span><span class="sxs-lookup"><span data-stu-id="39b44-172">If you do not set the **NotificationPort** binding property, the adapter will assume the default value of -1 for this binding property.</span></span> <span data-ttu-id="39b44-173">在这种情况下，你将需要完全禁用 Windows 防火墙，以接收通知消息。</span><span class="sxs-lookup"><span data-stu-id="39b44-173">In such a case, you will have to completely disable Windows Firewall to receive notification messages.</span></span>  
+   > [!IMPORTANT]
+   >  <span data-ttu-id="ca37d-172">如果未设置**NotificationPort**绑定属性，该适配器将假定-1，表示此绑定属性的默认值。</span><span class="sxs-lookup"><span data-stu-id="ca37d-172">If you do not set the **NotificationPort** binding property, the adapter will assume the default value of -1 for this binding property.</span></span> <span data-ttu-id="ca37d-173">在这种情况下，您将必须完全禁用 Windows 防火墙，以接收通知消息。</span><span class="sxs-lookup"><span data-stu-id="ca37d-173">In such a case, you will have to completely disable Windows Firewall to receive notification messages.</span></span>  
   
-6.  <span data-ttu-id="39b44-174">指定 Oracle 数据库凭据，方法是实例化**NotificationCredentials**在步骤 4 中创建的类。</span><span class="sxs-lookup"><span data-stu-id="39b44-174">Specify Oracle database credentials by instantiating the **NotificationCredentials** class you created in Step 4.</span></span>  
+6. <span data-ttu-id="ca37d-174">指定 Oracle 数据库凭据通过实例化**NotificationCredentials**步骤 4 中创建的类。</span><span class="sxs-lookup"><span data-stu-id="ca37d-174">Specify Oracle database credentials by instantiating the **NotificationCredentials** class you created in Step 4.</span></span>  
   
-    ```  
-    NotificationCredentials credentials = new NotificationCredentials();  
-    credentials.UserName.UserName = "SCOTT";  
-    credentials.UserName.Password = "TIGER";  
-    ```  
+   ```  
+   NotificationCredentials credentials = new NotificationCredentials();  
+   credentials.UserName.UserName = "SCOTT";  
+   credentials.UserName.Password = "TIGER";  
+   ```  
   
-7.  <span data-ttu-id="39b44-175">创建在步骤 3 中创建的 WCF 服务的实例。</span><span class="sxs-lookup"><span data-stu-id="39b44-175">Create an instance of the WCF service created in step 3.</span></span>  
+7. <span data-ttu-id="ca37d-175">创建在步骤 3 中创建的 WCF 服务的实例。</span><span class="sxs-lookup"><span data-stu-id="ca37d-175">Create an instance of the WCF service created in step 3.</span></span>  
   
-    ```  
-    // create service instance  
-    NotificationService service = new NotificationService();  
-    ```  
+   ```  
+   // create service instance  
+   NotificationService service = new NotificationService();  
+   ```  
   
-8.  <span data-ttu-id="39b44-176">创建的实例**System.ServiceModel.ServiceHost**使用 WCF 服务和数据库连接 URI。</span><span class="sxs-lookup"><span data-stu-id="39b44-176">Create an instance of **System.ServiceModel.ServiceHost** by using the WCF service and a base connection URI.</span></span> <span data-ttu-id="39b44-177">你还必须指定此处的凭据。</span><span class="sxs-lookup"><span data-stu-id="39b44-177">You must also specify the credentials here.</span></span>  
+8. <span data-ttu-id="ca37d-176">创建的实例**System.ServiceModel.ServiceHost**使用 WCF 服务和基本连接 URI。</span><span class="sxs-lookup"><span data-stu-id="ca37d-176">Create an instance of **System.ServiceModel.ServiceHost** by using the WCF service and a base connection URI.</span></span> <span data-ttu-id="ca37d-177">此外必须指定凭据。</span><span class="sxs-lookup"><span data-stu-id="ca37d-177">You must also specify the credentials here.</span></span>  
   
-    ```  
-    // Enable service host  
-    Uri[] baseUri = new Uri[] { new Uri("oracledb://adapter") };  
-    ServiceHost serviceHost = new ServiceHost(service, baseUri);  
-    serviceHost.Description.Behaviors.Add(credentials);  
+   ```  
+   // Enable service host  
+   Uri[] baseUri = new Uri[] { new Uri("oracledb://adapter") };  
+   ServiceHost serviceHost = new ServiceHost(service, baseUri);  
+   serviceHost.Description.Behaviors.Add(credentials);  
   
-    ```  
+   ```  
   
-9. <span data-ttu-id="39b44-178">将服务终结点添加到服务主机。</span><span class="sxs-lookup"><span data-stu-id="39b44-178">Add a service endpoint to the service host.</span></span> <span data-ttu-id="39b44-179">为此，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="39b44-179">To do this:</span></span>  
+9. <span data-ttu-id="ca37d-178">将服务终结点添加到服务主机。</span><span class="sxs-lookup"><span data-stu-id="ca37d-178">Add a service endpoint to the service host.</span></span> <span data-ttu-id="ca37d-179">为此，请执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="ca37d-179">To do this:</span></span>  
   
-    -   <span data-ttu-id="39b44-180">使用在步骤 5 中创建的绑定。</span><span class="sxs-lookup"><span data-stu-id="39b44-180">Use the binding created in step 5.</span></span>  
+   - <span data-ttu-id="ca37d-180">使用在步骤 5 中创建的绑定。</span><span class="sxs-lookup"><span data-stu-id="ca37d-180">Use the binding created in step 5.</span></span>  
   
-    -   <span data-ttu-id="39b44-181">指定连接 URI，其中包含凭据，如果需要，一个入站的 id。</span><span class="sxs-lookup"><span data-stu-id="39b44-181">Specify a connection URI that contains credentials and, if required, an inbound ID.</span></span>  
+   - <span data-ttu-id="ca37d-181">指定连接 URI，其中包含的凭据，如果需要，入站 id。</span><span class="sxs-lookup"><span data-stu-id="ca37d-181">Specify a connection URI that contains credentials and, if required, an inbound ID.</span></span>  
   
-    -   <span data-ttu-id="39b44-182">作为"Notification_OperationGroup"指定的协定。</span><span class="sxs-lookup"><span data-stu-id="39b44-182">Specify the contract as "Notification_OperationGroup".</span></span>  
+   - <span data-ttu-id="ca37d-182">作为"Notification_OperationGroup"指定的协定。</span><span class="sxs-lookup"><span data-stu-id="ca37d-182">Specify the contract as "Notification_OperationGroup".</span></span>  
   
-    ```  
-    // Add service endpoint: be sure to specify Notification_OperationGroup as the contract  
-    Uri ConnectionUri = new Uri("oracledb://adapter");  
-    serviceHost.AddServiceEndpoint("Notification_OperationGroup", binding, ConnectionUri);  
-    ```  
+     ```  
+     // Add service endpoint: be sure to specify Notification_OperationGroup as the contract  
+     Uri ConnectionUri = new Uri("oracledb://adapter");  
+     serviceHost.AddServiceEndpoint("Notification_OperationGroup", binding, ConnectionUri);  
+     ```  
   
-10. <span data-ttu-id="39b44-183">若要接收通知消息，请打开服务主机。</span><span class="sxs-lookup"><span data-stu-id="39b44-183">To receive notification message, open the service host.</span></span>  
+10. <span data-ttu-id="ca37d-183">若要接收通知消息，请打开服务主机。</span><span class="sxs-lookup"><span data-stu-id="ca37d-183">To receive notification message, open the service host.</span></span>  
   
     ```  
     // Open the service host to begin receiving notifications  
     serviceHost.Open();  
     ```  
   
-11. <span data-ttu-id="39b44-184">若要停止接收通知，关闭服务主机。</span><span class="sxs-lookup"><span data-stu-id="39b44-184">To stop receiving notifications, close the service host.</span></span>  
+11. <span data-ttu-id="ca37d-184">若要停止接收通知，请关闭服务主机。</span><span class="sxs-lookup"><span data-stu-id="ca37d-184">To stop receiving notifications, close the service host.</span></span>  
   
     ```  
     serviceHost.Close();  
     ```  
   
-### <a name="example"></a><span data-ttu-id="39b44-185">示例</span><span class="sxs-lookup"><span data-stu-id="39b44-185">Example</span></span>  
- <span data-ttu-id="39b44-186">下面的示例演示.NET 应用程序以接收 ACCOUNTACTIVITY 表的通知消息。</span><span class="sxs-lookup"><span data-stu-id="39b44-186">The following example shows a .NET application to receive notification messages for the ACCOUNTACTIVITY table.</span></span>  
+### <a name="example"></a><span data-ttu-id="ca37d-185">示例</span><span class="sxs-lookup"><span data-stu-id="ca37d-185">Example</span></span>  
+ <span data-ttu-id="ca37d-186">下面的示例显示了.NET 应用程序以接收 ACCOUNTACTIVITY 表的通知消息。</span><span class="sxs-lookup"><span data-stu-id="ca37d-186">The following example shows a .NET application to receive notification messages for the ACCOUNTACTIVITY table.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="39b44-187">下面的代码段实例化**TableOperation.cs**类并调用**TableOp**方法。</span><span class="sxs-lookup"><span data-stu-id="39b44-187">The following code snippet instantiates a **TableOperation.cs** class and invokes the **TableOp** method.</span></span> <span data-ttu-id="39b44-188">类和方法所述步骤 1。</span><span class="sxs-lookup"><span data-stu-id="39b44-188">The class and the method are described in Step 1.</span></span>  
+>  <span data-ttu-id="ca37d-187">下面的代码段实例化**TableOperation.cs**类，并调用**TableOp**方法。</span><span class="sxs-lookup"><span data-stu-id="ca37d-187">The following code snippet instantiates a **TableOperation.cs** class and invokes the **TableOp** method.</span></span> <span data-ttu-id="ca37d-188">步骤 1 中描述类和方法。</span><span class="sxs-lookup"><span data-stu-id="ca37d-188">The class and the method are described in Step 1.</span></span>  
   
 ```  
 using System;  
@@ -450,5 +450,5 @@ namespace Notification_ServiceModel
   
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="39b44-189">另请参阅</span><span class="sxs-lookup"><span data-stu-id="39b44-189">See Also</span></span>  
- [<span data-ttu-id="39b44-190">开发使用 WCF 服务模型的 Oracle 数据库应用程序</span><span class="sxs-lookup"><span data-stu-id="39b44-190">Develop Oracle Database applications using the WCF Service Model</span></span>](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-service-model.md)
+## <a name="see-also"></a><span data-ttu-id="ca37d-189">请参阅</span><span class="sxs-lookup"><span data-stu-id="ca37d-189">See Also</span></span>  
+ [<span data-ttu-id="ca37d-190">开发 Oracle 数据库应用程序使用 WCF 服务模型</span><span class="sxs-lookup"><span data-stu-id="ca37d-190">Develop Oracle Database applications using the WCF Service Model</span></span>](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-service-model.md)

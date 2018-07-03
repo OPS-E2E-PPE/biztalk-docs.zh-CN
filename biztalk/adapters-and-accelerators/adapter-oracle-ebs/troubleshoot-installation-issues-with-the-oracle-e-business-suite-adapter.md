@@ -1,5 +1,5 @@
 ---
-title: 解决安装问题与 Oracle E-business Suite 适配器 |Microsoft 文档
+title: '使用 Oracle E-business Suite 适配器进行故障排除安装问题: |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,152 +12,154 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 29fbee54262f1b45e3cc9be67c057767a80b325f
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 4fb1d5f0e1f17870c9824b30e5da55a2740cb81b
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25965627"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36968126"
 ---
-# <a name="troubleshoot-installation-issues-with-the-oracle-e-business-suite-adapter"></a><span data-ttu-id="38216-102">与 Oracle E-business Suite 适配器解决安装问题</span><span class="sxs-lookup"><span data-stu-id="38216-102">Troubleshoot Installation Issues with the Oracle E-Business Suite adapter</span></span>
-<span data-ttu-id="38216-103">安装 Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]复制产品二进制文件的计算机上并注册每个适配器的绑定。</span><span class="sxs-lookup"><span data-stu-id="38216-103">Installation of the Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] copies the product binaries on the computer and registers the bindings for each adapter.</span></span> <span data-ttu-id="38216-104">本部分讨论如何使用故障排除方法来解决安装错误。</span><span class="sxs-lookup"><span data-stu-id="38216-104">This section discusses using troubleshooting techniques to resolve installation errors.</span></span>  
-  
-## <a name="logging-messages-for-setup-actions"></a><span data-ttu-id="38216-105">安装程序操作的日志记录消息</span><span class="sxs-lookup"><span data-stu-id="38216-105">Logging Messages for Setup Actions</span></span>  
- <span data-ttu-id="38216-106">[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装程序执行安装的标准任务[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="38216-106">The [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] setup program performs the standard task of installing the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)].</span></span> <span data-ttu-id="38216-107">此外，安装程序还执行某些自定义操作，例如注册的适配器绑定。</span><span class="sxs-lookup"><span data-stu-id="38216-107">Additionally, the setup also performs certain custom actions such as registering the adapter bindings.</span></span> <span data-ttu-id="38216-108">可以记录这两个标准以及自定义操作的安装程序将执行的消息。</span><span class="sxs-lookup"><span data-stu-id="38216-108">You can log messages for both the standard as well as custom actions that the setup performs.</span></span>  
-  
--   <span data-ttu-id="38216-109">[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装程序将安装使用 MSI 的适配器特定的文件。</span><span class="sxs-lookup"><span data-stu-id="38216-109">The [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] setup installs the adapter-specific files using an MSI.</span></span> <span data-ttu-id="38216-110">因此，安装程序的日志记录是标准的 MSI 日志记录。</span><span class="sxs-lookup"><span data-stu-id="38216-110">Therefore, the logging for the setup is the standard MSI logging.</span></span> <span data-ttu-id="38216-111">[Windows 安装程序日志记录](https://msdn.microsoft.com/library/windows/desktop/aa372847.aspx)提供更多详细信息。</span><span class="sxs-lookup"><span data-stu-id="38216-111">[Windows Installer Logging](https://msdn.microsoft.com/library/windows/desktop/aa372847.aspx) provides more details.</span></span> 
-  
--   <span data-ttu-id="38216-112">安装程序执行的自定义操作的所有日志都位于 %temp%\adaptersetup.log。</span><span class="sxs-lookup"><span data-stu-id="38216-112">All logs for the custom actions that the setup program performs are available at %TEMP%\adaptersetup.log.</span></span> <span data-ttu-id="38216-113">如果跟踪日志文件失败，跟踪也会出现在事件日志。</span><span class="sxs-lookup"><span data-stu-id="38216-113">If the tracing to the log file fails, the traces are also available in the event log.</span></span>  
-  
-## <a name="known-issues"></a><span data-ttu-id="38216-114">已知问题</span><span class="sxs-lookup"><span data-stu-id="38216-114">Known Issues</span></span>  
- <span data-ttu-id="38216-115">以下是在安装时可能遇到的最常见错误[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]，以及其可能的原因和解决方法。</span><span class="sxs-lookup"><span data-stu-id="38216-115">The following are the most common errors you might encounter when installing the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)], along with their probable cause and resolution.</span></span>  
-  
-  
-  
-###  <a name="BKMK_OraAppBinding"></a><span data-ttu-id="38216-116">安装程序无法注册适配器绑定</span><span class="sxs-lookup"><span data-stu-id="38216-116">Setup fails to register adapter bindings</span></span>  
- <span data-ttu-id="38216-117">**问题**</span><span class="sxs-lookup"><span data-stu-id="38216-117">**Problem**</span></span>  
-  
- <span data-ttu-id="38216-118">Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装向导无法注册的适配器绑定，但将继续执行适配器安装。</span><span class="sxs-lookup"><span data-stu-id="38216-118">The Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] setup wizard fails to register the adapter bindings, but proceeds with the adapter installation.</span></span>  
-  
- <span data-ttu-id="38216-119">**可能的原因**</span><span class="sxs-lookup"><span data-stu-id="38216-119">**Cause**</span></span>  
-  
- <span data-ttu-id="38216-120">这可能会由于存在问题导致[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]安装，[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]安装或被损坏的 machine.config 文件。</span><span class="sxs-lookup"><span data-stu-id="38216-120">This might result due to problems with [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] installation, [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)] installation, or the machine.config file being corrupt.</span></span> <span data-ttu-id="38216-121">适配器绑定写入到 machine.config 文件中。</span><span class="sxs-lookup"><span data-stu-id="38216-121">The adapter bindings are written to the machine.config file.</span></span>  
-  
- <span data-ttu-id="38216-122">**解决方法**</span><span class="sxs-lookup"><span data-stu-id="38216-122">**Resolution**</span></span>  
-  
- <span data-ttu-id="38216-123">你应该手动注册[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]绑定。</span><span class="sxs-lookup"><span data-stu-id="38216-123">You should manually register the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] binding.</span></span>  
-  
-##### <a name="to-register-the-adapter-binding"></a><span data-ttu-id="38216-124">若要注册的适配器绑定</span><span class="sxs-lookup"><span data-stu-id="38216-124">To register the adapter binding</span></span>  
-  
-1.  <span data-ttu-id="38216-125">导航到计算机上的 machine.config 文件。</span><span class="sxs-lookup"><span data-stu-id="38216-125">Navigate to the machine.config file on the computer.</span></span> <span data-ttu-id="38216-126">例如，在 32 位平台上，machine.config 位于下\<系统驱动器\>: \WINDOWS\Microsoft.NET\Framework\\< 版本\>\CONFIG。</span><span class="sxs-lookup"><span data-stu-id="38216-126">For example, on a 32-bit platform, the machine.config is available under \<system drive\>:\WINDOWS\Microsoft.NET\Framework\\<version\>\CONFIG.</span></span>  
-  
-     <span data-ttu-id="38216-127">在此路径中， \<*版本*\>是.NET Framework 的版本。</span><span class="sxs-lookup"><span data-stu-id="38216-127">In this path, \<*version*\> is the version of the .NET Framework.</span></span>  
-  
-2.  <span data-ttu-id="38216-128">通过使用文本编辑器中打开该文件。</span><span class="sxs-lookup"><span data-stu-id="38216-128">Open the file by using a text editor.</span></span>  
-  
-3.  <span data-ttu-id="38216-129">若要注册[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]绑定：</span><span class="sxs-lookup"><span data-stu-id="38216-129">To register the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] binding:</span></span>  
-  
-    1.  <span data-ttu-id="38216-130">搜索的元素"的 system.serviceModel"和其下添加以下：</span><span class="sxs-lookup"><span data-stu-id="38216-130">Search for the element "system.serviceModel" and add the following under it:</span></span>  
-  
-        ```  
-        <client>  
-          <endpoint binding="oracleEBSBinding" contract="IMetadataExchange" name="oracleebs" />  
-        </client>  
-        ```  
-  
-    2.  <span data-ttu-id="38216-131">搜索"bindingElementExtensions"system.serviceModel\extensions 下的元素。</span><span class="sxs-lookup"><span data-stu-id="38216-131">Search for the element "bindingElementExtensions" under system.serviceModel\extensions.</span></span>  
-  
-    3.  <span data-ttu-id="38216-132">查找缺失[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]绑定。</span><span class="sxs-lookup"><span data-stu-id="38216-132">Look for the missing [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] binding.</span></span> <span data-ttu-id="38216-133">添加以下节"bindingElementExtensions"节点下。</span><span class="sxs-lookup"><span data-stu-id="38216-133">Add the following section under the "bindingElementExtensions" node.</span></span>  
-  
-         <span data-ttu-id="38216-134">有关[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]，添加：</span><span class="sxs-lookup"><span data-stu-id="38216-134">For [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)], add:</span></span>  
-  
-        ```  
-        <add name="oracleEBSAdapter" type="Microsoft.Adapters.OracleEBS.OracleEBSBindingElementExtensionElement, Microsoft.Adapters.OracleEBS, Version=<version>, Culture=neutral, PublicKeyToken=<public key>" />  
-        ```  
-  
-    4.  <span data-ttu-id="38216-135">搜索"bindingExtensions"system.serviceModel\extensions 下的元素。</span><span class="sxs-lookup"><span data-stu-id="38216-135">Search for the element "bindingExtensions" under system.serviceModel\extensions.</span></span>  
-  
-    5.  <span data-ttu-id="38216-136">查找缺失[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]绑定。</span><span class="sxs-lookup"><span data-stu-id="38216-136">Look for the missing [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] binding.</span></span> <span data-ttu-id="38216-137">添加以下节"bindingExtensions"节点下。</span><span class="sxs-lookup"><span data-stu-id="38216-137">Add the following section under the "bindingExtensions" node.</span></span>  
-  
-         <span data-ttu-id="38216-138">有关[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]，添加：</span><span class="sxs-lookup"><span data-stu-id="38216-138">For [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)], add:</span></span>  
-  
-        ```  
-        <add name="oracleEBSBinding" type="Microsoft.Adapters.OracleEBS.OracleEBSBindingCollectionElement, Microsoft.Adapters.OracleEBS, Version=<version>, Culture=neutral, PublicKeyToken=<public key>" />  
-        ```  
-  
-    > [!NOTE]
-    >  <span data-ttu-id="38216-139">有关如何确定公用密钥和版本的信息，请参阅[确定的公钥和版本](#BKMK_PubKey)。</span><span class="sxs-lookup"><span data-stu-id="38216-139">For information about how to determine the public key and the version, see [Determining the Public Key and Version](#BKMK_PubKey).</span></span>  
-  
-4.  <span data-ttu-id="38216-140">保存并关闭 machine.config 文件。</span><span class="sxs-lookup"><span data-stu-id="38216-140">Save and close the machine.config file.</span></span>  
-  
-####  <a name="BKMK_PubKey"></a><span data-ttu-id="38216-141">确定的公钥和版本</span><span class="sxs-lookup"><span data-stu-id="38216-141">Determining the Public Key and Version</span></span>  
- <span data-ttu-id="38216-142">执行以下步骤来确定的公钥[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="38216-142">Perform the following steps to determine the public key for [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].</span></span>  
-  
-###### <a name="to-determine-the-public-key"></a><span data-ttu-id="38216-143">若要确定的公钥</span><span class="sxs-lookup"><span data-stu-id="38216-143">To determine the public key</span></span>  
-  
-1.  <span data-ttu-id="38216-144">导航到 Windows 目录中，通常 C:\WINDOWS\assembly。</span><span class="sxs-lookup"><span data-stu-id="38216-144">Navigate to the Windows directory, typically C:\WINDOWS\assembly.</span></span>  
-  
-2.  <span data-ttu-id="38216-145">右键单击对其需的公钥和版本，且然后选择该 DLL**属性**。</span><span class="sxs-lookup"><span data-stu-id="38216-145">Right-click the DLL for which you want the public key and the version, and then select **Properties**.</span></span> <span data-ttu-id="38216-146">下表列出的 DLL 的名称[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="38216-146">The following table lists the name of the DLL for [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].</span></span>  
-  
-    |<span data-ttu-id="38216-147">适配器</span><span class="sxs-lookup"><span data-stu-id="38216-147">Adapter</span></span>|<span data-ttu-id="38216-148">DLL 的名称</span><span class="sxs-lookup"><span data-stu-id="38216-148">Name of the DLL</span></span>|  
-    |-------------|---------------------|  
-    |[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]|<span data-ttu-id="38216-149">Microsoft.Adapters.OracleEBS</span><span class="sxs-lookup"><span data-stu-id="38216-149">Microsoft.Adapters.OracleEBS</span></span>|  
-  
-3.  <span data-ttu-id="38216-150">上**常规**选项卡上，针对值**Public Key Token**标签指定 DLL 的公共密钥。</span><span class="sxs-lookup"><span data-stu-id="38216-150">On the **General** tab, the value against the **Public Key Token** label specifies the public key for the DLL.</span></span> <span data-ttu-id="38216-151">同样，针对值**版本**标签指定的 dll 的版本号。</span><span class="sxs-lookup"><span data-stu-id="38216-151">Similarly, value against the **Version** label specifies the version number for the DLL.</span></span>  
-  
-4.  <span data-ttu-id="38216-152">复制公钥，，然后单击**取消**。</span><span class="sxs-lookup"><span data-stu-id="38216-152">Copy the public key, and then click **Cancel**.</span></span>  
-  
-###  <a name="BKMK_ConsumeOraApp"></a><span data-ttu-id="38216-153">在 64 位安装上使用使用适配器服务外接程序或添加适配器服务引用插件时出错</span><span class="sxs-lookup"><span data-stu-id="38216-153">Error while using the Consume Adapter Service add-in or Add Adapter Service Reference plug-in on a 64-bit installation</span></span>  
- <span data-ttu-id="38216-154">**问题**</span><span class="sxs-lookup"><span data-stu-id="38216-154">**Problem**</span></span>  
-  
- <span data-ttu-id="38216-155">使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]或[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]从[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]运行的 64 位版本的 64 位计算机上[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]会导致以下错误：</span><span class="sxs-lookup"><span data-stu-id="38216-155">Using the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] or the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] from [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] on a 64-bit computer running 64-bit version of the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] results in the following error:</span></span>  
-  
+# <a name="troubleshoot-installation-issues-with-the-oracle-e-business-suite-adapter"></a><span data-ttu-id="33023-102">使用 Oracle E-business Suite 适配器进行故障排除安装问题：</span><span class="sxs-lookup"><span data-stu-id="33023-102">Troubleshoot Installation Issues with the Oracle E-Business Suite adapter</span></span>
+<span data-ttu-id="33023-103">安装 Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]复制产品二进制文件的计算机上并注册每个适配器的绑定。</span><span class="sxs-lookup"><span data-stu-id="33023-103">Installation of the Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] copies the product binaries on the computer and registers the bindings for each adapter.</span></span> <span data-ttu-id="33023-104">本部分讨论如何使用故障排除技术来解决安装错误。</span><span class="sxs-lookup"><span data-stu-id="33023-104">This section discusses using troubleshooting techniques to resolve installation errors.</span></span>  
+
+## <a name="logging-messages-for-setup-actions"></a><span data-ttu-id="33023-105">安装程序操作的日志记录消息</span><span class="sxs-lookup"><span data-stu-id="33023-105">Logging Messages for Setup Actions</span></span>  
+ <span data-ttu-id="33023-106">[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]的安装程序进行安装的标准任务[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="33023-106">The [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] setup program performs the standard task of installing the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)].</span></span> <span data-ttu-id="33023-107">此外，安装程序还执行某些自定义操作，例如注册适配器绑定。</span><span class="sxs-lookup"><span data-stu-id="33023-107">Additionally, the setup also performs certain custom actions such as registering the adapter bindings.</span></span> <span data-ttu-id="33023-108">你可以记录这两个的标准，以及自定义操作安装程序将执行的消息。</span><span class="sxs-lookup"><span data-stu-id="33023-108">You can log messages for both the standard as well as custom actions that the setup performs.</span></span>  
+
+- <span data-ttu-id="33023-109">[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装程序将安装使用 MSI 的特定于适配器的文件。</span><span class="sxs-lookup"><span data-stu-id="33023-109">The [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] setup installs the adapter-specific files using an MSI.</span></span> <span data-ttu-id="33023-110">因此，安装程序的日志记录是标准的 MSI 日志记录。</span><span class="sxs-lookup"><span data-stu-id="33023-110">Therefore, the logging for the setup is the standard MSI logging.</span></span> <span data-ttu-id="33023-111">[Windows 安装程序日志记录](https://msdn.microsoft.com/library/windows/desktop/aa372847.aspx)提供了更多详细信息。</span><span class="sxs-lookup"><span data-stu-id="33023-111">[Windows Installer Logging](https://msdn.microsoft.com/library/windows/desktop/aa372847.aspx) provides more details.</span></span> 
+
+- <span data-ttu-id="33023-112">安装程序执行的自定义操作的所有日志都位于 %temp%\adaptersetup.log。</span><span class="sxs-lookup"><span data-stu-id="33023-112">All logs for the custom actions that the setup program performs are available at %TEMP%\adaptersetup.log.</span></span> <span data-ttu-id="33023-113">如果跟踪日志文件失败，跟踪还提供了在事件日志。</span><span class="sxs-lookup"><span data-stu-id="33023-113">If the tracing to the log file fails, the traces are also available in the event log.</span></span>  
+
+## <a name="known-issues"></a><span data-ttu-id="33023-114">已知问题</span><span class="sxs-lookup"><span data-stu-id="33023-114">Known Issues</span></span>  
+ <span data-ttu-id="33023-115">以下是在安装时可能会遇到的最常见错误[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]，以及其可能的原因和解决方法。</span><span class="sxs-lookup"><span data-stu-id="33023-115">The following are the most common errors you might encounter when installing the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)], along with their probable cause and resolution.</span></span>  
+
+
+
+###  <a name="BKMK_OraAppBinding"></a> <span data-ttu-id="33023-116">安装程序无法注册适配器绑定</span><span class="sxs-lookup"><span data-stu-id="33023-116">Setup fails to register adapter bindings</span></span>  
+ <span data-ttu-id="33023-117">**问题**</span><span class="sxs-lookup"><span data-stu-id="33023-117">**Problem**</span></span>  
+
+ <span data-ttu-id="33023-118">Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装向导无法注册适配器绑定，但将继续进行安装适配器。</span><span class="sxs-lookup"><span data-stu-id="33023-118">The Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] setup wizard fails to register the adapter bindings, but proceeds with the adapter installation.</span></span>  
+
+ <span data-ttu-id="33023-119">**原因**</span><span class="sxs-lookup"><span data-stu-id="33023-119">**Cause**</span></span>  
+
+ <span data-ttu-id="33023-120">这可能会由于存在问题导致[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]安装，[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]安装或被损坏的 machine.config 文件。</span><span class="sxs-lookup"><span data-stu-id="33023-120">This might result due to problems with [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] installation, [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)] installation, or the machine.config file being corrupt.</span></span> <span data-ttu-id="33023-121">适配器绑定写入到 machine.config 文件中。</span><span class="sxs-lookup"><span data-stu-id="33023-121">The adapter bindings are written to the machine.config file.</span></span>  
+
+ <span data-ttu-id="33023-122">**解决方法**</span><span class="sxs-lookup"><span data-stu-id="33023-122">**Resolution**</span></span>  
+
+ <span data-ttu-id="33023-123">您应手动注册[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]绑定。</span><span class="sxs-lookup"><span data-stu-id="33023-123">You should manually register the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] binding.</span></span>  
+
+##### <a name="to-register-the-adapter-binding"></a><span data-ttu-id="33023-124">若要注册适配器绑定</span><span class="sxs-lookup"><span data-stu-id="33023-124">To register the adapter binding</span></span>  
+
+1. <span data-ttu-id="33023-125">导航到计算机上的 machine.config 文件。</span><span class="sxs-lookup"><span data-stu-id="33023-125">Navigate to the machine.config file on the computer.</span></span> <span data-ttu-id="33023-126">例如，在 32 位平台上，在 machine.config 位于下\<系统驱动器\>: \WINDOWS\Microsoft.NET\Framework\\< 版本\>\CONFIG。</span><span class="sxs-lookup"><span data-stu-id="33023-126">For example, on a 32-bit platform, the machine.config is available under \<system drive\>:\WINDOWS\Microsoft.NET\Framework\\<version\>\CONFIG.</span></span>  
+
+    <span data-ttu-id="33023-127">在此路径中， \<*版本*\>是.NET Framework 的版本。</span><span class="sxs-lookup"><span data-stu-id="33023-127">In this path, \<*version*\> is the version of the .NET Framework.</span></span>  
+
+2. <span data-ttu-id="33023-128">使用文本编辑器打开该文件。</span><span class="sxs-lookup"><span data-stu-id="33023-128">Open the file by using a text editor.</span></span>  
+
+3. <span data-ttu-id="33023-129">若要注册[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]绑定：</span><span class="sxs-lookup"><span data-stu-id="33023-129">To register the [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] binding:</span></span>  
+
+   1. <span data-ttu-id="33023-130">搜索元素"的 system.serviceModel"并将其下的以下代码添加：</span><span class="sxs-lookup"><span data-stu-id="33023-130">Search for the element "system.serviceModel" and add the following under it:</span></span>  
+
+      ```  
+      <client>  
+        <endpoint binding="oracleEBSBinding" contract="IMetadataExchange" name="oracleebs" />  
+      </client>  
+      ```  
+
+   2. <span data-ttu-id="33023-131">搜索"bindingElementExtensions"system.serviceModel\extensions 下的元素。</span><span class="sxs-lookup"><span data-stu-id="33023-131">Search for the element "bindingElementExtensions" under system.serviceModel\extensions.</span></span>  
+
+   3. <span data-ttu-id="33023-132">查找缺失[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]绑定。</span><span class="sxs-lookup"><span data-stu-id="33023-132">Look for the missing [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] binding.</span></span> <span data-ttu-id="33023-133">添加"bindingElementExtensions"节点下的以下部分。</span><span class="sxs-lookup"><span data-stu-id="33023-133">Add the following section under the "bindingElementExtensions" node.</span></span>  
+
+       <span data-ttu-id="33023-134">有关[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]，添加：</span><span class="sxs-lookup"><span data-stu-id="33023-134">For [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)], add:</span></span>  
+
+      ```  
+      <add name="oracleEBSAdapter" type="Microsoft.Adapters.OracleEBS.OracleEBSBindingElementExtensionElement, Microsoft.Adapters.OracleEBS, Version=<version>, Culture=neutral, PublicKeyToken=<public key>" />  
+      ```  
+
+   4. <span data-ttu-id="33023-135">搜索"bindingExtensions"system.serviceModel\extensions 下的元素。</span><span class="sxs-lookup"><span data-stu-id="33023-135">Search for the element "bindingExtensions" under system.serviceModel\extensions.</span></span>  
+
+   5. <span data-ttu-id="33023-136">查找缺失[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]绑定。</span><span class="sxs-lookup"><span data-stu-id="33023-136">Look for the missing [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] binding.</span></span> <span data-ttu-id="33023-137">添加"bindingExtensions"节点下的以下部分。</span><span class="sxs-lookup"><span data-stu-id="33023-137">Add the following section under the "bindingExtensions" node.</span></span>  
+
+       <span data-ttu-id="33023-138">有关[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]，添加：</span><span class="sxs-lookup"><span data-stu-id="33023-138">For [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)], add:</span></span>  
+
+      ```  
+      <add name="oracleEBSBinding" type="Microsoft.Adapters.OracleEBS.OracleEBSBindingCollectionElement, Microsoft.Adapters.OracleEBS, Version=<version>, Culture=neutral, PublicKeyToken=<public key>" />  
+      ```  
+
+   > [!NOTE]
+   >  <span data-ttu-id="33023-139">有关如何确定公用密钥和版本信息，请参阅[确定公用密钥和版本](#BKMK_PubKey)。</span><span class="sxs-lookup"><span data-stu-id="33023-139">For information about how to determine the public key and the version, see [Determining the Public Key and Version](#BKMK_PubKey).</span></span>  
+
+4. <span data-ttu-id="33023-140">保存并关闭 machine.config 文件。</span><span class="sxs-lookup"><span data-stu-id="33023-140">Save and close the machine.config file.</span></span>  
+
+####  <a name="BKMK_PubKey"></a> <span data-ttu-id="33023-141">确定公用密钥和版本</span><span class="sxs-lookup"><span data-stu-id="33023-141">Determining the Public Key and Version</span></span>  
+ <span data-ttu-id="33023-142">执行以下步骤来确定的公钥[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="33023-142">Perform the following steps to determine the public key for [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].</span></span>  
+
+###### <a name="to-determine-the-public-key"></a><span data-ttu-id="33023-143">若要确定的公钥</span><span class="sxs-lookup"><span data-stu-id="33023-143">To determine the public key</span></span>  
+
+1. <span data-ttu-id="33023-144">导航到 Windows 目录，通常 C:\WINDOWS\assembly。</span><span class="sxs-lookup"><span data-stu-id="33023-144">Navigate to the Windows directory, typically C:\WINDOWS\assembly.</span></span>  
+
+2. <span data-ttu-id="33023-145">右键单击的 DLL 为其也想公用密钥和版本，并选择**属性**。</span><span class="sxs-lookup"><span data-stu-id="33023-145">Right-click the DLL for which you want the public key and the version, and then select **Properties**.</span></span> <span data-ttu-id="33023-146">下表列出了为 DLL 的名称[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="33023-146">The following table lists the name of the DLL for [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)].</span></span>  
+
+
+   |                                         <span data-ttu-id="33023-147">适配器</span><span class="sxs-lookup"><span data-stu-id="33023-147">Adapter</span></span>                                         |       <span data-ttu-id="33023-148">DLL 的名称</span><span class="sxs-lookup"><span data-stu-id="33023-148">Name of the DLL</span></span>        |
+   |-----------------------------------------------------------------------------------------|------------------------------|
+   | [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] | <span data-ttu-id="33023-149">Microsoft.Adapters.OracleEBS</span><span class="sxs-lookup"><span data-stu-id="33023-149">Microsoft.Adapters.OracleEBS</span></span> |
+
+
+3. <span data-ttu-id="33023-150">上**常规**选项卡上，针对值**公钥标记**标签指定 DLL 的公共密钥。</span><span class="sxs-lookup"><span data-stu-id="33023-150">On the **General** tab, the value against the **Public Key Token** label specifies the public key for the DLL.</span></span> <span data-ttu-id="33023-151">同样，针对值**版本**标签指定 dll 的版本号。</span><span class="sxs-lookup"><span data-stu-id="33023-151">Similarly, value against the **Version** label specifies the version number for the DLL.</span></span>  
+
+4. <span data-ttu-id="33023-152">复制公钥，，然后单击**取消**。</span><span class="sxs-lookup"><span data-stu-id="33023-152">Copy the public key, and then click **Cancel**.</span></span>  
+
+###  <a name="BKMK_ConsumeOraApp"></a> <span data-ttu-id="33023-153">在 64 位安装上使用使用适配器服务外接程序或添加适配器服务引用插件时出错</span><span class="sxs-lookup"><span data-stu-id="33023-153">Error while using the Consume Adapter Service add-in or Add Adapter Service Reference plug-in on a 64-bit installation</span></span>  
+ <span data-ttu-id="33023-154">**问题**</span><span class="sxs-lookup"><span data-stu-id="33023-154">**Problem**</span></span>  
+
+ <span data-ttu-id="33023-155">使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]或[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]从[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]运行的 64 位版本的 64 位计算机上[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]会导致以下错误：</span><span class="sxs-lookup"><span data-stu-id="33023-155">Using the [!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)] or the [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)] from [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] on a 64-bit computer running 64-bit version of the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] results in the following error:</span></span>  
+
 ```  
 No valid adapters are installed on this machine  
 ```  
-  
- <span data-ttu-id="38216-156">**可能的原因**</span><span class="sxs-lookup"><span data-stu-id="38216-156">**Cause**</span></span>  
-  
- <span data-ttu-id="38216-157">[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]是 WCF 自定义绑定，它在 machine.config 文件中的 System.ServiceModel 下注册。</span><span class="sxs-lookup"><span data-stu-id="38216-157">The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] is a WCF custom binding, which is registered under System.ServiceModel in the machine.config file.</span></span> <span data-ttu-id="38216-158">64 位平台都有两个 machine.config 文件，其中一个 32 位应用程序使用，另一个 64 位应用程序使用。</span><span class="sxs-lookup"><span data-stu-id="38216-158">A 64-bit platform has two machine.config files, one used by the 32-bit applications and the other used by the 64-bit applications.</span></span> <span data-ttu-id="38216-159">因此，在安装 64 位版本的[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]，安装向导在 64 位版本的 machine.config 文件中注册绑定。</span><span class="sxs-lookup"><span data-stu-id="38216-159">So, when you install the 64-bit version of the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)], the setup wizard registers the bindings in the 64-bit version of the machine.config file.</span></span> <span data-ttu-id="38216-160">但是，[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]作为 32 位进程运行，因此启动[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]从[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]，插件检查 machine.config 文件的 32 位版本中的绑定和失败为错误。</span><span class="sxs-lookup"><span data-stu-id="38216-160">However, [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] runs as a 32-bit process and hence when you launch the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] from [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], the plug-in checks for the bindings in the 32-bit version of the machine.config file and fails giving an error.</span></span>  
-  
- <span data-ttu-id="38216-161">**解决方法**</span><span class="sxs-lookup"><span data-stu-id="38216-161">**Resolution**</span></span>  
-  
--   <span data-ttu-id="38216-162">安装的 32 位和 64 位版本[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]在 64 位[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]安装。</span><span class="sxs-lookup"><span data-stu-id="38216-162">Install both the 32-bit and 64-bit versions of the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] on a 64-bit [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] installation.</span></span>  
-  
-    > [!IMPORTANT]
-    >  <span data-ttu-id="38216-163">你必须只有 64 位[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]安装。</span><span class="sxs-lookup"><span data-stu-id="38216-163">You must only have a 64-bit [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] installation.</span></span> <span data-ttu-id="38216-164">通过并行安装 32 位和 64 位[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]不支持在一台计算机上。</span><span class="sxs-lookup"><span data-stu-id="38216-164">Side-by-side installation of 32-bit and 64-bit [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] on a single computer is not supported.</span></span>  
-  
--   <span data-ttu-id="38216-165">安装修补程序集 11.1.0.7 的 Oracle 客户端 11.1.0.6 Oracle 数据访问组件的 32 位和 64 位版本。</span><span class="sxs-lookup"><span data-stu-id="38216-165">Install both the 32-bit and 64-bit versions of the Oracle Data Access Components for Oracle Client 11.1.0.6 with Patch Set 11.1.0.7.</span></span>  
-  
-    > [!NOTE]
-    >  <span data-ttu-id="38216-166">若要确保你的应用程序与 ODP.NET 的最新版本，你必须具有"策略 Dll"在计算机上安装并在 GAC 中注册。</span><span class="sxs-lookup"><span data-stu-id="38216-166">To make sure your application works with the most recent version of ODP.NET, you must have the "policy DLLs" installed on the computer and registered in the GAC.</span></span> <span data-ttu-id="38216-167">有关详细信息，请参阅"Oracle 数据提供程序的.NET 常见问题"在[http://go.microsoft.com/fwlink/p/?LinkId=92834](http://go.microsoft.com/fwlink/p/?LinkId=92834)。</span><span class="sxs-lookup"><span data-stu-id="38216-167">For more information, see "Oracle Data Provider for .NET FAQ" at [http://go.microsoft.com/fwlink/p/?LinkId=92834](http://go.microsoft.com/fwlink/p/?LinkId=92834).</span></span>  
-  
-###  <a name="BKMK_OraAppInvalidBinding"></a><span data-ttu-id="38216-168">在 BizTalk Server 管理控制台中配置 Oracle E-business Suite 适配器的端口，在 64 位安装上时的无效的绑定错误</span><span class="sxs-lookup"><span data-stu-id="38216-168">Invalid binding error while configuring Oracle E-Business Suite adapter ports in BizTalk Server Administration Console on a 64-bit installation</span></span>  
- <span data-ttu-id="38216-169">**问题**</span><span class="sxs-lookup"><span data-stu-id="38216-169">**Problem**</span></span>  
-  
- <span data-ttu-id="38216-170">当你尝试配置中的适配器的端口[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台中，你将收到以下错误：</span><span class="sxs-lookup"><span data-stu-id="38216-170">When you try to configure a port for the adapter in [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console, you get the following error:</span></span>  
-  
+
+ <span data-ttu-id="33023-156">**原因**</span><span class="sxs-lookup"><span data-stu-id="33023-156">**Cause**</span></span>  
+
+ <span data-ttu-id="33023-157">[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]是 WCF 自定义绑定，后者在 machine.config 文件中的 System.ServiceModel 下注册。</span><span class="sxs-lookup"><span data-stu-id="33023-157">The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] is a WCF custom binding, which is registered under System.ServiceModel in the machine.config file.</span></span> <span data-ttu-id="33023-158">64 位平台都有两个 machine.config 文件、 一个 32 位应用程序使用，另一个 64 位应用程序使用。</span><span class="sxs-lookup"><span data-stu-id="33023-158">A 64-bit platform has two machine.config files, one used by the 32-bit applications and the other used by the 64-bit applications.</span></span> <span data-ttu-id="33023-159">因此，当你安装 64 位版本的[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]，安装向导在 machine.config 文件的 64 位版本中注册绑定。</span><span class="sxs-lookup"><span data-stu-id="33023-159">So, when you install the 64-bit version of the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)], the setup wizard registers the bindings in the 64-bit version of the machine.config file.</span></span> <span data-ttu-id="33023-160">但是，[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]作为 32 位进程运行，因此启动[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]从[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]，该插件检查 machine.config 文件的 32 位版本中的绑定并失败错误。</span><span class="sxs-lookup"><span data-stu-id="33023-160">However, [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] runs as a 32-bit process and hence when you launch the [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)] from [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], the plug-in checks for the bindings in the 32-bit version of the machine.config file and fails giving an error.</span></span>  
+
+ <span data-ttu-id="33023-161">**解决方法**</span><span class="sxs-lookup"><span data-stu-id="33023-161">**Resolution**</span></span>  
+
+- <span data-ttu-id="33023-162">安装的 32 位和 64 位版本[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]64 位上[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]安装。</span><span class="sxs-lookup"><span data-stu-id="33023-162">Install both the 32-bit and 64-bit versions of the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] on a 64-bit [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] installation.</span></span>  
+
+  > [!IMPORTANT]
+  >  <span data-ttu-id="33023-163">必须只有 64 位[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]安装。</span><span class="sxs-lookup"><span data-stu-id="33023-163">You must only have a 64-bit [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] installation.</span></span> <span data-ttu-id="33023-164">通过并行安装 32 位和 64 位的[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]不支持在一台计算机上。</span><span class="sxs-lookup"><span data-stu-id="33023-164">Side-by-side installation of 32-bit and 64-bit [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] on a single computer is not supported.</span></span>  
+
+- <span data-ttu-id="33023-165">安装修补程序集 11.1.0.7 的 Oracle 客户端 11.1.0.6 Oracle 数据访问组件的 32 位和 64 位版本。</span><span class="sxs-lookup"><span data-stu-id="33023-165">Install both the 32-bit and 64-bit versions of the Oracle Data Access Components for Oracle Client 11.1.0.6 with Patch Set 11.1.0.7.</span></span>  
+
+  > [!NOTE]
+  >  <span data-ttu-id="33023-166">若要确保你的应用程序处理 ODP.NET 的最新版本，必须具有策略的"Dll"的计算机上安装和在 GAC 中注册。</span><span class="sxs-lookup"><span data-stu-id="33023-166">To make sure your application works with the most recent version of ODP.NET, you must have the "policy DLLs" installed on the computer and registered in the GAC.</span></span> <span data-ttu-id="33023-167">有关详细信息，请参阅"Oracle 数据提供程序的.NET 常见问题"处[ http://go.microsoft.com/fwlink/p/?LinkId=92834 ](http://go.microsoft.com/fwlink/p/?LinkId=92834)。</span><span class="sxs-lookup"><span data-stu-id="33023-167">For more information, see "Oracle Data Provider for .NET FAQ" at [http://go.microsoft.com/fwlink/p/?LinkId=92834](http://go.microsoft.com/fwlink/p/?LinkId=92834).</span></span>  
+
+###  <a name="BKMK_OraAppInvalidBinding"></a> <span data-ttu-id="33023-168">无效的绑定上的 64 位安装 BizTalk Server 管理控制台中配置 Oracle E-business Suite 适配器端口时的错误</span><span class="sxs-lookup"><span data-stu-id="33023-168">Invalid binding error while configuring Oracle E-Business Suite adapter ports in BizTalk Server Administration Console on a 64-bit installation</span></span>  
+ <span data-ttu-id="33023-169">**问题**</span><span class="sxs-lookup"><span data-stu-id="33023-169">**Problem**</span></span>  
+
+ <span data-ttu-id="33023-170">当您尝试为中的适配器配置端口[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台中，则会收到以下错误：</span><span class="sxs-lookup"><span data-stu-id="33023-170">When you try to configure a port for the adapter in [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console, you get the following error:</span></span>  
+
 ```  
 "Unable to create binding configuration element for editing. Check the values of the BindingType and BindingConfiguration properties.  
 (Microsoft.Biztalk.Adapter.Wcf.Converters.CreateBindingException) Unable to get binding type for binding extension "oracleEBSBinding".  
 Verify the binding extension is registered in machine.config."  
 ```  
-  
- <span data-ttu-id="38216-171">**可能的原因**</span><span class="sxs-lookup"><span data-stu-id="38216-171">**Cause**</span></span>  
-  
- <span data-ttu-id="38216-172">[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]是 WCF 自定义绑定，它在 machine.config 文件中的 System.ServiceModel 下注册。</span><span class="sxs-lookup"><span data-stu-id="38216-172">The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] is a WCF custom binding, which is registered under System.ServiceModel in the machine.config file.</span></span> <span data-ttu-id="38216-173">64 位平台都有两个 machine.config 文件，其中一个 32 位应用程序使用，另一个 64 位应用程序使用。</span><span class="sxs-lookup"><span data-stu-id="38216-173">A 64-bit platform has two machine.config files, one used by the 32-bit applications and the other used by the 64-bit applications.</span></span> <span data-ttu-id="38216-174">因此，在安装 64 位版本的[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]，安装向导在 64 位版本的 machine.config 文件中注册绑定。</span><span class="sxs-lookup"><span data-stu-id="38216-174">So, when you install the 64-bit version of the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)], the setup wizard registers the bindings in the 64-bit version of the machine.config file.</span></span> <span data-ttu-id="38216-175">但是，[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]作为 32 位进程运行的管理控制台，因此当你配置为适配器的端口时，它检查 machine.config 文件的 32 位版本中的绑定无法提供错误。</span><span class="sxs-lookup"><span data-stu-id="38216-175">However, [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console runs as a 32-bit process and hence when you configure a port for the adapter, it checks for the bindings in the 32-bit version of the machine.config file and fails giving an error.</span></span>  
-  
- <span data-ttu-id="38216-176">**解决方法**</span><span class="sxs-lookup"><span data-stu-id="38216-176">**Resolution**</span></span>  
-  
--   <span data-ttu-id="38216-177">安装的 32 位和 64 位版本[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]在 64 位[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]安装。</span><span class="sxs-lookup"><span data-stu-id="38216-177">Install both the 32-bit and 64-bit versions of the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] on a 64-bit [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] installation.</span></span>  
-  
-    > [!IMPORTANT]
-    >  <span data-ttu-id="38216-178">你必须只有 64 位[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]安装。</span><span class="sxs-lookup"><span data-stu-id="38216-178">You must only have a 64-bit [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] installation.</span></span> <span data-ttu-id="38216-179">通过并行安装 32 位和 64 位[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]不支持在一台计算机上。</span><span class="sxs-lookup"><span data-stu-id="38216-179">Side-by-side installation of 32-bit and 64-bit [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] on a single computer is not supported.</span></span>  
-  
--   <span data-ttu-id="38216-180">安装修补程序集 11.1.0.7 的 Oracle 客户端 11.1.0.6 Oracle 数据访问组件的 32 位和 64 位版本。</span><span class="sxs-lookup"><span data-stu-id="38216-180">Install both the 32-bit and 64-bit versions of the Oracle Data Access Components for Oracle Client 11.1.0.6 with Patch Set 11.1.0.7.</span></span>  
-  
-    > [!NOTE]
-    >  <span data-ttu-id="38216-181">若要确保你的应用程序与 ODP.NET 的最新版本，你必须具有"策略 Dll"在计算机上安装并在 GAC 中注册。</span><span class="sxs-lookup"><span data-stu-id="38216-181">To make sure your application works with the most recent version of ODP.NET, you must have the "policy DLLs" installed on the computer and registered in the GAC.</span></span> <span data-ttu-id="38216-182">有关详细信息，请参阅"Oracle 数据提供程序的.NET 常见问题"在[http://go.microsoft.com/fwlink/p/?LinkId=92834](http://go.microsoft.com/fwlink/p/?LinkId=92834)。</span><span class="sxs-lookup"><span data-stu-id="38216-182">For more information, see "Oracle Data Provider for .NET FAQ" at [http://go.microsoft.com/fwlink/p/?LinkId=92834](http://go.microsoft.com/fwlink/p/?LinkId=92834).</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="38216-183">另请参阅</span><span class="sxs-lookup"><span data-stu-id="38216-183">See Also</span></span>  
-[<span data-ttu-id="38216-184">故障排除 Oracle EBS 适配器</span><span class="sxs-lookup"><span data-stu-id="38216-184">Troubleshooting the Oracle EBS adapter</span></span>](../../adapters-and-accelerators/adapter-oracle-ebs/troubleshooting-the-oracle-ebs-adapter.md)
+
+ <span data-ttu-id="33023-171">**原因**</span><span class="sxs-lookup"><span data-stu-id="33023-171">**Cause**</span></span>  
+
+ <span data-ttu-id="33023-172">[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]是 WCF 自定义绑定，后者在 machine.config 文件中的 System.ServiceModel 下注册。</span><span class="sxs-lookup"><span data-stu-id="33023-172">The [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)] is a WCF custom binding, which is registered under System.ServiceModel in the machine.config file.</span></span> <span data-ttu-id="33023-173">64 位平台都有两个 machine.config 文件、 一个 32 位应用程序使用，另一个 64 位应用程序使用。</span><span class="sxs-lookup"><span data-stu-id="33023-173">A 64-bit platform has two machine.config files, one used by the 32-bit applications and the other used by the 64-bit applications.</span></span> <span data-ttu-id="33023-174">因此，当你安装 64 位版本的[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]，安装向导在 machine.config 文件的 64 位版本中注册绑定。</span><span class="sxs-lookup"><span data-stu-id="33023-174">So, when you install the 64-bit version of the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)], the setup wizard registers the bindings in the 64-bit version of the machine.config file.</span></span> <span data-ttu-id="33023-175">但是，[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]作为 32 位进程运行管理控制台，因此在配置适配器的端口时，它会检查 32 位版本的 machine.config 文件中的绑定和失败错误。</span><span class="sxs-lookup"><span data-stu-id="33023-175">However, [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] Administration console runs as a 32-bit process and hence when you configure a port for the adapter, it checks for the bindings in the 32-bit version of the machine.config file and fails giving an error.</span></span>  
+
+ <span data-ttu-id="33023-176">**解决方法**</span><span class="sxs-lookup"><span data-stu-id="33023-176">**Resolution**</span></span>  
+
+- <span data-ttu-id="33023-177">安装的 32 位和 64 位版本[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]64 位上[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]安装。</span><span class="sxs-lookup"><span data-stu-id="33023-177">Install both the 32-bit and 64-bit versions of the [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] on a 64-bit [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] installation.</span></span>  
+
+  > [!IMPORTANT]
+  >  <span data-ttu-id="33023-178">必须只有 64 位[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]安装。</span><span class="sxs-lookup"><span data-stu-id="33023-178">You must only have a 64-bit [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] installation.</span></span> <span data-ttu-id="33023-179">通过并行安装 32 位和 64 位的[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]不支持在一台计算机上。</span><span class="sxs-lookup"><span data-stu-id="33023-179">Side-by-side installation of 32-bit and 64-bit [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] on a single computer is not supported.</span></span>  
+
+- <span data-ttu-id="33023-180">安装修补程序集 11.1.0.7 的 Oracle 客户端 11.1.0.6 Oracle 数据访问组件的 32 位和 64 位版本。</span><span class="sxs-lookup"><span data-stu-id="33023-180">Install both the 32-bit and 64-bit versions of the Oracle Data Access Components for Oracle Client 11.1.0.6 with Patch Set 11.1.0.7.</span></span>  
+
+  > [!NOTE]
+  >  <span data-ttu-id="33023-181">若要确保你的应用程序处理 ODP.NET 的最新版本，必须具有策略的"Dll"的计算机上安装和在 GAC 中注册。</span><span class="sxs-lookup"><span data-stu-id="33023-181">To make sure your application works with the most recent version of ODP.NET, you must have the "policy DLLs" installed on the computer and registered in the GAC.</span></span> <span data-ttu-id="33023-182">有关详细信息，请参阅"Oracle 数据提供程序的.NET 常见问题"处[ http://go.microsoft.com/fwlink/p/?LinkId=92834 ](http://go.microsoft.com/fwlink/p/?LinkId=92834)。</span><span class="sxs-lookup"><span data-stu-id="33023-182">For more information, see "Oracle Data Provider for .NET FAQ" at [http://go.microsoft.com/fwlink/p/?LinkId=92834](http://go.microsoft.com/fwlink/p/?LinkId=92834).</span></span>  
+
+## <a name="see-also"></a><span data-ttu-id="33023-183">请参阅</span><span class="sxs-lookup"><span data-stu-id="33023-183">See Also</span></span>  
+[<span data-ttu-id="33023-184">Oracle EBS 适配器故障排除</span><span class="sxs-lookup"><span data-stu-id="33023-184">Troubleshooting the Oracle EBS adapter</span></span>](../../adapters-and-accelerators/adapter-oracle-ebs/troubleshooting-the-oracle-ebs-adapter.md)

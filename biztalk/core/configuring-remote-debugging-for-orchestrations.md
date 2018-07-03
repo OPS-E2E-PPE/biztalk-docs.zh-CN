@@ -1,5 +1,5 @@
 ---
-title: 配置业务流程的远程调试 |Microsoft 文档
+title: 为业务流程配置远程调试 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,17 +18,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4184b82efccd0ab2dcc2b871b6389b28148754c0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6f5d28c13cb9da4454efcad1a43a4048c8881ea8
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22233405"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36967286"
 ---
-# <a name="configuring-remote-debugging-for-orchestrations"></a><span data-ttu-id="7fcf6-102">为业务流程配置远程调试</span><span class="sxs-lookup"><span data-stu-id="7fcf6-102">Configuring Remote Debugging for Orchestrations</span></span>
-<span data-ttu-id="7fcf6-103">您可以完全配置客户端和服务器之间的远程调试。</span><span class="sxs-lookup"><span data-stu-id="7fcf6-103">You can completely configure remote debugging between client and server.</span></span> <span data-ttu-id="7fcf6-104">Microsoft.XLANGs.BizTalk.Client.dll.config 中指定客户端配置。BTSNTSvc.exe.config 中指定的服务器配置。以下是每个的默认配置的列表。</span><span class="sxs-lookup"><span data-stu-id="7fcf6-104">The client configuration is specified in Microsoft.XLANGs.BizTalk.Client.dll.config. The server configuration is specified in BTSNTSvc.exe.config. The following is a listing of the default configuration for each.</span></span>  
+# <a name="configuring-remote-debugging-for-orchestrations"></a><span data-ttu-id="51a7c-102">为业务流程配置远程调试</span><span class="sxs-lookup"><span data-stu-id="51a7c-102">Configuring Remote Debugging for Orchestrations</span></span>
+<span data-ttu-id="51a7c-103">您可以完全配置客户端和服务器之间的远程调试。</span><span class="sxs-lookup"><span data-stu-id="51a7c-103">You can completely configure remote debugging between client and server.</span></span> <span data-ttu-id="51a7c-104">在 Microsoft.XLANGs.BizTalk.Client.dll.config 中指定客户端配置。在 BTSNTSvc.exe.config 中指定服务器配置。以下是为每个默认配置的列表。</span><span class="sxs-lookup"><span data-stu-id="51a7c-104">The client configuration is specified in Microsoft.XLANGs.BizTalk.Client.dll.config. The server configuration is specified in BTSNTSvc.exe.config. The following is a listing of the default configuration for each.</span></span>  
   
-## <a name="client-microsoftxlangsbiztalkclientdllconfig"></a><span data-ttu-id="7fcf6-105">客户端 (Microsoft.XLANGs.BizTalk.Client.dll.config)</span><span class="sxs-lookup"><span data-stu-id="7fcf6-105">Client (Microsoft.XLANGs.BizTalk.Client.dll.config)</span></span>  
+## <a name="client-microsoftxlangsbiztalkclientdllconfig"></a><span data-ttu-id="51a7c-105">客户端 (Microsoft.XLANGs.BizTalk.Client.dll.config)</span><span class="sxs-lookup"><span data-stu-id="51a7c-105">Client (Microsoft.XLANGs.BizTalk.Client.dll.config)</span></span>  
   
 ```  
 <configuration>  
@@ -57,7 +57,7 @@ ms.locfileid: "22233405"
 </configuration>  
 ```  
   
-## <a name="serverbtsntsvcexeconfig"></a><span data-ttu-id="7fcf6-106">服务器 (BTSNTSvc.exe.config)</span><span class="sxs-lookup"><span data-stu-id="7fcf6-106">Server(BTSNTSvc.exe.config)</span></span>  
+## <a name="serverbtsntsvcexeconfig"></a><span data-ttu-id="51a7c-106">服务器 (BTSNTSvc.exe.config)</span><span class="sxs-lookup"><span data-stu-id="51a7c-106">Server(BTSNTSvc.exe.config)</span></span>  
   
 ```  
 <?xml version="1.0" ?>  
@@ -91,32 +91,32 @@ ms.locfileid: "22233405"
 </configuration>  
 ```  
   
-## <a name="configurable-parameters"></a><span data-ttu-id="7fcf6-107">可配置的参数</span><span class="sxs-lookup"><span data-stu-id="7fcf6-107">Configurable Parameters</span></span>  
- <span data-ttu-id="7fcf6-108">默认值将确保最高安全性的配置。</span><span class="sxs-lookup"><span data-stu-id="7fcf6-108">The default ensures maximum security configuration.</span></span> <span data-ttu-id="7fcf6-109">但是，用户可以更改这些默认值，并且这些文件处于 ACL 的控制下，因为它们处于程序文件文件夹中。</span><span class="sxs-lookup"><span data-stu-id="7fcf6-109">However it is left to the user to change these defaults and these files are ACL'ed since they are in the program files folder.</span></span>  
+## <a name="configurable-parameters"></a><span data-ttu-id="51a7c-107">可配置的参数</span><span class="sxs-lookup"><span data-stu-id="51a7c-107">Configurable Parameters</span></span>  
+ <span data-ttu-id="51a7c-108">默认值将确保最高安全性的配置。</span><span class="sxs-lookup"><span data-stu-id="51a7c-108">The default ensures maximum security configuration.</span></span> <span data-ttu-id="51a7c-109">但是，用户可以更改这些默认值，并且这些文件处于 ACL 的控制下，因为它们处于程序文件文件夹中。</span><span class="sxs-lookup"><span data-stu-id="51a7c-109">However it is left to the user to change these defaults and these files are ACL'ed since they are in the program files folder.</span></span>  
   
- <span data-ttu-id="7fcf6-110">元素\<提供程序 / > 是可选的如果未提供将导致的通道不会相互进行身份验证使用自定义的接收器。</span><span class="sxs-lookup"><span data-stu-id="7fcf6-110">The element \<provider/> is optional and if not provided will cause the channels not to be mutually authenticated using the custom sinks.</span></span> <span data-ttu-id="7fcf6-111">但是，这也是一个应该禁用的危险选项，因为它将开放通道。</span><span class="sxs-lookup"><span data-stu-id="7fcf6-111">However this is a dangerous option to turn off as it will open up the channels.</span></span> <span data-ttu-id="7fcf6-112">如果看重性能并且安全攻击无关紧要，则可以设置此元素。</span><span class="sxs-lookup"><span data-stu-id="7fcf6-112">This can be done for better performance and when security attacks are not a concern.</span></span>  
+ <span data-ttu-id="51a7c-110">元素\<提供程序 / > 是可选的如果未提供会导致将互相进行身份验证使用自定义接收器对通道。</span><span class="sxs-lookup"><span data-stu-id="51a7c-110">The element \<provider/> is optional and if not provided will cause the channels not to be mutually authenticated using the custom sinks.</span></span> <span data-ttu-id="51a7c-111">但是，这也是一个应该禁用的危险选项，因为它将开放通道。</span><span class="sxs-lookup"><span data-stu-id="51a7c-111">However this is a dangerous option to turn off as it will open up the channels.</span></span> <span data-ttu-id="51a7c-112">如果看重性能并且安全攻击无关紧要，则可以设置此元素。</span><span class="sxs-lookup"><span data-stu-id="51a7c-112">This can be done for better performance and when security attacks are not a concern.</span></span>  
   
- <span data-ttu-id="7fcf6-113">该通道元素可具有属性 rejectRemoteRequests = true，这将只启用本地调用并且拒绝远程请求。</span><span class="sxs-lookup"><span data-stu-id="7fcf6-113">The channel element can have property rejectRemoteRequests = true which will enable only local calls and reject remote requests.</span></span>  
+ <span data-ttu-id="51a7c-113">该通道元素可具有属性 rejectRemoteRequests = true，这将只启用本地调用并且拒绝远程请求。</span><span class="sxs-lookup"><span data-stu-id="51a7c-113">The channel element can have property rejectRemoteRequests = true which will enable only local calls and reject remote requests.</span></span>  
   
- <span data-ttu-id="7fcf6-114">中的 securityPackage 属性\<serverProviders / > 元素可以具有任何以下值：</span><span class="sxs-lookup"><span data-stu-id="7fcf6-114">The securityPackage attribute in the \<serverProviders/> element can have any of the following values:</span></span>  
+ <span data-ttu-id="51a7c-114">中的 securityPackage 属性\<serverProviders / > 元素可以具有任何以下值：</span><span class="sxs-lookup"><span data-stu-id="51a7c-114">The securityPackage attribute in the \<serverProviders/> element can have any of the following values:</span></span>  
   
--   <span data-ttu-id="7fcf6-115">negotiate</span><span class="sxs-lookup"><span data-stu-id="7fcf6-115">negotiate</span></span>  
+- <span data-ttu-id="51a7c-115">negotiate</span><span class="sxs-lookup"><span data-stu-id="51a7c-115">negotiate</span></span>  
   
--   <span data-ttu-id="7fcf6-116">ntlm</span><span class="sxs-lookup"><span data-stu-id="7fcf6-116">ntlm</span></span>  
+- <span data-ttu-id="51a7c-116">ntlm</span><span class="sxs-lookup"><span data-stu-id="51a7c-116">ntlm</span></span>  
   
--   <span data-ttu-id="7fcf6-117">Kerberos</span><span class="sxs-lookup"><span data-stu-id="7fcf6-117">Kerberos</span></span>  
+- <span data-ttu-id="51a7c-117">Kerberos</span><span class="sxs-lookup"><span data-stu-id="51a7c-117">Kerberos</span></span>  
   
- <span data-ttu-id="7fcf6-118">中的 authenticationLevel 属性\<serverProviders / > 元素可以具有任何以下值：</span><span class="sxs-lookup"><span data-stu-id="7fcf6-118">The authenticationLevel attribute in the \<serverProviders/> element can have any of the following values:</span></span>  
+  <span data-ttu-id="51a7c-118">中的 authenticationLevel 属性\<serverProviders / > 元素可以具有任何以下值：</span><span class="sxs-lookup"><span data-stu-id="51a7c-118">The authenticationLevel attribute in the \<serverProviders/> element can have any of the following values:</span></span>  
   
--   <span data-ttu-id="7fcf6-119">packetPrivacy - 消息将被加密/解密</span><span class="sxs-lookup"><span data-stu-id="7fcf6-119">packetPrivacy  - the messages will be encrypted/decrypted</span></span>  
+- <span data-ttu-id="51a7c-119">packetPrivacy - 消息将被加密/解密</span><span class="sxs-lookup"><span data-stu-id="51a7c-119">packetPrivacy  - the messages will be encrypted/decrypted</span></span>  
   
--   <span data-ttu-id="7fcf6-120">packetIntegrity – 消息将被签名/验证</span><span class="sxs-lookup"><span data-stu-id="7fcf6-120">packetIntegrity – the messages will be signed/verified</span></span>  
+- <span data-ttu-id="51a7c-120">packetIntegrity – 消息将被签名/验证</span><span class="sxs-lookup"><span data-stu-id="51a7c-120">packetIntegrity – the messages will be signed/verified</span></span>  
   
--   <span data-ttu-id="7fcf6-121">call - 消息将按原样发送</span><span class="sxs-lookup"><span data-stu-id="7fcf6-121">call  - the messages will be sent as is</span></span>  
+- <span data-ttu-id="51a7c-121">call - 消息将按原样发送</span><span class="sxs-lookup"><span data-stu-id="51a7c-121">call  - the messages will be sent as is</span></span>  
   
- <span data-ttu-id="7fcf6-122">中的 ref 属性\<通道 / > 元素可以将更改为 tcp 或 http。</span><span class="sxs-lookup"><span data-stu-id="7fcf6-122">The ref attribute in the \<channel/> element can be changed to tcp or http.</span></span> <span data-ttu-id="7fcf6-123">端口和名称属性中\<通道 / > 元素也可以更改为显式值。</span><span class="sxs-lookup"><span data-stu-id="7fcf6-123">The port and name attribute in the \<channel/> element can be changed as well to explicit values.</span></span>  
+  <span data-ttu-id="51a7c-122">中的 ref 属性\<通道 / > 元素可以更改为 tcp 或 http。</span><span class="sxs-lookup"><span data-stu-id="51a7c-122">The ref attribute in the \<channel/> element can be changed to tcp or http.</span></span> <span data-ttu-id="51a7c-123">Port 和 name 属性中\<通道 / > 元素也可以更改为显式值。</span><span class="sxs-lookup"><span data-stu-id="51a7c-123">The port and name attribute in the \<channel/> element can be changed as well to explicit values.</span></span>  
   
- <span data-ttu-id="7fcf6-124">有关详细信息，请参阅 .NET Framework 开发人员指南（通道和格式化程序配置属性）。</span><span class="sxs-lookup"><span data-stu-id="7fcf6-124">For more information, see .NET Framework Developer's Guide (Channel and formatter configuration properties).</span></span>  
+  <span data-ttu-id="51a7c-124">有关详细信息，请参阅 .NET Framework 开发人员指南（通道和格式化程序配置属性）。</span><span class="sxs-lookup"><span data-stu-id="51a7c-124">For more information, see .NET Framework Developer's Guide (Channel and formatter configuration properties).</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="7fcf6-125">另请参阅</span><span class="sxs-lookup"><span data-stu-id="7fcf6-125">See Also</span></span>  
- [<span data-ttu-id="7fcf6-126">调试业务流程</span><span class="sxs-lookup"><span data-stu-id="7fcf6-126">Debugging Orchestrations</span></span>](../core/debugging-orchestrations.md)
+## <a name="see-also"></a><span data-ttu-id="51a7c-125">请参阅</span><span class="sxs-lookup"><span data-stu-id="51a7c-125">See Also</span></span>  
+ [<span data-ttu-id="51a7c-126">调试业务流程</span><span class="sxs-lookup"><span data-stu-id="51a7c-126">Debugging Orchestrations</span></span>](../core/debugging-orchestrations.md)
