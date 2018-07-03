@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 11022 |Microsoft 文档
+title: 单一登录： 事件 11022 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ccae36e9beef672e6c5fb7917c88341ce4bb3c08
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5c21128bb7804eae88eacc87cffb0fd0d2c0490c
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276989"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36966782"
 ---
 # <a name="single-sign-on-event-11022"></a>单一登录： 事件 11022
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|11022|  
-|事件源|ENTSSO|  
-|组件|N/A|  
-|符号名称|SSO_WARN_EXTERNAL_TO_EXTERNAL_MAPPING_CONFLICT_NOT_ALLOWED|  
-|消息正文|外部密码更改将导致不同外部帐户的更改。%r<br /><br /> 此操作已被阻止，因为此外部系统的适配器配置为不允许映射冲突。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> Windows 帐户: %3 %r<br /><br /> 外部帐户 1: %4 %r<br /><br /> 外部帐户 2: %5|  
+|                 |                                                                                                                                                                                                                                                                                                                                                                                                |
+|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                                                                                                                                                                   企业单一登录                                                                                                                                                                                    |
+| 产品版本 |                                                                                                                                                                   [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                                                                                                                   |
+|    事件 ID     |                                                                                                                                                                                             11022                                                                                                                                                                                              |
+|  事件源   |                                                                                                                                                                                             ENTSSO                                                                                                                                                                                             |
+|    组件    |                                                                                                                                                                                              N/A                                                                                                                                                                                               |
+|  符号名称  |                                                                                                                                                                   SSO_WARN_EXTERNAL_TO_EXTERNAL_MAPPING_CONFLICT_NOT_ALLOWED                                                                                                                                                                   |
+|  消息正文   | 外部密码更改将导致不同外部帐户的更改。%r<br /><br /> 此操作已被阻止，因为此外部系统的适配器配置为不允许映射冲突。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> Windows 帐户: %3 %r<br /><br /> 外部帐户 1: %4 %r<br /><br /> 外部帐户 2: %5 |
   
 ## <a name="explanation"></a>解释  
  此信息消息表示，外部密码更改（可能导致不同的外部帐户更改）失败。  

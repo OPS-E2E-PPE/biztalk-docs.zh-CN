@@ -1,5 +1,5 @@
 ---
-title: 示例业务方案 |Microsoft 文档
+title: 示例业务方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,70 +17,70 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 78229d903461fe2b84033b036ef02b2838832fc0
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: a6b88bd76a1fac2ebfa5c2f75a6abbf78aab75b7
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26004798"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36966902"
 ---
 # <a name="sample-business-scenario"></a>示例业务方案
-卫生保健进程通常很复杂且涉及许多系统。 一个示例是一个患者进入医院时发生的过程并医生发送实验室测试将患者。 在此过程中涉及是五个方：  
+卫生保健进程通常很复杂，涉及到许多系统。 示例是一个患者进入医院，时发生的过程和一名医生将发送的实验室测试患者。 在此过程中所涉及是五个参与方：  
   
--   越过医生  
+- 参加医生  
   
--   医院注册系统  
+- 医院注册系统  
   
--   临床订单输入系统  
+- 临床订单输入系统  
   
--   与实验室系统  
+- 与实验室系统  
   
--   计费系统  
+- 计费系统  
   
- 在此过程中可能会执行以下步骤：  
+  在此过程中可能会执行以下步骤：  
   
-1.  越过 doctor 注册患者。  
+1.  参加医生注册患者。  
   
-    1.  ADT ^ O04 注册消息广播医院注册系统。  
+    1.  ADT ^ O04 注册消息广播的医院注册系统。  
   
-    2.  ADT ^ O04 消息接收的所有订阅的消息，包括临床订单输入系统和与实验室系统的部门。  
+    2.  ADT ^ O04 消息接收按订阅消息，包括临床订单输入系统和实验室系统的所有部门。  
   
-2.  Doctor 排序从实验室设施诊断研究。  
+2.  医生排序从实验室设施诊断研究。  
   
-    1.  ORM ^ O01 订单消息的业务规则验证之后，从临床订单输入系统，发送。  
+    1.  ORM ^ O01 订单消息的业务规则验证后，从临床订单输入系统中，发送。  
   
-    2.  ORM ^ 与实验室系统收到 O01 消息。  
+    2.  ORM ^ O01 消息由与实验室系统接收。  
   
-3.  实验室接收顺序，并返回一条确认消息。  
+3.  实验室接收订单，并返回一条确认消息。  
   
-    1.  ORR ^ O02 订单确认消息发送实验室系统，指示可以执行顺序。  
+    1.  ORR ^ O02 订单确认消息发送实验室系统中，指明可以执行顺序。  
   
     2.  ORR ^ 临床订单输入系统收到 O02 消息。  
   
-4.  在完成的测试实验室将结果发送到 doctor 和其他部门。  
+4.  测试完成后，实验室将结果发送到医生和其他部门。  
   
-    1.  ORU ^ 从与实验室系统发送 R01 测试结果消息。  
+    1.  ORU ^ 从实验室系统发送 R01 测试结果消息。  
   
-    2.  ORU ^ R01 消息接收临床订单输入系统和计费系统。  
+    2.  ORU ^ 临床订单输入系统和计费系统接收 R01 消息。  
   
-    3.  接口引擎将出一封电子邮件发送到 doctor，接收其无线 PDA 上的实验室结果。  
+    3.  接口引擎会将电子邮件消息将发送到博士，接收无线 PDA 的实验室结果。  
   
 ## <a name="the-btahl7-solution"></a>BTAHL7 解决方案  
- 上述示例业务方案是卫生保健系统集成所需的一个示例。 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]与 BizTalk Server [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 为此应用场景，具有以下功能提供了解决方案：  
+ 上面所述的示例业务方案是卫生保健系统集成所需的示例。 使用 Microsoft BizTalk Accelerator for HL7 MicrosoftBizTalk 服务器 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 为此方案中，具有以下功能提供了解决方案：  
   
-1.  [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]集成所有中心辐射型结构中所涉及的系统。 每个系统直接与通信[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 它们无需直接相互通信。  
+1. [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 集成的所有参与中心辐射型结构系统。 直接与每个系统进行通信[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 它们不需要直接彼此进行通信。  
   
-2.  [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]本机处理 HL7 编码消息。 无需进行自定义编码是必需的。  
+2. [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 本机处理 HL7 编码的消息。 无自定义编码是必需的。  
   
-3.  ADT ^ O04 注册消息广播到所有订阅它的系统。 有关的发行者-订户消息传送模型[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]可以灵活地设置和维护订阅到消息的系统的列表。 你可以添加到系统，或将其从订阅列表删除而不会影响系统的其余部分。  
+3. ADT ^ O04 注册消息广播到所有订阅它的系统。 有关的发布程序-订阅消息传送模型[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]可以灵活地设置和维护系统订阅消息的列表。 可以添加到系统，或将其从删除的订阅列表而不会影响系统的其余部分。  
   
-4.  用于验证 ORM 的业务规则 ^ O01 订单消息可以动态更改而不会影响系统的其余部分。  
+4. 业务规则用于验证 ORM ^ O01 订单消息可以动态更改而不会影响系统的其余部分。  
   
-5.  [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]可以配置为自动生成 ORR ^ O02 订单确认 (ACK) 消息。  
+5. [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 可以配置为自动生成 ORR ^ O02 订单确认 (ACK) 消息。  
   
-6.  如有必要，你可以批处理任何用于发送，与其他消息，然后在批处理中从回执上处理它们。  
+6. 如有必要，可以任何用于发送，与其他人的消息进行批处理和批处理内从回执上处理这些事件。  
   
-7.  你可以验证所有消息在引擎和针对[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2 X 架构发布的 HL7 组织。  
+7. 你可以验证所有消息引擎中和对[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]HL7 组织发布 2 X 架构。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [BizTalk Server 如何满足业务需求](../../adapters-and-accelerators/accelerator-hl7/how-biztalk-server-solves-the-business-need2.md)

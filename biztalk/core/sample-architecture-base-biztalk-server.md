@@ -1,5 +1,5 @@
 ---
-title: 示例体系结构： 基 BizTalk Server |Microsoft 文档
+title: 示例体系结构： 基本 BizTalk Server |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -21,25 +21,25 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ea815c0165f58c28cea8ce7cae35fd6ed7437323
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 47a6464f34cb523df28cfc0fa1bd481ae09a5b4a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22271189"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36969502"
 ---
 # <a name="sample-architecture-base-biztalk-server"></a>示例结构：基本 BizTalk Server
 本主题将介绍基本示例结构。 其中介绍了 BizTalk Server 部署中与适配器无关的组件。 建议所有 BizTalk Server 部署都至少包含这些组件。  
   
  下图显示了 BizTalk Server 基本示例结构的组件。 所有针对适配器的 BizTalk Server 结构中都包含这些组件，我们将在稍后部分中讨论这些结构。  
   
- **图 1 基本体系结构组件**  
+ **图 1 基本结构组件**  
   
- ![基本体系结构组件](../core/media/tdi-sec-refarch.gif "TDI_Sec_RefArch_")  
+ ![基本结构组件](../core/media/tdi-sec-refarch.gif "TDI_Sec_RefArch_")  
   
  此示例结构包含以下部分中介绍的各项。  
   
-## <a name="perimeter-networkinternet"></a>外围 network―internet  
+## <a name="perimeter-networkinternet"></a>外围网络 ― internet  
   
 -   此外围网络（也称为 DMZ、外围安全区域和外围子网）包含提供 Internet 相关服务的服务器。 此域中没有 BizTalk Server、BizTalk 接收位置或企业单一登录服务器。  
   
@@ -56,7 +56,7 @@ ms.locfileid: "22271189"
 -   **SQL Server。** 此服务器包含 BizTalk 数据库。  
   
     > [!IMPORTANT]
-    >  为了进行故障转移保护，建议你对每个 BizTalk 数据库进行群集。 有关 Microsoft SQL Server 故障转移群集的详细信息，请参阅 Microsoft MSDN 网站在[http://go.microsoft.com/fwlink/?LinkID=190216](http://go.microsoft.com/fwlink/?LinkID=190216)。  
+    >  为了进行故障转移保护，建议你对每个 BizTalk 数据库进行群集。 有关 Microsoft SQL Server 故障转移群集的详细信息，请参阅 Microsoft MSDN 网站上的[ http://go.microsoft.com/fwlink/?LinkID=190216 ](http://go.microsoft.com/fwlink/?LinkID=190216)。  
   
     > [!NOTE]
     >  根据所需的性能，你可能必须将 BizTalk 数据库分别放在多台运行 SQL Server 的计算机上。  
@@ -66,40 +66,40 @@ ms.locfileid: "22271189"
 -   **管理工具。** 在这个域中的服务器之一承载管理工具： BizTalk 管理控制台和企业单一登录 (SSO) 管理实用程序。  
   
 ## <a name="firewalls-and-domains"></a>防火墙和域  
- 图 1 中，Forefront Threat Management Gateway (TMG) 2010 服务器用作软件防火墙，以保护和包含每个域。 此外，电子商务域具有自己的域控制器，并且此域不信任其他任何域。 有关如何为域和信任关系配置防火墙的详细信息，请参阅以下 Microsoft 帮助和支持 Web 站点[http://go.microsoft.com/fwlink/?LinkId=25230](http://go.microsoft.com/fwlink/?LinkId=25230)。  
+ 图 1 中，Forefront Threat Management Gateway (TMG) 2010 服务器用作软件防火墙，以保护和包含每个域。 此外，电子商务域具有自己的域控制器，并且此域不信任其他任何域。 有关如何为域和信任关系配置防火墙的详细信息，请参阅 Microsoft 帮助和支持网站上的[ http://go.microsoft.com/fwlink/?LinkId=25230 ](http://go.microsoft.com/fwlink/?LinkId=25230)。  
   
  该示例结构具有两个防火墙：  
   
--   **防火墙 1。** 此防火墙具有三个网络接口： 它将路由从 Internet、 intranet 和外围网络的流量。  
+- **防火墙 1。** 此防火墙具有三个网络接口： 它路由来自 Internet、 intranet 和外围网络的流量。  
   
--   **防火墙 2。** 此防火墙是双宿主： 它将路由从外围网络 （Internet 和 intranet） 和电子商务域的流量。  
+- **防火墙 2。** 此防火墙是双宿主： 它将路由来自外围网络 （Internet 和 intranet） 和电子商务域的流量。  
   
- 外围网络中的计算机不是任何域的成员，并且这些计算机互不通信。  
+  外围网络中的计算机不是任何域的成员，并且这些计算机互不通信。  
   
 ## <a name="ipsec"></a>IPsec  
  建议你使用 Internet 协议安全性 (IPSec) 来帮助确保电子商务域中所有服务器之间通信的安全。 IPsec 规则如下所述：  
   
--   允许 BizTalk Server 与域控制器之间经过验证的通信。  
+- 允许 BizTalk Server 与域控制器之间经过验证的通信。  
   
--   允许 BizTalk Server 与管理工具服务器之间经过验证的通信。  
+- 允许 BizTalk Server 与管理工具服务器之间经过验证的通信。  
   
--   允许 BizTalk Server 与主密钥服务器之间经过验证的通信。  
+- 允许 BizTalk Server 与主密钥服务器之间经过验证的通信。  
   
--   允许 BizTalk Server 与 SQL Server 之间经过验证的通信。  
+- 允许 BizTalk Server 与 SQL Server 之间经过验证的通信。  
   
--   允许主密钥服务器与域控制器之间经过验证的通信。  
+- 允许主密钥服务器与域控制器之间经过验证的通信。  
   
--   允许主密钥服务器与 BizTalk Server（独立、处理、进程内和跟踪主机）之间经过验证的通信。  
+- 允许主密钥服务器与 BizTalk Server（独立、处理、进程内和跟踪主机）之间经过验证的通信。  
   
--   允许主密钥服务器与 SQL Server（SSO 数据库）之间经过验证的通信。  
+- 允许主密钥服务器与 SQL Server（SSO 数据库）之间经过验证的通信。  
   
--   允许域控制器与域中所有服务器之间经过验证的通信。  
+- 允许域控制器与域中所有服务器之间经过验证的通信。  
   
--   允许管理工具服务器与域中所有服务器之间经过验证的通信。  
+- 允许管理工具服务器与域中所有服务器之间经过验证的通信。  
   
- 如果域中存在不需要访问 BizTalk Server、SQL Server、主密钥服务器或管理工具服务器的其他应用程序，则阻止这些应用程序与相应服务器之间的通信。  
+  如果域中存在不需要访问 BizTalk Server、SQL Server、主密钥服务器或管理工具服务器的其他应用程序，则阻止这些应用程序与相应服务器之间的通信。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [规划安全性](../core/planning-for-security.md)   
- [对于小型和中型公司示例体系结构](../core/sample-architectures-for-small-medium-sized-companies.md)   
+ [对于小型和中型公司的示例体系结构](../core/sample-architectures-for-small-medium-sized-companies.md)   
  [威胁模型分析的示例方案](../core/sample-scenarios-for-threat-model-analysis.md)

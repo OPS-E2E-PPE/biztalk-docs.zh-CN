@@ -1,5 +1,5 @@
 ---
-title: 事务支持 |Microsoft 文档
+title: 事务支持 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,73 +16,73 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 57fc1d7a1edd18663cb21a85037cf3e662948fc4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4fc4141e248047b3add5bae6259f1039b75a40bb
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279421"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36969086"
 ---
 # <a name="transaction-support"></a>事务支持
-规则引擎通常不支持事务。 但是，你可以通过更新数据库以事务性方式使用**该组**对象中的以下步骤所示：  
+规则引擎通常不支持事务。 但是，您可以更新数据库中事务的方式使用**DataConnection**对象中的以下步骤所示：  
   
-1.  创建**SqlConnection**对象使用的连接字符串，然后打开该连接。  
+1. 创建**SqlConnection**对象使用的连接字符串，并打开该连接。  
   
-    ```  
-    SqlConnection connection = new SqlConnection("Initial Catalog=Northwind;Data Source=(local);Integrated Security=SSPI;");  
-    connection.Open();  
-    ```  
+   ```  
+   SqlConnection connection = new SqlConnection("Initial Catalog=Northwind;Data Source=(local);Integrated Security=SSPI;");  
+   connection.Open();  
+   ```  
   
-2.  创建**SqlTransaction**对象通过调用**BeginTransaction**步骤 1 中创建连接对象上的方法。  
+2. 创建**SqlTransaction**对象通过调用**BeginTransaction**步骤 1 中创建连接对象上的方法。  
   
-    ```  
-    SqlTransaction transaction = connection.BeginTransaction();  
-    ```  
+   ```  
+   SqlTransaction transaction = connection.BeginTransaction();  
+   ```  
   
-3.  创建**该组**通过使用你在步骤 1 和 2 中创建的连接和事务对象的对象。  
+3. 创建**DataConnection**通过使用在步骤 1 和 2 中创建的连接和事务对象的对象。  
   
-    ```  
-    DataConnection dc = new DataConnection(datasetName, tableName, connection, transaction);  
-    ```  
+   ```  
+   DataConnection dc = new DataConnection(datasetName, tableName, connection, transaction);  
+   ```  
   
-4.  传递**该组**对象与任何其他的事实数据以及你想要将传递给该策略，然后执行策略的事实。  
+4. 传递**DataConnection**对象作为事实与其他事实一起你想要传递给策略，并执行策略。  
   
-    ```  
-    //Passing a .NET object as a fact along with the data connection  
-    MyClass obj = new MyClass();  
-    object[] facts = new object[2];  
-    facts[0] = dc;  
-    facts[1] = obj;  
-    Policy pol = new Policy(policyName);  
-    policy.Execute(facts);    
-    ```  
+   ```  
+   //Passing a .NET object as a fact along with the data connection  
+   MyClass obj = new MyClass();  
+   object[] facts = new object[2];  
+   facts[0] = dc;  
+   facts[1] = obj;  
+   Policy pol = new Policy(policyName);  
+   policy.Execute(facts);    
+   ```  
   
-5.  调用**更新**数据连接对象上的方法。 执行策略时，所进行的所有更新都是在内存中完成的。 必须调用**更新**要更新数据库的数据连接对象上的方法。  
+5. 调用**更新**数据连接对象上的方法。 执行策略时，所进行的所有更新都是在内存中完成的。 必须调用**更新**要更新数据库的数据连接对象上的方法。  
   
-    ```  
-    dc.Update();  
-    ```  
+   ```  
+   dc.Update();  
+   ```  
   
-6.  现在，调用**提交**或**回滚**数据连接对象上基于您自己的逻辑。  
+6. 现在，调用**提交**或**回滚**在数据连接对象上基于你自己的逻辑。  
   
-    ```  
-    //Checking the value of PropertyA in .net object   
-    //to decide whether to commit or rollback  
-    if (obj.PropertyA == true)  
-    transaction.Commit();  
-    else  
-    transaction.Rollback();  
+   ```  
+   //Checking the value of PropertyA in .net object   
+   //to decide whether to commit or rollback  
+   if (obj.PropertyA == true)  
+   transaction.Commit();  
+   else  
+   transaction.Rollback();  
   
-    ```  
+   ```  
   
-7.  关闭连接，并释放策略对象。  
+7. 关闭连接，并释放策略对象。  
   
-    ```  
-    sqlCon.Close();  
-    policy.Dispose();  
-    ```  
+   ```  
+   sqlCon.Close();  
+   policy.Dispose();  
+   ```  
   
- 下列代码是上述所有步骤的完整代码：  
+   下列代码是上述所有步骤的完整代码：  
   
 ```  
 SqlConnection connection = new SqlConnection("Initial Catalog=Northwind;Data Source=(local);Integrated Security=SSPI;");  
@@ -106,8 +106,8 @@ policy.Dispose();
   
 ## <a name="comments"></a>注释  
   
--   你还可以使用**OleDbConnection**和**OleDbTransaction**对象而不是使用**SqlConnection**和**SqlTransaction**若要以事务性方式执行数据库更新的对象。  
+-   此外可以使用**OleDbConnection**并**OleDbTransaction**而不是使用对象**SqlConnection**并**SqlTransaction**以事务方式执行数据库更新的对象。  
   
--   所有通过策略进行的修改都是在内存中完成的。 必须调用**更新**方法**该组**要更新数据库对象。  
+-   所有通过策略进行的修改都是在内存中完成的。 必须调用**更新**方法**DataConnection**对象来更新数据库。  
   
--   你可以提交或回滚事务通过调用**提交**或**回滚**方法**该组**分别对象。
+-   您可以提交或回滚该事务通过调用**提交**或**回滚**方法**DataConnection**分别对象。

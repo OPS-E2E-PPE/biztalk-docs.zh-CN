@@ -1,5 +1,5 @@
 ---
-title: 无法序列化批处理消息，因为没有任何与关联一方发送端口 |Microsoft 文档
+title: 批处理消息无法序列化，因为没有与关联的参与方发送端口 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5b20d10a2c7b584eccc7d1fb57e5132a4ac0d608
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 84915c3544ed6e4222dd7fb035808617b51e5280
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241477"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36969558"
 ---
 # <a name="batch-message-cannot-be-serialized-as-there-is-no-party-associated-with-send-port"></a>批消息不能序列化，因为没有与发送端口相关联的参与方
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|批处理引擎|  
-|符号名称|BatchMessageSerializationFailureDueToMissingParty|  
-|消息正文|批处理消息无法序列化，因为没有与发送端口 {0} 关联的参与方。 请确保有参与方与该端口关联。|  
+|                 |                                                                                                                                            |
+|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                             [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                             |
+| 产品版本 |                                         [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                                         |
+|    事件 ID     |                                                                     -                                                                      |
+|  事件源   |                           [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                           |
+|    组件    |                                                              批处理引擎                                                               |
+|  符号名称  |                                             BatchMessageSerializationFailureDueToMissingParty                                              |
+|  消息正文   | 批处理消息可以不序列化，因为没有与关联的参与方发送端口{0}。 请确保有参与方与该端口关联。 |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明发送管道无法处理保留的交换，因为它无法确定应将消息发送到的参与方。 它无法确定参与方，因为未设置 DestinationPartyName 上下文属性。 因此，发送管道无法确定信封设置。  

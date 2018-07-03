@@ -1,5 +1,5 @@
 ---
-title: 消息验证 |Microsoft 文档
+title: 消息验证 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,20 +15,20 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 940b6aa811cbee845b287c09a66c4b9753313ee0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9b4c94b7a7122572724060b2a45447699e15c1a0
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22205941"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36970190"
 ---
 # <a name="message-validation"></a>消息验证
-2.X 接收和发送管道，则将执行消息验证的 HL7 传入和传出 HL7 消息。 你可以配置验证仅针对 MSH （标头中） 的片段，或为整个消息正文。 此外，它是架构的用户可以针对唯一本地化版本验证。 通过定义一个唯一的命名空间值，并使用此命名空间值 （级别方） 的 HL7 消息传递配置和定义的消息的实际架构的目标命名空间属性中实现此目的。 在运行时， [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 使用命名空间和架构的根引用属性的组合来选择消息分析和验证的相应架构。  
+消息验证发生的传入和传出 HL7 消息 HL7 2.X 接收和发送管道。 你可以配置验证只有 MSH （标头） 段，或整个消息正文。 此外，就可以根据唯一本地化版本的架构进行验证。 通过定义一个唯一的命名空间值，并使用此命名空间值 （在参与方级别） 的 HL7 消息传送配置和定义消息的实际架构的目标命名空间属性中完成此操作。 在运行时，Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 使用命名空间和架构的根引用属性的组合来选择消息分析和验证相应的架构。  
   
- 分析器和序列化程序来执行验证基于当事方与消息关联的设置。 其他方设置，包括批处理、 确认和消息标头重写会影响分析器或序列化程序如何执行验证。  
+ 分析器和序列化程序来执行基于与消息关联的参与方设置的验证。 其他参与方设置，包括批处理、 确认和消息标头重写会影响分析器或序列化程序如何执行验证。  
   
 > [!NOTE]
->  序列化程序执行一系列步骤，包括 （如果适用） 执行标头重写从 MSH 映射，并执行 XML 验证。 如果在标头重写和验证过程同时启用，并标头重写过程到标头字段中输入的值不正确，将会失败消息验证，，即使消息打算通过正文验证。  
+>  序列化程序执行一系列的步骤，包括 （如果适用） 执行从 MSH 映射，标头重写和执行 XML 验证。 如果标头重写和验证过程是同时启用了，并且标头重写过程将不正确的值输入到标头字段，该消息将通过验证，即使该消息是通过正文验证。  
   
-## <a name="see-also"></a>另请参阅  
- [MSH 替代](../../adapters-and-accelerators/accelerator-hl7/msh-override.md)
+## <a name="see-also"></a>请参阅  
+ [ MSH 替代](../../adapters-and-accelerators/accelerator-hl7/msh-override.md)

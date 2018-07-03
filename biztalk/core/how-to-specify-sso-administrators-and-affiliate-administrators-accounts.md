@@ -1,5 +1,5 @@
 ---
-title: 如何指定 SSO Administrators 和 Affiliate Administrators 帐户 |Microsoft 文档
+title: 如何指定 SSO 管理员和关联管理员帐户 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -22,14 +22,14 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6c96e2d99bd6071098a65b3635bb466de44a455d
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: ab6a40db19ae42f0ba4007fd8044d7d7aa086adb
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "25972715"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36968238"
 ---
-# <a name="how-to-specify-sso-administrators-and-affiliate-administrators-accounts"></a>如何指定 SSO Administrators 和 Affiliate Administrators 帐户
+# <a name="how-to-specify-sso-administrators-and-affiliate-administrators-accounts"></a>如何指定 SSO 管理员和关联管理员帐户
 企业单一登录 (SSO) 管理员和关联管理员帐户可以为主机组也可以为个人帐户。 必须首先创建这些帐户，然后才能配置 SSO 系统。  
   
  在使用域帐户时，必须将 SSO 管理员和 SSO 关联管理员帐户作为域控制器中的域全局安全组创建。 域管理员必须创建这些帐户。  
@@ -51,7 +51,7 @@ ms.locfileid: "25972715"
 >  配置向导自动在 SSO 数据库中指定 SSO Administrators 和 SSO Affiliate Administrators 组。  
   
 > [!NOTE]
->  如果未配置 SSO，用户应检查是否在混合模式域使用域本地帐户。  
+>  如果 SSO 不进行配置，用户应检查是否正在混合模式域中使用域本地帐户。  
   
 ### <a name="to-disable-the-enterprise-single-sign-on-system-using-the-mmc-snap-in"></a>使用 MMC 管理单元禁用企业单一登录系统  
   
@@ -59,56 +59,56 @@ ms.locfileid: "25972715"
   
 2.  在 ENTSSO MMC 管理单元的作用域窗格中，展开“企业单一登录”  节点。  
   
-3.  右键单击 **系统**, ，然后单击 **禁用**。  
+3.  右键单击**系统**，然后单击**禁用**。  
   
 ### <a name="to-disable-the-enterprise-single-sign-on-system-using-the-command-line"></a>使用命令行禁用企业单一登录系统  
   
-1.  上 **启动** 菜单上，单击 **运行**, ，然后键入 **cmd**。  
+1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是\<*驱动器*\>: \program Files\Enterprise 单一登录。  
+2.  在命令行上，转至企业单一登录安装目录。 默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。  
   
-3.  类型 **ssomanage** –**disablesso**。  
+3.  类型**ssomanage** –**disablesso**。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
   
 ### <a name="to-update-the-sso-database-using-the-mmc-snap-in"></a>使用 MMC 管理单元更新 SSO 数据库  
   
-1.  上 **启动** 菜单上，单击 **所有程序**, ，**Microsoft Enterprise 上单一登录**, ，，然后 **SSO 管理**。  
+1.  上**启动**菜单上，单击**所有程序**， **Microsoft 企业单一登录**，然后**SSO 管理**。  
   
 2.  在 ENTSSO MMC 管理单元的作用域窗格中，展开“企业单一登录”  节点。  
   
-3.  右键单击 **系统**, ，然后单击 **更新**。  
+3.  右键单击**系统**，然后单击**更新**。  
   
 ### <a name="to-update-the-sso-database-using-the-command-line"></a>使用命令行更新 SSO 数据库  
   
-1.  上 **启动** 菜单上，单击 **运行**, ，然后键入 **cmd**。  
+1. 上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
+2. 在命令行上，转至企业单一登录安装目录。 默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。  
   
-3.  类型 * * ssomanage-updatedb *\<更新文件\>* * *，其中*\<更新文件\>* 是路径和 XML 文件的名称。  
+3. 类型 * * ssomanage – updatedb *\<更新文件\>**<em>，其中 *\<更新文件\></em>是路径和 XML 文件的名称。  
   
-    > [!NOTE]
-    >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
+   > [!NOTE]
+   >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
   
 ### <a name="to-enable-the-enterprise-single-sign-on-system-using-the-mmc-snap-in"></a>使用 MMC 管理单元启用企业单一登录系统  
   
-1.  上 **启动** 菜单上，单击 **所有程序**, ，**Microsoft Enterprise 上单一登录**, ，，然后 **SSO 管理**。  
+1.  上**启动**菜单上，单击**所有程序**， **Microsoft 企业单一登录**，然后**SSO 管理**。  
   
 2.  在 ENTSSO MMC 管理单元的作用域窗格中，展开“企业单一登录”  节点。  
   
-3.  右键单击 **系统**, ，然后单击 **启用**。  
+3.  右键单击**系统**，然后单击**启用**。  
   
 ### <a name="to-enable-the-enterprise-single-sign-on-system-using-the-command-line"></a>使用命令行启用企业单一登录系统  
   
-1.  上 **启动** 菜单上，单击 **运行**, ，然后键入 **cmd**。  
+1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
+2.  在命令行上，转至企业单一登录安装目录。 默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。  
   
-3.  类型 **ssomanage-enablesso**。  
+3.  类型**ssomanage – enablesso**。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [SSO 用户组](../core/sso-user-groups.md)

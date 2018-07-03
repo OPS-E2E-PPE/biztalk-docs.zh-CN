@@ -1,5 +1,5 @@
 ---
-title: 管道添加 SWIFT 反汇编程序或汇编程序 |Microsoft 文档
+title: 将 SWIFT 反汇编程序或汇编程序添加到管道 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,19 +17,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0648e6c51d83a95fb24b36d872e06e157480c5fb
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: f48317c21942e0912f88d3e48523e07728c16ad3
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26005246"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36967998"
 ---
-# <a name="adding-the-swift-disassembler-or-assembler-to-a-pipeline"></a>管道添加 SWIFT 反汇编程序或汇编程序
-可以使用与 BizTalk 管道设计[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]创建自定义 BizTalk 接收和发送管道。 SWIFT 反汇编程序可用于在自定义接收管道中的"反汇编"阶段。 同样，你可以在自定义发送管道中的"汇编"阶段使用 SWIFT 汇编程序。 若要调用的 SWIFT 反汇编程序或从管道设计器工具箱的汇编程序，您将拆装器或汇编程序拖到相应的管道阶段管道设计器画布上。 有关调用反汇编程序集的分步说明，请参阅[模块 3： 添加的管道项目](../../adapters-and-accelerators/accelerator-swift/module-3-adding-a-pipeline-project.md)在端到端教程。 有关使用管道项目或有关管道设计器的详细信息，请参阅 BizTalk Server 帮助。  
+# <a name="adding-the-swift-disassembler-or-assembler-to-a-pipeline"></a>将 SWIFT 反汇编程序或汇编程序添加到管道
+您可以使用 BizTalk 管道设计器与 Microsoft [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]创建自定义 BizTalk 接收和发送管道。 SWIFT 反汇编程序可用于自定义接收管道中的"拆装"阶段。 同样，您可以在自定义发送管道中的"组装"阶段使用 SWIFT 汇编程序。 若要调用的 SWIFT 反汇编程序或组装器管道设计器工具箱中，您将拆装器或组装器拖到相应的管道阶段在管道设计器画布上。 有关调用拆装器或组装器的分步说明，请参阅[模块 3： 添加管道项目](../../adapters-and-accelerators/accelerator-swift/module-3-adding-a-pipeline-project.md)在端到端教程。 有关使用管道项目或有关在管道设计器的详细信息，请参阅 BizTalk Server 帮助。  
   
- 按照设计，SWIFT 反汇编程序需要"反汇编"阶段，以将*最终*调用接收管道的阶段。 使用任何后续阶段将导致意外行为 （反汇编不调用后续阶段的程序或删除上下文属性，它具有之前填充，并在发布到 MessageBox 消息之前提升反汇编程序数据库）。 同样，SWIFT 汇编程序需要"汇编"阶段，以将*第一个*发送管道的阶段。 使用任何前面阶段可能会影响由 SWIFT 汇编程序动态消息类型发现。  
+ SWIFT 反汇编程序按照设计，需要为的"拆装"阶段*最终*调用接收管道阶段。 使用任何后续阶段将导致意外行为 （不调用随后的阶段，此类的拆装器或删除它之前填充名称并将消息发布到 MessageBox 之前升级上下文属性的拆装器数据库）。 同样，SWIFT 汇编程序需要"组装"阶段*第一个*发送管道阶段。 使用任何上述阶段可能会影响通过 SWIFT 汇编程序的动态消息类型发现。  
   
- 你必须手动 SWIFT 反汇编程序和添加汇编程序到管道设计器工具箱第一次使用它们。 中详细介绍了执行此操作的分步说明[模块 3： 添加的管道项目](../../adapters-and-accelerators/accelerator-swift/module-3-adding-a-pipeline-project.md)在端到端教程。 组件将继续出现在工具箱中，一旦你手动将它们添加 (直到你手动将其删除或卸载[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)])。  
+ 手动必须将 SWIFT 反汇编程序和汇编程序添加到管道设计器工具箱第一次使用它们。 中详细介绍了执行此操作的分步说明[模块 3： 添加管道项目](../../adapters-and-accelerators/accelerator-swift/module-3-adding-a-pipeline-project.md)在端到端教程。 组件将继续显示在工具箱中手动添加后 (直到手动删除或卸载[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)])。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 SWIFT 反汇编程序和汇编程序](../../adapters-and-accelerators/accelerator-swift/working-with-the-swift-disassembler-and-assembler.md)

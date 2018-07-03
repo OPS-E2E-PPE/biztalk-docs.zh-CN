@@ -1,5 +1,5 @@
 ---
-title: 撰写消息处理器 （BizTalk Server 示例） |Microsoft 文档
+title: 组合消息处理器 （BizTalk Server 示例） |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,46 +17,46 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3097ef6a0da695c3b07cf68182a374eabed11b5e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: d884fba7d19e26613c457ed5789f847a5c23babc
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25975275"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36969206"
 ---
 # <a name="composed-message-processor-biztalk-server-sample"></a>组合消息处理器（BizTalk Server 示例）
-此示例的目的是构建的撰写的邮件处理器应用程序处理聚合的消息的消息的各个行项。  
+此示例的目的是构建处理聚合消息中的各个行项的组合的消息处理器应用程序。  
   
- 具体而言我们将生成一个业务流程计划其中包括：  
+ 特别是我们将该生成业务流程调度：  
   
-1.  接收包含多个采购订单的批处理的交换消息。  
+1. 接收包含多个采购订单的批处理的交换消息。  
   
-2.  将交换消息分解为单独的采购订单文档。  
+2. 将交换消息分解为单独的采购订单文档。  
   
-3.  处理每个文档 – 将每个采购订单转换成一条发票消息。  
+3. 处理每个文档-每个采购订单转换为发票消息。  
   
-4.  组合成批处理的交换的所有发票消息。  
+4. 将所有发票消息都组装为批处理交换。  
   
- 步骤 3 得到了简化，示例目的。 例如，在更加复杂的应用程序中，业务流程可能会将拆装的采购订单发送给不同的后端库存系统，并在收集到所有响应之后，将这些采购订单聚合为一个批发票消息。  
+   步骤 #3 得到了简化，示例目的。 例如，在更加复杂的应用程序中，业务流程可能会将拆装的采购订单发送给不同的后端库存系统，并在收集到所有响应之后，将这些采购订单聚合为一个批发票消息。  
   
- 有关撰写的邮件处理器模式的详细信息请参阅 [1]。  
+   组合的消息处理器模式的详细信息请参阅 [1]。  
   
 ## <a name="what-this-sample-does"></a>本示例的用途  
- 有以下几节中详细介绍这两种示例解决方案中的两个项目。  
+ 有以下各节详细地介绍这两个示例解决方案中的两个项目。  
   
 ### <a name="pipelines-and-schemas"></a>管道和架构  
  管道和架构的项目包含：  
   
--   为输入的采购订单的交换和输出发票交换的平面文件架构。  
+-   对于输入的采购订单的交换和用于输出发票交换的平面文件架构。  
   
--   若要将采购订单文档转换为发票文档的映射。  
+-   用于将采购订单文档转换为发票文档的映射。  
   
 -   接收和发送管道。  
   
-#### <a name="flat-file-schemas-for-input-and-output-interchanges"></a>输入和输出的交换的平面文件架构  
- 我们的示例应用程序将使用在平面文件格式交换。 以下是购买顺序交换和发票交换的示例：  
+#### <a name="flat-file-schemas-for-input-and-output-interchanges"></a>输入和输出交换的平面文件架构  
+ 我们的示例应用程序将使用在平面文件格式交换。 以下是交换采购订单和发票交换的示例：  
   
- 购买顺序交换 (CMPInput.txt):  
+ 采购订单的交换 (CMPInput.txt):  
   
 ```  
 Northwind Shipping  
@@ -78,14 +78,14 @@ Use cheapest shipping method.
 ITEMS,ITEM101-TT|Plastic flowers|10|4.99|Fragile handle with care,ITEM202-RR|Fertilizer|1|10.99|Lawn fertilizer,ITEM453-XS|Weed killer|1|5.99|Lawn weed killer|1999-05-25  
 ```  
   
- 该交换或采购订单文档，具有标识哪种类型的文档包含的标头：  
+ 采购订单文档或交换，具有标头，用于标识包含哪种类型的文档：  
   
 ```  
 Northwind Shipping  
 Batch type:Purchase Orders  
 ```  
   
- 此交换由三个采购订单单据组成。 一个实例包含如下所示的信息。 如你所见，它包含针对计费和传送的已排序的项的列表以及地址等信息。  
+ 此交换包含三个采购订单文档。 一个实例包含如下所示的信息。 正如您所看到的它包含针对计费和传送的已排序的项列表以及地址等信息。  
   
 ```  
 PO1999-10-20  
@@ -95,7 +95,7 @@ Hurry, my lawn is going wild!
 ITEMS,ITEM872-AA|Lawnmower|1|148.95|Confirm this is electric,ITEM926-AA|Baby Monitor|1|39.98|Confirm this is electric|1999-10-21  
 ```  
   
- 我们想要为此生成发票交换应如下所示：  
+ 我们想要为此生成发票交换应如以下所示：  
   
 ```  
 Northwest Shipping  
@@ -115,16 +115,16 @@ BILLTO,US,John Connor,123 Cedar Street,Mill Valley,CA,90952
 453-XS    Weed killer       1    5.99      Lawn weed killer  
 ```  
   
- 此交换包含购买顺序交换以及该交换的格式以及标头的格式不同是中的信息的子集。  
+ 此交换包含已在购买顺序交换和交换的格式以及标头的格式也是不同的信息的子集。  
   
- 标头是，如下所示：  
+ 标头如下所示：  
   
 ```  
 Northwest Shipping  
 DocumentTypes:Invoices  
 ```  
   
- 文档实例包括以下方案：  
+ 和文档实例包括以下：  
   
 ```  
 INVOICE1999-10-20  
@@ -133,76 +133,76 @@ BILLTO,US,Alice Smith,123 Maple Street,Mill Valley,CA,90952
 926-AA    Baby Monitor      1    39.98     Confirm this is electric  
 ```  
   
- 第一波我们需要创建平面文件架构：  
+ 第一件事我们需要创建用于平面文件架构：  
   
--   采购订单文档 (PO.xsd)  
+- 采购订单文档 (PO.xsd)  
   
--   发票文档 (Invoice.xsd)  
+- 发票文档 (Invoice.xsd)  
   
--   采购订单表头 (POHeader.xsd)  
+- 采购订单标题 (POHeader.xsd)  
   
--   发票标头 (InvoiceHeader.xsd)  
+- 发票标头 (InvoiceHeader.xsd)  
   
- 此示例中，我们将不会以解释创建平面文件架构的过程。 若要了解如何从文档实例创建平面文件架构，请参阅“从文档实例创建平面文件架构”文档部分。  
+  对于此示例，我们不打算介绍创建平面文件架构的过程。 若要了解如何从文档实例创建平面文件架构，请参阅“从文档实例创建平面文件架构”文档部分。  
   
-#### <a name="map-to-transform-purchase-order-document-into-invoice-document"></a>映射用于将采购订单文档转换为发票文档  
- 映射 (PO2Invoice.btm) 将采购订单的实例转换成发票文档。  
+#### <a name="map-to-transform-purchase-order-document-into-invoice-document"></a>用于将采购订单文档转换为发票文档的映射  
+ 地图 (PO2Invoice.btm) 将采购订单的实例转换为发票文档。  
   
 #### <a name="receive-and-send-pipelines"></a>接收和发送管道  
- 接收管道 (FFReceivePipeline.btp) 包含用于处理采购订单交换的平面文件反汇编程序组件。 具体而言，为文件 CMPInput.txt 中的交换，它中移除交换标头，并生成与三个采购订单对应的三个 XML 文档。  
+ 接收管道 (FFReceivePipeline.btp) 包含用于处理采购订单交换的平面文件拆装器组件。 具体而言，对于文件 CMPInput.txt 中交换，它删除交换标头，并生成对应于三个采购订单的三个 XML 文档。  
   
- 平面文件拆装器接收管道中的进行配置所示：  
+ 配置接收管道中的平面文件拆装器所示：  
   
--   **文档架构：** PipelinesAndSchemas.PO  
+- **文档架构：** 属于 PipelinesAndSchemas.PO  
   
--   **标头架构：** PipelinesAndSchemas.POHeader  
+- **标头架构：** PipelinesAndSchemas.POHeader  
   
--   **保留标头：** False  
+- **保留头部：** False  
   
--   **可恢复的交换：** False  
+- **可恢复的交换：** False  
   
--   **尾部架构：** （无）  
+- **尾部架构：** （无）  
   
--   **验证文档结构：** False  
+- **验证文档结构：** False  
   
- 发送管道 (FFSendPipeline.btp) 包含用于创建聚合的发票交换的平面文件汇编组件。  
+  发送管道 (FFSendPipeline.btp) 包含用于创建聚合的发票交换的平面文件组装器组件。  
   
- 发送管道中的平面文件汇编配置所示：  
+  配置发送管道中的平面文件组装器所示：  
   
--   **文档架构：** PipelinesandSchemas.Invoice  
+- **文档架构：** PipelinesandSchemas.Invoice  
   
--   **标头架构：** PipelinesAndSchemas.InvoiceHeader  
+- **标头架构：** PipelinesAndSchemas.InvoiceHeader  
   
--   **保留字节顺序标记：** False  
+- **保留字节顺序标记：** False  
   
--   **面向 charset:** （无）  
+- **目标字符集：** （无）  
   
--   **尾部架构：** （无）  
+- **尾部架构：** （无）  
   
-### <a name="orchestration-schedule"></a>业务流程计划  
- 业务流程计划 (CMP.odx) 会所有主处理这种情况。 执行专门的以下操作：  
+### <a name="orchestration-schedule"></a>业务流程调度  
+ 业务流程调度 (CMP.odx) 是所有主处理发生的位置。 执行专门的以下操作：  
   
--   接收管道执行反汇编采购订单交换  
+-   接收管道执行以拆装交换采购订单  
   
 -   接收管道的每个输出消息转换  
   
--   发送管道执行来组合的发票交换  
+-   发送管道执行来汇集的发票交换  
   
-#### <a name="creating-orchestration-schedule-and-defining-global-variables"></a>创建业务流程计划，并定义全局变量  
- 我们业务流程会收到作为输入平面文件交换，并且将作为输出发送平面文件交换。 正因如此，我们需要定义为类型 （称为 InputInterchange OutputInterchange 分别） 的输入和输出消息不可知的 （即具有 System.Xml.XmlDocument 类型）。  
+#### <a name="creating-orchestration-schedule-and-defining-global-variables"></a>创建业务流程调度和定义全局变量  
+ 我们的业务流程将收到作为输入的平面文件交换，并将作为输出发送平面文件交换。 正因为如此，我们需要定义输入和输出消息 （称为 InputInterchange 和 OutputInterchange 分别） 为的类型无关 （即具有 System.Xml.XmlDocument 类型）。  
   
  另外，我们需要定义用于处理消息的原子作用域。 这一步是必需的，因为接收管道可以在原子作用域内执行。  
   
 #### <a name="executing-receive-pipeline"></a>执行接收管道  
  下一步，我们将添加用于对业务流程中接收到的消息执行接收管道的逻辑。 为此，首先我们将在作用域内声明一个 Microsoft.XLANGs.Pipeline.ReceivePipelineOutputMessages 类型的变量（称为 RcvPipeOutput）。 此变量为允许我们循环访问接收管道输出消息的枚举数。 请注意，为了能够访问此类型和用于从业务流程执行管道的所有其他类型，需要添加对以下程序集的引用：  
   
--   Microsoft.XLANGs.Pipeline.dll  
+- Microsoft.XLANGs.Pipeline.dll  
   
--   Microsoft.BizTalk.Pipeline.dll  
+- Microsoft.BizTalk.Pipeline.dll  
   
- 无法确保接收管道每次均会成功执行。 有时消息的格式可能不正确，这会使管道处理失败。 在业务流程中管道执行失败时会引发可被捕获的异常，并可以执行错误处理逻辑。 为了捕获管道引发的异常，我们需要在具有异常处理功能的非原子作用域内执行管道。 执行管道的实际代码将从该作用域内的表达式形状调用。  
+  无法确保接收管道每次均会成功执行。 有时消息的格式可能不正确，这会使管道处理失败。 在业务流程中管道执行失败时会引发可被捕获的异常，并可以执行错误处理逻辑。 为了捕获管道引发的异常，我们需要在具有异常处理功能的非原子作用域内执行管道。 执行管道的实际代码将从该作用域内的表达式形状调用。  
   
- 在 ExecuteRcvPipe 表达式形状中，编写用于执行接收管道的以下代码行：  
+  在 ExecuteRcvPipe 表达式形状中，编写用于执行接收管道的以下代码行：  
   
 ```  
 RcvPipeOutput = Microsoft.XLANGs.Pipeline.XLANGPipelineManager.ExecuteReceivePipeline(typeof(PipelinesAndSchemas.FFReceivePipeline), InputInterchange);  
@@ -303,7 +303,7 @@ Microsoft.XLANGs.Pipeline.XLANGPipelineManager.ExecuteSendPipeline(typeof(Pipeli
   
     -   登记并启动业务流程，启用接收位置并启动发送端口。  
   
-         如果你选择打开并生成此示例中的项目，而运行 Setup.bat 文件，则必须首先创建强名称密钥对使用.NET Framework 强名称工具 (sn.exe)。 使用该密钥对可以对生成的程序集进行签名。  
+         如果你选择打开并生成此示例中的项目，而无需运行 Setup.bat 文件，必须首先创建强名称密钥对使用.NET Framework 强名称实用工具 (sn.exe)。 使用该密钥对可以对生成的程序集进行签名。  
   
 3.  在尝试运行本示例之前，请确认在生成和初始化过程中 BizTalk Server 未报告任何错误。  
   
@@ -311,14 +311,14 @@ Microsoft.XLANGs.Pipeline.XLANGPipelineManager.ExecuteSendPipeline(typeof(Pipeli
   
     1.  从 BizTalk Server 管理控制台停止并重新启动主机实例。  
   
-    2.  运行 Cleanup.bat。 在第二个运行 Setup.bat 之前，必须运行 Cleanup.bat，时间。  
+    2.  运行 Cleanup.bat。 必须运行 Setup.bat 前运行 Cleanup.bat 时间。  
   
 ## <a name="running-the-sample"></a>运行示例  
  使用以下过程运行 ComposedMessageProcessor 示例。  
   
 #### <a name="to-run-the-composedmessageprocessor-sample"></a>运行 ComposedMessageProcessor 示例  
   
-1.  CMPInput.txt 位于 PipelinesAndSchemas 文件夹中的文本文件复制。 将该文件粘贴到 In 文件夹中。  
+1.  将复制 CMPInput.txt 位于 PipelinesAndSchemas 文件夹中的文本文件。 将该文件粘贴到 In 文件夹中。  
   
 2.  查看在 Out 文件夹中创建的文本文件。此文件包含与 CMPInput.txt 相同的记录，但是文件中的数据格式不同。  
   
@@ -328,5 +328,5 @@ Microsoft.XLANGs.Pipeline.XLANGPipelineManager.ExecuteSendPipeline(typeof(Pipeli
   
     2.  将所有映射消息组装到一起并将其转换为平面文件格式。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [管道（BizTalk Server 示例文件夹）](../core/pipelines-biztalk-server-samples-folder.md)

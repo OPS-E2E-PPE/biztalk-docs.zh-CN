@@ -1,5 +1,5 @@
 ---
-title: 第 2 课： 添加项目引用 |Microsoft 文档
+title: 第 2 课： 添加项目引用 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,39 +15,39 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b00fc7d49024cec6f9c300444646da82069e16cc
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.openlocfilehash: 1e7ade122e725c07772dba431bd364bc8f933b82
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2018
-ms.locfileid: "25962211"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36969694"
 ---
 # <a name="lesson-2-adding-project-references"></a>第 2 课： 添加项目引用
-你添加项目引用，以便你管道可以访问位于 Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll 文件中的默认运行时架构。 此程序集文件包含与消息类型解析所需的提升属性的标头架构。  
+使管道能够访问位于 Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll 文件中的默认运行时架构添加项目引用。 此程序集文件包含标头架构已升级的属性所需的消息类型解析。  
   
- 当将反汇编组件添加到接收管道供以后参考标头架构。  
+ 拆装组件添加到接收管道时供以后参考标头架构。  
   
 ### <a name="to-add-a-reference-to-the-default-swift-runtimeschemas-assembly"></a>若要添加到默认 SWIFT RuntimeSchemas 程序集的引用  
   
-1.  在解决方案资源管理器，确保**SWIFTPipelines**展开项目。 右键单击**引用**，然后单击**添加引用**。  
+1.  在解决方案资源管理器，请确保**SWIFTPipelines**扩展项目。 右键单击**引用**，然后单击**添加引用**。  
   
 2.  在添加引用对话框中，单击**浏览**选项卡。  
   
-3.  浏览到 **\<*驱动器*\>: files\microsoft BizTalk Accelerator for SWIFT\Assemblies**。  
+3.  浏览到 **\<*驱动器*\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\Assemblies**。  
   
 4.  选择**Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll**文件。  
   
-5.  单击**添加**，然后单击**确定**。  
+5.  单击**外**，然后单击**确定**。  
   
     > [!NOTE]
-    >  现在选择 RuntimeSchemas 程序集 (dll) 将出现在 SWIFTPipelines 项目中的引用集合。  
+    >  现在选择 RuntimeSchemas 程序集 (dll) 出现在 SWIFTPipelines 项目中的引用集合中。  
   
-#### <a name="to-add-a-reference-to-the-swiftpipelines-schemas-assembly"></a>若要添加对 SWIFTPipelines 架构集的引用  
+#### <a name="to-add-a-reference-to-the-swiftpipelines-schemas-assembly"></a>若要添加 SWIFTPipelines 架构程序集的引用  
   
-1.  在解决方案资源管理器下**SWIFTPipelines**项目，右键单击**引用**，然后单击**添加引用**。  
+1. 在解决方案资源管理器下**SWIFTPipelines**项目，右键单击**引用**，然后单击**添加引用**。  
   
-2.  在添加引用对话框中，在**项目**选项卡上，单击**SWIFTSchemas**项目中，单击**添加**，然后单击**确定**。  
+2. 在添加引用对话框中，在**项目**选项卡上，单击**swift 架构**项目，然后单击**添加**，然后单击**确定**。  
   
-3.  上**文件**菜单上，单击**保存所有**以保存所做的更改。  
+3. 上**文件**菜单上，单击**全部保存**以保存所做的更改。  
   
- 继续执行[第 3 课： 添加自定义接收管道](../../adapters-and-accelerators/accelerator-swift/lesson-3-adding-a-custom-receive-pipeline.md)。
+   请继续执行[第 3 课： 添加自定义接收管道](../../adapters-and-accelerators/accelerator-swift/lesson-3-adding-a-custom-receive-pipeline.md)。

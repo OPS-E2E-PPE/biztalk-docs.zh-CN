@@ -1,5 +1,5 @@
 ---
-title: 消息处理 |Microsoft 文档
+title: 消息处理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 468ccae57c4a96c9cfe54170d3434f792d72965e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ba35674614a755340a656c4389652276d83ae584
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22205981"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36969430"
 ---
 # <a name="message-processing"></a>消息处理
-本部分提供有关信息[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 引擎运行时组件。 消息处理包括 HL7 消息的处理 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2 X 平面文件) 的 XML 消息进行处理 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2XML)，批处理，并确认处理。  
+本部分提供有关 Microsoft BizTalk Accelerator for HL7 的信息 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 引擎运行时组件。 消息处理过程将包括 HL7 消息的处理 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2 X 平面文件) 的 XML 消息进行处理 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2XML)，batch 处理和确认处理。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -35,4 +35,4 @@ ms.locfileid: "22205981"
   
 -   [批处理消息处理](../../adapters-and-accelerators/accelerator-hl7/batch-message-processing.md)  
   
--   [处理的确认](../../adapters-and-accelerators/accelerator-hl7/acknowledgments-processing.md)
+-   [确认处理](../../adapters-and-accelerators/accelerator-hl7/acknowledgments-processing.md)
