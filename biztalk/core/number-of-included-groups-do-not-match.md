@@ -1,5 +1,5 @@
 ---
-title: 包含组数不匹配 |Microsoft 文档
+title: 包含的组的数目不匹配 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2f02262012a5d02cebaf86fae5a4d19d9b5486d1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cf61012de6ba864d6f0ff4e553b4c74e1d501c20
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263029"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36988166"
 ---
 # <a name="number-of-included-groups-do-not-match"></a>包括的组的数目不匹配
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|EDI 引擎|  
-|符号名称|X12Ta1InvalidNumberOfIncludedGroupsDescription|  
-|消息正文|数的包含组不匹配|  
+|                 |                                                                                        |
+|-----------------|----------------------------------------------------------------------------------------|
+|  产品名称   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
+| 产品版本 |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
+|    事件 ID     |                                           -                                            |
+|  事件源   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
+|    组件    |                                       EDI 引擎                                       |
+|  符号名称  |                     X12Ta1InvalidNumberOfIncludedGroupsDescription                     |
+|  消息正文   |                         组的包含的数目不匹配                         |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明交换中的组数不等于交换尾部（IEA01 字段）中的数量。 保留交换并且出错时挂起交换时会发生这种情况。 （如果保留交换并且出错时挂起事务集或者拆分交换，则不会发布此错误消息。）  

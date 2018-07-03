@@ -1,5 +1,5 @@
 ---
-title: HTTPSolicitResponse |Microsoft 文档
+title: HTTPSolicitResponse |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 500ec05df9a3a365a350571e8b3e66f5d584f92d
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: c5a68e24cee95b25596ad5162223c34a75139c13
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25973123"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36981294"
 ---
 # <a name="httpsolicitresponse"></a>HTTPSolicitResponse
-HTTPSolicitResponse 示例演示如何创建 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]利用 ASP.NET 应用程序以帮助处理 orchestration 数据的业务流程。 在本示例中，业务流程利用请求/响应端口将消息发送到 ASP.NET 应用程序以及检索响应。 使用 HTTP 适配器，您可以在 BizTalk Server 业务流程和 ASP.NET 应用程序之间实现集成。 有关详细信息，请参阅[HTTP 适配器](../core/http-adapter.md)。  
+HTTPSolicitResponse 示例演示如何创建 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]利用 ASP.NET 应用程序以帮助处理业务流程数据的业务流程。 在本示例中，业务流程利用请求/响应端口将消息发送到 ASP.NET 应用程序以及检索响应。 使用 HTTP 适配器，您可以在 BizTalk Server 业务流程和 ASP.NET 应用程序之间实现集成。 有关详细信息，请参阅[HTTP 适配器](../core/http-adapter.md)。  
   
 ## <a name="what-this-sample-does"></a>本示例的用途  
  本示例包括通过以下步骤序列接收包含两个数字相乘的请求并满足该请求的 BizTalk Server 业务流程：  
@@ -50,7 +50,7 @@ HTTPSolicitResponse 示例演示如何创建 Microsoft[!INCLUDE[btsBizTalkServer
 |MultiplyTwoIntegers.odx|提供接收请求乘法运算的 .xml 文件，将请求转发到乘数 ASP.NET 应用程序，并将其响应写入文件的 BizTalk Server 业务流程。|  
 |request_in.xml|示例输入文件。|  
 |Setup.bat|生成并初始化本示例。|  
-|在 \Multiplier 文件夹中：<br /><br /> Multiplier.aspx、 Multiplier.aspx.cs，Multiplier.sln|包含构成实现乘数服务的 ASP.NET 应用程序的文件，其中包括项目和解决方案文件、ASPX 文件以及 Microsoft Visual C# .NET 源文件等。|  
+|在 \Multiplier 文件夹中：<br /><br /> Multiplier.aspx、 Multiplier.aspx.cs、 Multiplier.sln|包含构成实现乘数服务的 ASP.NET 应用程序的文件，其中包括项目和解决方案文件、ASPX 文件以及 Microsoft Visual C# .NET 源文件等。|  
   
 ## <a name="building-and-initializing-the-sample"></a>生成并初始化本示例  
  使用以下过程可以生成并初始化 HTTPSolicitResponse 示例。  
@@ -60,49 +60,49 @@ HTTPSolicitResponse 示例演示如何创建 Microsoft[!INCLUDE[btsBizTalkServer
   
 #### <a name="to-build-and-initialize-the-sample"></a>生成并初始化示例  
   
-1.  在命令窗口中，导航到下面的文件夹：  
+1. 在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*\>\AdaptersUsage\HTTPSolicitResponse  
+    \<*示例路径*\>\AdaptersUsage\HTTPSolicitResponse  
   
-2.  运行 Setup.bat 文件，该文件将执行以下操作：  
+2. 运行 Setup.bat 文件，该文件将执行以下操作：  
   
-    -   为本示例创建输入和输出文件夹：  
+   - 为本示例创建输入和输出文件夹：  
   
-         \<*示例路径*\>\AdaptersUsage\HttpSolicitResponse\HttpSolicitResponseInput  
+      \<*示例路径*\>\AdaptersUsage\HttpSolicitResponse\HttpSolicitResponseInput  
   
-         \<*示例路径*\>\AdaptersUsage\HttpSolicitResponse\HttpSolicitResponseOutput  
+      \<*示例路径*\>\AdaptersUsage\HttpSolicitResponse\HttpSolicitResponseOutput  
   
-    -   编译并配置本示例使用的 ASP.NET 应用程序。  
+   - 编译并配置本示例使用的 ASP.NET 应用程序。  
   
-        > [!NOTE]
-        >  在创建应用程序池在 IIS 管理器，设置**DefaultAppPool**到.NET Framework 版本 **.Net Framework v4.0**。  
+     > [!NOTE]
+     >  在创建应用程序池在 IIS 管理器，设置**DefaultAppPool**到.NET Framework 版本 **.Net Framework v4.0**。  
   
-    -   编译并部署本示例中使用的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 业务流程。  
+   - 编译并部署本示例中使用的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 业务流程。  
   
-    -   创建并绑定必需的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 接收位置和端口。  
+   - 创建并绑定必需的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 接收位置和端口。  
   
-        > [!NOTE]
-        >  在创建并绑定端口时，本示例将显示以下警告：  
+     > [!NOTE]
+     >  在创建并绑定端口时，本示例将显示以下警告：  
   
-        > [!NOTE]
-        >  `Warning: Receive handler not specified for receive location "HttpSolicitResponseReceiveLocation"; updating with first receive handler with matching transport type.`  
+     > [!NOTE]
+     >  `Warning: Receive handler not specified for receive location "HttpSolicitResponseReceiveLocation"; updating with first receive handler with matching transport type.`  
   
-        > [!NOTE]
-        >  `Warning: Host not specified for orchestration "Microsoft.Samples.BizTalk.HttpSolicitResponse.MultiplyTwoIntegers"; updating with first available host.`  
+     > [!NOTE]
+     >  `Warning: Host not specified for orchestration "Microsoft.Samples.BizTalk.HttpSolicitResponse.MultiplyTwoIntegers"; updating with first available host.`  
   
-    -   启用接收位置并启动发送端口。  
+   - 启用接收位置并启动发送端口。  
   
-        > [!NOTE]
-        >  本示例中的业务流程使用双向端口与 ASP.NET 应用程序进行 HTTP 交互。  
+     > [!NOTE]
+     >  本示例中的业务流程使用双向端口与 ASP.NET 应用程序进行 HTTP 交互。  
   
-        > [!NOTE]
-        >  在尝试运行本示例之前，应确认在生成和初始化过程中 BizTalk 未报告任何错误。  
+     > [!NOTE]
+     >  在尝试运行本示例之前，应确认在生成和初始化过程中 BizTalk 未报告任何错误。  
   
-        > [!NOTE]
-        >  如果选择在不运行 Setup.bat 文件的情况下打开并生成本示例中的项目，则必须先使用 .NET Framework 强名称实用工具 (sn.exe) 创建一个强名称密钥对。 使用该密钥对可以对生成的程序集签名。  
+     > [!NOTE]
+     >  如果选择在不运行 Setup.bat 文件的情况下打开并生成本示例中的项目，则必须先使用 .NET Framework 强名称实用工具 (sn.exe) 创建一个强名称密钥对。 使用该密钥对可以对生成的程序集签名。  
   
-        > [!NOTE]
-        >  若要撤销 Setup.bat 所做的更改，请运行 Cleanup.bat。 在第二个运行 Setup.bat 之前，必须运行 Cleanup.bat，时间。  
+     > [!NOTE]
+     >  若要撤销 Setup.bat 所做的更改，请运行 Cleanup.bat。 必须运行 Setup.bat 前运行 Cleanup.bat 时间。  
   
 ## <a name="running-the-sample"></a>运行示例  
  使用以下过程可以运行 HTTPSolicitResponse 示例。  
@@ -121,5 +121,5 @@ HTTPSolicitResponse 示例演示如何创建 Microsoft[!INCLUDE[btsBizTalkServer
   
  文件 MultiplyRequest.xsd 和 MultiplyResponse.xsd 是为乘数 ASP.NET 应用程序定义输入和输出数据格式的 XML 架构。 业务流程使用这些文件定义请求和响应消息类型。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [HTTP 适配器示例](../core/http-adapter-samples.md)

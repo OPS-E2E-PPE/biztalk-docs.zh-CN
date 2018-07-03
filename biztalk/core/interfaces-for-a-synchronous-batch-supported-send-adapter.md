@@ -1,5 +1,5 @@
 ---
-title: 批处理支持异步接口发送适配器 |Microsoft 文档
+title: 发送适配器的同步接口的支持批的 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,41 +12,41 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3ab61fd6624468e0464cfe0c648fcc868bd20005
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d14e278869854535695babc9ff8796a833de7217
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257669"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36968222"
 ---
 # <a name="interfaces-for-a-synchronous-batch-supported-send-adapter"></a>同步的支持批的发送适配器的接口
 可识别批的适配器可以同步或异步发送消息，并且可以执行事务性发送操作。 若要发送消息批，发送适配器必须实现以下接口：  
   
--   **IBTTransport**  
+- **IBTTransport**  
   
--   **IBaseComponent**  
+- **IBaseComponent**  
   
--   **IBTTransportControl**  
+- **IBTTransportControl**  
   
--   **IPersistPropertyBag**  
+- **IPersistPropertyBag**  
   
--   **IBTBatchTransmitter**  
+- **IBTBatchTransmitter**  
   
--   **IBTTransmitterBatch**  
+- **IBTTransmitterBatch**  
   
- 对于同步批发送，消息引擎将从适配器获取一个批，并且将要传输的消息添加到该批。 The Messaging Engine 将每条消息添加到批处理，并仅在它调用时才发送消息**完成**批次的方法。 适配器返回`True`为**bDeleteMessage**它想要以同步方式传输每条消息。 适配器应将消息数据，而不是消息指针，保存在其**TransmitMessage**实现。 这是因为消息指针将不再有效之后`True`返回，并且不应使用或缓存供以后使用。  
+  对于同步批发送，消息引擎将从适配器获取一个批，并且将要传输的消息添加到该批。 消息引擎将每个消息添加到批处理和发送消息，仅当它调用**完成**批上的方法。 适配器返回`True`有关**bDeleteMessage**为打算同步传输每个消息。 适配器应将消息数据，而不是消息指针保存在其**TransmitMessage**实现。 这是因为消息指针将不再有效后`True`返回，并且不应使用或缓存供以后使用。  
   
- 下图显示在创建同步的支持批的发送适配器时涉及的对象交互。  
+  下图显示在创建同步的支持批的发送适配器时涉及的对象交互。  
   
- ![](../core/media/ebiz-sdk-devadapter6.gif "ebiz_sdk_devadapter6")  
-同步提交消息的工作流  
+  ![](../core/media/ebiz-sdk-devadapter6.gif "ebiz_sdk_devadapter6")  
+  同步提交消息的工作流  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [适配器变量](../core/adapter-variables.md)   
  [开发发送适配器](../core/developing-a-send-adapter.md)   
  [实例化和初始化发送适配器](../core/instantiating-and-initializing-a-send-adapter.md)   
- [发送异步接口的适配器](../core/interfaces-for-a-synchronous-send-adapter.md)   
- [异步接口发送适配器](../core/interfaces-for-an-asynchronous-send-adapter.md)   
- [异步批处理支持发送适配器的接口](../core/interfaces-for-an-asynchronous-batch-supported-send-adapter.md)   
- [事务异步批处理支持发送适配器的的接口](../core/interfaces-for-a-transactional-asynchronous-batch-supported-send-adapter.md)   
- [适配器发送的请求作出响应的接口](../core/interfaces-for-a-solicit-response-send-adapter.md)
+ [发送适配器的同步接口](../core/interfaces-for-a-synchronous-send-adapter.md)   
+ [发送适配器的异步接口](../core/interfaces-for-an-asynchronous-send-adapter.md)   
+ [异步的支持批的发送适配器的的接口](../core/interfaces-for-an-asynchronous-batch-supported-send-adapter.md)   
+ [事务性异步的支持批的发送适配器的接口](../core/interfaces-for-a-transactional-asynchronous-batch-supported-send-adapter.md)   
+ [要求-响应发送适配器的接口](../core/interfaces-for-a-solicit-response-send-adapter.md)

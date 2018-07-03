@@ -1,5 +1,5 @@
 ---
-title: 使用 HL7 2.XML 架构 |Microsoft 文档
+title: 使用 HL7 2.xml 架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ff3af77874ed668bb73298662646c87206aacb31
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6758be134043c77138e37960641a54c0aff8455b
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206293"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36982030"
 ---
-# <a name="using-hl7-2xml-schemas"></a>使用 HL7 2.XML 架构
-本部分讨论支持的运行状况级别七 (HL7) 标准的 2.XML 版本[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]。  
+# <a name="using-hl7-2xml-schemas"></a>使用 HL7 2.xml 架构
+本部分讨论 2.XML 版本的 Microsoft 支持的运行状况级别 7 (HL7) 标准[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]。  
   
 ## <a name="in-this-section"></a>本节内容  
   

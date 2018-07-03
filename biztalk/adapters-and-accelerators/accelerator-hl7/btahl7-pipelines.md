@@ -1,5 +1,5 @@
 ---
-title: BTAHL7 管道 |Microsoft 文档
+title: BTAHL7 管道 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,20 +14,20 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed47068944dc6c6299da9c1a91ef958db42c24d4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 86a9a61b17be27b8c0855354a01cd1b889258eda
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22204429"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36974646"
 ---
 # <a name="btahl7-pipelines"></a>BTAHL7 管道
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 提供了一套接收和发送 HL7 编码和 XML 编码处理管道。 这些管道增强 BizTalk 管道处理卫生保健的解决方案：  
+Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 提供了一组接收和发送管道 HL7 编码和 XML 编码处理。 这些管道增强卫生保健解决方案的 BizTalk 管道处理：  
   
--   有关 HL7 FF 2.X (。BTP) 提供[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2XReceive 和[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2XSend 管道  
+- HL7 FF 的 2.X (。BTP) 提供[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2XReceive 和[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2XSend 管道  
   
--   2.XML for HL7XML (。BTP) 提供[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2XMLReceive 和[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2XMLSend  
+- 2.XML for HL7XML (。BTP) 提供[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2XMLReceive 和[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2XMLSend  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [BizTalk Accelerator for HL7 组件](../../adapters-and-accelerators/accelerator-hl7/biztalk-accelerator-for-hl7-components.md)   
- [BizTalk Accelerator for HL7 的工作原理](../../adapters-and-accelerators/accelerator-hl7/how-biztalk-accelerator-for-hl7-works.md)
+ [BizTalk Accelerator for HL7 工作原理](../../adapters-and-accelerators/accelerator-hl7/how-biztalk-accelerator-for-hl7-works.md)

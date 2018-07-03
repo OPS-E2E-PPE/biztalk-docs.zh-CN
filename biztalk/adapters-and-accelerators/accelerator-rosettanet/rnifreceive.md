@@ -1,5 +1,5 @@
 ---
-title: RNIFReceive |Microsoft 文档
+title: RNIFReceive |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 57af8140157b901d7e6265fc26249c7fbfef0c46
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: d54b66c42fae286ec748ef560c461a22124165b0
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25963875"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36991766"
 ---
 # <a name="rnifreceive"></a>RNIFReceive
-此示例提供一个可实际应用的 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RNIFReceive.aspx 文件，该文件接收 RNIF 消息，然后准备它，以供 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 公用流程处理。 你可以通过自定义 ASPX 页来执行以下操作：  
+此示例提供了一个有效的 Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RNIFReceive.aspx 文件接收 RNIF 消息，并使其准备好以供处理[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]公用流程。 你可以通过自定义 ASPX 页来执行以下操作：  
   
--   添加或删除性能计数器  
+- 添加或删除性能计数器  
   
--   向该页添加功能，例如，将数据写入数据库或自定义跟踪功能  
+- 向该页添加功能，例如，将数据写入数据库或自定义跟踪功能  
   
--   向该页添加验证功能  
+- 向该页添加验证功能  
   
- 此示例位于*\<驱动器\>*: files\microsoft BizTalk\<版本\>RosettaNet\SDK\WebApplication\RNIFReceiver 快捷键。  
+  此示例位于*\<驱动器\>*: \Program Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\WebApplication\RNIFReceiver。  
   
 ## <a name="demonstrates"></a>演示  
  此示例演示如何为公用流程准备传入消息，演示内容包括以下几个操作：  
@@ -43,6 +43,6 @@ ms.locfileid: "25963875"
   
 -   返回信号消息  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [发送和接收 ASPX 页](../../adapters-and-accelerators/accelerator-rosettanet/send-and-receive-aspx-pages.md)   
  [Web 应用程序示例](../../adapters-and-accelerators/accelerator-rosettanet/web-application-samples.md)

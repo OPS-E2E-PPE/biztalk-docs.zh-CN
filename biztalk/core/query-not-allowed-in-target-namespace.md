@@ -1,5 +1,5 @@
 ---
-title: 不允许使用目标命名空间中查询 |Microsoft 文档
+title: 不允许目标命名空间中进行查询 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6d86fc548fd368311b6e43f88e5a58440361b6e9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ce61d036912dc6caf2fd0062abb238de4ac6f491
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268605"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36978856"
 ---
 # <a name="query-not-allowed-in-target-namespace"></a>不允许在目标命名空间中进行查询
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
-|事件 ID|0|  
-|事件源|0|  
-|组件|0|  
-|符号名称|0|  
-|消息正文|目标命名空间中不允许包含查询“?”。|  
+|                 |                                                                                    |
+|-----------------|------------------------------------------------------------------------------------|
+|  产品名称   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] |
+| 产品版本 |             [!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]             |
+|    事件 ID     |                                         0                                          |
+|  事件源   |                                         0                                          |
+|    组件    |                                         0                                          |
+|  符号名称  |                                         0                                          |
+|  消息正文   |                     目标命名空间中不允许包含查询“?”。                     |
   
 ## <a name="explanation"></a>解释  
  此错误表明指定的目标命名空间不能包含查询。  

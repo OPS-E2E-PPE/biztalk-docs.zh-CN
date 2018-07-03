@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10561 |Microsoft 文档
+title: 单一登录： 事件 10561 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b5148633c7fffabe0ef4bb4789fe4ded58336c10
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 053b17fcb940383d58110378710aeb6bc8d3fbe6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270733"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36992488"
 ---
 # <a name="single-sign-on-event-10561"></a>单一登录： 事件 10561
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|10561|  
-|事件源|ENTSSO|  
-|组件|N/A|  
-|符号名称|SSO_ERROR_BACKUP_FAILED_MEDIA|  
-|消息正文|为主密钥备份指定的文件必须位于 NTFS 文件系统或可移动媒体上。%r<br /><br /> 文件名: %1 %r<br /><br /> 客户端用户: %2 %r<br /><br /> 客户端计算机: %3 %r<br /><br /> 错误代码： %4|  
+|                 |                                                                                                                                                                                                                                 |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                                                                                    企业单一登录                                                                                                    |
+| 产品版本 |                                                                                   [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                                    |
+|    事件 ID     |                                                                                                              10561                                                                                                              |
+|  事件源   |                                                                                                             ENTSSO                                                                                                              |
+|    组件    |                                                                                                               N/A                                                                                                               |
+|  符号名称  |                                                                                                  SSO_ERROR_BACKUP_FAILED_MEDIA                                                                                                  |
+|  消息正文   | 为主密钥备份指定的文件必须位于 NTFS 文件系统或可移动媒体上。%r<br /><br /> 文件名称: %1 %r<br /><br /> 客户端用户: %2 %r<br /><br /> 客户端计算机: %3 %r<br /><br /> 错误代码： %4 |
   
 ## <a name="explanation"></a>解释  
  尝试备份所使用的媒体（如 FAT 文件）无效。 为主密钥备份指定的文件必须位于 NTFS 文件系统或可移动媒体上。  

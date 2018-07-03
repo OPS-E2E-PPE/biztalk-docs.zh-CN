@@ -1,5 +1,5 @@
 ---
-title: 接收管道 |Microsoft 文档
+title: 接收管道 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,31 +12,31 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d5374c46411e0c4924585647736bfde7f1e4428
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 2a2c1de940fab14aa370dc1358efe36fe702a9d2
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25964435"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36990302"
 ---
 # <a name="receive-pipeline"></a>接收管道
-此示例提供一个能够实际应用的 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 接收管道，你可以为自己的应用程序自定义它。  
+此示例提供了一个有效的 Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]接收管道，你可以为你的应用程序自定义。  
   
 ## <a name="demonstrates"></a>演示  
- 此示例演示如何使用 BTARN 接收管道 (PipelineReceive.btp) 将传入 RNIF 消息加工成等效的 XML 消息。 PipelineReceive.btp 位于*\<驱动器\>*: files\microsoft BizTalk\<版本\>RosettaNet\SDK\RNPipelines 快捷键。 它包含以下阶段：  
+ 此示例演示如何使用 BTARN 接收管道 (PipelineReceive.btp) 将传入 RNIF 消息加工成等效的 XML 消息。 PipelineReceive.btp 位于*\<驱动器\>*: \Program Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\RNPipelines。 它包含以下阶段：  
   
--   ReceiveMessageNonRepudiate  
+- ReceiveMessageNonRepudiate  
   
--   RNMimeDecoder（MIME 预处理器/解码器）  
+- RNMimeDecoder（MIME 预处理器/解码器）  
   
--   RNDAsm（XML 拆装器）  
+- RNDAsm（XML 拆装器）  
   
--   RNPartyRes（参与方解析组件）  
+- RNPartyRes（参与方解析组件）  
   
--   MessageUpdater  
+- MessageUpdater  
   
- 此管道和此管道中的消息流的组件的详细信息，请参阅[BTARN 接收管道](../../adapters-and-accelerators/accelerator-rosettanet/btarn-receive-pipeline.md)。  
+  此管道和此管道中的消息流的组件的详细信息，请参阅[BTARN 接收管道](../../adapters-and-accelerators/accelerator-rosettanet/btarn-receive-pipeline.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [管道示例](../../adapters-and-accelerators/accelerator-rosettanet/pipeline-samples.md)   
  [BTARN 接收管道](../../adapters-and-accelerators/accelerator-rosettanet/btarn-receive-pipeline.md)

@@ -1,5 +1,5 @@
 ---
-title: 根据指定的分隔符集，就可以生成没有有效的时间值 |Microsoft 文档
+title: 基于指定的分隔符集，就无法生成有效的时间值 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 00b8b06922109ae5817c67b26f1a23977d1b607b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e9a1dfb93db66dc6bb339df34359e21e328066ff
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230789"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36979350"
 ---
-# <a name="based-on-the-specified-delimiter-set-no-valid-time-value-could-be-generated"></a>根据指定的分隔符集，就可以生成没有有效的时间值
+# <a name="based-on-the-specified-delimiter-set-no-valid-time-value-could-be-generated"></a>基于指定的分隔符集，就无法生成有效的时间值
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|EDI 引擎|  
-|符号名称|-|  
-|消息正文|基于指定的分隔符集，无法生成有效的时间值。 请使用其他分隔符集。|  
+|                 |                                                                                                                 |
+|-----------------|-----------------------------------------------------------------------------------------------------------------|
+|  产品名称   |               [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                |
+| 产品版本 |                           [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                            |
+|    事件 ID     |                                                        -                                                        |
+|  事件源   |             [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI              |
+|    组件    |                                                   EDI 引擎                                                    |
+|  符号名称  |                                                        -                                                        |
+|  消息正文   | 基于指定的分隔符集，无法生成有效的时间值。 请使用其他分隔符集。 |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息十表明 EDI 发送管道无法生成有效的时间值，因为传出交换的时间字段中使用的某个字符与分隔符相同。  

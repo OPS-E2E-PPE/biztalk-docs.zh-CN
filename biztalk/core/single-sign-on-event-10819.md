@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10819 |Microsoft 文档
+title: 单一登录： 事件 10819 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f2a98586d9c139674c64db6ca03aaa6abd6ba6b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f196bb49cd0e5825551bbffe45757c327e2cbcca
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276429"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36972110"
 ---
 # <a name="single-sign-on-event-10819"></a>单一登录： 事件 10819
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|10819|  
-|事件源|ENTSSO|  
-|组件|N/A|  
-|符号名称|ENTSSO_E_MAPPING_CONFLICT|  
-|消息正文|由于存在映射冲突，因此未更新外部帐户。|  
+|                 |                                                                           |
+|-----------------|---------------------------------------------------------------------------|
+|  产品名称   |                         企业单一登录                         |
+| 产品版本 |        [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]         |
+|    事件 ID     |                                   10819                                   |
+|  事件源   |                                  ENTSSO                                   |
+|    组件    |                                    N/A                                    |
+|  符号名称  |                         ENTSSO_E_MAPPING_CONFLICT                         |
+|  消息正文   | 由于存在映射冲突，因此未更新外部帐户。 |
   
 ## <a name="explanation"></a>解释  
  由于存在映射冲突，因此未更新外部帐户。  

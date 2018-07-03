@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10607 |Microsoft 文档
+title: 单一登录： 事件 10607 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 80c73d25d9f7c2b8eab933afeba5362135cc8e59
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 408a629cd76764cca46a2e00c4d08d0abf9c3805
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270973"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36979302"
 ---
 # <a name="single-sign-on-event-10607"></a>单一登录： 事件 10607
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|10607|  
-|事件源|ENTSSO|  
-|组件|N/A|  
-|符号名称|SSO_INFO_TICKETS_DISABLED|  
-|消息正文|已禁用 SSO 系统的票证。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 客户端计算机: %2 %r<br /><br /> 客户端用户： %3|  
+|                 |                                                                                                                                              |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                                          企业单一登录                                                           |
+| 产品版本 |                                          [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                          |
+|    事件 ID     |                                                                    10607                                                                     |
+|  事件源   |                                                                    ENTSSO                                                                    |
+|    组件    |                                                                     N/A                                                                      |
+|  符号名称  |                                                          SSO_INFO_TICKETS_DISABLED                                                           |
+|  消息正文   | 已禁用 SSO 系统的票证。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 客户端计算机: %2 %r<br /><br /> 客户端用户： %3 |
   
 ## <a name="explanation"></a>解释  
  这是一条信息性消息。  

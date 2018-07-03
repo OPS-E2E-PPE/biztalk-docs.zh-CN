@@ -1,5 +1,5 @@
 ---
-title: UnenlistParties （BizTalk Server 示例） |Microsoft 文档
+title: UnenlistParties （BizTalk Server 示例） |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,12 +18,12 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 34cbb94dff7211a157fc492c1157fa379236641e
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: c7525e97ba93ebd35d2439044b8c1be55a70be3d
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25973467"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36973022"
 ---
 # <a name="unenlistparties-biztalk-server-sample"></a>UnenlistParties （BizTalk Server 示例）
 UnenlistParties 示例演示如何取消登记与部署的 BizTalk Server 程序集关联的所有参与方。  
@@ -31,13 +31,13 @@ UnenlistParties 示例演示如何取消登记与部署的 BizTalk Server 程序
 > [!WARNING]
 >  部署后，如果不再需要部署脚本，则应将其删除。 应通过 ACL 确保必须保留的管理脚本和其他脚本的安全并加以密切监视。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>必要條件  
   
--   您必须具有 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理权限才能使用此示例中的管理对象。  
+- 您必须具有 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理权限才能使用此示例中的管理对象。  
   
--   Windows PowerShell 脚本需要 Windows PowerShell 执行策略以允许脚本执行。 有关详细信息请参阅：[检查执行策略](http://go.microsoft.com/fwlink/?LinkId=128930)。  
+- Windows PowerShell 脚本需要 Windows PowerShell 执行策略以允许脚本执行。 有关详细信息请参阅：[检查执行策略](http://go.microsoft.com/fwlink/?LinkId=128930)。  
   
-## <a name="how-this-sample-is-designed-and-why"></a>本示例旨在如何以及为何  
+## <a name="how-this-sample-is-designed-and-why"></a>此示例设计方式和原因  
  本示例以 Visual C# 编写，使用 BizTalk 浏览器对象模型中的对象执行下列操作：  
   
 -   查询特定程序集。  
@@ -61,36 +61,36 @@ UnenlistParties 示例演示如何取消登记与部署的 BizTalk Server 程序
   
 ### <a name="to-build-and-initialize-this-sample"></a>构建和初始化此示例  
   
-1.  在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，打开解决方案文件 UnenlistParties.sln。  
+1. 在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，打开 UnenlistParties.sln 解决方案文件。  
   
-2.  在**生成**菜单上，选择**生成解决方案**。  
+2. 在中**构建**菜单中，选择**生成解决方案**。  
   
 ### <a name="to-run-this-sample"></a>运行本示例的步骤  
   
-1.  在命令窗口中，导航到下面的文件夹：  
+1. 在命令窗口中，导航到下面的文件夹：  
   
-     \<*示例路径*\>\Admin\ExplorerOM\UnenlistParties\bin\Debug\  
+    \<*示例路径*\>\Admin\ExplorerOM\UnenlistParties\bin\Debug\  
   
-2.  运行 UnenlistParties.exe 文件，并传递下面两个命令行参数之一：  
+2. 运行 UnenlistParties.exe 文件，并传递下面两个命令行参数之一：  
   
-    -   **\<** ***AssemblyName* \>** 。 将取消登记的所有参与方所在的程序集的名称。 如果程序集名称包含空格，则将该名称置于引号中。  
+   - **\<** ***程序集名称* \>** 。 将取消登记的所有参与方所在的程序集的名称。 如果程序集名称包含空格，则将该名称置于引号中。  
   
-    -   **/?.** 显示帮助。  
+   - **/?.** 显示帮助。  
   
      例如：  
   
-    ```  
-    UnenlistParties "My BizTalk Assembly.dll"  
-    ```  
+   ```  
+   UnenlistParties "My BizTalk Assembly.dll"  
+   ```  
   
-     -或者-  
+    -或-  
   
-    ```  
-    UnenlistParties /?  
-    ```  
+   ```  
+   UnenlistParties /?  
+   ```  
   
 ## <a name="windows-powershell-script-example"></a>Windows Powershell 脚本示例  
- 以下 Windows Powershell 脚本片段可以用于演示的相同功能**ExplorerOM**类：  
+ 以下 Windows Powershell 脚本片段可用于演示的相同功能**ExplorerOM**类：  
   
 ```  
 #===================#  
@@ -203,5 +203,5 @@ Comitting changes...
 done.  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Admin-ExplorerOM（BizTalk Server 示例文件夹）](../core/admin-explorerom-biztalk-server-samples-folder.md)

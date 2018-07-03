@@ -1,5 +1,5 @@
 ---
-title: 词汇 |Microsoft 文档
+title: 词汇 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,31 +15,31 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5c77247054914097131103fe33d86fc78551d8cc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 31e72b51e327581c0a17f18582b0511218b556a7
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206653"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36979030"
 ---
 # <a name="vocabulary"></a>词汇
-HL7 版本 2 的词汇对于编码的元素，提供了一些支持，但大多数情况下，提供了传输绘制从本地编码系统的代码的结构。  
+HL7 版本 2 提供一些支持的编码元素的词汇，但大多数情况下，提供传输来自本地编码系统的代码的结构。  
   
- 在 HL7 版本 2 中，段表链接编码的所有字段。 段表包含的字段将使用的表的标识符。 有三种类型的表： HL7 定义，外部定义和用户定义。 在某些情况下，标准提供用户定义表的示例值。 你应方式 HL7 标准具有标记为它们来处理这些信息。  
+ HL7 版本 2 中的段表链接所有编码的字段。 段表包含的字段将使用的表的标识符。 有三种类型的表： HL7 定义外部定义和用户定义。 在某些情况下，标准提供用户定义表的示例值。 如 HL7 标准具有标记它们所示，应将它们。  
   
- 在新版本中，您不能取消代码 HL7 定义表，但你可以添加新的代码。 你可以更改将在用户定义的表。  
+ 在新版本中，不能从 HL7 定义的表，删除代码，但您可以添加新的代码。 你可以在将用户定义表。  
   
- 下列函数[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 支持这些要求：  
+ Microsoft BizTalk Accelerator for HL7 的以下函数 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 支持这些要求：  
   
--   你可以使用的所有定义的 HL7 表。  
+-   您可以使用所有 HL7 定义表。  
   
--   你可以导入和使用外部定义 ICD9 等 LOINC 代码集。  
+-   可以导入和使用外部定义如 ICD9 和 LOINC 代码集。  
   
--   你可以为用户定义的表中提供的值。  
+-   对于用户定义表，可以提供的值。  
   
--   在系统其中支持不同的代码集的情况下，你可以设置允许进行互操作的不同代码集的映射。 如有必要，你可以定义单个用户定义表转以及中间的映射的多个实例。  
+-   在系统的支持不同的代码的情况下，您可以设置允许不同的代码集以进行互操作的映射。 如有必要，可以定义单个用户定义表的中间映射随附的多个实例。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [处理 HL7 消息](../../adapters-and-accelerators/accelerator-hl7/processing-hl7-messages.md)   
  [消息处理](../../adapters-and-accelerators/accelerator-hl7/message-processing.md)   
  [使用 HL7 2.X 架构](../../adapters-and-accelerators/accelerator-hl7/using-hl7-2-x-schemas.md)

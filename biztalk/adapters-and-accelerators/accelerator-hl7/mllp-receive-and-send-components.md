@@ -1,5 +1,5 @@
 ---
-title: MLLP 接收和发送组件 |Microsoft 文档
+title: MLLP 接收和发送组件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,28 +19,28 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e135b98c04531aa6200f3b79c5b6d5153bf299a7
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 0eebc51d23c66fb9dd7047f29982fbcc05a8215f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25961073"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36971798"
 ---
 # <a name="mllp-receive-and-send-components"></a>MLLP 接收和发送组件
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 支持所有[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]本机适配器类型，包括文件、 HTTP、 SQL 和 FTP。 对于 HL7 编码接收和发送的消息，但是，你通常使用 MLLP 适配器。 此适配器是使用最小的较低层协议 (MLLP) 的 TCP/IP 套接字适配器。 此协议提供的双向消息支持和端到端卫生保健的应用程序集成。  
+Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 支持所有 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]本机适配器类型，包括文件、 HTTP、 SQL 和 FTP。 对于 HL7 编码接收和发送的消息，但是，您通常使用 MLLP 适配器。 此适配器是使用最少的较低层协议 (MLLP) 的 TCP/IP 套接字适配器。 此协议提供的双向消息支持和端到端卫生保健应用程序集成。  
   
- 你可以配置 MLLP 为双向适配器或单向适配器接收适配器。 你可以配置 MLLP 发送适配器，如双向请求-响应发送适配器、 单向发送适配器配置为在同一套接字连接，收到确认 (Ack) 或单向发送不返回任何消息的适配器。 当你使用双向请求作出响应发送 MLLP 适配器，你可以配置要返回确认或响应消息的接收端口。 有关示例 MLLP 发送和接收适配器，请参阅[Interrogative 教程](../../adapters-and-accelerators/accelerator-hl7/interrogative-tutorial.md)。  
+ 你可以配置 MLLP 接收适配器为双向适配器或单向适配器。 您可以配置 MLLP 发送适配器，如双向要求-响应发送适配器、 一个单向发送适配器配置为在同一套接字连接，接收确认 (Ack) 或一个单向发送适配器不返回任何消息。 当您使用双向要求响应发送 MLLP 适配器，您可以配置接收端口以返回是 Ack 或响应消息。 有关示例 MLLP 发送和接收适配器，请参阅[询问教程](../../adapters-and-accelerators/accelerator-hl7/interrogative-tutorial.md)。  
   
- 消息[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]接收或发送 MLLP 适配器上的需要以下包装：  
+ 消息[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]接收或发送 MLLP 适配器上的需要以下包装器：  
   
--   \<SB\>启动块字符  
+- \<SB\>开始块字符  
   
--   \<EB\>结束块字符  
+- \<EB\>结束块字符  
   
--   \<CR\>回车符返回字节 （可选）  
+- \<CR\>回车符返回字节 （可选）  
   
- MLLP 适配器提供错误处理缺少\<SB\>或\<EB\>包装器、 删除的连接或超时。 使用 MLLP 适配器，你可以配置上的连接数的限制。 装有 MLLP 适配器，可以使用多种类型的确认。  
+  MLLP 适配器提供的错误处理缺少\<SB\>或\<EB\>包装、 连接中断或超时。 使用 MLLP 适配器，您可以配置上的连接数限制。 使用 MLLP 适配器，可以使用具有多种类型的确认。  
   
-## <a name="see-also"></a>另请参阅  
- [处理 MLLP 编码消息](../../adapters-and-accelerators/accelerator-hl7/processing-mllp-encoded-messages.md)   
+## <a name="see-also"></a>请参阅  
+ [处理用 MLLP 编码的消息](../../adapters-and-accelerators/accelerator-hl7/processing-mllp-encoded-messages.md)   
  [BizTalk Accelerator for HL7 组件](../../adapters-and-accelerators/accelerator-hl7/biztalk-accelerator-for-hl7-components.md)

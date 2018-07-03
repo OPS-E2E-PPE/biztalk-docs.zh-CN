@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 11038 |Microsoft 文档
+title: 单一登录： 事件 11038 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ca72cafc335c5990c57f8a3fb7c35b9cbfa8202b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 459b80f504159ae893a1f510cb7e4b31fb7fef1f
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276445"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36984734"
 ---
 # <a name="single-sign-on-event-11038"></a>单一登录： 事件 11038
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|11038|  
-|事件源|ENTSSO|  
-|组件|N/A|  
-|符号名称|SSO_ERROR_NO_LOCAL_SYSTEM|  
-|消息正文|SSO 服务不能在本地系统帐户下运行。%r|  
+|                 |                                                              |
+|-----------------|--------------------------------------------------------------|
+|  产品名称   |                  企业单一登录                   |
+| 产品版本 |  [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]  |
+|    事件 ID     |                            11038                             |
+|  事件源   |                            ENTSSO                            |
+|    组件    |                             N/A                              |
+|  符号名称  |                  SSO_ERROR_NO_LOCAL_SYSTEM                   |
+|  消息正文   | SSO 服务不能在本地系统帐户下运行。%r |
   
 ## <a name="explanation"></a>解释  
  SSO 服务不能在本地系统帐户下运行。  

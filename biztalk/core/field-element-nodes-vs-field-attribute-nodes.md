@@ -1,5 +1,5 @@
 ---
-title: “字段元素”节点与字段属性节点 |Microsoft 文档
+title: “字段元素”节点与字段属性节点 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,36 +12,36 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d90f622e20bbdbace6804b2418cb68fd2ad60da
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.openlocfilehash: e6c56aae4e681632ef056a7ed3b85aa5c4f88f89
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2018
-ms.locfileid: "22245869"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36974158"
 ---
 # <a name="field-element-nodes-vs-field-attribute-nodes"></a>“字段元素”节点与“字段属性”节点
 
 ## <a name="overview"></a>概述
-使用平面文件架构的控制平面文件反汇编程序入站平面文件实例消息转换为其等效的 XML 格式，和由控制如何出站的平面文件汇编方式 XML 消息转换为其等效的平面文件实例消息。 在构造此类架构，你使用 **Field 元素** 节点或 **字段特性** 节点尤其是定位在控制架构是否在平面文件实例消息中的特定字段对应于 XML 元素或等效的 XML 格式的消息中的 XML 属性。  
+使用平面文件架构的控制平面文件拆装器如何入站平面文件实例消息转换为其等效的 XML 格式，并将它们来控制出站平面文件组装器使用 XML 消息转换为其等效项平面文件实例消息。 当构造此类架构，您将使用两个**Field 元素**节点或**字段属性**节点特别是定位在控制架构是否在平面文件实例中的特定字段消息相对应的 XML 元素或等效的 XML 格式的消息中的 XML 属性。  
 
 ## <a name="example"></a>示例  
- 例如，左对齐、 星号填充字段值"`red*****`"在平面文件实例消息可以转化为其等效的 XML 表示形式中两个不同的方式取决于架构中的该字段是否 **Field 元素** 节点或 **字段特性** 节点。 当通过架构中表示该字段**Field 元素**节点其**节点名称**属性设置为"color"，且包含**记录**节点都有其**节点名称**属性设置为"shirt"，等效的 XML （以粗体类型显示） 的平面文件字段。  
-  
+ 例如，左对齐，星号填充的字段值"`red*****`"中的平面文件实例消息，可以转化为其等效的 XML 表示形式中两个不同的方式取决于架构中的该字段是否**字段元素**节点或**字段属性**节点。 当该字段表示架构中的**字段元素**节点，其**节点名称**属性设置为"color"，并包含**记录**节点都有其**节点名称**属性设置为"shirt"，等效的 XML （以粗体显示） 的平面文件字段。  
+
 ```  
 <shirt>  
     <color>red</color>  
 </shirt>  
 ```  
-  
- 当通过架构中表示该相同的平面文件字段 **字段特性** 节点其 **节点名称** 属性设置为颜色，且包含 **记录** 节点都有其 **节点名称** 属性设置为 shirt，平面文件显示的字段是 （粗体类型） 的 XML 等效项︰  
-  
+
+ 当该相同的平面文件字段表示架构中的**字段属性**具有节点其**节点名称**属性设置为颜色和包含**记录**节点都有其**节点名称**属性设置为 shirt，（以粗体显示） 的平面文件字段的 XML 等效项：  
+
 ```  
 <color shirt="red"/>  
 ```  
-  
+
 > [!NOTE]
->  平面文件架构具有进一步限制，在给定 **记录** 节点，从属 **字段特性** 节点必须早从属 **记录** 节点或 **Field 元素** 节点。  
-  
-## <a name="see-also"></a>另请参阅  
--  [字段注意事项](../core/field-considerations.md)
--  **节点名称**属性[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+>  平面文件架构还具有其他限制，在给定**记录**节点中，从属**字段属性**节点必须在从属之前**记录**或节点**字段元素**节点。  
+
+## <a name="see-also"></a>请参阅  
+- [字段注意事项](../core/field-considerations.md)
+- **节点名称**属性 [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]

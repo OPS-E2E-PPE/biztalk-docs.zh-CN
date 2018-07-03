@@ -1,5 +1,5 @@
 ---
-title: 解析程序 Web 服务 |Microsoft 文档
+title: 解析程序 Web 服务 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 916181431686ca729c0751d9362570afb7dddeee
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3cd153a8ceeba983c71854d02854e37ed046e1bd
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22295213"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36987526"
 ---
 # <a name="the-resolver-web-service"></a>解析程序 Web 服务
-冲突解决程序 Web 服务是网关置于 ESB 动态解决机制。 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]包括此服务的两个版本： ASP.NET (ASMX) 版本和 Windows Communication Foundation (WCF) 版本。 服务名称**ESB。ResolverServices**和**ESB。ResolverServices.WCF**分别和服务公开以下方法：  
+解析程序 Web 服务是在 ESB 动态解析机制的网关。 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] 包括此服务的两个版本： ASP.NET (ASMX) 版本和 Windows Communication Foundation (WCF) 版本。 服务名称是**ESB。ResolverServices**和**ESB。ResolverServices.WCF**分别和服务公开以下方法：  
   
--   **解决。** 此方法将作为其单个参数**字符串**，其中包含该请求，这符合标准连接字符串的已注册的解析程序如冲突解决程序连接字符串**静态、 BRE、 UDDI，XPATH、 路线，路线静态、 BRI，** 或**LDAP。**  
+- **解决。** 此方法采用当作其单个参数**字符串**，其中包含请求，这符合标准的连接字符串的已注册冲突解决程序如冲突解决程序连接字符串**静态，BRE，UDDI，XPATH，路线，路线静态的 BRI，** 或**LDAP。**  
   
--   **ResolveMessage。** 此方法将其第一个参数作为一个字符串，包含该请求，这符合标准连接字符串的已注册的解析程序如的冲突解决程序连接字符串**静态、 BRE、 UDDI、 XPATH、 路线，路线静态、 BRI，** 或**LDAP**。 此外，该方法将接受可选的第二个参数，作为**字符串**，其中包含此服务可以使用作为可选的事实数据以帮助解决问题的 XML 消息文档; 例如，BRE 冲突解决程序可能需要消息正文封装事实。  
+- **ResolveMessage。** 此方法将作为其第一个参数包含请求，这符合标准的连接字符串的已注册冲突解决程序如的冲突解决程序连接字符串的字符串**静态、 BRE、 UDDI、 XPATH、 路线，静态路线 BRI，** 或**LDAP**。 此外，该方法接受一个可选的第二个参数作为**字符串**，其中包含该服务可以使用作为可选的事实来帮助解决问题的 XML 消息文档; 例如，BRE 冲突解决程序可能需要消息正文封装的事实。  
   
- 有关的冲突解决程序和 ResolverDictionary 类和其用法的详细信息，请参阅[使用帮助器类](../esb-toolkit/using-the-helper-classes.md)。  
+  有关的冲突解决程序和 ResolverDictionary 类和其用法的详细信息，请参阅[的帮助程序类](../esb-toolkit/using-the-helper-classes.md)。  
   
-## <a name="resolver-connection-strings"></a>冲突解决程序连接字符串  
- ESB 动态解决机制使用前面是名字对象，该值指示可执行的解决方法的类型的连接字符串。 支持的名字对象包括**静态、 BRE、 UDDI、 UDDI3、 XPATH、 路线，路线静态、 BRI，** 和**LDAP**。 以下连接字符串举例说明**UDDI**名字对象：  
+## <a name="resolver-connection-strings"></a>冲突解决程序的连接字符串  
+ ESB 动态解析机制使用前面有一个名字对象，指示可执行解决方法的类型的连接字符串。 受支持的名字对象包括**静态、 BRE、 UDDI、 UDDI3、 XPATH、 路线，路线静态的 BRI，** 并**LDAP**。 下面的连接字符串显示的示例**UDDI**名字对象：  
   
 ```  
   
@@ -37,9 +37,9 @@ ms.locfileid: "22295213"
 UDDI:\\serverUrl=http://localhost/uddi;serviceName=PurchaseOrder;serviceProvider=Microsoft.Practices.ESB  
 ```  
   
- 有关支持的动态解决机制的连接字符串的类型的信息，请参阅[使用动态解析和路由](../esb-toolkit/using-dynamic-resolution-and-routing.md)。  
+ 有关支持的动态解析机制的连接字符串的类型的信息，请参阅[使用动态解析和路由](../esb-toolkit/using-dynamic-resolution-and-routing.md)。  
   
 > [!NOTE]
->  你必须配置此服务以使用任一 Windows 集成安全性和内置的网络服务帐户下运行。  
+>  必须配置为使用任一 Windows 集成安全性和内置网络服务帐户下运行此服务。  
 >   
->  默认情况下，冲突解决程序 Web 服务未配置为要求安全套接字层 (SSL) 时的客户端访问。 你应配置服务，因此需要 SSL 的客户端访问和保护 Internet Information Services (IIS) Web 服务主机计算机和使用网络级别 IPSec 和相应的文件级访问你 BizTalk Server 之间的连接控制列表 (ACL) 权限。 若要避免安全风险，建议不要公开此服务的受信任的子系统的边界之外。
+>  默认情况下，冲突解决程序 Web 服务未配置为需要安全套接字层 (SSL) 客户端进行访问时。 应配置服务，因此它需要 SSL 客户端访问和保护 Internet 信息服务 (IIS) Web 服务主机计算机和使用网络级别 IPSec 和相应的文件级访问 BizTalk Server 之间的连接控制列表 (ACL) 权限。 若要避免安全风险，建议不要公开此服务的受信任的子系统边界之外。

@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10534 |Microsoft 文档
+title: 单一登录： 事件 10534 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,16 +12,16 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ac17888699ed616a3f38deb65a79c16ce8265a51
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3cd927dac38871c8d4c9d6de8650ec5f7e1151bb
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270253"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36968206"
 ---
 # <a name="single-sign-on-event-10534"></a>单一登录： 事件 10534
 ## <a name="details"></a>详细信息  
-  
+
 |||  
 |-|-|  
 |产品名称|企业单一登录|  
@@ -32,16 +32,16 @@ ms.locfileid: "22270253"
 |组件|N\A|  
 |符号名称|SSO_INFO_SECRET_SERVER_STARTING|  
 |消息正文|此计算机是主密钥服务器。|  
-  
+
 ## <a name="explanation"></a>解释  
  此信息事件表明此计算机是主密钥服务器。  
-  
+
 ## <a name="user-action"></a>用户操作  
-  
--   不需要用户进行任何操作。  
-  
- 有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
-  
--   [如何生成主密钥](../core/how-to-generate-the-master-secret.md)  
-  
--   [管理主密钥](../core/managing-the-master-secret.md)
+
+- 不需要用户进行任何操作。  
+
+  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+
+- [如何生成主密钥](../core/how-to-generate-the-master-secret.md)  
+
+- [管理主密钥](../core/managing-the-master-secret.md)

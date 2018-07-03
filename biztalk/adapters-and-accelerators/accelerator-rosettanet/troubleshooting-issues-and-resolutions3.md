@@ -1,5 +1,5 @@
 ---
-title: 疑难解答： 问题和 Resolutions3 |Microsoft 文档
+title: 疑难解答： 问题和 Resolutions3 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,15 +14,15 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 68c63e7aeab46436e894d43d77b92a2a061d5b60
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: ad2e2db5e7d4d8c8181248f9345f1df2cca4a6dd
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26010326"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36985094"
 ---
-# <a name="troubleshooting-issues-and-resolutions"></a>疑难解答： 问题和解决方法
-本主题讲述与运行 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 相关的问题。 每个问题都详细描述了一种特定的症状、其可能的原因以及解决方案。  
+# <a name="troubleshooting-issues-and-resolutions"></a>故障排除： 问题和解决方法
+本主题介绍与运行 Microsoft® 相关的问题[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]。 每个问题都详细描述了一种特定的症状、其可能的原因以及解决方案。  
   
 ## <a name="error-publishing-a-batch-of-n-messages"></a>发布一批（“n”条）消息时出错  
   
@@ -34,18 +34,18 @@ ms.locfileid: "26010326"
 ### <a name="possible-cause"></a>可能的原因  
  此错误可能由以下某个原因引起：  
   
--   缺少解密证书  
+- 缺少解密证书  
   
--   未正确加密消息  
+- 未正确加密消息  
   
--   未经授权的消息（未将源识别为有效的合作伙伴）  
+- 未经授权的消息（未将源识别为有效的合作伙伴）  
   
--   消息未能通过对任意标头部分（前导头、传递头或服务头）的验证。  
+- 消息未能通过对任意标头部分（前导头、传递头或服务头）的验证。  
   
- 此消息之前可能有另一个详细说明原因的错误消息。  
+  此消息之前可能有另一个详细说明原因的错误消息。  
   
 ### <a name="solution"></a>解决方案  
- 请查看随错误消息提供的详细信息，以获取其他帮助。 重新启动[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]™ 可能解决此问题。  
+ 请查看随错误消息提供的详细信息，以获取其他帮助。 正在重启 Microsoft [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]™ 可能会解决此问题。  
   
 ## <a name="you-cannot-unenlist-all-artifacts"></a>无法取消登记所有项目  
   
@@ -53,7 +53,7 @@ ms.locfileid: "26010326"
  运行 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]Clean 实用工具不能取消登记所有项目。  
   
 ### <a name="possible-cause"></a>可能的原因  
- 如果在从 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]® 管理控制台 (MMC) 中删除协议及合作伙伴之前运行 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]Clean 实用工具，则 BtarnClean 实用工具将无法取消登记所有项目，因为这些项目仍在使用中。  
+ 如果您运行[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]删除协议和合作伙伴从 Microsoft® 管理控制台 (MMC) 之前的 Clean 实用工具，BtarnClean 实用工具将不能取消登记所有项目，因为仍使用它们。  
   
 ### <a name="solution"></a>解决方案  
   
@@ -72,7 +72,7 @@ ms.locfileid: "26010326"
 ## <a name="installing-btarn-on-a-computer-without-biztalk-server-causes-missing-files"></a>在未安装 BizTalk Server 的计算机上安装 BTARN 会导致文件丢失  
   
 ### <a name="symptom"></a>故障现象  
- 运行 ConfigFramework.exe 文件生成不具有的计算机上没有结果[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Server 或[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]安装。 只能将此 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 配置作为 HTTP 客户端使用。  
+ 运行 ConfigFramework.exe 文件产生不具有 MicrosoftBizTalk 服务器或 Microsoft 的计算机上的任何结果[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]安装。 只能将此 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 配置作为 HTTP 客户端使用。  
   
 ### <a name="possible-cause"></a>可能的原因  
  安装过程中缺少两个 DLL 文件。  
@@ -102,15 +102,15 @@ ms.locfileid: "26010326"
   
  跟踪消息活动时出错。 错误消息为“存储过程不存在”。  
   
- - 或 -  
+ -或-  
   
- 终止具有 id BAM 消息活动中的错误 *\<ID 号\>*。  
+ 终止 id 的 BAM 消息活动时出错 *\<ID 号\>*。  
   
 ### <a name="possible-cause"></a>可能的原因  
  未安装业务活动监视 (BAM) 跟踪工具。  
   
 ### <a name="solution"></a>解决方案  
- 安装跟踪工具使用 BAM**自定义安装**选项。 如果不需要 BAM 功能，可忽略这些消息，或使用 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 管理控制台禁用跟踪。 禁用跟踪后，必须重新启动 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 和 Internet 信息服务 (IIS)。  
+ 安装 BAM 跟踪工具使用**自定义安装**选项。 如果不需要 BAM 功能，可忽略这些消息，或使用 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 管理控制台禁用跟踪。 禁用跟踪后，必须重新启动 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 和 Internet 信息服务 (IIS)。  
   
 ## <a name="your-xsd-schema-does-not-display-properly-in-biztalk-editor"></a>XSD 架构在 BizTalk 编辑器中显示不正确  
   
@@ -125,7 +125,7 @@ ms.locfileid: "26010326"
   
  例如：  
   
- \<schemaInfo document_type ="4A1"版本 ="V02_00"xmlns ="http://schemas.microsoft.com/BizTalk/2003" *displayroot_reference ="Pip4A1StrategicForecastNotification"* root_reference ="Pip4A1StrategicForecastNotification"\>  
+ \<schemaInfo document_type ="4A1"版本 ="V02_00"xmlns ="<http://schemas.microsoft.com/BizTalk/2003>" *displayroot_reference ="Pip4A1StrategicForecastNotification"* root_reference ="Pip4A1StrategicForecastNotification" \>  
   
 ## <a name="404-not-found-error-when-sending-a-http-request"></a>发送 HTTP 请求时出现“404 找不到”错误  
   
@@ -144,25 +144,25 @@ ms.locfileid: "26010326"
   
 ##### <a name="to-configure-the-biztalk-isapi-extension-dll-in-iis"></a>在 IIS 中配置 BizTalk ISAPI 扩展 DLL  
   
-1.  单击**启动**，指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**。  
+1. 单击**启动**，依次指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**。  
   
-2.  展开**\<计算机名称\>（本地计算机）**，然后单击**Web 服务扩展**。  
+2. 展开**\<计算机名\>（本地计算机）**，然后单击**Web 服务扩展**。  
   
-3.  在**Web 服务扩展**窗格中，验证是否允许 HwsMessages HttpReceive 的状态。 如果没有，请右键单击**HwsMessages HttpReceive**，然后单击**允许**。  
+3. 在中**Web 服务扩展**窗格中，验证是否允许 HwsMessages HttpReceive 的状态。 如果没有，请右键单击**HwsMessages HttpReceive**，然后单击**允许**。  
   
- 如果未配置 HwsMessages HttpReceive Web Services 扩展（它没有包含在 IIS 管理器的“Web Services 扩展”列表中），则请执行以下过程。  
+   如果未配置 HwsMessages HttpReceive Web Services 扩展（它没有包含在 IIS 管理器的“Web Services 扩展”列表中），则请执行以下过程。  
   
 ##### <a name="to-configure-the-biztalk-isapi-extension-dll-in-iis"></a>在 IIS 中配置 BizTalk ISAPI 扩展 DLL  
   
-1.  单击**启动**，指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**。  
+1.  单击**启动**，依次指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**。  
   
-2.  展开**\<计算机名称\>（本地计算机）**，右键单击**Web 服务扩展**，然后单击**添加一个新的 Web 服务扩展**.  
+2.  展开**\<计算机名\>（本地计算机）**，右键单击**Web 服务扩展**，然后单击**添加一个新的 Web 服务扩展**.  
   
-3.  在**新建 Web 服务扩展**对话框中，在**扩展名**框中，键入**BizTalk ISAPI 扩展**，然后单击**添加**。  
+3.  中**新的 Web 服务扩展**对话框中**扩展名**框中，键入**BizTalk ISAPI 扩展**，然后单击**添加**。  
   
-4.  在**Add File**对话框中，在**文件路径**框中，键入**\<驱动器\>: files\microsoft BizTalk Server\<版本\>\HttpReceive\BTSHttpReceive.dll**，然后单击**确定**。  
+4.  在中**Add File**对话框中**文件的路径**框中，键入**\<驱动器\>: \Program Files\Microsoft BizTalk Server\<版本\>\HttpReceive\BTSHttpReceive.dll**，然后单击**确定**。  
   
-5.  在**新建 Web 服务扩展**对话框中，选择**设置扩展状态为允许**，然后单击**确定**。  
+5.  在**新的 Web 服务扩展**对话框中，选择**为允许设置扩展状态**，然后单击**确定**。  
   
 ## <a name="an-access-violation-occurs-when-running-the-configuration-wizard"></a>运行配置向导时出现访问冲突  
   
@@ -172,10 +172,10 @@ ms.locfileid: "26010326"
  使用用户帐户“\HostSvc”配置的 BizTalk 独立主机实例要么未运行，要么在此计算机上不存在。 请使用 BizTalk 管理控制台新建一个独立主机，或者重新配置一个现有主机，使其以“\hostsvc”的身份运行。  
   
 ### <a name="possible-cause"></a>可能的原因  
- 若要运行配置向导，用户应配置为\<*计算机名称*\>\hostsvc，不是 \hostsvc。  
+ 若要运行配置向导，用户应配置为\<*机器名*\>\hostsvc，不是 \hostsvc。  
   
 ### <a name="solution"></a>解决方案  
- 打开 BizTalk 管理控制台中，并更改 \hostsvc 的帐户下运行的主机，以便它们在帐户下运行\<*计算机名称*\>\hostsvc。  
+ 打开 BizTalk 管理控制台中，并更改 \hostsvc 帐户下运行的主机，使它们在帐户下运行\<*机器名*\>\hostsvc。  
   
 ## <a name="you-receive-an-error-when-importing-and-compiling-a-rosettanet-next-generation-pip-schema"></a>导入和编译 RosettaNet 下一代 PIP 架构时出现错误  
   
@@ -193,7 +193,7 @@ ms.locfileid: "26010326"
 ## <a name="you-receive-an-error-when-trying-to-manually-deploy-the-bam-package"></a>试图手动部署 BAM 软件包时出现错误  
   
 ### <a name="symptom"></a>故障现象  
- 当你手动尝试部署的 BAM 包[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]，你收到一个错误，指示不能将部署包。  
+ 当您尝试手动部署的 BAM 软件包[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]，你收到一个错误，指示在不能部署包。  
   
 ### <a name="possible-cause"></a>可能的原因  
  系统上所安装的 DTS 软件包 BAM_DM_Process 和 BAM_DM_Message 妨碍了 BAM 软件包的部署。  
@@ -202,17 +202,17 @@ ms.locfileid: "26010326"
   
 ##### <a name="to-recover-from-the-error-condition-and-deploy-the-bam-package"></a>从错误情况中恢复并部署 BAM 软件包  
   
-1.  单击**启动**，指向**所有程序**，指向**Microsoft SQL Server**，然后单击**企业管理器**。  
+1.  单击**启动**，依次指向**所有程序**，指向**Microsoft SQL Server**，然后单击**企业管理器**。  
   
-2.  在企业管理器中，展开**Microsoft SQL Server**， **SQL Server 组**， **（本地） (Windows NT)**，和**Data Transformation Services**.  
+2.  在企业管理器中，展开**Microsoft SQL Servers**， **SQL Server 组**， **（本地） (Windows NT)**，和**Data Transformation Services**.  
   
-3.  单击**本地包**，右键单击**BAM_DM_Message**，然后单击**删除**。  
+3.  单击**Local Packages**，右键单击**BAM_DM_Message**，然后单击**删除**。  
   
 4.  右键单击**BAM_DM_Process**，然后单击**删除**。  
   
 5.  单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-6.  在命令提示符下键入以下代码以将跟踪文件中，部署，然后单击**确定**。  
+6.  在命令提示符下键入以下代码以部署跟踪文件，然后单击**确定**。  
   
     ```  
     cd %ProgramFiles%\Microsoft BizTalk Server <version>\Tracking  
@@ -246,13 +246,13 @@ ms.locfileid: "26010326"
   
 ##### <a name="to-avoid-this-error-and-complete-the-configuration-process"></a>避免此错误并完成配置过程  
   
-1.  在 [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] 浏览器中，切换到 C:\Windows\system32\drivers\etc，然后使用记事本打开主机文件。  
+1. 在 [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] 浏览器中，切换到 C:\Windows\system32\drivers\etc，然后使用记事本打开主机文件。  
   
-2.  注释禁止行"127.0.0.1 localhost"通过将"#"放置在行的开头。 保存更改过的主机文件。  
+2. 注释掉"127.0.0.1 localhost"通过将"#"放置在行的开头。 保存更改过的主机文件。  
   
-3.  单击**重试**在错误对话框中。  
+3. 单击**重试**在错误对话框中。  
   
-4.  配置成功完成后，重新在记事本中打开主机文件，删除映射 localhost 的行前的注释标记，然后保存主机文件。  
+4. 配置成功完成后，重新在记事本中打开主机文件，删除映射 localhost 的行前的注释标记，然后保存主机文件。  
   
 ## <a name="you-receive-an-error-regarding-incorrect-signature-length"></a>出现指出签名长度不正确的错误  
   
@@ -270,7 +270,7 @@ ms.locfileid: "26010326"
 ## <a name="you-receive-503-service-unavailable-from-internet-explorer-on-64-bit-machine"></a>在 64 位计算机上从 Internet Explorer 收到“503：服务不可用”  
   
 ### <a name="symptom"></a>故障现象  
- 后[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]完成配置，当你尝试访问时[http://localhost](http://localhost/)或[http://localhost/BtarnApp/RnifSend.aspx](http://localhost/BtarnApp/RnifSend.aspx)，你可能会收到以下或类似错误：  
+ 之后[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]完成配置，当您尝试访问[ http://localhost ](http://localhost/)或[ http://localhost/BtarnApp/RnifSend.aspx ](http://localhost/BtarnApp/RnifSend.aspx)，可能会收到以下或类似错误：  
   
  503：服务不可用  
   
@@ -281,15 +281,15 @@ ms.locfileid: "26010326"
   
 ##### <a name="to-remove-rpcproxy-filter-entry-in-iis"></a>删除 IIS 中的 RpcProxy 筛选器条目  
   
-1.  单击**启动**，指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**。  
+1.  单击**启动**，依次指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**。  
   
-2.  展开**\<计算机名称\>（本地计算机）**，右键单击**网站**，然后单击**属性**。  
+2.  展开**\<计算机名\>（本地计算机）**，右键单击**网站**，然后单击**属性**。  
   
 3.  选择**ISAPI 筛选器**选项卡。  
   
 4.  选择**RpcProxy 筛选器**，然后单击**删除**。  
   
-5.  单击 **“确定”**。  
+5.  单击“确定” 。  
   
 6.  单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
@@ -300,12 +300,12 @@ ms.locfileid: "26010326"
     ```  
   
 > [!NOTE]
->  执行上述步骤后，如果试图再次访问 http://localhost 或 http://localhost/BtarnApp/RnifSend.aspx，会收到从 Internet Explorer 返回的 HTTP 400 消息，这意味着现在 IIS 已正常运行。  
+>  如果你尝试访问http://localhost或http://localhost/BtarnApp/RnifSend.aspx再次执行上述步骤后，你将收到 HTTP 400 消息返回来自 Internet 资源管理器，这意味着 IIS 现在运行正常。  
   
 ## <a name="the-hubscenario-sample-will-not-be-installed-correctly-if-the-assembly-key-files-are-not-entered-for-the-projects"></a>如果没有为项目输入程序集密钥文件，则 HubScenario 示例将无法正确安装  
   
 ### <a name="symptom"></a>故障现象  
- 当你运行 setup.bat *\<驱动器\>*: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本\>RosettaNet\SDK\HubScenario 设置快捷键HubScenario 示例中，则操作将失败。  
+ 当你运行 setup.bat *\<驱动器\>*: \Program Files\\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\HubScenario 设置HubScenario 示例时，则操作将失败。  
   
 ### <a name="possible-cause"></a>可能的原因  
  由于项目中没有设置程序集密钥文件，HubScenario 和 HubHelper 程序集没有正确部署。  
@@ -319,10 +319,10 @@ ms.locfileid: "26010326"
  当你运行 setup.bat 以生成和初始化“双操作 PIPAutomation 业务流程”示例时，BTARNData 数据库中未创建 PipAutomationGetAction 存储过程。  
   
 ### <a name="possible-cause"></a>可能的原因  
- 在 64 位计算机上或在 SQL Server 2008 R2/2008 SP1 运行的 BizTalk Server 安装上运行 setup.bat。 这两种情况要求你运行 setupx64.bat。  
+ 在 64 位计算机上或在 SQL Server 2008 R2/2008 SP1 运行的 BizTalk Server 安装上运行了 setup.bat。 这两种情况要求你运行 setupx64.bat。  
   
 ### <a name="solution"></a>解决方案  
- 运行 setupx64.bat 以创建该存储过程。 有关详细信息，请参阅[Double 操作 PIPAutomation Orchestration](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)。  
+ 运行 setupx64.bat 以创建该存储过程。 有关详细信息，请参阅[双操作 PIPAutomation 业务流程](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)。  
   
 ## <a name="enable-the-btarn-application-pools-for-32-bit-on-windows-server-2008-64-bit-windows-operating-system-os"></a>为 Windows Server 2008（64 位 Windows 操作系统 (OS)）上的 32 位程序启用 BTARN 应用程序池  
  要在 Windows Server 2008（64 位 Windows 操作系统 (OS)）、Internet 信息服务管理器 7.5/7.0 上运行 BTARN 端对端方案：  
@@ -331,6 +331,6 @@ ms.locfileid: "26010326"
   
  2. 为引用 IsapiModule 筛选器的 *.dll 添加 HTTP 处理程序。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [BtarnClean](../../adapters-and-accelerators/accelerator-rosettanet/btarnclean.md)   
  [Loopback](../../adapters-and-accelerators/accelerator-rosettanet/loopback.md)

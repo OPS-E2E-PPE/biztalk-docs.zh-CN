@@ -1,5 +1,5 @@
 ---
-title: 在 HL7 2.X 汇编程序架构确定 |Microsoft 文档
+title: HL7 2.X 汇编程序的架构确定 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,34 +16,34 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 50a430750846ae2567f063f9aa77221bad9c97e0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 962f9576032ec8b42542111502c2b6d6698f98d1
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206093"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36983646"
 ---
-# <a name="schema-determination-in-the-hl7-2x-assembler"></a>架构确定在 HL7 2.X 汇编程序
-当一条消息都流向序列化程序，在序列化程序[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 使用 MSH5 （目标方） 以确定要在消息上执行的操作的消息。 此类操作包括：  
+# <a name="schema-determination-in-the-hl7-2x-assembler"></a>HL7 2.X 汇编程序的架构确定
+一条消息到序列化程序的流时，Microsoft BizTalk Accelerator for HL7 中的序列化程序 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 使用 MSH5 （目标参与方） 的消息，以确定要对消息执行的操作。 此类操作包括：  
   
--   是否为正文段执行 XML 验证  
+- 是否为正文段执行 XML 验证  
   
--   是否要验证正文段的自定义数据类型  
+- 是否要验证主体段的自定义数据类型  
   
--   是否允许尾随分隔符在正文中  
+- 是否允许尾部分隔符在正文中  
   
--   序列化程序将使用的架构目标命名空间  
+- 序列化程序将使用哪些架构目标命名空间  
   
--   序列化程序是否需要来映射的标题  
+- 序列化程序是否需要映射的标题  
   
- 若要确定架构，序列化程序将执行以下操作：  
+  若要确定架构，序列化程序将执行以下操作：  
   
--   设置的目标命名空间 (**TargetNS**) 为目标方配置的命名空间相同的值  
+- 设置目标命名空间 (**TargetNS**) 到相同的值为目标参与方配置的命名空间  
   
--   提取**Rootnode**从**BTS。MessageType**提升属性  
+- 提取**Rootnode**从**BTS。MessageType**升级的属性  
   
- **Doctype**变得**TargetNS +"#"+ Rootnode**。  
+  **Doctype**变得**TargetNS +"#"+ Rootnode**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [消息处理](../../adapters-and-accelerators/accelerator-hl7/message-processing.md)   
  [BTAHL72X 平面文件处理](../../adapters-and-accelerators/accelerator-hl7/btahl72x-flat-file-processing.md)

@@ -1,5 +1,5 @@
 ---
-title: 使用 WCF 服务模型调用 SQL Server 中的表值函数 |Microsoft 文档
+title: 通过使用 WCF 服务模型中调用 SQL Server 中的表值函数 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,42 +12,42 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a736a82e57f71568f8718a6e4d41e7b649004120
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f4243973f6e6b04cddec14261d5b1acedff4b9e0
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22224693"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36989158"
 ---
-# <a name="invoke-table-valued-functions-in-sql-server-by-using-the-wcf-service-model"></a>使用 WCF 服务模型调用 SQL Server 中的表值函数
-你可以使用[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]在.NET 应用程序中使用 WCF 服务模型调用 SQL Server 中的表值函数。 适配器将表值函数公开为可以直接在 SQL Server 调用的方法。 有关如何适配器支持标量函数的详细信息，请参阅[Execute Table-Valued 函数中使用的 SQL 适配器的 SQL Server](../../adapters-and-accelerators/adapter-sql/execute-table-valued-functions-in-sql-server-using-the-sql-adapter.md)。  
+# <a name="invoke-table-valued-functions-in-sql-server-by-using-the-wcf-service-model"></a>通过使用 WCF 服务模型中调用 SQL Server 中的表值函数
+可以使用[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].NET 应用程序使用 WCF 服务模型来调用 SQL Server 中的表值函数中。 该适配器将表值函数公开为可以直接在 SQL Server 调用的方法。 有关如何在适配器支持标量函数的详细信息，请参阅[Execute Table-Valued 函数中使用 SQL 适配器的 SQL Server](../../adapters-and-accelerators/adapter-sql/execute-table-valued-functions-in-sql-server-using-the-sql-adapter.md)。  
   
- 本主题演示如何调用中的 SQL Server 数据库的 TVF_EMPLOYEE 函数。 TVF_EMPLOYEE 函数采用的某位员工的指定**员工**表，并返回该员工记录。 TVF_EMPLOYEE 函数和**员工**通过运行这些示例使用提供的 SQL 脚本创建表。 有关详细信息，请参阅[适配器示例](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)。  
+ 本主题演示如何在 SQL Server 数据库 TVF_EMPLOYEE 函数调用。 TVF_EMPLOYEE 函数采用指定的某位员工的**员工**表，并返回该员工记录。 TVF_EMPLOYEE 函数和**员工**通过运行这些示例提供的 SQL 脚本创建表。 有关详细信息，请参阅[适配器示例](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)。  
   
-## <a name="about-the-examples-used-in-this-topic"></a>有关在本主题中使用的示例  
- 本主题中的示例调用 TVF_EMPLOYEE 表值函数上**员工**表。 TVF_EMPLOYEE 函数和**员工**通过运行这些示例使用提供的 SQL 脚本创建表。 示例中， **TableFunction_ServiceModel**，后者基于本主题中，还提供了与[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]示例。 有关详细信息，请参阅[适配器示例](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)。  
+## <a name="about-the-examples-used-in-this-topic"></a>有关使用在本主题中的示例  
+ 本主题中的示例在调用 TVF_EMPLOYEE 表值函数**员工**表。 TVF_EMPLOYEE 函数和**员工**通过运行这些示例提供的 SQL 脚本创建表。 示例中， **TableFunction_ServiceModel**，后者基于本主题中，还提供与[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]示例。 有关详细信息，请参阅[适配器示例](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)。  
   
 ## <a name="the-wcf-client-class"></a>WCF 客户端类  
- 为调用中使用 SQL Server 的标量函数生成 WCF 客户端的名称[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]下表中列出。  
+ 生成用于调用标量函数中使用 SQL Server 的 WCF 客户端名称[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]下表中列出。  
   
 |SQL Server 数据库项目|WCF 客户端名称|  
 |----------------------------------|---------------------|  
-|表值函数|TableValuedFunctions_ [架构] 客户端|  
+|表值函数|客户端 TableValuedFunctions_ [架构]|  
   
- [架构] = SQL Server 集合项目;例如，dbo。  
+ [架构] = 集合的 SQL Server 项目;例如，dbo。  
   
-### <a name="method-signature-for-invoking-table-valued-functions"></a>为了调用表值函数的方法签名  
- 下表显示对表的基本操作的方法签名。 签名是相同的视图，只不过视图命名空间和名称替换那些表。  
+### <a name="method-signature-for-invoking-table-valued-functions"></a>用于调用表值函数的方法签名  
+ 下表显示了对表的基本操作的方法签名。 签名是相同的视图，只不过视图命名空间和名称替换这些表。  
   
 |运算|方法签名|  
 |---------------|----------------------|  
-|表值函数名称|公共 [NAMESPACE] [FUNCTION_NAME] [] [FUNCTION_NAME] (param1，param2，...\)|  
+|表值函数名称|公共 [NAMESPACE] [FUNCTION_NAME] [] [FUNCTION_NAME] (param1，参数 2，...\)|  
   
  [NAMESPACE] = 命名空间，例如，schemas.microsoft.com.Sql._2008._05.Types.TableFunctionReturnTables.dbo.TVF_EMPLOYEE  
   
  [FUNCTION_NAME] = 表值函数的名称。  
   
- 例如，下面的代码演示方法签名，用于生成 WCF 客户端类**TVF_EMPLOYEE**标量函数，在 dbo 架构中，它将作为参数员工指定内容并返回该员工记录。  
+ 例如，下面的代码演示的方法签名，用于为生成 WCF 客户端类**TVF_EMPLOYEE**在 dbo 架构中，它将员工指定为参数并返回该雇员的标量函数记录。  
   
 ```  
 public partial class TableValuedFunctions_dboClient : System.ServiceModel.ClientBase<TableValuedFunctions_dbo>, TableValuedFunctions_dbo {      
@@ -55,89 +55,89 @@ public partial class TableValuedFunctions_dboClient : System.ServiceModel.Client
 }  
 ```  
   
- 在此代码段， **TableValuedFunctions_dboClient**是 WCF 中的类的生成的 SqlAdapterBindingClient.cs 名称[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。  
+ 此代码片段**TableValuedFunctions_dboClient**是 WCF 中的类的生成的 SqlAdapterBindingClient.cs 名称[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。  
   
-### <a name="parameters-for-invoking-table-valued-functions"></a>为了调用表值函数的参数  
- 通过公开的方法的参数[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]来调用表值函数并在 SQL Server 中的函数定义中定义的参数相同。 例如，调用 TVF_EMPLOYEE 表值函数的参数是 emp_desig 并且充分员工的代码。  
+### <a name="parameters-for-invoking-table-valued-functions"></a>调用表值函数的参数  
+ 通过公开的方法的参数[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]调用表值函数将与 SQL Server 中的函数定义中定义的参数相同。 例如，调用 TVF_EMPLOYEE 表值函数的参数相当 emp_desig，员工的代码。  
   
- 同样，表值函数的返回值是与 SQL Server 中的函数定义中定义的返回值相同。 例如，TVF_EMPLOYEE 函数的返回值是数组类型 schemas.microsoft.com.Sql._2008._05.Types.TableFunctionReturnTables.dbo.TVF_EMPLOYEE [] 的记录。  
+ 同样，对于表值函数的返回值是与 SQL Server 中的函数定义中定义的返回值相同。 例如，TVF_EMPLOYEE 函数的返回值是一个数组类型 schemas.microsoft.com.Sql._2008._05.Types.TableFunctionReturnTables.dbo.TVF_EMPLOYEE [] 的记录。  
   
 ## <a name="creating-a-wcf-client-to-invoke-table-valued-functions"></a>创建 WCF 客户端调用表值函数  
- 泛型的执行 SQL Server 使用 WCF 客户端上的操作所需的操作集涉及到一组任务中所述[与 SQL 适配器的 WCF 服务模型概述](overview-of-the-wcf-service-model-with-the-sql-adapter.md)。 本部分介绍如何创建 WCF 客户端来调用**TVF_EMPLOYEE**表值函数。  
+ 通用组对 SQL Server 使用 WCF 客户端执行操作所需的操作涉及到一组任务中所述[与 SQL 适配器的 WCF 服务模型概述](overview-of-the-wcf-service-model-with-the-sql-adapter.md)。 本部分介绍如何创建 WCF 客户端以调用**TVF_EMPLOYEE**表值函数。  
   
  
-1.  创建 Visual C# 项目中的[!INCLUDE[btsVStudioNoVersion](../../includes/btsVStudioNoVersion-md.md)]。 有关本主题中，创建一个控制台应用程序。  
+1. 创建 Visual C# 项目中的[!INCLUDE[btsVStudioNoVersion](../../includes/btsVStudioNoVersion-md.md)]。 有关本主题中，创建一个控制台应用程序。  
   
-2.  生成的 WCF 客户端类**TVF_EMPLOYEE**标量函数。 有关生成 WCF 客户端类的详细信息，请参阅[为 SQL Server 项目生成 WCF 客户端或 WCF 服务协定](generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)。  
+2. 生成的 WCF 客户端类**TVF_EMPLOYEE**标量函数。 有关生成 WCF 客户端类的详细信息，请参阅[为 SQL Server 项目生成 WCF 客户端或 WCF 服务约定](generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)。  
   
-3.  在解决方案资源管理器，添加对引用`Microsoft.Adapters.Sql`和`Microsoft.ServiceModel.Channels`。  
+3. 在解决方案资源管理器，添加对引用`Microsoft.Adapters.Sql`和`Microsoft.ServiceModel.Channels`。  
   
-4.  打开 Program.cs，如下面的代码段中所述创建客户端。  
+4. 打开 Program.cs，并创建一个客户端，如下面的代码段中所述。  
   
-    ```  
+   ```  
   
-              TableValuedFunctions_dboClient client = new TableValuedFunctions_dboClient("SqlAdapterBinding_TableValuedFunctions_dbo");  
-    client.ClientCredentials.UserName.UserName = "<Enter user name here>";  
-    client.ClientCredentials.UserName.Password = "<Enter password here>";  
-    ```  
+             TableValuedFunctions_dboClient client = new TableValuedFunctions_dboClient("SqlAdapterBinding_TableValuedFunctions_dbo");  
+   client.ClientCredentials.UserName.UserName = "<Enter user name here>";  
+   client.ClientCredentials.UserName.Password = "<Enter password here>";  
+   ```  
   
-     在此代码段，`TableValuedFunctions_dboClient`是 SqlAdapterBindingClient.cs 中定义的 WCF 客户端。 此文件由生成[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。 `SqlAdapterBinding_TableValuedFunctions_dbo`是客户端终结点配置的名称，并在 app.config 中定义。此文件也会生成由[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]，其中包含的绑定属性和其他配置设置。  
+    在此代码段，`TableValuedFunctions_dboClient`是 SqlAdapterBindingClient.cs 中定义的 WCF 客户端。 此文件由生成[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。 `SqlAdapterBinding_TableValuedFunctions_dbo` 客户端终结点配置的名称，并在 app.config 中定义。此文件也由生成[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]，其中包含的绑定属性和其他配置设置。  
   
-    > [!NOTE]
-    >  在此代码段中，你使用的绑定和终结点地址从配置文件。 你还可显式指定这些值在代码中。 然后指定客户端绑定的不同方法的详细信息，请参阅[为该 SQL 适配器配置客户端绑定](configure-a-client-binding-for-the-sql-adapter.md)。  
+   > [!NOTE]
+   >  在此片段中，您使用的绑定和终结点地址从配置文件。 在代码中，可以显式指定这些值。 然后指定客户端绑定的不同方法的详细信息，请参阅[为 SQL 适配器配置客户端绑定](configure-a-client-binding-for-the-sql-adapter.md)。  
   
-5.  下面的代码段中所述，请打开客户端：  
+5. 打开客户端，如下面的代码段中所述：  
   
-    ```  
-    try  
-    {  
-       Console.WriteLine("Opening Client...");  
-       client.Open();  
-    }  
-    catch (Exception ex)  
-    {  
-       Console.WriteLine("Exception: " + ex.Message);  
+   ```  
+   try  
+   {  
+      Console.WriteLine("Opening Client...");  
+      client.Open();  
+   }  
+   catch (Exception ex)  
+   {  
+      Console.WriteLine("Exception: " + ex.Message);  
+      throw;  
+   }  
+   ```  
+  
+6. 调用**TVF_EMPLOYEE**函数以检索具有指定的"管理器"的所有员工记录。  
+  
+   ```  
+   Console.WriteLine("Invoking the TVF_EMPLOYEE function");  
+   schemas.microsoft.com.Sql._2008._05.Types.TableFunctionReturnTables.dbo.TVF_EMPLOYEE[] emp_details;  
+   string emp_designation = "Manager";  
+  
+   try  
+   {  
+       emp_details = client.TVF_EMPLOYEE(emp_designation);  
+   }  
+   catch (Exception e)  
+   {  
+       Console.WriteLine("Exception: " + e.Message);  
        throw;  
-    }  
-    ```  
+   }  
+   Console.WriteLine("The details for the employee with the 'Manager' designation are:");  
+   Console.WriteLine("*******************************************************************");  
+   for (int i = 0; i < emp_details.Length; i++)  
+   {  
+       Console.WriteLine("Employee ID        : " + emp_details[i].Employee_ID);  
+       Console.WriteLine("Employee Name      : " + emp_details[i].Name);  
+       Console.WriteLine("Employee Desigation: " + emp_details[i].Designation);  
+       Console.WriteLine("Employee Salary    : " + emp_details[i].Salary);  
+       Console.WriteLine();  
+   }  
+   ```  
   
-6.  调用**TVF_EMPLOYEE**函数以检索具有"Manager"指定内容的所有员工记录。  
+7. 关闭客户端，如下面的代码段中所述：  
   
-    ```  
-    Console.WriteLine("Invoking the TVF_EMPLOYEE function");  
-    schemas.microsoft.com.Sql._2008._05.Types.TableFunctionReturnTables.dbo.TVF_EMPLOYEE[] emp_details;  
-    string emp_designation = "Manager";  
+   ```  
+   client.Close();  
+   Console.WriteLine("Press any key to exit...");  
+   Console.ReadLine();  
+   ```  
   
-    try  
-    {  
-        emp_details = client.TVF_EMPLOYEE(emp_designation);  
-    }  
-    catch (Exception e)  
-    {  
-        Console.WriteLine("Exception: " + e.Message);  
-        throw;  
-    }  
-    Console.WriteLine("The details for the employee with the 'Manager' designation are:");  
-    Console.WriteLine("*******************************************************************");  
-    for (int i = 0; i < emp_details.Length; i++)  
-    {  
-        Console.WriteLine("Employee ID        : " + emp_details[i].Employee_ID);  
-        Console.WriteLine("Employee Name      : " + emp_details[i].Name);  
-        Console.WriteLine("Employee Desigation: " + emp_details[i].Designation);  
-        Console.WriteLine("Employee Salary    : " + emp_details[i].Salary);  
-        Console.WriteLine();  
-    }  
-    ```  
+8. 生成项目，然后运行它。 应用程序显示雇员 ID、 名称和具有"Manager"指定的所有员工的工资数据交换。  
   
-7.  关闭客户端，如下面的代码段中所述：  
-  
-    ```  
-    client.Close();  
-    Console.WriteLine("Press any key to exit...");  
-    Console.ReadLine();  
-    ```  
-  
-8.  生成项目，然后运行它。 应用程序将显示员工 ID、 名称和具有"Manager"标志的所有雇员薪金。  
-  
-## <a name="see-also"></a>另请参阅  
-[开发应用程序使用 WCF 服务模型](develop-sql-applications-using-the-wcf-service-model.md)
+## <a name="see-also"></a>请参阅  
+[使用 WCF 服务模型开发应用程序](develop-sql-applications-using-the-wcf-service-model.md)

@@ -1,5 +1,5 @@
 ---
-title: 为部署做好准备 |Microsoft 文档
+title: 为部署做好准备 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,34 +14,34 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9c24a3404a5ea6a35269cd29ae792a46034a69f6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4d7b6f0677b542ad03b2109eddb3352924f6b59c
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22213941"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36966494"
 ---
 # <a name="preparing-for-deployment"></a>为部署做好准备
-本部分提供有关部署的规划和准备阶段的信息。 在实施之前部署，请进行以下准备工作：  
+本部分提供有关部署的规划和准备阶段的信息。 实现部署时之前, 做好以下准备：  
   
-1.  读取和理解的所有已知的问题，并准备设备：  
+1. 阅读和理解的任何已知的问题，并准备设备：  
   
-    -   创建硬件和所需的部署和一个反映你变体 （基于在网络关系图上以及为你已选择的部署体系结构） 的部署的网络关系图和部署工作表软件的清单。  
+   -   创建的硬件和软件部署和网络关系图和部署工作表，以反映你的部署 （基于和所选的部署体系结构的网络关系图上） 的变体所需的清单。  
   
-    -   获取的硬件和软件上你的清单。 此购置包括下载的所有 service pack、 修补程序和你部署所需的软件更新。  
+   -   获取的硬件和软件上检查表。 这次收购包括下载的所有 service pack、 修补程序和你部署所需的软件更新。  
   
-         下载使用的计算机具有 Internet 访问这些软件组件，然后复制到 CD-ROM 更轻松分发这些软件组件。  
+        下载这些软件组件使用的计算机具有 Internet 访问权限，然后复制到 CD-ROM 更容易分发这些软件组件。  
   
-2.  分隔到不同的阶段部署，并确定与每个阶段相关联的任务。 此策略对组织根据具体的部署阶段的任务，从而简化了在部署过程。 例如，规定的部署包括以下服务器部署阶段：  
+2. 分隔到不同的阶段部署，并确定与每个阶段相关联的任务。 此策略通过组织根据特定部署阶段的任务，简化了部署过程。 例如，规定的部署包括以下服务器部署阶段：  
   
-3.  配置域控制器。  
+3. 配置域控制器。  
   
-4.  配置数据库 (包括运行时[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]群集和设计时数据库服务器)。  
+4. 配置数据库 (包括运行时[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]群集和设计时数据库服务器)。  
   
-5.  配置 BizTalk server。  
+5. 配置 BizTalk server。  
   
- 本部分包含：  
+   本部分包含：  
   
 -   [网络要求](../../adapters-and-accelerators/accelerator-swift/network-requirements.md)  
   
--   [硬件和软件要求的部署](../../adapters-and-accelerators/accelerator-swift/hardware-and-software-requirements-for-deployment.md)
+-   [部署的硬件和软件要求](../../adapters-and-accelerators/accelerator-swift/hardware-and-software-requirements-for-deployment.md)

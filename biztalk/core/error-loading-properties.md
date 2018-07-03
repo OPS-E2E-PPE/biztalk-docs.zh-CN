@@ -1,5 +1,5 @@
 ---
-title: 加载属性时出错 |Microsoft 文档
+title: 加载属性时出错 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2d1fabd09d39b1f99935da3421f4521ee58244eb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 72824f3347f56a812faab0f9ce7f5a039c38e818
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240909"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36970454"
 ---
-# <a name="error-loading-properties"></a>错误加载属性
+# <a name="error-loading-properties"></a>加载属性时出错
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
-|事件 ID|0|  
-|事件源|0|  
-|组件|0|  
-|符号名称|0|  
-|消息正文|错误加载属性|  
+|                 |                                                                                    |
+|-----------------|------------------------------------------------------------------------------------|
+|  产品名称   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] |
+| 产品版本 |             [!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]             |
+|    事件 ID     |                                         0                                          |
+|  事件源   |                                         0                                          |
+|    组件    |                                         0                                          |
+|  符号名称  |                                         0                                          |
+|  消息正文   |                              加载属性时出错                              |
   
 ## <a name="explanation"></a>解释  
- 此错误发生时适配器正在加载接收位置的属性，或从数据库发送端口。  
+ 此错误发生时适配器正在加载的接收位置属性或从数据库发送端口。  
   
 ## <a name="user-action"></a>用户操作  
  错误消息中应包含解决问题所需的信息。

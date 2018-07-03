@@ -1,5 +1,5 @@
 ---
-title: 分隔记录中的最小的字段长度 |Microsoft 文档
+title: 分隔记录中的最小字段长度 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d803eb311bda7c27db5a05830f7a84f9b9857e8f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 992ffbc6a2e0568bc000413bf90b3c92012d4d59
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263637"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36983310"
 ---
-# <a name="minimum-field-lengths-within-delimited-records"></a>分隔记录中的最小的字段长度
-根据定义，位置记录中的字段都定义为具体特定的确切长度。 您还可以将分隔记录中的字段定义为具有最小长度。 这种特性定义的 **[填充字符的最小长度**属性**Field 元素**和**字段特性**节点。  
-  
- 提供的一个非零值时**填充字符的最小长度**属性，平面文件汇编器将确定的字段关联的数据字符数是否小于设置**填充字符的最小长度**属性，相关的填充字符将用于构成差异。  
-  
- 之前或之后的数据字符根据的设置，将添加的填充字符**理由**字段的属性。 当**理由**属性设置为**左**，将在数据个字符后添加需要满足的最小长度任何填充字符。 当**理由**属性设置为**右**，将在数据字符之前添加需要满足的最小长度任何填充字符。  
-  
- 提供的一个非零值时**填充字符的最小长度**属性，平面文件反汇编程序将检查的开头或末尾 (基于的设置**理由**属性) 的字段值存在相关的填充字符，并且如果有，填充字符将被放弃，并不会出现在正在构造的等效 XML 消息。  
-  
-## <a name="see-also"></a>另请参阅  
--  [字段注意事项](../core/field-considerations.md)   
--  **两端对齐 （的平面文件架构的节点属性）** 和**填充字符 （节点属性的平面文件架构） 的最小长度**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+# <a name="minimum-field-lengths-within-delimited-records"></a>分隔记录中的最小字段长度
+根据定义，位置记录中的字段都定义为具体特定的确切长度。 您还可以将分隔记录中的字段定义为具有最小长度。 此特性定义的 **[填充字符的最小长度**的属性**Field 元素**并**字段属性**节点。  
+
+ 提供一个非零值时**填充字符的最小长度**属性，平面文件组装器将确定与字段关联的数据字符数是否小于设置**填充字符的最小长度**属性，将使用相关的填充字符以组成一个不同之处。  
+
+ 之前或之后的数据字符基于的设置将添加填充字符**理由**针对字段的属性。 当**理由**属性设置为**左侧**，为满足最小长度所需的所有填充字符将都添加数据字符之后。 当**理由**属性设置为**右**，为满足最小长度所需的所有填充字符将都添加到数据字符之前。  
+
+ 提供一个非零值时**填充字符的最小长度**属性，平面文件拆装器将检查的开头或结尾 (根据设置**理由**属性) 的字段值存在相关的填充字符，并且如果有，填充字符将被放弃并不会出现在所构造的等效 XML 消息。  
+
+## <a name="see-also"></a>请参阅  
+- [字段注意事项](../core/field-considerations.md)   
+- **对齐 （平面文件架构的节点属性）** 和**填充字符 （平面文件架构的节点属性） 的最小长度** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]

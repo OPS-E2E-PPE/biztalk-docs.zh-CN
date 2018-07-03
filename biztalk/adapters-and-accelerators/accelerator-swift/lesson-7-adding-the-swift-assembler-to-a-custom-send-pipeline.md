@@ -1,5 +1,5 @@
 ---
-title: 第 7 课： 添加自定义 SWIFT 汇编程序发送管道 |Microsoft 文档
+title: 第 7 课： 将 SWIFT 汇编程序添加到自定义发送管道 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,20 +16,20 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7fc4f7db256f15c773cf8b6a857330f0c6324e76
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f3e64f799c6b26d98efec82739a32d6140dc99f6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209189"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37012102"
 ---
-# <a name="lesson-7-adding-the-swift-assembler-to-a-custom-send-pipeline"></a>第 7 课： 添加自定义发送管道 SWIFT 汇编程序
-在本课程中，你将 SWIFT 的自定义汇编程序 (ASM) 添加到管道。  
+# <a name="lesson-7-adding-the-swift-assembler-to-a-custom-send-pipeline"></a>第 7 课： 将 SWIFT 汇编程序添加到自定义发送管道
+在本课中，您将 SWIFT 自定义组装器 (ASM) 添加到你的管道。  
   
-### <a name="to-add-the-swift-assembler-pipeline-component-to-the-pipeline"></a>若要向管道添加 SWIFT 汇编程序管道组件  
+### <a name="to-add-the-swift-assembler-pipeline-component-to-the-pipeline"></a>将 SWIFT 汇编程序管道组件添加到管道  
   
-1.  在**BizTalk 管道组件工具箱**，拖动**SWIFT 汇编程序**到**拖至此处**下面框**装配**中形状**BizTalk 管道设计器**。  
+1. 在中**BizTalk 管道组件工具箱**，拖动**SWIFT 汇编程序**到**拖至此处**下面的框**组装**中形状**BizTalk 管道设计器**。  
   
-2.  上**文件**菜单上，选择**保存所有**以保存所做的更改。  
+2. 上**文件**菜单中，选择**全部保存**以保存所做的更改。  
   
- 继续执行[课 9： 构建和部署程序集](../../adapters-and-accelerators/accelerator-swift/lesson-8-building-and-deploying-the-assembly.md)。
+   请继续执行[第 9 课： 生成和部署程序集](../../adapters-and-accelerators/accelerator-swift/lesson-8-building-and-deploying-the-assembly.md)。

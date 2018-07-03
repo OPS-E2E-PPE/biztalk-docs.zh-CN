@@ -1,5 +1,5 @@
 ---
-title: 适配器列表 |Microsoft 文档
+title: 适配器列表 |Microsoft Docs
 description: ''
 ms.custom: ''
 ms.date: 11/16/2017
@@ -13,19 +13,19 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 700d14d45d33c54aac60b837dc33b553c447f686
-ms.sourcegitcommit: f65e8ed2b8c18cded26b9d60868fb6a56bcc1205
+ms.openlocfilehash: cbf2cd833a607efb98ee634774885ffaa1692f4a
+ms.sourcegitcommit: e7609c319b64ec20bf215d17aa5ac4f9dcae52ec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2017
-ms.locfileid: "25497782"
+ms.lasthandoff: 06/26/2018
+ms.locfileid: "36945552"
 ---
-# <a name="available-adapters-in-biztalk-server"></a>BizTalk Server 中的可用适配器
+# <a name="available-adapters-in-biztalk-server"></a>在 BizTalk Server 中的可用适配器
 
 ## <a name="overview"></a>概述
-本部分包含有关适配器的全面信息。 它描述如何在 Microsoft 中使用适配器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]以及如何配置适配器处理程序、 发送端口和接收的每个适配器的位置。 本部分还提供了批处理支持信息以帮助你理解本地适配器以及在 BizTalk 解决方案中使用本地适配器。  
+本部分包含有关适配器的全面信息。 它描述了如何在 Microsoft 中使用适配器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]以及如何配置适配器处理程序、 发送端口和接收位置的每个适配器。 本部分还提供了批处理支持信息以帮助你理解本地适配器以及在 BizTalk 解决方案中使用本地适配器。  
   
- 有关使用用于适配器属性页的键盘快捷方式的信息，请参阅[适配器属性页键盘快捷方式](../core/adapter-property-page-keyboard-shortcuts.md)。  
+ 有关使用键盘快捷键的适配器属性页的信息，请参阅[适配器属性页键盘快捷方式](../core/adapter-property-page-keyboard-shortcuts.md)。  
   
 ## <a name="adapters-list"></a>适配器列表
   
@@ -52,6 +52,8 @@ ms.locfileid: "25497782"
 -   [MQSeries 适配器](../core/mqseries-adapter.md)  
   
 -   [MSMQ 适配器](../core/msmq-adapter.md)  
+
+-   [Office 365 适配器](office365-adapters.md)
   
 -   [POP3 适配器](../core/pop3-adapter.md)  
   
@@ -63,7 +65,7 @@ ms.locfileid: "25497782"
   
 -   [SQL 适配器](../core/sql-adapter.md)  
   
--   [SharePoint Services adapter](../core/windows-sharepoint-services-adapter.md)  
+-   [SharePoint Services 适配器](../core/windows-sharepoint-services-adapter.md)  
   
 -   [WCF 适配器](../core/wcf-adapters.md)  
   
@@ -71,6 +73,6 @@ ms.locfileid: "25497782"
   
 -   [影响适配器性能的配置参数](../core/configuration-parameters-that-affect-adapter-performance.md)  
   
--   [故障排除的 BizTalk Server 适配器](../core/troubleshooting-biztalk-server-adapters.md)  
+-   [BizTalk Server 适配器疑难解答](../core/troubleshooting-biztalk-server-adapters.md)  
   
 -   [其他适配器信息](../core/additional-adapter-information.md)

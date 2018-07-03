@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10605 |Microsoft 文档
+title: 单一登录： 事件 10605 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3e7d0fb4befaacd8734f866f2c11c7446d4e5854
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c578462759d2eeb69767d21191e028ef9e8ce1e5
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270309"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36972510"
 ---
 # <a name="single-sign-on-event-10605"></a>单一登录： 事件 10605
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|10605|  
-|事件源|ENTSSO|  
-|组件|N/A|  
-|符号名称|SSO_ERROR_DTC_IMPORT|  
-|消息正文|无法导入 DTC 事务。 请检查是否正确配置 MSDTC 以用于远程操作。 有关详细信息，请参阅文档。%r<br /><br /> 错误代码： %1|  
+|                 |                                                                                                                                                                       |
+|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                                                       企业单一登录                                                                       |
+| 产品版本 |                                                      [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                       |
+|    事件 ID     |                                                                                 10605                                                                                 |
+|  事件源   |                                                                                ENTSSO                                                                                 |
+|    组件    |                                                                                  N/A                                                                                  |
+|  符号名称  |                                                                         SSO_ERROR_DTC_IMPORT                                                                          |
+|  消息正文   | 无法导入 DTC 事务。 请检查是否正确配置 MSDTC 以用于远程操作。 有关详细信息，请参阅文档。%r<br /><br /> 错误代码： %1 |
   
 ## <a name="explanation"></a>解释  
- 没有问题与 Microsoft 分布式事务处理协调器 (MSDTC)。  
+ 没有与 Microsoft 分布式事务处理协调器 (MSDTC) 的问题。  
   
 ## <a name="user-action"></a>用户操作  
- 有关 MSDTC 问题的帮助，请参阅[问题疑难解答与 MSDTC](../core/troubleshooting-problems-with-msdtc.md)。
+ 有关 MSDTC 问题的帮助，请参阅[MSDTC 疑难解答](../core/troubleshooting-problems-with-msdtc.md)。

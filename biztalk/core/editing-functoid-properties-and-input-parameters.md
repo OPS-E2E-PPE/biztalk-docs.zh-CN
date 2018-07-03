@@ -1,5 +1,5 @@
 ---
-title: 编辑 Functoid 属性和输入的参数 |Microsoft 文档
+title: 编辑 Functoid 属性和输入的参数 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3d87396713b7fa8f7874b921e6ee9097399d1c6
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 5e95e6d3c4c026038c8118bff3a00e6ddde824df
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25968611"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36982374"
 ---
 # <a name="editing-functoid-properties-and-input-parameters"></a>编辑 Functoid 属性和输入参数
 Functoid 属性可按如下所述分类：  
   
--   **标签**和**输入参数**。 这两个属性是可读/写的，对所有 functoid 可用。 **标签**属性提供一种机制，用于提供 functoid，这可以帮助维护地图中的特定实例的描述性名称。 **输入参数**属性提供访问权限**配置\<Functoid\> Functoid**对话框中，在 functoid 配置中扮演着重要作用。  
+- **标签**并**输入参数**。 这两个属性是可读/写的，对所有 functoid 可用。 **标签**属性提供了一种机制提供的 functoid，可帮助维护映射的特定实例的描述性名称。 **输入参数**属性提供对访问**配置\<Functoid\> Functoid**对话框中，functoid 配置中扮演重要角色。  
   
--   **脚本**和**表循环网格**。 这两个属性提供访问是只适用于的对话框**脚本**和**表循环**functoid，分别。 这些对话框**配置脚本 Functoid**对话框中和**配置表循环 Functoid**对话框。  
+- **脚本**并**表循环网格**。 这两个属性提供对都只适用于访问对话框的访问**Scripting**并**表循环**functoid，分别。 访问这些对话框**配置脚本 Functoid**对话框和**配置表循环 Functoid**对话框。  
   
--   **名称**，**帮助**，**最多输入参数**，和**最小输入参数**。 这四个属性是信息性的，并且始终是只读的。  
+- **名称**，**帮助**，**最大输入参数**，并且**最少输入参数**。 这四个属性是信息性的，并且始终是只读的。  
   
- 有关这些 functoid 属性的概念信息，请参阅[Functoid 属性](../core/functoid-properties.md)。  
+  有关这些 functoid 属性的概念信息，请参阅[Functoid 属性](../core/functoid-properties.md)。  
   
- 本部分提供有关使用，以及专门修改 functoid，包括配置 functoid，配置的脚本的输入的参数的常规说明的属性的分步说明**脚本** functoid，并配置表网格**表循环**functoid。  
+  本部分提供为使用，特别修改，functoid 配置输入的参数的 functoid，配置的脚本进行的一般说明的属性的分步说明**脚本** functoid，和的表网格**表循环**functoid。  
   
 ## <a name="in-this-section"></a>本节内容  
   

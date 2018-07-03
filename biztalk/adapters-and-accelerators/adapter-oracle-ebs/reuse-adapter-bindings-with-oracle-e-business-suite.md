@@ -1,5 +1,5 @@
 ---
-title: 重复使用 Oracle E-business Suite 适配器绑定 |Microsoft 文档
+title: 重用适配器绑定与 Oracle E-business Suite |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,75 +12,75 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 25aec8346a4252902e37a778384ae603852a11be
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3b4e906d9a0d7bf0c936f826bffb053e66e93bfd
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22215765"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36976166"
 ---
-# <a name="reuse-adapter-bindings-with-oracle-e-business-suite"></a>重复使用 Oracle E-business Suite 适配器绑定
-绑定创建的逻辑终结点 （如业务流程端口或角色链接） 和物理终结点之间的映射 (如发送和接收端口)。 这样的不同组件之间的通信[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]业务解决方案。 你可以通过使用创建绑定[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。  
+# <a name="reuse-adapter-bindings-with-oracle-e-business-suite"></a>使用 Oracle E-business Suite 的重用适配器绑定
+绑定创建一个逻辑终结点 （例如业务流程端口或角色链接） 和物理终结点之间的映射 (如发送和接收端口)。 这使不同组件之间的通信[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]业务解决方案。 可以通过使用创建绑定[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。  
   
 ## <a name="what-is-a-binding-file"></a>什么是绑定文件？  
- 绑定文件是一个包含每个 BizTalk 业务流程的作用域中的 BizTalk 程序集、 应用程序或组的绑定信息的 XML 文件。 绑定文件描述：  
+ 绑定文件是一个包含作用域中每个 BizTalk 业务流程的 BizTalk 程序集、 应用程序或组的绑定信息的 XML 文件。 绑定文件描述：  
   
--   每个业务流程绑定到主机。  
+- 每个业务流程绑定到主机。  
   
--   主机的信任级别。  
+- 主机的信任级别。  
   
--   每个设置发送端口、 接收端口、 接收位置和已配置的当事方。  
+- 每个设置发送端口、 接收端口、 接收位置，且已配置的参与方。  
   
- 你可以生成绑定文件，并将它们包含的绑定应用于一个程序集，应用程序或组。 这样可以防止无需在不同的部署环境中手动配置绑定，加快应用程序部署。  
+  您可以生成绑定文件，并将它们包含的绑定应用到程序集、 应用程序或组。 这避免了必须在不同的部署环境中手动配置绑定，并加快应用程序部署。  
   
- BizTalk 程序集，应用程序，或组不自动生成一个绑定文件。 但是，你可以通过导出绑定生成绑定文件。 同样，然后可以导入的应用程序或组的绑定文件。 本部分提供有关如何导入和导出绑定的说明。  
+  绑定文件不自动生成 BizTalk 程序集、 应用程序，或组。 但是，您可以生成绑定文件导出的绑定。 同样，你可以然后导入绑定文件的应用程序或组。 本部分说明如何导入和导出绑定。  
   
- 有关绑定和绑定文件有关的详细信息，请参阅[绑定文件和应用程序部署](../../core/binding-files-and-application-deployment.md)。
+  有关绑定和绑定文件的详细信息，请参阅[绑定文件和应用程序部署](../../core/binding-files-and-application-deployment.md)。
 
- > [!NOTE]
- >  BizTalk 程序集，应用程序，或组不自动生成一个绑定文件。 但是，你可以通过导出绑定生成绑定文件。 你然后可以绑定文件导入的应用程序或组中。  
+  > [!NOTE]
+  >  绑定文件不自动生成 BizTalk 程序集、 应用程序，或组。 但您可以生成绑定文件导出的绑定。 然后可以将绑定文件导入的应用程序或组。  
  
-## <a name="prerequisites"></a>先决条件    
-是的成员的帐户登录第 i 个[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理员或 BizTalk 操作员组。 有关更多详细有关权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。
+## <a name="prerequisites"></a>必要條件    
+是的成员的帐户登录第 i 个[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]Administrators 组或 BizTalk Operators 组。 详细了解权限的详细信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。
 
 ## <a name="export-bindings"></a>导出绑定
 
-本部分介绍如何导出到 XML 文件的 BizTalk 应用程序的绑定。 您然后可以从 XML 文件到另一个 BizTalk 应用程序来导入绑定。 导入绑定将覆盖任何现有的应用程序中相同的名称绑定。 你还可以向应用程序，不会覆盖现有绑定添加绑定。 在导入应用程序之前，你添加的绑定不会生效。  
+本部分介绍如何导出到 XML 文件的 BizTalk 应用程序的绑定。 您然后可以从 XML 文件到另一个 BizTalk 应用程序来导入绑定。 导入绑定将覆盖相同名称的应用程序中的所有现有绑定。 此外可以将绑定添加到应用程序，不会覆盖现有绑定。 导入应用程序添加的绑定会生效。  
 
-1.  打开[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。  
+1. 打开[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。  
   
-2.  展开**BizTalk 组**，然后展开**应用程序**。  
+2. 展开**BizTalk 组**，然后展开**应用程序**。  
   
-3.  右键单击你想要导出，其的绑定选择的应用**导出**，然后选择**绑定**。  
+3. 右键单击你想要导出，其的绑定选择应用程序**导出**，然后选择**绑定**。  
   
-4.  上**导出绑定**页上，在**导出到文件**，键入要导出绑定到 XML 文件的绝对路径。  
+4. 上**导出绑定**页上，在**导出到文件**，键入要导出绑定到 XML 文件的绝对路径。  
   
-     例如，输入`C:\Bindings\Application1Bindings.Binding1.xml`  
+    例如，输入 `C:\Bindings\Application1Bindings.Binding1.xml`  
   
-5.  确认**导出当前应用程序中的所有绑定**选择。  
+5. 确认**导出当前应用程序中的所有绑定**处于选中状态。  
   
-6.  若要导出的组的所有方信息，请选择**都导出全局方信息**复选框。  
+6. 若要导出组的所有参与方信息，请选择**导出全局参与方信息**复选框。  
   
-7.  选择“确定”。 绑定将导出到 XML 文件中指定的位置。  
+7. 选择“确定”。 绑定被导出到 XML 文件中指定的位置。  
 
-## <a name="import-bindings"></a>导入的绑定
+## <a name="import-bindings"></a>导入绑定
 
-导入使用 BizTalk Server 管理控制台的绑定。
+导入绑定使用 BizTalk Server 管理控制台。
   
-1.  打开[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。  
+1. 打开[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。  
   
-2.  展开**BizTalk 组**，然后展开**应用程序**。  
+2. 展开**BizTalk 组**，然后展开**应用程序**。  
   
-3.  右键单击你要向其中导入的绑定中，选择应用的程序**导入**，然后选择**绑定**。  
+3. 右键单击您要向其中导入绑定中，选择应用的程序**导入**，然后选择**绑定**。  
   
-4.  选择绑定文件，然后选择**打开**。  
+4. 选择绑定文件，然后选择**打开**。  
   
 绑定文件中的项目将写入该应用程序中。 这些项目显示在该应用程序的相应文件夹中。 例如，发送端口导入的绑定显示在下一部分**发送端口**文件夹。  
   
 ## <a name="passwords-are-removed"></a>不会保留密码  
-出于安全原因，当导出绑定文件，[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]从文件中删除绑定的密码。 在导入绑定后，必须为发送端口和接收位置重新配置密码，它们才能正常运行。 传输属性对话框中配置密码[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台为发送端口或接收位置。 
+出于安全原因，当您导出绑定文件，[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]会从文件删除绑定的密码。 在导入绑定后，必须为发送端口和接收位置重新配置密码，它们才能正常运行。 在的传输属性对话框中配置密码[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台为发送端口或接收位置。 
 
-有关指定用户名和密码的信息，请参阅[为 Oracle E-business Suite 配置登录凭据](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-sign-in-credentials-for-the-oracle-e-business-suite.md)。
+有关指定用户名和密码的信息，请参阅[适用于 Oracle E-business Suite 中配置单一登录凭据](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-sign-in-credentials-for-the-oracle-e-business-suite.md)。
   
-## <a name="see-also"></a>另请参阅  
-[创建 Oracle E-business Suite 应用程序的构建基块](../../adapters-and-accelerators/adapter-oracle-ebs/building-blocks-to-create-oracle-e-business-suite-applications.md)
+## <a name="see-also"></a>请参阅  
+[若要创建 Oracle E-business Suite 的应用程序的构建基块](../../adapters-and-accelerators/adapter-oracle-ebs/building-blocks-to-create-oracle-e-business-suite-applications.md)

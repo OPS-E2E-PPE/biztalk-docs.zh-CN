@@ -1,5 +1,5 @@
 ---
-title: 批处理的第一个元素超过了所字符计数发布条件设置 |Microsoft 文档
+title: 批处理的第一个元素超出了字符计数释放条件集 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 746fbfabb2fe411310735f66c6d8a8398a94a5dc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 880e29ceb2be1c574aeaec248ce47317e332e5a6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241549"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36972654"
 ---
 # <a name="the-first-element-of-the-batch-exceeded-the-character-count-release-criteria-set"></a>批的第一个元素超出了字符计数释放条件集
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|批处理引擎|  
-|符号名称|FirstElementExceededCharCount|  
-|消息正文|批处理的第一个元素超出了字符计数释放条件集。 请更改字符计数释放条件，以便能处理此消息。 该消息需要在修改设置后重新发送到批处理系统|  
+|                 |                                                                                                                                                                                                                                                                    |
+|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                                                                         [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                                                                                         |
+| 产品版本 |                                                                                                     [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                                                                                                     |
+|    事件 ID     |                                                                                                                                 -                                                                                                                                  |
+|  事件源   |                                                                                       [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                                                                                       |
+|    组件    |                                                                                                                          批处理引擎                                                                                                                           |
+|  符号名称  |                                                                                                                   FirstElementExceededCharCount                                                                                                                    |
+|  消息正文   | 批处理的第一个元素超出了字符计数释放条件集。 请更改字符计数释放条件，以便能处理此消息。 该消息需要在修改设置后重新发送到批处理系统 |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明批处理业务流程无法生成批处理的交换，因为由批处理业务流程选取的第一个批处理元素中的字符数已超过批处理发布条件的“交换中的最大字符数量”属性中指定的字符数。 请注意，与最大数量相比，字符数并不包含信封中的字符数。  

@@ -1,5 +1,5 @@
 ---
-title: 拆分 HIPAA 子文档 |Microsoft 文档
+title: 拆分 HIPAA 子文档 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 799cb5813b3c13339a0c477bf142a467a91b2c94
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 8cd5c202539a86479b397a7c8417b20aeea32542
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "22278325"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36971478"
 ---
 # <a name="splitting-hipaa-subdocuments"></a>拆分 HIPAA 子文档
 正如 ST/SE 标头所限定的，用于 HIPAA 的 EDI 交换通常在单个事务集内具有多个子文档。 EDI 接收管道支持从这样的事务集创建单独的 HIPAA 子文档。 这不同于将单个事务集作为单个消息进行处理的非 HIPAA EDI 交换。  
@@ -25,22 +25,22 @@ ms.locfileid: "22278325"
 ## <a name="subdocument-splitting-schemas"></a>子文档拆分架构  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 支持通过本机架构对下列 HIPAA 文档类型进行拆分：  
   
--   HIPAA 版本 4010 文档︰ 834 注册、 835 声明付款和 837 声明的三个变体  
+- HIPAA 版本 4010 文档： 834 登记、 835 索赔付款和 837 索赔的三个变体  
   
--   HIPAA 版本 5010 文档︰ 276/277 声明状态 – 请求和响应、 834 注册和 837 声明的三个变体  
+- HIPAA 版本 5010 文档： 276/277 索赔状态-请求和响应、 834 登记和 837 索赔的三个变体  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 为这三种文档类型的每一种都提供了两个版本的架构。 对于每一种文档类型，通过文件名中的“Mulitple”标签对支持拆分的架构进行标识。 其他架构不支持子文档拆分。  
+  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 为这三种文档类型的每一种都提供了两个版本的架构。 对于每一种文档类型，通过文件名中的“Mulitple”标签对支持拆分的架构进行标识。 其他架构不支持子文档拆分。  
   
- 在某些情况下，拆分和非拆分架构可能都是必需的。 通过为架构的一种变体使用自定义目标命名空间可以对此提供支持。  
+  在某些情况下，拆分和非拆分架构可能都是必需的。 通过为架构的一种变体使用自定义目标命名空间可以对此提供支持。  
   
 ## <a name="how-subdocument-splitting-is-enabled"></a>如何启用子文档拆分  
- 可以通过 HIPAA 架构中的三个批注项启用 HIPAA 子文档的拆分。 前两个是用于中，必须设置为的 appinfo 批注的架构的条目 **是**:  
+ 可以通过 HIPAA 架构中的三个批注项启用 HIPAA 子文档的拆分。 前两个架构必须设置为在 appinfo 批注中的条目**是**:  
   
 ```  
 subdocument_break = "yes" Split_Without_Sibling_Data = "Yes"  
 ```  
   
- 第三个批注项位于 HIPAA 架构内的相应记录级别。 此属性也必须设置为 **是**。  
+ 第三个批注项位于 HIPAA 架构内的相应记录级别。 此属性还必须设置为**是**。  
   
 ```  
 subdocument_creation_break = "yes"  

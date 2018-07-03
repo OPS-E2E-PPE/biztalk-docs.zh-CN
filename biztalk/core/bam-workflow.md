@@ -1,5 +1,5 @@
 ---
-title: BAM 工作流 |Microsoft 文档
+title: BAM 工作流 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -23,12 +23,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19356d6191963ec441f0b85c0e987c8515dcf1f4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4c925e1b77b53bc2ec30a7f42b2446ee410ffef7
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232037"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36989934"
 ---
 # <a name="bam-workflow"></a>BAM 工作流
 下图显示了使用业务活动监视的 4 个用户角色，以及他们使用的工具。  
@@ -65,13 +65,13 @@ BAM 角色
   
  使用跟踪配置文件编辑器，开发人员可以执行以下步骤将 XML 文件映射到业务流程：  
   
--   加载存储在 BizTalk 管理数据库（又称为配置数据库）中的已部署程序集。 该已部署程序集包含与业务分析员在上面的第 1 步中指定的要求相对应的一个或多个业务流程。  
+- 加载存储在 BizTalk 管理数据库（又称为配置数据库）中的已部署程序集。 该已部署程序集包含与业务分析员在上面的第 1 步中指定的要求相对应的一个或多个业务流程。  
   
--   定义要从业务流程中提取的数据。 为此，您可以将消息架构和业务流程形状中的项放到相应的业务里程碑（事件）和数据项文件夹中。  
+- 定义要从业务流程中提取的数据。 为此，您可以将消息架构和业务流程形状中的项放到相应的业务里程碑（事件）和数据项文件夹中。  
   
--   完成后，开发人员将配置文件另存为 BizTalk® Server 跟踪文件 (.btt)，存放到某个存储数据库中，例如 Visual SourceSafe。  
+- 完成后，开发人员将配置文件另存为 BizTalk® Server 跟踪文件 (.btt)，存放到某个存储数据库中，例如 Visual SourceSafe。  
   
- 开发人员将该 .btt 文件部署到测试数据库，然后通过集成测试来验证结果。  
+  开发人员将该 .btt 文件部署到测试数据库，然后通过集成测试来验证结果。  
   
 ## <a name="deploying-the-tracking-profile"></a>部署跟踪配置文件  
  使用跟踪配置文件编辑器，系统管理员可以将配置文件部署到一个或多个 BizTalk 管理数据库。  
@@ -81,12 +81,12 @@ BAM 角色
 ## <a name="viewing-the-business-data"></a>查看业务数据  
  业务用户使用 _LiveData 工作簿，该工作簿是由 BM.exe 实用工具生成的。 每当业务用户打开 _LiveData 工作簿时，他都会收到为监视业务流程的特定方面而收集的数据的实时版本。  
   
--   若要查看被定义为实时聚合的数据，业务用户只需单击**刷新**工作簿来查看数据中。  
+-   若要查看被定义为实时聚合的数据，业务用户只需单击**刷新**要查看的数据的工作簿中。  
   
 -   如果聚合数据不是实时的，则业务用户看到的是在计划的 DTS 包运行时拍摄的业务数据快照。  
   
 -   如果您的组织有协作要求，业务用户可以从 BAS Web 站点访问实时数据。  
   
-## <a name="see-also"></a>另请参阅  
- [在 Excel 中定义的业务活动和视图](../core/defining-business-activities-and-views-in-excel.md)   
- [监视与 BAM 业务活动](../core/monitoring-business-activities-with-bam.md)
+## <a name="see-also"></a>请参阅  
+ [在 Excel 中定义业务活动和视图](../core/defining-business-activities-and-views-in-excel.md)   
+ [使用 BAM 监视业务活动](../core/monitoring-business-activities-with-bam.md)

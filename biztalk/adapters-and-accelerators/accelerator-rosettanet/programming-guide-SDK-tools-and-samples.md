@@ -1,6 +1,6 @@
 ---
-title: 编程指南、 SDK 工具和 RosettaNet 快捷键 BizTalk Server 中的示例 |Microsoft 文档
-description: 自定义私有进程、 使用 PIP，使用 BTARN 的工具，以及部署 RosettaNet 快捷键 BizTalk Server 中的示例
+title: 编程指南、 SDK 工具和示例的 BizTalk Server 中的 RosettaNet 加速器 |Microsoft Docs
+description: 自定义专用流程，使用 PIP、 使用 BTARN 的工具，并部署 BizTalk Server 中的 RosettaNet 加速器的示例
 caps.latest.revision: 8
 author: MandiOhlinger
 manager: anneta
@@ -13,15 +13,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 159cb8f2-80af-4abf-9d9e-59300a880071
 ms.author: mandia
-ms.openlocfilehash: d3e8d985da6d475581ace68c45a37f6508438a09
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a69270f873f3de1e4af6d1cc7cb441195882f8b4
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209541"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36983566"
 ---
 # <a name="programming-guide-tools-and-samples-in-the-rosettanet-sdk"></a>编程指南、 工具和 RosettaNet SDK 中的示例
-此软件开发工具包 (SDK) 为使用 [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 中的任何一种工具、公共应用程序编程接口 (API) 或者 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK 中提供的示例和实用工具创建应用程序的开发人员提供了信息。  
+此软件开发工具包 (SDK) 提供的开发人员创建 Microsoft® 中使用任意一种工具的应用程序的信息[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]、 公共应用程序编程接口 (API)，或中提供的示例和实用程序[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]SDK。  
   
  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 类引用以多种编程语言提供签名和代码示例。 以下标记代表特定于语言的信息：  
   
@@ -38,6 +38,6 @@ ms.locfileid: "22209541"
   
 -   [编程指南](../../adapters-and-accelerators/accelerator-rosettanet/programming-guide2.md)  
   
--   [实用程序](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)  
+-   [实用工具](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)  
   
 -   [示例](../../adapters-and-accelerators/accelerator-rosettanet/samples3.md)

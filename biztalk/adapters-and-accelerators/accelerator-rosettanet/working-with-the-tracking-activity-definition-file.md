@@ -1,5 +1,5 @@
 ---
-title: 使用跟踪活动定义文件 |Microsoft 文档
+title: 使用跟踪活动定义文件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,107 +18,107 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3e6cf33bf62f8ec7924b3f9ff2379f84b2b42775
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 0be795daa7e08707c113d8230dc8d324bc71f951
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26009374"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36991910"
 ---
 # <a name="working-with-the-tracking-activity-definition-file"></a>使用跟踪活动定义文件
-活动定义文件包含有关跟踪的信息中的过程和消息活动[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]使用此文件来管理跟踪中 BizTalk 业务活动监视 (BAM) 的数据。 定义文件是一个 XML 文件 (Tracking.xml)，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]安装程序将安装在\<*驱动器*\>: files\microsoft BizTalk 2013 Accelerator RosettaNet \BAMTracking 文件夹。 Tracking.xml 中定义的活动可能足以满足你的需要。  
+活动定义文件包含有关跟踪的信息在 Microsoft® 流程和消息活动[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 使用此文件来管理数据跟踪在 BizTalk 业务活动监视 (BAM)。 定义文件是一个 XML 文件 (Tracking.xml)，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]安装程序将安装\<*驱动器*\>: files\microsoft BizTalk 2013 Accelerator for RosettaNet \BAMTracking 文件夹。 Tracking.xml 中定义的活动可能足以满足你的需要。  
   
- 有关跟踪活动、 视图和表的详细信息，请参阅[增强跟踪](../../adapters-and-accelerators/accelerator-rosettanet/enhanced-tracking.md)。 BAM 有关的详细信息，请参阅"业务活动监视 (BAM)"BizTalk Server 帮助中。  
+ 有关跟踪活动、 视图和表的详细信息，请参阅[增强跟踪](../../adapters-and-accelerators/accelerator-rosettanet/enhanced-tracking.md)。 有关 BAM 的详细信息，请参阅"业务活动监视 (BAM)"BizTalk Server 帮助中。  
   
 ## <a name="managing-tracking-views"></a>管理跟踪视图  
- 不使用 BizTalk 跟踪配置文件编辑器[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]跟踪。 跟踪点无法自定义；不要更改活动定义。 但是，你可以管理 BAM 视图和部署。 若要执行此操作，可修改[!INCLUDE[btsExcel](../../includes/btsexcel-md.md)]电子表格 (Tracking.xls)，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]安装程序将安装在\<*驱动器*\>: files\microsoft BizTalk 2013 Accelerator for RosettaNet\BAMTracking 文件夹。 有关详细信息，请参阅下述“管理跟踪视图”。  
+ 不使用与 BizTalk 跟踪配置文件编辑器[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]跟踪。 跟踪点无法自定义；不要更改活动定义。 但是，你可以管理 BAM 视图和部署。 若要执行此操作，你修改[!INCLUDE[btsExcel](../../includes/btsexcel-md.md)]电子表格 (Tracking.xls)，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]安装程序将安装\<*驱动器*\>: \Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet\BAMTracking 文件夹。 有关详细信息，请参阅下述“管理跟踪视图”。  
   
  如果 Tracking.xml 中定义的视图不能够满足你的需要，你可以按下述方法为 BAM 中跟踪的信息定义其他视图。  
   
 #### <a name="to-create-different-tracking-views"></a>创建其他跟踪视图  
   
-1.  单击 **“启动”**，再单击 **“运行”**。 输入**cmd**中运行对话框中，然后单击打开的文本框中**确定**。 在命令行对话框中，输入下面的代码，以取消部署 tracking.xml，然后单击**确定**:  
+1. 单击 **“启动”**，再单击 **“运行”**。 输入**cmd**的运行对话框，然后单击打开的文本框中**确定**。 在命令行对话框中，输入以下代码取消部署 tracking.xml，然后单击**确定**:  
   
-    ```  
-    cd %ProgramFiles%\Microsoft BizTalk Server 2013\Tracking  
-    bm remove-all  -DefinitionFile:"%ProgramFiles%\Microsoft BizTalk 2013 Accelerator for RosettaNet\BAMTracking\<filename\>.xml"  
-    ```  
+   ```  
+   cd %ProgramFiles%\Microsoft BizTalk Server 2013\Tracking  
+   bm remove-all  -DefinitionFile:"%ProgramFiles%\Microsoft BizTalk 2013 Accelerator for RosettaNet\BAMTracking\<filename\>.xml"  
+   ```  
   
-2.  在[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]资源管理器中，移动到*\<驱动器\>*: files\microsoft BizTalk 2013 Accelerator for RosettaNet \BAM 跟踪。 双击 Tracking.xls。  
+2. 在中[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]资源管理器，转到*\<驱动器\>*: \Program Files\Microsoft BizTalk 2013 Accelerator for RosettaNet \BAM 跟踪。 双击 Tracking.xls。  
   
-3.  在业务活动监视中创建新视图。 有关如何执行此操作的信息，请参阅"管理业务活动监视"BizTalk Server 帮助中。  
+3. 在业务活动监视中创建新视图。 有关如何执行此操作的信息，请参阅"管理业务活动监视"BizTalk Server 帮助中。  
   
-4.  单击**BAM**，然后单击**导出到 XML**。 将移动到所需的位置，输入 （之外 Tracking.xml) 的文件名称，然后单击**保存**。  
+4. 单击**BAM**，然后单击**导出到 XML**。 将移动到所需的位置，输入文件的名称 （不能是 Tracking.xml)，并单击**保存**。  
   
-    > [!IMPORTANT]
-    >  当你在跟踪 XLS 文件中定义新的跟踪视图并从该跟踪 XLS 文件导出 XML 文件时，某些新字段名可能会稍做修改。 将你的自定义跟踪 XML 文件中的字段与 BTARN 安装程序所安装的标准 tracking.xml 字段进行查验，更正此问题。  
+   > [!IMPORTANT]
+   >  当你在跟踪 XLS 文件中定义新的跟踪视图并从该跟踪 XLS 文件导出 XML 文件时，某些新字段名可能会稍做修改。 将你的自定义跟踪 XML 文件中的字段与 BTARN 安装程序所安装的标准 tracking.xml 字段进行查验，更正此问题。  
   
-5.  部署新的跟踪 XML 文件。 若要执行此操作，请单击**启动**，然后单击**运行**。 输入**cmd**中运行对话框中，然后单击打开的文本框中**确定**。 在命令行对话框中，输入下面的代码，以部署新的跟踪文件，然后单击**确定**。 建议重命名跟踪 XML 文件，以便不会覆盖默认的 tracking.xml 文件。  
+5. 部署新的跟踪 XML 文件。 若要执行此操作，请单击**启动**，然后单击**运行**。 输入**cmd**的运行对话框，然后单击打开的文本框中**确定**。 在命令行对话框中，输入以下代码以部署新的跟踪文件，然后单击**确定**。 建议重命名跟踪 XML 文件，以便不会覆盖默认的 tracking.xml 文件。  
   
-    ```  
-    cd %ProgramFiles%\Microsoft BizTalk Server 2013\Tracking  
-    bm.exe deploy-all -DefinitionFile:"%ProgramFiles%\Microsoft BizTalk 2030 Accelerator for RosettaNet\BAMTracking\<filename\>.xml"  
-    ```  
+   ```  
+   cd %ProgramFiles%\Microsoft BizTalk Server 2013\Tracking  
+   bm.exe deploy-all -DefinitionFile:"%ProgramFiles%\Microsoft BizTalk 2030 Accelerator for RosettaNet\BAMTracking\<filename\>.xml"  
+   ```  
   
- BAM 中跟踪的信息不包括消息内容，因为存储在[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]数据库。  
+   在 BAM 中跟踪的信息不包括消息内容，因为存储在[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]数据库。  
   
- 可以使用业务活动监视管理实用工具管理 BAM 跟踪的部署。 有关此实用工具的详细信息，请参阅"使用业务活动监视管理实用程序"BizTalk Server 帮助中。  
+   可以使用业务活动监视管理实用工具管理 BAM 跟踪的部署。 有关此实用工具的详细信息，请参阅"使用业务活动监视管理实用工具"BizTalk Server 帮助中。  
   
 ## <a name="activity-fields"></a>活动字段  
  以下是活动定义文件中消息活动的字段：  
   
--   ActivityName  
+- ActivityName  
   
--   类别  
+- 类别  
   
--   ContentKey  
+- ContentKey  
   
--   DestinationPartyName  
+- DestinationPartyName  
   
--   ErrorDescription  
+- ErrorDescription  
   
--   HasError  
+- HasError  
   
--   InReplyToMessageID  
+- InReplyToMessageID  
   
--   IsReceived  
+- IsReceived  
   
--   MessageTrackingID  
+- MessageTrackingID  
   
--   NoFPipInstance  
+- NoFPipInstance  
   
--   PipCode  
+- PipCode  
   
--   PipInstanceID  
+- PipInstanceID  
   
--   PiPVersion  
+- PiPVersion  
   
--   SourcePartName  
+- SourcePartName  
   
--   时间戳  
+- 时间戳  
   
- 以下是活动定义文件中流程活动的字段：  
+  以下是活动定义文件中流程活动的字段：  
   
--   EndTime  
+- EndTime  
   
--   InitiatorPartyName  
+- InitiatorPartyName  
   
--   IsInitiatorRole  
+- IsInitiatorRole  
   
--   PipCode  
+- PipCode  
   
--   PipInstanceID  
+- PipInstanceID  
   
--   PipName  
+- PipName  
   
--   PipVersion  
+- PipVersion  
   
--   ResponderPartyName  
+- ResponderPartyName  
   
--   StartTime  
+- StartTime  
   
--   状态  
+- “登录属性”  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [增强的跟踪](../../adapters-and-accelerators/accelerator-rosettanet/enhanced-tracking.md)   
  [管理配置、证书、数据库和安全性](manage-configuration-certificates-databases-security.md)

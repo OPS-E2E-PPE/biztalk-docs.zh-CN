@@ -1,5 +1,5 @@
 ---
-title: 开发自定义的内联 Functoid |Microsoft 文档
+title: 开发自定义内联 Functoid |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,52 +12,52 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1a742e6a53b5fb81d92922ff94e7754239f723ea
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cd6e208cd894c2b307bd2c601b7d8bd774e204ce
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22242013"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36976694"
 ---
-# <a name="developing-a-custom-inline-functoid"></a>开发自定义的内联 Functoid
+# <a name="developing-a-custom-inline-functoid"></a>开发自定义内联 Functoid
 自定义内联 functoid 通过将实现代码直接复制到映射中提供功能，而不像自定义引用的 functoid 通过引用程序集、类和方法名称来提供功能。  
   
 ## <a name="building-inline-script"></a>生成内联脚本  
  有两种方法提供脚本以包含在映射中。 根据自定义 functoid 是否支持参数个数可变，从以下方法进行选择：  
   
--   重写**GetInlineScriptBuffer**时自定义 functoid 接受数目可变的输入参数，并且已设置**HasVariableInputs**属性`true`。 例如，如果要连接个数可变的字符串或在一组值中查找最大值时，请使用此方法。  
+- 重写**GetInlineScriptBuffer**时自定义 functoid 接受个数可变的输入参数，并且已将**HasVariableInputs**属性设置为`true`。 例如，如果要连接个数可变的字符串或在一组值中查找最大值时，请使用此方法。  
   
--   使用**SetScriptBuffer**不需要支持可变数目的输入参数。 仍可以使用可选参数，但参数的总数是固定的。  
+- 使用**SetScriptBuffer**不需要支持个数可变的输入参数。 仍可以使用可选参数，但参数的总数是固定的。  
   
- 这两种方法需要不同的实现。  
+  这两种方法需要不同的实现。  
   
 ### <a name="providing-inline-code-with-setscriptbuffer"></a>使用 SetScriptBuffer 提供内联代码  
  若要配置自定义 functoid 以使用内联脚本，请执行以下操作：  
   
-1.  调用**AddScriptTypeSupport**与[Microsoft.BizTalk.BaseFunctoids.ScriptType](http://msdn.microsoft.com/library/microsoft.biztalk.basefunctoids.scripttype.aspx)启用内联代码和设置的受支持的脚本类型。  
+1. 调用**AddScriptTypeSupport**与[Microsoft.BizTalk.BaseFunctoids.ScriptType](http://msdn.microsoft.com/library/microsoft.biztalk.basefunctoids.scripttype.aspx)以启用内联代码并设置支持的脚本类型。  
   
-2.  调用**SetScriptBuffer**来设置要用于自定义 functoid 的代码。 将使用 `functionNumber` 参数为自定义累计 functoid 调用此函数三次，为自定义非累计 functoid 调用此函数一次。  
+2. 调用**SetScriptBuffer**来设置要用于自定义 functoid 的代码。 将使用 `functionNumber` 参数为自定义累计 functoid 调用此函数三次，为自定义非累计 functoid 调用此函数一次。  
   
-3.  使用**SetScriptGlobalBuffer**将声明为内联代码使用任何全局变量。  
+3. 使用**SetScriptGlobalBuffer**声明内联代码使用任何全局变量。  
   
-4.  使用**RequiredGlobalHelperFunctions**以指示自定义的内联 functoid 需要的帮助器函数。  
+4. 使用**RequiredGlobalHelperFunctions**以指示自定义内联 functoid 的帮助器函数。  
   
- 可以使用 StringBuilder 或常数生成脚本。 编写脚本代码的一种方法是：首先编写自定义引用的 functoid，消除了所有错误之后，通过将函数复制到字符串常数中将其转换成内联。  
+   可以使用 StringBuilder 或常数生成脚本。 编写脚本代码的一种方法是：首先编写自定义引用的 functoid，消除了所有错误之后，通过将函数复制到字符串常数中将其转换成内联。  
   
 ### <a name="providing-inline-code-with-getinlinescriptbuffer"></a>使用 GetInlineScriptBuffer 提供内联代码  
- 如果你自定义的内联 functoid 支持可变数目的参数，则将重写**GetInlineScriptBuffer**。 若要配置自定义 functoid 以使用内联脚本，请执行以下操作：  
+ 如果您的自定义内联 functoid 支持个数可变的参数，则将重写**GetInlineScriptBuffer**。 若要配置自定义 functoid 以使用内联脚本，请执行以下操作：  
   
-1.  在构造函数中，声明自定义 functoid 通过设置具有变量输入**HasVariableInputs**到`true`。  
+1. 在构造函数中声明自定义 functoid 通过设置具有变量输入**HasVariableInputs**到`true`。  
   
-2.  在构造函数中，调用**AddScriptTypeSupport**与[Microsoft.BizTalk.BaseFunctoids.ScriptType](http://msdn.microsoft.com/library/microsoft.biztalk.basefunctoids.scripttype.aspx)启用内联代码和设置的受支持的脚本类型。  
+2. 在构造函数中，调用**AddScriptTypeSupport**与[Microsoft.BizTalk.BaseFunctoids.ScriptType](http://msdn.microsoft.com/library/microsoft.biztalk.basefunctoids.scripttype.aspx)以启用内联代码并设置支持的脚本类型。  
   
-3.  重写**GetInlineScriptBuffer**构造并返回代码以在映射中使用自定义 functoid。 检查 `scriptType` 和 `numParams`，使用参数生成正确的代码。 最后一个参数， `functionNumber`，应为 0。 这是因为累积函数具有固定的数量的输入和不使用此机制。  
+3. 重写**GetInlineScriptBuffer**构造并返回要为自定义 functoid 在映射中使用的代码。 检查 `scriptType` 和 `numParams`，使用参数生成正确的代码。 最后一个参数， `functionNumber`，应为 0。 这是因为累计函数的输入个数固定，并且不使用此机制。  
   
-4.  使用**SetScriptGlobalBuffer**将声明为内联代码使用的全局变量。  
+4. 使用**SetScriptGlobalBuffer**声明内联代码使用的全局变量。  
   
-5.  使用**RequiredGlobalHelperFunctions**以指示自定义的内联 functoid 需要的帮助器函数。  
+5. 使用**RequiredGlobalHelperFunctions**以指示自定义内联 functoid 的帮助器函数。  
   
- 以下代码段使用传入 `numParams` 的参数个数生成 C# 函数，但没有使用函数体。 若要使用此代码段，请将该示例复制到您的解决方案中，然后添加代码使用参数以执行任务并返回值。  
+   以下代码段使用传入 `numParams` 的参数个数生成 C# 函数，但没有使用函数体。 若要使用此代码段，请将该示例复制到您的解决方案中，然后添加代码使用参数以执行任务并返回值。  
   
 ```  
 // Override GetInlineScriptBuffer  
@@ -103,7 +103,7 @@ protected override string GetInlineScriptBuffer(ScriptType scriptType, int numPa
   
  若要查看映射的 XSLT，请执行以下操作：  
   
-1.  从 Visual Studio BizTalk 项目，单击**解决方案资源管理器**选项卡上，请右键单击使用您自定义的内联 functoid，映射，然后单击**验证映射**。  
+1.  从 Visual Studio BizTalk 项目中，单击**解决方案资源管理器**选项卡上，右键单击使用自定义内联 functoid 的映射，然后单击**验证映射**。  
   
 2.  滚动“输出”窗口以查找 XSLT 文件的 URL。 按住 Ctrl 单击 URL 以查看文件。  
   
@@ -115,11 +115,11 @@ protected override string GetInlineScriptBuffer(ScriptType scriptType, int numPa
   
  若要测试映射，请执行以下操作：  
   
-1.  从 Visual Studio BizTalk 项目，单击**解决方案资源管理器**选项卡上，请右键单击使用您自定义的内联 functoid，映射，然后单击**测试映射**。  
+1. 从 Visual Studio BizTalk 项目中，单击**解决方案资源管理器**选项卡上，右键单击使用自定义内联 functoid 的映射，然后单击**测试映射**。  
   
-2.  滚动“输出”窗口以查找输出文件的 URL。 按住 Ctrl 单击 URL 以查看文件。  
+2. 滚动“输出”窗口以查找输出文件的 URL。 按住 Ctrl 单击 URL 以查看文件。  
   
- 可以检查输入和输出值，以验证映射是否按预期方式工作。  
+   可以检查输入和输出值，以验证映射是否按预期方式工作。  
   
 ## <a name="example"></a>示例  
  下面的示例说明了如何创建用于连接两个字符串的自定义内联 functoid。 该 functoid 依赖于一个包含三个字符串资源和一个 16x16 像素位图资源的资源文件。  
@@ -189,7 +189,7 @@ namespace Microsoft.Samples.BizTalk.CustomFunctoid
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 BaseFunctoid](../core/using-basefunctoid.md)   
- [开发自定义引用 Functoid](../core/developing-a-custom-referenced-functoid.md)   
- [自定义 Functoid （BizTalk Server 示例）](../core/custom-functoid-biztalk-server-sample.md)
+ [开发自定义引用的 Functoid](../core/developing-a-custom-referenced-functoid.md)   
+ [自定义 Functoid（BizTalk Server 示例）](../core/custom-functoid-biztalk-server-sample.md)

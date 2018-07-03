@@ -1,5 +1,5 @@
 ---
-title: 控制架构应具有正确的顺序中的标头段 |Microsoft 文档
+title: 控制架构应该让标头段处于正确的顺序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3362bce20e1e7d31fa870a5376128d2d721c11f9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2c86b8d66526c0406faedeac0aedbbe0e1b270ad
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22237853"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36967918"
 ---
 # <a name="control-schema-should-have-header-segments-in-the-correct-order"></a>控制架构标头段的顺序应正确
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|EDI 引擎|  
-|符号名称|-|  
-|消息正文|控制架构应按以下顺序具有段： ISA GS ST...SE GE IEA|  
+|                 |                                                                                        |
+|-----------------|----------------------------------------------------------------------------------------|
+|  产品名称   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
+| 产品版本 |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
+|    事件 ID     |                                           -                                            |
+|  事件源   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
+|    组件    |                                       EDI 引擎                                       |
+|  符号名称  |                                           -                                            |
+|  消息正文   |  控制架构应该让段处于以下顺序： ISA GS ST...SE GE IEA  |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明 EDI 接收管道无法处理传入的交换，因为交换的标头和尾部、组和事务集在交换中的顺序不正确。  

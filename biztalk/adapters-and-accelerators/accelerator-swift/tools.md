@@ -1,5 +1,5 @@
 ---
-title: 工具 |Microsoft 文档
+title: 工具 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,15 +14,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 34ac99b3342a22a8708a9673f5091baed0cd4a0b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1916b5b182fdd11718254c738c8df83a6ca6e6c7
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22213909"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36985062"
 ---
 # <a name="tools"></a>工具
-本部分提供有关使用实用程序中包含的说明[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]软件开发工具包 (SDK)。  
+本部分提供有关使用 Microsoft 中包含的实用程序的说明[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]软件开发工具包 (SDK)。  
   
  本部分包含：  
   

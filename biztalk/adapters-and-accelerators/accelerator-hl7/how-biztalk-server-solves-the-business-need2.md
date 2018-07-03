@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server 如何解决业务 Need2 |Microsoft 文档
+title: BizTalk Server 如何满足业务 Need2 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d5dcc7ee1b77c91cc4bbc52384a23347ce3e9a0f
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 45a0f21cfe71a1c7af0b4d05798a08c842c4b85d
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26004918"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36995902"
 ---
-# <a name="how-biztalk-server-solves-the-business-need"></a>BizTalk Server 如何解决的业务需要
-若要解决卫生保健系统的集成需要 BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 增强的功能[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]卫生保健的系统的 BizTalk Server。  
+# <a name="how-biztalk-server-solves-the-business-need"></a>BizTalk Server 如何满足业务需求
+为了解决卫生保健系统集成需求，BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 增强了卫生保健系统 MicrosoftBizTalk 服务器的功能。  
   
- 由于[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]安装程序将安装在 BizTalk Server 上的快捷键，本部分介绍该技术通过提供的功能的概述[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，功能的说明，[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]添加，并讨论了你可以如何部署这两种技术。  
+ 由于[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]安装程序将安装在 BizTalk Server 上的加速器，本部分通过提供的功能的概述，描述了该技术[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，对功能的描述的[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]添加，并讨论了如何部署这两种技术。  
   
 ## <a name="in-this-section"></a>本节内容  
   

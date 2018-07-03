@@ -1,5 +1,5 @@
 ---
-title: 0 C 4 请求设置为 0 C 4 响应映射示例 |Microsoft 文档
+title: 0c4 请求到 4 个响应映射示例 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cfc53475ed0705d17832744593663aeb44845cd3
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: cc2afb1f1fbfcd47e094ade767c4879c75194520
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26006046"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36983598"
 ---
-# <a name="0c4-request-to-0c4-response-map-sample"></a>0 C 4 请求设置为 0 C 4 响应映射示例
+# <a name="0c4-request-to-0c4-response-map-sample"></a>0c4 请求到 4 个响应映射示例
 _0C4RequestMessageTo0C4ResponseMessage.btm 示例演示如何将 0C4 请求消息映射到 0C4 响应消息。  
   
- 默认情况下， [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server 安装程序将安装中的示例\<*驱动器*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本\>RosettaNet\SDK\PIPAutomation\DoubleAction 快捷键。  
+ 默认情况下，Microsoft® BizTalk Server 安装程序将安装中的示例\<*驱动器*\>: \Program Files\\Microsoft BizTalk\<版本\>加速器for RosettaNet\SDK\PIPAutomation\DoubleAction 中。  
   
 ## <a name="sample-contents"></a>示例内容  
  此示例演示如何将 0C4 请求消息的字段映射到 0C4 响应消息。 可以将此示例与双操作 PIPAutomation 业务流程示例一起使用。 该双操作 PIPAutomation 业务流程示例演示如何实现为双操作 0C2、0C4、3A2 和 3A4 PIP 自动生成响应的业务流程。

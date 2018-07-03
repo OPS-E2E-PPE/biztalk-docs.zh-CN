@@ -1,5 +1,5 @@
 ---
-title: 公共进程 |Microsoft 文档
+title: 公用流程 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -21,17 +21,17 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6634a5d5871deac48fad1defbd79fae8f5f384ad
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2f9d0288defa0705c7e12f102011edbf9ee7e90d
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22210021"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36984718"
 ---
-# <a name="public-processes"></a>公共进程
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]实现涉及与贸易合作伙伴作为公共进程的集成的业务流程。 而将组织内部的业务流程作为专用流程来实现。 使用专用流程和公用流程可将 RosettaNet 实现框架 (RNIF) 处理（在公用流程中）与服务内容处理及后端集成（在专用流程中）分隔开来。  
+# <a name="public-processes"></a>公用流程
+Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]涉及与贸易合作伙伴作为公用过程集成的业务流程来实现。 而将组织内部的业务流程作为专用流程来实现。 使用专用流程和公用流程可将 RosettaNet 实现框架 (RNIF) 处理（在公用流程中）与服务内容处理及后端集成（在专用流程中）分隔开来。  
   
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]实现公共进程作为长时间运行 BizTalk 业务流程。 在发起方和响应方各会运行一个公用业务流程。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]安装程序将提供的发起方和响应方版本 RNIF 1.1 和 RNIF 2.01 的公共过程业务流程。  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 公用流程作为长期 BizTalk 业务流程来实现。 在发起方和响应方各会运行一个公用业务流程。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]安装程序提供了版本的发起方和响应方公用业务流程的 RNIF 1.1 和 RNIF 2.01。  
   
  这些公用业务流程实现了所有的 RNIF 流程。 公用流程使 RNIF 对于其他组件来说变得相对简单了。 除了执行与 RNIF 兼容的消息流之外，公用流程还确定默认跟踪设置并在运行时提供流程状态信息。 它并不处理消息的服务内容。 这由专用流程来处理。  
   
@@ -41,6 +41,6 @@ ms.locfileid: "22210021"
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [发起方公共流程](../../adapters-and-accelerators/accelerator-rosettanet/initiator-public-process.md)  
+-   [发起方公用流程](../../adapters-and-accelerators/accelerator-rosettanet/initiator-public-process.md)  
   
--   [响应方公共过程](../../adapters-and-accelerators/accelerator-rosettanet/responder-public-process.md)
+-   [响应方公用流程](../../adapters-and-accelerators/accelerator-rosettanet/responder-public-process.md)

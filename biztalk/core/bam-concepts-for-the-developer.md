@@ -1,5 +1,5 @@
 ---
-title: 开发人员的 BAM 概念 |Microsoft 文档
+title: 开发人员的 BAM 概念 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e407121e9f71707b45f95e77a8520ed30df3b33
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9fc6d74eb8b14479776febea1530e142e6897729
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230805"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36967446"
 ---
 # <a name="bam-concepts-for-the-developer"></a>适用于开发人员的 BAM 概念
 作为 BAM 开发人员，您需要熟悉重要的 BAM 概念，如活动、继续符和引用， 还应该了解跟踪和事务性处理之间的区别。  
@@ -36,11 +36,11 @@ ms.locfileid: "22230805"
 ## <a name="what-is-a-continuation"></a>什么是继续符？  
  继续符为 BAM 基础结构提供有关以下信息的指导：  
   
--   事件应按何种顺序发生  
+- 事件应按何种顺序发生  
   
--   对与事件项关联的唯一 ID 中的任何更改进行处理的方法  
+- 对与事件项关联的唯一 ID 中的任何更改进行处理的方法  
   
- 有关延续和如何使用它们的详细信息，请参阅[延续任务，并 ContinuationID 节点](../core/continuation-and-continuationid-nodes.md)。  
+  有关继续符及其使用方式的详细信息，请参阅[Continuation 和 ContinuationID 节点](../core/continuation-and-continuationid-nodes.md)。  
   
 ## <a name="what-is-a-reference"></a>什么是引用？  
  引用（也称为相关活动）指定了活动和其他某个项之间的关系。 可能相关的项的示例为另一个活动或文档位置。  

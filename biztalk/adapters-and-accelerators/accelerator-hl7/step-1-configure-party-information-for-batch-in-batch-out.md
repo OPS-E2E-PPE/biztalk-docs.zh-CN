@@ -1,5 +1,5 @@
 ---
-title: 步骤 1： 配置为批处理中批处理的当事方信息 |Microsoft 文档
+title: 步骤 1： 配置参与方信息批处理中批处理扩展 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4cb67fb2e1a232894a0e936bc7827270ca79e6f8
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: eafe692cf86ccf3c6fbe0713c1e621a99a601d5d
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25960507"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36974918"
 ---
-# <a name="step-1-configure-party-information-for-batch-inbatch-out"></a>步骤 1： 配置对批次中的当事方信息/批处理出
-在此步骤中，你将关闭批处理用于当事方，启用批处理的碎片中 / 批处理出方案。 然后重新启动[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]若要启用配置更改才能生效。  
+# <a name="step-1-configure-party-information-for-batch-inbatch-out"></a>步骤 1： 配置参与方信息中的批处理/出站批处理
+在此步骤中，你将关闭碎片的参与方启用批处理的批处理中 / 出站批处理方案。 然后重新启动[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]若要启用配置更改才能生效。  
   
-### <a name="to-turn-off-fragmentation-of-batching-for-the-party"></a>若要关闭的当事方批处理的碎片  
+### <a name="to-turn-off-fragmentation-of-batching-for-the-party"></a>若要关闭的批处理的参与方的碎片  
   
-1.  单击**启动**，指向**所有程序**，指向**Microsoft BizTalk\<版本\>Accelerator for HL7**，然后单击**BTAHL7 配置资源管理器**。  
+1. 单击**启动**，依次指向**所有程序**，指向**Microsoft BizTalk\<版本\>Accelerator for HL7**，然后单击**BTAHL7 配置资源管理器**。  
   
-2.  在 BTAHL7 配置资源管理器，在**方**选项卡上的左窗格中，单击**Tutorial_BatchSource**。  
+2. BTAHL7 配置资源管理器中上**参与方**选项卡上的左窗格中，单击**Tutorial_BatchSource**。  
   
-3.  单击**批定义**选项卡。  
+3. 单击**批定义**选项卡。  
   
-4.  选择**否**为**所需的碎片**，然后单击**保存**。  
+4. 选择**否**有关**所需的碎片**，然后单击**保存**。  
   
-5.  请确保在**交换可恢复的支持，所需**下拉列表**False**选择。  
+5. 请确保考虑到这**可恢复交换支持必需**下拉列表中**False**处于选中状态。  
   
- 继续执行[步骤 2： 修改或创建发送方和接收端口](../../adapters-and-accelerators/accelerator-hl7/step-2-modify-or-create-the-send-and-receive-ports.md)。
+   请继续执行[步骤 2： 修改或创建发送和接收端口](../../adapters-and-accelerators/accelerator-hl7/step-2-modify-or-create-the-send-and-receive-ports.md)。

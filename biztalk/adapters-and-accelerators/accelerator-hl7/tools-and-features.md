@@ -1,5 +1,5 @@
 ---
-title: 工具和功能 |Microsoft 文档
+title: 工具和功能 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a92ef78cdb342d015847377e46bcb434d9fce6ee
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f1d93b0d614d0db16dc2e6ab615171b4e47bd9a9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206461"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36974686"
 ---
 # <a name="tools-and-features"></a>工具和功能
-用户的[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 有权访问[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]基于角色的功能和工具，以及[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]-特定工具和功能适合卫生保健行业。 本节将对这些功能和工具进行描述。  
+Microsoft BizTalk Accelerator for HL7 的用户 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 有权访问 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]基于角色的功能和工具，以及[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]-针对卫生保健行业特定的工具和功能。 本节将对这些功能和工具进行描述。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -31,6 +31,6 @@ ms.locfileid: "22206461"
   
 -   [设计时工具](../../adapters-and-accelerators/accelerator-hl7/design-time-tools.md)  
   
--   [管理和运行的时工具](../../adapters-and-accelerators/accelerator-hl7/administration-and-run-time-tools.md)  
+-   [管理和运行时工具](../../adapters-and-accelerators/accelerator-hl7/administration-and-run-time-tools.md)  
   
 -   [分析工具](../../adapters-and-accelerators/accelerator-hl7/analysis-tools2.md)

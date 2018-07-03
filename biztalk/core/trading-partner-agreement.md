@@ -1,5 +1,5 @@
 ---
-title: 贸易合作伙伴协议 |Microsoft 文档
+title: 贸易合作伙伴协议 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6a62ada3317bc347a6d39af9fb2f983e02647e5e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ea4f60dc4a05f3e6bbe1fca8347482db6297c04a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279973"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36994830"
 ---
 # <a name="trading-partner-agreement"></a>贸易合作伙伴协议
 ## <a name="overview"></a>概述
@@ -25,18 +25,18 @@ ms.locfileid: "22279973"
   
  用更简单的术语说，TPA 是两个业务配置文件之间的一种了解，用于在双方互相交换 B2B 消息时使用特定的消息编码协议或特定的传输协议。  
   
- ![合作伙伴签订的协议的配置文件](../core/media/tradingpartneragreement.gif "TradingPartnerAgreement")  
+ ![合作伙伴配置文件与协议](../core/media/tradingpartneragreement.gif "TradingPartnerAgreement")  
   
- 在上图中，没有分别到业务消息编码使用 X12 Fabrikam 的"Shipping"和"发票"配置文件和 Contoso 之间的协议 (**编码协议**) 和 AS2 传输交换消息 (**传输协议**)。 在各种业务配置文件之间可以存在许多此类协议。 例如，在“付款”和“发票”之间存在一个可使用 EDIFACT 消息编码标准的协议。 所有此类协议为所有配置文件用于贸易合作伙伴一对构成**合作关系**两者之间贸易合作伙伴。  
+ 在上图中，没有 Fabrikam 的"发运"和"发票"配置文件和 Contoso 之间分别向使用 X12 编码的业务消息的协议 (**编码协议**) 和 AS2 传输交换消息 (**传输协议**)。 在各种业务配置文件之间可以存在许多此类协议。 例如，在“付款”和“发票”之间存在一个可使用 EDIFACT 消息编码标准的协议。 所有此类为所有配置文件的协议对贸易合作伙伴构成**合作关系**之间这两个贸易合作伙伴。  
   
 ## <a name="bi-directional-agreements"></a>双向协议  
  两个业务配置文件之间的每个协议都是双向的。 例如，“发运”和“发票”业务配置文件之间的协议将包含可处理消息的属性。  
   
--   由“发运”配置文件从“发票”配置文件接收，并且  
+- 由“发运”配置文件从“发票”配置文件接收，并且  
   
--   由“发运”配置文件发送到“发票”配置文件  
+- 由“发运”配置文件发送到“发票”配置文件  
   
- 用更简单的术语说，双向协议就是两个单向协议的集合。 一个单向协议可被视作定义消息事务如何从参与方 A 发生到参与方 B 的属性集合。另一个单向协议可被视作定义消息事务如何从参与方 B 发生到参与方 A 的属性集合。  
+  用更简单的术语说，双向协议就是两个单向协议的集合。 一个单向协议可被视作定义消息事务如何从参与方 A 发生到参与方 B 的属性集合。另一个单向协议可被视作定义消息事务如何从参与方 B 发生到参与方 A 的属性集合。  
   
 ## <a name="considerations-when-defining-an-agreement"></a>定义一个协议时的注意事项  
  在创建贸易合作伙伴协议时，您必须考虑以下几点：  
@@ -48,13 +48,13 @@ ms.locfileid: "22279973"
 -   适用于 X12 和 EDIFACT 消息的编码协议和传输协议（适用于 AS2）都不能成为协议的一部分。 您必须为两者创建单独的协议。  
   
 ## <a name="global-or-fallback-agreement"></a>全局或后备协议  
- 特定的业务组织可能选择 B2B 处理机制的单数集，而不区分参与特定 B2B 消息传输的合作伙伴。 实际上，这类业务组织只有一个与所有其他贸易合作伙伴共享的常见 B2B 协议设置。 此外，由于这类组织不需要特定合作伙伴的特定设置，因此 B2B 协议设置视为贸易合作伙伴本身而不是为贸易业务配置文件定义的。 在[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]，此类企业组织反映为**全局贸易合作伙伴**。 需要表示为全局贸易合作伙伴的企业与之有交易其他企业使用称为全局贸易合作伙伴协议**全局贸易合作伙伴协议**。 这些协议符合为全球贸易合作伙伴定义的消息编码与协议设置。  
+ 特定的业务组织可能选择 B2B 处理机制的单数集，而不区分参与特定 B2B 消息传输的合作伙伴。 实际上，这类业务组织只有一个与所有其他贸易合作伙伴共享的常见 B2B 协议设置。 此外，由于这类组织不需要特定合作伙伴的特定设置，因此 B2B 协议设置视为贸易合作伙伴本身而不是为贸易业务配置文件定义的。 在中[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]，这样的业务部门反映为**全球贸易合作伙伴**。 需要表示为全球贸易合作伙伴业务交易其他企业使用称为全球贸易合作伙伴协议**全球贸易合作伙伴协议**。 这些协议符合为全球贸易合作伙伴定义的消息编码与协议设置。  
   
- 在全球级别定义的设置在以下情况下也很有用，当两个贸易合作伙伴之间的特定于配置文件的协议设置，没有制订一个贸易合作伙伴协议时。 在这一情况下，驻留 [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] 的组织可使用为合作伙伴定义的协议设置，来制订与其他贸易业务配置文件的协议。 在这种情况下，协议到达使用全局协议设置为伙伴称为定义**回退贸易合作伙伴协议**。  
+ 在全球级别定义的设置在以下情况下也很有用，当两个贸易合作伙伴之间的特定于配置文件的协议设置，没有制订一个贸易合作伙伴协议时。 在这一情况下，驻留 [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] 的组织可使用为合作伙伴定义的协议设置，来制订与其他贸易业务配置文件的协议。 在这种情况下，抵达的协议使用的全球协议设置定义的名为合作伙伴**备选贸易合作伙伴协议**。  
 
-## <a name="learn-next"></a>了解下一步
+## <a name="learn-next"></a>接下来了解
 
-[总结： 定义贸易合作伙伴管理解决方案](../core/putting-it-all-together-defining-a-trading-partner-management-solution.md)
+[将它放在一起： 定义贸易合作伙伴管理解决方案](../core/putting-it-all-together-defining-a-trading-partner-management-solution.md)
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [贸易合作伙伴管理解决方案的构建基块](../core/building-blocks-of-a-trading-partner-management-solution.md)

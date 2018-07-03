@@ -1,5 +1,5 @@
 ---
-title: 步骤 7： 创建并配置源方 |Microsoft 文档
+title: 步骤 7： 创建和配置源参与方 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,37 +12,37 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7ba84bd9a0ab8c6f7d5ccd24b27e90ef9c441b93
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 4708a682047ced4fa33ae34781fd88d379c5e70b
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25960747"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36968926"
 ---
-# <a name="step-7-create-and-configure-a-source-party"></a>步骤 7： 创建并配置源方
-在此步骤中，你将创建并配置源方，并分配发送端口以便允许传出消息的消息标头转换。  
+# <a name="step-7-create-and-configure-a-source-party"></a>步骤 7： 创建和配置源参与方
+在此步骤中，创建并配置源参与方，并分配要启用消息标头转换为传出消息的发送端口。  
   
-### <a name="to-create-and-configure-a-source-party"></a>若要创建和配置源方  
+### <a name="to-create-and-configure-a-source-party"></a>若要创建和配置源参与方  
   
-1.  在 BizTalk 管理控制台中，右键单击**方**，指向**新建**，然后单击**方**。  
+1. 在 BizTalk 管理控制台中，右键单击**参与方**，依次指向**新建**，然后单击**参与方**。  
   
-2.  在**参与方属性**对话框中，在名称字段中，类型**Tutorial_BatchSource**。  
+2. 在中**参与方属性**对话框中，在名称字段中，类型**Tutorial_BatchSource**。  
   
-    > [!NOTE]
-    >  在此框中键入的值是从原始 FHS3.1[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]消息的批处理，FragmentedInboundBatch.txt。  
+   > [!NOTE]
+   >  在此框中键入的值是从原始 FHS3.1[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]批处理的消息，FragmentedInboundBatch.txt。  
   
-3.  在控制台树中，单击**发送端口**。  
+3. 在控制台树中，单击**发送端口**。  
   
-4.  在发送端口窗格中的名称字段中，选择**Tutorial_2wayAck**。  
+4. 在发送端口窗格的名称字段中，选择**Tutorial_2wayAck**。  
   
-5.  单击 **“确定”**。  
+5. 单击“确定” 。  
   
-6.  单击**启动**，指向**所有程序**，指向**Microsoft BizTalk\<版本\>Accelerator for HL7**，然后单击**BTAHL7 配置资源管理器**。  
+6. 单击**启动**，依次指向**所有程序**，指向**Microsoft BizTalk\<版本\>Accelerator for HL7**，然后单击**BTAHL7 配置资源管理器**。  
   
-7.  在 BTAHL7 配置资源管理器，在**方**选项卡上，单击**Tutorial_BatchSource**。  
+7. BTAHL7 配置资源管理器中上**参与方**选项卡上，单击**Tutorial_BatchSource**。  
   
-8.  选择**批定义**BTAHL7 配置浏览器选项卡。 选择**是**为**所需的碎片**，然后单击**保存**。  
+8. 选择**批定义**BTAHL7 配置资源管理器选项卡。 选择**是**有关**所需的碎片**，然后单击**保存**。  
   
 9. 选择**确认**选项卡。有关**确认类型**，选择**OriginalMode**，然后单击**保存**。  
   
- 继续执行[步骤 8： 重新启动 BizTalk Server](../../adapters-and-accelerators/accelerator-hl7/step-8-restart-biztalk-server.md)。
+   请继续执行[步骤 8： 重启 BizTalk Server](../../adapters-and-accelerators/accelerator-hl7/step-8-restart-biztalk-server.md)。

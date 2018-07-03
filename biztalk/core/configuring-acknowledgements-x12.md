@@ -1,5 +1,5 @@
 ---
-title: 配置确认 (X12) |Microsoft 文档
+title: 配置确认 (X12) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,42 +12,42 @@ caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: edec872f4055bb2c06772d361f18345d4a4be2d7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 28df03b8955c17888a4722c361a2e4481c63b413
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22233621"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36970688"
 ---
 # <a name="configuring-acknowledgements-x12"></a>配置确认 (X 12)
 在合作伙伴协议中，您可以指定 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 生成确认的方式，以响应从参与方接收的 X12 编码的交换，以及返回到参与方的确认类型。 您还可以指定是否批处理确认，以及是否为接收的事务集生成 AK2 循环。 本部分提供如何执行操作的说明。  
   
 > [!NOTE]
 >  此处所述的确认属性同样适用于 HIPAA 确认。  
-  
+> 
 > [!IMPORTANT]
->  以下属性禁用此页上，如果你清除**本地 BizTalk 处理接收方或支持从该参与方发送消息的消息**时正在创建你为其创建参与方的复选框协议。  
->   
->  -   **包括 AK2 循环，用于接受的事务集 （如果未选中，循环将生成仅当 AK501 是否不等于 A）**。  
->   
->  仅在与从参与方发送交换的属性相对应的单向协议选项卡上禁用这些属性。 例如，如果创建两个参与方 A 方和方 B 和 A 的当事方，清除复选框，则上面的属性列表会禁用上**A 方-> 方 B**单向协议选项卡。  
+>  以下属性禁用此页上，如果您清除**本地 BizTalk 处理参与方或支持来自此参与方发送消息的接收的消息**要为其创建的参与方时的复选框协议。  
+> 
+> - **为接受的事务集包含 AK2 循环 （如果未选中，将生成循环仅当 AK501 不等于 A）**。  
+> 
+>   仅在与从参与方发送交换的属性相对应的单向协议选项卡上禁用这些属性。 例如，如果创建两个参与方 Party A 和参与方 B，并且对于参与方 A 清除该复选框，上述列表中的属性上禁用**参与方 A-> 参与方 B**单向协议选项卡。  
   
-## <a name="prerequisites"></a>先决条件  
+## <a name="prerequisites"></a>必要條件  
  必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组或 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators 组成员的身份登录。  
   
 ### <a name="to-configure-x12-ack-properties"></a>配置 X12 确认属性  
   
-1.  创建 X12 编码协议中所述[配置常规设置 (X12)](../core/configuring-general-settings-x12.md)。 若要更新现有协议，右键单击在协议**方和业务配置文件**页，然后单击**属性**。  
+1.  创建 X12 编码协议，如中所述[配置常规设置 (X12)](../core/configuring-general-settings-x12.md)。 若要更新现有的协议，请右键单击中的协议**参与方和业务配置文件**页，然后单击**属性**。  
   
-2.  单向协议选项卡上，在**交换设置**，单击**确认**。  
+2.  在单向协议选项卡下**交换设置**，单击**确认**。  
   
-3.  选择**预期的 TA1**可向交换发件人返回技术 (TA1) 确认。 如果选择，选择**执行批量 TA1**分别发送每个技术确认或离开清除进行批处理的技术确认此复选框。  
+3.  选择**预期的 TA1**向交换发件人返回技术 (TA1) 确认。 如果选择，选择**不对 TA1 进行批处理**单独发送每个技术确认，否则将技术确认进行批处理的清除此复选框。  
   
-4.  选择**997 预期**可向交换发件人返回功能 (997) 确认。 如果选择，选择**执行批量 997**分别发送每个功能确认或离开清除进行批处理功能确认此复选框。  
+4.  选择**预期的 997**向交换发件人返回功能 (997) 确认。 如果选择，选择**不对 997 进行批处理**单独发送每个功能确认，或清除对功能确认进行批处理复选框。  
   
-5.  若要启用在 997 确认中为接受的事务集生成 AK2 循环，请选择**包括 AK2 循环，用于接受的事务集 （如果未选中，循环将生成仅当 AK501 是否不等于 A）**。 有关 AK2 循环的详细信息，请参阅[X12 997 确认](../core/x12-997-acknowledgment.md)。  
+5.  若要启用在 997 确认中为接受的事务集生成 AK2 循环，请选择**接受的事务集包含 AK2 循环 （如果未选中，将生成循环仅当 AK501 不等于 A）**。 有关 AK2 循环的详细信息，请参阅[X12 997 确认](../core/x12-997-acknowledgment.md)。  
   
-6.  单击**应用**接受所做的更改，然后才能继续进行配置，或单击**确定**验证所做的更改，然后关闭对话框。  
+6.  单击**Apply**以接受更改，然后才能继续进行配置，或单击**确定**以验证所做的更改，然后关闭对话框。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [配置交换设置 (X12)](../core/configuring-interchange-settings-x12.md)

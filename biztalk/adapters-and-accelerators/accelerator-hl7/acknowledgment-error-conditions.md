@@ -1,5 +1,5 @@
 ---
-title: 确认错误条件 |Microsoft 文档
+title: 错误条件确认 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,33 +15,33 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 15b481f4cdb60822841021f7f708a6caea021b8b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 26bc0524e76521fcb673c6d5d3dc70f43cb12798
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22204581"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36970254"
 ---
-# <a name="acknowledgment-error-conditions"></a>确认错误条件
-以下条件将导致严重的错误条件时[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 是处理确认 (ACK) 消息：  
+# <a name="acknowledgment-error-conditions"></a>错误条件确认
+以下条件将导致严重的错误条件时 Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 是处理确认 (ACK) 消息：  
   
--   缺少必填的字段以 MSH9  
+- 缺少必填的字段以 MSH9  
   
--   缺少必填的字段以 MSH12  
+- 缺少必填的字段以 MSH12  
   
- 以下条件会导致出现非致命错误条件。 在此情况下，[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]生成 ACK，但也将挂起的确认：  
+  以下条件会导致出现非致命错误条件。 在此情况下，[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]生成确认，但也将挂起的确认：  
   
--   缺少必填的字段在 MSH11  
+- MSH11 中的所需的字段丢失  
   
--   缺少 MSH10 值  
+- 缺少 MSH10 值  
   
--   标头中的可选字段的枚举类型错误。  
+- 标头中的可选字段的枚举类型错误。  
   
 > [!NOTE]
->  枚举类型错误时 MSH 15 设置为 AL 或 ER，在标头中找到[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]生成的状态一起提交 ACK **MSA_1 = CR**。  
+>  当 MSH 15 设置为 AL 或 ER，标头中找到的枚举类型错误[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]生成的状态的提交确认**MSA_1 = CR**。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建和处理确认](../../adapters-and-accelerators/accelerator-hl7/creating-and-processing-acknowledgments.md)   
  [ACK 消息架构类型](../../adapters-and-accelerators/accelerator-hl7/ack-message-schema-types.md)   
  [消息确认段](../../adapters-and-accelerators/accelerator-hl7/message-acknowledgment-segment.md)   
- [设置发送端口用于接收确认](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)
+ [设置用于接收 ACK 的发送端口](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)

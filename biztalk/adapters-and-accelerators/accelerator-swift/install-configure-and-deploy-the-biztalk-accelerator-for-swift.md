@@ -1,5 +1,5 @@
 ---
-title: 安装、 配置和部署 BizTalk Accelerator for SWIFT |Microsoft 文档
+title: 安装、 配置和部署 BizTalk Accelerator for SWIFT |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,22 +15,22 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4ebdc6e56aa3f9dff2fbe61da54b722528c6eb2a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 44119bb7a8dd16189eea1e476a1ac694ec5e9fa2
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209901"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36969238"
 ---
 # <a name="install-configure-and-deploy-the-biztalk-accelerator-for-swift"></a>安装、 配置和部署 BizTalk Accelerator for SWIFT
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]适用于一个平台，包括[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]， [!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]，和[!INCLUDE[btsSQLServerNoVersion_md](../../includes/btssqlservernoversion-md.md)]。 在中设置的功能[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]相当于的功能集以前[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]版本。 但是，你可以利用增强的功能在新版本的 BizTalk Server、 Visual Studio 和 SQL Server。  
+Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]包括的平台上工作[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]， [!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]，和[!INCLUDE[btsSQLServerNoVersion_md](../../includes/btssqlservernoversion-md.md)]。 中的功能集[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]相当于中的功能集以前[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]版本。 但是，您可以在较新版本的 BizTalk Server、 Visual Studio 和 SQL Server 来充分利用的增强功能。  
   
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
 
 [安装 BizTalk Accelerator for SWIFT](../../adapters-and-accelerators/accelerator-swift/install-biztalk-accelerator-for-swift.md)  
 [升级 BizTalk Accelerator for SWIFT](../../adapters-and-accelerators/accelerator-swift/upgrade-biztalk-accelerator-for-swift.md)  
 [配置 BizTalk Accelerator for SWIFT](../../adapters-and-accelerators/accelerator-swift/configure-biztalk-accelerator-for-swift.md)  
 [A4SWIFT 组件配置指南](../../adapters-and-accelerators/accelerator-swift/a4swift-component-configuration-guide.md)  
-[BizTalk Accelerator for SWIFT 的部署指南](../../adapters-and-accelerators/accelerator-swift/deployment-guide-for-biztalk-accelerator-for-swift.md)  
-[读取的安装和配置的已知问题](../../adapters-and-accelerators/accelerator-swift/read-the-installation-and-configuration-known-issues.md)  
+[BizTalk Accelerator for SWIFT 部署指南](../../adapters-and-accelerators/accelerator-swift/deployment-guide-for-biztalk-accelerator-for-swift.md)  
+[阅读有关安装和配置的已知问题](../../adapters-and-accelerators/accelerator-swift/read-the-installation-and-configuration-known-issues.md)  
 [取消配置或删除 BizTalk Accelerator for SWIFT](../../adapters-and-accelerators/accelerator-swift/unconfigure-or-remove-biztalk-accelerator-for-swift.md)

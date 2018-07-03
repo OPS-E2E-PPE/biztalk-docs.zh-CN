@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10581 |Microsoft 文档
+title: 单一登录： 事件 10581 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 39e7db4f69b187aa68725335b834e518828d0509
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0e542d346115422327a0be0feac2e783574a1ba0
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270285"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36983350"
 ---
 # <a name="single-sign-on-event-10581"></a>单一登录： 事件 10581
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|10581|  
-|事件源|ENTSSO|  
-|组件|N/A|  
-|符号名称|SSO_INFO_APP_DISABLED|  
-|消息正文|此应用程序已禁用。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 客户端计算机: %2 %r<br /><br /> 客户端用户: %3 %r<br /><br /> 应用程序名称： %4|  
+|                 |                                                                                                                                                                |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                                                   企业单一登录                                                                    |
+| 产品版本 |                                                   [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                   |
+|    事件 ID     |                                                                             10581                                                                              |
+|  事件源   |                                                                             ENTSSO                                                                             |
+|    组件    |                                                                              N/A                                                                               |
+|  符号名称  |                                                                     SSO_INFO_APP_DISABLED                                                                      |
+|  消息正文   | 此应用程序已禁用。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 客户端计算机: %2 %r<br /><br /> 客户端用户: %3 %r<br /><br /> 应用程序名称： %4 |
   
 ## <a name="explanation"></a>解释  
  这是信息性消息，可以用于跟踪 SSO 系统中发生的与安全有关的重要事件。 此消息表明应用程序已被禁用。  

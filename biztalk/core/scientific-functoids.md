@@ -1,5 +1,5 @@
 ---
-title: 科学 Functoid |Microsoft 文档
+title: 科学计数法 Functoid |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,32 +12,32 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b23f65ecede9082ec93041ddab45fa92029851a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cf7a181f200948335aab0ffa2a06d43d38408afb
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269501"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36977413"
 ---
-# <a name="scientific-functoids"></a>科学 Functoid
+# <a name="scientific-functoids"></a>科学计数法 Functoid
 
 ## <a name="overview"></a>概述
-**科学**functoid 用于执行各种标准三角函数、 对数和指数计算。  
-  
- 除**Base-Specified 对数**和**X ^ Y** functoid，其中的每个采用两个输入的参数，**科学记数法**functoid 所有采用单个参数。  
-  
- 四个三角**科学记数法**functoid (**反正切值**，**余弦**，**正弦值**，和**正切**) 所有使用弧度表示，而不是度为单位为其相关的输入或输出参数。 弧度是一种角度度量单位，如一个整圆的弧度为 2π。 下述：  
-  
--   2π 弧度 = 360 度  
-  
--   1 弧度 = 180/π 度  
-  
--   1 度 = π/180 弧度  
-  
- 如果你输入或输出实例消息使用度角度作为其所在部门的度量值，你将需要使用**数学**结合三角 functoid**科学记数法**到 functoid实现正确的结果。  
+**科学记数法**functoid 用于执行各种标准的三角、 对数和指数计算。  
+
+ 除**指定底的对数**并**X ^ Y**采用两个输入的参数，functoid**科学记数**functoid 均采用单个参数。  
+
+ 四个三角**科学记数**functoid (**反正切值**，**余弦**，**正弦**，和**正切**) 所有使用弧度而不是度作为单位为其相关输入或输出参数。 弧度是一种角度度量单位，如一个整圆的弧度为 2π。 它遵循的：  
+
+- 2π 弧度 = 360 度  
+
+- 1 弧度 = 180/π 度  
+
+- 1 度 = π/180 弧度  
+
+  如果你输入或输出实例消息使用度作为的度量单位的角度，你需要使用**数学**结合使用三角 functoid**科学记数**到 functoid获得正确的结果。  
 
 ## <a name="available-functoids"></a>可用的 functoid  
- **科学记数法**functoid 均： 
+ **科学记数**functoid 包括： 
 
 * 10^n
 * 反正切值
@@ -49,7 +49,7 @@ ms.locfileid: "22269501"
 * 正弦值
 * 正切
 * X^Y
-  
-## <a name="see-also"></a>另请参阅  
--  [如何在向地图添加基本 Functoid](../core/how-to-add-basic-functoids-to-a-map.md)   
--  **科学 Functoid 引用**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+
+## <a name="see-also"></a>请参阅  
+- [如何向映射添加基本 Functoid](../core/how-to-add-basic-functoids-to-a-map.md)   
+- **科学计数法 Functoid 参考** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]

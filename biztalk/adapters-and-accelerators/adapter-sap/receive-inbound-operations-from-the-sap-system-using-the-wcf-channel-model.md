@@ -1,5 +1,5 @@
 ---
-title: 使用 WCF 通道模型的 SAP 系统从接收入站的操作 |Microsoft 文档
+title: 使用 WCF 通道模型的 SAP 系统从接收的入站的操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,44 +16,44 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5b76ae42cf0ffc26b818e35d83f59e64158b923a
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: f7c0c819372cf23842eb5311df8636e55e28c72a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25966195"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36969678"
 ---
-# <a name="receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model"></a>使用 WCF 通道模型的 SAP 系统从接收入站的操作
-若要用作 RFC 服务器和接收操作 （如发送 IDOC 或调用 RFC） SAP 系统调用，必须创建可以通过侦听来自 SAP 程序 ID 的消息的通道侦听器**System.ServiceModel.Channels.IReplyChannel**通道形状。  
+# <a name="receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model"></a>使用 WCF 通道模型的 SAP 系统从接收的入站的操作
+若要为 RFC 服务器和接收操作 （如发送 IDOC 或调用 RFC） SAP 系统调用，必须创建可通过侦听来自 SAP 程序 ID 的消息的通道侦听器**System.ServiceModel.Channels.IReplyChannel**通道形状。  
   
- 通道侦听器 (**System.ServiceModel.Channels.IChannelListener**) 是可以用于从特定的 WCF 终结点接收消息的 WCF 通信对象。 通道侦听器都充当通过它可以创建对其可以通过你的服务接收调用客户端 （SAP 系统） 的消息的通道的工厂。 创建通道侦听器，通过从**Microsoft.Adapters.SAP.SAPBinding**对象通过调用**BuildChannelListener**方法。 提供的 SAP 连接指定从中入站的操作将接收到此方法的 SAP 程序 ID URI。  
+ 通道侦听器 (**System.ServiceModel.Channels.IChannelListener**) 是可用于从特定的 WCF 终结点接收消息的 WCF 通信对象。 通道侦听器充当通过它可以创建对其可由你的服务接收调用的客户端 （SAP 系统） 的消息的通道工厂。 创建通道侦听器，通过从**Microsoft.Adapters.SAP.SAPBinding**对象通过调用**BuildChannelListener**方法。 提供的 SAP 连接 URI，指定 SAP 程序 ID 将从其接收的入站的操作到此方法。  
   
- [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]支持**IReplyChannel**通道形状。 **IReplyChannel**通道支持入站的请求-响应消息交换模式。 也就是说，在其中一个外部程序发送的请求消息通过通道并且你的程序的模式返回的响应。  
+ [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]支持**IReplyChannel**通道形状。 **IReplyChannel**通道支持入站的请求-响应消息交换模式。 也就是说，外部程序将请求消息发送通过通道和应用程序的模式返回响应。  
   
  有关如何接收操作使用的概述**IReplyChannel**在 WCF 中，请参阅[服务通道级编程](https://msdn.microsoft.com/library/ms789029.aspx)。
   
  本部分介绍的是特定于 SAP 系统从接收操作的以下主题：  
   
--   如何针对特定操作使用的通道侦听器的筛选器。  
+-   如何筛选对特定操作使用的通道侦听器。  
   
--   如何在引发异常 SAP 系统。  
+-   如何引发异常的 SAP 系统。  
   
--   从 SAP 适配器的流式处理入站的平面文件 Idoc。  
+-   从 SAP 适配器的入站的平面文件 Idoc 进行流式处理。  
   
 -   如何从 SAP 系统接收操作。  
   
-## <a name="how-do-i-filter-operations-using-the-channel-listener"></a>如何筛选使用通道侦听器操作？  
+## <a name="how-do-i-filter-operations-using-the-channel-listener"></a>如何筛选使用通道侦听器的操作？  
   
 ### <a name="using-an-inboundactioncollection-to-filter-operations"></a>使用 InboundActionCollection 来筛选操作  
- [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]提供**Microsoft.ServiceModel.Channels.InboundActionCollection**类，以使你能够筛选由通道侦听器接收和传递给应用程序代码的操作。 若要筛选特定操作，请通过使用侦听器终结点 URI 创建此类的实例。 然后将每个目标操作 （请求） 消息操作添加到集合。 最后，你将添加到的入站的操作集合**System.ServiceModel.Channels.BindingParameterCollection**对象，然后将此绑定参数集合传递到用于创建通道侦听器的调用。  
+ [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]提供了**Microsoft.ServiceModel.Channels.InboundActionCollection**类，以使您能够筛选操作是由通道侦听器接收，并已传递给应用程序代码。 若要筛选对特定操作，请使用侦听器终结点 URI 创建此类的实例。 然后将每个目标操作 （请求） 消息操作添加到集合。 最后，添加到的入站的操作集合**System.ServiceModel.Channels.BindingParameterCollection**对象，然后将此绑定参数集合传递到创建的通道侦听器的调用。  
   
- 如果 SAP 系统调用不是入站的操作集合中的操作：  
+ 如果 SAP 系统将调用不在入站的操作集合中的操作：  
   
--   [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]返回给调用方具有以下消息的 SAP 系统上的异常异常:"未处理 Rfc 服务器上的传入 RFC 调用 [RFC_NAME]"。 此消息中，[RFC_NAME] 是 RFC (例如，IDOC_INBOUND_ASYNCHRONOUS) 的名称。  
+- [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]具有以下消息的 SAP 系统上向调用方返回一个异常异常:"未处理 Rfc 服务器上的传入 RFC 调用 [RFC_NAME]"。 此消息中，[RFC_NAME] 是 RFC (例如，IDOC_INBOUND_ASYNCHRONOUS) 的名称。  
   
--   适配器引发**Microsoft.ServiceModel.Channels.Common.AdapterException**与一条消息，指示已接收到的操作。 有关如何使用此异常的示例，请参阅本主题末尾的示例。  
+- 适配器将引发**Microsoft.ServiceModel.Channels.Common.AdapterException**并显示消息，指示接收到的操作。 有关如何使用此异常的示例，请参阅本主题末尾处的示例。  
   
- 下面的代码示例演示如何使用**InboundActionCollection**创建为单个 RFC，Z_RFC_MKD_DIV 筛选器的通道侦听器。  
+  下面的代码示例演示如何使用**InboundActionCollection**创建适用于单个 RFC，Z_RFC_MKD_DIV 筛选器的通道侦听器。  
   
 ```  
 // The connection Uri must specify listener parameters (or an R-type destination in saprfc.ini)  
@@ -80,19 +80,19 @@ listener = binding.BuildChannelListener<IReplyChannel>(listeneraddress, bpcol);
 ```  
   
 ### <a name="manually-filtering-operations"></a>手动筛选操作  
- 如果你未指定的入站的操作集合的通道侦听器，则将向你的代码传递 SAP 系统调用的所有操作。 通过检查入站请求的消息操作，可以手动筛选此类操作。  
+ 如果未指定的通道侦听器的入站的操作集合，调用的 SAP 系统的所有操作将都传递到你的代码。 通过检查入站请求的消息操作，可以手动筛选此类操作。  
   
- 也可能是你要在其中筛选基于其内容的操作的方案。 例如，如果你收到的 Idoc 中：  
+ 也可能是想要筛选根据其内容的操作的方案。 例如，如果你收到的 Idoc 中：  
   
--   字符串格式 ( **ReceiveIDocFormat**绑定属性是**字符串**); 所有使用 ReceiveIdoc 操作接收到的 Idoc。  
+- 字符串格式 ( **ReceiveIDocFormat**绑定属性是**字符串**); 所有使用 ReceiveIdoc 操作接收 Idoc。  
   
--   Rfc 格式 ( **ReceiveIDocFormat**绑定属性是**Rfc**); 所有使用 IDOC_INBOUND_ASYNCHRONOUS RFC 或 INBOUND_IDOC_PROCESS RFC 接收到的 Idoc。  
+- Rfc 格式 ( **ReceiveIDocFormat**绑定属性是**Rfc**); 所有使用 IDOC_INBOUND_ASYNCHRONOUS RFC 或 INBOUND_IDOC_PROCESS RFC 接收 Idoc。  
   
- 在这种情况下，你可能想要实现筛选基于在代码中特定 IDOC 参数 （如 IDOC 类型中）。  
+  在此方案中可能想要实现筛选基于在代码中特定 IDOC 参数 （如 IDOC 类型）。  
   
- 手动筛选操作时，你可以返回到错误[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]不处理的操作。 这将引发的异常异常向调用方 SAP 系统上。 如果您不想要提升 SAP 出现异常，你还可以返回了空响应。  
+  当手动筛选操作时，可返回到错误[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]的未处理的操作。 这将引发到 SAP 系统上调用方的异常异常。 如果不想要引发异常的 SAP，还可以返回一个空响应。  
   
- 下面的代码演示如何手动筛选 Z_RFC_MKD_DIV 操作。  
+  下面的代码演示如何手动 Z_RFC_MKD_DIV 操作筛选器。  
   
 ```  
 // Get the message from the channel  
@@ -115,23 +115,23 @@ else
 }  
 ```  
   
-## <a name="how-do-i-raise-an-exception-on-the-sap-system"></a>如何引发异常，SAP 系统？  
- 以指示到 SAP 系统上调用方错误来答复请求消息并出现 SOAP 错误。 当您返回到 SOAP 错误[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]，适配器返回给调用方 SAP 系统上的异常异常。 异常消息创建从 SOAP 错误的元素。  
+## <a name="how-do-i-raise-an-exception-on-the-sap-system"></a>如何引发异常的 SAP 系统？  
+ 若要指示一个错误，SAP 系统上调用方可以回复 SOAP 错误的请求消息。 当您返回到 SOAP 错误[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]，适配器返回到调用方 SAP 系统上的异常的异常。 从 SOAP 错误的元素将创建的异常消息。  
   
- [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]创建根据以下优先顺序 SAP 异常消息：  
+ [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]创建以下优先顺序根据 SAP 异常消息：  
   
-1.  如果 SOAP 错误包含详细信息对象，该适配器序列化到字符串的详细信息和异常消息将设置为此字符串。  
+1.  如果 SOAP 错误中包含详细信息对象，该适配器序列化到字符串的详细信息和异常消息设置为此字符串。  
   
-2.  如果 SOAP 错误中包含的原因，异常消息为其值设置。  
+2.  如果 SOAP 错误中包含一个原因，异常消息设置为它的值。  
   
-3.  否则，该适配器的序列化**MessageFault**为字符串，并异常消息对象本身设置为此字符串。  
+3.  否则，适配器将序列化为**MessageFault**为字符串，并在异常消息对象本身设置为此字符串。  
   
 > [!NOTE]
->  适配器仅使用错误消息来创建针对 SAP 系统，则为引发的异常中返回的异常消息因此，为这些实体设置的值可完全是由您决定。  
+>  适配器仅使用错误消息来创建 SAP 系统所引发的异常中返回的异常消息因此，这些实体设置的值完全是由您决定。  
   
- WCF 提供了**System.ServiceModel.Channels.MessageFault**类来封装内存中表示 SOAP 错误。 你可以使用任何静态、 重载**MessageFault.CreateFault**方法来创建新的 SOAP 错误，从中你可以然后创建错误消息通过调用适当**Message.CreateMessage**重载。 WCF 还提供了重载**CreateMessage** ，而无需使用创建的错误消息**MessageFault**对象。  
+ WCF 提供了**System.ServiceModel.Channels.MessageFault**类来封装的 SOAP 错误的内存中表示形式。 您可以使用任何静态，重载**MessageFault.CreateFault**方法来创建新的 SOAP 错误，通过它你然后可以创建错误消息通过调用适当**Message.CreateMessage**重载。 WCF 还提供了重载**CreateMessage** ，而无需使用创建的错误消息**MessageFault**对象。  
   
- 你使用**System.ServiceModel.Channels.RequestContext.Reply**方法以返回到适配器的错误消息。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]忽略错误消息的消息操作，因此你可以为任何值设置的消息操作。  
+ 您使用**System.ServiceModel.Channels.RequestContext.Reply**方法以返回到适配器的错误消息。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]将忽略错误消息的消息操作，因此可以将消息操作设置为任何值。  
   
  下面的示例演示如何返回到的错误消息[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。 此示例中省略创建的通道侦听器和通道的步骤。  
   
@@ -150,21 +150,21 @@ rc.Reply(faultMessage);
 ```  
   
 ## <a name="streaming-inbound-flat-file-idocs-from-the-sap-adapter"></a>从 SAP 适配器的流式处理入站的平面文件 Idoc  
- 接收平面文件 （字符串） Idoc 从入站 ReceiveIdoc 操作中的适配器。 IDOC 数据表示为此操作中的单个节点下的字符串。 为此，[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]支持流式处理请求消息的节点的值。 若要执行节点值流式处理，必须使用 ReceiveIdoc 操作的请求消息通过调用**Message.WriteBodyContents**方法替换**System.Xml.XmlDictionaryWriter** ，就能够流式处理 IDOC 数据。 有关如何执行此操作的信息，请参阅[SAP 使用 WCF 通道模型中流式处理平面文件 Idoc](../../adapters-and-accelerators/adapter-sap/stream-flat-file-idocs-in-sap-using-the-wcf-channel-model.md)。  
+ 接收平面文件 （字符串） Idoc 从入站 ReceiveIdoc 操作中的适配器。 IDOC 数据表示为此操作中的单个节点下的字符串。 出于此原因，[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]支持节点值流处理的请求消息。 若要执行节点值流式处理，必须使用 ReceiveIdoc 操作的请求消息通过调用**Message.WriteBodyContents**方法替换**System.Xml.XmlDictionaryWriter** ，它能够流式传输 IDOC 的数据。 有关如何执行此操作的信息，请参阅[流式处理中使用 WCF 通道模型的 SAP 的平面文件 Idoc](../../adapters-and-accelerators/adapter-sap/stream-flat-file-idocs-in-sap-using-the-wcf-channel-model.md)。  
   
-## <a name="how-do-i-receive-operations-from-a-sap-system-using-an-ireplychannel"></a>如何从使用 IReplyChannel SAP 系统接收操作？  
- 若要通过使用 WCF 通道模型从 SAP 系统接收操作，执行以下步骤。  
+## <a name="how-do-i-receive-operations-from-a-sap-system-using-an-ireplychannel"></a>如何从使用 IReplyChannel 的 SAP 系统接收操作？  
+ 若要通过使用 WCF 通道模型接收来自 SAP 系统的操作，执行以下步骤。  
   
-#### <a name="to-receive-operations-from-the-sap-system-using-an-ireplychannel"></a>若要从使用 IReplyChannel 的 SAP 系统接收操作  
+#### <a name="to-receive-operations-from-the-sap-system-using-an-ireplychannel"></a>若要从 SAP 系统使用 IReplyChannel 接收操作  
   
-1.  创建的实例**SAPBinding**并设置你想要接收的操作所需的绑定属性。 至少必须设置**AcceptCredentialsInUri**绑定属性为 true。 若要配置为 tRFC 服务器，必须设置**TidDatabaseConnectionString**绑定属性。 有关绑定属性的详细信息，请参阅[阅读有关 BizTalk 适配器用于 mySAP Business Suite 绑定属性](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)。  
+1.  创建的实例**SAPBinding**并设置你想要接收的操作为所需的绑定属性。 至少必须设置**AcceptCredentialsInUri**绑定属性为 true。 若要充当 tRFC 服务器，必须设置**TidDatabaseConnectionString**属性绑定。 有关绑定属性的详细信息，请参阅[了解用于 mySAP Business Suite 绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)。  
   
     ```  
     SAPBinding binding = new SAPBinding();  
     binding.AcceptCredentialsInUri = true;  
     ```  
   
-2.  创建**BindingParameterCollection**并添加**InboundActionCollection** ，其中包含你想要接收的操作的操作。 到 SAP 系统的所有其他操作，该适配器将返回一个异常。 此步骤为可选步骤。 有关详细信息，请参阅[接收从使用 WCF 通道模型的 SAP 系统的入站操作](../../adapters-and-accelerators/adapter-sap/receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model.md)。  
+2.  创建**BindingParameterCollection**并添加**InboundActionCollection** ，其中包含你想要接收的操作的操作。 该适配器将到 SAP 系统的所有其他操作返回一个异常。 此步骤为可选步骤。 有关详细信息，请参阅[接收从使用 WCF 通道模型的 SAP 系统的入站操作](../../adapters-and-accelerators/adapter-sap/receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model.md)。  
   
     ```  
     InboundActionCollection actions = new InboundActionCollection(listeneraddress);  
@@ -173,7 +173,7 @@ rc.Reply(faultMessage);
     bpcol.Add(actions);  
     ```  
   
-3.  创建通道侦听器，通过调用**BuildChannelListener < IReplyChannel\>** 方法**SAPBinding**并将其打开。 作为此方法的参数之一指定 SAP 连接 URI。 连接 URI 必须包含 SAP 系统上 RFC 目标的参数。 有关 SAP 连接 URI 的详细信息，请参阅[创建 SAP 系统连接 URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)。 如果你创建**BindingParameterCollection**在步骤 3 中，还这可以指定当创建通道侦听器。  
+3.  通过调用创建的通道侦听器**BuildChannelListener < IReplyChannel\>** 方法**SAPBinding**并将其打开。 作为此方法的参数之一指定 SAP 连接 URI。 连接 URI 必须包含适用于 SAP 系统的 RFC 目标的参数。 有关 SAP 连接 URI 的详细信息，请参阅[创建 SAP 系统连接 URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)。 如果您创建**BindingParameterCollection**在步骤 3 中，您还这在创建时指定的通道侦听器。  
   
     ```  
     Uri listeneraddress =  
@@ -189,28 +189,28 @@ rc.Reply(faultMessage);
     channel.Open();  
     ```  
   
-5.  调用**ReceiveRequest**上从适配器获取下一个操作的请求消息的通道。  
+5.  调用**ReceiveRequest**上要从适配器获取的下一步操作的请求消息的通道。  
   
     ```  
     RequestContext rc = channel.ReceiveRequest();  
     ```  
   
-6.  使用适配器发送的请求消息。 获取从请求消息**RequestMessage**属性**requestcontext 已**。 你可以使用使用消息**XmlReader**或**XmlDictionaryWriter**。  
+6.  使用适配器发送的请求消息。 获取请求消息从**RequestMessage**的属性**RequestContext**。 可以使用使用的消息**XmlReader**或**XmlDictionaryWriter**。  
   
     ```  
     XmlReader reader = (XmlReader)rc.RequestMessage.GetReaderAtBodyContents();  
     ```  
   
-7.  通过返回到 SAP 系统的响应或错误来完成该操作：  
+7.  通过将响应或错误返回到 SAP 系统中完成该操作：  
   
-    1.  处理该消息，通过将响应消息返回到适配器返回对 SAP 系统的响应。 此示例返回一条空消息。  
+    1.  处理该消息并通过返回到适配器的响应消息返回到 SAP 系统的响应。 此示例返回一条空消息。  
   
         ```  
         respMessage = Message.CreateMessage(MessageVersion.Default, rc.RequestMessage.Headers.Action + "/response");  
         rc.Reply(respMessage);  
         ```  
   
-    2.  通过到适配器中返回的错误消息返回到 SAP 系统的一个异常。 消息操作、 错误代码和原因，可以使用任何值。  
+    2.  通过向适配器返回的错误消息返回到 SAP 系统的一个异常。 消息的操作，错误代码和原因，可以使用任何值。  
   
         ```  
         MessageFault fault = MessageFault.CreateFault(new FaultCode("ProcFault"), "Processing Error");  
@@ -218,7 +218,7 @@ rc.Reply(faultMessage);
         rc.Reply(respMessage);  
         ```  
   
-8.  在发送消息之后，请关闭的请求上下文。  
+8.  在发送消息之后，请关闭请求上下文。  
   
     ```  
     rc.Close();  
@@ -231,25 +231,25 @@ rc.Reply(faultMessage);
     ```  
   
     > [!IMPORTANT]
-    >  在处理该操作完成，您必须关闭通道。 未能关闭通道可能会影响你代码的行为。  
+    >  在完成处理该操作后，您必须关闭通道。 未能关闭通道可能会影响你的代码的行为。  
   
-10. 在完成接收操作从 SAP 系统时，请关闭该侦听器。  
+10. 从 SAP 系统接收操作完成后，请关闭侦听器。  
   
     ```  
     listener.Close()  
     ```  
   
     > [!IMPORTANT]
-    >  完成后，必须显式关闭该侦听器使用它;否则，程序可能不能正常工作。 关闭侦听器不会关闭使用侦听器创建的通道。 您还可以显式必须关闭使用侦听器创建每个通道。  
+    >  完成后，必须显式关闭该侦听器使用它;否则，您的程序可能不能正常工作。 关闭侦听器不会关闭创建使用侦听器通道。 您必须显式关闭使用侦听器创建的每个通道。  
   
 ### <a name="example"></a>示例  
- 下面的示例接收 RFC，Z_RFC_MKD_DIV 从 SAP 系统。 此 RFC 将两个数相除。 在此示例实现使用**InboundActionCollection**来接收消息时筛选 Z_RFC_MKD_DIV 操作和以下措施：  
+ 下面的示例接收 RFC，SAP 系统从 Z_RFC_MKD_DIV。 此 RFC 将两个数相除。 在此示例实现使用**InboundActionCollection**筛选 Z_RFC_MKD_DIV 操作而不会以下时收到一条消息：  
   
--   如果除数为非零，它将写入控制台的除法的结果，并将其返回给 SAP 系统。  
+-   如果除数为非零值，它向控制台写入该除法运算的结果，并将其返回到 SAP 系统。  
   
--   如果除数为零，它将生成的异常消息写入控制台，并返回到 SAP 系统的错误。  
+-   如果除数为零，它将生成的异常消息写入到控制台，并返回到 SAP 系统的错误。  
   
--   如果任何其他操作发送的 SAP 系统，它会将消息写入控制台。 在这种情况下，适配器本身到 SAP 系统返回一个错误。  
+-   如果任何其他操作发送的 SAP 系统，它将一条消息写入控制台。 在这种情况下，适配器本身到 SAP 系统返回错误。  
   
 ```  
 using System;  
@@ -444,5 +444,5 @@ namespace SapRfcServerCM
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [使用 WCF 通道模型开发应用程序](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)

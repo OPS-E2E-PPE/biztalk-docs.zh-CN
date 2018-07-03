@@ -1,5 +1,5 @@
 ---
-title: 使用管道组件读取一条路线 |Microsoft 文档
+title: 使用管道组件读取路线 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,94 +12,98 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bceec4df732247be043e006b52c7abbfbf6a6b24
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c03e4e48b125d7a8236c66ce36e458dd2d51a6f7
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22296189"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36991118"
 ---
-# <a name="using-a-pipeline-component-to-read-an-itinerary"></a>使用管道组件读取一条路线
-在接收管道到达的消息可以包含在其定义其处理要求 （客户端路线） 的 SOAP 标头的元数据。 图 1 说明 ESB 路线和 ESB 调度程序管道组件的用法。  
-  
- ![管道组件读取](../esb-toolkit/media/ch4-pipelinecomponentread.gif "第四章第 4 PipelineComponentRead")  
-  
+# <a name="using-a-pipeline-component-to-read-an-itinerary"></a>使用管道组件读取路线
+在接收管道中的消息可以包含其定义其处理要求 （客户端的路线） 的 SOAP 标头中的元数据。 图 1 说明了使用 ESB 路线和 ESB 调度程序管道组件。  
+
+ ![管道组件读取](../esb-toolkit/media/ch4-pipelinecomponentread.gif "Ch4-PipelineComponentRead")  
+
  **图 1**  
-  
+
  **ESB 路线管道组件的示例**  
-  
- ESB 路线管道组件可以用于捕获从消息的元数据作为可以定义 ESB 由应用处理的上下文属性。  
-  
- 以下各节描述了每个组件执行的步骤。  
-  
-## <a name="esb-itinerary-pipeline-component-process-steps"></a>ESB 路线管道组件过程步骤  
+
+ ESB 路线管道组件可用于为上下文属性，可以定义应用的 ESB 处理捕获的元数据的一条消息。  
+
+ 以下部分介绍每个组件执行的步骤。  
+
+## <a name="esb-itinerary-pipeline-component-process-steps"></a>ESB 路线管道组件处理步骤  
  在图 1 所示示例中，ESB 路线管道组件执行以下步骤：  
-  
--   读取路线 SOAP 标头。 正在提交方的时他或她将消息提交将填充的 SOAP 标头设置路线。 BizTalk 消息上下文属性的一系列表示 SOAP 标头;这些属性因所使用的 Web 服务适配器的类型而异。 以下是相关的 Web 服务适配器：  
-  
-    -   **WCF 适配器。** 此适配器分析 SOAP 标头，并填充下表中列出的 BizTalk 消息上下文属性。  
-  
-        |属性|  
-        |----------------|  
-        |**名称 = 路线**|  
-        |**Namespace = http://schemas.microsoft.biztalk.practices.esb.com/itinerary**|  
-  
-        > [!NOTE]
-        >  默认情况下，Windows Communication Foundation (WCF) 适配器所使用的作为 BizTalk 上下文的名为的 ItineraryDescription.xsd （此架构用于生成 ESB 路线 SOAP 标头） 的架构的根名称**名称**自变量，它作为 BizTalk 上下文使用的架构的目标命名空间和**Namespace**自变量。  
-  
-    -   **SOAP 适配器。** 此适配器分析 SOAP 标头，并填充下表中列出的 BizTalk 消息上下文属性。  
-  
-        |属性|  
-        |----------------|  
-        |**名称 = 路线**|  
-        |**Namespace = http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**|  
-  
-        > [!NOTE]
-        >  默认情况下，SOAP 适配器所使用的作为 BizTalk 上下文的名为的 Itinerary.xsd （此架构用于生成 ESB 路线 SOAP 标头） 的架构的根名称**名称**自变量，并使用作为 SOAP 头的命名空间BizTalk 上下文**Namespace**自变量。  
-  
--   它会从消息上下文中删除原始路线值。  
-  
--   它验证路线，并设置要预设默认值，如果它们处于 null 路线; 的特定属性例如：  
-  
-    -   如果服务计数等于或大于 1，组件会引发异常。  
-  
-    -   该组件设置使用的服务计数，标识符的值的路线根特性 (**Uuid**)、 开始时间 (**BeginTime**)，以及是否这是单向还是双向的请求 (**IsRequestResponse**)。  
-  
-    -   组件验证服务，设置标识符，设置当前服务实例 （使服务能够处理下一步），并验证任何关联的解析程序。  
-  
-    -   该组件设置使用以下属性路线 BizTalk 段：  
-  
-        -   **correlationToken**  
-  
-        -   **reqRespTransmitPipelineID**  
-  
-        -   **interchangeId**  
-  
-        -   **receiveInstanceId**  
-  
-        -   **epmRRCorrelationToken**  
-  
-    -   组件将写入使用系统 Properties.xsd 架构中定义的属性下表中列出的 BizTalk 消息上下文属性的修改后的路线。  
-  
-        |属性|  
-        |----------------|  
-        |**名称 = ItineraryHeader**|  
-        |**Namespace = http://schemas.microsoft.biztalk.practices.esb.com/itinerary/system-properties**|  
-  
-    -   组件提升下使用系统 Properties.xsd 架构中定义的值的表中列出的四个 BizTalk 上下文属性。  
-  
-        |属性|值|  
-        |--------------|-----------|  
-        |**ServiceName**|定义在路线中的当前服务实例的名称。|  
-        |**ServiceType**|设置为**Orchestration**或**消息传送**|  
-        |**IsRequestResponse**|设置为**True**或**False**|  
-        |**ServiceState**|设置为**挂起**|  
-  
-## <a name="esb-dispatcher-pipeline-component-process-steps"></a>ESB 调度程序管道组件过程步骤  
+
+- 它会读取路线 SOAP 标头。 提交的参与方的时他或她将消息提交将填充 SOAP 标头来设置路线。 BizTalk 消息上下文属性的一系列表示 SOAP 标头;这些属性会有所不同，具体取决于所使用的 Web 服务适配器类型。 以下是相关的 Web 服务适配器：  
+
+  - **WCF 适配器。** 此适配器将分析 SOAP 标头，并填充下表中列出的 BizTalk 消息上下文属性。  
+
+
+    |                                  属性                                  |
+    |------------------------------------------------------------------------------|
+    |                             **名称 = 路线**                             |
+    | **Namespace = http://schemas.microsoft.biztalk.practices.esb.com/itinerary** |
+
+    > [!NOTE]
+    >  默认情况下，Windows Communication Foundation (WCF) 适配器使用名为的 ItineraryDescription.xsd （此架构用于生成 ESB 路线 SOAP 标头） 的架构的根名称作为 BizTalk 上下文**名称**参数，并作为 BizTalk 上下文使用的架构的目标命名空间**Namespace**参数。  
+
+  - **SOAP 适配器。** 此适配器将分析 SOAP 标头，并填充下表中列出的 BizTalk 消息上下文属性。  
+
+
+    |                              属性                              |
+    |----------------------------------------------------------------------|
+    |                         **名称 = 路线**                         |
+    | **Namespace = http://schemas.microsoft.com/BizTalk/2003/SOAPHeader** |
+
+    > [!NOTE]
+    >  默认情况下，SOAP 适配器使用名为的 Itinerary.xsd （此架构用于生成 ESB 路线 SOAP 标头） 的架构的根名称作为 BizTalk 上下文**名称**参数，并使用作为 SOAP 标头的命名空间BizTalk 上下文**Namespace**参数。  
+
+- 它从消息上下文中删除原始的路线值。  
+
+- 它验证路线并设置特定属性来预设的默认值，如果它们处于 null 路线;例如：  
+
+  - 如果服务计数小于 1，组件会引发异常。  
+
+  - 该组件设置使用的服务计数，该标识符的值的路线根属性 (**Uuid**)、 开始时间 (**BeginTime**)，以及是否这是单向还是双向的请求 (**IsRequestResponse**)。  
+
+  - 该组件验证服务，设置的标识符，设置当前服务实例 （服务才能处理下一步），并验证任何关联的冲突解决程序。  
+
+  - 该组件设置 BizTalk 段的路线使用以下属性：  
+
+    -   **correlationToken**  
+
+    -   **reqRespTransmitPipelineID**  
+
+    -   **interchangeId**  
+
+    -   **receiveInstanceId**  
+
+    -   **epmRRCorrelationToken**  
+
+  - 该组件将修改后的旅行计划写入到下使用系统 Properties.xsd 架构中定义的属性的表中列出的 BizTalk 消息上下文属性。  
+
+
+    |                                           属性                                           |
+    |------------------------------------------------------------------------------------------------|
+    |                                   **名称 = ItineraryHeader**                                   |
+    | **Namespace = http://schemas.microsoft.biztalk.practices.esb.com/itinerary/system-properties** |
+
+
+  - 组件会升级系统 Properties.xsd 架构中定义的值使用下表中列出的四个 BizTalk 上下文属性。  
+
+    |“属性”|ReplTest1|  
+    |--------------|-----------|  
+    |**ServiceName**|在路线中定义的当前服务实例的名称。|  
+    |**服务类型**|设置为**业务流程**或**消息传送**|  
+    |**IsRequestResponse**|设置为 **，则返回 True**或**False**|  
+    |**ServiceState**|设置为**挂起**|  
+
+## <a name="esb-dispatcher-pipeline-component-process-steps"></a>ESB 调度程序管道组件处理步骤  
  在图 1 所示示例中，ESB 调度程序管道组件执行以下步骤：  
-  
--   它管理的类型的任何路线步骤执行**消息**并提升路线。 位置识别并执行逻辑在消息处理周期，可能是根据其位置 ESB 调度程序组件**接收入站，发送传输**，**发送入站**，或**接收出站**。 ESB 调度程序管道组件调用路线 ESB Esb.config 文件中指定的消息传递服务。 默认情况下，此组件用于路由和转换的配置属性是与以下服务：  
-  
-    -   **Microsoft.Practices.ESB.Services.Transform。** 此服务执行对入站消息的负载的 BizTalk 映射。 服务验证转换要求，并更新包含文档的规范名称和消息类型的 BizTalk 上下文属性。 这是转换服务的名称，因为它将出现在 ESB 调度程序管道组件的相应属性，ESB 调度程序就会执行此服务。  
-  
-    -   **Microsoft.Practices.ESB.Services.Routing。** 此服务使用的解析程序和适配器提供程序框架设置相应的终结点路由信息。 这是路由服务的名称，因为它将出现在 ESB 调度程序管道组件的相应属性，ESB 调度程序就会执行此服务。
+
+- 它管理的类型的任何路线步骤执行**Messaging** ，并将提升路线。 ESB 调度程序组件是位置感知，执行消息传送处理周期，可能是根据其位置的逻辑**接收的入站、 发送传输**，**发送入站**，或**接收出站**。 ESB 调度程序管道组件调用 ESB 路线消息传递服务 Esb.config 文件中指定。 默认情况下，此组件用于路由和转换的配置属性相关联与以下服务：  
+
+  - **Microsoft.Practices.ESB.Services.Transform。** 此服务执行针对入站消息的负载的 BizTalk 映射。 服务验证转换要求并更新包含该文档规范名称和消息类型的 BizTalk 上下文属性。 ESB 调度程序管道组件的相应属性中所示，这是转换服务的名称，ESB 调度程序就会执行此服务。  
+
+  - <strong>Microsoft.Practices.ESB.Services.Routing。</strong>此服务使用的冲突解决程序和适配器提供程序框架设置相应的终结点路由信息。 ESB 调度程序管道组件的相应属性中所示，这是路由服务的名称，ESB 调度程序就会执行此服务。

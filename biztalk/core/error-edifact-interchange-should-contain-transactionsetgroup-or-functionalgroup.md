@@ -1,5 +1,5 @@
 ---
-title: Edifact 交换应具有包含 TransactionSetGroup 或 FunctionalGroup Xml 标记 |Microsoft 文档
+title: Edifact 交换应该包含 TransactionSetGroup 或 FunctionalGroup Xml 标记 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: adb93582daf235a7f1f0633231e536f3c5b14ab0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f5736a9146a88dd9c9dac6747e381fccc88f18d9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240101"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36979326"
 ---
 # <a name="edifact-interchange-should-have-contained-transactionsetgroup-or-functionalgroup-xml-tags"></a>Edifact 交换应该包含 TransactionSetGroup 或 FunctionalGroup Xml 标记
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|EDI 引擎|  
-|符号名称|-|  
-|消息正文|Edifact 交换应该包含 TransactionSetGroup 或 FunctionalGroup Xml 标记|  
+|                 |                                                                                           |
+|-----------------|-------------------------------------------------------------------------------------------|
+|  产品名称   |    [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]     |
+| 产品版本 |                [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                 |
+|    事件 ID     |                                             -                                             |
+|  事件源   |  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI   |
+|    组件    |                                        EDI 引擎                                         |
+|  符号名称  |                                             -                                             |
+|  消息正文   | Edifact 交换应该包含 TransactionSetGroup 或 FunctionalGroup Xml 标记 |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明发送管道无法处理保留的 EDIFACT 批处理交换，因为该交换的 XML 文件中不包含 TransactionSetGroup 或 FunctionalGroup 标记。  

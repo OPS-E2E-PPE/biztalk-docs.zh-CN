@@ -1,5 +1,5 @@
 ---
-title: 来宾设置达到可接受的 Edifact 交换控制编号的最大限制 |Microsoft 文档
+title: 已达到可接受 Edifact 交换控制编号的最大限制来宾设置 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6dc8110f9aa9a48e098f970383b65266cc544c19
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f5063f4c62bdc32c84209d8b556b4778be4b6fd5
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241525"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36980486"
 ---
 # <a name="max-limit-of-acceptable-edifact-interchange-control-number-has-reached-for-guest-settings"></a>已达到“来宾”设置的可接受 EDIFACT 交换控制编号最大限制
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]|  
-|事件 ID|-|  
-|事件源|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI|  
-|组件|EDI 引擎|  
-|符号名称|GlobalEdifactUnbNumberError|  
-|消息正文|已达到“来宾”设置的可接受 Edifact 交换控制编号最大限制。 导航到“全局”配置接收方角色屏幕、合作伙伴协议管理器中的字段 UNB 5 可重置计数器|  
+|                 |                                                                                                                                                                                                               |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                                              [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]                                                               |
+| 产品版本 |                                                                          [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]                                                                           |
+|    事件 ID     |                                                                                                       -                                                                                                       |
+|  事件源   |                                                            [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                                                             |
+|    组件    |                                                                                                  EDI 引擎                                                                                                   |
+|  符号名称  |                                                                                          GlobalEdifactUnbNumberError                                                                                          |
+|  消息正文   | 已达到“来宾”设置的可接受 Edifact 交换控制编号最大限制。 导航到“全局”配置接收方角色屏幕、合作伙伴协议管理器中的字段 UNB 5 可重置计数器 |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明发送管道无法处理传出的交换，因为在全局设置中指定的 ISA13 字段中的交换控制编号（具体来说就是字段 UNB5.2 中的参考编号）大于所允许的最大值。 所允许的交换控制编号的最大值取决于 UNB5 中三个字段的值。 最大字符数是 14（对于字段 UNB5.2 中的参考编号）、13（对于 UNB5.1 中的前缀）、13（对于 UNB5.3 中的后缀）以及 14（对于所有三个字段的组合）。  

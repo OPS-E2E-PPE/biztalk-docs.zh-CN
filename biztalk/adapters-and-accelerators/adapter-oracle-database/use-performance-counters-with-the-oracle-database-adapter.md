@@ -1,5 +1,5 @@
 ---
-title: 使用 Oracle 数据库适配器使用性能计数器 |Microsoft 文档
+title: 使用 Oracle 数据库适配器的性能计数器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,18 +17,18 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ce36fe948daeb89d8fc248dbe33191aa69cdd9ec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: eb1137487a87532f015bd9edbf20b95b5e493e77
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22215181"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36978542"
 ---
-# <a name="use-performance-counters-with-the-oracle-database-adapter"></a>使用与 Oracle 数据库适配器的性能计数器
-Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]客户端可以使用性能计数器来测量的适配器的性能。 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装程序创建性能计数器类别**针对 Oracle 数据库的 BizTalk.NET 适配器**以及安装[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。  
+# <a name="use-performance-counters-with-the-oracle-database-adapter"></a>使用性能计数器与 Oracle 数据库适配器
+Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]客户端可以使用性能计数器来测量的适配器的性能。 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装程序创建的性能计数器类别**BizTalk Oracle DB 的.NET 适配器**以及安装[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。  
   
-## <a name="lob-time-cumulative-performance-counter"></a>LOB （累积） Time 性能计数器  
- **针对 Oracle 数据库的 BizTalk.NET 适配器**类别都有一个性能计数器"LOB 次调用 （的累积）。" 此性能计数器表示的时间，以毫秒为单位，LOB 客户端库所需完成操作时引发了适配器。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]以下模式中的任意创建性能计数器的实例：  
+## <a name="lob-time-cumulative-performance-counter"></a>LOB Time （累积） 性能计数器  
+ **Oracle DB 的 BizTalk.NET 适配器**类别都有一个名为性能计数器"LOB 时间 （累积）。" 此性能计数器表示的时间，以毫秒为单位，LOB 客户端库所需完成某项操作，适配器启动的。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]以下模式中的任意创建性能计数器的实例：  
   
 ```  
 <process id>:<app domain id>:<oracle data source>:<string>  
@@ -36,26 +36,26 @@ Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.
   
  其中可能是"string":  
   
--   Connection.Open  
+- Connection.Open  
   
--   Connection.Close  
+- Connection.Close  
   
--   元数据  
+- 元数据  
   
--   消息操作。 例如，如果操作是`http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Insert`则字符串将 SCOTT。Table.EMP.Insert。  
+- 消息操作。 例如，如果操作为`http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Insert`字符串将为 SCOTT。Table.EMP.Insert。  
   
- Oracle 数据源是与指定连接 URI 中相同。  
+  Oracle 数据源是与指定连接 URI 中相同。  
   
- 仅在该适配器进行首次调用到 Oracle 数据库后初始化性能计数器。 此外，性能计数器的 InstanceLifetime 属性设置为进程，这意味着性能计数器停止存在就会立即创建计数器在程序终止。 有关详细信息`InstanceLifetime property`，请参阅[http://go.microsoft.com/fwlink/p/?LinkId=104181](http://go.microsoft.com/fwlink/p/?LinkId=104181)。  
+  仅在该适配器进行首次调用到 Oracle 数据库后初始化性能计数器。 此外，性能计数器的 InstanceLifetime 属性设置为进程，这意味着，性能计数器将不再存在就立即创建计数器程序终止。 有关详细信息`InstanceLifetime property`，请参阅[ http://go.microsoft.com/fwlink/p/?LinkId=104181 ](http://go.microsoft.com/fwlink/p/?LinkId=104181)。  
   
 > [!NOTE]
->  LOB Time （的累积） 性能计数器的精度为 16 毫秒。  
+>  LOB Time （累积） 性能计数器的精度为 16 毫秒。  
   
 ## <a name="enabling-performance-counters"></a>启用性能计数器  
- 性能计数器可以启用或禁用通过设置绑定属性**EnablePerformanceCounters**。 若要启用性能计数器，设置**EnablePerformanceCounters**属性绑定到**True**。 若要禁用性能计数器，设置**EnablePerformanceCounters**到**False**。 默认情况下， **EnablePerformanceCounters**设置为**False**。  
+ 可以启用或禁用通过设置绑定属性的性能计数器**EnablePerformanceCounters**。 若要启用性能计数器，设置**EnablePerformanceCounters**属性绑定到**True**。 若要禁用性能计数器，设置**EnablePerformanceCounters**到**False**。 默认情况下**EnablePerformanceCounters**设置为**False**。  
   
 ## <a name="performance-counters-and-the-wcf-lob-adapter-sdk"></a>性能计数器和 WCF LOB 适配器 SDK  
- 更改的值**EnablePerformanceCounters**还绑定属性的相应性能计数器的值更改[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。 此外，绑定属性[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]是静态的而，对于[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]是动态的。 因此，如果有两个实例的[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]AppDomain 中中的绑定和**EnablePerformanceCounters**绑定属性设置为**True**之一中和**False**中另一个，其中一个中启用和禁用另一部分中特定于适配器的性能计数器。 但是，因为绑定属性[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]是静态的它将设置为**True**或**False**具体取决于上次指定哪些值。  
+ 更改的值**EnablePerformanceCounters**也绑定属性更改为相应的性能计数器的值[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。 此外，有关的绑定属性[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]是静态的而，对于[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]是动态的。 因此，如果有两个实例[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]AppDomain 中的绑定和**EnablePerformanceCounters**绑定属性设置为**True**一个中和**False**中，一个中启用和禁用中的其他特定于适配器的性能计数器。 但是，因为绑定属性[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]是静态的它将设置为**True**或**False**具体取决于上一次指定哪些值。  
   
-## <a name="see-also"></a>另请参阅  
-[对 Oracle 数据库适配器进行故障排除](../../adapters-and-accelerators/adapter-oracle-database/troubleshoot-the-oracle-database-adapter.md)
+## <a name="see-also"></a>请参阅  
+[Oracle 数据库适配器疑难解答](../../adapters-and-accelerators/adapter-oracle-database/troubleshoot-the-oracle-database-adapter.md)

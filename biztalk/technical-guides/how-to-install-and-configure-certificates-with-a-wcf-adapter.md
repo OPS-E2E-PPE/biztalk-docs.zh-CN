@@ -1,5 +1,5 @@
 ---
-title: 如何安装和配置证书与 WCF 适配器 |Microsoft 文档
+title: 如何安装和使用 WCF 适配器配置证书 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1dbb67c1bf6547aa72c5bc877ee6acb7d895a7ac
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d32b96dedce766ab0383b70d561fa4bae2c70262
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22298653"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36970430"
 ---
-# <a name="how-to-install-and-configure-certificates-with-a-wcf-adapter"></a>如何安装和配置证书与 WCF 适配器
-有关安装和使用 WCF 适配器配置证书的信息，请参阅[安装证书的 WCF 适配器](http://go.microsoft.com/fwlink/?LinkId=155204)(http://go.microsoft.com/fwlink/?LinkId=155204) 中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助。  
+# <a name="how-to-install-and-configure-certificates-with-a-wcf-adapter"></a>如何安装和使用 WCF 适配器配置证书
+有关安装和使用 WCF 适配器配置证书的信息，请参阅[安装用于 WCF 适配器的证书](http://go.microsoft.com/fwlink/?LinkId=155204)(<http://go.microsoft.com/fwlink/?LinkId=155204>) 中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助。  
   
-## <a name="see-also"></a>另请参阅  
- [如何配置 WCF BasicHttp 发送端口](http://go.microsoft.com/fwlink/?LinkId=155206)   
- [如何配置 WCF BasicHttp 接收位置](http://go.microsoft.com/fwlink/?LinkId=155207)   
- [如何配置 WCF NetMsmq 发送端口](http://go.microsoft.com/fwlink/?LinkId=155208)   
- [如何配置 WCF NetMsmq 接收位置](http://go.microsoft.com/fwlink/?LinkId=155209)   
- [如何配置 WCF NetTcp 发送端口](http://go.microsoft.com/fwlink/?LinkId=155210)   
- [如何配置 WCF NetTcp 接收位置](http://go.microsoft.com/fwlink/?LinkId=155211)   
- [如何配置 WCF WSHttp 发送端口](http://go.microsoft.com/fwlink/?LinkId=155212)   
- [如何配置 WCF WSHttp 接收位置](http://go.microsoft.com/fwlink/?LinkId=155215)
+## <a name="see-also"></a>请参阅  
+ [如何配置 Wcf-basichttp 发送端口](http://go.microsoft.com/fwlink/?LinkId=155206)   
+ [如何配置 Wcf-basichttp 接收位置](http://go.microsoft.com/fwlink/?LinkId=155207)   
+ [如何配置 Wcf-netmsmq 发送端口](http://go.microsoft.com/fwlink/?LinkId=155208)   
+ [如何配置 Wcf-netmsmq 接收位置](http://go.microsoft.com/fwlink/?LinkId=155209)   
+ [如何配置 Wcf-nettcp 发送端口](http://go.microsoft.com/fwlink/?LinkId=155210)   
+ [如何配置 Wcf-nettcp 接收位置](http://go.microsoft.com/fwlink/?LinkId=155211)   
+ [如何配置 Wcf-wshttp 发送端口](http://go.microsoft.com/fwlink/?LinkId=155212)   
+ [如何配置 Wcf-wshttp 接收位置](http://go.microsoft.com/fwlink/?LinkId=155215)

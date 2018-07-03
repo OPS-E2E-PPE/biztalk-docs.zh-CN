@@ -1,5 +1,5 @@
 ---
-title: 处理字符串 Values1 |Microsoft 文档
+title: 处理字符串 Values1 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,12 +17,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6f32b29b9a8688fe8402730c1db8f12e42a67bab
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 51397965a416169c8f71ffef8d9466f99f30c093
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "22246677"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36988910"
 ---
 # <a name="handling-string-values"></a>处理字符串值
 本主题介绍如何将某些字符串参数配置为右对齐（并向左填充）。  
@@ -30,15 +30,15 @@ ms.locfileid: "22246677"
 ## <a name="types-of-string-values"></a>字符串值的类型  
  JD Edwards OneWorld 通过互操作性层显示两种字符串值：  
   
--   Char︰ 单个字符  
+- 单个字符的字符：  
   
--   最大长度字符串  
+- 最大长度字符串  
   
- JD Edwards OneWorld 使用匈牙利符号命名业务函数中这些类型的参数。 例如，这些类型的参数以下列字符开头：  
+  JD Edwards OneWorld 使用匈牙利符号命名业务函数中这些类型的参数。 例如，这些类型的参数以下列字符开头：  
   
--   c  
+- c  
   
--   sz  
+- sz  
   
 ### <a name="left-justified-values"></a>左对齐值  
  对于大多数的 sz 类型参数，最大长度的字符串或字符数组，JD Edwards OneWorld 应该为左对齐值。 对于街道地址行，最大长度为 40，JD Edwards OneWorld 最好为（示例）：  
@@ -48,15 +48,15 @@ ms.locfileid: "22246677"
  使用空白填充到长度 40。 您无需输入填充，因为 JD Edwards OneWorld 的 Microsoft BizTalk 适配器将为您提供填充内容。 您只需要在客户端代码中输入“4567 Main St.”。  
   
 ### <a name="right-justified-values"></a>右对齐值  
- 对于此类型的某些子集值，JD Edwards OneWorld 预期值右对齐，左边填充。 例如，对于业务 B4200310 源模块中的函数，参数 szBusinessUnit 是长度为 12。 此自变量表示工厂，例如生产设施。 工厂数 30，参考 Edwards OneWorld XE 需要的值︰  
+ 对于此类型的某些子集值，JD Edwards OneWorld 预期值右对齐，左边填充。 例如，对于 B4200310 源模块中的业务函数，参数 szBusinessUnit 是长度为 12。 此参数表示工厂，例如生产设施。 为 30，J.D.工厂数 Edwards OneWorld XE 预期值：  
   
  "          30"  
   
- 若要输入一个值，将为右对齐，必须在名为 jdearglist.txt 输入参数。 生成架构时读取 jdearglist.txt。 此文本文件中列出的任何值都会自动转化为右对齐的值，并且填充在左边空白区域。  
+ 若要输入一个值，将为右对齐，必须在称为 jdearglist.txt 文件中输入参数。 生成架构时将读取 jdearglist.txt。 此文本文件中列出的任何值都会自动转化为右对齐的值，并且填充在左边空白区域。  
   
- 必须创建 jdearglist.txt 使用文本编辑器中，项描述这些参数，并将其保存在以下文件夹︰ %BizTalk_Install_Adapter%\config\JDE\  
+ 必须创建 jdearglist.txt 使用文本编辑器中，具有条目描述这些参数，并将其保存在以下文件夹中： %BizTalk_Install_Adapter%\config\JDE\  
   
- 其中 **%biztalk_install_adapter%** 是在其中你安装的 BizTalk Adapter for 博士 Edwards OneWorld 的目录。  
+ 其中 **%biztalk_install_adapter%** 是适用于 JD Edwards OneWorld 安装 BizTalk 适配器的目录。  
   
  如果此文件不存在或为空，当适配器首次打开时，信息性消息将出现在 JD Edwards OneWorld 的 BizTalk 适配器日志中。  
   
@@ -86,6 +86,6 @@ B4200310.*.szBusinessUnit
 > [!NOTE]
 >  当将 JD Edwards OneWorld 业务进程导入到另一台计算机中时，您必须手动复制 jdearglist.txt。  
   
-## <a name="see-also"></a>另请参阅  
- [设置字符串理由 Jdearglist 中](../core/setting-string-justification-in-jdearglist.md)   
+## <a name="see-also"></a>请参阅  
+ [在 Jdearglist 中设置字符串对齐](../core/setting-string-justification-in-jdearglist.md)   
  [附录 A：数据类型](../core/appendix-a-data-types.md)

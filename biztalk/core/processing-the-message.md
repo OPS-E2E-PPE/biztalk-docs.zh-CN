@@ -1,5 +1,5 @@
 ---
-title: 处理消息 |Microsoft 文档
+title: 处理消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -26,12 +26,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 829fffc773bfc19100ad03448baf68b5846996f7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 49329e23127f051a593596955f808cc879dd76f6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22266485"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36987782"
 ---
 # <a name="processing-the-message"></a>处理消息
 当消息在 BizTalk Server 中传输时，到目前为止我们所介绍的所有组件在消息的处理过程中均发挥了一定的作用。 本部分将提供有关这些组件如何在功能上交互的更详细信息（从接收消息开始）。 下图显示了接收端口的组成部分以及消息流将如何通过接收进程。  
@@ -51,7 +51,7 @@ ms.locfileid: "22266485"
  *拆装器* 的工作是处理来自适配器的传入消息并将其拆装成多个消息，以及对消息数据进行解析。 在传入消息具有多个较小的消息时，称为 *交换*。 通过使开发人员能够配置与包装内容（即，平面文件拆装器的头部架构和尾部架构以及 XML 拆装器的信封架构）以及（可能重复）正文内容有关的信息，平面文件拆装器和 XML 拆装器可以处理交换。 此外，这两种拆装器都可将原始消息解析为 XML 内容。 如果在 BizTalk Server 中不需要做进一步的 XML 处理，则自定义拆装器无需将内容解析为 XML。 示例方案包括简单的路由方案，在此方案中，在特定接收位置进入系统的消息将发送到不具有映射或其他基于 XML 的处理的特定发送端口。  
   
 ## <a name="routing-with-the-message-type"></a>具有消息类型的路由  
- 在路由中使用的最常见消息属性之一为消息类型。 在开发人员创建架构以定义消息的结构后，此架构将定义该消息的类型。 类型由架构定义中的根节点和命名空间确定。 例如，如下 XML 文档可能具有消息类型 http://tempuri.org/samples/MessageType#Message  
+ 在路由中使用的最常见消息属性之一为消息类型。 在开发人员创建架构以定义消息的结构后，此架构将定义该消息的类型。 类型由架构定义中的根节点和命名空间确定。 例如，类似于下面的 XML 文档将具有消息类型 http://tempuri.org/samples/MessageType#Message  
   
 ```  
 <Message xmlns=http://tempuri.org/samples/MessageType>  
@@ -67,17 +67,17 @@ ms.locfileid: "22266485"
   
  还可以编写自定义管道组件，以便将接收或发送的消息中任意数据的属性放入上下文。 若要将属性升级到上下文并可用于路由（这可能是升级值的原因），则应创建具有属性定义的属性架构并将其部署到 BizTalk Server。 在定义由自定义组件使用的属性架构前，应首先了解升级属性的各种类型。 在属性架构中定义的升级属性具有以下两种基本类型之一：  
   
--   [Microsoft.XLANGs.BaseTypes.MessageContextPropertyBase](http://msdn.microsoft.com/library/microsoft.xlangs.basetypes.messagecontextpropertybase.aspx) 或  
+- [Microsoft.XLANGs.BaseTypes.MessageContextPropertyBase](http://msdn.microsoft.com/library/microsoft.xlangs.basetypes.messagecontextpropertybase.aspx) 或  
   
--   [Microsoft.XLANGs.BaseTypes.MessageDataPropertyBase](http://msdn.microsoft.com/library/microsoft.xlangs.basetypes.messagedatapropertybase.messagedatapropertybase.aspx)  
+- [Microsoft.XLANGs.BaseTypes.MessageDataPropertyBase](http://msdn.microsoft.com/library/microsoft.xlangs.basetypes.messagedatapropertybase.messagedatapropertybase.aspx)  
   
- 具有基本类型 MessageDataPropertyBase 的属性表示此属性的值来自消息的内容。 这是在属性架构中定义的属性的默认值，并且最常用。 而 MessageContextPropertyBase 则表示属性属于消息上下文，但不必直接来自消息数据。 以 MessageContextPropertyBase 作为其基本类型的属性通常由适配器和拆装器升级，并包含通用属性（例如，消息类型和适配器类型）。  
+  具有基本类型 MessageDataPropertyBase 的属性表示此属性的值来自消息的内容。 这是在属性架构中定义的属性的默认值，并且最常用。 而 MessageContextPropertyBase 则表示属性属于消息上下文，但不必直接来自消息数据。 以 MessageContextPropertyBase 作为其基本类型的属性通常由适配器和拆装器升级，并包含通用属性（例如，消息类型和适配器类型）。  
   
- 了解属性的各种类型并在定义属性时适当使用这些类型十分重要。 而对于在业务流程中访问消息的上下文属性时，了解这一点尤为重要。 如果属性标识为 MessageDataPropertyBase，则业务流程设计器将检查要接收消息的架构，并确保该架构定义了匹配的升级属性。 如果在与要访问的升级属性相关联的架构中没有找到任何属性，则设计器将不允许对其进行访问。 相反，如果该属性定义为 MessageContextPropertyBase，则该消息类型将不起作用并可访问该属性。  
+  了解属性的各种类型并在定义属性时适当使用这些类型十分重要。 而对于在业务流程中访问消息的上下文属性时，了解这一点尤为重要。 如果属性标识为 MessageDataPropertyBase，则业务流程设计器将检查要接收消息的架构，并确保该架构定义了匹配的升级属性。 如果在与要访问的升级属性相关联的架构中没有找到任何属性，则设计器将不允许对其进行访问。 相反，如果该属性定义为 MessageContextPropertyBase，则该消息类型将不起作用并可访问该属性。  
   
- 在自定义管道中，将属性升级或写入到上下文的机制非常相似。 对于写入属性，可通过调用 IBaseMessageContext.Write 方法将值放置在上下文中。 而对于已升级属性，只需使用 IBaseMessageContext.Promote 方法。 上述每种方法均采用属性名称、命名空间和值。 对于升级属性，名称和命名空间为属性架构中定义的属性的名称和命名空间，并可通过引用属性架构程序集和使用为属性创建的类上的属性，更轻松地对其进行访问。 而可分辨字段则使用公共命名空间 http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields，并且用于检索值的 XPath 表达式通常用作名称。  
+  在自定义管道中，将属性升级或写入到上下文的机制非常相似。 对于写入属性，可通过调用 IBaseMessageContext.Write 方法将值放置在上下文中。 而对于已升级属性，只需使用 IBaseMessageContext.Promote 方法。 上述每种方法均采用属性名称、命名空间和值。 对于升级属性，名称和命名空间为属性架构中定义的属性的名称和命名空间，并可通过引用属性架构程序集和使用为属性创建的类上的属性，更轻松地对其进行访问。 可分辨的字段使用公共命名空间， http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields，和用于检索值的 XPath 表达式通常用作名称。  
   
- 下面的代码显示了将属性升级和写入到上下文的示例。 请注意，在此示例中，可分辨字段将写入到上下文中。 这只适用于以下类型的业务流程：在该业务流程中，消息架构将标识可分辨字段以便业务流程设计器了解该字段。 将属性写入到上下文中有助于接收或发送端上的其他管道组件使用这些属性。  
+  下面的代码显示了将属性升级和写入到上下文的示例。 请注意，在此示例中，可分辨字段将写入到上下文中。 这只适用于以下类型的业务流程：在该业务流程中，消息架构将标识可分辨字段以便业务流程设计器了解该字段。 将属性写入到上下文中有助于接收或发送端上的其他管道组件使用这些属性。  
   
 ```  
 //create an instance of the property to be promoted  
@@ -96,18 +96,18 @@ pInMsg.Context.Write("theDistinguishedProperty",
   
  在将值写入或升级到上下文中时请注意以下事实：  
   
--   如果使用先前曾用于升级属性的同一名称和命名空间将值写入到上下文中，将导致无法再升级该属性。 写入的内容将从根本上覆盖升级的内容。  
+- 如果使用先前曾用于升级属性的同一名称和命名空间将值写入到上下文中，将导致无法再升级该属性。 写入的内容将从根本上覆盖升级的内容。  
   
--   将空值写入到上下文中将删除该值，因为不允许使用空值属性。  
+- 将空值写入到上下文中将删除该值，因为不允许使用空值属性。  
   
--   升级属性的长度限制在 256 个字符之内，而写入属性则没有长度上的限制。  
+- 升级属性的长度限制在 256 个字符之内，而写入属性则没有长度上的限制。  
   
- 升级属性用于消息路由，并由于有关比较和存储效率的原因，对升级属性的大小有所限制。 尽管对写入属性的大小没有硬性限制，但如果在上下文中使用过大的值，也会对性能造成影响，因为这些值仍必须与消息一起进行处理和传递。  
+  升级属性用于消息路由，并由于有关比较和存储效率的原因，对升级属性的大小有所限制。 尽管对写入属性的大小没有硬性限制，但如果在上下文中使用过大的值，也会对性能造成影响，因为这些值仍必须与消息一起进行处理和传递。  
   
- 在消息准备从 BizTalk Server 发送时，它将在发送端口中经历一个互补的过程。 映射将在发送管道执行前应用于消息，从而，消息在由管道处理并通过适配器发送前转换为特定于客户或应用程序的格式。 在发送管道中，属性将从上下文降级到消息中，而非升级到消息上下文中。  
+  在消息准备从 BizTalk Server 发送时，它将在发送端口中经历一个互补的过程。 映射将在发送管道执行前应用于消息，从而，消息在由管道处理并通过适配器发送前转换为特定于客户或应用程序的格式。 在发送管道中，属性将从上下文降级到消息中，而非升级到消息上下文中。  
   
- ![发送端口，并发送管道过程](../core/media/arch-message-processing-2.gif "arch_message_processing 2")  
+  ![发送端口和发送管道进程](../core/media/arch-message-processing-2.gif "arch_message_processing-2")  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [运行时体系结构](../core/runtime-architecture.md)   
  [BizTalk Server 如何处理大消息](../core/how-biztalk-server-processes-large-messages.md)

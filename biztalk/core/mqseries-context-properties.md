@@ -1,5 +1,5 @@
 ---
-title: MQSeries 上下文属性 |Microsoft 文档
+title: MQSeries 上下文属性 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -84,19 +84,19 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d27309379fac2c4821251f27fd2aa5a6e9d59418
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 684fad8e1a417e9faf7127a81a4e8f7d6f10e630
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22266621"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36976590"
 ---
 # <a name="mqseries-context-properties"></a>MQSeries 上下文属性
 MQSeries 适配器提供了一组特定于 MQSeries 的上下文属性以供您在应用程序中使用。 您可以在筛选表达式和业务流程中使用这些属性。  
   
  对于以绑定到 MQSeries 适配器的发送端口为目标的消息，若要将 MQSeries 上下文属性分配给此类消息，请使用消息赋值运算符，并在 MQSeries 命名空间中指定可用的上下文属性之一。  
   
- 以下是一种设置 MQSeries **MQMD_UserIdentifier**属性：  
+ 下面是设置 MQSeries 的示例**MQMD_UserIdentifier**属性：  
   
 ```  
 Message_2(MQSeries.MQMD_UserIdentifier) = "MeMyselfAndI";  
@@ -110,18 +110,18 @@ Message_2(MQSeries.MQMD_UserIdentifier) = "MeMyselfAndI";
   
  下表显示了可用的消息描述符（MQMD 结构）属性的完整集以及其对应的类型和值：  
   
-|Name|类型|长度|值|  
+|“属性”|类型|长度|ReplTest1|  
 |----------|----------|------------|-----------|  
 |**MQMD_AccountingToken**|string|64|十六进制字符串|  
 |**MQMD_ApplIdentityData**|string|32|十六进制字符串|  
-|**MQMD_ApplOriginData**|string|4|字符串<br /><br /> **默认值：** 空间|  
+|**MQMD_ApplOriginData**|string|4|String<br /><br /> **默认值：** 空间|  
 |**MQMD_BackoutCount**|unsigned int|4|Number<br /><br /> 只读<br /><br /> **默认值：** 0|  
 |**MQMD_CodedCharSetId**|unsigned int|4|Number<br /><br /> **默认值：** 0|  
 |**MQMD_CorrelId**|string|48|十六进制字符串|  
 |**MQMD_Encoding**|unsigned int|4|Number<br /><br /> 使用头文件值。 **默认值：** 0|  
 |**MQMD_Expiry**|unsigned int|4|Number|  
 |**MQMD_Feedback**|unsigned int|4|Number<br /><br /> 使用头文件值。 **默认值：** 0|  
-|**MQMD_Format**|string|8|字符串<br /><br /> 如果此属性设置为 MQXMIT，则应确保 MQXQH 属性具有相应值。|  
+|**MQMD_Format**|string|8|String<br /><br /> 如果此属性设置为 MQXMIT，则应确保 MQXQH 属性具有相应值。|  
 |**MQMD_GroupID**|string|48|十六进制字符串|  
 |**MQMD_MsgFlags**|unsigned int|4|Number<br /><br /> 使用头文件值。 **默认值：** 0|  
 |**MQMD_MsgId**|string|48|十六进制字符串|  
@@ -131,76 +131,76 @@ Message_2(MQSeries.MQMD_UserIdentifier) = "MeMyselfAndI";
 |**MQMD_OriginalLength**|unsigned int|4||  
 |**MQMD_Persistence**|unsigned int|4|Number<br /><br /> 使用头文件值。|  
 |**MQMD_Priority**|unsigned int|4|Number|  
-|**MQMD_PutApplName**|string|28|字符串<br /><br /> **默认值：** 空间|  
+|**MQMD_PutApplName**|string|28|String<br /><br /> **默认值：** 空间|  
 |**MQMD_PutApplType**|unsigned int|4|Number<br /><br /> 使用头文件值。 **默认值：** 0|  
-|**MQMD_PutDate**|string|8|日期|  
+|**MQMD_PutDate**|string|8|date|  
 |**MQMD_PutTime**|string|8|Time|  
-|**MQMD_ReplyToQ**|string|48|字符串<br /><br /> **默认值：** 空间|  
-|**MQMD_ReplyToQMgr**|string|48|字符串<br /><br /> **默认值：** 空间|  
+|**MQMD_ReplyToQ**|string|48|String<br /><br /> **默认值：** 空间|  
+|**MQMD_ReplyToQMgr**|string|48|String<br /><br /> **默认值：** 空间|  
 |**MQMD_Report**|unsigned int|4|Number<br /><br /> 使用头文件值。|  
-|**MQMD_UserIdentifier**|string|12|字符串<br /><br /> 当你使用包含用户标识符**SSOAffiliateApplication**属性。|  
+|**MQMD_UserIdentifier**|string|12|String<br /><br /> 当你使用时，包含用户标识符**SSOAffiliateApplication**属性。|  
   
- 在直接从 MQSeries 传输队列中接收消息时，MQSeries 适配器将设置该传输队列标头属性（MQXQH 数据结构）的格式，并将其放置在其对应的上下文属性中。 当直接向 MQSeries 传输队列发送消息，格式化和从相应的上下文属性仅当分配值的标头属性**MQMD_Format**属性具有 MQXMIT 的值。 下表介绍的属性。  
+ 在直接从 MQSeries 传输队列中接收消息时，MQSeries 适配器将设置该传输队列标头属性（MQXQH 数据结构）的格式，并将其放置在其对应的上下文属性中。 当直接向 MQSeries 传输队列发送消息，标头属性被格式化，并从相应的上下文属性仅当分配值**MQMD_Format**属性具有值为 mqxmit 时。 下表介绍的属性。  
   
-|Name|类型|长度|值|  
+|“属性”|类型|长度|ReplTest1|  
 |----------|----------|------------|-----------|  
 |**MQXQH_RemoteQMgrName**|string|48|string|  
 |**MQXQH_RemoteQName**|string|48|string|  
   
  与本主题前面部分列出的属性一样，该适配器将按照相同的规则填充以下消息描述符值。 该适配器使用 MQXQH_ 而不是 MQMD_ 作为这些属性名的前缀，否则这些属性将直接映射到在消息描述符表中定义的那些属性：  
   
--   **MQXQH_MsgDesc_AccountingToken**  
+- **MQXQH_MsgDesc_AccountingToken**  
   
--   **MQXQH_MsgDesc_ApplIdentityData**  
+- **MQXQH_MsgDesc_ApplIdentityData**  
   
--   **MQXQH_MsgDesc_ApplOriginData**  
+- **MQXQH_MsgDesc_ApplOriginData**  
   
--   **MQXQH_MsgDesc_BackoutCount**  
+- **MQXQH_MsgDesc_BackoutCount**  
   
--   **MQXQH_MsgDesc_CodedCharSetId**  
+- **MQXQH_MsgDesc_CodedCharSetId**  
   
--   **MQXQH_MsgDesc_CorrelId**  
+- **MQXQH_MsgDesc_CorrelId**  
   
--   **MQXQH_MsgDesc_Encoding**  
+- **MQXQH_MsgDesc_Encoding**  
   
--   **MQXQH_MsgDesc_Expiry**  
+- **MQXQH_MsgDesc_Expiry**  
   
--   **MQXQH_MsgDesc_Feedback**  
+- **MQXQH_MsgDesc_Feedback**  
   
--   **MQXQH_MsgDesc_Format**  
+- **MQXQH_MsgDesc_Format**  
   
--   **MQXQH_MsgDesc_MsgId**  
+- **MQXQH_MsgDesc_MsgId**  
   
--   **MQXQH_MsgDesc_MsgType**  
+- **MQXQH_MsgDesc_MsgType**  
   
--   **MQXQH_MsgDesc_Persistence**  
+- **MQXQH_MsgDesc_Persistence**  
   
--   **MQXQH_MsgDesc_Priority**  
+- **MQXQH_MsgDesc_Priority**  
   
--   **MQXQH_MsgDesc_PutApplName**  
+- **MQXQH_MsgDesc_PutApplName**  
   
--   **MQXQH_MsgDesc_PutApplType**  
+- **MQXQH_MsgDesc_PutApplType**  
   
--   **MQXQH_MsgDesc_PutDate**  
+- **MQXQH_MsgDesc_PutDate**  
   
--   **MQXQH_MsgDesc_PutTime**  
+- **MQXQH_MsgDesc_PutTime**  
   
--   **MQXQH_MsgDesc_ReplyToQ**  
+- **MQXQH_MsgDesc_ReplyToQ**  
   
--   **MQXQH_MsgDesc_ReplyToQMgr**  
+- **MQXQH_MsgDesc_ReplyToQMgr**  
   
--   **MQXQH_MsgDesc_Report**  
+- **MQXQH_MsgDesc_Report**  
   
--   **MQXQH_MsgDesc_UserIdentifier**  
+- **MQXQH_MsgDesc_UserIdentifier**  
   
- 属性架构中还包含与 MQSeries 相关的其他属性，这些属性可在筛选表达式中使用。 下表列出了这些属性：  
+  属性架构中还包含与 MQSeries 相关的其他属性，这些属性可在筛选表达式中使用。 下表列出了这些属性：  
   
-|Name|类型|长度|值|  
+|“属性”|类型|长度|ReplTest1|  
 |----------|----------|------------|-----------|  
 |**MQCIH_AbendCode**|string|4||  
 |**MQCIH_ADSDescriptor**|unsigned int|4||  
 |**MQCIH_AttentionId**|string|4||  
-|**MQCIH_Authenticator**|string|8|当你使用设置为 SSO 的密码**SSOAffiliateApplication**属性。 **注意：** 将设置此值为空 MQSeries 适配器 SSO 密码长度超过 8 个字符。|  
+|**MQCIH_Authenticator**|string|8|当你使用设置为 SSO 密码**SSOAffiliateApplication**属性。 **注意：** 此值将设置为空的 MQSeries 适配器，如果 SSO 密码的长度超过 8 个字符。|  
 |**MQCIH_CancelCode**|string|4||  
 |**MQCIH_CompCode**|unsigned int|4||  
 |**MQCIH_ConversationalTask**|unsigned int|4||  
@@ -223,7 +223,7 @@ Message_2(MQSeries.MQMD_UserIdentifier) = "MeMyselfAndI";
 |**MQCIH_TaskEndStatus**|unsigned int|4||  
 |**MQCIH_TransactionId**|string|4||  
 |**MQCIH_UOWControl**|unsigned int|4||  
-|**MQIIH_Authenticator**|string|8|当你使用设置为 SSO 的密码**SSOAffiliateApplication**属性。 **注意：** 将设置此值为空 MQSeries 适配器 SSO 密码长度超过 8 个字符。|  
+|**MQIIH_Authenticator**|string|8|当你使用设置为 SSO 密码**SSOAffiliateApplication**属性。 **注意：** 此值将设置为空的 MQSeries 适配器，如果 SSO 密码的长度超过 8 个字符。|  
 |**MQIIH_CommitMode**|string|||  
 |**MQIIH_Flags**|unsigned int|4||  
 |**MQIIH_Format**|string|||  
@@ -234,7 +234,7 @@ Message_2(MQSeries.MQMD_UserIdentifier) = "MeMyselfAndI";
 |**MQIIH_TranInstanceId**|string|32|十六进制字符串|  
 |**MQIIH_TranState**|string|||  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [MQSeries 适配器属性](../core/mqseries-adapter-properties.md)   
  [与 BizTalk Server 相关的属性](../core/properties-related-to-biztalk-server.md)   
- [数据类型转换的属性](../core/data-type-conversion-of-properties.md)
+ [属性的数据类型转换](../core/data-type-conversion-of-properties.md)

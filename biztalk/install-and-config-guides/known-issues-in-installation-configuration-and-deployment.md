@@ -1,5 +1,5 @@
 ---
-title: 安装、 配置和部署中的已知问题 |Microsoft 文档
+title: 安装、 配置和部署中的已知问题 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cda1bd5c8167bbf9f6049b3620c0c949950b1e89
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 067d579317f9f034c65fe0f23cbf2f2d7f7b77f6
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22299829"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36982646"
 ---
 # <a name="known-issues-in-installation-configuration-and-deployment"></a>安装、配置和部署过程中的已知问题
 ## <a name="some-biztalk-edias2-artifacts-are-still-active-after-unconfiguring"></a>某些 BizTalk EDI/AS2 项目在取消配置后仍处于活动状态  
   
-##### <a name="problem"></a>Problem  
+##### <a name="problem"></a>问题  
  取消对 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的 BizTalk EDI/AS2 功能的配置后，与 EDI 和 AS2 处理相关的某些 BizTalk Server 项目在 BizTalk 组配置的上下文中将仍处于活动状态。 这些项目将包括 EDI 和 AS2 管道以及批处理业务流程。 因此，即使在取消对 BizTalk EDI/AS2 功能的配置后，您仍然能够执行基本的 EDI 和 AS2 处理。  
   
 ##### <a name="cause"></a>原因  
@@ -33,7 +33,7 @@ ms.locfileid: "22299829"
   
 ## <a name="if-the-biztalk-server-computer-or-sql-server-computer-is-renamed-after-biztalk-server-configuration-the-configuration-wizard-will-fail"></a>如果在对 BizTalk Server 进行配置之后重命名了 BizTalk Server 计算机或 SQL Server 计算机，则配置向导将失败  
   
-##### <a name="problem"></a>Problem  
+##### <a name="problem"></a>问题  
  此问题的表现方式有多种：  
   
 -   BizTalk Server 配置可以正确加载“概述”页，但在尝试配置功能时，屏幕上不显示功能选项。  
@@ -52,11 +52,11 @@ ms.locfileid: "22299829"
   
 ### <a name="problem"></a>Problem  
   
--   业务规则配置向导失败，并显示错误“某些组件配置失败，没有为这些组件应用任何设置”。  
+- 业务规则配置向导失败，并显示错误“某些组件配置失败，没有为这些组件应用任何设置”。  
   
--   在已为其成功配置业务规则引擎的 BizTalk Server 计算机上，规则引擎更新服务启动失败并且不能手动启动。  
+- 在已为其成功配置业务规则引擎的 BizTalk Server 计算机上，规则引擎更新服务启动失败并且不能手动启动。  
   
- 出现此问题时，可能会在 BizTalk Server 计算机的应用程序日志中生成与下面类似的错误：  
+  出现此问题时，可能会在 BizTalk Server 计算机的应用程序日志中生成与下面类似的错误：  
   
 ```  
 Service could not be started. : System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it ::1:3132  
@@ -76,11 +76,11 @@ Service could not be started. : System.Net.Sockets.SocketException (10061): No c
  HOSTS 文件位于 %systemroot%\drivers\etc\ 目录中。  
   
 > [!NOTE]
->  有关解决可能来自 SettingsModifier:Win32/PossibleHostsFileHijack 的威胁的 Microsoft 恶意软件防护中心签名更新的详细信息，请参阅 [http://go.microsoft.com/fwlink/?LinkId=146221](http://go.microsoft.com/fwlink/?LinkId=146221)。  
+>  有关解决可能来自 SettingsModifier:Win32 威胁的 Microsoft 恶意软件防护中心签名更新的详细信息 / PossibleHostsFileHijack，请转到[ http://go.microsoft.com/fwlink/?LinkId=146221 ](http://go.microsoft.com/fwlink/?LinkId=146221)。  
   
 ## <a name="enlistment-of-an-orchestration-fails-if-referenced-assemblies-are-missing-from-the-gacmgmt-db"></a>如果 GAC/Mgmt 数据库中缺少引用的程序集，则业务流程登记将失败  
   
-##### <a name="problem"></a>Problem  
+##### <a name="problem"></a>问题  
  如果 GAC/Mgmt 数据库中缺少引用（业务流程中引用的 C# 程序集），则业务流程登记将失败。 在重新部署过程中，可能会需要基于业务流程的现有状态登记业务流程。 如果缺少引用，则部署也会失败。  
   
 ##### <a name="cause"></a>原因  

@@ -1,5 +1,5 @@
 ---
-title: Oracle E-business Suite 适配器支持哪些操作 |Microsoft 文档
+title: Oracle E-business Suite 适配器支持哪些操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,60 +12,60 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7236c21f1e298f2ccd4cbb97db481cbd3626d186
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 07ad676d737fffc45898c31f68d0895fc6919b63
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22217661"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36984046"
 ---
-# <a name="what-operations-are-supported-by-the-oracle-e-business-suite-adapter"></a>Oracle E-business Suite 适配器支持何种操作
+# <a name="what-operations-are-supported-by-the-oracle-e-business-suite-adapter"></a>Oracle E-business Suite 适配器支持哪些操作
 ## <a name="overview"></a>概述
-适配器客户端可以在通过 Oracle E-business Suite 执行操作：  
+适配器客户端可以通过 Oracle E-business Suite 中执行操作：  
   
--   创建 BizTalk 项目  
+- 创建 BizTalk 项目  
   
--   使用 WCF 通道模型  
+- 使用 WCF 通道模型  
   
--   使用 WCF 服务模型  
+- 使用 WCF 服务模型  
   
- [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]公开应用程序可以调用它并且它可以反过来，调用应用程序的操作。 这些操作都是通过在通道上发送 SOAP 消息中调用。 如果需要响应，它将通过相同的通道返回 SOAP 消息中。 有关消息结构和每个操作与关联的 SOAP 操作的信息，请参阅[消息和消息架构用于 Oracle E-business Suite 的 BizTalk Adapter](../../adapters-and-accelerators/adapter-oracle-ebs/messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)。  
+  [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]公开应用程序可以调用在其上并且可以反过来，调用应用程序上的操作。 通过通道发送 SOAP 消息来调用这些操作。 如果响应是必需的它通过同一通道返回 SOAP 消息中。 有关消息结构和与每个操作关联的 SOAP 操作的信息，请参阅[消息和消息架构用于 Oracle E-business Suite 的 BizTalk 适配器](../../adapters-and-accelerators/adapter-oracle-ebs/messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)。  
   
- 本部分提供有关在 Oracle E-business Suite 中使用支持的操作的信息[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。  
+  本部分提供有关在 Oracle E-business Suite 中使用支持的操作信息[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。  
   
-## <a name="in-this-section"></a>在本节中  
+## <a name="in-this-section"></a>本节内容  
   
 -   [设置应用程序上下文](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)  
   
--   [对接口表和接口视图的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-interface-tables-and-interface-views.md)  
+-   [对界面表和界面视图的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-interface-tables-and-interface-views.md)  
   
--   [PL/SQL api 的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-pl-sql-apis.md)  
+-   [对 PL/SQL API 的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-pl-sql-apis.md)  
   
--   [对并发程序操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-concurrent-programs.md)  
+-   [对并发程序的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-concurrent-programs.md)  
   
--   [对请求设置的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-request-sets.md)  
+-   [对请求集的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-request-sets.md)  
   
--   [对接口表、 界面视图、 表和视图包含 LOB 数据的操作](../../adapters-and-accelerators/adapter-oracle-ebs/read-and-update-on-interface-tables-and-views-with-large-object-data-types.md)  
+-   [对界面表、界面视图、表和包含 LOB 数据的视图的操作](../../adapters-and-accelerators/adapter-oracle-ebs/read-and-update-on-interface-tables-and-views-with-large-object-data-types.md)  
   
 -   [对包含 BFILE 数据类型的表的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-tables-that-contain-bfile-data-types.md)  
   
--   [对函数和存储的过程的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-functions-and-stored-procedures1.md)  
+-   [对函数和存储过程的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-functions-and-stored-procedures1.md)  
   
--   [对函数和过程与 REF CURSOR 参数的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-functions-and-procedures-with-ref-cursor-parameters1.md)  
+-   [对包含 REF CURSOR 参数的函数和过程的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-functions-and-procedures-with-ref-cursor-parameters1.md)  
   
--   [对函数和过程的记录类型的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-functions-and-procedures-with-record-types1.md)  
+-   [对包含 RECORD 类型的函数和过程的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-functions-and-procedures-with-record-types1.md)  
   
 -   [对同义词的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-synonyms2.md)  
   
 -   [接收数据库更改通知时的注意事项](../../adapters-and-accelerators/adapter-oracle-database/before-you-receive-database-change-notifications-using-the-oracle-db-adapter.md)  
   
--   [使用轮询的入站调用的支持](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-inbound-calls-using-polling.md)  
+-   [支持使用轮询的入站调用](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-inbound-calls-using-polling.md)  
   
--   [支持 ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)  
+-   [支持 ExecuteNonQuery、ExecuteReader 和 ExecuteScalar 操作](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)  
   
--   [对复合操作的支持](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-composite-operations2.md)  
+-   [支持复合操作](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-composite-operations2.md)  
   
--   [对 Oracle 用户定义类型的支持](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-oracle-user-defined-types2.md)  
+-   [支持 Oracle 用户定义类型](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-oracle-user-defined-types2.md)  
   
-## <a name="see-also"></a>另请参阅  
-[了解有关 Oracle E-business Suite 的 BizTalk Adapter](../../adapters-and-accelerators/adapter-oracle-ebs/understand-biztalk-adapter-for-oracle-e-business-suite.md)
+## <a name="see-also"></a>请参阅  
+[了解用于 Oracle E-Business Suite 的 BizTalk 适配器](../../adapters-and-accelerators/adapter-oracle-ebs/understand-biztalk-adapter-for-oracle-e-business-suite.md)

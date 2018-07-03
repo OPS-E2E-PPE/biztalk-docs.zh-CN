@@ -1,5 +1,5 @@
 ---
-title: 无法合并操作 |Microsoft 文档
+title: 无法合并操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 82035f791abd18c597198567a6027ddf739424a3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5adf138a53e17cb0dfb4b52e70818632a5e52b59
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286485"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36986126"
 ---
 # <a name="unable-to-merge-operations"></a>无法合并操作
 ## <a name="details"></a>详细信息  
   
-|||  
-|-|-|  
-|产品名称|[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]|  
-|产品版本|[!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]|  
-|事件 ID|0|  
-|事件源|0|  
-|组件|0|  
-|符号名称|0|  
-|消息正文|无法合并操作|  
+|                 |                                                                                    |
+|-----------------|------------------------------------------------------------------------------------|
+|  产品名称   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] |
+| 产品版本 |             [!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]             |
+|    事件 ID     |                                         0                                          |
+|  事件源   |                                         0                                          |
+|    组件    |                                         0                                          |
+|  符号名称  |                                         0                                          |
+|  消息正文   |                             无法合并操作                             |
   
 ## <a name="explanation"></a>解释  
  此错误表示由于名称冲突或通信方向不同，导致无法合并操作。  

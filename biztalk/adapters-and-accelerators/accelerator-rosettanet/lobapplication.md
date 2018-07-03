@@ -1,5 +1,5 @@
 ---
-title: LOBApplication |Microsoft 文档
+title: LOBApplication |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,46 +19,46 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7bacce1a64f59d61b5175b10fc14cde1ca862635
-ms.sourcegitcommit: 436ebffd959a9c4bdaafd4da9a5843c59a018eb7
+ms.openlocfilehash: dc9859e210036806cebcd76f63235d47ca972976
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "34855528"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36978574"
 ---
 # <a name="lobapplication"></a>LOBApplication
 使用 LOBApplication 实用工具可以将操作或响应消息提交给贸易合作伙伴，并模拟实际的业务线 (LOB) 桌面程序。  
   
- [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]提供中的示例消息\<*驱动器*\>\Program Files (x86) \Microsoft BizTalk\<版本\>RosettaNet\SDK\LOBApplication\ 快捷键SampleInstances 文件夹。  
+ Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]提供了示例消息中的\<*驱动器*\>\Program 文件 (x86) \Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\LOBApplication\SampleInstances 文件夹。  
   
 ## <a name="location-in-sdk"></a>在 SDK 中的位置  
- \<*驱动器*\>\Program Files (x86) \Microsoft BizTalk\<版本\>RosettaNet\SDK\LOBApplication 快捷键  
+ \<*驱动器*\>\Program 文件 (x86) \Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\LOBApplication  
   
 ## <a name="running-lobapplication"></a>运行 LOBApplication  
   
 #### <a name="to-run-lobapplication"></a>若要运行 LOBApplication  
   
-1.  在 Windows 资源管理器，移动到\<*驱动器*\>\Program Files (x86) \Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\\。  
+1.  在 Windows 资源管理器，转至\<*驱动器*\>\Program 文件 (x86) \Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\\。  
   
 2.  双击**LOBApplication.exe**，然后按 ENTER。  
   
      之后显示的页将提示你输入运行该实用工具所需的信息。  
   
 ## <a name="syntax-for-lobapplication"></a>LOBApplication 的语法  
- 使用**LOB 应用程序代理**页后，可以指定主页和合作伙伴名称、 合作伙伴接口过程 (PIP) 属性和 LOBApplication 实用程序发送的消息的消息属性。  
+ 使用**LOB 应用程序代理**页后，可以指定与合作伙伴的名称、 合作伙伴接口流程 (PIP) 属性和 LOBApplication 实用工具发送的消息的消息属性。  
   
- 下表介绍如何使用每个字段上**LOB 应用程序代理**页。  
+ 下表介绍了如何使用每个字段**LOB 应用程序代理**页。  
   
 |使用此选项|执行的操作|  
 |--------------|----------------|  
-|**主配置文件名称**|键入本组织的名称（源参与方）。|  
+|**本组织配置文件名称**|键入本组织的名称（源参与方）。|  
 |**贸易合作伙伴名称**|键入贸易合作伙伴的名称（目标参与方）。|  
 |**PIP 名称**|键入 PIP，例如，类型的显示代码**3A2**。 此值区分大小写。|  
-|**PIP 版本**|键入的 PIP，例如，类型版本**V02.00**。 此值区分大小写。|  
-|**PIP 实例 ID** （可选）|键入的字母数字的实例 ID PIP，例如，键入**STD_3A2_V02.02**。 不要使用特殊字符。 该 ID 对于每个合作伙伴和每个 PIP 代码应是唯一的。 对于标记为操作消息的消息，如果实例 ID 为空，则 LOBApplication 实用工具将使用生成的 HUID 值作为 PIP 实例 ID。 **注意：** 选中**响应**中**消息类别**，必须在此字段中键入 PIP 实例 ID。|  
+|**PIP 版本**|键入 PIP 的版本，例如，类型**V02.00**。 此值区分大小写。|  
+|**PIP 实例 ID** （可选）|键入的字母数字实例 ID 对于 PIP，例如，键入**STD_3A2_V02.02**。 不要使用特殊字符。 该 ID 对于每个合作伙伴和每个 PIP 代码应是唯一的。 对于标记为操作消息的消息，如果实例 ID 为空，则 LOBApplication 实用工具将使用生成的 HUID 值作为 PIP 实例 ID。 **注意：** 当选**响应**中**消息类别**，必须在此字段中键入 PIP 实例 ID。|  
 |**文件名**|单击省略号按钮 (...)，转到包含 PIP 实例文件的文件夹，然后单击该 PIP 实例文件。|  
-|**消息类别**|选择消息的类型 (**操作**或**响应**)。|  
-|**Attachments**|单击**添加**，将移动到包含附件文件的文件夹，然后单击**打开**。|  
+|**消息类别**|选择消息类型 (**操作**或**响应**)。|  
+|**Attachments**|单击**外**，转到包含附件文件的文件夹，然后单击**打开**。|  
 |**提交消息**|单击以发送消息。|  
 |**“状态”**|在此字段中读取操作的状态。|  
   

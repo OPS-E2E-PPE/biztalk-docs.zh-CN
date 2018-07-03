@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10736 |Microsoft 文档
+title: 单一登录： 事件 10736 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,33 +12,33 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e04d0460633dff27da03edd249e2eff07e26c33
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 73db39ed974ca9c5b0de769e1ca01caadb946fe7
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22271477"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36972454"
 ---
 # <a name="single-sign-on-event-10736"></a>单一登录： 事件 10736
 ## <a name="details"></a>详细信息  
-  
-|||  
-|-|-|  
-|产品名称|企业单一登录|  
-|产品版本|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|事件 ID|10736|  
-|事件源|ENTSSO|  
-|组件|N\A|  
-|符号名称|SSO_INFO_PS_SET_EXTERNAL_PASSWORD|  
-|消息正文|已成功更新 SSO 数据库中的外部密码。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> 应用程序名称: %3 %r<br /><br /> 外部帐户： %4|  
-  
+
+|                 |                                                                                                                                                                                                   |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  产品名称   |                                                                                     企业单一登录                                                                                     |
+| 产品版本 |                                                                    [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                     |
+|    事件 ID     |                                                                                               10736                                                                                               |
+|  事件源   |                                                                                              ENTSSO                                                                                               |
+|    组件    |                                                                                                N\A                                                                                                |
+|  符号名称  |                                                                                 SSO_INFO_PS_SET_EXTERNAL_PASSWORD                                                                                 |
+|  消息正文   | 已成功更新 SSO 数据库中的外部密码。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> 应用程序名称: %3 %r<br /><br /> 外部帐户： %4 |
+
 ## <a name="explanation"></a>解释  
  此信息事件表明已成功更新 SSO 数据库中的外部密码。  
-  
+
 ## <a name="user-action"></a>用户操作  
-  
--   不必进行用户操作。  
-  
- 有关详细信息，请参阅下列资源：  
-  
--   [密码同步](../core/password-synchronization2.md)
+
+- 不必进行用户操作。  
+
+  有关详细信息，请参阅下列资源：  
+
+- [密码同步](../core/password-synchronization2.md)
