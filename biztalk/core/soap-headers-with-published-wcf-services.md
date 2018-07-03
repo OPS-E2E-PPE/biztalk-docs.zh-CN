@@ -1,5 +1,5 @@
 ---
-title: 与已发布的 WCF 服务的 SOAP 标头 |Microsoft 文档
+title: 与已发布的 WCF 服务的 SOAP 标头 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,23 +16,23 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 78f36e778930a781ac797e18308240ecb4bef667
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: ea48ab7afeae2b54136c9134d3ef92878b802924
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25975683"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36985366"
 ---
-# <a name="soap-headers-with-published-wcf-services"></a><span data-ttu-id="6f2cc-102">SOAP 标头与发布的 WCF 服务</span><span class="sxs-lookup"><span data-stu-id="6f2cc-102">SOAP Headers with Published WCF Services</span></span>
-<span data-ttu-id="6f2cc-103">WCF 接收适配器可以将所有 SOAP 标头值都复制到入站消息中**InboundHeaders**属性，也可以编写或提升为 BizTalk 消息上下文的指定的值。</span><span class="sxs-lookup"><span data-stu-id="6f2cc-103">The WCF receive adapters can copy all the SOAP header values in the inbound messages to the **InboundHeaders** property, or they can write or promote specified values to the BizTalk message context.</span></span> <span data-ttu-id="6f2cc-104">这些适配器可以处理 WCF 基础结构使用的自定义 SOAP 标头和标准 SOAP 标头，如 WS-Addressing、WS-Security 和 WS-AtomicTransaction。</span><span class="sxs-lookup"><span data-stu-id="6f2cc-104">The adapters can work with both custom SOAP headers and standard SOAP headers that the WCF infrastructure uses, such as WS-Addressing, WS-Security, and WS-AtomicTransaction.</span></span> <span data-ttu-id="6f2cc-105">**InboundHeaders**上下文属性是目标命名空间中**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**，并包含在 soap 的字符串表示形式入站消息中的标头值。</span><span class="sxs-lookup"><span data-stu-id="6f2cc-105">The **InboundHeaders** context property is in the target namespace **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**, and contains string representations of the SOAP header values in inbound messages.</span></span>  
+# <a name="soap-headers-with-published-wcf-services"></a><span data-ttu-id="f95af-102">SOAP 标头与发布的 WCF 服务</span><span class="sxs-lookup"><span data-stu-id="f95af-102">SOAP Headers with Published WCF Services</span></span>
+<span data-ttu-id="f95af-103">WCF 接收适配器可以将所有 SOAP 标头值都复制到的入站消息中**InboundHeaders**属性，也可以写入或升级到 BizTalk 消息上下文的指定的值。</span><span class="sxs-lookup"><span data-stu-id="f95af-103">The WCF receive adapters can copy all the SOAP header values in the inbound messages to the **InboundHeaders** property, or they can write or promote specified values to the BizTalk message context.</span></span> <span data-ttu-id="f95af-104">这些适配器可以处理 WCF 基础结构使用的自定义 SOAP 标头和标准 SOAP 标头，如 WS-Addressing、WS-Security 和 WS-AtomicTransaction。</span><span class="sxs-lookup"><span data-stu-id="f95af-104">The adapters can work with both custom SOAP headers and standard SOAP headers that the WCF infrastructure uses, such as WS-Addressing, WS-Security, and WS-AtomicTransaction.</span></span> <span data-ttu-id="f95af-105">**InboundHeaders**上下文属性位于目标命名空间**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**，并包含入站消息中的 SOAP 标头值的字符串表示形式。</span><span class="sxs-lookup"><span data-stu-id="f95af-105">The **InboundHeaders** context property is in the target namespace **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**, and contains string representations of the SOAP header values in inbound messages.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="6f2cc-106">如果要升级您指定的 SOAP 标头值，BizTalk 项目中必须有与您要升级的值对应的已部署属性架构。</span><span class="sxs-lookup"><span data-stu-id="6f2cc-106">If you are going to promote the SOAP header values you specified, there must be a deployed property schema in your BizTalk project that corresponds to the values you are promoting.</span></span>  
+>  <span data-ttu-id="f95af-106">如果要升级您指定的 SOAP 标头值，BizTalk 项目中必须有与您要升级的值对应的已部署属性架构。</span><span class="sxs-lookup"><span data-stu-id="f95af-106">If you are going to promote the SOAP header values you specified, there must be a deployed property schema in your BizTalk project that corresponds to the values you are promoting.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="6f2cc-107">升级后的属性不得超过 256 个字符。</span><span class="sxs-lookup"><span data-stu-id="6f2cc-107">The promoted properties cannot be longer than 256 characters.</span></span>  
+>  <span data-ttu-id="f95af-107">升级后的属性不得超过 256 个字符。</span><span class="sxs-lookup"><span data-stu-id="f95af-107">The promoted properties cannot be longer than 256 characters.</span></span>  
   
- <span data-ttu-id="6f2cc-108">下面的 XML 数据显示的字符串表示形式的 SOAP 标头的示例**InboundHeaders**属性。</span><span class="sxs-lookup"><span data-stu-id="6f2cc-108">The following XML data shows an example of the string representation of the SOAP headers for the **InboundHeaders** property.</span></span> <span data-ttu-id="6f2cc-109">这来自客户端，并将发送到 BizTalk 接收位置。</span><span class="sxs-lookup"><span data-stu-id="6f2cc-109">This comes from the client and is sent to the BizTalk receive location.</span></span>  
+ <span data-ttu-id="f95af-108">以下 XML 数据显示为 SOAP 标头的字符串表示形式的示例**InboundHeaders**属性。</span><span class="sxs-lookup"><span data-stu-id="f95af-108">The following XML data shows an example of the string representation of the SOAP headers for the **InboundHeaders** property.</span></span> <span data-ttu-id="f95af-109">这来自客户端，并将发送到 BizTalk 接收位置。</span><span class="sxs-lookup"><span data-stu-id="f95af-109">This comes from the client and is sent to the BizTalk receive location.</span></span>  
   
 ```  
 <headers>  
@@ -44,17 +44,17 @@ ms.locfileid: "25975683"
 </headers>  
 ```  
   
- <span data-ttu-id="6f2cc-110">若要将 SOAP 标头值写入或升级到 BizTalk 消息上下文，需要将由属性名称和命名空间组成的值对的集合放入 WCF 消息中，这样 WCF 适配器就可以知道将写入或升级这些标头值。</span><span class="sxs-lookup"><span data-stu-id="6f2cc-110">To write or promote SOAP header values to the BizTalk message context, you need to put a collection of value pairs that consist of property name and namespace into the WCF message so that the WCF adapters will recognize that the header values are to be written or promoted.</span></span> <span data-ttu-id="6f2cc-111">在将 SOAP 标头值写入或升级到 BizTalk 消息上下文时，WCF 适配器需要获取 WCF 消息中的以下消息属性：</span><span class="sxs-lookup"><span data-stu-id="6f2cc-111">A WCF adapter expects the following message properties in the WCF messages for writing or promoting SOAP header values to the BizTalk message context:</span></span>  
+ <span data-ttu-id="f95af-110">若要将 SOAP 标头值写入或升级到 BizTalk 消息上下文，需要将由属性名称和命名空间组成的值对的集合放入 WCF 消息中，这样 WCF 适配器就可以知道将写入或升级这些标头值。</span><span class="sxs-lookup"><span data-stu-id="f95af-110">To write or promote SOAP header values to the BizTalk message context, you need to put a collection of value pairs that consist of property name and namespace into the WCF message so that the WCF adapters will recognize that the header values are to be written or promoted.</span></span> <span data-ttu-id="f95af-111">在将 SOAP 标头值写入或升级到 BizTalk 消息上下文时，WCF 适配器需要获取 WCF 消息中的以下消息属性：</span><span class="sxs-lookup"><span data-stu-id="f95af-111">A WCF adapter expects the following message properties in the WCF messages for writing or promoting SOAP header values to the BizTalk message context:</span></span>  
   
--   <span data-ttu-id="6f2cc-112">若要升级到 BizTalk 消息上下文的 SOAP 标头值，WCF 适配器要查找的键对**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote**和值**列表\<KeyValuePair\<XmlQualifiedName，对象\>\>**。</span><span class="sxs-lookup"><span data-stu-id="6f2cc-112">To promote the SOAP header values to the BizTalk message context, WCF adapters are looking for the pair of key **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote** and value **List\<KeyValuePair\<XmlQualifiedName, object\>\>**.</span></span>  
+- <span data-ttu-id="f95af-112">若要升级到 BizTalk 消息上下文的 SOAP 标头值，WCF 适配器会寻找的密钥对**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote**和值**列表\<KeyValuePair\<XmlQualifiedName，对象\>\>**.</span><span class="sxs-lookup"><span data-stu-id="f95af-112">To promote the SOAP header values to the BizTalk message context, WCF adapters are looking for the pair of key **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote** and value **List\<KeyValuePair\<XmlQualifiedName, object\>\>**.</span></span>  
   
-     <span data-ttu-id="6f2cc-113">使用此对，WCF 适配器采取命名空间、 名称和值从**XmlQualifiedName**对象，并将其用于升级的标头值。</span><span class="sxs-lookup"><span data-stu-id="6f2cc-113">Using this pair, WCF adapters take the namespace, name, and value from the **XmlQualifiedName** object and use them for promoting the header values.</span></span>  
+   <span data-ttu-id="f95af-113">使用此对 WCF 适配器采用命名空间、 名称和值从**XmlQualifiedName**对象，并将其用于升级标头值。</span><span class="sxs-lookup"><span data-stu-id="f95af-113">Using this pair, WCF adapters take the namespace, name, and value from the **XmlQualifiedName** object and use them for promoting the header values.</span></span>  
   
--   <span data-ttu-id="6f2cc-114">若要编写，但不是将提升为 BizTalk 消息上下文的 SOAP 标头值，WCF 适配器要查找的键对**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/WriteToContext**和值**列表\<KeyValuePair\<XmlQualifiedName，对象\>\>**。</span><span class="sxs-lookup"><span data-stu-id="6f2cc-114">To write but not promote the SOAP header values to the BizTalk message context, WCF adapters are looking for the pair of key **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/WriteToContext** and value **List\<KeyValuePair\<XmlQualifiedName, object\>\>**.</span></span>  
+- <span data-ttu-id="f95af-114">若要编写，而不是升级到 BizTalk 消息上下文的 SOAP 标头值，WCF 适配器会寻找的密钥对**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/WriteToContext**和值**列表\<KeyValuePair\<XmlQualifiedName，对象\>\>**。</span><span class="sxs-lookup"><span data-stu-id="f95af-114">To write but not promote the SOAP header values to the BizTalk message context, WCF adapters are looking for the pair of key **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/WriteToContext** and value **List\<KeyValuePair\<XmlQualifiedName, object\>\>**.</span></span>  
   
-     <span data-ttu-id="6f2cc-115">WCF 适配器使用此对将这些值写入消息上下文。</span><span class="sxs-lookup"><span data-stu-id="6f2cc-115">Using this pair, WCF adapters write the values to the message context.</span></span>  
+   <span data-ttu-id="f95af-115">WCF 适配器使用此对将这些值写入消息上下文。</span><span class="sxs-lookup"><span data-stu-id="f95af-115">Using this pair, WCF adapters write the values to the message context.</span></span>  
   
- <span data-ttu-id="6f2cc-116">以下代码显示的是如何将 SOAP 标头值写入或升级到 BizTalk 消息上下文：</span><span class="sxs-lookup"><span data-stu-id="6f2cc-116">The following code shows how to write or promote the SOAP header values to the BizTalk message context:</span></span>  
+  <span data-ttu-id="f95af-116">以下代码显示的是如何将 SOAP 标头值写入或升级到 BizTalk 消息上下文：</span><span class="sxs-lookup"><span data-stu-id="f95af-116">The following code shows how to write or promote the SOAP header values to the BizTalk message context:</span></span>  
   
 ```  
 const string PropertiesToPromoteKey="http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote";  
@@ -75,9 +75,9 @@ writeProps.Add(new KeyValuePair<XmlQualifiedName, object>(PropName2, "Property v
 wcfMessage.Properties[PropertiesToWriteKey]=writeProps;  
 ```  
   
- <span data-ttu-id="6f2cc-117">BizTalk WCF 服务发布向导未将自定义 SOAP 标头定义包含在生成的元数据中。</span><span class="sxs-lookup"><span data-stu-id="6f2cc-117">The BizTalk WCF Service Publishing Wizard does not include custom SOAP header definitions in the generated metadata.</span></span> <span data-ttu-id="6f2cc-118">若要使用自定义 SOAP 标头发布 WCF 服务的元数据，应手动创建 Web Services 描述语言 (WSDL) 文件。</span><span class="sxs-lookup"><span data-stu-id="6f2cc-118">To publish metadata for WCF services using custom SOAP headers, you should manually create a Web Services Description Language (WSDL) file.</span></span> <span data-ttu-id="6f2cc-119">你可以使用**externalMetadataLocation**属性[ \<serviceMetadata\> ](http://go.microsoft.com/fwlink/?LinkId=89121)向导生成指定的位置的 Web.config 文件中的元素WSDL 文件。</span><span class="sxs-lookup"><span data-stu-id="6f2cc-119">You can use the **externalMetadataLocation** attribute of the [\<serviceMetadata\>](http://go.microsoft.com/fwlink/?LinkId=89121) element in the Web.config file that the wizard generates to specify the location of the WSDL file.</span></span> <span data-ttu-id="6f2cc-120">会向用户返回该 WSDL 文件以响应 WSDL 和元数据交换 (MEX) 请求，而不是返回自动生成的 WSDL。</span><span class="sxs-lookup"><span data-stu-id="6f2cc-120">The WSDL file is returned to the user in response to WSDL and metadata exchange (MEX) requests instead of the auto-generated WSDL.</span></span>  
+ <span data-ttu-id="f95af-117">BizTalk WCF 服务发布向导未将自定义 SOAP 标头定义包含在生成的元数据中。</span><span class="sxs-lookup"><span data-stu-id="f95af-117">The BizTalk WCF Service Publishing Wizard does not include custom SOAP header definitions in the generated metadata.</span></span> <span data-ttu-id="f95af-118">若要使用自定义 SOAP 标头发布 WCF 服务的元数据，应手动创建 Web Services 描述语言 (WSDL) 文件。</span><span class="sxs-lookup"><span data-stu-id="f95af-118">To publish metadata for WCF services using custom SOAP headers, you should manually create a Web Services Description Language (WSDL) file.</span></span> <span data-ttu-id="f95af-119">可以使用**externalMetadataLocation**的属性[ \<serviceMetadata\> ](http://go.microsoft.com/fwlink/?LinkId=89121)元素中的 Web.config 文件，该向导将生成指定的位置WSDL 文件。</span><span class="sxs-lookup"><span data-stu-id="f95af-119">You can use the **externalMetadataLocation** attribute of the [\<serviceMetadata\>](http://go.microsoft.com/fwlink/?LinkId=89121) element in the Web.config file that the wizard generates to specify the location of the WSDL file.</span></span> <span data-ttu-id="f95af-120">会向用户返回该 WSDL 文件以响应 WSDL 和元数据交换 (MEX) 请求，而不是返回自动生成的 WSDL。</span><span class="sxs-lookup"><span data-stu-id="f95af-120">The WSDL file is returned to the user in response to WSDL and metadata exchange (MEX) requests instead of the auto-generated WSDL.</span></span>  
   
- <span data-ttu-id="6f2cc-121">以下 XML 数据显示的示例是定义自定义 SOAP 标头的 WSDL 文件的一部分：</span><span class="sxs-lookup"><span data-stu-id="6f2cc-121">The following XML data shows an example of a part of the WSDL file defining custom SOAP headers:</span></span>  
+ <span data-ttu-id="f95af-121">以下 XML 数据显示的示例是定义自定义 SOAP 标头的 WSDL 文件的一部分：</span><span class="sxs-lookup"><span data-stu-id="f95af-121">The following XML data shows an example of a part of the WSDL file defining custom SOAP headers:</span></span>  
   
 ```  
 <wsdl:operation name="Request">  
@@ -93,12 +93,12 @@ wcfMessage.Properties[PropertiesToWriteKey]=writeProps;
 </wsdl:operation>  
 ```  
   
-## <a name="in-this-section"></a><span data-ttu-id="6f2cc-122">本节内容</span><span class="sxs-lookup"><span data-stu-id="6f2cc-122">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="f95af-122">本节内容</span><span class="sxs-lookup"><span data-stu-id="f95af-122">In This Section</span></span>  
   
--   [<span data-ttu-id="6f2cc-123">使用业务流程访问 WCF 消息中的 SOAP 标头</span><span class="sxs-lookup"><span data-stu-id="6f2cc-123">Accessing SOAP Headers in WCF Messages with Orchestrations</span></span>](../core/accessing-soap-headers-in-wcf-messages-with-orchestrations.md)  
+-   [<span data-ttu-id="f95af-123">使用业务流程访问 WCF 消息中的 SOAP 标头</span><span class="sxs-lookup"><span data-stu-id="f95af-123">Accessing SOAP Headers in WCF Messages with Orchestrations</span></span>](../core/accessing-soap-headers-in-wcf-messages-with-orchestrations.md)  
   
--   [<span data-ttu-id="6f2cc-124">使用管道组件访问 WCF 消息中的 SOAP 标头</span><span class="sxs-lookup"><span data-stu-id="6f2cc-124">Accessing SOAP Headers in WCF Messages with Pipeline Components</span></span>](../core/accessing-soap-headers-in-wcf-messages-with-pipeline-components.md)  
+-   [<span data-ttu-id="f95af-124">使用管道组件访问 WCF 消息中的 SOAP 标头</span><span class="sxs-lookup"><span data-stu-id="f95af-124">Accessing SOAP Headers in WCF Messages with Pipeline Components</span></span>](../core/accessing-soap-headers-in-wcf-messages-with-pipeline-components.md)  
   
-## <a name="see-also"></a><span data-ttu-id="6f2cc-125">另请参阅</span><span class="sxs-lookup"><span data-stu-id="6f2cc-125">See Also</span></span>  
- <span data-ttu-id="6f2cc-126">[WCF 适配器属性架构和属性](../core/wcf-adapters-property-schema-and-properties.md) </span><span class="sxs-lookup"><span data-stu-id="6f2cc-126">[WCF Adapters Property Schema and Properties](../core/wcf-adapters-property-schema-and-properties.md) </span></span>  
- [<span data-ttu-id="6f2cc-127">SOAP 标头与使用的 WCF 服务</span><span class="sxs-lookup"><span data-stu-id="6f2cc-127">SOAP Headers with Consumed WCF Services</span></span>](../core/soap-headers-with-consumed-wcf-services.md)
+## <a name="see-also"></a><span data-ttu-id="f95af-125">请参阅</span><span class="sxs-lookup"><span data-stu-id="f95af-125">See Also</span></span>  
+ <span data-ttu-id="f95af-126">[WCF 适配器属性架构和属性](../core/wcf-adapters-property-schema-and-properties.md) </span><span class="sxs-lookup"><span data-stu-id="f95af-126">[WCF Adapters Property Schema and Properties](../core/wcf-adapters-property-schema-and-properties.md) </span></span>  
+ [<span data-ttu-id="f95af-127">SOAP 标头与使用的 WCF 服务</span><span class="sxs-lookup"><span data-stu-id="f95af-127">SOAP Headers with Consumed WCF Services</span></span>](../core/soap-headers-with-consumed-wcf-services.md)

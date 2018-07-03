@@ -1,5 +1,5 @@
 ---
-title: 适配器示例 |Microsoft 文档
+title: 适配器示例 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,18 +16,18 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d7d1aea5afa53bb334d61a1c560326b67361686
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 10dac21957095f7e7e78c7b5243541ec61e41653
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206493"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36989270"
 ---
-# <a name="adapter-samples"></a><span data-ttu-id="9d4e8-102">适配器示例</span><span class="sxs-lookup"><span data-stu-id="9d4e8-102">Adapter Samples</span></span>
-[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]<span data-ttu-id="9d4e8-103">®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]包括几个适配器示例在其软件开发工具包 (SDK)。</span><span class="sxs-lookup"><span data-stu-id="9d4e8-103">® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] includes several adapter samples in its Software Development Kit (SDK).</span></span> <span data-ttu-id="9d4e8-104">本节提供每个适配器示例所演示功能的详细信息、生成和运行每个示例的说明以及预期得到的结果。</span><span class="sxs-lookup"><span data-stu-id="9d4e8-104">This section provides detailed information about the functionality demonstrated by each adapter sample, instructions for building and running the sample, and the results that you can expect.</span></span>  
+# <a name="adapter-samples"></a><span data-ttu-id="23bc8-102">适配器示例</span><span class="sxs-lookup"><span data-stu-id="23bc8-102">Adapter Samples</span></span>
+<span data-ttu-id="23bc8-103">Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]包含其软件开发工具包 (SDK) 中的几个适配器示例。</span><span class="sxs-lookup"><span data-stu-id="23bc8-103">Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] includes several adapter samples in its Software Development Kit (SDK).</span></span> <span data-ttu-id="23bc8-104">本节提供每个适配器示例所演示功能的详细信息、生成和运行每个示例的说明以及预期得到的结果。</span><span class="sxs-lookup"><span data-stu-id="23bc8-104">This section provides detailed information about the functionality demonstrated by each adapter sample, instructions for building and running the sample, and the results that you can expect.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="9d4e8-105">本节内容</span><span class="sxs-lookup"><span data-stu-id="9d4e8-105">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="23bc8-105">本节内容</span><span class="sxs-lookup"><span data-stu-id="23bc8-105">In This Section</span></span>  
   
--   [<span data-ttu-id="9d4e8-106">ApplicationAdapter</span><span class="sxs-lookup"><span data-stu-id="9d4e8-106">ApplicationAdapter</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/applicationadapter.md)  
+-   [<span data-ttu-id="23bc8-106">ApplicationAdapter</span><span class="sxs-lookup"><span data-stu-id="23bc8-106">ApplicationAdapter</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/applicationadapter.md)  
   
--   [<span data-ttu-id="9d4e8-107">ValidationAdapter</span><span class="sxs-lookup"><span data-stu-id="9d4e8-107">ValidationAdapter</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/validationadapter.md)
+-   [<span data-ttu-id="23bc8-107">ValidationAdapter</span><span class="sxs-lookup"><span data-stu-id="23bc8-107">ValidationAdapter</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/validationadapter.md)

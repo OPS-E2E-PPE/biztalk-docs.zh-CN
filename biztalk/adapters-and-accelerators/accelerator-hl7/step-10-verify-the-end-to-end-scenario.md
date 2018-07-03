@@ -1,5 +1,5 @@
 ---
-title: 步骤 10： 验证端到端方案 |Microsoft 文档
+title: 步骤 10： 验证端到端方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,68 +14,68 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d38f137625554bd689477964e3a969142eca0658
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 43d95e54bbcf0c7c716630305b85ba8b9bed1a52
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "25961587"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36990342"
 ---
-# <a name="step-10-verify-the-end-to-end-scenario"></a><span data-ttu-id="f9832-102">步骤 10： 验证端到端方案</span><span class="sxs-lookup"><span data-stu-id="f9832-102">Step 10: Verify the End-to-End Scenario</span></span>
-<span data-ttu-id="f9832-103">在此步骤中，你可以出于本教程验证端到端方案。</span><span class="sxs-lookup"><span data-stu-id="f9832-103">In this step, you verify the end-to-end scenario for this tutorial.</span></span>  
+# <a name="step-10-verify-the-end-to-end-scenario"></a><span data-ttu-id="5130c-102">步骤 10： 验证端到端方案</span><span class="sxs-lookup"><span data-stu-id="5130c-102">Step 10: Verify the End-to-End Scenario</span></span>
+<span data-ttu-id="5130c-103">在此步骤中，对于本教程中验证端到端方案。</span><span class="sxs-lookup"><span data-stu-id="5130c-103">In this step, you verify the end-to-end scenario for this tutorial.</span></span>  
   
-### <a name="to-verify-the-end-to-end-tutorial-scenario"></a><span data-ttu-id="f9832-104">若要验证的端到端教程方案</span><span class="sxs-lookup"><span data-stu-id="f9832-104">To verify the end-to-end tutorial scenario</span></span>  
+### <a name="to-verify-the-end-to-end-tutorial-scenario"></a><span data-ttu-id="5130c-104">若要验证的端到端教程方案</span><span class="sxs-lookup"><span data-stu-id="5130c-104">To verify the end-to-end tutorial scenario</span></span>  
   
-1.  <span data-ttu-id="f9832-105">单击**启动**，指向**程序**，指向**附件**，然后单击**命令提示符**。</span><span class="sxs-lookup"><span data-stu-id="f9832-105">Click **Start**, point to **Programs**, point to **Accessories**, and then click **Command Prompt**.</span></span>  
+1. <span data-ttu-id="5130c-105">单击**启动**，指向**程序**，指向**附件**，然后单击**命令提示符下**。</span><span class="sxs-lookup"><span data-stu-id="5130c-105">Click **Start**, point to **Programs**, point to **Accessories**, and then click **Command Prompt**.</span></span>  
   
-2.  <span data-ttu-id="f9832-106">在命令提示符窗口中，将移到 **\<*驱动器*\>: files\microsoft BizTalk\<版本\>Accelerator for HL7\SDK\MLLP 实用工具**，然后按**Enter**。</span><span class="sxs-lookup"><span data-stu-id="f9832-106">In the Command Prompt window, move to **\<*drive*\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\MLLP Utilities**, and then press **Enter**.</span></span>  
+2. <span data-ttu-id="5130c-106">在命令提示符窗口中，转至 **\<*驱动器*\>: \Program Files\Microsoft BizTalk\<版本\>HL7\SDK\MLLP 实用工具Accelerator**，然后按**Enter**。</span><span class="sxs-lookup"><span data-stu-id="5130c-106">In the Command Prompt window, move to **\<*drive*\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\MLLP Utilities**, and then press **Enter**.</span></span>  
   
-    > [!NOTE]
-    >  <span data-ttu-id="f9832-107">如果找不到 SDK 文件夹下的 MLLP Utilities 文件夹，可能未安装 MLLP 测试工具。</span><span class="sxs-lookup"><span data-stu-id="f9832-107">If you cannot find an MLLP Utilities folder under the SDK folder, the MLLP test tools may not be installed.</span></span> <span data-ttu-id="f9832-108">打开控制面板，然后打开**添加或删除程序**。</span><span class="sxs-lookup"><span data-stu-id="f9832-108">Open the Control Panel, and then open **Add or Remove Programs**.</span></span> <span data-ttu-id="f9832-109">选择**Microsoft BizTalk\<版本\>Accelerator for HL7**，然后选择**更改**。</span><span class="sxs-lookup"><span data-stu-id="f9832-109">Select **Microsoft BizTalk \<version\> Accelerator for HL7**, and then select **Change**.</span></span> <span data-ttu-id="f9832-110">在 BTAHL7 安装向导中，选择**修改**。</span><span class="sxs-lookup"><span data-stu-id="f9832-110">In the BTAHL7 setup wizard, select **Modify**.</span></span> <span data-ttu-id="f9832-111">展开**适配器**文件夹以查看是否**MLLP 测试工具**已安装。</span><span class="sxs-lookup"><span data-stu-id="f9832-111">Expand the **Adapter** folder to see whether the **MLLP Test Tool** has been installed.</span></span> <span data-ttu-id="f9832-112">如果没有，请安装它。</span><span class="sxs-lookup"><span data-stu-id="f9832-112">If not, install it.</span></span>  
+   > [!NOTE]
+   >  <span data-ttu-id="5130c-107">如果找不到 SDK 文件夹下的处的 MLLP 实用程序文件夹，可能不会安装 MLLP 测试工具。</span><span class="sxs-lookup"><span data-stu-id="5130c-107">If you cannot find an MLLP Utilities folder under the SDK folder, the MLLP test tools may not be installed.</span></span> <span data-ttu-id="5130c-108">打开控制面板，然后打开**添加或删除程序**。</span><span class="sxs-lookup"><span data-stu-id="5130c-108">Open the Control Panel, and then open **Add or Remove Programs**.</span></span> <span data-ttu-id="5130c-109">选择**Microsoft BizTalk\<版本\>Accelerator for HL7**，然后选择**更改**。</span><span class="sxs-lookup"><span data-stu-id="5130c-109">Select **Microsoft BizTalk \<version\> Accelerator for HL7**, and then select **Change**.</span></span> <span data-ttu-id="5130c-110">在 BTAHL7 安装程序向导中，选择**修改**。</span><span class="sxs-lookup"><span data-stu-id="5130c-110">In the BTAHL7 setup wizard, select **Modify**.</span></span> <span data-ttu-id="5130c-111">展开**适配器**文件夹，以查看是否**MLLP 测试工具**已安装。</span><span class="sxs-lookup"><span data-stu-id="5130c-111">Expand the **Adapter** folder to see whether the **MLLP Test Tool** has been installed.</span></span> <span data-ttu-id="5130c-112">如果没有，请安装它。</span><span class="sxs-lookup"><span data-stu-id="5130c-112">If not, install it.</span></span>  
   
-3.  <span data-ttu-id="f9832-113">在命令提示符窗口中，键入**mllpreceive/p 14000**，然后按**Enter**。</span><span class="sxs-lookup"><span data-stu-id="f9832-113">In the Command Prompt window, type **mllpreceive /p 14000**, and then press **Enter**.</span></span> <span data-ttu-id="f9832-114">这运行 MLLP 侦听器应用程序侦听端口 14000 并指定 MLLP 消息中，默认 EB、 SB 和 CR 字符，并显示到屏幕接收任何消息。</span><span class="sxs-lookup"><span data-stu-id="f9832-114">This runs the MLLP listener application listening to port 14000 and specifying the default EB, SB, and CR characters of the MLLP message, and displays any messages received to the screen.</span></span>  
+3. <span data-ttu-id="5130c-113">在命令提示符窗口中，键入**mllpreceive/p 14000**，然后按**Enter**。</span><span class="sxs-lookup"><span data-stu-id="5130c-113">In the Command Prompt window, type **mllpreceive /p 14000**, and then press **Enter**.</span></span> <span data-ttu-id="5130c-114">此运行 MLLP 侦听器应用程序侦听端口 14000 并指定默认 EB、 SB 和 CR 字符的 MLLP 消息，并显示在屏幕上收到任何消息。</span><span class="sxs-lookup"><span data-stu-id="5130c-114">This runs the MLLP listener application listening to port 14000 and specifying the default EB, SB, and CR characters of the MLLP message, and displays any messages received to the screen.</span></span>  
   
-4.  <span data-ttu-id="f9832-115">通过单击启动其他的命令提示符**启动**，指向**程序**，指向**附件**，然后单击**命令提示符**.</span><span class="sxs-lookup"><span data-stu-id="f9832-115">Start an additional command prompt by clicking **Start**, point to **Programs**, point to **Accessories**, and then click **Command Prompt**.</span></span>  
+4. <span data-ttu-id="5130c-115">通过单击启动其他的命令提示符**启动**，依次指向**程序**，指向**附件**，然后单击**命令提示符下**.</span><span class="sxs-lookup"><span data-stu-id="5130c-115">Start an additional command prompt by clicking **Start**, point to **Programs**, point to **Accessories**, and then click **Command Prompt**.</span></span>  
   
-5.  <span data-ttu-id="f9832-116">在第二个命令提示符窗口中，将移到 **\<*驱动器*\>: files\microsoft BizTalk\<版本\>HL7\SDK\MLLP 实用工具快捷键**，然后按**Enter**。</span><span class="sxs-lookup"><span data-stu-id="f9832-116">In the second Command Prompt window, move to **\<*drive*\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\MLLP Utilities**, and then press **Enter**.</span></span>  
+5. <span data-ttu-id="5130c-116">在第二个命令提示符窗口中，转至 **\<*驱动器*\>: \Program Files\Microsoft BizTalk\<版本\>HL7\SDK\MLLP 实用工具加速器**，然后按**Enter**。</span><span class="sxs-lookup"><span data-stu-id="5130c-116">In the second Command Prompt window, move to **\<*drive*\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\MLLP Utilities**, and then press **Enter**.</span></span>  
   
-    > [!NOTE]
-    >  <span data-ttu-id="f9832-117">以下步骤将消息发送。</span><span class="sxs-lookup"><span data-stu-id="f9832-117">The following step sends the message.</span></span>  
+   > [!NOTE]
+   >  <span data-ttu-id="5130c-117">以下步骤将消息发送。</span><span class="sxs-lookup"><span data-stu-id="5130c-117">The following step sends the message.</span></span>  
   
-6.  <span data-ttu-id="f9832-118">在命令提示符窗口中，键入**mllpsend /SB 11 /EB 28 /CR 13 /f"\<*驱动器*\>: files\microsoft BizTalk\<版本\>HL7\SDK\ 快捷键端到端 Tutorial\ADT ^ A03.txt"**，其中\<*驱动器*\>是你安装驱动器号。</span><span class="sxs-lookup"><span data-stu-id="f9832-118">In the Command Prompt window, type **mllpsend /SB 11 /EB 28 /CR 13 /f "\<*drive*\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End-to-End Tutorial\ADT^A03.txt"**, where \<*drive*\> is your installation drive letter.</span></span> <span data-ttu-id="f9832-119">按 **Enter**。</span><span class="sxs-lookup"><span data-stu-id="f9832-119">Press **Enter**.</span></span>  
+6. <span data-ttu-id="5130c-118">在命令提示符窗口中，键入**mllpsend /SB 11 /EB 28 /CR 13 /f"\<*驱动器*\>: \Program Files\Microsoft BizTalk\<版本\>HL7\SDK\ 的快捷键端到端 Tutorial\ADT ^ A03.txt"**，其中\<*驱动器*\>是你安装的驱动器号。</span><span class="sxs-lookup"><span data-stu-id="5130c-118">In the Command Prompt window, type **mllpsend /SB 11 /EB 28 /CR 13 /f "\<*drive*\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End-to-End Tutorial\ADT^A03.txt"**, where \<*drive*\> is your installation drive letter.</span></span> <span data-ttu-id="5130c-119">按 **Enter**。</span><span class="sxs-lookup"><span data-stu-id="5130c-119">Press **Enter**.</span></span>  
   
-7.  <span data-ttu-id="f9832-120">请验证您具有以下结果：</span><span class="sxs-lookup"><span data-stu-id="f9832-120">Verify that you have the following results:</span></span>  
+7. <span data-ttu-id="5130c-120">验证具有以下结果：</span><span class="sxs-lookup"><span data-stu-id="5130c-120">Verify that you have the following results:</span></span>  
   
-    -   <span data-ttu-id="f9832-121">MLLP 侦听器应用程序应显示一条消息。</span><span class="sxs-lookup"><span data-stu-id="f9832-121">The MLLP listener application should display a message.</span></span> <span data-ttu-id="f9832-122">消息的第一行应具有以下值：</span><span class="sxs-lookup"><span data-stu-id="f9832-122">The first line of the message should have the following values:</span></span>  
+   -   <span data-ttu-id="5130c-121">MLLP 侦听器应用程序应显示一条消息。</span><span class="sxs-lookup"><span data-stu-id="5130c-121">The MLLP listener application should display a message.</span></span> <span data-ttu-id="5130c-122">消息的第一行应具有以下值：</span><span class="sxs-lookup"><span data-stu-id="5130c-122">The first line of the message should have the following values:</span></span>  
   
-        ```  
-        MSH|^~\&|BTAHL7^IE^UUID|MCM|HI^System^GUID||199601121005||ADT^A04|000001|P|2.4|||SU|NE  
-        ```  
+       ```  
+       MSH|^~\&|BTAHL7^IE^UUID|MCM|HI^System^GUID||199601121005||ADT^A04|000001|P|2.4|||SU|NE  
+       ```  
   
-    -   <span data-ttu-id="f9832-123">消息将出现在\<*驱动器*\>: files\microsoft BizTalk\<版本\>HL7\SDK\End 端到端 Tutorial\Tutorial_sendMsg_RX 快捷键。</span><span class="sxs-lookup"><span data-stu-id="f9832-123">A message appears in \<*drive*\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End-to-End Tutorial\Tutorial_sendMsg_RX.</span></span> <span data-ttu-id="f9832-124">此消息应显示 MLLP 侦听器应用程序的消息相同。</span><span class="sxs-lookup"><span data-stu-id="f9832-124">This message should be the same as the message shown by the MLLP listener application.</span></span> <span data-ttu-id="f9832-125">验证消息的第一行，如下所示具有相同的消息值。</span><span class="sxs-lookup"><span data-stu-id="f9832-125">Verify that the first line of the message has the same message values as follows.</span></span> <span data-ttu-id="f9832-126">请注意 MSH3 和 MSH5 下面的代码中的值与你为 Tutorial_RXSystem 指定的值匹配：</span><span class="sxs-lookup"><span data-stu-id="f9832-126">Note that the values for MSH3 a nd MSH5 in the following code match the values you specified for the Tutorial_RXSystem:</span></span>  
+   -   <span data-ttu-id="5130c-123">在出现一条消息\<*驱动器*\>: \Program Files\Microsoft BizTalk\<版本\>HL7\SDK\End 端到端 Tutorial\Tutorial_sendMsg_RX 的加速器。</span><span class="sxs-lookup"><span data-stu-id="5130c-123">A message appears in \<*drive*\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End-to-End Tutorial\Tutorial_sendMsg_RX.</span></span> <span data-ttu-id="5130c-124">此消息应处的 MLLP 侦听器应用程序所显示的消息相同。</span><span class="sxs-lookup"><span data-stu-id="5130c-124">This message should be the same as the message shown by the MLLP listener application.</span></span> <span data-ttu-id="5130c-125">验证消息的第一行具有相同的消息值，如下所示。</span><span class="sxs-lookup"><span data-stu-id="5130c-125">Verify that the first line of the message has the same message values as follows.</span></span> <span data-ttu-id="5130c-126">请注意，在下面的代码和 MSH5 MSH3 的值匹配 Tutorial_RXSystem 为指定的值：</span><span class="sxs-lookup"><span data-stu-id="5130c-126">Note that the values for MSH3 a nd MSH5 in the following code match the values you specified for the Tutorial_RXSystem:</span></span>  
   
-        ```  
-        MSH|^~\&|BTAHL7|MCM|Tutorial_RXSystem||199601121005||ADT^A03|000001|P|2.3.1  
-        ```  
+       ```  
+       MSH|^~\&|BTAHL7|MCM|Tutorial_RXSystem||199601121005||ADT^A03|000001|P|2.3.1  
+       ```  
   
-    -   <span data-ttu-id="f9832-127">两个消息将显示在\<*驱动器*\>: files\microsoft BizTalk\<版本\>HL7\SDK\End 端到端 Tutorial\Tutorial_sendAck_ADT 快捷键。</span><span class="sxs-lookup"><span data-stu-id="f9832-127">Two messages appear in \<*drive*\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End-to-End Tutorial\Tutorial_sendAck_ADT.</span></span> <span data-ttu-id="f9832-128">这些消息之一是应用程序确认;另一种是一个提交确认。</span><span class="sxs-lookup"><span data-stu-id="f9832-128">One of these messages is an application acknowledgment; the other is a commit acknowledgment.</span></span> <span data-ttu-id="f9832-129">该应用程序确认应具有以下内容：</span><span class="sxs-lookup"><span data-stu-id="f9832-129">The application acknowledgment should have the following content:</span></span>  
+   -   <span data-ttu-id="5130c-127">两个消息将显示在\<*驱动器*\>: \Program Files\Microsoft BizTalk\<版本\>HL7\SDK\End 端到端 Tutorial\Tutorial_sendAck_ADT 的加速器。</span><span class="sxs-lookup"><span data-stu-id="5130c-127">Two messages appear in \<*drive*\>:\Program Files\Microsoft BizTalk \<version\> Accelerator for HL7\SDK\End-to-End Tutorial\Tutorial_sendAck_ADT.</span></span> <span data-ttu-id="5130c-128">其中一条消息是应用程序确认;另一个是提交确认。</span><span class="sxs-lookup"><span data-stu-id="5130c-128">One of these messages is an application acknowledgment; the other is a commit acknowledgment.</span></span> <span data-ttu-id="5130c-129">应用程序确认应包含以下内容：</span><span class="sxs-lookup"><span data-stu-id="5130c-129">The application acknowledgment should have the following content:</span></span>  
   
-        ```  
-        MSH|^~\&|BTAHL7InterfaceEngine||Tutorial_ADTSystem|MCM|<datetime>||ACK^A03^ACK|000001|P|2.3.1|||AL  
-        MSA|AA|000001  
-        ```  
+       ```  
+       MSH|^~\&|BTAHL7InterfaceEngine||Tutorial_ADTSystem|MCM|<datetime>||ACK^A03^ACK|000001|P|2.3.1|||AL  
+       MSA|AA|000001  
+       ```  
   
-    -   <span data-ttu-id="f9832-130">提交确认应具有以下内容：</span><span class="sxs-lookup"><span data-stu-id="f9832-130">The commit acknowledgment should have the following content:</span></span>  
+   -   <span data-ttu-id="5130c-130">提交确认应包含以下内容：</span><span class="sxs-lookup"><span data-stu-id="5130c-130">The commit acknowledgment should have the following content:</span></span>  
   
-        ```  
-        MSH|^~\&|BTAHL7InterfaceEngine||Tutorial_ADTSystem|MCM|<datetime>||ACK^A03^ACK|100000|P|2.3.1  
-        MSA|CA|000001  
-        ```  
+       ```  
+       MSH|^~\&|BTAHL7InterfaceEngine||Tutorial_ADTSystem|MCM|<datetime>||ACK^A03^ACK|100000|P|2.3.1  
+       MSA|CA|000001  
+       ```  
   
-    > [!NOTE]
-    >  <span data-ttu-id="f9832-131">如果未正确显示消息，使用运行状况和活动跟踪 (HAT) 工具解决此错误。</span><span class="sxs-lookup"><span data-stu-id="f9832-131">If the messages do not appear correctly, use the Health and Activity Tracking (HAT) tool to troubleshoot the error.</span></span>  
+   > [!NOTE]
+   >  <span data-ttu-id="5130c-131">如果未正确显示消息，请使用运行状况与活动跟踪 (HAT) 工具解决该错误。</span><span class="sxs-lookup"><span data-stu-id="5130c-131">If the messages do not appear correctly, use the Health and Activity Tracking (HAT) tool to troubleshoot the error.</span></span>  
   
- <span data-ttu-id="f9832-132">恭喜！</span><span class="sxs-lookup"><span data-stu-id="f9832-132">Congratulations!</span></span> <span data-ttu-id="f9832-133">你已成功完成 BTAHL7 端到端教程。</span><span class="sxs-lookup"><span data-stu-id="f9832-133">You have successfully completed the BTAHL7 End-to-End Tutorial.</span></span>  
+   <span data-ttu-id="5130c-132">恭喜！</span><span class="sxs-lookup"><span data-stu-id="5130c-132">Congratulations!</span></span> <span data-ttu-id="5130c-133">已成功完成 BTAHL7 的端到端教程。</span><span class="sxs-lookup"><span data-stu-id="5130c-133">You have successfully completed the BTAHL7 End-to-End Tutorial.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="f9832-134">另请参阅</span><span class="sxs-lookup"><span data-stu-id="f9832-134">See Also</span></span>  
- [<span data-ttu-id="f9832-135">端到端教程</span><span class="sxs-lookup"><span data-stu-id="f9832-135">End-to-End Tutorial</span></span>](../../adapters-and-accelerators/accelerator-hl7/end-to-end-tutorial1.md)
+## <a name="see-also"></a><span data-ttu-id="5130c-134">请参阅</span><span class="sxs-lookup"><span data-stu-id="5130c-134">See Also</span></span>  
+ [<span data-ttu-id="5130c-135">端到端教程</span><span class="sxs-lookup"><span data-stu-id="5130c-135">End-to-End Tutorial</span></span>](../../adapters-and-accelerators/accelerator-hl7/end-to-end-tutorial1.md)

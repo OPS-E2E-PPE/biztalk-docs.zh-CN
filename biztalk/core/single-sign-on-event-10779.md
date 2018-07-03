@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10779 |Microsoft 文档
+title: 单一登录： 事件 10779 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e59844b5b4a2ab675e153bd87029fae857c37ba6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 362d1b5149b4ce74975915ff27ddf12b5db5fa6a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277781"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36983302"
 ---
-# <a name="single-sign-on-event-10779"></a><span data-ttu-id="fdaf4-102">单一登录： 事件 10779</span><span class="sxs-lookup"><span data-stu-id="fdaf4-102">Single Sign-On: Event 10779</span></span>
-## <a name="details"></a><span data-ttu-id="fdaf4-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="fdaf4-103">Details</span></span>  
+# <a name="single-sign-on-event-10779"></a><span data-ttu-id="cda6e-102">单一登录： 事件 10779</span><span class="sxs-lookup"><span data-stu-id="cda6e-102">Single Sign-On: Event 10779</span></span>
+## <a name="details"></a><span data-ttu-id="cda6e-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="cda6e-103">Details</span></span>  
   
-|||  
-|-|-|  
-|<span data-ttu-id="fdaf4-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="fdaf4-104">Product Name</span></span>|<span data-ttu-id="fdaf4-105">企业单一登录</span><span class="sxs-lookup"><span data-stu-id="fdaf4-105">Enterprise Single Sign-On</span></span>|  
-|<span data-ttu-id="fdaf4-106">产品版本</span><span class="sxs-lookup"><span data-stu-id="fdaf4-106">Product Version</span></span>|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|<span data-ttu-id="fdaf4-107">事件 ID</span><span class="sxs-lookup"><span data-stu-id="fdaf4-107">Event ID</span></span>|<span data-ttu-id="fdaf4-108">10779</span><span class="sxs-lookup"><span data-stu-id="fdaf4-108">10779</span></span>|  
-|<span data-ttu-id="fdaf4-109">事件源</span><span class="sxs-lookup"><span data-stu-id="fdaf4-109">Event Source</span></span>|<span data-ttu-id="fdaf4-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="fdaf4-110">ENTSSO</span></span>|  
-|<span data-ttu-id="fdaf4-111">组件</span><span class="sxs-lookup"><span data-stu-id="fdaf4-111">Component</span></span>|<span data-ttu-id="fdaf4-112">N/A</span><span class="sxs-lookup"><span data-stu-id="fdaf4-112">N/A</span></span>|  
-|<span data-ttu-id="fdaf4-113">符号名称</span><span class="sxs-lookup"><span data-stu-id="fdaf4-113">Symbolic Name</span></span>|<span data-ttu-id="fdaf4-114">ENTSSO_E_BACKUP_FILE_WRONG_PASSWORD</span><span class="sxs-lookup"><span data-stu-id="fdaf4-114">ENTSSO_E_BACKUP_FILE_WRONG_PASSWORD</span></span>|  
-|<span data-ttu-id="fdaf4-115">消息正文</span><span class="sxs-lookup"><span data-stu-id="fdaf4-115">Message Text</span></span>|<span data-ttu-id="fdaf4-116">为备份文件指定的密码不正确。</span><span class="sxs-lookup"><span data-stu-id="fdaf4-116">An incorrect password was specified for the backup file.</span></span>|  
+|                 |                                                            |
+|-----------------|------------------------------------------------------------|
+|  <span data-ttu-id="cda6e-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="cda6e-104">Product Name</span></span>   |                 <span data-ttu-id="cda6e-105">企业单一登录</span><span class="sxs-lookup"><span data-stu-id="cda6e-105">Enterprise Single Sign-On</span></span>                  |
+| <span data-ttu-id="cda6e-106">产品版本</span><span class="sxs-lookup"><span data-stu-id="cda6e-106">Product Version</span></span> | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
+|    <span data-ttu-id="cda6e-107">事件 ID</span><span class="sxs-lookup"><span data-stu-id="cda6e-107">Event ID</span></span>     |                           <span data-ttu-id="cda6e-108">10779</span><span class="sxs-lookup"><span data-stu-id="cda6e-108">10779</span></span>                            |
+|  <span data-ttu-id="cda6e-109">事件源</span><span class="sxs-lookup"><span data-stu-id="cda6e-109">Event Source</span></span>   |                           <span data-ttu-id="cda6e-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="cda6e-110">ENTSSO</span></span>                           |
+|    <span data-ttu-id="cda6e-111">组件</span><span class="sxs-lookup"><span data-stu-id="cda6e-111">Component</span></span>    |                            <span data-ttu-id="cda6e-112">N/A</span><span class="sxs-lookup"><span data-stu-id="cda6e-112">N/A</span></span>                             |
+|  <span data-ttu-id="cda6e-113">符号名称</span><span class="sxs-lookup"><span data-stu-id="cda6e-113">Symbolic Name</span></span>  |            <span data-ttu-id="cda6e-114">ENTSSO_E_BACKUP_FILE_WRONG_PASSWORD</span><span class="sxs-lookup"><span data-stu-id="cda6e-114">ENTSSO_E_BACKUP_FILE_WRONG_PASSWORD</span></span>             |
+|  <span data-ttu-id="cda6e-115">消息正文</span><span class="sxs-lookup"><span data-stu-id="cda6e-115">Message Text</span></span>   |  <span data-ttu-id="cda6e-116">为备份文件指定的密码不正确。</span><span class="sxs-lookup"><span data-stu-id="cda6e-116">An incorrect password was specified for the backup file.</span></span>  |
   
-## <a name="explanation"></a><span data-ttu-id="fdaf4-117">解释</span><span class="sxs-lookup"><span data-stu-id="fdaf4-117">Explanation</span></span>  
- <span data-ttu-id="fdaf4-118">为备份文件指定的密码不正确。</span><span class="sxs-lookup"><span data-stu-id="fdaf4-118">An incorrect password was specified for the backup file.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="cda6e-117">解释</span><span class="sxs-lookup"><span data-stu-id="cda6e-117">Explanation</span></span>  
+ <span data-ttu-id="cda6e-118">为备份文件指定的密码不正确。</span><span class="sxs-lookup"><span data-stu-id="cda6e-118">An incorrect password was specified for the backup file.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="fdaf4-119">用户操作</span><span class="sxs-lookup"><span data-stu-id="fdaf4-119">User Action</span></span>  
- <span data-ttu-id="fdaf4-120">输入正确的密码。</span><span class="sxs-lookup"><span data-stu-id="fdaf4-120">Enter the correct password.</span></span>
+## <a name="user-action"></a><span data-ttu-id="cda6e-119">用户操作</span><span class="sxs-lookup"><span data-stu-id="cda6e-119">User Action</span></span>  
+ <span data-ttu-id="cda6e-120">输入正确的密码。</span><span class="sxs-lookup"><span data-stu-id="cda6e-120">Enter the correct password.</span></span>

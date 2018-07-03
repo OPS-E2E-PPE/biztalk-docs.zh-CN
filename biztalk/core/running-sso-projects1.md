@@ -1,5 +1,5 @@
 ---
-title: 运行 SSO Projects1 |Microsoft 文档
+title: 运行 SSO Projects1 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,33 +16,33 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: beeeef2a18c32ed0779e5631ac316240e709702e
-ms.sourcegitcommit: 36350889f318e1f7e0ac9506dc8df794d475bda6
+ms.openlocfilehash: a0525578ca611217677c7b28d6065991d375e49a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "25972427"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36981678"
 ---
-# <a name="running-sso-projects"></a><span data-ttu-id="e3a49-102">运行 SSO 项目</span><span class="sxs-lookup"><span data-stu-id="e3a49-102">Running SSO Projects</span></span>
-<span data-ttu-id="e3a49-103">您可以从 Internet Explorer 中运行该示例。</span><span class="sxs-lookup"><span data-stu-id="e3a49-103">You can run the sample  from Internet Explorer.</span></span>  
+# <a name="running-sso-projects"></a><span data-ttu-id="f6dc0-102">运行 SSO 项目</span><span class="sxs-lookup"><span data-stu-id="f6dc0-102">Running SSO Projects</span></span>
+<span data-ttu-id="f6dc0-103">您可以从 Internet Explorer 中运行该示例。</span><span class="sxs-lookup"><span data-stu-id="f6dc0-103">You can run the sample  from Internet Explorer.</span></span>  
   
-## <a name="running-a-sample-from-internet-explorer"></a><span data-ttu-id="e3a49-104">从 Internet 资源管理器中运行示例</span><span class="sxs-lookup"><span data-stu-id="e3a49-104">Running a Sample from Internet Explorer</span></span>  
+## <a name="running-a-sample-from-internet-explorer"></a><span data-ttu-id="f6dc0-104">从 Internet Explorer 运行示例</span><span class="sxs-lookup"><span data-stu-id="f6dc0-104">Running a Sample from Internet Explorer</span></span>  
   
-#### <a name="to-run-the-sample-from-the-internet-explorer"></a><span data-ttu-id="e3a49-105">从 Internet Explorer 运行示例</span><span class="sxs-lookup"><span data-stu-id="e3a49-105">To run the sample from the Internet Explorer</span></span>  
+#### <a name="to-run-the-sample-from-the-internet-explorer"></a><span data-ttu-id="f6dc0-105">从 Internet Explorer 运行示例</span><span class="sxs-lookup"><span data-stu-id="f6dc0-105">To run the sample from the Internet Explorer</span></span>  
   
-1.  <span data-ttu-id="e3a49-106">打开浏览器。</span><span class="sxs-lookup"><span data-stu-id="e3a49-106">Open your browser.</span></span>  
+1. <span data-ttu-id="f6dc0-106">打开浏览器。</span><span class="sxs-lookup"><span data-stu-id="f6dc0-106">Open your browser.</span></span>  
   
-2.  <span data-ttu-id="e3a49-107">使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="e3a49-107">Use the following syntax:</span></span>  
+2. <span data-ttu-id="f6dc0-107">使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="f6dc0-107">Use the following syntax:</span></span>  
   
-    ```  
-    http://localhost/SSODemo/BTSHTTPReceive.dll?[Insert XML Instance body]   
-    ```  
+   ```  
+   http://localhost/SSODemo/BTSHTTPReceive.dll?[Insert XML Instance body]   
+   ```  
   
-     <span data-ttu-id="e3a49-108">例如：</span><span class="sxs-lookup"><span data-stu-id="e3a49-108">For example:</span></span>  
+    <span data-ttu-id="f6dc0-108">例如：</span><span class="sxs-lookup"><span data-stu-id="f6dc0-108">For example:</span></span>  
   
-     <span data-ttu-id="e3a49-109">http://localhost/SSODemo/BTSHTTPReceive.dll?<ns0:method_list_method%20xmlns:ns0="http://microsoft.com/exposed/object/object1"><ns0:method_list_method><ns1:method_list%20xmlns:ns1="http://microsoft.com/exposed/object"><ns1:comp_code></ns1:comp_code><ns1:comp_name></ns1:comp_name></ns1:object_1></ns0:method_list></ns0:method_list_method></span><span class="sxs-lookup"><span data-stu-id="e3a49-109">http://localhost/SSODemo/BTSHTTPReceive.dll?<ns0:method_list_method%20xmlns:ns0="http://microsoft.com/exposed/object/object1"><ns0:method_list_method><ns1:method_list%20xmlns:ns1="http://microsoft.com/exposed/object"><ns1:comp_code></ns1:comp_code><ns1:comp_name></ns1:comp_name></ns1:object_1></ns0:method_list></ns0:method_list_method></span></span>  
+    <span data-ttu-id="f6dc0-109">http://localhost/SSODemo/BTSHTTPReceive.dll?<ns0:method_list_method%20xmlns:ns0="http://microsoft.com/exposed/object/object1"><ns0:method_list_method><ns1:method_list%20xmlns:ns1="http://microsoft.com/exposed/object"><ns1:comp_code></ns1:comp_code><ns1:comp_name></ns1:comp_name></ns1:object_1></ns0:method_list></ns0:method_list_method></span><span class="sxs-lookup"><span data-stu-id="f6dc0-109">http://localhost/SSODemo/BTSHTTPReceive.dll?<ns0:method_list_method%20xmlns:ns0="http://microsoft.com/exposed/object/object1"><ns0:method_list_method><ns1:method_list%20xmlns:ns1="http://microsoft.com/exposed/object"><ns1:comp_code></ns1:comp_code><ns1:comp_name></ns1:comp_name></ns1:object_1></ns0:method_list></ns0:method_list_method></span></span>  
   
-     <span data-ttu-id="e3a49-110">在这种情况下，不必提供凭据。</span><span class="sxs-lookup"><span data-stu-id="e3a49-110">In this case you do not have to provide the credentials.</span></span>  
+    <span data-ttu-id="f6dc0-110">在这种情况下，不必提供凭据。</span><span class="sxs-lookup"><span data-stu-id="f6dc0-110">In this case you do not have to provide the credentials.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="e3a49-111">另请参阅</span><span class="sxs-lookup"><span data-stu-id="e3a49-111">See Also</span></span>  
- [<span data-ttu-id="e3a49-112">保护适配器</span><span class="sxs-lookup"><span data-stu-id="e3a49-112">Secure the adapter</span></span>](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)
+## <a name="see-also"></a><span data-ttu-id="f6dc0-111">请参阅</span><span class="sxs-lookup"><span data-stu-id="f6dc0-111">See Also</span></span>  
+ [<span data-ttu-id="f6dc0-112">保护适配器</span><span class="sxs-lookup"><span data-stu-id="f6dc0-112">Secure the adapter</span></span>](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)

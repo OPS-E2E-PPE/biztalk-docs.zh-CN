@@ -1,5 +1,5 @@
 ---
-title: 网络要求 |Microsoft 文档
+title: 网络要求 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f945201cb19f4281980583f847a587fb1c2f6ecc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dbc2db94a98e7bfca6b5fc5b9c16ceb304b5d22b
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22213965"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36988462"
 ---
-# <a name="network-requirements"></a><span data-ttu-id="429b8-102">网络要求</span><span class="sxs-lookup"><span data-stu-id="429b8-102">Network Requirements</span></span>
-<span data-ttu-id="429b8-103">你将需要以下的网络组件，来构建规定的部署体系结构：</span><span class="sxs-lookup"><span data-stu-id="429b8-103">You will need the following network components to build the prescribed deployment architecture:</span></span>  
-  
--   <span data-ttu-id="429b8-104">如的防火墙服务器[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]Internet Security and Acceleration (ISA) Server。</span><span class="sxs-lookup"><span data-stu-id="429b8-104">A firewall server such as the [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] Internet Security and Acceleration (ISA) Server.</span></span>
+# <a name="network-requirements"></a><span data-ttu-id="c6a8a-102">网络要求</span><span class="sxs-lookup"><span data-stu-id="c6a8a-102">Network Requirements</span></span>
+<span data-ttu-id="c6a8a-103">您将需要以下的网络组件，来构建规定的部署体系结构：</span><span class="sxs-lookup"><span data-stu-id="c6a8a-103">You will need the following network components to build the prescribed deployment architecture:</span></span>  
+
+- <span data-ttu-id="c6a8a-104">如 Microsoft Internet Security and Acceleration (ISA) Server 的服务器的防火墙。</span><span class="sxs-lookup"><span data-stu-id="c6a8a-104">A firewall server such as the Microsoft Internet Security and Acceleration (ISA) Server.</span></span>

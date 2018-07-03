@@ -1,5 +1,5 @@
 ---
-title: 步骤 6： 配置业务流程形状 (Contoso) |Microsoft 文档
+title: 步骤 6： 配置业务流程形状 (Contoso) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,94 +15,94 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9310e9b287f35876a137d13dbcc2d1fa39ba9588
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 31ffbdbe5cea810f08b5dc08b8d3dcae265c9f04
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26009382"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36980646"
 ---
-# <a name="step-6-configuring-orchestration-shapes-contoso"></a><span data-ttu-id="8414c-102">步骤 6： 配置业务流程形状 (Contoso)</span><span class="sxs-lookup"><span data-stu-id="8414c-102">Step 6: Configuring Orchestration Shapes (Contoso)</span></span>
-<span data-ttu-id="8414c-103">在此步骤中，你将配置添加到 PrivateResponder 业务流程中创建的业务流程形状[步骤 5： 修改 Contoso 私有进程业务流程](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)。</span><span class="sxs-lookup"><span data-stu-id="8414c-103">In this step, you configure the orchestration shapes you added to the PrivateResponder orchestration that you created in [Step 5: Modifying the Contoso Private Process Orchestration](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md).</span></span> <span data-ttu-id="8414c-104">这包括设置之间的通信[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server 和 Contoso 的企业资源规划 (ERP) 系统。</span><span class="sxs-lookup"><span data-stu-id="8414c-104">This includes setting up the communication between [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server and the Enterprise Resource Planning (ERP) system for Contoso.</span></span>  
+# <a name="step-6-configuring-orchestration-shapes-contoso"></a><span data-ttu-id="f80cf-102">步骤 6： 配置业务流程形状 (Contoso)</span><span class="sxs-lookup"><span data-stu-id="f80cf-102">Step 6: Configuring Orchestration Shapes (Contoso)</span></span>
+<span data-ttu-id="f80cf-103">在此步骤中，配置添加到你在中创建的 PrivateResponder 业务流程的业务流程形状[步骤 5： 修改 Contoso 专用业务流程](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)。</span><span class="sxs-lookup"><span data-stu-id="f80cf-103">In this step, you configure the orchestration shapes you added to the PrivateResponder orchestration that you created in [Step 5: Modifying the Contoso Private Process Orchestration](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md).</span></span> <span data-ttu-id="f80cf-104">这包括设置 Contoso 的 Microsoft® BizTalk Server 和企业资源规划 (ERP) 系统之间的通信。</span><span class="sxs-lookup"><span data-stu-id="f80cf-104">This includes setting up the communication between Microsoft® BizTalk Server and the Enterprise Resource Planning (ERP) system for Contoso.</span></span>  
   
-### <a name="to-configure-the-constructmessagepip3a2requestmessage-shape"></a><span data-ttu-id="8414c-105">配置 ConstructMessagePIP3A2RequestMessage 形状</span><span class="sxs-lookup"><span data-stu-id="8414c-105">To configure the ConstructMessagePIP3A2RequestMessage shape</span></span>  
+### <a name="to-configure-the-constructmessagepip3a2requestmessage-shape"></a><span data-ttu-id="f80cf-105">配置 ConstructMessagePIP3A2RequestMessage 形状</span><span class="sxs-lookup"><span data-stu-id="f80cf-105">To configure the ConstructMessagePIP3A2RequestMessage shape</span></span>  
   
-1.  <span data-ttu-id="8414c-106">在解决方案资源管理器，业务流程设计图面上选择，PrivateResponder.odx 选择**ConstructPIP3A2RequestMessage**形状。</span><span class="sxs-lookup"><span data-stu-id="8414c-106">With PrivateResponder.odx selected in Solution Explorer, on the orchestration design surface, select the **ConstructPIP3A2RequestMessage** shape.</span></span>  
+1.  <span data-ttu-id="f80cf-106">在解决方案资源管理器，在业务流程设计图面上，选中 privateresponder.odx 选择**ConstructPIP3A2RequestMessage**形状。</span><span class="sxs-lookup"><span data-stu-id="f80cf-106">With PrivateResponder.odx selected in Solution Explorer, on the orchestration design surface, select the **ConstructPIP3A2RequestMessage** shape.</span></span>  
   
-2.  <span data-ttu-id="8414c-107">在属性窗口中，选择**消息构造**属性中，选择**PIP3A2RequestMessage**从下拉列表，然后按**Enter**。</span><span class="sxs-lookup"><span data-stu-id="8414c-107">In the Properties window, select the **Messages Constructed** property, select **PIP3A2RequestMessage** from the drop-down list, and then press **Enter**.</span></span>  
+2.  <span data-ttu-id="f80cf-107">在属性窗口中，选择**构造的消息**属性中，选择**PIP3A2RequestMessage**从下拉列表，然后按**Enter**。</span><span class="sxs-lookup"><span data-stu-id="f80cf-107">In the Properties window, select the **Messages Constructed** property, select **PIP3A2RequestMessage** from the drop-down list, and then press **Enter**.</span></span>  
   
-3.  <span data-ttu-id="8414c-108">双击**消息分配**中调整**ConstructPIP3A2RequestMessage**形状以打开 BizTalk 表达式编辑器。</span><span class="sxs-lookup"><span data-stu-id="8414c-108">Double-click the **Message Assignment** shape in the **ConstructPIP3A2RequestMessage** shape to open BizTalk Expression Editor.</span></span>  
+3.  <span data-ttu-id="f80cf-108">双击**消息赋值**形状中**ConstructPIP3A2RequestMessage**形状以打开 BizTalk 表达式编辑器。</span><span class="sxs-lookup"><span data-stu-id="f80cf-108">Double-click the **Message Assignment** shape in the **ConstructPIP3A2RequestMessage** shape to open BizTalk Expression Editor.</span></span>  
   
-4.  <span data-ttu-id="8414c-109">在 BizTalk 表达式编辑器中，键入以下内容：</span><span class="sxs-lookup"><span data-stu-id="8414c-109">In BizTalk Expression Editor, type the following:</span></span>  
+4.  <span data-ttu-id="f80cf-109">在 BizTalk 表达式编辑器中，键入以下内容：</span><span class="sxs-lookup"><span data-stu-id="f80cf-109">In BizTalk Expression Editor, type the following:</span></span>  
   
     ```  
     PIP3A2RequestMessage = Helper.NormalizeHeader(Microsoft.Solutions.BTARN.Shared.SCContainer.ConvertFromContainer(ActionMessage));  
     ```  
   
-5.  <span data-ttu-id="8414c-110">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="8414c-110">Click **OK**.</span></span>  
+5.  <span data-ttu-id="f80cf-110">单击“确定” 。</span><span class="sxs-lookup"><span data-stu-id="f80cf-110">Click **OK**.</span></span>  
   
-### <a name="to-configure-the-constructcontoso3a2requestmessage-transform-shape"></a><span data-ttu-id="8414c-111">配置“ConstructContoso3A2RequestMessage 转换”形状</span><span class="sxs-lookup"><span data-stu-id="8414c-111">To configure the ConstructContoso3A2RequestMessage Transform shape</span></span>  
+### <a name="to-configure-the-constructcontoso3a2requestmessage-transform-shape"></a><span data-ttu-id="f80cf-111">配置“ConstructContoso3A2RequestMessage 转换”形状</span><span class="sxs-lookup"><span data-stu-id="f80cf-111">To configure the ConstructContoso3A2RequestMessage Transform shape</span></span>  
   
-1.  <span data-ttu-id="8414c-112">在业务流程设计图面上，单击**ConstructContoso3A2RequestMessage**形状。</span><span class="sxs-lookup"><span data-stu-id="8414c-112">On the orchestration design surface, click the **ConstructContoso3A2RequestMessage** shape.</span></span>  
+1.  <span data-ttu-id="f80cf-112">在业务流程设计图面上，单击**ConstructContoso3A2RequestMessage**形状。</span><span class="sxs-lookup"><span data-stu-id="f80cf-112">On the orchestration design surface, click the **ConstructContoso3A2RequestMessage** shape.</span></span>  
   
-2.  <span data-ttu-id="8414c-113">在属性窗口中，选择**构造消息**属性，，然后选择**Contoso3A2RequestMessage**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="8414c-113">In the Properties window, select the **Message Constructed** property, and then select **Contoso3A2RequestMessage** from the drop-down list.</span></span>  
+2.  <span data-ttu-id="f80cf-113">在属性窗口中，选择**构造的消息**属性，并选择**Contoso3A2RequestMessage**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="f80cf-113">In the Properties window, select the **Message Constructed** property, and then select **Contoso3A2RequestMessage** from the drop-down list.</span></span>  
   
-3.  <span data-ttu-id="8414c-114">选择**Transform_1**中调整**ConstructContoso3A2RequestMessage**形状。</span><span class="sxs-lookup"><span data-stu-id="8414c-114">Select the **Transform_1** shape within the **ConstructContoso3A2RequestMessage** shape.</span></span>  
+3.  <span data-ttu-id="f80cf-114">选择**Transform_1**形状内**ConstructContoso3A2RequestMessage**形状。</span><span class="sxs-lookup"><span data-stu-id="f80cf-114">Select the **Transform_1** shape within the **ConstructContoso3A2RequestMessage** shape.</span></span>  
   
-4.  <span data-ttu-id="8414c-115">在属性窗口中，选择**映射名称**属性，然后单击省略号按钮 (**...**) 以打开转换的配置对话框。</span><span class="sxs-lookup"><span data-stu-id="8414c-115">In the Properties window, select the **Map Name** property, and then click the ellipsis button (**…**) to open the Transform Configuration dialog box.</span></span>  
+4.  <span data-ttu-id="f80cf-115">在属性窗口中，选择**映射名称**属性，然后单击省略号按钮 (**...**) 以打开转换配置对话框。</span><span class="sxs-lookup"><span data-stu-id="f80cf-115">In the Properties window, select the **Map Name** property, and then click the ellipsis button (**…**) to open the Transform Configuration dialog box.</span></span>  
   
-5.  <span data-ttu-id="8414c-116">在转换的配置对话框中，单击**现有映射**，然后在**完全限定的映射名称框**，选择**\<从引用程序集中选择\>** 从下拉列表以打开选择项目类型对话框。</span><span class="sxs-lookup"><span data-stu-id="8414c-116">In the Transform Configuration dialog box, click **Existing Map**, and then in the **Fully Qualified Map Name box**, select **\<Select from Referenced Assembly\>** from the drop-down list to open the Select Artifact Type dialog box.</span></span>  
+5.  <span data-ttu-id="f80cf-116">在转换配置对话框中，单击**现有的映射**，然后在**完全限定的映射名称框**，选择**\<从引用的程序集中\>** 从下拉列表中打开选择项目类型对话框。</span><span class="sxs-lookup"><span data-stu-id="f80cf-116">In the Transform Configuration dialog box, click **Existing Map**, and then in the **Fully Qualified Map Name box**, select **\<Select from Referenced Assembly\>** from the drop-down list to open the Select Artifact Type dialog box.</span></span>  
   
-6.  <span data-ttu-id="8414c-117">在选择项目类型对话框中，选择**ContosoPriceAndAvailability**程序集在左窗格中，选择**PIP3A2RequestToContosoPriceRequest**映射在右窗格中，并依次**确定**。</span><span class="sxs-lookup"><span data-stu-id="8414c-117">In the Select Artifact Type dialog box, select the **ContosoPriceAndAvailability** assembly in the left pane, select **PIP3A2RequestToContosoPriceRequest** map in the right pane, and then click **OK**.</span></span>  
+6.  <span data-ttu-id="f80cf-117">在选择项目类型对话框中，选择**ContosoPriceAndAvailability**程序集的左窗格中选择**PIP3A2RequestToContosoPriceRequest**在右窗格中，映射，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="f80cf-117">In the Select Artifact Type dialog box, select the **ContosoPriceAndAvailability** assembly in the left pane, select **PIP3A2RequestToContosoPriceRequest** map in the right pane, and then click **OK**.</span></span>  
   
-7.  <span data-ttu-id="8414c-118">在转换的配置对话框中，选择**源**的左窗格中。</span><span class="sxs-lookup"><span data-stu-id="8414c-118">In the Transform Configuration dialog box, select **Source** in the left pane.</span></span>  
+7.  <span data-ttu-id="f80cf-118">在转换配置对话框中，选择**源**的左窗格中。</span><span class="sxs-lookup"><span data-stu-id="f80cf-118">In the Transform Configuration dialog box, select **Source** in the left pane.</span></span>  
   
-8.  <span data-ttu-id="8414c-119">单击下的空框中**变量名称**，然后选择**PIP3A2RequestMessage**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="8414c-119">Click the empty box under **Variable Name**, and then select **PIP3A2RequestMessage** from the drop-down list.</span></span>  
+8.  <span data-ttu-id="f80cf-119">单击下的空框**变量名**，然后选择**PIP3A2RequestMessage**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="f80cf-119">Click the empty box under **Variable Name**, and then select **PIP3A2RequestMessage** from the drop-down list.</span></span>  
   
-9. <span data-ttu-id="8414c-120">选择**目标**在左窗格中，单击**Contoso3A2RequestMessage**从**VariableName**下拉列表，然后单击**确定**.</span><span class="sxs-lookup"><span data-stu-id="8414c-120">Select **Destination** in the left pane, click **Contoso3A2RequestMessage** from the **VariableName** drop-down list, and then click **OK**.</span></span>  
+9. <span data-ttu-id="f80cf-120">选择**目标**在左窗格中，单击**Contoso3A2RequestMessage**从**VariableName**下拉列表中，并单击**确定**.</span><span class="sxs-lookup"><span data-stu-id="f80cf-120">Select **Destination** in the left pane, click **Contoso3A2RequestMessage** from the **VariableName** drop-down list, and then click **OK**.</span></span>  
   
-### <a name="to-configure-the-execute3a2vocabulary-call-rules-shape"></a><span data-ttu-id="8414c-121">配置“Execute3A2Vocabulary 调用规则”形状</span><span class="sxs-lookup"><span data-stu-id="8414c-121">To configure the Execute3A2Vocabulary Call Rules shape</span></span>  
+### <a name="to-configure-the-execute3a2vocabulary-call-rules-shape"></a><span data-ttu-id="f80cf-121">配置“Execute3A2Vocabulary 调用规则”形状</span><span class="sxs-lookup"><span data-stu-id="f80cf-121">To configure the Execute3A2Vocabulary Call Rules shape</span></span>  
   
-1.  <span data-ttu-id="8414c-122">在业务流程设计图面上，双击**Execute3A2Vocabulary**中调整**Scope_1**形状。</span><span class="sxs-lookup"><span data-stu-id="8414c-122">On the orchestration design surface, double-click the **Execute3A2Vocabulary** shape within the **Scope_1** shape.</span></span>  
+1.  <span data-ttu-id="f80cf-122">在业务流程设计图面上，双击**Execute3A2Vocabulary**形状内**Scope_1**形状。</span><span class="sxs-lookup"><span data-stu-id="f80cf-122">On the orchestration design surface, double-click the **Execute3A2Vocabulary** shape within the **Scope_1** shape.</span></span>  
   
-2.  <span data-ttu-id="8414c-123">在调用规则策略的配置对话框中，选择**3A2PriceAvailabilityPolicy**从**选择你想要调用的业务策略**下拉列表。</span><span class="sxs-lookup"><span data-stu-id="8414c-123">In the CallRules policy configuration dialog box, select **3A2PriceAvailabilityPolicy** from the **Select the business policy that you wish to call** drop-down list.</span></span>  
+2.  <span data-ttu-id="f80cf-123">在 CallRules 策略配置对话框中，选择**3A2PriceAvailabilityPolicy**从**选择你想要调用的业务策略**下拉列表。</span><span class="sxs-lookup"><span data-stu-id="f80cf-123">In the CallRules policy configuration dialog box, select **3A2PriceAvailabilityPolicy** from the **Select the business policy that you wish to call** drop-down list.</span></span>  
   
-3.  <span data-ttu-id="8414c-124">在**指定策略参数**列表中，单击**单击此处以添加新行**，然后选择**Contoso3A2ResponseMessage**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="8414c-124">In the **Specify policy parameters** list, click **Click here to add a new row**, and then select **Contoso3A2ResponseMessage** from the drop-down list.</span></span>  
+3.  <span data-ttu-id="f80cf-124">在中**指定策略参数**列表中，单击**单击此处可添加新行**，然后选择**Contoso3A2ResponseMessage**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="f80cf-124">In the **Specify policy parameters** list, click **Click here to add a new row**, and then select **Contoso3A2ResponseMessage** from the drop-down list.</span></span>  
   
-4.  <span data-ttu-id="8414c-125">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="8414c-125">Click **OK**.</span></span>  
+4.  <span data-ttu-id="f80cf-125">单击“确定” 。</span><span class="sxs-lookup"><span data-stu-id="f80cf-125">Click **OK**.</span></span>  
   
-### <a name="to-configure-the-construct3a2responsemessage-transform-shape"></a><span data-ttu-id="8414c-126">配置“Construct3A2ResponseMessage 转换”形状</span><span class="sxs-lookup"><span data-stu-id="8414c-126">To configure the Construct3A2ResponseMessage Transform shape</span></span>  
+### <a name="to-configure-the-construct3a2responsemessage-transform-shape"></a><span data-ttu-id="f80cf-126">配置“Construct3A2ResponseMessage 转换”形状</span><span class="sxs-lookup"><span data-stu-id="f80cf-126">To configure the Construct3A2ResponseMessage Transform shape</span></span>  
   
-1.  <span data-ttu-id="8414c-127">在业务流程设计图面上，单击**Construct3A2ResponseMessage**形状。</span><span class="sxs-lookup"><span data-stu-id="8414c-127">On the orchestration design surface, click the **Construct3A2ResponseMessage** shape.</span></span>  
+1. <span data-ttu-id="f80cf-127">在业务流程设计图面上，单击**Construct3A2ResponseMessage**形状。</span><span class="sxs-lookup"><span data-stu-id="f80cf-127">On the orchestration design surface, click the **Construct3A2ResponseMessage** shape.</span></span>  
   
-2.  <span data-ttu-id="8414c-128">在属性窗口中，选择**消息构造**属性，，然后选择**PIP3A2ResponseMessage**从下拉列表，然后按**Enter**。</span><span class="sxs-lookup"><span data-stu-id="8414c-128">In the Properties window, select the **Messages Constructed** property, and then select **PIP3A2ResponseMessage** from the drop-down list, and then press **Enter**.</span></span>  
+2. <span data-ttu-id="f80cf-128">在属性窗口中，选择**构造的消息**属性，并选择**PIP3A2ResponseMessage**从下拉列表，然后按**Enter**。</span><span class="sxs-lookup"><span data-stu-id="f80cf-128">In the Properties window, select the **Messages Constructed** property, and then select **PIP3A2ResponseMessage** from the drop-down list, and then press **Enter**.</span></span>  
   
-3.  <span data-ttu-id="8414c-129">选择**Transform_2**中调整**Construct3A2ResponseMessage**形状。</span><span class="sxs-lookup"><span data-stu-id="8414c-129">Select the **Transform_2** shape within the **Construct3A2ResponseMessage** shape.</span></span>  
+3. <span data-ttu-id="f80cf-129">选择**Transform_2**形状内**Construct3A2ResponseMessage**形状。</span><span class="sxs-lookup"><span data-stu-id="f80cf-129">Select the **Transform_2** shape within the **Construct3A2ResponseMessage** shape.</span></span>  
   
-4.  <span data-ttu-id="8414c-130">在属性窗口中，单击**映射名称**，然后单击省略号按钮 (**...**).</span><span class="sxs-lookup"><span data-stu-id="8414c-130">In the Properties window, click **Map Name**, and then click the ellipsis button (**…**).</span></span>  
+4. <span data-ttu-id="f80cf-130">在属性窗口中，单击**映射名称**，然后单击省略号按钮 (**...**).</span><span class="sxs-lookup"><span data-stu-id="f80cf-130">In the Properties window, click **Map Name**, and then click the ellipsis button (**…**).</span></span>  
   
-5.  <span data-ttu-id="8414c-131">在转换的配置对话框中，单击**新映射。**</span><span class="sxs-lookup"><span data-stu-id="8414c-131">In the Transform Configuration dialog box, click **New Map.**</span></span>  
+5. <span data-ttu-id="f80cf-131">在转换配置对话框中，单击**新映射。**</span><span class="sxs-lookup"><span data-stu-id="f80cf-131">In the Transform Configuration dialog box, click **New Map.**</span></span>  
   
-6.  <span data-ttu-id="8414c-132">在**完全限定的映射名称**框中，键入**ContosoPriceAndAvailability.ContosoResponse3A2RequestMerge**。</span><span class="sxs-lookup"><span data-stu-id="8414c-132">In the **Fully Qualified Map Name** box, type **ContosoPriceAndAvailability.ContosoResponse3A2RequestMerge**.</span></span>  
+6. <span data-ttu-id="f80cf-132">在中**完全限定的映射名称**框中，键入**ContosoPriceAndAvailability.ContosoResponse3A2RequestMerge**。</span><span class="sxs-lookup"><span data-stu-id="f80cf-132">In the **Fully Qualified Map Name** box, type **ContosoPriceAndAvailability.ContosoResponse3A2RequestMerge**.</span></span>  
   
-7.  <span data-ttu-id="8414c-133">在转换的配置对话框中，选择**源**的左窗格中。</span><span class="sxs-lookup"><span data-stu-id="8414c-133">In the Transform Configuration dialog box, select **Source** in the left pane.</span></span>  
+7. <span data-ttu-id="f80cf-133">在转换配置对话框中，选择**源**的左窗格中。</span><span class="sxs-lookup"><span data-stu-id="f80cf-133">In the Transform Configuration dialog box, select **Source** in the left pane.</span></span>  
   
-8.  <span data-ttu-id="8414c-134">单击**单击此处以添加新行**标记下**变量名称**，然后选择**PIP3A2RequestMessage**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="8414c-134">Click the **Click here to add a new row** label under **Variable Name**, and then select **PIP3A2RequestMessage** from the drop-down list.</span></span>  
+8. <span data-ttu-id="f80cf-134">单击**单击此处可添加新行**标签下**变量的名称**，然后选择**PIP3A2RequestMessage**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="f80cf-134">Click the **Click here to add a new row** label under **Variable Name**, and then select **PIP3A2RequestMessage** from the drop-down list.</span></span>  
   
-9. <span data-ttu-id="8414c-135">单击**单击此处以添加新行**标记下**变量名称**下一行，然后选择上**Contoso3A2ResponseMessage**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="8414c-135">Click the **Click here to add a new row** label under **Variable Name** on the next line, and then select **Contoso3A2ResponseMessage** from the drop-down list.</span></span>  
+9. <span data-ttu-id="f80cf-135">单击**单击此处可添加新行**标签下**变量的名称**下一行中，然后再选择**Contoso3A2ResponseMessage**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="f80cf-135">Click the **Click here to add a new row** label under **Variable Name** on the next line, and then select **Contoso3A2ResponseMessage** from the drop-down list.</span></span>  
   
-10. <span data-ttu-id="8414c-136">选择**目标**在左窗格中，选择**PIP3A2ResponseMessage**从**变量名称**下拉列表，然后单击**确定**.</span><span class="sxs-lookup"><span data-stu-id="8414c-136">Select **Destination** in the left pane, select **PIP3A2ResponseMessage** from the **Variable Name** drop-down list, and then click **OK**.</span></span>  
+10. <span data-ttu-id="f80cf-136">选择**目标**在左窗格中，选择**PIP3A2ResponseMessage**从**变量名称**下拉列表中，并单击**确定**.</span><span class="sxs-lookup"><span data-stu-id="f80cf-136">Select **Destination** in the left pane, select **PIP3A2ResponseMessage** from the **Variable Name** drop-down list, and then click **OK**.</span></span>  
   
-11. <span data-ttu-id="8414c-137">在解决方案资源管理器，右键单击**ContosoResponse3A2RequestMerge.btm**文件，，然后单击**打开**。</span><span class="sxs-lookup"><span data-stu-id="8414c-137">In Solution Explorer, right-click the **ContosoResponse3A2RequestMerge.btm** file, and then click **Open With**.</span></span>  
+11. <span data-ttu-id="f80cf-137">在解决方案资源管理器中右键单击**ContosoResponse3A2RequestMerge.btm**文件，，然后单击**打开**。</span><span class="sxs-lookup"><span data-stu-id="f80cf-137">In Solution Explorer, right-click the **ContosoResponse3A2RequestMerge.btm** file, and then click **Open With**.</span></span>  
   
-12. <span data-ttu-id="8414c-138">在**打开方式-ContosoResponse3A2RequestMerge.btm**对话框中，选择**XML 编辑器**从列表中的程序，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="8414c-138">In the **Open With - ContosoResponse3A2RequestMerge.btm** dialog box, select **XML Editor** from the list of programs, and then click **OK**.</span></span> <span data-ttu-id="8414c-139">单击 **“是”**。</span><span class="sxs-lookup"><span data-stu-id="8414c-139">Click **Yes**.</span></span>  
+12. <span data-ttu-id="f80cf-138">在中**打开方式-ContosoResponse3A2RequestMerge.btm**对话框中，选择**XML 编辑器**从列表中的程序，并单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="f80cf-138">In the **Open With - ContosoResponse3A2RequestMerge.btm** dialog box, select **XML Editor** from the list of programs, and then click **OK**.</span></span> <span data-ttu-id="f80cf-139">单击 **“是”**。</span><span class="sxs-lookup"><span data-stu-id="f80cf-139">Click **Yes**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="8414c-140">由于大量的所需的此映射的链接，本教程使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]2008 HTML/XML 编辑器，若要手动复制映射信息构造映射。</span><span class="sxs-lookup"><span data-stu-id="8414c-140">Due to the large number of links required for this map, this tutorial uses [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] 2008 HTML/XML Editor to construct the map by copying the map information manually.</span></span>  
+    >  <span data-ttu-id="f80cf-140">由于大量的所需的此映射的链接，本教程使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]2008 HTML/XML 编辑器来构造映射通过手动复制映射信息。</span><span class="sxs-lookup"><span data-stu-id="f80cf-140">Due to the large number of links required for this map, this tutorial uses [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] 2008 HTML/XML Editor to construct the map by copying the map information manually.</span></span>  
   
-13. <span data-ttu-id="8414c-141">上**编辑**菜单上，单击**选择所有**。</span><span class="sxs-lookup"><span data-stu-id="8414c-141">On the **Edit** menu, click **Select All**.</span></span>  
+13. <span data-ttu-id="f80cf-141">上**编辑**菜单上，单击**全**。</span><span class="sxs-lookup"><span data-stu-id="f80cf-141">On the **Edit** menu, click **Select All**.</span></span>  
   
-14. <span data-ttu-id="8414c-142">将以下 XML 复制到剪贴板中。</span><span class="sxs-lookup"><span data-stu-id="8414c-142">Copy the following XML to the clipboard.</span></span> <span data-ttu-id="8414c-143">上**编辑**菜单上，单击**粘贴**覆盖当前映射：</span><span class="sxs-lookup"><span data-stu-id="8414c-143">On the **Edit** menu, click **Paste** to overwrite the current map:</span></span>  
+14. <span data-ttu-id="f80cf-142">将以下 XML 复制到剪贴板中。</span><span class="sxs-lookup"><span data-stu-id="f80cf-142">Copy the following XML to the clipboard.</span></span> <span data-ttu-id="f80cf-143">上**编辑**菜单上，单击**粘贴**覆盖当前映射：</span><span class="sxs-lookup"><span data-stu-id="f80cf-143">On the **Edit** menu, click **Paste** to overwrite the current map:</span></span>  
   
     ```  
     <?xml version="1.0" encoding="utf-16"?>  
@@ -152,15 +152,15 @@ ms.locfileid: "26009382"
     }]]></Script></ScripterCode></Functoid><Functoid FunctoidID="3" X-Cell="54" Y-Cell="239" Functoid-FID="107" Functoid-Name="String Concatenate" Label=""><Input-Parameters><Parameter Type="Constant" Value="Response" Guid="{FA85B113-6FB4-4932-A125-5CF751A536B5}"/></Input-Parameters></Functoid></Functoids></Page></Pages></mapsource>  
     ```  
   
-15. <span data-ttu-id="8414c-144">在“文件”  菜单上，单击“全部保存” 。</span><span class="sxs-lookup"><span data-stu-id="8414c-144">On the **File** menu, click **Save All**.</span></span>  
+15. <span data-ttu-id="f80cf-144">在“文件”  菜单上，单击“全部保存” 。</span><span class="sxs-lookup"><span data-stu-id="f80cf-144">On the **File** menu, click **Save All**.</span></span>  
   
-### <a name="to-configure-the-expression1-shape"></a><span data-ttu-id="8414c-145">配置 Expression_1 形状</span><span class="sxs-lookup"><span data-stu-id="8414c-145">To configure the Expression_1 shape</span></span>  
+### <a name="to-configure-the-expression1-shape"></a><span data-ttu-id="f80cf-145">配置 Expression_1 形状</span><span class="sxs-lookup"><span data-stu-id="f80cf-145">To configure the Expression_1 shape</span></span>  
   
-1.  <span data-ttu-id="8414c-146">在解决方案资源管理器中，双击**PrivateResponder.odx**。</span><span class="sxs-lookup"><span data-stu-id="8414c-146">In Solution Explorer, double-click **PrivateResponder.odx**.</span></span>  
+1.  <span data-ttu-id="f80cf-146">在解决方案资源管理器中双击**PrivateResponder.odx**。</span><span class="sxs-lookup"><span data-stu-id="f80cf-146">In Solution Explorer, double-click **PrivateResponder.odx**.</span></span>  
   
-2.  <span data-ttu-id="8414c-147">在业务流程设计图面上，双击**Expression_1**形状以打开 BizTalk 表达式编辑器。</span><span class="sxs-lookup"><span data-stu-id="8414c-147">On the orchestration design surface, double-click the **Expression_1** shape to open BizTalk Expression Editor.</span></span>  
+2.  <span data-ttu-id="f80cf-147">在业务流程设计图面上，双击**Expression_1**形状以打开 BizTalk 表达式编辑器。</span><span class="sxs-lookup"><span data-stu-id="f80cf-147">On the orchestration design surface, double-click the **Expression_1** shape to open BizTalk Expression Editor.</span></span>  
   
-3.  <span data-ttu-id="8414c-148">在 BizTalk 表达式编辑器中，键入以下代码：</span><span class="sxs-lookup"><span data-stu-id="8414c-148">In BizTalk Expression Editor, type the following code:</span></span>  
+3.  <span data-ttu-id="f80cf-148">在 BizTalk 表达式编辑器中，键入以下代码：</span><span class="sxs-lookup"><span data-stu-id="f80cf-148">In BizTalk Expression Editor, type the following code:</span></span>  
   
     ```  
     contosoResponseXML = PIP3A2ResponseMessage;  
@@ -175,7 +175,7 @@ ms.locfileid: "26009382"
     Helper.ReturnSCWithDocType(contosoResponseXML) );  
     ```  
   
-4.  <span data-ttu-id="8414c-149">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="8414c-149">Click **OK**.</span></span>  
+4.  <span data-ttu-id="f80cf-149">单击“确定” 。</span><span class="sxs-lookup"><span data-stu-id="f80cf-149">Click **OK**.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="8414c-150">另请参阅</span><span class="sxs-lookup"><span data-stu-id="8414c-150">See Also</span></span>  
- [<span data-ttu-id="8414c-151">步骤 7：创建和配置端口</span><span class="sxs-lookup"><span data-stu-id="8414c-151">Step 7: Creating and Configuring Ports</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-7-creating-and-configuring-ports.md)
+## <a name="see-also"></a><span data-ttu-id="f80cf-150">请参阅</span><span class="sxs-lookup"><span data-stu-id="f80cf-150">See Also</span></span>  
+ [<span data-ttu-id="f80cf-151">步骤 7：创建和配置端口</span><span class="sxs-lookup"><span data-stu-id="f80cf-151">Step 7: Creating and Configuring Ports</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-7-creating-and-configuring-ports.md)

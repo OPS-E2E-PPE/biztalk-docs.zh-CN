@@ -1,6 +1,6 @@
 ---
-title: 管理资源 |Microsoft 文档
-description: 使用 btstask 或 BizTalk 管理的工作与程序集、 脚本、 证书、 绑定文件和多在 BizTalk Server 中
+title: 管理资源 |Microsoft Docs
+description: 使用 btstask 或 BizTalk 管理适用于程序集、 脚本、 证书、 绑定文件和 BizTalk Server 中的更多
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -13,48 +13,48 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 07248c1689adf6b6474fd8e1f3e01f2d660becdc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d9aad282dfb444c2947afca3cefc0a96cd806826
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262437"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37015110"
 ---
-# <a name="manage-resources"></a><span data-ttu-id="8076e-103">管理资源</span><span class="sxs-lookup"><span data-stu-id="8076e-103">Manage Resources</span></span>
+# <a name="manage-resources"></a><span data-ttu-id="e22e0-103">管理资源</span><span class="sxs-lookup"><span data-stu-id="e22e0-103">Manage Resources</span></span>
 
-## <a name="overview"></a><span data-ttu-id="8076e-104">概述</span><span class="sxs-lookup"><span data-stu-id="8076e-104">Overview</span></span>
-<span data-ttu-id="8076e-105">本部分中的主题介绍在将 BizTalk Server 资源部署到 BizTalk 组中之后如何使用 BizTalk Server 管理控制台或 BTSTask 命令行工具管理 BizTalk Server 资源。</span><span class="sxs-lookup"><span data-stu-id="8076e-105">The topics in this section provide instructions on how to use the BizTalk Server Administration console or the BTSTask command-line tool to manage BizTalk Server resources after they have been deployed into a BizTalk group.</span></span> <span data-ttu-id="8076e-106">资源包括以下几种类型的项目：</span><span class="sxs-lookup"><span data-stu-id="8076e-106">Resources include the following types of artifacts:</span></span>  
+## <a name="overview"></a><span data-ttu-id="e22e0-104">概述</span><span class="sxs-lookup"><span data-stu-id="e22e0-104">Overview</span></span>
+<span data-ttu-id="e22e0-105">本部分中的主题介绍在将 BizTalk Server 资源部署到 BizTalk 组中之后如何使用 BizTalk Server 管理控制台或 BTSTask 命令行工具管理 BizTalk Server 资源。</span><span class="sxs-lookup"><span data-stu-id="e22e0-105">The topics in this section provide instructions on how to use the BizTalk Server Administration console or the BTSTask command-line tool to manage BizTalk Server resources after they have been deployed into a BizTalk group.</span></span> <span data-ttu-id="e22e0-106">资源包括以下几种类型的项目：</span><span class="sxs-lookup"><span data-stu-id="e22e0-106">Resources include the following types of artifacts:</span></span>  
   
--   <span data-ttu-id="8076e-107">BizTalk 程序集</span><span class="sxs-lookup"><span data-stu-id="8076e-107">BizTalk Assemblies</span></span>  
+-   <span data-ttu-id="e22e0-107">BizTalk 程序集</span><span class="sxs-lookup"><span data-stu-id="e22e0-107">BizTalk Assemblies</span></span>  
   
--   <span data-ttu-id="8076e-108">预处理和后处理脚本</span><span class="sxs-lookup"><span data-stu-id="8076e-108">Pre- and post-processing scripts</span></span>  
+-   <span data-ttu-id="e22e0-108">预处理和后处理脚本</span><span class="sxs-lookup"><span data-stu-id="e22e0-108">Pre- and post-processing scripts</span></span>  
   
--   <span data-ttu-id="8076e-109">.NET 程序集</span><span class="sxs-lookup"><span data-stu-id="8076e-109">.NET assemblies</span></span>  
+-   <span data-ttu-id="e22e0-109">.NET 程序集</span><span class="sxs-lookup"><span data-stu-id="e22e0-109">.NET assemblies</span></span>  
   
--   <span data-ttu-id="8076e-110">COM 组件</span><span class="sxs-lookup"><span data-stu-id="8076e-110">COM components</span></span>  
+-   <span data-ttu-id="e22e0-110">COM 组件</span><span class="sxs-lookup"><span data-stu-id="e22e0-110">COM components</span></span>  
   
--   <span data-ttu-id="8076e-111">证书</span><span class="sxs-lookup"><span data-stu-id="8076e-111">Certificates</span></span>  
+-   <span data-ttu-id="e22e0-111">证书</span><span class="sxs-lookup"><span data-stu-id="e22e0-111">Certificates</span></span>  
   
--   <span data-ttu-id="8076e-112">特别文件</span><span class="sxs-lookup"><span data-stu-id="8076e-112">Ad hoc files</span></span>  
+-   <span data-ttu-id="e22e0-112">特别文件</span><span class="sxs-lookup"><span data-stu-id="e22e0-112">Ad hoc files</span></span>  
   
--   <span data-ttu-id="8076e-113">BAM 定义</span><span class="sxs-lookup"><span data-stu-id="8076e-113">BAM definitions</span></span>  
+-   <span data-ttu-id="e22e0-113">BAM 定义</span><span class="sxs-lookup"><span data-stu-id="e22e0-113">BAM definitions</span></span>  
   
--   <span data-ttu-id="8076e-114">绑定文件</span><span class="sxs-lookup"><span data-stu-id="8076e-114">Binding files</span></span>  
+-   <span data-ttu-id="e22e0-114">绑定文件</span><span class="sxs-lookup"><span data-stu-id="e22e0-114">Binding files</span></span>  
   
--   <span data-ttu-id="8076e-115">虚拟目录</span><span class="sxs-lookup"><span data-stu-id="8076e-115">Virtual directories</span></span>  
-  
-> [!NOTE]
->  <span data-ttu-id="8076e-116">Microsoft Windows Management Instrumentation (WMI) 对象模型可用于创建和运行自动执行管理任务的脚本。</span><span class="sxs-lookup"><span data-stu-id="8076e-116">You can use Microsoft Windows Management Instrumentation (WMI) Object Model to create and run scripts that automate administrative tasks.</span></span> <span data-ttu-id="8076e-117">有关使用 WMI 的信息，请参阅**WMI 类引用** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。</span><span class="sxs-lookup"><span data-stu-id="8076e-117">For information about using WMI, see the **WMI Class Reference** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].</span></span>
+-   <span data-ttu-id="e22e0-115">虚拟目录</span><span class="sxs-lookup"><span data-stu-id="e22e0-115">Virtual directories</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="8076e-118">在任何情况下都不要向 BizTalk Server 组中添加具有相同名称的多个资源。</span><span class="sxs-lookup"><span data-stu-id="8076e-118">Do not add multiple resources with the same name, regardless of case, to a BizTalk Server group.</span></span> <span data-ttu-id="8076e-119">不支持向 BizTalk Server 组中添加具有相同名称的多个资源，即使 BizTalk Server 管理数据库存储在配置成使用二进制排序规则并区分大小写的 SQL Server 上也如此。</span><span class="sxs-lookup"><span data-stu-id="8076e-119">Adding multiple resources with the same name to a BizTalk Server group is not supported, even when the BizTalk Server management database is housed on a SQL Server that is configured to use binary collation and supports case sensitivity.</span></span>  
+>  <span data-ttu-id="e22e0-116">Microsoft Windows Management Instrumentation (WMI) 对象模型可用于创建和运行自动执行管理任务的脚本。</span><span class="sxs-lookup"><span data-stu-id="e22e0-116">You can use Microsoft Windows Management Instrumentation (WMI) Object Model to create and run scripts that automate administrative tasks.</span></span> <span data-ttu-id="e22e0-117">有关使用 WMI 的信息，请参阅**WMI 类引用** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。</span><span class="sxs-lookup"><span data-stu-id="e22e0-117">For information about using WMI, see the **WMI Class Reference** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].</span></span>
+> 
+> [!NOTE]
+>  <span data-ttu-id="e22e0-118">在任何情况下都不要向 BizTalk Server 组中添加具有相同名称的多个资源。</span><span class="sxs-lookup"><span data-stu-id="e22e0-118">Do not add multiple resources with the same name, regardless of case, to a BizTalk Server group.</span></span> <span data-ttu-id="e22e0-119">不支持向 BizTalk Server 组中添加具有相同名称的多个资源，即使 BizTalk Server 管理数据库存储在配置成使用二进制排序规则并区分大小写的 SQL Server 上也如此。</span><span class="sxs-lookup"><span data-stu-id="e22e0-119">Adding multiple resources with the same name to a BizTalk Server group is not supported, even when the BizTalk Server management database is housed on a SQL Server that is configured to use binary collation and supports case sensitivity.</span></span>  
   
-## <a name="next-steps"></a><span data-ttu-id="8076e-120">后续步骤</span><span class="sxs-lookup"><span data-stu-id="8076e-120">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="e22e0-120">后续步骤</span><span class="sxs-lookup"><span data-stu-id="e22e0-120">Next steps</span></span>
   
--   [<span data-ttu-id="8076e-121">管理 BizTalk 程序集</span><span class="sxs-lookup"><span data-stu-id="8076e-121">Managing BizTalk Assemblies</span></span>](../core/managing-biztalk-assemblies.md)  
+-   [<span data-ttu-id="e22e0-121">管理 BizTalk 程序集</span><span class="sxs-lookup"><span data-stu-id="e22e0-121">Managing BizTalk Assemblies</span></span>](../core/managing-biztalk-assemblies.md)  
   
--   [<span data-ttu-id="8076e-122">管理前期和后期处理脚本</span><span class="sxs-lookup"><span data-stu-id="8076e-122">Managing Pre- and Post-processing Scripts</span></span>](../core/managing-pre-and-post-processing-scripts.md)  
+-   [<span data-ttu-id="e22e0-122">管理预处理脚本和后期处理脚本</span><span class="sxs-lookup"><span data-stu-id="e22e0-122">Managing Pre- and Post-processing Scripts</span></span>](../core/managing-pre-and-post-processing-scripts.md)  
   
--   [<span data-ttu-id="8076e-123">管理.NET 程序集、 证书和其他资源</span><span class="sxs-lookup"><span data-stu-id="8076e-123">Managing .NET Assemblies, Certificates, and Other Resources</span></span>](../core/managing-net-assemblies-certificates-and-other-resources.md)  
+-   [<span data-ttu-id="e22e0-123">管理 .NET 程序集、证书和其他资源</span><span class="sxs-lookup"><span data-stu-id="e22e0-123">Managing .NET Assemblies, Certificates, and Other Resources</span></span>](../core/managing-net-assemblies-certificates-and-other-resources.md)  
   
--   [<span data-ttu-id="8076e-124">刷新资源</span><span class="sxs-lookup"><span data-stu-id="8076e-124">Refresh a Resource</span></span>](../core/how-to-refresh-a-resource.md)
+-   [<span data-ttu-id="e22e0-124">刷新资源</span><span class="sxs-lookup"><span data-stu-id="e22e0-124">Refresh a Resource</span></span>](../core/how-to-refresh-a-resource.md)
