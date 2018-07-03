@@ -1,5 +1,5 @@
 ---
-title: ESB 管道互操作组件 |Microsoft 文档
+title: ESB 管道互操作组件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ccf4d4353e6928b998d31e8096ee642cd80bb60a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 794ce6407d10fc820444384550357f10d24f7723
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294125"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37024236"
 ---
-# <a name="esb-pipeline-interop-components"></a><span data-ttu-id="5286e-102">ESB 管道互操作组件</span><span class="sxs-lookup"><span data-stu-id="5286e-102">ESB Pipeline Interop Components</span></span>
-<span data-ttu-id="5286e-103">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]提供支持组件和服务，其中包括：</span><span class="sxs-lookup"><span data-stu-id="5286e-103">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] provides support components and services, including the following:</span></span>  
+# <a name="esb-pipeline-interop-components"></a><span data-ttu-id="31d61-102">ESB 管道互操作组件</span><span class="sxs-lookup"><span data-stu-id="31d61-102">ESB Pipeline Interop Components</span></span>
+<span data-ttu-id="31d61-103">[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]提供支持组件和服务，包括以下：</span><span class="sxs-lookup"><span data-stu-id="31d61-103">The [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] provides support components and services, including the following:</span></span>  
   
--   <span data-ttu-id="5286e-104">**JMS 管道组件。**</span><span class="sxs-lookup"><span data-stu-id="5286e-104">**JMS pipeline components.**</span></span> <span data-ttu-id="5286e-105">这些组件识别、 验证和公开元数据和符合使用 IBM MQ 系列消息传递系统的 JMS MQRFH2 格式的消息的内容。</span><span class="sxs-lookup"><span data-stu-id="5286e-105">These components recognize, validate, and expose metadata and the content of messages that conform to the JMS MQRFH2 format used by IBM MQ Series messaging systems.</span></span> <span data-ttu-id="5286e-106">此功能允许[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]应用程序接收来自消息，并通过 MQ 系列将消息发送到 JMS 系统。</span><span class="sxs-lookup"><span data-stu-id="5286e-106">This functionality allows a [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] application to receive messages from and send messages to JMS systems over MQ Series.</span></span> <span data-ttu-id="5286e-107">组件自动提升到，标头信息，并对其进行降级从消息内容。</span><span class="sxs-lookup"><span data-stu-id="5286e-107">The components automatically promote header information into, and demote it from, the message content.</span></span>  
+- <span data-ttu-id="31d61-104">**JMS 管道组件。**</span><span class="sxs-lookup"><span data-stu-id="31d61-104">**JMS pipeline components.**</span></span> <span data-ttu-id="31d61-105">这些组件识别、 验证和公开元数据和遵守使用 IBM MQ Series 的消息传递系统的 JMS MQRFH2 格式的消息的内容。</span><span class="sxs-lookup"><span data-stu-id="31d61-105">These components recognize, validate, and expose metadata and the content of messages that conform to the JMS MQRFH2 format used by IBM MQ Series messaging systems.</span></span> <span data-ttu-id="31d61-106">此功能允许[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]应用程序接收消息并通过 MQ Series 将消息发送到 JMS 系统。</span><span class="sxs-lookup"><span data-stu-id="31d61-106">This functionality allows a [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] application to receive messages from and send messages to JMS systems over MQ Series.</span></span> <span data-ttu-id="31d61-107">组件会自动将提升到，标头信息和从消息内容对其进行降级。</span><span class="sxs-lookup"><span data-stu-id="31d61-107">The components automatically promote header information into, and demote it from, the message content.</span></span>  
   
--   <span data-ttu-id="5286e-108">**Namespace 管道组件。**</span><span class="sxs-lookup"><span data-stu-id="5286e-108">**Namespace pipeline components.**</span></span> <span data-ttu-id="5286e-109">这些组件可以添加或删除命名空间中的 XML 消息的内容。</span><span class="sxs-lookup"><span data-stu-id="5286e-109">These components can add or remove namespaces in the content of XML messages.</span></span> <span data-ttu-id="5286e-110">这允许应用程序来修复冲突的命名空间或添加缺少的命名空间，以防止在消息框数据库和应用程序业务流程中的命名空间冲突。</span><span class="sxs-lookup"><span data-stu-id="5286e-110">This allows applications to repair conflicting namespaces or add missing namespaces to prevent namespace collisions within the Message Box database and application orchestrations.</span></span> <span data-ttu-id="5286e-111">组件还允许 BizTalk 服务器而无需修改外部发布系统使用 POX (Plain Old XML)。</span><span class="sxs-lookup"><span data-stu-id="5286e-111">The components also allow BizTalk Server to consume POX (Plain Old XML) without modifying external publishing systems.</span></span>  
+- <span data-ttu-id="31d61-108">**Namespace 管道组件。**</span><span class="sxs-lookup"><span data-stu-id="31d61-108">**Namespace pipeline components.**</span></span> <span data-ttu-id="31d61-109">这些组件可以添加或删除命名空间中的 XML 消息的内容。</span><span class="sxs-lookup"><span data-stu-id="31d61-109">These components can add or remove namespaces in the content of XML messages.</span></span> <span data-ttu-id="31d61-110">这样，应用程序来修复冲突的命名空间或添加缺少的命名空间以避免在 Messagebox 数据库和应用程序业务流程中的命名空间冲突。</span><span class="sxs-lookup"><span data-stu-id="31d61-110">This allows applications to repair conflicting namespaces or add missing namespaces to prevent namespace collisions within the Message Box database and application orchestrations.</span></span> <span data-ttu-id="31d61-111">组件还允许 BizTalk Server 使用 POX (Plain Old XML)，而无需修改外部发布系统。</span><span class="sxs-lookup"><span data-stu-id="31d61-111">The components also allow BizTalk Server to consume POX (Plain Old XML) without modifying external publishing systems.</span></span>  
   
- <span data-ttu-id="5286e-112">有关 ESB 管道组件的详细信息，请参阅[使用管道支持组件](../esb-toolkit/using-the-pipeline-support-components.md)。</span><span class="sxs-lookup"><span data-stu-id="5286e-112">For more information about the ESB pipeline components, see [Using the Pipeline Support Components](../esb-toolkit/using-the-pipeline-support-components.md).</span></span>
+  <span data-ttu-id="31d61-112">ESB 管道组件的详细信息，请参阅[使用管道支持组件](../esb-toolkit/using-the-pipeline-support-components.md)。</span><span class="sxs-lookup"><span data-stu-id="31d61-112">For more information about the ESB pipeline components, see [Using the Pipeline Support Components](../esb-toolkit/using-the-pipeline-support-components.md).</span></span>
