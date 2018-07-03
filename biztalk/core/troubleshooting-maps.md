@@ -1,5 +1,5 @@
 ---
-title: 排除地图故障 |Microsoft 文档
+title: 排除地图故障 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,62 +12,62 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7bb7b3dc8356172989c215dc13e5fd82e46f4689
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: b9ba1a547b2df8531568959b0b9fa00a600cef21
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25974611"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37021851"
 ---
-# <a name="troubleshooting-maps"></a><span data-ttu-id="681e3-102">排除地图故障</span><span class="sxs-lookup"><span data-stu-id="681e3-102">Troubleshooting Maps</span></span>
-<span data-ttu-id="681e3-103">本主题提供故障排除策略和问题详细信息和映射的解决方法信息。</span><span class="sxs-lookup"><span data-stu-id="681e3-103">This topic provides troubleshooting strategies and problem detail and resolution information for maps.</span></span>  
+# <a name="troubleshooting-maps"></a><span data-ttu-id="69ce6-102">排除地图故障</span><span class="sxs-lookup"><span data-stu-id="69ce6-102">Troubleshooting Maps</span></span>
+<span data-ttu-id="69ce6-103">本主题提供的故障排除策略和问题详细信息并将映射的解决方法信息。</span><span class="sxs-lookup"><span data-stu-id="69ce6-103">This topic provides troubleshooting strategies and problem detail and resolution information for maps.</span></span>  
   
-## <a name="troubleshooting-strategies"></a><span data-ttu-id="681e3-104">故障排除策略</span><span class="sxs-lookup"><span data-stu-id="681e3-104">Troubleshooting Strategies</span></span>  
+## <a name="troubleshooting-strategies"></a><span data-ttu-id="69ce6-104">故障排除策略</span><span class="sxs-lookup"><span data-stu-id="69ce6-104">Troubleshooting Strategies</span></span>  
   
-### <a name="validate-your-map"></a><span data-ttu-id="681e3-105">验证你的代码图</span><span class="sxs-lookup"><span data-stu-id="681e3-105">Validate your map</span></span>  
- <span data-ttu-id="681e3-106">这可能看起来很明显，但你应始终验证你在其开发整个的不同点的代码图。</span><span class="sxs-lookup"><span data-stu-id="681e3-106">This may sound obvious, but you should always validate your map at different points throughout its development.</span></span> <span data-ttu-id="681e3-107">这将帮助在时很容易地修复这些属性或查找替代解决方案开发周期的初期识别设计、 逻辑和架构的问题。</span><span class="sxs-lookup"><span data-stu-id="681e3-107">This will help identify design, logic, and schema problems early in the development cycle when it is easier to fix them or find an alternative solution.</span></span>  
+### <a name="validate-your-map"></a><span data-ttu-id="69ce6-105">验证您的映射</span><span class="sxs-lookup"><span data-stu-id="69ce6-105">Validate your map</span></span>  
+ <span data-ttu-id="69ce6-106">这听起来可能很明显，但您应始终验证您在其开发过程的不同点的映射。</span><span class="sxs-lookup"><span data-stu-id="69ce6-106">This may sound obvious, but you should always validate your map at different points throughout its development.</span></span> <span data-ttu-id="69ce6-107">这将有助于在时更轻松地解决问题，或寻求替代解决方案的开发周期早期确定设计、 逻辑和架构问题。</span><span class="sxs-lookup"><span data-stu-id="69ce6-107">This will help identify design, logic, and schema problems early in the development cycle when it is easier to fix them or find an alternative solution.</span></span>  
   
-##### <a name="to-validate-a-biztalk-map"></a><span data-ttu-id="681e3-108">若要验证 BizTalk 映射</span><span class="sxs-lookup"><span data-stu-id="681e3-108">To validate a BizTalk map</span></span>  
+##### <a name="to-validate-a-biztalk-map"></a><span data-ttu-id="69ce6-108">若要验证 BizTalk 映射</span><span class="sxs-lookup"><span data-stu-id="69ce6-108">To validate a BizTalk map</span></span>  
   
-1.  <span data-ttu-id="681e3-109">在解决方案资源管理器，打开你想要验证的映射。</span><span class="sxs-lookup"><span data-stu-id="681e3-109">In Solution Explorer, open the map that you want to validate.</span></span>  
+1.  <span data-ttu-id="69ce6-109">在解决方案资源管理器，打开你想要验证的映射。</span><span class="sxs-lookup"><span data-stu-id="69ce6-109">In Solution Explorer, open the map that you want to validate.</span></span>  
   
-2.  <span data-ttu-id="681e3-110">在解决方案资源管理器，请右键单击映射，，然后单击**验证映射**。</span><span class="sxs-lookup"><span data-stu-id="681e3-110">In Solution Explorer, right-click the map, and then click **Validate Map**.</span></span>  
+2.  <span data-ttu-id="69ce6-110">在解决方案资源管理器，右键单击该映射，然后单击**验证映射**。</span><span class="sxs-lookup"><span data-stu-id="69ce6-110">In Solution Explorer, right-click the map, and then click **Validate Map**.</span></span>  
   
-3.  <span data-ttu-id="681e3-111">在输出窗口中，验证结果。</span><span class="sxs-lookup"><span data-stu-id="681e3-111">In the Output window, verify the results.</span></span>  
+3.  <span data-ttu-id="69ce6-111">在输出窗口中，验证结果。</span><span class="sxs-lookup"><span data-stu-id="69ce6-111">In the Output window, verify the results.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="681e3-112">当验证映射时，测试实例数据将不检查以查看它是否与架构中定义的任何数据类型冲突。</span><span class="sxs-lookup"><span data-stu-id="681e3-112">When you validate a map, your test instance data is not checked to see if it violates any data types defined in the schemas.</span></span> <span data-ttu-id="681e3-113">测试映射或验证实例数据在 BizTalk 编辑器时，你可以检查实例数据。</span><span class="sxs-lookup"><span data-stu-id="681e3-113">You can check the instance data when you test the map or validate the instance data in BizTalk Editor.</span></span>  
+>  <span data-ttu-id="69ce6-112">时验证映射，则不检查您的测试实例数据以查看它是否与在架构中定义的任何数据类型冲突。</span><span class="sxs-lookup"><span data-stu-id="69ce6-112">When you validate a map, your test instance data is not checked to see if it violates any data types defined in the schemas.</span></span> <span data-ttu-id="69ce6-113">测试映射或验证实例数据在 BizTalk 编辑器中时，可以检查实例数据。</span><span class="sxs-lookup"><span data-stu-id="69ce6-113">You can check the instance data when you test the map or validate the instance data in BizTalk Editor.</span></span>  
   
-### <a name="review-the-xslt-generated-for-your-map"></a><span data-ttu-id="681e3-114">查看为你的代码图生成 XSLT</span><span class="sxs-lookup"><span data-stu-id="681e3-114">Review the XSLT generated for your map</span></span>  
- <span data-ttu-id="681e3-115">通常它可用于检查由映射编译器生成的 XSLT。</span><span class="sxs-lookup"><span data-stu-id="681e3-115">It is often useful to inspect the XSLT generated by the map compiler.</span></span> <span data-ttu-id="681e3-116">一些检查 XSLT 的优势包括：</span><span class="sxs-lookup"><span data-stu-id="681e3-116">Some of the benefits of inspecting XSLT include:</span></span>  
+### <a name="review-the-xslt-generated-for-your-map"></a><span data-ttu-id="69ce6-114">查看为您的映射生成的 XSLT</span><span class="sxs-lookup"><span data-stu-id="69ce6-114">Review the XSLT generated for your map</span></span>  
+ <span data-ttu-id="69ce6-115">通常它可用于检查映射编译器生成的 XSLT。</span><span class="sxs-lookup"><span data-stu-id="69ce6-115">It is often useful to inspect the XSLT generated by the map compiler.</span></span> <span data-ttu-id="69ce6-116">检查 XSLT 的优势包括：</span><span class="sxs-lookup"><span data-stu-id="69ce6-116">Some of the benefits of inspecting XSLT include:</span></span>  
   
--   <span data-ttu-id="681e3-117">如果使用循环或自定义 functoid，你将更好地了解如何执行循环如何调用自定义 functoid。</span><span class="sxs-lookup"><span data-stu-id="681e3-117">If you are using looping or custom functoids, you will better understand how the looping is performed and how the custom functoid is invoked.</span></span>  
+- <span data-ttu-id="69ce6-117">如果使用循环或自定义 functoid 时，将更好地了解如何执行循环和如何调用自定义 functoid。</span><span class="sxs-lookup"><span data-stu-id="69ce6-117">If you are using looping or custom functoids, you will better understand how the looping is performed and how the custom functoid is invoked.</span></span>  
   
--   <span data-ttu-id="681e3-118">如果你具有复杂的代码图，查看 XSLT 将使你可以看到如何映射转换成一个转换和可能意味着赋予您了解如何更好的结构、 替换或简化其中一个或多个部件。</span><span class="sxs-lookup"><span data-stu-id="681e3-118">If you have a complicated map, reviewing the XSLT will enable you to see how the map is translated into a transform and may give you insight about how to better structure, replace, or streamline one or more parts.</span></span>  
+- <span data-ttu-id="69ce6-118">如果你具有复杂的代码图，查看 XSLT 将允许您看到如何映射翻译为转换并可能提供了有关如何了解更好地构造、 替换或简化一个或多个部分。</span><span class="sxs-lookup"><span data-stu-id="69ce6-118">If you have a complicated map, reviewing the XSLT will enable you to see how the map is translated into a transform and may give you insight about how to better structure, replace, or streamline one or more parts.</span></span>  
   
--   <span data-ttu-id="681e3-119">如果你使用自定义脚本或其他项目，则查看 XSLT 将可以查看脚本、 项目和映射的其他部分的交互方式。</span><span class="sxs-lookup"><span data-stu-id="681e3-119">If you are using custom scripts or other artifacts, reviewing the XSLT will enable you to see how the scripts, artifacts, and other parts of the map interact.</span></span>  
+- <span data-ttu-id="69ce6-119">如果使用自定义脚本或其他项目，查看 XSLT 便可以看到脚本、 项目和映射的其他部分的交互方式。</span><span class="sxs-lookup"><span data-stu-id="69ce6-119">If you are using custom scripts or other artifacts, reviewing the XSLT will enable you to see how the scripts, artifacts, and other parts of the map interact.</span></span>  
   
- <span data-ttu-id="681e3-120">幸运的是，查看地图 XSLT 是一个简单的过程。</span><span class="sxs-lookup"><span data-stu-id="681e3-120">Fortunately, viewing the XSLT for a map is an easy process.</span></span>  
+  <span data-ttu-id="69ce6-120">幸运的是，查看映射的 XSLT 是一个简单的过程。</span><span class="sxs-lookup"><span data-stu-id="69ce6-120">Fortunately, viewing the XSLT for a map is an easy process.</span></span>  
   
-##### <a name="to-view-the-xslt-generated-by-the-map-compiler"></a><span data-ttu-id="681e3-121">若要查看由映射编译器生成的 XSLT</span><span class="sxs-lookup"><span data-stu-id="681e3-121">To view the XSLT generated by the map compiler</span></span>  
+##### <a name="to-view-the-xslt-generated-by-the-map-compiler"></a><span data-ttu-id="69ce6-121">若要查看映射编译器生成的 XSLT</span><span class="sxs-lookup"><span data-stu-id="69ce6-121">To view the XSLT generated by the map compiler</span></span>  
   
-1.  <span data-ttu-id="681e3-122">从[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]BizTalk 项目，单击**解决方案资源管理器**选项卡上，右键单击一个代码图，，然后单击**验证映射**。</span><span class="sxs-lookup"><span data-stu-id="681e3-122">From a [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk project, click the **Solution Explorer** tab, right-click a map, and then click **Validate Map**.</span></span>  
+1. <span data-ttu-id="69ce6-122">从[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]BizTalk 项目中，单击**解决方案资源管理器**选项卡上，右键单击的映射，然后单击**验证映射**。</span><span class="sxs-lookup"><span data-stu-id="69ce6-122">From a [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk project, click the **Solution Explorer** tab, right-click a map, and then click **Validate Map**.</span></span>  
   
-2.  <span data-ttu-id="681e3-123">滚动输出窗口以确定该 XSL 文件的 URL。</span><span class="sxs-lookup"><span data-stu-id="681e3-123">Scroll the Output window to find the URL for the XSL file.</span></span> <span data-ttu-id="681e3-124">按住 Ctrl 单击 URL 以查看文件。</span><span class="sxs-lookup"><span data-stu-id="681e3-124">Press CTRL and click the URL to view the file.</span></span>  
+2. <span data-ttu-id="69ce6-123">滚动输出窗口以查找 XSL 文件的 URL。</span><span class="sxs-lookup"><span data-stu-id="69ce6-123">Scroll the Output window to find the URL for the XSL file.</span></span> <span data-ttu-id="69ce6-124">按住 Ctrl 单击 URL 以查看文件。</span><span class="sxs-lookup"><span data-stu-id="69ce6-124">Press CTRL and click the URL to view the file.</span></span>  
   
- <span data-ttu-id="681e3-125">如果你决定手动自定义你的代码图，你可以修改映射编译器生成的版本。</span><span class="sxs-lookup"><span data-stu-id="681e3-125">If you decide to customize your map by hand, you can modify the version produced by the map compiler.</span></span> <span data-ttu-id="681e3-126">更改映射器将不会反映，将会丢失在下次生成你的解决方案。</span><span class="sxs-lookup"><span data-stu-id="681e3-126">Changes will not be reflected by the Mapper and will be lost the next time you build your solution.</span></span>  
+   <span data-ttu-id="69ce6-125">如果你决定手动自定义您的映射，则可以修改映射编译器生成的版本。</span><span class="sxs-lookup"><span data-stu-id="69ce6-125">If you decide to customize your map by hand, you can modify the version produced by the map compiler.</span></span> <span data-ttu-id="69ce6-126">更改将不会反映映射器和下一次生成解决方案时将丢失。</span><span class="sxs-lookup"><span data-stu-id="69ce6-126">Changes will not be reflected by the Mapper and will be lost the next time you build your solution.</span></span>  
   
-### <a name="tune-your-map-for-specific-scenarios-using-mapsource"></a><span data-ttu-id="681e3-127">优化你使用的特定方案的代码图\<mapsource\></span><span class="sxs-lookup"><span data-stu-id="681e3-127">Tune your map for specific scenarios using \<mapsource\></span></span>  
- <span data-ttu-id="681e3-128">你可以通过修改的属性来修改映射器的某些默认行为**mapsource**直接映射 (.btm) 源文件中的元素。</span><span class="sxs-lookup"><span data-stu-id="681e3-128">You can modify some default behaviors of the Mapper by modifying attributes of the **mapsource** element directly in a map source (.btm) file.</span></span> <span data-ttu-id="681e3-129">目前，有三个您可以修改的行为：</span><span class="sxs-lookup"><span data-stu-id="681e3-129">There are currently three behaviors that you can modify:</span></span>  
+### <a name="tune-your-map-for-specific-scenarios-using-mapsource"></a><span data-ttu-id="69ce6-127">优化您的映射使用的特定方案\<mapsource\></span><span class="sxs-lookup"><span data-stu-id="69ce6-127">Tune your map for specific scenarios using \<mapsource\></span></span>  
+ <span data-ttu-id="69ce6-128">可以通过修改的属性来修改映射器的某些默认行为**mapsource**直接在映射源 (.btm) 文件中的元素。</span><span class="sxs-lookup"><span data-stu-id="69ce6-128">You can modify some default behaviors of the Mapper by modifying attributes of the **mapsource** element directly in a map source (.btm) file.</span></span> <span data-ttu-id="69ce6-129">目前有三个可以修改的行为：</span><span class="sxs-lookup"><span data-stu-id="69ce6-129">There are currently three behaviors that you can modify:</span></span>  
   
--   <span data-ttu-id="681e3-130">**优化值映射 functoid 代码生成**。</span><span class="sxs-lookup"><span data-stu-id="681e3-130">**Optimize Value Mapping functoid code generation**.</span></span> <span data-ttu-id="681e3-131">你可以修改控制变量与一起使用时的行为`if`语句。</span><span class="sxs-lookup"><span data-stu-id="681e3-131">You can modify the behavior that controls when a variable is used with `if` statements.</span></span>  
+- <span data-ttu-id="69ce6-130">**优化值映射 functoid 代码生成**。</span><span class="sxs-lookup"><span data-stu-id="69ce6-130">**Optimize Value Mapping functoid code generation**.</span></span> <span data-ttu-id="69ce6-131">您可以修改控制变量与使用时的行为`if`语句。</span><span class="sxs-lookup"><span data-stu-id="69ce6-131">You can modify the behavior that controls when a variable is used with `if` statements.</span></span>  
   
--   <span data-ttu-id="681e3-132">**容纳较大的空间占用量与架构**。</span><span class="sxs-lookup"><span data-stu-id="681e3-132">**Accommodate schemas with large footprints**.</span></span> <span data-ttu-id="681e3-133">你可以更改内部编译器节点在大型地图中使用的方式。</span><span class="sxs-lookup"><span data-stu-id="681e3-133">You can change the way internal compiler nodes are used in large maps.</span></span>  
+- <span data-ttu-id="69ce6-132">**适应大型操作痕迹包含以下架构：**。</span><span class="sxs-lookup"><span data-stu-id="69ce6-132">**Accommodate schemas with large footprints**.</span></span> <span data-ttu-id="69ce6-133">你可以在大型映射中使用的内部编译器节点的方式。</span><span class="sxs-lookup"><span data-stu-id="69ce6-133">You can change the way internal compiler nodes are used in large maps.</span></span>  
   
--   <span data-ttu-id="681e3-134">**为每个使用管理使用情况循环、 条件，和值映射 functoid**。</span><span class="sxs-lookup"><span data-stu-id="681e3-134">**Manage for-each usage with Looping, Conditional, and Value Mapping functoids**.</span></span> <span data-ttu-id="681e3-135">你可以控制在何处`xsl:for-each`在目标架构内使用语句。</span><span class="sxs-lookup"><span data-stu-id="681e3-135">You can control where the `xsl:for-each` statement is used within the destination schema.</span></span>  
+- <span data-ttu-id="69ce6-134">**管理与循环、 条件、 和值映射 functoid 的 for-each 用法**。</span><span class="sxs-lookup"><span data-stu-id="69ce6-134">**Manage for-each usage with Looping, Conditional, and Value Mapping functoids**.</span></span> <span data-ttu-id="69ce6-135">您可以控制在何处`xsl:for-each`在目标架构中使用语句。</span><span class="sxs-lookup"><span data-stu-id="69ce6-135">You can control where the `xsl:for-each` statement is used within the destination schema.</span></span>  
   
- <span data-ttu-id="681e3-136">有关修改**mapsource**，请参阅[管理默认映射器行为使用\<mapsource\>](../core/managing-default-mapper-behavior-using-mapsource.md)。</span><span class="sxs-lookup"><span data-stu-id="681e3-136">For more information about modifying **mapsource**, see [Managing Default Mapper Behavior Using \<mapsource\>](../core/managing-default-mapper-behavior-using-mapsource.md).</span></span>  
+  <span data-ttu-id="69ce6-136">有关修改的详细信息**mapsource**，请参阅[管理默认映射器行为使用\<mapsource\>](../core/managing-default-mapper-behavior-using-mapsource.md)。</span><span class="sxs-lookup"><span data-stu-id="69ce6-136">For more information about modifying **mapsource**, see [Managing Default Mapper Behavior Using \<mapsource\>](../core/managing-default-mapper-behavior-using-mapsource.md).</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="681e3-137">另请参阅</span><span class="sxs-lookup"><span data-stu-id="681e3-137">See Also</span></span>  
- <span data-ttu-id="681e3-138">[常规疑难解答问题和解答](../core/general-troubleshooting-questions-and-answers.md) </span><span class="sxs-lookup"><span data-stu-id="681e3-138">[General Troubleshooting Questions and Answers](../core/general-troubleshooting-questions-and-answers.md) </span></span>  
- [<span data-ttu-id="681e3-139">常见错误</span><span class="sxs-lookup"><span data-stu-id="681e3-139">Common Errors</span></span>](../core/common-errors.md)
+## <a name="see-also"></a><span data-ttu-id="69ce6-137">请参阅</span><span class="sxs-lookup"><span data-stu-id="69ce6-137">See Also</span></span>  
+ <span data-ttu-id="69ce6-138">[常见疑难问题与解答](../core/general-troubleshooting-questions-and-answers.md) </span><span class="sxs-lookup"><span data-stu-id="69ce6-138">[General Troubleshooting Questions and Answers](../core/general-troubleshooting-questions-and-answers.md) </span></span>  
+ [<span data-ttu-id="69ce6-139">常见错误</span><span class="sxs-lookup"><span data-stu-id="69ce6-139">Common Errors</span></span>](../core/common-errors.md)

@@ -1,5 +1,5 @@
 ---
-title: 不还原数据库备份的 BizTalk Server 作业中包含 |Microsoft 文档
+title: 还原数据库不包含在备份 BizTalk Server 作业 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3277886207e04a30fec8bb61f29b5fe8c5ec3545
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b24b0815c5948bac86dc3c614d05eb87d0684bdb
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302117"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36999246"
 ---
-# <a name="restoring-databases-not-included-in-the-backup-biztalk-server-job"></a><span data-ttu-id="f8aa1-102">还原数据库备份的 BizTalk Server 作业中不包括</span><span class="sxs-lookup"><span data-stu-id="f8aa1-102">Restoring Databases Not Included in the Backup BizTalk Server Job</span></span>
-<span data-ttu-id="f8aa1-103">本部分介绍如何还原总体 BizTalk 解决方案的一部分，但不是会备份 BizTalk Server 作业身份备份的数据库。</span><span class="sxs-lookup"><span data-stu-id="f8aa1-103">This section describes how to restore databases that are part of the overall BizTalk solution but are not backed up by the Backup BizTalk Server job.</span></span> <span data-ttu-id="f8aa1-104">使用以下除外备份 BizTalk Server 作业，将备份作为 BizTalk 解决方案的一部分的所有数据库：</span><span class="sxs-lookup"><span data-stu-id="f8aa1-104">All databases that are part of a BizTalk solution will be backed up by using the Backup BizTalk Server job except for the following:</span></span>  
+# <a name="restoring-databases-not-included-in-the-backup-biztalk-server-job"></a><span data-ttu-id="5db47-102">还原数据库不包含在备份 BizTalk Server 作业</span><span class="sxs-lookup"><span data-stu-id="5db47-102">Restoring Databases Not Included in the Backup BizTalk Server Job</span></span>
+<span data-ttu-id="5db47-103">本部分介绍如何还原作为整体的 BizTalk 解决方案的一部分，但不是由备份 BizTalk Server 作业备份的数据库。</span><span class="sxs-lookup"><span data-stu-id="5db47-103">This section describes how to restore databases that are part of the overall BizTalk solution but are not backed up by the Backup BizTalk Server job.</span></span> <span data-ttu-id="5db47-104">将备份作为 BizTalk 解决方案的一部分的所有数据库使用备份 BizTalk Server 作业，以下除外：</span><span class="sxs-lookup"><span data-stu-id="5db47-104">All databases that are part of a BizTalk solution will be backed up by using the Backup BizTalk Server job except for the following:</span></span>  
   
--   [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]<span data-ttu-id="f8aa1-105">Analysis Services 数据库</span><span class="sxs-lookup"><span data-stu-id="f8aa1-105"> Analysis Services databases</span></span>  
+- [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]<span data-ttu-id="5db47-105"> Analysis Services 数据库</span><span class="sxs-lookup"><span data-stu-id="5db47-105"> Analysis Services databases</span></span>  
   
--   <span data-ttu-id="f8aa1-106">BAM 数据库时 BAM 启用和配置使用 BM.exe</span><span class="sxs-lookup"><span data-stu-id="f8aa1-106">BAM databases when BAM is enabled and configured using BM.exe</span></span>  
+- <span data-ttu-id="5db47-106">如果启用了 BAM，并且使用 BM.exe 配置 BAM 数据库</span><span class="sxs-lookup"><span data-stu-id="5db47-106">BAM databases when BAM is enabled and configured using BM.exe</span></span>  
   
- <span data-ttu-id="f8aa1-107">本部分还描述如何在还原上面列出的数据库后更新数据库引用，并包含有关解决不完整 BAM 活动实例的信息。</span><span class="sxs-lookup"><span data-stu-id="f8aa1-107">This section also describes how to update database references after restoring the databases listed above and includes information about resolving incomplete BAM activity instances.</span></span>  
+  <span data-ttu-id="5db47-107">本部分还介绍如何还原上面列出的数据库后更新数据库的引用，并且包括有关解决不完整的 BAM 活动实例的信息。</span><span class="sxs-lookup"><span data-stu-id="5db47-107">This section also describes how to update database references after restoring the databases listed above and includes information about resolving incomplete BAM activity instances.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="f8aa1-108">本节内容</span><span class="sxs-lookup"><span data-stu-id="f8aa1-108">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="5db47-108">本节内容</span><span class="sxs-lookup"><span data-stu-id="5db47-108">In This Section</span></span>  
   
--   [<span data-ttu-id="f8aa1-109">还原 Analysis Services 和支持的数据库</span><span class="sxs-lookup"><span data-stu-id="f8aa1-109">Restoring Analysis Services and Supporting Databases</span></span>](../technical-guides/restoring-analysis-services-and-supporting-databases.md)  
+-   [<span data-ttu-id="5db47-109">还原 Analysis Services 和支持数据库</span><span class="sxs-lookup"><span data-stu-id="5db47-109">Restoring Analysis Services and Supporting Databases</span></span>](../technical-guides/restoring-analysis-services-and-supporting-databases.md)  
   
--   [<span data-ttu-id="f8aa1-110">更新数据库引用</span><span class="sxs-lookup"><span data-stu-id="f8aa1-110">Updating Database References</span></span>](../technical-guides/updating-database-references.md)  
+-   [<span data-ttu-id="5db47-110">更新数据库引用</span><span class="sxs-lookup"><span data-stu-id="5db47-110">Updating Database References</span></span>](../technical-guides/updating-database-references.md)  
   
--   [<span data-ttu-id="f8aa1-111">如何解决不完整 BAM 活动实例</span><span class="sxs-lookup"><span data-stu-id="f8aa1-111">How to Resolve Incomplete BAM Activity Instances</span></span>](../technical-guides/how-to-resolve-incomplete-bam-activity-instances.md)
+-   [<span data-ttu-id="5db47-111">如何解析不完整的 BAM 活动实例</span><span class="sxs-lookup"><span data-stu-id="5db47-111">How to Resolve Incomplete BAM Activity Instances</span></span>](../technical-guides/how-to-resolve-incomplete-bam-activity-instances.md)

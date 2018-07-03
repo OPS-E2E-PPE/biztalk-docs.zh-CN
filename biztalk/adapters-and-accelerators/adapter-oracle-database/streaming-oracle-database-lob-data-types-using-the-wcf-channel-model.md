@@ -1,5 +1,5 @@
 ---
-title: 流式处理 Oracle 数据库 LOB 数据类型使用 WCF 通道模型 |Microsoft 文档
+title: 流式处理使用 WCF 通道模型的 Oracle 数据库 LOB 数据类型 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,35 +15,35 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bf0ee2f8d1c90f69a206a3006398d52e67f819e5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa8a493c94761ce74d76885ee59fae1425c15523
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22215789"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37013838"
 ---
-# <a name="streaming-oracle-database-lob-data-types-using-the-wcf-channel-model"></a><span data-ttu-id="25b86-102">使用 WCF 通道模型的流式处理 Oracle 数据库 LOB 数据类型</span><span class="sxs-lookup"><span data-stu-id="25b86-102">Streaming Oracle Database LOB Data Types Using the WCF Channel Model</span></span>
-<span data-ttu-id="25b86-103">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]支持端到端流式处理的某些操作的 LOB 数据。</span><span class="sxs-lookup"><span data-stu-id="25b86-103">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] supports end-to-end streaming of LOB data for certain operations.</span></span> <span data-ttu-id="25b86-104">本主题中的各节描述了如何实现流式处理 LOB 数据时使用 WCF 通道模型。</span><span class="sxs-lookup"><span data-stu-id="25b86-104">The sections in this topic describe how to implement streaming for LOB data when you use the WCF channel model.</span></span>  
+# <a name="streaming-oracle-database-lob-data-types-using-the-wcf-channel-model"></a><span data-ttu-id="2d623-102">使用 WCF 通道模型的流式处理 Oracle 数据库 LOB 数据类型</span><span class="sxs-lookup"><span data-stu-id="2d623-102">Streaming Oracle Database LOB Data Types Using the WCF Channel Model</span></span>
+<span data-ttu-id="2d623-103">[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]支持端到端的流式处理的 LOB 数据的某些操作。</span><span class="sxs-lookup"><span data-stu-id="2d623-103">The [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] supports end-to-end streaming of LOB data for certain operations.</span></span> <span data-ttu-id="2d623-104">本主题中的部分介绍如何实现流式处理 LOB 数据时使用的 WCF 通道模型。</span><span class="sxs-lookup"><span data-stu-id="2d623-104">The sections in this topic describe how to implement streaming for LOB data when you use the WCF channel model.</span></span>  
   
- <span data-ttu-id="25b86-105">有关如何的适配器支持流式处理 LOB 数据类型的背景信息，请参阅[流式处理 Oracle 数据库适配器中的大型对象数据类型](../../adapters-and-accelerators/adapter-oracle-database/streaming-large-object-data-types-in-oracle-database-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="25b86-105">For background information about how the adapter supports streaming of LOB data types, see [Streaming large object data types in Oracle Database adapter](../../adapters-and-accelerators/adapter-oracle-database/streaming-large-object-data-types-in-oracle-database-adapter.md).</span></span> <span data-ttu-id="25b86-106">您应该阅读然后再继续本主题。</span><span class="sxs-lookup"><span data-stu-id="25b86-106">You should read this topic before proceeding.</span></span>  
+ <span data-ttu-id="2d623-105">有关如何在适配器支持流式处理 LOB 数据类型的背景信息，请参阅[流式处理大型对象数据类型在 Oracle 数据库适配器](../../adapters-and-accelerators/adapter-oracle-database/streaming-large-object-data-types-in-oracle-database-adapter.md)。</span><span class="sxs-lookup"><span data-stu-id="2d623-105">For background information about how the adapter supports streaming of LOB data types, see [Streaming large object data types in Oracle Database adapter](../../adapters-and-accelerators/adapter-oracle-database/streaming-large-object-data-types-in-oracle-database-adapter.md).</span></span> <span data-ttu-id="2d623-106">您应阅读本主题继续操作之前。</span><span class="sxs-lookup"><span data-stu-id="2d623-106">You should read this topic before proceeding.</span></span>  
   
- <span data-ttu-id="25b86-107">演示 LOB 数据进行流式处理的示例位于附带的 SDK 示例[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="25b86-107">A sample that demonstrates LOB data streaming is available in the SDK samples included with the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span> <span data-ttu-id="25b86-108">有关详细信息，请参阅[SDK 中的示例](../../core/samples-in-the-sdk.md)。</span><span class="sxs-lookup"><span data-stu-id="25b86-108">For more information, see [Samples in the SDK](../../core/samples-in-the-sdk.md).</span></span>  
+ <span data-ttu-id="2d623-107">LOB 数据进行流式处理演示的示例现已推出附带的 SDK 示例[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="2d623-107">A sample that demonstrates LOB data streaming is available in the SDK samples included with the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span> <span data-ttu-id="2d623-108">有关详细信息，请参阅[SDK 中的示例](../../core/samples-in-the-sdk.md)。</span><span class="sxs-lookup"><span data-stu-id="2d623-108">For more information, see [Samples in the SDK](../../core/samples-in-the-sdk.md).</span></span>  
   
-## <a name="streaming-outbound-messages-to-the-adapter"></a><span data-ttu-id="25b86-109">到适配器出站消息的流处理</span><span class="sxs-lookup"><span data-stu-id="25b86-109">Streaming Outbound Messages to the Adapter</span></span>  
- <span data-ttu-id="25b86-110">适配器支持 UpdateLOB 操作的请求消息流式处理的端到端 LOB 数据。</span><span class="sxs-lookup"><span data-stu-id="25b86-110">The adapter supports end-to-end LOB data streaming for the request message for the UpdateLOB operation.</span></span>  
+## <a name="streaming-outbound-messages-to-the-adapter"></a><span data-ttu-id="2d623-109">流式处理到适配器的出站消息</span><span class="sxs-lookup"><span data-stu-id="2d623-109">Streaming Outbound Messages to the Adapter</span></span>  
+ <span data-ttu-id="2d623-110">该适配器支持 UpdateLOB 操作的请求消息流式处理的端到端 LOB 数据。</span><span class="sxs-lookup"><span data-stu-id="2d623-110">The adapter supports end-to-end LOB data streaming for the request message for the UpdateLOB operation.</span></span>  
   
- <span data-ttu-id="25b86-111">若要支持端到端流式处理 UpdateLOB 操作以 WCF 通道模型，你必须：</span><span class="sxs-lookup"><span data-stu-id="25b86-111">To support end-to-end streaming on UpdateLOB operations in the WCF channel model, you must:</span></span>  
+ <span data-ttu-id="2d623-111">若要支持端到端流式处理中的 WCF 通道模型 UpdateLOB 操作，必须：</span><span class="sxs-lookup"><span data-stu-id="2d623-111">To support end-to-end streaming on UpdateLOB operations in the WCF channel model, you must:</span></span>  
   
-1.  <span data-ttu-id="25b86-112">设置**UseAmbientTransaction**绑定属性为 true。</span><span class="sxs-lookup"><span data-stu-id="25b86-112">Set the **UseAmbientTransaction** binding property to true.</span></span>  
+1.  <span data-ttu-id="2d623-112">设置**UseAmbientTransaction**绑定属性为 true。</span><span class="sxs-lookup"><span data-stu-id="2d623-112">Set the **UseAmbientTransaction** binding property to true.</span></span>  
   
-2.  <span data-ttu-id="25b86-113">实现**System.ServiceModel.Channels.BodyWriter** ，它能够流式处理 （执行节点值的 LOB 数据流式处理） 的 LOB 数据。</span><span class="sxs-lookup"><span data-stu-id="25b86-113">Implement a **System.ServiceModel.Channels.BodyWriter** that is capable of streaming the LOB data (performing node-value streaming on the LOB data).</span></span>  
+2.  <span data-ttu-id="2d623-113">实现**System.ServiceModel.Channels.BodyWriter** ，它能够流式处理 LOB 数据 （执行流式处理 LOB 数据的节点的值）。</span><span class="sxs-lookup"><span data-stu-id="2d623-113">Implement a **System.ServiceModel.Channels.BodyWriter** that is capable of streaming the LOB data (performing node-value streaming on the LOB data).</span></span>  
   
-3.  <span data-ttu-id="25b86-114">执行 UpdateLOB 操作在事务范围内。</span><span class="sxs-lookup"><span data-stu-id="25b86-114">Perform the UpdateLOB operation within a transaction scope.</span></span>  
+3.  <span data-ttu-id="2d623-114">执行 UpdateLOB 事务范围内的操作。</span><span class="sxs-lookup"><span data-stu-id="2d623-114">Perform the UpdateLOB operation within a transaction scope.</span></span>  
   
-4.  <span data-ttu-id="25b86-115">创建**System.ServiceModel.Message**用于通过提供与此消息正文中调用该操作**BodyWriter**使用适当的重载**Message.Create**方法。</span><span class="sxs-lookup"><span data-stu-id="25b86-115">Create the **System.ServiceModel.Message** used to invoke the operation by supplying the message body with this **BodyWriter** using an appropriate overload of the **Message.Create** method.</span></span>  
+4.  <span data-ttu-id="2d623-115">创建**System.ServiceModel.Message**用于通过提供与此消息正文中调用该操作**BodyWriter**使用的适当重载**Message.Create**方法。</span><span class="sxs-lookup"><span data-stu-id="2d623-115">Create the **System.ServiceModel.Message** used to invoke the operation by supplying the message body with this **BodyWriter** using an appropriate overload of the **Message.Create** method.</span></span>  
   
-### <a name="setting-the-useambienttransaction-binding-property"></a><span data-ttu-id="25b86-116">设置绑定属性 UseAmbientTransaction</span><span class="sxs-lookup"><span data-stu-id="25b86-116">Setting the UseAmbientTransaction Binding Property</span></span>  
- <span data-ttu-id="25b86-117">下面的示例演示如何创建的绑定[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]并设置**UseAmbientTransaction**绑定属性。</span><span class="sxs-lookup"><span data-stu-id="25b86-117">The following example shows how to create a binding for the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] and set the **UseAmbientTransaction** binding property.</span></span>  
+### <a name="setting-the-useambienttransaction-binding-property"></a><span data-ttu-id="2d623-116">设置绑定属性 UseAmbientTransaction</span><span class="sxs-lookup"><span data-stu-id="2d623-116">Setting the UseAmbientTransaction Binding Property</span></span>  
+ <span data-ttu-id="2d623-117">下面的示例演示如何为创建绑定[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]并设置**UseAmbientTransaction**属性绑定。</span><span class="sxs-lookup"><span data-stu-id="2d623-117">The following example shows how to create a binding for the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] and set the **UseAmbientTransaction** binding property.</span></span>  
   
 ```  
 // Create binding  
@@ -54,8 +54,8 @@ binding.UseAmbientTransaction = true;
   
 ```  
   
-### <a name="implementing-a-bodywriter"></a><span data-ttu-id="25b86-118">实现 BodyWriter</span><span class="sxs-lookup"><span data-stu-id="25b86-118">Implementing a BodyWriter</span></span>  
- <span data-ttu-id="25b86-119">下面的示例演示如何实现**BodyWriter**执行节点值流式处理。</span><span class="sxs-lookup"><span data-stu-id="25b86-119">The following example shows an implementation of a **BodyWriter** that performs node-value streaming.</span></span>  
+### <a name="implementing-a-bodywriter"></a><span data-ttu-id="2d623-118">实现 BodyWriter</span><span class="sxs-lookup"><span data-stu-id="2d623-118">Implementing a BodyWriter</span></span>  
+ <span data-ttu-id="2d623-119">下面的示例演示的实现**BodyWriter**执行节点值流式处理。</span><span class="sxs-lookup"><span data-stu-id="2d623-119">The following example shows an implementation of a **BodyWriter** that performs node-value streaming.</span></span>  
   
 ```  
 /// <summary>  
@@ -125,8 +125,8 @@ class StreamingBodyWriter : BodyWriter, IDisposable
 }  
 ```  
   
-### <a name="perform-the-operations-within-a-transaction-scope"></a><span data-ttu-id="25b86-120">执行在事务范围内的操作</span><span class="sxs-lookup"><span data-stu-id="25b86-120">Perform the Operations Within a Transaction Scope</span></span>  
- <span data-ttu-id="25b86-121">下面的示例演示如何执行事务范围内的操作。</span><span class="sxs-lookup"><span data-stu-id="25b86-121">The following example shows how to perform operations within a transaction scope.</span></span>  
+### <a name="perform-the-operations-within-a-transaction-scope"></a><span data-ttu-id="2d623-120">执行事务范围内的操作</span><span class="sxs-lookup"><span data-stu-id="2d623-120">Perform the Operations Within a Transaction Scope</span></span>  
+ <span data-ttu-id="2d623-121">下面的示例演示如何在事务作用域中执行操作。</span><span class="sxs-lookup"><span data-stu-id="2d623-121">The following example shows how to perform operations within a transaction scope.</span></span>  
   
 ```  
 // Create a transaction scope  
@@ -142,8 +142,8 @@ using(TransactionScope tx = new TransactionScope())
   
 ```  
   
-### <a name="creating-a-message-by-using-a-bodywriter"></a><span data-ttu-id="25b86-122">使用 BodyWriter 创建消息</span><span class="sxs-lookup"><span data-stu-id="25b86-122">Creating a Message by using a BodyWriter</span></span>  
- <span data-ttu-id="25b86-123">下面的示例演示如何创建 UpdateLOB 请求消息使用**BodyWriter**在前面的示例。</span><span class="sxs-lookup"><span data-stu-id="25b86-123">The following example shows how to create an UpdateLOB request message using the **BodyWriter** in the preceding example.</span></span> <span data-ttu-id="25b86-124">从文件中读取消息数据。</span><span class="sxs-lookup"><span data-stu-id="25b86-124">The message data is read from a file.</span></span>  
+### <a name="creating-a-message-by-using-a-bodywriter"></a><span data-ttu-id="2d623-122">使用 BodyWriter 创建消息</span><span class="sxs-lookup"><span data-stu-id="2d623-122">Creating a Message by using a BodyWriter</span></span>  
+ <span data-ttu-id="2d623-123">下面的示例演示如何创建 UpdateLOB 请求消息使用**BodyWriter**在前面的示例。</span><span class="sxs-lookup"><span data-stu-id="2d623-123">The following example shows how to create an UpdateLOB request message using the **BodyWriter** in the preceding example.</span></span> <span data-ttu-id="2d623-124">从文件中读取消息数据。</span><span class="sxs-lookup"><span data-stu-id="2d623-124">The message data is read from a file.</span></span>  
   
 ```  
 // Create a transaction scope  
@@ -165,31 +165,31 @@ using(TransactionScope tx = new TransactionScope())
   
 ```  
   
-## <a name="streaming-inbound-messages-from-the-adapter"></a><span data-ttu-id="25b86-125">从适配器入站的消息的流处理</span><span class="sxs-lookup"><span data-stu-id="25b86-125">Streaming Inbound Messages from the Adapter</span></span>  
- <span data-ttu-id="25b86-126">适配器支持以下入站消息流式处理的端到端 LOB 数据：</span><span class="sxs-lookup"><span data-stu-id="25b86-126">The adapter supports end-to-end LOB data streaming for the following inbound messages:</span></span>  
+## <a name="streaming-inbound-messages-from-the-adapter"></a><span data-ttu-id="2d623-125">流式处理来自适配器的入站的消息</span><span class="sxs-lookup"><span data-stu-id="2d623-125">Streaming Inbound Messages from the Adapter</span></span>  
+ <span data-ttu-id="2d623-126">适配器支持以下入站消息的流式处理的端到端 LOB 数据：</span><span class="sxs-lookup"><span data-stu-id="2d623-126">The adapter supports end-to-end LOB data streaming for the following inbound messages:</span></span>  
   
--   <span data-ttu-id="25b86-127">针对具有扩展的函数的响应消息或包含 LOB 数据的 IN OUT 参数。</span><span class="sxs-lookup"><span data-stu-id="25b86-127">Response message for functions with OUT or IN OUT parameters that contain LOB data.</span></span> <span data-ttu-id="25b86-128">请注意，记录类型参数可以包含 LOB 数据列。</span><span class="sxs-lookup"><span data-stu-id="25b86-128">Note that RECORD TYPE parameters can contain LOB data columns.</span></span>  
+- <span data-ttu-id="2d623-127">具有扩展的函数的响应消息或包含 LOB 数据在 OUT 参数。</span><span class="sxs-lookup"><span data-stu-id="2d623-127">Response message for functions with OUT or IN OUT parameters that contain LOB data.</span></span> <span data-ttu-id="2d623-128">请注意记录类型参数可包含 LOB 数据列。</span><span class="sxs-lookup"><span data-stu-id="2d623-128">Note that RECORD TYPE parameters can contain LOB data columns.</span></span>  
   
--   <span data-ttu-id="25b86-129">针对包含 LOB 数据具有出 REF CURSOR 参数 （或返回值） 的函数的响应消息。</span><span class="sxs-lookup"><span data-stu-id="25b86-129">Response message for functions with OUT REF CURSOR parameters (or return values) that contain LOB data.</span></span> <span data-ttu-id="25b86-130">这包括 IN 出 REF CURSOR 参数的输出端。</span><span class="sxs-lookup"><span data-stu-id="25b86-130">This includes the output side of IN OUT REF CURSOR parameters.</span></span>  
+- <span data-ttu-id="2d623-129">包含 LOB 数据带出 REF CURSOR 参数 （或返回值） 的函数的响应消息。</span><span class="sxs-lookup"><span data-stu-id="2d623-129">Response message for functions with OUT REF CURSOR parameters (or return values) that contain LOB data.</span></span> <span data-ttu-id="2d623-130">这包括在 OUT REF CURSOR 参数在输出端。</span><span class="sxs-lookup"><span data-stu-id="2d623-130">This includes the output side of IN OUT REF CURSOR parameters.</span></span>  
   
--   <span data-ttu-id="25b86-131">在使用过程的响应消息或包含 LOB 数据的 IN OUT 参数。</span><span class="sxs-lookup"><span data-stu-id="25b86-131">Response message for procedures with IN or IN OUT parameters that contain LOB data.</span></span> <span data-ttu-id="25b86-132">请注意，记录类型参数可以包含 LOB 数据列。</span><span class="sxs-lookup"><span data-stu-id="25b86-132">Note that RECORD TYPE parameters can contain LOB data columns.</span></span>  
+- <span data-ttu-id="2d623-131">用于过程以及在响应消息或包含 LOB 数据在 OUT 参数。</span><span class="sxs-lookup"><span data-stu-id="2d623-131">Response message for procedures with IN or IN OUT parameters that contain LOB data.</span></span> <span data-ttu-id="2d623-132">请注意记录类型参数可包含 LOB 数据列。</span><span class="sxs-lookup"><span data-stu-id="2d623-132">Note that RECORD TYPE parameters can contain LOB data columns.</span></span>  
   
--   <span data-ttu-id="25b86-133">带出 REF CURSOR 参数包含 LOB 数据的过程的响应消息。</span><span class="sxs-lookup"><span data-stu-id="25b86-133">Response message for procedures with OUT REF CURSOR parameters that contain LOB data.</span></span> <span data-ttu-id="25b86-134">这包括输出一端 IN 出 REF CURSOR 参数</span><span class="sxs-lookup"><span data-stu-id="25b86-134">This includes the output side of IN OUT REF CURSOR parameters</span></span>  
+- <span data-ttu-id="2d623-133">带有 OUT REF CURSOR 参数包含 LOB 数据的过程的响应消息。</span><span class="sxs-lookup"><span data-stu-id="2d623-133">Response message for procedures with OUT REF CURSOR parameters that contain LOB data.</span></span> <span data-ttu-id="2d623-134">这包括在 OUT REF CURSOR 参数在输出端</span><span class="sxs-lookup"><span data-stu-id="2d623-134">This includes the output side of IN OUT REF CURSOR parameters</span></span>  
   
--   <span data-ttu-id="25b86-135">返回包含 LOB 数据的结果集的 SQLEXECUTE 操作的响应消息。</span><span class="sxs-lookup"><span data-stu-id="25b86-135">Response message for SQLEXECUTE operations that return result sets that contain LOB data.</span></span>  
+- <span data-ttu-id="2d623-135">返回包含 LOB 数据的结果集的 SQLEXECUTE 操作的响应消息。</span><span class="sxs-lookup"><span data-stu-id="2d623-135">Response message for SQLEXECUTE operations that return result sets that contain LOB data.</span></span>  
   
--   <span data-ttu-id="25b86-136">对于结果中返回 LOB 数据的表或视图选择操作的响应消息设置。</span><span class="sxs-lookup"><span data-stu-id="25b86-136">Response message for Table or view Select operations that return LOB data in the result set.</span></span>  
+- <span data-ttu-id="2d623-136">设置表或视图返回结果中的 LOB 数据的 Select 操作的响应消息。</span><span class="sxs-lookup"><span data-stu-id="2d623-136">Response message for Table or view Select operations that return LOB data in the result set.</span></span>  
   
--   <span data-ttu-id="25b86-137">（入站） 的 POLLINGSTMT 操作的请求消息</span><span class="sxs-lookup"><span data-stu-id="25b86-137">Request message for the (inbound) POLLINGSTMT operation</span></span>  
+- <span data-ttu-id="2d623-137">（入站） POLLINGSTMT 操作的请求消息</span><span class="sxs-lookup"><span data-stu-id="2d623-137">Request message for the (inbound) POLLINGSTMT operation</span></span>  
   
- <span data-ttu-id="25b86-138">若要支持端到端流式处理入站消息中的 WCF 通道模型，你必须：</span><span class="sxs-lookup"><span data-stu-id="25b86-138">To support end-to-end streaming on an inbound message in the WCF channel model, you must:</span></span>  
+  <span data-ttu-id="2d623-138">若要支持端到端流式处理入站消息中的 WCF 通道模型上，您必须：</span><span class="sxs-lookup"><span data-stu-id="2d623-138">To support end-to-end streaming on an inbound message in the WCF channel model, you must:</span></span>  
   
-1.  <span data-ttu-id="25b86-139">实现**System.Xml.XmlDictionaryWriter** ，它能够流式处理 （执行节点值的 LOB 数据流式处理） 的 LOB 数据。</span><span class="sxs-lookup"><span data-stu-id="25b86-139">Implement a **System.Xml.XmlDictionaryWriter** that is capable of streaming the LOB data (performing node-value streaming on the LOB data).</span></span>  
+1.  <span data-ttu-id="2d623-139">实现**System.Xml.XmlDictionaryWriter** ，它能够流式处理 LOB 数据 （执行流式处理 LOB 数据的节点的值）。</span><span class="sxs-lookup"><span data-stu-id="2d623-139">Implement a **System.Xml.XmlDictionaryWriter** that is capable of streaming the LOB data (performing node-value streaming on the LOB data).</span></span>  
   
-2.  <span data-ttu-id="25b86-140">使用**消息**通过调用**WriteBodyContents**方法与此**XmlDictionaryWriter**。</span><span class="sxs-lookup"><span data-stu-id="25b86-140">Consume the **Message** by invoking **WriteBodyContents** method with this **XmlDictionaryWriter**.</span></span>  
+2.  <span data-ttu-id="2d623-140">占用**消息**通过调用**WriteBodyContents**方法与此**XmlDictionaryWriter**。</span><span class="sxs-lookup"><span data-stu-id="2d623-140">Consume the **Message** by invoking **WriteBodyContents** method with this **XmlDictionaryWriter**.</span></span>  
   
-### <a name="implementing-an-xmldictionarywriter"></a><span data-ttu-id="25b86-141">实现 XmlDictionaryWriter</span><span class="sxs-lookup"><span data-stu-id="25b86-141">Implementing an XmlDictionaryWriter</span></span>  
- <span data-ttu-id="25b86-142">下面的示例演示如何实现**XmlDictionaryWriter**执行节点值流式处理。</span><span class="sxs-lookup"><span data-stu-id="25b86-142">The following example shows an implementation of an **XmlDictionaryWriter** that performs node-value streaming.</span></span>  
+### <a name="implementing-an-xmldictionarywriter"></a><span data-ttu-id="2d623-141">实现 XmlDictionaryWriter</span><span class="sxs-lookup"><span data-stu-id="2d623-141">Implementing an XmlDictionaryWriter</span></span>  
+ <span data-ttu-id="2d623-142">下面的示例演示的实现**XmlDictionaryWriter**执行节点值流式处理。</span><span class="sxs-lookup"><span data-stu-id="2d623-142">The following example shows an implementation of an **XmlDictionaryWriter** that performs node-value streaming.</span></span>  
   
 ```  
 using System;  
@@ -333,8 +333,8 @@ class FileXmlWriter : XmlDictionaryWriter
 }  
 ```  
   
-### <a name="consuming-a-message-by-using-an-xmldictionarywriter"></a><span data-ttu-id="25b86-143">通过使用 XmlDictionaryWriter 来使用一条消息</span><span class="sxs-lookup"><span data-stu-id="25b86-143">Consuming a Message by using an XmlDictionaryWriter</span></span>  
- <span data-ttu-id="25b86-144">下面的示例演示如何使用表选择响应消息使用**FileXmlWriter**实现在前面的示例。</span><span class="sxs-lookup"><span data-stu-id="25b86-144">The following example shows how to consume a table Select response message using the **FileXmlWriter** implemented in the preceding example.</span></span> <span data-ttu-id="25b86-145">( **FileWriter**类由子类分类**XmlDictionaryWriter**。)该示例使用**IRequestChannel**通道以调用选择操作。</span><span class="sxs-lookup"><span data-stu-id="25b86-145">(The **FileWriter** class was created by sub-classing **XmlDictionaryWriter**.) The example uses an **IRequestChannel** channel to invoke the Select operation.</span></span> <span data-ttu-id="25b86-146">省略了创建频道的详细信息。</span><span class="sxs-lookup"><span data-stu-id="25b86-146">The details of the channel creation have been omitted.</span></span> <span data-ttu-id="25b86-147">从文件读取选择的请求消息和选择响应消息写入到文件。</span><span class="sxs-lookup"><span data-stu-id="25b86-147">The Select request message is read from a file and the Select response message is written to a file.</span></span>  
+### <a name="consuming-a-message-by-using-an-xmldictionarywriter"></a><span data-ttu-id="2d623-143">通过使用 XmlDictionaryWriter 来使用一条消息</span><span class="sxs-lookup"><span data-stu-id="2d623-143">Consuming a Message by using an XmlDictionaryWriter</span></span>  
+ <span data-ttu-id="2d623-144">下面的示例演示如何使用表选择响应消息使用**FileXmlWriter**在前面的示例中实现。</span><span class="sxs-lookup"><span data-stu-id="2d623-144">The following example shows how to consume a table Select response message using the **FileXmlWriter** implemented in the preceding example.</span></span> <span data-ttu-id="2d623-145">( **FileWriter**类创建子类**XmlDictionaryWriter**。)该示例使用**IRequestChannel**通道来调用选择操作。</span><span class="sxs-lookup"><span data-stu-id="2d623-145">(The **FileWriter** class was created by sub-classing **XmlDictionaryWriter**.) The example uses an **IRequestChannel** channel to invoke the Select operation.</span></span> <span data-ttu-id="2d623-146">省略了创建通道的详细信息。</span><span class="sxs-lookup"><span data-stu-id="2d623-146">The details of the channel creation have been omitted.</span></span> <span data-ttu-id="2d623-147">从文件读取选择请求消息，并选择响应消息写入到文件。</span><span class="sxs-lookup"><span data-stu-id="2d623-147">The Select request message is read from a file and the Select response message is written to a file.</span></span>  
   
 ```  
 // Read Select message body from a file  
@@ -354,7 +354,7 @@ fileXmlWriter.Close();
 OutputMsg.Close();  
 ```  
   
- <span data-ttu-id="25b86-148">下面的 XML 演示选择操作的请求消息 （select.xml 文件的内容）。</span><span class="sxs-lookup"><span data-stu-id="25b86-148">The following XML shows the request message (contents of the select.xml file) for the Select operation.</span></span> <span data-ttu-id="25b86-149">CUSTOMER 表包含一个名为照片的 BLOB 列。</span><span class="sxs-lookup"><span data-stu-id="25b86-149">The CUSTOMER table contains a BLOB column named PHOTO.</span></span>  
+ <span data-ttu-id="2d623-148">以下 XML 显示在选择操作的请求消息 （select.xml 文件的内容）。</span><span class="sxs-lookup"><span data-stu-id="2d623-148">The following XML shows the request message (contents of the select.xml file) for the Select operation.</span></span> <span data-ttu-id="2d623-149">CUSTOMER 表包含名为 PHOTO 的 BLOB 列。</span><span class="sxs-lookup"><span data-stu-id="2d623-149">The CUSTOMER table contains a BLOB column named PHOTO.</span></span>  
   
 ```  
 <Select xmlns="http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/CUSTOMER">  
@@ -363,5 +363,5 @@ OutputMsg.Close();
 </Select>  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="25b86-150">另请参阅</span><span class="sxs-lookup"><span data-stu-id="25b86-150">See Also</span></span>  
- [<span data-ttu-id="25b86-151">开发 Oracle 数据库应用程序使用 WCF 通道模型</span><span class="sxs-lookup"><span data-stu-id="25b86-151">Develop Oracle Database applications using the WCF Channel Model</span></span>](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-channel-model.md)
+## <a name="see-also"></a><span data-ttu-id="2d623-150">请参阅</span><span class="sxs-lookup"><span data-stu-id="2d623-150">See Also</span></span>  
+ [<span data-ttu-id="2d623-151">开发 Oracle 数据库应用程序使用 WCF 通道模型</span><span class="sxs-lookup"><span data-stu-id="2d623-151">Develop Oracle Database applications using the WCF Channel Model</span></span>](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-channel-model.md)

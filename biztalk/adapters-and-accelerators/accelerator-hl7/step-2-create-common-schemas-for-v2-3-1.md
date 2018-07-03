@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 为 V2.3.1 创建通用架构 |Microsoft 文档
+title: 步骤 2： 创建适用于版本 V2.3.1 的通用架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,46 +15,46 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e5f8ed36b4a1ae8553e8df488e8fd5a606c0eabd
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: e6331538a3dd46dcd45d63bcbdbc3b8f19b2c531
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25960987"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36995406"
 ---
-# <a name="step-2-create-common-schemas-for-v231"></a><span data-ttu-id="4ca40-102">步骤 2： 为 V2.3.1 创建通用架构</span><span class="sxs-lookup"><span data-stu-id="4ca40-102">Step 2: Create Common Schemas for V2.3.1</span></span>
-<span data-ttu-id="4ca40-103">V2.3.1 架构是经常引用的架构，用于验证消息实例。</span><span class="sxs-lookup"><span data-stu-id="4ca40-103">The V2.3.1 schemas are commonly referenced schemas, which you use to validate the message instance.</span></span>  
+# <a name="step-2-create-common-schemas-for-v231"></a><span data-ttu-id="89afe-102">步骤 2： 创建适用于版本 V2.3.1 的通用架构</span><span class="sxs-lookup"><span data-stu-id="89afe-102">Step 2: Create Common Schemas for V2.3.1</span></span>
+<span data-ttu-id="89afe-103">适用于版本 V2.3.1 架构是通常引用的架构，用于验证消息实例。</span><span class="sxs-lookup"><span data-stu-id="89afe-103">The V2.3.1 schemas are commonly referenced schemas, which you use to validate the message instance.</span></span>  
   
-### <a name="to-create-a-common-schema-for-v231"></a><span data-ttu-id="4ca40-104">若要为 V2.3.1 创建公用架构</span><span class="sxs-lookup"><span data-stu-id="4ca40-104">To create a common schema for V2.3.1</span></span>  
+### <a name="to-create-a-common-schema-for-v231"></a><span data-ttu-id="89afe-104">若要创建适用于版本 V2.3.1 的通用架构</span><span class="sxs-lookup"><span data-stu-id="89afe-104">To create a common schema for V2.3.1</span></span>  
   
-1.  <span data-ttu-id="4ca40-105">在[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]上**文件**菜单上，指向**新建**，然后单击**项目**。</span><span class="sxs-lookup"><span data-stu-id="4ca40-105">In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], on the **File** menu, point to **New**, and then click **Project**.</span></span>  
+1. <span data-ttu-id="89afe-105">在中[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]，然后在**文件**菜单中，依次指向**新建**，然后单击**项目**。</span><span class="sxs-lookup"><span data-stu-id="89afe-105">In [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)], on the **File** menu, point to **New**, and then click **Project**.</span></span>  
   
-2.  <span data-ttu-id="4ca40-106">在新建项目对话框中，在**项目类型**部分中，展开**BizTalk 项目**，然后选择**BTAHL7Projects**。</span><span class="sxs-lookup"><span data-stu-id="4ca40-106">In the New Project dialog box, in the **Project Types** section, expand **BizTalk Projects**, and then select **BTAHL7Projects**.</span></span>  
+2. <span data-ttu-id="89afe-106">在新建项目对话框中，在**项目类型**部分中，展开**BizTalk 项目**，然后选择**BTAHL7Projects**。</span><span class="sxs-lookup"><span data-stu-id="89afe-106">In the New Project dialog box, in the **Project Types** section, expand **BizTalk Projects**, and then select **BTAHL7Projects**.</span></span>  
   
-3.  <span data-ttu-id="4ca40-107">在模板部分中，选择**BTAHL7V231Common 项目**。</span><span class="sxs-lookup"><span data-stu-id="4ca40-107">In the Templates section, select **BTAHL7V231Common Project**.</span></span>  
+3. <span data-ttu-id="89afe-107">在模板部分中，选择**BTAHL7V231Common 项目**。</span><span class="sxs-lookup"><span data-stu-id="89afe-107">In the Templates section, select **BTAHL7V231Common Project**.</span></span>  
   
-4.  <span data-ttu-id="4ca40-108">在**名称**框中，输入**BTAHL7V231Common 项目**作为项目名称。</span><span class="sxs-lookup"><span data-stu-id="4ca40-108">In the **Name** box, enter **BTAHL7V231Common Project** as the project name.</span></span>  
+4. <span data-ttu-id="89afe-108">在中**名称**框中，输入**BTAHL7V231Common 项目**作为项目名称。</span><span class="sxs-lookup"><span data-stu-id="89afe-108">In the **Name** box, enter **BTAHL7V231Common Project** as the project name.</span></span>  
   
-5.  <span data-ttu-id="4ca40-109">在**解决方案**框中，选择**将添加到解决方案**。</span><span class="sxs-lookup"><span data-stu-id="4ca40-109">In the **Solution** box, select **Add to Solution**.</span></span>  
+5. <span data-ttu-id="89afe-109">在中**解决方案**框中，选择**将添加到解决方案**。</span><span class="sxs-lookup"><span data-stu-id="89afe-109">In the **Solution** box, select **Add to Solution**.</span></span>  
   
-6.  <span data-ttu-id="4ca40-110">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="4ca40-110">Click **OK**.</span></span>  
+6. <span data-ttu-id="89afe-110">单击“确定” 。</span><span class="sxs-lookup"><span data-stu-id="89afe-110">Click **OK**.</span></span>  
+  
+   > [!NOTE]
+   >  <span data-ttu-id="89afe-111">在解决方案资源管理器，在项目中包括三个架构 （datatypes_231.xsd、 segments_231.xsd 和 tablevalues_231.xsd）。</span><span class="sxs-lookup"><span data-stu-id="89afe-111">In Solution Explorer, three schemas (datatypes_231.xsd, segments_231.xsd, and tablevalues_231.xsd) are included in the project.</span></span>  
+  
+7. <span data-ttu-id="89afe-112">在解决方案资源管理器中右键单击**BTAHL7V231Common 项目**，然后单击**属性**。</span><span class="sxs-lookup"><span data-stu-id="89afe-112">In Solution Explorer, right-click **BTAHL7V231Common Project**, and then click **Properties**.</span></span>  
+  
+8. <span data-ttu-id="89afe-113">BTAHL7V231Common 属性页上，单击**签名**。</span><span class="sxs-lookup"><span data-stu-id="89afe-113">On the BTAHL7V231Common Property Page, click **Signing**.</span></span>  
+  
+9. <span data-ttu-id="89afe-114">选择**为程序集签名**复选框。</span><span class="sxs-lookup"><span data-stu-id="89afe-114">Select the **Sign the assembly** check box.</span></span>  
+  
+10. <span data-ttu-id="89afe-115">在中**选择强名称密钥文件**，选择**\<浏览...\>** .</span><span class="sxs-lookup"><span data-stu-id="89afe-115">In **Choose a strong name key file**, select **\<Browse…\>** .</span></span>  
+  
+11. <span data-ttu-id="89afe-116">浏览到\<驱动器\>: \Batching 教程中，选择**key.snk**，然后单击**打开**。</span><span class="sxs-lookup"><span data-stu-id="89afe-116">Browse to \<drive\>:\Batching Tutorial, select **key.snk**, and then click **Open**.</span></span>  
+  
+12. <span data-ttu-id="89afe-117">在解决方案资源管理器中右键单击**BTAHL7V231Common 项目**，然后单击**部署**。</span><span class="sxs-lookup"><span data-stu-id="89afe-117">In Solution Explorer, right-click **BTAHL7V231Common Project**, and then click **Deploy**.</span></span> <span data-ttu-id="89afe-118">请确保在输出窗口中将显示一条成功消息。</span><span class="sxs-lookup"><span data-stu-id="89afe-118">Ensure a success message appears in the output window.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="4ca40-111">在解决方案资源管理器，三个架构 （datatypes_231.xsd、 segments_231.xsd 和 tablevalues_231.xsd） 包含在项目中。</span><span class="sxs-lookup"><span data-stu-id="4ca40-111">In Solution Explorer, three schemas (datatypes_231.xsd, segments_231.xsd, and tablevalues_231.xsd) are included in the project.</span></span>  
+    >  <span data-ttu-id="89afe-119">如果未显示正确的消息，使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]来解决您的架构。</span><span class="sxs-lookup"><span data-stu-id="89afe-119">If the correct message does not appear, use [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] to troubleshoot your schemas.</span></span>  
   
-7.  <span data-ttu-id="4ca40-112">在解决方案资源管理器，右键单击**BTAHL7V231Common 项目**，然后单击**属性**。</span><span class="sxs-lookup"><span data-stu-id="4ca40-112">In Solution Explorer, right-click **BTAHL7V231Common Project**, and then click **Properties**.</span></span>  
-  
-8.  <span data-ttu-id="4ca40-113">在 BTAHL7V231Common 属性页上，单击**签名**。</span><span class="sxs-lookup"><span data-stu-id="4ca40-113">On the BTAHL7V231Common Property Page, click **Signing**.</span></span>  
-  
-9. <span data-ttu-id="4ca40-114">选择**对程序集签名**复选框。</span><span class="sxs-lookup"><span data-stu-id="4ca40-114">Select the **Sign the assembly** check box.</span></span>  
-  
-10. <span data-ttu-id="4ca40-115">在**选择强名称密钥文件**，选择**\<浏览...\>** .</span><span class="sxs-lookup"><span data-stu-id="4ca40-115">In **Choose a strong name key file**, select **\<Browse…\>** .</span></span>  
-  
-11. <span data-ttu-id="4ca40-116">浏览到\<驱动器\>: \Batching 教程中，选择**key.snk**，然后单击**打开**。</span><span class="sxs-lookup"><span data-stu-id="4ca40-116">Browse to \<drive\>:\Batching Tutorial, select **key.snk**, and then click **Open**.</span></span>  
-  
-12. <span data-ttu-id="4ca40-117">在解决方案资源管理器，右键单击**BTAHL7V231Common 项目**，然后单击**部署**。</span><span class="sxs-lookup"><span data-stu-id="4ca40-117">In Solution Explorer, right-click **BTAHL7V231Common Project**, and then click **Deploy**.</span></span> <span data-ttu-id="4ca40-118">确保输出窗口中显示一条成功消息。</span><span class="sxs-lookup"><span data-stu-id="4ca40-118">Ensure a success message appears in the output window.</span></span>  
-  
-    > [!NOTE]
-    >  <span data-ttu-id="4ca40-119">如果未显示正确的消息，使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]来解决你的架构。</span><span class="sxs-lookup"><span data-stu-id="4ca40-119">If the correct message does not appear, use [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] to troubleshoot your schemas.</span></span>  
-  
- <span data-ttu-id="4ca40-120">继续执行[步骤 3： 添加触发器事件 （消息） 架构](../../adapters-and-accelerators/accelerator-hl7/step-3-add-a-trigger-event-message-schema.md)。</span><span class="sxs-lookup"><span data-stu-id="4ca40-120">Proceed to [Step 3: Add a Trigger Event (Message) Schema](../../adapters-and-accelerators/accelerator-hl7/step-3-add-a-trigger-event-message-schema.md).</span></span>
+    <span data-ttu-id="89afe-120">请继续执行[步骤 3： 添加触发器事件 （消息） 架构](../../adapters-and-accelerators/accelerator-hl7/step-3-add-a-trigger-event-message-schema.md)。</span><span class="sxs-lookup"><span data-stu-id="89afe-120">Proceed to [Step 3: Add a Trigger Event (Message) Schema](../../adapters-and-accelerators/accelerator-hl7/step-3-add-a-trigger-event-message-schema.md).</span></span>

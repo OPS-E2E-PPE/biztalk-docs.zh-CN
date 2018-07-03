@@ -1,5 +1,5 @@
 ---
-title: 如何引用其他 BAM 主导入数据库 |Microsoft 文档
+title: 如何引用其他 BAM 主导入数据库 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fca916339e48f6bce053753111f4467a4c9ae7d5
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 54982491ca8ce2c7ca7acd9e176a7341b2642c78
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25969971"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36992310"
 ---
-# <a name="how-to-reference-additional-bam-primary-import-databases"></a><span data-ttu-id="7b62b-102">如何引用其他 BAM 主导入数据库</span><span class="sxs-lookup"><span data-stu-id="7b62b-102">How to Reference Additional BAM Primary Import Databases</span></span>
-<span data-ttu-id="7b62b-103">管理员使用**启用引用**命令以引用其他 BAM 主导入数据库。</span><span class="sxs-lookup"><span data-stu-id="7b62b-103">Administrators use the **enable-reference** command to reference additional BAM Primary Import databases.</span></span> <span data-ttu-id="7b62b-104">引用多个 BAM 主导入数据库可更有效地查看分布式 BAM 活动。</span><span class="sxs-lookup"><span data-stu-id="7b62b-104">You reference multiple BAM Primary Import databases to facilitate viewing distributed BAM activities.</span></span>  
+# <a name="how-to-reference-additional-bam-primary-import-databases"></a><span data-ttu-id="ca05d-102">如何引用其他 BAM 主导入数据库</span><span class="sxs-lookup"><span data-stu-id="ca05d-102">How to Reference Additional BAM Primary Import Databases</span></span>
+<span data-ttu-id="ca05d-103">管理员使用**启用引用**命令引用其他 BAM 主导入数据库。</span><span class="sxs-lookup"><span data-stu-id="ca05d-103">Administrators use the **enable-reference** command to reference additional BAM Primary Import databases.</span></span> <span data-ttu-id="ca05d-104">引用多个 BAM 主导入数据库可更有效地查看分布式 BAM 活动。</span><span class="sxs-lookup"><span data-stu-id="ca05d-104">You reference multiple BAM Primary Import databases to facilitate viewing distributed BAM activities.</span></span>  
   
-### <a name="to-enable-a-reference-to-an-additional-bam-primary-import-database"></a><span data-ttu-id="7b62b-105">启用对其他 BAM 主导入数据库的引用</span><span class="sxs-lookup"><span data-stu-id="7b62b-105">To enable a reference to an additional BAM Primary Import database</span></span>  
+### <a name="to-enable-a-reference-to-an-additional-bam-primary-import-database"></a><span data-ttu-id="ca05d-105">启用对其他 BAM 主导入数据库的引用</span><span class="sxs-lookup"><span data-stu-id="ca05d-105">To enable a reference to an additional BAM Primary Import database</span></span>  
   
-1.  <span data-ttu-id="7b62b-106">如下所示打开命令提示符： 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="7b62b-106">Open a command prompt as follows: Click **Start**, click **Run**, type **cmd**, and then click **OK**.</span></span>  
+1. <span data-ttu-id="ca05d-106">按如下所示打开命令提示符： 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="ca05d-106">Open a command prompt as follows: Click **Start**, click **Run**, type **cmd**, and then click **OK**.</span></span>  
   
-2.  <span data-ttu-id="7b62b-107">导航到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking。</span><span class="sxs-lookup"><span data-stu-id="7b62b-107">Navigate to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking.</span></span>  
+2. <span data-ttu-id="ca05d-107">导航到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking。</span><span class="sxs-lookup"><span data-stu-id="ca05d-107">Navigate to [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking.</span></span>  
   
-3.  <span data-ttu-id="7b62b-108">在命令行提示符下键入以下内容： **bm 启用引用 TargetServer:\<目标服务器\>-TargetDatabase:\<目标数据库\>**，其中\<*目标服务器*\>由在其上通过将指定的目标 BAM 主导入数据库的 SQL server 的名称替换\<目标数据库\>驻留。</span><span class="sxs-lookup"><span data-stu-id="7b62b-108">Type the following at the command line prompt: **bm enable-reference -TargetServer:\<target server\> -TargetDatabase:\<target database\>**, where \<*target server*\> is replaced by the name of the SQL server on which the target BAM Primary Import database specified by \<target database\> resides.</span></span> <span data-ttu-id="7b62b-109">按 Enter。</span><span class="sxs-lookup"><span data-stu-id="7b62b-109">Press ENTER.</span></span>  
+3. <span data-ttu-id="ca05d-108">在命令行提示符下键入以下内容： **bm 启用引用-TargetServer:\<目标服务器\>-TargetDatabase:\<目标数据库\>**，其中\<*目标服务器*\>替换为在其通过将指定的目标 BAM 主导入数据库的 SQL server 的名称\<目标数据库\>驻留。</span><span class="sxs-lookup"><span data-stu-id="ca05d-108">Type the following at the command line prompt: **bm enable-reference -TargetServer:\<target server\> -TargetDatabase:\<target database\>**, where \<*target server*\> is replaced by the name of the SQL server on which the target BAM Primary Import database specified by \<target database\> resides.</span></span> <span data-ttu-id="ca05d-109">按 Enter。</span><span class="sxs-lookup"><span data-stu-id="ca05d-109">Press ENTER.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="7b62b-110">另请参阅</span><span class="sxs-lookup"><span data-stu-id="7b62b-110">See Also</span></span>  
- [<span data-ttu-id="7b62b-111">BAM 管理实用工具</span><span class="sxs-lookup"><span data-stu-id="7b62b-111">BAM Management Utility</span></span>](../core/bam-management-utility.md)
+## <a name="see-also"></a><span data-ttu-id="ca05d-110">请参阅</span><span class="sxs-lookup"><span data-stu-id="ca05d-110">See Also</span></span>  
+ [<span data-ttu-id="ca05d-111">BAM 管理实用工具</span><span class="sxs-lookup"><span data-stu-id="ca05d-111">BAM Management Utility</span></span>](../core/bam-management-utility.md)

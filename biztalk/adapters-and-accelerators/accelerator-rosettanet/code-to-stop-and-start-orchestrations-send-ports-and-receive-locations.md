@@ -1,5 +1,5 @@
 ---
-title: 停止和启动业务流程，发送端口，并以编程方式接收位置 |Microsoft 文档
+title: 停止和启动业务流程、 发送端口和接收位置以编程方式 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -22,40 +22,40 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 96b914129d9afb6dfd542f00a302e739e34dafbe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2736f76e3292c6e21a05c995afdd2808a9f60590
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22210877"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36995470"
 ---
-# <a name="stopping-and-starting-orchestrations-send-ports-and-receive-locations-programmatically"></a><span data-ttu-id="f1bda-102">停止和启动业务流程，发送端口，并以编程方式接收位置</span><span class="sxs-lookup"><span data-stu-id="f1bda-102">Stopping and Starting Orchestrations, Send Ports, and Receive Locations Programmatically</span></span>
-<span data-ttu-id="f1bda-103">本主题提供了以编程方式停止和启动业务流程、发送端口和接收位置的示例代码。</span><span class="sxs-lookup"><span data-stu-id="f1bda-103">This topic provides sample code for programmatically stopping and starting orchestrations, send ports, and receive locations.</span></span> <span data-ttu-id="f1bda-104">您可以对所有业务流程、发送端口和接收位置以组或个人身份执行这些操作。</span><span class="sxs-lookup"><span data-stu-id="f1bda-104">You can perform these actions on all orchestrations, send ports, and receive locations as a group or individually.</span></span> <span data-ttu-id="f1bda-105">可使程序包含这些代码，以便动态地执行这些操作。</span><span class="sxs-lookup"><span data-stu-id="f1bda-105">You can include this code in a program to perform these actions dynamically.</span></span> <span data-ttu-id="f1bda-106">执行这些操作是在图形用户界面中在设计时[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]，或在运行时在 BizTalk 管理控制台。</span><span class="sxs-lookup"><span data-stu-id="f1bda-106">You perform these actions in the graphical user interface at design time in [!INCLUDE[btsCoName](../../includes/btsconame-md.md)][!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)], or at run time in the BizTalk Administration console.</span></span>  
+# <a name="stopping-and-starting-orchestrations-send-ports-and-receive-locations-programmatically"></a><span data-ttu-id="0954b-102">停止和启动业务流程、 发送端口和接收位置以编程方式</span><span class="sxs-lookup"><span data-stu-id="0954b-102">Stopping and Starting Orchestrations, Send Ports, and Receive Locations Programmatically</span></span>
+<span data-ttu-id="0954b-103">本主题提供了以编程方式停止和启动业务流程、发送端口和接收位置的示例代码。</span><span class="sxs-lookup"><span data-stu-id="0954b-103">This topic provides sample code for programmatically stopping and starting orchestrations, send ports, and receive locations.</span></span> <span data-ttu-id="0954b-104">您可以对所有业务流程、发送端口和接收位置以组或个人身份执行这些操作。</span><span class="sxs-lookup"><span data-stu-id="0954b-104">You can perform these actions on all orchestrations, send ports, and receive locations as a group or individually.</span></span> <span data-ttu-id="0954b-105">可使程序包含这些代码，以便动态地执行这些操作。</span><span class="sxs-lookup"><span data-stu-id="0954b-105">You can include this code in a program to perform these actions dynamically.</span></span> <span data-ttu-id="0954b-106">这些操作是在图形用户界面中在设计时在 Microsoft 中执行[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]，或在运行时在 BizTalk 管理控制台中。</span><span class="sxs-lookup"><span data-stu-id="0954b-106">You perform these actions in the graphical user interface at design time in Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)], or at run time in the BizTalk Administration console.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="f1bda-107">对于启动或停止业务流程的代码，您无需指定业务流程、发送端口或接收位置。</span><span class="sxs-lookup"><span data-stu-id="f1bda-107">For the code to start and stop orchestrations, you do not have to designate the orchestrations, send ports, or receive locations.</span></span> <span data-ttu-id="f1bda-108">示例代码对所有业务流程执行操作、 发送端口和接收位置的[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]向上安装组。</span><span class="sxs-lookup"><span data-stu-id="f1bda-108">The sample code performs the action on all orchestrations, send ports, and receive locations that [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] installed at set up.</span></span> <span data-ttu-id="f1bda-109">对于作用于单一业务流程、发送端口或接收位置的代码，请添加一个参数，指明代码要针对哪个业务流程、发送端口或接收位置来运行。</span><span class="sxs-lookup"><span data-stu-id="f1bda-109">For the code that acts on a single orchestration, send port, or receive location, add a parameter indicating on which orchestration, send port, or receive location you want the code to run.</span></span>  
+>  <span data-ttu-id="0954b-107">对于启动或停止业务流程的代码，您无需指定业务流程、发送端口或接收位置。</span><span class="sxs-lookup"><span data-stu-id="0954b-107">For the code to start and stop orchestrations, you do not have to designate the orchestrations, send ports, or receive locations.</span></span> <span data-ttu-id="0954b-108">示例代码对所有业务流程执行的操作、 发送端口和接收位置的[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]安装时所安装设置。</span><span class="sxs-lookup"><span data-stu-id="0954b-108">The sample code performs the action on all orchestrations, send ports, and receive locations that [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] installed at set up.</span></span> <span data-ttu-id="0954b-109">对于作用于单一业务流程、发送端口或接收位置的代码，请添加一个参数，指明代码要针对哪个业务流程、发送端口或接收位置来运行。</span><span class="sxs-lookup"><span data-stu-id="0954b-109">For the code that acts on a single orchestration, send port, or receive location, add a parameter indicating on which orchestration, send port, or receive location you want the code to run.</span></span>  
   
-## <a name="demonstrates"></a><span data-ttu-id="f1bda-110">演示</span><span class="sxs-lookup"><span data-stu-id="f1bda-110">Demonstrates</span></span>  
- <span data-ttu-id="f1bda-111">本主题中的示例代码包括执行以下功能的各个代码段：</span><span class="sxs-lookup"><span data-stu-id="f1bda-111">The sample code in this topic includes separate code sections to do the following:</span></span>  
+## <a name="demonstrates"></a><span data-ttu-id="0954b-110">演示</span><span class="sxs-lookup"><span data-stu-id="0954b-110">Demonstrates</span></span>  
+ <span data-ttu-id="0954b-111">本主题中的示例代码包括执行以下功能的各个代码段：</span><span class="sxs-lookup"><span data-stu-id="0954b-111">The sample code in this topic includes separate code sections to do the following:</span></span>  
   
--   <span data-ttu-id="f1bda-112">启动业务流程—启动所有发送端口和接收位置，并登记和启动所有业务流程</span><span class="sxs-lookup"><span data-stu-id="f1bda-112">Start orchestrations—start all the send ports and receive locations, and enlist and start all orchestrations</span></span>  
+-   <span data-ttu-id="0954b-112">启动业务流程—启动所有发送端口和接收位置，并登记和启动所有业务流程</span><span class="sxs-lookup"><span data-stu-id="0954b-112">Start orchestrations—start all the send ports and receive locations, and enlist and start all orchestrations</span></span>  
   
--   <span data-ttu-id="f1bda-113">停止业务流程—取消登记所有业务流程，取消登记所有发送端口，并禁用所有接收位置</span><span class="sxs-lookup"><span data-stu-id="f1bda-113">Stop orchestrations—unenlist all orchestrations, unenlist all send ports, and disable all receive locations</span></span>  
+-   <span data-ttu-id="0954b-113">停止业务流程—取消登记所有业务流程，取消登记所有发送端口，并禁用所有接收位置</span><span class="sxs-lookup"><span data-stu-id="0954b-113">Stop orchestrations—unenlist all orchestrations, unenlist all send ports, and disable all receive locations</span></span>  
   
--   <span data-ttu-id="f1bda-114">启动单个发送端口</span><span class="sxs-lookup"><span data-stu-id="f1bda-114">Start a single send port</span></span>  
+-   <span data-ttu-id="0954b-114">启动单个发送端口</span><span class="sxs-lookup"><span data-stu-id="0954b-114">Start a single send port</span></span>  
   
--   <span data-ttu-id="f1bda-115">启用单个接收位置</span><span class="sxs-lookup"><span data-stu-id="f1bda-115">Enable a single receive location</span></span>  
+-   <span data-ttu-id="0954b-115">启用单个接收位置</span><span class="sxs-lookup"><span data-stu-id="0954b-115">Enable a single receive location</span></span>  
   
--   <span data-ttu-id="f1bda-116">取消登记单个发送端口</span><span class="sxs-lookup"><span data-stu-id="f1bda-116">Unenlist a single send port</span></span>  
+-   <span data-ttu-id="0954b-116">取消登记单个发送端口</span><span class="sxs-lookup"><span data-stu-id="0954b-116">Unenlist a single send port</span></span>  
   
--   <span data-ttu-id="f1bda-117">禁用单个接收位置</span><span class="sxs-lookup"><span data-stu-id="f1bda-117">Disable a single receive location</span></span>  
+-   <span data-ttu-id="0954b-117">禁用单个接收位置</span><span class="sxs-lookup"><span data-stu-id="0954b-117">Disable a single receive location</span></span>  
   
--   <span data-ttu-id="f1bda-118">启动单个业务流程</span><span class="sxs-lookup"><span data-stu-id="f1bda-118">Start a single orchestration</span></span>  
+-   <span data-ttu-id="0954b-118">启动单个业务流程</span><span class="sxs-lookup"><span data-stu-id="0954b-118">Start a single orchestration</span></span>  
   
--   <span data-ttu-id="f1bda-119">取消登记单个业务流程</span><span class="sxs-lookup"><span data-stu-id="f1bda-119">Unenlist a single orchestration</span></span>  
+-   <span data-ttu-id="0954b-119">取消登记单个业务流程</span><span class="sxs-lookup"><span data-stu-id="0954b-119">Unenlist a single orchestration</span></span>  
   
-## <a name="example"></a><span data-ttu-id="f1bda-120">示例</span><span class="sxs-lookup"><span data-stu-id="f1bda-120">Example</span></span>  
- <span data-ttu-id="f1bda-121">本主题中的示例代码包括执行“演示”部分中列出的功能的各个代码段。</span><span class="sxs-lookup"><span data-stu-id="f1bda-121">The sample code in this topic includes separate code sections to do the functions listed in the "Demonstrates" section.</span></span>  
+## <a name="example"></a><span data-ttu-id="0954b-120">示例</span><span class="sxs-lookup"><span data-stu-id="0954b-120">Example</span></span>  
+ <span data-ttu-id="0954b-121">本主题中的示例代码包括执行“演示”部分中列出的功能的各个代码段。</span><span class="sxs-lookup"><span data-stu-id="0954b-121">The sample code in this topic includes separate code sections to do the functions listed in the "Demonstrates" section.</span></span>  
   
 ```  
 using System;  
@@ -316,5 +316,5 @@ return false;
 }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="f1bda-122">另请参阅</span><span class="sxs-lookup"><span data-stu-id="f1bda-122">See Also</span></span>  
- [<span data-ttu-id="f1bda-123">示例</span><span class="sxs-lookup"><span data-stu-id="f1bda-123">Samples</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/samples3.md)
+## <a name="see-also"></a><span data-ttu-id="0954b-122">请参阅</span><span class="sxs-lookup"><span data-stu-id="0954b-122">See Also</span></span>  
+ [<span data-ttu-id="0954b-123">示例</span><span class="sxs-lookup"><span data-stu-id="0954b-123">Samples</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/samples3.md)

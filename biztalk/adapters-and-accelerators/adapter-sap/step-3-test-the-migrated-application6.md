@@ -1,5 +1,5 @@
 ---
-title: 步骤 3： 测试迁移的 Application6 |Microsoft 文档
+title: 步骤 3： 测试已迁移的 Application6 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,58 +15,58 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f3ebc175053b7afa1f3c360623b0230809db17bb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f2116888c3e56128b7e474e1370930a39e94a93a
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22216797"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37006909"
 ---
-# <a name="step-3-test-the-migrated-application"></a><span data-ttu-id="d5d28-102">步骤 3： 测试已迁移的应用程序</span><span class="sxs-lookup"><span data-stu-id="d5d28-102">Step 3: Test the Migrated Application</span></span>
-<span data-ttu-id="d5d28-103">![步骤 3 / 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span><span class="sxs-lookup"><span data-stu-id="d5d28-103">![Step 3 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span></span>  
+# <a name="step-3-test-the-migrated-application"></a><span data-ttu-id="8e7aa-102">步骤 3： 测试已迁移应用程序</span><span class="sxs-lookup"><span data-stu-id="8e7aa-102">Step 3: Test the Migrated Application</span></span>
+<span data-ttu-id="8e7aa-103">![第 3 部分，共 3 步](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span><span class="sxs-lookup"><span data-stu-id="8e7aa-103">![Step 3 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span></span>  
   
- <span data-ttu-id="d5d28-104">**完成时间：** 5 分钟</span><span class="sxs-lookup"><span data-stu-id="d5d28-104">**Time to complete:** 5 minutes</span></span>  
+ <span data-ttu-id="8e7aa-104">**完成时间：** 5 分钟</span><span class="sxs-lookup"><span data-stu-id="8e7aa-104">**Time to complete:** 5 minutes</span></span>  
   
- <span data-ttu-id="d5d28-105">**目标：** 在此步骤中，你将通过调用 SD_RFC_CUSTOMER_GET RFC 测试已迁移的应用程序。</span><span class="sxs-lookup"><span data-stu-id="d5d28-105">**Objective:** In this step, you will test the migrated application by invoking the SD_RFC_CUSTOMER_GET RFC.</span></span> <span data-ttu-id="d5d28-106">若要执行此操作，你可以删除与生成使用 vPrev SAP 适配器的架构一致的请求消息。</span><span class="sxs-lookup"><span data-stu-id="d5d28-106">To do this, you drop a request message that conforms to the schema generated using the vPrev SAP adapter.</span></span>  
+ <span data-ttu-id="8e7aa-105">**目标：** 在此步骤中，您将通过调用 SD_RFC_CUSTOMER_GET RFC 测试已迁移应用程序。</span><span class="sxs-lookup"><span data-stu-id="8e7aa-105">**Objective:** In this step, you will test the migrated application by invoking the SD_RFC_CUSTOMER_GET RFC.</span></span> <span data-ttu-id="8e7aa-106">若要执行此操作，则删除与使用 vPrev SAP 适配器生成的架构一致的请求消息。</span><span class="sxs-lookup"><span data-stu-id="8e7aa-106">To do this, you drop a request message that conforms to the schema generated using the vPrev SAP adapter.</span></span>  
   
-## <a name="prerequisites"></a><span data-ttu-id="d5d28-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="d5d28-107">Prerequisites</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="8e7aa-107">必要條件</span><span class="sxs-lookup"><span data-stu-id="8e7aa-107">Prerequisites</span></span>  
   
--   <span data-ttu-id="d5d28-108">通过将 BizTalk 业务流程中的逻辑端口映射到在 BizTalk Server 管理控制台中的物理端口来配置 BizTalk 应用程序。</span><span class="sxs-lookup"><span data-stu-id="d5d28-108">Configure the BizTalk application by mapping the logical ports in the BizTalk orchestration to physical ports in the BizTalk Server Administration console.</span></span>  
+- <span data-ttu-id="8e7aa-108">通过将 BizTalk 业务流程中的逻辑端口映射到物理端口在 BizTalk Server 管理控制台中配置的 BizTalk 应用程序。</span><span class="sxs-lookup"><span data-stu-id="8e7aa-108">Configure the BizTalk application by mapping the logical ports in the BizTalk orchestration to physical ports in the BizTalk Server Administration console.</span></span>  
   
--   <span data-ttu-id="d5d28-109">配置 BizTalk 应用程序使用 WCF 自定义发送端口进行基于 WCF 的[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="d5d28-109">Configure the BizTalk application to use the WCF-Custom send port for the WCF-based [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span></span>  
+- <span data-ttu-id="8e7aa-109">配置 BizTalk 应用程序要用于 Wcf-custom 发送端口基于 WCF 的[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="8e7aa-109">Configure the BizTalk application to use the WCF-Custom send port for the WCF-based [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span></span>  
   
-### <a name="to-test-the-migrated-application"></a><span data-ttu-id="d5d28-110">测试已迁移应用程序</span><span class="sxs-lookup"><span data-stu-id="d5d28-110">To test the migrated application</span></span>  
+### <a name="to-test-the-migrated-application"></a><span data-ttu-id="8e7aa-110">若要测试已迁移应用程序</span><span class="sxs-lookup"><span data-stu-id="8e7aa-110">To test the migrated application</span></span>  
   
-1.  <span data-ttu-id="d5d28-111">从 SAP_RFC_Migration 文件夹中，将复制 Input.xml 请求消息。</span><span class="sxs-lookup"><span data-stu-id="d5d28-111">From the SAP_RFC_Migration folder, copy the Input.xml request message.</span></span> <span data-ttu-id="d5d28-112">此请求消息符合 vPrev SAP 适配器所生成的架构。</span><span class="sxs-lookup"><span data-stu-id="d5d28-112">This request message conforms to the schema generated by the vPrev SAP adapter.</span></span> <span data-ttu-id="d5d28-113">使用出站映射，WCF 自定义发送端口将这以符合为基于 WCF 的架构[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]并将其发送到 SAP 系统。</span><span class="sxs-lookup"><span data-stu-id="d5d28-113">Using the outbound map, the WCF-Custom send port converts this to conform to the schema for the WCF-based [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] and sends it to the SAP system.</span></span>  
+1. <span data-ttu-id="8e7aa-111">从 SAP_RFC_Migration 文件夹中，将复制 Input.xml 请求消息。</span><span class="sxs-lookup"><span data-stu-id="8e7aa-111">From the SAP_RFC_Migration folder, copy the Input.xml request message.</span></span> <span data-ttu-id="8e7aa-112">此请求消息符合 vPrev SAP 适配器生成的架构。</span><span class="sxs-lookup"><span data-stu-id="8e7aa-112">This request message conforms to the schema generated by the vPrev SAP adapter.</span></span> <span data-ttu-id="8e7aa-113">使用出站映射时，WCF 自定义发送端口将此选项以符合架构的基于 WCF 的[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]并将其发送到 SAP 系统。</span><span class="sxs-lookup"><span data-stu-id="8e7aa-113">Using the outbound map, the WCF-Custom send port converts this to conform to the schema for the WCF-based [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] and sends it to the SAP system.</span></span>  
   
-    ```  
-    <ns0:SD_RFC_CUSTOMER_GET_Request xmlns:ns0="http://schemas.microsoft.com/BizTalk/2003">  
-      <KUNNR>0000001390</KUNNR>  
-      <NAME1/>  
-      <CUSTOMER_T/>  
-    </ns0:SD_RFC_CUSTOMER_GET_Request>  
-    ```  
+   ```  
+   <ns0:SD_RFC_CUSTOMER_GET_Request xmlns:ns0="http://schemas.microsoft.com/BizTalk/2003">  
+     <KUNNR>0000001390</KUNNR>  
+     <NAME1/>  
+     <CUSTOMER_T/>  
+   </ns0:SD_RFC_CUSTOMER_GET_Request>  
+   ```  
   
-2.  <span data-ttu-id="d5d28-114">粘贴到映射到文件的文件夹的请求消息接收位置。</span><span class="sxs-lookup"><span data-stu-id="d5d28-114">Paste the request message to the folder that is mapped to the file receive location.</span></span>  
+2. <span data-ttu-id="8e7aa-114">粘贴到映射到文件的文件夹的请求消息的接收位置。</span><span class="sxs-lookup"><span data-stu-id="8e7aa-114">Paste the request message to the folder that is mapped to the file receive location.</span></span>  
   
-3.  <span data-ttu-id="d5d28-115">业务流程使用请求消息，并将其发送到 SAP 系统。</span><span class="sxs-lookup"><span data-stu-id="d5d28-115">The orchestration consumes the request message and sends it to the SAP system.</span></span> <span data-ttu-id="d5d28-116">中的基于 WCF 的架构的架构符合收到来自 SAP 系统的响应[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="d5d28-116">The response from the SAP system is received in the schema that conforms with the schema of the WCF-based [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span></span> <span data-ttu-id="d5d28-117">使用入站的映射，WCF 自定义发送端口将这 vPrev SAP 适配器的架构。</span><span class="sxs-lookup"><span data-stu-id="d5d28-117">Using the inbound map, the WCF-Custom send port converts this to the schema for the vPrev SAP adapter.</span></span> <span data-ttu-id="d5d28-118">从 SAP 系统的响应保存到定义为业务流程的一部分的其他文件位置。</span><span class="sxs-lookup"><span data-stu-id="d5d28-118">The response from the SAP system is saved to the other file location defined as part of the orchestration.</span></span> <span data-ttu-id="d5d28-119">以前的请求消息的响应是：</span><span class="sxs-lookup"><span data-stu-id="d5d28-119">The response for the previous request message is:</span></span>  
+3. <span data-ttu-id="8e7aa-115">业务流程使用请求消息，并将其发送到 SAP 系统。</span><span class="sxs-lookup"><span data-stu-id="8e7aa-115">The orchestration consumes the request message and sends it to the SAP system.</span></span> <span data-ttu-id="8e7aa-116">中的基于 WCF 的架构的架构符合收到来自 SAP 系统的响应[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="8e7aa-116">The response from the SAP system is received in the schema that conforms with the schema of the WCF-based [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)].</span></span> <span data-ttu-id="8e7aa-117">使用入站的映射时，WCF 自定义发送端口将此 vPrev SAP 适配器的架构。</span><span class="sxs-lookup"><span data-stu-id="8e7aa-117">Using the inbound map, the WCF-Custom send port converts this to the schema for the vPrev SAP adapter.</span></span> <span data-ttu-id="8e7aa-118">从 SAP 系统的响应保存到其他文件位置定义为业务流程的一部分。</span><span class="sxs-lookup"><span data-stu-id="8e7aa-118">The response from the SAP system is saved to the other file location defined as part of the orchestration.</span></span> <span data-ttu-id="8e7aa-119">在前面的请求消息的响应是：</span><span class="sxs-lookup"><span data-stu-id="8e7aa-119">The response for the previous request message is:</span></span>  
   
-    ```  
-    <?xml version="1.0" encoding="utf-8" ?>   
-    <ns0:SD_RFC_CUSTOMER_GET_Response xmlns:ns0="http://schemas.microsoft.com/BizTalk/2003">  
-      <CUSTOMER_T>  
-        <KUNNR>0000001390</KUNNR>   
-        <ANRED>Firma</ANRED>   
-        <NAME1>Contoso, Ltd.</NAME1>   
-        <PFACH />   
-        <STRAS>Strasse 4567</STRAS>   
-        <PSTLZ>50000</PSTLZ>   
-        <ORT01>Aachen</ORT01>   
-        <TELF1>0123-45678</TELF1>   
-        <TELFX>0123-56789</TELFX>   
-      </CUSTOMER_T>  
-    </ns0:SD_RFC_CUSTOMER_GET_Response>  
-    ```  
+   ```  
+   <?xml version="1.0" encoding="utf-8" ?>   
+   <ns0:SD_RFC_CUSTOMER_GET_Response xmlns:ns0="http://schemas.microsoft.com/BizTalk/2003">  
+     <CUSTOMER_T>  
+       <KUNNR>0000001390</KUNNR>   
+       <ANRED>Firma</ANRED>   
+       <NAME1>Contoso, Ltd.</NAME1>   
+       <PFACH />   
+       <STRAS>Strasse 4567</STRAS>   
+       <PSTLZ>50000</PSTLZ>   
+       <ORT01>Aachen</ORT01>   
+       <TELF1>0123-45678</TELF1>   
+       <TELFX>0123-56789</TELFX>   
+     </CUSTOMER_T>  
+   </ns0:SD_RFC_CUSTOMER_GET_Response>  
+   ```  
   
-## <a name="see-also"></a><span data-ttu-id="d5d28-120">另请参阅</span><span class="sxs-lookup"><span data-stu-id="d5d28-120">See Also</span></span>  
- [<span data-ttu-id="d5d28-121">教程 2： 迁移 SAP RFC BizTalk 项目</span><span class="sxs-lookup"><span data-stu-id="d5d28-121">Tutorial 2: Migrating an SAP RFC BizTalk Project</span></span>](../../adapters-and-accelerators/adapter-sap/tutorial-2-migrating-an-sap-rfc-biztalk-project.md)
+## <a name="see-also"></a><span data-ttu-id="8e7aa-120">请参阅</span><span class="sxs-lookup"><span data-stu-id="8e7aa-120">See Also</span></span>  
+ [<span data-ttu-id="8e7aa-121">教程 2：迁移 SAP RFC BizTalk 项目</span><span class="sxs-lookup"><span data-stu-id="8e7aa-121">Tutorial 2: Migrating an SAP RFC BizTalk Project</span></span>](../../adapters-and-accelerators/adapter-sap/tutorial-2-migrating-an-sap-rfc-biztalk-project.md)
