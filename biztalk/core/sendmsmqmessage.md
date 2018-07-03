@@ -1,5 +1,5 @@
 ---
-title: SendMSMQMessage |Microsoft 文档
+title: SendMSMQMessage |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,153 +15,154 @@ caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a48cbb333a724d2f60141f0f67ef3feccb1d3954
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 27c6a0f6b9e35b68fccd38d62fe7e1ae86f4f6ad
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25975507"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37024491"
 ---
-# <a name="sendmsmqmessage"></a><span data-ttu-id="6d71f-102">SendMSMQMessage</span><span class="sxs-lookup"><span data-stu-id="6d71f-102">SendMSMQMessage</span></span>
-<span data-ttu-id="6d71f-103">SendMSMQMessage 示例演示如何从基于 .NET 的应用程序向 MSMQ 端口发送消息。</span><span class="sxs-lookup"><span data-stu-id="6d71f-103">The SendMSMQMessage sample demonstrates how to send a message to an MSMQ port from a .NET-based application.</span></span> <span data-ttu-id="6d71f-104">它还提供有关如何配置 Microsoft 说明[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]为了使用 MSMQ 接收位置。</span><span class="sxs-lookup"><span data-stu-id="6d71f-104">It also provides instructions about how to configure Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to use an MSMQ receive location.</span></span>  
-  
- <span data-ttu-id="6d71f-105">应注意消息队列中的许多操作都是异步的。</span><span class="sxs-lookup"><span data-stu-id="6d71f-105">You should be aware that many operations in Message Queuing are asynchronous.</span></span> <span data-ttu-id="6d71f-106">也就是说，许多 MSMQ API 调用 (例如， **System.Messaging.MessageQueue.Send**) 返回到调用方完全完成请求的操作之前。</span><span class="sxs-lookup"><span data-stu-id="6d71f-106">That is, many MSMQ API calls (for example, **System.Messaging.MessageQueue.Send**) return to the caller before the requested operation has fully completed.</span></span> <span data-ttu-id="6d71f-107">MSMQ 提供了一种在操作完成之后将反馈传送到应用程序的机制。</span><span class="sxs-lookup"><span data-stu-id="6d71f-107">MSMQ provides a mechanism to deliver feedback to the application after the operation has completed.</span></span> <span data-ttu-id="6d71f-108">此机制涉及“管理队列”的使用。</span><span class="sxs-lookup"><span data-stu-id="6d71f-108">This mechanism involves the use of an "Admin Queue."</span></span> <span data-ttu-id="6d71f-109">MSMQ 将反馈以管理队列中的消息的形式返回。</span><span class="sxs-lookup"><span data-stu-id="6d71f-109">MSMQ returns feedback in the form of a message in the Admin Queue.</span></span> <span data-ttu-id="6d71f-110">MSMQ 将向其返回反馈的管理队列是在进行原始 MSMQ API 调用时指定的。</span><span class="sxs-lookup"><span data-stu-id="6d71f-110">The Admin Queue to which MSMQ will return feedback is specified when the original MSMQ API call is made.</span></span> <span data-ttu-id="6d71f-111">因此，举例来说，当发送消息使用**System.Messaging.MessageQueue.Send** API，应用程序可以指定管理队列的名称，通过使用**PROPID_M_ADMIN_QUEUE** message 属性对消息传递的调用中**System.Messaging.MessageQueue.Send**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-111">So, for example, when sending a message using the **System.Messaging.MessageQueue.Send** API, the application can specify the name of an Admin Queue by using the **PROPID_M_ADMIN_QUEUE** message property on the message passed in the call to **System.Messaging.MessageQueue.Send**.</span></span> <span data-ttu-id="6d71f-112">即使应用程序可能会成功的返回代码在**System.Messaging.MessageQueue.Send**调用时，如果该消息的发送操作随后失败，MSMQ 将消息针对此效果写入指定的管理队列。</span><span class="sxs-lookup"><span data-stu-id="6d71f-112">Even though the application may get a successful return code on the **System.Messaging.MessageQueue.Send** call, if the message send operation subsequently fails, MSMQ writes a message to that effect to the specified Admin Queue.</span></span> <span data-ttu-id="6d71f-113">如果应用程序未指定管理队列，发送失败将导致丢失消息和捕获任何诊断-实际上，该消息消失但没有任何证据。</span><span class="sxs-lookup"><span data-stu-id="6d71f-113">If the application does not specify an Admin Queue, the send failure results in the message being lost and no diagnostics captured — in effect, the message disappears without any evidence.</span></span> <span data-ttu-id="6d71f-114">有大量的错误可能会导致这种情况，例如，执行非事务性的 MSMQ 中的情况下将发送到事务性队列。</span><span class="sxs-lookup"><span data-stu-id="6d71f-114">There are a number of error situations in MSMQ that can cause this to happen, for example, doing a non-transactional send to a transactional queue.</span></span>  
-  
- <span data-ttu-id="6d71f-115">在此示例的上下文，很重要这段代码的调用中指定的事务类型**System.Messaging.MessageQueue.Send**是一致与为队列消息是指定的事务支持发送。</span><span class="sxs-lookup"><span data-stu-id="6d71f-115">In the context of this sample, it is important that the code specify a transaction type in the call to **System.Messaging.MessageQueue.Send** that is consistent with the transaction support specified for the queue to which the message is sent.</span></span> <span data-ttu-id="6d71f-116">如果未完成此和未管理员指定队列 （就是在此示例中这种情况），如果 MSMQ 放弃时，它还执行该操作没有指示发送的消息 （即，没有错误代码返回给应用程序事件日志中写入任何诊断依此类推)。</span><span class="sxs-lookup"><span data-stu-id="6d71f-116">If this is not done and if no Admin Queue is specified (as is the case in this sample), then MSMQ discards the sent message with no indication that it has done so (that is, no error code returned to the application, no diagnostics written to the event log, and so on).</span></span>  
-  
-## <a name="where-to-find-this-sample"></a><span data-ttu-id="6d71f-117">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="6d71f-117">Where to Find This Sample</span></span>  
- <span data-ttu-id="6d71f-118">\<示例路径\>\AdaptersUsage\SendMSMQMessage\\</span><span class="sxs-lookup"><span data-stu-id="6d71f-118">\<Samples Path\>\AdaptersUsage\SendMSMQMessage\\</span></span>  
-  
- <span data-ttu-id="6d71f-119">下表显示了本示例中的文件及其用途说明：</span><span class="sxs-lookup"><span data-stu-id="6d71f-119">The following table shows the files in this sample and describes their purpose.</span></span>  
-  
-|<span data-ttu-id="6d71f-120">文件</span><span class="sxs-lookup"><span data-stu-id="6d71f-120">Files</span></span>|<span data-ttu-id="6d71f-121">Description</span><span class="sxs-lookup"><span data-stu-id="6d71f-121">Description</span></span>|  
-|-----------|-----------------|  
-|<span data-ttu-id="6d71f-122">App.ico、AssemblyInfo.cs、SendMSMQMessage.csproj、SendMSMQMessage.sln</span><span class="sxs-lookup"><span data-stu-id="6d71f-122">App.ico, AssemblyInfo.cs, SendMSMQMessage.csproj, SendMSMQMessage.sln</span></span>|<span data-ttu-id="6d71f-123">提供项目、 解决方案和简单图形应用程序，此示例的相关的文件。</span><span class="sxs-lookup"><span data-stu-id="6d71f-123">Provide project, solution, and related files for the simple graphical application for this sample.</span></span>|  
-|<span data-ttu-id="6d71f-124">Form1.cs、Form1.resx</span><span class="sxs-lookup"><span data-stu-id="6d71f-124">Form1.cs, Form1.resx</span></span>|<span data-ttu-id="6d71f-125">为本示例的简单图形应用程序提供 Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)].NET 源文件和表单文件。</span><span class="sxs-lookup"><span data-stu-id="6d71f-125">Provide Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)].NET source and form files for the simple graphical application for this sample.</span></span>|  
-  
-## <a name="how-to-use-this-sample"></a><span data-ttu-id="6d71f-126">如何使用本示例</span><span class="sxs-lookup"><span data-stu-id="6d71f-126">How to Use This Sample</span></span>  
- <span data-ttu-id="6d71f-127">可以将本示例随附的简单图形应用程序中的代码用作以下过程的一个例子：将消息从诸如 Microsoft Office 之类的启用了 .NET 的应用程序、ASP.NET 页或其他地方发送到 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 内的 MSMQ 接收位置。</span><span class="sxs-lookup"><span data-stu-id="6d71f-127">You can use the code in the simple graphical application included with this sample as an example of how to send messages to MSMQ receive locations within [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] from .NET-enabled applications such as Microsoft Office, from ASP.NET pages, and so on.</span></span>  
-  
-## <a name="building-and-initializing-the-sample"></a><span data-ttu-id="6d71f-128">生成并初始化本示例</span><span class="sxs-lookup"><span data-stu-id="6d71f-128">Building and Initializing the Sample</span></span>  
-  
-#### <a name="to-build-the-sample-executable"></a><span data-ttu-id="6d71f-129">生成示例可执行文件</span><span class="sxs-lookup"><span data-stu-id="6d71f-129">To build the sample executable</span></span>  
-  
-1.  <span data-ttu-id="6d71f-130">使用 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，打开解决方案文件 SendMSMQMessage.sln。</span><span class="sxs-lookup"><span data-stu-id="6d71f-130">Using [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the solution file SendMSMQMessage.sln.</span></span>  
-  
-2.  <span data-ttu-id="6d71f-131">在“生成”  菜单上，单击“生成解决方案” 。</span><span class="sxs-lookup"><span data-stu-id="6d71f-131">On the **Build** menu, click **Build Solution**.</span></span>  
-  
-## <a name="configuring-biztalk-server-and-creating-the-msmq-queue"></a><span data-ttu-id="6d71f-132">配置 BizTalk Server 和创建 MSMQ 队列</span><span class="sxs-lookup"><span data-stu-id="6d71f-132">Configuring BizTalk Server and Creating the MSMQ Queue</span></span>  
- <span data-ttu-id="6d71f-133">使用以下过程配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 并创建 MSMQ 队列以运行示例。</span><span class="sxs-lookup"><span data-stu-id="6d71f-133">Use the following procedures to configure [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and create the MSMQ queue for running the sample.</span></span>  
-  
-#### <a name="to-create-the-msmq-queue-in-windows-server-2008-r2-or-windows-server-2008-sp2"></a><span data-ttu-id="6d71f-134">在 Windows Server 2008 R2 或 Windows Server 2008 SP2 中创建 MSMQ 队列的步骤</span><span class="sxs-lookup"><span data-stu-id="6d71f-134">To create the MSMQ queue in Windows Server 2008 R2 or Windows Server 2008 SP2</span></span>  
-  
-1.  <span data-ttu-id="6d71f-135">单击**启动**，右键单击**计算机**，然后单击**管理**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-135">Click **Start**, right-click **Computer**, and then click **Manage**.</span></span>  
-  
-2.  <span data-ttu-id="6d71f-136">展开**功能**节点。</span><span class="sxs-lookup"><span data-stu-id="6d71f-136">Expand the **Features** node.</span></span>  <span data-ttu-id="6d71f-137">如果**消息队列**是未安装，请右键单击**功能**和选择**添加功能**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-137">If **Message Queuing** is not installed, right-click **Features** and select **Add Features**.</span></span>  <span data-ttu-id="6d71f-138">检查**消息队列**，单击**下一步**，然后单击**安装**该系统上安装 MSMQ。</span><span class="sxs-lookup"><span data-stu-id="6d71f-138">Check **Message Queuing**, click **Next**, and then click **Install** to install MSMQ on that system.</span></span>  
-  
-3.  <span data-ttu-id="6d71f-139">展开**消息队列**节点。</span><span class="sxs-lookup"><span data-stu-id="6d71f-139">Expand the **Message Queuing** node.</span></span>  
-  
-4.  <span data-ttu-id="6d71f-140">右键单击**专用队列**节点，单击**新建**，然后单击**专用队列**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-140">Right-click the **Private Queues** node, click **New**, and then click **Private Queue**.</span></span>  
-  
-5.  <span data-ttu-id="6d71f-141">下**队列名称**，输入`test`。</span><span class="sxs-lookup"><span data-stu-id="6d71f-141">Under **Queue name**, enter `test`.</span></span> <span data-ttu-id="6d71f-142">确保**事务**复选框处于选中状态。</span><span class="sxs-lookup"><span data-stu-id="6d71f-142">Ensure that the **Transactional** check box is selected.</span></span>  
-  
-6.  <span data-ttu-id="6d71f-143">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-143">Click **OK**.</span></span>  
-  
-#### <a name="to-create-the-msmq-queue-in-windows-7-or-windows-vista-sp2"></a><span data-ttu-id="6d71f-144">在 Windows 7 或 Windows Vista SP2 中创建 MSMQ 队列的步骤</span><span class="sxs-lookup"><span data-stu-id="6d71f-144">To create the MSMQ queue in Windows 7 or Windows Vista SP2</span></span>  
-  
-1.  <span data-ttu-id="6d71f-145">单击**启动**，右键单击**计算机**，然后单击**管理**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-145">Click **Start**, right-click **Computer**, and then click **Manage**.</span></span>  
-  
-2.  <span data-ttu-id="6d71f-146">展开**服务和应用程序**，然后展开**消息队列**节点。</span><span class="sxs-lookup"><span data-stu-id="6d71f-146">Expand **Services and Applications**, and then expand the **Message Queuing** node.</span></span>  
-  
+# <a name="sendmsmqmessage"></a><span data-ttu-id="d0c90-102">SendMSMQMessage</span><span class="sxs-lookup"><span data-stu-id="d0c90-102">SendMSMQMessage</span></span>
+<span data-ttu-id="d0c90-103">SendMSMQMessage 示例演示如何从基于 .NET 的应用程序向 MSMQ 端口发送消息。</span><span class="sxs-lookup"><span data-stu-id="d0c90-103">The SendMSMQMessage sample demonstrates how to send a message to an MSMQ port from a .NET-based application.</span></span> <span data-ttu-id="d0c90-104">它还提供了有关如何配置 Microsoft 说明[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用 MSMQ 接收位置。</span><span class="sxs-lookup"><span data-stu-id="d0c90-104">It also provides instructions about how to configure Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] to use an MSMQ receive location.</span></span>  
+
+ <span data-ttu-id="d0c90-105">应注意消息队列中的许多操作都是异步的。</span><span class="sxs-lookup"><span data-stu-id="d0c90-105">You should be aware that many operations in Message Queuing are asynchronous.</span></span> <span data-ttu-id="d0c90-106">即，许多 MSMQ API 呼叫 (例如， **System.Messaging.MessageQueue.Send**) 返回给调用方请求的操作完全完成之前。</span><span class="sxs-lookup"><span data-stu-id="d0c90-106">That is, many MSMQ API calls (for example, **System.Messaging.MessageQueue.Send**) return to the caller before the requested operation has fully completed.</span></span> <span data-ttu-id="d0c90-107">MSMQ 提供了一种在操作完成之后将反馈传送到应用程序的机制。</span><span class="sxs-lookup"><span data-stu-id="d0c90-107">MSMQ provides a mechanism to deliver feedback to the application after the operation has completed.</span></span> <span data-ttu-id="d0c90-108">此机制涉及“管理队列”的使用。</span><span class="sxs-lookup"><span data-stu-id="d0c90-108">This mechanism involves the use of an "Admin Queue."</span></span> <span data-ttu-id="d0c90-109">MSMQ 将反馈以管理队列中的消息的形式返回。</span><span class="sxs-lookup"><span data-stu-id="d0c90-109">MSMQ returns feedback in the form of a message in the Admin Queue.</span></span> <span data-ttu-id="d0c90-110">MSMQ 将向其返回反馈的管理队列是在进行原始 MSMQ API 调用时指定的。</span><span class="sxs-lookup"><span data-stu-id="d0c90-110">The Admin Queue to which MSMQ will return feedback is specified when the original MSMQ API call is made.</span></span> <span data-ttu-id="d0c90-111">因此，举例来说，当发送消息使用**System.Messaging.MessageQueue.Send** API，应用程序可以指定管理队列的名称，通过使用**PROPID_M_ADMIN_QUEUE**消息属性对消息传递到调用中**System.Messaging.MessageQueue.Send**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-111">So, for example, when sending a message using the **System.Messaging.MessageQueue.Send** API, the application can specify the name of an Admin Queue by using the **PROPID_M_ADMIN_QUEUE** message property on the message passed in the call to **System.Messaging.MessageQueue.Send**.</span></span> <span data-ttu-id="d0c90-112">即使应用程序可能会获得成功返回代码**System.Messaging.MessageQueue.Send**调用时，如果消息的发送操作随后失败，MSMQ 消息写入该结果指定的管理队列。</span><span class="sxs-lookup"><span data-stu-id="d0c90-112">Even though the application may get a successful return code on the **System.Messaging.MessageQueue.Send** call, if the message send operation subsequently fails, MSMQ writes a message to that effect to the specified Admin Queue.</span></span> <span data-ttu-id="d0c90-113">如果应用程序未指定管理队列，发送失败会导致消息丢失并且捕获任何诊断 — 实际上，该消息消失但没有任何证据。</span><span class="sxs-lookup"><span data-stu-id="d0c90-113">If the application does not specify an Admin Queue, the send failure results in the message being lost and no diagnostics captured — in effect, the message disappears without any evidence.</span></span> <span data-ttu-id="d0c90-114">有了很多错误可能会导致这种情况发生，例如，执行非事务性 MSMQ 中的情况下将发送到事务性队列。</span><span class="sxs-lookup"><span data-stu-id="d0c90-114">There are a number of error situations in MSMQ that can cause this to happen, for example, doing a non-transactional send to a transactional queue.</span></span>  
+
+ <span data-ttu-id="d0c90-115">在本示例的上下文，非常重要的代码对的调用中指定的事务类型**System.Messaging.MessageQueue.Send**这就是与的队列的消息是指定的事务支持一致发送。</span><span class="sxs-lookup"><span data-stu-id="d0c90-115">In the context of this sample, it is important that the code specify a transaction type in the call to **System.Messaging.MessageQueue.Send** that is consistent with the transaction support specified for the queue to which the message is sent.</span></span> <span data-ttu-id="d0c90-116">如果这不是，如果 （如在此示例中） 不指定任何管理队列，则 MSMQ 放弃时，它还执行该操作没有指示发送的消息 （即，没有错误代码返回给应用程序事件日志中写入任何诊断等等)。</span><span class="sxs-lookup"><span data-stu-id="d0c90-116">If this is not done and if no Admin Queue is specified (as is the case in this sample), then MSMQ discards the sent message with no indication that it has done so (that is, no error code returned to the application, no diagnostics written to the event log, and so on).</span></span>  
+
+## <a name="where-to-find-this-sample"></a><span data-ttu-id="d0c90-117">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="d0c90-117">Where to Find This Sample</span></span>  
+ <span data-ttu-id="d0c90-118">\<示例路径\>\AdaptersUsage\SendMSMQMessage\\</span><span class="sxs-lookup"><span data-stu-id="d0c90-118">\<Samples Path\>\AdaptersUsage\SendMSMQMessage\\</span></span>  
+
+ <span data-ttu-id="d0c90-119">下表显示了本示例中的文件及其用途说明：</span><span class="sxs-lookup"><span data-stu-id="d0c90-119">The following table shows the files in this sample and describes their purpose.</span></span>  
+
+
+|                                 <span data-ttu-id="d0c90-120">“文件”</span><span class="sxs-lookup"><span data-stu-id="d0c90-120">Files</span></span>                                 |                                                                      <span data-ttu-id="d0c90-121">Description</span><span class="sxs-lookup"><span data-stu-id="d0c90-121">Description</span></span>                                                                       |
+|-----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <span data-ttu-id="d0c90-122">App.ico、AssemblyInfo.cs、SendMSMQMessage.csproj、SendMSMQMessage.sln</span><span class="sxs-lookup"><span data-stu-id="d0c90-122">App.ico, AssemblyInfo.cs, SendMSMQMessage.csproj, SendMSMQMessage.sln</span></span> |                           <span data-ttu-id="d0c90-123">提供项目、 解决方案和相关的文件，此示例的简单图形应用程序。</span><span class="sxs-lookup"><span data-stu-id="d0c90-123">Provide project, solution, and related files for the simple graphical application for this sample.</span></span>                           |
+|                         <span data-ttu-id="d0c90-124">Form1.cs、Form1.resx</span><span class="sxs-lookup"><span data-stu-id="d0c90-124">Form1.cs, Form1.resx</span></span>                          | <span data-ttu-id="d0c90-125">为本示例的简单图形应用程序提供 Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)].NET 源文件和表单文件。</span><span class="sxs-lookup"><span data-stu-id="d0c90-125">Provide Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)].NET source and form files for the simple graphical application for this sample.</span></span> |
+
+## <a name="how-to-use-this-sample"></a><span data-ttu-id="d0c90-126">如何使用本示例</span><span class="sxs-lookup"><span data-stu-id="d0c90-126">How to Use This Sample</span></span>  
+ <span data-ttu-id="d0c90-127">可以将本示例随附的简单图形应用程序中的代码用作以下过程的一个例子：将消息从诸如 Microsoft Office 之类的启用了 .NET 的应用程序、ASP.NET 页或其他地方发送到 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 内的 MSMQ 接收位置。</span><span class="sxs-lookup"><span data-stu-id="d0c90-127">You can use the code in the simple graphical application included with this sample as an example of how to send messages to MSMQ receive locations within [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] from .NET-enabled applications such as Microsoft Office, from ASP.NET pages, and so on.</span></span>  
+
+## <a name="building-and-initializing-the-sample"></a><span data-ttu-id="d0c90-128">生成并初始化本示例</span><span class="sxs-lookup"><span data-stu-id="d0c90-128">Building and Initializing the Sample</span></span>  
+
+#### <a name="to-build-the-sample-executable"></a><span data-ttu-id="d0c90-129">生成示例可执行文件</span><span class="sxs-lookup"><span data-stu-id="d0c90-129">To build the sample executable</span></span>  
+
+1. <span data-ttu-id="d0c90-130">使用 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，打开解决方案文件 SendMSMQMessage.sln。</span><span class="sxs-lookup"><span data-stu-id="d0c90-130">Using [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the solution file SendMSMQMessage.sln.</span></span>  
+
+2. <span data-ttu-id="d0c90-131">在“生成”  菜单上，单击“生成解决方案” 。</span><span class="sxs-lookup"><span data-stu-id="d0c90-131">On the **Build** menu, click **Build Solution**.</span></span>  
+
+## <a name="configuring-biztalk-server-and-creating-the-msmq-queue"></a><span data-ttu-id="d0c90-132">配置 BizTalk Server 和创建 MSMQ 队列</span><span class="sxs-lookup"><span data-stu-id="d0c90-132">Configuring BizTalk Server and Creating the MSMQ Queue</span></span>  
+ <span data-ttu-id="d0c90-133">使用以下过程配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 并创建 MSMQ 队列以运行示例。</span><span class="sxs-lookup"><span data-stu-id="d0c90-133">Use the following procedures to configure [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and create the MSMQ queue for running the sample.</span></span>  
+
+#### <a name="to-create-the-msmq-queue-in-windows-server-2008-r2-or-windows-server-2008-sp2"></a><span data-ttu-id="d0c90-134">在 Windows Server 2008 R2 或 Windows Server 2008 SP2 中创建 MSMQ 队列的步骤</span><span class="sxs-lookup"><span data-stu-id="d0c90-134">To create the MSMQ queue in Windows Server 2008 R2 or Windows Server 2008 SP2</span></span>  
+
+1.  <span data-ttu-id="d0c90-135">单击**启动**，右键单击**计算机**，然后单击**管理**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-135">Click **Start**, right-click **Computer**, and then click **Manage**.</span></span>  
+
+2.  <span data-ttu-id="d0c90-136">展开**功能**节点。</span><span class="sxs-lookup"><span data-stu-id="d0c90-136">Expand the **Features** node.</span></span>  <span data-ttu-id="d0c90-137">如果**消息队列**是未安装，请右键单击**功能**，然后选择**添加功能**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-137">If **Message Queuing** is not installed, right-click **Features** and select **Add Features**.</span></span>  <span data-ttu-id="d0c90-138">检查**消息队列**，单击**下一步**，然后单击**安装**该系统上安装 MSMQ。</span><span class="sxs-lookup"><span data-stu-id="d0c90-138">Check **Message Queuing**, click **Next**, and then click **Install** to install MSMQ on that system.</span></span>  
+
+3.  <span data-ttu-id="d0c90-139">展开**消息队列**节点。</span><span class="sxs-lookup"><span data-stu-id="d0c90-139">Expand the **Message Queuing** node.</span></span>  
+
+4.  <span data-ttu-id="d0c90-140">右键单击**专用队列**节点中，单击**新建**，然后单击**专用队列**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-140">Right-click the **Private Queues** node, click **New**, and then click **Private Queue**.</span></span>  
+
+5.  <span data-ttu-id="d0c90-141">下**队列名称**，输入`test`。</span><span class="sxs-lookup"><span data-stu-id="d0c90-141">Under **Queue name**, enter `test`.</span></span> <span data-ttu-id="d0c90-142">絋粄**事务性**复选框处于选中状态。</span><span class="sxs-lookup"><span data-stu-id="d0c90-142">Ensure that the **Transactional** check box is selected.</span></span>  
+
+6.  <span data-ttu-id="d0c90-143">单击“确定” 。</span><span class="sxs-lookup"><span data-stu-id="d0c90-143">Click **OK**.</span></span>  
+
+#### <a name="to-create-the-msmq-queue-in-windows-7-or-windows-vista-sp2"></a><span data-ttu-id="d0c90-144">在 Windows 7 或 Windows Vista SP2 中创建 MSMQ 队列的步骤</span><span class="sxs-lookup"><span data-stu-id="d0c90-144">To create the MSMQ queue in Windows 7 or Windows Vista SP2</span></span>  
+
+1.  <span data-ttu-id="d0c90-145">单击**启动**，右键单击**计算机**，然后单击**管理**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-145">Click **Start**, right-click **Computer**, and then click **Manage**.</span></span>  
+
+2.  <span data-ttu-id="d0c90-146">展开**服务和应用程序**，然后展开**消息队列**节点。</span><span class="sxs-lookup"><span data-stu-id="d0c90-146">Expand **Services and Applications**, and then expand the **Message Queuing** node.</span></span>  
+
     > [!NOTE]
-    >  <span data-ttu-id="6d71f-147">如果**消息队列**未安装在计算机上，转到**控制面板 > 程序 > 程序和功能**，然后选择**打开或关闭 Windows 功能**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-147">If **Message Queuing** is not installed in the computer, go to **Control Panel > Programs > Programs and Features**, and then select **Turn Windows features on or off**.</span></span> <span data-ttu-id="6d71f-148">检查下的所有功能**Microsoft Message Queue (MSMQ) 服务器**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-148">Check all the features under **Microsoft Message Queue (MSMQ) Server**, and then click **OK**.</span></span>  
-  
-3.  <span data-ttu-id="6d71f-149">右键单击**专用队列**节点，单击**新建**，然后单击**专用队列**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-149">Right-click the **Private Queues** node, click **New**, and then click **Private Queue**.</span></span>  
-  
-4.  <span data-ttu-id="6d71f-150">下**队列名称**，输入**测试**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-150">Under **Queue name**, enter **test**.</span></span> <span data-ttu-id="6d71f-151">确保**事务**复选框处于选中状态。</span><span class="sxs-lookup"><span data-stu-id="6d71f-151">Ensure that the **Transactional** check box is selected.</span></span>  
-  
-5.  <span data-ttu-id="6d71f-152">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-152">Click **OK**.</span></span>  
-  
-#### <a name="to-configure-biztalk-server"></a><span data-ttu-id="6d71f-153">若要配置 BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="6d71f-153">To configure BizTalk Server</span></span>  
-  
-1.  <span data-ttu-id="6d71f-154">选择存放接收消息的文件夹。</span><span class="sxs-lookup"><span data-stu-id="6d71f-154">Select a folder in which to receive messages.</span></span> <span data-ttu-id="6d71f-155">以下步骤假定您选择了 C:\Demo\Report，但如有必要，可调整这些步骤来使用其他文件夹。</span><span class="sxs-lookup"><span data-stu-id="6d71f-155">The following steps assume that you have selected C:\Demo\Report, but you can adjust the steps as necessary for another folder.</span></span>  
-  
-2.  <span data-ttu-id="6d71f-156">打开[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。</span><span class="sxs-lookup"><span data-stu-id="6d71f-156">Open the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
-  
-3.  <span data-ttu-id="6d71f-157">创建新的应用程序名为**MSMQSample**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-157">Create a new application named **MSMQSample**.</span></span>  
-  
-4.  <span data-ttu-id="6d71f-158">右键单击**接收端口**，单击**新建**，然后单击**单向接收端口**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-158">Right-click **Receive Ports**, click **New**, and then click **One-way Receive Port**.</span></span>  
-  
-5.  <span data-ttu-id="6d71f-159">在**接收端口属性**对话框中，在**名称**框中输入**MyReceivePort**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-159">In the **Receive Port Properties** dialog box, in the **Name** box enter **MyReceivePort**, and then click **OK**.</span></span>  
-  
-6.  <span data-ttu-id="6d71f-160">右键单击**接收位置**，单击**新建**，然后单击**单向接收位置**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-160">Right-click **Receive Locations**, click **New**, and then click **One-way Receive Location**.</span></span> <span data-ttu-id="6d71f-161">在**选择接收端口**对话框中，选择你刚接收端口创建，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-161">In the **Select a Receive Port** dialog box, select the receive port you just created and click **OK**.</span></span>  
-  
-7.  <span data-ttu-id="6d71f-162">在**接收位置属性**对话框中，在**名称**框中，键入接收端口的名称，如**MSMQReceiveLocation**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-162">In the **Receive Location Properties** dialog box, in the **Name** box, type a name for the receive port, such as **MSMQReceiveLocation**.</span></span>  
-  
-8.  <span data-ttu-id="6d71f-163">在**接收位置属性**对话框中，对于传输类型中，选择**MSMQ** 。</span><span class="sxs-lookup"><span data-stu-id="6d71f-163">In the **Receive Location Properties** dialog box, for the transport type, select **MSMQ** .</span></span>  
-  
-9. <span data-ttu-id="6d71f-164">单击**配置**以打开**MSMQ 传输属性**对话框。</span><span class="sxs-lookup"><span data-stu-id="6d71f-164">Click **Configure** to open the **MSMQ Transport Properties** dialog box.</span></span> <span data-ttu-id="6d71f-165">设置**队列**到`localhost\private$\test`，将其设置**事务**到`True`，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-165">Set **Queue** to `localhost\private$\test`, set **Transactional** to `True`, and then click **OK**.</span></span>  
-  
-10. <span data-ttu-id="6d71f-166">展开应用程序，选择**发送端口**，选择**新建**，选择**静态单向发送端口**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-166">Expand the application, select **Send Ports**, select **New**, select **Static One-way Send Port**.</span></span>  
-  
-11. <span data-ttu-id="6d71f-167">在**发送端口属性**对话框中，在**名称**框中，键入发送端口的名称，如**MySendPort**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-167">In the **Send Port Properties** dialog box, in the **Name** box, type a name for the send port, such as **MySendPort**.</span></span>  
-  
-12. <span data-ttu-id="6d71f-168">设置**传输类型**属性**文件**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-168">Set the **Transport Type** property to **FILE**.</span></span>  
-  
-13. <span data-ttu-id="6d71f-169">单击**配置**以打开**文件传输属性**对话框。</span><span class="sxs-lookup"><span data-stu-id="6d71f-169">Click **Configure** to open the **File Transport Properties** dialog box.</span></span>  
-  
-14. <span data-ttu-id="6d71f-170">在**文件传输属性**对话框中，设置**目标文件夹**属性**C:\Demo\Report**，保留其他属性的默认设置，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-170">In the **FILE Transport Properties** dialog box, set the **Destination Folder** property to **C:\Demo\Report**, keep the default settings for the other properties, and then click **OK**.</span></span>  
-  
-15. <span data-ttu-id="6d71f-171">选择**筛选器**，然后通过设置中添加新行**属性**到**BTS。ReceivePortName**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-171">Select **Filters**, and then add a new row by setting **Property** to **BTS.ReceivePortName**.</span></span> <span data-ttu-id="6d71f-172">保留**运算符**列设置为 **==** ，将其设置**值**列**MyReceivePort**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-172">Leave the **Operator** column set to **==**, set the **Value** column to **MyReceivePort**, and then click **OK**.</span></span>  
-  
-16. <span data-ttu-id="6d71f-173">右键单击新发送端口，然后单击**Enlist**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-173">Right-click your new send port, and then click **Enlist**.</span></span>  
-  
-17. <span data-ttu-id="6d71f-174">右键单击新发送端口试，然后单击**启动**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-174">Right-click your new send port again, and then click **Start**.</span></span>  
-  
-18. <span data-ttu-id="6d71f-175">右键单击新接收位置，然后单击**启用**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-175">Right-click your new receive location, and then click **Enable**.</span></span>  
-  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="6d71f-176">现在已准备好要使用此示例。</span><span class="sxs-lookup"><span data-stu-id="6d71f-176"> is now ready to work with this sample.</span></span>  
-  
-## <a name="running-the-sample"></a><span data-ttu-id="6d71f-177">运行示例</span><span class="sxs-lookup"><span data-stu-id="6d71f-177">Running the Sample</span></span>  
- <span data-ttu-id="6d71f-178">使用以下过程运行 SendMSMQMessage 示例。</span><span class="sxs-lookup"><span data-stu-id="6d71f-178">Use the following procedure to run the SendMSMQMessage sample.</span></span>  
-  
-#### <a name="to-run-the-sample"></a><span data-ttu-id="6d71f-179">运行示例</span><span class="sxs-lookup"><span data-stu-id="6d71f-179">To run the sample</span></span>  
-  
-1.  <span data-ttu-id="6d71f-180">在命令窗口中，导航到下面的文件夹：</span><span class="sxs-lookup"><span data-stu-id="6d71f-180">In a command window, navigate to the following folder:</span></span>  
-  
-     <span data-ttu-id="6d71f-181">\<示例路径\>\AdaptersUsage\SendMSMQMessage\bin\Debug</span><span class="sxs-lookup"><span data-stu-id="6d71f-181">\<Samples Path\>\AdaptersUsage\SendMSMQMessage\bin\Debug</span></span>  
-  
-2.  <span data-ttu-id="6d71f-182">运行文件 SendMSMQMessage.exe，这将启动提供本示例的用户界面的图形应用程序。</span><span class="sxs-lookup"><span data-stu-id="6d71f-182">Run the file SendMSMQMessage.exe, which starts the graphical application that provides the user interface for this sample.</span></span>  
-  
-3.  <span data-ttu-id="6d71f-183">在图形应用程序中**BizTalk 计算机名称**框中，键入本地计算机的名称。</span><span class="sxs-lookup"><span data-stu-id="6d71f-183">In the graphical application, in the **BizTalk machine name** box, type the name of the local computer.</span></span>  
-  
-4.  <span data-ttu-id="6d71f-184">请尝试**发送包装**选项：</span><span class="sxs-lookup"><span data-stu-id="6d71f-184">Try the **Send Wrapped** option:</span></span>  
-  
-    1.  <span data-ttu-id="6d71f-185">（可选） 更改中的文本**消息正文**框。</span><span class="sxs-lookup"><span data-stu-id="6d71f-185">Optionally change the text in the **Message body** box.</span></span>  
-  
-    2.  <span data-ttu-id="6d71f-186">单击**发送已包装**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-186">Click **Send wrapped**.</span></span>  
-  
-     <span data-ttu-id="6d71f-187">如果操作成功，则将看到以下内容：</span><span class="sxs-lookup"><span data-stu-id="6d71f-187">If the operation succeeds, you will see the following:</span></span>  
-  
-    -   <span data-ttu-id="6d71f-188">Word**成功**立即上方的按钮的框中的红色字体显示。</span><span class="sxs-lookup"><span data-stu-id="6d71f-188">The word **Success** appears in red font in the box immediately above the buttons.</span></span>  
-  
-    -   <span data-ttu-id="6d71f-189">将在目标文件夹 C:\Demo\Reports 中显示一个文件。</span><span class="sxs-lookup"><span data-stu-id="6d71f-189">A file appears in your destination folder, C:\Demo\Reports.</span></span> <span data-ttu-id="6d71f-190">此文件包含中的文本**消息正文**包装在简单的 XML 标记，由.NET 消息队列库中的框。</span><span class="sxs-lookup"><span data-stu-id="6d71f-190">This file contains the text from the **Message body** box wrapped in simple XML tags by the .NET message queuing library.</span></span>  
-  
-     <span data-ttu-id="6d71f-191">如果操作失败，则将在按钮上方紧挨的框中显示一条错误消息。</span><span class="sxs-lookup"><span data-stu-id="6d71f-191">If the operation fails, you will see an error message in the box immediately above the buttons.</span></span>  
-  
-5.  <span data-ttu-id="6d71f-192">请尝试**发送确切**选项：</span><span class="sxs-lookup"><span data-stu-id="6d71f-192">Try the **Send Exact** option:</span></span>  
-  
-    1.  <span data-ttu-id="6d71f-193">（可选） 更改中的文本**消息正文**框。</span><span class="sxs-lookup"><span data-stu-id="6d71f-193">Optionally change the text in the **Message body** box.</span></span>  
-  
-    2.  <span data-ttu-id="6d71f-194">单击**发送确切**。</span><span class="sxs-lookup"><span data-stu-id="6d71f-194">Click **Send exact**.</span></span>  
-  
-     <span data-ttu-id="6d71f-195">如果操作成功，则将看到以下内容：</span><span class="sxs-lookup"><span data-stu-id="6d71f-195">If the operation succeeds, you will see the following:</span></span>  
-  
-    -   <span data-ttu-id="6d71f-196">Word**成功**立即上方的按钮的框中的红色字体显示。</span><span class="sxs-lookup"><span data-stu-id="6d71f-196">The word **Success** appears in red font in the box immediately above the buttons.</span></span>  
-  
-    -   <span data-ttu-id="6d71f-197">将在目标文件夹 C:\Demo\Reports 中显示一个文件。</span><span class="sxs-lookup"><span data-stu-id="6d71f-197">A file appears in your destination folder, C:\Demo\Reports.</span></span> <span data-ttu-id="6d71f-198">此文件包含中的文本**消息正文**框中的文本框中显示的完全相同。</span><span class="sxs-lookup"><span data-stu-id="6d71f-198">This file contains the text from the **Message body** box exactly as it appears in the text box.</span></span>  
-  
-     <span data-ttu-id="6d71f-199">如果操作失败，则将在按钮上方紧挨的框中显示一条错误消息。</span><span class="sxs-lookup"><span data-stu-id="6d71f-199">If the operation fails, you will see an error message in the box immediately above the buttons.</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="6d71f-200">另请参阅</span><span class="sxs-lookup"><span data-stu-id="6d71f-200">See Also</span></span>  
- [<span data-ttu-id="6d71f-201">适配器示例 - 用法</span><span class="sxs-lookup"><span data-stu-id="6d71f-201">Adapter Samples - Usage</span></span>](../core/adapter-samples-usage.md)
+    >  <span data-ttu-id="d0c90-147">如果**消息队列**未安装在计算机中，转到**控制面板 > 程序 > 程序和功能**，然后选择**打开或关闭打开的 Windows 功能**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-147">If **Message Queuing** is not installed in the computer, go to **Control Panel > Programs > Programs and Features**, and then select **Turn Windows features on or off**.</span></span> <span data-ttu-id="d0c90-148">检查下的所有功能**Microsoft 消息队列 (MSMQ) 服务器**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-148">Check all the features under **Microsoft Message Queue (MSMQ) Server**, and then click **OK**.</span></span>  
+
+3.  <span data-ttu-id="d0c90-149">右键单击**专用队列**节点中，单击**新建**，然后单击**专用队列**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-149">Right-click the **Private Queues** node, click **New**, and then click **Private Queue**.</span></span>  
+
+4.  <span data-ttu-id="d0c90-150">下**队列名称**，输入**测试**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-150">Under **Queue name**, enter **test**.</span></span> <span data-ttu-id="d0c90-151">絋粄**事务性**复选框处于选中状态。</span><span class="sxs-lookup"><span data-stu-id="d0c90-151">Ensure that the **Transactional** check box is selected.</span></span>  
+
+5.  <span data-ttu-id="d0c90-152">单击“确定” 。</span><span class="sxs-lookup"><span data-stu-id="d0c90-152">Click **OK**.</span></span>  
+
+#### <a name="to-configure-biztalk-server"></a><span data-ttu-id="d0c90-153">若要配置 BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="d0c90-153">To configure BizTalk Server</span></span>  
+
+1. <span data-ttu-id="d0c90-154">选择存放接收消息的文件夹。</span><span class="sxs-lookup"><span data-stu-id="d0c90-154">Select a folder in which to receive messages.</span></span> <span data-ttu-id="d0c90-155">以下步骤假定您选择了 C:\Demo\Report，但如有必要，可调整这些步骤来使用其他文件夹。</span><span class="sxs-lookup"><span data-stu-id="d0c90-155">The following steps assume that you have selected C:\Demo\Report, but you can adjust the steps as necessary for another folder.</span></span>  
+
+2. <span data-ttu-id="d0c90-156">打开[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。</span><span class="sxs-lookup"><span data-stu-id="d0c90-156">Open the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console.</span></span>  
+
+3. <span data-ttu-id="d0c90-157">创建新的应用程序名为**MSMQSample**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-157">Create a new application named **MSMQSample**.</span></span>  
+
+4. <span data-ttu-id="d0c90-158">右键单击**接收端口**，单击**新建**，然后单击**单向接收端口**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-158">Right-click **Receive Ports**, click **New**, and then click **One-way Receive Port**.</span></span>  
+
+5. <span data-ttu-id="d0c90-159">在中**接收端口属性**对话框中**名称**框中输入**MyReceivePort**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-159">In the **Receive Port Properties** dialog box, in the **Name** box enter **MyReceivePort**, and then click **OK**.</span></span>  
+
+6. <span data-ttu-id="d0c90-160">右键单击**接收位置**，单击**新建**，然后单击**单向接收位置**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-160">Right-click **Receive Locations**, click **New**, and then click **One-way Receive Location**.</span></span> <span data-ttu-id="d0c90-161">在中**选择接收端口**对话框中，选择接收端口刚刚创建，并单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-161">In the **Select a Receive Port** dialog box, select the receive port you just created and click **OK**.</span></span>  
+
+7. <span data-ttu-id="d0c90-162">在中**接收位置属性**对话框中**名称**框中，键入接收端口的名称，如**MSMQReceiveLocation**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-162">In the **Receive Location Properties** dialog box, in the **Name** box, type a name for the receive port, such as **MSMQReceiveLocation**.</span></span>  
+
+8. <span data-ttu-id="d0c90-163">在中**接收位置属性**对话框中的，为传输类型选择**MSMQ** 。</span><span class="sxs-lookup"><span data-stu-id="d0c90-163">In the **Receive Location Properties** dialog box, for the transport type, select **MSMQ** .</span></span>  
+
+9. <span data-ttu-id="d0c90-164">单击**配置**以打开**MSMQ 传输属性**对话框。</span><span class="sxs-lookup"><span data-stu-id="d0c90-164">Click **Configure** to open the **MSMQ Transport Properties** dialog box.</span></span> <span data-ttu-id="d0c90-165">设置**队列**到`localhost\private$\test`，将**事务性**到`True`，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-165">Set **Queue** to `localhost\private$\test`, set **Transactional** to `True`, and then click **OK**.</span></span>  
+
+10. <span data-ttu-id="d0c90-166">展开的应用程序中，选择**发送端口**，选择**新建**，选择**静态单向发送端口**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-166">Expand the application, select **Send Ports**, select **New**, select **Static One-way Send Port**.</span></span>  
+
+11. <span data-ttu-id="d0c90-167">在中**发送端口属性**对话框中**名称**框中，键入发送端口的名称，如**MySendPort**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-167">In the **Send Port Properties** dialog box, in the **Name** box, type a name for the send port, such as **MySendPort**.</span></span>  
+
+12. <span data-ttu-id="d0c90-168">设置**传输类型**属性设置为**文件**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-168">Set the **Transport Type** property to **FILE**.</span></span>  
+
+13. <span data-ttu-id="d0c90-169">单击**配置**以打开**File 传输属性**对话框。</span><span class="sxs-lookup"><span data-stu-id="d0c90-169">Click **Configure** to open the **File Transport Properties** dialog box.</span></span>  
+
+14. <span data-ttu-id="d0c90-170">在中**FILE 传输属性**对话框中，将**目标文件夹**属性设置为**C:\Demo\Report**，保留其他属性的默认设置，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-170">In the **FILE Transport Properties** dialog box, set the **Destination Folder** property to **C:\Demo\Report**, keep the default settings for the other properties, and then click **OK**.</span></span>  
+
+15. <span data-ttu-id="d0c90-171">选择**筛选器**，然后通过设置将添加一个新行**属性**到**BTS。ReceivePortName**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-171">Select **Filters**, and then add a new row by setting **Property** to **BTS.ReceivePortName**.</span></span> <span data-ttu-id="d0c90-172">将保留**运算符**列设置为**==**，将**值**列**MyReceivePort**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-172">Leave the **Operator** column set to **==**, set the **Value** column to **MyReceivePort**, and then click **OK**.</span></span>  
+
+16. <span data-ttu-id="d0c90-173">右键单击新发送端口，然后单击**登记**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-173">Right-click your new send port, and then click **Enlist**.</span></span>  
+
+17. <span data-ttu-id="d0c90-174">右键单击新发送端口，然后单击**启动**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-174">Right-click your new send port again, and then click **Start**.</span></span>  
+
+18. <span data-ttu-id="d0c90-175">右键单击新接收位置，然后单击**启用**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-175">Right-click your new receive location, and then click **Enable**.</span></span>  
+
+    [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="d0c90-176"> 现在已准备好可使用本示例。</span><span class="sxs-lookup"><span data-stu-id="d0c90-176"> is now ready to work with this sample.</span></span>  
+
+## <a name="running-the-sample"></a><span data-ttu-id="d0c90-177">运行示例</span><span class="sxs-lookup"><span data-stu-id="d0c90-177">Running the Sample</span></span>  
+ <span data-ttu-id="d0c90-178">使用以下过程运行 SendMSMQMessage 示例。</span><span class="sxs-lookup"><span data-stu-id="d0c90-178">Use the following procedure to run the SendMSMQMessage sample.</span></span>  
+
+#### <a name="to-run-the-sample"></a><span data-ttu-id="d0c90-179">运行示例</span><span class="sxs-lookup"><span data-stu-id="d0c90-179">To run the sample</span></span>  
+
+1. <span data-ttu-id="d0c90-180">在命令窗口中，导航到下面的文件夹：</span><span class="sxs-lookup"><span data-stu-id="d0c90-180">In a command window, navigate to the following folder:</span></span>  
+
+    <span data-ttu-id="d0c90-181">\<示例路径\>\AdaptersUsage\SendMSMQMessage\bin\Debug</span><span class="sxs-lookup"><span data-stu-id="d0c90-181">\<Samples Path\>\AdaptersUsage\SendMSMQMessage\bin\Debug</span></span>  
+
+2. <span data-ttu-id="d0c90-182">运行文件 SendMSMQMessage.exe，这将启动提供本示例的用户界面的图形应用程序。</span><span class="sxs-lookup"><span data-stu-id="d0c90-182">Run the file SendMSMQMessage.exe, which starts the graphical application that provides the user interface for this sample.</span></span>  
+
+3. <span data-ttu-id="d0c90-183">在图形应用程序中**BizTalk 计算机名**框中，键入本地计算机的名称。</span><span class="sxs-lookup"><span data-stu-id="d0c90-183">In the graphical application, in the **BizTalk machine name** box, type the name of the local computer.</span></span>  
+
+4. <span data-ttu-id="d0c90-184">请尝试**Send Wrapped**选项：</span><span class="sxs-lookup"><span data-stu-id="d0c90-184">Try the **Send Wrapped** option:</span></span>  
+
+   1. <span data-ttu-id="d0c90-185">（可选） 更改中的文本**消息正文**框。</span><span class="sxs-lookup"><span data-stu-id="d0c90-185">Optionally change the text in the **Message body** box.</span></span>  
+
+   2. <span data-ttu-id="d0c90-186">单击**发送已包装**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-186">Click **Send wrapped**.</span></span>  
+
+      <span data-ttu-id="d0c90-187">如果操作成功，则将看到以下内容：</span><span class="sxs-lookup"><span data-stu-id="d0c90-187">If the operation succeeds, you will see the following:</span></span>  
+
+   - <span data-ttu-id="d0c90-188">单词**成功**立即按钮上方的框中以红色字体显示。</span><span class="sxs-lookup"><span data-stu-id="d0c90-188">The word **Success** appears in red font in the box immediately above the buttons.</span></span>  
+
+   - <span data-ttu-id="d0c90-189">将在目标文件夹 C:\Demo\Reports 中显示一个文件。</span><span class="sxs-lookup"><span data-stu-id="d0c90-189">A file appears in your destination folder, C:\Demo\Reports.</span></span> <span data-ttu-id="d0c90-190">此文件包含从文本**消息正文**包装在由.NET 消息队列库的简单 XML 标记的框。</span><span class="sxs-lookup"><span data-stu-id="d0c90-190">This file contains the text from the **Message body** box wrapped in simple XML tags by the .NET message queuing library.</span></span>  
+
+     <span data-ttu-id="d0c90-191">如果操作失败，则将在按钮上方紧挨的框中显示一条错误消息。</span><span class="sxs-lookup"><span data-stu-id="d0c90-191">If the operation fails, you will see an error message in the box immediately above the buttons.</span></span>  
+
+5. <span data-ttu-id="d0c90-192">请尝试**Send Exact**选项：</span><span class="sxs-lookup"><span data-stu-id="d0c90-192">Try the **Send Exact** option:</span></span>  
+
+   1. <span data-ttu-id="d0c90-193">（可选） 更改中的文本**消息正文**框。</span><span class="sxs-lookup"><span data-stu-id="d0c90-193">Optionally change the text in the **Message body** box.</span></span>  
+
+   2. <span data-ttu-id="d0c90-194">单击**发送确切**。</span><span class="sxs-lookup"><span data-stu-id="d0c90-194">Click **Send exact**.</span></span>  
+
+      <span data-ttu-id="d0c90-195">如果操作成功，则将看到以下内容：</span><span class="sxs-lookup"><span data-stu-id="d0c90-195">If the operation succeeds, you will see the following:</span></span>  
+
+   - <span data-ttu-id="d0c90-196">单词**成功**立即按钮上方的框中以红色字体显示。</span><span class="sxs-lookup"><span data-stu-id="d0c90-196">The word **Success** appears in red font in the box immediately above the buttons.</span></span>  
+
+   - <span data-ttu-id="d0c90-197">将在目标文件夹 C:\Demo\Reports 中显示一个文件。</span><span class="sxs-lookup"><span data-stu-id="d0c90-197">A file appears in your destination folder, C:\Demo\Reports.</span></span> <span data-ttu-id="d0c90-198">此文件包含从文本**消息正文**框在文本框中显示的样子。</span><span class="sxs-lookup"><span data-stu-id="d0c90-198">This file contains the text from the **Message body** box exactly as it appears in the text box.</span></span>  
+
+     <span data-ttu-id="d0c90-199">如果操作失败，则将在按钮上方紧挨的框中显示一条错误消息。</span><span class="sxs-lookup"><span data-stu-id="d0c90-199">If the operation fails, you will see an error message in the box immediately above the buttons.</span></span>  
+
+## <a name="see-also"></a><span data-ttu-id="d0c90-200">请参阅</span><span class="sxs-lookup"><span data-stu-id="d0c90-200">See Also</span></span>  
+ [<span data-ttu-id="d0c90-201">适配器示例 - 用法</span><span class="sxs-lookup"><span data-stu-id="d0c90-201">Adapter Samples - Usage</span></span>](../core/adapter-samples-usage.md)

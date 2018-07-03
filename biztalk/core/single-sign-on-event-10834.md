@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10834 |Microsoft 文档
+title: 单一登录： 事件 10834 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 540d7cc3296728c00e17b85a171825b47be5de44
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: efba5b53e6947ba1d609c84a741c2332db5f4f77
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277453"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37024203"
 ---
-# <a name="single-sign-on-event-10834"></a><span data-ttu-id="889fd-102">单一登录： 事件 10834</span><span class="sxs-lookup"><span data-stu-id="889fd-102">Single Sign-On: Event 10834</span></span>
-## <a name="details"></a><span data-ttu-id="889fd-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="889fd-103">Details</span></span>  
+# <a name="single-sign-on-event-10834"></a><span data-ttu-id="c3adf-102">单一登录： 事件 10834</span><span class="sxs-lookup"><span data-stu-id="c3adf-102">Single Sign-On: Event 10834</span></span>
+## <a name="details"></a><span data-ttu-id="c3adf-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="c3adf-103">Details</span></span>  
   
-|||  
-|-|-|  
-|<span data-ttu-id="889fd-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="889fd-104">Product Name</span></span>|<span data-ttu-id="889fd-105">企业单一登录</span><span class="sxs-lookup"><span data-stu-id="889fd-105">Enterprise Single Sign-On</span></span>|  
-|<span data-ttu-id="889fd-106">产品版本</span><span class="sxs-lookup"><span data-stu-id="889fd-106">Product Version</span></span>|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|<span data-ttu-id="889fd-107">事件 ID</span><span class="sxs-lookup"><span data-stu-id="889fd-107">Event ID</span></span>|<span data-ttu-id="889fd-108">10834</span><span class="sxs-lookup"><span data-stu-id="889fd-108">10834</span></span>|  
-|<span data-ttu-id="889fd-109">事件源</span><span class="sxs-lookup"><span data-stu-id="889fd-109">Event Source</span></span>|<span data-ttu-id="889fd-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="889fd-110">ENTSSO</span></span>|  
-|<span data-ttu-id="889fd-111">组件</span><span class="sxs-lookup"><span data-stu-id="889fd-111">Component</span></span>|<span data-ttu-id="889fd-112">N/A</span><span class="sxs-lookup"><span data-stu-id="889fd-112">N/A</span></span>|  
-|<span data-ttu-id="889fd-113">符号名称</span><span class="sxs-lookup"><span data-stu-id="889fd-113">Symbolic Name</span></span>|<span data-ttu-id="889fd-114">ENTSSO_E_SSO_NOT_SSO_ADMIN</span><span class="sxs-lookup"><span data-stu-id="889fd-114">ENTSSO_E_SSO_NOT_SSO_ADMIN</span></span>|  
-|<span data-ttu-id="889fd-115">消息正文</span><span class="sxs-lookup"><span data-stu-id="889fd-115">Message Text</span></span>|<span data-ttu-id="889fd-116">当前用户不是指定的 SSO 管理员帐户的成员。</span><span class="sxs-lookup"><span data-stu-id="889fd-116">The current user is not a member of the specified SSO Administrators account.</span></span>|  
+|                 |                                                                               |
+|-----------------|-------------------------------------------------------------------------------|
+|  <span data-ttu-id="c3adf-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="c3adf-104">Product Name</span></span>   |                           <span data-ttu-id="c3adf-105">企业单一登录</span><span class="sxs-lookup"><span data-stu-id="c3adf-105">Enterprise Single Sign-On</span></span>                           |
+| <span data-ttu-id="c3adf-106">产品版本</span><span class="sxs-lookup"><span data-stu-id="c3adf-106">Product Version</span></span> |          [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]           |
+|    <span data-ttu-id="c3adf-107">事件 ID</span><span class="sxs-lookup"><span data-stu-id="c3adf-107">Event ID</span></span>     |                                     <span data-ttu-id="c3adf-108">10834</span><span class="sxs-lookup"><span data-stu-id="c3adf-108">10834</span></span>                                     |
+|  <span data-ttu-id="c3adf-109">事件源</span><span class="sxs-lookup"><span data-stu-id="c3adf-109">Event Source</span></span>   |                                    <span data-ttu-id="c3adf-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="c3adf-110">ENTSSO</span></span>                                     |
+|    <span data-ttu-id="c3adf-111">组件</span><span class="sxs-lookup"><span data-stu-id="c3adf-111">Component</span></span>    |                                      <span data-ttu-id="c3adf-112">N/A</span><span class="sxs-lookup"><span data-stu-id="c3adf-112">N/A</span></span>                                      |
+|  <span data-ttu-id="c3adf-113">符号名称</span><span class="sxs-lookup"><span data-stu-id="c3adf-113">Symbolic Name</span></span>  |                          <span data-ttu-id="c3adf-114">ENTSSO_E_SSO_NOT_SSO_ADMIN</span><span class="sxs-lookup"><span data-stu-id="c3adf-114">ENTSSO_E_SSO_NOT_SSO_ADMIN</span></span>                           |
+|  <span data-ttu-id="c3adf-115">消息正文</span><span class="sxs-lookup"><span data-stu-id="c3adf-115">Message Text</span></span>   | <span data-ttu-id="c3adf-116">当前用户不是指定的 SSO 管理员帐户的成员。</span><span class="sxs-lookup"><span data-stu-id="c3adf-116">The current user is not a member of the specified SSO Administrators account.</span></span> |
   
-## <a name="explanation"></a><span data-ttu-id="889fd-117">解释</span><span class="sxs-lookup"><span data-stu-id="889fd-117">Explanation</span></span>  
- <span data-ttu-id="889fd-118">要指定此操作，用户必须是指定的 SSO 管理员帐户的成员。</span><span class="sxs-lookup"><span data-stu-id="889fd-118">To perform this action, the user must be a member of the specified SSO Administrators account.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="c3adf-117">解释</span><span class="sxs-lookup"><span data-stu-id="c3adf-117">Explanation</span></span>  
+ <span data-ttu-id="c3adf-118">要指定此操作，用户必须是指定的 SSO 管理员帐户的成员。</span><span class="sxs-lookup"><span data-stu-id="c3adf-118">To perform this action, the user must be a member of the specified SSO Administrators account.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="889fd-119">用户操作</span><span class="sxs-lookup"><span data-stu-id="889fd-119">User Action</span></span>  
- <span data-ttu-id="889fd-120">有关帐户的详细信息，请参阅[如何指定 SSO Administrators 和 Affiliate Administrators 帐户](../core/how-to-specify-sso-administrators-and-affiliate-administrators-accounts.md)。</span><span class="sxs-lookup"><span data-stu-id="889fd-120">For more information on accounts, see [How to Specify SSO Administrators and Affiliate Administrators Accounts](../core/how-to-specify-sso-administrators-and-affiliate-administrators-accounts.md).</span></span>
+## <a name="user-action"></a><span data-ttu-id="c3adf-119">用户操作</span><span class="sxs-lookup"><span data-stu-id="c3adf-119">User Action</span></span>  
+ <span data-ttu-id="c3adf-120">有关帐户的详细信息，请参阅[如何指定 SSO Administrators 和 Affiliate Administrators 帐户](../core/how-to-specify-sso-administrators-and-affiliate-administrators-accounts.md)。</span><span class="sxs-lookup"><span data-stu-id="c3adf-120">For more information on accounts, see [How to Specify SSO Administrators and Affiliate Administrators Accounts](../core/how-to-specify-sso-administrators-and-affiliate-administrators-accounts.md).</span></span>

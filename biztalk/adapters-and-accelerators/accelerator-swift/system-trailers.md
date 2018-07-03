@@ -1,5 +1,5 @@
 ---
-title: 系统拖车安排 |Microsoft 文档
+title: 系统尾部 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,87 +15,87 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a0a8c5b7be12a90aa2d31e828298cf7b95834036
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d991125654e04167b026aa98c62c8ffdc7b2b8e2
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22214077"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37006014"
 ---
-# <a name="system-trailers"></a><span data-ttu-id="85080-102">系统拖车安排</span><span class="sxs-lookup"><span data-stu-id="85080-102">System Trailers</span></span>
-<span data-ttu-id="85080-103">系统拖车安排传达有关 SWIFT 消息的其他或特殊的详细信息。</span><span class="sxs-lookup"><span data-stu-id="85080-103">System trailers convey additional or special details about the SWIFT message.</span></span> <span data-ttu-id="85080-104">如果任一第三个系统拖车安排都存在，它们将按以下顺序发生。</span><span class="sxs-lookup"><span data-stu-id="85080-104">If any of the first three system trailers are present, they occur in the following order.</span></span> <span data-ttu-id="85080-105">剩余系统拖车安排可以按任意顺序出现。</span><span class="sxs-lookup"><span data-stu-id="85080-105">The remaining system trailers can occur in any order.</span></span>  
+# <a name="system-trailers"></a><span data-ttu-id="19c96-102">系统尾部</span><span class="sxs-lookup"><span data-stu-id="19c96-102">System Trailers</span></span>
+<span data-ttu-id="19c96-103">系统尾部传达有关 SWIFT 消息的其他或特殊详细信息。</span><span class="sxs-lookup"><span data-stu-id="19c96-103">System trailers convey additional or special details about the SWIFT message.</span></span> <span data-ttu-id="19c96-104">如果任何第三个系统尾部都存在，它们将按以下顺序发生。</span><span class="sxs-lookup"><span data-stu-id="19c96-104">If any of the first three system trailers are present, they occur in the following order.</span></span> <span data-ttu-id="19c96-105">其余系统尾部可以任何顺序出现。</span><span class="sxs-lookup"><span data-stu-id="19c96-105">The remaining system trailers can occur in any order.</span></span>  
   
-|<span data-ttu-id="85080-106">电影预告片代码</span><span class="sxs-lookup"><span data-stu-id="85080-106">Trailer code</span></span>|<span data-ttu-id="85080-107">Name</span><span class="sxs-lookup"><span data-stu-id="85080-107">Name</span></span>|  
+|<span data-ttu-id="19c96-106">尾部代码</span><span class="sxs-lookup"><span data-stu-id="19c96-106">Trailer code</span></span>|<span data-ttu-id="19c96-107">“属性”</span><span class="sxs-lookup"><span data-stu-id="19c96-107">Name</span></span>|  
 |------------------|----------|  
-|<span data-ttu-id="85080-108">**选项**</span><span class="sxs-lookup"><span data-stu-id="85080-108">**CHK**</span></span>|<span data-ttu-id="85080-109">Checksum</span><span class="sxs-lookup"><span data-stu-id="85080-109">Checksum</span></span>|  
-|<span data-ttu-id="85080-110">**SYS**</span><span class="sxs-lookup"><span data-stu-id="85080-110">**SYS**</span></span>|<span data-ttu-id="85080-111">系统发起消息</span><span class="sxs-lookup"><span data-stu-id="85080-111">System Originated Message</span></span>|  
-|<span data-ttu-id="85080-112">**TNG**</span><span class="sxs-lookup"><span data-stu-id="85080-112">**TNG**</span></span>|<span data-ttu-id="85080-113">培训</span><span class="sxs-lookup"><span data-stu-id="85080-113">Training</span></span>|  
-|<span data-ttu-id="85080-114">**PDM**</span><span class="sxs-lookup"><span data-stu-id="85080-114">**PDM**</span></span>|<span data-ttu-id="85080-115">可能的重复消息</span><span class="sxs-lookup"><span data-stu-id="85080-115">Possible Duplicate Message</span></span>|  
-|<span data-ttu-id="85080-116">**DLM**</span><span class="sxs-lookup"><span data-stu-id="85080-116">**DLM**</span></span>|<span data-ttu-id="85080-117">延迟的消息</span><span class="sxs-lookup"><span data-stu-id="85080-117">Delayed Message</span></span>|  
-|<span data-ttu-id="85080-118">**MRF**</span><span class="sxs-lookup"><span data-stu-id="85080-118">**MRF**</span></span>|<span data-ttu-id="85080-119">消息引用</span><span class="sxs-lookup"><span data-stu-id="85080-119">Message Reference</span></span>|  
+|<span data-ttu-id="19c96-108">**CHK**</span><span class="sxs-lookup"><span data-stu-id="19c96-108">**CHK**</span></span>|<span data-ttu-id="19c96-109">Checksum</span><span class="sxs-lookup"><span data-stu-id="19c96-109">Checksum</span></span>|  
+|<span data-ttu-id="19c96-110">**SYS**</span><span class="sxs-lookup"><span data-stu-id="19c96-110">**SYS**</span></span>|<span data-ttu-id="19c96-111">系统发起消息</span><span class="sxs-lookup"><span data-stu-id="19c96-111">System Originated Message</span></span>|  
+|<span data-ttu-id="19c96-112">**TNG**</span><span class="sxs-lookup"><span data-stu-id="19c96-112">**TNG**</span></span>|<span data-ttu-id="19c96-113">培训</span><span class="sxs-lookup"><span data-stu-id="19c96-113">Training</span></span>|  
+|<span data-ttu-id="19c96-114">**PDM**</span><span class="sxs-lookup"><span data-stu-id="19c96-114">**PDM**</span></span>|<span data-ttu-id="19c96-115">可能的重复消息</span><span class="sxs-lookup"><span data-stu-id="19c96-115">Possible Duplicate Message</span></span>|  
+|<span data-ttu-id="19c96-116">**DLM**</span><span class="sxs-lookup"><span data-stu-id="19c96-116">**DLM**</span></span>|<span data-ttu-id="19c96-117">延迟的消息</span><span class="sxs-lookup"><span data-stu-id="19c96-117">Delayed Message</span></span>|  
+|<span data-ttu-id="19c96-118">**MRF**</span><span class="sxs-lookup"><span data-stu-id="19c96-118">**MRF**</span></span>|<span data-ttu-id="19c96-119">消息引用</span><span class="sxs-lookup"><span data-stu-id="19c96-119">Message Reference</span></span>|  
   
--   <span data-ttu-id="85080-120">**系统将产生消息 (SYS) 预告片。**</span><span class="sxs-lookup"><span data-stu-id="85080-120">**System Originated Message (SYS) Trailer.**</span></span> <span data-ttu-id="85080-121">该系统消息或服务消息，系统 PLT 的生成，具有 SYS 预告片。</span><span class="sxs-lookup"><span data-stu-id="85080-121">The system message or service message, which is generated by a system PLT, has a SYS trailer.</span></span> <span data-ttu-id="85080-122">所有请求的系统具有 01 的服务标识符的消息、 包含在请求 MIR 和可能包含的时间。</span><span class="sxs-lookup"><span data-stu-id="85080-122">All solicited system messages with a Service Identifier of 01, contain the MIR of the request, and may contain the time.</span></span>  
+- <span data-ttu-id="19c96-120">**系统发起消息 (SYS) 尾部。**</span><span class="sxs-lookup"><span data-stu-id="19c96-120">**System Originated Message (SYS) Trailer.**</span></span> <span data-ttu-id="19c96-121">系统消息或服务消息，生成系统 PLT，具有 SYS 尾部。</span><span class="sxs-lookup"><span data-stu-id="19c96-121">The system message or service message, which is generated by a system PLT, has a SYS trailer.</span></span> <span data-ttu-id="19c96-122">所有请求的服务标识符为 01 的系统消息、 包含该请求的 MIR 和可能包含的时间。</span><span class="sxs-lookup"><span data-stu-id="19c96-122">All solicited system messages with a Service Identifier of 01, contain the MIR of the request, and may contain the time.</span></span>  
   
-     <span data-ttu-id="85080-123">下面的代码是 SYS 预告片格式的示例：</span><span class="sxs-lookup"><span data-stu-id="85080-123">The following code is an example of the SYS trailer format:</span></span>  
+   <span data-ttu-id="19c96-123">以下代码是 SYS 尾部格式示例：</span><span class="sxs-lookup"><span data-stu-id="19c96-123">The following code is an example of the SYS trailer format:</span></span>  
   
-    ```  
-    {SYS:[<time><mir>]}  
-    ```  
+  ```  
+  {SYS:[<time><mir>]}  
+  ```  
   
--   <span data-ttu-id="85080-124">**测试和定型消息 (TNG) 预告片。**</span><span class="sxs-lookup"><span data-stu-id="85080-124">**Test & Training Message (TNG) Trailer.**</span></span> <span data-ttu-id="85080-125">TNG 预告片是 FIN 和 GPA 消息 （具有 01 的服务标识符） 发送的或传递到的测试和定型逻辑终端 (LT) 必需的。</span><span class="sxs-lookup"><span data-stu-id="85080-125">The TNG trailer is mandatory for FIN and GPA messages (with a Service Identifier of 01) sent by, or delivered to, a Test and Training Logical Terminal (LT).</span></span> <span data-ttu-id="85080-126">此预告片具有仅，一个标记和任何值。</span><span class="sxs-lookup"><span data-stu-id="85080-126">This trailer has a tag only, and no value.</span></span>  
+- <span data-ttu-id="19c96-124">**测试和定型 (TNG) 消息尾部。**</span><span class="sxs-lookup"><span data-stu-id="19c96-124">**Test & Training Message (TNG) Trailer.**</span></span> <span data-ttu-id="19c96-125">TNG 尾部是必需的 FIN 和 GPA 消息 （带 01 的服务标识符） 发送的或传递到测试和定型逻辑终端 (LT)。</span><span class="sxs-lookup"><span data-stu-id="19c96-125">The TNG trailer is mandatory for FIN and GPA messages (with a Service Identifier of 01) sent by, or delivered to, a Test and Training Logical Terminal (LT).</span></span> <span data-ttu-id="19c96-126">此尾部具有一个标记，并没有值。</span><span class="sxs-lookup"><span data-stu-id="19c96-126">This trailer has a tag only, and no value.</span></span>  
   
-     <span data-ttu-id="85080-127">下面的代码演示了 TNG 预告片格式：</span><span class="sxs-lookup"><span data-stu-id="85080-127">The following code is an example of the TNG trailer format:</span></span>  
+   <span data-ttu-id="19c96-127">以下代码是 TNG 尾部格式示例：</span><span class="sxs-lookup"><span data-stu-id="19c96-127">The following code is an example of the TNG trailer format:</span></span>  
   
-    ```  
-    {TNG:}  
-    ```  
+  ```  
+  {TNG:}  
+  ```  
   
--   <span data-ttu-id="85080-128">**可能重复发出 (PDE) 预告片。**</span><span class="sxs-lookup"><span data-stu-id="85080-128">**Possible Duplicate Emission (PDE) Trailer.**</span></span> <span data-ttu-id="85080-129">消息的目标使用 PDE 预告片。</span><span class="sxs-lookup"><span data-stu-id="85080-129">The destination of the message uses the PDE trailer.</span></span> <span data-ttu-id="85080-130">它仅适用于 FIN 用户和用户消息 （01 服务标识符），并为银行消息保留消息类别。</span><span class="sxs-lookup"><span data-stu-id="85080-130">It only applies to FIN user-to-user messages (with a Service Identifier of 01) and message categories reserved for banking messages.</span></span> <span data-ttu-id="85080-131">系统可能包含多个 PDEs。</span><span class="sxs-lookup"><span data-stu-id="85080-131">The system may contain multiple PDEs.</span></span> <span data-ttu-id="85080-132">系统不验证顺序也不限制 （除外最大消息长度） 数。</span><span class="sxs-lookup"><span data-stu-id="85080-132">The system does not verify the order nor restrict the number (except for maximum message length).</span></span>  
+- <span data-ttu-id="19c96-128">**可能重复发出 (PDE) 尾部。**</span><span class="sxs-lookup"><span data-stu-id="19c96-128">**Possible Duplicate Emission (PDE) Trailer.**</span></span> <span data-ttu-id="19c96-129">消息的目标使用 PDE 尾部。</span><span class="sxs-lookup"><span data-stu-id="19c96-129">The destination of the message uses the PDE trailer.</span></span> <span data-ttu-id="19c96-130">它仅适用于查找用户的消息 （带 01 的服务标识符） 和保留对银行消息的消息类别。</span><span class="sxs-lookup"><span data-stu-id="19c96-130">It only applies to FIN user-to-user messages (with a Service Identifier of 01) and message categories reserved for banking messages.</span></span> <span data-ttu-id="19c96-131">系统可能包含多个 PDEs。</span><span class="sxs-lookup"><span data-stu-id="19c96-131">The system may contain multiple PDEs.</span></span> <span data-ttu-id="19c96-132">系统不验证的顺序也不限制 （除了最大消息长度） 的数量。</span><span class="sxs-lookup"><span data-stu-id="19c96-132">The system does not verify the order nor restrict the number (except for maximum message length).</span></span>  
   
-     <span data-ttu-id="85080-133">系统接受格式正确 PDE 拖车安排应用于用户与系统的消息，但不是处理它们。</span><span class="sxs-lookup"><span data-stu-id="85080-133">The system accepts correctly formatted PDE trailers applied to user-to-system messages, but does not process them.</span></span> <span data-ttu-id="85080-134">这意味着，系统不会检查以查看原始消息是否存在。</span><span class="sxs-lookup"><span data-stu-id="85080-134">This means that the system does not check to see if the original message exists.</span></span> <span data-ttu-id="85080-135">因此，系统可能会处理两次发送 PDE 预告片检索请求 — 如果系统接收原始消息。</span><span class="sxs-lookup"><span data-stu-id="85080-135">Therefore, the system may process a retrieval request sent with a PDE trailer twice—if the system received the original message.</span></span>  
+   <span data-ttu-id="19c96-133">系统将接受格式正确 PDE 尾部应用于用户系统的消息，但不是处理它们。</span><span class="sxs-lookup"><span data-stu-id="19c96-133">The system accepts correctly formatted PDE trailers applied to user-to-system messages, but does not process them.</span></span> <span data-ttu-id="19c96-134">这意味着，系统不会检查以查看原始消息是否存在。</span><span class="sxs-lookup"><span data-stu-id="19c96-134">This means that the system does not check to see if the original message exists.</span></span> <span data-ttu-id="19c96-135">因此，系统可能会处理两次发送 PDE 尾部的检索请求，如果系统接收到原始消息。</span><span class="sxs-lookup"><span data-stu-id="19c96-135">Therefore, the system may process a retrieval request sent with a PDE trailer twice—if the system received the original message.</span></span>  
   
-     <span data-ttu-id="85080-136">下面的代码演示了 PDE 预告片格式：</span><span class="sxs-lookup"><span data-stu-id="85080-136">The following code is an example of the PDE trailer format:</span></span>  
+   <span data-ttu-id="19c96-136">以下代码是 PDE 尾部格式示例：</span><span class="sxs-lookup"><span data-stu-id="19c96-136">The following code is an example of the PDE trailer format:</span></span>  
   
-    ```  
-    {PDE:[<time><mir>]}  
-    where <time><mir> refers to the emission of the previous possible issue  
-    ```  
+  ```  
+  {PDE:[<time><mir>]}  
+  where <time><mir> refers to the emission of the previous possible issue  
+  ```  
   
--   <span data-ttu-id="85080-137">**延迟的消息 (DLM) 预告片。**</span><span class="sxs-lookup"><span data-stu-id="85080-137">**Delayed Message (DLM) Trailer.**</span></span> <span data-ttu-id="85080-138">DLM 预告片将添加到已超过其过时期限内的所有 FIN 用户和用户输出消息。</span><span class="sxs-lookup"><span data-stu-id="85080-138">The DLM trailer is added to all FIN user-to-user output messages that have exceeded their obsolescence period.</span></span> <span data-ttu-id="85080-139">如果此预告片出现在 GPA 或 FIN 系统消息，则可以忽略它。</span><span class="sxs-lookup"><span data-stu-id="85080-139">If this trailer appears in GPA or FIN system messages, you can ignore it.</span></span> <span data-ttu-id="85080-140">此预告片具有仅，一个标记和任何值。</span><span class="sxs-lookup"><span data-stu-id="85080-140">This trailer has a tag only, and no value.</span></span>  
+- <span data-ttu-id="19c96-137">**延迟的消息 (DLM) 尾部。**</span><span class="sxs-lookup"><span data-stu-id="19c96-137">**Delayed Message (DLM) Trailer.**</span></span> <span data-ttu-id="19c96-138">DLM 尾部添加到已超过其过时期限内的所有查找用户的输出消息。</span><span class="sxs-lookup"><span data-stu-id="19c96-138">The DLM trailer is added to all FIN user-to-user output messages that have exceeded their obsolescence period.</span></span> <span data-ttu-id="19c96-139">如果此尾部出现在 GPA 或 FIN 系统消息，您可以忽略它。</span><span class="sxs-lookup"><span data-stu-id="19c96-139">If this trailer appears in GPA or FIN system messages, you can ignore it.</span></span> <span data-ttu-id="19c96-140">此尾部具有一个标记，并没有值。</span><span class="sxs-lookup"><span data-stu-id="19c96-140">This trailer has a tag only, and no value.</span></span>  
   
-     <span data-ttu-id="85080-141">过时段如下所示：</span><span class="sxs-lookup"><span data-stu-id="85080-141">The obsolescence period is as follows:</span></span>  
+   <span data-ttu-id="19c96-141">过时段如下所示：</span><span class="sxs-lookup"><span data-stu-id="19c96-141">The obsolescence period is as follows:</span></span>  
   
-    -   <span data-ttu-id="85080-142">U = 15 分钟</span><span class="sxs-lookup"><span data-stu-id="85080-142">U = 15 minutes</span></span>  
+  - <span data-ttu-id="19c96-142">U = 15 分钟</span><span class="sxs-lookup"><span data-stu-id="19c96-142">U = 15 minutes</span></span>  
   
-    -   <span data-ttu-id="85080-143">N = 100 分钟</span><span class="sxs-lookup"><span data-stu-id="85080-143">N = 100 minutes</span></span>  
+  - <span data-ttu-id="19c96-143">N = 100 分钟</span><span class="sxs-lookup"><span data-stu-id="19c96-143">N = 100 minutes</span></span>  
   
-     <span data-ttu-id="85080-144">下面的代码是的 DLM 预告片格式示例：</span><span class="sxs-lookup"><span data-stu-id="85080-144">The following code is an example of the DLM trailer format:</span></span>  
+    <span data-ttu-id="19c96-144">以下代码是 DLM 尾部格式示例：</span><span class="sxs-lookup"><span data-stu-id="19c96-144">The following code is an example of the DLM trailer format:</span></span>  
   
-    ```  
-    {DLM:}  
-    ```  
+  ```  
+  {DLM:}  
+  ```  
   
--   <span data-ttu-id="85080-145">**可能的重复消息 (PDM) 预告片。**</span><span class="sxs-lookup"><span data-stu-id="85080-145">**Possible Duplicate Message (PDM) Trailer.**</span></span> <span data-ttu-id="85080-146">PDM 预告片由系统添加到任何输出消息 （GPA 和具有 01 的服务标识符 FIN） 因为以前的传递可能不是有效重新发送。</span><span class="sxs-lookup"><span data-stu-id="85080-146">The PDM trailer is added by the system to any output message (GPA and FIN with a Service Identifier of 01) being resent because a prior delivery may not be valid.</span></span> <span data-ttu-id="85080-147">如果系统 PLT 收到报表请求 PDM 尾端时，该响应包括纯 PDM （不带可选传递参考中）。</span><span class="sxs-lookup"><span data-stu-id="85080-147">If a system PLT receives a report request with a PDM trailer, the response has a plain PDM (without the optional delivery reference).</span></span> <span data-ttu-id="85080-148">可以将其他 PDMs 由于未成功传送尝试添加到用户。</span><span class="sxs-lookup"><span data-stu-id="85080-148">Other PDMs may be added because of unsuccessful delivery attempts to the user.</span></span>  
+- <span data-ttu-id="19c96-145">**可能的重复消息 (PDM) 尾部。**</span><span class="sxs-lookup"><span data-stu-id="19c96-145">**Possible Duplicate Message (PDM) Trailer.**</span></span> <span data-ttu-id="19c96-146">PDM 尾部由系统添加到任何输出消息 （GPA 和具有 01 服务标识符 FIN） 需要重新发送，因为以前的传递可能无效。</span><span class="sxs-lookup"><span data-stu-id="19c96-146">The PDM trailer is added by the system to any output message (GPA and FIN with a Service Identifier of 01) being resent because a prior delivery may not be valid.</span></span> <span data-ttu-id="19c96-147">如果系统 PLT 收到报表请求 PDM 尾部时，响应的普通 PDM （不带可选传递引用）。</span><span class="sxs-lookup"><span data-stu-id="19c96-147">If a system PLT receives a report request with a PDM trailer, the response has a plain PDM (without the optional delivery reference).</span></span> <span data-ttu-id="19c96-148">其他 pdm 联系可能由于未成功传送尝试添加到用户。</span><span class="sxs-lookup"><span data-stu-id="19c96-148">Other PDMs may be added because of unsuccessful delivery attempts to the user.</span></span>  
   
-     <span data-ttu-id="85080-149">下面的代码演示了 PDM 预告片格式：</span><span class="sxs-lookup"><span data-stu-id="85080-149">The following code is an example of the PDM trailer format:</span></span>  
+   <span data-ttu-id="19c96-149">以下代码是 PDM 尾部格式示例：</span><span class="sxs-lookup"><span data-stu-id="19c96-149">The following code is an example of the PDM trailer format:</span></span>  
   
-    ```  
-    {PDM:[<time><mor>]}  
-    where <time> and the Message Output Reference <mor> are that of the previous attempt  
-    ```  
+  ```  
+  {PDM:[<time><mor>]}  
+  where <time> and the Message Output Reference <mor> are that of the previous attempt  
+  ```  
   
--   <span data-ttu-id="85080-150">**消息引用 (MRF) 预告片。**</span><span class="sxs-lookup"><span data-stu-id="85080-150">**Message Reference (MRF) Trailer.**</span></span> <span data-ttu-id="85080-151">MRF 预告片 MT 096 FIN 复制至中央机构消息中指定原始用户消息的消息的引用。</span><span class="sxs-lookup"><span data-stu-id="85080-151">The MRF trailer specifies the message reference of the original user message in MT 096 FIN Copy to Central Institution Messages.</span></span>  
+- <span data-ttu-id="19c96-150">**消息引用 (MRF) 尾部。**</span><span class="sxs-lookup"><span data-stu-id="19c96-150">**Message Reference (MRF) Trailer.**</span></span> <span data-ttu-id="19c96-151">MRF 尾部 MT 096 FIN 复制到中央机构消息中指定原始用户消息的消息的引用。</span><span class="sxs-lookup"><span data-stu-id="19c96-151">The MRF trailer specifies the message reference of the original user message in MT 096 FIN Copy to Central Institution Messages.</span></span>  
   
-     <span data-ttu-id="85080-152">下面的代码演示了 MRF 预告片格式：</span><span class="sxs-lookup"><span data-stu-id="85080-152">The following code is an example of the MRF trailer format:</span></span>  
+   <span data-ttu-id="19c96-152">以下代码是 MRF 尾部格式示例：</span><span class="sxs-lookup"><span data-stu-id="19c96-152">The following code is an example of the MRF trailer format:</span></span>  
   
-    ```  
-    {MRF:<date><full-time><mir>}  
-    where <mir> is that of the original user message whose fields are copied in the MT 096 FIN  
-    Copy to Central Institution Message  
-    ```  
+  ```  
+  {MRF:<date><full-time><mir>}  
+  where <mir> is that of the original user message whose fields are copied in the MT 096 FIN  
+  Copy to Central Institution Message  
+  ```  
   
-    > [!NOTE]
-    >  <span data-ttu-id="85080-153">MRF 预告片特定于 FIN 副本，并在 MT 096 FIN 复制到中央机构消息中自动生成。</span><span class="sxs-lookup"><span data-stu-id="85080-153">The MRF trailer is specific to FIN Copy and is automatically generated in the MT 096 FIN Copy to Central Institution Message.</span></span> <span data-ttu-id="85080-154">你只能使用此预告片字段中 109 MT 096 FIN 复制到中央机构消息以确定向其 MT 097 是一种响应 MT 096。</span><span class="sxs-lookup"><span data-stu-id="85080-154">You can only use this trailer in field 109 of the MT 096 FIN Copy to Central Institution Message to identify the MT 096 to which the MT 097 is a response.</span></span> <span data-ttu-id="85080-155">MRF 的格式进行更改。</span><span class="sxs-lookup"><span data-stu-id="85080-155">The format of the MRF is subject to change.</span></span>  
+  > [!NOTE]
+  >  <span data-ttu-id="19c96-153">MRF 尾部是特定于 FIN 复制和自动生成在 MT 096 FIN 复制到中央机构消息中。</span><span class="sxs-lookup"><span data-stu-id="19c96-153">The MRF trailer is specific to FIN Copy and is automatically generated in the MT 096 FIN Copy to Central Institution Message.</span></span> <span data-ttu-id="19c96-154">您只能使用此尾部字段中 109 MT 096 FIN 复制到中央机构消息来标识 MT 097 是响应 MT 096。</span><span class="sxs-lookup"><span data-stu-id="19c96-154">You can only use this trailer in field 109 of the MT 096 FIN Copy to Central Institution Message to identify the MT 096 to which the MT 097 is a response.</span></span> <span data-ttu-id="19c96-155">MRF 格式会发生变化。</span><span class="sxs-lookup"><span data-stu-id="19c96-155">The format of the MRF is subject to change.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="85080-156">另请参阅</span><span class="sxs-lookup"><span data-stu-id="85080-156">See Also</span></span>  
- [<span data-ttu-id="85080-157">使用架构</span><span class="sxs-lookup"><span data-stu-id="85080-157">Working with Schemas</span></span>](../../adapters-and-accelerators/accelerator-swift/working-with-schemas.md)
+## <a name="see-also"></a><span data-ttu-id="19c96-156">请参阅</span><span class="sxs-lookup"><span data-stu-id="19c96-156">See Also</span></span>  
+ [<span data-ttu-id="19c96-157">处理架构</span><span class="sxs-lookup"><span data-stu-id="19c96-157">Working with Schemas</span></span>](../../adapters-and-accelerators/accelerator-swift/working-with-schemas.md)

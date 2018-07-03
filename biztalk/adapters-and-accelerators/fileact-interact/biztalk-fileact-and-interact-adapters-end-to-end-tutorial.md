@@ -1,5 +1,5 @@
 ---
-title: BizTalk FileAct 和交互适配器端到端教程 |Microsoft 文档
+title: BizTalk FileAct 和交互适配器端到端教程 |Microsoft Docs
 ms.custom: ''
 ms.date: 2015-12-10
 ms.prod: biztalk-server
@@ -12,38 +12,38 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 15f2908abdb039d531fc0829efa7e019a6d0ca03
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: af083b0e38d372c18bca4496033983cd7f579347
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22222957"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37014798"
 ---
-# <a name="biztalk-fileact-and-interact-adapters-end-to-end-tutorial"></a><span data-ttu-id="7297f-102">BizTalk FileAct 和交互适配器端到端教程</span><span class="sxs-lookup"><span data-stu-id="7297f-102">BizTalk FileAct and InterAct Adapters End-to-End Tutorial</span></span>
-<span data-ttu-id="7297f-103">The Microsoft®[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]端到端教程提供有关如何使用的特定信息[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]和[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]设置实时和存储和转发消息交换方案。</span><span class="sxs-lookup"><span data-stu-id="7297f-103">The Microsoft® [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] End-to-End Tutorial provides specific information about how you can use [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] and [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] to set up real-time and store and forward message exchange scenarios.</span></span>  
+# <a name="biztalk-fileact-and-interact-adapters-end-to-end-tutorial"></a><span data-ttu-id="05d02-102">BizTalk FileAct 和交互适配器端到端教程</span><span class="sxs-lookup"><span data-stu-id="05d02-102">BizTalk FileAct and InterAct Adapters End-to-End Tutorial</span></span>
+<span data-ttu-id="05d02-103">The Microsoft®[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]端到端教程提供了有关如何使用的特定信息[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]和[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]来设置实时和存储和转发消息交换方案。</span><span class="sxs-lookup"><span data-stu-id="05d02-103">The Microsoft® [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] End-to-End Tutorial provides specific information about how you can use [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] and [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] to set up real-time and store and forward message exchange scenarios.</span></span>  
   
- <span data-ttu-id="7297f-104">[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]端到端教程提供四个单独的方案，对于每个类型的解决方案的教程的形式包括详细的步骤。</span><span class="sxs-lookup"><span data-stu-id="7297f-104">The [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] End-To-End Tutorial provides four separate scenarios that include detailed steps in the form of tutorials for each type of solution.</span></span> <span data-ttu-id="7297f-105">在开始这些教程之前，应了解周围的 BizTalk Server 中，基本概念并熟悉 SWIFT 联盟网关 （压降） 文档。</span><span class="sxs-lookup"><span data-stu-id="7297f-105">Before you begin these tutorials, you should understand the fundamental concepts surrounding BizTalk Server, and be familiar with the SWIFT Alliance Gateway (SAG) documentation.</span></span>  
+ <span data-ttu-id="05d02-104">[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]端到端教程提供了四个不同的方案包括的每种类型的解决方案的教程形式的详细的步骤。</span><span class="sxs-lookup"><span data-stu-id="05d02-104">The [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] End-To-End Tutorial provides four separate scenarios that include detailed steps in the form of tutorials for each type of solution.</span></span> <span data-ttu-id="05d02-105">在开始这些教程之前，应了解 BizTalk Server 的基本概念并熟悉 SWIFT 联盟网关 （压降） 文档。</span><span class="sxs-lookup"><span data-stu-id="05d02-105">Before you begin these tutorials, you should understand the fundamental concepts surrounding BizTalk Server, and be familiar with the SWIFT Alliance Gateway (SAG) documentation.</span></span>  
   
- <span data-ttu-id="7297f-106">有关 A4Swift 中，A4SWIFT 端到端教程为您提供配置实时的详细的步骤和 FileAct 和交互适配器存储转发方案。</span><span class="sxs-lookup"><span data-stu-id="7297f-106">The A4SWIFT end-to-end tutorial provides you with detailed steps to configure real-time and store-and-forward scenarios with both the FileAct and InterAct adapters for A4Swift.</span></span> <span data-ttu-id="7297f-107">对于每个方案，将执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="7297f-107">For each of the scenarios, you will do the following:</span></span>  
+ <span data-ttu-id="05d02-106">A4SWIFT 端到端教程可配置实时的详细的步骤和 FileAct 和 InterAct 适配器存储和转发方案的 A4Swift。</span><span class="sxs-lookup"><span data-stu-id="05d02-106">The A4SWIFT end-to-end tutorial provides you with detailed steps to configure real-time and store-and-forward scenarios with both the FileAct and InterAct adapters for A4Swift.</span></span> <span data-ttu-id="05d02-107">对于每个方案中，将执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="05d02-107">For each of the scenarios, you will do the following:</span></span>  
   
--   <span data-ttu-id="7297f-108">配置 SWIFT 适配器</span><span class="sxs-lookup"><span data-stu-id="7297f-108">Configure the SWIFT adapter</span></span>  
+- <span data-ttu-id="05d02-108">配置 SWIFT 适配器</span><span class="sxs-lookup"><span data-stu-id="05d02-108">Configure the SWIFT adapter</span></span>  
   
--   <span data-ttu-id="7297f-109">配置 SWIFTNet paramfile</span><span class="sxs-lookup"><span data-stu-id="7297f-109">Configure the SWIFTNet paramfile</span></span>  
+- <span data-ttu-id="05d02-109">配置 SWIFTNet paramfile</span><span class="sxs-lookup"><span data-stu-id="05d02-109">Configure the SWIFTNet paramfile</span></span>  
   
--   <span data-ttu-id="7297f-110">创建发送端口和接收端口</span><span class="sxs-lookup"><span data-stu-id="7297f-110">Create send ports and receive ports</span></span>  
+- <span data-ttu-id="05d02-110">创建发送端口和接收端口</span><span class="sxs-lookup"><span data-stu-id="05d02-110">Create send ports and receive ports</span></span>  
   
--   <span data-ttu-id="7297f-111">测试方案</span><span class="sxs-lookup"><span data-stu-id="7297f-111">Test the scenario</span></span>  
+- <span data-ttu-id="05d02-111">测试方案</span><span class="sxs-lookup"><span data-stu-id="05d02-111">Test the scenario</span></span>  
   
- <span data-ttu-id="7297f-112">在本教程中，将播放两个角色： 发送者和接收者。</span><span class="sxs-lookup"><span data-stu-id="7297f-112">In this tutorial, you will play two roles: Sender and Receiver.</span></span> <span data-ttu-id="7297f-113">你将创建端口将消息发送和接收它们。</span><span class="sxs-lookup"><span data-stu-id="7297f-113">You will create ports that send messages and receive them.</span></span>  
+  <span data-ttu-id="05d02-112">在本教程中，您将扮演两个角色： 发送方和接收方。</span><span class="sxs-lookup"><span data-stu-id="05d02-112">In this tutorial, you will play two roles: Sender and Receiver.</span></span> <span data-ttu-id="05d02-113">您将创建将消息发送和接收端口。</span><span class="sxs-lookup"><span data-stu-id="05d02-113">You will create ports that send messages and receive them.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="7297f-114">本节内容</span><span class="sxs-lookup"><span data-stu-id="7297f-114">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="05d02-114">本节内容</span><span class="sxs-lookup"><span data-stu-id="05d02-114">In This Section</span></span>  
   
--   [<span data-ttu-id="7297f-115">准备使用本教程</span><span class="sxs-lookup"><span data-stu-id="7297f-115">Preparing to Use the Tutorial</span></span>](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md)  
+-   [<span data-ttu-id="05d02-115">为使用教程做准备</span><span class="sxs-lookup"><span data-stu-id="05d02-115">Preparing to Use the Tutorial</span></span>](../../adapters-and-accelerators/fileact-interact/preparing-to-use-the-tutorial1.md)  
   
--   [<span data-ttu-id="7297f-116">交互实时方案</span><span class="sxs-lookup"><span data-stu-id="7297f-116">InterAct Real-Time Scenario</span></span>](../../adapters-and-accelerators/fileact-interact/interact-real-time-scenario.md)  
+-   [<span data-ttu-id="05d02-116">InterAct 实时方案</span><span class="sxs-lookup"><span data-stu-id="05d02-116">InterAct Real-Time Scenario</span></span>](../../adapters-and-accelerators/fileact-interact/interact-real-time-scenario.md)  
   
--   [<span data-ttu-id="7297f-117">交互存储和转发 （推送） 方案</span><span class="sxs-lookup"><span data-stu-id="7297f-117">InterAct Store and Forward (Push) Scenario</span></span>](../../adapters-and-accelerators/fileact-interact/interact-store-and-forward-push-scenario.md)  
+-   [<span data-ttu-id="05d02-117">InterAct 存储和转发（推送）方案</span><span class="sxs-lookup"><span data-stu-id="05d02-117">InterAct Store and Forward (Push) Scenario</span></span>](../../adapters-and-accelerators/fileact-interact/interact-store-and-forward-push-scenario.md)  
   
--   [<span data-ttu-id="7297f-118">FileAct 实时方案</span><span class="sxs-lookup"><span data-stu-id="7297f-118">FileAct Real-Time Scenario</span></span>](../../adapters-and-accelerators/fileact-interact/fileact-real-time-scenario.md)  
+-   [<span data-ttu-id="05d02-118">FileAct 实时方案</span><span class="sxs-lookup"><span data-stu-id="05d02-118">FileAct Real-Time Scenario</span></span>](../../adapters-and-accelerators/fileact-interact/fileact-real-time-scenario.md)  
   
--   [<span data-ttu-id="7297f-119">FileAct 存储和转发方案</span><span class="sxs-lookup"><span data-stu-id="7297f-119">FileAct Store and Forward Scenario</span></span>](../../adapters-and-accelerators/fileact-interact/fileact-store-and-forward-scenario.md)
+-   [<span data-ttu-id="05d02-119">FileAct 存储和转发方案</span><span class="sxs-lookup"><span data-stu-id="05d02-119">FileAct Store and Forward Scenario</span></span>](../../adapters-and-accelerators/fileact-interact/fileact-store-and-forward-scenario.md)

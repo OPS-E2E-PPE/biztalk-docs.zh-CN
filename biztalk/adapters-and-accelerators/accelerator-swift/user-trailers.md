@@ -1,5 +1,5 @@
 ---
-title: 用户拖车安排 |Microsoft 文档
+title: 用户尾部 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,61 +15,61 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ff907e262088acd188028282fe2e03441071358a
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 10bc0d4d0fcdb36311e0590d9ae04239db168ed7
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25961979"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37010214"
 ---
-# <a name="user-trailers"></a><span data-ttu-id="c40d2-102">用户拖车安排</span><span class="sxs-lookup"><span data-stu-id="c40d2-102">User Trailers</span></span>
-<span data-ttu-id="c40d2-103">用户预告片除外，选项尾端是可选的当存在时，将按以下顺序发生：</span><span class="sxs-lookup"><span data-stu-id="c40d2-103">User trailers, except for the CHK trailer, are optional and when present, occur in the following order:</span></span>  
+# <a name="user-trailers"></a><span data-ttu-id="e4e3b-102">用户尾部</span><span class="sxs-lookup"><span data-stu-id="e4e3b-102">User Trailers</span></span>
+<span data-ttu-id="e4e3b-103">用户尾部，除了 CHK 尾部是可选的当存在时，将按以下顺序发生：</span><span class="sxs-lookup"><span data-stu-id="e4e3b-103">User trailers, except for the CHK trailer, are optional and when present, occur in the following order:</span></span>  
   
-|<span data-ttu-id="c40d2-104">电影预告片代码</span><span class="sxs-lookup"><span data-stu-id="c40d2-104">Trailer code</span></span>|<span data-ttu-id="c40d2-105">Name</span><span class="sxs-lookup"><span data-stu-id="c40d2-105">Name</span></span>|  
+|<span data-ttu-id="e4e3b-104">尾部代码</span><span class="sxs-lookup"><span data-stu-id="e4e3b-104">Trailer code</span></span>|<span data-ttu-id="e4e3b-105">“属性”</span><span class="sxs-lookup"><span data-stu-id="e4e3b-105">Name</span></span>|  
 |------------------|----------|  
-|<span data-ttu-id="c40d2-106">MAC</span><span class="sxs-lookup"><span data-stu-id="c40d2-106">MAC</span></span>|<span data-ttu-id="c40d2-107">消息验证代码</span><span class="sxs-lookup"><span data-stu-id="c40d2-107">Message Authentication Code</span></span>|  
-|<span data-ttu-id="c40d2-108">PAC</span><span class="sxs-lookup"><span data-stu-id="c40d2-108">PAC</span></span>|<span data-ttu-id="c40d2-109">专有身份验证代码</span><span class="sxs-lookup"><span data-stu-id="c40d2-109">Proprietary Authentication Code</span></span>|  
-|<span data-ttu-id="c40d2-110">选项</span><span class="sxs-lookup"><span data-stu-id="c40d2-110">CHK</span></span>|<span data-ttu-id="c40d2-111">Checksum</span><span class="sxs-lookup"><span data-stu-id="c40d2-111">Checksum</span></span>|  
-|<span data-ttu-id="c40d2-112">TNG</span><span class="sxs-lookup"><span data-stu-id="c40d2-112">TNG</span></span>|<span data-ttu-id="c40d2-113">培训</span><span class="sxs-lookup"><span data-stu-id="c40d2-113">Training</span></span>|  
-|<span data-ttu-id="c40d2-114">PDE</span><span class="sxs-lookup"><span data-stu-id="c40d2-114">PDE</span></span>|<span data-ttu-id="c40d2-115">可能的重复发出</span><span class="sxs-lookup"><span data-stu-id="c40d2-115">Possible Duplicate Emission</span></span>|  
+|<span data-ttu-id="e4e3b-106">MAC</span><span class="sxs-lookup"><span data-stu-id="e4e3b-106">MAC</span></span>|<span data-ttu-id="e4e3b-107">消息身份验证代码</span><span class="sxs-lookup"><span data-stu-id="e4e3b-107">Message Authentication Code</span></span>|  
+|<span data-ttu-id="e4e3b-108">PAC</span><span class="sxs-lookup"><span data-stu-id="e4e3b-108">PAC</span></span>|<span data-ttu-id="e4e3b-109">专有身份验证代码</span><span class="sxs-lookup"><span data-stu-id="e4e3b-109">Proprietary Authentication Code</span></span>|  
+|<span data-ttu-id="e4e3b-110">CHK</span><span class="sxs-lookup"><span data-stu-id="e4e3b-110">CHK</span></span>|<span data-ttu-id="e4e3b-111">Checksum</span><span class="sxs-lookup"><span data-stu-id="e4e3b-111">Checksum</span></span>|  
+|<span data-ttu-id="e4e3b-112">TNG</span><span class="sxs-lookup"><span data-stu-id="e4e3b-112">TNG</span></span>|<span data-ttu-id="e4e3b-113">培训</span><span class="sxs-lookup"><span data-stu-id="e4e3b-113">Training</span></span>|  
+|<span data-ttu-id="e4e3b-114">PDE</span><span class="sxs-lookup"><span data-stu-id="e4e3b-114">PDE</span></span>|<span data-ttu-id="e4e3b-115">可能的重复发出</span><span class="sxs-lookup"><span data-stu-id="e4e3b-115">Possible Duplicate Emission</span></span>|  
   
--   <span data-ttu-id="c40d2-116">**消息身份验证代码 (MAC) 预告片。**</span><span class="sxs-lookup"><span data-stu-id="c40d2-116">**Message Authentication Code (MAC) Trailer.**</span></span> <span data-ttu-id="c40d2-117">允许接收用户的身份验证。</span><span class="sxs-lookup"><span data-stu-id="c40d2-117">Allows authentication by the receiving user.</span></span> <span data-ttu-id="c40d2-118">MAC 预告片跟身份验证结果。</span><span class="sxs-lookup"><span data-stu-id="c40d2-118">The MAC trailer is followed by an authentication result.</span></span> <span data-ttu-id="c40d2-119">此预告片是 FIN 应用程序中的大多数用户和用户消息类别必需的。</span><span class="sxs-lookup"><span data-stu-id="c40d2-119">This trailer is mandatory for most user-to-user message categories within the FIN application.</span></span>  
+- <span data-ttu-id="e4e3b-116">**消息身份验证代码 (MAC) 尾部。**</span><span class="sxs-lookup"><span data-stu-id="e4e3b-116">**Message Authentication Code (MAC) Trailer.**</span></span> <span data-ttu-id="e4e3b-117">允许接收的用户进行身份验证。</span><span class="sxs-lookup"><span data-stu-id="e4e3b-117">Allows authentication by the receiving user.</span></span> <span data-ttu-id="e4e3b-118">MAC 尾部后跟一个身份验证结果。</span><span class="sxs-lookup"><span data-stu-id="e4e3b-118">The MAC trailer is followed by an authentication result.</span></span> <span data-ttu-id="e4e3b-119">此尾部是必需的 FIN 应用程序中的大多数用户的消息类别。</span><span class="sxs-lookup"><span data-stu-id="e4e3b-119">This trailer is mandatory for most user-to-user message categories within the FIN application.</span></span>  
   
-     <span data-ttu-id="c40d2-120">当使用 FIN 复制服务时，PAC 尾部 （如果有） 将遵循 MAC 预告片。</span><span class="sxs-lookup"><span data-stu-id="c40d2-120">When the FIN Copy Service is used, a PAC trailer (if present) follows the MAC trailer.</span></span> <span data-ttu-id="c40d2-121">下面的代码演示了 MAC 尾部：</span><span class="sxs-lookup"><span data-stu-id="c40d2-121">The following code is an example of a MAC trailer:</span></span>  
+   <span data-ttu-id="e4e3b-120">当使用 FIN 复制服务时，PAC 尾部 （如果存在） 遵循 MAC 尾部。</span><span class="sxs-lookup"><span data-stu-id="e4e3b-120">When the FIN Copy Service is used, a PAC trailer (if present) follows the MAC trailer.</span></span> <span data-ttu-id="e4e3b-121">下面的代码是 MAC 尾部的示例：</span><span class="sxs-lookup"><span data-stu-id="e4e3b-121">The following code is an example of a MAC trailer:</span></span>  
   
-    ```  
-    {MAC:<authentication-result>}  
-    where <authentication-result> = 8!h  
-    ```  
+  ```  
+  {MAC:<authentication-result>}  
+  where <authentication-result> = 8!h  
+  ```  
   
--   <span data-ttu-id="c40d2-122">**专有身份验证代码 (PAC) 预告片。**</span><span class="sxs-lookup"><span data-stu-id="c40d2-122">**Proprietary Authentication Code (PAC) Trailer.**</span></span> <span data-ttu-id="c40d2-123">仅在使用双重身份验证选项时，将 FIN 复制服务中使用 PAC 预告片。</span><span class="sxs-lookup"><span data-stu-id="c40d2-123">The PAC trailer is used within the FIN Copy service only when using the double authentication option.</span></span> <span data-ttu-id="c40d2-124">如果存在，块 5 的 FIN 用户和用户消息后，MAC 尾端立即包括 PAC 预告片。</span><span class="sxs-lookup"><span data-stu-id="c40d2-124">Block 5 of FIN user-to-user messages include the PAC trailer immediately after the MAC trailer, if present.</span></span> <span data-ttu-id="c40d2-125">如果存在，此结果的消息，115，字段的值的块 4 的提取字段计算和\<身份验证结果\>的 MAC 电影预告片复制服务以使用双重身份验证。</span><span class="sxs-lookup"><span data-stu-id="c40d2-125">This result is calculated on the extracted fields of Block 4 of the message, the value of field 115, if present, and the \<authentication-result\> of the MAC trailer for Copy Services with double authentication.</span></span>  
+- <span data-ttu-id="e4e3b-122">**专有身份验证代码 (PAC) 尾部。**</span><span class="sxs-lookup"><span data-stu-id="e4e3b-122">**Proprietary Authentication Code (PAC) Trailer.**</span></span> <span data-ttu-id="e4e3b-123">仅当使用两次身份验证选项时，将 FIN 复制服务中使用 PAC 尾部。</span><span class="sxs-lookup"><span data-stu-id="e4e3b-123">The PAC trailer is used within the FIN Copy service only when using the double authentication option.</span></span> <span data-ttu-id="e4e3b-124">如果存在，块 5 的 FIN 用户和用户消息 MAC 尾部后立即包含 PAC 尾部。</span><span class="sxs-lookup"><span data-stu-id="e4e3b-124">Block 5 of FIN user-to-user messages include the PAC trailer immediately after the MAC trailer, if present.</span></span> <span data-ttu-id="e4e3b-125">此结果进行计算的消息，第 115，字段的值的块 4 提取的字段 （如果存在） 和\<身份验证结果\>MAC 尾部的复制服务使用两次身份验证。</span><span class="sxs-lookup"><span data-stu-id="e4e3b-125">This result is calculated on the extracted fields of Block 4 of the message, the value of field 115, if present, and the \<authentication-result\> of the MAC trailer for Copy Services with double authentication.</span></span>  
   
-     <span data-ttu-id="c40d2-126">因此，PAC 计算中包含的结束块指示器 （CrLf-） 和字段的定义如下：</span><span class="sxs-lookup"><span data-stu-id="c40d2-126">As a result, the end-of-block indicator (CrLf-) is included in the PAC calculation and the fields are defined as follows:</span></span>  
+   <span data-ttu-id="e4e3b-126">因此，结束块指示符 （CrLf-） 包含在 PAC 计算和的字段定义，如下所示：</span><span class="sxs-lookup"><span data-stu-id="e4e3b-126">As a result, the end-of-block indicator (CrLf-) is included in the PAC calculation and the fields are defined as follows:</span></span>  
   
-    -   <span data-ttu-id="c40d2-127">前四个字符都是 CrLf:</span><span class="sxs-lookup"><span data-stu-id="c40d2-127">The first four characters are CrLf:</span></span>  
+  - <span data-ttu-id="e4e3b-127">前四个字符是 CrLf:</span><span class="sxs-lookup"><span data-stu-id="e4e3b-127">The first four characters are CrLf:</span></span>  
   
-    -   <span data-ttu-id="c40d2-128">字段和分隔符都存在，即 32A: 20，:，依次类推。</span><span class="sxs-lookup"><span data-stu-id="c40d2-128">The field and the delimiter are present, that is, 32A:, 20:, and so on.</span></span>  
+  - <span data-ttu-id="e4e3b-128">字段和分隔符都存在，即 32A:，20:，依此类推。</span><span class="sxs-lookup"><span data-stu-id="e4e3b-128">The field and the delimiter are present, that is, 32A:, 20:, and so on.</span></span>  
   
-    -   <span data-ttu-id="c40d2-129">所有的子字段和其分隔符存在。</span><span class="sxs-lookup"><span data-stu-id="c40d2-129">All subfields and their delimiters are present.</span></span>  
+  - <span data-ttu-id="e4e3b-129">所有子字段和分隔符存在。</span><span class="sxs-lookup"><span data-stu-id="e4e3b-129">All subfields and their delimiters are present.</span></span>  
   
-     <span data-ttu-id="c40d2-130">下面的代码演示了 PAC 预告片格式：</span><span class="sxs-lookup"><span data-stu-id="c40d2-130">The following code is an example of the PAC trailer format:</span></span>  
+    <span data-ttu-id="e4e3b-130">以下代码是 PAC 尾部格式示例：</span><span class="sxs-lookup"><span data-stu-id="e4e3b-130">The following code is an example of the PAC trailer format:</span></span>  
   
-    ```  
-    {PAC:[<authentication-result>]}  
-    where <authentication-result> is mandatory on input messages only and  
-    <authentication-result> = 8!h  
-    ```  
+  ```  
+  {PAC:[<authentication-result>]}  
+  where <authentication-result> is mandatory on input messages only and  
+  <authentication-result> = 8!h  
+  ```  
   
--   <span data-ttu-id="c40d2-131">**选项 （校验和） 预告片 （对于所有 FIN 消息是必需的）**</span><span class="sxs-lookup"><span data-stu-id="c40d2-131">**CHK (Checksum) Trailer (mandatory for all FIN messages)**</span></span>  
+- <span data-ttu-id="e4e3b-131">**CHK （校验和） 尾部 （对于所有 FIN 消息是必需的）**</span><span class="sxs-lookup"><span data-stu-id="e4e3b-131">**CHK (Checksum) Trailer (mandatory for all FIN messages)**</span></span>  
   
-     <span data-ttu-id="c40d2-132">选项电影预告片对于所有 FIN 消息是必需的和计算根据接收方的地址 (第 9 个字符的 12 个字符替换为*X* plus 文本块)。</span><span class="sxs-lookup"><span data-stu-id="c40d2-132">The CHK trailer is mandatory for all FIN messages and is computed based upon the receiver's address (12 characters with the ninth character replaced by *X* plus the text block).</span></span> <span data-ttu-id="c40d2-133">此预告片允许系统以及 CBT 以检查该消息未损坏，由于系统故障或未检测到的传输错误。</span><span class="sxs-lookup"><span data-stu-id="c40d2-133">This trailer allows the system and the CBT to check that messages are not corrupted due to a system malfunction or an undetected transmission error.</span></span>  
+   <span data-ttu-id="e4e3b-132">CHK 尾部是必需的所有 FIN 消息的根据接收方的地址计算得出 (第 9 个字符的 12 个字符替换为*X*以及文本块)。</span><span class="sxs-lookup"><span data-stu-id="e4e3b-132">The CHK trailer is mandatory for all FIN messages and is computed based upon the receiver's address (12 characters with the ninth character replaced by *X* plus the text block).</span></span> <span data-ttu-id="e4e3b-133">此尾部允许系统和 CBT 检查由于系统工作不正常或未检测到的传输错误消息不已损坏。</span><span class="sxs-lookup"><span data-stu-id="e4e3b-133">This trailer allows the system and the CBT to check that messages are not corrupted due to a system malfunction or an undetected transmission error.</span></span>  
   
-     <span data-ttu-id="c40d2-134">下面的代码演示了选项预告片格式：</span><span class="sxs-lookup"><span data-stu-id="c40d2-134">The following code is an example of the CHK trailer format:</span></span>  
+   <span data-ttu-id="e4e3b-134">以下代码是 CHK 尾部格式示例：</span><span class="sxs-lookup"><span data-stu-id="e4e3b-134">The following code is an example of the CHK trailer format:</span></span>  
   
-    ```  
-    {CHK:<checksum-result>}  
-    where <checksum-result> = 12!h  
-    ```  
+  ```  
+  {CHK:<checksum-result>}  
+  where <checksum-result> = 12!h  
+  ```  
   
-## <a name="see-also"></a><span data-ttu-id="c40d2-135">另请参阅</span><span class="sxs-lookup"><span data-stu-id="c40d2-135">See Also</span></span>  
- [<span data-ttu-id="c40d2-136">处理架构</span><span class="sxs-lookup"><span data-stu-id="c40d2-136">Working with Schemas</span></span>](../../adapters-and-accelerators/accelerator-swift/working-with-schemas.md)
+## <a name="see-also"></a><span data-ttu-id="e4e3b-135">请参阅</span><span class="sxs-lookup"><span data-stu-id="e4e3b-135">See Also</span></span>  
+ [<span data-ttu-id="e4e3b-136">处理架构</span><span class="sxs-lookup"><span data-stu-id="e4e3b-136">Working with Schemas</span></span>](../../adapters-and-accelerators/accelerator-swift/working-with-schemas.md)

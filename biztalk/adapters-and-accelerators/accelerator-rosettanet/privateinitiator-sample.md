@@ -1,5 +1,5 @@
 ---
-title: PrivateInitiator 示例 |Microsoft 文档
+title: PrivateInitiator 示例 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 853b77e24359d6a833d526fc07166384ea946887
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 2ab84d145939191a8bdbca9afb44d04fdf24b3e9
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26004374"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37011278"
 ---
-# <a name="privateinitiator-sample"></a><span data-ttu-id="2af10-102">PrivateInitiator 示例</span><span class="sxs-lookup"><span data-stu-id="2af10-102">PrivateInitiator Sample</span></span>
-<span data-ttu-id="2af10-103">PrivateInitiator.odx 示例包含通过安装发起程序专用进程的代码[!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server。</span><span class="sxs-lookup"><span data-stu-id="2af10-103">The PrivateInitiator.odx sample contains the code for the initiator private process installed by [!INCLUDE[btsCoName](../../includes/btsconame-md.md)]® BizTalk Server.</span></span> <span data-ttu-id="2af10-104">此通用专用流程从基于默认的 SQL 适配器的发送和接收端口发送和接收 RNIF 服务内容消息。</span><span class="sxs-lookup"><span data-stu-id="2af10-104">This is a generic private process that sends and receives RNIF service-content messages from the default SQL adapter-based send and receive ports.</span></span>  
+# <a name="privateinitiator-sample"></a><span data-ttu-id="2a765-102">PrivateInitiator 示例</span><span class="sxs-lookup"><span data-stu-id="2a765-102">PrivateInitiator Sample</span></span>
+<span data-ttu-id="2a765-103">PrivateInitiator.odx 示例包含安装 Microsoft® BizTalk Server 的发起方专用流程的代码。</span><span class="sxs-lookup"><span data-stu-id="2a765-103">The PrivateInitiator.odx sample contains the code for the initiator private process installed by Microsoft® BizTalk Server.</span></span> <span data-ttu-id="2a765-104">此通用专用流程从基于默认的 SQL 适配器的发送和接收端口发送和接收 RNIF 服务内容消息。</span><span class="sxs-lookup"><span data-stu-id="2a765-104">This is a generic private process that sends and receives RNIF service-content messages from the default SQL adapter-based send and receive ports.</span></span>  
   
- <span data-ttu-id="2af10-105">默认情况下，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]安装程序将安装中的示例\<*驱动器*\>: \Program Files\\ [!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk\<版本\>RosettaNet\SDK\PrivateInitiator 快捷键。</span><span class="sxs-lookup"><span data-stu-id="2af10-105">By default, the [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] Setup program installs the sample in \<*drive*\>:\Program Files\\[!INCLUDE[btsCoName](../../includes/btsconame-md.md)] BizTalk \<version\> Accelerator for RosettaNet\SDK\PrivateInitiator.</span></span>  
+ <span data-ttu-id="2a765-105">默认情况下[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]安装程序将安装中的示例\<*驱动器*\>: \Program Files\\Microsoft BizTalk\<版本\>Accelerator forRosettaNet\SDK\PrivateInitiator 中。</span><span class="sxs-lookup"><span data-stu-id="2a765-105">By default, the [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] Setup program installs the sample in \<*drive*\>:\Program Files\\Microsoft  BizTalk \<version\> Accelerator for RosettaNet\SDK\PrivateInitiator.</span></span>  
   
-## <a name="sample-contents"></a><span data-ttu-id="2af10-106">示例内容</span><span class="sxs-lookup"><span data-stu-id="2af10-106">Sample Contents</span></span>  
- <span data-ttu-id="2af10-107">发起方专用流程是发起方内部的业务流程。</span><span class="sxs-lookup"><span data-stu-id="2af10-107">The initiator private process is the business process that is internal to the initiator.</span></span> <span data-ttu-id="2af10-108">该专用流程提供发起方公用流程和后端业务线程序之间的后端集成。</span><span class="sxs-lookup"><span data-stu-id="2af10-108">The private process provides back-end integration between the initiator public process and the back-end line-of-business program.</span></span> <span data-ttu-id="2af10-109">发起方专用流程与公用流程进行通信以发起消息。</span><span class="sxs-lookup"><span data-stu-id="2af10-109">The initiator private process communicates with the public process to initiate messages.</span></span>  
+## <a name="sample-contents"></a><span data-ttu-id="2a765-106">示例内容</span><span class="sxs-lookup"><span data-stu-id="2a765-106">Sample Contents</span></span>  
+ <span data-ttu-id="2a765-107">发起方专用流程是发起方内部的业务流程。</span><span class="sxs-lookup"><span data-stu-id="2a765-107">The initiator private process is the business process that is internal to the initiator.</span></span> <span data-ttu-id="2a765-108">该专用流程提供发起方公用流程和后端业务线程序之间的后端集成。</span><span class="sxs-lookup"><span data-stu-id="2a765-108">The private process provides back-end integration between the initiator public process and the back-end line-of-business program.</span></span> <span data-ttu-id="2a765-109">发起方专用流程与公用流程进行通信以发起消息。</span><span class="sxs-lookup"><span data-stu-id="2a765-109">The initiator private process communicates with the public process to initiate messages.</span></span>  
   
- <span data-ttu-id="2af10-110">每个实现的发起方专用流程都是唯一的。</span><span class="sxs-lookup"><span data-stu-id="2af10-110">The initiator private process is unique for each implementation.</span></span> <span data-ttu-id="2af10-111">可以根据所需自定义 PrivateInitiator.odx 示例。</span><span class="sxs-lookup"><span data-stu-id="2af10-111">You can customize the PrivateInitiator.odx sample for your purposes.</span></span> <span data-ttu-id="2af10-112">你必须小心，确保不会对发起方公用流程的正常运行产生不利影响。</span><span class="sxs-lookup"><span data-stu-id="2af10-112">You must be careful that you do not adversely affect the functioning of the initiator public process.</span></span>  
+ <span data-ttu-id="2a765-110">每个实现的发起方专用流程都是唯一的。</span><span class="sxs-lookup"><span data-stu-id="2a765-110">The initiator private process is unique for each implementation.</span></span> <span data-ttu-id="2a765-111">可以根据所需自定义 PrivateInitiator.odx 示例。</span><span class="sxs-lookup"><span data-stu-id="2a765-111">You can customize the PrivateInitiator.odx sample for your purposes.</span></span> <span data-ttu-id="2a765-112">你必须小心，确保不会对发起方公用流程的正常运行产生不利影响。</span><span class="sxs-lookup"><span data-stu-id="2a765-112">You must be careful that you do not adversely affect the functioning of the initiator public process.</span></span>  
   
- <span data-ttu-id="2af10-113">有关详细信息，包括消息流的说明，请参阅[发起方私有过程](../../adapters-and-accelerators/accelerator-rosettanet/initiator-private-process.md)。</span><span class="sxs-lookup"><span data-stu-id="2af10-113">For more information, including a description of the message flow, see [Initiator Private Process](../../adapters-and-accelerators/accelerator-rosettanet/initiator-private-process.md).</span></span>  
+ <span data-ttu-id="2a765-113">有关详细信息，包括消息流的说明，请参阅[发起方专用流程](../../adapters-and-accelerators/accelerator-rosettanet/initiator-private-process.md)。</span><span class="sxs-lookup"><span data-stu-id="2a765-113">For more information, including a description of the message flow, see [Initiator Private Process](../../adapters-and-accelerators/accelerator-rosettanet/initiator-private-process.md).</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="2af10-114">另请参阅</span><span class="sxs-lookup"><span data-stu-id="2af10-114">See Also</span></span>  
- <span data-ttu-id="2af10-115">[业务流程示例](../../adapters-and-accelerators/accelerator-rosettanet/orchestration-samples.md) </span><span class="sxs-lookup"><span data-stu-id="2af10-115">[Orchestration Samples](../../adapters-and-accelerators/accelerator-rosettanet/orchestration-samples.md) </span></span>  
- [<span data-ttu-id="2af10-116">专用流程</span><span class="sxs-lookup"><span data-stu-id="2af10-116">Private Processes</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/private-processes.md)
+## <a name="see-also"></a><span data-ttu-id="2a765-114">请参阅</span><span class="sxs-lookup"><span data-stu-id="2a765-114">See Also</span></span>  
+ <span data-ttu-id="2a765-115">[业务流程示例](../../adapters-and-accelerators/accelerator-rosettanet/orchestration-samples.md) </span><span class="sxs-lookup"><span data-stu-id="2a765-115">[Orchestration Samples](../../adapters-and-accelerators/accelerator-rosettanet/orchestration-samples.md) </span></span>  
+ [<span data-ttu-id="2a765-116">专用流程</span><span class="sxs-lookup"><span data-stu-id="2a765-116">Private Processes</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/private-processes.md)

@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10602 |Microsoft 文档
+title: 单一登录： 事件 10602 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1ef24a13944bc44b924586263cce74ee2cb34e5e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ec5f44a11c291ae4b9a71f95c6dfdb004f635457
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22271157"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37006222"
 ---
-# <a name="single-sign-on-event-10602"></a><span data-ttu-id="67721-102">单一登录： 事件 10602</span><span class="sxs-lookup"><span data-stu-id="67721-102">Single Sign-On: Event 10602</span></span>
-## <a name="details"></a><span data-ttu-id="67721-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="67721-103">Details</span></span>  
+# <a name="single-sign-on-event-10602"></a><span data-ttu-id="c3521-102">单一登录： 事件 10602</span><span class="sxs-lookup"><span data-stu-id="c3521-102">Single Sign-On: Event 10602</span></span>
+## <a name="details"></a><span data-ttu-id="c3521-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="c3521-103">Details</span></span>  
   
-|||  
-|-|-|  
-|<span data-ttu-id="67721-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="67721-104">Product Name</span></span>|<span data-ttu-id="67721-105">企业单一登录</span><span class="sxs-lookup"><span data-stu-id="67721-105">Enterprise Single Sign-On</span></span>|  
-|<span data-ttu-id="67721-106">产品版本</span><span class="sxs-lookup"><span data-stu-id="67721-106">Product Version</span></span>|[!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]|  
-|<span data-ttu-id="67721-107">事件 ID</span><span class="sxs-lookup"><span data-stu-id="67721-107">Event ID</span></span>|<span data-ttu-id="67721-108">10602</span><span class="sxs-lookup"><span data-stu-id="67721-108">10602</span></span>|  
-|<span data-ttu-id="67721-109">事件源</span><span class="sxs-lookup"><span data-stu-id="67721-109">Event Source</span></span>|<span data-ttu-id="67721-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="67721-110">ENTSSO</span></span>|  
-|<span data-ttu-id="67721-111">组件</span><span class="sxs-lookup"><span data-stu-id="67721-111">Component</span></span>|<span data-ttu-id="67721-112">N/A</span><span class="sxs-lookup"><span data-stu-id="67721-112">N/A</span></span>|  
-|<span data-ttu-id="67721-113">符号名称</span><span class="sxs-lookup"><span data-stu-id="67721-113">Symbolic Name</span></span>|<span data-ttu-id="67721-114">SSO_ERROR_RPC_FAILURE</span><span class="sxs-lookup"><span data-stu-id="67721-114">SSO_ERROR_RPC_FAILURE</span></span>|  
-|<span data-ttu-id="67721-115">消息正文</span><span class="sxs-lookup"><span data-stu-id="67721-115">Message Text</span></span>|<span data-ttu-id="67721-116">RPC 失败。</span><span class="sxs-lookup"><span data-stu-id="67721-116">RPC failure.</span></span> <span data-ttu-id="67721-117">请检查您的网络配置。%r</span><span class="sxs-lookup"><span data-stu-id="67721-117">Please check your network configuration.%r</span></span><br /><br /> <span data-ttu-id="67721-118">错误代码： %1</span><span class="sxs-lookup"><span data-stu-id="67721-118">Error Code: %1</span></span>|  
+|                 |                                                                                    |
+|-----------------|------------------------------------------------------------------------------------|
+|  <span data-ttu-id="c3521-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="c3521-104">Product Name</span></span>   |                             <span data-ttu-id="c3521-105">企业单一登录</span><span class="sxs-lookup"><span data-stu-id="c3521-105">Enterprise Single Sign-On</span></span>                              |
+| <span data-ttu-id="c3521-106">产品版本</span><span class="sxs-lookup"><span data-stu-id="c3521-106">Product Version</span></span> |             [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]             |
+|    <span data-ttu-id="c3521-107">事件 ID</span><span class="sxs-lookup"><span data-stu-id="c3521-107">Event ID</span></span>     |                                       <span data-ttu-id="c3521-108">10602</span><span class="sxs-lookup"><span data-stu-id="c3521-108">10602</span></span>                                        |
+|  <span data-ttu-id="c3521-109">事件源</span><span class="sxs-lookup"><span data-stu-id="c3521-109">Event Source</span></span>   |                                       <span data-ttu-id="c3521-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="c3521-110">ENTSSO</span></span>                                       |
+|    <span data-ttu-id="c3521-111">组件</span><span class="sxs-lookup"><span data-stu-id="c3521-111">Component</span></span>    |                                        <span data-ttu-id="c3521-112">N/A</span><span class="sxs-lookup"><span data-stu-id="c3521-112">N/A</span></span>                                         |
+|  <span data-ttu-id="c3521-113">符号名称</span><span class="sxs-lookup"><span data-stu-id="c3521-113">Symbolic Name</span></span>  |                               <span data-ttu-id="c3521-114">SSO_ERROR_RPC_FAILURE</span><span class="sxs-lookup"><span data-stu-id="c3521-114">SSO_ERROR_RPC_FAILURE</span></span>                                |
+|  <span data-ttu-id="c3521-115">消息正文</span><span class="sxs-lookup"><span data-stu-id="c3521-115">Message Text</span></span>   | <span data-ttu-id="c3521-116">RPC 失败。</span><span class="sxs-lookup"><span data-stu-id="c3521-116">RPC failure.</span></span> <span data-ttu-id="c3521-117">请检查您的网络配置。%r</span><span class="sxs-lookup"><span data-stu-id="c3521-117">Please check your network configuration.%r</span></span><br /><br /> <span data-ttu-id="c3521-118">错误代码： %1</span><span class="sxs-lookup"><span data-stu-id="c3521-118">Error Code: %1</span></span> |
   
-## <a name="explanation"></a><span data-ttu-id="67721-119">解释</span><span class="sxs-lookup"><span data-stu-id="67721-119">Explanation</span></span>  
- <span data-ttu-id="67721-120">RPC 失败。</span><span class="sxs-lookup"><span data-stu-id="67721-120">RPC failure.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="c3521-119">解释</span><span class="sxs-lookup"><span data-stu-id="c3521-119">Explanation</span></span>  
+ <span data-ttu-id="c3521-120">RPC 失败。</span><span class="sxs-lookup"><span data-stu-id="c3521-120">RPC failure.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="67721-121">用户操作</span><span class="sxs-lookup"><span data-stu-id="67721-121">User Action</span></span>  
- <span data-ttu-id="67721-122">检查您的网络配置。</span><span class="sxs-lookup"><span data-stu-id="67721-122">Check your network configuration.</span></span>
+## <a name="user-action"></a><span data-ttu-id="c3521-121">用户操作</span><span class="sxs-lookup"><span data-stu-id="c3521-121">User Action</span></span>  
+ <span data-ttu-id="c3521-122">检查您的网络配置。</span><span class="sxs-lookup"><span data-stu-id="c3521-122">Check your network configuration.</span></span>

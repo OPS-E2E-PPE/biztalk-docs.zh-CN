@@ -1,5 +1,5 @@
 ---
-title: Microsoft.BizTalk.DefaultPipelines 引用 |Microsoft 文档
+title: Microsoft.BizTalk.DefaultPipelines 引用 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -26,50 +26,50 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0ad7cad78e3e8606371a5fa49673297cf590ddbe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: de2ec54b34a4e6d92f471db7fe9ad5dbc7933014
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263405"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "37022051"
 ---
-# <a name="microsoftbiztalkdefaultpipelines-reference"></a><span data-ttu-id="88236-102">Microsoft.BizTalk.DefaultPipelines 引用</span><span class="sxs-lookup"><span data-stu-id="88236-102">Microsoft.BizTalk.DefaultPipelines Reference</span></span>
-<span data-ttu-id="88236-103">**Microsoft.BizTalk.DefaultPipelines**命名空间包含以下管道：</span><span class="sxs-lookup"><span data-stu-id="88236-103">The **Microsoft.BizTalk.DefaultPipelines** namespace contains the following pipelines:</span></span>  
+# <a name="microsoftbiztalkdefaultpipelines-reference"></a><span data-ttu-id="13419-102">Microsoft.BizTalk.DefaultPipelines 引用</span><span class="sxs-lookup"><span data-stu-id="13419-102">Microsoft.BizTalk.DefaultPipelines Reference</span></span>
+<span data-ttu-id="13419-103">**Microsoft.BizTalk.DefaultPipelines**命名空间包含以下管道：</span><span class="sxs-lookup"><span data-stu-id="13419-103">The **Microsoft.BizTalk.DefaultPipelines** namespace contains the following pipelines:</span></span>  
   
--   <span data-ttu-id="88236-104">XMLReceive</span><span class="sxs-lookup"><span data-stu-id="88236-104">XMLReceive</span></span>  
+- <span data-ttu-id="13419-104">XMLReceive</span><span class="sxs-lookup"><span data-stu-id="13419-104">XMLReceive</span></span>  
   
--   <span data-ttu-id="88236-105">PassThruReceive</span><span class="sxs-lookup"><span data-stu-id="88236-105">PassThruReceive</span></span>  
+- <span data-ttu-id="13419-105">PassThruReceive</span><span class="sxs-lookup"><span data-stu-id="13419-105">PassThruReceive</span></span>  
   
--   <span data-ttu-id="88236-106">XMLTransmit</span><span class="sxs-lookup"><span data-stu-id="88236-106">XMLTransmit</span></span>  
+- <span data-ttu-id="13419-106">XMLTransmit</span><span class="sxs-lookup"><span data-stu-id="13419-106">XMLTransmit</span></span>  
   
--   <span data-ttu-id="88236-107">PassThruTransmit</span><span class="sxs-lookup"><span data-stu-id="88236-107">PassThruTransmit</span></span>  
+- <span data-ttu-id="13419-107">PassThruTransmit</span><span class="sxs-lookup"><span data-stu-id="13419-107">PassThruTransmit</span></span>  
   
- <span data-ttu-id="88236-108">管道是一个软件组件，用于定义并链接一个或多个阶段，处理消息接收或发送[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="88236-108">A pipeline is a software component that defines and links one or more stages for processing messages received or sent by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="88236-109">这些阶段包括诸如编码或解码、拆装或组装、解密或加密这类功能。</span><span class="sxs-lookup"><span data-stu-id="88236-109">The stages include functions such as encoding or decoding, disassembling or assembling, and decrypting or encrypting.</span></span> <span data-ttu-id="88236-110">这些功能是按特定顺序实现的。</span><span class="sxs-lookup"><span data-stu-id="88236-110">These functions are implemented in a specific order.</span></span> <span data-ttu-id="88236-111">可以使用管道设计器来创建接收管道和发送管道。</span><span class="sxs-lookup"><span data-stu-id="88236-111">You can use Pipeline Designer to create receive and send pipelines.</span></span>  
+  <span data-ttu-id="13419-108">管道是一个软件组件，用于定义和链接一个或多个阶段的处理的消息接收或发送的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="13419-108">A pipeline is a software component that defines and links one or more stages for processing messages received or sent by [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)].</span></span> <span data-ttu-id="13419-109">这些阶段包括诸如编码或解码、拆装或组装、解密或加密这类功能。</span><span class="sxs-lookup"><span data-stu-id="13419-109">The stages include functions such as encoding or decoding, disassembling or assembling, and decrypting or encrypting.</span></span> <span data-ttu-id="13419-110">这些功能是按特定顺序实现的。</span><span class="sxs-lookup"><span data-stu-id="13419-110">These functions are implemented in a specific order.</span></span> <span data-ttu-id="13419-111">可以使用管道设计器来创建接收管道和发送管道。</span><span class="sxs-lookup"><span data-stu-id="13419-111">You can use Pipeline Designer to create receive and send pipelines.</span></span>  
   
- <span data-ttu-id="88236-112">包含在 BizTalk 项目的默认管道引用可以处理所有类型的文档使用**PassThruReceive**和**PassThruTransmit**管道。</span><span class="sxs-lookup"><span data-stu-id="88236-112">The default pipeline references included in a BizTalk project can process all types of documents using the **PassThruReceive** and **PassThruTransmit** pipelines.</span></span>  
+  <span data-ttu-id="13419-112">BizTalk 项目中包含的默认管道引用可以处理所有类型的文档使用**PassThruReceive**并**PassThruTransmit**管道。</span><span class="sxs-lookup"><span data-stu-id="13419-112">The default pipeline references included in a BizTalk project can process all types of documents using the **PassThruReceive** and **PassThruTransmit** pipelines.</span></span>  
   
- <span data-ttu-id="88236-113">下面分别列出了各默认管道中的默认组件。</span><span class="sxs-lookup"><span data-stu-id="88236-113">The following lists show the default components in the default pipelines.</span></span> <span data-ttu-id="88236-114">其中还指示了每个管道中组件的默认顺序。</span><span class="sxs-lookup"><span data-stu-id="88236-114">These lists also indicate the default order of the components in each pipeline.</span></span> <span data-ttu-id="88236-115">如有必要，可以添加和删除组件。</span><span class="sxs-lookup"><span data-stu-id="88236-115">You can add and delete components if necessary.</span></span>  
+  <span data-ttu-id="13419-113">下面分别列出了各默认管道中的默认组件。</span><span class="sxs-lookup"><span data-stu-id="13419-113">The following lists show the default components in the default pipelines.</span></span> <span data-ttu-id="13419-114">其中还指示了每个管道中组件的默认顺序。</span><span class="sxs-lookup"><span data-stu-id="13419-114">These lists also indicate the default order of the components in each pipeline.</span></span> <span data-ttu-id="13419-115">如有必要，可以添加和删除组件。</span><span class="sxs-lookup"><span data-stu-id="13419-115">You can add and delete components if necessary.</span></span>  
   
- <span data-ttu-id="88236-116">默认 XMLReceive 管道中的默认组件包括：</span><span class="sxs-lookup"><span data-stu-id="88236-116">The default components in the default XMLReceive pipeline are:</span></span>  
+  <span data-ttu-id="13419-116">默认 XMLReceive 管道中的默认组件包括：</span><span class="sxs-lookup"><span data-stu-id="13419-116">The default components in the default XMLReceive pipeline are:</span></span>  
   
--   <span data-ttu-id="88236-117">解密器</span><span class="sxs-lookup"><span data-stu-id="88236-117">Decrypter</span></span>  
+- <span data-ttu-id="13419-117">解密器</span><span class="sxs-lookup"><span data-stu-id="13419-117">Decrypter</span></span>  
   
--   <span data-ttu-id="88236-118">解码器</span><span class="sxs-lookup"><span data-stu-id="88236-118">Decoder</span></span>  
+- <span data-ttu-id="13419-118">解码器</span><span class="sxs-lookup"><span data-stu-id="13419-118">Decoder</span></span>  
   
--   <span data-ttu-id="88236-119">拆装器</span><span class="sxs-lookup"><span data-stu-id="88236-119">Disassembler</span></span>  
+- <span data-ttu-id="13419-119">拆装器</span><span class="sxs-lookup"><span data-stu-id="13419-119">Disassembler</span></span>  
   
--   <span data-ttu-id="88236-120">验证程序</span><span class="sxs-lookup"><span data-stu-id="88236-120">Validator</span></span>  
+- <span data-ttu-id="13419-120">验证程序</span><span class="sxs-lookup"><span data-stu-id="13419-120">Validator</span></span>  
   
--   <span data-ttu-id="88236-121">参与方解析</span><span class="sxs-lookup"><span data-stu-id="88236-121">Party Resolution</span></span>  
+- <span data-ttu-id="13419-121">参与方解析</span><span class="sxs-lookup"><span data-stu-id="13419-121">Party Resolution</span></span>  
   
- <span data-ttu-id="88236-122">默认 XMLTransmit 管道中的默认组件包括：</span><span class="sxs-lookup"><span data-stu-id="88236-122">The default components in the default XMLTransmit pipeline are:</span></span>  
+  <span data-ttu-id="13419-122">默认 XMLTransmit 管道中的默认组件包括：</span><span class="sxs-lookup"><span data-stu-id="13419-122">The default components in the default XMLTransmit pipeline are:</span></span>  
   
--   <span data-ttu-id="88236-123">组装器</span><span class="sxs-lookup"><span data-stu-id="88236-123">Assembler</span></span>  
+- <span data-ttu-id="13419-123">组装器</span><span class="sxs-lookup"><span data-stu-id="13419-123">Assembler</span></span>  
   
--   <span data-ttu-id="88236-124">编码器</span><span class="sxs-lookup"><span data-stu-id="88236-124">Encoder</span></span>  
+- <span data-ttu-id="13419-124">编码器</span><span class="sxs-lookup"><span data-stu-id="13419-124">Encoder</span></span>  
   
--   <span data-ttu-id="88236-125">加密器</span><span class="sxs-lookup"><span data-stu-id="88236-125">Encrypter</span></span>  
+- <span data-ttu-id="13419-125">加密器</span><span class="sxs-lookup"><span data-stu-id="13419-125">Encrypter</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="88236-126">另请参阅</span><span class="sxs-lookup"><span data-stu-id="88236-126">See Also</span></span>  
- <span data-ttu-id="88236-127">[创建管道使用管道设计器](../core/creating-pipelines-using-pipeline-designer.md) </span><span class="sxs-lookup"><span data-stu-id="88236-127">[Creating Pipelines Using Pipeline Designer](../core/creating-pipelines-using-pipeline-designer.md) </span></span>  
- [<span data-ttu-id="88236-128">有关 BizTalk 项目中包含的 BizTalk Namespace 引用</span><span class="sxs-lookup"><span data-stu-id="88236-128">About BizTalk Namespace References Included in BizTalk Projects</span></span>](../core/about-biztalk-namespace-references-included-in-biztalk-projects.md)
+## <a name="see-also"></a><span data-ttu-id="13419-126">请参阅</span><span class="sxs-lookup"><span data-stu-id="13419-126">See Also</span></span>  
+ <span data-ttu-id="13419-127">[使用管道设计器创建管道](../core/creating-pipelines-using-pipeline-designer.md) </span><span class="sxs-lookup"><span data-stu-id="13419-127">[Creating Pipelines Using Pipeline Designer](../core/creating-pipelines-using-pipeline-designer.md) </span></span>  
+ [<span data-ttu-id="13419-128">关于 BizTalk 项目中包含的 BizTalk 命名空间引用</span><span class="sxs-lookup"><span data-stu-id="13419-128">About BizTalk Namespace References Included in BizTalk Projects</span></span>](../core/about-biztalk-namespace-references-included-in-biztalk-projects.md)
