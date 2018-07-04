@@ -17,12 +17,12 @@ ms.devlang: na
 ms.topic: hub-page
 ms.date: 06/19/2017
 ms.author: mandia
-ms.openlocfilehash: 536e497cdb1cde65259254db0bcfd10804e90ffa
-ms.sourcegitcommit: 770523695b34cc54db81f7ab7eba46f2bc19baec
+ms.openlocfilehash: fb8b62c272da41d1056bee10095715dc33770e67
+ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31816945"
+ms.lasthandoff: 06/27/2018
+ms.locfileid: "36993414"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -126,7 +126,7 @@ ms.locfileid: "31816945"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>开始操作</h3>
-                                                    <p>无论是正在构建解决方案的 BizTalk 新手，还是经验老道的专业人士，都可通过我们快速入门。</p>
+                                                    <p>无论是正在构建解决方案的 BizTalk 新手，还是经验丰富的专业人士，都可通过我们的帮助快速入门。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -720,7 +720,7 @@ ms.locfileid: "31816945"
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>核心文档</h3>
-                                                    <p>了解关于网络、数据、应用程序及消息集成等的详细信息。</p>
+                                                    <p>了解网络、数据、应用程序及消息集成等内容。</p>
                                                 </div>
                                             </div>
                                         </div>
