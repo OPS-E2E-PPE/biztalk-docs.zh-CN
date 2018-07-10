@@ -2,7 +2,7 @@
 title: 使用 SQL Server Always On 可用性组实现高可用性 |Microsoft Docs
 description: 若要获取使用 SQL Server Always On 可用组 (AG)，包括系统要求和限制的高可用性 (HA) 解决方案的不同节点上的 BizTalk Server 数据库进行分组。 Always On AG 需要 Windows Server 故障转移群集 (WSFC)。
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 07/8/2018
 ms.prod: biztalk-server
 ms.reviewer: ''
 ms.suite: ''
@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 24a72698a97aa79ccd1b748a390f8e919ff0717f
-ms.sourcegitcommit: 6379723045cf05ed36f2bc500f6b41be1135f47c
+ms.openlocfilehash: d163c035cdf45ede600509783040114a0eaa0a2b
+ms.sourcegitcommit: 1f0306e812c95dc32c4496345c19f141612cb2c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37069394"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37913854"
 ---
 # <a name="high-availability-using-sql-server-always-on-availability-groups---biztalk-server"></a>使用 SQL Server Always On 可用性组的 BizTalk Server 的高可用性
 配置使用 SQL Server AlwaysOn 可用性组实现高可用性。
@@ -84,7 +84,8 @@ BizTalk Server 还依赖于 SQL Server Analysis Services 和 BAM 分析和存档
 SQL Server 数据库，以及 BizTalk Server 配置还会创建 SQL Server 安全登录名和 SQL 代理作业。 AlwaysOn 可用性组仅提供的功能来管理在可用性组的数据库。 登录名和 BizTalk 的 SQL 代理作业需要创建并更新/手动管理所有可用性副本。  
 
 > [!NOTE]
-> SQL Server 2016 Service Pack 2 支持同一可用性组中的多个数据库之间的 DTC 事务。 BizTalk Server 支持与 CU5 启动此功能。
+> SQL Server 2016 Service Pack 2 和同一可用性组中的多个数据库之间的更高版本支持 DTC 事务。 BizTalk Server 支持与 CU5 启动此功能。
+> 在配置 BizTalk Server 2016 的 SQL Server 2016 Service Pack 2 和更高版本时，所有 BizTalk Server 数据库可以都部署到单个可用性组。
 
 下面列出的 SQL Server 安全登录名是与 BizTalk Server 相关联。 您可能必须为 BizTalk Server 应用程序创建其他登录名。 如果是这样，您需要复制它们承载 BizTalk 数据库的副本的 SQL Server 的每个实例上。 
 
