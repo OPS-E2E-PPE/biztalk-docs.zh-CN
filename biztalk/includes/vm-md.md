@@ -1,1 +1,1 @@
-虚拟机
+<span data-ttu-id="58196-101">虚拟机</span><span class="sxs-lookup"><span data-stu-id="58196-101">virtual machine</span></span>

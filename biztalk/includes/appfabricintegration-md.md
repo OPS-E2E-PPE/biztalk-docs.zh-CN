@@ -1,1 +1,1 @@
-Microsoft Azure BizTalk 服务
+<span data-ttu-id="a61ec-101">Microsoft Azure BizTalk 服务</span><span class="sxs-lookup"><span data-stu-id="a61ec-101">Microsoft Azure BizTalk Services</span></span>
