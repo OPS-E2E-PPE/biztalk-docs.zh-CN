@@ -1,1 +1,1 @@
-SQL 适配器
+<span data-ttu-id="04618-101">SQL 适配器</span><span class="sxs-lookup"><span data-stu-id="04618-101">SQL adapter</span></span>

@@ -1,1 +1,1 @@
-“ 添加适配器元数据” 向导
+<span data-ttu-id="8f00e-101">“ 添加适配器元数据” 向导</span><span class="sxs-lookup"><span data-stu-id="8f00e-101">Add Adapter Metadata Wizard</span></span>

@@ -1,1 +1,1 @@
-添加适配器服务参考加载项
+<span data-ttu-id="23c22-101">添加适配器服务参考加载项</span><span class="sxs-lookup"><span data-stu-id="23c22-101">Add Adapter Service Reference Plug-in</span></span>

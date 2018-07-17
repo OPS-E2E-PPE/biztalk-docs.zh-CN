@@ -1,1 +1,1 @@
-添加适配器服务参考 Visual Studio 加载项
+<span data-ttu-id="6da6a-101">添加适配器服务参考 Visual Studio 加载项</span><span class="sxs-lookup"><span data-stu-id="6da6a-101">Add Adapter Service Reference Visual Studio Plug-in</span></span>

@@ -1,1 +1,1 @@
-用于 Siebel 的数据提供程序
+<span data-ttu-id="e8484-101">用于 Siebel 的数据提供程序</span><span class="sxs-lookup"><span data-stu-id="e8484-101">Data Provider for Siebel</span></span>

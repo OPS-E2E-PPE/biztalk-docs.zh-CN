@@ -1,1 +1,1 @@
-用于 Siebel eBusiness 应用程序的 .NET Framework 数据提供程序
+<span data-ttu-id="979b8-101">用于 Siebel eBusiness 应用程序的 .NET Framework 数据提供程序</span><span class="sxs-lookup"><span data-stu-id="979b8-101">.NET Framework Data Provider for Siebel eBusiness Applications</span></span>

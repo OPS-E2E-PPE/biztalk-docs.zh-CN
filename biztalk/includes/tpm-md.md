@@ -1,1 +1,1 @@
-贸易合作伙伴管理
+<span data-ttu-id="653a9-101">贸易合作伙伴管理</span><span class="sxs-lookup"><span data-stu-id="653a9-101">Trading Partner Management</span></span>

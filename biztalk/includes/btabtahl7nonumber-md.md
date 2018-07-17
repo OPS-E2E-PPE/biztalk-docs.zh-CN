@@ -1,1 +1,1 @@
-BizTalk Accelerator for HL7
+<span data-ttu-id="7edf6-101">BizTalk Accelerator for HL7</span><span class="sxs-lookup"><span data-stu-id="7edf6-101">BizTalk Accelerator for HL7</span></span>

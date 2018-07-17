@@ -1,1 +1,1 @@
-SQL Server 2014
+<span data-ttu-id="77a7b-101">SQL Server 2014</span><span class="sxs-lookup"><span data-stu-id="77a7b-101">SQL Server 2014</span></span>

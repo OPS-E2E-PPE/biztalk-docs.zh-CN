@@ -1,1 +1,1 @@
-Siebel 适配器
+<span data-ttu-id="a0e71-101">Siebel 适配器</span><span class="sxs-lookup"><span data-stu-id="a0e71-101">Siebel adapter</span></span>

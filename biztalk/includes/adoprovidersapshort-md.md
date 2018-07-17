@@ -1,1 +1,1 @@
-用于 SAP 的数据提供程序
+<span data-ttu-id="e698c-101">用于 SAP 的数据提供程序</span><span class="sxs-lookup"><span data-stu-id="e698c-101">Data Provider for SAP</span></span>

@@ -1,1 +1,1 @@
-贸易合作伙伴管理 (TPM)
+<span data-ttu-id="036b5-101">贸易合作伙伴管理 (TPM)</span><span class="sxs-lookup"><span data-stu-id="036b5-101">Trading Partner Management (TPM)</span></span>

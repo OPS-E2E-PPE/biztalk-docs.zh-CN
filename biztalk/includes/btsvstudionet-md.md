@@ -1,1 +1,1 @@
-Visual Studio .NET
+<span data-ttu-id="4cda5-101">Visual Studio .NET</span><span class="sxs-lookup"><span data-stu-id="4cda5-101">Visual Studio .NET</span></span>

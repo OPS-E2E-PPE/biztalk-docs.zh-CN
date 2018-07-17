@@ -1,1 +1,1 @@
-使用适配器服务加载项
+<span data-ttu-id="f5725-101">使用适配器服务加载项</span><span class="sxs-lookup"><span data-stu-id="f5725-101">Consume Adapter Service Add-in</span></span>

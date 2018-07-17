@@ -1,1 +1,1 @@
-BizTalk FileAct 和交互适配器
+<span data-ttu-id="e04ff-101">BizTalk FileAct 和 InterAct 适配器</span><span class="sxs-lookup"><span data-stu-id="e04ff-101">BizTalk FileAct and InterAct Adapters</span></span>

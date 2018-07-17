@@ -1,1 +1,1 @@
-适配器服务开发向导
+<span data-ttu-id="bcd70-101">适配器服务开发向导</span><span class="sxs-lookup"><span data-stu-id="bcd70-101">Adapter Service Development Wizard</span></span>

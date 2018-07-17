@@ -1,1 +1,1 @@
-BizTalk 设置仪表板
+<span data-ttu-id="22ea2-101">BizTalk 设置仪表板</span><span class="sxs-lookup"><span data-stu-id="22ea2-101">BizTalk Settings Dashboard</span></span>
