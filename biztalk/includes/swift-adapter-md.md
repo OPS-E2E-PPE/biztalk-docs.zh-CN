@@ -1,1 +1,1 @@
-BizTalk FileAct 和交互适配器
+BizTalk FileAct 和 InterAct 适配器

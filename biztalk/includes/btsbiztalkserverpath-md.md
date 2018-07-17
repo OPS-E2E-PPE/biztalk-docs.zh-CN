@@ -1,1 +1,1 @@
-Files\microsoft BizTalk Server
+\Program Files\Microsoft BizTalk Server
