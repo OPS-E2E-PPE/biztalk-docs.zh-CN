@@ -77,7 +77,7 @@ ms.locfileid: "29710980"
     |Phone|Phone|  
     |总计|PoTotal|  
   
-11. 单击文件夹图标带有箭头 (![使用文件夹和向上按钮 &#45; 箭头](../core/media/abccd08b-2b01-49c6-80ed-a032bbbd10d4.gif "abccd08b-2b01-49c6-80ed-a032bbbd10d4")) 以显示业务流程。  
+11. 单击文件夹图标带有箭头 (![使用文件夹和向上按钮 & #45; 箭头](../core/media/abccd08b-2b01-49c6-80ed-a032bbbd10d4.gif "abccd08b-2b01-49c6-80ed-a032bbbd10d4")) 以显示业务流程。  
   
 12. 拖动 **Receive_1** 到右窗格中的形状 **Received** 的左窗格中。  
   
