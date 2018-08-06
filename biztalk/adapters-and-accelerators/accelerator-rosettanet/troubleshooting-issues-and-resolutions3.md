@@ -300,7 +300,7 @@ ms.locfileid: "36985094"
     ```  
   
 > [!NOTE]
->  如果你尝试访问http://localhost或http://localhost/BtarnApp/RnifSend.aspx再次执行上述步骤后，你将收到 HTTP 400 消息返回来自 Internet 资源管理器，这意味着 IIS 现在运行正常。  
+>  如果你尝试访问 http://localhost 或 http://localhost/BtarnApp/RnifSend.aspx 再次执行上述步骤后，你将收到 HTTP 400 消息返回来自 Internet 资源管理器，这意味着 IIS 现在运行正常。  
   
 ## <a name="the-hubscenario-sample-will-not-be-installed-correctly-if-the-assembly-key-files-are-not-entered-for-the-projects"></a>如果没有为项目输入程序集密钥文件，则 HubScenario 示例将无法正确安装  
   

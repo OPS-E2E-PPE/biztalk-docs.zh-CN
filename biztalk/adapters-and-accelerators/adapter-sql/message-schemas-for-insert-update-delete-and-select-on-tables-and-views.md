@@ -36,7 +36,7 @@ ms.locfileid: "25967211"
 |删除|`<Delete xmlns="[VERSION]/TableOp/[SCHEMA]/[TABLE_NAME]">   <Rows>     <[TABLE_NAME]>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </[TABLE_NAME]>   </Rows> </Delete>`|--|`DELETE FROM [TABLE_NAME] WHERE [FIELD1_NAME] = value1, [FIELD2_NAME] = value2, …;`|  
 |删除响应|`<DeleteResponse xmlns="[VERSION]/TableOp/[SCHEMA]/[TABLE_NAME]">   <DeleteResult>[rows deleted]</DeleteResult> </DeleteResponse>`|删除的行数返回在**DeleteResult**元素。|--|  
   
- [VERSION] = 消息版本字符串;例如，http://schemas.microsoft.com/Sql/2008/05。  
+ [VERSION] = 消息版本字符串;例如 http://schemas.microsoft.com/Sql/2008/05 。  
   
  [架构] = SQL Server 集合项目;例如，dbo。  
   
