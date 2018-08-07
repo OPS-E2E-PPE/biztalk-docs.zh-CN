@@ -141,7 +141,7 @@ ms.locfileid: "36976134"
 
     1.  启动 IIS 管理控制台。  单击**启动**，依次指向**管理工具**，然后单击**Internet Information Services**。  
 
-    2.  导航到发布服务的节点。  如果该服务已作为http://localhost/myservice，导航到**Internet Information Services**> **计算机名称**> **网站**>  **Default Web Site**> **myservice**。  
+    2.  导航到发布服务的节点。  如果该服务已作为 http://localhost/myservice ，导航到**Internet Information Services**> **计算机名称**> **网站**>  **Default Web Site**> **myservice**。  
 
     3.  在右窗格中，右键单击的.svc 文件，并单击**浏览**。 Web 页会显示有关该服务的信息。 你现在可以通过使用 WCF 或 Web 服务调用客户端应用程序使用此服务。 
 

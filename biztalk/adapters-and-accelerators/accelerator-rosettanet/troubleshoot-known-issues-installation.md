@@ -103,7 +103,7 @@ BindingException: Could not validate TransportTypeData or Address properties for
 
 3.  重新启动 IIS。  
 
-4.  在重新启动 IIS 后，请尝试访问http://localhost。 你会收到从 Internet 浏览器返回的 400 消息。  
+4.  在重新启动 IIS 后，请尝试访问 http://localhost 。 你会收到从 Internet 浏览器返回的 400 消息。  
 
 ### <a name="sql-server-mixed-mode-not-supported"></a>不支持 SQL Server 混合模式  
 在混合模式下，BTARN 不支持 SQL Server。  

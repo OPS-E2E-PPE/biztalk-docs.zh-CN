@@ -84,7 +84,7 @@ ms.locfileid: "37002102"
   
 1.  单击**启动**，依次指向**所有程序**，然后单击**Internet Explorer**。  
   
-2.  在 Internet Explorer 中，在**地址**框中，键入http://localhost/LOBWebApplication，然后单击**转**。  
+2.  在 Internet Explorer 中，在**地址**框中，键入 http://localhost/LOBWebApplication ，然后单击**转**。  
   
 3.  在中**提交消息**对话框框中，键入本组织、 合作伙伴组织、 PIP 代码、 PIP 版本、 PIP 实例 ID 和消息类别。  
   

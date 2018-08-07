@@ -228,8 +228,8 @@ return responseMsg;
 
 | 适配器别名 | 适配器 |   OutboundTransportLocation 示例    |
 |---------------|---------|----------------------------------------|
-|    HTTP://    |  HTTP   |     http://www的用户。 MyCompany.com/bar      |
-|   HTTPS://    |  HTTP   |     https://www的用户。 MyCompany.com/bar     |
+|    HTTP://    |  HTTP   |     http://www 的用户。 MyCompany.com/bar      |
+|   HTTPS://    |  HTTP   |     https://www 的用户。 MyCompany.com/bar     |
 |    mailto:    |  SMTP   |      mailto:A.User@MyCompany.com       |
 |    FILE://    |  FILE   | FILE://C:\MyCompany \\%MessageID%.xml |
 
