@@ -30,7 +30,7 @@ ms.locfileid: "36999830"
   
 ### <a name="to-save-a-modified-existing-template-as-a-new-template"></a>若要将已修改的现有模板另存为新的模板  
   
-1. 在 Internet Explorer 中，打开你的 MRSR 站点置于http://localhost/sites/bassite。  
+1. 在 Internet Explorer 中，打开你的 MRSR 站点置于 http://localhost/sites/bassite 。  
   
 2. 单击 **“文档”**。  
   

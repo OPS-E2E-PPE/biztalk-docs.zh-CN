@@ -35,7 +35,7 @@ ms.locfileid: "36970094"
 
 ### <a name="to-create-and-submit-a-new-message"></a>若要创建和提交新消息  
 
-1. 在 Internet Explorer 中，打开你的 MRSR 站点置于http://localhost/sites/bassite。  
+1. 在 Internet Explorer 中，打开你的 MRSR 站点置于 http://localhost/sites/bassite 。  
 
 2. 单击**文档**，然后单击**新 SWIFT 消息**。  
 

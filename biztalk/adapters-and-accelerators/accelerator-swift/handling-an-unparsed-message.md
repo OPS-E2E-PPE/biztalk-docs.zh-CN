@@ -27,7 +27,7 @@ ms.locfileid: "36998662"
 
 ### <a name="to-handle-an-unparsed-message"></a>若要处理未分析的消息  
 
-1. 在 Internet Explorer 中，打开你的 MRSR 站点置于http://localhost/sites/bassite。  
+1. 在 Internet Explorer 中，打开你的 MRSR 站点置于 http://localhost/sites/bassite 。  
 
 2. 在主页窗口中，单击**文档**。  
 
