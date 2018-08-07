@@ -27,7 +27,7 @@ ms.locfileid: "36967102"
 
 ### <a name="to-approve-a-message"></a>若要批准一条消息  
 
-1. 在 Internet Explorer 中，打开你的 MRSR 站点置于http://localhost/sites/bassite。  
+1. 在 Internet Explorer 中，打开你的 MRSR 站点置于 http://localhost/sites/bassite 。  
 
 2. 在主页窗口中，单击**文档**。  
 

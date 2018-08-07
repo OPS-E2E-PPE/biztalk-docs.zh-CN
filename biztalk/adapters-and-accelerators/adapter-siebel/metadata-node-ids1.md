@@ -42,7 +42,7 @@ ms.locfileid: "36991478"
 |            业务服务             | 类别  |              [VERSION] /BusinessServices/ [业务服务]               |             http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/ATP              |        返回指定的业务服务的所有业务方法。        |
 |         业务服务方法         | OPERATION | [VERSION] /BusinessServices/ [业务服务] / [业务服务方法]  |       http://Microsoft.LobServices.Siebel/2007/03/BusinessServices/ATP/ATPRunCheck        |                 返回指定的业务服务方法。                 |
 
- [VERSION] =; 在版本字符串例如http://Microsoft.LobServices.Siebel/2007/03。  
+ [VERSION] =; 在版本字符串例如 http://Microsoft.LobServices.Siebel/2007/03 。  
 
  [BO] = Siebel 业务对象;例如，帐户。  
 
@@ -64,7 +64,7 @@ ms.locfileid: "36991478"
 |业务服务|[VERSION] / BusinessServices|返回与搜索表达式匹配的业务服务。|  
 |业务服务方法|[VERSION] /BusinessServices/ [业务服务]|返回与搜索表达式匹配的业务服务方法。|  
 
- [VERSION] =; 在版本字符串例如http://Microsoft.LobServices.Siebel/2007/03。  
+ [VERSION] =; 在版本字符串例如 http://Microsoft.LobServices.Siebel/2007/03 。  
 
  [BO] = Siebel 业务对象;例如，帐户。  
 

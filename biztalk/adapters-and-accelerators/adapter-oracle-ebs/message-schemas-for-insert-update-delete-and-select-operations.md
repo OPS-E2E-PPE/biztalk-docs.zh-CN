@@ -41,7 +41,7 @@ ms.locfileid: "22218229"
   
  属性说明：  
   
- [VERSION] = 消息版本字符串;例如，http://schemas.microsoft.com/OracleEBS/2008/05。  
+ [VERSION] = 消息版本字符串;例如， http://schemas.microsoft.com/OracleEBS/2008/05 。  
   
  [架构] = Oracle 集合项目;例如，SCOTT。  
   
