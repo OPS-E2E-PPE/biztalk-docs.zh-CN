@@ -104,7 +104,7 @@ ms.locfileid: "36985094"
   
  -或-  
   
- 终止 id 的 BAM 消息活动时出错 *\<ID 号\>*。  
+ 终止 id 的 BAM 消息活动时出错* \<ID 号\>*。  
   
 ### <a name="possible-cause"></a>可能的原因  
  未安装业务活动监视 (BAM) 跟踪工具。  

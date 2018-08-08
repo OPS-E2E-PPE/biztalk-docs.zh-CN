@@ -38,7 +38,7 @@ ms.locfileid: "36971870"
   
 - 将整个交换转换为 XML，如果**入站批处理选项**属性设置为两种状态之一**保留交换**值。 此属性可以设置从**本地主机设置**页**交换设置**的双向协议选项卡的**协议属性**对话框。 接收管道将升级 ReuseEnvelope 属性以将交换标识为保留。  
   
-- 生成技术确认和/或功能确认（如果已配置）。 这包括对确认进行批处理（如果已配置）。 将升级 BTS 上下文的属性。MessageType，将其设置为控制架构中等于 http://schemas.microsoft.com/EDI/\<X12或 EDIFACT\> （的 x12_997_root 997 确认) 的命名空间。 同时，还将升级 EDI.DestinationPartyName 上下文属性，此属性可确保提取确认以便发送。 有关详细信息，请参阅[发送 EDI 确认](../core/sending-an-edi-acknowledgment.md)。  
+- 生成技术确认和/或功能确认（如果已配置）。 这包括对确认进行批处理（如果已配置）。 将升级 BTS 上下文的属性。MessageType，将其设置为控制架构中等于 http://schemas.microsoft.com/EDI/\<X12 或 EDIFACT\> （的 x12_997_root 997 确认) 的命名空间。 同时，还将升级 EDI.DestinationPartyName 上下文属性，此属性可确保提取确认以便发送。 有关详细信息，请参阅[发送 EDI 确认](../core/sending-an-edi-acknowledgment.md)。  
   
 - 执行 HIPAA 276/277（仅版本 5010 ）834、835（仅版本 4010）和 837 文档拆分（如果适用）。  
   
