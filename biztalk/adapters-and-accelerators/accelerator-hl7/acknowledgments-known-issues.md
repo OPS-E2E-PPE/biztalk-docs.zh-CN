@@ -47,7 +47,7 @@ ms.locfileid: "36966150"
  在响应的批处理消息中生成的确认消息，MSH10 字段 (消息控件 ID) 将是一个 GUID，而不是基于批处理消息中的 MSH10 字段的数据类型。  
   
 ## <a name="generated-acknowledgments-doc-type"></a>生成的确认文档类型  
- [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 生成使用文档类型的确认 http://Microsoft.com/HealthCare/HL7/2X#ACK_24_GLO_DEF 或http://Microsoft.com/HealthCare/HL7/2X#ACK_25_GLO_DEF 。 如果目标参与方使用不同的命名空间，则必须应用的正文映射中的发送端口;否则，可能会遇到序列化错误。  
+ [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 生成使用文档类型的确认 http://Microsoft.com/HealthCare/HL7/2X#ACK_24_GLO_DEF 或 http://Microsoft.com/HealthCare/HL7/2X#ACK_25_GLO_DEF 。 如果目标参与方使用不同的命名空间，则必须应用的正文映射中的发送端口;否则，可能会遇到序列化错误。  
   
 ## <a name="see-also"></a>请参阅  
  [已知问题](../../adapters-and-accelerators/accelerator-hl7/known-issues1.md)
