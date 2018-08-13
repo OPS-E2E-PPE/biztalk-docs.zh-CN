@@ -36,7 +36,7 @@ ms.locfileid: "37008014"
 
 #### <a name="to-create-the-newposervice-in-the-uddi-registry"></a>若要在 UDDI 注册表中创建 NewPOService  
 
-1.  在 Internet Explorer 中，浏览到 UDDI 服务站点 (默认情况下，此 URL 是http://localhost/uddi)。  
+1.  在 Internet Explorer 中，浏览到 UDDI 服务站点 (默认情况下，此 URL 是 http://localhost/uddi) 。  
 
 2.  上**uddi 服务**页上，单击**发布**。  
 
@@ -209,7 +209,7 @@ ms.locfileid: "37008014"
 
     3.  在中**冲突解决程序名字对象**下拉列表中，单击**UDDI3**。  
 
-    4.  单击**绑定键**属性，并键入**uddi:esb:newposervicebinding**。 若要查找的键的值，请单击http://localhost/ESB.CanadianServices/SubmitPOService.asmxUDDI，在服务，然后单击更多详细信息。  
+    4.  单击**绑定键**属性，并键入**uddi:esb:newposervicebinding**。 若要查找的键的值，请单击 http://localhost/ESB.CanadianServices/SubmitPOService.asmx UDDI，在服务，然后单击更多详细信息。  
 
 7.  右键单击**BindingKeySearch**冲突解决程序，并单击**测试解析程序配置**。  
 
