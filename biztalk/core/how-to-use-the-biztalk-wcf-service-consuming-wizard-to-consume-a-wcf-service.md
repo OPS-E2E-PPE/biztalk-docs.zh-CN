@@ -54,7 +54,7 @@ BizTalk 适配器框架提供了一条将适配器架构和 BizTalk 类型添加
     ![元数据终结点页面](../core/media/2b17f85a-64d0-4719-99c4-ce61c706f10c.gif "2b17f85a-64d0-4719-99c4-ce61c706f10c")  
   
    > [!NOTE]
-   >  若要下载通过 HTTP 或 HTTPS 发布的 WCF 服务的元数据，不能使用 MEX 终结点，例如http://localhost:8087/CalculatorService/mex有关**元数据地址**文本框。 对于 WCF 服务中，您必须使用 WSDL 元数据下载元数据，如下所示：http://localhost:8087/CalculatorService或 http://localhost:8087/CalculatorService?wsdl  
+   >  若要下载通过 HTTP 或 HTTPS 发布的 WCF 服务的元数据，不能使用 MEX 终结点，例如 http://localhost:8087/CalculatorService/mex 有关 **元数据地址** 文本框。 对于 WCF 服务中，您必须使用 WSDL 元数据下载元数据，如下所示： http://localhost:8087/CalculatorService 或 http://localhost:8087/CalculatorService?wsdl  
   
 6. 如果所选**元数据文件 （WSDL 和 XSD）** 选项卡上**元数据源**页上，**元数据终结点**页将出现。 上**元数据终结点**页上，指定要导入的元数据文件。 单击**外**以添加要导入到的元数据文件**元数据文件**视图。 这将打开**添加元数据文件**对话框可以在其中搜索元数据文件的磁盘位置。  
   

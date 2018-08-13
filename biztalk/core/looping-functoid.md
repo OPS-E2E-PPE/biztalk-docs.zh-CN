@@ -57,7 +57,7 @@ ms.locfileid: "22262837"
 </ns0:MasterAddresses>  
 ```  
   
- **FoodSurvey** 和 **FlowerSurvey** 现在合并的邮件地址。 合并的消息不指示每个地址的源。 如果你想要跟踪源，将添加 **源** 属性设为 **地址** 记录的 **MasterAddress** 架构和映射的常量值。 若要设置此值，连接 **FoodSurvey** 字段对新 **源** 字段。 在连接器一行中，修改 **链接属性** & #124; **编译器** & #124; **源链接** 属性设置为"副本名称"。 重复此流程的 **FlowerSurvey** 字段。 重新处理输入的消息从上面生成以下输出︰  
+ **FoodSurvey** 和 **FlowerSurvey** 现在合并的邮件地址。 合并的消息不指示每个地址的源。 如果你想要跟踪源，将添加 **源** 属性设为 **地址** 记录的 **MasterAddress** 架构和映射的常量值。 若要设置此值，连接 **FoodSurvey** 字段对新 **源** 字段。 在连接器一行中，修改 **链接属性** &#124; **编译器** &#124; **源链接** 属性设置为"副本名称"。 重复此流程的 **FlowerSurvey** 字段。 重新处理输入的消息从上面生成以下输出︰  
   
 ```  
 <ns0:MasterAddresses xmlns:ns0="http://LoopingFunctoid.MasterAddresses">  

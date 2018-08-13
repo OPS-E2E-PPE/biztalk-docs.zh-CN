@@ -31,7 +31,7 @@ ms.locfileid: "36997014"
 
 2. 如果尚未运行 GlobalBank.ESB 应用程序，使用 BizTalk 管理控制台来启动它。  
 
-3. 决定你想要执行的示例。 所有的双向消息传送方案使用 ESB。NorthAmericanServices Web 服务位于http://localhost/ESB.NorthAmericanServices/CustomerOrder.asmx将请求消息发布到 BizTalk，使用名为 DynamicResolutionReqResp_SOAP 的接收位置。 有 10 个双向消息传送示例，每个唯一绑定文件表示。 下表列出了这些示例中，使用其关联的绑定文件和说明。  
+3. 决定你想要执行的示例。 所有的双向消息传送方案使用 ESB。NorthAmericanServices Web 服务位于 http://localhost/ESB.NorthAmericanServices/CustomerOrder.asmx 将请求消息发布到 BizTalk，使用名为 DynamicResolutionReqResp_SOAP 的接收位置。 有 10 个双向消息传送示例，每个唯一绑定文件表示。 下表列出了这些示例中，使用其关联的绑定文件和说明。  
 
    |SOAP 到 SOAP 出站 (submitOrder 操作) 的入站使用 BRE 冲突解决程序|  
    |---------------------------------------------------------------------------------|  

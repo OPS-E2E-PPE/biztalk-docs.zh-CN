@@ -31,7 +31,7 @@ ms.locfileid: "36967726"
  所有单向消息传送方案 （只使用 XPATH 解析程序） 使用 \Source\Samples\DynamicResolution\Test\Data 文件夹中的文件 NAOrderDoc.xml，作为输入接收位置名为 DynamicResolution_FILE。 有七个单向消息传送示例中，所有由唯一绑定文件，您必须导入之前执行的每个示例。  
   
 ## <a name="two-way-messaging-scenarios"></a>双向消息传送方案  
- 所有的双向消息传送方案使用 ESB 的示例。NorthAmericanServices Web 服务位于http://localhost/ESB.NorthAmericanServices/CustomerOrder.asmx以将请求消息发布到 BizTalk。 您可以使用 Microsoft InfoPath 此 Web 服务或通过可从 Storm 之类的实用工具[CodePlex](http://go.microsoft.com/fwlink/?LinkID=187762&clcid=0x409)。  
+ 所有的双向消息传送方案使用 ESB 的示例。NorthAmericanServices Web 服务位于 http://localhost/ESB.NorthAmericanServices/CustomerOrder.asmx 以将请求消息发布到 BizTalk。 您可以使用 Microsoft InfoPath 此 Web 服务或通过可从 Storm 之类的实用工具[CodePlex](http://go.microsoft.com/fwlink/?LinkID=187762&clcid=0x409)。  
   
  每个示例动态解析终结点 URL，以便提交到 ESB 的示例消息。CanadianServices Web 服务位于http://localhost/ESB.CanadianServices/SubmitPOService.asmx。 该示例将执行**submitOrder**操作或**submitPurchase**操作，具体取决于解析过程的结果。 双向消息传送方案的接收位置是 DynamicResolutionReqResp_SOAP。 有 10 个双向消息传送示例中，所有由唯一绑定文件，您必须导入之前执行的每个示例。  
   

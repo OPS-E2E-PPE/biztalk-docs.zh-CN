@@ -33,7 +33,7 @@ ms.locfileid: "37023491"
 OutboundMessage(WCF.Action)="http://MyService/IMyContract/MyAction1";  
 ```  
   
- 如果采用操作映射格式设置此属性，传出的 SOAP 操作将由**BTS。操作**上下文属性。 例如，如果此属性设置为下面的 XML 格式，在 WCF 发送适配器传输属性对话框和**BTS。操作**属性设置为**Operation_1**业务流程中的发送端口，在 WCF 发送适配器将使用http://MyService/IMyContract/MyAction1为传出的 SOAP 操作。  
+ 如果采用操作映射格式设置此属性，传出的 SOAP 操作将由**BTS。操作**上下文属性。 例如，如果此属性设置为下面的 XML 格式，在 WCF 发送适配器传输属性对话框和**BTS。操作**属性设置为**Operation_1**业务流程中的发送端口，在 WCF 发送适配器将使用 http://MyService/IMyContract/MyAction1 为传出的 SOAP 操作。  
   
 ```  
 BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
