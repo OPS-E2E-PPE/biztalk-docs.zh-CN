@@ -26,7 +26,7 @@ ms.locfileid: "36976430"
 
  双向消息传送方案，该示例解析使用静态、 BRE、 UDDI 或 XPATH 冲突解决程序的终结点并中转站为 SOAP 或 WCF BasicHttp 的 SOAP 的协议。 此外，示例解析和执行使用 BRE 冲突解决程序，它使用消息上下文属性和消息正文中包含的事实数据确定解析结果的 Microsoft BizTalk 映射。  
 
- 解析过程的结果是双向的所有示例都提交到 ESB 其消息。CanadianServices Web 服务位于http://localhost/ESB.CanadianServices/SubmitPOService.asmx。 此外，具体取决于解析结果，该示例执行任一**submitOrder**或**submitPurchase**操作。 此外，ESB 调度程序反汇编程序管道组件可以动态执行 BizTalk 映射时，具体取决于指定或解析的操作。  
+ 解析过程的结果是双向的所有示例都提交到 ESB 其消息。CanadianServices Web 服务位于 http://localhost/ESB.CanadianServices/SubmitPOService.asmx 。 此外，具体取决于解析结果，该示例执行任一**submitOrder**或**submitPurchase**操作。 此外，ESB 调度程序反汇编程序管道组件可以动态执行 BizTalk 映射时，具体取决于指定或解析的操作。  
 
  图 1 显示了 DynamicResolutionReqResp_SOAP 配置的管道接收位置。  
 

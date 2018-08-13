@@ -117,7 +117,7 @@ HTTPRequestResponse 示例演示如何使用 Microsoft [!INCLUDE[btsBizTalkServe
 
 #### <a name="to-run-this-sample"></a>运行本示例的步骤  
 
-1.  在 Internet Explorer 中，导航到http://localhost/RequestResponse/。  
+1.  在 Internet Explorer 中，导航到 http://localhost/RequestResponse/ 。  
 
 2.  填写 Web 窗体中所需的字段，再单击**下订单**提交你的订单。  
 
