@@ -1,1 +1,1 @@
-<span data-ttu-id="d51fd-101">BizTalk Server 2006</span><span class="sxs-lookup"><span data-stu-id="d51fd-101">BizTalk Server 2006</span></span>
+<span data-ttu-id="2f7f1-101">BizTalk Server 2006</span><span class="sxs-lookup"><span data-stu-id="2f7f1-101">BizTalk Server 2006</span></span>
