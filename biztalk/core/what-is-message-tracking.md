@@ -1,5 +1,5 @@
 ---
-title: 什么是邮件跟踪？ | Microsoft Docs
+title: 什么是消息跟踪？ | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -23,14 +23,14 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d76a4bd4133906a7949fac9e63816168506f412
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 944261c6193020c158f707b7f8d39c55ce2d058f
+ms.sourcegitcommit: ed9590dbcd97c12a1fe5ce2cdf8d826492cccdff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25974635"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39640121"
 ---
-# <a name="what-is-message-tracking"></a>什么是邮件跟踪？
+# <a name="what-is-message-tracking"></a>什么是消息跟踪？
 消息是一种电子形式的数据实例，通常在两个运行的业务流程或应用程序之间进行交换。 消息实例由消息正文、消息属性和元数据构成。  
   
  可以使用 BizTalk Server 管理控制台来启用消息正文和消息属性的跟踪。 那里还可以查看跟踪的消息正文，包括架构信息、强名称以及所生成消息的全部升级属性。  
@@ -39,7 +39,7 @@ ms.locfileid: "25974635"
  跟踪消息正文可以对所发送和接收的消息进行记录。 必须打开消息正文跟踪功能，才能在服务实例处理完成后保存消息。 在设置跟踪选项后，可能需要几分钟才能查看消息。  
   
 > [!IMPORTANT]
->  所有 MessageBox 数据库中都必须运行 SQL Server 代理服务。 TrackedMessages_Copy_\<MessageBoxName\>作业使消息正文可用于跟踪查询和 WMI。 若要有效地复制消息正文，它们在 MessageBox 数据库中保留和 TrackedMessages_Copy_ 定期复制到 BizTalk 跟踪 (BizTalkDTADb) 数据库\<MessageBoxName\>作业。 运行 SQL Server 代理服务是存档和清除进程得以正常运转的前提条件。  
+>  所有 MessageBox 数据库中都必须运行 SQL Server 代理服务。 TrackedMessages_Copy_\<MessageBoxName\>作业，消息正文跟踪查询和 WMI 可。 若要有效地复制消息正文，它们在 MessageBox 数据库中保留和 TrackedMessages_Copy_ 通过定期复制到 BizTalk 跟踪 (BizTalkDTADb) 数据库\<MessageBoxName\>作业。 运行 SQL Server 代理服务是存档和清除进程得以正常运转的前提条件。  
   
  使用跟踪的消息可以提供回执确认、进行故障排除并对历史事务进行数据挖掘。 可以跟踪输入与输出端口、管道及业务流程中的消息正文。 使用 BizTalk Server 管理控制台、使用操作对象模型 (OM)（建议），或通过 Windows 管理规范 (WMI) 应用程序编程接口 (API)，可以恢复这些消息。  
   
@@ -68,7 +68,7 @@ ms.locfileid: "25974635"
 ## <a name="sensitive-data"></a>敏感数据  
  您可以保护以下数据，确保这些数据不会显示在相应的架构属性窗口中，从而避免对其进行跟踪。  
   
--   应用**isSensitive**属性到在属性架构中，任何敏感属性，以便不再跟踪的配置选择的消息属性中可见。  
+-   将应用**isSensitive**属性在属性架构中，任何敏感属性，这样就不再显示在消息属性跟踪的配置选择。  
   
 -   所有全新传输都包含标记为“敏感”的密码，因此不会跟踪此类传输。  
   
@@ -79,5 +79,5 @@ ms.locfileid: "25974635"
     > [!IMPORTANT]
     >  升级的属性可能会包含敏感数据。 如果“组中心”页中的跟踪查询跟踪包含敏感数据的属性，则有权运行跟踪查询的任何用户都可以查看此数据。  
   
-## <a name="see-also"></a>另请参阅  
- [配置使用 BizTalk Server 管理控制台的跟踪](http://msdn.microsoft.com/en-us/49b7f9d3-60b5-41bd-ba8b-029253926bef)
+## <a name="see-also"></a>请参阅  
+ [使用 BizTalk Server 管理控制台配置跟踪](http://msdn.microsoft.com/49b7f9d3-60b5-41bd-ba8b-029253926bef)

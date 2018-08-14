@@ -1,5 +1,6 @@
 ---
-title: 如何使用 BizTalk Web Services 发布向导将架构发布为 Web 服务 |Microsoft Docs
+title: 使用 Web Services 发布向导将架构发布为 Web 服务 |Microsoft Docs
+description: 如何使用 BizTalk Web Services 发布向导将架构发布为 Web 服务
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,19 +16,19 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d7a6f0ed34fe14db9e751d7f29efba443944932a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: de203b20c2b7c455c5c7479e77582561fb093933
+ms.sourcegitcommit: ed9590dbcd97c12a1fe5ce2cdf8d826492cccdff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975790"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39640129"
 ---
-# <a name="how-to-use-the-biztalk-web-services-publishing-wizard-to-publish-schemas-as-a-web-service"></a>如何使用 BizTalk Web Services 发布向导将架构发布为 Web 服务
+# <a name="publish-schemas-as-a-web-service-in-biztalk"></a>将架构发布为 BizTalk 中的 Web 服务
 使用 BizTalk Web Services 发布向导可将架构发布为 Web Services。  
   
-### <a name="to-publish-schemas-as-a-web-service"></a>将架构发布为 Web Services  
+## <a name="publish-schemas-as-a-web-service"></a>将架构发布为 web 服务  
   
-1. 单击**启动**，依次指向**所有程序**，指向[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Web Services 发布向导**。  
+1. 在中**程序**，选择**BizTalk Server**，然后选择**BizTalk Web Services 发布向导**。  
   
    > [!IMPORTANT]
    >  在运行 BizTalk Web Services 发布向导之前，必须生成 BizTalk 项目。  
@@ -63,7 +64,7 @@ ms.locfileid: "36975790"
    |SOAP 参数样式|，则“默认”|该选项指定在 SOAP 消息中如何设置参数格式。 有关详细信息，请参阅 SoapParameterStyle 枚举[ http://go.microsoft.com/fwlink/?LinkId=62259 ](http://go.microsoft.com/fwlink/?LinkId=62259)。|  
    |SOAP 参数样式|Bare|该选项指定在 SOAP 消息中如何设置参数格式。 有关详细信息，请参阅 SoapParameterStyle 枚举[ http://go.microsoft.com/fwlink/?LinkId=62259 ](http://go.microsoft.com/fwlink/?LinkId=62259)。|  
    |SOAP 参数样式|Wrapped|该选项指定在 SOAP 消息中如何设置参数格式。 有关详细信息，请参阅 SoapParameterStyle 枚举[ http://go.microsoft.com/fwlink/?LinkId=62259 ](http://go.microsoft.com/fwlink/?LinkId=62259)。|  
-   |一致性声明|InclusionThresholdSetting|该选项指定绑定声明所符合的 Web Services 互操作性 (WSI) 规范。 有关详细信息，请参阅在 WebServiceBindingAttribute.ConformsTo 属性[ http://go.microsoft.com/fwlink/?LinkId=193064 ](http://go.microsoft.com/fwlink/?LinkId=193064)。|  
+   |一致性声明|None|该选项指定绑定声明所符合的 Web Services 互操作性 (WSI) 规范。 有关详细信息，请参阅在 WebServiceBindingAttribute.ConformsTo 属性[ http://go.microsoft.com/fwlink/?LinkId=193064 ](http://go.microsoft.com/fwlink/?LinkId=193064)。|  
    |一致性声明|WS-I 基本配置文件 1.1|该选项指定绑定声明所符合的 Web Services 互操作性 (WSI) 规范。 有关详细信息，请参阅在 WebServiceBindingAttribute.ConformsTo 属性[ http://go.microsoft.com/fwlink/?LinkId=193064 ](http://go.microsoft.com/fwlink/?LinkId=193064)。|  
    |强制请求响应|[默认值]|该选项指定单向 BizTalk 操作是否应作为请求-响应 Web 方法公开。 默认值不强制单向标志。|  
   
@@ -89,7 +90,7 @@ ms.locfileid: "36975790"
    > [!NOTE]
    >  同一目标命名空间/根元素名称组合只能作为请求 SOAP 标头和响应 SOAP 标头各添加一次。  
   
-9. 上**Web 服务项目**页上，在**项目位置**文本中，键入项目位置。 您可以接受默认位置 (http://localhost/<*project_name*>) 中，键入项目的位置或单击**浏览**并选择 Web 目录。 选择以下任何选项：  
+9. 上**Web 服务项目**页上，在**项目位置**文本中，键入项目位置。 您可以接受默认位置 (`http://localhost/your_project_name`) 中，键入项目的位置或单击**浏览**并选择 Web 目录。 选择以下任何选项：  
   
     -   **覆盖现有项目。** 仅当项目位置已存在时，此选项才可用。 仅当选择了此选项时，你才能够发布到同一位置。 否则，必须输入不同的项目位置。  
   
@@ -98,10 +99,10 @@ ms.locfileid: "36975790"
     -   **创建 BizTalk 接收位置。** 此选项自动创建与每个生成的 .asmx 文件对应的 SOAP 适配器接收端口和位置。 如果已存在其他接收位置，则不会替换此接收位置。 使用格式解析 SOAP 适配器的接收位置"/\<*虚拟目录名称*\>/\<*业务流程 namespace_typename_portname* \>.asmx"。 选择此选项后，选择将在其中生成接收端口和位置的应用程序。  
   
         > [!NOTE]
-        >  项目位置可位于其他服务器上。 若要将 Web 服务发布到另一台服务器，键入项目名称设置为**http://&lt*servername*>/<*project_name*>**。  
+        >  项目位置可位于其他服务器上。 若要将 Web 服务发布到另一台服务器，键入项目名称设置为**`http://<servername>/<project_name>`**。  
   
         > [!NOTE]
-        >  项目位置可位于非默认网站上。 发布到非默认网站时，在 URL 中包括该网站的端口号： http://localhost:8080/< *project_name*>。  
+        >  项目位置可位于非默认网站上。 发布到非默认网站时，在 URL 中包括该网站的端口号： `http://localhost:8080/<project_name>`。  
   
         > [!NOTE]
         >  在使用向导创建接收位置时，向导会使用多个默认值创建接收位置。 接收和发送管道的默认值是**Microsoft.BizTalk.DefaultPipelines.PassThruReceive**并**Microsoft.BizTalk.DefaultPipelines.PassThruTransmit**。 如果通过已发布的 Web 服务接收的消息需要任何特殊的管道处理 （例如，验证、 相关的更多信息或入站/出站映射），则应设置发送和接收管道， **Microsoft.BizTalk.DefaultPipelines.XMLReceive**， **Microsoft.BizTalk.DefaultPipelines.XMLSend**，或自定义管道。  

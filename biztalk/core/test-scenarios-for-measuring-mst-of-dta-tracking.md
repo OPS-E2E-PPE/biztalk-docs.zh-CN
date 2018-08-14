@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3855dfe405e85e33e01642dd1ded5336c8efb892
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1386c7113c534c2491bed447fdcc0ba970881bac
+ms.sourcegitcommit: ed9590dbcd97c12a1fe5ce2cdf8d826492cccdff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994878"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39640145"
 ---
 # <a name="test-scenarios-for-measuring-mst-of-dta-tracking"></a>测量 DTA 跟踪的 MST 的测试方案
 为了说明实践中的工作方式以及介绍用于度量跟踪的最大可承受吞吐量 (MST) 的简单技术，我们现在将针对度量跟踪 MST 提供一个测试方案。 我们不仅将提供涉及的技术，而且您还可以将提供的数据用作起点，评估其他系统的跟踪性能。  
@@ -60,7 +60,7 @@ ms.locfileid: "36994878"
   
 - **消息属性**。 与入站管道中的拆装器 (DA) 组件相关联的跟踪点表示跟踪来自入站消息的 10 个属性。 有关如何升级跟踪属性的详细信息，请参阅[升级属性](../core/promoting-properties.md)。  
   
-- **消息正文**。 图中的两个消息正文 (MB) 点表示跟踪消息正文的点。 有关如何设置消息正文跟踪的详细信息，请参阅[配置使用 BizTalk Server 管理控制台跟踪](http://msdn.microsoft.com/en-us/49b7f9d3-60b5-41bd-ba8b-029253926bef)。  
+- **消息正文**。 图中的两个消息正文 (MB) 点表示跟踪消息正文的点。 有关如何设置消息正文跟踪的详细信息，请参阅[配置使用 BizTalk Server 管理控制台跟踪](http://msdn.microsoft.com/49b7f9d3-60b5-41bd-ba8b-029253926bef)。  
   
   **测试方案体系结构**  
   
