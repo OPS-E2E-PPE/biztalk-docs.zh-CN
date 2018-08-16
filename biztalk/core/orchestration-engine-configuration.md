@@ -229,7 +229,7 @@ A pattern assignment rule specifies a regular expression and an app domain name.
   
  BTSNTSvc.exe 配置文件包含若干个其他部分，.NET Framework 常规参考中记载了这些部分。 有关修改这些部分的详细信息请参阅**配置文件架构**的在.NET Framework 常规参考[http://go.microsoft.com/FWLink/?LinkID=52964](http://go.microsoft.com/FWLink/?LinkID=52964)。  
   
- 除了特定于 BizTalk 的配置信息，该 BTSNTSvc.exe.config 文件也是在业务流程、 适配器或管道的上下文中运行.NET 应用程序组件从何处获取它们在运行的时使用的配置信息标准.NET  **\<appSettings\>** 标记下**\<配置\>** 标记。 因为 BizTalk 已经提供了用于自定义适配器和管道组件来获取配置信息的机制 **\<appSettings\>**  BTSNTSvc.exe.config 文件中的标记通常将适用于从内部业务流程调用的自定义.NET 组件。 例如：  
+ 除了特定于 BizTalk 的配置信息，该 BTSNTSvc.exe.config 文件也是在业务流程、 适配器或管道的上下文中运行.NET 应用程序组件从何处获取它们在运行的时使用的配置信息标准.NET **\<appSettings\>** 标记下**\<配置\>** 标记。 因为 BizTalk 已经提供了用于自定义适配器和管道组件来获取配置信息的机制**\<appSettings\>** BTSNTSvc.exe.config 文件中的标记通常将适用于从内部业务流程调用的自定义.NET 组件。 例如：  
   
 ```  
 <appSettings>  

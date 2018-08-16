@@ -50,7 +50,7 @@ ms.locfileid: "36994590"
 |在 Aggregator 文件夹中：<br /><br /> Aggregate.odx|业务流程，该业务流程将相关的消息收集在一起，然后执行发送管道以将它们组装到单个交换中。|  
 |在 Aggregate 文件夹中：<br /><br /> SuspendMessage.odx|业务流程，用于挂起那些无法在聚合业务流程中进行处理的消息。|  
 |在 PipelinesAndSchemas 文件夹中：<br /><br /> FFReceivePipeline.btp|带有平面文件拆装器的接收管道。|  
-|在 PipelinesAndSchemas 文件夹中：<br /><br /> Instance1.txt、Instance2.txt、Instance3.txt、Instance4.txt|本示例的文档实例。 Instance1.txt 和 Instance2.txt 应添加到针对目标合作伙伴[ http://www.contoso.com ](http://www.contoso.com/)而 Instance3.txt 和 Instance4.txt 应添加到针对目标合作伙伴交换[ http://www.northwind.com](http://www.northwind.com/).|  
+|在 PipelinesAndSchemas 文件夹中：<br /><br /> Instance1.txt、Instance2.txt、Instance3.txt、Instance4.txt|本示例的文档实例。 Instance1.txt 和 Instance2.txt 应添加到针对目标合作伙伴 [ http://www.contoso.com ](http://www.contoso.com/) 而 Instance3.txt 和 Instance4.txt 应添加到针对目标合作伙伴交换 [http://www.northwind.com](http://www.northwind.com/) .|  
 |在 PipelinesAndSchemas 文件夹中：<br /><br /> Invoice.xsd、InvoiceEnvelope.xsd|用于输出交换的文档架构和信封架构。|  
 |在 PipelinesAndSchemas 文件夹中：<br /><br /> PipelinesAndSchemas.btproj|架构和管道的 BizTalk 项目。|  
 |在 PipelinesAndSchemas 文件夹中：<br /><br /> PropertySchema.xsd|本示例的属性架构。|  

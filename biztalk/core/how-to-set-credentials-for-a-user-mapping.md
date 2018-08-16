@@ -35,7 +35,7 @@ ms.locfileid: "25972139"
   
 2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是**\<驱动器\>**: \program Files\Enterprise 单一登录。  
   
-3.  类型**ssomanage-setcredentials\<域\>\\< 用户名\> \<applicationname\>**，其中 **\<域\>** 是用户帐户的 Windows 域**\<用户名\>** 是 Windows 用户名称，并 **\<applicationname\>** 是你想要设置的凭据的特定应用程序。  
+3.  类型**ssomanage-setcredentials\<域\>\\< 用户名\> \<applicationname\>**，其中 **\<域\>** 是用户帐户的 Windows 域**\<用户名\>** 是 Windows 用户名称，并**\<applicationname\>** 是你想要设置的凭据的特定应用程序。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

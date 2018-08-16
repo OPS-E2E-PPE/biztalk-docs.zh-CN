@@ -70,7 +70,7 @@ ms.locfileid: "36987518"
   
   你可将这些文件复制到任何位置；但是，必须指定 CLASSPATH 中的 JAR 文件位置。 CLASSPATH 必须包括文件的完整路径和 JAR 文件的名称（用分号隔开）。  
   
-  用于 JD Edwards OneWorld 的 BizTalk 适配器提供 JDEJAccess JAR 文件以用于 JD Edwards OneWorld。 默认情况下，JDEJAccess.jar 文件引用从*Program Files\Common Files\Microsoft BizTalk Adapters for Enterprise applications\j.d.。Edwards OneWorld(r)\classes\JDEJAccess.jar*. 
+  用于 JD Edwards OneWorld 的 BizTalk 适配器提供 JDEJAccess JAR 文件以用于 JD Edwards OneWorld。 默认情况下，JDEJAccess.jar 文件引用从*Program Files\Common Files\Microsoft BizTalk Adapters for Enterprise applications\j.d.Edwards OneWorld(r)\classes\JDEJAccess.jar*. 
   
 > [!NOTE]
 >  你必须在可以使用用于 JD Edwards OneWorld 的 BizTalk 适配器之前验证 jdeinterop.ini 文件的注册。 请确保您包括在此文件的路径**JDE 传输属性**页面时 BizTalk Server 中创建发送端口。 有关完整说明，请参阅"自定义 jdeinterop.ini 文件。"  

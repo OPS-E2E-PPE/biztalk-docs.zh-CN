@@ -48,7 +48,7 @@ ms.locfileid: "29710252"
   
 5.  在 **外接程序** 对话框中，选择 **业务活动监视** 复选框，并依次 **确定**。  
   
-     ![添加 &#45; 单元对话框中](../core/media/addins.gif "外接程序")  
+     ![添加 & #45; 单元对话框中](../core/media/addins.gif "外接程序")  
   
 ## <a name="errorobject-library-invalid-or-contains-references-to-object-definitions-that-could-not-be-found-with-bam-excel-add-in-in-office"></a>Office 中的 BAM Excel 加载项出现错误：“对象库无效或包含对无法找到的对象定义的引用”  
  在升级 Microsoft Excel 后尝试使用 BAM Excel 加载项时，可能会出现此错误。  

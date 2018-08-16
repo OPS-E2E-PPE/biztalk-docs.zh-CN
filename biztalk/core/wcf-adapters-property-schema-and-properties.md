@@ -148,7 +148,7 @@ ms.locfileid: "29139293"
 - WCF-NetMsmq 适配器
 
 #### <a name="endpointbehaviorconfiguration"></a>EndpointBehaviorConfiguration
-指定使用的 XML 字符串**\<行为\>** 元素 **\<endpointBehaviors\>** 元素来配置的行为设置WCF 终结点。 有关详细信息 **\<endpointBehaviors\>** 元素，请参阅另请参阅中的相应主题。
+指定使用的 XML 字符串**\<行为\>** 元素**\<endpointBehaviors\>** 元素来配置的行为设置WCF 终结点。 有关详细信息**\<endpointBehaviors\>** 元素，请参阅另请参阅中的相应主题。
 
 例如： 
 ```
@@ -504,7 +504,7 @@ WCF NetTcp 适配器利用 [NetTcpBinding](http://go.microsoft.com/fwlink/?LinkI
 适用于： 所有 WCF 适配器*除*的 WCF 自定义和 WCF CustomIsolated 适配器
 
 #### <a name="servicebehaviorconfiguration"></a>ServiceBehaviorConfiguration
-指定使用的 XML 字符串**\<行为\>** 元素 **\<serviceBehaviors\>** 元素来配置 WCF 行为设置服务。 有关详细信息 **\<serviceBehaviors\>** 元素，请参阅另请参阅中的相应主题。
+指定使用的 XML 字符串**\<行为\>** 元素**\<serviceBehaviors\>** 元素来配置 WCF 行为设置服务。 有关详细信息**\<serviceBehaviors\>** 元素，请参阅另请参阅中的相应主题。
 
 例如：
 
