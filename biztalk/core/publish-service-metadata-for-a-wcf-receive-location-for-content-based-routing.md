@@ -91,7 +91,7 @@ ms.locfileid: "37017081"
      >  项目位置可位于其他服务器上。 若要将 WCF 服务发布到另一台服务器，键入项目名称作为 http://<*servername*>/<*WCF 服务位置*>。  
 
      > [!NOTE]
-     >  项目位置可位于非默认网站上。 发布到非默认网站时，请在该 URL 中包括网站的端口号。 例如， http://&lt*servername*>: 8080 / <*WCF 服务位置*>。  
+     >  项目位置可位于非默认网站上。 发布到非默认网站时，请在该 URL 中包括网站的端口号。 例如， http://<*servername*>: 8080 / <*WCF 服务位置*>。  
 
      > [!NOTE]
      >  向导在 Web 应用程序的 \App_Data\Temp 文件夹中创建的 BindingInfo.xml 文件使用管道的默认值。 接收管道的默认值是**Microsoft.BizTalk.DefaultPipelines.XMLReceive**管道和默认值为发送管道**Microsoft.BizTalk.DefaultPipelines.PassThruTransmit**管道。  
