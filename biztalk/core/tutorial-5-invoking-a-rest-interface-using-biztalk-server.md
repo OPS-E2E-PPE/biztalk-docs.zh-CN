@@ -23,8 +23,7 @@ ms.locfileid: "36967566"
 本部分提供了有关如何使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 调用 REST 终结点的分步概览。 在本教程中，你将调用 [!INCLUDE[winazure](../includes/winazure-md.md)] 市场中的 REST 终结点，该终结点将返回美国航空公司航班的延误情况。 本教程使用的新**Wcf-webhttp**适配器中引入[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]来调用 REST 终结点。  
   
 ##  <a name="BKMK_Scenario"></a> 本教程中使用的方案  
- 
-  [!INCLUDE[winazure](../includes/winazure-md.md)] 市场提供了以下 REST 资源 URL 来检索美国航空公司航班的延误情况：  
+ [!INCLUDE[winazure](../includes/winazure-md.md)] 市场提供了以下 REST 资源 URL 来检索美国航空公司航班的延误情况：  
   
 ```  
 https://api.datamarket.azure.com/oakleaf/US_Air_Carrier_Flight_Delays_Incr/On_Time_Performance  
