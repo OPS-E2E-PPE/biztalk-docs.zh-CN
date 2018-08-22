@@ -57,7 +57,7 @@ ms.locfileid: "36984662"
 
 9. 时的值**PollWhileDataFound**设置为"True。  
 
-   ![轮询方案&#40;PollWhileDataFound&#61;False&#41;](../../adapters-and-accelerators/adapter-oracle-ebs/media/e5f00f4c-cc76-4e8b-9991-b4471f9d4865.gif "e5f00f4c-cc76-4e8b-9991-b4471f9d4865") ![轮询方案&#40;PollWhileDataFound &#61; True&#41; ] (../../adapters-and-accelerators/adapter-oracle-ebs/media/ebecf64c-a770-4525-9c75-62fdb71e1fb1.gif "ebecf64c-a770-4525-9c75-62fdb71e1fb1")  
+   ![轮询方案&#40;PollWhileDataFound&#61;False&#41;](../../adapters-and-accelerators/adapter-oracle-ebs/media/e5f00f4c-cc76-4e8b-9991-b4471f9d4865.gif "e5f00f4c-cc76-4e8b-9991-b4471f9d4865") ![轮询方案&#40;PollWhileDataFound &#61; True&#41; ](../../adapters-and-accelerators/adapter-oracle-ebs/media/ebecf64c-a770-4525-9c75-62fdb71e1fb1.gif "ebecf64c-a770-4525-9c75-62fdb71e1fb1")  
 
 ## <a name="differences-between-polling-and-notification"></a>轮询和通知之间的差异  
  尽管轮询和通知这两个入站操作，并在 Oracle 数据库中的数据更改通知适配器客户端下, 表列出了两者之间的一些差异。 以下差异将帮助你决定具体取决于您的要求操作：  

@@ -32,4 +32,4 @@ ms.locfileid: "25968939"
   
  **用户执行任何操作**  
   
- 选择指示**索引**functoid，单击省略号 (**...**) 与关联的按钮**输入参数**属性在 Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口中，然后在**配置\<Functoid\>Functoid**对话框中，删除多余的索引通过选择并单击输入参数![ ] (../core/media/bts-tls-paramdelete.gif "bts_tls_paramdelete")为每个按钮。
+ 选择指示**索引**functoid，单击省略号 (**...**) 与关联的按钮**输入参数**属性在 Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口中，然后在**配置\<Functoid\>Functoid**对话框中，删除多余的索引通过选择并单击输入参数![](../core/media/bts-tls-paramdelete.gif "bts_tls_paramdelete")为每个按钮。

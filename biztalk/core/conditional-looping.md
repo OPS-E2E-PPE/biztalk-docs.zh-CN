@@ -27,7 +27,7 @@ ms.locfileid: "22231973"
 您可以添加到条件**循环**通过链接的输出的 functoid**循环**functoid 和**逻辑**functoid 到相同的目标记录。 目标记录只有在符合逻辑条件时才会创建。  
   
 ## <a name="conditional-looping-map"></a>条件循环映射  
- ![映射来说明条件循环 functoid。] (../core/media/loopingconditionalfunctoid.gif "loopingconditionalfunctoid")  
+ ![映射来说明条件循环 functoid。](../core/media/loopingconditionalfunctoid.gif "loopingconditionalfunctoid")  
   
  在前面的图中，第一个**相等**functoid 比较**名称**字段**FoodSurvey**到"Wendy Wheeler"。 第二个**相等**functoid 比较**名称**字段**FlowerSurvey**到"李伟"。 因此，地图创建目标**地址**仅为两个名称的记录。 使用中的示例数据**循环**functoid 的示例中，输出实例消息将出现，如下所示。  
   

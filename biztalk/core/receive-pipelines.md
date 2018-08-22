@@ -30,7 +30,7 @@ ms.locfileid: "22268861"
 # <a name="receive-pipelines"></a>接收管道
 下图显示消息处理工作流，其中突出显示了接收管道：  
   
- ![消息处理工作流的图示。] (../core/media/ebiz-dev-busprcsb.gif "ebiz_dev_busprcsb")  
+ ![消息处理工作流的图示。](../core/media/ebiz-dev-busprcsb.gif "ebiz_dev_busprcsb")  
 消息处理工作流示意图  
   
  接收适配器收到消息后，接收管道将对该消息进行处理。 接收管道将获取初始消息，执行一些转换，并将原始数据拆为零条、一条或多条消息。 然后，BizTalk Server 即可对各条消息进行处理。  

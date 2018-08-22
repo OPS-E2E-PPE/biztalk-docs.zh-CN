@@ -30,7 +30,7 @@ ms.locfileid: "22262149"
   
  通过将源架构的循环记录中的字段链接到目标架构的循环记录中的字段，可以在映射中配置循环路径。 下图显示的是仅将食品调查记录复制到主地址列表的映射。  
   
- ![映射用法循环路径。] (../core/media/correct-loop-path-map.gif "correct_loop_path_map")  
+ ![映射用法循环路径。](../core/media/correct-loop-path-map.gif "correct_loop_path_map")  
 循环路径映射  
   
 ## <a name="multiple-loop-paths"></a>多个循环路径  
@@ -41,7 +41,7 @@ ms.locfileid: "22262149"
   
  此映射将不会产生预期的结果。 当映射器在编译过程中遇到多个循环路径时，它将生成一条警告，并默认选择第一个循环路径。 若要将两个不同地址组合到单个主地址列表中，使用**循环**functoid 以下地图中所示。  
   
- ![映射的循环 functoid 用法。] (../core/media/loopingfunctoid.gif "loopingfunctoid")  
+ ![映射的循环 functoid 用法。](../core/media/loopingfunctoid.gif "loopingfunctoid")  
 “循环”Functoid 映射（正确）  
   
  **循环**functoid 应使用而不是在以下情况中的多个循环路径：  

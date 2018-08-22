@@ -29,7 +29,7 @@ ms.locfileid: "22289941"
   
  下图显示了业务规则编辑器。 在“策略浏览器”窗口中，可以创建包含一个或多个规则的策略。 在“事实浏览器”窗口中，可以浏览事实（XML、数据库和 .NET），并将事实拖动到“条件编辑器”窗口或“操作编辑器”窗口。 在“条件编辑器”窗口中，可以指定规则的条件。 在“操作编辑器”窗口中，可以指定条件评估为 true 时执行的操作。  
   
- ![业务规则 composer 区域的屏幕截图。] (../core/media/bcd-ebiz-composerfulls.gif "bcd_ebiz_composerfulls")  
+ ![业务规则 composer 区域的屏幕截图。](../core/media/bcd-ebiz-composerfulls.gif "bcd_ebiz_composerfulls")  
 业务规则编辑器  
   
 > [!NOTE]

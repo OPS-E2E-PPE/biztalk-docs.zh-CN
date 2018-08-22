@@ -56,8 +56,8 @@ ms.locfileid: "22269917"
   
  **调用的业务流程 （主）**  
   
- ![调用 orchestration &#40; main &#41;] (../core/media/bts-trans-orch-fig9.gif "BTS_Trans_Orch_Fig9")  
+ ![调用 orchestration & #40; main & #41;](../core/media/bts-trans-orch-fig9.gif "BTS_Trans_Orch_Fig9")  
   
  **调用的业务流程 （补偿）**  
   
- ![调用 orchestration &#40; 补偿 &#41;] (../core/media/bts-trans-orch-fig10.gif "BTS_Trans_Orch_Fig10")
+ ![调用 orchestration & #40; 补偿 & #41;](../core/media/bts-trans-orch-fig10.gif "BTS_Trans_Orch_Fig10")

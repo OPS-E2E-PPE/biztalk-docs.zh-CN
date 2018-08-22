@@ -30,5 +30,5 @@ ms.locfileid: "37011670"
   
 3. 在中**架构文件**对话框中，选择 XSD 文件，然后单击**打开**。  
   
-   ![事实浏览器对话框的屏幕截图。] (../core/media/ebiz-bre-factsexplorer-xml.gif "ebiz_bre_factsexplorer_xml")  
+   ![事实浏览器对话框的屏幕截图。](../core/media/ebiz-bre-factsexplorer-xml.gif "ebiz_bre_factsexplorer_xml")  
    浏览 XML 架构

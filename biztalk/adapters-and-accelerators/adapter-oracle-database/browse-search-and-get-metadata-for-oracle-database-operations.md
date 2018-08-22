@@ -231,7 +231,7 @@ ms.locfileid: "37005350"
   
     下图显示[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]与 SCOTT 的 Insert 和 Update 操作。选择 EMP 表。  
   
-    ![选择的 Select 和 Update 操作。] (../../adapters-and-accelerators/adapter-oracle-database/media/4c41ac7b-784a-494c-ac82-c007e22a4fdf.gif "4c41ac7b-784a-494c-ac82-c007e22a4fdf")  
+    ![选择的 Select 和 Update 操作。](../../adapters-and-accelerators/adapter-oracle-database/media/4c41ac7b-784a-494c-ac82-c007e22a4fdf.gif "4c41ac7b-784a-494c-ac82-c007e22a4fdf")  
   
    > [!IMPORTANT]
    >  具体取决于出站操作 （或类别），您选择，超过一个 WCF 客户端类可能会生成。 有关更多详细信息，请参阅[生成 WCF 客户端或 WCF 服务协定用于 Oracle 数据库解决方案项目](../../adapters-and-accelerators/adapter-oracle-database/create-a-wcf-client-or-wcf-service-contract-for-oracle-db-solution-artifacts.md)。  

@@ -53,7 +53,7 @@ ms.locfileid: "22287869"
   
  下图显示的地图，执行此转换。  
   
- ![映射源记录使用 functoid。] (../core/media/valuemappingflattenfunctoid.gif "valuemappingflattenfunctoid")  
+ ![映射源记录使用 functoid。](../core/media/valuemappingflattenfunctoid.gif "valuemappingflattenfunctoid")  
 “值映射(平展)”Functoid 映射  
   
  **值映射 （平展）** functoid 返回其第二个参数的值，如果其第一个参数为 true。 此映射中第一个**相等**functoid 测试以查看是否**名称**属性等于"材料"。 如果该属性值等于"材料"**相等**functoid 返回**True**。 反过来，这会导致**值映射 （平展）** functoid 将的值分配**值**到输出的消息中的字段属性。  

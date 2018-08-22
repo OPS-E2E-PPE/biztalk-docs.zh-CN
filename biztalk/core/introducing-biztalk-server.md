@@ -62,7 +62,7 @@ BizTalk Server 还使用了其他 Microsoft 技术的最新版本。 它基于.N
   
  下图显示了对 EAI 问题应用核心 BizTalk Server 引擎的一个简单示例。 在此方案中，库存应用程序（假设其在 IBM 大型机上运行）注意到某项的库存不足，因此发出订购更多该项的请求。 此请求将发送到某个 BizTalk Server 业务流程（步骤 1），该业务流程随后向此组织的 ERP 应用程序发出请求，以请求采购订单（步骤 2）。 该 ERP 应用程序（假设其在 Unix 系统上运行）将发送回所请求的采购订单（步骤 3），然后 BizTalk Server 业务流程将通知实现应用程序（假设其使用 .NET Framewor 基于 Windows 构建）应订购该项（步骤 4）。  
   
- ![在 BizTalk 引擎中实现的 EAI。] (../core/media/7d8558da-03cf-494b-8334-efe0ea15a6a7.gif "7d8558da-03cf-494b-8334-efe0ea15a6a7")  
+ ![在 BizTalk 引擎中实现的 EAI。](../core/media/7d8558da-03cf-494b-8334-efe0ea15a6a7.gif "7d8558da-03cf-494b-8334-efe0ea15a6a7")  
   
  在此示例中，每个应用程序均使用不同的协议进行通信。 因此，BizTalk Server 引擎的消息传送组件必须能够使用各应用程序固有的通信方式与其进行通信。 此外，请注意，没有任何单个应用程序会知道整个业务流程。 BizTalk Server 业务流程实现了协调所有涉及的软件所需的智能。  
   

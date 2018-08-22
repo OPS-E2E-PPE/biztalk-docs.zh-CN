@@ -29,7 +29,7 @@ ms.locfileid: "22270173"
 # <a name="send-pipelines"></a>发送管道
 下图显示消息处理工作流，其中突出显示了发送管道：  
   
- ![消息的处理的工作流的图示。] (../core/media/ebiz-dev-busprcsadptc.gif "ebiz_dev_busprcsadptc")  
+ ![消息的处理的工作流的图示。](../core/media/ebiz-dev-busprcsadptc.gif "ebiz_dev_busprcsadptc")  
 消息处理工作流示意图  
   
  发送管道负责在将文档发送到最终目标之前对其进行处理。 发送管道获取一条消息，并生成一条要发送的消息。  

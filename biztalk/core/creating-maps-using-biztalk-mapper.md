@@ -30,7 +30,7 @@ ms.locfileid: "22238333"
 # <a name="creating-maps-using-biztalk-mapper"></a>使用 BizTalk 映射器创建映射
 BizTalk 映射程序是一个工具，在 Microsoft 内运行[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]环境。 BizTalk 映射程序可用来创建和编辑映射，用于将转换或转换 xml 消息。 下图建议，并还可以用于处理在接收端口收到的消息和然后转换通过发送的消息将发送端口业务流程，用于映射。  
   
- ![使用映射业务处理关系图。] (../core/media/ebiz-dev-busprcsg.gif "ebiz_dev_busprcsg")  
+ ![使用映射业务处理关系图。](../core/media/ebiz-dev-busprcsg.gif "ebiz_dev_busprcsg")  
 业务处理中的映射  
   
  使用映射可以翻译和转换消息。 翻译是将消息从一种格式转换为另一种格式的过程，例如，将平面文件转换为 XML 文件。 转换是从一个消息中获取信息并将获取的信息插入另一个消息的过程。 例如，您可以从采购订单中获取发运地址和帐单邮寄地址，再将这些地址插入发票文档。  

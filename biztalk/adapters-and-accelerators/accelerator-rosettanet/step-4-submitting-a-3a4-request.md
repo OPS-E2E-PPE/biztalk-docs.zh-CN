@@ -24,7 +24,7 @@ ms.locfileid: "25965571"
 # <a name="step-4-submitting-a-3a4-request"></a>步骤 4： 提交 3A4 请求
 在此步骤中，你将使用“3A4 - 请求采购订单”的合作伙伴接口流程 (PIP) 准备并提交请求。 此 PIP 可使买方组织向供应商提交采购订单请求。 一般情况下，在运行使用“3A2 - 请求价格和可用性”PIP 的产品可用性查询之后请求“3A4 - 请求采购订单”。 3A4 PIP 是一个发送确认回执的异步 PIP。  
   
- ![&#60;无更改 &#62;] (../../adapters-and-accelerators/accelerator-rosettanet/media/rn3-intro-eetut-3a4flow.gif "RN3_Intro_EETut_3A4Flow")  
+ ![& #60;无更改 & #62;](../../adapters-and-accelerators/accelerator-rosettanet/media/rn3-intro-eetut-3a4flow.gif "RN3_Intro_EETut_3A4Flow")  
   
 ### <a name="to-submit-a-3a4---request-purchase-order"></a>提交“3A4 - 请求采购订单”  
   

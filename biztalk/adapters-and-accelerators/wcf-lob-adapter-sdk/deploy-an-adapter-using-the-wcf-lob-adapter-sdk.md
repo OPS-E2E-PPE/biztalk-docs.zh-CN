@@ -132,7 +132,7 @@ ms.locfileid: "36978470"
   
 2.  在树视图窗格中 (标记为**配置**)，展开节点树。 单击**高级**文件夹中，单击**扩展**文件夹，，然后选择绑定扩展元素。  
   
-     ![服务配置编辑器。] (../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/0a44a070-b788-4287-bd9e-c946fafcf11c.gif "0a44a070-b788-4287-bd9e-c946fafcf11c")  
+     ![服务配置编辑器。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/0a44a070-b788-4287-bd9e-c946fafcf11c.gif "0a44a070-b788-4287-bd9e-c946fafcf11c")  
   
 3.  创建一个新的绑定扩展。 单击**新建**按钮以打开该扩展**配置元素编辑器**对话框。 在中**配置名称**，输入唯一的名称包含扩展，例如*MyAdapterExtension*。  
   
@@ -144,13 +144,13 @@ ms.locfileid: "36978470"
   
 6.  单击您的适配器程序集。  
   
-     ![构建扩展类型浏览器。] (../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/7528e218-8930-4b01-b29d-8ec125a9b818.gif "7528e218-8930-4b01-b29d-8ec125a9b818")  
+     ![构建扩展类型浏览器。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/7528e218-8930-4b01-b29d-8ec125a9b818.gif "7528e218-8930-4b01-b29d-8ec125a9b818")  
   
 7.  单击**打开**按钮以选择的程序集。  
   
 8.  在中**绑定扩展类型浏览器**对话框框中，单击实现绑定集合元素的类型名称。  
   
-     ![构建扩展类型浏览器。] (../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/a5db2c6b-cdf7-4cd9-8cc4-6b0fb960b1ce.gif "a5db2c6b-cdf7-4cd9-8cc4-6b0fb960b1ce")  
+     ![构建扩展类型浏览器。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/a5db2c6b-cdf7-4cd9-8cc4-6b0fb960b1ce.gif "a5db2c6b-cdf7-4cd9-8cc4-6b0fb960b1ce")  
   
 9. 单击**打开**按钮以选择的类型。  
   
@@ -158,7 +158,7 @@ ms.locfileid: "36978470"
   
 11. 中的详细信息窗格**绑定扩展编辑器**，验证是否显示绑定扩展。 下图中突出显示 MyAdapterExtension。  
   
-     ![具有添加的扩展的服务配置编辑器。] (../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/955d37ea-cba5-49db-90de-0f8feb49c0e0.gif "955d37ea-cba5-49db-90de-0f8feb49c0e0")  
+     ![具有添加的扩展的服务配置编辑器。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/955d37ea-cba5-49db-90de-0f8feb49c0e0.gif "955d37ea-cba5-49db-90de-0f8feb49c0e0")  
   
 12. 关闭**服务配置编辑器**。  
   

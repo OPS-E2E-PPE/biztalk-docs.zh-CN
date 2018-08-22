@@ -35,4 +35,4 @@ ms.locfileid: "22256629"
     > [!NOTE]
     >  可用程序集必须位于全局程序集缓存 (GAC) 中。 业务规则编辑器加载.NET 程序集的.NET 程序集在浏览时**事实数据资源管理器**窗口中或在 **.NET 类或类成员定义**页**词汇定义**窗口。  如果您在 GAC 中更新该程序集，则关闭业务规则编辑器然后重新启动它，以便加载已更新的 .NET 程序集。 业务规则编辑器并不自动刷新该程序集。  
   
-     ![事实和定义树浏览器的屏幕截图。] (../core/media/ebiz-netbrowse.gif "ebiz_netbrowse")
+     ![事实和定义树浏览器的屏幕截图。](../core/media/ebiz-netbrowse.gif "ebiz_netbrowse")

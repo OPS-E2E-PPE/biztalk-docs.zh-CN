@@ -37,7 +37,7 @@ ms.locfileid: "22255709"
   
 4.  选择身份验证类型。 如果您选择 SQL 身份验证，请输入登录名和密码。 输入你的身份验证信息后，单击**确定**。  
   
-     ![树浏览器支持的数据库的屏幕截图。] (../core/media/ebiz-dbbrows.gif "ebiz_dbbrows")  
+     ![树浏览器支持的数据库的屏幕截图。](../core/media/ebiz-dbbrows.gif "ebiz_dbbrows")  
 浏览数据库  
   
 > [!NOTE]
