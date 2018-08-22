@@ -21,15 +21,15 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 11/28/2017
 ms.locfileid: "25968939"
 ---
-# <a name="error---index-functoid-has-too-many-indexes"></a><span data-ttu-id="a39cd-102">错误-索引 Functoid 有太多的索引</span><span class="sxs-lookup"><span data-stu-id="a39cd-102">Error - Index Functoid Has Too Many Indexes</span></span>
-<span data-ttu-id="a39cd-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="a39cd-103">**Error Code**</span></span>  
+# <a name="error---index-functoid-has-too-many-indexes"></a><span data-ttu-id="0649c-102">错误-索引 Functoid 有太多的索引</span><span class="sxs-lookup"><span data-stu-id="0649c-102">Error - Index Functoid Has Too Many Indexes</span></span>
+<span data-ttu-id="0649c-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="0649c-103">**Error Code**</span></span>  
   
- <span data-ttu-id="a39cd-104">btm1016</span><span class="sxs-lookup"><span data-stu-id="a39cd-104">btm1016</span></span>  
+ <span data-ttu-id="0649c-104">btm1016</span><span class="sxs-lookup"><span data-stu-id="0649c-104">btm1016</span></span>  
   
- <span data-ttu-id="a39cd-105">**说明**</span><span class="sxs-lookup"><span data-stu-id="a39cd-105">**Explanation**</span></span>  
+ <span data-ttu-id="0649c-105">**说明**</span><span class="sxs-lookup"><span data-stu-id="0649c-105">**Explanation**</span></span>  
   
- <span data-ttu-id="a39cd-106">指示**索引**functoid 有太多索引输入的参数指定。</span><span class="sxs-lookup"><span data-stu-id="a39cd-106">The indicated **Index** functoid has too many index input parameters specified.</span></span> <span data-ttu-id="a39cd-107">索引输入参数的数目不能超过的祖先循环数**记录**其中的节点**字段**节点指定为嵌套的第一个输入的参数。</span><span class="sxs-lookup"><span data-stu-id="a39cd-107">The number of index input parameters must not exceed the number of ancestor looping **Record** nodes within which the **Field** node specified as the first input parameter is nested.</span></span>  
+ <span data-ttu-id="0649c-106">指示**索引**functoid 有太多索引输入的参数指定。</span><span class="sxs-lookup"><span data-stu-id="0649c-106">The indicated **Index** functoid has too many index input parameters specified.</span></span> <span data-ttu-id="0649c-107">索引输入参数的数目不能超过的祖先循环数**记录**其中的节点**字段**节点指定为嵌套的第一个输入的参数。</span><span class="sxs-lookup"><span data-stu-id="0649c-107">The number of index input parameters must not exceed the number of ancestor looping **Record** nodes within which the **Field** node specified as the first input parameter is nested.</span></span>  
   
- <span data-ttu-id="a39cd-108">**用户执行任何操作**</span><span class="sxs-lookup"><span data-stu-id="a39cd-108">**User Action**</span></span>  
+ <span data-ttu-id="0649c-108">**用户执行任何操作**</span><span class="sxs-lookup"><span data-stu-id="0649c-108">**User Action**</span></span>  
   
- <span data-ttu-id="a39cd-109">选择指示**索引**functoid，单击省略号 (**...**) 与关联的按钮**输入参数**属性在 Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口中，然后在**配置\<Functoid\>Functoid**对话框中，删除多余的索引通过选择并单击输入参数![ ] (../core/media/bts-tls-paramdelete.gif "bts_tls_paramdelete")为每个按钮。</span><span class="sxs-lookup"><span data-stu-id="a39cd-109">Select the indicated **Index** functoid, click the ellipsis (**...**) button associated with the **Input Parameters** property in the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, and then in the **Configure \<Functoid\> Functoid** dialog box, delete the excess index input parameters by selecting and clicking the  ![](../core/media/bts-tls-paramdelete.gif "bts_tls_paramdelete") button for each of them.</span></span>
+ <span data-ttu-id="0649c-109">选择指示**索引**functoid，单击省略号 (**...**) 与关联的按钮**输入参数**属性在 Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口中，然后在**配置\<Functoid\>Functoid**对话框中，删除多余的索引通过选择并单击输入参数![](../core/media/bts-tls-paramdelete.gif "bts_tls_paramdelete")为每个按钮。</span><span class="sxs-lookup"><span data-stu-id="0649c-109">Select the indicated **Index** functoid, click the ellipsis (**...**) button associated with the **Input Parameters** property in the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, and then in the **Configure \<Functoid\> Functoid** dialog box, delete the excess index input parameters by selecting and clicking the  ![](../core/media/bts-tls-paramdelete.gif "bts_tls_paramdelete") button for each of them.</span></span>
