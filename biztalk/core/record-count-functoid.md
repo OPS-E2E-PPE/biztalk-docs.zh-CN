@@ -56,7 +56,7 @@ ms.locfileid: "22268741"
   
  下图显示**记录计数**functoid 对传入的采购订单中的项的数目进行计数，然后将该值放**ItemCount**字段**SummedPO**输出实例消息。  
   
- ![显示使用情况的记录计数 functoid 的映射。] (../core/media/recordcountfunctoid.gif "recordcountfunctoid")  
+ ![显示使用情况的记录计数 functoid 的映射。](../core/media/recordcountfunctoid.gif "recordcountfunctoid")  
 “记录计数”Functoid 映射  
   
  请注意， **Max Occurs**属性**项**记录将**unbounded**。 这指示**项**记录循环和 BizTalk 映射程序编译时循环，该记录。  

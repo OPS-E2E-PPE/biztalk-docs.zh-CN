@@ -50,7 +50,7 @@ ms.locfileid: "36999038"
   
  下图显示了执行此转换的映射。  
   
- ![演示如何使用循环 functoid 的映射。] (../core/media/loopingflattenfunctoid.gif "loopingflattenfunctoid")  
+ ![演示如何使用循环 functoid 的映射。](../core/media/loopingflattenfunctoid.gif "loopingflattenfunctoid")  
 “循环”Functoid，平面架构映射  
 
 ## <a name="set-the-schema"></a>设置的架构  

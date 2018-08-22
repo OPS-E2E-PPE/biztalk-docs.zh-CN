@@ -82,7 +82,7 @@ ms.locfileid: "36974582"
   
 3.  在绑定扩展编辑器的详细信息窗格中，单击你想要删除，然后单击该绑定扩展**删除**。 在下图中，MyAdapterExtension 突出显示，并将被删除。  
   
-     ![具有添加的扩展的服务配置编辑器。] (../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/955d37ea-cba5-49db-90de-0f8feb49c0e0.gif "955d37ea-cba5-49db-90de-0f8feb49c0e0")  
+     ![具有添加的扩展的服务配置编辑器。](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/955d37ea-cba5-49db-90de-0f8feb49c0e0.gif "955d37ea-cba5-49db-90de-0f8feb49c0e0")  
   
 4.  关闭服务配置编辑器。  
   

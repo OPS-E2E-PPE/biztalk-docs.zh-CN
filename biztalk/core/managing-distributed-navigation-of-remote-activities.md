@@ -37,7 +37,7 @@ ms.locfileid: "37009918"
   
   **在 BAM 中使用分布式的导航**  
   
-  ![分布式导航方案。] (../core/media/bcd-distrbuted-nav-scenario.gif "bcd_distrbuted_nav_scenario")  
+  ![分布式导航方案。](../core/media/bcd-distrbuted-nav-scenario.gif "bcd_distrbuted_nav_scenario")  
   
   管理员希望其服务器尽可能配置得独立，具体要求如下：  
   

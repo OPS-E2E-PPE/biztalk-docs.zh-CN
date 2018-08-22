@@ -41,7 +41,7 @@ ms.locfileid: "36979390"
   
   使用业务规则框架创建的业务规则（策略）可以在已编排为业务流程的业务程序中使用，如下图所示。  
   
-  ![在过程中显示的业务策略的关系图。] (../core/media/ebiz-dev-busprcsi.gif "ebiz_dev_busprcsi")  
+  ![在过程中显示的业务策略的关系图。](../core/media/ebiz-dev-busprcsi.gif "ebiz_dev_busprcsi")  
   业务策略  
   
   本部分提供有关如何利用业务规则框架并使用工具的概念信息，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]提供来开发业务规则。  

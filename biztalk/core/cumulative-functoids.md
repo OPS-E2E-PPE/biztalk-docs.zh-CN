@@ -70,7 +70,7 @@ ms.locfileid: "37004390"
 
  下图显示了映射使用**乘法**functoid 和一个**累计**functoid 到聚合项记录从传入采购订单，并输出结果中的**POTotal**字段：  
 
- ![显示使用情况累计 functoid 的映射。] (../core/media/cumulativefunctoids.gif "cumulativefunctoids")  
+ ![显示使用情况累计 functoid 的映射。](../core/media/cumulativefunctoids.gif "cumulativefunctoids")  
 
 
  该映射将生成以下输出，其中包含前面的数据，以及默认的作用域参数值，即 0（零）：  

@@ -71,7 +71,7 @@ ms.locfileid: "36987134"
 #### <a name="scenario-solution-3---content-based-routing"></a>解决方案 3 - 基于内容的路由  
  此方案定义基于内容的路由 (CBR) 解决方案。 消息只发送到一个接收端口，并且仅由一个发送端口发送。 此路由基于消息中的上下文属性值来执行。 在这种情况下，需要一个继续符。 映射如下所示：  
   
- ![连续 CBR 方案。] (../core/media/4459a73d-515f-4d6d-a68f-b18eee072df8.gif "4459a73d-515f-4d6d-a68f-b18eee072df8")  
+ ![连续 CBR 方案。](../core/media/4459a73d-515f-4d6d-a68f-b18eee072df8.gif "4459a73d-515f-4d6d-a68f-b18eee072df8")  
   
 > [!NOTE]
 >  上面的映射还对只发送到一个接收端口并由所有发送端口发送的消息有效。  

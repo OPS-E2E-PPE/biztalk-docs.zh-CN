@@ -119,7 +119,7 @@ ms.locfileid: "36968614"
   
      下图显示了已连接所有端口的 EAIProcess 业务流程：  
   
-     ![具有已连接端口的 EAIProcess 业务流程。] (../core/media/tut1-eaiprocessportsconnected.gif "Tut1_EAIProcessPortsConnected")  
+     ![具有已连接端口的 EAIProcess 业务流程。](../core/media/tut1-eaiprocessportsconnected.gif "Tut1_EAIProcessPortsConnected")  
   
 ## <a name="what-did-i-just-do"></a>内容回顾  
  在此步骤中，将向 EAIProcess 业务流程添加了三个端口和配置它们。  

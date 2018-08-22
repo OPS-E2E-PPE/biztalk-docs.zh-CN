@@ -54,7 +54,7 @@ RosettaNet 实现框架 (RNIF) 标准定义系统传输 RosettaNet 消息的方�
   
  下图描述了 RNIF 1.1 和 RNIF 2.01 消息定义。  
   
- ![&#60;无更改 &#62;] (../../adapters-and-accelerators/accelerator-rosettanet/media/rn3-rnif-message-definitions.gif "RN3_RNIF_Message_Definitions")  
+ ![& #60;无更改 & #62;](../../adapters-and-accelerators/accelerator-rosettanet/media/rn3-rnif-message-definitions.gif "RN3_RNIF_Message_Definitions")  
   
  在 RNIF 1.1 消息中，版本号表明 RNIF 版本。 内容长度是 RosettaNet 服务消息的长度。 服务消息（包括前导头、服务头以及服务内容）是一个 Multipart/related MIME 实体。 签名长度是以字节为单位计算的签名长度。 如果存在签名，则该签名为服务消息字段的一个公钥加密标准 (PKCS) #7 签名。  
   

@@ -46,7 +46,7 @@ Microsoft BizTalk Server 主要处理 XML 文档格式。 通常，消息必须�
   
   下图显示了在使用管道处理消息过程中涉及的工作流：  
   
-  ![用于处理消息的工作流的图表。] (../core/media/ebiz-dev-busprcsadptc.gif "ebiz_dev_busprcsadptc")  
+  ![用于处理消息的工作流的图表。](../core/media/ebiz-dev-busprcsadptc.gif "ebiz_dev_busprcsadptc")  
   消息处理工作流示意图  
   
   如图所示，消息将从适配器传递到接收管道，在管道中消息将转换为 XML。 然后，消息可由业务流程使用，或传递给发送管道，然后传递给发送适配器。  

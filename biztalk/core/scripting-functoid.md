@@ -56,7 +56,7 @@ ms.locfileid: "36982350"
   
  下图显示了如何**脚本**functoid 显示在使用 C#.Net 脚本重新设置电话号码的格式的映射。  
   
- ![使用 C 将映射&#35;若要设置格式的电话号码。] (../core/media/scriptingfunctoid.gif "scriptingfunctoid")  
+ ![使用 C 将映射&#35;若要设置格式的电话号码。](../core/media/scriptingfunctoid.gif "scriptingfunctoid")  
 “脚本”Functoid 映射  
   
 ## <a name="in-this-section"></a>本节内容  

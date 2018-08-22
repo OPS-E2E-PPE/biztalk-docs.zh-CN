@@ -32,7 +32,7 @@ ms.locfileid: "37019135"
   
     此时，将显示所选类别的高级 functoid 列表。  
   
-2. 拖动**Scripting** functoid ![ ] (../core/media/bts-tls-scripting.gif "bts_tls_scripting")从工具箱拖到网格页上的适当位置。  
+2. 拖动**Scripting** functoid ![](../core/media/bts-tls-scripting.gif "bts_tls_scripting")从工具箱拖到网格页上的适当位置。  
   
    > [!NOTE]
    >  该 functoid 将放置到显示的网格页上。 如果你想要将该 functoid 放置到其他网格页上，您需要首先显示该其他网格页。  

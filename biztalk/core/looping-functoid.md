@@ -29,7 +29,7 @@ ms.locfileid: "22262837"
 > [!NOTE]
 >  **循环** 和 **值映射 （平展）** functoid 应不能一起使用。 如果两者共同使用，这会导致的编译的地图，假定循环依赖关系如下的目标节点没有源 **循环** functoid。  
   
- ![映射的循环 functoid 用法。] (../core/media/loopingfunctoid.gif "loopingfunctoid")  
+ ![映射的循环 functoid 用法。](../core/media/loopingfunctoid.gif "loopingfunctoid")  
   
  **FoodSurvey** 和 **FlowerSurvey** 的源架构的循环记录映射到循环 **地址** 记录的目标架构。 如果输入的实例消息具有三个 **FoodSurvey** 记录和第二个 **FlowerSurvey** 记录， **循环**functoid 将合并这些文件以创建五个 **地址** 输出实例消息中的记录。  
   

@@ -72,7 +72,7 @@ ms.locfileid: "36967126"
   
 2. 时的值**PollWhileDataFound**设置为"True。  
   
-   ![轮询工作流&#40;PollWhileDataFound &#61; False&#41;](../../adapters-and-accelerators/adapter-sql/media/15598c14-3a62-4b8d-90bf-84e004a386db.gif "15598c14-3a62-4b8d-90bf-84e004a386db") ![轮询工作流&#40;PollWhileDataFound &#61; True&#41; ] (../../adapters-and-accelerators/adapter-sql/media/c20535be-ea45-4456-8b62-4d4585cb1d8c.gif "c20535be-ea45-4456-8b62-4d4585cb1d8c")  
+   ![轮询工作流&#40;PollWhileDataFound &#61; False&#41;](../../adapters-and-accelerators/adapter-sql/media/15598c14-3a62-4b8d-90bf-84e004a386db.gif "15598c14-3a62-4b8d-90bf-84e004a386db") ![轮询工作流&#40;PollWhileDataFound &#61; True&#41; ](../../adapters-and-accelerators/adapter-sql/media/c20535be-ea45-4456-8b62-4d4585cb1d8c.gif "c20535be-ea45-4456-8b62-4d4585cb1d8c")  
   
 ## <a name="differences-between-polling-and-query-notification"></a>轮询查询通知之间的差异  
  尽管轮询和查询通知是这两个入站的操作，并在 SQL Server 数据库中的数据更改通知适配器客户端下, 表列出了两者之间的一些差异。 以下差异将帮助你决定具体取决于您的要求操作：  

@@ -32,4 +32,4 @@ ms.locfileid: "25968435"
   
  **用户执行任何操作**  
   
- 为指示提供适当数量的索引输入参数**索引**functoid，其中的适当数量由的循环数**记录**其中的节点**字段**嵌套源架构中的节点。 若要创建索引输入的参数，选择指定的 functoid，单击省略号 (**...**) 与关联的按钮**输入参数**属性在 Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口，然后使用![ ] (../core/media/bts-tls-paraminsert.gif "bts_tls_paraminsert")按钮内**配置\<Functoid\> Functoid**对话框中添加一个或多个常量输入的参数，其中第一个到直接父表示索引循环**记录**节点和后续索引输入参数表示较远的祖先循环**记录**节点。
+ 为指示提供适当数量的索引输入参数**索引**functoid，其中的适当数量由的循环数**记录**其中的节点**字段**嵌套源架构中的节点。 若要创建索引输入的参数，选择指定的 functoid，单击省略号 (**...**) 与关联的按钮**输入参数**属性在 Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口，然后使用![](../core/media/bts-tls-paraminsert.gif "bts_tls_paraminsert")按钮内**配置\<Functoid\> Functoid**对话框中添加一个或多个常量输入的参数，其中第一个到直接父表示索引循环**记录**节点和后续索引输入参数表示较远的祖先循环**记录**节点。
