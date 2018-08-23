@@ -33,7 +33,7 @@ ms.locfileid: "22210413"
 ## <a name="how-a-hub-based-system-works"></a>有中心的系统的工作方式  
  在有中心的系统中，承购集成系统的公司使用 RNIF 连接与中心公司建立连接。 然后中心使用任意所需类型的电子连接与此公司的所有贸易合作伙伴建立连接。 中心公司提供与连接选项的所有贸易合作伙伴： RNIF 连接、 EDI、 平面文件、 Web 应用程序或不符合标准的、 专用连接。 通信系统由中心公司负责管理。 下图显示了此类系统的工作原理。  
   
- ![&#60;无更改 &#62;] (../../adapters-and-accelerators/accelerator-rosettanet/media/hub-based-scenario.gif "Hub_Based_Scenario")  
+ ![& #60;无更改 & #62;](../../adapters-and-accelerators/accelerator-rosettanet/media/hub-based-scenario.gif "Hub_Based_Scenario")  
   
  有中心的系统具有以下优点：  
   
