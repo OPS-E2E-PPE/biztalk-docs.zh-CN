@@ -1,1 +1,1 @@
-<span data-ttu-id="6a558-101">用于 Oracle E-Business Suite 的 Microsoft BizTalk 适配器</span><span class="sxs-lookup"><span data-stu-id="6a558-101">Microsoft BizTalk Adapter for Oracle E-Business Suite</span></span>
+<span data-ttu-id="725cb-101">用于 Oracle E-Business Suite 的 Microsoft BizTalk 适配器</span><span class="sxs-lookup"><span data-stu-id="725cb-101">Microsoft BizTalk Adapter for Oracle E-Business Suite</span></span>
