@@ -31,7 +31,7 @@ ms.locfileid: "25972539"
   
 2.  在命令提示符下，键入：  
   
-     **nscontrol register-name BamAlerts-服务器***\<ServerName\>***-服务-serviceusername"**  *\<ServiceUserName\>*  **"-servicepassword"**  *\<ServicePassword\>*  **"**   
+     **nscontrol register-name BamAlerts-服务器***\<ServerName\>***-服务-serviceusername"** *\<ServiceUserName\>* **"-servicepassword"** *\<ServicePassword\>* **"**   
   
      这使通知服务登录到正确的数据库 （此信息将保留在服务计算机的注册表中通过 nscontrol）。  
   
