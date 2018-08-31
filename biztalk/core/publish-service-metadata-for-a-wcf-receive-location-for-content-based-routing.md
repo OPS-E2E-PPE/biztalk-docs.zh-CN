@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e3aaab98733058877bcbed5022c85aef8fb2159
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: efcda402c231b990d7fefa239a8ff15798331184
+ms.sourcegitcommit: 9b93ee2a019bef8d482626cf5525a6b95509b135
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017081"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "42709854"
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-publishing-wizard-to-publish-service-metadata-for-a-wcf-receive-location-for-content-based-routing"></a>如何使用 BizTalk WCF 服务发布向导为基于内容的路由的 WCF 接收位置发布服务元数据
 你可以使用 BizTalk WCF 服务发布向导创建 WCF 服务，以便为基于内容的路由的现有 WCF 接收位置发布服务元数据。  
@@ -77,7 +77,7 @@ ms.locfileid: "37017081"
 
     ![WCF 服务属性页](../core/media/07518c78-bcae-4274-bb14-aeef107ee4c6.gif "07518c78-bcae-4274-bb14-aeef107ee4c6")  
 
-9. 上**WCF 服务位置**页上，在**位置**文字框中，键入在其中生成 WCF 服务的 Web 目录名称。 您可以接受默认位置 (http://localhost/<*Web 服务说明名称*>)，键入用于中的 WCF 服务位置**位置**文本框中或单击**浏览**并选择 Web 目录。 选择以下任何选项：  
+9. 上**WCF 服务位置**页上，在**位置**文字框中，键入在其中生成 WCF 服务的 Web 目录名称。 您可以接受默认位置 (`http://localhost/<Web service description name>`)，键入用于中的 WCF 服务位置**位置**文本框中或单击**浏览**并选择 Web 目录。 选择以下任何选项：  
 
    - **覆盖现有项目。** 此选项才可用，仅当 Web 目录已存在。 仅当选择了此选项时，您才能够发布到同一位置。 否则，必须输入不同的项目位置。  
 
@@ -88,10 +88,10 @@ ms.locfileid: "37017081"
      ![WCF 服务位置页](../core/media/76285470-1520-4d77-a5b6-c58cbe8fc575.gif "76285470-1520-4d77-a5b6-c58cbe8fc575")  
 
      > [!NOTE]
-     >  项目位置可位于其他服务器上。 若要将 WCF 服务发布到另一台服务器，键入项目名称作为 http://<*servername*>/<*WCF 服务位置*>。  
+     >  项目位置可位于其他服务器上。 若要将 WCF 服务发布到另一台服务器，键入项目名称设置为`http://<servername>/<WCF service location>`。  
 
      > [!NOTE]
-     >  项目位置可位于非默认网站上。 发布到非默认网站时，请在该 URL 中包括网站的端口号。 例如， http://<*servername*>: 8080 / <*WCF 服务位置*>。  
+     >  项目位置可位于非默认网站上。 发布到非默认网站时，请在该 URL 中包括网站的端口号。 例如 `http://<servername>:8080/<WCF service location>` 。  
 
      > [!NOTE]
      >  向导在 Web 应用程序的 \App_Data\Temp 文件夹中创建的 BindingInfo.xml 文件使用管道的默认值。 接收管道的默认值是**Microsoft.BizTalk.DefaultPipelines.XMLReceive**管道和默认值为发送管道**Microsoft.BizTalk.DefaultPipelines.PassThruTransmit**管道。  
@@ -120,7 +120,7 @@ ms.locfileid: "37017081"
    > [!NOTE]
    >  此设置是可选的，用于向已发布的 WCF 服务的宿主 ASP.NET 应用程序授予对受操作系统安全机制保护的任何资源的访问权限。 如果在已发布的 WCF 服务所在的计算机上安装并运行了 Windows SharePoint Services，则这是 WCF 所必需的信任级别。  
 
-4. 在 Internet Explorer 中，在**地址**框中，键入格式为 http:// 的 WCF 服务 URL<em>主机 [: 端口]</em>/*apppath* /*wcfservicename.svc*以测试已发布的 WCF 服务。 介绍了下表的参数。  
+4. 在 Internet Explorer 中，在**地址**框中，键入格式为 的 WCF 服务 URL http://<em>主机 [: 端口]</em>/*apppath* /*wcfservicename.svc*以测试已发布的 WCF 服务。 介绍了下表的参数。  
 
 
    |      参数       |                                                            ReplTest1                                                            |

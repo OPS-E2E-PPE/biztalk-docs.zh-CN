@@ -18,12 +18,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf10236b5db5b1af1a0a115e57a71ad2ae415eda
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4079486e7dc225793f0620dfb52a7c6fdbf02899
+ms.sourcegitcommit: 9b93ee2a019bef8d482626cf5525a6b95509b135
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022163"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "42709861"
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-publishing-wizard-to-publish-schemas-as-wcf-services"></a>如何使用 BizTalk WCF 服务发布向导将架构发布为 WCF 服务
 可使用 BizTalk WCF 服务发布向导将架构发布为 WCF 服务。  
@@ -95,7 +95,7 @@ ms.locfileid: "37022163"
   
      ![WCF 服务属性页](../core/media/07518c78-bcae-4274-bb14-aeef107ee4c6.gif "07518c78-bcae-4274-bb14-aeef107ee4c6")  
   
-11. 上**WCF 服务位置**页上，在**位置**文字框中，键入在其中生成 WCF 服务的 Web 目录名称。 您可以接受默认位置 (http://localhost/<*Web 服务说明名称*>)，键入用于中的 WCF 服务位置**位置**文本框中或单击**浏览**并选择 Web 目录。 选择以下任何选项：  
+11. 上**WCF 服务位置**页上，在**位置**文字框中，键入在其中生成 WCF 服务的 Web 目录名称。 您可以接受默认位置 (`http://localhost/<Web service description name>`)，键入用于中的 WCF 服务位置**位置**文本框中或单击**浏览**并选择 Web 目录。 选择以下任何选项：  
   
     - **覆盖现有项目。** 此选项才可用，仅当 Web 目录已存在。 仅当选择了此选项时，您才能够发布到同一位置。 否则，必须输入不同的项目位置。  
   
@@ -106,10 +106,10 @@ ms.locfileid: "37022163"
       ![WCF 服务位置页](../core/media/76285470-1520-4d77-a5b6-c58cbe8fc575.gif "76285470-1520-4d77-a5b6-c58cbe8fc575")  
   
     > [!NOTE]
-    >  项目位置可位于其他服务器上。 若要将 WCF 服务发布到另一台服务器，键入项目名称作为 http://&lt*servername*>/<*WCF 服务位置*>。  
+    >  项目位置可位于其他服务器上。 若要将 WCF 服务发布到另一台服务器，键入项目名称设置为`http://<servername>/<WCF service location>`。  
   
     > [!NOTE]
-    >  项目位置可位于非默认网站上。 发布到非默认网站时，请在该 URL 中包括网站的端口号。 例如，http://&lt*servername*>: 8080 / <*WCF 服务位置*>。  
+    >  项目位置可位于非默认网站上。 发布到非默认网站时，请在该 URL 中包括网站的端口号。 例如 `http://<servername>:8080/<WCF service location>` 。  
   
     > [!NOTE]
     >  在使用向导创建接收位置时，向导会使用默认值创建接收位置。 接收管道的默认值是**Microsoft.BizTalk.DefaultPipelines.PassThruReceive**管道。 如果通过已发布的 WCF 服务接收的消息需要任何特殊的管道处理 （例如，验证、 关联/属性升级或入站/出站映射），则应将接收管道设置为**Microsoft.BizTalk.DefaultPipelines.XMLReceive**，或通过使用 BizTalk 管理控制台中自定义管道。  

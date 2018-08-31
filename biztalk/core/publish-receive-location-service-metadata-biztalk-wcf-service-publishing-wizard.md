@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 53d290067b33d676f9c3052f93e61100252ad34f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
-ms.translationtype: HT
+ms.openlocfilehash: 289615ec4d58f782404abf7327f01761fb16574b
+ms.sourcegitcommit: 9b93ee2a019bef8d482626cf5525a6b95509b135
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996862"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "42709833"
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-publishing-wizard-to-publish-service-metadata-for-a-wcf-receive-location-bound-to-an-orchestration-port"></a>如何使用 BizTalk WCF 服务发布向导为已绑定到业务流程端口的 WCF 接收位置发布服务元数据
 您可以使用 BizTalk WCF 服务发布向导创建 WCF 服务，以便为已绑定到业务流程端口的现有 WCF 接收位置发布服务元数据。  
@@ -73,7 +73,7 @@ ms.locfileid: "36996862"
 
     ![WCF 服务属性页](../core/media/07518c78-bcae-4274-bb14-aeef107ee4c6.gif "07518c78-bcae-4274-bb14-aeef107ee4c6")  
 
-9. 上**WCF 服务位置**页上，在**位置**文字框中，键入在其中生成 WCF 服务的 Web 目录名称。 您可以接受默认位置 (http://localhost/<*BizTalk 程序集名称*>)，键入用于中的 WCF 服务位置**位置**文本框中或单击**浏览**并选择 Web 目录。 选择以下任何选项：  
+9. 上**WCF 服务位置**页上，在**位置**文字框中，键入在其中生成 WCF 服务的 Web 目录名称。 您可以接受默认位置 (`http://localhost/<BizTalk Assembly Name>`)，键入用于中的 WCF 服务位置**位置**文本框中或单击**浏览**并选择 Web 目录。 选择以下任何选项：  
 
    - **覆盖现有项目。** 此选项才可用，仅当 Web 目录已存在。 仅当选择了此选项时，您才能够发布到同一位置。 否则，必须输入不同的项目位置。  
 
@@ -84,10 +84,10 @@ ms.locfileid: "36996862"
      ![WCF 服务位置页](../core/media/76285470-1520-4d77-a5b6-c58cbe8fc575.gif "76285470-1520-4d77-a5b6-c58cbe8fc575")  
 
      > [!NOTE]
-     >  项目位置可位于其他服务器上。 若要将 WCF 服务发布到另一台服务器，键入项目名称作为 http://<*servername*>/<*WCF 服务位置*>。  
+     >  项目位置可位于其他服务器上。 若要将 WCF 服务发布到另一台服务器，键入项目名称设置为`http://<servername>/<WCF service location>`。  
 
      > [!NOTE]
-     >  项目位置可位于非默认网站上。 发布到非默认网站时，请在该 URL 中包括网站的端口号。 例如，http://<*servername*>: 8080 / <*WCF 服务位置*>。  
+     >  项目位置可位于非默认网站上。 发布到非默认网站时，请在该 URL 中包括网站的端口号。 例如 `http://<servername>:8080/<WCF service location>` 。  
 
      > [!NOTE]
      >  该向导创建 Web 应用程序的 App_DataTemp 文件夹中的 BindingInfo.xml 文件对管道使用的默认值。 接收管道的默认值是**Microsoft.BizTalk.DefaultPipelines.XMLReceive**管道和默认值为发送管道**Microsoft.BizTalk.DefaultPipelines.PassThruTransmit**管道。  

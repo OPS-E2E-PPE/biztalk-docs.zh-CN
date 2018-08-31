@@ -2,7 +2,7 @@
 title: 使用基本或自定义配置进行配置 |Microsoft Docs
 description: 若要进行 BizTalk Server 的基本或自定义配置并学习与每个配置会发生什么情况的步骤
 ms.custom: ''
-ms.date: 08/14/2017
+ms.date: 08/23/2018
 ms.prod: biztalk-server
 ms.reviewer: ''
 ms.suite: ''
@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a74d7e03582e9da54d0fec25eeeb6edb409e328a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fdc15f90451330cfc85eeaa06f6deebdbe716666
+ms.sourcegitcommit: ebb0d5bb9effdc502fad0b320de1b71a79172063
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983686"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42709905"
 ---
 # <a name="configure-biztalk-server"></a>配置 BizTalk Server
 使用“基本配置”或“自定义配置”配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。
@@ -40,7 +40,7 @@ ms.locfileid: "36983686"
 * 如果使用域组，则在配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 之前这些域组必须存在。
 * [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 配置中列出的由 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 生成的默认帐户是本地组。 在多服务器环境中，必须用域组替换本地组。
 * 如果配置 BAM Analysis Services，登录时所用的帐户必须为 OLAP 计算机中的 OLAP 管理员组的成员。
-
+* 安装累积更新 (Cu) 或功能包 (FPs)*后*配置 BizTalk Server。 自定义或每秒帧数中包含某些更新仅限目标配置的项目。 如果安装 Cu 或每秒帧数，在运行配置之前，重新安装的自定义和每秒帧数，在配置之后。 这可确保完成修补和升级所有组件。
 
 ## <a name="basic-configuration"></a>基本配置
 
@@ -84,14 +84,14 @@ C:\Users\username\AppData\Local\Temp\ConfigLog(01-12-2017 0h37m59s).log`。
 2. 配置下列内容：
 
 
-   |                     使用此项                      |                                                                                                                                                                                                                                                                                                                           执行的操作                                                                                                                                                                                                                                                                                                                            |
-   |---------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | 在此计算机上启用企业单一登录 |                                                                                                                                                                                                                                                                                                            使用 SSO 设置配置此服务器。                                                                                                                                                                                                                                                                                                             |
-   |              新建 SSO 系统              | 如果这是配置的第一个 SSO 服务器，则选择此选项。 这将创建和配置 SSO 数据库、创建主密钥（加密的安全密钥），并安装 SSO 所用的服务。 此外，您还必须备份此密钥服务器上的密钥。<br/><br/>密钥详细信息： <br/><ul><li>建议将主密钥服务器配置为独立服务器。</li><li>只有 SSO 管理员才能执行此配置任务。</li><li>只能将一个主密钥服务器与一个 BizTalk 组相关联。 不支持将两个主密钥服务器与同一个 BizTalk 组相关联。</li></ul> |
-   |            加入现有 SSO 系统            |                                                                                                                          如果向现有组添加 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，则选择此选项。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 与组中的其他 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 共享同一 SSO 配置和数据库。                                                                                                                          |
-   |                    数据存储                    |                                                                                                                                                                                                                                   输入 SSO 服务器的服务器名称。 如果位于 SSO 服务器上，则选择本地服务器名称。 可以将 **SSODB** 保留为默认数据库名称，或输入自定义名。                                                                                                                                                                                                                                    |
-   |                  Windows 服务                  |                                                                                                                                                                                                                                                              输入用于运行企业单一登录服务的帐户。 如果 SQL Server 位于另一台计算机，则输入域帐户。                                                                                                                                                                                                                                                               |
-   |                 Windows 帐户                  |                                                                                                                                                                                                                                                                可以保留默认组名或输入自定义名。 如果 SQL Server 位于另一台计算机，则输入域帐户。                                                                                                                                                                                                                                                                |
+   | 使用此项 |  执行的操作|
+   |---|---|
+   | 在此计算机上启用企业单一登录 | 使用 SSO 设置配置此服务器。  |
+   |  新建 SSO 系统  | 如果这是配置的第一个 SSO 服务器，则选择此选项。 这将创建和配置 SSO 数据库、创建主密钥（加密的安全密钥），并安装 SSO 所用的服务。 此外，您还必须备份此密钥服务器上的密钥。<br/><br/>密钥详细信息： <br/><ul><li>建议将主密钥服务器配置为独立服务器。</li><li>只有 SSO 管理员才能执行此配置任务。</li><li>只能将一个主密钥服务器与一个 BizTalk 组相关联。 不支持将两个主密钥服务器与同一个 BizTalk 组相关联。</li></ul> |
+   | 加入现有 SSO 系统 | 如果向现有组添加 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，则选择此选项。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 与组中的其他 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 共享同一 SSO 配置和数据库。  |
+   |  数据存储  |   输入 SSO 服务器的服务器名称。 如果位于 SSO 服务器上，则选择本地服务器名称。 可以将 **SSODB** 保留为默认数据库名称，或输入自定义名。  |
+   |   Windows 服务  |  输入用于运行企业单一登录服务的帐户。 如果 SQL Server 位于另一台计算机，则输入域帐户。   |
+   |  Windows 帐户  | 可以保留默认组名或输入自定义名。 如果 SQL Server 位于另一台计算机，则输入域帐户。  |
 
 
 3. 选择“企业 SSO 密钥备份”。 此选项可将主密钥保存到加密的备份文件。 
@@ -114,14 +114,14 @@ C:\Users\username\AppData\Local\Temp\ConfigLog(01-12-2017 0h37m59s).log`。
 2. 配置下列内容：
 
 
-   |                       使用此项                        |                                                                                                                                         执行的操作                                                                                                                                          |
-   |-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |     在此计算机上启用 BizTalk Server 组      |                                                                                                 选择此选项可在此服务器上新建 BizTalk 组或加入现有组。                                                                                                 |
-   |              新建 BizTalk 组               |                                       如果这是组中的第一个 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，则选择此选项。 使用此选项可以创建数据库，并添加组。                                       |
-   |            加入现有 BizTalk 组             |                                                                    如果将此 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 加入现有组，则选择此选项。                                                                     |
-   | 为跟踪聚合创建分析数据库 |                                                                                  若要安装 SQL Server Analysis Services，并且想要跟踪和存储运行状况监视 OLAP 多维数据集，则选择此选项。                                                                                  |
-   |                      数据存储                      | 输入承载 BizTalk 数据库的服务器名称。 如果此服务器同时安装了 BizTalk 和 SQL，则输入本地服务器名称。 如果 SQL Server 位于另一台计算机，则输入 SQL Server 名称。<br/><br/>可以保留默认数据库名称或输入自定义内容。 |
-   |             BizTalk 管理角色              |                                                                              可以保留默认组名或输入自定义名。 如果 SQL Server 位于另一台计算机，则输入域帐户。                                                                              |
+   |  使用此项 | 执行的操作 |
+   |---|---|
+   |  在此计算机上启用 BizTalk Server 组  | 选择此选项可在此服务器上新建 BizTalk 组或加入现有组。 |
+   |  新建 BizTalk 组 | 如果这是组中的第一个 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，则选择此选项。 使用此选项可以创建数据库，并添加组。 |
+   | 加入现有 BizTalk 组 |   如果将此 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 加入现有组，则选择此选项。  |
+   | 为跟踪聚合创建分析数据库 | 若要安装 SQL Server Analysis Services，并且想要跟踪和存储运行状况监视 OLAP 多维数据集，则选择此选项。  |
+   | 数据存储 | 输入承载 BizTalk 数据库的服务器名称。 如果此服务器同时安装了 BizTalk 和 SQL，则输入本地服务器名称。 如果 SQL Server 位于另一台计算机，则输入 SQL Server 名称。<br/><br/>可以保留默认数据库名称或输入自定义内容。 |
+   |   BizTalk 管理角色 |  可以保留默认组名或输入自定义名。 如果 SQL Server 位于另一台计算机，则输入域帐户。   |
 
 ### <a name="configure-the-biztalk-runtime"></a>配置 BizTalk 运行时
 
@@ -133,13 +133,13 @@ C:\Users\username\AppData\Local\Temp\ConfigLog(01-12-2017 0h37m59s).log`。
 2. 配置下列内容：
 
 
-   |                                                      使用此项                                                      |                                                                                                                                                                                                                                                                                                                                                                                                                 执行的操作                                                                                                                                                                                                                                                                                                                                                                                                                  |
-   |--------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | 注册 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 运行时组件 |                                                                                                                                                                                                                                                                                                                                            选择此选项可在此 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上创建主机和主机实例。                                                                                                                                                                                                                                                                                                                                            |
-   |                                        创建进程内主机和实例                                         | 在此计算机上创建 BizTalkServerApplication 主机和实例。<br/><br/>其他选项： <ul><li>**受信任**：提交消息时将发件人的凭据（SSID 和/或参与方 ID）传递到 MessageBox 数据库。 这相当于在服务器之间创建信任关系。 大多数主机和实例不受信任。</li><li>**仅限 32 位**：某些适配器仅在 32 位进程中运行，但大多数都可兼容 64 位进程。 配置 BizTalk 后，可在“BizTalk 管理”中启用/禁用此设置。 因此，无需强调。</li><li>**主机名**BizTalkServerApplication 是默认值。 如果在“BizTalk 管理”中新建主机和实例，可以是特定于名称的，如 TrackingHost 或 ReceivingHost。 因此，将其保留原样。</li></ul> |
-   |                                         创建独立主机和实例                                          |                                                                         独立主机在 IIS 中运行。 在许多环境中，最好保留默认值。<br/><br/>其他选项： <ul><li>**受信任**：提交消息时将发件人的凭据（SSID 和/或参与方 ID）传递到 MessageBox 数据库。 这相当于在服务器之间创建信任关系。 大多数主机和实例不受信任。</li><li>**仅限 32 位**：某些适配器仅在 32 位进程中运行，但大多数都可兼容 64 位进程。 配置 BizTalk 后，可在“BizTalk 管理”中启用/禁用此设置。</li><li>**独立主机名**：BizTalkServerIsolatedHost 是默认值。 保留原样。 </li></ul>                                                                          |
-   |                                                  Windows 服务                                                   |                                                                                                                                                                                                                                                                                                                                                             输入用于运行主机实例的帐户。 如果 SQL Server 位于另一台计算机，则输入域帐户。                                                                                                                                                                                                                                                                                                                                                             |
-   |                                                   Windows 组                                                   |                                                                                                                                                                                                                                                                                                                                                      可以保留默认组名或输入自定义名。 如果 SQL Server 位于另一台计算机，则输入域帐户。                                                                                                                                                                                                                                                                                                                                                      |
+   |   使用此项 | 执行的操作  |
+   |---|---|
+   | 注册 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 运行时组件 |  选择此选项可在此 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上创建主机和主机实例。  |
+   |  创建进程内主机和实例  | 在此计算机上创建 BizTalkServerApplication 主机和实例。<br/><br/>其他选项： <ul><li>**受信任**：提交消息时将发件人的凭据（SSID 和/或参与方 ID）传递到 MessageBox 数据库。 这相当于在服务器之间创建信任关系。 大多数主机和实例不受信任。</li><li>**仅限 32 位**：某些适配器仅在 32 位进程中运行，但大多数都可兼容 64 位进程。 配置 BizTalk 后，可在“BizTalk 管理”中启用/禁用此设置。 因此，无需强调。</li><li>**主机名**BizTalkServerApplication 是默认值。 如果在“BizTalk 管理”中新建主机和实例，可以是特定于名称的，如 TrackingHost 或 ReceivingHost。 因此，将其保留原样。</li></ul> |
+   |  创建独立主机和实例  |  独立主机在 IIS 中运行。 在许多环境中，最好保留默认值。<br/><br/>其他选项： <ul><li>**受信任**：提交消息时将发件人的凭据（SSID 和/或参与方 ID）传递到 MessageBox 数据库。 这相当于在服务器之间创建信任关系。 大多数主机和实例不受信任。</li><li>**仅限 32 位**：某些适配器仅在 32 位进程中运行，但大多数都可兼容 64 位进程。 配置 BizTalk 后，可在“BizTalk 管理”中启用/禁用此设置。</li><li>**独立主机名**：BizTalkServerIsolatedHost 是默认值。 保留原样。 </li></ul> |
+   |   Windows 服务   |  输入用于运行主机实例的帐户。 如果 SQL Server 位于另一台计算机，则输入域帐户。  |
+   |   Windows 组  |  可以保留默认组名或输入自定义名。 如果 SQL Server 位于另一台计算机，则输入域帐户。  |
 
 ### <a name="configure-business-rules-engine-bre"></a>配置业务规则引擎 (BRE)
 
@@ -151,11 +151,11 @@ C:\Users\username\AppData\Local\Temp\ConfigLog(01-12-2017 0h37m59s).log`。
 2. 配置下列内容：
 
 
-   |                   使用此项                    |                                                                                                                                       执行的操作                                                                                                                                        |
-   |-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | 在此计算机上启用业务规则引擎 |                                                                           如果在此 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上使用 BRE，则选择此选项。                                                                           |
-   |                  数据存储                  | 输入承载“规则”数据库的服务器名称。 如果此服务器同时安装了 BizTalk 和 SQL，则输入本地服务器名称。 如果 SQL Server 位于另一台计算机，则输入 SQL Server 名称。<br/><br/>可以保留默认数据库名称或输入自定义名。 |
-   |                Windows 服务                |                                                                                 输入用于运行规则更新服务的帐户。 如果 SQL Server 位于另一台计算机，则输入域帐户。                                                                                 |
+   |  使用此项 | 执行的操作  |
+   |---|---|
+   | 在此计算机上启用业务规则引擎 | 如果在此 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上使用 BRE，则选择此选项。  |
+   |  数据存储  | 输入承载“规则”数据库的服务器名称。 如果此服务器同时安装了 BizTalk 和 SQL，则输入本地服务器名称。 如果 SQL Server 位于另一台计算机，则输入 SQL Server 名称。<br/><br/>可以保留默认数据库名称或输入自定义名。 |
+   |   Windows 服务  |  输入用于运行规则更新服务的帐户。 如果 SQL Server 位于另一台计算机，则输入域帐户。  |
 
 ### <a name="configure-bam-tools"></a>配置 BAM 工具
 
@@ -264,7 +264,7 @@ C:\Users\username\AppData\Local\Temp\ConfigLog(1-12-2017 2h39m30s).log`。
 ### <a name="application-pools"></a>应用程序池  
 
 |应用程序池|默认应用程序池标识|Description|  
-|----------------------|---------------------------------------|-----------------|  
+|---|----|---|  
 |BAMAppPool|*用户定义*|BAM 门户的应用程序池。|  
 |BTSSharePointAdapterWSAppPool|*用户定义*|Windows SharePoint Services 适配器 Web Services 的应用程序池。|  
 |STSWebServiceAppPool|*用户定义*|贸易合作伙伴管理工具的应用程序池。|  
@@ -273,7 +273,7 @@ C:\Users\username\AppData\Local\Temp\ConfigLog(1-12-2017 2h39m30s).log`。
 ### <a name="virtual-applications"></a>虚拟应用程序  
 
 |虚拟应用程序|默认应用程序池|Description|  
-|-------------------------|------------------------------|-----------------|  
+|---|-----|---|  
 |BAM|BAMAppPool|BAM 门户组件（页面、图像、预编译的代码和其他资源）的宿主虚拟应用程序。 此虚拟应用程序调用 BAMManagementService 应用程序，以与 BAM 数据库进行通信。 **注意：** 若要设置 BAM 门户的外观，可以修改此应用程序的内容。|  
 |BAMManagementService|BAMAppPool|BAMManagementService Web Services 的宿主虚拟应用程序。 BAM 门户应用程序可使用此 Web Services 与 BAM 主导入表 (PIT) 进行通信。 使用配置期间创建的注册表中存储的模拟凭据可以完成与数据库的通信。 自定义客户端可以使用由 Web Services 公开的这个方法以获取任何用户的视图及其详细信息、相关活动和数据透视表布局。 还可以将其用于管理数据库中的警报。|  
 |BTSharePointAdapterWS|BTSSharePointAdapterWSAppPool|Windows SharePoint Services 适配器 Web Services 的宿主虚拟应用程序。 适用于 BizTalk Server 2013 R2 和 2013 仅。|  
@@ -288,5 +288,3 @@ C:\Users\username\AppData\Local\Temp\ConfigLog(1-12-2017 2h39m30s).log`。
 [用于优化环境的配置后步骤](../install-and-config-guides/post-configuration-steps-to-optimize-your-environment.md)
 
  [确保 BizTalk Server 部署的安全](../install-and-config-guides/securing-your-biztalk-server-deployment.md)  
-
-
