@@ -1,1 +1,1 @@
-<span data-ttu-id="9b831-101">Oracle 数据库适配器</span><span class="sxs-lookup"><span data-stu-id="9b831-101">Oracle Database adapter</span></span>
+<span data-ttu-id="e24bc-101">Oracle 数据库适配器</span><span class="sxs-lookup"><span data-stu-id="e24bc-101">Oracle Database adapter</span></span>
