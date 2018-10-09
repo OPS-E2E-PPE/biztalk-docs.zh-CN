@@ -1,7 +1,7 @@
 ---
-title: 业务规则引擎安全建议 |Microsoft 文档
+title: 业务规则引擎安全性建议 |Microsoft Docs
 ms.custom: ''
-ms.date: 06/08/2017
+ms.date: 09/27/2018
 ms.prod: biztalk-server
 ms.reviewer: ''
 ms.suite: ''
@@ -16,15 +16,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8d7402a1cc36ef3d9473c3303da79b0c23f46bf8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 41815d53b31b2f0bf0ebf3e5626a61d76470ac4c
+ms.sourcegitcommit: c1e83b63ae34bd586e6e0ccc914640efdf96bd4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231941"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48423913"
 ---
-# <a name="business-rule-engine-security-recommendations"></a>业务规则引擎安全建议
-业务规则引擎是业务规则框架的运行时组件。 使用业务规则框架，可以将可读性高、声明性强和语义丰富的规则连接到任何业务对象（.NET 组件）、XML 文档或数据库表。 业务规则框架有关的详细信息，请参阅[创建和使用业务规则](../core/creating-and-using-business-rules.md)。 有关业务规则引擎的详细信息，请参阅[规则引擎](../core/rule-engine.md)。  
+# <a name="business-rule-engine-security-recommendations"></a>业务规则引擎安全性建议
+业务规则引擎是业务规则框架的运行时组件。 使用业务规则框架，可以将可读性高、声明性强和语义丰富的规则连接到任何业务对象（.NET 组件）、XML 文档或数据库表。 有关业务规则框架的详细信息，请参阅[创建和使用业务规则](../core/creating-and-using-business-rules.md)。 有关业务规则引擎的详细信息，请参阅[规则引擎](../core/rule-engine.md)。  
   
  业务规则引擎没有 Windows 用户组，而只有单个帐户。 BizTalk Server 使用两个 SQL Server 角色来限制对业务规则引擎资源的访问：  
   
@@ -33,10 +33,12 @@ ms.locfileid: "22231941"
  RE_Host_Users 组是供业务规则引擎的不需要管理用户权限并且执行读取和执行规则等任务的所有其他用户使用的。 RE_Host_Users 角色的成员包括 BizTalk_Host_Users 角色。 您可使用 SQL Server 角色来实现与 BizTalk Server 权限无关的针对业务规则引擎的权限。 有关使用业务规则引擎所需的最小权限的详细信息，请参阅[最低安全用户权限](../core/minimum-security-user-rights.md)。 建议您按照这些准则在您的环境中保护和部署业务规则引擎。  
   
 -   BizTalk Server 为您用来安装更新服务的帐户授予“作为服务登录”权限，并将该帐户添加到业务规则数据库的 RE_Host_Users SQL Server 角色中。 如果您安装时所用的帐户与将用以运行更新服务的帐户不同，则您必须从 RE_Host_Users SQL Server 角色删除该安装帐户。  
-  
+
+-   如果不以另一个 BizTalk 主机服务帐户使用相同的帐户，还对 RuleEngine 服务帐户添加到 BTS_HOST_USERS BizTalkMgmtDb 和 BizTalkMsgBoxDb 中。
+
 -   如果使用更新服务组件，则必须将其安装到所有 BizTalk 运行时计算机上。 为了从规则引擎数据库检索规则，该更新服务需要模拟服务调用方。  
   
--   默认情况下，所有 BizTalk 主机对规则引擎项目具有相同的访问级别。 并没有为了安全而授予各个主机不同的访问级别。 您可使用规则引擎 API 来配置基于策略的安全性。 有关如何配置每个策略安全性的详细信息，请参阅[业务规则 Framework 安全性](../core/business-rules-framework-security.md)。  
+-   默认情况下，所有 BizTalk 主机对规则引擎项目具有相同的访问级别。 并没有为了安全而授予各个主机不同的访问级别。 您可使用规则引擎 API 来配置基于策略的安全性。 有关如何配置基于策略的安全性的详细信息，请参阅[业务规则框架安全性](../core/business-rules-framework-security.md)。  
   
-## <a name="see-also"></a>另请参阅  
- [处理服务器的端口](../core/ports-for-the-processing-servers.md)
+## <a name="see-also"></a>请参阅  
+ [用于处理服务器的端口](../core/ports-for-the-processing-servers.md)

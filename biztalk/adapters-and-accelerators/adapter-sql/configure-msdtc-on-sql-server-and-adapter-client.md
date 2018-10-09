@@ -1,23 +1,6 @@
----
-title: SQL Server 和适配器客户端上配置 MSDTC |Microsoft Docs
-ms.custom: ''
-ms.date: 06/08/2017
-ms.prod: biztalk-server
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-ms.assetid: 2c87f455-a8c4-4169-bf18-695926136df1
-caps.latest.revision: 14
-author: MandiOhlinger
-ms.author: mandia
-manager: anneta
-ms.openlocfilehash: 3f609b3d54c9b2db6ad576eab75bb82872075f5a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013822"
+-title:"配置 SQL Server 和适配器客户端上的 MSDTC |Microsoft Docs"ms.custom:""ms.date:"06/08/2017"ms.prod:"biztalk server"ms.reviewer:""
+
+ms.suite:""ms.tgt_pltfrm:""ms.topic:"article"ms.assetid: 2c87f455-a8c4-4169-bf18-695926136df1 caps.latest.revision: 14 author:"MandiOhlinger"ms.author:"mandia"manager:"anneta"
 ---
 # <a name="configure-msdtc-on-sql-server-and-adapter-client"></a>SQL Server 和适配器客户端上配置 MSDTC
 使用 SQL Server 上执行的操作[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)] (通过[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，WCF 服务模型或 WCF 通道模型) 可以在事务范围内执行。 如果客户端程序具有多个事务的资源作为同一事务的一部分，获取提升为 MSDTC 事务的事务。 若要启用要执行操作的作用域内的 MSDTC 事务的适配器，必须配置 MSDTC 这两个运行的计算机上[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]和 SQL Server。 此外，必须将 MSDTC 添加到 Windows 防火墙例外列表。 本部分提供有关如何运行适配器客户端和 SQL Server 的计算机上执行这些任务的信息。  
@@ -42,7 +25,7 @@ ms.locfileid: "37013822"
    - **允许远程客户端** 
    - **允许入站** 
    - **允许出站** 
-   - **所需的任何 Authetnication**
+   - **不要求进行验证**
   
 4. 单击“确定”保存更改。  
   

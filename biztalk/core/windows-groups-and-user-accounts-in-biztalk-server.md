@@ -1,7 +1,7 @@
 ---
 title: Windows 组和 BizTalk Server 中的用户帐户 |Microsoft Docs
 ms.custom: ''
-ms.date: 06/08/2017
+ms.date: 09/27/2018
 ms.prod: biztalk-server
 ms.reviewer: ''
 ms.suite: ''
@@ -85,12 +85,12 @@ caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e86772c5ae2565407d53a46cf9af16e214089f9e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 26a9cc092ed8d5747c7f6b7e899d27b62bbc3087
+ms.sourcegitcommit: c1e83b63ae34bd586e6e0ccc914640efdf96bd4c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37016052"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48423937"
 ---
 # <a name="windows-groups-and-user-accounts-in-biztalk-server"></a>BizTalk Server 中的 Windows 组和用户帐户
 有关 BizTalk Server 本地和域组和用户帐户的信息。 如果在单台计算机上安装了 BizTalk Server 和所有必备软件，则默认情况下配置管理器将为你创建必需的 BizTalk 组帐户。 本部分中包含的信息适用于多计算机拓扑结构。  
@@ -112,13 +112,13 @@ ms.locfileid: "37016052"
   
    下表列出了 BizTalk Server 使用的 Windows 组和他们的成员。 它还给出了这些组的 SQL Server 角色或数据库角色。  
   
-|分组|组说明|成员身份|SQL Server 角色或数据库角色|  
+|Group|组说明|成员身份|SQL Server 角色或数据库角色|  
 |-----------|-----------------------|----------------|----------------------------------------|  
 |SSO Administrators|企业单一登录 (SSO) 服务的管理员。|包含企业单一登录服务的服务帐户。<br /><br /> 包含配置和管理 BizTalk Server 和 SSO 服务所需的用户/组。<br /><br /> 包含在配置 SSO 主密钥服务器时用于运行 BizTalk 配置管理器的帐户。|SSO 的 db_owner SQL Server 数据库角色<br /><br /> SSO 所在的 SQL Server 的 securityadmin SQL Server 角色|  
 |SSO Affiliate Administrators|某些 SSO 关联应用程序的管理员。<br /><br /> 可以创建/删除 SSO 关联应用程序、 管理用户映射，并为关联应用程序用户设置凭据|不包含服务帐户。<br /><br /> 包含 BizTalk Server 管理员使用的帐户。||  
 |BizTalk Server Administrators|具有执行管理任务所需的最低权限。<br /><br /> 可以部署解决方案，管理应用程序并解决在消息处理过程中出现的问题。<br /><br /> 若要执行关于适配器、接收处理程序、发送处理程序和接收位置的管理任务，则必须将 BizTalk Server Administrators 的成员添加到 Single Sign-On Affiliate Administrators 中。<br /><br /> 有关详细信息，请参阅[管理 BizTalk Server 安全性](../core/managing-biztalk-server-security.md)。|包含配置和管理 BizTalk Server 所需的用户/组。|以下数据库中的 BTS_ADMIN_USERS SQL Server 数据库角色：<br /><br /> BizTalkMgmtDb<br /><br /> BizTalkMsgBoxDb<br /><br /> BizTalkRuleEngineDb<br /><br /> BizTalkDTADb<br /><br /> BAMPrimaryImport<br /><br /> 以下数据库中的 db_owner SQL Server 数据库角色：<br /><br /> BAMStarSchema<br /><br /> BAMPrimaryImport<br /><br /> BAMArchive<br /><br /> BAMAlertsApplication<br /><br /> BAMAlertsNSMain<br /><br /> 以下数据库中的 NSAdmin SQL Server 数据库角色：<br /><br /> BAMAlertsApplication<br /><br /> BAMAlertsNSMain<br /><br /> BAMAnalysis OLAP 数据库宿主计算机上的 OLAP 管理员。|  
 |BizTalk Server Operators|具有只能执行监视和故障排除操作的低权限角色。<br /><br /> 有关详细信息，请参阅[管理 BizTalk Server 安全性](../core/managing-biztalk-server-security.md)|包含将监视解决方案的用户/组。<br /><br /> 不包含服务帐户。|以下数据库中的 BTS_OPERATORS SQL Server 数据库角色：<br /><br /> BizTalkDTADb<br /><br /> BizTalkEDIDb<br /><br /> BizTalkMgmtDb<br /><br /> BizTalkMsgBoxDb<br /><br /> BizTalkRuleEngineDb|  
-|BizTalk Application Users|由配置管理器创建的首个进程内 BizTalk 主机组的默认名称。<br /><br /> 在你的环境中每个进程内主机将使用一个 BizTalk 主机组。<br /><br /> 包含能够访问进程内 BizTalk 主机（BizTalk Server 中的主机进程 BTSNTSvc.exe）的帐户。|包含 BizTalk 主机组所属主机中，BizTalk 进程内主机实例的服务帐户。|以下数据库中的 BTS_HOST_USERS SQL Server 数据库角色：<br /><br /> BizTalkMgmtDb<br /><br /> BizTalkMsgBoxDb<br /><br /> BizTalkRuleEngineDb<br /><br /> BizTalkDTADb<br /><br /> BAMPrimaryImport<br /><br /> BAMPrimaryImport 中的 BAM_EVENT_WRITER SQL Server 数据库角色|  
+|BizTalk Application Users|由配置管理器创建的首个进程内 BizTalk 主机组的默认名称。<br /><br /> 在你的环境中每个进程内主机将使用一个 BizTalk 主机组。<br /><br /> 包含能够访问进程内 BizTalk 主机（BizTalk Server 中的主机进程 BTSNTSvc.exe）的帐户。|包含在进程内 BizTalk 主机实例和 BizTalk 主机组所属主机中的 BizTalk 规则引擎服务的服务帐户。|以下数据库中的 BTS_HOST_USERS SQL Server 数据库角色：<br /><br /> BizTalkMgmtDb<br /><br /> BizTalkMsgBoxDb<br /><br /> BizTalkRuleEngineDb<br /><br /> BizTalkDTADb<br /><br /> BAMPrimaryImport<br /><br /> BAMPrimaryImport 中的 BAM_EVENT_WRITER SQL Server 数据库角色|  
 |BizTalk Isolated Host Users|由配置管理器创建的首个独立 BizTalk 主机组的默认名称。 独立 BizTalk 主机指不在 BizTalk Server 上运行的 BizTalk 主机，例如 HTTP 和 SOAP。<br /><br /> 在你的环境中每个独立主机将使用一个 BizTalk 独立主机组。|包含独立 BizTalk 主机组所属主机中，BizTalk 独立主机实例的服务帐户。|以下数据库中的 BTS_HOST_USERS SQL Server 数据库角色：<br /><br /> BizTalkMgmtDb<br /><br /> BizTalkMsgBoxDb<br /><br /> BizTalkRuleEngineDb<br /><br /> BizTalkDTADb<br /><br /> BAMPrimaryImport|  
 |BAM Portal Users|能够访问 BAM 门户网站。|默认情况下，此角色使用 Everyone 组。<br /><br /> 不包含服务帐户。||  
 |BizTalk SharePoint Adapter Enabled Hosts|能够访问 Windows SharePoint Services 适配器 Web Services|包含可以调用 SharePoint 适配器的 BizTalk 主机实例的服务帐户。||  

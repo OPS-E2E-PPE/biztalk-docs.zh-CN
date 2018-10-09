@@ -14,10 +14,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: a131cc8e70311f6f57154b90e98ea1067ec5dc02
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.sourcegitcommit: 51ce182c5b71d3999a3920dd884bc9ec8334a899
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
+ms.lasthandoff: 10/04/2018
 ms.locfileid: "36969654"
 ---
 # <a name="node-types-and-ids-for-the-oracle-database-adapter"></a>节点类型和 Oracle 数据库适配器的 Id
@@ -26,11 +26,11 @@ ms.locfileid: "36969654"
 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]表面 Oracle 数据库项目以分层方式。 下表列出的节点类型和 Oracle 数据库项目的节点 Id 的[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]图面。 节点 ID 是在中使用的节点的绝对路径**IMetadataRetrievalContractBrowse**，**搜索**，并**GetMetadata**方法。  
 
 
-| 项目显示名称 | 节点类型 |                           节点 ID                           |                                        示例                                         |                                                                                                     Description                                                                                                     |
+| 项目显示名称 | 节点类型 |                           节点 ID                           |                                        示例                                         |                                                                                                     描述                                                                                                     |
 |-----------------------|-----------|-------------------------------------------------------------|----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |          --           | 类别  |                              /                              |                                           /                                            | [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] 根节点。 返回第一级别的所有节点;这包括 SQLEXECUTE 操作节点、 POLLINGSTMT 操作节点，以及所有架构节点 |
 |      SQLEXECUTE       | OPERATION |                    [VERSION] / SQLEXECUTE                     |                http://Microsoft.LobServices.OracleDB/2007/03/SQLEXECUTE                |                                                                        SQLEXECUTE 操作节点。 SQLEXECUTE 操作的返回 WSDL。                                                                        |
-|      POLLINGSTMT      | OPERATION |                    [VERSION] / POLLINGSTMT                    |               http://Microsoft.LobServices的用户。 OracleDB/2007年/03/POLLINGSTMT               |                                                                       POLLINGSTMT 操作节点。 返回 WSDL POLLINGSTMT 操作。                                                                       |
+|      POLLINGSTMT      | OPERATION |                    [VERSION] / POLLINGSTMT                    |               http://Microsoft.LobServices。 OracleDB/2007年/03/POLLINGSTMT               |                                                                       POLLINGSTMT 操作节点。 返回 WSDL POLLINGSTMT 操作。                                                                       |
 |      [DB_SCHEMA]      | 类别  |                    [VERSION] / [DB_SCHEMA]                    |                  http://Microsoft.LobServices.OracleDB/2007/03/SCOTT                   |                                                架构节点。 返回指定的架构的常规类别节点 （表、 视图、 过程、 函数和包）。                                                |
 |         表         | 类别  |                 [VERSION] / [DB_SCHEMA] / 表                 |               http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table                |                                                                        架构表节点。 返回指定架构的所有表节点。                                                                        |
 |      [DB_TABLE]       | 类别  |           [VERSION] / [DB_SCHEMA] /Table/ [DB_TABLE]            |             http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP              |      表节点。 返回指定表的所有操作节点 （Insert、 Select、 Update、 Delete、 ReadLOB 和 UpdateLOB）。 （ReadLOB 和 UpdateLOB 仅返回包含 LOB 列的表。）      |
@@ -78,7 +78,7 @@ ms.locfileid: "36969654"
 ## <a name="metadata-search-and-node-ids"></a>元数据搜索和节点 Id  
  元数据搜索是一项强大功能[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]图面作为的一部分其**MetadataRetrievalContract**接口。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]使用此功能来支持以下 Oracle 项目上进行搜索。 元数据搜索范围仅限于紧下方的节点执行搜索操作的间隔级别。 例如，若要搜索一个函数，您必须搜索下\\[Schema] \Functions。 不支持递归搜索。  
 
-|项目|节点 ID|返回节点类型|Description|  
+|项目|节点 ID|返回节点类型|描述|  
 |--------------|-------------|------------------------|-----------------|  
 |[DB_SCHEMA]|/ （即根节点）|类别|返回与搜索表达式匹配的所有架构节点。|  
 |[DB_TABLE]|/ [VERSION] / [DB_SCHEMA] / 表|类别|在指定的架构相匹配的搜索表达式中返回表的所有节点。|  
