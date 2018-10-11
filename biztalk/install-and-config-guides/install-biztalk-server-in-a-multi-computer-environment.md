@@ -390,7 +390,7 @@ BAM 由以下层组成：
 - **群集文件系统**– 请参阅[如何群集文件系统](http://go.microsoft.com/fwlink/p/?LinkId=189517)。
 
 ## <a name="use-scom"></a>使用 SCOM
-BizTalk Server 管理包为 Operations Manager 提供了全面发现和监视 BizTalk Server 组件和在多台计算机中运行的应用程序。 有关 BizTalk Server 管理包的详细信息，请参阅http://www.microsoft.com/download/details.aspx?id=39617。
+BizTalk Server 管理包为 Operations Manager 提供了全面发现和监视 BizTalk Server 组件和在多台计算机中运行的应用程序。 有关 BizTalk Server 管理包的详细信息，请参阅 http://www.microsoft.com/download/details.aspx?id=39617。
 
 ## <a name="next"></a>Next  
 [配置 BizTalk](configure-biztalk-server.md)
