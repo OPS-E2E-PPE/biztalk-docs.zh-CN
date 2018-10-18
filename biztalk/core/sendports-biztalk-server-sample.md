@@ -33,7 +33,7 @@ SendPorts 示例演示如何枚举和管理通过使用发送端口**Microsoft.B
 
 1. 通过使用连接到 BizTalk 管理数据库**BtsCatalogExplorer**类。  
 
-2. 创建两个新发送端口命名为 myStaticOnewaySendPort1 和 myDynamicTwowaySendPort1。 myStaticOnewaySendPort1，正如其名，是一个静态单向发送端口。  创建与示例目标 URL 使用 HTTP 传输http://sample1。 myDynamicTwowaySendPort1 创建为动态双向发送端口。  
+2. 创建两个新发送端口命名为 myStaticOnewaySendPort1 和 myDynamicTwowaySendPort1。 myStaticOnewaySendPort1，正如其名，是一个静态单向发送端口。  创建与示例目标 URL 使用 HTTP 传输 http://sample1 。 myDynamicTwowaySendPort1 创建为动态双向发送端口。  
 
 3. 枚举 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 环境中的发送端口。 此示例枚举应包括两个新发送端口。  
 
