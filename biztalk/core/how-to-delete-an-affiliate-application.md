@@ -46,7 +46,7 @@ ms.locfileid: "37003318"
   
 2. <span data-ttu-id="c7f36-112">在命令行上，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="c7f36-112">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="c7f36-113">默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。</span><span class="sxs-lookup"><span data-stu-id="c7f36-113">The default installation directory is *\<drive\>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3. <span data-ttu-id="c7f36-114">类型 * * ssomanage-deleteapp *\<应用程序名称\>**<em>，其中 *\<应用程序名称\></em>是你想要删除从关联应用程序的名称SSO 数据库。</span><span class="sxs-lookup"><span data-stu-id="c7f36-114">Type **ssomanage –deleteapp *\<application name\>**<em>, where *\<application name\></em> is the name of the affiliate application you want to remove from the SSO database.</span></span>  
+3. <span data-ttu-id="c7f36-114">类型 \* \* ssomanage-deleteapp \*\<应用程序名称\>\*\*<em>，其中 \*\<应用程序名称\></em>是你想要删除从关联应用程序的名称SSO 数据库。</span><span class="sxs-lookup"><span data-stu-id="c7f36-114">Type \*\*ssomanage –deleteapp \*\<application name\>\*\*<em>, where \*\<application name\></em> is the name of the affiliate application you want to remove from the SSO database.</span></span>  
   
    > [!NOTE]
    >  <span data-ttu-id="c7f36-115">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="c7f36-115">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

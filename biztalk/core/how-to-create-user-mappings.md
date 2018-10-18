@@ -56,7 +56,7 @@ ms.locfileid: "37009886"
   
 2. <span data-ttu-id="7faa8-113">在命令行上，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="7faa8-113">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="7faa8-114">默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。</span><span class="sxs-lookup"><span data-stu-id="7faa8-114">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3. <span data-ttu-id="7faa8-115">类型 * * ssomanage – createmappings *\<映射文件名称\>**<em>，其中 *\<映射文件名称\></em>是包含你希望用户映射文件的名称若要创建。</span><span class="sxs-lookup"><span data-stu-id="7faa8-115">Type **ssomanage –createmappings *\<mappings file name\>**<em>, where *\<mappings file name\></em> is the name of file that contains the user mapping(s) you want to create.</span></span>  
+3. <span data-ttu-id="7faa8-115">类型 \* \* ssomanage – createmappings \*\<映射文件名称\>\*\*<em>，其中 \*\<映射文件名称\></em>是包含你希望用户映射文件的名称若要创建。</span><span class="sxs-lookup"><span data-stu-id="7faa8-115">Type \*\*ssomanage –createmappings \*\<mappings file name\>\*\*<em>, where \*\<mappings file name\></em> is the name of file that contains the user mapping(s) you want to create.</span></span>  
   
    > [!NOTE]
    >  <span data-ttu-id="7faa8-116">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="7faa8-116">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
@@ -67,7 +67,7 @@ ms.locfileid: "37009886"
   
 2. <span data-ttu-id="7faa8-119">在命令行上，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="7faa8-119">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="7faa8-120">默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。</span><span class="sxs-lookup"><span data-stu-id="7faa8-120">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3. <span data-ttu-id="7faa8-121">类型 * * ssoclient – setcredentials *\<应用程序名称\> ** <em>，其中 *\<应用程序名称\></em>是用户想要的关联应用程序的名称创建的映射。</span><span class="sxs-lookup"><span data-stu-id="7faa8-121">Type **ssoclient –setcredentials *\<application name \>**<em>, where *\<application name \></em> is the name of affiliate application that the user wants to create a mapping for.</span></span>  
+3. <span data-ttu-id="7faa8-121">类型 \* \* ssoclient – setcredentials \*\<应用程序名称\> \*\* <em>，其中 \*\<应用程序名称\></em>是用户想要的关联应用程序的名称创建的映射。</span><span class="sxs-lookup"><span data-stu-id="7faa8-121">Type \*\*ssoclient –setcredentials \*\<application name \>\*\*<em>, where \*\<application name \></em> is the name of affiliate application that the user wants to create a mapping for.</span></span>  
   
    > [!NOTE]
    >  <span data-ttu-id="7faa8-122">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="7faa8-122">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

@@ -86,7 +86,7 @@ ms.locfileid: "36968238"
   
 2. <span data-ttu-id="99ccd-128">在命令行上，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="99ccd-128">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="99ccd-129">默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。</span><span class="sxs-lookup"><span data-stu-id="99ccd-129">The default installation directory is *\<drive\>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3. <span data-ttu-id="99ccd-130">类型 * * ssomanage – updatedb *\<更新文件\>**<em>，其中 *\<更新文件\></em>是路径和 XML 文件的名称。</span><span class="sxs-lookup"><span data-stu-id="99ccd-130">Type **ssomanage –updatedb *\<update file\>**<em>, where *\<update file\></em> is the path and name of the XML file.</span></span>  
+3. <span data-ttu-id="99ccd-130">类型 \* \* ssomanage – updatedb \*\<更新文件\>\*\*<em>，其中 \*\<更新文件\></em>是路径和 XML 文件的名称。</span><span class="sxs-lookup"><span data-stu-id="99ccd-130">Type \*\*ssomanage –updatedb \*\<update file\>\*\*<em>, where \*\<update file\></em> is the path and name of the XML file.</span></span>  
   
    > [!NOTE]
    >  <span data-ttu-id="99ccd-131">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="99ccd-131">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

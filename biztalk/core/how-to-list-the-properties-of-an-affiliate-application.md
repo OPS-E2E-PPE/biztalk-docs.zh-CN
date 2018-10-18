@@ -33,7 +33,7 @@ ms.locfileid: "37002718"
   
 2. <span data-ttu-id="883ca-109">在命令行上，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="883ca-109">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="883ca-110">默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。</span><span class="sxs-lookup"><span data-stu-id="883ca-110">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3. <span data-ttu-id="883ca-111">类型 * * ssomanage-displayapp *\<应用程序名称\>**<em>，其中 *\<应用程序名称\></em>是你想要显示的关联应用程序的名称属性。</span><span class="sxs-lookup"><span data-stu-id="883ca-111">Type **ssomanage –displayapp *\<application name\>**<em>, where *\<application name\></em> is the name of the Affiliate Application you want to display the properties for.</span></span>  
+3. <span data-ttu-id="883ca-111">类型 \* \* ssomanage-displayapp \*\<应用程序名称\>\*\*<em>，其中 \*\<应用程序名称\></em>是你想要显示的关联应用程序的名称属性。</span><span class="sxs-lookup"><span data-stu-id="883ca-111">Type \*\*ssomanage –displayapp \*\<application name\>\*\*<em>, where \*\<application name\></em> is the name of the Affiliate Application you want to display the properties for.</span></span>  
   
    > [!NOTE]
    >  <span data-ttu-id="883ca-112">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="883ca-112">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
@@ -44,7 +44,7 @@ ms.locfileid: "37002718"
   
 2. <span data-ttu-id="883ca-115">在命令行上，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="883ca-115">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="883ca-116">默认安装目录\<*安装驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。</span><span class="sxs-lookup"><span data-stu-id="883ca-116">The default installation directory is \<*install drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3. <span data-ttu-id="883ca-117">类型 * * ssoclient-displayapp *\<应用程序名称\>**<em>，其中 *\<应用程序名称\></em>是你想要显示的关联应用程序的名称属性。</span><span class="sxs-lookup"><span data-stu-id="883ca-117">Type **ssoclient –displayapp *\<application name\>**<em>, where *\<application name\></em> is the name of the Affiliate Application you want to display the properties for.</span></span>  
+3. <span data-ttu-id="883ca-117">类型 \* \* ssoclient-displayapp \*\<应用程序名称\>\*\*<em>，其中 \*\<应用程序名称\></em>是你想要显示的关联应用程序的名称属性。</span><span class="sxs-lookup"><span data-stu-id="883ca-117">Type \*\*ssoclient –displayapp \*\<application name\>\*\*<em>, where \*\<application name\></em> is the name of the Affiliate Application you want to display the properties for.</span></span>  
   
    > [!NOTE]
    >  <span data-ttu-id="883ca-118">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="883ca-118">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  

@@ -73,7 +73,7 @@ ms.locfileid: "36979686"
   
 #### <a name="access-a-web-service-with-internet-explorer"></a><span data-ttu-id="b6b95-126">访问使用 Internet Explorer 的 Web 服务</span><span class="sxs-lookup"><span data-stu-id="b6b95-126">Access a Web service with Internet Explorer</span></span>  
   
-- <span data-ttu-id="b6b95-127">在 Internet Explorer 中，在**地址**框中，键入使用以下格式的 Web 服务 URL **http://<em>servername</em>/*apppath* /*webservicename*.asmx**。</span><span class="sxs-lookup"><span data-stu-id="b6b95-127">In Internet Explorer, in the **Address** box, type the URL for the Web service using the format **http://<em>servername</em>/*apppath*/*webservicename*.asmx**.</span></span>  
+- <span data-ttu-id="b6b95-127">在 Internet Explorer 中，在**地址**框中，键入使用以下格式的 Web 服务 URL **http://<em>servername</em>/*apppath\* /*webservicename\*.asmx\*\*。</span><span class="sxs-lookup"><span data-stu-id="b6b95-127">In Internet Explorer, in the **Address** box, type the URL for the Web service using the format **http://<em>servername</em>/*apppath*/*webservicename*.asmx**.</span></span>  
   
   |<span data-ttu-id="b6b95-128">参数</span><span class="sxs-lookup"><span data-stu-id="b6b95-128">Parameter</span></span>|<span data-ttu-id="b6b95-129">ReplTest1</span><span class="sxs-lookup"><span data-stu-id="b6b95-129">Value</span></span>|  
   |---------------|-----------|  
