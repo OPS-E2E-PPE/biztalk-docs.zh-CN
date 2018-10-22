@@ -285,7 +285,7 @@ ms.locfileid: "37001760"
 
  **对象实例标识符：** 64530307  
 
- 提交的所有事实 (**PurchaseOrder**) 到规则引擎以及由规则引擎创建的子事实根据 XPath 选择器 (**\PurchaseOrder**和**\PurchaseOrder\Item**)取消 （删除） 从规则引擎工作内存中。  
+ 提交的所有事实 (**PurchaseOrder**) 到规则引擎以及由规则引擎创建的子事实根据 XPath 选择器 (**\PurchaseOrder** 和 **\PurchaseOrder\Item**)取消 （删除） 从规则引擎工作内存中。  
 
 ## <a name="analysis-of-the-output-from-the-second-test-samplepo2xml"></a>来自第二个测试的输出分析 (samplepo2.xml)  
  **条件评估测试 （匹配） 2006 年 9 月 5 日下午 5:24:42**  
