@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa3b81ceef83553d859aafa3f208ef619c2fc376
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8ff35975566b8260453a2cc4ca9a576576f915fe
+ms.sourcegitcommit: e172dedfd00d4de3a40c8289f3a97ef65cdadd3c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002830"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49401680"
 ---
 # <a name="security-with-the-oracle-e-business-suite-adapter-and-biztalk-server"></a>Oracle E-business Suite 适配器与 BizTalk Server 安全性
 配置发送端口或接收端口 （位置） 时使用 BizTalk Server 管理控制台，或者使用[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]若要检索的 BizTalk 解决方案的消息架构，必须提供凭据适用于 Oracle E-business Suite。 请务必以安全的方式来帮助防止暴露给潜在的恶意执行组件提供这些凭据。 本主题讨论如何最安全地提供的凭据[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]的 BizTalk Server 解决方案。  
@@ -74,6 +74,6 @@ ms.locfileid: "37002830"
   
  **AcceptCredentialsInUri**绑定属性中不可用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]中**绑定**时配置 WCF 自定义选项卡或 WCF OracleEBS 接收或发送端口。 若要设置的值**AcceptCredentialsInUri**绑定属性，必须打开后已生成元数据中使用创建的适配器的绑定文件 （XML 文件） [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]，然后找到在此绑定属性该文件。 指定此绑定属性的适当的值和保存绑定文件，然后导入绑定文件中的[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 请参阅[导入绑定](http://msdn.microsoft.com/library/7af35a2e-fb7c-48a1-af28-93427403a745)有关的说明。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [保护 Oracle EBS 应用程序](../../adapters-and-accelerators/adapter-oracle-ebs/secure-your-oracle-ebs-applications.md)  
  [最佳做法来保护 Oracle EBS 适配器](../../adapters-and-accelerators/adapter-oracle-ebs/best-practices-to-secure-the-oracle-e-business-suite-adapter.md)
