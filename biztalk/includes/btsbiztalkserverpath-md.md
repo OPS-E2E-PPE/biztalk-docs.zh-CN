@@ -1,1 +1,1 @@
-<span data-ttu-id="370ae-101">\Program Files\Microsoft BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="370ae-101">\Program Files\Microsoft BizTalk Server</span></span>
+<span data-ttu-id="c13ac-101">\Program Files\Microsoft BizTalk Server</span><span class="sxs-lookup"><span data-stu-id="c13ac-101">\Program Files\Microsoft BizTalk Server</span></span>
