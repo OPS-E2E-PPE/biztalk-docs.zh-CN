@@ -25,10 +25,10 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 10/18/2018
 ms.locfileid: "22277485"
 ---
-# <a name="soap-headers-with-consumed-wcf-services"></a><span data-ttu-id="a0401-102">SOAP 标头与使用的 WCF 服务</span><span class="sxs-lookup"><span data-stu-id="a0401-102">SOAP Headers with Consumed WCF Services</span></span>
-<span data-ttu-id="a0401-103">若要将消息发送到 WCF 服务与自定义 SOAP 标头，这些标头必须设置 （在示例中的表达式形状） 的业务流程和管道组件 （在代码中） 中为上下文属性**OutboundCustomHeaders**。</span><span class="sxs-lookup"><span data-stu-id="a0401-103">To send a message to a WCF service with the custom SOAP headers, these headers must be set in your orchestrations (in the Expression shape, for example) and pipeline components (in code) as the context property **OutboundCustomHeaders**.</span></span> <span data-ttu-id="a0401-104">此上下文属性位于目标命名空间**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**，并包含自定义 SOAP 标头的字符串表示形式。</span><span class="sxs-lookup"><span data-stu-id="a0401-104">This context property is in the target namespace **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**, and contains string representations of the custom SOAP headers.</span></span>  
+# <a name="soap-headers-with-consumed-wcf-services"></a><span data-ttu-id="57da7-102">SOAP 标头与使用的 WCF 服务</span><span class="sxs-lookup"><span data-stu-id="57da7-102">SOAP Headers with Consumed WCF Services</span></span>
+<span data-ttu-id="57da7-103">若要将消息发送到 WCF 服务与自定义 SOAP 标头，这些标头必须设置 （在示例中的表达式形状） 的业务流程和管道组件 （在代码中） 中为上下文属性**OutboundCustomHeaders**。</span><span class="sxs-lookup"><span data-stu-id="57da7-103">To send a message to a WCF service with the custom SOAP headers, these headers must be set in your orchestrations (in the Expression shape, for example) and pipeline components (in code) as the context property **OutboundCustomHeaders**.</span></span> <span data-ttu-id="57da7-104">此上下文属性位于目标命名空间 http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties ，并包含自定义 SOAP 标头的字符串表示形式。 </span><span class="sxs-lookup"><span data-stu-id="57da7-104">This context property is in the target namespace **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**, and contains string representations of the custom SOAP headers.</span></span>  
   
- <span data-ttu-id="a0401-105">以下 XML 传出消息中的数据显示的自定义 SOAP 标头的字符串表示形式示例**OutboundCustomHeaders**属性：</span><span class="sxs-lookup"><span data-stu-id="a0401-105">The data in the following XML outgoing message shows an example of the string representation of custom SOAP headers for the **OutboundCustomHeaders** property:</span></span>  
+ <span data-ttu-id="57da7-105">以下 XML 传出消息中的数据显示的自定义 SOAP 标头的字符串表示形式示例**OutboundCustomHeaders**属性：</span><span class="sxs-lookup"><span data-stu-id="57da7-105">The data in the following XML outgoing message shows an example of the string representation of custom SOAP headers for the **OutboundCustomHeaders** property:</span></span>  
   
 ```  
 <headers>  
@@ -37,14 +37,14 @@ ms.locfileid: "22277485"
 </headers>  
 ```  
   
- <span data-ttu-id="a0401-106">入站 SOAP 标头还包含 SOAP 标头的字符串表示形式。</span><span class="sxs-lookup"><span data-stu-id="a0401-106">Inbound SOAP headers also contain string representations of the SOAP headers.</span></span> <span data-ttu-id="a0401-107">此值类似于创建一个请求 SOAP 标头。</span><span class="sxs-lookup"><span data-stu-id="a0401-107">The values are similar to creating a request SOAP header.</span></span>  
+ <span data-ttu-id="57da7-106">入站 SOAP 标头还包含 SOAP 标头的字符串表示形式。</span><span class="sxs-lookup"><span data-stu-id="57da7-106">Inbound SOAP headers also contain string representations of the SOAP headers.</span></span> <span data-ttu-id="57da7-107">此值类似于创建一个请求 SOAP 标头。</span><span class="sxs-lookup"><span data-stu-id="57da7-107">The values are similar to creating a request SOAP header.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="a0401-108">本节内容</span><span class="sxs-lookup"><span data-stu-id="a0401-108">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="57da7-108">本节内容</span><span class="sxs-lookup"><span data-stu-id="57da7-108">In This Section</span></span>  
   
--   [<span data-ttu-id="a0401-109">通过业务流程使用 WCF 消息中的 SOAP 标头</span><span class="sxs-lookup"><span data-stu-id="a0401-109">Using SOAP Headers in WCF Messages with Orchestrations</span></span>](../core/using-soap-headers-in-wcf-messages-with-orchestrations.md)  
+-   [<span data-ttu-id="57da7-109">通过业务流程使用 WCF 消息中的 SOAP 标头</span><span class="sxs-lookup"><span data-stu-id="57da7-109">Using SOAP Headers in WCF Messages with Orchestrations</span></span>](../core/using-soap-headers-in-wcf-messages-with-orchestrations.md)  
   
--   [<span data-ttu-id="a0401-110">通过管道组件使用 WCF 消息中的 SOAP 标头</span><span class="sxs-lookup"><span data-stu-id="a0401-110">Using SOAP Headers in WCF Messages with Pipeline Components</span></span>](../core/using-soap-headers-in-wcf-messages-with-pipeline-components.md)  
+-   [<span data-ttu-id="57da7-110">通过管道组件使用 WCF 消息中的 SOAP 标头</span><span class="sxs-lookup"><span data-stu-id="57da7-110">Using SOAP Headers in WCF Messages with Pipeline Components</span></span>](../core/using-soap-headers-in-wcf-messages-with-pipeline-components.md)  
   
-## <a name="see-also"></a><span data-ttu-id="a0401-111">请参阅</span><span class="sxs-lookup"><span data-stu-id="a0401-111">See Also</span></span>  
- <span data-ttu-id="a0401-112">[WCF 适配器属性架构和属性](../core/wcf-adapters-property-schema-and-properties.md) </span><span class="sxs-lookup"><span data-stu-id="a0401-112">[WCF Adapters Property Schema and Properties](../core/wcf-adapters-property-schema-and-properties.md) </span></span>  
- [<span data-ttu-id="a0401-113">SOAP 标头与已发布的 WCF 服务</span><span class="sxs-lookup"><span data-stu-id="a0401-113">SOAP Headers with Published WCF Services</span></span>](../core/soap-headers-with-published-wcf-services.md)
+## <a name="see-also"></a><span data-ttu-id="57da7-111">请参阅</span><span class="sxs-lookup"><span data-stu-id="57da7-111">See Also</span></span>  
+ <span data-ttu-id="57da7-112">[WCF 适配器属性架构和属性](../core/wcf-adapters-property-schema-and-properties.md) </span><span class="sxs-lookup"><span data-stu-id="57da7-112">[WCF Adapters Property Schema and Properties](../core/wcf-adapters-property-schema-and-properties.md) </span></span>  
+ [<span data-ttu-id="57da7-113">SOAP 标头与已发布的 WCF 服务</span><span class="sxs-lookup"><span data-stu-id="57da7-113">SOAP Headers with Published WCF Services</span></span>](../core/soap-headers-with-published-wcf-services.md)
