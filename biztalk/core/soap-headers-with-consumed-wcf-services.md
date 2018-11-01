@@ -26,7 +26,7 @@ ms.lasthandoff: 10/18/2018
 ms.locfileid: "22277485"
 ---
 # <a name="soap-headers-with-consumed-wcf-services"></a>SOAP 标头与使用的 WCF 服务
-若要将消息发送到 WCF 服务与自定义 SOAP 标头，这些标头必须设置 （在示例中的表达式形状） 的业务流程和管道组件 （在代码中） 中为上下文属性**OutboundCustomHeaders**。 此上下文属性位于目标命名空间**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**，并包含自定义 SOAP 标头的字符串表示形式。  
+若要将消息发送到 WCF 服务与自定义 SOAP 标头，这些标头必须设置 （在示例中的表达式形状） 的业务流程和管道组件 （在代码中） 中为上下文属性**OutboundCustomHeaders**。 此上下文属性位于目标命名空间 http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties ，并包含自定义 SOAP 标头的字符串表示形式。   
   
  以下 XML 传出消息中的数据显示的自定义 SOAP 标头的字符串表示形式示例**OutboundCustomHeaders**属性：  
   
