@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5d218b9e3d0221a4eb3859bd3e10ad31c9f62508
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7d7088b25ec2526c19c60d21c9929afb92be42a7
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991206"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752757"
 ---
 # <a name="authorization-and-non-repudiation-properties"></a>授权和不可否认性属性
 本主题介绍了合作伙伴界面进程 (PIP) 的 `Is Authorization Required` 属性、`Non-Repudiation of Origin and Content` 属性，以及 `Non-Repudiation Required (Acknowledgement of Receipt)` 属性的行为。 它还介绍了这些属性的组合，Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]支持。  
@@ -48,22 +48,22 @@ ms.locfileid: "36991206"
 
 |是否要求授权|不可否认性和内容的|要求不可否认性（确认收到）|BTARN 是否支持？|  
 |-------------------------------|--------------------------------------------|--------------------------------------------------------------|-------------------------|  
-|`False`|`False`|`False`|是|  
-|`False`|`False`|`True`|否*|  
-|`False`|`True`|`False`|否**|  
-|`False`|`True`|`True`|否***|  
-|`True`|`False`|`False`|是****|  
-|`True`|`False`|`True`|是****|  
-|`True`|`True`|`False`|是|  
-|`True`|`True`|`True`|是|  
+|`False`|`False`|`False`|用户帐户控制|  
+|`False`|`False`|`True`|不\*|  
+|`False`|`True`|`False`|不\*\*|  
+|`False`|`True`|`True`|不\*\*\*|  
+|`True`|`False`|`False`|是的\*\*\*\*|  
+|`True`|`False`|`True`|是的\*\*\*\*|  
+|`True`|`True`|`False`|用户帐户控制|  
+|`True`|`True`|`True`|用户帐户控制|  
 
  \* [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 不支持此组合，因为它要求信号经过签名而操作不经过签名。  
 
- ** [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 不支持此组合，因为它要求操作经过签名而信号不经过签名。  
+ \*\* [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 不支持此组合，因为它要求操作经过签名而信号不经过签名。  
 
- *** [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 不支持此组合，因为设置为不可否认`True`的操作和信号意味着[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]执行授权。 因此，此组合无效。  
+ \*\*\* [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 不支持此组合，因为设置为不可否认`True`的操作和信号意味着[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]执行授权。 因此，此组合无效。  
 
- **** 在将“要求不可否认性”`Is Authorization Required`设置为 `True`，将“原始消息和内容的不可否认性”`Non-Repudiation of Origin and Content`设置为 `False` 时，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将消息存储在不可否认性表中。  
+ \*\*\*\* 当您将设置`Is Authorization Required`到`True`并`Non-Repudiation of Origin and Content`到`False`，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]将消息存储在不可否认性表中。  
 
 ## <a name="see-also"></a>请参阅  
  [如何创建或编辑流程配置](../../adapters-and-accelerators/accelerator-rosettanet/how-to-create-or-edit-a-process-configuration.md)

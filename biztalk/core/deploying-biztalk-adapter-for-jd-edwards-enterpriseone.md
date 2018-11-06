@@ -13,12 +13,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 708e9d3513c9d36e9a4aa28d607332e4c1aac077
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e9c6f24ff4cb7060d0cddf29d82f4035d8407dca
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989366"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50753189"
 ---
 # <a name="import-the-jd-edwards-enterpriseone-application"></a>JD Edwards EnterpriseOne 应用程序导入
   
@@ -45,7 +45,7 @@ ms.locfileid: "36989366"
   
 -   用于响应的文件夹存在，并且在新计算机上相同，否则编辑绑定文件。  
   
--   如果在配置中存在 JD Edwards EnterpriseOne 系统密码，则在绑定文件中另存为 *****。 有关详细信息，请参阅**限制**本主题中。
+-   JD Edwards EnterpriseOne 系统密码，如果存在在配置中，将另存为\* \* \* \* \*绑定文件中。 有关详细信息，请参阅**限制**本主题中。
 
 ## <a name="clean-the-target-computer"></a>清理目标计算机
 当重新绑定文件 （和程序集） 部署的目标计算机上，发送端口和接收位置将替换中的 XML 绑定文件时它们重新导入。  
@@ -62,7 +62,7 @@ ms.locfileid: "36989366"
 cscript RemoveSendPort.vbs \<Send port name\>
 ```
 ## <a name="limitations"></a>限制
-传输适配器密码在导出的绑定文件中存储为星号 （*） [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，并将其传递到相同的格式中的管理组件。 在导入之前编辑绑定文件，将星号替换为某些无效的值（即，不替换为正确密码）。  
+传输适配器密码存储为星级 (\*\*\*\*\*\*) 中导出的绑定文件[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，并将其传递到中的管理组件相同的格式。 在导入之前编辑绑定文件，将星号替换为某些无效的值（即，不替换为正确密码）。  
   
  在导出绑定信息时，得到的绑定文件不包含传输适配器曾经在接收位置/发送端口中使用过的任何密码。 这样可防止以明文形式显示密码信息。 下次使用该文件导入绑定信息时，你必须使用传输属性页用户界面中输入的密码。  
   

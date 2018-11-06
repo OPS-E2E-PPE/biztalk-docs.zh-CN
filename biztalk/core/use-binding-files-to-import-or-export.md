@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b9ed0f50d6a6d841169b16f3f3ffd485ee345aeb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: af5902812edb528504b2eeac402aad77f647582a
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990590"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752869"
 ---
 # <a name="use-binding-files-to-import-or-export"></a>使用绑定文件导入或导出
 
@@ -42,7 +42,7 @@ ms.locfileid: "36990590"
 
 ## <a name="prerequisites"></a>必要條件
 
-* 您必须是的成员的帐户登录 * * BizTalk Server 管理员 * * 组。 请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
+* 您必须是的成员的帐户登录**BizTalk Server Administrators**组。 请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
 
 * 您必须添加对的引用**BizTalk EDI 应用程序**从将用作 EDI 应用程序的 BizTalk 应用程序。 请参阅[配置后步骤](../install-and-config-guides/post-configuration-steps-to-optimize-your-environment.md)。
 

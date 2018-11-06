@@ -11,12 +11,12 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: ribarua
 manager: dougeby
-ms.openlocfilehash: ab724870e9c75a60119e86f7f62d6823f1db9873
-ms.sourcegitcommit: e7609c319b64ec20bf215d17aa5ac4f9dcae52ec
+ms.openlocfilehash: 6787ece4af5ebdd17733dde33ae524f2c9b802e8
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946154"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752645"
 ---
 # <a name="create-calendar-events-with-the-office-365-outlook-calendar-adapter---biztalk-server"></a>使用 Office 365 Outlook 日历适配器的 BizTalk Server 创建日历事件
 
@@ -40,7 +40,7 @@ ms.locfileid: "36946154"
 
     |使用此选项|执行的操作|  
     |---|---|  
-    | **日历** | 选择要在其中创建事件的日历。 |
+    | **Calendar** | 选择要在其中创建事件的日历。 |
     | **主题** | 设置创建的事件的默认主题。 （最多 256 个字符） |
     | **必需的与会者** | 输入所需的默认与会者电子邮件地址分隔;。 （最多 256 个字符） |
     | **可选与会者** | 输入可选与会者电子邮件地址分隔应用默认值;。 （最多 256 个字符） |
@@ -59,7 +59,7 @@ ms.locfileid: "36946154"
 
 可以使用简单文件接收端口和位置来创建 Office 365 Outlook 日历上的事件。
 
-1. 创建使用文件适配器的接收端口。 在你接收位置，则设置**接收文件夹**到 **C:\Temp\In\**，并将文件掩码设置为 **\*.xml**。
+1. 创建使用文件适配器的接收端口。 在你接收位置，则设置**接收文件夹**到**c:\\Temp\\中\\**，并将文件掩码设置为 **\*.xml**.
 2. 在您的 Office 365 Outlook 日历适配器发送端口属性，设置**筛选器**到`BTS.ReceivePortName == <Receive Port Name>`。
 3. 将以下粘贴到文本编辑器中，并将该文件作为**Office365Calendar.xml**。 这是您的示例消息。
 
@@ -106,7 +106,7 @@ ms.locfileid: "36946154"
 
     |使用此选项|执行的操作|  
     |---|---|  
-    | **日历** | 选择要从其提取事件的日历。  |
+    | **Calendar** | 选择要从其提取事件的日历。  |
     | **内开始** | 选择日历事件必须在其中以接收的 BizTalk （默认值为 15 分钟） 的开始的时间间隔。  |
 
 7. 选择一个日历：
@@ -123,7 +123,7 @@ ms.locfileid: "36946154"
 
 可以使用简单的 File 发送端口从 Office 365 Outlook 日历接收消息。
 
-1. 创建使用文件适配器的发送端口。 在发送端口的属性，设置**目标文件夹**到 **C:\Temp\Out\**，并将设置和**文件的名称**到 **%MessageID%.xml**.
+1. 创建使用文件适配器的发送端口。 在发送端口的属性，设置**目标文件夹**到**c:\\Temp\\出\\**，并将设置和**文件名**到 **%MessageID%.xml**。
 2. 在你的文件将发送端口属性，设置**筛选器**到`BTS.ReceivePortName == <Receive Port Name>`。
 3. 启动 Office 365 Outlook 日历接收位置和 File 发送端口。
 4. 查找目标文件夹 (c:\temp\out) 中的消息。 

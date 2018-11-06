@@ -18,12 +18,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e240fbc99705c18a0e789a1ddea0e26d8f479e55
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a62a8c2c6d2bb74c9e68fcdcf1304e6d0cd99d67
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984038"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752621"
 ---
 # <a name="creating-affiliate-applications"></a>创建关联应用程序
 以下步骤介绍如何使用 SSO 开始使用关联应用程序。  
@@ -43,7 +43,7 @@ ms.locfileid: "36984038"
   
 3. 使用企业单一登录命令。 命令的列表，请 **-帮助**切换。  
   
-4. 若要以使用 *.XML 作为创建关联应用程序的起始操作，请键入以下命令：  
+4. 若要创建关联应用程序使用\*。XML 作为一个开始，请键入以下命令：  
   
     `ssomanage.exe -createapps C:\SSOtest\AffiliateApplication.xml`  
   

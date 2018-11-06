@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 72c43e5048d55c028bb689bd06e5f8c5844cc064
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fe36c4a8b9aa6d081ebde854e6a4c57f9492df67
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986702"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50753205"
 ---
 # <a name="how-to-move-the-bam-primary-import-database"></a>如何移动 BAM 主导入数据库
 您可以使用此过程将 BAM 主导入数据库移至其他服务器。 从端到端方案的角度看，移动 BAM 主导入数据库涉及两个主要步骤：  
@@ -161,7 +161,7 @@ ms.locfileid: "36986702"
   
 4.  在中**Integration Services 项目**对话框中，在解决方案资源管理器，右键单击**SSIS 包**，然后单击**添加现有包**。  
   
-5.  在中**添加现有包副本**对话框中**Server**下拉列表框中，选择包含 BAM_AN_ * 和 BAM_DM_ * 包的服务器。  
+5.  在中**添加现有包副本**对话框中**服务器**下拉列表框中，选择包含 BAM_AN_ 服务器\*和 BAM_DM_\*包。  
   
 6.  在中**包路径**，请单击省略号按钮。  
   

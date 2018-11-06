@@ -10,12 +10,12 @@ ms.assetid: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ecb8e527abe896719da881f0c7df0e4f5566a90f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1cd5c218e6862791b8eb2f6a80848c4f8b2755b8
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005798"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752669"
 ---
 # <a name="install-biztalk-accelerator-for-rosettanet"></a>安装 BizTalk Accelerator for RosettaNet
 
@@ -55,7 +55,7 @@ ms.locfileid: "37005798"
 ### <a name="before-you-begin"></a>开始之前
 
 * 对于 BTARN 数据库中，BTARN 仅可配置 SQL Server 计算机名称和数据库名称属性。 有关这些属性的信息存储在注册表中。
-* 使用的成员帐户登录的 BizTalk Server Administrators 组。 
+* 使用 BizTalk Server Administrators 组的成员帐户登录。 
 * 在 BizTalk Server 下载中，BTARN 安装过程中`\BizTalk Accelerators`文件夹。
 * 必须安装 BizTalk Server，并且必须运行 SQL Server。
 * BTARN 和 BizTalk Server 需要 Microsoft.NET Framework 软件必备组件。 如果必须在计算机上安装的.NET Framework 的多个版本，请确保 BtarnAPP Web 应用程序引用的.NET Framework 4.0 经典。 你可以使用 Internet 信息服务 (IIS) 管理器对此进行配置。  

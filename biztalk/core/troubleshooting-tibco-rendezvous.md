@@ -13,17 +13,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ccbf7efb3d61f35c1fb54eb709471f0913314ea7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 30c9f80b2d5426c6a967f9fe57d923971d1fa305
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977881"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752393"
 ---
 # <a name="troubleshoot-tibco-rendezvous"></a>TIBCO Rendezvous 疑难解答
   
 ## <a name="use-event-tracing-for-windows"></a>使用 Windows 事件跟踪
-用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器将错误、 警告和信息消息记录到 Windows 事件查看器。 使用 Windows 事件跟踪 (ETW) 工具，可以看到更多的跟踪消息。 激活 ETW 后，会创建一个 *.etl 文件以接收这些消息。 该文件为二进制格式，必须将其转换为可读格式。 若要执行此操作，必须提供要解释的使用者应用程序\*.etl 文件，例如，tracerpt.exe 或 tracedmp.exe。 例如，tracerpt.exe 应用程序会将转换\*.etl 文件到两个文本文件： summary.txt 和 dumpfile.csv。  
+用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器将错误、 警告和信息消息记录到 Windows 事件查看器。 使用 Windows 事件跟踪 (ETW) 工具，可以看到更多的跟踪消息。 激活 ETW 后，它会创建\*.etl 文件以接收消息。 该文件为二进制格式，必须将其转换为可读格式。 若要执行此操作，必须提供要解释的使用者应用程序\*.etl 文件，例如，tracerpt.exe 或 tracedmp.exe。 例如，tracerpt.exe 应用程序会将转换\*.etl 文件到两个文本文件： summary.txt 和 dumpfile.csv。  
   
 ## <a name="etw-components"></a>ETW 组件  
  Windows 事件跟踪包括以下三个组件：  
@@ -94,7 +94,7 @@ BTATIBCORVTrace <Trace element> -stop
 BTATIBCORVTrace -transmitter -start -cir 10 -rt c:\log\mylog.etl  
 BTATIBCORVTrace -transmitter -stop  
 ```  
-## <a name="see-more"></a>查看更多
+## <a name="see-more"></a>查看详细信息
 [处理异常](../core/using-biztalk-server-exception-handling4.md)  
 [Security](../core/security-in-biztalk-adapter-for-tibco-rendezvous.md)  
 [体系结构](../core/architecture-of-biztalk-adapter-for-tibco-rendezvous.md)

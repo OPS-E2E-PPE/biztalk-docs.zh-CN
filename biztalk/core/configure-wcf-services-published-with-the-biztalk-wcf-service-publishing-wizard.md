@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6424d3101023b6521700a30b8cf4460e09e1ff14
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 21009f82632140156957a831a40bcbf4c65982ee
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988382"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752925"
 ---
 # <a name="how-to-configure-wcf-services-published-with-the-biztalk-wcf-service-publishing-wizard"></a>如何配置使用 BizTalk WCF 服务发布向导发布的 WCF 服务
 使用 BizTalk WCF 服务发布向导发布 WCF 服务之后，必须对其进行正确配置。 本主题介绍如何配置发布的 WCF 服务。  
@@ -83,7 +83,7 @@ ms.locfileid: "36988382"
     > [!NOTE]
     >  此设置是可选的，用于向已发布的 WCF 服务的宿主 ASP.NET 应用程序授予对受操作系统安全机制保护的任何资源的访问权限。 如果在已发布的 WCF 服务所在的计算机上安装并运行了 Windows SharePoint Services，则这是 WCF 所必需的信任级别。  
 
-14. 在 Internet Explorer 中，在**地址**框中，键入格式为 http:// 的 WCF 服务 URL<em>主机 [: 端口]</em>/*apppath* /*wcfservicename.svc*以测试已发布的 WCF 服务。 介绍了下表的参数。  
+14. 在 Internet Explorer 中，在**地址**框中，键入格式为 的 WCF 服务 URL http://<em>主机 [: 端口]</em>/*apppath* /*wcfservicename.svc*以测试已发布的 WCF 服务。 介绍了下表的参数。  
 
 
     |      参数       |                                                            ReplTest1                                                            |

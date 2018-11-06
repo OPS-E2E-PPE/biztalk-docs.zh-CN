@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ad2e2db5e7d4d8c8181248f9345f1df2cca4a6dd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ab1f869d8d7c06260a1f7f8388991a0e18a2ff09
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985094"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50758692"
 ---
 # <a name="troubleshooting-issues-and-resolutions"></a>故障排除： 问题和解决方法
 本主题介绍与运行 Microsoft® 相关的问题[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]。 每个问题都详细描述了一种特定的症状、其可能的原因以及解决方案。  
@@ -104,7 +104,7 @@ ms.locfileid: "36985094"
   
  -或-  
   
- 终止 id 的 BAM 消息活动时出错* \<ID 号\>*。  
+ 终止 id 的 BAM 消息活动时出错 *\<ID 号\>*。  
   
 ### <a name="possible-cause"></a>可能的原因  
  未安装业务活动监视 (BAM) 跟踪工具。  
@@ -216,7 +216,7 @@ ms.locfileid: "36985094"
   
     ```  
     cd %ProgramFiles%\Microsoft BizTalk Server <version>\Tracking  
-    bm deploy all  "%ProgramFiles%\Microsoft BizTalk <version> Accelerator for RosettaNet\BAMTracking\tracking.xml"  
+    bm deploy all  "%ProgramFiles%\Microsoft BizTalk <version> Accelerator for RosettaNet\BAMTracking\tracking.xml"  
     ```  
   
 ## <a name="you-receive-an-error-when-adding-a-new-pip"></a>添加新的 PIP 时出现错误  
@@ -329,7 +329,7 @@ ms.locfileid: "36985094"
   
  1. 启用 32 位程序的 BTARN 应用程序池。  
   
- 2. 为引用 IsapiModule 筛选器的 *.dll 添加 HTTP 处理程序。  
+ 2. 添加的 HTTP 处理程序\*.dll 引用 IsapiModule 筛选器。  
   
 ## <a name="see-also"></a>请参阅  
  [BtarnClean](../../adapters-and-accelerators/accelerator-rosettanet/btarnclean.md)   

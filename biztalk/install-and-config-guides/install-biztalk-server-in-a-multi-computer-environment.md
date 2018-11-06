@@ -2,7 +2,7 @@
 title: 在多计算机环境中安装 BizTalk Server |Microsoft Docs
 description: 当 BizTalk 和 SQL Server 安装在不同的计算机，其中包括 BAM 上多服务器安装和设置指南
 ms.custom: ''
-ms.date: 11/30/2017
+ms.date: 09/27/2018
 ms.prod: biztalk-server
 ms.reviewer: ''
 ms.suite: ''
@@ -13,12 +13,12 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9fe6c7692f8fa370a357b2a2e53bcda97f008884
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5243cb9dd53fdeec4d3dac46f54f2851befa1b15
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972206"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50753237"
 ---
 # <a name="install-biztalk-server-in-a-multi-computer-environment"></a>在多计算机环境中安装 BizTalk Server
 
@@ -39,7 +39,7 @@ BizTalk Server 提供了使用网络负载平衡 (NLB) 群集和故障转移群�
 
 **NLB 和故障转移群集**相互补充在复杂的体系结构中。 NLB 群集用于前端 Web 服务器之间的负载平衡请求。 故障转移群集为 BizTalk Server 进程内宿主、企业单一登录主密钥服务器以及 BizTalk Server 数据库提供高可用性。 这通常用于在本地环境。 以下是有用的资源： 
 
-* [BizTalk Server： 高可用性生存指南](http://social.technet.microsoft.com/wiki/contents/articles/6532.biztalk-server-high-availability-survival-guide.aspx)
+* [BizTalk Server：高可用性生存指南](http://social.technet.microsoft.com/wiki/contents/articles/6532.biztalk-server-high-availability-survival-guide.aspx)
 
 * [通过使用 Windows Server 故障转移群集或 Windows Server 群集改进 BizTalk Server 中的容错能力](http://go.microsoft.com/fwlink/p/?LinkId=154499)
 
@@ -296,13 +296,13 @@ BAM 由以下层组成：
 ### <a name="windows-groups"></a>Windows 组
 下表列出了 BizTalk Server 使用的 Windows 组及其成员。 它还给出了这些组的 SQL Server 角色或数据库角色。
 
-| 分组 | 组说明 | 成员身份 | SQL Server 角色或数据库角色 | 
+| Group | 组说明 | 成员身份 | SQL Server 角色或数据库角色 | 
 | ---|---|---|---|
 | SSO Administrators | 企业单一登录 (SSO) 服务的管理员。 [指定 SSO 管理员帐户和关联管理员帐户](../core/how-to-specify-sso-administrators-and-affiliate-administrators-accounts.md)提供了更多信息。 | 包含企业单一登录服务的服务帐户。 包含需要能够配置和管理 BizTalk Server 和 SSO 服务的用户/组。包含用于在配置 SSO 主密钥服务器时运行 BizTalk 配置管理器的帐户。 | **db_owner** sso 的 SQL Server 数据库角色 <br/><br/>**securityadmin** SSO 所在的 SQL server 的 SQL Server 角色。 |
 | SSO Affiliate Administrators | 某些 SSO 关联应用程序的管理员。 他们能够创建/删除 SSO 关联应用程序，管理用户映射，以及为关联应用程序用户设置凭据。 | 不包含服务帐户。 包含 BizTalk Server 管理员使用的帐户。| |
 |BizTalk Server Administrators | 具有执行管理任务所需的最少权限。 可以部署解决方案，管理应用程序并解决在消息处理过程中出现的问题。 若要执行关于适配器、接收处理程序、发送处理程序和接收位置的管理任务，则必须将 BizTalk Server Administrators 的成员添加到 Single Sign-On Affiliate Administrators 中。 请参阅[管理 BizTalk Server 安全性](../core/managing-biztalk-server-security.md)。 | 包含配置和管理 BizTalk Server 所需的用户/组。 | **BTS_ADMIN_USERS**以下数据库中的 SQL Server 数据库角色：<br/>BizTalkMgmtDb<br/>BizTalkMsgBoxDb<br/>BizTalkRuleEngineDb<br/>BizTalkDTADb<br/>BAMPrimaryImport<br/><br/>**db_owner**以下数据库的 SQL Server 数据库角色：<br/>BAMStarSchema<br/>BAMPrimaryImport<br/>BAMArchive<br/>BAMAlertsApplication<br/>BAMAlertsNSMain<br/><br/>**NSAdmin**以下数据库中的 SQL Server 数据库角色： <br/>BAMAlertsApplication<br/>BAMAlertsNSMain<br/><br/>以下数据库中的 SQL Server 数据库角色： <br/>BizTalkDTADb<br/>BizTalkMgmtDb。 <br/><br/>**OLAP 管理员**承载 BAMAnalysis OLAP 数据库的计算机上。 |
 | BizTalk Server Operators | 具有低权限角色，仅有权监视和故障排除操作。 | 包含监视解决方案的用户/组。 不包含服务帐户。 | **BTS_OPERATORS**以下数据库中的 SQL Server 数据库角色： <br/>BizTalkDTADb<br/>BizTalkEDIDb<br/>BizTalkMgmtDb<br/>BizTalkMsgBoxDb<br/>BizTalkRuleEngineDb | 
-| BizTalk Application Users | 由配置管理器创建的首个进程内 BizTalk 主机组的默认名称。 在你的环境中每个进程内主机将使用一个 BizTalk 主机组。 包含能够访问进程内 BizTalk 主机（BizTalk Server 中的主机进程 BTSNTSvc.exe）的帐户。 | 包含 BizTalk 主机组所属主机中，BizTalk 进程内主机实例的服务帐户。  | **BTS_HOST_USERS**以下数据库中的 SQL Server 数据库角色：<br/>BizTalkMgmtDb<br/>BizTalkMsgBoxDb<br/>BizTalkRuleEngineDb<br/>BizTalkDTADb<br/>BAMPrimaryImport<br/><br/> **BAM_EVENT_WRITER** BAMPrimaryImport 中的 SQL Server 数据库角色。 | 
+| BizTalk Application Users | 由配置管理器创建的首个进程内 BizTalk 主机组的默认名称。 在你的环境中每个进程内主机将使用一个 BizTalk 主机组。 包含能够访问进程内 BizTalk 主机（BizTalk Server 中的主机进程 BTSNTSvc.exe）的帐户。 | 包含在进程内 BizTalk 主机实例和 BizTalk 主机组所属主机中的 BizTalk 规则引擎服务的服务帐户。  | **BTS_HOST_USERS**以下数据库中的 SQL Server 数据库角色：<br/>BizTalkMgmtDb<br/>BizTalkMsgBoxDb<br/>BizTalkRuleEngineDb<br/>BizTalkDTADb<br/>BAMPrimaryImport<br/><br/> **BAM_EVENT_WRITER** BAMPrimaryImport 中的 SQL Server 数据库角色。 | 
 | BizTalk Isolated Host Users | 由配置管理器创建的首个独立 BizTalk 主机组的默认名称。 独立 BizTalk 主机指不在 BizTalk Server 上运行的 BizTalk 主机，例如 HTTP 和 SOAP。 在你的环境中每个独立主机将使用一个 BizTalk 独立主机组。 | 包含独立 BizTalk 主机组所属主机中，BizTalk 独立主机实例的服务帐户。 | **BTS_HOST_USERS**以下数据库中的 SQL Server 数据库角色：<br/>BizTalkMgmtDb<br/>BizTalkMsgBoxDb<br/>BizTalkRuleEngineDb<br/>BizTalkDTADb<br/>BAMPrimaryImport | 
 | EDI Subsystem Users | 能够访问 EDI 数据库。 | 包含 BizTalk 基本 EDI 服务的服务帐户。 | **EDI_ADMIN_USERS** BizTalkEDIDb 中的 SQL Server 数据库角色。 | 
 | BAM Portal Users | 有权访问 BAM 门户网站。 | 默认情况下，此角色使用 Everyone 组。 不包含服务帐户。 |  | 

@@ -16,15 +16,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f20d24f15ef1ec72e01244e84b8231fe0b2d7a48
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 75f5a62f2ae243c6fd3eabc5d40f99136471ad30
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982230"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752323"
 ---
 # <a name="using-event-tracing-for-windows"></a>使用的 Windows 事件跟踪
-适用于 JD Edwards EnterpriseOne 的 Microsoft BizTalk 适配器将错误、警告和信息消息记录到 Windows 事件查看器中。 可以使用 Windows 事件跟踪 (ETW) 工具来查看更多的跟踪消息。 激活 ETW 后，会创建一个 *.etl 文件以接收这些消息。 该文件为二进制格式，必须将其转换为可读格式。 若要执行此操作，必须提供要解释的使用者应用程序\*.etl 文件; 例如，tracerpt.exe 或 tracedmp.ex。 Tracept.exe 应用程序将转换\*.etl 到两个文本文件： summary.txt 和 dumpfile.csv。  
+适用于 JD Edwards EnterpriseOne 的 Microsoft BizTalk 适配器将错误、警告和信息消息记录到 Windows 事件查看器中。 可以使用 Windows 事件跟踪 (ETW) 工具来查看更多的跟踪消息。 激活 ETW 后，它会创建\*.etl 文件以接收消息。 该文件为二进制格式，必须将其转换为可读格式。 若要执行此操作，必须提供要解释的使用者应用程序\*.etl 文件; 例如，tracerpt.exe 或 tracedmp.ex。 Tracept.exe 应用程序将转换\*.etl 到两个文本文件： summary.txt 和 dumpfile.csv。  
   
 ## <a name="etw-components"></a>ETW 组件  
  Windows 事件跟踪包括以下三个组件：  

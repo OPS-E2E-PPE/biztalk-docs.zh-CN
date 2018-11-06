@@ -15,12 +15,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c9d01e5eaf96c6490c68424fd09e297e0e60ef9d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 31925296de1e9c6f017e2447e0dccfd699ac177c
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979390"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752549"
 ---
 # <a name="creating-and-using-business-rules"></a>创建和使用业务规则
 业务规则（或业务策略）定义并控制着组织的结构、运作和策略。 业务规则可能在操作程序手册、合同或协议中正式定义，也可能作为知识或员工所拥有的专门技术存在着。 业务规则是动态的，可能随时间的推移而不断变更，并存在于各种类型的应用程序中。 金融和保险、电子商务、运输、电信、基于 Web 的服务以及个性化只是受业务规则支配的众多业务领域中的几种。 这些业务领域中的每一种都需要将业务战略、策略和规章传递给信息技术 (IT) 人员，以便使之包括在软件应用程序中。  
@@ -41,7 +41,7 @@ ms.locfileid: "36979390"
   
   使用业务规则框架创建的业务规则（策略）可以在已编排为业务流程的业务程序中使用，如下图所示。  
   
-  ![在过程中显示的业务策略的关系图。](../core/media/ebiz-dev-busprcsi.gif "ebiz_dev_busprcsi")  
+  ![显示进程中的业务策略的关系图。](../core/media/ebiz-dev-busprcsi.gif "ebiz_dev_busprcsi")  
   业务策略  
   
   本部分提供有关如何利用业务规则框架并使用工具的概念信息，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]提供来开发业务规则。  

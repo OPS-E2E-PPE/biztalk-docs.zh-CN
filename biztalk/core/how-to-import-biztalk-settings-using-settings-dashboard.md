@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3713ee7906d735b6328b50d3b97a214422893d21
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c2a825158f43ea085fd0e84aeb15001ea88b6d7f
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970214"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752773"
 ---
 # <a name="use-settings-dashboard-to-import-or-export-biztalk-settings"></a>使用设置仪表板导入或导出 BizTalk 设置 
 
@@ -111,7 +111,7 @@ ms.locfileid: "36970214"
 3. 浏览至要保存当前 BizTalk 设置的位置。 输入的文件名，选择类型为 XML 格式，然后单击**保存**。  
 
 > [!IMPORTANT]
->  我们做不建议手动更新导出的 XML 文件。 已更新的 XML 文件导入到生产环境中，导入过程可能会由于某些数据类型不匹配或由手动编辑导致其他错误而失败。  
+>  我们不建议手动更新导出的 XML 文件。 已更新的 XML 文件导入到生产环境中，导入过程可能会由于某些数据类型不匹配或由手动编辑导致其他错误而失败。  
 
 ## <a name="see-also"></a>请参阅  
  [使用设置仪表板进行 BizTalk Server 性能调整](../core/using-settings-dashboard-for-biztalk-server-performance-tuning.md)

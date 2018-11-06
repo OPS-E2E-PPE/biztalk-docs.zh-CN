@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b85d4a0dae708ef3f26304bce31ebd87fc230516
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 66b5ca07676ba40a9ef1b5536b2b05d5ba2e321b
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023715"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50753125"
 ---
 # <a name="appendix-c-redistributable-cab-files"></a>附录 C：可再发行的 CAB 文件
 BizTalk Server 安装程序使用这些 CAB 文件。
@@ -29,7 +29,7 @@ BizTalk Server 安装程序使用这些 CAB 文件。
 |EN|<ul><li>**X64**<br /><br /> <ul><li>Windows Server 2016: [http://go.microsoft.com/fwlink/p/?LinkId=746413](http://go.microsoft.com/fwlink/p/?LinkId=746413)</li><li>Windows Server 2012 R2: [http://go.microsoft.com/fwlink/p/?LinkId=746412](http://go.microsoft.com/fwlink/p/?LinkId=746412)</li><li>Windows 10: [http://go.microsoft.com/fwlink/p/?LinkId=746408](http://go.microsoft.com/fwlink/p/?LinkId=746408)</li><li>Windows 8.1： [http://go.microsoft.com/fwlink/p/?LinkId=746411](http://go.microsoft.com/fwlink/p/?LinkId=746411)</li></ul></li><li>**X32**<br /><br /><ul><li>Windows 10: [http://go.microsoft.com/fwlink/p/?LinkId=746409](http://go.microsoft.com/fwlink/p/?LinkId=746409)</li><li>Windows 8.1： [http://go.microsoft.com/fwlink/p/?LinkId=746410](http://go.microsoft.com/fwlink/p/?LinkId=746410)</li></ul></li></ul>|  
 
 > [!NOTE] 
-> Windows 10 和 Windows Server 2016 与 Windows 8.1 和 Windows Server 2012 R2 使用相同的 CAB 文件。 结果是，它们拥有相同的文件名。
+> Windows 10 和 Windows Server 2016 与 Windows 8.1 和 Windows Server 2012 R2 使用相同的 CAB 文件。 因此，它们具有相同的文件名称。
 
 ## <a name="biztalk-2013-r2-and-2013-cab-files"></a>BizTalk 2013 R2 和 2013 CAB 文件  
 

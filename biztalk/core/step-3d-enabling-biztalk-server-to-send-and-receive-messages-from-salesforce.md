@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0ea447687ab6b5eeaacf990acb5467e3f67adc60
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 35e34692c0ae64385c4f7d81dc92e82aee6ae88a
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991670"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50753005"
 ---
 # <a name="step-3d-enabling-biztalk-server-to-send-and-receive-messages-from-salesforce"></a>步骤 3d： 使 BizTalk Server 发送和接收来自 Salesforce 的消息
 使用 REST 接口发送消息时，我们必须向 Salesforce 进行身份验证。 Salesforce 支持的 REST 调用的身份验证方法并不是 WCF-WebHttp 适配器现成提供的，我们将使用该适配器来调用 Salesforce 的 REST 接口。 因此，我们将创建自定义 WCF 终结点行为，然后将其附加到我们配置用于调用 Salesforce REST 接口的 WCF-WebHttp 发送适配器。  
@@ -67,7 +67,7 @@ ms.locfileid: "36991670"
   
 4. 添加一个实现了 `SalesforceRESTSecurityBehavior` 和 `IClientMessageInspector` 的类 `IEndpointBehavior`。 此类包含对 Salesforce 身份验证终结点进行 HTTP POST 调用以检索授权令牌的 `HttpPost()` 和 `FetchOAuthToken()` 方法。  
   
-    由于 `SalesforceRESTSecurityBehavior` 类实现了 `IClientMessageInspector` 接口，它必须实现两个方法：`AfterReceiveReply()` 和 `BeforeSendRequest()`。 在此方案中，我们不需要在 `AfterReceiverReply()` 方法中执行任何操作。 但是，`BeforeSendRequest()` 方法将调用 `FetchOAuthToken()` 方法，后者又调用 `HttpPost()` 方法。 然后，`BeforeSendRequest()` 方法将添加授权令牌作为消息标头的一部分。 它还添加了**接受**标头，以确保从 Salesforce 收到的响应所采用 XML 格式。  
+    由于 `SalesforceRESTSecurityBehavior` 类实现了 `IClientMessageInspector` 接口，它必须实现两个方法：`AfterReceiveReply()` 和 `BeforeSendRequest()`。 在此方案中，我们不需要在 `AfterReceiverReply()` 方法中执行任何操作。 但是，`BeforeSendRequest()` 方法将调用 `FetchOAuthToken()` 方法，后者又调用 `HttpPost()` 方法。 然后，`BeforeSendRequest()` 方法将添加授权令牌作为消息标头的一部分。 它还添加了**接受**标头，以确保从 Salesforce 收到的响应采用 XML 格式。  
   
     `IEndpointBehavior` 实现只是将消息检查器类添加到客户端终结点行为。  
   

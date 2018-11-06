@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6cfd0ddfbdbe55480d249c01e68a0e571da63591
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 101d3600bbe38115bb20983e84ddd9192f8daf00
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006094"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752685"
 ---
 # <a name="install-biztalk-accelerator-for-swift"></a>安装 BizTalk Accelerator for SWIFT
 安装[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef_md](../../includes/a4swift-currentversion-firstref-md.md)]BizTalk 服务器上。 
@@ -46,7 +46,7 @@ ms.locfileid: "37006094"
 
 ### <a name="before-you-begin"></a>开始之前
 
-* 使用的成员帐户登录的 BizTalk Server Administrators 组。 
+* 使用 BizTalk Server Administrators 组的成员帐户登录。 
 * 在您的 BizTalk Server 下载[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]安装过程中`\BizTalk Accelerators`文件夹。
 * 必须安装 BizTalk Server，并且必须运行 SQL Server。
 * 无提示安装受支持，但不是建议所需的其他配置步骤的复杂性。

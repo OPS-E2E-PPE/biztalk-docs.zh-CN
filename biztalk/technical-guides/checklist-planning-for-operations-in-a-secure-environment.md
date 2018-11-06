@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9caa74fbd3e9ac06728a9e2ee332bb3277f8a240
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fb882531141114842983ca93be9d799898ecefdf
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995918"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50753109"
 ---
 # <a name="checklist-planning-for-operations-in-a-secure-environment"></a>清单： 规划在安全环境中的操作
 运行[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]在安全环境中部署和配置需要额外的步骤。 虽然默认的操作系统安装不需要考虑这些帐户，但方案已在其中应用严格的安全策略，您应考虑到本部分中的帐户信息。 限制应用到的服务器上的级别可能不同，但以下信息应涵盖大多数情况下，并且会很好的起点。  
@@ -45,7 +45,7 @@ ms.locfileid: "36995918"
  若要启动服务 MMC 管理单元中，单击**启动**，单击**运行**，然后在**运行**对话框中，键入`services.msc`然后按 ENTER。  
 
 
-|                Service name                 | 启动类型<sup>1</sup> |                                                              详细信息                                                               |       用户<sup>2</sup>        | 权限  |             详细信息             |
+|                Service name                 | 启动类型<sup>1</sup> |                                                              详细信息                                                               |       用户<sup>2</sup>        | Permissions  |             详细信息             |
 |---------------------------------------------|--------------------------|------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|--------------|---------------------------------|
 |           COM+ System Application           |        自动         |                                                BizTalk 要求才能正常运行                                                 |           （默认值）           |              |                                 |
 |                 DHCP 客户端                 |        自动         |                                              如果即使是静态的 IP 地址被必需的                                              |           （默认值）           |              |                                 |
@@ -70,7 +70,7 @@ ms.locfileid: "36995918"
 ### <a name="registry-settings"></a>注册表设置  
  若要启动注册表编辑器，请单击**启动**，单击**运行**，然后在**运行**对话框中，键入`regedit`然后按 ENTER。  
 
-|Key|用户|权限|详细信息|  
+|Key|用户|Permissions|详细信息|  
 |---------|----------|-----------------|-------------|  
 |HKLM\ SYSTEM\CurrentControlSet\Services\DHCP|Network Service|完全控制|DHCP 客户端服务所必需的|  
 |HKLM\ SYSTEM\CurrentControlSet\Services\TCPIP|Network Service|完全控制|DHCP 客户端服务所必需的|  
@@ -99,7 +99,7 @@ ms.locfileid: "36995918"
  若要启动服务 MMC 管理单元中，单击**启动**，单击**运行**，然后在**运行**对话框中，键入`services.msc`然后按 ENTER。  
 
 
-|                Service name                 |     启动类型<sup>1</sup>      |                                                              详细信息                                                               |             用户<sup>2</sup>              | 权限  |            详细信息            |
+|                Service name                 |     启动类型<sup>1</sup>      |                                                              详细信息                                                               |             用户<sup>2</sup>              | Permissions  |            详细信息            |
 |---------------------------------------------|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|--------------|-------------------------------|
 |                 DHCP 客户端                 |             自动             |                                              如果即使是静态的 IP 地址被必需的                                              |                 （默认值）                 |              |                               |
 |     分布式事务处理协调器     |              Manual               |                                             服务启动群集服务管理                                             |            SSO 服务帐户            | 完全控制 | 需启动 SSO 服务 |
@@ -121,7 +121,7 @@ ms.locfileid: "36995918"
 ### <a name="registry-settings"></a>注册表设置  
  若要启动注册表编辑器，请单击**启动**，单击**运行**，然后在**运行**对话框中，键入`regedit`然后按 ENTER。  
 
-|Key|用户|权限|详细信息|  
+|Key|用户|Permissions|详细信息|  
 |---------|----------|-----------------|-------------|  
 |HKLM\ SYSTEM\CurrentControlSet\Services\DHCP|Network Service|完全控制|DHCP 客户端服务所必需的|  
 |HKLM\ SYSTEM\CurrentControlSet\Services\TCPIP|Network Service|完全控制|DHCP 客户端服务所必需的|  

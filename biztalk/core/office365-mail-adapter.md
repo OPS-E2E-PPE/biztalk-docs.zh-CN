@@ -11,12 +11,12 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: ribarua
 manager: dougeby
-ms.openlocfilehash: daea28056180b436f226fa32b6179bfb1e091f7a
-ms.sourcegitcommit: e7609c319b64ec20bf215d17aa5ac4f9dcae52ec
+ms.openlocfilehash: 58183ce30236ccca39b9c8345959c4785de46ae9
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946152"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752629"
 ---
 # <a name="send-and-receive-email-with-office-365-outlook-email-adapter---biztalk-server"></a>发送和接收电子邮件与 Office 365 Outlook 电子邮件适配器的 BizTalk Server
 
@@ -67,7 +67,7 @@ Office 365 Outlook 电子邮件适配器可以发送和接收邮件从 Office 36
 
 可以使用简单文件接收端口和位置将消息发送到 Office 365 Outlook 电子邮件。
 
-1. 创建使用文件适配器的接收端口。 在你接收位置，则设置**接收文件夹**到 **C:\Temp\In\**，并将文件掩码设置为 **\*.xml**。
+1. 创建使用文件适配器的接收端口。 在你接收位置，则设置**接收文件夹**到**c:\\Temp\\中\\**，并将文件掩码设置为 **\*.xml**.
 2. 在您的 Office 365 Outlook 电子邮件适配器发送端口属性，设置**筛选器**到`BTS.ReceivePortName == <Receive Port Name>`。
 3. 将以下粘贴到文本编辑器中，并将该文件作为**Office365Mail.xml**。 这是您的示例消息。
 
@@ -81,7 +81,7 @@ Office 365 Outlook 电子邮件适配器可以发送和接收邮件从 Office 36
     ```
 
 4. 启动文件接收位置和 Office 365 Outlook 电子邮件适配器发送端口。
-5. 复制**Office365Mail.xml**到接收文件夹的示例消息 (C:\Temp\In\)。 发送端口将 XML 文件作为邮件正文发送到 Office 365 Outlook 电子邮件。
+5. 复制**Office365Mail.xml**到接收文件夹的示例消息 (c:\\Temp\\中\\)。 发送端口将 XML 文件作为邮件正文发送到 Office 365 Outlook 电子邮件。
 
 ## <a name="receive-email-using-a-receive-port"></a>接收电子邮件使用接收端口
 
@@ -118,7 +118,7 @@ Office 365 Outlook 电子邮件适配器可以发送和接收邮件从 Office 36
 
 可以使用简单的 File 发送端口以接收来自你的 Office 365 Outlook 电子邮件消息。
 
-1. 创建使用文件适配器的发送端口。 在发送端口的属性，设置**目标文件夹**到 **C:\Temp\Out\**，并将设置和**文件的名称**到 **%MessageID%.xml**.
+1. 创建使用文件适配器的发送端口。 在发送端口的属性，设置**目标文件夹**到**c:\\Temp\\出\\**，并将设置和**文件名**到 **%MessageID%.xml**。
 2. 在你的文件将发送端口属性，设置**筛选器**到`BTS.ReceivePortName == <Receive Port Name>`。
 3. 启动 Office 365 Outlook 电子邮件接收位置和 File 发送端口。
 4. 查找目标文件夹 (c:\temp\out) 中的消息。

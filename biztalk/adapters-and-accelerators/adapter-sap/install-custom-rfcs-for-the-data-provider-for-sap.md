@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f94bb4b6a6f094211654f5c3c0964bbf84d42f56
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 648a1780e02e35d284a620f29cfd034765c4cc45
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989590"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752765"
 ---
 # <a name="install-custom-rfcs-for-the-data-provider-for-sap"></a>安装适用于 SAP 的数据提供程序的自定义 Rfc
 如果你想要使用用于 mySAP Business Suite 的.NET Framework 数据提供程序来访问 SAP 系统，安装自定义 Rfc。
@@ -34,7 +34,7 @@ ms.locfileid: "36989590"
   
 若要执行这些操作上的 SAP 系统，必须在 SAP 系统上安装这些自定义 Rfc。 如果您选择安装[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]连同[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]，安装程序将复制的 RFC 传输[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]为压缩文件 (customRFC.zip) 系统上安装适配器。 Zip 文件通常安装在*\<安装驱动器\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Microsoft.NET Framework 数据提供程序用于 mySAP Business Suite*。 
   
- 提取 zip 文件后, 您将找到四个数据文件、 两个以下命名模式 K9 *。BI1 （例如，类似于 K900534。BI1)，和其他两种模式 R9\*。BI1 （例如，类似于 R900534。BI1)。  
+ 提取 zip 文件后, 您将找到四个数据文件、 两个以下命名模式 K9\*。BI1 （例如，类似于 K900534。BI1)，和其他两种模式 R9\*。BI1 （例如，类似于 R900534。BI1)。  
   
 
   
@@ -42,11 +42,11 @@ ms.locfileid: "36989590"
   
    1.  以 SAP R/3 系统管理员，以在开发系统的 SAP 应用程序服务器登录。  
   
-   2.  复制使用的命名模式 K9 * 的两个传输文件。从 SAP 应用程序服务器上的以下目录中运行适配器的计算机上安装目录 BI1:  
+   2.  将两个传输文件命名模式 K9 复制\*。从 SAP 应用程序服务器上的以下目录中运行适配器的计算机上安装目录 BI1:  
   
         `<drive>:\usr\sap\trans\cofiles`  
   
-   3.  复制使用的命名模式 R9 * 的两个传输文件。从 SAP 应用程序服务器上的以下目录中运行适配器的计算机上安装目录 BI1:  
+   3.  将两个传输文件命名模式 R9 复制\*。从 SAP 应用程序服务器上的以下目录中运行适配器的计算机上安装目录 BI1:  
   
         `<drive>:\usr\sap\trans\data`  
   
@@ -139,7 +139,7 @@ ms.locfileid: "36989590"
   
   - ACTVT: 03  
   
-  - DICBERCLS: *  
+  - DICBERCLS: \*  
   
     DICBERCLS 可用于通过授权类来限制对表的授权。  
   
@@ -152,7 +152,7 @@ ms.locfileid: "36989590"
   
   - ACTVT: 03  
   
-  - 表: *  
+  - 表： \*  
   
     可以使用表来显式定义经过授权的表。 同时请注意，S_TABU_DIS 还可在其他事务中。  
   

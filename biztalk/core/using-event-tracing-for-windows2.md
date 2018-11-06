@@ -15,15 +15,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8f022035dd432e818c02289246a2d3a43849557
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1444e08a8ab824d9c77746f4c7643897a309ecc4
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980768"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50753149"
 ---
 # <a name="using-event-tracing-for-windows"></a>使用的 Windows 事件跟踪
-适用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器将错误、警告和信息消息记录到 Windows 事件查看器中。 可以使用 Windows 事件跟踪 (ETW) 工具来查看更多的跟踪消息。 激活 ETW 后，会创建一个 *.etl 文件以接收这些消息。 该文件为二进制格式，必须将其转换为可读格式。 若要执行此操作，必须提供要解释的使用者应用程序\*.etl 文件： 例如，tracerpt.exe 或 tracedmp.exe。  
+适用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器将错误、警告和信息消息记录到 Windows 事件查看器中。 可以使用 Windows 事件跟踪 (ETW) 工具来查看更多的跟踪消息。 激活 ETW 后，它会创建\*.etl 文件以接收消息。 该文件为二进制格式，必须将其转换为可读格式。 若要执行此操作，必须提供要解释的使用者应用程序\*.etl 文件： 例如，tracerpt.exe 或 tracedmp.exe。  
   
 ## <a name="etw-components"></a>ETW 组件  
  Windows 事件跟踪包括以下三个组件：  

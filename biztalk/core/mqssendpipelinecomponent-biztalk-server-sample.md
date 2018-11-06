@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cc89b19f1e493c46e6128d390774479eb59bc6b0
-ms.sourcegitcommit: e172dedfd00d4de3a40c8289f3a97ef65cdadd3c
+ms.openlocfilehash: 3416b4a1ba58a1262e9ff27e3558a2532c839cd4
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "36975910"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752339"
 ---
 # <a name="mqssendpipelinecomponent-biztalk-server-sample"></a>MQSSendPipelineComponent（BizTalk Server 示例）
 本示例演示如何写入从 XML 文件读取一组 MQSeries 属性值并将其应用到消息的管道组件。  
@@ -174,7 +174,7 @@ ms.locfileid: "36975910"
   
 8.  在中**接收文件夹**字段中，键入"C:\temp\Pickup3"。  
   
-9. 在中**文件掩码**字段中，键入"*。\*"。  
+9. 在中**文件掩码**字段中，键入"\*。\*"。  
   
 10. 单击**确定**，然后单击**确定**再次以退出**接收位置属性**对话框。  
   
@@ -261,5 +261,5 @@ ms.locfileid: "36975910"
   
 3.  每条消息的消息上下文属性应会显示在**消息浏览器**对话框。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [MQSeries 适配器示例](../core/mqseries-adapter-samples.md)

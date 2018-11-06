@@ -15,18 +15,18 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: efcda402c231b990d7fefa239a8ff15798331184
-ms.sourcegitcommit: 9b93ee2a019bef8d482626cf5525a6b95509b135
+ms.openlocfilehash: 44fb1a5235a3cc86397339099efde18784de6cfc
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "42709854"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752813"
 ---
 # <a name="how-to-use-the-biztalk-wcf-service-publishing-wizard-to-publish-service-metadata-for-a-wcf-receive-location-for-content-based-routing"></a>如何使用 BizTalk WCF 服务发布向导为基于内容的路由的 WCF 接收位置发布服务元数据
 你可以使用 BizTalk WCF 服务发布向导创建 WCF 服务，以便为基于内容的路由的现有 WCF 接收位置发布服务元数据。  
 
 > [!NOTE]
->  在运行 BizTalk WCF 服务发布向导之前，必须生成 BizTalk 项目。 BizTalk 项目必须包括要发布为 WCF 服务的架构。 为 WCF 适配器发布服务元数据之前，还必须使用 BizTalk 服务器管理控制台或 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 附带的 BTSTask 命令行工具创建 WCF 接收位置。 详细了解如何创建 WCF 接收位置，请参阅中每个 WCF 适配器的相应主题[WCF 适配器](../core/wcf-adapters.md)。  
+>  在运行 BizTalk WCF 服务发布向导之前，必须生成 BizTalk 项目。 BizTalk 项目必须包括要发布为 WCF 服务的架构。 为 WCF 适配器发布服务元数据之前，还必须使用 BizTalk Server 管理控制台或 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 附带的 BTSTask 命令行工具创建 WCF 接收位置。 详细了解如何创建 WCF 接收位置，请参阅中每个 WCF 适配器的相应主题[WCF 适配器](../core/wcf-adapters.md)。  
 
 ### <a name="to-publish-service-metadata-for-an-existing-wcf-receive-location-for-content-based-routing"></a>为基于内容的路由的现有 WCF 接收位置发布服务元数据  
 

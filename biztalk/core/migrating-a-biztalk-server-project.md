@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 35b0aa77fc9b30d3f365cf48f084b7d46bdbbb1b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b0fd15de7aec81c046ab6b2fc23b6c63a1ec0615
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989238"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752701"
 ---
 # <a name="migrating-a-biztalk-server-project"></a>迁移 BizTalk Server 项目
 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 有关开发的项目[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]通过使用迁移到较新的环境[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]转换。 有关支持的迁移版本的列表，请参阅[支持的升级路径和安装指南](http://social.technet.microsoft.com/wiki/contents/articles/28554.biztalk-server-supported-upgrade-paths-and-installation-guides.aspx)。  
@@ -36,7 +36,7 @@ ms.locfileid: "36989238"
 >  现在 BizTalk 项目有两种生成类型：**发行**并**调试**，它取代了**开发**并**部署**的前面版本。 但是，您仍然可以看到**开发**并**部署**从迁移的项目配置[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]。  
 > 
 > [!CAUTION]
->  仅 *.btproj 和\*。 由于选择的备份选项在转换期间备份 btproj.user 项目文件。 其他文件必须手动备份。  
+>  仅\*.btproj 和\*。 由于选择的备份选项在转换期间备份 btproj.user 项目文件。 其他文件必须手动备份。  
 > 
 > [!CAUTION]
 >  对自动生成的项目（例如 XSD 和 ODX 文件）的任何自定义都将在转换过程中丢失。 这适用于 web 引用添加到 BizTalk 项目时生成的 XSD 文件。  

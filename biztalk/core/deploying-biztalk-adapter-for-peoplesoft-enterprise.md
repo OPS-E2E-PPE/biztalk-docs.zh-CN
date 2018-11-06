@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d7ca4d0ecbfdb23e35797eb2ba3a704fe19f4cec
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 84f92775382a0d1af22d1bc7ef2c08f19305e90c
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972710"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50753197"
 ---
 # <a name="deploy-biztalk-adapter-for-peoplesoft-enterprise"></a>部署用于 PeopleSoft Enterprise 的 BizTalk 适配器
 本部分提供有关部署 PeopleSoft Enterprise 的 BizTalk 适配器的信息。  
@@ -46,7 +46,7 @@ ms.locfileid: "36972710"
   
 -   用于响应文件夹必须存在并且可在新计算机上完全相同，或编辑绑定文件。  
   
--   如果在配置中存在 PeopleSoft Enterprise 系统密码，则在绑定文件中另存为 *****。 请参阅**限制**本主题中。
+-   PeopleSoft Enterprise 系统密码，如果存在在配置中，将另存为\* \* \* \* \*绑定文件中。 请参阅**限制**本主题中。
 
 > [!NOTE]
 >  部署会覆盖接收位置配置。 如果在目标计算机上部署绑定文件和程序集，则发送端口和接收位置将替换为所导入的 XML 绑定文件中的发送端口和接收位置。  
@@ -69,7 +69,7 @@ cscript RemoveSendPort.vbs \<Send port name\>
 ```
 
 ## <a name="limitations"></a>限制
-传输适配器密码为星号 （*） 存储在绑定文件导出的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，并将其传递到相同的格式中的管理组件。  
+传输适配器密码存储为星号 (\*\*\*\*\*\*) 中导出的绑定文件[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，并将其传递到中的管理组件相同的格式。  
   
  在导出绑定信息时，得到的绑定文件不包含传输适配器曾经在接收位置/发送端口中使用过的任何密码。 这样可防止以明文形式显示密码信息。 下一次使用该文件导入绑定信息时，必须使用传输属性页用户界面输入密码。 或者，可以在导入前临时修改绑定文件，将密码输入到文件中。 在这种情况下，必须在完成导入操作后从绑定文件中删除密码。  
   

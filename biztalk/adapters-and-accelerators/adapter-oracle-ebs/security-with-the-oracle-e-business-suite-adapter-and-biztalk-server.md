@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8ff35975566b8260453a2cc4ca9a576576f915fe
-ms.sourcegitcommit: e172dedfd00d4de3a40c8289f3a97ef65cdadd3c
+ms.openlocfilehash: 066ee0946210bc313188de200e695a684138e560
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49401680"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752917"
 ---
 # <a name="security-with-the-oracle-e-business-suite-adapter-and-biztalk-server"></a>Oracle E-business Suite 适配器与 BizTalk Server 安全性
 配置发送端口或接收端口 （位置） 时使用 BizTalk Server 管理控制台，或者使用[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]若要检索的 BizTalk 解决方案的消息架构，必须提供凭据适用于 Oracle E-business Suite。 请务必以安全的方式来帮助防止暴露给潜在的恶意执行组件提供这些凭据。 本主题讨论如何最安全地提供的凭据[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]的 BizTalk Server 解决方案。  
@@ -37,8 +37,8 @@ ms.locfileid: "49401680"
   详细了解如何通过使用检索消息架构[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]或[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]，请参阅[获取 Visual Studio 中的 Oracle E-business Suite 操作的元数据](../../adapters-and-accelerators/adapter-oracle-ebs/get-metadata-for-oracle-e-business-suite-operations-in-visual-studio.md)。  
   
 ## <a name="how-do-i-protect-credentials-when-i-configure-a-send-port-or-a-receive-location"></a>如何保护凭据时配置发送端口或接收位置？  
- BizTalk 解决方案使用 Microsoft BizTalk WCF 自定义或 WCF Oracle EBS 适配器使用 WCF 服务。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]是使客户端能够使用 Oracle E-business Suite，就像 WCF 服务的 WCF 绑定。 BizTalk 解决方案占用[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]通过发送端口和接收位置配置为使用 WCF 自定义或 Wcf-oracleebs 适配器，反过来，，配置为使用[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]作为其传输。 有关如何配置发送端口和接收的端口 （接收位置），包括如何配置 WCF 自定义适配器的详细信息，请参阅[配置使用的 Oracle 数据库的端口绑定文件的物理端口绑定](../../adapters-and-accelerators/adapter-oracle-ebs/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-ebs.md)。  
-  
+ BizTalk 解决方案使用 Microsoft BizTalk WCF 自定义或 WCF Oracle EBS 适配器使用 WCF 服务。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]是使客户端能够使用 Oracle E-business Suite，就像 WCF 服务的 WCF 绑定。 BizTalk 解决方案占用[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]通过发送端口和接收位置配置为使用 WCF 自定义或 Wcf-oracleebs 适配器，反过来，，配置为使用[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]作为其传输。 有关如何配置发送端口和接收的端口 （接收位置），包括如何配置 WCF 自定义适配器的详细信息，请参阅[配置使用的 Oracle 数据库的端口绑定文件的物理端口绑定](../../adapters-and-accelerators/adapter-oracle-ebs/configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-ebs.md)。  
+
  配置中的 Oracle E-business Suite 凭据**凭据**选项卡**Wcf-custom 传输属性**对话框中为发送端口或从**其他**选项卡**Wcf-custom 传输属性**对话框中的接收位置。 由于 WCF 自定义或 WCF Oracle EBS 适配器支持企业单一登录 (SSO)，您可以选择提供用户名和密码或 SSO 关联应用程序的这些选项卡中的任何一个。 以下主题讨论这两个选项。  
   
 ### <a name="user-name-password-credentials"></a>用户名密码凭据  
@@ -74,6 +74,6 @@ ms.locfileid: "49401680"
   
  **AcceptCredentialsInUri**绑定属性中不可用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]中**绑定**时配置 WCF 自定义选项卡或 WCF OracleEBS 接收或发送端口。 若要设置的值**AcceptCredentialsInUri**绑定属性，必须打开后已生成元数据中使用创建的适配器的绑定文件 （XML 文件） [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]，然后找到在此绑定属性该文件。 指定此绑定属性的适当的值和保存绑定文件，然后导入绑定文件中的[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 请参阅[导入绑定](http://msdn.microsoft.com/library/7af35a2e-fb7c-48a1-af28-93427403a745)有关的说明。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [保护 Oracle EBS 应用程序](../../adapters-and-accelerators/adapter-oracle-ebs/secure-your-oracle-ebs-applications.md)  
  [最佳做法来保护 Oracle EBS 适配器](../../adapters-and-accelerators/adapter-oracle-ebs/best-practices-to-secure-the-oracle-e-business-suite-adapter.md)

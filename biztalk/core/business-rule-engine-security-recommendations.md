@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 41815d53b31b2f0bf0ebf3e5626a61d76470ac4c
-ms.sourcegitcommit: c1e83b63ae34bd586e6e0ccc914640efdf96bd4c
+ms.openlocfilehash: 2ca5506d8ed9acab63e32a4ec86b057a4b775b63
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48423913"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752749"
 ---
 # <a name="business-rule-engine-security-recommendations"></a>业务规则引擎安全性建议
 业务规则引擎是业务规则框架的运行时组件。 使用业务规则框架，可以将可读性高、声明性强和语义丰富的规则连接到任何业务对象（.NET 组件）、XML 文档或数据库表。 有关业务规则框架的详细信息，请参阅[创建和使用业务规则](../core/creating-and-using-business-rules.md)。 有关业务规则引擎的详细信息，请参阅[规则引擎](../core/rule-engine.md)。  
@@ -34,7 +34,7 @@ ms.locfileid: "48423913"
   
 -   BizTalk Server 为您用来安装更新服务的帐户授予“作为服务登录”权限，并将该帐户添加到业务规则数据库的 RE_Host_Users SQL Server 角色中。 如果您安装时所用的帐户与将用以运行更新服务的帐户不同，则您必须从 RE_Host_Users SQL Server 角色删除该安装帐户。  
 
--   如果不以另一个 BizTalk 主机服务帐户使用相同的帐户，还对 RuleEngine 服务帐户添加到 BTS_HOST_USERS BizTalkMgmtDb 和 BizTalkMsgBoxDb 中。
+-   如果不以另一个 BizTalk 主机服务帐户使用相同的帐户，还 RuleEngine 服务帐户添加到 BTS_HOST_USERS BizTalkMgmtDb 和 BizTalkMsgBoxDb 中。
 
 -   如果使用更新服务组件，则必须将其安装到所有 BizTalk 运行时计算机上。 为了从规则引擎数据库检索规则，该更新服务需要模拟服务调用方。  
   

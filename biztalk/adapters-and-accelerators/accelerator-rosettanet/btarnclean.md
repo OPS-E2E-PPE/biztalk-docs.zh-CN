@@ -21,12 +21,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f94c69552a59cf8cae8a12e056502ae405638e69
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 01c4524fd5ce633851b64fc07ea2891a389b4ef5
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992838"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752853"
 ---
 # <a name="btarnclean"></a>BtarnClean
 BtarnClean 实用工具用于清除 Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]项目关闭计算机。 此过程包括以下操作：  
@@ -35,7 +35,7 @@ BtarnClean 实用工具用于清除 Microsoft®[!INCLUDE[BTARN_CurrentVersion_Fi
   
 - 停止和删除所有关联的端口  
   
-- 取消部署所有 Microsoft。Solutions.BTARN.* 程序集  
+- 取消部署所有 Microsoft。Solutions.BTARN。\*程序集  
   
 ## <a name="location-in-sdk"></a>在 SDK 中的位置  
  \<*驱动器*\>\Program Files (x86) \ Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK  
@@ -52,7 +52,7 @@ BtarnClean 实用工具用于清除 Microsoft®[!INCLUDE[BTARN_CurrentVersion_Fi
   
      该实用工具会提示你确认是否要继续。  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>备注  
  如果运行 BtarnClean 实用工具的计算机上具有依赖于其他项目的 BizTalk 项目，则 BtarnClean 将指示无法删除该项目。 该实用工具会将该项目留在原处，然后继续删除其他项目。 你可以先删除依赖项目，然后再次运行该实用工具。  
   
  如果运行 BtarnClean 实用工具的计算机是多计算机部署的组成部分，则删除这些项目将影响该部署中的其余服务器。  

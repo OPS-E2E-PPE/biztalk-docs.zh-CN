@@ -16,12 +16,12 @@ caps.latest.revision: 61
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3e341392e65509568e995f711abcdddd6eb39cbb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ffb067c206018996bc48641bcd8211921b0294dd
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007614"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752518"
 ---
 # <a name="how-to-install-the-business-process-management-solution"></a>如何安装业务流程管理解决方案
 以下步骤介绍如何为安装业务流程管理 (BPM) 解决方案准备计算机，以及如何在此计算机上安装该解决方案：  
@@ -126,12 +126,12 @@ ms.locfileid: "37007614"
   
     |“属性”|事务性|事务协议|  
     |----------|-------------------|--------------------------|  
-    |ToFacilitiesQ|是|本机|  
-    |FromFacilitiesQ|是|本机|  
-    |FromFixedOrdersQ|是|本机|  
-    |ToServicingSystemQ|是|本机|  
-    |ToCSRSystemQ|“否”|HTTP|  
-    |ToVendorSystemQ|“否”|HTTP|  
+    |ToFacilitiesQ|用户帐户控制|本机|  
+    |FromFacilitiesQ|用户帐户控制|本机|  
+    |FromFixedOrdersQ|用户帐户控制|本机|  
+    |ToServicingSystemQ|用户帐户控制|本机|  
+    |ToCSRSystemQ|否|HTTP|  
+    |ToVendorSystemQ|否|HTTP|  
   
     > [!NOTE]
     >  可以使用**计算机管理**管理单元来创建队列。 有关如何创建专用队列的详细信息，请参阅消息队列文档，网址[ http://go.microsoft.com/fwlink/?LinkId=59264 ](http://go.microsoft.com/fwlink/?LinkId=59264)。 有关如何安装 MSMQ 3.0 的详细信息，请参阅消息队列文档，网址[ http://go.microsoft.com/fwlink/?LinkId=59265 ](http://go.microsoft.com/fwlink/?LinkId=59265)。  
@@ -235,7 +235,7 @@ ms.locfileid: "37007614"
        > [!NOTE]
        >  在 32 位命令提示符下，%CommonProgramFiles% 变量将更改为“%ProgramFiles(x86)%\Common Files”。 由于 SSO 管理实用工具即使在 64 位计算机上也安装在 %ProgramFiles% 中，因此必须修复该路径。 DeployBPM.cmd 将调用 CreateSouthridgeVideoApplication.cmd。  
   
-   4.  在 32 位命令提示符下键入类型`DeployBPM.cmd`，然后按 ENTER。  
+   4.  在 32 位命令提示符下键入`DeployBPM.cmd`，然后按 ENTER。  
   
        > [!NOTE]
        >  DeployBPM.cmd 必须在 32 位命令提示符下运行，因为它所包括的 VB 脚本需要访问 x86 对象，而这样的对象需要 x86 版本的 cscript.exe。  

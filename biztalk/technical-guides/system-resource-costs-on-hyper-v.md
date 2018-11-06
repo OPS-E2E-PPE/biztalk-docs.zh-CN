@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6be288e21657d447dd21bff06b5c3294f6f4a2c2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 768b34b6b1a51768f1c0070c961749e1975015f9
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003702"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50753053"
 ---
 # <a name="system-resource-costs-on-hyper-v"></a>Hyper V 上的系统资源成本
 ## <a name="system-resource-costs-associated-with-running-a-guest-operating-system-on-hyper-v"></a>与 HYPER-V 上运行来宾操作系统相关联的系统资源成本  
@@ -123,13 +123,13 @@ ms.locfileid: "37003702"
   
  **收集从 Virtual_SQL01 和 Physical_SQL01**:  
   
-- \LogicalDisk(*)\\\*  
+- \LogicalDisk (\*)\\\*  
   
-- \PhysicalDisk(*)\\\*  
+- \PhysicalDisk (\*)\\\*  
   
   **收集从虚拟机超 V_02**:  
   
-- \Hyper-V 虚拟存储设备\\*  
+- \\Hyper V 虚拟存储设备\\\*  
   
 ### <a name="results"></a>结果  
  传递磁盘是吞吐量的可以重复使用超过 90%的直接连接到 Physical_SQL01 SAN LUN。  总、 读取和写入相同的每秒传输的总 MB 每秒 I/o 是所有都在 10%。  对于正常磁盘响应时间应介于 1-15 毫秒的读取和写入。 平均 I/O 响应时间是小于 4 毫秒，这两个磁盘上。 随机读取响应时间为 5.4 毫秒在物理上和 5.7 ms 传递磁盘上。 写入响应时间为小于 0.5 毫秒的物理和虚拟环境。  

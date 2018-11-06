@@ -1,6 +1,6 @@
 ---
 title: 常见术语和定义 |Microsoft Docs
-description: 术语的词汇表和 BizTalk Server 及其含义
+description: 术语表和 BizTalk Server 及其含义
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -13,12 +13,12 @@ caps.latest.revision: 68
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d7acb86e6d70ea2f8201fe8b8fd7ed8351c3b54c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0b10bd92f9ce3f76bad7c7b8b1b0cb86a810b469
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988918"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752401"
 ---
 # <a name="glossary"></a>词汇表
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的“帮助”中用到以下术语和定义。  
@@ -122,7 +122,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 |    BizTalk Server 架构文件 (BizTalk Server schema file, .xsd)    |                                                                                                                                                                                                                                                                                            包含 BizTalk 架构的持久化形式的文件。                                                                                                                                                                                                                                                                                             |
 |       BizTalk 设置仪表板        |                                                                                                                                                                                                         一种 BizTalk 管理员可用来对 BizTalk 引擎设置进行集中管理和修改的 BizTalk 功能。 管理员可将设置从一个环境导出和导入到另一环境，如从临时环境到生产环境。                                                                                                                                                                                                         |
 |                正文部分 (body part)                |                                                                                                                                                                                                                                                                                                              请参阅“消息正文部分”。                                                                                                                                                                                                                                                                                                              |
-|                 BTSTask                 | 用于管理应用程序和程序集的命令行工具。 可以使用 BTSTask 将 BizTalk 应用程序添加到 BizTalk 管理数据库中，将资源添加到应用程序中，将应用程序导出到 MSI 文件中，将绑定信息导出到文件中，从 MSI 文件导入应用程序，从文件导入绑定信息，列出应用程序中的所有资源，列出 BizTalk 管理数据库中的所有应用程序，列出 MSI 文件的内容，从 BizTalk 管理数据库和 BizTalk 管理控制台删除应用程序，以及从应用程序删除资源。 |
+|                 BTSTask                 | 用于管理应用程序和程序集的命令行工具。 您可以使用 BTSTask 添加到 BizTalk 管理数据库的 BizTalk 应用程序，将添加到应用程序资源、 导出到 MSI 文件的应用程序、 导出到文件的绑定信息、 导入的 MSI 文件的应用程序，导入的绑定信息文件、 列出所有应用程序中的资源、 列出 BizTalk 管理数据库中的所有应用程序，列出 MSI 文件的内容，从 BizTalk 管理数据库和 BizTalk 管理控制台中，删除应用程序和从中删除资源应用程序。 |
 |   业务活动监视 (BAM)    |                                                                                                                                                                                                                                        BizTalk Server 的一项功能，可为业务用户提供其异构业务流程的实时视图，从而有助于业务用户作出重要业务决策。                                                                                                                                                                                                                                        |
 |         业务活动视图 (Business Activity view)          |                                                                                                                                                                                       一组显示一个或多个业务流程的分层视图，用于定义某类业务用户希望查看业务活动的方式。 解释一种业务活动数据（BAM 跟踪）的方式可能有多种。                                                                                                                                                                                        |
 |            业务分析员 (business analyst)             |                                                                                                                                                                                                                         具备业务管理和经济分析技能的用户。 业务分析员的主要职责是使用业务级数据分析业务趋势。                                                                                                                                                                                                                         |
@@ -296,7 +296,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 |独立组合 (independent composition)|由两个操作组成的序列，其中第二个操作在开始处理业务逻辑之前并不依赖第一个操作的同步消息；第二个操作可以立即开始处理。|  
 |infotip|一种工具提示，用于在 Web 视图和 Windows 资源管理器注释列（在使用详细信息视图时）中提供对桌面、窗口和开始菜单命令的描述。|  
 |继承性 (inheriting)|贸易合作伙伴管理 (TPM) Web Services 中成员配置文件将继承其父组的所有首选项的概念。 如果是非继承组，则成员配置文件不继承父组的任何首选项。 非继承组可以改为继承组，但继承组不能改为非继承组。|  
-|可中断的业务流程 (interruptible orchestration)|运行中可在定义好的点中断的业务流程。|  
+|可中断业务流程|运行中可在定义好的点中断的业务流程。|  
 |进程内主机|一种在 BizTalk Server 进程空间内运行的主机类型。 任何业务流程都可以登记到进程内主机上，任何发送处理程序都能以进程内主机为宿主。 进程内主机只能作为进程内主机的接收处理程序（文件适配器）的宿主。|  
 |进程内接收适配器 (In-process receive adapter)|驻留在 BizTalk Server 进程内的适配器。 该适配器由服务器进程进行创建、控制和毁坏。|  
 |安装向导|在“导入向导”的最后一步启动的将 BizTalk 应用程序安装到本地计算机上的向导。|  
@@ -363,7 +363,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 |混合内容 (mixed content)|特定 XML 元素的内容，既包含子元素又包含子元素内没有的数据。 一个 HTML 示例是： &lt;P&gt;Full moons &lt;EM&gt;始终&lt;/e M&gt;停用，在增加，增加或减少。&lt;/ P&gt;|  
 |多部分消息类型 (multi-part message type)|消息结构的定义，包括消息元素的数据类型。 多部分消息类型可以只包含一个部分，也可以包含许多部分。|  
   
-## <a name="n"></a>否  
+## <a name="n"></a>N  
   
 |           术语            |                                                                                      定义                                                                                      |
 |---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -442,7 +442,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 |重新部署 (redeploy)|重新部署目标环境中已存在的程序集是指删除旧的程序集并部署新的程序集的操作。|  
 |解除冻结 (rehydrate)|在发生某种事件（如接收到消息）后，在内存中激活位于持久存储中的空闲业务流程的过程。|  
 |关联视图|通过 BizTalk 映射器，架构元素的非关联同级元素会折叠，以提供更精简的架构视图。 这会减少所需的滚动，而集中于架构和映射的有用部分。|  
-|报告视图 (Reporting views)|显示一个或多个业务流程的一组分层视图。|  
+|报告视图|显示一个或多个业务流程的一组分层视图。|  
 |存储库 (repository)|用于存储 Analysis Service 使用的元数据的存储容器。 元数据以表格形式存储在关系数据库中，用于定义分析服务器对象的参数和属性。 当 BizTalk 浏览器以只读模式访问数据时，XML 工具以读取-写入模式使用库。|  
 |请求-响应适配器 (request-response adapter)|接收客户端的请求消息，将消息提交给服务器，等待响应，然后将响应发送回客户端的接收适配器。|  
 |返回形状 (Return shape)|在业务流程真正结束前用于在某点中止该业务流程的形状。  以下是一个示例：如果通过安全检查，则继续，否则返回。|  
@@ -491,7 +491,7 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
 |SMTP 适配器|实现 SMTP 协议（即发送电子邮件）以便与行业应用程序交互的适配器。 该适配器只包括发送处理程序。|  
 |SOAP 适配器|实现 SOAP 协议以便与行业应用程序交互，将业务流程发布为 Web Services 并使用外部 Web Services 的适配器。|  
 |SOAP 错误 (SOAP fault)|由 Web Services 返回的、传达该 Web Services 中的应用程序异常的错误消息。|  
-|SOAP 标头|SOAP 消息信封中包含的可选元素，包含与 XML Web Services 方法的主要功能不直接相关的数据。|  
+|SOAP 标头|可以包含不直接与 XML Web 服务方法的主要功能相关的数据的 SOAP 消息信封中包含一个可选元素。|  
 |SOAP 消息 (SOAP message)|格式正确的 XML 文档。 此消息应使用 SOAP 信封和 SOAP 编码命名空间，并且应包含可选的 XML 声明，声明后跟 SOAP 信封（根元素）。此消息由可选的 SOAP 标头和 SOAP 消息正文组成。|  
 |SOAP 消息跟踪 (SOAP message tracing)|在已发布的 Web Services 中设置断点以将详细的异常信息返回到 Web 客户端的方法。|  
 |要求响应适配器 (solicit-response adapter)|一种双向发送适配器。 要求响应发送适配器将 BizTalk Server 的请求消息发送到目标，等待响应消息，然后将响应消息提交回 BizTalk Server。|  

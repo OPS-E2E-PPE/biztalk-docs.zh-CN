@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9b30627813b4790e5ab2e275d179773e0be41b6e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e1e4601264b8dc407d1cc1bed323b4d3504bc91d
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001406"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50753245"
 ---
 # <a name="execute-a-peoplesoft-enterprise-sample-get"></a>执行 PeopleSoft Enterprise 示例获取
 使用 PeopleSoft 适配器可以从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 系统访问 PeopleSoft 系统。 此适配器随[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。
@@ -51,7 +51,7 @@ ms.locfileid: "37001406"
 - 测试应用程序并查看 XML 输出  
   
 ## <a name="procedures-for-lab-2--executing-a-peoplesoft-sample-get"></a>实验室 2 的过程 - 执行 PeopleSoft Get 示例  
- 必须使用以下两个文件，才能对 PeopleSoft 系统的接口进行正确访问：PSJOA.JAR 和 GET_CI_INFO.PC。 在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 计算机上，PeopleSoft 适配器通过使用 PeopleSoft Java 接口与 PeopleSoft 系统进行通信。 此接口由 PSJOA.JAR 文件提供。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上存放的此文件的副本通常来自正在访问的 PeopleSoft 服务器系统的管理员。 在此实验室中，PSJOA.JAR 的副本位于 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上的 C:\PSJars\Ver841\ 文件夹中。 PeopleSoft 适配器配置属性中指定了此文件的位置。  
+ 必须使用以下两个文件，才能对 PeopleSoft 系统的接口进行正确访问：PSJOA.JAR 和 GET_CI_INFO.PC。 在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 计算机上，PeopleSoft 适配器通过使用 PeopleSoft Java 接口与 PeopleSoft 系统进行通信。 此接口由 PSJOA.JAR 文件提供。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上存放的此文件的副本通常来自正在访问的 PeopleSoft 服务器系统的管理员。 在此实验室中，PSJOA.JAR 的副本位于 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]上的 C:\PSJars\Ver841\ 文件夹中。 PeopleSoft 适配器配置属性中指定了此文件的位置。  
   
  PeopleSoft 系统本身必须安装自定义组件接口 (CI)。 这将允许适配器在适配器配置过程中浏览 PeopleSoft 对象。 将（从“添加生成的项”步骤）调用自定义组件接口，以获取可访问的 PeopleSoft 对象的列表。 这些对象确定可用于客户端系统的公开的 PeopleSoft 功能。  
   
@@ -64,7 +64,7 @@ ms.locfileid: "37001406"
 ## <a name="step-1-confirm-the-peoplesoft-rerequisites"></a>步骤 1： 确认 PeopleSoft rerequisites  
  开始创建与 PeopleSoft 适配器配合使用的 BizTalk 项目之前，需要确保为访问 PeopleSoft 正确安装了所有必备组件。  
   
-1. 确认 PSJOA。JAR 文件位于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机的 C:\psjars\ver841 文件夹中。 （此文件可能位于 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上的其他位置。 在以下给定的配置中，假设该文件位于此位置。）  
+1. 确认 PSJOA。JAR 文件位于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机的 C:\psjars\ver841 文件夹中。 （此文件可能位于 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]上的其他位置。 在以下给定的配置中，假设该文件位于此位置。）  
   
 2. 确认 get_ci_info.pc 文件位于 C:\Program Files\Microsoft BizTalk Adapters for Enterprise Applications\PeopleSoft Enterprise(r) \Config 文件夹。  
   
@@ -97,7 +97,7 @@ ms.locfileid: "37001406"
   
    2. **JAVA_HOME**： **C:\J2SDK1.4.2_08**  
   
-       此路径特定于 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上的 Java SDK 安装。  
+       此路径特定于 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]上的 Java SDK 安装。  
   
    3. **密码**:\<输入您的 PeopleSoft 密码\>  
   
@@ -112,7 +112,7 @@ ms.locfileid: "37001406"
 ## <a name="step-3-create-a-biztalk-orchestration-project"></a>步骤 3： 创建 BizTalk 业务流程项目  
  现在，您将在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中创建 BizTalk 项目，并配置该项目中的业务流程，以处理 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 与 PeopleSoft 系统之间的通信。 你将添加发送端口和接收端口，生成项目，然后部署项目。  
   
-1. 打开 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，在 C:\LABS 文件夹中创建新的 BizTalk 项目。 在“文件”  菜单上，单击“新建” 。 此时将显示“新建项目”  对话框。 在“发送端口属性”  选择“空的 BizTalk Server 项目”。  输入`PS_Test`作为唯一项目名称，然后单击**确定**。  
+1. 打开 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] ，在 C:\LABS 文件夹中创建新的 BizTalk 项目。 在“文件”  菜单上，单击“新建” 。 此时将显示“新建项目”  对话框。 在“发送端口属性”  选择“空的 BizTalk Server 项目”。  输入`PS_Test`作为唯一项目名称，然后单击**确定**。  
   
 2. 在解决方案资源管理器中，右键单击该项目，单击“添加” ，然后单击“添加生成的项” 。 在“类别”  窗格中选择“添加适配器元数据”  ，在“模板”  侧选择“添加适配器元数据”  ，然后单击“添加” 。  
   
@@ -237,7 +237,7 @@ ms.locfileid: "37001406"
   
 4.  选择“FileOut”  端口，并将其传入反向接收箭头拖到“ToDisk”形状上的传出发送箭头。   
   
-5.  将现有的一般消息名称重命名为更具描述性的名称，以遵循正确的应用程序设计原则。 在解决方案资源管理器中，单击“业务流程视图”选项卡  。下**消息**，更改的标识符**Message_1**到**PS_Msg**。 将 **“Message_2”** 的标识符更改为 **“PS_Resp”**。  
+5.  将现有的一般消息名称重命名为更具描述性的名称，以遵循正确的应用程序设计原则。 在解决方案资源管理器中，单击“业务流程视图”选项卡  。在“消息”下 ，将“Message_1”的标识符更改为“PS_Msg”。   将 **“Message_2”** 的标识符更改为 **“PS_Resp”**。  
   
      ![](../core/media/5ec92b81-4a55-4d44-a360-78a6aaa64255.gif "5ec92b81-4a55-4d44-a360-78a6aaa64255")  
   
@@ -254,9 +254,9 @@ ms.locfileid: "37001406"
      ![](../core/media/d16e02bc-954c-4aa2-99d6-3fee1222c730.gif "d16e02bc-954c-4aa2-99d6-3fee1222c730")  
   
 ## <a name="step-4-build-and-deploy-the-project"></a>步骤 4： 生成并部署项目  
- 现在，BizTalk 项目已完成，你可以生成项目并将其部署在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中。  
+ 现在，BizTalk 项目已完成，你可以生成项目并将其部署在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]中。  
   
-1.  在 Visual Studio 中，指向**Visual Studio Tools**，然后选择 Visual Studio 命令提示符 * *。  
+1.  在 Visual Studio 中，指向**Visual Studio Tools**，然后选择**Visual Studio 命令提示符**。  
   
 2.  要生成项目，您需要强名称密钥文件。在命令提示符下，输入以下内容以创建强名称密钥文件：  
   
@@ -347,7 +347,7 @@ ms.locfileid: "37001406"
   
     2. **JAVA_HOME**： **C:\J2SDK1.4.2_08**  
   
-        此路径特定于 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上的 Java SDK 安装。  
+        此路径特定于 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]上的 Java SDK 安装。  
   
     3. **密码**:\<输入您的 PeopleSoft 密码\>  
   
@@ -400,7 +400,7 @@ ms.locfileid: "37001406"
   
      这些返回的记录数据应与在 PeopleSoft 练习 1 中针对 PeopleSoft 系统的查询所返回的结果相匹配。 通过比较的值获取在实验室 1 中专门**地址 1**并**Address2**行，在此处显示**\<位置： 地址 1\>** 并**\<位置： ADDRESS2\>** 字段中，你可以验证**获取**方法正常工作。  
   
-## <a name="summary"></a>“摘要”  
+## <a name="summary"></a>总结  
  在本实验室中，您首先验证了必备组件的设置对于访问 PeopleSoft 系统是否正确。 然后，你使用 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 创建了包含业务流程的新 BizTalk 项目。 对 BizTalk 业务流程进行了配置，以使用 PeopleSoft 适配器获取来自 PeopleSoft 系统的数据。 为配置业务流程，你创建了发送端口、接收端口和发送/接收端口。 将这些端口绑定到 PeopleSoft 适配器，并将消息分配给相应的端口。  
   
  完成 BizTalk 项目后，你使用 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 来生成和部署该项目。 随后，配置了新应用程序，并运行该应用程序，以获取来自 PeopleSoft 系统的数据。 为了验证应用程序是否正常运行，您将其输出 XML 文件与在实验室 1 中从 PeopleSoft 系统接收到的文件进行了比较。

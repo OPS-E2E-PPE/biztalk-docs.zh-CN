@@ -11,12 +11,12 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: ribarua
 manager: dougeby
-ms.openlocfilehash: 3185e080be7a4222ac51072506eb9657eb7b1e1b
-ms.sourcegitcommit: e7609c319b64ec20bf215d17aa5ac4f9dcae52ec
+ms.openlocfilehash: da423cba141dffa8779c97cef521ade730a3c846
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946159"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752677"
 ---
 # <a name="create-a-contact-using-the-office-365-outlook-contact-adapter---biztalk-server"></a>创建使用 Office 365 Outlook 联系人适配器的 BizTalk Server 的联系人
 
@@ -42,7 +42,7 @@ ms.locfileid: "36946159"
 
 可以使用简单文件接收端口和位置来创建 Office 365 Outlook 联系人适配器上的事件。
 
-1. 创建使用文件适配器的接收端口。 在你接收位置，则设置**接收文件夹**到 **C:\Temp\In\**，并将文件掩码设置为 **\*.xml**。
+1. 创建使用文件适配器的接收端口。 在你接收位置，则设置**接收文件夹**到**c:\\Temp\\中\\**，并将文件掩码设置为 **\*.xml**.
 2. 在您的 Office 365 Outlook 联系人适配器发送端口属性，设置**筛选器**到`BTS.ReceivePortName == <Receive Port Name>`。
 3. 将以下粘贴到文本编辑器中，并将该文件作为**Office365Contact.xml**。 这是您的示例消息。
 
@@ -113,10 +113,10 @@ ms.locfileid: "36946159"
             </otherAddress>
         </ns0:Contact>
     ```
-    **在 < BizTalk 安装 Folder\SDK\Schemas > SDK 的一部分提供的 XML 架构**
+    **在 SDK 的一部分提供的 XML 架构 < BizTalk 安装文件夹\\SDK\\架构 >**
 
 4. 启动文件接收位置和 Office 365 Outlook 联系人适配器发送端口。
-5. 复制**Office365Contact.xml**到接收文件夹的示例消息 (C:\Temp\In\)。 发送端口基于 xml 在 Office 365 Outlook 帐户中创建联系人。
+5. 复制**Office365Contact.xml**到接收文件夹的示例消息 (c:\\Temp\\中\\)。 发送端口基于 xml 在 Office 365 Outlook 帐户中创建联系人。
 
 ## <a name="next-steps"></a>后续步骤
 查看所有[Office 365 适配器](office365-adapters.md)，或安装[功能包 3](https://aka.ms/bts2016fp3)。

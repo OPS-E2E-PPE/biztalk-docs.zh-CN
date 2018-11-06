@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 809d3ab348981ada35bf93ea46d78808bf280c6c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5817ac423056c030b452561db624a663791cd133
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014390"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752989"
 ---
 # <a name="publishing-service-metadata-for-the-wcf-receive-adapters"></a>发布服务元数据为 WCF 接收适配器
 可以使用 BizTalk WCF 服务发布向导来创建为现有 WCF 接收位置发布服务元数据的 WCF 服务。 若要从已发布元数据文档生成客户端服务模型代码可以使用 Windows 软件开发工具包 (SDK) 和.NET Framework 运行时组件中包含的服务模型元数据实用工具工具 (SvcUtil.exe)。  
@@ -27,7 +27,7 @@ ms.locfileid: "37014390"
 
 ## <a name="iis-versions"></a>IIS 版本
 
- 在上运行的 WCF 服务的发布服务元数据包含与操作系统的 IIS 版本。
+ 可以随操作系统附带的 IIS 版本上运行的 WCF 服务的发布服务元数据。
 
 -   **IIS**提供高级的进程模型。 已发布的 BizTalk WCF 服务必须运行在 ASP.NET 兼容模式中。 可以通过 HTTP 传输访问由 Web 应用程序在 IIS 中为 WCF 接收适配器发布服务元数据。  
 

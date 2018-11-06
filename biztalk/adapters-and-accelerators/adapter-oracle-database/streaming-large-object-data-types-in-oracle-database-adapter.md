@@ -17,12 +17,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af0e81c5e2430dad50090637069713680c900d13
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9caf8a7e8dafebbe3d53b751db34c8abc8d4bd62
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994110"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752893"
 ---
 # <a name="streaming-large-object-data-types-in-oracle-database-adapter"></a>Oracle 数据库适配器中的流式处理大型对象数据类型
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]支持 Oracle 大型对象 (LOB) 数据类型的流式处理。 使用[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]调用操作和通过交换 SOAP 消息返回响应。 SOAP 消息正文组成的 XML 节点。  
@@ -95,7 +95,7 @@ ms.locfileid: "36994110"
   
 |运算|流式处理的节点|节点值流式处理|Description|  
 |---------------|--------------------|---------------------------|-----------------|  
-|表插入操作|支持*|不支持在适配器和 Oracle 数据库之间。 支持客户端和适配器之间|不支持流式处理的端到端节点的值，因为将 LOB 列的值由 ODP.NET，进行缓冲，则执行插入。 但是，节点值流式处理客户端和适配器之间有可能 LOB 列，如果客户端创建的消息**BodyWriter**。|  
+|表插入操作|支持\*|不支持在适配器和 Oracle 数据库之间。 支持客户端和适配器之间。\*|不支持流式处理的端到端节点的值，因为将 LOB 列的值由 ODP.NET，进行缓冲，则执行插入。 但是，节点值流式处理客户端和适配器之间有可能 LOB 列，如果客户端创建的消息**BodyWriter**。|  
 |表选择操作|是否支持|是否支持|该适配器将使用**BodyWriter**创建响应消息。 如果客户端使用消息使用**XmlDictionaryWriter**，节点值流式处理 LOB 列时发生。|  
 |表更新操作|是否支持|不支持在适配器和 Oracle 数据库之间。 支持客户端和适配器之间。|不支持流式处理的端到端节点的值，因为将 LOB 列的值进行缓冲通过 ODP.NET，，然后执行更新。 但是，节点值流式处理客户端和适配器之间有 LOB 列可能的如果客户端创建的消息**BodyWriter**。|  
 |表删除操作|是否支持|不支持在适配器和 Oracle 数据库之间。 支持客户端和适配器之间。|不支持流式处理的端到端节点的值，因为通过 ODP.NET 进行缓冲 LOB 列的值，然后执行删除操作。 但是，节点值流式处理客户端和适配器之间有 LOB 列可能的如果客户端创建的消息**BodyWriter**。|  
@@ -117,7 +117,7 @@ ms.locfileid: "36994110"
   
 |运算|流式处理的节点|节点值流式处理|Description|  
 |---------------|--------------------|---------------------------|-----------------|  
-|表插入操作|支持*|不支持之间的适配器和 Oracle 数据库中;但是，BizTalk Server 和适配器之间传输数据。|不支持流式处理的端到端节点的值，因为将 LOB 列的值由 ODP.NET 进行缓冲，则执行插入。 但是，节点值流式处理 BizTalk Server 和适配器之间的支持，LOB 数据类型因为 WCF 自定义适配器创建的消息**BodyWriter**。|  
+|表插入操作|支持\*|不支持之间的适配器和 Oracle 数据库中;但是，BizTalk Server 和适配器之间传输数据。|不支持流式处理的端到端节点的值，因为将 LOB 列的值由 ODP.NET 进行缓冲，则执行插入。 但是，节点值流式处理 BizTalk Server 和适配器之间的支持，LOB 数据类型因为 WCF 自定义适配器创建的消息**BodyWriter**。|  
 |表选择操作|是否支持|是否支持|WCF 自定义适配器将使用**XmlDictionaryWriter**来使用响应消息，因此支持 LOB 类型的流式处理的端到端节点的值。|  
 |表更新操作|是否支持|不支持之间的适配器和 Oracle 数据库中;但是，BizTalk Server 和适配器之间传输数据。|不支持流式处理的端到端节点的值，因为通过 ODP.NET 进行缓冲 LOB 列的值，然后执行更新。 但是，节点值流式处理 BizTalk Server 和适配器之间的支持，LOB 数据类型因为 WCF 自定义适配器创建的消息**BodyWriter**。|  
 |表删除操作|是否支持|不支持之间的适配器和 Oracle 数据库中;但是，BizTalk Server 和适配器之间传输数据。|不支持流式处理的端到端节点的值，因为通过 ODP.NET 进行缓冲 LOB 列的值，然后执行删除操作。 但是，节点值流式处理 BizTalk Server 和适配器之间的支持，LOB 数据类型因为 WCF 自定义适配器创建的消息**BodyWriter**。|  

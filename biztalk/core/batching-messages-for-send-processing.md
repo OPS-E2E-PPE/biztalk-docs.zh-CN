@@ -1,5 +1,5 @@
 ---
-title: 批处理消息发送处理 |Microsoft 文档
+title: 批处理消息的发送处理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,27 +12,27 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e87600bec54679688fae5084af3b4a1bde9ca807
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7854151b0b32165d2ec3db83a90516898cf8d8e6
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232453"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50753133"
 ---
-# <a name="batching-messages-for-send-processing"></a>对消息进行批处理的发送处理
+# <a name="batching-messages-for-send-processing"></a>为发送处理批处理消息
 ## <a name="send-adapter-batch-management"></a>发送适配器批的管理  
  在发送端使用事务时，由 BizTalk Server 创建的用于发送到目标系统的相同事务在成功发送后，将用于删除相应消息。 如果其中有任何步骤失败，则事务将结束，在这种情况下将中止删除操作，数据仍保留在 BizTalk Server 中，而不在目标系统中。 这可以防止消息重复。 只有异步发送适配器才支持事务。 不应该将事务与同步发送适配器一起使用。  
   
- 但是适配器不能只结束事务，它还必须能够正确处理给出的消息状态。 具体而言，该适配器应调用方法**重新提交**， **MoveToNextTransport**，和**MoveToSuspendQ**适当地取决于重试计数和是否备份传输是可用的。  
+ 但是适配器不能只结束事务，它还必须能够正确处理给出的消息状态。 具体而言，适配器应调用的方法**重新提交**， **MoveToNextTransport**，并**MoveToSuspendQ**适当地根据重试计数和是否可备份传输。  
   
- 务必要放置**删除**和**SubmitResponse**一起使用同一个事务的批处理中的操作。 失败将通过结束事务来进行处理，以来确保数据仅向外部系统提交一次。 但你仍想要重新提交，或者调用**MoveToNextTransport**开机 BizTalk Server 消息。 为此，对于这些类型的操作，请使用单独的普通批（非事务批）。  
+ 务必要放置**删除**并**SubmitResponse**一起使用同一个事务的批中的操作。 失败将通过结束事务来进行处理，以来确保数据仅向外部系统提交一次。 但仍想要重新提交或调用**MoveToNextTransport**在 BizTalk Server 上的消息。 为此，对于这些类型的操作，请使用单独的普通批（非事务批）。  
   
  下图显示了如何为响应消息使用单独的批。  
   
- ![响应消息中使用单独的批](../core/media/eawp-seperatebatch.gif "EAWP_SeperateBatch")  
+ ![为响应消息使用单独的批](../core/media/eawp-separatebatch.gif "EAWP_SeparateBatch")  
   
 ## <a name="sorting-the-send-side-transactional-batches-by-endpoint"></a>按终结点对发送端事务批进行分类  
- 由 BizTalk Server 发送到适配器的消息批可以跨多个发送端口（或终结点）。 因为适配器通常想要有为单个终结点的事务，适配器必须排序基于发送端口的消息 (**SPName**或**OutboundTransportLocation**)。 通过执行此操作，适配器可以创建仅跨越特定发送端口的事务。  
+ 由 BizTalk Server 发送到适配器的消息批可以跨多个发送端口（或终结点）。 因为适配器通常需要有一个终结点的事务，适配器必须对根据发送端口的消息进行排序 (**SPName**或**OutboundTransportLocation**)。 通过执行此操作，适配器可以创建仅跨越特定发送端口的事务。  
   
  例如，当 FTP 发送适配器接收一个来自 BizTalk Server 的消息批时，它得到的是一个混合的消息批，这些消息来自所有当前活动的 FTP 发送端口。 发生这种情况的原因是 API 是基于单一的接口，这意味着只能加载单个 FTP 适配器，而不能每个发送端口都加载一个。  
   
@@ -43,7 +43,7 @@ ms.locfileid: "22232453"
   
  将消息分类时，应该谨慎建立定义终结点的内容。 这在动态发送的情况下更是如此。 如果只是用 URI 定义终结点，问题就简单了。 但是，在 FTP 会话中，FTP 服务器可能使用用户名登录详细信息来定义真正的终结点。 在这种情况下，如果适配器以不同的帐户登录，则它可能会被连接到不同的目录。  
   
- 在某些情况下，true 终结点，直到才知道你具有运行企业单一登录 (SSO) 命令**ValidateAndRedeemTicket**。  
+ 在某些情况下，真正的终结点不知道运行企业单一登录 (SSO) 命令之前**validateandredeemticket，以**。  
   
  对于 MQSeries，是否决定使用事务是可配置的。 在确定远程 COM+ 对象的结构和用途后，最好将事务性终结点看作是与非事务性终结点完全不同的终结点。  
   
@@ -60,6 +60,6 @@ string spid = (string)message.Context.Read("SPID", "http://schemas.microsoft.com
   
  下图显示了如何按终结点对消息进行分类。  
   
- ![终结点排序消息](../core/media/eawp-sortbatch.gif "EAWP_SortBatch")  
+ ![对消息的终结点进行排序](../core/media/eawp-sortbatch.gif "EAWP_SortBatch")  
   
  请注意，消息的重试次数与批的成功与否无关。 在发送端，消息批可能会由于批中的几个消息失败而失败。 适配器必须决定如何处理它接收到的每个消息。 在批失败的情况下，可以假定每个消息都被重新提交了。 但是，如果失败批中的所有消息都重新提交了，则对于成功的消息，重试次数（由 BizTalk Server 引擎维护）也将不正确地递增，这是因为这些成功的消息恰好与失败的消息在同一批中。 在这种情况下，适配器可以重新形成出站批，并针对外部系统重试成功的消息。
