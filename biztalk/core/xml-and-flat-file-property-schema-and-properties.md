@@ -20,7 +20,7 @@ ms.lasthandoff: 06/27/2018
 ms.locfileid: "37006142"
 ---
 # <a name="xml-and-flat-file-property-schema-and-properties"></a>XML 和平面文件属性架构和属性
-**http://schemas.microsoft.com/BizTalk/2003/xmlnorm-properties**命名空间包含可用于配置平面文件组装器和平面文件拆装器管道组件的属性。 下表中所介绍的属性。  
+**http://schemas.microsoft.com/BizTalk/2003/xmlnorm-properties** 命名空间包含可用于配置平面文件组装器和平面文件拆装器管道组件的属性。 下表中所介绍的属性。  
 
 ## <a name="properties-list"></a>属性列表
 
