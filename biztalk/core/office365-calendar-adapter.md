@@ -11,57 +11,57 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: ribarua
 manager: dougeby
-ms.openlocfilehash: ab724870e9c75a60119e86f7f62d6823f1db9873
-ms.sourcegitcommit: e7609c319b64ec20bf215d17aa5ac4f9dcae52ec
+ms.openlocfilehash: 6787ece4af5ebdd17733dde33ae524f2c9b802e8
+ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36946154"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50752645"
 ---
-# <a name="create-calendar-events-with-the-office-365-outlook-calendar-adapter---biztalk-server"></a><span data-ttu-id="75c69-104">使用 Office 365 Outlook 日历适配器的 BizTalk Server 创建日历事件</span><span class="sxs-lookup"><span data-stu-id="75c69-104">Create calendar events with the Office 365 Outlook Calendar adapter - BizTalk Server</span></span>
+# <a name="create-calendar-events-with-the-office-365-outlook-calendar-adapter---biztalk-server"></a><span data-ttu-id="94993-104">使用 Office 365 Outlook 日历适配器的 BizTalk Server 创建日历事件</span><span class="sxs-lookup"><span data-stu-id="94993-104">Create calendar events with the Office 365 Outlook Calendar adapter - BizTalk Server</span></span>
 
-<span data-ttu-id="75c69-105">在 BizTalk Server 中使用 Office 365 Outlook 日历适配器创建并接收来自 Office 365 Outlook 日历的日历事件。</span><span class="sxs-lookup"><span data-stu-id="75c69-105">Use the Office 365 Outlook Calendar adapter in BizTalk Server to create and receive calendar events from your Office 365 Outlook Calendar.</span></span>
+<span data-ttu-id="94993-105">在 BizTalk Server 中使用 Office 365 Outlook 日历适配器创建并接收来自 Office 365 Outlook 日历的日历事件。</span><span class="sxs-lookup"><span data-stu-id="94993-105">Use the Office 365 Outlook Calendar adapter in BizTalk Server to create and receive calendar events from your Office 365 Outlook Calendar.</span></span>
 
-## <a name="create-events-using-a-send-port"></a><span data-ttu-id="75c69-106">创建事件使用的发送端口</span><span class="sxs-lookup"><span data-stu-id="75c69-106">Create events using a send port</span></span>
+## <a name="create-events-using-a-send-port"></a><span data-ttu-id="94993-106">创建事件使用的发送端口</span><span class="sxs-lookup"><span data-stu-id="94993-106">Create events using a send port</span></span>
 
-1. <span data-ttu-id="75c69-107">在 BizTalk Server 管理控制台中，右键单击**发送端口**，选择**新建**，然后选择**静态单向发送端口**。</span><span class="sxs-lookup"><span data-stu-id="75c69-107">In the BizTalk Server Administration console, right-click **Send Ports**, select **New**, and select **Static One-way send port**.</span></span>
+1. <span data-ttu-id="94993-107">在 BizTalk Server 管理控制台中，右键单击**发送端口**，选择**新建**，然后选择**静态单向发送端口**。</span><span class="sxs-lookup"><span data-stu-id="94993-107">In the BizTalk Server Administration console, right-click **Send Ports**, select **New**, and select **Static One-way send port**.</span></span>
 
-    <span data-ttu-id="75c69-108">[创建发送端口](../core/how-to-create-a-send-port2.md)提供一些指导。</span><span class="sxs-lookup"><span data-stu-id="75c69-108">[Create a Send Port](../core/how-to-create-a-send-port2.md) provides some guidance.</span></span>
+    <span data-ttu-id="94993-108">[创建发送端口](../core/how-to-create-a-send-port2.md)提供一些指导。</span><span class="sxs-lookup"><span data-stu-id="94993-108">[Create a Send Port](../core/how-to-create-a-send-port2.md) provides some guidance.</span></span>
 
-2. <span data-ttu-id="75c69-109">输入**名称**。</span><span class="sxs-lookup"><span data-stu-id="75c69-109">Enter a **Name**.</span></span> <span data-ttu-id="75c69-110">在**传输**，请设置**类型**到**Office 365 Outlook 日历**，然后选择**配置**。</span><span class="sxs-lookup"><span data-stu-id="75c69-110">In **Transport**, set the **Type** to **Office 365 Outlook Calendar**, and select **Configure**.</span></span>
+2. <span data-ttu-id="94993-109">输入**名称**。</span><span class="sxs-lookup"><span data-stu-id="94993-109">Enter a **Name**.</span></span> <span data-ttu-id="94993-110">在**传输**，请设置**类型**到**Office 365 Outlook 日历**，然后选择**配置**。</span><span class="sxs-lookup"><span data-stu-id="94993-110">In **Transport**, set the **Type** to **Office 365 Outlook Calendar**, and select **Configure**.</span></span>
 
-3. <span data-ttu-id="75c69-111">选择 **[登录...**，并登录到你的 Office 365 帐户。</span><span class="sxs-lookup"><span data-stu-id="75c69-111">Select **[Sign in …**, and sign in to your Office 365 Account.</span></span> <span data-ttu-id="75c69-112">该帐户是使用你的电子邮件地址自动填充。</span><span class="sxs-lookup"><span data-stu-id="75c69-112">The account is auto-populated with your email address.</span></span>
+3. <span data-ttu-id="94993-111">选择 **[登录...**，并登录到你的 Office 365 帐户。</span><span class="sxs-lookup"><span data-stu-id="94993-111">Select **[Sign in …**, and sign in to your Office 365 Account.</span></span> <span data-ttu-id="94993-112">该帐户是使用你的电子邮件地址自动填充。</span><span class="sxs-lookup"><span data-stu-id="94993-112">The account is auto-populated with your email address.</span></span>
 
-4. <span data-ttu-id="75c69-113">允许 BizTalk Server 的访问权限的审批请求：</span><span class="sxs-lookup"><span data-stu-id="75c69-113">Allow BizTalk Server approval for permission to access:</span></span>
+4. <span data-ttu-id="94993-113">允许 BizTalk Server 的访问权限的审批请求：</span><span class="sxs-lookup"><span data-stu-id="94993-113">Allow BizTalk Server approval for permission to access:</span></span>
 
     ![Office 365 日历权限](../core/media/office365-calendar-permissions.png)
 
-5. <span data-ttu-id="75c69-115">配置您 Office365 Outlook 日历的默认属性：</span><span class="sxs-lookup"><span data-stu-id="75c69-115">Configure your Office365 Outlook Calendar default properties:</span></span>
+5. <span data-ttu-id="94993-115">配置您 Office365 Outlook 日历的默认属性：</span><span class="sxs-lookup"><span data-stu-id="94993-115">Configure your Office365 Outlook Calendar default properties:</span></span>
 
-    |<span data-ttu-id="75c69-116">使用此选项</span><span class="sxs-lookup"><span data-stu-id="75c69-116">Use this</span></span>|<span data-ttu-id="75c69-117">执行的操作</span><span class="sxs-lookup"><span data-stu-id="75c69-117">To do this</span></span>|  
+    |<span data-ttu-id="94993-116">使用此选项</span><span class="sxs-lookup"><span data-stu-id="94993-116">Use this</span></span>|<span data-ttu-id="94993-117">执行的操作</span><span class="sxs-lookup"><span data-stu-id="94993-117">To do this</span></span>|  
     |---|---|  
-    | <span data-ttu-id="75c69-118">**日历**</span><span class="sxs-lookup"><span data-stu-id="75c69-118">**Calendar**</span></span> | <span data-ttu-id="75c69-119">选择要在其中创建事件的日历。</span><span class="sxs-lookup"><span data-stu-id="75c69-119">Select the calendar in which events will be created.</span></span> |
-    | <span data-ttu-id="75c69-120">**主题**</span><span class="sxs-lookup"><span data-stu-id="75c69-120">**Subject**</span></span> | <span data-ttu-id="75c69-121">设置创建的事件的默认主题。</span><span class="sxs-lookup"><span data-stu-id="75c69-121">Set the default subject for events created.</span></span> <span data-ttu-id="75c69-122">（最多 256 个字符）</span><span class="sxs-lookup"><span data-stu-id="75c69-122">(256 character max)</span></span> |
-    | <span data-ttu-id="75c69-123">**必需的与会者**</span><span class="sxs-lookup"><span data-stu-id="75c69-123">**Required Attendees**</span></span> | <span data-ttu-id="75c69-124">输入所需的默认与会者电子邮件地址分隔;。</span><span class="sxs-lookup"><span data-stu-id="75c69-124">Enter your default required attendees email addresses separated by ';'.</span></span> <span data-ttu-id="75c69-125">（最多 256 个字符）</span><span class="sxs-lookup"><span data-stu-id="75c69-125">(256 character max)</span></span> |
-    | <span data-ttu-id="75c69-126">**可选与会者**</span><span class="sxs-lookup"><span data-stu-id="75c69-126">**Optional Attendees**</span></span> | <span data-ttu-id="75c69-127">输入可选与会者电子邮件地址分隔应用默认值;。</span><span class="sxs-lookup"><span data-stu-id="75c69-127">Enter your default optional attendees email addresses separated by ';'.</span></span> <span data-ttu-id="75c69-128">（最多 256 个字符）</span><span class="sxs-lookup"><span data-stu-id="75c69-128">(256 character max)</span></span> |
+    | <span data-ttu-id="94993-118">**Calendar**</span><span class="sxs-lookup"><span data-stu-id="94993-118">**Calendar**</span></span> | <span data-ttu-id="94993-119">选择要在其中创建事件的日历。</span><span class="sxs-lookup"><span data-stu-id="94993-119">Select the calendar in which events will be created.</span></span> |
+    | <span data-ttu-id="94993-120">**主题**</span><span class="sxs-lookup"><span data-stu-id="94993-120">**Subject**</span></span> | <span data-ttu-id="94993-121">设置创建的事件的默认主题。</span><span class="sxs-lookup"><span data-stu-id="94993-121">Set the default subject for events created.</span></span> <span data-ttu-id="94993-122">（最多 256 个字符）</span><span class="sxs-lookup"><span data-stu-id="94993-122">(256 character max)</span></span> |
+    | <span data-ttu-id="94993-123">**必需的与会者**</span><span class="sxs-lookup"><span data-stu-id="94993-123">**Required Attendees**</span></span> | <span data-ttu-id="94993-124">输入所需的默认与会者电子邮件地址分隔;。</span><span class="sxs-lookup"><span data-stu-id="94993-124">Enter your default required attendees email addresses separated by ';'.</span></span> <span data-ttu-id="94993-125">（最多 256 个字符）</span><span class="sxs-lookup"><span data-stu-id="94993-125">(256 character max)</span></span> |
+    | <span data-ttu-id="94993-126">**可选与会者**</span><span class="sxs-lookup"><span data-stu-id="94993-126">**Optional Attendees**</span></span> | <span data-ttu-id="94993-127">输入可选与会者电子邮件地址分隔应用默认值;。</span><span class="sxs-lookup"><span data-stu-id="94993-127">Enter your default optional attendees email addresses separated by ';'.</span></span> <span data-ttu-id="94993-128">（最多 256 个字符）</span><span class="sxs-lookup"><span data-stu-id="94993-128">(256 character max)</span></span> |
 
-6. <span data-ttu-id="75c69-129">选择日历：</span><span class="sxs-lookup"><span data-stu-id="75c69-129">Select a calendar:</span></span> 
+6. <span data-ttu-id="94993-129">选择日历：</span><span class="sxs-lookup"><span data-stu-id="94993-129">Select a calendar:</span></span> 
 
     ![Office 365 日历](../core/media/office365-calendars.png)
 
-    <span data-ttu-id="75c69-131">完成后，您的属性类似于以下：</span><span class="sxs-lookup"><span data-stu-id="75c69-131">When finished, your properties look similar to the following:</span></span>
+    <span data-ttu-id="94993-131">完成后，您的属性类似于以下：</span><span class="sxs-lookup"><span data-stu-id="94993-131">When finished, your properties look similar to the following:</span></span>
 
     ![终结点属性](../core/media/office365-calendar-send-properties.png)
 
-7. <span data-ttu-id="75c69-133">选择**确定**以保存所做的更改。</span><span class="sxs-lookup"><span data-stu-id="75c69-133">Select **Ok** to save your changes.</span></span>
+7. <span data-ttu-id="94993-133">选择**确定**以保存所做的更改。</span><span class="sxs-lookup"><span data-stu-id="94993-133">Select **Ok** to save your changes.</span></span>
 
-### <a name="test-your-send-port"></a><span data-ttu-id="75c69-134">测试您的发送端口</span><span class="sxs-lookup"><span data-stu-id="75c69-134">Test your send port</span></span>
+### <a name="test-your-send-port"></a><span data-ttu-id="94993-134">测试您的发送端口</span><span class="sxs-lookup"><span data-stu-id="94993-134">Test your send port</span></span>
 
-<span data-ttu-id="75c69-135">可以使用简单文件接收端口和位置来创建 Office 365 Outlook 日历上的事件。</span><span class="sxs-lookup"><span data-stu-id="75c69-135">You can use a simple File receive port and location to create an event on your Office 365 Outlook Calendar.</span></span>
+<span data-ttu-id="94993-135">可以使用简单文件接收端口和位置来创建 Office 365 Outlook 日历上的事件。</span><span class="sxs-lookup"><span data-stu-id="94993-135">You can use a simple File receive port and location to create an event on your Office 365 Outlook Calendar.</span></span>
 
-1. <span data-ttu-id="75c69-136">创建使用文件适配器的接收端口。</span><span class="sxs-lookup"><span data-stu-id="75c69-136">Create a receive port using the File adapter.</span></span> <span data-ttu-id="75c69-137">在你接收位置，则设置**接收文件夹**到 \**C:\Temp\In\**，并将文件掩码设置为 **\*.xml**。</span><span class="sxs-lookup"><span data-stu-id="75c69-137">Within your receive location,  set the **Receive folder** to \**C:\Temp\In\**, and set the file mask to **\*.xml**.</span></span>
-2. <span data-ttu-id="75c69-138">在您的 Office 365 Outlook 日历适配器发送端口属性，设置**筛选器**到`BTS.ReceivePortName == <Receive Port Name>`。</span><span class="sxs-lookup"><span data-stu-id="75c69-138">In your Office 365 Outlook Calendar adapter send port properties, set the **Filters** to `BTS.ReceivePortName == <Receive Port Name>`.</span></span>
-3. <span data-ttu-id="75c69-139">将以下粘贴到文本编辑器中，并将该文件作为**Office365Calendar.xml**。</span><span class="sxs-lookup"><span data-stu-id="75c69-139">Paste the following into a text editor, and save the file as **Office365Calendar.xml**.</span></span> <span data-ttu-id="75c69-140">这是您的示例消息。</span><span class="sxs-lookup"><span data-stu-id="75c69-140">This is your sample message.</span></span>
+1. <span data-ttu-id="94993-136">创建使用文件适配器的接收端口。</span><span class="sxs-lookup"><span data-stu-id="94993-136">Create a receive port using the File adapter.</span></span> <span data-ttu-id="94993-137">在你接收位置，则设置**接收文件夹**到**c:\\Temp\\中\\**，并将文件掩码设置为 **\*.xml**.</span><span class="sxs-lookup"><span data-stu-id="94993-137">Within your receive location,  set the **Receive folder** to **C:\\Temp\\In\\**, and set the file mask to **\*.xml**.</span></span>
+2. <span data-ttu-id="94993-138">在您的 Office 365 Outlook 日历适配器发送端口属性，设置**筛选器**到`BTS.ReceivePortName == <Receive Port Name>`。</span><span class="sxs-lookup"><span data-stu-id="94993-138">In your Office 365 Outlook Calendar adapter send port properties, set the **Filters** to `BTS.ReceivePortName == <Receive Port Name>`.</span></span>
+3. <span data-ttu-id="94993-139">将以下粘贴到文本编辑器中，并将该文件作为**Office365Calendar.xml**。</span><span class="sxs-lookup"><span data-stu-id="94993-139">Paste the following into a text editor, and save the file as **Office365Calendar.xml**.</span></span> <span data-ttu-id="94993-140">这是您的示例消息。</span><span class="sxs-lookup"><span data-stu-id="94993-140">This is your sample message.</span></span>
 
     ```xml
     <Event xmlns="http://schemas.microsoft.com/BizTalk/Office365OutlookCalendar/Send"> 
@@ -81,55 +81,55 @@ ms.locfileid: "36946154"
         </body> 
     </Event> 
     ```
-    <span data-ttu-id="75c69-141">**在 < BizTalk 安装 Folder\SDK\Schemas > SDK 的一部分提供的 XML 架构**</span><span class="sxs-lookup"><span data-stu-id="75c69-141">**The XML schema is provided as part of the SDK inside < BizTalk Installation Folder\SDK\Schemas >**</span></span>
+    <span data-ttu-id="94993-141">**在 < BizTalk 安装 Folder\SDK\Schemas > SDK 的一部分提供的 XML 架构**</span><span class="sxs-lookup"><span data-stu-id="94993-141">**The XML schema is provided as part of the SDK inside < BizTalk Installation Folder\SDK\Schemas >**</span></span>
 
-4. <span data-ttu-id="75c69-142">启动文件接收位置和 Office 365 Outlook 日历适配器发送端口。</span><span class="sxs-lookup"><span data-stu-id="75c69-142">Start the File receive location and the Office 365 Outlook Calendar adapter send port.</span></span>
-5. <span data-ttu-id="75c69-143">复制**Office365Calendar.xml**到接收文件夹的示例消息 (C:\Temp\In\)。</span><span class="sxs-lookup"><span data-stu-id="75c69-143">Copy **Office365Calendar.xml** sample message into the receive folder (C:\Temp\In\).</span></span> <span data-ttu-id="75c69-144">发送端口基于 xml 在 Office 365 Outlook 日历中创建的事件。</span><span class="sxs-lookup"><span data-stu-id="75c69-144">The send port creates an event in your Office 365 Outlook calendar based on the xml.</span></span>
+4. <span data-ttu-id="94993-142">启动文件接收位置和 Office 365 Outlook 日历适配器发送端口。</span><span class="sxs-lookup"><span data-stu-id="94993-142">Start the File receive location and the Office 365 Outlook Calendar adapter send port.</span></span>
+5. <span data-ttu-id="94993-143">复制**Office365Calendar.xml**到接收文件夹的示例消息 (C:\Temp\In\)。</span><span class="sxs-lookup"><span data-stu-id="94993-143">Copy **Office365Calendar.xml** sample message into the receive folder (C:\Temp\In\).</span></span> <span data-ttu-id="94993-144">发送端口基于 xml 在 Office 365 Outlook 日历中创建的事件。</span><span class="sxs-lookup"><span data-stu-id="94993-144">The send port creates an event in your Office 365 Outlook calendar based on the xml.</span></span>
 
-## <a name="receive-events-using-a-receive-port"></a><span data-ttu-id="75c69-145">使用接收端口接收事件</span><span class="sxs-lookup"><span data-stu-id="75c69-145">Receive events using a receive port</span></span>
+## <a name="receive-events-using-a-receive-port"></a><span data-ttu-id="94993-145">使用接收端口接收事件</span><span class="sxs-lookup"><span data-stu-id="94993-145">Receive events using a receive port</span></span>
 
-1. <span data-ttu-id="75c69-146">在 BizTalk Server 管理控制台中，右键单击**接收端口**，选择**新建**，然后选择**单向接收端口**。</span><span class="sxs-lookup"><span data-stu-id="75c69-146">In the BizTalk Server Administration console, right-click **Receive Ports**, select **New**, and select **One-Way receive port**.</span></span>
+1. <span data-ttu-id="94993-146">在 BizTalk Server 管理控制台中，右键单击**接收端口**，选择**新建**，然后选择**单向接收端口**。</span><span class="sxs-lookup"><span data-stu-id="94993-146">In the BizTalk Server Administration console, right-click **Receive Ports**, select **New**, and select **One-Way receive port**.</span></span>
 
-    <span data-ttu-id="75c69-147">[创建接收端口](../core/how-to-create-a-receive-port.md)提供一些指导。</span><span class="sxs-lookup"><span data-stu-id="75c69-147">[Create a receive port](../core/how-to-create-a-receive-port.md) provides some guidance.</span></span>
+    <span data-ttu-id="94993-147">[创建接收端口](../core/how-to-create-a-receive-port.md)提供一些指导。</span><span class="sxs-lookup"><span data-stu-id="94993-147">[Create a receive port](../core/how-to-create-a-receive-port.md) provides some guidance.</span></span>
 
-2. <span data-ttu-id="75c69-148">输入一个名称，并选择**接收位置**。</span><span class="sxs-lookup"><span data-stu-id="75c69-148">Enter a name, and select **Receive Locations**.</span></span>
+2. <span data-ttu-id="94993-148">输入一个名称，并选择**接收位置**。</span><span class="sxs-lookup"><span data-stu-id="94993-148">Enter a name, and select **Receive Locations**.</span></span>
 
-3. <span data-ttu-id="75c69-149">选择**新建**，并**名称**接收位置。</span><span class="sxs-lookup"><span data-stu-id="75c69-149">Select **New**, and **Name** the receive location.</span></span> <span data-ttu-id="75c69-150">在中**传输**，选择**Office 365 Outlook 日历**从**类型**下拉列表，然后选择**配置**。</span><span class="sxs-lookup"><span data-stu-id="75c69-150">In **Transport**, select **Office 365 Outlook Calendar** from the **Type** drop-down list, and then select **Configure**.</span></span>
+3. <span data-ttu-id="94993-149">选择**新建**，并**名称**接收位置。</span><span class="sxs-lookup"><span data-stu-id="94993-149">Select **New**, and **Name** the receive location.</span></span> <span data-ttu-id="94993-150">在中**传输**，选择**Office 365 Outlook 日历**从**类型**下拉列表，然后选择**配置**。</span><span class="sxs-lookup"><span data-stu-id="94993-150">In **Transport**, select **Office 365 Outlook Calendar** from the **Type** drop-down list, and then select **Configure**.</span></span>
 
-4. <span data-ttu-id="75c69-151">选择**登录...**，并登录到你的 Office 365 帐户。</span><span class="sxs-lookup"><span data-stu-id="75c69-151">Select **Sign in …**, and sign in to your Office 365 Account.</span></span> <span data-ttu-id="75c69-152">该帐户是使用你的电子邮件地址自动填充。</span><span class="sxs-lookup"><span data-stu-id="75c69-152">The account is auto-populated with your email address.</span></span>
+4. <span data-ttu-id="94993-151">选择**登录...**，并登录到你的 Office 365 帐户。</span><span class="sxs-lookup"><span data-stu-id="94993-151">Select **Sign in …**, and sign in to your Office 365 Account.</span></span> <span data-ttu-id="94993-152">该帐户是使用你的电子邮件地址自动填充。</span><span class="sxs-lookup"><span data-stu-id="94993-152">The account is auto-populated with your email address.</span></span>
 
-5. <span data-ttu-id="75c69-153">允许 BizTalk Server 的访问权限的审批请求：</span><span class="sxs-lookup"><span data-stu-id="75c69-153">Allow BizTalk Server approval for permission to access:</span></span>
+5. <span data-ttu-id="94993-153">允许 BizTalk Server 的访问权限的审批请求：</span><span class="sxs-lookup"><span data-stu-id="94993-153">Allow BizTalk Server approval for permission to access:</span></span>
 
     ![Office 365 日历权限](../core/media/office365-calendar-permissions.png)
 
-6. <span data-ttu-id="75c69-155">配置**终结点**属性：</span><span class="sxs-lookup"><span data-stu-id="75c69-155">Configure the **Endpoint** properties:</span></span>
+6. <span data-ttu-id="94993-155">配置**终结点**属性：</span><span class="sxs-lookup"><span data-stu-id="94993-155">Configure the **Endpoint** properties:</span></span>
 
-    |<span data-ttu-id="75c69-156">使用此选项</span><span class="sxs-lookup"><span data-stu-id="75c69-156">Use this</span></span>|<span data-ttu-id="75c69-157">执行的操作</span><span class="sxs-lookup"><span data-stu-id="75c69-157">To do this</span></span>|  
+    |<span data-ttu-id="94993-156">使用此选项</span><span class="sxs-lookup"><span data-stu-id="94993-156">Use this</span></span>|<span data-ttu-id="94993-157">执行的操作</span><span class="sxs-lookup"><span data-stu-id="94993-157">To do this</span></span>|  
     |---|---|  
-    | <span data-ttu-id="75c69-158">**日历**</span><span class="sxs-lookup"><span data-stu-id="75c69-158">**Calendar**</span></span> | <span data-ttu-id="75c69-159">选择要从其提取事件的日历。</span><span class="sxs-lookup"><span data-stu-id="75c69-159">Select the calendar from which events will be fetched.</span></span>  |
-    | <span data-ttu-id="75c69-160">**内开始**</span><span class="sxs-lookup"><span data-stu-id="75c69-160">**Starting within**</span></span> | <span data-ttu-id="75c69-161">选择日历事件必须在其中以接收的 BizTalk （默认值为 15 分钟） 的开始的时间间隔。</span><span class="sxs-lookup"><span data-stu-id="75c69-161">Select the time interval within which a calendar event has to start in order to be received by BizTalk (default is 15 minutes).</span></span>  |
+    | <span data-ttu-id="94993-158">**Calendar**</span><span class="sxs-lookup"><span data-stu-id="94993-158">**Calendar**</span></span> | <span data-ttu-id="94993-159">选择要从其提取事件的日历。</span><span class="sxs-lookup"><span data-stu-id="94993-159">Select the calendar from which events will be fetched.</span></span>  |
+    | <span data-ttu-id="94993-160">**内开始**</span><span class="sxs-lookup"><span data-stu-id="94993-160">**Starting within**</span></span> | <span data-ttu-id="94993-161">选择日历事件必须在其中以接收的 BizTalk （默认值为 15 分钟） 的开始的时间间隔。</span><span class="sxs-lookup"><span data-stu-id="94993-161">Select the time interval within which a calendar event has to start in order to be received by BizTalk (default is 15 minutes).</span></span>  |
 
-7. <span data-ttu-id="75c69-162">选择一个日历：</span><span class="sxs-lookup"><span data-stu-id="75c69-162">Selecting a calendar:</span></span>
+7. <span data-ttu-id="94993-162">选择一个日历：</span><span class="sxs-lookup"><span data-stu-id="94993-162">Selecting a calendar:</span></span>
 
     ![Office 365 日历](../core/media/office365-calendars.png)
 
-    <span data-ttu-id="75c69-164">完成后，您的属性类似于以下：</span><span class="sxs-lookup"><span data-stu-id="75c69-164">When finished, your properties look similar to the following:</span></span>
+    <span data-ttu-id="94993-164">完成后，您的属性类似于以下：</span><span class="sxs-lookup"><span data-stu-id="94993-164">When finished, your properties look similar to the following:</span></span>
 
     ![终结点属性](../core/media/office365-calendar-receive-properties.png)
 
-8. <span data-ttu-id="75c69-166">选择**确定**以保存所做的更改。</span><span class="sxs-lookup"><span data-stu-id="75c69-166">Select **Ok** to save your changes.</span></span>
+8. <span data-ttu-id="94993-166">选择**确定**以保存所做的更改。</span><span class="sxs-lookup"><span data-stu-id="94993-166">Select **Ok** to save your changes.</span></span>
 
-### <a name="test-your-receive-settings"></a><span data-ttu-id="75c69-167">测试在接收设置</span><span class="sxs-lookup"><span data-stu-id="75c69-167">Test your receive settings</span></span>
+### <a name="test-your-receive-settings"></a><span data-ttu-id="94993-167">测试在接收设置</span><span class="sxs-lookup"><span data-stu-id="94993-167">Test your receive settings</span></span>
 
-<span data-ttu-id="75c69-168">可以使用简单的 File 发送端口从 Office 365 Outlook 日历接收消息。</span><span class="sxs-lookup"><span data-stu-id="75c69-168">You can use a simple File send port to receive messages from your Office 365 Outlook Calendar.</span></span>
+<span data-ttu-id="94993-168">可以使用简单的 File 发送端口从 Office 365 Outlook 日历接收消息。</span><span class="sxs-lookup"><span data-stu-id="94993-168">You can use a simple File send port to receive messages from your Office 365 Outlook Calendar.</span></span>
 
-1. <span data-ttu-id="75c69-169">创建使用文件适配器的发送端口。</span><span class="sxs-lookup"><span data-stu-id="75c69-169">Create a send port using the File adapter.</span></span> <span data-ttu-id="75c69-170">在发送端口的属性，设置**目标文件夹**到 **C:\Temp\Out\**，并将设置和**文件的名称**到 **%MessageID%.xml**.</span><span class="sxs-lookup"><span data-stu-id="75c69-170">Within your send port properties, set the **Destination folder** to **C:\Temp\Out\**, and set the and **File name** to **%MessageID%.xml**.</span></span>
-2. <span data-ttu-id="75c69-171">在你的文件将发送端口属性，设置**筛选器**到`BTS.ReceivePortName == <Receive Port Name>`。</span><span class="sxs-lookup"><span data-stu-id="75c69-171">In your File send port properties, set the **Filters** to  `BTS.ReceivePortName == <Receive Port Name>`.</span></span>
-3. <span data-ttu-id="75c69-172">启动 Office 365 Outlook 日历接收位置和 File 发送端口。</span><span class="sxs-lookup"><span data-stu-id="75c69-172">Start the Office 365 Outlook Calendar receive location and the File send port.</span></span>
-4. <span data-ttu-id="75c69-173">查找目标文件夹 (c:\temp\out) 中的消息。</span><span class="sxs-lookup"><span data-stu-id="75c69-173">Look for messages in the destination folder (c:\temp\out).</span></span> 
-<span data-ttu-id="75c69-174">**在 SDK 中包含的 XML 架构`\Program Files (x86)\Microsoft BizTalk Server <your version>\SDK\Schemas`。**</span><span class="sxs-lookup"><span data-stu-id="75c69-174">**The XML schema is included in the SDK at `\Program Files (x86)\Microsoft BizTalk Server <your version>\SDK\Schemas`.**</span></span>
+1. <span data-ttu-id="94993-169">创建使用文件适配器的发送端口。</span><span class="sxs-lookup"><span data-stu-id="94993-169">Create a send port using the File adapter.</span></span> <span data-ttu-id="94993-170">在发送端口的属性，设置**目标文件夹**到**c:\\Temp\\出\\**，并将设置和**文件名**到 **%MessageID%.xml**。</span><span class="sxs-lookup"><span data-stu-id="94993-170">Within your send port properties, set the **Destination folder** to **C:\\Temp\\Out\\**, and set the and **File name** to **%MessageID%.xml**.</span></span>
+2. <span data-ttu-id="94993-171">在你的文件将发送端口属性，设置**筛选器**到`BTS.ReceivePortName == <Receive Port Name>`。</span><span class="sxs-lookup"><span data-stu-id="94993-171">In your File send port properties, set the **Filters** to  `BTS.ReceivePortName == <Receive Port Name>`.</span></span>
+3. <span data-ttu-id="94993-172">启动 Office 365 Outlook 日历接收位置和 File 发送端口。</span><span class="sxs-lookup"><span data-stu-id="94993-172">Start the Office 365 Outlook Calendar receive location and the File send port.</span></span>
+4. <span data-ttu-id="94993-173">查找目标文件夹 (c:\temp\out) 中的消息。</span><span class="sxs-lookup"><span data-stu-id="94993-173">Look for messages in the destination folder (c:\temp\out).</span></span> 
+<span data-ttu-id="94993-174">**在 SDK 中包含的 XML 架构`\Program Files (x86)\Microsoft BizTalk Server <your version>\SDK\Schemas`。**</span><span class="sxs-lookup"><span data-stu-id="94993-174">**The XML schema is included in the SDK at `\Program Files (x86)\Microsoft BizTalk Server <your version>\SDK\Schemas`.**</span></span>
 
-### <a name="example-of-a-received-calendar-event-xml"></a><span data-ttu-id="75c69-175">已接收的日历事件 xml 的示例</span><span class="sxs-lookup"><span data-stu-id="75c69-175">Example of a received calendar event xml</span></span>
+### <a name="example-of-a-received-calendar-event-xml"></a><span data-ttu-id="94993-175">已接收的日历事件 xml 的示例</span><span class="sxs-lookup"><span data-stu-id="94993-175">Example of a received calendar event xml</span></span>
 
 ```xml
 <ns0:Event xmlns:ns0="http://schemas.microsoft.com/BizTalk/Office365OutlookCalendar/Receive"> 
@@ -245,5 +245,5 @@ div.WordSection1
 </ns0:Event> 
 ```
 
-## <a name="next-steps"></a><span data-ttu-id="75c69-176">后续步骤</span><span class="sxs-lookup"><span data-stu-id="75c69-176">Next steps</span></span>
-<span data-ttu-id="75c69-177">查看所有[Office 365 适配器](office365-adapters.md)，或安装[功能包 3](https://aka.ms/bts2016fp3)。</span><span class="sxs-lookup"><span data-stu-id="75c69-177">See all the [Office 365 adapters](office365-adapters.md), or install [Feature Pack 3](https://aka.ms/bts2016fp3).</span></span>
+## <a name="next-steps"></a><span data-ttu-id="94993-176">后续步骤</span><span class="sxs-lookup"><span data-stu-id="94993-176">Next steps</span></span>
+<span data-ttu-id="94993-177">查看所有[Office 365 适配器](office365-adapters.md)，或安装[功能包 3](https://aka.ms/bts2016fp3)。</span><span class="sxs-lookup"><span data-stu-id="94993-177">See all the [Office 365 adapters](office365-adapters.md), or install [Feature Pack 3](https://aka.ms/bts2016fp3).</span></span>
