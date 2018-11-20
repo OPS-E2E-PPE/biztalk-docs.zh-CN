@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 908c0eebecaf005e22194584f9a1d1e7fafa4daf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 00f19818dd5df6cafaf51298a0463ea745736ab5
+ms.sourcegitcommit: c3070a7a3f332857357f056dc632829b43869c17
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970230"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51630386"
 ---
 # <a name="how-to-create-a-new-pipeline"></a>如何创建新管道
 可以向项目添加管道模板来创建新的管道。  
@@ -49,7 +49,7 @@ ms.locfileid: "36970230"
   
    有关向管道添加管道组件的信息，请参阅[如何将组件添加到管道](../core/how-to-add-a-component-to-a-pipeline.md)。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [如何打开管道](../core/how-to-open-a-pipeline.md)   
  [如何保存管道](../core/how-to-save-a-pipeline.md)   
  [如何使用工具箱](../core/how-to-use-the-toolbox.md)   

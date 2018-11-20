@@ -11,12 +11,12 @@ ms.topic: article
 author: MandiOhlinger
 ms.author: plarsen
 manager: anneta
-ms.openlocfilehash: f6bccce51ad56fa1b8186347d8fddd5f4afbafbb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a1e30b1ab1aacc1c5134d1dd5b44744bd670b308
+ms.sourcegitcommit: c3070a7a3f332857357f056dc632829b43869c17
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988774"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51630330"
 ---
 # <a name="event-hub-adapter-in-biztalk"></a>在 BizTalk 中的事件中心适配器
 
@@ -130,7 +130,7 @@ Azure 事件中心是高度可缩放的数据流平台，并可以接收和处�
 
     |使用此选项|执行的操作|  
     |---|---|  
-    | **Namespace 为用户定义消息属性** | http://schemas.microsoft.com/BizTalk/EventHubAdapter/EventData/User 为默认架构，但您可以输入另一个架构。 此值表示 BizTalk 消息架构映射到事件中心消息属性。 |
+    | **Namespace 为用户定义消息属性** | `http://schemas.microsoft.com/BizTalk/EventHubAdapter/EventData/User` 为默认架构，但您可以输入另一个架构。 此值表示 BizTalk 消息架构映射到事件中心消息属性。 |
     | **将提升用户定义的属性** | 可选。 如果您愿意，可以升级这些属性。 <br/><br/>**注意**<br/>需要提升的属性应具有部署的 porperty 架构*之前*接收事件。|
 
 7. 选择**确定**以保存所做的更改。 

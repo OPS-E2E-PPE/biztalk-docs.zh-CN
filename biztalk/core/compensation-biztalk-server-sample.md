@@ -18,12 +18,12 @@ caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 56675a59714a6fabc1d54fdb594466c7568cfeba
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e8a2ba919a6d4ee5b84da8a9911604aff95a02e4
+ms.sourcegitcommit: c3070a7a3f332857357f056dc632829b43869c17
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973446"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51630354"
 ---
 # <a name="compensation-biztalk-server-sample"></a>补偿 （BizTalk Server 示例）
 补偿示例演示如何使用**补偿**形状在业务流程中的。  
@@ -98,7 +98,7 @@ ms.locfileid: "36973446"
 |UpdateMailingList\UpdateMailingList.cs|UpdateMailingList 程序集的源代码主文件。|  
 |UpdateMailingList\UpdateMailingList.csproj|UpdateMailingList 项目文件。|  
   
-## <a name="building-and-initializing-this-sample"></a>生成并初始化本示例  
+## <a name="building-and-initializing-this-sample"></a>生成并初始化此示例  
   
 #### <a name="to-build-and-initialize-the-compensation-sample"></a>生成并初始化补偿示例  
   
@@ -120,9 +120,9 @@ ms.locfileid: "36973446"
   
    4.  上**业务流程和端口**页上，单击**下一步**。  
   
-   5.  上**Web 服务属性**页上，在**web 服务的目标命名空间**，类型**http://Microsoft.BizTalk.Samples.Compensation/**，然后单击**下一步**。  
+   5.  上**Web 服务属性**页上，在**web 服务的目标命名空间**，类型`http://Microsoft.BizTalk.Samples.Compensation/`，然后单击**下一步**。  
   
-   6.  上**Web 服务项目**页上，在**位置**，类型**http://localhost/CompensationOrchestrationWebServiceProxy**。  
+   6.  上**Web 服务项目**页上，在**位置**，类型`http://localhost/CompensationOrchestrationWebServiceProxy`。  
   
    7.  选择**允许匿名访问 web 服务**复选框。  
   
@@ -198,5 +198,5 @@ ms.locfileid: "36973446"
   
 2. 运行 Cleanup.bat。  
   
-## <a name="see-also"></a>请参阅  
+## <a name="see-also"></a>另请参阅  
  [业务流程（BizTalk Server 示例文件夹）](../core/orchestrations-biztalk-server-samples-folder.md)

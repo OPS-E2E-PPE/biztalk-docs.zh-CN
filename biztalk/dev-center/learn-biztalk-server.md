@@ -1,21 +1,24 @@
 ---
 title: 了解 Biztalk Server
 ms.prod: biztalk-server
-ms.openlocfilehash: ce397fb8a1a3e3f69c0e8c79ac0a084c38ece252
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.author: mandia
+ms.date: 11/1/18
+ms.topic: conceptual
+ms.openlocfilehash: 028422fdedf1e85dfdb1806c2317fff314ecec7b
+ms.sourcegitcommit: c3070a7a3f332857357f056dc632829b43869c17
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289653"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51630298"
 ---
 ## <a name="pluralsight-training"></a>Pluralsight 培训 
-[了解有关 functoid、 ESB，和的详细信息](http://app.pluralsight.com/search/?searchTerm=biztalk)
+[了解 functoid、 ESB 和更多信息](http://app.pluralsight.com/search/?searchTerm=biztalk)
 
 将打开 Pluralsight.com。
 
 ## <a name="quicklearn-training"></a>QuickLearn 培训 
 
-[BizTalk Server 管理员和开发人员的所有技术等级讲师培训](https://www.quicklearn.com/biztalk-training.aspx)
+[BizTalk Server 管理员和各种技能水平的开发人员的讲师引导式培训](https://www.quicklearn.com/biztalk-training.aspx)
 
 将打开 QuickLearn.com。
 
@@ -25,12 +28,12 @@ ms.locfileid: "22289653"
 
 [BizTalk 集成和企业服务总线 (ESB) 工具包](https://sec.ch9.ms/ch9/6ff7/4ef1316d-9721-4621-b9b0-055313906ff7/IntegrationandESBToolkit_mid.mp4)
 
-[比较 Logic Apps 和 BizTalk Server 中的集成方案](https://sec.ch9.ms/ch9/d0b5/46d08890-86d8-42fe-8813-b2bbefa8d0b5/ComparingIntegrationScenario_high.mp4)
+[比较逻辑应用和 BizTalk Server 中的集成方案](https://sec.ch9.ms/ch9/d0b5/46d08890-86d8-42fe-8813-b2bbefa8d0b5/ComparingIntegrationScenario_high.mp4)
 
 
-## <a name="guides-and-whitepapers"></a>参考线和白皮书
+## <a name="guides-and-whitepapers"></a>指南和白皮书
 
 [TechNet Wiki 上的白皮书库](http://social.technet.microsoft.com/wiki/contents/articles/15469.biztalk-serverbiztalk-services-white-paper-gallery.aspx)
 
-包括 Microsoft 编写和社区编写范围操作从云集成到的白皮书。
+包括 Microsoft 编写和社区书写范围云集成到操作的白皮书。
 
