@@ -118,7 +118,7 @@ ms.locfileid: "50753205"
   
 ###  <a name="BKMK_Config"></a> 若要更新 BAM 门户的 Web.config 文件  
   
-1.  在运行 BizTalk Server 的计算机，更新下的 Web.config 文件**\<驱动器\>: \Program Files\Microsoft BizTalk Server 2010\BAMPortal\BAMManagementService\Web.Config**。更新的 web.config 文件中的以下部分中的服务器和数据库名称：  
+1.  在运行 BizTalk Server 的计算机，更新下的 Web.config 文件 **\<驱动器\>: \Program Files\Microsoft BizTalk Server 2010\BAMPortal\BAMManagementService\Web.Config** 。更新的 web.config 文件中的以下部分中的服务器和数据库名称：  
   
     ```  
     <appSettings>  
@@ -127,7 +127,7 @@ ms.locfileid: "50753205"
     </appSettings>  
     ```  
   
-2.  在运行 BizTalk Server 的计算机，更新下的 Web.config 文件**\<驱动器\>: \Program Files\Microsoft BizTalk Server 2010\BAMPortal\BAMQueryService\Web.Config**。更新的 web.config 文件中的以下部分中的服务器和数据库名称：  
+2.  在运行 BizTalk Server 的计算机，更新下的 Web.config 文件 **\<驱动器\>: \Program Files\Microsoft BizTalk Server 2010\BAMPortal\BAMQueryService\Web.Config** 。更新的 web.config 文件中的以下部分中的服务器和数据库名称：  
   
     ```  
     <appSettings>  
@@ -161,7 +161,7 @@ ms.locfileid: "50753205"
   
 4.  在中**Integration Services 项目**对话框中，在解决方案资源管理器，右键单击**SSIS 包**，然后单击**添加现有包**。  
   
-5.  在中**添加现有包副本**对话框中**服务器**下拉列表框中，选择包含 BAM_AN_ 服务器\*和 BAM_DM_\*包。  
+5.  在中 **添加现有包副本** 对话框中 **服务器** 下拉列表框中，选择包含 BAM_AN_ 服务器\*和 BAM_DM_\*包。  
   
 6.  在中**包路径**，请单击省略号按钮。  
   

@@ -107,7 +107,7 @@ ms.locfileid: "50752454"
 
 2. 打开命令提示符，请转到 BizTalk WCF 服务发布向导创建 WCF 服务中 %SystemDrive%\InetPub 所在的文件夹\\，然后打开 Web.config 文件使用记事本。  
 
-3. 在记事本中，添加以下行**\<system.web\>** 元素：  
+3. 在记事本中，添加以下行 **\<system.web\>** 元素：  
 
    ```  
    <trust level="Full" originUrl="" />  
@@ -130,7 +130,7 @@ ms.locfileid: "50752454"
 
    1.  在记事本中，打开 BizTalk WCF 服务发布向导创建 WCF 服务中 %SystemDrive%\InetPub 所在的文件夹中的 Web.config\\。  
 
-   2.  在记事本中，设置**httpGetEnabled**属性中**\<serviceMetadata\>** 元素为 false，如以下行中所示：  
+   2.  在记事本中，设置**httpGetEnabled**属性中 **\<serviceMetadata\>** 元素为 false，如以下行中所示：  
 
        ```  
        <serviceMetadata httpGetEnabled="false" httpsGetEnabled="false" />  
