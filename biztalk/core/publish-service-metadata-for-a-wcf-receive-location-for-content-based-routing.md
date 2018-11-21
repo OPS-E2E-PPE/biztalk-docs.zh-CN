@@ -30,7 +30,7 @@ ms.locfileid: "50752813"
 
 ### <a name="to-publish-service-metadata-for-an-existing-wcf-receive-location-for-content-based-routing"></a>为基于内容的路由的现有 WCF 接收位置发布服务元数据  
 
-1. 单击**启动**，依次指向**所有程序**，指向**[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]**，然后单击**BizTalk WCF 服务发布向导**。  
+1. 单击**启动**，依次指向**所有程序**，指向**[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]**，然后单击 **BizTalk WCF 服务发布向导** 。  
 
    > [!NOTE]
    >  若要创建和发布 WCF 服务元数据的 BizTalk 业务流程和架构，您可以使用 BizTalk WCF 服务发布向导。 若要使用 SOAP 适配器将业务流程和架构发布为 Web Services，可以使用 BizTalk Web Services 发布向导。  

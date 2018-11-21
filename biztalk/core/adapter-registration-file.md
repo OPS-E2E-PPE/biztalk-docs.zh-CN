@@ -22,7 +22,7 @@ ms.locfileid: "50752957"
 # <a name="adapter-registration-file"></a>适配器注册文件
 已成功生成自定义适配器代码后必须将它注册使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 可通过使用适当的适配器设置更新注册表来完成此步骤。 你可以手动编写注册表文件，但由于需要输入的信息要求精确且比较复杂，这样做容易出错。 一个更好的办法是运行适配器注册向导。 适配器注册向导提供的所有选项与从头创建注册表文件时提供的完全一样，能降低文件中出错的可能性。 有关适配器注册向导的详细信息，请参阅[适配器注册向导](../core/adapter-registry-wizard.md)。  
   
- StaticAdapterManagement.reg 文件和 DynamicAdapterManagement.reg 文件位于*\<驱动器\>*: \Program Files\Microsoft Server\SDK\Samples\AdaptersDevelopment\File 的 BizTalk 适配器。 当你运行这些文件之一 (可以双击或右键单击它，然后选择**合并**)，它向注册表注册示例文件适配器并将该程序集安装到全局程序集缓存。 若要注册自定义适配器，最好的方法是使用适配器注册向导创建一个新的注册表文件。 如果自定义静态适配器类似于示例适配器，并且你决定修改现有的注册表文件，请在 StaticAdapterManagement.reg 文件中打开并修改以下属性：  
+ StaticAdapterManagement.reg 文件和 DynamicAdapterManagement.reg 文件位于 *\<驱动器\>*: \Program Files\Microsoft Server\SDK\Samples\AdaptersDevelopment\File 的 BizTalk 适配器。 当你运行这些文件之一 (可以双击或右键单击它，然后选择**合并**)，它向注册表注册示例文件适配器并将该程序集安装到全局程序集缓存。 若要注册自定义适配器，最好的方法是使用适配器注册向导创建一个新的注册表文件。 如果自定义静态适配器类似于示例适配器，并且你决定修改现有的注册表文件，请在 StaticAdapterManagement.reg 文件中打开并修改以下属性：  
   
 -   **约束**  
   
@@ -100,7 +100,7 @@ Windows Registry Editor Version 5.00
   
 2. 单击**启动**，依次指向**所有程序**，指向**附件**，然后单击**Windows 资源管理器**。  
   
-3. 有关 BizTalk Server 中，导航到安装驱动器，然后导航到**<** `drive` **>: \Program Files\Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **\SDK\Samples\AdaptersUsage\File 适配器**。  
+3. 有关 BizTalk Server 中，导航到安装驱动器，然后导航到 **<**`drive`**>: \Program Files\Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **\SDK\Samples\AdaptersUsage\File 适配器**。  
   
 4. 若要将示例适配器添加到注册表中，双击**StaticAdapterManagement.reg**。(如果你想要向运行注册表添加动态文件适配器**DynamicAdapterManagement.reg**改为使用该文件无处不在否则根据需要。)  
   

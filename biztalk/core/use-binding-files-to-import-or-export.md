@@ -47,7 +47,7 @@ ms.locfileid: "50752869"
 * 您必须添加对的引用**BizTalk EDI 应用程序**从将用作 EDI 应用程序的 BizTalk 应用程序。 请参阅[配置后步骤](../install-and-config-guides/post-configuration-steps-to-optimize-your-environment.md)。
 
 ## <a name="import-or-export-all-the-trading-partners"></a>导入或导出所有贸易合作伙伴
-1. 打开**[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]**，然后展开 BizTalk 组。
+1. 打开 **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]** ，然后展开 BizTalk 组。
 2. 右键单击**参与方**，然后选择**导出**。 
 
     在导出时**参与方**-级别，您要导出所有贸易合作伙伴。 这还将导出所有内容使用的贸易合作伙伴，包括业务配置文件和协议为 XML 文件。 
@@ -64,7 +64,7 @@ ms.locfileid: "50752869"
 
     
 ## <a name="export-individual-partners"></a>导出各个合作伙伴
-1. 在中**[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]**，选择**方**。
+1. 在中 **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]** ，选择**方**。
 2. 在中**参与方和业务配置文件**窗格中，右键单击参与方，然后选择**导出**。
 
     在导出特定参与方时，你可以选择要导出所有参与方，并使用该参与方的所有协议。 你可以取消选中**导出选定参与方及其中的所有协议**若要仅导出所选的参与方。
@@ -85,7 +85,7 @@ ms.locfileid: "50752869"
 
 在应用程序级别，您可以使用导入绑定文件 EDI 和 AS2 参与方。 
 
-1. 在中**[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]**，展开**应用程序**
+1. 在中 **[!INCLUDE[btsBizTalkServerAdminConsoleui_md](../includes/btsbiztalkserveradminconsoleui-md.md)]** ，展开**应用程序**
 2. 右键单击您的应用程序，然后选择**导入**。
 3. **导入跟踪设置**并**排除参与方**选项才可用。 使用这些选项，您可以选择要导入任何现有的跟踪设置，或排除任何 EDI/AS2 参与方绑定文件中。
 

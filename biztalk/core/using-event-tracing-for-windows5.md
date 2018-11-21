@@ -50,7 +50,7 @@ ms.locfileid: "50752861"
   
 - **提供程序：** 提供事件。  
   
-   用于 PeopleSoft Enterprise 的 BizTalk 适配器具有五个不同的提供程序。 它们在 Windows Management Instrumentation (WMI) 中进行注册。 若要查找中已注册的提供程序**\wmi\eventtrace**路径，可以使用诸如 WMI CIM Studio 等工具。  
+   用于 PeopleSoft Enterprise 的 BizTalk 适配器具有五个不同的提供程序。 它们在 Windows Management Instrumentation (WMI) 中进行注册。 若要查找中已注册的提供程序 **\wmi\eventtrace** 路径，可以使用诸如 WMI CIM Studio 等工具。  
   
   用于 PeopleSoft Enterprise 的 BizTalk 适配器具有五个提供程序，从而允许您记录不同种类的消息：  
   
