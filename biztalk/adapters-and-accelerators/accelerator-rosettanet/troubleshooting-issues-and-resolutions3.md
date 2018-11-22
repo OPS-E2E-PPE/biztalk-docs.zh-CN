@@ -146,7 +146,7 @@ ms.locfileid: "50758692"
   
 1. 单击**启动**，依次指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**。  
   
-2. 展开**\<计算机名\>（本地计算机）**，然后单击**Web 服务扩展**。  
+2. 展开 **\<计算机名\>（本地计算机）** ，然后单击 **Web 服务扩展** 。  
   
 3. 在中**Web 服务扩展**窗格中，验证是否允许 HwsMessages HttpReceive 的状态。 如果没有，请右键单击**HwsMessages HttpReceive**，然后单击**允许**。  
   
@@ -156,11 +156,11 @@ ms.locfileid: "50758692"
   
 1.  单击**启动**，依次指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**。  
   
-2.  展开**\<计算机名\>（本地计算机）**，右键单击**Web 服务扩展**，然后单击**添加一个新的 Web 服务扩展**.  
+2.  展开 **\<计算机名\>（本地计算机）** ，右键单击 **Web 服务扩展** ，然后单击 **添加一个新的 Web 服务扩展**.   
   
 3.  中**新的 Web 服务扩展**对话框中**扩展名**框中，键入**BizTalk ISAPI 扩展**，然后单击**添加**。  
   
-4.  在中**Add File**对话框中**文件的路径**框中，键入**\<驱动器\>: \Program Files\Microsoft BizTalk Server\<版本\>\HttpReceive\BTSHttpReceive.dll**，然后单击**确定**。  
+4.  在中 **Add File** 对话框中 **文件的路径** 框中，键入 **\<驱动器\>: \Program Files\Microsoft BizTalk Server\<版本\>\HttpReceive\BTSHttpReceive.dll** ，然后单击 **确定** 。  
   
 5.  在**新的 Web 服务扩展**对话框中，选择**为允许设置扩展状态**，然后单击**确定**。  
   
@@ -283,7 +283,7 @@ ms.locfileid: "50758692"
   
 1.  单击**启动**，依次指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**。  
   
-2.  展开**\<计算机名\>（本地计算机）**，右键单击**网站**，然后单击**属性**。  
+2.  展开 **\<计算机名\>（本地计算机)** ，右键单击 **网站** ，然后单击 **属性** 。  
   
 3.  选择**ISAPI 筛选器**选项卡。  
   

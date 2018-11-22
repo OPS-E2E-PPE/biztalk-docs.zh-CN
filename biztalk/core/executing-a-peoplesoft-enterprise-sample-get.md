@@ -75,7 +75,7 @@ ms.locfileid: "50753245"
 ## <a name="step-2-create-a-send-port-for-peoplesoft"></a>步骤 2： 创建 peoplesoft 发送端口  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 需要具有发送端口以便用于与 PeopleSoft 系统通信。 此发送端口将最终绑定到业务流程的逻辑端口。  
   
-1. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**控制台根节点**，展开**BizTalk Server 管理**，展开**BizTalk 组**，展开**应用程序**，然后展开**BizTalk.EnterpriseApplication。**  
+1. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**控制台根节点**，展开**BizTalk Server 管理**，展开 **BizTalk 组** ，展开**应用程序**，然后展开**BizTalk.EnterpriseApplication。**  
   
 2. 右键单击“发送端口” ，单击“新建” ，然后选择“静态要求响应发送端口” 。 在“发送端口属性”  对话框中，输入以下属性值：  
   
@@ -289,7 +289,7 @@ ms.locfileid: "50753245"
   
      `C:\LABS\PS_TEST\SAMPLEQUERY.XML`  
   
-3.  单击“确定” **。** 在属性窗口中，选择**\<架构\>** 并设置**根引用： 获取**。  
+3.  单击“确定” **。** 在属性窗口中，选择 **\<架构\>** 并设置 **根引用： 获取** 。  
   
 4.  右键单击“LOCATIONService_LOCATION_x5d.xsd”  ，然后单击“生成实例” 。 这将生成 **SampleQuery.xml** 文件。 此文件将放入接收位置，作为适配器启动业务流程进程的输入。  
   
@@ -299,7 +299,7 @@ ms.locfileid: "50753245"
   
 1. 配置用于接收传入文件和发送传出文件的文件夹。 转到**C:\LABS\PS_TEST**并创建两个新的子文件夹名为`FileIn`和`FileOut`。  
   
-2. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**控制台根节点**，展开**[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理**，展开**BizTalk 组**，展开**应用程序**，右键单击**PS_Test** ，然后单击**配置**。  
+2. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**控制台根节点**，展开 **[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理** ，展开 **BizTalk 组** ，展开 **应用程序** ，右键单击 **PS_Test** ，然后单击 **配置** 。  
   
     ![](../core/media/e45f4c8b-fc8a-492a-9824-5232eb728d95.gif "e45f4c8b-fc8a-492a-9824-5232eb728d95")  
   
@@ -327,7 +327,7 @@ ms.locfileid: "50753245"
   
     ![](../core/media/513eebb0-58ca-4aaa-a33b-31700f9cf7a8.gif "513eebb0-58ca-4aaa-a33b-31700f9cf7a8")  
   
-8. 单击**\<无\>** 有关**PeopleSoft_Port**下拉列表中。  
+8. 单击 **\<无\>** 有关 **PeopleSoft_Port** 下拉列表中。  
   
 9. 选择“新建发送端口”  ，然后选择或键入以下属性值。  
   
@@ -357,7 +357,7 @@ ms.locfileid: "50753245"
   
 11. 单击“确定”  两次以关闭对话框。  
   
-12. 在配置 Applicationwindow 中，单击**\<无\>** 有关**FileOut**下拉列表中。  
+12. 在配置 Applicationwindow 中，单击 **\<无\>** 有关 **FileOut** 下拉列表中。  
   
 13. 选择“新建发送端口”  ，然后键入或选择以下属性值：  
   
@@ -398,7 +398,7 @@ ms.locfileid: "50753245"
   
      ![](../core/media/1320ea3c-b2bc-4717-b200-c3c550079ccb.gif "1320ea3c-b2bc-4717-b200-c3c550079ccb")  
   
-     这些返回的记录数据应与在 PeopleSoft 练习 1 中针对 PeopleSoft 系统的查询所返回的结果相匹配。 通过比较的值获取在实验室 1 中专门**地址 1**并**Address2**行，在此处显示**\<位置： 地址 1\>** 并**\<位置： ADDRESS2\>** 字段中，你可以验证**获取**方法正常工作。  
+     这些返回的记录数据应与在 PeopleSoft 练习 1 中针对 PeopleSoft 系统的查询所返回的结果相匹配。 通过比较的值获取在实验室 1 中专门 **地址 1** 并 **Address2** 行，在此处显示 **\<位置： 地址 1\>** 并 **\<位置： ADDRESS2\>** 字段中，你可以验证 **获取** 方法正常工作。  
   
 ## <a name="summary"></a>总结  
  在本实验室中，您首先验证了必备组件的设置对于访问 PeopleSoft 系统是否正确。 然后，你使用 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 创建了包含业务流程的新 BizTalk 项目。 对 BizTalk 业务流程进行了配置，以使用 PeopleSoft 适配器获取来自 PeopleSoft 系统的数据。 为配置业务流程，你创建了发送端口、接收端口和发送/接收端口。 将这些端口绑定到 PeopleSoft 适配器，并将消息分配给相应的端口。  
