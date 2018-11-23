@@ -299,7 +299,7 @@ ms.locfileid: "50753245"
   
 1. 配置用于接收传入文件和发送传出文件的文件夹。 转到**C:\LABS\PS_TEST**并创建两个新的子文件夹名为`FileIn`和`FileOut`。  
   
-2. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**控制台根节点**，展开 **[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理** ，展开 **BizTalk 组** ，展开 **应用程序** ，右键单击 **PS_Test** ，然后单击 **配置** 。  
+2. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开 **控制台根节点** ，展开 **[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理** ，展开 **BizTalk 组** ，展开 **应用程序** ，右键单击 **PS_Test** ，然后单击 **配置** 。  
   
     ![](../core/media/e45f4c8b-fc8a-492a-9824-5232eb728d95.gif "e45f4c8b-fc8a-492a-9824-5232eb728d95")  
   

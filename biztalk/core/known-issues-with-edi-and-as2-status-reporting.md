@@ -66,7 +66,7 @@ ms.locfileid: "50753037"
   
  如果你想要升级到 BizTalk Server 后使用状态报告，，请确保在执行升级之前配置 BAM 工具。  
   
- 如果在执行升级后状态报告功能不工作，请在升级日志中确定在升级之前是否配置了 BAM 工具。 如果不是，您可以配置 BAM 工具，然后部署 BusinessMessageJournal BAM 活动中的 EdiStatusReportingActivityDefs.xml 文件中包含*\<驱动器\>*: \Program Files\MicrosoftBizTalk Server。  
+ 如果在执行升级后状态报告功能不工作，请在升级日志中确定在升级之前是否配置了 BAM 工具。 如果不是，您可以配置 BAM 工具，然后部署 BusinessMessageJournal BAM 活动中的 EdiStatusReportingActivityDefs.xml 文件中包含 *\<驱动器\>* :\Program Files\MicrosoftBizTalk Server。  
   
 ## <a name="disabling-transaction-set-storage-affects-an-activated-batch-but-enabling-storage-does-not"></a>禁用事务集存储会影响激活的批处理，但启用存储则不会产生任何影响  
  如果在批处理业务流程处于激活状态时禁用事务集存储，更改将立即生效。 BizTalk Server 将在启用存储的情况下存储批处理的事务集，但不会在禁用存储后存储事务集。 您可以禁用事务集存储，方法是：在“EDI 属性”对话框的“常规”窗格中清除“存储事务集/负载以用于报告”属性。  
