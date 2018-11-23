@@ -30,7 +30,7 @@ ms.locfileid: "50752813"
 
 ### <a name="to-publish-service-metadata-for-an-existing-wcf-receive-location-for-content-based-routing"></a>为基于内容的路由的现有 WCF 接收位置发布服务元数据  
 
-1. 单击**启动**，依次指向**所有程序**，指向**[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]**，然后单击 **BizTalk WCF 服务发布向导** 。  
+1. 单击**启动**，依次指向**所有程序**，指向 **[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]** ，然后单击 **BizTalk WCF 服务发布向导** 。  
 
    > [!NOTE]
    >  若要创建和发布 WCF 服务元数据的 BizTalk 业务流程和架构，您可以使用 BizTalk WCF 服务发布向导。 若要使用 SOAP 适配器将业务流程和架构发布为 Web Services，可以使用 BizTalk Web Services 发布向导。  
@@ -111,7 +111,7 @@ ms.locfileid: "50752813"
 
 2. 打开命令提示符，请转到 BizTalk WCF 服务发布向导创建 WCF 服务中 %SystemDrive%\InetPub 所在的文件夹\\，然后打开 Web.config 文件使用记事本。  
 
-3. 在记事本中，添加以下行**\<system.web\>** 元素：  
+3. 在记事本中，添加以下行 **\<system.web\>** 元素：  
 
    ```  
    <trust level="Full" originUrl="" />  
@@ -134,7 +134,7 @@ ms.locfileid: "50752813"
 
    1.  在记事本中，打开 BizTalk WCF 服务发布向导创建 WCF 服务中 %SystemDrive%\InetPub 所在的文件夹中的 Web.config\\。  
 
-   2.  在记事本中，设置**httpGetEnabled**属性中**\<serviceMetadata\>** 元素为 false，如以下行：  
+   2.  在记事本中，设置 **httpGetEnabled**属性中**\<serviceMetadata\>** 元素为 false，如以下行：  
 
        ```  
        <serviceMetadata httpGetEnabled="false" httpsGetEnabled="false" />  
