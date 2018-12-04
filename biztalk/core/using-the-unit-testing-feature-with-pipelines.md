@@ -12,17 +12,17 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4e437df707ace58eef6de9dc9f7eb65d888309a9
-ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
+ms.openlocfilehash: 7deaaa8d0ca60f13e5f3b835a91a31e06cdf2cbd
+ms.sourcegitcommit: be6273d612669adfbb9dc9208aaae0a8437d4017
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50752632"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52826317"
 ---
 # <a name="using-the-unit-testing-feature-with-pipelines"></a>对管道使用单元测试功能
 本主题演示如何使用单元测试功能为 FlatFileReceive 管道示例中的管道添加单元测试。 管道单元测试是类似于此处记录的 Pipeline.exe 工具：[管道工具](../core/pipeline-tools.md)。 如果启用单元测试上**部署**选项卡上的项目属性中，你的项目中的管道类派生自**Microsoft.BizTalk.TestTools.Pipeline.TestableReceivePipeline**。  此类会对 Pipeline.exe 工具公开的某些相同功能进行建模。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>必要条件  
  必须首先按照步骤生成 FlatFileReceive 示例，并熟悉该示例。 包括的步骤生成 FlatFileReceive 示例可以在此找到的文档： [FlatFileReceive （BizTalk Server 示例）](../core/flatfilereceive-biztalk-server-sample.md)。  
   
 ## <a name="adding-a-unit-test-project-to-the-flatfilereceive-sample"></a>将单元测试项目添加到 FlatFileReceive 示例  
@@ -61,7 +61,7 @@ ms.locfileid: "50752632"
   
 2.  在解决方案资源管理器中，打开 FFReceivePipelineTest.cs，然后将以下指令添加到该文件的顶部：  
   
-    ```  
+    ```csharp
     using System.IO;  
     using System.Collections.Specialized;  
     using System.Collections.Generic;  
@@ -69,7 +69,7 @@ ms.locfileid: "50752632"
   
 3.  滚动到文件的底部，并替换**FFReceivePipelineConstructorTest**方法验证是否测试管道之前存在的管道输入以下代码。 此代码还验证是否生成符合平面文件架构的消息。  
   
-    ```  
+    ```csharp
     [TestMethod()]  
     public void FFReceivePipelineUnitTest()  
     {  
@@ -124,8 +124,8 @@ ms.locfileid: "50752632"
   
      已处理的消息应类似于以下内容：  
   
-    ```  
-    <purchaseOrder orderDate="1999-10-20" xmlns="http://FlatFileRecieve.PO">  
+    ```xml
+    <purchaseOrder orderDate="1999-10-20" xmlns="http://FlatFileReceive.PO">  
   
       <shipTo country="US" xmlns="">  
         <name>Alice Smith</name>  
@@ -151,14 +151,14 @@ ms.locfileid: "50752632"
           <productName>Lawnmower</productName>  
           <quantity>1</quantity>  
           <USPrice>148.95</USPrice>  
-          <comment xmlns="http://FlatFileRecieve.PO">Confirm this is electric</comment>  
+          <comment xmlns="http://FlatFileReceive.PO">Confirm this is electric</comment>  
         </item>  
   
         <item partNum="926-AA">  
           <productName>Baby Monitor</productName>  
           <quantity>1</quantity>  
           <USPrice>39.98</USPrice>  
-          <comment xmlns="http://FlatFileRecieve.PO">Confirm this is electric</comment>  
+          <comment xmlns="http://FlatFileReceive.PO">Confirm this is electric</comment>  
           <shipDate>1999-05-21</shipDate>  
         </item>  
   

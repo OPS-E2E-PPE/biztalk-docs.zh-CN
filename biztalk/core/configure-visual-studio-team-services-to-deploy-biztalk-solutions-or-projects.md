@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: tordgladnordahl
 ms.author: tonordah
 manager: anneta
-ms.openlocfilehash: 7178f85bce4087e5bc740810050817676a6c8996
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8b13ef6f56e892bb3598096272d876c5f0a865f3
+ms.sourcegitcommit: be6273d612669adfbb9dc9208aaae0a8437d4017
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992470"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52826301"
 ---
 # <a name="configure-visual-studio-team-services-to-deploy-biztalk-server-solutions-or-projects"></a>配置 Visual Studio Team Services 部署 BizTalk Server 解决方案或项目
 设置 VSTS 自动部署[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]项目。 
@@ -32,7 +32,7 @@ ms.locfileid: "36992470"
 > [!IMPORTANT]
 > VSTS 代理只能安装一个[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]组中。 
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>必要条件
 
 * 安装[功能包 1](https://www.microsoft.com/download/details.aspx?id=55100)上你 [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
 * 一些经验和知识并通过创建和使用 VSTS 中的定义。 如果你是新手 VSTS，这些可能是有用的资源： 
@@ -109,11 +109,11 @@ ms.locfileid: "36992470"
 
 1. 选择**生成**选项卡上，选择**所有定义**，然后选择**新建**:
 
-    ![创建新发布定义](../core/media/create-new-release-defintion.png)
+    ![创建新发布定义](../core/media/create-new-release-definition.png)
 
 2. 选择**空**模板，然后选择**下一步**:
 
-    ![从空白模板创建新的定义](../core/media/create-new-defintion-from-an-empty-template.png)
+    ![从空白模板创建新的定义](../core/media/create-new-definition-from-an-empty-template.png)
 
 3. 选择你**存储库**源和**分支**有关定义的信息。
 4. **可选**。 选择**持续集成**。
@@ -123,8 +123,10 @@ ms.locfileid: "36992470"
     ![添加新部署定义](../core/media/add-new-deploy-definition.png)
 
 7. 选择**操作名称**你想要使用：
-    * **创建新的 BizTalk 应用程序**部署新的应用程序。 如果应用程序已 exsist，它会卸载当前应用程序 （句号），并安装新的应用程序。 如果启用持续集成，则它会自动重新部署应用程序在更新存储库中时。
+
+    * **创建新的 BizTalk 应用程序**部署新的应用程序。 如果应用程序已存在，它会卸载当前应用程序 （句号），并安装新的应用程序。 如果启用持续集成，则它会自动重新部署应用程序在更新存储库中时。
     * **更新现有的 BizTalk 应用程序**附加更改，例如**架构**到已运行的应用程序。 它不需要完全重新部署应用程序。
+
 8. 输入**应用程序名称**在你[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]环境。
 9. 在中**部署的包路径**，选择你的存储库中的 zip 文件的路径。
 10. 选择**触发器**菜单中，启用**持续集成**，并选择正确**分支**生成。

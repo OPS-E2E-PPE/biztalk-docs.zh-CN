@@ -12,12 +12,12 @@ caps.latest.revision: 35
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9798d56c4f3896e652a288d20b4e39e6a2537d3c
-ms.sourcegitcommit: 53b16fe6c1b1707ecf233dbd05f780653eb19419
+ms.openlocfilehash: 7212cb1cbd370e0b7df04a11744d176c126c39ac
+ms.sourcegitcommit: be6273d612669adfbb9dc9208aaae0a8437d4017
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50752957"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52826469"
 ---
 # <a name="adapter-registration-file"></a>适配器注册文件
 已成功生成自定义适配器代码后必须将它注册使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 可通过使用适当的适配器设置更新注册表来完成此步骤。 你可以手动编写注册表文件，但由于需要输入的信息要求精确且比较复杂，这样做容易出错。 一个更好的办法是运行适配器注册向导。 适配器注册向导提供的所有选项与从头创建注册表文件时提供的完全一样，能降低文件中出错的可能性。 有关适配器注册向导的详细信息，请参阅[适配器注册向导](../core/adapter-registry-wizard.md)。  
@@ -45,7 +45,7 @@ ms.locfileid: "50752957"
   
  你可以通过两种方式指定实现适配器接收器、适配器发送器和适配器管理的 .NET 类型：  
   
-1. 将适配器安装到一个文件夹，并指定 * TypeName 和\*AssemblyPath 其中\*TypeName 是类型。类的 FullName 和\*AssemblyPath 是程序集的路径和文件。  
+1. 将适配器安装到一个文件夹，并指定\*TypeName 和\*AssemblyPath 其中\*TypeName 是类型。类的 FullName 和\*AssemblyPath 是程序集的路径和文件。  
   
 2. 在全局程序集缓存中安装适配器，且仅指定 * TypeName 其中\*TypeName 是类型。类的 AssemblyQualifiedName。 这是建议的选项。  
   

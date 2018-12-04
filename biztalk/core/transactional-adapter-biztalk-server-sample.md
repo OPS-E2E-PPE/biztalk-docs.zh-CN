@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 014b541517fb6054525081b852cc21f388742ce2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 07719f864f332d644d201e6f8349bdc19b456a9f
+ms.sourcegitcommit: be6273d612669adfbb9dc9208aaae0a8437d4017
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975478"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52826405"
 ---
 # <a name="transactional-adapter-biztalk-server-sample"></a>事务性适配器 （BizTalk Server 示例）
 事务性适配器示例演示如何在处理 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 消息期间，根据数据库创建并使用显式 Microsoft 分布式事务处理协调器 (MSDTC) 事务。  
@@ -59,7 +59,7 @@ ms.locfileid: "36975478"
 ## <a name="how-to-use-this-sample"></a>如何使用本示例  
  本示例可以作为你使用显式事务创建自定义发送和接收适配器的框架。  
 
-## <a name="building-and-initializing-this-sample"></a>生成并初始化本示例  
+## <a name="building-and-initializing-this-sample"></a>生成并初始化此示例  
 
 > [!IMPORTANT]
 >  如果是在 64 位计算机上安装 BizTalk 或安装位置已修改，则需要相应修改 OutboundAssemblyPath、InboundAssemblyPath、AdapterMgmtAssemblyPath。  
@@ -200,7 +200,7 @@ ms.locfileid: "36975478"
 
 3. 选择**新查询**工具栏按钮并粘贴到一个新的查询窗口，将测试表、 测试数据和测试以下存储过程到 Northwind 数据库。 选择**Execute**工具栏按钮。  
 
-   ```  
+   ```sql
    use [Northwind]  
    GO  
    if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[scratch]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)  
@@ -226,7 +226,7 @@ ms.locfileid: "36975478"
 
 4. 在中[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，展开**发送端口**节点中，选择**TxnSendPort1**发送端口，然后选择**启动**。  
 
-5. 在中[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，展开**ReceiveLocations**节点中，选择**TxnRecieveLocation1**接收位置，然后选择**启用**。  
+5. 在中[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，展开**ReceiveLocations**节点中，选择**TxnReceiveLocation1**接收位置，然后选择**启用**。  
 
 6. 在启用该接收位置后，它将在指定的时间间隔自动轮询数据库以获得数据。  
 

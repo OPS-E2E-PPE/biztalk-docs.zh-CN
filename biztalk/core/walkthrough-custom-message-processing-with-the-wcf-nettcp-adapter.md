@@ -12,12 +12,12 @@ caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d8b74c2ead4ece353dae155d272a9a1aee5fb676
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 39f765e1e99363440d6c122f5e5f174ea50dd761
+ms.sourcegitcommit: be6273d612669adfbb9dc9208aaae0a8437d4017
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006206"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52826341"
 ---
 # <a name="walkthrough-custom-message-processing-with-the-wcf-nettcp-adapter"></a>演练： 使用 Wcf-nettcp 适配器处理的自定义消息
 在本演练中，[!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] 客户端将使用 WCF-NetTcp 适配器将包含嵌入的二进制 JPEG 图像数据的 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 消息提交到 BizTalk 接收位置。 通过使用 XPath 语句 （带有 Base64 节点编码） 来提取的二进制编码的 JPEG 图像**入站消息正文**中适配器的配置设置。 XPath 处理方法与 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 用于处理传入消息的默认方法不同。 在默认方法中，适配器将获取的全部内容**正文**元素的[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]消息，然后将其提交到 BizTalk MessageBox 数据库。 XPath 消息处理提取传入 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 消息的特定部分以创建自定义 BizTalk 消息。 在此示例中，XPath 处理查找名为的 XML 元素**SendPicture**在传入[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]消息 （这是以 XML 格式）。 找到该元素之后，XPath 会提取该元素的值作为二进制 Base64 编码对象，并将该二进制值放在 BizTalk 消息中。 该消息会被发布到 MessageBox 数据库，然后借助发送端口筛选器订阅输出到 FILE 发送端口。 本示例中未使用任何业务流程，并且所有的处理都使用 XPath 通过 BizTalk 消息完成。  
@@ -33,7 +33,7 @@ ms.locfileid: "37006206"
 > [!NOTE]
 >  **Hosttrusted**元素指定与接收处理程序相关联的主机是否受信任。 在 bindings.xml 文件中，将该元素设置为其默认值 `false`，因为在本示例中，我们不关心 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 企业单一登录服务 (SSO)。 SSO 允许通过 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 传递用户凭据，将第三方应用程序与 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 相集成。 `false` 设置会阻止 BizTalk 消息作为 SSO 处理的一部分通过 BizTalk 服务。  
 
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>必要条件  
  要执行此示例中的步骤，请确保您的环境安装了以下必备组件；  
 
 - 运行本示例的计算机和生成程序集和运行部署过程的计算机需要 Microsoft [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]，Microsoft [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]，与 Microsoft BizTalk Server。  
@@ -54,7 +54,7 @@ ms.locfileid: "37006206"
 
 1. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，右键单击**应用程序**，选择**导入**，然后选择**MSI 文件**。 转到**C:\WCFCustomMessageProcessing\WCFCustomMessageProcessing.msi**文件，，然后单击**打开**。 这会创建此应用程序的以下项目：  
 
-   - **FileSP**发送端口： 上的本地文件系统位置**C:\WCFCustomMessageProcessing\Out**发送 JPEG 图像数据其中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]作为示例处理的最终输出。 您可以查看发送端口筛选器的**BTS。RecievePortName = NetTcpRP**中配置**FileSP 属性**对话框中的下**筛选器**。 该筛选器与 NetTcp 接收端口相关联。 任何消息的对 nettcprp 接收端口将发送到 FileSP 发送端口输出位置**C:\WCFCustomMessageProcessing\Out**接收位置执行 XPath 处理消息之后。  
+   - **FileSP**发送端口： 上的本地文件系统位置**C:\WCFCustomMessageProcessing\Out**发送 JPEG 图像数据其中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]作为示例处理的最终输出。 您可以查看发送端口筛选器的**BTS。ReceivePortName = NetTcpRP**中配置**FileSP 属性**对话框中的下**筛选器**。 该筛选器与 NetTcp 接收端口相关联。 任何消息的对 nettcprp 接收端口将发送到 FileSP 发送端口输出位置**C:\WCFCustomMessageProcessing\Out**接收位置执行 XPath 处理消息之后。  
 
    - **NetTcpRP**接收端口： 在逻辑上包含的端口**NetTcpRL**接收位置。  
 

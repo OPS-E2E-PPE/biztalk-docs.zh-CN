@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 68d3d1d9dbb9cc8c9510745f2455e05f833bf3e9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f78a52074b06f193f5605938a7457a294e9434ca
+ms.sourcegitcommit: be6273d612669adfbb9dc9208aaae0a8437d4017
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969566"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52826413"
 ---
 # <a name="how-to-configure-a-wcf-custom-receive-location"></a>如何配置 WCF-Custom 接收位置
 可以通过编程方式或使用 BizTalk 管理控制台来配置 WCF-Custom 接收位置。  
@@ -58,7 +58,7 @@ ms.locfileid: "36969566"
  您可以在 BizTalk 管理控制台中设置 WCF-Custom 接收位置适配器变量。 如果未设置接收位置的属性，则使用 BizTalk 管理控制台中设置的默认接收处理程序值。  
 
 > [!NOTE]
->  在执行以下过程之前，您必须已添加接收端口。 有关详细信息，请参阅[如何创建接收端口](../core/how-to-create-a-receive-port.md)。  
+>  在执行以下过程之前，您必须已添加接收端口。 有关详细信息，请参阅 [如何创建接收端口](../core/how-to-create-a-receive-port.md)。  
 
 ## <a name="configure-variables-for-a-wcf-custom-receive-location"></a>WCF 自定义接收位置配置变量  
 
@@ -88,7 +88,7 @@ ms.locfileid: "36969566"
 
  可使用以下格式设置属性：  
 
-```  
+```xml
 <CustomProps>  
   <InboundBodyPathExpression vt="8" />  
   <InboundBodyLocation vt="8">UseBodyElement</InboundBodyLocation>  
@@ -114,7 +114,7 @@ ms.locfileid: "36969566"
 
  以下代码段显示了如何创建 WCF-Custom 接收位置：  
 
-```  
+```csharp
 // Use BizTalk Explorer object model to create new WCF-Custom receive location   
 string server = System.Environment.MachineName;  
 string database = "BizTalkMgmtDb";  
@@ -136,8 +136,8 @@ explorer.SaveChanges();
 IReceivePort receivePort = application.AddNewReceivePort(false);  
 receivePort.Name = "SampleReceivePort";  
 // Add a new one-way receive location  
-IReceiveLocation recieveLocation = receivePort.AddNewReceiveLocation();  
-recieveLocation.Name = "SampleReceiveLocation";  
+IReceiveLocation receiveLocation = receivePort.AddNewReceiveLocation();  
+receiveLocation.Name = "SampleReceiveLocation";  
 // Find a receive handler for WCF-Custom   
 int i = 0;  
 for(i=0; i < explorer.ReceiveHandlers.Count; ++i)   
@@ -145,11 +145,11 @@ for(i=0; i < explorer.ReceiveHandlers.Count; ++i)
     if("WCF-Custom" == explorer.ReceiveHandlers[i].TransportType.Name)  
         break;  
 }  
-recieveLocation.ReceiveHandler = explorer.ReceiveHandlers[i];  
-recieveLocation.Address = "net.pipe://mycomputer/samplePipeName";  
-recieveLocation.ReceivePipeline = explorer.Pipelines["Microsoft.BizTalk.DefaultPipelines.PassThruReceive"];  
-recieveLocation.TransportType = explorer.ProtocolTypes["WCF-Custom"];  
-recieveLocation.TransportTypeData = transportConfigData;  
+receiveLocation.ReceiveHandler = explorer.ReceiveHandlers[i];  
+receiveLocation.Address = "net.pipe://mycomputer/samplePipeName";  
+receiveLocation.ReceivePipeline = explorer.Pipelines["Microsoft.BizTalk.DefaultPipelines.PassThruReceive"];  
+receiveLocation.TransportType = explorer.ProtocolTypes["WCF-Custom"];  
+receiveLocation.TransportTypeData = transportConfigData;  
 // Save  
 explorer.SaveChanges();   
 ```  

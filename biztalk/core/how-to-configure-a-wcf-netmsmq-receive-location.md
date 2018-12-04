@@ -12,17 +12,17 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 99cb9f7f91ecd768e36fea5de1296f375d87f973
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6e4659b7ff551127bb085d01125eb0e9e5ff7489
+ms.sourcegitcommit: be6273d612669adfbb9dc9208aaae0a8437d4017
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990270"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52826437"
 ---
 # <a name="how-to-configure-a-wcf-netmsmq-receive-location"></a>如何配置 WCF-NetMsmq 接收位置
 可以通过编程方式或使用 BizTalk 管理控制台来配置 WCF-NetMsmq 接收位置。  
 
-## <a name="configuratin-properties"></a>配置属性
+## <a name="configuration-properties"></a>配置属性
 
  使用 BizTalk 浏览器对象模型，您可以通过编程方式创建和配置接收位置。 BizTalk 浏览器对象模型公开**IReceiveLocation**接收位置配置接口具有**TransportTypeData**读/写属性。 此属性以 XML 字符串的名称-值对形式接受 WCF-NetMsmq 接收位置配置属性包。 若要在 BizTalk 浏览器对象模型中设置此属性，必须设置**InboundTransportLocation**的属性**IReceiveLocation**接口。  
 
@@ -51,9 +51,9 @@ ms.locfileid: "36990270"
 |       **ServiceCertificate**       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                           String                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                                     为此接收位置指定 X.509 证书的指纹，客户端利用该指纹验证服务。 要用于此属性的证书必须安装到**我**将存储在**当前用户**位置。 **注意：** 必须安装到的服务证书**当前用户**承载此接收位置的接收处理程序的用户帐户的位置。 <br /><br /> 默认值为空字符串。                                                                                                                     |
 |      **InboundBodyLocation**       | Enum<br /><br /> -   **UseBodyElement** -使用的 soap 内容**正文**传入消息创建 BizTalk 消息正文部分的元素。 如果 **Body** 元素具有多个子元素，则只有第一个元素将成为 BizTalk 消息正文部分。<br />-   **UseEnvelope** -创建 BizTalk 消息正文部分的整个 soap**信封**传入消息。<br />-   **UseBodyPath** -使用中的正文路径表达式**InboundBodyPathExpression**属性以创建 BizTalk 消息正文部分。 针对传入消息的 SOAP **Body** 元素的直接子元素计算正文路径表达式。 此属性仅对要求-响应端口有效。<br /><br /> 有关如何使用详细信息**InboundBodyLocation**属性，请参阅[WCF 适配器指定消息正文](../core/specifying-the-message-body-for-the-wcf-adapters.md)。 |                                                                                                                                                                                                                                                                                     指定数据选择 soap**正文**传入 WCF 消息的元素。<br /><br /> 默认值： **UseBodyElement**                                                                                                                                                                                                                                                                                      |
 |   **InboundBodyPathExpression**    |                                                                                                                                                                                                                                                                                                                                                                      String<br /><br /> 有关如何使用详细信息**InboundBodyPathExpression**属性，请参阅[WCF 适配器属性架构和属性](../core/wcf-adapters-property-schema-and-properties.md)。                                                                                                                                                                                                                                                                                                                                                                       |                                                                                     指定正文路径表达式以标识传入消息中用于创建 BizTalk 消息正文部分的特定部分。 针对 SOAP 的直接子元素计算此正文路径表达式**正文**传入消息的节点。 如果此正文路径表达式返回多个节点，则只选择第一个节点作为 BizTalk 消息正文部分。 此属性是必需的如果**InboundBodyLocation**属性设置为**UseBodyPath**。<br /><br /> 默认值为空字符串。                                                                                     |
-|      **InboundNodeEncoding**       |                                                                                                                                                                                                                                                                                                                     Enum<br /><br /> -   **Base64** -Base64 编码。<br />-   **十六进制**-十六进制编码。<br />-   **字符串**-文本编码-utf-8。<br />-   **使用 BizTalk 管理控制台配置 Wcf-custom 发送端口                                                                                                                                                                                                                                                                                                                     |                                                                                                                                                                                               指定 Wcf-netmsmq 接收适配器将使用由中指定的正文路径表达式标识的节点进行解码的编码类型**InboundBodyPathExpression**。 此属性是必需的如果**InboundBodyLocation**属性设置为**UseBodyPath**。<br /><br /> 有关如何使用 WCF 自定义适配器使用 WCF 扩展点的详细信息，请参阅**如何启用 WCF 适配器的 WCF 扩展性点**。**                                                                                                                                                                                                |
+|      **InboundNodeEncoding**       |                                                                                                                                                                                                                                                                                                                     Enum<br /><br /> -   **Base64** -Base64 编码。<br />-   **十六进制**-十六进制编码。<br />-   **字符串**-文本编码-utf-8。<br />-   **XML** -WCF 适配器中的正文路径表达式所选择的节点的外部 xml 创建 BizTalk 消息正文**InboundBodyPathExpression**。                                                                                                                                                                                                                                                                                                                     |                                                                                                                                                                                               指定 Wcf-netmsmq 接收适配器将使用由中指定的正文路径表达式标识的节点进行解码的编码类型**InboundBodyPathExpression**。 此属性是必需的如果**InboundBodyLocation**属性设置为**UseBodyPath**。<br /><br /> 默认值： **XML**                                                                                                                                                                                                |
 |    **DisableLocationOnFailure**    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Boolean                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                   指定是否禁用由于接收管道故障或路由故障而导致入站处理失败的接收位置。<br /><br /> 默认值： **False**                                                                                                                                                                                                                                                                    |
-|    **SuspendMessageOnFailure**     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Boolean                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                 指定是否将由于接收管道故障或路由故障而导致入站处理失败的请求消息挂起。<br /><br /> 中**Wcf-custom 传输属性**对话框中，在常规选项卡上，配置终结点地址、 服务标识，并且SOAPAction标头WCF 自定义发送端口。**                                                                                                                                                                                                                                                                  |
+|    **SuspendMessageOnFailure**     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Boolean                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                 指定是否将由于接收管道故障或路由故障而导致入站处理失败的请求消息挂起。<br /><br /> 默认值： **，则返回 True**                                                                                                                                                                                                                                                                  |
 | **IncludeExceptionDetailInFaults** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                          Boolean                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                    指定是否将托管异常信息包括在返回给客户端以便进行调试的 SOAP 错误的详细信息中。<br /><br /> 默认值： **False**                                                                                                                                                                                                                                                                    |
 
 ## <a name="configure-a-wcf-netmsmq-receive-location-with-the-biztalk-administration-console"></a>配置 Wcf-netmsmq 接收位置使用 BizTalk 管理控制台
@@ -61,7 +61,7 @@ ms.locfileid: "36990270"
  您可以在 BizTalk 管理控制台中设置 WCF-NetMsmq 接收位置适配器变量。 如果未设置接收位置的属性，则使用 BizTalk 管理控制台中设置的默认接收处理程序值。  
 
 > [!NOTE]
->  在执行以下过程之前，您必须已添加接收端口。 有关详细信息，请参阅[如何创建接收端口](../core/how-to-create-a-receive-port.md)。  
+>  在执行以下过程之前，您必须已添加接收端口。 有关详细信息，请参阅 [如何创建接收端口](../core/how-to-create-a-receive-port.md)。  
 
 > [!NOTE]
 >  WCF 客户端和 WCF-NetMsmq 接收位置的绑定配置必须相符。 如果不相符，WCF-NetMsmq 接收位置会丢失传入的消息。  
@@ -88,7 +88,7 @@ ms.locfileid: "36990270"
 
  可使用以下格式设置属性：  
 
-```  
+```xml
 <CustomProps>  
   <ServiceCertificate vt="8" />  
   <InboundBodyLocation vt="8">UseBodyElement</InboundBodyLocation>  
@@ -117,7 +117,7 @@ ms.locfileid: "36990270"
 
  以下代码段显示了如何创建 WCF-NetMsmq 接收位置：  
 
-```  
+```csharp
 // Use BizTalk Explorer object model to create new WCF-NetMsmq receive location   
 string server = System.Environment.MachineName;  
 string database = "BizTalkMgmtDb";  
@@ -144,8 +144,8 @@ explorer.SaveChanges();
 IReceivePort receivePort = application.AddNewReceivePort(false);  
 receivePort.Name = "SampleReceivePort";  
 // Add a new one-way receive location  
-IReceiveLocation recieveLocation = receivePort.AddNewReceiveLocation();  
-recieveLocation.Name = "SampleReceiveLocation";  
+IReceiveLocation receiveLocation = receivePort.AddNewReceiveLocation();  
+receiveLocation.Name = "SampleReceiveLocation";  
 // Find a receive handler for WCF-NetMsmq   
 int i = 0;  
 for(i=0; i < explorer.ReceiveHandlers.Count; ++i)   
@@ -153,11 +153,11 @@ for(i=0; i < explorer.ReceiveHandlers.Count; ++i)
     if("WCF-NetMsmq" == explorer.ReceiveHandlers[i].TransportType.Name)  
         break;  
 }  
-recieveLocation.ReceiveHandler = explorer.ReceiveHandlers[i];  
-recieveLocation.Address = "net.msmq://mycomputer/private/sampleQueue";  
-recieveLocation.ReceivePipeline = explorer.Pipelines["Microsoft.BizTalk.DefaultPipelines.PassThruReceive"];  
-recieveLocation.TransportType = explorer.ProtocolTypes["WCF-NetMsmq"];  
-recieveLocation.TransportTypeData = transportConfigData;  
+receiveLocation.ReceiveHandler = explorer.ReceiveHandlers[i];  
+receiveLocation.Address = "net.msmq://mycomputer/private/sampleQueue";  
+receiveLocation.ReceivePipeline = explorer.Pipelines["Microsoft.BizTalk.DefaultPipelines.PassThruReceive"];  
+receiveLocation.TransportType = explorer.ProtocolTypes["WCF-NetMsmq"];  
+receiveLocation.TransportTypeData = transportConfigData;  
 // Save  
 explorer.SaveChanges();   
 ```  

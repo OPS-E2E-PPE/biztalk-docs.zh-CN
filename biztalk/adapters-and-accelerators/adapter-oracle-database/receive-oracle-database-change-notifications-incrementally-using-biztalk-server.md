@@ -12,16 +12,16 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 61e8fbbe2644098baf963d258d3e95b94e20e8b8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bb516347d94818f7d689cddd548a22ac1c454275
+ms.sourcegitcommit: be6273d612669adfbb9dc9208aaae0a8437d4017
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012086"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52826389"
 ---
 # <a name="receive-oracle-database-change-notifications-incrementally-using-biztalk-server"></a>接收以增量方式使用 BizTalk Server 的 Oracle 数据库更改通知
 > [!IMPORTANT]
->  为了简洁起见，本主题仅介绍如何以增量方式接收通知。 在业务方案中，业务流程在理想情况下必须包括用于提取收到通知消息的类型，然后执行任何后续操作的逻辑。 换而言之，本主题中所述的业务流程必须基于业务流程中所述[进程通知消息，以完成特定任务在 Oracle 数据库中使用 BizTalk Sever](../../adapters-and-accelerators/adapter-oracle-database/process-notification-messages-to-run-specific-tasks-in-oracle-db-using-biztalk.md)。  
+>  为了简洁起见，本主题仅介绍如何以增量方式接收通知。 在业务方案中，业务流程在理想情况下必须包括用于提取收到通知消息的类型，然后执行任何后续操作的逻辑。 换而言之，本主题中所述的业务流程必须基于业务流程中所述[进程通知消息，以完成特定任务在 Oracle 数据库中使用 BizTalk Server](../../adapters-and-accelerators/adapter-oracle-database/process-notification-messages-to-run-specific-tasks-in-oracle-db-using-biztalk.md)。  
   
  本主题演示如何配置[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]以从 Oracle 接收增量查询通知消息。 为了演示增量通知，我们认为，ACCOUNTACTIVITY，包含列的表"处理"。 一条新记录插入到此表时，将"处理"列的值设置为 ' n '。 可以配置适配器后，通过执行以下接收增量通知：  
   
@@ -66,7 +66,7 @@ ms.locfileid: "37012086"
       ```  
   
       > [!NOTE]
-      >  必须指定表名称以及架构名称。 例如， `SCOTT.ACCOUNTACTIVITY`。  
+      >  必须指定表名称以及架构名称。 例如 `SCOTT.ACCOUNTACTIVITY` 。  
   
   -   要更新的行已为其发送通知的发送端口。 将此端口设置为 y 收到通知时的记录的"处理"列的值上执行 PROCESS_RECORDS 存储过程。  
   
@@ -166,7 +166,7 @@ ms.locfileid: "37012086"
 ### <a name="adding-message-shapes"></a>添加消息形状  
  请确保为每个消息形状中指定以下属性。 形状列中列出的名称是在刚提到的业务流程中显示的消息形状的名称。  
   
-|形状|形状类型|属性|  
+|形状|形状类型|Properties|  
 |-----------|----------------|----------------|  
 |ReceiveNotification|Receive|-设置**名称**到*ReceiveNotification*<br /><br /> -设置**激活**到 *，则返回 True*|  
 |SaveNotification|Send|-设置**名称**到*SaveNotification*|  
@@ -228,7 +228,7 @@ Procedure(WCF.Action) = "http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Pac
 ### <a name="adding-ports"></a>添加端口  
  请确保为每个逻辑端口中指定以下属性。 端口列中列出的名称是在业务流程中显示的端口的名称。  
   
-|端口|属性|  
+|端口|Properties|  
 |----------|----------------|  
 |OracleNotifyPort|-设置**标识符**到*OracleNotifyPort*<br /><br /> -设置**类型**到*OracleNotifyPortType*<br /><br /> -设置**通信模式**到*单向*<br /><br /> -设置**通信方向**到*接收*|  
 |SaveMessagePort|-设置**标识符**到*SaveMessagePort*<br /><br /> -设置**类型**到*SaveMessagePortType*<br /><br /> -设置**通信模式**到*单向*<br /><br /> -设置**通信方向**到*发送*<br /><br /> -创建一个操作*通知*。 此操作用于通知消息。<br /><br /> -创建一个操作*过程*。 此操作用于选择响应消息。|  
@@ -237,7 +237,7 @@ Procedure(WCF.Action) = "http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Pac
 ### <a name="specify-messages-for-action-shapes-and-connect-to-ports"></a>为操作形状指定消息并将连接到端口  
  下表指定属性应设置为指定操作形状的消息并链接到的端口的消息及其值。 形状列中列出的名称是消息形状的名称，前面所述的业务流程中所示。  
   
-|形状|属性|  
+|形状|Properties|  
 |-----------|----------------|  
 |ReceiveNotification|-设置**消息**到*NotifyReceive*<br /><br /> -设置**操作**到*OracleNotifyPort.Notify.Request*|  
 |SaveNotification|-设置**消息**到*NotifyReceive*<br /><br /> -设置**操作**到*SaveMessagePort.Notify.Request*|  
@@ -267,7 +267,7 @@ Procedure(WCF.Action) = "http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Pac
     |----------------------|-----------|  
     |**InboundOperationType**|将此设置为**通知**。|  
     |**NotificationPort**|指定 ODP.NET 必须打开从 Oracle 数据库的数据库更改通知侦听的端口号。 将此设置为相同的端口号必须已添加到 Windows 防火墙例外列表。 有关如何将端口添加到 Windows 防火墙例外列表的说明，请参阅[ http://go.microsoft.com/fwlink/?LinkID=196959 ](http://go.microsoft.com/fwlink/?LinkID=196959)。<br /><br /> **重要说明：** 如果将其设置为默认值-1，必须完全禁用 Windows 防火墙，以接收通知消息。|  
-    |**NotificationStatement**|将此设置为：<br /><br /> `SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’`<br /><br /> **注意：** 必须指定表名称以及架构名称。 例如， `SCOTT.ACCOUNTACTIVITY`。|  
+    |**NotificationStatement**|将此设置为：<br /><br /> `SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’`<br /><br /> **注意：** 必须指定表名称以及架构名称。 例如 `SCOTT.ACCOUNTACTIVITY` 。|  
     |**NotifyOnListenerStart**|将此设置为 **，则返回 True**。|  
   
      有关不同的绑定属性的详细信息，请参阅[如何使用 BizTalk Adapter for Oracle 数据库绑定属性](https://msdn.microsoft.com/library/dd788467.aspx)。  

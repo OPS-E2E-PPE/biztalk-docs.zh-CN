@@ -1,9 +1,9 @@
 ---
 title: BizTalk Server 管理疑难解答 |Microsoft Docs
 ms.custom: ''
-ms.date: 06/08/2017
+ms.date: 11/30/2018
 ms.prod: biztalk-server
-ms.reviewer: ''
+ms.reviewer: niklase
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 71ae1b04b42fe1bdaa0145b9112bdd957a4d4da5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 87ecae986df0ee34ee697257a99097a00d525db2
+ms.sourcegitcommit: be6273d612669adfbb9dc9208aaae0a8437d4017
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993926"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52826461"
 ---
 # <a name="troubleshooting-biztalk-server-administration"></a>故障排除的 BizTalk Server 管理
 本部分提供有关使用 BizTalk Server 管理控制台时遇到的常见问题的信息的一个集中的位置。  
@@ -35,7 +35,7 @@ ms.locfileid: "36993926"
  这是因为 ENTSSO 服务可能需要更多时间来启动超过了允许按 BizTalk Server 服务超时持续时间。  
   
 ##### <a name="solution"></a>解决方案  
- 若要解决此问题，请将 DTC 设置为自动。  
+ 若要解决此问题，请将 DTC 设置为自动。 如果群集化 DTC 之后，它应设置为手动启动时这是因为群集服务管理的开始和停止群集服务。 
   
 #### <a name="sql-resources-may-become-locked"></a>SQL 资源可能会被锁定  
   
