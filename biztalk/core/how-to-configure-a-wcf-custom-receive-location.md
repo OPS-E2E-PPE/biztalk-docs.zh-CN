@@ -72,17 +72,17 @@ ms.locfileid: "52826413"
 
 5. 在中**接收位置属性**对话框中**传输**部分旁边**类型**，选择**WCF 自定义**从下拉列表列表中，然后依次**配置**。  
 
-6. 在中**Wcf-custom 传输属性**对话框中，在**常规**选项卡上，WCF 自定义的服务标识接收位置和配置的终结点地址。 有关详细信息**常规**选项卡**Wcf-custom 传输属性**对话框中，请参阅**Wcf-custom 传输属性对话框，接收，常规**选项卡[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。  
+6. 在中**Wcf-custom 传输属性**对话框中，在**常规**选项卡上，WCF 自定义的服务标识接收位置和配置的终结点地址。 有关详细信息 **常规** 选项卡 **Wcf-custom 传输属性** 对话框中，请参阅 **Wcf-custom 传输属性对话框，接收，常规** 选项卡[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。  
 
-7. 在中**Wcf-custom 传输属性**对话框中，在**绑定**选项卡上，配置不同类型的预定义或自定义 WCF 绑定。 有关详细信息**绑定**选项卡**Wcf-custom 传输属性**对话框中，请参阅**Wcf-custom 传输属性对话框中，接收，绑定**选项卡[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。  
+7. 在中**Wcf-custom 传输属性**对话框中，在**绑定**选项卡上，配置不同类型的预定义或自定义 WCF 绑定。 有关详细信息 **绑定** 选项卡 **Wcf-custom 传输属性** 对话框中，请参阅 **Wcf-custom 传输属性对话框中，接收，绑定** 选项卡[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。  
 
-8. 在中**Wcf-custom 传输属性**对话框中，在**行为**选项卡上，服务行为，此接收位置和配置的终结点。 终结点行为是一组行为扩展元素，这些元素修改或扩展服务或客户端功能。 有关详细信息**行为**选项卡**Wcf-custom 传输属性**对话框中，请参阅**Wcf-custom 传输属性对话框中，接收，行为**选项卡[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。  
+8. 在中**Wcf-custom 传输属性**对话框中，在**行为**选项卡上，服务行为，此接收位置和配置的终结点。 终结点行为是一组行为扩展元素，这些元素修改或扩展服务或客户端功能。 有关详细信息 **行为** 选项卡 **Wcf-custom 传输属性** 对话框中，请参阅**Wcf-custom 传输属性对话框中，接收，行为**选项卡[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。  
 
-9. 在中**Wcf-custom 传输属性**对话框中，在**其他**选项卡上，配置的凭据为此接收位置时轮询外部服务时，要使用和是否此接收位置处理消息时，会保留消息顺序。 有关详细信息**其他**选项卡**Wcf-custom 传输属性**对话框中，请参阅**Wcf-custom 传输属性对话框，接收，其他**选项卡[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。  
+9. 在中**Wcf-custom 传输属性**对话框中，在**其他**选项卡上，配置的凭据为此接收位置时轮询外部服务时，要使用和是否此接收位置处理消息时，会保留消息顺序。 有关详细信息**其他**选项卡**Wcf-custom 传输属性**对话框中，请参阅 **Wcf-custom 传输属性对话框，接收，其他** 选项卡[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。  
 
-10. 在中**Wcf-custom 传输属性**对话框中，在**消息**选项卡上，指定数据选择 soap**正文**元素。 有关详细信息**消息**选项卡**Wcf-custom 传输属性**对话框中，请参阅**Wcf-custom 传输属性对话框，接收、 消息**选项卡[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。  
+10. 在中**Wcf-custom 传输属性**对话框中，在**消息**选项卡上，指定数据选择 soap**正文**元素。 有关详细信息 **消息** 选项卡 **Wcf-custom 传输属性** 对话框中，请参阅 **Wcf-custom 传输属性对话框，接收、 消息** 选项卡[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。  
 
-11. 在中**Wcf-custom 传输属性**对话框中，在**导入/导出**选项卡上，导入和导出**地址 (URI)** 和**终结点标识**上的属性**常规**选项卡上的绑定信息**绑定**选项卡上，和终结点行为**行为**此接收的选项卡位置。 有关详细信息**导入/导出**选项卡**Wcf-custom 传输属性**对话框中，请参阅**Wcf-custom 传输属性对话框中，接收，导入 / 导出**选项卡[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。  
+11. 在中**Wcf-custom 传输属性**对话框中，在**导入/导出**选项卡上，导入和导出**地址 (URI)** 和**终结点标识**上的属性**常规**选项卡上的绑定信息**绑定**选项卡上，和终结点行为**行为**此接收的选项卡位置。 有关详细信息 **导入/导出** 选项卡 **Wcf-custom 传输属性** 对话框中，请参阅 **Wcf-custom 传输属性对话框中，接收，导入 / 导出** 选项卡[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。  
 
 ## <a name="configure-a-wcf-custom-receive-location-programmatically"></a>以编程方式配置 Wcf-custom 接收位置
 
