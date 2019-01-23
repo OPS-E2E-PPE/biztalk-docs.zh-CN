@@ -1,7 +1,8 @@
 ---
-title: 如何配置 SSO 票证 |Microsoft Docs
+title: 配置 SSO 票证 |Microsoft Docs
+description: 使用 SSO 管理或命令行来允许和验证企业单一登录票证系统级别和 BizTalk Server 中的关联应用程序。
 ms.custom: ''
-ms.date: 06/08/2017
+ms.date: 01/08/2019
 ms.prod: biztalk-server
 ms.reviewer: ''
 ms.suite: ''
@@ -16,58 +17,60 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: edec81ab1fa64ce7b4523771bb2c69b39c00bdfd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f3ce6c1de1a94225f06d09b66cc3e6c60c471f24
+ms.sourcegitcommit: 2d39bcd10a22c5945d97a03988ccdc62f6fb3c93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018755"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54443370"
 ---
-# <a name="how-to-configure-the-sso-tickets"></a><span data-ttu-id="211f1-102">如何配置 SSO 票证</span><span class="sxs-lookup"><span data-stu-id="211f1-102">How to Configure the SSO Tickets</span></span>
-<span data-ttu-id="211f1-103">可使用 MMC 管理单元或命令行对整个单一登录系统的票证行为进行控制，包括是否允许使用票证、系统是否必须验证票证。</span><span class="sxs-lookup"><span data-stu-id="211f1-103">You can use the MMC Snap-In or the command line to control ticket behavior for the entire Single Sign-On system, including whether to allow tickets, and whether the system must validate the tickets.</span></span>  
+# <a name="configure-the-sso-tickets-in-biztalk-server"></a><span data-ttu-id="f03f2-103">在 BizTalk Server 中配置 SSO 票证</span><span class="sxs-lookup"><span data-stu-id="f03f2-103">Configure the SSO Tickets in BizTalk Server</span></span>
+<span data-ttu-id="f03f2-104">整个单一登录系统，可以使用企业单一登录 (SSO) 管理 MMC 或命令行对票证行为进行控制。</span><span class="sxs-lookup"><span data-stu-id="f03f2-104">You can use Enterprise Single Sign-On (SSO) Administration MMC or the command line to control ticket behavior for the entire single sign-on system.</span></span> <span data-ttu-id="f03f2-105">使用此工具，可以允许使用票证，并验证 SSO 票证。</span><span class="sxs-lookup"><span data-stu-id="f03f2-105">Using this tools, you can allow tickets and validate SSO tickets.</span></span>  
   
- <span data-ttu-id="211f1-104">可用于 Yes、 No、 On 或 Off 指示是否允许和/或验证票证。</span><span class="sxs-lookup"><span data-stu-id="211f1-104">You can use Yes, No, On, or Off to indicate whether to allow and/or validate tickets.</span></span> <span data-ttu-id="211f1-105">这些词不区分大小写，必须在任何语言设置下都能使用。</span><span class="sxs-lookup"><span data-stu-id="211f1-105">These words are case independent, and must be used regardless of your language settings.</span></span>  
+## <a name="before-you-begin"></a><span data-ttu-id="f03f2-106">开始之前</span><span class="sxs-lookup"><span data-stu-id="f03f2-106">Before you begin</span></span>
+
+- <span data-ttu-id="f03f2-107">如果在远程计算机上安装 SSO 管理，则可以运行远程[IssueTicket](https://docs.microsoft.com/biztalk/core/technical-reference/issoticket-issueticket-method)操作。</span><span class="sxs-lookup"><span data-stu-id="f03f2-107">If SSO Administration is installed on a remote computer, you can run a remote [IssueTicket](https://docs.microsoft.com/biztalk/core/technical-reference/issoticket-issueticket-method) operation.</span></span> <span data-ttu-id="f03f2-108">SSO 管理模块和运行时模块 （ENTSSO 服务） 之间的所有通信进行都加密。</span><span class="sxs-lookup"><span data-stu-id="f03f2-108">All traffic between the SSO Administration module and the Runtime module (ENTSSO service) is encrypted.</span></span>  
   
- <span data-ttu-id="211f1-106">如果 SSO 管理功能安装在远程计算机上，则可执行远程 IssueTicket 操作。</span><span class="sxs-lookup"><span data-stu-id="211f1-106">If you have the SSO Administration feature installed on a remote computer, remote IssueTicket operation can be performed.</span></span> <span data-ttu-id="211f1-107">请注意，SSO 管理模块和运行时模块（ENTSSO 服务）之间的所有通信都是加密的。</span><span class="sxs-lookup"><span data-stu-id="211f1-107">Note that all traffic between the SSO Administration module and the Runtime module (ENTSSO service) is encrypted.</span></span>  
+- <span data-ttu-id="f03f2-109">使用 ssomanage.exe 命令行实用工具，可以输入在关联应用程序级别的票证超时值。</span><span class="sxs-lookup"><span data-stu-id="f03f2-109">Using the ssomanage.exe command line utility, you can enter the ticket timeout at the Affiliate Application level.</span></span> <span data-ttu-id="f03f2-110">仅当创建的应用程序时不进行应用程序的更新时，才可以执行此操作。</span><span class="sxs-lookup"><span data-stu-id="f03f2-110">You can do this only when an update of the application is made, not when the application is created.</span></span>
   
- <span data-ttu-id="211f1-108">仅当执行应用程序更新时（而非创建时），才能使用命令行实用工具 ssomanage.exe 在关联应用程序级别上指定票证超时。</span><span class="sxs-lookup"><span data-stu-id="211f1-108">Using the command line utility, ssomanage.exe, you can specify the ticket timeout at the Affiliate Application level only when an update of the Application is performed,  not at creation time.</span></span>  
+- <span data-ttu-id="f03f2-111">只有 SSO 管理员组中的用户可以在 SSO 系统级别和关联应用程序级别配置票证。</span><span class="sxs-lookup"><span data-stu-id="f03f2-111">Only users in the SSO Administrator group can configure tickets at the SSO system-level and at the Affiliate Application level.</span></span>  
   
- <span data-ttu-id="211f1-109">只有 SSO 管理员可以在 SSO 系统级别和关联应用程序级别配置票证。</span><span class="sxs-lookup"><span data-stu-id="211f1-109">Only an SSO Administrator can configure tickets at the SSO System level and at the Affiliate Application level.</span></span>  
+- <span data-ttu-id="f03f2-112">如果在系统级别禁用了票证，它不能在关联应用程序级别使用它。</span><span class="sxs-lookup"><span data-stu-id="f03f2-112">If ticketing is disabled at the system-level, it can't be used at the Affiliate Application level.</span></span> <span data-ttu-id="f03f2-113">就可以启用系统级别票证和关联应用程序级别禁用它们。</span><span class="sxs-lookup"><span data-stu-id="f03f2-113">It's possible to enable tickets at the system level, and disable them at the Affiliate Application level.</span></span>  
   
- <span data-ttu-id="211f1-110">如果在系统级别上禁用了票证，则也不能在关联应用程序级别上使用票证。</span><span class="sxs-lookup"><span data-stu-id="211f1-110">If ticketing is disabled at the system level, it cannot be used at the Affiliate Application level either.</span></span> <span data-ttu-id="211f1-111">就可以启用在系统级别票证和关联应用程序级别禁用它。</span><span class="sxs-lookup"><span data-stu-id="211f1-111">It is possible to enable tickets at the system level and disable it at the Affiliate Application level.</span></span>  
+- <span data-ttu-id="f03f2-114">如果在系统级别启用验证，则必须在关联应用程序级别验证票证。</span><span class="sxs-lookup"><span data-stu-id="f03f2-114">If validation is enabled at the system-level, tickets must be validated at the Affiliate Application level.</span></span> <span data-ttu-id="f03f2-115">它是可以禁用在系统级别的验证并启用关联应用程序级别。</span><span class="sxs-lookup"><span data-stu-id="f03f2-115">It's possible to disable validation at the system-level, and enable it at the Affiliate Application level.</span></span>  
   
- <span data-ttu-id="211f1-112">如果在系统级别上启用验证，则在关联应用程序级别上也需要票证验证。</span><span class="sxs-lookup"><span data-stu-id="211f1-112">If validation is enabled at the system level, validation of tickets are required at the Affiliate Application level as well.</span></span> <span data-ttu-id="211f1-113">但是，可以在系统级别上禁用验证，而在关联应用程序级别上启用验证。</span><span class="sxs-lookup"><span data-stu-id="211f1-113">It is possible to disable validation at the system level and enable it at the Affiliate Application level.</span></span>  
+- <span data-ttu-id="f03f2-116">如果在系统级别和关联应用程序级别输入票证超时，则在关联应用程序级别输入确定票证到期时间。</span><span class="sxs-lookup"><span data-stu-id="f03f2-116">If ticket timeout is entered at the system-level and the Affiliate Application level, the one entered at the Affiliate Application level determines the ticket expiration time.</span></span>  
   
- <span data-ttu-id="211f1-114">如果在系统级别和关联应用程序级别同时指定了票证超时，则使用在关联应用程序级别上指定的票证超时确定票证过期时间。</span><span class="sxs-lookup"><span data-stu-id="211f1-114">If Ticket timeout is specified both at the System level and the Affiliate Application level, the one specified at the Affiliate Application level is used to determine the ticket expiry time.</span></span>  
+<span data-ttu-id="f03f2-117">有关票证和票证验证的详细信息，请参阅[SSO 票证](../core/sso-tickets.md)。</span><span class="sxs-lookup"><span data-stu-id="f03f2-117">For more information about tickets and tickets validation, see [SSO Tickets](../core/sso-tickets.md).</span></span>  
   
- <span data-ttu-id="211f1-115">有关票证和票证验证的详细信息，请参阅[SSO 票证](../core/sso-tickets.md)。</span><span class="sxs-lookup"><span data-stu-id="211f1-115">For more information about tickets and tickets validation, see [SSO Tickets](../core/sso-tickets.md).</span></span>  
+## <a name="allow-affiliate-application-tickets-using-sso-administration"></a><span data-ttu-id="f03f2-118">允许使用 SSO 管理关联应用程序票证</span><span class="sxs-lookup"><span data-stu-id="f03f2-118">Allow Affiliate Application tickets using SSO Administration</span></span>  
   
-### <a name="to-configure-the-enterprise-single-sign-on-tickets-using-the-mmc-snap-in-for-the-affiliate-application"></a><span data-ttu-id="211f1-116">使用 MMC 管理单元为关联应用程序配置企业单一登录票证</span><span class="sxs-lookup"><span data-stu-id="211f1-116">To configure the Enterprise Single Sign-On tickets using the MMC Snap-In for the Affiliate Application</span></span>  
+1.  <span data-ttu-id="f03f2-119">从**启动**菜单中，选择**所有程序** > **Microsoft 企业单一登录** > **SSO 管理**.</span><span class="sxs-lookup"><span data-stu-id="f03f2-119">From the **Start** menu, select **All Programs** > **Microsoft Enterprise Single Sign-On** > **SSO Administration**.</span></span>
   
-1.  <span data-ttu-id="211f1-117">在“开始”  菜单上，依次单击“所有程序” 、“Microsoft Enterprise Single Sign-On” 和“SSO 管理” 。</span><span class="sxs-lookup"><span data-stu-id="211f1-117">On the **Start** menu, click **All Programs**, click **Microsoft Enterprise Single Sign-On**, and then click **SSO Administration**.</span></span>  
+2.  <span data-ttu-id="f03f2-120">中的 ENTSSO Mmc 管理单元的作用域窗格中，展开**关联应用程序**节点。</span><span class="sxs-lookup"><span data-stu-id="f03f2-120">In the scope pane of the ENTSSO MMC Snap-In, expand the **Affiliate Applications** node.</span></span>  
   
-2.  <span data-ttu-id="211f1-118">中的 ENTSSO Mmc 管理单元的作用域窗格中，展开**关联应用程序**节点。</span><span class="sxs-lookup"><span data-stu-id="211f1-118">In the scope pane of the ENTSSO MMC Snap-In, expand the **Affiliate Applications** node.</span></span>  
+3.  <span data-ttu-id="f03f2-121">右键单击**关联应用程序** > **属性**。</span><span class="sxs-lookup"><span data-stu-id="f03f2-121">Right-click **Affiliate Application** > **Properties**.</span></span>  
   
-3.  <span data-ttu-id="211f1-119">右键单击**关联应用程序**，然后单击**属性**。</span><span class="sxs-lookup"><span data-stu-id="211f1-119">Right-click **Affiliate Application**, and then click **Properties**.</span></span>  
+4.  <span data-ttu-id="f03f2-122">选择**选项**选项卡。</span><span class="sxs-lookup"><span data-stu-id="f03f2-122">Choose the **Options** tab.</span></span>  
   
-4.  <span data-ttu-id="211f1-120">单击**选项**选项卡。</span><span class="sxs-lookup"><span data-stu-id="211f1-120">Click the **Options** tab.</span></span>  
+5.  <span data-ttu-id="f03f2-123">选择**允许使用票证**并输入所需的票证超时值。</span><span class="sxs-lookup"><span data-stu-id="f03f2-123">Select **Allow Tickets** and enter the ticket timeout you want.</span></span>  
   
-5.  <span data-ttu-id="211f1-121">选择**允许使用票证**并根据需要配置票证超时。</span><span class="sxs-lookup"><span data-stu-id="211f1-121">Select **Allow Tickets** and configure the ticket timeout as appropriate.</span></span>  
+## <a name="allow-and-validate-sso-system-level-tickets-using-the-command-line"></a><span data-ttu-id="f03f2-124">允许并验证 SSO 系统级别票证使用命令行</span><span class="sxs-lookup"><span data-stu-id="f03f2-124">Allow and validate SSO system-level tickets using the command line</span></span>  
   
-### <a name="to-configure-the-enterprise-single-sign-on-system-level-tickets-using-the-command-line"></a><span data-ttu-id="211f1-122">使用命令行配置企业单一登录系统级别票证</span><span class="sxs-lookup"><span data-stu-id="211f1-122">To configure the Enterprise Single Sign-On system-level tickets using the command line</span></span>  
+1. <span data-ttu-id="f03f2-125">打开命令提示符 (开始菜单 > 类型**命令提示符**> 选择**命令提示符下**)。</span><span class="sxs-lookup"><span data-stu-id="f03f2-125">Open a command prompt (Start menu > type **command prompt** > select **Command Prompt**).</span></span>
+
+    > [!TIP]
+    >  <span data-ttu-id="f03f2-126">在系统上支持用户帐户控制 (UAC)，您可能需要使用管理权限打开命令提示符 (右键单击**命令提示符下**> \* \* 以管理员身份运行)。</span><span class="sxs-lookup"><span data-stu-id="f03f2-126">On a system that supports User Account Control (UAC), you may need to open the command prompt with Administrative privileges (right-click **Command Prompt** > \*\*Run as administrator).</span></span>
   
-1. <span data-ttu-id="211f1-123">上**启动**菜单上，单击**运行**，然后键入**cmd**。</span><span class="sxs-lookup"><span data-stu-id="211f1-123">On the **Start** menu, click **run**, and then type **cmd**.</span></span>  
+2. <span data-ttu-id="f03f2-127">在命令行上，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="f03f2-127">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="f03f2-128">默认安装目录是`\Program Files\Common Files\Enterprise Single Sign-On`。</span><span class="sxs-lookup"><span data-stu-id="f03f2-128">The default installation directory is `\Program Files\Common Files\Enterprise Single Sign-On`.</span></span> <span data-ttu-id="f03f2-129">例如，输入：</span><span class="sxs-lookup"><span data-stu-id="f03f2-129">For example, enter:</span></span> 
+
+    `cd C:\Program Files\Common Files\Enterprise Single Sign-On`
   
-2. <span data-ttu-id="211f1-124">在命令行上，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="211f1-124">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="211f1-125">默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。</span><span class="sxs-lookup"><span data-stu-id="211f1-125">The default installation directory is *\<drive\>*:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
+3. <span data-ttu-id="f03f2-130">类型`ssomanage -tickets <allowed yes/no> <validate yes/no>`，其中*\<允许是/否\>* 指示对于票证是否允许或不是，和*\<验证是/否\>* 指示是否需要进行验证后他们正在兑换票证。</span><span class="sxs-lookup"><span data-stu-id="f03f2-130">Type `ssomanage -tickets <allowed yes/no> <validate yes/no>`, where *\<allowed yes/no\>* indicates whether tickets are allowed or not, and *\<validate yes/no\>* indicates whether tickets need to be validated after they're redeemed.</span></span>  
   
-3. <span data-ttu-id="211f1-126">类型 * * ssomanage-tickets\<允许是/否\> *\<验证是/否\>**<em>，其中 *\<允许是/否\></em>指示是否允许使用票证，并*\<验证是/否\>* 指示是否将需要票证兑换后是否要验证。</span><span class="sxs-lookup"><span data-stu-id="211f1-126">Type **ssomanage –tickets \<allowed yes/no\> *\<validate yes/no\>**<em>, where *\<allowed yes/no\></em> indicates whether tickets will be allowed or not, and *\<validate yes/no\>* indicates whether tickets will need to be validated after they are redeemed.</span></span>  
+    <span data-ttu-id="f03f2-131">可以使用`yes`， `no`， `on`，或`off`允许和/或验证票证。</span><span class="sxs-lookup"><span data-stu-id="f03f2-131">You can use `yes`, `no`, `on`, or `off` to allow and/or validate tickets.</span></span> <span data-ttu-id="f03f2-132">这些词不区分大小写，必须在任何语言设置下都能使用。</span><span class="sxs-lookup"><span data-stu-id="f03f2-132">These words are case independent, and must be used regardless of your language settings.</span></span>
   
-   > [!NOTE]
-   >  <span data-ttu-id="211f1-127">可使用 Yes、No、On 或 Off 指示是否允许使用和/或验证票证。</span><span class="sxs-lookup"><span data-stu-id="211f1-127">You can use yes, no, on, or off to indicate whether to allow and/or validate tickets.</span></span> <span data-ttu-id="211f1-128">这些词不区分大小写，必须在任何语言设置下都能使用。</span><span class="sxs-lookup"><span data-stu-id="211f1-128">These words are case independent, and must be used regardless of your language settings.</span></span>  
-  
-   > [!NOTE]
-   >  <span data-ttu-id="211f1-129">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="211f1-129">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
-  
-## <a name="see-also"></a><span data-ttu-id="211f1-130">请参阅</span><span class="sxs-lookup"><span data-stu-id="211f1-130">See Also</span></span>  
- <span data-ttu-id="211f1-131">[了解 SSO](../core/understanding-sso.md) </span><span class="sxs-lookup"><span data-stu-id="211f1-131">[Understanding SSO](../core/understanding-sso.md) </span></span>  
- [<span data-ttu-id="211f1-132">使用 SSO</span><span class="sxs-lookup"><span data-stu-id="211f1-132">Using SSO</span></span>](../core/using-sso.md)
+## <a name="see-also"></a><span data-ttu-id="f03f2-133">请参阅</span><span class="sxs-lookup"><span data-stu-id="f03f2-133">See Also</span></span>
+
+<span data-ttu-id="f03f2-134">[了解 SSO](../core/understanding-sso.md) </span><span class="sxs-lookup"><span data-stu-id="f03f2-134">[Understanding SSO](../core/understanding-sso.md) </span></span>  
+[<span data-ttu-id="f03f2-135">使用 SSO</span><span class="sxs-lookup"><span data-stu-id="f03f2-135">Using SSO</span></span>](../core/using-sso.md)
