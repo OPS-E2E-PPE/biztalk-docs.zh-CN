@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f3780aa186146d0cc1b7bca90f7934f4823882ab
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 59a41d62b7c8e578f7e89e7802ed5eaecd0e2b61
+ms.sourcegitcommit: 2d39bcd10a22c5945d97a03988ccdc62f6fb3c93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014518"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54443394"
 ---
 # <a name="mqscorrelationsetorchestrationwithsolicitresponse-biztalk-server-sample"></a>MQSCorrelationSetOrchestrationWithSolicitResponse（BizTalk Server 示例）
 MQSCorrelationSetOrchestrationWithSolicitResponse 示例将演示如何使用 MQSeries Server 而非 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 生成的相关标识符。  
@@ -36,13 +36,13 @@ MQSCorrelationSetOrchestrationWithSolicitResponse 示例将演示如何使用 MQ
 >  如果来自 MQSeries Server 的消息在相关标识符之前到达，则使用此方法的业务流程可能出现问题。 确保将您的业务流程设计为允许 MQSeries Server 具有足够的时间返回相关标识符。 此示例未考虑可能出现争用情况。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径\>* \AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestrationWithSolicitResponse  
+ *\<Samples Path\>* \AdaptersUsage\MQSeriesAdapter\MQSCorrelationSetOrchestrationWithSolicitResponse  
   
  下表显示了本示例中的文件及其用途说明：  
   
-|**File**|**Description**|  
+|**File**|**说明**|  
 |--------------|---------------------|  
-|**MQSCorrelationSolicitResponse.btproj，**<br /><br /> **MQSCorrelationSolicitResponse.sln**|应用程序的项目和解决方案文件。|  
+|**MQSCorrelationSolicitResponse.btproj,**<br /><br /> **MQSCorrelationSolicitResponse.sln**|应用程序的项目和解决方案文件。|  
 |**MQSCorrelationSolicitResponse.odx**|应用程序的 BizTalk 业务流程文件。|  
 |**MQSCorrelationSolicitResponse.snk**|强命名密钥文件。|  
 |Setup.bat|生成并初始化本示例。|  
@@ -72,7 +72,7 @@ MQSCorrelationSetOrchestrationWithSolicitResponse 示例将演示如何使用 MQ
   
 1.  单击**启动**，依次指向**所有程序**，指向**IBM WebSphere MQ**，然后单击**WebSphere MQ Explorer**。  
   
-2.  双击**队列管理器**，然后双击默认的队列管理器。 默认的队列管理器通常命名为 **QM_ * * * < m a c h >* 其中*machine_name*是您的计算机的名称。  
+2.  双击**队列管理器**，然后双击默认的队列管理器。 默认的队列管理器通常命名为**QM_**_< m a c h >_ 其中*m a c h*是您的计算机的名称。  
   
 3.  右键单击**队列**，依次指向**新建**，然后单击**本地队列**。  
   

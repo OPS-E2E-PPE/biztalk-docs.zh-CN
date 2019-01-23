@@ -1,5 +1,5 @@
 ---
-title: 演练： 创建 BizTalk 应用程序使用 MQSeries 适配器 |Microsoft Docs
+title: 演练：创建 BizTalk 应用程序使用 MQSeries 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -21,14 +21,14 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d8c086c69dee4318b9ab15f8746291594a815870
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d882ee7134861496266b0d18bb288e39e05bad29
+ms.sourcegitcommit: 2d39bcd10a22c5945d97a03988ccdc62f6fb3c93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024523"
+ms.lasthandoff: 01/22/2019
+ms.locfileid: "54443386"
 ---
-# <a name="walkthrough-creating-a-biztalk-application-that-uses-the-mqseries-adapter"></a>演练： 创建使用 MQSeries 适配器的 BizTalk 应用程序
+# <a name="walkthrough-creating-a-biztalk-application-that-uses-the-mqseries-adapter"></a>演练：创建 BizTalk 应用程序使用 MQSeries 适配器
 本部分将指导您创建使用 MQSeries 适配器的简单 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 应用程序。  
   
 > [!NOTE]
@@ -45,7 +45,7 @@ ms.locfileid: "37024523"
   
 1. 单击**启动**，依次指向**程序**，指向**IBM WebSphere MQ**，然后单击**WebSphere MQ Explorer**。  
   
-2. 双击**队列管理器**，然后双击默认的队列管理器。 默认的队列管理器通常命名为 **QM_ * * * < m a c h >* 其中*machine_name*是您的计算机的名称。  
+2. 双击**队列管理器**，然后双击默认的队列管理器。 默认的队列管理器通常命名为**QM_**_< m a c h >_ 其中*m a c h*是您的计算机的名称。  
   
 3. 右键单击**队列**，依次指向**新建**，然后单击**本地队列**。  
   
