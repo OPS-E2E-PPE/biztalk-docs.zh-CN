@@ -17,12 +17,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f3ce6c1de1a94225f06d09b66cc3e6c60c471f24
-ms.sourcegitcommit: 2d39bcd10a22c5945d97a03988ccdc62f6fb3c93
+ms.openlocfilehash: 3abac3a0d527c6834105db8fd1c74fd934fd821d
+ms.sourcegitcommit: 41947648c73d437a201b2190307e0270d61e037a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2019
-ms.locfileid: "54443370"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56087929"
 ---
 # <a name="configure-the-sso-tickets-in-biztalk-server"></a>在 BizTalk Server 中配置 SSO 票证
 整个单一登录系统，可以使用企业单一登录 (SSO) 管理 MMC 或命令行对票证行为进行控制。 使用此工具，可以允许使用票证，并验证 SSO 票证。  
@@ -60,7 +60,7 @@ ms.locfileid: "54443370"
 1. 打开命令提示符 (开始菜单 > 类型**命令提示符**> 选择**命令提示符下**)。
 
     > [!TIP]
-    >  在系统上支持用户帐户控制 (UAC)，您可能需要使用管理权限打开命令提示符 (右键单击**命令提示符下**> * * 以管理员身份运行)。
+    >  在系统上支持用户帐户控制 (UAC)，您可能需要使用管理权限打开命令提示符 (右键单击**命令提示符** > **以管理员身份运行**)。
   
 2. 在命令行上，转至企业单一登录安装目录。 默认安装目录是`\Program Files\Common Files\Enterprise Single Sign-On`。 例如，输入： 
 
