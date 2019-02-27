@@ -25,7 +25,7 @@
 #### [用于 Oracle EBS 的 BizTalk 适配器的主要功能](key-features-in-biztalk-adapter-for-oracle-e-business-suite.md)
 #### [用于 Oracle EBS 的 BizTalk 适配器的限制](limitations-of-biztalk-adapter-for-oracle-e-business-suite.md)
 ### [教程：在 SharePoint 站点上提供来自 Oracle EBS 的数据](tutorial-present-data-from-oracle-e-business-suite-on-a-sharepoint-site.md)
-#### [步骤 1：使用适配器创建和发布 WCF 服务](step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service.md)
+#### [第 1 步：使用适配器创建和发布 WCF 服务](step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service.md)
 #### [步骤 2：为 Oracle EBS 项目创建应用程序定义文件](step-2-create-an-application-definition-file-for-the-oracle-ebs-artifacts.md)
 #### [步骤 3：创建 SharePoint 应用程序以从 Oracle EBS 检索数据](step-3-create-a-sharepoint-application-to-retrieve-data-from-oracle-ebs.md)
 ##### [方案 1：使用业务数据列表 Web 部件显示数据](scenario-1-display-data-using-business-data-list-web-part.md)
@@ -131,10 +131,4 @@
 ### [操作问题疑难解答](troubleshoot-operational-issues-with-the-oracle-e-business-suite-adapter.md)
 ### [使用性能计数器](use-performance-counters-with-the-oracle-e-business-suite-adapter.md)
 ## [术语和定义](glossary12.md)
-
-
-
-
-
-
-
+## [API 命名空间引用](https://docs.microsoft.com/dotnet/api/?view=bts-oracle-ebs)

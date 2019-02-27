@@ -1,1 +1,1 @@
-<span data-ttu-id="baf71-101">在 UI 指南和开发人员参考</span><span class="sxs-lookup"><span data-stu-id="baf71-101">in the UI guidance and Developers reference</span></span>
+<span data-ttu-id="8f03d-101">在[UI 指南和开发人员 API 命名空间引用](https://docs.microsoft.com/dotnet/api/?view=bts-dotnet)</span><span class="sxs-lookup"><span data-stu-id="8f03d-101">in the [UI guidance and developers API namespace reference](https://docs.microsoft.com/dotnet/api/?view=bts-dotnet)</span></span>

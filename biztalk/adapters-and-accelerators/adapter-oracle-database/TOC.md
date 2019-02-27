@@ -23,7 +23,7 @@
 #### [适配器的主要功能](key-features-in-biztalk-adapter-for-oracle-database.md)
 #### [适配器限制](limitations-of-biztalk-adapter-for-oracle-database.md)
 ### [教程：迁移 BizTalk 项目](tutorial-migrate-biztalk-projects-to-the-oracle-database-adapter.md)
-#### [步骤 1：修改 vPrev BizTalk 项目](step-1-modify-the-vprev-biztalk-project-in-oracle-database.md)
+#### [第 1 步：修改 vPrev BizTalk 项目](step-1-modify-the-vprev-biztalk-project-in-oracle-database.md)
 #### [步骤 2：在 BizTalk Server 管理控制台中配置业务流程](step-2-configure-an-orchestration-to-use-the-oracle-db-adapter-in-biztalk.md)
 #### [步骤 3：测试已迁移的应用程序](step-3-test-the-migrated-application-to-oracle-database-adapter.md)
 ## [体系结构概述](architecture-overview-of-the-biztalk-adapter-for-oracle-database.md)
@@ -127,10 +127,4 @@
 ### [使用性能计数器](use-performance-counters-with-the-oracle-database-adapter.md)
 ### [异常和错误处理](exceptions-and-error-handling-with-the-oracle-database-adapter.md)
 ## [术语和定义](glossary3.md)
-
-
-
-
-
-
-
+## [API 命名空间引用](https://docs.microsoft.com/dotnet/api/?view=bts-oracle-db)
