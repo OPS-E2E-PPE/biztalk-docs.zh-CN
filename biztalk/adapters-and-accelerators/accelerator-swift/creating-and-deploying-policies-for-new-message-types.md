@@ -1,5 +1,5 @@
 ---
-title: 消息类型创建和部署新的策略 |Microsoft 文档
+title: 创建和部署策略的新消息类型 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b826b3ee9408caf91fe5adcb2177d709f885a6e1
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 570afc1035b9b9430c7f223df4dcec8b82eab756
+ms.sourcegitcommit: 0e14c3e018b091d81d0e4a68fafc10f6e31697e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 03/19/2019
 ms.locfileid: "25966307"
 ---
-# <a name="creating-and-deploying-policies-for-new-message-types"></a>创建和部署新的消息类型的策略
-若要创建和部署新的消息类型的策略：  
+# <a name="creating-and-deploying-policies-for-new-message-types"></a>创建和部署策略的新消息类型
+若要创建和部署策略的新消息类型：  
   
-1.  替换 MX 消息文件夹中的消息类型的名称创建一个文件夹。 例如，在这种情况下文件夹的名称将 setr.004.001.02。  
+1.  MX 消息文件夹内的消息类型的名称创建一个文件夹。 例如，在这种情况下的文件夹的名称将为 setr.004.001.02。  
   
     ```csharp  
     (<xs:complexType name="Document">  
@@ -32,31 +32,31 @@ ms.locfileid: "25966307"
     </xs:complexType>)  
     ```  
   
-2.  将架构文件 (*.xsd) 以及生成母版 / 验证策略文件的此文件夹中的此消息类型。  
+2.  将架构文件 (*.xsd) 以及生成母版 / 此消息类型，此文件夹中文件的验证策略。  
   
-3.  更新关键字名称 MXMessageTypeKeywordList.xml (C:\Program Files\Microsoft BizTalk Accelerator for SWIFT\SDK\Tools)。 此名称必须是消息文件夹名称的前四个字母。 例如：  
+3.  更新关键字名称 MXMessageTypeKeywordList.xml (C:\Program Files\Microsoft BizTalk Accelerator for SWIFT\SDK\Tools)。 此名称必须是消息文件夹名称的前四个字母。 例如，  
   
     ```csharp  
     (<Keyword name ="setr" />)  
     ```  
   
-4.  若要创建特定母版 / 验证策略会的主副本 / 验证策略文件的现有消息，并将其放入新的消息文件夹。  
+4.  若要创建特定主机 / 验证策略执行的主副本 / 验证策略文件的现有消息，并将其放在新消息文件夹中。  
   
-5.  更改所有对母版中的消息类型的引用 / 验证策略，以反映新的消息类型。  
+5.  更改所有的对 master 数据库中的消息类型的引用 / 验证策略，以便反映新的消息类型。  
   
-## <a name="message-naming-conventions"></a>消息的命名约定  
- 遵循消息名称以下约定：  
+## <a name="message-naming-conventions"></a>消息命名约定  
+ 遵循这些约定的消息名称：  
   
--   **替换消息名称**： 如果新消息名称 swift.if.ia.setr.004.001.02 且已使用其策略文件的旧消息是 pacs.002.001.02，然后替换所有出现的与 pacs.002.001.02swift.if.ia.setr.004.001.02 的策略文件内。  
+-   **替换为消息名称**:如果新消息名称 swift.if.ia.setr.004.001.02 且已使用的策略文件的旧消息 pacs.002.001.02，然后将所有 pacs.002.001.02 的匹配项的替换为 swift.if.ia.setr.004.001.02 策略文件中。  
   
     > [!NOTE]
     >  消息名称是已下载的架构文件的名称和消息类型是在消息中的文档类型的名称。  
   
--   请使用与消息架构本身相同的策略文件的名称。 例如，swift.if.ia.setr.004.001.02.xsd 还将具有以下策略 swift.if.ia.setr.004.001.02 _Master_Policy.xml 和 swift.if.ia.setr.004.001.02 _Validation_Policy.xml。  
+-   保留的消息架构本身相同的策略文件的名称。 例如，swift.if.ia.setr.004.001.02.xsd 将具有以下策略 swift.if.ia.setr.004.001.02 _Master_Policy.xml 和 swift.if.ia.setr.004.001.02 _Validation_Policy.xml。  
   
--   **特殊字符**： 如果消息名称有任何特殊字符，则创建的策略文件需要略有不同的约定。 如果消息名称，例如，swift.if.ia$setr.004.001.02，则必须为消息名称更改策略文件的名称，其中包含被取代的特殊字符"。" 例如，如果 swift.if.ia$setr.004.001.02.xsd 消息架构文件的名称，则生成的主策略应 swift.if.ia.setr.004.001.02_Master_Policy.xml。  
+-   **特殊字符**:如果消息名称中包含任何特殊字符，然后创建的策略文件需要稍有不同的约定。 如果消息名称，例如，swift.if.ia$setr.004.001.02，则必须更改的策略文件的名称为消息名称包含特殊字符替换为"。" 例如，如果消息架构文件的名称为 swift.if.ia$setr.004.001.02.xsd，则生成的主策略应 swift.if.ia.setr.004.001.02_Master_Policy.xml。  
   
-     主策略文件也需要更改以反映新名称出现在以下标记：  
+     主策略文件也需要更改以反映新的名称在下列标记：  
   
     -   \<ruleset name="swift.if.ia.setr.004.001.02_Master_Policy"\>  
   
