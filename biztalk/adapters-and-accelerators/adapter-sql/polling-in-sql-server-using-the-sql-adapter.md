@@ -1,7 +1,7 @@
 ---
 title: 在使用 SQL 适配器的 SQL Server 中轮询 |Microsoft Docs
 ms.custom: ''
-ms.date: 06/08/2017
+ms.date: 01/18/2019
 ms.prod: biztalk-server
 ms.reviewer: ''
 ms.suite: ''
@@ -10,23 +10,23 @@ ms.topic: article
 ms.assetid: c31b3cda-c05e-46db-827b-6c47a53d1a3a
 caps.latest.revision: 19
 author: MandiOhlinger
-ms.author: mandia
+ms.author: mandia,niklase
 manager: anneta
-ms.openlocfilehash: 73bb47bfd631576fe992ef072eee8ff3ff5ba5bf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 80e9251babad12915ce9d9f1ad7662ec90db4eff
+ms.sourcegitcommit: 729299182b56758d01f4a4b9834616dbbdc0c014
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967126"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58764561"
 ---
 # <a name="polling-in-sql-server-using-the-sql-adapter"></a>在使用 SQL 适配器的 SQL Server 中轮询
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)] 允许适配器客户端接收来自 SQL Server 数据库的数据更改消息。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]支持接收"基于轮询的"消息其中适配器执行指定的 SQL 语句 （SELECT 语句或存储的过程），检索或更新的数据，并按固定间隔的适配器客户端提供的结果时间。  
   
  [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]公开的轮询的以下操作：  
   
-- **轮询**： 使您能够接收定期的数据更改消息的 SQL Server 表或视图。 消息不是强的类型。  
+- **轮询**:可以接收定期的数据更改消息的 SQL Server 表或视图。 消息不是强的类型。  
   
-- **TypedPolling**： 使您能够接收来自 SQL Server 数据库的强类型化消息。 如果你想要将轮询消息中的元素映射到任何其他架构，则必须使用此操作。  
+- **TypedPolling**:可以接收来自 SQL Server 数据库的强类型化消息。 如果你想要将轮询消息中的元素映射到任何其他架构，则必须使用此操作。  
   
 - **XmlPolling**。 可以使用 SELECT 语句或存储的过程使用 FOR XML 子句，并以 XML 消息形式返回数据。 此操作将返回作为 XML 消息轮询消息。  
   
@@ -48,7 +48,10 @@ ms.locfileid: "36967126"
 5. 适配器客户端可以使用**PollWhileDataFound**属性要忽略的轮询间隔，并连续轮询数据，以及可用时绑定。  
   
 6. 作为执行轮询语句的结果而返回的结果集为入站消息发送到适配器客户端。  
-  
+
+> [!NOTE]
+>  当**UseAmbientTransaction**设置为 False， **PolledDataAvailableStatement**不调用。 相反，适配器直接调用**PollingStatement**。
+
 > [!NOTE]
 >  XmlPolling 操作涉及到与轮询操作相同的步骤。  
   
@@ -82,7 +85,7 @@ ms.locfileid: "36967126"
 |由适配器启动轮询。 适配器执行语句，以验证是否可用于轮询，然后通过执行轮询语句，如果某些数据可用于轮询启动轮询数据。|查询通知是由 SQL Server 启动。 只需在适配器发出的通知语句指示要在没有语句的结果集中的更改的情况下启动通知的数据库。|  
 |轮询语句可用于读取或更新 SQL Server 数据库表中的数据。|可以使用查询通知语句仅读取 SQL Server 数据库表中的数据。|  
 |轮询通知您已更改的实际数据。|查询通知只会通知有关类型的更改数据，例如插入、 更新和删除。|  
-|数据更改通知取决于轮询间隔，并且适配器客户端将每个轮询间隔结束时通知数据更改。 **提示：** 轮询可以为您提供更好的吞吐量中情况下，数据更改发生的连续，并且不希望为每个更改的和发生时收到通知。 相反，您指定要在其后自上次数据更改通知以来已发生的所有更改的通知轮询间隔。|数据更改通知是瞬间完成的。|  
+|数据更改通知取决于轮询间隔，并且适配器客户端将每个轮询间隔结束时通知数据更改。 **提示：** 轮询可以提供更好的吞吐量中情况下，数据更改发生的连续，并且不希望为每个更改的和发生时收到通知。 相反，您指定要在其后自上次数据更改通知以来已发生的所有更改的通知轮询间隔。|数据更改通知是瞬间完成的。|  
   
  有关详细信息中的查询通知[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]，请参阅[通过使用 BizTalk Server 接收 SQL 查询通知](../../adapters-and-accelerators/adapter-sql/receive-sql-query-notifications-using-biztalk-server.md)。  
   
