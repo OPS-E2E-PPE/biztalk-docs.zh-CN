@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 21b3cc0056bf8105618aac7a9c47056d3e493c49
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5106c067902b3a5ddaf9f6d68d9a5513f136ba25
+ms.sourcegitcommit: af438e8cf6f58e25372689c5de0a184a0a6696a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004342"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58867559"
 ---
 # <a name="considerations-for-receiving-query-notifications-using-the-sql-adapter"></a>使用 SQL 适配器接收查询通知的注意事项
 本主题提供了一些注意事项和最佳实践，以使用时应牢记[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]从 SQL Server 数据库接收查询通知。  
@@ -39,7 +39,7 @@ ms.locfileid: "37004342"
   </Notification>  
   ```  
   
-   请注意内的值**\<信息\>** 元素。 此值提供为其接收通知消息操作的信息。 你的应用程序应具有的功能中的值中提取**\<信息\>** 元素，然后根据值，执行后续任务。 本主题[进程通知消息，以完成特定任务中使用 BizTalk Server 的 SQL](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md)说明了如何在值中提取**\<信息\>** 元素. 执行类似任务的详细的教程也是可在[教程 2： 员工-采购订单流程使用 SQL 适配器](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)。  
+   请注意内的值**\<信息\>** 元素。 此值提供为其接收通知消息操作的信息。 你的应用程序应具有的功能中的值中提取**\<信息\>** 元素，然后根据值，执行后续任务。 本主题[进程通知消息，以完成特定任务中使用 BizTalk Server 的 SQL](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md)说明了如何在值中提取**\<信息\>** 元素. 执行类似任务的详细的教程也是可在[教程 2:员工-采购订单流程使用 SQL 适配器](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)。  
   
 - 理想情况下，客户端应用程序收到的特定记录的通知后，该记录应更新，以便不会接收其他通知。 例如，考虑**员工**具有表**状态**列。 对于所有新记录插入到**员工**表中的值**状态**列始终是"0"以便查找表将如下所示：  
   
@@ -47,7 +47,7 @@ ms.locfileid: "37004342"
   |-------------------|------------|  
   |John|0|  
   
-   若要接收通知的新插入的记录，适配器客户端将设置**NotificatonStatement**绑定属性设置为：  
+   若要接收通知的新插入的记录，适配器客户端将设置**NotificationStatement**绑定属性设置为：  
   
   ```  
   SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0  
@@ -60,7 +60,7 @@ ms.locfileid: "37004342"
   
   |员工姓名|“登录属性”|  
   |-------------------|------------|  
-  |John|@shouldalert|  
+  |John|1|  
   
    有趣的是，更新操作将再次向适配器客户端发送通知并将再次重复整个过程，因此，客户端应用程序必须具有所需的逻辑，若要放弃此类不需要发送的通知。  
   
@@ -83,4 +83,4 @@ ms.locfileid: "37004342"
   
    -   内**Else**块中，必须包括业务流程形状来执行某些操作，如果条件为*不*满足。  
   
-   上述要求的详细信息所述[进程通知消息，以完成特定任务中使用 BizTalk Server 的 SQL](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md)。 详细的教程也会出现在[教程 2： 员工-采购订单流程使用 SQL 适配器](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)。
+   上述要求的详细信息所述[进程通知消息，以完成特定任务中使用 BizTalk Server 的 SQL](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md)。 详细的教程也会出现在[教程 2:员工-采购订单流程使用 SQL 适配器](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)。

@@ -17,18 +17,18 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d81b18e4fe2180ed3d4e58bfb7bec5e31c1d6a84
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2d390b54a79ca883b53ff5088638ba2804fa2640
+ms.sourcegitcommit: af438e8cf6f58e25372689c5de0a184a0a6696a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996638"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58867551"
 ---
 # <a name="how-to-create-a-net-application-to-test-a-wcf-service-published-with-the-biztalk-wcf-service-publishing-wizard"></a>如何创建.NET 应用程序以测试通过 BizTalk WCF 服务发布向导发布的 WCF 服务
 若要测试已发布的 WCF 服务，请创建一个使用已发布的 WCF 服务的 .NET 应用程序。 本主题说明如何创建一个 .NET 应用程序以测试发布的 WCF 服务。  
   
 > [!NOTE]
->  Visual Studio 帮助集合中包含创建使用 WCF 服务的 .NET 应用程序的重要演练。 您可以使用此演练测试已发布的 WCF 服务。 有关创建 WCF 客户端项目中，有关信息和过程，请参阅"演练:: 访问 XML Web 服务使用 Visual Basic 或 Visual C#"中[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]帮助集合中处[ http://go.microsoft.com/fwlink/?LinkId=62263 ](http://go.microsoft.com/fwlink/?LinkId=62263)。  
+>  Visual Studio 帮助集合中包含创建使用 WCF 服务的 .NET 应用程序的重要演练。 您可以使用此演练测试已发布的 WCF 服务。 有关创建 WCF 客户端项目的信息和过程，请参阅访问 XML Web 服务使用 Visual Basic 或 Visual C#"中[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]帮助集合中处[ http://go.microsoft.com/fwlink/?LinkId=62263 ](http://go.microsoft.com/fwlink/?LinkId=62263)。  
 > 
 > [!NOTE]
 >  本主题使用服务模型元数据实用工具 (SvcUtil.exe) 来创建 WCF 代理类和应用程序配置文件。 SvcUtil.exe 包含在 Windows Vista 和 .NET Framework 运行时组件的 Microsoft Windows 软件开发工具包 (SDK) 中。  
@@ -59,7 +59,7 @@ ms.locfileid: "36996638"
    ```  
    DeliveryNotification deliveryNotification= new DeliveryNotification();  
    deliveryNotification.TrackingNumber = "001";  
-               Microsoft_Samples_BizTalk_WCFBasicHttp_BizTalkApp_DliveryRequestProcess_DeliveryNotificatonReceivePortClient service = new Microsoft_Samples_BizTalk_WCFBasicHttp_BizTalkApp_DliveryRequestProcess_DeliveryNotificatonReceivePortClient("BasicHttpBinding_ITwoWayAsyncVoid");  
+               Microsoft_Samples_BizTalk_WCFBasicHttp_BizTalkApp_DeliveryRequestProcess_DeliveryNotificationReceivePortClient service = new Microsoft_Samples_BizTalk_WCFBasicHttp_BizTalkApp_DeliveryRequestProcess_DeliveryNotificationReceivePortClient("BasicHttpBinding_ITwoWayAsyncVoid");  
    service.Submit(deliveryNotification);  
    ```  
   
