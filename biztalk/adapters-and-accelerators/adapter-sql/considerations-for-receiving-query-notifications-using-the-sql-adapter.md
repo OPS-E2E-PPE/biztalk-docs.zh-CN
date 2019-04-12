@@ -29,7 +29,7 @@ ms.locfileid: "58867559"
   
 - 该操作所影响的记录数不会影响操作的通知消息。 例如，无论包含几个记录插入、 更新或删除 SQL Server 数据库表中，适配器客户端接收只有一条通知消息。  
   
-- 我们建议适配器客户端应用程序包含的逻辑来解释的类型从 SQL Server 收到的通知。 通知类型可通过提取的信息，确定**\<信息\>** 收到的通知消息的元素。 下面是收到了插入操作的通知消息的示例：  
+- 我们建议适配器客户端应用程序包含的逻辑来解释的类型从 SQL Server 收到的通知。 通知类型可通过提取的信息，确定 **\<信息\>** 收到的通知消息的元素。 下面是收到了插入操作的通知消息的示例：  
   
   ```  
   <Notification xmlns="http://schemas.microsoft.com/Sql/2008/05/Notification/">  
@@ -39,7 +39,7 @@ ms.locfileid: "58867559"
   </Notification>  
   ```  
   
-   请注意内的值**\<信息\>** 元素。 此值提供为其接收通知消息操作的信息。 你的应用程序应具有的功能中的值中提取**\<信息\>** 元素，然后根据值，执行后续任务。 本主题[进程通知消息，以完成特定任务中使用 BizTalk Server 的 SQL](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md)说明了如何在值中提取**\<信息\>** 元素. 执行类似任务的详细的教程也是可在[教程 2:员工-采购订单流程使用 SQL 适配器](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)。  
+   请注意内的值 **\<信息\>** 元素。 此值提供为其接收通知消息操作的信息。 你的应用程序应具有的功能中的值中提取 **\<信息\>** 元素，然后根据值，执行后续任务。 本主题[进程通知消息，以完成特定任务中使用 BizTalk Server 的 SQL](../../adapters-and-accelerators/adapter-sql/process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk.md)说明了如何在值中提取**\<信息\>** 元素. 执行类似任务的详细的教程也是可在[教程 2:员工-采购订单流程使用 SQL 适配器](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)。  
   
 - 理想情况下，客户端应用程序收到的特定记录的通知后，该记录应更新，以便不会接收其他通知。 例如，考虑**员工**具有表**状态**列。 对于所有新记录插入到**员工**表中的值**状态**列始终是"0"以便查找表将如下所示：  
   
