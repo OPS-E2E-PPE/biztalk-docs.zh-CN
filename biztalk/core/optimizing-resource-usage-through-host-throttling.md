@@ -1,5 +1,5 @@
 ---
-title: 优化通过限制的主机的资源使用情况 |Microsoft 文档
+title: 优化资源使用情况通过主机阻止 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,22 +15,22 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8fa30cb66371ef519741658dec47e08f6f92e871
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e1ada7b36453945b676db8aa897d7e0e862d3907
+ms.sourcegitcommit: ec7013f5ddcd2da4291ae29ac28f965d89aa277a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 04/16/2019
 ms.locfileid: "22263605"
 ---
-# <a name="optimizing-resource-usage-through-host-throttling"></a>通过主机阻止优化资源使用率
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用多种不同的 Microsoft 技术，其中每个可以使用的内存、 磁盘和 CPU 资源在 BizTalk server 和包含 BizTalk Server 数据库的 SQL 服务器上可用的重要部分。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用限制的机制，来帮助管理可用资源，以最大程度减少资源使用争用的使用。 本主题讨论此机制的设计。 有关如何调整的限制值的信息，请参阅[BizTalk Server 性能优化使用设置仪表板](../core/using-settings-dashboard-for-biztalk-server-performance-tuning.md)。  
+# <a name="optimizing-resource-usage-through-host-throttling"></a>通过主机阻止优化资源使用情况
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用多个不同的 Microsoft 技术，其中每个可使用内存、 磁盘和 BizTalk server 和包含 BizTalk Server 数据库的 SQL 服务器上的可用 CPU 资源的重要部分。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 利用阻止机制来帮助管理可用资源，以最大程度减少使用的资源争用的使用。 本主题讨论此机制的设计。 有关如何调整阻止值的信息，请参阅[使用设置仪表板进行 BizTalk Server 性能调整](../core/using-settings-dashboard-for-biztalk-server-performance-tuning.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [主机限制？](../core/what-is-host-throttling.md)  
+-   [主机限制概述](../core/what-is-host-throttling.md)  
   
--   [BizTalk Server 如何实施限制的主机](../core/how-biztalk-server-implements-host-throttling.md)  
+-   [BizTalk Server 如何实现主机限制](../core/how-biztalk-server-implements-host-throttling.md)  
   
 -   [主机限制性能计数器](../core/host-throttling-performance-counters.md)  
   
--   [限制的设计建议](../core/throttling-design-recommendations.md)
+-   [限制设计建议](../core/throttling-design-recommendations.md)
