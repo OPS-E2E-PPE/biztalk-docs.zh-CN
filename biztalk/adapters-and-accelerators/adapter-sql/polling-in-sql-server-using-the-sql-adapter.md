@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia,niklase
 manager: anneta
 ms.openlocfilehash: 80e9251babad12915ce9d9f1ad7662ec90db4eff
-ms.sourcegitcommit: 729299182b56758d01f4a4b9834616dbbdc0c014
+ms.sourcegitcommit: 85e827c42f193e44ca8b5b8d78d6f8b8ac686f1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58764561"
 ---
 # <a name="polling-in-sql-server-using-the-sql-adapter"></a>在使用 SQL 适配器的 SQL Server 中轮询

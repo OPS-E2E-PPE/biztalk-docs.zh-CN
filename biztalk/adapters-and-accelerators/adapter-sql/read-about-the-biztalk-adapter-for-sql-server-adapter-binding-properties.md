@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: niklase,mandia
 manager: anneta
 ms.openlocfilehash: e9851d5c77a3470d784defd1d544d42014251dd7
-ms.sourcegitcommit: 22b43db719de5a916b44331e79e88e68f0648b37
+ms.sourcegitcommit: 85e827c42f193e44ca8b5b8d78d6f8b8ac686f1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58794578"
 ---
 # <a name="read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties"></a>了解关于 BizTalk Adapter for SQL Server 适配器绑定属性

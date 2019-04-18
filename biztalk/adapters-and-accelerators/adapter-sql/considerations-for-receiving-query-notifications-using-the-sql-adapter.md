@@ -13,11 +13,11 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 5106c067902b3a5ddaf9f6d68d9a5513f136ba25
-ms.sourcegitcommit: af438e8cf6f58e25372689c5de0a184a0a6696a9
+ms.sourcegitcommit: 85e827c42f193e44ca8b5b8d78d6f8b8ac686f1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58867559"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59767031"
 ---
 # <a name="considerations-for-receiving-query-notifications-using-the-sql-adapter"></a>使用 SQL 适配器接收查询通知的注意事项
 本主题提供了一些注意事项和最佳实践，以使用时应牢记[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]从 SQL Server 数据库接收查询通知。  

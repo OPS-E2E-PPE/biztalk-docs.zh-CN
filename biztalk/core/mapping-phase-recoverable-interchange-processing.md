@@ -13,14 +13,14 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 91f7b00bb5bd1490b5a3249ed2b37fb1335e266b
-ms.sourcegitcommit: 68239c81fb12b84a479bf6a4ed8c5b25b249f5ba
+ms.sourcegitcommit: 85e827c42f193e44ca8b5b8d78d6f8b8ac686f1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58852365"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59767023"
 ---
 # <a name="mapping-phase-recoverable-interchange-processing"></a>映射阶段 （可恢复的交换处理）
-默认情况下，当交换一条消息在接收端口的映射阶段失败时，整个交换将挂起。 可以通过添加一个名为属性更改此行为**BTS。SuspendMessageOnMappingFailure**到消息上下文，并通过设置为上下文属性的值`True`从管道组件。 当此属性设置为`True`，终结点管理器将放在挂起队列中的映射过程中失败，并继续处理剩余消息交换中的消息。  
+默认情况下，当在接收端口，在映射阶段失败，将交换中的消息将挂起整个交换。 可以通过添加一个名为属性更改此行为**BTS。SuspendMessageOnMappingFailure**到消息上下文，并通过设置为上下文属性的值`True`从管道组件。 当此属性设置为`True`，终结点管理器将放在挂起队列中的映射过程中失败，并继续处理剩余消息交换中的消息。  
   
  下面的代码设置的值**SuspendMessageOnMappingFailure**属性设为 True。  
   

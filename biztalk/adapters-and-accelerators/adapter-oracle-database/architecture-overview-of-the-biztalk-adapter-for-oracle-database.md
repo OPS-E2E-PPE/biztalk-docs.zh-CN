@@ -24,10 +24,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 6024bc9dedc1ea4b28e185bbc6ed8a025d9e71fd
-ms.sourcegitcommit: af438e8cf6f58e25372689c5de0a184a0a6696a9
+ms.sourcegitcommit: 85e827c42f193e44ca8b5b8d78d6f8b8ac686f1e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58867567"
 ---
 # <a name="architecture-overview-of-the-biztalk-adapter-for-oracle-database"></a>用于 Oracle 数据库的 BizTalk 适配器的体系结构概述
