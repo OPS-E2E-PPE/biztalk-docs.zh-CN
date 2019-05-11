@@ -1,5 +1,5 @@
 ---
-title: 管理员-ExplorerOM （BizTalk Server 示例文件夹中） |Microsoft 文档
+title: Admin-explorerom （BizTalk Server 示例文件夹） |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,18 +15,18 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3b8b33db0460a5e44ecfcd732535022bb28940d3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1bd9f560c81781a54a79af21464341d68509ed6d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230029"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360044"
 ---
-# <a name="admin-explorerom-biztalk-server-samples-folder"></a>管理员-ExplorerOM （BizTalk Server 示例文件夹中）
-Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]包括在其软件开发工具包 (SDK) 的 Admin\ExplorerOM 文件夹中的示例。 本部分详细介绍了每个 BizTalk 浏览器对象模型管理示例所演示的功能、生成和运行每个示例的说明以及可以预期得到的结果。  
+# <a name="admin-explorerom-biztalk-server-samples-folder"></a>Admin-explorerom （BizTalk Server 示例文件夹）
+Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]包括在其软件开发工具包 (SDK) 的 Admin\ExplorerOM 文件夹中的示例。 本部分提供有关每个 BizTalk 浏览器对象模型管理示例，说明用于构建和运行示例，以及可以预期的结果所演示的功能的详细的信息。  
   
 > [!WARNING]
->  部署后，如果不再需要部署脚本，则应将其删除。 应通过 ACL 确保必须保留的管理脚本和其他脚本的安全并加以密切监视。  
+>  如果不需要应在部署后删除的部署脚本。 管理脚本和其他必须保持的脚本应受 ACL 并加以密切监视。  
   
 > [!NOTE]
 >  Microsoft.BizTalk.ExplorerOM.dll 支持 32 位和 64 位进程。  
@@ -37,20 +37,20 @@ Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernovers
   
 -   [BrowsingArtifacts （BizTalk Server 示例）](../core/browsingartifacts-biztalk-server-sample.md)。 演示如何枚举 BizTalk 项目和属性。  
   
--   [CBR （BizTalk Server 示例）](../core/cbr-biztalk-server-sample.md)。 演示如何添加和配置新的基于内容的路由的 BizTalk 消息的发送端口。  
+-   [CBR （BizTalk Server 示例）](../core/cbr-biztalk-server-sample.md)。 演示如何添加和配置用于基于内容的路由的 BizTalk 消息的新发送端口。  
   
--   [DeleteParty （BizTalk Server 示例）](../core/deleteparty-biztalk-server-sample.md)。 演示如何删除指定的参与方。  
+-   [DeleteParty （BizTalk Server 示例）](../core/deleteparty-biztalk-server-sample.md)。 演示如何删除指定参与方。  
   
 -   [OrchestrationBinding （BizTalk Server 示例）](../core/orchestrationbinding-biztalk-server-sample.md)。 演示如何配置和管理业务流程。  
   
--   [PartnerManagement （BizTalk Server 示例）](../core/partnermanagement-biztalk-server-sample.md)。 演示如何创建和删除的参与方。 此外还演示登记和取消登记具有角色的参与方。  
+-   [PartnerManagement （BizTalk Server 示例）](../core/partnermanagement-biztalk-server-sample.md)。 演示如何创建和删除参与方。 此外演示登记和取消登记参与方与角色。  
   
--   [接收位置 （BizTalk Server 示例）](../core/receivelocations-biztalk-server-sample.md)。 演示如何创建和管理的接收端口接收位置。  
+-   [ReceiveLocations （BizTalk Server 示例）](../core/receivelocations-biztalk-server-sample.md)。 演示如何创建和管理接收端口的接收位置。  
   
--   [接收端口 （BizTalk Server 示例）](../core/receiveports-biztalk-server-sample.md)。 演示如何创建、 枚举和删除接收端口。  
+-   [ReceivePorts （BizTalk Server 示例）](../core/receiveports-biztalk-server-sample.md)。 演示如何创建、 枚举和删除接收端口。  
   
--   [发送端口组 （BizTalk Server 示例）](../core/sendportgroups-biztalk-server-sample.md)。 演示如何枚举和管理发送端口组。  
+-   [SendPortGroups （BizTalk Server 示例）](../core/sendportgroups-biztalk-server-sample.md)。 演示如何枚举和管理发送端口组。  
   
--   [发送端口 （BizTalk Server 示例）](../core/sendports-biztalk-server-sample.md)。 演示如何枚举和管理发送端口。  
+-   [SendPorts （BizTalk Server 示例）](../core/sendports-biztalk-server-sample.md)。 演示如何枚举和管理发送端口。  
   
--   [UnenlistParties （BizTalk Server 示例）](../core/unenlistparties-biztalk-server-sample.md)。 演示如何取消登记与部署的 BizTalk 程序集关联的所有参与方。
+-   [UnenlistParties （BizTalk Server 示例）](../core/unenlistparties-biztalk-server-sample.md)。 演示如何取消登记所有与已部署的 BizTalk 程序集关联的参与方。

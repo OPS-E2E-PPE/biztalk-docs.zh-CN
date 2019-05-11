@@ -12,25 +12,25 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e3643dab17f8d1592f1e5fddce30aa12e537c817
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3d25ce00dfa48e84f6abc93de31121bdb655f2eb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969134"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387044"
 ---
 # <a name="how-to-capture-a-memory-dump-of-a-biztalk-process"></a>如何捕获 BizTalk 进程的内存转储
-在某些情况下，可能需要捕获 BizTalk Server 上运行的进程的内存转储，以对该进程执行深入分析。 在以下情况下可能需要对内存转储进行分析：  
+在某些情况下可能有必要捕获执行深入的 BizTalk 服务器上运行的进程的内存转储进程的分析。 以下情况下，可能需要的内存转储分析：  
   
-- 在进程无响应时。  
+- 当进程无响应。  
   
 - 在进程崩溃时。  
   
-- 在进程泄漏内存时。  
+- 当在进程泄漏内存。  
   
-  本部分介绍捕获适当类型的内存转储时应遵循的步骤。  
+  本部分包括捕获内存转储的相应类型应遵循的步骤。  
   
-## <a name="installation-of-the-iis-diagnostics-toolkit"></a>安装 IIS 诊断工具包  
+## <a name="installation-of-the-iis-diagnostics-toolkit"></a>IIS 诊断工具包的安装  
  在本部分中的主题的每个需要使用**调试诊断工具**IIS 诊断工具包工具捕获内存转储。 若要安装**调试诊断工具**IIS 诊断工具包，请执行以下步骤：  
   
 1.  下载 IIS 诊断工具包从[Internet 信息服务诊断工具](http://go.microsoft.com/fwlink/?LinkId=64426)。  

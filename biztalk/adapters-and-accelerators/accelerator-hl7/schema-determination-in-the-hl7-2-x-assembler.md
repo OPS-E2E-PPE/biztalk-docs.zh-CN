@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 962f9576032ec8b42542111502c2b6d6698f98d1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: df5ebe635c656bc93a1df796eb4c778c2e99f329
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983646"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289935"
 ---
 # <a name="schema-determination-in-the-hl7-2x-assembler"></a>HL7 2.X 汇编程序的架构确定
 一条消息到序列化程序的流时，Microsoft BizTalk Accelerator for HL7 中的序列化程序 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 使用 MSH5 （目标参与方） 的消息，以确定要对消息执行的操作。 此类操作包括：  

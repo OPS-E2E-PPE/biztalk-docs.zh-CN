@@ -23,23 +23,23 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27c591e7ea30dd97b116f89c3d50d03ea48392b4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8fb31801e832c190ee4c9d00d7dcaa055a4f43fc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982414"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65386207"
 ---
 # <a name="how-to-configure-per-instance-pipeline-properties-for-a-receive-location"></a>如何配置每个实例的管道属性接收位置
-本主题介绍在将管道部署到 BizTalk 组之后如何使用 BizTalk Server 管理控制台为接收位置配置管道属性。 您所做的更改将只覆盖此接收位置的默认管道属性，因此如果需要，可以为 BizTalk 组中的每个接收位置配置不同的管道属性。  
+本主题介绍如何使用 BizTalk Server 管理控制台配置接收位置的管道属性，该管道部署到 BizTalk 组后。 所做的更改的默认管道属性覆盖此接收位置仅，因此如果你想，您可以配置不同的管道属性为每个接收位置在 BizTalk 组中。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  若要执行本主题中的过程，必须是 BizTalk Server Administrators 组的成员的帐户登录。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
   
 > [!NOTE]
 >  使用每个实例的管道属性设置的值时**DocumentSpecNames** XML 拆装器组件的管道、 指定的文档架构和管道中的属性必须在同一项目中定义。  
   
-### <a name="to-configure-per-instance-pipeline-properties-for-a-receive-location"></a>为接收位置配置基于实例的管道属性  
+### <a name="to-configure-per-instance-pipeline-properties-for-a-receive-location"></a>若要配置每个实例为接收位置的管道属性  
   
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c92fe07371be2abb44c314eb77eb38c6c853bebe
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 38f5f2fe1c3341d694b2c9ee3aeec0e2ce97bbb9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982454"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65301628"
 ---
 # <a name="stopping-application-processing-on-the-source-system"></a>停止处理源系统上的应用程序
 应用程序处理应停止时源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]运行时服务器是仍可以参与使用现有的数据库服务器的文档处理。 在此方案中，处理活动必须先停止，以便可以完成一致还原操作。  

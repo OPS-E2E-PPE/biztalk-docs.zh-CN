@@ -1,5 +1,5 @@
 ---
-title: 第 1 课： 添加平面文件接收端口和位置 |Microsoft Docs
+title: 第 1 课：添加平面文件接收端口和位置 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,14 +17,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e23525715be1816684ffa680f99cf8f8bd88ceca
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7835c5c256dd8f6f9d13114274ade6fc88f9272a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966262"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377264"
 ---
-# <a name="lesson-1-adding-flat-file-receive-port-and-location"></a>第 1 课： 添加平面文件接收端口和位置
+# <a name="lesson-1-adding-flat-file-receive-port-and-location"></a>第 1 课：添加平面文件接收端口和位置
 接收端口始终具有添加接收端口时，必须配置一个关联的接收位置。 接收位置定义传入消息的管道和管道，用于处理该消息的特定地址。  
   
 ### <a name="to-add-a-receive-port"></a>若要添加接收端口  
@@ -61,4 +61,4 @@ ms.locfileid: "36966262"
   
 16. 在 BizTalk Server 管理控制台中，单击**接收位置**，右键单击**MT103_FlatFile_ReceiveLocation**，然后单击**启用**。  
   
-    请继续执行[第 2 课： 添加 XML 发送端口](../../adapters-and-accelerators/accelerator-swift/lesson-2-adding-an-xml-send-port.md)。
+    请继续执行[第 2 课：添加 XML 发送端口](../../adapters-and-accelerators/accelerator-swift/lesson-2-adding-an-xml-send-port.md)。

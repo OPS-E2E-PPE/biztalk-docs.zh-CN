@@ -22,21 +22,21 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ab6a40db19ae42f0ba4007fd8044d7d7aa086adb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: faff8a6a8b8b9a639c4e03c4c48c287835667238
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968238"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383851"
 ---
 # <a name="how-to-specify-sso-administrators-and-affiliate-administrators-accounts"></a>如何指定 SSO 管理员和关联管理员帐户
-企业单一登录 (SSO) 管理员和关联管理员帐户可以为主机组也可以为个人帐户。 必须首先创建这些帐户，然后才能配置 SSO 系统。  
+企业单一登录 (SSO) 管理员和关联管理员帐户可以是主机组或个人帐户。 在配置 SSO 系统之前，必须创建这些帐户。  
   
- 在使用域帐户时，必须将 SSO 管理员和 SSO 关联管理员帐户作为域控制器中的域全局安全组创建。 域管理员必须创建这些帐户。  
+ 时使用域帐户，你必须创建的 SSO Administrators 和 SSO Affiliate Administrators 帐户为域全局安全组的域控制器中。 域管理员必须创建这些帐户。  
   
- 必须在 SSO 数据库中指定单一登录管理员和关联管理员帐户。 必须首先禁用单一登录系统，然后才能用 SSO Administrators 组更新 SSO 数据库。  
+ 必须在 SSO 数据库中指定的 Single Sign-on Administrators 和 Affiliate Administrators 帐户。 使用 SSO Administrators 组更新 SSO 数据库之前，必须禁用单一登录系统。  
   
- 以下 XML 代码显示了用于更新 SSO 数据库的 XML 示例：  
+ 下面的 XML 代码显示更新 SSO 数据库的示例 XML:  
   
 ```  
 <sso>  
@@ -48,12 +48,12 @@ ms.locfileid: "36968238"
 ```  
   
 > [!NOTE]
->  配置向导自动在 SSO 数据库中指定 SSO Administrators 和 SSO Affiliate Administrators 组。  
+>  配置向导自动指定 SSO 管理员和 SSO 关联管理员组在 SSO 数据库中。  
   
 > [!NOTE]
 >  如果 SSO 不进行配置，用户应检查是否正在混合模式域中使用域本地帐户。  
   
-### <a name="to-disable-the-enterprise-single-sign-on-system-using-the-mmc-snap-in"></a>使用 MMC 管理单元禁用企业单一登录系统  
+### <a name="to-disable-the-enterprise-single-sign-on-system-using-the-mmc-snap-in"></a>若要禁用企业单一登录系统使用 Mmc 管理单元  
   
 1.  在“开始”  菜单上，依次单击“所有程序” 、“Microsoft Enterprise Single Sign-On” 和“SSO 管理” 。  
   
@@ -61,11 +61,11 @@ ms.locfileid: "36968238"
   
 3.  右键单击**系统**，然后单击**禁用**。  
   
-### <a name="to-disable-the-enterprise-single-sign-on-system-using-the-command-line"></a>使用命令行禁用企业单一登录系统  
+### <a name="to-disable-the-enterprise-single-sign-on-system-using-the-command-line"></a>若要禁用企业单一登录系统使用命令行  
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。  
+2.  在命令行中，转至企业单一登录安装目录。 默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。  
   
 3.  类型**ssomanage** –**disablesso**。  
   
@@ -84,14 +84,14 @@ ms.locfileid: "36968238"
   
 1. 上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2. 在命令行上，转至企业单一登录安装目录。 默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。  
+2. 在命令行中，转至企业单一登录安装目录。 默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。  
   
 3. 类型 * * ssomanage – updatedb *\<更新文件\>**<em>，其中 *\<更新文件\></em>是路径和 XML 文件的名称。  
   
    > [!NOTE]
    >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
   
-### <a name="to-enable-the-enterprise-single-sign-on-system-using-the-mmc-snap-in"></a>使用 MMC 管理单元启用企业单一登录系统  
+### <a name="to-enable-the-enterprise-single-sign-on-system-using-the-mmc-snap-in"></a>若要启用企业单一登录系统使用 Mmc 管理单元  
   
 1.  上**启动**菜单上，单击**所有程序**， **Microsoft 企业单一登录**，然后**SSO 管理**。  
   
@@ -99,11 +99,11 @@ ms.locfileid: "36968238"
   
 3.  右键单击**系统**，然后单击**启用**。  
   
-### <a name="to-enable-the-enterprise-single-sign-on-system-using-the-command-line"></a>使用命令行启用企业单一登录系统  
+### <a name="to-enable-the-enterprise-single-sign-on-system-using-the-command-line"></a>若要启用企业单一登录系统使用命令行  
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。  
+2.  在命令行中，转至企业单一登录安装目录。 默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。  
   
 3.  类型**ssomanage – enablesso**。  
   

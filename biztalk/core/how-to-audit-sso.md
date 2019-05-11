@@ -17,17 +17,17 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9363df166e438aba0db89cbadd0d688c7d353a0e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 315ef88247d61e26056467232bf5a460c6c7fed1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972078"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387179"
 ---
 # <a name="how-to-audit-sso"></a>如何审核 SSO
 可以使用 MMC 管理单元或命令行设置这两个成功和失败审核级别。 审核的结果存储在事件日志和数据库的审核日志。  
   
- SSO 管理员可以设置适合其公司策略的成功和失败审核级别。 您可以将成功和失败审核设置为以下级别之一：  
+ SSO 管理员可以设置适合其公司策略的成功和失败审核级别。 可以将成功和失败审核设置为以下级别之一：  
   
  0 = 无  
   
@@ -37,7 +37,7 @@ ms.locfileid: "36972078"
   
  3 = 高。 此级别不发出多尽可能的审核消息。  
   
- 成功审核的默认值为 0（无），失败审核的默认值为 1（低）。  
+ 正审核的默认值为 0 （无）、 和失败审核的默认值为 1 （低）。  
   
  若要更改数据库级别审核，必须更新 SSO 数据库使用的 XML 文件。 更新 SSO 数据库的示例 XML 文件如下所示：  
   

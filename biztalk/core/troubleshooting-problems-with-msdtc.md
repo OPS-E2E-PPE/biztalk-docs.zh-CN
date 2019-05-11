@@ -12,14 +12,14 @@ caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 95776b7b03cc1b6bca08622d126153cb22efc317
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: da4c329b734d2e49a8aec7f755954b1647817f9b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987718"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65295761"
 ---
-# <a name="troubleshooting-problems-with-msdtc"></a>MSDTC 疑难解答
+# <a name="troubleshooting-problems-with-msdtc"></a>对 MSDTC 问题进行故障排除
 大多数 BizTalk Server 运行时操作都需要 Microsoft 分布式事务处理协调器 (MSDTC) 支持，以确保操作事务性一致。 如果没有 MSDTC 事务支持，则相关联的 BizTalk Server 运行时操作将无法进行。 未正确配置 MSDTC 事务支持时通常会影响的 BizTalk 组件包括（但不限于）单一登录服务、BizTalk 主机实例以及 BizTalk Server 所连接的任何 SQL Server 实例。 本部分包含的信息描述了与 MSDTC 相关的错误和步骤，遵循这些步骤可帮助你诊断并解决 MSDTC 存在的问题。  
   
 ## <a name="errors-that-can-occur-if-msdtc-transaction-support-is-not-configured-correctly"></a>未正确配置 MSDTC 事务支持时会出现的错误  
@@ -29,13 +29,13 @@ ms.locfileid: "36987718"
   
 - “由于 Microsoft 分布式事务处理协调器出现问题，因此无法连接到配置数据库。 此事务已明地或暗地被确认或终止”。  
   
-- “错误代码：0x8004d00a，无法在指定的事务处理协调器中登记新事务”。  
+- "错误代码：0x8004d00a，无法登记新事务中指定的事务处理协调器"。  
   
 - “无法从配置存储中检索接收位置‘MySample ReceiveLocation’的传输类型数据。 主 SSO Server‘MyServer’发生故障。 RPC 服务器不可用”。  
   
-- “错误代码：0x8004d025,，合作伙伴事务管理器已禁用对远程/网络事务的支持”。  
+- "错误代码：0x8004d025，，合作伙伴事务管理器已禁用对远程/网络事务的支持"。  
   
-- “错误代码：0xc0002a24，无法导入 DTC 事务。 请检查 MSDTC 是否正确配置以用于远程操作”。  
+- "错误代码：0xc0002a24，无法导入 DTC 事务。 请检查 MSDTC 是否正确配置以用于远程操作”。  
   
 - “0x8004d01c  
   
@@ -124,14 +124,14 @@ ms.locfileid: "36987718"
   
 |配置选项|默认值|推荐值|  
 |--------------------------|-------------------|-----------------------|  
-|网络 DTC 访问|禁用|已启用|  
+|网络 DTC 访问|禁用|Enabled|  
 |**客户端和管理**|||  
 |允许远程客户端|禁用|禁用|  
 |允许远程管理|禁用|禁用|  
 |**事务管理器通信**|||  
-|允许入站|Disabled|已启用|  
-|允许出站|禁用|已启用|  
-|要求进行相互身份验证|已启用|如果所有远程计算机都运行的是 Windows Server 2003 SP1 或 Windows XP SP2 或更高版本，并且都配置有“要求相互身份验证”，则为“已启用”。|  
+|允许入站|Disabled|Enabled|  
+|允许出站|禁用|Enabled|  
+|要求进行相互身份验证|Enabled|如果所有远程计算机都运行的是 Windows Server 2003 SP1 或 Windows XP SP2 或更高版本，并且都配置有“要求相互身份验证”，则为“已启用”。|  
 |要求对呼叫方进行身份验证|禁用|如果在群集上运行 MSDTC，则为“已启用”。|  
 |不要求进行身份验证|禁用|在远程计算机为 Windows Server 2003 SP1 之前的版本或 Windows XP SP2 之前的版本时启用。|  
 |启用 TIP|禁用|如果运行 BAM 门户，则为“已启用”。|  
@@ -214,7 +214,7 @@ ms.locfileid: "36987718"
   
     |DWORD 项|默认值|推荐值|  
     |-----------------|-------------------|-----------------------|  
-    |EnableAuthEpResolution|0（禁用）|@shouldalert|  
+    |EnableAuthEpResolution|0（禁用）|1|  
     |RestrictRemoteClients|1（启用）|0|  
   
 3.  关闭“注册表编辑器”。  
@@ -270,7 +270,7 @@ ms.locfileid: "36987718"
 ## <a name="error-new-transaction-cannot-enlist-in-the-specified-transaction-coordinator-0x8004d00a-occurs-if-the-msdtc-connection-between-a-client-computer-and-a-server-computer-is-closed"></a>如果关闭了客户端计算机与服务器计算机之间的 MSDTC 连接，则出现错误“无法在指定事务协调器中登记新事务(0x8004d00a)”  
  在某些情况下，可能出现客户端和服务器之间的现有 MSDTC 连接关闭，并且后续尝试使用此连接将导致以下错误消息：  
 无法在指定的事务处理协调器中登记新事务 (0x8004d00a)  
-有关详细信息，请参阅[尝试在 MS DTC 中启动事务时出现错误消息:"中指定的事务处理协调器无法登记新事务"](http://support.microsoft.com/kb/922430)。  
+有关详细信息，请参阅[尝试在 MS DTC 中启动事务时出现错误消息："中指定的事务处理协调器无法登记新事务"](http://support.microsoft.com/kb/922430)。  
   
 ## <a name="consider-reinstalling-the-distributed-transaction-coordinator-service-if-other-troubleshooting-steps-are-not-successful"></a>如果其他疑难解答步骤不成功，请考虑重新安装分布式事务协调器服务  
  如果尝试解决 MSDTC 问题的其他操作不成功，请考虑卸载并重新安装 MSDTC。 请按照下列步骤卸载并重新安装 MSDTC：  

@@ -12,28 +12,28 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4277e6b088ed136021b898e26204a63dc782a895
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 80974231b839225652721e8c64aaf35a0f1369f0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008510"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384080"
 ---
 # <a name="how-to-retrieve-the-bam-configuration-file-using-the-bam-management-utility"></a>如何检索 BAM 配置文件使用 BAM 管理实用程序
-管理员和开发人员可以使用 BAM 管理实用程序来检索 BAM 基础结构的当前配置。 检索的配置可以用来将 BAM 安装迁移到新的服务器，也可以对该配置进行修改并用于更新现有的 BAM 安装。  
+管理员和开发人员可以使用 BAM 管理实用程序来检索 BAM 基础结构的当前配置。 可以使用检索到的配置将 BAM 安装迁移到新服务器或可以修改并用于更新现有 BAM 安装。  
   
-## <a name="prerequisites"></a>必要條件  
- 以下为执行本主题中的过程的前提条件：  
+## <a name="prerequisites"></a>先决条件  
+ 在本主题中执行该过程的先决条件如下：  
   
--   已配置的 BAM 数据库  
+-   配置的 BAM 数据库  
   
 -   读取 BAM 主导入数据库的权限  
   
-### <a name="to-retrieve-the-bam-configuration-file-using-the-bam-management-utility"></a>使用 BAM 管理实用程序检索 BAM 配置文件  
+### <a name="to-retrieve-the-bam-configuration-file-using-the-bam-management-utility"></a>若要检索 BAM 配置文件使用 BAM 管理实用程序  
   
-1. 按如下所示打开命令提示符： 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
+1. 打开命令提示符，如下所示：单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2. 导航到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking。  
+2. 导航到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]跟踪。  
   
 3. 在命令行提示符下键入以下内容： **bm 获取配置-FileName:\<输出文件\>**，其中\<*输出文件*\>将替换为BAM 配置文件的名称。 按 **Enter**。  
   

@@ -1,5 +1,5 @@
 ---
-title: 错误-第一个输入值不是有效的提取程序 Functoid |Microsoft 文档
+title: 错误-值提取程序 Functoid 不是有效的第一个输入 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 68b143cea7e1d7e99c1d5b378bd9d6619270fb70
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8a419cb522a385d83c5e877b14625f8e93c30775
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239573"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348350"
 ---
-# <a name="error---first-input-to-value-extractor-functoid-not-valid"></a>错误-第一个输入值不是有效的提取程序 Functoid
+# <a name="error---first-input-to-value-extractor-functoid-not-valid"></a>错误-值提取程序 Functoid 不是有效的第一个输入
 **错误代码**  
   
  btm1002  
   
  **说明**  
   
- 第一个输入的参数指示**值提取程序**functoid 必须输出 （ADO 记录集），从**数据库查找**functoid。  
+ 所指示的第一个输入的参数**值提取程序**functoid 必须是输出 （ADO 记录集），从**数据库查找**functoid。  
   
  **用户执行任何操作**  
   
- 确保所有的第一个输入**值提取程序**functoid 是从一个链接**数据库查找**functoid 映射网格页在其左侧。
+ 确保所有的第一个输入**值提取程序**functoid 是从一个链接**数据库查找**在映射网格页左侧的 functoid。

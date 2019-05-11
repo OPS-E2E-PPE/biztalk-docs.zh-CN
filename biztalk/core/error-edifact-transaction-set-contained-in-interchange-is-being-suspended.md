@@ -1,5 +1,5 @@
 ---
-title: 在解析过程中遇到错误。 以下错误被挂起的 Edifact 事务集 （没有组） 的交换中包含 |Microsoft Docs
+title: 解析期间遇到错误。 以下错误被挂起的 Edifact 事务集 （没有组） 的交换中包含 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c2e0d8e2b03decf2db806a08f082b7aace276a8e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3fe401b82d9492590d332dcbdb7d6d59bfaf3c91
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006414"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348902"
 ---
-# <a name="error-encountered-during-parsing-the-edifact-transaction-set-contained-in-interchange-without-group-is-being-suspended-with-following-errors"></a>在解析过程中遇到错误。 以下错误被挂起的 Edifact 事务集包含在交换 （没有组）
+# <a name="error-encountered-during-parsing-the-edifact-transaction-set-contained-in-interchange-without-group-is-being-suspended-with-following-errors"></a>解析期间遇到错误。 以下错误被挂起的 Edifact 事务集包含在交换 （没有组）
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                                                       |
@@ -30,10 +30,10 @@ ms.locfileid: "37006414"
 |  事件源   |                                                                [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                                                                 |
 |    组件    |                                                                                                      EDI 引擎                                                                                                       |
 |  符号名称  |                                                                                      EfactTransactionSetReceiveErrorWithoutGroup                                                                                      |
-|  消息正文   | 在解析过程中遇到错误。 Edifact 事务集 id 为 '{0}（没有组） id 的交换中包含{1}，发送方 id{2}，接收方 id{3}以下错误被挂起： |
+|  消息正文   | 解析期间遇到错误。 Edifact 事务集 id 为 '{0}（没有组） id 的交换中包含{1}，发送方 id{2}，接收方 id{3}以下错误被挂起： |
   
 ## <a name="explanation"></a>解释  
- 此错误/警告/信息事件表明由于通过交换中标识的事务集指明的错误，在分析传入的 EDIFACT 交换（该交换没有组）时 EDI 接收管道遇到错误。 请注意，该事务集不在交换的组中。  
+ 此错误/警告/信息事件表明 EDI 接收管道遇到错误时在交换中指出的错误，标识的事务由于分析传入的 EDIFACT 交换没有组设置。 请注意，事务集不在交换中组中。  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请使用错误消息中的信息来标识事务集中的错误，然后在产品帮助中确定问题解决方案。
+ 若要解决此错误，需要使用错误消息中的信息来标识事务集中的错误，然后确定问题解决方案产品帮助中。

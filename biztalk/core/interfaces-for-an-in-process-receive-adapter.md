@@ -12,15 +12,15 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d608f9e511b1a3cb0ba94f30fbe3cd1eb7c9e87
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1a222f41d28b57053c192db3235e2fa7f4f710ab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36965862"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381732"
 ---
 # <a name="interfaces-for-an-in-process-receive-adapter"></a>接收适配器的进程内的接口
-消息引擎实例化和配置进程内适配器，并且传入传输代理以便允许适配器访问其功能。 若要启用对传输代理的配置和绑定，适配器必须实现以下配置接口：  
+消息引擎实例化和配置进程内适配器，并且传入传输代理以便允许适配器访问其功能。 若要启用配置和绑定到传输代理，适配器必须实现以下配置接口：  
   
 - **IBTTransport**  
   
@@ -32,15 +32,15 @@ ms.locfileid: "36965862"
   
   （可选） 如果适配器想要接收处理程序信息在初始化过程中它需要实现**IPersistPropertyBag**。  
   
-  消息引擎将创建适配器的某一实例、初始化该实例并设置接收位置配置。 消息引擎将属性包传递给适配器**AddReceiveEndpoint**方法调用。 该属性包包含接收位置和接收处理程序的配置。 该配置以 XML 样式的属性包形式存储于数据库中。 消息引擎读取 XML 并从 XML 解除冻结属性包。 在添加至少一个终结点（接收位置）后，该适配器可以开始提交消息。  
+  消息引擎创建的适配器实例，初始化它，并设置的配置接收位置。 消息引擎将属性包传递给适配器**AddReceiveEndpoint**方法调用。 属性包包含接收位置和接收处理程序的配置。 配置存储在数据库中的 XML 样式的属性包形式。 消息引擎读取 XML 并解除冻结从 XML 属性包。 至少一个终结点后 （接收位置） 添加，适配器可以开始提交消息。  
   
 > [!NOTE]
 >  适配器应不会阻止消息引擎调用如**IBTTransportControl.Initialize**， **ipersistpropertybag.load 这样**，和**IBTTransportConfig.AddReceiveEndpoint**. 执行过多的处理中这些调用将会影响服务启动时间。  
   
- 下图显示在创建进程内接收适配器时涉及的对象交互。  
+ 下图显示了接收适配器创建过程中涉及的对象交互。  
   
  ![](../core/media/ebiz-sdk-devadapter11.gif "ebiz_sdk_devadapter11")  
-进程内接收适配器的工作流  
+工作流的进程内接收适配器  
   
 ## <a name="see-also"></a>请参阅  
  [适配器变量](../core/adapter-variables.md)   

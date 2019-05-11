@@ -12,27 +12,27 @@ caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 60f901800cb1d7426a364a87b0f3f915d8436244
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 85f0ea739e8ddfe4ee4294f3db33187fecb811b9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022555"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65351123"
 ---
 # <a name="developing-custom-adapters"></a>开发自定义适配器
-若要与外部系统、 应用程序和实体交换消息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用适配器的概念。 适配器是 COM 或[!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)]传输业务最终消息的组件。 点 （例如文件系统、 数据库和自定义业务应用程序），通过使用各种通信协议。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 提供了本机支持各种协议的适配器。 其中包括：  
+若要与外部系统、 应用程序和实体交换消息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用适配器的概念。 适配器是 COM 或[!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)]传输业务最终消息的组件。 点 （例如文件系统、 数据库和自定义业务应用程序），通过使用各种通信协议。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 提供了本机支持各种协议的适配器。 这些问题包括：  
   
-- 支持从文件位置发送和接收消息的文件适配器  
+- 支持发送和接收消息，从文件位置的文件适配器  
   
-- 用于 EDI、FTP、HTTP、MSMQ、SMTP、POP3 和 SOAP 协议的适配器  
+- EDI、 FTP、 HTTP、 MSMQ、 SMTP、 POP3 和 SOAP 协议的的适配器  
   
 - 用于适配器 [!INCLUDE[btsWinSharePointSvcsNoVersion](../includes/btswinsharepointsvcsnoversion-md.md)]  
   
-  在某些情况下[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]可能需要消息传输到特定的自定义应用程序或使用为其本机适配器不存在的协议。 第三方公司编写了支持其他协议的适配器。 您可能要在决定编写某一自定义适配器前确定是否存在可用于您的协议的适配器。 有关适配器和关联供应商的列表，请参阅[ http://go.microsoft.com/fwlink/?LinkId=47140 ](http://go.microsoft.com/fwlink/?LinkId=47140)。 如果您无法找到支持您的通信要求的适配器，则可以开发自定义适配器。  
+  在某些情况下[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]可能需要消息传输到特定的自定义应用程序或使用为其本机适配器不存在的协议。 第三方公司编写了适配器，以支持其他协议。 您可能想要确定是否有您的协议的适配器在决定编写自定义适配器之前。 有关适配器和关联供应商的列表，请参阅[ http://go.microsoft.com/fwlink/?LinkId=47140 ](http://go.microsoft.com/fwlink/?LinkId=47140)。 如果您找不到适配器以支持您的通信要求，可以开发自定义适配器。  
   
-  编写自定义适配器可能颇具挑战性。 为了简化此过程，Microsoft 开发了称作适配器框架的基础框架。 您可以将此框架作为基础进行开发以及在示例适配器源代码[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]SDK。  
+  编写自定义适配器很有挑战性的工作。 若要简化此过程，Microsoft 已开发了称作适配器框架的基础。 您可以将此框架作为基础进行开发以及在示例适配器源代码[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]SDK。  
   
-  本部分中的以下主题提供自定义适配器的开发技巧和建议。  
+  在本部分中的主题提供自定义适配器的开发技巧和建议。  
   
 ## <a name="in-this-section"></a>本节内容  
   

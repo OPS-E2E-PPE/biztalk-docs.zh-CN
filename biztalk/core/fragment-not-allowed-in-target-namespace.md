@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c001c7b2a26d70cf8a7072e8f7c2acc9baf7ad5e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 47870b6d8876aca91d15c7e5c03f677328464f40
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005774"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387847"
 ---
 # <a name="fragment-not-allowed-in-target-namespace"></a>目标命名空间中不允许使用段
 ## <a name="details"></a>详细信息  

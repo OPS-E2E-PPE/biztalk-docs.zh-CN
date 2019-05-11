@@ -1,5 +1,5 @@
 ---
-title: 准备使用 Tutorial_hl7_main |Microsoft 文档
+title: 准备使用 tutorial_hl7_main 做准备 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,15 +14,15 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 255b15ae07d658c415d4f862ded1fbfde17600d3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0d5cd314e881fa85861ee902766a340be2bfc094
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22205989"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289994"
 ---
-# <a name="preparing-to-use-the-tutorialhl7main"></a>准备使用 Tutorial_hl7_main
-你需要执行本节中的任务，然后使用本教程。  
+# <a name="preparing-to-use-the-tutorialhl7main"></a>准备使用 tutorial_hl7_main 做准备
+您需要在使用本教程之前在本部分中执行任务。  
   
 ## <a name="in-this-section"></a>本节内容  
   

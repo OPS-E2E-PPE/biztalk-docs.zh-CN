@@ -1,5 +1,5 @@
 ---
-title: 如何更新 SSO 数据库 |Microsoft 文档
+title: 如何更新 SSO 数据库 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,12 +19,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bbb7ea650a2845d8ebdcdcc2204f8346c5737c43
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 5a970bf80e5aa6e67913976426c0dbe2ba21c47e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25971315"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383572"
 ---
 # <a name="how-to-update-the-sso-database"></a>如何更新 SSO 数据库
 可以使用 MMC 管理单元或命令行来更改 SSO 数据库中诸如主密钥服务器标识、帐户名、数据库中的审核、票证超时和凭据缓存超时之类的全局信息。  
@@ -34,7 +34,7 @@ ms.locfileid: "25971315"
   
  **票证超时。** 此属性指定 SSO 颁发的票据的有效时长。 为满足企业中使用 SSO 的大部分情况，默认的票证超时为 2 分钟。 SSO 管理员可以根据应用程序要求来更改此属性。  
   
- **凭据缓存超时值。** 此属性可指定所有 SSO 服务器的凭据缓冲超时。 SSO 服务器在第一次查找后将对凭据进行缓存。 默认情况下，凭据缓存超时为 60 分钟。 SSO 管理员可以根据安全要求将此属性更改为适当的值。  
+ **凭据缓存超时。** 此属性可指定所有 SSO 服务器的凭据缓冲超时。 SSO 服务器在第一次查找后将对凭据进行缓存。 默认情况下，凭据缓存超时为 60 分钟。 SSO 管理员可以根据安全要求将此属性更改为适当的值。  
   
  通过更新 SSO 数据库，可以更改这两种超时。  
   
@@ -80,13 +80,13 @@ ms.locfileid: "25971315"
   
 1.  依次单击 **“开始”** 和 **“运行”**，然后键入 **cmd**。  
   
-2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
+2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。  
   
-3.  类型**ssomanage-updatedb\<更新文件\>**，其中**\<更新文件\>** 是路径和文件的名称。  
+3.  类型**ssomanage – updatedb\<更新文件\>**，其中**\<更新文件\>** 是路径和文件的名称。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何配置 SSO 票证](../core/how-to-configure-the-sso-tickets.md)   
  [使用 SSO](../core/using-sso.md)

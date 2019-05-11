@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f0ab50802cbb872d7ba884a8256824426fbe098
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 74af9ed587ac6af016139348cc8ae9205a51bbb1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008200"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388343"
 ---
 # <a name="transaction-set-schema-contains-one-or-more-of-control-segments-isa-iea-gs-ge"></a>事务集架构包含一个或多个控制段 ISA、IEA、GS、GE
 ## <a name="details"></a>详细信息  

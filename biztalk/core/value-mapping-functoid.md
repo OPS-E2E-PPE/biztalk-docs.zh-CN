@@ -1,5 +1,5 @@
 ---
-title: 值映射 Functoid |Microsoft 文档
+title: 值映射 Functoid |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,22 +16,22 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 038d59827a62c9f4e83879ec7cf2e0b47fd738f4
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 7ca60ff3024eb1b4cadc42e42c65a0c44c82ef5d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25973779"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292614"
 ---
-# <a name="value-mapping-functoid"></a>“值映射”Functoid
-**值映射**functoid 返回其第二个参数的值，如果其第一个参数为 true。 该 functoid 通常用于将字段的属性更改为记录的属性。 若要通过将多个记录转换为单个记录平展输入消息的一部分，使用[值映射 （平展） Functoid](../core/value-mapping-flattening-functoid.md)。  
+# <a name="value-mapping-functoid"></a>值映射 Functoid
+**值映射**functoid 在其第一个参数为 true，则返回其第二个参数的值。 提取 functoid 的一个常见用途是将一个字段的属性更改为记录的属性。 若要通过将多个记录转换为一条记录平展输入消息的一部分，请使用[值映射 （平展） Functoid](../core/value-mapping-flattening-functoid.md)。  
   
- 下图显示具有的映射**值映射**functoid 用于将字段的特性更改为一条记录的属性。  
+ 下图显示了具有的地图**值映射**functoid 用于将一个字段的属性更改为记录的属性。  
   
  ![](../core/media/valuemappingfunctoid.gif "valuemappingfunctoid")  
-“值映射”Functoid 映射  
+值映射 Functoid 映射  
   
- 下面的代码演示输入的实例消息中的一对名称和值将赋给**名称**和**值**属性。  
+ 下面的代码演示的输入的实例消息中的一对名称和值分配给**名称**并**值**属性。  
   
 ```  
 <ns0:Root xmlns:ns0="http://ValueMapping.WeatherIn">  
@@ -46,7 +46,7 @@ ms.locfileid: "25973779"
 </ns0:Root>  
 ```  
   
- 上面的映射可以将此消息转换为以下消息，其中值分配给独立记录中具有相应名称的属性。  
+ 上面的映射可以将此消息转换为一个其中值分配给具有单独的记录中的相应名称的属性。  
   
 ```  
 <ns0:Root xmlns:ns0="http://ValueMapping.WeatherOut">  
@@ -57,15 +57,15 @@ ms.locfileid: "25973779"
 </ns0:Root>  
 ```  
   
- **相等**functoid 测试的值**名称**属性。 第一个**相等**functoid 测试的值**名称**正在"WindSpeed。" 当**名称**是"WindSpeed，"第一个**相等**functoid 返回**True**。 这样，反过来，**值映射**functoid，若要设置的值**WindSpeed**输出实例消息中的属性。  
+ **相等**functoid 测试的值**名称**属性。 第一个**相等**的值的 functoid 测试**名称**是否为"WindSpeed"。 当**名称**为"WindSpeed，"第一个**相等**functoid 将返回**True**。 这反过来允许**值映射**若要设置的值的 functoid **WindSpeed**输出实例消息中的属性。  
   
 ## <a name="suppressing-the-creation-of-empty-tags"></a>取消创建空标记  
- 若要取消空标记，可以使用“值映射”functoid 控制是否创建某个标记。 如果值的计算结果为 True，则将创建目标字段，否则，不创建目标字段。 在循环方案中，使用“判断”functoid 并将其连接到目标记录或目标字段。 如果条件的计算结果为 false，则不创建标记。 有关示例，请参阅[条件循环](../core/conditional-looping.md)。  
+ 若要取消空标记，请使用控制值映射 functoid，如果或不创建某个标记。 如果值的计算结果为 true，目标将创建字段;否则将不创建目标字段。 在循环方案中，使用判断 functoid 并将其连接到的目标记录或字段。 如果条件的计算结果为 false，将不会创建该标记。 有关示例，请参阅[条件循环](../core/conditional-looping.md)。  
   
 ## <a name="forcing-the-creation-of-empty-tags"></a>强制创建空标记  
- 若要强制空标记来创建，可以添加一个值的目标字段或链接的值属性中**Concatenate** functoid 到目标字段。  在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，可以通过选择强制生成空标记"\<空\>"目标字段的值属性中的值。 在这种情况下，将使用空值创建字段。  
+ 若要强制创建空标记，可以添加一个值的目标字段或链接值属性中**Concatenate** functoid 到目标字段。  在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，则可以通过选择强制生成空标记"\<空\>"目标字段的值属性中的值。 在这种情况下将使用空值创建字段。  
   
-## <a name="see-also"></a>另请参阅  
- [映射 （拼合） Functoid 的值](../core/value-mapping-flattening-functoid.md)   
- [如何添加值映射到图 Functoid](../core/how-to-add-value-mapping-functoids-to-a-map.md)   
- [高级 Functoid](../core/advanced-functoids.md)
+## <a name="see-also"></a>请参阅  
+ [值映射 （平展） Functoid](../core/value-mapping-flattening-functoid.md)   
+ [如何添加值映射 Functoid 映射到](../core/how-to-add-value-mapping-functoids-to-a-map.md)   
+ [高级的 Functoid](../core/advanced-functoids.md)

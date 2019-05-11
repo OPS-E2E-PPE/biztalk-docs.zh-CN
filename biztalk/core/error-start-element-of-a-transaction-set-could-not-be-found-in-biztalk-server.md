@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 74ea9b059ed75d88a8f48287d553e670d2c7d755
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8748a34ce567ede355c0a49467afaa669f943dcc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984478"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65346902"
 ---
-# <a name="error-encountered-after-processing-transaction-sets-because-the-start-element-of-a-transaction-set-could-not-be-found"></a>处理事务集后遇到错误，因为找不到事务集的 Start 元素
+# <a name="error-encountered-after-processing-transaction-sets-because-the-start-element-of-a-transaction-set-could-not-be-found"></a>处理事务集，因为找不到事务集的开始元素后遇到错误
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                   |
@@ -36,4 +36,4 @@ ms.locfileid: "36984478"
  此错误/警告/信息事件表明 EDI 接收管道无法处理传入的事务集，因为接收管道找不到 ST 或 UNH 标头。  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请与交换的发送方联系，让他们确保出错的事务集从 ST01 或 UNH1 段开始。
+ 若要解决此错误，请与交换的发件人，让他们确保中错误的事务集开头 ST01 或 UNH1 段。

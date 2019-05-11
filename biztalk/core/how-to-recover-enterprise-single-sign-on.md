@@ -12,27 +12,27 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d56953fcab29b53f23ba3097296a74aeb67a17c8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0e42139a9e286024487417a005963eb677b880a3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973118"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384438"
 ---
 # <a name="how-to-recover-enterprise-single-sign-on"></a>如何恢复企业单一登录
-必须先恢复企业单一登录 (SSO)，然后才能恢复 BizTalk Server。  
+可以恢复 BizTalk Server 之前，必须先恢复企业单一登录 (SSO)。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
   
--   若要执行此项任务，您必须以 Single Sign-On Administrators 组成员和 Administrators 组成员的身份登录。  
+-   您必须登录为 Single Sign-on Administrators 组的成员和 Administrators 组的成员，才能执行此任务。  
   
--   您必须拥有配置 SSO 时所使用的密码。  
+-   您必须配置 SSO 时所用的密码。  
   
--   远程服务器上所有数据库都保持不变。  
+-   所有数据库都是在远程服务器上保持不变。  
   
--   备份主密钥文件保持不变，且保存到一个安全的地方。  
+-   备份主密钥文件在安全的位置保持不变，且保存。  
   
-### <a name="to-recover-enterprise-single-sign-on"></a>恢复企业单一登录  
+### <a name="to-recover-enterprise-single-sign-on"></a>若要恢复企业单一登录  
   
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 配置**。  
   
@@ -45,11 +45,11 @@ ms.locfileid: "36973118"
 5. 在中**Windows 服务**，最初安装和配置 BizTalk Server 时使用的 SSO 服务帐户输入用户名和密码。  
   
    > [!NOTE]
-   >  您也可使用其他帐户，但必须是 Single Sign-On Administrators 组的成员。  
+   >  可以使用不同的帐户，但它必须是 Single Sign-on Administrators 组的成员。  
   
-6. 单击“应用配置”。  
+6. 单击**应用配置**。  
   
-    此时将显示未检索到主密钥的警告。 您可使用事件查看器来验证企业单一登录服务是否已经启动，并正在该计算机上运行。  
+    显示未检索到没有主密钥的警告。 您可以使用事件查看器来验证企业单一登录服务已经启动并运行在计算机上。  
   
 7. 单击**文件**，然后单击**退出**。  
   
@@ -61,7 +61,7 @@ ms.locfileid: "36973118"
   
 10. 在命令提示符下，键入：  
   
-     **ssoconfig-restoreSecret***\<backupfile  \>*  
+     **ssoconfig -restoreSecret**  *\<backupfile\>*  
   
      其中*\<backupfile\>* 是您备份主密钥文件的名称。  
   

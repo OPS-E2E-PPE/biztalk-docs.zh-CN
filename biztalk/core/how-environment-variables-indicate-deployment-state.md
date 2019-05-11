@@ -14,25 +14,25 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2d21baa6ef6e6d82fc179497b4993cf3af6fb1a5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5fc27a85f36b83b3fd3c0bd782807fa4f5b73364
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983982"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387464"
 ---
 # <a name="how-environment-variables-indicate-deployment-state"></a>环境变量如何指示部署状态
-调用预处理脚本或后处理脚本时，脚本通过检查环境变量 BTAD_ChangeRequestAction、BTAD_InstallMode 和 BTAD_HostClass，可确定其所运行的部署状态（安装、导入、删除、卸载、导入回滚或安装回滚）。  
+在调用之后，预处理或后处理脚本可以确定的部署状态 （安装、 导入、 删除、 卸载、 导入回滚或安装回滚） 正在运行的检查环境变量 BTAD_ChangeRequestAction、 BTAD_InstallMode和 BTAD_HostClass。  
 
- 下表说明了用来指示不同部署状态的三个变量的组合。  
+ 下表介绍指示不同的部署状态的三个变量的组合。  
 
 
 |       部署状态        |     预期值      |
 |-------------------------------|--------------------------|
 |                               | BTAD_ChangeRequestAction |
-| 导入（不带覆盖标志） |          创建          |
-|  导入（带覆盖标志）   |          Update          |
-|            Install            |          Update          |
+| 导入不带覆盖标志 |          创建          |
+|  导入带覆盖标志   |          Update          |
+|            安装            |          Update          |
 |           Uninstall           |          DELETE          |
 |        导入回滚        |          DELETE          |
 |       安装回滚        |          DELETE          |

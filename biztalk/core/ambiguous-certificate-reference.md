@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2ac43f85b590ede746bbd14065d8e01701d1e91f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c61b28ff583486efbb475eff51f6292ecc8a0367
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988830"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359249"
 ---
 # <a name="ambiguous-certificate-reference"></a>证书引用不明确
 ## <a name="details"></a>详细信息  
@@ -30,10 +30,10 @@ ms.locfileid: "36988830"
 |  事件源   |                                         0                                          |
 |    组件    |                                         0                                          |
 |  符号名称  |                                         0                                          |
-|  消息正文   |       证书引用不明确，找到了多个有效证书       |
+|  消息正文   |       证书引用不明确;找到多个有效证书       |
   
 ## <a name="explanation"></a>解释  
- 找到了多个有效证书。  
+ 找到多个有效证书。  
   
 #### <a name="user-action"></a>用户操作  
  验证只有一个配置有效的证书。  
@@ -80,7 +80,7 @@ ms.locfileid: "36988830"
   
 9. 确保中的搜索条件**证书引用**部分已正确配置，以指示证书中的只有一个证书**存储区名称**。  
   
-10. 在“证书”管理单元中，确保只为您配置为 WCF 传输的搜索条件安装了一个证书。  
+10. 在证书管理单元中，确保只有一个证书安装配置为 WCF 传输的搜索条件。  
   
 ## <a name="see-also"></a>另请参阅
 [安装用于 WCF 适配器的证书](../core/installing-certificates-for-the-wcf-adapters.md)  

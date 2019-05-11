@@ -15,12 +15,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cb90c62baebb8fc73b939c0a3ea20eb85e9b0e28
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: efa05809a785379c994e95dd3219a52a7772fb28
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970830"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65303589"
 ---
 # <a name="mllp-adapter-known-issues"></a>MLLP 适配器已知问题
 本部分包含可帮助你避免最少的较低层协议 (MLLP) 适配器错误的有用信息。  

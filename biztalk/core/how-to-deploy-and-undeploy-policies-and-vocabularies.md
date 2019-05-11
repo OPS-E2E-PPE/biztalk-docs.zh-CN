@@ -18,19 +18,19 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a2c6200f41a4b473175528ac6d2c8ee75c17894
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ff5e213cc0ad820bbaa6129ee5e6cf816c3ba0b5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013062"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385285"
 ---
 # <a name="how-to-deploy-and-undeploy-policies-and-vocabularies"></a>如何部署和取消部署策略及词汇
-你可以使用规则引擎部署向导来部署策略或取消部署策略。  
+规则引擎部署向导可用于部署或取消部署策略。  
   
- 在规则引擎部署向导中尝试进行部署时，下拉列表中将只显示已发布的策略版本。 在尝试取消部署时，下拉列表中则只显示已部署的策略版本。  
+ 在规则引擎部署向导中，当您尝试部署，唯一的已发布的策略版本下拉列表中显示。 当尝试取消部署时，仅部署的策略版本显示在下拉列表中。  
   
-### <a name="to-deploy-or-undeploy-a-policy"></a>部署或取消部署策略  
+### <a name="to-deploy-or-undeploy-a-policy"></a>若要部署或取消部署策略  
   
 1. 单击**启动**，依次指向**Program Files**，指向[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**业务规则引擎部署向导**。  
   
@@ -44,16 +44,16 @@ ms.locfileid: "37013062"
 4. 从下拉列表中，选择可用的 SQL Server 计算机和数据库，然后依次**下一步**。  
   
    > [!NOTE]
-   >  只能部署到所配置的规则存储数据库中。 如果尝试部署到其他数据库，则会出现错误。  
+   >  您可以只部署到所配置的规则存储数据库。 尝试部署到其他数据库将产生错误。  
   
 5. 从下拉列表中，选择一个策略，然后依次**下一步**。  
   
    > [!NOTE]
-   >  在尝试部署时，下拉列表中将只显示已发布的策略版本。 在尝试取消部署时，下拉列表中则只显示已部署的策略版本。  
+   >  当你尝试部署时，仅已发布的策略版本显示在下拉列表中。 当尝试取消部署时，仅部署的策略版本显示在下拉列表中。  
   
 6. 查看服务器、 数据库和策略信息，然后单击**下一步**。  
   
-7. 监视部署或取消部署的进度。 完成后，单击**下一步**。  
+7. 查看部署或取消部署的进度。 完成后，单击**下一步**。  
   
 8. 查看部署或取消部署的完成状态，然后单击**完成**。  
   

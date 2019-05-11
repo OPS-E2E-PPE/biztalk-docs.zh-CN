@@ -16,24 +16,24 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 96c0fd5d9007ccb6cdcfbb9fad89b81bae70d70d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 67356b22c0cc4aeae6001a15a83245104a0048f8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018168"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385205"
 ---
 # <a name="how-to-disable-a-receive-location"></a>如何禁用接收位置
 本主题介绍如何使用 BizTalk Server 管理控制台禁用接收位置。 禁用接收位置时，它将停止接收消息。 如果你想要在禁用接收位置之后, 您可以它再次启用，以便它将再次接收消息。  
   
-## <a name="prerequisites"></a>必要條件  
- 若要执行本主题中描述的过程，必须以 BizTalk Server Operators 组或 BizTalk Server Administrators 组成员的帐户身份登录。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
+## <a name="prerequisites"></a>先决条件  
+ 若要执行本主题中的过程，必须是 BizTalk Server Operators 组或 BizTalk Server Administrators 组的成员的帐户登录。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
   
 ### <a name="to-disable-a-receive-location"></a>若要禁用接收位置  
   
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
-2. 在控制台树中，展开要为其禁用接收位置的 BizTalk 组和 BizTalk 应用程序。  
+2. 在控制台树中，展开 BizTalk 组和 BizTalk 应用程序想要禁用接收位置。  
   
 3. 单击**接收位置**，右键单击接收位置，然后单击**禁用**。  
   

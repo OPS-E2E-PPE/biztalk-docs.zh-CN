@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9b3d3e488c1bae99e343f5ff6d5a15b826138459
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a521e88aed552bf25450cabd1dee98b508da5953
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980062"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401312"
 ---
 # <a name="backing-up-databases"></a>备份数据库
 因为[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用分布式事务跨多个数据库，备份 BizTalk Server 作业创建的所有同步的备份[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库。 这是通过使用标记的事务与"完全"数据库恢复模型实现的。 这是需要在数据库保持事务上一致的备份。 有关详细信息，请参阅["标记的事务、 完整备份和日志备份"](http://go.microsoft.com/fwlink/?LinkId=151565) (<http://go.microsoft.com/fwlink/?LinkId=151565>) 中的 BizTalk Server 文档。  
@@ -39,7 +39,7 @@ ms.locfileid: "36980062"
 ## <a name="additional-resources"></a>其他资源  
  请参阅中的以下主题[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]文档：  
   
-- 详细了解特定于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]备份和还原任务，请参阅["核对清单:: 备份和还原"](http://go.microsoft.com/fwlink/?LinkId=154070) (<http://go.microsoft.com/fwlink/?LinkId=154070>)。  
+- 详细了解特定于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]备份和还原任务，请参阅["核对清单：备份和还原"](http://go.microsoft.com/fwlink/?LinkId=154070) (<http://go.microsoft.com/fwlink/?LinkId=154070>)。  
   
 - 有关的备份和还原概述[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，请参阅["备份和还原 BizTalk Server"](http://go.microsoft.com/fwlink/?LinkId=154071) (<http://go.microsoft.com/fwlink/?LinkId=154071>)。  
   

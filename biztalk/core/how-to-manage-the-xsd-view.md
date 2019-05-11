@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e38707d25355b8ee46a653971b459f1f799614b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6aa052fffcb50854b43cd8b1df169c026e4c0320
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004211"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384611"
 ---
 # <a name="how-to-manage-the-xsd-view"></a>如何管理 XSD 视图
 与 XSD 视图有关的管理任务可以分为三个类别： 更改其大小、 更改其背景色和字体，以及更改其刷新特性。  
@@ -28,7 +28,7 @@ ms.locfileid: "37004211"
   
 ### <a name="to-make-the-xsd-view-taller-or-shorter"></a>若要使 XSD 视图更高或更短  
   
-1. 将鼠标指针移动到 Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 主编辑窗口（该窗口将 XSD 视图与架构树视图并列显示）的下边缘，直到光标更改为标准的窗口垂直调整图标。  
+1. 将鼠标指针移动到 Microsoft 的下边缘[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]主编辑窗口，其中显示 XSD 视图的并行与架构树视图中，直到光标更改为标准的窗口垂直调整图标。  
   
 2. 单击并按住鼠标左键并向上或向下拖动窗口边缘。  
   

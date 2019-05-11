@@ -1,5 +1,5 @@
 ---
-title: 错误-根节点类名无效 |Microsoft 文档
+title: 错误-根节点类名无效 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2ff170609ef37b1d7f2b00a4d4ca3952b89eef9f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dca403fe7b99bf42f326485e6bd1788911d0dc32
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240965"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388478"
 ---
-# <a name="error---root-node-class-name-not-valid"></a>错误-根节点类名称无效
+# <a name="error---root-node-class-name-not-valid"></a>错误-根节点类名无效
 **错误代码**  
   
  BEC2012  
   
  **说明**  
   
- **RootNode TypeName**之一的此架构中的根节点的属性无效。 因为的值**RootNode TypeName**属性将用作自动生成的 C# 类名称的名称，它必须是有效的 C# 标识符，并且不能是保留的 BizTalk 关键字。  
+ **RootNode TypeName**之一的此架构中的根节点的属性无效。 因为的值**RootNode TypeName**属性使用的自动生成名称为C#类名必须是有效C#标识符且不能为保留的 BizTalk 关键字。  
   
  **用户执行任何操作**  
   
- 选择指定的根节点，然后在 Microsoft®[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口中，更改**RootNode TypeName**属性的值是有效的 C# 标识符而不是保留的 BizTalk 关键字。
+ 选择所指示的根节点，然后在 Microsoft®[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口中，更改**RootNode TypeName**属性是一个有效的值C#标识符并不是保留的 BizTalk 关键字。

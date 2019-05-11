@@ -1,5 +1,5 @@
 ---
-title: 大容量复制 Functoid 不是有效的输入错误-|Microsoft 文档
+title: 错误-输入不是有效的批量复制 Functoid |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 903954fabb99520ce5b4a8e20c0296165944053a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4ac2fab02dc9d28f7ba85a05261ec22754315872
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240525"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348098"
 ---
-# <a name="error---input-for-mass-copy-functoid-not-valid"></a>错误-输入不是有效的大容量复制 Functoid
+# <a name="error---input-for-mass-copy-functoid-not-valid"></a>错误-输入不是有效的批量复制 Functoid
 **错误代码**  
   
  btm1069  
   
  **说明**  
   
- 相关的输入的参数**大容量复制**functoid 无效或太多的输入的参数相关**大容量复制**functoid 已指定。 **大容量复制**functoid 必须具有恰好一个输入： 从链接**记录**源架构中的节点。  
+ 为相关的输入的参数**批量复制**functoid 不是有效或为相关的输入的参数过多**批量复制**functoid 指定。 **批量复制**functoid 只能有一个输入： 从链接**记录**源架构中的节点。  
   
  **用户执行任何操作**  
   
- 重新配置相关**大容量复制**functoid 以便它具有一个输入的参数从**记录**源架构中的节点。
+ 重新配置的相关**批量复制**functoid，以便它具有一个输入的参数从**记录**源架构中的节点。

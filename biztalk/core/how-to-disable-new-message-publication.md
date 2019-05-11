@@ -12,29 +12,29 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a2c46be41fa8dda72e849f756a487b89552621b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c850fc4ef38d4da6649082ddf157cc9c87b87fc6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974134"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385177"
 ---
 # <a name="disable-new-message-publication"></a>禁止发布新消息
 
 ## <a name="overview"></a>概述
-可以使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台或 Windows Management Instrumentation (WMI) 来禁止发布新消息。 在 MessageBox 数据库中禁止发布新消息将使 MessageBox 数据库停止接收新消息。 在某些 BizTalk Server 环境中，如果禁止主 MessageBox 数据库发布新消息，则可以提高性能。 禁止发布新消息并不会对 MessageBox 数据库中现有的消息或正在进行中的服务实例产生影响。  
+可以使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台或 Windows Management Instrumentation (WMI) 来禁止发布新消息。 禁用 MessageBox 数据库停止接收新消息在 MessageBox 数据库中的发布新消息。 在某些 BizTalk Server 环境中，如果禁止主 MessageBox 数据库的新消息发布可以提高性能。 禁止发布新消息不会影响正在进行中的 MessageBox 数据库或服务实例中的现有消息。  
   
  有关使用 WMI 禁止发布新消息的信息，请参阅**MSBTS_MsgBoxSetting.DisableNewMessagePublication 属性 (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
   
 > [!IMPORTANT]
->  在删除 MessageBox 数据库之前，必须禁用新消息发布功能。 有关删除 MessageBox 数据库的信息，请参阅[如何删除 MessageBox 数据库](../core/how-to-delete-a-messagebox-database.md)。  
+>  在删除 MessageBox 数据库之前，必须禁用新消息的发布。 有关删除 MessageBox 数据库的信息，请参阅[如何删除 MessageBox 数据库](../core/how-to-delete-a-messagebox-database.md)。  
   
-## <a name="prerequisites"></a>必要條件  
- 管理 MessageBox 数据库的管理员必须具有所需的用户权限。 必须具有以下用户权限才能管理 MessageBox 数据库并禁用新消息发布：  
+## <a name="prerequisites"></a>先决条件  
+ 管理 MessageBox 数据库管理员必须具有所需的用户权限。 必须具有以下的用户权限，才能管理 MessageBox 数据库并禁止发布新消息：  
   
--   必须以 BizTalk Server Administrators 组成员的身份登录。  
+-   您必须以 BizTalk Server Administrators 组的成员身份登录。  
   
--   必须是该数据库所在的计算机的 SQL Server 管理员。  
+-   您必须在数据库所在的计算机上的 SQL Server 管理员。  
   
 ## <a name="disable-steps"></a>禁用的步骤
   

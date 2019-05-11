@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 93e55595eaf2903ead7319b5f0269f803a3a83e5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a69740d9d5f5514ee3fadcb76a11fe760729ca1c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968734"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388292"
 ---
 # <a name="exclusion-condition-violated"></a>违反排除条件
 ## <a name="details"></a>详细信息  

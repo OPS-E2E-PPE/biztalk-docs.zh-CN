@@ -1,5 +1,5 @@
 ---
-title: MQSeries 适配器属性 |Microsoft 文档
+title: MQSeries 适配器属性 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -29,22 +29,22 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fae8cc1ed67f077b6ae12945da10c58cf0f147da
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e90fa1355f17581c55645a375dcb782452cb55e3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263565"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65323696"
 ---
 # <a name="mqseries-adapter-properties"></a>MQSeries 适配器属性
-若要在 BizTalk 业务流程中访问 MQSeries 标头属性，必须向项目添加对 MQSeries.dll 程序集的引用。 此程序集位于 MQSeries 适配器的安装位置，例如 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]。  
+若要从 BizTalk 业务流程中访问 MQSeries 标头属性，必须将对 MQSeries.dll 程序集的引用添加到你的项目中。 此程序集位于 MQSeries 适配器，例如，安装位置[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]。  
   
- 引用 MQSeries 属性架构后，其他上下文属性可供各种 BizTalk Server 开发工具 (例如，**消息分配**形状中业务流程设计器)。  
+ 在引用 MQSeries 属性架构之后，其他上下文属性可供各种 BizTalk Server 开发工具 (例如，**消息赋值**形状在业务流程设计器中的)。  
   
 > [!NOTE]
->  在使用 MQSeries 标头属性时，请确保按照 IBM WebSphere MQ 文档中的指南操作。  
+>  请确保按照 IBM WebSphere MQ 文档中的准则，在使用 MQSeries 标头属性时。  
   
- 适配器会自动升级一些 MQSeries 属性。 应用程序和自定义组件必须避免对这些属性进行降级。 您可以通过使用自定义管道组件来升级其他属性。 自动升级的属性如下所示：  
+ 适配器会自动升级一些 MQSeries 属性。 你的应用程序和自定义组件必须避免降级这些属性。 您可以通过使用自定义管道组件升级其他属性。 自动升级的属性如下所示：  
   
 -   **BizTalk_CorrelationID**  
   
@@ -70,11 +70,11 @@ ms.locfileid: "22263565"
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [数据类型转换的属性](../core/data-type-conversion-of-properties.md)  
+-   [属性的数据类型转换](../core/data-type-conversion-of-properties.md)  
   
 -   [与 BizTalk Server 相关的属性](../core/properties-related-to-biztalk-server.md)  
   
 -   [MQSeries 上下文属性](../core/mqseries-context-properties.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [配置 MQSeries 适配器](../core/configuring-the-mqseries-adapter.md)

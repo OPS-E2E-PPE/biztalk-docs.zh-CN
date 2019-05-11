@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b3a9201ee729288a819a3d527a6ecb4fefd32797
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 13b05869501283796d8c1c42f85e2551a4333927
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22255709"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383600"
 ---
 # <a name="how-to-use-a-database-as-a-data-source"></a>如何将数据库用作数据源
 您可以指定数据库作为数据源。 随后，您可从该数据库中选择表或表列，并将其拖至词汇定义或规则上以用作事实。  

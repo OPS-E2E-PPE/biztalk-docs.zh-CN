@@ -1,5 +1,5 @@
 ---
-title: 错误-用于脚本编写 Functoid 的外部程序集不能调用 |Microsoft 文档
+title: 错误-脚本 Functoid 的外部程序集不能调用 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,21 +14,21 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 37f6df36a955f2f40da35368fd72fd2d1fcbb7b8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1dcf4b387dd33900130e8aa5adff29b8de8d79ba
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240917"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348338"
 ---
-# <a name="error---external-assembly-for-scripting-functoid-cannot-be-invoked"></a>错误-用于脚本编写 Functoid 的外部程序集不能调用
+# <a name="error---external-assembly-for-scripting-functoid-cannot-be-invoked"></a>不能调用错误-脚本 Functoid 的外部程序集
 **错误代码**  
   
  btm1067  
   
  **说明**  
   
- 外部程序集方法与相关的**脚本**functoid 不能调用。 尽管不需要编译映射，但是测试映射操作仍要求此类外部程序集位于全局程序集缓存 (GAC) 中。 正常情况下，运行时操作也要求外部程序集位于 GAC 中。  
+ 与相关相关联的外部程序集方法**脚本**functoid 不能调用。 尽管不需要编译映射，测试映射操作需要此类外部程序集位于全局程序集缓存 (GAC)。 正常、 运行时操作还要求外部程序集必须位于 GAC 中。  
   
  **用户执行任何操作**  
   

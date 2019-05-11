@@ -15,48 +15,48 @@ caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f4002fa7c1b310f5b77806eb0f1b222c015cd989
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2e204d1e15ec7483bf2ae2f10db30ffd019651bf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023203"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65332836"
 ---
 # <a name="http-adapter-biztalk-server-sample"></a>HTTP 适配器 （BizTalk Server 示例）
 HTTP 适配器示例演示如何实现中使用的请求/响应和要求/响应范例[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
 
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径\>* \AdaptersDevelopment\HttpAdapter\  
+ *\<Samples Path\>* \AdaptersDevelopment\HttpAdapter\  
 
  下表显示了本示例中的文件及其用途说明：  
 
 |文件|Description|  
 |---------------|-----------------|  
-|\Design-Time\Adapter Management|包含实现此适配器的设计时部分的项目。|  
+|\Design-Time\Adapter 管理|包含实现此适配器的设计时部分的项目。|  
 |\Run-Time\HttpReceive|包含实现请求/响应适配器通信模式的项目。 这是一个独立的接收器。|  
 |\Run-Time\HttpSend|包含实现要求/响应适配器通信模式的项目。|  
 
-## <a name="how-to-use-this-sample"></a>如何使用本示例  
- 此示例旨在为您要在开发自定义适配器中使用的框架。 在某些情况下 BizTalk Server 可能需要消息传输到特定的自定义应用程序或为其使用的协议不存在的本机适配器。 第三方公司编写了支持其他协议的适配器。 您可能要在决定编写某一自定义适配器前确定是否存在可用于您的协议的适配器。 如果您无法找到支持您的通信要求的适配器，则可以开发自定义适配器。  
+## <a name="how-to-use-this-sample"></a>如何使用此示例  
+ 此示例旨在为您要在开发自定义适配器中使用的框架。 在某些情况下 BizTalk Server 可能需要消息传输到特定的自定义应用程序或为其使用的协议不存在的本机适配器。 第三方公司编写了适配器，以支持其他协议。 您可能想要确定是否有您的协议的适配器在决定编写自定义适配器之前。 如果您找不到适配器以支持您的通信要求，可以开发自定义适配器。  
 
- 编写自定义适配器可能颇具挑战性。 为了简化此过程，Microsoft 开发了称作适配器框架的基础框架。 您可以将此框架以及 BizTalk Server SDK 中的示例适配器源代码为基础进行开发。  有关自定义适配器和适配器框架的详细信息，请参阅**另请参阅**本文档末尾部分。  
+ 编写自定义适配器很有挑战性的工作。 若要简化此过程，Microsoft 已开发了称作适配器框架的基础。 可以将此框架为基础进行开发以及 BizTalk Server SDK 中的示例适配器源代码。  有关自定义适配器和适配器框架的详细信息，请参阅**另请参阅**本文档末尾部分。  
 
 ## <a name="building-and-initializing-the-sample-adapter"></a>生成并初始化示例适配器  
 
 > [!IMPORTANT]
->  如果是在 64 位计算机上安装 BizTalk 或安装位置已修改，则需要相应修改 OutboundAssemblyPath、InboundAssemblyPath、AdapterMgmtAssemblyPath。  
+>  如果 BizTalk 安装的是 64 位或修改安装位置，OutboundAssemblyPath、 InboundAssemblyPath、 AdapterMgmtAssemblyPath 需要相应地更改。  
 
-#### <a name="to-build-and-initialize-the-http-adapter-sample"></a>生成和初始化 HTTP 适配器示例  
+#### <a name="to-build-and-initialize-the-http-adapter-sample"></a>若要生成并初始化 HTTP 适配器示例  
 
-1. 在命令窗口中，导航到下面的文件夹：  
+1. 在命令窗口中，导航到以下文件夹：  
 
-    \<*示例路径*\>\AdaptersDevelopment\HttpAdapter  
+    \<*Samples Path*\>\AdaptersDevelopment\HttpAdapter  
 
-2. 运行 Setup.bat 文件，该文件将执行以下操作：  
+2. 运行文件 Setup.bat，以执行以下操作：  
 
-   -   编译 HTTPAdapter 及其所有依存关系。  
+   -   编译 HTTPAdapter 及其所有依赖项。  
 
-   -   创建由适配器的接收方使用的 Internet 信息服务 (IIS) 应用程序。  
+   -   创建适配器的接收方端使用的 Internet 信息服务 (IIS) 应用程序。  
 
    在 IIS 7.0 中，必须确保运行此 IIS 应用程序的应用程序池标识是以下组的成员：  
 
@@ -70,27 +70,27 @@ HTTP 适配器示例演示如何实现中使用的请求/响应和要求/响应�
     %systemroot%\system32\inetsrv\APPCMD.EXE migrate config "Default Web Site/HttpReceive"  
     ```  
 
--   在迁移应用程序后，它既可以在经典模式下也可以在集成 .NET 模式下运行，还可以在下级平台上运行。  
+-   迁移你的应用程序后，它将运行在经典和集成.NET 模式下，以及在下级平台上。  
 
 > [!NOTE]
 >  在尝试运行本示例前，你应确认在生成和初始化过程中未报告任何错误。  
 
 > [!NOTE]
->  如果选择在不运行 Setup.bat 文件的情况下打开并生成本示例中的项目，则必须先使用 .NET Framework 强名称实用工具 (sn.exe) 创建一个强名称密钥对。 使用该密钥对可以对生成的程序集签名。  
+>  如果你选择打开并生成此示例中的项目，而无需运行 Setup.bat 文件，必须首先创建强名称密钥对使用.NET Framework 强名称实用工具 (sn.exe)。 使用此密钥对生成程序集进行签名。  
 
 > [!NOTE]
->  若要撤销 Setup.bat 所做的更改，请运行 Cleanup.bat。 必须运行 Setup.bat 前运行 Cleanup.bat 时间。  
+>  若要撤消 Setup.bat 所做的更改，请运行 Cleanup.bat。 必须运行 Setup.bat 前运行 Cleanup.bat 时间。  
 
 ## <a name="registering-the-sample-adapter"></a>注册示例适配器  
 
-#### <a name="to-register-the-http-adapter-sample"></a>注册 HTTP 适配器示例  
+#### <a name="to-register-the-http-adapter-sample"></a>若要注册 HTTP 适配器示例  
 
 1. 在 Windows 资源管理器，导航到安装驱动器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，然后导航到\<示例路径\>\AdaptersDevelopment\HTTPAdapter。  
 
 2. 若要将示例适配器添加到注册表中，双击**HTTP.NET.reg**。  
 
    > [!NOTE]
-   >  HTTP.NET.reg 包含指向 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 安装目录的硬编码路径。 如果您未在默认位置安装 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 或者如果您从以前版本的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 升级了 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 安装，则必须使用相应的路径修改文件 HTTP.NET.reg。 更新与“OutboundAssemblyPath”和“AdapterMgmtAssemblyPath”值相关联的路径，使其指向指定文件的正确位置。  
+   >  HTTP.NET.reg 包含硬编码路径[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装目录。 如果未安装[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]中的默认位置或者升级你[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]从以前版本的安装[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，则必须修改文件 HTTP.NET.reg 使用相应的路径。 更新相关联的"揙 OutboundAssemblyPath"和"AdapterMgmtAssemblyPath"值，使其指向正确的位置的指定文件的路径。  
    > 
    > [!IMPORTANT]
    >  如果在 64 位计算机上安装 BizTalk，将 HKEY_CLASSES_ROOT\CLSID\ 注册表项的所有实例都更改为 hkey_classes_root\wow6432node\clsid \ 中**HTTP.NET.reg**注册表文件。  
@@ -101,7 +101,7 @@ HTTP 适配器示例演示如何实现中使用的请求/响应和要求/响应�
 
 ## <a name="installing-the-sample-adapter"></a>安装示例适配器  
 
-#### <a name="to-install-the-http-adapter-sample"></a>安装 HTTP 适配器示例  
+#### <a name="to-install-the-http-adapter-sample"></a>若要安装 HTTP 适配器示例  
 
 1. 单击**启动**菜单中，选择**所有程序**，选择[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后选择**BizTalk Server 管理**。  
 
@@ -121,11 +121,11 @@ HTTP 适配器示例演示如何实现中使用的请求/响应和要求/响应�
 
 5. 单击“确定” 。  
 
-6. 现在该适配器显示在 BizTalk 管理控制台右侧窗口中的适配器列表中。  
+6. 此时，适配器将显示在 BizTalk 管理控制台右侧窗口中的适配器列表中。  
 
 ## <a name="stopping-and-restarting-the-host-instance"></a>停止并重新启动主机实例  
 
-#### <a name="to-stop-and-restart-the-host-instance-for-the-http-adapter-sample"></a>停止并重新启动 HTTP 适配器示例的主机实例  
+#### <a name="to-stop-and-restart-the-host-instance-for-the-http-adapter-sample"></a>若要停止并重新启动 HTTP 适配器示例的主机实例  
 
 1. 单击**启动**菜单中，选择**所有程序**，选择[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后选择[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]。  
 
@@ -137,10 +137,10 @@ HTTP 适配器示例演示如何实现中使用的请求/响应和要求/响应�
 
 4. 在结果窗格中，右键单击该主机实例，然后依次**启动**。  
 
-   现在，HTTP.NET 适配器已经准备就绪，可供您的应用程序使用了。 配置适配器的格式时**虚拟目录**传输属性的形式： /httpreceive/httpreceive.aspx?optionalQueryString。  
+   现在，HTTP.NET 适配器已准备好应用程序使用。 配置适配器的格式时**虚拟目录**传输属性的形式： /httpreceive/httpreceive.aspx?optionalQueryString。  
 
 ## <a name="comments"></a>注释  
- 建立的 HTTP.NET 适配器中提供的 BaseAdapter 类用法*\<示例路径\>* \AdaptersDevelopment\BaseAdapter\v1.0...2\\。 BaseAdapter 项目中提供的类可以加快适配器的开发速度。 请参考 BaseAdapter 代码注释了解所提供的类的详细信息。  
+ 建立的 HTTP.NET 适配器中提供的 BaseAdapter 类用法*\<示例路径\>* \AdaptersDevelopment\BaseAdapter\v1.0...2\\。 BaseAdapter 项目中提供的类旨在加快适配器的开发速度。 请参考有关提供的类的详细信息的 BaseAdapter 代码注释。  
 
 ## <a name="see-also"></a>请参阅  
  [注册适配器](../core/registering-an-adapter.md)   

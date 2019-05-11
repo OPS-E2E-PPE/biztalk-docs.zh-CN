@@ -18,19 +18,19 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f6b29d8c9c770893fd78769b86266ce33e31a336
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 19e7b30570fe4d561a704d6760846e01b3f5f7f9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22211125"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282322"
 ---
 # <a name="rnif-standard"></a>RNIF 标准
 RosettaNet 实现框架 (RNIF) 标准定义系统传输 RosettaNet 消息的方式。 RNIF 标准是一个强大的传输、路由、打包和安全标准。 所有 RosettaNet 消息传送系统都必须符合 RNIF 标准，才能获得 RosettaNet 证书。  
   
  此标准定义了消息结构、确认需求、多用途 Internet 邮件扩展 (MIME) 编码以及数字签名。 核心标准包括身份验证、授权、加密以及不可否认性的要求。 RNIF 标准基于 HTTP、MIME 以及 XML 标准。 RNIF 标准不指定平台，也不指定所支持的应用程序。  
   
- [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]实现两个版本的 RNIF: RNIF 规范 v02.00.01 和 RNIF 规范 1.1 版。 RNIF 2.01 添加超出支持的 RNIF 1.1，包括加密、 附件和同步事务的重要功能。 RNIF 2.0 并不向后兼容 RNIF 1.1。  
+ [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 实现了两个版本的 RNIF:RNIF 规范 v02.00.01 和 RNIF 规范 v1.1。 RNIF 2.01 添加超出支持的 RNIF 1.1，包括加密、 附件和同步事务的重要功能。 RNIF 2.0 并不向后兼容 RNIF 1.1。  
   
 ## <a name="messaging-framework-patterns"></a>消息传递框架模式  
  下表给出了消息传送框架模式和同步消息交换的 RNIF 支持。 单操作消息不涉及响应，而双操作消息则包括请求和响应。  

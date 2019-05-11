@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 22752c413446c0964b8af11b76a2e262fdc40a2d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8591440cf129ea8bf0dbd9bdb4a423d77be8026c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997726"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401316"
 ---
 # <a name="automating-the-build-process"></a>自动执行生成过程
 自动的构建过程编译、 部署并按常规、 预先确定的时间间隔对项目的最新源代码然后运行生成验证测试 (Bvt)。 然后"生成报告，"详细信息是成功还是失败的生成过程，这被至项目利益关系人。 在生成报告分析以确定项目的方面需要注意，如果该项目应将其回滚到以前的版本/生成。  
@@ -53,7 +53,7 @@ ms.locfileid: "36997726"
  每日生成过程的准备，并已被使用非常有效地对 BizTalk 解决方案。 但是，您需要确保从一开始会以迭代方式完成通常保留为在项目中的任务。 例如，在 BizTalk Server 中的部署是当然不常用。 请务必提前开发自动的部署脚本。 如果不这样做，您就会手动部署和取消部署很多时候整个项目中，成本更多时间最终解决方案。 有一些工具可用来驱动每日生成过程;Visual Studio Team System 和 Team Foundation Server 是许多人的主选择。 MSBuild 脚本可能用于生成过程中驱动器的步骤。 另一种方法是开放源代码[CruiseControl.NET 工具](http://go.microsoft.com/fwlink/?LinkId=116093)(http://go.microsoft.com/fwlink/?LinkId=116093)。  
   
 > [!NOTE]  
->  使用此工具不受 Microsoft，因此 Microsoft 不保证此程序的适用性。 使用此程序风险自负。  
+>  使用此工具不受 Microsoft，因此 Microsoft 不保证此程序的适用性。 使用此程序是完全由您自己承担。  
   
  有关自动执行测试使用 Microsoft 测试管理器的详细信息，请参阅主题[运行自动测试](http://go.microsoft.com/fwlink/?LinkID=208368)(http://go.microsoft.com/fwlink/?LinkID=208368) Visual Studio 2010 联机文档中  
   
@@ -77,7 +77,7 @@ ms.locfileid: "36997726"
   
  很重要的功能测试的设计目的在于通过解决方案的所有可能路径。 这应包括这些方案不只希望在生产中，但还故障路径和异常处理路径中用过但永远不会希望使用 – 通常用于描述这一短语正在测试的"他们失意的时候方案"。 您应确保所有业务流程、 所有允许的消息类型和所有代码分支都执行的功能测试套件。 以下部分介绍开发正值和负值功能测试用例以涵盖所有代码路径。  
   
- 有关 BizTalk Server 解决方案投入生产之前, 应实现的其他测试的类别和功能测试详细信息，请参阅主题[清单： 测试操作准备情况](http://go.microsoft.com/fwlink/?LinkId=160138)中在 BizTalk Server 2010 操作指南[ http://go.microsoft.com/fwlink/?LinkId=160138 ](http://go.microsoft.com/fwlink/?LinkId=160138)。  
+ 有关 BizTalk Server 解决方案投入生产之前, 应实现的其他测试的类别和功能测试详细信息，请参阅本主题[核对清单：测试操作准备情况](http://go.microsoft.com/fwlink/?LinkId=160138)在 BizTalk Server 2010 操作指南，网址[ http://go.microsoft.com/fwlink/?LinkId=160138 ](http://go.microsoft.com/fwlink/?LinkId=160138)。  
   
 ### <a name="positive-tests"></a>正向测试  
   

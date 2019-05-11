@@ -1,5 +1,5 @@
 ---
-title: GetUserData |Microsoft 文档
+title: GetUserData | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 57bc0ffcefc00e9fae20c7b2c8449c21c549b377
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8348e510d168725bf61ab05075162f15768915d6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246381"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65344901"
 ---
 # <a name="getuserdata"></a>GetUserData
-推送到堆栈的当前用户数据。  
+将推送到堆栈上的当前用户数据。  
   
 ## <a name="syntax"></a>语法  
   
@@ -33,13 +33,13 @@ ms.locfileid: "22246381"
  无。  
   
 ## <a name="pushed-value"></a>推送的值  
- 包含当前的用户数据的字符串。  
+ 包含当前用户数据的字符串。  
   
-## <a name="remarks"></a>注释  
+## <a name="remarks"></a>备注  
  此操作无效，不能在筛选器。  
   
 ## <a name="example"></a>示例  
- 以下示例包含使用 `GetUserData` 运算的针对数据项“UserData”的更新表达式。  
+ 下面的示例包含数据的项"UserData"使用的更新表达式`GetUserData`操作。  
   
 ```  
 <ic:Update DataItemName="UserData" Type="NVARCHAR">  

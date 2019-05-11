@@ -1,5 +1,5 @@
 ---
-title: 平面文件消息正文 |Microsoft 文档
+title: 平面文件消息正文 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2de8748d9a36c817f7db8fed96a59c8d2bd7dda2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0ef973fca636f4e75f05e26638a841e9e51d39b3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246781"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387952"
 ---
 # <a name="flat-file-message-bodies"></a>平面文件消息正文
-平面文件实例消息正文，是必需的是平面文件反汇编程序处理到一个或多个 XML 实例消息。 要知道哪些数据需要入站平面文件实例消息正文中，你必须配置与对应于正文的平面文件架构的平面文件反汇编程序。 你可以通过使用指定的架构**文档架构**的平面文件反汇编程序的设计时属性或**XMLNORM。DocumentSpecName**消息上下文属性。 由于平面文件实例消息必须有正文部分，你必须配置相应的架构使用这两种方法之一。  
+平面文件实例消息正文，是必需的是平面文件拆装器处理成一个或多个 XML 实例消息。 若要了解哪些数据需要入站平面文件实例消息正文中，必须使用对应于正文的平面文件架构配置平面文件拆装器。 可以通过使用指定的架构**文档架构**平面文件拆装器的设计时属性或**XMLNORM。DocumentSpecName**消息上下文属性。 因为平面文件实例消息必须有一个正文部分，则必须配置相应的架构使用这两种方法之一。  
   
- 对于出站的平面文件实例消息，平面文件汇编器可以动态确定实例消息的正文的相应的平面文件架构。 平面文件汇编器确定消息类型，这是根元素，这两种必须存在于出站消息的 XML 版本的名称和目标命名空间的组合中的相应架构。 或者，你可以显式配置平面文件架构，用于通过配置**文档架构**的平面文件汇编器的设计时属性或**XMLNORM。DocumentSpecName**消息上下文属性。  
+ 对于出站平面文件实例消息，平面文件组装器可以动态地确定适当的平面文件架构的实例消息的正文。 平面文件组装器确定消息类型，这是根元素，这两种必须位于出站消息的 XML 版本的名称和目标命名空间的组合中的相应架构。 或者，您可以显式配置要使用通过配置的平面文件架构**文档架构**平面文件组装器的设计时属性或**XMLNORM。DocumentSpecName**消息上下文属性。  
   
- 在入站平面文件实例消息正文中找到的数据可以复制到相应的消息上下文中，通过在平面文件架构的平面文件反汇编程序用于处理入站的实例消息中指定属性提升。 同样，还可以在平面文件架构的平面文件汇编正在使用其来处理该出站消息中指定属性降级回出站的平面文件实例消息复制消息上下文中的数据。  
+ 可在平面文件拆装器会用其来处理入站的实例消息的平面文件架构中指定属性升级在入站平面文件实例消息正文中找到的数据复制到相应的消息上下文中。 同样，可以通过在平面文件组装器会用其来处理出站消息的平面文件架构中指定的属性降级回出站平面文件实例消息复制消息上下文中的数据。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [平面文件消息标头](../core/flat-file-message-headers.md)   
- [平面文件消息拖车安排](../core/flat-file-message-trailers.md)   
+ [平面文件消息尾部](../core/flat-file-message-trailers.md)   
  [平面文件消息的结构](../core/structure-of-a-flat-file-message.md)   
- [如何创建平面文件消息架构](../core/how-to-create-schemas-for-flat-file-messages.md)
+ [如何为平面文件消息创建架构](../core/how-to-create-schemas-for-flat-file-messages.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 04e0f30d93514fded12d20a06d9fa27fbcd632bd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9a23c12726915a4f84f8c33ff4a984e5e9aae4fe
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980710"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399759"
 ---
 # <a name="the-itinerary-on-ramp-web-services"></a>路线接入点 Web 服务
 路线 Web 服务是路线接入点公开的方法，允许客户端将消息提交以处理由路线服务，然后迁移到目标 Microsoft BizTalk 或 ESB 操作。  

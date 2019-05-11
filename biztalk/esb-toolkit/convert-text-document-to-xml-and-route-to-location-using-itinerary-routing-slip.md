@@ -1,5 +1,5 @@
 ---
-title: 如何： 将文本文档转换为 XML 并使用路线传送名单的文件位置的路由 |Microsoft Docs
+title: 如何：将文本文档转换为 XML 并使用路线传送名单的文件位置的路由 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27e6690af0cd326853fc0f96254aaaf7083ccd15
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9258493ebd15e12bcb10d4a4dba51a14fdb51c0c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982566"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65302056"
 ---
-# <a name="how-to-convert-a-text-document-to-xml-and-route-to-a-file-location-using-an-itinerary-routing-slip"></a>如何： 将文本文档转换为 XML 并路由到使用路线传送名单的文件位置
+# <a name="how-to-convert-a-text-document-to-xml-and-route-to-a-file-location-using-an-itinerary-routing-slip"></a>如何：将文本文档转换为 XML 并路由到使用路线传送名单的文件位置
 ## <a name="goal"></a>目的  
  部分演示如何创建一个管道，用于将转换为 XML 文本文档然后选择相应的路线并将消息路由到某个文件位置。  
   
@@ -33,7 +33,7 @@ ms.locfileid: "36982566"
   
 -   测试基于路线的路由的平面文件消息。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  本操作指南主题中的过程要求在完成[开发活动的先决条件](../esb-toolkit/prerequisites-for-the-development-activities.md)。  
   
 ## <a name="before-you-begin"></a>开始之前  
@@ -47,7 +47,7 @@ ms.locfileid: "36982566"
   
 #### <a name="to-deploy-the-dataformattransformation-itinerary"></a>若要部署 DataFormatTransformation 路线  
   
-1.  在 Visual Studio 中，打开 C:\Projects\Microsoft.Practices.ESB\Source\Samples\DataFormatTransformation\DataFormatTransformation.sln。  
+1.  In Visual Studio, open C:\Projects\Microsoft.Practices.ESB\Source\Samples\DataFormatTransformation\DataFormatTransformation.sln.  
   
 2.  在解决方案资源管理器中**Itinerary.Library**项目中，双击**DataFormatTransformation.itinerary**在路线设计器中打开它。  
   
@@ -167,9 +167,9 @@ ms.locfileid: "36982566"
 ## <a name="additional-resources"></a>其他资源  
  有关详细信息，请参阅下列相关主题：  
   
--   [如何：转换消息并使用路线传送名单将生成的消息路由至文件位置](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
+-   [如何：转换消息并将生成的消息路由到使用路线传送名单的文件位置](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
   
--   [如何：使用路线传送名单将单条消息路由至多个收件人](../esb-toolkit/route-a-single-message-to-multiple-recipients-using-an-itinerary-routing-slip.md)  
+-   [如何：将一条消息路由到多个收件人使用路线传送名单](../esb-toolkit/route-a-single-message-to-multiple-recipients-using-an-itinerary-routing-slip.md)  
   
 -   [开发活动](../esb-toolkit/development-activities.md)  
   

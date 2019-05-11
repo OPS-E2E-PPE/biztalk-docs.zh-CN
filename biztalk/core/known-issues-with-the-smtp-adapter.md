@@ -1,5 +1,5 @@
 ---
-title: 已知问题的 SMTP 适配器 |Microsoft 文档
+title: 使用 SMTP 适配器的已知问题 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,27 +12,27 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8691da466c2915cee4b8746e20a0d5a96d82d81
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f4184d159b75d7a83c32d5d76135bf7cb2215158
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22261845"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380799"
 ---
-# <a name="known-issues-with-the-smtp-adapter"></a>SMTP 适配器已知问题
-本部分包含可帮助你避免出现错误的信息。  
+# <a name="known-issues-with-the-smtp-adapter"></a>SMTP 适配器的已知的问题
+本部分包含可能帮助您避免错误的信息。  
   
 ## <a name="known-issues"></a>已知问题  
   
-#### <a name="error-in-the-biztalk-server-application-log-if-emailbodytextcharset-is-not-defined"></a>未定义 EmailBodyTextCharset 时 BizTalk Server 应用程序日志中的错误  
+#### <a name="error-in-the-biztalk-server-application-log-if-emailbodytextcharset-is-not-defined"></a>如果未定义 EmailBodyTextCharset 时 BizTalk Server 应用程序日志中的错误  
   
 ##### <a name="problem"></a>问题  
- 如果未定义 EmailBodyTextCharset 并且在 BizTalk Server 应用程序日志中生成如下错误，则在 BizTalk Server 应用程序日志中将生成错误。  
+ 如果未定义 EmailBodyTextCharset 并且在 BizTalk Server 应用程序日志中生成类似如下的错误在 BizTalk Server 应用程序日志中生成错误：  
   
 ```  
 Event Type:Error  
-Event Source:BizTalk Server 2009  
-Event Category:BizTalk Server 2009   
+Event Source:BizTalk Server 2009  
+Event Category:BizTalk Server 2009   
 Event ID:5754  
 Date:9/1/2006  
 Time:10:50:11 AM  
@@ -46,10 +46,10 @@ InstanceID: {0616E750-22FF-4380-B413-C94718421340}
 ```  
   
 ##### <a name="cause"></a>原因  
- 必须为设置一个值**EmailBodyTextCharset**参数。  
+ 必须将值设置为**EmailBodyTextCharset**参数。  
   
 ##### <a name="resolution"></a>解决方法  
  为指定值**EmailBodyTextCharset**参数。  
   
-## <a name="see-also"></a>另请参阅  
- [故障排除 SMTP 适配器](../core/troubleshooting-the-smtp-adapter.md)
+## <a name="see-also"></a>请参阅  
+ [SMTP 适配器故障排除](../core/troubleshooting-the-smtp-adapter.md)

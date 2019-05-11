@@ -1,5 +1,5 @@
 ---
-title: MQSeries 适配器体系结构 |Microsoft 文档
+title: MQSeries 适配器体系结构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf1d6dd42e47457cf4af83eb7b4669e872db2914
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3d92d1b549586276e285b2ed7d11f7f995ca8476
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263325"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65264551"
 ---
 # <a name="mqseries-adapter-architecture"></a>MQSeries 适配器体系结构
-本部分介绍的组成部分 MQSeries 适配器以及它们进行交互时所在的方式。 它还简要介绍 MQSeries 队列中的某些元素。  
+本部分介绍的部分 MQSeries 适配器以及它们交互的方式。 它还简要介绍了 MQSeries 队列的某些元素。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -31,4 +31,4 @@ ms.locfileid: "22263325"
   
 -   [MQSeries 队列](../core/mqseries-queues.md)  
   
--   [对队列管理的支持](../core/support-for-queue-management.md)
+-   [队列管理支持](../core/support-for-queue-management.md)

@@ -1,5 +1,5 @@
 ---
-title: 模式的业务流程管理解决方案的目录 |Microsoft 文档
+title: 模式的业务流程管理解决方案的目录 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -32,75 +32,75 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 22b352cce73e45103437407a013691e604b7b959
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ed13b415b0bb026f9c948cafbd48c1fa3e73a3cc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22266413"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291899"
 ---
 # <a name="pattern-catalog-for-the-business-process-management-solution"></a>业务流程管理解决方案的模式目录
-业务流程管理解决方案中的模式包括 BizTalk Server 编程的通用模式和前面部分中的企业集成模式。 本部分中的列表包括这两种类型的模式。  
+在业务流程管理解决方案中的模式包括 BizTalk Server，以及在前面部分中的企业集成模式编程通用的模式。 本部分中的列表包括这两种类型的模式。  
   
 ## <a name="pattern-types"></a>模式类型  
- 以下条目对模式进行了简要说明，并指向说明该解决方案如何使用此模式的其他主题。 在使用常规模式（例如筛选器）的情况下，条目将指向更多常规主题。  
+ 以下条目简要介绍一下这个模式，并指向说明该解决方案如何使用此模式的其他主题。 在常规模式，例如筛选器的情况下条目指向更多常规主题。  
   
 ### <a name="application-reference-patterns"></a>应用程序引用模式  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使应用程序使用同一组中的其他应用程序中的项目，通过添加对其他应用程序的引用。 业务流程管理解决方案在设计测试解决方案时和在主解决方案中使用应用程序引用。 有关在解决方案中的应用程序引用的详细信息，请参阅[业务流程管理解决方案中的某些设计原则](../core/some-design-principles-in-the-business-process-management-solution.md)。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使应用程序能够通过添加对其他应用程序的引用在同一组中的另一个应用程序中使用的项目。 业务流程管理解决方案的测试解决方案时和在主解决方案设计中使用应用程序的引用。 在解决方案中的应用程序引用的详细信息，请参阅[业务流程管理解决方案中的某些设计原则](../core/some-design-principles-in-the-business-process-management-solution.md)。  
   
 ### <a name="asynchronous-reply-patterns"></a>异步答复模式  
- 订单管理器与订单处理阶段之间的通信是异步进行的。 也就是说，在接收到答复之前，管理器会一直执行处理操作。 这些阶段使用自相关动态端口向管理器发送答复。 使用自相关端口可使订单管理器无需管理相关集。 端口的动态功能允许订单管理器向订单阶段发送端口地址，以便进行答复。 在解决方案中的端口的详细信息，请参阅[顺序流通过进程管理器](../core/order-flow-through-the-process-manager.md)。  
+ 订单管理器与订单处理阶段之间的通信是异步的。 也就是说，该管理器将继续处理直到接收答复。 阶段使用自相关动态端口发送到管理器的答复。 自相关端口无需为订单管理器来管理相关集。 该端口的动态功能允许订单管理器将向订单阶段发送答复的端口地址。 在解决方案中的端口的详细信息，请参阅[订单流通过进程管理器](../core/order-flow-through-the-process-manager.md)。  
   
 ### <a name="canonical-message-patterns"></a>规范化消息模式  
- 为了简化处理过程，解决方案通常会将外部消息翻译为内部格式。 此格式是一个规范化消息的示例。 OrderBroker 业务流程可将所有订单消息翻译为一种或多种规范化订单消息。 OrderManager 业务流程和处理阶段将使用此通用订单格式。 有关详细信息，请参阅[OrderBroker 业务流程中的处理](../core/processing-in-the-orderbroker-orchestration.md)。  
+ 若要简化处理解决方案通常将为内部格式转换外部的消息。 此格式是一个规范化消息的示例。 Orderbroker 业务流程将所有订单消息都转换成一个或多个规范化订单消息。 订单管理器业务流程和处理阶段使用此通用订单格式。 有关详细信息，请参阅[在 OrderBroker 业务流程中处理](../core/processing-in-the-orderbroker-orchestration.md)。  
   
 ### <a name="code-retry-and-exception-handling-patterns"></a>代码重试和异常处理模式  
- 该解决方案可集中管理其中的异常处理大部分**ExceptionHandler**业务流程。 当存在可通过重试来解决操作失败的情况时（例如网络连接中断），该解决方案将使用此业务流程。 业务流程使用**Recaller**对象重新运行失败的代码。 有关业务流程的详细信息，请参阅[业务流程管理解决方案中的异常处理](../core/exception-handling-in-the-business-process-management-solution.md)。 另请参阅[ExceptionHandler Orchestration](../core/the-exceptionhandler-orchestration.md)。 有关详细信息的使用**Recaller**对象，请参阅[Recaller Object](../core/the-recaller-object.md)。  
+ 该解决方案可集中管理其异常处理中的大部分**ExceptionHandler**业务流程。 该解决方案使用整个此业务流程有机会时，与已删除的网络连接，如果重试该操作可能成功的一样。 该业务流程使用**Recaller**对象重新运行失败的代码。 有关业务流程的详细信息，请参阅[业务流程管理解决方案中的异常处理](../core/exception-handling-in-the-business-process-management-solution.md)。 另请参阅[ExceptionHandler 业务流程](../core/the-exceptionhandler-orchestration.md)。 有关使用的详细信息**Recaller**对象，请参阅[Recaller 对象](../core/the-recaller-object.md)。  
   
 ### <a name="convoy-pattern"></a>保护模式  
- OrderManager 业务流程使用保护模式来捕获和处理对正在处理的订单所做的后续更改。 有关在订单管理器中的保护模式的详细信息，请参阅"顺序更新"中[顺序流通过进程管理器](../core/order-flow-through-the-process-manager.md)。  
+ 订单管理器业务流程 OrderManager，使用保护模式来捕获和处理对正在处理的订单的后续更改。 有关订单管理器中的保护模式的详细信息，请参阅"订单更新"中[订单流通过进程管理器](../core/order-flow-through-the-process-manager.md)。  
   
-### <a name="coordination-using-delivery-notification"></a>使用送达通知进行协调  
- **OrderBroker**业务流程使用传递通知，以确保之前通过第二个订单处理阶段更新历史记录历史记录数据库中生成一个条目 (**CableOrder2**)。 有关详细信息，请参阅"协调与阶段"中[顺序流通过进程管理器](../core/order-flow-through-the-process-manager.md)。 有关传递通知的常规信息，请参阅[使用确认](../core/using-acknowledgments.md)。  
+### <a name="coordination-using-delivery-notification"></a>协调使用送达通知  
+ **OrderBroker**业务流程使用送达通知来确保之前第二个订单处理阶段更新历史记录历史记录数据库中生成一个条目 (**CableOrder2**)。 详细信息，请参阅"协调阶段"中[订单流通过进程管理器](../core/order-flow-through-the-process-manager.md)。 有关送达通知的常规信息，请参阅[使用确认](../core/using-acknowledgments.md)。  
   
 ### <a name="custom-exceptions-pattern"></a>自定义异常模式  
- 对于无法重试的异常，该解决方案将组合使用通用 BizTalk Server 异常处理和自定义异常处理。 自定义异常处理提供了更具体的异常处理功能。 它也用作嵌套作用域之间的标志，以确保回滚所有操作部分。 有关解决方案的使用自定义例外的详细信息，请参阅[自定义异常](../core/custom-exceptions.md)。 有关作用域的详细信息，请参阅[如何配置作用域形状](../core/how-to-configure-the-scope-shape.md)。  
+ 对于无法重试的异常，该解决方案使用常用的 BizTalk Server 异常处理和自定义异常处理。 自定义异常处理提供了更具体的异常处理。 它还用作嵌套作用域，以确保所有操作部分都回滚之间的标志。 有关该解决方案使用自定义异常的详细信息，请参阅[自定义异常](../core/custom-exceptions.md)。 有关作用域的详细信息，请参阅[如何配置作用域形状](../core/how-to-configure-the-scope-shape.md)。  
   
 ### <a name="decoupled-orchestration-patterns"></a>分离业务流程模式  
- 业务流程管理解决方案的设计会最大限度地尽可能分离业务流程。 通过分离业务流程，可以更方便地对业务流程各个部分的版本进行控制，从而简化将业务流程各个部分移动到其他服务器或组的操作。 有关顺序 broker 和订单管理器之间的关系的详细信息，请参阅[OrderBroker 业务流程中的处理](../core/processing-in-the-orderbroker-orchestration.md)和[顺序流通过进程管理器](../core/order-flow-through-the-process-manager.md)。  
+ 在业务流程管理解决方案的设计分离到可能的最大限度的业务流程。 分离业务流程，使其更易于解决方案的版本部分并简化部分移动到其他服务器或组解决方案。 有关 orderbroker 和 ordermanager 之间的关系的详细信息，请参阅[在 OrderBroker 业务流程中处理](../core/processing-in-the-orderbroker-orchestration.md)并[订单流通过进程管理器](../core/order-flow-through-the-process-manager.md)。  
   
 ### <a name="error-routing-pattern"></a>错误路由模式  
- 该解决方案使用新的 BizTalk Server 错误报告功能。 此功能会将失败的消息路由至订阅端口，以便进行报告或处理。 有关错误报告的常规信息，请参阅[使用失败消息路由](../core/using-failed-message-routing.md)。  
+ 该解决方案使用新的 BizTalk Server 错误报告功能。 此功能失败消息路由给订阅端口，以便进行报告或处理。 有关错误报告的常规信息，请参阅[使用失败消息路由](../core/using-failed-message-routing.md)。  
   
 ### <a name="filter-pattern"></a>筛选器模式  
- 筛选模式可以选择符合特定处理条件的消息。 在 BizTalk 中，筛选模式几乎总是以端口的筛选器表达式的形式来实现。 有关端口上的筛选器的详细信息，请参阅[使用筛选器与接收消息 Shape](../core/using-filters-with-the-receive-message-shape.md)。  
+ 筛选器模式可以选择符合特定处理条件的消息。 在 BizTalk 中，筛选模式几乎总是会变为一个端口上的某个筛选器表达式。 有关端口的筛选器的详细信息，请参阅[使用筛选器与接收消息形状](../core/using-filters-with-the-receive-message-shape.md)。  
   
 ### <a name="interruptible-orchestration-pattern"></a>可中断业务流程模式  
- 在处理订单更新或取消之前，该解决方案将首先中断当前的订单。 该解决方案中的业务流程使用 Interrupt 业务流程来处理中断。 有关详细信息，请参阅[中断业务流程管理解决方案中的处理](../core/interrupt-handling-in-the-business-process-management-solution.md)。  
+ 该解决方案首先中断当前订单处理订单更新或取消。 在解决方案中的业务流程使用 Interrupt 业务流程来处理中断。 有关详细信息，请参阅[业务流程管理解决方案中的中断处理](../core/interrupt-handling-in-the-business-process-management-solution.md)。  
   
 ### <a name="inverse-direct-partner-binding-pattern"></a>反转直接合作伙伴绑定模式  
- 该解决方案可反转对直接绑定的使用，以将订单处理阶段与订单管理器分离开。 有关反直接绑定的详细信息，请参阅[逆直接合作伙伴绑定](../core/inverse-direct-partner-binding.md)。  
+ 该解决方案可反转直接绑定使分离订单处理的订单管理器中的各个阶段使用。 有关反转直接绑定的详细信息，请参阅[反转直接合作伙伴绑定](../core/inverse-direct-partner-binding.md)。  
   
-### <a name="message-broker-pattern"></a>消息代理模式  
- Message Broker 模式允许由解决方案确定消息的目标，而发件人无需了解目标。 业务流程管理解决方案实现使用消息代理**OrderBroker**业务流程。 **OrderBroker** orchestration 获得订单时，确定所订购的服务的类型并将顺序路由到正确的顺序管理器。 有关消息中协调**OrderBroker**，请参阅[OrderBroker 业务流程中的处理](../core/processing-in-the-orderbroker-orchestration.md)。  
+### <a name="message-broker-pattern"></a>Message Broker 模式  
+ Message broker 模式允许由解决方案确定消息的目标，以便发送方不需要知道目标。 业务流程管理解决方案来实现的 message broker **OrderBroker**业务流程。 **OrderBroker**业务流程获取订单，确定所订购的服务的类型并将订单路由到正确的顺序管理器。 有关详细信息中执行 message broker **OrderBroker**，请参阅[在 OrderBroker 业务流程中处理](../core/processing-in-the-orderbroker-orchestration.md)。  
   
 ### <a name="nested-scopes-pattern"></a>嵌套作用域模式  
- **OrderBroker**业务流程使用嵌套的作用域以尽量减少持久性点，因此，若要提高效率。 有关详细信息，请参阅"提高性能与嵌套作用域"中[OrderBroker 业务流程中的处理](../core/processing-in-the-orderbroker-orchestration.md)。  
+ **OrderBroker**业务流程使用嵌套作用域来最大程度减少持久化点，因此，为了提高效率。 详细信息，请参阅"使用嵌套作用域提高性能"中[在 OrderBroker 业务流程中处理](../core/processing-in-the-orderbroker-orchestration.md)。  
   
-### <a name="per-instance-pipeline-configuration"></a>每个实例管道配置  
- 尽管该解决方案使用默认的管道，但它还是广泛使用新的基于实例的管道配置来为消息指定信封。 有关详细信息，请参阅[如何部署管道](../core/how-to-deploy-pipelines.md)和[的业务流程管理解决方案的组件](../core/components-of-the-business-process-management-solution.md)。  
+### <a name="per-instance-pipeline-configuration"></a>每个实例的管道配置  
+ 尽管该解决方案使用默认管道，它可以广泛使用新的每个实例管道配置来指定信封的消息。 有关详细信息，请参阅[如何部署管道](../core/how-to-deploy-pipelines.md)并[业务流程管理解决方案的组件](../core/components-of-the-business-process-management-solution.md)。  
   
-### <a name="process-manager-pattern"></a>流程管理器模式  
- 该解决方案使用相对通用的订单管理器来控制通过各个订单处理阶段的流程。 这有助于将业务逻辑与订单流程管理分离开。 有关如何 OrderManager 业务流程充当一个进程管理器的详细信息，请参阅[过程管理器逻辑](../core/process-manager-logic.md)。  
+### <a name="process-manager-pattern"></a>进程管理器模式  
+ 该解决方案使用相对通用的订单管理器来控制通过各个订单处理阶段流。 这有助于将业务逻辑与订单流程的管理分开。 有关 OrderManager 业务流程如何用作流程管理器的详细信息，请参阅[进程管理器逻辑](../core/process-manager-logic.md)。  
   
-### <a name="terminate-shape-at-end-of-orchestration"></a>业务流程末尾的终止形状  
- 尽管业务流程通常是在业务流程末尾结束，但某些业务流程仍会在出现错误时使用终止形状来结束。 使用终止形状可以跟踪失败的实例和错误。 有关详细信息，请参阅[自定义异常](../core/custom-exceptions.md)。  
+### <a name="terminate-shape-at-end-of-orchestration"></a>终止业务流程末尾的形状  
+ 多个业务流程使用终止形状来结束发生错误时，即使该业务流程将具有通常在该点结束。 终止形状可以跟踪失败的实例和错误。 有关详细信息，请参阅[自定义异常](../core/custom-exceptions.md)。  
   
 ### <a name="translator-pattern"></a>转换器模式  
- 转换器的企业模式-即，转换消息从一个窗体另一种形式-通常将转换为 BizTalk 映射。 有关 BizTalk 映射的常规信息，请参阅[创建映射使用 BizTalk 映射程序](../core/creating-maps-using-biztalk-mapper.md)。  
+ 转换器的企业模式 — 即的一条消息从一个格式转换为另一种形式 — 经常翻译为 BizTalk 映射。 有关 BizTalk 映射的常规信息，请参阅[创建映射使用 BizTalk 映射器](../core/creating-maps-using-biztalk-mapper.md)。  
   
 ### <a name="versioning-patterns"></a>版本控制模式  
- 业务流程管理解决方案是为简化解决方案组件的版本控制而设计的，它通过分离业务流程和在架构命名空间中使用版本编号来实现此目的。 有关详细信息，请参阅[版本控制业务流程管理解决方案](../core/versioning-the-business-process-management-solution.md)。  
+ 业务流程管理解决方案旨在简化解决方案组件通过分离业务流程和使用版本编号架构命名空间中的版本控制。 有关详细信息，请参阅[业务流程管理解决方案进行版本控制](../core/versioning-the-business-process-management-solution.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [业务流程管理解决方案中的模式](../core/patterns-in-the-business-process-management-solution.md)

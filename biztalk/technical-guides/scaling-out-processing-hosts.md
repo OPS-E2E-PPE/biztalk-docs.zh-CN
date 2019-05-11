@@ -1,5 +1,5 @@
 ---
-title: 向外扩展处理主机 |Microsoft 文档
+title: 横向扩展处理主机 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 493ac2318d734c4b6ef5686db1b1f1e9ee3cca3f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b3eb1afcc99658d500cf5ca306748bdfe4262d8f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302069"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65305467"
 ---
-# <a name="scaling-out-processing-hosts"></a>向外扩展处理主机
-有关向外扩展处理主机的信息，请参阅[Scaled-Out 处理主机](http://go.microsoft.com/fwlink/?LinkId=151285)(http://go.microsoft.com/fwlink/?LinkId=151285)。  
+# <a name="scaling-out-processing-hosts"></a>横向扩展处理主机
+有关横向扩展处理主机的信息，请参阅[Scaled-Out 处理主机](http://go.microsoft.com/fwlink/?LinkId=151285)(http://go.microsoft.com/fwlink/?LinkId=151285)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [向外扩展接收主机](../technical-guides/scaling-out-receiving-hosts.md)   
- [群集接收主机](../technical-guides/clustering-receiving-hosts.md)   
- [向外扩展发送主机](../technical-guides/scaling-out-sending-hosts.md)
+ [接收主机](../technical-guides/clustering-receiving-hosts.md)   
+ [横向扩展发送主机](../technical-guides/scaling-out-sending-hosts.md)

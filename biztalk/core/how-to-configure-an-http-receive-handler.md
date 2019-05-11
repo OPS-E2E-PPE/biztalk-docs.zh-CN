@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7b58dcb66e4a001d7d163f5d8de53fb89502c6ef
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c0aec49f0334a62e559c0812a7b44029c25b4c95
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983382"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65386443"
 ---
 # <a name="how-to-configure-an-http-receive-handler"></a>如何配置 HTTP 接收处理程序
 使用以下过程可配置的属性的 HTTP 接收处理程序。  
@@ -38,7 +38,7 @@ ms.locfileid: "36983382"
 >  HTTP 接收适配器运行在 BizTalk 独立主机实例的上下文中。  
 > 
 > [!CAUTION]
->  使用 HTTP 或 SOAP 适配器处理程序时，建议在 Microsoft [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] 或 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] 计算机上安装这些处理程序的主机实例。  
+>  在使用 HTTP 或 SOAP 适配器处理程序，建议在 Microsoft 上安装这些处理程序的主机实例[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]或[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]计算机。  
   
 ### <a name="to-configure-the-general-properties-for-an-http-receive-handler"></a>若要配置的常规属性用于 HTTP 接收处理程序  
   
@@ -54,11 +54,11 @@ ms.locfileid: "36983382"
   
 6. 单击“确定” 。  
   
-   BizTalk Server 旨在有效地处理消息批并不非常快速地处理一条消息。 因此如果此接收处理程序准备用于双向/请求响应接收位置，则可以通过以下这些步骤将延迟时间缩为最短：  
+   BizTalk Server 旨在有效地处理消息批并不非常快速地处理一条消息。 如果此接收处理程序将使用两个方法/请求-响应接收位置，则可以尽量减少延迟，通过执行以下步骤：  
   
 - 设置**批大小**属性的值为 1。  
   
-- 减少**MaxReceiveInterval**值小于 100 的值从默认值 500**独立消息传送、 XLANG/s，** 并**进程内消息**服务类。  更改**adm_ServiceClass** BizTalk 管理数据库，其中包含每个服务类型的一条记录的表。  更改此设置，因为这是服务类型范围更改时要格外小心。 此设置指定最大的轮询间隔时间（以毫秒为单位），[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 消息传送代理会为消息轮询 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Messagebox 数据库。  阻止控制器还会将其用来决定消息阻止是否在某些加载条件下需要。 如果需要，根据系统的繁忙情况，阻止控制器会以递增方式延迟消息调度时间间隔。 在较高吞吐量系统中，将不会使用此设置。  但是，如果使用此值，时间间隔将在 MaxReceiveInteral/10 和 MaxReceiveInterval 间发生动态更改。  
+- 减少**MaxReceiveInterval**值小于 100 的值从默认值 500**独立消息传送、 XLANG/s，** 并**进程内消息**服务类。  更改**adm_ServiceClass** BizTalk 管理数据库，其中包含每个服务类型的一条记录的表。  更改此设置，因为这是服务类型范围更改时要格外小心。 此设置指定的最大轮询间隔 （以毫秒为单位） 从该处[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]消息传递代理轮询[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]消息的 Messagebox 数据库。  它还用于阻止控制器决定是否在特定负载条件下需要消息阻止功能。 如果需要阻止控制器将以递增方式延迟消息调度时间间隔在系统上的繁忙情况。 在高吞吐量系统中，将不使用此设置。  使用此值，但是，时间间隔将动态更改 maxreceiveinteral/10 和 MaxReceiveInterval 之间。  
   
   > [!NOTE]
   >  更改此设置会影响使用创建的所有主机**主机类型**的**独立**。  

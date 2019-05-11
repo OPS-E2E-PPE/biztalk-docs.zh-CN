@@ -16,15 +16,15 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8775ea82843641600c9156d79afab49e6cd7c634
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 96aa2e1f7625776f63564455f536697e4cdbdfbc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003102"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65339839"
 ---
 # <a name="how-to-create-an-affiliate-application"></a>如何创建关联应用程序
-您可以使用 MMC 管理单元或此命令根据 XML 文件指定的内容创建一个或多个应用程序。 以下为 Windows 启动的 SSO 的 XML 文件示例：  
+可以使用 MMC 管理单元或此命令创建一个或多个应用程序，根据 XML 文件指定的。 用于 Windows 启动的 SSO 的示例 XML 文件是：  
   
 ```  
 <sso>  
@@ -41,25 +41,25 @@ ms.locfileid: "37003102"
   
 ```  
   
- 创建关联应用程序后，将无法修改以下属性：  
+ 创建关联应用程序后，无法修改以下属性：  
   
 -   关联应用程序的名称  
   
 -   与关联应用程序关联的字段  
   
--   关联应用程序类型（主机组、单项或配置存储）  
+-   关联应用程序类型 （主机组、 单项或配置存储区）  
   
--   与 Affiliate Administrators 组相同的管理帐户。 （如果指定此标志，则将始终使用 Affiliate Administrators 组作为此关联应用程序的管理员帐户）  
-  
-> [!IMPORTANT]
->  通过将 allowLocalAccounts 标志设置为“是”，可以为管理帐户和用户帐户使用本地帐户。 不过，只能在单计算机环境中使用此标志。  
+-   相同与 affiliate administrators 组的管理帐户。 （指定此标志将始终使用 affiliate administrators 组的管理员帐户作为此关联应用程序）  
   
 > [!IMPORTANT]
->  只有 SSO 管理员或 SSO 关联管理员才能执行此任务。  
+>  可以通过此 allowLocalAccounts 标志设置为是使用管理帐户的本地帐户和用户帐户。 但是，仅应在单计算机方案中使用此标志。  
   
- 只有在创建关联应用程序后才能启用该应用程序。 有关详细信息，请参阅[如何启用关联应用程序](../core/how-to-enable-an-affiliate-application.md)。  
+> [!IMPORTANT]
+>  您必须是 SSO 管理员或 SSO 关联管理员才能执行此任务。  
   
-### <a name="to-create-an-affiliate-application-using-the-mmc-snap-in"></a>使用 MMC 管理单元创建关联应用程序  
+ 创建关联应用程序后，必须启用它。 有关详细信息，请参阅[如何启用关联应用程序](../core/how-to-enable-an-affiliate-application.md)。  
+  
+### <a name="to-create-an-affiliate-application-using-the-mmc-snap-in"></a>若要创建关联应用程序使用 Mmc 管理单元  
   
 1.  上**启动**菜单上，单击**程序**，单击**Microsoft 企业单一登录**，然后单击**SSO 管理**。  
   
@@ -69,11 +69,11 @@ ms.locfileid: "37003102"
   
 4.  按照中的说明**企业单一登录应用程序向导**。  
   
-### <a name="to-create-an-affiliate-application-using-the-command-line"></a>使用命令行创建关联应用程序  
+### <a name="to-create-an-affiliate-application-using-the-command-line"></a>若要创建关联应用程序使用命令行  
   
 1. 上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2. 在命令行上，转至企业单一登录安装目录。 默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。  
+2. 在命令行中，转至企业单一登录安装目录。 默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。  
   
 3. 类型 * * ssomanage – createapps *\<应用程序的文件名\>**<em>，其中 *\<应用程序文件的名称\></em>是 XML 文件。  
   

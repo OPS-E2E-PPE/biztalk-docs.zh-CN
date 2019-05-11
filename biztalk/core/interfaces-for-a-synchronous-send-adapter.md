@@ -12,15 +12,15 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1602d19bc5b97231a25f5449f5837fce153c037d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 26c2398840eb44fcaf8dd42259704d860d7466ea
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008838"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65331595"
 ---
-# <a name="interfaces-for-a-synchronous-send-adapter"></a>同步发送适配器的接口
-执行发送操作时，如果阻止了传入消息引擎调用线程，则适配器将会同步发送消息。 为了能够同步发送消息，适配器需要实现以下接口：  
+# <a name="interfaces-for-a-synchronous-send-adapter"></a>发送适配器的同步接口
+阻止传入消息引擎在执行发送操作时调用线程时，适配器将消息以同步方式发送。 若要能够同步发送消息，适配器必须实现以下接口：  
   
 - **IBTTransport**  
   
@@ -34,10 +34,10 @@ ms.locfileid: "37008838"
   
   在同步发送中，适配器将消息发送时阻塞**TransmitMessage**，和传输成功返回后 `True.`  
   
-  下图显示了创建同步发送适配器所涉及的对象交互。  
+  下图显示了对象交互涉及创建同步发送适配器。  
   
   ![](../core/media/ebiz-sdk-devadapter4.gif "ebiz_sdk_devadapter4")  
-  同步发送消息的工作流  
+  以同步方式发送一条消息的工作流  
   
 ## <a name="see-also"></a>请参阅  
  [适配器变量](../core/adapter-variables.md)   

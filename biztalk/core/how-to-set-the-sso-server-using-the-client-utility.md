@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f212bb5e6601274a473c6f9854d5e23af9715cd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fa7b17a713e030c55faf03712a5e3651c7c6280a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008862"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383865"
 ---
 # <a name="how-to-set-the-sso-server-using-the-client-utility"></a>如何设置 SSO 服务器使用客户端实用工具
 每次使用 ssoclient，您必须首先将用户指引到正确实现单一登录的服务器包含它们的配置信息。  
@@ -30,7 +30,7 @@ ms.locfileid: "37008862"
   
 1. 上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2. 在命令行上，转至企业单一登录安装目录。 默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。  
+2. 在命令行中，转至企业单一登录安装目录。 默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。  
   
 3. 类型<strong>ssoclient – 服务器*\<单一登录服务器\></strong><em>，其中\<</em>单一登录服务器\>* 是要连接到单一登录服务器用户的名称。  
   

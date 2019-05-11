@@ -1,5 +1,5 @@
 ---
-title: 一个适配器处理程序是什么？ | Microsoft Docs
+title: 适配器处理程序是什么？ | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,21 +16,21 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c8a1b60661427776dd4e35ffce27bf120bf94a7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 09ef44c037b175497dfb6c1fb30ea9dd9fb0a43d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289301"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379691"
 ---
-# <a name="what-is-an-adapter-handler"></a>一个适配器处理程序是什么？
-适配器处理程序是适配器代码所运行的 BizTalk 主机的实例。 为适配器指定发送或接收处理程序，亦是指定适配器代码将在哪个主机实例的上下文环境中运行。 适配器处理程序负责执行适配器操作并包含特定适配器实例的属性。 默认的 BizTalk Server 配置将为所有安装的适配器创建适配器处理程序，但您可能希望创建其他适配器处理程序以实现负载平衡，或为特定的适配器处理程序提供进程隔离。  
+# <a name="what-is-an-adapter-handler"></a>适配器处理程序是什么？
+适配器处理程序是适配器代码运行所在的 BizTalk 主机实例。 指定发送或接收适配器处理程序时您所指定的上下文中运行的适配器代码将在哪个主机实例。 适配器处理程序负责执行适配器并包含有关适配器的特定实例的属性。 默认的 BizTalk Server 配置将创建适配器处理程序的所有已安装的适配器，但您可能希望创建其他适配器处理程序以实现负载平衡，或提供特定的适配器处理程序的进程隔离。  
   
- 适配器处理程序绑定到 BizTalk 主机实例，而 BizTalk 主机实例又绑定到 BizTalk 服务器。 因此，若要在 Biztalk 服务器之间实现适配器处理的负载平衡，则必须向 BizTalk 组中添加其他 BizTalk 服务器。 如果要创建其他适配器处理程序以实现进程隔离，则无需向 BizTalk 组中添加其他 BizTalk 服务器。  
+ 适配器处理程序绑定到的 BizTalk 主机实例，和 BizTalk 主机实例又绑定到 BizTalk server。 因此，必须将其他 BizTalk 服务器添加到 BizTalk 组，如果你想要加载平衡适配器在 BizTalk 服务器处理。 不需要向 BizTalk 组中添加其他 BizTalk 服务器，如果要创建其他适配器处理程序以实现进程隔离。  
   
- 如果需要创建新的主机实例以便在其中运行适配器处理程序，则必须首先创建主机，然后创建该主机的实例以运行 BizTalk 服务器之一。 有关详细信息，请参阅[如何创建新的主机](../core/how-to-create-a-new-host.md)和[如何添加一个主机实例](../core/how-to-add-a-host-instance.md)。  
+ 如果需要创建新的主机实例运行适配器处理程序中的，您必须首先创建主机，然后创建一个 BizTalk 服务器上运行该主机的实例。 有关详细信息，请参阅[如何创建新的主机](../core/how-to-create-a-new-host.md)并[如何将主机实例添加](../core/how-to-add-a-host-instance.md)。  
   
- 必须将所有的适配器处理程序（除 HTTP 和 SOAP 适配器接收处理程序外）配置为在进程内主机中运行。 HTTP 和 SOAP 适配器接收处理程序只能运行于独立主机中。  
+ 所有适配器处理程序，除了为 HTTP 和 SOAP 适配器接收处理程序必须都配置为在进程内主机中运行。 HTTP 和 SOAP 适配器接收处理程序只能在独立主机中运行。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建和删除适配器处理程序](../core/creating-and-deleting-adapter-handlers.md)

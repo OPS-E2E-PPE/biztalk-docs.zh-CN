@@ -1,5 +1,5 @@
 ---
-title: 步骤 5： 创建用于接收 HIS 消息接收端口 |Microsoft Docs
+title: 步骤 5：创建接收端口用于接收 HIS 消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,14 +14,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dba867ef4b02be3ecc2102754e4d06105a56d03c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ec438b05e7e1e684f66d8f25d3d5692260a9fa5c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002406"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65287992"
 ---
-# <a name="step-5-create-the-receive-port-for-accepting-his-messages"></a>步骤 5： 创建用于接收 HIS 消息接收端口
+# <a name="step-5-create-the-receive-port-for-accepting-his-messages"></a>步骤 5：创建用于接收 HIS 消息接收端口
 在此步骤中创建接收端口，以指定发送的医院信息系统 (HIS) 的传入消息的位置。 使用以下过程来创建用于接收查询响应消息从 ADT 系统使用最少的较低层协议 (MLLP) 适配器的接收端口。  
 
 ## <a name="create-the-hisreceiveport-receive-port"></a>创建 HIS_ReceivePort 接收端口  
@@ -60,7 +60,7 @@ ms.locfileid: "37002406"
 
 10. 设置**接收管道**到**BTAHL72XPipelines.BTAHL72XReceivePipeline**。  
 
-11. 单击“确定”保存更改。  
+11. 选择**确定**以保存所做的更改。  
 
 12. 启用通过右键单击它，刚刚创建的接收位置，然后选择**启用**。  
 

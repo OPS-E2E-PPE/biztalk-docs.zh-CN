@@ -1,5 +1,5 @@
 ---
-title: 路由和处理路线基于 |Microsoft 文档
+title: 基于路线的路由和处理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7600408837ed2ef40e11bc179bf0739fb15c5a61
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 6593a9ff2a90f9b906352ecad1bec70e4f601994
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26006742"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65261541"
 ---
 # <a name="itinerary-based-routing-and-processing"></a>基于路线的路由和处理
-[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]实现通过自定义管道组件使用的路由滑动模式。 消息元数据和其他因素用于确定适当的路由滑动也称为路线，要用于每个消息。 此路由滑动即可执行消息转换、 调用业务流程服务，并定义条消息，路由 BizTalk Server 将执行的步骤，有效地分离核心 BizTalk Server 引擎中的消息处理指令。  
+[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]实现路由的名单模式通过自定义管道组件使用。 消息元数据和其他因素用于确定相应的传送名单，也称为路线，以便使用为每个消息。 此传送名单可以执行消息转换、 调用业务流程服务，并定义消息路由 BizTalk Server 将执行的步骤、 有效地分离核心 BizTalk Server 引擎中的消息处理指令。  
   
- 有关如何处理路线的详细信息，请参阅[主要方案和开发任务](../esb-toolkit/key-scenarios-and-development-tasks.md)。
+ 路线的处理方式的详细信息，请参阅[主要方案和开发任务](../esb-toolkit/key-scenarios-and-development-tasks.md)。

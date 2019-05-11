@@ -12,12 +12,12 @@ caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2605a7acd9610b0b5417e8c5d7c875f67f22f30c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fc1901b4c0bae53b88c3657da88e7f998af45114
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006710"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65278995"
 ---
 # <a name="general-biztalk-server-optimizations"></a>一般 BizTalk Server 优化
 以下建议可用于提高 BizTalk Server 性能。 本主题中列出的优化后安装并配置 BizTalk Server 应用。  
@@ -84,7 +84,7 @@ ms.locfileid: "37006710"
 > [!NOTE]  
 >  请勿增加到被调用的 Web 服务器过重的 HTTP 连接的这种较大的值将 maxconnection 参数的值。 更改后将 maxconnection 参数的值，请执行压力测试将请求发送到每个目标 Web 服务器，以确定将提供良好的性能和 HTTP 的 maxconnection 的值将发送但不使目标 Web服务器。  
   
- 以下为最大连接数属性的配置示例：  
+ 下面是最大连接数属性配置的一个示例：  
   
 ```  
 <configuration>  
@@ -99,8 +99,8 @@ ms.locfileid: "37006710"
   
  设置 maxconnection 属性时，可以指定 HTTP、 HTTPS、 web 站点 IP 地址和端口号。 其他示例包括：  
   
- **\<添加地址 ="<https://www.contoso.com>"maxconnection ="24"/\>**   
-**\<添加地址 ="<http://www.contoso.com:8080>"maxconnection ="24"/\>**   
+ **\<add address="<https://www.contoso.com>" maxconnection="24" /\>**   
+**\<add address="<http://www.contoso.com:8080>" maxconnection="24" /\>**   
 **\<添加地址 ="http://*IPAddress*"maxconnection ="24"/\>** 有关优化 IIS 和 ASP.NET Web 服务设置的详细信息，请参阅可能会影响 HTTP 适配器的"ASP.NET 设置性能"部分[配置参数的影响适配器性能](http://go.microsoft.com/fwlink/?LinkID=154200)(<http://go.microsoft.com/fwlink/?LinkID=154200>) 在 BizTalk Server 2010 帮助中。  
   
 ## <a name="manage-aspnet-thread-usage-or-concurrently-executing-requests-for-web-applications-that-can-host--isolated-received-locations-back-end-web-services-and-wcf-services"></a>管理 ASP.NET 线程使用情况或并发执行的可承载的 Web 应用程序请求隔离的接收的位置、 后端 Web 服务和 WCF 服务  
@@ -138,7 +138,7 @@ ms.locfileid: "37006710"
   
 ```  
 <!-- <processModel autoConfig="true" /> -->  
-    <processModel maxWorkerThreads="200" maxIoThreads="200" />  
+    <processModel maxWorkerThreads="200" maxIoThreads="200" />  
 ```  
   
 > [!NOTE]  
@@ -235,9 +235,9 @@ ms.locfileid: "37006710"
 >  此值将覆盖为指定的值**maxconcurrentrequestspercpu 配置**注册表中。 **RequestQueueLimit**设置为 processModel/requestQueueLimit 相同，只不过 aspnet.config 文件中的设置将覆盖在 machine.config 文件中的设置。  
   
 ## <a name="define-clr-hosting-thread-values-for-biztalk-host-instances"></a>定义的 CLR 承载 BizTalk 主机实例的线程值  
- 因为 Windows 线程是 Windows 进程可用的最基本的可执行单元，因此，有必要为与 BizTalk 主机实例相关联的 .NET 线程池分配足够的线程以防止线程不足。 线程不足时，是不足够的线程用于执行请求的作业的性能有负面影响。 在同一时间，应格外小心以防止分配更多不必要的主机与相关联的.net 线程池线程。 为与主机相关联的 .NET 线程池分配过多的线程会增加上下文切换。 Windows 内核从运行一个线程为不同的线程，这会导致性能开销切换时，会发生上下文切换。 过多的线程分配可能会导致过多的上下文切换，这将产生负面影响整体性能。 默认分配给 BizTalk 主机实例的.NET 线程池的线程数取决于安装的.NET Framework 版本。 .NET Framework 4 和.NET Framework 3.5 SP1 大大增加默认值，这可能导致过多的线程分配上的 BizTalk Server 计算机和 MessageBox 数据库上的过多的锁争用。  
+ 因为 Windows 线程是最基本的可执行单元可用于 Windows 进程，务必分配足够的线程以防止线程不足的 BizTalk 主机实例相关联的.NET 线程池。 线程不足时，是不足够的线程用于执行请求的作业的性能有负面影响。 在同一时间，应格外小心以防止分配更多不必要的主机与相关联的.net 线程池线程。 与主机相关联的.NET 线程池线程过多的分配可能会增加上下文切换。 Windows 内核从运行一个线程为不同的线程，这会导致性能开销切换时，会发生上下文切换。 过多的线程分配可能会导致过多的上下文切换，这将产生负面影响整体性能。 默认分配给 BizTalk 主机实例的.NET 线程池的线程数取决于安装的.NET Framework 版本。 .NET Framework 4 和.NET Framework 3.5 SP1 大大增加默认值，这可能导致过多的线程分配上的 BizTalk Server 计算机和 MessageBox 数据库上的过多的锁争用。  
   
- 使用**BizTalk 设置仪表板**，可以修改默认值为 Windows 可用的线程数的.net 线程池与 BizTalk 主机实例相关联。 有关如何修改.NET CLR 设置的详细信息，请参阅[如何修改.NET CLR 设置](http://go.microsoft.com/fwlink/?LinkID=205344)(http://go.microsoft.com/fwlink/?LinkID=205344)。 .NET CLR 设置因 CPU 核心而异。  
+ 使用**BizTalk 设置仪表板**，可以修改默认值为 Windows 可用的线程数的.net 线程池与 BizTalk 主机实例相关联。 有关如何修改.NET CLR 设置的详细信息，请参阅[如何修改.NET CLR 设置](http://go.microsoft.com/fwlink/?LinkID=205344)(http://go.microsoft.com/fwlink/?LinkID=205344)。 .NET CLR 设置因每个核 CPU。  
   
 > [!NOTE]  
 >  **工作线程**用于处理排队的工作项并**I/O 线程**是与 I/O 完成端口来处理已完成的异步 I/O 请求相关联的回调线程。  
@@ -245,7 +245,7 @@ ms.locfileid: "37006710"
 |线程设置|默认值|推荐值|  
 |------------------------|-------------------|-----------------------|  
 |最大 IO 线程数|250|250|  
-|最大工作线程数|25|100**重要说明：** 该值增加到 100 可以拥有对承载 BizTalk Server MessageBox 数据库的 SQL Server 计算机的性能产生负面影响。 当发生此问题时，SQL Server 可能会遇到死锁情况。 我们建议不增加 100 的值超出此参数。|  
+|最大工作线程数|25|100**重要：** 该值增加到 100 可以对承载 BizTalk Server MessageBox 数据库的 SQL Server 计算机的性能产生负面影响。 发生此问题时，SQL Server 可能会遇到死锁情况。 我们建议不增加 100 的值超出此参数。|  
 |最小 IO 线程数|25|25|  
 |最小工作线程数|5|25|  
   

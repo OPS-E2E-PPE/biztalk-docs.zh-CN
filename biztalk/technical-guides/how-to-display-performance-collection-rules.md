@@ -1,5 +1,5 @@
 ---
-title: 如何显示性能收集规则 |Microsoft 文档
+title: 如何显示性能收集规则 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cd7b7d1d2e368572740a3c7a54799bc56b2330e3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9ddb8f0482864945a6dd89cc953523d0fb6642cb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22298181"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253375"
 ---
 # <a name="how-to-display-performance-collection-rules"></a>如何显示性能收集规则
-若要显示性能收集规则，使用此部分中的脚本。 此脚本适用于大多数规则。 它创建一个.csv 文件，包括下表中列出的列，并可以使用 Office Excel 查看。  
+若要显示性能收集规则，请在本部分中使用脚本。 此脚本适用于大多数的规则。 它创建包含下表中列出的列的.csv 文件，可以使用 Office Excel 查看。  
   
-|列|Description|  
+|“列”|Description|  
 |------------|-----------------|  
-|WriteToDB 或 CollectionPerformanceData|写入 Operations Manager 数据库。|  
+|WriteToDB 或 CollectionPerformanceData|将写入到 Operations Manager 数据库。|  
 |WriteToDW 或 CollectPerfDataWarehouse|写入数据仓库。|  
 |WC|将性能计数器的基准数据存储到操作数据库。|  
   
 #### <a name="to-display-performance-collection-rules"></a>若要显示性能收集规则  
- 若要显示管理组中的性能收集规则，请运行以下脚本：  
+ 若要在管理组中显示的性能收集规则，请运行以下脚本：  
   
 ```  
 function GetPerfCounterName ([String] $configuration)   

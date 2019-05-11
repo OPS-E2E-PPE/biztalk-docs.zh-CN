@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server 将 EDI 消息的发送 |Microsoft 文档
+title: BizTalk Server 如何发送 EDI 消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4727a407c28ede98bba67774576d4d43329a946
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 24d55493c8ae467886dc8fa91404a414ac55a336
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246629"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387492"
 ---
-# <a name="how-biztalk-server-sends-edi-messages"></a>BizTalk Server 将 EDI 消息的发送
-在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 发送 EDI 消息时，它将执行协议查找和架构发现、验证消息、发送确认（如果适合）并对 EDI 批处理进行序列化。 此处理将由 EDI 发送管道中的 EDI 组装器执行。  
+# <a name="how-biztalk-server-sends-edi-messages"></a>BizTalk Server 如何发送 EDI 消息
+当[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]发送 EDI 消息时，它会执行协议查找和架构发现、 验证消息、 发送确认 （如果适用），但 EDI 批处理进行序列化。 此处理将由 EDI 发送管道中的 EDI 组装器执行。  
   
 ## <a name="in-this-section"></a>本节内容  
   
 -   [EDI 发送组件](../core/edi-send-components.md)  
   
--   [协议解析和传出的 EDI 消息的架构确定](../core/agreement-resolution-and-schema-determination-for-outgoing-edi-messages.md)  
+-   [传出 EDI 消息的协议解析和架构确定](../core/agreement-resolution-and-schema-determination-for-outgoing-edi-messages.md)  
   
--   [EDI 汇编器的工作原理](../core/how-the-edi-assembler-works.md)  
+-   [EDI 汇编程序的工作原理](../core/how-the-edi-assembler-works.md)  
   
--   [重写 EDI 标头](../core/overriding-edi-headers.md)  
+-   [替代 EDI 标头](../core/overriding-edi-headers.md)  
   
--   [传出 EDI 消息的验证](../core/validation-of-outgoing-edi-messages.md)  
+-   [验证传出的 EDI 消息](../core/validation-of-outgoing-edi-messages.md)  
   
--   [对传出的 EDI 消息进行批处理](../core/batching-outgoing-edi-messages.md)  
+-   [对传出 EDI 消息进行批处理](../core/batching-outgoing-edi-messages.md)  
   
 -   [处理收到的确认](../core/processing-a-received-acknowledgment.md)

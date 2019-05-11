@@ -1,5 +1,5 @@
 ---
-title: SMTP 适配器安全建议 |Microsoft 文档
+title: SMTP 适配器的安全建议 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,24 +16,24 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ca1aeed0ad8c80cc32d333aeef37d1da6feabfc2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d1b89406529c2a112d667888a67df02e9ab9a693
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276493"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65314406"
 ---
-# <a name="smtp-adapter-security-recommendations"></a>SMTP 适配器安全建议
-使用 SMTP 适配器可以在运行 BizTalk Server 的服务器与其他应用程序之间通过简单邮件传输协议 (SMTP) 协议进行信息交换。 BizTalk Server 可以通过创建电子邮件并将其发送到指定的电子邮件地址来向其他应用程序发送消息。 只能将 SMTP 适配器用于发送消息。 有关 SMTP 适配器的详细信息，请参阅[SMTP 适配器](../core/smtp-adapter.md)。  
+# <a name="smtp-adapter-security-recommendations"></a>SMTP 适配器的安全建议
+SMTP 适配器用于运行 BizTalk Server 和其他应用程序通过简单邮件传输协议 (SMTP) 协议的服务器之间交换信息。 BizTalk Server 可以通过创建一封电子邮件并将它传递到指定的电子邮件地址，对其他应用程序发送消息。 您可以使用 SMTP 适配器仅用于发送消息。 有关 SMTP 适配器的详细信息，请参阅[SMTP 适配器](../core/smtp-adapter.md)。  
   
- 在为运行 SMTP 适配器的主机实例配置服务帐户时，需要指定要对远程 SMTP 服务器使用的验证类型。 验证选项为：基本验证（明文）、NTLM（通过使用当前凭据）或无（如果 SMTP 服务器不要求验证）。  
+ 在配置为运行 SMTP 适配器的主机实例的服务帐户时，需要指定想要使用远程 SMTP 服务器的身份验证的类型。 如果 SMTP 服务器不要求身份验证，身份验证选项是基本身份验证 （明文）、 NTLM （通过使用当前凭据） 或 none。  
   
- 在使用 SMTP 适配器发送消息时，默认情况下，BizTalk Server 将以明文形式发送消息。 如果使用具有 S/MIME 编码器组件的管道，则可在将消息发送到 SMTP 服务器之前对该消息进行加密。 不过，SMTP 标头仍使用明文形式。  
+ 当使用 SMTP 适配器发送一条消息时，BizTalk Server 将消息以明文形式发送默认情况下。 如果使用具有 S/MIME 编码器组件的管道，可以加密消息前将其发送到 SMTP 服务器。 但是，SMTP 标头是仍以明文形式。  
   
- 若要对 BizTalk Server 发送的电子邮件进行审核，则您应使用 SMTP 适配器连接到您自己的 SMTP 服务器，然后在其中对这些消息进行审核。  
+ 如果你想要审核的 BizTalk Server 发送的电子邮件消息，您应使用 SMTP 适配器连接到您自己的 SMTP 服务器，然后可以审核消息。  
   
  SMTP 适配器不支持安全套接字层 (SSL)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [用于接收和发送服务器端口](../core/ports-for-the-receive-and-send-servers.md)   
  [最低安全用户权限](../core/minimum-security-user-rights.md)

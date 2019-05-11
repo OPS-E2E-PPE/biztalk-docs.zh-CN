@@ -1,5 +1,5 @@
 ---
-title: 如何维护词汇版本 |Microsoft 文档
+title: 如何维护词汇版本 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -20,45 +20,45 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1b3c67d79878c59e3b0dcba6dcd15955f34ad97c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7a3049a0e14ad24b31f172a1c49189f968b6dabd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254365"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384700"
 ---
 # <a name="how-to-maintain-vocabulary-versions"></a>如何维护词汇版本
-在向某个版本的词汇中添加了词汇定义之后，可以将该版本保存到规则存储中以用于以后的开发，也可以发布该版本以创建明确定义的不可变数据绑定术语集，用户在开发策略时，可以向规则中添加这些数据绑定术语。 请注意，现有规则将仍指向旧版本。  
+当词汇定义添加到版本的词汇后时，可以将该版本保存到规则存储中供进一步开发，也可以发布要创建可供用户若要添加的数据绑定术语的定义完善且不可变集的版本规则开发其策略。 请注意，现有的规则仍指向旧版本这一事实。  
   
  本主题包含以下任务的过程：  
   
 -   若要保存词汇版本  
   
--   要发布的词汇版本  
+-   若要发布的词汇版本  
   
--   若要创建词汇的更新的版本  
+-   若要创建某一词汇的更新的版本  
   
--   若要创建空的新版本的词汇  
+-   若要创建一个空的新版本的词汇  
   
 ### <a name="to-save-a-vocabulary-version"></a>若要保存词汇版本  
   
--   右键单击版本，并依次**保存**。  
+-   右键单击该版本，然后依次**保存**。  
   
-### <a name="to-publish-a-vocabulary-version"></a>要发布的词汇版本  
+### <a name="to-publish-a-vocabulary-version"></a>若要发布的词汇版本  
   
--   右键单击版本，并依次**发布**。  
+-   右键单击该版本，然后依次**发布**。  
   
-### <a name="to-create-an-updated-version-of-a-vocabulary"></a>若要创建词汇的更新的版本  
+### <a name="to-create-an-updated-version-of-a-vocabulary"></a>若要创建某一词汇的更新的版本  
   
-1.  右键单击现有版本，并依次**复制**。  
+1.  右键单击现有版本，然后依次**复制**。  
   
-2.  右键单击词汇文件夹中，并依次**粘贴**。  
+2.  右键单击词汇文件夹，然后依次**粘贴**。  
   
-     使用与复制的版本相同的元素，创建新的版本。  
+     创建一个新版本，具有与复制的版本相同的元素。  
   
-### <a name="to-create-an-empty-new-version-of-a-vocabulary"></a>若要创建空的新版本的词汇  
+### <a name="to-create-an-empty-new-version-of-a-vocabulary"></a>若要创建一个空的新版本的词汇  
   
--   右键单击词汇文件夹中，并依次**添加新版本**。  
+-   右键单击词汇文件夹，然后依次**添加新版本**。  
   
     > [!NOTE]
-    >  只能使用已发布的词汇中的词汇定义。
+    >  您只能使用已发布的词汇中的词汇定义。

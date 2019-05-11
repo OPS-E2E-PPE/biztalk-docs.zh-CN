@@ -24,20 +24,20 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 10f6923df37b5cce3a500ed6e02014f09d1c2c0f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6203a0ad7cdcafc570e692d1a5345c86b23cdf91
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994926"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383748"
 ---
 # <a name="how-to-suspend-orchestration-instances-or-ports"></a>如何挂起业务流程实例或端口
-可以从 BizTalk Server 管理控制台中的查询结果列表中挂起业务流程实例或端口。  
+在 BizTalk Server 管理控制台中，您可以挂起业务流程实例或从查询结果列表的端口。  
   
-## <a name="prerequisites"></a>必要條件  
- 必须以 BizTalk Server Operators 组成员的身份登录，才能执行此过程。  
+## <a name="prerequisites"></a>先决条件  
+ 您必须为要执行此过程的 BizTalk Server Operators 组的成员身份登录。  
   
-### <a name="to-suspend-orchestration-instances-or-ports"></a>挂起业务流程实例或端口  
+### <a name="to-suspend-orchestration-instances-or-ports"></a>若要挂起的业务流程实例或端口  
   
 1. 单击**启动**，单击**程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   

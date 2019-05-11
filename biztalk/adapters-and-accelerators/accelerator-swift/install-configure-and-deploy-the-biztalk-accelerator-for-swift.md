@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 44119bb7a8dd16189eea1e476a1ac694ec5e9fa2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: df7577b1894ec36fde63096349b81e5f5c7676bf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969238"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377372"
 ---
 # <a name="install-configure-and-deploy-the-biztalk-accelerator-for-swift"></a>安装、 配置和部署 BizTalk Accelerator for SWIFT
 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]包括的平台上工作[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]， [!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]，和[!INCLUDE[btsSQLServerNoVersion_md](../../includes/btssqlservernoversion-md.md)]。 中的功能集[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]相当于中的功能集以前[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]版本。 但是，您可以在较新版本的 BizTalk Server、 Visual Studio 和 SQL Server 来充分利用的增强功能。  

@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b9a78dddbbd76566c5c97b1e571e5ad80073d4a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8edbccd04ae86d4cfc9861240061c6cf390f9b32
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997966"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399859"
 ---
 # <a name="the-biztalk-operations-web-service"></a>BizTalk 操作 Web 服务
 Microsoft BizTalk 操作 Web 服务公开的对象和 BizTalk Server 中的消息有关的信息。 服务名称是**ESB.BizTalkOperationsService**，并且服务会公开各种返回诸如主机、 业务流程、 应用程序，以及 BizTalk 应用程序状态的列表的方法。  
@@ -83,7 +83,7 @@ Microsoft BizTalk 操作 Web 服务公开的对象和 BizTalk Server 中的消�
   
   在 SQL Server Management Studio，可以配置所需的权限。 若要执行此操作，请展开**安全**在对象资源管理器的左的窗格树视图中，展开**角色**，展开**DatabaseRoles**、 选择 BTS_ADMIN_USERS 角色，然后编辑对于此角色，如图 1 中所示的属性。  
   
-  ![SQL Server 管理 Studio](../esb-toolkit/media/ch4-sqlservermgmtstudio.gif "Ch4 SQLServerMgmtStudio")  
+  ![SQL Server Mgmt Studio](../esb-toolkit/media/ch4-sqlservermgmtstudio.gif "Ch4-SQLServerMgmtStudio")  
   
   **图 1**  
   

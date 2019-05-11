@@ -1,5 +1,5 @@
 ---
-title: OrderBroker 和 OrderManager 之间的通信 |Microsoft 文档
+title: OrderBroker 和 OrderManager 之间的通信 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,21 +15,21 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3f438b0dfe744aae5867943f4b1493bb163994f4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 43af6f47a53f28875b77b5089ffe2d343681f140
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231869"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357109"
 ---
 # <a name="communication-between-orderbroker-and-ordermanager"></a>OrderBroker 和 OrderManager 之间的通信
-顺序 broker 和顺序 manager 业务流程 (**OrderBroker**， **OrderManager**) 通过 MessageBox 数据库，而不是直接合作伙伴绑定进行通信。 这可确保，在以便它们，如有必要，可以在不同的 BizTalk 组和地理位置的位置所在松散耦合的代理和管理器。 分隔这种方式的业务流程需要仅管理配置，并不需要的任何代码更改。  
+Orderbroker 和订单管理器业务流程 (**OrderBroker**， **OrderManager**) 通过 MessageBox 数据库，而不是直接合作伙伴绑定进行通信。 这可确保，将 broker 与 manager 松散耦合的以便它们，如有必要，可以位于单独的 BizTalk 组和地理位置上相隔位置。 这种方式分离业务流程要求仅管理配置，不需要更改任何代码。  
   
- 在解决方案中为当前配置，顺序 broker 将消息标记为特定的顺序管理器，并将它们发送到 MessageBox。 反过来，订单管理器为适用于它的消息筛选器，并从 MessageBox 所需的这些消息。 这种间接方式 — 通过 MessageBox 通信，而不是直接绑定-可以轻松地移动到单独的组的代理和管理器。  
+ 在目前配置解决方案中，顺序 broker 将消息标记为特定订单管理器，并将它们发送到 MessageBox。 反过来，订单管理器筛选的消息发送给它，并从 MessageBox 获取这些消息。 这种间接方式 — 通过 MessageBox 进行通信，而不是直接绑定 — 轻松地移动到单独的组的代理和管理器。  
   
- 如果没有负责维护的代理和管理器的不同组，或者如果它们需要处于不同的地理位置，设计可以轻松地适应这。 你需要执行操作的只是将业务流程移到不同的 BizTalk 组。 业务流程都位于不同的组后，重新连接它们只需创建端口。 在顺序 broker 组中，你必须创建具有相同筛选器设置为顺序管理器中，但，将消息转发到新组发送端口。 在订单管理器组中，你必须创建接收端口接收消息并将其放在 MessageBox 数据库中。  
+ 如果负责维护将 broker 与 manager 是不同的组，或者它们必须能够在不同的地理位置，设计轻松为解决此问题。 需要做的就是将业务流程移到不同的 BizTalk 组。 业务流程都位于单独的组后，重新连接它们只需要创建端口。 在顺序 broker 组中，必须创建具有相同的筛选器为订单管理器，但是，将消息转发到新组的发送端口。 在订单管理器组中，必须创建接收端口的接收消息，并将其放入 MessageBox 数据库。  
   
- 你可以通过导出创建 MSI 文件，每个代理和管理器用于移动应用程序。 有关导出应用程序的详细信息，请参阅[how to Export BizTalk 应用程序如何](../core/how-to-export-a-biztalk-application.md)。  
+ 可以通过导出创建 MSI 文件，分别用于将 broker 与 manager 移动应用程序。 有关导出应用程序的详细信息，请参阅[如何导出 BizTalk 应用程序](../core/how-to-export-a-biztalk-application.md)。  
   
-## <a name="see-also"></a>另请参阅  
- [实现突出显示的业务流程管理解决方案](../core/implementation-highlights-of-the-business-process-management-solution.md)
+## <a name="see-also"></a>请参阅  
+ [业务流程管理解决方案的实施重点](../core/implementation-highlights-of-the-business-process-management-solution.md)

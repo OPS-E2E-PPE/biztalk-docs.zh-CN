@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d163c035cdf45ede600509783040114a0eaa0a2b
-ms.sourcegitcommit: 1f0306e812c95dc32c4496345c19f141612cb2c1
+ms.openlocfilehash: 42109ed9180cf7f8bbb0946846ee12795c34b4e8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37913854"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387617"
 ---
 # <a name="high-availability-using-sql-server-always-on-availability-groups---biztalk-server"></a>使用 SQL Server Always On 可用性组的 BizTalk Server 的高可用性
 配置使用 SQL Server AlwaysOn 可用性组实现高可用性。
@@ -68,7 +68,7 @@ SQL Server AlwaysOn 可用性组不支持同一个 SQL Server 实例上的数据
  
 | 实例 |角色 |该组中的 BizTalk 数据库  |
 |--- | --- | ---|
-|@shouldalert |身份验证 |SSODB|
+|1 |身份验证 |SSODB|
 |2 |管理 |BizTalkMgmtDb| 
 |3 |运行时 |BizTalkMsgBoxDb<br/> BizTalkRulesEngineDb<br/> BAMPrimaryImport<br/>BAMStarSchema <br/>BAMAlertsApplication |
 |4 |跟踪 |BizTalkDTADb<br/>EsbItineraryDb<br/>EsbExceptionDb | 
@@ -92,21 +92,21 @@ SQL Server 数据库，以及 BizTalk Server 配置还会创建 SQL Server 安�
 1. BizTalk Application Users （一个或多个对应于每个进程内主机） 
 2. BizTalk Isolated Host Users （一个或多个对应于每个独立的主机） 
 3. BizTalk Server Administrators 
-4. BizTalk Server B2B Operators 
+4. BizTalk Server B2B 操作员 
 5. BizTalk Server Operators 
 6. SSO Administrators 
 7. BAM 警报用户 
-8. BAM 管理 Web Services 用户 
+8. BAM 管理 Web 服务用户 
 9. 规则引擎更新服务帐户 
 
 如果已创建其他主机或者将在以后创建其他主机，将作为此过程的一部分创建的新 SQL 登录名。 您必须确保在相应的副本上手动创建这些 SQL 登录名。
 
-以下 SQL Server 代理作业与 BizTalk Server 相关联。 每个服务器上安装的作业有所不同，具体视安装和配置的功能而定。 BizTalk Server 配置期间创建这些作业大部分。 部分作业是在配置日志传送时创建的。 需要在其相应的 BizTalk 数据库的 SQL Server 托管副本的每个实例上复制这些作业。 这必须手动执行。 
+以下 SQL Server 代理作业与 BizTalk Server 相关联。 每个服务器上安装的作业是安装和配置的功能而异。 BizTalk Server 配置期间创建这些作业大部分。 配置日志传送时创建多个。 需要在其相应的 BizTalk 数据库的 SQL Server 托管副本的每个实例上复制这些作业。 这必须手动执行。 
 
 - BizTalkMgmtDb 的作业： 
     - 备份 BizTalk Server (BizTalkMgmtDb) 
     - CleanupBTFExpiredEntriesJob_BizTalkMgmtDb 
-    - 监视 BizTalk Server (BizTalkMgmtDb) 
+    - Monitor BizTalk Server (BizTalkMgmtDb) 
 - BizTalkMsgBoxDb 作业： 
     - MessageBox_DeadProcesses_Cleanup_BizTalkMsgBoxDb 
     - MessageBox_Message_Cleanup_BizTalkMsgBoxDb
@@ -209,7 +209,7 @@ SQL Server 数据库，以及 BizTalk Server 配置还会创建 SQL Server 安�
 13. 脚本才能将它们复制相应的副本上的登录名和 SQL 代理作业。 UpdateDatabase 脚本还会更新 Operations_OperateOnInstances_OnMaster_BizTalkMsgBoxDb 和 TrackedMessages_Copy_BizTalkMsgBoxDb 作业中的服务器名称。 仅在运行 UpdateDatabase 脚本后，因此脚本 SQL 代理作业。 
 
 ## <a name="requirements"></a>要求 
-* BizTalk Server 2016 企业版
+* BizTalk Server 2016 Enterprise
 * SQL Server 2016 Enterprise 或 SQL Server 2016 Standard (请参阅**已知限制**本主题中)
 * Windows Server 2012 R2 或 Windows Server 2016 
 

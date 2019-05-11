@@ -13,21 +13,21 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3f510a876102ec867e2f2f16676cef63cedfaa92
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f5c431b90d1d128831f18d2ec1f53acfc891d91d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981326"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65336923"
 ---
 # <a name="how-to-install-the-sso-administration-component"></a>如何安装 SSO 管理组件
 
 ## <a name="overview"></a>概述
-可以作为独立的功能来安装企业单一登录管理组件。 在需要远程管理 SSO 系统时这将非常有用。 其硬件和软件要求与典型的企业 SSO 运行时服务安装的硬件和软件要求相同。  
+可以作为独立的功能来安装企业单一登录管理组件。 这是很有用，如果需要远程管理 SSO 系统。 与典型的企业 SSO 运行时服务安装相同的硬件和软件要求。  
   
  在安装后管理组件，您输入要用于进行管理的 SSO 服务器。 可以使用命令行工具 (ssomanage.exe) 或 SSO 管理 Mmc 管理单元来执行此操作。 本主题列出了这两个过程。  
   
- 安装 SSO 管理实用工具 (ssomanage.exe) 时，不会在“开始”菜单上创建用于访问该命令行实用工具的快捷方式。 若要在安装后运行 SSO 管理实用工具，必须打开命令提示符，并导航到的 SSO 目录`Program Files\Common Files\Enterprise Single Sign-On`。  
+ 安装 SSO 管理实用工具 (ssomanage.exe) 不会在开始菜单访问命令行实用程序创建快捷方式。 若要在安装后运行 SSO 管理实用工具，必须打开命令提示符，并导航到的 SSO 目录`Program Files\Common Files\Enterprise Single Sign-On`。  
   
  企业 SSO 管理功能还包括一个 MMC 管理单元。 对于中的管理单元函数必须在计算机上安装 MMC 3.0。  
   
@@ -39,7 +39,7 @@ ms.locfileid: "36981326"
   
 ## <a name="enter-the-server-using-the-mmc-snap-in"></a>输入使用 MMC 管理单元中的服务器  
   
-1.  当在未安装管理组件的计算机上安装管理组件后，请打开 SSO 管理单元。  
+1.  在安装后管理组件，它当前未安装的计算机上，打开 SSO 管理管理单元。  
   
      在中**启动**菜单中，选择**所有程序**，选择**Microsoft 企业单一登录**，然后选择**SSO 管理**。  
   
@@ -47,7 +47,7 @@ ms.locfileid: "36981326"
   
      **选择 SSO Server**对话框将出现。  
   
-3.  输入或浏览到要指定的 SSO 服务器名。 若要指定 SSO 服务器的所有用户的计算机上，选择**为所有用户设置 SSO 服务器**。  
+3.  输入或浏览到想要指定的 SSO 服务器名称。 若要指定 SSO 服务器的所有用户的计算机上，选择**为所有用户设置 SSO 服务器**。  
   
 4.  单击“确定” 。  
   

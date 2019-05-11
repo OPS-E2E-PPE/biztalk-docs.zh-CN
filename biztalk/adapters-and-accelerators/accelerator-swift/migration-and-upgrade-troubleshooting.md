@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ad7f575038257bc876e3fc822e624e91c93451ff
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1f1c8a3da3b09c464d8523ad0c953eddd60aec42
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994638"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377204"
 ---
 # <a name="migration-and-upgrade-troubleshooting"></a>迁移和升级进行故障排除
 ## <a name="assemblies-need-to-be-undeployed-before-an-upgrade"></a>需要先升级之前取消部署程序集  
@@ -31,7 +31,7 @@ ms.locfileid: "36994638"
  当您尝试升级 A4SWIFT 时，升级过程将失败。  
   
 ### <a name="possible-cause"></a>可能的原因  
- 完成升级后仍将部署以下 A4SWIFT 程序集： Microsoft.Solutions.FinancialServices.SWIFT.FrrOrchestration、 Microsoft.Solutions.FinancialServices.SWIFT.FrrSchemas，Microsoft.Solutions.FinancialServices.SWIFT.MrsrService。  
+ 在升级已完成时，仍将部署以下 A4SWIFT 程序集：Microsoft.Solutions.FinancialServices.SWIFT.FrrOrchestration，Microsoft.Solutions.FinancialServices.SWIFT.FrrSchemas，Microsoft.Solutions.FinancialServices.SWIFT.MrsrService。  
   
 > [!NOTE]
 >  无需重新部署 Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas。 安装程序重新部署该程序集。  
@@ -83,4 +83,4 @@ ms.locfileid: "36994638"
 6.  单击“确定” 。  
   
 ## <a name="see-also"></a>请参阅  
- [疑难解答：问题和解决方法](../../adapters-and-accelerators/accelerator-swift/troubleshooting-issues-and-resolutions1.md)
+ [故障排除：问题和解决方法](../../adapters-and-accelerators/accelerator-swift/troubleshooting-issues-and-resolutions1.md)

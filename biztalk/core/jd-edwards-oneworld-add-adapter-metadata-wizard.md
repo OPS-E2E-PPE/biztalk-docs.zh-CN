@@ -1,5 +1,5 @@
 ---
-title: 博士 Edwards OneWorld 添加适配器元数据向导 |Microsoft 文档
+title: JD Edwards OneWorld 添加适配器元数据向导 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -21,22 +21,22 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bbd8174197cdbf0fce215601fd5932e3669ce484
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 34e859ca73abf187ea54f1f34ae7fb03fbe71a7e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22261773"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65331157"
 ---
-# <a name="jd-edwards-oneworld-add-adapter-metadata-wizard"></a>博士 Edwards OneWorld 添加适配器元数据向导
-使用添加适配器元数据向导可从 JD Edwards OneWorld 系统访问元数据信息。  
+# <a name="jd-edwards-oneworld-add-adapter-metadata-wizard"></a>JD Edwards OneWorld 添加适配器元数据向导
+使用从 JD Edwards OneWorld 系统访问元数据信息添加适配器元数据向导。  
   
 |使用此选项|执行的操作|  
 |--------------|----------------|  
-|选择适配器列表|从该列表中选择适配器。|  
+|选择的适配器列表中|从列表中选择适配器。|  
 |SQL Server|从列表中选择 SQL Server，然后单击**下一步**。|  
-|数据库|连接到与 SQL Server 相同的数据库。|  
-|端口|选择配置发送端口，然后单击**下一步**。|  
+|“数据库”|连接到 SQL server 所在的同一个数据库。|  
+|Port|选择已配置的发送端口并单击**下一步**。|  
   
-## <a name="see-also"></a>另请参阅  
- [用于 JDE OneWorld 的 BizTalk Adapter 的用户界面参考](../core/ui-reference-for-biztalk-adapter-for-jde-oneworld.md)
+## <a name="see-also"></a>请参阅  
+ [用于 JDE OneWorld 的 BizTalk 适配器用户界面参考](../core/ui-reference-for-biztalk-adapter-for-jde-oneworld.md)

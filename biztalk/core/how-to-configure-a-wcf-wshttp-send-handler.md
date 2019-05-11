@@ -17,20 +17,20 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9fe3ba5d5338403b5ebfa0796ca4a31963e251d6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 295d6d5e281dcd614f8d624e0c725f29d2985db3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014750"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65386583"
 ---
 # <a name="how-to-configure-a-wcf-wshttp-send-handler"></a>如何配置 WCF-WSHttp 发送处理程序
-使用以下过程可配置 WCF-WSHttp 发送处理程序。  
+使用以下过程来配置 Wcf-wshttp 发送处理程序。  
 
 > [!CAUTION]
->  使用 WCF-WSHttp 适配器处理程序时，建议在 [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] 或 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] 计算机上安装这些处理程序的主机实例。  
+>  在使用 Wcf-wshttp 适配器处理程序，建议在安装这些处理程序的主机实例[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]或[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]计算机。  
 
-### <a name="to-change-global-variables-for-a-wcf-wshttp-send-handler"></a>更改 WCF-WSHttp 发送处理程序的全局变量  
+### <a name="to-change-global-variables-for-a-wcf-wshttp-send-handler"></a>若要更改全局变量为 Wcf-wshttp 发送处理程序  
 
 1. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**管理**，展开**BizTalk 组**，展开**平台设置**，然后展开**适配器**。  
 
@@ -43,10 +43,10 @@ ms.locfileid: "37014750"
 
    |   使用此选项    |                                                                                                                                                                                                                        执行的操作                                                                                                                                                                                                                        |
    |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | **使用代理** |                                                                                                                                                                              指示此发送端口是否使用代理服务器。<br /><br /> 默认值为清除此复选框。                                                                                                                                                                              |
-   |  **Address**  |                      指定代理服务器的地址。 使用**https**或**http**具体取决于安全配置的方案。 此地址后面可跟冒号和端口号。 例如， http://127.0.0.1:8080。<br /><br /> 此属性需要值才**使用代理**处于选中状态。<br /><br /> 类型：字符串<br /><br /> 最大长度：256<br /><br /> 默认值为空字符串。                      |
-   | **用户名** | 指定用于身份验证的用户名。 如果使用集成或基本验证，则用户名将包括域，即采用“域\用户名”格式。 如果使用摘要式身份验证，则用户名不包括域\\。<br /><br /> 此属性需要值才**使用代理**处于选中状态。<br /><br /> 类型：字符串<br /><br /> 最小长度：0<br /><br /> 最大长度：256<br /><br /> 默认值为空字符串。 |
-   | **密码**  |                                                                                             指定用于身份验证的密码。<br /><br /> 此属性需要值才**使用代理**处于选中状态。<br /><br /> 类型：字符串<br /><br /> 最小长度：0<br /><br /> 最大长度：256<br /><br /> 默认值为空字符串。                                                                                             |
+   | **使用代理** |                                                                                                                                                                              指示此发送端口使用代理服务器。<br /><br /> 默认值为清除此复选框。                                                                                                                                                                              |
+   |  **Address**  |                      指定代理服务器的地址。 使用**https**或**http**具体取决于安全配置的方案。 此地址可以跟一个冒号和端口号。 例如， http://127.0.0.1:8080。<br /><br /> 此属性需要值才**使用代理**处于选中状态。<br /><br /> 键入：String<br /><br /> 最大长度：256<br /><br /> 默认值为一个空字符串。                      |
+   | **用户名** | 指定要用于身份验证的用户名。 如果使用集成或基本身份验证，则用户名将包括域，即，域 \ 用户名。 如果使用摘要式身份验证，则用户名不包括域\\。<br /><br /> 此属性需要值才**使用代理**处于选中状态。<br /><br /> 键入：String<br /><br /> 最小长度：0<br /><br /> 最大长度：256<br /><br /> 默认值为一个空字符串。 |
+   | **密码**  |                                                                                             指定要用于身份验证的密码。<br /><br /> 此属性需要值才**使用代理**处于选中状态。<br /><br /> 键入：String<br /><br /> 最小长度：0<br /><br /> 最大长度：256<br /><br /> 默认值为一个空字符串。                                                                                             |
 
 
 5. 单击“确定” 。  

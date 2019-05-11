@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b9ba1a547b2df8531568959b0b9fa00a600cef21
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d6d87a5577ba8472b9d82df27f340b3361bc6b89
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021851"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65295721"
 ---
 # <a name="troubleshooting-maps"></a>排除地图故障
 本主题提供的故障排除策略和问题详细信息并将映射的解决方法信息。  
@@ -53,7 +53,7 @@ ms.locfileid: "37021851"
   
 1. 从[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]BizTalk 项目中，单击**解决方案资源管理器**选项卡上，右键单击的映射，然后单击**验证映射**。  
   
-2. 滚动输出窗口以查找 XSL 文件的 URL。 按住 Ctrl 单击 URL 以查看文件。  
+2. 滚动输出窗口以查找 XSL 文件的 URL。 按 CTRL 并单击要查看该文件的 URL。  
   
    如果你决定手动自定义您的映射，则可以修改映射编译器生成的版本。 更改将不会反映映射器和下一次生成解决方案时将丢失。  
   

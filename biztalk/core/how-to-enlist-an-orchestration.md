@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 203f8a61c439230b692577c8674b12e35944c24f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ed3743253b763ba00d79f6fab0c392849c567336
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966286"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385095"
 ---
 # <a name="how-to-enlist-an-orchestration"></a>如何登记业务流程
 本主题介绍如何使用 BizTalk Server 管理控制台来登记到主机的业务流程。 必须登记业务流程，然后才能开始。  
@@ -39,9 +39,9 @@ ms.locfileid: "36966286"
 -   **您还应登记从属业务流程。** 如果登记业务流程，但未登记任何从属业务流程，从属业务流程将不具有任何订阅。 没有订阅的相关业务流程可能会删除或挂起消息，因为没有要匹配的消息的订阅。  
   
 > [!NOTE]
->  应用程序开发人员可以通过在开发过程中使用本主题中的过程来登记业务流程以测试其功能。  
+>  应用程序开发人员可以登记业务流程，以在开发过程中测试其功能，通过使用本主题中的过程。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  若要执行本主题中的过程，必须是 BizTalk Server Administrators 组的成员的帐户登录。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
   
 ### <a name="to-enlist-an-orchestration"></a>若要登记业务流程  

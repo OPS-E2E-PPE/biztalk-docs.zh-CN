@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5947b527dea1206255daf52f128569fd7a4f659c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 155c7ab792dd77918561f3ebf630f6e13956d3e9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987910"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306054"
 ---
 # <a name="corrupt-backup-files"></a>损坏的备份文件
 备份文件可能已损坏、 损坏或缺失。 如果发生这种情况，则无法还原至少一个文件。 还原作业之间发生故障的系统上搜索下一个有效的完整备份集。 在大多数情况下将需要强制源系统上执行完整备份。 如果没有此类集存在，还原作业失败，并且还每次运行时失败，直到到达时有效的完全备份集。 如果一组不存在，它用于修复环境。  

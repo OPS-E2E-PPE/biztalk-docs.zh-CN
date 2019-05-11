@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10560 |Microsoft Docs
+title: 单一登录：Event 10560 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 82f9245b4eda9b6bf567aae1de2071d3e77aae04
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b43a9558cff9325cb7a5355213001d67a0218d43
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967750"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65296053"
 ---
-# <a name="single-sign-on-event-10560"></a>单一登录： 事件 10560
+# <a name="single-sign-on-event-10560"></a>单一登录：事件 10560
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                             |
@@ -28,12 +28,12 @@ ms.locfileid: "36967750"
 | 产品版本 |                                                                 [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                  |
 |    事件 ID     |                                                                                            10560                                                                                            |
 |  事件源   |                                                                                           ENTSSO                                                                                            |
-|    组件    |                                                                                             N/A                                                                                             |
+|    组件    |                                                                                             不可用                                                                                             |
 |  符号名称  |                                                                               SSO_ERROR_BACKUP_SECRET_FAILED                                                                                |
-|  消息正文   | 备份主密钥失败。%r<br /><br /> 文件名称: %1 %r<br /><br /> 当前 MSID: %2 %r<br /><br /> 上一个 MSID: %3 %r<br /><br /> 客户端用户: %4 %r<br /><br /> 错误代码： %5 |
+|  消息正文   | 备份主密钥 secrets.%r 失败<br /><br /> 文件名称: %1 %r<br /><br /> 当前 MSID: %2 %r<br /><br /> 上一个 MSID: %3 %r<br /><br /> 客户端用户: %4 %r<br /><br /> 错误代码： %5 |
   
 ## <a name="explanation"></a>解释  
- 尝试备份主密钥失败。 尝试进行备份的用户的权限不正确，或使用的路径或目录不正确。  
+ 尝试备份主密钥失败。 用户尝试进行备份可能存在错误的权限、 路径或目录。  
   
 ## <a name="user-action"></a>用户操作  
  有关备份主密钥的信息，请参阅[管理主密钥](../core/managing-the-master-secret.md)。

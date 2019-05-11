@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 11039 |Microsoft Docs
+title: 单一登录：事件 11039 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9badc899afddd8ab84ecd52532096453e4579316
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dce191d742cfb2043d2aef5acae4594f69c94850
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024067"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401019"
 ---
-# <a name="single-sign-on-event-11039"></a>单一登录： 事件 11039
+# <a name="single-sign-on-event-11039"></a>单一登录：事件 11039
 ## <a name="details"></a>详细信息  
   
 |                 |                                                               |
@@ -28,12 +28,12 @@ ms.locfileid: "37024067"
 | 产品版本 |  [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]   |
 |    事件 ID     |                             11039                             |
 |  事件源   |                            ENTSSO                             |
-|    组件    |                              N/A                              |
+|    组件    |                              不可用                              |
 |  符号名称  |                  SSO_ERROR_NO_LOCAL_SERVICE                   |
-|  消息正文   | SSO 服务不能在本地服务帐户下运行。%r |
+|  消息正文   | SSO 服务无法在本地服务 account.%r 下运行 |
   
 ## <a name="explanation"></a>解释  
- SSO 服务不能在本地服务帐户下运行。%r  
+ SSO 服务无法在本地服务 account.%r 下运行  
   
 ## <a name="user-action"></a>用户操作  
  有关详细信息，请参阅[高可用性 SSO 安装选项](../core/high-availability-sso-installation-options.md)。

@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10839 |Microsoft Docs
+title: 单一登录：Event 10839 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b79f8b384d0b07a2dd1539670bdf6ff506770f76
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ef9c07e2666354fa341cd0ceb2d2afa2b6a618d1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990646"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65307567"
 ---
-# <a name="single-sign-on-event-10839"></a>单一登录： 事件 10839
+# <a name="single-sign-on-event-10839"></a>单一登录：事件 10839
 ## <a name="details"></a>详细信息  
   
 |                 |                                                            |
@@ -28,7 +28,7 @@ ms.locfileid: "36990646"
 | 产品版本 | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
 |    事件 ID     |                           10839                            |
 |  事件源   |                           ENTSSO                           |
-|    组件    |                            N/A                             |
+|    组件    |                            不可用                             |
 |  符号名称  |                   ENTSSO_E_MAX_PASSWORD                    |
 |  消息正文   |       最大密码长度为 256 个字符。       |
   

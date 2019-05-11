@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 765d9785bde94f363ea56178f3cc0f500381d4e9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 52915c751f8857f26195c7df033dcf2327989760
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997518"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242726"
 ---
 # <a name="running-the-multiple-web-services-sample"></a>运行多个 Web 服务示例
 多个 Web 服务示例使用 Windows 窗体测试客户端应用程序的路线接入点示例。  

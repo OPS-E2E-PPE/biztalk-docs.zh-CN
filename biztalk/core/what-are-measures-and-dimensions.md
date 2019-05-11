@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eb494246741699dfdbdab704c8fca0a3c9d55301
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c07f7ac1f3a0105549c01209e008bd880e0444c0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994342"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65302308"
 ---
 # <a name="what-are-measures-and-dimensions"></a>什么是度量值和维度？
 维度和度量值都是数据聚合的物理特征。 本主题以 BAM 方案为上下文环境来说明什么是度量值和维度。  

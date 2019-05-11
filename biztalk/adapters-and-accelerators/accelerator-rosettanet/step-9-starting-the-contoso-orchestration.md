@@ -1,5 +1,5 @@
 ---
-title: 步骤 9： 启动 Contoso 业务流程 |Microsoft Docs
+title: 步骤 9：启动 Contoso 业务流程 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,17 +14,17 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 994355b67c19a7411c62f8858033e44cb8bdf3f4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6e8693fab7f39a0371514ca56c9ad08dc539696f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990822"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280628"
 ---
-# <a name="step-9-starting-the-contoso-orchestration"></a>步骤 9： 启动 Contoso 业务流程
-在此步骤中，你将通过定义物理源位置和目标位置来完成端口配置流程。 将物理端口绑定到在中创建的逻辑端口[步骤 7： 创建和配置端口](../../adapters-and-accelerators/accelerator-rosettanet/step-7-creating-and-configuring-ports.md)。 然后登记服务，以便将业务流程与该业务流程将在中运行的物理环境中设计的业务流程相关联。 最后，启动业务流程，以便它可以参与与 Fabrikam 的业务事务。  
+# <a name="step-9-starting-the-contoso-orchestration"></a>步骤 9：启动 Contoso 业务流程
+在此步骤中，通过定义物理源和目标位置完成端口配置过程。 将物理端口绑定到在中创建的逻辑端口[步骤 7:创建和配置端口](../../adapters-and-accelerators/accelerator-rosettanet/step-7-creating-and-configuring-ports.md)。 然后登记服务，以便将业务流程与该业务流程将在中运行的物理环境中设计的业务流程相关联。 最后，启动业务流程，以便它可以参与与 Fabrikam 的业务事务。  
   
-### <a name="to-bind-the-orchestration-ports"></a>绑定业务流程端口  
+### <a name="to-bind-the-orchestration-ports"></a>若要将业务流程端口绑定  
   
 1.  打开**BizTalk 浏览器**。  
   
@@ -40,7 +40,7 @@ ms.locfileid: "36990822"
   
 7.  在中**主机**属性，请在**BizTalk 主机**类别中，选择**BizTalkServerApplication**从下拉列表中，然后单击**确定**.  
   
-### <a name="to-start-the-biztalk-runtime-process"></a>启动 BizTalk 运行时流程  
+### <a name="to-start-the-biztalk-runtime-process"></a>若要启动 BizTalk 运行时进程  
   
 1. 单击**启动**，依次指向**所有程序**，指向**Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../../includes/btsbiztalkserver2006r3ui-md.md)] ，然后单击**BizTalk Server 管理**。  
   
@@ -48,7 +48,7 @@ ms.locfileid: "36990822"
   
 3. 验证的状态**BizTalkServerApplication**服务是**运行**。  
   
-### <a name="to-enlist-and-start-the-orchestration"></a>登记和启动业务流程  
+### <a name="to-enlist-and-start-the-orchestration"></a>以登记并启动业务流程  
   
 1.  在 BizTalk 管理控制台的左窗格中，展开**应用程序**，展开**BizTalk Application 1**，然后单击**业务流程**。  
   

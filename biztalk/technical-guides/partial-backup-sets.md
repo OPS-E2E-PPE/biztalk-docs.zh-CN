@@ -1,5 +1,5 @@
 ---
-title: 部分备份集 |Microsoft 文档
+title: 部分备份集 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f9740cb0f45d6bb46c13a95e50e4717ef142b164
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: baacc7a30a79084430ce570fc135b92e07586779
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22298157"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291332"
 ---
 # <a name="partial-backup-sets"></a>部分备份集
-在源系统上备份数据库，可能发生的问题导致部分的备份集。 当发生这种情况时，Master.dbo.bts_LogShippingHistory 表将包含在 0 **SetComplete**集中的所有记录的列。  
+在源系统上备份数据库，可能发生的问题导致部分备份集。 当发生这种情况时，Master.dbo.bts_LogShippingHistory 表将包含在 0 **SetComplete**列集中的所有记录。  
   
- 无法还原这些设置。 因此，日志备份集链已中断。 设置必须忽略，作为以及所有日志备份集后，到下一步的完整备份集。 还原作业将自动查找下一个有效的完整备份集。 如果它未找到一个，它无法正常工作，并将还原的设置，以便修复目标环境。  
+ 无法还原这些设置。 结果是日志备份集链已中断。 必须忽略集，以及所有日志备份集后，到下一个完整备份集。 还原作业将自动寻找下一个有效的完整备份集。 如果没有找到一个，它将失败，并将还原的设置，以便修复目标环境。  
   
- 在大多数情况下的源系统将检测部分的备份集发生，并将自动生成的下次运行如果它被配置为这样做完整备份集。  
+ 在大多数情况下源系统将检测部分备份集已发生，并将自动生成如果它配置为执行此操作运行下一次完整备份集。  
   
 > [!NOTE]  
->  此问题的最常见原因是目标系统上的文件组的磁盘空间不足。  
+>  此问题的最常见原因是目标系统上的文件组没有足够的磁盘空间。  
   
-## <a name="see-also"></a>另请参阅  
- [故障排除日志传送](../technical-guides/troubleshooting-log-shipping.md)
+## <a name="see-also"></a>请参阅  
+ [日志传送疑难解答](../technical-guides/troubleshooting-log-shipping.md)

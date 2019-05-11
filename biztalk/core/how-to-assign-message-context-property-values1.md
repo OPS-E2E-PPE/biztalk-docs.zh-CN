@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f9f5a42e208d81f8898ce85592402f675d1b361
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8e66d88a2e12bb0e2672c04df06df711746c5efe
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979738"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387194"
 ---
 # <a name="how-to-assign-message-context-property-values"></a>如何分配消息上下文属性值
 若要从 BizTalk 业务流程管理 JD Edwards EnterpriseOne 适配器连接会话，必须在项目中添加对 Microsoft.BizTalk.Adapters.JDEProperties.dll 的引用。 此程序集位于 %SystemDrive%\Program Files\Common Files\Microsoft BizTalk Adapters for Enterprise Applications\bin。  
@@ -26,7 +26,7 @@ ms.locfileid: "36979738"
   
  若要访问上下文属性，您指定的 JD Edwards EnterpriseOne 命名空间中可用的上下文属性之一。 若要读取从端口与用于 JD Edwards EnterpriseOne Microsoft BizTalk 适配器绑定接收的消息的上下文属性，使用的语法，消息 (JDE。属性），在表达式中。 有关属性的列表，请参阅 JD Edwards EnterpriseOne 适配器会话管理。  
   
- 在 BizTalk 中，消息是不可改变的。  
+ 在 BizTalk 中，消息是不可变的。  
   
 ### <a name="to-assign-context-property-value"></a>若要将分配上下文属性值  
   

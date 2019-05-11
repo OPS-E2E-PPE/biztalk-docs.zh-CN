@@ -1,5 +1,5 @@
 ---
-title: 步骤 5： 提升架构属性 |Microsoft Docs
+title: 步骤 5：升级架构属性 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 60aa8681e9647e592af3173295c3d32e216f1f2d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fa148fee56ae62d5c14112c850f16b4d9ae3cf53
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003214"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288068"
 ---
-# <a name="step-5-promote-schema-properties"></a>步骤 5： 提升架构属性
+# <a name="step-5-promote-schema-properties"></a>步骤 5：升级架构属性
 在此步骤中，提升架构属性，以便[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]业务流程可以引用在后续步骤中创建这些属性值。 升级是一种机制，用于引用消息实例中的特定值，并使其可以访问[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]组件，例如业务流程或基于内容的路由目的。 此外，升级的属性情况下是可见的表达式编辑器中的 Microsoft IntelliSense [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]。  
   
 > [!NOTE]
@@ -44,7 +44,7 @@ ms.locfileid: "37003214"
   
    -   **MiddleName**  
   
-   -   **姓氏**  
+   -   **LastName**  
   
    -   **SSN**  
   
@@ -53,7 +53,7 @@ ms.locfileid: "37003214"
   
     有关跟踪基于升级的架构元素的文档的详细信息，请参阅有关运行状况与活动跟踪的信息的 BizTalk Server 帮助。  
   
-   请继续执行[第 6 步： 验证架构](../../adapters-and-accelerators/accelerator-hl7/step-6-validate-the-schemas.md)。  
+   请继续执行[步骤 6:验证架构](../../adapters-and-accelerators/accelerator-hl7/step-6-validate-the-schemas.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [消息充实教程](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

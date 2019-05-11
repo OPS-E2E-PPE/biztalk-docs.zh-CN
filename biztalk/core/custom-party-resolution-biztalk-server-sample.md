@@ -19,12 +19,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c7b88d8126a1d63760888edbcd7691ad4bd76426
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 066d551cc2d802778673492de5de352fbcd48fa9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238693"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65353354"
 ---
 # <a name="custom-party-resolution-biztalk-server-sample"></a>自定义参与方解析（BizTalk Server 示例）
 自定义参与方解析示例演示如何编写自定义管道组件以解析自定义参与方。  

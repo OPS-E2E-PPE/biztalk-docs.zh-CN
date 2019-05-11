@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cda345b5a96f36125432e454b5f239f756a76652
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f824730d284724b3504c969b371877cad5250066
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023755"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242692"
 ---
 # <a name="running-the-scatter-gather-sample"></a>运行分散-集中示例
 分散-集中示例使用 Windows 窗体测试客户端应用程序的路线接入点示例来演示此模式将路线服务的功能的应用。  

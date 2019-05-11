@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f43ebf2ba593ad5133b93400bf0e9cb1151dc45b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 68e67804d10a1fc3f920f3fadfdfc3a0aff81cae
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978438"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356526"
 ---
 # <a name="conditional-required-data-element-missing"></a>条件性必需数据元素缺失
 ## <a name="details"></a>详细信息  

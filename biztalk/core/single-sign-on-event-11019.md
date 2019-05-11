@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 11019 |Microsoft Docs
+title: 单一登录：事件 11019 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 622badcaa24cfe5a5db45b1d688f2eee3a7f818f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9b2dbd4c35f8848be7579d897c0426ebf9cfd960
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001798"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65266612"
 ---
-# <a name="single-sign-on-event-11019"></a>单一登录： 事件 11019
+# <a name="single-sign-on-event-11019"></a>单一登录：事件 11019
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                                                                                                                                                                                  |
@@ -28,12 +28,12 @@ ms.locfileid: "37001798"
 | 产品版本 |                                                                                                                                            [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                                                                                            |
 |    事件 ID     |                                                                                                                                                                      11019                                                                                                                                                                       |
 |  事件源   |                                                                                                                                                                      ENTSSO                                                                                                                                                                      |
-|    组件    |                                                                                                                                                                       N/A                                                                                                                                                                        |
+|    组件    |                                                                                                                                                                       不可用                                                                                                                                                                        |
 |  符号名称  |                                                                                                                                                      SSO_PS_WARN_NOT_IN_GROUP_DELETE_FAILED                                                                                                                                                      |
-|  消息正文   | 由于 Windows 帐户不属于应用程序的应用程序用户帐户而导致映射无效。 无法删除映射。 将忽略此映射。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> Windows 帐户: %2 %r<br /><br /> 应用程序名称: %3 %r<br /><br /> 应用程序用户: %4 %r<br /><br /> 错误代码： %5 |
+|  消息正文   | 映射无效，因为 Windows 帐户不在应用程序的应用程序用户帐户。 无法删除映射。 映射将 ignored.%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> Windows 帐户: %2 %r<br /><br /> 应用程序名称: %3 %r<br /><br /> 应用程序用户: %4 %r<br /><br /> 错误代码： %5 |
   
 ## <a name="explanation"></a>解释  
- 指定的 Windows 帐户不是此应用程序的应用程序用户帐户的一部分，或者曾经是应用程序用户帐户的一部分，但已更改或删除。 尚未删除的映射。  
+ 指定的 Windows 帐户从来都不属于此应用程序的应用程序用户帐户或它是一次，但已更改或删除。 尚未删除的映射。  
   
 ## <a name="user-action"></a>用户操作  
- 检查系统的密码同步帐户信息，并确保您的信息有效。 然后重新创建映射。 请注意，使用创建映射向导可降低无效映射信息的风险。 您可以删除失败的映射。 否则，将忽略失败的映射。
+ 检查您的系统，密码同步帐户信息，请确保你的信息有效。 然后重新创建映射。 请注意，使用创建映射向导可降低无效映射信息的风险。 您可以删除失败的映射。 如果不删除它，它将被忽略。

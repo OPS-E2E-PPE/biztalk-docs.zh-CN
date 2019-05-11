@@ -17,21 +17,21 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 57cd4e3e0cdcfe34dd172282ef83768eb63b93fa
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 166d3ef5817d4da9ea6b79bc9174b3a9117c086d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000791"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387382"
 ---
 # <a name="how-to-add-a-message-for-an-exception"></a>如何添加异常的消息
-当你首次创建一个端口到后端系统时，它包含请求和响应。 您必须添加一个信息，以便您可以将其分配给故障。  
+当你首次创建一个端口到后端系统时，它包含请求和响应。 必须添加一条消息，以便可以将其分配给该错误。  
   
-### <a name="to-add-a-fault-message"></a>添加错误消息  
+### <a name="to-add-a-fault-message"></a>若要添加错误消息  
   
 1. 在中**业务流程视图**窗口中，右键单击**消息**，然后选择**新消息**。  
   
-    由此将创建 Message_3，您可将其明确分配给该错误。  
+    这将创建 Message_3，您可以将其分配特定于该错误。  
   
 2. 右键单击**Message_3**，然后选择**属性**。  
   

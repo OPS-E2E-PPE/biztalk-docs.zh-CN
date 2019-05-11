@@ -1,5 +1,5 @@
 ---
-title: Windows Communication Foundation 中的操作 |Microsoft 文档
+title: Windows Communication Foundation 中的操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c6b5344b8fb2c5a5ba7a68b112adb50133198c3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f43e6eb64e73c072830072a1fdd11dcefef25e32
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263765"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65263035"
 ---
 # <a name="operations-in-windows-communication-foundation"></a>Windows Communication Foundation 中的操作
 本部分包含 BAM WCF 侦听器支持的自定义操作。  
   
- 注意，如果操作名称元素包含 Action 属性：  
+ 请注意，如果操作名称元素包含 Action 属性：  
   
-1.  操作名称是由客户端和服务器的名称属性共同标识的。  
+1.  操作名称是由 name 属性标识的客户端和服务器，  
   
-2.  对于答复路径（回调答复）、客户端答复和服务答复，操作名称由 name 属性标识。  
+2.  对于答复路径 （回调答复），客户端答复和服务答复，操作名称由 name 属性标识。  
   
 > [!NOTE]
->  答复消息中有一个节点将通过在由 name 属性指定的名称后面附加单词“Result”来命名。 您必须确保 XPaths 遵从此命名约定。  
+>  答复消息有一个节点将名为后面附加单词"Result"由 name 属性指定的名称。 您必须确保 xpaths 遵从此命名约定。  
   
 ## <a name="in-this-section"></a>本节内容  
   

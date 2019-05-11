@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ee3d7df759dab97dca6a2e7677abb0bad15f8cd7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dcb3c26b684af381556a82684d94e9b13209dc75
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022875"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345940"
 ---
 # <a name="exporting-bindings"></a>导出绑定
 在本部分中的主题介绍如何导出 BizTalk 组、 程序集或到.xml 文件的应用程序的绑定。 (绑定定义如何主机、 发送端口、 发送端口组、 接收端口、 接收位置，参与方是与业务流程、 管道、 映射和架构相关联。)你可以然后绑定导入从.xml 文件到另一个组或应用程序。 导入绑定将覆盖所有现有组或应用程序中具有相同名称的绑定。 此外可以将绑定添加到应用程序，不会覆盖现有绑定。 导入应用程序添加的绑定会生效。  
@@ -41,7 +41,7 @@ ms.locfileid: "37022875"
 >  绑定文件可能包含敏感数据。 请务必采取措施来保护文件。  
   
 > [!NOTE]
->  出于安全方面的原因，如果导出绑定文件，BizTalk Server 会从该文件中删除绑定的密码。 在导入绑定后，必须为发送端口和接收位置重新配置密码，它们才能正常运行。 您需要在 BizTalk Server 管理控制台的“传输属性”对话框中为发送端口或接收位置配置密码。 有关说明，请参阅[如何创建发送端口](../core/how-to-create-a-send-port2.md)。 另请参阅[如何创建接收位置](../core/how-to-create-a-receive-location.md)。  
+>  出于安全原因，在导出绑定文件时 BizTalk Server 将从文件删除绑定密码。 导入绑定之后, 必须重新配置为发送端口的密码，并接收位置，它们才能正常。 发送端口在 BizTalk Server 管理控制台的传输属性对话框中配置密码，或接收位置。 有关说明，请参阅[如何创建发送端口](../core/how-to-create-a-send-port2.md)。 另请参阅[如何创建接收位置](../core/how-to-create-a-receive-location.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
   

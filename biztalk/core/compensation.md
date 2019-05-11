@@ -1,5 +1,5 @@
 ---
-title: 补偿 |Microsoft 文档
+title: 补偿 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -20,29 +20,29 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0c572638ea6212c3fb79e6b239aa8ffbe713c3c8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: eba08eecad12c08a3bebd6f4704d7df82b74d279
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231597"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357890"
 ---
 # <a name="compensation"></a>补偿
-如果出现错误，并且你需要撤消或反向成功提交事务的效果，你可以这样做将补偿代码添加到您的业务流程。  
+如果发生错误，并且需要进行撤消或已成功提交事务的影响，就可以做到补偿代码添加到您的业务流程。  
   
- 事务成功完成其操作后，可以调用补偿。 此时，已知的业务流程的状态，并且状态信息可供中的补偿，这意味着你可以编写代码以采取相应措施具体取决于业务流程的状态在事务提交时的代码。  
+ 事务已成功完成其操作后，可以调用补偿。 此时，业务流程的状态已知的并且状态信息可供补偿，这意味着您可以编写代码时采取相应措施具体取决于业务流程的状态的事务提交中的代码。  
   
- 也可以在原子事务提供补偿。 原子事务提交后，可以仅调用这些补偿。 你需要编写代码以撤消或反向补偿在正常执行路径中。  
+ 也可以在原子事务提供补偿。 这些补偿只能在原子事务提交后调用。 您需要编写代码可以撤消的补偿中的常规执行路径。  
   
- 补偿块是灵活;它可以包含任何其他形状，包括另一个事务范围。  
+ 补偿模块是灵活;它可以包含其他任何形状，包括另一个事务作用域。  
   
 > [!NOTE]
->  你可以执行一次在给定作用域上的补偿。  
+>  你可以执行补偿只能一次在给定作用域。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [如何配置 Compensate 形状](../core/how-to-configure-the-compensate-shape.md)  
+-   [如何配置补偿形状](../core/how-to-configure-the-compensate-shape.md)  
   
--   [如何将自定义补偿添加到业务流程](../core/how-to-add-custom-compensation-to-an-orchestration.md)  
+-   [如何向业务流程添加自定义补偿](../core/how-to-add-custom-compensation-to-an-orchestration.md)  
   
 -   [如何添加补偿块](../core/how-to-add-a-compensation-block.md)

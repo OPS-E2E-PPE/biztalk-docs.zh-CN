@@ -1,5 +1,5 @@
 ---
-title: GetActivityType |Microsoft 文档
+title: GetActivityType | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 67e6f31331907e20e810c11e82002fb08b89abe4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ded881aa0d7e952ed9fd425c2006982973f3ac5d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246413"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387697"
 ---
 # <a name="getactivitytype"></a>GetActivityType
-将当前活动类型的名称推送到堆栈上。  
+将推送到堆栈上的当前活动类型的名称。  
   
 ## <a name="syntax"></a>语法  
   
@@ -33,26 +33,26 @@ ms.locfileid: "22246413"
  无。  
   
 ## <a name="pushed-value"></a>推送的值  
- 包含当前活动类型且采用了程序集限定类名格式的字符串。  
+ 包含程序集限定类名格式中的当前活动类型的字符串。  
   
-## <a name="remarks"></a>注释  
- `GetActivityType`操作检索当前的活动类型，并将其放在程序集限定类名的格式中的堆栈：  
+## <a name="remarks"></a>备注  
+ `GetActivityType`操作检索当前活动类型，并将其放在程序集限定类名格式中的堆栈：  
   
 ```  
 TopNamespace.SubNameSpace.ContainingClass+NestedClass, MyAssembly, Version=1.3.0.0, Culture=neutral, PublicKeyToken=b17a5c561934e08, processorArchitecture=MSIL  
 ```  
   
- 进行比较时，您可以指定尽可能多的类型，以满足您的特定搜索需求。 例如，您可以将 GetActivityType 的结果与常数比较：  
+ 在比较时，您可以指定尽可能多的类型，以满足您的特定搜索需求。 例如，您可以比较常量与 GetActivityType 的结果：  
   
  TopNamespace.SubNameSpace.ContainingClass+NestedClass, MyAssembly, Version=1.3.0.0  
   
- 这比程序集限定类名格式的限制更少。  
+ 这是限制性比程序集限定类名格式。  
   
 ## <a name="special-filter-behavior"></a>特殊筛选器行为  
- 在筛选器内部执行此操作时，还将始终匹配派生的活动。  
+ 在筛选器内部执行此操作时，也始终匹配派生的活动。  
   
 ## <a name="example"></a>示例  
- 下面的示例包含计算结果将为事件筛选器表达式`true`为`System.Workflow.ComponentModel.Activity`实例和从其中派生类中的所有实例`System.Workflow.ComponentModel.Activity`。  
+ 下面的示例包含的事件筛选器表达式的计算结果将为`true`有关`System.Workflow.ComponentModel.Activity`实例和派生的类中的任何实例`System.Workflow.ComponentModel.Activity`。  
   
 ```  
 <ic:Expression>  

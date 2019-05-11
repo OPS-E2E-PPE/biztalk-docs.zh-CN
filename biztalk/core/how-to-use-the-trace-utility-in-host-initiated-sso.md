@@ -1,5 +1,5 @@
 ---
-title: 如何在主机上使用跟踪实用程序启动的 SSO |Microsoft 文档
+title: 如何在主机中使用跟踪实用工具启动的 SSO |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,40 +15,40 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ebb2003cc6091e3f14bd863902e03649d9005722
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: ed0b0a77881cba6de26454f51c6f6f8e21103e90
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25973451"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333173"
 ---
-# <a name="how-to-use-the-trace-utility-in-host-initiated-sso"></a>如何在主机上使用跟踪实用程序启动的 SSO
-故障排除的主要方法是跟踪。  
+# <a name="how-to-use-the-trace-utility-in-host-initiated-sso"></a>如何在主机中使用跟踪实用工具启动的 SSO
+故障排除的主要方法跟踪。  
   
 ## <a name="tracing"></a>跟踪  
  使用 Trace 命令行实用工具在 SSO 中启用跟踪。  
   
 > [!NOTE]
->  为了使 trace 命令起作用，文件 tracelog.exe 必须位于以下目录中：  
+>  Trace 命令起，文件 tracelog.exe 必须在以下目录中：  
 >   
->  \<*驱动器*\>: \program Files\Enterprise 单一登录  
+>  \<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on  
   
 > [!NOTE]
->  你可以从以下位置下载此文件： [http://go.microsoft.com/fwlink/?LinkId=59534](http://go.microsoft.com/fwlink/?LinkId=59534)  
+>  可以从以下位置下载此文件： [http://go.microsoft.com/fwlink/?LinkId=59534](http://go.microsoft.com/fwlink/?LinkId=59534)  
   
-#### <a name="to-use-the-trace-utility"></a>若要使用跟踪实用程序  
+#### <a name="to-use-the-trace-utility"></a>若要使用跟踪实用工具  
   
 1.  在 **“开始”** 菜单上，单击 **“运行”**。  
   
-2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
+2.  在中**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
+3.  在命令行中，转至企业单一登录安装目录。 默认值是\<驱动器\>: \Program Files\Common Files\Enterprise Single Sign-on。  
   
-4.  类型**跟踪 – start – 高**若要将跟踪级别设置为高，并开始跟踪。  
+4.  类型**Trace – start – high**将跟踪级别设置为高并开始跟踪。  
   
-5.  运行主机启动的 SSO 的方案。  
+5.  运行方案中使用主机启动的 SSO。  
   
-6.  类型**跟踪 – 停止**结束跟踪。 将在上述目录中生成 .bin 文件，可以将其发送到 Microsoft 以进行分析。  
+6.  类型**Trace – 停止**以结束跟踪。 在更高版本，您可以发送给 Microsoft 进行分析的目录中生成.bin 文件。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [主机启动的 SSO](../core/host-initiated-sso.md)

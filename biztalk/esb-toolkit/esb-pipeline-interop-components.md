@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 794ce6407d10fc820444384550357f10d24f7723
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1dc0693ca97928b4b5977a9969da667423d13ce1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024236"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306102"
 ---
 # <a name="esb-pipeline-interop-components"></a>ESB 管道互操作组件
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]提供支持组件和服务，包括以下：  

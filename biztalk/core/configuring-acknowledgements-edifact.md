@@ -12,27 +12,27 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 269acfa79808f133f4332371d98e491fc8a0b2e1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 869d65f81c280e608b636d4bd9f1292d47d47172
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991366"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356347"
 ---
-# <a name="configuring-acknowledgements-edifact"></a>配置确认(EDIFACT)
-在合作伙伴协议中，可以指定将何种类型的确认返回给参与方以及在发送确认时使用何种发送端口。 还可以指定是否对确认进行批处理、为确认使用哪个起始事务集参考编号以及是否为接受的事务集生成 SG1/SG4 循环。  
+# <a name="configuring-acknowledgements-edifact"></a>配置确认 (EDIFACT)
+在合作伙伴协议中，可以指定哪种类型的确认返回给参与方以及什么类型的发送端口以使用在发送确认。 您还指定是否批处理确认哪些的起始事务集参考编号对，是是否为接受的事务集生成 SG1/SG4 循环。  
   
 > [!IMPORTANT]
 >  以下属性禁用此页上，如果您清除**本地 BizTalk 处理参与方或支持来自此参与方发送消息的接收的消息**要为其创建的参与方时的复选框协议。  
 > 
 > - **生成为接受的事务集 SG1/SG4 循环 （如果未选中，将生成循环仅当 UCM.5 不等于 7）**。  
 > 
->   仅在与从参与方发送交换的属性相对应的单向协议选项卡上禁用这些属性。 例如，如果创建两个参与方 Party A 和参与方 B，并且对于参与方 A 清除该复选框，上述列表中的属性上禁用**参与方 A-> 参与方 B**单向协议选项卡。  
+>   仅在与参与方所发送交换的属性相对应的单向协议选项卡上禁用这些属性。 例如，如果创建两个参与方 Party A 和参与方 B，并且对于参与方 A 清除该复选框，上述列表中的属性上禁用**参与方 A-> 参与方 B**单向协议选项卡。  
   
-## <a name="prerequisites"></a>必要條件  
- 必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组或 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators 组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 必须以成员的身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理员或[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]B2B Operators 组。  
   
-### <a name="to-configure-edifact-ack-contrl-properties"></a>配置 EDIFACT 确认 (CONTRL) 属性  
+### <a name="to-configure-edifact-ack-contrl-properties"></a>若要配置 EDIFACT 确认 (CONTRL) 属性  
   
 1.  创建 EDIFACT 编码协议，如中所述[配置常规设置 (EDIFACT)](../core/configuring-general-settings-edifact.md)。 若要更新现有的协议，请右键单击中的协议**参与方和业务配置文件**页，然后单击**属性**。  
   

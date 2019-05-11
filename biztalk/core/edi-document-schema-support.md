@@ -1,5 +1,5 @@
 ---
-title: EDI 文档架构支持 |Microsoft 文档
+title: EDI 文档架构支持 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 728dd2b0766ee700846bfe0c702d739a3ab04eb5
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 5e0986946a5468da4399d69120c2e685df0f0b7d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26004822"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65350587"
 ---
 # <a name="edi-document-schema-support"></a>EDI 文档架构支持
-本部分列出与 BizTalk Server 提供的特定 EDI 事务集架构。  
+本部分列出了与 BizTalk Server 提供的特定 EDI 事务集架构。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -38,5 +38,5 @@ ms.locfileid: "26004822"
   
 -   [EANCOM](../core/eancom.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [EDI 支持问题](../core/edi-support-issues.md)

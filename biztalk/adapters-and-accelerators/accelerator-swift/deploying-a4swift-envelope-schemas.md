@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ae07b6b957f608e89c3ae65802d6627440201a65
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7f8b8771a87838590a5653f34b9ab266259cd850
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004142"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378318"
 ---
 # <a name="deploying-a4swift-envelope-schemas"></a>部署 A4SWIFT 信封架构
 设置消息修复和新提交时，必须在架构项目中包括信封架构。 信封架构，如 EnvelopeMT103.xsd，需要写入 MRSR 站点。  

@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6c06a3f2fd55dc720fd0d37beaea49de76cbf101
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f56c7f70822a37a7da5211eb8be0604b1e9f5a6b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004222"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388091"
 ---
-# <a name="field-element-nodes"></a>“字段元素”节点
+# <a name="field-element-nodes"></a>字段元素节点
 
 ## <a name="overview"></a>概述
 在 BizTalk 编辑器中，使用**Field 元素**节点可以是简单在本质上，如字符串和数字信息的项进行说明。 此外，它们用于时有问题的信息显示为一条消息，而不是显示为一个 XML 元素与关联的属性的值的实际实例中的 XML 元素的内容。 有关其他信息存储为属性值的信息，请参阅[字段属性节点](../core/field-attribute-nodes.md)。  

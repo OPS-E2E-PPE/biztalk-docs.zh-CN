@@ -1,5 +1,5 @@
 ---
-title: 步骤 3： 导入公用和私用证书 |Microsoft Docs
+title: 步骤 3：导入公用和私用证书 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,20 +18,20 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 18074fd3b72322d79e10895214352837ccf907bd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 125eaf54bc30411b20e114c9e26ebf292a1c40be
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002342"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281057"
 ---
-# <a name="step-3-importing-public-and-private-certificates"></a>步骤 3： 导入公用和私用证书
-在此步骤中创建的证书导入[步骤 2： 创建公用和私用证书&#91;RN3&#93; ](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-public-and-private-certificates.md)到 Contoso 和 Fabrikam 计算机。 每台计算机将导入自己的私用证书和对方组织的公用证书。  
+# <a name="step-3-importing-public-and-private-certificates"></a>步骤 3：导入公用和私用证书
+在此步骤中创建的证书导入[步骤 2:创建公用和私用证书&#91;RN3&#93; ](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-public-and-private-certificates.md)到 Contoso 和 Fabrikam 计算机。 每台计算机导入其自己的私有证书并在另一组织的公用证书。  
   
 > [!NOTE]
->  你必须将 Fabrikam 私用证书和 Contoso 公用证书传输至 Fabrikam 计算机以导入它们。 此步骤假设你将这些证书存放在 Fabrikam 计算机的 C:\Certs 文件夹中。  
+>  必须将 Fabrikam 私用证书和 Contoso 公用证书传输到 Fabrikam 计算机导入它们。 此步骤假定你将这些证书的 C:\Certs 文件夹中的 Fabrikam 计算机上。  
   
-### <a name="to-import-the-contoso-private-certificates-on-the-contoso-computer"></a>在 Contoso 计算机上导入 Contoso 私用证书  
+### <a name="to-import-the-contoso-private-certificates-on-the-contoso-computer"></a>若要导入 Contoso 私用证书 Contoso 计算机上  
   
 1. 在 Contoso 计算机上，单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
@@ -44,15 +44,15 @@ ms.locfileid: "37002342"
 5. 在**输入密码，用于标识 < contoso 计算机 > \HostSvc**提示中，键入 HostSvc 帐户密码，然后按**Enter**。  
   
    > [!NOTE]
-   >  如果你的 BizTalkServerApplication 在非 HostSvc 的帐户名下运行，则提示符会有所不同。  
+   >  如果你的 BizTalkServerApplication 在非 HostSvc 的帐户名下运行，在提示符下必须不同。  
   
 6. 在**此本组织证书将用于**提示符下，键入**D**，然后按**Enter**。  
   
-    CertWizard 会将证书导入用户帐户（BizTalkServerApplication 和 BizTalkServerIsolatedHost 主机在该用户帐户下运行）的 \“个人”\“证书”存储区中。  
+    CertWizard 将证书导入 BizTalkServerApplication 和 BizTalkServerIsolatedHost 主机下运行的用户帐户的 \Personal\Certificates 存储。  
   
 7. 重复步骤 3-6 Contoso Private Signature.pfx 证书指定它是签名证书，通过键入**S**处**此本组织证书将用于**提示符在步骤 6 中所述。  
   
-### <a name="to-import-the-fabrikam-public-certificates-on-the-contoso-computer"></a>在 Contoso 计算机上导入 Fabrikam 公用证书  
+### <a name="to-import-the-fabrikam-public-certificates-on-the-contoso-computer"></a>若要导入 Fabrikam 公用证书在 Contoso 计算机上  
   
 1.  在 Contoso 计算机上，单击**启动**，单击**运行，请**类型**cmd**，然后单击**确定**。  
   
@@ -62,9 +62,9 @@ ms.locfileid: "37002342"
   
 4.  为 Fabrikam Public Signature.cer 证书重复步骤 3。  
   
-### <a name="to-import-the-fabrikam-private-certificates-on-the-fabrikam-computer"></a>在 Fabrikam 计算机上导入 Fabrikam 私用证书  
+### <a name="to-import-the-fabrikam-private-certificates-on-the-fabrikam-computer"></a>若要导入 Fabrikam 私用证书 Fabrikam 计算机上  
   
-1.  将以下文件从 Contoso 计算机添加到复制\<驱动器\>: Fabrikam 计算机上的 \Certs 文件夹： Contoso Public Encryption.cer、 Contoso Public Signature.cer、 Fabrikam Private Encryption.pfx 和 Fabrikam PrivateSignature.pfx。  
+1.  将以下文件从 Contoso 计算机添加到复制\<驱动器\>: \Certs 文件夹 Fabrikam 计算机上：Contoso Public Encryption.cer、 Contoso Public Signature.cer、 Fabrikam Private Encryption.pfx 和 Fabrikam Private Signature.pfx。  
   
 2.  在 Fabrikum 计算机上，单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
@@ -77,15 +77,15 @@ ms.locfileid: "37002342"
 6.  在**输入密码，用于标识 < fabrikam_machine > \HostSvc**提示中，键入 HostSvc 帐户密码，然后按**Enter**。  
   
     > [!NOTE]
-    >  如果你的 BizTalkServerApplication 在非 HostSvc 的帐户名下运行，则提示符会有所不同。  
+    >  如果你的 BizTalkServerApplication 在非 HostSvc 的帐户名下运行，在提示符下必须不同。  
   
 7.  在**此本组织证书将用于**提示符下，键入**D**，然后按**Enter**。  
   
-     CertWizard 会将证书导入用户帐户（BizTalkServerApplication 和 BizTalkServerIsolatedHost 主机在该用户帐户下运行）的 \“个人”\“证书”存储区中。  
+     CertWizard 将证书导入 BizTalkServerApplication 和 BizTalkServerIsolatedHost 主机下运行的用户帐户的 \Personal\Certificates 存储。  
   
 8.  重复步骤 4-7 为 Fabrikam Private Signature.pfx 证书来指定它签名证书，通过键入**S**处**此本组织证书将用于**提示在步骤 6 中。  
   
-### <a name="to-import-the-contoso-public-certificates-on-the-fabrikam-computer"></a>在 Fabrikam 计算机上导入 Contoso 公用证书  
+### <a name="to-import-the-contoso-public-certificates-on-the-fabrikam-computer"></a>若要导入 Contoso 公用证书在 Fabrikam 计算机上  
   
 1.  在 Fabrikum 计算机上，单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   

@@ -1,5 +1,5 @@
 ---
-title: 错误-提升的属性 Max Occurs |Microsoft 文档
+title: 错误-已升级的属性 Max Occurs |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a9c8395757d19eff5241d47c31b15409a00b6faf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9fcaf06dc0fccbf838c401343b3ce1e8f3b538ca
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239861"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65347049"
 ---
-# <a name="error---promoted-property-max-occurs"></a>发生错误的最大提升的属性
+# <a name="error---promoted-property-max-occurs"></a>错误-已升级的属性 Max Occurs
 **错误代码**  
   
  BEC2002  
   
  **说明**  
   
- 设置**Max Occurs**属性要升级的节点或其上级节点，之一是与属性提升不兼容。 对于可能会在实例消息中多次出现的节点而言，不能进行属性升级。 因此， **Max Occurs**从回根节点正在升级的节点的所有节点的属性必须设置为 1。  
+ 设置**Max Occurs**或某个祖先节点，要升级的节点的属性是与属性升级不兼容。 可以在实例消息中多次出现的节点不允许使用属性升级。 因此， **Max Occurs**从要升级到的根节点的节点的所有节点的属性必须设置为 1。  
   
  **用户执行任何操作**  
   
- 确保**Max Occurs**要升级的节点和所有其祖先节点的属性设置为一 (1)。
+ 絋粄**Max Occurs**要升级的节点及其所有祖先节点的属性设置为一 (1)。

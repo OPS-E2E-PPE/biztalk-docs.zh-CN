@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 476b510396d29d5f4e85a13ed7c3bca3ee3fcef3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2165168f092dfb2e3b82116b1fb32153b5f4551f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971718"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65324604"
 ---
 # <a name="missing-or-invalid-or-duplicate-transaction-set-identifier"></a>事务集标识符缺失或无效或重复
 ## <a name="details"></a>详细信息  

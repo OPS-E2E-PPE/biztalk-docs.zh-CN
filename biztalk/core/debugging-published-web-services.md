@@ -1,5 +1,5 @@
 ---
-title: 调试已发布的 Web 服务 |Microsoft 文档
+title: 调试已发布的 Web 服务 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,15 +14,15 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ccda44898f5885f8165fe21835164b38de6630b4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1af327d7cad27b473b81df1897b89d02d43fe2fd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238373"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65352491"
 ---
-# <a name="debugging-published-web-services"></a>调试已发布的 Web Services
-本节介绍有关调试已发布 Web Services 的信息。  
+# <a name="debugging-published-web-services"></a>调试已发布的 Web 服务
+本部分提供有关调试已发布的 Web services 的信息。  
   
 ## <a name="in-this-section"></a>本节内容  
   

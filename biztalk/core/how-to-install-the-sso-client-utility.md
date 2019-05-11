@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 674ecc3857fe9e5b5cbef2914aec875f350d7de5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cc7970f397c8b5c076edd7bf0f29e3d7cf8becd3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003958"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384918"
 ---
 # <a name="how-to-install-the-sso-client-utility"></a>如何安装 SSO 客户端实用工具
 独立的 SSO 客户端实用工具 （命令行实用程序和用户界面基于） 允许最终用户在 SSO 数据库中配置其客户端映射。 可以从与 SSO 管理功能一起安装的自解压缩文件 (SSOClientInstall.exe) 安装客户端实用工具。 管理员还可以安装程序包提供给客户端用户通过将安装程序包的副本放在网络共享上。  
@@ -31,7 +31,7 @@ ms.locfileid: "37003958"
   
 - [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]  
   
-- [!INCLUDE[btsDotNetFramework3.5](../includes/btsdotnetframework3-5-md.md)] 或 [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]（仅当使用基于 UI 的 SSO 客户端实用工具或利用企业 SSO 的托管互操作组件时才需要）。  
+- [!INCLUDE[btsDotNetFramework3.5](../includes/btsdotnetframework3-5-md.md)] 或[!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)](只需使用基于 UI 的 SSO 客户端实用工具或利用企业 SSO 的托管互操作性组件)。  
   
   安装 SSO 客户端实用工具后, 可以启动从**启动**菜单中单击**程序**， **Microsoft 企业单一登录**，，然后**SSO 客户端实用工具**。  
   

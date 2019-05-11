@@ -1,5 +1,5 @@
 ---
-title: 步骤 8： 使用 BizTalk 映射器创建映射 |Microsoft Docs
+title: 步骤 8：与 BizTalk 映射器创建映射 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,17 +17,17 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1b9edeca21fe9967f816f05d2ceb12ffe5c5ded
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 973dde183178be48feeea2613c0cf6964c9f3efa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968454"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65287864"
 ---
-# <a name="step-8-create-a-map-with-biztalk-mapper"></a>步骤 8： 使用 BizTalk 映射器创建映射
+# <a name="step-8-create-a-map-with-biztalk-mapper"></a>步骤 8：与 BizTalk 映射器创建映射
 在此步骤中，使用 BizTalk 映射器创建映射。 就使用此映射来创建将数据 （字段） 相关联的链接请求被拒绝文档中的数据中的补货请求文档中。  
   
-### <a name="to-create-a-map"></a>创建映射的步骤  
+### <a name="to-create-a-map"></a>若要创建映射  
   
 1. 在解决方案资源管理器中右键单击**BTAHL7 项目**，依次指向**添加**，然后单击**新项**。  
   
@@ -59,7 +59,7 @@ ms.locfileid: "36968454"
   
     在典型的消息扩充方案中，如果任何患者信息已丢失，则会调用患者记录数据库中您的业务流程和添加缺少的信息，然后使用的其他信息以完成映射。 例如，由于入站的 XML 门铃触发器事件消息未提供，因此可能会从患者记录数据库中，检索患者的家庭地址。  
   
-    请继续执行[步骤 9： 验证和生成映射项目](../../adapters-and-accelerators/accelerator-hl7/step-9-validate-and-build-the-map-project.md)。  
+    请继续执行[步骤 9:验证并生成映射项目](../../adapters-and-accelerators/accelerator-hl7/step-9-validate-and-build-the-map-project.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [消息充实教程](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

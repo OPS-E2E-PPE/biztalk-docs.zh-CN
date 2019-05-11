@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f3c006f5de761837ec1ed0d6f983d380a76a50a5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 931d829d37e6fdb594746598164a4b189c75a763
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010046"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383878"
 ---
 # <a name="how-to-show-and-hide-compiler-links"></a>如何显示和隐藏编译器链接
 在编译映射时，BizTalk 映射器将创建名为编译器链接以说明在映射中所需的所有链接的其他链接。 下面的链接的一些仅隐含你创建的链接。 当编译，或测试映射，在 Visual Studio 输出窗口中的最后一行，可显示或隐藏在主窗口中的这些其他编译器链接。 默认情况下，编译器链接显示为红色虚线。  

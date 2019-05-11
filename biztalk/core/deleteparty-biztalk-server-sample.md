@@ -19,49 +19,49 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a6d6d488bf7431f805e8719e10fe17cef7d13fa4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1f188fb4b77babeb6e64260bc37004a6b15b7d28
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982958"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65352190"
 ---
 # <a name="deleteparty-biztalk-server-sample"></a>DeleteParty （BizTalk Server 示例）
 DeleteParty 示例演示如何删除指定参与方。  
   
 > [!WARNING]
->  部署后，如果不再需要部署脚本，则应将其删除。 应通过 ACL 确保必须保留的管理脚本和其他脚本的安全并加以密切监视。  
+>  如果不需要应在部署后删除的部署脚本。 管理脚本和其他必须保持的脚本应受 ACL 并加以密切监视。  
   
 > [!NOTE]
->  在删除参与方之前，必须先创建一个参与方。 执行操作的一种方法是运行[PartyResolution （BizTalk Server 示例）](../core/partyresolution-biztalk-server-sample.md)示例。  
+>  删除参与方之前，必须首先创建一个。 执行操作的一种方法是运行[PartyResolution （BizTalk Server 示例）](../core/partyresolution-biztalk-server-sample.md)示例。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
   
 - 您必须具有 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理权限才能使用此示例中的管理对象。  
   
-- Windows PowerShell 脚本需要 Windows PowerShell 执行策略以允许脚本执行。 有关详细信息请参阅：[检查执行策略](http://go.microsoft.com/fwlink/?LinkId=128930)。  
+- Windows PowerShell 脚本需要 Windows PowerShell 执行策略以允许脚本执行。 有关详细信息，请参阅：[检查执行策略](http://go.microsoft.com/fwlink/?LinkId=128930)。  
   
 ## <a name="what-this-sample-does"></a>本示例的用途  
- 本示例以 Microsoft Visual C# 编写，该示例使用 BizTalk 浏览器对象模型 (ExplorerOM) 中的对象执行下列操作：  
+ 此示例中，Microsoft 视觉对象中写入C#，使用 BizTalk 浏览器对象模型 (ExplorerOM) 中的对象，将执行以下操作：  
   
--   查询指定参与方。  
+-   指定参与方的查询。  
   
--   删除此参与方。  
+-   删除该参与方。  
   
--   处理所有错误，以便向用户返回有意义的信息。  
+-   处理任何错误，以便向用户返回有意义的信息。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
  此示例将位于以下 SDK 位置：  
   
- \<*示例路径*\>\Admin\ExplorerOM\DeleteParty\  
+ \<*Samples Path*\>\Admin\ExplorerOM\DeleteParty\  
   
  下表显示了本示例中的文件及其用途说明：  
   
 |文件|Description|  
 |---------------|-----------------|  
-|App.ico、AssemblyInfo.cs、DeleteParty.csproj、DeleteParty.sln 和 DeleteParty.cs|用于生成删除指定参与方的 Visual C# 命令行应用程序的项目、解决方案和源文件。|  
+|App.ico、 AssemblyInfo.cs、 DeleteParty.csproj、 DeleteParty.sln 和 DeleteParty.cs|项目、 解决方案和源代码文件生成视觉对象C#命令行中删除指定参与方的应用程序。|  
   
-### <a name="to-build-and-initialize-this-sample"></a>构建和初始化此示例  
+### <a name="to-build-and-initialize-this-sample"></a>若要生成并初始化本示例  
   
 1. 在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，打开 DeleteParty.sln 解决方案文件。  
   
@@ -69,13 +69,13 @@ DeleteParty 示例演示如何删除指定参与方。
   
 ### <a name="to-run-this-sample"></a>运行本示例的步骤  
   
-1. 在命令窗口中，导航到下面的文件夹：  
+1. 在命令窗口中，导航到以下文件夹：  
   
-    \<*示例路径*\>\Admin\ExplorerOM\DeleteParty\bin\Debug\  
+    \<*Samples Path*\>\Admin\ExplorerOM\DeleteParty\bin\Debug\  
   
-2. 运行 DeleteParty.exe 文件，并传递下面两个命令行参数之一：  
+2. 运行 DeleteParty.exe，传递两个以下的命令行参数之一的文件：  
   
-   - **\<** ***PartyName* \>。** 要删除的参与方的名称。 如果参与方名称包含空格，则将该名称置于引号中。  
+   - **\<** ***PartyName* \>.** 要删除的参与方的名称。 如果参与方名称包含空格，将名称括起来。  
   
    - **/?.** 显示帮助。  
   
@@ -134,7 +134,7 @@ else
 }  
 ```  
   
- 该脚本示例希望将单个参与方名称作为命令行参数来传递。  它通过名称来查找该参与方，并尝试将其删除。  如果没有传递命令行参数给脚本，则该脚本会列出本地 Biztalk Server 上的所有参与方。 下面是该脚本的示例输出：  
+ 脚本示例需要一个单个参与方名称作为命令行参数进行传递。  它按名称查找该参与方，并尝试将其删除。  如果没有命令行参数传递给它，该脚本会列出本地 Biztalk 服务器上的所有参与方。 下面是脚本的示例输出：  
   
 ```  
 PS C:\> .\DeletePart.ps1  

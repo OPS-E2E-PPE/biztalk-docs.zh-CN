@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10513 |Microsoft Docs
+title: 单一登录：Event 10513 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c61b1b861cb14ec0d16dce27fd26360df7fcdc98
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7ec0cb1df806771e3676bcd580be2965498b618a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981622"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243397"
 ---
-# <a name="single-sign-on-event-10513"></a>单一登录： 事件 10513
+# <a name="single-sign-on-event-10513"></a>单一登录：事件 10513
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                      |
@@ -33,18 +33,18 @@ ms.locfileid: "36981622"
 |  消息正文   | 无法与 SSO 数据库取得联系: %1 %r<br /><br /> %2%r<br /><br /> 错误代码： %3 |
 
 ## <a name="explanation"></a>解释  
- 此错误事件表明，SSO 服务在启动时无法连接到 SSO 数据库。 事件消息包含数据源名称 (DSN) 字符串（表明指定的 SQL Server 和数据库名称），以及从 SQL 连接库返回的错误消息。  
+ 此错误事件表示 SSO 服务无法连接到 SSO 数据库启动时。 事件消息包含数据源名称 (DSN) 字符串，该值指示指定的 SQL Server 和数据库名称，以及从 SQL 连接库返回的错误消息。  
 
- 当 SSO 服务启动时，它将尝试使用在注册表中指定的 SQL Server 和 SSO 数据库名称连接到 SSO 数据库。 SSO 服务将尝试进行 12 次连接，每次尝试失败后再等待 5 秒钟重试，总共 1 分钟。  
+ SSO 服务启动时，它将尝试连接到 SSO 数据库使用在注册表中指定的 SQL Server 和 SSO 数据库名称。 SSO 服务将尝试连接 12 倍，等待 5 秒每次失败尝试，总共 1 分钟之间。  
 
 ## <a name="user-action"></a>用户操作  
  若要解决此错误，请执行下列一项或多项操作:  
 
-- 验证 SQL Server (MSSQLSERVER) 服务是否正在运行。  
+- 验证 SQL Server (MSSQLSERVER) 服务正在运行。  
 
-- 验证错误消息中显示的数据源名称 (DSN) 字符串是否正确，以及是否包含正确的 SQL Server 和数据库名称。  
+- 验证错误消息中指示的数据源名称 (DSN) 字符串正确以及包含正确的 SQL Server 和数据库名称。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [实现企业单一登录](../core/implementing-enterprise-single-sign-on.md)  
 

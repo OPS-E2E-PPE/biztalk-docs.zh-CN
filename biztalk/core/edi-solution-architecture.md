@@ -12,23 +12,23 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d6c4ce03c9188a03b47cc2fbe3f67a8be163acdc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9df4d308af97e0fcccf52d2c6f42660afa7cf079
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009974"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65350255"
 ---
 # <a name="edi-solution-architecture"></a>EDI 解决方案体系结构
-电子数据交换 (EDI) 是业务实体以电子方式交换数据的最常见方式之一。 使用 EDI 必须了解消息语法和标准（包括 ANSI X12 和 UN/EDIFACT）、消息传送协议以及传输。 以下是 EDI 消息传送的一些特性：  
+电子数据交换 (EDI) 是通过业务实体数据以电子方式交换的最常见方式之一。 使用 EDI 必须了解消息语法和标准 （包括 ANSI X12 和 UN/EDIFACT），消息传送协议以及传输。 EDI 消息传送的特征如下：  
   
-- EDI 消息传送协议可确保数据始终如期到达，并自动检测和报告损坏的数据或不正确的数据。  
+- EDI 消息传送协议可确保数据始终如期到达，并损坏或不正确的数据自动检测和报告。  
   
-- EDI 机制通常指定数据聚合方案（批处理）。  
+- EDI 机制通常指定数据聚合方案 （批处理）。  
   
-- 用户常常通过实现部分 EDI 准则或特定 EDI 准则来自定义 EDI 文档定义。  
+- 用户通常通过实现子集或特定 EDI 准则来自定义 EDI 文档定义。  
   
-  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用特定于 EDI 的接收和发送管道处理 EDI 消息，这些管道可以对 EDI 消息进行分析和序列化。 本节介绍 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中的 EDI 解决方案的体系结构，包括接收端和发送端处理、消息验证和状态报告的细节。  
+  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 处理 EDI 消息使用接收和发送管道特定于 EDI 的可以解析和序列化 EDI 消息。 本部分介绍的 EDI 解决方案体系结构上[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，包括接收端和发送端处理、 消息验证和状态报告的细节。  
   
 ## <a name="in-this-section"></a>本节内容  
   

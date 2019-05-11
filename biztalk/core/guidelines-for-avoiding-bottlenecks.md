@@ -12,41 +12,41 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 45071b7990d8fd4a926efa56b9e98cbd633553ac
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: db480df2d47fdc03b1719ecfb17fdbb8f23eea41
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017805"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387565"
 ---
 # <a name="guidelines-for-avoiding-bottlenecks"></a>避免瓶颈的准则
-虽然 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中的默认设置可为许多硬件和软件配置提供最佳性能，但在某些情况下修改这些设置或部署配置可能更为有利。 配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 时，请参考下列性能指南：  
+尽管中的默认设置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]提供最佳性能的许多硬件和软件配置中，在某些情况下它可能会有所帮助修改这些设置或部署配置。 配置时[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，请参考以下性能指南：  
 
--   为阻止资源争用，应将接收、业务流程和发送隔离到不同的主机上。 为了进一步将资源争用降到最低，请隔离来自其他主机的跟踪服务。  
+-   若要避免资源争用，隔离接收、 业务流程，并将发送到单独的主机上。 可进一步减少争用，隔离从其他主机的跟踪服务。  
 
--   如果瓶颈为 BizTalk Server 的 CPU 处理能力，请通过纵向扩展 CPU 数量或升级到更快的 CPU 来提升 BizTalk Server 的性能。  
+-   如果处理 BizTalk Server 上的 CPU 是瓶颈，纵向扩展 BizTalk Server 通过包括更多的 Cpu 或升级到更快的 Cpu。  
 
 ## <a name="sql-server-guidelines"></a>SQL Server 的指导原则  
- 在使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 配置 Microsoft SQL Server 时，请参考以下性能指南：  
+ 配置与 Microsoft SQL Server 时，请考虑以下性能指南[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]:  
 
 - [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 应将数据库配置为只要有可能的专用 SQL Server 实例上运行。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 是数据库密集型应用程序，因此，分离[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机和承载的 SQL Server 计算机[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库会提高性能和最佳做法在生产环境中的应考虑[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境。  
 
-- 只要可能，请为 SQL Server 配置快速的磁盘子系统。 使用带备份电源的独立磁盘冗余阵列类型 5 (RAID5/10) 或存储区域网络 (SAN)。  
+- 只要可能，请使用 SQL Server 使用较快的磁盘子系统。 使用带备份电源的独立磁盘类型 5 (RAID5/10) 的冗余阵列或存储区域网络 (SAN)。  
 
-- 定期使用 SQL Server 灾难恢复进程备份您的数据库。 BizTalk Server 服务将自动从 SQL Server 连接故障中恢复。  
+- 使用 SQL Server 灾难恢复过程以定期备份您的数据库。 从 SQL Server 连接故障自动恢复 BizTalk Server 服务。  
 
-- 将所有 MessageBox 隔离到与 BizTalk 跟踪数据库 (BizTalkDTADb) 所在的服务器之外的其他服务器上。 对于更小型的部署，在 CPU 资源可用的情况下，可能可以将 MessageBox 隔离到 BizTalkDTADb 数据库所在物理磁盘之外的其他磁盘上。  
+- 隔离到 BizTalk 跟踪数据库 (BizTalkDTADb) 中的单独服务器上的每个消息框。 对于较小的部署在 CPU 资源可用，隔离到 BizTalkDTADb 数据库中的单独物理磁盘上的消息框可能足以。  
 
-- 主 MessageBox 可能会因 CPU 处理器的处理能力达到饱和或磁盘操作的延迟（平均磁盘队列长度）而成为瓶颈。 如果瓶颈为 CPU 处理能力，请为主 MessageBox 添加 CPU 处理器。 否则请尝试禁用这种方式，主 MessageBox 可更加高效地将消息路由到其他 MessageBox 数据库的主 MessageBox 上的发布。  
+- 主 MessageBox 可能是瓶颈，因为 CPU 处理器能力达到饱和或磁盘操作 （平均磁盘队列长度） 的延迟。 如果 CPU 处理瓶颈，为主 messagebox 添加 CPU 处理器。 否则请尝试禁用这种方式，主 MessageBox 可更加高效地将消息路由到其他 MessageBox 数据库的主 MessageBox 上的发布。  
 
-- 如果瓶颈为磁盘操作，请将 BizTalkDTADb 数据库移至专用的 SQL Server 计算机和/或专用磁盘。 如果主 MessageBox 中的 CPU 处理能力和磁盘操作均不是瓶颈，则您可在同一 SQL Server 计算机上创建新的 MessageBox 数据库，以充分利用您现有的硬件。  
+- 如果磁盘操作是瓶颈，BizTalkDTADb 数据库移到专用的 SQL Server 计算机和/或专用的磁盘。 如果主消息框上的 CPU 处理能力和磁盘操作均不是瓶颈，您可以在相同的 SQL Server 计算机，以利用现有硬件上创建新的 MessageBox 数据库。  
 
-- 按照 SQL Server 最佳实践将 MessageBox 和 BizTalkDTADb 数据库的事务和数据日志文件隔离到不同的物理磁盘上。  
+- 遵循 SQL Server 最佳做法来隔离到单独的物理磁盘上的 MessageBox 和 BizTalkDTADb 数据库的事务和数据日志文件。  
 
-- 为数据和日志文件分配足够的存储空间，否则 SQL Server 会自动将保存日志文件的磁盘中的所有可用空间全部用完。 日志文件的初始大小取决于您特殊情况的特定要求。 根据测试结果估计要部署的文件的平均大小，并在实施解决方案前扩展存储空间。  
+- 为数据和日志文件; 分配足够的存储空间否则 SQL Server 将自动使用所有这些日志文件保存在磁盘上的可用空间。 日志文件的初始大小将取决于您特殊情况的特定要求。 估计根据测试结果，在部署中的平均文件大小并实施解决方案前扩展存储空间。  
 
-- 为磁盘空间需求量大的数据库分配足够的存储空间，这些数据库有 MessageBox 数据库、跟踪数据库、业务活动监视 (BAM) 数据库。 如果您的解决方案使用 BizTalk 框架消息协议，请为 BizTalk 配置数据库 (BizTalkMgmtDb) 分配足够的存储空间。  
+- 对于高磁盘使用情况的数据库，如 MessageBox、 跟踪和业务活动监视 (BAM) 数据库分配足够的存储空间。 如果您的解决方案使用 BizTalk 框架消息传送协议，请为 BizTalk 配置数据库 (BizTalkMgmtDb) 分配足够的存储空间。  
 
-- 根据业务需求 [数据保留期] 和特定情况下要处理的数据量，配置跟踪数据库的存档/清除作业，以便 BizTalkDTADb 数据库不会增长得过于庞大。 此数据库的增长会降低性能（尤其一个 BizTalkDTADb 数据库支持多个 MessageBox 的情况），这是因为数据库中存满数据后，插入数据的速率会受到限制。  
+- 根据业务需求 [数据保留期] 和处理特定方案中的数据量，存档/清除作业配置跟踪数据库上，以便 BizTalkDTADb 数据库变得不太大。 （尤其是在一个 BizTalkDTADb 数据库支持多个消息框） 实施数据插入操作的速率限制到达数据库的全部容量，因为此数据库的增长会降低性能。  
 
-- 如果 MessageBox 和 BizTalkDTADb 数据库所在的服务器为瓶颈，请提升这些服务器的性能。 可通过增加 CPU 和内存、升级到更快的 CPU 和使用高速专用磁盘来纵向扩展硬件。
+- 纵向扩展它们是否瓶颈承载 MessageBox 和 BizTalkDTADb 数据库的服务器。 可以通过添加 Cpu、 添加内存、 升级到更快的 Cpu 和使用高速专用的磁盘来纵向硬件。

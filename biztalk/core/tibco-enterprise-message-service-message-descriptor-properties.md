@@ -1,5 +1,5 @@
 ---
-title: TIBCO EMS 消息描述符属性 |Microsoft 文档
+title: TIBCO EMS 消息描述符属性 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,35 +12,35 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c1a2a7d6529cffba6afa3969964d1ea436d7fcda
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 3684b21f7e37757a9d6ab3bf66e352d4518d33bd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24014820"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379902"
 ---
 # <a name="tibco-enterprise-message-service-message-descriptor-properties"></a>TIBCO Enterprise Message Service 消息描述符属性
 
 ## <a name="descriptor-properties-and-values"></a>描述符属性和值
-下表显示了可用的消息描述符（TibcoEMSMD 结构）属性的完整集以及其对应的类型和值：  
+下表显示了可用的消息描述符 （TibcoEMSMD 结构） 属性及其相应的类型和值的完整集。  
   
-|Name|类型|值|说明|  
+|“属性”|类型|ReplTest1|说明|  
 |----------|----------|-----------|-----------|  
-|TibcoEMS .CorrelationID|string|||  
+|TibcoEMS。相关 Id|string|||  
 |TibcoEMS .DelieveryMode|string|一个 PERSISENT 或 NON-PERSISTENT||  
-|TibcoEMS .Destination|string||只读|  
-|TibcoEMS .Expiration|long|||  
-|TibcoEMS .MessageID|string||只读|  
-|TibcoEMS .Priority|integer|从 0 到 9||  
-|TibcoEMS .Redelivered|boolean||只读|  
-|TibcoEMS .ReplyTo|string|类似于目标||  
-|TibcoEMS .Timestamp|long||只读|  
+|TibcoEMS。目标|string||只读|  
+|TibcoEMS。过期|long|||  
+|TibcoEMS。消息 Id|string||只读|  
+|TibcoEMS。优先级|integer|从 0 到 9||  
+|TibcoEMS。被重新传送|boolean||只读|  
+|TibcoEMS。ReplyTo|string|类似于目标||  
+|TibcoEMS。时间戳|long||只读|  
   
- 只读属性是在向用于 TIBCO EMS 的 Microsoft BizTalk 适配器发送消息时由 TIBCO Enterprise 消息服务设置的属性。 更改此值，尽管可能在消息分配形状的表达式中，但不影响消息。  
+ 只读属性是在用于 TIBCO EMS 的 Microsoft BizTalk 适配器传递消息时由 TIBCO Enterprise Message Service 设置这些属性。 更改此值，但也可以在消息赋值形状中，表达式中不会影响该消息。  
   
- 对于必须从 EMS 消息移动到 BizTalk Server 消息的其他属性，必须创建一个属性 DLL 并在该项目中使用它。  
+ 有关必须从 EMS 消息移动到 BizTalk Server 消息的其他属性，必须创建一个属性 DLL 并在项目中使用。  
   
- 以下示例属性架构使业务流程能够使用 `JMSXDeliveryCount` 消息属性。  
+ 以下示例属性架构使业务流程，以使用`JMSXDeliveryCount`消息属性。  
   
 ```  
 <?xml version="1.0" encoding="utf-16"?>  
@@ -60,7 +60,7 @@ ms.locfileid: "24014820"
 </xs:schema>   
 ```  
   
- 确保使用目标命名空间；仅将使用该命名空间的属性复制到 BizTalk Server 消息或复制到 EMS 消息。 有关消息上下文属性的详细信息，请参阅 BizTalk Server 文档。  
+ 请确保使用目标命名空间;仅使用此命名空间的属性复制到 BizTalk Server 消息或 EMS 消息。 请参阅有关消息上下文属性的详细信息的 BizTalk Server 文档。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [TIBCO EMS 消息上下文属性](../core/message-context-properties-in-biztalk-server.md)

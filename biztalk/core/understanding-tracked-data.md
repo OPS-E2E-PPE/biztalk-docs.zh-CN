@@ -1,5 +1,5 @@
 ---
-title: 了解跟踪的数据 |Microsoft 文档
+title: 了解跟踪的数据 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -23,33 +23,33 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed30934ca154c8b6921682112b12d016c57f92be
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3f8119c78bdab44279feebef3a4460303b3ae78c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286581"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292769"
 ---
 # <a name="understanding-tracked-data"></a>了解跟踪数据
-跟踪查询运行时，在结果列表底部的查询结果窗口会显示跟踪的信息。  
+运行时跟踪查询，被跟踪的信息将显示在查询结果窗口底部的结果列表中。  
   
 ## <a name="viewing-message-details"></a>查看消息详细信息  
- 您可以跟踪消息属性。 也可以将跟踪消息正文保存到文件中，然后使用非 Microsoft 工具查看它们。  
+ 你可以跟踪消息属性。 此外可以将跟踪的消息正文保存到文件，并查看它们使用非 Microsoft 工具。  
   
--   可以右键单击服务实例所引用的任何消息，然后选择消息详细信息。  
+-   您可以右键单击服务实例引用的任何消息，并选择消息详细信息。  
   
--   如果消息已处理但被跟踪（因为启用了跟踪功能），则可以将其保存到硬盘并对其进行检查。  
+-   如果消息已处理但被跟踪，因为启用了跟踪功能，可以将其保存到硬盘并对其进行检查。  
   
--   可以附加到业务流程实例，然后使用业务流程调试器。  
+-   可以将附加到业务流程实例，并使用业务流程调试器。  
   
 ## <a name="viewing-service-events"></a>查看服务事件  
- 当挂起的服务出现在事件日志时，则可以通过使用调查服务**消息流**，**业务流程调试器**，**显示跟踪消息事件**，**显示实时服务实例**，选项从**上下文**菜单。  
+ 当挂起的服务出现在事件日志时，可以通过查看服务**消息流**，**业务流程调试器**，**显示跟踪的消息事件**，**显示实时服务实例**，从选项**上下文**菜单。  
   
 ## <a name="viewing-orchestration-events"></a>查看业务流程事件  
- 使用业务流程调试器可以查看消息实例在通过业务流程时所经过的路径。 在逐步执行时，业务流程的呈现图像将显示消息的进度，您可以在业务流程中放置断点，以便进行调试。  
+ 使用业务流程调试器可以查看消息实例的路径已通过业务流程。 单步执行，该业务流程的呈现的图像显示进度消息，并允许您将断点放置在业务流程中以便进行调试。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [什么是邮件跟踪？](../core/what-is-message-tracking.md)  
+-   [消息跟踪概述](../core/what-is-message-tracking.md)  
   
--   [什么是事件跟踪？](../core/what-is-event-tracking.md)
+-   [事件跟踪概述](../core/what-is-event-tracking.md)

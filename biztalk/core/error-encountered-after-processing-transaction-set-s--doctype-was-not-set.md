@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df010d497f61a14644c46f8b7f5cdfa183340615
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f106a100aa73234e364cbf0071a705dd47502f52
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003374"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348582"
 ---
 # <a name="error-encountered-after-processing-transaction-sets-because-doctype-was-not-set"></a>处理事务集，因为未设置 DocType 后遇到错误
 ## <a name="details"></a>详细信息  

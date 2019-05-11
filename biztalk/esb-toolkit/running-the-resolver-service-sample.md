@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 21c569f0be544292b4a70d49f4c75a038e2fed65
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: adb7f35671534a3c425e962d4980d452368f79d7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006670"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242698"
 ---
 # <a name="running-the-resolver-service-sample"></a>运行解析程序服务示例
 解析程序服务示例演示以下方案：  

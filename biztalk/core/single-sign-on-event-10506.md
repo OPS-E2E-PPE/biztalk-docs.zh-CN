@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10506 |Microsoft Docs
+title: 单一登录：Event 10506 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 297293a4a625d2dbeda1861b13f687e202db048b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 30080233540dd2aed44725c5f60d6c8ad3daa33b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987726"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65296441"
 ---
-# <a name="single-sign-on-event-10506"></a>单一登录： 事件 10506
+# <a name="single-sign-on-event-10506"></a>单一登录：事件 10506
 ## <a name="details"></a>详细信息  
 
 |                 |                                                            |
@@ -33,12 +33,12 @@ ms.locfileid: "36987726"
 |  消息正文   |               已安装 SSO 服务。               |
 
 ## <a name="explanation"></a>解释  
- 此信息事件表示已安装 ENTSSO 服务。  
+ 此信息事件表明 ENTSSO 服务已安装。  
 
 ## <a name="user-action"></a>用户操作  
 
-- 不需要用户进行任何操作。  
+- 不不需要任何用户操作。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [安装 SSO](../core/installing-sso.md)

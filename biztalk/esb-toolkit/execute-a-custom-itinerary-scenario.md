@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9dc7b746f636b6f90462d296f12827fb0492dd23
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d1533d2fcea864c1b2effb8afc2dda35c0b36c7c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009550"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65261935"
 ---
 # <a name="execute-a-custom-itinerary-scenario"></a>执行自定义路线方案
 可以使用路线测试客户端应用程序来执行自定义路线方案。  

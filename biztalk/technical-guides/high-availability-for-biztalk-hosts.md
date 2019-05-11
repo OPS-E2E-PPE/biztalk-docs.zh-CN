@@ -12,35 +12,35 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 959160bdf8e4e81715c77946663a9e4fc70fb077
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cd3f0ccb30290874d4720e03d0583894ada36fb7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978662"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65277217"
 ---
 # <a name="high-availability-for-biztalk-hosts"></a>BizTalk 主机的的高可用性
 BizTalk Server 提供了灵活处理高可用性，因为您可以策略性地将专门逻辑主机运行的功能，如接收和发送消息或处理业务流程，可以在物理上的特定区域部署到多个服务器。  
   
- BizTalk 主机是内部的逻辑容器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]组可以容纳[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]诸如适配器发送处理程序 （包括管道）、 接收位置和业务流程。 通常，您可将具有类似扩展属性的项分到特定的主机中。  
+ BizTalk 主机是内部的逻辑容器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]组可以容纳[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]诸如适配器发送处理程序 （包括管道）、 接收位置和业务流程。 通常，您分具有到特定的主机的类似扩展属性的项。  
   
  创建主机后，可以将其部署到物理[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]主机实例的计算机。 作为 Windows 服务，BTSNTSvc.exe （或 64 位主机实例的 BTSNTSvc64.exe） 上指定的主机实例运行[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机。 对于每个主机，可以只有一个实例具有对特定[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机。 但是，可以在一个或多个特定主机的实例[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机，可以具有不同主机的实例对特定[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机。  
   
  BizTalk 主机中包含的项可以执行以下功能：  
   
-- **接收**。 在接收位置中提取消息后，这些项对其进行初始处理。 当主机包含接收项，如接收位置 （使用管道） 消息的解码和解密发生在主机中的管道中。  
+- **接收**。 这些项后选取在接收位置对其进行初始处理的消息。 当主机包含接收项，如接收位置 （使用管道） 消息的解码和解密发生在主机中的管道中。  
   
-- **发送**。 在将消息发送给发送端口前，这些项对其进行最终处理。 当主机包含发送项，例如发送端口，消息签名和加密将发生在主机中的管道中。  
+- **发送**。 这些项对其进行最终处理消息之前发送到发送端口发送。 当主机包含发送项，例如发送端口，消息签名和加密将发生在主机中的管道中。  
   
 - **处理**。 这些项来处理基于业务流程中的说明进行操作的消息。  
   
-  一个 BizTalk 主机可以包含接收、发送和处理消息的项。 更易于管理和可伸缩性，我们建议您创建不同的主机指定为每个函数。 具体而言，我们建议对于处理操作和接收/发送操作使用不同的主机。  
+  一个 BizTalk 主机可以包含接收、 发送和处理消息的项。 更易于管理和可伸缩性，我们建议您创建不同的主机指定为每个函数。 具体而言，我们建议对于处理操作和接收/发送操作使用不同的主机。  
   
-  例如，如果您接收一条消息，运行业务流程，然后发送十条消息，则需要将接收功能和发送功能分隔到两个单独的主机中，因为发送项的流量将是接收项的十倍。 如果您接收一条消息，运行业务流程，然后发送一条消息，则可以将这些项视为一个工作单位，并将它们分到单个主机中。 或者，您可以将它们分到三个不同的主机中，以提高性能和灵活性，尽管这同时也增加了管理成本。  
+  例如，如果收到一条消息，运行业务流程，并发送 10 条消息，你想要将接收和发送功能分隔到两个单独的主机，因为发送项将具有将是接收项的十倍更多流量。 如果收到一条消息，运行业务流程，并发送一条消息，可以将这些项视为一个工作单元并将它们分到一台主机。 或者，您可以将它们分到三个不同的主机以提高性能和灵活性，尽管这还会增加管理成本。  
   
-  BizTalk 主机分为两种类型之一*进程内*或*独立*。 进程内主机运行的内部[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]运行时进程 （BTSNTSvc.exe 或 BTSNTSvc64.exe） 和独立的主机不能运行[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]运行时进程。 为独立接收适配器的接收端仅使用独立的主机。 下表分别列出了这两种主机类型可能包含的项：  
+  BizTalk 主机分为两种类型之一*进程内*或*独立*。 进程内主机运行的内部[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]运行时进程 （BTSNTSvc.exe 或 BTSNTSvc64.exe） 和独立的主机不能运行[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]运行时进程。 为独立接收适配器的接收端仅使用独立的主机。 可能包含下表列出了每种主机类型的项。  
   
-|主机类型|逻辑容器包含|  
+|主机类型|逻辑容器|  
 |---------------|---------------------------|  
 |进程内|-业务流程<br />适配器发送处理程序<br />-进程内适配器接收处理程序|  
 |隔离|HTTP、 SOAP 接收处理程序<br />-任何其他独立的适配器接收处理程序|  

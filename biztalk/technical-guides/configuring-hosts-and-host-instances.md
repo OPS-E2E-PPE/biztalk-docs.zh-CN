@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 286bdaaff66cf0b85caa3bb169bb506501ff386f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: eff7a8536155da3d1ed1d4830fdab024bacefa96
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968998"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253522"
 ---
 # <a name="configuring-hosts-and-host-instances"></a>配置主机和主机实例
 BizTalk 主机表示的零个或多个运行时进程在其中可以部署一组逻辑[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]服务和项目 （例如适配器处理程序接收位置和业务流程）。 主机实例是运行的计算机上的主机的物理实例[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 有关 BizTalk 主机和主机实例的详细信息，请参阅[主机](http://go.microsoft.com/fwlink/?LinkId=154189)(<http://go.microsoft.com/fwlink/?LinkId=154189>) 和[主机实例](http://go.microsoft.com/fwlink/?LinkId=154190)(<http://go.microsoft.com/fwlink/?LinkId=154190>)。  
@@ -49,7 +49,7 @@ BizTalk 主机表示的零个或多个运行时进程在其中可以部署一组
   
  即使可寻址的 32 位 Windows 操作系统 （不带 /3GB 开关） 上的进程的最大内存是 2 GB，也是如此 （如 BizTalk 主机实例） 的.NET 应用程序将收到内存不足错误之前的"虚拟字节"达到 2 GB。 下表概述了这些不同，并包括虚拟字节和专用字节为单位的实际限制。  
   
-|处理|Windows OS|（使用一个大型地址识别的过程） 的可寻址内存|虚拟字节、 可行限制|PrivateBytes、 可行限制|  
+|Process|Windows OS|（使用一个大型地址识别的过程） 的可寻址内存|虚拟字节、 可行限制|PrivateBytes、 可行限制|  
 |-------------|----------------|---------------------------------------------------------------|---------------------------------------|--------------------------------------|  
 |32 位|32 位|2 GB|1400 MB|800 MB|  
 |32 位|使用 3 GB 的 32 位|3 GB|2400 MB|1800 MB|  
@@ -63,5 +63,5 @@ BizTalk 主机表示的零个或多个运行时进程在其中可以部署一组
 -   [Windows 版本的内存限制](http://go.microsoft.com/fwlink/?LinkId=151857)(http://go.microsoft.com/fwlink/?LinkId=151857)  
   
 ## <a name="see-also"></a>请参阅  
- [清单： 配置 BizTalk Server](../technical-guides/checklist-configuring-biztalk-server.md)   
+ [清单：配置 BizTalk Server](../technical-guides/checklist-configuring-biztalk-server.md)   
  [配置专用跟踪主机](../technical-guides/configuring-a-dedicated-tracking-host.md)

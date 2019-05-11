@@ -1,5 +1,5 @@
 ---
-title: 种情况下，平面文件架构中的处理 |Microsoft 文档
+title: 用例在平面文件架构中的处理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2312f00a6dab18fa92c0fed05c5c9fa182d500f9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4103b9f133ffac16b967832325effefba04b5ab2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231133"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357601"
 ---
 # <a name="case-handling-in-flat-file-schemas"></a>在平面文件架构中处理的用例
 
 ## <a name="overview"></a>概述
-你可以使用**用例**属性时要执行的平面文件数据的大小写转换要进行转换从其等效的 XML 格式。 当的平面文件汇编转换成其等效的平面文件格式，一条 XML 消息时与**用例**属性设置为**所有字母都大写**或**小写**，所有数据受相应架构将转换为大写或小写，分别转换的过程中。  
+可以使用**用例**属性时要执行的平面文件数据的大小写转换消息翻译为其等效的 XML 格式。 当平面文件组装器将 XML 消息转换为其等效的平面文件格式，并**用例**属性设置为**所有字母都大写**或**小写**，所有数据受相应架构将转换为大写或小写，分别将在翻译过程。  
   
  当**用例**属性设置为 **（默认）**，不执行任何大小写转换。  
   
-## <a name="see-also"></a>另请参阅  
- **注意事项时创建平面文件消息架构**和**用例 （的平面文件架构的节点属性）**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+## <a name="see-also"></a>请参阅  
+ **考虑事项时创建平面文件消息架构**和**用例 （平面文件架构的节点属性）** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]

@@ -1,5 +1,5 @@
 ---
-title: 批处理支持为一个事务性接口接收适配器 |Microsoft 文档
+title: 接收适配器的接口的事务性批处理支持 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27b51a67f63f3088ce64c9db35c368289ce156d2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f46c7662fac5010c4f1effe56016fe2f5c5d5e8f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257573"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65331558"
 ---
-# <a name="interfaces-for-a-transactional-batch-supported-receive-adapter"></a>批处理支持为一个事务性接口接收适配器
-接收适配器可在要求消息的事务性提交时创建和控制事务。  
+# <a name="interfaces-for-a-transactional-batch-supported-receive-adapter"></a>接收适配器的接口的事务性批处理支持
+一个接收适配器创建和所需的消息的事务性提交时，控制事务。  
   
- 一个事务性接收适配器创建，并将指针传递到 Microsoft 分布式事务处理协调器 (MSDTC) 事务**完成**方法**IBTTransportBatch**接口。 这确保所有批操作都在该特定事务对象的作用域中执行。 在批提交完成后，适配器回调方法将提交或回滚该事务。 它所采用的操作取决于从传输代理返回的状态，并且还可能取决于适配器执行的其他与事务相关的工作（而该工作对传输代理不可见）。 适配器将确定事务是失败还是成功。 适配器 （提交或回滚） 事务的结果回过来向报告传输代理使用**DTCCommitConfirm**方法**IBTDTCCommitConfirm**接口。 它将传递`true`成功事务或`false`失败。  
+ 事务性接收适配器创建并将指针传递到 Microsoft 分布式事务处理协调器 (MSDTC) 的事务**完成**方法**IBTTransportBatch**接口。 这可确保在该特定事务对象的作用域中执行所有批处理操作的。 中的批提交完成后，适配器回调方法将提交或回滚事务。 所需的操作取决于状态返回从传输代理，并且可能在其他与事务相关的工作时适配器执行看不到传输代理。 适配器可以确定事务是失败还是成功。 适配器事务 （commit 或 rollback） 的结果返回到传输代理通过报告**DTCCommitConfirm**方法**IBTDTCCommitConfirm**接口。 它将传入`true`对于成功的事务或`false`失败。  
   
- 下图显示在创建支持事务性批的接收适配器时的对象交互。  
+ 下图显示了接收适配器创建事务的支持批的涉及到的对象交互。  
   
  ![](../core/media/ebiz-sdk-devadapter2.gif "ebiz_sdk_devadapter2")  
-接收适配器使用 DTC 事务提交一批消息的工作流  
+接收适配器提交一批消息使用 DTC 事务的工作流  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [适配器变量](../core/adapter-variables.md)   
  [开发接收适配器](../core/developing-a-receive-adapter.md)   
  [实例化和初始化接收适配器](../core/instantiating-and-initializing-a-receive-adapter.md)   
- [进程内的接口接收适配器](../core/interfaces-for-an-in-process-receive-adapter.md)   
- [一个独立的接口接收适配器](../core/interfaces-for-an-isolated-receive-adapter.md)   
- [批处理支持的接口接收适配器](../core/interfaces-for-a-batch-supported-receive-adapter.md)   
- [接口同步请求-响应接收适配器](../core/interfaces-for-a-synchronous-request-response-receive-adapter.md)
+ [接收适配器的进程内的接口](../core/interfaces-for-an-in-process-receive-adapter.md)   
+ [接口独立接收适配器](../core/interfaces-for-an-isolated-receive-adapter.md)   
+ [接收适配器的支持批的接口](../core/interfaces-for-a-batch-supported-receive-adapter.md)   
+ [同步请求-响应接收适配器的接口](../core/interfaces-for-a-synchronous-request-response-receive-adapter.md)

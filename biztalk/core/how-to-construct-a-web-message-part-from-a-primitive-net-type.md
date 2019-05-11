@@ -1,5 +1,5 @@
 ---
-title: 如何构造中的基元.NET 类型的 Web 消息部件 |Microsoft 文档
+title: 如何构造 Web 消息部分从基元.NET 类型 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,35 +19,35 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 991970d5b0d40da1ec00b54919d2742cfd48353c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9ab2390ea0e053fadcd275d8be7c1eea6ea6e903
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22248021"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65340196"
 ---
-# <a name="how-to-construct-a-web-message-part-from-a-primitive-net-type"></a>如何从基元 .NET 类型构造 Web 消息部分
-自.NET 的基元类型中使用创建的 Web 消息部分**消息分配**形状。 也可以通过使用 .NET 帮助程序类设置各个部分来从基元 .NET 类型创建 Web 消息部分。 通过使用一个.NET 类创建消息类型的详细信息，请参阅[在用户代码中构造消息](../core/constructing-messages-in-user-code.md)。  
+# <a name="how-to-construct-a-web-message-part-from-a-primitive-net-type"></a>如何构造 Web 消息部分从基元.NET 类型
+从基元.NET 类型中使用创建 Web 消息部分**消息赋值**形状。 或者，可以通过使用.NET 帮助程序类设置各个部分来从基元.NET 类型创建 Web 消息部分。 使用.NET 类创建消息类型的详细信息，请参阅[在用户代码中构造消息](../core/constructing-messages-in-user-code.md)。  
   
-### <a name="to-construct-a-web-message-part-from-a-primitive-net-type"></a>从基元 .NET 类型构造 Web 消息部分  
+### <a name="to-construct-a-web-message-part-from-a-primitive-net-type"></a>若要构造 Web 消息部分从基元.NET 类型  
   
-1.  与打开的业务流程，打开**工具箱**单击**BizTalk 业务流程**选项卡。  
+1.  与打开业务流程中，打开**工具箱**然后单击**BizTalk 业务流程**选项卡。  
   
-2.  拖动**构造消息**形状上的与业务流程。  
+2.  拖动**构造消息**向业务流程的形状。  
   
-3.  编辑**构造消息**属性以包含你创建的 Web 消息类型的消息实例。  
+3.  编辑**构造的消息**属性以包含针对相应 Web 消息类型创建的消息实例。  
   
-4.  拖动**消息分配**形状拖到**构造消息**形状。  
+4.  拖动**消息赋值**形状拖至**构造消息**形状。  
   
-5.  双击**消息分配**形状以打开 BizTalk 表达式编辑器。  
+5.  双击**消息赋值**形状以打开 BizTalk 表达式编辑器。  
   
-6.  在 BizTalk 表达式编辑器框中，将 Web 消息类型的各个部分设置为其所需的值。  
+6.  在 BizTalk 表达式编辑器框中为其所需的值设置 Web 消息类型的各个部分。  
   
-     例如，以下代码将表达式设置为字符串：  
+     例如，下面的代码设置为字符串的表达式：  
   
     ```  
     ItemAvailRequestInstance.Item_ID = "This is Item_ID.";  
     ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [构造 Web 消息](../core/constructing-web-messages.md)

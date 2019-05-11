@@ -1,5 +1,5 @@
 ---
-title: 使用数据连接和 TypedDataTable |Microsoft 文档
+title: 使用 DataConnection 和 TypedDataTable |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -24,42 +24,42 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b5a0a490023d77676cc5d156ad5126ad5d7d6c7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c9decd3a849aa21e0e769e006c8dfe29ca5b7315
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287541"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401615"
 ---
-# <a name="using-dataconnection-and-typeddatatable"></a>使用数据连接和 TypedDataTable
-在许多情况下，使用**该组**提供更好的性能和使用较少的内存比使用**TypedDataTable**。 但是， **TypedDataTable**可能要求在某些情况下，由于某些限制使用**该组**。 在某些其他情况下，使用**TypedDataTable**可能会产生更好的性能比使用**该组**。 本主题介绍了在选择正确的方法时应考虑的条件和因素。  
+# <a name="using-dataconnection-and-typeddatatable"></a>使用 TypedDataTable 和 DataConnection
+在许多情况下，使用**DataConnection**提供了更好的性能和使用更少的内存比使用**TypedDataTable**。 但是， **TypedDataTable**可能要求在某些情况下，由于使用某些限制**DataConnection**。 在某些其他情况下，使用**TypedDataTable**可能会产生更好的性能比使用**DataConnection**。 本主题介绍的条件和选择正确的方法时应考虑的因素。  
   
 ## <a name="when-to-use-typeddatatable-instead-of-dataconnection"></a>何时使用 TypedDataTable 而不是 DataConnection  
- 在以下情况下使用 TypedDataTable 而不是 DataConnection：  
+ 在以下情况下，而不是 DataConnection 中使用 TypedDataTable:  
   
--   需要更改数据，但表没有主键。 若要使用的数据更改**该组**，主密钥是必需的。 因此，如果没有主键， **TypedDataTable**是唯一可行方法。  
+-   不需要进行数据更改，但表没有主键。 若要使用做出数据更改**DataConnection**，主要密钥是必需的。 因此，如果有没有主键，则**TypedDataTable**是唯一的可行方法。  
   
     > [!NOTE]
-    >  规则引擎仅更新内存中的值**TypedDataTable**。 是否永久保存更改由调用方决定。  
+    >  规则引擎只更新在内存中的值**TypedDataTable**。 负责调用方永久保存这些更改。  
   
--   选择性很高，这意味着，表中大部分行都将通过按规则条件指定的测试。 在这种情况下，**该组**不提供很大的收益，它可能执行不如**TypedDataTable**。  
+-   选择性很高，这意味着大型的表中的行百分比将通过指定为规则条件的测试。 在这种情况下， **DataConnection**不提供很大的收益，其执行比**TypedDataTable**。  
   
--   表非常小，通常包含的行数少于 500 行。 请注意，此数目可大可小，具体数值由规则形状和可用于规则引擎的内存来决定。  
+-   表非常小，通常情况下，包含少于 500 行的表。 请注意，此数目可更大或较小，具体取决于规则形状和可用于规则引擎的内存。  
   
--   在规则集中预计存在规则链接行为。 调用**更新**函数上**该组**不受支持，但你无法调用**DataConnection.Update**规则使用一个帮助器方法中。 当规则链接是必需的**TypedDataTable**是更好的选择。  
+-   在规则集中需要规则链接行为。 调用**更新**函数**DataConnection**不受支持，但你可以调用**DataConnection.Update**在规则中使用的帮助器方法。 必需的规则链接时**TypedDataTable**是更好的选择。  
   
--   表中一个或多个列包含大量规则不需要的数据。 例如，图像数据库。图像数据库中的各列包含图像（大量数据）、名称、日期等信息。 如果不需要图像，则最好只选择规则所需的列。 例如，例如"选择名称、 日期表"将查询可以是比使用效率更高**该组**。  
+-   表中的一个或多个列包含非常大量的数据不是必需的规则。 一个示例是一个图像数据库中，各列包含图像 （大量的数据）、 名称、 日期和等等。 如果不需要图像，则可能会更好的做法选择仅规则所需的列。 例如，发出"SELECT Name，Date from TABLE"之类的查询可能比使用更高效**DataConnection**。  
   
--   如果多个规则需要或更新相同的数据库行，使用**TypedDataTable**，该行处于共享状态之间的所有规则，以及条件是否相同 (例如，Table.Column = = 5)，可以优化条件求值。 与**该组**，一般情况下，为每个规则，以使用生成查询**该组**。 尽管行是重复使用的（如果表具有主键），但仍需要生成多个查询，每次都获取相同的数据。  
+-   如果许多规则需要更新同一数据库行，使用**TypedDataTable**，该行处于共享状态之间的所有规则，并且如果条件为相同 (例如 Table.Column = = 5)，可以优化条件评估。 与**DataConnection**，一般情况下，查询生成的每个规则，以使用**DataConnection**。 虽然 （如果表具有主键），行重复使用，可以生成多个查询以获取每次的相同的数据。  
   
 ## <a name="when-to-use-dataconnection-instead-of-typeddatatable"></a>何时使用 DataConnection 而不是 TypedDataTable  
- 在以下情况下使用 DataConnection 而不是 TypedDataTable：  
+ 在以下情况下，而不是 TypedDataTable 使用 DataConnection:  
   
--   表中包含大量行，但选择性很低；也就是说，只有少数行满足规则条件。  
+-   表中包含大量行，但选择性很低 — 仅少数行满足规则条件。  
   
--   只有一个数据库表很大；在规则中使用的其他所有对象都具有数量很少的实例。 在最差的情况下，对数据库执行的查询数等于在规则中使用的其他所有实例的乘积。  
+-   只有一个数据库表很大;在规则中使用的所有其他对象都有较多的实例。 在最坏的情况下，对数据库执行的查询数等于在规则中使用的所有其他实例的产品。  
   
--   规则仅由连接条件构成，并且在这些规则中使用非数据库表的对象。  
+-   规则以独占方式包含连接条件，并且这些规则中使用对象，而非数据库表。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [业务规则引擎中的数据访问](../core/data-access-in-the-business-rule-engine.md)

@@ -1,5 +1,5 @@
 ---
-title: 如何配置构造消息形状 |Microsoft 文档
+title: 如何配置构造消息形状 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,23 +17,23 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 07b73e7fe62463767894808d7e95f12cf963e4dc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8a16900b1ee5c98c059b01f92a770f845330b9ba
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22248421"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65386169"
 ---
 # <a name="how-to-configure-the-construct-message-shape"></a>如何配置构造消息形状
 ![](../core/media/ebiz-orch-constructmsg.gif "ebiz_orch_constructmsg")  
 构造消息形状  
   
- 指定要构造的消息变量，并对消息或其部分进行赋值。 必须在同一构造消息形状中对任何给定消息进行彻底赋值。  
+ 指定你想要构造，消息变量，并对消息或其成分进行赋值。 对任何给定消息的所有分配必须都发生在同一构造消息形状。  
   
- 若要修改已构造的消息的属性（例如已收到的消息），必须构造新的消息实例，方法是：将第一个值赋予第二个值，然后在新的消息实例中修改该属性；在同一构造消息形状中同时发生了构造和修改操作。  
+ 如果你想要修改已构造的消息的属性 — 例如已收到的消息，必须通过将第一个分配到第二个，然后修改新的消息实例; 属性来构造新的消息实例构造和修改发生在同一构造消息形状内。  
   
 ### <a name="to-configure-a-construct-message-shape"></a>若要配置构造消息形状  
   
-1.  在属性窗口中，使用**消息构造**属性来指定哪些消息此形状将构造。  
+1.  在属性窗口中，使用**构造的消息**属性指定的消息此形状将构造。  
   
-2.  添加和配置一个或多个**转换**或**消息分配**内的形状**构造消息形状**。
+2.  添加并配置一个或多个**转换**或**消息赋值**形状内**构造消息形状**。

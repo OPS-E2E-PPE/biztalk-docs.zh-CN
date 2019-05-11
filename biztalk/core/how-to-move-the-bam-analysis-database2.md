@@ -15,28 +15,28 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 237f951a4795ef6571a72989be22893d57572df9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b9f0afd5c8bbd06786c07b84dd465f97cbb1559d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011790"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384515"
 ---
 # <a name="how-to-move-the-bam-analysis-database"></a>如何移动 BAM 分析数据库
 可以使用此过程将 BAM 分析数据库移到另一台服务器。  
   
-## <a name="prerequisites"></a>必要條件  
- 若要执行此过程，必须以 SQL Server sysadmin 固定服务器角色成员的帐户登录。  
+## <a name="prerequisites"></a>先决条件  
+ 您必须是 SQL Server sysadmin 固定服务器角色的成员才能执行此过程的帐户登录。  
   
 ### <a name="to-move-the-bam-analysis-database"></a>移动 BAM 分析数据库  
   
-1. 获取用于还原 BAM 的 .xml 文件的副本：  
+1. 获取用于还原 BAM 的.xml 文件的副本：  
   
    1. 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-   2. 在命令提示符下，导航到以下目录：  
+   2. 在命令提示符处，导航到以下目录：  
   
-       [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking  
+       [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]跟踪  
   
    3. 在命令提示符下，键入：  
   
@@ -59,9 +59,9 @@ ms.locfileid: "37011790"
   
 7. 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-8. 在命令提示符下，导航到以下目录：  
+8. 在命令提示符处，导航到以下目录：  
   
-    [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking  
+    [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]跟踪  
   
 9. 在命令提示符下，键入：  
   

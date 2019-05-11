@@ -1,5 +1,5 @@
 ---
-title: 如何定义里程碑组 |Microsoft 文档
+title: 如何定义里程碑组 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,34 +17,34 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a0122637fa92a360a5fda5093679fc5c1484e59a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6279cacf040c9fe4735a62a5f62726af8f806a06
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22249349"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338897"
 ---
 # <a name="how-to-define-milestone-groups"></a>如何定义里程碑组
-使用里程碑组可以将相关的里程碑（例如，定义采购订单有效时间的开始里程碑和结束里程碑）放在一起。 然后，可以将里程碑组用作一个里程碑。  
+使用里程碑组可以将相关的里程碑组合在一起，例如开始和结束里程碑定义多长时间，采购订单是有效的。 然后可以用作一个里程碑使用里程碑组。  
   
- 使用 BAM 视图向导可创建新的里程碑组。 在创建里程碑或里程碑组之前，必须先使用 BAM 活动向导创建业务活动、项和业务活动视图。 有关使用向导的详细信息，请参阅[定义业务活动和在 Excel 中的视图](../core/defining-business-activities-and-views-in-excel.md)。  
+ 使用 BAM 视图向导创建新的里程碑组。 您可以创建里程碑或里程碑组之前，使用 BAM 活动向导创建业务活动、 项和业务活动视图。 有关使用向导的详细信息，请参阅[定义业务活动和在 Excel 中的视图](../core/defining-business-activities-and-views-in-excel.md)。  
   
- 业务活动和项是通过 BAM 活动向导创建的，而不是通过 BAM 视图向导创建的。  
+ 通过 BAM 活动向导而不是 BAM 视图向导创建业务活动和项。  
   
-### <a name="to-define-milestone-groups"></a>定义里程碑组  
+### <a name="to-define-milestone-groups"></a>若要定义里程碑组  
   
-1.  在 BAM 视图向导中，单击**下一步**直到看到第二个**编辑 BAM 视图： 查看项**页。 单击**新组**。  
+1.  在 BAM 视图向导中，单击**下一步**直到看到第二个**编辑 BAM 视图：查看项**页。 单击**新的组**。  
   
 2.  键入业务里程碑别名。  
   
-3.  在下面的别名框窗口中，单击你想要包括在组中，然后单击的里程碑**确定**。  
+3.  在别名框下面窗口中，单击你想要包括的组中，然后单击的里程碑**确定**。  
   
     > [!NOTE]
-    >  如果您需要将所有你里程碑的活动组中，单击**选择所有里程碑**。  
+    >  如果您希望所有里程碑活动组中，单击**选择全部里程碑**。  
   
-4.  当你完成添加别名、 持续时间和组时，请单击**下一步**继续到对话框的聚合页。  
+4.  添加完别名、 持续时间和组，单击**下一步**若要继续使用该对话框的聚合页。  
   
-## <a name="see-also"></a>另请参阅  
- [在 Excel 中定义的业务活动和视图](../core/defining-business-activities-and-views-in-excel.md)   
- [如何使用数据透视表](../core/how-to-use-the-pivottable.md)   
+## <a name="see-also"></a>请参阅  
+ [在 Excel 中定义业务活动和视图](../core/defining-business-activities-and-views-in-excel.md)   
+ [如何使用该数据透视表](../core/how-to-use-the-pivottable.md)   
  [定义实时聚合](../core/defining-real-time-aggregations.md)

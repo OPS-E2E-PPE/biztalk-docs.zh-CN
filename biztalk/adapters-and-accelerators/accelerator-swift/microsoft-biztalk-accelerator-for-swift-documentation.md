@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f6064103964257f295d90188b0d0387031d67804
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0f3d4e2853db84d90a34e14b0fdc984ff6983344
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976638"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377179"
 ---
 # <a name="microsoft-biztalk-accelerator-for-swift-documentation"></a>Microsoft BizTalk Accelerator for SWIFT 文档
 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]是外接程序到 Microsoft BizTalk Server，并利用基于标准的开放式工具和 BizTalk server 运行时功能，以实现对社会全球 Interbank 金融电信 (SWIFT) 消息的支持设置的格式。  
@@ -36,7 +36,7 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
 ## <a name="messaging"></a>消息传送  
 [运行时，消息修复、 FIN 响应和消息传送](../../adapters-and-accelerators/accelerator-swift/runtime-message-repair-fin-response-and-messaging.md)介绍数据如何流经 SWIFT 汇编程序和反汇编程序、 解释消息修复，说明不同的项目如何处理消息和的详细信息。 
 
-## <a name="security"></a>Security  
+## <a name="security"></a>安全性  
 [安全和隐私标准](../../adapters-and-accelerators/accelerator-swift/security-and-privacy-standards.md)中 BizTalk Server 中，运行时和 SWIFT 的安全性的用户提供更多详细信息并进行分组。 
 
 ## <a name="developing-apps"></a>开发应用程序  

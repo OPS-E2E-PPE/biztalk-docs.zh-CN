@@ -20,17 +20,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 51c56d7f319023bb0379050452253c65634929c0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 70cc813f448ad4c24a58ae6640780942911ef879
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968854"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65386302"
 ---
 # <a name="how-to-configure-correlation-sets"></a>如何配置相关集
-若要配置相关集，您可以选择现有相关类型、创建新的相关类型或修改现有相关类型。  
+若要配置相关集，可以选择现有相关类型，创建一个新的相关类型，或修改现有相关类型。  
   
-### <a name="to-assign-a-correlation-type-to-a-correlation-set"></a>向相关集分配相关类型  
+### <a name="to-assign-a-correlation-type-to-a-correlation-set"></a>若要将某一相关类型分配给相关集  
   
 - 选择现有相关类型。  
   
@@ -42,21 +42,21 @@ ms.locfileid: "36968854"
   
    单击省略号 (**...**) 按钮**相关**中的属性**属性**窗口。  
   
-   **相关性属性**弹出对话框。 添加要包含在相关集中的属性。 如果尚未将相关类型分配给相关集，则将创建一个新相关类型。  
+   **相关性属性**弹出对话框。 添加想要包括在相关集中的属性。 如果某一相关类型不已分配给相关集，将创建一个新的相关类型。  
   
   如果某一相关类型已存在的相关集，并且添加或删除具有的属性**相关性属性**对话框中，现有相关类型将进行相应修改。  
   
-#### <a name="to-associate-send-and-receive-activities-with-a-correlation-set"></a>将发送和接收活动与相关集相关联  
+#### <a name="to-associate-send-and-receive-activities-with-a-correlation-set"></a>若要将相关联的发送和接收活动与相关集  
   
 1.  展开**相关集**节点。  
   
-2.  从下拉列表中选择发送或接收活动。  
+2.  选择发送或接收活动，从下拉列表。  
   
      \- 或 -  
   
      选择相关集中任意一种**初始化相关集**属性或**沿用相关集**中的属性**属性**为每个窗口**发送**或**接收**你想要将与相关集相关联的形状。  
   
-#### <a name="to-disassociate-send-and-receive-activities-from-a-correlation-set"></a>取消发送和接收活动与相关集的关联  
+#### <a name="to-disassociate-send-and-receive-activities-from-a-correlation-set"></a>取消发送和接收活动与相关集  
   
 -   在中**业务流程视图**窗口中，如有必要展开相关集节点，右键单击你想要删除，然后单击的活动**删除**。  
   

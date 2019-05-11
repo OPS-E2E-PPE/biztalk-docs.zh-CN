@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a67aa005be3107fde9ec617fc70f0d9e694e8599
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7d511e0a50d610313bbe1c7ce4b3137c55ad0328
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975158"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65329689"
 ---
 # <a name="isa-segment-needs-to-have-a-minimum-length-of-108"></a>ISA 段需要具有最小长度为 108
 ## <a name="details"></a>详细信息  
@@ -36,4 +36,4 @@ ms.locfileid: "36975158"
  此错误/警告/信息事件表明接收管道不无法处理传入的交换，因为交换中的 ISA 段不符合服务架构建立的位数 (X12ServiceSchema 或EdifactServiceSchema 在 BaseArtifacts.dll 中)。  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请确保每个字段 （从为 ISA16 ISA01) 的 ISA 段中具有所需的最小数字位数。 可以通过打开 BizTalk Server 管理控制台；打开“BizTalk 组”节点、“应用程序”节点、“BizTalk EDI 应用程序”节点，然后是架构节点；打开根节点为 ISA 的 Microsoft.BizTalk.Edi.BaseArtifacts.X12ServiceSchema；然后单击“架构视图”来查看最小位数。
+ 若要解决此错误，请确保每个字段 （从为 ISA16 ISA01) 的 ISA 段中具有所需的最小数字位数。 可以通过打开 BizTalk Server 管理控制台; 看到最小位数打开 BizTalk 组节点、 应用程序节点、 BizTalk EDI 应用程序节点，然后架构节点;使用 ISA; 的根节点打开 Microsoft.BizTalk.Edi.BaseArtifacts.X12ServiceSchema然后单击架构视图。

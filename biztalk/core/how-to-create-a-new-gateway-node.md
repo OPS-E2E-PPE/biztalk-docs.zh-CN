@@ -14,15 +14,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c26dd33fcdc4bd8ad43f03ef3fff6d006480a1c1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5549317c45fbb431155eb3fab3e757c519956cc8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976158"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385578"
 ---
 # <a name="how-to-create-a-new-gateway-node"></a>如何创建新的网关节点
-请按照以下步骤在 PeopleSoft Enterprise 中创建和配置新的网关节点。  
+按照以下步骤来创建和配置新的网关节点在 PeopleSoft Enterprise。  
   
 ### <a name="to-create-and-configure-a-new-gateway-node"></a>若要创建和配置新的网关节点  
   

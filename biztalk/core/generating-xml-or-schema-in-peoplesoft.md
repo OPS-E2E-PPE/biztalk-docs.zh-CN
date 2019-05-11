@@ -17,18 +17,18 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fadd89a1e929d672f1b2c8839248d5d03cb27d1c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3046a6cb3dc90db69d7d113bf08b92d8c4606bab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005630"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387748"
 ---
 # <a name="generating-xml-or-schema-in-peoplesoft"></a>在 PeopleSoft 中生成 XML 或架构
-以下过程介绍如何使用 PeopleSoft Enterprise 来创建 XML 文件和触发 PeopleSoft 事件。 为此，需更改 PeopleSoft 环境中的某些内容。 此更改将激活发送到文件文件夹（在要监视的业务流程中设置）中的 XML 文件。 随后，在 BizTalk Server 中导入 XML 并生成架构。  
+以下过程介绍如何使用 PeopleSoft Enterprise 来创建一个 XML 文件和触发 PeopleSoft 事件。 若要执行此操作，则更改 PeopleSoft 环境中的某些内容。 此更改将激活发送到要监视您的业务流程中设置的文件文件夹的 XML 文件。 更高版本，在 BizTalk Server 中，您导入 XML 并生成架构。  
   
 > [!NOTE]
->  将位置与 MSEXTERNAL 节点相关联时，对位置值所做的任何更改都会生成一个 XML 文档，从而触发事件。 在登记和启动业务流程之后，可以通过 PeopleSoft 屏幕导航到 LOCATION 屏幕。 如果对位置值进行更改并保存更改，则相应 XML 将出现在 \out 目录中。  
+>  对位置值所做的任何更改时将位置与 MSEXTERNAL 节点相关联，生成 XML 文档 — 触发事件。 登记并启动后您的业务流程，可以通过 PeopleSoft 屏幕到 LOCATION 屏幕中进行导航。 如果对位置值进行更改并保存所做的更改时，相应 XML 将出现在 \out 目录中。  
   
 ### <a name="to-generate-xml-or-schema-in-peoplesoft"></a>若要在 PeopleSoft 中生成 XML 或架构  
   
@@ -36,9 +36,9 @@ ms.locfileid: "37005630"
   
 2. 上**位置**屏幕上，输入以下信息：  
   
-   - **组 ID:** 输入**共享**。  
+   - **设置 ID:** 输入**共享**。  
   
-   - **位置代码：** 输入开头的代码`WKLOC`。  
+   - **位置代码：** 输入代码开头的`WKLOC`。  
   
      ![](../core/media/psadapter-18-task-sharesearch.gif "PSAdapter_18_Task_ShareSearch")  
   
@@ -64,11 +64,11 @@ ms.locfileid: "37005630"
   
      ![](../core/media/psadapter-22-task-viewxml.gif "PSAdapter_22_Task_ViewXML")  
   
-     将 XML 的内容复制并粘贴到 BizTalk Server 项目可以访问的文件中。  
+     复制并粘贴到可以访问由 BizTalk Server 项目的文件的 XML 内容。  
   
      ![](../core/media/psadapter-23-task-xmlresult.gif "PSAdapter_23_Task_XMLResult")  
   
-10. 请记住该文件的位置；您将在 BizTalk Server 中引用它。  
+10. 请记住文件的位置; 在 BizTalk Server 中引用它。  
   
 ## <a name="see-also"></a>请参阅  
- [附件 B：使用 PeopleSoft 应用程序](../core/appendix-b-using-the-peoplesoft-application.md)
+ [附录 b:使用 PeopleSoft 应用程序](../core/appendix-b-using-the-peoplesoft-application.md)

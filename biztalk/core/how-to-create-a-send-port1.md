@@ -1,5 +1,5 @@
 ---
-title: 如何创建发送 Port1 |Microsoft 文档
+title: 如何创建发送 Port1 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,25 +15,25 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf49b16da34c5341059db34d6874b7099ab54df6
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 2a0657f32edfbddd3830605d271daafc632db60d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24015036"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385566"
 ---
 # <a name="how-to-create-a-send-port"></a>如何创建发送端口
-使用下列过程来创建 JD Edwards EnterpriseOne 的 BizTalk Server 的发送端口。  
+使用以下过程来创建 BizTalk Server 用于 JD Edwards EnterpriseOne 的发送端口。  
   
-### <a name="to-create-a-send-port"></a>创建发送端口的步骤  
+### <a name="to-create-a-send-port"></a>若要创建的发送端口  
   
-1.  右键单击“发送端口”节点。  
+1.  右键单击发送端口节点。  
   
 2.  单击**添加发送端口**。  
   
-3.  在**创建新发送端口**对话框中，选择**静态请求-响应端口**从**指定的一种发送端口**列表，然后单击**确定**.  
+3.  在中**创建新发送端口**对话框中，选择**静态要求响应端口**从**指定的发送端口类型**列表，然后单击**确定**.  
   
-     **静态请求-响应发送端口属性**窗口随即打开。  
+     **静态要求响应发送端口属性**窗口随即打开。  
   
 4.  例如，键入发送端口的名称`SSOSendToJDEEntOne`。  
   
@@ -41,18 +41,18 @@ ms.locfileid: "24015036"
   
 6.  单击**传输类型**，然后选择**JDEEntOne**。  
   
-7.  选择**地址 (URI)**，然后单击省略号 （…） 按钮。  
+7.  选择**地址 (URI)**，然后单击省略号 （...） 按钮。  
   
-     博士 Edwards EnterpriseOne**传输属性**对话框随即出现。  
+     JD Edwards EnterpriseOne**传输属性**对话框随即出现。  
   
-8.  类型`myJDEEntOneSSO`为**逻辑系统名称**。  
+8.  类型`myJDEEntOneSSO`有关**逻辑系统名称**。  
   
-9. 选择**是**为**使用 SSO**。  
+9. 选择**是**有关**使用 SSO**。  
   
-10. 在下拉列表中，选择您创建代表 JD Edwards EnterpriseOne 系统的单一登录 (SSO) 关联应用程序。  
+10. 在下拉列表中，选择您创建的用于代表 JD Edwards EnterpriseOne 系统的单一登录 (SSO) 关联应用程序。  
   
-     单击**确定**以确认你输入的信息。  
+     单击**确定**以确认您输入的信息。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建关联应用程序](../core/creating-affiliate-applications4.md)   
  [用于 JD Edwards EnterpriseOne 的 BizTalk 适配器中的安全性](../core/security-in-biztalk-adapter-for-jd-edwards-enterpriseone.md)

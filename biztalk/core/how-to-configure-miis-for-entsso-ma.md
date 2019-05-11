@@ -1,5 +1,5 @@
 ---
-title: 如何为 ENTSSO MA 配置 MIIS |Microsoft 文档
+title: 如何针对 ENTSSO MA 配置 MIIS |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 969a52beb02c3d2ba237369c16efec9ee84e2ef1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e536e44ec6c76ba3bf44b346fd6b44e54c3f05b0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22248133"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65341298"
 ---
 # <a name="how-to-configure-miis-for-entsso-ma"></a>如何针对 ENTSSO MA 配置 MIIS
-当在运行 Microsoft Identity Integration Server (MIIS) 的计算机上安装企业单一登录 (SSO) 管理功能（完整版本或仅管理版本）时，将自动安装 ENTSSO 管理代理。 这表示当打开 MIIS 时，几乎已完成所有配置， 唯一缺少的部分是连接信息。  
+在运行 Microsoft Identity Integration Server (MIIS) 的计算机上安装企业单一登录 (SSO) 管理功能 （完整版本或仅限管理员的版本），会自动安装 ENTSSO 管理代理。 这意味着，当打开 MIIS 时，几乎所有配置已经完成了。 仅缺少的部分是连接信息。  
   
- 在启动此过程前，请确保具有下列可用信息：  
+ 在开始之前此过程，请确保具有提供的以下信息：  
   
 -   ENTSSO 服务器名称。  
   
--   ENTSSO 管理代理与 SSO 服务器通信所使用的 Windows 帐户的用户 ID 和密码。  
+-   用户 Id 和在其下 ENTSSO 管理代理将与 SSO 服务器通信的 Windows 帐户的密码。  
   
-### <a name="to-configure-the-management-agent-within-miis"></a>在 MIIS 中配置管理代理  
+### <a name="to-configure-the-management-agent-within-miis"></a>若要配置 MIIS 中管理代理  
   
-1.  打开 miis 进行，并打开**Identity Manager**。  
+1.  打开 MIIS，并打开**Identity Manager**。  
   
 2.  打开**创建管理代理**对话框。  
   
@@ -40,37 +40,37 @@ ms.locfileid: "22248133"
   
 4.  上**配置连接信息**页上，在**连接到：** 字段中，输入 SSO 服务器的名称。  
   
-5.  输入 ENTSSO 管理代理的名称。 该名称必须与 ENTSSO.xml 文件中指定的名称匹配。  
+5.  输入 ENTSSO 管理代理的名称。 此名称必须与 ENTSSO.xml 文件中指定的名称匹配。  
   
-6.  在**用户**字段中，指定用于管理 SSO 数据库中的映射 ENTSSO 管理代理的域帐户。  
+6.  在中**用户**字段中，指定 ENTSSO 管理代理使用来管理 SSO 数据库中的映射的域帐户。  
   
-     此帐户应是 SSO 系统中的 SSO Affiliate Administrators 或 SSO Administrator 帐户的成员。  
+     此帐户应是 SSO 系统中的 SSO Affiliate Administrators 或 SSO 管理员帐户的成员。  
   
-7.  在**密码**字段中，输入该用户的密码。  
+7.  在中**密码**字段中，输入该用户的密码。  
   
-8.  单击**下一步**，接受默认值，直至到达**配置扩展**页。  
+8.  单击**下一步**，接受默认设置，直到达到**配置扩展**页。  
   
 9. 附近**连接信息**密码扩展，请单击**设置**。  
   
      **连接设置**对话框随即出现。  
   
-10. 在**连接到**框中，输入合适的帐户。 该帐户必须与指定计算机上运行的 ENTSSO 服务的服务帐户相同。  
+10. 在中**连接到**框中，输入相应的帐户。 此帐户必须是指定的计算机上运行的 ENTSSO 服务的服务帐户相同。  
   
-11. 在**用户**和**密码**字段，输入帐户的用户名和密码。  
+11. 在中**用户**并**密码**字段中，输入用户名和密码的帐户。  
   
-12. 单击 **“确定”**。  
+12. 单击“确定” 。  
   
-13. 在**MIISCreate 管理代理**，单击**完成**。  
+13. 在中**MIISCreate 管理代理**，单击**完成**。  
   
-14. 仍中时，在**Identity Manager**，单击**工具**菜单，，然后单击**选项**。  
+14. 在仍处于**标识管理器**，单击**工具**菜单，并单击**选项**。  
   
      **选项**对话框随即出现。  
   
 15. 选择**启用 metaverse 规则扩展**。  
   
-16. 在**规则扩展名称字段**，输入**Microsoft.EnterpriseSingleSignOn.ManagementAgent.dll**。  
+16. 在中**规则扩展名称字段**，输入**Microsoft.EnterpriseSingleSignOn.ManagementAgent.dll**。  
   
-17. 单击**确定**并关闭 miis 进行。  
+17. 单击**确定**并关闭 MIIS。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何使用 ENTSSO 管理代理](../core/how-to-use-the-entsso-management-agent.md)

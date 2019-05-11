@@ -19,20 +19,20 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e5d06842eab0def7846ab31419ce2feb0aeb2cd1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1e01bbf7224da9abda8700721c1de3dd7efefb8f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000870"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357480"
 ---
 # <a name="character-encoding-in-the-xml-assembler-pipeline-component"></a>XML 组装器管道组件中的字符编码
-XML 组装器管道组件可以采用下表所示的两种方式根据用户指定的字符编码来生成消息：  
+下表中所示，XML 组装器管道组件可以产生用户指定的字符编码两种方式中的消息。  
   
 |编码级别|编码方法|  
 |--------------------|---------------------|  
 |组件|设置**目标字符集**管道设计器中的组件属性。|  
-|消息|设置**XMLNorm.TargetCharset**消息上下文属性。 **注意：** 一个消息上下文属性将始终覆盖在管道设计器中设置的任何上下文属性。|  
+|消息|设置**XMLNorm.TargetCharset**消息上下文属性。 **注意：** 消息上下文属性将始终覆盖在管道设计器中设置的任何上下文属性。|  
   
  XML 组装器使用以下算法来确定输出消息编码：  
   
@@ -42,9 +42,9 @@ XML 组装器管道组件可以采用下表所示的两种方式根据用户指�
   
 3. 否则为如果**XMLNorm.SourceCharset**指定属性，则使用其值。  
   
-4. 如果以上属性均未设置，则使用 UTF-8 编码。  
+4. 如果以上属性未设置，则使用 utf-8 编码。  
   
-   XML 组装器将 BizTalk 消息对象中的编码信息保存`IBaseMessagePart.Charset`属性。 在使用 Unicode 或 UTF-8 编码时，XML 组装器始终向传出消息中添加字节顺序标记 (BOM)。  
+   XML 组装器将 BizTalk 消息对象中的编码信息保存`IBaseMessagePart.Charset`属性。 在使用 Unicode 或 utf-8 编码时，XML 组装器始终将字节顺序标记 (BOM) 添加到传出消息。  
   
    请注意，使用 XML 发送管道，其中包含 XML 组装器组件，默认值时生成的文档可能他们已提交到服务器，或可能如果创建的文档使用 utf-8 编码时使用字符集编码在服务器和**XMLNorm.TargetCharset**未指定。  
   

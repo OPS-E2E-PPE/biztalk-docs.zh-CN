@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c00e002418dac53295828a4cbed632a6de0c235
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bdfe0ca86475f3d330faea1fa5cd084fa3af4910
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993646"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65386128"
 ---
 # <a name="how-to-configure-the-delay-shape"></a>如何配置延迟形状
 ![](../core/media/ebiz-orch-delay.gif "ebiz_orch_delay")  
@@ -50,9 +50,9 @@ ms.locfileid: "36993646"
 >  在多计算机安装环境中位置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]和 SQL Server 安装在不同的计算机上**延迟**形状可能会早于上预期由于时间结束[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]和[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]计算机不同步。  
 > 
 > [!NOTE]
->  在任务繁忙的情况下，指定在超时**延迟**形状可能会发生晚于指定了什么。 这是因为在任务繁忙的情况下存在线程资源不足。  
+>  在任务繁忙的情况下，指定在超时**延迟**形状可能会发生晚于指定了什么。 这是因为在任务繁忙的情况下，线程资源不足。  
   
-### <a name="to-configure-a-delay-shape"></a>配置延迟形状  
+### <a name="to-configure-a-delay-shape"></a>若要配置延迟形状  
   
 1.  如果 BizTalk 表达式编辑器不可见，请右键单击**延迟**形状，然后单击**编辑延迟**，或在属性窗口中，单击**省略号**(**...**) 按钮**表达式**属性。  
   

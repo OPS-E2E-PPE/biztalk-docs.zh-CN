@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 创建适用于 V2.4 的通用架构 |Microsoft Docs
+title: 第 2 步：创建适用于 V2.4 的通用架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,14 +14,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b19d735a792fff91197eb0336501264c6e9c772
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5149ba2e39f36b85f03af8f3bfb81656a5647b64
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995798"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288650"
 ---
-# <a name="step-2-create-common-schemas-for-v24"></a>步骤 2： 创建适用于 V2.4 的通用架构
+# <a name="step-2-create-common-schemas-for-v24"></a>第 2 步：创建适用于 V2.4 的通用架构
 于 V2.4 架构是通常引用的架构，用于验证查询和响应消息实例。  
   
 ### <a name="to-create-the-common-schemas-for-v24"></a>若要创建适用于 V2.4 的通用架构  
@@ -53,4 +53,4 @@ ms.locfileid: "36995798"
     > [!NOTE]
     >  如果未显示正确的消息，使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]来解决您的架构。  
   
-    请继续执行[步骤 3： 创建和部署触发器事件 （消息） 项目](../../adapters-and-accelerators/accelerator-hl7/step-3-create-and-deploy-a-trigger-event-message-project-hl7-main.md)。
+    请继续执行[步骤 3:创建和部署触发器事件 （消息） 项目](../../adapters-and-accelerators/accelerator-hl7/step-3-create-and-deploy-a-trigger-event-message-project-hl7-main.md)。

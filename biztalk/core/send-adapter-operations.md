@@ -12,31 +12,31 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ae8f638d2e9875883224dbfbf0a9d7d44851b8c8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1e4fbc0458fa9c433c585143bcada38e0e25c3c1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012982"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65250868"
 ---
 # <a name="send-adapter-operations"></a>发送适配器操作
 发送适配器可执行以下操作：  
   
-- **重新提交： void Resubmit （IBaseMessage msg，DateTime timeStamp）。** 消息发生传输失败后，适配器会在适当的时候重新提交消息。 该操作对每条消息调用一次。 如果已成功提交一批消息，适配器必须确定导致失败的消息并重新提交中单独调用不会导致批处理失败的那些**重新提交**。 本主题末尾处提供的有关如何在调用时保留消息上下文属性值的信息**重新提交**。  
+- **重新提交： void Resubmit （IBaseMessage msg，DateTime timeStamp）。** 在传输后出现故障上一条消息，, 适配器重新提交它在适当的时候。 这称为每个消息的基础上。 如果已成功提交一批消息，适配器必须确定导致失败的消息并重新提交中单独调用不会导致批处理失败的那些**重新提交**。 本主题末尾处提供的有关如何在调用时保留消息上下文属性值的信息**重新提交**。  
   
-- **将移动到下一个传输： void MoveToNextTransport (IBaseMessage msg)。** 如果某个消息在发送操作中失败，并已重试了允许的最大尝试次数，则适配器会将该消息发送到配置的下一次传输，以便重新传输。  
+- **将移动到下一个传输： void MoveToNextTransport (IBaseMessage msg)。** 如果一条消息发送操作期间失败，并且其重试尝试次数已用完，适配器可以向重新传输的下一步配置传输发送消息。  
   
-- **挂起： void MoveToSuspendQ (IBaseMessage msg)。** 如果未配置其他备份传输，则适配器会将失败的发送消息移至挂起队列。 本主题末尾处提供的有关如何在调用时保留消息上下文属性值的信息**挂起**。  
+- **挂起： void MoveToSuspendQ (IBaseMessage msg)。** 该适配器将移动失败将消息发送到挂起队列如果配置其他备份传输。 本主题末尾处提供的有关如何在调用时保留消息上下文属性值的信息**挂起**。  
   
-- **删除： void DeleteMessage (IBaseMessage msg)。** 收到 BizTalk Server 关于消息传输成功的通知后，适配器会删除该消息。 删除消息的操作会通知 BizTalk Server 适配器已完成处理该消息。 通常**SubmitResponse**操作过程中作为其关联在同一个批处理**删除**操作。  
+- **删除： void DeleteMessage (IBaseMessage msg)。** 适配器通过 BizTalk Server 传输成功的通知后删除一条消息。 删除一条消息会通知 BizTalk Server 适配器已完成并显示消息。 通常**SubmitResponse**操作过程中作为其关联在同一个批处理**删除**操作。  
   
-- **提交响应： void SubmitResponseMessage （IBaseMessage solicitMsgSent，IBaseMessage responseMsgToSubmit）。** 适配器向要发回至 BizTalk Server 的批提交响应。 此操作在调用中包括原始消息以及响应，以便 BizTalk Server 可以将它们关联起来。  
+- **提交响应： void SubmitResponseMessage （IBaseMessage solicitMsgSent，IBaseMessage responseMsgToSubmit）。** 适配器提交回 BizTalk Server 发送的批处理的响应。 此操作包括原始消息响应和调用中，因此 BizTalk Server 可以将它们关联起来。  
   
 - **取消响应： void 的 CancelResponseMessages (string correlationToken)。** 如果响应消息的发送需要提交批处理之前, 取消**CancelResponseMessages**使用方法，传入要删除的关联的响应消息的相关标记。  
   
-  调用时**重新提交**或**挂起**上一条消息你可能想要保留某些消息上下文属性的值。 这可以通过以 XML 格式保存属性值得以实现。 在重新提交或挂起消息时，消息上下文中仍可以使用相应的属性。  
+  调用时**重新提交**或**挂起**上一条消息你可能想要保留某些消息上下文属性的值。 可以通过以 XML 格式保存属性值来执行此操作。 重新提交或挂起消息时保持消息上下文中可用的相应属性。  
   
-  以下 XML 字符串说明了存储信息的格式：  
+  以下 XML 字符串中介绍的信息存储在其中的格式：  
   
 ```  
 <PropertiesToUpdate>  
@@ -46,7 +46,7 @@ ms.locfileid: "37012982"
 </PropertiesToUpdate>  
 ```  
   
- 此 XML 字符串由以下代码生成：  
+ 下面的代码生成此 XML 字符串：  
   
 ```  
 private string GetPropsToUpdateXml(int nextRetryAttempt)  
@@ -56,13 +56,13 @@ return result;
 }  
 ```  
   
- 然后使用以下代码将此字符串保存到消息上下文中：  
+ 此字符串将随后保存到消息上下文中，使用以下代码：  
   
 ```  
 Message.Context.Write("PropertiesToUpdate", "http://schemas.microsoft.com/BizTalk/2003/system-properties", GetPropsToUpdateXml(++retryAttempt));  
 ```  
   
- 重新提交消息时，适配器可以通过使用以下代码行读取此属性：  
+ 时重新提交消息，适配器可以读取此属性，使用以下代码行：  
   
 ```  
 propValue = inmsg.Context.Read("RetryAttempts", "http://schemas.microsoft.com/BizTalk/2005/test-properties");  

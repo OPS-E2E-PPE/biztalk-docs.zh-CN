@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d8a9bcf8b2910f12183db33aa27a74b550c72b8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9981dbce13f613afeb5c061a96d319cddd6c5c94
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979678"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65298446"
 ---
 # <a name="message-considerations"></a>消息注意事项
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 提供发送、 接收、 转换和处理消息的一组广泛的功能。 这些功能包括：  
@@ -44,11 +44,11 @@ ms.locfileid: "36979678"
   
 2. 如果不现有的 MSDTC 事务上下文中发布传入消息，被创建一个新的 MSDTC 事务的消息片段写入 MessageBox 数据库。 在此方案中，以下注意事项适用：  
   
-   -   值增加**大消息片段大小**来降低的频率与大消息被分割为碎片，并减少创建关联的 MSDTC 事务的发生率。 因此应该增大此值，因为过多使用 MSDTC 事务将极大地影响系统性能。 请注意，增大此值还可能增加要使用的可用内存量。  
+   -   值增加**大消息片段大小**来降低的频率与大消息被分割为碎片，并减少创建关联的 MSDTC 事务的发生率。 这样应做因为过多使用 MSDTC 事务将极大地影响系统性能。 请注意，增加此值还可以增加使用的可用内存量。  
   
-   -   如果它花费的时间超过 60 分钟，可将消息写入到 MessageBox 的最大允许 MSDTC 事务超时，事务超时时，出现错误，并且写入消息的尝试失败，且不回滚。 **大消息片段大小**值应足够大才能在处理非常大的消息时避免出现此问题。 根据可用内存的大小，可将此值提高到 1000000 字节的最大值。  
+   -   如果它花费的时间超过 60 分钟，可将消息写入到 MessageBox 的最大允许 MSDTC 事务超时，事务超时时，出现错误，并且写入消息的尝试失败，且不回滚。 **大消息片段大小**值应足够大才能在处理非常大的消息时避免出现此问题。 具体取决于可用内存，此值应提高到 1000000 字节的最大值。  
   
-   -   消息中的每个消息片段都可针对 MessageBox 数据库创建一个或多个 SQL Server 数据库锁定。 当锁的数目超过数十万时，很可能 SQL Server 将生成"内存不足"错误。 如果出现此问题，请增加的值**大消息片段大小**以减少 （这将降低对 MessageBox 数据库所做的 SQL Server 数据库锁的数目） 的片段数或考虑底座你在 64 位版本的 SQL Server 的 MessageBox 数据库。 可用锁的数目是比 SQL Server 的 32 位版本的 SQL Server 上的 64 位版本上高得多。 可以使用下面的公式估算时 MessageBox 数据库存储在 SQL Server 的 32 位版本上可用的最大的每个交换的消息数：  
+   -   在消息中的每个消息片段将创建一个或多个 SQL Server 数据库锁定对 MessageBox 数据库。 当锁的数目超过数十万时，很可能 SQL Server 将生成"内存不足"错误。 如果出现此问题，请增加的值**大消息片段大小**以减少 （这将降低对 MessageBox 数据库所做的 SQL Server 数据库锁的数目） 的片段数或考虑底座你在 64 位版本的 SQL Server 的 MessageBox 数据库。 可用锁的数目是比 SQL Server 的 32 位版本的 SQL Server 上的 64 位版本上高得多。 可以使用下面的公式估算时 MessageBox 数据库存储在 SQL Server 的 32 位版本上可用的最大的每个交换的消息数：  
   
        ```  
        200,000 / (Number of CPUs * BatchSize * MessagingThreadPoolSize)  
@@ -57,11 +57,11 @@ ms.locfileid: "36979678"
    有关 BizTalk Server 如何处理大消息，包括处理大消息的指导原则的详细信息请参阅[如何 BizTalk Server 处理大消息](http://go.microsoft.com/fwlink/?LinkID=154680)(http://go.microsoft.com/fwlink/?LinkID=154680)。  
   
 ## <a name="message-type-considerations"></a>消息类型注意事项  
- BizTalk server 以两种主要格式之一接收消息： XML 文件或平面文件。 消息类型都应始终考虑到消息分发配置文件的 XML 和平面文件消息的不同资源要求。  
+ BizTalk server 以两种主要格式之一接收消息：XML 文件或平面文件。 消息类型都应始终考虑到消息分发配置文件的 XML 和平面文件消息的不同资源要求。  
   
 -   **XML 文件**使 BizTalk Server 之外传递路由的消息执行任何处理，消息必须为 XML 文件格式。  
   
--   **平面文件**BizTalk Server 可以执行任何处理而不是直通路由之前，必须为 XML 格式解析平面文件。 将平面文件解析为 XML 文件将极大地增加文件大小。 因为平面文件不包含带有关于其数据的描述性信息的 XML 标记。 另一方面，XML 文件还在描述性 XML 标记中包装了其所有数据。 在某些情况下，分析可以将大小增加的平面文件的文件的 XML 标记中包含的 10 个或多个，具体取决于多少描述性数据的因素。  
+-   **平面文件**BizTalk Server 可以执行任何处理而不是直通路由之前，必须为 XML 格式解析平面文件。 将平面文件解析到一个 XML 文件可以极大地增加文件的大小。 平面文件不包含有关其数据的描述性信息的 XML 标记。 XML 文件，但是，包装其所有数据在描述性 XML 标记。 在某些情况下，分析可以将大小增加的平面文件的文件的 XML 标记中包含的 10 个或多个，具体取决于多少描述性数据的因素。  
   
 -   **平面文件文档包装在 XML 文档中的单个 CDATA 部分节点**这种类型的文档是 XML 文件和平面文件的组合，并且通常是占用大量内存的因为 BizTalk Server 必须加载整个包装到的平面文件文档在处理它之前的内存。  
   

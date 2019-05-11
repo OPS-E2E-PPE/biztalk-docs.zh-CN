@@ -1,5 +1,5 @@
 ---
-title: 模板错误 |Microsoft 文档
+title: 模板错误 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e0c17750077824768007ce3de9b6792bffd6aed4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4944d45f5eace6e4ca53076283bb2b2f053c7edd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278405"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65299197"
 ---
 # <a name="template-errors"></a>模板错误
-本部分包含诊断和解决 WCF 模板错误的详细信息。  
+本部分包含有关诊断和解决 WCF 模板错误的详细的信息。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -28,4 +28,4 @@ ms.locfileid: "22278405"
   
 -   [未指定 BizTalk 消息正文元素](../core/biztalk-message-body-element-not-specified.md)  
   
--   [无效的出站 XML 模板](../core/invalid-outbound-xml-template.md)
+-   [出站 XML 模板无效](../core/invalid-outbound-xml-template.md)

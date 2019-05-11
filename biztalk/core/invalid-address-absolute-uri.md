@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 933897545d47e2a68c1911474a3549931edd4512
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 00b8c4986224e07865dc641551906e6aeed704fe
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001246"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65331294"
 ---
 # <a name="invalid-address-absolute-uri"></a>地址无效（绝对 URI）
 ## <a name="details"></a>详细信息  
@@ -33,7 +33,7 @@ ms.locfileid: "37001246"
 |  消息正文   |              无效的地址;"{0}"不是格式正确的绝对 uri              |
 
 ## <a name="explanation"></a>解释  
- 此错误事件表明您未提供具有正确格式的绝对地址的进程内 WCF 传输。 例如，您无法将进程内 WCF 传输的“地址”属性设置为相对地址（例如 /path/service.svc）。  
+ 此错误事件表示你未提供进程内 WCF 传输格式正确的绝对地址。 例如，不能将进程内 WCF 传输的地址属性设置为相对地址，例如 /path/service.svc。  
 
 ## <a name="user-action"></a>用户操作  
  将进程内 WCF 传输的地址更改为格式正确的绝对地址。  

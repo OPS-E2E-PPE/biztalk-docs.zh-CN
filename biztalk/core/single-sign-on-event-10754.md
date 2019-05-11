@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10754 |Microsoft Docs
+title: 单一登录：Event 10754 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f9861a45e9dae4d8e1b256af90d19f59f360f631
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 13af750a288a63e68aabd44916e95abc31ecfd1b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993430"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65307656"
 ---
-# <a name="single-sign-on-event-10754"></a>单一登录： 事件 10754
+# <a name="single-sign-on-event-10754"></a>单一登录：事件 10754
 ## <a name="details"></a>详细信息  
   
 |                 |                                                            |
@@ -28,7 +28,7 @@ ms.locfileid: "36993430"
 | 产品版本 | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
 |    事件 ID     |                           10754                            |
 |  事件源   |                           ENTSSO                           |
-|    组件    |                            N/A                             |
+|    组件    |                            不可用                             |
 |  符号名称  |                   ENTSSO_E_SSO_DISABLED                    |
 |  消息正文   |           当前已禁用 SSO 系统。            |
   

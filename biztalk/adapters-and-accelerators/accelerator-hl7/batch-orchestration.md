@@ -20,12 +20,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2271170d91990e5874168a18ed274c1502a93158
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1bbc6c257d0df78816f242b534e703c6c306ce14
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971590"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65247488"
 ---
 # <a name="batch-orchestration"></a>批处理业务流程
 Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 提供了可用于处理批处理业务流程 (BatchOrchestration.dll)。 此业务流程可以处理 HL7 编码 (2.X) 消息和/或确认 (Ack) 的批处理。 业务流程是一个本机[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]业务流程添加[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]（如下所列在 BizTalk 浏览器中的业务流程） 设置到的 BizTalk 业务流程的集。  

@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef25458cdf578930f46bdb702feb283a171d1529
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4a7dee9bf5280e7b27fbd8323fbaca913706f195
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971422"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399846"
 ---
 # <a name="the-esb-add-namespace-and-remove-namespace-components"></a>ESB 添加 Namespace 和删除 Namespace 组件
 许多公司已在标准仍在不断涌现，并且文档共享尚不普遍的时间的 XML 技术的早期采用者。 因此，它们并没有严格执行包括唯一的根命名空间，这通常这种情况今天的要求。  

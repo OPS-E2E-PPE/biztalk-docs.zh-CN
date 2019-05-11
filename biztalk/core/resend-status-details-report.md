@@ -1,5 +1,5 @@
 ---
-title: 重新发送状态详细信息报表 |Microsoft 文档
+title: 重新发送状态详细信息报告 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2335b10da205258f32a6676a6fee2a3ff32fef65
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 877e09fcbc2c2dc54b6c4f8bd7fb77827387b134
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268413"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65322107"
 ---
 # <a name="resend-status-details-report"></a>重新发送状态详细信息报告
-将参与方的“作为 AS2 接收方的参与方”属性配置为在未收到 MDN 情况下重新发送 AS2 消息时，此状态报告显示有关所做的重试信息。  
+此状态报告中显示的信息作为 AS2 接收方属性的参与方的参与方配置为未收到 MDN 时重新发送 AS2 消息时所做的重试尝试。  
   
- 此报表显示通过一条消息在 AS2/MDN 状态报表中，右键单击，然后单击**查看可靠消息传递状态**。 随后，“重新发送状态详细信息”页将显示对此消息所做的重新发送尝试的相关信息。  
+ 可通过上一条消息中 AS2/MDN 状态报告中，右键单击，然后单击显示此报告**查看可靠消息传送状态**。 重新发送状态详细信息页将显示此消息所做的重新发送尝试的信息。  
   
- 此报表才可用，如果选择了**重新发送 AS2 消息如果未收到 MDN**方作为相关方的 AS2 消息接收方属性中。  
+ 此报告才可用，如果选择了**MDN 未收到时重新发送 AS2 消息**作为相关参与方的 AS2 消息接收方属性的参与方。  
   
- 此报告显示在以下各页中对消息所做的重新尝试的相关信息：  
+ 该报告显示所做的以下页面上的消息的重试尝试的信息：  
   
-|第|显示的数据|  
+|第|显示数据|  
 |----------|--------------------|  
-|**常规**|当前发送尝试和重新发送配置的索引。|  
-|**重新发送历史记录**|消息发送尝试的历史记录。|
+|**常规**|当前发送尝试重新发送配置的索引。|  
+|**重新发送历史记录**|历史记录的消息发送尝试次数。|

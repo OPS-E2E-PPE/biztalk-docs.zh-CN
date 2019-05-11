@@ -17,15 +17,15 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a62fe56bed210669625c9fff4c76315d1eb4546
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 32fb8d27057f1fca3b75f20aab715649fb95b8cb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022867"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65329069"
 ---
 # <a name="manage-biztalk-server-sample"></a>管理 （BizTalk Server 示例）
-管理单一登录 (SSO) 示例演示如何构造能用于 ssomanage.exe 命令行实用工具的 .xml 文件以执行以下类型的管理操作：  
+管理单一登录 (SSO) 示例演示了如何构造.xml 文件，它们可以使用 ssomanage.exe 命令行实用程序来执行以下类型的管理操作：  
   
 - 在 SSO 系统级别更新全局信息  
   
@@ -38,7 +38,7 @@ ms.locfileid: "37022867"
   有关演示如何以编程方式配置 SSO，例如创建关联应用程序和用户映射的示例，请参阅[HTTPSSO （BizTalk Server 示例）](../core/httpsso-biztalk-server-sample.md)。  
   
 ## <a name="what-this-sample-does"></a>本示例的用途  
- 本示例为上述操作类型中的每一种类型都提供了一对 XSD 和示例 .xml 文件。 示例 .xml 文件中的值是无效的。 必须更改这些值，使其与您的特定需求相适应。  
+ 此示例包含一对 XSD 和示例.xml 文件，为每个这些类型的操作。 示例.xml 文件中的值不是有效的。 您必须对适用于你的特定要求的值进行更改。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
  *\<示例路径\>* \SSO\Manage\  
@@ -47,30 +47,30 @@ ms.locfileid: "37022867"
   
 |文件|Description|  
 |---------------|-----------------|  
-|AffiliateApplication.xml、GlobalInfo.xml、UserMapping.xml|示例 .xml 文件，在进行修改之后，可以将它们作为参数传递给命令行实用工具 ssomanage.exe。|  
-|AffiliateApplication.xsd、GlobalInfo.xsd、UserMapping.xsd|与 .xml 文件对应的架构文件，全面描述了架构可能包含的元素和属性。 可使用这些文件验证从其他来源收到的对应 .xml 文件。|  
+|AffiliateApplication.xml、 GlobalInfo.xml、 UserMapping.xml|示例.xml 文件，你可以修改后，作为参数传递给命令行实用工具 ssomanage.exe。|  
+|AffiliateApplication.xsd、 GlobalInfo.xsd、 UserMapping.xsd|提供对其使用的元素和属性的完整说明相应的.xml 文件的架构文件。 这些文件可用于验证从其他来源收到的对应.xml 文件。|  
   
-## <a name="building-and-initializing-this-sample"></a>生成并初始化本示例  
- 由于本示例仅包括 XML 架构定义语言 (XSD) 和 .xml 文件，您可以修改后者并将其传递给命令行实用工具 ssomanage.exe，本示例中无需生成任何内容。  
+## <a name="building-and-initializing-this-sample"></a>生成并初始化此示例  
+ 本示例包含仅 XML 架构定义语言 (XSD) 和.xml 文件，后者的其中您可以修改，然后将其传递给命令行实用工具 ssomanage.exe，因为没有要在此示例中生成。  
   
 ## <a name="running-this-sample"></a>运行本示例  
- 本示例包含了示例 .xml 文件，可用于在以下三种不同模式下运行命令行实用工具 ssomanage.exe：  
+ 此示例包括用于在以下三种不同模式下运行命令行实用工具 ssomanage.exe 示例.xml 文件：  
   
-- **更新在 SSO 系统级别的全局信息。** 若要执行此种类型的操作，请执行以下步骤：  
+- **更新在 SSO 系统级别的全局信息。** 若要执行此类操作，请执行以下步骤：  
   
-  1. 根据您的特定配置的需要，编辑 GlobalInfo.xml 文件。  
+  1. 编辑 GlobalInfo.xml 文件所需的特定配置。  
   
-  2. 使用适当的参数运行命令行实用工具 ssomanage.exe，如下所示：  
+  2. 使用适当的参数，运行 ssomanage.exe 命令行实用程序，如下所示：  
   
      ```  
      ssomanage –updatedb GlobalInfo.xml  
      ```  
   
-     确保根据您的环境对 GlobalInfo.xml 文件中的值进行了编辑。 例如，SSO 管理员帐户必须是一个有效的 Windows 帐户。 SSO 管理员帐户和 SSO 关联管理员帐户都必须是 Windows 的全局域组帐户。  
+     请确保编辑文件 GlobalInfo.xml 以匹配你的环境中的值。 例如，SSO 管理员帐户必须是有效的 Windows 帐户。 SSO 管理员帐户和 SSO 关联管理员帐户必须是 Windows 的全局域组帐户。  
   
-- **创建关联应用程序。** 若要执行此种类型的操作，请执行以下步骤：  
+- **创建关联应用程序。** 若要执行此类操作，请执行以下步骤：  
   
-- 根据您的特定配置的需要，编辑 AffiliateApplication.xml 文件。  
+- 编辑 AffiliateApplication.xml 文件所需的特定配置。  
   
   - 使用适当的参数，运行命令行实用工具 ssomanage.exe，如下所示：  
   
@@ -78,11 +78,11 @@ ms.locfileid: "37022867"
     ssomanage –createapps AffiliateApplication.xml  
     ```  
   
-    可以同时创建多个关联应用程序。  
+    可以在同一时间创建多个关联应用程序。  
   
-- **创建用户映射。** 若要执行此种类型的操作，请执行以下步骤：  
+- **创建用户映射。** 若要执行此类操作，请执行以下步骤：  
   
-  1. 根据您的特定配置的需要，编辑 UserMapping.xml 文件。  
+  1. 编辑 Usermapping.xml 所需的特定配置文件。  
   
   2. 使用适当的参数，运行命令行实用工具 ssomanage.exe，如下所示：  
   
@@ -90,10 +90,10 @@ ms.locfileid: "37022867"
      ssomanage –createmappings UserMapping.xml  
      ```  
   
-     可以同时为一个或多个关联应用程序创建多个映射。  
+     可以创建多个映射一个或多个关联应用程序在同一时间。  
   
 ## <a name="comments"></a>注释  
- 在修改了本示例提供的示例 .xml 文件之后，特别是在此类更改涉及到在这些文件中添加敏感信息的情况下，请确保这些文件在文件系统中能得到很好的保护。 例如，应确保没有将这些文件误放到某个共享文件夹中。  
+ 提供与此示例中，尤其是，此类更改涉及的文件中包括敏感信息的示例.xml 文件进行更改后请确保这些文件受到良好保护文件系统中。 例如，确保它们不会无意中放共享的文件夹中。  
   
 ## <a name="see-also"></a>请参阅  
  [SSO（BizTalk Server 示例文件夹）](../core/sso-biztalk-server-samples-folder.md)

@@ -1,5 +1,5 @@
 ---
-title: 第 1 课： 提交示例平面文件 |Microsoft Docs
+title: 第 1 课：提交示例平面文件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,14 +17,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 63e93b348e90bd01607d96b1ea86a6751f00b161
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: eba5a1810f9d23a1f8fb27f6bd3527b20a201473
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014542"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377586"
 ---
-# <a name="lesson-1-submitting-a-sample-flat-file"></a>第 1 课： 提交示例平面文件
+# <a name="lesson-1-submitting-a-sample-flat-file"></a>第 1 课：提交示例平面文件
 您提交示例平面文件，以测试您的解决方案。  
   
 ### <a name="to-submit-a-sample-mt103-flat-file"></a>若要提交示例 MT103 平面文件  
@@ -40,4 +40,4 @@ ms.locfileid: "37014542"
    > [!NOTE]
    >  不要删除生成的文件;将在后面的课程中使用它。  
   
-   请继续执行[第 2 课： 提交无效的 MT103 消息](../../adapters-and-accelerators/accelerator-swift/lesson-2-submitting-an-mt103-message-that-is-not-valid.md)。
+   请继续执行[第 2 课：提交是无效的 MT103 消息](../../adapters-and-accelerators/accelerator-swift/lesson-2-submitting-an-mt103-message-that-is-not-valid.md)。

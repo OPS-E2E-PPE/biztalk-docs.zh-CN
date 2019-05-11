@@ -1,5 +1,5 @@
 ---
-title: 转换 （发送端口转换节点） |Microsoft 文档
+title: Transform （Sendport-transforms 节点） |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,20 +14,20 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0a54ed1f25b762d12f598bca84da9b9c3ddd26a9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cca25040f9f462b35e1fd91f9afc6b1758c6559f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278973"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65303031"
 ---
-# <a name="transform-sendport-transforms-node"></a>转换 （发送端口转换节点）
-绑定文件的“转换”节点下的“转换”节点包含有关随同该绑定文件一起导出的 BizTalk Server 映射的特定信息。  
+# <a name="transform-sendport-transforms-node"></a>Transform （Sendport-transforms 节点）
+绑定文件节点的 Transform 节点包含随绑定文件一起导出的 BizTalk Server 映射有关的特定信息。  
   
 ## <a name="nodes-in-the-transform-node"></a>Transform 节点中的节点  
  下表列出了可为绑定文件的此节点设置的属性：  
   
-|**名称**|**节点类型**|**数据类型**|**Description**|**限制**|**注释**|  
+|**名称**|**节点类型**|**数据类型**|**说明**|**限制**|**注释**|  
 |--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|FullName|Attribute|xs:string|指定映射的全名。|可选|默认值：空|  
-|AssemblyQualifiedName|Attribute|xs:string|指定映射的程序集限定名。|可选|默认值：空|
+|FullName|特性|xs:string|指定的映射的完整名称。|可选|默认值：空|  
+|AssemblyQualifiedName|特性|xs:string|指定映射的程序集限定的名称。|可选|默认值：空|

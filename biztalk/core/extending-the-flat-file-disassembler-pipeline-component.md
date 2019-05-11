@@ -1,5 +1,5 @@
 ---
-title: 扩展平面文件反汇编程序管道组件 |Microsoft 文档
+title: 扩展平面文件拆装器管道组件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 031189c0ecadfd8a7baff38200f044598e800437
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6f19184087c18b901944382c4a421c14c1911e4e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246229"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388225"
 ---
-# <a name="extending-the-flat-file-disassembler-pipeline-component"></a>扩展平面文件反汇编程序管道组件
-下面的示例演示如何创建自定义拆装器以便解析用 UTF-7 编码的平面文件文档。 若要处理 utf-7 文档，该组件，继承自**FFDasmComp**类，然后并重写其**GetDataReader**方法。  
+# <a name="extending-the-flat-file-disassembler-pipeline-component"></a>扩展平面文件拆装器管道组件
+下面的示例说明了如何创建自定义拆装器以便解析用 utf-7 编码的平面文件文档。 若要处理 utf-7 文档，该组件继承自**FFDasmComp**类，然后重写其**GetDataReader**方法。  
   
 ## <a name="example"></a>示例  
   
@@ -108,10 +108,10 @@ namespace Microsoft.BizTalk.Test
 ```  
   
 ## <a name="example"></a>示例  
- 下面的示例演示如何创建自定义拆装器以便执行平面文件交换的事务处理。 自定义拆装器与标准平面文件拆装器的不同之处在于：前者在整个输入交换都完全处理前，并不生成任何已拆装的文档。 此组件实现继承自**FFDasmComp**类，并重写**GetNext**方法。 在第一个调用**GetNext**方法，它会处理所有消息交换中的，将它们存储在**ArrayList**，并返回从第一条消息**ArrayList**。 后续调用中，它将返回从下一条消息**ArrayList**。  
+ 下面的示例说明了如何创建自定义拆装器以便执行平面文件交换的事务处理。 它不同于标准的平面文件拆装器，因为它不会生成任何已拆装的文档，直到整个输入的交换都完全处理。 此组件实现继承自**FFDasmComp**类，并重写**GetNext**方法。 在首次调用**GetNext**方法，它处理交换中的所有消息，将它们存储在**ArrayList**，并返回从第一条消息**ArrayList**。 后续调用中，它将返回从下一条消息**ArrayList**。  
   
 > [!NOTE]
->  在下面的代码示例中实现 GetNext() 方法的方式并不适合于处理大型文档，因为它将在内存中保留整个交换。  将此技术用于大型文档可能会用尽内存资源，从而导致性能下降或出现不稳定的行为。  
+>  下面的代码示例中的 getnext （） 方法的实现不适合处理大型文档，因为它将保留在内存中的整个交换。  将此技术用于大型文档可能会用尽内存资源，从而导致性能下降或不稳定行为。  
   
 ```  
 using System;  
@@ -232,5 +232,5 @@ namespace Microsoft.BizTalk.Component
   
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [开发分解的管道组件](../core/developing-a-disassembling-pipeline-component.md)
+## <a name="see-also"></a>请参阅  
+ [开发拆装管道组件](../core/developing-a-disassembling-pipeline-component.md)

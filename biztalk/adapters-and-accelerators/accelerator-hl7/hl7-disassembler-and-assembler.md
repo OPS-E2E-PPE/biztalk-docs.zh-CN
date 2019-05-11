@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d603e74defeac983b1287f16c7f562b706b8c54d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3762fedc26142bf91bef677255d1eaa7427ba2e0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994990"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292992"
 ---
 # <a name="hl7-disassembler-and-assembler"></a>HL7 反汇编程序和汇编程序
 HL7 反汇编程序和汇编程序为 HL7 编码的消息提供支持。 因为 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]处理本机格式为 XML，Microsoft BizTalk Accelerator for HL7 消息 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 使用 HL7 反汇编程序和汇编程序进行[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]HL7 集成引擎。  
@@ -33,7 +33,7 @@ HL7 反汇编程序和汇编程序为 HL7 编码的消息提供支持。 因为 
   
  在组装器可以序列化以下确认 (ACK) 消息：  
   
-- 静态  
+- Static  
   
 - 原始模式  
   

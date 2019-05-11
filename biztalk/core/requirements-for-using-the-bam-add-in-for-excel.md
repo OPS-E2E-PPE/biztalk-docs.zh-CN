@@ -1,5 +1,5 @@
 ---
-title: 使用 for Excel 的 BAM 外接程序的要求 |Microsoft 文档
+title: 使用 excel 的 BAM 外接程序的要求 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,14 +18,14 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4b000c203a2f5c18792b38a29ce4c78e7f46a996
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 52386f743bfe748ebe51e02c48c601a3f226087c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268437"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65255145"
 ---
-# <a name="requirements-for-using-the-bam-add-in-for-excel"></a>用于 Excel 的 BAM 外接程序的使用要求
+# <a name="requirements-for-using-the-bam-add-in-for-excel"></a>使用 excel 的 BAM 外接程序的要求
 业务分析员可以使用用于 Excel 的 BAM 外接程序来定义要跟踪的事件和数据，以及用户能够访问的跟踪数据视图的逻辑分组和聚合。  
   
 ## <a name="bam-add-in-for-excel-requirements"></a>用于 Excel 的 BAM 外接程序的要求  
@@ -47,5 +47,5 @@ ms.locfileid: "22268437"
   
 -   Msado15.dll  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [管理 BAM](../core/managing-bam.md)

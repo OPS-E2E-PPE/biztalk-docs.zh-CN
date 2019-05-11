@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10734 |Microsoft Docs
+title: 单一登录：Event 10734 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 89c0cc03c4f156d7b616e417a3cc44a14b7dee40
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8c505a67bbbaeb4b9a5bbf1ebbc8bc6dc40a6fa3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024459"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291803"
 ---
-# <a name="single-sign-on-event-10734"></a>单一登录： 事件 10734
+# <a name="single-sign-on-event-10734"></a>单一登录：事件 10734
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                                                                            |
@@ -30,14 +30,14 @@ ms.locfileid: "37024459"
 |  事件源   |                                                                                   ENTSSO                                                                                   |
 |    组件    |                                                                                    N\A                                                                                     |
 |  符号名称  |                                                                      SSO_INFO_PS_NOTIFICATION_QUEUED                                                                       |
-|  消息正文   | 已为适配器准备了一个通知。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> 外部帐户: %3 %r<br /><br /> Windows 帐户： %4\\%5 |
+|  消息正文   | 通知已排队等待 adapter.%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> 外部帐户: %3 %r<br /><br /> Windows 帐户： %4\\%5 |
 
 ## <a name="explanation"></a>解释  
- 此信息事件表示已为适配器准备了一个通知。  
+ 此信息事件表明为适配器准备了一个通知。  
 
 ## <a name="user-action"></a>用户操作  
 
-- 不必进行用户操作。  
+- 不不需要任何用户操作  
 
   有关详细信息，请参阅下列资源：  
 

@@ -1,5 +1,5 @@
 ---
-title: GetUserDataType |Microsoft 文档
+title: GetUserDataType |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5525dba034571acd91d1f3dd99f2b56069f81fc2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 78fb7766363b212e6d913565d43f07500b0d1340
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246461"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387642"
 ---
 # <a name="getuserdatatype"></a>GetUserDataType
-将当前用户数据类型的名称推送到堆栈上。  
+将推送到堆栈上的当前用户数据类型的名称。  
   
 ## <a name="syntax"></a>语法  
   
@@ -33,23 +33,23 @@ ms.locfileid: "22246461"
  无。  
   
 ## <a name="pushed-value"></a>推送的值  
- 包含程序集限定格式的当前用户数据类型的字符串。  
+ 包含程序集限定格式中的当前用户数据类型的字符串。  
   
-## <a name="remarks"></a>注释  
- 与不同**GetActivityType**，此操作不使用限定程序集的类名的格式; 相反，它会推送仅的类型名称：  
+## <a name="remarks"></a>备注  
+ 与不同**GetActivityType**，此操作不使用程序集限定类名格式; 相反，它将推送仅类型名称：  
   
 ```  
 MyLibrary.MyObject  
 ```  
   
 > [!NOTE]
->  如果比较值时使用程序集限定类名格式作为常数，计算结果将始终为 `false`。  
+>  如果使用程序集限定类名格式，如常量比较值时将计算结果始终为`false`。  
   
 ## <a name="special-filter-behavior"></a>特殊筛选器行为  
- 在筛选器内部执行此操作时，还将始终匹配派生的用户数据类型。  
+ 在筛选器内部执行此操作时，派生的用户数据还将始终匹配类型。  
   
 ## <a name="example"></a>示例  
- 以下示例包含的事件筛选器表达式对 `true` 实例和派生自 `MyLibrary.MyObject` 的类的任何实例的计算结果将为 `MyLibrary.MyObject`。  
+ 下面的示例包含的事件筛选器表达式的计算结果将为`true`有关`MyLibrary.MyObject`实例和任何实例派生的类的`MyLibrary.MyObject`。  
   
 ```  
 <ic:Filter>  

@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7735617b0d70aa3c693b1808b07d7670e6137f15
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 27885498dab635ebd8cb1923932c274b468e1d76
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999334"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65301686"
 ---
 # <a name="what-is-biztalk-server-log-shipping"></a>什么 BizTalk Server 日志传送概述
 BizTalk Server 灾难恢复过程围绕 BizTalk 日志传送。 BizTalk 日志传送通过连续将事务日志更新应用于灾难恢复站点数据库，简化了发生灾难时数据库还原。  

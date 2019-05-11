@@ -1,5 +1,5 @@
 ---
-title: 保留在平面文件汇编管道组件的分隔符 |Microsoft 文档
+title: 保留平面文件组装器管道组件中的分隔符 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,33 +12,33 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9d10879adfbe0ca0c68376faa48d9976fc19599
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3f975f04bb18dca5cc8e311fdb21d7b44caf01d0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268781"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65322134"
 ---
 # <a name="retaining-delimiters-in-the-flat-file-assembler-pipeline-component"></a>保留平面文件组装器管道组件中的分隔符
-如果在经过使用平面文件组装器的自定义管道的消息中缺少某些记录，则根据输入文件中缺少记录的位置，这些记录的分隔符不一定出现在平面文件输出中。  
+如果消息经过使用平面文件组装器的自定义管道中有缺失的记录，这些记录的分隔符可能或可能不会显示在平面文件输出，具体取决于在其中输入文件中的记录将会丢失。  
   
- 若要确保该平面文件保留某些分隔符，您可以使用映射和自定义脚本，确保在特定输入记录在消息中不存在时创建一条“空”记录。 为此，您必须确保平面文件组装器的文档架构中可能的空节点设置了如下属性：  
+ 以确保该平面文件保留某些分隔符，则可以使用映射和自定义脚本以确保在特定输入的记录不存在消息中时，将创建"空"记录。 为实现此目的，你必须确保平面文件组装器的文档架构中的可能的空节点已按所示设置以下属性：  
   
 |属性|设置|  
 |--------------|-------------|  
 |为空数据保留分隔符|是|  
-|禁止显示尾随分隔符|是|  
-|生成空节点（对根节点进行这一设置）|True|  
+|取消尾部分隔符|否|  
+|生成空节点 （这在设置的根节点）|True|  
   
-### <a name="to-create-a-map-that-creates-an-empty-record"></a>创建将创建“空”记录的映射  
+### <a name="to-create-a-map-that-creates-an-empty-record"></a>若要创建映射，将创建一个"空"记录  
   
-1.  向 BizTalk 项目添加新映射。  
+1.  向 BizTalk 项目添加新的映射。  
   
-2.  将平面文件组装器使用的文档架构指定为映射源和映射目标架构。  
+2.  指定使用平面文件组装器作为映射源和映射目标架构的文档架构。  
   
-3.  将不为空的源字段映射到相应的目标字段。  
+3.  将不为空到相应的目标字段的源字段映射。  
   
-4.  对于可能为空的那些字段，使用自定义脚本来检查源字段是否为空并返回空字符串（而非 Nil）。 使用如下脚本：  
+4.  这些字段可能为空的使用自定义脚本来检查源字段是否为空并返回空字符串 （而非 Nil)。 使用脚本如下所示：  
   
     ```  
     public string ValOrEmpty(string val)  
@@ -48,10 +48,10 @@ ms.locfileid: "22268781"
     ```  
   
     > [!NOTE]
-    >  您必须创建对于您映射的每个可能的空字段都具有唯一函数名的脚本。 例如，如果你有可能为空的三个字段，你可能有函数名为`ValOrEmpty1`， `ValOrEmpty2`， `ValOrEmpty3`。  
+    >  替换为您映射的每个可能的空字段的唯一函数名称，必须创建一个脚本。 例如，如果有三个字段可能为空的则可能必须名为的函数`ValOrEmpty1`， `ValOrEmpty2`， `ValOrEmpty3`。  
   
-5.  使用 BizTalk Server 管理控制台，将配置发送端口的自定义管道和平面文件汇编组件以使用为出站映射的映射。  
+5.  使用 BizTalk Server 管理控制台中，使用自定义管道和平面文件组装器组件以将映射用作出站映射配置发送端口。  
   
-## <a name="see-also"></a>另请参阅  
- [如何配置为发送端口的出站映射](../core/how-to-configure-outbound-maps-for-a-send-port.md)   
- [平面文件汇编管道组件](../core/flat-file-assembler-pipeline-component.md)
+## <a name="see-also"></a>请参阅  
+ [如何配置发送端口的出站映射](../core/how-to-configure-outbound-maps-for-a-send-port.md)   
+ [平面文件汇编程序管道组件](../core/flat-file-assembler-pipeline-component.md)

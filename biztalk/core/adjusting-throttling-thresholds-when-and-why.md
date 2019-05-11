@@ -1,5 +1,5 @@
 ---
-title: 调整限制阈值： 何时和为何 |Microsoft 文档
+title: 调整限制阈值：何时以及为何 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3b49ae78d4b2d0cf2dabfc69af9023b1e8676dea
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3fa8ad1a9c8c9c94bc41bc4ca33b3fb8763d2b69
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22229925"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360112"
 ---
-# <a name="adjusting-throttling-thresholds-when-and-why"></a>调整限制阈值： 何时和为何
-对于阻止操作而言，一个大小根本不够。 将由一系列因素确定应采用的最佳设置。 BizTalk Server 本身提供了默认值，这些默认值经测试证明可有效地防止系统发生积压过多等现象。 然而，在某些情况下，这些默认值可能过于严格。 下面的示例阐释了这一点。  
+# <a name="adjusting-throttling-thresholds-when-and-why"></a>调整限制阈值：时间和原因
+谈到限制，一个大小根本不够。 有一系列因素，以确定最佳设置应该是什么。 默认情况下，BizTalk Server 提供的默认值，已通过测试，来有效保护系统的情况下被证实喜欢积压工作超额部分。 但是，对于某些情况下，这可能过高。 以下示例说明了这一点。  
   
-## <a name="example-1-peak-loads-and-database-size"></a>示例 1： 高峰负载和数据库大小  
- 在 BizTalk Server 上构建的每个解决方案都有最大可承受吞吐量 (MST)。 根据定义，只要负载低于此级别，系统就能够无限制地承受该负载。 在实践中，但是，它是更常见的是具有高峰和低谷中的负载配置文件与具有恒定的负载，不会随时间而有所不同。  
+## <a name="example-1-peak-loads-and-database-size"></a>示例 1：高峰负载和数据库大小  
+ BizTalk Server 上构建每个解决方案都有最大可承受吞吐量 (MST)。 只要负载低于此级别，系统可以承受该负载无限期地，通过定义。 在实践中，但是，它是更常见的是与具有恒定的负载不会随着时间的推移而变化的相比有高峰和低谷负载配置文件中。  
   
- 从经济角度而言，与其构建一个可无限制地承受最高峰值负载的数据库，还不如构建一个适当的系统，此系统在峰值负载下可以处理一些积压，但在低谷期可以恢复正常。 然而，如果峰值负载期间预计的积压高于数据库大小的默认阻止值，则系统将通过阻止输入来阻止积压。 如果这一点不可行（例如，您需要尽快使用所有输入文件），此解决方案将提高数据库大小阈值，以便在阻止之前接受预计的积压。  
+ 而不是生成一个系统能够承受的最高的峰值，无限期地加载，它是更具成本效益构建系统可以处理在峰值负载时，一些积压工作和低谷期间恢复。 但是，如果加载峰值期间预计的积压高于默认限制数据库大小值然后系统将通过阻止输入来阻止积压工作。 如果不需要这样做，例如，因为您需要的所有输入文件被作为快速，然后解决方案是提高数据库大小阈值，若要阻止之前接受预计的积压。  
   
-## <a name="example-2-memory-usage-optimization"></a>示例 2： 内存使用情况的优化  
- 阻止过程用来衡量处理速度的另一个资源是主机进程可以使用多少内存。 如果与阈值相比，可用内存过小，则阻止过程将减少引擎从要处理的主机队列中检索的消息数。 鉴于现今的企业级服务器能够容纳大量内存并且内存不难获得（尤其是由于在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中提供了 64 位支持），因此有充分的理由需要提高和降低阈值，以优化内存使用率。  
+## <a name="example-2-memory-usage-optimization"></a>示例 2：内存使用情况的优化  
+ 限制使用来衡量处理速度的另一个资源是内存量是可用于的主机进程。 如果与阈值相比，可用内存获取太小，限制将会减慢引擎检索从主机队列要处理的消息数。 给定的量和可用性如今的企业级服务器上的内存中的可变性，尤其是在使用 x64 支持在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，阈值很可能需要以引发或降低以优化内存使用情况。  
   
 ## <a name="recommendation"></a>建议  
- 默认情况下，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中的阻止行为被配置为随时向系统提供良好的保护。 然而，不应将默认设置当作最佳配置。 应监视性能计数器以了解阻止状态，从而确定是否发生了阻止行为，接着自行衡量阻止行为所依据的资源（例如，数据库大小或内存使用率）是处于欠利用状态还是处于过利用状态，然后相应地调整阻止阈值的大小。
+ 中的阻止行为[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]默认提供良好的保护现成的系统配置。 默认设置应不是，但是，想当然当作最佳配置。 监视性能计数器限制状态，以查看是否限制的位置，然后自行衡量阻止行为的资源为基础 （例如，数据库大小或内存使用率） 的利用情况下或通过，然后调整限制阈值相应地增减。

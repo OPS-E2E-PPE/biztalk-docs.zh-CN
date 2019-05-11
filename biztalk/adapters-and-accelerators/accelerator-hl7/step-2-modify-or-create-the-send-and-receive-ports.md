@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 修改或创建发送和接收端口 |Microsoft Docs
+title: 第 2 步：修改或创建发送和接收端口 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 42c40652d334fd2c7dec2475edca81b9fc9b1b14
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8538bd8f67a78c77c0dca0a875c26ed169672e80
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996518"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288612"
 ---
-# <a name="step-2-modify-or-create-the-send-and-receive-ports"></a>步骤 2： 修改或创建发送和接收端口
+# <a name="step-2-modify-or-create-the-send-and-receive-ports"></a>第 2 步：修改或创建发送和接收端口
 所需文件发送和接收端口的批处理中 / 出站教程批处理。 如果单击了**启动教程**安装的 Enterprise Edition 的末尾按钮[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]为你创建这些端口： 名为 Tutorial_BTAHL7Drop，一个发送端口和一个名为 Tutorial_BTAHL7PickUp 的接收端口。 如果您有这些端口，仍需要修改发送端口 Tutorial_BTAHL7Drop。  
 
  如果[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]安装程序不未创建发送和接收端口，请参阅本主题中的"创建 BIBOTutorialPickup 接收端口"过程，然后请参阅"创建 BIBOTutorialDrop 发送端口"还在本主题中的过程。  
@@ -93,7 +93,7 @@ ms.locfileid: "36996518"
 
 1. 在 BizTalk Server 管理控制台中，右键单击**发送端口**，依次指向**新建**，然后单击**静态单向发送端口**。  
 
-2. 在“发送端口属性”对话框中，执行以下操作：  
+2. 在发送端口属性对话框中，请执行以下操作：  
 
 
    |   使用此选项    |                                执行的操作                                 |
@@ -138,4 +138,4 @@ ms.locfileid: "36996518"
 
 10. 展开**平台设置**，然后单击**主机实例**。 右键单击**BizTalkServerApplication**，然后单击**重新启动**。  
 
-    请继续执行[步骤 3： 测试在入站批处理 / 出站批处理方案](../../adapters-and-accelerators/accelerator-hl7/step-3-test-the-batch-in-batch-out-scenario.md)。
+    请继续执行[步骤 3:测试在入站批处理 / 出站批处理方案](../../adapters-and-accelerators/accelerator-hl7/step-3-test-the-batch-in-batch-out-scenario.md)。

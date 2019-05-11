@@ -1,5 +1,5 @@
 ---
-title: 步骤 7： 创建发送端口以将 ^ A03 消息到他使用 MLLP 适配器 |Microsoft Docs
+title: 步骤 7：创建发送端口以将 ^ A03 消息到他使用 MLLP 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 540a8745da811e7f14ab6ac5c1909bffe057c5f7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 49d75da284ecbf0852d62e614cae2a787bc6dc52
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006102"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65287916"
 ---
-# <a name="step-7-create-a-send-port-to-deliver-the-adta03-message-to-his-using-the-mllp-adapter"></a>步骤 7： 创建发送端口以将 ^ A03 消息到他使用 MLLP 适配器
+# <a name="step-7-create-a-send-port-to-deliver-the-adta03-message-to-his-using-the-mllp-adapter"></a>步骤 7：创建发送端口以将 ^ A03 消息到他使用 MLLP 适配器
 在此步骤中，你创建发送端口将消息发送到医院信息系统 (HIS) 使用 MLLP 适配器。  
 
 ### <a name="to-create-the-tutorialmllpsend-send-port"></a>若要创建 Tutorial_MllpSend 发送端口  
@@ -67,4 +67,4 @@ ms.locfileid: "37006102"
 
 7. 在管理控制台中，单击**发送端口**，右键单击**Tutorial_MllpSend**，然后单击**启动**。  
 
-   请继续执行[步骤 8： 配置参与方信息](../../adapters-and-accelerators/accelerator-hl7/step-8-configure-party-information.md)。
+   请继续执行[步骤 8:配置参与方信息](../../adapters-and-accelerators/accelerator-hl7/step-8-configure-party-information.md)。

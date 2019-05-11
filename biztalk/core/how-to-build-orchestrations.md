@@ -19,31 +19,31 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9000c986e95270328d9c31ef4f5e3bda7f1576e5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f755ea3b2aa01919d7f5d40a9eca92fd3529c629
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987326"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387076"
 ---
 # <a name="how-to-build-orchestrations"></a>如何生成业务流程
-完成业务流程绘图后，可将 BizTalk 项目生成到包含可执行业务流程的程序集中。  
+完成业务流程绘图后，封装可执行业务流程的程序集生成 BizTalk 项目。  
   
- 在生成过程中，BizTalk 业务流程设计器将检查每个形状，以确定它是否完整并且正确，如果不完整或者不正确，则会在任务列表中报告错误。  
+ 在生成过程中，BizTalk 业务流程设计器将检查以确定它是否是完整且正确，并报告错误的任务列表中，如果不是每个形状。  
   
- 在 Visual Studio 中生成时有几种选择：  
+ 必须在 Visual Studio 中生成的几个选项：  
   
-- 可以生成业务流程所在的整个解决方案。  
+- 您可以构建您的业务流程所在的整个解决方案。  
   
 - 可以生成解决方案中的单个项目。  
   
-- 生成项目或解决方案时可以跳过业务流程。  
+- 生成项目或解决方案时，可以跳过该业务流程。  
   
-  如果要生成其他组件（包括其他业务流程），但不想生成特定业务流程，则可以在业务流程的 .odx 文件的文件属性中指示您不想生成该业务流程，这样便会将其跳过。  
+  如果想要生成其他组件，包括其他业务流程，但不是想生成特定的业务流程，你可以指示在业务流程的.odx 文件，您不想要生成它，并将跳过的文件属性。  
   
-### <a name="to-build-an-orchestration"></a>生成业务流程  
+### <a name="to-build-an-orchestration"></a>若要生成业务流程  
   
--   创建业务流程后，需要先生成包含该业务流程的 BizTalk 项目，然后才能测试或使用该业务流程。 可以生成整个解决方案，也可以生成解决方案中的单个项目。  
+-   在创建后您的业务流程，需要生成包含它，然后才能测试或使用该业务流程的 BizTalk 项目。 您可以构建整个解决方案中的单个项目。  
   
 ### <a name="to-build-a-solution"></a>若要生成的解决方案  
   
@@ -53,6 +53,6 @@ ms.locfileid: "36987326"
   
 -   右键单击项目并选择**生成**。  
   
-### <a name="to-build-a-project-or-solution-without-compiling-a-particular-orchestration"></a>在不编译特定业务流程的情况下生成项目或解决方案  
+### <a name="to-build-a-project-or-solution-without-compiling-a-particular-orchestration"></a>若要生成项目或解决方案而无需编译特定业务流程  
   
 -   单击.odx 文件对应，向业务流程，并在属性窗口中，单击**生成操作**属性，然后选择**None**。

@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b2ded5686cc81b1cc3b629601b142a19c3b7b193
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9dc2ab707bb4620fdb4b45db2750514758f21300
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023379"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400360"
 ---
 # <a name="using-biztalk-server-log-shipping-for-disaster-recovery"></a>使用 BizTalk Server 日志传送灾难恢复
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 实现数据库的备用容量通过数据库使用日志传送。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 备份和还原的数据库和事务日志文件，从而允许在备用服务器恢复数据库处理在的生产数据库服务器出现故障，可自动执行日志传送。  
@@ -28,7 +28,7 @@ ms.locfileid: "37023379"
 ## <a name="using-log-shipping-for-disaster-recovery"></a>使用日志传送灾难恢复  
  执行以下操作时使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]日志传送灾难恢复：  
   
-- 按照本主题中的步骤[清单： 增加可用性灾难恢复](../technical-guides/checklist-increasing-availability-with-disaster-recovery.md)以提高可用性的生产型的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用灾难恢复环境。  
+- 按照本主题中的步骤[核对清单：提供高可用性灾难恢复](../technical-guides/checklist-increasing-availability-with-disaster-recovery.md)以提高可用性的生产型的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用灾难恢复环境。  
   
 - 验证的灾难恢复服务器都具有容量来处理生产负载。  
   

@@ -1,5 +1,5 @@
 ---
-title: 扩展 (BTS XSD) 验证 |Microsoft 文档
+title: 扩展 (BTS-XSD) 验证 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed147515b48a23c55e552710d6a76d6df981edd7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 65f102e1d5a182b729af164a83efa8f20be49ba7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22245949"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345923"
 ---
 # <a name="extended-bts-xsd-validation"></a>扩展 (BTS-XSD) 验证
-仅当在使用其数据类型不为 EDI 数据类型的元素对架构进行了自定义的情况下，EDI 接收管道和 EDI 发送管道才会执行扩展验证。 EDI 验证，以便将受扩展验证将不验证这些添加的元素。 扩展验证使用 `System.Xml.XmlValidatingReader` 并且包括可以在标准 XSD 中定义的所有检查。  
+EDI 接收管道和 EDI 发送管道执行扩展的验证，仅当已使用其数据类型不是 EDI 数据类型的元素自定义架构。 不会通过 EDI 验证，以便将受扩展验证来验证这些添加的元素。 扩展验证使用`System.Xml.XmlValidatingReader`并且包括可以在标准 XSD 中定义的所有检查。  
   
- 可以为发送到参与方或从参与方接收的所有消息配置扩展验证。 这样做通过选择**扩展验证**中的复选框**验证**页 (下**事务设置设置**X12 或 EDIFACT 部分)，请在中的单向协议选项卡**协议属性**对话框。 可以在不启用 EDI 验证的情况下启用扩展验证，反之亦然。  
+ 配置扩展的验证到或从参与方的所有消息。 为此，选择**扩展验证**中的复选框**验证**页 (在**事务集设置**对于 X12 或 EDIFACT 的部分)，请在在单向协议选项卡**协议属性**对话框。 您可以启用扩展验证而不启用 EDI 验证，反之亦然。  
   
- 扩展验证包括以下检查：  
+ 扩展的验证包括以下检查：  
   
 -   数据元素要求和允许的重复  
   
 -   枚举  
   
--   数据元素长度验证（最小/最大）。  
+-   数据元素长度验证 （最小/最大）。  
   
 > [!IMPORTANT]
->  不支持对 EDI 发送端的批处理消息进行扩展式验证。  
+>  不支持在 EDI 发送端的批处理消息的扩展的验证。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [EDI 消息验证](../core/edi-message-validation.md)

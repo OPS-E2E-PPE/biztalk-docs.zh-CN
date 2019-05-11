@@ -12,17 +12,17 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e116087d0c560822d8a0cc64c0719fe7ba4d6e85
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7cb5aaa9e1876637a78a36f77aa4cb63aa56ce0d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000806"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385078"
 ---
 # <a name="how-to-enable-tracing-in-bam"></a>如何在 BAM 中启用跟踪
-您可以在 BAM 中启用跟踪，以便帮助解决在以下 5 个 BAM 组件中出现的问题：  
+您可以启用跟踪在 BAM 中以帮助解决以下 5 个 BAM 组件中的问题：  
   
--   BAM 管理实用工具  
+-   BAM 管理实用程序  
   
 -   BAM 事件总线  
   
@@ -33,19 +33,19 @@ ms.locfileid: "37000806"
 -   BAM WCF 侦听器  
   
 ## <a name="enabling-tracing-for-the-bam-management-utility"></a>为 BAM 管理实用程序启用跟踪  
- 您可以通过为 BAM 管理实用程序启用跟踪，获取与部署错误有关的信息。 可以采取两种方式启用跟踪： 可以通过特定 BM.exe 命令的命令行启用跟踪，或者可以修改 BAM 管理实用程序配置文件来为所有 BM.exe 命令启用跟踪。  
+ 可以通过为 BAM 管理实用程序启用跟踪来获取有关部署失败的信息。 可以通过两种方式来执行此操作。 可以启用跟踪通过特定 BM.exe 命令，在命令行，或者可以修改 BAM 管理实用程序配置文件来为所有 BM.exe 命令启用跟踪。  
   
 ### <a name="using-the-command-line"></a>使用命令行  
  使用激活 BM.exe 命令行跟踪 **-跟踪： 在&#124;关闭**切换。 使用 Trace 开关将重写配置文件中的设置。  
   
- 该开关可与所有标准 BM.exe 命令一起使用。  
+ 与所有标准 BM.exe 命令一起使用的开关。  
   
  例如：  
   
- **bm.exe 部署全部-DefinitionFile:PO.xml – 跟踪： 在**  
+ **bm.exe deploy-all -DefinitionFile:PO.xml –Trace:On**  
   
 ### <a name="using-the-configuration-file"></a>使用配置文件  
- 可以通过修改位于 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] Tracking 文件夹中的 BM.exe.config 配置文件来启用跟踪。 此文件包含**system.diagnostics**部分，其中包含跟踪元素。 删除注释以便启用跟踪。 默认情况下，不启用跟踪。  
+ 可以通过修改位于中的 BM.exe.config 配置文件启用跟踪[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]跟踪文件夹。 此文件包含**system.diagnostics**部分，其中包含跟踪元素。 删除注释以便启用跟踪。 默认情况下不启用跟踪。  
   
  `<system.diagnostics>`  
   
@@ -62,13 +62,13 @@ ms.locfileid: "37000806"
  `-->`  
   
 ## <a name="enabling-tracing-for-the-bam-event-bus"></a>为 BAM 事件总线启用跟踪  
- 为 BAM 事件总线启用跟踪可帮助您诊断两类的数据库存储错误：  
+ 为 BAM 事件总线启用跟踪可以帮助您诊断数据库存储错误的两个类：  
   
-- 源于使用跟踪配置文件编辑器时发生的 BizTalk Server 服务事件的存储错误。  
+- 使用跟踪配置文件编辑器时源自来自 BizTalk Server 服务的事件存储错误。  
   
-- 在使用缓冲的事件流 API 时生成的存储错误。  
+- 使用缓冲的事件流 Api 时生成的存储错误。  
   
-  若要为 BAM 事件总线启用跟踪，请编辑或添加 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] 文件夹中的 BTSNTSvc.exe.config 文件的以下部分。  
+  若要启用跟踪的 BAM 事件总线，请编辑或添加以下部分中的 BTSNTSvc.exe.config 文件的[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]文件夹。  
   
   `<system.diagnostics>`  
   
@@ -92,28 +92,28 @@ ms.locfileid: "37000806"
   
 #### <a name="to-enable-tracing-for-the-bam-event-bus"></a>若要为 BAM 事件总线启用跟踪  
   
-1. 编辑 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BTSNTSvc.exe.config 文件。  
+1. 编辑[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BTSNTSvc.exe.config 文件。  
   
-2. 找到\<system.diagnostics\>并\</system.diagnostics\>标记。 如果在该文件中不存在这两个标记，则复制上述代码并将代码粘贴到该配置文件中。  
+2. 找到\<system.diagnostics\>并\</system.diagnostics\>标记。 如果它们不存在的文件中，复制上面列出的代码，并将其粘贴到配置文件。  
   
 3. 取消的注释系统诊断节通过移动结束注释分隔符 (-->) 从后\</system.diagnostics\>标记添加到之前\<system.diagnostics\>标记。  
   
 4. 保存该文件。  
   
 ## <a name="enabling-tracing-for-the-bam-portal"></a>为 BAM 门户启用跟踪  
- 为 BAM 门户启用跟踪允许您排除连接问题。  
+ 为 BAM 门户启用跟踪，可对连接问题进行故障排除。  
   
- BAM 门户是一种 ASP.NET 应用程序，它采用标准协议进行跟踪。 内[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BAMPortal\web.config 文件中，还有一个名为部分\<跟踪\>，可实现。  
+ BAM 门户是 ASP.NET 应用程序，并遵循标准协议进行跟踪。 内[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BAMPortal\web.config 文件中，还有一个名为部分\<跟踪\>，可实现。  
   
 #### <a name="to-enable-tracing-for-the-bam-portal"></a>若要为 BAM 门户启用跟踪  
   
-1. 编辑 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BAMPortal\web.config 文件。  
+1. 编辑[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]BAMPortal\web.config 文件。  
   
 2. 找到\<system.diagnostics\>并\</system.diagnostics\>标记。  
   
 3. 通过移动结束注释分隔符来取消注释系统诊断部分 (-->) 从后\</system.diagnostics\>标记添加到之前\<system.diagnostics\>标记。  
   
-4. 修改 initializeData 属性以便指定将跟踪日志写入的位置。  
+4. 修改 initializeData 属性以便指定要写入跟踪日志的位置。  
   
 5. 找到\<system.web\>标记。  
   
@@ -182,12 +182,12 @@ ms.locfileid: "37000806"
    `-->`  
   
 ## <a name="bam-alerting"></a>BAM 警报  
- 为 BAM 警报启用跟踪可以帮助您排除警报送达问题。  
+ 为 BAM 警报可帮助您排除警报送达问题启用跟踪。  
   
  BAM 警报基于[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]Notification Services 基础结构。 若要启用对 BAM 警报的跟踪，请参阅通知服务疑难解答主题，网址[ http://go.microsoft.com/fwlink/?LinkId=79416 ](http://go.microsoft.com/fwlink/?LinkId=79416)。  
   
 ## <a name="bam-interceptors"></a>BAM 侦听器  
- 若要启用端到端跟踪的 BAM 侦听器，你修改应用程序的配置文件 — 的 Web 承载的应用程序，appname.config 自承载应用程序的 Web.config。 下面的示例说明如何修改该文件：  
+ 若要启用端到端跟踪的 BAM 侦听器，你修改应用程序的配置文件 — 的 Web 承载的应用程序，appname.config 自承载应用程序的 Web.config。 下面是举例说明如何修改该文件：  
   
 ```  
 <system.diagnostics>  
@@ -204,27 +204,27 @@ ms.locfileid: "37000806"
 </system.diagnostics>  
 ```  
   
- 用于 Windows Workflow Foundation 和 Windows Communication Foundation 的 BAM 侦听器将写入名为“Microsoft BizTalk Bam Interceptors”的源中。  
+ Windows Workflow Foundation 的 BAM 侦听器和 Windows Communication Foundation 将写入到名为"Microsoft BizTalk Bam Interceptors"的源。  
   
 > [!NOTE]
->  源字符串区分大小写并且必须与所示内容完全一样。 如果您的字符串不同于所示的字符串，您将收不到 BAM 侦听器的跟踪信息。  
+>  源字符串区分大小写，必须严格按所示出现。 如果您的字符串是不同于所示，不会收到 BAM 侦听器跟踪的信息。  
   
- 您通过设置 switchValue 控制跟踪级别。 下表概括列出了可用的跟踪级别。  
+ 通过设置 switchValue 控制跟踪级别。 下表总结了可用的跟踪级别。  
   
 |跟踪级别|Description|  
 |-----------------|-----------------|  
-|严重|记录 Fail-Fast 和事件日志条目以及跟踪相关信息。|  
+|严重|记录 Fail-fast 和事件日志条目，并跟踪相关信息。|  
 |错误|记录所有异常。|  
-|警告|存在可能在以后导致出现错误或严重问题的情况。|  
-|信息|生成有助于监视和诊断系统状态、衡量性能或执行分析的消息。 您可以利用此类信息来规划容量和管理性能。|  
-|“详细”|用于用户代码和服务的调试级别跟踪。|  
+|警告|存在某种情况随后可能会导致错误或严重故障。|  
+|信息|生成消息有助于监视和诊断系统状态、 测量性能，或执行分析。 可以使用此类信息规划容量和性能管理。|  
+|“详细”|这两个用户代码的调试级别跟踪和服务。|  
 |All|所有消息。|  
   
 > [!NOTE]
->  跟踪可能会对性能有负面影响。 只在执行故障排除活动时启用跟踪。  
+>  跟踪会对性能产生负面影响。 仅当正在执行故障排除活动时启用跟踪。  
   
 ### <a name="viewing-the-wcf-trace-file"></a>查看 WCF 跟踪文件  
- 若要分析 WCF 跟踪，可以使用 WCF Service Trace Viewer Tool。 有关 Service Trace Viewer Tool 的详细信息，请参阅[ http://go.microsoft.com/fwlink/?LinkId=75218 ](http://go.microsoft.com/fwlink/?LinkId=75218)。  
+ 若要分析 WCF 跟踪您使用 WCF Service Trace Viewer Tool。 有关 Service Trace Viewer Tool 的详细信息，请参阅[ http://go.microsoft.com/fwlink/?LinkId=75218 ](http://go.microsoft.com/fwlink/?LinkId=75218)。  
   
 ## <a name="see-also"></a>请参阅  
  [管理 BAM](../core/managing-bam.md)

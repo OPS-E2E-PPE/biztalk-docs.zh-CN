@@ -1,5 +1,5 @@
 ---
-title: 为 EDI 解决方案配置端口 |Microsoft 文档
+title: 为 EDI 解决方案配置端口 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 779965c05a5875295fd28e74df6ceacd5037cd2d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1f3e06271a00d836d999f603f0160dc8966fc60e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22233133"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355275"
 ---
 # <a name="configuring-ports-for-an-edi-solution"></a>为 EDI 解决方案配置端口
 若要接收和发送 EDI 消息和确认，请创建下列接收端口和发送端口：  
@@ -28,13 +28,13 @@ ms.locfileid: "22233133"
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [配置端口以接收 EDI 消息，确认](../core/configuring-a-port-to-receive-edi-messages-and-acknowledgments.md)  
+-   [配置接收 EDI 消息和确认的端口](../core/configuring-a-port-to-receive-edi-messages-and-acknowledgments.md)  
   
--   [配置静态发送端口发送 EDI 交换和确认](../core/configuring-a-static-send-port-to-send-edi-interchanges-and-acknowledgments.md)  
+-   [配置静态发送端口以发送 EDI 交换和确认](../core/configuring-a-static-send-port-to-send-edi-interchanges-and-acknowledgments.md)  
   
--   [配置动态发送端口发送 EDI 交换和确认](../core/configuring-a-dynamic-send-port-to-send-edi-interchanges-and-acknowledgments.md)  
+-   [配置动态发送端口以发送 EDI 交换和确认](../core/configuring-a-dynamic-send-port-to-send-edi-interchanges-and-acknowledgments.md)  
   
--   [启用接收一条消息中的多个交换](../core/enabling-the-receiving-of-multiple-interchanges-in-a-single-message.md)  
+-   [启用接收单条消息中的多个交换](../core/enabling-the-receiving-of-multiple-interchanges-in-a-single-message.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发和配置 BizTalk Server EDI 解决方案](../core/developing-and-configuring-biztalk-server-edi-solutions.md)

@@ -1,5 +1,5 @@
 ---
-title: 使用限制机制的复杂类型派生 |Microsoft 文档
+title: 使用限制机制进行复杂类型派生 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ddbd9d8266d9c289b9b4bae9dd7060906e01ebd7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a9b1b4234f4bb39da70f1e59719e1f145440a0b6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22233477"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356810"
 ---
 # <a name="complex-type-derivation-using-the-restriction-mechanism"></a>使用限制机制进行复杂类型派生
-在 BizTalk 编辑器功能方面，通过限制进行派生与通过扩展进行派生类似。 通过限制派生的复杂类型与其基本数据类型类似，只是其声明比基本数据类型中的相应声明具有更多限制性。 实际上，新类型所表示的值是基本数据类型所表示的值的子集（与简单类型限制的情况一样）。 使用基本数据类型的值的应用程序应当能够成功处理所有限制的类型的值。  
+通过限制派生是类似于通过扩展 BizTalk 编辑器功能方面进行派生。 通过限制派生的复杂类型等同于其基本数据类型，不过，其声明是比基本数据类型中的相应声明的限制更多。 事实上，表示新类型的值是表示基本数据类型 （按原样使用简单类型限制的情况下） 的值的子集。 应用程序的基本数据类型的值应该能够成功地处理任何受限制类型的值。  
   
  有关使用限制机制派生新的复杂类型的全面信息，请参阅 W3C 网站。 向此服务器和其他网站的各种链接，请参阅[在 Web 上找到的 XSD 资源](../core/xsd-resources-on-the-web.md)。  
   
- 若要从复杂全局类型派生的限制，在林中的架构的另一个位置开始的方法是插入一个新**记录**上所需的位置的节点。 然后设置其**基数据类型**属性设置为复杂全局类型的名称。 最后，更改的设置**派生源**属性从其默认值为**扩展**（至少一个基本数据类型设置时） 到**限制**。  
+ 若要在架构树中，另一个位置中，通过限制从复杂全局类型派生首先插入一个新的**记录**在所需位置的节点。 然后设置其**Base Data Type**属性设置为复杂全局类型的名称。 最后，更改的设置**Derived By**属性从其默认值为**扩展**（至少一个基本数据类型设置时） 到**限制**。  
   
- 在下面的示例中， **BillingAddress**是新插入的名称**记录**节点，和**GlobalAddrType**是从它的复杂全局类型的名称派生，并想要限制。 在架构树视图中，将名为节点下显示重复节点结构**BillingAddress**、 名为节点下的相邻节点结构一致**ShippingAddress**。 它们之间的区别在于**BillingAddress**节点结构都将遵循可能限制为基本数据类型**GlobalAddrType**，和**ShippingAddress**结构将保持为基本数据类型相同**GlobalAddrType**。  
+ 在以下示例中， **BillingAddress**的新插入名称**记录**节点，并**GlobalAddrType**是从它的复杂全局类型的名称派生而来，并要限制。 在架构树视图中，重复的节点结构将显示名为节点的下级**BillingAddress**、 名为节点下的相邻节点结构相同**ShippingAddress**。 它们之间的区别在于**BillingAddress**节点结构将受到可能限制为基本数据类型**GlobalAddrType**，和**ShippingAddress**结构将保持与基本数据类型**GlobalAddrType**。  
   
- 由于已选择限制基本数据类型，因此您不能插入任何新节点，但可以更改现有节点的属性，以便进一步限制其可能值或行为。  
+ 因为您已选择限制基本数据类型，不允许插入任何新节点，但你可以进一步限制其可能的值或行为的现有节点的属性。  
   
--   在这之前，与**派生源**属性仍设置为**扩展**。  
+-   在这之前，使用**Derived By**属性仍设置为**扩展**。  
   
     ```  
     <xs:schema>  
@@ -49,12 +49,12 @@ ms.locfileid: "22233477"
             </xs:complexType>  
         </xs:element>  
         <xs:complexType name="GlobalAddrType">  
-        [Address structure defined globally here.]  
+        [Address structure defined globally here.]  
         </xs:complexType>  
     </xs:schema>  
     ```  
   
--   切换之后**派生源**属性从**扩展**到**限制**。  
+-   切换后**Derived By**属性从**扩展**到**限制**。  
   
     ```  
     <xs:schema>  
@@ -66,10 +66,10 @@ ms.locfileid: "22233477"
                         <xs:complexType>  
                             <xs:complexContent mixed="false">  
                                 <xs:restriction base="GlobalAddrType">  
-                   [Duplicate of address structure now appears  
-                   here, ready to be restricted with additional  
-                   attributes, set using the properties of the  
-                   relevant nodes in the schema tree.]  
+                   [Duplicate of address structure now appears  
+                   here, ready to be restricted with additional  
+                   attributes, set using the properties of the  
+                   relevant nodes in the schema tree.]  
                                 </xs:restriction>  
                             </xs:complexContent>  
                         </xs:complexType>  
@@ -78,10 +78,10 @@ ms.locfileid: "22233477"
             </xs:complexType>  
         </xs:element>  
         <xs:complexType name="GlobalAddrType">  
-        [Address structure defined globally here.]  
+        [Address structure defined globally here.]  
         </xs:complexType>  
     </xs:schema>  
     ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [复杂全局类型派生](../core/complex-global-type-derivation.md)

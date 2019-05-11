@@ -17,21 +17,21 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e7008b327564de3af2462f0fa077ca456f817584
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cea6c9e72b9820420888551e8d36f3aaac3762b6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968230"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384300"
 ---
 # <a name="how-to-remove-deployed-artifacts"></a>如何删除已部署的项目
-管理员使用**删除全部**命令以删除 BAM 主导入数据库中部署的项目。 所提供的 BAM 定义为 XML 文件或 Excel 工作簿，其中包含有关要删除的项目的信息。  
+管理员使用**删除全部**命令以删除 BAM 主导入数据库中部署的项目。 提供的 BAM 定义是一个 XML 文件或 Excel 工作簿包含有关要删除的项目信息。  
   
-### <a name="to-remove-deployed-artifacts"></a>删除已部署的项目  
+### <a name="to-remove-deployed-artifacts"></a>若要删除已部署的项目  
   
-1. 按如下所示打开命令提示符： 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
+1. 打开命令提示符，如下所示：单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2. 导航到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking。  
+2. 导航到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]跟踪。  
   
 3. 类型**bm 全部删除-DefinitionFile:\<def 文件\>**。  
   

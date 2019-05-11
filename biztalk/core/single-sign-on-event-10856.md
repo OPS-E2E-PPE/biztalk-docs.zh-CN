@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10856 |Microsoft Docs
+title: 单一登录：Event 10856 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 707160ddfededefd5f0ef47e77df08844b38abcf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1ce753c055ed274624a08f5725dff5129b87f6b2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989342"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306573"
 ---
-# <a name="single-sign-on-event-10856"></a>单一登录： 事件 10856
+# <a name="single-sign-on-event-10856"></a>单一登录：事件 10856
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                |
@@ -28,12 +28,12 @@ ms.locfileid: "36989342"
 | 产品版本 |   [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]   |
 |    事件 ID     |                             10856                              |
 |  事件源   |                             ENTSSO                             |
-|    组件    |                              N/A                               |
+|    组件    |                              不可用                               |
 |  符号名称  |               ENTSSO_E_MAPPING_CREATE_RESTRICTED               |
-|  消息正文   | 应用程序用户不能为此应用程序创建映射。 |
+|  消息正文   | 应用程序用户无法创建此应用程序的映射。 |
   
 ## <a name="explanation"></a>解释  
- 此应用程序已配置为不允许应用程序用户组的成员创建映射。  
+ 此应用程序配置应用程序用户组的成员不允许创建映射的方式。  
   
 ## <a name="user-action"></a>用户操作  
- 您应请求具有足够权限的用户来创建这些映射。
+ 您应要求具有足够的权限的用户来创建这些映射。

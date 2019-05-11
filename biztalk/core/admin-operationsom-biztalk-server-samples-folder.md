@@ -1,5 +1,5 @@
 ---
-title: 管理员-OperationsOM （BizTalk Server 示例文件夹中） |Microsoft 文档
+title: Admin-operationsom （BizTalk Server 示例文件夹） |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 193b47e5c4f918bacbf1b573d6aaed5326d7cfdc
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 44b90cb2c8f58e21c90cf26c2b7812f0bb54d05c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26005126"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360017"
 ---
-# <a name="admin-operationsom-biztalk-server-samples-folder"></a>管理员-OperationsOM （BizTalk Server 示例文件夹中）
-Microsoft BizTalk Server 包括在其软件开发工具包 (SDK) 的 Admin\OperationsOM 文件夹中的示例。 本部分详细介绍了每个 BizTalk 操作对象模型管理示例所演示的功能、生成和运行每个示例的说明以及可以预期得到的结果。  
+# <a name="admin-operationsom-biztalk-server-samples-folder"></a>Admin-operationsom （BizTalk Server 示例文件夹）
+Microsoft BizTalk Server 示例的文件夹中包括 Admin\OperationsOM 在其软件开发工具包 (SDK)。 本部分提供有关每个 BizTalk 操作对象模型管理示例，说明用于构建和运行示例，以及可以预期的结果所演示的功能的详细的信息。  
   
 > [!WARNING]
->  部署后，如果不再需要部署脚本，则应将其删除。 应通过 ACL 确保必须保留的管理脚本和其他脚本的安全并加以密切监视。  
+>  如果不需要应在部署后删除的部署脚本。 管理脚本和其他必须保持的脚本应受 ACL 并加以密切监视。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [OperationsSamples （BizTalk Server 示例）](../core/operationssamples-biztalk-server-sample.md)。 演示如何搜索 messagebox MSMQt 实例，搜索消息，使用实例、消息流和路由详细信息，以及遍历事件日志。
+-   [OperationsSamples （BizTalk Server 示例）](../core/operationssamples-biztalk-server-sample.md)。 演示如何搜索 messagebox MSMQt 实例，搜索消息，使用实例、 消息流和路由的详细信息，并遍历事件日志。

@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7633d02c61fa113267d68a2a76b91d1389bd699e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1df0111a0d595de6f7be6d0ea25c662dc8985dea
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014190"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385163"
 ---
 # <a name="how-to-edit-link-properties"></a>如何编辑链接属性
 链接具有多个属性中显示[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]**属性**窗口中的，如下所示：  

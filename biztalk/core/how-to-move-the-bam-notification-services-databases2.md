@@ -16,31 +16,31 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 73a995a4025bba980614d2c8cefef3da99219984
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: df16514ebd799f08caaea6eddcdc16ee671723a4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014470"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384509"
 ---
 # <a name="how-to-move-the-bam-notification-services-databases"></a>如何移动 BAM Notification Services 数据库
-您可以使用此过程将 BAM Notification Services 数据库移到其他服务器。  
+可以使用此过程将 BAM Notification Services 数据库移动到另一台服务器。  
   
 > [!NOTE]
->  BAM Notification Services 应用程序 (BAMAlertsApplication) 数据库和 BAM Notification Services 实例 (BAMAlertsNSMain) 数据库必须一起移动。  
+>  必须一起移动 BAM Notification Services 应用程序 (BAMAlertsApplication) 数据库和 BAM Notification Services 实例 (BAMAlertsNSMain) 数据库。  
   
-## <a name="prerequisites"></a>必要條件  
- 若要执行此过程，必须以 SQL Server sysadmin 固定服务器角色成员的帐户登录。  
+## <a name="prerequisites"></a>先决条件  
+ 您必须是 SQL Server sysadmin 固定服务器角色的成员才能执行此过程的帐户登录。  
   
 ### <a name="to-move-the-bam-notification-services-databases"></a>移动 BAM Notification Services 数据库  
   
-1. 获取用于还原 BAM 的 .xml 文件的副本：  
+1. 获取用于还原 BAM 的.xml 文件的副本：  
   
    1. 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-   2. 在命令提示符下，导航到以下目录：  
+   2. 在命令提示符处，导航到以下目录：  
   
-       **%SystemDrive%\Program Files\Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **\Tracking**   
+       **%SystemDrive%\Program Files\Microsoft**  [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **\Tracking**  
   
    3. 在命令提示符下，键入：  
   
@@ -59,19 +59,19 @@ ms.locfileid: "37014470"
   
 3. 有关如何在旧服务器上备份数据库按照 SQL Server 联机丛书中的说明。  
   
-4. 将 BAM Notification Services 数据库复制到新的 SQL Server 中。  
+4. 将 BAM Notification Services 数据库复制到新的 SQL server。  
   
 5. 有关如何还原新服务器上的数据库，请按照 SQL Server 联机丛书中的说明进行操作。  
   
-6. 编辑 BAMConfiguration.xml 文件，将 Alert DeploymentUnit 部分中的 ServerName 更改为新服务器的名称。  
+6. 编辑 BAMConfiguration.xml 文件，将 Alert DeploymentUnit 部分中的 ServerName 更改为新的服务器名称。  
   
 7. 保存并关闭 BAMConfiguration.xml 文件。  
   
 8. 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-9. 在命令提示符下，导航到以下目录：  
+9. 在命令提示符处，导航到以下目录：  
   
-     **%SystemDrive%\Program Files\Microsoft** [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **\Tracking**   
+     **%SystemDrive%\Program Files\Microsoft**  [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)] **\Tracking**  
   
 10. 在命令提示符下，键入：  
   

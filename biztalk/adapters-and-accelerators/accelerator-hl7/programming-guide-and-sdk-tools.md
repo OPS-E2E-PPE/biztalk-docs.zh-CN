@@ -16,12 +16,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b40802a02d51af6440b4f22e77cf0c32ce6ab386
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 131a1a8888487b96b80f4cf64a4ac66efbf47794
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010598"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289966"
 ---
 # <a name="programming-guide-and-sdk-tools"></a>编程指南和 SDK 工具
 此软件开发工具包 (SDK) 提供的开发人员创建在 Microsoft 中使用任一工具的应用程序的信息[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]、 公共应用程序编程接口 (API)，或 BTAHL7 中提供的示例和实用程序SDK。  
@@ -36,11 +36,11 @@ ms.locfileid: "37010598"
   
  **[** [!INCLUDE[btsVBNoVersion](../../includes/btsvbnoversion-md.md)] **]**  
   
- **[C + +]**  
+ **[C++]**  
   
  **[** [!INCLUDE[btsJScript](../../includes/btsjscript-md.md)] **]**  
   
- 你可以在引用页自定义内容视图，只显示以首选编程语言编写的信息。 若要选择自定义语言，请使用**语言筛选器**在此页的左上角的按钮。 启用后，语言筛选持续，直到更改它。 你可以在页面上看到启用了语言筛选功能，因为语言的名称会跟在标题后面显示在页顶部的蓝色栏中。  
+ 可以自定义视图中显示以首选编程语言编写的唯一信息在引用页的内容。 若要选择自定义语言，请使用**语言筛选器**在此页的左上角的按钮。 启用后，语言筛选持续，直到更改它。 因为该语言的名称遵循在页面顶部的蓝色栏中的标题，可以看到，在页上，启用语言筛选。  
   
 ### <a name="linking-between-btahl7-help-and-microsoft-visual-studio-help"></a>BTAHL7 的帮助以及 Microsoft Visual Studio 帮助之间的链接  
  当成员继承自[!INCLUDE[btsDotNetFramework](../../includes/btsdotnetframework-md.md)]基类库，两个链接提供了，如下面的示例中所示：  

@@ -18,20 +18,20 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1bb235d126ca775cc8bd5a752388c948a2203e4b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 801ac848efe183a778bbd6a1155c96f4ab41f6c3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968838"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384971"
 ---
 # <a name="how-to-import-and-export-policies-and-vocabularies"></a>如何导入和导出策略及词汇
 可以使用规则引擎部署向导导入或导出策略或词汇。  
 
 > [!NOTE]
->  必须首先导入策略或词汇使用的所有词汇，否则将出现错误。  
+>  必须首先导入使用的策略或词汇的所有词汇，否则会收到错误。  
 
-### <a name="to-import-or-export-a-policy-or-vocabulary"></a>导入或导出策略或词汇  
+### <a name="to-import-or-export-a-policy-or-vocabulary"></a>若要导入或导出策略或词汇  
 
 1. 单击**启动**，依次指向**所有程序**，指向[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**业务规则引擎部署向导**。  
 

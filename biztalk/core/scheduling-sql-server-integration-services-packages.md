@@ -12,40 +12,40 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 43ce70dc97de2958add5c583646b7825d981982b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8cbdb19b5b1f8ae7d800742c0dd211e772f98c7c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001790"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65308006"
 ---
 # <a name="scheduling-sql-server-integration-services-packages"></a>计划 SQL Server Integration Services 包
-用户可以创建基于存储在联机分析处理 (OLAP) 多维数据集中的数据的 BAM 视图。 多维数据集更新集成服务包将刷新多维数据集中的数据，以便 OLAP 视图可以反映正确的数据。  
+用户创建 BAM 视图基于联机分析处理 (OLAP) 多维数据集中存储数据。 多维数据集更新集成服务包刷新多维数据集中的数据，使 OLAP 视图可以反映正确的数据。  
   
- 你必须至少运行一次此包才能使 OLAP 视图可以工作。 如果要进行实时维护，则应该安排该包定期运行。  
+ 您必须运行此包至少一次的 OLAP 视图可以工作。 正在进行维护，应该安排该包定期运行。  
   
 > [!IMPORTANT]
->  如果你在运行多维数据集更新集成服务包之前还原了 BAM 星型架构数据库或停止了 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]，则必须先在 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 分析管理器中刷新数据源或者重新启动 OLAP 服务，然后才能成功运行该程序包。  
+>  如果您还原 BAM 星型架构数据库或停止[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]之前运行多维数据集更新集成服务包，必须刷新的数据源中[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]分析管理器或重新启动 OLAP 服务，然后才能运行包已成功。  
   
- 你可以将保存的程序包安排在特定时间执行，既可以执行一次也可以按重复的时间间隔执行。 例如：  
+ 您可以计划一次或按重复间隔在特定时间执行已保存的包。 例如：  
   
 - 每天的午夜。  
   
-- 每个周日的 06:00。  
+- 每周的星期日午夜 06:00。  
   
-- 每月的第一天或者最后一天。  
+- 月份的第一个或最后一天。  
   
-  已安排的程序包将作为一项作业由 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 执行。  
+  计划的包执行由[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]作为作业。  
   
   有关运行信息[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]包，请参阅[ http://go.microsoft.com/fwlink/?LinkId=125738 ](http://go.microsoft.com/fwlink/?LinkId=125738)。  
   
 > [!NOTE]
->  默认情况下，会打开归档 BAM SSIS 程序包以及计算其立方的日志记录，并将该日志记录存储在 msdb 数据库中。 一段时间后，大量 BAM 活动或频繁执行由 BAM 所有的 SSIS 程序包可能会造成数目庞大的 SSIS 事件日志数据。 可以删除旧的日志项以解决此问题，因为这些日志项主要用于调试目的。  
+>  默认情况下，存档和多维数据集 BAM SSIS 包的日志记录处于开启状态，并且存储在 msdb 数据库中。 随着时间的推移，这可能会导致大量引起大量的 BAM 活动的 SSIS 事件日志数据或频繁执行的 BAM 拥有 SSIS 包。 若要解决此问题，可以删除旧的日志条目，因为这些项主要用于调试。  
   
-## <a name="prerequisites"></a>必要條件  
- 必须以 BizTalk Server Administrators 组成员的身份登录，才能执行这些过程。  
+## <a name="prerequisites"></a>先决条件  
+ 您必须为要执行这些过程的 BizTalk Server Administrators 组的成员身份登录。  
   
-### <a name="to-run-the-cube-update-integration-services-package"></a>运行多维数据集更新集成服务包  
+### <a name="to-run-the-cube-update-integration-services-package"></a>若要运行多维数据集更新集成服务包  
   
 1.  单击**启动**，单击**所有程序**，单击**Microsoft SQL Server 2008 SP1**或者**Microsoft SQL Server 2008 R2**，然后单击**SQL Server Management Studio**。  
   
@@ -55,7 +55,7 @@ ms.locfileid: "37001790"
   
 4.  在中**身份验证**下拉列表中，选择您用来连接到服务器的身份验证的类型。  
   
-5.  如有必要，请键入你的用户名和密码。  
+5.  如果有必要，请键入你的用户名和密码。  
   
 6.  单击 **“连接”**。  
   
@@ -63,7 +63,7 @@ ms.locfileid: "37001790"
   
 8.  右键单击**BAM_AN_\<视图名称\>** 打包，然后依次**运行包**。  
   
-### <a name="to-run-the-maintaining-bam-data-integration-services-package"></a>运行维护 BAM 数据集成服务包  
+### <a name="to-run-the-maintaining-bam-data-integration-services-package"></a>若要运行维护 BAM 数据 Integration Services 包  
   
 1.  单击**启动**，单击**所有程序**，单击**Microsoft SQL Server 2008 SP1**或者**Microsoft SQL Server 2008 R2**，然后单击**SQL Server Management Studio**。  
   
@@ -73,7 +73,7 @@ ms.locfileid: "37001790"
   
 4.  在中**身份验证**下拉列表中，选择您用来连接到服务器的身份验证的类型。  
   
-5.  如有必要，请键入你的用户名和密码。  
+5.  如果有必要，请键入你的用户名和密码。  
   
 6.  单击 **“连接”**。  
   
@@ -81,7 +81,7 @@ ms.locfileid: "37001790"
   
 8.  右键单击**BAM_DM_\<活动名称\>** 打包，然后依次**运行包**。  
   
-### <a name="to-schedule-the-packages-to-run-regularly"></a>安排包进行定期运行  
+### <a name="to-schedule-the-packages-to-run-regularly"></a>若要计划定期运行的包  
   
 1.  单击**启动**，单击**所有程序**，单击**Microsoft SQL Server 2008 SP1**或者**Microsoft SQL Server 2008 R2**，然后单击**SQL Server Management Studio**。  
   
@@ -91,7 +91,7 @@ ms.locfileid: "37001790"
   
 4.  在中**身份验证**下拉列表中，选择您用来连接到服务器的身份验证的类型。  
   
-5.  如有必要，请键入你的用户名和密码。  
+5.  如果有必要，请键入你的用户名和密码。  
   
 6.  单击 **“连接”**。  
   
@@ -117,12 +117,12 @@ ms.locfileid: "37001790"
   
 17. 在中**名称**文本框中，为计划键入一个名称。  
   
-18. 使用频率字段创建你的计划。  
+18. 创建您的计划使用频率字段。  
   
 19. 单击 **“确定”** 保存作业。  
   
     > [!NOTE]
-    >  如果使用 SQL Server 的非默认实例配置 BAM，则将不能正确计划/执行 BAM_AN_POCube DTSPackage。 需要修改配置文件以允许包继续运行。 有关详细信息，请参阅"修改配置文件内容"部分[ http://go.microsoft.com/fwlink/?LinkId=196768 ](http://go.microsoft.com/fwlink/?LinkId=196768)。  
+    >  如果使用 SQL Server 的非默认实例配置 BAM，然后 BAM_AN_POCube DTSPackage 不会获取计划/执行准确。 您需要修改配置文件以允许程序包继续运行。 有关详细信息，请参阅"修改配置文件内容"部分[ http://go.microsoft.com/fwlink/?LinkId=196768 ](http://go.microsoft.com/fwlink/?LinkId=196768)。  
   
 ## <a name="see-also"></a>请参阅  
  [管理 BAM 数据库](../core/managing-bam-databases.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 473c6e904def7f58adcb52eb26e46891be9c41d0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 688aae3d543d93941bb356c0d6d207eb1d4be851
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971878"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291412"
 ---
 # <a name="optimizing-orchestration-performance"></a>优化业务流程性能
 本主题介绍在 BizTalk Server 解决方案中使用业务流程的最佳实践。 这包括有关建议：  
@@ -84,15 +84,15 @@ ms.locfileid: "36971878"
   
 - 消除不必要的可分辨的字段。 可分辨的字段将写入上下文属性，它们可轻松地会占用很多空间，如其名称等于用于检索数据的 XPath 表达式。 可分辨的属性定义为中定义的文档类型的 XSD 的批注。 拆装器组件使用相同的方法应用于升级的属性，并使用定义的可分辨的字段中查找传入文档中的 XPath 表达式。 然后，拆装器组件将属性写入上下文中其中：  
   
-  - **名称**： 批注中定义的 XPath 表达式。  
+  - **名称**：在批注中定义的 XPath 表达式。  
   
-  - **值**： 传入文档中的 XPath 表达式标识的元素的值。  
+  - “值”：通过传入文档中的 XPath 表达式标识的元素的值。  
   
     XPath 表达式可以是很长，尤其是当涉及的元素是非常深的文档架构中。 因此，更可分辨字段，可查看大上下文大小。 这进而产生负面影响的整体性能。  
   
 - 使用业务流程运行时提供的内置 XPath 函数。  
   
-- 如果消息非常小 （几个千字节为单位） 和 XML 格式，可以取消消息序列化为.NET 类实例，并使用公共字段和属性。 如果消息需要复杂的细化 （自定义代码、 业务规则引擎策略等） 使用.NET 类的实例公开的属性来访问数据将快得多，使用 XPath 表达式。 完成后调用的业务流程的业务逻辑，可以返回到 BizTalk 消息序列化实体对象。 你可以从 XML 架构，使用以下工具之一创建.NET 类： XSD 工具 (.NET Framework 2.0) 或 SVCUTIL (.NET Framework 3.0)。  
+- 如果消息非常小 （几个千字节为单位） 和 XML 格式，可以取消消息序列化为.NET 类实例，并使用公共字段和属性。 如果消息需要复杂的细化 （自定义代码、 业务规则引擎策略等） 使用.NET 类的实例公开的属性来访问数据将快得多，使用 XPath 表达式。 完成后调用的业务流程的业务逻辑，可以返回到 BizTalk 消息序列化实体对象。 可以从 XML 架构，使用以下工具之一创建.NET 类：XSD 工具 (.NET Framework 2.0) 或 SVCUTIL (.NET Framework 3.0)。  
   
 - 启用从业务流程的帮助器组件。 此方法有其优点使用可分辨的字段。 实际上，业务流程可以读取的 XPath 表达式从配置存储 （配置文件、 SSO 配置存储区、 自定义 Db 等），因此时必须更改 XPath 表达式，无需更改和重新部署架构，你应为升级的属性和 distinguished 字段。 下面的代码示例提供帮助器组件的示例。 该组件使用 BizTalk 运行时提供的 XPathReader 类。 这使得代码可以读取整个文档流，直到找到 XPath 表达式。  
   
@@ -319,7 +319,7 @@ public static Root SetValues(Microsoft.XLANGs.BaseTypes.XLANGMessage msg)
   
 - WSE，HTTP，WCF  
   
-- MSMQ、 MQSeries  
+- MSMQ, MQSeries  
   
   在 BizTalk Server 2010 中，发送和接收管道可以从业务流程使用 XLANGPipelineManager 类包含在 Microsoft.XLANGs.Pipeline.dll 直接调用。 因此，管道处理可以在端口间移动业务流程;具有表达式形状，调用给定的.NET 类的实例 （例如，使用 ADO.NET 数据访问组件），才能替代业务流程中的逻辑端口。 采用这种技术之前, 应注意，如果不使用适配器和物理端口，您会失去能够充分利用其函数，如批处理、 重试次数、 声明性配置和辅助传输。  
   
@@ -347,7 +347,7 @@ public static Root SetValues(Microsoft.XLANGs.BaseTypes.XLANGMessage msg)
   
 - [使用 BizTalk Server 异常处理](http://msdn.microsoft.com/library/aa561229.aspx)(http://msdn.microsoft.com/library/aa561229.aspx)。  
   
-- [Charles Young 博客，BizTalk Server 2006： 补偿模型](http://go.microsoft.com/fwlink/?LinkId=158017)(http://go.microsoft.com/fwlink/?LinkId=158017)。  
+- [Charles Young 博客，BizTalk Server 2006:补偿模型](http://go.microsoft.com/fwlink/?LinkId=158017)(http://go.microsoft.com/fwlink/?LinkId=158017)。  
   
   > [!NOTE]
   >  虽然此博客编写使用[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]的一点是，在博客中介绍的原则也适用于 BizTalk Server。  
@@ -357,7 +357,7 @@ public static Root SetValues(Microsoft.XLANGs.BaseTypes.XLANGMessage msg)
   
 -   如果使用映射来提取或设置与一起使用的属性在业务流程中的业务逻辑使用可分辨的字段，或升级的属性。 应遵循这种做法，因为如果提取或设置文档的一个带有地图的值加载到内存但是时使用的可分辨字段或升级的属性，则业务流程引擎将访问消息上下文并不会加载到内存中的文档。  
   
--   如果正在使用映射将多个字段聚合为一个字段，请将可分辨字段或升级属性与业务流程变量结合使用，以累计结果集。  
+-   如果您使用映射将多个字段聚合为一个字段，请使用可分辨的字段或升级的属性与业务流程变量累积的结果集。  
   
 ## <a name="see-also"></a>请参阅  
  [优化性能](../technical-guides/optimizing-performance.md)

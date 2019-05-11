@@ -12,15 +12,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2299e8145fc302f41e9ea640381e82a6f52be06
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cb9250b09d5e6a797e5f78438621ec4486697d1d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010032"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65346215"
 ---
 # <a name="events-and-errors"></a>事件和错误
-本部分包括 BizTalk Server 技术的事件和错误。 介绍了出现的错误和用户采取的相应操作。  
+本部分包含的事件和 BizTalk Server 技术的错误。 它描述错误以及要执行的适当的用户操作。  
   
 ## <a name="in-this-section"></a>本节内容  
   

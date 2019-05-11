@@ -1,5 +1,5 @@
 ---
-title: 业务流程管理解决方案的开发人员计算机设置 |Microsoft 文档
+title: 业务流程管理解决方案的开发人员计算机设置 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,19 +16,19 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1e2491d755062828a3204d895fa7be7552ef06d5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 35249beb37b648ee730532d27df50e7e50fa210d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238877"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65351566"
 ---
 # <a name="developer-machine-setup-for-the-business-process-management-solution"></a>业务流程管理解决方案的开发人员计算机设置
-业务流程管理 (BPM) 解决方案为您展示了一种在 BizTalk 应用程序中构造流程管理器的方法。 该解决方案使用组件来选择和控制订单处理中的阶段序列。 该解决方案首先获取订单（该订单可能是申请新的服务、申请升级或申请终止服务），然后记录该订单，并在传递订单以进行处理之前对该订单进行确认。 处理过程由一个或多个订单处理阶段组成。 最后，该解决方案向原始订单请求返回响应。  
+业务流程管理 (BPM) 解决方案显示了一种方法来构造流程管理器中的 BizTalk 应用程序。 该解决方案使用一个组件来选择和控制订单处理中的阶段序列。 该解决方案首先获取订单-这可能会为新的服务、 升级或服务终止，记录它，并处理在传递之前该订单进行确认。 处理由处理订单的一个或多个阶段组成。 最后，该解决方案将返回对原始订单请求的响应。  
   
- 作为开发人员，您首先要制订在单台计算机上运行的方案。 在单台计算机上测试功能之后，将与 IT 专业人员讨论如何在生产服务器上部署该解决方案。 您需要帮助他们设计系统结构以满足诸如高可用性、更佳的性能和更便于维护等方面的服务需求。 然后，将根据设计为进行生产部署准备资源。  
+ 作为开发人员，您首先获得一台计算机上运行的方案。 测试在单台计算机上的功能之后, 将讨论如何与 IT 专业人员的生产服务器上安装解决方案。 您需要帮助他们设计系统结构以满足服务要求，如高可用性、 更好的性能和更便于维护。 然后将基于设计的生产部署准备资源。  
   
- 本部署指南介绍了如何在单台计算机上安装和测试业务流程管理解决方案。  
+ 本部署指南介绍如何安装和测试业务流程管理解决方案在单台计算机上。  
   
  有关业务流程管理解决方案的详细信息，请参阅[了解业务流程管理解决方案](../core/understanding-the-business-process-management-solution.md)。  
   

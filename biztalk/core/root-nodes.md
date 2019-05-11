@@ -12,17 +12,17 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d8b2746e9e1886b676e656db883579b28898e3d5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0886e1098c3cdc561f878c0a99615f197f937ef5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37019656"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65254761"
 ---
 # <a name="root-nodes"></a>根节点
 在 BizTalk 编辑器中的子节点**架构**节点被称为**根**节点。 **根**节点是特殊类型的**记录**节点，并且具有了几个属性比常规**记录**节点。 **根**节点表示架构所描述的文档类型，可以重命名是根据需要。 例如，你可以重命名**根**节点，以使其描述架构表示的诸如 purchaseOrder、 orderAcknowledgment 或 shipnotice 等消息的类型。  
 
- 在 BizTalk 编辑器中，创建新的 XML 架构时**架构**节点和一个**根**自动创建节点。 您可以创建其他**根**节点的子级作为节点**架构**节点; 这使您可以创建一个库中的单个 XML 架构定义 (XSD) 语言表示形式的架构。 例如，可以创建一个架构库以描述与发送采购订单相关的消息的各种架构，并将多个根节点分别命名为 purchaseOrder、orderAcknowledgment 和 shipNotice。  
+ 在 BizTalk 编辑器中，创建新的 XML 架构时**架构**节点和一个**根**自动创建节点。 您可以创建其他**根**节点的子级作为节点**架构**节点; 这使您可以创建一个库中的单个 XML 架构定义 (XSD) 语言表示形式的架构。 例如，可以创建一个架构来描述与发送采购订单相关的消息的各种架构库命名不同的根节点 purchaseOrder、 orderAcknowledgment 和 shipnotice 等。  
 
 ## <a name="xsd-representation"></a>XSD 表示形式  
  下面的示例显示行中对应于架构的 XSD 表示形式**根**架构的树视图中的节点。  
@@ -55,7 +55,7 @@ ms.locfileid: "37019656"
 </xs:schema>  
 ```  
 
- 相应的 XML 实例消息必须具有以下基本结构：  
+ 相应的 XML 实例消息必须具有以下基本结构。  
 
 ```  
 <?xml version="1.0"?>  

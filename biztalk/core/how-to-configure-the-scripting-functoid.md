@@ -1,5 +1,5 @@
 ---
-title: 如何配置脚本 Functoid |Microsoft 文档
+title: 如何配置脚本 Functoid |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 956896ff1c99a3fd13fd916e506b6d9d9315147a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fc0454850bac5f937f3f009e71e89407b7aa8edd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22248573"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385974"
 ---
-# <a name="how-to-configure-the-scripting-functoid"></a>如何配置“脚本”Functoid
-有关配置的分步说明**脚本**属性**脚本**步骤 3 至 6 的形式提供，如 functoid[如何向地图添加脚本 Functoid](../core/how-to-add-scripting-functoids-to-a-map.md)。 步骤 7 和 8 也是相对于配置的输入的参数，如果有的话和输出参数的相关**脚本**functoid。  
+# <a name="how-to-configure-the-scripting-functoid"></a>如何配置脚本 Functoid
+配置的分步说明**脚本**的属性**脚本**步骤 3 到 6 个步骤提供了 functoid[如何向映射添加脚本 Functoid](../core/how-to-add-scripting-functoids-to-a-map.md)。 步骤 7 和 8 也是与配置输入的参数，如果有和的输出参数**脚本**functoid。  
   
-## <a name="see-also"></a>另请参阅  
- [编辑 Functoid 属性和输入的参数](../core/editing-functoid-properties-and-input-parameters.md)
+## <a name="see-also"></a>请参阅  
+ [编辑 Functoid 属性和输入参数](../core/editing-functoid-properties-and-input-parameters.md)

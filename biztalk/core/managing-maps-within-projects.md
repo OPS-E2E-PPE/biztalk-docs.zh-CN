@@ -1,5 +1,5 @@
 ---
-title: 管理项目中的映射 |Microsoft 文档
+title: 管理项目中的映射 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0900424ea5e31392f27268d33293bfbfd06a8d56
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bcc44c25c7eec0357c8472d75619fc23d16d3caa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22261989"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380333"
 ---
 # <a name="managing-maps-within-projects"></a>管理项目中的映射
-本部分为各种映射处理提供了分步说明，例如，创建映射、指定映射中的架构以及保存映射时所涉及的步骤。 有关生成使用链接和 functoid 映射结构的信息，请参阅[创建更复杂的映射到使用 Functoid](../core/using-functoids-to-create-more-complex-mappings.md)。  
+本部分提供有关使用整个映射的分步说明，例如，在创建映射，在映射中，指定架构中所涉及的步骤以及保存映射。 有关构建映射结构使用链接和 functoid 的信息，请参阅[使用 Functoid 创建更复杂的映射](../core/using-functoids-to-create-more-complex-mappings.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [如何创建新的映射](../core/how-to-create-new-maps.md)  
+-   [如何创建新映射](../core/how-to-create-new-maps.md)  
   
--   [如何添加现有的映射](../core/how-to-add-existing-maps.md)  
+-   [如何添加现有映射](../core/how-to-add-existing-maps.md)  
   
--   [如何打开、 保存、 关闭，以及重命名映射](../core/how-to-open-save-close-and-rename-maps.md)  
+-   [如何打开、 保存、 关闭和重命名映射](../core/how-to-open-save-close-and-rename-maps.md)  
   
 -   [如何替换架构](../core/how-to-replace-schemas.md)

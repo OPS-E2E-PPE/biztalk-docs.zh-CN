@@ -12,18 +12,18 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 179ff0690c7c07dcf58bf2d7fd92a885435509cc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 59910e1af14ff9d21ea196d9ec92202772541876
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980334"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65335490"
 ---
 # <a name="how-to-recover-the-biztalk-server-configuration"></a>如何恢复 BizTalk Server 配置
 作为恢复 BizTalk server 的一部分，您还必须导入安装 BizTalk Server 时所创建的配置文件。  
   
-## <a name="prerequisites"></a>必要條件  
- 必须以 Administrators 组成员的身份登录，才能执行此过程。  
+## <a name="prerequisites"></a>先决条件  
+ 您必须为要执行此过程的管理员组的成员身份登录。  
   
 ### <a name="to-recover-the-biztalk-server-configuration"></a>若要恢复 BizTalk Server 配置  
   
@@ -35,7 +35,7 @@ ms.locfileid: "36980334"
   
     验证出现任何功能的前面没有失效图标。 如果有配置错误的任何功能，现在是时候更正它们。  
   
-4. 单击“应用配置”。  
+4. 单击**应用配置**。  
   
     别忘了 BizTalk Server 的已配置的功能，请关闭配置窗口。  
   

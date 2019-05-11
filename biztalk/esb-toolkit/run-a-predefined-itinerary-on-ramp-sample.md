@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e428a9106582e5bad3408cfb6643cc5da21ac74
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3bed5278e4373b82a2f384f96bee44512aefc1b8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996582"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400303"
 ---
 # <a name="run-a-predefined-itinerary-on-ramp-sample"></a>运行预定义的路线接入点示例
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]包括可以执行的 20 预定义的路线用例。 有关这些列表的用例，请参阅[示例路线方案](../esb-toolkit/the-sample-itinerary-scenarios.md)。  

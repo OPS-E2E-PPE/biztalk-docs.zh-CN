@@ -1,6 +1,6 @@
 ---
-title: UI 指南和开发人员参考 |Microsoft 文档
-description: 用户界面 (UI) 帮助适配器，BizTalk 映射程序业务流程设计器中，规则引擎部署向导中，Web 服务发布向导，并更在 BizTalk Server
+title: UI 指南和开发人员参考 |Microsoft Docs
+description: 用户界面 (UI) 帮助的适配器，BizTalk 映射器中，业务流程设计器中，规则引擎部署向导，Web Services 发布向导和 BizTalk Server 中的更多
 ms.custom: ''
 ms.date: 09/04/2017
 ms.prod: biztalk-server
@@ -13,16 +13,16 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e32a146516b58bc29aea80b51c1dd3e65fdfc2b3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4aaa069e03b443b26464f8d503bac8bb6e74c10a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279749"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65299775"
 ---
-# <a name="biztalk-server-ui-help--developers-reference"></a>BizTalk Server UI 帮助和开发人员参考
+# <a name="biztalk-server-ui-help--developers-reference"></a>BizTalk Server 用户界面帮助和开发人员参考
 
-BizTalk Server 和参考主题的不同部分的 UI 帮助获取开发人员[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。 
+BizTalk Server 和参考主题的不同部分的用户界面帮助获得面向开发人员[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。 
 
 ## <a name="ui-help"></a>用户界面帮助
 
@@ -31,9 +31,9 @@ BizTalk Server 和参考主题的不同部分的 UI 帮助获取开发人员[!IN
 * BizTalk 管理
 * BizTalk 编辑器
 * BizTalk 平面文件架构向导
-* BizTalk 映射程序
+* BizTalk Mapper
 * BPEL 导入向导
-* 业务活动监视 (BAM) 外接程序 Excel
+* 业务活动监视 (BAM) 用于外接程序 Excel
 * 业务活动监视 (BAM) 门户
 * 业务规则编辑器
 * 配置向导
@@ -44,14 +44,14 @@ BizTalk Server 和参考主题的不同部分的 UI 帮助获取开发人员[!IN
 * 项目系统
 * 规则引擎部署向导
 * 跟踪配置文件编辑器
-* Web Services
+* Web 服务
 * WCF 服务
 * 安装和升级向导
 
 ## <a name="application-deployment-ui-help"></a>应用程序部署用户界面帮助
 
 * 添加策略
-* 导出策略和导出绑定
+* 将策略导出和导出绑定
 * 导出 MSI 文件向导
 * 导入 MSI 向导
 

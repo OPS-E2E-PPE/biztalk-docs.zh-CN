@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a2d5ebfc9853f10417c1d2ad2c41a0d2531ff6de
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7f79cee850fac0689cbf956a966ad0970d36223f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971470"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279074"
 ---
 # <a name="wcf-client-must-allow-impersonation-to-use-single-sign-on"></a>WCF 客户端必须允许模拟才能使用单一登录
 ## <a name="details"></a>详细信息  
@@ -30,13 +30,13 @@ ms.locfileid: "36971470"
 |  事件源   |                                         0                                          |
 |    组件    |                                         0                                          |
 |  符号名称  |                                         0                                          |
-|  消息正文   |           WCF 客户端必须允许模拟使用单一登录。            |
+|  消息正文   |           WCF 客户端必须允许模拟才能使用单一登录            |
 
 ## <a name="explanation"></a>解释  
- 在接收位置启用了单一登录 (SSO)，但 WCF 客户端不允许模拟。  
+ 在接收位置中启用单一登录 (SSO)，但 WCF 客户端不允许模拟。  
 
 ## <a name="user-action"></a>用户操作  
- 确保调用服务的 WCF 客户端允许模拟。  
+ 请确保调用服务的 WCF 客户端允许模拟。  
 
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
 

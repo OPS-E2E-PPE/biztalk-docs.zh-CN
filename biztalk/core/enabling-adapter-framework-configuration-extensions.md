@@ -1,5 +1,5 @@
 ---
-title: 启用适配器 Framework 配置扩展 |Microsoft 文档
+title: 启用适配器框架配置扩展 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e111a271654b40a01032805bbfdb8eb54bc31ead
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 63831845dee97a4ce03bb5ac19595b2db42e3327
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25970141"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65349671"
 ---
-# <a name="enabling-adapter-framework-configuration-extensions"></a>使适配器 Framework 配置扩展
-BizTalk 适配器框架提供多种扩展，为用户带来更多便利。 若要使用这些扩展，导入的框架的架构，BiztalkAdapterFramework.xsd。 导入架构使你能够访问修饰和专用的类型，以及在适配器的配置架构中使用它们，如下所述。 下面的代码演示如何导入该架构：  
+# <a name="enabling-adapter-framework-configuration-extensions"></a>启用适配器框架配置扩展
+BizTalk 适配器框架提供了多项扩展，以改善用户体验。 若要使用这些扩展，导入框架的架构 BiztalkAdapterFramework.xsd。 导入该架构，您可以访问修饰和专用的类型并在适配器的配置架构中使用它们，如下所述。 下面的代码演示如何将架构导入：  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?><xs:schema   targetNamespace="http://tempuri.org/XMLSchema.xsd"   
@@ -34,9 +34,9 @@ BizTalk 适配器框架提供多种扩展，为用户带来更多便利。 若�
 ```  
   
 ## <a name="importing-the-biztalk-adapter-framework-extensions-schema-xsd"></a>导入 BizTalk 适配器框架扩展架构 XSD  
- 通过导入适配器框架扩展架构 XSD，你可以使用修饰如\<baf:FileName\>作为元素的类型，它显示的文件名称弹出编辑元素时。  
+ 通过导入适配器框架扩展架构 XSD，您可以使用修饰如\<baf:FileName\>作为元素的类型，其中显示了文件名称弹出编辑该元素时。  
   
- 其他修饰控制属性在界面中的显示方式。 \<Baf:description\>修饰，例如，将帮助文本添加到元素。 \<Baf:description\>修饰的属性页的底部显示的文本。 \<Baf： 可浏览\>修饰隐藏接口中的元素。 下面的代码显示如何在配置架构中使用这些元素：  
+ 其他修饰控制界面中属性的显示。 \<Baf: description\>修饰，例如，将帮助文本添加到元素。 \<Baf: description\>修饰的属性页的底部显示的文本。 \<Baf： 可浏览\>修饰隐藏的界面元素。 下面的代码演示如何使用配置架构中的这些元素：  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?><xs:schema   targetNamespace="http://tempuri.org/XMLSchema.xsd"   
@@ -93,5 +93,5 @@ BizTalk 适配器框架提供多种扩展，为用户带来更多便利。 若�
 </xs:schema>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [适配器框架配置架构扩展](../core/adapter-framework-configuration-schema-extensions.md)

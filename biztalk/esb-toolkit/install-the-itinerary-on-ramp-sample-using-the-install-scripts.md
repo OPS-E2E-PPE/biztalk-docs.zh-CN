@@ -1,5 +1,5 @@
 ---
-title: 安装使用安装脚本路线上负载增加示例 |Microsoft 文档
+title: 安装路线接入点示例使用安装脚本 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 28bd132591730c63af219e3b8acfbcf52c882c87
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 57043fd3212c0f4f023f8b7936d2a010838cac5f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25972459"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399911"
 ---
-# <a name="install-the-itinerary-on-ramp-sample-using-the-install-scripts"></a>安装使用安装脚本路线上负载增加示例
-本部分介绍如何从提供的安装脚本安装路线入口示例[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。  
+# <a name="install-the-itinerary-on-ramp-sample-using-the-install-scripts"></a>安装路线接入点示例使用安装脚本
+本部分介绍如何从提供的安装脚本安装路线接入点示例[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。  
   
-### <a name="to-install-the-itinerary-on-ramp-sample-from-the-install-scripts"></a>若要从安装脚本安装路线入口示例  
+### <a name="to-install-the-itinerary-on-ramp-sample-from-the-install-scripts"></a>若要从安装脚本安装路线接入点示例  
   
 1.  在 **“开始”** 菜单上，单击 **“运行”**。  
   
-2.  在**运行**对话框中，键入**cmd**，然后按 ENTER 以打开命令提示符。  
+2.  在中**运行**对话框中，键入**cmd**，然后按 ENTER 以打开命令提示符。  
   
 3.  运行以下命令，替换\<路径\>参数替换为你想要安装的.cmd 文件的完整路径 (在此版本中的默认路径是 \Source\Samples\Itinerary\Install\Scripts\\):  
   

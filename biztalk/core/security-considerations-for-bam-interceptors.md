@@ -1,5 +1,5 @@
 ---
-title: BAM 拦截器的安全注意事项 |Microsoft 文档
+title: BAM 侦听器的安全注意事项 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 885b8235b22ea7cbff336c6bb0712ddf45df3e93
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f47fecbb867d08f1fa275a22dde6c53208d0d194
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269125"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280378"
 ---
 # <a name="security-considerations-for-bam-interceptors"></a>BAM 侦听器的安全注意事项
-下列主题描述了如何为 BAM 侦听器配置安全角色。  
+以下主题介绍如何为 BAM 侦听器配置安全角色。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [有关活动的安全注意事项](../core/security-considerations-for-activities.md)  
+-   [活动的安全注意事项](../core/security-considerations-for-activities.md)  
   
--   [有关 IIS 模拟的安全注意事项](../core/security-considerations-for-iis-impersonation.md)  
+-   [IIS 模拟的安全注意事项](../core/security-considerations-for-iis-impersonation.md)  
   
-## <a name="see-also"></a>另请参阅  
- [如何确定并设置为活动的事件写入者角色](../core/how-to-determine-and-set-event-writer-roles-for-activities.md)
+## <a name="see-also"></a>请参阅  
+ [如何确定和设置活动的事件写入者角色](../core/how-to-determine-and-set-event-writer-roles-for-activities.md)

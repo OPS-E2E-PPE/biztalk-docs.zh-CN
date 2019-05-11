@@ -1,5 +1,5 @@
 ---
-title: 故障排除 SOAP 适配器 |Microsoft 文档
+title: SOAP 适配器故障排除 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed12d3f84c54e5827ec8f973574d2a2c3345334d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 34d365b95f19a82748ef0d4bd126cfce1a03847e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22284221"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253675"
 ---
-# <a name="troubleshooting-the-soap-adapter"></a>SOAP 适配器疑难解答
-本部分介绍可用于诊断问题的 SOAP 适配器和使用 SOAP 适配器的已知的问题的故障排除方法。  
+# <a name="troubleshooting-the-soap-adapter"></a>SOAP 适配器故障排除
+本部分介绍可用于诊断 SOAP 适配器和使用 SOAP 适配器的已知的问题的问题的故障排除方法。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [如何诊断与 SOAP 适配器问题](../core/how-to-diagnose-problems-with-the-soap-adapter.md)  
+-   [如何诊断 SOAP 适配器问题](../core/how-to-diagnose-problems-with-the-soap-adapter.md)  
   
--   [与 SOAP 适配器的已知的问题](../core/known-issues-with-the-soap-adapter.md)
+-   [SOAP 适配器的已知问题](../core/known-issues-with-the-soap-adapter.md)

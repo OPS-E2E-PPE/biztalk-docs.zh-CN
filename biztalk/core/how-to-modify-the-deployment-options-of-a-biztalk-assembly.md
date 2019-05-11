@@ -18,30 +18,30 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 16ba9dc20893a2899f7fbed78aefb3d1a0bcfdb4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2cf808f35d4ce33a2ea821f2bb07bf1b98d0a76d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973582"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384556"
 ---
 # <a name="how-to-modify-the-deployment-options-of-a-biztalk-assembly"></a>如何修改 BizTalk 程序集的部署选项
 本主题介绍如何使用 BizTalk Server 管理控制台修改 BizTalk 程序集的部署选项。  
   
- 您可以指定以下部署选项：  
+ 可以指定以下部署选项：  
   
--   **将添加到全局程序集缓存添加资源 (gacutil)。** 如果选择此选项，则在将程序集添加到应用程序时，该程序集将添加到本地计算机上的全局程序集缓存 (GAC) 中。 此外，如果您以后刷新该程序集 (右键单击它，然后单击**刷新**)，该程序集添加到 GAC。 清除此选项的复选框并不从 GAC 删除该程序集（如果该程序集当前在 GAC 中存在）。  
+-   **将添加到全局程序集缓存添加资源 (gacutil)。** 如果选择此选项，该程序集时将添加到全局程序集缓存 (GAC) 在本地计算机上该程序集添加到应用程序。 此外，如果您以后刷新该程序集 (右键单击它，然后单击**刷新**)，该程序集添加到 GAC。 清除此选项的复选框不会删除该程序集从 GAC 中，如果当前存在。  
   
--   **将添加到 MSI 文件导入 (gacutil) 上的全局程序集缓存。** 导入应用程序 .msi 文件时将程序集安装到本地计算机的 GAC 中。  
+-   **将添加到 MSI 文件导入 (gacutil) 上的全局程序集缓存。** 导入应用程序.msi 文件时，将程序集安装到本地计算机上的 GAC。  
   
--   **添加到全局程序集缓存 (gacutil) 安装 MSI 文件。** 从 .msi 文件安装应用程序时将程序集安装到本地计算机的 GAC 中。  
+-   **添加到全局程序集缓存 (gacutil) 安装 MSI 文件。** 从.msi 文件安装应用程序时，将程序集安装到本地计算机上的 GAC。  
   
--   **目标位置：** 时安装了应用程序的程序集文件将复制到的路径。 如果不提供此路径，则在安装过程中，该程序集文件将不会被复制到本地文件系统。  
+-   **目标位置：** 在安装应用程序的程序集文件将复制到的路径。 如果未提供路径，程序集文件不会复制到本地文件系统上安装。  
   
-## <a name="prerequisites"></a>必要條件  
- 若要执行本主题中的过程，必须是 BizTalk Server Administrators 组的成员的帐户登录。 此外，如果您选择立即将程序集添加到 GAC 中的选项，则您的帐户必须也是本地管理员组的成员。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
+## <a name="prerequisites"></a>先决条件  
+ 若要执行本主题中的过程，必须是 BizTalk Server Administrators 组的成员的帐户登录。 此外，如果您选择立即将程序集添加到 GAC 的选项，你的帐户还必须是本地管理员组的成员。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
   
-### <a name="to-modify-the-deployment-options-of-a-biztalk-assembly"></a>修改 BizTalk 程序集的部署选项  
+### <a name="to-modify-the-deployment-options-of-a-biztalk-assembly"></a>若要修改的 BizTalk 程序集的部署选项  
   
 1. 单击**启动**，单击**程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   

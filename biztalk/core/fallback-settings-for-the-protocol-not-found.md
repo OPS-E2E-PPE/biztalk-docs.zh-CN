@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 13d703e9cd82dde0dc0da55a630f69f1b42903e4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8cbbb9d8d3d2971e202f33784a9b98e3a108f5c3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993118"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388117"
 ---
 # <a name="fallback-settings-for-the-protocol-not-found"></a>找不到协议的后备设置
 ## <a name="details"></a>详细信息  

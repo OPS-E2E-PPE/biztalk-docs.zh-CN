@@ -18,19 +18,19 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d894cba37b85c4f18fe2a05af33eb2f4e6e1981e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0325b45c3daf7bcf6cc0dc90c83c60a41f25fcf9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984382"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385537"
 ---
-# <a name="how-to-create-a-web-setup-for-your-published-web-service"></a>如何为已发布的 Web Services 创建 Web 安装程序
-可以创建一个安装包，以便于在生产环境中设置 Web Services。 这会生成一个 .MSI 文件。  
+# <a name="how-to-create-a-web-setup-for-your-published-web-service"></a>如何为已发布的 Web 服务创建 Web 安装程序
+可以创建安装包，以便于您在生产环境中的 Web 服务设置。 这将产生。MSI 文件。  
   
-### <a name="to-create-an-installation-package-to-produce-an-msi-file-using-visual-studio"></a>创建一个安装包以便使用 Visual Studio 生成 .MSI 文件  
+### <a name="to-create-an-installation-package-to-produce-an-msi-file-using-visual-studio"></a>若要创建一个安装包，以便生成。使用 Visual Studio 的 MSI 文件  
   
-1. 打开已发布的 ASP.NET Web Services 项目。  
+1. 打开已发布的 ASP.NET Web 服务项目。  
   
 2. 在解决方案资源管理器，右键单击解决方案节点，单击**外**，然后单击**新项目**。  
   
@@ -46,9 +46,9 @@ ms.locfileid: "36984382"
   
 8. 在解决方案资源管理器，展开**检测到依赖项**Web 安装项目下的节点。  
   
-9. 选择所有的依赖项。 在中**属性**窗口中，将**排除**属性设置为**True**。  
+9. 选择所有依赖项。 在中**属性**窗口中，将**排除**属性设置为**True**。  
   
-10. 生成 Web 安装项目。  
+10. 生成 Web 安装程序项目。  
   
     > [!NOTE]
     >  有关创建 Web 安装项目的详细信息，请参阅"如何创建或添加 Web 安装项目"中[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]帮助集合中处[ http://go.microsoft.com/fwlink/?LinkId=62268 ](http://go.microsoft.com/fwlink/?LinkId=62268)。  

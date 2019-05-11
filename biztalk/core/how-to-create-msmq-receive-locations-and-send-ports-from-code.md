@@ -13,34 +13,34 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f367680408f208d5d7a93ef45e925ddfc1893ba5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e79cde5da2347a51894ca402740a680e9bd14d1d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989758"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385494"
 ---
 # <a name="create-msmq-receive-locations-and-send-ports-programmatically"></a>以编程方式创建 MSMQ 接收位置和发送端口
-本主题说明了如何使用 WMI 为 MSMQ 适配器创建端口或位置。  
+本主题说明如何使用 WMI 创建端口或 MSMQ 适配器的位置。  
   
  有关详细信息，请参阅**使用一个日期时间计划配置使用 WMI 创建接收位置** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
   
 ## <a name="setting-property-values"></a>设置属性值  
- 创建端口或位置的过程始终相同：  
+ 创建端口或位置的过程始终是相同的：  
   
 1. 创建正确类型的对象。  
   
-2. 对该对象设置属性值。  
+2. 在对象上设置属性的值。  
   
-3. 将对象值提交给数据库。  
+3. 将对象值提交到数据库。  
   
-   所有适配器都具有某些属性，如**主机名**、 共同点。 可通过直接将这些通用属性分配给对象来设置这些属性。 下面的 C# 代码显示的是一种典型的情况：  
+   所有适配器都具有某些属性，如**主机名**、 共同点。 通过直接将它们分配给该对象设置这些通用属性。 下面的 C# 代码显示了典型的用例：  
   
 ```  
 objReceiveLocation["HostName"] = "BizTalkServerApplication";  
 ```  
   
- 对不是所有适配器都共享的属性赋值。 以字符串格式创建一个 XML 文档，然后将该字符串分配给 CustomCfg 属性。 下面的 C# 代码显示了一种针对 FILE 适配器的典型情况：  
+ 将值分配到不是所有适配器都共享的属性。 在字符串中创建 XML 文档并将该字符串分配给 CustomCfg 属性。 下面的 C# 代码演示文件适配器的典型事例：  
   
 ```  
 objReceiveLocation["CustomCfg"] =   
@@ -52,9 +52,9 @@ objReceiveLocation["CustomCfg"] =
         + @"</CustomProps>";  
 ```  
   
- CustomProps 元素中的标记的名称是该适配器用于这些属性的内部名称。  
+ CustomProps 元素中的标记的名称是该适配器将使用的属性的内部名称。  
   
- MSMQ 适配器在 CustomProps 标记的内部具有单个标记 AdapterConfig。 AdapterConfig 标记包含用 Config 标记括起来的自定义属性值的 XML 标记字符串。 但是，编码的标记:"&lt;"替换"\<"和"&gt;"替换"\>"。 例如， MSMQ 属性的适配器子集 XML 可能会如下所示：  
+ MSMQ 适配器具有单个标记 AdapterConfig CustomProps 标记内。 AdapterConfig 标记包含用 Config 标记括起来的自定义属性值的 XML 标记的字符串。 但是，编码的标记:"&lt;"替换"\<"和"&gt;"替换"\>"。 例如，MSMQ 属性的适配器子集 XML 可能如下所示：  
   
 ```  
 <Config>  
@@ -77,17 +77,17 @@ objReceiveLocation["CustomCfg"] =
 |administrationQueue|管理队列|  
 |证书 (certificate)|证书指纹|  
 |encryptionAlgorithm|加密算法|  
-|maximumMessageSize|最大消息大小（以 KB 为单位）|  
+|maximumMessageSize|最大消息大小 （以 kb 为单位）|  
 |password|Password|  
 |priority|消息优先级|  
 |queue|目标队列|  
-|recoverable|Recoverable|  
+|可恢复|可恢复|  
 |segmentationSupport|支持分段|  
 |sendBatchSize|批大小|  
 |sendQueueName|目标队列|  
 |timeOut|超时|  
 |timeOutUnits|超时单位|  
-|transactional|事务性|  
+|事务|事务性|  
 |useAuthentication|使用身份验证|  
 |useDeadLetterQueue|使用死信队列|  
 |useJournalQueue|使用日志队列|  
@@ -105,7 +105,7 @@ objReceiveLocation["CustomCfg"] =
 |userName|用户名|  
   
 ## <a name="sample-code"></a>示例代码  
- 下面的 C# 程序为 MSMQ 适配器创建了单个接收位置。 该程序假定接收端口 ReceivePort1 存在，且使用 Helper 函数对自定义属性进行编码和格式化。  
+ 下面的 C# 程序创建一个 MSMQ 适配器的接收位置。 它假定接收端口 ReceivePort1 存在，并且使用一个帮助程序函数进行编码和格式化的自定义属性。  
   
 ```  
 using System;  

@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 03de6f3dc8445afa2171b6ca17099de85302692a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9eff8e4776ea1ead46f28572e4c950b3d72d970f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984374"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385502"
 ---
 # <a name="how-to-create-new-maps"></a>如何创建新映射
 
@@ -30,7 +30,7 @@ ms.locfileid: "36984374"
   
 3. 生成的链接集，这样一来，中间 functoid 指定如何将源架构映射到目标架构。  
   
-   在当前上下文中，以上三个步骤中的前两个步骤被视为“创建”映射。 第三个步骤被视为“构建”映射。 许多与构建映射过程相关的任务的分步说明，请参阅[使用 Functoid 创建更复杂的映射](../core/using-functoids-to-create-more-complex-mappings.md)。  
+   在当前上下文中，这三个步骤的前两个被视为"创建"映射。 第三个步骤将被视为"构建"映射。 许多与构建映射过程相关的任务的分步说明，请参阅[使用 Functoid 创建更复杂的映射](../core/using-functoids-to-create-more-complex-mappings.md)。  
   
 ## <a name="create-a-new-map"></a>创建新的映射 
   
@@ -43,7 +43,7 @@ ms.locfileid: "36984374"
     BizTalk 映射器将在 Microsoft 中打开[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]编辑窗口，显示三个不同的窗格，通过并行。 从左到右，两个窗格显示源架构，网格 （它们可能具有多个页面） 和目标架构。  
   
    > [!IMPORTANT]
-   >  不能使用以下名称用于映射:"XmlContent"、"SourceSchemas"、"TargetSchemas"或"XsltArgumentListContent"。 由于编译到.NET 程序集作为结果生成的 C# 代码所生成的命名限制，不能使用这些名称。  
+   >  不能使用以下名称用于映射："XmlContent"、"SourceSchemas"、"TargetSchemas"或者"XsltArgumentListContent"。 由于编译到.NET 程序集作为结果生成的 C# 代码所生成的命名限制，不能使用这些名称。  
   
 4. 在 BizTalk 映射器中，在左窗格中，选择**打开源架构**。  
   

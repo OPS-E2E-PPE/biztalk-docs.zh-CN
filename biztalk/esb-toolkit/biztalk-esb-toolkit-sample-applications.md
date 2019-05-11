@@ -13,12 +13,12 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 188f8e1f-26fb-4ea6-8e2e-f2ae3e46ca20
 ms.author: mandia
-ms.openlocfilehash: 81f44a6a34493210b44916a8a88cc85ad693480c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bfbae558e0f140b561010debd063f171bd5ee04f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975510"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65302257"
 ---
 # <a name="biztalk-esb-toolkit-sample-applications"></a>BizTalk ESB 工具包示例应用程序
 Microsoft BizTalk ESB 工具包包括几个示例应用程序可以安装并运行以查看如何 ESB 工作原理以及它如何使用一些 ESB 管道组件。 您可以调整和修改的代码和示例中使用的自己的应用程序的技术。  

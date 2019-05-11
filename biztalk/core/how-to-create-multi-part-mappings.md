@@ -1,5 +1,5 @@
 ---
-title: 如何创建多个部分映射 |Microsoft 文档
+title: 如何创建多部分映射 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8f04a7294f33830fce2e92b0424a2ef380d56b1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 783e74948279cae99c05cef033ba88675de81e69
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22248557"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65339250"
 ---
-# <a name="how-to-create-multi-part-mappings"></a>如何创建多个部分组成的映射
-若要一起使用多个映射，则需在业务流程中合并这些映射以一起进行测试。 **测试映射**命令一次只有一个图上也有效。  
+# <a name="how-to-create-multi-part-mappings"></a>如何创建多部分映射
+如果必须一起使用的多个映射，需要将它们合并在一起进行测试业务流程中。 **测试映射**命令一次只有一个地图上也有效。  
   
- 有关设计和使用业务流程的详细信息，请参阅[创建业务流程使用 Orchestration 设计器](../core/creating-orchestrations-using-orchestration-designer.md)。  
+ 有关设计和使用业务流程的详细信息，请参阅[业务流程使用业务流程设计器创建](../core/creating-orchestrations-using-orchestration-designer.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [编译和测试映射](../core/compiling-and-testing-maps.md)   
  [创建业务流程](../core/creating-orchestrations.md)   
- [创建使用业务流程设计器的业务流程](../core/creating-orchestrations-using-orchestration-designer.md)
+ [使用业务流程设计器创建业务流程](../core/creating-orchestrations-using-orchestration-designer.md)

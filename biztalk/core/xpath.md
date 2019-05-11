@@ -1,5 +1,5 @@
 ---
-title: XPath |Microsoft 文档
+title: XPath | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2ee46838596a55512df5d1476f2c3ba34b1f5cb9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 16499791b20f4f7ebd925d1388bc3eb90cf69b1c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289645"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65246490"
 ---
 # <a name="xpath"></a>XPath
 推送 XPath 语句所指示的值。  
@@ -37,7 +37,7 @@ ms.locfileid: "22289645"
 ## <a name="pushed-value"></a>推送的值  
  执行 XPath 语句所找到的结果的字符串值。  
   
-## <a name="remarks"></a>注释  
+## <a name="remarks"></a>备注  
  必须使用有效的 XPath 语句。  
   
  在出现多个匹配的情况下，仅会使用第一个匹配。  
@@ -59,5 +59,5 @@ ms.locfileid: "22289645"
 </ic:CorrelationID>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Windows Communication Foundation 中的操作](../core/operations-in-windows-communication-foundation.md)

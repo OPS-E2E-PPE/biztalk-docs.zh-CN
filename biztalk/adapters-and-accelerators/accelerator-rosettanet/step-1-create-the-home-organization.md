@@ -1,5 +1,5 @@
 ---
-title: 步骤 1： 创建本组织 |Microsoft Docs
+title: 第 1 步：创建本组织 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,21 +16,21 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 77c39e30ecbfefdf60ad6b241e996f4a19c71088
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 30ae9910aace1e21daca71dab8c5d4f173c3df31
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000894"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281683"
 ---
-# <a name="step-1-create-the-home-organization"></a>步骤 1： 创建本组织
+# <a name="step-1-create-the-home-organization"></a>第 1 步：创建本组织
 在此步骤中，创建使用 Microsoft® 你本组织[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]管理控制台。  
 
-### <a name="to-start-the-btarn-management-console"></a>启动 BTARN 管理控制台  
+### <a name="to-start-the-btarn-management-console"></a>若要启动 BTARN 管理控制台  
 
 - 启动**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台。  
 
-### <a name="to-create-the-home-organization"></a>创建本组织  
+### <a name="to-create-the-home-organization"></a>若要创建本组织  
 
 1. 在中**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台中，展开**BizTalk\<版本\>Accelerator for RosettaNet**，右键单击**本组织**，单击**新建**，然后单击**本组织**。  
 

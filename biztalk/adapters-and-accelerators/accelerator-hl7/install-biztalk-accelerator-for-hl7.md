@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d20e2fa78d921c160b8dfe6b96c79c1b15d353e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9fb37b7ea61fed79e0d6dafc8762be719df4a9bf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004990"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65296307"
 ---
 # <a name="install-biztalk-accelerator-for-hl7"></a>安装 BizTalk Accelerator for HL7
 
@@ -28,11 +28,11 @@ ms.locfileid: "37004990"
 
 |                                                                                                                                                                   |                                                                                BizTalk 要求                                                                                 |                                                                                                                                                                                                                                                            SQL 和操作系统要求                                                                                                                                                                                                                                                            |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                       [!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]                                                        |             [BizTalk Server 2016 的硬件和软件要求](../../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)             |                                      **SQL Server 的硬件和软件要求**: <br/>[SQL Server 2016](https://msdn.microsoft.com/library/ms143506(v=sql.130).aspx)<br/>[SQL Server 2014](https://msdn.microsoft.com/library/ms143506(v=sql.120).aspx)<br/><br/>**Windows Server 的硬件要求**: <br/>[Windows Server 2016](https://technet.microsoft.com/windows-server-docs/get-started/server-basics)<br/>[Windows Server 2012](https://technet.microsoft.com/library/jj134246.aspx)                                      |
+|                                                       [!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]                                                        |             [硬件和软件要求适用于 BizTalk Server 2016](../../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)             |                                      **SQL Server 的硬件和软件要求**: <br/>[SQL Server 2016](https://msdn.microsoft.com/library/ms143506(v=sql.130).aspx)<br/>[SQL Server 2014](https://msdn.microsoft.com/library/ms143506(v=sql.120).aspx)<br/><br/>**Windows Server 的硬件要求**: <br/>[Windows Server 2016](https://technet.microsoft.com/windows-server-docs/get-started/server-basics)<br/>[Windows Server 2012](https://technet.microsoft.com/library/jj134246.aspx)                                      |
 | [!INCLUDE[bts2013r2_md](../../includes/bts2013r2-md.md)] <br/><br/> [!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)] 2013 | [BizTalk Server 2013 和 2013 R2 的硬件和软件要求](../../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2013-and-2013-r2.md) | **SQL Server 的硬件和软件要求**: <br/>[SQL Server 2014](https://msdn.microsoft.com/library/ms143506(v=sql.120).aspx)<br/>[SQL Server 2012](https://msdn.microsoft.com/library/ms143506(v=sql.110).aspx)<br/>[SQL Server 2008 R2](https://msdn.microsoft.com/library/ms143506(v=sql.105).aspx)<br/><br/>**Windows Server 的硬件要求**: <br/>[Windows Server 2012](https://technet.microsoft.com/library/jj134246.aspx)<br/>[Windows Server 2008 R2](https://technet.microsoft.com/library/dd379511(v=ws.10).aspx) |
 
 > [!TIP]
-> 列出的是最低硬件要求。 每个环境都不同，可能你的环境具有更高要求。 请参阅[有关安装、 大小调整、 部署和维护 BizTalk Server 解决方案的建议](http://social.technet.microsoft.com/wiki/contents/articles/666.recommendations-for-installing-sizing-deploying-and-maintaining-a-biztalk-server-solution.aspx)
+> 列出的硬件要求是最小值。 每个环境都不同，并且没有你的环境可能需要更多的机率相当高。 请参阅[有关安装、 大小调整、 部署和维护 BizTalk Server 解决方案的建议](http://social.technet.microsoft.com/wiki/contents/articles/666.recommendations-for-installing-sizing-deploying-and-maintaining-a-biztalk-server-solution.aspx)
 
 ## <a name="install-hl7"></a>安装 HL7
 
@@ -59,7 +59,7 @@ ms.locfileid: "37004990"
    > [!TIP]
    >  从开始[!INCLUDE[bts2013r2](../../includes/bts2013r2-md.md)]及更高版本，[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]安装包括 32 位安装包和 64 位安装包。
    > 
-   > 在 32 位计算机上，仅安装 32 位包。 在 64 位计算机上安装 32 位**或**64 位包。 64 位包使适配器和管道在 32 位和 64 位模式下都能运行。  
+   > 在 32 位计算机上安装仅 32 位包。 在 64 位计算机上安装 32 位**或**64 位包。 64 位包使适配器和管道在 32 位和 64 位模式下运行。  
 
 2. 在欢迎页上，选择**下一步**。  
 
@@ -73,10 +73,10 @@ ms.locfileid: "37004990"
 
    * BizTalk Server Administrators
    * BizTalk Application Users
-   * BizTalk Server B2B Operators
+   * BizTalk Server B2B 操作员
    * BizTalk Server Operators
 
-   选择“下一步” 。 
+   选择“**下一步**”。 
 
 7. 查看摘要，然后选择**下一步**。  
 
@@ -92,7 +92,7 @@ ms.locfileid: "37004990"
    |   **测试连接**    |                                                                                                                                                                                              选择以确认你拥有 SQL Server 连接。                                                                                                                                                                                               |
 
     > [!NOTE]
-    >  如果为所选的数据库存在，则会显示一个消息框。 选择“确定”继续。  
+    >  如果为所选的数据库存在，则会显示一个消息框。 选择**确定**以继续。  
 
 10. 选择“安装”。
 
@@ -107,7 +107,7 @@ ms.locfileid: "37004990"
    > [!TIP]
    >  从开始[!INCLUDE[bts2013r2](../../includes/bts2013r2-md.md)]及更高版本，[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]安装包括 32 位安装包和 64 位安装包。 
    > 
-   > 在 32 位计算机上，仅安装 32 位包。 在 64 位计算机上安装 32 位**或**64 位包。 64 位包使适配器和管道在 32 位和 64 位模式下都能运行。  
+   > 在 32 位计算机上安装仅 32 位包。 在 64 位计算机上安装 32 位**或**64 位包。 64 位包使适配器和管道在 32 位和 64 位模式下运行。  
 
 2. 在欢迎页上，选择**下一步**。  
 
@@ -122,10 +122,10 @@ ms.locfileid: "37004990"
 
    |       功能        |      子功能       |                                                                                                   Description                                                                                                    | 典型安装 | 自定义安装 |
    |----------------------|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|----------------|
-   |      **引擎**      |                        |                                 验证、 处理并将消息路由。<br /><br /> 必须是 BizTalk Server Administrators 组的成员，才能安装此功能。                                  |        ✓        |       ✓        |
-   |      **引擎**      |   引擎组件    |                                      进程[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]平面文件和 XML 编码的消息。                                      |        ✓        |       ✓        |
-   |      **引擎**      |   出站批处理    |                                       创建并将路由[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]批处理格式的文档。                                        |        ✓        |       ✓        |
-   |      **引擎**      |       管道        |                                      示例管道用于生成在[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]解决方案。                                       |        ✓        |       ✓        |
+   |      **Engine**      |                        |                                 验证、 处理并将消息路由。<br /><br /> 必须是 BizTalk Server Administrators 组的成员，才能安装此功能。                                  |        ✓        |       ✓        |
+   |      **Engine**      |   引擎组件    |                                      进程[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]平面文件和 XML 编码的消息。                                      |        ✓        |       ✓        |
+   |      **Engine**      |   出站批处理    |                                       创建并将路由[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]批处理格式的文档。                                        |        ✓        |       ✓        |
+   |      **Engine**      |       管道        |                                      示例管道用于生成在[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]解决方案。                                       |        ✓        |       ✓        |
    |     **适配器**      |                        |                                                                                    若要启用终结点连接的实用工具。                                                                                    |        ✓        |       ✓        |
    |     **适配器**      |          MLLP          |                          若要启用基于 IP 的连接使用的 MLLP 适配器[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]MLLP 协议。                           |        ✓        |       ✓        |
    |     **适配器**      |     MLLP 测试工具     |                                                   测试工具，它模拟基于 MLLP 发送和接收客户端应用程序通过基于 IP 的连接。                                                    |                 |                |

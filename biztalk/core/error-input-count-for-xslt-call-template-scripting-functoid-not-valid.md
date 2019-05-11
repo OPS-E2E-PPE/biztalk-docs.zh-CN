@@ -1,5 +1,5 @@
 ---
-title: 错误-XSLT 调用模板脚本 Functoid 不是有效的输入计数 |Microsoft 文档
+title: 错误-XSLT 调用模板脚本 Functoid 不是有效的输入计数 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aa7a67192a73801155e64922f805f1164e2d7b4a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d22de40e0391e14ecded5099bb3af4abd9976aa3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241029"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348112"
 ---
 # <a name="error---input-count-for-xslt-call-template-scripting-functoid-not-valid"></a>错误-XSLT 调用模板脚本 Functoid 不是有效的输入计数
 **错误代码**  
@@ -28,8 +28,8 @@ ms.locfileid: "22241029"
   
  **说明**  
   
- 到相关的输入参数的数目**脚本**functoid，配置为使用内联 XSLT 调用模板，与该模板所需的参数数目不匹配。  
+ 相关的输入参数的数目**脚本**functoid，配置为使用内联 XSLT 调用模板，与预期由该模板的参数数目不匹配。  
   
  **用户执行任何操作**  
   
- 确保到此输入参数的数目**脚本**functoid 匹配内联 XSLT 调用模板为此配置所需的参数数目**脚本**functoid。
+ 确保输入参数数目**Scripting** functoid 与所需的内联 XSLT 调用模板配置为此参数的数目匹配**脚本**functoid。

@@ -1,5 +1,5 @@
 ---
-title: 分隔记录注意事项 |Microsoft 文档
+title: 分隔记录注意事项 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bc6cbd642717b485a1be5cefab07f6a8298d638a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 98c42d1307340dfad47933fbe1e9bfcc1c2256dd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238389"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65352187"
 ---
-# <a name="delimited-record-considerations"></a>分隔记录的注意事项
-有大量你应时需要牢记使用带分隔符的注意事项**记录**在你的架构内的节点。 这包括有关从属节点相对于其分隔符，在其中你可以选择省略分隔符时将平面文件消息表示形式，并分隔限制有关的混用例的顺序的注意事项和位置的记录。 本部分提供了有关上述注意事项的信息。  
+# <a name="delimited-record-considerations"></a>分隔记录注意事项
+有一些注意事项，您应考虑使用时分隔**记录**节点在架构中的。 这包括有关相对于其分隔符，情况下在其中可以选择在组装平面文件表示形式的一条消息，忽略的分隔符和限制有关的混合分隔从属节点的顺序的注意事项和位置记录。 本部分提供有关这些注意事项的信息。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [分隔记录中处理的标记](../core/tag-handling-in-delimited-records.md)  
+-   [分隔记录中的标记处理](../core/tag-handling-in-delimited-records.md)  
   
--   [子顺序注意事项](../core/child-order-considerations.md)  
+-   [子顺序的注意事项](../core/child-order-considerations.md)  
   
--   [分隔符保留和抑制](../core/delimiter-preservation-and-suppression.md)
+-   [分隔符的保留和取消](../core/delimiter-preservation-and-suppression.md)

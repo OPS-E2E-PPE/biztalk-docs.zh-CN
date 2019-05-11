@@ -1,5 +1,5 @@
 ---
-title: MQSeries 适配器自定义标头 |Microsoft 文档
+title: MQSeries 适配器自定义标头 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,19 +14,19 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 09a05b8c73cd7be84af01eb4465681816e429bc3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 758b0bb33be70f681d4d7ef732e50555d6eca026
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263085"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65323788"
 ---
 # <a name="mqseries-adapter-custom-headers"></a>MQSeries 适配器自定义标头
-由于在 MQSeries 消息中使用了标头结构，因此必须对要使用的所有自定义标头进行管理。 为了避免影响对 MQSeries 标头的处理，自定义标头必须包含在消息正文中。 应避免对任何自动升级的属性进行降级。 有关自动提升的属性的详细信息，请参阅[MQSeries 适配器属性](../core/mqseries-adapter-properties.md)。  
+由于在 MQSeries 消息中所使用的标头结构，你必须管理任何你想要使用的自定义标头。 自定义标头必须是消息正文，以便避免干扰 MQSeries 标头的处理的一部分。 请确保您避免降级自动升级的属性之一。 有关自动升级的属性的详细信息，请参阅[MQSeries 适配器属性](../core/mqseries-adapter-properties.md)。  
   
- 在消息正文中包含自定义标头需要执行额外的处理任务。 一种解决方案是在应用程序的管道中处理自定义标头。 接收管道提取自定义标头信息并将该信息升级为上下文属性。 同样，发送管道获取与自定义标头对应的上下文属性并在消息正文中对这些属性进行降级。  
+ 反过来，消息正文中的自定义标头合并需要进行其他处理。 一种解决方案是处理的应用程序管道中的自定义标头。 接收管道提取自定义标头信息并将升级为上下文属性的信息。 同样，发送管道使用对应于自定义标头上下文属性，并将消息的正文中的属性降级。  
   
  有关在管道组件中使用自定义标头的示例，请参阅[MQSSendPipelineComponent （BizTalk Server 示例）](../core/mqssendpipelinecomponent-biztalk-server-sample.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [MQSeries 适配器属性](../core/mqseries-adapter-properties.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9f374f9ebdfabfff1cc123fe2ad2f9d05a2b3c63
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 387f80f54952b1f2bdae877c806b0a130c5bf1b6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994054"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387458"
 ---
 # <a name="how-node-name-characters-get-encoded"></a>如何对节点名称字符进行编码
 如果使用节点名称中不允许的字符，BizTalk 编辑器会发出提示，询问您是否要继续不允许的字符或编码字符 (**确定**或**取消**)。 如果继续，每个不允许的字符编码，如下所示：  

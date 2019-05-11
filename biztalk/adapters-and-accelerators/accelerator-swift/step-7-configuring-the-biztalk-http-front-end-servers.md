@@ -1,5 +1,5 @@
 ---
-title: 步骤 7： 配置 BizTalk HTTP 前端服务器 |Microsoft Docs
+title: 步骤 7：配置 BizTalk HTTP 前端服务器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3b6429ba6c753bac16874fd6fa81e13e91927b58
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 038f20096247e952b10d95c6823cb0749d3b1a71
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989182"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377022"
 ---
-# <a name="step-7-configuring-the-biztalk-http-front-end-servers"></a>步骤 7： 配置 BizTalk HTTP 前端服务器
+# <a name="step-7-configuring-the-biztalk-http-front-end-servers"></a>步骤 7：配置 BizTalk HTTP 前端服务器
 此部分指导配置中的 Web 服务器在[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]部署。  
   
 > [!NOTE]

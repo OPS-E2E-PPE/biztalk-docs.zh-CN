@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8fb167c0bf704aee869e81798116377608fde0c2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 160e28e23de6c792e3669831e84e582dd07c7318
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983022"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345593"
 ---
 # <a name="field-position-calculation"></a>字段位置计算
 

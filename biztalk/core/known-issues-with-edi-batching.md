@@ -12,24 +12,24 @@ caps.latest.revision: 38
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c33be4da2db28fb38c3f81d3d1aaa5316a0a16a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9941e6f88bc7bd23a9825a1960a2dcf9f92466f9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997166"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330403"
 ---
-# <a name="known-issues-with-edi-batching"></a>EDI 批处理的已知问题
-本主题介绍了 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中批处理的已知问题。  
+# <a name="known-issues-with-edi-batching"></a>EDI 批处理的已知的问题
+本主题介绍批处理中的已知的问题[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
   
-## <a name="subdocument-splitting-was-not-performed-even-though-the-subdocument-annotation-was-set-to-yes"></a>即使子文档批注设置为“是”，也不会执行子文档拆分  
+## <a name="subdocument-splitting-was-not-performed-even-though-the-subdocument-annotation-was-set-to-yes"></a>即使子文档批注设置为是未执行子文档拆分  
  **症状**  
   
  即使该交换的 HIPAA 架构中的 subdocument_creation_break 批注设置为"是"。 不 HIPAA 交换拆分为子文档  
   
  **可能的原因**  
   
-- 入站的批处理选项发送参与方设置为"保留交换"。 在这种情况下，即使已将 HIPAA 架构中的 subdocument_creation_break 批注设置为“是”，HIPAA 文档也不会拆分为子文档。  
+- 入站的批处理选项发送参与方设置为"保留交换"。 HIPAA 文档将不会拆分为子文档如果出现这种情况，即使 HIPAA 架构中的 subdocument_creation_break 批注设置为"是"。  
   
 - Subdocument_break 批注设置为"是"，但 subdocument_creation_break 批注未设置为"是"。  
   
@@ -39,25 +39,25 @@ ms.locfileid: "36997166"
   
 - HIPAA 文档将不会拆分为子文档除非的 subdocument_creation_break 批注设置为"是"。  
   
-## <a name="validation-of-a-batch-may-fail-if-batch-configuration-settings-are-changed-while-the-batch-orchestration-is-activated"></a>如果在批处理业务流程处于激活状态时更改批配置设置，批处理验证可能会失败  
- 如果在批处理业务流程处理批的过程中更改批的配置设置，则新配置设置不会应用于该批。 这会导致发送管道中产生验证错误。  
+## <a name="validation-of-a-batch-may-fail-if-batch-configuration-settings-are-changed-while-the-batch-orchestration-is-activated"></a>如果激活批处理业务流程时，更改批处理的配置设置了批处理验证可能会失败  
+ 如果在批处理业务流程正在处理一批更改批配置设置，新的配置设置将不选取该批处理。 这可能导致发送管道中的验证错误。  
   
- 这些设置位于“EDI 属性”对话框的“批处理”页。  
+ 这些设置位于 EDI 属性对话框的批处理页。  
   
- 要解决此问题，请重新启动与批处理业务流程关联的主机实例。 这会导致立即应用批配置设置。  
+ 若要解决此问题，请重新启动与批处理业务流程关联的主机实例。 这会更改批配置设置，以将立即生效。  
   
-## <a name="the-batchcontrolmessagerecvloc-receive-location-can-only-run-on-a-32-bit-computer-or-in-wow-on-a-64-bit-computer"></a>BatchControlMessageRecvLoc 接收位置只能在 32 位计算机或带有 WOW 环境的 64 位计算机上运行  
- SQL 适配器只能在 32 位计算机上运行，或者在 64 位计算机上的 WOW64 仿真程序下运行。 因此，安装程序安装的使用 SQL 适配器的 BatchControlMessageRecvLoc 接收位置将只能在 32 位计算机上运行，或者在 64 位计算机上的 WOW64 仿真程序下运行。 此接收位置是批处理所必需的。  
+## <a name="the-batchcontrolmessagerecvloc-receive-location-can-only-run-on-a-32-bit-computer-or-in-wow-on-a-64-bit-computer"></a>BatchControlMessageRecvLoc 接收位置只能在 64 位计算机上运行的 32 位计算机上或在 WOW 中  
+ SQL 适配器只能在 32 位计算机上或在 64 位计算机上在 WOW64 仿真器下运行。 因此，BatchControlMessageRecvLoc 接收位置，这由安装程序安装和使用 SQL 适配器，将只能在 32 位计算机上或在 WOW 下运行在 64 位计算机上时。 此接收位置是批处理所必需的。  
   
- 如果在 64 位计算机上的 WOW 下运行 BatchControlMessageRecvLoc 接收位置，则应在其他主机中运行批处理业务流程。 如果运行批处理业务流程的主机与运行接收位置的主机相同，则该批处理业务流程也将在 WOW 下运行，这样您将失去在 64 位计算机上运行所具有的优势。  
+ 当运行 BatchControlMessageRecvLoc 接收位置在 WOW 64 位计算机上的时，您应该在另一台主机运行批处理业务流程。 如果接收位置的同一主机上运行，批处理业务流程也将在 WOW 下运行，您可能会丢失在 64 位计算机上运行的好处。  
   
-## <a name="a-batch-can-be-picked-up-by-an-unintended-send-port"></a>意外发送端口可以提取批处理  
- 时批处理业务流程发布交换，它将升级两个属性： ToBeBatched = False 和 DestinationPartyName = \< *PartyName*\>。 订阅以上任意一个或两个属性的发送端口都可以提取这些批处理交换。 请确保配置发送端口的筛选器，使该发送端口仅提取应提取的批处理交换。  
+## <a name="a-batch-can-be-picked-up-by-an-unintended-send-port"></a>批处理可以拾取意外发送端口  
+ 当批处理业务流程发布交换时，它将升级两个属性：ToBeBatched = False 和 DestinationPartyName = \< *PartyName*\>。 订阅到一个或两个这些属性的发送端口可以提取这些批处理交换。 请确保发送端口的筛选器的配置，以便发送端口将提取的批处理交换，它应提取。  
   
-## <a name="a-batch-element-count-greater-than-the-required-number-of-transaction-sets-for-a-batch-may-not-prompt-batch-release"></a>批元素计数大于批处理所需的事务集数目时可能不会提示批处理的发布  
- 如果批处理的发布条件基于每组或每个交换的事务集数目，即使批元素计数大于发布批处理所需的事务集数目，也可能不会发布此批处理。 当启用确认并将批处理筛选条件设置为向批处理添加此确认时，则可能出现此问题。 在这种情况下，组（或交换）中的批元素数目将大于每组（或交换）的事务集数目。 在上述情况中，如果每组（或每个交换）的事务集数目小于发布批处理所需的数目，则不会发布批处理；但同时，批元素数目可能大于发布批处理所需的事务集数目。  
+## <a name="a-batch-element-count-greater-than-the-required-number-of-transaction-sets-for-a-batch-may-not-prompt-batch-release"></a>批元素计数大于所需数量的批处理的事务集可能不会提示批处理发布  
+ 如果批处理发布条件基于每个组或交换的事务集数目，即使批元素计数大于发布批处理所需的事务集数目，可能不会发布一批。 如果你启用确认，并设置筛选条件以将这些确认添加到批处理的批处理，则可以发生这种情况。 在本例中，组 （或交换） 中的批元素数目将大于每组 （或交换） 的事务集数目。 在此情况下，批处理不会释放如果每个组 （或交换） 的事务集数目小于所需的批处理发布数，但在同一时间的批元素数目可能会大于的事务集数目所需的批处理发布。  
   
-## <a name="no-batch-elements-were-saved-when-start-was-clicked"></a>单击“开始”后未保存任何批元素  
+## <a name="no-batch-elements-were-saved-when-start-was-clicked"></a>单击开始了未不保存任何批处理元素  
  **症状**  
   
  当**启动**单击了在参与方批处理页中，已收集任何消息批处理。  
@@ -68,29 +68,29 @@ ms.locfileid: "36997166"
   
  **解决方法**  
   
- 单击**停止**中遇到此问题的批处理配置批处理页。 设置**激活**至任一**立即启动**或早于当前时间中，输入日期时间，然后单击**启动**。 当提示重置**启动**日期时间为当前时间中，单击**确定**。 此时 BizTalk Server 将开始为批处理收集消息。  
+ 单击**停止**中遇到此问题的批处理配置批处理页。 设置**激活**至任一**立即启动**或早于当前时间中，输入日期时间，然后单击**启动**。 当提示重置**启动**日期时间为当前时间中，单击**确定**。 BizTalk Server 将开始在该点收集的一批消息。  
   
 ## <a name="the-number-of-bytes-in-an-edifact-batch-may-depend-upon-the-character-set-used"></a>EDIFACT 批处理中的字节数可能取决于使用的字符集  
- 一些字符在某些 EDIFACT 字符集中可能是双字节字符，而在其他 EDIFACT 字符集中则可能是单字节字符。 鉴于以上原因，在您根据交换中的字符数设置批的发布条件时，相应交换中的字节数可能会因使用的字符集而不同。  
+ 在某些 EDIFACT 字符集中的字符可能是双字节字符，而在其他 EDIFACT 字符集，它们可能是单字节字符。 因此，设置基于该交换中的字符数的批发布条件时的交换中的字节数可能会因使用的字符集。  
   
-## <a name="the-characters--and--must-be-represented-in-their-encoded-form-in-the-envelope-of-a-batch"></a>在批处理的信封中，必须以编码形式表示字符“<”和“&”  
+## <a name="the-characters--and--must-be-represented-in-their-encoded-form-in-the-envelope-of-a-batch"></a>字符"<"和"&"，必须以编码形式一批的信封中表示  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 不支持以下字符以其文本的形式创建一个批处理 EDI 交换的信封字段时:"<"和"&"。  
   
- 如果在传出批处理交换的信封字段中按原义使用上述任一字符，当 EdiSend 管道用于序列化交换时可能会导致消息挂起。  
+ 传出的批处理交换的信封字段中按原义使用任一字符将导致挂起消息，如果 EdiSend 管道用于序列化交换。  
   
- 如果需要在批处理的信封字段中使用上述字符之一，以 BizTalk 管理员身份配置信封字段时，您可以使用下表中已编码的相应值：  
+ 如果需要在一批的信封字段中使用下列字符之一，可以在 BizTalk 管理器中配置信封字段时在下表中使用编码的相应值：  
   
 |字符|编码|  
 |---------------|--------------|  
 |<|&lt;|  
 |&|&amp;|  
   
- 如果使用上述编码格式之一，当 BizTalk Server 验证字段是否满足在 BizTalk Server 管理控制台的合作伙伴协议管理器 (PAM) 屏幕中的长度限制时，以该编码格式表示的每个字符都将计为一个单独字符。 例如，即使编码"&lt;"只表示单个字符"\<"在批处理 EDI 交换，BizTalk Server 会将此字符计为四个字符根据特定字段的长度限制进行验证时. 此问题仅适用于 PAM，而不适用于 EDI 组装器。  
+ 当 BizTalk Server 验证字段的长度限制在 BizTalk Server 中的合作伙伴协议管理器 (PAM) 屏幕中，以该编码格式的每个字符当你使用上述编码格式之一时，计为单个字符管理控制台。 例如，即使编码"&lt;"只表示单个字符"\<"在批处理 EDI 交换，BizTalk Server 会将此字符计为四个字符根据特定字段的长度限制进行验证时. 这仅适用于 PAM 问题不是 EDI 组装器。  
   
-## <a name="an-exeption-occurs-during-the-execution-of-the-upgrade-batch-orchestration"></a>执行升级批处理业务流程期间出现异常  
+## <a name="an-exeption-occurs-during-the-execution-of-the-upgrade-batch-orchestration"></a>在执行升级批处理业务流程期间出现异常  
  **症状**  
   
- 当使用在传入文档中设置 EDI.DestinationPartyId 属性的自定义管道组件时，您可能会接收到应用程序事件日志中的错误，指出执行升级批处理业务流程期间发生了异常。  
+ 使用自定义管道组件时，用于设置 EDI。在传入文档的 DestinationPartyId 属性，可能会收到异常发生在升级批处理业务流程的执行过程中应用程序事件日志指出的错误。  
   
  **可能的原因**  
   
@@ -98,7 +98,7 @@ ms.locfileid: "36997166"
   
  **解决方法**  
   
- 升级批处理业务流程使用 EDI.DestinationPartyId 来查找参与方名称。 该业务流程将构造一个使用参与方名称，EDI 的字符串。EncodingType 和字符串"Default"，然后查找具有匹配的批名称的批处理配置。 如果任何批配置不存在具有此名称，应用程序事件日志记录此错误并挂起业务流程实例。  
+ 升级批处理业务流程使用 EDI。若要查找的参与方名称的 DestinationPartyId。 该业务流程将构造一个使用参与方名称，EDI 的字符串。EncodingType 和字符串"Default"，然后查找具有匹配的批名称的批处理配置。 如果任何批配置不存在具有此名称，应用程序事件日志记录此错误并挂起业务流程实例。  
   
 > [!NOTE]
 >  例如，如果参与方名称为 Contoso 和 EDI。EncodingType 是 X12，业务流程将查找名为 ContosoX12Default 的批处理。  
@@ -112,7 +112,7 @@ ms.locfileid: "36997166"
   
  **可能的原因**  
   
- 在以前版本的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]时应处理一条消息，则会将 EDI 设置的多个批处理配置。DestinationParties 属性设置为一个空格分隔参与方 Id 的列表。 路由业务流程订阅具有 EDI.ToBeBatched = True 和 EDI.DestinationParties 属性的消息，会使用包含在 EDI.DestinationParties 属性中的参与方 ID 列表为每个 ID 创建消息，然后将消息传递到批处理业务流程。  确定使用参与方的批 ID 使用，因为每个参与方配置可能只有一个批配置。  
+ 在以前版本的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]时应处理一条消息，则会将 EDI 设置的多个批处理配置。DestinationParties 属性设置为一个空格分隔参与方 Id 的列表。 路由业务流程订阅具有 EDI 消息。ToBeBatched = True，并且 EDI。DestinationParties 属性，并将使用包含在 EDI 的参与方 id 列表。要为每个 ID，创建一条消息并将消息传递到批处理业务流程的 DestinationParties 属性。  确定使用参与方的批 ID 使用，因为每个参与方配置可能只有一个批配置。  
   
  在 BizTalk Server 中，每个参与方可以有多个批配置，因此已不再够用，仅显示参与方 ID 用于确定要使用的批处理配置。  若要指示必须通过多个批处理配置处理消息，消息必须具有 EDI。BatchIDs 属性设置为一个空格分隔批 Id 应将消息发送到的列表。  
   
@@ -121,13 +121,13 @@ ms.locfileid: "36997166"
   
  **解决方法**  
   
- 升级自定义管道组件，以便其设置 EDI.BatchIDs 属性，而非 EDI.DestinationParties。  每个参与方，可以在 EDI 属性批处理设置页上找到特定批的批 ID。  
+ 升级自定义管道组件，以便设置 EDI。而不是 EDI BatchIDs 属性。DestinationParties。  每个参与方，可以在 EDI 属性批处理设置页上找到特定批的批 ID。  
   
 > [!NOTE]
 >  如果 BatchMarker 管道组件使用的消息进行批处理标记不会出现此问题。  
   
 ## <a name="batch-filter-refresh-timeout-is-hardcoded-to-fifteen-minutes"></a>批处理筛选器刷新超时是硬编码为 15 分钟  
- 在修改时批处理筛选条件，它将需要 15 分钟才能使更改生效。 此刷新时间间隔不能修改。 若要使筛选器立即生效，请重新启动 BizTalk Server 主机进程。  
+ 在修改时批处理筛选条件，它将需要 15 分钟才能使更改生效。 无法修改此刷新时间间隔。 如果希望筛选器会立即生效，请重新启动 BizTalk Server 主机进程。  
   
 ## <a name="the-routingorchestration-suspends-after-reporting-an-uncaught-exception"></a>报告未捕获的异常后挂起 RoutingOrchestration  
  **现象**  
@@ -154,11 +154,11 @@ ms.locfileid: "36997166"
  在启动批处理时创建的批处理业务流程实例是一个长时间运行的过程，在释放一批后保存到数据库。 业务流程仍然存在，每次事务日志增长将由于事务参与持久性。  
   
 > [!NOTE]
->  在暂留过程中，批处理业务流程会将事务日志增大约 30kb。  
+>  在持久化期间，批处理业务流程将通过约 30kb 扩大事务日志。  
   
  **解决方法**  
   
- 若要解决此问题，请将发行条件修改为增加批处理发布之间的时间。 有关详细信息，请参阅[配置批处理 (X12)](../core/configuring-batching-x12.md)。  
+ 若要解决此问题，请修改释放条件，以便增加批处理发布之间的时间。 有关详细信息，请参阅[配置批处理 (X12)](../core/configuring-batching-x12.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [配置 EDI 确认](../core/configuring-edi-acknowledgments.md)   

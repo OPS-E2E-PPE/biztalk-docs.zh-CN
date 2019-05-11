@@ -12,17 +12,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5534eb63d7b9586017d77ffd84606a842f12a48d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a95a56da0d30ec0f30c556dcab01b3789f3e1fb0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002892"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65336271"
 ---
 # <a name="how-to-map-single-sign-on-credentials"></a>如何将单一登录凭据的映射
-在企业单一登录数据库中已具有关联应用程序之后，即可将用户的凭据映射到该应用程序。 将当前用户的凭据映射到关联应用程序需要您使用的组合`ISSOMapper`和`ISSOMapping`接口。  
+当您知道，在企业单一登录数据库中已具有关联应用程序时，可以将用户的凭据映射到该应用程序。 将当前用户的凭据映射到关联应用程序需要您使用的组合`ISSOMapper`和`ISSOMapping`接口。  
   
-### <a name="to-map-between-an-affiliated-application-and-user-credentials"></a>在关联应用程序与用户凭据之间建立映射  
+### <a name="to-map-between-an-affiliated-application-and-user-credentials"></a>关联应用程序和用户凭据之间进行映射  
   
 1. 创建的新实例`ISSOMapper`和`ISSOMapping`。  
   
@@ -30,7 +30,7 @@ ms.locfileid: "37002892"
   
     相关属性`ISSOMapping`是用户的 Microsoft Windows 域名、 Windows 用户名称、 关联应用程序的名称和外部用户名称。  
   
-3. 通过调用 ISSOMapping.Create 来创建该映射。  
+3. 通过调用 ISSOMapping.Create 创建映射。  
   
     调用`ISSOMapping.Create`传播映射到企业单一登录服务器的本地副本。  
   
@@ -38,7 +38,7 @@ ms.locfileid: "37002892"
   
 5. 启用通过调用映射`ISSOMapping.Enable`。  
   
-   以下示例显示了如何在指定的企业单一登录应用程序与用户之间添加映射：  
+   下面的示例演示如何将添加一个指定的企业单一登录应用程序和用户之间的映射。  
   
 ```  
 public static bool AddMapping(string application, string user, string XU, string XP)  

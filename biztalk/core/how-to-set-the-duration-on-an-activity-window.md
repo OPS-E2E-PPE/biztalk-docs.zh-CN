@@ -16,21 +16,21 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b9c0e1fc3ab23559fee0d0cb0d042f457f82a05f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4c7bab9fe9c5969bf4f5d277b83b63f751e6afc9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023547"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334228"
 ---
 # <a name="how-to-set-the-duration-on-an-activity-window"></a>如何设置活动时段的持续时间
 管理员使用**集 activitywindow**命令以设置指定活动的持续时间。  
   
-### <a name="to-set-the-duration-on-an-activity"></a>设置活动的持续时间  
+### <a name="to-set-the-duration-on-an-activity"></a>若要在活动上设置的持续时间  
   
-1. 按如下所示打开命令提示符： 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
+1. 打开命令提示符，如下所示：单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2. 通过在命令提示符处键入 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking，导航到跟踪文件夹。 按 **Enter**。  
+2. 通过键入导航到跟踪文件夹[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]跟踪在命令提示符处。 按 **Enter**。  
   
 3. 类型**bm 集 activitywindow-活动：\<活动名称\>-TimeLength:\<整数\>-时间单位： 月&#124;天&#124;小时&#124;分钟**。  
   

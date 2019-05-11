@@ -16,21 +16,21 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aaafdf9515849fb84d569fb50a3e7117f30969b3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: db57ce24952c1a1987a61aabcbe24e706a2b63e8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978326"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385335"
 ---
 # <a name="how-to-delete-an-index"></a>如何删除索引
 管理员使用**删除索引**命令以删除指定的活动在指定检查点的索引。  
   
 ### <a name="to-delete-an-index-on-an-activity"></a>若要删除活动的索引  
   
-1. 按如下所示打开命令提示符： 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
+1. 打开命令提示符，如下所示：单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2. 通过在命令提示符处键入 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking，导航到跟踪文件夹。 按 **Enter**。  
+2. 通过键入导航到跟踪文件夹[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]跟踪在命令提示符处。 按 **Enter**。  
   
 3. 类型**bm 删除索引-IndexName:\<索引名称\>的活动：\<活动名称\>**。  
   

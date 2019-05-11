@@ -12,50 +12,50 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c24cd9c34fef3c7d984874cc72da13030b167d0f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dc82981f142fa70ebdc852ae6629f6ffc2bb1208
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994094"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65336966"
 ---
 # <a name="how-to-install-the-certificates-for-encrypted-messages"></a>如何为加密消息安装证书
-下面的过程列出了安装证书以便接收和发送加密消息所需遵守的高级步骤。  
+以下过程列出了您必须按照安装证书以便接收和发送加密的消息的高级步骤。  
   
--   在证书存储中安装证书以进行解密  
+-   若要解密的证书存储区中安装证书  
   
--   在证书存储中安装证书以进行加密  
+-   若要加密的证书存储中安装证书  
   
--   配置 BizTalk 主机以便接收加密消息  
+-   若要配置 BizTalk 主机以便接收加密的消息  
   
 > [!NOTE]
->  可以使用一个证书同时执行签名和加密操作，也可以对于每种功能使用一个证书。  
+>  你可以使用一个证书签名和加密操作，或可以为每个函数使用一个证书。  
   
-### <a name="to-install-the-decryption-certificates-in-the-certificates-store"></a>在证书存储中安装解密证书  
+### <a name="to-install-the-decryption-certificates-in-the-certificates-store"></a>若要在证书存储中安装解密证书  
   
-1. 组织中的管理员从证书颁发机构 (CA) 请求用于加密的私钥/公钥对以供 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用。  
+1. 你的组织中的管理员请求用于从证书颁发机构 (CA) 加密的私钥 / 公钥对[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用。  
   
-2. 管理员向合作伙伴 A 发送用于加密的公钥。  
+2. 管理员将加密的公钥发送给合作伙伴 a。  
   
-3. 在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中，使用主机实例（该主机实例运行将从合作伙伴 A 接收消息的处理程序）的服务帐户登录。在服务帐户的个人存储中安装用于解密消息的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 私钥证书。 下图显示您安装证书的证书存储。  
+3. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，运行该处理程序的主机实例的服务帐户将从合作伙伴 A.安装接收消息的身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]私钥证书用于解密消息的服务帐户的个人存储中。 下图显示了你在其中安装证书的证书存储区。  
   
     ![若要接收安全消息所需证书](../core/media/bpi-sp-msgsec-certmgmt-certstores-receive.gif "BPI_SP_MSGSEC_CertMgmt_CertStores_Receive")  
   
-4. 在合作伙伴 A 中，在适当的存储中安装 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 公钥证书，以便对发送到合作伙伴 A 的消息进行加密。 （如果合作伙伴 A 使用 [!INCLUDE[btsWin2kSvr](../includes/btswin2ksvr-md.md)]  [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]、 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]，请安装“其他人”存储区中的公钥）。  
+4. 在合作伙伴 A 中，安装[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]公钥证书以加密消息发送到合作伙伴 A 在适当的存储中。 (如果合作伙伴 A 使用[!INCLUDE[btsWin2kSvr](../includes/btswin2ksvr-md.md)]， [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]， [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]，其他人存储中安装公钥。)  
   
-### <a name="to-install-the-encryption-certificates-in-the-certificates-store"></a>在证书存储中安装加密证书  
+### <a name="to-install-the-encryption-certificates-in-the-certificates-store"></a>若要安装的证书存储中的加密证书  
   
-1. 合作伙伴 A 从 CA 请求用于加密的私钥/公钥对。  
+1. 合作伙伴 A 从 CA 请求用于加密的私钥 / 公钥对。  
   
-2. 合作伙伴 A 在适当存储中安装私钥证书，以用于解密消息。 （如果合作伙伴 A 使用 [!INCLUDE[btsWin2kSvr](../includes/btswin2ksvr-md.md)]、[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]、[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]，请安装个人证书存储中的私钥）。  
+2. 合作伙伴 A 中安装私钥证书用于解密在适当的存储中的消息。 (如果合作伙伴 A 使用[!INCLUDE[btsWin2kSvr](../includes/btswin2ksvr-md.md)]， [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]， [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]，个人证书存储中安装私钥。)  
   
-3. 合作伙伴 A 向您发送它的公钥，将使用该公钥对发送到合作伙伴 A 的消息进行加密。  
+3. 合作伙伴 A 向您发送其公钥用于加密消息发送到合作伙伴 a。  
   
-4. 在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中，登录到具有主机实例（该主机实例运行将消息发送到合作伙伴 A 的处理程序）的服务器上。在“其他人”存储中安装合作伙伴 A 的公钥证书，以便对发送至合作伙伴 A 的消息进行加密。 下图显示您安装证书的证书存储。  
+4. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，登录到具有主机实例运行将消息发送到合作伙伴 A.安装合作伙伴 A 的公钥证书用于加密发送到合作伙伴 A 在其他人存储中的消息的处理程序的服务器。 下图显示了你在其中安装证书的证书存储区。  
   
     ![若要发送安全消息所需证书](../core/media/bpi-sp-msgsec-certmgmt-certstores-send.gif "BPI_SP_MSGSEC_CertMgmt_CertStores_Send")  
   
-### <a name="to-configure-biztalk-hosts-for-receiving-encrypted-messages"></a>配置 BizTalk 主机以便接收加密消息  
+### <a name="to-configure-biztalk-hosts-for-receiving-encrypted-messages"></a>若要配置 BizTalk 主机以便接收加密的消息  
   
 1. 单击**启动**，依次指向**所有程序**，指向[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   

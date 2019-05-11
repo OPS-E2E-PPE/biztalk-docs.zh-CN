@@ -17,15 +17,15 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4bc4226b0e8f3ea5ac025f0bb7234559a52104e7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a27a220e649b513ba70d3934bc0c74b71b865bea
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967206"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65337341"
 ---
-# <a name="how-to-handle-typed-fault-contracts-in-orchestrations"></a>如何在业务流程中处理类型化错误协定
-本主题介绍从业务流程内部使用 WCF 服务时应如何处理类型化错误协定。 若要处理业务流程中的类型化的错误异常，您正在使用的 WCF 服务必须具有**FaultContractAttribute**应用于服务操作; 因此，可以通过引发错误**FaultException**\<T\>其中 T 可以是任何有效的数据协定或可序列化类型从 WCF 服务。  
+# <a name="how-to-handle-typed-fault-contracts-in-orchestrations"></a>如何处理业务流程中的类型化的错误协定
+本主题介绍如何使用从业务流程中的 WCF 服务时处理类型化的错误协定。 若要处理业务流程中的类型化的错误异常，您正在使用的 WCF 服务必须具有**FaultContractAttribute**应用于服务操作; 因此，可以通过引发错误**FaultException**\<T\>其中 T 可以是任何有效的数据协定或可序列化类型从 WCF 服务。  
   
 ## <a name="procedures"></a>过程  
   
@@ -45,7 +45,7 @@ ms.locfileid: "36967206"
   
 7. 上**完成 BizTalk WCF 服务使用向导**页上，单击**完成**。  
   
-8. 假设您正在使用的 WCF 服务引发以下错误异常：  
+8. 假设您正在使用的 WCF 服务将引发以下错误异常：  
   
    ```  
    throw new FaultException<MyOperationException>(divideException);  
@@ -55,7 +55,7 @@ ms.locfileid: "36967206"
   
    -   选择**路径-按正文路径定位内容**。  
   
-   -   设置正文路径表达式，如下所示：  
+   -   设置正文路径表达式所示：  
   
        ```  
        /*[local-name()='Fault']/*[local-name()='Detail']/* | /*[local-name()='DivideResponse']  
@@ -63,7 +63,7 @@ ms.locfileid: "36967206"
   
    -   选择**Xml**从**节点编码**下拉列表。  
   
-9. 在业务流程中，您需要添加一个作用域和两个异常处理程序。 一个异常处理程序用于错误操作，类似于**MyOperationException**显示在前面的示例; 其他异常处理程序用于捕捉一般**SOAPExceptions**。  
+9. 在业务流程，需要将添加一个作用域和两个异常处理程序。 一个异常处理程序用于错误操作，类似于**MyOperationException**显示在前面的示例; 其他异常处理程序用于捕捉一般**SOAPExceptions**。  
   
 ## <a name="see-also"></a>请参阅  
  [如何从发布为 WCF 服务的业务流程引发错误异常](../core/how-to-throw-fault-exceptions-from-orchestrations-published-as-wcf-services.md)   

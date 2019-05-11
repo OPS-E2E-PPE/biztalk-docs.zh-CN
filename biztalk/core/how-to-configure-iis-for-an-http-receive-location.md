@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cfc616fa9834071c2ee8d2b4d63f486ff0abbeab
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 538e935a26f72d972340b8793b4b62cc942f5e9b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004817"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65386271"
 ---
 # <a name="configure-iis-for-an-http-receive-location"></a>为 HTTP 接收位置配置 IIS
 HTTP 接收位置使用的应用程序在 Internet 信息服务 (IIS)。 本主题列出了步骤后，若要启用 HTTP 接收位置在 IIS 中。 
@@ -29,8 +29,8 @@ HTTP 接收位置使用的应用程序在 Internet 信息服务 (IIS)。 本主�
 
 HTTP 接收位置使用 BTSHTTPReceive.dll。 没有 32 位和 64 位版本的 dll。 选择你想要使用哪个的版本。 64 位进程有更多可用内存，因此如果处理更大的消息，则可能是最佳选择 64 位版本。 
 
-**32 位安装位置**: *Program Files (x86) \Microsoft BizTalk Server\HttpReceive*。
-**64 位安装位置**: *Program Files (x86) \Microsoft BizTalk Server\HttpReceive64*
+**32 位安装位置**:*Program Files (x86)\Microsoft BizTalk Server\HttpReceive*.
+**64 位安装位置**:*Program Files (x86)\Microsoft BizTalk Server\HttpReceive64*
 
 若要运行 64 位版本的 HTTP 接收适配器在 64 位本机模式下，打开命令提示符，并执行以下脚本：  
 
@@ -39,7 +39,7 @@ HTTP 接收位置使用 BTSHTTPReceive.dll。 没有 32 位和 64 位版本的 d
 2. 类型： `C:\WINDOWS\Microsoft.NET\Framework64\vX.X.XXXXX>aspnet_regiis.exe -i`  
   
 > [!NOTE]
->  任何会导致 SOAP 与 HTTP 共享同一进程的 IIS 配置都是无效的。 对于每个进程，只能有一个独立的接收器。  
+>  会导致 SOAP 与 HTTP 共享同一进程的任何 IIS 配置不是有效的。 您可以每个进程只有一个独立的接收器。  
   
 ##  <a name="configure-the-iis-application"></a>配置 IIS 应用程序
   
@@ -71,14 +71,14 @@ HTTP 接收位置使用 BTSHTTPReceive.dll。 没有 32 位和 64 位版本的 d
   
 7. 选择新的应用程序池，并打开**高级设置**(**操作**窗格)。 在此窗口中：
 
-    - **启用 32 位应用程序**： 设置为**True**如果选择了 32 位**BtsHttpReceive.dll**
-    - **处理模型**部分中，**标识**： 选择省略号 (**...**)，选择**自定义帐户**，然后**设置**到该帐户是属于**BizTalk Isolated Host Users**和**IIS_WPG**组。 选择“确定”。 
+    - **启用 32 位应用程序**:设置为 **，则返回 True**如果你选择了 32 位**BtsHttpReceive.dll**
+    - **处理模型**部分中，**标识**:选择省略号 (**...**)，选择**自定义帐户**，然后**设置**到该帐户是属于**BizTalk Isolated Host Users**和**IIS_WPG**组。 选择 **确定**。 
   
 8. 添加新的应用程序的 web 站点 (右键单击**Default Web Site**，选择**添加应用程序**)。 在此窗口中：
   
-   1. **别名**： 输入与应用程序关联的别名 (如`BTS HTTP Receive`，然后**选择**。  
+   1. **别名**:输入将与应用程序关联的别名 (如`BTS HTTP Receive`，然后**选择**。  
    2. 选择您刚的新应用程序池创建，并选择**确定**。  
-   3. **物理路径**： 选择省略号 (**...**)，并浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\HttpReceive。  
+   3. **物理路径**:选择省略号 (**...**)，并浏览到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\HttpReceive。  
    4. **测试设置**以验证是否在没有错误**测试连接**对话框。 **关闭**，然后选择**确定**。  
   
       > [!TIP]

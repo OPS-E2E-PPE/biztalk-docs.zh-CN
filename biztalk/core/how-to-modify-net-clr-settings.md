@@ -14,20 +14,20 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: afe3d54aa508d45211277377c2f2d8880c37044d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 512907afe143b92af3eafea2156efd42d97f4f75
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015150"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384606"
 ---
-# <a name="how-to-modify-net-clr-settings"></a>如何修改 .NET CLR 设置
-若要更新与 BizTalk 主机的实例相关联的 .NET 线程池中可用的 Windows 线程数，可以使用“BizTalk 设置仪表板”修改相应的公共语言运行时 (CLR) Hosting 值。 本主题提供了修改这些设置的分步过程。  
+# <a name="how-to-modify-net-clr-settings"></a>如何修改.NET CLR 设置
+若要更新的 Windows 中的 BizTalk 主机实例相关联的.NET 线程池可用线程数，可以修改相应的公共运行时语言 (CLR) Hosting 值使用 BizTalk 设置仪表板。 本主题提供了修改这些设置的分步过程。  
 
-## <a name="prerequisites"></a>必要條件  
- 若要执行此操作，则必须以 BizTalk Server Administrators 组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 若要执行此操作，必须以 BizTalk Server Administrators 组的成员的身份登录。  
 
-### <a name="to-modify-the-net-clr-settings-of-a-host-instance"></a>修改主机实例的 .NET CLR 设置  
+### <a name="to-modify-the-net-clr-settings-of-a-host-instance"></a>若要修改的主机实例的.NET CLR 设置  
 
 1. 在中**BizTalk Server 管理控制台**，展开[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，右键单击**BizTalk 组**，然后单击**设置**。  
 
@@ -38,18 +38,18 @@ ms.locfileid: "37015150"
 
    |     使用此选项      |                                                                                执行的操作                                                                                | 边界值 | 默认值 | 升级逻辑 |
    |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|---------------|---------------|
-   | **主机实例** | 从下拉框中，在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 运行时计算机上选择正在运行的主机实例。 |        -        |       -       |       -       |
+   | **主机实例** | 从下拉列表框中，选择正在运行的主机实例上[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]运行时计算机。 |        -        |       -       |       -       |
 
     **线程设置**  
 
    |使用此选项|执行的操作|边界值|默认值|升级逻辑|  
    |--------------|----------------|---------------------|-------------------|-------------------|  
-   |**最大值。工作线程数**|指定 .NET CLR 工作线程的最大数量。|[最小工作线程，500]|25|将主机实例注册表设置迁移到主机实例设置，忽略 Version、Flavor、Flags 和 MinCompletionPortThreads。|  
-   |**最小工作线程**|指定 .NET CLR 工作线程的最小数量。|[0, 500]|5|将主机实例注册表设置迁移到主机实例设置，忽略 Version、Flavor、Flags 和 MinCompletionPortThreads。|  
-   |**最大值。IO 线程数**|指定 IO 线程的最大数量。|[最小 IO 线程，1000]|250|将主机实例注册表设置迁移到主机实例设置，忽略 Version、Flavor、Flags 和 MinCompletionPortThreads。|  
-   |**最小值。IO 线程数**|指定 IO 线程的最小数量。|[0, 1000]|25|将主机实例注册表设置迁移到主机实例设置，忽略 Version、Flavor、Flags 和 MinCompletionPortThreads。|  
+   |**最大值。工作线程数**|指定的最大.NET CLR 工作线程数。|[最小工作线程，500]|25|迁移主机实例注册表设置以主机实例设置，忽略 Version、 Flavor、 标志和 MinCompletionPortThreads。|  
+   |**最小工作线程**|指定的最小.NET CLR 工作线程数。|[0, 500]|5|迁移主机实例注册表设置以主机实例设置，忽略 Version、 Flavor、 标志和 MinCompletionPortThreads。|  
+   |**最大值。IO 线程数**|指定的最大 IO 线程数。|[最小 IO 线程，1000年]|250|迁移主机实例注册表设置以主机实例设置，忽略 Version、 Flavor、 标志和 MinCompletionPortThreads。|  
+   |**最小值。IO 线程数**|指定的最小 IO 线程数。|[0, 1000]|25|迁移主机实例注册表设置以主机实例设置，忽略 Version、 Flavor、 标志和 MinCompletionPortThreads。|  
 
-    .NET CLR 设置因 CPU 核心而异。  
+    .NET CLR 设置因每个核 CPU。  
 
    > [!NOTE]
    >  若要还原默认设置，请单击**还原为默认值**。  

@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5be14cff11021ac1a50116ee2e7784223724f675
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b2dd4c5b2264c5f9ace89b206f2e948083a606b2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023779"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292743"
 ---
 # <a name="unable-to-import-configuration"></a>无法导入配置
 ## <a name="details"></a>详细信息  
@@ -33,21 +33,21 @@ ms.locfileid: "37023779"
 |  消息正文   |                   无法从文件导入配置"{0}"                   |
   
 ## <a name="explanation"></a>解释  
- 此错误可能由多个原因所致：  
+ 可能有多个导致此错误的原因：  
   
--   配置文件可能在给定编码中包含无效字符。  
+-   配置文件可能包含给定编码中的无效字符。  
   
--   根元素可能丢失。  
+-   可能缺少根元素。  
   
 -   根级别的数据可能无效。  
   
 > [!NOTE]
->  在这种情况下，用户操作仅适用于 WCF-Custom 和 WCF-CustomIsolate 适配器。  
+>  这种情况下，用户执行任何操作，仅适用于 Wcf-custom 和 Wcf-customisolate 适配器。  
   
 ## <a name="user-action"></a>用户操作  
  使用以下过程导入有效的配置文件。  
   
-#### <a name="to-import-a-valid-configuration-file"></a>导入有效的配置文件  
+#### <a name="to-import-a-valid-configuration-file"></a>若要导入有效的配置文件  
   
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   

@@ -17,52 +17,52 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 96a8cd43f80e9bf6ef7b5a2628f276aa7ef6829c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 84490c48cc4f43f226cc65d4baa90ce7bca347f1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013094"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65322252"
 ---
-# <a name="orderedsample-biztalk-server-sample"></a>OrderedSample（BizTalk Server 示例）
-OrderedSample 示例演示如何使用业务流程以往返过程方式接收和发送一系列有序消息。  
+# <a name="orderedsample-biztalk-server-sample"></a>OrderedSample （BizTalk Server 示例）
+OrderedSample 示例演示如何使用业务流程接收和发送往返过程方式中的一系列有序的消息。  
   
 ## <a name="what-this-sample-does"></a>本示例的用途  
- 本示例假设发送消息的 MQSeries 队列中存在消息。 当适配器读取来自 MQSeries 队列的消息时，适配器将按顺序读取消息，并将其提交给 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
+ 该示例假定它从中接收消息的 MQSeries 队列中有消息。 当适配器读取来自 MQSeries 队列的消息时，它按顺序读取消息，并将其提交给[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
   
  在业务流程，接收端口**mqreceive**，具有其**按序送达**属性设置为**True**。  
   
- 对于发送端，业务流程将发送一个消息并等待传送通知，然后再发送下一个消息。 发送端口**mqsend**具有其**送达通知**属性设置为**传输**。 为了使此示例尽量简单，业务流程使用无限循环。  
+ 为发送方，业务流程发送一条消息，然后等待发送下一条消息之前送达通知。 发送端口**mqsend**具有其**送达通知**属性设置为**传输**。 若要简化该示例，该业务流程使用无限循环。  
   
- 业务流程可接收消息批和单个消息。  
+ 业务流程可以接收消息批和单个消息。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- *\<示例路径\>* \AdaptersUsage\MQSeriesAdapter\OrderedSample  
+ *\<Samples Path\>* \AdaptersUsage\MQSeriesAdapter\OrderedSample  
   
  下表显示了本示例中的文件及其用途说明：  
   
 |文件|Description|  
 |----------|-----------------|  
-|OrderedReceiveSend.btproj、<br /><br /> OrderedReceiveSend.sln|应用程序的项目和解决方案文件。|  
+|OrderedReceiveSend.btproj,<br /><br /> OrderedReceiveSend.sln|应用程序的项目和解决方案文件。|  
 |OrderedReceiveSendOrchestration.odx|应用程序的业务流程。|  
-|OrderedSample.snk|强命名密钥文件。|  
+|OrderedSample.snk|强名称密钥文件。|  
 |**Setup.bat**|生成并初始化本示例。|  
   
 ## <a name="building-and-running-the-sample"></a>构建和运行示例  
   
-#### <a name="to-build-and-deploy-the-sample"></a>生成和部署示例  
+#### <a name="to-build-and-deploy-the-sample"></a>若要生成并部署示例  
   
-1. 在命令窗口中，导航到下面的文件夹：  
+1. 在命令窗口中，导航到以下文件夹：  
   
     `<Samples Path>\AdaptersUsage\MQSeriesAdapter\OrderedSample`  
   
-2. 运行 Setup.bat 文件，该文件将执行以下操作：  
+2. 运行文件 Setup.bat，以执行以下操作：  
   
-   1.  为项目创建强名称密钥。  
+   1.  创建项目的强名称密钥。  
   
    2.  编译并部署业务流程项目。  
   
-   如果您具有安装 MQSeries Server for Windows 的必需权限，则可以通过适配器对话框创建 MQSeries 队列，并可以跳过下一过程。 如果您没有这样的访问权限，可以使用 IBM WebSphere MQ Explorer 来创建队列。 若要通过 WebSphere MQ Explorer 创建队列，请完成下列步骤。  
+   如果必须为 MQSeries Server for Windows 安装所需的权限，您可以创建 MQSeries 队列通过适配器对话框，并可以跳过下一步的过程。 如果还没有这样的访问权限，可以创建使用 IBM WebSphere MQ Explorer 的队列。 若要创建的队列通过 WebSphere MQ Explorer，请完成以下步骤。  
   
 ## <a name="creating-the-mqseries-queues-through-the-websphere-mq-explorer"></a>创建通过 WebSphere MQ Explorer MQSeries 队列  
   
@@ -81,7 +81,7 @@ OrderedSample 示例演示如何使用业务流程以往返过程方式接收和
 6.  在中**创建本地队列**对话框中**队列名称**，类型 **"queue2"**，然后单击**确定**。  
   
 ## <a name="creating-the-receive-location-and-the-mqseries-queue"></a>创建接收位置和 MQSeries 队列  
- 此过程将创建发送端口和接收位置，以便向 MQSeries 发送消息以及接收来自 MQSeries 的相关消息。 创建接收位置时，还将创建 MQSeries 队列（如果尚未创建）。  
+ 此过程创建发送端口和接收位置发送到消息并接收来自 MQSeries 的相关消息。 时创建的接收位置，如果不是已创建，也可创建 MQSeries 队列。  
   
 #### <a name="to-create-the-receive-location-and-the-mqseries-queue"></a>创建接收位置和 MQSeries 队列  
   
@@ -155,9 +155,9 @@ OrderedSample 示例演示如何使用业务流程以往返过程方式接收和
   
 2.  双击**OrderedSampleOrchestration**业务流程，并单击**绑定**。  
   
-3.  将业务流程端口绑定到下列发送端口和接收位置：  
+3.  将业务流程端口绑定到以下发送端口和接收位置：  
   
-    |业务流程端口|消息传送端口/接收位置|  
+    |业务流程端口|消息传送端口 / 接收位置|  
     |------------------------|----------------------------------------|  
     |mqreceive|OrderedSampleReceive|  
     |mqsend|OrderedSampleSend|  
@@ -168,13 +168,13 @@ OrderedSample 示例演示如何使用业务流程以往返过程方式接收和
   
 6.  右键单击**业务流程**然后单击**启动**。  
   
-#### <a name="to-run-the-sample"></a>运行示例  
+#### <a name="to-run-the-sample"></a>若要运行示例  
   
 1.  启动业务流程。  
   
-2.  将消息放置到 MQSeries 队列中，已将接收位置配置为从此队列进行读取。  
+2.  将消息放入已从其配置接收位置读取 MQSeries 队列。  
   
-3.  在 WebSphere MQ Explorer 中查看发送队列中的消息，已将发送端口配置为向此队列发送消息。  
+3.  已向其配置发送端口以发送消息的发送队列中在 WebSphere MQ Explorer 中查看的消息。  
   
 ## <a name="see-also"></a>请参阅  
  [MQSeries 适配器示例](../core/mqseries-adapter-samples.md)

@@ -1,5 +1,5 @@
 ---
-title: GetContextProperty2 |Microsoft 文档
+title: GetContextProperty2 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f834bf1271f6706c332123d8b1835e0bd730f069
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ec2f155b9fdb1cf79419531cc7ec2d3e8b87c791
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246141"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387703"
 ---
 # <a name="getcontextproperty"></a>GetContextProperty
-将请求的上下文属性推送到堆栈上。  
+将推送到堆栈上的请求的上下文属性。  
   
 ## <a name="syntax"></a>语法  
   
@@ -32,24 +32,24 @@ ms.locfileid: "22246141"
 ```  
   
 #### <a name="parameters"></a>Parameters  
- 下面的上下文属性名称之一：  
+ 以下上下文属性名称之一：  
   
 |上下文属性名称|Description|  
 |---------------------------|-----------------|  
 |EventTime|当前日期和时间。|  
-|InstanceId|工作流实例 ID。|  
+|InstanceId|工作流实例 id。|  
   
 > [!NOTE]
->  上下文属性名称区分大小写。  
+>  上下文属性名称不区分大小写。  
   
 ## <a name="pushed-value"></a>推送的值  
  包含请求的上下文属性的字符串。  
   
-## <a name="remarks"></a>注释  
- 时间以 UTC 格式存储在数据库中。  
+## <a name="remarks"></a>备注  
+ 时间是 UTC 格式存储在数据库内。  
   
 ## <a name="example"></a>示例  
- 在下面的示例中，一个表达式，以便拉取**InstanceId** correlationID 块内中用于设置相关 id。  
+ 在以下示例中，一个表达式，以便拉取**InstanceId**在 correlationID 块内部中用于设置关联 id。  
   
 ```  
 <ic:CorrelationID>  
@@ -61,4 +61,4 @@ ms.locfileid: "22246141"
 </ic:CorrelationID>  
 ```  
   
- 这是一种常用的`GetContextProperty`。
+ 这是常见用法的`GetContextProperty`。

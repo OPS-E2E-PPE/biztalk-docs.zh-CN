@@ -18,19 +18,19 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: be8fd01e67309387749e7e512eca84bdb0f83db1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6e3a31fab048a1f6d7c52416b7e02b634803c0eb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984790"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385743"
 ---
-# <a name="how-to-construct-a-web-message-part-from-a-schema-type"></a>如何从架构类型构造 Web 消息部分
-从架构类型中使用创建 Web 消息部分**转换**形状。 也可以通过使用 .NET 帮助程序类设置各个部分来从架构类型创建 Web 消息部分。 使用.NET 类创建消息类型的详细信息，请参阅[在用户代码中构造消息](../core/constructing-messages-in-user-code.md)。  
+# <a name="how-to-construct-a-web-message-part-from-a-schema-type"></a>如何构造 Web 消息部分从架构类型
+从架构类型中使用创建 Web 消息部分**转换**形状。 或者，可以通过使用.NET 帮助程序类设置各个部分来从架构类型创建 Web 消息部分。 使用.NET 类创建消息类型的详细信息，请参阅[在用户代码中构造消息](../core/constructing-messages-in-user-code.md)。  
   
-### <a name="to-construct-a-web-message-part-from-a-schema-type"></a>从架构类型构建 Web 消息部分  
+### <a name="to-construct-a-web-message-part-from-a-schema-type"></a>若要构造 Web 消息部分从架构类型  
   
-1. 添加一个新映射。 有关创建映射的信息，请参阅[如何创建新映射](../core/how-to-create-new-maps.md)。  
+1. 添加新的映射。 有关创建映射的信息，请参阅[如何创建新映射](../core/how-to-create-new-maps.md)。  
   
 2. 在 BizTalk 映射器中，单击**打开目标架构**中**目标架构**窗格的映射，并在**BizTalk 类型选取器**对话框中，展开**架构**节点中，选择添加的 Web 引用的架构，然后单击**确定**。  
   
@@ -41,7 +41,7 @@ ms.locfileid: "36984790"
   
 4. 单击**打开源架构**中**源架构**窗格的映射，并在**BizTalk 类型选取器**对话框中，展开**架构**节点中，选择要将数据从，映射的源架构，然后单击**确定**。  
   
-5. 在 BizTalk 映射器中，创建源架构和目标架构之间的链接。  
+5. 在 BizTalk 映射器中，将创建源架构和目标架构之间的链接。  
   
 6. 打开现有的业务流程 （或创建新的业务流程），打开**工具箱**，然后单击**BizTalk 业务流程**选项卡。  
   
@@ -59,7 +59,7 @@ ms.locfileid: "36984790"
   
     有关使用详细信息**转换配置**对话框中，请参阅[如何配置转换形状](../core/how-to-configure-the-transform-shape.md)。  
   
-    您也可以使用此过程将 Web 方法响应消息实例映射到其他 Web 消息实例。  
+    此过程还可用于将 Web 方法响应消息实例映射到另一个 Web 消息实例。  
   
 ## <a name="see-also"></a>请参阅  
  [构造 Web 消息](../core/constructing-web-messages.md)

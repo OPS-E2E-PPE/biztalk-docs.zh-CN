@@ -17,21 +17,21 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6893200c498fc387d9a1948d332db409cf3b4d61
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a4b69ccb37e1104f78515e2974fc9ff791b45c39
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992694"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385021"
 ---
 # <a name="how-to-get-the-duration-on-an-rta-window"></a>如何获取 RTA 时段的持续时间
-管理员使用**get rtawindow**命令来获取指定实时聚合 (RTA) 的持续时间。 该命令返回持续时间的长度和度量单位。  
+管理员使用**get rtawindow**命令来获取指定实时聚合 (RTA) 的持续时间。 该命令返回持续时间和持续时间单位所依据的单位的长度。  
   
-### <a name="to-get-the-duration-on-an-aggregation"></a>获取聚合的持续时间  
+### <a name="to-get-the-duration-on-an-aggregation"></a>若要获取聚合的持续时间  
   
-1. 按如下所示打开命令提示符： 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
+1. 打开命令提示符，如下所示：单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2. 导航到文件夹 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking。  
+2. 导航到的文件夹[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]跟踪。  
   
 3. 类型**bm get rtawindow 的视图：\<视图名称\>的活动：\<活动名称\>-Rta:\<RTA 名称\>**。  
   

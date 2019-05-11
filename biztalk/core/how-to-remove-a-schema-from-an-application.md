@@ -19,27 +19,27 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0693d94736c4ef3d8ad5ee561ed6b42650c90ab3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1c6af6da4606b8a6138bfbed257ac71b492293b4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985430"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384347"
 ---
 # <a name="how-to-remove-a-schema-from-an-application"></a>如何从应用程序中删除架构
-本主题介绍如何使用 BizTalk Server 管理控制台从应用程序中删除架构。 此过程也可以从 BizTalk 管理数据库中删除针对组的架构。 您可能要在部署某一架构的新版本后删除该架构。 有关详细信息和更新应用程序项目的重要注意事项，请参阅[更新 BizTalk 应用程序](../core/updating-biztalk-applications.md)。  
+本主题介绍如何使用 BizTalk Server 管理控制台从应用程序中删除架构。 此过程从组以及 BizTalk 管理数据库中删除架构。 您可能想要部署新架构版本后删除架构。 有关详细信息和更新应用程序项目的重要注意事项，请参阅[更新 BizTalk 应用程序](../core/updating-biztalk-applications.md)。  
   
- 在删除某一架构时，如果在应用程序中存在具有相同根命名空间的该架构的前一版本，则该前一版本将处于活动状态。  
+ 当删除某一架构，并在应用程序中存在具有相同根命名空间的架构的旧版本时，以前的版本将处于活动状态。  
   
- 删除某一架构时，将发生以下情况：  
+ 在删除架构，将发生以下情况：  
   
--   该架构将从 BizTalk 管理数据库中删除。  
+-   从 BizTalk 管理数据库中删除架构。  
   
--   将从 BizTalk 管理数据库中删除包含该架构的 BizTalk 程序集；但如果该程序集还存在于本地文件系统或全局程序集缓存 (GAC) 中，则不会将这两个位置中的该程序集删除。  
+-   包含架构的 BizTalk 程序集从 BizTalk 管理数据库中删除，但不是会从本地文件系统或全局程序集缓存 (GAC) 中，如果两个位置存在。  
   
--   一旦删除该 BizTalk 程序集，该程序集中所包含的所有项目也将从 BizTalk 管理数据库中删除。  
+-   正在删除 BizTalk 程序集，因此删除所有项目程序集中包含删除了该的 BizTalk 管理数据库。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  若要执行本主题中的过程，必须是 BizTalk Server Administrators 组的成员的帐户登录。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
   
 ### <a name="to-remove-a-schema"></a>若要删除某一架构  

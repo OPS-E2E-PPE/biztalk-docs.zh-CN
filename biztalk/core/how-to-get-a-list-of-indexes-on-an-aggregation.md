@@ -16,21 +16,21 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 03c2d898237482550fda5304f9fd4731b6e06200
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5c7803ba15bb06297b477e9bfcc5ad0535f0168b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37020099"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385038"
 ---
 # <a name="how-to-get-a-list-of-indexes-on-an-aggregation"></a>如何获取聚合的索引列表
 管理员使用**获取索引**命令来获取指定的活动上的所有索引列表。  
   
-### <a name="to-get-a-list-of-indexes-on-an-aggregation"></a>获取聚合的索引列表  
+### <a name="to-get-a-list-of-indexes-on-an-aggregation"></a>若要获取聚合的索引列表  
   
-1. 按如下所示打开命令提示符： 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
+1. 打开命令提示符，如下所示：单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2. 导航到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking。  
+2. 导航到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]跟踪。  
   
 3. 类型**bm 获取索引的活动：\<活动名称\>**。  
   

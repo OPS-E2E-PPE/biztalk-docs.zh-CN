@@ -1,6 +1,6 @@
 ---
-title: 开始使用 BizTalk 适配器 PeopleSoft 企业 |Microsoft 文档
-description: 安装并单步教程，说明如何为 BizTalk 适配器 PeopleSoft 企业 BizTalk Server 中
+title: 开始使用 BizTalk 适配器用于 PeopleSoft Enterprise |Microsoft Docs
+description: 安装和分步教程的 BizTalk 适配器用于 BizTalk Server 中的 PeopleSoft Enterprise
 ms.custom: ''
 ms.date: 10/16/2017
 ms.prod: biztalk-server
@@ -13,29 +13,29 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 79b9a8d0e2fcfd978e7da9f085e0079b2bc9d0b3
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: 6e1310550c0c992d3dbe1b4cbd98105078c3c5b2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2017
-ms.locfileid: "23450063"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65344933"
 ---
-# <a name="get-started-with-biztalk-adapter-for-peoplesoft-enterprise"></a>开始使用 BizTalk 适配器 PeopleSoft 企业
+# <a name="get-started-with-biztalk-adapter-for-peoplesoft-enterprise"></a>入门适用于 PeopleSoft Enterprise 的 BizTalk 适配器
 
 ## <a name="overview"></a>概述
-通过用于 PeopleSoft Enterprise 的 Microsoft BizTalk 适配器，您可以使用 PeopleSoft 对象。 本部分讨论设置适配器以访问特定于 PeopleSoft 的信息。 它还提供了对 PeopleSoft 环境的一般性介绍。  
+用于 PeopleSoft Enterprise 的 Microsoft BizTalk 适配器使您可以使用 PeopleSoft 对象。 本部分讨论设置适配器以访问特定于 PeopleSoft 的信息。 它还提供对 PeopleSoft 环境的常规介绍。  
   
- PeopleSoft 是一个包含 PeopleSoft 组件的系统，具有与特定任务相关的表与数据格式，例如人力资源或库存控制。 本文档提供了有关以下任务的信息：  
+ PeopleSoft 是一个包含 PeopleSoft 组件以及其相关的表以及用于特定任务，例如，人力资源或库存控制的数据格式的系统。 本文档提供有关以下任务的信息：  
   
--   配置适用于 PeopleSoft 企业的 BizTalk 适配器。  
+-   配置适用于 PeopleSoft Enterprise 的 BizTalk 适配器。  
   
--   自定义要与适配器交互的 PeopleSoft 系统。  
+-   自定义您的 PeopleSoft 系统与适配器进行交互。  
   
 -   访问组件接口并在您的业务流程中使用它们。  
   
   
 ## <a name="next-steps"></a>后续步骤
   
--   [安装 BizTalk 适配器 PeopleSoft 企业](../core/installing-biztalk-adapter-for-peoplesoft-enterprise.md)  
+-   [安装适用于 PeopleSoft Enterprise 的 BizTalk 适配器](../core/installing-biztalk-adapter-for-peoplesoft-enterprise.md)  
   
--   [教程： 使用 BizTalk 适配器 PeopleSoft 企业](../core/tutorials-using-biztalk-adapter-for-peoplesoft-enterprise.md)
+-   [教程：使用用于 PeopleSoft Enterprise 的 BizTalk 适配器](../core/tutorials-using-biztalk-adapter-for-peoplesoft-enterprise.md)

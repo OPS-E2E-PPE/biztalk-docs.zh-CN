@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 11062 |Microsoft Docs
+title: 单一登录：事件 11062 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 50df4834f92eff7cc679c051f529f4dbaefc4335
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 968ae902025e20d11aa4476cf13e22d116650088
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970134"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65258669"
 ---
-# <a name="single-sign-on-event-11062"></a>单一登录： 事件 11062
+# <a name="single-sign-on-event-11062"></a>单一登录：事件 11062
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                                        |
@@ -28,9 +28,9 @@ ms.locfileid: "36970134"
 | 产品版本 |                                                                       [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                       |
 |    事件 ID     |                                                                                                 11062                                                                                                  |
 |  事件源   |                                                                                                 ENTSSO                                                                                                 |
-|    组件    |                                                                                                  N/A                                                                                                   |
+|    组件    |                                                                                                  不可用                                                                                                   |
 |  符号名称  |                                                                                    SSO_WARN_PASSWORD_FILTER_FAILED                                                                                     |
-|  消息正文   | 密码筛选失败。 将不使用任何密码筛选器。%r<br /><br /> 应用程序名称: %1 %r<br /><br /> 密码筛选器字符串: %2 %r<br /><br /> 其他数据: %3 %r<br /><br /> 错误代码： %4 |
+|  消息正文   | 密码筛选失败。 任何密码筛选器将不 used.%r<br /><br /> 应用程序名称: %1 %r<br /><br /> 密码筛选器字符串: %2 %r<br /><br /> 其他数据: %3 %r<br /><br /> 错误代码： %4 |
   
 ## <a name="explanation"></a>解释  
  创建密码筛选器时出错，并不创建的筛选器。  

@@ -13,12 +13,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f33d6714c58ec7197dd76e8891a1b74d170a7068
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 66b53e617e924000f1948a4c6e3ba644f9204748
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984646"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379167"
 ---
 # <a name="a4swift-promoted-properties"></a>A4SWIFT_ * 提升属性
 

@@ -13,17 +13,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9aad282dfb444c2947afca3cefc0a96cd806826
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5a26a0afc6832dfa4c8401442dc000262dab3aec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015110"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380219"
 ---
 # <a name="manage-resources"></a>管理资源
 
 ## <a name="overview"></a>概述
-本部分中的主题介绍在将 BizTalk Server 资源部署到 BizTalk 组中之后如何使用 BizTalk Server 管理控制台或 BTSTask 命令行工具管理 BizTalk Server 资源。 资源包括以下几种类型的项目：  
+在本部分中的主题提供有关如何使用 BizTalk Server 管理控制台或 BTSTask 命令行工具来管理 BizTalk Server 资源部署到 BizTalk 组后的说明。 资源包括以下类型的项目：  
   
 -   BizTalk 程序集  
   
@@ -47,7 +47,7 @@ ms.locfileid: "37015110"
 >  Microsoft Windows Management Instrumentation (WMI) 对象模型可用于创建和运行自动执行管理任务的脚本。 有关使用 WMI 的信息，请参阅**WMI 类引用** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
 > 
 > [!NOTE]
->  在任何情况下都不要向 BizTalk Server 组中添加具有相同名称的多个资源。 不支持向 BizTalk Server 组中添加具有相同名称的多个资源，即使 BizTalk Server 管理数据库存储在配置成使用二进制排序规则并区分大小写的 SQL Server 上也如此。  
+>  不要将具有相同的名称，不区分大小写，多个资源添加到 BizTalk Server 组。 不支持将多个具有相同名称的资源添加到 BizTalk Server 组，即使 BizTalk Server 管理数据库存储配置为使用二进制排序规则并区分大小写的 SQL 服务器上。  
   
 ## <a name="next-steps"></a>后续步骤
   

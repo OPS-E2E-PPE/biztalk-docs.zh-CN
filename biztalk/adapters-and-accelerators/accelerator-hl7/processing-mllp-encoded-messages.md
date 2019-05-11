@@ -1,5 +1,5 @@
 ---
-title: 处理 MLLP 编码消息 |Microsoft 文档
+title: 处理用 MLLP 编码的消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,19 +15,19 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 156ae3a8aadd3710f29caf5b32d9edd4ae4f6ad9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 95849112afadc2400819d71aee8f88e40af4fd68
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22205965"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289971"
 ---
-# <a name="processing-mllp-encoded-messages"></a>处理 MLLP 编码消息
-以下各节提供有关最小的较低层协议 (MLLP) 的信息接收适配器和 MLLP 发送用于 HL7 V2 的适配器。X 消息处理。  
+# <a name="processing-mllp-encoded-messages"></a>处理用 MLLP 编码的消息
+以下部分提供有关最小的较低层协议 (MLLP) 的信息接收适配器和 MLLP 发送适配器使用的 HL7 V2。X 消息处理。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [配置参数发送和接收适配器](../../adapters-and-accelerators/accelerator-hl7/configuration-parameters-for-send-and-receive-adapters.md)  
+-   [发送和接收适配器参数](../../adapters-and-accelerators/accelerator-hl7/configuration-parameters-for-send-and-receive-adapters.md)  
   
 -   [MLLP 接收适配器处理](../../adapters-and-accelerators/accelerator-hl7/mllp-receive-adapter-processing.md)  
   

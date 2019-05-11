@@ -1,5 +1,5 @@
 ---
-title: 错误-不存在的架构根参考 |Microsoft 文档
+title: 错误-架构根引用不存在 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d391af259d7e91f73e1979cc9515469f96a4f0c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c68b513ffa513bbdc4fd6ea99127b32353a7b5d7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240605"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388447"
 ---
 # <a name="error---schema-root-reference-nonexistent"></a>错误-架构根引用不存在
 **错误代码**  
@@ -28,8 +28,8 @@ ms.locfileid: "22240605"
   
  **说明**  
   
- **根引用**属性**架构**节点正在引用不存在根节点。 引用的根节点可能已删除或重命名后，它已设置为**根引用**属性值。  
+ **根引用**的属性**架构**节点正在引用不存在根节点。 所引用的根节点可能已删除或重命名后被设置为**根引用**属性值。  
   
  **用户执行任何操作**  
   
- 设置**根引用**属性**架构**再次节点。 该属性的下拉列表中包含当前适用于根节点的所有有效选项。
+ 设置**根引用**的属性**架构**再次节点。 该属性的下拉列表中包含根节点的所有当前有效的选项。

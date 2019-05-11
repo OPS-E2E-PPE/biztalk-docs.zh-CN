@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 396905f9b4cc8c1ebb0dbd1d3051b6f40566662a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 180e11f3f4c4c0406927614d4351eb19fef1fb95
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971910"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65290397"
 ---
 # <a name="mllp-send-adapter-processing"></a>MLLP 发送适配器处理
 最小的较低层协议 (MLLP) 发送适配器支持单向和双向传输模式中的以下配置：  
@@ -70,7 +70,7 @@ ms.locfileid: "36971910"
 |实例|条件|  
 |--------------|---------------|  
 |HL7 （原始，增强的、 延迟）|1.不包含的 XML。<br />2.不具有结构，因此不能检索 MSA1 字段;或 MSA1 字段不包含其中一个 CA、 AA、 CR，AR，CE （AE） 允许的值。|  
-|静态|不会与成功的允许值之一匹配或失败确认。|  
+|Static|不会与成功的允许值之一匹配或失败确认。|  
 |包含的 XML|接受确认 （而不考虑内容） 作为处理并删除原始消息。|  
   
 ### <a name="error-conditions"></a>错误条件  
@@ -82,7 +82,7 @@ ms.locfileid: "36971910"
   
   [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 可以生成要描述的错误条件的以下事件：  
   
-|        事件        |  ID  |                                                                                                                                   错误条件                                                                                                                                   |
+|        Event        |  ID  |                                                                                                                                   错误条件                                                                                                                                   |
 |---------------------|------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ErrorSendingMessage | 8450 | 无法将消息发送到远程参与方。 最常见原因是网络失败或超时。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 如果发送管道失败序列化大型消息时，可能会报告此错误。 |
 |  ErrorReceivingAck  | 8451 |                                                                                                       可能不会收到确认，由于网络故障或超时。                                                                                                       |

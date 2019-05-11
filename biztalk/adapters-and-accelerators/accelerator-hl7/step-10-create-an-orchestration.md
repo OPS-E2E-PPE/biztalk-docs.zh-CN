@@ -1,5 +1,5 @@
 ---
-title: 步骤 10： 创建业务流程 |Microsoft Docs
+title: 步骤 10:创建一个业务流程 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e896b5a5723b84cfc94d735aa51b8bee848b41b9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: da424576feb01762b703f43e796956e2dbb25228
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989774"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289001"
 ---
-# <a name="step-10-create-an-orchestration"></a>步骤 10： 创建业务流程
+# <a name="step-10-create-an-orchestration"></a>步骤 10:创建一个业务流程
 在此步骤中，使用业务流程设计器来创建用于表示检索其他患者的详细信息，以完全填充 ADT_A04 消息的业务流程的业务流程。 使用业务流程设计器，则选择表示此业务流程的操作所需的业务流程形状。 在更高版本的练习中，您提供其他信息以配置的形状，以便它们可以正常运行。  
   
 > [!NOTE]
@@ -59,7 +59,7 @@ ms.locfileid: "36989774"
   
 14. 在属性窗口 （在屏幕的底部） 中，单击**名称**要更改的名称属性**发送**形状变为**DoorbellSend**，然后按**输入**。  
   
-    请继续执行[步骤 11： 创建业务流程变量](../../adapters-and-accelerators/accelerator-hl7/step-11-create-orchestration-variables.md)。  
+    请继续执行[步骤 11:创建业务流程变量](../../adapters-and-accelerators/accelerator-hl7/step-11-create-orchestration-variables.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [消息充实教程](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

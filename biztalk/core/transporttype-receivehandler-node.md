@@ -1,5 +1,5 @@
 ---
-title: TransportType （接收处理程序节点） |Microsoft 文档
+title: TransportType （ReceiveHandler 节点） |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,21 +14,21 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df0e041a322b8bb9a144b9ea2bdab5ebb58ac01e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9f1acfd92363a8378d46caaeaf907efd969c0337
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278989"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243237"
 ---
-# <a name="transporttype-receivehandler-node"></a>TransportType （接收处理程序节点）
+# <a name="transporttype-receivehandler-node"></a>TransportType （ReceiveHandler 节点）
 绑定文件的 ReceiveHandler 节点的 TransportType 节点包含与随绑定文件导出的接收处理程序相关联的适配器有关的特定信息。  
   
 ## <a name="nodes-in-the-transporttype-node"></a>TransportType 节点中的节点  
  下表列出了可为绑定文件的此节点设置的属性：  
   
-|**名称**|**节点类型**|**数据类型**|**Description**|**限制**|**注释**|  
+|**名称**|**节点类型**|**数据类型**|**说明**|**限制**|**注释**|  
 |--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|Name|Attribute|xs:string|指定与接收处理程序相关联的适配器的名称。|不需要|默认值：空|  
-|功能|Attribute|xs:int|指定与接收处理程序相关联的适配器的功能。|Required|默认值：无<br /><br /> 可能的值包括 [Microsoft.BizTalk.ExplorerOM.Capabilities](http://msdn.microsoft.com/library/microsoft.biztalk.explorerom.capabilities.aspx) 枚举中的值。|  
-|ConfigurationClsid|Attribute|xs:string|指定与接收处理程序相关联的适配器的配置 GUID。|不需要|默认值：空|
+|“属性”|特性|xs:string|指定与接收处理程序相关联的适配器的名称。|不需要|默认值：空|  
+|功能|特性|xs:int|指定与接收处理程序相关联的适配器的功能。|Required|默认值：无<br /><br /> 可能的值包括 [Microsoft.BizTalk.ExplorerOM.Capabilities](http://msdn.microsoft.com/library/microsoft.biztalk.explorerom.capabilities.aspx) 枚举中的值。|  
+|ConfigurationClsid|特性|xs:string|指定与接收处理程序相关联的适配器的配置 GUID。|不需要|默认值：空|

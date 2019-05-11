@@ -1,5 +1,5 @@
 ---
-title: 如何确定 BizTalkDTADb 数据库中的瓶颈 |Microsoft 文档
+title: 如何找出 BizTalkDTADb 数据库的瓶颈 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0c7463a0288733936189d3cbbb69b59b3b202419
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 44f506c58cd7aa2f82123fd397e3e010a7b6f557
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22253757"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384982"
 ---
 # <a name="how-to-identify-bottlenecks-in-the-biztalkdtadb-database"></a>如何找出 BizTalkDTADb 数据库的瓶颈
 若要找出 BizTalkDTADb 数据库的瓶颈，请执行以下步骤：  

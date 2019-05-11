@@ -1,5 +1,5 @@
 ---
-title: 清单： 取消部署 BizTalk 应用程序 |Microsoft Docs
+title: 清单：取消部署 BizTalk 应用程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -20,14 +20,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c61820bda4d6f6e3b6ad968fc73bf3829d46cd39
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c1d464ea4006dcf5628c4c2b645870fc56dee51a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37019811"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357366"
 ---
-# <a name="checklist-undeploy-a-biztalk-application"></a>清单： 取消部署 BizTalk 应用程序
+# <a name="checklist-undeploy-a-biztalk-application"></a>清单：取消部署 BizTalk 应用程序
 
 |步骤|参考|  
 |----------|---------------|  

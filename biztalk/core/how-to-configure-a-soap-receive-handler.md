@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 15c4f9e63b1b41592cdda3dd984e85f20373fd2f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5e5c75003998733b7dc7674115597829f113cac9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968342"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65386949"
 ---
 # <a name="how-to-configure-a-soap-receive-handler"></a>如何配置 SOAP 接收处理程序
 你可以配置 SOAP 接收处理程序设置通过使用 BizTalk Server 管理控制台。 如果配置使用 BizTalk Server 管理控制台的适配器，不需要的处理程序替代属性在 BizTalk 浏览器中设置。  

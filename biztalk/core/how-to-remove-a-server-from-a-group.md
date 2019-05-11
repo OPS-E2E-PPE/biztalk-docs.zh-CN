@@ -22,20 +22,20 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19c4381f7ca011698aa647f0d7a4a7ccf9ca91a4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7b8be9a991e70c3f1f4fb30673f2c1456a6fe3d0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017624"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384343"
 ---
 # <a name="how-to-remove-a-server-from-a-group"></a>如何从一个组中删除服务器
-一台服务器只能与一个 BizTalk 组相关联。 如果某个服务器已属于其他组，则必须首先从其当前组中删除该服务器，然后才可以将该服务器添加到新的组。  
+一台服务器只能与一个 BizTalk 组相关联。 如果服务器已属于另一个组，则必须首先删除该服务器从其当前组之前可以将其添加到新的组。  
   
-## <a name="prerequisites"></a>必要條件  
- 若要执行此过程，则必须以 Windows Administrators 组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 若要执行此过程，必须以 Windows 管理员组的成员的身份登录。  
   
-### <a name="to-remove-a-server-from-a-group"></a>从组中删除服务器  
+### <a name="to-remove-a-server-from-a-group"></a>若要从组中删除服务器  
   
 1. 在你想要从 BizTalk Server 组中删除的计算机，单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 配置**.  
   
@@ -44,13 +44,13 @@ ms.locfileid: "37017624"
 3. 在中**取消对功能**对话框中，选择**组**，然后单击**确定**。  
   
    > [!CAUTION]
-   >  取消组配置还将取消配置该计算机上已配置的所有依存功能。  
+   >  取消组配置还将取消已在该计算机配置的所有依存功能。  
   
 4. 单击 **“是”**。  
   
 5. 在 Microsoft BizTalk Server 配置向导中，单击**下一步**。  
   
-    该组及其依赖功能的配置都将被取消。  
+    未配置组和它依赖的功能。  
   
 6. 单击 **“完成”**。  
   

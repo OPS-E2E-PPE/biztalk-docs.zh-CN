@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 900897c4b740f39dbec2f5f513b5e814d1589bf9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ce6dfa24c1e5c6f17739be0ba266e302cb9d8667
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987022"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400339"
 ---
 # <a name="esb-resolver-and-adapter-provider-framework"></a>ESB 解析程序和适配器提供程序框架
 冲突解决程序和适配器提供程序框架提供全面、 可插入体系结构用于动态解析终结点信息和 BizTalk Server 映射类型。 它使用可扩展的组件，允许开发人员可以更改以适应其自己的要求，并扩展机制以支持备用解析和路由方法的行为。  

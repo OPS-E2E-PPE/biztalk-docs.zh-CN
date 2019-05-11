@@ -13,37 +13,37 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 698843f7-8361-4d02-9278-0e66f2a9f472
 ms.author: mandia
-ms.openlocfilehash: 7018a6bfa9d55b58cadfa9b808d7c295f88a2c0d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1672b3c2afd7dbca1f1843dedea81111a0a5a6a2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981374"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400307"
 ---
 # <a name="install-and-configure-the-microsoft-biztalk-esb-toolkit"></a>安装和配置 Microsoft BizTalk ESB 工具包
 使用 BizTalk Server 2013 和较新版本中，启动[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]与集成[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装程序。 本主题说明如何安装和配置[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]，并且还包括用于升级 ESB 工具包的社区编写的链接。  
   
 > [!IMPORTANT]
->  你必须先安装 BizTalk Server，然后才能开始安装 [!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)]。  
+>  必须具有已开始安装之前安装 BizTalk Server [!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)]。  
   
-## <a name="install"></a>Install 
+## <a name="install"></a>安装 
   
 1. 运行[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]setup.exe 文件，以管理员身份。 在安装过程中，选择**安装[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]** 。  
   
 2. 接受许可协议，然后选择**下一步**。  
   
-3. 在“组件安装”中，选择要安装的组件，然后单击“下一步”。  
+3. 在中**组件安装**，选择你想要安装，然后选择的组件**下一步**。  
   
 4. 在中**摘要**，查看您选择，然后选择**安装**。  
   
-5. 选择“完成”关闭安装向导。  
+5. 选择**完成**若要关闭安装向导。  
 
 安装日志会创建一个文件，类似于 C:\Users\yourUserName\AppData\Local\Temp\Setup(081017 175042).htm。 
   
 ## <a name="configure"></a>配置 
   
 > [!IMPORTANT]
->  你必须先配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，然后才能配置 [!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)]。  
+>  必须配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]配置之前[!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)]。  
   
 1. 从**启动**菜单中，选择**Microsoft [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]** ，然后选择**ESB 配置工具**。  
   
@@ -78,19 +78,19 @@ ms.locfileid: "36981374"
 7. 在左窗格中，选择**配置**。  
    如果在安装和配置[!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)]在单服务器环境中，选择**文件配置源**。 如果您设置了多计算机部署，请选择**SSO 配置源**，然后输入以下：  
   
-   -   **SSO 服务器**： 输入 SSO 服务器的名称
+   -   **SSO 服务器**:输入 SSO 服务器的名称
   
-   -   **配置文件**： 选择省略号 **（...）**，然后浏览到 esb.config 文件 (\Program 文件 (x86) \Microsoft BizTalk ESB 工具包)
+   -   **配置文件**:选择省略号 **（...）**，然后浏览到 esb.config 文件 (\Program 文件 (x86) \Microsoft BizTalk ESB 工具包)
   
-   -   **应用程序名称**： 输入的 SSO 应用程序的名称。 例如，输入`ESB Toolkit`。  
+   -   **应用程序名称**:输入 SSO 应用程序的名称。 例如，输入`ESB Toolkit`。  
   
-   -   **联系信息**： 采用以下格式输入有效的电子邮件地址的相应的联系信息： `someone@example.com`。  
+   -   **联系信息**:按以下格式输入有效的电子邮件地址的相应的联系信息： `someone@example.com`。  
   
-   -   **管理员组名称**： 选择省略号 **（...）**，然后浏览到适当的管理组  
+   -   **管理员组名称**:选择省略号 **（...）**，然后浏览到适当的管理组  
   
-   -   **用户组名称**： 选择省略号 **（...）**，然后浏览到相应的组  
+   -   **用户组名称**:选择省略号 **（...）**，然后浏览到相应的组  
 
-8. 选择**应用配置**。 打开 IIS，并请注意，现在已在配置 [!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)]时指定的网站下创建了 [!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)]所需的应用程序。  
+8. 选择**应用配置**。 打开 IIS，并请注意，应用程序所需的[!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)]现在配置时指定在网站下创建[!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)]。  
   
 9. 在中**ESB 配置工具**，选择**ESB BizTalk 应用程序**，，然后：  
   
@@ -98,7 +98,7 @@ ms.locfileid: "36981374"
   
    - 选择**在 BizTalk Server 中启用 ESB JMS/WMQ 组件**若要创建中的应用程序[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。 选择**使用默认绑定**要绑定到默认主机的此应用程序。 选择**不使用默认绑定**如果确实想要绑定到默认主机应用程序。 在此方案中，您必须显式将绑定到主机应用程序后创建的应用程序。  
   
-   - 选择**应用配置**创建所选的应用程序。 验证是否在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台中创建了该应用程序。  
+   - 选择**应用配置**创建所选的应用程序。 验证是否在创建了应用程序[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。  
   
 ## <a name="upgrade-esb-toolkit--community-addition"></a>升级 ESB 工具包 – 社区添加内容  
  [就地将 ESB 工具包 2.1 升级到 2.2](http://www.brianloesgen.com/blog/2013/10/10/in-place-upgrade-of-esb-toolkit-21-to-22.html) (http://www.brianloesgen.com/blog/2013/10/10/in-place-upgrade-of-esb-toolkit-21-to-22.html)

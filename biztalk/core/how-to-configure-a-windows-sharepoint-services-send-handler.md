@@ -16,22 +16,22 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 90ac23759558549122f31a793852b479b67744d4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2385999e8a3a36f57b8b04ef0077658757674ce1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988550"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65341897"
 ---
 # <a name="how-to-configure-a-windows-sharepoint-services-send-handler"></a>如何配置 Windows SharePoint Services 发送处理程序
-使用以下步骤可更改与 Windows SharePoint Services 发送处理程序关联的主机。  
+使用以下过程可更改与 Windows SharePoint Services 发送处理程序关联的主机。  
   
 > [!NOTE]
->  每个主机只能有一个关联的发送处理程序。  
+>  每个主机可以只有一个与其关联的发送处理程序。  
   
-### <a name="to-change-global-variables-for-a-windows-sharepoint-services-send-handler"></a>更改 Windows SharePoint Services 发送处理程序的全局变量  
+### <a name="to-change-global-variables-for-a-windows-sharepoint-services-send-handler"></a>若要更改全局变量为 Windows SharePoint Services 发送处理程序  
   
-1. 在 BizTalk Server 管理控制台中，单击以展开[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**管理**，然后单击以展开**BizTalk 组 [\<servername\>:\<管理数据库\>]**，单击此项可展开**平台设置**，然后单击以展开**适配器**。 此时，适配器列表将显示在该文件夹下。  
+1. 在 BizTalk Server 管理控制台中，单击以展开[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**管理**，然后单击以展开**BizTalk 组 [\<servername\>:\<管理数据库\>]**，单击此项可展开**平台设置**，然后单击以展开**适配器**。 在文件夹下显示的适配器列表。  
   
 2. 单击**Windows SharePoint Services**，然后在右窗格中，右键单击你想要配置，然后单击的发送处理程序**属性**。  
   
@@ -43,7 +43,7 @@ ms.locfileid: "36988550"
   
    |使用此选项|执行的操作|  
    |--------------|----------------|  
-   |发送批大小|Windows SharePoint Services Web Services 将按一批进行处理的最大文档数。 默认值为 20。 **注意：** 的最小值为 1。|  
+   |发送批大小|最大 Windows SharePoint Services Web 服务将处理作为批处理的文档数。 默认值为 20。 **注意：** 最小值为 1。|  
   
 ## <a name="see-also"></a>请参阅  
  [如何配置 Windows SharePoint Services 接收位置](../core/how-to-configure-a-windows-sharepoint-services-receive-location.md)   

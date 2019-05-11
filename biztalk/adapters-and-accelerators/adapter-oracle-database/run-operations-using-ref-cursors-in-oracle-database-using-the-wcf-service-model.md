@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c30af70ffe58e1ca8107c07d265e848532e2c768
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c3c4d4f9eeac5ebc6b821638f1b1da8276ba4822
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990702"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376079"
 ---
 # <a name="run-operations-using-ref-cursors-in-oracle-database-using-the-wcf-service-model"></a>使用 WCF 服务模型的 Oracle 数据库中运行的操作使用 REF CURSOR
 REF CURSOR 是 Oracle PL/SQL 数据类型对结果集的 Oracle 数据库中表示的指针。 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]支持 REF CURSOR 参数在过程、 函数和包。 REF CURSOR 参数可以是强类型化或弱类型具体取决于在过程或函数中的声明。 有关如何通过表示 REF CURSOR 参数的详细说明[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]，请参阅[REF CURSORS 的消息架构](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-ref-cursors.md)。下表总结了如何在 WCF 服务模型中表示 REF CURSOR 参数。  

@@ -1,5 +1,5 @@
 ---
-title: 数学 Functoid |Microsoft 文档
+title: 数学 Functoid |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 232098f27578e75bb925be47a202b07b6487d65d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0a1b9abda0e6bd1ae526f97d138616a751e7aa2d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262589"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380035"
 ---
 # <a name="mathematical-functoids"></a>数学 Functoid
 
 ## <a name="overview"></a>概述
-**数学**functoid 用于执行各种基本数学操作。  
+**数学**functoid 用于执行各种基本的数学运算。  
   
- 为输入参数的数目**数学**functoid 而异，在从 functoid 到 functoid，其中合理，这些 functoid 接受大量的输入。 例如，**除法**functoid 必须有且只有两个输入的参数 （被除数和除数） 时**添加**functoid 接受之间 2 和 100 个输入参数，从而导致其总和。  
+ 输入参数数目**数学**functoid 会有所变化从 functoid 到 functoid，以及这些 functoid 在合适，接受大量输入。 例如，**除法**functoid 需要两个输入的参数 （被除数和除数），同时**加法**functoid 接受之间 2 到 100 的输入参数，从而导致其总和。  
   
 > [!IMPORTANT]
->  因为 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用.NET Framework 中，通过的某些所产生的结果的基础功能**数学**functoid 可能不同于以前版本的 BizTalk Server 中的等效 functoid。 请全面地测试映射以确保得到预期的结果。  
+>  因为 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用.NET Framework 中，一些生成的结果的基本功能**数学**functoid 可能会在以前版本的 BizTalk Server 中的等效 functoid 有所不同。 测试映射进行全面可确保获得预期的结果。  
 
 ## <a name="functoids-list"></a>Functoid 列表  
- **数学**functoid 均： 
+ **数学**functoid 包括： 
 
 * 绝对值
 * 加
@@ -38,13 +38,13 @@ ms.locfileid: "22262589"
 * Integer
 * 最大值
 * 最小值
-* 模
+* 取模
 * 乘
 * 舍入
 * 平方根
-* 减法
+* 减
 
 这些 functoid 的详细信息是[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
 
-## <a name="see-also"></a>另请参阅  
- [如何在向地图添加基本 Functoid](../core/how-to-add-basic-functoids-to-a-map.md)   
+## <a name="see-also"></a>请参阅  
+ [如何向映射添加基本 Functoid](../core/how-to-add-basic-functoids-to-a-map.md)   

@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a6375add6d27e6ce0d3dff89bd2b172a2b693356
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f069b6017ef5d740e3c6cb24b3e7877deef924c2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992398"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385228"
 ---
 # <a name="how-to-develop-interdependent-orchestrations"></a>如何开发相互依赖的业务流程
 可以使用[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]开发一组具有相互依赖的 Web 服务的业务流程。 当有引用数据类型和/或从其调用它们的业务流程中的端口的业务流程时，会发生此情况。 这种情况下的示例是具有以下特征：  
@@ -28,7 +28,7 @@ ms.locfileid: "36992398"
   
 - Orch2 响应回 Orch1 的 Web 服务调用。  
   
-  此类型的项目的一个示例，请参阅[教程 2： 采购订单流程](http://msdn.microsoft.com/library/a324ef1b-39b3-49ab-9719-a13f526cb467)。  
+  此类型的项目的一个示例，请参阅[教程 2:采购订单处理](http://msdn.microsoft.com/library/a324ef1b-39b3-49ab-9719-a13f526cb467)。  
   
 ### <a name="to-develop-two-interdependent-orchestrations-orch1-and-orch2"></a>若要开发 Orch1 和 Orch2 的两个相互依赖业务流程  
   

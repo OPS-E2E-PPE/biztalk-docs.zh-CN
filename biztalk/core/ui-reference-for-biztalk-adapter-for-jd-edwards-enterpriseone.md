@@ -1,5 +1,5 @@
 ---
-title: 用于博士 Edwards EnterpriseOne 的 BizTalk Adapter 的用户界面参考 |Microsoft 文档
+title: 用于 JD Edwards EnterpriseOne 的 BizTalk 适配器用户界面参考 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 93ec7e7ad9853378e03212acc4498095a07834e2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b183b2cfa7ce1e00fd1beea7a9fc9d725be6de4d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286493"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65258584"
 ---
-# <a name="ui-reference-for-biztalk-adapter-for-jd-edwards-enterpriseone"></a>JD Edwards EnterpriseOne 的 BizTalk 适配器用户界面参考
+# <a name="ui-reference-for-biztalk-adapter-for-jd-edwards-enterpriseone"></a>用于 JD Edwards EnterpriseOne 的 BizTalk 适配器用户界面参考
 本部分中的主题介绍 JD Edwards EnterpriseOne 的 Microsoft BizTalk 适配器的用户界面。  
   
 ## <a name="in-this-section"></a>本节内容  
- [博士 Edwards EnterpriseOne 传输的属性对话框](../core/jd-edwards-enterpriseone-transport-properties-dialog-box.md)  
+ [“JD Edwards EnterpriseOne 传输属性”对话框](../core/jd-edwards-enterpriseone-transport-properties-dialog-box.md)  
   
- [博士 Edwards EnterpriseOne 添加适配器元数据向导](../core/jd-edwards-enterpriseone-add-adapter-metadata-wizard.md)
+ [JD Edwards EnterpriseOne“添加适配器元数据”向导](../core/jd-edwards-enterpriseone-add-adapter-metadata-wizard.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 77f2260c8e6096e2bef926fea45aaf778f4bdfa3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6fa404335d4136c2c51f990d8c81b753bfcc020c
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997902"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65527527"
 ---
 # <a name="configuring-fin-response-reconciliation"></a>配置 FIN 响应对帐
 必须执行以下各节中，若要配置 Microsoft 中的步骤[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]FIN 响应对帐 (FRR) 功能，如下图中所示。  

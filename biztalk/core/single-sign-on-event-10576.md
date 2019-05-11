@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10576 |Microsoft Docs
+title: 单一登录：Event 10576 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cae438c35d99ab9b81f44d4cf24a087e1a217fd3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8492d2d6e9aee841d60aea305dc6669f7df63efe
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966326"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65303475"
 ---
-# <a name="single-sign-on-event-10576"></a>单一登录： 事件 10576
+# <a name="single-sign-on-event-10576"></a>单一登录：事件 10576
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                                                     |
@@ -28,12 +28,12 @@ ms.locfileid: "36966326"
 | 产品版本 |                                                                             [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                              |
 |    事件 ID     |                                                                                                        10576                                                                                                        |
 |  事件源   |                                                                                                       ENTSSO                                                                                                        |
-|    组件    |                                                                                                         N/A                                                                                                         |
+|    组件    |                                                                                                         不可用                                                                                                         |
 |  符号名称  |                                                                                             SSO_INFO_CHANGED_SSO_ADMIN                                                                                              |
-|  消息正文   | 已更新 SSO 管理员帐户。%r<br /><br /> 新的 SSO Administrators: %1 %r<br /><br /> 旧的 SSO Administrators: %2 %r<br /><br /> 跟踪 ID: %3 %r<br /><br /> 客户端计算机: %4 %r<br /><br /> 客户端用户： %5 |
+|  消息正文   | 已更新 SSO Administrators account.%r<br /><br /> 新的 SSO Administrators: %1 %r<br /><br /> 旧的 SSO Administrators: %2 %r<br /><br /> 跟踪 ID: %3 %r<br /><br /> 客户端计算机: %4 %r<br /><br /> 客户端用户： %5 |
   
 ## <a name="explanation"></a>解释  
- 这是信息性消息，可以用于跟踪 SSO 系统中发生的与安全有关的重要事件。 此消息说明已更新 SSO 管理员帐户。  
+ 这是一条信息性消息，也可用于跟踪 SSO 系统中的发生的与安全相关的重要事件。 此消息表明已更新 SSO 管理员帐户。  
   
 ## <a name="user-action"></a>用户操作  
  不需要任何用户操作。

@@ -17,21 +17,21 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fb712972c0fd7ba8975f30ee6519812dd863e442
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5c72d8a0f718ce42adbae6eacde6b5a140d82469
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004102"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384260"
 ---
 # <a name="how-to-remove-sso"></a>如何删除 SSO
-除非依存产品要使用企业单一登录 (SSO)，否则在删除 BizTalk Server 时将不再配置 SSO。 不过，这样并未删除 SSO。 您必须单独删除 SSO。 也可以还原包括主密钥在内的配置信息以重用现有数据。 有关详细信息，请参阅[如何还原主密钥](../core/how-to-restore-the-master-secret.md)。  
+如果你删除 BizTalk Server，除非依存产品要使用它不再配置企业单一登录 (SSO)。 但是，不将其删除。 必须单独删除 SSO。 您还可以还原包括主密钥以重复使用现有数据的配置信息。 有关详细信息，请参阅[如何还原主密钥](../core/how-to-restore-the-master-secret.md)。  
   
-### <a name="to-remove-enterprise-single-sign-on"></a>删除企业单一登录  
+### <a name="to-remove-enterprise-single-sign-on"></a>若要删除企业单一登录  
   
 1. 备份主密钥。 有关详细信息，请参阅[如何返回主密钥](../core/how-to-back-up-the-master-secret.md)。  
   
-2. 卸载 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
+2. 卸载[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
   
 3. 在 **“开始”** 菜单上，单击 **“控制面板”**。  
   
@@ -42,7 +42,7 @@ ms.locfileid: "37004102"
 6. 单击**是**当系统提示你确认该删除的 Microsoft 企业单一登录。  
   
    > [!NOTE]
-   >  如果已安装 BizTalk Server 运行时、开发或管理功能，或已安装 Host Integration Server 管理功能，则只有在删除所有依赖项后，才能卸载该 SSO 运行时或管理组件。  
+   >  如果你有 BizTalk Server 运行时、 开发或管理功能安装或安装 Host Integration Server 管理功能，您将不能卸载 SSO 运行时或管理组件，直到所有依赖项删除。  
   
 ## <a name="see-also"></a>请参阅  
  [安装 SSO](../core/installing-sso.md)

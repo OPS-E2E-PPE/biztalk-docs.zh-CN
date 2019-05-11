@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b9453ade3d447e874609d1357e2383a5c21686f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f0e198d5aa82b22170fe4ed52115bf7c72b0c55f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975094"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65305787"
 ---
 # <a name="designating-a-new-master-secret-server-manually"></a>手动指定新的主密钥服务器
 群集硬件可能成本高昂。 如果硬件成本是一个问题，则可以考虑手动指定另一个企业单一登录 (SSO) 服务器，在故障情况下保持在主密钥服务器。 使用此选项，可以为主密钥服务器升级 SSO 组中的任何其他 SSO 服务器。 主机关闭时，你可以手动升级是主密钥服务器与 SSO 服务器之一。 此技术的最大缺点是，不能编辑现有部署，重新启动现有[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]服务，或部署新的 BizTalk 应用程序，直到您提升新的主密钥服务器。  

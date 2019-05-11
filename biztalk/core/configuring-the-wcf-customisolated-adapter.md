@@ -1,5 +1,5 @@
 ---
-title: 配置 WCF CustomIsolated 适配器 |Microsoft 文档
+title: 配置 Wcf-customisolated 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,18 +15,18 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5f99a4a047e40bd730a50c1156ca5eb1fbb0d9e3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0afd9ea3a3ecf3a96607ed3a7667723fb2bbf63f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232677"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355125"
 ---
-# <a name="configuring-the-wcf-customisolated-adapter"></a>配置 WCF CustomIsolated 适配器
+# <a name="configuring-the-wcf-customisolated-adapter"></a>配置 Wcf-customisolated 适配器
 本部分介绍如何配置 WCF-CustomIsolated 适配器。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [如何配置 WCF CustomIsolated 接收位置](../core/how-to-configure-a-wcf-customisolated-receive-location.md)  
+-   [如何配置 Wcf-customisolated 接收位置](../core/how-to-configure-a-wcf-customisolated-receive-location.md)  
   
--   [如何配置 WCF CustomIsolated 接收处理程序](../core/how-to-configure-a-wcf-customisolated-receive-handler.md)
+-   [如何配置 Wcf-customisolated 接收处理程序](../core/how-to-configure-a-wcf-customisolated-receive-handler.md)

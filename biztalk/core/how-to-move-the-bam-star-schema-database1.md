@@ -15,28 +15,28 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e3068c9d1c72c30c51f77d9fad7b8ddf5881ed09
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8896ec03a272bee4110e22d11153266720e7fd18
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983406"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384520"
 ---
 # <a name="how-to-move-the-bam-star-schema-database"></a>如何移动 BAM 星型架构数据库
-您可以使用此过程将 BAM 星型架构数据库移到其他服务器。  
+可以使用此过程将 BAM 星型架构数据库移到另一台服务器。  
   
-## <a name="prerequisites"></a>必要條件  
- 若要执行此过程，必须以 SQL Server sysadmin 固定服务器角色成员的帐户登录。  
+## <a name="prerequisites"></a>先决条件  
+ 您必须是 SQL Server sysadmin 固定服务器角色的成员才能执行此过程的帐户登录。  
   
 ### <a name="to-move-the-bam-star-schema-database"></a>移动 BAM 星型架构数据库  
   
-1. 获取用于还原 BAM 的 .xml 文件的副本：  
+1. 获取用于还原 BAM 的.xml 文件的副本：  
   
    1. 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-   2. 在命令提示符下，导航到以下目录：  
+   2. 在命令提示符处，导航到以下目录：  
   
-       [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking  
+       [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]跟踪  
   
    3. 在命令提示符下，键入：  
   
@@ -49,19 +49,19 @@ ms.locfileid: "36983406"
   
 2. 有关如何在旧服务器上备份数据库按照 SQL Server 联机丛书中的说明。  
   
-3. 将 BAM 星型架构数据库复制到新的 SQL Server 中。  
+3. 将 BAM 星型架构数据库复制到新的 SQL Server。  
   
 4. 有关如何还原新服务器上的数据库，请按照 SQL Server 联机丛书中的说明进行操作。  
   
-5. 编辑 BAMConfiguration.xml 文件，将 StarSchemaDatabase DeploymentUnit 部分中的 ServerName 更改为新服务器名称。  
+5. 编辑 BAMConfiguration.xml 文件，将 StarSchemaDatabase DeploymentUnit 部分中的 ServerName 更改为新的服务器名称。  
   
 6. 保存并关闭 BAMConfiguration.xml 文件。  
   
 7. 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-8. 在命令提示符下，导航到以下目录：  
+8. 在命令提示符处，导航到以下目录：  
   
-    [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking  
+    [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]跟踪  
   
 9. 在命令提示符下，键入：  
   
@@ -72,9 +72,9 @@ ms.locfileid: "36983406"
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
   
-10. 按照以下步骤，更新 SQL Connection 2 以更改所有 BAM 分析 DTS 包（带有“BAM_AN_”前缀）中的服务器名称和数据库名称：  
+10. 更新 SQL Connection 2 以更改的服务器和数据库名称在所有 BAM 分析 DTS 包，带有"BAM_AN_"前缀通过执行以下步骤：  
   
-    1.  使用 SQL Server Management Studio 打开 BAM 的宿主服务器。  
+    1.  使用 SQL Server Management Studio，打开 BAM 的宿主服务器。  
   
     2.  打开**Data Transformation Services**文件夹。  
   
@@ -82,9 +82,9 @@ ms.locfileid: "36983406"
   
     4.  打开 DTS 包，然后双击**Connection 2**来打开连接。  
   
-    5.  在下拉框中选择新的服务器名称和数据库名称。  
+    5.  在下拉列表框中选择新的服务器和数据库名称。  
   
-11. 按照以下步骤更新 BAM 分析数据库中的数据源：  
+11. 更新 BAM 分析数据库中的数据源，如下所示：  
   
     1.  使用 SQL Server 分析管理器，打开 BAM 分析数据库的宿主服务器。  
   

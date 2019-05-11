@@ -1,5 +1,5 @@
 ---
-title: 错误- &quot;{0}&quot; functoid 具有无效的 xpath 语句： {1}。 | Microsoft Docs
+title: 错误- &quot; {0} &quot; functoid 具有无效的 xpath 语句： {1}。 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d443463a8f8d4d7a7878189fa4f49e4efcaf85fd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 643c371b22044b828f11899fdedb282edb039a00
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241565"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388411"
 ---
-# <a name="error---the-quot0quot-functoid-has-an-invalid-xpath-statement-1"></a>错误- &quot;{0}&quot; functoid 具有无效的 xpath 语句： {1}。
+# <a name="error---the-quot0quot-functoid-has-an-invalid-xpath-statement-1"></a>错误- &quot; {0} &quot; functoid 具有无效的 xpath 语句： {1}。
 **错误代码**  
   
  btm1018  
   
  **用户执行任何操作**  
   
- 无
+ None

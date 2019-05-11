@@ -16,26 +16,26 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6ac107300ff14f024da02d6959f695790fe7ff80
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c9666c6db97a181a3ff4c3ada204fe11b2b99c8a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002790"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385195"
 ---
 # <a name="how-to-disable-alerts"></a>如何禁用警报
 管理员使用**禁用警报**命令，以禁用所有指定的视图上的警报。  
   
 ### <a name="to-disable-an-alert"></a>若要禁用警报  
   
-1. 按如下所示打开命令提示符： 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
+1. 打开命令提示符，如下所示：单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2. 通过在命令提示符处键入 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking，导航到跟踪文件夹。 按 **Enter**。  
+2. 通过键入导航到跟踪文件夹[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]跟踪在命令提示符处。 按 **Enter**。  
   
 3. 类型**bm 禁用警报的视图：\<视图名称\>**。  
   
    > [!NOTE]
-   >  如果您已经将 BAM 配置作为 XML 导出，则不要修改与警报相关的 XML。 如果您更改与警报相关的 XML 并部署这些更改，则 bm.exe 将检测到该更改并启用 BAM 警报。  
+   >  如果您已经以 XML 形式导出 BAM 配置，不要修改与警报相关的 XML。 如果您更改与警报相关的 XML 和部署所做的更改，则 bm.exe 将检测更改，启用 BAM 警报。  
   
 4. 按 **Enter**。  
   

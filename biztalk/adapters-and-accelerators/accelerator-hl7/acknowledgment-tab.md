@@ -18,12 +18,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ad74d4deaabb8bd294713d7ddd33032f911d58e4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 65d25d044cabf35fde4d2addd259a777ac0657cc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978638"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65247688"
 ---
 # <a name="acknowledgment-tab"></a>确认选项卡
 您使用**确认**选项卡来指定入站和生成确认的确认属性。  

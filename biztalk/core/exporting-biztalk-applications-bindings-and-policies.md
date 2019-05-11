@@ -1,5 +1,5 @@
 ---
-title: 导出 BizTalk 应用程序、 绑定和策略 |Microsoft 文档
+title: 导出 BizTalk 应用程序、 绑定和策略 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,20 +19,20 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5d6df445b0fefc132940a736870d66c62329ce60
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1847834ee04cf6b5f1d60398ea4310cac60b53c5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22245805"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388239"
 ---
-# <a name="exporting-biztalk-applications-bindings-and-policies"></a>导出 BizTalk 应用程序、绑定和策略
-本部分介绍如何导出 BizTalk 应用程序、绑定或策略。 可以导出在某一 BizTalk 应用程序中包含的某些或所有项目，也可以只导出该应用程序的绑定或策略。 导出 BizTalk 应用程序会创建一个 Windows Installer (.msi) 文件，该文件包含您选择导出的应用程序项目。 导出绑定或策略将创建一个包含这些绑定或策略的 .xml 文件。 此过程的背景信息，请参阅[什么发生时项目导出](../core/what-happens-when-artifacts-are-exported.md)。  
+# <a name="exporting-biztalk-applications-bindings-and-policies"></a>导出 BizTalk 应用程序、 绑定和策略
+本部分介绍如何导出 BizTalk 应用程序、 绑定或策略。 您可以导出某些或所有包含 BizTalk 应用程序中的项目也可以导出的绑定或策略。 导出应用程序创建包含应用程序项目，选择要导出的 Windows Installer (.msi) 文件。 导出绑定或策略创建绑定或策略.xml 的文件。 此过程的背景信息，请参阅[什么会发生在项目将导出](../core/what-happens-when-artifacts-are-exported.md)。  
   
- 您可以将某一应用程序 .msi 文件导入其他 BizTalk 组，以便在该组中创建包含该应用程序项目的新应用程序。 您可以将某一绑定或策略 .xml 文件导入其他 BizTalk 应用程序，以便使用这些绑定或策略。 中介绍了如何导入项目[导入 BizTalk 应用程序、 绑定和策略](../core/importing-biztalk-applications-bindings-and-policies.md)。  
+ 您可以导入其他 BizTalk 组中创建新的应用程序包含在该组中的应用程序的项目的应用程序.msi 文件。 您可以导入另一个 BizTalk 应用程序使用这些绑定或策略的绑定或策略.xml 文件。 如何导入项目所述[导入 BizTalk 应用程序、 绑定和策略](../core/importing-biztalk-applications-bindings-and-policies.md)。  
   
 > [!IMPORTANT]
->  请将绑定文件存储于安全的位置，因为它们可能包含连接和配置信息之类的重要业务数据。  
+>  将绑定文件存储在安全位置，因为它们可能包含连接和配置信息之类的关键业务数据。  
   
 ## <a name="in-this-section"></a>本节内容  
   

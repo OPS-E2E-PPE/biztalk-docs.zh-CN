@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d7b6f0677b542ad03b2109eddb3352924f6b59c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bb11f742acda40d60ebfb57207db36ab38c4aa42
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966494"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377096"
 ---
 # <a name="preparing-for-deployment"></a>为部署做好准备
 本部分提供有关部署的规划和准备阶段的信息。 实现部署时之前, 做好以下准备：  

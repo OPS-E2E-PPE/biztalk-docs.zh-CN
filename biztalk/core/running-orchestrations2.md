@@ -23,15 +23,15 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c299486c8ca43b34ba93ce434245b52b30e567aa
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c43c0694397f024b692012f7e2846e6ff38bbd14
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981046"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65254513"
 ---
 # <a name="running-orchestrations"></a>运行业务流程
-以下过程介绍如何生成、部署、绑定和启动业务流程。  
+以下过程介绍如何生成、 部署、 绑定和启动业务流程。  
   
 ## <a name="creating-a-strong-name-key"></a>创建强名称密钥  
   
@@ -39,11 +39,11 @@ ms.locfileid: "36981046"
   
 1. 打开[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]命令提示符。  
   
-2. 将目录更改为指向现有的项目，然后按 ENTER 键。  
+2. 将目录更改为现有项目，然后按 ENTER。  
   
     例如：  
   
-    **\<驱动器\>: \Adapter_Install\biztalk\my_project**  
+    **\<drive\>:\Adapter_Install\biztalk\my_project**  
   
 3. 在命令提示符下键入以下命令并按 ENTER:  
   

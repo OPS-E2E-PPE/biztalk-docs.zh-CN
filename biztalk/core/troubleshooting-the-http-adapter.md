@@ -1,5 +1,5 @@
 ---
-title: 故障排除 HTTP 适配器 |Microsoft 文档
+title: HTTP 适配器故障排除 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,16 +12,16 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1a90e3dc79b1c10f5fb6cdcafbf5108de71fdf23
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4c01eb840ec60bcfeae08087da98c91824c19dca
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286389"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65295682"
 ---
 # <a name="troubleshooting-the-http-adapter"></a>HTTP 适配器故障排除
 本部分介绍可用于诊断 HTTP 适配器问题的故障排除方法。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [如何使用 HTTP 适配器诊断问题](../core/how-to-diagnose-problems-with-the-http-adapter.md)
+-   [如何诊断 HTTP 适配器的问题](../core/how-to-diagnose-problems-with-the-http-adapter.md)

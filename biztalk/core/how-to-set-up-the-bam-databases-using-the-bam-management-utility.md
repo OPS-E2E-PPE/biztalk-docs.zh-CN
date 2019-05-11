@@ -12,30 +12,30 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6878e6aa3874384bd17f340c62421c432182f637
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d01b84fb3e538ee81351cbcfe380d893c5f0cc7b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001310"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334098"
 ---
 # <a name="how-to-set-up-the-bam-databases-using-the-bam-management-utility"></a>如何设置 BAM 数据库使用 BAM 管理实用程序
-通常，管理员使用 BizTalk Server 配置实用程序来设置 BAM 数据库。 您可以使用 BAM 管理实用程序 (bm.exe) 作为设置数据库的备选方法。  
+管理员通常使用 BizTalk Server 配置实用工具来设置 BAM 数据库。 可以使用 BAM 管理实用程序 (bm.exe) 作为替代方法，若要设置数据库。  
   
-## <a name="prerequisites"></a>必要條件  
- 以下为执行本主题中的过程的前提条件：  
+## <a name="prerequisites"></a>先决条件  
+ 在本主题中执行该过程的先决条件如下：  
   
--   必须对 BAMPrimaryImport、BAMStarSchema 和 BAMArchive 数据库的宿主 SQL Server 具有管理员权限。  
+-   您必须对 BAMPrimaryImport、 BAMStarSchema 和 BAMArchive 数据库的宿主 SQL 服务器上具有管理员权限。  
   
--   若要设置 SQL Notification Services 数据库，必须具有管理员权限，并且是本地管理员组的成员，而且还必须是已配置的任何其他管理员组（如 BTS Admins 组）的成员。  
+-   若要设置 SQL Notification Services 数据库，您必须具有管理员权限并且是本地管理员组的成员，以及是已配置，如 BTS Admins 组的任何其他管理员组的成员。  
   
--   必须具有配置数据库所用的、其中包含 XML 数据的 BAM 配置文件。  
+-   必须具有包含用于设置数据库的 XML 数据的 BAM 配置文件。  
   
-### <a name="to-set-up-the-bam-databases-using-the-bam-management-utility"></a>使用 BAM 管理实用程序设置 BAM 数据库  
+### <a name="to-set-up-the-bam-databases-using-the-bam-management-utility"></a>若要设置使用 BAM 管理实用程序的 BAM 数据库  
   
-1. 按如下所示打开命令提示符： 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
+1. 打开命令提示符，如下所示：单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2. 导航到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking。  
+2. 导航到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]跟踪。  
   
 3. 在命令行提示符下键入以下内容： **bm 设置数据库-ConfigFile:\<配置文件\>**，其中\<*配置文件*\>替换为您的 BAM 配置文件的名称。 按 **Enter**。  
   

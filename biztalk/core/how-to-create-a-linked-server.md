@@ -15,24 +15,24 @@ caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fcb954062bb2cb2484a51570109b37341b1c12f9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3ddb25ae58ee7adddd936f4904a131d4064a608f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980982"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385572"
 ---
 # <a name="how-to-create-a-linked-server"></a>如何创建链接服务器
-当 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 安装在分布式拓扑中时，多个 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 上均存在属于 BizTalk 组的数据库。 在能够从 BizTalk 管理服务器备份整个 BizTalk 环境之前，必须配置到每个远程服务器的链接服务器连接。 链接服务器是 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 分布式查询中使用的 OLE DB 数据源。  
+当[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装在分布式拓扑中，属于 BizTalk 组的数据库存在在多个[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]。 可以备份整个 BizTalk 环境从 BizTalk 管理服务器之前，必须配置链接的服务器连接到每个远程服务器。 链接的服务器是 OLE DB 数据源中使用[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]分布式查询。  
   
- 在备份和还原过程中，备份 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 作业将自动创建链接服务器。 不过，如果需要，您可通过以下过程手动创建链接服务器。  
+ 备份和还原过程中，备份的一部分[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]作业将自动创建链接的服务器。 如有必要，但是，可以手动创建链接的服务器使用此过程。  
   
- 此外可以使用创建链接的服务器*sp_addlinkedserver*存储过程。 执行此操作时，须注意以下安全事项。 在使用 sp_addlinkedserver 创建链接服务器时，所有本地登录都将默认映射到新的链接服务器。 若要控制对链接服务器的访问*sp_droplinkedsvrlogin*过程应该用于删除全局登录映射后, 跟*sp_addlinkedsvrlogin*将映射到的所需的登录帐户新建链接的服务器。 在使用 sp_addlinkedsvrlogin 时，建议您设置@useself参数 = TRUE。 这样就无需将用户名和密码嵌入到您的 SQL 脚本中。  
+ 此外可以使用创建链接的服务器*sp_addlinkedserver*存储过程。 有一些与此操作关联的安全注意事项。 使用 sp_addlinkedserver 创建链接的服务器后，您将所有本地登录名的映射到新的链接服务器默认情况下。 若要控制对链接服务器的访问*sp_droplinkedsvrlogin*过程应该用于删除全局登录映射后, 跟*sp_addlinkedsvrlogin*将映射到的所需的登录帐户新建链接的服务器。 在使用 sp_addlinkedsvrlogin 时，建议您设置@useself参数 = TRUE。 这样可以避免将嵌入到您的 SQL 脚本的用户名和密码。  
 
 > [!TIP]
 > 这些步骤可能随时间变化。 我们建议引用[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]文档，网址[创建链接服务器](https://docs.microsoft.com/sql/relational-databases/linked-servers/create-linked-servers-sql-server-database-engine)。
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
   
 - 是的成员的帐户登录[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] **sysadmin**固定的服务器角色  
   
@@ -49,7 +49,7 @@ ms.locfileid: "36980982"
 3. 在中**链接服务器**文字框中，输入的完整网络名称[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]你想要链接到。  
   
    > [!NOTE]
-   >  此过程通常针对的是要链接到的作为远程服务器的服务器。 这只是为了方便，用以指示链接（“远程”）服务器与本地服务器的关系。  
+   >  此过程通常是指要为远程服务器链接到的服务器。 这只是为了方便，以指示本地服务器的链接 （"远程"） 服务器的关系。  
   
 4. 下**服务器类型**，选择**SQL Server**。  
   
@@ -70,7 +70,7 @@ ms.locfileid: "36980982"
    3. 或者，如果将本地登录名映射到远程[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]登录名，输入**远程用户**名称并**远程密码**的远程服务器登录名。  
   
       > [!NOTE]
-      >  若要使用模拟，则您的 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 配置和登录帐户必须满足委派要求。 请参阅[委派配置链接服务器](https://msdn.microsoft.com/library/ms189580.aspx)的更多详细信息。  
+      >  若要使用模拟，您[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]配置和登录帐户必须满足委派要求。 请参阅[委派配置链接服务器](https://msdn.microsoft.com/library/ms189580.aspx)的更多详细信息。  
 
 7. 在左窗格中，选择**服务器选项**。 设置**RPC**并**RPC Out**参数**True**，然后选择**确定**。 
  

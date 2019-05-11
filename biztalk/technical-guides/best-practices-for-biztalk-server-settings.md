@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 461e2e1a4256d79112e4eec94047c25df34a4511
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dd3cf2d75db87e82fd0fd012f028a2ad8bc1cc2e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001113"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401252"
 ---
 # <a name="best-practices-for-biztalk-server-settings"></a>BizTalk Server 设置的最佳方案
 本主题列出了执行的操作准备情况过程应遵循的最佳做法[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
@@ -49,7 +49,7 @@ ms.locfileid: "37001113"
   
   **调整基于资源使用率的阻止功能**  
   
-- 中的阻止行为[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]默认提供良好的保护系统配置。 监视限制状态，以查看是否限制发生的性能计数器。 然后自行衡量阻止行为的资源为基础 （例如，数据库大小或内存使用率） 处于过利用。 接下来，调整阻止阈值相应地增减。 有关详细信息，请参阅[调整阻止阈值： 时间和原因](http://go.microsoft.com/fwlink/p/?LinkId=154188)(<http://go.microsoft.com/fwlink/p/?LinkId=154188>)。  
+- 中的阻止行为[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]默认提供良好的保护系统配置。 监视限制状态，以查看是否限制发生的性能计数器。 然后自行衡量阻止行为的资源为基础 （例如，数据库大小或内存使用率） 处于过利用。 接下来，调整阻止阈值相应地增减。 有关详细信息，请参阅[调整阻止阈值：何时以及为何](http://go.microsoft.com/fwlink/p/?LinkId=154188)(<http://go.microsoft.com/fwlink/p/?LinkId=154188>)。  
   
   **如果可能，请使用 PassThruTransmit 管道**  
   

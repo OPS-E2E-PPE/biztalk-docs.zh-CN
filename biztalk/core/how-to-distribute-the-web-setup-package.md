@@ -1,5 +1,5 @@
 ---
-title: 如何将 Web 安装程序包分发 |Microsoft 文档
+title: 如何分发 Web 安装包 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed7e6277045593360cbdfe57848f7313054b60f2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ecffab64a02a8c42f7a50f2c87629aa1bf520662
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254117"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385171"
 ---
-# <a name="how-to-distribute-the-web-setup-package"></a>如何将 Web 安装程序包分发
+# <a name="how-to-distribute-the-web-setup-package"></a>如何分发 Web 安装包
 创建安装包后，还需要创建一个分发文件夹以将 MSI 文件和 BindingInfo.xml 文件复制到其中来安装 Web Services。  
   
 ### <a name="to-distribute-the-web-setup-package"></a>分发 Web 安装包  
@@ -34,5 +34,5 @@ ms.locfileid: "22254117"
   
 3.  将 BindingInfo.xml 文件从 ASP.NET Web Services 项目文件夹中的临时文件夹复制到该分发文件夹。  
   
-## <a name="see-also"></a>另请参阅  
- [部署非 Visual Studio 计算机上的发布的 Web 服务](../core/deploying-published-web-services-on-a-non-visual-studio-computer.md)
+## <a name="see-also"></a>请参阅  
+ [在无 Visual Studio 的计算机上部署已发布 Web 服务](../core/deploying-published-web-services-on-a-non-visual-studio-computer.md)

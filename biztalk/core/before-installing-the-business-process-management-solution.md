@@ -12,17 +12,17 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 500e3e2f6e9ee895c41145371cacc78467b8a64c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a30c4bedeab4041002a6ab225a441ac10d37de15
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003590"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358435"
 ---
-# <a name="before-installing-the-business-process-management-solution"></a>在安装业务流程管理解决方案之前
+# <a name="before-installing-the-business-process-management-solution"></a>安装业务流程管理解决方案之前
 
 ## <a name="requirements"></a>要求
-若要在单台计算机上部署业务流程管理解决方案，必须安装以下必备组件：  
+若要部署一台计算机上的业务流程管理解决方案，必须安装以下先决条件：  
   
 - Microsoft Windows
   
@@ -34,7 +34,7 @@ ms.locfileid: "37003590"
   
 - 带 WWW 和 FTP 的 Microsoft Internet 信息服务  
   
-- 已启用 ASP.NET  
+- ASP.NET enabled  
   
 - Microsoft Visual Studio  
   

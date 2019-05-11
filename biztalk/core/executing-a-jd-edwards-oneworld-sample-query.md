@@ -12,19 +12,19 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e4183124a5306b42fa4ef66eec7b0fe0a0390c0c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6e017be5c36766c6be0997c5dbcf1f1aef7d2384
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001830"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65346039"
 ---
 # <a name="execute-a-jd-edwards-oneworld-sample-query"></a>执行 JD Edwards OneWorld 示例查询
-可以使用 JD Edwards OneWorld 适配器从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 系统访问 JD Edwards OneWorld (JDEOW) 系统。 此适配器随[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。
+JD Edwards OneWorld (JDEOW) 系统是从可访问[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]系统通过使用 JD Edwards OneWorld 适配器。 此适配器随[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。
   
- 这是 JD Edwards OneWorld 实验室工作的第二部分。 第一部分（实验室 1）中，你在没有 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 协助或其他 Microsoft 技术的情况下，手动访问 JD Edwards OneWorld 系统上的数据。 在本部分（实验室 2）中，你将创建一个 BizTalk 业务流程作为 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk 项目的一部分。 你将在此业务流程中配置端口，以使用 JD Edwards OneWorld 适配器从 JD Edwards OneWorld 系统中获取数据。  
+ 这是 JD Edwards OneWorld 实验室工作的第二部分。 在第一部分 (实验室 1) 中，手动访问 JD Edwards OneWorld 系统不需要的协助上的数据[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]或其他 Microsoft 技术。 在本部分（实验室 2）中，你将创建一个 BizTalk 业务流程作为 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] BizTalk 项目的一部分。 在此业务流程，以使用 JD Edwards OneWorld 适配器从 JD Edwards OneWorld 系统中获取数据，您将配置端口。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
   
 - Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]
   
@@ -32,19 +32,19 @@ ms.locfileid: "37001830"
   
 - JD Edwards OneWorld 客户端软件  
   
-- 与另一台服务器上的 JD Edwards OneWorld 系统的网络连接  
+- 网络连接到另一台服务器上的 JD Edwards OneWorld 系统  
   
 - Microsoft BizTalk Adapters for Enterprise Applications  
   
 > [!NOTE]
 >  请参阅[安装和配置企业应用程序的适配器](../adapters-and-accelerators/install-configure-biztalk-adapters-enterprise-applications.md)用于 JD Edwards、 PeopleSoft 和 TIBCO 适配器的重要配置信息。  
   
-## <a name="lab-2---executing-a-jd-edwards-oneworld-sample-query"></a>实验室 2 - 执行 JD Edwards OneWorld 示例查询  
+## <a name="lab-2---executing-a-jd-edwards-oneworld-sample-query"></a>实验室 2-执行 JD Edwards OneWorld 示例查询  
  在此实验中，将执行**获取**针对 JD Edwards OneWorld 系统的操作。 具体将执行以下任务：  
   
 - 验证 JD Edwards OneWorld 先决条件  
   
-- 在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中设置 JD Edwards OneWorld 发送端口  
+- 设置在 JD Edwards OneWorld 发送端口 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]  
   
 - 创建一个 BizTalk 业务流程项目  
   
@@ -52,33 +52,33 @@ ms.locfileid: "37001830"
   
 - 测试应用程序并查看 XML 输出  
   
-  你将使用 JD Edwards OneWorld 适配器从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中访问 JD Edwards OneWorld 系统上的数据。  
+  您将使用 JD Edwards OneWorld 适配器从 JD Edwards OneWorld 系统上访问数据[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
   
-  此适配器允许由业务流程执行的请求和响应来处理 JD Edwards OneWorld 对象。 许多方法可用于架构对象。 此实验演示了如何使用**Address Book MBF**方法。  
+  此适配器支持使用请求和响应执行的业务流程来处理 JD Edwards OneWorld 对象。 许多方法都可用于架构对象。 此实验演示了如何使用**Address Book MBF**方法。  
   
-  在运行服务请求之前，必须为特定的 JD Edwards OneWorld 对象创建服务请求和响应架构。 通过直接询问 JD Edwards OneWorld 中支持的元数据对象，添加生成的项/添加适配器向导可以创建这些架构。 本实验室阐释了创建的架构所需的步骤**Address Book MBF**方法并处理查询。  
+  在运行之前服务请求，必须创建特定的 JD Edwards OneWorld 对象的服务请求和响应架构。 添加生成的项 / 添加适配器向导创建这些架构通过直接询问 JD Edwards OneWorld 中支持的元数据对象。 本实验室阐释了创建的架构所需的步骤**Address Book MBF**方法并处理查询。  
   
-## <a name="step-1-verify-the-jd-edwards-oneworld-prerequisites"></a>步骤 1： 验证 JD Edwards OneWorld 先决条件  
- 在开始创建 BizTalk 项目以便使用 JD Edwards OneWorld 适配器之前，你需要确保访问 JD Edwards OneWorld 系统所需的文件和适配器设置正确。 在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 计算机上，JD Edwards OneWorld 适配器通过 Java 接口与 JD Edwards OneWorld 系统进行通信。    
+## <a name="step-1-verify-the-jd-edwards-oneworld-prerequisites"></a>第 1 步：验证 JD Edwards OneWorld 先决条件  
+ 在开始创建 BizTalk 项目，以便使用与 JD Edwards OneWorld 适配器之前，您需要确保文件和适配器正确设置了访问 JD Edwards OneWorld 系统。 在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机，JD Edwards OneWorld 适配器与 JD Edwards OneWorld 系统进行通信使用 Java 接口。    
 
-1. 四个文件是对使用 JD Edwards OneWorld 适配器的 JD Edwards OneWorld 系统所需的适当的接口访问： Connector.jar、 Kernel.jar、 BTSLIBinterop.jar 和 JDEJAccess.jar。  
+1. 四个文件是对使用 JD Edwards OneWorld 适配器的 JD Edwards OneWorld 系统所需的适当的接口访问：Connector.jar、 Kernel.jar、 BTSLIBinterop.jar 和 JDEJAccess.jar。  
   
-    -   Connector.jar 和 Kernel.jar 文件随附了 JD Edwards OneWorld 系统，可以从 JD Edwards OneWorld 管理员获取。 这些文件在 C:\JDEOWJars 文件夹中。  
+    -   Connector.jar 和 Kernel.jar 文件随附 JD Edwards OneWorld 系统，并从 JD Edwards OneWorld 管理员获取。 这些文件位于在 C:\JDEOWJars 文件夹中。  
   
-    -   遵循适配器安装指南中附带的这些说明，BTSLIBinterop.jar 文件可由 JD Edwards OneWorld 系统生成。 此文件在 C:\JDEOWJars 文件夹中。  
+    -   JD Edwards OneWorld 系统生成 BTSLIBinterop.jar 文件包括适配器安装指南中的说明。 此文件位于在 C:\JDEOWJars 文件夹中。  
   
-    -   JDEJAccess.jar 文件是 JDEOW 适配器的一部分，包含在该适配器的安装中。 默认情况下，它位于 C:\Program Files\Microsoft BizTalk Adapters Enterprise applications\j.d.的。 Edwards OneWorld® \Classes 文件夹。  
+    -   JDEJAccess.jar 文件是 JDEOW 适配器的一部分，包含与安装的适配器。 默认情况下，它位于 C:\Program Files\Microsoft BizTalk Adapters Enterprise applications\j.d.的。 Edwards OneWorld® \Classes 文件夹。  
   
 2. 确认 Connector.jar、 Kernel.jar 和 BTSLIBinterop.jar 文件存在于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机的 C:\JDEOWJars 文件夹中。  
   
 3. 确认 JDEJAccess.jar 文件上是否存在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]C:\Program Files\Microsoft BizTalk Adapters for Enterprise applications\j.d.中的计算机。 Edwards OneWorld\Classes 文件夹。  
   
-## <a name="step-2-configure-biztalk-send-ports"></a>步骤 2： 配置 BizTalk 发送端口  
+## <a name="step-2-configure-biztalk-send-ports"></a>第 2 步：配置 BizTalk 发送端口  
 接下来，验证 JD Edwards OneWorld 适配器已安装，并且创建发送端口。  
 
 1. 打开**BizTalk Server 管理**，展开**控制台根节点**，展开**BizTalk Server 管理**，展开**BizTalk 组**，展开**平台设置**，然后展开**适配器**。  
   
-   确认**JDE_OneWorld**列出适配器。 如果没有安装 JD Edwards OneWorld 适配器，请安装企业应用程序的 BizTalk 适配器（请参阅前面的“先决条件”部分）。 安装适配器后，右键单击**适配器**，然后单击**新建-适配器**安装 JD Edwards OneWorld 适配器。 重新启动主机实例这才会生效。  
+   确认**JDE_OneWorld**列出适配器。 如果未安装 JD Edwards OneWorld 适配器，用于企业应用程序 （请参阅前面的"先决条件"部分） 安装的 BizTalk 适配器。 安装适配器后，右键单击**适配器**，然后单击**新建-适配器**安装 JD Edwards OneWorld 适配器。 重新启动主机实例这才会生效。  
   
 2. 展开**应用程序**，然后展开**BizTalk Application 1**。  
   
@@ -116,7 +116,7 @@ ms.locfileid: "37001830"
   
 5. 选择**确定**以关闭**发送端口属性**。  
   
-## <a name="step-3-create-a-biztalk-orchestration-project"></a>步骤 3： 创建 BizTalk 业务流程项目  
+## <a name="step-3-create-a-biztalk-orchestration-project"></a>步骤 3：创建 BizTalk 业务流程项目  
 接下来，创建的 BizTalk 项目中[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，并要处理之间的通信的项目中配置业务流程[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]和 JD Edwards OneWorld 系统。 你将添加发送端口和接收端口，生成项目，然后部署项目。  
 
   
@@ -128,19 +128,19 @@ ms.locfileid: "37001830"
   
     ![](../core/media/jdeow-addadapterwizardselectadapter.gif "JDEOW_AddAdapterWizardSelectAdapter")  
   
-4. 上**选择导入的服务**页上，打开**JD Edwards OneWorld**。 JDEOW 系统使用 BrowsingAgent 程序通过适配器进行连接。 BrowsingAgent 返回以下服务。  
+4. 上**选择导入的服务**页上，打开**JD Edwards OneWorld**。 JDEOW 系统使用 BrowsingAgent 程序通过适配器联系。 BrowsingAgent 返回以下服务。  
   
     ![](../core/media/jdeow-callbsfn.gif "JDEOW_CALLBSFN")  
   
 5. 展开**CALLBSFN**向下滚动到**N0100041-Address Book MBF**。 选择 N0100041，然后单击**完成**。  
   
-6. 在解决方案资源管理器中，会有一个新的 BizTalk 业务流程，包含两个新的相关架构文件。 这些文件由添加适配器向导创建。 双击“BizTalk Orchestration.odx”文件以打开业务流程。   
+6. 在解决方案资源管理器，没有新的 BizTalk 业务流程包含两个新关联的架构文件。 这些文件由添加适配器向导创建。 双击“BizTalk Orchestration.odx”文件以打开业务流程。   
   
     ![](../core/media/jdeow-solution-explorer-jde-ow-test-schemas.gif "JDEOW_Solution_Explorer_JDE_OW_TEST_Schemas")  
   
-   此业务流程接受已为 JD Edwards OneWorld 系统设置格式的 XML 文件作为文件适配器中的输入。 此业务流程使用 JD Edwards OneWorld 适配器将 XML 文件发送到 JD Edwards OneWorld 系统。 JD Edwards OneWorld 处理查询并生成包含结果的输出 XML 文件。 此 XML 文件通过 JD Edwards OneWorld 适配器返回到业务流程，并且文件适配器将 XML 文件写入磁盘上的输出位置。  
+   此业务流程接受作为输入文件适配器用于 JD Edwards OneWorld 系统设置格式的 XML 文件中。 业务流程使用 JD Edwards OneWorld 适配器将 XML 文件发送到 JD Edwards OneWorld 系统。 JD Edwards OneWorld 处理查询并生成一个包含结果的输出 XML 文件。 此 XML 文件返回到业务流程通过 JD Edwards OneWorld 适配器，文件适配器在磁盘上将 XML 文件写入到输出位置。  
   
-   要完成业务流程，你需要创建并配置用于接收和发送 XML 文件的端口。 首先，配置文件适配器所用的接收端口，以便从磁盘将包含查询的 XML 输入到业务流程。  
+   要完成业务流程，你需要创建并配置用于接收和发送 XML 文件的端口。 首先，配置接收端口，以将文件适配器用于将输入到业务流程从磁盘中包含的查询的 XML。  
   
 #### <a name="configure-a-receive-port-to-accept-the-input-xml-file"></a>配置接收端口，以接受 XML 输入的文件  
   
@@ -154,19 +154,19 @@ ms.locfileid: "37001830"
   
     **端口类型名称**: `JDE_FileIn_Port`  
   
-    **通信模式**： **单向**  
+    **通信模式**:**One Way**  
   
-    **访问限制**： **内部 - 仅限于此项目**  
+    **访问限制**:**内部-仅限于此项目**  
   
 5. 单击“下一步”转至“端口绑定”页  ，然后选择以下属性值：    
   
-    **端口通信方向**： **始终在此端口上接收消息**  
+    **端口通信方向**:**我将始终接收此端口上的消息**  
   
-    **端口绑定**： **以后指定**  
+    **端口绑定**:**以后指定**  
   
 6. 单击“下一步” ，然后单击“完成” 。  
   
-   接下来，创建一个发送/接收端口，将包含查询的初始 XML 输入文件发送到 JD Edwards OneWorld 系统。 此端口还接收 XML 输出文件，该文件包含来自对 JD Edwards OneWorld 系统调用的查询结果。  
+   接下来，创建用于发送包含对 JD Edwards OneWorld 系统的查询的初始 XML 输入的文件的发送/接收端口。 此端口还将接收包含到 JD Edwards OneWorld 系统调用的查询结果的输出 XML 文件。  
   
 #### <a name="configure-a-sendreceive-port-to-interface-with-jd-edwards-oneworld"></a>使用 JD Edwards OneWorld 配置到接口发送/接收端口  
   
@@ -180,11 +180,11 @@ ms.locfileid: "37001830"
   
     **端口通信方向**:**我将发送请求并接收响应**  
   
-    **端口绑定**： **以后指定**  
+    **端口绑定**:**以后指定**  
   
-4. 单击“下一步” ，然后单击“完成” 。 在端口图面上，你将看到端口和可用的方法。  
+4. 单击“下一步” ，然后单击“完成” 。 端口图面上将看到端口和可用的方法。  
   
-   最后，配置文件适配器要使用的发送端口，从而将包含查询结果的 XML 输出到磁盘。  
+   最后，配置发送端口以通过文件适配器用于输出包含到磁盘的查询结果的 XML。  
   
 #### <a name="configure-a-send-port-to-output-the-xml-file-to-disk"></a>配置发送端口输出到磁盘的 XML 文件  
   
@@ -196,19 +196,19 @@ ms.locfileid: "37001830"
   
     **端口类型名称**: `JDE_FileOut_Port`  
   
-    **通信模式**： **单向**  
+    **通信模式**:**One Way**  
   
-    **访问限制**： **内部 - 仅限于此项目**  
+    **访问限制**:**内部-仅限于此项目**  
   
 4. 单击“下一步”转至“端口绑定”页  ，然后选择以下属性值：    
   
-    **端口通信方向**： **始终在此端口上发送消息**  
+    **端口通信方向**:**我始终在发送消息此端口上**  
   
-    **端口绑定**： **以后指定**  
+    **端口绑定**:**以后指定**  
   
 5. 单击“下一步” ，然后单击“完成” 。  
   
-   端口图面上显示的是 JD Edwards OneWorld 服务的新端口和可用方法。 随后，你将指定 JD Edwards OneWorld 适配器，以发送和接收来自 JD Edwards OneWorld 系统的文件。  
+   端口图面上显示的是新的端口与用于 JD Edwards OneWorld 服务的可用方法。 随后将指定 JD Edwards OneWorld 适配器发送和接收来自 JD Edwards OneWorld 系统的文件。  
   
    **JDE_File_In**并**JDE_File_Out**您刚才创建需要端口关联的消息类型。  
   
@@ -248,14 +248,14 @@ ms.locfileid: "37001830"
   
      ![](../core/media/jdeow-portsurface-connectcomponentstoports.gif "JDEOW_PortSurface_ConnectComponentsToPorts")  
   
-## <a name="step-4-build-and-deploy-the-project"></a>步骤 4： 生成并部署项目  
- 现在，BizTalk 项目已完成，你可以生成项目并将其部署在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中。  
+## <a name="step-4-build-and-deploy-the-project"></a>步骤 4：生成并部署项目  
+ 现在，BizTalk 项目已完成，你可以生成项目并将其部署在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]中。  
   
 1.  启动**Visual Studio 命令提示符**。  
   
-2.  要生成项目，你需要强名称密钥文件。 在命令提示符下，输入以下内容以创建强名称密钥文件：  
+2.  若要生成项目时，需要一个强名称密钥文件。 在命令提示符处，输入以下命令以创建强名称密钥文件：  
   
-     **sn-k labs.snk**  
+     **sn -k labs.snk**  
   
 3.  在解决方案资源管理器中右键单击**JD_OW_Test**项目，并单击**属性**以启动项目的项目设计器。  
   
@@ -277,7 +277,7 @@ ms.locfileid: "37001830"
   
      ![](../core/media/jdeow-deployoutput.gif "JDEOW_DeployOutput")  
   
-## <a name="step-5-test-the-application-and-viewing-the-xml-output"></a>步骤 5： 测试应用程序和查看 XML 输出  
+## <a name="step-5-test-the-application-and-viewing-the-xml-output"></a>步骤 5：测试应用程序和查看 XML 输出  
  现在，你将测试你所创建和部署的应用程序。 你将创建用于启动业务流程进程的 XML 文件，然后将文件夹配置为接收和发送应用程序中的 XML 文件。 配置应用程序之后，将运行该应用程序并查看业务流程返回的 XML 文件。  
   
 #### <a name="generate-the-xml-file-for-the-query"></a>生成查询的 XML 文件  
@@ -314,13 +314,13 @@ ms.locfileid: "37001830"
   
 7. 键入或选择以下属性值：  
   
-    **名称**: JDE_`FileInLoc`  
+    **名称**：JDE_`FileInLoc`  
   
-    **类型**： **文件**  
+    **类型**：**File**  
   
-    **接收处理程序**： **BizTalkServerApplication**  
+    **接收处理程序**:**BizTalkServerApplication**  
   
-    **接收管道**： **XMLReceive**  
+    **接收管道**:**XMLReceive**  
   
     ![](../core/media/jdeow-filein-loc-receivelocationproperties.gif "JDEOW_FileIn_Loc_ReceiveLocationProperties")  
   
@@ -334,11 +334,11 @@ ms.locfileid: "37001830"
   
      **名称**：`JDE_OW_Port`  
   
-     **类型**: **JDE_OneWorld**  
+     **类型**：**JDE_OneWorld**  
   
-     **发送处理程序**： **BizTalkServerApplication**  
+     **发送处理程序**:**BizTalkServerApplication**  
   
-     **管道**：“XMLTransmit”  和“XMLReceive”   
+     **管道**:**XMLTransmit**和**XMLReceive**  
   
 11. 单击“配置” ，然后输入以下属性值：  
   
@@ -368,13 +368,13 @@ ms.locfileid: "37001830"
   
      **名称**：`FileOutPort`  
   
-     **类型**： **文件**  
+     **类型**：**File**  
   
-     **发送处理程序**： **BizTalkServerApplication**  
+     **发送处理程序**:**BizTalkServerApplication**  
   
-     **发送管道**： **XMLTransmit**  
+     **发送管道**:**XMLTransmit**  
   
-15. 单击**配置**并键入`C:\Labs\JDE_OW_Test\FileOut`为**目标文件夹。** 。为“文件名”保留“”，因为这会为每个消息生成唯一的文件。  ，  because this results in a unique file ， each message.  
+15. 单击“配置”  ，为“接收文件夹”键入`C:\Labs\JDE_OW_Test\FileOut` ， **C:\Labs\PS_Test\FileOut** 。为“文件名”保留“”，因为这会为每个消息生成唯一的文件。  ，  because this results in a unique file ， each message.  
   
      ![](../core/media/jdeow-file-transport-properties-fileout.gif "JDEOW_File_Transport_Properties_FileOut")  
   
@@ -396,15 +396,15 @@ ms.locfileid: "37001830"
   
 4.  有关**mnAddressBookNumber**插入数字`500`。  
   
-5.  保存所做的更改并将文件复制到**C:\Labs\JDE_OW_Test\FileIn**文件夹。 这是启动业务流程进程的接收位置。  
+5.  保存所做的更改并将文件复制到**C:\Labs\JDE_OW_Test\FileIn**文件夹。 这是启动业务流程的接收位置。  
   
-6.  几秒钟后，应出现一个 XML 文件中**C:\Labs\JDE_OW_Test\FileOut**文件夹。 此文件应包含地址为 500 的所有记录。  
+6.  几秒钟后，应出现一个 XML 文件中**C:\Labs\JDE_OW_Test\FileOut**文件夹。 这应包含的所有记录的地址为 500。  
   
      ![](../core/media/jdeow-xml-output-jde-callbsfn.gif "JDEOW_XML_Output_JDE_CALLBSFN")  
   
      此返回的记录数据应与针对实验室 1 中的 JD Edwards OneWorld 系统的查询返回的数据匹配。 通过比较在实验室 1 中获取的记录，你可以验证**获取**方法正常工作。  
   
-## <a name="summary"></a>“摘要”  
- 在本实验室中，你首先验证了访问 JD Edwards OneWorld 系统所需的先决条件是否正确设置。 然后，你使用 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 创建了包含业务流程的新 BizTalk 项目。 你将配置 BizTalk 业务流程，以使用 JD Edwards OneWorld 适配器从 JD Edwards OneWorld 系统中获取数据。 为配置业务流程，你创建了发送端口、接收端口和发送/接收端口。 将这些端口绑定到 JD Edwards OneWorld 适配器，并将消息分配给相应的端口。  
+## <a name="summary"></a>总结  
+ 在此实验中，您首先验证，系统必备组件已正确设置了访问 JD Edwards OneWorld 系统。 然后，你使用 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 创建了包含业务流程的新 BizTalk 项目。 配置 BizTalk 业务流程，以使用 JD Edwards OneWorld 适配器从 JD Edwards OneWorld 系统中获取数据。 为配置业务流程，你创建了发送端口、接收端口和发送/接收端口。 您将这些端口绑定到 JD Edwards OneWorld 适配器，并将消息分配给相应的端口。  
   
- 完成 BizTalk 项目后，你使用 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 来生成和部署该项目。 随后，配置了新应用程序，运行该应用程序，并从 JD Edwards OneWorld 系统中获取数据。 要验证应用程序是否正常运行，你将其输出 XML 文件与实验室 1 中从 JD Edwards OneWorld 系统接收到的文件进行了比较。
+ 完成 BizTalk 项目后，你使用 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 来生成和部署该项目。 然后，你将配置新的应用程序并运行它来从 JD Edwards OneWorld 系统中获取数据。 若要验证在应用程序正常运行，与比较其输出 XML 文件从 JD Edwards OneWorld 系统在实验室 1 中收到的文件。

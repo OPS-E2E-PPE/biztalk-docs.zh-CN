@@ -1,5 +1,5 @@
 ---
-title: WCF-CustomIsolated 适配器概述 | Microsoft Docs
+title: 什么是 WCF CustomIsolated 适配器？ | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,20 +14,20 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2fdf5a646f586030df6c9492fc6fb2999e49527a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1b60cc39092961703f45921c34a518f3da89691c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289693"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242790"
 ---
-# <a name="what-is-the-wcf-customisolated-adapter"></a>WCF-CustomIsolated 适配器概述
-通过 WCF-CustomIsolated 适配器，可将 BizTalk Server 中的 WCF 扩展性组件与独立主机配合使用。 该适配器为 WCF 框架赋予了完整的灵活性。 它允许用户选择并配置接收位置的 WCF 绑定，并指定终结点行为和安全设置。 该适配器仅可由 Internet 信息服务 (IIS) 中承载的传输使用。  
+# <a name="what-is-the-wcf-customisolated-adapter"></a>什么是 WCF CustomIsolated 适配器？
+Wcf-customisolated 适配器用于启用 BizTalk Server 中的 WCF 扩展性组件与独立主机配合使用。 该适配器能够完整 WCF 框架的灵活性。 它允许用户选择和配置 WCF 绑定的接收位置，并指定终结点行为和安全设置。 在 Internet 信息服务 (IIS) 承载的传输仅可以使用此适配器。  
   
- WCF-CustomIsolated 适配器仅包含接收适配器。 使用 WCF-CustomIsolated 接收适配器，可通过为独立主机中运行的接收位置选择并配置的 WCF 绑定、服务行为、终结点行为、安全机制和入站消息正文来源接收 WCF 服务请求。 使用 WCF-CustomIsolated 接收适配器的接收位置可以配置为单向或请求-响应（双向）。  
+ Wcf-customisolated 适配器由一个接收适配器组成。 通过 WCF 绑定、 服务行为、 终结点行为、 安全机制和入站的消息正文的选择和配置的源 Wcf-customisolated 接收适配器接收 WCF 服务请求使用的接收位置在独立主机中运行。 使用 Wcf-customisolated 接收适配器的接收位置可以配置为单向或请求-响应 （双向）。  
   
- 接收适配器有关 WCF 的详细信息，请参阅[WCF 适配器是什么？](../core/what-are-the-wcf-adapters.md)。  
+ 接收适配器的有关 WCF 的详细信息，请参阅[WCF 适配器是什么？](../core/what-are-the-wcf-adapters.md)。  
   
-## <a name="see-also"></a>另请参阅  
- [配置 WCF CustomIsolated 适配器](../core/configuring-the-wcf-customisolated-adapter.md)   
+## <a name="see-also"></a>请参阅  
+ [配置 Wcf-customisolated 适配器](../core/configuring-the-wcf-customisolated-adapter.md)   
  [WCF 适配器](../core/wcf-adapters.md)

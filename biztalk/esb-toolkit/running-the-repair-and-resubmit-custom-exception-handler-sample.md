@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 34bb03565f7b044f9c6c2f29332862ae8aafef7e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e24551a9f3590562b3095a51b0f99895dff94b68
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004478"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242712"
 ---
 # <a name="running-the-repair-and-resubmit-custom-exception-handler-sample"></a>运行修复和重新提交自定义异常处理程序示例
 修复和重新提交自定义异常处理程序示例演示如何将人为干预集成到 ESB 和 Microsoft 基于 BizTalk 的应用程序处理，并实现有用的设计模式的极有效技术。 示例代码无缝集成到 ESB 异常管理系统。  

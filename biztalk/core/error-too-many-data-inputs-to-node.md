@@ -1,5 +1,5 @@
 ---
-title: 错误-太多的数据输入到节点 |Microsoft 文档
+title: 错误-节点的数据输入太多 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c9e465f861c4048708f41ea86f04ffd52375dec9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3c5674e4a4dc0c18556b61ff49a761e89d7891dd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241021"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388344"
 ---
-# <a name="error---too-many-data-inputs-to-node"></a>错误-太多的数据输入到节点
+# <a name="error---too-many-data-inputs-to-node"></a>错误-节点的数据输入太多
 **错误代码**  
   
  btm1005  
   
  **说明**  
   
- 有大量的链接连接到比数输入指向目标架构中的指定节点**循环**functoid 连接到指定的节点的祖先节点。 前一类型和后一类型的链接数应该一致。  
+ 有大量的链接连接到的输入链接数比目标架构中所指示的节点**循环**functoid 连接到所指示的节点的祖先节点。 前者和后者类型的链接数应与匹配。  
   
  **用户执行任何操作**  
   
- 链接数连接到指定的节点和返工**循环**functoid 连接到祖先节点以便将它们与匹配。
+ 链接的数目已连接到所指示的节点和返工**循环**functoid 连接到祖先节点，使其匹配。

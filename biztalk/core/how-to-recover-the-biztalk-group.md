@@ -12,20 +12,20 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e96e647358a0fd0601933dc0b1744537d63ae630
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2e637b974fc49fcfa3b1b6c27452ccc7d036359f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023587"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384423"
 ---
 # <a name="how-to-recover-the-biztalk-group"></a>如何恢复 BizTalk 组
-必须在系统恢复过程中将 BizTalk Server 重新连接到现有的 BizTalk 组。  
+必须重新加入到现有 BizTalk 组作为系统恢复过程的一部分在 BizTalk Server。  
   
-## <a name="prerequisites"></a>必要條件  
- 必须以 Administrators 组成员的身份登录，才能执行此过程。  
+## <a name="prerequisites"></a>先决条件  
+ 您必须为要执行此过程的管理员组的成员身份登录。  
   
- 如果要恢复 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 标准版，必须下载用于帮助恢复该服务器的脚本。 下载[RestoreConfig.vbe](https://www.microsoft.com/download/details.aspx?id=7462)。  
+ 如果要恢复[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Standard Edition 中，你必须下载一个有助于恢复服务器脚本。 下载[RestoreConfig.vbe](https://www.microsoft.com/download/details.aspx?id=7462)。  
   
 ## <a name="recover-the-biztalk-group-standard-edition"></a>恢复 BizTalk 组 （标准版）  
   
@@ -37,13 +37,13 @@ ms.locfileid: "37023587"
   
     其中*\<SavedConfigXML\>* 是完整路径和保存的配置文件的文件名。  
   
-    上述操作应该在不显示任何错误的情况下退出。  
+    上述应退出而不显示任何错误。  
   
    > [!NOTE]
    >  若要恢复[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]64 位计算机上的 Standard Edition，您必须运行**RestoreConfig.vbe**从 32 位命令提示符，以便它能够更新 32 位注册表。 若要打开 32 位命令提示符下，单击**启动**，单击**运行**，类型**c:\windows\syswow64\cmd.exe**，然后单击**确定**。  
    > 
    > [!NOTE]
-   >  失败的计算机名称包含在已保存的配置文件中。 要还原到的计算机的名称必须是相同的名称。 您必须在具有该名称的计算机上运行上述脚本。 但是，您可以在已保存配置文件中更改失败的计算机名称。 如果进行了此操作，您可以在具有不同名称的计算机上运行上述脚本。  
+   >  已保存的配置文件中包含失败的计算机的名称。 要还原到的计算机的名称必须具有该名称。 您必须具有该名称的计算机上运行上述脚本。 但是，可以更改已保存的配置文件中失败的计算机的名称。 如果这样做，您可以运行上述脚本的计算机上使用不同的名称。  
   
 ## <a name="recover-the-biztalk-group-developer-edition-or-enterprise-edition"></a>恢复 BizTalk 组 （开发人员版或企业版）  
   

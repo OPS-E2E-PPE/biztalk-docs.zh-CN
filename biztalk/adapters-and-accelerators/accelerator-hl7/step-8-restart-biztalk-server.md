@@ -1,5 +1,5 @@
 ---
-title: 步骤 8： 重启 BizTalk Server |Microsoft Docs
+title: 步骤 8：重启 BizTalk Server |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9f79e711a52c1d55417c0872e2b9ce9fa8c7a6e7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 38796625e3fcd65647f051441b9d5c683018eaf6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969374"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65287870"
 ---
-# <a name="step-8-restart-biztalk-server"></a>步骤 8： 重启 BizTalk Server
+# <a name="step-8-restart-biztalk-server"></a>步骤 8：重启 BizTalk Server
 在此步骤中，您重新启动[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]为了使您所做的更改在本教程中才会生效。  
   
 ### <a name="to-restart-biztalk-server"></a>若要重新启动 BizTalk Server  
@@ -30,4 +30,4 @@ ms.locfileid: "36969374"
   
 3. 右键单击你的服务器，然后依次**重新启动**。  
   
-   请继续执行[步骤 9： 验证零碎的入站的批处理方案](../../adapters-and-accelerators/accelerator-hl7/step-9-verify-the-fragmented-inbound-batch-scenario.md)。
+   请继续执行[步骤 9:验证零碎的入站的批处理方案](../../adapters-and-accelerators/accelerator-hl7/step-9-verify-the-fragmented-inbound-batch-scenario.md)。

@@ -14,12 +14,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ee61bccfae53a79d8fba6bd0aa5af2c537d98270
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 66e76b1f13d787c17b25c7659bf37eeeb4126610
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22255533"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383984"
 ---
 # <a name="how-to-search-for-map-items"></a>如何搜索映射项
 使用 BizTalk 映射器，可以搜索源架构、目标架构和网格图面中的项目。 本主题提供有关如何执行此操作的信息。  

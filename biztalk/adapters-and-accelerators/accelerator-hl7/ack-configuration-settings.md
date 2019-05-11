@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 06cedaee1ca0ad574920cfb646f69d63157c8e67
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f75a9ded38c45f71c16b011087eff3b90b740b8e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968054"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65247528"
 ---
 # <a name="ack-configuration-settings"></a>ACK 配置设置
 Microsoft[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]分析器生成确认基于贸易合作伙伴管理 (TPM) 设置。 确认 (ACK) 设置都依赖于合作伙伴信息。 不使用架构类型。 当[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]与 MSH15 字段含有 AL、 SU 或 ER，接收到 ACK 消息[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]可能会发送此信息基于分析的 ACK 标头和 TPM 配置的结果的 ACK。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 检索合作伙伴确认设置并返回以下五个值之一：  

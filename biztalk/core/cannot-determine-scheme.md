@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e6086562f593b7ca04db63b7fb41f5cf128afe9d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fb18e7d19e9eca1d68839bd626adbcd838b571cc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007166"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357638"
 ---
 # <a name="cannot-determine-scheme"></a>无法确定方案
 ## <a name="details"></a>详细信息  
@@ -30,13 +30,13 @@ ms.locfileid: "37007166"
 |  事件源   |                                         0                                          |
 |    组件    |                                         0                                          |
 |  符号名称  |                                         0                                          |
-|  消息正文   |                 无法确定方案；请指定有效的绑定。                  |
+|  消息正文   |                 无法确定方案;指定有效的绑定。                  |
   
 ## <a name="explanation"></a>解释  
- 已经指定的传输绑定元素没有方案。  
+ 已指定的传输绑定元素没有一种方案。  
   
 ## <a name="user-action"></a>用户操作  
- 选择一个有效的绑定，并确保传输绑定元素具有有效的方案。 如果使用自定义绑定，请确保指定了有效的传输绑定元素。  
+ 选择一个有效的绑定，并确保传输绑定元素具有有效的方案。 如果使用自定义绑定时，请确保指定有效的传输绑定元素。  
   
  有关其他信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
   

@@ -21,12 +21,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 73508f573e4584ae841779301c426fa06bb78144
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 47316199de1f155b98d66e51b7e62a00786a7a60
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974246"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65290066"
 ---
 # <a name="msh-override"></a>MSH 替代
 Microsoft BizTalk Accelerator for HL7 之前 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 将出站的 HL7 消息路由到发送端口，你可能想要替换的 MSH 段中的某些值。 您可能想要执行此操作一条消息的订阅包含多个发送端口，并且每个发送端口应会看到接收应用程序字段中的不同值。  

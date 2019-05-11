@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1916b5b182fdd11718254c738c8df83a6ca6e6c7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 86178b4a75fce8b4cd6b0842cd4fe5dd8ddc6dab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985062"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376937"
 ---
 # <a name="tools"></a>工具
 本部分提供有关使用 Microsoft 中包含的实用程序的说明[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]软件开发工具包 (SDK)。  

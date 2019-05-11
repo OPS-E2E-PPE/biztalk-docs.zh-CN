@@ -1,5 +1,5 @@
 ---
-title: 索引 Functoid |Microsoft 文档
+title: 索引 Functoid |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,17 +16,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a22881e7694fee872b7820b8b99157ef2cf20170
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 826f1464b78027faf268ddce7dfea97271ff8698
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25972579"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65332092"
 ---
-# <a name="index-functoid"></a>“索引”Functoid
-**索引**functoid 使您能够选择从特定的记录序列中记录的信息。 每个**索引**functoid 从单个字段中收集信息。  
+# <a name="index-functoid"></a>索引 Functoid
+**索引**functoid，您可以选择从一系列记录中的特定记录的信息。 每个**索引**functoid 从单个字段中收集的信息。  
   
- 某些记录通常会在输入文件中出现多次。 例如，在天气报表中， **DailySummary**元素可能会出现多次。 **DailySummary**元素可能包括使温度和大气压，风速的特性。 下面列出了一个示例气象报表的代码：  
+ 某些记录通常会在输入文件中出现多次。 例如，在气象报表**DailySummary**元素可能多次出现。 **DailySummary**元素可能包含温度、 气压和风速的属性。 以下代码是天气报告的示例。  
   
 ```  
 <ns0:WeatherReport xmlns:ns0="http://IndexFunctoid.WeatherReport">  
@@ -36,32 +36,32 @@ ms.locfileid: "25972579"
 </ns0:WeatherReport>  
 ```  
   
- 在基础架构中， **Max Occurs**属性**DailySummary**记录应设置为不受限制，以指示定期或循环记录。 这样，BizTalk 映射器就会将此记录编译为循环。  
+ 在基础架构中， **Max Occurs**属性**DailySummary**记录将被设置为 unbounded 若要表示重复或循环记录。 BizTalk 映射器将此记录编译为循环。  
   
- 假设你想要收集的前两个的天气信息**DailySummary**气象报告的记录。 在 BizTalk 映射程序中每个属性从**DailySummary**记录传入的源架构可以连接到**索引**functoid。 接下来，每个**索引**functoid 可以指定**DailySummary**记录要从中信息： 第一个或第二个。 **索引**functoid 然后可以连接到目标架构的相应字段。  
+ 假设你想要收集气象信息前两个**DailySummary**天气报告的记录。 在 BizTalk 映射器中，每个属性从**DailySummary**传入源架构的记录可以连接到**索引**functoid。 接下来，每个**索引**functoid 可以指定**DailySummary**记录从其提取信息： 第一个或第二个。 **索引**functoid 就可连接到目标架构的相应字段。  
   
- 下图显示**索引**functoid 采用这种方式。  
+ 下图显示**索引**以这种方式使用的 functoid。  
   
  ![](../core/media/ebiz-prog-map-index.gif "ebiz_prog_map_index")  
-“索引”Functoid 示例  
+索引 Functoid 示例  
   
- 若要获取的第一天的每日摘要信息，请上限设置为三个**索引**functoid 具有其索引值设置为 1。 若要获取第二天的每日摘要信息，请越小，将设置为三个**索引**functoid 具有它们设置为 2 的索引值。  
+ 若要获取的第一天的每日摘要信息，上面一组三个**索引**functoid 具有的索引值设置为 1。 若要获取第二天的每日摘要信息，越低，组的三个**索引**functoid 将其设置为 2 的索引值。  
   
- **索引**functoid 使用**配置\<Functoid\> Functoid**对话框以设置它们的输入的参数。 第一个输入参数标识源架构中循环记录内的某个字段。 第二个和其后的输入参数指定特定的记录。 您可以指定多个索引值以选择嵌套重复结构中的记录。 最内层结构的索引值为第二个参数。 紧临的靠外一层结构的索引值为第三个参数，以此类推。 例如，假设前面**DailySummary**记录已内**WeeklyData**记录。 若要检索**压力**从第一个**DailySummary**在第二个**WeeklyData**，第二个参数应为 1，并且第三个参数将为 2。  
+ **索引**functoid 使用**配置\<Functoid\> Functoid**对话框来设置其输入的参数。 第一个输入的参数标识的循环记录中的源架构中的字段。 第二个和其后的输入的参数指定特定的记录。 可以指定多个索引值，以选择嵌套重复结构中的记录。 最内层结构的索引值是第二个参数。 下一步最外面的结构的索引值将是第三个参数，等等。 例如，假设上述**DailySummary**记录了内部**WeeklyData**记录。 若要检索**压力**从第一个**DailySummary**在第二个**WeeklyData**、 第二个参数应为 1 和第三个参数应为 2。  
   
- 请注意，此示例假定**压力**字段不重复。 如果字段未重复，索引就不会进入-开始计数便已为**压力**字段，而不是**每日摘要**。  
-  
-> [!NOTE]
->  尽管索引序列输入参数通常为常数，但也可以使用来自源架构中某节点的链接。 如果此链接来自于一个循环记录，而该循环记录并不是第一个输入参数的父项，则索引序列输入值将来自输入实例消息中节点的第一个实例。  
+ 请注意，此示例假定**压力**字段没有重复。 如果字段确实为重复，则索引会关闭，计数将开头**压力**字段中，而不是**每日摘要**。  
   
 > [!NOTE]
->  索引序列输入的值始终与源文档中的当前上下文相关。  
+>  尽管索引序列输入的参数通常为常量，则可以使用源架构中的节点的链接。 如果此链接来自于不是父级的第一个输入参数的循环记录中，索引序列输入的值将来自输入的实例消息中的节点的第一个实例。  
+  
+> [!NOTE]
+>  索引序列输入的值始终是相对于源文档中的当前上下文。  
   
 > [!IMPORTANT]
->  **索引**functoid 必须具有如下许多索引值，因为没有从字段级别到根节点下的第一个级别的父节点。 例如，在多气象报表实例消息中必须具有两个索引值， 而单气象报表实例消息中只需要具有一个索引值。 未能设置所需的索引值数**索引**functoid 创建基于匹配的第一个输入的参数的源实例消息中的第一个节点的输出**索引**functoid。  
+>  **索引**functoid 必须具有为许多索引值，因为没有从字段级别到根节点下的第一个级别的父节点。 例如，在多个气象报表实例消息中，两个索引值是必需的。 在单气象报表实例消息中，则需要一个索引值。 未能设置所需的数量的索引值**索引**创建基于匹配的第一个输入的参数的源实例消息中的第一个节点的输出**索引**functoid。  
   
-## <a name="see-also"></a>另请参阅  
- [如何在向地图添加索引 Functoid](../core/how-to-add-index-functoids-to-a-map.md)   
+## <a name="see-also"></a>请参阅  
+ [如何向映射添加索引 Functoid](../core/how-to-add-index-functoids-to-a-map.md)   
  [高级的 Functoid](../core/advanced-functoids.md)   
  [迭代 Functoid](../core/iteration-functoid.md)   
- [“记录计数”Functoid](../core/record-count-functoid.md)
+ [记录计数 Functoid](../core/record-count-functoid.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4def7a6726eb6524a3ebd07a05d292e5e978ffdd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fe9e89878a7e3db229b75eaf77bb1aeb0a85247a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988950"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359212"
 ---
 # <a name="an-error-occurred-when-decrypting-an-as2-message"></a>解密 AS2 消息时出错
 ## <a name="details"></a>详细信息  
@@ -50,4 +50,4 @@ ms.locfileid: "36988950"
 
 - 通过检查证书吊销列表来验证证书是否尚未被吊销。 （可以通过选中 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台中“常规 AS2”属性中的“检查证书吊销列表”属性，让 BizTalk Server 自动检查此项。）  
 
-- 验证用于解密的证书是否存储在每台承载 MIME/SMIME 解码器管道的 BizTalk 服务器上针对每个主机实例服务帐户的“当前用户\个人”存储区中。
+- 验证用于解密的证书是否存储在每台承载 MIME/SMIME 解码器管道的 BizTalk Server 上针对每个主机实例服务帐户的“当前用户\个人”存储区中。

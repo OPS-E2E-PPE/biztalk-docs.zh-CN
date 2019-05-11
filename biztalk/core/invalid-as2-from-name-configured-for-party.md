@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 136e2e11d20560531bf0f34eb2c93429b6c50f33
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5b4db0fe98bcb04f662e4a827f4139e0cff81275
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999646"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65331043"
 ---
-# <a name="invalid-as2-from-name-configured-for-party"></a>为参与方配置的 AS2-From 名称无效
+# <a name="invalid-as2-from-name-configured-for-party"></a>无效的 AS2-从配置为参与方名称
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                        |
@@ -30,10 +30,10 @@ ms.locfileid: "36999646"
 |  事件源   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
 |    组件    |                                       AS2 引擎                                       |
 |  符号名称  |                           InvalidAS2FromNameConfiguredError                            |
-|  消息正文   |              无效的 AS2-从为参与方配置的名称：{0}值： {1}              |
+|  消息正文   |              无效的 AS2-从为参与方配置的名称：{0}   值： {1}              |
   
 ## <a name="explanation"></a>解释  
- 此错误/警告/信息事件表明 AS2 编码器或解码器无法处理 AS2 消息，因为为标识的参与方配置的 AS2-From 标头不符合 AS2 RFC 4130 中的规范。  
+ 此错误/警告/信息事件表明 AS2 编码器或解码器无法处理 AS2 消息因为 as2-From 标头配置为标识的参与方不符合 AS2 RFC 4130 中的规范。  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请确保为参与方配置的 AS2-From 标头符合 AS2 RFC 4130 第 6.2 节中的规范，然后重新发送消息。
+ 若要解决此错误，请确保 AS2-From 标头配置为参与方符合 AS2 RFC 4130 第，6.2 节中的规范，然后重新发送消息。

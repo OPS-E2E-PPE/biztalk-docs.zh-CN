@@ -13,25 +13,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a9c3ba874f7db3b1aff77c9377ea27874de8501d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 151ddefb45afd41c343b43de44786d7d99ff9b94
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969510"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65353672"
 ---
 # <a name="create-and-use-tibco-schemas"></a>创建和使用 TIBCO 架构
 
 ## <a name="overview"></a>概述
-用于 TIBCO Enterprise Message Service (EMS) 的 Microsoft BizTalk 适配器使用通过 Visual Studio 中的 XML 编辑器或 BizTalk Server 编辑器创建的架构（仅当在业务流程中使用适配器时）。 此架构描述您期望的信息类型。 本主题包含有关发送和接收处理程序的信息。  
+用于 TIBCO Enterprise Message Service (EMS) 的 Microsoft BizTalk 适配器将使用 （仅当在业务流程中使用适配器） 使用在 Visual Studio 中的 XML 编辑器或 BizTalk Server 编辑器创建架构。 此架构描述您期望的信息的类型。 本主题包含有关发送和接收处理程序的信息。  
   
-为与用于 TIBCO Enterprise Message Service 的 BizTalk 适配器一起使用而创建的架构必须有目标命名空间。 BizTalk Server 需要此目标命名空间是因为，它是将给定消息实例与给定业务流程相关联的关键。 换言之，业务流程订阅有特定目标命名空间的任何消息，并且具有该目标命名空间的传入 XML 消息将提供给订阅该消息的每个业务流程。 如果 XML 文档架构没有目标命名空间，BizTalk Server 将使用根元素的名称作为关键。  
+创建供使用的 BizTalk 适配器用于 TIBCO Enterprise Message Service 的架构必须具有目标命名空间。 BizTalk Server 需要的目标命名空间，因为它是将给定的消息实例与给定的业务流程相关联的密钥。 换而言之，业务流程订阅任何消息具有特定的目标命名空间，并且具有该目标命名空间的传入 XML 消息将提供给每个订阅该消息的业务流程。 如果 XML 文档架构没有目标命名空间，BizTalk Server 使用根元素的名称作为键。  
 
 以下步骤说明如何生成架构，以及如何设置目标命名空间。  
   
 ## <a name="generate-a-schema"></a>生成架构    
  
-1.  在 BizTalk 编辑器中，打开您的项目。  
+1.  在 BizTalk 编辑器中，打开你的项目。  
   
 2.  在解决方案资源管理器在右上角，选择**外**，然后选择**添加生成的项**。  
   
@@ -49,7 +49,7 @@ ms.locfileid: "36969510"
   
 2. 在中**属性**窗格中，找到**Namespace**字段并键入一个名称，例如， `testNameSpace`。  
   
-   然后，可以使用消息继续您的业务流程。 选择消息时，BizTalk Server 会查找使用相应架构（具有设置的目标命名空间）的业务流程，然后开始业务流程进程。  
+   然后可以继续使用消息的业务流程。 当提取消息时，BizTalk Server 会查找与设置目标命名空间，使用的架构的业务流程，其后的业务流程。  
   
 ## <a name="see-also"></a>请参阅  
  [开发应用程序](../core/developing-applications5.md)

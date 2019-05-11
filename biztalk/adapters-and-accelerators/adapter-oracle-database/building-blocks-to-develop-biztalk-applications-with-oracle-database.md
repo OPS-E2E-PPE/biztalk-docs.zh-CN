@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 703bff35321fcedb4240d8ced1f422707c0ca51e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 53908c0b183f3b9c3f9c1615fdc2ec87e4641ece
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973798"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376785"
 ---
 # <a name="building-blocks-to-develop-biztalk-applications-with-oracle-database"></a>若要开发与 Oracle 数据库的 BizTalk 应用程序的构建基块
 通过执行对 Oracle 数据库的操作[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]涉及两个任务组： 设计时和运行时。  

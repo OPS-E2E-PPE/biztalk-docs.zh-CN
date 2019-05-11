@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f1ee8c10485522db82040210eff2a7afbc785d25
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0d97a23ef64c84d4ec39511fc2138bd767ea64af
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992462"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291366"
 ---
 # <a name="optional-configurations"></a>可选配置
 导入 BizTalk Server 管理包后，监视窗格的导航窗格中显示自动发现的对象类型。 对象类型的列表，请参阅[对象管理包发现](../technical-guides/objects-the-management-pack-discovers.md)部分。 您可以修改发现的对象的默认发现配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包。 使用 Operations Manager 2007 R2/2012年的替代功能更改配置设置。  

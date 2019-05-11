@@ -1,5 +1,5 @@
 ---
-title: 如何配置并行操作形状 |Microsoft 文档
+title: 如何配置并行操作形状 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -21,30 +21,30 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 125d479a09eefb6771a884d2cddbfa98f34aeb36
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f3179995031ea91243f602d554808c198863f2c9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22247797"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65386021"
 ---
 # <a name="how-to-configure-the-parallel-actions-shape"></a>如何配置并行操作形状
 ![](../core/media/ebiz-orch-paralactions.gif "ebiz_orch_paralactions")  
 并行操作形状  
   
 > [!CAUTION]
->  如果你将放置**终止**形状内**并行操作**形状和使用分支**终止**上运行，在实例完成立即，而不考虑是否其他分支已完成运行。 根据您的设计，在此情况下结果可能不可预测。  
+>  如果将置于**Terminate**形状内**并行操作**形状，并使用分支**终止**上运行它时，该实例将立即完成，而不考虑是否其他分支完成运行。 根据你的设计，结果可能不可预测在这种情况下。  
   
 ## <a name="synchronization-of-data-access"></a>同步数据访问  
- 很可能该多个分支的**并行操作**形状将尝试访问相同的数据。 为避免出错，请将访问这些数据的所有形状都放入同步作用域。 你可以指定的属性中**作用域**形状，它是同步或不为 synchronized。 有关详细信息，请参阅[作用域](../core/scopes.md)。  
+ 可能的多个分支**并行操作**形状将尝试访问相同的数据。 若要避免错误，将访问同步的作用域中的数据的所有形状。 可以指定的属性中**作用域**形状，它是同步或不为 synchronized。 有关详细信息，请参阅[作用域](../core/scopes.md)。  
   
-#### <a name="to-add-a-branch-to-a-parallel-actions-shape"></a>向并行操作形状添加分支  
+#### <a name="to-add-a-branch-to-a-parallel-actions-shape"></a>若要向并行操作形状添加分支  
   
-1.  右键单击**并行操作**形状，并依次**新并行分支**。  
+1.  右键单击**并行操作**形状，然后依次**新建并行分支**。  
   
-     -或者-  
+     -或-  
   
-2.  将一个新形状拖到两个现有分支之间。  
+2.  两个现有分支之间将新形状。  
   
 > [!NOTE]
->  若要删除分支起源**并行操作**形状，右键单击你想要删除，，然后单击的分支**删除**。
+>  若要删除分支起源**并行操作**形状中，右键单击你想要删除，然后单击的分支**删除**。

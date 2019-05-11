@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 717260f8e45298c19756707ed042b97ab6e207fb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 428704c78c3d6b615f0272927b03fb57aa66d91b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37016044"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65298794"
 ---
-# <a name="the-edifact-transaction-set-had-a-mismatched-count-in-unt01"></a>EDIFACT 事务集在 UNT01 中的计数不匹配
+# <a name="the-edifact-transaction-set-had-a-mismatched-count-in-unt01"></a>Edifact 事务集在 UNT01 中有计数不匹配
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                     |
@@ -30,10 +30,10 @@ ms.locfileid: "37016044"
 |  事件源   |                       [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                        |
 |    组件    |                                                             EDI 引擎                                                              |
 |  符号名称  |                                                      EfactUnhUntCountMismatch                                                       |
-|  消息正文   | Edifact 事务集在 UNT01 中的计数不匹配。 UNT01 为{0}，而它应该已{1}。 此错误已纠正。 |
+|  消息正文   | Edifact 事务集在 UNT01 中有计数不匹配。 UNT01 为{0}，而它应该已{1}。 已纠正。 |
   
 ## <a name="explanation"></a>解释  
- 此警告表明 UNT01 字段（为段计数）与事务集中的段数不匹配。 UNT01 的值被更改或已损坏，或者在确定计数之后添加或删除了段。 发送管道将 UNT01 字段重置为正确的段数，然后发送交换。  
+ 此警告表明 UNT01 字段，它是段计数，没有与事务集中的段数不匹配。 UNT01 的值已更改或损坏，或者添加或删除后确定计数段。 发送管道将 UNT01 字段重置为正确数量的段，，然后发送交换。  
   
 ## <a name="user-action"></a>用户操作  
- 不需要用户进行任何操作。
+ 不不需要任何用户操作。
