@@ -12,47 +12,47 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b0d09e75dbf3ff92b3b298d31ff2dfcb80b5217d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c434b1c026eb3d1a0c6235dc885f10e62d3ec5dc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017073"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398928"
 ---
-# <a name="support-for-queue-management"></a><span data-ttu-id="dafcc-102">队列管理支持</span><span class="sxs-lookup"><span data-stu-id="dafcc-102">Support for Queue Management</span></span>
-<span data-ttu-id="dafcc-103">使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]现在可以创建和删除队列远程 MQSeries 队列管理器上的 MQSeries 适配器。</span><span class="sxs-lookup"><span data-stu-id="dafcc-103">With the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] MQSeries adapter you can now create and delete queues remotely on the MQSeries Queue Manager.</span></span> <span data-ttu-id="dafcc-104">此支持，因为[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]直接与 MQSeries 队列管理器使用的远程 MQSAgent COM + 对象的通信。</span><span class="sxs-lookup"><span data-stu-id="dafcc-104">This is supported because [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses a remote MQSAgent COM+ object that communicates directly with the MQSeries Queue Manager.</span></span> <span data-ttu-id="dafcc-105">通常，在运行时使用此 MQSAgent 从远程 MQSeries 服务器队列读取信息和向其中写入消息。</span><span class="sxs-lookup"><span data-stu-id="dafcc-105">Typically this MQSAgent is used at run time to read and write messages to the remote MQSeries Server queues.</span></span> <span data-ttu-id="dafcc-106">此远程服务的客户端可以是多台 BizTalk 服务器。</span><span class="sxs-lookup"><span data-stu-id="dafcc-106">More than one BizTalk server can be a client of this remote service.</span></span> <span data-ttu-id="dafcc-107">此外，队列创建和删除功能由此 MQSAgent 提供，并可以从业务流程或适配器中直接调用。</span><span class="sxs-lookup"><span data-stu-id="dafcc-107">Additionally, queue creation and deletion functions are provided by this MQSAgent and can be called directly from within an orchestration or adapter.</span></span> <span data-ttu-id="dafcc-108">这样可以实现高度动态的方案：业务流程或适配器创建一个临时队列，然后向其上发送消息，在另一个队列上接收回复，最后删除这个临时队列。</span><span class="sxs-lookup"><span data-stu-id="dafcc-108">This allows for highly dynamic scenarios whereby the orchestration or adapter can create a temporary queue and then send a message on it, receive a reply on another queue, and finally delete the temporary queue.</span></span>  
+# <a name="support-for-queue-management"></a><span data-ttu-id="66d7c-102">队列管理支持</span><span class="sxs-lookup"><span data-stu-id="66d7c-102">Support for Queue Management</span></span>
+<span data-ttu-id="66d7c-103">使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]现在可以创建和删除队列远程 MQSeries 队列管理器上的 MQSeries 适配器。</span><span class="sxs-lookup"><span data-stu-id="66d7c-103">With the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] MQSeries adapter you can now create and delete queues remotely on the MQSeries Queue Manager.</span></span> <span data-ttu-id="66d7c-104">此支持，因为[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]直接与 MQSeries 队列管理器使用的远程 MQSAgent COM + 对象的通信。</span><span class="sxs-lookup"><span data-stu-id="66d7c-104">This is supported because [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] uses a remote MQSAgent COM+ object that communicates directly with the MQSeries Queue Manager.</span></span> <span data-ttu-id="66d7c-105">通常此 MQSAgent 用于在运行时读取和写入到远程 MQSeries Server 队列的消息。</span><span class="sxs-lookup"><span data-stu-id="66d7c-105">Typically this MQSAgent is used at run time to read and write messages to the remote MQSeries Server queues.</span></span> <span data-ttu-id="66d7c-106">多个 BizTalk 服务器可以是此远程服务的客户端。</span><span class="sxs-lookup"><span data-stu-id="66d7c-106">More than one BizTalk server can be a client of this remote service.</span></span> <span data-ttu-id="66d7c-107">此外，队列创建和删除功能由此 MQSAgent 提供，并且可以直接从业务流程或适配器中调用。</span><span class="sxs-lookup"><span data-stu-id="66d7c-107">Additionally, queue creation and deletion functions are provided by this MQSAgent and can be called directly from within an orchestration or adapter.</span></span> <span data-ttu-id="66d7c-108">这样，业务流程或适配器可以创建一个临时队列，然后在其上发送一条消息、 另一个队列上接收回复和最后删除这个临时队列高度动态的方案。</span><span class="sxs-lookup"><span data-stu-id="66d7c-108">This allows for highly dynamic scenarios whereby the orchestration or adapter can create a temporary queue and then send a message on it, receive a reply on another queue, and finally delete the temporary queue.</span></span>  
   
-## <a name="createqueue-and-deletequeue-apis"></a><span data-ttu-id="dafcc-109">CreateQueue 和 DeleteQueue API</span><span class="sxs-lookup"><span data-stu-id="dafcc-109">CreateQueue and DeleteQueue APIs</span></span>  
- <span data-ttu-id="dafcc-110">CreateQueue 和 DeleteQueue API 定义如下。</span><span class="sxs-lookup"><span data-stu-id="dafcc-110">The CreateQueue and DeleteQueue APIs are defined as follows.</span></span>  
+## <a name="createqueue-and-deletequeue-apis"></a><span data-ttu-id="66d7c-109">CreateQueue 和 DeleteQueue Api</span><span class="sxs-lookup"><span data-stu-id="66d7c-109">CreateQueue and DeleteQueue APIs</span></span>  
+ <span data-ttu-id="66d7c-110">CreateQueue 和 DeleteQueue Api 定义，如下所示。</span><span class="sxs-lookup"><span data-stu-id="66d7c-110">The CreateQueue and DeleteQueue APIs are defined as follows.</span></span>  
   
-### <a name="structure-definition"></a><span data-ttu-id="dafcc-111">结构定义</span><span class="sxs-lookup"><span data-stu-id="dafcc-111">Structure Definition</span></span>  
+### <a name="structure-definition"></a><span data-ttu-id="66d7c-111">结构定义</span><span class="sxs-lookup"><span data-stu-id="66d7c-111">Structure Definition</span></span>  
   
 ```  
 typedef enum QueueUsage {  
-      Normal       = 0,  
-      Transmission = 1  
+      Normal       = 0,  
+      Transmission = 1  
 } QueueUsage;  
   
 typedef enum ResultCode {  
-      QueueAlreadyExists                     = 0, //  no bits set  
-      QueueCreated                           = 1, //  QueueCreated  
-      QueueCreatedAndRemoteDefinitionUpdated = 5, //  QueueCreated | RemoteDefinitionUpdated  
-      QueueAndRemoteDefinitionCreated        = 7, //  QueueCreated | RemoteDefinitionCreated | RemoteDefinitionUpdated  
-      QueueDoesNotExist                      = 8, //  QueueDoesNotExist  
-      QueueDeleted                           = 16 //  QueueDeleted  
+      QueueAlreadyExists                     = 0, //  no bits set  
+      QueueCreated                           = 1, //  QueueCreated  
+      QueueCreatedAndRemoteDefinitionUpdated = 5, //  QueueCreated | RemoteDefinitionUpdated  
+      QueueAndRemoteDefinitionCreated        = 7, //  QueueCreated | RemoteDefinitionCreated | RemoteDefinitionUpdated  
+      QueueDoesNotExist                      = 8, //  QueueDoesNotExist  
+      QueueDeleted                           = 16 //  QueueDeleted  
 } ResultCode;  
 ```  
   
-### <a name="interface-definition"></a><span data-ttu-id="dafcc-112">接口定义</span><span class="sxs-lookup"><span data-stu-id="dafcc-112">Interface Definition</span></span>  
+### <a name="interface-definition"></a><span data-ttu-id="66d7c-112">接口定义</span><span class="sxs-lookup"><span data-stu-id="66d7c-112">Interface Definition</span></span>  
   
 ```  
 [  
-            object,  
-            uuid(E90AC1A6-657B-4680-AF6A-89F11113FB8B),  
-            dual,  
-            nonextensible,  
-            helpstring("IMQSAdmin Interface"),  
-            pointer_default(unique)  
+            object,  
+            uuid(E90AC1A6-657B-4680-AF6A-89F11113FB8B),  
+            dual,  
+            nonextensible,  
+            helpstring("IMQSAdmin Interface"),  
+            pointer_default(unique)  
 ]  
 interface IMQSAdmin2 : IDispatch{  
   
@@ -72,27 +72,27 @@ HRESULT DeleteQueue (
 [out, retval]ResultCode* resultCode);  
 };  
   
-      [  
-            uuid(412AF00D-7CA8-4d2a-AFF6-F61CE2E29A0D),  
-            helpstring("MQSAdmin Class")  
-      ]  
-      coclass MQSAdmin  
-      {  
-            [default] interface IMQSAdmin2;  
-      };  
+      [  
+            uuid(412AF00D-7CA8-4d2a-AFF6-F61CE2E29A0D),  
+            helpstring("MQSAdmin Class")  
+      ]  
+      coclass MQSAdmin  
+      {  
+            [default] interface IMQSAdmin2;  
+      };  
   
 ```  
   
-## <a name="examples"></a><span data-ttu-id="dafcc-113">示例</span><span class="sxs-lookup"><span data-stu-id="dafcc-113">Examples</span></span>  
- <span data-ttu-id="dafcc-114">完成示例 1 中的步骤可创建一个 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] C# 控制台应用程序，该程序可用于创建或删除 MQSeries Server 队列。</span><span class="sxs-lookup"><span data-stu-id="dafcc-114">Complete the steps in Example 1 to create a [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] C# console application which can be used to create or delete MQSeries Server queues.</span></span>  
+## <a name="examples"></a><span data-ttu-id="66d7c-113">示例</span><span class="sxs-lookup"><span data-stu-id="66d7c-113">Examples</span></span>  
+ <span data-ttu-id="66d7c-114">若要创建的示例 1 中的步骤完成[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]C# 控制台应用程序可用于创建或删除 MQSeries Server 队列。</span><span class="sxs-lookup"><span data-stu-id="66d7c-114">Complete the steps in Example 1 to create a [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] C# console application which can be used to create or delete MQSeries Server queues.</span></span>  
   
-### <a name="example-1"></a><span data-ttu-id="dafcc-115">示例 1</span><span class="sxs-lookup"><span data-stu-id="dafcc-115">Example 1</span></span>  
+### <a name="example-1"></a><span data-ttu-id="66d7c-115">示例 1</span><span class="sxs-lookup"><span data-stu-id="66d7c-115">Example 1</span></span>  
   
-##### <a name="create-a-c-console-application-to-manage-mqseries-server-queues"></a><span data-ttu-id="dafcc-116">创建一个管理 MQSeries Server 队列的 C# 控制台应用程序</span><span class="sxs-lookup"><span data-stu-id="dafcc-116">Create a C# console application to manage MQSeries Server queues</span></span>  
+##### <a name="create-a-c-console-application-to-manage-mqseries-server-queues"></a><span data-ttu-id="66d7c-116">创建一个 C# 控制台应用程序来管理 MQSeries Server 队列</span><span class="sxs-lookup"><span data-stu-id="66d7c-116">Create a C# console application to manage MQSeries Server queues</span></span>  
   
-1. <span data-ttu-id="dafcc-117">创建一个新 Visual C# 控制台应用程序中[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]同名**MQSeriesQueues**。</span><span class="sxs-lookup"><span data-stu-id="dafcc-117">Create a new Visual C# Console Application in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] with the name **MQSeriesQueues**.</span></span>  
+1. <span data-ttu-id="66d7c-117">创建一个新 Visual C# 控制台应用程序中[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]同名**MQSeriesQueues**。</span><span class="sxs-lookup"><span data-stu-id="66d7c-117">Create a new Visual C# Console Application in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] with the name **MQSeriesQueues**.</span></span>  
   
-2. <span data-ttu-id="dafcc-118">使用以下代码替换生成的 Program.cs 文件中的所有已有代码。</span><span class="sxs-lookup"><span data-stu-id="dafcc-118">Replace any existing code in the Program.cs file that is generated with the code below:</span></span>  
+2. <span data-ttu-id="66d7c-118">生成的 Program.cs 文件中的任何现有代码替换为以下代码：</span><span class="sxs-lookup"><span data-stu-id="66d7c-118">Replace any existing code in the Program.cs file that is generated with the code below:</span></span>  
   
    ```  
    using System;  
@@ -165,22 +165,22 @@ HRESULT DeleteQueue (
    }  
    ```  
   
-3. <span data-ttu-id="dafcc-119">添加对此项目的引用**MQSAgent 1.0 Type Library**。</span><span class="sxs-lookup"><span data-stu-id="dafcc-119">Add a reference to this project to the **MQSAgent 1.0 Type Library**.</span></span> <span data-ttu-id="dafcc-120">**MQSAgent 1.0 Type Library**可在上找到**COM**选项卡**添加引用**对话框。</span><span class="sxs-lookup"><span data-stu-id="dafcc-120">The **MQSAgent 1.0 Type Library** is available on the **COM** tab of the **Add reference** dialog box.</span></span>  
+3. <span data-ttu-id="66d7c-119">添加对此项目的引用**MQSAgent 1.0 Type Library**。</span><span class="sxs-lookup"><span data-stu-id="66d7c-119">Add a reference to this project to the **MQSAgent 1.0 Type Library**.</span></span> <span data-ttu-id="66d7c-120">**MQSAgent 1.0 Type Library**可在上找到**COM**选项卡**添加引用**对话框。</span><span class="sxs-lookup"><span data-stu-id="66d7c-120">The **MQSAgent 1.0 Type Library** is available on the **COM** tab of the **Add reference** dialog box.</span></span>  
   
    > [!NOTE]
-   >  <span data-ttu-id="dafcc-121">运行此控制台应用程序的计算机中必须已经安装了 MQSAgent COM+ 组件。</span><span class="sxs-lookup"><span data-stu-id="dafcc-121">The MQSAgent COM+ component must be installed on the computer that you are running this console application from.</span></span> <span data-ttu-id="dafcc-122">有关安装 MQSAgent COM + 组件的详细信息请参阅[使用 MQSAgent COM + 配置向导](../core/using-the-mqsagent-com-configuration-wizard.md)。</span><span class="sxs-lookup"><span data-stu-id="dafcc-122">For more information about installing the MQSAgent COM+ component see [Using the MQSAgent COM+ Configuration Wizard](../core/using-the-mqsagent-com-configuration-wizard.md).</span></span>  
+   >  <span data-ttu-id="66d7c-121">必须在运行此控制台应用程序的计算机上安装的 MQSAgent COM + 组件。</span><span class="sxs-lookup"><span data-stu-id="66d7c-121">The MQSAgent COM+ component must be installed on the computer that you are running this console application from.</span></span> <span data-ttu-id="66d7c-122">有关安装 MQSAgent COM + 组件的详细信息请参阅[使用 MQSAgent COM + 配置向导](../core/using-the-mqsagent-com-configuration-wizard.md)。</span><span class="sxs-lookup"><span data-stu-id="66d7c-122">For more information about installing the MQSAgent COM+ component see [Using the MQSAgent COM+ Configuration Wizard](../core/using-the-mqsagent-com-configuration-wizard.md).</span></span>  
   
-4. <span data-ttu-id="dafcc-123">生成控制台应用程序。</span><span class="sxs-lookup"><span data-stu-id="dafcc-123">Build the console application.</span></span>  
+4. <span data-ttu-id="66d7c-123">生成控制台应用程序。</span><span class="sxs-lookup"><span data-stu-id="66d7c-123">Build the console application.</span></span>  
   
-5. <span data-ttu-id="dafcc-124">在编译的控制台应用程序所在的目录中打开一个命令提示窗口。</span><span class="sxs-lookup"><span data-stu-id="dafcc-124">Open a command prompt in the same directory as the compiled console application.</span></span>  
+5. <span data-ttu-id="66d7c-124">在编译的控制台应用程序所在的目录中打开命令提示符。</span><span class="sxs-lookup"><span data-stu-id="66d7c-124">Open a command prompt in the same directory as the compiled console application.</span></span>  
   
-6. <span data-ttu-id="dafcc-125">键入编译的控制台应用程序的名称和相应的参数，然后按 Enter。</span><span class="sxs-lookup"><span data-stu-id="dafcc-125">Type the name of the compiled console application with the appropriate arguments and press ENTER.</span></span> <span data-ttu-id="dafcc-126">例如，若要删除队列 **，应该**队列管理器**QM_Test**在命令提示符下键入以下文本，并按 ENTER:</span><span class="sxs-lookup"><span data-stu-id="dafcc-126">For example, to delete the queue **testq** for the Queue Manager **QM_Test** you would type the following text at the command prompt and press ENTER:</span></span>  
+6. <span data-ttu-id="66d7c-125">键入编译的控制台应用程序使用适当的参数的名称，然后按 ENTER。</span><span class="sxs-lookup"><span data-stu-id="66d7c-125">Type the name of the compiled console application with the appropriate arguments and press ENTER.</span></span> <span data-ttu-id="66d7c-126">例如，若要删除队列 **，应该**队列管理器**QM_Test**在命令提示符下键入以下文本，并按 ENTER:</span><span class="sxs-lookup"><span data-stu-id="66d7c-126">For example, to delete the queue **testq** for the Queue Manager **QM_Test** you would type the following text at the command prompt and press ENTER:</span></span>  
   
    ```  
    MQSeriesQueues d QM_Test testq  
    ```  
   
-7. <span data-ttu-id="dafcc-127">若要创建队列 **，应该**队列管理器**QM_Test**在命令提示符下键入以下文本，并按 ENTER:</span><span class="sxs-lookup"><span data-stu-id="dafcc-127">To create the queue **testq** for the Queue Manager **QM_Test** you would type the following text at the command prompt and press ENTER:</span></span>  
+7. <span data-ttu-id="66d7c-127">若要创建队列 **，应该**队列管理器**QM_Test**在命令提示符下键入以下文本，并按 ENTER:</span><span class="sxs-lookup"><span data-stu-id="66d7c-127">To create the queue **testq** for the Queue Manager **QM_Test** you would type the following text at the command prompt and press ENTER:</span></span>  
   
    ```  
    MQSeriesQueues c QM_Test testq  

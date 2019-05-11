@@ -12,68 +12,68 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4eaa3d227a2f02990befeafbd9ead5313fed3c7f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 372c3b7e7ce839729af416385b1404c09a7ca5dd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009830"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65322364"
 ---
-# <a name="orchestrationbinding-biztalk-server-sample"></a><span data-ttu-id="f7fd9-102">OrchestrationBinding（BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="f7fd9-102">OrchestrationBinding (BizTalk Server Sample)</span></span>
-<span data-ttu-id="f7fd9-103">业务流程绑定示例演示使用 [Microsoft.BizTalk.ExplorerOM](http://msdn.microsoft.com/library/microsoft.biztalk.explorerom.aspx) 管理对象来配置和管理业务流程。</span><span class="sxs-lookup"><span data-stu-id="f7fd9-103">The Orchestration Binding sample demonstrates using the [Microsoft.BizTalk.ExplorerOM](http://msdn.microsoft.com/library/microsoft.biztalk.explorerom.aspx) administrative objects to configure and manage orchestrations.</span></span>  
+# <a name="orchestrationbinding-biztalk-server-sample"></a><span data-ttu-id="c96d4-102">OrchestrationBinding （BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="c96d4-102">OrchestrationBinding (BizTalk Server Sample)</span></span>
+<span data-ttu-id="c96d4-103">业务流程绑定示例演示使用 [Microsoft.BizTalk.ExplorerOM](http://msdn.microsoft.com/library/microsoft.biztalk.explorerom.aspx) 管理对象来配置和管理业务流程。</span><span class="sxs-lookup"><span data-stu-id="c96d4-103">The Orchestration Binding sample demonstrates using the [Microsoft.BizTalk.ExplorerOM](http://msdn.microsoft.com/library/microsoft.biztalk.explorerom.aspx) administrative objects to configure and manage orchestrations.</span></span>  
 
-## <a name="prerequisites"></a><span data-ttu-id="f7fd9-104">必要條件</span><span class="sxs-lookup"><span data-stu-id="f7fd9-104">Prerequisites</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="c96d4-104">先决条件</span><span class="sxs-lookup"><span data-stu-id="c96d4-104">Prerequisites</span></span>  
 
-- <span data-ttu-id="f7fd9-105">此示例要求，通过运行位于中的 setup.bat 来部署 HelloWorld 示例\<*示例路径*\>\Orchestrations\HelloWorld 目录。</span><span class="sxs-lookup"><span data-stu-id="f7fd9-105">This sample requires that the HelloWorld sample be deployed by running setup.bat located in the \<*Samples Path*\>\Orchestrations\HelloWorld directory.</span></span>  
+- <span data-ttu-id="c96d4-105">此示例要求，通过运行位于中的 setup.bat 来部署 HelloWorld 示例\<*示例路径*\>\Orchestrations\HelloWorld 目录。</span><span class="sxs-lookup"><span data-stu-id="c96d4-105">This sample requires that the HelloWorld sample be deployed by running setup.bat located in the \<*Samples Path*\>\Orchestrations\HelloWorld directory.</span></span>  
 
-- <span data-ttu-id="f7fd9-106">您必须具有 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理权限才能使用此示例中的管理对象。</span><span class="sxs-lookup"><span data-stu-id="f7fd9-106">You must have [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] administrative privileges to use the administrative objects in this sample.</span></span>  
+- <span data-ttu-id="c96d4-106">您必须具有 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理权限才能使用此示例中的管理对象。</span><span class="sxs-lookup"><span data-stu-id="c96d4-106">You must have [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] administrative privileges to use the administrative objects in this sample.</span></span>  
 
-- <span data-ttu-id="f7fd9-107">Windows PowerShell 脚本示例需要 Windows PowerShell 执行策略才能允许脚本执行。</span><span class="sxs-lookup"><span data-stu-id="f7fd9-107">The Windows PowerShell script example requires the Windows PowerShell execution policy to allow script execution.</span></span> <span data-ttu-id="f7fd9-108">有关详细信息，请参阅 [检查执行策略](http://go.microsoft.com/fwlink/?LinkId=128930)。</span><span class="sxs-lookup"><span data-stu-id="f7fd9-108">For more information see [Examining the Execution Policy](http://go.microsoft.com/fwlink/?LinkId=128930).</span></span>  
+- <span data-ttu-id="c96d4-107">Windows PowerShell 脚本示例需要 Windows PowerShell 执行策略才能允许脚本执行。</span><span class="sxs-lookup"><span data-stu-id="c96d4-107">The Windows PowerShell script example requires the Windows PowerShell execution policy to allow script execution.</span></span> <span data-ttu-id="c96d4-108">有关详细信息，请参阅 [检查执行策略](http://go.microsoft.com/fwlink/?LinkId=128930)。</span><span class="sxs-lookup"><span data-stu-id="c96d4-108">For more information see [Examining the Execution Policy](http://go.microsoft.com/fwlink/?LinkId=128930).</span></span>  
 
-## <a name="what-this-sample-does"></a><span data-ttu-id="f7fd9-109">本示例的用途</span><span class="sxs-lookup"><span data-stu-id="f7fd9-109">What This Sample Does</span></span>  
- <span data-ttu-id="f7fd9-110">本示例演示使用 **Microsoft.BizTalk.ExplorerOM** 命名空间中的管理对象来管理业务流程。</span><span class="sxs-lookup"><span data-stu-id="f7fd9-110">This sample demonstrates using the administrative objects in the **Microsoft.BizTalk.ExplorerOM** namespace to manage orchestrations.</span></span> <span data-ttu-id="f7fd9-111">本示例演示如何使用 **ExplorerOM** 对象完成以下操作：</span><span class="sxs-lookup"><span data-stu-id="f7fd9-111">The sample demonstrates the following operations using the **ExplorerOM** objects:</span></span>  
+## <a name="what-this-sample-does"></a><span data-ttu-id="c96d4-109">本示例的用途</span><span class="sxs-lookup"><span data-stu-id="c96d4-109">What This Sample Does</span></span>  
+ <span data-ttu-id="c96d4-110">本示例演示使用 **Microsoft.BizTalk.ExplorerOM** 命名空间中的管理对象来管理业务流程。</span><span class="sxs-lookup"><span data-stu-id="c96d4-110">This sample demonstrates using the administrative objects in the **Microsoft.BizTalk.ExplorerOM** namespace to manage orchestrations.</span></span> <span data-ttu-id="c96d4-111">本示例演示如何使用 **ExplorerOM** 对象完成以下操作：</span><span class="sxs-lookup"><span data-stu-id="c96d4-111">The sample demonstrates the following operations using the **ExplorerOM** objects:</span></span>  
 
--   <span data-ttu-id="f7fd9-112">使用[Microsoft.BizTalk.ExplorerOM.BtsCatalogExplorer](http://msdn.microsoft.com/library/microsoft.biztalk.explorerom.btscatalogexplorer.aspx) 类连接到 BizTalk 管理数据库。</span><span class="sxs-lookup"><span data-stu-id="f7fd9-112">Connecting to the BizTalk Management database by using the[Microsoft.BizTalk.ExplorerOM.BtsCatalogExplorer](http://msdn.microsoft.com/library/microsoft.biztalk.explorerom.btscatalogexplorer.aspx) class.</span></span>  
+-   <span data-ttu-id="c96d4-112">使用[Microsoft.BizTalk.ExplorerOM.BtsCatalogExplorer](http://msdn.microsoft.com/library/microsoft.biztalk.explorerom.btscatalogexplorer.aspx) 类连接到 BizTalk 管理数据库。</span><span class="sxs-lookup"><span data-stu-id="c96d4-112">Connecting to the BizTalk Management database by using the[Microsoft.BizTalk.ExplorerOM.BtsCatalogExplorer](http://msdn.microsoft.com/library/microsoft.biztalk.explorerom.btscatalogexplorer.aspx) class.</span></span>  
 
--   <span data-ttu-id="f7fd9-113">通过更改 **Microsoft.BizTalk.ExplorerOM.BtsOrchestration** 类的 [Status](http://msdn.microsoft.com/library/Microsoft.BizTalk.ExplorerOM.BtsOrchestration.aspx) 属性来停止和启动业务流程。</span><span class="sxs-lookup"><span data-stu-id="f7fd9-113">Stopping and starting orchestrations by changing the **Status** property of the [Microsoft.BizTalk.ExplorerOM.BtsOrchestration](http://msdn.microsoft.com/library/Microsoft.BizTalk.ExplorerOM.BtsOrchestration.aspx) class.</span></span>  
+-   <span data-ttu-id="c96d4-113">通过更改 **Microsoft.BizTalk.ExplorerOM.BtsOrchestration** 类的 [Status](http://msdn.microsoft.com/library/Microsoft.BizTalk.ExplorerOM.BtsOrchestration.aspx) 属性来停止和启动业务流程。</span><span class="sxs-lookup"><span data-stu-id="c96d4-113">Stopping and starting orchestrations by changing the **Status** property of the [Microsoft.BizTalk.ExplorerOM.BtsOrchestration](http://msdn.microsoft.com/library/Microsoft.BizTalk.ExplorerOM.BtsOrchestration.aspx) class.</span></span>  
 
--   <span data-ttu-id="f7fd9-114">通过更改 **Microsoft.BizTalk.ExplorerOM.BtsOrchestration** 类的 [Status](http://msdn.microsoft.com/library/Microsoft.BizTalk.ExplorerOM.BtsOrchestration.aspx) 属性来登记和取消登记业务流程。</span><span class="sxs-lookup"><span data-stu-id="f7fd9-114">Enlisting and unenlisting orchestrations by changing the **Status** property of the [Microsoft.BizTalk.ExplorerOM.BtsOrchestration](http://msdn.microsoft.com/library/Microsoft.BizTalk.ExplorerOM.BtsOrchestration.aspx) class.</span></span>  
+-   <span data-ttu-id="c96d4-114">通过更改 **Microsoft.BizTalk.ExplorerOM.BtsOrchestration** 类的 [Status](http://msdn.microsoft.com/library/Microsoft.BizTalk.ExplorerOM.BtsOrchestration.aspx) 属性来登记和取消登记业务流程。</span><span class="sxs-lookup"><span data-stu-id="c96d4-114">Enlisting and unenlisting orchestrations by changing the **Status** property of the [Microsoft.BizTalk.ExplorerOM.BtsOrchestration](http://msdn.microsoft.com/library/Microsoft.BizTalk.ExplorerOM.BtsOrchestration.aspx) class.</span></span>  
 
--   <span data-ttu-id="f7fd9-115">通过使用 **Microsoft.BizTalk.ExplorerOM.BtsOrchestration** 类上的 [Ports](http://msdn.microsoft.com/library/Microsoft.BizTalk.ExplorerOM.BtsOrchestration.aspx) 集合来绑定和取消绑定业务流程。</span><span class="sxs-lookup"><span data-stu-id="f7fd9-115">Binding and unbinding orchestrations by using the **Ports** collection on the [Microsoft.BizTalk.ExplorerOM.BtsOrchestration](http://msdn.microsoft.com/library/Microsoft.BizTalk.ExplorerOM.BtsOrchestration.aspx) class.</span></span>  
+-   <span data-ttu-id="c96d4-115">通过使用 **Microsoft.BizTalk.ExplorerOM.BtsOrchestration** 类上的 [Ports](http://msdn.microsoft.com/library/Microsoft.BizTalk.ExplorerOM.BtsOrchestration.aspx) 集合来绑定和取消绑定业务流程。</span><span class="sxs-lookup"><span data-stu-id="c96d4-115">Binding and unbinding orchestrations by using the **Ports** collection on the [Microsoft.BizTalk.ExplorerOM.BtsOrchestration](http://msdn.microsoft.com/library/Microsoft.BizTalk.ExplorerOM.BtsOrchestration.aspx) class.</span></span>  
 
-## <a name="where-to-find-this-sample"></a><span data-ttu-id="f7fd9-116">本示例的所在位置</span><span class="sxs-lookup"><span data-stu-id="f7fd9-116">Where To Find This Sample</span></span>  
- <span data-ttu-id="f7fd9-117">本示例位于以下 SDK 位置中：</span><span class="sxs-lookup"><span data-stu-id="f7fd9-117">The sample is located in the following SDK location:</span></span>  
+## <a name="where-to-find-this-sample"></a><span data-ttu-id="c96d4-116">本示例的所在位置</span><span class="sxs-lookup"><span data-stu-id="c96d4-116">Where To Find This Sample</span></span>  
+ <span data-ttu-id="c96d4-117">本示例位于以下 SDK 位置中：</span><span class="sxs-lookup"><span data-stu-id="c96d4-117">The sample is located in the following SDK location:</span></span>  
 
- <span data-ttu-id="f7fd9-118">\<*示例路径*\>\Admin\ExplorerOM\OrchestrationBinding</span><span class="sxs-lookup"><span data-stu-id="f7fd9-118">\<*Samples Path*\>\Admin\ExplorerOM\OrchestrationBinding</span></span>  
+ <span data-ttu-id="c96d4-118">\<*Samples Path*\>\Admin\ExplorerOM\OrchestrationBinding</span><span class="sxs-lookup"><span data-stu-id="c96d4-118">\<*Samples Path*\>\Admin\ExplorerOM\OrchestrationBinding</span></span>  
 
- <span data-ttu-id="f7fd9-119">下表显示了本示例中的文件及其用途说明：</span><span class="sxs-lookup"><span data-stu-id="f7fd9-119">The following table shows the files in this sample and describes their purpose.</span></span>  
+ <span data-ttu-id="c96d4-119">下表显示了本示例中的文件及其用途说明：</span><span class="sxs-lookup"><span data-stu-id="c96d4-119">The following table shows the files in this sample and describes their purpose.</span></span>  
 
 
-|                                     <span data-ttu-id="f7fd9-120">文件</span><span class="sxs-lookup"><span data-stu-id="f7fd9-120">File(s)</span></span>                                     |                                                 <span data-ttu-id="f7fd9-121">Description</span><span class="sxs-lookup"><span data-stu-id="f7fd9-121">Description</span></span>                                                  |
+|                                     <span data-ttu-id="c96d4-120">文件</span><span class="sxs-lookup"><span data-stu-id="c96d4-120">File(s)</span></span>                                     |                                                 <span data-ttu-id="c96d4-121">Description</span><span class="sxs-lookup"><span data-stu-id="c96d4-121">Description</span></span>                                                  |
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-|                             <span data-ttu-id="f7fd9-122">OrchestrationBinding.cs</span><span class="sxs-lookup"><span data-stu-id="f7fd9-122">OrchestrationBinding.cs</span></span>                             | <span data-ttu-id="f7fd9-123">本示例中演示的操作所需的 [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 源文件。</span><span class="sxs-lookup"><span data-stu-id="f7fd9-123">[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] source file for operations demonstrated in this sample.</span></span> |
-| <span data-ttu-id="f7fd9-124">OrchestrationBinding.sln、OrchestrationBinding.csproj、OrchestrationBinding.suo</span><span class="sxs-lookup"><span data-stu-id="f7fd9-124">OrchestrationBinding.sln, OrchestrationBinding.csproj, OrchestrationBinding.suo</span></span> |                                  <span data-ttu-id="f7fd9-125">示例的解决方案文件和项目文件。</span><span class="sxs-lookup"><span data-stu-id="f7fd9-125">Solution and project files for the sample.</span></span>                                  |
+|                             <span data-ttu-id="c96d4-122">OrchestrationBinding.cs</span><span class="sxs-lookup"><span data-stu-id="c96d4-122">OrchestrationBinding.cs</span></span>                             | [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] <span data-ttu-id="c96d4-123">此示例中演示的操作的源文件。</span><span class="sxs-lookup"><span data-stu-id="c96d4-123">source file for operations demonstrated in this sample.</span></span> |
+| <span data-ttu-id="c96d4-124">OrchestrationBinding.sln、OrchestrationBinding.csproj、OrchestrationBinding.suo</span><span class="sxs-lookup"><span data-stu-id="c96d4-124">OrchestrationBinding.sln, OrchestrationBinding.csproj, OrchestrationBinding.suo</span></span> |                                  <span data-ttu-id="c96d4-125">示例的解决方案文件和项目文件。</span><span class="sxs-lookup"><span data-stu-id="c96d4-125">Solution and project files for the sample.</span></span>                                  |
 
-## <a name="building-and-running-this-sample"></a><span data-ttu-id="f7fd9-126">生成并运行本示例</span><span class="sxs-lookup"><span data-stu-id="f7fd9-126">Building and Running This Sample</span></span>  
+## <a name="building-and-running-this-sample"></a><span data-ttu-id="c96d4-126">生成并运行本示例</span><span class="sxs-lookup"><span data-stu-id="c96d4-126">Building and Running This Sample</span></span>  
 
-#### <a name="to-build-this-sample"></a><span data-ttu-id="f7fd9-127">生成示例</span><span class="sxs-lookup"><span data-stu-id="f7fd9-127">To build this sample</span></span>  
+#### <a name="to-build-this-sample"></a><span data-ttu-id="c96d4-127">生成示例</span><span class="sxs-lookup"><span data-stu-id="c96d4-127">To build this sample</span></span>  
 
-1. <span data-ttu-id="f7fd9-128">确保您已经完成生成和初始化 HelloWorld 示例的步骤。</span><span class="sxs-lookup"><span data-stu-id="f7fd9-128">Make sure you have completed the steps for building and initializing the HelloWorld sample.</span></span> <span data-ttu-id="f7fd9-129">中提供了这些步骤[HelloWorld （BizTalk Server 示例）](../core/helloworld-biztalk-server-sample.md)。</span><span class="sxs-lookup"><span data-stu-id="f7fd9-129">Those steps are provided in [HelloWorld (BizTalk Server Sample)](../core/helloworld-biztalk-server-sample.md).</span></span>  
+1. <span data-ttu-id="c96d4-128">确保您已经完成生成和初始化 HelloWorld 示例的步骤。</span><span class="sxs-lookup"><span data-stu-id="c96d4-128">Make sure you have completed the steps for building and initializing the HelloWorld sample.</span></span> <span data-ttu-id="c96d4-129">中提供了这些步骤[HelloWorld （BizTalk Server 示例）](../core/helloworld-biztalk-server-sample.md)。</span><span class="sxs-lookup"><span data-stu-id="c96d4-129">Those steps are provided in [HelloWorld (BizTalk Server Sample)](../core/helloworld-biztalk-server-sample.md).</span></span>  
 
-2. <span data-ttu-id="f7fd9-130">在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中，打开解决方案文件 OrchestrationBinding.sln。</span><span class="sxs-lookup"><span data-stu-id="f7fd9-130">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the solution file OrchestrationBinding.sln.</span></span>  
+2. <span data-ttu-id="c96d4-130">在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]中，打开解决方案文件 OrchestrationBinding.sln。</span><span class="sxs-lookup"><span data-stu-id="c96d4-130">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the solution file OrchestrationBinding.sln.</span></span>  
 
-3. <span data-ttu-id="f7fd9-131">在“生成”  菜单上，单击“生成解决方案” 。</span><span class="sxs-lookup"><span data-stu-id="f7fd9-131">On the **Build** menu, click **Build Solution**.</span></span>  
+3. <span data-ttu-id="c96d4-131">在“生成”  菜单上，单击“生成解决方案” 。</span><span class="sxs-lookup"><span data-stu-id="c96d4-131">On the **Build** menu, click **Build Solution**.</span></span>  
 
-#### <a name="to-run-this-sample"></a><span data-ttu-id="f7fd9-132">运行本示例的步骤</span><span class="sxs-lookup"><span data-stu-id="f7fd9-132">To run this sample</span></span>  
+#### <a name="to-run-this-sample"></a><span data-ttu-id="c96d4-132">运行本示例的步骤</span><span class="sxs-lookup"><span data-stu-id="c96d4-132">To run this sample</span></span>  
 
-1.  <span data-ttu-id="f7fd9-133">打开命令窗口并导航到以下文件夹：</span><span class="sxs-lookup"><span data-stu-id="f7fd9-133">Open a command window and navigate to the following folder:</span></span>  
+1.  <span data-ttu-id="c96d4-133">打开命令窗口并导航到以下文件夹：</span><span class="sxs-lookup"><span data-stu-id="c96d4-133">Open a command window and navigate to the following folder:</span></span>  
 
-     <span data-ttu-id="f7fd9-134">\<*示例路径*\>\Admin\ExplorerOM\OrchestrationBinding\bin\Debug</span><span class="sxs-lookup"><span data-stu-id="f7fd9-134">\<*Samples Path*\>\Admin\ExplorerOM\OrchestrationBinding\bin\Debug</span></span>  
+     <span data-ttu-id="c96d4-134">\<*Samples Path*\>\Admin\ExplorerOM\OrchestrationBinding\bin\Debug</span><span class="sxs-lookup"><span data-stu-id="c96d4-134">\<*Samples Path*\>\Admin\ExplorerOM\OrchestrationBinding\bin\Debug</span></span>  
 
-2.  <span data-ttu-id="f7fd9-135">运行文件 OrchestrationBinding.exe 并按照示例提供的说明进行操作。</span><span class="sxs-lookup"><span data-stu-id="f7fd9-135">Run the file OrchestrationBinding.exe and follow the directions provided by the sample.</span></span>  
+2.  <span data-ttu-id="c96d4-135">运行文件 OrchestrationBinding.exe 并按照示例提供的说明进行操作。</span><span class="sxs-lookup"><span data-stu-id="c96d4-135">Run the file OrchestrationBinding.exe and follow the directions provided by the sample.</span></span>  
 
-## <a name="windows-powershell-script-example"></a><span data-ttu-id="f7fd9-136">Windows Powershell 脚本示例</span><span class="sxs-lookup"><span data-stu-id="f7fd9-136">Windows PowerShell Script Example</span></span>  
- <span data-ttu-id="f7fd9-137">以下 Windows PowerShell 脚本可用于演示 **ExplorerOM** 类的相同功能。</span><span class="sxs-lookup"><span data-stu-id="f7fd9-137">The following Windows PowerShell script can be used to demonstrate the same features of the **ExplorerOM** classes.</span></span>  
+## <a name="windows-powershell-script-example"></a><span data-ttu-id="c96d4-136">Windows Powershell 脚本示例</span><span class="sxs-lookup"><span data-stu-id="c96d4-136">Windows PowerShell Script Example</span></span>  
+ <span data-ttu-id="c96d4-137">以下 Windows PowerShell 脚本可用于演示 **ExplorerOM** 类的相同功能。</span><span class="sxs-lookup"><span data-stu-id="c96d4-137">The following Windows PowerShell script can be used to demonstrate the same features of the **ExplorerOM** classes.</span></span>  
 
 ```  
 
@@ -182,7 +182,7 @@ RefreshPrompt Started
 
 ```  
 
- <span data-ttu-id="f7fd9-138">下面是运行 Windows PowerShell 脚本的示例输出。</span><span class="sxs-lookup"><span data-stu-id="f7fd9-138">Here is an example output from running the Windows PowerShell script.</span></span>  
+ <span data-ttu-id="c96d4-138">下面是运行 Windows PowerShell 脚本的示例输出。</span><span class="sxs-lookup"><span data-stu-id="c96d4-138">Here is an example output from running the Windows PowerShell script.</span></span>  
 
 ```  
 PS C:\> .\OrchestrationBind.ps1  
@@ -232,6 +232,6 @@ Press F5 in the Orchestrations view of BizTalk Server Administration Console to 
 
 ```  
 
-## <a name="see-also"></a><span data-ttu-id="f7fd9-139">请参阅</span><span class="sxs-lookup"><span data-stu-id="f7fd9-139">See Also</span></span>  
- <span data-ttu-id="f7fd9-140">[Admin-explorerom （BizTalk Server 示例文件夹）](../core/admin-explorerom-biztalk-server-samples-folder.md) </span><span class="sxs-lookup"><span data-stu-id="f7fd9-140">[Admin-ExplorerOM (BizTalk Server Samples Folder)](../core/admin-explorerom-biztalk-server-samples-folder.md) </span></span>  
- [<span data-ttu-id="f7fd9-141">HelloWorld（BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="f7fd9-141">HelloWorld (BizTalk Server Sample)</span></span>](../core/helloworld-biztalk-server-sample.md)
+## <a name="see-also"></a><span data-ttu-id="c96d4-139">请参阅</span><span class="sxs-lookup"><span data-stu-id="c96d4-139">See Also</span></span>  
+ <span data-ttu-id="c96d4-140">[Admin-explorerom （BizTalk Server 示例文件夹）](../core/admin-explorerom-biztalk-server-samples-folder.md) </span><span class="sxs-lookup"><span data-stu-id="c96d4-140">[Admin-ExplorerOM (BizTalk Server Samples Folder)](../core/admin-explorerom-biztalk-server-samples-folder.md) </span></span>  
+ [<span data-ttu-id="c96d4-141">HelloWorld（BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="c96d4-141">HelloWorld (BizTalk Server Sample)</span></span>](../core/helloworld-biztalk-server-sample.md)

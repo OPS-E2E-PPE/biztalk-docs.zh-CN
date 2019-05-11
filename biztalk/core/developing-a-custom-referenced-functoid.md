@@ -1,5 +1,5 @@
 ---
-title: 开发自定义引用 Functoid |Microsoft 文档
+title: 开发自定义引用的 Functoid |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c70f9cfcfaf50d92758f808346380b0a351a2f45
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9942af739bd0708f9b3cd4017eded7b3033770f9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239221"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389440"
 ---
-# <a name="developing-a-custom-referenced-functoid"></a><span data-ttu-id="d1629-102">开发自定义引用的 Functoid</span><span class="sxs-lookup"><span data-stu-id="d1629-102">Developing a Custom Referenced Functoid</span></span>
-<span data-ttu-id="d1629-103">自定义引用的 Functoid 不会将内联的实现代码复制到映射中。</span><span class="sxs-lookup"><span data-stu-id="d1629-103">Custom referenced functoids do not copy implementation code inline into the map.</span></span> <span data-ttu-id="d1629-104">实际上，它将对程序集、类和方法的引用放置在与生成的样式表相关联的扩展对象文件中，并在运行时对其进行调用。</span><span class="sxs-lookup"><span data-stu-id="d1629-104">Instead, a reference to the assembly, class, and method is placed in the extension object file associated with the generated style sheet and called at run time.</span></span>  
+# <a name="developing-a-custom-referenced-functoid"></a><span data-ttu-id="2c736-102">开发自定义引用的 Functoid</span><span class="sxs-lookup"><span data-stu-id="2c736-102">Developing a Custom Referenced Functoid</span></span>
+<span data-ttu-id="2c736-103">自定义引用的 functoid 不复制到映射的内联的实现代码。</span><span class="sxs-lookup"><span data-stu-id="2c736-103">Custom referenced functoids do not copy implementation code inline into the map.</span></span> <span data-ttu-id="2c736-104">相反，对程序集、 类和方法的引用放在扩展对象文件与生成的样式表相关联，并在运行时调用。</span><span class="sxs-lookup"><span data-stu-id="2c736-104">Instead, a reference to the assembly, class, and method is placed in the extension object file associated with the generated style sheet and called at run time.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="d1629-105">示例</span><span class="sxs-lookup"><span data-stu-id="d1629-105">Example</span></span>  
- <span data-ttu-id="d1629-106">以下示例说明了如何创建用于连接两个字符串的自定义引用的 functoid。</span><span class="sxs-lookup"><span data-stu-id="d1629-106">The following example illustrates how to create a custom referenced functoid for concatenating two strings.</span></span> <span data-ttu-id="d1629-107">该 functoid 依赖于一个包含三个字符串资源和一个 16x16 像素位图资源的资源文件。</span><span class="sxs-lookup"><span data-stu-id="d1629-107">It relies on a resource file containing three string resources and a 16x16-pixel bitmap resource.</span></span>  
+## <a name="example"></a><span data-ttu-id="2c736-105">示例</span><span class="sxs-lookup"><span data-stu-id="2c736-105">Example</span></span>  
+ <span data-ttu-id="2c736-106">下面的示例说明了如何创建用于连接两个字符串的自定义引用的 functoid。</span><span class="sxs-lookup"><span data-stu-id="2c736-106">The following example illustrates how to create a custom referenced functoid for concatenating two strings.</span></span> <span data-ttu-id="2c736-107">它依赖于包含三个字符串资源和 16 x 16 像素位图资源的资源文件。</span><span class="sxs-lookup"><span data-stu-id="2c736-107">It relies on a resource file containing three string resources and a 16x16-pixel bitmap resource.</span></span>  
   
 ```  
 using System;  
@@ -84,8 +84,8 @@ namespace Microsoft.Samples.BizTalk.CustomFunctoid
 }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="d1629-108">另请参阅</span><span class="sxs-lookup"><span data-stu-id="d1629-108">See Also</span></span>  
- <span data-ttu-id="d1629-109">[使用 BaseFunctoid](../core/using-basefunctoid.md) </span><span class="sxs-lookup"><span data-stu-id="d1629-109">[Using BaseFunctoid](../core/using-basefunctoid.md) </span></span>  
- <span data-ttu-id="d1629-110">[开发自定义的内联 Functoid](../core/developing-a-custom-inline-functoid.md) </span><span class="sxs-lookup"><span data-stu-id="d1629-110">[Developing a Custom Inline Functoid](../core/developing-a-custom-inline-functoid.md) </span></span>  
- <span data-ttu-id="d1629-111">[开发自定义的累积 Functoid](../core/developing-a-custom-cumulative-functoid.md) </span><span class="sxs-lookup"><span data-stu-id="d1629-111">[Developing a Custom Cumulative Functoid](../core/developing-a-custom-cumulative-functoid.md) </span></span>  
- [<span data-ttu-id="d1629-112">自定义 Functoid （BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="d1629-112">Custom Functoid (BizTalk Server Sample)</span></span>](../core/custom-functoid-biztalk-server-sample.md)
+## <a name="see-also"></a><span data-ttu-id="2c736-108">请参阅</span><span class="sxs-lookup"><span data-stu-id="2c736-108">See Also</span></span>  
+ <span data-ttu-id="2c736-109">[使用 BaseFunctoid](../core/using-basefunctoid.md) </span><span class="sxs-lookup"><span data-stu-id="2c736-109">[Using BaseFunctoid](../core/using-basefunctoid.md) </span></span>  
+ <span data-ttu-id="2c736-110">[开发自定义内联 Functoid](../core/developing-a-custom-inline-functoid.md) </span><span class="sxs-lookup"><span data-stu-id="2c736-110">[Developing a Custom Inline Functoid](../core/developing-a-custom-inline-functoid.md) </span></span>  
+ <span data-ttu-id="2c736-111">[开发自定义的累计 Functoid](../core/developing-a-custom-cumulative-functoid.md) </span><span class="sxs-lookup"><span data-stu-id="2c736-111">[Developing a Custom Cumulative Functoid](../core/developing-a-custom-cumulative-functoid.md) </span></span>  
+ [<span data-ttu-id="2c736-112">自定义 Functoid（BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="2c736-112">Custom Functoid (BizTalk Server Sample)</span></span>](../core/custom-functoid-biztalk-server-sample.md)

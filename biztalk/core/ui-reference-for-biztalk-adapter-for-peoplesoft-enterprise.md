@@ -1,5 +1,5 @@
 ---
-title: 用于 PeopleSoft 企业的 BizTalk Adapter 的用户界面参考 |Microsoft 文档
+title: 用于 PeopleSoft Enterprise 的 BizTalk 适配器用户界面参考 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,18 +15,18 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1f4f0c156e88165965e5846e4752b65e419739e8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2f36fb49697cb8f8082b2c4488fbb20923663ec9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22284261"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65258568"
 ---
-# <a name="ui-reference-for-biztalk-adapter-for-peoplesoft-enterprise"></a><span data-ttu-id="e1e4e-102">PeopleSoft Enterprise 的 BizTalk 适配器用户界面参考</span><span class="sxs-lookup"><span data-stu-id="e1e4e-102">UI Reference for BizTalk Adapter for PeopleSoft Enterprise</span></span>
-<span data-ttu-id="e1e4e-103">本部分中的主题介绍用于 PeopleSoft Enterprise 的 BizTalk 适配器的用户界面。</span><span class="sxs-lookup"><span data-stu-id="e1e4e-103">The topics in this section describe the user interface for BizTalk Adapter for PeopleSoft Enterprise.</span></span>  
+# <a name="ui-reference-for-biztalk-adapter-for-peoplesoft-enterprise"></a><span data-ttu-id="094bb-102">用于 PeopleSoft Enterprise 的 BizTalk 适配器用户界面参考</span><span class="sxs-lookup"><span data-stu-id="094bb-102">UI Reference for BizTalk Adapter for PeopleSoft Enterprise</span></span>
+<span data-ttu-id="094bb-103">在本部分中的主题介绍适用于 PeopleSoft Enterprise 的 BizTalk 适配器的用户界面。</span><span class="sxs-lookup"><span data-stu-id="094bb-103">The topics in this section describe the user interface for BizTalk Adapter for PeopleSoft Enterprise.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="e1e4e-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="e1e4e-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="094bb-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="094bb-104">In This Section</span></span>  
   
--   [<span data-ttu-id="e1e4e-105">PeopleSoft 传输属性对话框</span><span class="sxs-lookup"><span data-stu-id="e1e4e-105">PeopleSoft Transport Properties Dialog Box</span></span>](../core/peoplesoft-transport-properties-dialog-box.md)  
+-   [<span data-ttu-id="094bb-105">“PeopleSoft 传输属性”对话框</span><span class="sxs-lookup"><span data-stu-id="094bb-105">PeopleSoft Transport Properties Dialog Box</span></span>](../core/peoplesoft-transport-properties-dialog-box.md)  
   
--   [<span data-ttu-id="e1e4e-106">PeopleSoft 添加适配器向导</span><span class="sxs-lookup"><span data-stu-id="e1e4e-106">PeopleSoft Add Adapter Wizard</span></span>](../core/peoplesoft-add-adapter-wizard.md)
+-   [<span data-ttu-id="094bb-106">“PeopleSoft 添加适配器”向导</span><span class="sxs-lookup"><span data-stu-id="094bb-106">PeopleSoft Add Adapter Wizard</span></span>](../core/peoplesoft-add-adapter-wizard.md)

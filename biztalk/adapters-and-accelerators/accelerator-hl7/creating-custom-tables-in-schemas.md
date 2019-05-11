@@ -1,5 +1,5 @@
 ---
-title: 在架构中创建自定义表 |Microsoft 文档
+title: 在架构中创建自定义表 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,31 +16,31 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a663dd593123e647f2f466b6d472d60bb32be1be
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.openlocfilehash: 41efa501b1b937bcb179c61d6d21f1dd12deac88
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2018
-ms.locfileid: "25960339"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65255721"
 ---
-# <a name="creating-custom-tables-in-schemas"></a><span data-ttu-id="26f5a-102">在架构中创建自定义的表</span><span class="sxs-lookup"><span data-stu-id="26f5a-102">Creating Custom Tables in Schemas</span></span>
-<span data-ttu-id="26f5a-103">你可以在 tablevalues_ 中创建自定义表格\<*版本*\>.xsd 公用架构。</span><span class="sxs-lookup"><span data-stu-id="26f5a-103">You can create a custom table in the tablevalues_\<*version*\>.xsd common schema.</span></span> <span data-ttu-id="26f5a-104">你可以基于自定义的表，现有的数据类型，一个基本数据类型，或基于表中定义的枚举。</span><span class="sxs-lookup"><span data-stu-id="26f5a-104">You can base a custom table on an existing data type, a base data type, or on an enumeration defined in a table.</span></span>  
+# <a name="creating-custom-tables-in-schemas"></a><span data-ttu-id="ee0ad-102">在架构中创建自定义表</span><span class="sxs-lookup"><span data-stu-id="ee0ad-102">Creating Custom Tables in Schemas</span></span>
+<span data-ttu-id="ee0ad-103">可以创建自定义表中 tablevalues_\<*版本*\>.xsd 公用架构。</span><span class="sxs-lookup"><span data-stu-id="ee0ad-103">You can create a custom table in the tablevalues_\<*version*\>.xsd common schema.</span></span> <span data-ttu-id="ee0ad-104">可以基于自定义的表，对现有数据类型的基本数据类型，或基于的表中定义的枚举。</span><span class="sxs-lookup"><span data-stu-id="ee0ad-104">You can base a custom table on an existing data type, a base data type, or on an enumeration defined in a table.</span></span>  
   
-### <a name="to-create-a-z-table"></a><span data-ttu-id="26f5a-105">若要创建 Z 表</span><span class="sxs-lookup"><span data-stu-id="26f5a-105">To create a Z table</span></span>  
+### <a name="to-create-a-z-table"></a><span data-ttu-id="ee0ad-105">若要创建 Z 表</span><span class="sxs-lookup"><span data-stu-id="ee0ad-105">To create a Z table</span></span>  
   
-1.  <span data-ttu-id="26f5a-106">在解决方案资源管理器，打开通用的数据类型架构文件**tablevalues_\<*版本*\>.xsd**，然后单击**打开**。</span><span class="sxs-lookup"><span data-stu-id="26f5a-106">In Solution Explorer, open the common data-type schema file **tablevalues_\<*version*\>.xsd**, and then click **Open**.</span></span>  
+1.  <span data-ttu-id="ee0ad-106">在解决方案资源管理器中打开的常见数据类型的架构文件**tablevalues_\<*版本*\>.xsd**，然后单击**打开**。</span><span class="sxs-lookup"><span data-stu-id="ee0ad-106">In Solution Explorer, open the common data-type schema file **tablevalues_\<*version*\>.xsd**, and then click **Open**.</span></span>  
   
-2.  <span data-ttu-id="26f5a-107">在 BizTalk 编辑器中，右键单击**HL7DefinedTables**，指向**插入架构节点**，然后单击**子字段元素**。</span><span class="sxs-lookup"><span data-stu-id="26f5a-107">In BizTalk Editor, right-click **HL7DefinedTables**, point to **Insert Schema Node**, and then click **Child Field Element**.</span></span>  
+2.  <span data-ttu-id="ee0ad-107">在 BizTalk 编辑器中，右键单击**HL7DefinedTables**，依次指向**插入 Schema 节点**，然后单击**子字段元素**。</span><span class="sxs-lookup"><span data-stu-id="ee0ad-107">In BizTalk Editor, right-click **HL7DefinedTables**, point to **Insert Schema Node**, and then click **Child Field Element**.</span></span>  
   
-3.  <span data-ttu-id="26f5a-108">命名此表与字母"Z"开头的标记。</span><span class="sxs-lookup"><span data-stu-id="26f5a-108">Name the table with a tag starting with the letter "Z".</span></span>  
+3.  <span data-ttu-id="ee0ad-108">命名此表与字母"Z"开头的标记。</span><span class="sxs-lookup"><span data-stu-id="ee0ad-108">Name the table with a tag starting with the letter "Z".</span></span>  
   
-4.  <span data-ttu-id="26f5a-109">根据需要请在属性窗格中，键入所需的特定属性的值。</span><span class="sxs-lookup"><span data-stu-id="26f5a-109">In the Properties pane, type the values you want for specific properties, as needed.</span></span>  
+4.  <span data-ttu-id="ee0ad-109">在属性窗格中，根据需要键入所需的特定属性的值。</span><span class="sxs-lookup"><span data-stu-id="ee0ad-109">In the Properties pane, type the values you want for specific properties, as needed.</span></span>  
   
-5.  <span data-ttu-id="26f5a-110">若要将枚举与表中，在属性窗格中，关联设置**派生源**到**限制**，单击**枚举**，单击的省略号（…）按钮**枚举**，然后键入想要包含在枚举编辑器中的枚举的值。</span><span class="sxs-lookup"><span data-stu-id="26f5a-110">To associate an enumeration with the table, in the Properties pane, set **Derived By** to **Restriction**, click **Enumeration**, click the ellipsis (…) button for **Enumeration**, and then type the values that you want the enumeration to contain in the Enumeration Editor.</span></span> <span data-ttu-id="26f5a-111">单击 **“确定”**。</span><span class="sxs-lookup"><span data-stu-id="26f5a-111">Click **OK**.</span></span>  
+5.  <span data-ttu-id="ee0ad-110">若要枚举相关联的表，在属性窗格中设置**Derived By**到**限制**，单击**枚举**，单击的省略号（...）按钮**枚举**，然后键入你想要包含在枚举编辑器中的枚举的值。</span><span class="sxs-lookup"><span data-stu-id="ee0ad-110">To associate an enumeration with the table, in the Properties pane, set **Derived By** to **Restriction**, click **Enumeration**, click the ellipsis (…) button for **Enumeration**, and then type the values that you want the enumeration to contain in the Enumeration Editor.</span></span> <span data-ttu-id="ee0ad-111">单击“确定” 。</span><span class="sxs-lookup"><span data-stu-id="ee0ad-111">Click **OK**.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="26f5a-112">另请参阅</span><span class="sxs-lookup"><span data-stu-id="26f5a-112">See Also</span></span>  
- <span data-ttu-id="26f5a-113">[扩展 HL7 2.X 架构具有 Z 对象](../../adapters-and-accelerators/accelerator-hl7/extending-hl7-2-x-schemas-with-z-objects.md) </span><span class="sxs-lookup"><span data-stu-id="26f5a-113">[Extending HL7 2.X Schemas with Z Objects](../../adapters-and-accelerators/accelerator-hl7/extending-hl7-2-x-schemas-with-z-objects.md) </span></span>  
- <span data-ttu-id="26f5a-114">[创建声明的 Z 段](../../adapters-and-accelerators/accelerator-hl7/creating-declared-z-segments.md) </span><span class="sxs-lookup"><span data-stu-id="26f5a-114">[Creating Declared Z Segments](../../adapters-and-accelerators/accelerator-hl7/creating-declared-z-segments.md) </span></span>  
- <span data-ttu-id="26f5a-115">[在架构中创建自定义数据类型](../../adapters-and-accelerators/accelerator-hl7/creating-custom-data-types-in-schemas.md) </span><span class="sxs-lookup"><span data-stu-id="26f5a-115">[Creating Custom Data Types in Schemas](../../adapters-and-accelerators/accelerator-hl7/creating-custom-data-types-in-schemas.md) </span></span>  
- <span data-ttu-id="26f5a-116">[扩展枚举](../../adapters-and-accelerators/accelerator-hl7/extending-enumerations.md) </span><span class="sxs-lookup"><span data-stu-id="26f5a-116">[Extending Enumerations](../../adapters-and-accelerators/accelerator-hl7/extending-enumerations.md) </span></span>  
- [<span data-ttu-id="26f5a-117">处理未声明的 Z 段</span><span class="sxs-lookup"><span data-stu-id="26f5a-117">Handling Undeclared Z Segments</span></span>](../../adapters-and-accelerators/accelerator-hl7/handling-undeclared-z-segments.md)
+## <a name="see-also"></a><span data-ttu-id="ee0ad-112">请参阅</span><span class="sxs-lookup"><span data-stu-id="ee0ad-112">See Also</span></span>  
+ <span data-ttu-id="ee0ad-113">[使用 Z 对象扩展 HL7 2.X 架构](../../adapters-and-accelerators/accelerator-hl7/extending-hl7-2-x-schemas-with-z-objects.md) </span><span class="sxs-lookup"><span data-stu-id="ee0ad-113">[Extending HL7 2.X Schemas with Z Objects](../../adapters-and-accelerators/accelerator-hl7/extending-hl7-2-x-schemas-with-z-objects.md) </span></span>  
+ <span data-ttu-id="ee0ad-114">[创建声明的 Z 段](../../adapters-and-accelerators/accelerator-hl7/creating-declared-z-segments.md) </span><span class="sxs-lookup"><span data-stu-id="ee0ad-114">[Creating Declared Z Segments](../../adapters-and-accelerators/accelerator-hl7/creating-declared-z-segments.md) </span></span>  
+ <span data-ttu-id="ee0ad-115">[在架构中创建自定义数据类型](../../adapters-and-accelerators/accelerator-hl7/creating-custom-data-types-in-schemas.md) </span><span class="sxs-lookup"><span data-stu-id="ee0ad-115">[Creating Custom Data Types in Schemas](../../adapters-and-accelerators/accelerator-hl7/creating-custom-data-types-in-schemas.md) </span></span>  
+ <span data-ttu-id="ee0ad-116">[扩展枚举](../../adapters-and-accelerators/accelerator-hl7/extending-enumerations.md) </span><span class="sxs-lookup"><span data-stu-id="ee0ad-116">[Extending Enumerations](../../adapters-and-accelerators/accelerator-hl7/extending-enumerations.md) </span></span>  
+ [<span data-ttu-id="ee0ad-117">处理未声明的 Z 段</span><span class="sxs-lookup"><span data-stu-id="ee0ad-117">Handling Undeclared Z Segments</span></span>](../../adapters-and-accelerators/accelerator-hl7/handling-undeclared-z-segments.md)

@@ -1,5 +1,5 @@
 ---
-title: 故障排除 BizTalk Server 适配器 |Microsoft 文档
+title: BizTalk Server 适配器故障排除 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,38 +12,38 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bdaf265f3a0c58f9505f9b4806dac0a5cee05a75
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 900e4bb481f2fd894c9ea186e57b516059b5052a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278949"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401879"
 ---
-# <a name="troubleshooting-biztalk-server-adapters"></a><span data-ttu-id="ceb91-102">故障排除的 BizTalk Server 适配器</span><span class="sxs-lookup"><span data-stu-id="ceb91-102">Troubleshooting BizTalk Server Adapters</span></span>
-<span data-ttu-id="ceb91-103">本主题介绍常见疑难解答可用于确定和解决可能的集成 BizTalk 适配器中发生的问题的步骤。</span><span class="sxs-lookup"><span data-stu-id="ceb91-103">This topic describes common trouble shooting steps that can be used to identify and resolve problems that may be occurring in the BizTalk Integrated adapters.</span></span>  
+# <a name="troubleshooting-biztalk-server-adapters"></a><span data-ttu-id="0c21f-102">BizTalk Server 适配器疑难解答</span><span class="sxs-lookup"><span data-stu-id="0c21f-102">Troubleshooting BizTalk Server Adapters</span></span>
+<span data-ttu-id="0c21f-103">本主题介绍常见故障排除步骤可以用来确定和解决 BizTalk 集成适配器中可能出现的问题。</span><span class="sxs-lookup"><span data-stu-id="0c21f-103">This topic describes common trouble shooting steps that can be used to identify and resolve problems that may be occurring in the BizTalk Integrated adapters.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="ceb91-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="ceb91-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="0c21f-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="0c21f-104">In This Section</span></span>  
   
--   [<span data-ttu-id="ceb91-105">故障排除的文件适配器</span><span class="sxs-lookup"><span data-stu-id="ceb91-105">Troubleshooting the File Adapter</span></span>](../core/troubleshooting-the-file-adapter.md)  
+-   [<span data-ttu-id="0c21f-105">文件适配器故障排除</span><span class="sxs-lookup"><span data-stu-id="0c21f-105">Troubleshooting the File Adapter</span></span>](../core/troubleshooting-the-file-adapter.md)  
   
--   [<span data-ttu-id="ceb91-106">故障排除 FTP 适配器</span><span class="sxs-lookup"><span data-stu-id="ceb91-106">Troubleshooting the FTP Adapter</span></span>](../core/troubleshooting-the-ftp-adapter.md)  
+-   [<span data-ttu-id="0c21f-106">FTP 适配器故障排除</span><span class="sxs-lookup"><span data-stu-id="0c21f-106">Troubleshooting the FTP Adapter</span></span>](../core/troubleshooting-the-ftp-adapter.md)  
   
--   [<span data-ttu-id="ceb91-107">故障排除 HTTP 适配器</span><span class="sxs-lookup"><span data-stu-id="ceb91-107">Troubleshooting the HTTP Adapter</span></span>](../core/troubleshooting-the-http-adapter.md)  
+-   [<span data-ttu-id="0c21f-107">HTTP 适配器故障排除</span><span class="sxs-lookup"><span data-stu-id="0c21f-107">Troubleshooting the HTTP Adapter</span></span>](../core/troubleshooting-the-http-adapter.md)  
   
--   [<span data-ttu-id="ceb91-108">故障排除 MQSeries 适配器</span><span class="sxs-lookup"><span data-stu-id="ceb91-108">Troubleshooting the MQSeries Adapter</span></span>](../core/troubleshooting-the-mqseries-adapter.md)  
+-   [<span data-ttu-id="0c21f-108">MQSeries 适配器故障排除</span><span class="sxs-lookup"><span data-stu-id="0c21f-108">Troubleshooting the MQSeries Adapter</span></span>](../core/troubleshooting-the-mqseries-adapter.md)  
   
--   [<span data-ttu-id="ceb91-109">故障排除 MSMQ 适配器</span><span class="sxs-lookup"><span data-stu-id="ceb91-109">Troubleshooting the MSMQ Adapter</span></span>](../core/troubleshooting-the-msmq-adapter.md)  
+-   [<span data-ttu-id="0c21f-109">MSMQ 适配器故障排除</span><span class="sxs-lookup"><span data-stu-id="0c21f-109">Troubleshooting the MSMQ Adapter</span></span>](../core/troubleshooting-the-msmq-adapter.md)  
   
--   [<span data-ttu-id="ceb91-110">故障排除 POP3 适配器</span><span class="sxs-lookup"><span data-stu-id="ceb91-110">Troubleshooting the POP3 Adapter</span></span>](../core/troubleshooting-the-pop3-adapter.md)  
+-   [<span data-ttu-id="0c21f-110">POP3 适配器故障排除</span><span class="sxs-lookup"><span data-stu-id="0c21f-110">Troubleshooting the POP3 Adapter</span></span>](../core/troubleshooting-the-pop3-adapter.md)  
   
--   [<span data-ttu-id="ceb91-111">故障排除 SMTP 适配器</span><span class="sxs-lookup"><span data-stu-id="ceb91-111">Troubleshooting the SMTP Adapter</span></span>](../core/troubleshooting-the-smtp-adapter.md)  
+-   [<span data-ttu-id="0c21f-111">SMTP 适配器故障排除</span><span class="sxs-lookup"><span data-stu-id="0c21f-111">Troubleshooting the SMTP Adapter</span></span>](../core/troubleshooting-the-smtp-adapter.md)  
   
--   [<span data-ttu-id="ceb91-112">故障排除 SOAP 适配器</span><span class="sxs-lookup"><span data-stu-id="ceb91-112">Troubleshooting the SOAP Adapter</span></span>](../core/troubleshooting-the-soap-adapter.md)  
+-   [<span data-ttu-id="0c21f-112">SOAP 适配器故障排除</span><span class="sxs-lookup"><span data-stu-id="0c21f-112">Troubleshooting the SOAP Adapter</span></span>](../core/troubleshooting-the-soap-adapter.md)  
   
--   [<span data-ttu-id="ceb91-113">故障排除 Windows SharePoint Services Adapter</span><span class="sxs-lookup"><span data-stu-id="ceb91-113">Troubleshooting the Windows SharePoint Services Adapter</span></span>](../core/troubleshooting-the-windows-sharepoint-services-adapter.md)  
+-   [<span data-ttu-id="0c21f-113">Windows SharePoint Services 适配器故障排除</span><span class="sxs-lookup"><span data-stu-id="0c21f-113">Troubleshooting the Windows SharePoint Services Adapter</span></span>](../core/troubleshooting-the-windows-sharepoint-services-adapter.md)  
   
--   [<span data-ttu-id="ceb91-114">故障排除的 WCF 适配器</span><span class="sxs-lookup"><span data-stu-id="ceb91-114">Troubleshooting the WCF Adapters</span></span>](../core/troubleshooting-the-wcf-adapters.md)  
+-   [<span data-ttu-id="0c21f-114">WCF 适配器疑难解答</span><span class="sxs-lookup"><span data-stu-id="0c21f-114">Troubleshooting the WCF Adapters</span></span>](../core/troubleshooting-the-wcf-adapters.md)  
   
--   [<span data-ttu-id="ceb91-115">使用 BizTalk 适配器跟踪</span><span class="sxs-lookup"><span data-stu-id="ceb91-115">Using BizTalk Adapter Tracing</span></span>](../core/using-biztalk-adapter-tracing.md)  
+-   [<span data-ttu-id="0c21f-115">使用 BizTalk 适配器跟踪</span><span class="sxs-lookup"><span data-stu-id="0c21f-115">Using BizTalk Adapter Tracing</span></span>](../core/using-biztalk-adapter-tracing.md)  
   
--   [<span data-ttu-id="ceb91-116">使用 IPv6 寻址与 BizTalk 适配器</span><span class="sxs-lookup"><span data-stu-id="ceb91-116">Using IPv6 Addressing with BizTalk Adapters</span></span>](../core/using-ipv6-addressing-with-biztalk-adapters.md)
+-   [<span data-ttu-id="0c21f-116">对 BizTalk 适配器使用 IPv6 寻址</span><span class="sxs-lookup"><span data-stu-id="0c21f-116">Using IPv6 Addressing with BizTalk Adapters</span></span>](../core/using-ipv6-addressing-with-biztalk-adapters.md)

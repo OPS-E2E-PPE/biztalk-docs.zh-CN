@@ -1,5 +1,5 @@
 ---
-title: 为适配器配置的自定义下拉列表编辑器 |Microsoft 文档
+title: 适配器配置的自定义下拉编辑器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b88e5eb887c2177783611ada8e3ce2a80a0b6a66
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fcf59a1692b8921d7e73799dcabafa4ad467f7c6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238493"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389824"
 ---
-# <a name="custom-drop-down-editor-for-adapter-configuration"></a><span data-ttu-id="8ea30-102">适配器配置的的自定义下拉列表编辑器</span><span class="sxs-lookup"><span data-stu-id="8ea30-102">Custom Drop-Down Editor for Adapter Configuration</span></span>
-<span data-ttu-id="8ea30-103">自定义编辑器的代码演示一个派生自的编辑器**System.Drawing.Design.UITypeEditor**显示用于输入密码的下拉文本框的类。</span><span class="sxs-lookup"><span data-stu-id="8ea30-103">The code for the custom editor shows an editor derived from the **System.Drawing.Design.UITypeEditor** class that displays a drop-down text box for entering a password.</span></span> <span data-ttu-id="8ea30-104">**GetEditStyle**重写返回**UIEditorEditStyle.DropDown**以指示的下拉菜单的子控件。</span><span class="sxs-lookup"><span data-stu-id="8ea30-104">The **GetEditStyle** override returns **UIEditorEditStyle.DropDown** to indicate a drop-down subcontrol.</span></span> <span data-ttu-id="8ea30-105">服务方法**DropDownControl**和**CloseDropDown**管理与创建的控件**CreatePassword**。</span><span class="sxs-lookup"><span data-stu-id="8ea30-105">The service methods **DropDownControl** and **CloseDropDown** manage the control created with **CreatePassword**.</span></span>  
+# <a name="custom-drop-down-editor-for-adapter-configuration"></a><span data-ttu-id="b2904-102">适配器配置的自定义下拉编辑器</span><span class="sxs-lookup"><span data-stu-id="b2904-102">Custom Drop-Down Editor for Adapter Configuration</span></span>
+<span data-ttu-id="b2904-103">自定义编辑器的代码显示了派生自编辑器**System.Drawing.Design.UITypeEditor**显示下拉文本框用于输入密码的类。</span><span class="sxs-lookup"><span data-stu-id="b2904-103">The code for the custom editor shows an editor derived from the **System.Drawing.Design.UITypeEditor** class that displays a drop-down text box for entering a password.</span></span> <span data-ttu-id="b2904-104">**GetEditStyle**重写返回**UIEditorEditStyle.DropDown**以指示下拉子控件。</span><span class="sxs-lookup"><span data-stu-id="b2904-104">The **GetEditStyle** override returns **UIEditorEditStyle.DropDown** to indicate a drop-down subcontrol.</span></span> <span data-ttu-id="b2904-105">服务方法**DropDownControl**并**CloseDropDown**管理与创建的控件**CreatePassword**。</span><span class="sxs-lookup"><span data-stu-id="b2904-105">The service methods **DropDownControl** and **CloseDropDown** manage the control created with **CreatePassword**.</span></span>  
   
- <span data-ttu-id="8ea30-106">下面的代码是自定义下拉编辑器的类定义：</span><span class="sxs-lookup"><span data-stu-id="8ea30-106">The following code is the class definition for the custom drop-down editor:</span></span>  
+ <span data-ttu-id="b2904-106">以下代码是自定义下拉编辑器的类定义：</span><span class="sxs-lookup"><span data-stu-id="b2904-106">The following code is the class definition for the custom drop-down editor:</span></span>  
   
 ```  
 /*************************************************************************  
@@ -94,8 +94,8 @@ namespace AdapterManagement.ComponentModel {
 } // Microsoft.BizTalk.Adapter.Framework.ComponentModel  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="8ea30-107">另请参阅</span><span class="sxs-lookup"><span data-stu-id="8ea30-107">See Also</span></span>  
- <span data-ttu-id="8ea30-108">[自定义适配器配置设计器](../core/custom-adapter-configuration-designer.md) </span><span class="sxs-lookup"><span data-stu-id="8ea30-108">[Custom Adapter Configuration Designer](../core/custom-adapter-configuration-designer.md) </span></span>  
- <span data-ttu-id="8ea30-109">[适配器配置的的自定义模式对话框编辑器](../core/custom-modal-dialog-editor-for-adapter-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="8ea30-109">[Custom Modal Dialog Editor for Adapter Configuration](../core/custom-modal-dialog-editor-for-adapter-configuration.md) </span></span>  
- <span data-ttu-id="8ea30-110">[适配器配置的的自定义类型转换器](../core/custom-type-converter-for-adapter-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="8ea30-110">[Custom Type Converter for Adapter Configuration](../core/custom-type-converter-for-adapter-configuration.md) </span></span>  
- [<span data-ttu-id="8ea30-111">适配器的高级的配置组件</span><span class="sxs-lookup"><span data-stu-id="8ea30-111">Advanced Configuration Components for Adapters</span></span>](../core/advanced-configuration-components-for-adapters.md)
+## <a name="see-also"></a><span data-ttu-id="b2904-107">请参阅</span><span class="sxs-lookup"><span data-stu-id="b2904-107">See Also</span></span>  
+ <span data-ttu-id="b2904-108">[自定义适配器配置设计器](../core/custom-adapter-configuration-designer.md) </span><span class="sxs-lookup"><span data-stu-id="b2904-108">[Custom Adapter Configuration Designer](../core/custom-adapter-configuration-designer.md) </span></span>  
+ <span data-ttu-id="b2904-109">[适配器配置的的自定义模式对话框编辑器](../core/custom-modal-dialog-editor-for-adapter-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="b2904-109">[Custom Modal Dialog Editor for Adapter Configuration](../core/custom-modal-dialog-editor-for-adapter-configuration.md) </span></span>  
+ <span data-ttu-id="b2904-110">[适配器配置的自定义类型转换器](../core/custom-type-converter-for-adapter-configuration.md) </span><span class="sxs-lookup"><span data-stu-id="b2904-110">[Custom Type Converter for Adapter Configuration](../core/custom-type-converter-for-adapter-configuration.md) </span></span>  
+ [<span data-ttu-id="b2904-111">适配器的高级配置组件</span><span class="sxs-lookup"><span data-stu-id="b2904-111">Advanced Configuration Components for Adapters</span></span>](../core/advanced-configuration-components-for-adapters.md)

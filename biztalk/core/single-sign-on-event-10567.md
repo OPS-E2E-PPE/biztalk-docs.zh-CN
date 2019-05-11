@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10567 |Microsoft Docs
+title: 单一登录：事件 10567 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6ac0bed16a9e80860b23738e175b2bdafb883283
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a04443059099694dc60dcb8bf7e33c15d508d273
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975926"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398775"
 ---
-# <a name="single-sign-on-event-10567"></a><span data-ttu-id="d2baf-102">单一登录： 事件 10567</span><span class="sxs-lookup"><span data-stu-id="d2baf-102">Single Sign-On: Event 10567</span></span>
-## <a name="details"></a><span data-ttu-id="d2baf-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="d2baf-103">Details</span></span>  
+# <a name="single-sign-on-event-10567"></a><span data-ttu-id="edab3-102">单一登录：事件 10567</span><span class="sxs-lookup"><span data-stu-id="edab3-102">Single Sign-On: Event 10567</span></span>
+## <a name="details"></a><span data-ttu-id="edab3-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="edab3-103">Details</span></span>  
   
 |                 |                                                                                                                                                                                                           |
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  <span data-ttu-id="d2baf-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="d2baf-104">Product Name</span></span>   |                                                                                         <span data-ttu-id="d2baf-105">企业单一登录</span><span class="sxs-lookup"><span data-stu-id="d2baf-105">Enterprise Single Sign-On</span></span>                                                                                         |
-| <span data-ttu-id="d2baf-106">产品版本</span><span class="sxs-lookup"><span data-stu-id="d2baf-106">Product Version</span></span> |                                                                        [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                         |
-|    <span data-ttu-id="d2baf-107">事件 ID</span><span class="sxs-lookup"><span data-stu-id="d2baf-107">Event ID</span></span>     |                                                                                                   <span data-ttu-id="d2baf-108">10567</span><span class="sxs-lookup"><span data-stu-id="d2baf-108">10567</span></span>                                                                                                   |
-|  <span data-ttu-id="d2baf-109">事件源</span><span class="sxs-lookup"><span data-stu-id="d2baf-109">Event Source</span></span>   |                                                                                                  <span data-ttu-id="d2baf-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="d2baf-110">ENTSSO</span></span>                                                                                                   |
-|    <span data-ttu-id="d2baf-111">组件</span><span class="sxs-lookup"><span data-stu-id="d2baf-111">Component</span></span>    |                                                                                                    <span data-ttu-id="d2baf-112">N/A</span><span class="sxs-lookup"><span data-stu-id="d2baf-112">N/A</span></span>                                                                                                    |
-|  <span data-ttu-id="d2baf-113">符号名称</span><span class="sxs-lookup"><span data-stu-id="d2baf-113">Symbolic Name</span></span>  |                                                                                      <span data-ttu-id="d2baf-114">SSO_WARN_INVALID_APP_USER_GROUP</span><span class="sxs-lookup"><span data-stu-id="d2baf-114">SSO_WARN_INVALID_APP_USER_GROUP</span></span>                                                                                      |
-|  <span data-ttu-id="d2baf-115">消息正文</span><span class="sxs-lookup"><span data-stu-id="d2baf-115">Message Text</span></span>   | <span data-ttu-id="d2baf-116">应用程序用户帐户不是有效的应用程序 update.%r</span><span class="sxs-lookup"><span data-stu-id="d2baf-116">The Application Users account is not valid for application update.%r</span></span><br /><br /> <span data-ttu-id="d2baf-117">应用程序名称: %1 %r</span><span class="sxs-lookup"><span data-stu-id="d2baf-117">Application Name: %1%r</span></span><br /><br /> <span data-ttu-id="d2baf-118">应用程序用户: %2 %r</span><span class="sxs-lookup"><span data-stu-id="d2baf-118">Application Users: %2%r</span></span><br /><br /> <span data-ttu-id="d2baf-119">无效帐户: %3 %r</span><span class="sxs-lookup"><span data-stu-id="d2baf-119">Invalid accounts: %3%r</span></span><br /><br /> <span data-ttu-id="d2baf-120">错误代码： %4</span><span class="sxs-lookup"><span data-stu-id="d2baf-120">Error Code: %4</span></span> |
+|  <span data-ttu-id="edab3-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="edab3-104">Product Name</span></span>   |                                                                                         <span data-ttu-id="edab3-105">企业单一登录</span><span class="sxs-lookup"><span data-stu-id="edab3-105">Enterprise Single Sign-On</span></span>                                                                                         |
+| <span data-ttu-id="edab3-106">产品版本</span><span class="sxs-lookup"><span data-stu-id="edab3-106">Product Version</span></span> |                                                                        [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                         |
+|    <span data-ttu-id="edab3-107">事件 ID</span><span class="sxs-lookup"><span data-stu-id="edab3-107">Event ID</span></span>     |                                                                                                   <span data-ttu-id="edab3-108">10567</span><span class="sxs-lookup"><span data-stu-id="edab3-108">10567</span></span>                                                                                                   |
+|  <span data-ttu-id="edab3-109">事件源</span><span class="sxs-lookup"><span data-stu-id="edab3-109">Event Source</span></span>   |                                                                                                  <span data-ttu-id="edab3-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="edab3-110">ENTSSO</span></span>                                                                                                   |
+|    <span data-ttu-id="edab3-111">组件</span><span class="sxs-lookup"><span data-stu-id="edab3-111">Component</span></span>    |                                                                                                    <span data-ttu-id="edab3-112">不可用</span><span class="sxs-lookup"><span data-stu-id="edab3-112">N/A</span></span>                                                                                                    |
+|  <span data-ttu-id="edab3-113">符号名称</span><span class="sxs-lookup"><span data-stu-id="edab3-113">Symbolic Name</span></span>  |                                                                                      <span data-ttu-id="edab3-114">SSO_WARN_INVALID_APP_USER_GROUP</span><span class="sxs-lookup"><span data-stu-id="edab3-114">SSO_WARN_INVALID_APP_USER_GROUP</span></span>                                                                                      |
+|  <span data-ttu-id="edab3-115">消息正文</span><span class="sxs-lookup"><span data-stu-id="edab3-115">Message Text</span></span>   | <span data-ttu-id="edab3-116">应用程序用户帐户不是有效的应用程序 update.%r</span><span class="sxs-lookup"><span data-stu-id="edab3-116">The Application Users account is not valid for application update.%r</span></span><br /><br /> <span data-ttu-id="edab3-117">应用程序名称: %1 %r</span><span class="sxs-lookup"><span data-stu-id="edab3-117">Application Name: %1%r</span></span><br /><br /> <span data-ttu-id="edab3-118">应用程序用户: %2 %r</span><span class="sxs-lookup"><span data-stu-id="edab3-118">Application Users: %2%r</span></span><br /><br /> <span data-ttu-id="edab3-119">无效帐户: %3 %r</span><span class="sxs-lookup"><span data-stu-id="edab3-119">Invalid accounts: %3%r</span></span><br /><br /> <span data-ttu-id="edab3-120">错误代码： %4</span><span class="sxs-lookup"><span data-stu-id="edab3-120">Error Code: %4</span></span> |
   
-## <a name="explanation"></a><span data-ttu-id="d2baf-121">解释</span><span class="sxs-lookup"><span data-stu-id="d2baf-121">Explanation</span></span>  
- <span data-ttu-id="d2baf-122">您尝试更新的应用程序用户帐户无效或不存在。</span><span class="sxs-lookup"><span data-stu-id="d2baf-122">You have attempted to update an Application Users account which is either invalid or does not exist.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="edab3-121">解释</span><span class="sxs-lookup"><span data-stu-id="edab3-121">Explanation</span></span>  
+ <span data-ttu-id="edab3-122">已尝试更新的应用程序用户帐户无效或不存在。</span><span class="sxs-lookup"><span data-stu-id="edab3-122">You have attempted to update an Application Users account which is either invalid or does not exist.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="d2baf-123">用户操作</span><span class="sxs-lookup"><span data-stu-id="d2baf-123">User Action</span></span>  
- <span data-ttu-id="d2baf-124">检查帐户的名称是否正确。</span><span class="sxs-lookup"><span data-stu-id="d2baf-124">Check that the name of the account is correct.</span></span>
+## <a name="user-action"></a><span data-ttu-id="edab3-123">用户操作</span><span class="sxs-lookup"><span data-stu-id="edab3-123">User Action</span></span>  
+ <span data-ttu-id="edab3-124">检查帐户的名称正确。</span><span class="sxs-lookup"><span data-stu-id="edab3-124">Check that the name of the account is correct.</span></span>

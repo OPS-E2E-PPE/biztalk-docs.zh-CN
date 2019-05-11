@@ -1,5 +1,5 @@
 ---
-title: 保护的 SSO 部署 |Microsoft 文档
+title: 确保 SSO 部署的安全 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,18 +15,18 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f7727ba7e93a14f6107856fb05cedaf4b8f0a4eb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3eb05f95221567dc41605801bae1f1b499cc2ade
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269469"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65251187"
 ---
-# <a name="securing-your-deployment-of-sso"></a><span data-ttu-id="b3e99-102">保护你的部署的 SSO</span><span class="sxs-lookup"><span data-stu-id="b3e99-102">Securing Your Deployment of SSO</span></span>
-<span data-ttu-id="b3e99-103">本部分简要介绍了企业单一登录安全部署的典型方案。</span><span class="sxs-lookup"><span data-stu-id="b3e99-103">This section outlines a typical scenario for secure deployment of Enterprise Single Sign-On.</span></span> <span data-ttu-id="b3e99-104">有关在 SQL Server 中执行操作的详细过程，请参阅 SQL Server 文档。</span><span class="sxs-lookup"><span data-stu-id="b3e99-104">For detailed procedures on the actions to take in SQL Server, see your SQL Server documentation.</span></span>  
+# <a name="securing-your-deployment-of-sso"></a><span data-ttu-id="80a73-102">确保 SSO 部署的安全</span><span class="sxs-lookup"><span data-stu-id="80a73-102">Securing Your Deployment of SSO</span></span>
+<span data-ttu-id="80a73-103">本部分概述的企业单一登录的安全部署的典型方案。</span><span class="sxs-lookup"><span data-stu-id="80a73-103">This section outlines a typical scenario for secure deployment of Enterprise Single Sign-On.</span></span> <span data-ttu-id="80a73-104">要在 SQL Server 中执行的操作的详细过程，请参阅 SQL Server 文档。</span><span class="sxs-lookup"><span data-stu-id="80a73-104">For detailed procedures on the actions to take in SQL Server, see your SQL Server documentation.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="b3e99-105">本节内容</span><span class="sxs-lookup"><span data-stu-id="b3e99-105">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="80a73-105">本节内容</span><span class="sxs-lookup"><span data-stu-id="80a73-105">In This Section</span></span>  
   
--   [<span data-ttu-id="b3e99-106">SSO 部署概述</span><span class="sxs-lookup"><span data-stu-id="b3e99-106">SSO Deployment Overview</span></span>](../core/sso-deployment-overview.md)  
+-   [<span data-ttu-id="80a73-106">SSO 部署概述</span><span class="sxs-lookup"><span data-stu-id="80a73-106">SSO Deployment Overview</span></span>](../core/sso-deployment-overview.md)  
   
--   [<span data-ttu-id="b3e99-107">部署过程</span><span class="sxs-lookup"><span data-stu-id="b3e99-107">Deployment Process</span></span>](../core/deployment-process.md)
+-   [<span data-ttu-id="80a73-107">部署过程</span><span class="sxs-lookup"><span data-stu-id="80a73-107">Deployment Process</span></span>](../core/deployment-process.md)

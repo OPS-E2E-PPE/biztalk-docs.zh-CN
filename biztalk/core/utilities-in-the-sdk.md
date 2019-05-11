@@ -1,5 +1,5 @@
 ---
-title: SDK 中的实用程序 |Microsoft 文档
+title: 在 SDK 中的实用程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,32 +14,32 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7f8db994395ead14ed0e452ff8461f0aa55f8f2a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5c9869ccf526d9a3618fab7f06767f0f426973e2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287573"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401593"
 ---
-# <a name="utilities-in-the-sdk"></a><span data-ttu-id="6f88c-102">SDK 中的实用程序</span><span class="sxs-lookup"><span data-stu-id="6f88c-102">Utilities in the SDK</span></span>
-<span data-ttu-id="6f88c-103">本部分提供 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 软件开发工具包 (SDK) 中包含的多个有用实用程序的使用说明。</span><span class="sxs-lookup"><span data-stu-id="6f88c-103">This section provides instructions for using several useful utilities included in the Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Software Development Kit (SDK).</span></span>  
+# <a name="utilities-in-the-sdk"></a><span data-ttu-id="3536a-102">SDK 中的实用工具</span><span class="sxs-lookup"><span data-stu-id="3536a-102">Utilities in the SDK</span></span>
+<span data-ttu-id="3536a-103">本部分提供有关使用 Microsoft 中包含的几个有用实用程序的说明[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]软件开发工具包 (SDK)。</span><span class="sxs-lookup"><span data-stu-id="3536a-103">This section provides instructions for using several useful utilities included in the Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Software Development Kit (SDK).</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="6f88c-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="6f88c-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="3536a-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="3536a-104">In This Section</span></span>  
   
--   [<span data-ttu-id="6f88c-105">适配器注册表向导</span><span class="sxs-lookup"><span data-stu-id="6f88c-105">Adapter Registry Wizard</span></span>](../core/adapter-registry-wizard.md)  
+-   [<span data-ttu-id="3536a-105">适配器注册向导</span><span class="sxs-lookup"><span data-stu-id="3536a-105">Adapter Registry Wizard</span></span>](../core/adapter-registry-wizard.md)  
   
--   [<span data-ttu-id="6f88c-106">AS2 发送方实用程序</span><span class="sxs-lookup"><span data-stu-id="6f88c-106">AS2 Sender Utility</span></span>](../core/as2-sender-utility.md)  
+-   [<span data-ttu-id="3536a-106">AS2 发送方实用工具</span><span class="sxs-lookup"><span data-stu-id="3536a-106">AS2 Sender Utility</span></span>](../core/as2-sender-utility.md)  
   
--   [<span data-ttu-id="6f88c-107">BatchTerminator 实用程序</span><span class="sxs-lookup"><span data-stu-id="6f88c-107">BatchTerminator Utility</span></span>](../core/batchterminator-utility.md)  
+-   [<span data-ttu-id="3536a-107">BatchTerminator 实用工具</span><span class="sxs-lookup"><span data-stu-id="3536a-107">BatchTerminator Utility</span></span>](../core/batchterminator-utility.md)  
   
--   [<span data-ttu-id="6f88c-108">BizTalk 消息队列大型消息扩展</span><span class="sxs-lookup"><span data-stu-id="6f88c-108">BizTalk Message Queuing Large Message Extension</span></span>](../core/biztalk-message-queuing-large-message-extension.md)  
+-   [<span data-ttu-id="3536a-108">BizTalk 消息队列大型消息扩展</span><span class="sxs-lookup"><span data-stu-id="3536a-108">BizTalk Message Queuing Large Message Extension</span></span>](../core/biztalk-message-queuing-large-message-extension.md)  
   
--   [<span data-ttu-id="6f88c-109">证书向导实用程序</span><span class="sxs-lookup"><span data-stu-id="6f88c-109">Certificate Wizard Utility</span></span>](../core/certificate-wizard-utility.md)  
+-   [<span data-ttu-id="3536a-109">证书向导实用工具</span><span class="sxs-lookup"><span data-stu-id="3536a-109">Certificate Wizard Utility</span></span>](../core/certificate-wizard-utility.md)  
   
--   [<span data-ttu-id="6f88c-110">EDI 迁移实用工具</span><span class="sxs-lookup"><span data-stu-id="6f88c-110">EDI Migration Utilities</span></span>](../core/edi-migration-utilities.md)  
+-   [<span data-ttu-id="3536a-110">EDI 迁移实用工具</span><span class="sxs-lookup"><span data-stu-id="3536a-110">EDI Migration Utilities</span></span>](../core/edi-migration-utilities.md)  
   
--   [<span data-ttu-id="6f88c-111">管道工具</span><span class="sxs-lookup"><span data-stu-id="6f88c-111">Pipeline Tools</span></span>](../core/pipeline-tools.md)  
+-   [<span data-ttu-id="3536a-111">管道工具</span><span class="sxs-lookup"><span data-stu-id="3536a-111">Pipeline Tools</span></span>](../core/pipeline-tools.md)  
   
--   [<span data-ttu-id="6f88c-112">如何扩展架构生成器向导</span><span class="sxs-lookup"><span data-stu-id="6f88c-112">How to Extend the Schema Generator Wizard</span></span>](../core/how-to-extend-the-schema-generator-wizard.md)  
+-   [<span data-ttu-id="3536a-112">如何扩展架构生成器向导</span><span class="sxs-lookup"><span data-stu-id="3536a-112">How to Extend the Schema Generator Wizard</span></span>](../core/how-to-extend-the-schema-generator-wizard.md)  
   
--   [<span data-ttu-id="6f88c-113">将公共密钥令牌实用程序</span><span class="sxs-lookup"><span data-stu-id="6f88c-113">Replace Public Key Token Utility</span></span>](../core/replace-public-key-token-utility.md)
+-   [<span data-ttu-id="3536a-113">替换公钥令牌实用工具</span><span class="sxs-lookup"><span data-stu-id="3536a-113">Replace Public Key Token Utility</span></span>](../core/replace-public-key-token-utility.md)

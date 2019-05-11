@@ -1,5 +1,5 @@
 ---
-title: 报告在业务流程调试器模式下 |Microsoft 文档
+title: 报告业务流程调试器中的模式 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,21 +16,21 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f51c80c8e11545180720a5ec1cf0f28b7f8b6f6d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 436457dd8addc1add819a657e61113eaa8a2ec91
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268565"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397871"
 ---
-# <a name="reporting-mode-in-orchestration-debugger"></a><span data-ttu-id="68fde-102">业务流程调试器中的“报告”模式</span><span class="sxs-lookup"><span data-stu-id="68fde-102">Reporting Mode in Orchestration Debugger</span></span>
-<span data-ttu-id="68fde-103">“报告”模式使用跟踪的事件来显示所发生的情况。</span><span class="sxs-lookup"><span data-stu-id="68fde-103">Reporting mode uses tracked events to show what has happened.</span></span> <span data-ttu-id="68fde-104">它将使用数据使用跟踪**业务流程事件**选项标志。</span><span class="sxs-lookup"><span data-stu-id="68fde-104">It uses data tracked using the **Orchestration Events** option flag.</span></span> <span data-ttu-id="68fde-105">必须在执行业务流程实例之前设置此标志。</span><span class="sxs-lookup"><span data-stu-id="68fde-105">This flag must be set prior to the execution of the orchestration instance.</span></span> <span data-ttu-id="68fde-106">若要启用事件跟踪适用于特定的业务流程，请参阅[如何配置跟踪为业务流程](../core/how-to-configure-tracking-for-an-orchestration.md)。</span><span class="sxs-lookup"><span data-stu-id="68fde-106">To enable event tracking for a particular orchestration, see [How to Configure Tracking for an Orchestration](../core/how-to-configure-tracking-for-an-orchestration.md).</span></span>  
+# <a name="reporting-mode-in-orchestration-debugger"></a><span data-ttu-id="de939-102">业务流程调试器中的报告模式</span><span class="sxs-lookup"><span data-stu-id="de939-102">Reporting Mode in Orchestration Debugger</span></span>
+<span data-ttu-id="de939-103">报告模式使用跟踪的事件来显示已发生了什么情况。</span><span class="sxs-lookup"><span data-stu-id="de939-103">Reporting mode uses tracked events to show what has happened.</span></span> <span data-ttu-id="de939-104">它使用跟踪使用的数据**业务流程事件**选项标志。</span><span class="sxs-lookup"><span data-stu-id="de939-104">It uses data tracked using the **Orchestration Events** option flag.</span></span> <span data-ttu-id="de939-105">在业务流程实例的执行之前，必须设置此标志。</span><span class="sxs-lookup"><span data-stu-id="de939-105">This flag must be set prior to the execution of the orchestration instance.</span></span> <span data-ttu-id="de939-106">若要启用的特定业务流程事件跟踪功能，请参阅[如何为业务流程配置跟踪](../core/how-to-configure-tracking-for-an-orchestration.md)。</span><span class="sxs-lookup"><span data-stu-id="de939-106">To enable event tracking for a particular orchestration, see [How to Configure Tracking for an Orchestration](../core/how-to-configure-tracking-for-an-orchestration.md).</span></span>  
   
- <span data-ttu-id="68fde-107">**业务流程事件**选项跟踪的每个形状中业务流程执行事件发生。</span><span class="sxs-lookup"><span data-stu-id="68fde-107">The **Orchestration Events** option tracks the execution of each shape in the orchestration as it happens.</span></span> <span data-ttu-id="68fde-108">在报表模式下，你可以重播步骤或在业务流程的类上设置断点，以便你可以然后调试使用交互模式的新实例。</span><span class="sxs-lookup"><span data-stu-id="68fde-108">In reporting mode, you can replay the steps or set breakpoints on the class of orchestration so that you can then debug new instances using interactive mode.</span></span>  
+ <span data-ttu-id="de939-107">**业务流程事件**选项跟踪业务流程中每个形状的执行，因为它发生。</span><span class="sxs-lookup"><span data-stu-id="de939-107">The **Orchestration Events** option tracks the execution of each shape in the orchestration as it happens.</span></span> <span data-ttu-id="de939-108">可以在报告模式下，重放步骤或业务流程的类上设置断点，以便你可以调试使用交互模式的新实例。</span><span class="sxs-lookup"><span data-stu-id="de939-108">In reporting mode, you can replay the steps or set breakpoints on the class of orchestration so that you can then debug new instances using interactive mode.</span></span>  
   
- <span data-ttu-id="68fde-109">在执行目标业务程序之后，即可对要检查的业务流程使用某个报告视图查询。</span><span class="sxs-lookup"><span data-stu-id="68fde-109">After you have executed the business process you are interested in, you can use one of the Reporting view queries for the orchestration you wish to examine.</span></span>  
+ <span data-ttu-id="de939-109">已执行您感兴趣的业务流程后，你可以使用报告视图查询之一为你想要检查业务流程。</span><span class="sxs-lookup"><span data-stu-id="de939-109">After you have executed the business process you are interested in, you can use one of the Reporting view queries for the orchestration you wish to examine.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="68fde-110">另请参阅</span><span class="sxs-lookup"><span data-stu-id="68fde-110">See Also</span></span>  
- <span data-ttu-id="68fde-111">[在调试器中业务流程交互模式](../core/interactive-mode-in-orchestration-debugger.md) </span><span class="sxs-lookup"><span data-stu-id="68fde-111">[Interactive Mode in Orchestration Debugger](../core/interactive-mode-in-orchestration-debugger.md) </span></span>  
- <span data-ttu-id="68fde-112">[调试业务流程](../core/debugging-an-orchestration.md) </span><span class="sxs-lookup"><span data-stu-id="68fde-112">[Debugging an Orchestration](../core/debugging-an-orchestration.md) </span></span>  
- [<span data-ttu-id="68fde-113">业务流程调试器用户界面</span><span class="sxs-lookup"><span data-stu-id="68fde-113">Orchestration Debugger User Interface</span></span>](../core/orchestration-debugger-user-interface.md)
+## <a name="see-also"></a><span data-ttu-id="de939-110">请参阅</span><span class="sxs-lookup"><span data-stu-id="de939-110">See Also</span></span>  
+ <span data-ttu-id="de939-111">[业务流程调试器中的交互模式](../core/interactive-mode-in-orchestration-debugger.md) </span><span class="sxs-lookup"><span data-stu-id="de939-111">[Interactive Mode in Orchestration Debugger](../core/interactive-mode-in-orchestration-debugger.md) </span></span>  
+ <span data-ttu-id="de939-112">[调试业务流程](../core/debugging-an-orchestration.md) </span><span class="sxs-lookup"><span data-stu-id="de939-112">[Debugging an Orchestration](../core/debugging-an-orchestration.md) </span></span>  
+ [<span data-ttu-id="de939-113">业务流程调试器用户界面</span><span class="sxs-lookup"><span data-stu-id="de939-113">Orchestration Debugger User Interface</span></span>](../core/orchestration-debugger-user-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: 错误-用于脚本编写 Functoid 没有脚本类型 |Microsoft 文档
+title: 错误-脚本 Functoid 未设置脚本类型 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fb82c730d461496aad04c65b8604c94eebdb1978
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d641a608253552dcbbf859a7416e686b8f79987e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240901"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388541"
 ---
-# <a name="error---no-script-type-for-scripting-functoid"></a><span data-ttu-id="d07a7-102">错误-用于脚本编写 Functoid 没有脚本类型</span><span class="sxs-lookup"><span data-stu-id="d07a7-102">Error - No Script Type for Scripting Functoid</span></span>
-<span data-ttu-id="d07a7-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="d07a7-103">**Error Code**</span></span>  
+# <a name="error---no-script-type-for-scripting-functoid"></a><span data-ttu-id="852a5-102">错误-脚本 Functoid 未设置脚本类型</span><span class="sxs-lookup"><span data-stu-id="852a5-102">Error - No Script Type for Scripting Functoid</span></span>
+<span data-ttu-id="852a5-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="852a5-103">**Error Code**</span></span>  
   
- <span data-ttu-id="d07a7-104">btm1003</span><span class="sxs-lookup"><span data-stu-id="d07a7-104">btm1003</span></span>  
+ <span data-ttu-id="852a5-104">btm1003</span><span class="sxs-lookup"><span data-stu-id="852a5-104">btm1003</span></span>  
   
- <span data-ttu-id="d07a7-105">**说明**</span><span class="sxs-lookup"><span data-stu-id="d07a7-105">**Explanation**</span></span>  
+ <span data-ttu-id="852a5-105">**说明**</span><span class="sxs-lookup"><span data-stu-id="852a5-105">**Explanation**</span></span>  
   
- <span data-ttu-id="d07a7-106">**脚本类型**属性指示**脚本**functoid 尚未设置。</span><span class="sxs-lookup"><span data-stu-id="d07a7-106">The **Script Type** property of the indicated **Scripting** functoid has not been set.</span></span>  
+ <span data-ttu-id="852a5-106">**脚本类型**属性所指示**脚本**functoid 未设置。</span><span class="sxs-lookup"><span data-stu-id="852a5-106">The **Script Type** property of the indicated **Scripting** functoid has not been set.</span></span>  
   
- <span data-ttu-id="d07a7-107">**用户执行任何操作**</span><span class="sxs-lookup"><span data-stu-id="d07a7-107">**User Action**</span></span>  
+ <span data-ttu-id="852a5-107">**用户执行任何操作**</span><span class="sxs-lookup"><span data-stu-id="852a5-107">**User Action**</span></span>  
   
- <span data-ttu-id="d07a7-108">选择指示**脚本**functoid，单击省略号 (**...**) 与关联的按钮**脚本**属性在 Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口中，然后将适当的值中设置**配置 Functoid 脚本**对话框中，包括**脚本类型**属性。</span><span class="sxs-lookup"><span data-stu-id="d07a7-108">Select the indicated **Scripting** functoid, click the ellipsis (**...**) button associated with the **Script** property in the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, and then set the appropriate values in the **Configure Functoid Script** dialog box, including the **Script Type** property.</span></span>
+ <span data-ttu-id="852a5-108">选择所指示**Scripting** functoid，单击省略号 (**...**) 按钮与相关联**脚本**属性在 microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口中，然后将相应的值设置**配置 Functoid 脚本**对话框中，包括**脚本类型**属性。</span><span class="sxs-lookup"><span data-stu-id="852a5-108">Select the indicated **Scripting** functoid, click the ellipsis (**...**) button associated with the **Script** property in the Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, and then set the appropriate values in the **Configure Functoid Script** dialog box, including the **Script Type** property.</span></span>

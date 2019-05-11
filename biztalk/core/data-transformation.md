@@ -19,26 +19,26 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4366e37d206902ec3aff5e016c02c4bd721da5b6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 570f3582fa13c116039f7ff965b72b14de84cc56
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015951"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389782"
 ---
-# <a name="data-transformation"></a><span data-ttu-id="e86e2-102">数据转换</span><span class="sxs-lookup"><span data-stu-id="e86e2-102">Data Transformation</span></span>
-<span data-ttu-id="e86e2-103">映射数据依赖于数据转换。</span><span class="sxs-lookup"><span data-stu-id="e86e2-103">Mapping data relies on data transformation.</span></span>  
+# <a name="data-transformation"></a><span data-ttu-id="9f930-102">数据转换</span><span class="sxs-lookup"><span data-stu-id="9f930-102">Data Transformation</span></span>
+<span data-ttu-id="9f930-103">映射数据依赖于数据转换。</span><span class="sxs-lookup"><span data-stu-id="9f930-103">Mapping data relies on data transformation.</span></span>  
   
- <span data-ttu-id="e86e2-104">数据转换是在源架构的记录和字段与目标架构的（通常是不同的）记录和字段之间创建对应关系的过程。</span><span class="sxs-lookup"><span data-stu-id="e86e2-104">Data transformation is the process of creating a correspondence between records and fields of a source schema to (often different) records and fields in a destination schema.</span></span> <span data-ttu-id="e86e2-105">数据转换的一个示例是将采购订单的发运地址信息和帐单邮寄地址信息映射到发票。</span><span class="sxs-lookup"><span data-stu-id="e86e2-105">An example of data transformation is to map shipping and billing address information from a purchase order to an invoice.</span></span> <span data-ttu-id="e86e2-106">这是最基本的映射类型。</span><span class="sxs-lookup"><span data-stu-id="e86e2-106">This is the most basic type of mapping.</span></span> <span data-ttu-id="e86e2-107">数据转换还可以应用于其他操作，例如：</span><span class="sxs-lookup"><span data-stu-id="e86e2-107">Data transformation can also apply to operations such as:</span></span>  
+ <span data-ttu-id="9f930-104">数据转换是在源架构的记录和字段与目标架构的（通常是不同的）记录和字段之间创建对应关系的过程。</span><span class="sxs-lookup"><span data-stu-id="9f930-104">Data transformation is the process of creating a correspondence between records and fields of a source schema to (often different) records and fields in a destination schema.</span></span> <span data-ttu-id="9f930-105">数据转换的一个示例是将采购订单的发运地址信息和帐单邮寄地址信息映射到发票。</span><span class="sxs-lookup"><span data-stu-id="9f930-105">An example of data transformation is to map shipping and billing address information from a purchase order to an invoice.</span></span> <span data-ttu-id="9f930-106">这是最基本的映射类型。</span><span class="sxs-lookup"><span data-stu-id="9f930-106">This is the most basic type of mapping.</span></span> <span data-ttu-id="9f930-107">数据转换还可以应用于其他操作，例如：</span><span class="sxs-lookup"><span data-stu-id="9f930-107">Data transformation can also apply to operations such as:</span></span>  
   
-- <span data-ttu-id="e86e2-108">对循环记录中的数据求平均值，并将输出发送到目标架构中的单个字段。</span><span class="sxs-lookup"><span data-stu-id="e86e2-108">Averaging data from a looping record and sending the output to a single field in the destination schema.</span></span>  
+- <span data-ttu-id="9f930-108">对循环记录中的数据求平均值，并将输出发送到目标架构中的单个字段。</span><span class="sxs-lookup"><span data-stu-id="9f930-108">Averaging data from a looping record and sending the output to a single field in the destination schema.</span></span>  
   
-- <span data-ttu-id="e86e2-109">将字符数据转换为 ASCII 格式。</span><span class="sxs-lookup"><span data-stu-id="e86e2-109">Converting character data to its ASCII format.</span></span>  
+- <span data-ttu-id="9f930-109">将字符数据转换为 ASCII 格式。</span><span class="sxs-lookup"><span data-stu-id="9f930-109">Converting character data to its ASCII format.</span></span>  
   
-- <span data-ttu-id="e86e2-110">对一个或多个记录中的数据执行加或减操作，并将结果放入目标架构中的单个字段中。</span><span class="sxs-lookup"><span data-stu-id="e86e2-110">Adding or subtracting data from one or more records and putting the result in a single field in the destination schema.</span></span>  
+- <span data-ttu-id="9f930-110">对一个或多个记录中的数据执行加或减操作，并将结果放入目标架构中的单个字段中。</span><span class="sxs-lookup"><span data-stu-id="9f930-110">Adding or subtracting data from one or more records and putting the result in a single field in the destination schema.</span></span>  
   
-  <span data-ttu-id="e86e2-111">如果希望将数据从一种格式转换成另一种格式，您会使用管道。</span><span class="sxs-lookup"><span data-stu-id="e86e2-111">If you want to translate data from one format to another, you would use a pipeline.</span></span> <span data-ttu-id="e86e2-112">这种转换可以将给定的消息类型转换成现有系统要求的替代格式，在解决企业应用程序集成问题时非常有用，但无法使用映射完成。</span><span class="sxs-lookup"><span data-stu-id="e86e2-112">This can be helpful in solving enterprise application integration problems by translating a given type of message into alternative formats required by existing systems but cannot be done using a map.</span></span>  
+  <span data-ttu-id="9f930-111">如果希望将数据从一种格式转换成另一种格式，您会使用管道。</span><span class="sxs-lookup"><span data-stu-id="9f930-111">If you want to translate data from one format to another, you would use a pipeline.</span></span> <span data-ttu-id="9f930-112">这种转换可以将给定的消息类型转换成现有系统要求的替代格式，在解决企业应用程序集成问题时非常有用，但无法使用映射完成。</span><span class="sxs-lookup"><span data-stu-id="9f930-112">This can be helpful in solving enterprise application integration problems by translating a given type of message into alternative formats required by existing systems but cannot be done using a map.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="e86e2-113">请参阅</span><span class="sxs-lookup"><span data-stu-id="e86e2-113">See Also</span></span>  
- <span data-ttu-id="e86e2-114">[映射](../core/maps.md) </span><span class="sxs-lookup"><span data-stu-id="e86e2-114">[Maps](../core/maps.md) </span></span>  
- [<span data-ttu-id="e86e2-115">使用 BizTalk 映射器创建映射</span><span class="sxs-lookup"><span data-stu-id="e86e2-115">Creating Maps Using BizTalk Mapper</span></span>](../core/creating-maps-using-biztalk-mapper.md)
+## <a name="see-also"></a><span data-ttu-id="9f930-113">请参阅</span><span class="sxs-lookup"><span data-stu-id="9f930-113">See Also</span></span>  
+ <span data-ttu-id="9f930-114">[映射](../core/maps.md) </span><span class="sxs-lookup"><span data-stu-id="9f930-114">[Maps](../core/maps.md) </span></span>  
+ [<span data-ttu-id="9f930-115">使用 BizTalk 映射器创建映射</span><span class="sxs-lookup"><span data-stu-id="9f930-115">Creating Maps Using BizTalk Mapper</span></span>](../core/creating-maps-using-biztalk-mapper.md)

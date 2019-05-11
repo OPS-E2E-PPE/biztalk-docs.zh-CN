@@ -1,5 +1,5 @@
 ---
-title: 收到错误 |Microsoft 文档
+title: 收到错误 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3a04bd00d17a0f59a97f5fec8256e573a2e271a3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 78cdc8f7b0c6b6f730473ddcfffd0f63edd31d02
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268269"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398255"
 ---
-# <a name="receive-errors"></a><span data-ttu-id="d012b-102">收到错误</span><span class="sxs-lookup"><span data-stu-id="d012b-102">Receive Errors</span></span>
-<span data-ttu-id="d012b-103">本部分包含诊断和解决 WCF 接收错误的详细信息。</span><span class="sxs-lookup"><span data-stu-id="d012b-103">This section contains detailed information for diagnosing and resolving WCF Receive errors.</span></span>  
+# <a name="receive-errors"></a><span data-ttu-id="88e74-102">收到错误</span><span class="sxs-lookup"><span data-stu-id="88e74-102">Receive Errors</span></span>
+<span data-ttu-id="88e74-103">本部分包含诊断和解决 WCF 接收错误的详细信息。</span><span class="sxs-lookup"><span data-stu-id="88e74-103">This section contains detailed information for diagnosing and resolving WCF Receive errors.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="d012b-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="d012b-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="88e74-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="88e74-104">In This Section</span></span>  
   
--   [<span data-ttu-id="d012b-105">创建接收位置命令失败</span><span class="sxs-lookup"><span data-stu-id="d012b-105">Create receive locations command failed</span></span>](../core/create-receive-locations-command-failed.md)  
+-   [<span data-ttu-id="88e74-105">创建接收位置命令失败</span><span class="sxs-lookup"><span data-stu-id="88e74-105">Create receive locations command failed</span></span>](../core/create-receive-locations-command-failed.md)  
   
--   [<span data-ttu-id="d012b-106">注册独立接收方地址失败</span><span class="sxs-lookup"><span data-stu-id="d012b-106">Failed to register isolated receiver for address</span></span>](../core/failed-to-register-isolated-receiver-for-address.md)  
+-   [<span data-ttu-id="88e74-106">无法为地址注册独立的接收器</span><span class="sxs-lookup"><span data-stu-id="88e74-106">Failed to register isolated receiver for address</span></span>](../core/failed-to-register-isolated-receiver-for-address.md)  
   
--   [<span data-ttu-id="d012b-107">接收位置找不到的地址</span><span class="sxs-lookup"><span data-stu-id="d012b-107">Receive location for address not found</span></span>](../core/receive-location-for-address-not-found.md)  
+-   [<span data-ttu-id="88e74-107">找不到地址接收位置</span><span class="sxs-lookup"><span data-stu-id="88e74-107">Receive location for address not found</span></span>](../core/receive-location-for-address-not-found.md)  
   
--   [<span data-ttu-id="d012b-108">接收位置找不到的元数据</span><span class="sxs-lookup"><span data-stu-id="d012b-108">Receive location for metadata not found</span></span>](../core/receive-location-for-metadata-not-found.md)  
+-   [<span data-ttu-id="88e74-108">未找到元数据的接收位置</span><span class="sxs-lookup"><span data-stu-id="88e74-108">Receive location for metadata not found</span></span>](../core/receive-location-for-metadata-not-found.md)  
   
--   [<span data-ttu-id="d012b-109">事务请求-响应接收位置不支持</span><span class="sxs-lookup"><span data-stu-id="d012b-109">Transactional request-response receive location is not supported</span></span>](../core/transactional-request-response-receive-location-is-not-supported.md)  
+-   [<span data-ttu-id="88e74-109">不支持事务性请求-响应接收位置</span><span class="sxs-lookup"><span data-stu-id="88e74-109">Transactional request-response receive location is not supported</span></span>](../core/transactional-request-response-receive-location-is-not-supported.md)  
   
--   [<span data-ttu-id="d012b-110">无法创建一个或多个 BizTalk 接收位置</span><span class="sxs-lookup"><span data-stu-id="d012b-110">Unable to create one or more BizTalk receive locations</span></span>](../core/unable-to-create-one-or-more-biztalk-receive-locations.md)
+-   [<span data-ttu-id="88e74-110">无法创建一个或多个 BizTalk 接收位置</span><span class="sxs-lookup"><span data-stu-id="88e74-110">Unable to create one or more BizTalk receive locations</span></span>](../core/unable-to-create-one-or-more-biztalk-receive-locations.md)

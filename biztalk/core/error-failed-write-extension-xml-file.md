@@ -1,5 +1,5 @@
 ---
-title: 错误-失败写扩展 XML 文件 |Microsoft 文档
+title: 错误-写入扩展 XML 文件失败 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b267f815521a1ac1718c58003bae52a22cf1257d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 457f58405f66cc8715048271e1ffa914b92d286f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240405"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388887"
 ---
-# <a name="error---failed-write-extension-xml-file"></a><span data-ttu-id="e4d7f-102">错误-失败的写入扩展 XML 文件</span><span class="sxs-lookup"><span data-stu-id="e4d7f-102">Error - Failed Write Extension XML File</span></span>
-<span data-ttu-id="e4d7f-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="e4d7f-103">**Error Code**</span></span>  
+# <a name="error---failed-write-extension-xml-file"></a><span data-ttu-id="7909a-102">错误-写入扩展 XML 文件失败</span><span class="sxs-lookup"><span data-stu-id="7909a-102">Error - Failed Write Extension XML File</span></span>
+<span data-ttu-id="7909a-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="7909a-103">**Error Code**</span></span>  
   
- <span data-ttu-id="e4d7f-104">btm1058</span><span class="sxs-lookup"><span data-stu-id="e4d7f-104">btm1058</span></span>  
+ <span data-ttu-id="7909a-104">btm1058</span><span class="sxs-lookup"><span data-stu-id="7909a-104">btm1058</span></span>  
   
- <span data-ttu-id="e4d7f-105">**说明**</span><span class="sxs-lookup"><span data-stu-id="e4d7f-105">**Explanation**</span></span>  
+ <span data-ttu-id="7909a-105">**说明**</span><span class="sxs-lookup"><span data-stu-id="7909a-105">**Explanation**</span></span>  
   
- <span data-ttu-id="e4d7f-106">尝试将此映射生成的扩展对象 XML 写入所指示的文件时出现此错误。</span><span class="sxs-lookup"><span data-stu-id="e4d7f-106">The indicated error was encountered when attempting to write the Extension Object XML produced by this map to the indicated file.</span></span>  
+ <span data-ttu-id="7909a-106">尝试将此映射生成的扩展对象 XML 写入所指示的文件时出现此错误。</span><span class="sxs-lookup"><span data-stu-id="7909a-106">The indicated error was encountered when attempting to write the Extension Object XML produced by this map to the indicated file.</span></span>  
   
- <span data-ttu-id="e4d7f-107">**用户执行任何操作**</span><span class="sxs-lookup"><span data-stu-id="e4d7f-107">**User Action**</span></span>  
+ <span data-ttu-id="7909a-107">**用户执行任何操作**</span><span class="sxs-lookup"><span data-stu-id="7909a-107">**User Action**</span></span>  
   
- <span data-ttu-id="e4d7f-108">根据所指示的错误，采取相应的措施清除错误源。</span><span class="sxs-lookup"><span data-stu-id="e4d7f-108">Based on the indicated error, take appropriate action to correct the cause of the failure.</span></span> <span data-ttu-id="e4d7f-109">例如，释放更多的硬盘空间。</span><span class="sxs-lookup"><span data-stu-id="e4d7f-109">For example, free up additional space on your hard disk.</span></span>
+ <span data-ttu-id="7909a-108">根据所指示的错误，采取相应的措施清除错误源。</span><span class="sxs-lookup"><span data-stu-id="7909a-108">Based on the indicated error, take appropriate action to correct the cause of the failure.</span></span> <span data-ttu-id="7909a-109">例如，释放更多的硬盘空间。</span><span class="sxs-lookup"><span data-stu-id="7909a-109">For example, free up additional space on your hard disk.</span></span>

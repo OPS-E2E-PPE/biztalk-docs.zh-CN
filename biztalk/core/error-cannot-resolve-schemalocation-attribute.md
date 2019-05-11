@@ -1,5 +1,5 @@
 ---
-title: 错误-无法解析 schemaLocation 属性 |Microsoft 文档
+title: 错误-无法解析 schemaLocation 属性 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d268d91b19de14cac109ad74d3870c6551c7a47d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b941366b3ab012c1516602aafbca5534b15987ed
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239565"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389417"
 ---
-# <a name="error---cannot-resolve-schemalocation-attribute"></a><span data-ttu-id="73085-102">错误-无法解析 schemaLocation 属性</span><span class="sxs-lookup"><span data-stu-id="73085-102">Error - Cannot resolve schemaLocation attribute</span></span>
-<span data-ttu-id="73085-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="73085-103">**Error Code**</span></span>  
+# <a name="error---cannot-resolve-schemalocation-attribute"></a><span data-ttu-id="58d58-102">错误-无法解析 schemaLocation 属性</span><span class="sxs-lookup"><span data-stu-id="58d58-102">Error - Cannot resolve schemaLocation attribute</span></span>
+<span data-ttu-id="58d58-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="58d58-103">**Error Code**</span></span>  
   
- <span data-ttu-id="73085-104">BEC8001</span><span class="sxs-lookup"><span data-stu-id="73085-104">BEC8001</span></span>  
+ <span data-ttu-id="58d58-104">BEC8001</span><span class="sxs-lookup"><span data-stu-id="58d58-104">BEC8001</span></span>  
   
- <span data-ttu-id="73085-105">**说明**</span><span class="sxs-lookup"><span data-stu-id="73085-105">**Explanation**</span></span>  
+ <span data-ttu-id="58d58-105">**说明**</span><span class="sxs-lookup"><span data-stu-id="58d58-105">**Explanation**</span></span>  
   
- <span data-ttu-id="73085-106">BizTalk 编辑器找不到由要打开的架构所导入的架构。</span><span class="sxs-lookup"><span data-stu-id="73085-106">BizTalk editor cannot find a schema imported by the schema you are opening.</span></span>  
+ <span data-ttu-id="58d58-106">BizTalk 编辑器找不到要打开该架构导入的架构。</span><span class="sxs-lookup"><span data-stu-id="58d58-106">BizTalk editor cannot find a schema imported by the schema you are opening.</span></span>  
   
- <span data-ttu-id="73085-107">**用户执行任何操作**</span><span class="sxs-lookup"><span data-stu-id="73085-107">**User Action**</span></span>  
+ <span data-ttu-id="58d58-107">**用户执行任何操作**</span><span class="sxs-lookup"><span data-stu-id="58d58-107">**User Action**</span></span>  
   
- <span data-ttu-id="73085-108">单击**架构**节点。</span><span class="sxs-lookup"><span data-stu-id="73085-108">Click the **Schema** node.</span></span> <span data-ttu-id="73085-109">在属性窗口中，单击**导入**属性。</span><span class="sxs-lookup"><span data-stu-id="73085-109">In the Properties window, click the **Imports** property.</span></span> <span data-ttu-id="73085-110">省略号 (**...**) 按钮将变为活动状态。</span><span class="sxs-lookup"><span data-stu-id="73085-110">The ellipsis (**…**) button becomes active.</span></span> <span data-ttu-id="73085-111">单击该按钮。</span><span class="sxs-lookup"><span data-stu-id="73085-111">Click the button.</span></span> <span data-ttu-id="73085-112">**导入**此时将显示对话框。</span><span class="sxs-lookup"><span data-stu-id="73085-112">The **Imports** dialog appears.</span></span> <span data-ttu-id="73085-113">在该对话框中进行编辑以将路径指定为所导入的架构。</span><span class="sxs-lookup"><span data-stu-id="73085-113">Edit the path to the imported schema in the dialog.</span></span>
+ <span data-ttu-id="58d58-108">单击**架构**节点。</span><span class="sxs-lookup"><span data-stu-id="58d58-108">Click the **Schema** node.</span></span> <span data-ttu-id="58d58-109">在属性窗口中，单击**导入**属性。</span><span class="sxs-lookup"><span data-stu-id="58d58-109">In the Properties window, click the **Imports** property.</span></span> <span data-ttu-id="58d58-110">旁边的省略号 (**...**) 按钮将变为活动状态。</span><span class="sxs-lookup"><span data-stu-id="58d58-110">The ellipsis (**…**) button becomes active.</span></span> <span data-ttu-id="58d58-111">单击的按钮。</span><span class="sxs-lookup"><span data-stu-id="58d58-111">Click the button.</span></span> <span data-ttu-id="58d58-112">**导入**此时将显示对话框。</span><span class="sxs-lookup"><span data-stu-id="58d58-112">The **Imports** dialog appears.</span></span> <span data-ttu-id="58d58-113">编辑对话框中导入的架构的路径。</span><span class="sxs-lookup"><span data-stu-id="58d58-113">Edit the path to the imported schema in the dialog.</span></span>

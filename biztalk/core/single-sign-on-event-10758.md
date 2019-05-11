@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10758 |Microsoft Docs
+title: 单一登录：Event 10758 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b6fb431e66396c813076be8081f25b4664d629f9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b628b902177065e0a27e054b7bf632ad50a9bb44
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000726"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65307611"
 ---
-# <a name="single-sign-on-event-10758"></a><span data-ttu-id="49cc0-102">单一登录： 事件 10758</span><span class="sxs-lookup"><span data-stu-id="49cc0-102">Single Sign-On: Event 10758</span></span>
-## <a name="details"></a><span data-ttu-id="49cc0-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="49cc0-103">Details</span></span>  
+# <a name="single-sign-on-event-10758"></a><span data-ttu-id="fb99a-102">单一登录：事件 10758</span><span class="sxs-lookup"><span data-stu-id="fb99a-102">Single Sign-On: Event 10758</span></span>
+## <a name="details"></a><span data-ttu-id="fb99a-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="fb99a-103">Details</span></span>  
   
 |                 |                                                            |
 |-----------------|------------------------------------------------------------|
-|  <span data-ttu-id="49cc0-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="49cc0-104">Product Name</span></span>   |                 <span data-ttu-id="49cc0-105">企业单一登录</span><span class="sxs-lookup"><span data-stu-id="49cc0-105">Enterprise Single Sign-On</span></span>                  |
-| <span data-ttu-id="49cc0-106">产品版本</span><span class="sxs-lookup"><span data-stu-id="49cc0-106">Product Version</span></span> | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
-|    <span data-ttu-id="49cc0-107">事件 ID</span><span class="sxs-lookup"><span data-stu-id="49cc0-107">Event ID</span></span>     |                           <span data-ttu-id="49cc0-108">10758</span><span class="sxs-lookup"><span data-stu-id="49cc0-108">10758</span></span>                            |
-|  <span data-ttu-id="49cc0-109">事件源</span><span class="sxs-lookup"><span data-stu-id="49cc0-109">Event Source</span></span>   |                           <span data-ttu-id="49cc0-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="49cc0-110">ENTSSO</span></span>                           |
-|    <span data-ttu-id="49cc0-111">组件</span><span class="sxs-lookup"><span data-stu-id="49cc0-111">Component</span></span>    |                            <span data-ttu-id="49cc0-112">N/A</span><span class="sxs-lookup"><span data-stu-id="49cc0-112">N/A</span></span>                             |
-|  <span data-ttu-id="49cc0-113">符号名称</span><span class="sxs-lookup"><span data-stu-id="49cc0-113">Symbolic Name</span></span>  |                   <span data-ttu-id="49cc0-114">ENTSSO_E_FIELD_EXISTS</span><span class="sxs-lookup"><span data-stu-id="49cc0-114">ENTSSO_E_FIELD_EXISTS</span></span>                    |
-|  <span data-ttu-id="49cc0-115">消息正文</span><span class="sxs-lookup"><span data-stu-id="49cc0-115">Message Text</span></span>   |                 <span data-ttu-id="49cc0-116">该字段已存在。</span><span class="sxs-lookup"><span data-stu-id="49cc0-116">The field already exists.</span></span>                  |
+|  <span data-ttu-id="fb99a-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="fb99a-104">Product Name</span></span>   |                 <span data-ttu-id="fb99a-105">企业单一登录</span><span class="sxs-lookup"><span data-stu-id="fb99a-105">Enterprise Single Sign-On</span></span>                  |
+| <span data-ttu-id="fb99a-106">产品版本</span><span class="sxs-lookup"><span data-stu-id="fb99a-106">Product Version</span></span> | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
+|    <span data-ttu-id="fb99a-107">事件 ID</span><span class="sxs-lookup"><span data-stu-id="fb99a-107">Event ID</span></span>     |                           <span data-ttu-id="fb99a-108">10758</span><span class="sxs-lookup"><span data-stu-id="fb99a-108">10758</span></span>                            |
+|  <span data-ttu-id="fb99a-109">事件源</span><span class="sxs-lookup"><span data-stu-id="fb99a-109">Event Source</span></span>   |                           <span data-ttu-id="fb99a-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="fb99a-110">ENTSSO</span></span>                           |
+|    <span data-ttu-id="fb99a-111">组件</span><span class="sxs-lookup"><span data-stu-id="fb99a-111">Component</span></span>    |                            <span data-ttu-id="fb99a-112">不可用</span><span class="sxs-lookup"><span data-stu-id="fb99a-112">N/A</span></span>                             |
+|  <span data-ttu-id="fb99a-113">符号名称</span><span class="sxs-lookup"><span data-stu-id="fb99a-113">Symbolic Name</span></span>  |                   <span data-ttu-id="fb99a-114">ENTSSO_E_FIELD_EXISTS</span><span class="sxs-lookup"><span data-stu-id="fb99a-114">ENTSSO_E_FIELD_EXISTS</span></span>                    |
+|  <span data-ttu-id="fb99a-115">消息正文</span><span class="sxs-lookup"><span data-stu-id="fb99a-115">Message Text</span></span>   |                 <span data-ttu-id="fb99a-116">该字段已存在。</span><span class="sxs-lookup"><span data-stu-id="fb99a-116">The field already exists.</span></span>                  |
   
-## <a name="explanation"></a><span data-ttu-id="49cc0-117">解释</span><span class="sxs-lookup"><span data-stu-id="49cc0-117">Explanation</span></span>  
- <span data-ttu-id="49cc0-118">该字段已存在。</span><span class="sxs-lookup"><span data-stu-id="49cc0-118">The field already exists.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="fb99a-117">解释</span><span class="sxs-lookup"><span data-stu-id="fb99a-117">Explanation</span></span>  
+ <span data-ttu-id="fb99a-118">该字段已存在。</span><span class="sxs-lookup"><span data-stu-id="fb99a-118">The field already exists.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="49cc0-119">用户操作</span><span class="sxs-lookup"><span data-stu-id="49cc0-119">User Action</span></span>  
- <span data-ttu-id="49cc0-120">不需要用户进行任何操作。</span><span class="sxs-lookup"><span data-stu-id="49cc0-120">No user action is necessary.</span></span>
+## <a name="user-action"></a><span data-ttu-id="fb99a-119">用户操作</span><span class="sxs-lookup"><span data-stu-id="fb99a-119">User Action</span></span>  
+ <span data-ttu-id="fb99a-120">不不需要任何用户操作。</span><span class="sxs-lookup"><span data-stu-id="fb99a-120">No user action is necessary.</span></span>

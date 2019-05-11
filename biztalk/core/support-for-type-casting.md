@@ -1,5 +1,5 @@
 ---
-title: 类型强制转换的支持 |Microsoft 文档
+title: 类型强制转换支持 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4e863221a556343ee7dc39825199dd8236408977
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9517a398dbdd75ac2a31bad6d92c82922ad64510
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279501"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398921"
 ---
-# <a name="support-for-type-casting"></a><span data-ttu-id="91e47-102">类型强制转换的支持</span><span class="sxs-lookup"><span data-stu-id="91e47-102">Support for Type Casting</span></span>
-<span data-ttu-id="91e47-103">你可以使用**强制转换**方法**ClassMemberBinding**类将一种类型的对象转换为另一台兼容类型的对象。</span><span class="sxs-lookup"><span data-stu-id="91e47-103">You can use the **Cast** method of the **ClassMemberBinding** class to convert an object of one type to an object of another compatible type.</span></span> <span data-ttu-id="91e47-104">目前，业务规则编辑器工具不支持创建规则使用**强制转换**方法。</span><span class="sxs-lookup"><span data-stu-id="91e47-104">Currently, the Business Rule Composer tool does not support creating rules by using the **Cast** method.</span></span> <span data-ttu-id="91e47-105">您必须使用规则引擎对象模型通过编程方式来创建规则，以充分利用此功能。</span><span class="sxs-lookup"><span data-stu-id="91e47-105">You must create the rules programmatically by using the rule engine object model to take advantage of this feature.</span></span>  
+# <a name="support-for-type-casting"></a><span data-ttu-id="8d09f-102">类型强制转换支持</span><span class="sxs-lookup"><span data-stu-id="8d09f-102">Support for Type Casting</span></span>
+<span data-ttu-id="8d09f-103">可以使用**Cast**方法**ClassMemberBinding**类，以一种类型的对象转换为另一种兼容类型的对象。</span><span class="sxs-lookup"><span data-stu-id="8d09f-103">You can use the **Cast** method of the **ClassMemberBinding** class to convert an object of one type to an object of another compatible type.</span></span> <span data-ttu-id="8d09f-104">目前，业务规则编辑器工具不支持创建规则通过使用**强制转换**方法。</span><span class="sxs-lookup"><span data-stu-id="8d09f-104">Currently, the Business Rule Composer tool does not support creating rules by using the **Cast** method.</span></span> <span data-ttu-id="8d09f-105">使用规则引擎对象模型来充分利用此功能，必须以编程方式创建规则。</span><span class="sxs-lookup"><span data-stu-id="8d09f-105">You must create the rules programmatically by using the rule engine object model to take advantage of this feature.</span></span>  
   
- <span data-ttu-id="91e47-106">下面的示例代码演示如何使用**强制转换**方法将转换的实例**System.Object**类的实例**Cls2**类。</span><span class="sxs-lookup"><span data-stu-id="91e47-106">The following sample code demonstrates how to use the **Cast** method to convert an instance of the **System.Object** class to an instance of the **Cls2** class.</span></span> <span data-ttu-id="91e47-107">此示例还演示如何访问嵌套的成员的类中所述[访问类中的嵌套成员](../core/accessing-nested-members-of-a-class.md)。</span><span class="sxs-lookup"><span data-stu-id="91e47-107">This sample also demonstrates how to access a nested member of a class as described in [Accessing Nested Members of a Class](../core/accessing-nested-members-of-a-class.md).</span></span>  
+ <span data-ttu-id="8d09f-106">下面的示例代码演示如何使用**Cast**方法的实例转换**System.Object**类的实例**Cls2**类。</span><span class="sxs-lookup"><span data-stu-id="8d09f-106">The following sample code demonstrates how to use the **Cast** method to convert an instance of the **System.Object** class to an instance of the **Cls2** class.</span></span> <span data-ttu-id="8d09f-107">此示例还演示如何访问类的嵌套的成员，如中所述[访问的类的嵌套成员](../core/accessing-nested-members-of-a-class.md)。</span><span class="sxs-lookup"><span data-stu-id="8d09f-107">This sample also demonstrates how to access a nested member of a class as described in [Accessing Nested Members of a Class](../core/accessing-nested-members-of-a-class.md).</span></span>  
   
 ```  
 using Microsoft.RuleEngine;  
@@ -91,6 +91,6 @@ namespace RuleTypeCasting
 }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="91e47-108">另请参阅</span><span class="sxs-lookup"><span data-stu-id="91e47-108">See Also</span></span>  
- <span data-ttu-id="91e47-109">[针对业务规则引擎中的类继承的支持](../core/support-for-class-inheritance-in-the-business-rule-engine.md) </span><span class="sxs-lookup"><span data-stu-id="91e47-109">[Support for Class Inheritance in the Business Rule Engine](../core/support-for-class-inheritance-in-the-business-rule-engine.md) </span></span>  
- [<span data-ttu-id="91e47-110">嵌套类成员访问</span><span class="sxs-lookup"><span data-stu-id="91e47-110">Accessing Nested Members of a Class</span></span>](../core/accessing-nested-members-of-a-class.md)
+## <a name="see-also"></a><span data-ttu-id="8d09f-108">请参阅</span><span class="sxs-lookup"><span data-stu-id="8d09f-108">See Also</span></span>  
+ <span data-ttu-id="8d09f-109">[对业务规则引擎中的类继承的支持](../core/support-for-class-inheritance-in-the-business-rule-engine.md) </span><span class="sxs-lookup"><span data-stu-id="8d09f-109">[Support for Class Inheritance in the Business Rule Engine](../core/support-for-class-inheritance-in-the-business-rule-engine.md) </span></span>  
+ [<span data-ttu-id="8d09f-110">访问类的嵌套成员</span><span class="sxs-lookup"><span data-stu-id="8d09f-110">Accessing Nested Members of a Class</span></span>](../core/accessing-nested-members-of-a-class.md)

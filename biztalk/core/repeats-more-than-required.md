@@ -12,28 +12,28 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4ac4649ea88756ba63393155ca8910437567fbd1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5d241e357425f18f6a378dc3dba9a2ffbd32c3ec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024035"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397898"
 ---
-# <a name="repeats-more-than-required"></a><span data-ttu-id="44157-102">重复次数大于必需次数</span><span class="sxs-lookup"><span data-stu-id="44157-102">Repeats more than required</span></span>
-## <a name="details"></a><span data-ttu-id="44157-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="44157-103">Details</span></span>  
+# <a name="repeats-more-than-required"></a><span data-ttu-id="00408-102">重复次数大于必需次数</span><span class="sxs-lookup"><span data-stu-id="00408-102">Repeats more than required</span></span>
+## <a name="details"></a><span data-ttu-id="00408-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="00408-103">Details</span></span>  
   
 |                 |                                                                                        |
 |-----------------|----------------------------------------------------------------------------------------|
-|  <span data-ttu-id="44157-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="44157-104">Product Name</span></span>   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
-| <span data-ttu-id="44157-105">产品版本</span><span class="sxs-lookup"><span data-stu-id="44157-105">Product Version</span></span> |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
-|    <span data-ttu-id="44157-106">事件 ID</span><span class="sxs-lookup"><span data-stu-id="44157-106">Event ID</span></span>     |                                           -                                            |
-|  <span data-ttu-id="44157-107">事件源</span><span class="sxs-lookup"><span data-stu-id="44157-107">Event Source</span></span>   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="44157-108"> EDI</span><span class="sxs-lookup"><span data-stu-id="44157-108"> EDI</span></span> |
-|    <span data-ttu-id="44157-109">组件</span><span class="sxs-lookup"><span data-stu-id="44157-109">Component</span></span>    |                                       <span data-ttu-id="44157-110">EDI 引擎</span><span class="sxs-lookup"><span data-stu-id="44157-110">EDI Engine</span></span>                                       |
-|  <span data-ttu-id="44157-111">符号名称</span><span class="sxs-lookup"><span data-stu-id="44157-111">Symbolic Name</span></span>  |                        <span data-ttu-id="44157-112">X12FeRepeatsMoreThanRequiredDescription</span><span class="sxs-lookup"><span data-stu-id="44157-112">X12FeRepeatsMoreThanRequiredDescription</span></span>                         |
-|  <span data-ttu-id="44157-113">消息正文</span><span class="sxs-lookup"><span data-stu-id="44157-113">Message Text</span></span>   |                               <span data-ttu-id="44157-114">重复次数大于必需次数</span><span class="sxs-lookup"><span data-stu-id="44157-114">Repeats more than required</span></span>                               |
+|  <span data-ttu-id="00408-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="00408-104">Product Name</span></span>   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
+| <span data-ttu-id="00408-105">产品版本</span><span class="sxs-lookup"><span data-stu-id="00408-105">Product Version</span></span> |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
+|    <span data-ttu-id="00408-106">事件 ID</span><span class="sxs-lookup"><span data-stu-id="00408-106">Event ID</span></span>     |                                           -                                            |
+|  <span data-ttu-id="00408-107">事件源</span><span class="sxs-lookup"><span data-stu-id="00408-107">Event Source</span></span>   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] <span data-ttu-id="00408-108">EDI</span><span class="sxs-lookup"><span data-stu-id="00408-108">EDI</span></span> |
+|    <span data-ttu-id="00408-109">组件</span><span class="sxs-lookup"><span data-stu-id="00408-109">Component</span></span>    |                                       <span data-ttu-id="00408-110">EDI 引擎</span><span class="sxs-lookup"><span data-stu-id="00408-110">EDI Engine</span></span>                                       |
+|  <span data-ttu-id="00408-111">符号名称</span><span class="sxs-lookup"><span data-stu-id="00408-111">Symbolic Name</span></span>  |                        <span data-ttu-id="00408-112">X12FeRepeatsMoreThanRequiredDescription</span><span class="sxs-lookup"><span data-stu-id="00408-112">X12FeRepeatsMoreThanRequiredDescription</span></span>                         |
+|  <span data-ttu-id="00408-113">消息正文</span><span class="sxs-lookup"><span data-stu-id="00408-113">Message Text</span></span>   |                               <span data-ttu-id="00408-114">重复次数大于必需次数</span><span class="sxs-lookup"><span data-stu-id="00408-114">Repeats more than required</span></span>                               |
   
-## <a name="explanation"></a><span data-ttu-id="44157-115">解释</span><span class="sxs-lookup"><span data-stu-id="44157-115">Explanation</span></span>  
- <span data-ttu-id="44157-116">此错误/警告/信息事件表明 X12 交换中位于循环内外的段的重复次数大于文档架构所需的次数。</span><span class="sxs-lookup"><span data-stu-id="44157-116">This Error/Warning/Information event indicates that segments in an X12 interchange that are either inside or outside of a loop repeated more times than required by the document schema.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="00408-115">解释</span><span class="sxs-lookup"><span data-stu-id="00408-115">Explanation</span></span>  
+ <span data-ttu-id="00408-116">此错误/警告/信息事件表明 X12 交换中位于循环内外的段的重复次数大于文档架构所需的次数。</span><span class="sxs-lookup"><span data-stu-id="00408-116">This Error/Warning/Information event indicates that segments in an X12 interchange that are either inside or outside of a loop repeated more times than required by the document schema.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="44157-117">用户操作</span><span class="sxs-lookup"><span data-stu-id="44157-117">User Action</span></span>  
- <span data-ttu-id="44157-118">若要解决此错误，请确保位于交换中某个循环内外的段重复架构中指定的次数，然后重新发送交换。</span><span class="sxs-lookup"><span data-stu-id="44157-118">To resolve this error, make sure that the segments that are either inside or outside of a loop in the interchange repeat the numbers of times specified in the schema, and then resend the interchange.</span></span>
+## <a name="user-action"></a><span data-ttu-id="00408-117">用户操作</span><span class="sxs-lookup"><span data-stu-id="00408-117">User Action</span></span>  
+ <span data-ttu-id="00408-118">若要解决此错误，请确保位于交换中某个循环内外的段重复架构中指定的次数，然后重新发送交换。</span><span class="sxs-lookup"><span data-stu-id="00408-118">To resolve this error, make sure that the segments that are either inside or outside of a loop in the interchange repeat the numbers of times specified in the schema, and then resend the interchange.</span></span>

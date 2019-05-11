@@ -1,5 +1,5 @@
 ---
-title: 用于维护性能最佳实践 |Microsoft 文档
+title: 维护性能的最佳做法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 84d94b65c80ae258d4100c0cf7ad1fb1f3b5dc89
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 95d37b6d3e620f63786189a0aec76956bcf3baf1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22299597"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399360"
 ---
-# <a name="best-practices-for-maintaining-performance"></a><span data-ttu-id="e1d86-102">用于维护性能的最佳方案</span><span class="sxs-lookup"><span data-stu-id="e1d86-102">Best Practices for Maintaining Performance</span></span>
-<span data-ttu-id="e1d86-103">本主题向您指出了解决性能问题时应遵循的最佳实践[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]系统。</span><span class="sxs-lookup"><span data-stu-id="e1d86-103">This topic points you to the best practices that you should follow when resolving performance issues with a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system.</span></span>  
+# <a name="best-practices-for-maintaining-performance"></a><span data-ttu-id="5eaa0-102">维护性能的最佳做法</span><span class="sxs-lookup"><span data-stu-id="5eaa0-102">Best Practices for Maintaining Performance</span></span>
+<span data-ttu-id="5eaa0-103">本主题提供解决性能问题时应遵循的最佳实践[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]系统。</span><span class="sxs-lookup"><span data-stu-id="5eaa0-103">This topic points you to the best practices that you should follow when resolving performance issues with a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] system.</span></span>  
   
 |||  
 |-|-|  
-|<span data-ttu-id="e1d86-104">为每周性能检查</span><span class="sxs-lookup"><span data-stu-id="e1d86-104">For weekly performance checks</span></span>|[<span data-ttu-id="e1d86-105">清单： 执行每周性能检查</span><span class="sxs-lookup"><span data-stu-id="e1d86-105">Checklist: Performing Weekly Performance Checks</span></span>](../technical-guides/checklist-performing-weekly-performance-checks.md)|  
-|<span data-ttu-id="e1d86-106">为每月性能检查</span><span class="sxs-lookup"><span data-stu-id="e1d86-106">For monthly performance checks</span></span>|[<span data-ttu-id="e1d86-107">清单： 执行每月性能检查</span><span class="sxs-lookup"><span data-stu-id="e1d86-107">Checklist: Performing Monthly Performance Checks</span></span>](../technical-guides/checklist-performing-monthly-performance-checks.md)|  
+|<span data-ttu-id="5eaa0-104">为每周性能检查</span><span class="sxs-lookup"><span data-stu-id="5eaa0-104">For weekly performance checks</span></span>|[<span data-ttu-id="5eaa0-105">清单：执行每周性能检查</span><span class="sxs-lookup"><span data-stu-id="5eaa0-105">Checklist: Performing Weekly Performance Checks</span></span>](../technical-guides/checklist-performing-weekly-performance-checks.md)|  
+|<span data-ttu-id="5eaa0-106">为每月性能检查</span><span class="sxs-lookup"><span data-stu-id="5eaa0-106">For monthly performance checks</span></span>|[<span data-ttu-id="5eaa0-107">清单：执行每月性能检查</span><span class="sxs-lookup"><span data-stu-id="5eaa0-107">Checklist: Performing Monthly Performance Checks</span></span>](../technical-guides/checklist-performing-monthly-performance-checks.md)|  
   
-## <a name="see-also"></a><span data-ttu-id="e1d86-108">另请参阅</span><span class="sxs-lookup"><span data-stu-id="e1d86-108">See Also</span></span>  
- [<span data-ttu-id="e1d86-109">保持性能</span><span class="sxs-lookup"><span data-stu-id="e1d86-109">Maintaining Performance</span></span>](../technical-guides/maintaining-performance.md)
+## <a name="see-also"></a><span data-ttu-id="5eaa0-108">请参阅</span><span class="sxs-lookup"><span data-stu-id="5eaa0-108">See Also</span></span>  
+ [<span data-ttu-id="5eaa0-109">维护性能</span><span class="sxs-lookup"><span data-stu-id="5eaa0-109">Maintaining Performance</span></span>](../technical-guides/maintaining-performance.md)

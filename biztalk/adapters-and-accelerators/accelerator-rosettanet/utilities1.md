@@ -1,5 +1,5 @@
 ---
-title: Utilities1 |Microsoft Docs
+title: Utilities1 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,34 +15,34 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5911a971eebf76502ec3b3f1c6a271c3323d8efc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1d33237374f455fe33d5b5b14ab52b7c2957e4f1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010814"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65299971"
 ---
-# <a name="utilities"></a><span data-ttu-id="9c90c-102">实用程序</span><span class="sxs-lookup"><span data-stu-id="9c90c-102">Utilities</span></span>
-<span data-ttu-id="9c90c-103">本部分提供有关使用多个实用程序包含在 microsoft Microsoft® 说明[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]软件开发工具包 (SDK)。</span><span class="sxs-lookup"><span data-stu-id="9c90c-103">This section provides instructions for using several utilities included in the Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Software Development Kit (SDK).</span></span>  
+# <a name="utilities"></a><span data-ttu-id="cec0f-102">实用程序</span><span class="sxs-lookup"><span data-stu-id="cec0f-102">Utilities</span></span>
+<span data-ttu-id="cec0f-103">本部分提供有关使用多个实用程序包含在 microsoft Microsoft® 说明[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]软件开发工具包 (SDK)。</span><span class="sxs-lookup"><span data-stu-id="cec0f-103">This section provides instructions for using several utilities included in the Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Software Development Kit (SDK).</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="9c90c-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="9c90c-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="cec0f-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="cec0f-104">In This Section</span></span>  
   
--   [<span data-ttu-id="9c90c-105">BtarnClean</span><span class="sxs-lookup"><span data-stu-id="9c90c-105">BtarnClean</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/btarnclean.md)  
+-   [<span data-ttu-id="cec0f-105">BtarnClean</span><span class="sxs-lookup"><span data-stu-id="cec0f-105">BtarnClean</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/btarnclean.md)  
   
--   [<span data-ttu-id="9c90c-106">BtarnConfig</span><span class="sxs-lookup"><span data-stu-id="9c90c-106">BtarnConfig</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/btarnconfig.md)  
+-   [<span data-ttu-id="cec0f-106">BtarnConfig</span><span class="sxs-lookup"><span data-stu-id="cec0f-106">BtarnConfig</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/btarnconfig.md)  
   
--   [<span data-ttu-id="9c90c-107">CertWizard</span><span class="sxs-lookup"><span data-stu-id="9c90c-107">CertWizard</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/certwizard.md)  
+-   [<span data-ttu-id="cec0f-107">CertWizard</span><span class="sxs-lookup"><span data-stu-id="cec0f-107">CertWizard</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/certwizard.md)  
   
--   [<span data-ttu-id="9c90c-108">LOBApplication</span><span class="sxs-lookup"><span data-stu-id="9c90c-108">LOBApplication</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/lobapplication.md)  
+-   [<span data-ttu-id="cec0f-108">LOBApplication</span><span class="sxs-lookup"><span data-stu-id="cec0f-108">LOBApplication</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/lobapplication.md)  
   
--   [<span data-ttu-id="9c90c-109">LOBWebApplication</span><span class="sxs-lookup"><span data-stu-id="9c90c-109">LOBWebApplication</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md)  
+-   [<span data-ttu-id="cec0f-109">LOBWebApplication</span><span class="sxs-lookup"><span data-stu-id="cec0f-109">LOBWebApplication</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md)  
   
--   [<span data-ttu-id="9c90c-110">Loopback</span><span class="sxs-lookup"><span data-stu-id="9c90c-110">Loopback</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/loopback.md)  
+-   [<span data-ttu-id="cec0f-110">Loopback</span><span class="sxs-lookup"><span data-stu-id="cec0f-110">Loopback</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/loopback.md)  
   
--   [<span data-ttu-id="9c90c-111">消息编辑器管道组件</span><span class="sxs-lookup"><span data-stu-id="9c90c-111">Message Editor Pipeline Component</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/message-editor-pipeline-component.md)  
+-   [<span data-ttu-id="cec0f-111">消息编辑器管道组件</span><span class="sxs-lookup"><span data-stu-id="cec0f-111">Message Editor Pipeline Component</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/message-editor-pipeline-component.md)  
   
--   [<span data-ttu-id="9c90c-112">消息检查器管道组件</span><span class="sxs-lookup"><span data-stu-id="9c90c-112">Message Inspector Pipeline Component</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/message-inspector-pipeline-component.md)  
+-   [<span data-ttu-id="cec0f-112">消息检查器管道组件</span><span class="sxs-lookup"><span data-stu-id="cec0f-112">Message Inspector Pipeline Component</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/message-inspector-pipeline-component.md)  
   
--   [<span data-ttu-id="9c90c-113">SchemaValidator</span><span class="sxs-lookup"><span data-stu-id="9c90c-113">SchemaValidator</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/schemavalidator.md)  
+-   [<span data-ttu-id="cec0f-113">SchemaValidator</span><span class="sxs-lookup"><span data-stu-id="cec0f-113">SchemaValidator</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/schemavalidator.md)  
   
--   [<span data-ttu-id="9c90c-114">TestCrypto</span><span class="sxs-lookup"><span data-stu-id="9c90c-114">TestCrypto</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/testcrypto.md)
+-   [<span data-ttu-id="cec0f-114">TestCrypto</span><span class="sxs-lookup"><span data-stu-id="cec0f-114">TestCrypto</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/testcrypto.md)

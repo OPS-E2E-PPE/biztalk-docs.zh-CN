@@ -1,5 +1,5 @@
 ---
-title: ESB 路线架构 |Microsoft 文档
+title: ESB 路线架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 66bcbe6780105a97e58df393d0e060688048a02b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d205d4722270dd36f7d3611845b0d5bc4c7953f7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22295221"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399785"
 ---
-# <a name="the-esb-itinerary-schema"></a><span data-ttu-id="457e5-102">ESB 路线架构</span><span class="sxs-lookup"><span data-stu-id="457e5-102">The ESB Itinerary Schema</span></span>
-<span data-ttu-id="457e5-103">名为 Itinerary.xsd ESB 路线架构作为处理指令，通常称为路线服务的一组定义日程表。</span><span class="sxs-lookup"><span data-stu-id="457e5-103">The ESB Itinerary schema named Itinerary.xsd defines an itinerary as a set of processing instructions, generally referred to as itinerary services.</span></span> <span data-ttu-id="457e5-104">路线服务可能包含一个或多个路线的服务和相应的冲突解决程序连接字符串，如下面的架构定义中所示。</span><span class="sxs-lookup"><span data-stu-id="457e5-104">An itinerary service may contain one or more itinerary services and the corresponding resolver connection strings, as shown in the following schema definition.</span></span>  
+# <a name="the-esb-itinerary-schema"></a><span data-ttu-id="89cbe-102">ESB 路线架构</span><span class="sxs-lookup"><span data-stu-id="89cbe-102">The ESB Itinerary Schema</span></span>
+<span data-ttu-id="89cbe-103">名为 Itinerary.xsd ESB 路线架构将定义为处理指令，通常称为路线服务的一组路线。</span><span class="sxs-lookup"><span data-stu-id="89cbe-103">The ESB Itinerary schema named Itinerary.xsd defines an itinerary as a set of processing instructions, generally referred to as itinerary services.</span></span> <span data-ttu-id="89cbe-104">路线服务可能包含一个或多个路线服务和相应的冲突解决程序连接字符串，如下面的架构定义中所示。</span><span class="sxs-lookup"><span data-stu-id="89cbe-104">An itinerary service may contain one or more itinerary services and the corresponding resolver connection strings, as shown in the following schema definition.</span></span>  
   
 ```xml  
 <?xml version="1.0" encoding="utf-16"?>  
@@ -130,13 +130,13 @@ ms.locfileid: "22295221"
 </xs:schema>  
 ```  
   
- <span data-ttu-id="457e5-105">**服务实例**元素对应于当前路线服务和包含属性，例如**名称**，**类型**，**状态**，和**位置**的服务提升到消息上下文。</span><span class="sxs-lookup"><span data-stu-id="457e5-105">The **ServiceInstance** element corresponds to the current itinerary service and contains properties such as **name**, **type**, **state**, and **position** that the service promotes into the message context.</span></span> <span data-ttu-id="457e5-106">架构中的系统 Properties.xsd **Microsoft.Practices.ESB.ItinerarySchemas**程序集定义这些属性。</span><span class="sxs-lookup"><span data-stu-id="457e5-106">The schema named System-Properties.xsd in the **Microsoft.Practices.ESB.ItinerarySchemas** assembly defines these properties.</span></span>  
+ <span data-ttu-id="89cbe-105">**ServiceInstance**元素对应于当前的路线服务和包含属性，例如**名称**，**类型**，**状态**，并**位置**，该服务将升级到消息上下文。</span><span class="sxs-lookup"><span data-stu-id="89cbe-105">The **ServiceInstance** element corresponds to the current itinerary service and contains properties such as **name**, **type**, **state**, and **position** that the service promotes into the message context.</span></span> <span data-ttu-id="89cbe-106">名为系统 Properties.xsd 中的架构**Microsoft.Practices.ESB.ItinerarySchemas**程序集定义这些属性。</span><span class="sxs-lookup"><span data-stu-id="89cbe-106">The schema named System-Properties.xsd in the **Microsoft.Practices.ESB.ItinerarySchemas** assembly defines these properties.</span></span>  
   
- <span data-ttu-id="457e5-107">**服务**元素表示一组路线服务，与每个服务由其状态、 开始时间、 完成时间、 类型 (**Orchestration**或**消息**)，并且，（可选） 阶段 (**receiveInbound**， **receiveTransmit**， **sendTransmit**， **sendInbound**)。</span><span class="sxs-lookup"><span data-stu-id="457e5-107">The **Services** element represents a set of itinerary services, with each service defined by its state, begin time, completion time, type (**Orchestration** or **Messaging**), and, optionally, stage (**receiveInbound**, **receiveTransmit**, **sendTransmit**, **sendInbound**).</span></span>  
+ <span data-ttu-id="89cbe-107">**Services**元素表示一组路线服务，但每个服务定义其状态、 开始时间、 完成时间、 类型 (**业务流程**或**消息传送**)，并 （可选） 阶段 (**receiveInbound**， **receiveTransmit**， **sendTransmit**， **sendInbound**)。</span><span class="sxs-lookup"><span data-stu-id="89cbe-107">The **Services** element represents a set of itinerary services, with each service defined by its state, begin time, completion time, type (**Orchestration** or **Messaging**), and, optionally, stage (**receiveInbound**, **receiveTransmit**, **sendTransmit**, **sendInbound**).</span></span>  
   
- <span data-ttu-id="457e5-108">**ResolverGroups**元素包含多个**冲突解决程序**元素，其中每个定义日程表就会通过引用的一个或多个冲突解决程序连接字符串**serviceid**属性。</span><span class="sxs-lookup"><span data-stu-id="457e5-108">The **ResolverGroups** element contains multiple **Resolvers** elements, each of which defines one or more resolver connection strings that an itinerary references through the **serviceid** attribute.</span></span>  
+ <span data-ttu-id="89cbe-108">**ResolverGroups**元素包含多个**冲突解决程序**元素，其中每个定义路线就会通过引用的一个或多个冲突解决程序连接字符串**serviceid**属性。</span><span class="sxs-lookup"><span data-stu-id="89cbe-108">The **ResolverGroups** element contains multiple **Resolvers** elements, each of which defines one or more resolver connection strings that an itinerary references through the **serviceid** attribute.</span></span>  
   
- <span data-ttu-id="457e5-109">以下显示了 ESB 路线管道组件处理之前提交路线 SOAP 标头的一个示例。</span><span class="sxs-lookup"><span data-stu-id="457e5-109">The following shows a sample of a submitted itinerary SOAP header before it is processed by the ESB Itinerary Pipeline component.</span></span>  
+ <span data-ttu-id="89cbe-109">下面显示了已提交的路线 SOAP 标头的示例，ESB 路线管道组件处理之前。</span><span class="sxs-lookup"><span data-stu-id="89cbe-109">The following shows a sample of a submitted itinerary SOAP header before it is processed by the ESB Itinerary Pipeline component.</span></span>  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
