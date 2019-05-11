@@ -17,12 +17,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 18d3964cabfec2b1e33813e3811bfeb696cd4280
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: abce809fb62966fc311f59c8706c8d6823a16d13
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972238"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529411"
 ---
 # <a name="create-a-channel-using-oracle-database"></a>创建一个通道，使用 Oracle 数据库
 在 WCF 通道模型中，调用对 Oracle 数据库的操作和接收的交换的 SOAP 消息具有轮询查询的结果[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]通过 WCF 通道。  

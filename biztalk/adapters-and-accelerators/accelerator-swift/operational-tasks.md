@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cd1016c381b9ce0ca305be3eb2b26caf40547ebe
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f7b96ac7df46877be151a3bbbe57ddb043a023dc
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002870"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530058"
 ---
 # <a name="operational-tasks"></a>操作任务
 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]包含一个或多个服务器和一系列企业应用程序集成 (EAI)，自动化财务业务流程，并促进使用 SWIFT FIN 标准的消息交换的工具。  

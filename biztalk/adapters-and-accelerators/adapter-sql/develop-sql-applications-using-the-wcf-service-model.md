@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: afeb8d7aac2dd2a29f60c89cf54c86ef2e4519df
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9922465447cef564364c7a5e1c535f5c9002e353
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983974"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369854"
 ---
 # <a name="develop-sql-applications-using-the-wcf-service-model"></a>开发 SQL 应用程序使用 WCF 服务模型
 [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)] 提供编程模型调用 WCF 服务模型中，作为编程模型的 WCF 通道的替代方法。  

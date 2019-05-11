@@ -1,5 +1,5 @@
 ---
-title: 在 WCF LOB 适配器 SDK 中查看受支持的消息交换模式 |Microsoft 文档
+title: 在 WCF LOB 适配器 SDK 中查看支持的消息交换模式 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,33 +12,33 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 77fee95033e669bf584220461b330afbb9fd25b7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: eca67c0f5ebbb3220ebd6d1a836cc37f271df9ab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22225517"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362652"
 ---
-# <a name="view-the-supported-message-exchange-patterns-in-the-wcf-lob-adapter-sdk"></a>在 WCF LOB 适配器 SDK 中查看受支持的消息交换模式
-[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]支持多个支持的基础的消息传递模式[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]包括请求-答复和单向通信。 不同传输协议支持不同的消息传递模式，并因而会影响它们所支持的交互的类型。  
+# <a name="view-the-supported-message-exchange-patterns-in-the-wcf-lob-adapter-sdk"></a>在 WCF LOB 适配器 SDK 中查看支持的消息交换模式
+[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]支持多个消息传递模式支持由基础[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]包括请求-答复和单向通信。 不同的传输支持不同的消息传递模式，并因而会影响它们支持的交互的类型。  
   
- 下表中列出的模式由[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。  
+ 下表中列出的模式将由[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。  
   
 |模式|Description|  
 |-------------|-----------------|  
-|单向入站|入站的消息接收从业务线系统，但从适配器预期无响应。|  
-|请求-响应入站|入站的消息接收从业务线系统期望从适配器适当的响应。|  
-|单向出站|出站消息发送到业务线系统，但从适配器预期无响应。|  
-|请求-响应出站|出站消息发送到业务线系统使用该适配器中的预期的响应。|  
-|会话入站|在唯一的会话，从业务线系统收到入站的消息。 由业务线系统的适配器预期无响应。|  
-|出站会话|出站消息发送到业务线系统内唯一的会话。 从业务线系统适配器预期无响应。|  
+|单向入站|入站的消息业务线系统收到但无响应预期来自适配器。|  
+|请求-响应入站|入站的消息接收从业务线系统需要来自适配器的相应响应。|  
+|单向出站|出站消息发送到业务线系统，但无响应预期来自适配器。|  
+|请求-响应出站|出站消息与预期来自适配器的响应发送到业务线系统。|  
+|会话通道入站|唯一的会话中，从业务线系统接收入站的消息。 通过从适配器的业务线系统预期无响应。|  
+|出站会话通道|出站消息发送到业务线系统内的唯一会话。 适配器从业务线系统预期无响应。|  
   
- 由目标应用程序的功能，将指导你选择的消息模式。  
+ 所选的消息模式需要根据目标应用程序的功能。  
   
-## <a name="planning-for-sessions"></a>规划会话  
- 消息传递模式可能会使用它时想要确保在适配器和业务线系统之间交换的所有消息都必须属于同一个对话的会话。 通常使用会话时需要传递保证，但它们还可以用于消息交换支持适配器开发人员可能有其他要求。  
+## <a name="planning-for-sessions"></a>规划的会话  
+ 消息传送模式可能会使用它时想要确保在适配器和业务线系统之间交换的所有消息都必须属于同一会话的会话。 通常使用会话时需要传递保证，但它们还可用于支持适配器开发人员可能有其他要求消息交换。  
   
  [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]依赖于[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]会话支持。 有关会话的详细信息，请参阅[会话、 实例存储功能和并发](https://msdn.microsoft.com/library/ms731193.aspx)。 
   
-## <a name="see-also"></a>另请参阅  
- [规划和设计使用 WCF LOB 适配器 SDK 的适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/plan-and-design-an-adapter-using-the-wcf-lob-adapter-sdk.md)
+## <a name="see-also"></a>请参阅  
+ [规划和设计适配器使用 WCF LOB 适配器 SDK](../../adapters-and-accelerators/wcf-lob-adapter-sdk/plan-and-design-an-adapter-using-the-wcf-lob-adapter-sdk.md)

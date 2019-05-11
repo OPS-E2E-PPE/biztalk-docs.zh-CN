@@ -12,17 +12,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8643ef37e3fe4aec77cd9d218a171d37c2c24852
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 49f43b35eacd264820afd07fce9d218a28e6b2e1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974606"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372028"
 ---
 # <a name="view-the-reports-for-sap"></a>查看适用于 SAP 的报表
 创建报表后，可以查看使用 Visual Studio 或通过网络将其托管在 Internet 信息服务 (IIS) 和访问上的报表服务器上。 本主题提供有关如何查看报表，在 Visual Studio 和使用 IIS 中的说明。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  执行本主题中提供的过程之前，你必须生成一个报表中所述[SAP 数据提供程序用于创建报表服务器项目](../../adapters-and-accelerators/adapter-sap/use-the-data-provider-for-sap-to-create-a-report-server-project.md)。  
   
 ### <a name="to-view-the-reports-in-visual-studio"></a>在 Visual Studio 中查看报表  

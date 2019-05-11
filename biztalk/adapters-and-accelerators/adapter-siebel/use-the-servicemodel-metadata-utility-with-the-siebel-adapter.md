@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9741b970873b97401968f7b87ee76ac853c60ae4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5978888da09b746eb1c6ba3905833d1360502919
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987382"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370232"
 ---
 # <a name="using-the-servicemodel-metadata-utility-tool-with-the-biztalk-adapter-for-siebel-ebusiness-applications"></a>用于 Siebel eBusiness 应用程序的 BizTalk 适配器使用 ServiceModel Metadata Utility Tool
 可以使用 ServiceModel Metadata Utility Tool (svcutil.exe) 生成操作的 WCF 客户端类的[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]公开。 运行 svcutil.exe 来生成 WCF 客户端类后，可以在代码中包含生成的文件并创建要在 Siebel 系统上执行操作的 WCF 客户端类的实例。  

@@ -12,14 +12,14 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 629e09e950a6c49263230f23725002eee9be905b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 411359b55fff0385cdda5ae52a9c59477526ccb3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985918"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362459"
 ---
-# <a name="a-bts-mime-error-was-encountered-when-attempting-to-decode-an-as2-message"></a>尝试对 AS2 消息进行解码时遇到 BTS MIME 错误
+# <a name="a-bts-mime-error-was-encountered-when-attempting-to-decode-an-as2-message"></a>尝试进行解码的 AS2 消息时遇到 BTS MIME 错误
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                    |
@@ -30,7 +30,7 @@ ms.locfileid: "36985918"
 |  事件源   |                                                         BizTalk Server EDI                                                         |
 |    组件    |                                                             AS2 引擎                                                             |
 |  符号名称  |                                                                 -                                                                  |
-|  消息正文   | 尝试对 AS2 消息进行解码时遇到 BTS MIME 错误。  AS2-从： {0}，AS2-到： {1}，MessageId: {2}，错误： {3} |
+|  消息正文   | 尝试进行解码的 AS2 消息时遇到 BTS MIME 错误。  AS2-从： {0}，AS2-到： {1}，MessageId: {2}，错误： {3} |
   
 ## <a name="explanation"></a>解释  
  使用 BizTalk MIME 组件处理 MIME 处理的一部分时遇到此错误。  

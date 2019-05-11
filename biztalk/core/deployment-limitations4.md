@@ -2,28 +2,28 @@
 redirect_url: /biztalk/core/deploying-biztalk-adapter-for-jd-edwards-enterpriseone/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: 847e66c189cb8fc14014691f95d78b6eec4b45dc
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 39b22cf6bf77f6e23b4a242e8c711070ef8a153c
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24013356"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530845"
 ---
 # <a name="deployment-limitations"></a>部署限制
-传输适配器密码为星号 （*） 存储在由导出绑定文件[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，并将它传递给相同的格式中的管理组件。 在导入之前编辑绑定文件，将星号替换为某些无效的值（即，不替换为正确密码）。  
+传输适配器密码在导出的绑定文件中存储为星号 （*） [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，并将其传递到相同的格式中的管理组件。 星号替换为某些无效的值 （即，不正确的密码） 导入之前编辑绑定文件。  
   
- 在导出绑定信息时，得到的绑定文件不包含传输适配器曾经在接收位置/发送端口中使用过的任何密码。 这样可防止以明文形式显示密码信息。 下次使用文件导入绑定信息，你必须通过使用传输属性页用户界面中输入的密码。  
+ 在导出绑定信息时，得到的绑定文件不包含任何传输所使用的密码中的适配器接收位置/发送端口。 这可以防止以明文形式显示密码信息。 下次使用该文件导入绑定信息时，你必须使用传输属性页用户界面中输入的密码。  
   
- 或者，可以在导入前临时修改绑定文件，将密码输入到文件中。 在这种情况下，必须从绑定文件删除密码，导入操作成功完成后。  
+ 或者，暂时可以通过将密码输入到其导入前修改绑定文件。 在这种情况下，你必须删除密码从绑定文件导入操作已成功完成后。  
   
 ## <a name="password-limitation-workaround"></a>密码限制的解决方法  
- 若要解决此密码限制问题，您可以执行以下操作。  
+ 若要解决密码限制，你可以执行以下操作。  
   
-#### <a name="to-work-around-the-password-limitation"></a>若要解决的密码限制  
+#### <a name="to-work-around-the-password-limitation"></a>若要解决密码限制  
   
-1.  使用企业单一登录，而不是使用密码。 使用的 SSO 选项需要在没有额外的工作;仅导入的绑定文件。  
+1.  使用企业单一登录，而不是使用密码。 使用 SSO 选项需要任何额外操作;仅导入绑定文件。  
   
-2.  验证逻辑的系统和传输和接收服务。  
+2.  验证逻辑系统以及传输和接收服务。  
   
-## <a name="see-also"></a>另请参阅  
- [导入博士 Edwards EnterpriseOne 应用](../core/deploying-biztalk-adapter-for-jd-edwards-enterpriseone.md)
+## <a name="see-also"></a>请参阅  
+ [导入 JD Edwards EnterpriseOne 应用程序](../core/deploying-biztalk-adapter-for-jd-edwards-enterpriseone.md)

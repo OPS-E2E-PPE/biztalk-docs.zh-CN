@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f4bc572cc18ca7d9d5515fe9f189287df5d1440f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 26aaca5ce206e8ef320b61959f04f5e0fd5657a1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022947"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65366534"
 ---
 # <a name="read-the-installation-known-issues"></a>阅读安装的已知问题
 [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)] 具有以下各节中列出的已知的问题。  
@@ -27,9 +27,9 @@ ms.locfileid: "37022947"
   
  此外，必须确保所有的节点 （服务器、 线条和带宽） 进行正确配置以避免丢失任何数据。 以下是典型的示例执行次数：  
   
-- 交互/Fileact 发送用量较大的计算机下： 20 消息/分钟  
+- 交互/Fileact 发送用量较大的计算机下：20 消息/分钟  
   
-- 交互/Fileact 接收用量较大的计算机下： 300-400 消息/分钟  
+- 交互/Fileact 接收用量较大的计算机下：300-400 消息/分钟  
   
   有关详细信息，请参阅 SWIFT 文档。  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 31
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f248e1db8bc57e928e85e908e679d4ded1ec38aa
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 05e2edcd96bd7615da8175282a646b77e16c9759
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969638"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369390"
 ---
 # <a name="install-microsoft-biztalk-adapter-for-sql-server---2013-r2-and-2013"></a>安装 Microsoft BizTalk Adapter for SQL Server-2013 R2 和 2013
 安装[!INCLUDE[adaptersql_md](../../includes/adaptersql-md.md)]附带[!INCLUDE[bts2013r2_md](../../includes/bts2013r2-md.md)]，或包含[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]2013年。
@@ -40,7 +40,7 @@ ms.locfileid: "36969638"
 |          [!INCLUDE[dotnet451](../../includes/dotnet451-md.md)]          |      Microsoft [!INCLUDE[dotnet45](../../includes/dotnet45-md.md)]      |
 |                           Visual Studio 2013                            |                           Visual Studio 2012                            |
 | [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] | [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] |
-|                   SQL Server 客户端库。 实例时都提供 SQL Server 登录名。                    |                    SQL Server 客户端库...                    |
+|                   SQL Server 客户端库。 .                    |                    SQL Server 客户端库...                    |
 
 <a name="BKMK_Prereqs_BTS"></a>    
 ## <a name="prerequisites-when-using-the-adapter-with-biztalk-server"></a>使用适配器与 BizTalk Server 时的先决条件  
@@ -59,9 +59,9 @@ ms.locfileid: "36969638"
 ## <a name="supported-sql-server-versions-and-client-libraries"></a>支持的 SQL Server 版本和客户端库  
  以下部分提供支持的 SQL Server 版本和客户端所需的库[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。  
 
-- **支持的服务器版本**: SQL Server 2005、 SQL Server 2008 SP1、 SQL Server 2008 R2、 SQL Server 2012  
+- **支持的服务器版本**:SQL Server 2005, SQL Server 2008 SP1, SQL Server 2008 R2, SQL Server 2012  
 
-- **支持的客户端版本**: Microsoft[!INCLUDE[dotnet45](../../includes/dotnet45-md.md)]捆绑包连接到 SQL Server 所需的客户端 Dll。 不需要在您的计算机上显式安装任何客户端 Dll。  
+- **支持的客户端版本**:Microsoft[!INCLUDE[dotnet45](../../includes/dotnet45-md.md)]捆绑包连接到 SQL Server 所需的客户端 Dll。 不需要在您的计算机上显式安装任何客户端 Dll。  
 
 - **所需的驱动程序**:  
 
@@ -287,7 +287,7 @@ ms.locfileid: "36969638"
 
 1. 打开命令提示符，并导航到的根目录下[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]安装程序。  
 
-2. 运行以下命令：  
+2. 运行下面的命令：  
 
    > [!NOTE]
    >  若要修改[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]在基于 x64 的平台，在以下命令中上, 无提示模式下安装替换 SqlAdapterSetup64.msi SqlAdapterSetup.msi。  
@@ -325,7 +325,7 @@ ms.locfileid: "36969638"
 
 1. 打开命令提示符，并导航到的根目录下[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]安装程序。  
 
-2. 运行以下命令：  
+2. 运行下面的命令：  
 
    > [!NOTE]
    >  若要删除[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]在无提示模式在基于 x64 的平台，在以下命令中，替换为 SqlAdapterSetup.msi SqlAdapterSetup64.msi。  

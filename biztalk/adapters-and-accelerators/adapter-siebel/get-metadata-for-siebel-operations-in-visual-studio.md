@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b4a7b6ed8cfd678d725323d92de045d27e10085
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 98e8b4af57d575ca23b1561d052d71f5f8dbf4f8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014534"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371575"
 ---
 # <a name="get-metadata-for-siebel-operations-in-visual-studio"></a>获取 Visual Studio 中的 Siebel 操作的元数据
 [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]提供了两个[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]可用来帮助您开发使用该适配器的解决方案的组件。  

@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 92b3cb47df9b151de741b0e64f21041a60b9c90d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6086f39f3976e481d910dd5f83cd0a648696c9ab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970710"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372733"
 ---
 # <a name="syntax-for-a-select-statement-in-sap"></a>在 SAP 中的 SELECT 语句的语法
 以下各节介绍用于实现对 SELECT 查询的语法规范[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]。 请注意，在某些情况下，该语法的基本 TRANSACT-SQL 语法稍有不同。  
@@ -42,7 +42,7 @@ SELECT {TOP <const> }[0,1] <select_list>  {INTO FILE [‘file_name’ | “file_
   
   支持的条件和表达式是：  
   
-- **\<条件\>** = `[ expr | expr [NOT | ] BETWEEN const AND const | expr [NOT | ] LIKE const ]`  
+- **\<condition\>** = `[ expr | expr [NOT | ] BETWEEN const AND const | expr [NOT | ] LIKE const ]`  
   
 - **\<expr\>** = `[ const | column_name [= | ! = | > | > = | ! > | < | < = | ! < ] const | column_name | - const  | const | column_name ]`  
   
@@ -74,43 +74,43 @@ SELECT {TOP <const> }[0,1] <select_list>  {INTO FILE [‘file_name’ | “file_
 ## <a name="predicates-syntax"></a>谓词语法  
  以下示例指定在 SELECT 语句中使用的谓词的语法：  
   
- `Predicate`：  
+ `Predicate`设置用户帐户 ：  
   
 ```  
 Predicates [AND | OR] Predicates [between|not between] Predicates | [NOT] Predicates | '(' Predicates ')' | Condition  
 ```  
   
- `Condition`：  
+ `Condition`设置用户帐户 ：  
   
 ```  
 Expr | LExpr [NOT] BETWEEN RExpr AND RExpr | LExpr [NOT] LIKE Const  
 ```  
   
- `Expr`：  
+ `Expr`设置用户帐户 ：  
   
 ```  
 LExpr [=|!=|>|>=|!>|<|<=|!<] RExpr>  
 ```  
   
- `LExpr`：  
+ `LExpr`设置用户帐户 ：  
   
 ```  
 ColumnName  
 ```  
   
- `RExpr`：  
+ `RExpr`设置用户帐户 ：  
   
 ```  
 Const | PlaceHolder  
 ```  
   
- `ColumnName`：  
+ `ColumnName`设置用户帐户 ：  
   
 ```  
 Column | TableName.Column | '['Column']'  
 ```  
   
- `Tablename`：  
+ `Tablename`设置用户帐户 ：  
   
 ```  
 Table | '['Table']'  
@@ -121,13 +121,13 @@ Table | '['Table']'
   
 - 当在参数或查询中指定日期时间值，以字符串形式提供的值。 提供 SAP 日期时间格式的日期时间字符串。  
   
-  - `SAP date format`: YYYYMMDD  
+  - `SAP date format`设置用户帐户 ：YYYYMMDD  
   
      例如，日期 2004 年 11 月 10 个 SAP 查询中是表示"20041110"。  
   
      日期 2004 年 11 月 10 个 SAPParameter p1 中是字符串 p1。值 ="20041110"。  
   
-  - `SAP time format`: HHMMSS  
+  - `SAP time format`设置用户帐户 ：HHMMSS  
   
      例如，时间 10:34:32 SAP 查询中是表示"103432"。  
   

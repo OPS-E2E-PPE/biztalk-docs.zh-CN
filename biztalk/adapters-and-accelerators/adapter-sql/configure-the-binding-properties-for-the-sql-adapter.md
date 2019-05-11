@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 013d9b2b5da755101b53420f2b29fb639851d230
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a324672d21b98f88fb23f3ac95a9f4febd77a2c1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010062"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369981"
 ---
 # <a name="configure-the-binding-properties-for-the-sql-adapter"></a>配置 SQL 适配器的绑定属性
 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]显示，您可以控制某些行为特征的多个绑定属性。 本部分提供有关设置中的绑定属性的信息[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]以及从[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 从[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]，必须指定要为特定的操作生成架构的绑定属性。 从[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，必须指定的绑定属性作为一部分发送或接收端口来发送或接收来自 SQL Server 的消息。  
@@ -59,7 +59,7 @@ ms.locfileid: "37010062"
    | **模板**  | 单击**添加适配器元数据**。 |
 
 
-3. 单击 **“添加”**。 此时[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]会打开。  
+3. 单击 **“添加”**。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]随即打开。  
 
 4. 在添加适配器向导中，选择**WCF-SQL**。 选择在其安装 BizTalk Server 的计算机和 BizTalk 数据库的名称。  
 

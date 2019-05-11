@@ -19,12 +19,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a319626f23b825187d65e01d687be5a1079df53a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c4b9fc9dc2d345d5f9a781759f26eb4a0126404b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993166"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373175"
 ---
 # <a name="operations-on-bapis-in-sap"></a>在 SAP 中的 Bapi 的操作
 业务应用程序编程接口 (BAPI) 是一种方法可以调用外部进程的 SAP 业务对象。 Bapi 是 SAP 系统上事务性的。  

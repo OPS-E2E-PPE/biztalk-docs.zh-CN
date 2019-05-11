@@ -13,12 +13,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 43a454e1e6f1dc65d8a2e2c5493aacf9375374b2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 54c02d5fa7573516bb998e1e47c3c4a929feba77
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997374"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363997"
 ---
 # <a name="post-installation-steps-for-biztalk-adapter-pack-2016"></a>BizTalk 适配器包 2016年的安装后步骤
 在安装后[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]，有一些安装后步骤。 本主题列出了这些步骤。   
@@ -37,7 +37,7 @@ ms.locfileid: "36997374"
 
     ![将 SAP 适配器添加到 BizTalk](../adapters-and-accelerators/media/a1235b38-ab93-4233-924d-42710540b951.gif "a1235b38-ab93-4233-924d-42710540b951")  
 
-5. 选择“确定”。  
+5. 选择 **确定**。  
 
 ## <a name="use-a-newer-oracledataaccessdll-version"></a>使用较新的 Oracle.DataAccess.dll 版本  
 
@@ -45,9 +45,9 @@ ms.locfileid: "36997374"
 
 1.  在 BizTalk 服务器上，请转到以下文件夹：  
 
-     *驱动器*: \Program Files\Microsoft BizTalk Adapter Pack (x64) \bin  
+     *drive*:\Program Files\Microsoft BizTalk Adapter Pack(x64)\bin  
 
-     *驱动器*: \Program 文件 (x86) \Microsoft BizTalk Adapter Pack\bin  
+     *drive*:\Program Files (x86)\Microsoft BizTalk Adapter Pack\bin  
 
 2.  打开 Microsoft.Adapters.OracleDB.config 文件。  
 

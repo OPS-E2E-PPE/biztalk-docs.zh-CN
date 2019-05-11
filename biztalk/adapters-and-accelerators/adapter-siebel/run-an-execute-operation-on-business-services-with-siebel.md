@@ -1,5 +1,5 @@
 ---
-title: 使用 Siebel 运行业务服务上的执行操作 |Microsoft 文档
+title: 运行与 Siebel 业务服务上的执行操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,18 +15,18 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 644d915998e6c6e6f386d30021629f78dc109864
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8323de5d24100d4712e3919a37cfff090c612ea4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22221973"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371215"
 ---
-# <a name="run-an-execute-operation-on-business-services-with-siebel"></a>使用 Siebel 运行业务服务上的执行操作
+# <a name="run-an-execute-operation-on-business-services-with-siebel"></a>运行与 Siebel 业务服务上的执行操作
 本部分演示如何执行对 Siebel 业务服务使用的操作[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)]。  
   
 ## <a name="executing-a-siebel-business-service"></a>执行 Siebel 业务服务  
- 本部分演示如何在 Siebel 存储库中执行对业务服务的操作。  
+ 本部分演示如何在 Siebel 存储库中执行业务服务上的操作。  
   
 ```  
 using System;  
@@ -85,6 +85,6 @@ namespace SiebelADOBS
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [.NET Framework 数据提供程序用于 Siebel eBusiness Applications](../../adapters-and-accelerators/adapter-siebel/use-the-net-framework-data-provider-for-siebel-ebusiness-applications.md)   
- [在带有 Siebel 业务组件上运行 SELECT 查询](../../adapters-and-accelerators/adapter-siebel/run-a-select-query-on-business-components-with-siebel.md)
+## <a name="see-also"></a>请参阅  
+ [用于 Siebel eBusiness 应用程序使用.NET Framework 数据提供程序](../../adapters-and-accelerators/adapter-siebel/use-the-net-framework-data-provider-for-siebel-ebusiness-applications.md)   
+ [使用 Siebel 业务组件上运行 SELECT 查询](../../adapters-and-accelerators/adapter-siebel/run-a-select-query-on-business-components-with-siebel.md)

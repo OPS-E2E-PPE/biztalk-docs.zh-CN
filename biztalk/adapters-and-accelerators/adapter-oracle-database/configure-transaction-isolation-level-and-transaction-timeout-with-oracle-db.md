@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3fa97e17f29775059c6f8d80818a177cd640abd4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b7b0969feb6d22ea05e054c17ad4f584009e1b19
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970126"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529470"
 ---
 # <a name="configure-transaction-isolation-level-and-transaction-timeout-with-oracle-database"></a>配置与 Oracle 数据库的事务隔离级别和事务超时
-执行入站的操作 （轮询） 使用时[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]与[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，您应适当地配置事务隔离级别和事务超时值。 为此，请执行以下操作：  
+执行入站的操作 （轮询） 使用时[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]与[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，您应适当地配置事务隔离级别和事务超时值。 若要执行此操作：  
 
 1. 启动[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。  
 
@@ -46,10 +46,10 @@ ms.locfileid: "36970126"
 
 12. 在左窗格中**Wcf-custom 传输属性**，选择**oracleDBAdapterInboundTransactionBehavior**服务**ServiceBehavior**。  
 
-13. 在右窗格中**Wcf-custom 传输属性**，指定相应的值**transactionIsolationLevel**并**transactionTimeout**参数。 可以选择任意下列事务隔离级别： **Serializable**， **RepeatableRead**， **ReadCommitted**， **ReadUncommitted**，**快照**，**混沌测试**，并且**未指定**。 有关这些事务隔离级别的信息，请参阅**成员**在部分[ http://go.microsoft.com/fwlink/?LinkId=126983 ](http://go.microsoft.com/fwlink/?LinkId=126983)。  
+13. 在右窗格中**Wcf-custom 传输属性**，指定相应的值**transactionIsolationLevel**并**transactionTimeout**参数。 您可以选择任意下列事务隔离级别：**可序列化**， **RepeatableRead**， **ReadCommitted**， **ReadUncommitted**，**快照**， **混沌测试**，并**未指定**。 有关这些事务隔离级别的信息，请参阅**成员**在部分[ http://go.microsoft.com/fwlink/?LinkId=126983 ](http://go.microsoft.com/fwlink/?LinkId=126983)。  
 
     > [!IMPORTANT]
-    >  [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]支持仅以下两个事务隔离级别： ReadCommitted 和 Serializable。  
+    >  [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]支持仅以下两个事务隔离级别：ReadCommitted 和可序列化。  
 
      ![设置事务隔离级别](../../adapters-and-accelerators/adapter-oracle-database/media/96a66f86-0321-4aa6-9e72-ada30d7de064.gif "96a66f86-0321-4aa6-9e72-ada30d7de064")  
 

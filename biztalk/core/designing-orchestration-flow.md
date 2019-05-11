@@ -1,5 +1,5 @@
 ---
-title: 设计业务流程流 |Microsoft 文档
+title: 设计业务流程流 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,25 +14,25 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3238fb9be9222aa96a0ed7d255516a2c47d0db4a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3048a1331caa47f39d69f2ecba30421ad05b7506
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238741"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530880"
 ---
 # <a name="designing-orchestration-flow"></a>设计业务流程流
-本部分说明如何设计在业务流程中的你业务流程。  
+本部分介绍如何设计业务流程流在业务流程中。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [在业务流程中的实现设计模式](../core/implementing-design-patterns-in-orchestrations.md)  
+-   [在业务流程中实现设计模式](../core/implementing-design-patterns-in-orchestrations.md)  
   
 -   [如何配置发送形状](../core/how-to-configure-the-send-shape.md)  
   
 -   [如何配置接收形状](../core/how-to-configure-the-receive-shape.md)  
   
--   [配置流控制形状](../core/configuring-flow-control-shapes.md)  
+-   [配置“流控制”形状](../core/configuring-flow-control-shapes.md)  
   
 -   [如何使用组形状](../core/how-to-use-the-group-shape.md)  
   
@@ -40,5 +40,5 @@ ms.locfileid: "22238741"
   
 -   [如何开发相互依赖的业务流程](../core/how-to-develop-interdependent-orchestrations.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建业务流程](../core/creating-orchestrations.md)

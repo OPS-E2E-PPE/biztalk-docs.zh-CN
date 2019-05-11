@@ -1,5 +1,5 @@
 ---
-title: 第 2 课： 确认部署使用业务规则编辑器工具 |Microsoft Docs
+title: 第 2 课：确认部署使用业务规则编辑器工具 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,14 +18,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1e9de00e6996daf5ce7759d395f6dfcf97989aa4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: eee5d380c47d429f5a09343b6157cdeab8e5fba6
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997798"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530362"
 ---
-# <a name="lesson-2-confirming-the-deployment-using-the-business-rule-composer-tool"></a>第 2 课： 确认部署使用业务规则编辑器工具
+# <a name="lesson-2-confirming-the-deployment-using-the-business-rule-composer-tool"></a>第 2 课：确认部署使用业务规则编辑器工具
 在本课程中，确认业务规则编辑器工具创建你的词汇和部署你的策略。 词汇是您在编写规则中使用的词汇元素的集合。 策略是业务规则的版本控制集合。  
   
 ### <a name="to-confirm-the-deployment-using-the-business-rule-composer-tool"></a>若要确认使用业务规则编辑器工具部署  
@@ -102,4 +102,4 @@ ms.locfileid: "36997798"
   
     在屏幕右侧的编辑器窗格中打开该策略。  
   
-   请继续执行[模块 7： 测试有效的平面文件实例](../../adapters-and-accelerators/accelerator-swift/module-7-testing-a-valid-flat-file-instance.md)。
+   请继续执行[模块 7:测试的有效的平面文件实例](../../adapters-and-accelerators/accelerator-swift/module-7-testing-a-valid-flat-file-instance.md)。

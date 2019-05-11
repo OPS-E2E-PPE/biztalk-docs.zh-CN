@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 10bc0d4d0fcdb36311e0590d9ae04239db168ed7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8d783fd053281f487f6f97fa7c0d2b67879adac7
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010214"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529710"
 ---
 # <a name="user-trailers"></a>用户尾部
 用户尾部，除了 CHK 尾部是可选的当存在时，将按以下顺序发生：  
@@ -29,7 +29,7 @@ ms.locfileid: "37010214"
 |------------------|----------|  
 |MAC|消息身份验证代码|  
 |PAC|专有身份验证代码|  
-|CHK|Checksum|  
+|CHK|校验和|  
 |TNG|培训|  
 |PDE|可能的重复发出|  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ea21a06ad5d87e94118aaa45e2f6f541627aae9b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9db0cc843d67a032113e159dd5301c54e92e1be0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996927"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367445"
 ---
 # <a name="understand-biztalk-adapter-for-sql-server"></a>了解适用于 SQL Server 的 BizTalk 适配器
 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]实现面向服务的编程访问从而可以与外部系统进行交互。 适配器向客户端提供以下优势：  

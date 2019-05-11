@@ -17,12 +17,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f9a01480c5d308ffa882b2457e26548f4b5e43b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dc3fa8b96b03d4bd3376f090e5e4436e70da945a
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992854"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529813"
 ---
 # <a name="swift-disassembler-and-assembler-functionality"></a>SWIFT 反汇编程序和汇编程序功能
 SWIFT 反汇编程序可以执行以下任务中调用时[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]接收管道：  

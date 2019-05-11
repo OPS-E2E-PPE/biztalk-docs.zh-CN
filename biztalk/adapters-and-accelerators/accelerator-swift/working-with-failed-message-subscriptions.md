@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1e4cedf2d47c0bbe8e812795ad428a987d4c2014
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0244ea33744d592377261c8e532d981cc5d828aa
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014214"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529672"
 ---
 # <a name="working-with-failed-message-subscriptions"></a>使用失败的消息订阅
 当 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]拆装器进程 （分析和验证） 一条消息，它将升级该消息的属性。 如果 A4SWIFT 接收到消息的入站批处理的一部分，这些升级的属性提供的正确性和消息有效性的信息，以及与批处理相关的信息。 有关这些属性的完整列表，请参阅[A4SWIFT_ * 升级的属性](../../adapters-and-accelerators/accelerator-swift/a4swift-promoted-properties.md)。  

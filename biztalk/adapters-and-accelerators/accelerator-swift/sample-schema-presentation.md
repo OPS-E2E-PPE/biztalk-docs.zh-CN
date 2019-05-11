@@ -1,5 +1,5 @@
 ---
-title: 示例架构演示文稿 |Microsoft 文档
+title: 示例架构演示文稿 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 12b857a6cfeb1846da44036729e52bb386265a9e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 43143625da545e6a0cdc377a12733d085b8c6a67
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22213901"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530118"
 ---
 # <a name="sample-schema-presentation"></a>示例架构演示文稿
-下图显示示例 XSD 架构 SWIFT 交换。  
+下图显示了示例 XSD 架构 SWIFT 交换。  
   
  ![](../../adapters-and-accelerators/accelerator-swift/media/intro-sampleschema.gif "Intro_SampleSchema")  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [SWIFT 架构](../../adapters-and-accelerators/accelerator-swift/swift-schemas.md)

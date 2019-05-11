@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2ed57328a925496449ddd73f3c363b32f60dc811
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 27e5d96aadff9e5ed0357f20c0138c4a7581f9b5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983470"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375463"
 ---
 # <a name="insert-update-delete-or-select-operations-on-interface-tables-and-views-using-the-wcf-service-model"></a>插入、 更新、 删除或选择对界面表和视图使用 WCF 服务模型的操作
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]找到一组基本的 Insert、 Select、 Update 和 Delete 操作上的接口表。 通过使用这些操作，你可以执行简单的 Insert、 Select、 Update 和 Delete 语句由目标接口表上的 WHERE 子句限定。 本主题将说明了如何使用 WCF 服务模型执行这些操作。  
@@ -36,8 +36,8 @@ ms.locfileid: "36983470"
 
 |     项目     |                     WCF 客户端名称                      |
 |------------------|----------------------------------------------------------|
-| 接口表 | [A p p _] InterfaceTables_*[SCHEMA]\\*[TABLE_NAME] 客户端 |
-| 界面视图  |  [A p p _] InterfaceViews_*[SCHEMA]\\*[VIEW_NAME] 客户端  |
+| 接口表 | InterfaceTables_[APP_NAME]*[SCHEMA]\\*[TABLE_NAME]Client |
+| 界面视图  |  InterfaceViews_[APP_NAME]*[SCHEMA]\\*[VIEW_NAME]Client  |
 
  [A p p _] = Oracle E-business Suite 应用程序; 的实际名称例如，查找。  
 
@@ -50,12 +50,12 @@ ms.locfileid: "36983470"
 ### <a name="method-signature-for-invoking-operations-on-tables"></a>调用表操作的方法签名  
  下表显示了上一个表的基本操作的方法签名。 签名是相同的视图，只不过视图命名空间和名称替换这些表。  
 
-|运算|方法签名|  
+|操作|方法签名|  
 |---------------|----------------------|  
-|Insert|字符串插入 (InsertRecord [记录集);|  
-|选择|SelectRecord [] 选择 (string COLUMN_NAMES，字符串筛选器);|  
-|Update|字符串更新 （UpdateRecord 记录集，筛选器字符串）;|  
-|DELETE|字符串删除 （字符串筛选器）;|  
+|Insert|string Insert(InsertRecord[] RECORDSET);|  
+|选择|SelectRecord[] Select(string COLUMN_NAMES, string FILTER);|  
+|Update|string Update(UpdateRecord RECORDSET, string FILTER);|  
+|DELETE|string Delete(string FILTER);|  
 
  例如，下面的代码演示生成的 WCF 客户端类的方法签名，删除操作，插入、 选择和更新的默认应用程序架构下的 MS_SAMPLE_EMPLOYEE 接口表的操作。  
 

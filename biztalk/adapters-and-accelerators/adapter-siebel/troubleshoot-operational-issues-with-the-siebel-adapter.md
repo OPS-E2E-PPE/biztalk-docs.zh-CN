@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5d17e325465ce5aa575a6d499aa6b8bf73e07696
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d3478b1a56d8640298da8f6bcd5ca722e3244a15
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978934"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370429"
 ---
 # <a name="troubleshoot-operational-issues-with-the-siebel-adapter"></a>使用 Siebel 适配器进行的操作问题故障排除
 本部分提供有关操作问题的信息使用时可能遇到的一个集中的位置[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]。  
@@ -300,7 +300,7 @@ The element 'bindings' has invalid child element 'siebelBinding'. List of possib
   
  **解决方法**  
   
- 可以安全地忽略此警告。  
+ 可以放心地忽略此警告。  
   
 ## <a name="see-also"></a>请参阅  
 [Siebel 适配器疑难解答](../../adapters-and-accelerators/adapter-siebel/troubleshoot-the-siebel-adapter.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1f7bf6026ebd9bf506dd84b1a8c309760c38f8d6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a40ea3ecad02e248d9c4f993be53c51434751b56
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975454"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368534"
 ---
 # <a name="receive-query-notifications-after-a-receive-location-breakdown-in-sql-using-biztalk-server"></a>在 SQL 中使用 BizTalk Server 接收查询通知后接收位置中断
 请考虑了 EMPLOYEE 表发生更改时接收数据库更改通知消息的 BizTalk 应用程序的方案。 如果接收位置配置的一部分的 BizTalk 应用程序细分的同时记录添加到 EMPLOYEE 表，则收不到最近添加的记录的通知。 您还不知道当接收位置再次可用时。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]公开的绑定属性， **NotifyOnListenerStart**，可以配置为接收到通知，接收位置已恢复。 可以指定以下值： **NotifyOnListenerStart**绑定属性：  

@@ -1,5 +1,5 @@
 ---
-title: 浏览和搜索元数据中使用 WCF LOB 适配器 SDK |Microsoft 文档
+title: 浏览和搜索元数据中使用 WCF LOB 适配器 SDK |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 67f4717c8621b798ff960487dfd156c4f0934dfc
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: ccf9889f395937f5ef1f4c6b1acda6b9413fc867
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "22225669"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363846"
 ---
 # <a name="browse-and-search-metadata-using-the-wcf-lob-adapter-sdk"></a>浏览和搜索元数据中使用 WCF LOB 适配器 SDK
-本部分提供有关如何通过实现 IMetadataBrowseHandler 和 IMetadataSearchHandler，分别公开使用适配器的浏览和搜索功能的信息。  
+本部分提供有关如何通过分别实现 IMetadataBrowseHandler 和 IMetadataSearchHandler，公开与适配器的浏览和搜索功能的信息。  
   
 ## <a name="imetadatabrowsehandler"></a>IMetadataBrowseHandler  
- 当将适配器添加到项目，IMetadataBrowseHandler 允许浏览的类别和的适配器支持的操作。 这样适配器使用者若要查看在设计时，元数据信息并选择仅在客户端过程要求的操作。  
+ 当向项目添加适配器，IMetadataBrowseHandler 允许浏览的类别和适配器支持的操作。 这允许适配器使用者以查看在设计时元数据信息并选择客户端过程所需操作。  
   
- 使用时[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]或[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]将适配器添加到项目，IMetadataBrowseHandler 填充**选择协定类型**，**选择类别**，和**可用类别和操作**框。  
+ 使用时[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]或[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]若要向项目添加适配器，IMetadataBrowseHandler 填充**选择协定类型**，**中选择一个类别**，和**可用类别和操作**框。  
   
- ![浏览操作](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/b143971c-a50b-4ef2-a973-dfe4aa4fc17e.gif "b143971c-a50b-4ef2-a973-dfe4aa4fc17e")  
+ ![浏览 Operations](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/b143971c-a50b-4ef2-a973-dfe4aa4fc17e.gif "b143971c-a50b-4ef2-a973-dfe4aa4fc17e")  
   
- 下面的示例演示如何实现 IMetadataBrowseHandler。 构造一个 MetadataRetrievalNode 数组，包含的类别和的适配器支持的操作的信息。  
+ 下面的示例演示如何实现 IMetadataBrowseHandler。 它构造一个 MetadataRetrievalNode 数组，包含的类别和适配器支持的操作的信息。  
   
 ```csharp  
 public class EchoAdapterMetadataBrowseHandler : EchoAdapterHandlerBase, IMetadataBrowseHandler  
@@ -101,13 +101,13 @@ public class EchoAdapterMetadataBrowseHandler : EchoAdapterHandlerBase, IMetadat
 ```  
   
 ## <a name="imetadatasearchhandler"></a>IMetadataSearchHandler  
- 在适配器内实现 IMetadataSearchHandler 提供的功能来搜索可用操作在设计时输入的搜索词，如操作名称的一部分。 这是如果你的适配器包含许多操作，因为在输入搜索值限制返回的操作非常有用。  
+ 在适配器实现 IMetadataSearchHandler 提供输入搜索词，如操作名称的一部分，搜索在设计时可用操作的能力。 这是非常有用，如果您的适配器包含很多操作，因为您可以输入搜索值限制返回的操作。  
   
- 使用时[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]或[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]若要将适配器添加到项目，IMetadataSearchHandler 解析搜索字符串中输入**类别中的搜索**框中，并返回匹配的列表中的项**可用类别和操作**框。  
+ 使用时[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]或[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]若要向项目添加适配器，IMetadataSearchHandler 解析搜索字符串中输入**类别中的搜索**框中，并返回匹配的列表中的项**可用类别和操作**框。  
   
  ![搜索操作](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/48dc9ca6-8697-42bf-9419-5fa35a19937f.gif "48dc9ca6-8697-42bf-9419-5fa35a19937f")  
   
- 你还可以执行搜索 svcutil.exe 生成 WSDL 或代理的适配器时，通过将搜索值传递作为查询字符串中的操作的格式为值。 下面是使用 svcutil.exe 以返回回显/EchoStrings 的操作信息的示例。  
+ 您还可以执行搜索使用 svcutil.exe 生成 WSDL 或代理的适配器时，通过将搜索值作为查询字符串中的操作的格式传递 = value。 下面是使用 svcutil.exe 以返回 Echo/EchoStrings 操作信息的示例。  
   
 ```  
 svcutil.exe “echov2://lobhostname/lobapplication?enableAuthentication=False&op=Echo/EchoStrings” /target:metadata  
@@ -115,9 +115,9 @@ svcutil.exe “echov2://lobhostname/lobapplication?enableAuthentication=False&op
 ```  
   
 > [!NOTE]
->  [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]不提供默认通配符的搜索功能，例如 Echo * 或 %echo%。 负责适配器创作者能够实现通配符或模式匹配功能。  
+>  [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]不提供默认通配符的搜索功能，例如 Echo * 或 Echo %%。 负责适配器作者实现通配符或模式匹配功能。  
   
- 下面的示例演示如何实现 IMetadataSearchHandler。 构造一个 MetadataRetrievalNode 数组，包含的类别和的适配器支持的操作有关的信息。  
+ 下面的示例演示如何实现 IMetadataSearchHandler。 它构造一个 MetadataRetrievalNode 数组，包含的类别和适配器支持的操作有关的信息。  
   
 ```csharp  
 public class EchoAdapterMetadataSearchHandler : EchoAdapterHandlerBase, IMetadataSearchHandler  
@@ -189,5 +189,5 @@ public class EchoAdapterMetadataSearchHandler : EchoAdapterHandlerBase, IMetadat
     }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发活动](../../esb-toolkit/development-activities.md)

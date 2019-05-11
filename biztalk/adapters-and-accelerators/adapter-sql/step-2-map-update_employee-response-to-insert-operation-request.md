@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 将 UPDATE_EMPLOYEE 响应消息插入操作请求消息映射 |Microsoft Docs
+title: 第 2 步：将 UPDATE_EMPLOYEE 响应消息插入操作请求消息映射 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d158e0f7eed50a40d2696712bacee65a8de946a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 825eea8ba60d6b7767f9ea9b7536f8ed65470928
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009014"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367789"
 ---
-# <a name="step-2-map-the-updateemployee-response-message-to-insert-operation-request-message"></a>步骤 2： 将 UPDATE_EMPLOYEE 响应消息插入操作请求消息映射
+# <a name="step-2-map-the-updateemployee-response-message-to-insert-operation-request-message"></a>第 2 步：将 UPDATE_EMPLOYEE 响应消息插入操作请求消息映射
 ![步骤 2，共 4 步](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
 
- **完成时间：** 10 分钟  
+ **若要完成的时间：** 10 分钟。  
 
- **目标：** 在此步骤中，创建要在执行插入操作的请求消息**Purchase_Order**表，然后将映射的响应消息**UPDATE_EMPLOYEE**存储为插入操作的请求消息的过程。 这样做之后，您传递响应消息中要插入的值**Purchase_Order**表。  
+ **目标：** 在此步骤中，创建要在执行插入操作的请求消息**Purchase_Order**表，然后将映射的响应消息**UPDATE_EMPLOYEE**存储到请求的过程用于插入操作的消息。 这样做之后，您传递响应消息中要插入的值**Purchase_Order**表。  
 
-## <a name="prerequisites"></a>必要條件  
- 你必须已完成[步骤 1： 在 Purchase_Order 表的插入操作的创建请求消息](../../adapters-and-accelerators/adapter-sql/step-1-create-the-request-message-for-insert-operation-on-purchase-order-table.md)。  
+## <a name="prerequisites"></a>先决条件  
+ 你必须已完成[步骤 1:为在 Purchase_Order 表的插入操作创建请求消息](../../adapters-and-accelerators/adapter-sql/step-1-create-the-request-message-for-insert-operation-on-purchase-order-table.md)。  
 
 ### <a name="to-map-the-messages"></a>若要将消息映射  
 
@@ -56,7 +56,7 @@ ms.locfileid: "37009014"
    InsertPO(WCF.Action) = "TableOp/Insert/dbo/Purchase_Order";  
    ```  
 
-    在这里， **InsertPO**是你在中创建的消息[步骤 2： 创建 BizTalk 业务流程的消息](../../adapters-and-accelerators/adapter-sql/step-2-create-messages-for-biztalk-orchestrations.md)用于插入操作的请求消息发送**Purchase_Order**表。 在中**MessageAssignment**形状中，调用**UpdatePOMessageCreator**类，以创建请求消息。 此外，您设置请求消息的 WCF 操作。  
+    在这里， **InsertPO**是你在中创建的消息[步骤 2:为 BizTalk 业务流程创建消息](../../adapters-and-accelerators/adapter-sql/step-2-create-messages-for-biztalk-orchestrations.md)发送的插入操作的请求消息**Purchase_Order**表。 在中**MessageAssignment**形状中，调用**UpdatePOMessageCreator**类，以创建请求消息。 此外，您设置请求消息的 WCF 操作。  
 
 6. 内**构造消息**形状及**消息赋值**形状中，添加**转换**形状。  
 
@@ -92,12 +92,12 @@ ms.locfileid: "37009014"
 
      ![具有转换形状的业务流程](../../adapters-and-accelerators/adapter-sql/media/sql-adap-tut-08-map-orch.gif "sql_adap_tut_08_map_orch")  
 
-## <a name="what-did-i-just-do"></a>内容回顾  
+## <a name="what-did-i-just-do"></a>我只需做了什么？  
  在此步骤中，创建要插入到的记录的消息**Purchase_Order**表并已进行映射的响应消息**UPDATE_EMPLOYEE**为插入存储过程的请求消息操作。  
 
 ## <a name="next-steps"></a>后续步骤  
- 发送请求消息上执行插入操作**Purchase_Order**表并接收响应，如中所述[步骤 3： 将请求消息发送到插入记录和接收响应](../../adapters-and-accelerators/adapter-sql/step-3-send-the-request-message-to-insert-records-and-receive-a-response.md)。  
+ 发送请求消息上执行插入操作**Purchase_Order**表并接收响应，如中所述[步骤 3:发送要插入记录，并接收响应的请求消息](../../adapters-and-accelerators/adapter-sql/step-3-send-the-request-message-to-insert-records-and-receive-a-response.md)。  
 
 ## <a name="see-also"></a>请参阅  
- [步骤 1： 在 Purchase_Order 表的插入操作创建请求消息](../../adapters-and-accelerators/adapter-sql/step-1-create-the-request-message-for-insert-operation-on-purchase-order-table.md)   
+ [步骤 1：为在 Purchase_Order 表的插入操作创建请求消息](../../adapters-and-accelerators/adapter-sql/step-1-create-the-request-message-for-insert-operation-on-purchase-order-table.md)   
  [第 4 课：在采购订单表中执行插入操作](../../adapters-and-accelerators/adapter-sql/lesson-4-perform-an-insert-operation-on-the-purchase-order-table.md)

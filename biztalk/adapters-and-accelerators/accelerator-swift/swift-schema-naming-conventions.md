@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dabd9796497bdd5b81d34f71c01124f26de203d9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f173b1d2e424a111e4657c0b0d943aee932ac21b
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987422"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529731"
 ---
 # <a name="swift-schema-naming-conventions"></a>SWIFT 架构命名约定
 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]包括架构用于社会用于全球 Interbank 金融电信 (SWIFT) FIN 消息使用 BizTalk 编辑器创建的。 这两个架构符合在整个的以下约定：  
@@ -54,7 +54,7 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
   
 - xmlns:xs="<http://www.w3.org/2001/XMLSchema>". 这是默认 W3C XML 架构命名空间。  
   
-- xmlns:b ="<http://schemas.microsoft.com/BizTalk/2003>"。 这是默认的 BizTalk 命名空间。  
+- xmlns:b="<http://schemas.microsoft.com/BizTalk/2003>". 这是默认的 BizTalk 命名空间。  
   
   每个消息架构直接引用的基类型和通用数据类型架构。  
   

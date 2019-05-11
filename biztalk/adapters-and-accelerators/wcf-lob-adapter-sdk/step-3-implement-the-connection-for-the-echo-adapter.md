@@ -1,5 +1,5 @@
 ---
-title: 步骤 3： 实现 Echo 适配器的连接 |Microsoft Docs
+title: 步骤 3：实现 Echo 适配器的连接 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 15749fdca84508654fc915fff0c1abe7008de2f3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fb452db2e3bd2728ff6b7e9fe5ba3879d3efc41e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988406"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363216"
 ---
-# <a name="step-3-implement-the-connection-for-the-echo-adapter"></a>步骤 3： 实现 Echo 适配器的连接
+# <a name="step-3-implement-the-connection-for-the-echo-adapter"></a>步骤 3：实现 Echo 适配器的连接
 ![第 3 部分，共 9 步](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-3of9.gif "Step_3of9")  
 
- **完成时间：** 45 分钟  
+ **若要完成的时间：** 45 分钟  
 
  在此步骤中，将实现 Echo 适配器的连接功能。 根据[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，连接到目标系统时，必须实现以下抽象类和接口。  
 
@@ -36,8 +36,8 @@ ms.locfileid: "36988406"
 
   在以下部分中，您将更新这些 3 个类来更好地理解如何处理连接、 URI 结构是什么，以及如何以编程方式检索各种 URI 元素，并使用该适配器中的这些元素。  
 
-## <a name="prerequisites"></a>必要條件  
- 在开始此步骤之前，你必须已成功完成[步骤 2： 将适配器和连接属性分类](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md)。 并且您应清楚地了解`Microsoft.ServiceModel.Channels.Common.IConnection`， `Microsoft.ServiceModel.Channels.Common.IConnectionFactory`，和`Microsoft.ServiceModel.Channels.Common.ConnectionUri`类。  
+## <a name="prerequisites"></a>先决条件  
+ 在开始此步骤之前，你必须已成功完成[步骤 2:将适配器和连接属性分类](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md)。 并且您应清楚地了解`Microsoft.ServiceModel.Channels.Common.IConnection`， `Microsoft.ServiceModel.Channels.Common.IConnectionFactory`，和`Microsoft.ServiceModel.Channels.Common.ConnectionUri`类。  
 
 ## <a name="connection-related-classes"></a>与连接相关的类  
  [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)]生成三个派生的类、 EchoAdapterConnection、 EchoAdapterConnectionUri 和 EchoAdapterConnectionFactory。 下面提供了与每个关联方法的简要概述。  
@@ -45,13 +45,13 @@ ms.locfileid: "36988406"
 ### <a name="echoadapterconnection"></a>EchoAdapterConnection  
  具体取决于适配器的复杂性，可能需要实现所有以下五种方法。 对于 Echo 适配器，大多数都不支持的因为 Echo 适配器示例不涉及任何目标系统。  
 
-|**方法**|**Description**|  
+|**方法**|**说明**|  
 |----------------|---------------------|  
 |public void 关闭 （TimeSpan 超时）|关闭到目标系统的连接。 Echo 适配器使用此方法仅将跟踪事件添加到跟踪侦听器。|  
-|公共 bool IsValid （TimeSpan 超时）|返回一个值，该值指示连接是否仍有效。<br /><br /> 不支持 Echo 适配器。|  
+|public bool IsValid(TimeSpan timeout)|返回一个值，该值指示连接是否仍有效。<br /><br /> 不支持 Echo 适配器。|  
 |public void 打开 （TimeSpan 超时）|将打开与目标系统的连接。<br /><br /> Echo 适配器的不适用。 但是，该示例演示您如何使用名为 enableAuthentication URI 元素要求用户提供的用户名。|  
 |public void ClearContext()|清除连接的上下文。 当连接重新设置为连接池时，调用此方法。<br /><br /> 不支持 Echo 适配器。|  
-|public void abort （)|中止连接到目标系统。<br /><br /> 不支持 Echo 适配器。|  
+|public void Abort()|中止连接到目标系统。<br /><br /> 不支持 Echo 适配器。|  
 
 ### <a name="echoadapterconnectionfactory"></a>EchoAdapterConnectionFactory  
  连接工厂负责创建连接。 默认情况下，您必须修改此类，仅当连接到目标系统时。 尽管 Echo 适配器不涉及任何目标系统，它显示了您如何使用名为 enableAuthentication，如果你的连接需要用户身份验证的自定义 URI 元素。  
@@ -63,7 +63,7 @@ ms.locfileid: "36988406"
  这表示在目标系统的连接字符串。  
 
 
-|               **方法**               |                                                                                                                                       **Description**                                                                                                                                        |
+|               **方法**               |                                                                                                                                       **说明**                                                                                                                                        |
 |----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |        公共重写 Uri Uri         |                                                                                                    获取和设置的 Uri。 获取生成的 Uri 字符串并设置要分析的 Uri 字符串。                                                                                                     |
 |   public EchoAdapterConnectionUri()    |                                                                                                                    初始化 ConnectionUri 类的新实例。                                                                                                                    |
@@ -72,7 +72,7 @@ ms.locfileid: "36988406"
  ![](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/e4b9d0b8-f07f-4342-815f-9ef1507b0980.gif "e4b9d0b8-f07f-4342-815f-9ef1507b0980")  
 
 ## <a name="echo-adapter-connection-uri"></a>Echo 适配器连接 URI  
- URI 被描述为示例 Echo 适配器连接： EchoAapter.SCHEME://{hostname}/{application}?enableAuthentication={true&#124;false}  
+ 示例 Echo 适配器连接 URI 被描述为：EchoAapter.SCHEME://{hostname}/{application}?enableAuthentication={true&#124;false}  
 
  由于 EchoAapter.SCHEME echov2，连接 URI 是指：  
 
@@ -326,7 +326,7 @@ ms.locfileid: "36988406"
 7.  在“生成”  菜单上，单击“生成解决方案” 。 您应该已成功编译项目。 如果没有，请确保您已按照上述每个步骤。  
 
 > [!NOTE]
->  保存所做的工作。 可以安全地关闭 Visual Studio 或转到下一步[步骤 4： 实现 Echo 适配器的元数据浏览处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md)。  
+>  保存所做的工作。 可以安全地关闭 Visual Studio 或转到下一步，[步骤 4:实现 Echo 适配器的元数据浏览处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md)。  
 
 ## <a name="what-did-i-just-do"></a>我只需做了什么？  
  实现 Echo 适配器的连接。 您学习了的连接组件[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]、 连接 URI 的基本结构、 如何以编程方式分析 URI 元素，以及如何使用 URI 元素，若要更改适配器功能。  
@@ -335,5 +335,5 @@ ms.locfileid: "36988406"
  您实现元数据浏览、 搜索和解析功能和出站消息交换。 最后，您生成并部署该适配器。  
 
 ## <a name="see-also"></a>请参阅  
- [步骤 4： 实现 Echo 适配器的元数据浏览处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md)   
- [教程 1：开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)
+ [步骤 4：实现 Echo 适配器的元数据浏览处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-implement-the-metadata-browse-handler-for-the-echo-adapter.md)   
+ [教程 1:开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)

@@ -1,5 +1,5 @@
 ---
-title: 教程 4： 迁移 SAP 接收 IDOC BizTalk 项目 |Microsoft Docs
+title: 教程 4:迁移 SAP 接收 IDOC BizTalk 项目 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e943c3663767d2b684b0f4657f639d752705b86f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a1bfb0205464a5c7163c3ebc61e1ee4c53139278
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011254"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372299"
 ---
-# <a name="tutorial-4-migrating-an-sap-receive-idoc-biztalk-project"></a>教程 4： 迁移 SAP 接收 IDOC BizTalk 项目
+# <a name="tutorial-4-migrating-an-sap-receive-idoc-biztalk-project"></a>教程 4:迁移 SAP 接收 IDOC BizTalk 项目
 SAP 适配器随 Microsoft BizTalk Server 的以前版本不同于基于 WCF 的[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]在许多方面，包括：  
   
 - 创建 BizTalk 项目的设计时体验。  
@@ -50,7 +50,7 @@ SAP 适配器随 Microsoft BizTalk Server 的以前版本不同于基于 WCF 的
 ## <a name="sample-used-for-the-tutorial"></a>本教程使用示例  
  基于本教程演示如何从 SAP 系统接收平面文件 IDOC 的 vPrev BizTalk 项目迁移的示例 (ReceiveIDOC_Migration)。 使用提供了示例[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。 有关详细信息，请参阅[适配器示例](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
   
 -   必须有一个 vPrev BizTalk 项目。 本教程涉及到从 SAP 系统接收 ORDERS03 IDOC BizTalk 项目。  
   
@@ -75,7 +75,7 @@ SAP 适配器随 Microsoft BizTalk Server 的以前版本不同于基于 WCF 的
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [步骤 1：生成和部署 vPrev BizTalk 项目来接收 IDOC](../../adapters-and-accelerators/adapter-sap/step-1-build-and-deploy-the-vprev-biztalk-project-for-receiving-an-idoc.md)  
+-   [步骤 1：生成和部署 vPrev BizTalk 项目以接收 IDOC](../../adapters-and-accelerators/adapter-sap/step-1-build-and-deploy-the-vprev-biztalk-project-for-receiving-an-idoc.md)  
   
 -   [步骤 2：配置 WCF 自定义单向接收端口](../../adapters-and-accelerators/adapter-sap/step-2-configure-a-wcf-custom-one-way-receive-port.md)  
   

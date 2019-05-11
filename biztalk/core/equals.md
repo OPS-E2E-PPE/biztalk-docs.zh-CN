@@ -1,5 +1,5 @@
 ---
-title: 等于 |Microsoft 文档
+title: Equals | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b82ac5c779dc6b4d3624b48cebe9df1bc3d1966
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e376445e8349663ab6196e99f9f31df8e5c1e139
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239813"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530735"
 ---
 # <a name="equals"></a>等于
-删除堆栈最上方的两项，比较这两项，然后将结果推送到堆栈上。  
+从堆栈中移除的前两个项、 进行比较的两个项目，然后将推送到堆栈上的结果。  
   
 ## <a name="syntax"></a>语法  
   
@@ -30,15 +30,15 @@ ms.locfileid: "22239813"
 ```  
   
 #### <a name="parameters"></a>Parameters  
- 堆栈最上方的两项。  
+ 在堆栈上前两个项。  
   
 ## <a name="pushed-value"></a>推送的值  
- 比较操作的字符串结果。  
+ 字符串比较操作的结果。  
   
-## <a name="remarks"></a>注释  
+## <a name="remarks"></a>备注  
   
 ## <a name="example"></a>示例  
- 下面的示例筛选器表达式使用**等于**操作进行比较到常量"CheckPO"的当前活动名称。 如果两者相等，则表达式的计算结果为 `true`。  
+ 下面的示例筛选器表达式使用**等于**操作以比较当前的活动名称与常数"CheckPO"。 如果两者相等，该表达式计算结果为`true`。  
   
 ```  
 <ic:Filter>  
@@ -52,19 +52,19 @@ ms.locfileid: "22239813"
 </ic:Filter>  
 ```  
   
- 执行比较时，如果您在 C# 中写入语句，则可以确切地指引您生成表达式。 例如，您可能要比较三个值；可在 C# 中会写入类似如下的语句：  
+ 你可能想要完全按照您写入语句，则生成表达式C#执行比较时。 例如，你可能想要比较三个值;在C#需要编写类似：  
   
 ```  
 bool res = a == b == c;  
 ```  
   
- 但是，作为表达式筛选器的模型，此语句有些短。 因此，可以考虑下面修改后（但等效）的语句：  
+ 但是，表达式筛选器的模型作为此语句有些短。 相反，请考虑修改后 （但等效） 语句：  
   
 ```  
 Bool res = (a == b) && (a == c);  
 ```  
   
- 这与您用来执行比较的筛选器表达式更加匹配。 有关更多详细信息及示例，请参阅[和](../core/and.md)。  
+ 这与将用于执行比较的筛选器表达式更加匹配。 有关更多详细信息和示例，请参阅[和](../core/and.md)。  
   
-## <a name="see-also"></a>另请参阅  
- [拦截器操作](../core/interceptor-operations.md)
+## <a name="see-also"></a>请参阅  
+ [侦听器运算](../core/interceptor-operations.md)

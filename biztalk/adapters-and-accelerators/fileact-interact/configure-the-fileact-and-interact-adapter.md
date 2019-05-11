@@ -12,18 +12,18 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2d62e4cf0896e755a0ec8ece00d6a2140210b463
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0fa2cb8756ce5d00109fbb17d042f43ec4a782b5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974598"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367278"
 ---
 # <a name="configure-the-fileact-and-interact-adapter"></a>配置 FileAct 和 InterAct 适配器
 配置使用的不同项目[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]运行时。 
 
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
    
 - 安装 [!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]
   
@@ -31,13 +31,13 @@ ms.locfileid: "36974598"
   
 - 确认 SQL Server 正在运行
   
-## <a name="step-1-configure-the-fileact-and-interact-adapter"></a>步骤 1： 配置 FileAct 和 InterAct 适配器  
+## <a name="step-1-configure-the-fileact-and-interact-adapter"></a>第 1 步：配置 FileAct 和 InterAct 适配器  
   
 1.  在中**Microsoft BizTalk FileAct 和交互适配器配置**向导中，转到**概述**。 在左窗格中，选择**运行时**配置适配器运行时组件。  
   
 2.  在中**运行时配置**下**帐户**，选择省略号 [...] 输入 COM plus 存储和转发模式配置。  
   
-3.  在中**用户凭据**，输入用户名称 (在*域 \ 用户名*格式) 和 COM plus 配置中使用的帐户的密码。 选择“确定”。  
+3.  在中**用户凭据**，输入用户名称 (在*域 \ 用户名*格式) 和 COM plus 配置中使用的帐户的密码。 选择 **确定**。  
   
     > [!NOTE]
     >  一个**用户凭据**如果您输入的帐户有建议的更高权限，将显示警告。 选择**是**以继续。
@@ -55,7 +55,7 @@ ms.locfileid: "36974598"
 
 接下来，创建要运行这些适配器的主机和主机实例。
 
-## <a name="step-2-create-the-host-and-host-instances"></a>步骤 2： 创建主机和主机实例
+## <a name="step-2-create-the-host-and-host-instances"></a>第 2 步：创建主机和主机实例
 
 我们建议你创建的专用的主机的 FileAct 适配器和 InterAct 适配器的单独的专用的主机。 对于每个适配器，创建至少一个主机实例。  
 
@@ -63,7 +63,7 @@ ms.locfileid: "36974598"
 
 创建后下, 一步是添加发送处理程序，并使用客户端消息合作伙伴创建 SWIFT 联盟网关 （压降） 中。
 
-## <a name="step-3-create-the-send-handler"></a>步骤 3： 创建的发送处理程序
+## <a name="step-3-create-the-send-handler"></a>步骤 3：创建发送处理程序
 
 使用 FileAct 和 InterAct 发送处理程序属性的发送端口配置值，如果在单个 FileAct 上未设置的属性或 InterAct 发送端口。 
   
@@ -91,7 +91,7 @@ ms.locfileid: "36974598"
 
 接下来，输入 SWIFTNet paramfile 中的服务器消息合作伙伴，若要启用 FileAct 和 InterAct 接收适配器。
   
-## <a name="step-4-configure-the-swiftnet-param-file"></a>步骤 4： 配置 SWIFTNet 参数文件
+## <a name="step-4-configure-the-swiftnet-param-file"></a>步骤 4：配置 SWIFTNet param 文件
 
 若要启用 FileAct 和 InterAct 接收适配器初始化的值，必须在 SWIFTNet paramfile 中输入合作伙伴在压降中创建的服务器消息。 Paramfile 通常位于`c:\SWIFTAlliance\RA\<remote access instance name\>\cfg\paramfile`。 配置 paramfile 后，开始**SnlReceiver.exe**。  
   
@@ -126,14 +126,14 @@ ms.locfileid: "36974598"
 
     1.  在桌面上，选择**远程 API**图标以打开远程 API 的命令提示符。  
   
-    2.  在命令提示符处，键入`Swiftnet start`。 选择 enter 键以启动 SnlReceiver.exe。  
+    2.  在命令提示符下键入 `Swiftnet start`。 选择 enter 键以启动 SnlReceiver.exe。  
   
-    3.  在命令提示符处，键入`Swiftnet stop`。 选择 ENTER 以停止 SnlReceiver.exe。  
+    3.  在命令提示符下键入 `Swiftnet stop`。 选择 ENTER 以停止 SnlReceiver.exe。  
 
   
 接下来，更新文件**autoexec.bat**来设置环境变量的 SWIFT。
 
-## <a name="step-5-update-autoexecbat-to-configure-the-receive-adapters"></a>步骤 5： 更新 autoexec.bat 若要配置的接收适配器
+## <a name="step-5-update-autoexecbat-to-configure-the-receive-adapters"></a>步骤 5：若要配置的接收适配器的更新 autoexec.bat
 
 更新**autoexec.bat**文件以将 SWIFT 环境变量设置的计算机上的安装位置[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]接收适配器。 从已安装在路径中的接收适配器的系统生成的环境变量`c:\SWIFTAlliance`与名为的接收适配器的实例**Ra1**。 更新你的配置适当的 SWIFT 环境变量。  
   

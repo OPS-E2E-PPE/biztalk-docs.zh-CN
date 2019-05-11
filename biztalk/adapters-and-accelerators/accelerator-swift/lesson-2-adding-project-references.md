@@ -1,5 +1,5 @@
 ---
-title: 第 2 课： 添加项目引用 |Microsoft Docs
+title: 第 2 课：添加项目引用 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1e7ade122e725c07772dba431bd364bc8f933b82
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c339baa026508cc520b96480a57e55dd6c86b915
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969694"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530360"
 ---
-# <a name="lesson-2-adding-project-references"></a>第 2 课： 添加项目引用
+# <a name="lesson-2-adding-project-references"></a>第 2 课：添加项目引用
 使管道能够访问位于 Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.dll 文件中的默认运行时架构添加项目引用。 此程序集文件包含标头架构已升级的属性所需的消息类型解析。  
   
  拆装组件添加到接收管道时供以后参考标头架构。  
@@ -50,4 +50,4 @@ ms.locfileid: "36969694"
   
 3. 上**文件**菜单上，单击**全部保存**以保存所做的更改。  
   
-   请继续执行[第 3 课： 添加自定义接收管道](../../adapters-and-accelerators/accelerator-swift/lesson-3-adding-a-custom-receive-pipeline.md)。
+   请继续执行[第 3 课：添加自定义接收管道](../../adapters-and-accelerators/accelerator-swift/lesson-3-adding-a-custom-receive-pipeline.md)。

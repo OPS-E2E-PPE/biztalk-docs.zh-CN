@@ -16,12 +16,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 543445fe6958a156894bb6c0d268d9b3b5814b23
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3e25e8af2bd192495108204ded53b682333d64f8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022659"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370497"
 ---
 # <a name="syntax-for-a-select-statement-in-siebel"></a>在 Siebel 中的 SELECT 语句的语法
 使用[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]，ADO.NET 客户端可以通过指定 WHERE 子句表示有效的 Siebel 搜索规范 Siebel 业务组件上执行的 SELECT 查询。 SELECT 语句的语法是：  

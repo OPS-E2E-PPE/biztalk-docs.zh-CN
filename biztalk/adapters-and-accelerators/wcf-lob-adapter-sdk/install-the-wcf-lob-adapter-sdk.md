@@ -12,12 +12,12 @@ caps.latest.revision: 40
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 95fba9830bd97dd619cd16d18c0363a4525d1397
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a0987052ec5c29b321fdef8ec82a57ab582950dc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999702"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363643"
 ---
 # <a name="install-the-wcf-lob-adapter-sdk"></a>安装 WCF LOB 适配器 SDK
 安装和配置[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]。 
@@ -28,18 +28,18 @@ ms.locfileid: "36999702"
 > [!NOTE]
 > **有关支持的版本的列表**，请参阅： 
 > 
-> [BizTalk Server 2016 的硬件和软件要求](../../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)  
+> [硬件和软件要求适用于 BizTalk Server 2016](../../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)  
 > [BizTalk Server 2013 和 2013 R2 的硬件和软件要求](../../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2013-and-2013-r2.md)
 
 |                                                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                         Windows                                          | x86 或 x64 <br/><br/>所需的 OS 资源包括：<br/> <ul><li>支持 OleTx 事务所所需的 Microsoft 分布式事务处理协调器 (MSDTC):</li><li>支持可靠消息传递所需的消息队列 (MSMQ):</li><li>Internet Information Services (IIS): 需要你想要托管在 IIS 中的应用程序</li><li>Windows 进程激活服务 (WAS): 需要你想要承载在 WAS 中的应用程序</li></ul> |
+|                                         Windows                                          | x86 或 x64 <br/><br/>所需的 OS 资源包括：<br/> <ul><li>Microsoft 分布式事务处理协调器 (MSDTC):支持 OleTx 事务所需</li><li>消息队列 (MSMQ):支持可靠消息传递所需</li><li>Internet 信息服务 (IIS):如果你想要托管在 IIS 中的应用程序所需</li><li>Windows 进程激活服务 (WAS):如果你想要承载在 WAS 中的应用程序所需</li></ul> |
 |                             Windows Communication Foundation                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |        [!INCLUDE[btsDotNetFramework_md](../../includes/btsdotnetframework-md.md)]        |                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |       [!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]       |                                                                                                                                     如果要构建自定义适配器，或使用开发使用适配器的解决方案生成所需[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。                                                                                                                                      |
 | [!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)] |                                                                                                                                                                 如果在使用与适配器需要[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。                                                                                                                                                                 |
 
-## <a name="install"></a>Install
+## <a name="install"></a>安装
 
 > [!IMPORTANT]
 > * 关闭 Visual Studio 的所有实例
@@ -51,7 +51,7 @@ ms.locfileid: "36999702"
 
 3. 上**欢迎**屏幕上，选择**下一步**。  
 
-4. 接受许可协议，然后选择“下一步”。  
+4. 接受许可协议，然后选择**下一步**。  
 
 5. 在中**选择安装类型**，选择安装类型：  
 
@@ -81,7 +81,7 @@ ms.locfileid: "36999702"
 
 5. 如果您选择修改安装：  
 
-   1.  选择“下一步” 。  
+   1.  选择“**下一步**”。  
 
    2.  选择**更改**，然后选择**完成**。  
 

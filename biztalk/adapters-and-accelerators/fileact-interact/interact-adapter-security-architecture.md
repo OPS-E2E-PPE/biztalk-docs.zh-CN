@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8fb4234c72ad1d44fd1ca157ae031a73e2dbbd9a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 445f62df17c45b80d7be83b9e9283f091e797fb5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971846"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65366656"
 ---
 # <a name="interact-adapter-security-architecture"></a>InterAct 适配器安全体系结构
 使用 SWIFTNet 链接 (SNL) 和 SWIFTAlliance 网关 （压降） 中固有的证书和加密功能来实现消息传输和接收的安全性。 SWIFT 建议服务设计为将"端到端"签名应用的交互 — 即，登录请求和响应消息。  

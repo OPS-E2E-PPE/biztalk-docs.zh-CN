@@ -1,5 +1,5 @@
 ---
-title: 程序集错误 |Microsoft 文档
+title: 程序集错误 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cd20b640f4e9ed9181ef434ee7de4bf00db99786
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 619204ab8a6ed2435ca89d85adeab11212e3f655
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230053"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530661"
 ---
 # <a name="assembly-errors"></a>程序集错误
-本部分包含诊断和解决 WCF 程序集错误的详细信息。  
+本部分包含有关诊断和解决 WCF 程序集错误的详细的信息。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [找不到文件反映 BizTalk 程序集时出现异常](../core/a-file-not-found-exception-occurred-while-reflecting-a-biztalk-assembly.md)  
+-   [反射 BizTalk 程序集时发生异常，未找到某个文件](../core/a-file-not-found-exception-occurred-while-reflecting-a-biztalk-assembly.md)  
   
--   [反映 BizTalk 程序集时发生安全异常](../core/a-security-exception-occurred-while-reflecting-a-biztalk-assembly.md)  
+-   [反射 BizTalk 程序集时发生安全异常](../core/a-security-exception-occurred-while-reflecting-a-biztalk-assembly.md)  
   
 -   [加载程序集时出错](../core/error-loading-assembly.md)  
   
--   [有没有业务流程的公共端口接收此 BizTalk 程序集中](../core/there-are-no-orchestrations-with-public-receive-ports-in-this-biztalk-assembly.md)  
+-   [此 BizTalk 程序集未包含具有公共接收端口的业务流程](../core/there-are-no-orchestrations-with-public-receive-ports-in-this-biztalk-assembly.md)  
   
 -   [无法加载程序集](../core/unable-to-load-assembly.md)

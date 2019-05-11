@@ -12,17 +12,17 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 383677a743e2cb54ce884e7aa68c12d58240dddb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d728c4b7c3cc6ee97bc02c2b77fba3eff0339096
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996846"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362389"
 ---
 # <a name="a4swift-accelerator"></a>A4SWIFT 加速器
-在安装 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../includes/btaa4swift2-3abbrevnonumber-md.md)] 加速器以使用消息修复和提交请求 (MRSR) 方案时，可以使用以下 SharePoint 版本：  
+安装时[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../includes/btaa4swift2-3abbrevnonumber-md.md)]加速器以使用消息修复和提交请求 (MRSR) 方案，以下 SharePoint 版本可用：  
   
-- 带有 SP1/SP2 的 [!INCLUDE[btsWinSharePointSvcsNoVersion](../includes/btswinsharepointsvcsnoversion-md.md)] 3.0  
+- [!INCLUDE[btsWinSharePointSvcsNoVersion](../includes/btswinsharepointsvcsnoversion-md.md)] 3.0 SP1/sp2  
   
 - SharePoint Server 2010  
   

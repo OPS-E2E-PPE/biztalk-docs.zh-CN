@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 05ce43db33101dfc3849743e8480e66a8fd76f53
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 607a9188d53c1f18e40c04f6b7f692098dfc738c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023291"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369311"
 ---
 # <a name="invoke-stored-procedures-in-sql-using-the-wcf-service-model"></a>调用中使用 WCF 服务模型的 SQL 存储过程
 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]作为操作适配器客户端可以调用来调用存储的过程在 WCF 客户端上发现的存储的过程。 如何存储的过程返回的结果集为基础，适配器将分类为所有存储的过程：  

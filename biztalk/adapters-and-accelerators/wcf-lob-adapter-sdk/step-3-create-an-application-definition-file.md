@@ -1,5 +1,5 @@
 ---
-title: 步骤 3： 创建应用程序定义文件 |Microsoft Docs
+title: 步骤 3：创建应用程序定义文件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e7a5e2919a4cfed649342fda82435211b059206d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 455a4423a1fe420ec9a46fe8cb8236086e3f4309
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988214"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363252"
 ---
-# <a name="step-3-create-an-application-definition-file"></a>步骤 3： 创建应用程序定义文件
+# <a name="step-3-create-an-application-definition-file"></a>步骤 3：创建应用程序定义文件
 ![步骤 3，共 4 步](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")  
   
- **完成时间：** 15 分钟  
+ **若要完成的时间：** 15 分钟  
   
  Microsoft Office SharePoint Server 中的业务数据目录功能公开，并将业务线 (LOB) 应用程序中的数据合并到门户。 若要将此数据合并到您的门户网站，必须生成可以使用 Microsoft Office SharePoint Server 应用程序定义文件。  
   
@@ -30,8 +30,8 @@ ms.locfileid: "36988214"
   
  要创建的 Microsoft Office SharePoint Server 应用程序的用途是允许您调用 Echo 适配器的 EchoGreetings 方法并使用 SharePoint Web 部件将响应返回。  
   
-## <a name="prerequisites"></a>必要條件  
- 您应当已完成[步骤 2： 将 Web 项目部署](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-deploy-the-web-project.md)。 您还必须访问到 Business Data Catalog Definition Editor，作为 Microsoft Office SharePoint Server 2007 SDK 的一部分安装。 你可以下载从 SDK [ http://go.microsoft.com/fwlink/?LinkId=104130 ](http://go.microsoft.com/fwlink/?LinkId=104130)。  
+## <a name="prerequisites"></a>先决条件  
+ 您应当已完成[步骤 2:将 Web 项目部署](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-deploy-the-web-project.md)。 您还必须访问到 Business Data Catalog Definition Editor，作为 Microsoft Office SharePoint Server 2007 SDK 的一部分安装。 你可以下载从 SDK [ http://go.microsoft.com/fwlink/?LinkId=104130 ](http://go.microsoft.com/fwlink/?LinkId=104130)。  
   
 ## <a name="creating-an-application-definition-file"></a>创建应用程序定义文件  
  本主题提供创建在 IIS 中承载的 WCF 适配器与连接的 SharePoint 业务数据目录应用程序定义文件的分步说明。  
@@ -59,7 +59,7 @@ ms.locfileid: "36988214"
      ![实体名称](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/942e7853-451e-4cf5-8884-09fb7d8dc19d.gif "942e7853-451e-4cf5-8884-09fb7d8dc19d")  
   
 ## <a name="specify-user-name-and-password-headers-for-the-method"></a>该方法为指定的用户名和密码标头  
- 在调用 WCF 适配器时，可能需要提供用户凭据将传递到 LOB 系统。 在中[步骤 1： 使用适配器服务开发向导创建 Web 项目](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-1-use-the-adapter-service-development-wizard-to-create-the-web-project.md)，配置 Echo 适配器需要的 MyUserHeader 和 MyPassHeader 字段中提供的用户名和密码信息。 现在必须使用此应用程序定义文件的相同字段名称。  
+ 在调用 WCF 适配器时，可能需要提供用户凭据将传递到 LOB 系统。 在[步骤 1:使用适配器服务开发向导创建 Web 项目](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-1-use-the-adapter-service-development-wizard-to-create-the-web-project.md)，配置 Echo 适配器需要的 MyUserHeader 和 MyPassHeader 字段中提供的用户名和密码信息。 现在必须使用此应用程序定义文件的相同字段名称。  
   
 #### <a name="to-specify-user-name-and-password-headers"></a>若要指定用户名称和密码标头  
   
@@ -145,9 +145,9 @@ ms.locfileid: "36988214"
     |--------------|-------------|  
     |**id**|GUID 值，例如 27829ed4 583a-40 c 4 ad87 fb8cdd9dc98d。|  
     |**sentDateTime**|当前日期和时间，例如 05/15/08 上午 9:12 点|  
-    |**FirstName**|第一个|  
-    |**MiddleName**|Middle|  
-    |**姓氏**|上一次|  
+    |**firstName**|第一个|  
+    |**middleName**|中间|  
+    |**lastName**|上一次|  
   
      ![默认参数](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/70250957-9680-48ce-8bce-420ff18bb47a.gif "70250957-9680-48ce-8bce-420ff18bb47a")  
   
@@ -159,11 +159,11 @@ ms.locfileid: "36988214"
   
 2.  将文件另存 EchoWS.xml。  
   
-## <a name="what-did-i-just-do"></a>内容回顾  
+## <a name="what-did-i-just-do"></a>我只需做了什么？  
  Business Data Catalog Definition Editor 工具具有用于创建可以导入到 Microsoft Office SharePoint Server 2007，以便与您在 IIS 中承载的适配器的连接应用程序定义文件。  
   
 ## <a name="next-steps"></a>后续步骤  
- 现在，您必须创建 SharePoint 应用程序根据在此步骤中创建的应用程序定义文件。 请参阅[步骤 4： 创建 Sharepoint 应用程序以访问适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-create-a-sharepoint-application-to-access-the-adapter.md)有关的说明。  
+ 现在，您必须创建 SharePoint 应用程序根据在此步骤中创建的应用程序定义文件。 请参阅[步骤 4:创建 Sharepoint 应用程序以访问适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-4-create-a-sharepoint-application-to-access-the-adapter.md)有关的说明。  
   
 ## <a name="see-also"></a>请参阅  
  [教程 3：在 IIS 中托管 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-3-hosting-the-echo-adapter-in-iis.md)

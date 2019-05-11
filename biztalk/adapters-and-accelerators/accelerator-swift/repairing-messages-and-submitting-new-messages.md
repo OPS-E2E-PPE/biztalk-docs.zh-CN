@@ -20,12 +20,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 569ab44588c2bd89c3533af8cc765e58f743a229
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 569d1da0e402d088f9b220f0d7645202dd83f832
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003310"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530216"
 ---
 # <a name="repairing-messages-and-submitting-new-messages"></a>修复消息和提交新消息
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] 消息修复和新提交，可修复未通过 XML 或业务规则引擎验证一条消息。 修复过程包括验证和审批步骤，以确保准确性和消息修复的适合程度。 使用 Microsoft 执行此过程[!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)] [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] MRSR 站点内的窗体。  

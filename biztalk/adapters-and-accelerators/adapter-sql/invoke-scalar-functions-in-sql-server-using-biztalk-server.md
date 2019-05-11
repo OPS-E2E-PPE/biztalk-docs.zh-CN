@@ -12,17 +12,17 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa7ad0d193f3445fd751c7893277588348342802
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7f397e75af2be48d2edce9792d61c15bae142e3e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979046"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369374"
 ---
 # <a name="invoke-scalar-functions-in-sql-server-using-biztalk-server"></a>调用 SQL Server 使用 BizTalk Server 中的标量函数
 可以使用[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]与[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]来调用 SQL Server 中的标量函数。 该适配器将标量函数公开为可直接在 SQL Server 调用的操作。 有关如何在适配器支持标量函数的详细信息，请参阅[执行 SQL Server 使用 SQL 适配器中的标量函数](../../adapters-and-accelerators/adapter-sql/execute-scalar-functions-in-sql-server-using-the-sql-adapter.md)。 用于调用标量函数的 SOAP 消息的结构有关的信息，请参阅[过程和函数的消息架构](../../adapters-and-accelerators/adapter-sql/message-schemas-for-procedures-and-functions.md)。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
   
 - 创建[强名称密钥文件，并了解相关工具](prerequisites-to-create-sql-applications-using-the-sql-adapter.md)
   
@@ -51,7 +51,7 @@ ms.locfileid: "36979046"
  若要演示如何调用标量函数，为 GET_EMP_ID 标量函数生成架构。 必须创建一个 BizTalk 项目，并使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]生成的架构。 请参阅[检索用于在 Visual Studio 中的 SQL Server 操作的元数据](../../adapters-and-accelerators/adapter-sql/get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter.md)有关如何生成架构的详细信息。  
   
 ## <a name="define-messages-and-message-types"></a>定义消息和消息类型  
- 你之前生成的架构描述了业务流程中的消息所需的“类型”。 一条消息通常是一个变量，要为其类型定义由相应的架构。 现在，为业务流程中，创建消息并将其链接到上一步中生成的架构。    
+ 先前生成的架构描述业务流程中的消息所需的"类型"。 一条消息通常是一个变量，要为其类型定义由相应的架构。 现在，为业务流程中，创建消息并将其链接到上一步中生成的架构。    
  
 1.  向 BizTalk 项目添加业务流程。 从解决方案资源管理器，右键单击 BizTalk 项目名称，指向**外**，然后单击**新项**。 键入 BizTalk 业务流程的名称，然后单击**添加**。  
   
@@ -93,7 +93,7 @@ ms.locfileid: "36979046"
 ### <a name="add-ports"></a>添加端口  
  为每个逻辑端口输入以下属性。 端口列中列出的名称是在业务流程中显示的端口的名称。  
   
-|端口|属性|  
+|Port|属性|  
 |----------|----------------|  
 |MessageIn|-设置**标识符**到*MessageIn*<br />-设置**类型**到*MessageInType*<br />-设置**通信模式**到*单向*<br />-设置**通信方向**到*接收*|  
 |LOBPort|-设置**标识符**到*LOBPort*<br />-设置**类型**到*LOBPortType*<br />-设置**通信模式**到*请求-响应*<br />-设置**通信方向**到*发送接收*|  
@@ -114,7 +114,7 @@ ms.locfileid: "36979046"
  现在，生成 BizTalk 解决方案，并将其部署到 BizTalk Server。 有关详细信息，请参阅[构建和运行业务流程](../../core/building-and-running-orchestrations.md)。  
   
 ## <a name="configure-the-biztalk-application"></a>配置 BizTalk 应用程序  
- 部署 BizTalk 项目后，在业务流程窗格中列出前面创建的业务流程[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 必须使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台来配置应用程序。 有关演练，请参阅[演练： 部署基本 BizTalk 应用程序](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)。
+ 部署 BizTalk 项目后，在业务流程窗格中列出前面创建的业务流程[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 必须使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台来配置应用程序。 有关演练，请参阅[演练：部署基本 BizTalk 应用程序](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)。
    
  配置应用程序包括：  
   

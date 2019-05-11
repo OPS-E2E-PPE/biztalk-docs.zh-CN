@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e63bf6b30de29c18a9424306140804a4cf73c16d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8f4ea92d5d0564f6ba7bbf08898cf570b8c64737
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010886"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528967"
 ---
 # <a name="poll-oracle-database-using-stored-procedures-functions-or-packaged-procedures-and-functions"></a>使用存储的过程、 函数或封装的过程和函数的轮询 Oracle 数据库
 你可以配置[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]通过使用存储的过程、 函数或封装的过程和函数来定期轮询 Oracle 数据库接收定期的数据更改消息。 您可以指定存储的过程、 函数或封装的过程和函数与适配器执行定期轮询 Oracle 数据库的轮询语句。  
@@ -33,7 +33,7 @@ ms.locfileid: "37010886"
 |     **InboundOperationType**     |                                                                                                                                                                                                                                                               指定是否想要执行的轮询或通知的入站操作。 默认值是**轮询**。                                                                                                                                                                                                                                                                |
 | **PolledDataAvailableStatement** |                                                                                                                                                                                              指定适配器执行以确定是否可用于轮询的任何数据的 SQL 语句。 仅当一条记录不可用，存储的过程为指定**PollingStatement**将执行属性绑定。                                                                                                                                                                                              |
 |       **PollingInterval**        |              指定的时间间隔，以秒为单位，从该处[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]执行该语句为指定**PolledDataAvailableStatement**属性绑定。 默认值为 500 秒。 轮询间隔确定连续轮询之间的时间间隔。 如果在指定时间间隔内执行该语句，则适配器将休眠的剩余时间间隔中。 默认值是`SELECT 1 FROM DUAL`，这意味着与否，适配器必须继续轮询而不考虑轮询表是否包含数据。              |
-|       **PollingStatement**       | 指定的轮询语句。 若要轮询使用存储的过程、 函数或打包的过程或函数，必须在此绑定属性中指定相应的操作的整个请求消息。 请求消息必须向适配器发送的出站操作的形式调用相应的操作相同。 默认值为 null。<br /><br /> 必须指定的值**PollingStatement**绑定属性来启用轮询。 仅当没有数据可用于轮询，该域由执行轮询语句**PolledDataAvailableStatement**属性绑定。 |
+|       **PollingStatement**       | 指定的轮询语句。 若要轮询使用存储的过程、 函数或打包的过程或函数，必须在此绑定属性中指定相应的操作的整个请求消息。 请求消息必须向适配器发送的出站操作的形式调用相应的操作相同。 默认值为 NULL。<br /><br /> 必须指定的值**PollingStatement**绑定属性来启用轮询。 仅当没有数据可用于轮询，该域由执行轮询语句**PolledDataAvailableStatement**属性绑定。 |
 |        **PollingAction**         |                                                                                                                                                                                        指定轮询操作的操作。 您可以确定操作使用生成的元数据中的特定操作的轮询操作[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。                                                                                                                                                                                        |
 |      **PostPollStatement**       |                                                                                                                                                                                                                                                   指定在指定的语句之后执行的语句块**PollingStatement**执行绑定属性。                                                                                                                                                                                                                                                    |
 |      **PollWhileDataFound**      |                                                                                                                               指定是否[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]忽略的轮询间隔，连续执行轮询语句中，如果数据是可用的轮询的表。 如果表中有任何数据，不则适配器将恢复执行轮询语句按照指定的轮询间隔。 默认值为 false。                                                                                                                               |
@@ -113,7 +113,7 @@ ms.locfileid: "37010886"
    |使用此选项|执行的操作|  
    |--------------|----------------|  
    |Identifier|类型**接收**。|  
-   |消息类型|从下拉列表中，展开**架构**，然后选择*Polling.OracleEBSBindingSchema*，其中*轮询*是 BizTalk 项目的名称。 *OracleEBSBindingSchema*是为生成的响应架构**GET_ACTIVITYS**存储过程。<br /><br /> **重要说明：** 由于轮询是一种方法的操作，适配器生成的架构不包含响应节点中，因此，没有只有一个根节点在架构中。 如果消息类型使用此类架构，则必须通过生成的架构的文件名标识架构。<br /><br /> 例如，如果创建双向操作的架构，架构中的节点文件的名称`OracleEBSBindingSchema`可能看起来像"请求"和"响应"。 如果你想要在业务流程映射到请求架构中创建一条消息，可以通过查找来确定在列表中的架构`OracleEBSBindingSchema.Request`。 但是，在执行轮询操作时，唯一的节点是"轮询"，因为它并不容易标识你想要映射到，因为单个节点包含以下架构： 不会作为列出的架构\<schemafilename\>。\<rootnodename\>。 相反，仅文件名，列出了此类架构。 在这种情况下，标识架构的唯一方法是按架构文件名，例如，OracleEBSBindingSchema。|  
+   |消息类型|从下拉列表中，展开**架构**，然后选择*Polling.OracleEBSBindingSchema*，其中*轮询*是 BizTalk 项目的名称。 *OracleEBSBindingSchema*是为生成的响应架构**GET_ACTIVITYS**存储过程。<br /><br /> **重要提示：** 由于轮询是单向操作，适配器生成的架构不包含响应节点，因此，不只有一个根节点在架构中。 如果消息类型使用此类架构，则必须通过生成的架构的文件名标识架构。<br /><br /> 例如，如果创建双向操作的架构，架构中的节点文件的名称`OracleEBSBindingSchema`可能看起来像"请求"和"响应"。 如果你想要在业务流程映射到请求架构中创建一条消息，可以通过查找来确定在列表中的架构`OracleEBSBindingSchema.Request`。 但是，在执行轮询操作时，唯一的节点是"轮询"，因为它并不容易标识你想要映射到，因为单个节点包含以下架构： 不会作为列出的架构\<schemafilename\>。\<rootnodename\>。 相反，仅文件名，列出了此类架构。 在这种情况下，标识架构的唯一方法是按架构文件名，例如，OracleEBSBindingSchema。|  
 
     [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]为入站和出站操作 GET_ACTIVITYS 存储过程生成架构。 入站操作，必须使用该架构：  
 
@@ -150,7 +150,7 @@ ms.locfileid: "37010886"
 ### <a name="adding-ports"></a>添加端口  
  请确保为每个逻辑端口中指定以下属性。 端口列中列出的名称是在业务流程中显示的端口的名称。  
 
-|端口|属性|  
+|Port|属性|  
 |----------|----------------|  
 |OracleReceivePort|-设置**标识符**到*OracleReceivePort*<br /><br /> -设置**类型**到*OracleReceivePortType*<br /><br /> -设置**通信模式**到*单向*<br /><br /> -设置**通信方向**到*接收*|  
 |SaveMessagePort|-设置**标识符**到*SaveMessagePort*<br /><br /> -设置**类型**到*SaveMessagePortType*<br /><br /> -设置**通信模式**到*单向*<br /><br /> -设置**通信方向**到*发送*|  
@@ -168,7 +168,7 @@ ms.locfileid: "37010886"
  现在必须生成 BizTalk 解决方案，并将其部署到[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 有关详细信息，请参阅[构建和运行业务流程](../../core/building-and-running-orchestrations.md))。  
 
 ## <a name="configuring-the-biztalk-application"></a>配置 BizTalk 应用程序  
- 部署 BizTalk 项目后，将前面创建的业务流程下列出**业务流程**BizTalk Server 管理控制台窗格中的。 必须使用 BizTalk Server 管理控制台来配置应用程序。 有关演练，请参阅[演练： 部署基本 BizTalk 应用程序](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)。
+ 部署 BizTalk 项目后，将前面创建的业务流程下列出**业务流程**BizTalk Server 管理控制台窗格中的。 必须使用 BizTalk Server 管理控制台来配置应用程序。 有关演练，请参阅[演练：部署基本 BizTalk 应用程序](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)。
 
  配置应用程序包括：  
 

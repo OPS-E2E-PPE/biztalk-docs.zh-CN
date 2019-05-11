@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5fd9bda9fc560310a882c5d48117cd823d544453
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 31785fd5c804e7f599b575678f1f57d60fcf8ebe
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004470"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528870"
 ---
 # <a name="run-operations-using-record-types-in-oracle-database-using-the-wcf-service-model"></a>使用 WCF 服务模型的 Oracle 数据库中运行的操作使用的记录类型
 Oracle 记录类型用于表示层次结构中传递到 PL/SQL 函数和过程的参数信息。 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]呈现为 XML 的复杂类型的记录类型。 在 WCF 服务模型中，记录类型都反序列化为强类型化.NET 类。 记录字段表示为类的属性。  
@@ -63,8 +63,8 @@ FUNCTION get_accountinfo(aid NUMBER) RETURN acctinfo_rec_type;
   
 |Oracle 记录类型|“属性”|示例|  
 |------------------------|----------|-------------|  
-|表 %rowtype 过程或函数参数|参数 [名称]记录|ACCTRECORD|  
-|记录包参数的类型|[PACKAGE_NAME][RECORD_TYPE_NAME]记录|ACCOUNT_PKGACCTINFO_REC_TYPERECORD|  
+|表 %rowtype 过程或函数参数|[PARAMETER_NAME]RECORD|ACCTRECORD|  
+|记录包参数的类型|[PACKAGE_NAME][RECORD_TYPE_NAME]RECORD|ACCOUNT_PKGACCTINFO_REC_TYPERECORD|  
   
  [PARAMETER_NAME] = 的过程或函数参数，则名称例如，帐户  
   

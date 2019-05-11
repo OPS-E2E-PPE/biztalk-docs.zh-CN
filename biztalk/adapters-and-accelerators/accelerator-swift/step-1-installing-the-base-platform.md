@@ -1,5 +1,5 @@
 ---
-title: 步骤 1： 安装基础平台 |Microsoft Docs
+title: 第 1 步：安装基础平台 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6eaae10965aa240af86ee381a3504a4ec64c8fc2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bd3f901e31f0def313f3f8cf5cb3a9b8ea0dd16c
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986950"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529967"
 ---
-# <a name="step-1-installing-the-base-platform"></a>步骤 1： 安装基础平台
+# <a name="step-1-installing-the-base-platform"></a>第 1 步：安装基础平台
 基础平台，用于安装 Microsoft[!INCLUDE[btsWinSvr2k3](../../includes/btswinsvr2k3-md.md)]和[!INCLUDE[btsWinSvr2k3](../../includes/btswinsvr2k3-md.md)]使用默认安装选项的每个服务器上的 Service Pack 2。 请遵循以下建议：  
   
 ## <a name="pre-installation"></a>预安装  

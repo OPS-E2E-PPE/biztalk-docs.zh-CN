@@ -16,19 +16,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 344467367e5745ab089c3f70be017759d22ba8b1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 552d77518e7e7481efa2ee5eb5dda6908662429c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970686"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372063"
 ---
 # <a name="use-the-data-provider-for-sap-with-the-ddex-plug-in"></a>使用包含 DDEX 插件的 SAP 数据提供程序
 如果您选择安装[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]连同[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装，安装程序将安装[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]DDEX 插件。 您可以使用此插件来浏览 SAP 对象使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]。 本部分提供有关使用 DDEX 插件的信息。  
   
  您可以使用该插件以建立与 SAP 系统从 SAP 系统中，添加表并从 SAP 系统中添加函数模块。 添加表和函数模块使用 Visual Studio 插件后，新添加的表和函数模块会反映在 SAPDiscoveredObjects.xml 文件。 有关此文件的详细信息，请参阅[有关 SAPDiscoveredObjects.xml 文件在 SAP 中](../../adapters-and-accelerators/adapter-sap/about-the-sapdiscoveredobjects-xml-file-in-sap.md)。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  请确保您选择安装[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]连同[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装。  
   
 ### <a name="to-connect-to-an-sap-system-using-the-ddex-plug-in"></a>若要连接到 SAP 系统使用的 DDEX 插件  

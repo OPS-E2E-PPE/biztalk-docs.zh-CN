@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 195701e4bba469a7faaab36a5ae1636c5abca5f4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 582ebdb4bcf41afe0da18d05399650ff56b08789
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967382"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368780"
 ---
 # <a name="limitations-of-biztalk-adapter-for-sql-server"></a>适用于 SQL Server 的 BizTalk 适配器的限制
 以下已知的限制[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]:  

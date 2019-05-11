@@ -18,17 +18,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 36b359fc893b8616fd4fb7339e9efbc42d7d3e13
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0e28ea61e09eb8098b98e7396deea0662090eb98
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992718"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373559"
 ---
 # <a name="custom-rfcs-used-by-the-provider-in-sap"></a>在 SAP 中提供程序所使用的自定义 Rfc
 [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]提供它在内部使用在 SAP 系统上执行操作的以下自定义 Rfc。  
   
-- **Z_EXTRACT_DATA_OO RFC**。 数据提取 RFC，Z_EXTRACT_DATA_OO，从表中提取数据或视图中的 SAP R/3 系统、 转换数据，并返回同步中的 SQL Server 表中的数据或转储到平面文件数据。 Z_EXTRACT_DATA_OO 用于执行与 WHERE 子句的 SELECT 操作。 此 RFC 的性能是依赖于您的 SAP 系统硬件。  
+- **Z_EXTRACT_DATA_OO RFC**. 数据提取 RFC，Z_EXTRACT_DATA_OO，从表中提取数据或视图中的 SAP R/3 系统、 转换数据，并返回同步中的 SQL Server 表中的数据或转储到平面文件数据。 Z_EXTRACT_DATA_OO 用于执行与 WHERE 子句的 SELECT 操作。 此 RFC 的性能是依赖于您的 SAP 系统硬件。  
   
    有关如何 Z_EXTRACT_DATA_OO rfc 映射的.NET 和 SAP 数据类型的信息，请参阅[数据类型映射为自定义 Rfc](../../adapters-and-accelerators/adapter-sap/data-type-mapping-for-custom-rfcs.md)。  
   
@@ -72,17 +72,17 @@ ms.locfileid: "36992718"
   
 ## <a name="security-considerations-with-the-custom-rfc"></a>使用自定义 RFC 的安全注意事项  
   
--   `Security Issue`： 可能会公开数据，如果您没有帮助保护这些文件写入到平面文件。  
+-   `Security Issue`设置用户帐户 ：可能会公开数据，如果您没有帮助保护这些文件写入到平面文件。  
   
-     `Best practice`： 提高 Z_EXTRACT_DATA_OO 函数调用在平面文件模式下的任何数据写入到文件共享的安全性。  
+     `Best practice`设置用户帐户 ：提高 Z_EXTRACT_DATA_OO 函数调用在平面文件模式下的任何数据写入到文件共享的安全性。  
   
--   `Security Issue`： 没有可能会覆盖上写入到在文件模式下使用 Z_EXTRACT_DATA_OO 函数调用的任何共享的文件。 这可能到 SAP 域帐户有权访问的任何共享上的任何文件。  
+-   `Security Issue`设置用户帐户 ：还有可能会覆盖上写入到在文件模式下使用 Z_EXTRACT_DATA_OO 函数调用的任何共享的文件。 这可能到 SAP 域帐户有权访问的任何共享上的任何文件。  
   
-     `Best practice`： 致力于保护 SAP 域帐户有权访问的所有共享。  
+     `Best practice`设置用户帐户 ：致力于保护 SAP 域帐户有权访问的所有共享。  
   
--   `Security Issue`： 用户可以检查 （或"探查"） 数据从 SAP 应用程序服务器传输到其目标文件共享，期间在目标为不同的物理计算机上的情况下。  
+-   `Security Issue`设置用户帐户 ：用户可以检查 （或"探查"） 数据从 SAP 应用程序服务器传输到其目标文件共享，期间在目标为不同的物理计算机上的情况下。  
   
-     `Best practice`： 使用 IPsec 或另一个适当的方法来帮助提高通信安全性 SAP 服务器和目标之间。  
+     `Best practice`设置用户帐户 ：使用 IPsec 或另一个适当的方法来帮助提高通信安全性 SAP 服务器和目标之间。  
   
 ## <a name="see-also"></a>请参阅  
  [关于 mySAP Business Suite 的 .NET Framework 数据提供程序](../../adapters-and-accelerators/adapter-sap/about-the-net-framework-data-provider-for-mysap-business-suite.md)

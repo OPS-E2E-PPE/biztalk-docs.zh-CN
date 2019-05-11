@@ -12,43 +12,43 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ce76916af78a0bf7918f7e081752811d05758935
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 01fcd67608b454300f8b06e69d7225f95811a0a5
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997206"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530404"
 ---
-# <a name="browsingartifacts-biztalk-server-sample"></a>BrowsingArtifacts（BizTalk Server 示例）
-BrowsingArtifacts 示例演示如何枚举 BizTalk 项目和属性。  
+# <a name="browsingartifacts-biztalk-server-sample"></a>BrowsingArtifacts （BizTalk Server 示例）
+BrowsingArtifacts 示例演示了如何枚举 BizTalk 项目和属性。  
 
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
 
 - 您必须具有 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理权限才能使用此示例中的管理对象。  
 
-- Windows PowerShell 脚本示例需要 Windows PowerShell 执行策略才能允许脚本执行。 有关详细信息请参阅：[检查执行策略](http://go.microsoft.com/fwlink/?LinkId=128930)。  
+- Windows PowerShell 脚本示例需要 Windows PowerShell 执行策略才能允许脚本执行。 有关详细信息，请参阅：[检查执行策略](http://go.microsoft.com/fwlink/?LinkId=128930)。  
 
 ## <a name="what-this-sample-does"></a>本示例的用途  
- 此示例演示如何使用**BtsCatalogExplorer**类派生**Microsoft.BizTalk.ExplorerOM**命名空间来枚举项目并报告其属性。 在此示例生成报告中包含以下项目： 业务流程、 端口、 程序集、 参与方和转换。 该示例是使用 Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 编写的。 本主题中还包含一个 Windows PowerShell 示例脚本。  
+ 此示例演示如何使用**BtsCatalogExplorer**类派生**Microsoft.BizTalk.ExplorerOM**命名空间来枚举项目并报告其属性。 在此示例生成报告中包含以下项目：业务流程、 端口、 程序集、 参与方和转换。 在 Microsoft 中编写这个示例[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)]。 本主题中还提供 Windows PowerShell 示例脚本。  
 
 ## <a name="where-to-find-this-sample"></a>本示例的所在位置  
  本示例位于以下 SDK 位置中：  
 
- \<*示例路径*\>\Admin\ExplorerOM\BrowsingArtifacts  
+ \<*Samples Path*\>\Admin\ExplorerOM\BrowsingArtifacts  
 
  下表显示了本示例中的文件及其用途说明：  
 
 
 |                                文件                                 |                                                 Description                                                  |
 |------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-|                          BrowsingArtifacts.cs                          | 本示例中演示的操作所需的 [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 源文件。 |
-| BrowsingArtifacts.sln、BrowsingArtifacts.csproj、BrowsingArtifacts.suo |                                  示例的解决方案文件和项目文件。                                  |
+|                          BrowsingArtifacts.cs                          | [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 此示例中演示的操作的源文件。 |
+| BrowsingArtifacts.sln, BrowsingArtifacts.csproj, BrowsingArtifacts.suo |                                  示例的解决方案文件和项目文件。                                  |
 
 ## <a name="building-and-running-this-sample"></a>生成并运行本示例  
 
 #### <a name="to-build-this-sample"></a>生成示例  
 
-1. 在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中，打开解决方案文件 BrowsingArtifacts.sln。  
+1. 在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，打开解决方案文件 BrowsingArtifacts.sln。  
 
 2. 在“生成”  菜单上，单击“生成解决方案” 。  
 
@@ -56,7 +56,7 @@ BrowsingArtifacts 示例演示如何枚举 BizTalk 项目和属性。
 
 1.  打开命令窗口并导航到以下文件夹：  
 
-     \<*示例路径*\>\Admin\ExplorerOM\BrowsingArtifacts\bin\Debug  
+     \<*Samples Path*\>\Admin\ExplorerOM\BrowsingArtifacts\bin\Debug  
 
 2.  运行文件 BrowsingArtifacts.exe。  
 
@@ -185,7 +185,7 @@ EnumOrchestrations $Catalog
 EnumOtherArtifacts $Catalog  
 ```  
 
- 以下是运行 Windows PowerShell 脚本的示例以及示例输出：  
+ 下面是运行 Windows PowerShell 脚本以及示例输出的示例：  
 
 ```  
 PS C:\> .\BrowsingArtifacts.ps1  

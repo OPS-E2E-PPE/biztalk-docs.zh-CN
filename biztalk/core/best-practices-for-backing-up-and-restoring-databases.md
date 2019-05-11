@@ -1,5 +1,5 @@
 ---
-title: 备份和还原数据库的最佳实践 |Microsoft 文档
+title: 备份和还原数据库的最佳做法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -20,43 +20,43 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2543f09c5118e58bd18ea2add113811fb733d884
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b9ac2784a19a55d477f71c9b6542b7d46948d63f
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231173"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529133"
 ---
 # <a name="best-practices-for-backing-up-and-restoring-databases"></a>备份和还原数据库的最佳实践
-请查看以下最佳实践，以确保您能够备份和还原 BizTalk Server 数据库。  
+请查看以下最佳实践以帮助确保你可以备份和还原 BizTalk Server 数据库。  
   
--   **开发备份和还原策略，并对其进行测试。**  
+-   **开发备份和还原策略并对其进行测试。**  
   
-     有了好的计划，您就可以在由于硬件故障致使数据丢失时迅速恢复数据。  
+     使用合适的计划，您可以因硬件故障而丢失时迅速恢复数据。  
   
--   **管理磁盘空间并存档以前的备份文件。**  
+-   **管理磁盘空间并归档以前的备份文件。**  
   
-     由于备份 BizTalk Server 作业并不删除过期的备份文件，所以需要对这些备份文件进行管理，以节省磁盘空间。 为数据库创建了新的完全备份后，应该将过期的备份文件移到存档存储设备，以回收主磁盘空间。  
+     备份 BizTalk Server 作业不会删除过期的备份文件，因此需要管理这些备份文件，以节省磁盘空间。 为数据库创建了新的完全备份后，应该将过期的备份文件移到存档存储设备，以回收主磁盘空间。  
   
--   **不在相同的计算机或要备份的磁盘上存储备份。**  
+-   **不要在同一计算机或您要备份的磁盘上存储备份。**  
   
-     而应该为其指定其他计算机或磁盘。 否则，当出现硬件故障时，您将丢失所有数据。  
+     应为不同于原始数据的计算机备份指定的计算机或磁盘。 否则，如果将丢失所有数据的硬件出现故障。  
   
 -   **保留副本。**  
   
-     至少应保留该媒体的三个副本。 至少保留一个非现场副本，放置在安全控制良好的环境中。  
+     将保留该媒体的至少三个副本。 在正确受控环境中保留非现场至少一个副本。  
   
 -   **执行试验性还原。**  
   
-     至少每月执行一次试验性还原，以验证文件备份是否正确。 试验性还原可发现在验证软件功能是否正常时未发现的硬件问题。 不要等到硬盘出现了故障，才去检查是否能还原系统和数据库。  
+     执行试验性还原每月至少一次以验证你的文件已正确备份。 试验性还原可以发现不会显示验证您的软件运行正常时的硬件问题。 不要等到硬盘之前，请参阅是否可以还原系统和数据库。  
   
 -   **保护设备和媒体。**  
   
-     保护存储设备和备份媒体。 其他人可能偷窃备份媒体，并将数据还原到他们具有管理员身份的其他服务器上，以访问媒体上的数据。  
+     保护存储设备和备份介质。 它是有人可以通过将数据还原到另一台服务器，它们是管理员的窃取的媒体来访问数据。  
   
 -   **监视备份和还原过程。**  
   
-     为了确保备份和还原过程成功，您应对用来备份和还原 BizTalk Server 的 SQL Server 代理作业进行监视。  
+     若要确保备份和还原过程已成功，则应该监视用于备份和还原 BizTalk Server 的 SQL Server 代理作业。  
   
-## <a name="see-also"></a>另请参阅  
- [备份和还原的 BizTalk Server 数据库](../core/backing-up-and-restoring-the-biztalk-server-databases.md)
+## <a name="see-also"></a>请参阅  
+ [备份和还原 BizTalk Server 数据库](../core/backing-up-and-restoring-the-biztalk-server-databases.md)

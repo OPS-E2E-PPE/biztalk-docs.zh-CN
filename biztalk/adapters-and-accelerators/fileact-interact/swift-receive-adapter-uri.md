@@ -1,5 +1,5 @@
 ---
-title: SWIFT 接收适配器 URI |Microsoft 文档
+title: SWIFT 接收适配器 URI |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6988155f70bf197f9c468b3ee7eb48c8f2f5f53d
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 9c16742da0be4ba55932332c3e74d067c7c65284
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25963155"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65364373"
 ---
 # <a name="swift-receive-adapter-uri"></a>SWIFT 接收适配器 URI
-URI 构造接收适配器根据炫终结点信息 (SWIFT: / /\<SwTuxSrv\>) 方法是 SWIFTNet 链接 (SNL)，以及消息合作伙伴 (SWIFT: / /\<SagMessagePartner\>)为 SWIFTAlliance 网关的信息接收适配器 (压降 RA) 部署。  
+URI 构造接收适配器根据炫终结点信息 (SWIFT: / /\<SwTuxSrv\>) 的方法是 SWIFTNet 链接 (SNL) 和消息合作伙伴 (SWIFT: / /\<SagMessagePartner\>)SWIFTAlliance 网关的信息接收适配器 (压降 RA) 部署。  
   
  这表示为**应用程序名称**接收适配器属性页上的属性。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [SWIFT 接收适配器体系结构](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-architecture.md)   
  [SWIFT 接收适配器初始化](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-initialization.md)   
  [SWIFT 接收适配器安全上下文](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-security-context.md)   

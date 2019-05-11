@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 492d3ca3dc132704913e54045f4c377a32903a67
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: eb741b6a40f5489aded365c9f3ffe91bf12ba6da
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984062"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371706"
 ---
 # <a name="develop-siebel-applications-using-the-wcf-service-model"></a>开发 Siebel 应用程序使用 WCF 服务模型
 [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)] 提供了编程模型调用 WCF 服务模型，该部分，可以帮助解决的一些其他编程模型限制 — WCF 通道模型。  

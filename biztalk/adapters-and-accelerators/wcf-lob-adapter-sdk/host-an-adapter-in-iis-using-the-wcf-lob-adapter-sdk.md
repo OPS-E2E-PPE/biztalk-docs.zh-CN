@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 570c844b7e41c8fd4deb340e6a0ce1bf598ae24b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 51d6958bb740b3707748459281769077eb69d008
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976134"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363599"
 ---
 # <a name="host-an-adapter-in-iis-using-the-wcf-lob-adapter-sdk"></a>在使用 WCF LOB 适配器 SDK 的 IIS 中适配器的宿主
 本部分介绍如何使用生成的适配器宿主[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]在 Internet 信息服务 (IIS)。 有关其他托管选项的详细信息，请参阅[托管服务](https://msdn.microsoft.com/library/ms730158.aspx)。
@@ -79,25 +79,25 @@ ms.locfileid: "36976134"
 
    1.  **服务行为配置**部分包含控制服务行为的条目。 运行向导之后，可以通过编辑 web.config 文件来修改所选的服务行为。  
 
-       |“属性”|Description|  
+       |属性|Description|  
        |--------------|-----------------|  
        |**EnableMetadataExchange**|此值设置为 **，则返回 True** ，服务元数据发布到客户端请求。 此外可以通过修改设置这\< **serviceMetadata httpGetEnabled =""** \>在 web.config 中。默认值是**False**|  
        |**IncludeExceptionDetailsinFault**|此值设置为 **，则返回 True**结果中将托管的异常信息返回到 SOAP 错误中的客户端。 此外可以通过修改设置这\< **serviceDebug usingincludeExceptionDetailInFaults =""** \>在 web.config 中。默认值是**False**。|  
        |**名称**|服务行为配置名称。|  
        |**UseServiceCertificate**|此值确定服务是否将使用 X.509 证书向客户端进程验证自身身份。 默认值是 **，则返回 True**。|  
-       |**FindValue**|此值用于搜索特定的 X.509 证书的证书存储中。 此外可以通过修改设置这\< **serviceCredentials findValue =""** \> web.config 中**请注意：** 请为此属性仅当**UseServiceCertificate**设置为**True**。|  
-       |**StoreLocation**|此值指定系统存储位置，搜索指定的证书。 此外可以通过修改设置这\< **serviceCredentials storeLocation =""** \>在 web.config 中。**注意：** 为此属性仅当指定值**UseServiceCertificate**设置为**True**。|  
-       |**StoreName**|此值指定要搜索指定的证书的特定系统存储区。 此外可以通过修改设置这\< **serviceCredentials storeName =""** \> web.config 中**请注意：** 请为此属性仅当**UseServiceCertificate**设置为**True**。|  
-       |**X509FindType**|若要查找要使用的特定证书前面指定的搜索将与 FindValue 的类型。 此外可以通过修改设置这\< **serviceCredentials x509FindType =""** \> web.config 中**请注意：** 请为此属性仅当**UseServiceCertificate**设置为**True**。|  
+       |**FindValue**|此值用于搜索特定的 X.509 证书的证书存储中。 此外可以通过修改设置这\< **serviceCredentials findValue =""** \> web.config 中**注意：** 请为此属性仅当**UseServiceCertificate**设置为**True**。|  
+       |**StoreLocation**|此值指定系统存储位置，搜索指定的证书。 此外可以通过修改设置这\< **serviceCredentials storeLocation =""** \>在 web.config 中。**注意：** 请为此属性仅当**UseServiceCertificate**设置为**True**。|  
+       |**StoreName**|此值指定要搜索指定的证书的特定系统存储区。 此外可以通过修改设置这\< **serviceCredentials storeName =""** \> web.config 中**注意：** 请为此属性仅当**UseServiceCertificate**设置为**True**。|  
+       |**X509FindType**|若要查找要使用的特定证书前面指定的搜索将与 FindValue 的类型。 此外可以通过修改设置这\< **serviceCredentials x509FindType =""** \> web.config 中**注意：** 请为此属性仅当**UseServiceCertificate**设置为**True**。|  
 
    2.  **终结点行为配置**部分控制终结点行为。  
 
-       |“属性”|Description|  
+       |属性|Description|  
        |--------------|-----------------|  
        |**名称**|终结点行为的名称|  
        |**AuthenticationType**|此值指示适配器获取客户端凭据的传入文档的位置。 若要启用客户端指定客户端证书向服务进行身份验证，请将此设置为**ClientCredentialUsernamePassword**。 若要启用客户端的 HTTP 标头的一部分指定的用户名和密码，请将此设置为**HTTPUsernamePassword**。 若要启用客户端指定客户端凭据接口通过凭据，请将此设置为**自动**。如果此操作失败，客户端可以将作为 HTTP 标头的一部分传递的凭据。<br /><br /> 此值还可以设置通过修改\< **endpointBehavior adapterSecurityBridgeType** \>在 web.config 中。默认值是**自动**。|  
-       |**UsernameHeader**|指定将用于将用户名称传递给该服务的标头的名称。 有关 HTTP 标头的详细信息，请参阅"支持的自定义 HTTP 和 SOAP 标头"网址 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)<br /><br /> 此值还可以设置通过修改\< **endpointBehavior usernameHttpHeader** \>在 web.config 中。**注意：** 必须指定此属性的值，如果**AuthenticationType**设置为**HTTPUserNamePassword**。  如果设置为**自动**，此为可选属性。|  
-       |**PasswordHeader**|指定将用于将用户密码传递给该服务的标头的名称。 有关 HTTP 标头的详细信息，请参阅"支持的自定义 HTTP 和 SOAP 标头"网址 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)<br /><br /> 此外可以通过修改设置此值 <**endpointBehavior passwordHttpHeader**< web.config 中。**注意：** 必须指定此属性的值，如果**AuthenticationType**设置为**HTTPUserNamePassword**。 如果设置为**自动**，此为可选属性。|  
+       |**UsernameHeader**|指定将用于将用户名称传递给该服务的标头的名称。 有关 HTTP 标头的详细信息，请参阅"支持的自定义 HTTP 和 SOAP 标头"网址 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)<br /><br /> 此值还可以设置通过修改\< **endpointBehavior usernameHttpHeader** \>在 web.config 中。**注意：** 如果满足以下条件，则必须指定此属性的值**AuthenticationType**设置为**HTTPUserNamePassword**。  如果设置为**自动**，此为可选属性。|  
+       |**PasswordHeader**|指定将用于将用户密码传递给该服务的标头的名称。 有关 HTTP 标头的详细信息，请参阅"支持的自定义 HTTP 和 SOAP 标头"网址 [http://go.microsoft.com/fwlink/?LinkId=106692](http://go.microsoft.com/fwlink/?LinkId=106692)<br /><br /> 此外可以通过修改设置此值 <**endpointBehavior passwordHttpHeader**< web.config 中。**注意：** 如果满足以下条件，则必须指定此属性的值**AuthenticationType**设置为**HTTPUserNamePassword**。 如果设置为**自动**，此为可选属性。|  
 
    3.  设置后所需的行为，请单击**下一步**以继续。  
 
@@ -145,7 +145,7 @@ ms.locfileid: "36976134"
 
     3.  在右窗格中，右键单击的.svc 文件，并单击**浏览**。 Web 页会显示有关该服务的信息。 你现在可以通过使用 WCF 或 Web 服务调用客户端应用程序使用此服务。 
 
-## <a name="security"></a>Security
+## <a name="security"></a>安全性
 当适配器的宿主服务中时，来自客户端应用程序调用使用适配器安全桥将客户端凭据传递给适配器。  
 
  当 WCF 客户端发送到 WCF 服务的身份验证时，通常服务使用的身份验证。 但是，对于适配器，旨在捕获与基础 LOB 系统配合使用的身份验证信息。 这是通过适配器安全桥接，呈现为终结点行为的实现。 作为适配器开发人员，则不执行任何需要实现才能利用此功能;但是，在部署适配器时，必须考虑如何在客户端将提供对服务的凭据。  

@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d033e452c4f67b66ed7e3b50b2c553def558015
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 934d36fb18305ce530cbb35f47d154c41d7dfc64
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972230"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363587"
 ---
 # <a name="key-components-of-the-wcf-lob-adapter-sdk"></a>WCF LOB 适配器 SDK 的重要组成部分
 开发适配器使用[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]需要使用许多的以下基本组件：  

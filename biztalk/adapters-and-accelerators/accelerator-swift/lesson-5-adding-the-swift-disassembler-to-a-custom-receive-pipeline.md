@@ -1,5 +1,5 @@
 ---
-title: 第 5 课： 将 SWIFT 反汇编程序添加到自定义接收管道 |Microsoft Docs
+title: 第 5 课：将 SWIFT 反汇编程序添加到自定义接收管道 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,14 +17,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0af7635b424a74b160991b1d6cfdeb53bfb7f23f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6f37d8ff6369a030bf284584f19192f651cb08a2
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971294"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530288"
 ---
-# <a name="lesson-5-adding-the-swift-disassembler-to-a-custom-receive-pipeline"></a>第 5 课： 将 SWIFT 反汇编程序添加到自定义接收管道
+# <a name="lesson-5-adding-the-swift-disassembler-to-a-custom-receive-pipeline"></a>第 5 课：将 SWIFT 反汇编程序添加到自定义接收管道
 在本课中，您将自定义 SWIFT 反汇编程序 (DASM) 添加到你的管道。 DASM 管道组件是将分批消息划分为各个文档的管道组件。  
   
  MicrosoftBizTalk 服务器中提供的 DASM 管道组件包括：  
@@ -59,4 +59,4 @@ ms.locfileid: "36971294"
   
 7. 上**文件**菜单中，选择**全部保存**以保存所做的更改。  
   
-   请继续执行[第 6 课： 创建自定义发送管道](../../adapters-and-accelerators/accelerator-swift/lesson-6-creating-a-custom-send-pipeline.md)。
+   请继续执行[第 6 课：创建自定义发送管道](../../adapters-and-accelerators/accelerator-swift/lesson-6-creating-a-custom-send-pipeline.md)。

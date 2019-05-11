@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6caa757624a33eaa514c56c9ea7324ff9a0cfb71
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 76a2ab91fb83b1b05d3dc3f54c1c76916681f21f
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998846"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530067"
 ---
 # <a name="supported-messages"></a>支持的消息
 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]提供 Microsoft 和 SWIFT 消息的列表。 消息划分为几个财务类别，如下所示。  
@@ -28,25 +28,25 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
   
 -   [SWIFT 消息-Microsoft](#fsa_intro_xtkj)  
   
--   [类别 0: FIN 系统消息](#fsa_intro_xcpk)  
+-   [类别 0:FIN 系统消息](#fsa_intro_xcpk)  
   
--   [类别 1： 客户付款和检查](#fsa_intro_lxnf)  
+-   [类别 1:客户付款和检查](#fsa_intro_lxnf)  
   
--   [类别 2： 金融机构传输](#fsa_intro_fywg)  
+-   [类别 2:金融机构传输](#fsa_intro_fywg)  
   
--   [类别 3: Treasury 市场外 Exchange、 货币市场和派生类](#fsa_intro_qipa)  
+-   [类别 3:Treasury 市场外 Exchange、 货币市场和派生类](#fsa_intro_qipa)  
   
--   [类别 4： 集合和现金字母](#fsa_intro_ruuc)  
+-   [类别 4:集合和现金字母](#fsa_intro_ruuc)  
   
--   [类别 5： 证券市场](#fsa_intro_iitn)  
+-   [类别 5:证券市场](#fsa_intro_iitn)  
   
--   [类别 6: Treasury 市场贵重金属](#fsa_intro_bjez)  
+-   [类别 6:Treasury 市场贵重金属](#fsa_intro_bjez)  
   
--   [类别 7： 纪录片信用额度和保证](#fsa_intro_vhkw)  
+-   [类别 7:纪录片信用额度和保证](#fsa_intro_vhkw)  
   
--   [类别 8： 或机构流动人员支票](#fsa_intro_qlwo)  
+-   [类别 8:或机构流动人员支票](#fsa_intro_qlwo)  
   
--   [类别 9： 现金管理和客户状态](#fsa_intro_sptj)  
+-   [类别 9:现金管理和客户状态](#fsa_intro_sptj)  
   
 ##  <a name="fsa_intro_xtkj"></a> SWIFT 消息-Microsoft  
  下表描述服务类型 GPA 和 FIN 控制 Microsoft SWIFT 消息。  
@@ -74,8 +74,8 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
 |**42**|登录名否定确认 (LNK)|  
 |**43**|选择否定确认 (SNK)|  
   
-##  <a name="fsa_intro_xcpk"></a> 类别 0: FIN 系统消息  
- 下表描述了来自消息类别 0： 财务系统消息，包括到 SWIFT 和 SWIFT 到用户的用户。  
+##  <a name="fsa_intro_xcpk"></a> 类别 0:FIN 系统消息  
+ 下表描述了来自类别 0 的消息：财务系统消息，包括到 SWIFT 和 SWIFT 到用户的用户。  
   
 |消息类型|Description|  
 |------------------|-----------------|  
@@ -137,8 +137,8 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
 |**MT 096**|FIN 复制到中央机构消息|  
 |**MT 097**|FIN 复制消息授权/拒绝消息通知|  
   
-##  <a name="fsa_intro_lxnf"></a> 类别 1： 客户付款和检查  
- 下表描述了从类别 1 的消息： 付款和检查。  
+##  <a name="fsa_intro_lxnf"></a> 类别 1:客户付款和检查  
+ 下表描述了从类别 1 的消息：付款和检查。  
   
 |消息类型|Description|  
 |------------------|-----------------|  
@@ -163,8 +163,8 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
 |**MT 198**|专用消息|  
 |**MT 199**|免费格式化消息|  
   
-##  <a name="fsa_intro_fywg"></a> 类别 2： 金融机构传输  
- 下表描述了从类别 2 的消息： 金融机构传输。  
+##  <a name="fsa_intro_fywg"></a> 类别 2:金融机构传输  
+ 下表描述了从类别 2 的消息：金融机构传输。  
   
 |消息类型|Description|  
 |------------------|-----------------|  
@@ -187,8 +187,8 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
 |**MT 298**|专用消息|  
 |**MT 299**|免费格式化消息|  
   
-##  <a name="fsa_intro_qipa"></a> 类别 3: Treasury 市场外 Exchange、 货币市场和派生类  
- 下表描述了从类别 3 的消息： Treasury 市场外汇、 货币市场和派生类。  
+##  <a name="fsa_intro_qipa"></a> 类别 3:Treasury 市场外 Exchange、 货币市场和派生类  
+ 下表描述了从类别 3 的消息：Treasury 市场外 Exchange、 货币市场和派生类。  
   
 |消息类型|Description|  
 |------------------|-----------------|  
@@ -220,14 +220,14 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
 |**MT 398**|专用消息|  
 |**MT 399**|免费格式化消息|  
   
-##  <a name="fsa_intro_ruuc"></a> 类别 4： 集合和现金字母  
- 下表描述了从类别 4 消息： 集合和现金字母。  
+##  <a name="fsa_intro_ruuc"></a> 类别 4:集合和现金字母  
+ 下表描述了从类别 4 消息：集合和现金字母。  
   
 |消息类型|Description|  
 |------------------|-----------------|  
 |**MT 400**|付款的建议|  
 |**MT 405**|清除集合|  
-|**MT 410**|Acknowledgement|  
+|**MT 410**|确认|  
 |**MT 412**|接受的建议|  
 |**MT 416**|了非付款/非接受程度的建议|  
 |**MT 420**|Tracer|  
@@ -244,8 +244,8 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
 |**MT 498**|专用消息|  
 |**MT 最初包含 499**|免费格式化消息|  
   
-##  <a name="fsa_intro_iitn"></a> 类别 5： 证券市场  
- 下表描述了从类别 5 的消息： 证券市场。  
+##  <a name="fsa_intro_iitn"></a> 类别 5:证券市场  
+ 下表描述了从类别 5 的消息：证券市场。  
   
 |消息类型|Description|  
 |------------------|-----------------|  
@@ -271,7 +271,7 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
 |**MT 526**|常规证券贷款/借款方法人消息|  
 |**MT 527**|三方附属指令|  
 |**MT 528**|等客户端的处置指令|  
-|**MT 为 529**|ETC 市场端结算指令|  
+|**MT 529**|ETC 市场端结算指令|  
 |**MT 530**|事务处理命令|  
 |**MT 535**|Holdings 的语句|  
 |**MT 536**|语句的事务|  
@@ -286,16 +286,16 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
 |**MT 546**|提供免费确认|  
 |**MT 547**|提供针对付款确认|  
 |**MT 548**|处置状态和处理建议|  
-|**MT 版 549**|语句/处理建议的请求|  
+|**MT 549**|语句/处理建议的请求|  
 |**MT 558**|三方附属状态和处理建议|  
 |**MT 559**|付费代理声明|  
 |**MT 564**|公司操作通知|  
-|**MT 为 565**|公司操作指令|  
+|**MT 565**|公司操作指令|  
 |**566 MT**|公司操作确认|  
 |**MT 567**|公司的操作状态和处理建议|  
 |**MT 568**|公司的操作说明|  
 |**MT 569**|三方辅助资料和曝光语句|  
-|**MT 574**|(IRSLST)IRS 1441 NRA|  
+|**MT 574**|(IRSLST) IRS 1441 NRA|  
 |**MT 574**|(W8BENO)IRS 1441 NRA|  
 |**MT 575**|组合活动的报告|  
 |**MT 576**|未结订单的语句|  
@@ -317,8 +317,8 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
 |**MT 598**|专用消息|  
 |**MT 599**|免费格式化消息|  
   
-##  <a name="fsa_intro_bjez"></a> 类别 6: Treasury 市场贵重金属  
- 下表描述了从类别 6 的消息： Treasury 市场贵重金属、 极具价值市场整合和 Treasury 市场常见消息。  
+##  <a name="fsa_intro_bjez"></a> 类别 6:Treasury 市场贵重金属  
+ 下表描述了从类别 6 的消息：Treasury 市场贵重金属、 极具价值市场整合，和 Treasury 市场常见的消息。  
   
 |消息类型|Description|  
 |------------------|-----------------|  
@@ -347,8 +347,8 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
 |**MT 698**|专用消息|  
 |**MT 699**|免费格式化消息|  
   
-##  <a name="fsa_intro_vhkw"></a> 类别 7： 纪录片信用额度和保证  
- 下表描述了从类别 7 的消息： 纪录片信用额度和保证。  
+##  <a name="fsa_intro_vhkw"></a> 类别 7:纪录片信用额度和保证  
+ 下表描述了从类别 7 的消息：纪录片信用额度和保证。  
   
 |消息类型|Description|  
 |------------------|-----------------|  
@@ -356,11 +356,11 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
 |**MT 701**|纪录片信用额度的问题|  
 |**MT 705**|纪录片信用额度的预建议|  
 |**MT 707**|修正合同为纪录片信用额度|  
-|**MT 数目可以为 710**|第三个银行纪录片信用额度的建议|  
+|**MT 710**|第三个银行纪录片信用额度的建议|  
 |**MT 711**|第三个银行纪录片信用额度的建议|  
 |**MT 720**|纪录片信用额度的传输|  
 |**MT 721**|纪录片信用额度的传输|  
-|**MT 730**|Acknowledgement|  
+|**MT 730**|确认|  
 |**MT 732**|放电装置的建议|  
 |**MT 734**|拒绝消息的建议|  
 |**MT 740**|若要向补偿的授权|  
@@ -382,8 +382,8 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
 |**MT 798**|专用消息|  
 |**MT 799**|免费格式化消息|  
   
-##  <a name="fsa_intro_qlwo"></a> 类别 8： 或机构流动人员支票  
- 下表描述了从类别 8 的消息： 或机构流动人员支票。  
+##  <a name="fsa_intro_qlwo"></a> 类别 8:或机构流动人员支票  
+ 下表描述了从类别 8 的消息：或机构流动人员支票。  
   
 |消息类型|Description|  
 |------------------|-----------------|  
@@ -406,8 +406,8 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
 |**MT 898**|MT 898 专用消息|  
 |**MT 899**|MT 899 免费格式化消息|  
   
-##  <a name="fsa_intro_sptj"></a> 类别 9： 现金管理和客户状态  
- 下表描述了从类别 9 的消息： 现金管理和客户状态。  
+##  <a name="fsa_intro_sptj"></a> 类别 9:现金管理和客户状态  
+ 下表介绍类别 9 的消息：现金管理和客户状态。  
   
 |消息类型|Description|  
 |------------------|-----------------|  

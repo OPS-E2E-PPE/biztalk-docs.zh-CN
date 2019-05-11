@@ -15,12 +15,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d6e5ffc3e1ca36e200055a26e8e78f341b125d8a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cb3747ca3cf950ecb7897ff9e77b9d46950296e0
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975542"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530225"
 ---
 # <a name="removing-usage-rule-validation"></a>删除使用规则验证
 SWIFT 标准中定义并强制实施使用规则[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]特定于每种消息类型的业务策略。 这些使用规则是可用于提供额外的字段的验证的指南。 与不同的是网络验证规则，这是必需的您可以选择不需要使用规则的消息类型。 如果是这样，您可以执行以下任一操作：  

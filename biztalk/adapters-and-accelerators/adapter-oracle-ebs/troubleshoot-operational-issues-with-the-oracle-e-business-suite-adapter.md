@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d119afaea2382e1ede6c780a40bbe2bf4329860f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d8f018012106f5b0394cd893a87d99af89282841
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989982"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374386"
 ---
 # <a name="troubleshoot-operational-issues-with-the-oracle-e-business-suite-adapter"></a>使用 Oracle E-business Suite 适配器进行的操作问题故障排除
 本部分讨论如何使用故障排除技术来解决操作使用时可能遇到的错误[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]。  
@@ -135,7 +135,7 @@ C:\oracle\product\11.1.0\client_1\bin;C:\oracle\product\10.2.0\db_2\bin;
 ###  <a name="BKMK_Arithmetic"></a> 适配器可能引发算术溢出异常在执行 ExecuteScalar 操作  
  **问题**  
   
- 如果尝试执行 SELECT 语句中检索大量的 ExecuteScalar 操作，请使用该适配器，适配器将引发以下异常:"System.OverflowException： 算术运算导致溢出。"  
+ 如果尝试执行 SELECT 语句中检索大量的 ExecuteScalar 操作，请使用该适配器，适配器将引发以下异常："System.OverflowException:算术运算导致溢出。"  
   
  **原因**  
   
@@ -145,7 +145,7 @@ C:\oracle\product\11.1.0\client_1\bin;C:\oracle\product\10.2.0\db_2\bin;
   
  ExecuteScalar 操作中的 SELECT 语句中使用 TO_CHAR() 转换作为字符串返回的数据。  
   
-###  <a name="BKMK_AppContext"></a> 适配器客户端可能会引发以下异常执行某项操作:"无法检索用户 id、 责任 id、 应用程序 id。检查在是否传递了正确的值。"  
+###  <a name="BKMK_AppContext"></a> 适配器客户端可能会引发以下异常执行某项操作："无法检索用户 id、 责任 id、 应用程序 id。检查在是否传递了正确的值。"  
  **问题**  
   
  如果您正在执行对 Oracle E-business Suite 项目 （接口表、 界面视图、 并发程序和请求集） 的操作，适配器客户端可能会引发此异常。  
@@ -189,7 +189,7 @@ The element 'bindings' has invalid child element 'oracleEBSBinding'. List of pos
   
  **解决方法**  
   
- 可以安全地忽略此警告。  
+ 可以放心地忽略此警告。  
   
 ###  <a name="BKMK_Notify"></a> BizTalk Server 将引发异常，如果在同一个应用程序中使用多个通知架构或在同一主机上的多个应用程序中使用通知架构  
  **问题**  

@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df0062eca25e95c41c07d2e8dbf9ccac0a4694a3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 41d4c26782d91a93a1514067dc4c50a5bc9784c1
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995350"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530030"
 ---
 # <a name="security-summary"></a>安全摘要
 ## <a name="overview"></a>概述

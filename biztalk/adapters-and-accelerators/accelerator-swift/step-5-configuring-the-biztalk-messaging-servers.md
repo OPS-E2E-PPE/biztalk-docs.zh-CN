@@ -1,5 +1,5 @@
 ---
-title: 步骤 5： 配置 BizTalk 消息传送服务器 |Microsoft Docs
+title: 步骤 5：配置 BizTalk 消息服务器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9baea2c567148ead98abf6b3aca3f5cad8258e60
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 72211a5570d40e1eaae7ad3974496937ca9aed2a
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979998"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530086"
 ---
-# <a name="step-5-configuring-the-biztalk-messaging-servers"></a>步骤 5： 配置 BizTalk 消息服务器
+# <a name="step-5-configuring-the-biztalk-messaging-servers"></a>步骤 5：配置 BizTalk 消息服务器
 本部分提供有关配置 BizTalk 消息传送服务器的指导原则。  
   
 ### <a name="to-configure-the-biztalk-messaging-servers"></a>若要配置 BizTalk 消息传送服务器  
@@ -35,7 +35,7 @@ ms.locfileid: "36979998"
   
    - 如果 DTC 防火墙后面，请参阅"配置 Microsoft 分布式事务处理协调器 (DTC) 为通过防火墙工作"，位于[ http://go.microsoft.com/fwlink/?linkid=48872 ](http://go.microsoft.com/fwlink/?linkid=48872)。  
   
-2. 配置并验证网络负载平衡在 biztalk 接收服务器中所述[步骤 2： 在服务器上配置 NLB](../../adapters-and-accelerators/accelerator-swift/step-2-configuring-nlb-on-the-servers.md)。  
+2. 配置并验证网络负载平衡在 biztalk 接收服务器中所述[步骤 2:在服务器上配置 NLB](../../adapters-and-accelerators/accelerator-swift/step-2-configuring-nlb-on-the-servers.md)。  
   
 3. 安装和配置[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]中所述[安装和配置 BizTalk Accelerator for SWIFT 消息传送服务器上](../../adapters-and-accelerators/accelerator-swift/installing-and-configuring-biztalk-accelerator-for-swift-on-messaging-servers.md)。  
   

@@ -1,5 +1,5 @@
 ---
-title: 第 8 课： 生成和部署程序集 |Microsoft Docs
+title: 第 8 课：生成和部署程序集 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,14 +17,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 80e97076bb503d51bd2180c3f4bea950c0c04a46
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0b78d78108b656eefd7861904f75b186891dd3e9
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968382"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530565"
 ---
-# <a name="lesson-8-building-and-deploying-the-assembly"></a>第 8 课： 生成和部署程序集
+# <a name="lesson-8-building-and-deploying-the-assembly"></a>第 8 课：生成和部署程序集
 在本课程中，将生成和部署管道项目以生成包含你在上一步骤中创建的管道的程序集。 本课程中可确保到目前为止已创建的工作中没有任何编译错误。  
   
  将项目编译为程序集 (DLL) 文件并将其保存在\<*驱动器*\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\bin\Development 文件夹。  
@@ -49,4 +49,4 @@ ms.locfileid: "36968382"
   
 6. 展开**程序集**节点，并确认已成功部署加速器**SWIFTPipelines (1.0.0.0)**。  
   
-   请继续执行[模块 4： 创建 XML 接收和平面文件发送端口](../../adapters-and-accelerators/accelerator-swift/module-4-adding-an-xml-receive-location-and-flat-file-send-port.md)。
+   请继续执行[模块 4:创建 XML 接收和平面文件发送端口](../../adapters-and-accelerators/accelerator-swift/module-4-adding-an-xml-receive-location-and-flat-file-send-port.md)。

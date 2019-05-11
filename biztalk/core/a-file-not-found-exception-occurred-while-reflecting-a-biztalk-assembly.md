@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ee0cffc331765924b4fe7d29d95f7094b14aecb3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 804428d71c33d0c45d75443bbc5118a2dfed9ac0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000838"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362410"
 ---
-# <a name="a-file-not-found-exception-occurred-while-reflecting-a-biztalk-assembly"></a>反射 BizTalk 程序集时发生异常，未找到某个文件
+# <a name="a-file-not-found-exception-occurred-while-reflecting-a-biztalk-assembly"></a>找不到文件专用于反映将 BizTalk 程序集时发生异常
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                                                                                                                                                                                                                                        |
@@ -30,13 +30,13 @@ ms.locfileid: "37000838"
 |  事件源   |                                                                                                                                                                   0                                                                                                                                                                    |
 |    组件    |                                                                                                                                                                   0                                                                                                                                                                    |
 |  符号名称  |                                                                                                                                                                   0                                                                                                                                                                    |
-|  消息正文   | 找不到文件专用于反映将 BizTalk 程序集时出现异常"{0}"。 如果一个或多个依存关系不可用，则可能发生此问题。 若要更正此问题，请尝试以下项之一： 1。 将程序集的依存关系复制到同一文件夹。 2. 将缺少的依存关系安装到全局程序集缓存中。 |
+|  消息正文   | 找不到文件专用于反映将 BizTalk 程序集时出现异常"{0}"。 如果一个或多个依赖项不可用，则可能会出现此问题。 若要更正此问题，请尝试以下项之一：1. 将程序集的依赖项复制到同一文件夹。 2. 安装到全局程序集缓存中缺少的依赖项。 |
 
 ## <a name="explanation"></a>解释  
- 此错误表明正在发布的 BizTalk 程序集引用了不在全局程序集缓存 (GAC) 或相同目录中的其他程序集。  
+ 此错误表明正在发布的引用 BizTalk 程序集不在全局程序集缓存 (GAC) 或相同的目录中的另一个程序集。  
 
 ## <a name="user-action"></a>用户操作  
- 除了错误消息中指定的操作之外，将引用程序集移到全局程序集缓存，或将其复制到与 BizTalk 程序集相同的位置。  
+ 除了错误消息中指定的操作，将引用程序集移到全局程序集缓存或将其复制到与 BizTalk 程序集相同的位置  
 
 1. 单击**启动**，依次指向**所有程序**，指向**Visual Studio**，然后单击**Visual Studio**。  
 

@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bdf3ea907ba5905965188d17b3a7493788ef123e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0995e8b96d54593045a0b044d7ec635acff5622e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991342"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371908"
 ---
 # <a name="connect-to-the-siebel-system-in-visual-studio-using-add-adapter-service-reference-plug-in"></a>连接到 Siebel 系统中 Visual Studio 中使用添加适配器服务引用插件
 连接到 Siebel 系统[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]在.NET 编程解决方案中，必须使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]。 本主题说明了如何使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。  
@@ -31,7 +31,7 @@ ms.locfileid: "36991342"
   
    1. 创建 BizTalk 项目使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]。  
   
-   2. 右键单击解决方案资源管理器中的项目，然后单击**添加适配器服务引用**。 此时[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]会打开。  
+   2. 右键单击解决方案资源管理器中的项目，然后单击**添加适配器服务引用**。 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]随即打开。  
   
 2. 从**选择绑定**下拉列表中，选择**siebelBinding**，然后单击**配置**。  
   

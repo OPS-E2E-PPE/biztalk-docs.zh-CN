@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1a5bb38e1ffd8c40e56b6e581273b8507159268b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d6b27b0e0b3f942022472c86d65a943c56068767
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007774"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370067"
 ---
 # <a name="best-practices-to-secure-the-sql-adapter"></a>最佳做法来保护 SQL 适配器
 完全更应遵循的最佳做法保护敏感数据时使用或开发的应用程序使用[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]。  

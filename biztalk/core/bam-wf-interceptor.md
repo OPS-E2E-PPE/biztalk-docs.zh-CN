@@ -1,5 +1,5 @@
 ---
-title: BAM WF 侦听器 |Microsoft 文档
+title: BAM WF 侦听器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: de770da5ee0f5d3270b0ee649b6bda61dc6d156e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 898d3ebae85e3eadd44e27d7d5cb7f1ff32453b1
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231365"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530530"
 ---
 # <a name="bam-wf-interceptor"></a>BAM WF 侦听器
 BAM WF 侦听器向 WF 应用程序内的跟踪数据提供全面支持。  
@@ -32,10 +32,10 @@ BAM WF 侦听器向 WF 应用程序内的跟踪数据提供全面支持。
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [如何为侦听配置工作流 Foundation 应用程序](../core/how-to-configure-a-workflow-foundation-application-for-interception.md)  
+-   [如何配置 Workflow Foundation 应用程序用于侦听](../core/how-to-configure-a-workflow-foundation-application-for-interception.md)  
   
--   [Windows 工作流基础架构](../core/windows-workflow-foundation-schema.md)  
+-   [Windows Workflow Foundation 架构](../core/windows-workflow-foundation-schema.md)  
   
--   [常见的事件筛选器模式](../core/common-event-filter-patterns.md)  
+-   [常用事件筛选模式](../core/common-event-filter-patterns.md)  
   
 -   [Windows Workflow Foundation 中的操作](../core/operations-in-windows-workflow-foundation.md)

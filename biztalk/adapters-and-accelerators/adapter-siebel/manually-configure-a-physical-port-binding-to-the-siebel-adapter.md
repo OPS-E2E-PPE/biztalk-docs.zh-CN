@@ -15,20 +15,20 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 25afdeaf544cddb67440d050690ca8ca08df4547
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 576188121d5dd33541440c8bb34d7b59fc97fb47
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37020029"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371466"
 ---
 # <a name="manually-configure-a-physical-port-binding-to-the-siebel-adapter"></a>手动配置到 Siebel 适配器的物理端口绑定
-本部分提供有关配置信息[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]为使用自定义 WCF 绑定[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 在部署后，适配器，您将能够发送和接收消息从 Siebel 系统使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 部署该适配器的步骤而异的之间的通信方向[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]和[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。 您可以选择配置发送端口或发送接收端口。 下表对这些选项进行了概括介绍：  
+本部分提供有关配置信息[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]为使用自定义 WCF 绑定[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 在部署后，适配器，您将能够发送和接收消息从 Siebel 系统使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 部署该适配器的步骤而异的之间的通信方向[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]和[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。 您可以选择配置发送端口或发送接收端口。 下表总结了你的选择：  
   
 |端口方向|通信模式|可供选择的通信方向|  
 |---|---|---|  
 |Send|单向|我将始终在发送消息此端口上。|  
-|发送-接收|请求-响应|我将发送请求并接收响应。|  
+|发送接收|请求-响应|我将发送请求并接收响应。|  
   
  有关详细信息，请参阅[创建和配置发送端口](../../core/creating-and-configuring-send-ports.md)。
   

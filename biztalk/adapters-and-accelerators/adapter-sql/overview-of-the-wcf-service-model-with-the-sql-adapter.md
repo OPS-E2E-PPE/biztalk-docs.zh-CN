@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 121b425abe1c7c34ba75e535799770031b931525
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b36c80de06955643e0aff9b2261e6c353cff1c37
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997326"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368501"
 ---
 # <a name="overview-of-the-wcf-service-model-with-the-sql-adapter"></a>与 SQL 适配器的 WCF 服务模型概述
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]公开为 WCF 服务的 SQL Server 操作。 若要对 SQL Server 项目，例如若要调用的存储的过程执行操作调用上的适配器，这反过来会对执行 SQL Server 操作的操作。 你的代码因此充当到提供的适配器的 WCF 服务的客户端。  

@@ -13,17 +13,17 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 400d6946235c2137a389b22f639159c9f92d6f4a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 09c39d6bd414a1f9558e058881c41f6dd9bd1e5d
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973150"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531139"
 ---
 # <a name="manage-schemas"></a>管理架构
 
 ## <a name="overiew"></a>概述
-本部分介绍如何使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台来管理架构。 管道和业务流程使用架构来表示将处理的消息。  
+本部分说明了使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台来管理架构。 管道和业务流程使用架构来表示将处理的消息。  
   
  在创建架构[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]并编译到 BizTalk 程序集。 不能单独; 将架构添加到应用程序架构添加到应用程序，如下所示：  
   

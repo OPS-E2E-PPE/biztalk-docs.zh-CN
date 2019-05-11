@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 354b3937036e9cff832b3c0898ea1fa8d41c6377
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6112aef168d95b396a123dc0775724c11a061e32
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966678"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375415"
 ---
 # <a name="manually-configure-a-physical-port-binding-to-the-oracle-e-business-adapter"></a>手动配置到 Oracle E-business 适配器的物理端口绑定
 本部分提供有关配置信息[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]作为 WCF 自定义绑定或通过使用 Wcf-oracleebs 端口[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 在部署后，适配器，您将能够发送和接收消息从 Oracle E-business Suite 使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 部署该适配器的步骤会有所不同，具体取决于：  
@@ -27,7 +27,7 @@ ms.locfileid: "36966678"
   |端口方向|通信模式|可供选择的通信方向|  
   |--------------------|---------------------------|-----------------------------------------------|  
   |Send|单向|我将始终在发送消息此端口上。|  
-  |Receive|单向|始终在此端口上接收消息。|  
+  |Receive|单向|我始终将接收此端口上的消息。|  
   |发送接收|请求-响应|我将发送请求并接收响应。|  
   |接收发送|要求响应|我将接收请求并发送响应。|  
   

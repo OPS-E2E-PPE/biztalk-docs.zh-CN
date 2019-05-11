@@ -1,5 +1,5 @@
 ---
-title: 完成对表使用 WCF 服务模型的 Oracle 数据库中的较大的数据类型的操作 |Microsoft 文档
+title: 完成对表使用 WCF 服务模型的 Oracle 数据库中的大型数据类型的操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,24 +15,24 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 88ae5a616e71e27a4d6fa8cd27473665f7bc96b3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7af4542dae7dc2370058dfc715d455ec571f776e
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22215605"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528933"
 ---
-# <a name="complete-operations-on-tables-with-large-data-types-in-oracle-database-using-the-wcf-service-model"></a>完成对表使用 WCF 服务模型的 Oracle 数据库中的较大的数据类型的操作
-本部分包含有关如何以调用 WCF 服务模型中的 ReadLOB 和 UpdateLOB 操作的信息。 表和视图包含 LOB 列; 中加以表示的 ReadLOB 和 UpdateLOB 操作这就是用于存储 Oracle 大型对象 (LOB) 数据的列。 有关支持的 Oracle LOB 数据类型的概述[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]和 ReadLOB 和 UpdateLOB 操作，请参阅[对表和视图，包含 LOB 数据 Oracle 数据库中的操作](../../adapters-and-accelerators/adapter-oracle-database/operations-on-tables-and-views-that-contain-lob-data-in-oracle-database.md)。  
+# <a name="complete-operations-on-tables-with-large-data-types-in-oracle-database-using-the-wcf-service-model"></a>完成对表使用 WCF 服务模型的 Oracle 数据库中的大型数据类型的操作
+本部分包含有关如何调用 WCF 服务模型从 ReadLOB 和 UpdateLOB 操作的信息。 ReadLOB 和 UpdateLOB 操作提供的表和视图包含 LOB 列;这是用于存储 Oracle 大型对象 (LOB) 数据的列。 有关支持的 Oracle LOB 数据类型的概述[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]和 ReadLOB 和 UpdateLOB 操作，请参阅[对表和视图，包含 LOB 数据在 Oracle 数据库中操作](../../adapters-and-accelerators/adapter-oracle-database/operations-on-tables-and-views-that-contain-lob-data-in-oracle-database.md)。  
   
 > [!IMPORTANT]
->  LOB 数据列可以包含大量的数据-最多 4 千兆字节 (GB)。 使用 WCF 客户端以操作的 LOB 列的一个明显的限制是 WCF 服务模型仅支持 UpdateLOB 操作 ReadLOB 操作流式处理的数据。 这是因为 WCF 要求进行流式处理从服务模型，要进行流处理的参数必须是其方向中的唯一参数。 UpdateLOB 操作具有两个其他 IN 参数 （列名称和行筛选器） 除了 LOB 数据中;为此，流式处理不支持对其在 WCF 服务模型中。 因此，如果你使用大量的数据进行更新 LOB 列，则你可能想要使用 WCF 通道模型。 有关如何使用 WCF 通道模型进行流式处理使用 UpdateLOB 操作的 LOB 数据的详细信息，请参阅[流式处理 Oracle LOB 数据类型使用 WCF 通道模型](../../adapters-and-accelerators/adapter-oracle-database/streaming-oracle-database-lob-data-types-using-the-wcf-channel-model.md)。  
+>  LOB 数据列可以包含大量数据，最多 4 千兆字节 (GB)。 使用 WCF 客户端对 LOB 列的一个明显的限制是 WCF 服务模型仅支持 UpdateLOB 操作 ReadLOB 操作流式处理的数据。 这是因为 WCF 需要，对于流式处理从服务模型的操作，要进行流处理的参数必须是其方向中的唯一参数。 UpdateLOB 操作有两个其他 IN 参数 （列名称和行筛选器） 除了 LOB 数据;出于此原因，流式处理不支持对其在 WCF 服务模型中。 因此，如果您正在更新 LOB 列包含大量的数据，你可能想要使用的 WCF 通道模型。 有关如何使用 WCF 通道模型进行流式处理使用 UpdateLOB 操作的 LOB 数据的详细信息，请参阅[流式处理 Oracle LOB 数据类型使用 WCF 通道模型](../../adapters-and-accelerators/adapter-oracle-database/streaming-oracle-database-lob-data-types-using-the-wcf-channel-model.md)。  
   
-## <a name="about-the-examples-used-in-this-topic"></a>有关在本主题中使用的示例  
+## <a name="about-the-examples-used-in-this-topic"></a>有关使用在本主题中的示例  
  本主题中的示例使用 /SCOTT/CUSTOMER 表。 此表包含一个名为照片的 BLOB 列。使用 SDK 示例提供了一个脚本来生成此表。 有关 SDK 示例的详细信息，请参阅[SDK 中的示例](../../core/samples-in-the-sdk.md)。  
   
 ## <a name="the-wcf-client-class"></a>WCF 客户端类  
- 下面的示例演示上 /SCOTT/CUSTOMER 表的 ReadLOB 和 UpdateLOB 操作生成的 WCF 客户端类的方法签名。  
+ 下面的示例演示对 /SCOTT/CUSTOMER 表的 ReadLOB 和 UpdateLOB 操作生成的 WCF 客户端类的方法签名。  
   
 ```  
 public partial class SCOTTTableCUSTOMERClient : System.ServiceModel.ClientBase<SCOTTTableCUSTOMER>,   
@@ -45,23 +45,23 @@ public partial class SCOTTTableCUSTOMERClient : System.ServiceModel.ClientBase<S
 ```  
   
 > [!NOTE]
->  请注意， **ReadLOB**返回数据流，但**UpdateLOB**不对进行操作流。  
+>  请注意， **ReadLOB**返回数据流，但这**UpdateLOB**不能运行在流上。  
   
 ## <a name="invoking-the-readlob-and-updatelob-operations"></a>调用 ReadLOB 和 UpdateLOB 操作  
- 这两个**ReadLOB**和**UpdateLOB**方法可以仅应用于单个数据库行中的单个 LOB 列。 设置以下参数来标识目标列。  
+ 这两个**ReadLOB**并**UpdateLOB**方法只能对单个数据库行中的单个 LOB 列进行操作。 设置以下参数来标识目标列/行。  
   
 |参数|定义|  
 |---------------|----------------|  
-|LOB_COLUMN|标识由筛选器参数; 行中的目标列的名称例如，"照片"。|  
-|FILTER|SQL SELECT 语句的 WHERE 子句，指定目标行中; 的内容例如，"名称 = 李杰"。 筛选器必须指定一个且只有一个行。 如果在筛选器匹配多个行：<br /><br /> -   **ReadLOB**返回第一个匹配行的 LOB 数据。<br />-   **UpdateLOB**引发异常。|  
+|LOB_COLUMN|标识由筛选器参数; 在行中的目标列的名称例如，"照片"。|  
+|FILTER|SQL SELECT 语句的 WHERE 子句，指定目标行; 的内容例如，"名称 = Kim Ralls'"。 筛选器必须指定一个且只有一个行。 如果在筛选器匹配多个行：<br /><br /> -   **ReadLOB**返回 LOB 数据的第一个匹配行。<br />-   **UpdateLOB**将引发异常。|  
   
 > [!NOTE]
 >  返回的流**ReadLOB**不支持**Seek**。 这意味着，属性，如**长度**不支持，要么。  
   
 > [!CAUTION]
->  **UpdateLOB**必须在事务范围内执行操作。 此外， **UseAmbientTransaction**绑定属性必须设置为**true**之前执行**UpdateLOB**操作。  
+>  **UpdateLOB**必须在事务范围内执行操作。 此外， **UseAmbientTransaction**绑定属性必须设置为**true**才能执行**UpdateLOB**操作。  
   
- 下面的代码演示如何使用 WCF 客户端来更新 BLOB 照片表的列中 /SCOTT/CUSTOMER 从文件和读取新的列数据保存到文件。 SDK 示例中，可以找到完整的示例。 有关 SDK 示例的详细信息，请参阅[SDK 中的示例](../../core/samples-in-the-sdk.md)。  
+ 以下代码演示如何使用 WCF 客户端来更新 BLOB PHOTO 列 /SCOTT/CUSTOMER 表从一个文件中的和读取新的列数据保存到文件。 SDK 示例中，可以找到完整示例。 有关 SDK 示例的详细信息，请参阅[SDK 中的示例](../../core/samples-in-the-sdk.md)。  
   
 ```  
 using System;  
@@ -158,5 +158,5 @@ namespace OracleLobOpsSnippetSM
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发 Oracle 数据库应用程序使用 WCF 服务模型](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-service-model.md)

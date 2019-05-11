@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7f7ff1e686fd8de344c4de4513fbda84003c69a8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 90a937d53b9a8f09ad8ed20633cca1bedfefc6a5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982630"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368114"
 ---
 # <a name="samples-for-the-sql-adapter"></a>SQL 适配器示例
 
@@ -30,7 +30,7 @@ ms.locfileid: "36982630"
   
 - WCF 通道模型示例  
   
-这些示例目前[BizTalk 适配器包 2010年: SQL 适配器示例](https://www.microsoft.com/download/details.aspx?id=22455)。 包含表，在示例中，例如，数据库，用于创建对象的 SQL 脚本和过程。 
+这些示例是在[BizTalk 适配器包 2010年:SQL 适配器示例](https://www.microsoft.com/download/details.aspx?id=22455)。 包含表，在示例中，例如，数据库，用于创建对象的 SQL 脚本和过程。 
 
 > [!NOTE]
 > [!INCLUDE[files-need-updated](../../includes/files-need-updated.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "36982630"
 |      TypedPolling       |   演示如何使用的适配器的 SQL Server 数据库上执行强类型轮询[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。   |
 |   FILESTREAMOperation   | 演示如何执行 FILESTREAM 操作上使用的适配器的 SQL Server 2008 数据库[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 |
 | IncrementalNotification | 演示如何从 SQL Server 数据库使用的适配器接收增量通知[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 |
-| Employee_PurchaseOrder  |                  示例基于[教程 2： 员工-采购订单流程使用 SQL 适配器](tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)。                  |
+| Employee_PurchaseOrder  |                  示例基于[教程 2:员工-采购订单流程使用 SQL 适配器](tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)。                  |
   
 ## <a name="wcf-service-model-samples"></a>WCF 服务模型示例   
   

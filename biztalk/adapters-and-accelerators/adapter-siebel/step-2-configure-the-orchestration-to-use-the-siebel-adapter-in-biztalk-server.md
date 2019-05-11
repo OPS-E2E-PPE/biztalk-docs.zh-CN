@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 使用 Siebel 适配器在 BizTalk Server 管理控制台中配置业务流程 |Microsoft Docs
+title: 第 2 步：使用 Siebel 适配器在 BizTalk Server 管理控制台中配置业务流程 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f779c9b347c43fb9bd2a6dcdbdb3c33ac8ad09c5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8415e273956a430fb56fea579e8cbb2a0de880dd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009126"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370618"
 ---
-# <a name="step-2-configure-the-orchestration-in-biztalk-server-administration-console-with-the-siebel-adapter"></a>步骤 2： 使用 Siebel 适配器在 BizTalk Server 管理控制台中配置业务流程
+# <a name="step-2-configure-the-orchestration-in-biztalk-server-administration-console-with-the-siebel-adapter"></a>第 2 步：使用 Siebel 适配器在 BizTalk Server 管理控制台中配置业务流程
 ![步骤 2 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")  
   
- **完成时间：** 10 分钟  
+ **若要完成的时间：** 10 分钟。  
   
- **目标：** 在此步骤中，执行以下任务：  
+ **目标：** 在此步骤中，您可以执行以下任务：  
   
 - 创建 WCF 自定义发送接收端口以发送和接收消息从 Siebel 系统使用[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。 配置此端口以使用在上一步中创建的映射。  
   
@@ -79,7 +79,7 @@ ms.locfileid: "37009126"
       有关配置应用程序的详细信息，请参阅"如何配置应用程序的"网址[ http://go.microsoft.com/fwlink/?LinkId=102360 ](http://go.microsoft.com/fwlink/?LinkId=102360)。  
   
 ## <a name="next-steps"></a>后续步骤  
- 你现在已经完成迁移到 BizTalk 项目，将消息发送到使用基于 WCF 的 Siebel 系统 vPrev BizTalk 项目的[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。 您现在必须测试已迁移的 BizTalk 应用程序通过发送请求消息调用帐户业务组件上的插入操作，如中所述[第 3 步： 测试迁移应用程序使用 Siebel 适配器](../../adapters-and-accelerators/adapter-siebel/step-3-test-the-migrated-application-with-the-siebel-adapter.md)。  
+ 你现在已经完成迁移到 BizTalk 项目，将消息发送到使用基于 WCF 的 Siebel 系统 vPrev BizTalk 项目的[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。 您现在必须测试已迁移的 BizTalk 应用程序通过发送请求消息调用帐户业务组件上的插入操作，如中所述[步骤 3:测试迁移应用程序使用 Siebel 适配器](../../adapters-and-accelerators/adapter-siebel/step-3-test-the-migrated-application-with-the-siebel-adapter.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [教程 2： 迁移中 Siebel 的 BizTalk 项目](../../adapters-and-accelerators/adapter-siebel/tutorial-2-migrating-biztalk-projects-in-siebel.md)
+ [教程 2：在 Siebel 的 BizTalk 项目迁移](../../adapters-and-accelerators/adapter-siebel/tutorial-2-migrating-biztalk-projects-in-siebel.md)

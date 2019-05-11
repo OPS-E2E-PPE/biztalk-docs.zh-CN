@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f9edb8f9cc3c5db67e75ff47125e0d58891a5173
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5ae521b67445073dbb66f625f8eb5bababe8976b
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992038"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530076"
 ---
 # <a name="repairing-a-message"></a>修复消息
 本部分介绍如何修复未通过验证的消息。  
@@ -46,7 +46,7 @@ ms.locfileid: "36992038"
    > [!NOTE]
    >  如果错误发生在伴随下拉列表的字段，你将不能以查看导致了错误的原始值。 该字段将显示"选择"，而不是原始值。 从下拉列表中选择适当的值。  
 
-8. 若要确保将验证该消息，请单击**验证**当前角色中： 修复窗格中，然后依次**验证消息**。 验证是否显示结果窗格**该消息是否有效**。  
+8. 若要确保将验证该消息，请单击**验证**当前角色中：修复窗格中，然后依次**验证消息**。 验证是否显示结果窗格**该消息是否有效**。  
 
 9. 在中[!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)] [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] 2007年窗口中，单击**提交**。  
 

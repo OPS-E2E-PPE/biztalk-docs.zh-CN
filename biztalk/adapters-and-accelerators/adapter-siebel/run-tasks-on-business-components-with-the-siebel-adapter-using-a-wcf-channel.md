@@ -1,5 +1,5 @@
 ---
-title: 使用 Siebel 适配器使用 WCF 通道模型运行业务组件上的操作 |Microsoft 文档
+title: 使用 Siebel 适配器使用 WCF 通道模型运行业务组件上的操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bf0aa0287eb13f522324080ce97fe357540947cd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0e1399e9da080f09d4426e6e8ab0091ff60a7f85
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22222021"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370963"
 ---
 # <a name="run-operations-on-business-components-with-the-siebel-adapter-using-the-wcf-channel-model"></a>使用 Siebel 适配器使用 WCF 通道模型运行业务组件上的操作
-本部分演示如何在使用中创建的通道的 Siebel 上执行操作[创建一个通道，使用 Siebel](../../adapters-and-accelerators/adapter-siebel/create-a-channel-using-siebel.md)。  
+本部分演示如何执行操作上使用中创建的通道的 Siebel[创建一个通道，使用 Siebel](../../adapters-and-accelerators/adapter-siebel/create-a-channel-using-siebel.md)。  
   
 ```  
 // create binding  
@@ -63,6 +63,6 @@ channel.Close();
 factory.Close();  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发 Siebel 应用程序使用 WCF 通道模型](../../adapters-and-accelerators/adapter-siebel/develop-siebel-applications-using-the-wcf-channel-model3.md)   
  [使用 Siebel 适配器使用 WCF 服务模型运行业务组件上的操作](../../adapters-and-accelerators/adapter-siebel/run-operations-on-business-components-with-the-siebel-adapter-using-wcf-service.md)

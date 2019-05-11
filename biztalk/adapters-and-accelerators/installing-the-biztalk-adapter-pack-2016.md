@@ -13,19 +13,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6eef8511564f134f96745667b94f69f6fb263e17
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8ccbffa606db9f26448ee74198eeb4ec67bee94d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000382"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363953"
 ---
 # <a name="install-the-biztalk-adapter-pack-2016"></a>安装 BizTalk 适配器包 2016
 安装[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]以下两种方式：  
 
--   **在交互模式下**： 运行安装程序向导  
+-   **在交互模式下**:运行安装程序向导  
 
--   **在静默模式下**： 使用命令行  
+-   **在静默模式下**:使用命令行  
 
 > [!IMPORTANT]
 > - 必须在其中安装的计算机上具有管理特权[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]，不考虑是否要安装使用向导或命令行。  
@@ -77,7 +77,7 @@ ms.locfileid: "37000382"
 
 2. 选择**安装 Microsoft BizTalk 适配器**。 在下一步的窗口中，列出了任何缺少的必备程序。 如果缺少任一元素，然后选择缺少的程序，并为您的安装程序安装它。 
 
-   例如，选择**步骤 2： 安装 Microsoft BizTalk Adapter Pack**或**步骤 3： 安装 Microsoft BizTalk 适配器包 (x64)**。  
+   例如，选择**步骤 2:安装 Microsoft BizTalk 适配器包**或**步骤 3:安装 Microsoft BizTalk 适配器包 (x64)**。  
 
    > [!NOTE]
    >  如果您正在安装[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]虚拟机上安装向导可能会显示一条消息，它检查可用磁盘空间。 如果挂起或只是坐在那里，会出现此消息，则我们建议您**在无提示模式下安装**（在本主题中）。  
@@ -105,7 +105,7 @@ ms.locfileid: "37000382"
 
     3.  展开**ADO 提供程序**，然后选择不想要安装的提供程序。  
 
-    4.  选择“下一步” 。  
+    4.  选择“**下一步**”。  
 
 7. 选择“安装”。  
 
@@ -117,7 +117,7 @@ ms.locfileid: "37000382"
 
      [CEIP](http://go.microsoft.com/fwlink/p/?LinkId=144699)提供了详细信息。  
 
-     选择“确定”。 
+     选择 **确定**。 
 
    > [!NOTE]
    >  通过在从修复模式下运行安装程序可以随时更改此设置**程序**。  
@@ -136,8 +136,8 @@ ms.locfileid: "37000382"
 |           [!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)]           |                                                                             SapBaseAdapterFeature                                                                              |
 |        [!INCLUDE[adaptersiebel_short](../includes/adaptersiebel-short-md.md)]        |                                                                            SiebelBaseAdapterFeature                                                                            |
 |            [!INCLUDE[adaptersqlshort](../includes/adaptersqlshort-md.md)]            |                                                                                   SqlFeature                                                                                   |
-|        [!INCLUDE[adoprovidersapshort](../includes/adoprovidersapshort-md.md)]        |     SapAdoFeature<br /><br /> **请注意**： 必须提供此值，仅当你安装[!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)]还。      |
-|     [!INCLUDE[adoprovidersiebelshort](../includes/adoprovidersiebelshort-md.md)]     | SiebelAdoFeature<br /><br /> **请注意**： 必须提供此值，仅当你安装[!INCLUDE[adaptersiebel_short](../includes/adaptersiebel-short-md.md)]还。 |
+|        [!INCLUDE[adoprovidersapshort](../includes/adoprovidersapshort-md.md)]        |     SapAdoFeature<br /><br /> **请注意**:必须提供此值，仅当你安装[!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)]还。      |
+|     [!INCLUDE[adoprovidersiebelshort](../includes/adoprovidersiebelshort-md.md)]     | SiebelAdoFeature<br /><br /> **请注意**:必须提供此值，仅当你安装[!INCLUDE[adaptersiebel_short](../includes/adaptersiebel-short-md.md)]还。 |
 |                                    所有组件                                    |                                                                                      ALL                                                                                       |
 
 > [!IMPORTANT]
@@ -220,7 +220,7 @@ ms.locfileid: "37000382"
      msiexec /i AdaptersSetup.msi /qn ADDLOCAL=SapBaseAdapterFeature,SapAdoFeature,SiebelBaseAdapterFeature  
      ```  
 
-   - 您还可以选择无提示安装的一部分注册 CEIP。 类型：  
+   - 您还可以选择无提示安装的一部分注册 CEIP。 键入：  
 
      ```  
      msiexec /i AdaptersSetup.msi /qn CEIP_OPTIN=true  

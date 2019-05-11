@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: de5fff554249546244c59aed5c1dceff9a527411
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1884c5f8cf558bfa2901f34fb71858d4281a21db
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006062"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528969"
 ---
 # <a name="overview-of-the-wcf-service-model-with-the-oracle-database-adapter"></a>使用 Oracle 数据库适配器的 WCF 服务模型概述
 当使用操作的[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]图面，您的代码可作为客户端或服务到适配器。 对于几乎所有操作的[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]图面，您的代码是客户端。 也就是说，你的应用程序调用适配器; 上的操作若要将记录插入到 Oracle 表的示例。 为其代码充当到服务的唯一操作[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]用于 POLLINGSMT 操作。 在这种情况下，适配器将轮询查询操作的结果发送到你的应用程序。  

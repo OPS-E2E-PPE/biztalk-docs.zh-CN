@@ -19,12 +19,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c9c3bbf45074024b8745b845b3f9ca85f5ff814e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 73c994369709c2c0cf534f05a855ab1e9662b3a4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972222"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373162"
 ---
 # <a name="operations-on-idocs-in-sap"></a>在 SAP 中的 Idoc 的操作
 Idoc 是 SAP 支持用于以异步方式与 SAP 和非 SAP 系统进行通信的标准化类似于 EDI 的文档。 Idoc 用于发送和接收"business"文档，例如销售订单，例如，与贸易合作伙伴的 SAP 系统或外部程序。  

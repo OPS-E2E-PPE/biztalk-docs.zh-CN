@@ -12,17 +12,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa934db02ba9f82134acd5c86da17c6ea240706e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 873a9d6ab13e152dadf73d20941da8e6e9ce725f
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008214"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529753"
 ---
 # <a name="upgrade-biztalk-accelerator-for-swift"></a>升级 BizTalk Accelerator for SWIFT
 升级[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef_md](../../includes/a4swift-currentversion-firstref-md.md)]BizTalk 服务器上。 
 
-### <a name="before-you-upgrade"></a>升级之前需完成的操作
+### <a name="before-you-upgrade"></a>升级之前
 
 * 运行升级的用户必须是 BizTalk Server Administrators 组的成员。
 * 在执行时，必须运行 SQL Server (MSSQLSERVER) 服务[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]升级。
@@ -33,14 +33,14 @@ ms.locfileid: "37008214"
 * 升级到[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]通过运行[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]安装。 安装程序将迁移现有[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]配置信息。 
 * 升级可能会删除任何已弃用的功能的文件夹和快捷方式。
 
-## <a name="supported-upgrade-paths"></a>受支持的升级路径  
+## <a name="supported-upgrade-paths"></a>支持的升级路径  
  下表列出了受支持[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]可以升级的版本。 "是"表示该版本可以升级。 "否"表示该版本不可升级。 如果[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]版本未列出，该版本无法升级。  
 
 
 |                                                                                                       | [!INCLUDE[bts2016_md](../../includes/bts2016-md.md)] | [!INCLUDE[bts2013r2](../../includes/bts2013r2-md.md)] | BizTalk Server 2013 |
 |-------------------------------------------------------------------------------------------------------|------------------------------------------------------|-------------------------------------------------------|---------------------|
-| [!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)] 2013 |                         是                          |                          是                          |         “否”          |
-| [!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)] 2010 |                          “否”                          |                          是                          |         是         |
+| [!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)] 2013 |                         是                          |                          是                          |         否          |
+| [!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)] 2010 |                          否                          |                          是                          |         是         |
 
 ## <a name="upgrade-a4swift"></a>升级 A4SWIFT
 
@@ -55,7 +55,7 @@ ms.locfileid: "37008214"
 * Microsoft.Solutions.FinancialServices.SWIFT.FrrOrchestration
 * Microsoft.Solutions.FinancialServices.SWIFT.FrrSchemas
 * Microsoft.Solutions.FinancialServices.SWIFT.MrsrService
-* Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas。
+* Microsoft.Solutions.FinancialServices.SWIFT.RuntimeSchemas.
 
 5. 运行[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]安装程序以升级。
 
@@ -85,7 +85,7 @@ ms.locfileid: "37008214"
 8. 删除**a4swift_limited** db_denydatareader 角色，如下所示的成员：
     1. 打开 SQL Server Management Studio。 在 Management Studio 中，展开**数据库**，展开**BizTalk Accelerator for SWIFT**，然后选择**角色**。
     2. 双击**a4swift_limited**。 选择**权限**，并检查 SELECT`Bic11`和`Bic10`。 选择**确定**，并关闭属性。
-    3. 双击**db_denydatareader**。 在用户字段中，选择**a4swift_limited**，然后选择**删除**。 选择“确定”。
+    3. 双击**db_denydatareader**。 在用户字段中，选择**a4swift_limited**，然后选择**删除**。 选择 **确定**。
 
 9. 运行 QFERollUpDBUpdate 脚本：
 
@@ -99,10 +99,10 @@ ms.locfileid: "37008214"
     
 ## <a name="upgrading-in-a-multi-server-environment"></a>在多服务器环境中升级
 
-在多服务器[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]环境中的，所有服务器上升级 BizTalk Server 中，然后再升级[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]。 请按以下顺序迁移服务器：
+在多服务器[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]环境中的，所有服务器上升级 BizTalk Server 中，然后再升级[!INCLUDE[A4SWIFT_CurrentVersion_abbrev_md](../../includes/a4swift-currentversion-abbrev-md.md)]。 按以下顺序将服务器迁移：
 
 * 承载 BizTalk 组的服务器
-* 各个处理节点
+* 每个处理节点
 * BAM 门户服务器
 
 

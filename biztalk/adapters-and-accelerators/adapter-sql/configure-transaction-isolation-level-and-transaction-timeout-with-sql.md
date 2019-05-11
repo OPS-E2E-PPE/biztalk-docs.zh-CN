@@ -12,15 +12,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f2783b8741a7f8a703ad8aae22db5b114ea20f0b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 031f963573d1780451306036f9954406c4196082
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013134"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369989"
 ---
 # <a name="configure-transaction-isolation-level-and-transaction-timeout-with-sql"></a>使用 SQL 配置事务隔离级别和事务超时
-执行 （轮询和通知） 的入站的操作时使用[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]与[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，您应适当地配置事务隔离级别和事务超时值。 为此，请执行以下操作：  
+执行 （轮询和通知） 的入站的操作时使用[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]与[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，您应适当地配置事务隔离级别和事务超时值。 若要执行此操作：  
 
 1. 启动[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。  
 
@@ -46,7 +46,7 @@ ms.locfileid: "37013134"
 
 12. 在左窗格中**Wcf-custom 传输属性**，选择**sqlAdapterInboundTransactionBehavior**服务**ServiceBehavior**。 对于接收 （入站的操作消息），其中一个可以使用 sqlAdapterInboundTransactionBehavior 来控制的隔离级别和默认值是**ReadCommitted**。  
 
-13. 在右窗格中**Wcf-custom 传输属性**，指定相应的值**transactionIsolationLevel**并**transactionTimeout**参数。 可以选择任意下列事务隔离级别： **Serializable**， **RepeatableRead**， **ReadCommitted**， **ReadUncommitted**，**快照**，**混沌测试**，并且**未指定**。  
+13. 在右窗格中**Wcf-custom 传输属性**，指定相应的值**transactionIsolationLevel**并**transactionTimeout**参数。 您可以选择任意下列事务隔离级别：**可序列化**， **RepeatableRead**， **ReadCommitted**， **ReadUncommitted**，**快照**， **混沌测试**，并**未指定**。  
 
     > [!NOTE]
     >  事务隔离级别的默认值是**Serializable** WCF SQL 适配器的入站和出站操作。 有关这些事务隔离级别的信息，请参阅**成员**在部分[隔离级别枚举](http://go.microsoft.com/fwlink/?LinkId=126983)(http://go.microsoft.com/fwlink/?LinkId=126983)。  

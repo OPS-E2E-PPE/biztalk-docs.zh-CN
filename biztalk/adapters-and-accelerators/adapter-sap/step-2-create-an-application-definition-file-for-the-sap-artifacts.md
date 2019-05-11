@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 为 SAP 项目创建应用程序定义文件 |Microsoft Docs
+title: 第 2 步：为 SAP 项目创建应用程序定义文件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,19 +16,19 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 92e97a54a6818456efd2f4ac55ca7e2fc5bc7c35
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b1d2953775a948aa20009cf419bd253cafc9a5e1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970382"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372824"
 ---
-# <a name="step-2-create-an-application-definition-file-for-the-sap-artifacts"></a>步骤 2： 为 SAP 项目创建应用程序定义文件
+# <a name="step-2-create-an-application-definition-file-for-the-sap-artifacts"></a>第 2 步：为 SAP 项目创建应用程序定义文件
 ![步骤 2，共 4 步](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
   
- **完成时间：** 15 分钟  
+ **若要完成的时间：** 15 分钟  
   
- **目标：** Microsoft SharePoint Server 中的业务数据目录功能公开，并将业务 (LOB) 应用程序中的数据合并到门户。 若要将此数据合并到您的门户网站，必须生成可以使用 Microsoft Office SharePoint Server 应用程序定义文件。  
+ **目标：** Microsoft SharePoint Server 中的业务数据目录功能公开，并将业务线 (LOB) 应用程序中的数据合并到门户。 若要将此数据合并到您的门户网站，必须生成可以使用 Microsoft Office SharePoint Server 应用程序定义文件。  
   
  Microsoft Office SharePoint Server 2007 SDK 提供的 Business Data Catalog Definition Editor 工具，可为业务数据目录中创建应用程序定义文件。 此工具自动生成 XML 文件，以便定义文件中，因此不需要手动创建该文件在 XML 编辑器。  
   
@@ -42,11 +42,11 @@ ms.locfileid: "36970382"
   
   对于每个这些要求，必须完成一组 Business Data Catalog Definition Editor tool 中的任务。 本主题提供有关如何执行这些任务的说明。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
   
 -   必须确保您具有 Microsoft Office SharePoint Server 2007 SDK 的一部分安装 Business Data Catalog Definition Editor。 你可以下载从 SDK [ http://go.microsoft.com/fwlink/?LinkId=104130 ](http://go.microsoft.com/fwlink/?LinkId=104130)。  
   
--   发布 WCF 服务，如中所述[步骤 1： 将 SAP 项目作为 WCF 服务发布](../../adapters-and-accelerators/adapter-sap/step-1-publish-the-sap-artifacts-as-a-wcf-service.md)。  
+-   发布 WCF 服务，如中所述[步骤 1:将 SAP 项目作为 WCF 服务发布](../../adapters-and-accelerators/adapter-sap/step-1-publish-the-sap-artifacts-as-a-wcf-service.md)。  
   
 ## <a name="creating-an-application-definition-file"></a>创建应用程序定义文件  
  本主题提供创建 WCF 服务应用程序定义文件的分步说明。  
@@ -70,7 +70,7 @@ ms.locfileid: "36970382"
   
     其中 Rfc.svc 是 Rfc 协定创建的文件。  
   
-    当测试是否成功，如本主题中所述发布 WCF 服务时，该 URL 才可用[步骤 1： 将 SAP 项目作为 WCF 服务发布](../../adapters-and-accelerators/adapter-sap/step-1-publish-the-sap-artifacts-as-a-wcf-service.md)。  
+    测试是否成功，如本主题中所述发布 WCF 服务时，URL 是可用[步骤 1:将 SAP 项目作为 WCF 服务发布](../../adapters-and-accelerators/adapter-sap/step-1-publish-the-sap-artifacts-as-a-wcf-service.md)。  
   
 5. 单击 **“连接”**。  
   
@@ -105,7 +105,7 @@ ms.locfileid: "36970382"
     5.  在属性窗格中，键入**SalesOrder**中**名称**框。  
   
 ### <a name="specify-user-name-and-password-headers-for-the-methods"></a>为方法中指定用户名和密码标头  
- 在 SAP 系统中创建所选 Rfc 的 WCF 服务，指定用户名称和密码标头为终结点行为配置的一部分。 请参阅[步骤 1： 将 SAP 项目作为 WCF 服务发布](../../adapters-and-accelerators/adapter-sap/step-1-publish-the-sap-artifacts-as-a-wcf-service.md)。 必须指定方法属性相同的值。  
+ 在 SAP 系统中创建所选 Rfc 的 WCF 服务，指定用户名称和密码标头为终结点行为配置的一部分。 请参阅[步骤 1:将 SAP 项目作为 WCF 服务发布](../../adapters-and-accelerators/adapter-sap/step-1-publish-the-sap-artifacts-as-a-wcf-service.md)。 必须指定方法属性相同的值。  
   
 ##### <a name="to-specify-user-name-and-password-headers"></a>若要指定用户名称和密码标头  
   
@@ -152,7 +152,7 @@ ms.locfileid: "36970382"
   
 4.  单击“确定” 。  
   
-### <a name="requirement-1-search-for-customers-based-on-customer-name"></a>要求 1： 客户基于客户名称搜索  
+### <a name="requirement-1-search-for-customers-based-on-customer-name"></a>要求 1:客户基于客户名称搜索  
  若要创建可用于搜索客户基于客户名称的应用程序定义文件，必须执行以下一组任务。  
   
 -   在 SD_RFC_CUSTOMER_GET 方法中，创建一个筛选器，并将其映射到存储的客户名称的参数。  
@@ -205,7 +205,7 @@ ms.locfileid: "36970382"
   
      ![指定方法实例的名称](../../adapters-and-accelerators/adapter-sap/media/e44e02e8-b9fb-40ca-a55d-8bdc7ace02b5.gif "e44e02e8-b9fb-40ca-a55d-8bdc7ace02b5")  
   
-### <a name="requirement-2-retrieve-details-for-a-specific-customer-from-the-list-of-customers"></a>要求 2： 检索客户列表从特定客户的详细信息  
+### <a name="requirement-2-retrieve-details-for-a-specific-customer-from-the-list-of-customers"></a>要求 2:检索客户列表从特定客户的详细信息  
  若要创建可用于搜索客户基于客户名称的应用程序定义文件，必须执行以下一组任务。  
   
 -   在 SD_RFC_CUSTOMER_GET 方法中，创建一个标识符，并将其映射到参数，用于存储的客户编号。  
@@ -268,7 +268,7 @@ ms.locfileid: "36970382"
   
      ![指定方法实例的名称](../../adapters-and-accelerators/adapter-sap/media/970f543c-cd06-4921-86c9-c110abdc7994.gif "970f543c-cd06-4921-86c9-c110abdc7994")  
   
-### <a name="requirement-3-retrieve-sales-order-details-for-a-specific-customer-from-the-list-of-customers"></a>要求 3： 检索客户列表从特定客户的销售订单详细信息  
+### <a name="requirement-3-retrieve-sales-order-details-for-a-specific-customer-from-the-list-of-customers"></a>要求 3:检索客户列表从特定客户的销售订单详细信息  
  若要创建可用于检索特定客户的销售订单详细信息的应用程序定义文件，必须执行以下一组任务。  
   
 -   设置之间的关联**客户**并**SalesOrder**实体。  
@@ -353,7 +353,7 @@ ms.locfileid: "36970382"
 2.  将文件另存 Customer_Order.xml。  
   
 ## <a name="next-steps"></a>后续步骤  
- 现在必须创建 SharePoint 应用程序以从 SAP 系统中检索数据。 请参阅[第 3 步： 创建 SharePoint 应用程序检索的数据从 SAP](../../adapters-and-accelerators/adapter-sap/step-3-create-a-sharepoint-application-to-retrieve-data-from-sap.md)有关的说明。  
+ 现在必须创建 SharePoint 应用程序以从 SAP 系统中检索数据。 请参阅[步骤 3:创建 SharePoint 应用程序检索的数据从 SAP](../../adapters-and-accelerators/adapter-sap/step-3-create-a-sharepoint-application-to-retrieve-data-from-sap.md)有关的说明。  
   
 ## <a name="see-also"></a>请参阅  
- [教程 1：在 SharePoint 上提供来自 SAP 系统的数据](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md)
+ [教程 1:在 SharePoint 站点上提供来自 SAP 系统的数据](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md)

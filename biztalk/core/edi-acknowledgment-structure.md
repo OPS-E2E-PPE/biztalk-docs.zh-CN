@@ -1,5 +1,5 @@
 ---
-title: EDI 确认结构 |Microsoft 文档
+title: EDI 确认结构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f52b14af05b009615ad0578702ffbc886603f818
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9cbbb6c1c505078dad24f85a6a9fce34920bc015
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239085"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530797"
 ---
 # <a name="edi-acknowledgment-structure"></a>EDI 确认结构
 本部分包含的主题介绍 X12 和 EDIFACT 编码的确认消息的结构。  

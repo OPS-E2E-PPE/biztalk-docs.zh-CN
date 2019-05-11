@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8991590d97d70fc0e2090f11f05f8882b0ca3396
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 72d99666ef2e3eff4504ebce35df33524be0d64f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004710"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363384"
 ---
 # <a name="read-how-wcf-is-used-by-the-wcf-lob-adapter-sdk"></a>读取 WCF 如何使用 WCF LOB 适配器 SDK
 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]扩展[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]通道体系结构，并依赖于[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]运行时用于提供公开适配器功能和交换信息所需的基本消息传递服务。 

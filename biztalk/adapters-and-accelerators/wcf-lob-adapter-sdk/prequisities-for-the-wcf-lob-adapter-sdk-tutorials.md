@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9e0f1959563b0a0f1273de6341e2402f90f8f34
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 454b2465072ed6cbdb19a1ac6b7cdae672698aeb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995446"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363403"
 ---
 # <a name="prequisities-for-the-wcf-lob-adapter-sdk-tutorials"></a>为了使 WCF LOB 适配器 SDK 教程 Prequisities
 本部分提供有关您应该熟悉以充分利用这些教程中，以及完成所需的软件的概念的详细信息。  
@@ -44,7 +44,7 @@ ms.locfileid: "36995446"
   
 已完成的 Echo 适配器随 BizTalk 安装文件`\BizTalk Server\ASDK_x86\Program Files\WCF LOB Adapter SDK\Documents\Samples`或`\BizTalk Server\ASDK_x64\Program Files\WCF LOB Adapter SDK\Documents\Samples`。
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  这些教程假定您已熟悉以下：  
   
 - 面向对象的软件设计和开发  

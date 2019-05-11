@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 597eca7199a5362fde67b4add5044ca3efe42c2e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e5cff3344128e1471b57b387aaa8597c22a11d85
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013854"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368324"
 ---
 # <a name="receive-query-notifications-from-sql-using-the-wcf-service-model"></a>从使用 WCF 服务模型的 SQL 接收查询通知
 本主题演示如何配置[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]从 SQL Server 数据库接收查询通知消息。 为了演示通知，请考虑表中的，员工，"状态"列。 一条新记录插入到此表时，状态列的值设置为 0。 你可以配置适配器以通过使用用于检索作为"0。 具有状态列的所有记录的 SQL 语句注册通知接收通知 您可以通过指定的 SQL 语句来实现**NotificationStatement**属性绑定。 适配器客户端收到通知后，它可以包含用于执行 SQL Server 数据库上的所有后续任务的逻辑。 在此示例中，为简单起见，适配器客户端列出所有记录表中的将状态列设为"0。  
@@ -282,7 +282,7 @@ namespace SqlAdapterBindingNamespace {
   
    ```  
   
-9. 将服务终结点添加到服务主机。 为此，请执行以下操作：  
+9. 将服务终结点添加到服务主机。 若要执行此操作：  
   
    - 使用在步骤 5 中创建的绑定。  
   

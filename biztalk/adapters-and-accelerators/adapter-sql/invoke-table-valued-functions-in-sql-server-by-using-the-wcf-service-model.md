@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f4243973f6e6b04cddec14261d5b1acedff4b9e0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cea9379337797daec243f2d40b15f183c6f54425
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989158"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369322"
 ---
 # <a name="invoke-table-valued-functions-in-sql-server-by-using-the-wcf-service-model"></a>通过使用 WCF 服务模型中调用 SQL Server 中的表值函数
 可以使用[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)].NET 应用程序使用 WCF 服务模型来调用 SQL Server 中的表值函数中。 该适配器将表值函数公开为可以直接在 SQL Server 调用的方法。 有关如何在适配器支持标量函数的详细信息，请参阅[Execute Table-Valued 函数中使用 SQL 适配器的 SQL Server](../../adapters-and-accelerators/adapter-sql/execute-table-valued-functions-in-sql-server-using-the-sql-adapter.md)。  
@@ -32,16 +32,16 @@ ms.locfileid: "36989158"
   
 |SQL Server 数据库项目|WCF 客户端名称|  
 |----------------------------------|---------------------|  
-|表值函数|客户端 TableValuedFunctions_ [架构]|  
+|表值函数|TableValuedFunctions_[SCHEMA]Client|  
   
  [架构] = 集合的 SQL Server 项目;例如，dbo。  
   
 ### <a name="method-signature-for-invoking-table-valued-functions"></a>用于调用表值函数的方法签名  
  下表显示了对表的基本操作的方法签名。 签名是相同的视图，只不过视图命名空间和名称替换这些表。  
   
-|运算|方法签名|  
+|操作|方法签名|  
 |---------------|----------------------|  
-|表值函数名称|公共 [NAMESPACE] [FUNCTION_NAME] [] [FUNCTION_NAME] (param1，参数 2，...\)|  
+|表值函数名称|public [NAMESPACE][FUNCTION_NAME][] [FUNCTION_NAME](param1, param2, …\)|  
   
  [NAMESPACE] = 命名空间，例如，schemas.microsoft.com.Sql._2008._05.Types.TableFunctionReturnTables.dbo.TVF_EMPLOYEE  
   

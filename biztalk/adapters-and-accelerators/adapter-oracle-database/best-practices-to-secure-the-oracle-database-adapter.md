@@ -23,12 +23,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9500c11c2ff7c1931d6b3c5f6d724bcadf9c56f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ab079e2114eb606ef90e6c40d0857ec8668e1dca
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997310"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529624"
 ---
 # <a name="best-practices-to-secure-the-oracle-database-adapter"></a>最佳做法来保护 Oracle 数据库适配器
 本部分提供了更完整地保护敏感数据，使用或开发使用的应用程序时应遵循的最佳实践[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]。  

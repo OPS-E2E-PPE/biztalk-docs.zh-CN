@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9916dc1328412428e4f21858905a005e35d9d1d3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d8d61bee08f59eb8fc48d989730e2cde053f0942
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013814"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371846"
 ---
 # <a name="connect-to-the-siebel-system-in-visual-studio-using-consume-adapter-service-add-in"></a>连接到 Siebel 系统中 Visual Studio 中使用使用适配器服务外接程序
 [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]安装时安装[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]加载在计算机上安装的所有 WCF 自定义绑定。 若要连接到使用基于 WCF 的 Siebel 系统[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]在 BizTalk 项目中，必须使用**siebelBinding**。  
@@ -42,7 +42,7 @@ ms.locfileid: "37013814"
       | **模板**  | 单击**使用适配器服务**。 |
 
 
-   4. 单击 **“添加”**。 此时[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]会打开。  
+   4. 单击 **“添加”**。 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]随即打开。  
 
 2. 从**选择绑定**下拉列表中，选择**siebelBinding**，然后单击**配置**。  
 

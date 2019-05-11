@@ -12,17 +12,17 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3f57155b386af979f1da52d39d062aff171203b5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 45934085c75092f07264f8ed6fa4f9d6376ffbbb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008198"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372199"
 ---
 # <a name="use-the-data-provider-for-sap-to-create-a-report-server-project"></a>使用适用于 SAP 的数据提供程序来创建报表服务器项目
 必须创建报表服务器项目，使用[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]，若要为 SAP 系统中可用的数据生成报表。 本主题将说明了如何创建报表服务器项目。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  执行本主题中提供的过程之前，先确保已安装了[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]安装时[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]作为的一部分[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装。 有关详细信息[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装，请参阅安装指南位于\<*安装驱动器*\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]\Documents。  
   
 ### <a name="to-create-a-report-server-project"></a>若要创建报表服务器项目  
@@ -55,7 +55,7 @@ ms.locfileid: "37008198"
       |使用此选项|执行的操作|  
       |--------------|----------------|  
       |**使用特定用户名和密码**|指定用户名和密码以连接到 SAP 系统。|  
-      |**提示输入凭据**|生成报表时，SAP 系统的输入的凭据。 **注意：** 凭据指定为此选项将替代凭据，如果指定，作为连接字符串的一部分。|  
+      |**提示输入凭据**|生成报表时，SAP 系统的输入的凭据。 **注意：** 如果指定，作为连接字符串的一部分，此选项指定的凭据将覆盖凭据。|  
       |**无凭据**|如果你要作为连接字符串的一部分提供的用户名和密码，请选择此选项。|  
   
       > [!NOTE]

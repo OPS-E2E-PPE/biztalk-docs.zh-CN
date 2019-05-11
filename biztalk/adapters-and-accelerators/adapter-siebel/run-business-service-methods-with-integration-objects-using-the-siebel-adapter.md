@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 40add1c72dabfd8648d1fa33e968cb26e98c11c3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9eaed223b88ad3be039ebb6a77a5f63c2094c4c5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996910"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371145"
 ---
 # <a name="invoke-business-service-methods-with-integration-objects-using-the-siebel-adapter"></a>调用业务服务方法，通过集成对象使用 Siebel 适配器
 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]使适配器客户端能够调用业务服务方法可使用集成对象。 这些业务服务通常有 IN、 OUT，或在 OUT 参数的"层次结构"数据类型来发送或接收集成对象数据。  

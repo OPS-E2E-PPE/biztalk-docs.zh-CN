@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 496c18236c8c6a3fa02971cd17a9263e03167571
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0f00d9e8ad432e4578f49e34259f04e94dfe149d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007046"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375262"
 ---
 # <a name="oracle-e-business-suite-adapter-faqs"></a>Oracle E-business Suite 适配器常见问题解答
 以下一些常见问题 (Faq) 与相关[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]。 另请参阅[BizTalk 适配器包常见问题解答](../../adapters-and-accelerators/frequently-asked-questions-for-the-biztalk-adapter-pack.md)。

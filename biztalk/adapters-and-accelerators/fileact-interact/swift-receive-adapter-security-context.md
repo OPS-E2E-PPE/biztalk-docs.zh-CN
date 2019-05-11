@@ -1,5 +1,5 @@
 ---
-title: SWIFT 接收适配器安全上下文 |Microsoft 文档
+title: SWIFT 接收适配器安全上下文 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b381ba9b4e0e1d53eca8e6cdd01b9770eb82372f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f1ce4136efb28c8535b01b86cb55e84456e7773a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22223821"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65364475"
 ---
 # <a name="swift-receive-adapter-security-context"></a>SWIFT 接收适配器安全上下文
-从 SWIFTNet 链接 (SNL/RA) 命令提示符 （SWIFTNet 启动） 中启动接收方适配器，与发送适配器不同。 可执行文件的接收适配器已配置在 SNL/RA 配置文件 (paramconfig) 中。 上启动的适配器初始化 SNL 库根据命令行参数。 配置值进行缓存以供将来使用。  
+接收器适配器，发送适配器与启动 SWIFTNet 链接 (SNL/RA) 命令提示符下 （SWIFTNet 启动）。 远程协助 SNL/配置文件 (paramconfig) 中配置接收适配器可执行文件。 在启动适配器初始化 SNL 库基于命令行参数。 配置值被缓存以供将来使用。  
   
- 下图显示的配置接收适配器安全上下文。  
+ 下图显示了接收适配器安全上下文的配置。  
   
  ![SWIFT 接收适配器安全上下文](../../adapters-and-accelerators/fileact-interact/media/f48c7cd1-b162-45ea-9ec3-7936f61563c2.gif "f48c7cd1-b162-45ea-9ec3-7936f61563c2")  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [SWIFT 接收适配器体系结构](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-architecture.md)   
  [SWIFT 接收适配器 URI](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-uri.md)   
  [SWIFT 接收适配器初始化](../../adapters-and-accelerators/fileact-interact/swift-receive-adapter-initialization.md)   

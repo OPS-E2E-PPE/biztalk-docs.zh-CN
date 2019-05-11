@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5548d448d2c0d45addc72639ad229cf4ee1bf37f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cec15641b3ada42c3562deb421e3591dde2bd699
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022347"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531236"
 ---
-# <a name="there-was-an-authentication-failure"></a>出现验证错误
+# <a name="there-was-an-authentication-failure"></a>出现身份验证错误
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                                   |

@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9563f754fd096efb4ab39192f1a8a21a7e6b2207
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 10a9c111269e676b197c3b43e577c5e8dc6b6e97
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009102"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375628"
 ---
 # <a name="connect-to-oracle-e-business-suite-using-windows-authentication"></a>连接到 Oracle E-business Suite 使用 Windows 身份验证
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]使适配器客户端能够使用 Windows 身份验证建立与 Oracle E-business Suite 的连接。 若要使用 Windows 身份验证适配器客户端必须指定"/"作为用户名，并将密码留空。 有关连接到 Oracle E-business Suite 使用 Windows 身份验证的详细信息，请参阅[连接到在 Visual Studio 中的 Oracle 电子商务套件](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-the-oracle-e-business-suite-in-visual-studio.md)。  

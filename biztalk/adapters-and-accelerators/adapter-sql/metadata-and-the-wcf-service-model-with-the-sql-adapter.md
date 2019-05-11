@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dfc6e490b2966a0b68d1a9c8669cf4601881743e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7a046615fb458991f51784f1059de609d1b3c73a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008222"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368723"
 ---
 # <a name="metadata-and-the-wcf-service-model-with-the-sql-adapter"></a>元数据和具有 SQL 适配器的 WCF 服务模型
 在 WCF 服务模型，可使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]或 ServiceModel Metadata Utility Tool (svcutile.exe) 来执行以下操作：  

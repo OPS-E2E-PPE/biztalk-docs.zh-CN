@@ -1,5 +1,5 @@
 ---
-title: 教程 1： 从 SharePoint 站点上的 SAP 系统提供的数据 |Microsoft Docs
+title: 教程 1:从 SharePoint 站点上的 SAP 系统提供的数据 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,14 +17,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d465f8d1acb25c5854468496050253cf4a75a059
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5365f75982677124e8cd529ffa78b76c66dd2358
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37020790"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372392"
 ---
-# <a name="tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site"></a>教程 1： 从 SharePoint 站点上的 SAP 系统提供的数据
+# <a name="tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site"></a>教程 1:从 SharePoint 站点上的 SAP 系统提供的数据
 本教程提供了详细的说明[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]使用 Microsoft Office SharePoint Server 在 SharePoint 门户网站上显示从 SAP 系统的业务数据。 若要演示如何使用[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]使用 Office SharePoint Server，在任何企业中考虑两个最常见的实体： 客户和销售订单。 在此示例中，在使用的 Office SharePoint Server 中创建的应用程序[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]来执行以下操作：  
   
 - 从基于搜索字符串上的 SAP 系统中检索客户列表。  

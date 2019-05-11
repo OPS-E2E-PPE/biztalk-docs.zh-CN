@@ -21,12 +21,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa942786cda8c5e1070b3fa1c66e3300ffd16d4f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a3252270554cb723c0bec5b6c4ae1abfdb50392c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984054"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374071"
 ---
 # <a name="browse-search-and-get-sap-metadata"></a>浏览、 搜索和获取 SAP 元数据
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]图面元数据从 SAP 系统。 此元数据描述用于与 SAP 系统使用的适配器进行通信的消息结构。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]支持两个接口用于检索元数据。  
@@ -71,8 +71,8 @@ ms.locfileid: "36984054"
   
 |项目|在 GUI 中的节点下的搜索|  
 |--------------|------------------------------------|  
-|RFC|-/RFC<br />-   /RFC/[Application Group]|  
-|tRFC|-/TRFC<br />-   /TRFC/[Application Group]|  
+|RFC|-   /RFC<br />-   /RFC/[Application Group]|  
+|tRFC|-   /TRFC<br />-   /TRFC/[Application Group]|  
 |BAPI|-   /BAPI|  
 |IDOC|-   /IDOC|  
   

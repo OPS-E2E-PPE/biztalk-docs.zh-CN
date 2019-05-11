@@ -1,5 +1,5 @@
 ---
-title: 步骤 3： 测试使用 SQL 适配器的迁移应用程序 |Microsoft Docs
+title: 步骤 3：测试迁移应用程序使用 SQL 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0c2487c6bdf05ae926b8bb962ed9dae6c770298e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 95d0752426d30a9d4bd75ef1b34188c1b1fcbc83
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973286"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367714"
 ---
-# <a name="step-3-test-the-migrated-application-that-uses-the-sql-adapter"></a>步骤 3： 测试迁移应用程序使用 SQL 适配器
+# <a name="step-3-test-the-migrated-application-that-uses-the-sql-adapter"></a>步骤 3：测试迁移应用程序使用 SQL 适配器
 ![第 3 部分，共 3 步](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")  
   
- **完成时间：** 5 分钟  
+ **若要完成的时间：** 5 分钟  
   
- **目标：** 在此步骤中，您将通过执行插入操作的客户表上测试已迁移应用程序。 若要执行此操作，应删除与使用 vPrev 生成的架构一致的请求消息[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。  
+ **目标：** 在此步骤中，将通过执行在 Customer 表上的插入操作来测试已迁移应用程序。 若要执行此操作，应删除与使用 vPrev 生成的架构一致的请求消息[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
   
 - 通过将 BizTalk 业务流程中的逻辑端口映射到物理端口在 BizTalk Server 管理控制台中配置的 BizTalk 应用程序。  
   
@@ -62,4 +62,4 @@ ms.locfileid: "36973286"
     在前面的响应中，"101"是标识列插入 Customer 表中的值。  
   
 ## <a name="see-also"></a>请参阅  
- [教程 1： 将 BizTalk 项目迁移到 SQL 适配器](../../adapters-and-accelerators/adapter-sql/tutorial-1-migrate-biztalk-projects-to-the-sql-adapter.md)
+ [教程 1:将 BizTalk 项目迁移到 SQL 适配器](../../adapters-and-accelerators/adapter-sql/tutorial-1-migrate-biztalk-projects-to-the-sql-adapter.md)

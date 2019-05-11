@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c0da85f6c0968eb7257e980bdbd65a48fcf734f9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c8b6802eba7f0568e19fe069669de1f07c069219
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973302"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375578"
 ---
 # <a name="create-a-connection-to-oracle-e-business-suite"></a>创建与 Oracle E-business Suite 的连接
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]是[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]自定义绑定。 在这种情况下，它支持到 Oracle E-business Suite 通过 WCF 终结点地址的通信。 WCF 中的终结点地址标识服务的网络位置，并通常都表示为统一资源标识符 (URI)。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]表达此位置作为一个连接 URI，其中包含属性的[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]用于建立与 Oracle E-business Suite 的连接。 必须指定连接 URI 时您：  
@@ -48,9 +48,9 @@ ms.locfileid: "36973302"
 ## <a name="in-this-section"></a>本节内容    
  以下主题介绍如何建立之间的连接[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]和 Oracle E-business Suite:  
   
--   [配置 Oracle 客户端 E-business Suite 适配器](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-oracle-client-for-the-e-business-suite-adapter.md)： 有关使用 tnsnames.ora 到 cconfiguring Oracle 客户端 （使用 tnsnames.ora 才能建立连接时才需要） 的信息  
+-   [配置 Oracle 客户端 E-business Suite 适配器](../../adapters-and-accelerators/adapter-oracle-ebs/configure-the-oracle-client-for-the-e-business-suite-adapter.md):有关使用 tnsnames.ora 到 cconfiguring Oracle 客户端 （使用 tnsnames.ora 才能建立连接时才需要） 的信息  
   
--   [创建 Oracle E-business Suite 连接 URI](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md)： 连接属性和 Oracle E-business Suite 连接 URI 的结构信息
+-   [创建 Oracle E-business Suite 连接 URI](../../adapters-and-accelerators/adapter-oracle-ebs/create-the-oracle-e-business-suite-connection-uri.md):有关连接属性和 Oracle E-business Suite 连接 URI 的结构信息
   
--   [连接到使用 Windows 身份验证的 Oracle E-business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-oracle-e-business-suite-using-windows-authentication.md)： 连接到 Oracle 使用 Windows 身份验证的信息
+-   [连接到使用 Windows 身份验证的 Oracle E-business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-oracle-e-business-suite-using-windows-authentication.md):有关连接到 Oracle 使用 Windows 身份验证信息
   

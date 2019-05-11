@@ -17,12 +17,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9ff0828635b16cfc94d134f17e5210a255e862a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 20050b397f52589221857953fdb857c3f1837a24
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007462"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373381"
 ---
 # <a name="get-metadata-in-sap-using-imetadataretrievalcontract"></a>在 SAP 中使用 IMetadataRetrievalContract 获取元数据
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]公开**IMetadataRetrievalContract**浏览和搜索 SAP 系统项目以及如何检索有关 Web 服务描述语言 (WSDL) 文档的窗体中的元数据可以使用的终结点操作。  

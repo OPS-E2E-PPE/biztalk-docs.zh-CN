@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 79f8ad85a1e17c020321d6b5f5bcd900bd4033dd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1f6564613f6932e9df792024bdd78b8608f648a7
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000896"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530007"
 ---
 # <a name="security-enhancements"></a>安全性改进
 本部署指南的每个步骤的目的是作为安全部署您的 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]安装。  

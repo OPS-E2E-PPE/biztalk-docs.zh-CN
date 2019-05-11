@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 11068 |Microsoft Docs
+title: 单一登录：事件 11068 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 218da642493981211de4a0e10b504ea8f434945f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 634fdcb87698628e2a579028ea8fad11ac035d27
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37020491"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530775"
 ---
-# <a name="single-sign-on-event-11068"></a>单一登录： 事件 11068
+# <a name="single-sign-on-event-11068"></a>单一登录：事件 11068
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                     |
@@ -28,12 +28,12 @@ ms.locfileid: "37020491"
 | 产品版本 |                                                     [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                      |
 |    事件 ID     |                                                                                11068                                                                                |
 |  事件源   |                                                                               ENTSSO                                                                                |
-|    组件    |                                                                                 N/A                                                                                 |
+|    组件    |                                                                                 不可用                                                                                 |
 |  符号名称  |                                                          SSO_ERROR_LOOKUP_CALLBACK_ACCESS_DENIED_NO_REMOTE                                                          |
-|  消息正文   | 查找服务器访问被拒绝。 此 SSO 服务器当前未配置为允许远程查找。 请使用“ssoconfig -remoteLookup yes”或 SSO 管理 MMC。%r |
+|  消息正文   | 查找服务器访问被拒绝。 此 SSO 服务器当前未配置为允许远程查找。 使用 ssoconfig-remoteLookup yes 或 SSO 管理 MMC.%r |
   
 ## <a name="explanation"></a>解释  
- 由于 ENTSSO 服务器未配置为允许远程查找，因此查找服务器访问已被拒绝。  
+ 查找服务器访问被拒绝，因为 ENTSSO 服务器未配置为允许远程查找。  
   
 ## <a name="user-action"></a>用户操作  
  若要允许远程查找，在**服务器管理单元**，**高级**选项卡上，选择**允许远程查找**。  

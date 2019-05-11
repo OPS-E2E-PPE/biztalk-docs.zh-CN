@@ -17,12 +17,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1457c05b37c3f5b1dfcc5887c1a3f6ce27fcb0d4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b781371962b8c8d32168d6c9ba4ce38fe20a4a49
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004838"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529726"
 ---
 # <a name="swift-trailers"></a>SWIFT 尾部
 每个 SWIFT 消息具有所需的消息交换和安全要求的一个或多个尾部。 系统尾部，如果适用，请按照用户尾部。 每个尾部尾部块中的将显示在由进一步对大括号分隔 subblock。 每个 subblock 开头指示后接一个冒号的尾部类型的三个字母。  

@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4ada608dbac8071af182c26af02c8f47b43e6cca
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d3411785538e8dc6fcfe50cc2959b85481634264
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011982"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362619"
 ---
 # <a name="what-is-the-windows-communication-foundation-line-of-business-adapter-sdk"></a>Windows Communication Foundation 行业适配器 SDK 是什么
 中的组件的功能的概述[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。 本主题还描述关键概念，包括元数据、 连接管理和需要了解，如绑定和通道的术语。
@@ -82,7 +82,7 @@ ms.locfileid: "37011982"
 
 |           |                                                                                                                                                                                                                                                         |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  绑定 (binding)  | 定义适配器的进行通信。 通过创建绑定[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]并定义传输、 编码和其他详细信息。 在绑定中可能有一个或多个绑定元素。 |
+|  绑定  | 定义适配器的进行通信。 通过创建绑定[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]并定义传输、 编码和其他详细信息。 在绑定中可能有一个或多个绑定元素。 |
 |  channel  |                                                          绑定元素的实现。 通道一起以创建通道堆栈的绑定堆栈的集合。                                                           |
 |  message  |                                                                              独立的几个部分包括消息正文和标头可能包含的数据单元。                                                                              |
 | 元数据  |                                                                   描述业务线系统包括操作和可用的数据的特征。                                                                    |

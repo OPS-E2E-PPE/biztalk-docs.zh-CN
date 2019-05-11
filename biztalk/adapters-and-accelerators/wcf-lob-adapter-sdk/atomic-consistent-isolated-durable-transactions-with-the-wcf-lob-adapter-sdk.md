@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 37b39ec0e240a2d4ee9ba1239cf27d7b118ca0ad
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4ddf068c29fca7ffae186ad7417f35d8f44786dc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007702"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363831"
 ---
 # <a name="configure-atomic-consistent-isolated-and-durable-transactions-using-the-wcf-lob-adapter-sdk"></a>配置使用 WCF LOB 适配器 SDK 原子、 一致、 隔离和持久的事务
 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]支持通过公开的功能所依赖的事务[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]。 通过使用公开的 API [!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]，您的适配器可以支持事务和程序的操作：  

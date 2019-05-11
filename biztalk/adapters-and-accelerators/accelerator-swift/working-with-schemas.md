@@ -15,17 +15,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cb6ac17cd0959d712da290b937a961d517f320e7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 411782fcc0f8d3c80382d1de3b7c8f31d49e1fc9
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968358"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529653"
 ---
 # <a name="working-with-schemas"></a>使用架构
 在 Microsoft 提供的架构[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]是全球范围内 Interbank 金融电信 (SWIFT) FIN 消息协会的 Microsoft XSD 表示形式。 每个消息类型都有其自己的架构，包括 SWIFT 标头和 SWIFT 尾部 （交换格式）。 此架构就足以发送或接收 SWIFT 消息。 这些架构包括分隔和位置记录，提供详细的 XML 表示形式的平面文件 FIN 结构的唯一组合。  
 
- SWIFT 的大多数客户使用相对较小的 SWIFT FIN 消息子集。 若要为这些客户实现解决方案，可以创建 BizTalk 架构项目 (如中所示[模块 2： 添加新架构项目](../../adapters-and-accelerators/accelerator-swift/module-2-adding-a-new-schemas-project.md)A4SWIFT 教程的)。 添加相关的消息架构 (MT*xxx*.xsd) 从\\\ Program Files\Microsoft BizTalk Accelerator for SWIFT\<版本\>MessagePack\SWIFT Messages\A4SWIFT SRG\<版本\>\Category x\MT xyy 目录，其中 x 是 FIN 消息类型的第一个数字，xyy 是消息的三位消息类型。  
+ SWIFT 的大多数客户使用相对较小的 SWIFT FIN 消息子集。 若要为这些客户实现解决方案，可以创建 BizTalk 架构项目 (如中所示[模块 2:添加新架构项目](../../adapters-and-accelerators/accelerator-swift/module-2-adding-a-new-schemas-project.md)A4SWIFT 教程的)。 添加相关的消息架构 (MT*xxx*.xsd) 从\\\ Program Files\Microsoft BizTalk Accelerator for SWIFT\<版本\>MessagePack\SWIFT Messages\A4SWIFT SRG\<版本\>\Category x\MT xyy 目录，其中 x 是 FIN 消息类型的第一个数字，xyy 是消息的三位消息类型。  
 
  可以将多个架构添加到同一个项目。 若要维护的可管理性，不应将添加每个项目超过 20 个消息架构。 此外需要向项目添加基类和常见架构。 如果你已部署的基类和常见的架构，您需要使其程序集的引用，而不是将其部署。 本部分介绍这些架构。 消息架构已准备好用，因为是到 SWIFT 网络发送的消息和从 SWIFT 接收的消息。  
 

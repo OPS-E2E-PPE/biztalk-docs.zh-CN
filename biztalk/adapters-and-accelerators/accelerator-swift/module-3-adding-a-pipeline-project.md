@@ -1,5 +1,5 @@
 ---
-title: 模块 3： 添加管道项目 |Microsoft Docs
+title: 模块 3:添加管道项目 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 85305614cec2757a91aa006238b3eb1ca4fbdbba
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a981b2f1d0b573f825defa7943f84d939ca17b21
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970654"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530261"
 ---
-# <a name="module-3-adding-a-pipeline-project"></a>模块 3： 添加管道项目
+# <a name="module-3-adding-a-pipeline-project"></a>模块 3:添加管道项目
 在此模块中，将新项目添加到你的解决方案，其中包含自定义发送和接收管道。 由于你正在使用的平面文件在本质上 SWIFT 消息不能使用随 Microsoft 默认管道[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]。  
   
  SWIFT 消息需要附加的验证级别，因此 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]包括自定义拆装器 (DASM) 和用于 SWIFT 消息组装器 (ASM) 组件。  

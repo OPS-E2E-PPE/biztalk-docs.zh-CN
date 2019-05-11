@@ -1,5 +1,5 @@
 ---
-title: 使用 WCF 通道模型的 Oracle 数据库中运行 SQLEXECUTE 操作 |Microsoft 文档
+title: 在 Oracle 数据库中使用 WCF 通道模型运行 SQLEXECUTE 操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,18 +16,18 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d5bb458af94d61ceb89a725f80606d8dda2af579
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: ef49976eb15f5022871549f5240b22a97b908312
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25960803"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528943"
 ---
-# <a name="run-a-sqlexecute-operation-in-oracle-database-using-the-wcf-channel-model"></a>使用 WCF 通道模型的 Oracle 数据库中运行 SQLEXECUTE 操作
-本部分说明如何通过通道执行对 Oracle 数据库的 SQLEXECUTE 操作。 必须对 SOAP 消息指定一个消息和消息操作。 有关 SQLEXECUTE 操作的详细信息，请参阅[使用 WCF 服务模型的 Oracle 数据库中的运行 SQLEXECUTE 操作](../../adapters-and-accelerators/adapter-oracle-database/run-sqlexecute-operation-in-oracle-database-using-the-wcf-service-model.md)。  
+# <a name="run-a-sqlexecute-operation-in-oracle-database-using-the-wcf-channel-model"></a>在 Oracle 数据库中使用 WCF 通道模型运行 SQLEXECUTE 操作
+本部分演示如何通过通道执行 SQLEXECUTE 操作的 Oracle 数据库。 必须对 SOAP 消息中指定的消息和消息操作。 SQLEXECUTE 操作的详细信息，请参阅[在 Oracle 数据库中使用 WCF 服务模型运行 SQLEXECUTE 操作](../../adapters-and-accelerators/adapter-oracle-database/run-sqlexecute-operation-in-oracle-database-using-the-wcf-service-model.md)。  
   
 ## <a name="the-sqlexecute-message"></a>SQLEXECUTE 消息  
- 下面的 XML 演示 SQLEXECUTE 消息返回的下一步的 Oracle 序列值。  
+ 下面的 XML 演示 SQLEXECUTE 消息，它返回一个 Oracle 序列的下一个值。  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -37,17 +37,17 @@ ms.locfileid: "25960803"
 </SQLEXECUTE>  
 ```  
   
- SQLEXECUTE 可以指定参数架构元素和包含多个参数的数据集的参数块。 显示的消息是指定的 SQL 语句的单个调用中，因此指定参数的架构和参数块的元素省略从消息正文。 有关 SQLEXECUTE 操作的消息架构的信息，请参阅[SQLEXECUTE 操作的消息架构](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-the-sqlexecute-operation.md)。  
+ SQLEXECUTE 可以指定的参数架构元素和一个参数块以包含多个参数数据集。 所显示的消息是指定的 SQL 语句的单个调用，因此消息正文中省略了指定的参数架构和参数块元素。 SQLEXECUTE 操作的消息架构有关的信息，请参阅[SQLEXECUTE 操作的消息架构](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-the-sqlexecute-operation.md)。  
   
-## <a name="specifying-the-sqlexecute-action"></a>指定的 SQLEXECUTE 操作  
- 必须指定消息的一项操作。 下面的代码摘录演示如何指定 SQLEXECUTE 消息的操作。  
+## <a name="specifying-the-sqlexecute-action"></a>指定 SQLEXECUTE 操作  
+ 必须指定消息的操作。 以下代码摘录显示了如何指定 SQLEXECUTE 消息的操作。  
   
 ```  
 Message messageIn = Message.CreateMessage(MessageVersion.Default, "http://Microsoft.LobServices.OracleDB/2007/03/SQLEXECUTE", readerIn);  
 ```  
   
 ## <a name="sending-the-sqlexecute-message"></a>发送 SQLEXECUTE 消息  
- 下面的代码摘录演示如何通过通道调用 SQLEXECUTE 操作上的 Oracle 数据库。  
+ 以下代码段演示如何通过对通道调用 SQLEXECUTE 操作的 Oracle 数据库。  
   
 ```  
 // Create Endpoint  
@@ -86,6 +86,6 @@ if (list.Count > 0) id = list[0].InnerXml;
 > [!NOTE]
 >  SQLEXECUTE 操作始终返回弱类型化结果集。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发 Oracle 数据库应用程序使用 WCF 通道模型](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-channel-model.md)  
  [创建一个通道，使用 Oracle 数据库](../../adapters-and-accelerators/adapter-oracle-database/create-a-channel-using-oracle-database.md)

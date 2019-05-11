@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dab49fa57a3132a75fd937f1d89333577d28c420
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 48597c430bf2c77956476cbd689ec29bdc44b5af
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007230"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369525"
 ---
 # <a name="execute-table-valued-functions-in-sql-server-using-the-sql-adapter"></a>在使用 SQL 适配器的 SQL Server 中执行表值函数
 SQL Server 中的 Transact SQL 和 CLR 表值函数作为中的操作[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]。 中的操作名称[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]是相同的值在 SQL Server 中的函数的表的名称。  

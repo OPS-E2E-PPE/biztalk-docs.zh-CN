@@ -17,12 +17,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3a023f3890eff7b3b8c846f0c2c3e15cda4c1d35
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 855f794e7fa0cbffaf7a99a2b113aac5a0bbda31
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003152"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373498"
 ---
 # <a name="develop-your-sap-applications"></a>开发 SAP 应用程序
 

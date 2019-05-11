@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0930baa5ec89c500f15a5ae7a88ce36e71785c96
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2a5ff4da00e0ba5c5012b6b13eb8bc5748584f91
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013334"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369422"
 ---
 # <a name="generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts"></a>为 SQL Server 项目生成 WCF 客户端或 WCF 服务协定
 可以使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]针对所选操作对 SQL Server 项目生成 WCF 客户端类。 此外可以使用 ServiceModel Metadata Utility Tool (svcutil.exe) 来生成 WCF 客户端类;但是，[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]公开 ServiceModel Metadata Utility Tool 通过标准的 Microsoft Windows 界面的功能。 它还提供浏览和搜索功能，使用 svcutil.exe 工具中，未提供，并生成一个基于连接到 SQL Server 数据库时选择的绑定属性的配置文件。  
@@ -64,7 +64,7 @@ ms.locfileid: "37013334"
   
 - **SqlAdapterBindingInterface.cs**。 此文件包含生成的 WCF 服务协定 （接口） 和入站操作的帮助器代码。  
   
-- **SqlAdapterBindingService.cs**。 此文件包含实现 SqlAdapterBindingInterface.cs 中定义的接口的类。 可实现业务逻辑处理入站操作返回的记录。  
+- **SqlAdapterBindingService.cs**. 此文件包含实现 SqlAdapterBindingInterface.cs 中定义的接口的类。 可实现业务逻辑处理入站操作返回的记录。  
   
 - **App.config**。此文件包含的绑定配置、 终结点行为，以及基于配置的绑定和连接时所做的选择的服务终结点配置[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。  
   

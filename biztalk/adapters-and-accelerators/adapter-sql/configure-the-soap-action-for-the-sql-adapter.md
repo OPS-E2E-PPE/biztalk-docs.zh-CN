@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a927740ba04a0fd1b080e73ef60892ffdc9bf385
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: be22ac1f6e0ebc31b3b2573ce6df0bba84f352b6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980518"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369962"
 ---
 # <a name="configure-the-soap-action-for-the-sql-adapter"></a>配置 SQL 适配器的 SOAP 操作
 若要执行任何操作使用基于 WCF 的 SQL Server 上[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]，你必须指定 SOAP 操作。 SOAP 操作通信适配器应执行什么操作。 可以从指定的 SOAP 操作[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]或从[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 但是，如果指定的 SOAP 操作从这两个位置，指定的操作，从[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]将被重写。  

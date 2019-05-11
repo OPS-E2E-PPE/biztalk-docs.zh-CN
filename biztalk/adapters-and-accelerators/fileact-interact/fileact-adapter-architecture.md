@@ -1,5 +1,5 @@
 ---
-title: FileAct 适配器体系结构 |Microsoft 文档
+title: FileAct 适配器体系结构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ee15a7d7cc63aa37fdf72f1e549bc4e5a11c50bd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 14251b0f0fa23760ab36274f1c4a30e9b7317395
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22222517"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367196"
 ---
 # <a name="fileact-adapter-architecture"></a>FileAct 适配器体系结构
-本部分包含有关体系结构的 FileAct 适配器的信息。  
+本部分包含 FileAct 适配器体系结构信息。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -36,6 +36,6 @@ ms.locfileid: "22222517"
   
 -   [FileAct 适配器支持信息传输](../../adapters-and-accelerators/fileact-interact/fileact-adapter-supporting-information-transfer.md)  
   
--   [FileAct 适配器传递通知](../../adapters-and-accelerators/fileact-interact/fileact-adapter-delivery-notification.md)  
+-   [FileAct 适配器送达通知](../../adapters-and-accelerators/fileact-interact/fileact-adapter-delivery-notification.md)  
   
 -   [FileAct 适配器状态监视](../../adapters-and-accelerators/fileact-interact/fileact-adapter-status-monitoring.md)

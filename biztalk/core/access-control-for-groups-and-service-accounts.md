@@ -21,12 +21,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: da1bb9a52bef2e81729a8b566e4af4dcbed89c2a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2f3e34d34f9b6a79b1379c98aa362c266a52424c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021787"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362070"
 ---
 # <a name="access-control-for-groups-and-service-accounts"></a>组和服务帐户的访问控制
 每个 BizTalk 主机实例在用户创建服务帐户下运行。 必须提供的服务帐户并且他们的密码时创建主机实例的计算机上。 然后，BizTalk Server 可确保帐户具有完成其工作的每个这些服务帐户添加到本地或域 Windows 组，反过来，它将添加到 SQL Server 数据库角色特定于该主机所需的最低用户权限。  

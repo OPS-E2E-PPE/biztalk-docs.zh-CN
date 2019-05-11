@@ -15,19 +15,19 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d991125654e04167b026aa98c62c8ffdc7b2b8e2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 995ed2a0214b9de3f50c7aac2298138da1d6df73
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006014"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529736"
 ---
 # <a name="system-trailers"></a>系统尾部
 系统尾部传达有关 SWIFT 消息的其他或特殊详细信息。 如果任何第三个系统尾部都存在，它们将按以下顺序发生。 其余系统尾部可以任何顺序出现。  
   
 |尾部代码|“属性”|  
 |------------------|----------|  
-|**CHK**|Checksum|  
+|**CHK**|校验和|  
 |**SYS**|系统发起消息|  
 |**TNG**|培训|  
 |**PDM**|可能的重复消息|  

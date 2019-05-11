@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b77d1da9261ae4a532e8b56be0f4172350f800e7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 09cd296d8b2f9b3cff19ccbeb2c0a4149aab248c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981438"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372102"
 ---
 # <a name="architecture-overview-of-the-biztalk-adapter-for-siebel-ebusiness-applications"></a>用于 Siebel eBusiness 应用程序的 BizTalk 适配器的体系结构概述
 描述使用的端到端解决方案的体系结构[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]若要在 Siebel 系统，以及的内部体系结构上运行[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。  

@@ -1,5 +1,5 @@
 ---
-title: 步骤 3： 创建 SharePoint 应用程序将数据从 SAP 检索 |Microsoft Docs
+title: 步骤 3：创建 SharePoint 应用程序将数据从 SAP 检索 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -20,23 +20,23 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 346dcf24e1440717e111a1ae146521d887054cd0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: db5b9a6278de98cbd3105d921806454f51e32a69
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983478"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372818"
 ---
-# <a name="step-3-create-a-sharepoint-application-to-retrieve-data-from-sap"></a>步骤 3： 创建 SharePoint 应用程序以从 SAP 检索数据
+# <a name="step-3-create-a-sharepoint-application-to-retrieve-data-from-sap"></a>步骤 3：创建 SharePoint 应用程序以从 SAP 检索数据
 ![步骤 3，共 4 步](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")  
   
- **完成时间：** 15 分钟  
+ **若要完成的时间：** 15 分钟  
   
- **目标：** 必须现在需要通过使用 Business Data Catalog Definition Editor 工具创建的应用程序定义文件并将其导入 Microsoft Office SharePoint Server。  
+ **目标：** 现在必须通过使用 Business Data Catalog Definition Editor 工具创建应用程序定义文件并将其导入 Microsoft Office SharePoint Server。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
   
--   您将会创建应用程序定义文件中所述[步骤 2： 为 SAP 项目创建应用程序定义文件](../../adapters-and-accelerators/adapter-sap/step-2-create-an-application-definition-file-for-the-sap-artifacts.md)。  
+-   您将会创建应用程序定义文件中所述[步骤 2:为 SAP 项目创建应用程序定义文件](../../adapters-and-accelerators/adapter-sap/step-2-create-an-application-definition-file-for-the-sap-artifacts.md)。  
   
 -   必须运行 Microsoft 单一登录服务。  
   
@@ -69,7 +69,7 @@ ms.locfileid: "36983478"
     4.  在管理企业应用程序定义页上，提供的值**显示名称**，**应用程序名称**，并**联系人电子邮件地址**字段。  
   
         > [!IMPORTANT]
-        >  有关**应用程序名称**字段中，请确保指定相同的 SSO 应用程序名称为指定**SecondarySsoApplicationId**时创建应用程序定义文件中，为变量中所述[步骤 2： 为 SAP 项目创建应用程序定义文件](../../adapters-and-accelerators/adapter-sap/step-2-create-an-application-definition-file-for-the-sap-artifacts.md)。  
+        >  有关**应用程序名称**字段中，请确保指定相同的 SSO 应用程序名称为指定**SecondarySsoApplicationId**时创建应用程序定义文件中，为变量中所述[步骤 2:为 SAP 项目创建应用程序定义文件](../../adapters-and-accelerators/adapter-sap/step-2-create-an-application-definition-file-for-the-sap-artifacts.md)。  
   
     5.  将其他字段保留为默认值，然后单击**确定**。  
   
@@ -80,7 +80,7 @@ ms.locfileid: "36983478"
   
  必须定义网站时创建 ssp。 请记住的端口号和你创建的站点地址。 你将导出到此站点的业务数据目录应用程序定义。  
   
- 有关创建 SSP 的详细信息，请参阅"一章概述： 创建和配置共享服务提供程序"处[ http://go.microsoft.com/fwlink/?LinkId=105119 ](http://go.microsoft.com/fwlink/?LinkId=105119)。  
+ 有关创建 SSP 的详细信息，请参阅"一章概述：创建和配置共享服务提供程序"处[ http://go.microsoft.com/fwlink/?LinkId=105119 ](http://go.microsoft.com/fwlink/?LinkId=105119)。  
   
 ## <a name="importing-the-application-definition-file"></a>导入应用程序定义文件  
  现在必须将应用程序定义文件导入 ssp。  
@@ -216,7 +216,7 @@ ms.locfileid: "36983478"
   
 11. 单击**Apply**，然后单击**确定**。  
   
-12. 连接到 Web 部件**客户列表**Web 部件。 为此：  
+12. 连接到 Web 部件**客户列表**Web 部件。 为此，请执行以下操作：  
   
     1.  单击**编辑**向 Web 部件右上角。  
   
@@ -251,7 +251,7 @@ ms.locfileid: "36983478"
   
 10. 单击“确定” 。  
   
-11. 连接到 Web 部件**客户列表**Web 部件。 为此：  
+11. 连接到 Web 部件**客户列表**Web 部件。 为此，请执行以下操作：  
   
     1.  单击**编辑**针对的右上角**特定客户的销售订单**Web 部件。  
   
@@ -260,7 +260,7 @@ ms.locfileid: "36983478"
 12. 单击**退出编辑模式**从页面的右上角。  
   
 ## <a name="next-steps"></a>后续步骤  
- 通过从 SAP 系统中检索数据来测试 SharePoint 应用程序。 请参阅[步骤 4： 测试 SharePoint 应用程序](../../adapters-and-accelerators/adapter-sap/step-4-test-your-sharepoint-application1.md)。  
+ 通过从 SAP 系统中检索数据来测试 SharePoint 应用程序。 请参阅[步骤 4:测试 SharePoint 应用程序](../../adapters-and-accelerators/adapter-sap/step-4-test-your-sharepoint-application1.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [教程 1：在 SharePoint 上提供来自 SAP 系统的数据](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md)
+ [教程 1:在 SharePoint 站点上提供来自 SAP 系统的数据](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md)

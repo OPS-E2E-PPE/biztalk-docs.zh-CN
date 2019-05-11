@@ -1,5 +1,5 @@
 ---
-title: 步骤 8： 为 Echo 适配器实现同步的入站处理程序 |Microsoft 文档
+title: 步骤 8：实现 Echo 适配器的同步入站处理程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: da34bca28f073babac4907b7d408d0642a234e2a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e3a692493b39b51499a2a42adfcbd485dd4cfc0e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22226629"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363150"
 ---
-# <a name="step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter"></a>步骤 8： 为 Echo 适配器实现同步的入站处理程序
+# <a name="step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter"></a>步骤 8：实现 Echo 适配器的同步入站处理程序
 ![步骤 8 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-8of9.gif "Step_8of9")  
   
- **完成时间：** 45 分钟  
+ **若要完成的时间：** 45 分钟  
   
- 在此步骤中，你可以实现入站的回显适配器的功能。 此功能允许要侦听的数据或事件从目标系统的适配器。 根据[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，只需实现`Microsoft.ServiceModel.Channels.Common.IInboundHandler`时你的适配器支持入站的功能的接口。 [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)]自动生成为您调用 EchoAdpterInboundHandler 派生的类。  
+ 在此步骤中，将实现 echo 适配器的入站的功能。 此功能允许适配器以侦听数据或从目标系统的事件。 根据[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，只需实现`Microsoft.ServiceModel.Channels.Common.IInboundHandler`接口，如果您的适配器支持入站的功能。 [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)]自动生成派生的类为您调用 EchoAdpterInboundHandler。  
   
- 在以下部分中，你将更新 EchoAdpterInboundHandler 类，以获取更好地了解如何实现此接口。 完成此步骤后，必须为 echo 适配器工作入站处理程序。  
+ 在以下部分中，更新 EchoAdpterInboundHandler 类，以获取更好地了解如何实现此接口。 完成此步骤，必须 echo 适配器的工作入站处理程序。  
   
 ## <a name="prerequisites"></a>先决条件  
- 在开始此步骤之前，你必须已成功完成[步骤 7： 为 Echo 适配器实现同步的出站处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter.md)。 基本熟悉`Microsoft.ServiceModel.Channels.Common.IInboundHandler`也是有帮助。  
+ 在开始此步骤之前，你必须已成功完成[步骤 7:实现 Echo 适配器的同步出站处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter.md)。 基本熟悉`Microsoft.ServiceModel.Channels.Common.IInboundHandler`也会有所帮助。  
   
 ## <a name="the-iinboundhandler-interface"></a>IInboundHandler 接口  
  `Microsoft.ServiceModel.Channels.Common.IInboundHandler`定义为：  
@@ -50,17 +50,17 @@ public interface IInboundHandler : IConnectionHandler, IDisposable
 |------------|-----------------|  
 |StartListener|开始侦听消息与提供的 Ws-addressing 操作。 如果未指定，它侦听所有或默认操作。|  
 |StopListener|停止侦听。|  
-|TryReceive|尝试从目标系统收到一条入站的消息。|  
+|TryReceive|尝试接收来自目标系统的入站的消息。|  
 |WaitForMessage|等待来自目标系统的入站 WCF 消息。|  
   
  有关每个方法参数的说明的更多详细信息，请参阅文档上`Microsoft.ServiceModel.Channels.Common.IInboundHandler`接口。  
   
 ## <a name="implementing-the-echoadpterinboundhandler"></a>实现 EchoAdpterInboundHandler  
- Echo 适配器使用`System.IO.FileSystemWatcher`以模拟目标系统。 在下面的示例，实现中的每个方法`Microsoft.ServiceModel.Channels.Common.IInboundHandler`接口，StartListener、 StopListener、 TryReceive 和 WaitForMessage。  
+ Echo 适配器使用`System.IO.FileSystemWatcher`来模拟在目标系统。 在下面的示例，实现每个方法内的`Microsoft.ServiceModel.Channels.Common.IInboundHandler`接口，StartListener、 StopListener、 TryReceive 和 WaitForMessage。  
   
 #### <a name="to-implement-iinboundhandler-interface-in-the-echoadpterinboundhandler-class"></a>若要在 EchoAdpterInboundHandler 类中实现 IInboundHandler 接口  
   
-1.  在解决方案资源管理器中，双击**EchoAdapterInboundHandler.cs**文件。  
+1.  在解决方案资源管理器中双击**EchoAdapterInboundHandler.cs**文件。  
   
 2.  在 Visual Studio 编辑器中，将以下行添加到现有的 using 指令集。  
   
@@ -71,7 +71,7 @@ public interface IInboundHandler : IConnectionHandler, IDisposable
     using System.Diagnostics;  
     ```  
   
-3.  现在将类级变量添加到 EchoAdapterInboundHandler 类。 这些变量用于监视文件活动的文件系统。 将下面的声明复制到构造函数前类。  
+3.  现在将类级变量添加到 EchoAdapterInboundHandler 类。 这些变量用于监视文件活动的文件系统。 将下面的声明复制到在构造函数前的类。  
   
     ```csharp  
     private Queue<Message> inboundQueue;  
@@ -81,7 +81,7 @@ public interface IInboundHandler : IConnectionHandler, IDisposable
     private string filter;  
     ```  
   
-4.  在 EchoAdapterInboundHandler 构造函数方法中，添加以下代码以初始化文件监视基础结构并捕获的监视路径和筛选器。  
+4.  在 EchoAdapterInboundHandler 构造函数方法中，添加以下代码来初始化监视基础结构的文件，并要捕获的监视路径和筛选器。  
   
     ```csharp  
     inboundWatcher = null;  
@@ -90,7 +90,7 @@ public interface IInboundHandler : IConnectionHandler, IDisposable
     filter = connection.ConnectionFactory.Adapter.InboundFileFilter;  
     ```  
   
-5.  现在添加以下代码到**StartListener**方法。 该代码实现逻辑以验证参数并启动对文件活动的监视。  
+5.  现在，添加以下代码**StartListener**方法。 该代码实现逻辑以验证参数并开始监视文件活动。  
   
     ```csharp  
     // if no actions are provided, log an error in the trace log  
@@ -120,7 +120,7 @@ public interface IInboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-6.  继续通过添加的实现**StopListener**方法。  
+6.  继续通过添加一个实现**StopListener**方法。  
   
     ```csharp  
     if (inboundWatcher != null)  
@@ -136,7 +136,7 @@ public interface IInboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-7.  现在提供一个实现**TryReveive**方法。 此方法检索最新的文件从内部队列接收消息，如果有的话。  
+7.  现在提供一个实现**TryReveive**方法。 此方法检索最新文件从内部队列接收消息，如果有可用。  
   
     ```csharp  
     reply = new EchoAdapterInboundReply();  
@@ -169,7 +169,7 @@ public interface IInboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-8.  继续通过添加的实现**WaitForMessage**方法。  
+8.  继续通过添加一个实现**WaitForMessage**方法。  
   
     ```csharp  
     while (inboundQueue.Count == 0) { };  
@@ -184,7 +184,7 @@ public interface IInboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-9. 现在提供文件观察程序的回调。 为此，请添加新方法**FileMonitor_Created**到**EchoAdapterInboundAdapter**类。  
+9. 现在提供的文件观察程序的回调。 若要执行此操作，添加新方法**FileMonitor_Created**到**EchoAdapterInboundAdapter**类。  
   
     ```csharp  
     private void FileMonitor_Created(object sender, FileSystemEventArgs e)  
@@ -222,13 +222,13 @@ public interface IInboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-10. 现在，你必须删除**NotImplementedException**引发的内部异常**EchoAdapterInboundReply**类。 若要执行此操作，请删除中的以下语句**中止**和**答复**方法。  
+10. 现在，你必须删除**NotImplementedException**由内部引发的异常**EchoAdapterInboundReply**类。 若要执行此操作，删除以下语句从**中止**并**答复**方法。  
   
     ```csharp  
     throw new NotImplementedException("The method or operation is not implemented.");  
     ```  
   
-     你**中止**和**答复**方法应类似于以下。  
+     你**中止**并**答复**方法应如下所示。  
   
     ```csharp  
     /// <summary>  
@@ -247,7 +247,7 @@ public interface IInboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-11. 若要完成的入站处理程序的实现，添加以下类到**EchoAdapterOutboundHandler.cs**。 此类支持超时的入站处理程序实现。  
+11. 若要完成入站处理程序的实现，添加以下类**EchoAdapterOutboundHandler.cs**。 此类支持超时的入站处理程序实现。  
   
     ```csharp  
     /// <summary>  
@@ -333,19 +333,19 @@ public interface IInboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-12. 在 Visual Studio 中，在**文件**菜单上，单击**保存所有**。  
+12. 在 Visual Studio 中，在**文件**菜单上，单击**全部保存**。  
   
 13. 在“生成”  菜单上，单击“生成解决方案” 。 它应编译错误。 如果没有，请确保您已按照上述每个步骤。  
   
 > [!NOTE]
->  保存所做的工作。 你可以安全地在此时关闭 Visual Studio 或转到下一步，[步骤 9： 生成和部署 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-9-build-and-deploy-the-echo-adapter.md)。  
+>  保存所做的工作。 可以安全地关闭 Visual Studio 或转到下一步，[步骤 9:生成并部署 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-9-build-and-deploy-the-echo-adapter.md)。  
   
-## <a name="what-did-i-just-do"></a>未我只需做什么？  
- 在此步骤中回显适配器教程，入站处理程序提供实现。 这种实现提供监视功能 Echo 适配器使用的文件**FileSystemWatcher**的.NET framework 的类。  
+## <a name="what-did-i-just-do"></a>我只需做了什么？  
+ 在 Echo 适配器教程的此步骤中，为入站处理程序提供实现。 这种实现提供文件观察 Echo 适配器使用的功能**FileSystemWatcher**的.NET Framework 类。  
   
 ## <a name="next-steps"></a>后续步骤  
- 在下一步的步骤中，你将部署适配器。  
+ 在下一步中，你将部署适配器。  
   
-## <a name="see-also"></a>另请参阅  
- [步骤 9： 生成并部署 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-9-build-and-deploy-the-echo-adapter.md)   
- [步骤 7： 为 Echo 适配器实现同步的出站处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter.md)
+## <a name="see-also"></a>请参阅  
+ [步骤 9：生成并部署 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-9-build-and-deploy-the-echo-adapter.md)   
+ [步骤 7：实现 Echo 适配器的同步出站处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter.md)

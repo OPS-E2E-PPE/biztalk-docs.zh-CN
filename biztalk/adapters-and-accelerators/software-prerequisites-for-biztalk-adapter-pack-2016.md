@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2832333e7c38b824fb26f988ec01423e519a83d4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7980760c3a99363449e18f0315fdeddac0626bca
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973270"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65364014"
 ---
 # <a name="software-prerequisites-for-biztalk-adapter-pack-2016"></a>BizTalk 适配器包 2016年的必备软件
 列出了 Microsoft 的软件要求[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)](BAP) 中包含[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]。
@@ -95,13 +95,13 @@ ms.locfileid: "36973270"
 
 ### <a name="oracle-database-adapter"></a>Oracle 数据库适配器  
 
--   可选： 如果使用 Oracle 数据库使用分布式的事务，安装**Oracle 服务的 Microsoft Transaction Server** （Oracle 客户端安装的一部分） 的计算机上运行适配器客户端。  
+-   可选：如果使用 Oracle 数据库使用分布式的事务，安装**Oracle 服务的 Microsoft Transaction Server** （Oracle 客户端安装的一部分） 运行适配器客户端的计算机上。  
 
 -   对于应用程序可以使用 ODP.NET 的最新版本，安装**策略 Dll**和在 GAC 中注册 Dll。 请参阅[Oracle 数据提供程序的.NET 常见问题解答](http://www.oracle.com/technetwork/database/windows/faq-093106.html)。  
 
 ### <a name="oracle-e-business-adapter"></a>Oracle E-business 适配器  
 
--   可选： 若要使用 Oracle 数据库的分布式的事务，安装**Oracle 服务的 Microsoft Transaction Server** （Oracle 客户端安装的一部分） 的计算机上运行适配器客户端。  
+-   可选：若要使用 Oracle 数据库的分布式的事务，安装**Oracle 服务的 Microsoft Transaction Server** （Oracle 客户端安装的一部分） 的计算机上运行适配器客户端。  
 
 -   对于应用程序可以使用 ODP.NET 的最新版本，安装**策略 Dll**和在 GAC 中注册 Dll。 请参阅[Oracle 数据提供程序的.NET 常见问题解答](http://www.oracle.com/technetwork/database/windows/faq-093106.html)。  
 
@@ -109,12 +109,12 @@ ms.locfileid: "36973270"
 
 - [!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)]需要 Unicode 版本而不考虑 SAP 系统是否是 Unicode 或非 Unicode 的 RFC SDK。  
 
-- **所需的驱动程序**： 下表列出了所需的 Dll[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]与 SAP 系统进行交互：  
+- **所需的驱动程序**:下表列出了所需的 Dll[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]与 SAP 系统进行交互：  
 
 
   | SAP 客户端版本 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  必需的驱动程序                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
   |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-  |        7.2         | - **SAP RFC SDK 7.10 UNICODE**。 这是可作为一部分 SNOTE<sup> * </sup> 27517。若要下载 SDK 的说明[ http://go.microsoft.com/fwlink/?LinkId=94691 ](http://go.microsoft.com/fwlink/?LinkId=94691)。下载并解压缩 SDK 后，将所有 Dll 从 \rfcsdk\bin 和 \rfcsdk\lib 文件夹都复制到此表前面提到的相关位置。<br /> <br /> -Dll 的形式提供来自 SAP 的一部分\* \*R3DLLINST.zip*<em>。 该文件包含 Microsoft 运行时 Dll 并可以从 SAP 网站上下载。 请参阅 SNOTE<sup> </em> </sup> 684106 有关详细信息。 可以下载.zip 文件[ http://go.microsoft.com/fwlink/?LinkId=94693 ](http://go.microsoft.com/fwlink/?LinkId=94693)。 此链接都有可以在哪里下载包上的"附件"选项。<br /><br /> Microsoft Visual c + + 运行时 Dll 所需的 SAP 7.1 客户端是可从以下链接：<br /><br /> - **对于 32 位 SAP 7.1 客户端**： 从 Vcredist_x86.exe [ http://go.microsoft.com/fwlink/?LinkId=107086 ](http://go.microsoft.com/fwlink/?LinkId=107086)。<br /><br /> -                                 **对于 64 位 SAP 7.1 客户端**： 从 Vcredist_x64.exe [ http://go.microsoft.com/fwlink/?LinkId=107087 ](http://go.microsoft.com/fwlink/?LinkId=107087)。<br /><br /> -如果使用 SAP 安全网络通信 (SNC) 连接到 SAP 系统，您还必须从 SAP 相关的 Dll。 这些 Dll 是不同的 32 位和 64 位平台和适用于 SNOTE<sup> * </sup> 352295。您可以下载从 Dll [ http://go.microsoft.com/fwlink/?LinkId=104032 ](http://go.microsoft.com/fwlink/?LinkId=104032)。此链接都有可以在哪里下载包上的"附件"选项。Dll 的名称为：<br /><br /> - \*\*为 32 位*<em>: gsskrb5.dll、 gssntlm.dll<br /><br /> - \*\*针对 64 位 x86</em>\*: gx64krb5.dll、 gx64ntlm.dll |
+  |        7.2         | - **SAP RFC SDK 7.10 UNICODE**。 这是可作为一部分 SNOTE<sup> * </sup> 27517。若要下载 SDK 的说明[ http://go.microsoft.com/fwlink/?LinkId=94691 ](http://go.microsoft.com/fwlink/?LinkId=94691)。下载并解压缩 SDK 后，将所有 Dll 从 \rfcsdk\bin 和 \rfcsdk\lib 文件夹都复制到此表前面提到的相关位置。<br /> <br /> -Dll 的形式提供来自 SAP 的一部分\* \*R3DLLINST.zip*<em>。 该文件包含 Microsoft 运行时 Dll 并可以从 SAP 网站上下载。 请参阅 SNOTE<sup> </em> </sup> 684106 有关详细信息。 可以下载.zip 文件[ http://go.microsoft.com/fwlink/?LinkId=94693 ](http://go.microsoft.com/fwlink/?LinkId=94693)。 此链接都有可以在哪里下载包上的"附件"选项。<br /><br /> -Microsoft VisualC++运行时 Dll 所需的 SAP 7.1 客户端是可从以下链接：<br /><br /> - **对于 32 位 SAP 7.1 客户端**:从 Vcredist_x86.exe [ http://go.microsoft.com/fwlink/?LinkId=107086 ](http://go.microsoft.com/fwlink/?LinkId=107086)。<br /><br /> -                                 **对于 64 位 SAP 7.1 客户端**:从 Vcredist_x64.exe [ http://go.microsoft.com/fwlink/?LinkId=107087 ](http://go.microsoft.com/fwlink/?LinkId=107087)。<br /><br /> -如果使用 SAP 安全网络通信 (SNC) 连接到 SAP 系统，您还必须从 SAP 相关的 Dll。 这些 Dll 是不同的 32 位和 64 位平台和适用于 SNOTE<sup> * </sup> 352295。您可以下载从 Dll [ http://go.microsoft.com/fwlink/?LinkId=104032 ](http://go.microsoft.com/fwlink/?LinkId=104032)。此链接都有可以在哪里下载包上的"附件"选项。Dll 的名称为：<br /><br /> - \*\*为 32 位*<em>: gsskrb5.dll、 gssntlm.dll<br /><br /> - \*\*针对 64 位 x86</em>\*: gx64krb5.dll、 gx64ntlm.dll |
 
    > [!TIP]
    > SNOTEs 是附带由 SAP 发布的修补程序的发行说明。  

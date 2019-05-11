@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8e4a3ca75470192f2237cf67c6ac0312b150b46a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f120d2d93dcfe56595c020a4032c4d714afc5c90
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972830"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373192"
 ---
 # <a name="metadata-and-the-wcf-service-model-with-sap"></a>元数据和具有 SAP 的 WCF 服务模型
 在 WCF 服务模型，可使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]或 ServiceModel Metadata Utility Tool (svcutile.exe) 生成代理类通过它你代码可能是：  

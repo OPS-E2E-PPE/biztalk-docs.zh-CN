@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e77100200a4fb2eacb24c6745fcd17011231b991
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5ebfeec80fb9775fbb99c07fc1c694f38f6b11c7
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967302"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530756"
 ---
-# <a name="the-interchange-had-structural-error-the-part-after-the-error-is-being-suspended"></a>交换发生了结构错误。 错误之后的部分被挂起
+# <a name="the-interchange-had-structural-error-the-part-after-the-error-is-being-suspended"></a>交换发生了结构错误。 正在挂起错误之后的部分
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                |
@@ -30,10 +30,10 @@ ms.locfileid: "36967302"
 |  事件源   |                                             [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                                             |
 |    组件    |                                                                                   EDI 引擎                                                                                   |
 |  符号名称  |                                                                        EfactInterchangeStructuralError                                                                         |
-|  消息正文   | 交换 id 为 '{0}，发送方 id{1}，接收方 id{2}发生了结构错误。 错误之后的部分已被挂起，请参阅“挂起队列”以获取详细信息。 |
+|  消息正文   | 交换 id 为 '{0}，发送方 id{1}，接收方 id{2}发生了结构错误。 有关详细信息到挂起队列参阅该错误被挂起之后, 的部分 |
   
 ## <a name="explanation"></a>解释  
- 此错误/警告/信息事件表明接收管道无法处理传入的 EDIFACT 交换，因为该交换中发生了结构错误。 正在保留的交换会发生此错误，由于此错误事务集被挂起。 由于此错误，包含此错误的事务集被挂起，但是作为保留的批处理的一部分对其余事务集进行处理。  
+ 此错误/警告/信息事件表明接收管道无法处理传入的 EDIFACT 交换，因为交换中发生了结构错误。 会发生此错误的事务集被挂起的错误，正在保留的交换。 此错误，事务集 （或集） 的结果，包括错误被挂起，但是其余事务设置为已处理保留的批处理的一部分。  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请让交换的发送方解决此结构错误，然后重新发送交换。
+ 若要解决此错误，请让交换的修复方法结构错误，发送方，然后重新发送交换。

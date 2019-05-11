@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8138449cf3af067c9a76848f203c7e1809f6adbc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 11cb88205b56b3ff773ad88141f9ef5b845d920b
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986606"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529052"
 ---
 # <a name="limitations-of-biztalk-adapter-for-oracle-database"></a>用于 Oracle 数据库的 BizTalk 适配器的限制
 ## <a name="general"></a>常规  
@@ -72,7 +72,7 @@ ms.locfileid: "36986606"
   
 - [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]不支持 BLOB、 CLOB、 和 NCLOB 数据类型包含为在 OUT 参数的 Udt。  
   
-- [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]不支持以下的简单类型的 Varray Varray: BFILE、 IntervalDS、 IntervalYM、 TimeStampLTZ 和 TimeStampTZ。  
+- [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]不支持以下的简单类型的 Varray Varray:BFILE、 IntervalDS、 IntervalYM、 TimeStampLTZ 和 TimeStampTZ。  
   
 - 由于关联阵列的限制，PL/SQL 表或包含任何以下数据类型的记录的 PL/SQL 表中不支持[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]:  
   

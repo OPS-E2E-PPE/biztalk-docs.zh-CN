@@ -13,12 +13,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 963c4b3c8d8287b430774813487e924837880a01
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d49f827856cf7d6b962b0a1eef27d8fd1a887214
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004870"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373656"
 ---
 # <a name="configure-the-soap-action-for-the-sap-system"></a>配置用于 SAP 系统的 SOAP 操作
 若要对使用基于 WCF 的 SAP 系统执行任何操作[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]，适配器的用户必须指定 SOAP 操作。 SOAP 操作通信适配器应执行什么操作。 可以指定在设计时或在运行时的 SOAP 操作。 但是，如果指定的 SOAP 操作这两个在设计时和运行时，将替代在设计时指定的操作。  

@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5e9de4c43e6f1721297b522ae76f5876731aa997
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c430660b2fce17f31901761a050ce7c5522c8952
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013398"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529281"
 ---
 # <a name="diagnostic-tracing-and-message-logging-for-the-oracle-database-adapter"></a>诊断跟踪和 Oracle 数据库适配器的消息日志记录
 诊断跟踪有助于有效地诊断使用适配器时可能遇到的问题。 本主题提供有关以下两种类型的支持的跟踪信息[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]:  

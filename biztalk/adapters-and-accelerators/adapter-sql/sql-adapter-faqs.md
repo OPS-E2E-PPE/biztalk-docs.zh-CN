@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 83d94b47a7475e53d15e4f7866dea36bf1fcf08b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9911b00628355970414a3a4c7df66592b50fda5e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978478"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367921"
 ---
 # <a name="sql-adapter-faqs"></a>SQL 适配器常见问题解答
 以下一些常见问题 (Faq) 与相关[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]和[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]一般情况下。  
@@ -66,5 +66,5 @@ ms.locfileid: "36978478"
   
  
 ## <a name="see-also"></a>请参阅  
- [方面的常见问题](../../adapters-and-accelerators/frequently-asked-questions-for-the-biztalk-adapter-pack.md)
+ [常见问题解答](../../adapters-and-accelerators/frequently-asked-questions-for-the-biztalk-adapter-pack.md)
  

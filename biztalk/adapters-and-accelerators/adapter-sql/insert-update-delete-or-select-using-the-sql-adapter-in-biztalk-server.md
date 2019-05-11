@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9f3e81cf843473a544b915d185e4609d0748fc2e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e8e7ee1ca1f19f07033cf94a460978d9597645aa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982022"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369381"
 ---
 # <a name="insert-update-delete-or-select-operations-using-biztalk-server-with-the-sql-adapter"></a>插入、 更新、 删除或选择将 BizTalk Server 与 SQL 适配器的操作
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]显示一组的 SQL Server 数据库表和视图上的标准操作。 这些称为数据操作语言 (DML) 操作。 通过使用 DML 操作，可以执行简单的 Insert、 Update、 Select 和删除表和视图上的操作。 有关适配器如何支持这些操作的详细信息，请参阅[Insert、 Update、 Delete 和选择操作对表和视图与 SQL 适配器](../../adapters-and-accelerators/adapter-sql/insert-update-delete-and-select-on-tables-and-views-with-the-sql-adapter.md)。 有关这些操作的 SOAP 消息结构的信息，请参阅[Insert、 Update、 Delete 和对表和视图的选择操作的消息架构](../../adapters-and-accelerators/adapter-sql/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md)。  
@@ -56,7 +56,7 @@ ms.locfileid: "36982022"
 >  有关如何创建 UDT 的信息，请参阅[创建用户定义类型](https://msdn.microsoft.com/library/ms131106.aspx)。 有关如何在 SQL Server 中注册 UDT 的信息，请参阅[SQL Server 中的 Registering User-Defined 类型](https://msdn.microsoft.com/library/eybzcxe6(v=vs.85).aspx)。  
   
 ## <a name="defining-messages-and-message-types"></a>定义消息和消息类型  
- 你之前生成的架构描述了业务流程中的消息所需的“类型”。 消息通常是一个变量，其类型由相应的架构定义。 现在必须为该业务流程创建消息并将其链接到上一步中生成的架构。  
+ 先前生成的架构描述业务流程中的消息所需的"类型"。 一条消息通常是一个变量，要为其类型由相应的架构定义。 现在必须为该业务流程创建消息并将其链接到上一步中生成的架构。  
   
 1.  向 BizTalk 项目添加业务流程。 从解决方案资源管理器，右键单击 BizTalk 项目名称，指向**外**，然后单击**新项**。 键入 BizTalk 业务流程的名称，然后单击**添加**。  
   
@@ -98,7 +98,7 @@ ms.locfileid: "36982022"
 ### <a name="adding-ports"></a>添加端口  
  请确保为每个逻辑端口中指定以下属性。 端口列中列出的名称是在业务流程中显示的端口的名称。  
   
-|端口|属性|  
+|Port|属性|  
 |----------|----------------|  
 |MessageIn|-设置**标识符**到*MessageIn*<br />-设置**类型**到*MessageInType*<br />-设置**通信模式**到*单向*<br />-设置**通信方向**到*接收*|  
 |LOBPort|-设置**标识符**到*LOBPort*<br />-设置**类型**到*LOBPortType*<br />-设置**通信模式**到*请求-响应*<br />-设置**通信方向**到*发送接收*|  
@@ -119,7 +119,7 @@ ms.locfileid: "36982022"
  现在，必须生成 BizTalk 解决方案，并将其部署到 BizTalk Server。 有关详细信息，请参阅[构建和运行业务流程](../../core/building-and-running-orchestrations.md)。  
   
 ## <a name="configuring-the-biztalk-application"></a>配置 BizTalk 应用程序  
- 部署 BizTalk 项目后，在业务流程窗格中列出前面创建的业务流程[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 必须使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台来配置应用程序。 有关演练，请参阅[演练： 部署基本 BizTalk 应用程序](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)。
+ 部署 BizTalk 项目后，在业务流程窗格中列出前面创建的业务流程[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 必须使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台来配置应用程序。 有关演练，请参阅[演练：部署基本 BizTalk 应用程序](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)。
   
  配置应用程序包括：  
   

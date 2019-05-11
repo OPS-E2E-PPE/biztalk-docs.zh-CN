@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8dce6bef0cecf847d10bee1897f417e63922659e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 94a521caa483c258fd2bacb8b02a47d15ce666ac
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980030"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372267"
 ---
 # <a name="use-a-custom-web-part-with-the-sap-adapter"></a>SAP 适配器一起使用自定义 Web 部件
 本部分提供有关 Microsoft Office SharePoint Server 中使用自定义 Web 部件的信息。 若要使用自定义 Web 部件，必须执行以下操作：  
@@ -31,11 +31,11 @@ ms.locfileid: "36980030"
 ## <a name="before-you-begin"></a>开始之前  
  创建自定义 Web 部件之前：  
   
--   将 SAP 项目作为 WCF 服务发布。 有关详细信息，请参阅[步骤 1： 将 SAP 项目作为 WCF 服务发布](../../adapters-and-accelerators/adapter-sap/step-1-publish-the-sap-artifacts-as-a-wcf-service.md)中[教程 1： 从 SharePoint 站点上的 SAP 系统提供数据](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md)。  
+-   将 SAP 项目作为 WCF 服务发布。 有关详细信息，请参阅[步骤 1:将 SAP 项目作为 WCF 服务发布](../../adapters-and-accelerators/adapter-sap/step-1-publish-the-sap-artifacts-as-a-wcf-service.md)在[教程 1:从 SharePoint 站点上的 SAP 系统提供数据](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md)。  
   
--   创建 SAP 项目使用 Microsoft Office SharePoint Server 中的业务数据目录应用程序定义文件。 有关详细信息，请参阅[步骤 2： 为 SAP 项目创建应用程序定义文件](../../adapters-and-accelerators/adapter-sap/step-2-create-an-application-definition-file-for-the-sap-artifacts.md)中[教程 1： 从 SharePoint 站点上的 SAP 系统提供数据](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md)。  
+-   创建 SAP 项目使用 Microsoft Office SharePoint Server 中的业务数据目录应用程序定义文件。 有关详细信息，请参阅[步骤 2:为 SAP 项目创建应用程序定义文件](../../adapters-and-accelerators/adapter-sap/step-2-create-an-application-definition-file-for-the-sap-artifacts.md)在[教程 1:从 SharePoint 站点上的 SAP 系统提供数据](../../adapters-and-accelerators/adapter-sap/tutorial-1-presenting-data-from-an-sap-system-on-a-sharepoint-site.md)。  
   
-##  <a name="Create_a_Custom_Web_Part"></a> 步骤 1： 创建自定义 Web 部件  
+##  <a name="Create_a_Custom_Web_Part"></a> 步骤 1：创建自定义 Web 部件  
  若要创建自定义 Web 部件使用 Visual Studio，请执行以下操作：  
   
 1.  启动 Visual Studio 中，并创建一个项目。  
@@ -48,19 +48,19 @@ ms.locfileid: "36980030"
   
 5.  添加基于你在项目中的问题所需的代码。 与某些问题相关的代码示例，请参阅"问题涉及自定义 Web 部件"中[与 SharePoint 结合使用 SAP 适配器时的注意事项](../../adapters-and-accelerators/adapter-sap/considerations-when-using-the-sap-adapter-with-sharepoint.md)。  
   
-6.  生成此项目。 在项目的成功生成，.dll 文件，CustomWebPart.dll，将在其中生成\<项目文件夹 \> /bin/Debug 文件夹。  
+6.  生成项目。 在项目的成功生成，.dll 文件，CustomWebPart.dll，将在其中生成\<项目文件夹 \> /bin/Debug 文件夹。  
   
-7.  **只为 64 位计算机**： 使用强名称为 CustomWebPart.dll 文件签名然后再执行以下步骤。 否则，你将无法导入，并因此在 SharePoint 门户中使用 CustomWebPart.dll"步骤 3： 配置 SharePoint 门户以使用自定义 Web 部件。" 请参阅[如何： 使用强名称为程序集签名](https://msdn.microsoft.com/library/xc31ft41.aspx)。
+7.  **只为 64 位计算机**:使用强名称对 CustomWebPart.dll 文件签名然后再执行以下步骤。 否则，你将无法导入，并因此在 SharePoint 门户中使用 CustomWebPart.dll"步骤 3:配置 SharePoint 门户以使用自定义 Web 部件。" 请参阅[如何：为程序集具有强名称签名](https://msdn.microsoft.com/library/xc31ft41.aspx)。
   
-## <a name="step-2-deploy-the-custom-web-part-to-a-sharepoint-portal"></a>步骤 2： 将自定义 Web 部件部署到 SharePoint 门户网站  
- 必须执行以下操作来使 CustomWebPart.dll 文件 （自定义 Web 部件） 中创建的"步骤 1： 创建自定义 Web 部件"的 SharePoint 门户上可使用本主题：  
+## <a name="step-2-deploy-the-custom-web-part-to-a-sharepoint-portal"></a>第 2 步：将自定义 Web 部件部署到 SharePoint 门户网站  
+ 必须执行以下操作来使 CustomWebPart.dll 文件 （自定义 Web 部件） 中创建的"步骤 1:创建自定义 Web 部件"本主题的 SharePoint 门户上可用：  
   
-- **将 CustomWebPart.dll 文件复制到 bin 文件夹中的 SharePoint Portal**: Microsoft Office SharePoint Server 创建下的门户网站\<根驱动器\>: \Inetpub\wwwroot\wss\VirtualDirectories 文件夹。 文件夹创建每个门户中，并可以使用的端口号标识。 必须将 CustomWebPart.dll 文件中创建"步骤 1： 创建自定义 Web 部件"到本主题的\<根驱动器\>: \Inetpub\wwwroot\wss\VirtualDirectories\\< Port_Number\>\bin 文件夹。 例如，如果你的 SharePoint 门户的端口号是 13614，您必须 CustomWebPart.dll 文件复制到\<根驱动器\>: \Inetpub\wwwroot\wss\VirtualDirectories\13614\bin 文件夹。  
+- **将 CustomWebPart.dll 文件复制到 bin 文件夹中的 SharePoint Portal**:Microsoft Office SharePoint Server 创建下的门户网站\<根驱动器\>: \Inetpub\wwwroot\wss\VirtualDirectories 文件夹。 文件夹创建每个门户中，并可以使用的端口号标识。 必须将 CustomWebPart.dll 文件中创建"步骤 1:创建自定义 Web 部件"到本主题的\<根驱动器\>: \Inetpub\wwwroot\wss\VirtualDirectories\\< Port_Number\>\bin 文件夹。 例如，如果你的 SharePoint 门户的端口号是 13614，您必须 CustomWebPart.dll 文件复制到\<根驱动器\>: \Inetpub\wwwroot\wss\VirtualDirectories\13614\bin 文件夹。  
   
   > [!TIP]
   >  若要查找你的 SharePoint 门户的文件夹位置的另一种方法是使用**Internet 信息服务 (IIS) 管理器**窗口 (**启动** > **运行** >  **inetmgr**)。 找到你的 SharePoint 门户中**Internet 信息服务 (IIS) 管理器**窗口 ([computer_name] > 网站 > [门户名称])，右键单击，然后单击**属性**中快捷菜单。 在 SharePoint 门户的属性对话框中，单击**主目录**选项卡，然后选择**本地路径**框。  
   
-- **在 web.config 文件中添加安全控件项**： 因为 CustomWebPart.dll 文件用于不同的计算机上，并由多个用户，必须声明为"安全"。 文件 为此，请打开 web.config 文件位于 SharePoint 门户文件夹在\<根驱动器\>: \Inetpub\wwwroot\wss\VirtualDirectories\\< Port_Number\>。 下`<SafeControls>`部分中的 web.config 文件中，添加以下安全控件项：  
+- **在 web.config 文件中添加安全控件项**:因为 CustomWebPart.dll 文件用于不同的计算机上，并由多个用户，必须声明为"安全"。 文件 为此，请打开 web.config 文件位于 SharePoint 门户文件夹在\<根驱动器\>: \Inetpub\wwwroot\wss\VirtualDirectories\\< Port_Number\>。 下`<SafeControls>`部分中的 web.config 文件中，添加以下安全控件项：  
   
   - **在 32 位计算机：**  
   
@@ -76,8 +76,8 @@ ms.locfileid: "36980030"
   
     保存 web.config 文件中，并将其关闭。  
   
-## <a name="step-3-configure-the-sharepoint-portal-to-use-the-custom-web-part"></a>步骤 3： 配置 SharePoint 门户以使用自定义 Web 部件  
- 需要将自定义 Web 部件添加到 Microsoft Office SharePoint Server Web 部件库，以便 SharePoint 门户网站上使用它。 为此：  
+## <a name="step-3-configure-the-sharepoint-portal-to-use-the-custom-web-part"></a>步骤 3：配置 SharePoint 门户以使用自定义 Web 部件  
+ 需要将自定义 Web 部件添加到 Microsoft Office SharePoint Server Web 部件库，以便 SharePoint 门户网站上使用它。 为此，请执行以下操作：  
   
 1. 启动 SharePoint 3.0 管理中心。 单击**启动**，依次指向**所有程序**，指向**Microsoft Office Server**，然后单击**SharePoint 3.0 管理中心**.  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cda98a1600df28fab476114e697cd47e24316251
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 94c3bfa7dd789380b5b781b9316d7243e6a4680c
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012598"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529461"
 ---
 # <a name="receive-polling-based-data-changed-messages-in-oracle-database-using-the-wcf-service-model"></a>使用 WCF 服务模型的 Oracle 数据库中接收基于轮询的数据更改消息
 你可以配置[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]接收基于轮询的数据更改消息对 Oracle 表或视图。 若要接收数据更改消息，适配器定期执行对 Oracle 表或视图后, 跟一个可选的 PL/SQL 代码块的 SQL 查询。 然后返回 SQL 查询的结果[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]到应用程序作为强类型化的结果集的入站 POLLINGSTMT 操作。 有关用于配置和执行在 Oracle 上的轮询机制的详细信息的数据库使用[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]，请参阅[Oracle 数据库适配器中接收基于轮询的数据更改消息](../../adapters-and-accelerators/adapter-oracle-database/receive-polling-based-data-changed-messages-in-oracle-database-adapter.md)。 我们强烈建议您阅读本主题继续操作之前。  
@@ -220,7 +220,7 @@ namespace OracleDBBindingNamespace {
    binding.TransactionIsolationLevel = TransactionIsolationLevel.ReadCommitted;  
    ```  
   
-6. 将服务终结点添加到服务主机。 为此，请执行以下操作：  
+6. 将服务终结点添加到服务主机。 若要执行此操作：  
   
    -   使用在步骤 5 中创建的绑定。  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7bbf5114d26f4f3afd56e4a2a020238d4fe44fae
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4e3017b16f0558f40d7dce82724c65792483e4da
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001478"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530250"
 ---
 # <a name="message-repair-and-new-submission-troubleshooting"></a>消息修复和新提交疑难解答
 ## <a name="a-repaired-message-cannot-be-submitted-if-the-envelope-schema-is-not-deployed"></a>不能提交修复后的消息，如果信封架构未部署  
@@ -221,4 +221,4 @@ ms.locfileid: "37001478"
  运行**BTSharePointAdapterWSAppPool**并**DefaultAppPoolApplication** -> 和在 Internet 信息 Services(IIS) 池的管理员帐户。  
   
 ## <a name="see-also"></a>请参阅  
- [疑难解答：问题和解决方法](../../adapters-and-accelerators/accelerator-swift/troubleshooting-issues-and-resolutions1.md)
+ [故障排除：问题和解决方法](../../adapters-and-accelerators/accelerator-swift/troubleshooting-issues-and-resolutions1.md)

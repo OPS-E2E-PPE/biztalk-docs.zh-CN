@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7da9395ec244f6877dc7902e0feae22f6d81b391
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7a48a043eb53b4ad4d8aeddcf27245766915699c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37020070"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372721"
 ---
 # <a name="syntax-for-an-exec-statement-in-sap"></a>在 SAP 中的 EXEC 语句的语法
 以下部分介绍了用于实现对 EXEC 语句的语法规范[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]。 请注意，在某些情况下，该语法的 TRANSACT-SQL 语法稍有不同。  
@@ -32,11 +32,11 @@ EXEC rfc_name {<argument_element>} [ , …n ]  {;}[0,1] [ OPTION <disabledataval
   
 - **rfc_name**指定要执行的函数调用的名称。  
   
-- **< argument_element >** :: = @param_name = [0，1] \<const\> {[输入&#124;输出]} [0，1]  
+- **<argument_element>** ::= @param_name = [0,1] \<const\> {[ INPUT &#124; OUTPUT ]}[0,1]  
   
   -   **param_name**指定函数接口中定义的参数名称。  
   
-  -   **\<const\>**  :: = 整数&#124;实际&#124;字符串&#124;？ &#124;NULL &#124; xml_element  
+  -   **\<const\>** ::= integer &#124; real &#124; string &#124; ? &#124; NULL &#124; xml_element  
   
 - **选项**提供了在你想要显示的数据的选项。 可用选项是：  
   

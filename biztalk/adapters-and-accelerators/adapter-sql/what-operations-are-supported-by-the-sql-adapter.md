@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e61230ed2244bc4bb7c79f87c18879c3c83f7f95
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 873b74a253bd96c95ecf3d26be884fe83ac53e7e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011270"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367432"
 ---
 # <a name="what-operations-are-supported-by-the-sql-adapter"></a>通过 SQL 适配器支持哪些操作
 可以使用适配器客户端在通过 SQL Server 数据库上执行操作：  

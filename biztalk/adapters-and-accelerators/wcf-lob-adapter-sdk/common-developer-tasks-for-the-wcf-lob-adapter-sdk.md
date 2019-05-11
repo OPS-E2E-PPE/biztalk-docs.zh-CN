@@ -1,6 +1,6 @@
 ---
-title: WCF LOB 适配器 SDK 的常见开发人员任务 |Microsoft 文档
-description: 教程和有关创建使用 WCF LOB 适配器 SDK 适配器的概念信息的快速链接
+title: WCF LOB 适配器 SDK 的常见开发人员任务 |Microsoft Docs
+description: 教程和概念信息创建适配器使用 WCF LOB 适配器 SDK 快速链接
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -13,49 +13,49 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bbf6a6c24178aa98bf456b7e9d8dbc61efb053ef
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 187eb8d5c841d6bd5b51e05e9be04742e4fa0ef4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22224373"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363972"
 ---
 # <a name="common-developer-tasks-for-the-wcf-lob-adapter-sdk"></a>WCF LOB 适配器 SDK 的常见开发人员任务
 
 ## <a name="overview"></a>概述
 
-适配器开发人员设计和开发基于 WCF 的适配器添加到业务线系统使用[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]API 和工具以及 Microsoft.NET Framework。  
+适配器开发人员设计和开发业务线系统可以使用基于 WCF 的适配器[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]API 和工具，以及 Microsoft.NET Framework。  
   
- 若要帮助适配器开发人员以尽可能更有效，以下列表提供了链接的教程和开发使用适配器常规信息[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。  
+ 为了帮助适配器开发人员尽可能提高效率，下表提供的链接的教程和开发适配器使用的常规信息[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。  
   
 **概念**  
   
--   [什么是 Windows Communication Foundation 行的业务适配器 SDK](what-is-the-windows-communication-foundation-line-of-business-adapter-sdk.md)  
+-   [Windows Communication Foundation 行业适配器 SDK 是什么](what-is-the-windows-communication-foundation-line-of-business-adapter-sdk.md)  
   
 
 **开发**  
   
  
--   [WCF LOB 适配器 SDK 的关键组成部分](key-components-of-the-wcf-lob-adapter-sdk.md) 
+-   [WCF LOB 适配器 SDK 的重要组成部分](key-components-of-the-wcf-lob-adapter-sdk.md) 
   
 -   [扩展通道层](https://docs.microsoft.com/dotnet/framework/wcf/extending/extending-the-channel-layer)  
   
 
 **教程**  
   
--   [若要了解 WCF LOB 适配器 SDK 的教程](tutorials-to-learn-the-wcf-lob-adapter-sdk.md) 
+-   [教程，了解 WCF LOB 适配器 SDK](tutorials-to-learn-the-wcf-lob-adapter-sdk.md) 
   
-    向适配器使用者，使用适配器是与使用 WCF 服务相同。 要开始学习使用 WCF 在[Developing Service-Oriented 使用 WCF 的应用程序)](https://docs.microsoft.com/dotnet/framework/wcf)。
+    适配器使用者，到使用适配器是与使用 WCF 服务相同。 开始了解在 WCF [Developing Service-Oriented 使用 WCF 的应用程序)](https://docs.microsoft.com/dotnet/framework/wcf)。
   
-    以下主题可能会有用适配器使用者：  
+    以下主题可能可用于适配器使用者：  
   
 -   [什么是 Windows Communication Foundation](https://docs.microsoft.com/dotnet/framework/wcf/whats-wcf)  
   
--   [Windows Communication Foundation 基础概念](https://docs.microsoft.com/dotnet/framework/wcf/fundamental-concepts)  
+-   [基本 Windows Communication Foundation 概念](https://docs.microsoft.com/dotnet/framework/wcf/fundamental-concepts)  
   
--   [承载服务](https://docs.microsoft.com/dotnet/framework/wcf/hosting-services)  
+-   [托管服务](https://docs.microsoft.com/dotnet/framework/wcf/hosting-services)  
   
 -   [生成客户端](https://docs.microsoft.com/dotnet/framework/wcf/building-clients)  
   
-## <a name="see-also"></a>另请参阅  
- [要开始使用与 WCF LOB 适配器 SDK](get-started-with-the-with-the-wcf-lob-adapter-sdk.md)
+## <a name="see-also"></a>请参阅  
+ [开始使用与 WCF LOB 适配器 SDK](get-started-with-the-with-the-wcf-lob-adapter-sdk.md)

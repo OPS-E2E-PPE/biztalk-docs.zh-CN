@@ -1,5 +1,5 @@
 ---
-title: 基本类型 1> |Microsoft 文档
+title: 基本类型 1> |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -20,52 +20,52 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e90cda6259567adf5236d0c28e576900d8b25271
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1c1cfd31eacd56c19e5b1daf2288be098d9448c3
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231853"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529140"
 ---
 # <a name="basic-types"></a>基本类型
-用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器提供仅到 JD Edwards OneWorld 业务函数的访问。 业务功能元数据使用业务功能接口读取，用于查找业务功能列表和相关联的数据结构。 对于所有业务功能方法，元数据都是强类型数据。  
+用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器提供仅到 JD Edwards OneWorld 业务功能的访问。 业务功能元数据使用业务功能接口读取和用于查找业务功能的列表和关联数据结构。 在所有情况下，对于所有业务功能方法为强类型元数据。  
   
- 所有业务函数方法都有相同的调用约定： 是针对派生，整个系统的三个参数和指向的数据结构的指针。 下表显示了业务函数数据类型是如何表示的。  
+ 所有业务功能方法都具有相同的调用约定： 系统派生的三个参数和数据结构的指针。 下表显示了业务函数数据类型的表示方式。  
   
  **业务函数数据类型**  
   
-|JD Edwards OneWorld 数据类型|Description|WDSL 转换|  
+|JD Edwards OneWorld Data Type|Description|WDSL 转换|  
 |-----------------------------------|-----------------|---------------------|  
-|char|字符的字符串。|xsd:string of 1|  
-|int|短整数。|xsd:short|  
+|char|字符的字符串。|xsd: string 的 1|  
+|ssNoversion|短整数。|xsd:short|  
 |long|长整型。|xsd:short|  
-|字符串|请参阅[处理字符串值](../core/handling-string-values1.md)。|xsd:string|  
-|JDEDATE|日期的特殊实现。|xsd:date|  
-|MATH_NUMERIC|浮动点数的特殊实现，包括货币值。|32 个 xsd: string|  
-|Byte|单个无符号字符。|xsd:string of 1|  
+|String|请参阅[处理字符串值](../core/handling-string-values1.md)。|xsd:string|  
+|JDEDATE|数据的特殊实现。|xsd:date|  
+|MATH_NUMERIC|浮点数字，其中包括货币值的特殊实现。|32 个 xsd: string|  
+|Byte|单个无符号的字符。|xsd: string 的 1|  
   
- 下表包含 JD Edwards OneWorld 中的基本类型列表及其映射到 Microsoft .NET Framework 的方式。  
+ 下表包含 JD Edwards OneWorld 以及它们如何映射到 Microsoft.NET Framework 中的基本类型的列表。  
   
- **基本类型和它们如何映射到 Microsoft.NET Framework**  
+ **基本类型以及它们如何映射到 Microsoft.NET Framework**  
   
 |JD Edwards OneWorld XE|.NET Framework|  
 |----------------------------|--------------------|  
-|char|字符串|  
-|int|Short|  
+|char|String|  
+|ssNoversion|Short|  
 |long|Short|  
-|字符串|字符串|  
+|String|String|  
 |JDEDATE|System.DateTime|  
-|MATH_NUMERIC|字符串|  
-|Byte|字符串|  
+|MATH_NUMERIC|String|  
+|Byte|String|  
   
 > [!NOTE]
->  如果只有一个参数，且返回参数为 void，则占位符将替换为类，输出部分将成为返回值。 例如：  
+>  如果只有一个参数，且返回参数为 void，占位符将替换为类，并输出部分将成为返回值。 例如：  
   
 ```  
 org.apache.axis.holders.DateHolder becomes a java.util.Date.   
 ```  
   
- 下面是一个方法签名示例：  
+ 以下是方法签名的示例：  
   
 ```  
 void testDate1(org.apache.axis.holders.DateHolder date1  
@@ -75,9 +75,9 @@ java.util.Date testDate2(java.util.Date date);
 ```  
   
 ## <a name="character-limited-strings"></a>有限字符串  
- 在 JD Edwards OneWorld 中，一些字符串是有字符限制的。 任何多余的字符将导致出错。 若要查看字符串中的字符限制，您可以使用 Microsoft 适配器向导。  
+ 在 JD Edwards OneWorld 中一些字符串是有字符限制。 任何多余的字符将导致错误。 若要查看字符串中的字符的限制，可以使用 Microsoft 适配器向导。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 MATH_NUMERIC 类型](../core/using-the-math-numeric-type2.md)   
  [处理字符串值](../core/handling-string-values1.md)   
- [附录 a： 数据类型](../core/appendix-a-data-types.md)
+ [附录 a:数据类型](../core/appendix-a-data-types.md)

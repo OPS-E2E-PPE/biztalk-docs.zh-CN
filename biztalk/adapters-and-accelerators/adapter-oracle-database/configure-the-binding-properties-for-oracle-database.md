@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 96922feab7c343893bfaa04ccbccd7c7e2f6a743
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1e791a0dcd5b10d8a513b0ee1645f724d8c53159
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981078"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529502"
 ---
 # <a name="configure-the-binding-properties-for-oracle-database"></a>用于 Oracle 数据库配置的绑定属性
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]显示，您可以控制某些行为特征的多个绑定属性。 本部分提供有关从 Visual Studio 和 BizTalk Server 管理控制台设置的绑定属性的信息。 从 Visual Studio 中，必须在生成针对特定操作的架构时指定的绑定属性。 从 BizTalk Server 必须绑定属性指定为一部分发送或接收端口来发送或从 Oracle 数据库接收消息。  

@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 为 BizTalk 业务流程创建消息 |Microsoft Docs
+title: 第 2 步：为 BizTalk 业务流程创建消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9bad2f052efa561020ba04060a8290137a08f542
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 026dd9f832ee0422a49c520db65f0d3b1cd79de7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995358"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367826"
 ---
-# <a name="step-2-create-messages-for-biztalk-orchestrations"></a>步骤 2： 为 BizTalk 业务流程创建消息
+# <a name="step-2-create-messages-for-biztalk-orchestrations"></a>第 2 步：为 BizTalk 业务流程创建消息
 ![步骤 2 2](../../adapters-and-accelerators/adapter-sql/media/step-2of2.gif "Step_2of2")  
   
- **完成时间：** 5 分钟  
+ **若要完成的时间：** 5 分钟  
   
- **目标：** 在此步骤中，将向 BizTalk 项目添加业务流程和为在生成的架构创建消息[步骤 1： 为操作生成架构](../../adapters-and-accelerators/adapter-sql/step-1-generate-schema-for-operations.md)。  
+ **目标：** 在此步骤中，将向 BizTalk 项目添加业务流程和为在生成的架构创建消息[步骤 1:为操作生成架构](../../adapters-and-accelerators/adapter-sql/step-1-generate-schema-for-operations.md)。  
   
-## <a name="prerequisites"></a>必要條件  
- 你必须已完成[步骤 1： 为操作生成架构](../../adapters-and-accelerators/adapter-sql/step-1-generate-schema-for-operations.md)。  
+## <a name="prerequisites"></a>先决条件  
+ 你必须已完成[步骤 1:为操作生成架构](../../adapters-and-accelerators/adapter-sql/step-1-generate-schema-for-operations.md)。  
   
 ### <a name="to-create-messages-in-an-orchestration"></a>若要在业务流程中创建消息  
   
@@ -59,18 +59,18 @@ ms.locfileid: "36995358"
        |将标识符设置为|将消息类型设置为|  
        |-----------------------|-------------------------|  
        |UpdateEmployee|*Employee_PurchaseOrder.TypedProcedure_dbo。UPDATE_EMPLOYEE*，其中 TypedProcedure_dbo。UPDATE_EMPLOYEE 是 UPDATE_EMPLOYEE 的架构存储过程。|  
-       |UpdateEmployeeResponse|*Employee_PurchaseOrder.TypedProcedure_dbo。UPDATE_EMPLOYEEResponse*|  
+       |UpdateEmployeeResponse|*Employee_PurchaseOrder.TypedProcedure_dbo.UPDATE_EMPLOYEEResponse*|  
        |InsertPO|*Employee_PurchaseOrder.TableOperation_dbo_Purchase_Order.Insert*TableOperation_dbo_Purchase_Order.Insert 所在 Purchase_Order 表上的插入操作的架构。|  
        |InsertPOResponse|*Employee_PurchaseOrder.TableOperation_dbo_Purchase_Order.InsertResponse*|  
   
    5.  保存业务流程文件和 BizTalk 项目。  
   
-## <a name="what-did-i-just-do"></a>内容回顾  
+## <a name="what-did-i-just-do"></a>我只需做了什么？  
  在此步骤中，创建用于调用上使用 SQL Server 执行入站和出站操作消息[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。  
   
 ## <a name="next-steps"></a>后续步骤  
- 您将添加业务流程形状从 SQL Server 和筛选器的插入操作的通知接收通知，如中所述[第 2 课： 接收和筛选器通知](../../adapters-and-accelerators/adapter-sql/lesson-2-receive-and-filter-notifications.md)。  
+ 您将添加业务流程形状从 SQL Server 和筛选器的插入操作的通知接收通知，如中所述[第 2 课：接收和筛选通知](../../adapters-and-accelerators/adapter-sql/lesson-2-receive-and-filter-notifications.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [第 1 课： 生成架构并创建消息](../../adapters-and-accelerators/adapter-sql/lesson-1-generate-schemas-and-create-messages.md)   
+ [第 1 课：生成架构并创建消息](../../adapters-and-accelerators/adapter-sql/lesson-1-generate-schemas-and-create-messages.md)   
  [步骤 1：为操作生成架构](../../adapters-and-accelerators/adapter-sql/step-1-generate-schema-for-operations.md)

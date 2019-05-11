@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bcabe727b720c2319b253517ea78c573242df76c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 54402a6ea9040d8821912214a6b206ed075628f6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987430"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375124"
 ---
 # <a name="overview-of-the-wcf-channel-model-with-the-oracle-e-business-suite-adapter"></a>使用 Oracle E-business Suite 适配器的 WCF 通道模型概述
 若要在调用操作[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]，你的代码可用作 WCF 客户端，并将出站操作发送到适配器。 在 WCF 通道模型中，你的代码的通道上发送请求消息来调用在适配器上的操作。  

@@ -16,17 +16,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 700d597b3532c0034623553a6d1f0f8147e5642d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: eefeacb1b7515408e0493c844a2ee2cbd697da17
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985998"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373360"
 ---
 # <a name="import-sap-data-using-visual-studio"></a>使用 Visual Studio 导入 SAP 数据
 本部分介绍如何使用 Microsoft[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]从 SAP 系统到 SQL Server 数据库导入数据。 本部分提供有关如何创建 SSIS 包可执行导入数据的指令。 本部分还提供有关如何执行 SSIS 包的信息。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  在执行之前在本主题中提供的过程，请确保：  
   
 - [!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)] 在计算机上安装。  

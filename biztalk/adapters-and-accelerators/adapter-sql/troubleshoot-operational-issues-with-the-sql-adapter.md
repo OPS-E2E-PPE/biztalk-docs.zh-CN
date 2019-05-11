@@ -13,12 +13,12 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ccb3f48fca23825ec98fdc7f38012e44f7b2a00e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d167777ccd9fd9ccb2ddc5a43410d798bde3e7b2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994582"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367516"
 ---
 # <a name="troubleshoot-operational-issues-with-the-sql-adapter"></a>使用 SQL 适配器进行的操作问题故障排除
 本部分讨论如何使用故障排除技术来解决操作使用时可能遇到的错误[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]。  
@@ -216,7 +216,7 @@ The element 'bindings' has invalid child element 'sqlBinding'. List of possible 
   
  **解决方法**  
   
- 可以安全地忽略此警告。  
+ 可以放心地忽略此警告。  
   
 ###  <a name="BKMK_SQLNotification"></a> BizTalk Server 将引发异常，如果在同一个应用程序中使用多个通知架构或在同一主机上的多个应用程序中使用通知架构  
  **问题**  

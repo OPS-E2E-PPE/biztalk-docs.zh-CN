@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2f1423d5945fe1c82ccc64027a28efa3c1777ca5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 097916c7fcf971563ef70c933e348c214aceeab5
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013150"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529057"
 ---
 # <a name="invoke-functions-and-procedures-in-oracle-database-using-the-wcf-service-model"></a>调用函数和使用 WCF 服务模型的 Oracle 数据库中的过程
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]过程、 函数和包作为操作的图面。 在 WCF 服务模型中这些操作表示为 WCF 客户端上的方法。 WCF 服务模型和[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]:  
@@ -47,8 +47,8 @@ ms.locfileid: "37013150"
   
 |Oracle 项目|WCF 客户端操作名称|示例|  
 |---------------------|-------------------------------|-------------|  
-|过程|[架构]ProcedureClient。[PROC_NAME]|SCOTTProcedureClient.MYPROC|  
-|函数|[架构]FunctionClient。[FUNC_NAME]|SCOTTProcedureClient.MYFUNC|  
+|过程|[SCHEMA]ProcedureClient.[PROC_NAME]|SCOTTProcedureClient.MYPROC|  
+|函数|[SCHEMA]FunctionClient.[FUNC_NAME]|SCOTTProcedureClient.MYFUNC|  
 |包 （过程或函数）|[架构]包 [PACKAGE_NAME] 客户端。[PROC_NAME 或 FUNC_NAME]|SCOTTPackageMYPACKAGEClient.MYPROC|  
   
  [架构] = Oracle 集合项目;例如，SCOTT。  
@@ -63,13 +63,13 @@ ms.locfileid: "37013150"
   
 |Oracle 项目|命名空间|示例|  
 |---------------------|---------------|-------------|  
-|过程|[BASE_NS]。 [架构]。过程。[PROC_NAME]|microsoft.lobservices.oracledb._2007._03.SCOTT。Procedure.MYPROC|  
-|函数|[BASE_NS]。 [架构]。函数。[FUNC_NAME]|microsoft.lobservices.oracledb._2007._03.SCOTT。Function.MYFUNC|  
-|包 （过程）|[BASE_NS]。 [架构]。包。[PACKAGE_NAME]。[PROC_NAME]|microsoft.lobservices.oracledb._2007._03.SCOTT。Package.MYPACKAGE.MYPROC|  
-|包 （函数）|[BASE_NS]。 [架构]。包。[PACKAGE_NAME]。[FUNC_NAME]|microsoft.lobservices.oracledb._2007._03.SCOTT。Package.MYPACKAGE.MYFUNC|  
+|过程|[BASE_NS]. [SCHEMA].Procedure.[PROC_NAME]|microsoft.lobservices.oracledb._2007._03.SCOTT.Procedure.MYPROC|  
+|函数|[BASE_NS]. [SCHEMA].Function.[FUNC_NAME]|microsoft.lobservices.oracledb._2007._03.SCOTT.Function.MYFUNC|  
+|包 （过程）|[BASE_NS]. [SCHEMA].Package.[PACKAGE_NAME].[PROC_NAME]|microsoft.lobservices.oracledb._2007._03.SCOTT.Package.MYPACKAGE.MYPROC|  
+|包 （函数）|[BASE_NS]. [SCHEMA].Package.[PACKAGE_NAME].[FUNC_NAME]|microsoft.lobservices.oracledb._2007._03.SCOTT.Package.MYPACKAGE.MYFUNC|  
 |通用记录集 （弱类型）|[BASE_NS]|microsoft.lobservices.oracledb._2007._03|  
   
- [BASE_NS] = 基本适配器命名空间;microsoft.lobservices.oracledb._2007._03。  
+ [BASE_NS] = The base adapter namespace; microsoft.lobservices.oracledb._2007._03.  
   
  [架构] = Oracle 集合项目;例如，SCOTT。  
   
@@ -144,8 +144,8 @@ public partial class SCOTTProcedureClient : System.ServiceModel.ClientBase<SCOTT
   
 |Oracle 项目|WCF 客户端名称|示例|  
 |---------------------|---------------------|-------------|  
-|重载的包 （过程）|[架构]包 [PACKAGE_NAME] [PROC_NAME]] [OVERLOAD_ID] 客户端。[PROC_NAME]|SCOTTPackageMYPACKAGEMYPROCoverload1Client.MYPROC|  
-|重载的包 （函数）|[架构]包 [PACKAGE_NAME] [FUNC_NAME]] [OVERLOAD_ID] 客户端。[FUNC_NAME]|SCOTTPackageMYPACKAGEMYFUNCoverload1Client.MYFUNC|  
+|重载的包 （过程）|[SCHEMA]Package[PACKAGE_NAME][PROC_NAME] ][OVERLOAD_ID]Client.[PROC_NAME]|SCOTTPackageMYPACKAGEMYPROCoverload1Client.MYPROC|  
+|重载的包 （函数）|[SCHEMA]Package[PACKAGE_NAME][FUNC_NAME] ][OVERLOAD_ID]Client.[FUNC_NAME]|SCOTTPackageMYPACKAGEMYFUNCoverload1Client.MYFUNC|  
   
  [架构] = Oracle 集合项目;例如，SCOTT。  
   
@@ -161,11 +161,11 @@ public partial class SCOTTProcedureClient : System.ServiceModel.ClientBase<SCOTT
   
 |Oracle 项目|命名空间|示例|  
 |---------------------|---------------|-------------|  
-|包 （过程）|[BASE_NS]。 [架构]。包。[PACKAGE_NAME]。[PROC_NAME][OVERLOAD_ID]|microsoft.lobservices.oracledb._2007._03.SCOTT。Package.MYPACKAGE.MYPROC.overload1|  
-|包 （函数）|[BASE_NS]。 [架构]。包。[PACKAGE_NAME]。[FUNC_NAME]。[OVERLOAD_ID]|microsoft.lobservices.oracledb._2007._03.SCOTT。Package.MYPACKAGE.MYFUNC.overload1|  
+|包 （过程）|[BASE_NS]. [SCHEMA].Package.[PACKAGE_NAME].[PROC_NAME] [OVERLOAD_ID]|microsoft.lobservices.oracledb._2007._03.SCOTT.Package.MYPACKAGE.MYPROC.overload1|  
+|包 （函数）|[BASE_NS]. [SCHEMA].Package.[PACKAGE_NAME].[FUNC_NAME].[OVERLOAD_ID]|microsoft.lobservices.oracledb._2007._03.SCOTT.Package.MYPACKAGE.MYFUNC.overload1|  
 |通用记录集 （弱类型）|[BASE_NS]|microsoft.lobservices.oracledb._2007._03|  
   
- [BASE_NS] = 基本适配器命名空间;microsoft.lobservices.oracledb._2007._03。  
+ [BASE_NS] = The base adapter namespace; microsoft.lobservices.oracledb._2007._03.  
   
  [架构] = Oracle 集合项目;例如，SCOTT。  
   

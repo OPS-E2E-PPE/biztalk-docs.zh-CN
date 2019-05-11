@@ -1,5 +1,5 @@
 ---
-title: 步骤 1： 测试的 Echo 适配器的出站处理程序 |Microsoft 文档
+title: 第 1 步：测试 Echo 适配器的出站处理程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,69 +12,69 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ba2b1d6586588d17c58c0ca9a74cb11a7a9bd9f2
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 597c4059cb2fc673a557a6e68c5d544db1700522
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2018
-ms.locfileid: "23450518"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363358"
 ---
-# <a name="step-1-test-outbound-handler-of-the-echo-adapter"></a>步骤 1： 测试 Echo 适配器的出站处理的程序
+# <a name="step-1-test-outbound-handler-of-the-echo-adapter"></a>第 1 步：测试 Echo 适配器的出站处理程序
 ![2 的第 1 步](../../adapters-and-accelerators/adapter-sql/media/step-1of2.gif "Step_1of2")  
   
  **完成时间：** 15 分钟  
   
- 在此步骤中，你将测试由 Echo 适配器提供的三个出站操作。 你将执行此操作使用 Visual Studio 中，添加适配器服务引用 Visual Studio 插件和自定义代码。  
+ 在此步骤中，您将测试 Echo 适配器提供的三个出站操作。 您将执行此操作使用 Visual Studio 中，添加适配器服务参考 Visual Studio 插件和自定义代码。  
   
-## <a name="prerequisites"></a>必要條件  
- 若要完成此步骤，你必须已完成[教程 1： 开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)。  
+## <a name="prerequisites"></a>先决条件  
+ 若要完成此步骤中，你必须完成[教程 1:开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)。  
   
 ## <a name="create-a-visual-studio-project"></a>创建 Visual Studio 项目  
   
 1.  启动 Visual Studio。  
   
-2.  在 Visual Studio 中，在**文件**菜单上，指向**新建**，然后单击**项目**。  
+2.  在 Visual Studio 中，在**文件**菜单，依次指向**新建**，然后单击**项目**。  
   
-3.  在 **新项目** 对话框框中，执行以下操作︰  
+3.  在中**新的项目**对话框框中，执行以下操作：  
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
-    |**项目类型**|单击 **Visual C#**。|  
-    |**模板**|单击 **控制台应用程序**。|  
+    |**项目类型**|单击**Visual C#**。|  
+    |**模板**|单击**控制台应用程序**。|  
     |**名称**|类型**ConsumeEchoAdapter_Outbound**。|  
     |**位置**|类型**C:\Tutorials**。|  
     |**解决方案名称**|类型**ConsumeEchoAdapter_Outbound**。|  
   
-4.  单击 **“确定”**。  
+4.  单击“确定” 。  
   
-5.  在 Visual Studio 中，在**文件**菜单上，单击**保存所有**。  
+5.  在 Visual Studio 中，在**文件**菜单上，单击**全部保存**。  
   
 ## <a name="browse-search-and-generate-the-wcf-client"></a>浏览、 搜索和生成 WCF 客户端  
   
 1.  在 Visual Studio 解决方案窗格中，右键单击**ConsumeEchoAdapter_Outbound**项目，然后选择**添加适配器服务引用**以启动添加适配器服务引用插件。  
   
-2.  在**添加适配器服务引用**屏幕上，选择一个绑定。 这可通过选择**echoAdapterBindingV2**。  
+2.  在中**添加适配器服务引用**屏幕上，选择一个绑定。 这可通过选择**echoAdapterBindingV2**。  
   
-3.  接下来，通过单击配置的适配器和连接属性**配置...**.  此时会弹出**配置适配器**屏幕。  
+3.  接下来，通过单击配置的适配器和 connection 属性**配置...**.  此时会弹出**配置适配器**屏幕。  
   
-4.  在**配置适配器**屏幕上，选择**URI 属性**选项卡来配置连接属性。 请注意，显示了自定义的 Echo 适配器类别-**连接**和**格式**。 下**格式**类别中，更改**EchoInUpperCase**到**True**。  
+4.  在中**配置适配器**屏幕上，选择**URI 属性**选项卡可配置连接属性。 请注意，自定义 Echo 适配器类别显示 —**连接**并**格式**。 下**格式**类别中，更改**EchoInUpperCase**到**True**。  
   
-5.  在**配置适配器**屏幕上，选择**绑定属性**选项卡来配置适配器属性。 请注意，自定义的 Echo 适配器类别**入站**和**杂项**显示。 下**杂项**类别中，更改**计数**到**3**。  
+5.  在中**配置适配器**屏幕上，选择**绑定属性**选项卡以配置适配器属性。 请注意，自定义 Echo 适配器类别**入站**并**杂项**显示。 下**杂项**类别中，更改**计数**到**3**。  
   
-6.  单击**确定**关闭**配置适配器**屏幕并返回到**添加适配器服务引用**屏幕。  
+6.  单击**确定**以关闭**配置适配器**屏幕上，并返回到**添加适配器服务引用**屏幕。  
   
-7.  接下来，单击**连接**连接到 Echo 适配器 （及假设它支持的业务线系统）。 几分钟后的连接状态应更改为**已连接**和类别树 (下**选择类别**) 应进行填充。  
+7.  接下来，单击**Connect**连接到 Echo 适配器 （和假设它支持的业务线系统）。 几分钟后，连接状态应更改为**已连接**和类别树 (下**选择一个类别**) 应填充。  
   
-8.  在类别树中，单击**Main 类别**。 这将填充可用类别和与三个出站操作的操作的列表。 不将任何类别。  
+8.  在类别树中，单击**主类别**。 这将填充可用类别和包含三个出站操作的操作的列表。 将没有类别。  
   
     > [!NOTE]
     >  默认协定类型为出站。 类别结果将与此协定类型匹配。  
   
-9. 在**可用类别和操作**，选择所有三个操作。 当存在大量的操作时，你可能使用搜索来缩小选择;在这种情况下，有仅三个。 单击**添加**以使生成的 WCF 接口的所选的操作部分。  
+9. 在中**可用类别和操作**，选择所有三个操作。 当存在大量的操作时，你可能会使用搜索来缩小选择范围;在这种情况下，有只有三个。 单击**添加**以使生成的 WCF 接口的所选的操作部分。  
   
 10. 单击**确定**生成 WCF 接口。 这将添加到项目的应用程序配置文件 (app.config) 和 WCF 客户端代理 (EchoAdapterBindingClient.cs)。  
   
-11. 单击**文件**Visual Studio 菜单上，选择**保存所有**。  
+11. 单击**文件**Visual Studio 菜单上，然后选择**全部保存**。  
   
 ## <a name="configure-adapter-authentication"></a>配置适配器身份验证  
   
@@ -88,7 +88,7 @@ ms.locfileid: "23450518"
         contract="EchoOutboundContract" name="EchoAdapterBinding_EchoOutboundContract" />  
     ```  
   
-     更改**enableAuthentication**从**False**到**True**如下所示。 这将需要调用应用程序中，可以将凭据传递给适配器。  
+     更改**enableAuthentication**从**False**到**True** ，如下所示。 这将需要调用应用程序中，若要将凭据传递给适配器。  
   
     ```  
     <endpoint address="echov2://lobhostname/lobapplication?enableAuthentication=True&echoInUpperCase=True"  
@@ -96,11 +96,11 @@ ms.locfileid: "23450518"
         contract="EchoOutboundContract" name="EchoAdapterBinding_EchoOutboundContract" />  
     ```  
   
-3.  通过单击保存解决方案**文件**在 Visual Studio 菜单，选择**保存所有**。  
+3.  通过单击保存解决方案**文件**Visual studio 菜单，然后选择**全部保存**。  
   
 ## <a name="create-a-sample-xml-file"></a>创建示例 XML 文件  
   
-1.  启动记事本实例。 使用开始菜单中，单击**所有程序** &#124; **附件**，然后选择**记事本**。  
+1.  启动记事本的实例。 使用开始菜单中，单击**所有程序** &#124; **附件**，然后选择**记事本**。  
   
 2.  将下面的示例数据复制到记事本编辑器。  
   
@@ -118,28 +118,28 @@ ms.locfileid: "23450518"
     </ns0:greeting>              
     ```  
   
-3.  在记事本菜单上，单击**文件**，然后选择**另存为...**. 在"CustomGreetingInstance.xml"中键入的文件名称和选择的编码的 Unicode 和将其保存到项目目录中或另一个合适的位置。 请注意的完整路径和文件名以供稍后参考。  
+3.  在记事本菜单上，单击**文件**，然后选择**另存为...**. "CustomGreetingInstance.xml"中键入文件名称并选择 Unicode 的编码和将其保存到项目目录中或另一个合适的位置。 请注意的完整路径和文件名以供日后参考。  
   
-4.  已成功保存该文件，请关闭文本编辑器。  
+4.  已成功保存文件时，请关闭文本编辑器。  
   
 ## <a name="test-the-echo-adapter"></a>测试 Echo 适配器  
   
-1.  在解决方案资源管理器中，双击**Program.cs**文件。  
+1.  在解决方案资源管理器中双击**Program.cs**文件。  
   
-2.  在 Visual Studio 编辑器中，内部**Main**方法，添加以下代码行以创建生成的 WCF 客户端的实例。  
+2.  在 Visual Studio 编辑器中，内部**Main**方法中，添加以下行的代码以创建生成的 WCF 客户端的实例。  
   
     ```csharp  
     EchoOutboundContractClient client = new EchoOutboundContractClient();  
     ```  
   
-3.  现在添加建立为适配器的凭据的代码。 Echo 适配器中启用身份验证时，它将检查用户名存在的连接，但不是会检查值。  
+3.  现在添加建立的适配器的凭据的代码。 Echo 适配器中启用身份验证，它将检查存在的用户名称，但不是会检查值。  
   
     ```csharp  
     // pass client credentials  
     client.ClientCredentials.UserName.UserName = "username";  
     ```  
   
-4.  通过添加代码以调用 EchoStrings 操作继续进行。  
+4.  继续通过添加代码以调用 EchoStrings 操作。  
   
     ```csharp  
     // Invoke EchoStrings()  
@@ -151,7 +151,7 @@ ms.locfileid: "23450518"
     }  
     ```  
   
-5.  通过添加代码以调用 EchoGreetings 操作继续进行。  
+5.  继续通过添加代码以调用 EchoGreetings 操作。  
   
     ```csharp  
     // Invoke EchoGreetings()  
@@ -172,7 +172,7 @@ ms.locfileid: "23450518"
     }  
     ```  
   
-6.  通过添加代码以调用 EchoCustomGreetingsFromFile 操作继续进行。  
+6.  继续通过添加代码以调用 EchoCustomGreetingsFromFile 操作。  
   
     ```csharp  
     // Invoke EchoCustomGreetingFromFile()  
@@ -187,27 +187,25 @@ ms.locfileid: "23450518"
     Console.ReadLine();  
     ```  
   
-7.  在 EchoCustomGreetingsFromFile 测试代码中，请确保自定义问候语使用你在前一过程中创建的文件。 更改代码以反映你的文件的位置。  
+7.  EchoCustomGreetingsFromFile 中测试代码中，请确保自定义问候语使用上一个过程中创建的文件。 更改代码以反映你的文件的位置。  
   
-8.  在 Visual Studio 中，在**文件**菜单上，单击**保存所有**。  
+8.  在 Visual Studio 中，在**文件**菜单上，单击**全部保存**。  
   
-9. 运行该应用程序。 你应看到类似于下面的输出：  
+9. 运行应用程序。 应看到类似于以下输出：  
   
-     **对适配器调用 EchoStrings() 方法...**  
+     **调用根据适配器 EchoStrings() 方法...**  
   
-     **Bonjour!**  
+     **Bonjour ！**  
   
-     **Bonjour!**  
+     **Bonjour ！**  
   
-     **Bonjour!**  
+     **Bonjour ！**  
   
-     **Bonjour!**  
+     **Bonjour ！**  
   
-     **Bonjour!**  
+     **Bonjour ！**  
   
-     **对适配器调用 EchoGreetings() 方法...**  
-  
-     **179665bb-db21-42ac-810e-77ebfa99d460 2007 年 9 月 13 日下午 3:18:07 Hello World ！Jane**  
+     **调用根据适配器 EchoGreetings() 方法...**  
   
      **179665bb-db21-42ac-810e-77ebfa99d460 2007 年 9 月 13 日下午 3:18:07 Hello World ！Jane**  
   
@@ -217,18 +215,20 @@ ms.locfileid: "23450518"
   
      **179665bb-db21-42ac-810e-77ebfa99d460 2007 年 9 月 13 日下午 3:18:07 Hello World ！Jane**  
   
-     **对适配器调用 EchoCustomGreetingFromFile() 方法...**  
+     **179665bb-db21-42ac-810e-77ebfa99d460 2007 年 9 月 13 日下午 3:18:07 Hello World ！Jane**  
   
-     **欢迎使用 Redmond ！Redmond**  
+     **调用根据适配器 EchoCustomGreetingFromFile() 方法...**  
   
-10. 按 Enter 键停止节目。  
+     **欢迎使用雷德蒙德 ！雷德蒙德**  
   
-## <a name="what-did-i-just-do"></a>未我只需做什么？  
- 在此步骤中，你创建的测试应用程序开发在教程 1 中的 Echo 适配器公开的三个出站操作。 为此，你创建了 Visual Studio 项目，生成 WCF 服务，并提供代码以承载 WCF 服务。 最后，您运行测试应用程序。  
+10. 按 Enter 键以停止程序。  
+  
+## <a name="what-did-i-just-do"></a>我只需做了什么？  
+ 在此步骤中，您可以创建公开在教程 1 中开发 Echo 适配器的三个出站操作的测试应用程序。 若要执行此操作，创建了一个 Visual Studio 项目，生成 WCF 服务，，并提供代码以承载 WCF 服务。 最后，您运行了测试应用程序。  
   
 ## <a name="next-steps"></a>后续步骤  
- 若要测试的入站的操作，请继续执行到[步骤 2： 测试入站处理程序回显适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-test-inbound-handler-of-the-echo-adapter.md)。  
+ 要测试入站的操作，请转到[步骤 2:测试 Echo 适配器的入站处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-test-inbound-handler-of-the-echo-adapter.md)。  
   
-## <a name="see-also"></a>另请参阅  
-  [教程 2： 使用.NET Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-2-consume-the-echo-adapter-from-net.md)   
+## <a name="see-also"></a>请参阅  
+  [教程 2：使用通过.NET Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-2-consume-the-echo-adapter-from-net.md)   
  [步骤 2：测试 Echo 适配器的入站处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-test-inbound-handler-of-the-echo-adapter.md)

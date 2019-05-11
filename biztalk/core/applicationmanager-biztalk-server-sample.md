@@ -12,49 +12,49 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b926f9e848ab86f5b168d46b3b0e84d85356f592
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1b5a95766edbe1610c1e209734529f33f0eb759d
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010734"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530698"
 ---
-# <a name="applicationmanager-biztalk-server-sample"></a>ApplicationManager（BizTalk Server 示例）
-ApplicationManager 示例演示如何使用管理对象启动或停止 BizTalk 应用程序。  
+# <a name="applicationmanager-biztalk-server-sample"></a>ApplicationManager （BizTalk Server 示例）
+ApplicationManager 示例演示如何启动或停止 BizTalk 应用程序通过使用管理对象。  
 
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
 
 - 您必须具有 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理权限才能使用此示例中的管理对象。  
 
-- Windows PowerShell 脚本需要 Windows PowerShell 执行策略以允许脚本执行。 有关详细信息请参阅：[检查执行策略](http://go.microsoft.com/fwlink/?LinkId=128930)。  
+- Windows PowerShell 脚本需要 Windows PowerShell 执行策略以允许脚本执行。 有关详细信息，请参阅：[检查执行策略](http://go.microsoft.com/fwlink/?LinkId=128930)。  
 
 ## <a name="what-this-sample-does"></a>本示例的用途  
- 此示例演示如何使用**BtsCatalogExplorer**并**应用程序**类**Microsoft.BizTalk.ExplorerOM**命名空间来启动和停止已部署 BizTalk 应用程序。 本示例是使用 Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 编写的。 本主题中还包含 Windows PowerShell 示例脚本。 本示例将演示以下操作：  
+ 此示例演示如何使用**BtsCatalogExplorer**并**应用程序**类**Microsoft.BizTalk.ExplorerOM**命名空间来启动和停止已部署 BizTalk 应用程序。 在 Microsoft 中编写示例[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)]。 本主题中还包含 Windows PowerShell 示例脚本。 此示例演示了以下操作：  
 
 -   通过使用连接到 BizTalk 管理数据库**BtsCatalogExplorer**类。  
 
 -   查找中的应用程序实例**BtsCatalogExplorer**根据应用程序名称。  
 
--   提交应用程序的启动和停止命令。  
+-   正在提交该应用程序启动或停止命令。  
 
 ## <a name="where-to-find-this-sample"></a>本示例的所在位置  
  本示例位于以下 SDK 位置中：  
 
- \<*示例路径*\>\Admin\ExplorerOM\ApplicationManager  
+ \<*Samples Path*\>\Admin\ExplorerOM\ApplicationManager  
 
  下表显示了本示例中的文件及其用途说明：  
 
 
 |                                 文件                                 |                                                 Description                                                  |
 |-------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-|                               Program.cs                                | 本示例中演示的操作所需的 [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 源文件。 |
-| ApplicationManager.sln、ApplicationManager.csproj、ApplicationManager.suo |                                  示例的解决方案文件和项目文件。                                  |
+|                               Program.cs                                | [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 此示例中演示的操作的源文件。 |
+| ApplicationManager.sln,ApplicationManager.csproj,ApplicationManager.suo |                                  示例的解决方案文件和项目文件。                                  |
 
 ## <a name="building-and-running-this-sample"></a>生成并运行本示例  
 
 #### <a name="to-build-this-sample"></a>生成示例  
 
-1. 在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中，打开解决方案文件 ApplicationManager.sln。  
+1. 在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，打开解决方案文件 ApplicationManager.sln。  
 
 2. 在“生成”  菜单上，单击“生成解决方案” 。  
 
@@ -62,7 +62,7 @@ ApplicationManager 示例演示如何使用管理对象启动或停止 BizTalk �
 
 1. 打开命令窗口并导航到以下文件夹：  
 
-    \<*示例路径*\>\Admin\ExplorerOM\ApplicationManager\bin\Debug  
+    \<*Samples Path*\>\Admin\ExplorerOM\ApplicationManager\bin\Debug  
 
 2. 运行文件 ApplicationManager.exe 提供以下两个有序命令行参数：  
 
@@ -76,7 +76,7 @@ ApplicationManager 示例演示如何使用管理对象启动或停止 BizTalk �
    ApplicationManager.exe stop MyBizTalkApp  
    ```  
 
-    命令行参数不足时运行示例将显示使用语法。 例如：  
+    运行命令行参数不足的示例显示使用语法。 例如：  
 
    ```  
    Usage:  
@@ -129,7 +129,7 @@ foreach($app in $Catalog.Applications)
 }  
 ```  
 
- 脚本中需要与 [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 示例相同的命令行参数。 下面是一个运行 Windows PowerShell 脚本以启动部署的 BizTalk 应用程序的示例：  
+ 该脚本需要与相同的命令行参数[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)]示例。 下面是运行 Windows PowerShell 脚本以启动部署的 BizTalk 应用程序的示例：  
 
 ```  
 PS C:\> .\ApplicationManager.ps1 start MyBizTalkApp  

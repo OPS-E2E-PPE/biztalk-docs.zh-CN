@@ -19,12 +19,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e7f61e15b94d741e6bfc2a9f951655ff4358a001
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9c935906761b69797a5407cedffcf2a41c0e25d6
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982910"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529489"
 ---
 # <a name="secure-your-oracle-database-applications"></a>保护 Oracle 数据库应用程序
 ## <a name="data-protection-and-security-overview"></a>数据保护和安全性概述

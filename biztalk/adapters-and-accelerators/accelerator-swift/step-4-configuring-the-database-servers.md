@@ -1,5 +1,5 @@
 ---
-title: 步骤 4： 配置数据库服务器 |Microsoft 文档
+title: 步骤 4：配置数据库服务器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f4c2f3277db4a30fbaf9556645e8e130dc4ff92b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 133c640a15773fa9b3e33c571bf32cc5d6b999af
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22214461"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530021"
 ---
-# <a name="step-4-configuring-the-database-servers"></a>步骤 4： 配置数据库服务器
-请参阅安装和配置说明 SQL server 文档。
+# <a name="step-4-configuring-the-database-servers"></a>步骤 4：配置数据库服务器
+请参阅安装和配置说明的 SQL server 文档。

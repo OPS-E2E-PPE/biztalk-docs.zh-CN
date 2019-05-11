@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5cdb64d95b970e8a1d526f3323cf2fcf0ae4d641
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4cff0cb63f88bf2b69dc01862bf8257864c00d54
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012094"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529647"
 ---
 # <a name="verifying-a-message"></a>验证消息
 本部分介绍如何验证已修复的消息。  
@@ -39,21 +39,21 @@ ms.locfileid: "37012094"
 
 6. 在中**文件下载**对话框中，单击**打开**。  
 
-7. 中的当前角色： RekeyVerify 窗格[!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)] [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] 2007年窗口中，单击**错误**。 查看任何错误中所示**分析和 XML 验证错误**框和**BRE 验证错误**框。  
+7. 中的当前角色：RekeyVerify 窗格[!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)] [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] 2007年窗口中，单击**错误**。 查看任何错误中所示**分析和 XML 验证错误**框和**BRE 验证错误**框。  
 
-8. 在[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]窗体中，滚动到错误的位置并验证是否已更正错误。 可以看到原始错误已通过单击**错误**中当前的角色： RekeyVerify 窗格中，并在其中一个错误窗格中查看该错误。 此外可以通过单击比较消息的修复和已修复版本**消息的详细信息**中当前的角色： RekeyVerify 窗格。  
+8. 在[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]窗体中，滚动到错误的位置并验证是否已更正错误。 可以看到原始错误已通过单击**错误**当前角色中：RekeyVerify 窗格中，并在其中一个错误窗格中查看该错误。 此外可以通过单击比较消息的修复和已修复版本**消息的详细信息**当前角色中：RekeyVerify 窗格。  
 
-9. 若要确保将验证该消息，请单击**验证**当前角色中： RekeyVerify 窗格中，然后单击**验证消息**。  
+9. 若要确保将验证该消息，请单击**验证**当前角色中：RekeyVerify 窗格中，然后单击**验证消息**。  
 
    > [!NOTE]
-   >  在当前角色中的消息验证下的结果窗格： RekeyVerify 窗格指示需要重新生成密钥的消息中的所有字段。 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] 将标记中红色的星号消息窗格中的这些字段。  
+   >  在当前角色中的消息验证下的结果窗格中：RekeyVerify 窗格指示需要重新生成密钥的消息中的所有字段。 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] 将标记中红色的星号消息窗格中的这些字段。  
 
 10. 在消息窗格 （指示在提交之前，必须重新生成数据） 以红色星号标记中的所有字段中重新生成数据。  
 
     > [!NOTE]
-    >  您可以通过单击所需的数据显示消息字段中重新生成密钥**消息的详细信息**中当前的角色： RekeyVerify 窗格中，并滚动到该字段的原始消息。 这是 true，除非其中一个原始消息中的重新生成密钥字段中的验证错误时出现这种情况下您必须重新生成它时修复该字段。  
+    >  您可以通过单击所需的数据显示消息字段中重新生成密钥**消息的详细信息**当前角色中：RekeyVerify 窗格中，并滚动到该字段的原始消息。 这是 true，除非其中一个原始消息中的重新生成密钥字段中的验证错误时出现这种情况下您必须重新生成它时修复该字段。  
 
-11. 单击**验证**中**当前角色： RekeyVerify**窗格中，，然后单击**验证消息**。 验证结果窗格中显示消息**该消息是否有效**。  
+11. 单击**验证**中**当前角色：RekeyVerify**窗格中，，然后单击**验证消息**。 验证结果窗格中显示消息**该消息是否有效**。  
 
 12. 单击**提交**中[!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)] [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] 2007年窗口。  
 

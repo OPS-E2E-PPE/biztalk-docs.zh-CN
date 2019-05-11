@@ -1,5 +1,5 @@
 ---
-title: 管理主密钥 |Microsoft 文档
+title: 管理主密钥 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c2505fa6f5ec1abc04ded45e7701fd4e5212f889
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f4bc7c0222a635b3b698adf899f98a8ff96e08de
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262173"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531137"
 ---
 # <a name="managing-the-master-secret"></a>管理主密钥
-主密钥是用于对 SSO 数据库中存储的所有信息进行加密的密钥。 在主密钥服务器发生故障的情况下，如果丢失了密钥，您将无法检索 SSO 数据库中存储的信息。 因此，请务必在生成主密钥后立即备份该主密钥。  
+主密钥是用于加密存储在 SSO 数据库中的所有信息的键。 如果主服务器发生故障，并且如果丢失了密钥，你将无法检索存储在 SSO 数据库中的信息。 因此，它是非常重要，只要在生成备份主密钥。  
   
 ## <a name="in-this-section"></a>本节内容  
   

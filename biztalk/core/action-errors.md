@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c3cb63e90f85c830c30524b3adc1e3b0d86ab8b7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f3588559d0090a9a78b05882b297d7f39805a3a0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997270"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65361800"
 ---
 # <a name="action-errors"></a>操作错误
 本部分包含有关诊断和解决 WCF 操作错误的详细信息。  
@@ -32,13 +32,13 @@ ms.locfileid: "36997270"
 |  事件源   |                                                                          0                                                                          |
 |    组件    |                                                                          0                                                                          |
 |  符号名称  |                                                                          0                                                                          |
-|  消息正文   | 单个操作不能包含换行符。 删除所有换行符。 或者，若要指定多个操作，请使用操作映射语法。 |
+|  消息正文   | 单个操作不能包含新行字符。 删除所有换行符。 或者，若要指定多个操作，请使用操作映射语法。 |
   
 ## <a name="explanation"></a>解释  
- 此错误表示发送端口的操作属性包含换行符，这是不允许的。  
+ 此错误表示发送端口的 action 属性包含新行字符，这不允许。  
   
 > [!NOTE]
->  当操作定义为映射时，不存在此限制。  
+>  此限制不适用于在操作定义为映射时。  
   
 ## <a name="user-action"></a>用户操作  
  使用以下过程来修复操作属性。  
@@ -48,7 +48,7 @@ ms.locfileid: "36997270"
   
 2. 在控制台根目录中，展开**BizTalk Server 管理**，展开**BizTalk 组**，然后展开**应用程序**。  
   
-3. 找到您的应用程序，然后找到您的传输。  
+3. 找到应用程序，并找到你传输。  
   
 4. 右键单击传输名称。  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 41b3617afcb595a5ead57118c5b4542d12eb3191
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9f088e4feadf5d6124ceb7e013d6c991225242b6
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004014"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529200"
 ---
 # <a name="get-metadata-using-ws-metadata-exchange-in-oracle-database"></a>在 Oracle 数据库中使用 Ws-metadata Exchange 获取元数据
 作为[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]自定义绑定[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]公开可用于检索从特定操作的元数据的 WS-元数据交换 (MEX) 终结点[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]。  

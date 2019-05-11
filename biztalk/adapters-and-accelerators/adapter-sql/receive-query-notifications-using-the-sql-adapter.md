@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 786bbf556acb3a30e652a7ecb29723f40566cb06
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 015382d92be87118f2cc7ba1c594021b5c379937
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999742"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368299"
 ---
 # <a name="receive-query-notifications-using-the-sql-adapter"></a>接收查询通知使用 SQL 适配器
 适配器客户端可以订阅以接收有关数据更改的查询通知中的 SQL Server 数据库。 SQL SELECT 语句或存储的过程的查询通知触发对表中指定的数据更改条件和 SQL Server 发送作为查询通知时的结果集的 SELECT 语句或存储的过程发生更改。  
@@ -51,7 +51,7 @@ ms.locfileid: "36999742"
 |查询通知是由 SQL Server 启动。 只需在适配器发出的通知语句指示要在没有语句的结果集中的更改的情况下启动通知的数据库。|由适配器启动轮询。 适配器执行语句，以验证是否可用于轮询，然后通过执行轮询语句，如果某些数据可用于轮询启动轮询数据。|  
 |可以使用查询通知语句仅读取 SQL Server 数据库表中的数据。|轮询语句可用于读取或更新 SQL Server 数据库表中的数据。|  
 |查询通知只告知如 Insert、 数据更改的类型更新和删除。|轮询通知您已更改的实际数据。|  
-|数据更改通知是瞬间完成的。|数据更改通知取决于轮询间隔，并且适配器客户端将每个轮询间隔结束时通知数据更改。 **提示：** 轮询可以为您提供更好的吞吐量中情况下，数据更改发生的连续，并且不希望为每个更改的和发生时收到通知。 相反，您指定要在其后的发生是因为最后一个更改通知的所有更改通知的轮询间隔。|  
+|数据更改通知是瞬间完成的。|数据更改通知取决于轮询间隔，并且适配器客户端将每个轮询间隔结束时通知数据更改。 **提示：** 轮询可以提供更好的吞吐量中情况下，数据更改发生的连续，并且不希望为每个更改的和发生时收到通知。 相反，您指定要在其后的发生是因为最后一个更改通知的所有更改通知的轮询间隔。|  
   
  有关详细信息中的查询通知[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]，请参阅[通过使用 BizTalk Server 接收 SQL 查询通知](../../adapters-and-accelerators/adapter-sql/receive-sql-query-notifications-using-biztalk-server.md)。  
   

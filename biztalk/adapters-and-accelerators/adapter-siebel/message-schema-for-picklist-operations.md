@@ -1,5 +1,5 @@
 ---
-title: 选择列表操作的消息架构 |Microsoft 文档
+title: 选择列表操作的消息架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,19 +16,19 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8d72a16e99e38649a6fb8d74178d2b5da1d059dc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5748a293c8f9dc4e4059ebdecda9527bb0bb63ee
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22221901"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371408"
 ---
-# <a name="message-schema-for-picklist-operations"></a>选择列表操作的消息架构
-选择列表是在业务组件中的特殊字段类型。 它们表示的用户可能会从其选取分配的单个值的值的集合。 选择列表都是不同的类型。 有关选择列表和它们的类型的详细信息，请参阅 Siebel 文档。  
+# <a name="message-schema-for-picklist-operations"></a>选择列表的消息架构
+选择列表是在业务组件中的特殊字段类型。 它们表示的用户可能会从其选取的分配单个值的值的集合。 选择列表都是不同的类型。 有关选择列表及其类型的详细信息，请参阅 Siebel 文档。  
   
- 选择列表类型之一，绑定的静态选择列表，作为枚举的选择列表进行展示的适配器在设计时生成的适配器的元数据中的类型。 这包含一组静态在运行时必须选择列表类型为指定的值。  同时为静态绑定选择列表中指定一个值，必须始终指定一个属于集的值。  
+ 一种选择列表类型，静态绑定选择列表，为枚举选择列表适配器会显示在设计时由适配器生成的元数据中的类型。 这包含一组静态的值必须在运行时指定的选择列表类型。  同时为静态绑定选择列表中指定一个值，必须始终指定一个值，属于集。  
   
- 下面的示例显示一个静态绑定的选择列表类型的架构：  
+ 下面的示例显示了静态绑定选择列表类型的架构：  
   
 ```  
 <element name="[FIELD_NAME]RequiredPickListType" nillable="true" type="ns1:[FIELD_NAME]RequiredPickListType" />  
@@ -43,7 +43,7 @@ ms.locfileid: "22221901"
   
  [字段名] = 业务组件中的选择列表字段名称  
   
- 下面的内容表示一个绑定的静态选择列表类型的代理体验：  
+ 下面的内容表示静态绑定选择列表类型的代理体验：  
   
 ```  
 [BC]InsertRecord[] insertRecs = new [BC]InsertRecord[1];  
@@ -51,7 +51,7 @@ insertRecs[0] = new [BC]InsertRecord();
 insertRecs[0].[BC_STATIC_PICKLIST_FIELD] = [BC_PICKLIST_FIELD_NAME]OptionalPickListType.value1;  
 ```  
   
- [BC_STATIC_PICKLIST_FIELD] = BC 静态绑定的选择列表字段  
+ [BC_STATIC_PICKLIST_FIELD] = 适合在 BC 中静态绑定选择列表字段  
   
-## <a name="see-also"></a>另请参阅  
- [消息和用于 Siebel eBusiness Applications 的 BizTalk Adapter 的消息架构](../../adapters-and-accelerators/adapter-siebel/messages-and-message-schemas-for-siebel-adapter-in-biztalk.md)
+## <a name="see-also"></a>请参阅  
+ [消息和用于 Siebel eBusiness 应用程序的 BizTalk 适配器的消息架构](../../adapters-and-accelerators/adapter-siebel/messages-and-message-schemas-for-siebel-adapter-in-biztalk.md)

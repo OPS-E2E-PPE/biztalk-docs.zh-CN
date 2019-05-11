@@ -15,12 +15,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cd54bdfd3a772912b4d2687ab1ce9e715e7fbab9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a8429a2cc4fa8b3f4a72fa45bbcadd315caa4d68
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013326"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373025"
 ---
 # <a name="receive-inbound-trfc-calls-in-sap-using-the-wcf-service-model"></a>在使用 WCF 服务模型的 SAP 中收到入站的 tRFC 调用
 可以使用[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]作为事务的 RFC (tRFC) 服务器以接收来自 SAP 的入站的 tRFC 调用。 对于入站 Trfc[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]支持多个 Trfc 中的工作 (LUW) 相同的 SAP 逻辑单元。  

@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 360a2e3974f1e4ea5858c583c5dc5fcc364e9756
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: beeb0169e70841b7f31e889cc51e296de49e45eb
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974630"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530201"
 ---
 # <a name="runtime-message-repair-fin-response-and-messaging"></a>运行时、 消息修复、 FIN 响应和消息传送
 

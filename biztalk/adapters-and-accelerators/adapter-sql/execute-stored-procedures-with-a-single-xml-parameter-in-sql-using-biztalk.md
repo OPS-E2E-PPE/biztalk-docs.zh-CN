@@ -13,12 +13,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a71ee5be554393db10e65adb49694e7104bb011b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b8e1e078be859750e84b729edf93ea7894b5078f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976920"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369628"
 ---
 # <a name="execute-stored-procedures-with-a-single-xml-parameter-in-sql-server-using-biztalk-server"></a>在 SQL Server 使用 BizTalk Server 中执行使用单个 XML 参数的存储的过程
 执行存储的过程采用单个参数是类似于执行任何其他存储的过程中所述[SQL Server 使用 BizTalk Server 中执行存储过程](execute-stored-procedures-in-sql-server-using-biztalk-server.md)。 但是，上述链接中所述的方法，你必须在设计时生成存储过程的元数据并创建一个业务流程在运行时调用该过程。  
@@ -85,7 +85,7 @@ ms.locfileid: "36976920"
   
    4. 单击**凭据**选项卡，然后再执行下列操作之一：  
   
-      -   选择**不使用单一登录**选项，以及指定的用户名和密码以连接到 SQL Server。 请注意，用户名和密码区分大小写。  
+      -   选择**不使用单一登录**选项，以及指定的用户名和密码以连接到 SQL Server。 请注意，用户名和密码是区分大小写。  
   
           > [!NOTE]
           >  如果你想要连接到 SQL Server 使用 Windows 身份验证，则指定空的用户名和密码。  

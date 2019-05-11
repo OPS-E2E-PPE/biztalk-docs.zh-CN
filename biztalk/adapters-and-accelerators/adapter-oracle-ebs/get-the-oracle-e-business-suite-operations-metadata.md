@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e8904a70d2bfe1b34b28b7cad807796fac752009
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7338cc84d68a151368ebac5ffd5ae2a27189f430
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014838"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375495"
 ---
 # <a name="get-the-oracle-e-business-suite-operations-metadata"></a>获取 Oracle E-business Suite 操作元数据
 可以使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]生成所选 Oracle E-business Suite 项目的架构。 已浏览并搜索你想要调用的项目后，您可以生成的项目的架构和发送消息，符合架构，对 Oracle E-business Suite。  
@@ -25,7 +25,7 @@ ms.locfileid: "37014838"
 > [!NOTE]
 >  [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]和[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]时浏览和搜索操作，因此同样的主题中介绍了这两个组件显示实质上是相同的接口。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  在检索元数据的目标操作之前，必须连接到 Oracle E-business Suite。 有关如何连接到 Oracle 数据库的信息时则使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]或[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]，请参阅[连接到在 Visual Studio 中的 Oracle 电子商务套件](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-the-oracle-e-business-suite-in-visual-studio.md)。  
   
 ## <a name="generating-schema-using-the-consume-adapter-service-add-in"></a>生成架构使用使用适配器服务外接程序  
@@ -61,7 +61,7 @@ ms.locfileid: "37014838"
 6. 单击“确定” 。 架构文件保存具有.xsd 扩展名为 BizTalk 项目所在的位置。  
   
    > [!NOTE]
-   >  如果您将使用适配器服务外接程序生成 Oracle 项目上的操作的元数据，默认情况下创建文件时特定的命名约定： 生成的 XSD 文件名具有以下三个部分：  
+   >  如果您将使用适配器服务外接程序生成 Oracle 项目上的操作的元数据，默认情况下创建文件时特定的命名约定：生成的 XSD 文件名具有以下三个部分：  
    > 
    > - 中提供"OracleEBSBinding"或前缀**文件名前缀**框。  
    >   - 中包含的名称**fileNameHint**中生成的 WSDL 批注标记。 对于操作，文件名称提示为相同的操作组。 对于复杂类型，文件名称提示是无需命名空间"<http://schemas.microsoft.com/OracleEBS/2008/05/”>前缀。 例如，接口表操作的文件名称提示遵循约定\<InterfaceTables\>+ < app_short_name > + < interface_table_name >。  

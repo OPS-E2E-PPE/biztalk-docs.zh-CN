@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 55ba97f7757ff6f61a98002c496d9b6b26fc7be9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4f5ae9cebdef84870379d3fe28c0ef72bc1dea71
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002062"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373394"
 ---
 # <a name="get-metadata-using-ws-metadata-exchange-in-sap"></a>在 SAP 中使用 Ws-metadata Exchange 获取元数据
 作为[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]自定义绑定[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]公开可用于检索从特定操作的元数据的 WS-元数据交换 (MEX) 终结点[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]。  

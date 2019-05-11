@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3dab9b8d008b9bb36fa5a09789b531ea9fbee113
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: eb497a951230463e307a18ec6f12db69ab2c8da9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006422"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368629"
 ---
 # <a name="operations-on-tables-and-views-with-user-defined-types-using-the-sql-adapter"></a>对表和视图使用 SQL 适配器的用户定义类型的操作
 可以使用[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]具有的用户定义类型 (Udt) 列的表或视图上执行操作。 可以使用标准表操作 （Insert、 Update、 Delete 和 Select） 读取或写入数据列上 UDT 类型。 您还可以在此类表上执行存储的过程和函数。 但是，您需要执行某些任务，然后才能使用该适配器具有 UDT 列的表操作。 一旦您已执行这些任务，可以使用到适配器：  

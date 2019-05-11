@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c58812b9fc3404b9922cf05c84717f3c95e05435
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d6dc6ea7ef707cbb424576d532afee8038263ce0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007574"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369894"
 ---
 # <a name="create-the-sql-server-connection-uri"></a>创建 SQL Server 连接 URI
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]连接 URI 包含适配器用来建立与 SQL Server 数据库的连接属性。 本主题介绍 SQL Server 连接 URI，并提供指向其他主题的解释如何在不同的编程方案中指定一个 URI。  
@@ -42,7 +42,7 @@ mssql://[Server_Name[:Portno]]/[Database_Instance_Name]/[Database_Name]?Failover
   
  下表介绍了连接 URI 中包含的属性。  
   
-|连接 URI 属性|类别|Description|  
+|连接 URI 属性|Category|Description|  
 |-----------------------------|--------------|-----------------|  
 |[SERVER_NAME]|hostinfoparams|在其安装 SQL Server 的服务器的名称。 如果不指定一个值，适配器将假定为"localhost"的服务器名称，并建立与本地服务器上的 SQL Server 数据库的连接。|  
 |[PORTNO]|hostinfoparams|建立连接的端口号。 如果不指定一个值，适配器将连接通过默认端口。|  

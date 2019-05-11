@@ -1,5 +1,5 @@
 ---
-title: BAM 门户页面布局 |Microsoft 文档
+title: BAM 门户页面布局 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5569021698eb856d7584a2510a27d69f092f37a8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9277fb3e1dc7b7699376e24896c63860c1ee55e3
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231525"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530545"
 ---
 # <a name="bam-portal-page-layout"></a>BAM 门户页面布局
-BAM 门户页由以下三个框架组成：  
+以下三个框架中的 BAM 门户页布局：  
   
 -   横幅  
   
@@ -32,27 +32,27 @@ BAM 门户页由以下三个框架组成：
 -   内容  
   
 ## <a name="banner"></a>横幅  
- **横幅**帧分布门户页的顶部。 横幅框架包含诸如公司名称和徽标之类的商标信息、该用户界面 (UI) 页的帮助链接以及页面标题。 您可以自定义商标，使其满足您所在组织的需要。 有关自定义标题栏中的品牌信息的详细信息，请参阅[自定义 BAM 门户配置](../core/customizing-the-bam-portal-configuration.md)。  
+ **横幅**框架横跨门户页的顶部。 横幅框架包含如公司名称和徽标、 页的用户界面 (UI)，以及页面标题的帮助链接的商标信息。 您可以自定义商标，使其符合你组织的需求。 有关自定义标题栏中的商标信息的详细信息，请参阅[自定义 BAM 门户配置](../core/customizing-the-bam-portal-configuration.md)。  
   
 ## <a name="my-views"></a>我的视图  
- **我视图**帧是在门户页面左侧。 “我的视图”向用户展示了其有权访问的所有视图。 用户可以展开任何视图，以查看该视图的可用功能。 如果没有显示任何视图，则是因为视图尚未创建（此任务通常由业务分析员执行），或尚未向用户授予权限（此任务通常由管理员执行）。  
+ **我的视图**框架位于门户页的左侧。 我的视图向用户显示他们已被授予的权限的所有视图。 用户可以展开任何视图以查看该视图的可用功能。 如果不没有显示任何视图，然后是因为视图尚未创建，通常由业务分析员执行的任务，或已授予权限给用户，通常由管理员执行的任务。  
   
- 在每个视图中，您都可以使用以下三个功能来执行相应的任务：  
+ 每个视图都可以执行的视图中的三个任务：  
   
--   **活动搜索**： 允许你创建查询和基于活动的警报。  
+-   **活动搜索**:可以创建查询和基于活动的警报。  
   
--   **聚合**： 允许你查看聚合数据并根据数据透视表图中的总计创建警报。  
+-   **聚合**:可用于查看聚合数据，并可根据数据透视表图表中的总计值创建警报。  
   
--   **警报管理器**： 允许你可以创建、 编辑、 查看和订阅警报。  
+-   **警报管理器**:可以创建、 编辑、 查看和订阅警报。  
   
 > [!NOTE]
->  从“我的视图”框架中选择警报管理器后，您只能编辑现有警报。 要创建新警报，必须从“活动搜索”或“聚合”页内转到“警报管理器”页。  
+>  从我的视图框架选择警报管理器时只能编辑现有警报。 若要创建新警报必须转到警报管理器中的页从活动搜索或聚合页。  
   
 ## <a name="content"></a>内容  
- **内容**帧是在门户页面的右侧。 内容页包含由每个“我的视图”任务（即活动搜索、聚合和警报管理）提供的信息。 在选择任务后，内容框架将更改为反映与该任务相关联的各个功能。  
+ **内容**框架位于门户页的右侧。 内容页包含每个我的视图任务 （活动搜索、 聚合和警报管理） 提供的信息。 选择一项任务时，内容框架将更改以反映与该任务相关联的函数。  
   
-## <a name="see-also"></a>另请参阅  
- [BAM 门户上的活动搜索页](../core/activity-search-on-the-bam-portal-page.md)   
+## <a name="see-also"></a>请参阅  
+ [在 BAM 门户网站上的活动搜索页](../core/activity-search-on-the-bam-portal-page.md)   
  [BAM 门户上的聚合页](../core/aggregations-on-the-bam-portal-page.md)   
- [警报管理器上 BAM 门户页](../core/alert-manager-on-the-bam-portal-page.md)   
+ [警报管理器在 BAM 门户页](../core/alert-manager-on-the-bam-portal-page.md)   
  [BAM 门户](../core/bam-portal.md)

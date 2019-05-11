@@ -13,17 +13,17 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eafde28037b3c38dd36ec03907544a5ec23560f5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dc819e174df8e65ebc65f955d1c563fb958075cc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012606"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370149"
 ---
 # <a name="configure-a-port-using-the-wcf-custom-adapter-and-sql-adapter"></a>使用 WCF 自定义适配器和 SQL 适配器配置端口
 配置 WCF 自定义发送和接收端口，以执行 SQL Server 使用的出站和入站操作步骤[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
 是的成员的帐户登录[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]Administrators 组或 BizTalk Operators 组。 详细了解权限的详细信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)，并[最低安全权限](https://social.technet.microsoft.com/wiki/contents/articles/24590.minimum-security-rights-for-biztalk-server-2006-to-2016.aspx)。 
   
 ## <a name="deploy-adapters-to-send-messages-to-sql-server"></a>部署适配器将消息发送到 SQL Server  
@@ -58,7 +58,7 @@ ms.locfileid: "37012606"
   
    4. 单击**凭据**选项卡，然后再执行下列操作之一：  
   
-      -   选择**不使用单一登录**选项，以及指定的用户名和密码以连接到 SQL Server。 请注意，用户名和密码区分大小写。  
+      -   选择**不使用单一登录**选项，以及指定的用户名和密码以连接到 SQL Server。 请注意，用户名和密码是区分大小写。  
   
           > [!NOTE]
           >  如果你想要连接到 SQL Server 使用 Windows 身份验证，则指定空的用户名和密码。 中所述执行此操作之前，必须将与你登录 Windows 用户添加到 SQL Server[连接到 SQL Server 与 SQL 适配器使用 Windows 身份验证](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md)。  
@@ -112,7 +112,7 @@ ms.locfileid: "37012606"
   
    4. 单击**其他**选项卡，然后执行下列操作之一：  
   
-      - 选择**用户帐户**，并指定用户名和密码以连接到 SQL Server。 请注意，用户名和密码区分大小写。  
+      - 选择**用户帐户**，并指定用户名和密码以连接到 SQL Server。 请注意，用户名和密码是区分大小写。  
   
         > [!NOTE]
         >  如果你想要连接到 SQL Server 使用 Windows 身份验证，则指定空的用户名和密码。 中所述执行此操作之前，必须将与你登录 Windows 用户添加到 SQL Server[连接到 SQL Server 与 SQL 适配器使用 Windows 身份验证](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md)。  

@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9dd50b3353aac683548f9220c441bef21776a37
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 733b117aa4f9ca5e5f113d725a592266134db711
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968830"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369510"
 ---
 # <a name="executereader-executescalar-or-executenonquery-operations-in-sql-using-wcf-service-model"></a>在 SQL 中使用 WCF 服务模型的 ExecuteReader、 ExecuteScalar 或 ExecuteNonQuery 操作
 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]如公开泛型 SQL Server 操作**ExecuteNonQuery**， **ExecuteReader**，并且**ExecuteScalar**。 这些操作可用于 SQL Server 数据库上执行任何 SQL 语句。 这些操作因的响应获取的 SQL 语句的类型。 有关适配器如何支持这些操作的详细信息，请参阅[支持 ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)。  
@@ -37,10 +37,10 @@ ms.locfileid: "36968830"
 ### <a name="method-signature-for-invoking-generic-operations"></a>调用泛型操作的方法签名  
  下表显示了调用泛型操作所公开的方法的签名。  
 
-|运算|方法签名|  
+|操作|方法签名|  
 |---------------|----------------------|  
 |ExecuteNonQuery|int ExecuteNonQuery （字符串查询）|  
-|ExecuteReader|System.Data.DataSet [] ExecuteReader （字符串查询）|  
+|ExecuteReader|System.Data.DataSet[] ExecuteReader(string Query)|  
 |ExecuteScalar|字符串 ExecuteScalar(string Query)|  
 
  例如，泛型操作方法的签名所示下面的代码段。  

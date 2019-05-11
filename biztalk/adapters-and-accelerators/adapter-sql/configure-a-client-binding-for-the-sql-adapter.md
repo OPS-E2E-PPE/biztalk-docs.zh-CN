@@ -1,5 +1,5 @@
 ---
-title: 为该 SQL 适配器配置客户端绑定 |Microsoft 文档
+title: 为 SQL 适配器配置客户端绑定 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 947666ce63160425896564b20e91bd1fd70c95a9
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: e0ad6198cb91da58648325c2c73b84d8d7e30404
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25962531"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370361"
 ---
-# <a name="configure-a-client-binding-for-the-sql-adapter"></a>为该 SQL 适配器配置客户端绑定
-在你生成 WCF 客户端类后，可以创建一个 WCF 客户端 （实例） 并调用其方法来使用[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]。 有关如何生成操作的 WCF 客户端类和帮助程序代码，[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]公开，请参阅[为 SQL Server 项目生成 WCF 客户端或 WCF 服务协定](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)。  
+# <a name="configure-a-client-binding-for-the-sql-adapter"></a>为 SQL 适配器配置客户端绑定
+生成 WCF 客户端类后，您可以创建 WCF 客户端 （实例） 并调用其方法来使用[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]。 有关如何生成操作的 WCF 客户端类和帮助程序代码的信息的[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]公开，请参阅[为 SQL Server 项目生成 WCF 客户端或 WCF 服务约定](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)。  
   
- 若要创建 WCF 客户端，必须指定终结点地址和绑定。 终结点地址必须包含有效的 SQL 连接 URI，并且绑定必须是 SQL 绑定的一个实例 (**sqlBinding**)。 有关 SQL 连接 URI 的详细信息，请参阅[创建 SQL Server 连接 URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)。 作为连接 URI 的一部分，必须指定的用户凭据。 你可以使用**ClientCredentials**的 WCF 客户端，如本主题中所述的属性。  
+ 若要创建 WCF 客户端，必须指定一个终结点地址和绑定。 终结点地址必须包含有效的 SQL 连接 URI，并且该绑定必须是 SQL 绑定的一个实例 (**sqlBinding**)。 有关 SQL 连接 URI 的详细信息，请参阅[创建 SQL Server 连接 URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)。 连接 URI 的一部分，必须指定用户凭据。 可以使用**ClientCredentials**的 WCF 客户端，如本主题中所述的属性。  
   
- 在你的代码或配置文件中，可以指定 SQL 绑定和终结点地址。 当你使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]若要生成 WCF 客户端类，创建配置文件 (app.config) 还为你的项目。 此文件包含反映的绑定属性和连接信息 （除凭据） 连接到的 SQL 数据库时指定的配置设置[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。  
+ 在代码中或在配置文件中，可以指定 SQL 绑定和终结点地址。 当你使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]生成 WCF 客户端类，创建配置文件 (app.config) 还为你的项目。 此文件包含反映的绑定属性和连接信息 （除了凭据） 时连接到 SQL 数据库使用指定的配置设置[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。  
   
 ## <a name="specifying-the-binding-and-endpoint-address-in-code"></a>在代码中指定的绑定和终结点地址  
  下面的代码演示如何通过使用在代码中指定的绑定和终结点地址创建 WCF 客户端**ClientCredentials**的 WCF 客户端的属性。  
@@ -42,7 +42,7 @@ client.Open();
 ```  
   
 ## <a name="specifying-the-binding-and-endpoint-address-in-a-configuration-file"></a>在配置文件中指定的绑定和终结点地址  
- 下面的代码演示如何通过 app.config 文件中指定的绑定和终结点地址创建 WCF 客户端。  
+ 下面的代码演示如何通过在 app.config 文件中指定的绑定和终结点地址创建 WCF 客户端。  
   
 ```  
 TableOp_dbo_CustomerClient client = new TableOp_dbo_CustomerClient("SqlAdapterBinding_TableOp_dbo_Customer");  
@@ -53,7 +53,7 @@ client.ClientCredentials.UserName.Password = "PASSWORD";
 client.Open();  
 ```  
   
- 下面的 XML 演示通过客户表所创建的配置文件[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。 此文件包含在前面的示例中引用的客户端终结点配置。  
+ 下面的 XML 演示配置文件的客户表创建的[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。 此文件包含在前面的示例中引用的客户端终结点配置。  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -81,9 +81,9 @@ client.Open();
 </configuration>  
 ```  
   
- 如果一个项目具有多个 WCF 客户端，将有多个客户端配置文件中定义的终结点条目。 WCF 客户端的每个条目将具有唯一的名称基于它的绑定配置和目标 SQL Server 项目;例如，"`SqlAdapterBinding_TableOp_dbo_Customer`"。 如果你连接多个项目中创建 WCF 客户端的时机，多个绑定配置条目将创建，一个用于每个连接。 这些绑定配置条目将被命名为按以下方式： SqlAdapterBinding、 SqlAdapterBinding1，依次类推。 在特定的连接过程中创建的每个客户端终结点条目将引用在该连接过程中创建的绑定项。  
+ 如果一个项目具有多个 WCF 客户端，将有多个客户端配置文件中定义的终结点条目。 每个 WCF 客户端条目将具有唯一的名称基于其绑定配置和目标 SQL Server 项目;例如，"`SqlAdapterBinding_TableOp_dbo_Customer`"。 如果连接多个要在项目中创建 WCF 客户端的时间，多个绑定配置条目将创建，另一个用于每个连接。 将按以下方式命名这些绑定配置条目：SqlAdapterBinding、 SqlAdapterBinding1，等等。 在特定的连接过程中创建每个客户端终结点条目将引用在该连接过程中创建的绑定项。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [开发 SQL 应用程序使用 WCF 服务模型](../../adapters-and-accelerators/adapter-sql/develop-sql-applications-using-the-wcf-service-model.md)   
  [为 SQL Server 项目生成 WCF 客户端或 WCF 服务协定](../../adapters-and-accelerators/adapter-sql/generate-a-wcf-client-or-wcf-service-contract-for-sql-server-artifacts.md)   
 [创建 SQL Server 连接 URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)

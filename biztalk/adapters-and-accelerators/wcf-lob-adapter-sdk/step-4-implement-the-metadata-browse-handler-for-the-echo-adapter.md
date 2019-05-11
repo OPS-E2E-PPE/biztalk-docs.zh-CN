@@ -1,5 +1,5 @@
 ---
-title: 步骤 4： 实现 Echo 适配器的元数据浏览处理程序 |Microsoft Docs
+title: 步骤 4：实现 Echo 适配器的元数据浏览处理程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c50110fff32b81bdaa429a479cefe8041d919356
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4473491f5cd1f328961591c0596b902dd4a30bb1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003414"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363182"
 ---
-# <a name="step-4-implement-the-metadata-browse-handler-for-the-echo-adapter"></a>步骤 4： 实现 Echo 适配器的元数据浏览处理程序
+# <a name="step-4-implement-the-metadata-browse-handler-for-the-echo-adapter"></a>步骤 4：实现 Echo 适配器的元数据浏览处理程序
 ![步骤 4 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-4of9.gif "Step_4of9")  
   
- **完成时间：** 45 分钟  
+ **若要完成的时间：** 45 分钟  
   
  在此步骤中，将实现 Echo 适配器的浏览功能。 此功能允许您的适配器来执行基于连接的浏览，从目标系统中获取元数据。 无论您的适配器的功能，您的适配器必须支持的浏览功能。  
   
@@ -30,8 +30,8 @@ ms.locfileid: "37003414"
   
  在以下步骤中，更新此类，以更好地理解如何实现`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A`方法中，如何设置各种属性的`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象和操作和适配器支持的类别节点中的显示方式[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]工具。  
   
-## <a name="prerequisites"></a>必要條件  
- 在开始此步骤之前，你必须已成功完成[步骤 3： 实现 Echo 适配器的连接](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-implement-the-connection-for-the-echo-adapter.md)。 您还必须了解以下类：  
+## <a name="prerequisites"></a>先决条件  
+ 在开始此步骤之前，你必须已成功完成[步骤 3:实现 Echo 适配器的连接](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-implement-the-connection-for-the-echo-adapter.md)。 您还必须了解以下类：  
   
 -   `Microsoft.ServiceModel.Channels.MetadataRetrievalNode`  
   
@@ -204,7 +204,7 @@ if( "EchoMainCategory".CompareTo(nodeId) == 0 ) //category is EchoMainCategory
 10. 在“生成”  菜单上，单击“生成解决方案” 。 您应已成功生成项目。 如果没有，请确保您已按照上述每个步骤。  
   
 > [!NOTE]
->  保存所做的工作。 可以安全地关闭 Visual Studio 或转到下一步[步骤 5： 实现 Echo 适配器的元数据搜索处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md)。  
+>  保存所做的工作。 可以安全地关闭 Visual Studio 或转到下一步，[步骤 5:实现 Echo 适配器的元数据搜索处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md)。  
   
 ## <a name="what-did-i-just-do"></a>我只需做了什么？  
  只需实现通过实现浏览 Echo 适配器的功能的元数据`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler.Browse%2A`方法的`Microsoft.ServiceModel.Channels.Common.IMetadataBrowseHandler`接口。 具体而言，创建`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象的类别，并为一个数组，则返回它`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象。 您为每个操作，创建`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`对象，并则返回所有这些对象的数组中`Microsoft.ServiceModel.Channels.MetadataRetrievalNode`。  
@@ -213,6 +213,6 @@ if( "EchoMainCategory".CompareTo(nodeId) == 0 ) //category is EchoMainCategory
  您实现元数据搜索和解析功能以及出站消息交换。 最后，您生成并部署 Echo 适配器。  
   
 ## <a name="see-also"></a>请参阅  
- [教程 1： 开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)   
- [步骤 3： 实现 Echo 适配器的连接](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-implement-the-connection-for-the-echo-adapter.md)   
+ [教程 1:开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)   
+ [步骤 3：实现 Echo 适配器的连接](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-implement-the-connection-for-the-echo-adapter.md)   
  [步骤 5：实现 Echo 适配器的元数据搜索处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md)

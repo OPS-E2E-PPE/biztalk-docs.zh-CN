@@ -1,5 +1,5 @@
 ---
-title: 教程 1： 迁移到 SQL 适配器的 BizTalk 项目 |Microsoft Docs
+title: 教程 1:迁移到 SQL 适配器的 BizTalk 项目 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ea64d98404d247a47e8cad8df421c81752fe63e0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 889a09c99bc83060e4a2a60721a86fb5e21503e0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013302"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367437"
 ---
-# <a name="tutorial-1-migrate-biztalk-projects-to-the-sql-adapter"></a>教程 1： 将 BizTalk 项目迁移到 SQL 适配器
+# <a name="tutorial-1-migrate-biztalk-projects-to-the-sql-adapter"></a>教程 1:将 BizTalk 项目迁移到 SQL 适配器
 以前版本的 SQL 适配器随 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]不同于基于 WCF 的[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]在许多方面，包括：  
   
 - 创建 BizTalk 项目的设计时体验。  
@@ -49,14 +49,14 @@ ms.locfileid: "37013302"
 ## <a name="sample-used-for-the-tutorial"></a>本教程使用示例  
  基于本教程演示如何迁移 vPrev BizTalk 项目的示例 (SQL_Migration)。 与 Microsoft 提供了示例[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。 有关详细信息，请参阅示例。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
   
 -   必须有一个 vPrev BizTalk 项目。 本教程涉及 SQL Server 数据库中执行插入操作客户表上的 BizTalk 项目。 Customer 表具有以下设计：  
   
     |列名|Description|  
     |-----------------|-----------------|  
     |v_custid|主键，整数类型，标识字段|  
-    |“属性”|nchar(10) 类型|  
+    |“属性”|nchar(10) type|  
   
 -   您必须具有要执行插入操作使用 vPrev SQL 适配器在 SQL Server 数据库上的请求消息。 请求消息必须符合使用 vPrev SQL 适配器生成的插入操作的架构。  
   
@@ -88,11 +88,11 @@ ms.locfileid: "37013302"
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [步骤 1： 修改 vPrev BizTalk 项目使用 SQL 适配器](../../adapters-and-accelerators/adapter-sql/step-1-modify-the-vprev-biztalk-project-using-the-sql-adapter.md)  
+-   [步骤 1：修改 vPrev BizTalk 项目使用 SQL 适配器](../../adapters-and-accelerators/adapter-sql/step-1-modify-the-vprev-biztalk-project-using-the-sql-adapter.md)  
   
--   [步骤 2： 使用 SQL 适配器的 BizTalk Server 管理控制台中配置业务流程](../../adapters-and-accelerators/adapter-sql/step-2-configure-the-orchestration-to-use-the-sql-adapter-in-biztalk-server.md)  
+-   [步骤 2：在使用 SQL 适配器的 BizTalk Server 管理控制台中配置业务流程](../../adapters-and-accelerators/adapter-sql/step-2-configure-the-orchestration-to-use-the-sql-adapter-in-biztalk-server.md)  
   
--   [步骤 3： 测试迁移应用程序使用 SQL 适配器](../../adapters-and-accelerators/adapter-sql/step-3-test-the-migrated-application-that-uses-the-sql-adapter.md)  
+-   [步骤 3：测试迁移应用程序使用 SQL 适配器](../../adapters-and-accelerators/adapter-sql/step-3-test-the-migrated-application-that-uses-the-sql-adapter.md)  
   
 ## <a name="see-also"></a>请参阅  
  [SQL 适配器教程](../../adapters-and-accelerators/adapter-sql/sql-adapter-tutorials.md)

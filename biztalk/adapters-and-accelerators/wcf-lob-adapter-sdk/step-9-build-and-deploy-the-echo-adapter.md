@@ -1,5 +1,5 @@
 ---
-title: 步骤 9： 生成并部署 Echo 适配器 |Microsoft Docs
+title: 步骤 9：生成并部署 Echo 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 58e0bae620c43504091c29ed2b03a33e0c7710c5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 57cd647ebe8d8896a85c5a6a49cce95321da0bdb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980502"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363104"
 ---
-# <a name="step-9-build-and-deploy-the-echo-adapter"></a>步骤 9： 生成并部署 Echo 适配器
+# <a name="step-9-build-and-deploy-the-echo-adapter"></a>步骤 9：生成并部署 Echo 适配器
 ![步骤 9 的 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-9of9.gif "Step_9of9")  
   
- **完成时间：** 10 分钟  
+ **若要完成的时间：** 10 分钟。  
   
  在此步骤中，将执行部署 Echo 适配器所需的任务。 这涉及到以下所有内容的：  
   
@@ -34,10 +34,10 @@ ms.locfileid: "36980502"
   
 - 注册使用 Echo 适配器 [!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  若要成功完成此步骤中，您应熟悉强名称文件和 gac。 基本了解[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]配置是有所帮助，但并不是必需。  
   
-### <a name="to-assign-a-strong-name-to-your-assembly"></a>指定程序集的强名称  
+### <a name="to-assign-a-strong-name-to-your-assembly"></a>若要为您的程序集分配强名称  
   
 1.  在解决方案资源管理器中右键单击**EchoAdapter**项目，并单击**属性**。  
   
@@ -61,13 +61,13 @@ ms.locfileid: "36980502"
   
 3.  键入下列命令：  
   
-     **gacutil.exe /if"\<**  *assembly\Microsoft.Adapters.Samples.EchoV2.dll 路径*  **\>"**  
+     **gacutil.exe /if "\<** *path to assembly\Microsoft.Adapters.Samples.EchoV2.dll* **\>"**  
   
-     此命令将程序集安装到 GAC，覆盖任何具有相同程序集名称的现有程序集。  
+     这会将程序集安装到 GAC，覆盖任何现有的程序集都具有相同的程序集名称。  
   
 ### <a name="to-register-the-echo-adapter-with-windows-communication-foundation"></a>若要使用 Windows Communication Foundation 注册 Echo 适配器  
   
-1. 编辑位于 Microsoft .NET 配置文件夹中的 machine.config 文件。 若要执行此操作，请单击**启动**，单击**运行**，类型**记事本\<Windows 安装路径\>\Microsoft.NET\Framework\\< 版本\>\CONFIG\machine.config**，然后单击**确定**。  
+1. 编辑 machine.config 文件位于 Microsoft.NET 配置文件夹中。 若要执行此操作，请单击**启动**，单击**运行**，类型**记事本\<Windows 安装路径\>\Microsoft.NET\Framework\\< 版本\>\CONFIG\machine.config**，然后单击**确定**。  
   
 2. 更新 machine.config 文件。 如果在 machine.config 中不包含 system.serviceModel 部分，配置文件，但之前关闭根标记的结尾处添加以下部分。  
   
@@ -119,8 +119,8 @@ ms.locfileid: "36980502"
  在 Echo 适配器教程的此最后一步，您将添加到 Echo 适配器的强名称，生成和部署该适配器，然后修改 Machine.config，包括有关适配器的信息。 此时，Echo 适配器应可供使用方应用程序。  
   
 ## <a name="next-steps"></a>后续步骤  
- 本教程中已完成。 如果你想要在.NET 项目中测试 Echo 适配器的功能，请参阅[教程 2： 使用 Echo 适配器通过.NET](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-2-consume-the-echo-adapter-from-net.md)。  
+ 本教程中已完成。 如果你想要在.NET 项目中测试 Echo 适配器的功能，请参阅[教程 2:使用 Echo 适配器通过.NET](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-2-consume-the-echo-adapter-from-net.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [步骤 8： 实现 Echo 适配器的同步入站处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)   
+ [步骤 8：实现 Echo 适配器的同步入站处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)   
  [教程 2：从 .NET 使用 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-2-consume-the-echo-adapter-from-net.md)

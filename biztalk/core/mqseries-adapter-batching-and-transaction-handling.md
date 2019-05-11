@@ -1,5 +1,5 @@
 ---
-title: MQSeries 适配器批处理和事务处理 |Microsoft 文档
+title: MQSeries 适配器批处理和事务处理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,19 +19,19 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ffcdec02c464b9398acbece35657e0c3d1dc4432
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 466201e88b55cd17300deaae3d1b1258e82a2c2c
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262981"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531204"
 ---
 # <a name="mqseries-adapter-batching-and-transaction-handling"></a>MQSeries 适配器批处理和事务处理
-MQSeries 适配器只在未接收所有数据的情况下才停止事务。 适配器事务的边界是适配器终结点（MQSeries 服务器上的 MQSeries 队列）和 MessageBox 数据库。  
+它不会接收所有数据，MQSeries 适配器就会停止事务。 适配器事务的边界是适配器终结点 （MQSeries 服务器上的 MQSeries 队列） 和 MessageBox 数据库。  
   
- 如果 BizTalk 应用程序使消息无效，则适配器会将该消息移至挂起队列中。 不过，由于适配器仍将其视为有效事务（该适配器接收了所有数据），因此适配器将提交事务。  
+ 如果 BizTalk 应用程序使消息无效，则适配器将消息移至挂起队列。 但是，因为它仍是有效的事务从角度来看 （该适配器接收的所有数据） 的适配器，适配器将提交事务。  
   
- 对适配器进行配置时，可以通过设置属性来控制批处理和事务处理。 有关详细信息，请参阅[配置 MQSeries 适配器](../core/configuring-the-mqseries-adapter.md)。  
+ 您可以控制批处理和事务处理通过配置适配器时设置属性。 有关详细信息，请参阅[配置 MQSeries 适配器](../core/configuring-the-mqseries-adapter.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [MQSeries 适配器属性](../core/mqseries-adapter-properties.md)

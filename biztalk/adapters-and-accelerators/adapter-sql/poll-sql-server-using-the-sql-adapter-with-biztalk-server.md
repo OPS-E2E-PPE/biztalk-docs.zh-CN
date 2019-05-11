@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 971de39bff2149b1b6bdb5d20d6e8b721821a8ea
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f6fb95d5d070e53ae21e74ee101c04608b6599c5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996438"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368490"
 ---
 # <a name="poll-sql-server-using-the-sql-adapter-with-biztalk-server"></a>使用 SQL 适配器与 BizTalk Server 轮询 SQL Server
 你可以配置[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]从 SQL Server 接收基于轮询的数据更改消息。 可以指定适配器轮询数据库将执行的轮询语句。 轮询语句可以是 SELECT 语句或存储的过程返回一个结果集。 根据接收轮询消息的类型，该适配器公开轮询的三种不同的方式：  
