@@ -12,90 +12,90 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 035cd5d0f6b3c37861574d3ace81b15e1dfbc06d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ca073cdbe6bc7a32ce0168db227d2121980c92ef
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990038"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65254428"
 ---
-# <a name="sendportgroups-biztalk-server-sample"></a><span data-ttu-id="438fc-102">SendPortGroups（BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="438fc-102">SendPortGroups (BizTalk Server Sample)</span></span>
-<span data-ttu-id="438fc-103">SendPortGroups 示例演示了如何枚举和管理通过使用发送端口组**Microsoft.BizTalk.ExplorerOM**管理类。</span><span class="sxs-lookup"><span data-stu-id="438fc-103">The SendPortGroups sample demonstrates how to enumerate and manage send port groups by using the **Microsoft.BizTalk.ExplorerOM** administration classes.</span></span>  
+# <a name="sendportgroups-biztalk-server-sample"></a><span data-ttu-id="caa6a-102">SendPortGroups （BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="caa6a-102">SendPortGroups (BizTalk Server Sample)</span></span>
+<span data-ttu-id="caa6a-103">SendPortGroups 示例演示了如何枚举和管理通过使用发送端口组**Microsoft.BizTalk.ExplorerOM**管理类。</span><span class="sxs-lookup"><span data-stu-id="caa6a-103">The SendPortGroups sample demonstrates how to enumerate and manage send port groups by using the **Microsoft.BizTalk.ExplorerOM** administration classes.</span></span>  
 
-## <a name="prerequisites"></a><span data-ttu-id="438fc-104">必要條件</span><span class="sxs-lookup"><span data-stu-id="438fc-104">Prerequisites</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="caa6a-104">先决条件</span><span class="sxs-lookup"><span data-stu-id="caa6a-104">Prerequisites</span></span>  
 
-- <span data-ttu-id="438fc-105">您必须具有 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理权限才能使用此示例中的管理对象。</span><span class="sxs-lookup"><span data-stu-id="438fc-105">You must have [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] administrative privileges to use the administrative objects in this sample.</span></span>  
+- <span data-ttu-id="caa6a-105">您必须具有 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理权限才能使用此示例中的管理对象。</span><span class="sxs-lookup"><span data-stu-id="caa6a-105">You must have [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] administrative privileges to use the administrative objects in this sample.</span></span>  
 
-- <span data-ttu-id="438fc-106">Windows PowerShell 脚本需要 Windows PowerShell 执行策略以允许脚本执行。</span><span class="sxs-lookup"><span data-stu-id="438fc-106">The Windows PowerShell script requires the Windows PowerShell execution policy to allow script execution.</span></span> <span data-ttu-id="438fc-107">有关详细信息，请参阅 [检查执行策略](http://go.microsoft.com/fwlink/?LinkId=128930)。</span><span class="sxs-lookup"><span data-stu-id="438fc-107">For more information see [Examining the Execution Policy](http://go.microsoft.com/fwlink/?LinkId=128930).</span></span>  
+- <span data-ttu-id="caa6a-106">Windows PowerShell 脚本需要 Windows PowerShell 执行策略以允许脚本执行。</span><span class="sxs-lookup"><span data-stu-id="caa6a-106">The Windows PowerShell script requires the Windows PowerShell execution policy to allow script execution.</span></span> <span data-ttu-id="caa6a-107">有关详细信息，请参阅 [检查执行策略](http://go.microsoft.com/fwlink/?LinkId=128930)。</span><span class="sxs-lookup"><span data-stu-id="caa6a-107">For more information see [Examining the Execution Policy](http://go.microsoft.com/fwlink/?LinkId=128930).</span></span>  
 
-## <a name="what-this-sample-does"></a><span data-ttu-id="438fc-108">本示例的用途</span><span class="sxs-lookup"><span data-stu-id="438fc-108">What This Sample Does</span></span>  
- <span data-ttu-id="438fc-109">此示例演示如何使用**BtsCatalogExplorer**并**发送端口组**类**Microsoft.BizTalk.ExplorerOM**命名空间以管理发送端口组在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境。</span><span class="sxs-lookup"><span data-stu-id="438fc-109">This sample demonstrates using the **BtsCatalogExplorer** and **SendPortGroup** classes from the **Microsoft.BizTalk.ExplorerOM** namespace to manage send port groups in a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment.</span></span> <span data-ttu-id="438fc-110">本示例是使用 Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 编写的。</span><span class="sxs-lookup"><span data-stu-id="438fc-110">The sample is written in Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)].</span></span> <span data-ttu-id="438fc-111">本主题中还包含 Windows PowerShell 示例脚本。</span><span class="sxs-lookup"><span data-stu-id="438fc-111">A Windows PowerShell example script is also included in this topic.</span></span> <span data-ttu-id="438fc-112">本示例将演示以下操作：</span><span class="sxs-lookup"><span data-stu-id="438fc-112">The sample demonstrates the following operations:</span></span>  
+## <a name="what-this-sample-does"></a><span data-ttu-id="caa6a-108">本示例的用途</span><span class="sxs-lookup"><span data-stu-id="caa6a-108">What This Sample Does</span></span>  
+ <span data-ttu-id="caa6a-109">此示例演示如何使用**BtsCatalogExplorer**并**发送端口组**类**Microsoft.BizTalk.ExplorerOM**命名空间以管理发送端口组在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境。</span><span class="sxs-lookup"><span data-stu-id="caa6a-109">This sample demonstrates using the **BtsCatalogExplorer** and **SendPortGroup** classes from the **Microsoft.BizTalk.ExplorerOM** namespace to manage send port groups in a [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment.</span></span> <span data-ttu-id="caa6a-110">在 Microsoft 中编写示例[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="caa6a-110">The sample is written in Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)].</span></span> <span data-ttu-id="caa6a-111">本主题中还包含 Windows PowerShell 示例脚本。</span><span class="sxs-lookup"><span data-stu-id="caa6a-111">A Windows PowerShell example script is also included in this topic.</span></span> <span data-ttu-id="caa6a-112">此示例演示了以下操作：</span><span class="sxs-lookup"><span data-stu-id="caa6a-112">The sample demonstrates the following operations:</span></span>  
 
-- <span data-ttu-id="438fc-113">通过使用连接到 BizTalk 管理数据库**BtsCatalogExplorer**类。</span><span class="sxs-lookup"><span data-stu-id="438fc-113">Connecting to the BizTalk Management database by using the **BtsCatalogExplorer** class.</span></span>  
+- <span data-ttu-id="caa6a-113">通过使用连接到 BizTalk 管理数据库**BtsCatalogExplorer**类。</span><span class="sxs-lookup"><span data-stu-id="caa6a-113">Connecting to the BizTalk Management database by using the **BtsCatalogExplorer** class.</span></span>  
 
-- <span data-ttu-id="438fc-114">创建一个名为“My Send Port Group”的新发送端口组。</span><span class="sxs-lookup"><span data-stu-id="438fc-114">Creating a new send port group named “My Send Port Group”.</span></span>  
+- <span data-ttu-id="caa6a-114">创建名为"My Send Port Group"的新发送端口组。</span><span class="sxs-lookup"><span data-stu-id="caa6a-114">Creating a new send port group named “My Send Port Group”.</span></span>  
 
-- <span data-ttu-id="438fc-115">枚举可显示新创建的发送端口组发送端口组。</span><span class="sxs-lookup"><span data-stu-id="438fc-115">Enumerating send port groups to display the newly created send port group.</span></span>  
+- <span data-ttu-id="caa6a-115">枚举可显示新创建的发送端口组发送端口组。</span><span class="sxs-lookup"><span data-stu-id="caa6a-115">Enumerating send port groups to display the newly created send port group.</span></span>  
 
-- <span data-ttu-id="438fc-116">正在删除新发送端口组。</span><span class="sxs-lookup"><span data-stu-id="438fc-116">Deleting the new send port group.</span></span>  
+- <span data-ttu-id="caa6a-116">正在删除新发送端口组。</span><span class="sxs-lookup"><span data-stu-id="caa6a-116">Deleting the new send port group.</span></span>  
 
-  <span data-ttu-id="438fc-117">本示例中还有一些附加功能，但不会在 [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 版本中执行。</span><span class="sxs-lookup"><span data-stu-id="438fc-117">Additional functions are present in the sample but are not executed in the [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] version.</span></span>  <span data-ttu-id="438fc-118">中的 PowerShell 示例脚本演示了一些其他函数。</span><span class="sxs-lookup"><span data-stu-id="438fc-118">Some of the additional functions are demonstrated in the PowerShell example script.</span></span> <span data-ttu-id="438fc-119">其他函数演示以下功能：</span><span class="sxs-lookup"><span data-stu-id="438fc-119">The additional functions demonstrate the following functionality:</span></span>  
+  <span data-ttu-id="caa6a-117">其他函数都位于该示例，但不是在中执行[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)]版本。</span><span class="sxs-lookup"><span data-stu-id="caa6a-117">Additional functions are present in the sample but are not executed in the [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] version.</span></span>  <span data-ttu-id="caa6a-118">中的 PowerShell 示例脚本演示了一些其他函数。</span><span class="sxs-lookup"><span data-stu-id="caa6a-118">Some of the additional functions are demonstrated in the PowerShell example script.</span></span> <span data-ttu-id="caa6a-119">其他函数演示以下功能：</span><span class="sxs-lookup"><span data-stu-id="caa6a-119">The additional functions demonstrate the following functionality:</span></span>  
 
-- <span data-ttu-id="438fc-120">将发送端口添加到新创建的发送端口组 （PowerShell 示例中介绍）。</span><span class="sxs-lookup"><span data-stu-id="438fc-120">Adding a send port to the newly created send port group (covered in the PowerShell example).</span></span>  
+- <span data-ttu-id="caa6a-120">将发送端口添加到新创建的发送端口组 （PowerShell 示例中介绍）。</span><span class="sxs-lookup"><span data-stu-id="caa6a-120">Adding a send port to the newly created send port group (covered in the PowerShell example).</span></span>  
 
-- <span data-ttu-id="438fc-121">从发送端口组 （PowerShell 示例中介绍） 中删除发送端口。</span><span class="sxs-lookup"><span data-stu-id="438fc-121">Deleting a send port from the send port group (covered in the PowerShell example).</span></span>  
+- <span data-ttu-id="caa6a-121">从发送端口组 （PowerShell 示例中介绍） 中删除发送端口。</span><span class="sxs-lookup"><span data-stu-id="caa6a-121">Deleting a send port from the send port group (covered in the PowerShell example).</span></span>  
 
-- <span data-ttu-id="438fc-122">正在启动发送端口组。</span><span class="sxs-lookup"><span data-stu-id="438fc-122">Starting the send port group.</span></span>  
+- <span data-ttu-id="caa6a-122">正在启动发送端口组。</span><span class="sxs-lookup"><span data-stu-id="caa6a-122">Starting the send port group.</span></span>  
 
-- <span data-ttu-id="438fc-123">正在停止发送端口组。</span><span class="sxs-lookup"><span data-stu-id="438fc-123">Stopping the send port group.</span></span>  
+- <span data-ttu-id="caa6a-123">正在停止发送端口组。</span><span class="sxs-lookup"><span data-stu-id="caa6a-123">Stopping the send port group.</span></span>  
 
-## <a name="where-to-find-this-sample"></a><span data-ttu-id="438fc-124">本示例的所在位置</span><span class="sxs-lookup"><span data-stu-id="438fc-124">Where To Find This Sample</span></span>  
- <span data-ttu-id="438fc-125">本示例位于以下 SDK 位置中：</span><span class="sxs-lookup"><span data-stu-id="438fc-125">The sample is located in the following SDK location:</span></span>  
+## <a name="where-to-find-this-sample"></a><span data-ttu-id="caa6a-124">本示例的所在位置</span><span class="sxs-lookup"><span data-stu-id="caa6a-124">Where To Find This Sample</span></span>  
+ <span data-ttu-id="caa6a-125">本示例位于以下 SDK 位置中：</span><span class="sxs-lookup"><span data-stu-id="caa6a-125">The sample is located in the following SDK location:</span></span>  
 
- <span data-ttu-id="438fc-126">\<*示例路径*\>\Admin\ExplorerOM\SendPortGroups</span><span class="sxs-lookup"><span data-stu-id="438fc-126">\<*Samples Path*\>\Admin\ExplorerOM\SendPortGroups</span></span>  
+ <span data-ttu-id="caa6a-126">\<*Samples Path*\>\Admin\ExplorerOM\SendPortGroups</span><span class="sxs-lookup"><span data-stu-id="caa6a-126">\<*Samples Path*\>\Admin\ExplorerOM\SendPortGroups</span></span>  
 
- <span data-ttu-id="438fc-127">下表显示了本示例中的文件及其用途说明：</span><span class="sxs-lookup"><span data-stu-id="438fc-127">The following table shows the files in this sample and describes their purpose.</span></span>  
+ <span data-ttu-id="caa6a-127">下表显示了本示例中的文件及其用途说明：</span><span class="sxs-lookup"><span data-stu-id="caa6a-127">The following table shows the files in this sample and describes their purpose.</span></span>  
 
 
-|                            <span data-ttu-id="438fc-128">文件</span><span class="sxs-lookup"><span data-stu-id="438fc-128">File(s)</span></span>                            |                                                 <span data-ttu-id="438fc-129">Description</span><span class="sxs-lookup"><span data-stu-id="438fc-129">Description</span></span>                                                  |
+|                            <span data-ttu-id="caa6a-128">文件</span><span class="sxs-lookup"><span data-stu-id="caa6a-128">File(s)</span></span>                            |                                                 <span data-ttu-id="caa6a-129">Description</span><span class="sxs-lookup"><span data-stu-id="caa6a-129">Description</span></span>                                                  |
 |---------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-|                       <span data-ttu-id="438fc-130">SendPortGroups.cs</span><span class="sxs-lookup"><span data-stu-id="438fc-130">SendPortGroups.cs</span></span>                       | <span data-ttu-id="438fc-131">本示例中演示的操作所需的 [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 源文件。</span><span class="sxs-lookup"><span data-stu-id="438fc-131">[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] source file for operations demonstrated in this sample.</span></span> |
-| <span data-ttu-id="438fc-132">SendPortGroups.sln，SendPortGroups.csproj，SendPortGroups.suo</span><span class="sxs-lookup"><span data-stu-id="438fc-132">SendPortGroups.sln, SendPortGroups.csproj, SendPortGroups.suo</span></span> |                                  <span data-ttu-id="438fc-133">示例的解决方案文件和项目文件。</span><span class="sxs-lookup"><span data-stu-id="438fc-133">Solution and project files for the sample.</span></span>                                  |
+|                       <span data-ttu-id="caa6a-130">SendPortGroups.cs</span><span class="sxs-lookup"><span data-stu-id="caa6a-130">SendPortGroups.cs</span></span>                       | [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] <span data-ttu-id="caa6a-131">此示例中演示的操作的源文件。</span><span class="sxs-lookup"><span data-stu-id="caa6a-131">source file for operations demonstrated in this sample.</span></span> |
+| <span data-ttu-id="caa6a-132">SendPortGroups.sln, SendPortGroups.csproj, SendPortGroups.suo</span><span class="sxs-lookup"><span data-stu-id="caa6a-132">SendPortGroups.sln, SendPortGroups.csproj, SendPortGroups.suo</span></span> |                                  <span data-ttu-id="caa6a-133">示例的解决方案文件和项目文件。</span><span class="sxs-lookup"><span data-stu-id="caa6a-133">Solution and project files for the sample.</span></span>                                  |
 
-## <a name="building-and-running-this-sample"></a><span data-ttu-id="438fc-134">生成并运行本示例</span><span class="sxs-lookup"><span data-stu-id="438fc-134">Building and Running This Sample</span></span>  
+## <a name="building-and-running-this-sample"></a><span data-ttu-id="caa6a-134">生成并运行本示例</span><span class="sxs-lookup"><span data-stu-id="caa6a-134">Building and Running This Sample</span></span>  
 
-#### <a name="to-build-this-sample"></a><span data-ttu-id="438fc-135">生成示例</span><span class="sxs-lookup"><span data-stu-id="438fc-135">To build this sample</span></span>  
+#### <a name="to-build-this-sample"></a><span data-ttu-id="caa6a-135">生成示例</span><span class="sxs-lookup"><span data-stu-id="caa6a-135">To build this sample</span></span>  
 
-1. <span data-ttu-id="438fc-136">在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，打开解决方案文件 SendPortGroups.sln。</span><span class="sxs-lookup"><span data-stu-id="438fc-136">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the solution file SendPortGroups.sln.</span></span>  
+1. <span data-ttu-id="caa6a-136">在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，打开解决方案文件 SendPortGroups.sln。</span><span class="sxs-lookup"><span data-stu-id="caa6a-136">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the solution file SendPortGroups.sln.</span></span>  
 
-2. <span data-ttu-id="438fc-137">在解决方案资源管理器，双击**SendPortGroups.cs**打开示例代码。</span><span class="sxs-lookup"><span data-stu-id="438fc-137">In Solution Explorer, double click **SendPortGroups.cs** to open the sample code.</span></span>  
+2. <span data-ttu-id="caa6a-137">在解决方案资源管理器，双击**SendPortGroups.cs**打开示例代码。</span><span class="sxs-lookup"><span data-stu-id="caa6a-137">In Solution Explorer, double click **SendPortGroups.cs** to open the sample code.</span></span>  
 
-3. <span data-ttu-id="438fc-138">在 `root.ConnectionString` 函数中找到 `CreateSendPortGroup`。</span><span class="sxs-lookup"><span data-stu-id="438fc-138">Find the `root.ConnectionString` in the `CreateSendPortGroup` function.</span></span>  <span data-ttu-id="438fc-139">必须更改服务器规范以正确地指向托管 BizTalk 管理数据库的 SQL server。</span><span class="sxs-lookup"><span data-stu-id="438fc-139">You must change the server specification to correctly point to the SQL server hosting your BizTalk Management database.</span></span>  <span data-ttu-id="438fc-140">此外可以使用句点 （.） 来连接到本地 SQL server。</span><span class="sxs-lookup"><span data-stu-id="438fc-140">You can also use a period (.) to connect to the local SQL server.</span></span>  <span data-ttu-id="438fc-141">例如：</span><span class="sxs-lookup"><span data-stu-id="438fc-141">For example:</span></span>  
+3. <span data-ttu-id="caa6a-138">查找`root.ConnectionString`在`CreateSendPortGroup`函数。</span><span class="sxs-lookup"><span data-stu-id="caa6a-138">Find the `root.ConnectionString` in the `CreateSendPortGroup` function.</span></span>  <span data-ttu-id="caa6a-139">必须更改服务器规范以正确地指向托管 BizTalk 管理数据库的 SQL server。</span><span class="sxs-lookup"><span data-stu-id="caa6a-139">You must change the server specification to correctly point to the SQL server hosting your BizTalk Management database.</span></span>  <span data-ttu-id="caa6a-140">此外可以使用句点 （.） 来连接到本地 SQL server。</span><span class="sxs-lookup"><span data-stu-id="caa6a-140">You can also use a period (.) to connect to the local SQL server.</span></span>  <span data-ttu-id="caa6a-141">例如：</span><span class="sxs-lookup"><span data-stu-id="caa6a-141">For example:</span></span>  
 
    ```  
    root.ConnectionString = "Integrated Security=SSPI;database=BizTalkMgmtDb;server=.";  
    ```  
 
-4. <span data-ttu-id="438fc-142">重复步骤 3 的以下函数：</span><span class="sxs-lookup"><span data-stu-id="438fc-142">Repeat step 3 for the following functions:</span></span>  
+4. <span data-ttu-id="caa6a-142">重复步骤 3 的以下函数：</span><span class="sxs-lookup"><span data-stu-id="caa6a-142">Repeat step 3 for the following functions:</span></span>  
 
-   -   <span data-ttu-id="438fc-143">**EnumerateSendPortGroups**</span><span class="sxs-lookup"><span data-stu-id="438fc-143">**EnumerateSendPortGroups**</span></span>  
+   -   <span data-ttu-id="caa6a-143">**EnumerateSendPortGroups**</span><span class="sxs-lookup"><span data-stu-id="caa6a-143">**EnumerateSendPortGroups**</span></span>  
 
-   -   <span data-ttu-id="438fc-144">**DeleteSendPortGroup**</span><span class="sxs-lookup"><span data-stu-id="438fc-144">**DeleteSendPortGroup**</span></span>  
+   -   <span data-ttu-id="caa6a-144">**DeleteSendPortGroup**</span><span class="sxs-lookup"><span data-stu-id="caa6a-144">**DeleteSendPortGroup**</span></span>  
 
-5. <span data-ttu-id="438fc-145">保存**SendPortGroups.cs**。</span><span class="sxs-lookup"><span data-stu-id="438fc-145">Save **SendPortGroups.cs**.</span></span>  
+5. <span data-ttu-id="caa6a-145">保存**SendPortGroups.cs**。</span><span class="sxs-lookup"><span data-stu-id="caa6a-145">Save **SendPortGroups.cs**.</span></span>  
 
-6. <span data-ttu-id="438fc-146">在主菜单上，单击**构建**，然后单击**生成解决方案**。</span><span class="sxs-lookup"><span data-stu-id="438fc-146">On the main menu, click **Build**, and then click **Build Solution**.</span></span>  
+6. <span data-ttu-id="caa6a-146">在主菜单上，单击**构建**，然后单击**生成解决方案**。</span><span class="sxs-lookup"><span data-stu-id="caa6a-146">On the main menu, click **Build**, and then click **Build Solution**.</span></span>  
 
-#### <a name="to-run-this-sample"></a><span data-ttu-id="438fc-147">运行本示例的步骤</span><span class="sxs-lookup"><span data-stu-id="438fc-147">To run this sample</span></span>  
+#### <a name="to-run-this-sample"></a><span data-ttu-id="caa6a-147">运行本示例的步骤</span><span class="sxs-lookup"><span data-stu-id="caa6a-147">To run this sample</span></span>  
 
-1.  <span data-ttu-id="438fc-148">打开命令窗口并导航到以下文件夹：</span><span class="sxs-lookup"><span data-stu-id="438fc-148">Open a command window and navigate to the following folder:</span></span>  
+1.  <span data-ttu-id="caa6a-148">打开命令窗口并导航到以下文件夹：</span><span class="sxs-lookup"><span data-stu-id="caa6a-148">Open a command window and navigate to the following folder:</span></span>  
 
-     <span data-ttu-id="438fc-149">\<*示例路径*\>\Admin\ExplorerOM\SendPortGroups\bin\Debug</span><span class="sxs-lookup"><span data-stu-id="438fc-149">\<*Samples Path*\>\Admin\ExplorerOM\SendPortGroups\bin\Debug</span></span>  
+     <span data-ttu-id="caa6a-149">\<*Samples Path*\>\Admin\ExplorerOM\SendPortGroups\bin\Debug</span><span class="sxs-lookup"><span data-stu-id="caa6a-149">\<*Samples Path*\>\Admin\ExplorerOM\SendPortGroups\bin\Debug</span></span>  
 
-2.  <span data-ttu-id="438fc-150">运行文件 SendPortGroups.exe。</span><span class="sxs-lookup"><span data-stu-id="438fc-150">Run the file SendPortGroups.exe.</span></span>  
+2.  <span data-ttu-id="caa6a-150">运行文件 SendPortGroups.exe。</span><span class="sxs-lookup"><span data-stu-id="caa6a-150">Run the file SendPortGroups.exe.</span></span>  
 
-## <a name="windows-powershell-script-example"></a><span data-ttu-id="438fc-151">Windows Powershell 脚本示例</span><span class="sxs-lookup"><span data-stu-id="438fc-151">Windows PowerShell Script Example</span></span>  
- <span data-ttu-id="438fc-152">以下 Windows PowerShell 脚本片段可用于演示的相同功能**ExplorerOM**类：</span><span class="sxs-lookup"><span data-stu-id="438fc-152">The following Windows PowerShell script fragment can be used to demonstrate the same features of the **ExplorerOM** classes:</span></span>  
+## <a name="windows-powershell-script-example"></a><span data-ttu-id="caa6a-151">Windows Powershell 脚本示例</span><span class="sxs-lookup"><span data-stu-id="caa6a-151">Windows PowerShell Script Example</span></span>  
+ <span data-ttu-id="caa6a-152">以下 Windows PowerShell 脚本片段可用于演示的相同功能**ExplorerOM**类：</span><span class="sxs-lookup"><span data-stu-id="caa6a-152">The following Windows PowerShell script fragment can be used to demonstrate the same features of the **ExplorerOM** classes:</span></span>  
 
 ```  
 Function CreateSendPortGroup($Catalog, $strName)  
@@ -318,7 +318,7 @@ DeleteSendPortGroup $Catalog $SendPortGroupName
 Write-Host  
 ```  
 
- <span data-ttu-id="438fc-153">下面是从运行 Windows PowerShell 脚本示例的预期的示例输出。</span><span class="sxs-lookup"><span data-stu-id="438fc-153">Here is example expected output from running the Windows PowerShell script sample.</span></span>  
+ <span data-ttu-id="caa6a-153">下面是从运行 Windows PowerShell 脚本示例的预期的示例输出。</span><span class="sxs-lookup"><span data-stu-id="caa6a-153">Here is example expected output from running the Windows PowerShell script sample.</span></span>  
 
 ```  
 PS C:\> .\sendportgroups.ps1  
@@ -372,5 +372,5 @@ Deleting "PowerShell Sample Send Port Group"...
 DeleteSendPortGroup() completed.  
 ```  
 
-## <a name="see-also"></a><span data-ttu-id="438fc-154">请参阅</span><span class="sxs-lookup"><span data-stu-id="438fc-154">See Also</span></span>  
- [<span data-ttu-id="438fc-155">Admin-ExplorerOM（BizTalk Server 示例文件夹）</span><span class="sxs-lookup"><span data-stu-id="438fc-155">Admin-ExplorerOM (BizTalk Server Samples Folder)</span></span>](../core/admin-explorerom-biztalk-server-samples-folder.md)
+## <a name="see-also"></a><span data-ttu-id="caa6a-154">请参阅</span><span class="sxs-lookup"><span data-stu-id="caa6a-154">See Also</span></span>  
+ [<span data-ttu-id="caa6a-155">Admin-ExplorerOM（BizTalk Server 示例文件夹）</span><span class="sxs-lookup"><span data-stu-id="caa6a-155">Admin-ExplorerOM (BizTalk Server Samples Folder)</span></span>](../core/admin-explorerom-biztalk-server-samples-folder.md)

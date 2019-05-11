@@ -1,5 +1,5 @@
 ---
-title: 步骤 17： 创建 WSClient 应用程序 |Microsoft Docs
+title: 步骤 17:创建 WSClient 应用程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,37 +16,37 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9da92bf7631b254ac8464cad058a6500305f01bf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c9238e94168060c8e8853bbd8108ae62a57397d1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993254"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288843"
 ---
-# <a name="step-17-create-the-wsclient-application"></a><span data-ttu-id="c9919-102">步骤 17： 创建 WSClient 应用程序</span><span class="sxs-lookup"><span data-stu-id="c9919-102">Step 17: Create the WSClient Application</span></span>
-<span data-ttu-id="c9919-103">WSClient.exe （Web 服务客户端） 是编写的控制台应用程序[!INCLUDE[btsVCSharp](../../includes/btsvcsharp-md.md)]，说明了如何将数据发送到业务流程发布为 Web 服务中的上一步骤。</span><span class="sxs-lookup"><span data-stu-id="c9919-103">WSClient.exe (Web service client) is a console application written in [!INCLUDE[btsVCSharp](../../includes/btsvcsharp-md.md)] that illustrates how to send data to the orchestration that you published as a Web service in the previous steps.</span></span> <span data-ttu-id="c9919-104">WSClient 应用程序接受四个输入参数顺序： 患者的名字、 中间名分别姓氏和社会安全号码。</span><span class="sxs-lookup"><span data-stu-id="c9919-104">The WSClient application accepts four input parameters in order: patient first name, middle name, last name, and social security number, respectively.</span></span> <span data-ttu-id="c9919-105">若要将患者信息发送到你的 Web 服务，使用以下命令行语法：</span><span class="sxs-lookup"><span data-stu-id="c9919-105">To send patient information to your Web service, use the following command line syntax:</span></span>  
+# <a name="step-17-create-the-wsclient-application"></a><span data-ttu-id="8a11b-102">步骤 17:创建 WSClient 应用程序</span><span class="sxs-lookup"><span data-stu-id="8a11b-102">Step 17: Create the WSClient Application</span></span>
+<span data-ttu-id="8a11b-103">WSClient.exe （Web 服务客户端） 是编写的控制台应用程序[!INCLUDE[btsVCSharp](../../includes/btsvcsharp-md.md)]，说明了如何将数据发送到业务流程发布为 Web 服务中的上一步骤。</span><span class="sxs-lookup"><span data-stu-id="8a11b-103">WSClient.exe (Web service client) is a console application written in [!INCLUDE[btsVCSharp](../../includes/btsvcsharp-md.md)] that illustrates how to send data to the orchestration that you published as a Web service in the previous steps.</span></span> <span data-ttu-id="8a11b-104">WSClient 应用程序接受四个输入参数顺序： 患者的名字、 中间名分别姓氏和社会安全号码。</span><span class="sxs-lookup"><span data-stu-id="8a11b-104">The WSClient application accepts four input parameters in order: patient first name, middle name, last name, and social security number, respectively.</span></span> <span data-ttu-id="8a11b-105">若要将患者信息发送到你的 Web 服务，使用以下命令行语法：</span><span class="sxs-lookup"><span data-stu-id="8a11b-105">To send patient information to your Web service, use the following command line syntax:</span></span>  
   
 ```  
 wsclient john henry smith 123456789  
 ```  
   
-### <a name="to-create-the-wsclient-application"></a><span data-ttu-id="c9919-106">若要创建 WSClient 应用程序</span><span class="sxs-lookup"><span data-stu-id="c9919-106">To create the WSClient application</span></span>  
+### <a name="to-create-the-wsclient-application"></a><span data-ttu-id="8a11b-106">若要创建 WSClient 应用程序</span><span class="sxs-lookup"><span data-stu-id="8a11b-106">To create the WSClient application</span></span>  
   
-1. <span data-ttu-id="c9919-107">在解决方案资源管理器中右键单击**解决方案 BTAHL7V22Common'**，单击**添加**，然后单击**新项目**。</span><span class="sxs-lookup"><span data-stu-id="c9919-107">In Solution Explorer, right-click **Solution 'BTAHL7V22Common'**, click **Add**, and then click **New Project**.</span></span>  
+1. <span data-ttu-id="8a11b-107">在解决方案资源管理器中右键单击**解决方案 BTAHL7V22Common'**，单击**添加**，然后单击**新项目**。</span><span class="sxs-lookup"><span data-stu-id="8a11b-107">In Solution Explorer, right-click **Solution 'BTAHL7V22Common'**, click **Add**, and then click **New Project**.</span></span>  
   
-2. <span data-ttu-id="c9919-108">在中**添加新项目**对话框中**项目类型**窗格中，单击**Visual C#** 并在**模板**窗格中，单击**控制台应用程序**。</span><span class="sxs-lookup"><span data-stu-id="c9919-108">In the **Add New Project** dialog box, in the **Project Types** pane, click **Visual C#** and in the **Templates** pane, click **Console Application**.</span></span>  
+2. <span data-ttu-id="8a11b-108">在中**添加新项目**对话框中**项目类型**窗格中，单击**Visual C#** 并在**模板**窗格中，单击**控制台应用程序**。</span><span class="sxs-lookup"><span data-stu-id="8a11b-108">In the **Add New Project** dialog box, in the **Project Types** pane, click **Visual C#** and in the **Templates** pane, click **Console Application**.</span></span>  
   
-3. <span data-ttu-id="c9919-109">在中**名称**字段中，键入**WSClient**。</span><span class="sxs-lookup"><span data-stu-id="c9919-109">In the **Name** field, type **WSClient**.</span></span> <span data-ttu-id="c9919-110">在中**位置**字段中，浏览到 **\<*驱动器*\>: \Tutorial**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="c9919-110">In the **Location** field, browse to **\<*drive*\>:\Tutorial**, and then click **OK**.</span></span> <span data-ttu-id="c9919-111">解决方案资源管理器将 WSClient 添加到树中，并显示 Program.cs 文件。</span><span class="sxs-lookup"><span data-stu-id="c9919-111">Solution Explorer adds WSClient to the tree, and the Program.cs file appears.</span></span>  
+3. <span data-ttu-id="8a11b-109">在中**名称**字段中，键入**WSClient**。</span><span class="sxs-lookup"><span data-stu-id="8a11b-109">In the **Name** field, type **WSClient**.</span></span> <span data-ttu-id="8a11b-110">在中**位置**字段中，浏览到 **\<*驱动器*\>: \Tutorial**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="8a11b-110">In the **Location** field, browse to **\<*drive*\>:\Tutorial**, and then click **OK**.</span></span> <span data-ttu-id="8a11b-111">解决方案资源管理器将 WSClient 添加到树中，并显示 Program.cs 文件。</span><span class="sxs-lookup"><span data-stu-id="8a11b-111">Solution Explorer adds WSClient to the tree, and the Program.cs file appears.</span></span>  
   
-4. <span data-ttu-id="c9919-112">在解决方案资源管理器中右键单击**WSClient**，然后单击**添加 Web 引用**。</span><span class="sxs-lookup"><span data-stu-id="c9919-112">In Solution Explorer, right-click **WSClient**, and then click **Add Web Reference**.</span></span>  
+4. <span data-ttu-id="8a11b-112">在解决方案资源管理器中右键单击**WSClient**，然后单击**添加 Web 引用**。</span><span class="sxs-lookup"><span data-stu-id="8a11b-112">In Solution Explorer, right-click **WSClient**, and then click **Add Web Reference**.</span></span>  
   
-5. <span data-ttu-id="c9919-113">在添加 Web 引用对话框中，单击**在本地计算机上的 Web 服务**。</span><span class="sxs-lookup"><span data-stu-id="c9919-113">In the Add Web Reference dialog box, click **Web services on the local machine**.</span></span> <span data-ttu-id="c9919-114">在本地计算机搜索可用的 Web 服务，然后将其显示在列表中。</span><span class="sxs-lookup"><span data-stu-id="c9919-114">The local computer searches for available Web services, and then displays them in a list.</span></span>  
+5. <span data-ttu-id="8a11b-113">在添加 Web 引用对话框中，单击**在本地计算机上的 Web 服务**。</span><span class="sxs-lookup"><span data-stu-id="8a11b-113">In the Add Web Reference dialog box, click **Web services on the local machine**.</span></span> <span data-ttu-id="8a11b-114">在本地计算机搜索可用的 Web 服务，然后将其显示在列表中。</span><span class="sxs-lookup"><span data-stu-id="8a11b-114">The local computer searches for available Web services, and then displays them in a list.</span></span>  
   
-6. <span data-ttu-id="c9919-115">在本地计算机上的 Web 服务列表中，单击**BTAHL7_Project_Doorbell_Orchestration_SOAPReceivePort**，单击**Operation_1**，然后单击**添加引用**.</span><span class="sxs-lookup"><span data-stu-id="c9919-115">In the list of Web Services on the Local Machine, click **BTAHL7_Project_Doorbell_Orchestration_SOAPReceivePort**, click **Operation_1**, and then click **Add Reference**.</span></span>  
+6. <span data-ttu-id="8a11b-115">在本地计算机上的 Web 服务列表中，单击**BTAHL7_Project_Doorbell_Orchestration_SOAPReceivePort**，单击**Operation_1**，然后单击**添加引用**.</span><span class="sxs-lookup"><span data-stu-id="8a11b-115">In the list of Web Services on the Local Machine, click **BTAHL7_Project_Doorbell_Orchestration_SOAPReceivePort**, click **Operation_1**, and then click **Add Reference**.</span></span>  
   
-7. <span data-ttu-id="c9919-116">双击 Program.cs。</span><span class="sxs-lookup"><span data-stu-id="c9919-116">Double-click Program.cs.</span></span>  
+7. <span data-ttu-id="8a11b-116">双击 Program.cs。</span><span class="sxs-lookup"><span data-stu-id="8a11b-116">Double-click Program.cs.</span></span>  
   
-8. <span data-ttu-id="c9919-117">将以下代码复制并将其粘贴到 Program.cs 窗口中：</span><span class="sxs-lookup"><span data-stu-id="c9919-117">Copy the following code and then paste it into the Program.cs window:</span></span>  
+8. <span data-ttu-id="8a11b-117">将以下代码复制并将其粘贴到 Program.cs 窗口中：</span><span class="sxs-lookup"><span data-stu-id="8a11b-117">Copy the following code and then paste it into the Program.cs window:</span></span>  
   
    ```  
    using System;  
@@ -77,9 +77,9 @@ wsclient john henry smith 123456789
    }  
    ```  
   
-9. <span data-ttu-id="c9919-118">在解决方案资源管理器中右键单击**WSClient**，然后单击**生成**。</span><span class="sxs-lookup"><span data-stu-id="c9919-118">In Solution Explorer, right-click **WSClient**, and then click **Build**.</span></span> <span data-ttu-id="c9919-119">确保在输出窗口中显示一条成功消息。</span><span class="sxs-lookup"><span data-stu-id="c9919-119">Ensure that a success message appears in the output window.</span></span> <span data-ttu-id="c9919-120">如果不显示任何成功消息，进行故障排除**WSClient**。</span><span class="sxs-lookup"><span data-stu-id="c9919-120">If no success message appears, troubleshoot **WSClient**.</span></span> [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]<span data-ttu-id="c9919-121"> 将可执行文件为 WSClient.exe，一个副本放到\<*驱动器*\>: \Tutorial\WSClient\bin\Debug 文件夹。</span><span class="sxs-lookup"><span data-stu-id="c9919-121"> places a copy of the executable, WSClient.exe, into the \<*drive*\>:\Tutorial\WSClient\bin\Debug folder.</span></span>  
+9. <span data-ttu-id="8a11b-118">在解决方案资源管理器中右键单击**WSClient**，然后单击**生成**。</span><span class="sxs-lookup"><span data-stu-id="8a11b-118">In Solution Explorer, right-click **WSClient**, and then click **Build**.</span></span> <span data-ttu-id="8a11b-119">确保在输出窗口中显示一条成功消息。</span><span class="sxs-lookup"><span data-stu-id="8a11b-119">Ensure that a success message appears in the output window.</span></span> <span data-ttu-id="8a11b-120">如果不显示任何成功消息，进行故障排除**WSClient**。</span><span class="sxs-lookup"><span data-stu-id="8a11b-120">If no success message appears, troubleshoot **WSClient**.</span></span> [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] <span data-ttu-id="8a11b-121">将可执行文件为 WSClient.exe，一个副本放到\<*驱动器*\>: \Tutorial\WSClient\bin\Debug 文件夹。</span><span class="sxs-lookup"><span data-stu-id="8a11b-121">places a copy of the executable, WSClient.exe, into the \<*drive*\>:\Tutorial\WSClient\bin\Debug folder.</span></span>  
   
-   <span data-ttu-id="c9919-122">请继续执行[步骤 18： 测试新消息充实解决方案](../../adapters-and-accelerators/accelerator-hl7/step-18-test-your-new-message-enrichment-solution.md)。</span><span class="sxs-lookup"><span data-stu-id="c9919-122">Proceed to [Step 18: Test Your New Message Enrichment Solution](../../adapters-and-accelerators/accelerator-hl7/step-18-test-your-new-message-enrichment-solution.md).</span></span>  
+   <span data-ttu-id="8a11b-122">请继续执行[步骤 18:测试新消息充实解决方案](../../adapters-and-accelerators/accelerator-hl7/step-18-test-your-new-message-enrichment-solution.md)。</span><span class="sxs-lookup"><span data-stu-id="8a11b-122">Proceed to [Step 18: Test Your New Message Enrichment Solution](../../adapters-and-accelerators/accelerator-hl7/step-18-test-your-new-message-enrichment-solution.md).</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="c9919-123">请参阅</span><span class="sxs-lookup"><span data-stu-id="c9919-123">See Also</span></span>  
- [<span data-ttu-id="c9919-124">消息充实教程</span><span class="sxs-lookup"><span data-stu-id="c9919-124">Message Enrichment Tutorial</span></span>](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)
+## <a name="see-also"></a><span data-ttu-id="8a11b-123">请参阅</span><span class="sxs-lookup"><span data-stu-id="8a11b-123">See Also</span></span>  
+ [<span data-ttu-id="8a11b-124">消息充实教程</span><span class="sxs-lookup"><span data-stu-id="8a11b-124">Message Enrichment Tutorial</span></span>](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)
