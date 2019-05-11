@@ -1,5 +1,5 @@
 ---
-title: 生成并运行业务流程 |Microsoft 文档
+title: 生成和运行业务流程 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,25 +16,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 09ec37d743dae55e9b07789e754cb8eebae2b0d1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 63470ccf64de33d138d156ec1c18b32394091ca9
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230717"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530448"
 ---
-# <a name="building-and-running-orchestrations"></a><span data-ttu-id="e92f6-102">生成并运行业务流程</span><span class="sxs-lookup"><span data-stu-id="e92f6-102">Building and Running Orchestrations</span></span>
-<span data-ttu-id="e92f6-103">设计业务流程之后，您可以对其进行编译和运行，以测试该业务流程是否完整和正确。</span><span class="sxs-lookup"><span data-stu-id="e92f6-103">After you have designed your orchestration, you can compile and run it to test it for completeness and correctness.</span></span>  
+# <a name="building-and-running-orchestrations"></a><span data-ttu-id="9469b-102">生成和运行业务流程</span><span class="sxs-lookup"><span data-stu-id="9469b-102">Building and Running Orchestrations</span></span>
+<span data-ttu-id="9469b-103">设计您的业务流程后，可以编译并运行它，以对其进行测试的完整性和正确性。</span><span class="sxs-lookup"><span data-stu-id="9469b-103">After you have designed your orchestration, you can compile and run it to test it for completeness and correctness.</span></span>  
   
- <span data-ttu-id="e92f6-104">如果在编译该业务流程时没有出现错误，您就可以在测试环境中对其进行部署，然后进行任何必要的修改，最终将其部署为在生产环境中运行。</span><span class="sxs-lookup"><span data-stu-id="e92f6-104">Once your orchestration has compiled without errors, you can deploy it in a test environment before making any necessary modifications and eventually deploying it to run in a production environment.</span></span>  
+ <span data-ttu-id="9469b-104">您的业务流程具有编译后未出现错误，您可以将其部署在测试环境中之前进行任何必要的修改并最终将其在生产环境中运行部署。</span><span class="sxs-lookup"><span data-stu-id="9469b-104">Once your orchestration has compiled without errors, you can deploy it in a test environment before making any necessary modifications and eventually deploying it to run in a production environment.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="e92f6-105">本节内容</span><span class="sxs-lookup"><span data-stu-id="e92f6-105">In This Section</span></span>  
- [<span data-ttu-id="e92f6-106">如何构建业务流程</span><span class="sxs-lookup"><span data-stu-id="e92f6-106">How to Build Orchestrations</span></span>](../core/how-to-build-orchestrations.md)  
+## <a name="in-this-section"></a><span data-ttu-id="9469b-105">本节内容</span><span class="sxs-lookup"><span data-stu-id="9469b-105">In This Section</span></span>  
+ [<span data-ttu-id="9469b-106">如何生成业务流程</span><span class="sxs-lookup"><span data-stu-id="9469b-106">How to Build Orchestrations</span></span>](../core/how-to-build-orchestrations.md)  
   
- [<span data-ttu-id="e92f6-107">生成任务列表中的错误</span><span class="sxs-lookup"><span data-stu-id="e92f6-107">Build Errors in the Task List</span></span>](../core/build-errors-in-the-task-list.md)  
+ [<span data-ttu-id="9469b-107">在任务列表中生成错误</span><span class="sxs-lookup"><span data-stu-id="9469b-107">Build Errors in the Task List</span></span>](../core/build-errors-in-the-task-list.md)  
   
- [<span data-ttu-id="e92f6-108">运行业务流程</span><span class="sxs-lookup"><span data-stu-id="e92f6-108">Running Orchestrations</span></span>](../core/running-orchestrations3.md)  
+ [<span data-ttu-id="9469b-108">运行业务流程</span><span class="sxs-lookup"><span data-stu-id="9469b-108">Running Orchestrations</span></span>](../core/running-orchestrations3.md)  
   
-## <a name="see-also"></a><span data-ttu-id="e92f6-109">另请参阅</span><span class="sxs-lookup"><span data-stu-id="e92f6-109">See Also</span></span>  
- <span data-ttu-id="e92f6-110">[调试业务流程](../core/debugging-orchestrations.md) </span><span class="sxs-lookup"><span data-stu-id="e92f6-110">[Debugging Orchestrations](../core/debugging-orchestrations.md) </span></span>  
- [<span data-ttu-id="e92f6-111">更新 BizTalk 应用程序</span><span class="sxs-lookup"><span data-stu-id="e92f6-111">Updating BizTalk Applications</span></span>](../core/updating-biztalk-applications.md)
+## <a name="see-also"></a><span data-ttu-id="9469b-109">请参阅</span><span class="sxs-lookup"><span data-stu-id="9469b-109">See Also</span></span>  
+ <span data-ttu-id="9469b-110">[调试业务流程](../core/debugging-orchestrations.md) </span><span class="sxs-lookup"><span data-stu-id="9469b-110">[Debugging Orchestrations](../core/debugging-orchestrations.md) </span></span>  
+ [<span data-ttu-id="9469b-111">更新 BizTalk 应用程序</span><span class="sxs-lookup"><span data-stu-id="9469b-111">Updating BizTalk Applications</span></span>](../core/updating-biztalk-applications.md)

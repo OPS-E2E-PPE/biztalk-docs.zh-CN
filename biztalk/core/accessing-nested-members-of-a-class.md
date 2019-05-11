@@ -1,5 +1,5 @@
 ---
-title: 访问类的嵌套的成员 |Microsoft 文档
+title: 访问类的嵌套的成员 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 110244f9f007a417450b5bbfdce831d5f255cfe5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a3cff7c701a7e2c98d5e26bebc3e8e1b63086733
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22224517"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65361964"
 ---
-# <a name="accessing-nested-members-of-a-class"></a><span data-ttu-id="480ff-102">嵌套类成员访问</span><span class="sxs-lookup"><span data-stu-id="480ff-102">Accessing Nested Members of a Class</span></span>
-<span data-ttu-id="480ff-103">规则引擎允许您在规则中使用对象的嵌套属性或方法。</span><span class="sxs-lookup"><span data-stu-id="480ff-103">The rule engine allows you to use a nested property or method of an object in a rule.</span></span> <span data-ttu-id="480ff-104">例如，假定具有名为 AClass 的类，该类具有名为 B、类型为 BClass 的属性，BClass 又具有名为 C 的字段。规则引擎允许您使用 A.B.C 语法生成访问字段 C 的规则。</span><span class="sxs-lookup"><span data-stu-id="480ff-104">For example, suppose you have a class named AClass, which has a property named B of type BClass, which has a field named C. The rule engine allows you to build rules accessing the field C by using the A.B.C syntax.</span></span> <span data-ttu-id="480ff-105">不过，只有在以编程方式生成规则时才能使用此语法，使用业务规则编辑器工具时不能使用此语法。</span><span class="sxs-lookup"><span data-stu-id="480ff-105">However, it is possible to use this syntax only when building the rules programmatically, not when using the Business Rule Composer tool.</span></span> <span data-ttu-id="480ff-106">下面的示例代码演示如何使用某个对象的属性，而该对象又是另一个对象的属性：</span><span class="sxs-lookup"><span data-stu-id="480ff-106">The following sample code demonstrates how to use a property of an object, which is a property of another object:</span></span>  
+# <a name="accessing-nested-members-of-a-class"></a><span data-ttu-id="5cd54-102">类的嵌套的成员访问</span><span class="sxs-lookup"><span data-stu-id="5cd54-102">Accessing Nested Members of a Class</span></span>
+<span data-ttu-id="5cd54-103">规则引擎允许您在规则中使用对象的嵌套属性或方法。</span><span class="sxs-lookup"><span data-stu-id="5cd54-103">The rule engine allows you to use a nested property or method of an object in a rule.</span></span> <span data-ttu-id="5cd54-104">例如，假定具有名为 AClass 的类，该类具有名为 B、类型为 BClass 的属性，BClass 又具有名为 C 的字段。规则引擎允许您使用 A.B.C 语法生成访问字段 C 的规则。</span><span class="sxs-lookup"><span data-stu-id="5cd54-104">For example, suppose you have a class named AClass, which has a property named B of type BClass, which has a field named C. The rule engine allows you to build rules accessing the field C by using the A.B.C syntax.</span></span> <span data-ttu-id="5cd54-105">不过，只有在以编程方式生成规则时才能使用此语法，使用业务规则编辑器工具时不能使用此语法。</span><span class="sxs-lookup"><span data-stu-id="5cd54-105">However, it is possible to use this syntax only when building the rules programmatically, not when using the Business Rule Composer tool.</span></span> <span data-ttu-id="5cd54-106">下面的示例代码演示如何使用某个对象的属性，而该对象又是另一个对象的属性：</span><span class="sxs-lookup"><span data-stu-id="5cd54-106">The following sample code demonstrates how to use a property of an object, which is a property of another object:</span></span>  
   
 ```  
 // Create the condition list IF 1 == 1  

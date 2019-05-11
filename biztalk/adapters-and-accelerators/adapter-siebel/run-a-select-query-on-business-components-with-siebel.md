@@ -1,5 +1,5 @@
 ---
-title: 在带有 Siebel 业务组件上运行 SELECT 查询 |Microsoft 文档
+title: 使用 Siebel 业务组件上运行 SELECT 查询 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,18 +15,18 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 92b9bd5645579bb66a338c05802c5016214c9b0b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bae686ace4f7feea8b5084f7d4844df61ea79807
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22221957"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371128"
 ---
-# <a name="run-a-select-query-on-business-components-with-siebel"></a><span data-ttu-id="95ba6-102">在带有 Siebel 业务组件上运行 SELECT 查询</span><span class="sxs-lookup"><span data-stu-id="95ba6-102">Run a SELECT Query on Business Components with Siebel</span></span>
-<span data-ttu-id="95ba6-103">本部分演示如何从使用 Siebel 业务组件中选择数据[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="95ba6-103">This section demonstrates how to select data from a Siebel business component using the [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)].</span></span>  
+# <a name="run-a-select-query-on-business-components-with-siebel"></a><span data-ttu-id="47ec2-102">使用 Siebel 业务组件上运行 SELECT 查询</span><span class="sxs-lookup"><span data-stu-id="47ec2-102">Run a SELECT Query on Business Components with Siebel</span></span>
+<span data-ttu-id="47ec2-103">本部分演示如何从使用 Siebel 业务组件中选择数据[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="47ec2-103">This section demonstrates how to select data from a Siebel business component using the [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)].</span></span>  
   
-## <a name="selecting-data-from-a-siebel-business-component"></a><span data-ttu-id="95ba6-104">从 Siebel 在业务组件中选择数据</span><span class="sxs-lookup"><span data-stu-id="95ba6-104">Selecting Data from a Siebel Business Component</span></span>  
- <span data-ttu-id="95ba6-105">本部分演示如何从 Siebel 存储库中的"帐户"业务组件中选择数据。</span><span class="sxs-lookup"><span data-stu-id="95ba6-105">This section demonstrates how to select data from the "Account" business component in the Siebel repository.</span></span>  
+## <a name="selecting-data-from-a-siebel-business-component"></a><span data-ttu-id="47ec2-104">选择 Siebel 业务组件中的数据</span><span class="sxs-lookup"><span data-stu-id="47ec2-104">Selecting Data from a Siebel Business Component</span></span>  
+ <span data-ttu-id="47ec2-105">本部分演示如何从 Siebel 存储库中的"帐户"业务组件中选择数据。</span><span class="sxs-lookup"><span data-stu-id="47ec2-105">This section demonstrates how to select data from the "Account" business component in the Siebel repository.</span></span>  
   
 ```  
 using System;  
@@ -76,6 +76,6 @@ namespace SiebelADO
 }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="95ba6-106">另请参阅</span><span class="sxs-lookup"><span data-stu-id="95ba6-106">See Also</span></span>  
- <span data-ttu-id="95ba6-107">[.NET Framework 数据提供程序用于 Siebel eBusiness Applications](../../adapters-and-accelerators/adapter-siebel/use-the-net-framework-data-provider-for-siebel-ebusiness-applications.md) </span><span class="sxs-lookup"><span data-stu-id="95ba6-107">[Use the .NET Framework Data Provider for Siebel eBusiness Applications](../../adapters-and-accelerators/adapter-siebel/use-the-net-framework-data-provider-for-siebel-ebusiness-applications.md) </span></span>  
- [<span data-ttu-id="95ba6-108">使用 Siebel 运行业务服务上的执行操作</span><span class="sxs-lookup"><span data-stu-id="95ba6-108">Run an EXECUTE Operation on Business Services with Siebel</span></span>](../../adapters-and-accelerators/adapter-siebel/run-an-execute-operation-on-business-services-with-siebel.md)
+## <a name="see-also"></a><span data-ttu-id="47ec2-106">请参阅</span><span class="sxs-lookup"><span data-stu-id="47ec2-106">See Also</span></span>  
+ <span data-ttu-id="47ec2-107">[用于 Siebel eBusiness 应用程序使用.NET Framework 数据提供程序](../../adapters-and-accelerators/adapter-siebel/use-the-net-framework-data-provider-for-siebel-ebusiness-applications.md) </span><span class="sxs-lookup"><span data-stu-id="47ec2-107">[Use the .NET Framework Data Provider for Siebel eBusiness Applications](../../adapters-and-accelerators/adapter-siebel/use-the-net-framework-data-provider-for-siebel-ebusiness-applications.md) </span></span>  
+ [<span data-ttu-id="47ec2-108">运行与 Siebel 业务服务上的执行操作</span><span class="sxs-lookup"><span data-stu-id="47ec2-108">Run an EXECUTE Operation on Business Services with Siebel</span></span>](../../adapters-and-accelerators/adapter-siebel/run-an-execute-operation-on-business-services-with-siebel.md)
