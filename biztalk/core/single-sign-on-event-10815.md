@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10815 |Microsoft Docs
+title: 单一登录：Event 10815 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eed7b5a2ff7efe8944cd1c2e48117b3e43f84718
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 22da14967d42a0a20bba7a79392e87f3a0052c35
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024411"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396121"
 ---
-# <a name="single-sign-on-event-10815"></a><span data-ttu-id="ad902-102">单一登录： 事件 10815</span><span class="sxs-lookup"><span data-stu-id="ad902-102">Single Sign-On: Event 10815</span></span>
-## <a name="details"></a><span data-ttu-id="ad902-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="ad902-103">Details</span></span>  
+# <a name="single-sign-on-event-10815"></a><span data-ttu-id="9c514-102">单一登录：事件 10815</span><span class="sxs-lookup"><span data-stu-id="9c514-102">Single Sign-On: Event 10815</span></span>
+## <a name="details"></a><span data-ttu-id="9c514-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="9c514-103">Details</span></span>  
   
 |                 |                                                            |
 |-----------------|------------------------------------------------------------|
-|  <span data-ttu-id="ad902-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="ad902-104">Product Name</span></span>   |                 <span data-ttu-id="ad902-105">企业单一登录</span><span class="sxs-lookup"><span data-stu-id="ad902-105">Enterprise Single Sign-On</span></span>                  |
-| <span data-ttu-id="ad902-106">产品版本</span><span class="sxs-lookup"><span data-stu-id="ad902-106">Product Version</span></span> | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
-|    <span data-ttu-id="ad902-107">事件 ID</span><span class="sxs-lookup"><span data-stu-id="ad902-107">Event ID</span></span>     |                           <span data-ttu-id="ad902-108">10815</span><span class="sxs-lookup"><span data-stu-id="ad902-108">10815</span></span>                            |
-|  <span data-ttu-id="ad902-109">事件源</span><span class="sxs-lookup"><span data-stu-id="ad902-109">Event Source</span></span>   |                           <span data-ttu-id="ad902-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="ad902-110">ENTSSO</span></span>                           |
-|    <span data-ttu-id="ad902-111">组件</span><span class="sxs-lookup"><span data-stu-id="ad902-111">Component</span></span>    |                            <span data-ttu-id="ad902-112">N/A</span><span class="sxs-lookup"><span data-stu-id="ad902-112">N/A</span></span>                             |
-|  <span data-ttu-id="ad902-113">符号名称</span><span class="sxs-lookup"><span data-stu-id="ad902-113">Symbolic Name</span></span>  |                   <span data-ttu-id="ad902-114">ENTSSO_E_WRONG_SECRET</span><span class="sxs-lookup"><span data-stu-id="ad902-114">ENTSSO_E_WRONG_SECRET</span></span>                    |
-|  <span data-ttu-id="ad902-115">消息正文</span><span class="sxs-lookup"><span data-stu-id="ad902-115">Message Text</span></span>   |                  <span data-ttu-id="ad902-116">主密钥不正确。</span><span class="sxs-lookup"><span data-stu-id="ad902-116">Incorrect master secret.</span></span>                  |
+|  <span data-ttu-id="9c514-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="9c514-104">Product Name</span></span>   |                 <span data-ttu-id="9c514-105">企业单一登录</span><span class="sxs-lookup"><span data-stu-id="9c514-105">Enterprise Single Sign-On</span></span>                  |
+| <span data-ttu-id="9c514-106">产品版本</span><span class="sxs-lookup"><span data-stu-id="9c514-106">Product Version</span></span> | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
+|    <span data-ttu-id="9c514-107">事件 ID</span><span class="sxs-lookup"><span data-stu-id="9c514-107">Event ID</span></span>     |                           <span data-ttu-id="9c514-108">10815</span><span class="sxs-lookup"><span data-stu-id="9c514-108">10815</span></span>                            |
+|  <span data-ttu-id="9c514-109">事件源</span><span class="sxs-lookup"><span data-stu-id="9c514-109">Event Source</span></span>   |                           <span data-ttu-id="9c514-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="9c514-110">ENTSSO</span></span>                           |
+|    <span data-ttu-id="9c514-111">组件</span><span class="sxs-lookup"><span data-stu-id="9c514-111">Component</span></span>    |                            <span data-ttu-id="9c514-112">不可用</span><span class="sxs-lookup"><span data-stu-id="9c514-112">N/A</span></span>                             |
+|  <span data-ttu-id="9c514-113">符号名称</span><span class="sxs-lookup"><span data-stu-id="9c514-113">Symbolic Name</span></span>  |                   <span data-ttu-id="9c514-114">ENTSSO_E_WRONG_SECRET</span><span class="sxs-lookup"><span data-stu-id="9c514-114">ENTSSO_E_WRONG_SECRET</span></span>                    |
+|  <span data-ttu-id="9c514-115">消息正文</span><span class="sxs-lookup"><span data-stu-id="9c514-115">Message Text</span></span>   |                  <span data-ttu-id="9c514-116">主密钥不正确。</span><span class="sxs-lookup"><span data-stu-id="9c514-116">Incorrect master secret.</span></span>                  |
   
-## <a name="explanation"></a><span data-ttu-id="ad902-117">解释</span><span class="sxs-lookup"><span data-stu-id="ad902-117">Explanation</span></span>  
- <span data-ttu-id="ad902-118">在尝试还原主密钥时，您可能指定了错误文件。</span><span class="sxs-lookup"><span data-stu-id="ad902-118">In attempting to restore the master secret, you may have specified the wrong file.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="9c514-117">解释</span><span class="sxs-lookup"><span data-stu-id="9c514-117">Explanation</span></span>  
+ <span data-ttu-id="9c514-118">在尝试还原主密钥，你可能已指定错误的文件。</span><span class="sxs-lookup"><span data-stu-id="9c514-118">In attempting to restore the master secret, you may have specified the wrong file.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="ad902-119">用户操作</span><span class="sxs-lookup"><span data-stu-id="ad902-119">User Action</span></span>  
- <span data-ttu-id="ad902-120">请再次检查文件，并确保是正确的文件。</span><span class="sxs-lookup"><span data-stu-id="ad902-120">Check the file again and make sure it is the right one.</span></span>
+## <a name="user-action"></a><span data-ttu-id="9c514-119">用户操作</span><span class="sxs-lookup"><span data-stu-id="9c514-119">User Action</span></span>  
+ <span data-ttu-id="9c514-120">再次检查该文件，并确保它是正确的。</span><span class="sxs-lookup"><span data-stu-id="9c514-120">Check the file again and make sure it is the right one.</span></span>

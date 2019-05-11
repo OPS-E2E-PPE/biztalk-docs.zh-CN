@@ -1,5 +1,5 @@
 ---
-title: 配置 EDI 确认 |Microsoft 文档
+title: 配置 EDI 确认 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7bdd58a9565d8670ec0ebf66061b9fcaaa14858c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 12461712dbba99b2cbaa640fbfb05afe8637155d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232029"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391319"
 ---
-# <a name="configuring-edi-acknowledgments"></a><span data-ttu-id="eb0fd-102">配置 EDI 确认</span><span class="sxs-lookup"><span data-stu-id="eb0fd-102">Configuring EDI Acknowledgments</span></span>
-<span data-ttu-id="eb0fd-103">本部分中的主题介绍如何启用 EDI 确认的发送和接收功能。</span><span class="sxs-lookup"><span data-stu-id="eb0fd-103">The topics in this section describe how to enable sending and receiving of EDI acknowledgments.</span></span>  
+# <a name="configuring-edi-acknowledgments"></a><span data-ttu-id="0e826-102">配置 EDI 确认</span><span class="sxs-lookup"><span data-stu-id="0e826-102">Configuring EDI Acknowledgments</span></span>
+<span data-ttu-id="0e826-103">本部分中的主题介绍如何启用 EDI 确认的发送和接收功能。</span><span class="sxs-lookup"><span data-stu-id="0e826-103">The topics in this section describe how to enable sending and receiving of EDI acknowledgments.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="eb0fd-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="eb0fd-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="0e826-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="0e826-104">In This Section</span></span>  
   
--   [<span data-ttu-id="eb0fd-105">配置发送和接收的 EDI 确认</span><span class="sxs-lookup"><span data-stu-id="eb0fd-105">Configuring the Sending and Receiving of EDI Acknowledgments</span></span>](../core/configuring-the-sending-and-receiving-of-edi-acknowledgments.md)  
+-   [<span data-ttu-id="0e826-105">配置 EDI 确认的发送和接收</span><span class="sxs-lookup"><span data-stu-id="0e826-105">Configuring the Sending and Receiving of EDI Acknowledgments</span></span>](../core/configuring-the-sending-and-receiving-of-edi-acknowledgments.md)  
   
--   [<span data-ttu-id="eb0fd-106">配置 EDI 确认接收</span><span class="sxs-lookup"><span data-stu-id="eb0fd-106">Configuring the Receiving of EDI Acknowledgments</span></span>](../core/configuring-the-receiving-of-edi-acknowledgments.md)  
+-   [<span data-ttu-id="0e826-106">配置 EDI 确认的接收</span><span class="sxs-lookup"><span data-stu-id="0e826-106">Configuring the Receiving of EDI Acknowledgments</span></span>](../core/configuring-the-receiving-of-edi-acknowledgments.md)  
   
-## <a name="see-also"></a><span data-ttu-id="eb0fd-107">另请参阅</span><span class="sxs-lookup"><span data-stu-id="eb0fd-107">See Also</span></span>  
- [<span data-ttu-id="eb0fd-108">开发和配置 BizTalk Server EDI 解决方案</span><span class="sxs-lookup"><span data-stu-id="eb0fd-108">Developing and Configuring BizTalk Server EDI Solutions</span></span>](../core/developing-and-configuring-biztalk-server-edi-solutions.md)
+## <a name="see-also"></a><span data-ttu-id="0e826-107">请参阅</span><span class="sxs-lookup"><span data-stu-id="0e826-107">See Also</span></span>  
+ [<span data-ttu-id="0e826-108">开发和配置 BizTalk Server EDI 解决方案</span><span class="sxs-lookup"><span data-stu-id="0e826-108">Developing and Configuring BizTalk Server EDI Solutions</span></span>](../core/developing-and-configuring-biztalk-server-edi-solutions.md)

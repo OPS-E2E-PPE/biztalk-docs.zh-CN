@@ -17,47 +17,47 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d5780be22259fcd118ab70a0bc80174b53a9f27
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: b8968a30f9e78947cee20ddc10914413041fbac9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25975795"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395938"
 ---
-# <a name="what-is-a-bam-definition-schema"></a><span data-ttu-id="a418c-103">什么是 BAM 定义架构？</span><span class="sxs-lookup"><span data-stu-id="a418c-103">What Is a BAM Definition Schema?</span></span>
-<span data-ttu-id="a418c-104">BAM 定义架构定义由业务分析员创建的观察模型的结构。</span><span class="sxs-lookup"><span data-stu-id="a418c-104">The BAM definition schema defines the structure of the observation model created by the business analyst.</span></span>  
+# <a name="what-is-a-bam-definition-schema"></a><span data-ttu-id="65945-103">什么是 BAM 定义架构？</span><span class="sxs-lookup"><span data-stu-id="65945-103">What Is a BAM Definition Schema?</span></span>
+<span data-ttu-id="65945-104">BAM 定义架构定义由业务分析员创建的观察模型的结构。</span><span class="sxs-lookup"><span data-stu-id="65945-104">The BAM definition schema defines the structure of the observation model created by the business analyst.</span></span>  
   
- <span data-ttu-id="a418c-105">该架构定义 BAM 定义 XML 文档的结构，其中包括该文档的元素和子元素。</span><span class="sxs-lookup"><span data-stu-id="a418c-105">The schema defines the structure of the BAM definition XML document including the document's elements and subelements.</span></span> <span data-ttu-id="a418c-106">例如，根元素为 BAM 定义，在 BAM 定义内有以下元素：</span><span class="sxs-lookup"><span data-stu-id="a418c-106">For example, the root element is the BAM definition, and inside the BAM definition there are the following elements:</span></span>  
+ <span data-ttu-id="65945-105">架构定义文档的元素和子元素包括 BAM 定义 XML 文档的结构。</span><span class="sxs-lookup"><span data-stu-id="65945-105">The schema defines the structure of the BAM definition XML document including the document's elements and subelements.</span></span> <span data-ttu-id="65945-106">例如，根元素是 BAM 定义，并在 BAM 定义有以下元素：</span><span class="sxs-lookup"><span data-stu-id="65945-106">For example, the root element is the BAM definition, and inside the BAM definition there are the following elements:</span></span>  
   
--   <span data-ttu-id="a418c-107">活动</span><span class="sxs-lookup"><span data-stu-id="a418c-107">Activities</span></span>  
+-   <span data-ttu-id="65945-107">活动</span><span class="sxs-lookup"><span data-stu-id="65945-107">Activities</span></span>  
   
--   <span data-ttu-id="a418c-108">视图</span><span class="sxs-lookup"><span data-stu-id="a418c-108">Views</span></span>  
+-   <span data-ttu-id="65945-108">Views</span><span class="sxs-lookup"><span data-stu-id="65945-108">Views</span></span>  
   
--   <span data-ttu-id="a418c-109">多维数据集</span><span class="sxs-lookup"><span data-stu-id="a418c-109">Cubes</span></span>  
+-   <span data-ttu-id="65945-109">多维数据集</span><span class="sxs-lookup"><span data-stu-id="65945-109">Cubes</span></span>  
   
--   <span data-ttu-id="a418c-110">警报</span><span class="sxs-lookup"><span data-stu-id="a418c-110">Alerts</span></span>  
-  
-> [!NOTE]
->  <span data-ttu-id="a418c-111">如果 BAM 定义 XML 包含两个视图和用户只具有一个视图，请在调用权限**GetViewDefinition**，用户重新获取这两个视图的定义。</span><span class="sxs-lookup"><span data-stu-id="a418c-111">If the BAM definition XML contains two views and the user only has permission for one of the views, on making a call to **GetViewDefinition**, the user gets back the definition of both views.</span></span>  
-  
- <span data-ttu-id="a418c-112">该架构定义文档约束。</span><span class="sxs-lookup"><span data-stu-id="a418c-112">The schema defines the document constraints.</span></span> <span data-ttu-id="a418c-113">例如，这些约束规定一些元素只能引用其他某些特定元素。</span><span class="sxs-lookup"><span data-stu-id="a418c-113">The constraints dictate, for example, that some elements can only reference certain other elements.</span></span>  
-  
- <span data-ttu-id="a418c-114">你可以创建包含 BAM 定义 （此架构的实例） 的 XML 文件，使用任何文本编辑器或通过使用 BAM 的外接程序 Excel 创建一个工作表可导出到 XML 文件中，通过使用导出到 XML 功能 BAM 外接程序。</span><span class="sxs-lookup"><span data-stu-id="a418c-114">You can create an XML file containing the BAM definitions (instances of this schema) with any text editor or by using BAM Add-in for Excel to create a worksheet that can be exported into an XML file by using the BAM add-in export to XML feature .</span></span>  
-  
- <span data-ttu-id="a418c-115">在定义 BAM 活动和视图后，您不必手动导出 XML 文件，因为 BAM 管理实用程序 (bm.exe) 可以读取此电子表格，并从中获取 XML，以便自动部署您的基础结构。</span><span class="sxs-lookup"><span data-stu-id="a418c-115">Once you define the BAM activities and views, you do not have to manually export the XML file, since the BAM Management utility (bm.exe) can read this spreadsheet and get the XML from it to deploy your infrastructure automatically.</span></span> <span data-ttu-id="a418c-116">结果是名为电子表格的另一个副本\<工作薄名称\>_Livedata.xls。</span><span class="sxs-lookup"><span data-stu-id="a418c-116">The result is another copy of the spreadsheet named \<your workbook name\>_Livedata.xls.</span></span> <span data-ttu-id="a418c-117">可以使用此新电子表格连接到实时数据源并在数据透视表报告中查看聚合。</span><span class="sxs-lookup"><span data-stu-id="a418c-117">You can use this new spreadsheet to connect to your live data source and view the aggregations in PivotTable reports.</span></span>  
+-   <span data-ttu-id="65945-110">警报</span><span class="sxs-lookup"><span data-stu-id="65945-110">Alerts</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="a418c-118">如果你手动导出通过 BAM 菜单项顶部的电子表格将 XML 文件，并使用 BAM 管理实用程序来部署导出的 XML 文件而不是 Microsoft Excel 文件，你无法查看您使用的 Office 工具的实时数据。</span><span class="sxs-lookup"><span data-stu-id="a418c-118">If you manually export your XML file through the BAM menu item at the top of the spreadsheet and use the BAM Management utility to deploy the exported XML file and not the Microsoft Excel file, then you cannot view your live data using the Office tools.</span></span>  
+>  <span data-ttu-id="65945-111">如果 BAM 定义 XML 包含两个视图，并且用户只具有一个视图，请在调用权限**GetViewDefinition**，用户将获取这两个视图定义。</span><span class="sxs-lookup"><span data-stu-id="65945-111">If the BAM definition XML contains two views and the user only has permission for one of the views, on making a call to **GetViewDefinition**, the user gets back the definition of both views.</span></span>  
+  
+ <span data-ttu-id="65945-112">该架构定义文档约束。</span><span class="sxs-lookup"><span data-stu-id="65945-112">The schema defines the document constraints.</span></span> <span data-ttu-id="65945-113">约束规定，例如，一些元素只能引用其他某些特定元素。</span><span class="sxs-lookup"><span data-stu-id="65945-113">The constraints dictate, for example, that some elements can only reference certain other elements.</span></span>  
+  
+ <span data-ttu-id="65945-114">使用任何文本编辑器或通过使用 BAM 外接程序 excel 创建的工作表中使用的 BAM 外接程序导出到 XML 功能导出到 XML 文件，可以创建包含 BAM 定义 （此架构的实例） 的 XML 文件。</span><span class="sxs-lookup"><span data-stu-id="65945-114">You can create an XML file containing the BAM definitions (instances of this schema) with any text editor or by using BAM Add-in for Excel to create a worksheet that can be exported into an XML file by using the BAM add-in export to XML feature .</span></span>  
+  
+ <span data-ttu-id="65945-115">一旦定义 BAM 活动和视图，您无需手动导出 XML 文件中，因为 BAM 管理实用程序 (bm.exe) 可以读取此电子表格，并从中获取 XML，它将自动部署您的基础结构。</span><span class="sxs-lookup"><span data-stu-id="65945-115">Once you define the BAM activities and views, you do not have to manually export the XML file, since the BAM Management utility (bm.exe) can read this spreadsheet and get the XML from it to deploy your infrastructure automatically.</span></span> <span data-ttu-id="65945-116">结果是名为电子表格的另一个副本\<工作簿名称\>_Livedata.xls。</span><span class="sxs-lookup"><span data-stu-id="65945-116">The result is another copy of the spreadsheet named \<your workbook name\>_Livedata.xls.</span></span> <span data-ttu-id="65945-117">此新的电子表格可用于连接到实时数据源和数据透视表中查看聚合。</span><span class="sxs-lookup"><span data-stu-id="65945-117">You can use this new spreadsheet to connect to your live data source and view the aggregations in PivotTable reports.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="a418c-119">以 XML 形式导出 BAM 定义时，无法将 BAM 定义导出至 localhost。</span><span class="sxs-lookup"><span data-stu-id="a418c-119">When you export a BAM definition as XML, you cannot export the BAM definition to localhost.</span></span> <span data-ttu-id="a418c-120">例如，尝试将 BAM 定义导出到 `\\localhost\C$\definition1.xml` 将导致错误。</span><span class="sxs-lookup"><span data-stu-id="a418c-120">For example, trying to export the BAM definition to `\\localhost\C$\definition1.xml` would result in an error.</span></span>  
+>  <span data-ttu-id="65945-118">如果你手动导出 XML 文件通过电子表格顶部的 BAM 菜单项，并使用 BAM 管理实用程序部署导出的 XML 文件而不是 Microsoft Excel 文件，则无法查看您使用的 Office 工具的实时数据。</span><span class="sxs-lookup"><span data-stu-id="65945-118">If you manually export your XML file through the BAM menu item at the top of the spreadsheet and use the BAM Management utility to deploy the exported XML file and not the Microsoft Excel file, then you cannot view your live data using the Office tools.</span></span>  
+  
+> [!NOTE]
+>  <span data-ttu-id="65945-119">以 XML 形式导出 BAM 定义时，您不能将 BAM 定义导出到 localhost。</span><span class="sxs-lookup"><span data-stu-id="65945-119">When you export a BAM definition as XML, you cannot export the BAM definition to localhost.</span></span> <span data-ttu-id="65945-120">例如，尝试导出 BAM 定义到`\\localhost\C$\definition1.xml`将导致错误。</span><span class="sxs-lookup"><span data-stu-id="65945-120">For example, trying to export the BAM definition to `\\localhost\C$\definition1.xml` would result in an error.</span></span>  
 >   
->  <span data-ttu-id="a418c-121">同样，无法从 localhost 导入 BAM 定义。</span><span class="sxs-lookup"><span data-stu-id="a418c-121">Similarly, you cannot import a BAM definition from localhost.</span></span>  
+>  <span data-ttu-id="65945-121">同样，您不能从导入 BAM 定义 localhost。</span><span class="sxs-lookup"><span data-stu-id="65945-121">Similarly, you cannot import a BAM definition from localhost.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="a418c-122">如果更改活动或视图，则需要删除 BAM 定义，然后重新部署该定义。</span><span class="sxs-lookup"><span data-stu-id="a418c-122">If you change the activities or views, you need to remove and then redeploy the BAM definition.</span></span>  
+>  <span data-ttu-id="65945-122">如果更改活动或视图，您需要删除并重新部署 BAM 定义。</span><span class="sxs-lookup"><span data-stu-id="65945-122">If you change the activities or views, you need to remove and then redeploy the BAM definition.</span></span>  
   
- <span data-ttu-id="a418c-123">以下文件为 BAM 定义架构本身：</span><span class="sxs-lookup"><span data-stu-id="a418c-123">The following file is the BAM definition schema itself:</span></span>  
+ <span data-ttu-id="65945-123">以下文件是 BAM 定义架构本身：</span><span class="sxs-lookup"><span data-stu-id="65945-123">The following file is the BAM definition schema itself:</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-16"?>  
@@ -685,9 +685,9 @@ ms.locfileid: "25975795"
 </xs:schema>  
 ```  
   
- <span data-ttu-id="a418c-124">**示例 XML**</span><span class="sxs-lookup"><span data-stu-id="a418c-124">**Example XML**</span></span>  
+ <span data-ttu-id="65945-124">**示例 XML**</span><span class="sxs-lookup"><span data-stu-id="65945-124">**Example XML**</span></span>  
   
- <span data-ttu-id="a418c-125">以下示例是符合 BAM 定义架构的 XML 文件。</span><span class="sxs-lookup"><span data-stu-id="a418c-125">The following example is an XML file that conforms to the BAM definition schema.</span></span>  
+ <span data-ttu-id="65945-125">下面的示例是符合 BAM 定义架构的 XML 文件。</span><span class="sxs-lookup"><span data-stu-id="65945-125">The following example is an XML file that conforms to the BAM definition schema.</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -924,6 +924,6 @@ ms.locfileid: "25975795"
 </BAM:BAMDefinition>  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="a418c-126">另请参阅</span><span class="sxs-lookup"><span data-stu-id="a418c-126">See Also</span></span>  
- <span data-ttu-id="a418c-127">[BAM 配置架构](../core/bam-configuration-schema.md) </span><span class="sxs-lookup"><span data-stu-id="a418c-127">[BAM Configuration Schema](../core/bam-configuration-schema.md) </span></span>  
- [<span data-ttu-id="a418c-128">BAM 动态基础结构</span><span class="sxs-lookup"><span data-stu-id="a418c-128">BAM Dynamic Infrastructure</span></span>](../core/bam-dynamic-infrastructure.md)
+## <a name="see-also"></a><span data-ttu-id="65945-126">请参阅</span><span class="sxs-lookup"><span data-stu-id="65945-126">See Also</span></span>  
+ <span data-ttu-id="65945-127">[BAM 配置架构](../core/bam-configuration-schema.md) </span><span class="sxs-lookup"><span data-stu-id="65945-127">[BAM Configuration Schema](../core/bam-configuration-schema.md) </span></span>  
+ [<span data-ttu-id="65945-128">BAM 动态基础结构</span><span class="sxs-lookup"><span data-stu-id="65945-128">BAM Dynamic Infrastructure</span></span>](../core/bam-dynamic-infrastructure.md)

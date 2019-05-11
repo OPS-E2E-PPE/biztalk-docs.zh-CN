@@ -1,5 +1,5 @@
 ---
-title: 步骤 3： 测试到 Oracle 数据库适配器已迁移的应用程序 |Microsoft Docs
+title: 步骤 3：测试到 Oracle 数据库适配器已迁移的应用程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,29 +12,29 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8cdd41227b8c51eae6a1f1d2e11f3b3b792482f4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 51a4c635e00a9c8107e62f67d4b844cb9f1d0ec2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970374"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375977"
 ---
-# <a name="step-3-test-the-migrated-application-to-oracle-database-adapter"></a><span data-ttu-id="4b92f-102">步骤 3： 测试已迁移应用程序到 Oracle 数据库适配器</span><span class="sxs-lookup"><span data-stu-id="4b92f-102">Step 3: Test the migrated application to Oracle Database adapter</span></span>
-<span data-ttu-id="4b92f-103">![第 3 部分，共 3 步](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span><span class="sxs-lookup"><span data-stu-id="4b92f-103">![Step 3 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span></span>  
+# <a name="step-3-test-the-migrated-application-to-oracle-database-adapter"></a><span data-ttu-id="b1e36-102">步骤 3：测试到 Oracle 数据库适配器已迁移的应用程序</span><span class="sxs-lookup"><span data-stu-id="b1e36-102">Step 3: Test the migrated application to Oracle Database adapter</span></span>
+<span data-ttu-id="b1e36-103">![第 3 部分，共 3 步](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span><span class="sxs-lookup"><span data-stu-id="b1e36-103">![Step 3 of 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")</span></span>  
   
- <span data-ttu-id="4b92f-104">**完成时间：** 5 分钟</span><span class="sxs-lookup"><span data-stu-id="4b92f-104">**Time to complete:** 5 minutes</span></span>  
+ <span data-ttu-id="b1e36-104">**若要完成的时间：** 5 分钟</span><span class="sxs-lookup"><span data-stu-id="b1e36-104">**Time to complete:** 5 minutes</span></span>  
   
- <span data-ttu-id="4b92f-105">**目标：** 在此步骤中，您将通过执行插入操作 SCOTT 测试已迁移应用程序。CUSTOMER 表。</span><span class="sxs-lookup"><span data-stu-id="4b92f-105">**Objective:** In this step, you will test the migrated application by performing an Insert operation on the SCOTT.CUSTOMER table.</span></span> <span data-ttu-id="4b92f-106">若要执行此操作，则删除与使用 vPrev Oracle 数据库适配器生成的架构一致的请求消息。</span><span class="sxs-lookup"><span data-stu-id="4b92f-106">To do this, you drop a request message that conforms to the schema generated using the vPrev Oracle Database adapter.</span></span>  
+ <span data-ttu-id="b1e36-105">**目标：** 在此步骤中，将通过执行插入操作 SCOTT 测试已迁移应用程序。CUSTOMER 表。</span><span class="sxs-lookup"><span data-stu-id="b1e36-105">**Objective:** In this step, you will test the migrated application by performing an Insert operation on the SCOTT.CUSTOMER table.</span></span> <span data-ttu-id="b1e36-106">若要执行此操作，则删除与使用 vPrev Oracle 数据库适配器生成的架构一致的请求消息。</span><span class="sxs-lookup"><span data-stu-id="b1e36-106">To do this, you drop a request message that conforms to the schema generated using the vPrev Oracle Database adapter.</span></span>  
   
-## <a name="prerequisites"></a><span data-ttu-id="4b92f-107">必要條件</span><span class="sxs-lookup"><span data-stu-id="4b92f-107">Prerequisites</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="b1e36-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="b1e36-107">Prerequisites</span></span>  
   
-- <span data-ttu-id="4b92f-108">通过将 BizTalk 业务流程中的逻辑端口映射到物理端口在 BizTalk Server 管理控制台中配置的 BizTalk 应用程序。</span><span class="sxs-lookup"><span data-stu-id="4b92f-108">Configure the BizTalk application by mapping the logical ports in the BizTalk orchestration to physical ports in the BizTalk Server Administration console.</span></span>  
+- <span data-ttu-id="b1e36-108">通过将 BizTalk 业务流程中的逻辑端口映射到物理端口在 BizTalk Server 管理控制台中配置的 BizTalk 应用程序。</span><span class="sxs-lookup"><span data-stu-id="b1e36-108">Configure the BizTalk application by mapping the logical ports in the BizTalk orchestration to physical ports in the BizTalk Server Administration console.</span></span>  
   
-- <span data-ttu-id="4b92f-109">配置 BizTalk 应用程序要用于 Wcf-custom 发送端口基于 WCF 的[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="4b92f-109">Configure the BizTalk application to use the WCF-Custom send port for the WCF-based [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span>  
+- <span data-ttu-id="b1e36-109">配置 BizTalk 应用程序要用于 Wcf-custom 发送端口基于 WCF 的[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="b1e36-109">Configure the BizTalk application to use the WCF-Custom send port for the WCF-based [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span>  
   
-### <a name="to-test-the-migrated-application"></a><span data-ttu-id="4b92f-110">若要测试已迁移应用程序</span><span class="sxs-lookup"><span data-stu-id="4b92f-110">To test the migrated application</span></span>  
+### <a name="to-test-the-migrated-application"></a><span data-ttu-id="b1e36-110">若要测试已迁移应用程序</span><span class="sxs-lookup"><span data-stu-id="b1e36-110">To test the migrated application</span></span>  
   
-1. <span data-ttu-id="4b92f-111">从 Oracle_Migration 文件夹中，将复制 OracleInsert.xml 请求消息。</span><span class="sxs-lookup"><span data-stu-id="4b92f-111">From the Oracle_Migration folder, copy the OracleInsert.xml request message.</span></span> <span data-ttu-id="4b92f-112">此请求消息符合 vPrev Oracle 数据库适配器生成的架构。</span><span class="sxs-lookup"><span data-stu-id="4b92f-112">This request message conforms to the schema generated by the vPrev Oracle Database adapter.</span></span> <span data-ttu-id="4b92f-113">使用出站映射时，WCF 自定义发送端口将此选项以符合架构的基于 WCF 的[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]并将其发送到 Oracle 数据库。</span><span class="sxs-lookup"><span data-stu-id="4b92f-113">Using the outbound map, the WCF-Custom send port converts this to conform to the schema for the WCF-based [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] and sends it to the Oracle database.</span></span>  
+1. <span data-ttu-id="b1e36-111">从 Oracle_Migration 文件夹中，将复制 OracleInsert.xml 请求消息。</span><span class="sxs-lookup"><span data-stu-id="b1e36-111">From the Oracle_Migration folder, copy the OracleInsert.xml request message.</span></span> <span data-ttu-id="b1e36-112">此请求消息符合 vPrev Oracle 数据库适配器生成的架构。</span><span class="sxs-lookup"><span data-stu-id="b1e36-112">This request message conforms to the schema generated by the vPrev Oracle Database adapter.</span></span> <span data-ttu-id="b1e36-113">使用出站映射时，WCF 自定义发送端口将此选项以符合架构的基于 WCF 的[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]并将其发送到 Oracle 数据库。</span><span class="sxs-lookup"><span data-stu-id="b1e36-113">Using the outbound map, the WCF-Custom send port converts this to conform to the schema for the WCF-based [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] and sends it to the Oracle database.</span></span>  
   
    ```  
    <ns0:Insert xmlns:ns0="http://schemas.microsoft.com/[OracleDb://ADAPTER/SCOTT/Tables/CUSTOMER]">  
@@ -53,14 +53,14 @@ ms.locfileid: "36970374"
    </ns0:Insert>  
    ```  
   
-2. <span data-ttu-id="4b92f-114">粘贴到文件映射到的文件夹的请求消息的接收位置。</span><span class="sxs-lookup"><span data-stu-id="4b92f-114">Paste the request message to the folder mapped to the file receive location.</span></span>  
+2. <span data-ttu-id="b1e36-114">粘贴到文件映射到的文件夹的请求消息的接收位置。</span><span class="sxs-lookup"><span data-stu-id="b1e36-114">Paste the request message to the folder mapped to the file receive location.</span></span>  
   
-3. <span data-ttu-id="4b92f-115">业务流程使用请求消息，并将其发送到 Oracle 数据库。</span><span class="sxs-lookup"><span data-stu-id="4b92f-115">The orchestration consumes the request message and sends it to the Oracle database.</span></span> <span data-ttu-id="4b92f-116">中的基于 WCF 的架构的架构符合收到从 Oracle 数据库响应[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="4b92f-116">The response from the Oracle database is received in the schema that conforms with the schema of the WCF-based [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span> <span data-ttu-id="4b92f-117">使用入站的映射时，WCF 自定义发送端口将此 vPrev Oracle 数据库适配器的架构。</span><span class="sxs-lookup"><span data-stu-id="4b92f-117">Using the inbound map, the WCF-Custom send port converts this to the schema for the vPrev Oracle Database adapter.</span></span> <span data-ttu-id="4b92f-118">从 Oracle 数据库的响应保存到其他文件位置定义为业务流程的一部分。</span><span class="sxs-lookup"><span data-stu-id="4b92f-118">The response from the Oracle database is saved to the other file location defined as part of the orchestration.</span></span> <span data-ttu-id="4b92f-119">前面的请求消息的响应是：</span><span class="sxs-lookup"><span data-stu-id="4b92f-119">The response for the preceding request message is:</span></span>  
+3. <span data-ttu-id="b1e36-115">业务流程使用请求消息，并将其发送到 Oracle 数据库。</span><span class="sxs-lookup"><span data-stu-id="b1e36-115">The orchestration consumes the request message and sends it to the Oracle database.</span></span> <span data-ttu-id="b1e36-116">中的基于 WCF 的架构的架构符合收到从 Oracle 数据库响应[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="b1e36-116">The response from the Oracle database is received in the schema that conforms with the schema of the WCF-based [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)].</span></span> <span data-ttu-id="b1e36-117">使用入站的映射时，WCF 自定义发送端口将此 vPrev Oracle 数据库适配器的架构。</span><span class="sxs-lookup"><span data-stu-id="b1e36-117">Using the inbound map, the WCF-Custom send port converts this to the schema for the vPrev Oracle Database adapter.</span></span> <span data-ttu-id="b1e36-118">从 Oracle 数据库的响应保存到其他文件位置定义为业务流程的一部分。</span><span class="sxs-lookup"><span data-stu-id="b1e36-118">The response from the Oracle database is saved to the other file location defined as part of the orchestration.</span></span> <span data-ttu-id="b1e36-119">前面的请求消息的响应是：</span><span class="sxs-lookup"><span data-stu-id="b1e36-119">The response for the preceding request message is:</span></span>  
   
    ```  
    <?xml version="1.0" encoding="utf-8"?>  
    <ns0:InsertResponse xmlns:ns0="http://schemas.microsoft.com/[OracleDb://ADAPTER/SCOTT/Tables/CUSTOMER]"></ns0:InsertResponse>  
    ```  
   
-## <a name="see-also"></a><span data-ttu-id="4b92f-120">请参阅</span><span class="sxs-lookup"><span data-stu-id="4b92f-120">See Also</span></span>  
- <span data-ttu-id="4b92f-121">[教程： 迁移 BizTalk 项目](https://msdn.microsoft.com/library/dd788186(v=bts.80).aspx)</span><span class="sxs-lookup"><span data-stu-id="4b92f-121">[Tutorial: Migrating BizTalk Projects](https://msdn.microsoft.com/library/dd788186(v=bts.80).aspx)</span></span>
+## <a name="see-also"></a><span data-ttu-id="b1e36-120">请参阅</span><span class="sxs-lookup"><span data-stu-id="b1e36-120">See Also</span></span>  
+ <span data-ttu-id="b1e36-121">[教程：迁移 BizTalk 项目](https://msdn.microsoft.com/library/dd788186(v=bts.80).aspx)</span><span class="sxs-lookup"><span data-stu-id="b1e36-121">[Tutorial: Migrating BizTalk Projects](https://msdn.microsoft.com/library/dd788186(v=bts.80).aspx)</span></span>

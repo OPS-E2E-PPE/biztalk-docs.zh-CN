@@ -1,5 +1,5 @@
 ---
-title: 规划持续性能 |Microsoft 文档
+title: 规划可持续性能 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,22 +16,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3cd0d87a5750aa506fb1e0b605d215e6229927c7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4eece626b48a1467127c836775b1680f11f59ff8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22264325"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395639"
 ---
-# <a name="planning-for-sustained-performance"></a><span data-ttu-id="a499a-102">规划可维持性能</span><span class="sxs-lookup"><span data-stu-id="a499a-102">Planning for Sustained Performance</span></span>
-<span data-ttu-id="a499a-103">本部分将介绍如何规划、测试和扩展 BizTalk Server 系统以获得最佳性能。</span><span class="sxs-lookup"><span data-stu-id="a499a-103">This section describes how to plan, test, and scale your BizTalk Server system so you have optimal performance.</span></span>  
+# <a name="planning-for-sustained-performance"></a><span data-ttu-id="d274c-102">规划可持续性能</span><span class="sxs-lookup"><span data-stu-id="d274c-102">Planning for Sustained Performance</span></span>
+<span data-ttu-id="d274c-103">本部分介绍如何规划、 测试和扩展 BizTalk Server 系统，以便获得最佳性能。</span><span class="sxs-lookup"><span data-stu-id="d274c-103">This section describes how to plan, test, and scale your BizTalk Server system so you have optimal performance.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="a499a-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="a499a-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="d274c-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="d274c-104">In This Section</span></span>  
   
--   [<span data-ttu-id="a499a-105">项目规划阶段的建议</span><span class="sxs-lookup"><span data-stu-id="a499a-105">Project Planning Recommendations by Phase</span></span>](../core/project-planning-recommendations-by-phase.md)  
+-   [<span data-ttu-id="d274c-105">分阶段描述的项目规划建议</span><span class="sxs-lookup"><span data-stu-id="d274c-105">Project Planning Recommendations by Phase</span></span>](../core/project-planning-recommendations-by-phase.md)  
   
--   [<span data-ttu-id="a499a-106">引擎性能特征</span><span class="sxs-lookup"><span data-stu-id="a499a-106">Engine Performance Characteristics</span></span>](../core/engine-performance-characteristics.md)  
+-   [<span data-ttu-id="d274c-106">引擎性能特征</span><span class="sxs-lookup"><span data-stu-id="d274c-106">Engine Performance Characteristics</span></span>](../core/engine-performance-characteristics.md)  
   
--   [<span data-ttu-id="a499a-107">跟踪的性能特征</span><span class="sxs-lookup"><span data-stu-id="a499a-107">Tracking Performance Characteristics</span></span>](../core/tracking-performance-characteristics.md)  
+-   [<span data-ttu-id="d274c-107">跟踪性能特征</span><span class="sxs-lookup"><span data-stu-id="d274c-107">Tracking Performance Characteristics</span></span>](../core/tracking-performance-characteristics.md)  
   
--   [<span data-ttu-id="a499a-108">缩放您的解决方案</span><span class="sxs-lookup"><span data-stu-id="a499a-108">Scaling Your Solutions</span></span>](../core/scaling-your-solutions.md)
+-   [<span data-ttu-id="d274c-108">缩放你的解决方案</span><span class="sxs-lookup"><span data-stu-id="d274c-108">Scaling Your Solutions</span></span>](../core/scaling-your-solutions.md)

@@ -1,5 +1,5 @@
 ---
-title: 使用从服务的管道面向解决方案 |Microsoft 文档
+title: 使用该服务中的管道面向解决方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,20 +15,20 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d6b8021a22db366b31cde26abdc3ef48f3e51a5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aeddd2168f6fc796752aa5d1e276816f9a087ce2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287205"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396609"
 ---
-# <a name="using-pipelines-from-the-service-oriented-solution"></a><span data-ttu-id="e15f8-102">使用从服务的管道面向解决方案</span><span class="sxs-lookup"><span data-stu-id="e15f8-102">Using Pipelines from the Service Oriented Solution</span></span>
-<span data-ttu-id="e15f8-103">客户服务业务流程的内联版本 (**CustomerService**) 调用直接跟踪系统的付款。</span><span class="sxs-lookup"><span data-stu-id="e15f8-103">The inline version of the customer service orchestration (**CustomerService**) calls the payment tracking system directly.</span></span> <span data-ttu-id="e15f8-104">为准备发送的消息和处理接收的消息，业务流程将通过代码调用管道。</span><span class="sxs-lookup"><span data-stu-id="e15f8-104">To prepare the sent message and process the received message, the orchestration calls the pipelines from code.</span></span> <span data-ttu-id="e15f8-105">这将允许重用其他方案版本中的管道。</span><span class="sxs-lookup"><span data-stu-id="e15f8-105">This allows the reuse of the pipelines from the other scenarios versions.</span></span> <span data-ttu-id="e15f8-106">还可保持业务流程与管道阶段的分离状态。</span><span class="sxs-lookup"><span data-stu-id="e15f8-106">It also maintains the decoupling of the orchestration from the pipeline stages.</span></span>  
+# <a name="using-pipelines-from-the-service-oriented-solution"></a><span data-ttu-id="b0f8a-102">使用该服务中的管道面向解决方案</span><span class="sxs-lookup"><span data-stu-id="b0f8a-102">Using Pipelines from the Service Oriented Solution</span></span>
+<span data-ttu-id="b0f8a-103">客户服务业务流程的内联版本 (**CustomerService**) 调用付款跟踪系统直接。</span><span class="sxs-lookup"><span data-stu-id="b0f8a-103">The inline version of the customer service orchestration (**CustomerService**) calls the payment tracking system directly.</span></span> <span data-ttu-id="b0f8a-104">若要准备发送的消息和处理接收的消息，业务流程将从代码调用管道。</span><span class="sxs-lookup"><span data-stu-id="b0f8a-104">To prepare the sent message and process the received message, the orchestration calls the pipelines from code.</span></span> <span data-ttu-id="b0f8a-105">这将允许重用其他方案版本中的管道。</span><span class="sxs-lookup"><span data-stu-id="b0f8a-105">This allows the reuse of the pipelines from the other scenarios versions.</span></span> <span data-ttu-id="b0f8a-106">它还维护业务流程与管道阶段的分离。</span><span class="sxs-lookup"><span data-stu-id="b0f8a-106">It also maintains the decoupling of the orchestration from the pipeline stages.</span></span>  
   
-## <a name="calling-the-pipelines"></a><span data-ttu-id="e15f8-107">调用管道</span><span class="sxs-lookup"><span data-stu-id="e15f8-107">Calling the Pipelines</span></span>  
- <span data-ttu-id="e15f8-108">若要通过代码使用管道，则必须创建消息集合，向该集合添加要处理的消息，创建用于接收结果消息的空消息，然后调用管道。</span><span class="sxs-lookup"><span data-stu-id="e15f8-108">To use the pipelines from code, you must create a message collection, add the message to process to the collection, create an empty message to receive the result message, and invoke the pipeline.</span></span>  
+## <a name="calling-the-pipelines"></a><span data-ttu-id="b0f8a-107">调用管道</span><span class="sxs-lookup"><span data-stu-id="b0f8a-107">Calling the Pipelines</span></span>  
+ <span data-ttu-id="b0f8a-108">若要使用的代码中的管道，你必须创建消息集合，添加要处理到集合，创建用于接收结果消息的空消息并调用管道的消息。</span><span class="sxs-lookup"><span data-stu-id="b0f8a-108">To use the pipelines from code, you must create a message collection, add the message to process to the collection, create an empty message to receive the result message, and invoke the pipeline.</span></span>  
   
- <span data-ttu-id="e15f8-109">下面的代码从**CustomerService** orchestration 是在**ConstructRequestMessageAfterSendPipeline**形状：</span><span class="sxs-lookup"><span data-stu-id="e15f8-109">The following code from the **CustomerService** orchestration is in the **ConstructRequestMessageAfterSendPipeline** shape:</span></span>  
+ <span data-ttu-id="b0f8a-109">中的以下代码**CustomerService**业务流程处于**ConstructRequestMessageAfterSendPipeline**形状：</span><span class="sxs-lookup"><span data-stu-id="b0f8a-109">The following code from the **CustomerService** orchestration is in the **ConstructRequestMessageAfterSendPipeline** shape:</span></span>  
   
 ```  
 // Create the collection of messages to be sent to the send pipeline...  
@@ -53,7 +53,7 @@ Microsoft.XLANGs.Pipeline.XLANGPipelineManager.
     );  
 ```  
   
- <span data-ttu-id="e15f8-110">**GetLastPaymentResponse**形状采用上面的代码从消息、 将其发送到跟踪系统，付款和处理返回的消息，接收管道：</span><span class="sxs-lookup"><span data-stu-id="e15f8-110">The **GetLastPaymentResponse** shape takes the message from the above code, sends it to the payment tracking system, and processes the returned message through the receive pipeline:</span></span>  
+ <span data-ttu-id="b0f8a-110">**GetLastPaymentResponse**形状采用上面的代码中的消息，将其发送到付款跟踪系统，并处理通过接收管道返回的消息：</span><span class="sxs-lookup"><span data-stu-id="b0f8a-110">The **GetLastPaymentResponse** shape takes the message from the above code, sends it to the payment tracking system, and processes the returned message through the receive pipeline:</span></span>  
   
 ```  
 // Execute the inline method to send the message to the   
@@ -94,5 +94,5 @@ Microsoft.Samples.BizTalk.WoodgroveBank.Utilities.
         );  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="e15f8-111">另请参阅</span><span class="sxs-lookup"><span data-stu-id="e15f8-111">See Also</span></span>  
- [<span data-ttu-id="e15f8-112">服务实现重点介绍面向解决方案</span><span class="sxs-lookup"><span data-stu-id="e15f8-112">Implementation Highlights of the Service Oriented Solution</span></span>](../core/implementation-highlights-of-the-service-oriented-solution.md)
+## <a name="see-also"></a><span data-ttu-id="b0f8a-111">请参阅</span><span class="sxs-lookup"><span data-stu-id="b0f8a-111">See Also</span></span>  
+ [<span data-ttu-id="b0f8a-112">面向服务的解决方案的实施要点</span><span class="sxs-lookup"><span data-stu-id="b0f8a-112">Implementation Highlights of the Service Oriented Solution</span></span>](../core/implementation-highlights-of-the-service-oriented-solution.md)
