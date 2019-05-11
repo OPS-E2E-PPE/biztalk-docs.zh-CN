@@ -1,5 +1,5 @@
 ---
-title: 步骤 1： 配置文件接收位置 |Microsoft 文档
+title: 第 1 步：配置一个 FILE 接收位置 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,29 +12,29 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 78f8bccc187bf310b8426fc3d5fee36add44a9f3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2ae1bb74c162a0a61521392fc4cd75e99ba26297
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278253"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392832"
 ---
-# <a name="step-1-configure-a-file-receive-location"></a>步骤 1： 配置文件接收位置
-在本主题中，配置文件接收使用放到一个文件夹来调用发送端口 dummy 请求消息的位置。  
+# <a name="step-1-configure-a-file-receive-location"></a>第 1 步：配置一个 FILE 接收位置
+在本主题中，配置文件接收位置使用你存放至文件夹来调用发送端口的虚拟请求消息。  
   
 > [!NOTE]
->  在本教程中的步骤假定你使用默认应用程序 (**BizTalk 应用程序 1**) 来创建解决方案。 你还可以创建另一个应用程序并在该应用程序中执行相同步骤。  
+>  在本教程中的步骤假定你使用默认应用程序 (**BizTalk Application 1**) 来创建解决方案。 您还可以创建另一个应用程序和该应用程序中任何执行相同的步骤。  
   
-### <a name="to-configure-a-file-receive-location"></a>配置 FILE 接收位置的步骤  
+### <a name="to-configure-a-file-receive-location"></a>若要配置 FILE 接收位置  
   
-1.  从 BizTalk Server 管理控制台，在**BizTalk 应用程序 1**节点，右键单击**接收端口**，指向**新建**，然后单击**单向接收端口**。  
+1.  从 BizTalk Server 管理控制台中下, **BizTalk Application 1**节点，右键单击**接收端口**，指向**新建**，然后单击**单向接收端口**。  
   
-2.  在“常规”选项卡上，执行下列操作：  
+2.  在常规选项卡上，执行以下步骤：  
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
     |**名称**|类型**ReceivePortRestAzureMarketPlace**。|  
-    |**启用路由失败消息**|（清除）|  
+    |**为失败消息启用路由功能**|（清除）|  
   
 3.  单击**接收位置**，然后单击**新建**。  
   
@@ -49,14 +49,14 @@ ms.locfileid: "22278253"
   
 5.  单击**配置**。  
   
-6.  从文件传输属性，请执行以下操作：  
+6.  从文件传输属性中，执行以下步骤：  
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
     |**接收文件夹**|键入将存放虚拟请求消息的位置。|  
-    |**文件名**|保留`*.xml`|  
+    |**文件名**|保留 `*.xml`|  
   
-7.  单击**确定**直到退出所有对话框。  
+7.  单击**确定**直到您退出所有对话框。  
   
-## <a name="see-also"></a>另请参阅  
- [教程 5： 调用 REST 接口使用 BizTalk Server](../core/tutorial-5-invoking-a-rest-interface-using-biztalk-server.md)
+## <a name="see-also"></a>请参阅  
+ [教程 5:调用 REST 接口使用 BizTalk Server](../core/tutorial-5-invoking-a-rest-interface-using-biztalk-server.md)

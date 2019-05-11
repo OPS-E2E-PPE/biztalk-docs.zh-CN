@@ -1,5 +1,5 @@
 ---
-title: 配置 Windows SharePoint Services 适配器 |Microsoft 文档
+title: 配置 Windows SharePoint Services 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c30633fd47a174158f0f3e91f4e65b498f9bc27e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cebc657b835400af234d56918bf4653c7d3fb8dd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22233381"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390642"
 ---
-# <a name="configuring-the-windows-sharepoint-services-adapter"></a>配置 Windows SharePoint Services Adapter
-本部分中的主题介绍如何配置 Windows SharePoint Services 适配器。  
+# <a name="configuring-the-windows-sharepoint-services-adapter"></a>配置 Windows SharePoint Services 适配器
+在本部分中的主题介绍如何配置 Windows SharePoint Services 适配器。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -39,11 +39,11 @@ ms.locfileid: "22233381"
   
 -   [Windows SharePoint Services 适配器表达式](../core/windows-sharepoint-services-adapter-expressions.md)  
   
--   [支持的 Windows SharePoint Services 列类型](../core/supported-windows-sharepoint-services-column-types.md)  
+-   [支持的 Windows SharePoint Services 栏类型](../core/supported-windows-sharepoint-services-column-types.md)  
   
 -   [Windows SharePoint Services 4.0 支持](../core/windows-sharepoint-services-4-0-support.md)  
   
-## <a name="see-also"></a>另请参阅  
- [什么是 Windows SharePoint Services Adapter？](../core/what-is-the-windows-sharepoint-services-adapter.md)   
- [设置和部署 Windows SharePoint Services Adapter](../core/setting-up-and-deploying-the-windows-sharepoint-services-adapter.md)   
+## <a name="see-also"></a>请参阅  
+ [什么是 Windows SharePoint Services 适配器？](../core/what-is-the-windows-sharepoint-services-adapter.md)   
+ [设置和部署 Windows SharePoint Services 适配器](../core/setting-up-and-deploying-the-windows-sharepoint-services-adapter.md)   
  [Windows SharePoint Services 适配器演练](../core/windows-sharepoint-services-adapter-walkthroughs.md)

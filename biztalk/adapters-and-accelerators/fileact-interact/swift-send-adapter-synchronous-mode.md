@@ -1,5 +1,5 @@
 ---
-title: SWIFT 发送适配器同步模式 |Microsoft 文档
+title: SWIFT 发送适配器同步模式 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3e800ea5a8c87cb5f422c8d16a103bb83c85e259
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 48a869c86b6aab38a7802240e43c663589cda3ee
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22223701"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65364126"
 ---
 # <a name="swift-send-adapter-synchronous-mode"></a>SWIFT 发送适配器同步模式
-下图显示的操作在同步模式下的发送适配器执行以通过 SWIFT 发送消息的序列。  
+下图显示了发送适配器同步模式下的执行无法通过 SWIFT 发送一条消息的操作序列。  
   
  ![发送适配器同步模式](../../adapters-and-accelerators/fileact-interact/media/761d754f-972d-48cd-9968-41c89ddd0d35.gif "761d754f-972d-48cd-9968-41c89ddd0d35")  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [SWIFT 发送适配器体系结构](../../adapters-and-accelerators/fileact-interact/swift-send-adapter-architecture.md)   
  [SWIFT 发送适配器 URI](../../adapters-and-accelerators/fileact-interact/swift-send-adapter-uri.md)   
  [SWIFT 发送适配器动态发送](../../adapters-and-accelerators/fileact-interact/swift-send-adapter-dynamic-send.md)   

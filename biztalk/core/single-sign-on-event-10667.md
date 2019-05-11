@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10667 |Microsoft Docs
+title: 单一登录：Event 10667 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a41719f6b8a4d3a0ed99b4993b8968f58d28d42
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2e5115d7d521a0e19d1b48f5c1bf1f9f1f5937e1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024044"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397549"
 ---
-# <a name="single-sign-on-event-10667"></a>单一登录： 事件 10667
+# <a name="single-sign-on-event-10667"></a>单一登录：事件 10667
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                                         |
@@ -30,17 +30,17 @@ ms.locfileid: "37024044"
 |  事件源   |                                                                 ENTSSO                                                                  |
 |    组件    |                                                                   N\A                                                                   |
 |  符号名称  |                                          SSO_INFO_SUPPRESSED_DUPLICATE_WINDOWS_PASSWORD_CHANGE                                          |
-|  消息正文   | 已取消重复的 Windows 密码更改。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> Windows 帐户： %3 |
+|  消息正文   | 禁止显示重复的 Windows 密码 change.%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> Windows 帐户： %3 |
 
 ## <a name="explanation"></a>解释  
- 此信息事件表有 SSO 已取消重复的 Windows 密码更改。  
+ 此信息事件表明 SSO 已取消重复的 Windows 密码更改。  
 
 ## <a name="user-action"></a>用户操作  
 
--   不需要用户进行任何操作。  
+-   不不需要任何用户操作。  
 
 ## <a name="more-info"></a>详细信息
 
 - [密码同步](../core/password-synchronization2.md)  
 
-- **密码同步适配器属性： 选项** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+- **密码同步适配器属性：选项** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]

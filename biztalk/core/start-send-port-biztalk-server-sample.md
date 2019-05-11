@@ -1,5 +1,5 @@
 ---
-title: 开始发送端口 （BizTalk Server 示例） |Microsoft 文档
+title: 启动发送端口 （BizTalk Server 示例） |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,33 +16,33 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f293d00848c32f6b519349543c8a39824d9bca8c
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 9ca8ab34acb7fb49164a3e0cd0ff99f765e41912
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25973875"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393058"
 ---
-# <a name="start-send-port-biztalk-server-sample"></a>开始发送端口 （BizTalk Server 示例）
-启动发送端口示例演示如何在使用 FILE 适配器时启动发送端口和选择设置主传输地址。  
+# <a name="start-send-port-biztalk-server-sample"></a>启动发送端口 （BizTalk Server 示例）
+启动发送端口示例演示如何启动发送端口并使用文件适配器时可以选择设置主传输地址。  
   
 > [!WARNING]
->  部署后，如果不再需要部署脚本，则应将其删除。 应通过 ACL 确保必须保留的管理脚本和其他脚本的安全并加以密切监视。  
+>  如果不需要应在部署后删除的部署脚本。 管理脚本和其他必须保持的脚本应受 ACL 并加以密切监视。  
   
 ## <a name="what-this-sample-does"></a>本示例的用途  
- 构成本示例的脚本文件中的 Visual Basic Scripting Edition (VBScript) 脚本演示如何使用 BizTalk Server WMI 提供程序执行下列操作：  
+ 构成本示例的脚本文件中的 Visual Basic Scripting Edition (VBScript) 脚本演示如何执行以下操作，使用 BizTalk Server WMI 提供程序：  
   
--   根据给定的发送端口名称，查询匹配的发送端口的列表。  
+-   给定的发送端口名称，查询匹配的发送端口的列表。  
   
     > [!NOTE]
-    >  通常，只有一个发送端口与给定名称匹配。  
+    >  通常情况下，将仅有一个与给定名称匹配的发送端口。  
   
--   为这些发送端口设置主传输地址（相对于安装路径）。  
+-   设置主传输地址为这些发送端口 （相对于的安装路径）。  
   
 -   启动这些发送端口。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- 本示例文件位于以下 SDK 位置：  
+ 示例文件位于以下 SDK 位置：  
   
  \<*示例路径*\>\Admin\WMI\Start 发送 Port\  
   
@@ -50,24 +50,24 @@ ms.locfileid: "25973875"
   
 |文件|Description|  
 |---------------|-----------------|  
-|\VBScript 文件夹的内容：<br /><br /> StartSendPort.vbs|VBScript 文件，采用指定要启动的发送端口以及与此端口关联的主传输地址的新值（可选）的参数。|  
+|\VBScript 文件夹的位置：<br /><br /> StartSendPort.vbs|VBScript 文件，采用参数指定的发送端口，若要开始，并 （可选） 与该端口相关联的主传输地址的新值。|  
   
 ## <a name="building-and-initializing-this-sample"></a>生成并初始化此示例  
- 启动发送端口示例由一个 VBScript 文件组成，您无需生成或初始化此文件。  
+ 启动发送端口示例由一个不需要生成或初始化的 VBScript 文件组成。  
   
 ## <a name="running-this-sample"></a>运行本示例  
   
 #### <a name="to-run-this-sample"></a>运行本示例的步骤  
   
-1.  在命令窗口中，导航到下面的文件夹：  
+1.  在命令窗口中，导航到以下文件夹：  
   
-     \<*示例路径*\>\Admin\WMI\Start 发送 Port\VBScript\  
+     \<*Samples Path*\>\Admin\WMI\Start Send Port\VBScript\  
   
-2.  使用 cscript 程序运行 StartSendPort.vbs 文件，传递下列命令行参数，其中第二个参数是可选的：  
+2.  运行的 StartSendPort.vbs 文件使用 cscript 程序中，传递下列命令行参数，第二个是可选的：  
   
-    -   **\<** ***SendPortName* \>。** 要启动的发送端口的名称。 如果发送端口名称包含空格，则将该名称置于引号中。  
+    -   **\<** ***SendPortName* \>。** 要启动的发送端口的名称。 如果发送端口名称包含空格，将名称括起来。  
   
-    -   **\<** ***PrimaryTransportAddress* \>。** 相对于产品安装位置的主传输地址，通过指定此参数，您可以更改此地址。 如果主适配器地址包含空格，则将该名称置于引号中。  
+    -   **\<** ***PrimaryTransportAddress* \>。** 主传输地址，相对于的产品安装位置，你可以通过指定此参数。 如果主适配器地址包含空格，将名称括起来。  
   
          例如：  
   
@@ -76,9 +76,9 @@ ms.locfileid: "25973875"
         ```  
   
 ## <a name="comments"></a>注释  
- 你可以在 BizTalk Server 管理控制台中执行的所有任务也可以通过访问 Windows WMI 对象模型的脚本都执行。  
+ 可以在 BizTalk Server 管理控制台中执行的所有任务也可以通过使用访问 Windows WMI 对象模型的脚本都执行。  
   
- StartSendPort.vbs 脚本文件包含详细注释，对其执行的操作做了进一步说明。 有关详细信息，请参阅在 Windows Management Instrumentation [http://go.microsoft.com/fwlink/?LinkId=21102](http://go.microsoft.com/fwlink/?LinkId=21102)。  
+ StartSendPort.vbs 脚本文件包含详细的注释了进一步说明，它执行的操作。 有关详细信息，请参阅在 Windows Management Instrumentation [ http://go.microsoft.com/fwlink/?LinkId=21102 ](http://go.microsoft.com/fwlink/?LinkId=21102)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [Admin-WMI（BizTalk Server 示例文件夹）](../core/admin-wmi-biztalk-server-samples-folder.md)

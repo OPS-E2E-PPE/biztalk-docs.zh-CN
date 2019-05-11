@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 配置的端口 |Microsoft Docs
+title: 第 2 步：配置的端口 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5fe05185c625825c795ee89dff10d5be9ae6a68d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ba3ea5425029b9cd7d8dc20f04879569ca6ef581
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973726"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367834"
 ---
-# <a name="step-2-configure-the-ports"></a>步骤 2： 配置的端口
+# <a name="step-2-configure-the-ports"></a>第 2 步：配置的端口
 ![步骤 2，共 4 步](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
   
- **完成时间：** 15 分钟  
+ **若要完成的时间：** 15 分钟  
   
  **目标：** 在此步骤中，创建中的物理端口[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 创建业务流程中创建的每个逻辑端口的物理端口。 您将创建以下端口：  
   
@@ -32,8 +32,8 @@ ms.locfileid: "36973726"
   
 - 一个单向发送端口以发送 Insert 操作的响应。 在本教程中，因为需要通知通过电子邮件，购买院系创建此发送端口作为 SMTP 端口。  
   
-## <a name="prerequisites"></a>必要條件  
- 你必须已完成[步骤 1： 部署业务流程](../../adapters-and-accelerators/adapter-sql/step-1-deploy-the-orchestration.md))。  
+## <a name="prerequisites"></a>先决条件  
+ 你必须已完成[步骤 1:部署业务流程](../../adapters-and-accelerators/adapter-sql/step-1-deploy-the-orchestration.md))。  
   
 ### <a name="to-create-a-physical-one-way-receive-port"></a>若要创建单向物理接收端口  
   
@@ -50,7 +50,7 @@ ms.locfileid: "36973726"
    |绑定属性|ReplTest1|  
    |----------------------|-----------|  
    |**InboundOperationType**|将此设置为**通知**。|  
-   |**NotificationStatement**|将此设置为：<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **注意：** 您必须专门的列名称在语句中指定此 Select 语句中所示。 此外，您必须始终指定表名称以及该架构名称，例如， `dbo.Employee`。|  
+   |**NotificationStatement**|将此设置为：<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **注意：** 必须专门在语句中指定的列名称，此 Select 语句中所示。 此外，您必须始终指定表名称以及该架构名称，例如， `dbo.Employee`。|  
    |**NotifyOnListenerStart**|将此设置为 **，则返回 True**。|  
   
     有关不同的绑定属性的详细信息，请参阅[了解关于 BizTalk Adapter for SQL Server 适配器绑定属性](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)。  
@@ -68,9 +68,9 @@ ms.locfileid: "36973726"
    </BtsActionMapping>  
    ```  
   
-    请注意，在业务流程，您创建请求-响应发送端口的两个操作： **UpdateEmp**并**InsertPO**。 因此，物理端口配置中提供的动态操作映射中的相同操作名称。 在上面的摘录中，为操作**UpdateEmp**操作是`TypedProcedure/dbo/UPDATE_EMPLOYEE`。 同样，对于操作**InsertPO**操作是`TableOp/Insert/dbo/Purchase_Order`。  
+    请注意，在业务流程中，将创建两个操作的请求-响应发送端口：**UpdateEmp**并**InsertPO**。 因此，物理端口配置中提供的动态操作映射中的相同操作名称。 在上面的摘录中，为操作**UpdateEmp**操作是`TypedProcedure/dbo/UPDATE_EMPLOYEE`。 同样，对于操作**InsertPO**操作是`TableOp/Insert/dbo/Purchase_Order`。  
   
-3. 您还必须配置发送端口以使用在业务流程，以将响应消息的映射中创建的映射器**UPDATE_EMPLOYEE**存储过程插入操作的请求消息到**Purchase_顺序**表。 为此：  
+3. 您还必须配置发送端口以使用在业务流程，以将响应消息的映射中创建的映射器**UPDATE_EMPLOYEE**存储过程插入操作的请求消息到**Purchase_顺序**表。 为此，请执行以下操作：  
   
    1. 右键单击在 SQLOutboundPort[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台，然后单击**属性**。  
   
@@ -88,13 +88,13 @@ ms.locfileid: "36973726"
   
 2. 端口配置的一部分，指定有关采购部门的电子邮件地址**到**属性。  
   
-## <a name="what-did-i-just-do"></a>内容回顾  
+## <a name="what-did-i-just-do"></a>我只需做了什么？  
  在此步骤中创建 WCF 自定义接收端口从 SQL Server 中接收通知、 在 SQL Server 上执行操作的 WCF 自定义发送端口和发送响应从 SQL Server 作为电子邮件发送给采购部门的 SMTP 端口。  
   
 ## <a name="next-steps"></a>后续步骤  
- 配置和启动 BizTalk 应用程序，如中所述[第 3 步： 配置并启动应用程序](../../adapters-and-accelerators/adapter-sql/step-3-configure-and-start-the-application.md)。  
+ 配置和启动 BizTalk 应用程序，如中所述[步骤 3:配置并启动应用程序](../../adapters-and-accelerators/adapter-sql/step-3-configure-and-start-the-application.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [步骤 1： 部署业务流程](../../adapters-and-accelerators/adapter-sql/step-1-deploy-the-orchestration.md)   
- [步骤 3： 配置并启动应用程序](../../adapters-and-accelerators/adapter-sql/step-3-configure-and-start-the-application.md)   
+ [步骤 1：部署业务流程](../../adapters-and-accelerators/adapter-sql/step-1-deploy-the-orchestration.md)   
+ [步骤 3：配置并启动应用程序](../../adapters-and-accelerators/adapter-sql/step-3-configure-and-start-the-application.md)   
  [第 5 课：部署解决方案](../../adapters-and-accelerators/adapter-sql/lesson-5-deploy-the-solution.md)

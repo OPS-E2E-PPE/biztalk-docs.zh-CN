@@ -1,5 +1,5 @@
 ---
-title: 在 Oracle E-business Suite 使用 WCF 通道模型运行接口表上的 insert 操作 |Microsoft 文档
+title: Oracle E-business Suite 使用 WCF 通道模型中运行插入操作在界面表 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 703b00adeb373fe66c4a96c324f13f9c3c5ec655
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c2f52284e3d4fb08c7dafae9f1a761346fd56351
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22216733"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375482"
 ---
-# <a name="run-an-insert-operation-on-an-interface-table-in-oracle-e-business-suite-using-the-wcf-channel-model"></a>在 Oracle E-business Suite 使用 WCF 通道模型运行接口表上的 insert 操作
-[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]发现一套对 Oracle E-business Suite 接口表的 Insert、 Select、 Update 和 Delete 操作。 通过使用这些操作，你可以执行简单的 Insert、 Select、 Update 和 Delete 语句由 Where 限定目标接口表上的子句。 本主题提供有关如何执行对使用 WCF 通道模型接口表的插入操作的说明。  
+# <a name="run-an-insert-operation-on-an-interface-table-in-oracle-e-business-suite-using-the-wcf-channel-model"></a>Oracle E-business Suite 使用 WCF 通道模型中运行插入操作在界面表
+[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]找到对 Oracle E-business Suite 的接口表的 Insert、 Select、 Update 和 Delete 操作的一组。 通过使用这些操作，你可以执行简单的 Insert、 Select、 Update 和 Delete 语句限定由 Where 子句对目标接口表。 本主题提供有关如何执行插入操作在界面表使用 WCF 通道模型的说明。  
   
- 有关如何的适配器支持这些操作的详细信息，请参阅[接口表和接口视图上的操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-interface-tables-and-interface-views.md)。 有关如何对 Oracle E-business Suite 使用 WCF 通道模型执行操作的详细信息，请参阅[与 Oracle E-business Suite 适配器的 WCF 通道模型概述](../../adapters-and-accelerators/adapter-oracle-ebs/overview-of-the-wcf-channel-model-with-the-oracle-e-business-suite-adapter.md)。  
+ 适配器如何支持这些操作的详细信息，请参阅[对界面表和界面视图操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-interface-tables-and-interface-views.md)。 有关如何执行对 Oracle E-business Suite 使用 WCF 通道模型的操作的详细信息，请参阅[与 Oracle E-business Suite 适配器的 WCF 通道模型概述](../../adapters-and-accelerators/adapter-oracle-ebs/overview-of-the-wcf-channel-model-with-the-oracle-e-business-suite-adapter.md)。  
   
-## <a name="about-the-examples-used-in-this-topic"></a>有关在本主题中使用的示例  
- 本主题中的示例对执行 MS_SAMPLE_EMPLOYEE 接口表操作。 通过运行这些示例使用提供的脚本创建表。 有关示例的详细信息，请参阅[Oracle EBS 适配器的示例](../../adapters-and-accelerators/adapter-oracle-ebs/samples-for-the-oracle-ebs-adapter.md)。 示例中， **InsertOperation**，后者基于本主题中，还提供了与[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]示例。  
+## <a name="about-the-examples-used-in-this-topic"></a>有关使用在本主题中的示例  
+ 本主题中的示例执行 MS_SAMPLE_EMPLOYEE 接口表的操作。 通过运行这些示例提供的脚本创建表。 有关示例的详细信息，请参阅[适用于 Oracle EBS 适配器示例](../../adapters-and-accelerators/adapter-oracle-ebs/samples-for-the-oracle-ebs-adapter.md)。 示例中， **InsertOperation**，后者基于本主题中，还提供与[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]示例。  
   
 ## <a name="the-insert-message"></a>插入消息  
- 若要对 Oracle E-business Suite 使用 WCF 通道模型执行操作，你必须使用特定于操作的请求消息。 要执行对 MS_SAMPLE_EMPLOYEE 接口表的插入操作的请求消息如下所示：  
+ 若要对 Oracle E-business Suite 使用 WCF 通道模型执行操作，必须具有特定于操作的请求消息。 要执行插入操作 MS_SAMPLE_EMPLOYEE 接口表上的请求消息类似于以下内容：  
   
 ```  
 <Insert xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/InterfaceTables/FND/APPS/MS_SAMPLE_EMPLOYEE">  
@@ -53,14 +53,14 @@ Designation = Manager
 Salary = 500000  
 ```  
   
- 必须将消息复制到一个文件，例如 InsertRequest.xml。 此文件使用在此示例中，将请求消息发送到 Oracle E-business Suite 使用[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。 有关对表操作的消息架构的详细信息，请参阅[插入、 更新、 删除和选择操作的消息架构](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-insert-update-delete-and-select-operations.md)。  
+ 必须将该消息复制到一个文件，例如 InsertRequest.xml。 此文件使用在此示例中，若要将请求消息发送到 Oracle E-business Suite 使用[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。 有关对表的操作的消息架构的详细信息，请参阅[Insert、 Update、 Delete 和选择操作的消息架构](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-insert-update-delete-and-select-operations.md)。  
   
 ## <a name="creating-a-wcf-channel-application"></a>创建 WCF 通道应用程序  
- 本部分提供有关如何创建一个 WCF 通道应用程序来执行插入操作 MS_SAMPLE_EMPLOYEE 接口表上的说明。  
+ 本部分将说明了如何创建 WCF 通道应用程序，以执行插入操作上 MS_SAMPLE_EMPLOYEE 接口表。  
   
 #### <a name="to-create-a-wcf-channel-application-for-inserting-records-into-the-table"></a>若要创建的 WCF 通道应用程序将记录插入到表  
   
-1.  在 Visual Studio 中创建 Visual C# 项目。 有关本主题中，创建一个控制台应用程序。  
+1.  在 Visual Studio 中创建一个 Visual C# 项目。 有关本主题中，创建一个控制台应用程序。  
   
 2.  在解决方案资源管理器，添加对引用`Microsoft.Adapters.OracleEBS`， `Microsoft.ServiceModel.Channels`， `System.ServiceModel`，和`System.Runtime.Serialization`。  
   
@@ -84,7 +84,7 @@ Salary = 500000
   
     ```  
   
-5.  由于您正在执行对接口表的操作，必须设置应用程序上下文。 在此示例中，若要设置应用程序上下文中，你指定**OracleUserName**， **OraclePassword**，和**OracleEBSResponsibilityName**绑定属性。 有关应用程序上下文的详细信息，请参阅[设置应用程序上下文](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)。  
+5.  由于您正在执行的操作在界面表，必须设置应用程序上下文。 在此示例中，若要设置应用程序上下文中，您指定**OracleUserName**， **OraclePassword**，并**OracleEBSResponsibilityName**绑定属性。 有关应用程序上下文的详细信息，请参阅[设置应用程序上下文](../../adapters-and-accelerators/adapter-oracle-ebs/set-application-context.md)。  
   
     ```  
     binding.OracleUserName = "myOracleEBSUserName";  
@@ -92,7 +92,7 @@ Salary = 500000
     binding.OracleEBSResponsibilityName = "myOracleEBSResponsibility";  
     ```  
   
-6.  创建并打开通道工厂。 此应用程序将请求消息发送到 Oracle E-business Suite 并收到响应，因此必须实现 IRequestChannel 接口。  
+6.  创建并打开通道工厂。 此应用程序将请求消息发送到 Oracle E-business Suite，并接收响应，因此您必须实现 IRequestChannel 接口。  
   
     ```  
     ChannelFactory<IRequestChannel> factory = new ChannelFactory<IRequestChannel>(binding, address);  
@@ -117,7 +117,7 @@ Salary = 500000
     }  
     ```  
   
-8.  创建和发送的请求消息。  
+8.  创建并发送请求消息。  
   
     ```  
     XmlReader readerIn;  
@@ -146,7 +146,7 @@ Salary = 500000
   
     ```  
   
-     在创建请求消息时，必须指定，该值指示适配器接口表执行的操作的消息操作。 若要执行插入操作上 MS_SAMPLE_EMPLOYEE 表，消息操作是`InterfaceTables/Insert/FND/APPS/MS_SAMPLE_EMPLOYEE`。 有关如何确定对表的各种操作的消息操作的信息，请参阅[插入、 更新、 删除和选择操作的消息架构](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-insert-update-delete-and-select-operations.md)。  
+     在创建请求消息时，必须指定指示适配器对界面表执行的操作的消息操作。 若要执行插入操作 MS_SAMPLE_EMPLOYEE 表上的，消息操作是`InterfaceTables/Insert/FND/APPS/MS_SAMPLE_EMPLOYEE`。 有关如何确定对表进行各种操作的消息操作的信息，请参阅[Insert、 Update、 Delete 和选择操作的消息架构](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-insert-update-delete-and-select-operations.md)。  
   
 9. 获取响应消息。  
   
@@ -165,9 +165,9 @@ Salary = 500000
     factory.Close();  
     ```  
   
-11. 生成此项目。 生成项目时，你必须将复制请求消息，InsertRequest.xml，与你的项目可执行文件所在的位置。 通常，此位置是项目目录下的 \bin\Debug\。  
+11. 生成项目。 后生成项目时，必须将复制的请求消息，InsertRequest.xml，与可执行项目所在的位置。 通常情况下，此位置为 \bin\Debug\ 项目目录下。  
   
-12. 运行该应用程序。 响应消息，Response.xml，保存应用程序中指定的位置。 响应消息包含的数或插入的记录，如下所示：  
+12. 运行应用程序。 响应消息，Response.xml，保存在应用程序中指定的位置。 响应消息包含的数量或插入的记录，如下所示：  
   
     ```  
     <InsertResponse xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/InterfaceTables/FND/APPS/MS_SAMPLE_EMPLOYEE">  
@@ -175,7 +175,7 @@ Salary = 500000
     </InsertResponse>  
     ```  
   
-     此值"1"代表一条记录插入 MS_SAMPLE_EMPLOYEE 表。  
+     值"1"表示一条记录插入 MS_SAMPLE_EMPLOYEE 表。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发 Oracle E-business Suite 应用程序使用 WCF 通道模型](../../adapters-and-accelerators/adapter-oracle-ebs/develop-oracle-e-business-suite-applications-using-the-wcf-channel-model.md)

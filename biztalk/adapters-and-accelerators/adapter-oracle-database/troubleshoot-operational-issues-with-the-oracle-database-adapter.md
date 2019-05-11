@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 13dfe903e897ebc3d26e6dc380233f80253ddfc5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8c9b5cdf5dd7667b2bfdddf61b77591455829d98
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968414"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375927"
 ---
 # <a name="troubleshoot-operational-issues-with-the-oracle-database-adapter"></a>使用 Oracle 数据库适配器的操作问题疑难解答
 故障排除技术来解决你可能会遇到使用的操作错误[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]。  
@@ -375,7 +375,7 @@ The element 'bindings' has invalid child element 'oracleDBBinding'. List of poss
   
  **解决方法**  
   
- 可以安全地忽略此警告。  
+ 可以放心地忽略此警告。  
   
 ###  <a name="BKMK_OraDBNotification"></a> BizTalk Server 将引发异常，如果在同一个应用程序中使用多个通知架构或在同一主机上的多个应用程序中使用通知架构  
  **问题**  

@@ -1,5 +1,5 @@
 ---
-title: 有关业务规则 |Microsoft 文档
+title: 关于业务规则 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eddfbd9ffc04d1fc8c01b04ae11349e80b43f5d3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0527b73be30f34ecafce6e3075ce26ce5c22e238
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22224533"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362392"
 ---
-# <a name="about-business-rules"></a>有关业务规则
-本部分介绍业务规则的定义，并解释规则引擎如何执行业务规则。  
+# <a name="about-business-rules"></a>关于业务规则
+本部分介绍业务规则是什么，并解释规则引擎如何执行业务规则。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -28,7 +28,7 @@ ms.locfileid: "22224533"
   
 -   [策略](../core/policies.md)  
   
--   [词汇表](../core/vocabularies.md)  
+-   [词汇](../core/vocabularies.md)  
   
 -   [事实](../core/facts.md)  
   

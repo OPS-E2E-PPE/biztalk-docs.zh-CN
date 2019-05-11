@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 46588632c4444c5c38966cfc22fd75711d2af11a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 133862d81ba82e5ce4c94bbc0a93261941bb413f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996878"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375747"
 ---
 # <a name="browse-search-and-get-metadata-for-oracle-e-business-suite-operations"></a>浏览、 搜索和获取 Oracle E-business Suite 操作的元数据
 本部分提供有关如何使用信息[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]和[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]。 通过使用这些[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]组件，你可以：  

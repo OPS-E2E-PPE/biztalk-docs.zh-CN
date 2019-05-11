@@ -1,5 +1,5 @@
 ---
-title: 步骤 3： 创建请求拒绝架构 |Microsoft 文档
+title: 步骤 3：创建请求拒绝架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,34 +12,34 @@ caps.latest.revision: 39
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1ff343c58e836bc0738f0200016308eb7a4d90b9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 039fd40448d2545e360c5599b1448c6bcbf9c6e6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278549"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392646"
 ---
-# <a name="step-3-create-the-request-decline-schema"></a>步骤 3： 创建请求拒绝架构
-![步骤 5 的 3](../core/media/step-3of5.gif "Step_3of5")  
+# <a name="step-3-create-the-request-decline-schema"></a>步骤 3：创建请求拒绝架构
+![步骤 3，共 5](../core/media/step-3of5.gif "Step_3of5")  
   
- **完成时间：** 7 分钟  
+ **若要完成的时间：** 7 分钟  
   
- **目标：** 在此步骤中，创建消息的架构[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]发回到仓库如果业务流程拒绝库存补货请求。  
+ **目标：** 在此步骤中，创建消息的架构[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]发送回仓库业务流程拒绝库存补货请求。  
   
- **用途：** 架构定义的数据和请求拒绝消息的结构。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用架构来识别并与消息中的数据进行交互。  
+ **目的：** 该架构定义的数据和请求拒绝消息的结构。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用架构来识别并与消息中的数据进行交互。  
   
 ## <a name="prerequisites"></a>先决条件  
  在开始此步骤之前，请注意以下要求：  
   
--   在开始此步骤之前必须完成[步骤 1： 创建 EAISchemas 项目](../core/step-1-create-eaischemas-project.md)。  
+-   在开始此步骤之前，必须完成[步骤 1:创建 EAISchemas 项目](../core/step-1-create-eaischemas-project.md)。  
   
 ## <a name="procedures"></a>过程  
   
-#### <a name="to-create-the-request-decline-schema"></a>创建“请求拒绝”架构  
+#### <a name="to-create-the-request-decline-schema"></a>若要创建请求拒绝架构  
   
-1.  在解决方案资源管理器，右键单击**EAISchemas**项目，指向**添加**，然后单击**新项**。  
+1.  在解决方案资源管理器中右键单击**EAISchemas**项目，指向**添加**，然后单击**新项**。  
   
-2.  在**添加新项-EAISchemas**对话框框中，执行以下操作：  
+2.  在中**添加新项-EAISchemas**对话框框中，执行以下操作：  
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
@@ -48,27 +48,27 @@ ms.locfileid: "22278549"
   
 3.  单击 **“添加”**。  
   
-4.  在 BizTalk 编辑器中，从架构树中，单击**根**节点以选择它。  
+4.  在 BizTalk 编辑器中，在架构树中，单击**根**节点以选择它。  
   
-5.  在属性窗格中，将的值更改**节点名称**属性`DeclineReq`，然后按 ENTER。  
+5.  在属性窗格中的值更改**节点名称**属性设置为`DeclineReq`，然后按 ENTER。  
   
-6.  在架构树中，右键单击**DeclineReq**节点，指向**插入架构节点**，然后单击**子字段元素**。  
+6.  在架构树中，右键单击**DeclineReq**节点，指向**插入 Schema 节点**，然后单击**子字段元素**。  
   
-7.  类型`ReqID`作为以及该元素，然后按 enter 键的新名称。  
+7.  类型`ReqID`作为以及该元素，然后按 ENTER 键的新名称。  
   
-8.  添加名为的第二个子字段元素`GrandTotal`。  
+8.  添加第二个子字段元素，它由名为`GrandTotal`。  
   
 9. 在“文件”  菜单上，单击“全部保存” 。  
   
-## <a name="what-did-i-just-do"></a>内容回顾  
- 在此步骤中，您为 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 在业务流程拒绝库存请求时发送回仓库的消息创建了架构。  
+## <a name="what-did-i-just-do"></a>我只需做了什么？  
+ 在此步骤中，您创建消息的架构的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]发送回仓库业务流程拒绝库存请求。  
   
 ## <a name="next-steps"></a>后续步骤  
- 您将通过重新格式化请求消息来创建业务流程所需要用于创建请求拒绝消息的映射。  
+ 创建业务流程所需创建请求拒绝消息重新格式化请求消息的映射。  
   
-## <a name="see-also"></a>另请参阅  
- [步骤 1： 创建 EAISchemas 项目](../core/step-1-create-eaischemas-project.md)  
- [步骤 2： 创建清单请求架构](../core/step-2-create-the-inventory-request-schema.md)   
- [步骤 4： 创建代码图](../core/step-4-create-the-map.md)   
- [步骤 5： 生成 EAISchemas 项目](../core/step-5-build-the-eaischemas-project.md)   
- [创建使用 BizTalk 编辑器的架构](../core/creating-schemas-using-biztalk-editor.md)
+## <a name="see-also"></a>请参阅  
+ [步骤 1：创建 EAISchemas 项目](../core/step-1-create-eaischemas-project.md)  
+ [步骤 2：创建库存请求架构](../core/step-2-create-the-inventory-request-schema.md)   
+ [步骤 4：创建映射](../core/step-4-create-the-map.md)   
+ [步骤 5：生成 EAISchemas 项目](../core/step-5-build-the-eaischemas-project.md)   
+ [使用 BizTalk 编辑器创建架构](../core/creating-schemas-using-biztalk-editor.md)

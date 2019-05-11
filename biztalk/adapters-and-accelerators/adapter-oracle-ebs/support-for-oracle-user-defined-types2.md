@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0e9bd33864523f40255cbf0dcf993fd916f02270
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 94cfeb91695ca4901da54c1f28c784b54f40da17
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973262"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374457"
 ---
 # <a name="support-for-oracle-user-defined-types"></a>对 Oracle 用户定义类型的支持
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]包含 Oracle User-Defined 类型 (Udt) 的支持在 Oracle E-business Suite 和基础数据库中执行对项目的操作。 Udt 可出现在以下项目：  

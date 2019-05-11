@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10594 |Microsoft Docs
+title: 单一登录：Event 10594 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ba733d9a919b2af09824242a48a2fa85af8ab481
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5c2f70c563113b7b7473d86046f2ac78eec4ea4a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004757"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397855"
 ---
-# <a name="single-sign-on-event-10594"></a>单一登录： 事件 10594
+# <a name="single-sign-on-event-10594"></a>单一登录：事件 10594
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                            |
@@ -28,14 +28,14 @@ ms.locfileid: "37004757"
 | 产品版本 |                                                                 [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                 |
 |    事件 ID     |                                                                                           10594                                                                                            |
 |  事件源   |                                                                                           ENTSSO                                                                                           |
-|    组件    |                                                                                            N/A                                                                                             |
+|    组件    |                                                                                            不可用                                                                                             |
 |  符号名称  |                                                                              SSO_WARN_TICKET_VALIDATE_FAILED                                                                               |
 |  消息正文   | 票证验证失败。 发件人名称必须匹配的票证 issuer.%r<br /><br /> 应用程序名称: %1 %r<br /><br /> 票证颁发者: %2 %r<br /><br /> 发件人姓名： %3 |
   
 ## <a name="explanation"></a>解释  
- 为了使票证有效，“票证颁发者”字段与“发件人姓名”字段（在警告消息中）必须匹配。 但是，如果消息是通过不受信任的 BizTalk 主机发送的，则“发件人姓名”字段将更改为该不受信任的 BizTalk 主机的名称，并且票证将无效。  
+ 为了使票证进行验证，必须匹配 （中的警告消息） 的票证颁发者和发件人姓名字段。 如果，但是，通过 BizTalk 不受信任主机发送邮件，发件人名称获取更改为 BizTalk 主机的名称不受信任，并且票证将无效。  
   
 ## <a name="user-action"></a>用户操作  
- 如果您要使用企业单一登录，请确保您的消息只流经受信任的 BizTalk 主机。 这将降低在消息中篡改数据的风险。  
+ 如果使用企业单一登录，请确保，您的消息只流经受信任的 BizTalk 主机。 这将减少与消息中的数据被篡改的风险。  
   
- 如果您完全理解您的方案中的安全情况，可以关闭对此应用程序的验证。 请注意，验证是一个管理选项，可以关闭系统验证，也可以只关闭对此特定应用程序进行验证。
+ 如果您完全理解的安全隐患，为你的方案，可以关闭此应用程序的验证。 请注意，验证是一个管理选项，可以关闭状态的系统或只需为此特定应用程序。

@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 747ce8a750f2b2c775deaa1123a1b6b1d387eafc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8efcc93d77f24b86a6a5ba8680f35afea815c5b0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999398"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396339"
 ---
 # <a name="working-in-itinerary-designer"></a>在路线设计器中工作
 创建 Microsoft Visual C# 项目后，可以创建新的路线模型并将现有路线添加到项目。 以下步骤介绍如何创建新的旅行计划中，添加一个现有的路线模型，或更改路线的名称。  

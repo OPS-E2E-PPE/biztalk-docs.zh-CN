@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1a54dc12b4bca6418cea1ea4ae63c6c63dcba6e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f0cf3f1f830540469fb9e87af6ef3cdcb7f87068
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969486"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373539"
 ---
 # <a name="create-the-sap-system-connection-uri"></a>创建 SAP 系统连接 URI
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]连接 URI 包含适配器用于建立到 SAP 系统的连接的属性。  
@@ -64,12 +64,12 @@ sap://user=[USER_NAME];passwd=[PASSWORD];Client=[CLIENT];lang=[LANGUAGE];[UseSnc
  SAP 连接 URI 表示为所需的用户身份验证、 客户端标识和语言规范参数的名称值集合中的用户信息 (userinfoparams)。 下表介绍了这些参数。  
 
 
-| “属性” |                                                                                                                                                                                                                                                                                                                                                                                                          Description                                                                                                                                                                                                                                                                                                                                                                                                          |
+| 属性 |                                                                                                                                                                                                                                                                                                                                                                                                          Description                                                                                                                                                                                                                                                                                                                                                                                                          |
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|   用户   |                                                                                                                                                                                                            SAP 系统的用户名此值是区分大小写。 必须设置**AcceptCredentialsInUri**属性绑定到**true**连接 URI 中指定的用户名和密码。 **注意：** [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]将保留在打开 SAP 系统上的连接时输入的用户名的值的大小写。                                                                                                                                                                                                             |
+|   “用户”   |                                                                                                                                                                                                            SAP 系统的用户名此值是区分大小写。 必须设置**AcceptCredentialsInUri**属性绑定到**true**连接 URI 中指定的用户名和密码。 **注意：** [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]将保留在打开 SAP 系统上的连接时输入的用户名的值的大小写。                                                                                                                                                                                                             |
 |  Passwd  |                                                                                                                                                                                                       在 SAP 系统，则为用户的密码此值是区分大小写。 必须设置**AcceptCredentialsInUri**属性绑定到**true**连接 URI 中指定的用户名和密码。 **注意：** [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]将保留在打开 SAP 系统上的连接时输入的密码值的大小写。                                                                                                                                                                                                       |
 |  客户端  |                                                                                                                                                                                                                                                                                                                                                                                                   SAP 系统客户端 id。                                                                                                                                                                                                                                                                                                                                                                                                   |
-| “报表” |                                                                                                                                                                                                                                                                                                                                                                                                           语言。                                                                                                                                                                                                                                                                                                                                                                                                           |
+| 语言 |                                                                                                                                                                                                                                                                                                                                                                                                           语言。                                                                                                                                                                                                                                                                                                                                                                                                           |
 |  UseSnc  | 可选参数，用于指定是否已启用 SAP 安全网络通信 (SNC)。 值可以是 True 或 False;如果为 True，则启用 SNC。 默认值为 False<br /><br /> 如果启用 SNC，还必须设置**SncPartnerName**并**SncLibrary**绑定属性。 有关详细信息，请参阅[了解关于 BizTalk Adapter for mySAP Business Suite 绑定属性](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)。<br /><br /> 如果启用 SNC 连接 URI 包含凭据，则适配器将引发异常。 **注意：** UseSnc 连接参数是仅适用于连接类型 A 和 b。本主题稍后将详细介绍不同的连接类型和其重要性。 |
 
 > [!NOTE]
@@ -85,11 +85,11 @@ sap://user=[USER_NAME];passwd=[PASSWORD];Client=[CLIENT];lang=[LANGUAGE];[UseSnc
 ### <a name="host-information-in-the-sap-connection-uri"></a>在 SAP 连接 URI 的主机信息  
  SAP 主机信息 (hostinfoparams) 由 SAP 连接 URI 中的下列元素： `connectiontype/conndetail1/conndetail2`。 这些参数指定有关客户端连接到 SAP 系统的详细信息。 有关 SAP 客户端连接以及到 SAP RFC 目标侦听器可以被指定 query_string 中建立的连接的详细信息的其他详细信息。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)] SAP 连接 URI 中支持以下客户端连接类型：  
 
-- 答： 应用程序主机基于在其中连接 URI 指定通过该应用程序服务器的连接[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]连接到 SAP。  
+- 答：应用程序主机基于在其中连接 URI 指定通过该应用程序服务器的连接[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]连接到 SAP。  
 
-- B： 负载平衡的连接 URI 中指定了消息和服务器之间的连接[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]连接到 SAP。  
+- B:负载平衡的连接 URI 中指定了消息和服务器之间的连接[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]连接到 SAP。  
 
-- D： 一种基于目标的连接，在其中连接 URI 指定连接参数包含适用于 SAP 的 saprfc.ini 文件中的目标。  
+- D:一种基于目标的连接，在其中连接 URI 指定连接参数包含适用于 SAP 的 saprfc.ini 文件中的目标。  
 
   > [!NOTE]
   > 连接类型 B 仅适用于发送端口。  在配置接收位置时，选择连接类型 A 或 d。
@@ -98,7 +98,7 @@ sap://user=[USER_NAME];passwd=[PASSWORD];Client=[CLIENT];lang=[LANGUAGE];[UseSnc
 
 |连接类型|Conndetail1|Conndetail2|Description|  
 |---------------------|-----------------|-----------------|-----------------|  
-|仅当辅助副本配置为使用手动故障转移模式，并且至少一个辅助副本当前与主要副本同步时，|ASHOST （应用程序服务器主机）|SYSNR （SAP 系统编号）|指定应用程序基于主机的连接。 对于应用程序基于主机的连接，可以 query_string 中指定一个可选网关主机和网关服务。|  
+|A|ASHOST （应用程序服务器主机）|SYSNR （SAP 系统编号）|指定应用程序基于主机的连接。 对于应用程序基于主机的连接，可以 query_string 中指定一个可选网关主机和网关服务。|  
 |B|MSHOST （消息服务器主机）|R3NAME （SAP R3 名称）|指定负载均衡通过消息服务器的连接。 对于负载平衡连接，可以 query_string 中指定可选的服务器组和消息服务。|  
 |D|DEST （包含 saprfc.ini 文件中的连接参数的目标）|--|指定基于目标的连接。 SAP 连接参数包含在 saprfc.ini 文件中指定的目标。 在目标中，可以指定只有一个类型和 B 类型的连接。|  
 
@@ -124,10 +124,10 @@ sap://user=[USER_NAME];passwd=[PASSWORD];Client=[CLIENT];lang=[LANGUAGE];[UseSnc
 
 |       ReplTest1       | 有效的连接类型 |                                                                                                                                                                                                                                    Description                                                                                                                                                                                                                                     |
 |-------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|      GwHost       |           仅当辅助副本配置为使用手动故障转移模式，并且至少一个辅助副本当前与主要副本同步时，           |                                                                                                                                                                                              在应用程序基于主机的连接中指定可选网关主机的名称。                                                                                                                                                                                               |
-|      GwServ       |           仅当辅助副本配置为使用手动故障转移模式，并且至少一个辅助副本当前与主要副本同步时，           |                                                                                                                                                                                             在应用程序基于主机的连接中指定可选网关服务的名称。                                                                                                                                                                                             |
+|      GwHost       |           A           |                                                                                                                                                                                              在应用程序基于主机的连接中指定可选网关主机的名称。                                                                                                                                                                                               |
+|      GwServ       |           A           |                                                                                                                                                                                             在应用程序基于主机的连接中指定可选网关服务的名称。                                                                                                                                                                                             |
 |      MsServ       |           B           |                                                                                                                                                                                                 在负载平衡连接中指定可选的消息服务的名称。                                                                                                                                                                                                  |
-|       分组       |           B           |                                                                                                                                                                                                 指定在负载平衡连接的应用程序服务器的可选组。                                                                                                                                                                                                 |
+|       Group       |           B           |                                                                                                                                                                                                 指定在负载平衡连接的应用程序服务器的可选组。                                                                                                                                                                                                 |
 |   ListenerDest    |          (R)          |                                                                                                                                                                      Rfc 服务器连接中 saprfc.ini 文件中指定的可选目标。 目标必须指定 R 类型连接。                                                                                                                                                                      |
 |  ListenerGwHost   |          (R)          |                                                                                      指定 rfc 服务器连接的网关主机。 此参数是可选的;但是，如果所需的 rfc 服务器连接和 LISTENERDEST 未指定或没有网关主机由 saprfc.ini 文件中的目标指定，LISTENERGWHOST 必须包含有效的网关主机。                                                                                      |
 |  ListenerGwServ   |          (R)          |                                                                                 指定 rfc 服务器连接的网关服务。 此参数是可选的;但是，如果所需的 rfc 服务器连接和 LISTENERDEST 未指定或由 saprfc.ini 文件中的目标指定没有任何网关服务，然后 LISTENERGWSERV 必须包含有效的网关服务。                                                                                  |
@@ -146,7 +146,7 @@ sap://Client=800;lang=EN@A/YourSAPHOST/00
 ## <a name="connection-uri-properties-in-the-configure-adapter-dialog-box"></a>中的连接 URI 属性配置适配器对话框  
  当您连接到 SAP 系统[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]或[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]所设置的连接 URI 参数从**URI 属性**选项卡中**配置适配器**对话框。 下表显示了 URI 属性中的显示方式**URI 属性**工作表。 （URI 属性按列出它们在 URI 属性表中显示的顺序组。）  
 
-|类别|URI 属性|URI 部分|  
+|Category|URI 属性|URI 部分|  
 |--------------|------------------|--------------|  
 |应用程序服务器|应用程序服务器主机|Conndetail1 （主机信息连接类型 A）|  
 |应用程序服务器|网关主机|GwHost （查询字符串）|  
@@ -156,12 +156,12 @@ sap://Client=800;lang=EN@A/YourSAPHOST/00
 |诊断|RFC 跟踪|RfcSdkTrace （查询字符串）|  
 |诊断|ABAP 调试|AbapDebug （查询字符串）|  
 |登录信息|客户端|客户端 (userinfoparams)|  
-|登录信息|“报表”|语言 (userinfoparams)|  
+|登录信息|语言|语言 (userinfoparams)|  
 |消息服务器|应用程序服务器组名称|组 （查询字符串）|  
 |消息服务器|消息服务器主机|Conndetail1 （主机信息连接类型 B）|  
 |消息服务器|消息服务器服务|MsServ （查询字符串）|  
 |消息服务器|R/3 系统名称|Conndetail2 （主机信息连接类型 B）|  
-|杂项|连接类型|连接类型 (主机信息： A、 B 或 D)|  
+|杂项|连接类型|连接类型 (主机信息：A、 B 或 D）|  
 |RFC 服务器|目标名称|ListenerDest （查询字符串）|  
 |RFC 服务器|网关主机|ListenerGwHost （查询字符串）|  
 |RFC 服务器|网关服务|ListenerGwServ （查询字符串）|  

@@ -1,5 +1,5 @@
 ---
-title: 教程 2： 迁移 BizTalk 项目中 Siebel |Microsoft Docs
+title: 教程 2:Siebel 中的迁移 BizTalk 项目 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3ada19454c3d2aef1c725987d8d37f7b98a2d1c2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 477a23c571333fb609987bf0060c92c6e6348ea9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996430"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370380"
 ---
-# <a name="tutorial-2-migrating-biztalk-projects-in-siebel"></a>教程 2： 迁移中 Siebel 的 BizTalk 项目
+# <a name="tutorial-2-migrating-biztalk-projects-in-siebel"></a>教程 2:在 Siebel 的 BizTalk 项目迁移
 Siebel 适配器随 Microsoft BizTalk Server 的以前版本不同于基于 WCF 的[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]在许多方面，包括：  
   
 - 创建 BizTalk 项目的设计时体验。  
@@ -46,7 +46,7 @@ Siebel 适配器随 Microsoft BizTalk Server 的以前版本不同于基于 WCF 
 ## <a name="sample-used-for-the-tutorial"></a>本教程使用示例  
  基于本教程演示如何迁移执行插入操作帐户 Siebel 业务组件上的 vPrev BizTalk 项目的示例 (Siebel_BussComp_Migration)。 与 Microsoft 提供了示例[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。 有关详细信息，请参阅[适配器示例](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
   
 -   必须有一个 vPrev BizTalk 项目。 本教程涉及到执行插入操作帐户业务组件上的 BizTalk 项目。  
   
@@ -83,11 +83,11 @@ Siebel 适配器随 Microsoft BizTalk Server 的以前版本不同于基于 WCF 
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [步骤 1： 修改 vPrev BizTalk 项目中 Oracle 数据库](../../adapters-and-accelerators/adapter-oracle-database/step-1-modify-the-vprev-biztalk-project-in-oracle-database.md)  
+-   [步骤 1：修改 vPrev BizTalk 项目中 Oracle 数据库](../../adapters-and-accelerators/adapter-oracle-database/step-1-modify-the-vprev-biztalk-project-in-oracle-database.md)  
   
--   [步骤 2： 配置业务流程在 BizTalk Server 管理控制台中使用 ORacle 数据库适配器](../../adapters-and-accelerators/adapter-oracle-database/step-2-configure-an-orchestration-to-use-the-oracle-db-adapter-in-biztalk.md)  
+-   [步骤 2：若要使用 ORacle 数据库适配器的 BizTalk Server 管理控制台中配置业务流程](../../adapters-and-accelerators/adapter-oracle-database/step-2-configure-an-orchestration-to-use-the-oracle-db-adapter-in-biztalk.md)  
   
--   [步骤 3： 测试具有 Siebel 适配器的迁移应用程序](../../adapters-and-accelerators/adapter-siebel/step-3-test-the-migrated-application-with-the-siebel-adapter.md)  
+-   [步骤 3：测试迁移应用程序使用 Siebel 适配器](../../adapters-and-accelerators/adapter-siebel/step-3-test-the-migrated-application-with-the-siebel-adapter.md)  
   
 ## <a name="see-also"></a>请参阅  
  [Siebel 适配器教程](../../adapters-and-accelerators/adapter-siebel/siebel-adapter-tutorials.md)

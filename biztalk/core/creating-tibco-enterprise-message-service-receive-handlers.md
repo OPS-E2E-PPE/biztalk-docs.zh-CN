@@ -14,16 +14,16 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 27dd4ff3e317f178c2b9085cf531a6b963aafc7f
-ms.sourcegitcommit: be6273d612669adfbb9dc9208aaae0a8437d4017
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "24015372"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390230"
 ---
 # <a name="create-tibco-ems-receive-artifacts"></a>创建 TIBCO EMS 接收项目
 
 ## <a name="overview"></a>概述
-TIBCO Enterprise Message Service 接收器是一种侦听服务，可以注册特殊的队列或主题，并接收相关消息。 TIBCO Enterprise Message Service 的 BizTalk 适配器首先通过打开一个新会话向 TIBCO Enterprise Message Service 注册，然后继续轮询以接收消息。 该部分介绍了如何设置接收端口以连接到 TIBCO Enterprise Message Service，如何在您的业务流程中加入 XML 以在运行时与 TIBCO EMS 进行交互。  
+TIBCO Enterprise Message Service 接收器是侦听器服务，注册特殊的队列或主题，并接收相关消息。 用于 TIBCO Enterprise Message Service 的 BizTalk 适配器第一次注册与 TIBCO Enterprise Message Service 通过打开新的会话，，然后它会继续轮询以接收消息... 本部分介绍如何设置要连接到 TIBCO Enterprise Message Service 的接收端口以及如何将 XML 包含在您的业务流程在运行时与 TIBCO EMS 交互。  
 
 ## <a name="create-a-receive-port"></a>创建接收端口  
   
@@ -70,27 +70,27 @@ TIBCO Enterprise Message Service 接收器是一种侦听服务，可以注册�
   
     |参数|Description|  
     |---------------|-----------------|  
-    |**消息选择器**|仅当目标消息中的此字符串的评估结果为 True 时，才接收消息。<br /><br /> 允许接收端口仅检索其包含的标头属性与本字段中介绍的表达式匹配的消息。<br /><br /> 消息选择器的语法基于 SQL92 条件表达式语法的子集。 TIBCO EMS 用户指南中完整说明了该语法。<br /><br /> 例如，如果一个消息包含标头属性名称 NewsType，则接收端口将仅接收类型为 Sports 或 Editorial 的消息。|  
+    |**消息选择器**|此字符串的计算结果为与目标中的消息，则返回 True，才接收消息。<br /><br /> 允许要检索包含在此字段中所述的表达式匹配的标头属性的消息的接收端口。<br /><br /> 消息选择器的语法基于 SQL92 条件表达式语法的子集。 完全在 TIBCO EMS 用户指南中介绍的语法。<br /><br /> 例如，如果一条消息包含标头属性名称 NewsType，接收端口可以检索仅 Sports 或 Editorial 的类型。|  
     |**重试次数**|传输重试计数。 默认值为 0。|  
-    |**重试间隔**|适配器发起重试之前的等待时间。 默认值为 5 分钟。|  
+    |**重试间隔**|启动重试之前的时间段适配器的等待。 默认值为 5 分钟。|  
   
 3.  展开**服务器连接定义**并输入所需的所有信息。  
   
     |参数|Description|  
     |---------------|-----------------|  
-    |**目标**|强制设置。 定义目标名称和类型。 定义队列或主题具有以下格式：Queue[queue.name] 或 Topic[topic.name]。|  
-    |**端口号**|TIBCO EMS 服务器侦听的端口。|  
+    |**目标**|强制设置。 定义名称和目标的类型。 定义队列或主题具有以下格式：Queue [queue.name] 或 topic [topic.name]。|  
+    |**端口号**|TIBCO EMS 服务器在其侦听的端口。|  
     |**服务器名称**|强制设置。 托管 TIBCO EMS 服务器的系统的名称。|  
   
-4.  使用单一登录 (SSO) 提供凭据。  
+4.  提供使用单一登录 (SSO) 的凭据。  
   
      有两种方法可用于访问 TIBCO EMS 系统。 可以使用凭据 （用户名称和密码参数） 或单一登录。  
   
     -   选择**是**中**使用 SSO**若要使用单一登录。  
   
-    -   在列表中选择一个关联应用程序。  
+    -   在列表中选择关联应用程序。  
   
-         企业单一登录工具创建的关联应用程序代表诸如 TIBCO EMS 之类的应用程序。 用于 TIBCO EMS 的 Microsoft BizTalk 适配器使用应用程序用户的凭据。 这些凭据是从服务器系统的 SSO 数据库中为指定关联应用程序检索的。  
+         企业单一登录工具创建的关联应用程序表示诸如 TIBCO EMS 之类的应用程序。 用于 TIBCO EMS 的 Microsoft BizTalk 适配器使用应用程序用户的凭据。 从指定的关联应用程序的服务器系统的 SSO 数据库检索这些凭据。  
   
          有关如何创建关联应用程序的详细信息，请参阅[创建关联应用程序](../core/creating-affiliate-applications5.md)。  
   
@@ -98,8 +98,8 @@ TIBCO Enterprise Message Service 接收器是一种侦听服务，可以注册�
   
     |参数|Description|  
     |---------------|-----------------|  
-    |`Password`|用于与 TIBCO EMS 后台程序通信的用户的密码。<br /><br /> 如果未选中**使用 SSO**，则必须设置凭据参数，用于与 TIBCO EMS 守护程序通信的 TIBCO EMS 的 BizTalk 适配器。|  
-    |`User Name`|用于与 TIBCO EMS 后台程序进行通信的用户的名称。<br /><br /> 如果未选中**使用 SSO**，则必须设置凭据参数，用于与 TIBCO EMS 守护程序通信的 TIBCO EMS 的 BizTalk 适配器。|  
+    |`Password`|用于与 TIBCO EMS 守护程序通信的用户的密码。<br /><br /> 如果未选中**使用 SSO**，则必须设置凭据参数，用于与 TIBCO EMS 守护程序通信的 TIBCO EMS 的 BizTalk 适配器。|  
+    |`User Name`|用于与 TIBCO EMS 守护程序通信的用户的名称。<br /><br /> 如果未选中**使用 SSO**，则必须设置凭据参数，用于与 TIBCO EMS 守护程序通信的 TIBCO EMS 的 BizTalk 适配器。|  
   
 6.  单击**Apply**，然后单击**确定**。 
 

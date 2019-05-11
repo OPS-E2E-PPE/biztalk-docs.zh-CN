@@ -1,5 +1,5 @@
 ---
-title: 配置 WCF 适配器以截获 BAM 数据 |Microsoft 文档
+title: 配置 WCF 适配器以侦听 BAM 数据 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f418512ecd0a3e38f884965d1698579fb300dd74
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 15faf342e5fc947fea236d179f66bd7622e21ebb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232765"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390737"
 ---
 # <a name="configuring-the-wcf-adapter-to-intercept-bam-data"></a>配置 WCF 适配器以侦听 BAM 数据
-本部分包含为配置 BizTalk WCF 适配器以便与 BAM WCF 侦听器一起运行而必须执行的步骤的相关信息。  
+本部分包含 BizTalk WCF 适配器以使用 BAM WCF 侦听器配置所必须采取的步骤信息。  
   
  基本步骤如下所述：  
   
@@ -34,10 +34,10 @@ ms.locfileid: "22232765"
   
 -   [如何将 BAM 侦听器行为添加到 Machine.config 文件](../core/how-to-add-the-bam-interceptor-behavior-to-the-machine-config-file.md)  
   
--   [如何为 BizTalk Server 中创建的 WCF 适配器](../core/how-to-create-a-wcf-adapter-for-biztalk-server.md)  
+-   [如何为 BizTalk Server 创建 WCF 适配器](../core/how-to-create-a-wcf-adapter-for-biztalk-server.md)  
   
--   [如何配置接收和 BAM WCF 侦听发送位置和端口](../core/how-to-configure-receive-and-send-locations-and-ports-for-bam-wcf-interception.md)  
+-   [如何配置接收和发送位置及端口用于 BAM WCF 侦听](../core/how-to-configure-receive-and-send-locations-and-ports-for-bam-wcf-interception.md)  
   
--   [如何配置 BAM WCF 截获](../core/how-to-configure-the-bam-wcf-interception.md)  
+-   [如何配置 BAM WCF 侦听](../core/how-to-configure-the-bam-wcf-interception.md)  
   
 -   [使用错误处理](../core/using-fault-handling.md)

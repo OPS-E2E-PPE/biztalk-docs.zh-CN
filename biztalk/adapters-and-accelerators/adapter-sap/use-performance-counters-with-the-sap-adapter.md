@@ -15,12 +15,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7818f5f5cf24bd1d4e58da2c24691813fc2b761f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 16f83041339275b1b372f57a86754e8df28a24a1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991454"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372214"
 ---
 # <a name="use-performance-counters-with-the-sap-adapter"></a>使用 SAP 适配器的性能计数器
 Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]客户端可以使用性能计数器来测量的适配器的性能。 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装程序创建的性能计数器类别"[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]"沿安装[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。  

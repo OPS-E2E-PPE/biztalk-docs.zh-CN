@@ -1,5 +1,5 @@
 ---
-title: SendPortRef （映射节点） |Microsoft 文档
+title: SendPortRef （Mapping 节点） |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,19 +14,19 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6448147db5e45278e33b3ccf3a17f019bfa2dc56
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 883f7deabaf4d2269dd998e67374bcfe17a0b523
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269965"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393391"
 ---
-# <a name="sendportref-mapping-node"></a>SendPortRef（Mapping 节点）
+# <a name="sendportref-mapping-node"></a>SendPortRef （Mapping 节点）
 绑定文件的 Mapping 节点的 SendPortRef 节点列出父级映射节点引用的发送端口的名称。  
   
 ## <a name="nodes-in-the-sendportref-node"></a>SendPortRef 节点中的节点  
  下表列出了可为绑定文件的此节点设置的属性：  
   
-|**名称**|**节点类型**|**数据类型**|**Description**|**限制**|**注释**|  
+|**名称**|**节点类型**|**数据类型**|**说明**|**限制**|**注释**|  
 |--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|Name|Attribute|xs:string|指定父级映射节点引用的发送端口的名称|可选|默认值：空|
+|“属性”|特性|xs:string|指定父级映射节点引用的发送端口的名称|可选|默认值：空|

@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 71e73eb9b953e514e48ae4e927ec3e4c104feb43
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 77603901b5fbbad945d9e6f0e34e3c4131bf33c8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972494"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394550"
 ---
 # <a name="message-references-in-user-code"></a>在用户代码中的消息引用
 当构造一条消息时，消息的表示形式是 MessageBox 数据库中并且另一种表示在计算机上的内存。 如果通过传递的消息引用与.NET 对象或外部程序集，使消息赋值和.NET 对象或外部程序集然后修改计算机上的内存中的表示形式，BizTalk 业务流程引擎并不知道修改。  

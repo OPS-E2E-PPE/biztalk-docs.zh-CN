@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c23bce67dbc4eaca8441e6e7d07573724225cc45
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5c4f9cba33b8e26287fa7be424c0376a60333bf7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976230"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369958"
 ---
 # <a name="configure-dynamic-ports-in-the-sql-adapter"></a>在 SQL 适配器配置动态端口
 在中[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，可以配置有关的动态端口[!INCLUDE[wcfadapter_short](../../includes/wcfadapter-short-md.md)]。 因为[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]是基于 WCF 的适配器，您可以动态地配置的端口[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]通过使用消息上下文属性。  

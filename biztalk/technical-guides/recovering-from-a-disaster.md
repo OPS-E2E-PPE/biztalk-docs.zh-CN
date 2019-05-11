@@ -1,5 +1,5 @@
 ---
-title: 从灾难中恢复 |Microsoft 文档
+title: 从灾难中恢复 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ff6d7ba22180995d41fa536717804483931c7ad0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0e3b7ec97b4a6bda1a3adf267717c7f6cac61851
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22301933"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395091"
 ---
 # <a name="recovering-from-a-disaster"></a>从灾难中恢复
-本部分详细介绍的步骤将生产操作转移到灾难恢复站点。 对于本部分，联机生产系统称为"源"系统。 灾难恢复站点被称为"destination"系统。 本部分概述了灾难恢复过程。  
+本部分详细介绍的步骤将生产操作转移到灾难恢复站点。 出于本部分的目的，在线生产系统称为"源"系统。 灾难恢复站点称为"目标"系统。 本部分提供了灾难恢复过程的概述。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -28,6 +28,6 @@ ms.locfileid: "22301933"
   
 -   [恢复运行时计算机](../technical-guides/recovering-the-runtime-computers.md)  
   
--   [恢复的其他应用程序](../technical-guides/recovering-additional-applications.md)  
+-   [恢复其他应用程序](../technical-guides/recovering-additional-applications.md)  
   
--   [故障排除日志传送](../technical-guides/troubleshooting-log-shipping.md)
+-   [日志传送疑难解答](../technical-guides/troubleshooting-log-shipping.md)

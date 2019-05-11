@@ -1,5 +1,5 @@
 ---
-title: 解决性能问题与 Siebel 适配器 |Microsoft 文档
+title: 使用 Siebel 适配器进行性能问题故障排除 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,30 +15,30 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6443dd8b96b19b3cf42f6444ba1ae6c16f2b4ee6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e2c5ecd89cfe3ea284bdc3264e8db597f29fdde7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22221989"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370406"
 ---
-# <a name="troubleshoot-performance-issues-with-the-siebel-adapter"></a>与 Siebel 适配器解决性能问题
-本部分讨论如何使用故障排除方法来解决在使用时可能遇到的性能问题[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]。  
+# <a name="troubleshoot-performance-issues-with-the-siebel-adapter"></a>使用 Siebel 适配器进行故障排除性能问题：
+本部分讨论如何使用故障排除技术来解决使用时可能遇到的性能问题[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]。  
   
 ## <a name="known-issues"></a>已知问题  
   
-###  <a name="slowdown-or-stall-in-throughput-when-using-the-adapter-with-biztalk-server"></a>缓慢或吞吐量与 BizTalk Server 使用适配器时停止  
+###  <a name="slowdown-or-stall-in-throughput-when-using-the-adapter-with-biztalk-server"></a>缓慢或停滞在使用适配器与 BizTalk Server 时的吞吐量  
  **问题**  
   
- 使用时[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]与[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，由适配器发送或接收的消息数变慢或进入停止。  
+ 使用时[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]与[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，消息发送或接收的适配器数速度变慢或进入停滞。  
   
- **可能的原因**  
+ **原因**  
   
- **EnableBizTalkCompatibilityMode**绑定属性未设置在 WCF 自定义上发送或接收 BizTalk Server 管理控制台中的端口。  
+ **EnableBizTalkCompatibilityMode**绑定属性中未设置 WCF 自定义发送或接收端口在 BizTalk Server 管理控制台。  
   
  **解决方法**  
   
- 设置**EnableBizTalkCompatibilityMode**绑定属性为 True。 有关此属性的详细信息，请参阅[了解针对 Siebel 绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md)。 有关如何设置绑定属性的说明，请参阅[为 Siebel 配置的绑定属性](../../adapters-and-accelerators/adapter-siebel/configure-the-binding-properties-for-siebel.md)。  
+ 设置**EnableBizTalkCompatibilityMode**绑定属性为 True。 有关此属性的详细信息，请参阅[了解关于 BizTalk Adapter for Siebel 绑定属性](../../adapters-and-accelerators/adapter-siebel/read-about-biztalk-adapter-for-siebel-binding-properties.md)。 有关如何设置绑定属性的说明，请参阅[配置的绑定属性用于 Siebel](../../adapters-and-accelerators/adapter-siebel/configure-the-binding-properties-for-siebel.md)。  
   
-## <a name="see-also"></a>另请参阅  
-[解决在 Siebel 适配器](../../adapters-and-accelerators/adapter-siebel/troubleshoot-the-siebel-adapter.md)
+## <a name="see-also"></a>请参阅  
+[Siebel 适配器疑难解答](../../adapters-and-accelerators/adapter-siebel/troubleshoot-the-siebel-adapter.md)

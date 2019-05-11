@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c0c45c61efee90b68efc927d88dbcf6429fe13e2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2ddfc3a9490bb85169d56526b706c1b159aef8d9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973822"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393460"
 ---
 # <a name="planning-for-tracking"></a>规划跟踪
 跟踪的消息是所依据的部分消息实例，如消息正文、 消息属性和元数据存储在数据库中，通常出于存档目的的过程。 随后可以通过从中的组中心页运行查询来查看所跟踪的消息实例部分[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。 除了访问存档的数据，还可以查看实时数据，可以是用于识别和解决问题在开发或过渡环境的有用工具。  
@@ -49,11 +49,11 @@ ms.locfileid: "36973822"
   
 ##  <a name="BKMK_TrackingBP"></a> 跟踪的最佳做法  
   
-- **确定您需要在规划期间跟踪的信息**： 您应决定期间的规划阶段所需跟踪，以便部署项目后你可以设置跟踪选项并限制跟踪到的数据量的信息为您提供所需的信息。  
+- **确定您需要在规划期间跟踪的信息**:应在规划阶段确定需要跟踪，以便部署项目后你可以设置跟踪选项并限制为您提供所需的信息的跟踪数据量的信息。  
   
-- **不要跟踪所有消息**： 我们建议不都跟踪所有消息，因为每次访问消息时，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将生成另一个副本。 而是可以通过跟踪特定端口来缩小范围。 这可以帮助您的系统性能最大化和保持数据库整洁。  
+- **不要跟踪所有消息**:我们建议不跟踪所有消息，因为每次访问消息时，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将生成另一个副本。 而是可以通过跟踪特定端口来缩小范围。 这可以帮助您的系统性能最大化和保持数据库整洁。  
   
-- **将发送端口上设置跟踪和接收端口而不是在管道上的**： 如果设置管道的跟踪选项，则还将设置为使用的管道的每个端口全局跟踪选项。 反过来，这可能会在导致被跟踪比你预期，这将降低系统性能的更多数据。 相反，您可以设置跟踪选项上的发送端口和接收端口。  
+- **将发送端口上设置跟踪和接收端口而不是在管道上的**:如果设置管道的跟踪选项，则还将设置为使用的管道的每个端口全局跟踪选项。 反过来，这可能会在导致被跟踪比你预期，这将降低系统性能的更多数据。 相反，您可以设置跟踪选项上的发送端口和接收端口。  
   
 - **请考虑各种因素时调整 BizTalk 跟踪数据库的大小**:  
   

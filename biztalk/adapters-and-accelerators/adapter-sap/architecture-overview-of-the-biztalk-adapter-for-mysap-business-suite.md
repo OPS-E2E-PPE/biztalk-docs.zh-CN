@@ -15,12 +15,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b6e05cde05819edf1bbe1525d87797bf1131f1d5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 81b556f9d91a896fc0a544cd78bfc043588a274b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006046"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374265"
 ---
 # <a name="architecture-overview-of-the-biztalk-adapter-for-mysap-business-suite"></a>用于 mySAP Business Suite 的 BizTalk 适配器的体系结构概述
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]实现[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]自定义绑定，其中包含用于实现与 SAP 系统的通信的单个自定义传输绑定元素。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]由包装[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]运行时和公开给应用程序可以通过[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]通道体系结构。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]与 64 位或 32 位版本的 SAP Unicode RFC SDK (librfc32u.dll) 通过 SAP 系统进行通信。 

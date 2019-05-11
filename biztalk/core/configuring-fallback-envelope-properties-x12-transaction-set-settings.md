@@ -12,21 +12,21 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6225a931a991d4b4fb85a23525c53fe01f9e52db
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: afb2f0244f0f0ace3ebd2bba67909935a1e8e96b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021370"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391242"
 ---
 # <a name="configuring-fallback-envelope-properties-x12-transaction-set-settings"></a>配置回退信封属性（X 12 事务集设置）
-在中**信封**页**事务集设置**部分中，可以定义 BizTalk Server 如何生成它发送到参与方的 X12 编码交换的 GS 段。 GS 段为 X12 编码的交换标识和指定功能组。  
+在中**信封**页**事务集设置**部分中，可以定义 BizTalk Server 如何生成它发送到参与方的 X12 编码交换的 GS 段。 GS 段标识，并指定功能组对于 X12 编码的交换。  
   
 > [!NOTE]
 >  本主题还适用于与 HIPAA 相关的设置。  
   
-## <a name="prerequisites"></a>必要條件  
- 必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组或 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators 组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 必须以成员的身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理员或[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]B2B Operators 组。  
   
 ### <a name="to-define-the-gs-segments"></a>定义 GS 段  
   
@@ -46,7 +46,7 @@ ms.locfileid: "37021370"
   
 8. 有关**责任代理 (GS07)**，从下拉列表中选择值。  
   
-9. 有关**文档标识符 (GS08)**，输入最小为 1 和最大为 12 的字母数字值。 此字段为可选字段。  
+9. 有关**文档标识符 (GS08)**，输入最小为 1 和最大为 12 的字母数字值。 这是一个可选字段。  
   
 10. 单击**Apply**以接受更改，然后才能继续进行配置，或单击**确定**以验证所做的更改，然后关闭对话框。  
   

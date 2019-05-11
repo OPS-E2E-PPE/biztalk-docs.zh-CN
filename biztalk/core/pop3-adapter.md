@@ -19,12 +19,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 34a5f6a73f30ba831256ce1699b9a6a77b75c102
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f1be3efdd18efa46213ffc9511bd4bd795a946bd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982790"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394904"
 ---
 # <a name="pop3-adapter"></a>POP3 适配器
 使用邮局协议 3 (POP3) 适配器从 POP3 邮箱所在到通过 POP3 协议运行 Microsoft BizTalk Server 的服务器的服务器检索数据。  
@@ -67,6 +67,6 @@ ms.locfileid: "36982790"
   
 -   [配置 POP3 适配器](../core/configuring-the-pop3-adapter.md)  
   
--   [演练：创建使用 POP3 适配器的 BizTalk 应用程序](../core/walkthrough-creating-a-biztalk-application-that-uses-the-pop3-adapter.md)  
+-   [演练：创建 BizTalk 应用程序使用 POP3 适配器](../core/walkthrough-creating-a-biztalk-application-that-uses-the-pop3-adapter.md)  
   
 -   [使用 POP3 适配器处理多部分消息](../core/processing-multi-part-messages-with-the-pop3-adapter.md)

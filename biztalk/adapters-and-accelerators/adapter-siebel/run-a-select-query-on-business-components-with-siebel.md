@@ -1,5 +1,5 @@
 ---
-title: 在带有 Siebel 业务组件上运行 SELECT 查询 |Microsoft 文档
+title: 使用 Siebel 业务组件上运行 SELECT 查询 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 92b9bd5645579bb66a338c05802c5016214c9b0b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bae686ace4f7feea8b5084f7d4844df61ea79807
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22221957"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371128"
 ---
-# <a name="run-a-select-query-on-business-components-with-siebel"></a>在带有 Siebel 业务组件上运行 SELECT 查询
+# <a name="run-a-select-query-on-business-components-with-siebel"></a>使用 Siebel 业务组件上运行 SELECT 查询
 本部分演示如何从使用 Siebel 业务组件中选择数据[!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)]。  
   
-## <a name="selecting-data-from-a-siebel-business-component"></a>从 Siebel 在业务组件中选择数据  
+## <a name="selecting-data-from-a-siebel-business-component"></a>选择 Siebel 业务组件中的数据  
  本部分演示如何从 Siebel 存储库中的"帐户"业务组件中选择数据。  
   
 ```  
@@ -76,6 +76,6 @@ namespace SiebelADO
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [.NET Framework 数据提供程序用于 Siebel eBusiness Applications](../../adapters-and-accelerators/adapter-siebel/use-the-net-framework-data-provider-for-siebel-ebusiness-applications.md)   
- [使用 Siebel 运行业务服务上的执行操作](../../adapters-and-accelerators/adapter-siebel/run-an-execute-operation-on-business-services-with-siebel.md)
+## <a name="see-also"></a>请参阅  
+ [用于 Siebel eBusiness 应用程序使用.NET Framework 数据提供程序](../../adapters-and-accelerators/adapter-siebel/use-the-net-framework-data-provider-for-siebel-ebusiness-applications.md)   
+ [运行与 Siebel 业务服务上的执行操作](../../adapters-and-accelerators/adapter-siebel/run-an-execute-operation-on-business-services-with-siebel.md)

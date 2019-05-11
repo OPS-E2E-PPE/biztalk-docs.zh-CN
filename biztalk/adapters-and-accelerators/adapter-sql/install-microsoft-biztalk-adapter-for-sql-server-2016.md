@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 65205828e4ab178a0fec29c37cc1854f6a570242
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 15681ec21d399e03d86ec9457d814cf4531ed30b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966974"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369360"
 ---
 # <a name="install-microsoft-biztalk-adapter-for-sql-server---2016"></a>安装 Microsoft BizTalk Adapter for SQL Server-2016
 安装[!INCLUDE[adaptersql_md](../../includes/adaptersql-md.md)]附带[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]。
@@ -37,7 +37,7 @@ ms.locfileid: "36966974"
 
 ||
 |---|
-|Windows Server 2016 <br />Windows Server 2012 R2 <br />Windows 10 <br />-Windows 8.1    |
+|- Windows Server 2016 <br />- Windows Server 2012 R2 <br />- Windows 10 <br />- Windows 8.1    |
 |.NET Framework 4.6.*x*|
 |Visual Studio 2015|
 |[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]|
@@ -49,7 +49,7 @@ ms.locfileid: "36966974"
 
 ||
 |---|
-|Windows Server 2016 <br />Windows Server 2012 R2 <br />Windows 10 <br />-Windows 8.1    |
+|- Windows Server 2016 <br />- Windows Server 2012 R2 <br />- Windows 10 <br />- Windows 8.1    |
 |.NET Framework 4.6.*x*|
 |Visual Studio 2015|
 |[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]<br /><br /> 安装[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]有关[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]附带[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。 若要安装，请执行**自定义**(选择**BizTalk Server 外接程序**) 或**完成**安装[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。|
@@ -60,9 +60,9 @@ ms.locfileid: "36966974"
 ## <a name="supported-sql-server-versions-and-client-libraries"></a>支持的 SQL Server 版本和客户端库  
  以下部分提供支持的 SQL Server 版本和客户端所需的库[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。  
 
-- **支持的服务器版本**: SQL Server 2016、 SQL Server 2014
+- **支持的服务器版本**:SQL Server 2016, SQL Server 2014
 
-- **支持的客户端版本**: Microsoft[!INCLUDE[btsDotNetFramework_md](../../includes/btsdotnetframework-md.md)]捆绑包连接到 SQL Server 所需的客户端 Dll。 不需要在您的计算机上显式安装任何客户端 Dll。  
+- **支持的客户端版本**:Microsoft[!INCLUDE[btsDotNetFramework_md](../../includes/btsdotnetframework-md.md)]捆绑包连接到 SQL Server 所需的客户端 Dll。 不需要在您的计算机上显式安装任何客户端 Dll。  
 
 - **所需的驱动程序**:  
 
@@ -285,7 +285,7 @@ ms.locfileid: "36966974"
 
 1. 打开命令提示符，并导航到的根目录下[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]安装程序。  
 
-2. 运行以下命令：  
+2. 运行下面的命令：  
 
    > [!NOTE]
    >  若要修改[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]在基于 x64 的平台，在以下命令中上, 无提示模式下安装替换 SqlAdapterSetup64.msi SqlAdapterSetup.msi。  
@@ -323,7 +323,7 @@ ms.locfileid: "36966974"
 
 1. 打开命令提示符，并导航到的根目录下[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]安装程序。  
 
-2. 运行以下命令：  
+2. 运行下面的命令：  
 
    > [!NOTE]
    >  若要删除[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]在无提示模式在基于 x64 的平台，在以下命令中，替换为 SqlAdapterSetup.msi SqlAdapterSetup64.msi。  

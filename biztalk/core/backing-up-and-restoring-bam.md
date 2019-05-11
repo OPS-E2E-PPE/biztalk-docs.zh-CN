@@ -1,5 +1,5 @@
 ---
-title: 备份和还原 BAM |Microsoft 文档
+title: 备份和还原 BAM |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,26 +19,26 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f002dbbd25fe71650125a009edc4583ef909004b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 83a1911d8d320eefb3bc08f6be2f40d217ba20a7
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230293"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530608"
 ---
 # <a name="backing-up-and-restoring-bam"></a>Backing Up and Restoring BAM
 本部分提供有关如何备份和还原 BAM 分析数据库、跟踪分析数据库、BAM 星型架构数据库和 BAM 存档数据库的信息。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [如何备份 BAM 分析和跟踪 Analysis Server 数据库](../core/how-to-back-up-the-bam-analysis-and-tracking-analysis-server-databases.md)  
+-   [如何备份 BAM 分析和跟踪分析服务器数据库](../core/how-to-back-up-the-bam-analysis-and-tracking-analysis-server-databases.md)  
   
--   [如何更新对 BAM Analysis Server 和星型架构数据库名称的引用](../core/update-references-to-the-bam-analysis-server-and-star-schema-database-names.md)  
+-   [如何更新对 BAM 分析服务器和星型架构数据库名称的引用](../core/update-references-to-the-bam-analysis-server-and-star-schema-database-names.md)  
   
 -   [如何更新对 BAM 存档数据库名称的引用](../core/how-to-update-references-to-the-bam-archive-database-name.md)  
   
--   [如何更新对 BAM 主导入数据库名称和连接字符串的引用](../core/update-references-to-bam-primary-import-database-name-and-connection-string.md)  
+-   [如何更新对 BAM 主导入数据库名称和连接字符串引用](../core/update-references-to-bam-primary-import-database-name-and-connection-string.md)  
   
--   [如何更新对 BAM 通知引用 Services 数据库](../core/how-to-update-references-to-the-bam-notification-services-databases.md)  
+-   [如何更新对 BAM Notification Services 数据库](../core/how-to-update-references-to-the-bam-notification-services-databases.md)  
   
--   [如何解决未完成的活动实例](../core/how-to-resolve-incomplete-activity-instances.md)
+-   [如何解析不完整的活动实例](../core/how-to-resolve-incomplete-activity-instances.md)

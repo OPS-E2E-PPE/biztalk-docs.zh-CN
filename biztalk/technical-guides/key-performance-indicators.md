@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f808299dd0df0c47b169a831a7f09b33e59dc799
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2fc0d89c7d6bb72cf68611d1a6eaccffa11dbe0d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966134"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395839"
 ---
 # <a name="key-performance-indicators"></a>关键绩效指标
 本主题提供使用以下扩展方法时，观察到的 BizTalk Server 产品组的测试结果：  
@@ -48,7 +48,7 @@ ms.locfileid: "36966134"
   
  **BizTalk Server 和 SQL Server CPU 使用率百分比**  
   
- ![M&#45;MultipleMsgBox](../technical-guides/media/m-multiplemsgbox.gif "M MultipleMsgBox")  
+ ![M&#45;MultipleMsgBox](../technical-guides/media/m-multiplemsgbox.gif "M-MultipleMsgBox")  
   
 ### <a name="orchestration-scenario-biztalk-server-scale-out--sql-server-and-biztalk-server-kpi"></a>业务流程方案中，BizTalk Server 向外缩放-SQL Server 和 BizTalk Server KPI  
  添加第二个计算机运行 BizTalk Server 不显示对整体吞吐量显著的影响。 在 BizTalk Server CPU 上的负载可降低的 23%。 适用于 SQL Server CPU 从 66.5%增加到 68.5%添加运行 BizTalk Server 的其他计算机时。  
@@ -62,7 +62,7 @@ ms.locfileid: "36966134"
   
  **BizTalk Server 和 SQL Server CPU 使用率百分比**  
   
- ![O&#45;MultipleMsgBox](../technical-guides/media/o-multiplemsgbox.gif "O MultipleMsgBox")  
+ ![O&#45;MultipleMsgBox](../technical-guides/media/o-multiplemsgbox.gif "O-MultipleMsgBox")  
   
 ## <a name="see-also"></a>请参阅  
  [缩放 BizTalk Server 生产环境](../technical-guides/scaling-a-production-biztalk-server-environment.md)

@@ -1,5 +1,5 @@
 ---
-title: 阶段 1： 设置评估范围 |Microsoft Docs
+title: 第 1 阶段：设置评估范围 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 377abbb4ae14e3c3e1c13f7caf45ac998e9f5e9b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 11fa6c99aec54848c27927aed3444cc9d8b18983
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986974"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394625"
 ---
-# <a name="phase-1-scoping-the-assessment"></a>阶段 1： 设置评估范围
+# <a name="phase-1-scoping-the-assessment"></a>第 1 阶段：设置评估范围
 本主题介绍 BizTalk Server 性能评估的作用域阶段的方面。  
   
  当具有吸引力的性能评估中的一个常见错误是低估性能评估的范围。 如果没有预先分配足够的资源和时间，负责性能评估的团队不能完成所有生成并测试复杂的类似生产的环境所需的任务。 性能评估的团队应仔细选择其谨慎。 大多数性能评估进行非常有限的时间范围内，因此团队应确定，并重点放在一个或两个，可以在三个在大多数，关键性能目标。 要进行测试的应用程序应专门开发能够专注于标识的性能目标，并应挑选出所有尽可能多地其他技术变量。 本主题介绍 BizTalk Server 性能评估的作用域阶段的方面。  
@@ -65,7 +65,7 @@ ms.locfileid: "36986974"
   
 - **峰值负载**  
   
-- **时间才能完成一批***X*   
+- **时间才能完成一批***X*  
   
 - **突发高恢复方案**  
   
@@ -97,9 +97,9 @@ ms.locfileid: "36986974"
   
 -   在解决方案中实现业务流程要求是什么？  
   
--   文档的吞吐量要求： 解决方案的最大可承受吞吐量要求是什么？  
+-   文档的吞吐量要求：该解决方案的最大可承受吞吐量要求有哪些？  
   
--   延迟要求： 响应能力如何解决方案需要位于要求-响应和请求-响应方案？  
+-   延迟要求：响应能力如何解决方案需要求-响应和请求-响应方案？  
   
 -   如何从文档负载高峰期期间恢复解决方案？  
   
@@ -203,7 +203,7 @@ ms.locfileid: "36986974"
   
   -   按时间顺序 （以确保它们可以应用相同的顺序在生产系统中） 实现的优化  
   
-  -   有关如何帮助使用 Visual Studio 2010 负载测试的详细信息，请参阅促进自动测试使用 Visual Studio。  
+  -   高级体系结构关系图  
   
   -   要测试的方案的详细信息  
   
@@ -235,7 +235,7 @@ ms.locfileid: "36986974"
   
   - 测试运行数  
   
-  - date  
+  - Date  
   
   - 处理的消息总数  
   
@@ -334,7 +334,7 @@ ms.locfileid: "36986974"
   |            **消息类型**             |                                                                                                                                                                                                                                                                  -小的 XML 消息，大约 25 KB 符合 XML 架构的*X*<br />-中等 XML 消息，大约符合 XML 架构的 512 KB *Y*                                                                                                                                                                                                                                                                  |
   |        **消息的分发**         |                                                                                                                                                                                                          -58 %25 KB （小型 XML 消息）<br />-25 %512 KB （中等 XML 消息）<br />-11 %3 MB （中等二进制数据 – PDF）-非可压缩<br />-4 %7.5 MB （大型二进制数据 – PDF）-非可压缩)<br />-2 %20 MB （大型二进制数据 – PDF）-非可压缩                                                                                                                                                                                                          |
   |    **峰值负载处理要求**    |                                                                                                                                                                                                                                  大型二进制数据 (20 MB) 将表示大约 2%的数据 （如上所示） 这处理的时间是不可预知。 系统必须能够容纳这些大型消息在任何给定时间。                                                                                                                                                                                                                                  |
-  | **用于接收/发送消息的终结点** | **小的 XML 消息 (25 KB)**<br /><br /> -接收位置： PaymentXMLDocIn<br />-主机： ReceiveHost<br />的使用管道： XMLReceive<br /><br /> **中等 XML 消息 (512 KB)**<br /><br /> -接收位置： PaymentXMLDocIn<br />-主机： ReceiveHost<br />的使用管道： XMLReceive<br /><br /> **中等二进制数据 (3 MB)-PDF-非可压缩**<br /><br /> -接收位置： BinaryDataIn<br />-主机： ReceiveHost<br />的使用管道： PassThruReceive<br /><br /> **大型二进制数据 (7.5 MB – 20 MB)-PDF-非可压缩**<br /><br /> -接收位置： BinaryDataIn<br />-主机： ReceiveHost<br />的使用管道： PassThruReceive |
+  | **用于接收/发送消息的终结点** | **小的 XML 消息 (25 KB)**<br /><br /> -接收位置：PaymentXMLDocIn<br />-主机：ReceiveHost<br />-使用的管道：XMLReceive<br /><br /> **中等 XML 消息 (512 KB)**<br /><br /> -接收位置：PaymentXMLDocIn<br />-主机：ReceiveHost<br />-使用的管道：XMLReceive<br /><br /> **中等二进制数据 (3 MB)-PDF-非可压缩**<br /><br /> -接收位置：BinaryDataIn<br />-主机：ReceiveHost<br />-使用的管道：PassThruReceive<br /><br /> **大型二进制数据 (7.5 MB – 20 MB)-PDF-非可压缩**<br /><br /> -接收位置：BinaryDataIn<br />-主机：ReceiveHost<br />-使用的管道：PassThruReceive |
   |          **测试数据的位置**          |                                                                                                                                                                                                                                                                                                    从本地访问测试数据文件共享，例如： \\\PerformanceLabs\July\Test Data\                                                                                                                                                                                                                                                                                                    |
   
    将信息放入一个表可实现多个目的。 首先，它便于利益干系人达成一致的测试数据所做的假设。 其次，它可用于确定潜在的性能评估优化的信息。 例如在表，您可以看到，ReceiveHost BizTalk 主机内托管用来处理所有不同的数据类型的所有接收位置。 这意味着此主机的每个实例将负责处理不同类型和大小的数据 （例如 XML 和非可压缩 PDF 的二进制数据）。 假定每个主机实例是单个实例的 BizTalk Server 进程 (BTSNTSVC。Exe 文件），这可能会成为处理瓶颈。 因此在此方案中一个明显优化环境的方案是测试的性能改进的分隔每个接收到其自己单独的主机位置。 有权访问的测试数据信息摘要的表格格式便于仪表这种简单的优化。  

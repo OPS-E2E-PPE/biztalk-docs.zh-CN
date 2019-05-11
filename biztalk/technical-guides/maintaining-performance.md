@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bdaa00ebb244db6d389393a0bbf32c0075c1f3d3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 44beb0700d1c5de5a606708e5a6dbc343db128b1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984422"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396264"
 ---
 # <a name="maintaining-performance"></a>维护性能
 本部分提供了旨在帮助您解决在日常维护检查过程发现性能问题的信息。 此外可以使用的工具和技术此处所述主动，关键问题之前找出潜在问题。  

@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5acf0eca210bd163c0d74e7d8d873ec6009d40a5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 95c7863666317b42fa32b04073244915eae6d7dd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999278"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367973"
 ---
 # <a name="run-composite-operations-in-sql-server--using-the-sql-adapter"></a>在使用 SQL 适配器的 SQL Server 中运行复合操作
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]使适配器客户端能够执行复合操作上的 SQL Server 数据库。 复合操作可以包含任意数量的以下操作，并按任何顺序：  

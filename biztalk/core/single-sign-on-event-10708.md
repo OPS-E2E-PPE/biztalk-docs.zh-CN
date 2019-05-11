@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10708 |Microsoft Docs
+title: 单一登录：Event 10708 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4b052e3545aa67b27bc94de579faedde782c0dec
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 24de44e04ecbbd5aca453a1c45a588bd4d5b63b3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003086"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397262"
 ---
-# <a name="single-sign-on-event-10708"></a>单一登录： 事件 10708
+# <a name="single-sign-on-event-10708"></a>单一登录：事件 10708
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                                |
@@ -30,13 +30,13 @@ ms.locfileid: "37003086"
 |  事件源   |                                                             ENTSSO                                                             |
 |    组件    |                                                              N\A                                                               |
 |  符号名称  |                                                    SSO_WARN_PS_NO_WIN_SYNC                                                     |
-|  消息正文   | 不允许从 Windows 进行密码同步。 请检查全局标志。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 客户端用户： %2 |
+|  消息正文   | 不允许从 Windows 进行密码同步。 检查全局 flags.%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 客户端用户： %2 |
 
 ## <a name="explanation"></a>解释  
- 此警告事件表明 Windows 请求进行密码同步并且未设置任何全局标志。 有两个标志，允许将密码发送到外部系统： sso_flag_full_sync_from_windows_to_external; 另外，允许接收来自外部系统： SSO_FLAG_PARTIAL_SYNC_FROM_EXTERNAL_TO_DB 的密码。  
+ 此警告事件表明 Windows 请求密码同步和全局标志未设置。 有两个标记，允许将密码发送到外部系统：Sso_flag_full_sync_from_windows_to_external; 另外，允许接收来自外部系统： SSO_FLAG_PARTIAL_SYNC_FROM_EXTERNAL_TO_DB 的密码。  
 
 ## <a name="user-action"></a>用户操作  
- 若要解决此警告问题，请执行以下操作：  
+ 若要解决此警告，请执行以下操作：  
 
 -   使用 SSO Admin MMC 管理单元，(系统&#124;属性&#124;选项) 或命令行工具`ssomanage –enable winsync/extsync`来启用全局标志。  
 

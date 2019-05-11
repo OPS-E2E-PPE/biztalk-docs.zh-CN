@@ -20,12 +20,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 77a02e62bcea6a1647859b8578279ee97f2349d3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 622384366615555408fecba99782e45f31a6a68d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980534"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371982"
 ---
 # <a name="browse-search-and-get-siebel-metadata"></a>浏览、 搜索和获取 Siebel 元数据
 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]从 Siebel 系统描述与使用该适配器的 Siebel 系统进行通信的消息结构的图面元数据。 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]支持两个接口用于检索元数据。  

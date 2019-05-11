@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2380e58605cf401e7ed1138b078d19d5279144f4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2f8f3d6341e0f5d26d589f03dc0b93a3e5b0afa0
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972870"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529190"
 ---
 # <a name="get-metadata-programmatically-from-the-oracle-database"></a>从 Oracle 数据库中以编程方式获取元数据
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]是公开为 WCF 服务的 Oracle 数据库的自定义 WCF 绑定。 该适配器公开为自描述的服务; Oracle 数据库也就是说，服务能够发布元数据，它支持的操作。 元数据描述的逻辑接口的 WCF 服务;也就是说，服务协定、 消息和消息架构，必须使用与服务进行交互。  

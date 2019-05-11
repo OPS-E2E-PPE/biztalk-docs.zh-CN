@@ -1,5 +1,5 @@
 ---
-title: 适配器 WSDL 文件 |Microsoft 文档
+title: 适配器 WSDL 文件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c600729411066637e021a118b88ec97ffd3b25fb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 67b341372e39fc9f834c2240127d10946def76a8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22229821"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65361162"
 ---
 # <a name="adapter-wsdl-files"></a>适配器 WSDL 文件
-在添加适配器元数据向导选择和上输入的 Web 服务描述语言 (WSDL) 文件**选择服务添加到导入**页。 该向导将读取服务公开的 WSDL 文件以及用户选择的 WSDL 文件。 然后，它将在 BizTalk 项目中创建和添加 XSD 文件以及业务流程。  
+在添加适配器元数据向导中选择和输入上的 Web 服务描述语言 (WSDL) 文件**选择导入的服务**页。 该向导将读取 WSDL 文件由服务公开，并由用户选择。 然后，它将创建并在 BizTalk 项目中添加一个 XSD 文件和业务流程。  
   
- 在示例文件适配器中 Service1.wsdl 文件包含的 XSD 定义，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将添加到项目。 您可以选择修改该 Service1.wsdl 文件，或者创建自己的 WSDL 文件，该文件中包含要添加到 BizTalk 项目的 XSD 定义。  
+ 在示例文件适配器中，Service1.wsdl 文件包含的 XSD 定义的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将添加到项目。 您可以选择修改该 Service1.wsdl 文件或创建自己的 WSDL 文件，其中包含要添加到 BizTalk 项目的 XSD 定义。  
   
  以下代码摘自 Service1.wsdl 文件：  
   

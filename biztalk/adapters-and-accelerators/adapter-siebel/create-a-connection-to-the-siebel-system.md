@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7710d25528cadff3d082fc067f951830f2bb8efe
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 57704a781776fb4e16689d454e367d38fd9da0ee
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013110"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371756"
 ---
 # <a name="create-a-connection-to-the-siebel-system"></a>创建与 Siebel 系统的连接
 [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]是[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]自定义绑定。 在这种情况下，它使到 Siebel 系统通过 WCF 终结点地址的通信。 WCF 中的终结点地址标识服务的网络位置，并通常都表示为统一资源标识符 (URI)。 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]表达此位置作为一个连接 URI，其中包含属性的[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]用于建立与 Siebel 系统的连接。 必须指定连接 URI 时您：  

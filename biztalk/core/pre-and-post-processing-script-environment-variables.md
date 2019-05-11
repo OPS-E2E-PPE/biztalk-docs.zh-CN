@@ -1,5 +1,5 @@
 ---
-title: 前期和后期处理脚本环境变量 |Microsoft 文档
+title: 预处理和后处理脚本环境变量 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,18 +16,18 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dab1086a30ce670524a095f30c0bd6c1910365b8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: af8834f70db30ea5f7609383846db3970582729e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22264501"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396231"
 ---
-# <a name="pre--and-post-processing-script-environment-variables"></a>前期和后期处理脚本环境变量
-此部分中的主题描述了前期和后期处理的脚本可以访问的环境变量。  
+# <a name="pre--and-post-processing-script-environment-variables"></a>预处理和后处理脚本环境变量
+在本部分中的主题介绍预处理和后处理脚本可以访问的环境变量。  
   
 > [!NOTE]
->  每个 Windows 标准的环境变量的名称不区分大小写。 变量值，但是，是区分大小写。  
+>  每个 Windows 标准的环境变量的名称不区分大小写。 但是，变量值是区分大小写。  
   
 ## <a name="in-this-section"></a>本节内容  
   

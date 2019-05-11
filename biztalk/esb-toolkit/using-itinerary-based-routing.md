@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4adcb32367a42403e769111f7b3d3d343c604671
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3b09610d1c8952ae077fc872e7cd0c073a33eef4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978686"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396436"
 ---
 # <a name="using-itinerary-based-routing"></a>使用基于路线的路由
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]提供基于路线的消息路由通过实现以启用方案时的一系列处理步骤的特定消息的传送名单模式不知道在设计时和每个消息都可能不同。 此模式的实现使用传送名单来表示这些步骤以 XML 格式的集合，并确定需要在运行时期间执行的步骤。 传送名单，通常称为"ESB 路线"，状态是一个有序的声明性定义在通过处理，则在一条消息时必须执行的步骤的说明[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]组件和 BizTalk Server 运行时。 ESB 路线中指定的特定处理指令与[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]组件，也称为"ESB 路线服务。" ESB 路线服务的目的是要执行的处理指令并更新以指示下一个挂起的指令的传送名单的状态。  

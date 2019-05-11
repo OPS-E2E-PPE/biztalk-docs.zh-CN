@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6638e91616cb0e5134108aac0ed18ee844196ba7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d960823f9d55947ee2138b9f0a8e1b0779400f61
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991710"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375962"
 ---
 # <a name="configure-the-connection-uri-for-oracle-e-business-suite"></a>配置适用于 Oracle E-business Suite 连接 URI
 一个连接 URI 是一个包含参数才能连接到 Oracle E-business Suite 的连接字符串。 使用时[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]或[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]中[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]，必须指定要连接到 Oracle E-business Suite 生成元数据的 URI。 在配置业务流程使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台中，您必须指定要连接到 Oracle E-business Suite 来执行操作的 URI。  
@@ -72,7 +72,7 @@ ms.locfileid: "36991710"
    | **模板**  | 单击**添加适配器元数据**。 |
 
 
-3. 单击 **“添加”**。 此时[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]会打开。  
+3. 单击 **“添加”**。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]随即打开。  
 
 4. 在中[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]，选择**Wcf-oracleebs**。 选择在其安装 BizTalk Server 的计算机和 BizTalk 数据库的名称。  
 

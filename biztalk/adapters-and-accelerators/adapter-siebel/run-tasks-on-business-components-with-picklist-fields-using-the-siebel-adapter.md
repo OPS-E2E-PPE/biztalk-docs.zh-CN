@@ -15,12 +15,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c722caaad6e1474ac80a14843171550aa53b9d77
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 65098d3f1adeac745af58c6cecee1c383e423a86
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986078"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370974"
 ---
 # <a name="run-operations-on-business-components-with-picklist-fields-using-biztalk-server-and-the-siebel-adapter"></a>使用选择列表字段使用 BizTalk Server 和 Siebel 适配器运行在业务组件上的操作
 Siebel 选择列表字段类型构成一系列可能的值从哪种客户端可以指定传递到 Siebel 系统的某些值。 换而言之，选择列表字段包含一系列字段接受的值。 有关选择列表及其类型的详细信息，请参阅 Siebel 文档。 详细了解如何[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]支持与选择列表字段的业务组件上的操作，请参阅[上的 Siebel 业务组件操作](../../adapters-and-accelerators/adapter-siebel/operations-on-business-components-in-siebel.md)。  
@@ -113,7 +113,7 @@ Siebel 选择列表字段类型构成一系列可能的值从哪种客户端可�
 ### <a name="adding-ports"></a>添加端口  
  请确保为每个逻辑端口中指定以下属性。 中列出的名称*端口*列是在业务流程中显示的端口的名称。  
   
-|端口|属性|  
+|Port|属性|  
 |----------|----------------|  
 |FileIn|-设置**标识符**到*FileIn*<br />-设置**类型**到*FileInType*<br />-设置**通信模式**到*单向*<br />-设置**通信方向**到*接收*|  
 |LOBPort|-设置**标识符**到*LOBPort*<br />-设置**类型**到*LOBPortType*<br />-设置**通信模式**到*请求-响应*<br />-设置**通信方向**到*发送接收*|  

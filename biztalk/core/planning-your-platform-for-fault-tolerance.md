@@ -28,64 +28,64 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a5ddc4565449171c71685bcddd2c68b699f5113b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3564be0d8e49d64b3726f7aca360bfa4042343db
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007486"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394968"
 ---
 # <a name="planning-your-platform-for-fault-tolerance"></a>规划你的平台容错功能
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 是基于 Microsoft Windows 和 Microsoft SQL Server 平台建立的。 BizTalk Server 幸免于灾难或从灾难中恢复的能力取决于其底层平台幸免或恢复的能力。  
+Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]基于 Microsoft Windows 和 Microsoft SQL Server 平台。 BizTalk Server 幸免或从灾难中恢复的能力取决于底层平台幸免或恢复的能力。  
   
  有关业务活动监视 (BAM) 数据库和 MessageBox 数据库，我们建议你以下操作：  
   
-- 建立故障转移群集，此功能在 SQL Server Enterprise Edition 中可用。 使用故障转移群集，SQL Server 可自动将 SQL Server 实例的处理从故障服务器切换到正常工作的服务器。  
+- 设置故障转移群集，这是 SQL Server Enterprise Edition 中可用。 故障转移群集，SQL Server 可自动切换到工作服务器从发生故障的服务器的 SQL Server 实例的处理。  
   
-   BAM 主导入数据库收集事件数据。 在系统发生灾难时，自上次备份后写入 BAM 主导入数据库的数据将会丢失。 由于无法重新生成这些丢失的事件，因此，在 BAM 主导入数据库上启用故障转移群集是十分重要的。  
+   BAM 主导入数据库收集事件数据。 发生灾难时，自上次备份后写入 BAM 主导入数据库的数据将会丢失。 因为没有方法来重新生成丢失的事件，是你启用故障转移群集在 BAM 主导入数据库上尤其重要。  
   
-- 尤其对于 MessageBox 数据库和 BAM 主导入数据库，请使用 SQL Server RAID（独立磁盘冗余阵列）。  
+- 使用 SQL Server RAID （独立磁盘冗余阵列），特别是对于 MessageBox 数据库和 BAM 主导入数据库。  
   
-  使用以下资源来设计 Windows 和 SQL Server 部署以实现容错。 您需要了解硬件和服务器冗余技术（例如群集和磁盘镜像），以防止服务故障和数据丢失。  
+  使用以下资源来设计您的 Windows 和 SQL Server 部署以实现容错。 需要时间来了解硬件和服务器冗余技术，如聚类分析和磁盘镜像，以防止服务中断和数据丢失。  
   
-- [白皮书： 高可用性-Alwayson 技术](http://go.microsoft.com/fwlink/?LinkId=130376)  
+- [白皮书：高可用性-Alwayson 技术](http://go.microsoft.com/fwlink/?LinkId=130376)  
   
    "高可用性 – Always On Technologies"白皮书描述 SQL Server 2008 提供的高可用性功能。  
   
 - [高可用性解决方案概述](http://go.microsoft.com/fwlink/?LinkId=130377)  
   
-   介绍了 SQL Server 2008 中若干改善服务器或数据库可用性的高可用性解决方案。  
+   为提高可用性的服务器或数据库的 SQL Server 2008 引入了多个高可用性解决方案。  
   
 - [第 15 章-高可用性选项，SQL Server 资源工具包](http://go.microsoft.com/fwlink/?LinkId=24431)  
   
-   Microsoft SQL Server 资源工具包涉及了广泛的管理及部署规划领域的内容。 第 15 章介绍了如何针对容错和恢复进行规划。  
+   Microsoft SQL Server 资源工具包涉及范围广泛的管理和部署规划领域。 第 15 章介绍了规划容错和恢复。  
   
 - [Windows 部署服务分步指南](http://go.microsoft.com/fwlink/?LinkId=130379)  
   
-   包含有关如何在 Windows Server 2008 中使用 Windows 部署服务角色的循序渐进指南  
+   包含有关如何在 Windows Server 2008 中使用 Windows 部署服务角色循序渐进指南  
   
-- [Windows Server 2003 部署工具包： 规划服务器部署](http://go.microsoft.com/fwlink/?LinkId=24433)。  
+- [Windows Server 2003 部署工具包：规划服务器部署](http://go.microsoft.com/fwlink/?LinkId=24433)。  
   
-   本书介绍了有关规划服务器存储的信息，以及有关设计和部署大、中型组织中的文件服务器、打印服务器和终端服务器的信息。  
+   本书提供了有关设计和部署文件服务器、 打印服务器和中型和大型组织中的终端服务器的规划服务器存储和信息有关的信息。  
   
-   还可使用本书中的指导来规划远程服务器管理、设计和部署服务器群集与网络负载平衡群集，从而最大限度地提高服务器的可用性和可伸缩性。  
+   您还可用于指导原则在本书中的远程服务器管理的规划、 设计和部署服务器群集和设计和部署网络负载平衡群集中最大化可用性和可伸缩性的服务器。  
   
-## <a name="backing-up-your-platform"></a>备份您的平台  
- 对系统进行配置后，准备服务器的完整备份，以便在数据丢失的情况下可以快速还原相同的服务器。  
+## <a name="backing-up-your-platform"></a>备份你的平台  
+ 配置您的系统后，准备你的服务器的完整备份，以便在发生数据丢失时可以快速还原相同的服务器。  
   
- 若要备份平台，请对以下各种技术执行所记录的备份过程：  
+ 若要备份你的平台，请执行以下技术的每个有案可稽的备份过程：  
   
-- Microsoft Windows Server Standard、Enterprise 或 Datacenter Edition  
+- Microsoft Windows Server Standard、 Enterprise 或 Datacenter Edition  
   
 - Internet 信息服务 (IIS)  
   
 - Microsoft SQL Server  
   
-- Windows SharePoint Services，由 Windows SharePoint Services 适配器使用。  
+- Windows SharePoint Services，它由 Windows SharePoint Services 适配器。  
   
-  请遵循"备份 BizTalk Server"可在"BizTalk Server 操作指南"中的建议[清单： 灾难恢复与提高可用性](http://go.microsoft.com/fwlink/?LinkId=130498)。  
+  请遵循"备份 BizTalk Server"可在"BizTalk Server 操作指南"中的建议[核对清单：提供高可用性灾难恢复](http://go.microsoft.com/fwlink/?LinkId=130498)。  
   
-  对备份和还原过程进行彻底测试，然后将其放置于安全的远程位置。  
+  进行全面测试备份和还原过程，并将其放在一个安全的远程位置。  
   
 ## <a name="see-also"></a>请参阅  
  [备份和还原 BizTalk Server 数据库](../core/backing-up-and-restoring-the-biztalk-server-databases.md)

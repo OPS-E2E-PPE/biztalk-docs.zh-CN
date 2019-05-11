@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 652d2eccdc7b154416e456cb6d97ef0242b6fb2a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e02a3ae030938b035f3fb1c98c55235ebae544c4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010070"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375420"
 ---
 # <a name="key-features-in-biztalk-adapter-for-oracle-e-business-suite"></a>用于 Oracle E-business Suite 的 BizTalk 适配器的主要功能
 本部分列出了中的关键功能[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]。  

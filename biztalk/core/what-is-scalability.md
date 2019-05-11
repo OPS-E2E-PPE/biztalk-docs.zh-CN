@@ -1,5 +1,5 @@
 ---
-title: 可伸缩性概述 | Microsoft Docs
+title: 可伸缩性是什么？ | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,26 +14,26 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a6208319fb8c195558101433cd1668ab0e0f064
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 46d74ed168f5dcc5a0d6d314627b6381ae5c4233
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288853"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395928"
 ---
-# <a name="what-is-scalability"></a>可伸缩性概述
-可伸缩性是指系统为满足您的业务需求进行扩展的能力。 在不对应用程序进行较大改动的情况下，可以通过添加额外的硬件或通过升级现有硬件来对系统进行扩展。 在 BizTalk Server 系统环境中，可伸缩性是指 BizTalk 能够根据吞吐量需求的增长进行扩展的能力（如果您需要缩短延迟时间）。  
+# <a name="what-is-scalability"></a>可伸缩性是什么？
+可伸缩性是系统的扩展，以满足你的业务需求的功能。 对系统进行扩展通过添加额外的硬件或升级现有硬件，而无需更改多的应用程序。 在 BizTalk Server 系统的上下文中，可伸缩性是指 BizTalk 能够缩放和根据吞吐量需求增加时，如果您需要缩短延迟时间。  
   
- 在对 BizTalk 的各个组件进行优化和调整之后，您可能仍会在 BizTalk 计算机或 MessageBox 数据库上遇到瓶颈问题。 在 BizTalk 环境中发生的瓶颈类型通常为 CPU、内存、输入/输出和锁争用瓶颈。 在遇到瓶颈后，您可能需要升级硬件或向现有拓扑结构中添加新硬件。 但幸运的是，BizTalk Server 结构使您可以轻松地向上扩展和向外扩展。例如，您可以向组中添加多台 BizTalk Server 计算机，也可以添加额外的 MessageBox 数据库。  
+ 优化和调整 BizTalk 的各个组件后，仍可能会遇到 BizTalk 计算机上或在 MessageBox 数据库上的瓶颈。 类型的 BizTalk 环境中，通常会发生的瓶颈是 CPU、 内存、 IO 和锁争用瓶颈。 当您开始遇到瓶颈时，可能需要升级硬件或新的硬件添加到现有的拓扑。 幸运的是，BizTalk Server 体系结构，可轻松地向上和向外缩放。例如，可以将多个 BizTalk Server 计算机添加到组，并还将添加额外的 MessageBox 数据库。  
   
-## <a name="see-also"></a>另请参阅  
- [BizTalk Server 层向外缩放](../core/scaling-out-the-biztalk-server-tier.md)   
+## <a name="see-also"></a>请参阅  
+ [向外扩展 BizTalk Server 层](../core/scaling-out-the-biztalk-server-tier.md)   
  [SQL Server 层向外缩放](../core/scaling-out-the-sql-server-tier.md)   
- [BizTalk Server 层向上扩展](../core/scaling-up-the-biztalk-server-tier.md)   
- [SQL Server 层向上扩展](../core/scaling-up-the-sql-server-tier.md)   
+ [纵向扩展 BizTalk Server 层](../core/scaling-up-the-biztalk-server-tier.md)   
+ [纵向扩展 SQL Server 层](../core/scaling-up-the-sql-server-tier.md)   
  [向外扩展接收主机](../core/scaled-out-receiving-hosts.md)   
- [向外扩展的处理主机](../core/scaled-out-processing-hosts.md)   
- [向外扩展的发送主机](../core/scaled-out-sending-hosts.md)   
- [Windows Server 群集用于 BizTalk Server Hosts2 为提供高可用性](../core/use-windows-cluster-to-provide-high-availability-for-biztalk-hosts.md)   
- [向外扩展的数据库](../core/scaled-out-databases.md)   
- [群集的 BizTalk Server 数据库](../core/clustering-the-biztalk-server-databases1.md)
+ [向外扩展处理主机](../core/scaled-out-processing-hosts.md)   
+ [向外扩展发送主机](../core/scaled-out-sending-hosts.md)   
+ [使用 Windows Server 群集为 BizTalk Server 主机 2 提供高可用性](../core/use-windows-cluster-to-provide-high-availability-for-biztalk-hosts.md)   
+ [向外扩展数据库](../core/scaled-out-databases.md)   
+ [聚类分析 BizTalk Server 数据库](../core/clustering-the-biztalk-server-databases1.md)

@@ -1,5 +1,5 @@
 ---
-title: 使用限制机制的简单类型派生 |Microsoft 文档
+title: 使用限制机制进行简单类型派生 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,30 +12,30 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dda4b8ad64f1edf262446f1633eda109ba7074ec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 46cfded2bd9995e99972108f46aa53c883fffc99
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22271725"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393071"
 ---
-# <a name="simple-type-derivation-using-the-restriction-mechanism"></a>使用限制机制的简单类型派生
+# <a name="simple-type-derivation-using-the-restriction-mechanism"></a>使用限制机制进行简单类型派生
 
 ## <a name="overview"></a>概述
-使用限制机制从现有简单类型派生新的简单类型时，通常将相应属性或元素值的实例消息中允许的值限制为基本简单类型所允许的那些值的子集。 例如，您可以将字符串类型限制为若干枚举字符串之一。  
+当通过使用限制机制从现有简单类型派生新的简单类型时，您通常要限定这些基简单类型所允许的值的子集到该属性或元素值的实例消息中允许的值。 例如，可以限制为若干枚举字符串之一的字符串类型。  
   
  有关使用限制机制派生新的简单类型的全面信息，请参阅 W3C 网站。 向此服务器和其他网站的各种链接，请参阅[在 Web 上找到的 XSD 资源](../core/xsd-resources-on-the-web.md)。  
   
-## <a name="field-element-and-field-attribute"></a>字段元素和字段特性
- 若要通过限制派生简单类型，请选择相关**Field 元素**节点或**字段特性**节点在架构树中，然后在属性窗口中，从下拉列表中选择简单类型列出用于**基数据类型**属性。 你选择了此属性的值时，就会立即**派生源**属性会自动更改为其默认值从**限制**，它用作类型派生的默认值。 此外，整个新类别的属性，调用**限制**，在属性窗口中变得可用。  
+## <a name="field-element-and-field-attribute"></a>字段元素和字段属性
+ 若要通过使用限制派生简单类型，选择相关**Field 元素**节点或**字段属性**节点在架构树中，然后在属性窗口中，从下拉列表中选择一种简单类型用于列出**Base Data Type**属性。 一旦选择了此属性的值**Derived By**属性将自动更改为其默认值从**限制**，它用作类型派生的默认值。 此外，全新类别的属性，称为**限制**，在属性窗口中变为可用。  
   
- 根据您选择的基本数据类型，在此新类别中可设置不同的属性。 例如，如果基础数据类型为数值，属性**MaxFacet 类型**(时**MaxFacet 值**设置)， **MaxFacet 值**， **MinFacet 类型**(当**MinFacet 值**设置)，和**MinFacet 值**可用于定义允许的值为与或异范围。 如果基数据类型是字符串类型，**长度**，**最大长度**，和**最小长度**属性都适用于约束的字符串的长度。  
+ 根据你选择的基本数据类型，即可在此新类别中设置的不同的属性。 例如，如果基本数据类型为数值，属性**MaxFacet Type** (当**MaxFacet Value**设置)， **MaxFacet Value**， **MinFacet Type**(当**MinFacet Value**设置)，并**MinFacet Value**可用于定义允许的值的非独占或排他范围。 如果基本数据类型为字符串类型，**长度**，**最大长度**，并**最小长度**属性是可用于约束字符串的长度。  
   
  有关字段节点的各种限制属性的详细信息，请参阅**字段元素节点属性** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
   
- 当你第一次更改**Field 元素**节点或**字段特性**无需具有 （从而启动简单类型派生的进程），将保留一个基本数据类型的数据类型的节点**派生的**属性设置为**限制**，并提供到允许的字符串值的基于枚举的限制，你可以观察 XSD 视图中的相应片段中的以下更改：  
+ 当你首次更改**字段元素**节点或**Field 特性**节点从具有某一数据类型为具有某一基本数据类型 （因此开始简单类型派生的过程），将保留**通过派生**属性设置为**限制**，并提供基于枚举的限制为允许的字符串值，可以观察 XSD 视图中的相应片断中的以下更改：  
   
--   在这之前，使用新插入**Field 元素**节点名为**WestCoastStates**。  
+-   在这之前，与新插入**Field 元素**名为节点**WestCoastStates**。  
   
     ```  
     <xs:element name="ContainingRecord">  
@@ -47,7 +47,7 @@ ms.locfileid: "22271725"
     </xs:element>  
     ```  
   
--   设置后**基数据类型**于"xs: string"，而不用派生默认值的属性**限制**为**派生源**属性。  
+-   设置后**Base Data Type**属性设置为"xs: string"，并会使派生默认值为**限制**有关**Derived By**属性。  
   
     ```  
     <xs:element name="ContainingRecord">  
@@ -63,7 +63,7 @@ ms.locfileid: "22271725"
     </xs:element>  
     ```  
   
--   设置后**枚举**西海岸三种的美国本土其他状态的名称限制类别中的属性。  
+-   设置后**枚举**美国大陆西海岸的三个状态的名称将 Restriction 类别中的属性。  
   
     ```  
     <xs:element name="ContainingRecord">  
@@ -83,5 +83,5 @@ ms.locfileid: "22271725"
     </xs:element>  
     ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [简单类型派生](../core/simple-type-derivation.md)

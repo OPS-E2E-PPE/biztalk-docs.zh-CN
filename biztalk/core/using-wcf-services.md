@@ -1,5 +1,5 @@
 ---
-title: 使用 WCF 服务 |Microsoft 文档
+title: 使用 WCF 服务 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,32 +15,32 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 29b984bcda798796565113739c6088af6d569f7c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 81082cacafb1f04d54920648d8f588a4b2ccc50a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287789"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396738"
 ---
 # <a name="using-wcf-services"></a>使用 WCF 服务
-Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]提供内置支持 Windows Communication Foundation (WCF)。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]可重复使用和聚合你业务流程中的所有现有 WCF 服务。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]在 WCF 服务还实现对本机适配器的支持。 本地适配器支持为 WCF 服务提供了可伸缩性、容错功能和跟踪功能，且用户无需为此编写代码。 有关 WCF 适配器的信息，请参阅[WCF 适配器](../core/wcf-adapters.md)。  
+Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]提供内置支持为 Windows Communication Foundation (WCF)。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使您可以重用和聚合业务流程中的所有现有 WCF 服务。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 此外实现 WCF 服务中的本地适配器的支持。 本机适配器支持提供了可伸缩性、 容错能力和跟踪功能为 WCF 服务，而无需编写代码。 有关 WCF 适配器的信息，请参阅[WCF 适配器](../core/wcf-adapters.md)。  
   
- WCF 服务中的支持[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]划分为两个类别： 发布或创建 WCF 服务，或调用或使用 WCF 服务。  
+ WCF 中的服务支持[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]划分为两个类别： 发布或创建 WCF 服务时，或调用或使用 WCF 服务。  
   
- **发布的 WCF 服务**  
+ **发布 WCF 服务**  
   
- 您可以使用 WCF 适配器将您的业务流程和架构发布（公开）为 WCF 服务，以便将 WCF 服务逻辑与业务流程逻辑分开。 对于独立 WCF 适配器来说，您可以使用 BizTalk WCF 服务发布向导创建在 Internet 信息服务 (IIS) 中运行的 Web 应用程序承载的独立 WCF 接收位置。 对于进程内 WCF 适配器来说，您可以使用 BizTalk WCF 服务发布向导为任何 WCF 位置发布服务元数据。  发布元数据将允许使用 svcutil.exe 实用程序创建客户端代码。  
+ 您可以发布 （公开） 您的业务流程和架构作为 WCF 服务与 WCF 适配器，以便单独的 WCF 服务逻辑与业务流程逻辑。 对于独立 WCF 适配器，可以使用 BizTalk WCF 服务发布向导创建独立 WCF 接收位置由运行在 Internet 信息服务 (IIS) Web 应用程序承载。 对于进程内 WCF 适配器，可以将发布为 BizTalk WCF 服务发布向导与任何 WCF 位置的服务元数据。  元数据的发布允许使用 svcutil.exe 实用程序的客户端代码的创建。  
   
  **使用 WCF 服务**  
   
- 您可以使用 BizTalk WCF 服务使用向导生成 BizTalk 项目（如 BizTalk 业务流程和类型），以便根据 WCF 服务的元数据文档使用 WCF 服务。 元数据允许发送端口以客户端身份访问外部服务。 元数据仅用于对终结点地址、绑定和协议进行描述。  
+ 可以使用 BizTalk WCF 服务使用向导生成 BizTalk 项目，如 BizTalk 业务流程和类型，以便使用基于 WCF 服务的元数据文档的 WCF 服务。 元数据，用于访问外部服务作为客户端的发送端口。 元数据纯粹用于描述终结点地址、 绑定和协定。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [发布的 WCF 服务](../core/publishing-wcf-services.md)  
+-   [发布 WCF 服务](../core/publishing-wcf-services.md)  
   
 -   [使用 WCF 服务](../core/consuming-wcf-services.md)  
   
--   [为 WCF 适配器指定消息正文](../core/specifying-the-message-body-for-the-wcf-adapters.md)  
+-   [指定 WCF 适配器的消息正文](../core/specifying-the-message-body-for-the-wcf-adapters.md)  
   
 -   [WCF 适配器演练](../core/wcf-adapter-walkthroughs.md)

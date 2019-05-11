@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 为 FileAct 实时方案向 Paramfile 添加 SWIFTNet 配置 |Microsoft Docs
+title: 第 2 步：为 FileAct 实时方案向 Paramfile 添加 SWIFTNet 配置 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f40da4b503a5b29e161b376fc25f535c338f5f42
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0acfd70f479aec6c7557fcdf9a87c10f839502be
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010558"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65366461"
 ---
-# <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-fileact-real-time-scenario"></a>步骤 2： 为 FileAct 实时方案向 Paramfile 添加 SWIFTNet 配置
+# <a name="step-2-add-swiftnet-configuration-to-the-paramfile-for-the-fileact-real-time-scenario"></a>第 2 步：为 FileAct 实时方案向 Paramfile 添加 SWIFTNet 配置
 在压降中创建的服务器消息合作伙伴必须指定 SWIFTNet paramfile 启用接收方可以使用这些值进行初始化。  
   
- 在开始此步骤之前，必须完成[步骤 1： 为 FileAct 实时方案配置 SWIFT 适配器](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-fileact-real-time-scenario.md)。  
+ 在开始此步骤之前，必须完成[步骤 1:为 FileAct 实时方案配置 SWIFT 适配器](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-fileact-real-time-scenario.md)。  
   
 ### <a name="to-add-swiftnet-configuration-to-the-paramfile"></a>若要向 paramfile 添加 SWIFTNet 配置  
   
 1. 在诸如记事本之类的文本编辑器中打开 paramfile。  
   
    > [!NOTE]
-   >  Paramfile 是通常位于： C:\SWIFTAlliance\RA\Ra1\cfg\paramfile  
+   >  Paramfile 是通常位于：C:\SWIFTAlliance\RA\Ra1\cfg\paramfile  
   
 2. 在 paramfile，请突出显示的更改来指定服务器消息合作伙伴名称：  
   
@@ -39,25 +39,25 @@ ms.locfileid: "37010558"
   
     \#subsystem_group:fileact  
   
-    \#subsystem_dependency:Support Swarm  
+    \#subsystem_dependency:Support,Swarm  
   
-    subsystem_nature： 关键  
+    subsystem_nature:critical  
   
     subsystem_start:  
   
-    **生成"snlreceiver-SagMessagePartner \<fileact RT 的 Server MessagePartnerName \> -AdapterMode fileact"**  
+    **spawn "snlreceiver -SagMessagePartner \<Server MessagePartnerName for fileact RT \> -AdapterMode fileact"**  
   
     * 结束  
   
     subsystem_stop:  
   
-    * KILL9:snlreceiver  
+    *KILL9:snlreceiver  
   
     * 结束  
   
     subsystem_status:  
   
-    * NB:1:snlreceiver  
+    *NB:1:snlreceiver  
   
     * 结束  
   
@@ -67,11 +67,11 @@ ms.locfileid: "37010558"
   
     \#subsystem_name:User  
   
-    \## subsystem_group:user  
+    \##subsystem_group:user  
   
-    \## subsystem_dependency:  
+    \##subsystem_dependency:  
   
-    \#subsystem_nature： 关键  
+    \#subsystem_nature:critical  
   
     \#subsystem_start:  
   
@@ -91,6 +91,6 @@ ms.locfileid: "37010558"
   
 ## <a name="see-also"></a>请参阅  
  [FileAct 实时方案](../../adapters-and-accelerators/fileact-interact/fileact-real-time-scenario.md)   
- [步骤 1： 为 FileAct 实时方案配置 SWIFT 适配器](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-fileact-real-time-scenario.md)   
- [步骤 3： 创建发送端口和接收端口为 FileAct 实时方案](../../adapters-and-accelerators/fileact-interact/step-3-create-the-send-ports-and-receive-ports-for-fileact-real-time-scenario.md)   
+ [步骤 1：为 FileAct 实时方案配置 SWIFT 适配器](../../adapters-and-accelerators/fileact-interact/step-1-configure-the-swift-adapter-for-the-fileact-real-time-scenario.md)   
+ [步骤 3：创建发送端口和接收端口为 FileAct 实时方案](../../adapters-and-accelerators/fileact-interact/step-3-create-the-send-ports-and-receive-ports-for-fileact-real-time-scenario.md)   
  [步骤 4：测试 FileAct 实时端到端方案](../../adapters-and-accelerators/fileact-interact/step-4-test-fileact-real-time-end-to-end-scenario.md)

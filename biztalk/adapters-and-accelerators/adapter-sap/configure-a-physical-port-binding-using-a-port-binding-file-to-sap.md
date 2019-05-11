@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a80eeae5a71ca66f2bfb53bfc33f15d7d041203b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 05d22dffdf99285c5def9843d2a9aa67a90b7175
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002110"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373951"
 ---
 # <a name="configure-a-physical-port-binding-using-a-port-binding-file-to-sap"></a>配置使用到 SAP 的端口绑定文件的物理端口绑定
 当你使用[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]若要为 SAP 项目以外的架构文件，生成元数据[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]还会生成端口绑定文件。 您可以将此绑定文件导入 BizTalk 应用程序，以创建物理发送端口或接收端口。 [重复使用 SAP 适配器绑定](../../adapters-and-accelerators/adapter-sap/reuse-sap-adapter-bindings.md)包括导入绑定文件的步骤。 如果此绑定文件导入，您无需手动创建物理发送或接收端口。  
@@ -56,7 +56,7 @@ ms.locfileid: "37002110"
   
 -   默认情况下，端口绑定文件将始终包含定义双向端口 （发送或接收）。 导入 BizTalk 应用程序中的此文件时，它创建双向发送或接收端口。 但是，你可能具有一个业务流程具有单向发送或接收端口。 因此，当您配置此类业务流程，并使用通过导入绑定文件创建的端口，端口不可用在列表中。 发生这种情况是因为业务流程的一部分创建的逻辑端口是单向端口，而在业务流程中创建的物理端口为双向端口。 在这种情况下，可以编辑绑定文件以进行以下更改：  
   
-    |若要了解|操作|  
+    |为此|操作|  
     |--------------|-------------|  
     |若要编辑该端口的绑定文件，以配置一个单向发送端口|1.在以下摘录中，更改的值**IsTwoWay**属性设置为**false**。 最初，此值设置为 **，则返回 true**。<br />     `<SendPort Name="port_name" IsStatic="true" IsTwoWay="false" BindingOption="0">`<br />2.注释掉下面的摘录：<br />     `<ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive"    FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive,    Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral,    PublicKeyToken=token" Type="1" TrackingOption="None" Description=""/>`<br />     `<ReceivePipelineData xsi:nil="true" />`|  
     |若要编辑该端口的绑定文件，以配置一个单向接收端口|1.在以下摘录中，更改的值**IsTwoWay**属性设置为**false**。 最初，此值设置为 **，则返回 true**。<br />     `<ReceivePort Name="port_name" IsTwoWay="false" BindingOption="1">`<br />2.注释掉下面的摘录：<br />     `<SendPipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLTransmit"    FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLTransmit,    Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral,    PublicKeyToken=token" Type="2" TrackingOption="None" Description="" />`<br />     `<SendPipelineData xsi:nil="true" />`<br />     `<SendPipelineData xsi:nil="true" />`|  

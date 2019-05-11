@@ -1,5 +1,5 @@
 ---
-title: 配置事务集列表 (EDIFACT) |Microsoft 文档
+title: 配置事务集列表 (EDIFACT) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,43 +12,43 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a95feac48f7cb5137e95a34bf46c38811bb75c51
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 5768fc6dcf0e5569acb1d07db38fedc301fb566b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26005166"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390623"
 ---
 # <a name="configuring-transaction-set-list-edifact"></a>配置事务集列表 (EDIFACT)
-BizTalk Server，可定义的事务集必须始终包含或排除在处理的 EDI 交换时的列表。 本部分提供了有关如何创建事务集列表的说明。  
+BizTalk Server，可定义必须始终包含或排除处理 EDI 交换时的事务集的列表。 本部分提供有关如何创建事务集列表。  
   
 > [!IMPORTANT]
->  没有属性禁用此页上，即使你清除**本地 BizTalk 处理接收方或支持从该参与方发送消息的消息**时正在创建你为其创建参与方的复选框协议。  
+>  没有属性禁用此页上，即使您清除**本地 BizTalk 处理参与方或支持来自此参与方发送消息的接收的消息**要为其创建的参与方时的复选框协议。  
   
 ## <a name="prerequisites"></a>先决条件  
- 必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组或 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators 组成员的身份登录。  
+ 必须以成员的身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理员或[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]B2B Operators 组。  
   
-### <a name="to-configure-a-transaction-set-list"></a>配置事务集列表  
+### <a name="to-configure-a-transaction-set-list"></a>若要配置事务集列表  
   
-1.  创建 EDIFACT 编码协议中所述[配置常规设置 (EDIFACT)](../core/configuring-general-settings-edifact.md)。 若要更新现有协议，右键单击在协议**方和业务配置文件**页，然后单击**属性**。  
+1.  创建 EDIFACT 编码协议，如中所述[配置常规设置 (EDIFACT)](../core/configuring-general-settings-edifact.md)。 若要更新现有的协议，请右键单击中的协议**参与方和业务配置文件**页，然后单击**属性**。  
   
-2.  单向协议选项卡上，在**事务设置设置**部分中，单击**事务集列表**。  
+2.  在单向协议选项卡下**事务集设置**部分中，单击**事务集列表**。  
   
-3.  选择**支持事务集，从列表**选项如果你想要创建的必须始终最先处理的事务集的列表。  
-  
-    > [!NOTE]
-    >  如果您通常收到具有特定事务类型的交换（比如 APERAK），则可以使用该选项。 在这种情况下，可以将该事务类型添加到列表中，以便不会处理其他类型的事务集。  
-  
-4.  选择**从列表中排除事务集**选项如果你想要创建的不会处理的事务集的列表。  
+3.  选择**从列表中支持事务集**选项如果想要创建始终必须处理的事务集的列表。  
   
     > [!NOTE]
-    >  如果您通常接收事务类型变化的交换，则可以使用此选项。 在这种情况下，您需要将这些事务类型添加到不获取任何事务集的列表。  
+    >  如果您通常收到具有特定事务类型的交换，可以使用此选项假设 APERAK。 在这种情况下，您添加的事务类型设置为列表，以便其他类型的事务集根本不处理。  
   
-5.  单击中的空单元格**UNH2.1**列并从下拉列表中选择事务设置你想要排除上支持的类型。  
+4.  选择**从列表中排除事务集**选项如果想要创建不得处理的事务集的列表。  
+  
+    > [!NOTE]
+    >  如果您通常接收事务类型变化的交换，可以使用此选项。 在这种情况下，您还将这些事务类型添加到你无法获得任何事务的列表设置。  
+  
+5.  单击的空单元格中**UNH2.1**列并从下拉列表中选择事务集你想要支持排除类型。  
   
 6.  若要从列表中删除事务类型，选择事务类型的行，然后单击**删除**。  
   
-7.  单击**应用**接受所做的更改，然后才能继续进行配置，或单击**确定**验证所做的更改，然后关闭对话框。  
+7.  单击**Apply**以接受更改，然后才能继续进行配置，或单击**确定**以验证所做的更改，然后关闭对话框。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [配置事务集设置 (EDIFACT)](../core/configuring-transaction-set-settings-edifact.md)

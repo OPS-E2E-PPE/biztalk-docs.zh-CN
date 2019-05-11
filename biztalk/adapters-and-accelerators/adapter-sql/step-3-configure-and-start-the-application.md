@@ -1,5 +1,5 @@
 ---
-title: 步骤 3： 配置并启动应用程序 |Microsoft Docs
+title: 步骤 3：配置并启动应用程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9f932ca1f3570f080de239dd90c52d9a5f5db721
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6dd0d569355d0873b42bc708b44e12993e97f58e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988198"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367707"
 ---
-# <a name="step-3-configure-and-start-the-application"></a>步骤 3： 配置并启动应用程序
+# <a name="step-3-configure-and-start-the-application"></a>步骤 3：配置并启动应用程序
 ![步骤 3，共 4 步](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")  
   
- **完成时间：** 10 分钟  
+ **若要完成的时间：** 10 分钟。  
   
  **目标：** 在此步骤中，配置和启动 SampleApplication 应用程序。 在配置 SampleApplication 应用程序时，将关联中创建的逻辑项目[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]与其物理对应项。  
   
-## <a name="prerequisites"></a>必要條件  
- 你必须已完成[步骤 2： 配置的端口](../../adapters-and-accelerators/adapter-sql/step-2-configure-the-ports.md)。  
+## <a name="prerequisites"></a>先决条件  
+ 你必须已完成[步骤 2:配置的端口](../../adapters-and-accelerators/adapter-sql/step-2-configure-the-ports.md)。  
   
 ### <a name="to-configure-and-start-the-application"></a>若要配置和启动应用程序  
   
@@ -59,13 +59,13 @@ ms.locfileid: "36988198"
   
 9. 在应用程序的详细信息窗格中，检查**状态**的**SampleApplication**是**已启动**。  
   
-## <a name="what-did-i-just-do"></a>内容回顾  
+## <a name="what-did-i-just-do"></a>我只需做了什么？  
  已配置并启动 SampleApplication 应用程序  
   
 ## <a name="next-steps"></a>后续步骤  
- 插入新入职员工的测试应用程序**员工**表，如中所述[步骤 4： 测试应用程序](../../adapters-and-accelerators/adapter-sql/step-4-test-the-application.md)。  
+ 插入新入职员工的测试应用程序**员工**表，如中所述[步骤 4:测试应用程序](../../adapters-and-accelerators/adapter-sql/step-4-test-the-application.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [步骤 2： 配置的端口](../../adapters-and-accelerators/adapter-sql/step-2-configure-the-ports.md)   
- [步骤 4： 测试应用程序](../../adapters-and-accelerators/adapter-sql/step-4-test-the-application.md)   
+ [步骤 2：配置的端口](../../adapters-and-accelerators/adapter-sql/step-2-configure-the-ports.md)   
+ [步骤 4：测试应用程序](../../adapters-and-accelerators/adapter-sql/step-4-test-the-application.md)   
  [第 5 课：部署解决方案](../../adapters-and-accelerators/adapter-sql/lesson-5-deploy-the-solution.md)

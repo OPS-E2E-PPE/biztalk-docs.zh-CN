@@ -15,12 +15,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 88e96df27b0a8a26b20581e3ff757181ac8195cb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fa4083dec6dff30419dbe7b751574c9835c0ac12
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983046"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373823"
 ---
 # <a name="configure-the-connection-uri-for-the-sap-adapter"></a>配置 SAP 适配器的连接 URI
 一个连接 URI 是一个连接字符串以连接到 SAP 系统。 它包含与 SAP 系统建立连接所需的各种参数。 在设计时，必须指定要连接到 SAP 系统以生成元数据的 URI。 在运行时，必须指定要连接到 SAP 系统以执行操作的 URI。  
@@ -66,7 +66,7 @@ ms.locfileid: "36983046"
    | **模板**  | 单击**添加适配器元数据**。 |
 
 
-3. 单击 **“添加”**。 此时[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]会打开。  
+3. 单击 **“添加”**。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]随即打开。  
 
 4. 在添加适配器向导中，选择**WCF-SAP**。 选择在其安装 BizTalk Server 的计算机和 BizTalk 数据库的名称。  
 

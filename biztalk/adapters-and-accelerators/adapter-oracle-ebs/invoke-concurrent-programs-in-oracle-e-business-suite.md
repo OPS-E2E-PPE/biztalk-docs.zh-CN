@@ -12,20 +12,20 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bdd5b182267009a6b2591ffb06f5ba75db1b7e3e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2f63efda0809a16335d8653e67b4bc1ec8987863
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969686"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375455"
 ---
 # <a name="invoke-concurrent-programs-in-oracle-e-business-suite"></a>调用 Oracle E-business Suite 中的并发程序
 Oracle E-business Suite 公开您可以执行对 Oracle 应用程序的特定操作的并发程序。 每个 Oracle 应用程序一的组标准的并发程序 （即在所有操作都相同） 和某些特定于 Oracle 应用程序的并发程序。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公开所有的并发程序作为适配器客户端可以调用的操作。 适配器如何支持并发程序的详细信息，请参阅[操作对并发程序](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-concurrent-programs.md)。 对于用于调用并发程序消息的 SOAP 结构有关的信息，请参阅[并发程序的消息架构](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-concurrent-programs.md)。  
 
 > [!NOTE]
->  对于那些不公开其元数据的并发程序，Oracle E-business 适配器公开这些并发程序的每个 100 的可选参数。 若要成功调用这些并发程序，用户必须请查阅 Oracle E-business Suite 文档以找出需要一个值，用于并发程序的参数，然后指定它们。 此类的并发程序的一个示例是**日记本的导入**(实际名称： **GLLEZL**) 中**总帐**应用程序。  
+>  对于那些不公开其元数据的并发程序，Oracle E-business 适配器公开这些并发程序的每个 100 的可选参数。 若要成功调用这些并发程序，用户必须请查阅 Oracle E-business Suite 文档以找出需要一个值，用于并发程序的参数，然后指定它们。 此类的并发程序的一个示例是**日记本的导入**(实际名称：**GLLEZL**) 中**总帐**应用程序。  
 
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  你必须完成中的步骤[创建 Oracle E-business Suite 的应用程序的先决条件](../../adapters-and-accelerators/adapter-oracle-ebs/prerequisites-to-create-oracle-e-business-suite-applications.md)。
 
 ## <a name="how-to-invoke-concurrent-programs-in-oracle-applications"></a>如何调用 Oracle 应用程序中的并发程序  
@@ -51,7 +51,7 @@ Oracle E-business Suite 公开您可以执行对 Oracle 应用程序的特定操
  我们可以在此主题中，来生成两个架构**的客户界面**并**Get_Status**并发程序。 有关如何生成架构的详细信息，请参阅[检索用于 Oracle E-business Suite 操作在 Visual Studio 中的元数据](../../adapters-and-accelerators/adapter-oracle-ebs/get-metadata-for-oracle-e-business-suite-operations-in-visual-studio.md)。  
 
 ## <a name="defining-messages-and-message-types"></a>定义消息和消息类型  
- 你之前生成的架构描述了业务流程中的消息所需的“类型”。 一条消息通常是一个变量，要为其类型定义由相应的架构。 现在必须为该业务流程创建消息并将其链接到你在上一步中生成的架构。  
+ 先前生成的架构描述业务流程中的消息所需的"类型"。 一条消息通常是一个变量，要为其类型定义由相应的架构。 现在必须为该业务流程创建消息并将其链接到你在上一步中生成的架构。  
 
  在此业务流程中，你必须创建四个消息 — 一个接收响应设置才能调用**的客户界面**并发程序和其他接收的响应设置才能调用**Get_Status**并发程序。  
 
@@ -71,7 +71,7 @@ Oracle E-business Suite 公开您可以执行对 Oracle 应用程序的特定操
    |   使用此选项   |                                                                                                                                                                                                                                                                                           执行的操作                                                                                                                                                                                                                                                                                           |
    |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |  Identifier  |                                                                                                                                                                                                                                                                                         类型 `Request`                                                                                                                                                                                                                                                                                         |
-   | 消息类型 | 从下拉列表中，展开**架构**，然后选择*ConcurrentProgram.OracleEBSBindingSchema.RACUST*，其中 ConcurrentProgram 是 BizTalk 项目的名称。 OracleEBSBindingSchema 是用于调用生成的架构**的客户界面**并发程序。 **注意：** RACUST 是实际的名称**客户界面**并发程序。 虽然[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]显示的友好名称 (**客户界面**)，该架构包含并发程序的实际名称。 |
+   | 消息类型 | 从下拉列表中，展开**架构**，然后选择*ConcurrentProgram.OracleEBSBindingSchema.RACUST*，其中 ConcurrentProgram 是 BizTalk 项目的名称。 OracleEBSBindingSchema 是用于调用生成的架构**的客户界面**并发程序。 **注意：** RACUST 是实际的名称**的客户界面**并发程序。 虽然[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]显示的友好名称 (**客户界面**)，该架构包含并发程序的实际名称。 |
 
 
 6. 重复步骤 3 以创建三个新消息。 在中**属性**窗格中的新消息，执行以下操作：  
@@ -136,7 +136,7 @@ Get_StatusRequest.RequestId = xpath(Response,"string(/*[local-name()='RACUSTResp
 ### <a name="adding-ports"></a>添加端口  
  若要配置的端口，则指定下表中列出的每个逻辑端口的属性。 中列出的名称*端口*列对应于业务流程中显示的端口的名称。  
 
-|端口|属性|  
+|Port|属性|  
 |----------|----------------|  
 |MessageIn|-设置**标识符**到*MessageIn*<br />-设置**类型**到*MessageInType*<br />-设置**通信模式**到*单向*<br />-设置**通信方向**到*接收*|  
 |LOBPort|-设置**标识符**到*LOBPort*<br />-设置**类型**到*LOBPortType*<br />-设置**通信模式**到*请求-响应*<br />-设置**通信方向**到*发送接收*|  
@@ -165,7 +165,7 @@ Get_StatusRequest.RequestId = xpath(Response,"string(/*[local-name()='RACUSTResp
  你必须现在生成 BizTalk 解决方案，然后将其部署到 BizTalk Server。 有关详细信息，请参阅[构建和运行业务流程](../../core/building-and-running-orchestrations.md)。  
 
 ## <a name="configuring-the-biztalk-application"></a>配置 BizTalk 应用程序  
- 部署 BizTalk 项目后，将前面创建的业务流程下列出**业务流程**窗格中的[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 必须使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台来配置应用程序。 有关演练，请参阅[演练： 部署基本 BizTalk 应用程序](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)。  
+ 部署 BizTalk 项目后，将前面创建的业务流程下列出**业务流程**窗格中的[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 必须使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台来配置应用程序。 有关演练，请参阅[演练：部署基本 BizTalk 应用程序](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)。  
 
  配置应用程序包括：  
 

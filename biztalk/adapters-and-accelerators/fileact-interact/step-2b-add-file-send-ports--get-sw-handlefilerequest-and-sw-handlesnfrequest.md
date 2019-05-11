@@ -1,5 +1,5 @@
 ---
-title: '步骤 2B： 添加 FILE 发送端口以捕获 sw: handlefilerequest 和 sw: handlesnfrequest 消息 FileAct 存储和转发 （拉取） 方案 |Microsoft Docs'
+title: '步骤 2B:添加 FILE 发送端口以捕获 sw: handlefilerequest 和 sw: handlesnfrequest 消息 FileAct 存储和转发 （拉取） 方案 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 47515324fae89937754e0643563f16df9777868a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8d832f94f205ab74ee3dbfac06828a750fb89847
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991486"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65366158"
 ---
-# <a name="step-2b-add-file-send-ports-to-capture-the-swhandlefilerequest-and-swhandlesnfrequest-messages-for-the-fileact-store-and-forward-pull-scenario"></a>步骤 2B： 添加 FILE 发送端口以捕获 sw: handlefilerequest 和 sw: handlesnfrequest 消息 FileAct 存储和转发 （拉取） 方案
-在开始此步骤之前，必须完成[步骤 2A： 添加文件接收位置为 FileAct 存储和转发 （拉取） 方案](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-fileact-store-and-forward-scenario.md)部分。  
+# <a name="step-2b-add-file-send-ports-to-capture-the-swhandlefilerequest-and-swhandlesnfrequest-messages-for-the-fileact-store-and-forward-pull-scenario"></a>步骤 2B:添加 FILE 发送端口以捕获 sw: handlefilerequest 和 sw: handlesnfrequest 消息 FileAct 存储和转发 （拉取） 方案
+在开始此步骤之前，必须完成[步骤 2A:将文件接收位置为 FileAct 存储和转发 （拉取） 方案添加](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-fileact-store-and-forward-scenario.md)部分。  
 
-### <a name="to-add-a-file-send-port-to-capture-the-sw-handlefilerequest-message"></a>若要添加一个 FILE 发送端口以捕获 Sw: HandleFileRequest 消息  
+### <a name="to-add-a-file-send-port-to-capture-the-sw-handlefilerequest-message"></a>若要添加 FILE 发送端口以捕获 Sw:HandleFileRequest 消息  
 
 1. 启动**BizTalk Server 管理**。  
 
@@ -65,5 +65,5 @@ ms.locfileid: "36991486"
 13. 单击“确定” 。  
 
 ## <a name="see-also"></a>请参阅  
- [步骤 2A： 为 FileAct 存储和转发 （拉取） 方案添加文件接收位置](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-fileact-store-and-forward-scenario.md)   
- [步骤 2C：为 FileAct 存储和转发（拉取）方案添加 FILEACT 发送端口](../../adapters-and-accelerators/fileact-interact/step-2c-add-a-fileact-send-port-for-fileact-store-and-forward-pull-scenario.md)
+ [步骤 2A:为 FileAct 存储和转发 （拉取） 方案添加文件接收位置](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-fileact-store-and-forward-scenario.md)   
+ [步骤 2c:添加 FILEACT 发送端口为 FileAct 存储和转发 （拉取） 方案](../../adapters-and-accelerators/fileact-interact/step-2c-add-a-fileact-send-port-for-fileact-store-and-forward-pull-scenario.md)

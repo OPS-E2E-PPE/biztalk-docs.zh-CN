@@ -1,5 +1,5 @@
 ---
-title: 定义路由和消息转换服务调用使用路线 |Microsoft 文档
+title: 定义路由和消息转换服务调用使用路线 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 975c830f73e0de362b25f312a8d41c4b15368cfd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0145bb07e700133be91878f040f5a3db4825db5e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294277"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394681"
 ---
-# <a name="defining-routing-and-message-transformation-service-invocations-using-itineraries"></a>定义路由和转换消息的服务调用使用路线
-在此用例，以进行处理的消息包含说明的服务执行，而其解析要求列表路线 SOAP 标头。 具体而言，转换和路由服务定义，每个 （可选） 需要通过通用描述、 发现和集成 (UDDI)、 业务规则引擎策略、 XML 路径语言 (XPath) 或静态查找解决方法。 可以通过在发布消息时将其他服务添加到路线扩展此用例。  
+# <a name="defining-routing-and-message-transformation-service-invocations-using-itineraries"></a>定义路由和消息转换服务调用使用路线
+在此用例，提交以进行处理的消息包含描述的服务执行，而其分辨率要求列表的路线 SOAP 标头。 具体而言，转换和路由服务定义，每个并选择性地要求通过通用描述、 发现和集成 (UDDI)、 业务规则引擎策略、 XML 路径语言 (XPath) 或静态查找解决方法。 可以通过在发布消息时将其他服务添加到路线扩展此用例。  
   
- [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]提供两种类型的路线上渐变： 那些支持单向通信和支持请求-响应方案。 因为动态解决机制可以使用中路线信息来查找终结点或动态绑定到终结点，则 Microsoft BizTalk Server 以包含特定的终结点路由的详细信息，不要求。 图 1 说明的过程的示意图。  
+ [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]提供两种类型的路线接入： 支持单向通信和支持请求-响应方案。 动态解析机制信息可用于在路线中查找终结点或动态绑定到终结点，因为没有任何要求的 Microsoft BizTalk Server 以包含特定的终结点路由的详细信息。 图 1 显示了该过程的示意图。  
   
- ![定义路由服务调用](../esb-toolkit/media/ch3-definingroutingserviceinvocation.gif "Ch3 DefiningRoutingServiceInvocation")  
+ ![定义路由服务调用](../esb-toolkit/media/ch3-definingroutingserviceinvocation.gif "Ch3-DefiningRoutingServiceInvocation")  
   
  **图 1**  
   
  **定义路由和消息转换服务调用使用路线**  
   
- 附带路线入口示例[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]演示此用例。 它演示如何创建路线包含解析，路由，并作为一系列路线步骤定义服务调用说明如何[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]和 BizTalk Server 将处理该消息使用发布-订阅功能BizTalk Server。 单向请求响应示例中还包括。  
+ 路线接入点示例随附[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]演示此用例。 它演示如何创建包含分辨率、 路由、 路线和服务调用的说明作为一系列定义的路线步骤如何[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]和 BizTalk Server 将处理该消息使用发布-订阅的功能BizTalk Server。 单向和请求-响应示例包括在内。  
   
- 有关详细信息，请参阅[安装和运行路线上负载增加示例](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)。
+ 有关详细信息，请参阅[安装和运行路线接入点示例](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)。

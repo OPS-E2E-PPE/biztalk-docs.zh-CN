@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10722 |Microsoft Docs
+title: 单一登录：Event 10722 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f3cef151ebcd75a8ba6f0af35da2500d8bc80b4e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4ab88dddff9529f0d101731e8e82ab2f9b466b82
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008598"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397144"
 ---
-# <a name="single-sign-on-event-10722"></a>单一登录： 事件 10722
+# <a name="single-sign-on-event-10722"></a>单一登录：事件 10722
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                 |
@@ -30,14 +30,14 @@ ms.locfileid: "37008598"
 |  事件源   |                                             ENTSSO                                              |
 |    组件    |                                               N\A                                               |
 |  符号名称  |                                SSO_INFO_REPLAY_FILE_CLOSED_IDLE                                 |
-|  消息正文   | 重播文件由于当前未处于使用状态而关闭。%r<br /><br /> 文件名称： %1 |
+|  消息正文   | 重播文件已关闭，因为它目前未 use.%r<br /><br /> 文件名称： %1 |
 
 ## <a name="explanation"></a>解释  
- 此信息事件表明重播文件由于当前未处于使用状态而关闭。  
+ 此信息事件表明重播文件已被关闭，因为它不是当前正在使用。  
 
 ## <a name="user-action"></a>用户操作  
 
-- 不必进行用户操作。  
+- 不不需要任何用户操作  
 
   有关详细信息，请参阅下列资源：  
 

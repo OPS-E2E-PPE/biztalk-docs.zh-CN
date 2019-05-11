@@ -1,5 +1,5 @@
 ---
-title: 有关与 SAP 适配器的业务数据目录 |Microsoft 文档
+title: 有关使用 SAP 适配器的业务数据目录 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b956892ab5c1cf3885010b7c6e2dfd441af410a9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 55eed9eea61c62ae403c5acb8780a8f7097be149
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22216477"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374289"
 ---
-# <a name="about-business-data-catalog-with-the-sap-adapter"></a>有关与 SAP 适配器的业务数据目录
-业务数据目录是 Microsoft SharePoint 中的新集成组件。 业务数据目录是共享的服务和后端应用程序数据库和 Web 服务，而无需编写任何代码通过从曲面业务数据。 它是定义客户、 发票等的采购订单的业务实体的元数据存储库。 定义后，客户端可以使用这些实体。  
+# <a name="about-business-data-catalog-with-the-sap-adapter"></a>有关使用 SAP 适配器的业务数据目录
+业务数据目录是 Microsoft SharePoint 中的新集成组件。 业务数据目录是一个共享的服务和应用层协议从后端应用程序中通过数据库和 Web 服务，而无需编写任何代码的业务数据。 它是定义业务实体，例如客户、 发票和采购订单的元数据存储库。 定义后，客户端可以使用这些实体。  
   
- 业务数据目录提供业务数据目录定义编辑器来帮助你创作应用程序定义文件在 SharePoint 中的业务数据目录。 使用业务数据目录定义编辑器，可以创建和编辑业务应用程序的元数据。   
+ 业务数据目录提供了帮助 Business Data Catalog Definition Editor 为 SharePoint 中的业务数据目录中创建应用程序定义文件。 使用 Business Data Catalog Definition Editor，可以创建和编辑业务应用程序的元数据。   
 
   
-## <a name="see-also"></a>另请参阅  
-[使用带有 SharePoint SAP 适配器](../../adapters-and-accelerators/adapter-sap/use-the-sap-adapter-with-sharepoint.md)
+## <a name="see-also"></a>请参阅  
+[使用包含 SharePoint 的 SAP 适配器](../../adapters-and-accelerators/adapter-sap/use-the-sap-adapter-with-sharepoint.md)

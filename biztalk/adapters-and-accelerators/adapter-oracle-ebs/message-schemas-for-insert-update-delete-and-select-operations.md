@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 15bb515eee9a052852952f0ec245f8c954953a9e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2db33ff349c9cb18c582fbca828642d0c090376e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22218229"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375403"
 ---
 # <a name="message-schemas-for-insert-update-delete-and-select-operations"></a>消息架构为插入、 更新、 删除和选择操作
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]呈现基本 Insert、 Update、 Delete 和用于 Oracle E-business Suite 中的每个接口表和基础数据库中的每个表选择操作。 适配器还显示 Oracle E-business Suite 中的每个接口视图和基础数据库中的每个视图的选择操作。 这些操作执行的适当的 SQL 语句，由 WHERE 子句限定。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]这些操作中使用强类型的记录和记录集。  
@@ -32,7 +32,7 @@ ms.locfileid: "22218229"
 |---------------|-----------------|-----------------|---------------------------------|  
 |Insert|`<Insert xmlns="[VERSION]/InterfaceTables/[SCHEMA]/[APP_NAME]/[INTERFACETABLE_NAME]">   <RECORDSET>     <InsertRecord>       <[FIELD1_NAME] InlineValue="value">[value1]</[FIELD1_NAME]>       <[FIELD2_NAME] InlineValue="value">[value2]</[FIELD2_NAME]>       …     </InsertRecord>   </RECORDSET> </Insert>`|值**InlineValue**特性，如果指定，将重写元素的值。|`INSERT INTO TABLE_NAME (FIELD1_NAME, FIELD2_NAME, …) VALUES (value1, value2, …);`|  
 |将响应|`<InsertResponse xmlns="[VERSION]/InterfaceTables/[SCHEMA]/[APP_NAME]/[INTERFACETABLE_NAME]">   <InsertResult>[rows inserted]</InsertResult> </InsertResponse>`|在中返回插入的行数**InsertResult**元素。|--|  
-|选择|`<Select xmlns="[VERSION]/InterfaceTables/[SCHEMA]/[APP_NAME]/[INTERFACETABLE_NAME]">   <COLUMN_NAMES>[COLUMN_list]</COLUMN_NAMES>   <FILTER>WHERE_clause</FILTER> </Select>`|SELECT 查询执行使用 WHERE 子句筛选器元素中指定的目标表中。 结果集包含的列名称中指定逗号分隔的列表中的列**COLUMN_NAMES**元素。<br /><br /> **重要说明：** 这是适用于接口视图和数据库视图的唯一操作。|`SELECT COLUMN_list FROM TABLE_NAME WHERE WHERE_clause;`|  
+|选择|`<Select xmlns="[VERSION]/InterfaceTables/[SCHEMA]/[APP_NAME]/[INTERFACETABLE_NAME]">   <COLUMN_NAMES>[COLUMN_list]</COLUMN_NAMES>   <FILTER>WHERE_clause</FILTER> </Select>`|SELECT 查询执行使用 WHERE 子句筛选器元素中指定的目标表中。 结果集包含的列名称中指定逗号分隔的列表中的列**COLUMN_NAMES**元素。<br /><br /> **重要提示：** 这是适用于接口视图和数据库视图的唯一操作。|`SELECT COLUMN_list FROM TABLE_NAME WHERE WHERE_clause;`|  
 |选择响应|`<SelectResponse  xmlns="[VERSION]/InterfaceTables/[SCHEMA]/[APP_NAME]/[INTERFACETABLE_NAME]">   <SelectResult>     <SelectRecord>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </SelectRecord>   </SelectResult> </SelectResponse>`|由 SELECT 查询生成的结果集。|--|  
 |Update|`<Update xmlns="[VERSION]/InterfaceTables/[SCHEMA]/[APP_NAME]/[INTERFACETABLE_NAME]">   <RECORDSET>     <[FIELD1_NAME]>value1</[FIELD1_NAME]>     <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …   </RECORDSET>   <FILTER>WHERE_clause</FILTER> </Update>`|行匹配 where 子句中指定**筛选器**元素会更新中指定的值为**记录集**。 仅在指定的列**记录集**元素在每个匹配行中进行更新。|`UPDATE [TABLE_NAME] SET [FIELD1_NAME] = value1, [FIELD2_NAME] = value2, … WHERE WHERE_clause;`|  
 |更新响应|`<UpdateResponse xmlns="[VERSION]/InterfaceTables/[SCHEMA]/[APP_NAME]/[INTERFACETABLE_NAME]">   <UpdateResult>[rows inserted]</UpdateResult> </UpdateResponse>`|在返回更新的行数**UpdateResult**元素。|--|  
@@ -41,7 +41,7 @@ ms.locfileid: "22218229"
   
  属性说明：  
   
- [VERSION] = 消息版本字符串;例如， http://schemas.microsoft.com/OracleEBS/2008/05 。  
+ [VERSION] = 消息版本字符串;例如， http://schemas.microsoft.com/OracleEBS/2008/05。  
   
  [架构] = Oracle 集合项目;例如，SCOTT。  
   
@@ -66,14 +66,14 @@ ms.locfileid: "22218229"
   
 |运算|消息操作|示例|  
 |---------------|--------------------|-------------|  
-|Insert|**应用程序**: InterfaceTables/Insert / [SHORT_NAME] / [APP_NAME] / [TABLE_NAME]<br /><br /> **数据库**： 表/Insert / [架构] / [TABLE_NAME]|**应用程序**: InterfaceTables/插入/SQLGL/GL/GL_ALLOC_HISTORY<br /><br /> **数据库**： 表/插入/GL/GL_ALLOC_HISTORY|  
-|将响应|**应用程序**: InterfaceTables/Insert / [SHORT_NAME] / [APP_NAME] / [TABLE_NAME] / 响应<br /><br /> **数据库**： 表/Insert / [架构] / [TABLE_NAME] / 响应|**应用程序**: InterfaceTables/插入/SQLGL/GL/GL_ALLOC_HISTORY/响应<br /><br /> **数据库**： 表/插入/GL/GL_ALLOC_HISTORY/响应|  
-|选择|**应用程序**: InterfaceTables/选择 / [SHORT_NAME] / [APP_NAME] / [TABLE_NAME]<br /><br /> **数据库**： 表/选择 / [架构] / [TABLE_NAME]|**应用程序**: InterfaceTables/选择/SQLGL/GL/GL_ALLOC_HISTORY<br /><br /> **数据库**： 表/选择/GL/GL_ALLOC_HISTORY|  
-|选择响应|**应用程序**: InterfaceTables/选择 / [SHORT_NAME] / [APP_NAME] / [TABLE_NAME] / 响应<br /><br /> **数据库**： 表/选择 / [架构] / [TABLE_NAME] / 响应|**应用程序**: InterfaceTables/选择/SQLGL/GL/GL_ALLOC_HISTORY/响应<br /><br /> **数据库**： 表/选择/GL/GL_ALLOC_HISTORY/响应|  
-|Update|**应用程序**: InterfaceTables/更新 / [SHORT_NAME] / [APP_NAME] / [TABLE_NAME]<br /><br /> **数据库**： 表/更新 / [架构] / [TABLE_NAME]|**应用程序**: InterfaceTables/更新/SQLGL/GL/GL_ALLOC_HISTORY<br /><br /> **数据库**： 表/更新/GL/GL_ALLOC_HISTORY|  
-|更新响应|**应用程序**: InterfaceTables/更新 / [SHORT_NAME] / [APP_NAME] / [TABLE_NAME] / 响应<br /><br /> **数据库**： 表/更新 / [架构] / [TABLE_NAME] / 响应|**应用程序**: InterfaceTables/更新/SQLGL/GL/GL_ALLOC_HISTORY/响应<br /><br /> **数据库**： 表/更新/GL/GL_ALLOC_HISTORY/响应|  
-|DELETE|**应用程序**: InterfaceTables/删除 / [SHORT_NAME] / [APP_NAME] / [TABLE_NAME]<br /><br /> **数据库**： 表/删除 / [架构] / [TABLE_NAME]|**应用程序**: InterfaceTables/删除/SQLGL/GL/GL_ALLOC_HISTORY<br /><br /> **数据库**： 表/删除/GL/GL_ALLOC_HISTORY|  
-|删除响应|**应用程序**: InterfaceTables/删除 / [SHORT_NAME] / [APP_NAME] / [TABLE_NAME] / 响应<br /><br /> **数据库**： 表/删除 / [架构] / [TABLE_NAME] / 响应|**应用程序**: InterfaceTables/删除/SQLGL/GL/GL_ALLOC_HISTORY/响应<br /><br /> **数据库**： 表/删除/GL/GL_ALLOC_HISTORY/响应|  
+|Insert|**应用程序**:InterfaceTables/Insert/[SHORT_NAME]/[APP_NAME]/[TABLE_NAME]<br /><br /> **数据库**：Tables/Insert/[SCHEMA]/[TABLE_NAME]|**应用程序**:InterfaceTables/Insert/SQLGL/GL/GL_ALLOC_HISTORY<br /><br /> **数据库**：Tables/Insert/GL/GL_ALLOC_HISTORY|  
+|将响应|**应用程序**:InterfaceTables/Insert/[SHORT_NAME]/[APP_NAME]/[TABLE_NAME]/response<br /><br /> **数据库**：Tables/Insert/[SCHEMA]/[TABLE_NAME]/response|**应用程序**:InterfaceTables/Insert/SQLGL/GL/GL_ALLOC_HISTORY/response<br /><br /> **数据库**：Tables/Insert/GL/GL_ALLOC_HISTORY/response|  
+|选择|**应用程序**:InterfaceTables/Select/[SHORT_NAME]/[APP_NAME]/[TABLE_NAME]<br /><br /> **数据库**：Tables/Select/[SCHEMA]/[TABLE_NAME]|**应用程序**:InterfaceTables/Select/SQLGL/GL/GL_ALLOC_HISTORY<br /><br /> **数据库**：Tables/Select/GL/GL_ALLOC_HISTORY|  
+|选择响应|**应用程序**:InterfaceTables/Select/[SHORT_NAME]/[APP_NAME]/[TABLE_NAME]/response<br /><br /> **数据库**：Tables/Select/[SCHEMA]/[TABLE_NAME]/response|**应用程序**:InterfaceTables/Select/SQLGL/GL/GL_ALLOC_HISTORY/response<br /><br /> **数据库**：Tables/Select/GL/GL_ALLOC_HISTORY/response|  
+|Update|**应用程序**:InterfaceTables/Update/[SHORT_NAME]/[APP_NAME]/[TABLE_NAME]<br /><br /> **数据库**：Tables/Update/[SCHEMA]/[TABLE_NAME]|**应用程序**:InterfaceTables/Update/SQLGL/GL/GL_ALLOC_HISTORY<br /><br /> **数据库**：Tables/Update/GL/GL_ALLOC_HISTORY|  
+|更新响应|**应用程序**:InterfaceTables/Update/[SHORT_NAME]/[APP_NAME]/[TABLE_NAME]/response<br /><br /> **数据库**：Tables/Update/[SCHEMA]/[TABLE_NAME]/response|**应用程序**:InterfaceTables/Update/SQLGL/GL/GL_ALLOC_HISTORY/response<br /><br /> **数据库**：Tables/Update/GL/GL_ALLOC_HISTORY/response|  
+|DELETE|**应用程序**:InterfaceTables/Delete/[SHORT_NAME]/[APP_NAME]/[TABLE_NAME]<br /><br /> **数据库**：Tables/Delete/[SCHEMA]/[TABLE_NAME]|**应用程序**:InterfaceTables/Delete/SQLGL/GL/GL_ALLOC_HISTORY<br /><br /> **数据库**：Tables/Delete/GL/GL_ALLOC_HISTORY|  
+|删除响应|**应用程序**:InterfaceTables/Delete/[SHORT_NAME]/[APP_NAME]/[TABLE_NAME]/response<br /><br /> **数据库**：Tables/Delete/[SCHEMA]/[TABLE_NAME]/response|**应用程序**:InterfaceTables/Delete/SQLGL/GL/GL_ALLOC_HISTORY/response<br /><br /> **数据库**：Tables/Delete/GL/GL_ALLOC_HISTORY/response|  
   
  实体说明：  
   

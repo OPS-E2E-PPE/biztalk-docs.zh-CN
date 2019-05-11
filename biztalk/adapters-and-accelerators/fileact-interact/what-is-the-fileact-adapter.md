@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dc6fe9b28e4ea2b5eee087b61866827a766c3e3f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7d810ded6d5a73b2f22e04e3e27a15684bb55a09
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971486"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65364051"
 ---
 # <a name="what-is-the-fileact-adapter"></a>FileAct 适配器是什么？
 SWIFTNet FileAct 适配器之间提供连接 BizTalk Server 和在全球范围内 Interbank 金融电信 (SWIFT) Secure IP Network (SIPN) 为传输的文件。 SIPN 连接金融机构、 金融业基础结构和客户的安全专用网络上传输消息和文件。 FileAct 适配器使用 SWIFTNet 链接 (SNL) 应用程序编程接口 (API) s 要连接到 SIPN。  

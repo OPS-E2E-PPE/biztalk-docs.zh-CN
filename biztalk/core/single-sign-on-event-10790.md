@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10790 |Microsoft Docs
+title: 单一登录：Event 10790 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 452e2e5612ed6e81ba6352c54ab14f82bf8abedb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2d360570d486ac3391c28bae449d35402328ebfc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996606"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394151"
 ---
-# <a name="single-sign-on-event-10790"></a>单一登录： 事件 10790
+# <a name="single-sign-on-event-10790"></a>单一登录：事件 10790
 ## <a name="details"></a>详细信息  
   
 |                 |                                                            |
@@ -28,7 +28,7 @@ ms.locfileid: "36996606"
 | 产品版本 | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
 |    事件 ID     |                           10790                            |
 |  事件源   |                           ENTSSO                           |
-|    组件    |                            N/A                             |
+|    组件    |                            不可用                             |
 |  符号名称  |                  ENTSSO_E_TICKET_EXPIRED                   |
 |  消息正文   |                 票证已超时。                  |
   
@@ -36,4 +36,4 @@ ms.locfileid: "36996606"
  票证已超时。  
   
 ## <a name="user-action"></a>用户操作  
- 使用更长的票证超时值重新配置应用程序。
+ 重新配置应用程序提供更长的票证超时值。

@@ -1,5 +1,5 @@
 ---
-title: 服务 （ModuleRef 节点） |Microsoft 文档
+title: 服务 （ModuleRef 节点） |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,19 +14,19 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 59f016e9924fcc0cf3116c713e6636d69986c4d4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 62f11556b3e6ab890a99973d60fcbed9019f9631
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269405"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393303"
 ---
 # <a name="services-moduleref-node"></a>服务 （ModuleRef 节点）
-绑定文件的“服务”节点包含有关与绑定文件一起导出的每个服务的特定信息。  
+绑定文件的服务节点包含有关与绑定文件一起导出的每个服务的特定信息。  
   
-## <a name="nodes-in-the-services-node"></a>“服务”节点中的节点  
+## <a name="nodes-in-the-services-node"></a>在服务节点中的节点  
  下表列出了可为绑定文件的此节点设置的属性：  
   
-|**名称**|**节点类型**|**数据类型**|**Description**|**限制**|**注释**|  
+|**名称**|**节点类型**|**数据类型**|**说明**|**限制**|**注释**|  
 |--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|[服务](../core/service-services-node.md)|录制|ServiceRef (ComplexType)|描述此服务的节点的容器节点。|可选|默认值： 无|
+|[服务](../core/service-services-node.md)|录制|ServiceRef (ComplexType)|描述此服务的节点的容器节点。|可选|默认值：None|

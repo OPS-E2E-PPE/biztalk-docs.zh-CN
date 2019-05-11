@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f3f080cedb74210d02806681b6c9e20656d3d09e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 89fddfef2bb0c5c564f76ecb99f3e70265b7754d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004774"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370048"
 ---
 # <a name="what-operations-are-supported-by-the-siebel-adapter"></a>Siebel 适配器支持哪些操作
 适配器客户端可以通过以下任一方法来执行 Siebel 系统的操作：  

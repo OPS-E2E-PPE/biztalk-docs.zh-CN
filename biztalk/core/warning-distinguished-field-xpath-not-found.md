@@ -1,5 +1,5 @@
 ---
-title: 警告-找不到可分辨的字段 XPath |Microsoft 文档
+title: 警告-找不到可分辨的字段 XPath |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f9df2e34c27fe3e5e3540ac384443f86143bf741
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 48306b164a3ce3bc0ef999ad8eb7d0d6bbedd444
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288157"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393722"
 ---
 # <a name="warning---distinguished-field-xpath-not-found"></a>警告-找不到可分辨的字段 XPath
 **错误代码**  
@@ -28,8 +28,8 @@ ms.locfileid: "22288157"
   
  **说明**  
   
- 架构中可能不存在与所指示的可分辨字段升级相对应的节点。 BizTalk 编辑器无法解决复杂的 XPath 规范，如果你编辑提升的属性 XPath 中**编辑实例 XPath**对话框中，它可能或可能无法正确标识你想要升级的节点。  
+ 在架构中可能不存在与所指示的可分辨字段升级相对应的节点。 BizTalk 编辑器无法解析复杂的 XPath 规范，如果编辑已升级的属性 XPath 中**编辑实例 XPath**对话框中，它可能会或可能无法正确识别您要升级的节点。  
   
  **用户执行任何操作**  
   
- 你仍可以保留此警告出现通过更改在提升的属性的 XPath**编辑实例 XPath**对话框中，你可以访问从中单元格**节点路径**上的表的列**可分辨字段**选项卡中**升级属性**对话框。 你可以访问**升级属性**对话框中，从**升级属性**属性**架构**中 Microsoft® 节点[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口。
+ 可以保留此警告使其不显示通过更改中的升级属性的 XPath**编辑实例 XPath**对话框中，您可以从中单元格访问**节点路径**上表的列**可分辨字段**选项卡**升级属性**对话框。 您可以访问**升级属性**对话框从**升级属性**属性**架构**Microsoft® 中的节点[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口。

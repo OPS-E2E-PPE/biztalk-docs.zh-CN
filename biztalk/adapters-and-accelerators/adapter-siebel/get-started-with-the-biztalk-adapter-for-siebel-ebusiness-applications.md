@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f4d03e8b85811db6ea7fe7bcde5bf37f93b255d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 934d3f40e79d95b7fd5d471e981386bb39dff3a0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968942"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371567"
 ---
 # <a name="get-started-with-the-biztalk-adapter-for-siebel-ebusiness-applications"></a>开始使用用于 Siebel eBusiness 应用程序的 BizTalk 适配器
 本部分中的用户不熟悉 Microsoft 提供的适配器、 先决条件和主题概述[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。 它讨论的功能[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]和可以使用该适配器在 Siebel 系统执行不同操作。  
@@ -57,4 +57,4 @@ ms.locfileid: "36968942"
   
 -   [社区资源](http://msdn.microsoft.com/library/ff5ec978-8cdd-418a-a25e-fd3746b64d8b)  
   
--   [方面的常见问题](http://msdn.microsoft.com/library/66953c15-08c5-48ac-a4ff-a72a82174f15)
+-   [常见问题解答](http://msdn.microsoft.com/library/66953c15-08c5-48ac-a4ff-a72a82174f15)

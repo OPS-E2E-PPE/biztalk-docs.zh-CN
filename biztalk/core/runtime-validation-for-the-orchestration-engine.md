@@ -24,17 +24,17 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 01c597cce40e962c9a62ba0cc21d12d52dae80f2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 89423ce9b08aee8ed500b599a912f898c7284968
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023115"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393970"
 ---
 # <a name="runtime-validation-for-the-orchestration-engine"></a>业务流程引擎的运行时验证
-您可以配置业务流程引擎，使其执行各种运行时验证，这些验证可帮助您测试业务流程并诊断可能出现的配置错误或数据错误。  
+可以配置业务流程引擎来执行各种可帮助您测试您的业务流程并诊断配置或数据发生的错误的可能的运行时验证。  
   
- 您可以在 BTSNTSvc.exe.config 中设置标志。BTSNTSvc.exe.config 是一个配置文件，您可以在 BTSNTSvc.exe 所在的目录（通常在 BizTalk 部署目录中）中创建或编辑该文件。 可以在 BTSNTSvc.exe.config 文件中设置以下标志：  
+ 您可以在 BTSNTSvc.exe.config，可以创建或编辑在 BTSNTSvc.exe 所在的目录 （通常在 BizTalk 部署目录中） 中的配置文件中设置标志。 您可以在 BTSNTSvc.exe.config 文件中设置以下标志：  
   
 - 如果您设置**ValidateAssemblies**标记，用于`True`，引擎将尝试加载引用的业务流程，失败，则会引发的直接依存程序集的所有程序集Microsoft.XLANGs.Core.AssemblyValidationException。  
   
@@ -44,16 +44,16 @@ ms.locfileid: "37023115"
   
 - 如果您设置**ExtendedLogging**标记，用于`True`，引擎失败，若要发布的消息的 microsoft.xlangs.basetypes.publishmessageexception 信息中显示的已升级的属性。  
   
-  如果要禁用验证，请从配置文件中完全删除标志。 所有验证都启用时，引擎将验证程序集、架构和相关。 有关详细信息和 BTSNTSvc.exe.config 的示例，请参阅[业务流程引擎配置](../core/orchestration-engine-configuration.md)。  
+  如果你想要禁用验证，请从配置文件中完全删除标志。 打开所有验证时，引擎将验证程序集、 架构和关联。 有关详细信息和 BTSNTSvc.exe.config 的示例，请参阅[业务流程引擎配置](../core/orchestration-engine-configuration.md)。  
   
 ## <a name="validate-assemblies"></a>验证程序集  
- 业务流程引擎将验证业务流程引用的所有程序集是否可用。 为了使验证成功，在激活业务流程的第一个实例时，所有引用的程序集都必须在全局程序集缓存 (GAC) 中。 如果验证失败，则将在应用程序日志中记录错误并挂起业务流程。  
+ 业务流程引擎将验证由业务流程引用的任何程序集可用。 验证成功，所有引用的程序集必须是全局程序集缓存 (GAC) 中激活该业务流程的第一个实例时。 如果验证失败，错误将记录到应用程序日志，并且会挂起业务流程。  
   
 ## <a name="validate-schemas"></a>验证架构  
- 只要分配了 XSD 部分，业务流程引擎就会针对其架构验证该部分的数据。 如果验证失败，则将在应用程序日志中记录错误并引发异常。  
+ 只要分配了 XSD 部分，业务流程引擎将验证针对其架构的一部分的数据。 如果验证失败，将在应用程序日志记录错误并将引发异常。  
   
 ## <a name="validate-correlation"></a>验证相关  
- 业务流程引擎将确认：为具有给定业务流程实例的相关指定的属性值反映在从该业务流程实例发送的所有消息中。 如果**validateCorrelation**未设置，则引擎将假定发送的消息包含正确的相关值，并将执行任何检查。  
+ 业务流程引擎将确认指定为实现与业务流程的给定实例关联的属性值将反映在从该业务流程实例发送任何消息。 如果**validateCorrelation**未设置，则引擎将假定发送的消息包含正确的相关值，并将执行任何检查。  
   
  如果任一相关验证失败，则引擎将在应用程序日志中记录错误并引发类型的异常**为 CorrelationValidationException**。  
   

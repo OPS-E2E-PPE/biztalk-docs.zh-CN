@@ -12,17 +12,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8cc3c8763115e93387bed5195f234bf4a070b9b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 773741699d040a909ef56bf2034a3b52fddee79f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986902"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394896"
 ---
 # <a name="port-configuration-errors"></a>端口配置错误
 诊断和解决 WCF 端口配置错误的信息。  
 
-## <a name="cannot-merge-operation-due-to-communication-pattern-conflict"></a>由于通信模式冲突，无法合并操作
+## <a name="cannot-merge-operation-due-to-communication-pattern-conflict"></a>无法合并操作由于通信模式冲突
   
 |                 |                                                         详细信息                                                         |
 |-----------------|-------------------------------------------------------------------------------------------------------------------------|
@@ -58,4 +58,4 @@ ms.locfileid: "36986902"
  此错误表示尝试使用该服务有单向和双向操作 （或请求-响应）。  
   
 ### <a name="user-action"></a>用户操作  
- 将服务更正为具有合适的操作（单向或请求响应，但不是同时具有两者），并尝试使用该服务（如果拥有要尝试使用的 WCF 服务）。 否则，请与服务提供商联系。
+ 更正服务具有合适的操作 (是单向或请求-响应但不是能同时) 并尝试使用 （如果您拥有要尝试使用的 WCF 服务）。 否则，请与服务提供商联系。

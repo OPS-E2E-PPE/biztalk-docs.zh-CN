@@ -13,11 +13,11 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 734c0dffc64ca7efd52b6325227a26ee0387b50e
-ms.sourcegitcommit: ec7013f5ddcd2da4291ae29ac28f965d89aa277a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "26007655"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393403"
 ---
 # <a name="overdrive-load-test"></a>过载测试
 本主题中的信息中所述的测试是指[测量的引擎的 MST 的测试方案](../core/test-scenarios-for-measuring-mst-of-the-engine.md)。  

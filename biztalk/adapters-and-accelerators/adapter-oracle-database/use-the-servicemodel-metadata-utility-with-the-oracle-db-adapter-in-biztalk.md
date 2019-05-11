@@ -13,12 +13,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0fe432c9cf7e586269f85beb5f584bbe2aa37210
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f9c5e0104c40140214064af905fdc9ca3f2e9169
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999358"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375860"
 ---
 # <a name="using-the-servicemodel-metadata-utility-tool-with-the-biztalk-adapter-for-oracle-database"></a>ServiceModel Metadata Utility Tool 的 BizTalk 适配器将用于 Oracle 数据库
 可以使用 ServiceModel Metadata Utility Tool (svcutil.exe) 生成 WCF 客户端类或操作的 WCF 服务协定 （接口） 的[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]公开。 运行 svcutil.exe 来生成 WCF 客户端类或 WCF 服务协定后，可以在代码中包含生成的文件并创建生成的类的实例也可以实现对 Oracle 执行操作的协定中的 WCF 服务数据库。  

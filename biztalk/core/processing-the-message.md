@@ -26,12 +26,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 49329e23127f051a593596955f808cc879dd76f6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 93e24c865cf233703a028753ab0d7a16d0819340
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987782"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396970"
 ---
 # <a name="processing-the-message"></a>处理消息
 当消息在 BizTalk Server 中传输时，到目前为止我们所介绍的所有组件在消息的处理过程中均发挥了一定的作用。 本部分将提供有关这些组件如何在功能上交互的更详细信息（从接收消息开始）。 下图显示了接收端口的组成部分以及消息流将如何通过接收进程。  

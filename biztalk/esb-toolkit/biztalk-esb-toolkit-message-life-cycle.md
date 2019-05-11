@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f93a4ee2024fcb9cfaf65e7cf33922784a47030
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 26db3a32cc31f417d518b2eb8663f2da3ba5e8ee
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979134"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392082"
 ---
 # <a name="biztalk-esb-toolkit-message-life-cycle"></a>BizTalk ESB 工具包消息生命周期
 下面是消息的来自外部系统开始并遍历 ESB 到达其最终目标的生命周期：  

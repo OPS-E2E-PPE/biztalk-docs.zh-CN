@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 中的架构验证 |Microsoft 文档
+title: 在 Visual Studio 中的架构验证 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 29905a12ca86600e82bda24aa0e9989fd3064d0f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 41b6768ab5547caca2b73cead339bc166a55b674
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269301"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396898"
 ---
 # <a name="schema-validation-in-visual-studio"></a>Visual Studio 中的架构验证
-在完成创建架构后，或在创建架构的各个阶段，您可以验证该架构以确定它是否存在内部不一致，或是否存在可能阻碍它高效地处理实例消息的其他问题。  
+之后，已创建架构，或在其创建期间的不同时间，可以验证它以确定它是否包含任何内部不一致，或者具有其他问题，可能会阻止进程实例的有效地使用消息。  
   
- 若要验证架构，使用**验证架构**命令在解决方案资源管理器中的架构与关联的快捷菜单上。 验证的结果将在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 的“输出”窗口中报告。  
+ 若要验证架构，请使用**验证架构**命令在解决方案资源管理器中与该架构关联的快捷菜单上。 验证的结果中报告[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]输出窗口。  
   
  有关如何验证架构的详细分步说明，请参阅[验证架构](../core/how-to-validate-schemas-in-visual-studio.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [有关架构](../core/about-schemas.md)   
  [测试架构](../core/testing-schemas.md)

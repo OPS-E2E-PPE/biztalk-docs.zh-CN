@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6c984a62275c58f50b0c360a5f46040a6022b459
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fae3fe99fe3d9f3d0553a7f597d02553ca034688
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007750"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529448"
 ---
 # <a name="connect-to-the-oracle-database-using-windows-authentication"></a>连接到 Oracle 数据库使用 Windows 身份验证
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]使适配器客户端能够使用 Windows 身份验证建立与 Oracle 数据库的连接。 若要使用 Windows 身份验证，适配器客户端必须指定"/"作为用户名并将密码留空。 有关连接到 Oracle 数据库使用 Windows 身份验证的详细信息，请参阅[连接到 Oracle 数据库，在 Visual Studio 中使用使用适配器服务](../../adapters-and-accelerators/adapter-oracle-database/connect-to-oracle-database-in-visual-studio-using-the-consume-adapter-service.md)。  

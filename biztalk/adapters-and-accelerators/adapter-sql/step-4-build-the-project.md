@@ -1,5 +1,5 @@
 ---
-title: 步骤 4： 生成项目 |Microsoft Docs
+title: 步骤 4：生成项目 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cfa718d31c7b93d1cc05cefb8251a635cc70ef22
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6216d96e0d9ce0f8e564fa45bc28c075ce124c8d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977934"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367700"
 ---
-# <a name="step-4-build-the-project"></a>步骤 4： 生成项目
+# <a name="step-4-build-the-project"></a>步骤 4：生成项目
 ![步骤 4 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")  
   
- **完成时间：** 5 分钟  
+ **若要完成的时间：** 5 分钟  
   
  **目标：** 在此步骤中，您将编译 BizTalk 业务流程项目。  
   
-## <a name="prerequisites"></a>必要條件  
- 你必须已完成[第 3 步： 将请求消息发送到插入记录和接收响应](../../adapters-and-accelerators/adapter-sql/step-3-send-the-request-message-to-insert-records-and-receive-a-response.md)。  
+## <a name="prerequisites"></a>先决条件  
+ 你必须已完成[步骤 3:发送要插入记录，并接收响应的请求消息](../../adapters-and-accelerators/adapter-sql/step-3-send-the-request-message-to-insert-records-and-receive-a-response.md)。  
   
 ### <a name="to-build-the-biztalk-orchestration-project"></a>若要生成 BizTalk 业务流程项目  
   
@@ -49,14 +49,14 @@ ms.locfileid: "36977934"
   
 6. 在解决方案资源管理器，右键单击解决方案名称，然后单击**生成解决方案**。  
   
-    在屏幕底部的输出窗格应阅读：**生成： 3 的成功或最新，0 个失败，0 已跳过。**  
+    在屏幕底部的输出窗格如下所示：**生成中：3 个成功或最新，0 失败，0 已跳过。**  
   
-## <a name="what-did-i-just-do"></a>内容回顾  
+## <a name="what-did-i-just-do"></a>我只需做了什么？  
  在此步骤中，您编译包含 BizTalk 项目和两个类库项目的解决方案。  
   
 ## <a name="next-steps"></a>后续步骤  
- 在部署解决方案，如中所述[第 5 课： 部署解决方案](../../adapters-and-accelerators/adapter-sql/lesson-5-deploy-the-solution.md)。  
+ 在部署解决方案，如中所述[第 5 课：部署解决方案](../../adapters-and-accelerators/adapter-sql/lesson-5-deploy-the-solution.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [步骤 3： 将发送要插入记录，并接收响应的请求消息](../../adapters-and-accelerators/adapter-sql/step-3-send-the-request-message-to-insert-records-and-receive-a-response.md)   
+ [步骤 3：发送要插入记录，并接收响应的请求消息](../../adapters-and-accelerators/adapter-sql/step-3-send-the-request-message-to-insert-records-and-receive-a-response.md)   
  [第 4 课：在采购订单表中执行插入操作](../../adapters-and-accelerators/adapter-sql/lesson-4-perform-an-insert-operation-on-the-purchase-order-table.md)

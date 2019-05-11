@@ -17,23 +17,23 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27e0423121d0259de0a406e17fa9987a522b549d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 88edad3cd58344e6ba5549e517f711957e811ed5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008870"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395287"
 ---
 # <a name="running-sso-projects"></a>运行 SSO 项目
-您可以从 Internet Explorer 运行示例单一登录 (SSO) 项目。  
+可以从 Internet Explorer 运行示例单一登录 (SSO) 项目。  
   
 ## <a name="running-a-sample-from-internet-explorer"></a>从 Internet Explorer 运行示例  
   
-#### <a name="to-run-the-sample-from-the-internet-explorer"></a>从 Internet Explorer 运行示例  
+#### <a name="to-run-the-sample-from-the-internet-explorer"></a>若要从 Internet Explorer 运行示例  
   
 1. 打开浏览器。  
   
-2. 请转到以下 URL：  
+2. 请转到以下 URL:  
   
     http://localhost/SSODemo/BTSHTTPReceive.dll?<ns0:method_list_method%20xmlns:ns0="http://microsoft.com/exposed/object/object1"><ns0:method_list_method><ns1:method_list%20xmlns:ns1="http://microsoft.com/exposed/object"><ns1:comp_code></ns1:comp_code><ns1:comp_name></ns1:comp_name></ns1:object_1></ns0:method_list></ns0:method_list_method>  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 06ae5d68ea1dcaced65d57b0f1a832588b5aeb11
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 453c266739098cf6ade1f61a856d04badc330e66
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994142"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529436"
 ---
 # <a name="connect-to-the-oracle-database-in-visual-studio-using-the-add-adapter-service-reference"></a>连接到 Oracle 数据库，在 Visual Studio 中使用添加适配器服务引用
 若要连接到 Oracle 数据库使用[!INCLUDE[adapteroracle_short_md](../../includes/adapteroracle-short-md.md)]在.NET 编程解决方案中，必须使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]。 本主题说明了如何使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。  
@@ -38,7 +38,7 @@ ms.locfileid: "36994142"
   
    1. 若要使用 Oracle 数据库凭据进行连接，请键入中的数据库凭据**用户名**并**密码**文本框。 请确保指定的用户名和密码以连接到 Oracle 数据库时遵循以下注意事项：  
   
-      - **用户名称**。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]将保留在打开对 Oracle 数据库的连接时输入的用户名的值的大小写。 对 Oracle 数据库用户名称是区分大小写。 应确保提供 Oracle 用户名称[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]在所需的 Oracle 数据库的情况下。 通常情况下，这意味着在 SCOTT/TIGER 凭据的用户名称应为大写:"SCOTT"。  
+      - **用户名称**。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]将保留在打开对 Oracle 数据库的连接时输入的用户名的值的大小写。 对 Oracle 数据库用户名称是区分大小写。 应确保提供 Oracle 用户名称[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]在所需的 Oracle 数据库的情况下。 通常情况下，这意味着在 SCOTT/TIGER 凭据的用户名称应为大写："SCOTT"。  
   
       - **密码**。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]将保留在打开对 Oracle 数据库的连接时输入的密码值的大小写。 对于发行版 10g 和更早版本，不区分大小写上 Oracle 系统的密码。  
   

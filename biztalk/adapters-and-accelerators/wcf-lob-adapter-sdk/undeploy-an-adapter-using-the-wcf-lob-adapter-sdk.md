@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 84932fa0a140df157408ad77d9fc6bec8c0823fe
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 300c7721d66d3f5ebb320bf8ddd29319dfeb81cb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974582"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362996"
 ---
 # <a name="undeploy-an-adapter-using-the-wcf-lob-adapter-sdk"></a>取消部署适配器使用 WCF LOB 适配器 SDK
 若要取消部署适配器从一台计算机，用户必须执行以下两项任务：  
@@ -30,7 +30,7 @@ ms.locfileid: "36974582"
   
 #### <a name="use-the-windows-interface"></a>使用 Windows 界面  
   
-1.  打开 Windows 资源管理器，如下所示： 单击**启动**，指向**所有程序**，指向**附件**，然后单击**Windows 资源管理器**.  
+1.  打开 Windows 资源管理器，如下所示：单击**启动**，依次指向**所有程序**，指向**附件**，然后单击**Windows 资源管理器**。  
   
 2.  浏览到 GAC 中，它位于 systemdrive%\Windows\Assembly。  
   
@@ -42,11 +42,11 @@ ms.locfileid: "36974582"
   
 2. 在命令提示符下，键入以下命令：  
   
-    **gacutil /u** \<*的完全限定*<em>程序集名称</em>\>  
+    **gacutil /u** \<*fully qualified*<em>assembly name</em>\>  
   
     在此命令中，程序集名称是要从 GAC 卸载程序集的名称。  
   
-    下面的示例从 GAC 中移除名为 hello.dll 的程序集。  
+    以下示例删除名为 hello.dll 从 GAC 程序集。  
   
     `gacutil /u "MyAdapter,Version=1.0.0.0, Culture=neutral, PublicKeyToken=fafafafafafafafa"`
   
@@ -55,7 +55,7 @@ ms.locfileid: "36974582"
   
 #### <a name="manually-edit-the-machineconfig-file"></a>手动编辑 machine.config 文件  
   
-1.  编辑位于 Microsoft .NET 配置文件夹中的 machine.config 文件。 若要执行此操作，请单击**启动**，单击**运行**，类型**记事本\<Windows 安装路径\>\Microsoft.NET\Framework\\< 版本\>\CONFIG\machine.config**，然后单击**确定**。  
+1.  编辑 machine.config 文件位于 Microsoft.NET 配置文件夹中。 若要执行此操作，请单击**启动**，单击**运行**，类型**记事本\<Windows 安装路径\>\Microsoft.NET\Framework\\< 版本\>\CONFIG\machine.config**，然后单击**确定**。  
   
     > [!NOTE]
     >  在进行更改，以防止受到编辑错误之前请 machine.config 文件的备份。  

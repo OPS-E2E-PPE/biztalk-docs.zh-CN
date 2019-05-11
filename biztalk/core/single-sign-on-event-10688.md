@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10688 |Microsoft Docs
+title: 单一登录：Event 10688 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b0efe057472366b713b00573a36fa15c0b092ec2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e760441481a5eddfd2d7d53294a8f6f4abade8fb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975902"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397410"
 ---
-# <a name="single-sign-on-event-10688"></a>单一登录： 事件 10688
+# <a name="single-sign-on-event-10688"></a>单一登录：事件 10688
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                           |
@@ -44,7 +44,7 @@ ms.locfileid: "36975902"
 
 - 删除重播文件。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [如何配置密码同步](../core/how-to-configure-password-synchronization.md)  
 

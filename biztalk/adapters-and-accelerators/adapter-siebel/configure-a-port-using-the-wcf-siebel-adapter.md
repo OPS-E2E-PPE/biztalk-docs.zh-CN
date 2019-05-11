@@ -13,17 +13,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6eec0ca12c8b77d9327ddc7fae6136c75ff99202
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 93b16bc56a724767403c462855df841daa835d1d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975518"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371937"
 ---
 # <a name="configure-a-port-using-the-wcf-siebel-adapter"></a>使用 Wcf-siebel 适配器配置端口
 如何配置 WCF Siebel 发送端口，以执行在 Siebel 系统使用的出站操作[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
 是的成员的帐户登录[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]Administrators 组或 BizTalk Operators 组。 详细了解权限的详细信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)，并[最低安全权限](https://social.technet.microsoft.com/wiki/contents/articles/24590.minimum-security-rights-for-biztalk-server-2006-to-2016.aspx)。
   
 ## <a name="deploy-adapters-for-sending-messages-to-a-siebel-system"></a>部署用于将消息发送到 Siebel 系统的适配器  

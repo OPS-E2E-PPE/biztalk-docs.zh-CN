@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 08081cc1e59181f3cd6aad0dfa532b060287d2ea
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8385d9f18bf3d7cf64c669a64cabc56110673cdd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978942"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375675"
 ---
 # <a name="configure-the-sign-in-credentials-for-the-oracle-e-business-suite"></a>用于 Oracle E-business Suite 中配置单一登录凭据
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]要求适配器客户端提供客户端凭据。 若要使用 Oracle E-business Suite 用户进行身份验证和建立连接，适配器将使用这些凭据。  
@@ -71,7 +71,7 @@ ms.locfileid: "36978942"
    | **模板**  | 单击**添加适配器元数据**。 |
 
 
-3. 单击 **“添加”**。 此时[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]会打开。  
+3. 单击 **“添加”**。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]随即打开。  
 
 4. 在中[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]，选择**Wcf-oracleebs**。 选择在其安装 BizTalk Server 的计算机和 BizTalk 数据库的名称。  
 

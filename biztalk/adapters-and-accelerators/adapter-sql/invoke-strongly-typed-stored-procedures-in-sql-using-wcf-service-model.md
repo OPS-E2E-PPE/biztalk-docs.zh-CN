@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b88cae88a01ea3f04da3b3672153da7d00ea7633
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5a4ceeba676785fbbcd66f192e30ec91816115c7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966814"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369306"
 ---
 # <a name="invoke-strongly-typed-stored-procedures-in-sql-using-wcf-service-model"></a>调用强类型化 SQL 使用 WCF 服务模型中的存储过程
 当您调用下列出的过程**Strongly-Typed 过程**中的节点[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]，输出采用强类型化结果集的形式。 本主题将说明了如何创建 WCF 客户端以调用返回强类型化结果集的 SQL Server 中的存储的过程。  
@@ -33,16 +33,16 @@ ms.locfileid: "36966814"
   
 |SQL Server 数据库项目|WCF 客户端名称|  
 |----------------------------------|---------------------|  
-|过程 (下**Strongly-Typed 过程**节点)|TypedProcedures_ [schema] 客户端|  
+|过程 (下**Strongly-Typed 过程**节点)|TypedProcedures_[schema]Client|  
   
  [架构] 是该过程所属的架构;例如，"dbo"。  
   
 ### <a name="method-signature-for-invoking-stored-procedures"></a>用于调用存储的过程的方法签名  
  下表显示了用于调用存储的过程所公开的方法的签名。  
   
-|运算|方法签名|  
+|操作|方法签名|  
 |---------------|----------------------|  
-|过程名称|[PROC_NS]过程 [名称](参数 1，参数 2，...\)|  
+|过程名称|[PROC_NS] [procedure_name](param1, param2, …\)|  
   
  [PROC_NS] 是过程的命名空间;例如 schemas.microsoft.com.Sql._2008._05.ProceduresResultSets.dbo.GET_EMP_DETAILS.StoredProcedureResultSet0]  
   

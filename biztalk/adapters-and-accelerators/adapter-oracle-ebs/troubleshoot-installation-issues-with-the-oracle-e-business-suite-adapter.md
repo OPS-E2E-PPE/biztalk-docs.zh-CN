@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4fb1d5f0e1f17870c9824b30e5da55a2740cb81b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8955cc05d9ab4f0847ea9979b38fc361edf7164f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968126"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374439"
 ---
 # <a name="troubleshoot-installation-issues-with-the-oracle-e-business-suite-adapter"></a>使用 Oracle E-business Suite 适配器进行故障排除安装问题：
 安装 Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]复制产品二进制文件的计算机上并注册每个适配器的绑定。 本部分讨论如何使用故障排除技术来解决安装错误。  

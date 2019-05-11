@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10614 |Microsoft Docs
+title: 单一登录：Event 10614 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ba6cae7c64b5eeff339499f279aa85917211cbba
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a5fc2758327087d0b312de16b6f7c8ebc6b5bb6d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968166"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397697"
 ---
-# <a name="single-sign-on-event-10614"></a>单一登录： 事件 10614
+# <a name="single-sign-on-event-10614"></a>单一登录：事件 10614
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                                                                         |
@@ -28,9 +28,9 @@ ms.locfileid: "36968166"
 | 产品版本 |                                                                                       [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                                        |
 |    事件 ID     |                                                                                                                  10614                                                                                                                  |
 |  事件源   |                                                                                                                 ENTSSO                                                                                                                  |
-|    组件    |                                                                                                                   N/A                                                                                                                   |
+|    组件    |                                                                                                                   不可用                                                                                                                   |
 |  符号名称  |                                                                                                     SSO_WARN_INVALID_TICKET_TIMEOUT                                                                                                     |
-|  消息正文   | 票证超时值对全局信息更新无效。%r<br /><br /> 票证超时： %1 分钟 %r<br /><br /> 最小票证超时： 1 分钟 %r<br /><br /> 最大票证超时： %2 分钟 %r<br /><br /> 错误代码： %3 |
+|  消息正文   | 票证超时值不能用于全局信息 update.%r<br /><br /> 票证超时： %1 分钟 %r<br /><br /> 最小票证超时：1 分钟 %r<br /><br /> 最大票证超时： %2 分钟 %r<br /><br /> 错误代码： %3 |
   
 ## <a name="explanation"></a>解释  
  指定的票证超时值无效。  

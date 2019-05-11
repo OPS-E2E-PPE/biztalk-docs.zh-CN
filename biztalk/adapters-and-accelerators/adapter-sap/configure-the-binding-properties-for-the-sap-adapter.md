@@ -15,12 +15,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2ef599f91675d4604d9e9f56aafdef3677d2583a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ecdb5cf06e16c6844addea9e4b7f8fb5f8903bba
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001966"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373875"
 ---
 # <a name="configure-the-binding-properties-for-the-sap-adapter"></a>配置 SAP 适配器的绑定属性
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]显示，您可以控制某些行为特征的多个绑定属性。 本部分提供有关从 Visual Studio （设计时） 和设置的绑定属性的信息[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台 （运行时间）。 在设计时，必须指定要为特定的操作生成架构的绑定属性。 在运行时，必须指定的绑定属性作为一部分发送或接收端口来发送或接收来自 SAP 系统的消息。  
@@ -62,7 +62,7 @@ ms.locfileid: "37001966"
    | **模板**  | 单击**添加适配器元数据**。 |
 
 
-3. 单击 **“添加”**。 此时[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]会打开。  
+3. 单击 **“添加”**。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]随即打开。  
 
 4. 在添加适配器向导中，选择**WCF-SAP**。 选择在其安装 BizTalk Server 的计算机和 BizTalk 数据库的名称。  
 

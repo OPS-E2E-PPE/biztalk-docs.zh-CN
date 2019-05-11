@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eabb9c260ed835a7c4cac3183000327767bb9cd0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8ec6222c68e37ab85414a5b6eb8137b5cba13f3d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014510"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367884"
 ---
 # <a name="secure-your-sql-applications"></a>保护 SQL 应用程序
 ## <a name="overview"></a>概述

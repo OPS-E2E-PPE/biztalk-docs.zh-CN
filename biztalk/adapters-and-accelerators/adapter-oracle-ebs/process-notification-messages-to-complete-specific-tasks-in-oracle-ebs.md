@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d671ee0b4ab351bce8109cdd20635d6f838da9ea
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b61cd9ee11a6c8eba778db8fabf0f50552226046
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995950"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374864"
 ---
 # <a name="process-notification-messages-to-complete-specific-tasks-in-oracle-e-business-suite"></a>处理通知消息来完成 Oracle E-business Suite 中的特定任务
 可以使用[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]接收到 Oracle 数据库表的更改通知。 但是，适配器仅向你发送某些记录已插入、 更新或删除数据库表中的通知。 这些记录的任何后续处理必须由客户端应用程序本身进行处理。 本主题显示如何处理从 Oracle 数据库接收的通知类型基于在表中的记录上的基于方案的说明。  
@@ -211,7 +211,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
   
   请确保为每个逻辑端口中指定以下属性。 中列出的名称**端口**列是本主题前面所述的业务流程关系图中显示的端口的名称。  
   
-|端口|属性|  
+|Port|属性|  
 |----------|----------------|  
 |OracleNotifyPort|-设置**标识符**到*OracleNotifyPort*<br /><br /> -设置**类型**到*OracleNotifyPortType*<br /><br /> -设置**通信模式**到*单向*<br /><br /> -设置**通信方向**到*接收*|  
 |NotificationUpsertPort|-设置**标识符**到*NotificationUpsertPort*<br /><br /> -设置**类型**到*NotificationUpsertPortType*<br /><br /> -设置**通信模式**到*单向*<br /><br /> -设置**通信方向**到*发送*|  
@@ -231,7 +231,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
  现在必须生成 BizTalk 解决方案，并将其部署到[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 有关详细信息，请参阅[构建和运行业务流程](../../core/building-and-running-orchestrations.md)。
   
 ## <a name="configuring-the-biztalk-application"></a>配置 BizTalk 应用程序  
- 部署 BizTalk 项目后，将前面创建的业务流程下列出**业务流程**窗格中的[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 必须使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台来配置应用程序。 有关演练，请参阅[演练： 部署基本 BizTalk 应用程序](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)。  
+ 部署 BizTalk 项目后，将前面创建的业务流程下列出**业务流程**窗格中的[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 必须使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台来配置应用程序。 有关演练，请参阅[演练：部署基本 BizTalk 应用程序](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)。  
   
  配置应用程序包括：  
   
@@ -248,7 +248,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
     |----------------------|-----------|  
     |**InboundOperationType**|将此设置为**通知**。|  
     |**NotificationPort**|指定 ODP.NET 必须打开从 Oracle 数据库的数据库更改通知侦听的端口号。 将此设置为相同的端口号必须已添加到 Windows 防火墙例外列表。 有关如何将端口添加到 Windows 防火墙例外列表的说明，请参阅[ http://go.microsoft.com/fwlink/?LinkID=196959 ](http://go.microsoft.com/fwlink/?LinkID=196959)。<br /><br /> **重要**如果将其设置为默认值-1，必须完全禁用 Windows 防火墙，以接收通知消息。|  
-    |**NotificationStatement**|将此设置为：<br /><br /> `SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’`<br /><br /> **请注意**必须指定表名称以及架构名称。 例如， `SCOTT.ACCOUNTACTIVITY`。|  
+    |**NotificationStatement**|将此设置为：<br /><br /> `SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’`<br /><br /> **请注意**必须指定表名称以及架构名称。 例如，`SCOTT.ACCOUNTACTIVITY`。|  
     |**NotifyOnListenerStart**|将此设置为 **，则返回 True**。|  
   
      有关不同的绑定属性的详细信息，请参阅[了解关于 BizTalk Adapter for Oracle E-business Suite 绑定属性](../../adapters-and-accelerators/adapter-oracle-ebs/read-about-the-biztalk-adapter-for-oracle-e-business-suite-binding-properties.md)。  

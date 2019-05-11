@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 231d5f83e673a7af2594c3f6f49e4457fcd9573e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3e18e105c0438fd526a4aae2a1ef229707788dca
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010462"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368290"
 ---
 # <a name="receive-query-notifications-on-multiple-receive-locations-from-sql-using-biztalk-server"></a>从 SQL 使用 BizTalk Server 接收查询通知上多个接收位置
 假设其中有多个接收位置配置为接收同一个表 （例如员工） 的查询通知的不同 BizTalk 应用程序的一部分创建的同一数据库中。 如果 100 个记录插入到同一个表，所有接收位置将都收到通知消息。 若要有效地接收通知跨多个接收位置，可以从 BizTalk 应用程序如果收到了通知由一个接收位置的此类的方式调用操作，其他接收位置不会获取相同的通知。 因此，您可以有效地在多个位置上接收到的负载平衡通知。  
@@ -52,7 +52,7 @@ DELETE FROM Employee WHERE Employee_ID=@var
    |     绑定属性      |                                                                                                                  ReplTest1                                                                                                                  |
    |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | **InboundOperationType**  |                                                                                                      将此设置为**通知**。                                                                                                      |
-   | **NotificationStatement** | 将此设置为：<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **注意：** 对于通知的语句，您必须始终指定表名称以及架构名称。 例如， `dbo.Employee`。 |
+   | **NotificationStatement** | 将此设置为：<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **注意：** 对于通知的语句，必须始终指定表名称以及架构名称。 例如，`dbo.Employee`。 |
    | **NotifyOnListenerStart** |                                                                                                          将此设置为 **，则返回 True**。                                                                                                          |
 
 

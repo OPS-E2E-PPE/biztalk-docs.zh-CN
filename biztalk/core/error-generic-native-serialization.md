@@ -1,5 +1,5 @@
 ---
-title: 错误-泛型的本机序列化 |Microsoft 文档
+title: 错误-常规本地序列化 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5d2eacfae17d72dbb17786a1d924cfdf14be20ee
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dbe7591c6d48c647d60daf232b591acbad50ae4b
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240997"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530743"
 ---
-# <a name="error---generic-native-serialization"></a>错误-泛型的本机序列化
+# <a name="error---generic-native-serialization"></a>错误-常规本地序列化
 **错误代码**  
   
  btm1049  
   
  **说明**  
   
- 由映射指定的转换所生成的 XML 输出实例消息无法转换为目标架构所指定的本地格式，具体错误并未指明。  
+ 由于未指定错误的目标架构所指定的本机格式，无法转换由映射指定的转换生成的 XML 输出实例消息。  
   
  **用户执行任何操作**  
   
- 在 BizTalk 编辑器中打开目标架构，并使用**验证架构**，**验证实例**，和**生成实例**命令中，右键单击时可用在解决方案资源管理器，以找出问题的架构。
+ 在 BizTalk 编辑器中打开目标架构并使用**验证架构**，**验证实例**，并**生成实例**命令中，右键单击时可用在解决方案资源管理器，以找出问题的架构。

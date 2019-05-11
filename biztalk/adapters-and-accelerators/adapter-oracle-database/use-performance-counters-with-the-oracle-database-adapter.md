@@ -17,12 +17,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eb1137487a87532f015bd9edbf20b95b5e493e77
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4bd80a3dea7f0e1b0e0e99e82c195540cd931c36
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978542"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375872"
 ---
 # <a name="use-performance-counters-with-the-oracle-database-adapter"></a>使用性能计数器与 Oracle 数据库适配器
 Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]客户端可以使用性能计数器来测量的适配器的性能。 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装程序创建的性能计数器类别**BizTalk Oracle DB 的.NET 适配器**以及安装[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。  

@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d7c076d13e0adc32352c85901541d2be46b5fcd2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 91c698e0083ffc636c21a39e62edd0d9d7a39234
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997838"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375371"
 ---
 # <a name="metadata-and-the-wcf-service-model-with-oracle-e-business-suite"></a>元数据和具有 Oracle E-business Suite 的 WCF 服务模型
 在 WCF 服务模型，可使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]或 ServiceModel Metadata Utility Tool (svcutile.exe) 来执行以下操作：  

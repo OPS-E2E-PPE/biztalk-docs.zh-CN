@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c5452f6b8768442b95ac6bddde0e84ba07f68c85
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a29aa5c1835b37f1b268c1aca9b87cc688c291b9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231973"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391623"
 ---
 # <a name="conditional-looping"></a>循环的条件
 您可以添加到条件**循环**通过链接的输出的 functoid**循环**functoid 和**逻辑**functoid 到相同的目标记录。 目标记录只有在符合逻辑条件时才会创建。  

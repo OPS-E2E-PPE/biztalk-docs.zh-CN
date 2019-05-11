@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10770 |Microsoft Docs
+title: 单一登录：Event 10770 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0deaa29edf3db77b8c0170b4a4f83f1086339615
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 95fc77cebfcd72ce546ae376efed04b14aa277c0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978254"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394281"
 ---
-# <a name="single-sign-on-event-10770"></a>单一登录： 事件 10770
+# <a name="single-sign-on-event-10770"></a>单一登录：事件 10770
 ## <a name="details"></a>详细信息  
   
 |                 |                                                            |
@@ -28,7 +28,7 @@ ms.locfileid: "36978254"
 | 产品版本 | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
 |    事件 ID     |                           10770                            |
 |  事件源   |                           ENTSSO                           |
-|    组件    |                            N/A                             |
+|    组件    |                            不可用                             |
 |  符号名称  |              ENTSSO_E_MAPPING_DISABLED_ADMIN               |
 |  消息正文   |     管理员已禁用映射。     |
   

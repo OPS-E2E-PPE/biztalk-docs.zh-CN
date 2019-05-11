@@ -1,5 +1,5 @@
 ---
-title: 模块 1： 创建 SWIFT 解决方案 |Microsoft Docs
+title: 模块 1:创建 SWIFT 解决方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8eb0e1146882676a0ba572a1116336d6be32051
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f16a40fb32b67c6960f673218d24d3324d4e2222
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002366"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530242"
 ---
-# <a name="module-1-creating-a-swift-solution"></a>模块 1： 创建 SWIFT 解决方案
+# <a name="module-1-creating-a-swift-solution"></a>模块 1:创建 SWIFT 解决方案
 在此模块中，您将创建一个空的 BizTalk 解决方案。 使用的是 Microsoft 在第一课中，创建新的解决方案[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]。 您还创建包含 BizTalk 解决方案组件，如架构、 映射、 业务流程和管道组件的单个项目。  
   
  请注意，一个解决方案可能包含只有一个 BizTalk 项目，或者它可能包括多个 BizTalk 项目 （如果解决方案包含大量项目的独立开发以及更高版本，也必须集成的）。  
@@ -43,4 +43,4 @@ ms.locfileid: "37002366"
   
     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] 在解决方案资源管理器和新的空白解决方案中创建的空解决方案\<*驱动器*:\>\labs 文件夹。  
   
-   请继续执行[模块 2： 添加新架构项目](../../adapters-and-accelerators/accelerator-swift/module-2-adding-a-new-schemas-project.md)。
+   请继续执行[模块 2:添加新架构项目](../../adapters-and-accelerators/accelerator-swift/module-2-adding-a-new-schemas-project.md)。

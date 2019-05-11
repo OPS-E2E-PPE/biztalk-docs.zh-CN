@@ -1,5 +1,5 @@
 ---
-title: 在代码中使用的冲突解决程序组件 |Microsoft 文档
+title: 在你的代码中使用冲突解决程序组件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 220ae4983f2fcbf60f6de02f818095fe5c0c50a7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 901ade5dd611c047c480f05ef0da8271150139d0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22295573"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396390"
 ---
-# <a name="using-the-resolver-components-in-your-code"></a>在代码中使用的冲突解决程序组件
-从动态转换代理中的以下代码片段演示默认在实时 (JIT) 解析功能。 你可以轻松地实现解析自己的应用程序中，这需要使用类似的代码来实现。  
+# <a name="using-the-resolver-components-in-your-code"></a>在你的代码中使用冲突解决程序组件
+动态转换代理从下面的代码段显示了默认在实时 (JIT) 解析功能。 通过使用类似的代码，可以轻松在自己的应用程序中实现解决方法。  
   
 ```  
   
@@ -41,11 +41,11 @@ resolverDictionary = Microsoft.Practices.ESB.Resolver.ResolverMgr.Resolve(Inboun
 transformType = resolverDictionary.Item("Resolver.TransformType");  
 ```  
   
- 在前面的列表中，**解决**方法**ResolverMgr**类返回**字典**对象，其中包含所有默认解析属性及其解析值。 任何自定义解析程序可以添加到自定义属性**字典**对象; 不采取这使这些可用于任何自定义的路线服务的属性。  
+ 在前面的列表中，**解决**方法**ResolverMgr**类返回**字典**对象，其中包含所有默认解析属性及其解析的值。 任何自定义冲突解决程序可以添加到自定义属性**字典**对象; 不采取这使这些属性可用于任何自定义路线服务。  
   
- 下表显示可以根据需要填充中包含的解析程序的属性[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。 任何路线服务可以通过提取这些密码从返回检索这些属性值**字典**对象。  
+ 下表显示了通过包含在冲突解决程序可以根据需要填充属性[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。 任何路线服务可以检索这些属性值由从返回提取这些**字典**对象。  
   
- **属性**:  
+ **属性**：  
   
 ||||  
 |-|-|-|  
@@ -59,7 +59,7 @@ transformType = resolverDictionary.Item("Resolver.TransformType");
 |**Resolver.TransportType**|**Resolver.TransportNamespace**|**Resolver.WindowUserField**|  
 |**Resolver.CacheTimeout**|||  
   
- 之后冲突解决程序管理器将返回**字典**对象实例的适配器管理器设置消息的特定的 BizTalk 适配器上下文属性。 从路由代理中的以下代码片段演示如何使用适配器 manager 设置传出消息的终结点属性。  
+ 之后冲突解决程序管理器返回**字典**对象实例，适配器管理器设置特定的 BizTalk 适配器上下文属性的消息。 从路由代理的以下代码片段演示如何使用适配器管理器来设置传出消息的终结点属性。  
   
 ```  
   
@@ -80,7 +80,7 @@ DeliveryPort(Microsoft.XLANGs.BaseTypes.Address) = transportLocation;
 DeliveryPort(Microsoft.XLANGs.BaseTypes.TransportType) = transportType;  
 ```  
   
- 从路由代理中的以下代码片段演示如何使用适配器管理器从自定义管道组件内的设置的传出消息的终结点属性。  
+ 从路由代理的以下代码片段演示如何使用适配器管理器从自定义管道组件中的设置传出消息的终结点属性。  
   
 ```csharp  
 // Resolve the configuration for routing.  

@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 46b06f832fd9ff36f0e274c1599b577bc9ec6010
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 46fad7f2e5aeb8910e8d916e0d441424210717ea
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989974"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362683"
 ---
 # <a name="using-biztalk-server-and-the-wcf-lob-adapter-sdk"></a>使用 BizTalk Server 和 WCF LOB 适配器 SDK
 本部分包含的关系的信息[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]和[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。 在本部分中包含的信息包括两个不同的框架提供的每个比较和迁移提示[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]自定义适配器。  
@@ -47,7 +47,7 @@ ms.locfileid: "36989974"
 |       API        | [!INCLUDE[dotnet45](../../includes/dotnet45-md.md)] 和[!INCLUDE[dotnet451](../../includes/dotnet451-md.md)]程序集，提供用于处理、 连接管理和消息传送的元数据的帮助类 |                                            COM 中，为适配器操作提供基本支持。                                             |
 | 适配器公开 |                                                            公开为 WCF 绑定;适用于任何应用程序都可以使用 WCF 绑定。                                                             | 只能与公开[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]; 不可重用由其他应用程序。 |
 |      工具       |                       [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)]用于元数据浏览器 [!INCLUDE[btsVStudioNet](../../includes/btsvstudionet-md.md)]                       |                                                                    不适用                                                                     |
-|  扩展性   |                                                                                       是 （作为 WCF 通道扩展）                                                                                        |                                                                     “否”                                                                     |
+|  扩展性   |                                                                                       是 （作为 WCF 通道扩展）                                                                                        |                                                                     否                                                                     |
 
  使用 BizTalk 适配器框架创建的适配器是通过仅在 BizTalk Server 内使用。 另一方面，适配器写入到[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]作为自定义 WCF 绑定。 这拓宽了其市场的任何应用程序需要使用的服务，这实际上是任何.NET 应用程序包括[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 在使用基于 WCF 的适配器[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]使用 BizTalk WCF 适配器，并继续在本地的 BizTalk 适配器的同时存在。 
 

@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b8cc4c27ef977a4bd8789adc569f9d8d78aa11ce
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 26a2617ac6a650ba958fc84116fd6af45fa94f14
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996998"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392025"
 ---
 # <a name="general-guidelines-for-improving-network-performance"></a>优化网络性能的通用指南
 具有已调整为最佳值的网络设置显示可以有效地解决网络瓶颈并提高网络中 BizTalk Server 解决方案的总体性能。 这应在解决方案中，包括 BizTalk Server 计算机、 SQL Server 计算机和任何其他服务器计算机所涉及的所有计算机上。  

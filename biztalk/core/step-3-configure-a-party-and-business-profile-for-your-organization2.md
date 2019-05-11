@@ -1,5 +1,5 @@
 ---
-title: 步骤 3： 配置参与方和业务配置文件在 Organization2 |Microsoft Docs
+title: 步骤 3：为你 Organization2 配置参与方和业务配置文件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 809c8bd4080a7d2ddf14d9c84e98c050e198e6cd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0a0f357a996edd78a7f6aefb16b8b4d00bc1fb2a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000358"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392688"
 ---
-# <a name="step-3-configure-a-party-and-business-profile-for-your-organization"></a>步骤 3： 为你的组织配置参与方和业务配置文件
+# <a name="step-3-configure-a-party-and-business-profile-for-your-organization"></a>步骤 3：为你的组织配置参与方和业务配置文件
 ![步骤 3 中 11](../core/media/tut-step3-of-11.gif "Tut_Step3_of_11")  
   
- 在此步骤中，您将为您的组织配置参与方和业务配置文件，以便接收来自贸易合作伙伴的 864 消息，并返回 997 确认消息和异步 MDN。  
+ 在此步骤中，您可以配置以接收来自贸易合作伙伴的 864 消息，并返回 997 确认消息和异步 MDN 的参与方和业务配置文件为你的组织。  
   
-## <a name="prerequisites"></a>必要條件  
- 你必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 必须以成员的身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Administrators 组。  
   
-### <a name="to-configure-a-party-and-business-profile-for-your-organization"></a>为组织配置参与方和业务配置文件  
+### <a name="to-configure-a-party-and-business-profile-for-your-organization"></a>若要配置你的组织的参与方和业务配置文件  
   
 1. 打开[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]通过单击管理控制台**启动**，依次指向**所有程序**，指向[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**.  
   
@@ -49,7 +49,7 @@ ms.locfileid: "37000358"
 8. 单击“确定” 。  
   
 ## <a name="next-steps"></a>后续步骤  
- 为你的合作伙伴组织配置参与方和业务配置文件 (**Fabrikam**)，如中所述[步骤 4： 为您的贸易合作伙伴配置参与方和业务配置文件](../core/step-4-configure-a-party-and-business-profile-for-your-trading-partner2.md)。  
+ 为你的合作伙伴组织配置参与方和业务配置文件 (**Fabrikam**)，如中所述[步骤 4:为您的贸易合作伙伴配置参与方和业务配置文件](../core/step-4-configure-a-party-and-business-profile-for-your-trading-partner2.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [配置 EDI 属性](../core/configuring-edi-properties.md)

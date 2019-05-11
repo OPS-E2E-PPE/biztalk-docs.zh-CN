@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 35ec36bd9dd0949289a8799be8844721cd5bb8ef
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: de140958027cbfb6f0f3803360f3dfe425a92593
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979990"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371080"
 ---
 # <a name="run-operations-on-business-components-with-mvg-fields-using-biztalk-server-and-the-siebel-adapter"></a>在包含 MVG 字段使用 BizTalk Server 和 Siebel 适配器运行在业务组件上的操作
 本部分说明了执行包含多值字段在业务组件上的操作。 若要演示此类业务组件上的端到端操作，需要执行：  
@@ -126,7 +126,7 @@ ms.locfileid: "36979990"
 ### <a name="adding-ports"></a>添加端口  
  请确保为每个逻辑端口中指定以下属性。 中列出的名称*端口*列是在业务流程中显示的端口的名称。  
   
-|端口|属性|  
+|Port|属性|  
 |----------|----------------|  
 |FileIn_AccountAssociate|-设置**标识符**到*FileIn_AccountAssociate*<br />-设置**类型**到*FileInAccountAssociateType*<br />-设置**通信模式**到*单向*<br />-设置**通信方向**到*接收*|  
 |LOBPort_AccountAssociate|-设置**标识符**到*LOBPort_AccountAssociate*<br />-设置**类型**到*LOBPortAccountAssociateType*<br />-设置**通信模式**到*请求-响应*<br />-设置**通信方向**到*发送接收*|  

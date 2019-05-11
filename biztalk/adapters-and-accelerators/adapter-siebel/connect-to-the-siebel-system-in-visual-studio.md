@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 064382776201ec6772cc4864c153731ab8c11989
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9b8d957e75382dac54ea9576968239e568740bbc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999734"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371853"
 ---
 # <a name="connect-to-the-siebel-system-in-visual-studio"></a>连接到 Visual Studio 中的 Siebel 系统
 本部分提供有关如何使用说明[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]，则[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]，和[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。  

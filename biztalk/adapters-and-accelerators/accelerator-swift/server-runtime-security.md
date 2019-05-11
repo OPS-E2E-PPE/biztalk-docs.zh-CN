@@ -16,12 +16,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3c690c6e34e5ac8d5f70bc58cfd36e4e99006e8b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dca50fff848f07fbb17728f2527683a6c6d67340
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976262"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530046"
 ---
 # <a name="server-runtime-security"></a>服务器运行时安全性
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] 消息修复和新提交中以安全且具有确定性的方式控制业务用户、 后端系统和 SWIFT 网络终结点之间的 SWIFT 消息的流。 它由业务用户提交的消息进行身份验证，验证数据和业务规则正确性的消息并将消息路由到后端系统或最终传送到 SWIFT 网络。 有关数字证书的详细信息，请参阅"加密和签名证书"MSDN 库网站上在[ http://go.microsoft.com/fwlink/?linkid=50285 ](http://go.microsoft.com/fwlink/?linkid=50285)。  
@@ -48,7 +48,7 @@ ms.locfileid: "36976262"
   
    通过 SharePoint 站点通过站点用户组和窗体提交代码上的 Acl 会强制执行前面的规则。 如果作用于消息的用户不在[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]用户组 （域或本地） 消息修复和新提交会拒绝该消息。  
   
-   例如，强制执行三个阶段审批流程的组织可能会定义这三个逻辑角色： Repairers、 性验证程序 （重新生成密钥阶段） 和审批者。 相应地，参与角色的用户必须属于[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]用户域组。 SharePoint 站点的进一步锁定用户应可组织到逻辑域组 （如 repairers、 验证、 审批者）。  
+   例如，强制执行三个阶段审批流程的组织可能会定义这三个逻辑角色：Repairers、 性验证程序 （重新生成密钥阶段） 和审批者。 相应地，参与角色的用户必须属于[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]用户域组。 SharePoint 站点的进一步锁定用户应可组织到逻辑域组 （如 repairers、 验证、 审批者）。  
   
    有关站点用户组的详细信息请参阅[Windows SharePoint Services 安全性](../../adapters-and-accelerators/accelerator-swift/windows-sharepoint-services-security.md)。  
   
