@@ -1,5 +1,5 @@
 ---
-title: 转换 （OutboundTransforms 节点） |Microsoft 文档
+title: Transform （OutboundTransforms 节点） |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,20 +14,20 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b44dc5ffd444ebaee8f1f3007f27343c389c5e5f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 19c2940dd7700f7d3da63d0e9d897429d154d8e8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279045"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65302950"
 ---
-# <a name="transform-outboundtransforms-node"></a><span data-ttu-id="66bb3-102">转换 （OutboundTransforms 节点）</span><span class="sxs-lookup"><span data-stu-id="66bb3-102">Transform (OutboundTransforms Node)</span></span>
-<span data-ttu-id="66bb3-103">绑定文件的 OutboundTransforms 节点的 Transform 节点包含与随该绑定文件一起导出的 BizTalk Server 映射有关的特定信息。</span><span class="sxs-lookup"><span data-stu-id="66bb3-103">The Transform node of the OutboundTransforms node of a binding file contains specific information about a BizTalk Server map that is exported with the binding file.</span></span>  
+# <a name="transform-outboundtransforms-node"></a><span data-ttu-id="25532-102">Transform （OutboundTransforms 节点）</span><span class="sxs-lookup"><span data-stu-id="25532-102">Transform (OutboundTransforms Node)</span></span>
+<span data-ttu-id="25532-103">绑定文件的 OutboundTransforms 节点的 Transform 节点包含随绑定文件一起导出的 BizTalk Server 映射有关的特定信息。</span><span class="sxs-lookup"><span data-stu-id="25532-103">The Transform node of the OutboundTransforms node of a binding file contains specific information about a BizTalk Server map that is exported with the binding file.</span></span>  
   
-## <a name="nodes-in-the-transform-node"></a><span data-ttu-id="66bb3-104">Transform 节点中的节点</span><span class="sxs-lookup"><span data-stu-id="66bb3-104">Nodes in the Transform node</span></span>  
- <span data-ttu-id="66bb3-105">下表列出了可为绑定文件的此节点设置的属性：</span><span class="sxs-lookup"><span data-stu-id="66bb3-105">The following table lists the properties that can be set for this node of a binding file:</span></span>  
+## <a name="nodes-in-the-transform-node"></a><span data-ttu-id="25532-104">Transform 节点中的节点</span><span class="sxs-lookup"><span data-stu-id="25532-104">Nodes in the Transform node</span></span>  
+ <span data-ttu-id="25532-105">下表列出了可为绑定文件的此节点设置的属性：</span><span class="sxs-lookup"><span data-stu-id="25532-105">The following table lists the properties that can be set for this node of a binding file:</span></span>  
   
-|<span data-ttu-id="66bb3-106">**名称**</span><span class="sxs-lookup"><span data-stu-id="66bb3-106">**Name**</span></span>|<span data-ttu-id="66bb3-107">**节点类型**</span><span class="sxs-lookup"><span data-stu-id="66bb3-107">**Node Type**</span></span>|<span data-ttu-id="66bb3-108">**数据类型**</span><span class="sxs-lookup"><span data-stu-id="66bb3-108">**Data Type**</span></span>|<span data-ttu-id="66bb3-109">**Description**</span><span class="sxs-lookup"><span data-stu-id="66bb3-109">**Description**</span></span>|<span data-ttu-id="66bb3-110">**限制**</span><span class="sxs-lookup"><span data-stu-id="66bb3-110">**Restrictions**</span></span>|<span data-ttu-id="66bb3-111">**注释**</span><span class="sxs-lookup"><span data-stu-id="66bb3-111">**Comments**</span></span>|  
+|<span data-ttu-id="25532-106">**名称**</span><span class="sxs-lookup"><span data-stu-id="25532-106">**Name**</span></span>|<span data-ttu-id="25532-107">**节点类型**</span><span class="sxs-lookup"><span data-stu-id="25532-107">**Node Type**</span></span>|<span data-ttu-id="25532-108">**数据类型**</span><span class="sxs-lookup"><span data-stu-id="25532-108">**Data Type**</span></span>|<span data-ttu-id="25532-109">**说明**</span><span class="sxs-lookup"><span data-stu-id="25532-109">**Description**</span></span>|<span data-ttu-id="25532-110">**限制**</span><span class="sxs-lookup"><span data-stu-id="25532-110">**Restrictions**</span></span>|<span data-ttu-id="25532-111">**注释**</span><span class="sxs-lookup"><span data-stu-id="25532-111">**Comments**</span></span>|  
 |--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|<span data-ttu-id="66bb3-112">FullName</span><span class="sxs-lookup"><span data-stu-id="66bb3-112">FullName</span></span>|<span data-ttu-id="66bb3-113">Attribute</span><span class="sxs-lookup"><span data-stu-id="66bb3-113">Attribute</span></span>|<span data-ttu-id="66bb3-114">xs:string</span><span class="sxs-lookup"><span data-stu-id="66bb3-114">xs:string</span></span>|<span data-ttu-id="66bb3-115">指定映射的全名。</span><span class="sxs-lookup"><span data-stu-id="66bb3-115">Specifies the full name of the map.</span></span>|<span data-ttu-id="66bb3-116">可选</span><span class="sxs-lookup"><span data-stu-id="66bb3-116">Not required</span></span>|<span data-ttu-id="66bb3-117">默认值：空</span><span class="sxs-lookup"><span data-stu-id="66bb3-117">Default value: empty</span></span>|  
-|<span data-ttu-id="66bb3-118">AssemblyQualifiedName</span><span class="sxs-lookup"><span data-stu-id="66bb3-118">AssemblyQualifiedName</span></span>|<span data-ttu-id="66bb3-119">Attribute</span><span class="sxs-lookup"><span data-stu-id="66bb3-119">Attribute</span></span>|<span data-ttu-id="66bb3-120">xs:string</span><span class="sxs-lookup"><span data-stu-id="66bb3-120">xs:string</span></span>|<span data-ttu-id="66bb3-121">指定映射的程序集限定名。</span><span class="sxs-lookup"><span data-stu-id="66bb3-121">Specifies the assembly qualified name of the map.</span></span>|<span data-ttu-id="66bb3-122">可选</span><span class="sxs-lookup"><span data-stu-id="66bb3-122">Not required</span></span>|<span data-ttu-id="66bb3-123">默认值：空</span><span class="sxs-lookup"><span data-stu-id="66bb3-123">Default value: empty</span></span>|
+|<span data-ttu-id="25532-112">FullName</span><span class="sxs-lookup"><span data-stu-id="25532-112">FullName</span></span>|<span data-ttu-id="25532-113">特性</span><span class="sxs-lookup"><span data-stu-id="25532-113">Attribute</span></span>|<span data-ttu-id="25532-114">xs:string</span><span class="sxs-lookup"><span data-stu-id="25532-114">xs:string</span></span>|<span data-ttu-id="25532-115">指定的映射的完整名称。</span><span class="sxs-lookup"><span data-stu-id="25532-115">Specifies the full name of the map.</span></span>|<span data-ttu-id="25532-116">可选</span><span class="sxs-lookup"><span data-stu-id="25532-116">Not required</span></span>|<span data-ttu-id="25532-117">默认值：空</span><span class="sxs-lookup"><span data-stu-id="25532-117">Default value: empty</span></span>|  
+|<span data-ttu-id="25532-118">AssemblyQualifiedName</span><span class="sxs-lookup"><span data-stu-id="25532-118">AssemblyQualifiedName</span></span>|<span data-ttu-id="25532-119">特性</span><span class="sxs-lookup"><span data-stu-id="25532-119">Attribute</span></span>|<span data-ttu-id="25532-120">xs:string</span><span class="sxs-lookup"><span data-stu-id="25532-120">xs:string</span></span>|<span data-ttu-id="25532-121">指定映射的程序集限定的名称。</span><span class="sxs-lookup"><span data-stu-id="25532-121">Specifies the assembly qualified name of the map.</span></span>|<span data-ttu-id="25532-122">可选</span><span class="sxs-lookup"><span data-stu-id="25532-122">Not required</span></span>|<span data-ttu-id="25532-123">默认值：空</span><span class="sxs-lookup"><span data-stu-id="25532-123">Default value: empty</span></span>|

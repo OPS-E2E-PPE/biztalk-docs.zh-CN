@@ -16,45 +16,45 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e2fc9523048aa4abafc82dfd5c0b4700eade23c2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b344d672476ffdf902e84a7250ec4e68e43f5e3e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983294"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401609"
 ---
-# <a name="who-uses-bam"></a><span data-ttu-id="8716b-103">谁可使用 BAM？</span><span class="sxs-lookup"><span data-stu-id="8716b-103">Who Uses BAM?</span></span>
-<span data-ttu-id="8716b-104">使用 BAM 的信息工作者功能交互的用户的两种类型： 业务分析人员和业务用户。</span><span class="sxs-lookup"><span data-stu-id="8716b-104">There are two types of users who interact with the information worker features of BAM: business analysts and business users.</span></span>  
+# <a name="who-uses-bam"></a><span data-ttu-id="a1ba4-103">谁可使用 BAM？</span><span class="sxs-lookup"><span data-stu-id="a1ba4-103">Who Uses BAM?</span></span>
+<span data-ttu-id="a1ba4-104">使用 BAM 的信息工作者功能交互的用户的两种类型： 业务分析人员和业务用户。</span><span class="sxs-lookup"><span data-stu-id="a1ba4-104">There are two types of users who interact with the information worker features of BAM: business analysts and business users.</span></span>  
   
- <span data-ttu-id="8716b-105">业务分析员使用 BAM Excel 外接程序定义他们需要监视的业务流程。</span><span class="sxs-lookup"><span data-stu-id="8716b-105">Business analysts use the BAM Excel Add-in to define the business processes they want to monitor.</span></span> <span data-ttu-id="8716b-106">他们还可以使用 BAM Excel 外接程序定义业务用户查看 BAM 所收集的数据的方式。</span><span class="sxs-lookup"><span data-stu-id="8716b-106">They also use the BAM Excel Add-in to define the way in which business users see the data collected by BAM.</span></span> <span data-ttu-id="8716b-107">例如，业务分析员希望显示有关采购订单的数据，因而提出以下有趣的关于采购订单的问题：</span><span class="sxs-lookup"><span data-stu-id="8716b-107">For example, a business analyst wants to present data about purchase orders and asks the following interesting questions about purchase orders:</span></span>  
+ <span data-ttu-id="a1ba4-105">业务分析员使用 BAM Excel 外接程序定义他们想要监视的业务流程。</span><span class="sxs-lookup"><span data-stu-id="a1ba4-105">Business analysts use the BAM Excel Add-in to define the business processes they want to monitor.</span></span> <span data-ttu-id="a1ba4-106">它们还用于 BAM Excel 外接程序定义中的业务用户查看 BAM 所收集的数据的方式。</span><span class="sxs-lookup"><span data-stu-id="a1ba4-106">They also use the BAM Excel Add-in to define the way in which business users see the data collected by BAM.</span></span> <span data-ttu-id="a1ba4-107">例如，业务分析员希望显示有关采购订单数据，并询问有关采购订单的以下有趣的问题：</span><span class="sxs-lookup"><span data-stu-id="a1ba4-107">For example, a business analyst wants to present data about purchase orders and asks the following interesting questions about purchase orders:</span></span>  
   
-- <span data-ttu-id="8716b-108">今年（本月、本周、今天、这个小时等）公司收到了多少采购订单？</span><span class="sxs-lookup"><span data-stu-id="8716b-108">How many purchase orders did the company receive this (year, month, week, day, hour, and so on)?</span></span>  
+- <span data-ttu-id="a1ba4-108">多少采购订单公司收到此 （年、 月、 周、 天、 小时和等等）？</span><span class="sxs-lookup"><span data-stu-id="a1ba4-108">How many purchase orders did the company receive this (year, month, week, day, hour, and so on)?</span></span>  
   
-- <span data-ttu-id="8716b-109">所有活动采购订单的当前金额是多少？</span><span class="sxs-lookup"><span data-stu-id="8716b-109">What is the current value of active purchase orders?</span></span>  
+- <span data-ttu-id="a1ba4-109">什么是所有活动采购订单的当前值？</span><span class="sxs-lookup"><span data-stu-id="a1ba4-109">What is the current value of active purchase orders?</span></span>  
   
-- <span data-ttu-id="8716b-110">采购订单从开始到完成采购订单流程的各个阶段平均需要多长时间？</span><span class="sxs-lookup"><span data-stu-id="8716b-110">What is the average time it takes for a purchase order to move though the stages of the purchase order process?</span></span>  
+- <span data-ttu-id="a1ba4-110">什么是采购订单，但移动的采购订单流程阶段所花费的平均时间？</span><span class="sxs-lookup"><span data-stu-id="a1ba4-110">What is the average time it takes for a purchase order to move though the stages of the purchase order process?</span></span>  
   
-- <span data-ttu-id="8716b-111">流程的某个特定阶段有多少订单？</span><span class="sxs-lookup"><span data-stu-id="8716b-111">How many purchase orders are in a particular stage of the process?</span></span>  
+- <span data-ttu-id="a1ba4-111">中进程的某个特定阶段有多少订单？</span><span class="sxs-lookup"><span data-stu-id="a1ba4-111">How many purchase orders are in a particular stage of the process?</span></span>  
   
-- <span data-ttu-id="8716b-112">订购特定产品的用户有多少？</span><span class="sxs-lookup"><span data-stu-id="8716b-112">How many customers ordered a particular product?</span></span>  
+- <span data-ttu-id="a1ba4-112">多少客户订购特定产品？</span><span class="sxs-lookup"><span data-stu-id="a1ba4-112">How many customers ordered a particular product?</span></span>  
   
-- <span data-ttu-id="8716b-113">订购特定产品的订单的总额是多少？</span><span class="sxs-lookup"><span data-stu-id="8716b-113">What is the sum of the orders for a particular product?</span></span>  
+- <span data-ttu-id="a1ba4-113">什么是某一特定产品的订单的总和？</span><span class="sxs-lookup"><span data-stu-id="a1ba4-113">What is the sum of the orders for a particular product?</span></span>  
   
-- <span data-ttu-id="8716b-114">各地理区域的订购数量是否有差异？</span><span class="sxs-lookup"><span data-stu-id="8716b-114">Are the quantities ordered different across geographic regions?</span></span>  
+- <span data-ttu-id="a1ba4-114">将订购数量是否有不同跨地理区域？</span><span class="sxs-lookup"><span data-stu-id="a1ba4-114">Are the quantities ordered different across geographic regions?</span></span>  
   
-  <span data-ttu-id="8716b-115">用户分析员可以根据上述问题定义活动，反映 BAM 应从业务流程收集哪些类型的信息。</span><span class="sxs-lookup"><span data-stu-id="8716b-115">The business analyst uses these questions to define activities that reflect the type of information that BAM should collect from the business process.</span></span>  
+  <span data-ttu-id="a1ba4-115">业务分析员使用这些问题定义活动，反映 BAM 应从业务流程中收集的信息的类型。</span><span class="sxs-lookup"><span data-stu-id="a1ba4-115">The business analyst uses these questions to define activities that reflect the type of information that BAM should collect from the business process.</span></span>  
   
-  <span data-ttu-id="8716b-116">业务用户使用 BAM 查看业务分析员定义的以及 BAM 收集的数据。</span><span class="sxs-lookup"><span data-stu-id="8716b-116">Business users use BAM to view the data defined by the business analyst and collected by BAM.</span></span> <span data-ttu-id="8716b-117">业务用户可在以下方面使用 BAM：</span><span class="sxs-lookup"><span data-stu-id="8716b-117">A business user can use BAM in the following ways:</span></span>  
+  <span data-ttu-id="a1ba4-116">业务用户使用 BAM 来查看由业务分析员定义和 BAM 所收集的数据。</span><span class="sxs-lookup"><span data-stu-id="a1ba4-116">Business users use BAM to view the data defined by the business analyst and collected by BAM.</span></span> <span data-ttu-id="a1ba4-117">业务用户可以按以下方式使用 BAM:</span><span class="sxs-lookup"><span data-stu-id="a1ba4-117">A business user can use BAM in the following ways:</span></span>  
   
-- <span data-ttu-id="8716b-118">查看有关流程的单个实例的数据。</span><span class="sxs-lookup"><span data-stu-id="8716b-118">View data about a single instance of a process.</span></span> <span data-ttu-id="8716b-119">例如，如果业务分析员创建了一个监视采购订单流程的活动，则业务用户可以使用 BAM 来查看有关特定采购订单的数据。</span><span class="sxs-lookup"><span data-stu-id="8716b-119">For example, if a business analyst created an activity to monitor a purchase order process, a business user could use BAM to see data about a particular purchase order.</span></span>  
+- <span data-ttu-id="a1ba4-118">查看有关进程的单个实例数据。</span><span class="sxs-lookup"><span data-stu-id="a1ba4-118">View data about a single instance of a process.</span></span> <span data-ttu-id="a1ba4-119">例如，如果业务分析员创建活动来监视采购订单流程，业务用户可以使用 BAM 来查看有关特定采购订单的数据。</span><span class="sxs-lookup"><span data-stu-id="a1ba4-119">For example, if a business analyst created an activity to monitor a purchase order process, a business user could use BAM to see data about a particular purchase order.</span></span>  
   
-- <span data-ttu-id="8716b-120">查看有关相关活动实例的数据。</span><span class="sxs-lookup"><span data-stu-id="8716b-120">View data about related activity instances.</span></span> <span data-ttu-id="8716b-121">例如，与特定采购订单相关的发票或发货。</span><span class="sxs-lookup"><span data-stu-id="8716b-121">For example, the invoice or shipments associated with a particular purchase order.</span></span>  
+- <span data-ttu-id="a1ba4-120">查看有关相关的活动实例数据。</span><span class="sxs-lookup"><span data-stu-id="a1ba4-120">View data about related activity instances.</span></span> <span data-ttu-id="a1ba4-121">例如，发票或发货关联与特定采购订单。</span><span class="sxs-lookup"><span data-stu-id="a1ba4-121">For example, the invoice or shipments associated with a particular purchase order.</span></span>  
   
-- <span data-ttu-id="8716b-122">查看有关流程的聚合的实时或存档数据。</span><span class="sxs-lookup"><span data-stu-id="8716b-122">View aggregated real-time or archived data about a process.</span></span> <span data-ttu-id="8716b-123">聚合的数据是一段时间的数据。</span><span class="sxs-lookup"><span data-stu-id="8716b-123">Aggregated data is data over time.</span></span> <span data-ttu-id="8716b-124">例如，用户可以查看上周（上个月、去年等）收到的、金额少于 $500 的采购订单的数量，或查看今天收到的采购订单的平均金额。</span><span class="sxs-lookup"><span data-stu-id="8716b-124">For example, a user could view the number of purchase orders with a value less than $500 that were received in the last (week, month, year, and so on), or the average value of purchase orders that arrived today.</span></span>  
+- <span data-ttu-id="a1ba4-122">查看有关进程聚合实时或存档的数据。</span><span class="sxs-lookup"><span data-stu-id="a1ba4-122">View aggregated real-time or archived data about a process.</span></span> <span data-ttu-id="a1ba4-123">聚合的数据是随着时间的推移的数据。</span><span class="sxs-lookup"><span data-stu-id="a1ba4-123">Aggregated data is data over time.</span></span> <span data-ttu-id="a1ba4-124">例如，用户可以查看具有小于 $500 （每周、 月、 年，等） 的最后一个中接收到的值或值的平均值今天的采购订单的采购订单数。</span><span class="sxs-lookup"><span data-stu-id="a1ba4-124">For example, a user could view the number of purchase orders with a value less than $500 that were received in the last (week, month, year, and so on), or the average value of purchase orders that arrived today.</span></span>  
   
-- <span data-ttu-id="8716b-125">查看进度数据，这样用户可以看到流程不同阶段的数据，如采购订单从收到阶段到完成阶段平均经过的时间。</span><span class="sxs-lookup"><span data-stu-id="8716b-125">View progress data, which allows a user to see data from the different stages of a process, such as the average time it takes for a purchase order to move from the received stage to the fulfilled stage.</span></span>  
+- <span data-ttu-id="a1ba4-125">查看进度数据，这样用户就可以看到一个进程，如采购订单从收到阶段到完成阶段所花费的平均时间的不同阶段中的数据。</span><span class="sxs-lookup"><span data-stu-id="a1ba4-125">View progress data, which allows a user to see data from the different stages of a process, such as the average time it takes for a purchase order to move from the received stage to the fulfilled stage.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="8716b-126">请参阅</span><span class="sxs-lookup"><span data-stu-id="8716b-126">See Also</span></span>  
- <span data-ttu-id="8716b-127">[使用 BAM 监视业务活动](../core/monitoring-business-activities-with-bam.md) </span><span class="sxs-lookup"><span data-stu-id="8716b-127">[Monitoring Business Activities with BAM](../core/monitoring-business-activities-with-bam.md) </span></span>  
- <span data-ttu-id="8716b-128">[BAM 工作流](../core/bam-workflow.md) </span><span class="sxs-lookup"><span data-stu-id="8716b-128">[BAM Workflow](../core/bam-workflow.md) </span></span>  
- [<span data-ttu-id="8716b-129">定义 BAM 中的数据</span><span class="sxs-lookup"><span data-stu-id="8716b-129">Defining Data in BAM</span></span>](../core/defining-data-in-bam.md)
+## <a name="see-also"></a><span data-ttu-id="a1ba4-126">请参阅</span><span class="sxs-lookup"><span data-stu-id="a1ba4-126">See Also</span></span>  
+ <span data-ttu-id="a1ba4-127">[使用 BAM 监视业务活动](../core/monitoring-business-activities-with-bam.md) </span><span class="sxs-lookup"><span data-stu-id="a1ba4-127">[Monitoring Business Activities with BAM](../core/monitoring-business-activities-with-bam.md) </span></span>  
+ <span data-ttu-id="a1ba4-128">[BAM 工作流](../core/bam-workflow.md) </span><span class="sxs-lookup"><span data-stu-id="a1ba4-128">[BAM Workflow](../core/bam-workflow.md) </span></span>  
+ [<span data-ttu-id="a1ba4-129">定义 BAM 中的数据</span><span class="sxs-lookup"><span data-stu-id="a1ba4-129">Defining Data in BAM</span></span>](../core/defining-data-in-bam.md)

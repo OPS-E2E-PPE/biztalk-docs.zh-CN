@@ -1,5 +1,5 @@
 ---
-title: 故障排除 FTP 适配器 |Microsoft 文档
+title: FTP 适配器故障排除 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 545d99b9ca056ca14f4bf6a92bd9be5b54b52104
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7e786ad9059e7b46c0e573e1162e5bc37e14f6ac
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286405"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292902"
 ---
-# <a name="troubleshooting-the-ftp-adapter"></a><span data-ttu-id="806ab-102">故障排除 FTP 适配器</span><span class="sxs-lookup"><span data-stu-id="806ab-102">Troubleshooting the FTP Adapter</span></span>
-<span data-ttu-id="806ab-103">本部分中所介绍的疑难解答技巧用于诊断 FTP 适配器问题以及使用 FTP 适配器时的已知问题。</span><span class="sxs-lookup"><span data-stu-id="806ab-103">This section describes troubleshooting techniques that can be used to diagnose problems with the FTP adapter and known issues using the FTP adapter.</span></span>  
+# <a name="troubleshooting-the-ftp-adapter"></a><span data-ttu-id="8542e-102">FTP 适配器故障排除</span><span class="sxs-lookup"><span data-stu-id="8542e-102">Troubleshooting the FTP Adapter</span></span>
+<span data-ttu-id="8542e-103">本部分介绍可用于诊断 FTP 适配器并使用 FTP 适配器的已知的问题的问题的故障排除方法。</span><span class="sxs-lookup"><span data-stu-id="8542e-103">This section describes troubleshooting techniques that can be used to diagnose problems with the FTP adapter and known issues using the FTP adapter.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="806ab-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="806ab-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="8542e-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="8542e-104">In This Section</span></span>  
   
--   [<span data-ttu-id="806ab-105">如何使用 FTP 适配器诊断问题</span><span class="sxs-lookup"><span data-stu-id="806ab-105">How to Diagnose Problems with the FTP Adapter</span></span>](../core/how-to-diagnose-problems-with-the-ftp-adapter.md)  
+-   [<span data-ttu-id="8542e-105">如何诊断 FTP 适配器问题</span><span class="sxs-lookup"><span data-stu-id="8542e-105">How to Diagnose Problems with the FTP Adapter</span></span>](../core/how-to-diagnose-problems-with-the-ftp-adapter.md)  
   
--   [<span data-ttu-id="806ab-106">与 FTP 适配器的已知的问题</span><span class="sxs-lookup"><span data-stu-id="806ab-106">Known Issues with the FTP Adapter</span></span>](../core/known-issues-with-the-ftp-adapter.md)
+-   [<span data-ttu-id="8542e-106">FTP 适配器的已知问题</span><span class="sxs-lookup"><span data-stu-id="8542e-106">Known Issues with the FTP Adapter</span></span>](../core/known-issues-with-the-ftp-adapter.md)

@@ -1,5 +1,5 @@
 ---
-title: 疑难解答和已知问题中 HL7 |Microsoft 文档
+title: Hl7 的疑难解答和已知问题 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,24 +15,24 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 786c933d9caeb729b147fadc6282b56e4e6414e8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 914a977daa26a71c953077aa6ff3ac5bfd87a59b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206413"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286518"
 ---
-# <a name="troubleshooting-and-known-issues-in-hl7"></a><span data-ttu-id="3b9d5-102">在 HL7 疑难解答和已知问题</span><span class="sxs-lookup"><span data-stu-id="3b9d5-102">Troubleshooting and known issues in HL7</span></span>
-<span data-ttu-id="3b9d5-103">故障排除问题、 分辨率和已知的问题的[!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="3b9d5-103">Troubleshooting issues, resolutions, and known issues with the [!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)].</span></span>  
+# <a name="troubleshooting-and-known-issues-in-hl7"></a><span data-ttu-id="a31c2-102">Hl7 的疑难解答和已知问题</span><span class="sxs-lookup"><span data-stu-id="a31c2-102">Troubleshooting and known issues in HL7</span></span>
+<span data-ttu-id="a31c2-103">故障排除问题、 解决办法和已知的问题的[!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="a31c2-103">Troubleshooting issues, resolutions, and known issues with the [!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)].</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="3b9d5-104">在本节中</span><span class="sxs-lookup"><span data-stu-id="3b9d5-104">In this section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="a31c2-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="a31c2-104">In this section</span></span>  
   
--   [<span data-ttu-id="3b9d5-105">故障排除的确认</span><span class="sxs-lookup"><span data-stu-id="3b9d5-105">Troubleshooting Acknowledgments</span></span>](../../adapters-and-accelerators/accelerator-hl7/troubleshooting-acknowledgments.md)
+-   [<span data-ttu-id="a31c2-105">确认疑难解答</span><span class="sxs-lookup"><span data-stu-id="a31c2-105">Troubleshooting Acknowledgments</span></span>](../../adapters-and-accelerators/accelerator-hl7/troubleshooting-acknowledgments.md)
 
-- [<span data-ttu-id="3b9d5-106">故障排除批处理</span><span class="sxs-lookup"><span data-stu-id="3b9d5-106">Troubleshooting Batching</span></span>](../../adapters-and-accelerators/accelerator-hl7/troubleshooting-batching.md)
+- [<span data-ttu-id="a31c2-106">批处理疑难解答</span><span class="sxs-lookup"><span data-stu-id="a31c2-106">Troubleshooting Batching</span></span>](../../adapters-and-accelerators/accelerator-hl7/troubleshooting-batching.md)
 
-- [<span data-ttu-id="3b9d5-107">排除错误</span><span class="sxs-lookup"><span data-stu-id="3b9d5-107">Troubleshooting Errors</span></span>](../../adapters-and-accelerators/accelerator-hl7/troubleshooting-errors.md)
+- [<span data-ttu-id="a31c2-107">错误疑难解答</span><span class="sxs-lookup"><span data-stu-id="a31c2-107">Troubleshooting Errors</span></span>](../../adapters-and-accelerators/accelerator-hl7/troubleshooting-errors.md)
 
-- [<span data-ttu-id="3b9d5-108">其他问题疑难解答</span><span class="sxs-lookup"><span data-stu-id="3b9d5-108">Troubleshooting Other Issues</span></span>](../../adapters-and-accelerators/accelerator-hl7/troubleshooting-other-issues.md)
+- [<span data-ttu-id="a31c2-108">其他问题疑难解答</span><span class="sxs-lookup"><span data-stu-id="a31c2-108">Troubleshooting Other Issues</span></span>](../../adapters-and-accelerators/accelerator-hl7/troubleshooting-other-issues.md)
   
--   [<span data-ttu-id="3b9d5-109">已知问题</span><span class="sxs-lookup"><span data-stu-id="3b9d5-109">Known Issues</span></span>](../../adapters-and-accelerators/accelerator-hl7/known-issues1.md)
+-   [<span data-ttu-id="a31c2-109">已知问题</span><span class="sxs-lookup"><span data-stu-id="a31c2-109">Known Issues</span></span>](../../adapters-and-accelerators/accelerator-hl7/known-issues1.md)

@@ -1,5 +1,5 @@
 ---
-title: 与发布的 Web 服务的 SOAP 标头 |Microsoft 文档
+title: SOAP 标头与已发布的 Web 服务 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,20 +17,20 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1dedd0032d1f7e409d933a2f6ad1a07c657d881a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 01946ca3b390e8abedf2122edb1fef313e592cb9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277165"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65244332"
 ---
-# <a name="soap-headers-with-published-web-services"></a><span data-ttu-id="aa6ce-102">SOAP 标头与已发布 Web Services</span><span class="sxs-lookup"><span data-stu-id="aa6ce-102">SOAP Headers with Published Web Services</span></span>
-<span data-ttu-id="aa6ce-103">可以将 SOAP 标头添加到已发布 Web Services。</span><span class="sxs-lookup"><span data-stu-id="aa6ce-103">You can add SOAP headers to your published Web services.</span></span> <span data-ttu-id="aa6ce-104">在 BizTalk Web 服务发布向导在**Web Services 属性**页上，你可以检查**添加 SOAP 标头**框以将 SOAP 标头添加到已发布的 Web 服务。</span><span class="sxs-lookup"><span data-stu-id="aa6ce-104">In the BizTalk Web Services Publishing Wizard on the **Web Services Properties** page, you can check the **Add SOAP headers** box to add SOAP headers to your published Web services.</span></span>  
+# <a name="soap-headers-with-published-web-services"></a><span data-ttu-id="7cb17-102">SOAP 标头与已发布的 Web 服务</span><span class="sxs-lookup"><span data-stu-id="7cb17-102">SOAP Headers with Published Web Services</span></span>
+<span data-ttu-id="7cb17-103">您可以向已发布 Web services 添加 SOAP 标头。</span><span class="sxs-lookup"><span data-stu-id="7cb17-103">You can add SOAP headers to your published Web services.</span></span> <span data-ttu-id="7cb17-104">在 BizTalk Web Services 发布向导在**Web 服务属性**页上，可以检查**添加 SOAP 标头**框可将 SOAP 标头添加到已发布 Web services。</span><span class="sxs-lookup"><span data-stu-id="7cb17-104">In the BizTalk Web Services Publishing Wizard on the **Web Services Properties** page, you can check the **Add SOAP headers** box to add SOAP headers to your published Web services.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="aa6ce-105">本节内容</span><span class="sxs-lookup"><span data-stu-id="aa6ce-105">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="7cb17-105">本节内容</span><span class="sxs-lookup"><span data-stu-id="7cb17-105">In This Section</span></span>  
   
--   [<span data-ttu-id="aa6ce-106">使用 SOAP 标头的发布 Web 服务</span><span class="sxs-lookup"><span data-stu-id="aa6ce-106">Publishing Web Services with SOAP Headers</span></span>](../core/publishing-web-services-with-soap-headers.md)  
+-   [<span data-ttu-id="7cb17-106">发布具有 SOAP 标头的 Web 服务</span><span class="sxs-lookup"><span data-stu-id="7cb17-106">Publishing Web Services with SOAP Headers</span></span>](../core/publishing-web-services-with-soap-headers.md)  
   
--   [<span data-ttu-id="aa6ce-107">访问在业务流程中的 SOAP 标头</span><span class="sxs-lookup"><span data-stu-id="aa6ce-107">Accessing SOAP Headers in Orchestrations</span></span>](../core/accessing-soap-headers-in-orchestrations.md)  
+-   [<span data-ttu-id="7cb17-107">在业务流程中访问 SOAP 标头</span><span class="sxs-lookup"><span data-stu-id="7cb17-107">Accessing SOAP Headers in Orchestrations</span></span>](../core/accessing-soap-headers-in-orchestrations.md)  
   
--   [<span data-ttu-id="aa6ce-108">访问在管道组件中的 SOAP 标头</span><span class="sxs-lookup"><span data-stu-id="aa6ce-108">Accessing SOAP Headers in Pipeline Components</span></span>](../core/accessing-soap-headers-in-pipeline-components.md)
+-   [<span data-ttu-id="7cb17-108">在管道组件中访问 SOAP 标头</span><span class="sxs-lookup"><span data-stu-id="7cb17-108">Accessing SOAP Headers in Pipeline Components</span></span>](../core/accessing-soap-headers-in-pipeline-components.md)

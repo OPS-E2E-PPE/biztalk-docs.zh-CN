@@ -12,29 +12,29 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6a09c586e535d8670a0e130e23a6f90d38c1ab23
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9c2993de1711d47553638b47048d319d65b3ae6b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004934"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65320777"
 ---
-# <a name="viewing-variables"></a><span data-ttu-id="903c7-102">查看变量</span><span class="sxs-lookup"><span data-stu-id="903c7-102">Viewing Variables</span></span>
-<span data-ttu-id="903c7-103">可以采用两种模式查看变量：</span><span class="sxs-lookup"><span data-stu-id="903c7-103">You can view variables in two modes:</span></span>  
+# <a name="viewing-variables"></a><span data-ttu-id="7905d-102">查看变量</span><span class="sxs-lookup"><span data-stu-id="7905d-102">Viewing Variables</span></span>
+<span data-ttu-id="7905d-103">你可以在两种模式中查看变量：</span><span class="sxs-lookup"><span data-stu-id="7905d-103">You can view variables in two modes:</span></span>  
   
-- <span data-ttu-id="903c7-104">在跟踪存档数据时 - 脱机</span><span class="sxs-lookup"><span data-stu-id="903c7-104">When you are tracking archived data - offline</span></span>  
+- <span data-ttu-id="7905d-104">当您正在跟踪存档的数据-脱机</span><span class="sxs-lookup"><span data-stu-id="7905d-104">When you are tracking archived data - offline</span></span>  
   
-- <span data-ttu-id="903c7-105">在对实时数据进行交互调试时</span><span class="sxs-lookup"><span data-stu-id="903c7-105">When you are doing interactive debugging on live data</span></span>  
+- <span data-ttu-id="7905d-105">当执行操作上的实时数据进行交互式调试</span><span class="sxs-lookup"><span data-stu-id="7905d-105">When you are doing interactive debugging on live data</span></span>  
   
-  <span data-ttu-id="903c7-106">在处理存档数据时，可以看到某些变量的状态为：</span><span class="sxs-lookup"><span data-stu-id="903c7-106">When working with archived data, the statuses of some variables that you can see are:</span></span>  
+  <span data-ttu-id="7905d-106">当处理存档数据，您可以看到某些变量的状态是：</span><span class="sxs-lookup"><span data-stu-id="7905d-106">When working with archived data, the statuses of some variables that you can see are:</span></span>  
   
-- <span data-ttu-id="903c7-107">尚未在作用域中的变量</span><span class="sxs-lookup"><span data-stu-id="903c7-107">Variables not yet in scope</span></span>  
+- <span data-ttu-id="7905d-107">尚不支持范围内的变量</span><span class="sxs-lookup"><span data-stu-id="7905d-107">Variables not yet in scope</span></span>  
   
-- <span data-ttu-id="903c7-108">当前处于活动状态</span><span class="sxs-lookup"><span data-stu-id="903c7-108">Currently active</span></span>  
+- <span data-ttu-id="7905d-108">当前处于活动状态</span><span class="sxs-lookup"><span data-stu-id="7905d-108">Currently active</span></span>  
   
-- <span data-ttu-id="903c7-109">单击该值可获取详细信息</span><span class="sxs-lookup"><span data-stu-id="903c7-109">Values you can click for more details</span></span>  
+- <span data-ttu-id="7905d-109">可以单击了解详细信息的值</span><span class="sxs-lookup"><span data-stu-id="7905d-109">Values you can click for more details</span></span>  
   
-- <span data-ttu-id="903c7-110">值已超出作用域；不能再访问任何详细信息</span><span class="sxs-lookup"><span data-stu-id="903c7-110">Values that have passed out of scope; you can no longer access any details</span></span>  
+- <span data-ttu-id="7905d-110">值已不在范围内;你不再能够访问任何详细信息</span><span class="sxs-lookup"><span data-stu-id="7905d-110">Values that have passed out of scope; you can no longer access any details</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="903c7-111">请参阅</span><span class="sxs-lookup"><span data-stu-id="903c7-111">See Also</span></span>  
- [<span data-ttu-id="903c7-112">使用“业务流程调试器”视图</span><span class="sxs-lookup"><span data-stu-id="903c7-112">Working with the Orchestration Debugger View</span></span>](../core/working-with-the-orchestration-debugger-view.md)
+## <a name="see-also"></a><span data-ttu-id="7905d-111">请参阅</span><span class="sxs-lookup"><span data-stu-id="7905d-111">See Also</span></span>  
+ [<span data-ttu-id="7905d-112">使用“业务流程调试器”视图</span><span class="sxs-lookup"><span data-stu-id="7905d-112">Working with the Orchestration Debugger View</span></span>](../core/working-with-the-orchestration-debugger-view.md)

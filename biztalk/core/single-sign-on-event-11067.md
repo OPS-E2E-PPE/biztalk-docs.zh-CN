@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 11067 |Microsoft Docs
+title: 单一登录：事件 11067 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b2a75534c58f990575471644ad212235b4797ccf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5fc2b57b4a02504f0e21f74b55c94e8060926538
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990990"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65247304"
 ---
-# <a name="single-sign-on-event-11067"></a><span data-ttu-id="4b677-102">单一登录： 事件 11067</span><span class="sxs-lookup"><span data-stu-id="4b677-102">Single Sign-On: Event 11067</span></span>
-## <a name="details"></a><span data-ttu-id="4b677-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="4b677-103">Details</span></span>  
+# <a name="single-sign-on-event-11067"></a><span data-ttu-id="fc8c5-102">单一登录：事件 11067</span><span class="sxs-lookup"><span data-stu-id="fc8c5-102">Single Sign-On: Event 11067</span></span>
+## <a name="details"></a><span data-ttu-id="fc8c5-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="fc8c5-103">Details</span></span>  
   
 |                 |                                                                                     |
 |-----------------|-------------------------------------------------------------------------------------|
-|  <span data-ttu-id="4b677-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="4b677-104">Product Name</span></span>   |                              <span data-ttu-id="4b677-105">企业单一登录</span><span class="sxs-lookup"><span data-stu-id="4b677-105">Enterprise Single Sign-On</span></span>                              |
-| <span data-ttu-id="4b677-106">产品版本</span><span class="sxs-lookup"><span data-stu-id="4b677-106">Product Version</span></span> |             [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]              |
-|    <span data-ttu-id="4b677-107">事件 ID</span><span class="sxs-lookup"><span data-stu-id="4b677-107">Event ID</span></span>     |                                        <span data-ttu-id="4b677-108">11067</span><span class="sxs-lookup"><span data-stu-id="4b677-108">11067</span></span>                                        |
-|  <span data-ttu-id="4b677-109">事件源</span><span class="sxs-lookup"><span data-stu-id="4b677-109">Event Source</span></span>   |                                       <span data-ttu-id="4b677-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="4b677-110">ENTSSO</span></span>                                        |
-|    <span data-ttu-id="4b677-111">组件</span><span class="sxs-lookup"><span data-stu-id="4b677-111">Component</span></span>    |                                         <span data-ttu-id="4b677-112">N/A</span><span class="sxs-lookup"><span data-stu-id="4b677-112">N/A</span></span>                                         |
-|  <span data-ttu-id="4b677-113">符号名称</span><span class="sxs-lookup"><span data-stu-id="4b677-113">Symbolic Name</span></span>  |                      <span data-ttu-id="4b677-114">SSO_ERROR_PASSWORD_SYNC_MIIS_START_FAILED</span><span class="sxs-lookup"><span data-stu-id="4b677-114">SSO_ERROR_PASSWORD_SYNC_MIIS_START_FAILED</span></span>                      |
-|  <span data-ttu-id="4b677-115">消息正文</span><span class="sxs-lookup"><span data-stu-id="4b677-115">Message Text</span></span>   | <span data-ttu-id="4b677-116">Windows 的密码同步（从 MIIS）启动失败。%r</span><span class="sxs-lookup"><span data-stu-id="4b677-116">Password sync for Windows (from MIIS) failed to start.%r</span></span><br /><br /> <span data-ttu-id="4b677-117">错误代码： %1</span><span class="sxs-lookup"><span data-stu-id="4b677-117">Error Code: %1</span></span> |
+|  <span data-ttu-id="fc8c5-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="fc8c5-104">Product Name</span></span>   |                              <span data-ttu-id="fc8c5-105">企业单一登录</span><span class="sxs-lookup"><span data-stu-id="fc8c5-105">Enterprise Single Sign-On</span></span>                              |
+| <span data-ttu-id="fc8c5-106">产品版本</span><span class="sxs-lookup"><span data-stu-id="fc8c5-106">Product Version</span></span> |             [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]              |
+|    <span data-ttu-id="fc8c5-107">事件 ID</span><span class="sxs-lookup"><span data-stu-id="fc8c5-107">Event ID</span></span>     |                                        <span data-ttu-id="fc8c5-108">11067</span><span class="sxs-lookup"><span data-stu-id="fc8c5-108">11067</span></span>                                        |
+|  <span data-ttu-id="fc8c5-109">事件源</span><span class="sxs-lookup"><span data-stu-id="fc8c5-109">Event Source</span></span>   |                                       <span data-ttu-id="fc8c5-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="fc8c5-110">ENTSSO</span></span>                                        |
+|    <span data-ttu-id="fc8c5-111">组件</span><span class="sxs-lookup"><span data-stu-id="fc8c5-111">Component</span></span>    |                                         <span data-ttu-id="fc8c5-112">不可用</span><span class="sxs-lookup"><span data-stu-id="fc8c5-112">N/A</span></span>                                         |
+|  <span data-ttu-id="fc8c5-113">符号名称</span><span class="sxs-lookup"><span data-stu-id="fc8c5-113">Symbolic Name</span></span>  |                      <span data-ttu-id="fc8c5-114">SSO_ERROR_PASSWORD_SYNC_MIIS_START_FAILED</span><span class="sxs-lookup"><span data-stu-id="fc8c5-114">SSO_ERROR_PASSWORD_SYNC_MIIS_START_FAILED</span></span>                      |
+|  <span data-ttu-id="fc8c5-115">消息正文</span><span class="sxs-lookup"><span data-stu-id="fc8c5-115">Message Text</span></span>   | <span data-ttu-id="fc8c5-116">Windows （从 MIIS 进行) 的密码同步无法 start.%r</span><span class="sxs-lookup"><span data-stu-id="fc8c5-116">Password sync for Windows (from MIIS) failed to start.%r</span></span><br /><br /> <span data-ttu-id="fc8c5-117">错误代码： %1</span><span class="sxs-lookup"><span data-stu-id="fc8c5-117">Error Code: %1</span></span> |
   
-## <a name="explanation"></a><span data-ttu-id="4b677-118">解释</span><span class="sxs-lookup"><span data-stu-id="4b677-118">Explanation</span></span>  
- <span data-ttu-id="4b677-119">此信息消息表示，Windows 的密码同步（从 MIIS）启动失败。</span><span class="sxs-lookup"><span data-stu-id="4b677-119">This is an informational message stating that password sync for Windows (from MIIS) failed to start.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="fc8c5-118">解释</span><span class="sxs-lookup"><span data-stu-id="fc8c5-118">Explanation</span></span>  
+ <span data-ttu-id="fc8c5-119">这是一条信息性消息，指出无法启动 （从 MIIS 进行) 的 Windows 密码同步。</span><span class="sxs-lookup"><span data-stu-id="fc8c5-119">This is an informational message stating that password sync for Windows (from MIIS) failed to start.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="4b677-120">用户操作</span><span class="sxs-lookup"><span data-stu-id="4b677-120">User Action</span></span>  
- <span data-ttu-id="4b677-121">不需要任何用户操作。</span><span class="sxs-lookup"><span data-stu-id="4b677-121">No user action is required.</span></span>
+## <a name="user-action"></a><span data-ttu-id="fc8c5-120">用户操作</span><span class="sxs-lookup"><span data-stu-id="fc8c5-120">User Action</span></span>  
+ <span data-ttu-id="fc8c5-121">不需要任何用户操作。</span><span class="sxs-lookup"><span data-stu-id="fc8c5-121">No user action is required.</span></span>

@@ -13,97 +13,97 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a4ed81978dd275be8eb0348ff15dc8748258239
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bebb8d3899c34dcde7a5d5c3059434d23202929a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977166"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334978"
 ---
-# <a name="remove-incomplete-activity-instances"></a><span data-ttu-id="2ce73-103">删除不完整的活动实例</span><span class="sxs-lookup"><span data-stu-id="2ce73-103">Remove Incomplete Activity Instances</span></span>
-<span data-ttu-id="2ce73-104">在部署 BAM 定义文件时，系统会在 BAM 主导入数据库中为在该定义文件中定义的每个活动创建五个表。</span><span class="sxs-lookup"><span data-stu-id="2ce73-104">When a BAM definition file is deployed, five tables are created in the BAM Primary Import database for each activity defined in the definition file.</span></span> <span data-ttu-id="2ce73-105">这些表分别为：</span><span class="sxs-lookup"><span data-stu-id="2ce73-105">These tables are:</span></span>  
+# <a name="remove-incomplete-activity-instances"></a><span data-ttu-id="1e511-103">删除不完整的活动实例</span><span class="sxs-lookup"><span data-stu-id="1e511-103">Remove Incomplete Activity Instances</span></span>
+<span data-ttu-id="1e511-104">部署 BAM 定义文件时，定义文件中定义的每个活动的 BAM 主导入数据库中创建五个表。</span><span class="sxs-lookup"><span data-stu-id="1e511-104">When a BAM definition file is deployed, five tables are created in the BAM Primary Import database for each activity defined in the definition file.</span></span> <span data-ttu-id="1e511-105">这些表是：</span><span class="sxs-lookup"><span data-stu-id="1e511-105">These tables are:</span></span>  
   
-- <span data-ttu-id="2ce73-106">bam_`ActivityName`_Active</span><span class="sxs-lookup"><span data-stu-id="2ce73-106">bam_`ActivityName`_Active</span></span>  
+- <span data-ttu-id="1e511-106">bam_`ActivityName`_Active</span><span class="sxs-lookup"><span data-stu-id="1e511-106">bam_`ActivityName`_Active</span></span>  
   
-- <span data-ttu-id="2ce73-107">bam_`ActivityName`_Completed</span><span class="sxs-lookup"><span data-stu-id="2ce73-107">bam_`ActivityName`_Completed</span></span>  
+- <span data-ttu-id="1e511-107">bam_`ActivityName`_Completed</span><span class="sxs-lookup"><span data-stu-id="1e511-107">bam_`ActivityName`_Completed</span></span>  
   
-- <span data-ttu-id="2ce73-108">bam_`ActivityName`_ActiveRelationships</span><span class="sxs-lookup"><span data-stu-id="2ce73-108">bam_`ActivityName`_ActiveRelationships</span></span>  
+- <span data-ttu-id="1e511-108">bam_`ActivityName`_ActiveRelationships</span><span class="sxs-lookup"><span data-stu-id="1e511-108">bam_`ActivityName`_ActiveRelationships</span></span>  
   
-- <span data-ttu-id="2ce73-109">bam_`ActivityName`_CompletedRelationships</span><span class="sxs-lookup"><span data-stu-id="2ce73-109">bam_`ActivityName`_CompletedRelationships</span></span>  
+- <span data-ttu-id="1e511-109">bam_`ActivityName`_CompletedRelationships</span><span class="sxs-lookup"><span data-stu-id="1e511-109">bam_`ActivityName`_CompletedRelationships</span></span>  
   
-- <span data-ttu-id="2ce73-110">bam_`ActivityName`_Continuations</span><span class="sxs-lookup"><span data-stu-id="2ce73-110">bam_`ActivityName`_Continuations</span></span>  
+- <span data-ttu-id="1e511-110">bam_`ActivityName`_Continuations</span><span class="sxs-lookup"><span data-stu-id="1e511-110">bam_`ActivityName`_Continuations</span></span>  
   
-  <span data-ttu-id="2ce73-111">其中，`ActivityName` 是用户已定义的活动名称。</span><span class="sxs-lookup"><span data-stu-id="2ce73-111">Where `ActivityName` is the name of the activity that the user has defined.</span></span>  
+  <span data-ttu-id="1e511-111">其中`ActivityName`是用户定义的活动的名称。</span><span class="sxs-lookup"><span data-stu-id="1e511-111">Where `ActivityName` is the name of the activity that the user has defined.</span></span>  
   
-  <span data-ttu-id="2ce73-112">常规执行期间，不完整的数据保留在 bam_`ActivityName`*活动表。如果数据包含关系和引用，则不会在 bam 中有数据\\*`ActivityName`_ActiveRelationships 表。</span><span class="sxs-lookup"><span data-stu-id="2ce73-112">During normal execution, incomplete data remains in the bam_`ActivityName`*Active table. If the data has relations and references, then there will be data in the bam\\*`ActivityName`_ActiveRelationships table.</span></span>  
+  <span data-ttu-id="1e511-112">常规执行期间，不完整的数据保留在 bam_`ActivityName`*活动表。如果数据包含关系和引用，则不会在 bam 中有数据\\*`ActivityName`_ActiveRelationships 表。</span><span class="sxs-lookup"><span data-stu-id="1e511-112">During normal execution, incomplete data remains in the bam_`ActivityName`*Active table. If the data has relations and references, then there will be data in the bam\\*`ActivityName`_ActiveRelationships table.</span></span>  
   
-  <span data-ttu-id="2ce73-113">在跟踪使用继续符的活动期间，可能存在其活动在 BAM 数据库中尚保持未完成状态的实例。</span><span class="sxs-lookup"><span data-stu-id="2ce73-113">During the tracking of activities that use continuations, there may be instances in which an activity is left in an incomplete state in the BAM databases.</span></span> <span data-ttu-id="2ce73-114">您可以使用本主题结尾处的存储过程创建脚本创建将清除不完整记录的存储过程。</span><span class="sxs-lookup"><span data-stu-id="2ce73-114">You can use the stored procedure creation script at the end of this topic to create a stored procedure that will purge the incomplete records.</span></span>  
+  <span data-ttu-id="1e511-113">在使用继续符的活动跟踪，都可能有未完成状态在 BAM 数据库中保留一个活动的实例。</span><span class="sxs-lookup"><span data-stu-id="1e511-113">During the tracking of activities that use continuations, there may be instances in which an activity is left in an incomplete state in the BAM databases.</span></span> <span data-ttu-id="1e511-114">可以使用本主题末尾的存储的过程创建脚本以创建将清除不完整记录的存储的过程。</span><span class="sxs-lookup"><span data-stu-id="1e511-114">You can use the stored procedure creation script at the end of this topic to create a stored procedure that will purge the incomplete records.</span></span>  
   
-  <span data-ttu-id="2ce73-115">若要创建该存储过程，请通过使用 SQL Server Management 复制该脚本并对 BAM 主导入数据库执行它。</span><span class="sxs-lookup"><span data-stu-id="2ce73-115">To create the stored procedure, copy the script and execute it against the BAM Primary Import database by using SQL Server Management.</span></span> <span data-ttu-id="2ce73-116">此脚本将生成一个名为的存储的过程**RemoveDanglingInstances**数据库中。</span><span class="sxs-lookup"><span data-stu-id="2ce73-116">The script will generate a stored procedure named **RemoveDanglingInstances** in the database.</span></span>  
+  <span data-ttu-id="1e511-115">若要创建存储的过程，将脚本复制并执行它对 BAM 主导入数据库使用 SQL Server 管理。</span><span class="sxs-lookup"><span data-stu-id="1e511-115">To create the stored procedure, copy the script and execute it against the BAM Primary Import database by using SQL Server Management.</span></span> <span data-ttu-id="1e511-116">此脚本将生成一个名为的存储的过程**RemoveDanglingInstances**数据库中。</span><span class="sxs-lookup"><span data-stu-id="1e511-116">The script will generate a stored procedure named **RemoveDanglingInstances** in the database.</span></span>  
   
-## <a name="create-the-removedanglinginstances-stored-procedure"></a><span data-ttu-id="2ce73-117">创建 RemoveDanglingInstances 存储过程</span><span class="sxs-lookup"><span data-stu-id="2ce73-117">Create the RemoveDanglingInstances stored procedure</span></span>  
+## <a name="create-the-removedanglinginstances-stored-procedure"></a><span data-ttu-id="1e511-117">创建 RemoveDanglingInstances 存储过程</span><span class="sxs-lookup"><span data-stu-id="1e511-117">Create the RemoveDanglingInstances stored procedure</span></span>  
   
-1.  <span data-ttu-id="2ce73-118">打开**SQL Server Management Studio**，并连接到 SQL server。</span><span class="sxs-lookup"><span data-stu-id="2ce73-118">Open **SQL Server Management Studio**, and connect to the SQL server.</span></span>
+1.  <span data-ttu-id="1e511-118">打开**SQL Server Management Studio**，并连接到 SQL server。</span><span class="sxs-lookup"><span data-stu-id="1e511-118">Open **SQL Server Management Studio**, and connect to the SQL server.</span></span>
   
-2.  <span data-ttu-id="2ce73-119">展开服务器名称，展开**数据库**，然后选择 BAM 主导入数据库。</span><span class="sxs-lookup"><span data-stu-id="2ce73-119">Expand the server name, expand **Databases**, and then select the BAM Primary Import database.</span></span>  
+2.  <span data-ttu-id="1e511-119">展开服务器名称，展开**数据库**，然后选择 BAM 主导入数据库。</span><span class="sxs-lookup"><span data-stu-id="1e511-119">Expand the server name, expand **Databases**, and then select the BAM Primary Import database.</span></span>  
   
-3.  <span data-ttu-id="2ce73-120">单击 **“新建查询”**。</span><span class="sxs-lookup"><span data-stu-id="2ce73-120">Click **New Query**.</span></span>  
+3.  <span data-ttu-id="1e511-120">单击 **“新建查询”**。</span><span class="sxs-lookup"><span data-stu-id="1e511-120">Click **New Query**.</span></span>  
   
-4.  <span data-ttu-id="2ce73-121">复制存储的过程创建脚本，并将其粘贴到查询窗格。</span><span class="sxs-lookup"><span data-stu-id="2ce73-121">Copy the stored procedure creation script, and paste it into the query pane.</span></span>  
+4.  <span data-ttu-id="1e511-121">复制存储的过程创建脚本，并将其粘贴到查询窗格。</span><span class="sxs-lookup"><span data-stu-id="1e511-121">Copy the stored procedure creation script, and paste it into the query pane.</span></span>  
   
-5.  <span data-ttu-id="2ce73-122">**执行**脚本。</span><span class="sxs-lookup"><span data-stu-id="2ce73-122">**Execute** the script.</span></span> <span data-ttu-id="2ce73-123">生成的存储的过程可以查看存储过程的列表中，为 dbo。RemoveDanglingInstances。</span><span class="sxs-lookup"><span data-stu-id="2ce73-123">The resulting stored procedure can be viewed in the list of stored procedures as dbo.RemoveDanglingInstances.</span></span>  
+5.  <span data-ttu-id="1e511-122">**执行**脚本。</span><span class="sxs-lookup"><span data-stu-id="1e511-122">**Execute** the script.</span></span> <span data-ttu-id="1e511-123">生成的存储的过程可以查看存储过程的列表中，为 dbo。RemoveDanglingInstances。</span><span class="sxs-lookup"><span data-stu-id="1e511-123">The resulting stored procedure can be viewed in the list of stored procedures as dbo.RemoveDanglingInstances.</span></span>  
   
-## <a name="remove-incomplete-activity-instances"></a><span data-ttu-id="2ce73-124">删除不完整的活动实例</span><span class="sxs-lookup"><span data-stu-id="2ce73-124">Remove incomplete activity instances</span></span>  
+## <a name="remove-incomplete-activity-instances"></a><span data-ttu-id="1e511-124">删除不完整的活动实例</span><span class="sxs-lookup"><span data-stu-id="1e511-124">Remove incomplete activity instances</span></span>  
   
-1.  <span data-ttu-id="2ce73-125">打开**SQL Server Management Studio**，并连接到 SQL server。</span><span class="sxs-lookup"><span data-stu-id="2ce73-125">Open **SQL Server Management Studio**, and connect to the SQL server.</span></span>
+1.  <span data-ttu-id="1e511-125">打开**SQL Server Management Studio**，并连接到 SQL server。</span><span class="sxs-lookup"><span data-stu-id="1e511-125">Open **SQL Server Management Studio**, and connect to the SQL server.</span></span>
   
-2.  <span data-ttu-id="2ce73-126">展开服务器名称，展开**数据库**，然后选择 BAM 主导入数据库。</span><span class="sxs-lookup"><span data-stu-id="2ce73-126">Expand the server name, expand **Databases**, and then select the BAM Primary Import database.</span></span>  
+2.  <span data-ttu-id="1e511-126">展开服务器名称，展开**数据库**，然后选择 BAM 主导入数据库。</span><span class="sxs-lookup"><span data-stu-id="1e511-126">Expand the server name, expand **Databases**, and then select the BAM Primary Import database.</span></span>  
   
-3.  <span data-ttu-id="2ce73-127">单击 **“新建查询”**。</span><span class="sxs-lookup"><span data-stu-id="2ce73-127">Click **New Query**.</span></span>  
+3.  <span data-ttu-id="1e511-127">单击 **“新建查询”**。</span><span class="sxs-lookup"><span data-stu-id="1e511-127">Click **New Query**.</span></span>  
   
-4.  <span data-ttu-id="2ce73-128">在查询窗格中，键入`exec RemoveDanglingInstances`和要执行的删除操作的相应参数。</span><span class="sxs-lookup"><span data-stu-id="2ce73-128">In the query pane, type `exec RemoveDanglingInstances` and the appropriate parameters for the remove operation you are performing.</span></span> <span data-ttu-id="2ce73-129">例如，若要删除所有未完成活动实例的采购订单，键入`exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`。</span><span class="sxs-lookup"><span data-stu-id="2ce73-129">For example, to remove all incomplete instances of the Purchase Order activity, type `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`.</span></span>  
+4.  <span data-ttu-id="1e511-128">在查询窗格中，键入`exec RemoveDanglingInstances`和要执行的删除操作的相应参数。</span><span class="sxs-lookup"><span data-stu-id="1e511-128">In the query pane, type `exec RemoveDanglingInstances` and the appropriate parameters for the remove operation you are performing.</span></span> <span data-ttu-id="1e511-129">例如，若要删除所有未完成活动实例的采购订单，键入`exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`。</span><span class="sxs-lookup"><span data-stu-id="1e511-129">For example, to remove all incomplete instances of the Purchase Order activity, type `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`.</span></span>  
   
-5.  <span data-ttu-id="2ce73-130">**执行**脚本。</span><span class="sxs-lookup"><span data-stu-id="2ce73-130">**Execute** the script.</span></span>  
+5.  <span data-ttu-id="1e511-130">**执行**脚本。</span><span class="sxs-lookup"><span data-stu-id="1e511-130">**Execute** the script.</span></span>  
   
-## <a name="removedanglinginstances-usage-examples"></a><span data-ttu-id="2ce73-131">RemoveDanglingInstances 用法示例</span><span class="sxs-lookup"><span data-stu-id="2ce73-131">RemoveDanglingInstances Usage Examples</span></span>  
- <span data-ttu-id="2ce73-132">存储的过程可以收到四个参数：</span><span class="sxs-lookup"><span data-stu-id="2ce73-132">The stored procedure can receive four parameters:</span></span>  
+## <a name="removedanglinginstances-usage-examples"></a><span data-ttu-id="1e511-131">RemoveDanglingInstances 用法示例</span><span class="sxs-lookup"><span data-stu-id="1e511-131">RemoveDanglingInstances Usage Examples</span></span>  
+ <span data-ttu-id="1e511-132">存储的过程可以收到四个参数：</span><span class="sxs-lookup"><span data-stu-id="1e511-132">The stored procedure can receive four parameters:</span></span>  
   
-|<span data-ttu-id="2ce73-133">参数</span><span class="sxs-lookup"><span data-stu-id="2ce73-133">Parameter</span></span>|<span data-ttu-id="2ce73-134">Description</span><span class="sxs-lookup"><span data-stu-id="2ce73-134">Description</span></span>|  
+|<span data-ttu-id="1e511-133">参数</span><span class="sxs-lookup"><span data-stu-id="1e511-133">Parameter</span></span>|<span data-ttu-id="1e511-134">Description</span><span class="sxs-lookup"><span data-stu-id="1e511-134">Description</span></span>|  
 |---------------|-----------------|  
-|<span data-ttu-id="2ce73-135">@ActivityName nvarchar(128)</span><span class="sxs-lookup"><span data-stu-id="2ce73-135">@ActivityName nvarchar(128)</span></span>|<span data-ttu-id="2ce73-136">指定要删除的不完整活动实例的名称。</span><span class="sxs-lookup"><span data-stu-id="2ce73-136">Specifies the name of the incomplete activity instance to remove.</span></span>|  
-|<span data-ttu-id="2ce73-137">@ActivityId nvarchar(128)</span><span class="sxs-lookup"><span data-stu-id="2ce73-137">@ActivityId nvarchar(128)</span></span>|<span data-ttu-id="2ce73-138">（可选）指定存储过程只删除具有指定实例标识符的虚实例。</span><span class="sxs-lookup"><span data-stu-id="2ce73-138">(Optional) Specifies that the stored procedure remove only the dangling instance with the specified instance identifier.</span></span>|  
-|<span data-ttu-id="2ce73-139">@DateThreshold 日期时间</span><span class="sxs-lookup"><span data-stu-id="2ce73-139">@DateThreshold datetime</span></span>|<span data-ttu-id="2ce73-140">（可选）指定删除活动表中早于（不是等于和早于，只是早于）给定日期的所有活动实例。</span><span class="sxs-lookup"><span data-stu-id="2ce73-140">(Optional) Specifies that all the active instances in the active table that are older (not equal to and older, only older) than the given date are removed.</span></span>|  
-|<span data-ttu-id="2ce73-141">@NewTableExtension nvarchar(30)</span><span class="sxs-lookup"><span data-stu-id="2ce73-141">@NewTableExtension nvarchar(30)</span></span>|<span data-ttu-id="2ce73-142">（可选）指定存储过程通过将提供的扩展连接到现有活动表，创建三个新表。</span><span class="sxs-lookup"><span data-stu-id="2ce73-142">(Optional) Specifies that the stored procedure creates three new tables by concatenating the supplied extension to the existing activity tables.</span></span><br /><br /> <span data-ttu-id="2ce73-143">生成的表将是：</span><span class="sxs-lookup"><span data-stu-id="2ce73-143">The resulting tables will be:</span></span><br /><br /> <span data-ttu-id="2ce73-144">bam_ActivityName_Active_\<Extension\></span><span class="sxs-lookup"><span data-stu-id="2ce73-144">bam_ActivityName_Active_\<Extension\></span></span><br /><br /> <span data-ttu-id="2ce73-145">bam_ActivityName_ActiveRelationships_\<Extension\></span><span class="sxs-lookup"><span data-stu-id="2ce73-145">bam_ActivityName_ActiveRelationships_\<Extension\></span></span><br /><br /> <span data-ttu-id="2ce73-146">bam_ActivityName_Continuations_\<Extension\></span><span class="sxs-lookup"><span data-stu-id="2ce73-146">bam_ActivityName_Continuations_\<Extension\></span></span><br /><br /> <span data-ttu-id="2ce73-147">不完整实例将会移到新的表中，而不是从数据库中清除。</span><span class="sxs-lookup"><span data-stu-id="2ce73-147">The incomplete instances are moved to the new tables rather than being purged from the database.</span></span><br /><br /> <span data-ttu-id="2ce73-148">如果这些表已存在，则该存储过程将重复使用它们；否则，将创建这些表。</span><span class="sxs-lookup"><span data-stu-id="2ce73-148">If the tables already exist, the stored procedure reuses them; otherwise they are created.</span></span> <span data-ttu-id="2ce73-149">**重要说明：** 的存储的过程已存在的表，如果假定其架构匹配的那些可在创建它们。</span><span class="sxs-lookup"><span data-stu-id="2ce73-149">**Important:**  If the tables already exist, the stored procedure assumes that their schemas match the ones that would be used if they were created.</span></span> <span data-ttu-id="2ce73-150">如果架构不匹配，则该存储过程将无法插入记录，并且取消操作也会失败。</span><span class="sxs-lookup"><span data-stu-id="2ce73-150">If a schema does not match, the stored procedure will fail to insert the records and the remove operation will fail.</span></span>|  
+|<span data-ttu-id="1e511-135">@ActivityName nvarchar(128)</span><span class="sxs-lookup"><span data-stu-id="1e511-135">@ActivityName nvarchar(128)</span></span>|<span data-ttu-id="1e511-136">指定要删除的不完整的活动实例的名称。</span><span class="sxs-lookup"><span data-stu-id="1e511-136">Specifies the name of the incomplete activity instance to remove.</span></span>|  
+|<span data-ttu-id="1e511-137">@ActivityId nvarchar(128)</span><span class="sxs-lookup"><span data-stu-id="1e511-137">@ActivityId nvarchar(128)</span></span>|<span data-ttu-id="1e511-138">（可选）指定存储的过程删除仅与指定的实例标识符的虚实例。</span><span class="sxs-lookup"><span data-stu-id="1e511-138">(Optional) Specifies that the stored procedure remove only the dangling instance with the specified instance identifier.</span></span>|  
+|<span data-ttu-id="1e511-139">@DateThreshold 日期时间</span><span class="sxs-lookup"><span data-stu-id="1e511-139">@DateThreshold datetime</span></span>|<span data-ttu-id="1e511-140">（可选）指定所有活动都实例中活动较旧的表 （不等于和早，只是早于） 给定日期会删除。</span><span class="sxs-lookup"><span data-stu-id="1e511-140">(Optional) Specifies that all the active instances in the active table that are older (not equal to and older, only older) than the given date are removed.</span></span>|  
+|<span data-ttu-id="1e511-141">@NewTableExtension nvarchar(30)</span><span class="sxs-lookup"><span data-stu-id="1e511-141">@NewTableExtension nvarchar(30)</span></span>|<span data-ttu-id="1e511-142">（可选）指定该存储的过程通过连接到现有活动表提供的扩展来创建三个新表。</span><span class="sxs-lookup"><span data-stu-id="1e511-142">(Optional) Specifies that the stored procedure creates three new tables by concatenating the supplied extension to the existing activity tables.</span></span><br /><br /> <span data-ttu-id="1e511-143">将生成的表：</span><span class="sxs-lookup"><span data-stu-id="1e511-143">The resulting tables will be:</span></span><br /><br /> <span data-ttu-id="1e511-144">bam_ActivityName_Active_\<Extension\></span><span class="sxs-lookup"><span data-stu-id="1e511-144">bam_ActivityName_Active_\<Extension\></span></span><br /><br /> <span data-ttu-id="1e511-145">bam_ActivityName_ActiveRelationships_\<Extension\></span><span class="sxs-lookup"><span data-stu-id="1e511-145">bam_ActivityName_ActiveRelationships_\<Extension\></span></span><br /><br /> <span data-ttu-id="1e511-146">bam_ActivityName_Continuations_\<Extension\></span><span class="sxs-lookup"><span data-stu-id="1e511-146">bam_ActivityName_Continuations_\<Extension\></span></span><br /><br /> <span data-ttu-id="1e511-147">未完成的实例会移到新表，而不是从数据库中清除。</span><span class="sxs-lookup"><span data-stu-id="1e511-147">The incomplete instances are moved to the new tables rather than being purged from the database.</span></span><br /><br /> <span data-ttu-id="1e511-148">如果已存在的表，存储的过程重新使用它们;否则，将创建。</span><span class="sxs-lookup"><span data-stu-id="1e511-148">If the tables already exist, the stored procedure reuses them; otherwise they are created.</span></span> <span data-ttu-id="1e511-149">**重要提示：** 如果已存在的表，存储的过程假定其架构匹配的那些可在创建它们。</span><span class="sxs-lookup"><span data-stu-id="1e511-149">**Important:**  If the tables already exist, the stored procedure assumes that their schemas match the ones that would be used if they were created.</span></span> <span data-ttu-id="1e511-150">如果架构不匹配，存储的过程将无法将记录插入和删除操作将失败。</span><span class="sxs-lookup"><span data-stu-id="1e511-150">If a schema does not match, the stored procedure will fail to insert the records and the remove operation will fail.</span></span>|  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`  
   
- <span data-ttu-id="2ce73-151">删除活动表、活动关系表和继续符表中“PurchaseOrder”活动的所有活动实例。</span><span class="sxs-lookup"><span data-stu-id="2ce73-151">Removes all active instances of the 'PurchaseOrder' activity in the active, active relationships, and continuations tables.</span></span>  
+ <span data-ttu-id="1e511-151">删除 PurchaseOrder 活动的所有活动实例处于活动状态，活动关系表和继续符表。</span><span class="sxs-lookup"><span data-stu-id="1e511-151">Removes all active instances of the 'PurchaseOrder' activity in the active, active relationships, and continuations tables.</span></span>  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder', @ActivityId = 'PO220567'`  
   
- <span data-ttu-id="2ce73-152">从“PurchaseOrder”活动的活动表、活动关系表和继续符表中只删除 ID 为“PO220567”的活动实例。</span><span class="sxs-lookup"><span data-stu-id="2ce73-152">Removes only the activity instance that has an Activity ID of 'PO220567' from the active, active relationships, and continuations tables for the 'PurchaseOrder' activity.</span></span>  
+ <span data-ttu-id="1e511-152">已从活动，活动 ID 为 PO220567 的活动实例中删除活动关系表和 PurchaseOrder 活动的继续符表。</span><span class="sxs-lookup"><span data-stu-id="1e511-152">Removes only the activity instance that has an Activity ID of 'PO220567' from the active, active relationships, and continuations tables for the 'PurchaseOrder' activity.</span></span>  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder', @DateThreshold='2005-02-02 19:27:03:533'`  
   
- <span data-ttu-id="2ce73-153">从“PurchaseOrder”活动的活动表、活动关系表和继续符表中删除 LastModified 时间早于 2005 年 2 月 2 日的 7:27:03.533 PM 的所有活动实例。</span><span class="sxs-lookup"><span data-stu-id="2ce73-153">Removes all the activity instances that have a LastModified time that is older than Feb 2nd, 2005 7:27:03.533 PM from the active, active relationships, and continuations tables for the 'PurchaseOrder' activity.</span></span>  
+ <span data-ttu-id="1e511-153">删除 LastModified 时间早于 2005 年 2 月 2 日的所有活动实例从活动，7:27:03.533 PM 活动关系表和 PurchaseOrder 活动的继续符表。</span><span class="sxs-lookup"><span data-stu-id="1e511-153">Removes all the activity instances that have a LastModified time that is older than Feb 2nd, 2005 7:27:03.533 PM from the active, active relationships, and continuations tables for the 'PurchaseOrder' activity.</span></span>  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder', @ActivityId = 'PO220567', @DateThreshold='2005-02-02 19:27:03:533'`  
   
- <span data-ttu-id="2ce73-154">删除其活动 ID 为 PO220567 且其 LastModified 列早于 2005 年 2 月 2 日 7:27:03.533 PM 的实例。</span><span class="sxs-lookup"><span data-stu-id="2ce73-154">Removes the activity instance whose activity ID is PO220567 only if its LastModified column is older than Feb 2nd, 2005 7:27:03.533 PM.</span></span>  
+ <span data-ttu-id="1e511-154">删除其活动 ID 为 po220567 且其 LastModified 列是早于 2005 年 2 月 2 日的活动实例 7:27:03.533 PM。</span><span class="sxs-lookup"><span data-stu-id="1e511-154">Removes the activity instance whose activity ID is PO220567 only if its LastModified column is older than Feb 2nd, 2005 7:27:03.533 PM.</span></span>  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder', @DateThreshold='2005-02-02 19:27:03:533', @NewTableExtension=N'Dangling'`  
   
- <span data-ttu-id="2ce73-155">在数据库中创建以下表：</span><span class="sxs-lookup"><span data-stu-id="2ce73-155">Creates the following tables in the database:</span></span>  
+ <span data-ttu-id="1e511-155">在数据库中创建以下表：</span><span class="sxs-lookup"><span data-stu-id="1e511-155">Creates the following tables in the database:</span></span>  
   
- <span data-ttu-id="2ce73-156">bam_PurchaseOrder_Active_Dangling</span><span class="sxs-lookup"><span data-stu-id="2ce73-156">bam_PurchaseOrder_Active_Dangling</span></span>  
+ <span data-ttu-id="1e511-156">bam_PurchaseOrder_Active_Dangling</span><span class="sxs-lookup"><span data-stu-id="1e511-156">bam_PurchaseOrder_Active_Dangling</span></span>  
   
- <span data-ttu-id="2ce73-157">bam_PurchaseOrder_ActiveRelationships_Dangling</span><span class="sxs-lookup"><span data-stu-id="2ce73-157">bam_PurchaseOrder_ActiveRelationships_Dangling</span></span>  
+ <span data-ttu-id="1e511-157">bam_PurchaseOrder_ActiveRelationships_Dangling</span><span class="sxs-lookup"><span data-stu-id="1e511-157">bam_PurchaseOrder_ActiveRelationships_Dangling</span></span>  
   
- <span data-ttu-id="2ce73-158">bam_PurchaseOrder_Continuations_Dangling</span><span class="sxs-lookup"><span data-stu-id="2ce73-158">bam_PurchaseOrder_Continuations_Dangling</span></span>  
+ <span data-ttu-id="1e511-158">bam_PurchaseOrder_Continuations_Dangling</span><span class="sxs-lookup"><span data-stu-id="1e511-158">bam_PurchaseOrder_Continuations_Dangling</span></span>  
   
- <span data-ttu-id="2ce73-159">存储过程将从“PurchaseOrder”活动的活动表、活动关系表和继续符表中复制早于 2005 年 2 月 2 日的 7:27:03.533 PM 的所有未完成实例，然后将它们插入新创建的表中。</span><span class="sxs-lookup"><span data-stu-id="2ce73-159">The stored procedure copies all incomplete activity instances that are older than Feb 2nd, 2005 7:27:03.533 PM from the active, active relationships, and continuations tables for the 'PurchaseOrder' activity, and inserts them into the newly created tables.</span></span> <span data-ttu-id="2ce73-160">然后，将已复制的活动实例从活动表、活动关系表和继续符表中删除。</span><span class="sxs-lookup"><span data-stu-id="2ce73-160">The copied activity instances are then removed from the active, active relationships, and continuations tables.</span></span>  
+ <span data-ttu-id="1e511-159">存储的过程将复制所有早于 2005 年 2 月 2 日的不完整的活动实例从活动、 活动关系 7:27:03.533 PM 和继续符表为 PurchaseOrder 活动，并将其插入到新创建的表。</span><span class="sxs-lookup"><span data-stu-id="1e511-159">The stored procedure copies all incomplete activity instances that are older than Feb 2nd, 2005 7:27:03.533 PM from the active, active relationships, and continuations tables for the 'PurchaseOrder' activity, and inserts them into the newly created tables.</span></span> <span data-ttu-id="1e511-160">从活动状态，然后删除复制的活动实例活动关系表和继续符表。</span><span class="sxs-lookup"><span data-stu-id="1e511-160">The copied activity instances are then removed from the active, active relationships, and continuations tables.</span></span>  
   
-## <a name="stored-procedure-creation-script"></a><span data-ttu-id="2ce73-161">存储过程创建脚本</span><span class="sxs-lookup"><span data-stu-id="2ce73-161">Stored Procedure Creation Script</span></span>  
+## <a name="stored-procedure-creation-script"></a><span data-ttu-id="1e511-161">存储的过程创建脚本</span><span class="sxs-lookup"><span data-stu-id="1e511-161">Stored Procedure Creation Script</span></span>  
   
 ```  
 EXEC sp_stored_procedures @sp_name = 'RemoveDanglingInstances'  
@@ -234,8 +234,8 @@ AS
 GO  
 ```  
 
-## <a name="another-method-of-resolving-incomplete-instances"></a><span data-ttu-id="2ce73-162">解决未完成的实例的另一种方法</span><span class="sxs-lookup"><span data-stu-id="2ce73-162">Another method of resolving incomplete instances</span></span>
-<span data-ttu-id="2ce73-163">此外可以通过使用 SQL 查询来解析不完整的活动实例从 BAMPrimaryImport 数据库。</span><span class="sxs-lookup"><span data-stu-id="2ce73-163">You can also resolve incomplete activity instances from the BAMPrimaryImport database by using a SQL query.</span></span> <span data-ttu-id="2ce73-164">请参阅[解析不完整的活动实例](how-to-resolve-incomplete-activity-instances.md)。</span><span class="sxs-lookup"><span data-stu-id="2ce73-164">See [Resolve incomplete activity instances](how-to-resolve-incomplete-activity-instances.md).</span></span>
+## <a name="another-method-of-resolving-incomplete-instances"></a><span data-ttu-id="1e511-162">解决未完成的实例的另一种方法</span><span class="sxs-lookup"><span data-stu-id="1e511-162">Another method of resolving incomplete instances</span></span>
+<span data-ttu-id="1e511-163">此外可以通过使用 SQL 查询来解析不完整的活动实例从 BAMPrimaryImport 数据库。</span><span class="sxs-lookup"><span data-stu-id="1e511-163">You can also resolve incomplete activity instances from the BAMPrimaryImport database by using a SQL query.</span></span> <span data-ttu-id="1e511-164">请参阅[解析不完整的活动实例](how-to-resolve-incomplete-activity-instances.md)。</span><span class="sxs-lookup"><span data-stu-id="1e511-164">See [Resolve incomplete activity instances](how-to-resolve-incomplete-activity-instances.md).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="2ce73-165">请参阅</span><span class="sxs-lookup"><span data-stu-id="2ce73-165">See Also</span></span>  
- [<span data-ttu-id="2ce73-166">管理 BAM 数据库</span><span class="sxs-lookup"><span data-stu-id="2ce73-166">Managing BAM Databases</span></span>](../core/managing-bam-databases.md)
+## <a name="see-also"></a><span data-ttu-id="1e511-165">请参阅</span><span class="sxs-lookup"><span data-stu-id="1e511-165">See Also</span></span>  
+ [<span data-ttu-id="1e511-166">管理 BAM 数据库</span><span class="sxs-lookup"><span data-stu-id="1e511-166">Managing BAM Databases</span></span>](../core/managing-bam-databases.md)

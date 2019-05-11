@@ -1,5 +1,5 @@
 ---
-title: 如何配置终止形状 |Microsoft 文档
+title: 如何配置终止形状 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,28 +18,28 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a5eb4867970c6acafc8903eb474b67541d22764
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 177666efceb34d78b492c93b7f365fc36c3855bb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22247925"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65340293"
 ---
-# <a name="how-to-configure-the-terminate-shape"></a><span data-ttu-id="f3c89-102">如何配置终止形状</span><span class="sxs-lookup"><span data-stu-id="f3c89-102">How to Configure the Terminate Shape</span></span>
-![](../core/media/ebiz-orch-terminate.gif "ebiz_orch_terminate")  
-<span data-ttu-id="f3c89-103">终止形状</span><span class="sxs-lookup"><span data-stu-id="f3c89-103">Terminate shape</span></span>  
+# <a name="how-to-configure-the-terminate-shape"></a><span data-ttu-id="a2420-102">如何配置终止形状</span><span class="sxs-lookup"><span data-stu-id="a2420-102">How to Configure the Terminate Shape</span></span>
+<span data-ttu-id="a2420-103">![](../core/media/ebiz-orch-terminate.gif "ebiz_orch_terminate")</span><span class="sxs-lookup"><span data-stu-id="a2420-103">![](../core/media/ebiz-orch-terminate.gif "ebiz_orch_terminate")</span></span>  
+<span data-ttu-id="a2420-104">终止形状</span><span class="sxs-lookup"><span data-stu-id="a2420-104">Terminate shape</span></span>  
   
- <span data-ttu-id="f3c89-104">终止形状用于结束某一业务流程实例。</span><span class="sxs-lookup"><span data-stu-id="f3c89-104">The Terminate shape is used to end an orchestration instance.</span></span> <span data-ttu-id="f3c89-105">可以指定一个消息字符串，以便在“组中心”页的输出中查看时随该形状一起显示。</span><span class="sxs-lookup"><span data-stu-id="f3c89-105">You can specify a message string to accompany the shape when viewed in the output from the Group Hub page.</span></span>  
-  
-> [!CAUTION]
->  <span data-ttu-id="f3c89-106">如果你将放置**终止**形状内**并行操作**形状和使用分支**终止**上运行，在实例完成立即，而不考虑是否其他分支已完成运行。</span><span class="sxs-lookup"><span data-stu-id="f3c89-106">If you place a **Terminate** shape inside a **Parallel Actions** shape, and the branch with the **Terminate** on it is run, the instance completes immediately, regardless of whether other branches have finished running.</span></span> <span data-ttu-id="f3c89-107">根据您的设计，在此情况下结果可能不可预测。</span><span class="sxs-lookup"><span data-stu-id="f3c89-107">Depending on your design, results might be unpredictable in this case.</span></span>  
+ <span data-ttu-id="a2420-105">终止形状用于结束业务流程实例。</span><span class="sxs-lookup"><span data-stu-id="a2420-105">The Terminate shape is used to end an orchestration instance.</span></span> <span data-ttu-id="a2420-106">可以指定来显示形状时从组中心页的输出中查看的消息字符串。</span><span class="sxs-lookup"><span data-stu-id="a2420-106">You can specify a message string to accompany the shape when viewed in the output from the Group Hub page.</span></span>  
   
 > [!CAUTION]
->  <span data-ttu-id="f3c89-108">如果**终止**形状遇到业务流程中同步调用 (与**调用**形状) 通过另一个业务流程、 嵌套的实例和所有封闭的业务流程将终止实例。</span><span class="sxs-lookup"><span data-stu-id="f3c89-108">If a **Terminate** shape is encountered in an orchestration that has been called synchronously (as with the **Call** shape) by another orchestration, the nested instance and all enclosing orchestration instances will be terminated.</span></span>  
+>  <span data-ttu-id="a2420-107">如果将置于**Terminate**形状内**并行操作**形状，并使用分支**终止**上运行它时，该实例将立即完成，而不考虑是否其他分支完成运行。</span><span class="sxs-lookup"><span data-stu-id="a2420-107">If you place a **Terminate** shape inside a **Parallel Actions** shape, and the branch with the **Terminate** on it is run, the instance completes immediately, regardless of whether other branches have finished running.</span></span> <span data-ttu-id="a2420-108">根据你的设计，结果可能不可预测在这种情况下。</span><span class="sxs-lookup"><span data-stu-id="a2420-108">Depending on your design, results might be unpredictable in this case.</span></span>  
   
-### <a name="to-configure-a-terminate-shape"></a><span data-ttu-id="f3c89-109">配置终止形状</span><span class="sxs-lookup"><span data-stu-id="f3c89-109">To configure a Terminate shape</span></span>  
+> [!CAUTION]
+>  <span data-ttu-id="a2420-109">如果**Terminate**形状遇到同步调用业务流程中 (如同**调用**形状) 通过另一个业务流程，则嵌套的实例和所有封闭的业务流程将终止实例。</span><span class="sxs-lookup"><span data-stu-id="a2420-109">If a **Terminate** shape is encountered in an orchestration that has been called synchronously (as with the **Call** shape) by another orchestration, the nested instance and all enclosing orchestration instances will be terminated.</span></span>  
   
--   <span data-ttu-id="f3c89-110">你可以使用**错误消息**属性来指定你想要将形状在组中心页面上将查询输出中查看时与关联的文本。</span><span class="sxs-lookup"><span data-stu-id="f3c89-110">You can use the **Error Message** property to specify text that you want to associate with the shape when viewed in the query output on the Group Hub page.</span></span> <span data-ttu-id="f3c89-111">此文本可能是文字字符串或表达式计算结果为**System.String**。</span><span class="sxs-lookup"><span data-stu-id="f3c89-111">This text may be a literal string, or an expression that evaluates to a **System.String**.</span></span>  
+### <a name="to-configure-a-terminate-shape"></a><span data-ttu-id="a2420-110">若要配置终止形状</span><span class="sxs-lookup"><span data-stu-id="a2420-110">To configure a Terminate shape</span></span>  
+  
+-   <span data-ttu-id="a2420-111">可以使用**错误消息**属性来指定你想要与形状时在组中心页上的查询输出中查看相关联的文本。</span><span class="sxs-lookup"><span data-stu-id="a2420-111">You can use the **Error Message** property to specify text that you want to associate with the shape when viewed in the query output on the Group Hub page.</span></span> <span data-ttu-id="a2420-112">文本字符串或表达式的计算结果为此文本可能太**System.String**。</span><span class="sxs-lookup"><span data-stu-id="a2420-112">This text may be a literal string, or an expression that evaluates to a **System.String**.</span></span>  
   
     > [!CAUTION]
-    >  <span data-ttu-id="f3c89-112">如果输入字符串，则必须将其括在引号中。</span><span class="sxs-lookup"><span data-stu-id="f3c89-112">If you enter a literal string, you must enclose it in quotation marks.</span></span>
+    >  <span data-ttu-id="a2420-113">如果输入的文本字符串，必须将其括在引号中。</span><span class="sxs-lookup"><span data-stu-id="a2420-113">If you enter a literal string, you must enclose it in quotation marks.</span></span>

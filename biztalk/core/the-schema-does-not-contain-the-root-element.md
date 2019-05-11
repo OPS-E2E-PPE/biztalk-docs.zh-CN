@@ -12,28 +12,28 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fc2191a5d9ea891efa285d8fc5006f243319fde5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 921ab75467fa408a837d61fcd66d2dc4cd1f2a63
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008438"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65277840"
 ---
-# <a name="the-schema-does-not-contain-the-root-element"></a><span data-ttu-id="7ba20-102">架构不包含根元素</span><span class="sxs-lookup"><span data-stu-id="7ba20-102">The schema does not contain the root element</span></span>
-## <a name="details"></a><span data-ttu-id="7ba20-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="7ba20-103">Details</span></span>  
+# <a name="the-schema-does-not-contain-the-root-element"></a><span data-ttu-id="3b488-102">架构不包含根元素</span><span class="sxs-lookup"><span data-stu-id="3b488-102">The schema does not contain the root element</span></span>
+## <a name="details"></a><span data-ttu-id="3b488-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="3b488-103">Details</span></span>  
   
 |                 |                                                                                        |
 |-----------------|----------------------------------------------------------------------------------------|
-|  <span data-ttu-id="7ba20-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="7ba20-104">Product Name</span></span>   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
-| <span data-ttu-id="7ba20-105">产品版本</span><span class="sxs-lookup"><span data-stu-id="7ba20-105">Product Version</span></span> |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
-|    <span data-ttu-id="7ba20-106">事件 ID</span><span class="sxs-lookup"><span data-stu-id="7ba20-106">Event ID</span></span>     |                                           -                                            |
-|  <span data-ttu-id="7ba20-107">事件源</span><span class="sxs-lookup"><span data-stu-id="7ba20-107">Event Source</span></span>   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="7ba20-108"> EDI</span><span class="sxs-lookup"><span data-stu-id="7ba20-108"> EDI</span></span> |
-|    <span data-ttu-id="7ba20-109">组件</span><span class="sxs-lookup"><span data-stu-id="7ba20-109">Component</span></span>    |                                       <span data-ttu-id="7ba20-110">EDI 引擎</span><span class="sxs-lookup"><span data-stu-id="7ba20-110">EDI Engine</span></span>                                       |
-|  <span data-ttu-id="7ba20-111">符号名称</span><span class="sxs-lookup"><span data-stu-id="7ba20-111">Symbolic Name</span></span>  |                             <span data-ttu-id="7ba20-112">SchemaCode102ENullRootElement</span><span class="sxs-lookup"><span data-stu-id="7ba20-112">SchemaCode102ENullRootElement</span></span>                              |
-|  <span data-ttu-id="7ba20-113">消息正文</span><span class="sxs-lookup"><span data-stu-id="7ba20-113">Message Text</span></span>   |                    <span data-ttu-id="7ba20-114">架构不包含根元素 {0}</span><span class="sxs-lookup"><span data-stu-id="7ba20-114">The schema does not contain the root element {0}</span></span>                    |
+|  <span data-ttu-id="3b488-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="3b488-104">Product Name</span></span>   |   [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]   |
+| <span data-ttu-id="3b488-105">产品版本</span><span class="sxs-lookup"><span data-stu-id="3b488-105">Product Version</span></span> |               [!INCLUDE[btsEDIVersion](../includes/btsediversion-md.md)]               |
+|    <span data-ttu-id="3b488-106">事件 ID</span><span class="sxs-lookup"><span data-stu-id="3b488-106">Event ID</span></span>     |                                           -                                            |
+|  <span data-ttu-id="3b488-107">事件源</span><span class="sxs-lookup"><span data-stu-id="3b488-107">Event Source</span></span>   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] <span data-ttu-id="3b488-108">EDI</span><span class="sxs-lookup"><span data-stu-id="3b488-108">EDI</span></span> |
+|    <span data-ttu-id="3b488-109">组件</span><span class="sxs-lookup"><span data-stu-id="3b488-109">Component</span></span>    |                                       <span data-ttu-id="3b488-110">EDI 引擎</span><span class="sxs-lookup"><span data-stu-id="3b488-110">EDI Engine</span></span>                                       |
+|  <span data-ttu-id="3b488-111">符号名称</span><span class="sxs-lookup"><span data-stu-id="3b488-111">Symbolic Name</span></span>  |                             <span data-ttu-id="3b488-112">SchemaCode102ENullRootElement</span><span class="sxs-lookup"><span data-stu-id="3b488-112">SchemaCode102ENullRootElement</span></span>                              |
+|  <span data-ttu-id="3b488-113">消息正文</span><span class="sxs-lookup"><span data-stu-id="3b488-113">Message Text</span></span>   |                    <span data-ttu-id="3b488-114">架构不包含根元素 {0}</span><span class="sxs-lookup"><span data-stu-id="3b488-114">The schema does not contain the root element {0}</span></span>                    |
   
-## <a name="explanation"></a><span data-ttu-id="7ba20-115">解释</span><span class="sxs-lookup"><span data-stu-id="7ba20-115">Explanation</span></span>  
- <span data-ttu-id="7ba20-116">此错误/警告/信息事件表明接收管道无法处理传入消息或发送管道无法处理传出消息，因为用来验证消息的架构不包含根元素。</span><span class="sxs-lookup"><span data-stu-id="7ba20-116">This Error/Warning/Information event indicates that the receive pipeline could not process the incoming message or the send pipeline could not process the outgoing message because the schema used to validate the message did not contain the root element.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="3b488-115">解释</span><span class="sxs-lookup"><span data-stu-id="3b488-115">Explanation</span></span>  
+ <span data-ttu-id="3b488-116">此错误/警告/信息事件表明接收管道无法处理传入消息或发送管道无法处理传出消息，因为用来验证消息的架构不包含根元素。</span><span class="sxs-lookup"><span data-stu-id="3b488-116">This Error/Warning/Information event indicates that the receive pipeline could not process the incoming message or the send pipeline could not process the outgoing message because the schema used to validate the message did not contain the root element.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="7ba20-117">用户操作</span><span class="sxs-lookup"><span data-stu-id="7ba20-117">User Action</span></span>  
- <span data-ttu-id="7ba20-118">若要解决此错误，取消部署文档架构，将根元素添加到架构，然后重新部署架构。</span><span class="sxs-lookup"><span data-stu-id="7ba20-118">To resolve this error, undeploy the document schema, add the root element to the schema, and then redeploy the schema.</span></span>
+## <a name="user-action"></a><span data-ttu-id="3b488-117">用户操作</span><span class="sxs-lookup"><span data-stu-id="3b488-117">User Action</span></span>  
+ <span data-ttu-id="3b488-118">若要解决此错误，取消部署文档架构，将根元素添加到架构，然后重新部署架构。</span><span class="sxs-lookup"><span data-stu-id="3b488-118">To resolve this error, undeploy the document schema, add the root element to the schema, and then redeploy the schema.</span></span>

@@ -1,5 +1,5 @@
 ---
-title: 侦听器配置架构 |Microsoft 文档
+title: 侦听器配置架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5e7c4c21582c74fb307d3ecbdaaa5cebd109b750
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6882c9b7699a6b06376ed0e3957b23193ddcb202
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257653"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65331760"
 ---
-# <a name="interceptor-configuration-schema"></a><span data-ttu-id="2bd78-102">侦听器配置架构</span><span class="sxs-lookup"><span data-stu-id="2bd78-102">Interceptor Configuration Schema</span></span>
-<span data-ttu-id="2bd78-103">本部分包含常见的侦听器配置架构。</span><span class="sxs-lookup"><span data-stu-id="2bd78-103">This section contains the common interceptor configuration schema.</span></span>  
+# <a name="interceptor-configuration-schema"></a><span data-ttu-id="28944-102">侦听器配置架构</span><span class="sxs-lookup"><span data-stu-id="28944-102">Interceptor Configuration Schema</span></span>
+<span data-ttu-id="28944-103">本部分包含公用侦听器配置架构。</span><span class="sxs-lookup"><span data-stu-id="28944-103">This section contains the common interceptor configuration schema.</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -200,7 +200,7 @@ ms.locfileid: "22257653"
 </xs:schema>  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="2bd78-104">另请参阅</span><span class="sxs-lookup"><span data-stu-id="2bd78-104">See Also</span></span>  
- <span data-ttu-id="2bd78-105">[拦截器配置文件](../core/interceptor-configuration-file.md) </span><span class="sxs-lookup"><span data-stu-id="2bd78-105">[Interceptor Configuration File](../core/interceptor-configuration-file.md) </span></span>  
- <span data-ttu-id="2bd78-106">[Windows 工作流基础架构](../core/windows-workflow-foundation-schema.md) </span><span class="sxs-lookup"><span data-stu-id="2bd78-106">[Windows Workflow Foundation Schema](../core/windows-workflow-foundation-schema.md) </span></span>  
- [<span data-ttu-id="2bd78-107">Windows Communication Foundation 架构</span><span class="sxs-lookup"><span data-stu-id="2bd78-107">Windows Communication Foundation Schema</span></span>](../core/windows-communication-foundation-schema.md)
+## <a name="see-also"></a><span data-ttu-id="28944-104">请参阅</span><span class="sxs-lookup"><span data-stu-id="28944-104">See Also</span></span>  
+ <span data-ttu-id="28944-105">[侦听器配置文件](../core/interceptor-configuration-file.md) </span><span class="sxs-lookup"><span data-stu-id="28944-105">[Interceptor Configuration File](../core/interceptor-configuration-file.md) </span></span>  
+ <span data-ttu-id="28944-106">[Windows Workflow Foundation 架构](../core/windows-workflow-foundation-schema.md) </span><span class="sxs-lookup"><span data-stu-id="28944-106">[Windows Workflow Foundation Schema](../core/windows-workflow-foundation-schema.md) </span></span>  
+ [<span data-ttu-id="28944-107">Windows Communication Foundation 架构</span><span class="sxs-lookup"><span data-stu-id="28944-107">Windows Communication Foundation Schema</span></span>](../core/windows-communication-foundation-schema.md)

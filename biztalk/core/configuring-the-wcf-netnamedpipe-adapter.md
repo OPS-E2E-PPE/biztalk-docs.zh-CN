@@ -1,5 +1,5 @@
 ---
-title: 配置 WCF NetNamedPipe 适配器 |Microsoft 文档
+title: 配置 Wcf-netnamedpipe 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,22 +15,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f8ae13e06e75e657c0d80ec7d53f10edd28fe8ff
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 19522d3131f59fee8ce4cc5a4396f2df9851263b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22233005"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355112"
 ---
-# <a name="configuring-the-wcf-netnamedpipe-adapter"></a><span data-ttu-id="b345d-102">配置 WCF-NetNamedPipe 适配器</span><span class="sxs-lookup"><span data-stu-id="b345d-102">Configuring the WCF-NetNamedPipe Adapter</span></span>
-<span data-ttu-id="b345d-103">本部分介绍如何配置 WCF-NetNamedPipe 适配器。</span><span class="sxs-lookup"><span data-stu-id="b345d-103">This section describes how to configure a WCF-NetNamedPipe adapter.</span></span>  
+# <a name="configuring-the-wcf-netnamedpipe-adapter"></a><span data-ttu-id="aa043-102">配置 Wcf-netnamedpipe 适配器</span><span class="sxs-lookup"><span data-stu-id="aa043-102">Configuring the WCF-NetNamedPipe Adapter</span></span>
+<span data-ttu-id="aa043-103">本部分介绍如何配置 WCF-NetNamedPipe 适配器。</span><span class="sxs-lookup"><span data-stu-id="aa043-103">This section describes how to configure a WCF-NetNamedPipe adapter.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="b345d-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="b345d-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="aa043-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="aa043-104">In This Section</span></span>  
   
--   [<span data-ttu-id="b345d-105">如何配置 WCF NetNamedPipe 发送端口</span><span class="sxs-lookup"><span data-stu-id="b345d-105">How to Configure a WCF-NetNamedPipe Send Port</span></span>](../core/how-to-configure-a-wcf-netnamedpipe-send-port.md)  
+-   [<span data-ttu-id="aa043-105">如何配置 Wcf-netnamedpipe 发送端口</span><span class="sxs-lookup"><span data-stu-id="aa043-105">How to Configure a WCF-NetNamedPipe Send Port</span></span>](../core/how-to-configure-a-wcf-netnamedpipe-send-port.md)  
   
--   [<span data-ttu-id="b345d-106">如何配置 WCF NetNamedPipe 接收位置</span><span class="sxs-lookup"><span data-stu-id="b345d-106">How to Configure a WCF-NetNamedPipe Receive Location</span></span>](../core/how-to-configure-a-wcf-netnamedpipe-receive-location.md)  
+-   [<span data-ttu-id="aa043-106">如何配置 Wcf-netnamedpipe 接收位置</span><span class="sxs-lookup"><span data-stu-id="aa043-106">How to Configure a WCF-NetNamedPipe Receive Location</span></span>](../core/how-to-configure-a-wcf-netnamedpipe-receive-location.md)  
   
--   [<span data-ttu-id="b345d-107">如何配置 WCF NetNamedPipe 发送处理程序</span><span class="sxs-lookup"><span data-stu-id="b345d-107">How to Configure a WCF-NetNamedPipe Send Handler</span></span>](../core/how-to-configure-a-wcf-netnamedpipe-send-handler.md)  
+-   [<span data-ttu-id="aa043-107">如何配置 Wcf-netnamedpipe 发送处理程序</span><span class="sxs-lookup"><span data-stu-id="aa043-107">How to Configure a WCF-NetNamedPipe Send Handler</span></span>](../core/how-to-configure-a-wcf-netnamedpipe-send-handler.md)  
   
--   [<span data-ttu-id="b345d-108">如何配置 WCF NetNamedPipe 接收处理程序</span><span class="sxs-lookup"><span data-stu-id="b345d-108">How to Configure a WCF-NetNamedPipe Receive Handler</span></span>](../core/how-to-configure-a-wcf-netnamedpipe-receive-handler.md)
+-   [<span data-ttu-id="aa043-108">如何配置 Wcf-netnamedpipe 接收处理程序</span><span class="sxs-lookup"><span data-stu-id="aa043-108">How to Configure a WCF-NetNamedPipe Receive Handler</span></span>](../core/how-to-configure-a-wcf-netnamedpipe-receive-handler.md)

@@ -15,20 +15,20 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 496e83311c4ede6446bad8893fbe37b22cf8420d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 09cfcebd3acd4a8b744bd14095f681f69e0c5e9f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000766"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283270"
 ---
-# <a name="maintaining-btarn-databases"></a><span data-ttu-id="98410-102">维护 BTARN 数据库</span><span class="sxs-lookup"><span data-stu-id="98410-102">Maintaining BTARN Databases</span></span>
-<span data-ttu-id="98410-103">Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]数据库日益庞大，其大小可能会影响系统性能。</span><span class="sxs-lookup"><span data-stu-id="98410-103">Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] databases can grow so large that their size can affect system performance.</span></span> <span data-ttu-id="98410-104">这可能是由于某些特殊情况造成的，在这些情况下，许多不用的条目被留在表中，例如孤立附件或不使用的摘要。</span><span class="sxs-lookup"><span data-stu-id="98410-104">This can result from specific circumstances that leave unused entries in the tables, such as orphan attachments or unused digests.</span></span> <span data-ttu-id="98410-105">也可能是由于未删除表中的旧条目造成的。</span><span class="sxs-lookup"><span data-stu-id="98410-105">It can also occur from not deleting old entries in the tables.</span></span> <span data-ttu-id="98410-106">请按照本节中所述的步骤来维护您的 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 数据库，从而确保系统性能不受影响。</span><span class="sxs-lookup"><span data-stu-id="98410-106">Follow the procedures in this section to maintain your [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] databases so there is no effect on performance.</span></span>  
+# <a name="maintaining-btarn-databases"></a><span data-ttu-id="78426-102">维护 BTARN 数据库</span><span class="sxs-lookup"><span data-stu-id="78426-102">Maintaining BTARN Databases</span></span>
+<span data-ttu-id="78426-103">Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]数据库日益庞大，其大小可能会影响系统性能。</span><span class="sxs-lookup"><span data-stu-id="78426-103">Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] databases can grow so large that their size can affect system performance.</span></span> <span data-ttu-id="78426-104">这可能导致从特定的情况下，未使用的条目不在表中，例如孤立附件或不使用的摘要。</span><span class="sxs-lookup"><span data-stu-id="78426-104">This can result from specific circumstances that leave unused entries in the tables, such as orphan attachments or unused digests.</span></span> <span data-ttu-id="78426-105">它也可能不会删除表中的旧条目。</span><span class="sxs-lookup"><span data-stu-id="78426-105">It can also occur from not deleting old entries in the tables.</span></span> <span data-ttu-id="78426-106">请按照来维护此部分中的过程在[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]数据库以便对性能没有影响。</span><span class="sxs-lookup"><span data-stu-id="78426-106">Follow the procedures in this section to maintain your [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] databases so there is no effect on performance.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="98410-107">本节内容</span><span class="sxs-lookup"><span data-stu-id="98410-107">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="78426-107">本节内容</span><span class="sxs-lookup"><span data-stu-id="78426-107">In This Section</span></span>  
   
--   [<span data-ttu-id="98410-108">维护不可否认性数据库表</span><span class="sxs-lookup"><span data-stu-id="98410-108">Maintaining the Non-Repudiation Database Tables</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/maintaining-the-non-repudiation-database-tables.md)  
+-   [<span data-ttu-id="78426-108">维护不可否认性数据库表</span><span class="sxs-lookup"><span data-stu-id="78426-108">Maintaining the Non-Repudiation Database Tables</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/maintaining-the-non-repudiation-database-tables.md)  
   
--   [<span data-ttu-id="98410-109">删除摘要</span><span class="sxs-lookup"><span data-stu-id="98410-109">Deleting Digests</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/deleting-digests.md)  
+-   [<span data-ttu-id="78426-109">删除摘要</span><span class="sxs-lookup"><span data-stu-id="78426-109">Deleting Digests</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/deleting-digests.md)  
   
--   [<span data-ttu-id="98410-110">删除孤立附件</span><span class="sxs-lookup"><span data-stu-id="98410-110">Deleting Orphan Attachments</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/deleting-orphan-attachments.md)
+-   [<span data-ttu-id="78426-110">删除孤立附件</span><span class="sxs-lookup"><span data-stu-id="78426-110">Deleting Orphan Attachments</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/deleting-orphan-attachments.md)

@@ -1,5 +1,5 @@
 ---
-title: HL7 2.XML 子文件夹和事件 |Microsoft 文档
+title: HL7 2.xml 子文件夹和事件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,18 +17,18 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1daea12a908e2777bdcc5936c156ec14f1313529
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dbc7139c06bbd0b201b7ee3bba70dc2a4328ee8e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22204861"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292975"
 ---
-# <a name="hl7-2xml-subfolders-and-events"></a><span data-ttu-id="43ff6-102">HL7 2.XML 子文件夹和事件</span><span class="sxs-lookup"><span data-stu-id="43ff6-102">HL7 2.XML Subfolders and Events</span></span>
-<span data-ttu-id="43ff6-103">以下各小节列表由每个版本的 HL7 安装程序向导创建的子文件夹 2.X，以及每个子文件夹内的事件。</span><span class="sxs-lookup"><span data-stu-id="43ff6-103">The following subsections list the subfolders created by the setup wizard for each version of HL7 2.X, and the events within each subfolder.</span></span>  
+# <a name="hl7-2xml-subfolders-and-events"></a><span data-ttu-id="54cdb-102">HL7 2.xml 子文件夹和事件</span><span class="sxs-lookup"><span data-stu-id="54cdb-102">HL7 2.XML Subfolders and Events</span></span>
+<span data-ttu-id="54cdb-103">以下各小节列出子文件夹创建的安装向导的每个版本的 HL7 2.X 和每个子文件夹中的事件。</span><span class="sxs-lookup"><span data-stu-id="54cdb-103">The following subsections list the subfolders created by the setup wizard for each version of HL7 2.X, and the events within each subfolder.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="43ff6-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="43ff6-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="54cdb-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="54cdb-104">In This Section</span></span>  
   
--   [<span data-ttu-id="43ff6-105">HL7 2.3.1 XML 文件夹和事件</span><span class="sxs-lookup"><span data-stu-id="43ff6-105">HL7 2.3.1 XML Folders and Events</span></span>](../../adapters-and-accelerators/accelerator-hl7/hl7-2-3-1-xml-folders-and-events.md)  
+-   [<span data-ttu-id="54cdb-105">HL7 2.3.1 XML 文件夹和事件</span><span class="sxs-lookup"><span data-stu-id="54cdb-105">HL7 2.3.1 XML Folders and Events</span></span>](../../adapters-and-accelerators/accelerator-hl7/hl7-2-3-1-xml-folders-and-events.md)  
   
--   [<span data-ttu-id="43ff6-106">HL7 2.4 XML 文件夹和事件</span><span class="sxs-lookup"><span data-stu-id="43ff6-106">HL7 2.4 XML Folders and Events</span></span>](../../adapters-and-accelerators/accelerator-hl7/hl7-2-4-xml-folders-and-events.md)
+-   [<span data-ttu-id="54cdb-106">HL7 2.4 XML 文件夹和事件</span><span class="sxs-lookup"><span data-stu-id="54cdb-106">HL7 2.4 XML Folders and Events</span></span>](../../adapters-and-accelerators/accelerator-hl7/hl7-2-4-xml-folders-and-events.md)

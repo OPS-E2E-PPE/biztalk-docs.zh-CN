@@ -1,5 +1,5 @@
 ---
-title: ExportParties 命令 |Microsoft 文档
+title: ExportParties 命令 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,32 +12,32 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6ca525872ccc1cd941673189c4ac176fc4631f22
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 63245cf72306af5bb4c28552a037ce89d8e6bfe8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22245813"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345915"
 ---
-# <a name="exportparties-command"></a><span data-ttu-id="23d85-102">ExportParties 命令</span><span class="sxs-lookup"><span data-stu-id="23d85-102">ExportParties Command</span></span>
-<span data-ttu-id="23d85-103">导出到 XML 绑定文件的所有方和协议。</span><span class="sxs-lookup"><span data-stu-id="23d85-103">Exports all the parties and agreements to an XML bindings file.</span></span>
+# <a name="exportparties-command"></a><span data-ttu-id="57375-102">ExportParties 命令</span><span class="sxs-lookup"><span data-stu-id="57375-102">ExportParties Command</span></span>
+<span data-ttu-id="57375-103">将所有参与方和协议导出到 XML 绑定文件。</span><span class="sxs-lookup"><span data-stu-id="57375-103">Exports all the parties and agreements to an XML bindings file.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="23d85-104">此命令是新开头 **[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]** ，和任何更高版本。</span><span class="sxs-lookup"><span data-stu-id="23d85-104">This command is new starting with **[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**, and any newer versions.</span></span>
+> <span data-ttu-id="57375-104">此命令将新开头**[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**，和任何更高版本。</span><span class="sxs-lookup"><span data-stu-id="57375-104">This command is new starting with **[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]**, and any newer versions.</span></span>
 
-## <a name="usage"></a><span data-ttu-id="23d85-105">用法</span><span class="sxs-lookup"><span data-stu-id="23d85-105">Usage</span></span>
-  <span data-ttu-id="23d85-106">**BTSTask ExportParties-目标**:*值*[**-服务器**:*值*] [**-数据库**:*值*]</span><span class="sxs-lookup"><span data-stu-id="23d85-106">**BTSTask ExportParties -Destination**:*value* [**-Server**:*value*] [**-Database**:*value*]</span></span>
+## <a name="usage"></a><span data-ttu-id="57375-105">用法</span><span class="sxs-lookup"><span data-stu-id="57375-105">Usage</span></span>
+  <span data-ttu-id="57375-106">**BTSTask ExportParties-目标**:*值*[**-Server**:*值*] [**-数据库**:*值*]</span><span class="sxs-lookup"><span data-stu-id="57375-106">**BTSTask ExportParties -Destination**:*value* [**-Server**:*value*] [**-Database**:*value*]</span></span>
   
-## <a name="parameters"></a><span data-ttu-id="23d85-107">Parameters</span><span class="sxs-lookup"><span data-stu-id="23d85-107">Parameters</span></span>
+## <a name="parameters"></a><span data-ttu-id="57375-107">Parameters</span><span class="sxs-lookup"><span data-stu-id="57375-107">Parameters</span></span>
 
-|<span data-ttu-id="23d85-108">参数</span><span class="sxs-lookup"><span data-stu-id="23d85-108">Parameter</span></span>|<span data-ttu-id="23d85-109">必需</span><span class="sxs-lookup"><span data-stu-id="23d85-109">Required</span></span>|<span data-ttu-id="23d85-110">值</span><span class="sxs-lookup"><span data-stu-id="23d85-110">Value</span></span>|  
+|<span data-ttu-id="57375-108">参数</span><span class="sxs-lookup"><span data-stu-id="57375-108">Parameter</span></span>|<span data-ttu-id="57375-109">Required</span><span class="sxs-lookup"><span data-stu-id="57375-109">Required</span></span>|<span data-ttu-id="57375-110">ReplTest1</span><span class="sxs-lookup"><span data-stu-id="57375-110">Value</span></span>|  
 |---|---|---|  
-| <span data-ttu-id="23d85-111">**-目标**</span><span class="sxs-lookup"><span data-stu-id="23d85-111">**-Destination**</span></span> | <span data-ttu-id="23d85-112">必需</span><span class="sxs-lookup"><span data-stu-id="23d85-112">Required</span></span> | <span data-ttu-id="23d85-113">要写入的 XML 绑定文件的路径和文件名称。</span><span class="sxs-lookup"><span data-stu-id="23d85-113">Path and file name of the XML binding file to write.</span></span> |
-| <span data-ttu-id="23d85-114">**服务器**</span><span class="sxs-lookup"><span data-stu-id="23d85-114">**-Server**</span></span> | <span data-ttu-id="23d85-115">可选</span><span class="sxs-lookup"><span data-stu-id="23d85-115">Optional</span></span> | <span data-ttu-id="23d85-116">承载 BizTalk 配置数据库的 SQL server 的名称。</span><span class="sxs-lookup"><span data-stu-id="23d85-116">The name of SQL server hosting the BizTalk configuration database.</span></span> |
-| <span data-ttu-id="23d85-117">**数据库**</span><span class="sxs-lookup"><span data-stu-id="23d85-117">**-Database**</span></span> | <span data-ttu-id="23d85-118">可选</span><span class="sxs-lookup"><span data-stu-id="23d85-118">Optional</span></span> | <span data-ttu-id="23d85-119">BizTalk 配置数据库的名称。</span><span class="sxs-lookup"><span data-stu-id="23d85-119">The name of the BizTalk configuration database.</span></span>|
+| <span data-ttu-id="57375-111">**-Destination**</span><span class="sxs-lookup"><span data-stu-id="57375-111">**-Destination**</span></span> | <span data-ttu-id="57375-112">Required</span><span class="sxs-lookup"><span data-stu-id="57375-112">Required</span></span> | <span data-ttu-id="57375-113">要写入的 XML 绑定文件的路径和文件名称。</span><span class="sxs-lookup"><span data-stu-id="57375-113">Path and file name of the XML binding file to write.</span></span> |
+| <span data-ttu-id="57375-114">**-Server**</span><span class="sxs-lookup"><span data-stu-id="57375-114">**-Server**</span></span> | <span data-ttu-id="57375-115">可选</span><span class="sxs-lookup"><span data-stu-id="57375-115">Optional</span></span> | <span data-ttu-id="57375-116">承载 BizTalk 配置数据库的 SQL server 的名称。</span><span class="sxs-lookup"><span data-stu-id="57375-116">The name of SQL server hosting the BizTalk configuration database.</span></span> |
+| <span data-ttu-id="57375-117">**-Database**</span><span class="sxs-lookup"><span data-stu-id="57375-117">**-Database**</span></span> | <span data-ttu-id="57375-118">可选</span><span class="sxs-lookup"><span data-stu-id="57375-118">Optional</span></span> | <span data-ttu-id="57375-119">BizTalk 配置数据库的名称。</span><span class="sxs-lookup"><span data-stu-id="57375-119">The name of the BizTalk configuration database.</span></span>|
 
-## <a name="sample"></a><span data-ttu-id="23d85-120">示例</span><span class="sxs-lookup"><span data-stu-id="23d85-120">Sample</span></span>
+## <a name="sample"></a><span data-ttu-id="57375-120">示例</span><span class="sxs-lookup"><span data-stu-id="57375-120">Sample</span></span>
   `ExportParties  -Destination:"C:\Temp\MyParties.Xml"` 
 
-## <a name="remarks"></a><span data-ttu-id="23d85-121">注释</span><span class="sxs-lookup"><span data-stu-id="23d85-121">Remarks</span></span>
-  <span data-ttu-id="23d85-122">导出仅方、 协议和 EDI 回退设置。</span><span class="sxs-lookup"><span data-stu-id="23d85-122">Only parties, agreements, and EDI fallback settings are exported.</span></span> <span data-ttu-id="23d85-123">不导出任何应用程序项目。</span><span class="sxs-lookup"><span data-stu-id="23d85-123">No application artifacts are exported.</span></span>
+## <a name="remarks"></a><span data-ttu-id="57375-121">备注</span><span class="sxs-lookup"><span data-stu-id="57375-121">Remarks</span></span>
+  <span data-ttu-id="57375-122">导出的参与方、 协议和 EDI 回退设置。</span><span class="sxs-lookup"><span data-stu-id="57375-122">Only parties, agreements, and EDI fallback settings are exported.</span></span> <span data-ttu-id="57375-123">导出无应用程序项目。</span><span class="sxs-lookup"><span data-stu-id="57375-123">No application artifacts are exported.</span></span>

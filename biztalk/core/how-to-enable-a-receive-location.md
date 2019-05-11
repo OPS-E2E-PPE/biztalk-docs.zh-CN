@@ -16,28 +16,28 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: db58c80e3148e71eaf69c2712cda094772bfe5a7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e9e3936c4c849efc0e6bbd44f3cb1161487f820d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969511"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338000"
 ---
-# <a name="how-to-enable-a-receive-location"></a><span data-ttu-id="a9d6e-102">如何启用接收位置</span><span class="sxs-lookup"><span data-stu-id="a9d6e-102">How to Enable a Receive Location</span></span>
-<span data-ttu-id="a9d6e-103">本主题介绍如何使用 BizTalk Server 管理控制台来启用接收位置。</span><span class="sxs-lookup"><span data-stu-id="a9d6e-103">This topic describes how to use the BizTalk Server Administration console to enable a receive location.</span></span> <span data-ttu-id="a9d6e-104">接收位置必须在启用后才能接收消息。</span><span class="sxs-lookup"><span data-stu-id="a9d6e-104">A receive location must be enabled before it can receive messages.</span></span>  
+# <a name="how-to-enable-a-receive-location"></a><span data-ttu-id="fc398-102">如何启用接收位置</span><span class="sxs-lookup"><span data-stu-id="fc398-102">How to Enable a Receive Location</span></span>
+<span data-ttu-id="fc398-103">本主题介绍如何使用 BizTalk Server 管理控制台来启用接收位置。</span><span class="sxs-lookup"><span data-stu-id="fc398-103">This topic describes how to use the BizTalk Server Administration console to enable a receive location.</span></span> <span data-ttu-id="fc398-104">它可以接收消息之前，必须启用接收位置。</span><span class="sxs-lookup"><span data-stu-id="fc398-104">A receive location must be enabled before it can receive messages.</span></span>  
   
- <span data-ttu-id="a9d6e-105">有关创建接收位置的说明，请参阅[如何创建接收位置](../core/how-to-create-a-receive-location.md)。</span><span class="sxs-lookup"><span data-stu-id="a9d6e-105">For instructions on creating a receive location, see [How to Create a Receive Location](../core/how-to-create-a-receive-location.md).</span></span>  
+ <span data-ttu-id="fc398-105">有关创建接收位置的说明，请参阅[如何创建接收位置](../core/how-to-create-a-receive-location.md)。</span><span class="sxs-lookup"><span data-stu-id="fc398-105">For instructions on creating a receive location, see [How to Create a Receive Location](../core/how-to-create-a-receive-location.md).</span></span>  
   
-## <a name="prerequisites"></a><span data-ttu-id="a9d6e-106">必要條件</span><span class="sxs-lookup"><span data-stu-id="a9d6e-106">Prerequisites</span></span>  
- <span data-ttu-id="a9d6e-107">若要执行本主题中描述的过程，必须以 BizTalk Server Operators 组或 BizTalk Server Administrators 组成员的帐户身份登录。</span><span class="sxs-lookup"><span data-stu-id="a9d6e-107">To perform the procedure in this topic, you must be logged on with an account that is a member of the BizTalk Server Operators group or the BizTalk Server Administrators group.</span></span> <span data-ttu-id="a9d6e-108">有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。</span><span class="sxs-lookup"><span data-stu-id="a9d6e-108">For more detailed information on permissions, see [Permissions Required for Deploying and Managing a BizTalk Application](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md).</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="fc398-106">先决条件</span><span class="sxs-lookup"><span data-stu-id="fc398-106">Prerequisites</span></span>  
+ <span data-ttu-id="fc398-107">若要执行本主题中的过程，必须是 BizTalk Server Operators 组或 BizTalk Server Administrators 组的成员的帐户登录。</span><span class="sxs-lookup"><span data-stu-id="fc398-107">To perform the procedure in this topic, you must be logged on with an account that is a member of the BizTalk Server Operators group or the BizTalk Server Administrators group.</span></span> <span data-ttu-id="fc398-108">有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。</span><span class="sxs-lookup"><span data-stu-id="fc398-108">For more detailed information on permissions, see [Permissions Required for Deploying and Managing a BizTalk Application](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md).</span></span>  
   
-### <a name="to-enable-a-receive-location"></a><span data-ttu-id="a9d6e-109">若要启用接收位置</span><span class="sxs-lookup"><span data-stu-id="a9d6e-109">To enable a receive location</span></span>  
+### <a name="to-enable-a-receive-location"></a><span data-ttu-id="fc398-109">若要启用接收位置</span><span class="sxs-lookup"><span data-stu-id="fc398-109">To enable a receive location</span></span>  
   
-1. <span data-ttu-id="a9d6e-110">单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。</span><span class="sxs-lookup"><span data-stu-id="a9d6e-110">Click **Start**, click **All Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click **BizTalk Server Administration**.</span></span>  
+1. <span data-ttu-id="fc398-110">单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。</span><span class="sxs-lookup"><span data-stu-id="fc398-110">Click **Start**, click **All Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click **BizTalk Server Administration**.</span></span>  
   
-2. <span data-ttu-id="a9d6e-111">在控制台树中，展开要为其启用接收位置的 BizTalk 组和 BizTalk 应用程序。</span><span class="sxs-lookup"><span data-stu-id="a9d6e-111">In the console tree, expand the BizTalk group and the BizTalk application for which you want to enable a receive location.</span></span>  
+2. <span data-ttu-id="fc398-111">在控制台树中，展开 BizTalk 组和 BizTalk 应用程序想要启用接收位置。</span><span class="sxs-lookup"><span data-stu-id="fc398-111">In the console tree, expand the BizTalk group and the BizTalk application for which you want to enable a receive location.</span></span>  
   
-3. <span data-ttu-id="a9d6e-112">单击**接收位置**，右键单击接收位置，然后单击**启用**。</span><span class="sxs-lookup"><span data-stu-id="a9d6e-112">Click **Receive Locations**, right-click the receive location, and then click **Enable**.</span></span>  
+3. <span data-ttu-id="fc398-112">单击**接收位置**，右键单击接收位置，然后单击**启用**。</span><span class="sxs-lookup"><span data-stu-id="fc398-112">Click **Receive Locations**, right-click the receive location, and then click **Enable**.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="a9d6e-113">请参阅</span><span class="sxs-lookup"><span data-stu-id="a9d6e-113">See Also</span></span>  
- [<span data-ttu-id="a9d6e-114">管理接收位置</span><span class="sxs-lookup"><span data-stu-id="a9d6e-114">Managing Receive Locations</span></span>](../core/managing-receive-locations.md)
+## <a name="see-also"></a><span data-ttu-id="fc398-113">请参阅</span><span class="sxs-lookup"><span data-stu-id="fc398-113">See Also</span></span>  
+ [<span data-ttu-id="fc398-114">管理接收位置</span><span class="sxs-lookup"><span data-stu-id="fc398-114">Managing Receive Locations</span></span>](../core/managing-receive-locations.md)

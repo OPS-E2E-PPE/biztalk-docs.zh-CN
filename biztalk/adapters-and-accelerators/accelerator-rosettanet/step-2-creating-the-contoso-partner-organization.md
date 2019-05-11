@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 创建 Contoso 合作伙伴组织 |Microsoft Docs
+title: 第 2 步：创建 Contoso 合作伙伴组织 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,49 +14,49 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97e811493c1347bc016671469da8a0dc18483e85
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7d540a24be7ae5421956a3ad80536490f5a9fef6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969774"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281283"
 ---
-# <a name="step-2-creating-the-contoso-partner-organization"></a><span data-ttu-id="c103e-102">步骤 2： 创建 Contoso 合作伙伴组织</span><span class="sxs-lookup"><span data-stu-id="c103e-102">Step 2: Creating the Contoso Partner Organization</span></span>
-<span data-ttu-id="c103e-103">在此步骤中，使用 Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]管理控制台创建新的贸易合作伙伴。</span><span class="sxs-lookup"><span data-stu-id="c103e-103">In this step, you use the Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Management Console to create a new trading partner.</span></span> <span data-ttu-id="c103e-104">本教程中的贸易合作伙伴为 Contoso 组织。</span><span class="sxs-lookup"><span data-stu-id="c103e-104">The trading partner for this tutorial is the Contoso organization.</span></span>  
+# <a name="step-2-creating-the-contoso-partner-organization"></a><span data-ttu-id="6c7b5-102">第 2 步：创建 Contoso 合作伙伴组织</span><span class="sxs-lookup"><span data-stu-id="6c7b5-102">Step 2: Creating the Contoso Partner Organization</span></span>
+<span data-ttu-id="6c7b5-103">在此步骤中，使用 Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]管理控制台创建新的贸易合作伙伴。</span><span class="sxs-lookup"><span data-stu-id="6c7b5-103">In this step, you use the Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] Management Console to create a new trading partner.</span></span> <span data-ttu-id="6c7b5-104">本教程中的贸易合作伙伴为 Contoso 组织。</span><span class="sxs-lookup"><span data-stu-id="6c7b5-104">The trading partner for this tutorial is the Contoso organization.</span></span>  
 
-### <a name="to-start-the-btarn-management-console"></a><span data-ttu-id="c103e-105">启动 BTARN 管理控制台</span><span class="sxs-lookup"><span data-stu-id="c103e-105">To start the BTARN Management Console</span></span>  
+### <a name="to-start-the-btarn-management-console"></a><span data-ttu-id="6c7b5-105">若要启动 BTARN 管理控制台</span><span class="sxs-lookup"><span data-stu-id="6c7b5-105">To start the BTARN Management Console</span></span>  
 
-- <span data-ttu-id="c103e-106">单击**启动**，依次指向**所有程序**，指向**Microsoft BizTalk\<版本\>Accelerator for RosettaNet**，然后单击**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台。</span><span class="sxs-lookup"><span data-stu-id="c103e-106">Click **Start**, point to **All Programs**, point to **Microsoft BizTalk \<version\> Accelerator for RosettaNet**, and then click **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** Management Console.</span></span>  
+- <span data-ttu-id="6c7b5-106">单击**启动**，依次指向**所有程序**，指向**Microsoft BizTalk\<版本\>Accelerator for RosettaNet**，然后单击**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台。</span><span class="sxs-lookup"><span data-stu-id="6c7b5-106">Click **Start**, point to **All Programs**, point to **Microsoft BizTalk \<version\> Accelerator for RosettaNet**, and then click **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** Management Console.</span></span>  
 
-### <a name="to-create-fabrikam-as-a-trading-partner"></a><span data-ttu-id="c103e-107">创建 Fabrikam 作为贸易合作伙伴</span><span class="sxs-lookup"><span data-stu-id="c103e-107">To create Fabrikam as a trading partner</span></span>  
+### <a name="to-create-fabrikam-as-a-trading-partner"></a><span data-ttu-id="6c7b5-107">创建 Fabrikam 作为贸易合作伙伴</span><span class="sxs-lookup"><span data-stu-id="6c7b5-107">To create Fabrikam as a trading partner</span></span>  
 
-1. <span data-ttu-id="c103e-108">在中**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台中，展开[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]，右键单击**合作伙伴**，指向**新建**，然后单击**合作伙伴**.</span><span class="sxs-lookup"><span data-stu-id="c103e-108">In the **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** Management Console, expand [!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)], right-click **Partners**, point to **New**, and then click **Partner**.</span></span>  
+1. <span data-ttu-id="6c7b5-108">在中**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台中，展开[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]，右键单击**合作伙伴**，指向**新建**，然后单击**合作伙伴**.</span><span class="sxs-lookup"><span data-stu-id="6c7b5-108">In the **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** Management Console, expand [!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)], right-click **Partners**, point to **New**, and then click **Partner**.</span></span>  
 
-2. <span data-ttu-id="c103e-109">在新合作伙伴属性对话框中，在**常规**选项卡上，执行以下操作<strong>:</strong></span><span class="sxs-lookup"><span data-stu-id="c103e-109">In the New Partner Properties dialog box, on the **General** tab, do the following<strong>:</strong></span></span>  
+2. <span data-ttu-id="6c7b5-109">在新合作伙伴属性对话框中，在**常规**选项卡上，执行以下操作<strong>:</strong></span><span class="sxs-lookup"><span data-stu-id="6c7b5-109">In the New Partner Properties dialog box, on the **General** tab, do the following<strong>:</strong></span></span>  
 
 
-   |          <span data-ttu-id="c103e-110">使用此选项</span><span class="sxs-lookup"><span data-stu-id="c103e-110">Use this</span></span>          |                             <span data-ttu-id="c103e-111">执行的操作</span><span class="sxs-lookup"><span data-stu-id="c103e-111">To do this</span></span>                              |
+   |          <span data-ttu-id="6c7b5-110">使用此选项</span><span class="sxs-lookup"><span data-stu-id="6c7b5-110">Use this</span></span>          |                             <span data-ttu-id="6c7b5-111">执行的操作</span><span class="sxs-lookup"><span data-stu-id="6c7b5-111">To do this</span></span>                              |
    |----------------------------|---------------------------------------------------------------------|
-   |          <span data-ttu-id="c103e-112">**名称**</span><span class="sxs-lookup"><span data-stu-id="c103e-112">**Name**</span></span>          |                          <span data-ttu-id="c103e-113">类型**CONTOSO**。</span><span class="sxs-lookup"><span data-stu-id="c103e-113">Type **CONTOSO**.</span></span>                          |
-   |          <span data-ttu-id="c103e-114">**GBI**</span><span class="sxs-lookup"><span data-stu-id="c103e-114">**GBI**</span></span>           |                         <span data-ttu-id="c103e-115">类型**123456789**。</span><span class="sxs-lookup"><span data-stu-id="c103e-115">Type **123456789**.</span></span>                         |
-   | <span data-ttu-id="c103e-116">**合作伙伴分类**</span><span class="sxs-lookup"><span data-stu-id="c103e-116">**Partner Classification**</span></span> |          <span data-ttu-id="c103e-117">选择**制造商**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="c103e-117">Select **Manufacturer** from the drop-down list.</span></span>           |
-   | <span data-ttu-id="c103e-118">**签名证书**</span><span class="sxs-lookup"><span data-stu-id="c103e-118">**Signature Certificate**</span></span>  | <span data-ttu-id="c103e-119">选择**Contoso 签名 [指纹]** 从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="c103e-119">Select **Contoso Signature [Thumbprint]** from the drop-down list.</span></span>  |
-   | <span data-ttu-id="c103e-120">**加密证书**</span><span class="sxs-lookup"><span data-stu-id="c103e-120">**Encryption Certificate**</span></span> | <span data-ttu-id="c103e-121">选择**Contoso 加密 [指纹]** 从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="c103e-121">Select **Contoso Encryption [Thumbprint]** from the drop-down list.</span></span> |
+   |          <span data-ttu-id="6c7b5-112">**名称**</span><span class="sxs-lookup"><span data-stu-id="6c7b5-112">**Name**</span></span>          |                          <span data-ttu-id="6c7b5-113">类型**CONTOSO**。</span><span class="sxs-lookup"><span data-stu-id="6c7b5-113">Type **CONTOSO**.</span></span>                          |
+   |          <span data-ttu-id="6c7b5-114">**GBI**</span><span class="sxs-lookup"><span data-stu-id="6c7b5-114">**GBI**</span></span>           |                         <span data-ttu-id="6c7b5-115">类型**123456789**。</span><span class="sxs-lookup"><span data-stu-id="6c7b5-115">Type **123456789**.</span></span>                         |
+   | <span data-ttu-id="6c7b5-116">**合作伙伴分类**</span><span class="sxs-lookup"><span data-stu-id="6c7b5-116">**Partner Classification**</span></span> |          <span data-ttu-id="6c7b5-117">选择**制造商**从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="6c7b5-117">Select **Manufacturer** from the drop-down list.</span></span>           |
+   | <span data-ttu-id="6c7b5-118">**签名证书**</span><span class="sxs-lookup"><span data-stu-id="6c7b5-118">**Signature Certificate**</span></span>  | <span data-ttu-id="6c7b5-119">选择**Contoso 签名 [指纹]** 从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="6c7b5-119">Select **Contoso Signature [Thumbprint]** from the drop-down list.</span></span>  |
+   | <span data-ttu-id="6c7b5-120">**加密证书**</span><span class="sxs-lookup"><span data-stu-id="6c7b5-120">**Encryption Certificate**</span></span> | <span data-ttu-id="6c7b5-121">选择**Contoso 加密 [指纹]** 从下拉列表。</span><span class="sxs-lookup"><span data-stu-id="6c7b5-121">Select **Contoso Encryption [Thumbprint]** from the drop-down list.</span></span> |
 
 
-3. <span data-ttu-id="c103e-122">单击**联系人属性**选项卡，然后再执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="c103e-122">Click the **Contact Properties** tab, and then do the following:</span></span>  
+3. <span data-ttu-id="6c7b5-122">单击**联系人属性**选项卡，然后再执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="6c7b5-122">Click the **Contact Properties** tab, and then do the following:</span></span>  
 
 
-   |       <span data-ttu-id="c103e-123">使用此选项</span><span class="sxs-lookup"><span data-stu-id="c103e-123">Use this</span></span>        |               <span data-ttu-id="c103e-124">执行的操作</span><span class="sxs-lookup"><span data-stu-id="c103e-124">To do this</span></span>                |
+   |       <span data-ttu-id="6c7b5-123">使用此选项</span><span class="sxs-lookup"><span data-stu-id="6c7b5-123">Use this</span></span>        |               <span data-ttu-id="6c7b5-124">执行的操作</span><span class="sxs-lookup"><span data-stu-id="6c7b5-124">To do this</span></span>                |
    |-----------------------|-----------------------------------------|
-   |   <span data-ttu-id="c103e-125">**联系人姓名**</span><span class="sxs-lookup"><span data-stu-id="c103e-125">**Contact Name**</span></span>    |           <span data-ttu-id="c103e-126">类型**John Doe**。</span><span class="sxs-lookup"><span data-stu-id="c103e-126">Type **John Doe**.</span></span>            |
-   |  <span data-ttu-id="c103e-127">**E-mail Address**</span><span class="sxs-lookup"><span data-stu-id="c103e-127">**E-mail Address**</span></span>   | <span data-ttu-id="c103e-128">类型<strong>jdoe@contoso.com</strong>。</span><span class="sxs-lookup"><span data-stu-id="c103e-128">Type <strong>jdoe@contoso.com</strong>.</span></span> |
-   | <span data-ttu-id="c103e-129">**电话号码**</span><span class="sxs-lookup"><span data-stu-id="c103e-129">**Telephone Number**</span></span>  |         <span data-ttu-id="c103e-130">类型**555-555-5555**。</span><span class="sxs-lookup"><span data-stu-id="c103e-130">Type **555-555-5555**.</span></span>          |
-   |    <span data-ttu-id="c103e-131">**传真号码**</span><span class="sxs-lookup"><span data-stu-id="c103e-131">**Fax Number**</span></span>     |         <span data-ttu-id="c103e-132">类型**555-555-5555**。</span><span class="sxs-lookup"><span data-stu-id="c103e-132">Type **555-555-5555**.</span></span>          |
-   | <span data-ttu-id="c103e-133">**供应链代码**</span><span class="sxs-lookup"><span data-stu-id="c103e-133">**Supply chain code**</span></span> |     <span data-ttu-id="c103e-134">类型**电子元件**。</span><span class="sxs-lookup"><span data-stu-id="c103e-134">Type **Electronic Components**.</span></span>     |
+   |   <span data-ttu-id="6c7b5-125">**联系人姓名**</span><span class="sxs-lookup"><span data-stu-id="6c7b5-125">**Contact Name**</span></span>    |           <span data-ttu-id="6c7b5-126">类型**John Doe**。</span><span class="sxs-lookup"><span data-stu-id="6c7b5-126">Type **John Doe**.</span></span>            |
+   |  <span data-ttu-id="6c7b5-127">**E-mail Address**</span><span class="sxs-lookup"><span data-stu-id="6c7b5-127">**E-mail Address**</span></span>   | <span data-ttu-id="6c7b5-128">类型<strong>jdoe@contoso.com</strong>。</span><span class="sxs-lookup"><span data-stu-id="6c7b5-128">Type <strong>jdoe@contoso.com</strong>.</span></span> |
+   | <span data-ttu-id="6c7b5-129">**电话号码**</span><span class="sxs-lookup"><span data-stu-id="6c7b5-129">**Telephone Number**</span></span>  |         <span data-ttu-id="6c7b5-130">类型**555-555-5555**。</span><span class="sxs-lookup"><span data-stu-id="6c7b5-130">Type **555-555-5555**.</span></span>          |
+   |    <span data-ttu-id="6c7b5-131">**传真号码**</span><span class="sxs-lookup"><span data-stu-id="6c7b5-131">**Fax Number**</span></span>     |         <span data-ttu-id="6c7b5-132">类型**555-555-5555**。</span><span class="sxs-lookup"><span data-stu-id="6c7b5-132">Type **555-555-5555**.</span></span>          |
+   | <span data-ttu-id="6c7b5-133">**供应链代码**</span><span class="sxs-lookup"><span data-stu-id="6c7b5-133">**Supply chain code**</span></span> |     <span data-ttu-id="6c7b5-134">类型**电子元件**。</span><span class="sxs-lookup"><span data-stu-id="6c7b5-134">Type **Electronic Components**.</span></span>     |
 
 
-4. <span data-ttu-id="c103e-135">单击“确定” 。</span><span class="sxs-lookup"><span data-stu-id="c103e-135">Click **OK**.</span></span>  
+4. <span data-ttu-id="6c7b5-135">单击“确定” 。</span><span class="sxs-lookup"><span data-stu-id="6c7b5-135">Click **OK**.</span></span>  
 
-## <a name="see-also"></a><span data-ttu-id="c103e-136">请参阅</span><span class="sxs-lookup"><span data-stu-id="c103e-136">See Also</span></span>  
- [<span data-ttu-id="c103e-137">步骤 3：创建 Fabrikam 0C2 贸易合作伙伴协议</span><span class="sxs-lookup"><span data-stu-id="c103e-137">Step 3: Creating the Fabrikam 0C2 Trading Partner Agreement</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-3-creating-the-fabrikam-0c2-trading-partner-agreement.md)
+## <a name="see-also"></a><span data-ttu-id="6c7b5-136">请参阅</span><span class="sxs-lookup"><span data-stu-id="6c7b5-136">See Also</span></span>  
+ [<span data-ttu-id="6c7b5-137">步骤 3：创建 Fabrikam 0C2 贸易合作伙伴协议</span><span class="sxs-lookup"><span data-stu-id="6c7b5-137">Step 3: Creating the Fabrikam 0C2 Trading Partner Agreement</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/step-3-creating-the-fabrikam-0c2-trading-partner-agreement.md)
