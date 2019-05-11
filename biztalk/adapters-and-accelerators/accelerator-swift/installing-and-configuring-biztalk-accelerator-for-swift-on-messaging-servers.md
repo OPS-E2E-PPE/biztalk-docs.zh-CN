@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1034b7b3f0d4761446e1cbc1b9a3cc296cb01efb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 459a0fd7524b373104406a013c407a82d447966c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968982"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377423"
 ---
 # <a name="installing-and-configuring-biztalk-accelerator-for-swift-on-messaging-servers"></a>安装和配置 BizTalk Accelerator for SWIFT 消息服务器上
 本部分介绍如何安装和配置[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]消息传送的服务器上。 这些服务器主要用于与 SWIFT 网络进行通信。  

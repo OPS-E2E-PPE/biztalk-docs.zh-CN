@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7ca0d7463f4604e8a159c12fab690e494a13fb60
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ff1372dc2eea57843d6d671e617aeeb2b8e90dea
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971006"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359340"
 ---
-# <a name="an-invalid-quoted-http-header-encountered"></a>遇到无效的引用 HTTP 标头
+# <a name="an-invalid-quoted-http-header-encountered"></a>无效的引用 HTTP 标头时遇到
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                              |
@@ -30,10 +30,10 @@ ms.locfileid: "36971006"
 |  事件源   |            [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI            |
 |    组件    |                                                  AS2 引擎                                                  |
 |  符号名称  |                                                      -                                                       |
-|  消息正文   | 遇到无效的引用 HTTP 标头。  详细信息如下： 标头名称:"{0}"标头值:"{1}" |
+|  消息正文   | 无效的引用时遇到的 HTTP 标头。  详细信息如下所示：标头名称:"{0}"标头值:"{1}" |
   
 ## <a name="explanation"></a>解释  
- 此错误/警告/信息事件表明 AS2 接收管道或 AS2 发送管道无法处理 AS2 消息，因为消息中 AS2-From 或 AS2-To HTTP 标头的名称未用引号正确括起来。 用引号将标头名称括起来以便在名称中包含空格、反斜杠或双引号。  
+ 此错误/警告/信息事件表明 AS2 接收管道或 AS2 发送管道无法处理 AS2 消息，因为 AS2 的名称-从或 AS2-To HTTP 标头消息中的不带引号正确。 标头名称是以适应一个空格、 反斜杠或在名称中的双引号引起来。  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请按照 RFC 4130“MIME-Based Secure Peer-to-Peer Business Data Interchange Using HTTP, Applicability Statement 2 (AS2)（针对使用 HTTP 进行基于 MIME 的安全对等业务数据交换的 Applicability Statement 2 (AS2)）”中第 6.2 节“AS2 系统标识符”中所述的规则用引号将 AS2 消息中的标头名称括起来。
+ 若要解决此错误，引号中的规则的 AS2 消息的标头名称中所述在 RFC 4130 第 6.2，"AS2 系统标识符"节"基于 MIME 的安全对等业务数据交换使用 HTTP，Applicability Statement 2 (AS2)"。

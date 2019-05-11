@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 96dd1c4cd8909564ff39c78b5b1a9e4fc248d93f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 97532000f99f10ceedde76ec0c072a053739d1b4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972854"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65290174"
 ---
 # <a name="modifying-2xml-schemas-to-work-with-biztalk-editor"></a>修改 2.xml 架构以使用 BizTalk 编辑器
 HL7 2.xml 架构需要进行修改以使用正确 Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)])。 下面介绍如何修改 HL7 V2。若要使你能够使用它们与 BizTalk 编辑器中的 XML 架构。  

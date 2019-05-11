@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fd107a9b596919c92e4cb8ac5a0538e8f4ded3ab
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1d0fc7b4d14d061ae8d2bbe29b68ab2d1fccd540
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007966"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401404"
 ---
 # <a name="administrative-maintenance"></a>管理维护
 本部分提供有关如何解决管理问题的信息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]系统。 这些问题可能会发现通过在中执行的日常维护检查[例程维护清单](../technical-guides/routine-maintenance-checklists.md)部分。  

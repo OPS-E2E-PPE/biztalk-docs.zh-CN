@@ -1,5 +1,5 @@
 ---
-title: 测试结果： 内存关键绩效指标 |Microsoft 文档
+title: 测试结果：内存关键绩效指标 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f4edf88023ee9e30e7fd0c808346b6231112f8ed
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 38b62f71a013a4e2fa36c20f1d2197db7d2f3a3f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22301869"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65298467"
 ---
-# <a name="test-results-memory-key-performance-indicators"></a>测试结果： 内存关键绩效指标
+# <a name="test-results-memory-key-performance-indicators"></a>测试结果：内存关键性能指标
 本主题总结了内存关键绩效指标 (KPI) 的测试方案期间观察到。 这些测试计算由可用内存**\Memory\Available Mbytes**性能监视器计数器。  
   
 ## <a name="summary-of-memory-key-performance-indicators"></a>内存关键绩效指标的摘要  
@@ -37,4 +37,4 @@ ms.locfileid: "22301869"
 |总 BizTalk 可用内存 （mb 为单位）|88.3%|95.9%|96%|  
 |平均每个服务器 / BizTalk 可用内存 （mb 为单位）|58.9%|63.9%|64%|  
   
- 有关如何评估内存性能的详细信息，请参阅**度量内存性能**主题的部分[清单： HYPER-V 上的测量性能](../technical-guides/checklist-measuring-performance-on-hyper-v.md)。
+ 有关如何评估内存性能的详细信息，请参阅**测量内存性能**主题的部分[核对清单：Hyper V 上测量性能](../technical-guides/checklist-measuring-performance-on-hyper-v.md)。

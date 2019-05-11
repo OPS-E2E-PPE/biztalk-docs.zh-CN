@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10740 |Microsoft Docs
+title: 单一登录：Event 10740 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b9bf7c2cdaae3cffe280035f007cd1b49d2c70c8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: db19b81cb024ff6dfee2196cdefc33f8f977dea9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970054"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291751"
 ---
-# <a name="single-sign-on-event-10740"></a>单一登录： 事件 10740
+# <a name="single-sign-on-event-10740"></a>单一登录：事件 10740
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                                                            |
@@ -30,17 +30,17 @@ ms.locfileid: "36970054"
 |  事件源   |                                                                           ENTSSO                                                                           |
 |    组件    |                                                                            N\A                                                                             |
 |  符号名称  |                                                               SSO_WARN_INVALID_WINDOWS_USER                                                                |
-|  消息正文   | 此 Windows 帐户不能用于应用程序更新。%r<br /><br /> 应用程序名称: %1 %r<br /><br /> Windows 帐户: %2 %r<br /><br /> 错误代码： %3 |
+|  消息正文   | Windows 帐户不是有效的应用程序 update.%r<br /><br /> 应用程序名称: %1 %r<br /><br /> Windows 帐户: %2 %r<br /><br /> 错误代码： %3 |
 
 ## <a name="explanation"></a>解释  
- 此警告事件表明，该 Windows 帐户（在事件消息中指定）不能用于应用程序更新。 为主机组应用程序更改 Windows 帐户时可能发生这种情况。 主机组应用程序用于从外部系统到 Windows 系统的单一登录。 这些应用程序可将一组外部用户映射到单个 Windows 帐户。 该应用程序的“应用程序用户”字段中定义了所映射到的 Windows 帐户。  
+ 此警告事件表示 （事件消息中指定） 的 Windows 帐户对于应用程序更新无效。 更改主机组应用程序的 Windows 帐户时会发生该错误。 主机组应用程序用于实现单一登录从外部系统到 Windows 系统。 它们可以将一组外部用户映射到单个 Windows 帐户。 在应用程序的应用程序用户字段中定义映射到 Windows 帐户。  
 
 ## <a name="user-action"></a>用户操作  
- 若要解决此警告问题，请执行以下操作：  
+ 若要解决此警告，请执行以下操作：  
 
-- 检查您所使用的 Windows 帐户是否有效。  
+- 检查 Windows 帐户正在使用无效。  
 
-- 重新创建具有正确 Windows 帐户属性的 Windows 帐户。  
+- 重新创建具有正确的 Windows 帐户属性的 Windows 帐户。  
 
   有关详细信息，请参阅下列资源：  
 

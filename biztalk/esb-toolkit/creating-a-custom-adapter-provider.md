@@ -1,5 +1,5 @@
 ---
-title: 创建自定义适配器提供程序 |Microsoft 文档
+title: 创建自定义适配器提供程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1f70855621f03011c92be7b04b844122d98be48f
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 7e6cc8b50a350e13c0269718783a33923d76490b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25974275"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291508"
 ---
 # <a name="creating-a-custom-adapter-provider"></a>创建自定义适配器提供程序
-解析程序执行，如前面几节中所述后，动态解析服务将检查结果是否为终结点 （未转换）。 如果它是一个终结点，服务实例适配器管理器，它是实例化的**AdapterMgr**类。  
+冲突解决程序执行，如前面各节中所述后，动态解析服务将检查结果是否为终结点 （未转换）。 如果它是一个终结点，服务实例化适配器管理器，它是实例的**AdapterMgr**类。  
   
- 适配器管理器验证和修复的传输类型和出站传输位置。 如果传输类型仍未得到解决，并以"http"或"https"开头的 URL，适配器管理器的传输类型设为"WCF WSHttp"。  
+ 适配器管理器验证和修补程序的传输类型和出站传输位置。 如果仍未得到解决，传输类型和 URL 以"http"或"https"开头，适配器管理器设置为"Wcf-wshttp"的传输类型。  
   
- 接下来，适配器 manager 正在验证的传输类型相当于一个有效的 Microsoft BizTalk Server 适配器，，然后返回其属性命名空间。 此过程只运行一次所有适配器，并将结果存储在缓存中以避免重复的查询的其他使用同一适配器的传入消息。  
+ 接下来，适配器管理器验证的传输类型等同于是有效的 Microsoft BizTalk Server 适配器，然后返回其属性命名空间。 此过程只运行一次所有适配器，并将结果存储在缓存中以避免重复的查询的其他使用相同的适配器的传入消息。  
   
- 适配器管理器使用的传输类型 (而无需"**://**"后缀) 来确定相应的适配器提供程序。 适配器提供程序是必须实现的自定义程序集**IAdapterProvider**接口。 适配器提供程序使用的属性**解析**结构**字典**实例生成的冲突解决程序来设置所有启用的消息的特定于协议的属性Microsoft BizTalk Server 运行时引擎执行动态解析。  
+ 适配器管理器使用的传输类型 (而无需"**://**"后缀) 来确定相应的适配器提供程序。 适配器提供程序是必须实现的自定义程序集**IAdapterProvider**接口。 适配器提供程序使用的属性**解析**结构**字典**实例生成的设置，使消息的所有特定于协议的属性的冲突解决程序Microsoft BizTalk Server 运行时引擎执行动态解析。  
   
- 如与 （上一节中所述，） 的解析程序动态解决机制使用条目 Esb.config 配置文件中查找适配器提供程序。 下面的 XML 演示配置文件的部分。  
+ 如使用冲突解决程序 （在上一部分中所述，） 的动态解析机制使用条目 Esb.config 配置文件中查找适配器提供程序。 以下 XML 显示配置文件的一部分。  
   
 ```xml  
 <adapterProviders cacheManager= "Adapter Providers Cache Manager"  absoluteExpiration="3600">  
@@ -48,14 +48,14 @@ ms.locfileid: "25974275"
 ```  
   
 ## <a name="creating-a-custom-adapter-provider"></a>创建自定义适配器提供程序  
- 适配器管理器 (实例**AdapterMgr**类) 的配置文件中的适配器提供程序查找并加载相应的程序集。 动态解决机制缓存的所有已加载的具体实现**IAdapterProvider**接口以避免重复的读取的配置信息和程序集加载时使用多个传入消息同一适配器提供程序。  
+ 适配器管理器 (的实例**AdapterMgr**类) 适配器提供程序配置文件中查找并加载相应的程序集。 动态解析机制缓存的所有已加载的具体实现**IAdapterProvider**接口以避免重复的读取配置信息和程序集加载时使用多个传入消息同一适配器提供程序。  
   
- 最后，适配器 manager 执行**SetEndPoint**方法的具体实现**IAdapterProvider**接口，并且该管道组件将消息返回到 BizTalk消息框数据库。  
+ 最后，适配器管理器执行**SetEndPoint**方法的具体实现**IAdapterProvider**接口和管道组件将消息返回到 BizTalkMessagebox 数据库。  
   
- **创建自定义适配器提供程序**  
+ **若要创建自定义适配器提供程序**  
   
-1.  创建派生自一个程序集**BaseAdapterProvider**基类和包含**SetEndPoint**设置的终结点的消息上下文属性的方法。  
+1.  创建派生自的程序集**BaseAdapterProvider**基本类和包含**SetEndPoint**设置的终结点的消息上下文属性的方法。  
   
-2.  通过将其添加到使用 Esb.config 配置文件中注册该适配器提供程序 **\<adapterProvider\>** 替换为作为适配器的名称元素**名称**属性，作为类的完全限定的名称**类型**属性，作为标记**标记**（应该用逗号分隔多个值） 的属性，和 （可选） 的程序集作为实际适配器**adapterAssembly**属性。  
+2.  通过将其添加到 Esb.config 配置文件使用注册适配器提供程序**\<adapterProvider\>** 替换为作为适配器的名称元素**名称**属性，作为类的完全限定的名称**类型**属性，作为名字对象**名字对象**（多个值应由逗号分隔） 的属性，并根据需要的程序集作为实际适配器**adapterAssembly**属性。  
   
 3.  在全局程序集缓存中注册新的程序集。

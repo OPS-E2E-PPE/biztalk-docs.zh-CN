@@ -1,5 +1,5 @@
 ---
-title: 了解 BizTalk 应用程序部署和管理 |Microsoft 文档
+title: 了解 BizTalk 应用程序部署和管理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -24,19 +24,19 @@ caps.latest.revision: 33
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 82d9596f2f8261b35035ead291f2a7d1bb859a5e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0a5b3d3a8a36b179baee2ab508915ec72d62ea52
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286621"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292694"
 ---
 # <a name="understanding-biztalk-application-deployment-and-management"></a>了解 BizTalk 应用程序部署和管理
-本部分介绍应用程序部署和管理功能的新[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]并提供将帮助你了解如何使用这些功能来部署和管理 BizTalk 应用程序的背景信息。  
+本部分介绍了应用程序部署和管理功能的新[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，并提供将帮助你了解如何使用这些功能来部署和管理 BizTalk 应用程序的背景信息。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [BizTalk 应用程序是什么？](../core/what-is-a-biztalk-application.md)  
+-   [BizTalk 应用程序概述](../core/what-is-a-biztalk-application.md)  
   
 -   [应用程序部署过程](../core/the-application-deployment-process.md)  
   
@@ -46,7 +46,7 @@ ms.locfileid: "22286621"
   
 -   [应用程序部署和管理方案](../core/application-deployment-and-management-scenarios.md)  
   
--   [会发生什么情况项目在应用程序部署过程](../core/what-happens-to-artifacts-during-application-deployment.md)  
+-   [在应用程序部署期间对项目采取的操作](../core/what-happens-to-artifacts-during-application-deployment.md)  
   
 -   [应用程序部署任务](../core/application-deployment-tasks.md)  
   
@@ -56,6 +56,6 @@ ms.locfileid: "22286621"
   
 -   [绑定文件和应用程序部署](../core/binding-files-and-application-deployment.md)  
   
--   [必须是唯一的应用程序或组的项目](../core/artifacts-that-must-be-unique-in-an-application-or-group.md)  
+-   [在应用程序或组中必须唯一的项目](../core/artifacts-that-must-be-unique-in-an-application-or-group.md)  
   
--   [程序集安装在 gac 中](../core/assembly-installation-in-the-gac.md)
+-   [GAC 中的程序集安装](../core/assembly-installation-in-the-gac.md)

@@ -12,23 +12,23 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8d847aace487d7b7ebd472ec96173e38315df529
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: afaf714e3c979576939ebef8fdd39f283828cab7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976614"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65350018"
 ---
 # <a name="empty-node-values-in-source-instance-messages"></a>源实例消息中的空节点值
-在测试映射时，有时可能并不需要全部 schema 节点中的内容。  
+可能的有时你不想时中的所有架构节点的内容时测试映射。  
 
 ## <a name="ceate-empty-node-values"></a>请空节点值  
 
-1. 使用 BizTalk 编辑器生成实例数据。 有关生成实例数据的详细信息，请参阅[如何生成实例消息](../core/how-to-generate-instance-messages.md)。  
+1. 生成实例数据使用 BizTalk 编辑器。 有关生成实例数据的详细信息，请参阅[如何生成实例消息](../core/how-to-generate-instance-messages.md)。  
 
-2. 在文本编辑器中打开输入实例消息，删除希望为空的元素和属性中的数据，然后保存修改后的实例文件。  
+2. 在文本编辑器中打开输入的实例消息从用于你想要为空，元素和属性中删除数据，然后将修改后的实例文件保存。  
 
-3. 在验证和测试架构之后，配置 BizTalk 映射器以使用刚刚修改过的文件。 在“属性”窗口中设置用于架构的文件。 有关设置属性的详细信息，请参阅**映射文件属性** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
+3. 配置 BizTalk 映射器以使用刚刚修改过的架构验证和测试的文件。 在为架构属性窗口中设置该文件。 有关设置属性的详细信息，请参阅**映射文件属性** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
 
 ## <a name="see-also"></a>请参阅  
 - [如何生成实例消息](../core/how-to-generate-instance-messages.md)   

@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 36b79e7bbd5d070fe9be9f11d5c3b609fe1ccf6e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c1cca51b10386f27066d2839817c6fbfef9db5d9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009422"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401331"
 ---
 # <a name="apply-iis-configuration-settings"></a>应用 IIS 配置设置
 默认情况下，SOAP、 HTTP 和基于 HTTP 的 WCF 适配器 （和在常规的.NET） 只有两个并发 HTTP 连接从打开每个 BizTalk 主机实例到任何特定的目标服务器。 例如，如果有 SOAP 发送端口发送消息到**<http://www.contoso.com/SomeWebService.asmx>**，然后默认情况下，每个上运行每个主机实例[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将打开到只有两个并发 HTTP 连接<strong>www.contoso.com</strong>，无论需要发送的消息数。  

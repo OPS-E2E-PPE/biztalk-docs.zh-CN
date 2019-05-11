@@ -1,5 +1,5 @@
 ---
-title: 配置属性变量类型 |Microsoft 文档
+title: 配置属性变量类型 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,17 +17,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 05b861100fb7843a95b250c233084c13924c28dc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2ccb07ff8884b4b874bf1da954a5a0ca22b84c2f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232805"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356457"
 ---
 # <a name="configuration-property-variable-types"></a>配置属性变量类型
 绑定文件的 TransportTypeData\CustomProps 节点中的适配器配置属性遵从 .NET Framework VarEnum 枚举中可用的数据类型。 在下表中列出了相关的数据类型：  
   
-|成员名称|Description|“值”|  
+|成员名称|Description|ReplTest1|  
 |-----------------|-----------------|-----------|  
 |VT_EMPTY|指示未指定值。|0|  
 |VT_NULL|指示空值（类似于 SQL 中的空值）。|1|  

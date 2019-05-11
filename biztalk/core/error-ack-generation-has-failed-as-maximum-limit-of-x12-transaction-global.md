@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3ef251a7e9af04245d1987e2d196a03f7c01b911
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7311ac672b3d1ef2eb06350fa07911751bac00b4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980478"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65349165"
 ---
 # <a name="error-ack-generation-has-failed-as-maximum-limit-of-x12-transaction-global"></a>错误确认生成失败，因为的 X12 全局事务的最大限制
 ## <a name="details"></a>详细信息  

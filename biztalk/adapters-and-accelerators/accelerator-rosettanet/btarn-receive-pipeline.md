@@ -22,23 +22,23 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 31b841048f79f460ec3c8098d63eec5cf348b6a1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 53a9b9dd410a6a136b37ef506c9bc975f563a11a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991918"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65284920"
 ---
 # <a name="btarn-receive-pipeline"></a>BTARN 接收管道
 Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]执行使用 RNIFReceive 管道 (RNIFReceive.btp) 接收到 RosettaNet 实现框架 (RNIF) 消息。 接收管道包括以下组件：  
   
 -   ReceiveMessageNonRepudiate  
   
--   RNMimeDecoder（MIME 预处理器/解码器）  
+-   RNMimeDecoder (MIME Preprocessor/Decoder)  
   
--   RNDAsm（XML 拆装器）  
+-   RNDAsm （XML 拆装器）  
   
--   RNPartyRes（参与方解析组件）  
+-   RNPartyRes （参与方解析组件）  
   
 -   MessageUpdater  
   
@@ -81,10 +81,10 @@ Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentve
   
 -   使用 PIP 代码、 PIP 版本、 源参与方、 目标参与方和消息跟踪 ID 的网络消息，则 ReceiveMessageNonRepudiate 组件将由存储有关的详细信息更新 MessageStorageIn 表。  
   
--   如果 PIP 不要求不可否认性，则将相应记录标记为删除，设置 `ToBePurged = True`。  
+-   如果 PIP 不要求不可否认，将标记为删除，设置记录`ToBePurged = True`。  
   
 ## <a name="message-flow"></a>消息流  
- 消息流通过 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 接收管道的步骤如下：  
+ 消息流通过[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]接收管道是按如下所示：  
   
 1. HTTP 适配器接收 RNIF 1.1 对象或通过 HTTP POST 的 RNIF 2.01 业务消息。  
   
@@ -116,7 +116,7 @@ Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentve
   
 15. 如果消息已在不可否认的 MessageStorageIn 表中保持不变，MessageUpdater 使用消息的过程配置的属性更新 MessageStorageIn 表。  
   
-16. 如果重复收到了以前处理过的操作消息，则 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将发布出错信息。  
+16. 如果消息是与以前处理过的操作消息时，重复的操作消息[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]将发布一个错误。  
   
 17. 为 RNIF 2.01 解码器将解密有效负载，如果对操作消息进行加密，并且没有匹配的 HTTP 的同步和 PIP 的同步要求。  
   
@@ -126,7 +126,7 @@ Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentve
   
 20. 对于 RNIF 2.01，拆装器将读取任何附件。  
   
-21. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将 RosettaNet 头、服务内容和附件路由到公用流程。  
+21. [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将路由 RosettaNet 标头、 服务内容和附件到公用流程。  
   
 ## <a name="see-also"></a>请参阅  
  [BTARN 中的消息处理](../../adapters-and-accelerators/accelerator-rosettanet/message-processing-in-btarn.md)

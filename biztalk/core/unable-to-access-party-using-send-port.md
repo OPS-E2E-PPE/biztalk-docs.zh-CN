@@ -12,14 +12,14 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cdff3eed53ae042be064bd2e02ff5cecf68c6021
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 64b31650411fcdfdf3aaba70f3e25ee377d442cb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976412"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292842"
 ---
-# <a name="unable-to-access-party-using-send-port"></a>无法使用发送端口访问参与方
+# <a name="unable-to-access-party-using-send-port"></a>无法访问方使用发送端口
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                        |
@@ -33,10 +33,10 @@ ms.locfileid: "36976412"
 |  消息正文   |                      无法访问方使用发送端口： {0}                       |
 
 ## <a name="explanation"></a>解释  
- 此错误表明发送管道找不到与为传出的 AS2 消息指定的发送端口关联的参与方。  
+ 此错误表明发送管道找不到具有指定关联的参与方发送传出 AS2 消息的端口。  
 
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请将某个参与方与指定的发送端口关联：  
+ 若要解决此错误，将与指定的发送端口关联参与方：  
 
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
 

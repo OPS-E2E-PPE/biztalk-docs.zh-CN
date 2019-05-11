@@ -12,20 +12,20 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e15f03a0891bff6204c6a8d49cae9dc032caef1f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2f82c9a6607a4f7d58459f721b8a3354b49702af
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022699"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291387"
 ---
 # <a name="optimizing-filegroups-for-the-databases"></a>优化文件组的数据库
 文件输入/输出 (I/O) 争用通常是限制因素或瓶颈，在生产 BizTalk Server 环境中。 BizTalk Server 是一个非常数据库密集型应用程序和 BizTalk Server 使用的 SQL Server 数据库又是大量占用非常文件 I/O。 本主题介绍如何以最佳方式使用的文件和文件组功能的 SQL Server 以最小化的匹配项的文件 I/O 争用和提高 BizTalk Server 解决方案的整体性能。  
   
 ## <a name="overview"></a>概述  
- 每个 BizTalk Server 解决方案将最终会遇到文件 I/O 争用，如增加吞吐量。 I/O 子系统或存储引擎是任意关系数据库的关键组件。 成功的数据库实现通常要求在项目的初期阶段进行仔细的规划。 此规划应考虑下列事项：  
+ 每个 BizTalk Server 解决方案将最终会遇到文件 I/O 争用，如增加吞吐量。 I/O 子系统或存储引擎是任意关系数据库的关键组件。 成功的数据库实现通常需要在项目早期阶段进行仔细的规划。 此规划应考虑以下问题：  
   
-- 使用哪种类型的磁盘硬件，如 RAID（独立磁盘冗余阵列）设备。 
+- 若要使用，例如 RAID （独立磁盘冗余阵列） 设备的磁盘硬件哪种类型。 
   
 - 如何使用文件和文件组的磁盘上的数据分配。 有关使用 SQL Server 中的文件和文件组的详细信息，请参阅[数据库文件和文件组](https://docs.microsoft.com/sql/relational-databases/databases/database-files-and-filegroups)。
   
@@ -40,7 +40,7 @@ ms.locfileid: "37022699"
 > [!NOTE]  
 >  仅应由有经验的 SQL Server 数据库管理员和 BizTalk Server 数据库已正确备份仅后所有完成这种优化。 应在 BizTalk Server 环境中的所有 SQL Server 计算机上执行此优化。  
   
- SQL Server 文件和文件组可用来提高数据库性能，因为此功能允许多个磁盘控制器跨多个磁盘，创建数据库或 RAID （独立磁盘冗余阵列） 系统。 例如，如果计算机上有四个磁盘，那么可以创建一个由三个数据文件和一个日志文件组成的数据库，每个磁盘上放置一个文件。 访问数据时，四个读/写磁头可以同时访问数据并行。 这极大地加快数据库操作。 有关实现为 SQL Server 磁盘硬件解决方案的详细信息，请参阅[数据库的性能](http://go.microsoft.com/fwlink/?LinkID=71419)(http://go.microsoft.com/fwlink/?LinkID=71419) SQL Server 联机丛书中。  
+ SQL Server 文件和文件组可用来提高数据库性能，因为此功能允许多个磁盘控制器跨多个磁盘，创建数据库或 RAID （独立磁盘冗余阵列） 系统。 例如，如果您的计算机有四个磁盘，你可以创建三个数据文件和一个日志文件，每个磁盘上放置一个文件组成的数据库。 访问数据时，四个读/写磁头可以同时访问数据并行。 这极大地加快数据库操作。 有关实现为 SQL Server 磁盘硬件解决方案的详细信息，请参阅[数据库的性能](http://go.microsoft.com/fwlink/?LinkID=71419)(http://go.microsoft.com/fwlink/?LinkID=71419) SQL Server 联机丛书中。  
   
  此外，文件和文件组允许数据布局，因为可以在特定的文件组中创建表。 这提高了性能，因为给定表的所有文件 I/O 可以都定向到特定的磁盘。 例如，经常使用的表可以放在位于一个磁盘上的文件组中的文件，并且在数据库中的其他不常访问的表可以位于另一个文件，位于第二个磁盘上的组中的不同文件。  
   
@@ -66,7 +66,7 @@ ms.locfileid: "37022699"
   
 ||||  
 |-|-|-|  
-|**“数据库”**|**默认数据库名称**|**Description**|  
+|**“数据库”**|**默认数据库名称**|**说明**|  
 |配置数据库|BizTalkMgmtDb|中央元信息存储在 BizTalk Server 组中的 BizTalk Server 的所有实例。|  
 |BizTalk MessageBox 数据库|BizTalkMsgBoxDb|存储订阅谓词。 它是一个主机平台，并使每个 BizTalk Server 主机的队列和状态表。 MessageBox 数据库还存储消息和消息属性。|  
 |BizTalk 跟踪数据库|BizTalkDTADb|存储业务和运行状况监视 BizTalk Server 跟踪引擎所跟踪的数据。|  
@@ -85,7 +85,7 @@ ms.locfileid: "37022699"
  如前文所述，默认的 BizTalk Server 配置 MessageBox 数据库将置于默认文件组中的一个文件中。 默认情况下，MessageBox 数据库的数据和事务日志放置在相同的驱动器和路径。 这样做是为了适应单磁盘系统。 单个文件/文件组/磁盘配置**不是最佳选择**在生产环境中。 为了获得最佳性能，数据文件和日志文件应放置在不同的磁盘上。  
   
 > [!NOTE]  
->  日志文件不包括在文件组内。 日志空间与数据空间分开管理。  
+>  日志文件永远不会是一个文件组的一部分。 从数据空间分开管理日志空间。  
   
 ## <a name="the-8020-rule-of-distributing-biztalk-server-databases"></a>将 BizTalk Server 数据库分发的 80/20 规则  
  在大多数 BizTalk Server 解决方案中，由于磁盘 I/O 争用或数据库争用的主要来源是争用的 BizTalk Server MessageBox 数据库。 这是在单个和多 MessageBox 的情况下，则返回 true。 它有理由假定 80%的值的分布 BizTalk 数据库，将派生自优化的 MessageBox 数据文件和日志文件。 下面详细介绍了在示例方案侧重于优化 MessageBox 数据库的数据文件。 根据需要然后可以为其他数据库遵循这些步骤。 例如，如果解决方案需要广泛的跟踪，跟踪数据库还可以进行优化。  

@@ -1,5 +1,5 @@
 ---
-title: 故障排除 BizTalk Server 工具 |Microsoft 文档
+title: BizTalk Server 工具进行故障排除 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,47 +12,47 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5b7aedd8977042d15176781b0595bd5bb225a2fe
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c3b492c4ee6d22c1eb360f24c60efee1c1106d3b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279765"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292928"
 ---
-# <a name="troubleshooting-biztalk-server-tools"></a>BizTalk Server 工具问题疑难解答
-本主题集中提供了有关使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 包含的工具时遇到的常见问题的信息。  
+# <a name="troubleshooting-biztalk-server-tools"></a>BizTalk Server 工具进行故障排除
+本主题提供有关使用附带的工具时遇到的常见问题的信息的一个集中的位置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
   
 ## <a name="known-issues"></a>已知问题  
   
-### <a name="biztalk-server-tools-and-utilities-may-not-function-correctly-on-a-windows-system-that-supports-uac"></a>BizTalk Server 工具和实用程序在支持 UAC 的 Windows 系统上可能无法正确工作  
+### <a name="biztalk-server-tools-and-utilities-may-not-function-correctly-on-a-windows-system-that-supports-uac"></a>BizTalk Server 工具和实用程序可能无法正常工作支持 UAC 的 Windows 系统上  
  **问题**  
   
- 当在支持用户帐户控制 (UAC) 的系统上安装 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 时，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中包含的工具可能无法正常启动或正常工作。  
+ 当[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]支持用户帐户控制 (UAC) 附带的工具的系统上安装[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]不成功，启动或可能无法正常工作。  
   
- **可能的原因**  
+ **原因**  
   
- 运行被标记为具有特定权限级别的应用程序时，如果要求的级别高于运行应用程序的用户的级别，则 UAC 将提示你暂时将应用程序的权限提升为所需的级别。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 随附的工具没有用来自动请求权限提升的正确标记，因此该工具将尝试使用运行应用程序的用户的当前权限级别运行，如果要求使用更高级别，则此工具将无法运行。  
+ UAC 时运行的应用程序被标记为特定的权限级别，如果所需的级别高于运行该应用程序的用户的将显示一个提示，您可以暂时提升到应用程序的权限所需的级别。 随附的工具[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]不具有正确的标志来自动请求权限提升，因此该工具将尝试在运行该应用程序的用户当前的权限级别运行和更高的特权级别时将失败必填。  
   
  **解决方法**  
   
- 若要解决此问题，请使用管理权限运行所有 BizTalk Server 工具。 要使用管理权限运行工具，请右键单击应用程序，然后选择**以管理员身份运行**。  
+ 若要解决此问题，请使用管理权限运行所有 BizTalk Server 工具。 要使用管理权限运行工具，用鼠标右键单击该应用程序，然后选择**以管理员身份运行**。  
   
- 有关用户帐户控制的详细信息，请参阅[http://go.microsoft.com/fwlink/?LinkId=99167](http://go.microsoft.com/fwlink/?LinkId=99167)。  
+ 有关用户帐户控制的详细信息，请参阅[ http://go.microsoft.com/fwlink/?LinkId=99167 ](http://go.microsoft.com/fwlink/?LinkId=99167)。  
   
-### <a name="sometimes-biztalk-mapper-toolbox-may-appear-empty"></a>有时 BizTalk 映射器工具箱可能会显示为空白  
+### <a name="sometimes-biztalk-mapper-toolbox-may-appear-empty"></a>有时 BizTalk 映射器工具箱可能显示为空  
  **问题**  
   
- 有时，当你打开 Visual Studio 中的映射器工具箱时，会看到工具箱中没有任何 functoid。  
+ 有时，当在 Visual Studio 中打开映射器工具箱，看不在工具箱中的所有 functoid。  
   
- **可能的原因**  
+ **原因**  
   
- 可能是由于安装/卸载 Visual Studio 加载项和/或路径造成的损坏。  
+ 可能是有可能损坏的安装/卸载 Visual Studio 加载项和/或损坏。  
   
  **解决方法**  
   
  解决此问题：  
   
-1.  关闭所有运行的 Visual Studio 实例。  
+1.  关闭所有正在运行的 Visual Studio 实例。  
   
 2.  启动**Visual Studio 命令提示符**以管理员身份。  
   

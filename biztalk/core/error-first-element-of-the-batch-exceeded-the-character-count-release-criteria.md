@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 880e29ceb2be1c574aeaec248ce47317e332e5a6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a7ffc720338dd51201b3a0d93e68122df495dbf7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972654"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348329"
 ---
-# <a name="the-first-element-of-the-batch-exceeded-the-character-count-release-criteria-set"></a>批的第一个元素超出了字符计数释放条件集
+# <a name="the-first-element-of-the-batch-exceeded-the-character-count-release-criteria-set"></a>批处理的第一个元素超出了字符计数释放条件集
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                                                                                                    |

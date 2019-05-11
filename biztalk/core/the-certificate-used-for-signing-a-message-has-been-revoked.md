@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b2e05acaa5a1bca68952072f90364ac3890be9af
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b9a122f5b8d340ba1bed2dca5062edabf2d46e84
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022715"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65298914"
 ---
-# <a name="the-certificate-used-for-signing-a-message-has-been-revoked"></a>用于对消息进行签名的证书已经被吊销
+# <a name="the-certificate-used-for-signing-a-message-has-been-revoked"></a>用于对消息进行签名的证书已被吊销
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                          |
@@ -30,14 +30,14 @@ ms.locfileid: "37022715"
 |  事件源   |  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI  |
 |    组件    |                                        AS2 引擎                                        |
 |  符号名称  |                          SigningCertificateHasBeenRevokedError                           |
-|  消息正文   | 用于对消息进行签名的证书已经被吊销。 证书指纹： {0} |
+|  消息正文   | 用于对消息进行签名的证书已吊销。 证书指纹： {0} |
   
 ## <a name="explanation"></a>解释  
- 此错误/警告/信息事件表明发送管道无法处理传出的消息，因为标识为签名证书的证书已被吊销。  
+ 此错误/警告/信息事件表明，发送管道无法处理传出消息因为标识为签名证书的证书已被吊销。  
   
 ## <a name="user-action"></a>用户操作  
  若要解决此错误，请执行以下操作之一：  
   
--   创建一个新的证书来替换已吊销的证书。 将证书添加到“当前用户”证书存储区中，在“组属性”对话框的“证书”页中将其标识为签名证书，然后将该证书的公钥发送给 AS2 消息的收件人。  
+-   创建新的证书替换已吊销的证书。 将证书添加到当前用户证书存储标识为签名证书中的组属性对话框中，证书页，然后将该证书的公钥发送到的 AS2 消息接收方。  
   
--   通过打开 BizTalk Server 管理控制台、打开为传出消息解析的参与方的“AS2 属性”对话框，单击“常规”节点，然后清除“检查证书吊销列表”属性来禁用吊销列表检查。
+-   通过打开 BizTalk Server 管理控制台，打开为传出消息解析的参与方 AS2 属性对话框中，单击常规节点，然后清除检查证书吊销列表中禁用吊销列表检查属性。

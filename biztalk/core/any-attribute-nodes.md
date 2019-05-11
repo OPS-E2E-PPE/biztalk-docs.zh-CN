@@ -12,15 +12,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 98cbd0ea288e14b68bc16f5e9a88f636bc229b9d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7f20f3b9977331826b758eb89f7a1ae936f682d2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014478"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359172"
 ---
-# <a name="any-attribute-nodes"></a>“任何属性”节点
-在 BizTalk 编辑器中，可以使用**任何属性**节点指示为其零个或多个未知的属性可能会出现的实例消息中的 （已知） 元素。 这适用于以下情况：您知道某特定元素将存在于实例消息中的特定位置，但您不十分确定该元素可能包含哪些属性。 如果将置于**任何属性**节点内的**记录**相关元素与关联的节点，BizTalk 可以处理该元素，并被所有关联的属性的唯一要求语法上正确 (attributeName ="attributeValue")。  
+# <a name="any-attribute-nodes"></a>任何属性节点
+在 BizTalk 编辑器中，可以使用**任何属性**节点指示为其零个或多个未知的属性可能会出现的实例消息中的 （已知） 元素。 这适合于在以下情况： 您知道某个特定元素将存在于实例消息中的特定位置，但您不能确定哪些属性的元素的完全可能包括。 如果将置于**任何属性**节点内的**记录**相关元素与关联的节点，BizTalk 可以处理该元素，并被所有关联的属性的唯一要求语法上正确 (attributeName ="attributeValue")。  
   
 > [!NOTE]
 >  在 BizTalk 编辑器中，**任何属性**节点表示的字符串\<AnyAttribute\>架构树视图中。  

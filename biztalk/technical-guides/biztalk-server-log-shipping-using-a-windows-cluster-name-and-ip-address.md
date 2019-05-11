@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1b3df08da6753a7f936bfca54ecfb69b86d058c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2696f608f13244d5f00922b01d9e069a0ad6268d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023419"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401062"
 ---
 # <a name="biztalk-server-log-shipping-using-a-windows-cluster-name-and-ip-address"></a>BizTalk Server 日志传送使用 Windows 群集名称和 IP 地址
 可以简化[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]通过使用两个实例的日志传送[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]群集中的源和目标服务器作为[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]日志传送方案。 然后，发生灾难恢复时，发生数据库恢复简化通过只切换的名称和与群集关联的 IP 地址资源[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]实例如下所述。 使用此方法时无需运行 UpdateDatabase.vbs 脚本，如本主题中所述[如何还原数据库备份 BizTalk Server 作业中](../technical-guides/how-to-restore-databases-in-the-backup-biztalk-server-job.md)因为数据库名称保持不变。  

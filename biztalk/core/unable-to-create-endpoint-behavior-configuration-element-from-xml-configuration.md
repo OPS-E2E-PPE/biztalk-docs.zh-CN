@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d1f014463bbbd12de856d20b37332c912b3ce22
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b2b294b67f066c0c3ff61232afd1aa81382363c1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987238"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292838"
 ---
 # <a name="unable-to-create-endpoint-behavior-configuration-element-from-xml-configuration"></a>无法从 XML 配置创建终结点行为配置元素
 ## <a name="details"></a>详细信息  
@@ -38,7 +38,7 @@ ms.locfileid: "36987238"
 ## <a name="user-action"></a>用户操作  
  使用以下过程配置终结点行为。  
 
-#### <a name="to-configure-the-endpoint-behavior"></a>配置终结点行为的步骤  
+#### <a name="to-configure-the-endpoint-behavior"></a>若要配置的终结点行为  
 
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
 

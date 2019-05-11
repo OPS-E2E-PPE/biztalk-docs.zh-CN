@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5cfab980a869029d565d378aaf0f75a147403f3e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 94ceb9afa836af951331cbb9f1649ab23f816024
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986718"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65262047"
 ---
 # <a name="introduction-to-the-biztalk-esb-toolkit"></a>BizTalk ESB 工具包简介
 介绍体系结构和内容的 Microsoft [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。 文档还演示了如何将应用开发企业应用程序，使灵活、 更安全，企业服务总线 (ESB) 体系结构模式和可重用的服务和新端到端的现有服务快速组织业务流程。  

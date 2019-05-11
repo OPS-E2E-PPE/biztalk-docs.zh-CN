@@ -1,5 +1,5 @@
 ---
-title: 和 |Microsoft 文档
+title: And | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 676940dfa5cbc23d0c8127923d292e382a4e3cad
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2da29c40091664112ee8b481f3feeba9d7463b5d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230013"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359704"
 ---
 # <a name="and"></a>And
-删除前两个项从堆栈中，执行一个布尔值**AND**的两个项，并将然后将推送到堆栈的结果。  
+删除前两个项从堆栈中，执行一个布尔值**AND**的两个项，并将然后将推送到堆栈上的结果。  
   
 ## <a name="syntax"></a>语法  
   
@@ -30,15 +30,15 @@ ms.locfileid: "22230013"
 ```  
   
 #### <a name="parameters"></a>Parameters  
- 堆栈最上方的两项。  
+ 在堆栈上前两个项。  
   
 ## <a name="pushed-value"></a>推送的值  
- 字符串的布尔值结果**AND**操作。  
+ 一个布尔值的字符串结果**AND**操作。  
   
-## <a name="remarks"></a>注释  
+## <a name="remarks"></a>备注  
   
 ## <a name="example"></a>示例  
- **和**当你需要评估多个语句时，操作非常有用。 下面的示例筛选器表达式检查是否活动的名称为"CheckPO"并通过使用关闭活动事件**和**操作。  
+ **和**操作时，你需要评估多个语句。 下面的示例筛选器表达式检查是否活动名称为"CheckPO"，并通过使用关闭的活动事件**和**操作。  
   
 ```  
 <ic:Filter>  
@@ -58,7 +58,7 @@ ms.locfileid: "22230013"
 </ic:Filter>  
 ```  
   
- 在此示例中**和**是表达式中的最后一个操作，因为它依赖于的比较结果 （和从要执行比较的堆栈中弹出）。 你可以扩展此办法执行**和**对两个以上的项的操作。 例如，若要计算条件 A、条件 B 和条件 C 是否都为真，可以使用类似于如下内容的表达式：  
+ 在此示例中**和**是在表达式中的最后一个操作，因为它依赖于比较的结果 （并从要进行比较的堆栈中弹出它们）。 您可以扩展执行这一思路**和**对两个以上的项的操作。 例如，若要评估条件 A、 条件 B 和条件 C 是否，则返回 true，将使用的表达式如下所示：  
   
 ```  
 <ic:Filter>  
@@ -84,5 +84,5 @@ ms.locfileid: "22230013"
 </ic:Filter>   
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [拦截器操作](../core/interceptor-operations.md)
+## <a name="see-also"></a>请参阅  
+ [侦听器运算](../core/interceptor-operations.md)

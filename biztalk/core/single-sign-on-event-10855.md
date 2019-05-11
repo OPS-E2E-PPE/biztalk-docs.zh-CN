@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10855 |Microsoft Docs
+title: 单一登录：Event 10855 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c2d5914cc119a68c109b883c888b3898bc7db07e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9519453d0209caf46fa75c1bce52d60fe792d0e3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986446"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306652"
 ---
-# <a name="single-sign-on-event-10855"></a>单一登录： 事件 10855
+# <a name="single-sign-on-event-10855"></a>单一登录：事件 10855
 
 |                 |                                                                        |
 |-----------------|------------------------------------------------------------------------|
@@ -27,12 +27,12 @@ ms.locfileid: "36986446"
 | 产品版本 |       [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]       |
 |    事件 ID     |                                 10855                                  |
 |  事件源   |                                 ENTSSO                                 |
-|    组件    |                                  N/A                                   |
+|    组件    |                                  不可用                                   |
 |  符号名称  |                    ENTSSO_E_PASSWORD_FILTER_FAILED                     |
-|  消息正文   | 无法返回凭据，因为密码筛选器出现故障。 |
+|  消息正文   | 无法返回凭据，因为密码筛选器失败。 |
 
 ## <a name="explanation"></a>解释  
- 密码筛选器无效。 最可能的原因是手动创建的该筛选器，这不是推荐的方法。  
+ 密码筛选器无效。 最可能的原因是，该筛选器手动创建的但并不推荐。  
 
 ## <a name="user-action"></a>用户操作  
- 再次使用“创建筛选器”向导创建密码筛选器。
+ 创建密码筛选器再次使用创建筛选器向导。

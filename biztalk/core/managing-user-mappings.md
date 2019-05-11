@@ -1,5 +1,5 @@
 ---
-title: 管理用户映射 |Microsoft 文档
+title: 管理用户映射 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,20 +15,20 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 03eb8de3ea8efa8bf7ea676dc69bbd019410155f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f69d33390c45da73edd6dd5947b8644769ee8d3c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262453"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65326024"
 ---
 # <a name="managing-user-mappings"></a>管理用户映射
-此部分提供有关如何创建和配置企业单一登录映射的信息。  
+本部分提供有关如何创建和配置企业单一登录映射的信息。  
   
- 管理员使用 ssomanage 实用程序来管理映射，尽管应用程序用户使用 ssoclient 实用程序来管理其映射。  
+ 管理员使用 ssomanage 实用程序来管理映射，而应用程序用户使用 ssoclient 实用程序来管理它们的映射。  
   
 > [!NOTE]
->  应用程序管理员可以管理他们作为管理员的关联应用程序与关联的映射，SSO affiliate administrators 而 SSO 管理员可以管理与所有关联的所有映射都 affiliate 应用程序。  
+>  应用程序管理员可以管理他们是管理员的关联应用程序与关联的映射，而 SSO 关联管理员和 SSO 管理员可以管理关联应用程序与所有关联的所有映射。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -42,4 +42,4 @@ ms.locfileid: "22262453"
   
 -   [如何启用用户映射](../core/how-to-enable-a-user-mapping.md)  
   
--   [如何禁用的用户映射](../core/how-to-disable-a-user-mapping.md)
+-   [如何禁用用户映射](../core/how-to-disable-a-user-mapping.md)

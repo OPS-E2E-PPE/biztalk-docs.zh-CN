@@ -1,5 +1,5 @@
 ---
-title: 管理服务器 |Microsoft 文档
+title: 管理服务器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9442d5b9350b970af714f4f3f43c561cb8c35e3a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 856c35add9c738fced27ec527f7e9c6e469be868
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262285"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65329124"
 ---
 # <a name="managing-servers"></a>管理服务器
-BizTalk Server 管理控制台中的“服务器”节点列出了 BizTalk Server 组所属的所有服务器。 使用本部分中的过程，您可以向组中添加服务器或从中删除服务器，或者将服务器从一个组移动到另一个组。  
+在 BizTalk Server 管理控制台的服务器节点列出了属于 BizTalk Server 组的所有服务器。 在本部分中使用的过程，可以添加或删除服务器组中，或将服务器从一个组移到另一个。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -32,4 +32,4 @@ BizTalk Server 管理控制台中的“服务器”节点列出了 BizTalk Serve
   
 -   [如何将服务器从一个组移到另一个](../core/how-to-move-a-server-from-one-group-to-another.md)  
   
--   [如何从组中删除服务器](../core/how-to-remove-a-server-from-a-group.md)
+-   [如何从一个组中删除服务器](../core/how-to-remove-a-server-from-a-group.md)

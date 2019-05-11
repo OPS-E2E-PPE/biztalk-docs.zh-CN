@@ -1,5 +1,5 @@
 ---
-title: 步骤 4： 创建接收端口用于接收 ADT ^ A03 消息从 ADT 系统使用 MLLP 适配器 |Microsoft Docs
+title: 步骤 4：创建接收端口用于接收 ADT ^ A03 消息从 ADT 系统使用 MLLP 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 2015-12-09
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1571d0f506f052aac08735d426fdbb4dcaf4b647
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7068e7964f44947c23829af41cf24243889673ed
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000150"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288328"
 ---
-# <a name="step-4-create-the-receive-port-for-accepting-adta03-messages-from-adt-systems-using-the-mllp-adapter"></a>步骤 4： 创建接收端口用于接收 ADT ^ A03 消息从 ADT 系统使用 MLLP 适配器
+# <a name="step-4-create-the-receive-port-for-accepting-adta03-messages-from-adt-systems-using-the-mllp-adapter"></a>步骤 4：创建接收端口用于接收 ADT ^ A03 消息从 ADT 系统使用 MLLP 适配器
 接收端口用于指定传入消息的接收位置。 使用以下过程来创建接收端口用于接收 ADT ^ A03 消息从 ADT 系统使用 MLLP 适配器。  
 
 ## <a name="create-the-receive-port"></a>创建接收端口  
@@ -65,7 +65,7 @@ ms.locfileid: "37000150"
 
 10. 设置**接收管道**到**BTAHL72XPipelines.BTAHL72XReceivePipeline**。  
 
-11. 单击“确定”保存更改。  
+11. 选择**确定**以保存所做的更改。  
 
 12. 启用通过右键单击它，刚刚创建的接收位置，然后选择**启用**。  
 

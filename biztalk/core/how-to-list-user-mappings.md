@@ -15,17 +15,17 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cef1fbe44c9c3ddbe5458a92644f9ea39534789e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d7df4606b9ba594a134bdba1e924543dbf6dbca6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974102"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65336871"
 ---
 # <a name="how-to-list-user-mappings"></a>如何列出用户映射
-使用此命令可以列出指定用户的所有现有映射。  
+使用此命令列出指定用户的所有现有的映射。  
   
- 只有 SSO 管理员、应用程序管理员、SSO 关联管理员或用户才能执行此任务。  
+ 必须是 SSO 管理员、 应用程序管理员、 SSO 关联管理员或用户来执行此任务。  
   
  已启用的用户映射显示为 (E) \<*域*\>\\*\<用户名\>*，而禁用用户映射显示为 (D) \<*域*\>\\*\<用户名\>*。  
   
@@ -33,11 +33,11 @@ ms.locfileid: "36974102"
   
 1. 上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2. 在命令行上，转至企业单一登录安装目录。 默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。  
+2. 在命令行中，转至企业单一登录安装目录。 默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。  
   
 3. 执行以下操作之一：  
   
-   - 类型**ssomanage-listmappings *\<域\>\\< 用户名\>*** 若要列出给定的用户具有关联应用程序中的所有映射他/她所属到何处*\<域\>* 是 Microsoft Windows 域用户帐户，并且*\<用户名\>* 是你想要列出用户映射的 Windows 用户名。 如果用户是关联管理员或 SSO 管理员，此命令将列出该用户在所有关联应用程序中的所有映射。  
+   - 类型**ssomanage-listmappings *\<域\>\\< 用户名\>*** 若要列出给定的用户具有关联应用程序中的所有映射他/她所属到何处*\<域\>* 是 Microsoft Windows 域用户帐户，并且*\<用户名\>* 是你想要列出用户映射的 Windows 用户名。 如果用户是关联管理员或 SSO 管理员，此命令将列出所有关联应用程序中的用户的所有映射。  
   
       或  
   
@@ -54,7 +54,7 @@ ms.locfileid: "36974102"
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。  
+2.  在命令行中，转至企业单一登录安装目录。 默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。  
   
 3.  类型**ssoclient – listmappings**列出你拥有的所有映射。  
   

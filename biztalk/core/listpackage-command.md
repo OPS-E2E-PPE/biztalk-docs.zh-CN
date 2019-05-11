@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c2469a509545dffc80a79a61a5f8f761f5bb724
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 65e90a4b28d89d4d30b2ca4c6c09977529db653a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970462"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65328664"
 ---
 # <a name="listpackage-command"></a>ListPackage 命令
 列出了生成的.msi 文件中包含的项目[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
@@ -29,13 +29,13 @@ ms.locfileid: "36970462"
   
 |参数|Required|Description|  
 |---------------|--------------|-----------------|  
-|**/ 打包**或  **/P**|是|.msi 文件的名称和路径。 示例： C:\MSI\MyApplication.msi。 如果路径中包含空格，则必须放在双引号 （"） 中。|  
+|**/ 打包**或  **/P**|是|名称和路径的.msi 文件。 例如：C:\MSI\MyApplication.msi. 如果路径中包含空格，则必须放在双引号 （"） 中。|  
   
 ## <a name="sample"></a>示例  
  **ListPackage /Package:"C:\My MSI Files\MyApplication.msi"**  
   
-## <a name="remarks"></a>Remarks  
- 参数不区分大小写。 指定参数无需键入整个参数名，只需键入可明确标识该参数的参数名的前几个字母即可。  
+## <a name="remarks"></a>备注  
+ 参数不区分大小写。 不需要键入整个参数名称来指定它;您可以键入明确标识参数名称的第几个字母。  
   
 ## <a name="see-also"></a>请参阅  
  [BTSTask 命令行参考](../core/btstask-command-line-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: 配置 WCF WSHttp 适配器 |Microsoft 文档
+title: 配置 Wcf-wshttp 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,20 +15,20 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f81f6cf4ed96414ef0fc58315cf828ee9d805d4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fe46610e2894c72b5b77aa4c648a05e4fb493be4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232621"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355109"
 ---
-# <a name="configuring-the-wcf-wshttp-adapter"></a>配置 WCF WSHttp 适配器
+# <a name="configuring-the-wcf-wshttp-adapter"></a>配置 Wcf-wshttp 适配器
 本部分将介绍如何配置 WCF-WSHttp 适配器。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [如何配置 WCF WSHttp 发送端口](../core/how-to-configure-a-wcf-wshttp-send-port.md)  
+-   [如何配置 Wcf-wshttp 发送端口](../core/how-to-configure-a-wcf-wshttp-send-port.md)  
   
--   [如何配置 WCF WSHttp 接收位置](../core/how-to-configure-a-wcf-wshttp-receive-location.md)  
+-   [如何配置 Wcf-wshttp 接收位置](../core/how-to-configure-a-wcf-wshttp-receive-location.md)  
   
--   [如何配置 WCF WSHttp 发送处理程序](../core/how-to-configure-a-wcf-wshttp-send-handler.md)
+-   [如何配置 Wcf-wshttp 发送处理程序](../core/how-to-configure-a-wcf-wshttp-send-handler.md)

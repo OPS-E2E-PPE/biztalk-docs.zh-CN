@@ -1,5 +1,5 @@
 ---
-title: 步骤 7： 创建示例 LOB 消息 |Microsoft Docs
+title: 步骤 7：创建示例 LOB 消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,17 +17,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2b8450f196a1619b55b08a0771508daafa421a4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c39df356056e8f8f5f9bcf7d136eda302003096e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977998"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280616"
 ---
-# <a name="step-7-create-a-sample-lob-message"></a>步骤 7： 创建示例 LOB 消息
-在此步骤中，你将使用 LOB 应用程序实用工具创建一个业务线 (LOB) 消息示例。  
+# <a name="step-7-create-a-sample-lob-message"></a>步骤 7：创建示例 LOB 消息
+在此步骤中，使用 LOB 应用程序实用工具创建示例业务 (LOB) 消息。  
 
-### <a name="to-create-a-sample-message-using-the-lob-application-utility"></a>使用 LOB 应用程序实用工具创建示例消息  
+### <a name="to-create-a-sample-message-using-the-lob-application-utility"></a>若要创建使用 LOB 应用程序实用工具的示例消息  
 
 1. 在中[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]资源管理器，转到\<*驱动器*\>: \Program 文件 (x86) \Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK 文件夹，然后双击**LOBApplication.exe**。  
 
@@ -46,10 +46,10 @@ ms.locfileid: "36977998"
 
 3. 在中**LOB 应用程序**对话框中，单击**提交消息**。  
 
-   LOB 应用程序为 Microsoft 生成一条消息[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]模拟的 LOB 应用程序生成的原始消息。 可以在“状态”窗口中查看消息的状态。  
+   LOB 应用程序为 Microsoft 生成一条消息[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]模拟的 LOB 应用程序生成的原始消息。 可以在状态窗口中查看消息的状态。  
 
 > [!NOTE]
->  该消息示例假设“HOME”和“PARTNER”的全局业务标识符 (GBI) 分别为 123456789 和 987654321。 若要使用不同的 GBI，必须修改这些文件的内容。  
+>  该消息示例假设"HOME"的全局业务标识符 (GBI) 和"合作伙伴"是为 123456789 和 987654321 分别。 若要使用不同的 GBI，必须修改这些文件的内容。  
 
 ## <a name="see-also"></a>请参阅  
  [步骤 8：在 BTARN 数据库中查看消息](../../adapters-and-accelerators/accelerator-rosettanet/step-8-view-messages-in-the-btarn-databases.md)

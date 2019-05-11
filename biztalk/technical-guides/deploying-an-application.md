@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c2fb0faec11638f48f0b776988a555c34c6fc62a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e2eea66cda073317cfaa1ed3458950e7edfbd698
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002814"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65266419"
 ---
 # <a name="deploying-an-application"></a>将应用程序部署
 部署是应用程序项目，以确保所有必需的组件可供需要它们的系统的物流分布。 这些项目包括 BizTalk Server 程序集、.NET 程序集、 架构、 映射、 绑定、 业务规则和证书。 可以利用 BizTalk 应用程序，以帮助向其他计算机 （时传输到另一个环境的应用程序） 添加到组或用于过渡推出项目。  
@@ -33,7 +33,7 @@ ms.locfileid: "37002814"
   
  使用.msi 文件中，可以使用脚本自定义的服务器 （安装操作） 或组 （导入操作）。 脚本中使用的.msi 文件的详细信息，请参阅[使用自定义应用程序部署到的前期和后期处理脚本](http://go.microsoft.com/fwlink/?LinkId=154995)(http://go.microsoft.com/fwlink/?LinkId=154995)。  
   
- 部署应用程序的步骤清单，请参阅[清单： 部署应用程序](../technical-guides/checklist-deploying-an-application.md)。  
+ 部署应用程序的步骤清单，请参阅[核对清单：将应用程序部署](../technical-guides/checklist-deploying-an-application.md)。  
   
 ## <a name="exporting-an-applications-bindings-by-using-a-binding-file"></a>使用绑定文件导出应用程序的绑定  
  使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，可以导出到绑定文件中，应用程序的绑定，然后这些绑定从文件导入绑定到另一个应用程序。 若要执行此操作，必须已经存在目标应用程序;导入过程不创建应用程序。 绑定文件是包含在应用程序、 组或程序集的所有项目的绑定的 XML 文件。 此外可以导出的 BizTalk 组，所有绑定或 BizTalk 程序集的绑定。 有关使用绑定的详细信息，请参阅[如何导出到绑定文件的绑定](../technical-guides/how-to-export-bindings-to-a-binding-file.md)并[如何从绑定文件导入绑定](../technical-guides/how-to-import-bindings-from-a-binding-file.md)。  

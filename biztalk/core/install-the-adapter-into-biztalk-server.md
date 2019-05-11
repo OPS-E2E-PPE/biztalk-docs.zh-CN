@@ -12,20 +12,20 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 13e810a14fec9b51c0d6b0ef1d7b55db234d0a0b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b8d6093776f0359e79731a3ba273e319e7cd3765
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005622"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65332013"
 ---
-# <a name="install-the-adapter-into-biztalk-server"></a>将适配器安装到 BizTalk Server 中
-在向注册表写入了正确的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 注册表项后，必须将适配器添加到 BizTalk 管理数据库中。 将适配器添加到此数据库之后，它将成为当前可配置的适配器，在正确配置后即可处理消息。 通过使用的适配器安装到数据库[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。 将适配器安装到数据库之后，请重新启动主机实例。  
+# <a name="install-the-adapter-into-biztalk-server"></a>将适配器安装到 BizTalk Server
+适当后[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]条目已写入的注册表必须将适配器添加到 BizTalk 管理数据库。 将适配器添加到此数据库后它是当前可配置的适配器，并已正确配置的情况下可以处理的消息。 通过使用的适配器安装到数据库[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。 在安装后，适配器在数据库中，重新启动主机实例。  
 
 > [!NOTE]
->  若要在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台中看到添加的适配器，必须在 HKLM 注册表中正确注册该适配器并实现必要的适配器接口。  
+>  要看到中添加[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，适配器必须在 HKLM 注册表中正确注册并且必须实现必要的适配器接口。  
 
-### <a name="to-install-the-static-sample-adapter"></a>安装示例静态适配器  
+### <a name="to-install-the-static-sample-adapter"></a>若要安装示例静态适配器  
 
 1. 单击**启动**，依次指向**所有程序**，指向[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
 
@@ -47,7 +47,7 @@ ms.locfileid: "37005622"
 
 6. 单击“确定” 。  
 
-    此时，该静态适配器将显示在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台右侧窗口的适配器列表中。  
+    静态适配器现在显示在右侧窗口中的适配器列表[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。  
 
 ### <a name="to-stop-and-restart-the-host-instance"></a>若要停止并重新启动主机实例  
 

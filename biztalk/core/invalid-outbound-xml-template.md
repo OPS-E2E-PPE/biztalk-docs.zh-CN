@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 92b48f40ad758d61b802ed7e514e2e687a005842
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1b0978c88e1392c506970b11bac9774c1f48eb5a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011902"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330769"
 ---
 # <a name="invalid-outbound-xml-template"></a>出站 XML 模板无效
 ## <a name="details"></a>详细信息  
@@ -33,10 +33,10 @@ ms.locfileid: "37011902"
 |  消息正文   |                           出站 XML 模板无效                            |
   
 ## <a name="explanation"></a>解释  
- 可能存在多个原因。 出站 WCF 消息正文模板可能不是有效的 XML。 给定的编码中可能包含无效字符。 根元素可能丢失。 根级别的数据可能无效。  
+ 可能有多个原因。 出站 WCF 消息正文模板可能不是有效的 XML。 它可能包含给定编码中的无效字符。 可能缺少根元素。 根级别的数据可能无效。  
   
 ## <a name="user-action"></a>用户操作  
- 确保模板表达式具有有效的 XML 代码。 确保其中不包含任何无效字符，并且只有一个根元素。  
+ 请确保模板表达式具有有效的 XML 代码。 请确保它不包含任何无效字符，并且没有只有一个根元素。  
   
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
@@ -58,6 +58,6 @@ ms.locfileid: "37011902"
   
 10. 在中**XML**文字框中，确保 XML 代码有效。  
   
-    有关模板的其他信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+    有关模板的其他信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
   
 -   [指定 WCF 适配器的消息正文](../core/specifying-the-message-body-for-the-wcf-adapters.md)

@@ -1,5 +1,5 @@
 ---
-title: 文档中的 XML 反汇编程序管道组件的结构强制 |Microsoft 文档
+title: 文档结构强制规定在 XML 拆装器管道组件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,18 +15,18 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e14b20292b23a0f50362940e3b873fa37a3f5bd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f7e4c7d2d99874684d80c7c413040d7da8ecf0b8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238501"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65350916"
 ---
-# <a name="document-structure-enforcement-in-the-xml-disassembler-pipeline-component"></a>XML 反汇编程序管道组件中的文档结构强制
-如果在 XML 拆装器中显式引用文档架构或信封架构，则 XML 拆装器只处理消息类型符合该架构的文档。 其他文档均不处理，而不管是否为其引用了已部署的架构。  
+# <a name="document-structure-enforcement-in-the-xml-disassembler-pipeline-component"></a>XML 拆装器管道组件中的文档结构强制规定
+如果在 XML 拆装器中显式引用文档或信封架构，XML 拆装器与符合架构的消息类型处理仅这些文档。 不处理任何其他文档，而不考虑它们是否引用了已部署的架构。  
   
- XML 拆装器强制要求指定的信封架构顺序；但不强制要求文档架构的顺序。  
+ XML 拆装器强制实施的信封架构; 指定的顺序但是，文档架构的顺序不强制执行。  
   
-## <a name="see-also"></a>另请参阅  
- [XML 反汇编程序管道组件](../core/xml-disassembler-pipeline-component.md)   
- [如何将 XML 反汇编程序管道组件配置](../core/how-to-configure-the-xml-disassembler-pipeline-component.md)
+## <a name="see-also"></a>请参阅  
+ [XML 拆装器管道组件](../core/xml-disassembler-pipeline-component.md)   
+ [如何配置 XML 拆装器管道组件](../core/how-to-configure-the-xml-disassembler-pipeline-component.md)

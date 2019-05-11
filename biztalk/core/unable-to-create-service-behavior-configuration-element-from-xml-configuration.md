@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6e1668e7e9159ef7c922c68b54893c604b84c560
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 04e172e54544ddfe0d2dd9404dbe1672be39a17f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017336"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292832"
 ---
 # <a name="unable-to-create-service-behavior-configuration-element-from-xml-configuration"></a>无法从 XML 配置创建服务行为配置元素
 ## <a name="details"></a>详细信息  
@@ -36,9 +36,9 @@ ms.locfileid: "37017336"
  此错误表示适配器未加载服务行为配置。 主要与 Wcf-custom 和 Wcf-customisolated 适配器出现这种情况。  
 
 ## <a name="user-action"></a>用户操作  
- 使用以下过程配置服务行为。  
+ 使用以下过程来配置服务行为。  
 
-#### <a name="to-configure-the-service-behavior"></a>配置服务行为的步骤  
+#### <a name="to-configure-the-service-behavior"></a>若要配置服务行为  
 
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
 

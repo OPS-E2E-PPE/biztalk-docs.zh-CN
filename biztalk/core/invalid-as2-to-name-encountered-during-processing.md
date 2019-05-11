@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 32ba8039d57bdc88f2aeed8e2654c5dc738f3d69
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cf17c8221686562ec6cc74578d646bb832d4ea22
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002669"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330901"
 ---
 # <a name="invalid-as2-to-name-encountered-during-processing"></a>无效的 AS2-到处理过程中遇到的名称
 ## <a name="details"></a>详细信息  
@@ -30,10 +30,10 @@ ms.locfileid: "37002669"
 |  事件源   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
 |    组件    |                                       AS2 引擎                                       |
 |  符号名称  |                            InvalidAS2ToNameEncounteredError                            |
-|  消息正文   |             处理过程中遇到无效的 AS2-To 名称。  值： {0}             |
+|  消息正文   |             无效的 AS2-到处理过程中遇到的名称。  值： {0}             |
   
 ## <a name="explanation"></a>解释  
- 此错误/警告/信息事件表明接收管道无法处理传入的交换或者发送管道无法处理传出的交换，因为 AS2-To 标头的值不符合 AS2 RFC 4130 中的规范。  
+ 此错误/警告/信息事件表明的接收管道无法处理传入的交换或发送管道无法处理传出的交换，因为 as2-To 标头不符合AS2 RFC 4130 中的规范。  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请确保传入或传出的消息中的 AS2-To 标头符合 AS2 RFC 4130 第 6.2 节中的规范。
+ 若要解决此错误，请确保 AS2-To 中传入或传出消息的标头符合 AS2 RFC 4130 第 6.2 节中的规范。

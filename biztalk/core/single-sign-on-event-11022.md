@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 11022 |Microsoft Docs
+title: 单一登录：事件 11022 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5c21128bb7804eae88eacc87cffb0fd0d2c0490c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6ee404410a4c1a03b4e910e8f1154edb82e90c11
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966782"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65266548"
 ---
-# <a name="single-sign-on-event-11022"></a>单一登录： 事件 11022
+# <a name="single-sign-on-event-11022"></a>单一登录：事件 11022
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                                                                                                                                                                                                                                |
@@ -28,12 +28,12 @@ ms.locfileid: "36966782"
 | 产品版本 |                                                                                                                                                                   [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                                                                                                                   |
 |    事件 ID     |                                                                                                                                                                                             11022                                                                                                                                                                                              |
 |  事件源   |                                                                                                                                                                                             ENTSSO                                                                                                                                                                                             |
-|    组件    |                                                                                                                                                                                              N/A                                                                                                                                                                                               |
+|    组件    |                                                                                                                                                                                              不可用                                                                                                                                                                                               |
 |  符号名称  |                                                                                                                                                                   SSO_WARN_EXTERNAL_TO_EXTERNAL_MAPPING_CONFLICT_NOT_ALLOWED                                                                                                                                                                   |
-|  消息正文   | 外部密码更改将导致不同外部帐户的更改。%r<br /><br /> 此操作已被阻止，因为此外部系统的适配器配置为不允许映射冲突。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> Windows 帐户: %3 %r<br /><br /> 外部帐户 1: %4 %r<br /><br /> 外部帐户 2: %5 |
+|  消息正文   | 外部密码更改将导致另一外部帐户 changed.%r<br /><br /> 这已被阻止，因为此外部系统的适配器配置为不允许映射 conflicts.%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> Windows 帐户: %3 %r<br /><br /> 外部帐户 1: %4 %r<br /><br /> 外部帐户 2: %5 |
   
 ## <a name="explanation"></a>解释  
- 此信息消息表示，外部密码更改（可能导致不同的外部帐户更改）失败。  
+ 这是信息性消息，这会导致不同外部帐户更改外部密码更改失败。  
   
 ## <a name="user-action"></a>用户操作  
- 尽管没有做出任何更改（因为此系统配置为不允许映射冲突），您仍然应该立即确认这是利用您的信息和授权做出的更改。 如果是这样，无需进行任何操作。 如果不是，请查明进行更改的位置，并确认此更改位于系统中的安全位置。
+ 尽管不做任何更改 （因为此系统配置为允许映射冲突），但您应该立即确认利用信息和授权进行了此尝试。 如果是这样，不不需要任何操作。 如果没有，找出其中更改启动，并确认它已在系统中的安全位置。

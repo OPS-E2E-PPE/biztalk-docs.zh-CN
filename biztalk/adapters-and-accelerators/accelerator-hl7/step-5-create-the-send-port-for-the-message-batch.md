@@ -1,5 +1,5 @@
 ---
-title: 步骤 5： 为消息批处理创建发送端口 |Microsoft Docs
+title: 步骤 5：为消息批处理创建发送端口 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 24a71d788d0b12a3ffaef8f14ccd145ef61d673e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c4d69f21413e084ae81eda69827c079b39379bca
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002838"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65287968"
 ---
-# <a name="step-5-create-the-send-port-for-the-message-batch"></a>步骤 5： 为消息批处理创建发送端口
+# <a name="step-5-create-the-send-port-for-the-message-batch"></a>步骤 5：为消息批处理创建发送端口
 在此步骤中，您创建用于将您创建的消息批传送到目标参与方的发送端口。 这是一个静态单向端口与文件适配器类型。 指定用于目标 (\Tutorial_BatchMsgDrop) 的文件文件夹位置[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]会丢弃消息批处理文件。 定义用于指示哪种类型的消息批将发送端口的端口的筛选器。 筛选器指定的 Tutorial_BatchDest 和 OutboundBatch 的消息类型的目标。  
 
 > [!NOTE]
@@ -29,7 +29,7 @@ ms.locfileid: "37002838"
 
 1. 在 BizTalk Server 管理控制台中，右键单击**发送端口**，依次指向**新建**，然后单击**静态单向发送端口**。  
 
-2. 在“发送端口属性”对话框中，执行以下操作：  
+2. 在发送端口属性对话框中，请执行以下操作：  
 
 
    |   使用此选项    |                              执行的操作                               |
@@ -80,4 +80,4 @@ ms.locfileid: "37002838"
    > [!NOTE]
    >  如果并发冲突发生时**Tutorial_DestBatch**更新参与方，单击**确定**并关闭对话框。 在管理控制台中，右键单击**BizTalk 组**，单击**刷新**，然后重复步骤 1 和 2。  
 
-   请继续执行[步骤 6： 为确认批处理创建发送端口](../../adapters-and-accelerators/accelerator-hl7/step-6-create-the-send-port-for-the-acknowledgment-batch.md)。
+   请继续执行[步骤 6:为确认批处理创建发送端口](../../adapters-and-accelerators/accelerator-hl7/step-6-create-the-send-port-for-the-acknowledgment-batch.md)。

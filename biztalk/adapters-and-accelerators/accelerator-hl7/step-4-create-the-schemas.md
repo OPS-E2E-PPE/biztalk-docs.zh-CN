@@ -1,5 +1,5 @@
 ---
-title: 步骤 4： 创建架构 |Microsoft Docs
+title: 步骤 4：创建架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 914efbfe8632bb727724a5115f6423b9abb8f54f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 58f3e45216c9a38faf13001eb3842ef0db4976d9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000934"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288016"
 ---
-# <a name="step-4-create-the-schemas"></a>步骤 4： 创建架构
+# <a name="step-4-create-the-schemas"></a>步骤 4：创建架构
 在此步骤中，创建一个新的项目 (**BTAHL7 项目**)，其中包含此项目的项目： 架构、 映射和业务流程。 然后，创建一个架构 (**Doorbell.xsd**) 传入的 XML 编码的消息，并选择现有的架构 (**ADT_A04_22_GLO_DEF.xsd**) 对于传出 HL7 编码的消息。 使用这些架构来定义在业务流程内交换消息的结构。  
 
 ### <a name="to-create-the-schemas"></a>若要创建架构  
@@ -63,7 +63,7 @@ ms.locfileid: "37000934"
 
     -   **MiddleName**  
 
-    -   **姓氏**  
+    -   **LastName**  
 
     -   **SSN**  
 
@@ -94,7 +94,7 @@ ms.locfileid: "37000934"
 
 22. 在添加引用对话框中，单击**浏览**选项卡。在中**查找范围**框中，将移动到\<*驱动器*\>: \Program Files\Microsoft BizTalk\<版本\>Accelerator HL7\SDK\End 端到端教程\Tutorial_BTAHL7Drop\Bin。 单击**Microsoft.Solutions.BTAHL7.HL7Schemas.dll**，单击**添加**，然后单击**确定**。  
 
-    请继续执行[步骤 5： 提升架构属性](../../adapters-and-accelerators/accelerator-hl7/step-5-promote-schema-properties.md)。  
+    请继续执行[步骤 5:升级架构属性](../../adapters-and-accelerators/accelerator-hl7/step-5-promote-schema-properties.md)。  
 
 ## <a name="see-also"></a>请参阅  
  [消息充实教程](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

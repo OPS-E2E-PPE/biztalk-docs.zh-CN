@@ -12,25 +12,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 873e2b0ea1189586f9cabfbcb43c6ef276f34e0f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5b4fd7b2a38a5a5b4a8bbeb64ffd248502dcdb61
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007590"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65328310"
 ---
-# <a name="logical-functoids"></a>“判断”Functoid
+# <a name="logical-functoids"></a>判断 Functoid
 
 ## <a name="overview"></a>概述
 **逻辑**functoid 用于执行以下类型的操作：  
 
-- 在运行时执行特定的逻辑测试。 **逻辑或**，**逻辑非**并**逻辑和**functoid 可用于确定是否在目标实例消息中，如下所示创建一条记录：  
+- 执行特定的逻辑测试，在运行时。 **逻辑或**，**逻辑非**并**逻辑和**functoid 可用于确定是否在目标实例消息中，如下所示创建一条记录：  
 
    如果 ShipTo**或**orderedby 存在，创建 BillTo 地址记录。  
 
    此外可以结合使用这些 functoid**循环**functoid 配置记录的循环的次数。  
 
-- 控制在运行时是否在目标实例消息中创建特定记录。 如 Functoid **IsNil**，**数判断**，**小于**，以及**大于**可以用于控制是否创建一条记录。  
+- 控制在运行时是否创建目标实例消息中包含的特定记录。 如 Functoid **IsNil**，**数判断**，**小于**，以及**大于**可以用于控制是否创建一条记录。  
 
    如果一个这些判断 functoid 的结果是 **，则返回 True**，生成的目标实例消息中相应记录中。 如果结果为**False**，不生成目标实例消息中的相应记录中。  
 
@@ -44,7 +44,7 @@ ms.locfileid: "37007590"
 >  如果两个记录或源架构中的字段链接到两个不同**逻辑**functoid，然后将每个链接**逻辑**functoid 到目标架构中的相同记录仅在首**逻辑**functoid 用于在生成可扩展样式表语言转换 (XSLT)。 第二个链接，从第二个**逻辑**functoid，将被忽略。  
 
 > [!NOTE]
->  “判断”functoid 在比较两个字符串时区分大小写。 例如，“Abc”和“abc”并不等效。 此规则的例外是何时**逻辑**functoid 比较表示布尔值的字符串**True**并**False**。 例如，“True”和“true”是等效的。  
+>  比较两个字符串时，判断 functoid 是区分大小写。 例如，"Abc"和"abc"不相等。 此规则的例外是何时**逻辑**functoid 比较表示布尔值的字符串**True**并**False**。 例如，"True"和"true"相等。  
 
 ## <a name="available-functoids"></a>可用的 functoid  
  **逻辑**functoid 包括： 

@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d17d5d64409cd434075dfd4c556209864784e4d5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 783bcb19bacfde3833065ddcc18f5889b83881d6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287869"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292580"
 ---
 # <a name="value-mapping-flattening-functoid"></a>“值映射(平展)”Functoid
 **值映射 （平展）** functoid，可通过将多个记录转换为单个记录平展输入的实例消息的一部分。 在转换 Microsoft Commerce Server 目录时通常执行此操作。  

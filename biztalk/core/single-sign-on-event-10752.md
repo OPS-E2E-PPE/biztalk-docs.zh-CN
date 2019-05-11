@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10752 |Microsoft Docs
+title: 单一登录：Event 10752 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d6e07bfc2ab0dc3afd65356e9c18bd9efc96b6c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 700356193d5706dbaf53def1906e63f60d73b138
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018111"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65307766"
 ---
-# <a name="single-sign-on-event-10752"></a>单一登录： 事件 10752
+# <a name="single-sign-on-event-10752"></a>单一登录：事件 10752
 ## <a name="details"></a>详细信息  
   
 |                 |                                                            |
@@ -28,12 +28,12 @@ ms.locfileid: "37018111"
 | 产品版本 | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
 |    事件 ID     |                           10752                            |
 |  事件源   |                           ENTSSO                           |
-|    组件    |                            N/A                             |
+|    组件    |                            不可用                             |
 |  符号名称  |                    ENTSSO_E_APP_EXISTS                     |
-|  消息正文   |              该应用程序已存在。               |
+|  消息正文   |              应用程序已存在。               |
   
 ## <a name="explanation"></a>解释  
- 具有此名称的应用程序已经存在。  
+ 具有此名称的应用程序已存在。  
   
 ## <a name="user-action"></a>用户操作  
- 为新的应用程序提供一个不同的名称。
+ 为新应用程序指定不同的名称。

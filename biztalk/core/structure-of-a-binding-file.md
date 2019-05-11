@@ -1,5 +1,5 @@
 ---
-title: 绑定文件的结构 |Microsoft 文档
+title: 绑定文件的结构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,21 +15,21 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19d93ffafc9c1cefe17f9d25d420e2ec6f99478c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dec656dae6f69b2ab74ea1bb8c27f469a3de1a0e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277765"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65244132"
 ---
 # <a name="structure-of-a-binding-file"></a>绑定文件的结构
-从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台导出的绑定文件的结构符合用于描述所有绑定文件的架构。  
+绑定从导出的文件的结构[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中遵循的架构，用于描述所有绑定文件。  
   
- 当手动修改通过 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台导出的绑定文件时，可参考本主题。  
+ 本主题应该用作参考，手动修改与导出的绑定文件时[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [绑定信息节点](../core/bindinginfo-node.md)  
+-   [BindingInfo 节点](../core/bindinginfo-node.md)  
   
     -   [ModuleRefCollection 节点](../core/modulerefcollection-node.md)  
   

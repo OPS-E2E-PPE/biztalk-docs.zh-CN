@@ -22,19 +22,19 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fb7cab4ba412a46f61df89daefd86df260454195
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cd0ec4be1703c81061cf38310a467932a917bca3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976222"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283232"
 ---
 # <a name="mapping-a-request-to-a-response-in-a-private-process"></a>将请求映射为在专用流程中的响应
 本主题介绍如何将专用响应方流程收到的请求消息映射 — 从 Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]公用响应方流程，可以发送到的响应消息[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]公用响应方流程。  
   
- 当响应方收到请求消息时，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将请求消息从公用业务流程路由到专用业务流程，再路由到业务线 (LOB) 程序。 响应方需要来自 LOB 程序的响应服务内容，以生成返回给发起方的 RosettaNet 响应消息。 响应消息中的许多元素是用请求消息中的值填充的。 因此，可以将映射并入响应方专用业务流程中，以帮助 LOB 程序生成所需格式的响应服务内容消息。  
+ 当响应方接收请求消息时，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]到专用业务流程的业务流程，从公用流程，将请求消息路由至业务 (LOB) 程序。 响应方需要来自 LOB 程序生成回发起方的 RosettaNet 响应消息的响应服务内容。 许多响应消息中的元素是使用请求消息中的值进行填充。 因此，可以将合并在响应方专用流程业务流程，以帮助 LOB 程序生成所需格式的响应服务内容消息映射。  
   
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK 包含的以下示例可供你在将映射添加到响应方专用流程时使用：  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK 包含将映射添加到响应方专用业务流程时，可以使用以下示例：  
   
 -   [3A2 请求到 3A2 响应映射示例](../../adapters-and-accelerators/accelerator-rosettanet/3a2-request-to-3a2-response-map-sample.md)  
   
@@ -50,7 +50,7 @@ ms.locfileid: "36976222"
   
 2.  上**文件**菜单，依次指向**打开**，然后单击**项目**。  
   
-3.  找到包含 BizTalk 项目的文件夹，该项目包含要添加映射的专用业务流程。  
+3.  找到包含包含你想要将地图添加专用业务流程的 BizTalk 项目的文件夹。  
   
 4.  在解决方案资源管理器中，右键单击项目，指向“添加”，然后单击“新建项”。  
   
@@ -66,20 +66,20 @@ ms.locfileid: "36976222"
   
 10. 右键单击\<*架构*\>节点的源架构，然后单击**展开树节点**。  
   
-11. 对于其他目标架构，请重复步骤 10。  
+11. 对于目标架构中重复步骤 10。  
   
-12. 在“源架构”窗格中，单击并按住一个要映射为目标架构中的某个字段的字段。 然后拖动到“目标架构”窗格中所对应的节点。  
+12. 在源架构窗格中，单击并按住你想要将映射到目标架构中的字段的字段。 将拖至目标架构窗格中的相应节点。  
   
-13. 对于需要在两个架构之间映射的每个字段，请重复步骤 12。  
+13. 对于具有两个架构之间进行映射的所有字段重复步骤 12。  
   
 14. 验证和测试映射。 有关详细信息，请参阅 BizTalk Server 帮助中的"编译和测试映射"主题。  
   
-### <a name="to-add-the-map-to-the-orchestration"></a>向业务流程添加映射  
+### <a name="to-add-the-map-to-the-orchestration"></a>若要将地图添加到业务流程  
   
-1.  在解决方案资源管理器中，双击专用业务流程。  
+1.  在解决方案资源管理器，双击专用业务流程。  
   
     > [!NOTE]
-    >  请确保业务流程具有对包含架构的程序集的引用。  
+    >  请确保该业务流程具有对包含架构的程序集的引用。  
   
 2.  在工具箱中，单击**转换**形状，并将其拖到业务流程具有将转换为响应消息的请求消息中的点。  
   
@@ -89,13 +89,13 @@ ms.locfileid: "36976222"
     > [!NOTE]
     >  有关如何将多个映射合并多个 Pip 的示例，请参阅[双操作 PIPAutomation 业务流程](../../adapters-and-accelerators/accelerator-rosettanet/double-action-pipautomation-orchestration.md)。  
   
-3.  在业务流程设计图面上，单击**揅 constructmessage1**。 在“属性”窗口中，键入形状的名称和要构造的消息的名称。  
+3.  在业务流程设计图面上，单击**揅 constructmessage1**。 在属性窗口中，键入该形状的名称和要构造的消息的名称。  
   
 4.  在业务流程设计图面上，单击**转换**。 在属性窗口中，单击省略号按钮 (**...**) 旁边**映射名称**。  
   
 5.  在转换配置窗口中，单击**现有的映射**，然后在**完全限定的映射名称**，单击刚创建的映射。  
   
-6.  下**转换**，单击**源**。 单击变量下的空框，然后从下拉列表中选择请求消息的名称。  
+6.  下**转换**，单击**源**。 单击变量下的空框，并从下拉列表中选择请求消息的名称。  
   
 7.  下**转换**，单击**目标**。 单击变量下的空框，然后从下拉列表中选择响应消息的名称。  
   

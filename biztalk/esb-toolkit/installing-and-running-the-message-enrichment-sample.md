@@ -1,5 +1,5 @@
 ---
-title: 安装和运行消息扩充示例 |Microsoft 文档
+title: 安装和运行消息充实示例 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f2d51ff89ecd9cda4c6f89550e6af9c350a78a0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3b73c8093003c0fb8ab9c3701f9b9420889fe698
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294861"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65295443"
 ---
-# <a name="installing-and-running-the-message-enrichment-sample"></a>安装和运行消息扩充示例
-消息扩充示例演示如何可以开发自定义路线服务，使通过查询数据库并将响应合并到你的消息应用消息扩展设计模式的业务流程。 此示例使用测试客户端应用程序的入口路线示例。  
+# <a name="installing-and-running-the-message-enrichment-sample"></a>安装和运行消息充实示例
+消息收集示例显示了如何开发业务流程作为自定义路线服务，以通过查询数据库并将响应合并到您的消息应用消息扩展设计模式。 此示例使用测试客户端应用程序的路线接入点示例。  
   
  本节包含下列主题：  
   
--   [安装消息扩充示例](../esb-toolkit/installing-the-message-enrichment-sample.md)  
+-   [安装消息充实示例](../esb-toolkit/installing-the-message-enrichment-sample.md)  
   
--   [程序集和项目安装消息扩充示例](../esb-toolkit/assemblies-and-artifacts-installed-by-the-message-enrichment-sample.md)  
+-   [消息充实示例安装的程序集和项目](../esb-toolkit/assemblies-and-artifacts-installed-by-the-message-enrichment-sample.md)  
   
--   [运行消息扩充示例](../esb-toolkit/running-the-message-enrichment-sample.md)  
+-   [运行消息充实示例](../esb-toolkit/running-the-message-enrichment-sample.md)  
   
--   [消息扩充示例的工作原理](../esb-toolkit/how-the-message-enrichment-sample-works.md)
+-   [消息充实示例工作原理](../esb-toolkit/how-the-message-enrichment-sample-works.md)

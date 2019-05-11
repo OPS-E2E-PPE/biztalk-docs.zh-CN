@@ -1,5 +1,5 @@
 ---
-title: 步骤 5： 创建 Contoso 3A2 贸易合作伙伴协议 |Microsoft Docs
+title: 步骤 5：创建 Contoso 3A2 贸易合作伙伴协议 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,21 +16,21 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c5d4004b7ac0d068a2f2621affc34f18ecf21f9b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9a243ee66927d5a969a353f9fa9e5aaef3a8744c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970622"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280882"
 ---
-# <a name="step-5-creating-the-contoso-3a2-trading-partner-agreement"></a>步骤 5： 创建 Contoso 3A2 贸易合作伙伴协议
-在此步骤中，创建 Contoso 和 Fabrikam 使用 Microsoft® 之间的贸易合作伙伴协议[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]管理控制台。 并为 3A2 合作伙伴接口流程 (PIP) 创建新的贸易合作伙伴协议。  
+# <a name="step-5-creating-the-contoso-3a2-trading-partner-agreement"></a>步骤 5：创建 Contoso 3A2 贸易合作伙伴协议
+在此步骤中，创建 Contoso 和 Fabrikam 使用 Microsoft® 之间的贸易合作伙伴协议[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]管理控制台。 创建新的贸易合作伙伴协议为 3A2 合作伙伴接口流程 (PIP)。  
 
-### <a name="to-start-the-btarn-management-console"></a>启动 BTARN 管理控制台  
+### <a name="to-start-the-btarn-management-console"></a>若要启动 BTARN 管理控制台  
 
 - 单击**启动**，依次指向**所有程序**，指向**Microsoft BizTalk\<版本\>Accelerator for RosettaNet**，然后单击**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台。  
 
-### <a name="to-create-the-3a2-trading-partner-agreement"></a>创建 3A2 贸易合作伙伴协议  
+### <a name="to-create-the-3a2-trading-partner-agreement"></a>若要创建 3A2 贸易合作伙伴协议  
 
 1. 在中**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台中，展开[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]，右键单击**协议**，指向**新建**，然后单击**协议**.  
 
@@ -53,9 +53,9 @@ ms.locfileid: "36970622"
 
    |    使用此选项    |                          执行的操作                           |
    |----------------|---------------------------------------------------------------|
-   | **操作 URL** | 类型**https://<fabrikam_machine>/BTARNApp/RNIFReceive.aspx** |
-   | **信号 URL** | 类型**https://<fabrikam_machine>/BTARNApp/RNIFReceive.aspx** |
-   |  **同步 URL**  | 类型**https://<fabrikam_machine>/BTARNApp/RNIFReceive.aspx** |
+   | **操作 URL** | Type **https://<fabrikam_machine>/BTARNApp/RNIFReceive.aspx** |
+   | **信号 URL** | Type **https://<fabrikam_machine>/BTARNApp/RNIFReceive.aspx** |
+   |  **同步 URL**  | Type **https://<fabrikam_machine>/BTARNApp/RNIFReceive.aspx** |
 
 
 4. 单击“确定” 。  

@@ -16,23 +16,23 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ea48ab7afeae2b54136c9134d3ef92878b802924
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d8a133dc15f88d35fe55d82c651738b15af69133
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985366"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65244331"
 ---
-# <a name="soap-headers-with-published-wcf-services"></a>SOAP 标头与发布的 WCF 服务
-WCF 接收适配器可以将所有 SOAP 标头值都复制到的入站消息中**InboundHeaders**属性，也可以写入或升级到 BizTalk 消息上下文的指定的值。 这些适配器可以处理 WCF 基础结构使用的自定义 SOAP 标头和标准 SOAP 标头，如 WS-Addressing、WS-Security 和 WS-AtomicTransaction。 **InboundHeaders**上下文属性位于目标命名空间**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**，并包含入站消息中的 SOAP 标头值的字符串表示形式。  
+# <a name="soap-headers-with-published-wcf-services"></a>SOAP 标头与已发布的 WCF 服务
+WCF 接收适配器可以将所有 SOAP 标头值都复制到的入站消息中**InboundHeaders**属性，也可以写入或升级到 BizTalk 消息上下文的指定的值。 适配器可以使用自定义 SOAP 标头和标准 SOAP 标头，WCF 基础结构使用，如 Ws-addressing、 Ws-security 和 WS-AtomicTransaction。 **InboundHeaders**上下文属性位于目标命名空间**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**，并包含入站消息中的 SOAP 标头值的字符串表示形式。  
   
 > [!NOTE]
->  如果要升级您指定的 SOAP 标头值，BizTalk 项目中必须有与您要升级的值对应的已部署属性架构。  
+>  如果要升级指定的 SOAP 标头值，对应于要升级的值在 BizTalk 项目中必须是已部署的属性架构。  
   
 > [!NOTE]
->  升级后的属性不得超过 256 个字符。  
+>  升级的属性不能超过 256 个字符。  
   
- 以下 XML 数据显示为 SOAP 标头的字符串表示形式的示例**InboundHeaders**属性。 这来自客户端，并将发送到 BizTalk 接收位置。  
+ 以下 XML 数据显示为 SOAP 标头的字符串表示形式的示例**InboundHeaders**属性。 这来自客户端和发送到 BizTalk 接收位置。  
   
 ```  
 <headers>  
@@ -44,7 +44,7 @@ WCF 接收适配器可以将所有 SOAP 标头值都复制到的入站消息中*
 </headers>  
 ```  
   
- 若要将 SOAP 标头值写入或升级到 BizTalk 消息上下文，需要将由属性名称和命名空间组成的值对的集合放入 WCF 消息中，这样 WCF 适配器就可以知道将写入或升级这些标头值。 在将 SOAP 标头值写入或升级到 BizTalk 消息上下文时，WCF 适配器需要获取 WCF 消息中的以下消息属性：  
+ 若要写入或升级到 BizTalk 消息上下文的 SOAP 标头值，需要将包含属性名称和命名空间为 WCF 消息，使 WCF 适配器能够识别的标头值是以写入或升级的值对的集合。 WCF 适配器需要下面的消息属性中的 WCF 消息的写入或升级到 BizTalk 消息上下文的 SOAP 标头值：  
   
 - 若要升级到 BizTalk 消息上下文的 SOAP 标头值，WCF 适配器会寻找的密钥对**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote**和值**列表\<KeyValuePair\<XmlQualifiedName，对象\>\>**.  
   
@@ -52,9 +52,9 @@ WCF 接收适配器可以将所有 SOAP 标头值都复制到的入站消息中*
   
 - 若要编写，而不是升级到 BizTalk 消息上下文的 SOAP 标头值，WCF 适配器会寻找的密钥对**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/WriteToContext**和值**列表\<KeyValuePair\<XmlQualifiedName，对象\>\>**。  
   
-   WCF 适配器使用此对将这些值写入消息上下文。  
+   WCF 适配器使用此对写入到消息上下文的值。  
   
-  以下代码显示的是如何将 SOAP 标头值写入或升级到 BizTalk 消息上下文：  
+  下面的代码演示如何写入或升级到 BizTalk 消息上下文的 SOAP 标头值：  
   
 ```  
 const string PropertiesToPromoteKey="http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties/Promote";  
@@ -75,9 +75,9 @@ writeProps.Add(new KeyValuePair<XmlQualifiedName, object>(PropName2, "Property v
 wcfMessage.Properties[PropertiesToWriteKey]=writeProps;  
 ```  
   
- BizTalk WCF 服务发布向导未将自定义 SOAP 标头定义包含在生成的元数据中。 若要使用自定义 SOAP 标头发布 WCF 服务的元数据，应手动创建 Web Services 描述语言 (WSDL) 文件。 可以使用**externalMetadataLocation**的属性[ \<serviceMetadata\> ](http://go.microsoft.com/fwlink/?LinkId=89121)元素中的 Web.config 文件，该向导将生成指定的位置WSDL 文件。 会向用户返回该 WSDL 文件以响应 WSDL 和元数据交换 (MEX) 请求，而不是返回自动生成的 WSDL。  
+ BizTalk WCF 服务发布向导不包括在生成的元数据中的自定义 SOAP 标头定义。 若要发布的 WCF 服务使用自定义 SOAP 标头的元数据，应手动创建 Web 服务描述语言 (WSDL) 文件。 可以使用**externalMetadataLocation**的属性[ \<serviceMetadata\> ](http://go.microsoft.com/fwlink/?LinkId=89121)元素中的 Web.config 文件，该向导将生成指定的位置WSDL 文件。 WSDL 文件返回到用户以响应 WSDL 和元数据交换 (MEX) 请求，而不是自动生成的 WSDL。  
   
- 以下 XML 数据显示的示例是定义自定义 SOAP 标头的 WSDL 文件的一部分：  
+ 下面的 XML 数据显示了一部分定义自定义 SOAP 标头的 WSDL 文件的示例：  
   
 ```  
 <wsdl:operation name="Request">  

@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 45f92f4cc994b4139c1c33423cc7a94c9072e226
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8b7eac14a49abbaa3044b1f051cfb23c2f504950
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36965902"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65296268"
 ---
 # <a name="install-the-required-software-utilities-and-samples"></a>安装所需的软件、 实用工具和示例
 本教程需要安装 Microsoft Windows Server 和自定义 Microsoft[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]包括 MLLP 测试工具的安装。 此外，您应熟悉[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]在 Microsoft 中的进行开发[!INCLUDE[btsVCSharp](../../includes/btsvcsharp-md.md)]并[了解 HL7 加速器及可用的 BizTalk 工具](../../adapters-and-accelerators/accelerator-hl7/learn-the-hl7-accelerator-and-the-biztalk-tools-available.md)。

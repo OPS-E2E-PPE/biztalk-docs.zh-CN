@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10551 |Microsoft Docs
+title: 单一登录：事件 10551 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a014d9fa9adec99a05eba3f4a0f17047e2e1175
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 87e1965abac7bf861cfc90cfb2981b5ac30bd5b9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973486"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65250254"
 ---
-# <a name="single-sign-on-event-10551"></a>单一登录： 事件 10551
+# <a name="single-sign-on-event-10551"></a>单一登录：事件 10551
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                                                               |
@@ -28,12 +28,12 @@ ms.locfileid: "36973486"
 | 产品版本 |                                                                                  [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                                   |
 |    事件 ID     |                                                                                                             10551                                                                                                             |
 |  事件源   |                                                                                                            ENTSSO                                                                                                             |
-|    组件    |                                                                                                              N/A                                                                                                              |
+|    组件    |                                                                                                              不可用                                                                                                              |
 |  符号名称  |                                                                                                     SSO_WARN_INVALID_USER                                                                                                     |
 |  消息正文   | 无法创建映射，因为指定的用户不是有效 application.%r<br /><br /> 域名: %1 %r<br /><br /> 用户名: %2 %r<br /><br /> 应用程序名称: %3 %r<br /><br /> 应用程序用户： %4 |
   
 ## <a name="explanation"></a>解释  
- 指定的用户无效。 这可能是拼写错误。  
+ 指定的用户不是有效的。 这可能是类型化错误。  
   
 ## <a name="user-action"></a>用户操作  
- 检查警告信息中列出的用户名，确认它是否正确性，然后再次创建该映射。
+ 检查用户名称列出在警告信息中，确认它是否正确，然后创建该映射再次。

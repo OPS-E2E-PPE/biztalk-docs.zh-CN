@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5adf138a53e17cb0dfb4b52e70818632a5e52b59
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a40f6ce64351136f13288655fb5c51952896ee85
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986126"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292722"
 ---
 # <a name="unable-to-merge-operations"></a>无法合并操作
 ## <a name="details"></a>详细信息  

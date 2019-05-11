@@ -13,29 +13,29 @@ caps.latest.revision: 28
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e345e001d354cf925a68bc33d43f09bb42ad2761
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7066dd3a0c3ff571bd6cba879f4d7d730f4184ec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980494"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359454"
 ---
 # <a name="administrative-and-performance-tools"></a>管理用户和性能工具 
 
 ## <a name="tools-list"></a>工具列表
 可以使用以下工具来管理 BizTalk ServerBizTalk 服务器来管理 BizTalk Server 组来部署 BizTalk Server 应用程序，以与贸易合作伙伴进行交互并监视 BizTalk Server 的状态：  
   
-- **BizTalk Server 管理控制台**。 在 BizTalk Server 管理控制台是 BizTalk Server 的主要管理工具。 使用它提供的图形化用户界面，可以执行对 BizTalk 应用程序的所有部署操作。 例如，可以启动导入向导、安装向导和导出向导，添加和删除应用程序项目，以及对应用程序进行其他修改。  
+- **BizTalk Server 管理控制台**。 在 BizTalk Server 管理控制台是 BizTalk Server 的主要管理工具。 它提供用于执行所有 BizTalk 应用程序的部署操作的图形用户界面。 例如，可以启动导入、 安装和导出向导，以及添加和删除应用程序的项目和对应用程序进行其他修改。  
   
-   使用 BizTalk Server 管理控制台，可用于查看实时或存档的消息事件或服务实例数据跟踪您的 BizTalk Server 实施的运行状况、 确定瓶颈和监视 BizTalk Server 环境。 您可以查看特定业务流程、管道或消息实例的详细技术信息，并查看进入系统的特定消息的消息流。  
+   使用 BizTalk Server 管理控制台，可用于查看实时或存档的消息事件或服务实例数据跟踪您的 BizTalk Server 实施的运行状况、 确定瓶颈和监视 BizTalk Server 环境。 您可以查看特定的业务流程、 管道或消息实例的技术详细信息，以及查看进入系统的特定消息的消息流。  
   
    有关使用 BizTalk Server 管理控制台的信息，请参阅[使用 BizTalk Server 管理控制台](../core/using-the-biztalk-server-administration-console.md)。  
   
-- **BTSTask 命令行工具**。 使用 BTSTask 工具可以通过命令行执行许多管理任务。 有关使用 BTSTask 的详细信息，请参阅[BTSTask 命令行参考](../core/btstask-command-line-reference.md)。  
+- **BTSTask 命令行工具**。 BTSTask，可从命令行执行许多管理任务。 有关使用 BTSTask 的详细信息，请参阅[BTSTask 命令行参考](../core/btstask-command-line-reference.md)。  
   
 - **脚本和可编程 Api**。 Microsoft Windows Management Instrumentation (WMI) 对象模型可用于创建和运行自动执行管理任务的脚本。 有关使用 WMI 的信息，请参阅**WMI 类引用** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
   
-   WMI 对象模型公开并简化了管理 API。 所有管理 API 均可公开对其管理的每个对象的以下特定形式操作：创建、枚举、修改和删除。 WMI 可对所有 WMI 对象一致地公开此功能。  
+   WMI 对象模型公开并简化了管理 Api。 所有管理 Api 都公开的某种形式对其管理的每个对象执行以下操作： 创建、 枚举、 修改和删除。 WMI 中的所有 WMI 对象一致的方式公开此功能。  
   
 - **业务活动监视 (BAM)。** BAM 使用 Microsoft Office Excel 工作簿为业务用户提供一种方法，以查看业务流程的实时整体视图。 有关 BAM 的详细信息，请参阅[使用业务活动监视](../core/using-business-activity-monitoring.md)。  
 

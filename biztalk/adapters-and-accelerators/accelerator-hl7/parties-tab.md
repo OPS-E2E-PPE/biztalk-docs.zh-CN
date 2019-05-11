@@ -13,12 +13,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b048cccdcc46f4713967003c81671e062420377
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 513ee55c2c934c30944916dd4342a82873208215
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976310"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65290003"
 ---
 # <a name="parties-in-btahl7-configuration-explorer"></a>BTAHL7 配置资源管理器中的参与方
 您使用**参与方**选项卡以查看可用的参与方和指定[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]配置选择，为特定参与方，并配置确认的属性。 

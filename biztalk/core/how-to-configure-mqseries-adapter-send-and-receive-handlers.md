@@ -19,12 +19,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 88c97b109146dadd1a5cc90710f00c9c8f6620f8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5b2b40729dfd8e1f6e4077149a3c360dc35cc81e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988894"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65341312"
 ---
 # <a name="how-to-configure-mqseries-adapter-send-and-receive-handlers"></a>如何配置 MQSeries 适配器发送和接收处理程序
 你可以配置某些属性的发送和接收处理程序，MQSeries 适配器通过 BizTalk Server 管理控制台。 该过程中所述[如何配置 MQSeries 适配器接收位置和发送端口](../core/how-to-configure-mqseries-adapter-receive-locations-and-send-ports.md)建立大部分发送处理程序属性的值。  
@@ -54,7 +54,7 @@ ms.locfileid: "36988894"
 7. 单击“确定” 。  
 
    > [!NOTE]
-   >  “接收位置”和“发送端口”属性将替代“接收处理程序”和“发送处理程序”的值。 如果“接收位置”或“发送端口”属性未设置值，则适配器将分别采用“接收处理程序”和“发送处理程序”的值。  
+   >  接收位置和发送端口属性重写的接收处理程序和发送处理程序值。 如果没有为接收位置或发送端口属性的值，适配器将分别使用的接收处理程序和发送处理程序值。  
 
 8. 单击“确定” 。  
 

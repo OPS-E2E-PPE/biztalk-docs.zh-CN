@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a2cac1ea6e940385fceac541df96582f93eb058e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e5cb408e59f6817be9aa06f94d3b83d90f07c494
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008166"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359924"
 ---
-# <a name="agreement-resolution-based-on-the-context-properties-for-protocol-has-failed"></a>基于协议上下文属性的协议解析失败
+# <a name="agreement-resolution-based-on-the-context-properties-for-protocol-has-failed"></a>解决方法基于上下文属性适用于协议的协议已失败
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                        |
@@ -33,7 +33,7 @@ ms.locfileid: "37008166"
 |  消息正文   |   基于上下文属性的协议解析{0}协议已失败。    |
   
 ## <a name="explanation"></a>解释  
- 此错误/警告/信息事件表明 BizTalk Server 无法基于客户提供的上下文属性解析为协议。  
+ 此错误/警告/信息事件表明 BizTalk Server 无法解析为协议基于客户提供的上下文属性。  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请作为 BizTalk 消息的一部分提供上下文属性，以便可以进行协议解析。
+ 若要解决此错误，请提供上下文属性作为 BizTalk 消息的一部分，以便可以进行协议解析。

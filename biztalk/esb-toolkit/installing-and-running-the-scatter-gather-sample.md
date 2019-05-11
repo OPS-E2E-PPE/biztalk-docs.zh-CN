@@ -1,5 +1,5 @@
 ---
-title: 安装和运行散播-聚集示例 |Microsoft 文档
+title: 安装和运行分散-集中示例 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 37dfb47a4b66b98cf0d20c699e388e410456246c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b7e317f5bb2e9dae1f05d79ad3113f4e81436024
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294029"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65295340"
 ---
-# <a name="installing-and-running-the-scatter-gather-sample"></a>安装和运行散播-聚集示例
-散播-聚集示例演示如何可以开发自定义的路线步骤，以通过解决和发送到多个服务的异步请求并聚合到其异步响应应用散播-聚集设计模式作为业务流程要将转发给另一个终结点位置的单个响应消息。 此示例使用的测试客户端应用程序的入口路线示例和动态解析示例随附的项目。  
+# <a name="installing-and-running-the-scatter-gather-sample"></a>安装和运行分散-集中示例
+分散-集中示例演示如何开发业务流程作为自定义路线步骤来解决和将异步请求发送到多个服务和聚合到其异步响应应用散播-聚集设计模式若要将转发到另一个终结点位置的单个响应消息。 此示例使用路线接入点示例随附的测试客户端应用程序和动态解析示例随附的项目。  
   
  本节包含下列主题：  
   
--   [安装散播-聚集示例](../esb-toolkit/installing-the-scatter-gather-sample.md)  
+-   [安装“分散-集中”示例](../esb-toolkit/installing-the-scatter-gather-sample.md)  
   
--   [程序集和项目安装散播-聚集示例](../esb-toolkit/assemblies-and-artifacts-installed-by-the-scatter-gather-sample.md)  
+-   [“分散-集中”示例安装的程序集和项目](../esb-toolkit/assemblies-and-artifacts-installed-by-the-scatter-gather-sample.md)  
   
--   [运行散播-聚集示例](../esb-toolkit/running-the-scatter-gather-sample.md)  
+-   [运行“分散-集中”示例](../esb-toolkit/running-the-scatter-gather-sample.md)  
   
--   [散播-聚集示例的工作原理](../esb-toolkit/how-the-scatter-gather-sample-works.md)
+-   [工作原理](../esb-toolkit/how-the-scatter-gather-sample-works.md)

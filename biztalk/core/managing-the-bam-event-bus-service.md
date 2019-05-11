@@ -19,24 +19,24 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f84b05dfe668e9777fd0d4e3ef5157bf90c59fe0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2c9c2851ed6e4c126475ad21f65999a131b24629
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996030"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65329067"
 ---
 # <a name="managing-the-bam-event-bus-service"></a>管理 BAM 事件总线服务
-“BAM 事件总线服务”也称为“跟踪数据解码服务 (TDDS)”，该服务处理源数据库中存储的跟踪数据（数据流），并将这些数据以日后可轻松查询的方式保存。  
+BAM 事件总线服务，也称为跟踪数据解码服务 (TDDS)，处理存储在源数据库中的跟踪数据 （流） 并将数据的方式很容易地在以后对其进行查询的持续。  
   
- BAM 事件总线服务将商业智能数据移动到 BAM 主导入数据库，而将 BizTalk 运行状况监视数据移动到 DTA 数据库。 BAM 事件总线服务作为 BizTalk 服务中的子服务运行。  
+ BAM 事件总线服务将商业智能数据到 BAM 主导入数据库和 BizTalk 运行状况监视数据移动到 DTA 数据库。 BAM 事件总线服务作为 BizTalk 服务中的子服务运行。  
   
  通过在执行期间，收集事件数据并将临时数据存储于应用程序状态与同一数据库中监视的活动事务的应用程序，如 Microsoft BizTalk® Server — 例如，MessageBox 数据库。  
   
 > [!NOTE]
->  避免创建承载在同一计算机上的跟踪不同 BizTalk 组的多个应用程序实例。 如果同一台计算机中存在多个跟踪不同 BizTalk 组的实例，您将无法在 BizTalk 管理控制台或事件日志中区分哪个事件属于哪个 BizTalk 组，因为所有 BizTalk 组都显示为相同的名称。  
+>  避免创建承载在同一计算机上的跟踪不同 BizTalk 组的多个应用程序实例。 如果在同一台计算机上存在跟踪不同 BizTalk 组的实例，您将不能区分哪个事件属于哪个 BizTalk 组在 BizTalk 管理控制台或事件日志中，因为所有 BizTalk 组都显示相同名称。  
   
- BAM 事件总线服务读取并解码事件数据，然后将其存储到 Microsoft SQL Server™ 数据库中，在该数据库中，您可以轻松查询数据。  
+ BAM 事件总线服务读取事件数据、 进行解码，并存储在 Microsoft SQL Server™ 数据库中，可以方便地查询数据。  
   
  BAM 事件总线服务提供以下优势：  
   

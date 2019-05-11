@@ -1,5 +1,5 @@
 ---
-title: 步骤 9： 重启 BizTalk Server_hl7_main |Microsoft Docs
+title: 步骤 9：重启 BizTalk Server_hl7_main |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,14 +14,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2abc2b1b369c42155652e7d2ea737ddee87d4c8c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1ccd6f989a931cdd689be9753b513c752e633a1f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986630"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286657"
 ---
-# <a name="step-9-restart-biztalk-serverhl7main"></a>步骤 9： 重启 BizTalk Server_hl7_main
+# <a name="step-9-restart-biztalk-serverhl7main"></a>步骤 9：重启 BizTalk Server_hl7_main
 在此步骤中，您重新启动[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]为了使您所做的更改在本教程中才会生效。  
   
 ### <a name="to-restart-biztalk-server"></a>若要重新启动 BizTalk Server  
@@ -32,4 +32,4 @@ ms.locfileid: "36986630"
   
 3. 在主机实例窗格中，右键单击**BizTalkServerApplication**，然后单击**重新启动**。  
   
-   请继续执行[步骤 10： 验证询问方案](../../adapters-and-accelerators/accelerator-hl7/step-10-verify-the-interrogative-scenario.md)。
+   请继续执行[步骤 10:验证询问方案](../../adapters-and-accelerators/accelerator-hl7/step-10-verify-the-interrogative-scenario.md)。

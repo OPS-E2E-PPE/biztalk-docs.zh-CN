@@ -17,24 +17,24 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 38e00b7d20e6fd0aff4f6af72377e301a812b8fd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b8dd646a456a06d4ca032f6e68eadf386979bb15
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991998"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356960"
 ---
 # <a name="compiler-directives-and-links"></a>编译器指令和链接
-您可以按每个链接配置以下两条编译器指令：  
+你可以在链接的链接的基础上配置以下两条编译器指令：  
   
-- 从输入实例消息中检索哪些数据并将其复制为输出实例消息中相关的元素或属性值。  
+- 检索输入的实例消息中的哪些数据并将其复制为输出实例消息中的相关元素或属性值。  
   
   > [!NOTE]
-  >  此处的数据包括用于复制元素或属性的自身名称的选项，而不包括与元素或属性关联的任何值。 元素名称和属性名称并不像通常一样视为 XML 实例消息中所传递数据的一部分。  
+  >  此处的数据包括用于复制的元素或属性名称的选项本身，而不是元素或属性相关联的任何值。 元素和属性名称都不通常被视为 XML 实例消息中传送数据的一部分。  
   
-- 如何在源架构和目标架构之间实现节点匹配。  
+- 如何匹配节点是源和目标架构之间的执行。  
   
-  本部分详细说明了可用于这些指令的选项。  
+  本部分提供了这些选项可用于这些指令的详细的说明。  
   
 ## <a name="in-this-section"></a>本节内容  
   

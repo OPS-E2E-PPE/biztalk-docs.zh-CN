@@ -1,5 +1,5 @@
 ---
-title: 方案 1： 调整跟踪数据库的简单 BizTalk 消息大小 |Microsoft Docs
+title: 应用场景 1：为简单 BizTalk 消息调整跟踪数据库的大小 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,14 +14,14 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 13faa8f149c70d7647ff9f2dbf1d3718472f4a0b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e559869bfb62439bb5f83a97b528ecf6960e123f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006718"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65308615"
 ---
-# <a name="scenario-1-sizing-the-tracking-database--for-simple-biztalk-messages"></a>方案 1： 调整简单 BizTalk 消息的大小跟踪数据库
+# <a name="scenario-1-sizing-the-tracking-database--for-simple-biztalk-messages"></a>应用场景 1：为简单 BizTalk 消息调整跟踪数据库的大小
 在下图中，一个简单的 BizTalk Server 消息传递而无需进行任何消息转换入和移出 BizTalk Server。  
   
  ![简单的 BizTalk Server 消息&#45;无转换](../core/media/simple-bts-message.gif "Simple_BTS_Message")  
@@ -36,7 +36,7 @@ ms.locfileid: "37006718"
   
 - 一年中接收的消息数为 350 万条。  
   
-- 已打开对所有事件的跟踪。 在此方案中有四个事件。 这些事件是：  
+- 跟踪被打开的所有事件。 在此方案中有四个事件。 这些事件是：  
   
   -   接收消息 M0  
   
@@ -89,6 +89,6 @@ ms.locfileid: "37006718"
 ## <a name="see-also"></a>请参阅  
  [使用消息变量调整跟踪数据库的大小](../core/using-message-variables-to-size-the-tracking-database.md)   
  [调整跟踪数据库来跟踪消息正文大小](../core/sizing-the-tracking-database-to-track-message-bodies.md)   
- [方案 2： 业务流程中消息调整跟踪数据库](../core/scenario-2-sizing-the-tracking-database-for-messages-in-orchestrations.md)   
- [方案 4： 为所有消息调整跟踪数据库](../core/scenario-4-sizing-the-tracking-database-for-all-messages.md)   
- [方案 3：为发送到通讯组列表的消息调整跟踪数据库的大小](../core/scenario-3-size-the-tracking-database-for-messages-sent-to-distribution-lists.md)
+ [方案 2：为业务流程中消息调整跟踪数据库的大小](../core/scenario-2-sizing-the-tracking-database-for-messages-in-orchestrations.md)   
+ [方案 4:为所有消息调整跟踪数据库的大小](../core/scenario-4-sizing-the-tracking-database-for-all-messages.md)   
+ [方案 3:为发送到分发列表的消息调整跟踪数据库的大小](../core/scenario-3-size-the-tracking-database-for-messages-sent-to-distribution-lists.md)

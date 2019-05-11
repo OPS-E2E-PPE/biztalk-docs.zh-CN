@@ -10,12 +10,12 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ''
 ms.author: mandia
-ms.openlocfilehash: 80e813ced767cdd56910027b655060e1db9f91fe
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6149a1afd765aa2b030394ec15b73c7dd6072231
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011294"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65299997"
 ---
 # <a name="upgrade-the-rosettanet-accelerator"></a>升级 RosettaNet 加速器
 
@@ -24,11 +24,11 @@ ms.locfileid: "37011294"
   
  可以升级从以前版本的 BTARN 到通过运行 BTARN 安装程序。 安装程序会将 BTRAN 配置信息迁移到最新版本。  
   
- 在多服务器 BTARN 环境中，应升级所有 BizTalk Server，然后再到 BTARN。 请按以下顺序迁移服务器：  
+ 在多服务器 BTARN 环境中，应升级所有 BizTalk Server，然后再到 BTARN。 按以下顺序将服务器迁移：  
   
 - 承载 BizTalk 组的服务器  
   
-- 各个处理节点  
+- 每个处理节点  
   
 - BAM 门户服务器  
   
@@ -36,7 +36,7 @@ ms.locfileid: "37011294"
   
 - 检查 SQL Server (MSSQLSERVER) 服务是否正在运行。  
   
-- 切勿运行无提示安装。  
+- 不要运行无提示安装。  
   
 ## <a name="upgrade-steps"></a>升级步骤  
   
@@ -49,7 +49,7 @@ ms.locfileid: "37011294"
   
 3.  备份下的任何文件 *< 驱动器\>*: \Program Files\\Microsoft BizTalk Accelerator RosettaNet 文件夹所做的更改，例如，SDK 中的文件。  
   
-4.  取消部署引用一个或多个早期版本 BTARN 程序集的项目或程序集。  
+4.  取消部署任何项目或引用了一个或多个早期版本的 BTARN 程序集的程序集。  
   
 5.  在 Visual Studio 中，手动取消部署所有 BTARN 程序集，按以下顺序：  
   
@@ -106,11 +106,11 @@ ms.locfileid: "37011294"
   
 8.  重新生成任何项目或程序集引用了一个或多个 [BTARN 程序集。 使用**BTSTask.exe**手动重新部署这些项目。  
   
-9. 对于以下各项，请将 IIS 中的虚拟文件夹从 ASP.NET 2.0 升级到 ASP.NET 4.0：  
+9. 在 IIS 中的虚拟文件夹从 ASP.NET 2.0 升级到 ASP.NET 4.0 以下：  
   
     -   BTARNApp  
   
     -   BTARNHttpReceive  
   
-10. 重新启动计算机以应用所作的任何修改。  
+10. 重新启动计算机才能应用所做任何修改。  
   

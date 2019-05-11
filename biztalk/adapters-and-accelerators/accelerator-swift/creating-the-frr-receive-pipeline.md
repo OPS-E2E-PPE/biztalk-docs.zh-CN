@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bbf4e735019c5399e1b7f1648f3adbcffe18fed2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f82aef718422dc00c80d9f22343873780380a801
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970798"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378323"
 ---
 # <a name="creating-the-frr-receive-pipeline"></a>创建 FRR 接收管道
 若要执行 FIN 响应对帐，必须创建包含 SWIFT 的 FRR 解码器和 SWIFT FRR CorrelationSet 冲突解决程序除了 SWIFT 反汇编程序管道组件的接收管道。  

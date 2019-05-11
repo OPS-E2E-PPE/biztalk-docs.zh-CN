@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9133a4499e655003ec2cc3d2e0d654e5a225f58b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a865ced8a204bf571dde00c6f98869348934540f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981526"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377906"
 ---
 # <a name="frr-receive-location-for-messages-from-the-back-end-application"></a>FRR 接收的消息的位置从后端应用程序
 若要启用 FIN 响应对帐 (FRR)，必须设置 FRR 接收位置从后端应用程序接收消息并将他们路由到 BizTalk MessageBox 中以便消耗 FRR 业务流程。 接收位置路由通过自定义的 FRR 接收管道，则必须使用以下管道组件创建一条消息：  

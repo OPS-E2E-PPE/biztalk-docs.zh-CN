@@ -1,5 +1,5 @@
 ---
-title: 包装分析引擎 |Microsoft 文档
+title: 包装解析引擎 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 99d6960ba2f5f795a37bb336dab227f23eb12353
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7605c6d05e4e948a443025afe26429fd049bc469
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288589"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65313256"
 ---
-# <a name="wrapping-the-parsing-engine"></a>包装分析引擎
-你可以创建自己**XmlReader**嵌入返回的读取器**分析**方法并提供自定义项。  
+# <a name="wrapping-the-parsing-engine"></a>包装解析引擎
+可以创建你自己**XmlReader**嵌入返回的读取器**分析**方法，并提供自定义项。  
   
 ## <a name="example"></a>示例  
   
@@ -40,5 +40,5 @@ class MyXmlReader : XmlReader
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [使用平面文件分析引擎](../core/using-the-flat-file-parsing-engine.md)
+## <a name="see-also"></a>请参阅  
+ [使用平面文件解析引擎](../core/using-the-flat-file-parsing-engine.md)

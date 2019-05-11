@@ -13,17 +13,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 513d848d9bf95e75b8b6b983dde7019ce24ecf46
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: be1f49255d9790fc20981097104f4f9c88335bd0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006478"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376731"
 ---
 # <a name="configure-a-port-using-the-wcf-custom-adapter-and-oracle-database-adapter"></a>使用 WCF 自定义适配器和 Oracle 数据库适配器配置端口
 如何配置 WCF 自定义发送和接收端口，以执行对 Oracle 数据库使用的出站和入站操作[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
 是的成员的帐户登录[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]Administrators 组或 BizTalk Operators 组。 请参阅[用于部署和管理 BizTalk 应用程序所需权限](../../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)，并[最低安全权限](https://social.technet.microsoft.com/wiki/contents/articles/24590.minimum-security-rights-for-biztalk-server-2006-to-2016.aspx)有关权限的指南。
   
 ## <a name="deploy-adapters-for-sending-messages-to-an-oracle-database"></a>部署用于将消息发送到 Oracle 数据库适配器  

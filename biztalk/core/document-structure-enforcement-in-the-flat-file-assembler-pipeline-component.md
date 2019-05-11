@@ -1,5 +1,5 @@
 ---
-title: 文档中的平面文件汇编管道组件的结构强制 |Microsoft 文档
+title: 文档结构强制规定在平面文件组装器管道组件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bb35c7b31eda69d03d532d13d975d618d4f36f76
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 028f09b50cf4abd40475163d568e220087fd1f44
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238701"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65350945"
 ---
-# <a name="document-structure-enforcement-in-the-flat-file-assembler-pipeline-component"></a>平面文件汇编管道组件中的文档结构强制
+# <a name="document-structure-enforcement-in-the-flat-file-assembler-pipeline-component"></a>平面文件组装器管道组件中的文档结构强制规定
 如果在平面文件组装器中显式引用文档或信封架构，则平面文件组装器可确保仅处理消息类型与所引用的架构相应的文档。 不会对其他所有文档进行处理，即使可能已为这些文档部署了架构也是如此。  
   
 > [!NOTE]

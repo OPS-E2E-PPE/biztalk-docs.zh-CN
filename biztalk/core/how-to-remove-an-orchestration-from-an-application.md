@@ -18,34 +18,34 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2f6e024ec32a8b84cc1d883a2a9382e6aa06109b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0a3dbca1d838ca2691dcbfd1174debe49cbf0362
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998182"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65335035"
 ---
 # <a name="how-to-remove-an-orchestration-from-an-application"></a>如何从应用程序中删除业务流程
-本主题介绍如何使用 BizTalk Server 管理控制台或命令行从 BizTalk 应用程序中删除业务流程。 从应用程序中删除业务流程，也会将该业务流程从 BizTalk 组的 BizTalk 管理数据库中删除。  
+本主题介绍如何使用 BizTalk Server 管理控制台或命令行从 BizTalk 应用程序中删除业务流程。 从应用程序中删除业务流程还将其从删除的 BizTalk 组的 BizTalk 管理数据库。  
   
- 删除业务流程时，将执行以下操作：  
+ 在删除某个业务流程，将发生以下情况：  
   
-- 将从 BizTalk 管理数据库中删除该业务流程。  
+- 从 BizTalk 管理数据库中删除该业务流程。  
   
-- 将删除 BizTalk 管理数据库中包含该业务流程的 BizTalk 程序集，如果该程序集还存在于本地文件系统或全局程序集缓存 (GAC) 中，则不会将这两个位置中的该程序集删除。  
+- 包含该业务流程的 BizTalk 程序集从 BizTalk 管理数据库中删除，但不是会从本地文件系统或全局程序集缓存 (GAC) 中，如果两个位置存在。  
   
-- 由于删除了 BizTalk 程序集，因此也将从 BizTalk 管理数据库中删除该程序集所包含的所有项目。  
+- 正在删除 BizTalk 程序集，因此从 BizTalk 管理数据库中删除包含在程序集中的所有项目。  
   
-  从应用程序中删除业务流程前，请切记以下几点：  
+  从应用程序中删除业务流程前, 请记住以下重要事项：  
   
-- 如果有其他项目依赖于此业务流程或依赖于将连带删除的程序集中包含的项目，则删除此业务流程后这些项目将无法正常工作。 有关依赖项的背景信息，请参阅[依赖项和应用程序部署](../core/dependencies-and-application-deployment.md)。  
+- 如果其他项目在此业务流程或中也将被删除的程序集中包含的项目上的依赖项，它们将无法再正常运行时删除该业务流程。 有关依赖项的背景信息，请参阅[依赖项和应用程序部署](../core/dependencies-and-application-deployment.md)。  
   
 - 不能删除有正在运行的实例的业务流程。 必须终止任何正在运行的实例。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  若要执行本主题中的过程，必须是 BizTalk Server Administrators 组的成员的帐户登录。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
   
-## <a name="to-remove-an-orchestration-from-an-application"></a>从应用程序中删除业务流程  
+## <a name="to-remove-an-orchestration-from-an-application"></a>若要从应用程序中删除业务流程  
   
 #### <a name="using-the-biztalk-server-administration-console"></a>使用 BizTalk Server 管理控制台  
   
@@ -66,22 +66,22 @@ ms.locfileid: "36998182"
   
 #### <a name="using-the-command-line"></a>使用命令行  
   
-1. 按如下所示打开命令提示符： 单击**启动**，单击**运行**，类型`cmd`，然后单击**确定**。  
+1. 打开命令提示符，如下所示：单击**启动**，单击**运行**，类型`cmd`，然后单击**确定**。  
   
 2. 键入以下命令，替换适当的值下, 表中所述：  
   
-    **BTSTask RemoveResource** [**/ApplicationName:**<em>值</em>] **/Luid:**<em>值</em>[**/Server:** <em>值</em>] [**/database:**<em>值</em>]  
+    **BTSTask RemoveResource** [**/ApplicationName:**<em>value</em>] **/Luid:**<em>value</em> [**/Server:**<em>value</em>] [**/Database:**<em>value</em>]  
   
     例如：  
   
-    **BTSTask RemoveResource /ApplicationName:MyApplication /Luid:"MyApp.Orchestrations，版本 = 1.0.0.0，区域性 = 中性，PublicKeyToken = 0123456789ABCDEF"**  
+    **BTSTask RemoveResource /ApplicationName:MyApplication /Luid:"MyApp.Orchestrations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0123456789ABCDEF"**  
   
    |参数|Description|  
    |---------------|-----------------|  
-   |**/ 应用程序名称**|包含要删除的业务流程的 BizTalk 应用程序的名称。 如果名称包含空格，则必须将其括在双引号 （"）。 如果未指定此参数，则使用默认的应用程序。|  
-   |**/ Luid**|业务流程的本地唯一标识符 (LUID)。 可通过获得 LUID [ListApp 命令](../core/listapp-command.md)。|  
-   |**/ 服务器**|承载 BizTalk 管理数据库的 SQL Server 实例的名称。 如果指定了“Database”参数，则此参数是必需的。 如果未指定“Server”参数和“Database”参数，则使用组的默认 BizTalk 管理数据库。|  
-   |**/ 数据库**|BizTalk 管理数据库的名称。 如果指定了“Server”参数，则此参数是必需的。 如果未指定“Server”参数和“Database”参数，则使用组的默认 BizTalk 管理数据库。|  
+   |**/ApplicationName**|包含该业务流程的 BizTalk 应用程序若要删除的名称。 如果名称包含空格，则必须将其括在双引号 （"）。 如果未指定此参数，则使用默认应用程序。|  
+   |**/Luid**|业务流程的本地唯一标识符 (LUID)。 可通过获得 LUID [ListApp 命令](../core/listapp-command.md)。|  
+   |**/Server**|承载 BizTalk 管理数据库的 SQL Server 实例的名称。 如果指定的 Database 参数被必需。 如果未指定服务器和数据库参数，使用组的默认 BizTalk 管理数据库。|  
+   |**/Database**|BizTalk 管理数据库的名称。 如果指定的 Server 参数被必需。 如果未指定服务器和数据库参数，使用组的默认 BizTalk 管理数据库。|  
   
 ## <a name="see-also"></a>请参阅  
  [管理业务流程](../core/managing-orchestrations.md)   

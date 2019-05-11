@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 45a0f21cfe71a1c7af0b4d05798a08c842c4b85d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8ea01a9ba4a74e6adc3a7980841c2c850969dfec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995902"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292965"
 ---
 # <a name="how-biztalk-server-solves-the-business-need"></a>BizTalk Server 如何满足业务需求
 为了解决卫生保健系统集成需求，BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 增强了卫生保健系统 MicrosoftBizTalk 服务器的功能。  

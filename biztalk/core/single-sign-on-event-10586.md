@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10586 |Microsoft Docs
+title: 单一登录：Event 10586 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b353c5d9fb569da7bcc35927e31ce5c3e68ae11
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 757c84a4affa65493428cabd3fdb955f5415d234
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978867"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65271038"
 ---
-# <a name="single-sign-on-event-10586"></a>单一登录： 事件 10586
+# <a name="single-sign-on-event-10586"></a>单一登录：事件 10586
 ## <a name="details"></a>详细信息  
   
 |                 |                                                             |
@@ -28,12 +28,12 @@ ms.locfileid: "36978867"
 | 产品版本 | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]  |
 |    事件 ID     |                            10586                            |
 |  事件源   |                           ENTSSO                            |
-|    组件    |                             N/A                             |
+|    组件    |                             不可用                             |
 |  符号名称  |                   SSO_WARN_CRED_CACHE_OFF                   |
-|  消息正文   | 此 SSO 服务器已禁用凭据缓存。 |
+|  消息正文   | 为此 SSO 服务器已禁用凭据缓存。 |
   
 ## <a name="explanation"></a>解释  
- 已禁用凭据缓存；而通常情况下是启用凭据缓存的。 只有系统管理员可以启用或禁用凭据缓存。 禁用凭据缓存有时将导致 ENTSSO 系统出现更多当前凭据，虽然这会降低性能。  
+ 已禁用凭据缓存，通常已启用。 只有系统管理员可以启用或禁用凭据缓存。 禁用凭据缓存有时会更多当前凭据 ENTSSO 系统中，尽管它会降低性能。  
   
 ## <a name="user-action"></a>用户操作  
  若要重新启用凭据缓存，请参阅中的关联应用程序属性表[SSO 关联应用程序](../core/sso-affiliate-applications.md)。

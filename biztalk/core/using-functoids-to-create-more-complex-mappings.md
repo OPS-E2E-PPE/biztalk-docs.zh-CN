@@ -1,5 +1,5 @@
 ---
-title: 使用 Functoid 创建更复杂的映射 |Microsoft 文档
+title: 使用 Functoid 创建更复杂的映射 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,33 +12,33 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 736b6fa99844182c59db582182056faea1d3f322
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4e16b692f3f91aff47e978080be124220db68a89
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287157"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65247227"
 ---
 # <a name="using-functoids-to-create-more-complex-mappings"></a>使用 Functoid 创建更复杂的映射
 
 ## <a name="overview"></a>概述
-Functoid 在许多映射方案中都起到非常重要的作用。 如果不使用 functoid，虽然可以复制元素数据和属性数据，但将无法有效地处理这些值本身。 使用 functoid，几乎可以执行任何转换。 例如，使用 functoid，您可以从完全不同的位置获取两个值，将这两个值相加，然后将所得的和置于目标架构中。  
+Functoid 在许多映射方案中扮演着重要角色。 如果不使用 functoid，您可以复制元素和属性数据，但您不能有效地，处理这些值本身。 使用 functoid，则有可能的几乎任何转换。 例如，functoid 您利用两个值从完全不同的位置，将它们相加，以及将其放在目标架构中。  
   
- Functoid 出现在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]工具箱中，每个类别，当你编辑 BizTalk 映射时的一个工具箱选项卡。 在打开工具箱并通过单击相应的选项卡选择 functoid 类别后，即可将所需的 functoid 拖至网格页上。 然后，您可以在 functoid 与 schema 节点或其他 functoid 之间创建输入链接和输出链接。 输入链接对应于输入参数，从左侧进入 functoid；输出链接对应于输出参数，从 functoid 右侧引出。  
+ Functoid 显示在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]工具箱中，每个类别，编辑 BizTalk 映射时的对应一个工具箱选项卡。 在打开工具箱并通过单击相应的选项卡选择 functoid 类别后，您的 functoid 拖到网格页上。 然后，您将创建输入和输出之间 functoid 与 schema 节点或另一个 functoid 的链接。 输入的链接对应于输入参数，并且会导致 functoid 从左;输出链接对应于输出参数，并使 functoid 右侧。  
   
- 与其他映射元素相似，functoid 也具有属性。 functoid 的最重要的属性之一是其输入参数集。 有关详细信息，请参阅[如何向地图添加基本 Functoid](../core/how-to-add-basic-functoids-to-a-map.md)。  
+ 像其他地图元素，functoid 也具有属性。 Functoid 的最重要属性之一是其组的输入参数。 有关详细信息，请参阅[如何向映射添加基本 Functoid](../core/how-to-add-basic-functoids-to-a-map.md)。  
   
- 本部分提供有关在 BizTalk 映射内使用 functoid 的逐步说明。 有关 functoid 参考信息，请参阅**Functoid 引用** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
+ 本部分提供使用 BizTalk 映射内 functoid 的分步说明。 有关 functoid 的参考信息，请参阅**Functoid 参考** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
   
 ## <a name="next-steps"></a>后续步骤 
   
 -   [如何打开 Functoid 工具箱](../core/how-to-open-the-functoid-toolbox.md)  
   
--   [如何在向地图添加基本 Functoid](../core/how-to-add-basic-functoids-to-a-map.md)  
+-   [如何向映射添加基本 Functoid](../core/how-to-add-basic-functoids-to-a-map.md)  
   
--   [向地图添加高级的 Functoid](../core/adding-advanced-functoids-to-a-map.md)  
+-   [向映射添加高级 Functoid](../core/adding-advanced-functoids-to-a-map.md)  
   
--   [编辑 Functoid 属性和输入的参数](../core/editing-functoid-properties-and-input-parameters.md)  
+-   [编辑 Functoid 属性和输入参数](../core/editing-functoid-properties-and-input-parameters.md)  
   
 -   [如何选择多个 Functoid](../core/how-to-select-multiple-functoids.md)  
   

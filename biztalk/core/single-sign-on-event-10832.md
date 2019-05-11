@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10832 |Microsoft Docs
+title: 单一登录：事件 10832 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bb4ec8977b9e13ccaea6a7e869d408108482ec58
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7eef688d70b5aa8650cafe67fc9e2a81640abdfc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008902"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401099"
 ---
-# <a name="single-sign-on-event-10832"></a>单一登录： 事件 10832
+# <a name="single-sign-on-event-10832"></a>单一登录：事件 10832
 ## <a name="details"></a>详细信息  
   
 |                 |                                                            |
@@ -28,7 +28,7 @@ ms.locfileid: "37008902"
 | 产品版本 | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
 |    事件 ID     |                           10832                            |
 |  事件源   |                           ENTSSO                           |
-|    组件    |                            N/A                             |
+|    组件    |                            不可用                             |
 |  符号名称  |           ENTSSO_E_SSO_DATABASE_REQUIRES_UPGRADE           |
 |  消息正文   | 指定的 SSO 数据库存在，但需要升级。 |
   
@@ -36,4 +36,4 @@ ms.locfileid: "37008902"
  指定的 SSO 数据库存在，但需要升级。  
   
 ## <a name="user-action"></a>用户操作  
- 有关如何升级 SSO 数据库的信息，请向您的系统管理员咨询。
+ 请咨询系统管理员有关升级 SSO 数据库。

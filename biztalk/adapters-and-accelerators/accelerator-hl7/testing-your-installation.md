@@ -15,12 +15,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6d2d94ffce01bd299ad836b7f1fb7c82f66a8196
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3780ca8555efdac3d3c46e96080bb43d8226e339
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971902"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286536"
 ---
 # <a name="testing-your-installation"></a>测试安装
 你可以设置您[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]的端到端教程通过手动运行或通过执行端到端教程程序来测试安装。 若要执行该程序，可单击**启动教程**按钮在安装期间或在 C:\Program Files\Microsoft BizTalk 中执行 EndToEndTutorial.exe\<版本\>HL7\SDK\ 的快捷键（后运行安装和配置） 的端到端教程文件夹。 这两种自动操作将执行相同的安装步骤，你将通过运行本教程通过手动执行。 端到端教程程序执行以下任务：  

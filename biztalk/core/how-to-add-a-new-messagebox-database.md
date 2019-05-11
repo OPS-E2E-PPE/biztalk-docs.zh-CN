@@ -16,31 +16,31 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: db394722afcdf9e5972a925963b5200b4eba157e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b3e82e51d79e78f42881e288be02476f66405943
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974518"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65343752"
 ---
 # <a name="how-to-add-a-new-messagebox-database"></a>如何添加新的 MessageBox 数据库
-可以使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台向 BizTalk Server 部署添加新的 MessageBox 数据库。 MessageBox 数据库是跨服务器执行协作处理的负载平衡工作项的基础。 若要增加系统可处理的消息数，则可能需要添加其他 MessageBox 数据库。  
+可以使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台向 BizTalk Server 部署中添加新的 MessageBox 数据库。 MessageBox 数据库是跨服务器执行协作处理的负载平衡工作项的基础。 若要增加您的系统可以处理的消息数，可能需要添加其他 MessageBox 数据库。  
   
- 您无法在创建新的 MessageBox 数据库时已登记业务流程、发送端口或发送端口组。 已登记的业务流程、发送端口或发送端口组需要访问 BizTalk Server 必须复制到新的 MessageBox 数据库中的数据。 在访问此数据的过程中，BizTalk Server 无法将其复制到新的 MessageBox 数据库。  
+ 无法创建新的 MessageBox 数据库和已登记业务流程、 发送端口，或在同一时间发送端口组。 已登记业务流程、 发送端口或发送端口组访问的数据的 BizTalk Server 必须复制到新的 MessageBox 数据库。 而访问此数据时，BizTalk Server 不能将其复制到新的 MessageBox 数据库中。  
   
  可以指定本地和远程数据库作为 MessageBox 数据库。 有关 BizTalk Server 数据库的信息，请参阅[BizTalk Server 中的数据库](../core/databases-in-biztalk-server.md)。  
   
 > [!IMPORTANT]
->  必须在要添加新的 MessageBox 数据库的 SQL 服务器上运行 SQL Server 代理。  
+>  SQL Server 代理必须在所有你想要添加新的 MessageBox 数据库的 SQL 服务器上运行。  
   
-## <a name="prerequisites"></a>必要條件  
- 管理 MessageBox 数据库的管理员必须具有所需的用户权限。 必须具有以下用户权限才能管理 MessageBox 数据库并禁用新消息发布：  
+## <a name="prerequisites"></a>先决条件  
+ 管理 MessageBox 数据库管理员必须具有所需的用户权限。 必须具有以下的用户权限，才能管理 MessageBox 数据库并禁止发布新消息：  
   
--   必须以 BizTalk Server Administrators 组成员的身份登录。  
+-   您必须以 BizTalk Server Administrators 组的成员身份登录。  
   
--   必须是该数据库所在的计算机的 SQL Server 管理员。  
+-   您必须在数据库所在的计算机上的 SQL Server 管理员。  
   
-### <a name="to-add-a-new-messagebox-database"></a>添加新的 MessageBox 数据库  
+### <a name="to-add-a-new-messagebox-database"></a>若要添加新的 MessageBox 数据库  
   
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
@@ -52,10 +52,10 @@ ms.locfileid: "36974518"
   
    |使用此选项|执行的操作|  
    |--------------|----------------|  
-   |**SQL Server**|显示承载 MessageBox 数据库的 SQL 服务器的名称。|  
+   |**SQL Server**|显示承载 MessageBox 数据库的 SQL server 的名称。|  
    |**“数据库”**|显示 MessageBox 数据库的名称。|  
-   |**主订阅 messagebox**|指示选定的 MessageBox 数据库是否为主数据库。 如果当前的 MessageBox 数据库为主数据库，则此复选框将处于选中状态并且不可用。 默认情况下，运行配置向导时创建的第一个 MessageBox 数据库为主数据库。|  
-   |**禁止发布新消息**|选中此复选框可指定不希望此 MessageBox 数据库接收激活消息。|  
+   |**主订阅 messagebox**|指示所选的 MessageBox 数据库是否为主。 如果当前的 MessageBox 数据库为主数据库，则此复选框被选中并且不可用。 运行配置向导时创建的第一个 MessageBox 数据库是默认主机。|  
+   |**禁止发布新消息**|选择此复选框以指定不希望此 MessageBox 数据库接收激活消息。|  
   
 ## <a name="see-also"></a>请参阅  
  [管理 MessageBox 数据库](../core/managing-messagebox-databases.md)   

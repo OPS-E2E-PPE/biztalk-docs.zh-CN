@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d8dfaf91d9b0d3d058c4d3e31cd67c652235eff
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ccf8b71b08c35e94f710af12562060d477bf4abb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983038"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65285141"
 ---
 # <a name="xml-disassembler-and-assembler"></a>XML 拆装器和组装器
 XML 拆装器和组装器，请确保 Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 不仅支持 HL7 编码的消息，但也支持传入和/或传出 XML 消息。  
@@ -43,7 +43,7 @@ XML 拆装器和组装器，请确保 Microsoft BizTalk Accelerator for HL7 ([!I
 ## <a name="xml-assembler"></a>XML 组装器  
  XML 组装器将传出 XML 消息序列化为 XML 段。 XML 组装器支持，并创建以下确认 (ACK) 消息：  
   
-- 静态  
+- Static  
   
 - 原始模式  
   
