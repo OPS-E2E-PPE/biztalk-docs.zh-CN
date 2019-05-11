@@ -1,5 +1,5 @@
 ---
-title: Windows 工作流基础架构 |Microsoft 文档
+title: Windows Workflow Foundation 架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b680a21fe892c2599cb43643cadc68fbb74f89c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2d595f7d9ebddb8e9c94fc70876bd49be85f4b3d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289061"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65240384"
 ---
-# <a name="windows-workflow-foundation-schema"></a><span data-ttu-id="b6237-102">Windows Workflow Foundation 架构</span><span class="sxs-lookup"><span data-stu-id="b6237-102">Windows Workflow Foundation Schema</span></span>
-<span data-ttu-id="b6237-103">本部分包含的 Windows Workflow Foundation 侦听器的架构。</span><span class="sxs-lookup"><span data-stu-id="b6237-103">This section contains the schema for the Windows Workflow Foundation interceptor.</span></span>  
+# <a name="windows-workflow-foundation-schema"></a><span data-ttu-id="b18ab-102">Windows Workflow Foundation 架构</span><span class="sxs-lookup"><span data-stu-id="b18ab-102">Windows Workflow Foundation Schema</span></span>
+<span data-ttu-id="b18ab-103">本部分包含有关 Windows Workflow Foundation 侦听器架构。</span><span class="sxs-lookup"><span data-stu-id="b18ab-103">This section contains the schema for the Windows Workflow Foundation interceptor.</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -53,6 +53,6 @@ ms.locfileid: "22289061"
 </xs:schema>   
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="b6237-104">另请参阅</span><span class="sxs-lookup"><span data-stu-id="b6237-104">See Also</span></span>  
- <span data-ttu-id="b6237-105">[侦听器配置架构](../core/interceptor-configuration-schema.md) </span><span class="sxs-lookup"><span data-stu-id="b6237-105">[Interceptor Configuration Schema](../core/interceptor-configuration-schema.md) </span></span>  
- [<span data-ttu-id="b6237-106">Windows Communication Foundation 架构</span><span class="sxs-lookup"><span data-stu-id="b6237-106">Windows Communication Foundation Schema</span></span>](../core/windows-communication-foundation-schema.md)
+## <a name="see-also"></a><span data-ttu-id="b18ab-104">请参阅</span><span class="sxs-lookup"><span data-stu-id="b18ab-104">See Also</span></span>  
+ <span data-ttu-id="b18ab-105">[侦听器配置架构](../core/interceptor-configuration-schema.md) </span><span class="sxs-lookup"><span data-stu-id="b18ab-105">[Interceptor Configuration Schema](../core/interceptor-configuration-schema.md) </span></span>  
+ [<span data-ttu-id="b18ab-106">Windows Communication Foundation 架构</span><span class="sxs-lookup"><span data-stu-id="b18ab-106">Windows Communication Foundation Schema</span></span>](../core/windows-communication-foundation-schema.md)

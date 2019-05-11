@@ -1,5 +1,5 @@
 ---
-title: XML for SalesOrder 会话 |Microsoft 文档
+title: SalesOrder 会话的 XML |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 36b0a2b0fd5570a2daee83f07463d4cd67385427
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e3d5a3c816a553b312192d3d16bea7c415416f56
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289773"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65246383"
 ---
-# <a name="xml-for-a-salesorder-session"></a><span data-ttu-id="cbe3a-102">SalesOrder 会话的 XML</span><span class="sxs-lookup"><span data-stu-id="cbe3a-102">XML for a SalesOrder Session</span></span>
-<span data-ttu-id="cbe3a-103">下列各节提供 SalesOrder 会话的 XML 示例。</span><span class="sxs-lookup"><span data-stu-id="cbe3a-103">The following sections provide samples of XML for a SalesOrder session.</span></span>  
+# <a name="xml-for-a-salesorder-session"></a><span data-ttu-id="ca9ce-102">SalesOrder 会话的 XML</span><span class="sxs-lookup"><span data-stu-id="ca9ce-102">XML for a SalesOrder Session</span></span>
+<span data-ttu-id="ca9ce-103">以下部分提供为 SalesOrder 会话的 XML 示例。</span><span class="sxs-lookup"><span data-stu-id="ca9ce-103">The following sections provide samples of XML for a SalesOrder session.</span></span>  
   
-## <a name="begindoc-xml-sample"></a><span data-ttu-id="cbe3a-104">BeginDoc XML 示例</span><span class="sxs-lookup"><span data-stu-id="cbe3a-104">BeginDoc XML Sample</span></span>  
+## <a name="begindoc-xml-sample"></a><span data-ttu-id="ca9ce-104">BeginDoc XML 示例</span><span class="sxs-lookup"><span data-stu-id="ca9ce-104">BeginDoc XML Sample</span></span>  
   
 ```  
 <ns0:F4211FSBeginDoc xmlns:ns0=  
@@ -58,7 +58,7 @@ ms.locfileid: "22289773"
   
 ```  
   
-## <a name="editline-xml-sample"></a><span data-ttu-id="cbe3a-105">EditLine XML 示例</span><span class="sxs-lookup"><span data-stu-id="cbe3a-105">EditLine XML Sample</span></span>  
+## <a name="editline-xml-sample"></a><span data-ttu-id="ca9ce-105">EditLine XML 示例</span><span class="sxs-lookup"><span data-stu-id="ca9ce-105">EditLine XML Sample</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>   
@@ -83,7 +83,7 @@ ms.locfileid: "22289773"
   
 ```  
   
-## <a name="enddoc-xml-sample"></a><span data-ttu-id="cbe3a-106">EndDoc XML 示例</span><span class="sxs-lookup"><span data-stu-id="cbe3a-106">EndDoc XML Sample</span></span>  
+## <a name="enddoc-xml-sample"></a><span data-ttu-id="ca9ce-106">EndDoc XML 示例</span><span class="sxs-lookup"><span data-stu-id="ca9ce-106">EndDoc XML Sample</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>   
@@ -106,5 +106,5 @@ ms.locfileid: "22289773"
   
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="cbe3a-107">另请参阅</span><span class="sxs-lookup"><span data-stu-id="cbe3a-107">See Also</span></span>  
- [<span data-ttu-id="cbe3a-108">附录 a： 示例文件</span><span class="sxs-lookup"><span data-stu-id="cbe3a-108">Appendix A: Sample Files</span></span>](../core/appendix-a-sample-files.md)
+## <a name="see-also"></a><span data-ttu-id="ca9ce-107">请参阅</span><span class="sxs-lookup"><span data-stu-id="ca9ce-107">See Also</span></span>  
+ [<span data-ttu-id="ca9ce-108">附录 a:示例文件</span><span class="sxs-lookup"><span data-stu-id="ca9ce-108">Appendix A: Sample Files</span></span>](../core/appendix-a-sample-files.md)
