@@ -2,14 +2,14 @@
 redirect_url: /biztalk/core/using-tibco-rendezvous-receive-ports-from-biztalk-server/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: b1738a0933b5f570edfd882778e50ebf7e2ca730
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: a11dc697b818f016b12ccca77ad657ceacee12da
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24013524"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401633"
 ---
-# <a name="using-biztalk-server-from-tibco-rendezvous-to-receive-messages"></a>使用来自 TIBCO Rendezvous 的 BizTalk Server 以接收消息
+# <a name="using-biztalk-server-from-tibco-rendezvous-to-receive-messages"></a>使用来自 TIBCO Rendezvous 的 BizTalk Server 接收消息
 用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器从队列中调度多个线程上的事件。 BizTalk Server 接收位置与一个 TIBCO Rendezvous 事件队列及其调度程序线程池关联。  
   
 ## <a name="memory-use-and-errors"></a>内存使用和错误  
@@ -17,6 +17,6 @@ ms.locfileid: "24013524"
   
  用于 TIBCO Rendezvous 的 BizTalk 适配器会维持一种状态，并根据该状态的变化来执行任务。 如果 BizTalk 消息引擎报告错误，并且已将适配器配置为认证侦听器，则向 TIBCO Rendezvous 报告错误，以便可以重新提交消息。  
   
-## <a name="see-also"></a>另请参阅  
- [TIBCO 会合概念](../core/tibco-rendezvous-concepts.md)   
+## <a name="see-also"></a>请参阅  
+ [TIBCO Rendezvous 概念](../core/tibco-rendezvous-concepts.md)   
  [创建 TIBCO Rendezvou 接收处理程序](../core/creating-tibco-rendezvous-receive-handlers.md)

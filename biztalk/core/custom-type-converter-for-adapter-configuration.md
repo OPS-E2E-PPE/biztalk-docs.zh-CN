@@ -1,5 +1,5 @@
 ---
-title: 为适配器配置的自定义类型转换器 |Microsoft 文档
+title: 适配器配置的自定义类型转换器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f6285cd61fd0738fb97c6192cd52b812d96ede7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cc107422d7bb2033d68c96c27df4850acda74a09
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238709"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390059"
 ---
-# <a name="custom-type-converter-for-adapter-configuration"></a>适配器配置的的自定义类型转换器
-自定义编辑器，如自定义类型转换器可重写**System.ComponentModel.TypeConverter**类之一的子级。 转换器在此将格式添加到要保留但不会显示在属性页中的值。 **ConvertFrom**方法将添加的字符串值括在方括号和**ConvertTo**方法中删除它们。  
+# <a name="custom-type-converter-for-adapter-configuration"></a>适配器配置的自定义类型转换器
+自定义编辑器，如自定义类型转换器可重写**System.ComponentModel.TypeConverter**类的一个子项。 在这里，转换器将格式添加到要保存的值但不会出现在属性页上。 **ConvertFrom**方法将添加的字符串值括在方括号和**ConvertTo**方法会将它们删除。  
   
  以下代码是自定义类型转换器的类定义：  
   
@@ -57,8 +57,8 @@ namespace AdapterManagement.ComponentModel {
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [自定义适配器配置设计器](../core/custom-adapter-configuration-designer.md)   
- [适配器配置的的自定义下拉列表编辑器](../core/custom-drop-down-editor-for-adapter-configuration.md)   
+ [适配器配置的自定义下拉编辑器](../core/custom-drop-down-editor-for-adapter-configuration.md)   
  [适配器配置的的自定义模式对话框编辑器](../core/custom-modal-dialog-editor-for-adapter-configuration.md)   
- [适配器的高级的配置组件](../core/advanced-configuration-components-for-adapters.md)
+ [适配器的高级配置组件](../core/advanced-configuration-components-for-adapters.md)

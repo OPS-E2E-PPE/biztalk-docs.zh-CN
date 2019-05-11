@@ -1,6 +1,6 @@
 ---
-title: BizTalk Server 最新内容、 安装、 配置和升级 |Microsoft 文档
-description: 什么是新的和安装和配置 BizTalk Server 2016 和 BizTalk Server 2013 R2 和 2013年简介
+title: BizTalk Server 最新内容、 安装、 配置和升级 |Microsoft Docs
+description: 什么是新，以及如何安装和配置 BizTalk Server 2016 和 BizTalk Server 2013 R2 和 2013年简介
 ms.custom: ''
 ms.prod: biztalk-server
 ms.date: 08/10/2017
@@ -13,15 +13,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d0fa84afa3ea857fff23cf112dc8bdc11f0c98dc
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 0446f1dfe9ea14a9bbc3f06a6aafcad88d4eb897
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24014108"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65266246"
 ---
-# <a name="biztalk-server-whats-new-install-configuration-and-upgrade"></a>BizTalk Server 新增功能、 安装、 配置和升级
-了解最新功能，以及如何安装和配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 
+# <a name="biztalk-server-whats-new-install-configuration-and-upgrade"></a>BizTalk Server 新增功能、 安装的配置，并升级
+阅读有关哪些新增功能，以及如何安装和配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 
 
 ## <a name="biztalk-versions"></a>BizTalk 版本
 
@@ -29,7 +29,7 @@ ms.locfileid: "24014108"
   
 *  [BizTalk Server 2013 R2 和 2013](../install-and-config-guides/biztalk-server-2013-and-2013-r2-what-s-new-install-and-upgrade.md)
 
-这些主题着重介绍：  
+这些主题着重介绍::  
   
 -   新增功能 
 
@@ -40,13 +40,13 @@ ms.locfileid: "24014108"
 -   升级 BizTalk Server
 
   
- 如果正在寻找有关开发 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 应用程序、监视环境的指导，以及了解关于 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 和其他核心任务的详细信息，请转到 [BizTalk Server 核心文档](../core/biztalk-server-core-documentation.md)。 
+ 如果您正在寻找有关开发指南[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]应用程序、 监视你的环境，了解有关[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，和其他核心任务，然后转到[BizTalk Server 核心文档](../core/biztalk-server-core-documentation.md)。 
   
 ## <a name="next-steps"></a>后续步骤
 
-- [BizTalk Server 2016： 最新内容、 和安装](../install-and-config-guides/biztalk-server-2016-what-s-new-and-installation.md)
+- [BizTalk Server 2016:最新内容、 和安装](../install-and-config-guides/biztalk-server-2016-what-s-new-and-installation.md)
   
-- [BizTalk Server 2013 R2 和 2013年： 最新内容、 和安装](../install-and-config-guides/biztalk-server-2013-and-2013-r2-what-s-new-install-and-upgrade.md)
+- [BizTalk Server 2013 R2 和 2013年:最新内容、 和安装](../install-and-config-guides/biztalk-server-2013-and-2013-r2-what-s-new-install-and-upgrade.md)
 
 - [配置 BizTalk Server](../install-and-config-guides/configure-biztalk-server.md)
 
@@ -60,14 +60,14 @@ ms.locfileid: "24014108"
 
 - [使用配置框架](../install-and-config-guides/working-with-the-configuration-framework.md)
 
-- [确保 BizTalk Server 部署的安全](../install-and-config-guides/securing-your-biztalk-server-deployment.md)
+- [保护 BizTalk Server 部署](../install-and-config-guides/securing-your-biztalk-server-deployment.md)
 
-- [卸载 BizTalk Server 并取消配置以将其删除](../install-and-config-guides/uninstall-and-unconfigure-biztalk-server-to-remove-it.md)
+- [卸载并取消配置 BizTalk Server 将其删除](../install-and-config-guides/uninstall-and-unconfigure-biztalk-server-to-remove-it.md)
 
-- [附录 A：无提示安装](../install-and-config-guides/appendix-a-silent-installation.md)
+- [附录 a:无提示安装](../install-and-config-guides/appendix-a-silent-installation.md)
 
-- [附录 B：安装 Microsoft SharePoint 适配器](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md)
+- [附录 b:安装 Microsoft SharePoint 适配器](../install-and-config-guides/appendix-b-install-the-microsoft-sharepoint-adapter.md)
 
-- [附录 C：可再发行的 CAB 文件](../install-and-config-guides/appendix-c-redistributable-cab-files.md)
+- [附录 c:可再发行 CAB 文件](../install-and-config-guides/appendix-c-redistributable-cab-files.md)
 
-- [附录 D：创建 SMTP 服务器](../install-and-config-guides/appendix-d-create-the-smtp-server.md)
+- [附录 d:创建 SMTP 服务器](../install-and-config-guides/appendix-d-create-the-smtp-server.md)

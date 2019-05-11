@@ -20,12 +20,12 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c12da6732729052119bfcc7841424db6d0dcaff9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b295fbe516c6a30f7244dbfe0cbec83480ec0bba
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238333"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389915"
 ---
 # <a name="creating-maps-using-biztalk-mapper"></a>使用 BizTalk 映射器创建映射
 BizTalk 映射程序是一个工具，在 Microsoft 内运行[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]环境。 BizTalk 映射程序可用来创建和编辑映射，用于将转换或转换 xml 消息。 下图建议，并还可以用于处理在接收端口收到的消息和然后转换通过发送的消息将发送端口业务流程，用于映射。  

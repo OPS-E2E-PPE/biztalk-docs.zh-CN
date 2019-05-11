@@ -1,5 +1,5 @@
 ---
-title: 为适配器配置的自定义下拉列表编辑器 |Microsoft 文档
+title: 适配器配置的自定义下拉编辑器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b88e5eb887c2177783611ada8e3ce2a80a0b6a66
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fcf59a1692b8921d7e73799dcabafa4ad467f7c6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238493"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389824"
 ---
-# <a name="custom-drop-down-editor-for-adapter-configuration"></a>适配器配置的的自定义下拉列表编辑器
-自定义编辑器的代码演示一个派生自的编辑器**System.Drawing.Design.UITypeEditor**显示用于输入密码的下拉文本框的类。 **GetEditStyle**重写返回**UIEditorEditStyle.DropDown**以指示的下拉菜单的子控件。 服务方法**DropDownControl**和**CloseDropDown**管理与创建的控件**CreatePassword**。  
+# <a name="custom-drop-down-editor-for-adapter-configuration"></a>适配器配置的自定义下拉编辑器
+自定义编辑器的代码显示了派生自编辑器**System.Drawing.Design.UITypeEditor**显示下拉文本框用于输入密码的类。 **GetEditStyle**重写返回**UIEditorEditStyle.DropDown**以指示下拉子控件。 服务方法**DropDownControl**并**CloseDropDown**管理与创建的控件**CreatePassword**。  
   
- 下面的代码是自定义下拉编辑器的类定义：  
+ 以下代码是自定义下拉编辑器的类定义：  
   
 ```  
 /*************************************************************************  
@@ -94,8 +94,8 @@ namespace AdapterManagement.ComponentModel {
 } // Microsoft.BizTalk.Adapter.Framework.ComponentModel  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [自定义适配器配置设计器](../core/custom-adapter-configuration-designer.md)   
  [适配器配置的的自定义模式对话框编辑器](../core/custom-modal-dialog-editor-for-adapter-configuration.md)   
- [适配器配置的的自定义类型转换器](../core/custom-type-converter-for-adapter-configuration.md)   
- [适配器的高级的配置组件](../core/advanced-configuration-components-for-adapters.md)
+ [适配器配置的自定义类型转换器](../core/custom-type-converter-for-adapter-configuration.md)   
+ [适配器的高级配置组件](../core/advanced-configuration-components-for-adapters.md)

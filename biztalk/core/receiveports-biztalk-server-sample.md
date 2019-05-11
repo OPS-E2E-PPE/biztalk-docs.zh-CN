@@ -12,24 +12,24 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 06925777afa60ee6b11d42a17bac004665cfe7ec
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a338b0349329ab0f74dfb1ab3683b10502ed66d2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023915"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398097"
 ---
-# <a name="receiveports-biztalk-server-sample"></a>ReceivePorts（BizTalk Server 示例）
+# <a name="receiveports-biztalk-server-sample"></a>ReceivePorts （BizTalk Server 示例）
 ReceivePorts 示例演示如何创建新接收端口通过使用**ExplorerOM**管理类。  
 
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
 
 - 您必须具有 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理权限才能使用此示例中的管理对象。  
 
 - Windows PowerShell 脚本需要 Windows PowerShell 执行策略以允许脚本执行。 有关详细信息，请参阅 [检查执行策略](http://go.microsoft.com/fwlink/?LinkId=128930)。  
 
 ## <a name="what-this-sample-does"></a>本示例的用途  
- 此示例演示如何使用**BtsCatalogExplorer**并**ReceivePort**类**Microsoft.BizTalk.ExplorerOM**命名空间添加新接收端口[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. 本示例是使用 Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 编写的。 本主题中还包含 Windows PowerShell 示例脚本。 本示例将演示以下操作：  
+ 此示例演示如何使用**BtsCatalogExplorer**并**ReceivePort**类**Microsoft.BizTalk.ExplorerOM**命名空间添加新接收端口[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. 在 Microsoft 中编写示例[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)]。 本主题中还包含 Windows PowerShell 示例脚本。 此示例演示了以下操作：  
 
 -   通过使用连接到 BizTalk 管理数据库**BtsCatalogExplorer**类。  
 
@@ -42,21 +42,21 @@ ReceivePorts 示例演示如何创建新接收端口通过使用**ExplorerOM**�
 ## <a name="where-to-find-this-sample"></a>本示例的所在位置  
  本示例位于以下 SDK 位置中：  
 
- \<*示例路径*\>\Admin\ExplorerOM\ReceivePorts  
+ \<*Samples Path*\>\Admin\ExplorerOM\ReceivePorts  
 
  下表显示了本示例中的文件及其用途说明：  
 
 
 |                 文件                  |                                                 Description                                                  |
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-|             ReceivePorts.cs              | 本示例中演示的操作所需的 [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 源文件。 |
-| ReceivePorts.sln 和 ReceivePorts.csproj |                                  示例的解决方案和项目文件。                                   |
+|             ReceivePorts.cs              | [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 此示例中演示的操作的源文件。 |
+| ReceivePorts.sln 和 ReceivePorts.csproj |                                  本示例的解决方案和项目文件。                                   |
 
 ## <a name="building-and-running-this-sample"></a>生成并运行本示例  
 
 #### <a name="to-build-this-sample"></a>生成示例  
 
-1. 在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中，打开解决方案文件 ReceivePorts.sln。  
+1. 在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，打开解决方案文件 ReceivePorts.sln。  
 
 2. 在“生成”  菜单上，单击“生成解决方案” 。  
 
@@ -64,9 +64,9 @@ ReceivePorts 示例演示如何创建新接收端口通过使用**ExplorerOM**�
 
 1.  打开命令窗口并导航到以下文件夹：  
 
-     \<*示例路径*\>\Admin\ExplorerOM\ReceivePorts\bin\Debug  
+     \<*Samples Path*\>\Admin\ExplorerOM\ReceivePorts\bin\Debug  
 
-2.  运行文件 ReceivePorts.exe。 新的接收端口应创建并在端口枚举中所示。 枚举之后，接收端口立即被删除。  
+2.  运行文件 ReceivePorts.exe。 新的接收端口应创建并在端口枚举中所示。 枚举之后立即删除接收端口。  
 
 ## <a name="windows-powershell-script-example"></a>Windows Powershell 脚本示例  
  以下 Windows PowerShell 示例脚本可用于演示的相同功能**ExplorerOM**类：  
@@ -172,7 +172,7 @@ EnumerateReceivePorts
 
 ```  
 
- 这是运行 Windows PowerShell 脚本以创建新接收端口的示例：  
+ 下面是运行 Windows PowerShell 脚本以创建新的示例接收端口：  
 
 ```  
 PS C:\> .\receiveports.ps1  

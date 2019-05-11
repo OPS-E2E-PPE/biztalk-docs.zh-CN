@@ -1,5 +1,5 @@
 ---
-title: 解决数据丢失 |Microsoft 文档
+title: 解决数据丢失问题 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,20 +15,20 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e22c445880c69c63f5dd086b2e86968fd0c62f55
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: da63f108218a803b8d82f03d75a1a05a5924043e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268685"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65255164"
 ---
 # <a name="resolving-data-loss"></a>解决数据丢失问题
-恢复丢失的数据可能很困难，甚至不可能。 本部分中的主题介绍可以帮助您将数据丢失降到最低的处理方法。  
+恢复丢失的数据会非常困难甚至不可能。 在本部分中的主题介绍可以按照帮助最大程度减少数据丢失的进程。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [解决数据丢失的正在进行中业务流程](../core/resolving-data-loss-of-in-progress-orchestrations.md)  
+-   [解决正在进行的业务流程的数据丢失问题](../core/resolving-data-loss-of-in-progress-orchestrations.md)  
   
--   [确定丢失跟踪数据](../core/identifying-lost-tracking-data.md)  
+-   [确定丢失的跟踪数据](../core/identifying-lost-tracking-data.md)  
   
--   [标记为已完成 BAM 中正在进行事务](../core/marking-in-progress-transactions-as-complete-in-bam.md)
+-   [在 BAM 中将正在进行的事务标记为“已完成”](../core/marking-in-progress-transactions-as-complete-in-bam.md)

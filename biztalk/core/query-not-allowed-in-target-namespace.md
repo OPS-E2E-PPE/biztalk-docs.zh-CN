@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ce61d036912dc6caf2fd0062abb238de4ac6f491
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 279817f9762f0e22e96dbbeb93639f92383fe6c1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978856"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398327"
 ---
 # <a name="query-not-allowed-in-target-namespace"></a>不允许在目标命名空间中进行查询
 ## <a name="details"></a>详细信息  

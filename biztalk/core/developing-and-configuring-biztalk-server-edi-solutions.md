@@ -1,5 +1,5 @@
 ---
-title: 开发和配置 BizTalk Server EDI 解决方案 |Microsoft 文档
+title: 开发和配置 BizTalk Server EDI 解决方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c6520b062ebc5c106e2f162cc92ff4c793a417b4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e846048a8aa90cd671bae085459632c807dd5d65
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240197"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389419"
 ---
 # <a name="developing-and-configuring-biztalk-server-edi-solutions"></a>开发和配置 BizTalk Server EDI 解决方案
-有关开发人员创建[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]EDI 解决方案。 使用 BizTalk 项目系统设计环境创建这些解决方案与[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。  
+开发人员能够创建信息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]EDI 解决方案。 这些解决方案创建使用 BizTalk 项目系统设计环境和[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。  
   
- 在开发 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI 解决方案之前，请确保您已经完全安装和配置具有 EDI 功能的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 请参阅[BizTalk Server 的最新内容、 安装、 配置和升级](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)。 开发 EDI 解决方案所需的其他 EDI 特定配置，请参阅[后配置步骤来优化您的环境](../install-and-config-guides/post-configuration-steps-to-optimize-your-environment.md)。  
+ 在开发前[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]EDI 解决方案，请确保您已经完全安装和配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]具有 EDI 功能。 请参阅[BizTalk Server 的最新内容、 安装、 配置和升级](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)。 有关开发 EDI 解决方案所需的其他特定于 EDI 的配置，请参阅[用于优化环境的配置后步骤](../install-and-config-guides/post-configuration-steps-to-optimize-your-environment.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -36,7 +36,7 @@ ms.locfileid: "22240197"
   
 -   [配置 EDI 确认](../core/configuring-edi-acknowledgments.md)  
   
--   [配置 EDI 批处理](../core/configuring-edi-batches.md)  
+-   [配置 EDI 批](../core/configuring-edi-batches.md)  
   
 -   [开发 EDI 架构](../core/developing-edi-schemas.md)  
   
@@ -46,7 +46,7 @@ ms.locfileid: "22240197"
   
 -   [EDI 替代上下文属性](../core/edi-override-context-properties.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 
-[教程和演练 EDI、 AS2 和 EDIFACT](../core/tutorials-and-walkthroughs-for-edi-as2-and-edifact.md)  
+[EDI、AS2 和 EDIFACT 的教程和演练](../core/tutorials-and-walkthroughs-for-edi-as2-and-edifact.md)  
 [开发和配置 BizTalk Server AS2 解决方案](../core/developing-and-configuring-biztalk-server-as2-solutions.md)

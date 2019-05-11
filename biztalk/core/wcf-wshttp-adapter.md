@@ -1,5 +1,5 @@
 ---
-title: WCF WSHttp 适配器 |Microsoft 文档
+title: Wcf-wshttp 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,18 +14,18 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8007c8bf56ccb6e4f2e345dcc44786313e4de0e4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fe9c2f714c7b7fb1a23ff74c819d769aa18250b0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289037"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65250173"
 ---
-# <a name="wcf-wshttp-adapter"></a>WCF WSHttp 适配器
-[!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]时接收和发送 WCF 服务通过请求使用 WCF WSHttp 适配器[WSHttpBinding](http://go.microsoft.com/fwlink/?LinkID=81206)。 WCF WSHttp 适配器使您能够发布业务流程和作为 WCF 服务的架构，并使用与外部 WCF 服务**WSHttpBinding**。  
+# <a name="wcf-wshttp-adapter"></a>Wcf-wshttp 适配器
+[!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 接收和发送 WCF 服务通过请求时，会使用 Wcf-wshttp 适配器[WSHttpBinding](http://go.microsoft.com/fwlink/?LinkID=81206)。 Wcf-wshttp 适配器，您可以将业务流程和架构作为 WCF 服务发布并使用外部 WCF 服务与**WSHttpBinding**。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [什么是 WCF WSHttp 适配器？](../core/what-is-the-wcf-wshttp-adapter.md)  
+-   [WCF-WSHttp 适配器概述](../core/what-is-the-wcf-wshttp-adapter.md)  
   
--   [配置 WCF WSHttp 适配器](../core/configuring-the-wcf-wshttp-adapter.md)
+-   [配置 WCF-WSHttp 适配器](../core/configuring-the-wcf-wshttp-adapter.md)

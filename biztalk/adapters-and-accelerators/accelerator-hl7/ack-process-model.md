@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 98fac157c3c3bfa62825fd3c5cb59c68aac528e6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4775605dc9b8eb41e60e39bee5a763913ce04901
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970630"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65247706"
 ---
 # <a name="ack-process-model"></a>ACK 进程模型
 以下一系列步骤描述了确认 (ACK) 进程模型：  

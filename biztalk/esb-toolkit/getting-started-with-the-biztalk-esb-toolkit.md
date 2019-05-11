@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7832f2a730cb5eb70d1444809513e4242b82e88b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c4ebd9143f071c4d6f01d30c77c0c9bf815fc2fc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006662"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400123"
 ---
 # <a name="getting-started-with-the-biztalk-esb-toolkit"></a>BizTalk ESB 工具包入门
 本主题说明了设计和操作的概念[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]组件和服务用来构建启用了 ESB 的解决方案。 本主题包含以下主题部分：  

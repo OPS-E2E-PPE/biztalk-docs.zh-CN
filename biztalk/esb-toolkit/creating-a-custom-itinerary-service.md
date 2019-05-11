@@ -1,5 +1,5 @@
 ---
-title: 创建自定义路线服务 |Microsoft 文档
+title: 创建自定义路线服务 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,16 +12,16 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef94b0c5fd50a8cdd36c2b8a193102bc9964909a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1ad662ceb748cefbaf9f13bdbc5f410c08bdac55
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289845"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401524"
 ---
 # <a name="creating-a-custom-itinerary-service"></a>创建自定义路线服务
-你可以修改和/或扩展[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]路线服务和组件，以适合你的特定要求。 有两种方法可以在其中创建自定义的路线服务：  
+您可以修改和/或扩展[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]路线服务和组件，以适合你的特定要求。 有两种方法可在其中创建自定义路线服务：  
   
--   [创建自定义路线服务使用 BizTalk 业务流程](../esb-toolkit/creating-a-custom-itinerary-service-using-a-biztalk-orchestration.md)  
+-   [使用 BizTalk 业务流程创建自定义路线服务](../esb-toolkit/creating-a-custom-itinerary-service-using-a-biztalk-orchestration.md)  
   
--   [创建自定义路线消息服务](../esb-toolkit/creating-a-custom-itinerary-messaging-service.md)
+-   [创建自定义路线消息传递服务](../esb-toolkit/creating-a-custom-itinerary-messaging-service.md)

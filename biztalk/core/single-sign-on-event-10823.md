@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10823 |Microsoft Docs
+title: 单一登录：Event 10823 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d5520fc90fa7e334429ab2284aebbfb547568987
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1b44d825e3760fd3f8ad73d43a30df8aed6e3a08
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015654"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398705"
 ---
-# <a name="single-sign-on-event-10823"></a>单一登录： 事件 10823
+# <a name="single-sign-on-event-10823"></a>单一登录：事件 10823
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                              |
@@ -28,12 +28,12 @@ ms.locfileid: "37015654"
 | 产品版本 |                          [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                          |
 |    事件 ID     |                                                    10823                                                     |
 |  事件源   |                                                    ENTSSO                                                    |
-|    组件    |                                                     N/A                                                      |
+|    组件    |                                                     不可用                                                      |
 |  符号名称  |                                      ENTSSO_E_PSADMIN_INVALID_APP_TYPE                                       |
-|  消息正文   | 应用程序的应用程序类型无效。 有效的应用程序类型为“个人”、“组”或“主机组”。 |
+|  消息正文   | 应用程序的无效的应用程序类型。 有效的应用程序类型是个人、 Group 或主机组。 |
   
 ## <a name="explanation"></a>解释  
- 应用程序的应用程序类型无效。 有效的应用程序类型为“个人”、“组”或“主机组”。  
+ 应用程序的无效的应用程序类型。 有效的应用程序类型是个人、 Group 或主机组。  
   
 ## <a name="user-action"></a>用户操作  
- 使用一个有效的应用程序类型。
+ 使用一种有效的应用程序类型。

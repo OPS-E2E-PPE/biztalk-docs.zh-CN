@@ -1,5 +1,5 @@
 ---
-title: 演练： 发布具有 Wcf-netmsmq 适配器的 WCF 服务 |Microsoft Docs
+title: 演练：使用 Wcf-netmsmq 适配器发布 WCF 服务 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,48 +12,48 @@ caps.latest.revision: 46
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 45f8b47b60663348c48ca398cedca464b3a2dd6b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 21bc04be1fd0e39a3e87ce9f347d5b4aeb1c5d99
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995830"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400135"
 ---
-# <a name="walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter"></a>演练： 发布具有 Wcf-netmsmq 适配器的 WCF 服务
+# <a name="walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter"></a>演练：使用 Wcf-netmsmq 适配器发布 WCF 服务
   
 > [!NOTE]
 >  有关适配器的详细信息，请参阅[BizTalk Server 中的适配器](../core/adapters-in-biztalk-server.md)。  
   
 ## <a name="introduction"></a>简介
   
- 在 BizTalk Server 中，可以作为发布业务流程[!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)]服务。 通过 BizTalk 接收位置，业务流程可以公开 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 终结点，以允许由 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 客户端进行调用。 **BizTalk WCF 服务发布向导**提供简单的方法来公开业务流程作为接收位置。  
+ 在 BizTalk Server 中，可以作为发布业务流程[!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)]服务。 通过 BizTalk 接收位置，业务流程可以公开[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]终结点，这使它可以由调用[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]客户端。 **BizTalk WCF 服务发布向导**提供简单的方法来公开业务流程作为接收位置。  
   
- 使用 Wcf-netmsmq 适配器**NetMsmqBinding**绑定为使用 Microsoft 消息队列 (也称为 MSMQ) 作为其基础传输提供支持。 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务的客户端使用配置为使用 WCF-NetMSMQ 适配器的接收位置，将 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 消息发送到 MSMQ 队列。 该适配器从 MSMQ 队列提取 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 消息，将其转换成 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 格式，然后再写入到 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] MessageBox 数据库。  
+ 使用 Wcf-netmsmq 适配器**NetMsmqBinding**绑定为使用 Microsoft 消息队列 (也称为 MSMQ) 作为其基础传输提供支持。 客户端[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务发送[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]到 MSMQ 消息队列使用配置为使用 Wcf-netmsmq 适配器的接收位置。 适配器提取[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]从 MSMQ 队列的消息将其转换为[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]格式，并将其写入[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]MessageBox 数据库。  
   
- 本演练将说明 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 客户端控制台应用程序如何通过 MSMQ 消息队列，使用 WCF-NetMsmq 适配器与 .NET 控制台应用程序中承载的 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务进行通信。 演示了如何使用 BizTalk WCF 服务发布向导为接收位置发布元数据。 它还演示如何配置 Web 应用程序以支持发布元数据。  
+ 本演练演示如何[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]客户端控制台应用程序使用 Wcf-netmsmq 适配器与通信[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)].NET 控制台应用程序，通过 MSMQ 消息队列中托管的服务。 它演示了如何为使用 BizTalk WCF 服务发布向导的接收位置发布元数据。 它还演示如何配置 Web 应用程序以支持发布元数据。  
   
- 在完成本演练后，你将了解如何执行以下任务：  
+ 完成此演练后，你将了解如何执行以下任务：  
   
-- 从 Visual Studio 中，使用**部署**命令将 BizTalk 程序集部署到的本地实例[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 这将创建一个用这些程序集填充的 BizTalk 应用程序。 BizTalk 程序集将包含各种资源信息，例如要在 BizTalk 解决方案中使用的业务流程、管道、架构和映射。  
+- 从 Visual Studio 中，使用**部署**命令将 BizTalk 程序集部署到的本地实例[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 这将创建 BizTalk 应用程序中已填充的程序集。 BizTalk 程序集包含资源信息，例如业务流程、 管道、 架构和映射若要在 BizTalk 解决方案中使用。  
   
-- 在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台中，配置 WCF-NetMsmq 接收位置以承载已发布的 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务。  
+- 从[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，配置 Wcf-netmsmq 接收位置以承载已发布[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务。  
   
-- 从**BizTalk WCF 服务发布向导**，创建 Web 应用程序的现有接收位置发布元数据。 该元数据由向接收位置提交消息的客户端使用。  
+- 从**BizTalk WCF 服务发布向导**，创建 Web 应用程序的现有接收位置发布元数据。 通过将消息提交到接收位置的客户端使用此元数据。  
   
-## <a name="prerequisites"></a>必要條件  
- 若要执行本示例中的步骤，请确保你的环境中安装了以下必备软件：  
+## <a name="prerequisites"></a>先决条件  
+ 若要执行此示例中的步骤，请确保您的环境安装以下先决条件：  
   
 - 这两个程序集将生成并运行部署过程中，并运行该示例的计算机的计算机需要 Microsoft Windows Server、.NET Framework 和 BizTalk Server。  
   
-- 用于构建程序集和运行部署过程的计算机需要安装 Microsoft Visual Studio。  
+- 用于生成程序集和运行部署过程的计算机需要 Microsoft Visual Studio。  
   
-- 运行示例的计算机需要 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 适配器和 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 管理工具。 这些是用于安装 Microsoft BizTalk Server 安装过程的选项。  
+- 运行示例的计算机需要[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]适配器和[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]管理工具。 这些是用于安装 Microsoft BizTalk Server 安装过程的选项。  
   
-- 在用于执行管理任务的计算机上，你必须使用作为 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组成员的用户帐户运行，才能在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台内配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 应用程序设置。 此用户帐户还必须是本地管理员组的成员，才能部署应用程序，管理主机实例以及其他可能需要的任务。  
+- 在计算机上用于执行管理任务，您必须运行的成员的用户帐户作为[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Administrators 组以配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]内的应用程序设置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。 此用户帐户还必须是管理主机实例和其他任务所需的应用程序部署的本地管理员组的成员。  
   
 - 需要的任何计算机上[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]功能，完成的一次性安装过程[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]在示例[ http://go.microsoft.com/fwlink/?LinkId=135510 ](http://go.microsoft.com/fwlink/?LinkId=135510)。  
   
-- 在运行示例并将绑定或 .msi 文件导入 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的计算机上，确保主机不是受信任主机，否则导入将失败。  
+- 运行示例并将一个绑定或到某一.msi 文件导入的计算机上[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，确保主机不受信任的主机或导入将失败。  
   
 - 你必须下载演练代码并将其解压缩到您的计算机。 本演练是整个的一部分[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]适配器演练包。 您可以下载文件**WCFAdapterWalkthroughs.exe**从[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]开发人员中心， [ http://go.microsoft.com/fwlink/?LinkId=194140 ](http://go.microsoft.com/fwlink/?LinkId=194140)。  
   
@@ -63,7 +63,7 @@ ms.locfileid: "36995830"
   
 2.  在 Visual Studio 中打开**WCFNetMsmqAdapterPublishing.sln**文件。  
   
-3.  在解决方案资源管理器，展开**BizTalkApp**，然后打开**OrderProcess.odx**查看。 示例业务流程接收订单请求消息，但只返回订单响应消息。  
+3.  在解决方案资源管理器，展开**BizTalkApp**，然后打开**OrderProcess.odx**查看。 示例业务流程接收订单请求消息，并只返回订单响应消息。  
   
 4.  因为**BizTalkApp**程序集必须安装在 GAC 中，它将需要一个强名称密钥文件，以完成部署过程。 右键单击**BizTalkApp**项目，并单击**属性**。 上**属性**页上，单击**签名**，然后选择**程序集签名**。 单击中的向下箭头**选择强名称密钥文件**下拉列表中，单击**\<新建\>** 并输入`keyfile.snk`中**密钥文件名称**文本框中。 取消选中**保护密钥文件使用密码**，然后单击**确定**。  
   
@@ -75,19 +75,19 @@ ms.locfileid: "36995830"
   
 ## <a name="configure-the-application"></a>配置应用程序  
   
-1. 确保按如下方式将 Microsoft 消息队列 (MSMQ) 组件安装在您的计算机上：  
+1. 请确保 Microsoft 消息队列 (MSMQ) 组件上安装了您的计算机，如下所示：  
   
    1.  单击**启动**，右键单击**计算机**，然后单击**管理**以打开**服务器管理器**。  
   
    2.  展开**功能**节点。  如果**消息队列**是未安装，请右键单击**功能**，然后选择**添加功能**。 检查**消息队列**，单击**下一步**，然后单击**安装**该系统上安装 MSMQ。  
   
-2. 按照以下方法确保在您的计算机上启动 MSMQ 消息队列，以供 WCF-NetMsmq 适配器使用：  
+2. 请确保 MSMQ 消息队列服务已启动，如下所示使用 Wcf-netmsmq 适配器在计算机上：  
   
    1.  单击**启动**，依次指向**管理工具**，然后单击**Services**。  
   
    2.  在中**Services**，请确保**状态**的**消息队列**服务是**已启动**。 如果该服务未启动，请右击**消息队列**，然后单击**启动**。  
   
-3. 创建接收位置使用的目标队列，WCF-NetMsmq 适配器从中提取来自客户端的传入 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 消息。  
+3. 创建接收位置使用从其 Wcf-netmsmq 适配器提取传入的目标队列[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]来自客户端的消息。  
   
    1.  单击**启动**，依次指向**管理工具**，然后单击**计算机管理**。  
   
@@ -119,11 +119,11 @@ ms.locfileid: "36995830"
    9. 在中**Wcf-netmsmq 传输属性**对话框中，在**安全**选项卡上，选择**None**从**安全模式**下拉列表.  
   
       > [!NOTE]
-      >  本演练假定 MSMQ 已安装，且计算机禁用 [!INCLUDE[btsAD](../includes/btsad-md.md)] 集成。 默认值**WindowsDomain**，对于**MSMQ 身份验证模式**时，属性是可用[!INCLUDE[btsAD](../includes/btsad-md.md)]启用集成。  
+      >  本演练假定 MSMQ 已安装与[!INCLUDE[btsAD](../includes/btsad-md.md)]您的计算机上禁用集成。 默认值**WindowsDomain**，对于**MSMQ 身份验证模式**时，属性是可用[!INCLUDE[btsAD](../includes/btsad-md.md)]启用集成。  
   
    10. 在中**接收位置属性**对话框中，单击**确定**。  
   
-5. 为示例应用程序创建 FILE 发送端口。 此端口用于路由来自服务的基础业务流程采购定单的响应。  
+5. 创建 FILE 发送端口的示例应用程序。 此端口用于路由来自服务的基础业务流程中的采购订单的响应。  
   
    1. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**WCFNetMsmqAdapterPublishing**，右键单击**发送端口**，指向**新建**，然后单击**静态单向发送端口**。  
   
@@ -157,9 +157,9 @@ ms.locfileid: "36995830"
   
 5. 上**BizTalk 程序集**页上，在**BizTalk 程序集文件 (\*.dll)** 文本框中，单击**浏览**以浏览到**C:\WCFNetMsmqAdapterPublishing\BizTalkApp\bin\Development**文件夹中，双击包含示例业务流程的程序集以发布，然后单击**下一步**。  
   
-6. 上**业务流程和端口**页上，请确保**端口： PurchaseOrderRequestPort**节点的页上，选择，然后单击**下一步**。  
+6. 上**业务流程和端口**页上，请确保**端口：PurchaseOrderRequestPort**节点的页上，选择，然后单击**下一步**。  
   
-    客户端将发布接收端口的 MEX，并用它来向接收位置提交消息。  
+    将发布和客户端用于将消息提交给接收位置的接收端口的 MEX。  
   
 7. 上**WCF 服务属性**页上，在**的 WCF 服务的目标命名空间**文本框中，键入此已发布的 URI[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]若要使用，提供服务，然后单击**下一步**. 对于本演练中，保留默认的 URI `http://tempuri.org/`。  
   
@@ -167,7 +167,7 @@ ms.locfileid: "36995830"
   
    1. 在中**位置**文本框中，键入 Web 目录名称[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务运行，或单击**浏览**并选择 Web 目录。 对于本演练中，保留默认位置 (http://localhost/<em>\<BizTalk 程序集名称\></em>) 中**位置**文本框。  
   
-   2. 选择**允许匿名访问 WCF 服务**选项。 此选项会为已创建的虚拟目录添加匿名访问权限。 此选项需要选择允许使用此向导将创建的 Web 应用程序的匿名身份验证。  
+   2. 选择**允许匿名访问 WCF 服务**选项。 此选项将添加到创建的虚拟目录的匿名访问。 此选项需要选择允许使用此向导将创建的 Web 应用程序的匿名身份验证。  
   
 9. 上**WCF 服务摘要**页上，单击**创建**创建[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务。  
   
@@ -177,20 +177,20 @@ ms.locfileid: "36995830"
   
 1. 打开命令提示符处，转到**C:\inetpub\wwwroot\Microsoft.Samples.BizTalk.WCF.NetMsmqPublishing.BizTalkApp**文件夹位置**BizTalk WCF 服务发布向导**创建[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务。 打开**Web.config**文件中使用记事本。  
   
-2. 在记事本中，添加以下行**\<system.web\>** 元素：  
+2. 在记事本中，添加以下行 **\<system.web\>** 元素：  
   
    ```  
    <trust level="Full" originUrl="" />  
    ```  
   
    > [!NOTE]
-   >  此设置是可选的。 此设置向已发布了 [!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)] 服务的宿主 ASP.NET 应用程序授予对受操作系统安全机制保护的任何资源的访问权限。  
+   >  此设置是可选的。 承载已发布的 ASP.NET 应用程序，它会授予[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务受操作系统安全机制保护任何资源的访问权限。  
   
 3. 测试已发布[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]服务通过使用 Internet Explorer，如下所示：  
   
    1. 单击**启动**，依次指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**。  
   
-   2. 在 IIS 管理器中，创建一个拥有正确 BizTalk 数据库权限的应用程序池，此服务将在其中运行。 右键单击**应用程序池**，单击**添加应用程序池**，输入应用程序池的名称，然后单击**确定**。  
+   2. 在 IIS 管理器中，创建此服务将在其中运行的应用程序池具有正确的 BizTalk 数据库权限。 右键单击**应用程序池**，单击**添加应用程序池**，输入应用程序池的名称，然后单击**确定**。  
   
    3. 展开**应用程序池**，右键单击您刚的应用程序池创建，并选择**高级设置**。 下**过程模型**部分中，输入的帐户有权[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库下**标识**字段。  
   
@@ -206,9 +206,9 @@ ms.locfileid: "36995830"
   
 ## <a name="build-the-client-application"></a>生成客户端应用程序  
   
-1. 打开 Visual Studio 命令提示符以管理员身份，并转到**C:\WCFNetMsmqAdapterPublishing\WCFClient**文件夹。 这是放置代理类和应用程序配置文件的位置。  
+1. 打开 Visual Studio 命令提示符以管理员身份，并转到**C:\WCFNetMsmqAdapterPublishing\WCFClient**文件夹。 这是将放置代理类和应用程序配置文件。  
   
-2. 粘贴包含您在上一过程中复制的整个 WSDL 地址的完整 svcutil.exe 命令行，然后按 Enter。 这将创建代理类中， **BizTalkServiceInstance.cs**，和应用程序配置文件**output.config**。保持命令提示符窗口打开以供最后一部分使用。  
+2. 粘贴包含你在上一过程中复制的完整 WSDL 地址的完整 svcutil.exe 命令行，然后按 ENTER。 这将创建代理类中， **BizTalkServiceInstance.cs**，和应用程序配置文件**output.config**。最后一部分，保持命令提示符窗口中打开使用。  
   
 3. 在 Visual Studio 中，在解决方案资源管理器中右键单击**WCFClient**，依次指向**添加**，然后单击**现有项**。  
   
@@ -226,15 +226,15 @@ ms.locfileid: "36995830"
   
 1. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，右键单击**WCFNetMsmqAdapterPublishing**应用程序，，然后单击**启动**。 在中**启动**对话框中，单击**启动**。  
   
-2. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**平台设置**，展开**主机实例**，右键单击**BizTalkServerApplication**或另一个相应的主机实例，然后依次**重新启动**。 尽管本步骤中并未要求，但确保本示例到此处仍能正常运行不失为一个好的方法。  
+2. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，展开**平台设置**，展开**主机实例**，右键单击**BizTalkServerApplication**或另一个相应的主机实例，然后依次**重新启动**。 尽管此步骤不是必需的它是一个好办法确保示例正常运行到目前为止。  
   
-3. 在 Visual Studio 中，在**调试**菜单上，单击**启动但不调试**以运行 WCFClient 应用程序。 这会向 WCF-NetMsmq 接收位置发送示例消息。 您将看到以下输出消息，说明消息已发送。  
+3. 在 Visual Studio 中，在**调试**菜单上，单击**启动但不调试**以运行 WCFClient 应用程序。 此示例将消息的发送到 Wcf-netmsmq 接收位置。 你将看到下面说明消息的输出消息已发送。  
   
     **调用提交操作在 Wcf-netmsmq 接收位置**  
   
     **按任意键关闭 WCF 客户端应用程序**  
   
-4. 按任意键以关闭 WCFClient 应用程序。  
+4. 按任意键关闭 WCFClient 应用程序。  
   
 5. 在 Visual Studio 命令提示符下，请转到**C:\WCFNetMsmqAdapterPublishing\Out**文件夹，然后确保存在 WCFClient 应用程序发回的响应消息。  
   

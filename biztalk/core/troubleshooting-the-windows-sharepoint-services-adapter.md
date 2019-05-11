@@ -1,5 +1,5 @@
 ---
-title: 故障排除 Windows SharePoint Services 适配器 |Microsoft 文档
+title: 故障排除 Windows SharePoint Services 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5b1f2833457636c3c32c6c294a192236de101133
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 552802adbe5a3d511de76eefa5a57a29240b8c48
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286445"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400851"
 ---
-# <a name="troubleshooting-the-windows-sharepoint-services-adapter"></a>故障排除 Windows SharePoint Services Adapter
-本部分介绍可用于诊断问题的 Windows SharePoint Services 适配器的故障排除方法。  
+# <a name="troubleshooting-the-windows-sharepoint-services-adapter"></a>Windows SharePoint Services 适配器故障排除
+本部分介绍可用于诊断 Windows SharePoint Services 适配器问题的故障排除方法。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [如何使用 Windows SharePoint Services Adapter 诊断问题](../core/how-to-diagnose-problems-with-the-windows-sharepoint-services-adapter.md)  
+-   [如何诊断 Windows SharePoint Services 适配器问题](../core/how-to-diagnose-problems-with-the-windows-sharepoint-services-adapter.md)  
   
--   [Windows SharePoint Services Adapter 的已知的问题](../core/known-issues-with-the-windows-sharepoint-services-adapter.md)
+-   [Windows SharePoint Services 适配器的已知问题](../core/known-issues-with-the-windows-sharepoint-services-adapter.md)

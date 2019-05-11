@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 95134a1f806398f14a5596149eb605e2de20cac2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2ff6a9b731b981f04f015d8dd644442680c98cbf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002798"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399753"
 ---
 # <a name="the-resolver-and-adapter-provider-framework"></a>冲突解决程序和适配器提供程序框架
 冲突解决程序和适配器提供程序框架支持路线、 转换和终结点解析和路由。 框架可以动态地解析终结点，并设置出站适配器属性。 之后冲突解决程序组件解决了终结点 （例如，使用通用描述、 发现和集成 [UDDI] 若要查找出站 Web 服务终结点），适配器提供程序组件设置已注册的 BizTalk Server 的特定属性适配器。 例如，Wcf-basichttp 适配器提供程序负责设置特定于 BizTalk 消息上下文属性为终结点 URI，将使用特定的 BizTalk 适配器;FTP 适配器提供程序负责特定的属性设置为 FTP 适配器。  
@@ -31,17 +31,17 @@ ms.locfileid: "37002798"
  有关详细信息冲突解决程序和适配器提供程序框架的工作原理和如何通过创建自定义冲突解决程序和适配器提供程序扩展它的请参阅有关[修改和扩展 BizTalk ESB 工具包](../esb-toolkit/modifying-and-extending-the-biztalk-esb-toolkit.md)。  
   
 ## <a name="supported-resolution-mechanisms-resolvers"></a>支持的分辨率机制 （冲突解决程序）  
- BizTalk ESB 工具包包括以下冲突解决程序：**静态、 UDDI、 UDDI3、 XPATH、 BRE、 BRI 的路线，路线静态**并**LDAP**。  
+ BizTalk ESB 工具包包括以下冲突解决程序：**静态的 UDDI，UDDI3、 XPATH、 BRE、 BRI，路线，路线静态**并**LDAP**。  
   
  冲突解决程序的连接字符串始终组成**名字对象**(如**BRE**) 后跟":\\\\"和连接或处理的详细信息。 名字对象与关联的冲突解决程序在配置文件定义相匹配。 与每个连接字符串关联的属性是唯一的并不是所有属性都是必需。 可在 ESB 解析程序的每个架构。Resolvers.Schemas 项目。  
   
  连接字符串的示例如下：  
   
-- **静态**  
+- **STATIC**  
   
    STATIC:\\\TransportType=;  
   
-   TransportLocation =<http://localhost/ESB.CanadianServices/SubmitPOService.asmx>;  
+   TransportLocation=<http://localhost/ESB.CanadianServices/SubmitPOService.asmx>;  
   
    Action=;  
   
@@ -103,9 +103,9 @@ ms.locfileid: "37002798"
   
    version=;  
   
-- **路线静态**  
+- **ITINERARY-STATIC**  
   
-   路线静态：\\\name=TwoWayTestItinerary;  
+   ITINERARY-STATIC:\\\name=TwoWayTestItinerary;  
   
    version=;  
   
@@ -115,7 +115,7 @@ ms.locfileid: "37002798"
   
    TransportLocation={mail}  
   
-   筛选器 = (&(objectClass=User) (| (userPrincipalName =yourname@domain.com)));  
+   Filter=(&(objectClass=User)(|(userPrincipalName=yourname@domain.com)));  
   
    SearchRoot=;  
   
@@ -123,15 +123,15 @@ ms.locfileid: "37002798"
   
    EndpointConfig = Subject = {邮件} 路线测试消息 （& a) 
   
-   SMTPAuthenticate = 0 （& a)
+   SMTPAuthenticate=0&
   
-   SMTPHost = 127.0.0.1 （& a)
+   SMTPHost=127.0.0.1&
   
    从 =test@globalbank.com（& a)
   
-   DeliveryReceipt = false （& a)
+   DeliveryReceipt=false&
   
-   MessagePartsAttachments = 0 （& a)
+   MessagePartsAttachments=0&
   
    ReadReceipt=false;  
   
@@ -152,6 +152,6 @@ ms.locfileid: "37002798"
   在这种情况下， **ResolverDictionary**实例，它包含所有已解决的属性返回从解决过程，然后传递到适配器管理器。 适配器管理器将传递到特定的适配器提供程序将设置所有特定于适配器的和特定于终结点的 BizTalk 上下文消息属性的字典。 冲突解决程序寻找**EndPointConfig**属性，提取到它们各自的适配器的属性相对应的名称/值对，然后在消息上设置这些值。  
   
 ## <a name="supported-adapter-providers"></a>支持的适配器提供程序  
- [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]包括以下内置适配器提供程序：**文件、 FTP、 SMTP、 MQSeries、 Wcf-basichttp、 Wcf-wshttp**并**WCF 自定义**。 每个适配器提供程序的名称与 BizTalk Server 中的关联适配器 （传输类型） 的名称完全相同。  
+ [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]包括以下内置适配器提供程序：**文件、 FTP、 SMTP、 MQSeries、 wcf-basichttp: Wcf-basichttp、 Wcf-wshttp**并**WCF 自定义**。 每个适配器提供程序的名称与 BizTalk Server 中的关联适配器 （传输类型） 的名称完全相同。  
   
  冲突解决程序和适配器提供程序框架的主要优势是，您可以通过创建和注册自己的自定义解析程序来解决终结点信息和要设置的已注册的 BizTalk 适配器的特定属性的自定义适配器提供程序来扩展它。 有关详细信息，请参阅[修改和扩展 BizTalk ESB 工具包](../esb-toolkit/modifying-and-extending-the-biztalk-esb-toolkit.md)。

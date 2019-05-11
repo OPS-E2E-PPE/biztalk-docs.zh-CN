@@ -1,5 +1,5 @@
 ---
-title: 如何： 将服务发布到 UDDI 3.0 注册表 |Microsoft Docs
+title: 如何：将服务发布到 UDDI 3.0 注册表 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eb5ab38da9c78831b319d8c64e789b442fb6eef5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 03c24e6f3dc650325f8e93a6d7a61dfcc77bfbd4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008014"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65258506"
 ---
-# <a name="how-to-publish-a-service-to-the-uddi-30-registry"></a>如何： 将服务发布到 UDDI 3.0 注册表
+# <a name="how-to-publish-a-service-to-the-uddi-30-registry"></a>如何：将服务发布到 UDDI 3.0 注册表
 ## <a name="goal"></a>目的  
  本部分演示如何使用 UDDI 服务站点发布内就能解决从为路由 ESB 消息路线的 Web 服务终结点。 将复制现有 PurchaseOrderSubmitOrderService 服务目前发布到注册表。  
 
@@ -29,7 +29,7 @@ ms.locfileid: "37008014"
 
 -   测试使用路线传送名单解析服务终结点使用 UDDI3 解析程序服务发布。  
 
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  本操作指南主题中的过程要求在完成[开发活动的先决条件](../esb-toolkit/prerequisites-for-the-development-activities.md)和 UDDI 发布者工具 （你可以安装在 %esb 安装 Folder%\Bin\ 的执行Microsoft.Practices.ESB.UDDIPublisher.exe)。  
 
 ## <a name="steps"></a>步骤  
@@ -118,7 +118,7 @@ ms.locfileid: "37008014"
 
 7.  使用前面所述的步骤，添加以下自定义类别中，根据下表中显示的值。  
 
-    |tModel|项名|密钥值|  
+    |tModel|密钥名称|密钥值|  
     |------------|--------------|---------------|  
     |microsoft-com:esb:runtimeresolution:portname|端口名称|NewPOService|  
     |microsoft-com:esb:runtimeresolution:transporttype|传输类型|WCF-BasicHttp|  
@@ -274,8 +274,8 @@ ms.locfileid: "37008014"
 ## <a name="additional-resources"></a>其他资源  
  有关详细信息，请参阅下列相关主题：  
 
--   [如何：使用 UDDI 绑定密钥搜索解析服务终结点](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-binding-key-search.md)  
+-   [如何：解析服务终结点使用 UDDI 绑定密钥搜索](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-binding-key-search.md)  
 
--   [如何：使用 UDDI 类别搜索解析服务终结点](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-category-search.md)  
+-   [如何：解析服务终结点使用 UDDI 类别搜索](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-category-search.md)  
 
 -   [开发活动](../esb-toolkit/development-activities.md)

@@ -1,5 +1,5 @@
 ---
-title: '附录 b: HYPER-V 体系结构和功能概述 |Microsoft Docs'
+title: 附录 B：HYPER-V 体系结构和功能概述 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9e20add207d9e4303bd823b82b79e8fad6c07c3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bfd53cf4ef318c3f1e6858b32b57177026aa4248
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002142"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401370"
 ---
-# <a name="appendix-b-hyper-v-architecture-and-feature-overview"></a>附录 b: HYPER-V 体系结构和功能概述
+# <a name="appendix-b-hyper-v-architecture-and-feature-overview"></a>附录 B：HYPER-V 体系结构和功能概述
 本主题提供了 HYPER-V 体系结构的概述，描述了 HYPER-V 的优点和缺点。  
   
 ## <a name="hyper-v-architecture"></a>HYPER-V 体系结构  
@@ -132,4 +132,4 @@ ms.locfileid: "37002142"
   
 -   **硬件要求-** 因服务器合并的需求，而 HYPER-V 虚拟机往往会占用更多 CPU 和内存，并且需要更大的磁盘 I/O 带宽比可比较的计算负载的物理服务器。 对于 64 位和所有版本的 Windows Server 仅 64 位的 HYPER-V 服务器角色才可用，因为物理硬件必须支持硬件辅助虚拟化。 这意味着必须是与 Intel VT 或 AMD 虚拟化 (AMD-V) 技术兼容的处理器、 系统 BIOS 必须支持数据执行保护 (DEP) 和必须启用 DEP。  
   
--   **软件的要求，即**时运行的 HYPER-V 虚拟机上支持大多数 Microsoft 软件，则仍要测试以确保与 HYPER-V 虚拟化环境的兼容性是某些 Microsoft 软件。 例如，大多数 Microsoft 企业级应用程序支持的 HYPER-V 上运行或正在被测试的 HYPER-V 上的支持。 有关 BizTalk Server 和 HYPER-V 上的 SQL Server 的可支持性详细信息，请参阅[附录 c: BizTalk Server 和 SQL Server 的 HYPER-V 可支持性](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)。
+-   **软件的要求，即**时运行的 HYPER-V 虚拟机上支持大多数 Microsoft 软件，则仍要测试以确保与 HYPER-V 虚拟化环境的兼容性是某些 Microsoft 软件。 例如，大多数 Microsoft 企业级应用程序支持的 HYPER-V 上运行或正在被测试的 HYPER-V 上的支持。 有关 BizTalk Server 和 HYPER-V 上的 SQL Server 的可支持性详细信息，请参阅[附录 c:BizTalk Server 和 SQL Server 的 HYPER-V 可支持性](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)。

@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f28771f2611a8b5f7c2522b7cd45e875897645e9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2df07372e17d93ae458f3831401bec4979725173
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996198"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400723"
 ---
 # <a name="optimizing-business-activity-monitoring-bam-performance"></a>优化业务活动监视 (BAM) 性能
 本主题介绍了业务活动监视 (BAM) 的性能因素。  
@@ -38,19 +38,19 @@ ms.locfileid: "36996198"
   
   应选择一种基于以下因素这些 Api:  
   
-- 如果关心延迟问题，请选择 DES，可使数据同步地保留到 BAM 主导入数据库。  
+- 如果您关注的问题的延迟，请选择的 DES，其中数据以同步方式保存到 BAM 主导入数据库。  
   
 - 如果您关注的问题的性能和事件插入的吞吐量，请选择异步 API （BES、 OES 或 MES）。  
   
 - 如果你正在编写不具有的计算机运行的应用程序安装 BizTalk Server，请使用 DES 和 BES;可以在非 BizTalk 应用程序中使用这些 Api。  
   
   > [!NOTE]  
-  >  在有些情况下，您可能需要混合使用 EventStream 类型。 例如，为管道处理，您可能想要捕获特定数据在 BAM 中的，而不考虑是否管道正在回滚其事务。 具体而言，您可能希望捕获有关失败的消息数的数据或管道处理过程中出现多少次重试。 若要在这种情况下捕获数据，应使用 BES。  
+  >  有在其中你可能想要混合使用 EventStream 类型的方案。 例如，为管道处理，您可能想要捕获特定数据在 BAM 中的，而不考虑是否管道正在回滚其事务。 具体而言，您可能希望捕获有关失败的消息数的数据或管道处理过程中出现多少次重试。 若要捕获的数据在此情况下应使用 BES。  
   
-- 如果您的应用程序运行在安装了 BizTalk Server 的计算机上，请使用 MES 和 OES。 （这些 API 只在 BizTalk 应用程序中可用。）  
+- 如果你的应用程序在其安装 BizTalk Server 的计算机上运行，使用 MES 和 OES。 （这些都提供 Api 只能从 BizTalk 应用程序。）  
   
   > [!NOTE]  
-  >  OES 等效于 MES，但对 BizTalk 业务流程除外。  
+  >  OES 等效于 MES，但对 BizTalk 业务流程。  
   
 - 如果您希望 BAM 事件持久化与管道事务保持同步，则应使用消息传送事件 Stream (MES)。  
   

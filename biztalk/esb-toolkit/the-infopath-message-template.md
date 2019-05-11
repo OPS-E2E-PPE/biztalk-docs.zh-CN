@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2c929e8ef1edcd88c0976d145354779b3e095634
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8972c27a433755a922cdc1d5074902e412a46602
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024467"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399744"
 ---
 # <a name="the-infopath-message-template"></a>InfoPath 消息模板
 作为 ESB 管理门户中查看 ESB 错误消息的替代方法，用户可以充分利用一个名为 ESB 异常的消息查看器，随一起提供的 Microsoft InfoPath 消息模板[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。  
@@ -28,7 +28,7 @@ ms.locfileid: "37024467"
   
 - 异常对象视图  
   
-- 消息视图 (Messages view)  
+- 消息视图  
   
   图 1 显示了 ESB 异常消息查看器，后者将显示最异常的环境属性的常规视图。  
   

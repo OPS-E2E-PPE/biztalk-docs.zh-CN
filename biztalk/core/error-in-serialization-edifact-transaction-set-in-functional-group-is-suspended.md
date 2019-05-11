@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c89d4300d54bc7e524f9f33aea4689a6cdc4bc27
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5f99a67f39f23cad9865bfea8cc0a7a8232a8745
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007654"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388838"
 ---
-# <a name="error-encountered-during-serialization-the-edifact-transaction-set-contained-in-functional-group-is-being-suspended-with-following-errors"></a>在序列化期间遇到错误。 功能组中包含的 EDIFACT 事务集由于以下错误被挂起
+# <a name="error-encountered-during-serialization-the-edifact-transaction-set-contained-in-functional-group-is-being-suspended-with-following-errors"></a>在序列化期间遇到错误。 以下错误被挂起功能组中包含的 Edifact 事务集
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                                                                                |
@@ -33,7 +33,7 @@ ms.locfileid: "37007654"
 |  消息正文   | 在序列化期间遇到错误。 Edifact 事务集 id 为 '{0}功能组 id 中包含{1}，交换中包含的 id{2}，发送方 id{3}，接收方 id{4}以下错误被挂起： |
   
 ## <a name="explanation"></a>解释  
- 此错误/警告/信息事件表明由于通过标识的事务集指明的错误，在序列化传出的 EDIFACT 交换期间 EDI 发送管道遇到错误。  
+ 此错误/警告/信息事件表明 EDI 发送管道遇到错误，指出的错误，使用标识的事务集由于序列化传出的 EDIFACT 交换时。  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请使用错误消息中的信息来标识事务集中的错误，然后在产品帮助中确定问题解决方案。
+ 若要解决此错误，需要使用错误消息中的信息来标识事务集中的错误，然后确定问题解决方案产品帮助中。

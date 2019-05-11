@@ -1,5 +1,5 @@
 ---
-title: 部署和以编程方式启动新版本的业务流程的 |Microsoft 文档
+title: 部署和启动业务流程的新版本以编程方式 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 26887b70a09d4a7af8d41a4385dffda20e964690
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b2398fbbfce73637d8c9cc3607c1fc5c82c1e0f8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239021"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389608"
 ---
-# <a name="deploying-and-starting-a-new-version-of-an-orchestration-programmatically"></a>部署和以编程方式启动的业务流程的新版本
-本主题中的代码说明如何快速部署和启动新版本的业务流程。 由于手动操作会花几秒钟来执行，因此手动取消登记业务流程并随后启动新版本的业务流程将导致生成挂起或重复的消息。 通过本主题中说明的编程方法，可以更快速地执行这些操作，从而减小生成挂起和重复消息的可能性；并且可作为单个事务来执行这些操作，以便其中一个操作失败时，这两个业务流程都保持开始时的相同状态。  
+# <a name="deploying-and-starting-a-new-version-of-an-orchestration-programmatically"></a>部署和以编程方式启动业务流程的新版本
+本主题中的代码演示如何快速部署和启动新版本的业务流程。 手动操作可能要花费几秒钟来执行，因为手动取消登记业务流程，然后启动它的新版本可能导致挂起或重复的消息。 本主题中说明的编程方法，可更快速地执行这些操作，以便如果一个操作失败，这两个业务流程会保留在减少的挂起和重复消息 – 并作为单个事务的可能性相同状态如同它们是在开始。  
   
 > [!NOTE]
->  在极少数情况下，当你使用新版本进行更新业务流程在高负载下运行时某些消息可以成为挂起，即使取消登记，并以编程方式登记业务流程。  我们建议后执行这些操作时，你检查挂起的消息队列和恢复任何挂起的消息。  
+>  在极少数情况下，当您正在更新包含新版本的业务流程在高负载下运行时某些消息也会挂起即使取消登记和登记业务流程以编程方式。  我们建议执行这些操作之后, 你检查挂起的消息队列并恢复任何挂起的消息。  
   
- 下面的代码示例说明如何使用浏览器 OM API 取消登记现有的业务流程并启动新版本的业务流程。  
+ 下面的代码示例说明了如何使用资源管理器 OM API 取消登记现有的业务流程并启动新版本的业务流程。  
   
 ```  
 using System;  
@@ -77,7 +77,7 @@ static void Main(string[] args)
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [更新 BizTalk 应用程序](../core/updating-biztalk-applications.md)   
  [如何登记业务流程](../core/how-to-enlist-an-orchestration.md)   
  [如何取消登记业务流程](../core/how-to-unenlist-an-orchestration.md)

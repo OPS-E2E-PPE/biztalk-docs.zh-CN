@@ -1,5 +1,5 @@
 ---
-title: 升级到 BizTalk Server 2013 和 2013 R2 |Microsoft 文档
+title: 升级到 BizTalk Server 2013 和 2013 R2 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,18 +17,18 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97337438ca6be06b542baf61ad8d26fa2045180a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: dbd8b2eda26ff6de37288612db55815d27020c34
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22300029"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401450"
 ---
 # <a name="upgrade-to-biztalk-server-2013-and-2013-r2"></a>升级到 BizTalk Server 2013 和 2013 R2
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 经过设计，可以便捷地从以前版本进行升级。 [与 BizTalk Server 2013 相关的安装指南](http://www.microsoft.com/download/details.aspx?id=35552)页面上提供了 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013 和 2013 R2 升级指南。  
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 旨在允许升级便捷地从以前的版本。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 2013年和 2013 R2 升级指南位于[相关的安装指南与 BizTalk Server 2013](http://www.microsoft.com/download/details.aspx?id=35552)。  
   
 > [!NOTE]
->  执行升级时将替换架构的压缩文件。 如果将 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 升级到更高版本（例如，从测试版到发布版），则安装中的 MicrosoftEdiXSDTemplates.exe 文件将替换为与升级关联的 MicrosoftEdiXSDTemplates.exe 文件。 如果你计划继续使用旧压缩文件的架构，那么除非你备份了旧压缩文件，否则升级之后你将不能再访问此压缩文件。 有关详细信息，请参阅**安装 EDI 架构**在[后配置步骤来优化您的环境](post-configuration-steps-to-optimize-your-environment.md)。
+>  当执行升级时，将替换架构的压缩的文件。 如果升级 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]到更高版本 （例如，从测试版到发布版），在安装中的 MicrosoftEdiXSDTemplates.exe 文件将替换与关联的 MicrosoftEdiXSDTemplates.exe 文件升级。 如果你打算继续使用旧压缩文件中的架构，将不再可以访问到压缩的文件在升级后除非您备份了旧压缩文件。 有关详细信息，请参阅**安装 EDI 架构**处[用于优化环境的配置后步骤](post-configuration-steps-to-optimize-your-environment.md)。
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [配置 BizTalk Server](../install-and-config-guides/configure-biztalk-server.md)

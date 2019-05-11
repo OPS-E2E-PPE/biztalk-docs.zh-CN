@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 75dbde61369cdc8658dd9b39fa75fe2655225222
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c787346ea9bce0964615b8ed1376924306dffad5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001726"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399297"
 ---
 # <a name="best-practices-for-updating-applications"></a>更新应用程序的最佳实践
 本主题介绍你应考虑使用更新 BizTalk 应用程序和项目时的最佳做法。  
@@ -29,7 +29,7 @@ ms.locfileid: "37001726"
   
   **与 BizTalk 管理数据库和全局程序集缓存 (GAC) 中的程序集匹配**  
   
-- 确保程序集的相同版本并在 BizTalk 管理数据库和 GAC 中，以便你的应用程序正常运行。 如果部署程序集时并不总是将其安装到 GAC 中，GAC 和 BizTalk 管理数据库中的程序集版本可能有所不同，从而导致运行时出现处理错误。  
+- 确保程序集的相同版本并在 BizTalk 管理数据库和 GAC 中，以便你的应用程序正常运行。 如果您做不始终将程序集安装到 GAC 中时将其部署，您可能必须在 GAC 和 BizTalk 管理数据库，这将导致在运行时处理错误的不同版本。  
   
   **使用 BizTalk 程序集检查器和远程 GAC 工具验证版本控制**  
   
@@ -50,9 +50,9 @@ ms.locfileid: "37001726"
   
 -   升级应用程序通常是一个故意安排和精确的操作，在生产环境中。 当你升级应用程序时，你通常应使用手动检查表。 但是，您可能能够通过使用.msi 文件，来优化某些步骤。 当您使用某一.msi 文件时，可以总结你的应用程序项目打包到可分发包。 向多个运行时中推出更新的 Dll 或执行组级别部署时，某一.msi 文件是特别有用。 在创建某一.msi 文件时，应从包中排除所有其他未更改的资源和绑定。  
   
--   如果更新 BizTalk 程序集，您应停止、 取消登记、 重新登记，并启动 BizTalk 项目手动之前和之后导入和安装.msi 文件。 有关更新的 BizTalk 程序集的详细信息，请参阅[清单： 更新的程序集](../technical-guides/checklist-updating-an-assembly.md)。  
+-   如果更新 BizTalk 程序集，您应停止、 取消登记、 重新登记，并启动 BizTalk 项目手动之前和之后导入和安装.msi 文件。 有关更新的 BizTalk 程序集的详细信息，请参阅[核对清单：更新的程序集](../technical-guides/checklist-updating-an-assembly.md)。  
   
--   如果升级 BizTalk Server 程序集的并行版本控制，您将必须使用.msi 文件之前和之后执行手动步骤。 有关所需的手动步骤的详细信息，请参阅[清单： 更新应用程序使用的并行版本控制](../technical-guides/checklist-updating-an-application-using-side-by-side-versioning.md)。  
+-   如果升级 BizTalk Server 程序集的并行版本控制，您将必须使用.msi 文件之前和之后执行手动步骤。 有关所需的手动步骤的详细信息，请参阅[核对清单：将应用程序使用的并行版本控制更新](../technical-guides/checklist-updating-an-application-using-side-by-side-versioning.md)。  
   
 ## <a name="updating-an-assembly"></a>更新的程序集  
  **增加在生产环境中的程序集的版本号**  
@@ -61,7 +61,7 @@ ms.locfileid: "37001726"
   
   **使用更新的程序集更新 GAC**  
   
-- 当更新包含业务流程、 架构或映射的程序集时，必须使用包含新版本的程序集更新 gac。 否则，BizTalk Server 将使用版本已过时。 要执行此操作，请在运行应用程序绑定到的主机的实例的每台计算机上，从 GAC 卸载包含更新项目的程序集的过期版本，并确保安装新版本。  
+- 当更新包含业务流程、 架构或映射的程序集时，必须使用包含新版本的程序集更新 gac。 否则，BizTalk Server 将使用版本已过时。 为此，请运行应用程序绑定从 GAC 卸载包含更新的项目的程序集的过期的版本，请确保安装新版本的主机的实例每台计算机上。  
   
   **更新的程序集后重新启动主机实例**  
   
@@ -77,16 +77,16 @@ ms.locfileid: "37001726"
   
   **不会停止其他应用程序依赖的项目**  
   
-- 如果您停止一个应用程序中另一个应用程序所依赖的项目（这可能导致停止整个应用程序），则依赖的应用程序将无法正常工作。 有关停止应用程序的详细信息，请参阅[如何启动和停止 BizTalk 应用程序](http://go.microsoft.com/fwlink/?LinkID=154729)(http://go.microsoft.com/fwlink/?LinkID=154729)。  
+- 如果您停止一个应用程序 （这可能导致停止整个应用程序） 中的项目取决于其他应用程序，将从属应用程序将无法正常工作。 有关停止应用程序的详细信息，请参阅[如何启动和停止 BizTalk 应用程序](http://go.microsoft.com/fwlink/?LinkID=154729)(http://go.microsoft.com/fwlink/?LinkID=154729)。  
   
   **添加对程序集之前移动项目的引用**  
   
-- 将项目移向新应用程序时，该项目所依赖的其他所有项目也会被移动，除非此新应用程序有对包含移动项目所依赖项目的应用程序的引用。 同样，依赖于移动项目的所有项目也会被移动，除非包含这些项目的应用程序有对新应用程序的引用。 当移动项目，将显示一起移动的其他项目的列表。  
+- 当将项目移到新的应用程序时，它在其具有依赖关系的任何其他项目也被移动，除非新的应用程序具有对包含移动的项目所依赖的项目的应用程序的引用。 此外，移动项目有依赖关系的任何项目被移动，除非其包含的应用程序具有对新应用程序的引用。 当移动项目，将显示一起移动的其他项目的列表。  
   
 ## <a name="updating-bindings"></a>更新绑定  
  **自动执行重新配置绑定**  
   
--   在更新应用程序中的一个程序集时，通常会覆盖该程序集的绑定，也有可能该程序集根本未绑定，所以您不得不手动重新配置绑定。 可以使用绑定文件来自动化此过程。 如果要更新的程序集相同的版本，可以首先导出绑定文件的程序集，然后更新程序集，然后导入应用程序，该程序集并导入绑定文件，然后重新应用以前的绑定。 如果要使用更新的版本更新程序集，可以导出绑定文件，编辑该文件以反映新的程序集版本、 新的程序集导入应用程序，然后通过导入绑定文件中应用的新绑定。 有关绑定文件的详细信息，请参阅[如何将绑定导出到绑定文件](../technical-guides/how-to-export-bindings-to-a-binding-file.md)。 有关编辑绑定文件的详细信息，请参阅[自定义绑定文件](http://go.microsoft.com/fwlink/?LinkID=155000)(http://go.microsoft.com/fwlink/?LinkID=155000)。  
+-   更新应用程序中的程序集时，其绑定通常被覆盖，否则该程序集可能未绑定，强制您手动重新配置绑定。 可以使用绑定文件来自动化此过程。 如果要更新的程序集相同的版本，可以首先导出绑定文件的程序集，然后更新程序集，然后导入应用程序，该程序集并导入绑定文件，然后重新应用以前的绑定。 如果要使用更新的版本更新程序集，可以导出绑定文件，编辑该文件以反映新的程序集版本、 新的程序集导入应用程序，然后通过导入绑定文件中应用的新绑定。 有关绑定文件的详细信息，请参阅[如何将绑定导出到绑定文件](../technical-guides/how-to-export-bindings-to-a-binding-file.md)。 有关编辑绑定文件的详细信息，请参阅[自定义绑定文件](http://go.microsoft.com/fwlink/?LinkID=155000)(http://go.microsoft.com/fwlink/?LinkID=155000)。  
   
 ## <a name="starting-or-stopping-an-application"></a>启动或停止应用程序  
  **停止应用程序来更新项目**  

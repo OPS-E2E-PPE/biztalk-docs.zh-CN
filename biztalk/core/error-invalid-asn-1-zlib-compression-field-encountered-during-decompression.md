@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1ee1388304eb9923dcd2c6fef1468794f7c622a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d3e82597f07c37633021e44cd14a8280c0d57205
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012846"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389231"
 ---
 # <a name="invalid-asn1-zlib-compression-field-encountered-during-decompression-processing"></a>解压缩处理期间遇到无效的 ASN.1 ZLib 压缩字段
 ## <a name="details"></a>详细信息  

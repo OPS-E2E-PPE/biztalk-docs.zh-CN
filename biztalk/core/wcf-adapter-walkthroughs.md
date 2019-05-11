@@ -1,5 +1,5 @@
 ---
-title: WCF 适配器演练 |Microsoft 文档
+title: WCF 适配器演练 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,26 +15,26 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f6f96db5a83cc7b07a8c18df5e808bd5865ba98
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 277c82a2294cfc1b1c7e8fa25a0db24c76d873c9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288637"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399433"
 ---
 # <a name="wcf-adapter-walkthroughs"></a>WCF 适配器演练
-本部分中的演练有助于你学习如何使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中的 WCF 适配器。 这些演练提供了使用 WCF 适配器执行任务或者使用此适配器的功能的分步说明。  
+在本部分中的演练有助于您了解如何使用中的 WCF 适配器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 这些演练提供通过使用 WCF 适配器中，执行任务或使用的适配器的功能的分步说明。  
   
- 你可以作为整个的一部分下载演练[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]通过使用文件 WCFAdapterWalkthroughs.exe 适配器演练包。  此文件是可在下载[http://go.microsoft.com/fwlink/?LinkId=146121](http://go.microsoft.com/fwlink/?LinkId=146121)。 有关其他代码示例，请转到[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]开发人员中心， [http://go.microsoft.com/fwlink/?LinkId=194140](http://go.microsoft.com/fwlink/?LinkId=194140)。  
+ 您可以下载演练作为整个一部分[!INCLUDE[nextref_btsWinCommFoundation](../includes/nextref-btswincommfoundation-md.md)]使用文件 WCFAdapterWalkthroughs.exe 适配器演练包。  此文件是可在下载[ http://go.microsoft.com/fwlink/?LinkId=146121 ](http://go.microsoft.com/fwlink/?LinkId=146121)。 有关其他代码示例，请转到[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]在开发人员中心[ http://go.microsoft.com/fwlink/?LinkId=194140 ](http://go.microsoft.com/fwlink/?LinkId=194140)。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [演练： 使用 WCF BasicHttp 适配器的 WCF 服务发布](../core/walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter.md)  
+-   [演练：使用 Wcf-basichttp 适配器发布 WCF 服务](../core/walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter.md)  
   
--   [演练： 使用 WCF 服务与 WCF BasicHttp 适配器](../core/walkthrough-consuming-wcf-services-with-the-wcf-basichttp-adapter.md)  
+-   [演练：使用 Wcf-basichttp 适配器使用 WCF 服务](../core/walkthrough-consuming-wcf-services-with-the-wcf-basichttp-adapter.md)  
   
--   [演练： 使用 WCF NetMsmq 适配器的 WCF 服务发布](../core/walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter.md)  
+-   [演练：使用 Wcf-netmsmq 适配器发布 WCF 服务](../core/walkthrough-publishing-wcf-services-with-the-wcf-netmsmq-adapter.md)  
   
--   [演练： 使用 WCF NetTcp 适配器使用消息安全模式](../core/walkthrough-using-the-message-security-mode-with-the-wcf-nettcp-adapter.md)  
+-   [演练：使用 Wcf-nettcp 适配器使用消息安全模式](../core/walkthrough-using-the-message-security-mode-with-the-wcf-nettcp-adapter.md)  
   
--   [演练： 自定义消息处理与 WCF NetTcp 适配器](../core/walkthrough-custom-message-processing-with-the-wcf-nettcp-adapter.md)
+-   [演练：使用 Wcf-nettcp 适配器处理的自定义消息](../core/walkthrough-custom-message-processing-with-the-wcf-nettcp-adapter.md)

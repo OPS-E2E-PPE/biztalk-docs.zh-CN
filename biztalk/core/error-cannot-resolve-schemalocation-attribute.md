@@ -1,5 +1,5 @@
 ---
-title: 错误-无法解析 schemaLocation 属性 |Microsoft 文档
+title: 错误-无法解析 schemaLocation 属性 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d268d91b19de14cac109ad74d3870c6551c7a47d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b941366b3ab012c1516602aafbca5534b15987ed
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239565"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389417"
 ---
 # <a name="error---cannot-resolve-schemalocation-attribute"></a>错误-无法解析 schemaLocation 属性
 **错误代码**  
@@ -26,8 +26,8 @@ ms.locfileid: "22239565"
   
  **说明**  
   
- BizTalk 编辑器找不到由要打开的架构所导入的架构。  
+ BizTalk 编辑器找不到要打开该架构导入的架构。  
   
  **用户执行任何操作**  
   
- 单击**架构**节点。 在属性窗口中，单击**导入**属性。 省略号 (**...**) 按钮将变为活动状态。 单击该按钮。 **导入**此时将显示对话框。 在该对话框中进行编辑以将路径指定为所导入的架构。
+ 单击**架构**节点。 在属性窗口中，单击**导入**属性。 旁边的省略号 (**...**) 按钮将变为活动状态。 单击的按钮。 **导入**此时将显示对话框。 编辑对话框中导入的架构的路径。

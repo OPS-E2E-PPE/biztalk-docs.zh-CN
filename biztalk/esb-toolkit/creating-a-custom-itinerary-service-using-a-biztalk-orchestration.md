@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aa36acc84358a8e91a0b9daaa4370270fb5860b1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c1c95a4da43896f0bed6fdd0b9350ca25ccba7e1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988534"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399400"
 ---
 # <a name="creating-a-custom-itinerary-service-using-a-biztalk-orchestration"></a>创建自定义路线服务使用 BizTalk 业务流程
 是的一部分的路线 framework[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]支持使用业务流程路线步骤执行。 可以为基于应用的功能需求，其中可能包括以下 Microsoft BizTalk Server 业务流程来实现自定义路线服务：  

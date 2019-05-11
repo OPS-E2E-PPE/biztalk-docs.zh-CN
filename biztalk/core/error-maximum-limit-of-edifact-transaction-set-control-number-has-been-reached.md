@@ -12,14 +12,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b639f80d6ad203074e0542df6672f2d7b89aa2ec
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e666a1013666e360773467ed990b5394e734f4b1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001342"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388657"
 ---
-# <a name="acknowledgement-generation-has-failed-as-maximum-limit-of-edifact-transaction-set-control-number-has-been-reached-for-party-settings"></a>确认生成失败，因为已达到参与方设置的 EDIFACT 事务集控制编号的上限
+# <a name="acknowledgement-generation-has-failed-as-maximum-limit-of-edifact-transaction-set-control-number-has-been-reached-for-party-settings"></a>确认生成失败，因为已达到参与方设置的 Edifact 事务集控制编号的最大限制
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                                                                          |

@@ -1,5 +1,5 @@
 ---
-title: 登记方 （登记的方节点） |Microsoft 文档
+title: 已登记参与方 （已登记参与方节点） |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,20 +14,20 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 624f74d3b49b80e8000723c3f7451c52b37c8d3d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 034cc538bb358f887cda761bb0cf6a0d9d1116e4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239949"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389080"
 ---
-# <a name="enlisted-party-enlisted-parties-node"></a>已登记参与方（“已登记参与方”节点）
-绑定文件的“已登记参与方”节点包含有关已登记参与方的特定信息，该已登记参与方与随同该绑定文件一起导出的角色相关联。  
+# <a name="enlisted-party-enlisted-parties-node"></a>已登记参与方 （已登记参与方节点）
+绑定文件的已登记参与方节点包含有关与绑定文件一起导出的角色相关联的已登记参与方的特定信息。  
   
-## <a name="nodes-in-the-enlisted-party-node"></a>登记方节点中的节点  
+## <a name="nodes-in-the-enlisted-party-node"></a>在已登记参与方节点的节点  
  下表列出了可为绑定文件的此节点设置的属性：  
   
-|**名称**|**节点类型**|**数据类型**|**Description**|**限制**|**注释**|  
+|**名称**|**节点类型**|**数据类型**|**说明**|**限制**|**注释**|  
 |--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|Name|Attribute|xs:string|指定已登记参与方的名称。|可选|默认值：空|  
-|[映射](../core/mappings-enlisted-party-node.md)|录制|ArrayOfEnlistedPartyMapping (ComplexType)|用于参与方端口和角色端口类型操作之间的映射的容器节点。|可选|默认值：无|
+|“属性”|特性|xs:string|指定已登记参与方的名称|可选|默认值：空|  
+|[映射](../core/mappings-enlisted-party-node.md)|录制|ArrayOfEnlistedPartyMapping (ComplexType)|参与方端口和角色端口类型操作之间的映射的容器节点。|可选|默认值：无|

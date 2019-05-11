@@ -1,5 +1,5 @@
 ---
-title: 任务 5： 配置转换形状 2 |Microsoft Docs
+title: 任务 5：配置转换形状 2 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 39ccfdff1f175942dfc5b3ce5c6ba75c87dcf2de
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4a41921914c2018da9e43442dfa94763fb4dc4f2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000158"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65299807"
 ---
-# <a name="task-5-configure-the-transform-shape"></a>任务 5： 配置转换形状
-使用以下过程可配置转换形状。  
+# <a name="task-5-configure-the-transform-shape"></a>任务 5：配置转换形状
+使用以下过程来配置转换形状。  
   
 ### <a name="to-configure-the-transform-shape"></a>若要配置转换形状  
   
@@ -34,9 +34,9 @@ ms.locfileid: "37000158"
   
        ![插入形状转换](../core/media/insert-shape-transform.gif "insert_shape_transform")  
   
-   2. 使用“转换”，将数据从正在发送的数据映射到发送的数据。  
+   2. 使用转换，将数据从发送到发送的数据的数据的映射。  
   
-      对于将发送具有所有可能值的文档（而不是 BeginDoc）的工作环境，允许您构造所有可能的消息 BeginDoc、EditLine 和 EndDoc。 然而，对于该示例，只有硬编码数据。  
+      为你的工作环境将文档发送 （而不是 BeginDoc) 的所有值可能允许您构造所有可能的消息、 BeginDoc、 EditLine 和 EndDoc。 对于此示例中，但是，没有仅硬编码的数据。  
   
 2. 双击以打开 Transform_1。  
   
@@ -48,7 +48,7 @@ ms.locfileid: "37000158"
   
         ![转换目标](../core/media/transform-destination.gif "transform_destination")  
   
-3. 在解决方案资源管理器，双击**Transform_1.btm**以打开映射工具。 链接以下四项：  
+3. 在解决方案资源管理器，双击**Transform_1.btm**以打开映射工具。 链接以下四个项：  
   
    - mnCMJobNo  
   
@@ -60,7 +60,7 @@ ms.locfileid: "37000158"
   
      ![示例转换映射](../core/media/example-transformmapping.gif "example_transformmapping")  
   
-     为方便使用，该示例具有硬编码值。 单击目标架构中的项并设置以下值。  
+     为了方便使用，此示例具有硬编码值。 单击目标架构中的项并设置以下值。  
   
      ![硬编码映射](../core/media/hardcoded-mapping-example.gif "hardcoded_mapping_example")  
   
@@ -94,7 +94,7 @@ ms.locfileid: "37000158"
   
    2.  选择**目标**下方的添加行中单击**变量的名称**，选择**EndDocMsg**，然后单击**确定**。  
   
-6. 在解决方案资源管理器，双击**Transform_2.btm**以打开映射工具。 链接以下四项：  
+6. 在解决方案资源管理器，双击**Transform_2.btm**以打开映射工具。 链接以下四个项：  
   
    - mnCMJobNo  
   
@@ -104,7 +104,7 @@ ms.locfileid: "37000158"
   
    - mnTransactionID  
   
-     为方便使用，该示例具有硬编码值。 单击目标架构中的项并设置以下值。  
+     为了方便使用，此示例具有硬编码值。 单击目标架构中的项并设置以下值。  
   
    ```  
    <?xml version="1.0" encoding="utf-8"?>  
@@ -117,7 +117,7 @@ ms.locfileid: "37000158"
    ```  
   
 ## <a name="see-also"></a>请参阅  
- [任务 1： 创建端口](../core/task-1-create-the-ports1.md)   
- [任务 2： 创建消息](../core/task-2-create-the-messages2.md)   
- [任务 3： 配置发送和接收形状](../core/task-3-configure-the-send-and-receive-shapes2.md)   
- [任务 4：配置“构造消息”形状](../core/task-4-configure-the-construct-message-shape1.md)
+ [任务 1:创建端口](../core/task-1-create-the-ports1.md)   
+ [任务 2:创建消息](../core/task-2-create-the-messages2.md)   
+ [任务 3:配置发送和接收形状](../core/task-3-configure-the-send-and-receive-shapes2.md)   
+ [任务 4:配置构造消息形状](../core/task-4-configure-the-construct-message-shape1.md)

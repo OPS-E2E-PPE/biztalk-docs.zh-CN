@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c77bead00b97bf6fa072223485f2d1cc422053b7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 424dded28973b2e113c959eacd9141fbaf2fb95d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001886"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390297"
 ---
 # <a name="decompression-failed-while-processing-a-compressed-as2-message"></a>处理压缩的 AS2 消息时解压缩失败。
 ## <a name="details"></a>详细信息  
@@ -30,7 +30,7 @@ ms.locfileid: "37001886"
 |  事件源   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
 |    组件    |                                       AS2 引擎                                       |
 |  符号名称  |                                           -                                            |
-|  消息正文   |       处理压缩的 AS2 消息时解压缩失败。 错误：{0}       |
+|  消息正文   |       处理压缩的 AS2 消息时解压缩失败。 错误： {0}       |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明接收管道的 AS2 解码器组件无法解压缩 AS2 消息。  
@@ -38,8 +38,8 @@ ms.locfileid: "37001886"
 ## <a name="user-action"></a>用户操作  
  若要解决此错误，请执行以下操作之一：  
   
--   验证 AS2 消息中的压缩包装是否有效。  
+-   验证 AS2 消息中的压缩包装有效。  
   
--   验证是否为 BizTalk Server 启用了解压缩，方法是验证“AS2 属性”对话框的“作为 AS2 消息发送方的参与方”页上是否选中了“应对消息进行压缩”属性（如果选中了“替代入站消息属性”属性）。  
+-   验证解压缩为 BizTalk Server 启用通过验证，"应对消息进行压缩"属性处于选中状态的参与方作为 AS2 消息发送方的 AS2 属性对话框的页 （是否替代入站消息属性属性处于选中状态）.  
   
--   使用错误消息文本中提供的错误说明来确定具体问题。
+-   使用错误消息文本中提供的错误说明来标识特定的问题。

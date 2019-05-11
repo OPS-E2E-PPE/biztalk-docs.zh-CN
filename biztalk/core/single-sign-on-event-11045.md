@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 11045 |Microsoft Docs
+title: 单一登录：事件 11045 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 35e8a331aca4d53ab86c8950fa7858db7f15fe8f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8d03e5e6ca3cd651c001c2f1df386eb07d32d3c6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996174"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400952"
 ---
-# <a name="single-sign-on-event-11045"></a>单一登录： 事件 11045
+# <a name="single-sign-on-event-11045"></a>单一登录：事件 11045
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                                       |
@@ -28,12 +28,12 @@ ms.locfileid: "36996174"
 | 产品版本 |                                                                      [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                       |
 |    事件 ID     |                                                                                                 11045                                                                                                 |
 |  事件源   |                                                                                                ENTSSO                                                                                                 |
-|    组件    |                                                                                                  N/A                                                                                                  |
+|    组件    |                                                                                                  不可用                                                                                                  |
 |  符号名称  |                                                                                   SSO_WARN_EXISTING_MAPPING_WINDOWS                                                                                   |
-|  消息正文   | 无法创建映射，因为指定的 Windows 帐户已经存在映射。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 应用程序名称: %2 %r<br /><br /> Windows 帐户： %3 |
+|  消息正文   | 无法创建映射，因为映射已存在指定的 Windows account.%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 应用程序名称: %2 %r<br /><br /> Windows 帐户： %3 |
   
 ## <a name="explanation"></a>解释  
- 指定的 Windows 帐户已经存在映射，并且不允许重复项。  
+ 映射已存在所指定的 Windows 帐户，并且不允许重复。  
   
 ## <a name="user-action"></a>用户操作  
- 不需要用户进行任何操作。
+ 不不需要任何用户操作。

@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 32b00fea76b95a76cbb6b88f18056bba798e1381
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3f8b66c1047dde836f965f6ab6345973d3525db4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990982"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398634"
 ---
 # <a name="unsupported-security-algorithm-suite"></a>不支持的安全算法套件
 ## <a name="details"></a>详细信息  
@@ -33,10 +33,10 @@ ms.locfileid: "36990982"
 |  消息正文   |                     不支持的安全算法套件： {0}                      |
 
 ## <a name="explanation"></a>解释  
- 如果接收位置或发送端口的安全算法套件属性设置为不正确的值，则发生此错误。  
+ 当接收位置或发送端口的安全算法套件属性设置为不正确的值时，将发生此错误。  
 
 ## <a name="user-action"></a>用户操作  
- 确保事务协议属性设置为有效值。  
+ 确保事务协议属性设置为有效的值。  
 
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
 

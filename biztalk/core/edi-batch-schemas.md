@@ -12,26 +12,26 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a25391fbc42b8e368a44f652ae691ff8bc2722dc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 90c03f9a6136a925419166fa4db8b919b9ec8eb3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999222"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389246"
 ---
 # <a name="edi-batch-schemas"></a>EDI 批处理架构
-BizTalk Server 处理保留交换时，至少使用三个架构：  
+当 BizTalk Server 处理保留的交换时，它使用至少三个架构：  
 
-- 批处理架构（交换 XML 架构）：用于验证保留的批处理交换（BaseArtifacts.dll 中部署的 X12_BatchSchema 或 Edifact_BatchSchema）的根节点。  
+- 要验证的根节点的保留的批架构 （交换 XML 架构） 的批处理交换 （X12_BatchSchema 或 Edifact_BatchSchema 部署在 BaseArtifacts.dll 中）  
 
-- 信封服务架构：用于验证交换、组、事务集标头和尾部（BaseArtifacts.dll 中部署的 X12ServiceSchema 或 EdifactServiceSchema）。 有关详细信息，请参阅[EDI 服务和控制架构](../core/edi-service-and-control-schemas.md)。  
+- 信封服务架构来验证交换、 组、 和事务集标头和尾部 （X12ServiceSchema 或 EdifactServiceSchema 部署在 BaseArtifacts.dll 中）。 有关详细信息，请参阅[EDI 服务和控制架构](../core/edi-service-and-control-schemas.md)。  
 
-- 文档架构：用于批处理交换中的每个文档类型（部署在项目中）。 有关详细信息，请参阅[EDI 文档架构](../core/edi-document-schemas.md)。  
+- 批处理交换 （部署在你的项目） 中每个文档类型的文档架构。 有关详细信息，请参阅[EDI 文档架构](../core/edi-document-schemas.md)。  
 
-  批处理架构在运行时用于验证保留的入站和出站批处理交换。 批处理架构也用于在设计时验证和生成消息实例。  
+  批处理架构在运行时用于验证保留的入站和出站批处理的交换。 批处理架构也用于在设计时验证和生成消息实例。  
 
-## <a name="batch-schemas-used-at-runtime"></a>运行时使用的批处理架构  
- 存在两个规范版本的批处理架构： X12 的 X12_BatchSchema.xsd 编码和用于 EDIFACT 编码的 EDIFACT_BatchSchema.xsd。 这些架构是包括控制段的模板。 这些架构具有以下根名称和命名空间：  
+## <a name="batch-schemas-used-at-runtime"></a>在运行时使用的批处理架构  
+ 存在两个批处理架构规范版本：对于 X12 X12_BatchSchema.xsd 编码和用于 EDIFACT 编码的 EDIFACT_BatchSchema.xsd。 这些架构是包括控制段的模板。 这些架构必须具有以下根名称和命名空间：  
 
 
 |       架构        |       根节点       |                    命名空间                     |
@@ -39,12 +39,12 @@ BizTalk Server 处理保留交换时，至少使用三个架构：
 |   X12_BatchSchema   |   X12InterchangeXML   | http://schemas.microsoft.com/Edi/X12_BatchSchema |
 | Edifact_BatchSchema | EdifactInterchangeXML |     http://schemas.microsoft.com/Edi/Edifact     |
 
- 由接收管道生成的 XML 实例上的文档类型将是一个常量 (\<编码\>_BatchSchema.xml) 并将引用此规范架构。 可以在业务流程的映射中使用该实例，但是，在进行此操作前，必须更改其文档类型和命名空间以映射到所需的实际架构。  
+ 由接收管道生成的 XML 实例上的文档类型将是一个常量 (\<编码\>_BatchSchema.xml) 并将引用此规范架构。 你可以在业务流程; 中映射中使用此实例但是，因此需要更改映射到实际的架构的文档类型和命名空间执行操作之前需要。  
 
- 在设计项目时不必指定批处理架构，因为该架构部署在 BaseArtifacts.dll 中。  
+ 您不需要指定批处理架构在设计时在项目中，因为它部署在 BaseArtifacts.dll 中。  
 
 ## <a name="batch-schemas-in-the-schema-store"></a>架构存储中的批处理架构  
- BizTalk Server 在运行时用于处理保留批处理的批处理架构部署在 BaseArtifacts.dll 程序集中。 这些架构可自动用于运行时处理。 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI 上的 BizTalk 架构存储中也将提供 Edifact_BatchSchema 和 X12_BatchSchema。 这些架构中的每个架构仅在设计时用于验证或生成交换。 在接收管道或发动管道中，运行时进行验证不需要任何架构。  
+ BizTalk Server 使用在运行时用于处理保留批处理的批处理架构部署在 BaseArtifacts.dll 程序集。 这些是自动可供运行时处理。 Edifact_BatchSchema 和 X12_BatchSchema 也是可用的 BizTalk 架构存储中[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI。 每个架构仅用于在设计时验证或生成交换。 既不是所必需的接收管道中的验证架构，或发送管道在运行时。  
 
 ## <a name="see-also"></a>请参阅  
  [EDI 架构](../core/edi-schemas.md)   

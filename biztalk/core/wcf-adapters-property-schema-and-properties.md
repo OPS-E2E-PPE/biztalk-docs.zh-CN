@@ -13,14 +13,14 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 10781e8743eeea68ff0be8993b3588d5ecd204d7
-ms.sourcegitcommit: 0e14c3e018b091d81d0e4a68fafc10f6e31697e7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "29139293"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399145"
 ---
 # <a name="wcf-adapters-property-schema-and-properties"></a>WCF 适配器属性架构和属性
-阅读有关 WCF 适配器属性架构中升级的属性。 WCF 适配器对应用程序中可使用的属性进行赋值。 WCF 适配器还提供了一种用于将自定义属性写入 BizTalk 消息上下文但不进行升级的机制，以及一种用于将自定义属性升级到 BizTalk 消息上下文的机制。 有关更多详细信息，请参阅[SOAP 标头发布 WCF 服务与](../core/soap-headers-with-published-wcf-services.md)。  
+阅读有关 WCF 适配器属性架构中升级的属性。 WCF 适配器将值分配给可以在应用程序中使用的属性。 WCF 适配器还提供了一种机制来编写，而不是升级到 BizTalk 消息上下文中，自定义属性和升级到 BizTalk 消息上下文的自定义属性的机制。 有关更多详细信息，请参阅[SOAP 标头发布 WCF 服务与](../core/soap-headers-with-published-wcf-services.md)。  
 
 ## <a name="promoted-properties"></a>升级的属性  
 **Namespace**： http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties  
@@ -38,14 +38,14 @@ ms.locfileid: "29139293"
 ```
 
 如果传出消息来自某个业务流程端口，业务流程实例动态设置**BTS。操作**使用的端口的操作名称的属性。 如果使用基于内容的路由来路由传出消息，则可以设置**BTS。操作**管道组件中的属性。
-此属性将自动从传入消息以单一操作格式进行升级。
+从传入消息以单一操作格式自动升级此属性。
 
 键入：String  
 默认值：空字符串  
 适用范围：所有 WCF 发送适配器
 
 #### <a name="affiliateapplicationname"></a>AffiliateApplicationName
-指定用于企业单一登录 (SSO) 的关联应用程序。 此属性是必需的如果**UseSSO**属性设置为**True**。 
+指定要使用的企业单一登录 (SSO) 关联应用程序。 此属性是必需的如果**UseSSO**属性设置为**True**。 
 
 键入：String  
 默认值：空字符串  
@@ -61,12 +61,12 @@ ms.locfileid: "29139293"
 适用范围： 
 
 - Wcf-basichttp 适配器
-- WCF-NetMsmq 适配器
-- WCF-NetTcp 适配器
-- WCF-WSHttp 适配器
+- Wcf-netmsmq 适配器
+- Wcf-nettcp 适配器
+- Wcf-wshttp 适配器
 
 #### <a name="bindingconfiguration"></a>BindingConfiguration
-指定 XML 字符串与 **\<绑定\>** 元素来配置不同类型的预定义的 Windows Communication Foundation (WCF) 提供的绑定。 有关系统提供的绑定和自定义绑定的详细信息，请参阅“另请参见”部分中的相应主题。
+指定 XML 字符串与 **\<绑定\>** 元素来配置不同类型的预定义的 Windows Communication Foundation (WCF) 提供的绑定。 有关系统提供的绑定和自定义绑定的详细信息，请参阅另请参阅中的相应主题。
 
 例如：
 
@@ -81,21 +81,21 @@ ms.locfileid: "29139293"
 适用范围：Wcf-custom 适配器，Wcf-customisolated 适配器
 
 #### <a name="bindingtype"></a>BindingType
-指定要用于终结点的绑定类型。 有关适合的值的详细信息**BindingType**属性，请参阅**绑定类型**中的属性**Wcf-custom 传输属性对话框，发送，绑定**选项卡[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
+指定要用于终结点的绑定的类型。 有关适合的值的详细信息**BindingType**属性，请参阅**绑定类型**中的属性**Wcf-custom 传输属性对话框，发送，绑定**选项卡[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
 
 键入：String  
 默认值：空字符串  
 适用范围：Wcf-custom 适配器，Wcf-customisolated 适配器
 
 #### <a name="clientcertificate"></a>ClientCertificate
-指定用于向服务验证此发送端口的 X.509 证书的指纹。 此属性是必需的如果**ClientCredentialsType**属性设置为**证书**。 要用于此属性的证书必须安装到**我**将存储在**当前用户**位置。
+指定此发送端口对服务进行身份验证的 X.509 证书的指纹。 此属性是必需的如果**ClientCredentialsType**属性设置为**证书**。 要用于此属性的证书必须安装到**我**将存储在**当前用户**位置。
 
 键入：String  
 默认值：空字符串  
 适用范围： 
 
-- WCF-BasicHttp 发送适配器
-- WCF-WSHttp 发送适配器
+- Wcf-basichttp 发送适配器
+- Wcf-wshttp 发送适配器
 - Wcf-nettcp 发送适配器
 - Wcf-netmsmq 发送适配器
 
@@ -107,14 +107,14 @@ ms.locfileid: "29139293"
 适用范围：所有 WCF 适配器*除*Wcf-custom 和 Wcf-customisolated
 
 #### <a name="customdeadletterqueue"></a>CustomDeadLetterQueue
-指定使用的完全限定的 URI **net.msmq**方案的每个应用程序的死信队列，消息已过期或失败传输或传递的放置位置的位置。 例如 net.msmq://localhost/deadLetterQueueName。 死信队列是发送应用程序的队列管理器上的一种队列，用于未能送达的到期的消息。 此属性是必需的如果**DeadLetterQueue**属性设置为**自定义**。
+指定使用的完全限定的 URI **net.msmq**方案的每个应用程序的死信队列，消息已过期或失败传输或传递的放置位置的位置。 例如，net.msmq: //localhost/deadletterqueuename。 死信队列是发送应用程序的已用于放置传递失败的过期消息的队列管理器上的队列。 此属性是必需的如果**DeadLetterQueue**属性设置为**自定义**。
 
 键入：String  
 默认值：空字符串  
 适用范围：Wcf-netmsmq 发送适配器
 
 #### <a name="deadletterqueue"></a>DeadLetterQueue
-指定死信队列，未能传输到应用程序的消息将传输到死信队列中。 有关传递到死信队列的消息的详细信息，请参阅**Wcf-netmsmq 传输属性对话框，发送，绑定**选项卡[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
+指定要从中传输失败传递到应用程序的消息的死信队列。 有关传递到死信队列的消息的详细信息，请参阅**Wcf-netmsmq 传输属性对话框，发送，绑定**选项卡[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
 
 键入：String  
 默认值：**系统**  
@@ -124,28 +124,28 @@ ms.locfileid: "29139293"
 指定是否禁用由于接收管道故障或路由故障而导致入站处理失败的接收位置。 你可能想要将此属性设置为 **，则返回 True**时接收位置可以禁用和拒绝服务 (DoS) 并不是问题。
 
 例如：  
-- WCF-Custom 适配器：当**BindingType**属性设置为**netMsmqBinding**。
-- WCF-Custom 适配器：当**BindingType**属性设置为**customBinding**，并**BindingConfiguration**属性配置为使用依赖于队列传输的自定义通道如 MSMQ。
-- WCF-CustomIsolated 适配器：当**BindingType**属性设置为**customBinding**，并**BindingConfiguration**属性配置为使用依赖于队列传输的自定义通道如 MSMQ
-- WCF-NetMsmq 适配器
+- Wcf-custom 适配器：当**BindingType**属性设置为**netMsmqBinding**。
+- Wcf-custom 适配器：当**BindingType**属性设置为**customBinding**，并**BindingConfiguration**属性配置为使用依赖于队列传输的自定义通道如 MSMQ。
+- Wcf-customisolated 适配器：当**BindingType**属性设置为**customBinding**，并**BindingConfiguration**属性配置为使用依赖于队列传输的自定义通道如 MSMQ
+- Wcf-netmsmq 适配器
 
 键入：Boolean  
 默认值：**False**  
 适用范围：  
 - Wcf-netmsmq 接收适配器
 - WCF 自定义接收适配器
-- WCF-CustomIsolated 接收适配器
+- Wcf-customisolated 接收适配器
 
 #### <a name="enabletransaction"></a>EnableTransaction
-此属性的效果依 WCF 适配器的不同而变化。 有关此属性的详细信息，请参阅中每个 WCF 适配器的操作指南主题[WCF 适配器](../core/wcf-adapters.md)。
+此属性的效果各不相同，具体取决于 WCF 适配器。 有关此属性的详细信息，请参阅中每个 WCF 适配器的操作指南主题[WCF 适配器](../core/wcf-adapters.md)。
 
 键入：Boolean  
 适用范围： 
 
-- WCF-WSHttp 适配器
-- WCF-NetTcp 适配器
+- Wcf-wshttp 适配器
+- Wcf-nettcp 适配器
 - Wcf-netnamedpipe 适配器
-- WCF-NetMsmq 适配器
+- Wcf-netmsmq 适配器
 
 #### <a name="endpointbehaviorconfiguration"></a>EndpointBehaviorConfiguration
 指定 XML 字符串与 **\<行为\>** 元素 **\<endpointBehaviors\>** 元素来配置的行为设置WCF 终结点。 有关详细信息 **\<endpointBehaviors\>** 元素，请参阅另请参阅中的相应主题。
@@ -160,20 +160,20 @@ ms.locfileid: "29139293"
 适用范围：WCF 自定义发送适配器
 
 #### <a name="establishsecuritycontext"></a>EstablishSecurityContext
-指定安全通道是否建立安全会话。 安全会话在交换应用程序消息之前建立安全上下文标记 (SCT)。
+指定安全通道是否建立安全会话。 安全会话在交换应用程序消息之前建立安全上下文令牌 (SCT)。
 
 键入：Boolean  
 默认值：True  
-应用于：WCF-WSHttp 适配器
+应用于：Wcf-wshttp 适配器
 
 #### <a name="fromaddress"></a>FromAddress
-指示发送传入 WCF 消息的源终结点地址。 从传入消息，则会自动升级该属性。
+指示通过其发送传入 WCF 消息的源终结点地址。 从传入消息，则会自动升级该属性。
 
 键入：String  
 适用范围：所有 WCF 适配器*除*Wcf-netmsmq 发送适配器
   
 #### <a name="headers"></a>标头
-指定用于提供除 URI 外的其他寻址信息的终结点引用。 使用此属性时，此属性必须具有\<**标头**\>元素作为根元素。 所有地址标头必须位于内部\<**标头**\>元素。 该属性自动从传入消息进行升级。
+指定用于提供除 URI 外的其他寻址信息的终结点引用。 使用此属性时，此属性必须具有\<**标头**\>元素作为根元素。 所有地址标头必须位于内部\<**标头**\>元素。 此属性将自动提升为传入消息。
 
 例如：
 ```
@@ -187,7 +187,7 @@ ms.locfileid: "29139293"
 适用范围：所有 WCF 适配器
   
 #### <a name="identity"></a>标识
-指定接收位置提供或发送端口预期的服务的标识。 可以为指定的值**标识**属性不同的安全配置而异。 这些设置使客户端能够对服务进行身份验证。 在客户端与服务进行握手的过程中，Windows Communication Foundation (WCF) 基础结构将确保服务的标识与客户端的值保持一致。
+指定接收位置提供或发送端口预期的服务标识。 可以为指定的值**标识**属性不同的安全配置而异。 这些设置使客户端进行身份验证服务。 在客户端和服务之间的握手过程中，Windows Communication Foundation (WCF) 基础结构将确保服务的标识匹配的客户端的值。
 
 例如：
 ```
@@ -214,14 +214,14 @@ ms.locfileid: "29139293"
 适用范围：所有 WCF 适配器*除*Wcf-netmsmq 发送  
 
 #### <a name="inboundbodypathexpression"></a>InboundBodyPathExpression
-指定正文路径表达式以标识传入消息中用于创建 BizTalk 消息正文部分的特定部分。 针对 SOAP 的直接子元素计算此正文路径表达式**正文**传入消息的节点。 如果此正文路径表达式返回多个节点，则只选择第一个节点作为 BizTalk 消息正文部分。 此属性是必需的如果**InboundBodyLocation**属性设置为**UseBodyPath**。 有关如何使用详细信息**InboundBodyPathExpression**属性，请参阅[WCF 适配器属性架构和属性](../core/wcf-adapters-property-schema-and-properties.md)。
+指定正文路径表达式以标识用于创建 BizTalk 消息正文部分的传入消息的特定部分。 针对 SOAP 的直接子元素计算此正文路径表达式**正文**传入消息的节点。 如果此正文路径表达式返回多个节点，则只选择第一个节点作为 BizTalk 消息正文部分。 此属性是必需的如果**InboundBodyLocation**属性设置为**UseBodyPath**。 有关如何使用详细信息**InboundBodyPathExpression**属性，请参阅[WCF 适配器属性架构和属性](../core/wcf-adapters-property-schema-and-properties.md)。
 
 键入：String  
 默认值：空字符串  
 适用范围：所有 WCF 适配器*除*Wcf-netmsmq 发送适配器
 
 #### <a name="inboundheaders"></a>InboundHeaders
-使用**InboundHeaders**属性访问传入 WCF 消息的 SOAP 标头。 WCF 适配器将入站消息中的所有 SOAP 标头值复制到此属性，其中包括 WCF 基础结构用于诸如 WS-Addressing、WS-Security 和 WS-AtomicTransaction 的自定义 SOAP 标头和标准 SOAP 标头。 上下文属性中包含的值是一个包含 XML 数据字符串\<**标头**\>根元素和传入的 SOAP 标头复制为子元素的\< **标头**\>元素。 有关如何对访问 SOAP 标头用于 WCF 适配器的详细信息，请参阅 SDK 示例中，将自定义 SOAP 标头用于 WCF 适配器中，从[ http://go.microsoft.com/fwlink/?LinkId=79960 ](http://go.microsoft.com/fwlink/?LinkId=79960)。
+使用**InboundHeaders**属性访问传入 WCF 消息的 SOAP 标头。 WCF 适配器将复制所有 SOAP 标头值入站消息中到此属性，包括自定义 SOAP 标头和标准 SOAP 标头，WCF 基础结构用于诸如 Ws-addressing、 Ws-security 和 WS-AtomicTransaction。 上下文属性中包含的值是一个包含 XML 数据字符串\<**标头**\>根元素和传入的 SOAP 标头复制为子元素的\< **标头**\>元素。 有关如何对访问 SOAP 标头用于 WCF 适配器的详细信息，请参阅 SDK 示例中，将自定义 SOAP 标头用于 WCF 适配器中，从[ http://go.microsoft.com/fwlink/?LinkId=79960 ](http://go.microsoft.com/fwlink/?LinkId=79960)。
 
 键入：String  
 适用范围：所有 WCF 适配器*除*Wcf-netmsmq 发送适配器
@@ -256,53 +256,53 @@ Wcf-nettcp 适配器利用[NetTcpBinding](http://go.microsoft.com/fwlink/?LinkId
 
 键入：String  
 默认值：00:05:00  
-适用范围：WCF-NetTcp 接收适配器  
+适用范围：Wcf-nettcp 接收适配器  
 
 #### <a name="maxconcurrentcalls"></a>MaxConcurrentCalls
 指定针对单个服务实例的并发调用的数目。 超出此限制的调用将在队列中排队。 将该值设置为 0 等效于将它设置为 **Int32.MaxValue**。 
 
 **注意**  
-在 BAM 主导入数据库中无法使用跟踪配置文件跟踪此属性。 
+使用跟踪配置文件，不能在 BAM 主导入数据库中跟踪此属性。 
 
 键入：Integer  
 默认值：200  
 适用范围：所有 WCF 都接收适配器*除*Wcf-custom 和 Wcf-customisolated 适配器
 
 #### <a name="maxconnections"></a>MaxConnections
-指定监听程序可以拥有的等待应用程序接受的最大连接数。 在超过此配额值时，将删除新的传入连接，而不是等待接受这些连接。 
+指定的最大侦听器可以拥有等待接受的应用程序的连接数。 当超过此配额值时，会删除新的传入连接而不是等待接受。 
 
 **注意**  
-由于这是一个适配器处理程序属性，因此该属性无法在管道组件和业务流程中进行配置。 
+由于这是一个适配器处理程序属性，则此属性不能配置管道组件和业务流程中。 
 
 **注意**  
-在 BAM 主导入数据库中无法使用跟踪配置文件跟踪此属性。 
+使用跟踪配置文件，不能在 BAM 主导入数据库中跟踪此属性。 
 
 键入：Integer  
 默认值：10  
 适用范围：Wcf-netnamedpipe 适配器，Wcf-nettcp 适配器  
 
 #### <a name="maxreceivedmessagesize"></a>MaxReceivedMessageSize
-指定网络上可接收的消息的最大大小（包括标头），以字节为单位。 消息的大小受为每条消息分配的内存量的限制。 你可以使用此属性来降低受拒绝服务 (DoS) 攻击的可能性。
+指定的最大大小，以字节为单位，可以在网络上接收的消息 （包括标头）。 消息的大小受为每条消息分配的内存量的限制。 你可以使用此属性来降低受拒绝服务 (DoS) 攻击的可能性。
 
 键入：Integer  
 默认值：65536  
 适用范围： 
 - Wcf-basichttp 适配器
-- WCF-WSHttp 适配器
-- WCF-NetTcp 适配器
+- Wcf-wshttp 适配器
+- Wcf-nettcp 适配器
 - Wcf-netnamedpipe 适配器
 - Wcf-netmsmq 接收适配器
 
 #### <a name="messageclientcredentialtype"></a>MessageClientCredentialType
 指定使用基于消息的安全性对客户端执行验证时所用的凭据类型。
 
-适用值因每个 WCF 适配器的不同而异。 有关详细信息**MessageClientCredentialType**属性，每个 WCF 适配器中，请参阅操作指南主题[WCF 适配器](../core/wcf-adapters.md)。
+每个 WCF 适配器不同的值。 有关详细信息**MessageClientCredentialType**属性，每个 WCF 适配器中，请参阅操作指南主题[WCF 适配器](../core/wcf-adapters.md)。
 
 键入：String  
 适用范围： 
 - Wcf-basichttp 适配器
-- WCF-WSHttp 适配器
-- WCF-NetTcp 适配器
+- Wcf-wshttp 适配器
+- Wcf-nettcp 适配器
 - Wcf-netnamedpipe 适配器
 
 #### <a name="messageencoding"></a>MessageEncoding
@@ -319,25 +319,25 @@ Wcf-nettcp 适配器利用[NetTcpBinding](http://go.microsoft.com/fwlink/?LinkId
 
 
 #### <a name="msmqauthenticationmode"></a>MsmqAuthenticationMode
-指定如何通过 MSMQ 传输对消息进行验证。
+指定 MSMQ 传输必须如何验证消息。
 
 键入：String  
 默认值：**WindowsDomain**  
     有关适合的值的详细信息**MsmqAuthenticationMode**属性，请参阅**MSMQ 身份验证模式**中的属性**Wcf-netmsmq 传输属性对话框框中，发送，安全**选项卡[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
-适用范围：WCF-NetMsmq 适配器  
+适用范围：Wcf-netmsmq 适配器  
 
 #### <a name="msmqencryptionalgorithm"></a>MsmqEncryptionAlgorithm
-指定在消息队列管理器之间传输消息时，将在网络上使用的消息加密算法。 提供了该属性才**MsmqProtectionLevel**属性设置为**EncryptAndSign**。
+指定消息队列管理器之间传输消息时要使用在网络上进行消息加密算法。 提供了该属性才**MsmqProtectionLevel**属性设置为**EncryptAndSign**。
 
 键入：String  
 默认值：**RC4Stream**  
 
     Applicable values are: RC4Stream, AES
 
-适用范围：WCF-NetMsmq 适配器  
+适用范围：Wcf-netmsmq 适配器  
 
 #### <a name="msmqprotectionlevel"></a>MsmqProtectionLevel
-指定消息在 MSMQ 传输一级的保护方式。
+指定在 MSMQ 传输级别保护消息。
 
 键入：String  
 默认值：**签名**  
@@ -347,36 +347,36 @@ Wcf-nettcp 适配器利用[NetTcpBinding](http://go.microsoft.com/fwlink/?LinkId
         - Sign: Messages are signed
         - EncryptAndSign: Messages are encrypted and signed. To use this protection level, you must enable **Active Directory Integration** for **MSMQ**  
 
-适用范围：WCF-NetMsmq 适配器  
+适用范围：Wcf-netmsmq 适配器  
 
 #### <a name="msmqsecurehashalgorithm"></a>MsmqSecureHashAlgorithm
-指定使用哈希算法计算消息摘要。 此属性不可用如果**MsmqProtectionLevel**属性设置为**None**。
+指定要用于计算消息摘要的哈希算法。 此属性不可用如果**MsmqProtectionLevel**属性设置为**None**。
 
 键入：String  
 默认值：**SHA1**  
 
     Applicable values are: MD5, SHA1, SHA25, SHA512  
 
-适用范围：WCF-NetMsmq 适配器  
+适用范围：Wcf-netmsmq 适配器  
 
 #### <a name="negotiateservicecredential"></a>NegotiateServiceCredential
-指定是在带外客户端提供服务凭据，还是通过协商过程从服务将服务凭据提供给客户端。 这种协商是正常消息交换开始前的准备过程。
+指定服务凭据在带外，客户端设置还是通过协商过程由客户端从服务中获取。 这种协商是正常消息交换的前提。
 
-如果**MessageClientCredentialType**属性等于**None**，**用户名**，或者**证书**，设置此属性设置为**False**意味着服务证书可在带外客户端，并且客户端需要指定服务证书。 此模式可与实现 WS-Trust 和 WS-SecureConversation 的 SOAP 堆栈交互操作。
+如果**MessageClientCredentialType**属性等于**None**，**用户名**，或者**证书**，设置此属性设置为**False**意味着服务证书可在带外客户端，并且客户端需要指定服务证书。 此模式是可与实现 Ws-trust 和 Ws-secureconversation 的 SOAP 堆栈交互操作。
 
-如果**MessageClientCredentialType**属性设置为**Windows**，此属性设置为**False**指定基于 Kerberos 的身份验证。 这意味着客户端和服务必须属于同一个 Kerberos 域。 此模式可与实现 Kerberos 标记配置文件（在 OASIS WSS TC 中定义）以及 WS-Trust 和 WS-SecureConversation 的 SOAP 堆栈交互操作。
+如果**MessageClientCredentialType**属性设置为**Windows**，此属性设置为**False**指定基于 Kerberos 的身份验证。 这意味着，客户端和服务必须是相同 Kerberos 域的一部分。 此模式是可与实现 Kerberos 令牌配置文件 （如 OASIS WSS tc 中定义） 以及 Ws-trust 和 Ws-secureconversation 的 SOAP 堆栈交互操作。
 
 当此属性是 **，则返回 True**，会引起通过 SOAP 消息传送 SPNego 交换的.NET SOAP 协商。
 
 键入：Boolean  
 默认值：True  
-适用范围：WCF-WSHttp 适配器  
+适用范围：Wcf-wshttp 适配器  
 
 #### <a name="opentimeout"></a>OpenTimeout
 指定一个时间跨度值来表示为完成信道打开操作提供的时间间隔。 
 
 **注意**  
-在 BAM 主导入数据库中无法使用跟踪配置文件跟踪此属性。 
+使用跟踪配置文件，不能在 BAM 主导入数据库中跟踪此属性。 
 
 键入：String  
 默认值：00:01:00  
@@ -385,18 +385,18 @@ Wcf-nettcp 适配器利用[NetTcpBinding](http://go.microsoft.com/fwlink/?LinkId
 #### <a name="orderedprocessing"></a>OrderedProcessing
 指定是否按顺序处理消息。 选中此属性后，此接收位置会按序送达的消息传递中具有的 BizTalk 消息传送或业务流程发送端口一起使用时**按序送达**选项设置为`True`。 有关详细信息**按序送达**选项，请参阅另请参阅中的相应主题。
 
-此属性适用于以下情况：
-- WCF-Custom 适配器：当**BindingType**属性设置为**netMsmqBinding**
-- WCF-Custom 适配器：当**BindingType**属性设置为**customBinding**，并**BindingConfiguration**属性配置为使用依赖于传输的自定义通道支持如 MSMQ 的按序的送达。
-- WCF-CustomIsolated 适配器：当**BindingType**属性设置为**customBinding**，并**BindingConfiguration**属性配置为使用依赖于传输的自定义通道支持按序的送达。
-- WCF-NetMsmq 适配器
+此属性是在以下情况下适用：
+- Wcf-custom 适配器：当**BindingType**属性设置为**netMsmqBinding**
+- Wcf-custom 适配器：当**BindingType**属性设置为**customBinding**，并**BindingConfiguration**属性配置为使用依赖于传输的自定义通道支持如 MSMQ 的按序的送达。
+- Wcf-customisolated 适配器：当**BindingType**属性设置为**customBinding**，并**BindingConfiguration**属性配置为使用依赖于传输的自定义通道支持按序的送达。
+- Wcf-netmsmq 适配器
 
 键入：String  
 默认值：**False**  
 适用范围： 
 - Wcf-netmsmq 接收适配器
 - WCF 自定义接收适配器
-- WCF-CustomIsolated 接收适配器
+- Wcf-customisolated 接收适配器
 
 #### <a name="outboundbodylocation"></a>OutboundBodyLocation
 指定数据选择 soap**正文**的传出 WCF 消息的元素。 有关如何使用详细信息**OutboundBodyLocation**属性，请参阅[WCF 适配器指定消息正文](../core/specifying-the-message-body-for-the-wcf-adapters.md)。
@@ -431,10 +431,10 @@ Wcf-nettcp 适配器利用[NetTcpBinding](http://go.microsoft.com/fwlink/?LinkId
 适用范围：所有 WCF 都发送适配器*除*Wcf-netnamedpipe 适配器  
 
 #### <a name="propagatefaultmessage"></a>PropagateFaultMessage
-指定是否路由或挂起出站处理中失败的消息。 此属性仅对要求-响应端口有效。 
+指定是路由还是挂起在出站处理失败的消息。 此属性是仅对要求响应端口有效。 
 
 **注意**  
-在 BAM 主导入数据库中无法使用跟踪配置文件跟踪此属性。
+使用跟踪配置文件，不能在 BAM 主导入数据库中跟踪此属性。
 
 键入：Boolean  
 默认值：**True**  
@@ -446,7 +446,7 @@ Wcf-nettcp 适配器利用[NetTcpBinding](http://go.microsoft.com/fwlink/?LinkId
 适用范围：所有 WCF 都发送适配器*除*Wcf-netmsmq 适配器
   
 #### <a name="proxyaddress"></a>ProxyAddress
-指定代理服务器的地址。 使用**https**或**http**具体取决于安全配置的方案。 此地址后面可跟冒号和端口号。 该属性是必需的如果**ProxyToUse**属性设置为**UserSpecified** （例如， http://127.0.0.1:8080)
+指定代理服务器的地址。 使用**https**或**http**具体取决于安全配置的方案。 此地址可以跟一个冒号和端口号。 该属性是必需的如果**ProxyToUse**属性设置为**UserSpecified** （例如， http://127.0.0.1:8080)
 
 键入：String  
 默认值：空字符串  
@@ -481,23 +481,23 @@ Wcf-nettcp 适配器利用[NetTcpBinding](http://go.microsoft.com/fwlink/?LinkId
 适用范围：Wcf-basichttp 发送适配器、 Wcf-wshttp 发送适配器
 
 #### <a name="replytoaddress"></a>ReplyToAddress
-指示与通过请求响应接收位置接收的传入消息相对应的传出 WCF 消息的回复终结点地址。 从传入消息，则会自动升级该属性。
+指示答复终结点地址与通过请求-响应接收的传入消息相对应的传出 WCF 消息接收位置。 从传入消息，则会自动升级该属性。
 
 键入：String  
 默认值：空字符串  
 适用范围：所有 WCF 适配器*除*Wcf-netmsmq 适配器
 
 #### <a name="securitymode"></a>SecurityMode
-指定使用的安全类型。 适用值因每个 WCF 适配器的不同而异。 有关详细信息**SecurityMode**属性，每个 WCF 适配器中，请参阅操作指南主题[WCF 适配器](../core/wcf-adapters.md)。 
+指定使用的安全类型。 每个 WCF 适配器不同的值。 有关详细信息**SecurityMode**属性，每个 WCF 适配器中，请参阅操作指南主题[WCF 适配器](../core/wcf-adapters.md)。 
 
 **注意**  
-在 BAM 主导入数据库中无法使用跟踪配置文件跟踪此属性。
+使用跟踪配置文件，不能在 BAM 主导入数据库中跟踪此属性。
 
 键入：String  
 适用范围：所有 WCF 适配器*除*Wcf-custom 和 Wcf-customisolated 适配器
 
 #### <a name="sendtimeout"></a>SendTimeout
-指定一个时间跨度值来表示为完成发送操作提供的时间间隔。 此值指定完成整个交互的时间跨度（即使响应方返回一条大消息）。
+指定一个时间跨度值来表示为完成发送操作提供的时间间隔。 此值指定完成，整个交互的时间跨度，即使响应方返回发送大消息。
 
 键入：String  
 默认值：00:01:00  
@@ -523,17 +523,17 @@ Wcf-nettcp 适配器利用[NetTcpBinding](http://go.microsoft.com/fwlink/?LinkId
 适用范围：WCF 自定义接收适配器，Wcf-customisolated 适配器
 
 #### <a name="servicecertificate"></a>ServiceCertificate
-如果此属性用于接收位置，则为接收位置指定 X.509 证书的指纹，客户端利用该指纹验证服务。 要用于此属性的证书必须安装到**我**将存储在**当前用户**位置。
+如果此属性用于接收位置，指定接收位置的客户端使用服务进行身份验证的 X.509 证书的指纹。 要用于此属性的证书必须安装到**我**将存储在**当前用户**位置。
 
-如果此属性用于发送端口，请指定 X.509 证书的指纹，用于验证此发送端口将消息发送到的服务。 要用于此属性的证书必须安装到**其他人**将存储在**本地计算机**位置。
+如果此属性用于发送端口，指定用于对此发送端口将消息发送到该服务进行身份验证的 X.509 证书的指纹。 要用于此属性的证书必须安装到**其他人**将存储在**本地计算机**位置。
 
 键入：String  
 默认值：空字符串  
 适用范围： 
 - Wcf-basichttp 适配器
-- WCF-NetMsmq 适配器
-- WCF-WSHttp 适配器
-- WCF-NetTcp 接收适配器
+- Wcf-netmsmq 适配器
+- Wcf-wshttp 适配器
+- Wcf-nettcp 接收适配器
 
 #### <a name="suspendmessageonfailure"></a>SuspendMessageOnFailure
 指定是否将由于接收管道故障或路由故障而导致入站处理失败的请求消息挂起。
@@ -546,7 +546,7 @@ Wcf-nettcp 适配器利用[NetTcpBinding](http://go.microsoft.com/fwlink/?LinkId
 指定要使用该绑定上发出消息编码的字符集时**MessageEncoding**属性设置为**文本**。 
 
 **注意**  
-在 BAM 主导入数据库中无法使用跟踪配置文件跟踪此属性。 
+使用跟踪配置文件，不能在 BAM 主导入数据库中跟踪此属性。 
 
 键入：String  
 默认值： utf-8  
@@ -559,14 +559,14 @@ Wcf-nettcp 适配器利用[NetTcpBinding](http://go.microsoft.com/fwlink/?LinkId
 适用范围：Wcf-basichttp 适配器，Wcf-wshttp 适配器
   
 #### <a name="timetolive"></a>TimeToLive
-指定一个时间范围，在此范围内消息有效，一旦超出此范围，消息将到期并被置于死信队列。 设置此属性是为了确保时间敏感消息在被发送端口处理前不会变得陈旧。 队列中在指定的时间间隔内未由此发送端口使用的消息将被认为到期。 到期的消息将发送到称为死信队列的特殊队列。 死信队列的位置设置与**DeadLetterQueue**属性。
+指定在将过期并放入死信队列之前消息多长时间是有效的时间跨度。 若要确保具有时效性的消息执行操作不会过时，通过发送端口进行处理之前，设置此属性。 不使用时此发送端口指定的时间间隔内队列中的消息被认为已过期。 已过期的消息发送到称为死信队列的特殊队列。 死信队列的位置设置与**DeadLetterQueue**属性。
 
 键入：String  
 默认值：1.00:00:00  
 适用范围：Wcf-netmsmq 发送适配器
 
 #### <a name="to"></a>若要
-为 WCF 发送端口发送的传出 WCF 消息指定目标终结点地址。
+指定 WCF 发送端口发送的传出 WCF 消息的目标终结点地址。
 
 键入：String  
 默认值：空字符串  
@@ -583,7 +583,7 @@ Wcf-nettcp 适配器利用[NetTcpBinding](http://go.microsoft.com/fwlink/?LinkId
 适用范围：Wcf-netnamedpipe 适配器，Wcf-nettcp 适配器  
 
 #### <a name="transportclientcredentialtype"></a>TransportClientCredentialType
-指定执行发送端口验证时使用的凭据类型。 适用值因每个 WCF 适配器的不同而异。 有关详细信息**TransportClientCredentialType**属性，每个 WCF 适配器中，请参阅操作指南主题[WCF 适配器](../core/wcf-adapters.md)。
+指定要执行发送端口验证时要使用的凭据类型。 每个 WCF 适配器不同的值。 有关详细信息**TransportClientCredentialType**属性，每个 WCF 适配器中，请参阅操作指南主题[WCF 适配器](../core/wcf-adapters.md)。
 
 键入：String  
 适用范围：Wcf-basic 适配器、 WCF NetTcp 适配器、 Wcf-wshttp 适配器  
@@ -602,7 +602,7 @@ Wcf-nettcp 适配器利用[NetTcpBinding](http://go.microsoft.com/fwlink/?LinkId
 适用范围：Wcf-nettcp 适配器，Wcf-netnamedpipe 适配器  
 
 #### <a name="username"></a>UserName
-指定要用于目标服务器的身份验证的用户名时**UseSSO**属性设置为**False**。 不必采用“域\用户”格式设置此属性。
+指定要用于目标服务器的身份验证的用户名时**UseSSO**属性设置为**False**。 无需使用此属性的域 \ 用户格式。
 
 键入：String  
 默认值：空字符串  
@@ -616,10 +616,10 @@ Wcf-nettcp 适配器利用[NetTcpBinding](http://go.microsoft.com/fwlink/?LinkId
 适用范围：Wcf-netmsmq 发送适配器  
 
 #### <a name="usesso"></a>UseSSO
-指定是否使用单一登录检索客户端凭据，以便在目标服务器上进行验证。 
+指定是否使用单一登录检索客户端凭据的目标服务器的身份验证。 
 
 **注意**  
-在 BAM 主导入数据库中无法使用跟踪配置文件跟踪此属性。 
+使用跟踪配置文件，不能在 BAM 主导入数据库中跟踪此属性。 
 
 键入：Boolean  
 默认值：False  

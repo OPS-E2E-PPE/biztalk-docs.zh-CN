@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 328f468485f729df03c28bca48a8b5ed4eaf59e5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 12c849d592a7cdce5968678f524ec15562830eba
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015198"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333795"
 ---
 # <a name="how-to-throw-soap-exceptions-from-orchestrations-published-as-a-web-service"></a>如何从发布为 Web 服务的业务流程引发 SOAP 异常
 你可以从业务流程发布为 Web 服务返回 SOAP 异常。 将错误消息添加到 SOAP 端口和发送错误消息而不是响应。  

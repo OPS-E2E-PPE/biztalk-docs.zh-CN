@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ff43a9b86fc39589cd513c82c5d9bed9055f5902
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e19899513dc21e8d1ee412b5ba38c86dba427254
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969526"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389683"
 ---
 # <a name="delimiters-are-not-unique-field-and-segment-separator-are-the-same"></a>分隔符不唯一，字段和段分隔符相同
 ## <a name="details"></a>详细信息  

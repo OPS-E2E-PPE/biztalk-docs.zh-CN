@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7ec23dcf604e1bd454ba7e69a57c250cf3b1872f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: beb676565b539f813062e9083265903350724a09
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982342"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398051"
 ---
-# <a name="record-nodes"></a>“记录”节点
+# <a name="record-nodes"></a>记录节点
 在 BizTalk 编辑器中，使用**记录**节点，用于表示集合的信息，其中的各个项可以是：  
 
 - 简单类型的信息，如字符串和数字，表示为子字段节点。 这些子字段节点可以是**Field 元素**节点或**字段属性**节点。 有关字段节点这两种类型的其他信息，请参阅[字段元素节点](../core/field-element-nodes.md)并[字段属性节点](../core/field-attribute-nodes.md)。  

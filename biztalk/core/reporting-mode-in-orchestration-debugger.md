@@ -1,5 +1,5 @@
 ---
-title: 报告在业务流程调试器模式下 |Microsoft 文档
+title: 报告业务流程调试器中的模式 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,21 +16,21 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f51c80c8e11545180720a5ec1cf0f28b7f8b6f6d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 436457dd8addc1add819a657e61113eaa8a2ec91
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268565"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397871"
 ---
-# <a name="reporting-mode-in-orchestration-debugger"></a>业务流程调试器中的“报告”模式
-“报告”模式使用跟踪的事件来显示所发生的情况。 它将使用数据使用跟踪**业务流程事件**选项标志。 必须在执行业务流程实例之前设置此标志。 若要启用事件跟踪适用于特定的业务流程，请参阅[如何配置跟踪为业务流程](../core/how-to-configure-tracking-for-an-orchestration.md)。  
+# <a name="reporting-mode-in-orchestration-debugger"></a>业务流程调试器中的报告模式
+报告模式使用跟踪的事件来显示已发生了什么情况。 它使用跟踪使用的数据**业务流程事件**选项标志。 在业务流程实例的执行之前，必须设置此标志。 若要启用的特定业务流程事件跟踪功能，请参阅[如何为业务流程配置跟踪](../core/how-to-configure-tracking-for-an-orchestration.md)。  
   
- **业务流程事件**选项跟踪的每个形状中业务流程执行事件发生。 在报表模式下，你可以重播步骤或在业务流程的类上设置断点，以便你可以然后调试使用交互模式的新实例。  
+ **业务流程事件**选项跟踪业务流程中每个形状的执行，因为它发生。 可以在报告模式下，重放步骤或业务流程的类上设置断点，以便你可以调试使用交互模式的新实例。  
   
- 在执行目标业务程序之后，即可对要检查的业务流程使用某个报告视图查询。  
+ 已执行您感兴趣的业务流程后，你可以使用报告视图查询之一为你想要检查业务流程。  
   
-## <a name="see-also"></a>另请参阅  
- [在调试器中业务流程交互模式](../core/interactive-mode-in-orchestration-debugger.md)   
+## <a name="see-also"></a>请参阅  
+ [业务流程调试器中的交互模式](../core/interactive-mode-in-orchestration-debugger.md)   
  [调试业务流程](../core/debugging-an-orchestration.md)   
  [业务流程调试器用户界面](../core/orchestration-debugger-user-interface.md)

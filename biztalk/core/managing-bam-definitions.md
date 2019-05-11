@@ -1,5 +1,5 @@
 ---
-title: 管理 BAM 定义 |Microsoft 文档
+title: 管理 BAM 定义 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,15 +18,15 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 93cf3d280d0e615442a4141b7fa41f6ee3566490
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f3d193470db70334b4f30d2ae0f331a1949a48c7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262525"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65327513"
 ---
 # <a name="managing-bam-definitions"></a>管理 BAM 定义
-BAM 定义是 BAM 基础结构的一部分。 它定义要跟踪和聚合的数据，以及所跟踪数据的业务最终用户视图。 本部分的主题介绍管理 BAM 定义的各个元素（包括活动、视图、项目和警报）的过程。  
+BAM 定义是 BAM 基础结构的一部分。 它定义跟踪和聚合，以及所跟踪数据的业务最终用户的视图的数据。 在本部分中的主题为过程提供用于管理 BAM 定义，包括活动、 视图、 项目和警报中的元素。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -60,4 +60,4 @@ BAM 定义是 BAM 基础结构的一部分。 它定义要跟踪和聚合的数�
   
 -   [管理 BAM 警报执行](../core/managing-bam-alert-execution.md)  
   
--   [如何更改计算的警报的频率](../core/how-to-change-the-frequency-with-which-alerts-are-evaluated.md)
+-   [如何更改的警报的频率进行评估](../core/how-to-change-the-frequency-with-which-alerts-are-evaluated.md)

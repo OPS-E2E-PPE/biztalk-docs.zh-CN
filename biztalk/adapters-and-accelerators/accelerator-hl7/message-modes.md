@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cfce63f527dbe9643228b3b47a509b404e78c510
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a0480d4742076b0c99b29a6f34054cf713e09bf2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009134"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65303769"
 ---
 # <a name="message-modes"></a>消息模式
 有两个基础所有 HL7 消息的基本概念。 这些概念的地址不同的方式交换数据的独立系统可以进行交互，并提供支持的互操作性要求通过分布式卫生保健系统中的时间结构。 下面列出的概念定义 HL7 设计背后的基础主题：  

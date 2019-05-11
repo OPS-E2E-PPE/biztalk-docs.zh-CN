@@ -1,5 +1,5 @@
 ---
-title: 自定义 XSLT |Microsoft 文档
+title: 自定义 XSLT |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -22,18 +22,18 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4adf2abe438b3972419184b1297eaff5578c5bde
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e7ee93d5cd6deb2b7f5a9b291e6670741f301bd6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238341"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390041"
 ---
 # <a name="custom-xslt"></a>自定义 XSLT
-如果您熟悉可扩展样式表语言转换 (XSLT) 代码，则可以使用此代码自定义、扩展或替换 BizTalk 映射。 若要使用 XSLT 的最简单方法是使用**脚本**functoid。 **脚本**functoid 接受在很多的脚本。NET 启用语言，包括 XSLT。 有关使用与 XSLT**脚本**functoid，请参阅[脚本使用内联 XSLT 和 XSLT 调用模板](../core/scripting-using-inline-xslt-and-xslt-call-templates.md)。  
+如果您熟悉可扩展样式表语言转换 (XSLT) 代码，可以使用它进行自定义、 扩展，或替换 BizTalk 映射。 若要使用 XSLT 的最简单方法是使用**脚本**functoid。 **脚本**functoid 接受脚本在很多。已启用 NET 的语言，包括 XSLT。 有关使用 XSLT 的详细信息**Scripting** functoid，请参阅[脚本使用内联 XSLT 和 XSLT 调用模板](../core/scripting-using-inline-xslt-and-xslt-call-templates.md)。  
   
- 如果您已具有用于将一个实例消息转换为另一个实例消息的 XSLT 代码，则可以直接使用该代码代替 BizTalk 映射。 使用 XSLT 代码映射替换 BizTalk 有关的信息，请参阅[如何创建没有地图图](../core/how-to-create-a-map-without-maps.md)。  
+ 如果您一直使用要转换为另一个实例消息的 XSLT 代码，可以使用该代码代替 BizTalk 映射直接。 有关使用 XSLT 代码映射替换 BizTalk 有关的信息，请参阅[如何创建在无映射](../core/how-to-create-a-map-without-maps.md)。  
   
-## <a name="see-also"></a>另请参阅  
- [地图](../core/maps.md)   
- [创建使用 BizTalk 映射程序图](../core/creating-maps-using-biztalk-mapper.md)
+## <a name="see-also"></a>请参阅  
+ [映射](../core/maps.md)   
+ [使用 BizTalk 映射器创建映射](../core/creating-maps-using-biztalk-mapper.md)

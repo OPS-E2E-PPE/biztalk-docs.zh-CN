@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b08a5c3dd6b88351e67f678524a03052e8435439
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 63f3fd2dd8948e880af7b2135e8b4fef64f1b39d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012286"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389357"
 ---
 # <a name="distinguished-fields-in-disassembler-pipeline-components"></a>可分辨的字段在拆装器管道组件
-通过 XML 拆装器管道组件、BizTalk 框架拆装器管道组件或平面文件拆装器管道组件，可将架构中定义的可分辨字段写入消息上下文中，格式如下：  
+在架构中定义的可分辨的字段写入消息上下文由 XML 拆装器、 BizTalk 框架拆装器或采用以下格式的平面文件拆装器管道组件：  
   
  *使用名称*是 XPath 中的可分辨的字段  
   
@@ -33,7 +33,7 @@ ms.locfileid: "37012286"
   
  属性的值是**System.String**指定从 XML 文档使用提取的值的 XPath。  
   
- 下面的示例架构具有可分辨字段 Price：  
+ 下面的示例架构具有可分辨的字段 Price。  
   
 ```  
 <?xml version="1.0" encoding="utf-16" ?>   
@@ -66,16 +66,16 @@ ms.locfileid: "37012286"
 <PO>  
 ```  
   
- XML 拆装器在消息上下文中写入可分辨字段，如下如示：  
+ XML 拆装器按如下所示将可分辨的字段写入消息上下文：  
   
  在上下文属性的名称： `"/*[local-name()='PO' and namespace-uri()='http://SendHtmlMessage.PO']/\*[local-name()='Price' and namespace-uri()='']"`  
   
  属性的 Namespace: http://schemas.microsoft.com/BizTalk/2003/btsDistinguishedFields  
   
- 属性的值： 10  
+ 属性的值：10  
   
 > [!NOTE]
->  如果任何 XML 文档元素值的大小超过 85 KB，则处理这些文档时性能可能会降低。  
+>  如果任何 XML 文档元素值的大小超过 85 KB，处理这些文档的性能下降可能会发生。  
   
 ## <a name="see-also"></a>请参阅  
  [平面文件拆装器管道组件](../core/flat-file-disassembler-pipeline-component.md)   

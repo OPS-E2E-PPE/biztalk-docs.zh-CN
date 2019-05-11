@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10563 |Microsoft Docs
+title: 单一登录：Event 10563 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 49fc95cf7c257febd6ab631dcc016598dd2e4e24
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b735a435a076b873b8462f3b794012f731956ad1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976501"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398810"
 ---
-# <a name="single-sign-on-event-10563"></a>单一登录： 事件 10563
+# <a name="single-sign-on-event-10563"></a>单一登录：事件 10563
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                      |
@@ -28,12 +28,12 @@ ms.locfileid: "36976501"
 | 产品版本 |      [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]      |
 |    事件 ID     |                                10563                                 |
 |  事件源   |                                ENTSSO                                |
-|    组件    |                                 N/A                                  |
+|    组件    |                                 不可用                                  |
 |  符号名称  |                       SSO_WARN_PERFMON_FAILED                        |
-|  消息正文   | 性能监视启动失败。%r<br /><br /> 错误代码： %1 |
+|  消息正文   | 性能监视无法 start.%r<br /><br /> 错误代码： %1 |
   
 ## <a name="explanation"></a>解释  
  性能监视启动失败。 系统将继续正常运行，但性能监视将不可用。  
   
 ## <a name="user-action"></a>用户操作  
- 必须卸载并重新安装 perfmon 实用程序。
+ 它可能需要卸载并重新安装 perfmon 实用程序。

@@ -20,12 +20,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cee8780b645cc6f58c0a75526a695e2148893023
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fd38c0417c84f7130a40f54fb684b01b6b853623
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017285"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398952"
 ---
 # <a name="sso-user-groups"></a>SSO 用户组
 若要配置和管理企业单一登录 (SSO) 系统，必须为每个角色创建特定的 Windows 组和帐户。 在企业 SSO 中配置访问帐户，可以为每个角色指定多个帐户。 本部分介绍这些角色。  
@@ -37,7 +37,7 @@ ms.locfileid: "37017285"
 >  出于安全目的，SSO 系统不允许内置帐户。  
   
 ## <a name="single-sign-on-administrators"></a>单一登录管理员  
- SSO 管理员在 SSO 系统中具有最高的级别的用户权限。 用户可以：  
+ SSO 管理员在 SSO 系统中具有最高的级别的用户权限。 他们可以：  
   
 - 创建和管理 SSO 数据库  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c494614465df4faeead9ec30d79dfdf47cc321c1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 02203fcdde41ff078e3fcd9a5e71516f11599732
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999078"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388829"
 ---
 # <a name="error-handling-errors"></a>处理错误时出错
 有关诊断和解决 WCF 错误处理错误的信息。  
@@ -32,13 +32,13 @@ ms.locfileid: "36999078"
 |  事件源   |                                                                                                   0                                                                                                    |
 |    组件    |                                                                                                   0                                                                                                    |
 |  符号名称  |                                                                                                   0                                                                                                    |
-|  消息正文   | 错误处理选项“失败时禁用位置”和“失败时挂起请求消息”不应都设置为 False，因为可能发生消息丢失。 请将一个或两个选项设置为 True。 |
+|  消息正文   | 错误处理选项"失败时禁用位置"和"挂起失败的请求消息"应不能同时将设置为 false 由于可能发生消息丢失。 请将一个或两个选项设置为 true |
 
 ## <a name="explanation"></a>解释  
- 在 Wcf-netmsmq 适配器中，选项**失败时禁用位置**并**在失败时挂起请求消息**不能同时应处于选中状态。 由于接收位置继续接收无效消息，但这些消息未被挂起并存储在 MessageBox 中，则可能发生消息丢失。  
+ 在 Wcf-netmsmq 适配器中，选项**失败时禁用位置**并**在失败时挂起请求消息**不能同时应处于选中状态。 接收位置继续接收无效消息，但这些消息是未被挂起并存储在消息框中，可能会丢失消息。  
 
 ## <a name="user-action"></a>用户操作  
- 使用以下过程配置适配器设置。    
+ 使用以下过程来配置适配器设置。    
 
 1. 打开 **“BizTalk Server 管理”**。  
 

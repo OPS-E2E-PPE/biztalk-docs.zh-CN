@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b2abc1c0f1331d95ebd331f8f60a947bcca86496
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2d65dbf7d41612d6060516c20864d131207e7720
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993574"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388778"
 ---
 # <a name="invalid-or-missing-asn1-compressed-data-oid-encountered-during-decompression-processing"></a>解压缩处理期间 ASN.1 压缩数据 OID 无效或缺失
 ## <a name="details"></a>详细信息  

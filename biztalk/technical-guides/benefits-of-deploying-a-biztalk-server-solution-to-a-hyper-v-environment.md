@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f6c88a8dcc6386b6030d4ca429010b6db1acfb81
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 38ae71a171cfe992551c8167361e0536140488bd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024443"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401279"
 ---
 # <a name="potential-benefits-of-deploying-a-biztalk-server-solution-to-a-hyper-v-virtualized-environment"></a>潜在优势将 BizTalk Server 解决方案部署到 HYPER-V 虚拟化环境
 本主题介绍了一些部署的优势在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]到 HYPER-V 虚拟化环境的解决方案。  

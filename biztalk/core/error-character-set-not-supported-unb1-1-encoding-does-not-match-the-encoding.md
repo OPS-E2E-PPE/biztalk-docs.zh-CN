@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4ef85488281c6ddd7fe8ecdb0f096a21bbc30c06
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ea2b1cd0831bb0194c9a5290c2c724bdd46c1714
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978382"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388968"
 ---
-# <a name="character-set-not-supported-because-the-encoding-information-in-unb11-does-not-match-the-actual-encoding"></a>字符集不受支持，因为 UNB1.1 中的编码信息与实际编码不匹配
+# <a name="character-set-not-supported-because-the-encoding-information-in-unb11-does-not-match-the-actual-encoding"></a>字符集不受支持，因为 UNB1.1 中的编码信息不匹配的实际编码
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                     |

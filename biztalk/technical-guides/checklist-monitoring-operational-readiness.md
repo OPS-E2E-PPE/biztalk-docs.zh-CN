@@ -1,5 +1,5 @@
 ---
-title: 清单： 监视操作准备就绪 |Microsoft Docs
+title: 清单：监视操作准备就绪 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cfd8b5ead6ceea7154e7f035d16f3c0fba7be1d4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ece8f6b6aea58b37bf5e8f940f1f6fb197970ea4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021939"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399354"
 ---
-# <a name="checklist-monitoring-operational-readiness"></a>清单： 监视操作准备情况
+# <a name="checklist-monitoring-operational-readiness"></a>清单：监视操作准备情况
 本主题列出了监视生产环境时应遵循的步骤[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境。  
 
 

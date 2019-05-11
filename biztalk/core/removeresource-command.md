@@ -12,67 +12,67 @@ caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c95b636083542bb1291cd10881bd74ca9d41c15b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dc7b5e6f5d254624f295aef16761d074379f3ea6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976990"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397915"
 ---
 # <a name="removeresource-command"></a>RemoveResource 命令
-从 BizTalk 管理数据库中删除项目。 运行此命令不会从全局程序集缓存 (GAC)、文件系统、证书存储、Internet 信息服务或 Windows 注册表中删除项目（如果项目存在于这些位置中）。 该命令不会从 BAM 主导入数据库中删除 BAM 定义，也不会从规则引擎数据库中删除策略。 如果您运行此命令来删除绑定文件，则绑定保持不变，仅删除绑定文件。  
+移除 （删除） 从 BizTalk 管理数据库项目。 运行此命令不会删除该项目从全局程序集缓存 (GAC)、 文件系统、 证书存储区、 Internet 信息服务或 Windows 注册表中，如果它存在于这些位置中。 不会从 BAM 主导入数据库中删除 BAM 定义，也不会删除策略从规则引擎数据库。 如果运行此命令删除绑定文件，则绑定保持不变，删除只绑定文件。  
   
- 使用此命令可以删除以下项目类型：  
+ 您可以使用此命令删除以下项目类型：  
   
-- .NET 程序集 (System.BizTalk:Assembly)  
+- .NET 程序集 (system.biztalk: assembly)  
   
-- BAM 定义 (System.BizTalk:Bam)  
+- BAM 定义 (system.biztalk: bam)  
   
-- BizTalk 程序集 (System.BizTalk:BizTalkAssembly)  
+- BizTalk 程序集 (system.biztalk: biztalkassembly  
   
-- BizTalk 绑定文件 (System.BizTalk:BizTalkBinding)  
+- BizTalk 绑定文件 (system.biztalk: biztalkbinding)  
   
-- 安全证书 (System.BizTalk:Certificate)  
+- 安全证书 (system.biztalk: certificate)  
   
-- COM 组件 (System.BizTalk:Com)  
+- COM 组件 (system.biztalk: com)  
   
-- 特别文件 (System.BizTalk:File)  
+- 特别文件 (system.biztalk: file)  
   
-- 后续处理脚本 (System.BizTalk:PostProcessingScript)  
+- 后续处理脚本 (system.biztalk: postprocessingscript)  
   
-- 预处理脚本 (System.BizTalk:PreProcessingScript)  
+- 预处理脚本 (system.biztalk: preprocessingscript)  
   
-- 策略或规则 (System.BizTalk:Rules)  
+- 策略或规则 (system.biztalk: rules)  
   
-- 虚拟目录 (System.BizTalk:WebDirectory)  
+- 虚拟目录 (system.biztalk: webdirectory)  
   
-  在以下情况下，删除操作会失败：  
+  在以下情况下，删除操作将失败：  
   
-- 尝试删除其他程序集要引用的 BizTalk 程序集。  
+- 尝试删除 BizTalk 程序集到另一个程序集具有的引用。  
   
-- 尝试删除包含发送端口或接收端口所使用的管道的 BizTalk 程序集。  
+- 尝试删除包含由发送管道的 BizTalk 程序集或接收端口。  
   
 - 尝试删除包含发送端口所使用的映射的 BizTalk 程序集。  
   
-- 尝试删除包含不处于未登记状态或具有挂起实例的业务流程的 BizTalk 程序集。  
+- 尝试删除包含业务流程的未处于已取消登记状态或具有挂起的实例的 BizTalk 程序集。  
   
 ## <a name="usage"></a>用法  
- **BTSTask RemoveResource /ApplicationName:** *值* **/Luid:** *值*[**/Server:**<em>值</em>] [**/Database:**<em>值</em>]  
+ **BTSTask RemoveResource /ApplicationName:** *value* **/Luid:** *value* [**/Server:**<em>value</em>] [**/Database:**<em>value</em>]  
   
 ## <a name="parameters"></a>Parameters  
   
 |参数|Required|Description|  
 |---------------|--------------|-----------------|  
-|**/ ApplicationName** (或 **/A**，请参阅备注)|是|包含要删除的资源项目的 BizTalk 应用程序的名称。 如果名称包含空格，必须将其用双引号 （"）。|  
+|**/ ApplicationName** (或 **/A**，请参阅备注)|是|包含的资源项目的 BizTalk 应用程序若要删除的名称。 如果名称包含空格，必须将其用双引号 （"）。|  
 |**/ Luid** (或 **/L**，请参阅备注)|是|项目的本地唯一标识符 (LUID)。 可通过获得 LUID [ListApp 命令](../core/listapp-command.md)。|  
-|**/ 服务器**(或 **/S**，请参阅备注)|“否”|BizTalk 管理数据库的宿主 SQL Server 实例的名称，格式为“服务器名称\实例名称,端口”。<br /><br /> 只在实例名称与服务器名称不相同时才需要指定实例名称。 只在 SQL Server 不使用默认端口号 (1433) 时才需要指定端口。<br /><br /> 示例：<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> 如果未提供，则使用本地计算机上运行的 SQL Server 实例的名称。|  
-|**/ 数据库**(或 **/D**，请参阅备注)|“否”|BizTalk 管理数据库的名称。 如果未指定，则使用在本地 SQL Server 实例中运行的 BizTalk 管理数据库。|  
+|**/ 服务器**(或 **/S**，请参阅备注)|否|承载 BizTalk 管理数据库，在窗体 ServerName\InstanceName，端口中的 SQL Server 实例的名称。<br /><br /> 实例名称仅是所需的实例名称不同于服务器名称时。 端口是仅在 SQL Server 使用的端口号而不是默认 (1433) 时所需。<br /><br /> 示例：<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> 如果未提供，则使用本地计算机上运行的 SQL Server 实例的名称。|  
+|**/ 数据库**(或 **/D**，请参阅备注)|否|BizTalk 管理数据库的名称。 如果未指定，使用 SQL Server 的本地实例中运行的 BizTalk 管理数据库。|  
   
 ## <a name="sample"></a>示例  
- **BTSTask RemoveResource /ApplicationName:MyApplication /Luid:"MyApp.Orchestrations，版本 = 1.0.0.0，区域性 = 中性，PublicKeyToken = 0123456789ABCDEF"**  
+ **BTSTask RemoveResource /ApplicationName:MyApplication /Luid:"MyApp.Orchestrations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0123456789ABCDEF"**  
   
-## <a name="remarks"></a>Remarks  
- 参数不区分大小写。 指定参数无需键入整个参数名，只需键入可明确标识该参数的参数名的前几个字母即可。  
+## <a name="remarks"></a>备注  
+ 参数不区分大小写。 不需要键入整个参数名称来指定它;您可以键入明确标识参数名称的第几个字母。  
   
 ## <a name="see-also"></a>请参阅  
  [BTSTask 命令行参考](../core/btstask-command-line-reference.md)   

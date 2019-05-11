@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d5bf8f327cbdb12ebe0723941afd6e37b5d2409
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fe2d443af13c8c5a3e3e5cb137bbcddd2ceefb03
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968046"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399586"
 ---
 # <a name="monitoring-throttling-using-performance-threshold-rules"></a>监视带宽限制使用性能阈值规则
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将初始化限制，以防止系统达到不可恢复的状态。 限制可以表示存在问题，并协助您找出其源。 确定基于阻止状态瓶颈的原因后，分析其他性能计数器以缩小问题来源。  
@@ -30,29 +30,29 @@ ms.locfileid: "36968046"
   
 |Object|实例|计数器|监视目的|  
 |------------|--------------|-------------|------------------------|  
-|处理器|_Total|% Processor Time|资源争用|  
-|处理|BTSNTSvc|Virtual Bytes|内存泄漏/膨胀|  
-|处理|BTSNTSvc|Private Bytes|内存泄漏/膨胀|  
-|处理|BTSNTSvc|Handle Count|资源争用|  
-|处理|BTSNTSvc|线程计数|资源争用|  
-|物理磁盘|_Total|% Idle Time|资源争用|  
+|处理器|_Total|处理器时间百分比|资源争用|  
+|Process|BTSNTSvc|虚拟字节数|内存泄漏/膨胀|  
+|Process|BTSNTSvc|专用字节数|内存泄漏/膨胀|  
+|Process|BTSNTSvc|句柄计数|资源争用|  
+|Process|BTSNTSvc|线程计数|资源争用|  
+|物理磁盘|_Total|空闲时间百分比|资源争用|  
 |物理磁盘|_Total|Current Disk Queue Length|资源争用|  
   
 ## <a name="biztalk-application-counters"></a>BizTalk 应用程序计数器  
   
 |Object|实例|计数器|Description|  
 |------------|--------------|-------------|-----------------|  
-|BizTalk 消息传送|RxHost|Documents received/sec|传入速率|  
-|BizTalk 消息传送|TxHost|Documents processed/Sec|传出速率|  
+|BizTalk 消息传送|RxHost|Documents Received/Sec|传入速率|  
+|BizTalk 消息传送|TxHost|处理的文档数/秒|传出速率|  
 |XLANGs/业务流程|PxHost|已完成的业务流程数/秒|处理速率|  
-|BizTalk: MessageBox： 常规计数器|MsgBoxName|后台处理大小|所有主机队列的累积大小|  
-|BizTalk: MessageBox： 常规计数器|MsgBoxName|Tracking Data Size|MessageBox 上 TrackingData 表的大小|  
-|BizTalk: MessageBox： 主机计数器|PxHost:MsgBoxName|Host Queue - Length|特定主机队列中的消息数|  
-|BizTalk: MessageBox： 主机计数器|TxHost:MsgBoxName|Host Queue - Length|特定主机队列中的消息数|  
-|BizTalk： 消息代理|RxHost|Database Size|发布 (PxHost) 队列的大小|  
-|BizTalk： 消息代理|PxHost|Database Size|发布 (TxHost) 队列的大小|  
-|BizTalk： 消息代理|HostName|Message delivery throttling state|影响 XLANG 和出站传输|  
-|BizTalk： 消息代理|HostName|消息发布阻止状态|影响 XLANG 和入站传输|  
+|BizTalk:MessageBox:常规计数器|MsgBoxName|后台处理大小|所有主机队列的累积大小|  
+|BizTalk:MessageBox:常规计数器|MsgBoxName|跟踪数据大小|MessageBox 上 TrackingData 表的大小|  
+|BizTalk:MessageBox:主机计数器|PxHost:MsgBoxName|主机队列-长度|特定主机队列中的消息数|  
+|BizTalk:MessageBox:主机计数器|TxHost:MsgBoxName|主机队列-长度|特定主机队列中的消息数|  
+|BizTalk:消息代理|RxHost|数据库大小|发布 (PxHost) 队列的大小|  
+|BizTalk:消息代理|PxHost|数据库大小|发布 (TxHost) 队列的大小|  
+|BizTalk:消息代理|HostName|Message Delivery Throttling State|影响 XLANG 和出站传输|  
+|BizTalk:消息代理|HostName|消息发布阻止状态|影响 XLANG 和入站传输|  
   
 ## <a name="in-this-section"></a>本节内容  
   

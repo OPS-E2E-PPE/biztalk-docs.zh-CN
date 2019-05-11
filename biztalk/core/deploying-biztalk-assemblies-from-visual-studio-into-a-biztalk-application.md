@@ -12,36 +12,36 @@ caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c4dcacede998ec0c921a379841e9b31389f2aa20
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c80c4be7e6b647ab7f62d025f867b2e1a808ab2f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007182"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389587"
 ---
-# <a name="deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application"></a>将 BizTalk 程序集从 Visual Studio 部署到 BizTalk 应用程序
-部署和重新部署 BizTalk 程序集从[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]到 BizTalk 应用程序。 当您想要测试所开发的程序集的功能并且想要将它们打包以便移交时，可能要进行 BizTalk 程序集的这一部署和重新部署。  
+# <a name="deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application"></a>部署 BizTalk 程序集从 Visual Studio 到 BizTalk 应用程序
+部署和重新部署 BizTalk 程序集从[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]到 BizTalk 应用程序。 您可能想要执行此操作以测试的程序集，您已开发并将其打包以便提交功能。  
 
 ## <a name="overview"></a>概述  
- BizTalk 应用程序提供了查看和管理构成 BizTalk 业务解决方案的项（称为“项目”）的方法。 项目包含 BizTalk 程序集（包含业务流程、架构、映射和管道），您可以将这些程序集从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 部署到 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]。 项目还包括诸如 .NET 程序集、证书、脚本、自述文件和策略等项，您可以通过使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台或 BTSTask 命令行工具将这些项添加到您的 BizTalk 应用程序中。 然后，解决方案开发人员或 IT 管理员可以将该应用程序及其项目作为单个实体查看、打包、部署和管理。 有关创建，部署和管理 BizTalk 应用程序，请参阅[部署和管理 BizTalk 应用程序](../core/deploying-and-managing-biztalk-applications.md)。  
+ BizTalk 应用程序提供一种查看和管理的项，称为"项目"构成 BizTalk 业务解决方案的方法。 项目包含 BizTalk 程序集 （包含业务流程、 架构、 映射和管道），您可以部署到这些[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]从[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]。 项目还包括诸如.NET 程序集、 证书、 脚本、 自述文件和策略，您将添加到 BizTalk 应用程序使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台或 BTSTask 命令行工具。 解决方案开发人员或 IT 管理员可以然后查看、 打包、 部署和管理应用程序及其项目作为单个实体。 有关创建，部署和管理 BizTalk 应用程序，请参阅[部署和管理 BizTalk 应用程序](../core/deploying-and-managing-biztalk-applications.md)。  
   
- 在您生成和部署 BizTalk 程序集之前，必须先在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中创建一个项目，并且要创建或添加您要在该程序集中包括的项。 您可以在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中创建一个包含多个项目的解决方案，然后一次性将这些项目的所有程序集都生成并部署到相同或不同的应用程序中。 有关执行这些任务的说明，请参阅[如何创建 BizTalk 项目](../core/how-to-create-biztalk-projects.md)。  
+ 生成并部署 BizTalk 程序集之前，必须创建的项目中[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，并创建或添加你想要包含在程序集中的项。 可以创建一个解决方案中的[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]以包含多个项目，然后生成并部署及其整批发送到同一个应用程序或不同的应用程序的程序集。 有关执行这些任务的说明，请参阅[如何创建 BizTalk 项目](../core/how-to-create-biztalk-projects.md)。  
   
- 在完成这些任务后，您可以通过采用以下步骤（在本部分的各主题中予以介绍），生成、部署和取消部署这些 BizTalk 程序集：  
+ 这些任务后，可以生成、 部署和通过执行以下步骤，取消部署 BizTalk 程序集，在本部分中的主题中所述：  
   
-- 为每个 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 项目配置一个强名称的程序集密钥文件。  
+- 每个配置强名称程序集密钥文件[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]项目。  
   
-- 设置项目的部署属性，包括配置“重新部署”选项以便轻松地重新部署程序集。  
+- 设置项目，包括配置重新部署即可轻松地重新部署程序集的部署属性。  
   
-- 可以使用 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中的“部署”命令生成解决方案中包含的 BizTalk 程序集，并将它们部署到 BizTalk 应用程序中。 或者，您可以使用“部署”命令在单个项目中生成和部署某一程序集，尽管我们不推荐这样做。  
+- 使用中的部署命令[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]生成 BizTalk 程序集包含在解决方案中并将其部署到 BizTalk 应用程序。 或者，您可以使用部署命令生成和部署程序集在单个项目中，尽管我们不建议执行此操作。  
   
-- 在测试应用程序并进行必要的更改后，在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中使用“部署”命令来重新生成和重新部署该程序集。  
+- 测试应用程序并进行必要的更改之后, 使用在部署命令[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]以重新生成并重新部署程序集。  
   
-- 如有必要，在全局程序集缓存 (GAC) 中安装该程序集，或者从 GAC 中删除该程序集。  
+- 如有必要，将程序集安装在全局程序集缓存 (GAC) 中或从 GAC 中删除该程序集。  
   
 - 取消部署程序集。  
   
-  在将一个或多个程序集部署到某一 BizTalk 应用程序后，您可以完成该应用程序的配置并将它部署到某一测试中，然后部署到生产环境中。 有关详细信息，请参阅[BizTalk 应用程序部署的开发任务](../core/development-tasks-for-biztalk-application-deployment.md)。  
+  部署到 BizTalk 应用程序的一个或多个程序集之后, 可以完成的应用程序的配置，并将其部署到测试和生产环境。 有关详细信息，请参阅[BizTalk 应用程序部署的开发任务](../core/development-tasks-for-biztalk-application-deployment.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
   

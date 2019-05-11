@@ -1,5 +1,5 @@
 ---
-title: EDI 消息传递 |Microsoft 文档
+title: EDI 消息传送 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ae6125f7e079f244a8840fbb9d5732b7f9085234
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ec3aee79d4cc3923c4c01e9a1365aaa96c6842c9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239485"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389187"
 ---
 # <a name="edi-messaging"></a>EDI 消息传递
-本部分介绍 EDI 标准和 EDI 消息的结构。  
+本部分包含说明 EDI 标准和 EDI 消息的结构。  
   
 ## <a name="in-this-section"></a>本节内容  
   

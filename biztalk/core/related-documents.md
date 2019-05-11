@@ -19,15 +19,15 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 56338d268bac6568f8e175b6e70da202715fd7a8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3cb8259a6c8975673308a0aebb5e9c0336920715
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006727"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397977"
 ---
 # <a name="related-documents"></a>相关的文档
-查询结果详细信息的“相关文档”区域显示与活动相关的引用文档的列表。 文档可以是任何类型，包括 CAD 图像。WAV 文件或采购订单。 例如，“采购订单”活动通常将“采购订单”作为基本文档类型。 列表将包含采购订单的链接。  
+查询结果详细信息的相关文档区域显示与活动相关的参考文档的文档的列表。 文档可以是任何类型，包括 CAD 图像。WAV 文件或采购订单。 例如，采购订单活动通常将作为基文档类型有采购订单。 列表将包含采购订单的链接。  
   
 ## <a name="adding-document-references"></a>添加文档引用  
  在以下两种方式生成相关文档的列表：  

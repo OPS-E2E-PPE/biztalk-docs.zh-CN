@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c526d3d76e134914f5523301c447bf99add0b27e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e748037a120a64dfa837de71fd1afdadcbd91ff0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997494"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400770"
 ---
 # <a name="installing-and-running-the-biztalk-operations-sample"></a>安装和运行 BizTalk 操作示例
 Microsoft BizTalk 操作示例演示如何查询上使用 ESB BizTalk 操作服务的 BizTalk 应用程序的操作数据。 ESB 管理门户使用此服务返回或更新 BizTalk 管理和跟踪数据库中的信息。 可用的信息，包括：  

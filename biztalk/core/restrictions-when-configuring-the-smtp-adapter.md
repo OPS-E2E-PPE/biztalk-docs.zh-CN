@@ -1,5 +1,5 @@
 ---
-title: 配置 SMTP 适配器时的限制 |Microsoft 文档
+title: 配置 SMTP 适配器时的限制 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,20 +15,20 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bf88ba65d5f44acf7f184f0d22dfaaacaa108fb9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 549073d728bbc51015b62590b9b94acd3ae53e68
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268341"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399106"
 ---
 # <a name="restrictions-when-configuring-the-smtp-adapter"></a>配置 SMTP 适配器时的限制
-本部分包含了在配置 SMTP 适配器时要注意的信息。  
+本部分包含在配置 SMTP 适配器时需要考虑的信息。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [在 SMTP 标头中使用宏的限制](../core/restrictions-on-using-macros-in-smtp-headers.md)  
+-   [在 SMTP 标头中使用宏的有关限制](../core/restrictions-on-using-macros-in-smtp-headers.md)  
   
--   [到属性 SMTP 的限制](../core/restrictions-on-the-smtp-to-property.md)  
+-   [SMTP 收件人属性的有关限制](../core/restrictions-on-the-smtp-to-property.md)  
   
--   [SMTP 主机属性的限制](../core/restrictions-on-the-smtp-host-property.md)
+-   [SMTP 主机属性的有关限制](../core/restrictions-on-the-smtp-host-property.md)

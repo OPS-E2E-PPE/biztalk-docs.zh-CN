@@ -1,5 +1,5 @@
 ---
-title: 通过使用设计时 XML 工具 |Microsoft 文档
+title: 通过使用设计时 XML 工具 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 512c9c04f789b184abbd9188a9872fb005da4209
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1a3a408e0c821ec4dfdec210549ec4d28348f15f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287053"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401579"
 ---
-# <a name="using-design-time-xml-tools"></a>使用设计时 XML 工具
-使用 EDI XML 工具，您可以对 EDI 架构和映射执行设计时操作。 在 Visual Studio 的解决方案资源管理器窗格中右键单击架构或映射时，便会从显示的菜单中执行这些工具。  
+# <a name="using-design-time-xml-tools"></a>通过使用设计时 XML 工具
+使用 EDI XML 工具，可执行对 EDI 架构和映射设计时操作。 从菜单中右键单击架构或映射在 Visual Studio 的解决方案资源管理器窗格中时，显示执行这些工具。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -34,5 +34,5 @@ ms.locfileid: "22287053"
   
 -   [验证映射 (EDI)](../core/validating-a-map-edi.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发和配置 BizTalk Server EDI 解决方案](../core/developing-and-configuring-biztalk-server-edi-solutions.md)

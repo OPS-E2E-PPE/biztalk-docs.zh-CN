@@ -20,12 +20,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a0a248c69cb96603e9c4883e5d21caa39165da13
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0a0fd7d5a0cba8543ae44bb6a8e0632cbf33c9ab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268861"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398206"
 ---
 # <a name="receive-pipelines"></a>接收管道
 下图显示消息处理工作流，其中突出显示了接收管道：  
@@ -40,7 +40,7 @@ ms.locfileid: "22268861"
   
  在创建时的业务流程，你可以创建新的接收管道或可以使用两个默认之一接收 BizTalk Server 中包含的管道-传递接收管道或 XML 接收管道。 有关这些默认管道的详细信息，请参阅[默认管道](../core/default-pipelines.md)。  
   
- 接收管道包括四个阶段：解码、拆装、验证和解析参与方。 本主题包含了有关填充这些阶段的设计注意事项。  
+ 接收管道包括四个阶段：解码、 反汇编、 验证和解析参与方。 本主题包含了有关填充这些阶段的设计注意事项。  
   
 > [!NOTE]
 >  在此版本中，不支持更改这些阶段在管道中的顺序或存在状态。  

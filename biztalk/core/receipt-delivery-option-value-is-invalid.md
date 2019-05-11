@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8966e3d95e89aff023300a9834ab1bca2915421f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f69a1f396b6b788f3aee446b5feb501eb2f59e4f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994846"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398227"
 ---
-# <a name="receipt-delivery-option-value-is-invalid"></a>Receipt-Delivery-Option 值无效
+# <a name="receipt-delivery-option-value-is-invalid"></a>回执送达选项值无效
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                        |
@@ -33,7 +33,7 @@ ms.locfileid: "36994846"
 |  消息正文   |                 回执送达选项值:"{0}"无效。  {1}                  |
   
 ## <a name="explanation"></a>解释  
- 此错误/警告/信息事件表明所收到的 AS2 消息中的 Receipt-Delivery-Option 是无效的 URL 并且不符合 AS2 RFC 4130 中的规范。  
+ 此错误/警告/信息事件表明所接收 AS2 消息中的回执送达选项不是有效的 URL 和不符合 AS2 RFC 4130 中的规范。  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请将 AS2 消息中的 Receipt-Delivery-Option 更改为包含有效的 URL 并且符合 AS2 RFC 4130 的第 7.3 节中的规范，然后重新发送 AS2 消息。
+ 若要解决此错误，请更改为包含有效的 URL 并符合 AS2 RFC 4130 第 7.3 节中的规范，然后重新发送 AS2 消息的 AS2 消息中具有回执送达选项。

@@ -1,5 +1,5 @@
 ---
-title: 错误-用于脚本编写 Functoid 没有程序集 |Microsoft 文档
+title: 错误-脚本 Functoid 未设置程序集 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8e8f6cfcb0f75529c1c677dfe6d5ce388881e5a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b62a1a82c69339c445acdb8172dca5127fa39376
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240317"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388544"
 ---
-# <a name="error---no-assembly-for-scripting-functoid"></a>错误-用于脚本编写 Functoid 没有程序集
+# <a name="error---no-assembly-for-scripting-functoid"></a>错误-脚本 Functoid 未设置程序集
 **错误代码**  
   
  btm1007  
   
  **说明**  
   
- **脚本程序集**属性指示**脚本**即使未设置 functoid**脚本类型**属性指示外部程序集包含此脚本**脚本**functoid。  
+ **脚本程序集**属性所指示**脚本**functoid 即使设置**脚本类型**属性指示外部程序集包含此脚本**脚本**functoid。  
   
  **用户执行任何操作**  
   
- 选择指示**脚本**functoid，单击省略号 (**...**) 与关联的按钮**脚本**属性在 Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口中，然后将适当的值中设置**配置 Functoid 脚本**对话框中，包括**脚本程序集**属性。
+ 选择所指示**Scripting** functoid，单击省略号 (**...**) 按钮与相关联**脚本**属性在 microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口中，然后将相应的值设置**配置 Functoid 脚本**对话框中，包括**脚本程序集**属性。

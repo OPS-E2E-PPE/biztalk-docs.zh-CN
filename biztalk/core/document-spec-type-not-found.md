@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 46b8bffb132921e7b939f251db21e0c6c7839dc2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5b4c63f34d28bf3f53e34f44373d14f6cd6b979f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014222"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389346"
 ---
 # <a name="document-spec-type-not-found"></a>找不到文档规格类型
 ## <a name="details"></a>详细信息  
@@ -33,15 +33,15 @@ ms.locfileid: "37014222"
 |  消息正文   |                            文档规范类型{0}找不到                            |
   
 ## <a name="explanation"></a>解释  
- 此错误表明未找到架构。  
+ 此错误指示找不到架构。  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请部署该文档架构：  
+ 若要解决此错误，部署文档架构：  
   
 1.  启动**Microsoft Visual Studio**。  
   
 2.  创建或打开现有项目  
   
-3.  将架构添加到项目中。  
+3.  将架构添加到项目。  
   
-4.  在 Visual Studio 中部署项目。
+4.  部署 Visual Studio 中的项目。

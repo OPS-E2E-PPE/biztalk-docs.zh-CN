@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 110c7d4505e6518836fa481ed268771aef72d4c4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e12b1d3505da37294fa50e7f1570d6b8566664da
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981054"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65247506"
 ---
 # <a name="about-the-logging-process"></a>有关日志记录进程
 你的应用程序处理关键，因为时间敏感和货币数据，审核将成为应用程序的关键部分。 若要启用企业级可管理性和可用性，Microsoft[!INCLUDE[HL7_CurrentVersion_abbrev](../../includes/hl7-currentversion-abbrev-md.md)]依赖以下共享运行的时和管理组件：  
@@ -36,16 +36,16 @@ ms.locfileid: "36981054"
 ## <a name="types-of-data"></a>类型的数据  
  本主题介绍不同类型的日志记录功能和存储此数据使用的日志记录数据：  
   
-- 配置数据： 日志记录配置数据存储在配置数据库 （也称为 BizTalk 管理数据库） 中并包含审核信息和审核数据的 SQL ([!INCLUDE[btsWinNTNoVersion](../../includes/btswinntnoversion-md.md)]事件查看器中，集中式数据库 WMI) 位置。  
+- 配置数据：配置数据的日志记录存储在配置数据库 （也称为 BizTalk 管理数据库） 中并包含审核信息和审核数据的 SQL ([!INCLUDE[btsWinNTNoVersion](../../includes/btswinntnoversion-md.md)]事件查看器中，集中式数据库 WMI) 位置。  
   
-- 存档数据： 事件日志表中的 SQL 日志存储日志记录的数据。  
+- 存档数据：SQL 日志中的事件日志表存储日志记录的数据。  
   
 ## <a name="how-logging-works"></a>日志记录的工作原理  
  本主题介绍三种类型的事件日志的软件，以及可以在其中存储日志的数据的三个位置。  
   
 |组件|用途|  
 |---------------|-------------|  
-|配置编辑器|若要指定保存日志数据的位置。 BTAHL7 支持日志记录到以下任意组合： 事件查看器、 WMI 和 SQL Server 日志记录。|  
+|配置编辑器|若要指定保存日志数据的位置。 BTAHL7 支持日志记录到以下任意组合：事件查看器、 WMI 和 SQL Server 日志记录。|  
 |事件代理|若要接收日志事件引发的其他组件，并记录基于配置数据的日志记录。|  
 |日志记录 API|日志记录调用 BTAHL7 的所有程序集的接口。|  
   
@@ -84,20 +84,20 @@ ms.locfileid: "36981054"
   
  下表显示适用于合作伙伴的典型记录的数据。  
   
-|data|Description|  
+|数据|Description|  
 |----------|-----------------|  
-|日志数据|数据日志|  
+|LogData|数据日志|  
 |CategoryNumber|分类数|  
-|EntryType|事件的类型|  
-|存在 EventId|事件 ID|  
+|EntryType|事件类型|  
+|EventId|事件 ID|  
 |MachineName|计算机名称|  
 |消息|消息详细信息|  
-|数据源|创建、 更新、 读取、 删除、 部署，或将数据存档|  
+|Source|创建、 更新、 读取、 删除、 部署，或将数据存档|  
 |TimeGenerated|成功或失败|  
 |UserName|“用户名”|  
 |MsgGuid|消息的 GUID|  
 |SvcGuid|服务 GUID|  
-|运算|操作详细信息|  
+|操作|操作详细信息|  
   
 ## <a name="see-also"></a>请参阅  
  [配置日志记录](../../adapters-and-accelerators/accelerator-hl7/configuring-logging.md)

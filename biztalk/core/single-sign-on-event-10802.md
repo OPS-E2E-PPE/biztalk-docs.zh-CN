@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10802 |Microsoft Docs
+title: 单一登录：事件 10802 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3a87f917fbda0adadd00f037d3db6703e145e6eb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 952593e4eba63d1494762f63886b1b9429052428
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978782"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399531"
 ---
-# <a name="single-sign-on-event-10802"></a>单一登录： 事件 10802
+# <a name="single-sign-on-event-10802"></a>单一登录：事件 10802
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                              |
@@ -28,12 +28,12 @@ ms.locfileid: "36978782"
 | 产品版本 |          [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]          |
 |    事件 ID     |                                    10802                                     |
 |  事件源   |                                    ENTSSO                                    |
-|    组件    |                                     N/A                                      |
+|    组件    |                                     不可用                                      |
 |  符号名称  |                            ENTSSO_E_WRONG_SESSION                            |
-|  消息正文   | 收到一个错误会话请求。 它可能已断开。 |
+|  消息正文   | 错误会话接收的请求。 它可能已断开。 |
   
 ## <a name="explanation"></a>解释  
- 该会话可能已断开连接。  
+ 该会话可能已断开。  
   
 ## <a name="user-action"></a>用户操作  
- 关闭该界面，然后重新启动。
+ 关闭该界面，然后重新启动它。

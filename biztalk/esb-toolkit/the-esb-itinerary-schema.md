@@ -1,5 +1,5 @@
 ---
-title: ESB 路线架构 |Microsoft 文档
+title: ESB 路线架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 66bcbe6780105a97e58df393d0e060688048a02b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d205d4722270dd36f7d3611845b0d5bc4c7953f7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22295221"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399785"
 ---
 # <a name="the-esb-itinerary-schema"></a>ESB 路线架构
-名为 Itinerary.xsd ESB 路线架构作为处理指令，通常称为路线服务的一组定义日程表。 路线服务可能包含一个或多个路线的服务和相应的冲突解决程序连接字符串，如下面的架构定义中所示。  
+名为 Itinerary.xsd ESB 路线架构将定义为处理指令，通常称为路线服务的一组路线。 路线服务可能包含一个或多个路线服务和相应的冲突解决程序连接字符串，如下面的架构定义中所示。  
   
 ```xml  
 <?xml version="1.0" encoding="utf-16"?>  
@@ -130,13 +130,13 @@ ms.locfileid: "22295221"
 </xs:schema>  
 ```  
   
- **服务实例**元素对应于当前路线服务和包含属性，例如**名称**，**类型**，**状态**，和**位置**的服务提升到消息上下文。 架构中的系统 Properties.xsd **Microsoft.Practices.ESB.ItinerarySchemas**程序集定义这些属性。  
+ **ServiceInstance**元素对应于当前的路线服务和包含属性，例如**名称**，**类型**，**状态**，并**位置**，该服务将升级到消息上下文。 名为系统 Properties.xsd 中的架构**Microsoft.Practices.ESB.ItinerarySchemas**程序集定义这些属性。  
   
- **服务**元素表示一组路线服务，与每个服务由其状态、 开始时间、 完成时间、 类型 (**Orchestration**或**消息**)，并且，（可选） 阶段 (**receiveInbound**， **receiveTransmit**， **sendTransmit**， **sendInbound**)。  
+ **Services**元素表示一组路线服务，但每个服务定义其状态、 开始时间、 完成时间、 类型 (**业务流程**或**消息传送**)，并 （可选） 阶段 (**receiveInbound**， **receiveTransmit**， **sendTransmit**， **sendInbound**)。  
   
- **ResolverGroups**元素包含多个**冲突解决程序**元素，其中每个定义日程表就会通过引用的一个或多个冲突解决程序连接字符串**serviceid**属性。  
+ **ResolverGroups**元素包含多个**冲突解决程序**元素，其中每个定义路线就会通过引用的一个或多个冲突解决程序连接字符串**serviceid**属性。  
   
- 以下显示了 ESB 路线管道组件处理之前提交路线 SOAP 标头的一个示例。  
+ 下面显示了已提交的路线 SOAP 标头的示例，ESB 路线管道组件处理之前。  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  

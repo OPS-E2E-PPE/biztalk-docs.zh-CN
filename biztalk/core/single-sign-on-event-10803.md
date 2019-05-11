@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10803 |Microsoft Docs
+title: 单一登录：Event 10803 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bc48a3bc04fa1650fd92ecd0ee66e9c719c95b1f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 084618fd5ea12bac447e2cdfd4ca4b589b8a51d1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004950"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399514"
 ---
-# <a name="single-sign-on-event-10803"></a>单一登录： 事件 10803
+# <a name="single-sign-on-event-10803"></a>单一登录：事件 10803
 ## <a name="details"></a>详细信息  
   
 |                 |                                                             |
@@ -28,7 +28,7 @@ ms.locfileid: "37004950"
 | 产品版本 | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]  |
 |    事件 ID     |                            10803                            |
 |  事件源   |                           ENTSSO                            |
-|    组件    |                             N/A                             |
+|    组件    |                             不可用                             |
 |  符号名称  |                 ENTSSO_E_TIMESTAMP_TOO_OLD                  |
 |  消息正文   | 请求被拒绝，因为时间戳太旧。 |
   
@@ -36,4 +36,4 @@ ms.locfileid: "37004950"
  请求被拒绝，因为时间戳太旧。  
   
 ## <a name="user-action"></a>用户操作  
- 不需要用户进行任何操作。
+ 不不需要任何用户操作。

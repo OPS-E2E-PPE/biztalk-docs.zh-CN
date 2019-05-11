@@ -15,17 +15,17 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a8f771968e6d7c7f58ccd8d3e68b43aac0eb64e0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 20c0e8377666d551867148ebff871b6728e8b561
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968494"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65309586"
 ---
 # <a name="message-acknowledgment-segment"></a>消息确认段
 确认 (ACK) 消息的消息确认 (MSA) 段标识确认正在确认哪种类型的系统发送，并指示哪些消息通知。 它包含两个所需的段： 确认代码和消息，控制 id。  
 
-## <a name="acknowledgment-code-msa1"></a>确认代码： MSA1  
+## <a name="acknowledgment-code-msa1"></a>确认代码：MSA1  
  下表列出了可用 MSA1 字段值，该值指示消息接收结果。  
 
 |ReplTest1|含义|Description|  
@@ -41,8 +41,8 @@ ms.locfileid: "36968494"
 |            确认模式            |                                                           MSA2 中的值                                                            |
 |-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 |               原始模式               |                  转置 MSH10 中的值的值 （消息控件 ID） 字段的原始消息                   |
-|   增强模式： 提交确认    |                  转置 MSH10 中的值的值 （消息控件 ID） 字段的原始消息                   |
-| 增强模式： 应用程序确认 | 通过生成的 GUID[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]确认 |
+|   增强的模式：提交确认    |                  转置 MSH10 中的值的值 （消息控件 ID） 字段的原始消息                   |
+| 增强的模式：应用程序确认 | 通过生成的 GUID[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]确认 |
 
 ## <a name="see-also"></a>请参阅  
  [创建和处理确认](../../adapters-and-accelerators/accelerator-hl7/creating-and-processing-acknowledgments.md)   

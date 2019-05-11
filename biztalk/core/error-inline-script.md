@@ -1,5 +1,5 @@
 ---
-title: 错误-内联脚本 |Microsoft 文档
+title: 错误-内联脚本 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 96bb17906d0f5be524527517712794d9faa7368b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b7d50790b3d439116e638d7628c1ac82da37048e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241869"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388799"
 ---
 # <a name="error---inline-script"></a>错误-内联脚本
 **错误代码**  
@@ -28,8 +28,8 @@ ms.locfileid: "22241869"
   
  **说明**  
   
- 为指示提供的内联脚本**脚本**functoid 包含语法错误。  
+ 提供给所指示的内联脚本**脚本**functoid 包含语法错误。  
   
  **用户执行任何操作**  
   
- 选择指示**脚本**functoid，单击省略号 (**...**) 与关联的按钮**脚本**属性在 Microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口中，然后在**配置 Functoid 脚本**对话框中，正确语法错误。
+ 选择所指示**Scripting** functoid，单击省略号 (**...**) 按钮与相关联**脚本**属性在 microsoft[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口中，然后在**配置 Functoid 脚本**对话框中，正确语法错误。

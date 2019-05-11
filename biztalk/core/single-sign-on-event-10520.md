@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10520 |Microsoft Docs
+title: 单一登录：Event 10520 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0721ae4d89ee05792f2189a0d6a6b2c5e4efdddb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9a711e7ef49d32b85d774438e4e9f42e9805a99a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011382"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400233"
 ---
-# <a name="single-sign-on-event-10520"></a>单一登录： 事件 10520
+# <a name="single-sign-on-event-10520"></a>单一登录：事件 10520
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                                        |
@@ -30,21 +30,21 @@ ms.locfileid: "37011382"
 |  事件源   |                                                                 ENTSSO                                                                 |
 |    组件    |                                                                  N\A                                                                   |
 |  符号名称  |                                                          SSO_WARN_NO_SECRETS                                                           |
-|  消息正文   | 未在主密钥服务器的注册表中找到任何密钥。 请使用配置工具来生成或还原主密钥。 |
+|  消息正文   | 主密钥服务器的注册表中未不找到任何密钥。 使用配置工具来生成或还原主密钥。 |
 
 ## <a name="explanation"></a>解释  
- 此警告事件表明，未在主密钥服务器的注册表中找到任何密钥。 SSO 主密钥以加密形式存储在 SSO 主密钥服务器的注册表中。 两个密钥通常保存在注册表中： 当前主密钥和之前的主密钥。 密钥使用 GUID（主密钥 ID）标识。 如果请求指定的主密钥时无法在注册表中找到该主密钥，则将返回此错误代码。  
+ 此警告事件表明主密钥服务器的注册表中未找到任何密钥。 SSO 主密钥存储在 SSO 主密钥服务器的注册表中加密。 两个密钥通常保存在注册表中： 当前主密钥和之前的主密钥。 使用 GUID (主密钥 id) 标识的机密。 如果请求时在注册表中找不到指定的主密钥，则将返回此错误代码。  
 
 ## <a name="user-action"></a>用户操作  
- 若要解决此警告，请执行下列一项或多项操作：  
+ 若要解决此警告，请执行一个或多个以下操作：  
 
-- 检查主密钥服务器名称是否正确，且是否为预期的名称。  
+- 检查主密钥服务器名称正确且是否为预期。  
 
-- 如果正确，则检查该主密钥服务器的注册表中是否存在该主密钥。 该主密钥位于 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ENTSSO\SSOSS 下（此密钥仅存在于 SSO 主密钥服务器上）。  
+- 如果正确无误，检查是否存在该主密钥服务器的注册表中的主密钥。 主密钥位于 hkey_local_machine\software\microsoft\entsso\ssoss 下 （此密钥是仅在 SSO 主密钥服务器上存在）。  
 
-- 如果该密钥缺失，则主密钥不存在。 SSOSS 下应存在一个或多个包含加密密钥的名为 GUID 的密钥。 如果这些密钥不存在，则主密钥不存在。 主密钥以 GUID（主密钥 ID）标识，因此，这些 GUID（如果存在）应与所请求的密钥的主密钥 ID 匹配。 如果存在名为 GUID 的密钥，但它们与所请求的主密钥 ID 不匹配，则将混合注册表中的主密钥与用于对 SSO 数据库 (SSODB) 中的数据进行加密的密钥。 在这种情况下，可能必须还原另一个主密钥，或者 SSODB 已从下层备份还原。 如果根本不存在主密钥，则可以使用 SSO 配置工具（命令行或 MMC）从备份还原该主密钥，或者生成一个新密钥。 请注意，如果这是新安装，且 SSO 数据库中不存在任何现有的已加密数据，则通常只需要生成一个新主密钥。 主密钥通常是在初始配置过程中首次生成的。  
+- 如果缺少该密钥，则主密钥不存在。 应存在名为 Guid 的包含加密的密钥的 SSOSS 下的一个或多个密钥。 如果这些不存在，则主密钥不存在。 为主密钥标识 Guid (主密钥 id) 因此，这些 Guid （如果存在） 应与请求的机密的主密钥 id 匹配。 如果没有名为 Guid 的密钥，但它们与请求的主密钥 id 不匹配，则将混合注册表中的主密钥和用来加密 SSO 数据库 (SSODB) 中的数据的机密。 可能有必要在这种情况下，还原另一个主密钥，或可能已从下层备份还原 SSODB。 如果根本不存在主密钥，然后它可以是从备份还原使用 SSO 配置工具 （命令行或 MMC），也可以生成一个新的机密。 请注意，则通常只需要生成新的主密钥，如果这是新安装并且没有任何现有加密 SSO 数据库中的数据。 通常，第一次在初始配置过程生成主密钥。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [主密钥服务器](../core/master-secret-server.md)  
 

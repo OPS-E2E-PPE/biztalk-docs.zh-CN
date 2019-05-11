@@ -1,6 +1,6 @@
 ---
-title: 使用 BizTalk Server 中的异常处理博士 Edwards OneWorld |Microsoft 文档
-description: 处理异常和正在更新你在 BizTalk Server 中使用博士 Edwards OneWorld 适配器的业务流程的 jdearglist.txt 文件概述
+title: 使用 BizTalk Server 异常处理在 JD Edwards OneWorld 中 |Microsoft Docs
+description: 处理异常和更新 jdearglist.txt 文件对于使用 JD Edwards OneWorld 适配器在 BizTalk Server 业务流程概述
 ms.custom: ''
 ms.date: 10/18/2017
 ms.prod: biztalk-server
@@ -13,22 +13,22 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d4284b1bfbab9edbb959bdacb2db0f7f842c6e11
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: ee75f896e02c8866e29538ad3956c6e89720e8de
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24013180"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401691"
 ---
 # <a name="use-biztalk-server-exception-handling"></a>使用 BizTalk Server 异常处理
 
 ## <a name="overview"></a>概述
-在您的业务流程中添加形状以处理错误和异常从后端服务器。 此外，请确保在 jdearglist.txt 文件中设置字符串两端对齐。 
+在您的业务流程添加形状以处理错误和异常从后端服务器。 此外，请确保在 jdearglist.txt 文件中设置字符串对齐方式。 
 
  
 ## <a name="next-steps"></a>后续步骤
 
--   [在 Jdearglist 中设置字符串理由](../core/setting-string-justification-in-jdearglist.md)
+-   [在 Jdearglist 中设置字符串对齐](../core/setting-string-justification-in-jdearglist.md)
   
 -   [基本业务流程设计](../core/basic-orchestration-design1.md)  
   

@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 230f0a03e1274fec7ef196ce12cc3be33ff2702b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0ef3f6f9e571f3469c2bd0de163f7ada90d0be7c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004558"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388975"
 ---
-# <a name="the-as2-decoder-was-unable-to-locate-the-disposition-notification-options-http-header"></a>AS2 解码器无法定位 Disposition-Notification-Options HTTP 标头
+# <a name="the-as2-decoder-was-unable-to-locate-the-disposition-notification-options-http-header"></a>AS2 解码器无法定位处置通知选项 HTTP 标头
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                             |

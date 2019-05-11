@@ -12,30 +12,30 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8763f557c5bacb13b3fbc1542216d9eb9be8d319
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 05152065b93fabe103125718334a61da878fd309
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008526"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389472"
 ---
 # <a name="developing-a-custom-cumulative-functoid"></a>开发自定义的累计 Functoid
-使用自定义累计 functoid 可以对在一个实例消息中多次出现的值执行累计操作。  
+自定义累计 functoid 用于执行累计操作在实例消息中多次出现的值。  
   
- 在开发累计 functoid 时，必须实现三个函数。 这三个函数对应于映射执行累计所需的初始化、累计和获取操作。 在讨论这些函数之前，有必要讨论一下线程安全。  
+ 在开发累计 functoid 时，必须实现三个函数。 三个函数对应于初始化、 累计和获取地图需要对其执行累计操作。 在讨论这些函数之前务必讨论一下线程安全。  
   
 ## <a name="writing-a-thread-safe-functoid"></a>编写线程安全 Functoid  
- functoid 代码必须为线程安全代码，因为在任务繁忙时，可以同时运行多个映射实例。 应记住以下几点：  
+ Functoid 代码必须是映射的线程安全，因为在任务繁忙多个实例可以同时运行。 一些要记住的要点包括：  
   
 - 静态状态必须是线程安全的。  
   
-- 实例状态并非始终需要是线程安全的。  
+- 实例状态不始终需要是线程安全。  
   
-- 在设计时应考虑在任务繁忙时的运行情况。 应尽可能避免进行锁定。  
+- 设计时应考虑高高负荷环境下运行。 避免进行锁定，只要有可能。  
   
-- 应尽可能避免进行同步。  
+- 如果可能，避免同步需求。  
   
-  BizTalk Server 提供了一种简单机制，可降低编写线程安全累计 functoid 的复杂度。 所有这三个函数的第一个参数都相同，均为整数索引值。 BizTalk Server 在调用您的初始化函数时会为索引值分配一个唯一的编号。 您可以使用此值作为存放累计值的数组的索引，如以下代码所示：  
+  BizTalk Server 提供了一个简单的机制来降低编写线程安全累计 functoid 的复杂性。 所有三个函数都具有相同的第一个参数为整数索引值。 调用初始化函数时，BizTalk Server 分配到的索引值的唯一编号。 可以使用此值作为索引到一个数组，其中存放累计值，如下面的代码中所示：  
   
 ```  
 private HashTable cumulativeArray = new HashTable();  
@@ -48,44 +48,44 @@ public string InitCumulativeMultiply(int index)
 }  
 ```  
   
- 此示例使用 HashTable 而不是 ArrayList。 这是因为初始化函数可能不是按索引值的顺序进行调用。  
+ 此示例使用哈希表，而不是 ArrayList。 这是因为初始化函数可能不会调用的顺序索引值。  
   
 ## <a name="implementing-the-three-cumulative-functions"></a>实现三个累计函数  
- 您需要为开发的每个自定义累计 functoid 实现三个函数。 下表概括介绍了这些函数以及为设置这些函数必须在构造函数中调用方法。 所有函数都返回字符串值。  
+ 您需要实现的每个开发的自定义累计 functoid 的三个函数。 下表总结了函数和必须在构造函数中设置这些调用的方法。 所有函数返回字符串值。  
   
 > [!NOTE]
->  由您确定每个函数的最佳名称，但每个函数必须具有所指定的参数数目和类型。  
+>  您确定最佳名称对于每个函数，但每个函数必须具有的数量和类型指定的参数。  
   
-|函数用途|参数|设置引用|设置内联脚本|  
+|函数用途|参数|若要设置的引用|若要设置内联脚本|  
 |----------------------|---------------|------------------------|--------------------------|  
-|初始化|**int 索引**|**SetExternalFunctionName**|**SetScriptBuffer**与`functionNumber`= 0|  
-|累计|**int index、 string val、 string scope**|**使用 SetExternalFunctionName2**|**SetScriptBuffer**与`functionNumber`= 1|  
-|获取|**int 索引**|**SetExternalFunctionName3**|**SetScriptBuffer**与`functionNumber`= 2|  
+|初始化|**int index**|**SetExternalFunctionName**|**SetScriptBuffer**与`functionNumber`= 0|  
+|累计|**int index、 string val、 string scope**|**SetExternalFunctionName2**|**SetScriptBuffer**与`functionNumber`= 1|  
+|获取|**int index**|**SetExternalFunctionName3**|**SetScriptBuffer**与`functionNumber`= 2|  
   
 ### <a name="initialization"></a>初始化  
- 通过初始化，您可以准备用于执行累计的机制。 您可以初始化数组，重置一个或多个值，或者根据需要加载其他资源。 不使用字符串返回值。  
+ 初始化可准备将用于执行累计的机制。 可以初始化数组、 重置一个或多个值，或根据需要加载其他资源。 字符串返回不使用值。  
   
 ### <a name="cumulation"></a>累计  
- 这是执行与您的 functoid 相应的累计操作的地方。 BizTalk Server 将传入以下三个参数：  
+ 这是在其中执行相应的 functoid 累计操作。 BizTalk Server 将传入以下三个参数：  
   
-- **索引。** 代表映射实例的整数值。 可以有多个映射实例在同时运行。  
+- **索引。** 代表映射实例的整数值。 可能有多个映射实例在同时运行。  
   
-- **Val。** 包含应累计的值的字符串。 除非是在编写字符串累计 functoid，否则该参数为数字值。  
+- **Val。** 包含应累计的值的字符串。 除非你正在编写字符串累计 functoid，它数字值。  
   
-- **作用域。** 包含有数值的字符串，指示应对哪个元素或属性值进行累计。 实际值通过实现来确定。  
+- **作用域。** 包含一个数字，指示应累计的元素或属性值的字符串。 实际值由实现决定。  
   
-  由您决定要累计哪些值以及要忽略哪些值。 例如，您可以忽略不小于 0 的值，并在值不是数字时引发异常。 **BaseFunctoid**提供了两个函数 —**IsDate**并**IsNumeric**— 以协助您进行验证。  
+  您决定要累计哪些值以及要忽略哪些值。 例如，可能会忽略不小于 0 的值，但值不是数字时引发异常。 **BaseFunctoid**提供了两个函数 —**IsDate**并**IsNumeric**— 以协助您进行验证。  
   
 > [!NOTE]
 >  如果您使用**IsDate**或**IsNumeric**中的内联脚本，请务必设置**RequiredGlobalHelperFunctions**以便函数都提供给您的脚本。  
   
- 不使用字符串返回值。  
+ 字符串返回不使用值。  
   
 ### <a name="get"></a>获取  
- BizTalk Server 完成了映射中的 functoid 设置所确定的所有值的循环迭代之后，将请求累计值。 获取函数具有一个参数，即 `Index`，该参数是代表映射实例的整数值。 您的函数应使用索引值来查找累计值并将其作为字符串返回。  
+ BizTalk Server 完成循环访问所有由映射中 functoid 设置的值，它请求的累计的值。 获取函数具有一个自变量， `Index`，这是代表映射实例的整数值。 你的函数应使用的索引值来查找并返回字符串形式的累计的值。  
   
 ## <a name="example"></a>示例  
- 下面的示例阐释了如何创建执行累计乘法的自定义 functoid。 该 functoid 依赖于一个包含三个字符串资源和一个 16x16 像素位图资源的资源文件。  
+ 下面的示例说明了如何创建执行累计乘法的自定义 functoid。 它依赖于包含三个字符串资源和 16 x 16 像素位图资源的资源文件。  
   
 ```  
 using System;  

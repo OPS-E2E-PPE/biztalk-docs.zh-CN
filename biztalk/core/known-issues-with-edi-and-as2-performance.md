@@ -1,5 +1,5 @@
 ---
-title: 已知问题 EDI 和 AS2 性能 |Microsoft 文档
+title: 使用 EDI 和 AS2 性能的已知问题 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e034cf228ee92157c4b29c36660111bb1856c358
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4cf091226c91660568d56b53618f04cbe4364318
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22261757"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330539"
 ---
-# <a name="known-issues-with-edi-and-as2-performance"></a>EDI 和 AS2 性能的已知问题
+# <a name="known-issues-with-edi-and-as2-performance"></a>EDI 和 AS2 性能的已知的问题
 本主题介绍有关 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的性能和 AS2 解决方案的已知问题。  
   
 ## <a name="performance-considerations-for-edi-and-as2-status-reporting"></a>EDI 和 AS2 状态报告在性能方面的注意事项  
@@ -31,5 +31,5 @@ ms.locfileid: "22261757"
   
  系统的性能还可能受在系统配置中启用的状态报告的程度影响。 通过禁用特定类型的状态报告，或许能够提高性能。  
   
-## <a name="see-also"></a>另请参阅  
- [EDI 和 AS2 解决方案疑难解答](../core/troubleshooting-edi-and-as2-solutions.md)
+## <a name="see-also"></a>请参阅  
+ [EDI 和 AS2 解决方案的疑难解答](../core/troubleshooting-edi-and-as2-solutions.md)

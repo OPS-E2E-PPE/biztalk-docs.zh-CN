@@ -1,5 +1,5 @@
 ---
-title: 如何安装应用程序 |Microsoft 文档
+title: 如何安装应用程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df611fdaec515480bbe47b1c8c1feddccb6e7333
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aed3f221d4ea4cd4b125da5f7979e13d56e64cb4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22297741"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400410"
 ---
 # <a name="how-to-install-an-application"></a>如何安装应用程序
-有关安装应用程序的信息，请参阅[如何安装 BizTalk 应用程序](http://go.microsoft.com/fwlink/?LinkID=154728)(http://go.microsoft.com/fwlink/?LinkID=154728)。
+有关安装的应用程序的信息，请参阅[如何安装 BizTalk 应用程序](http://go.microsoft.com/fwlink/?LinkID=154728)(http://go.microsoft.com/fwlink/?LinkID=154728)。

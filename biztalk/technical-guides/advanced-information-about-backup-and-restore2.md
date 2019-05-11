@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d197d8b6990a8106d51aaf53976503a4c28480ea
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 95a09feea7958b84156fdefcca28b4b7b4b5e1b2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997022"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401378"
 ---
 # <a name="advanced-information-about-backup-and-restore"></a>有关备份和还原的高级信息
 此处列出的主题介绍备份和还原进程在更详细说明，它用于由高级用户使用的全面了解[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  

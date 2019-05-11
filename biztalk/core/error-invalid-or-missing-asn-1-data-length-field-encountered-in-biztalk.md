@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3aaab2fa12fc9d175c237224128055081d596962
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 712edc0bec0f2323901a2006065c5a28ad2c3ab4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994470"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388762"
 ---
 # <a name="invalid-or-missing-asn1-data-length-field-encountered-during-decompression-processing"></a>解压缩处理期间 ASN.1 数据长度字段无效或缺失
 ## <a name="details"></a>详细信息  

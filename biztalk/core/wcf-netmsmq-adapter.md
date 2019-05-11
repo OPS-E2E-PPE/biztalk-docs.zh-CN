@@ -1,5 +1,5 @@
 ---
-title: WCF NetMsmq 适配器 |Microsoft 文档
+title: Wcf-netmsmq 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,18 +14,18 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2e9e8d51b5c13124f4767f60614460f049191692
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2dc8be1ad6c509f97e939d35277f024ad89ef53c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288093"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400560"
 ---
-# <a name="wcf-netmsmq-adapter"></a>WCF NetMsmq 适配器
-[!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]时接收和发送 WCF 服务通过请求使用 WCF NetMsmq 适配器[NetMsmqBinding](http://go.microsoft.com/fwlink/?LinkId=82589)。 WCF NetMsmq 适配器使您能够发布业务流程和作为 WCF 服务的架构，并使用与外部 WCF 服务**NetMsmqBinding**。  
+# <a name="wcf-netmsmq-adapter"></a>Wcf-netmsmq 适配器
+[!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 接收和发送 WCF 服务通过请求时，会使用 Wcf-netmsmq 适配器[NetMsmqBinding](http://go.microsoft.com/fwlink/?LinkId=82589)。 Wcf-netmsmq 适配器，您可以将业务流程和架构作为 WCF 服务发布并使用外部 WCF 服务与**NetMsmqBinding**。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [什么是 WCF NetMsmq 适配器？](../core/what-is-the-wcf-netmsmq-adapter.md)  
+-   [WCF-NetMsmq 适配器概述](../core/what-is-the-wcf-netmsmq-adapter.md)  
   
--   [配置 WCF NetMsmq 适配器](../core/configuring-the-wcf-netmsmq-adapter.md)
+-   [配置 WCF-NetMsmq 适配器](../core/configuring-the-wcf-netmsmq-adapter.md)

@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f8c1f19fa1a0d1abaad29f454f25f0d8608ed497
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 21d1facb7764356dfa08ca0c539482fdd44b52b7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967134"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65247584"
 ---
 # <a name="acknowledgment-settings"></a>确认设置
 您使用**确认**选项卡[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]配置资源管理器 (在高级下**方**选项卡) 配置确认 (ACK) 设置。  

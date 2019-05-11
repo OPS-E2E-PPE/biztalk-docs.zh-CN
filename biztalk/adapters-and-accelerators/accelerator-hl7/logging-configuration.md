@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 83e15247158dd21c237064692931a83f6885f05e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7e90054dc7316cc0fcae2179845ce56c6254f251
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002454"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65300034"
 ---
 # <a name="logging-configuration"></a>日志记录配置
 在一起，MicrosoftBizTalk 服务器和[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]提供如医院、 学术会议和护理家庭医疗保健提供商的安全事务和数字企业应用程序集成 (EAI) 通信。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 提供的功能来协调应用程序活动以及事务处理、 动态方式路由消息、 验证和转换数据，并在不同的适配器的传输。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 支持美国国家标准标准组织 ANSI 公认运行状况级别 7 (HL7) 消息传送标准，提供程序网络中的临床和管理应用程序用于交换中实时的医疗数据。  

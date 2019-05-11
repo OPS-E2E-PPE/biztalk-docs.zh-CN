@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10543 |Microsoft Docs
+title: 单一登录：Event 10543 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf5c026384bf463f6ee0a33045dd1e7b1fca4188
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4f8a3b284910ea5555085a5617a2d2922d0231f3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998439"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243386"
 ---
-# <a name="single-sign-on-event-10543"></a>单一登录： 事件 10543
+# <a name="single-sign-on-event-10543"></a>单一登录：事件 10543
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                                                        |
@@ -30,19 +30,19 @@ ms.locfileid: "36998439"
 |  事件源   |                                                                         ENTSSO                                                                         |
 |    组件    |                                                                           CO                                                                           |
 |  符号名称  |                                                           SSO_WARN_ORIGINAL_TICKET_VALIDATED                                                           |
-|  消息正文   | 需要验证之后发出票证。 此应用程序在不经过验证的情况下无法兑换票证。%r<br /><br /> 应用程序名称： %1 |
+|  消息正文   | 需要验证所颁发票证。 它无法兑换此应用程序未经 validated.%r<br /><br /> 应用程序名称： %1 |
 
 ## <a name="explanation"></a>解释  
- 此警告事件表明应用程序票证需要经过验证之后才能发出。 票证未经验证不能兑换。 票证的验证基于每个关联应用程序。  
+ 此警告事件指示需要验证发布应用程序票证。 未经验证，不能兑换票证。 票证验证是在每个关联应用程序。  
 
 ## <a name="user-action"></a>用户操作  
- 若要解决此警告问题，请执行以下操作：  
+ 若要解决此警告，请执行以下操作：  
 
-- 如果您使用的是企业单一登录，请确保您的消息只通过受信任主机传输。 这将降低在消息中篡改数据的风险。  
+- 如果使用企业单一登录，请确保您的消息只通过受信任的主机流动。 这将减少与消息中的数据被篡改的风险。  
 
-- 如果情况允许，请针对此应用程序关闭验证。 验证是一个管理选项，可以针对整个系统、或只针对此特定的应用程序关闭该选项。  
+- 如果你的方案允许，将关闭此应用程序的验证。 验证是一个管理选项，可以关闭状态的系统或只需为此特定应用程序。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [SSO 票证](../core/sso-tickets.md)  
 

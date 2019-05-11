@@ -1,5 +1,5 @@
 ---
-title: 开发自定义引用 Functoid |Microsoft 文档
+title: 开发自定义引用的 Functoid |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c70f9cfcfaf50d92758f808346380b0a351a2f45
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9942af739bd0708f9b3cd4017eded7b3033770f9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239221"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389440"
 ---
 # <a name="developing-a-custom-referenced-functoid"></a>开发自定义引用的 Functoid
-自定义引用的 Functoid 不会将内联的实现代码复制到映射中。 实际上，它将对程序集、类和方法的引用放置在与生成的样式表相关联的扩展对象文件中，并在运行时对其进行调用。  
+自定义引用的 functoid 不复制到映射的内联的实现代码。 相反，对程序集、 类和方法的引用放在扩展对象文件与生成的样式表相关联，并在运行时调用。  
   
 ## <a name="example"></a>示例  
- 以下示例说明了如何创建用于连接两个字符串的自定义引用的 functoid。 该 functoid 依赖于一个包含三个字符串资源和一个 16x16 像素位图资源的资源文件。  
+ 下面的示例说明了如何创建用于连接两个字符串的自定义引用的 functoid。 它依赖于包含三个字符串资源和 16 x 16 像素位图资源的资源文件。  
   
 ```  
 using System;  
@@ -84,8 +84,8 @@ namespace Microsoft.Samples.BizTalk.CustomFunctoid
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用 BaseFunctoid](../core/using-basefunctoid.md)   
- [开发自定义的内联 Functoid](../core/developing-a-custom-inline-functoid.md)   
- [开发自定义的累积 Functoid](../core/developing-a-custom-cumulative-functoid.md)   
- [自定义 Functoid （BizTalk Server 示例）](../core/custom-functoid-biztalk-server-sample.md)
+ [开发自定义内联 Functoid](../core/developing-a-custom-inline-functoid.md)   
+ [开发自定义的累计 Functoid](../core/developing-a-custom-cumulative-functoid.md)   
+ [自定义 Functoid（BizTalk Server 示例）](../core/custom-functoid-biztalk-server-sample.md)

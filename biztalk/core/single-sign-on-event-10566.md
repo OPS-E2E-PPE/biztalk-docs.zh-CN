@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10566 |Microsoft Docs
+title: 单一登录：Event 10566 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4748670e128b5b3a9717e2e430acb976da7bb4d1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 27530a47a1262cbc5baf9edede91dcee385fa91e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015086"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398780"
 ---
-# <a name="single-sign-on-event-10566"></a>单一登录： 事件 10566
+# <a name="single-sign-on-event-10566"></a>单一登录：事件 10566
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                    |
@@ -28,12 +28,12 @@ ms.locfileid: "37015086"
 | 产品版本 |                                                     [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                     |
 |    事件 ID     |                                                                               10566                                                                                |
 |  事件源   |                                                                               ENTSSO                                                                               |
-|    组件    |                                                                                N/A                                                                                 |
+|    组件    |                                                                                不可用                                                                                 |
 |  符号名称  |                                                                  SSO_WARN_CANNOT_UPDATE_APP_FLAGS                                                                  |
-|  消息正文   | 您无法更新此应用程序的某些指定标志。 这些标志将会被忽略。%r<br /><br /> 应用程序名称: %1 %r<br /><br /> 指定标志掩码： %2 |
+|  消息正文   | 无法更新一些为此应用程序指定的标志。 它们将 ignored.%r<br /><br /> 应用程序名称: %1 %r<br /><br /> 指定标志掩码： %2 |
   
 ## <a name="explanation"></a>解释  
- 应用程序中的某些标志无法更改。 （例如，不允许将应用程序类型从“个人”更改为“组”。）此应用程序的标志在警告文本中列出。  
+ 不能更改应用程序中的某些标志。 （例如，它不是允许将来自单独的应用程序类型更改为组。）警告文本中指定了此应用程序的标志。  
   
 ## <a name="user-action"></a>用户操作  
  不需要任何用户操作。

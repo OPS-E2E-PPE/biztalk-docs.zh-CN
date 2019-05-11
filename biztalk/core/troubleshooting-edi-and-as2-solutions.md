@@ -1,5 +1,5 @@
 ---
-title: EDI 和 AS2 解决方案疑难解答 |Microsoft 文档
+title: EDI 和 AS2 解决方案的疑难解答 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f1d9b2862464da17a541733d1e5cff4a3ba29e36
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 0fbd1e3cffcad8abd24b0123c49765283bc0fdb8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26006206"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398674"
 ---
 # <a name="troubleshooting-edi-and-as2-solutions"></a>EDI 和 AS2 解决方案的疑难解答
-本部分中的主题介绍在 BizTalk Server 中的 EDI 和 AS2 解决方案的已知的问题，并且描述了可用于确定和解决可能发生的 EDI 和 AS2 解决方案中的问题的常见故障排除步骤。  
+在本部分中的主题介绍了 BizTalk Server 中的 EDI 和 AS2 解决方案已知的问题，并介绍可用于确定和解决 EDI 和 AS2 解决方案中可能出现的问题的常见故障排除步骤。  
   
 ## <a name="in-this-section"></a>本节内容  
   

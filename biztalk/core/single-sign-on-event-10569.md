@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10569 |Microsoft Docs
+title: 单一登录：事件 10569 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 25665947921bb316a4d931228016eaf917b4a685
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 21e3c6e7650e61af9811cd58542a7a4d2b6204af
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987198"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398755"
 ---
-# <a name="single-sign-on-event-10569"></a>单一登录： 事件 10569
+# <a name="single-sign-on-event-10569"></a>单一登录：事件 10569
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                                        |
@@ -28,12 +28,12 @@ ms.locfileid: "36987198"
 | 产品版本 |                                                                       [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                       |
 |    事件 ID     |                                                                                                 10569                                                                                                  |
 |  事件源   |                                                                                                 ENTSSO                                                                                                 |
-|    组件    |                                                                                                  N/A                                                                                                   |
+|    组件    |                                                                                                  不可用                                                                                                   |
 |  符号名称  |                                                                                    SSO_WARN_NO_UPDATE_BY_APP_ADMIN                                                                                     |
-|  消息正文   | 不能由应用程序管理员更改应用程序管理员帐户。%r<br /><br /> 应用程序名称: %1 %r<br /><br /> 应用程序管理员: %2 %r<br /><br /> 错误代码： %3 |
+|  消息正文   | 应用程序 Administrator.%r 不能更改应用程序管理员帐户<br /><br /> 应用程序名称: %1 %r<br /><br /> 应用程序管理员: %2 %r<br /><br /> 错误代码： %3 |
   
 ## <a name="explanation"></a>解释  
  不能由应用程序管理员更改应用程序管理员帐户。  
   
 ## <a name="user-action"></a>用户操作  
- 您必须是 SSO 关联应用程序管理员或拥有更高权限，才能更改应用程序管理员帐户。
+ 您必须是一个 SSO 关联应用程序管理员或更高版本来更改应用程序管理员帐户。

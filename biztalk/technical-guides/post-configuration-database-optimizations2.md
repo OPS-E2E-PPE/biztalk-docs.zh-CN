@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8489d69489a23d6c81efb8443cccbb40c7a357ea
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a695dfac03a36cf7d51c5da7ba71fc1b94c688f3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993790"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398535"
 ---
 # <a name="post-configuration-database-optimizations"></a>配置后数据库优化
 除了遵循中的建议，还[预配置数据库 Optimizations2](../technical-guides/pre-configuration-database-optimizations2.md)，应遵循的几个步骤以优化 SQL Server 上的 BizTalk Server 数据库性能*后*安装 BizTalk Server 和 BizTalk Server 数据库已配置。 本主题提供了一系列这些优化。  
@@ -25,15 +25,15 @@ ms.locfileid: "36993790"
 ## <a name="consider-setting-the-text-in-row-table-option-on-specific-messagebox-database-tables"></a>请考虑设置上特定 MessageBox 数据库表的 'text in row 表选项  
  SQL Server 提供了一个名为的表选项**行中的文本**声明的类型的字段的内容**文本**， **ntext**，或者**映像**必须在数据行中存储的数据的维度较小的数据页 (8 Kb)。 通过设置此选项在 BizTalkMsgBoxDb 表 （Parts 表中，后台处理表和 DynamicStateInfo 表），可以使用具有小的上下文和业务流程具有小型持久性大小的小消息时增加消息吞吐量。  
   
-- **部件表**： 如果消息大小小于 8 kb 的数据页的尺寸，应用**行中的文本**在部件表上的表选项可能会导致 BizTalk Server 性能改进。 在部件表包含以下字段：  
+- **部件表**:如果消息大小小于 8 kb 的数据页的尺寸，应用**行中的文本**在部件表上的表选项可能会导致 BizTalk Server 性能改进。 在部件表包含以下字段：  
   
-  - **ImgPart**： 包含消息部分或消息部分片段。  
+  - **ImgPart**:包含消息部分或消息部分片段。  
   
-  - **ImgPropBag**： 包含消息部分属性包。  
+  - **ImgPropBag**:包含消息部分属性包。  
   
     这样一来，当遍历对 MessageBox，BizTalk 主机中运行的消息代理可以检索一批消息部件表中通过读取少量页面。 具体取决于特定方案和硬件配置中，此方法可以降低 CPU 使用率在 SQL Server 和 BizTalk Server 中，并提供在延迟和吞吐量方面的重大进步。  
   
-- **假脱机表**： 当消息上下文的平均大小小于 8 kb 时，启用**行中的文本**上后台处理表的表选项可帮助您从沿 MessageBox 中读取消息时减少访问次数连同其上下文。 若要将此选项应用于后台处理表，必须消除不必要的上下文属性和可分辨的字段，以减小大小小于 8 Kb 的消息上下文。  
+- **假脱机表**:当消息上下文的平均大小小于 8 kb 时，启用**行中的文本**上后台处理表的表选项可帮助您从 MessageBox 连同其上下文中读取消息时减少访问次数。 若要将此选项应用于后台处理表，必须消除不必要的上下文属性和可分辨的字段，以减小大小小于 8 Kb 的消息上下文。  
   
 - **DynamicStateInfo 表**这些表，一个用于每个主机包含名为包含二进制序列化业务流程的状态，在其执行期间遇到持久点时的 imgData 映像类型的字段。 当业务流程主机 HostA 内的内部状态是非常小的一次序列化其大小为不超过 8 kb，**行中的文本**方法可以成功应用于 DynamicStateInfo_HostA 表。 因此我们建议您使业务流程的内部状态尽可能小。 此技术可以显著减少 XLANG 引擎进行序列化、 保留、 反序列化和还原业务流程持久化点时的内部状态所用的时间。  
   
@@ -56,9 +56,9 @@ ms.locfileid: "36993790"
   
 - **BizTalk DTADB （BizTalk 跟踪数据库文件）：** 数据文件的文件大小为 2048 MB，增长 100 MB 具有和 1024 MB 的日志文件，增长 100 MB。  
   
-- **BizTalkMgmtdb （BizTalk 管理数据库文件）：** 具有 512 MB 和增长 100 MB 的文件大小和 512 MB 的日志文件，增长 100 MB 的数据文件。  
+- **BizTalkMgmtdb （BizTalk 管理数据库文件）：** 数据文件的文件大小为 512 MB，增长 100 MB 具有和 512 MB 的日志文件，增长 100 MB。  
   
-- **SSODB:** 具有 512 MB 和增长 100 MB 的文件大小和 512 MB 的日志文件，增长 100 MB 的数据文件。  
+- **SSODB:** 数据文件的文件大小为 512 MB，增长 100 MB 具有和 512 MB 的日志文件，增长 100 MB。  
   
 - **BizTalkMsgBoxDb （BizTalk MessageBox 数据库）：** 8 个数据文件，每个都有 2 GB，带有增长 100 MB 的文件大小和 20 gb 具有增长 100 MB 的日志文件。 由于 BizTalk MessageBox 数据库都是最活跃的我们建议将数据文件和事务日志文件上专用的驱动器，以减少磁盘 I/O 争用问题的可能性。 在我们的实验室环境，我们使用一个驱动器的以下各项：  
   

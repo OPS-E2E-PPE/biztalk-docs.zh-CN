@@ -18,25 +18,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fe1645ecaff4cea4f153c988188fa7f47e94959c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9b05300b3fc4597632a54326ead5ac550a4bb8c2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969118"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399271"
 ---
 # <a name="running-orchestrations"></a>运行业务流程
-以下过程介绍如何生成、部署、绑定和启动业务流程。  
+以下过程介绍如何生成、 部署、 绑定和启动业务流程。  
   
 ## <a name="creating-a-strong-name-key"></a>创建强名称密钥  
   
 #### <a name="to-create-a-strong-name-key"></a>若要创建一个强名称密钥  
   
-1. 启动 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 命令提示符。  
+1. 启动[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]命令提示符。  
   
 2. 例如，将目录更改为现有项目中，\<驱动器\>: \Adapter_Install\biztalk2010\my_project。  
   
-3. 在命令提示符中键入以下内容并按 Enter：  
+3. 在命令提示符下键入以下内容并按 ENTER:  
   
     `sn -k SSOSchedule.snk`  
   
@@ -60,12 +60,12 @@ ms.locfileid: "36969118"
   
 #### <a name="to-start-the-orchestration"></a>若要启动的业务流程  
   
-1.  在 BizTalk 管理控制台中，选择要启动的业务流程。  
+1.  在 BizTalk 管理控制台中，选择你想要启动的业务流程。  
   
 2.  右键单击该业务流程，然后单击**启动**。  
   
 ## <a name="stopping-and-restarting-a-host-instance"></a>停止并重新启动主机实例  
- 部署示例后，必须重新启动主机实例。  
+ 部署示例后, 必须重新启动主机实例。  
   
 #### <a name="to-stop-and-restart-a-host-instance"></a>若要停止并重新启动主机实例  
   

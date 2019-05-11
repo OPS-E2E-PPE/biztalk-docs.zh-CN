@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e2b79e2a0d7e4758ac87503f4bfac122c9ee215
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5c275e1f8c6d4ae4b4e7eb0819f56cdf9b26418a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994782"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399335"
 ---
 # <a name="best-practices-for-managing-certificates"></a>管理证书的最佳实践
 本部分提供有关在 Microsoft BizTalk Server 环境中管理证书的最佳实践。  
@@ -25,32 +25,32 @@ ms.locfileid: "36994782"
 ## <a name="assess-and-plan-your-use-of-certificates"></a>评估和规划证书的使用  
  **进行威胁模型分析您的环境**  
   
-- 对您的环境进行威胁模型分析可以确定签名证书和加密证书是否有助于缓解安全威胁。  
+- 进行威胁模型分析 (TMA) 的你的环境以确定是否签名或加密的证书将帮助您缓解安全威胁。  
   
   **创建与合作伙伴的公钥证书计划**  
   
-- 创建发送到的公钥证书和从合作伙伴接收的公钥证书的计划。 如果您不准备使用签名证书进行参与方解析，则公共证书可以附加到消息上，在此情况下，您无需事先在系统中复制证书。  
+- 创建发送到的公钥证书和从合作伙伴接收的公钥证书的计划。 如果不使用签名证书进行参与方解析，公共证书可以附加到消息中，在这种情况下不需要证书的副本在系统中事先。  
   
   **指导原则与合作伙伴建立提交公钥的**  
   
-- 在与合作伙伴达成的服务级别协议 (SLA) 中，建立提交公钥的准则以及在他们的证书即将过期或要吊销证书时通知您。  
+- 过程与您的合作伙伴的服务级别协议 (SLA) 中，建立提交公钥，通知你证书即将过期，并吊销证书时通知您的准则。  
   
 ## <a name="install-certificates"></a>安装证书  
  **在设置的时间间隔下载证书吊销列表**  
   
-- 以固定的时间间隔从证书颁发机构 (CA) 下载证书吊销列表 (CRL)。 建议每周进行一次。 对于 BizTalk Server 所加入的域，如果有 CA 存在，则将自动下载 CRL。  
+- 在设置的时间间隔下载证书吊销列表 (CRL) 从证书颁发机构 (CA)。 我们建议执行此操作每周一次。 如果没有为 BizTalk server 已加入的域的 CA，将会自动下载 Crl。  
   
   **验证签名证书**  
   
-- 确保根据证书吊销列表来验证签名证书。 有关如何验证签名证书的详细信息，请参阅[如何配置 MIME/SMIME 解码器管道组件](http://go.microsoft.com/fwlink/?LinkId=155145)(<http://go.microsoft.com/fwlink/?LinkId=155145>) 中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助。  
+- 请确保验证签名证书对证书吊销列表。 有关如何验证签名证书的详细信息，请参阅[如何配置 MIME/SMIME 解码器管道组件](http://go.microsoft.com/fwlink/?LinkId=155145)(<http://go.microsoft.com/fwlink/?LinkId=155145>) 中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助。  
   
   **管理证书与合作伙伴**  
   
-- 将证书管理作为您的合作伙伴管理实践的一部分。 在 BizTalk Server 环境中添加或删除参与方时，建议您添加或删除与该合作伙伴相关联的各个证书。  
+- 使证书管理属于您的合作伙伴管理实践。 当添加或删除参与方从 BizTalk Server 环境时，我们建议您添加或删除与该合作伙伴相关联的证书。  
   
   **删除主机实例前删除证书**  
   
-- 在从 BizTalk Server 中删除主机实例前，先删除运行该主机实例的帐户的个人存储中的证书。  
+- 从 BizTalk server 中删除主机实例之前, 在其下运行的主机实例的帐户的个人存储中删除的证书。  
   
 ## <a name="configure-biztalk-server-to-use-certificates-for-mimesmime"></a>配置 BizTalk Server 以便使用 MIME/SMIME 证书  
  **避免拒绝服务攻击的数字签名**  
@@ -62,7 +62,7 @@ ms.locfileid: "36994782"
   
   **创建单独的加密和未加密消息接收位置**  
   
-- 如果计划从某些合作伙伴接收 MIME 加密的消息而从其他合作伙伴接收未加密的消息，请在不同主机上为加密消息和未加密消息创建单独的接收位置。 要得到仅 MIME 加密的消息，请配置允许非 MIME 消息选项在解码 MIME/SMIME 管道组件中为 no。  
+- 如果你计划从某些合作伙伴和未加密的消息从其他合作伙伴接收 MIME 加密的消息，请创建单独的加密和未加密消息的不同主机中的接收位置。 要得到仅 MIME 加密的消息，请配置允许非 MIME 消息选项在解码 MIME/SMIME 管道组件中为 no。  
   
 ## <a name="configure-a-biztalk-adapter-to-use-certificates"></a>配置为使用证书的 BizTalk 适配器  
  **测试与目标网站的连接**  

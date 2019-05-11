@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 40f7ae950a7078152d2952fb72ebe39303d41813
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c556c0fbf73ba6baaa72a0860799126b59070a0a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998806"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400618"
 ---
 # <a name="troubleshooting-performance-issues"></a>故障排除性能问题
 本部分包含诊断的一般准则，解决性能问题与[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]及其依赖项。 这些准则可能还用于抢先，关键问题之前找出潜在问题。  
@@ -31,7 +31,7 @@ ms.locfileid: "36998806"
   
 - 性能[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]承载[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库。  
   
-- 发送适配器或正接收此适配器发送的文档的系统。 例如，如果以非最优速率 SQL 适配器发送文档然后问题可能是与 SQL 发送适配器或运行的计算机[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]更新 SQL 适配器。  
+- 发送适配器或适配器正在发送到的文档的系统。 例如，如果以非最优速率 SQL 适配器发送文档然后问题可能是与 SQL 发送适配器或运行的计算机[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]更新 SQL 适配器。  
   
   使用以下准则来帮助识别的各组件[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]较差的环境：  
   
@@ -39,7 +39,7 @@ ms.locfileid: "36998806"
   
 - 在按照"识别性能瓶颈"中的步骤[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助[ http://go.microsoft.com/fwlink/?LinkId=154238 ](http://go.microsoft.com/fwlink/?LinkId=154238)来帮助确定性能瓶颈。  
   
-  确定了性能较差的组件后，请遵循以下相应的准则来帮助解决问题：  
+  一旦确定差的组件，请执行相应的准则来帮助解决此问题：  
   
   **解决相关来发送和接收适配器的性能问题的准则**  
   

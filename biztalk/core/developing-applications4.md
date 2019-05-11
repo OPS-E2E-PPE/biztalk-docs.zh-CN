@@ -1,6 +1,6 @@
 ---
-title: 为 PeopleSoft 的企业创建应用程序项目 |Microsoft 文档
-description: 在 BizTalk Server 管理和 Visual Studio BizTalk 适配器用于 BizTalk Server 中的 PeopleSoft 企业中创建项目
+title: 用于 PeopleSoft Enterprise 中创建应用程序项目 |Microsoft Docs
+description: 在 BizTalk Server 管理和 Visual Studio 以使用 BizTalk Server 中的 PeopleSoft Enterprise 的 BizTalk 适配器中创建的项目
 ms.custom: ''
 ms.date: 10/19/2017
 ms.prod: biztalk-server
@@ -13,15 +13,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f5c2a273fe09fe02ff2c32749ff1dba270fafa0a
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 1536f0dc6b54bcb44d2b5cc1e9a502951c3562fa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24014668"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389377"
 ---
 # <a name="create-your-application"></a>创建你的应用程序
-本部分包含的开发人员想要创建 BizTalk 服务器应用程序和使用的 BizTalk Adapter PeopleSoft 企业的信息。 一旦创建了这些应用程序，然后就可以使用[添加异常处理](../core/using-biztalk-server-exception-handling2.md)到您的业务流程。 
+本部分包含的开发人员想要创建 BizTalk Server 应用程序和使用适用于 PeopleSoft Enterprise 的 BizTalk 适配器的信息。 一旦创建了这些应用程序，然后就可以使用[添加异常处理](../core/using-biztalk-server-exception-handling2.md)向业务流程。 
 
 
 ## <a name="next-steps"></a>后续步骤

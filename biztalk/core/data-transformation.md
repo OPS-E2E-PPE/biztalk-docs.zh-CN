@@ -19,12 +19,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4366e37d206902ec3aff5e016c02c4bd721da5b6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 570f3582fa13c116039f7ff965b72b14de84cc56
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015951"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389782"
 ---
 # <a name="data-transformation"></a>数据转换
 映射数据依赖于数据转换。  

@@ -1,5 +1,5 @@
 ---
-title: 与 MSMQ 适配器的消息的有序传送 |Microsoft 文档
+title: 按序送达使用 MSMQ 适配器的消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,25 +15,25 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ac842fcd1e9b386fa885844f3a797504ed7c4c3d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 54395febdadb62584d0a8d6422b9fd05ab3821d6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263581"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65322274"
 ---
-# <a name="ordered-delivery-of-messages-with-the-msmq-adapter"></a>与 MSMQ 适配器的消息的有序传送
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]提供**按序送达**选项适用于静态发送端口。 设置**按序送达**到发送端口上的选项**True**可确保 BizTalk 服务器将消息传送到发送端口与它们发布到 MessageBox 数据库相同的顺序。 为提供端对端的按序送达功能，必须满足以下条件：  
+# <a name="ordered-delivery-of-messages-with-the-msmq-adapter"></a>按序送达消息使用 MSMQ 适配器
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 提供了**按序送达**选项适用于静态发送端口。 设置**按序送达**上的发送端口选项**True**可确保 BizTalk Server 向发送端口在发布到 MessageBox 数据库的相同顺序传送消息。 若要提供端到端按序的送达必须满足以下条件:  
   
--   接收消息的适配器必须保持消息提交给 BizTalk Server 时的顺序。  
+-   必须与适配器提交给 BizTalk Server 时保留消息的顺序接收消息。  
   
--   您必须订阅拥有的发送端口与这些消息**按序送达**选项设为**True**。  
+-   您必须订阅这些消息与发送端口都**按序送达**选项设为**True**。  
   
--   如果业务流程用于的处理应使用的消息，仅业务流程的单个实例，应将业务流程配置为使用顺序保护和**按序送达**属性业务流程的接收端口应设置为**True**。  
+-   如果业务流程来的处理消息，只能运行一个业务流程实例应使用，该业务流程应配置为使用顺序保护，并**按序送达**属性业务流程的接收端口应设置为 **，则返回 True**。  
   
-## <a name="using-the-msmq-adapter-for-ordered-delivery-of-messages"></a>为有序的消息传递使用 MSMQ 适配器  
- MSMQ 接收适配器可以保持消息提交给 BizTalk Server 时的顺序。 端到端顺序接收消息使用 MSMQ 适配器，如果通过使用配置发送端口处理消息时可以获得的传递消息通过 BizTalk Server**按序送达**选项设置为**True**。  
+## <a name="using-the-msmq-adapter-for-ordered-delivery-of-messages"></a>使用 MSMQ 适配器按序送达消息  
+ MSMQ 接收适配器提交给 BizTalk Server 中时保留消息的顺序提供支持。 端到端地按序送达消息通过 BizTalk Server 可以使用 MSMQ 适配器中如果通过使用配置的发送端口处理消息接收消息**按序送达**选项设置为**True**。  
   
-## <a name="see-also"></a>另请参阅  
- [有序的消息传送](../core/ordered-delivery-of-messages.md)   
+## <a name="see-also"></a>请参阅  
+ [按序送达消息](../core/ordered-delivery-of-messages.md)   
  [如何配置 MSMQ 接收位置](../core/how-to-configure-an-msmq-receive-location.md)

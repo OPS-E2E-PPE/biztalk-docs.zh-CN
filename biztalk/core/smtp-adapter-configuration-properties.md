@@ -1,5 +1,5 @@
 ---
-title: SMTP 适配器配置属性 |Microsoft 文档
+title: SMTP 适配器配置属性 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,36 +17,36 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8b8bb0c5562c07260a9d411b8144bd7a576eb3a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 740e3081e9b03dec725b02dd0107d9c8a1363b48
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279397"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401889"
 ---
 # <a name="smtp-adapter-configuration-properties"></a>SMTP 适配器配置属性
-下表列出了可为 SMTP 适配器发送端口设置的配置属性：  
+下表列出了发送端口可以设置为 SMTP 适配器的配置属性：  
   
 |属性名称|类型|Description|限制|注释|  
 |-------------------|----------|-----------------|------------------|--------------|  
-|DeliveryReceipt|VT_BOOL|指定在送达邮件后应发送确认电子邮件。|有效值为<br /><br /> --1 (true)<br />-0 (false)|默认值为 0 (false)。|  
-|From|VT_BSTR|指定在 SMTP“发件人”标题上显示的电子邮件地址。|最小长度：0<br /><br /> 最大长度：256|无|  
-|MessagePartsAttachments|VT_UI4|指定 BizTalk 消息部分如何附加到电子邮件。|有效值为<br /><br /> -0 （不附加任何消息部分）<br />-1 （附加唯一正文部分<br />-2 （附加所有部分）|默认值为 0（不附加消息部分）。|  
-|CC|VT_BSTR|指定邮件的抄送副本要发送到的电子邮件地址。|最大长度： 1024年|您可以指定多个地址。|  
-|SMTPAuthenticate|VT_UI4|有效值为<br /><br /> -0 （不验证）<br />-1 （基本身份验证）<br />-2 （进程帐户 (NTLM)）|如果未指定此值，则使用默认值。|默认值表示 SMTP 发送端口将使用发送处理程序中指定的配置值。|  
-|用户名|VT_BSTR|指定对 SMTP 服务器进行验证所使用的用户名。|除非 SMTPAuthenticate 属性设置为 -1（基本验证），否则此属性不需要值。<br /><br /> 最小长度：0<br /><br /> 最大长度：256|无|  
-|EmailBodyFileCharset|VT_BSTR|指定要发送的文件的字符集编码。|除非设置 EmailBodyFile 属性，否则此属性不需要值。|SMTP 适配器不将指定的编码应用于文件，此选项只用于指定发送的文件已经使用的编码方式。<br /><br /> 默认值为 utf-8。|  
-|EmailBodyText|VT_BSTR|指定将用于要发送的电子邮件正文的文本。|最大长度：64KB|无|  
-|ReadReceipt|VT_BOOL|指定在读取邮件后应发送确认电子邮件。|有效值为<br /><br /> --1 (true)<br />-0 (false)|默认值为 0 (false)。|  
-|若要|VT_BSTR|指定邮件要发送到的电子邮件地址。|无|无|  
-|EmailBodyFile|VT_BSTR|指定用于要发送的电子邮件的正文的文件的路径。|最大路径长度：256 个字符|它是建议的最佳做法来从要在生产中使用的 BizTalk Server 组中的所有 BizTalk 服务器可访问的文件共享上指定的路径。|  
-|主题|VT_BSTR|指定邮件的主题。|最小长度：0<br /><br /> 最大长度：256|无|  
-|密码|VT_NULL|指定对 SMTP 服务器进行验证所使用的密码。|此属性不需要一个值，除非 SMTPAuthenticate 属性设置为 1 （基本身份验证）。<br /><br /> 此值在导出绑定文件时始终设置为空。 在将绑定文件导入目标 BizTalk Server 配置前，必须手动在此字段中填充密码。|无|  
-|Attachments|VT_BSTR|指定附加到要发送的电子邮件的文件的路径。|最大路径长度：256 个字符|无|  
-|SMTPHost|VT_BSTR|指定发送邮件时要使用的 SMTP 服务器的名称。|发送端口或接收位置的 URI 不能超过 256 个字符。<br /><br /> 最大路径长度：256 个字符|无|  
-|EmailBodyTextCharset|VT_BSTR|指定将用于要发送的电子邮件正文编码的字符集。|除非设置 EmailBodyText 属性，否则此属性不需要值。|默认值为 utf-8。|  
+|DeliveryReceipt|VT_BOOL|指定在传递消息时，应发送确认电子邮件。|有效值为<br /><br /> -   -1 (true)<br />-0 (false)|默认值为 0 (false)。|  
+|From|VT_BSTR|指定的电子邮件地址，将 SMTP 从标头。|最小长度：0<br /><br /> 最大长度：256|None|  
+|MessagePartsAttachments|VT_UI4|指定 BizTalk 消息部分如何附加到电子邮件。|有效值为<br /><br /> -0 （不附加消息部分）<br />-1 （仅附加正文部分<br />-2 （附加所有部分）|默认值为的 0 （不附加消息部分）。|  
+|CC|VT_BSTR|指定要发送邮件的抄送电子邮件地址。|最大长度：1024|可以指定多个地址。|  
+|SMTPAuthenticate|VT_UI4|有效值为<br /><br /> -0 （不验证）<br />-1 （基本身份验证）<br />-2 （进程帐户 (NTLM)）|如果未指定此值被应用的 （默认值） 值。|（默认值） 值表示 SMTP 发送端口将使用发送处理程序中指定的配置值。|  
+|用户名|VT_BSTR|指定要用于 SMTP 服务器的身份验证的用户名。|此属性不需要一个值，除非 SMTPAuthenticate 属性设置为 1 （基本身份验证）。<br /><br /> 最小长度：0<br /><br /> 最大长度：256|None|  
+|EmailBodyFileCharset|VT_BSTR|指定要发送的文件的编码的字符集。|此属性不需要一个值，除非设置 EmailBodyFile 属性。|SMTP 适配器不适用于指定编码的文件，此选项仅用于指定要发送的文件已编码的方式。<br /><br /> 默认值为 utf-8。|  
+|EmailBodyText|VT_BSTR|指定要用于发送的电子邮件的正文文本。|最大长度：64Kb|None|  
+|ReadReceipt|VT_BOOL|指定当读取消息时，应发送确认电子邮件。|有效值为<br /><br /> -   -1 (true)<br />-0 (false)|默认值为 0 (false)。|  
+|若要|VT_BSTR|指定要将消息发送的电子邮件地址。|None|None|  
+|EmailBodyFile|VT_BSTR|指定要用于发送电子邮件的正文的文件的路径。|最大路径长度：256 个字符|它是建议的最佳做法，若要指定可从要在生产中使用的 BizTalk Server 组中的所有 BizTalk 服务器访问的文件共享上的路径。|  
+|Subject|VT_BSTR|指定消息的使用者标头。|最小长度：0<br /><br /> 最大长度：256|None|  
+|Password|VT_NULL|指定要使用的 SMTP 服务器的身份验证的密码。|此属性不需要一个值，除非 SMTPAuthenticate 属性设置为 1 （基本身份验证）。<br /><br /> 此值始终设置为 null 时导出绑定文件。 此字段前，必须手动填充密码与绑定文件导入目标 BizTalk Server 配置。|None|  
+|Attachments|VT_BSTR|指定要附加到正在发送的电子邮件的文件的路径。|最大路径长度：256 个字符|None|  
+|SMTPHost|VT_BSTR|指定要发送消息时使用的 SMTP 服务器的名称。|URI 发送端口或接收位置不能超过 256 个字符。<br /><br /> 最大路径长度：256 个字符|None|  
+|EmailBodyTextCharset|VT_BSTR|指定要使用正在发送的电子邮件正文进行编码的字符集。|此属性不需要一个值，除非设置 EmailBodyText 属性。|默认值为 utf-8。|  
   
- 下面的代码演示使用设置的属性的 XML 字符串的格式：  
+ 下面的代码显示了使用设置的属性的 XML 字符串的格式：  
   
 ```  
 <CustomProps>  

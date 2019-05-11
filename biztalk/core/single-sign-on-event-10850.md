@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10850 |Microsoft Docs
+title: 单一登录：事件 10850 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0430d5d7ea3ff2a0fabf9c9698acffe15b644f24
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5bd240e9176465c431ca13a5069c3d510f7c2d1c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011358"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306667"
 ---
-# <a name="single-sign-on-event-10850"></a>单一登录： 事件 10850
+# <a name="single-sign-on-event-10850"></a>单一登录：事件 10850
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                     |
@@ -28,12 +28,12 @@ ms.locfileid: "37011358"
 | 产品版本 |     [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]      |
 |    事件 ID     |                                10850                                |
 |  事件源   |                               ENTSSO                                |
-|    组件    |                                 N/A                                 |
+|    组件    |                                 不可用                                 |
 |  符号名称  |                 ENTSSO_E_ENABLED_NOT_ALLOWED_CREATE                 |
-|  消息正文   | 不能创建已指定“已启用”标志的应用程序。 |
+|  消息正文   | 指定了已启用标志不能创建的应用程序。 |
   
 ## <a name="explanation"></a>解释  
- 启用应用程序前，需要先创建该应用程序，并为其每个字段（如，用户 ID 和密码）输入字段信息。 不能创建已设置“已启用”字段的应用程序。  
+ 启用应用程序前, 有必要，以创建应用程序并输入其每个字段 （即用户 Id 和密码） 的字段信息。 不能与"已启用"字段中创建的应用程序已设置。  
   
 ## <a name="user-action"></a>用户操作  
- 使用创建应用程序 API 或新建关联应用程序向导再次创建该应用程序。 应用程序创建完成并填充字段后，启用该应用程序。
+ 创建一次应用程序 （使用创建应用程序 API 或创建新关联应用程序向导）。 当应用程序已完成，字段填充，使应用程序。

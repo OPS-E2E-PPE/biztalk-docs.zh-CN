@@ -17,14 +17,14 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 47781b2b8add675207136248b38b0dadfe6b5610
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d90fded8882fffd8abc1c5729a4ccd69c2a448a9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023491"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243144"
 ---
-# <a name="specifying-soap-actions-for-wcf-send-adapters"></a>为 WCF 发送适配器指定 SOAP 操作
+# <a name="specifying-soap-actions-for-wcf-send-adapters"></a>指定 SOAP 操作，为 WCF 发送适配器
 可以设置**WCF。操作**上下文属性在 WCF 发送适配器传输属性对话框中或在业务流程**表达式**形状。 如果您设置**WCF。操作**业务流程中的上下文属性，您需要将**操作**字段留空，在 WCF 适配器传输属性对话框中的静态发送端口。 如果还在静态发送端口中指定的操作**WCF。操作**业务流程中设置的上下文属性将被重写。  
   
  此外，有两种方法来指定此属性： 单一操作格式和操作映射格式。 如果将此属性设置在单一操作格式 — 例如， http://MyService/IMyContract/MyAction1— WCF 中的 SOAP 操作发送适配器传输属性对话框中，为传出消息始终设置为此属性中指定的值。 或者，可以在业务流程中设置单一操作格式**表达式**形状。 例如，  
@@ -47,13 +47,13 @@ BtsActionMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd
   
  如果使用基于内容的路由 (CBR)，来路由传出消息**http://schemas.microsoft.com/BizTalk/2003/system-properties#Operation**属性未设置，则 WCF 发送适配器会将整个操作映射字符串设置为传出 WCF 消息的操作。 若要解决此问题，可以执行下列任一操作：  
   
-- 将操作字段设置为发送端口上http://MyService/IMyContract/MyAction1。  
+- 将操作字段设置为发送端口上 http://MyService/IMyContract/MyAction1。  
   
 - 设置**BTS。操作**管道中的上下文属性。 例如，设置的值**http://schemas.microsoft.com/BizTalk/2003/system-properties#Operation**为 Operation1。  
   
-- 将操作字段保留为空，改用传入消息中的操作。  
+- 保留操作字段为空，改为使用传入消息中的操作。  
   
-  您也可以通过 BizTalk WCF 服务使用向导来使用包含单一操作或操作映射的 WCF 服务。 有关更多详细信息，请参阅[如何使用 BizTalk WCF 服务使用向导来使用 WCF 服务](../core/how-to-use-the-biztalk-wcf-service-consuming-wizard-to-consume-a-wcf-service.md)。  
+  此外可以使用 BizTalk WCF 服务使用向导来使用 WCF 服务与单个操作或操作映射。 有关更多详细信息，请参阅[如何使用 BizTalk WCF 服务使用向导来使用 WCF 服务](../core/how-to-use-the-biztalk-wcf-service-consuming-wizard-to-consume-a-wcf-service.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [使用 WCF 适配器上下文属性配置动态发送端口](../core/configuring-dynamic-send-ports-using-wcf-adapters-context-properties.md)

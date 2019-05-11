@@ -1,5 +1,5 @@
 ---
-title: 嵌套业务流程 |Microsoft 文档
+title: 嵌套业务流程 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,22 +16,22 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4690aea9629e3e892e194167d8e5a5076725fdcc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4ec5b00d7355100e0ff8bc557a0fed792984a5ee
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263445"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65323605"
 ---
 # <a name="nesting-orchestrations"></a>嵌套业务流程
-你可以使用**调用 Orchestration**形状和**启动 Orchestration**形状来调用从另一个业务流程。 而且，可以对业务流程进行任意深度的嵌套：例如，被调用的业务流程可以调用第三个业务流程，而第三个业务流程还可以调用第四个业务流程，以此类推。  
+可以使用**调用业务流程**形状和**启动业务流程**形状来调用从另一个业务流程。 可以将业务流程进行任意深度的嵌套： 例如，调用的业务流程可以调用第三个业务流程，其可以调用第四个，依次类推。  
   
 ## <a name="in-this-section"></a>本节内容  
   
 -   [如何配置调用业务流程形状](../core/how-to-configure-the-call-orchestration-shape.md)  
   
--   [如何配置开始业务流程形状](../core/how-to-configure-the-start-orchestration-shape.md)  
+-   [如何配置启动业务流程形状](../core/how-to-configure-the-start-orchestration-shape.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何将参数添加到业务流程](../core/how-to-add-parameters-to-orchestrations.md)   
  [设计业务流程流](../core/designing-orchestration-flow.md)

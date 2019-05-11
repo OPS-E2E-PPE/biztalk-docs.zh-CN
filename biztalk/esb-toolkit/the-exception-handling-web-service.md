@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1bcc8146947f5e3cbaf58e31d1f515a055d102c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 924a8262c3ebe474f79c2c169f3fd58ed5e9e4fe
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974302"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399735"
 ---
 # <a name="the-exception-handling-web-service"></a>异常处理 Web 服务
 异常处理 Web 服务接受的错误消息，并将其发布到 ESB 异常门户。 客户端应用程序可以创建异常消息，并将其提交到 ESB，其中为该异常类型或泛型处理程序中，配置任何处理程序可以处理该异常。 此服务的主要好处是它允许参与 ESB 异常处理机制的 ESB 应用程序以外的实体。  

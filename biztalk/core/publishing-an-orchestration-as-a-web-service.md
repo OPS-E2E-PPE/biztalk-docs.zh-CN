@@ -1,5 +1,5 @@
 ---
-title: 发布作为 Web 服务业务流程 |Microsoft 文档
+title: 业务流程发布为 Web 服务 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,27 +19,27 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6b6d36f6c56851bfedcd522f96d01a8256232826
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b35f54c6aa850416029ad54b49de59178bcefd34
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269061"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398379"
 ---
-# <a name="publishing-an-orchestration-as-a-web-service"></a>将业务流程发布为 Web Service
-可以使用 BizTalk Web Services 发布向导将业务流程发布为 Web Services。 该向导基于 BizTalk 程序集中的业务流程创建 Web Services。 使用该向导，你可以选择用于发布 Web Services 的业务流程和接收端口。 你可以定义目标命名空间、SOAP 标头要求和该向导生成的 Web Services 项目的位置。  
+# <a name="publishing-an-orchestration-as-a-web-service"></a>业务流程发布为 Web 服务
+BizTalk Web Services 发布向导用于业务流程发布为 Web 服务。 该向导创建基于 BizTalk 程序集中的业务流程的 Web 服务。 使用该向导，选择业务流程和接收端口，以将 Web 服务发布。 可以定义目标命名空间、 SOAP 标头要求和该向导将生成 Web 服务项目的位置。  
   
- 在运行向导之前，必须编译包含要发布为 Web Services 的业务流程和架构的 BizTalk 程序集。  
+ 在运行向导之前，必须编译您的 BizTalk 程序集包含业务流程和你想要将发布为 Web 服务的架构。  
   
- 在运行 BizTalk Web 服务发布向导之前, 必须启用 Web 服务。 有关启用你的系统的 Web 服务的详细信息，请参阅[启用 Web 服务](../core/enabling-web-services.md)。  
+ 在运行 BizTalk Web Services 发布向导之前, 必须启用 Web services。 有关启用 Web services 为您的系统的详细信息，请参阅[启用 Web 服务](../core/enabling-web-services.md)。  
   
 > [!NOTE]
->  必须安装[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]发布作为 Web 服务业务流程之前。 你不需要安装 Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]。  
+>  必须安装[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]然后才能发布业务流程作为 Web 服务。 不需要安装 Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [如何映射到 Web 服务的业务流程](../core/how-to-map-orchestrations-to-web-services.md)  
+-   [如何将业务流程映射到 Web 服务](../core/how-to-map-orchestrations-to-web-services.md)  
   
--   [如何使用发布向导的 BizTalk Web 服务发布作为 Web 服务业务流程](../core/publish-orchestration-as-web-service--biztalk-web-services-publishing-wizard.md)  
+-   [如何使用 BizTalk Web Services 发布向导业务流程发布为 Web 服务](../core/publish-orchestration-as-web-service--biztalk-web-services-publishing-wizard.md)  
   
--   [如何从作为 Web 服务发布的业务流程引发 SOAP 异常](../core/how-to-throw-soap-exceptions-from-orchestrations-published-as-a-web-service.md)
+-   [如何从发布为 Web 服务的业务流程引发 SOAP 异常](../core/how-to-throw-soap-exceptions-from-orchestrations-published-as-a-web-service.md)

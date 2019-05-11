@@ -12,14 +12,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 76aa238227877ab70328e585d5d12b8c428e9061
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5b469e319c1e93fcdfa7a330fe29a1dcde55a4a3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983319"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65250995"
 ---
-# <a name="send-errors"></a>发送错误
+# <a name="send-errors"></a>将错误发送
 诊断和解决 WCF 发送错误的信息。  
   
 ## <a name="failed-to-generate-odx-file"></a>生成 ODX 文件失败
@@ -52,11 +52,11 @@ ms.locfileid: "36983319"
 |  事件源   |                                              0                                              |
 |    组件    |                                              0                                              |
 |  符号名称  |                                              0                                              |
-|  消息正文   | 未读取响应消息正文（这可能表示连接已关闭）。 |
+|  消息正文   | 未读取响应消息正文 （这可能表示连接已关闭。） |
   
 ### <a name="explanation"></a>解释  
- 发回响应消息之前，客户端可能已断开连接。  
+ 响应消息发回之前，客户端可能会断开连接。  
   
 ### <a name="user-action"></a>用户操作  
- 检查客户端连接。 所采取的步骤和操作的范围取决于端口类型。   
+ 检查客户端连接。 所执行的步骤和操作的范围将取决于端口类型。   
 有关详细信息，请参阅[工具和实用程序用于故障排除](../core/tools-and-utilities-to-use-for-troubleshooting.md)。

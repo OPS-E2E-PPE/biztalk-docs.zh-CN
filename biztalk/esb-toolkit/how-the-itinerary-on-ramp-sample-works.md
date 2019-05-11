@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6f282e49b8095059b273bd737d6fb38ff97090f5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4f52d8442f777d67b31b99c4fef336d6a5e71f60
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966062"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400775"
 ---
 # <a name="how-the-itinerary-on-ramp-sample-works"></a>路线接入点示例工作原理
 示例路线测试客户端应用程序生成的 SOAP 标头包含在客户端应用程序窗口中，使用控件创建路线的一组从磁盘加载指定的消息文件、 路线标头附加到消息，并将其提交给 ESB 通过路线接入点进行处理。 如果路线时都生成响应，应用程序收集响应，并将其显示在应用程序窗口。  

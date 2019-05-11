@@ -1,5 +1,5 @@
 ---
-title: 安装使用安装脚本动态解析示例 |Microsoft 文档
+title: 安装动态解析示例使用安装脚本 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,37 +12,37 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 872bb73b9060e25986876c1c2da71afae84b5c52
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 7a2ecbfcf38046a9ad9f4ca2fa7c360f2f5b50a1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25973139"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400308"
 ---
-# <a name="install-the-dynamic-resolution-sample-using-the-install-scripts"></a>安装使用安装脚本动态解析示例
+# <a name="install-the-dynamic-resolution-sample-using-the-install-scripts"></a>安装动态解析示例使用安装脚本
 本部分介绍如何从提供的安装脚本安装动态解析示例[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。  
   
  **若要从安装脚本安装动态解析示例**  
   
-1.  如果你想要执行使用 FTP 的单向消息传送示例，请创建以下 FTP 站点：  
+1.  如果你想要执行使用 FTP 的单向消息传送示例，创建以下 FTP 站点：  
   
-    -   FTP 虚拟目录名称： 出  
+    -   FTP 虚拟目录名称：扩展  
   
-    -   位置： \Source\Samples\DynamicResolution\Test\FTP\Out  
+    -   Location: \Source\Samples\DynamicResolution\Test\FTP\Out  
   
-    -   权限： 读取和写入  
+    -   权限：读取和写入  
   
-    -   确保 BizTalk 应用程序用户组具有此位置的完全访问权限  
+    -   确保 BizTalk Application Users 组具有此位置的完全访问权限  
   
-2.  如果你想要执行使用 MQSeries 的双向消息传送示例，使用 WebSphere 资源管理器创建以下：  
+2.  如果你想要执行使用 MQSeries 的双向消息传送示例，使用 WebSphere 资源管理器中创建以下：  
   
     -   具有名称 ESB 队列管理器。DEP。Sample.QueueManager  
   
-    -   名为测试的队列。OUT ESB 内。DEP。Sample.QueueManager  
+    -   队列名为 TEST。带内 ESB。DEP。Sample.QueueManager  
   
 3.  在 **“开始”** 菜单上，单击 **“运行”**。  
   
-4.  在**运行**对话框中，键入**cmd**，然后按 ENTER 以打开命令提示符。  
+4.  在中**运行**对话框中，键入**cmd**，然后按 ENTER 以打开命令提示符。  
   
 5.  运行以下命令，替换\<路径\>参数替换为你想要安装的.cmd 文件的完整路径 (在此版本中的默认路径是 \Source\Samples\DynamicResolution\Install\Scripts\\):  
   

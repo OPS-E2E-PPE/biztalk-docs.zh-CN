@@ -15,23 +15,23 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 61e9302d2f3178e457a5ed57353e77eac0909d32
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1516cab2ac18000fd010bf48fcc140512b67dffc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014134"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390290"
 ---
 # <a name="defining-business-activities-and-views-in-excel"></a>在 Excel 中定义业务活动和视图
-创建任何 BAM 解决方案的第一步都是确定感兴趣的数据以及如何解释这些数据。 为此，可使用适用于 Excel 的 BAM 外接程序。 使用该外接程序，可以通过定义业务活动来确定要使用的感兴趣数据的列表。 还可以定义数据的解释方式以及呈现给不同类别的业务用户时的显示方式。  
+创建任何 BAM 解决方案的第一步是确定感兴趣的哪些数据以及应如何解释这些数据。 若要执行此操作，您使用 BAM 外接程序 excel。 外接程序，可通过定义业务活动来定义所需的数据的愿望。 此外可以为不同类别的业务用户定义数据的解释方式以及所示的方式。  
   
- 使用 BAM 外接程序还可以定义聚合。  
+ BAM 外接程序还可以定义聚合。  
   
- 您还能够重命名活动项，例如，在某些用户熟悉的术语与活动中相应数据项的名称不匹配时需要重命名。 原因之一可能是视图的语言不同。  
+ 此外可以重命名活动项，例如，其中，某些用户熟悉的术语与活动中的相应数据项的名称不匹配。 有关这一种解释是视图所在不同的语言。  
   
- 完成活动定义后，Excel 将生成随机预览数据，使用这些数据可以定义需要的图表和其他表示形式。 有关预览数据的详细信息，请参阅[如何使用该数据透视表](../core/how-to-use-the-pivottable.md)。  
+ 完成活动定义后，Excel 将生成随机预览数据，可用于定义所需的图表和其他表示形式。 有关预览数据的详细信息，请参阅[如何使用该数据透视表](../core/how-to-use-the-pivottable.md)。  
   
- 完成的活动定义可定义业务流程运行过程中需要收集的数据点和事件。 您可以通过各种渠道获得 BAM 外接程序。  
+ 已完成的活动定义用于定义数据点和业务流程运行时收集所需的事件。 可以从各种源获取 BAM 外接程序。  
   
  你可以安装在过程外接程序 XLA BAM[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装。 有关详细信息，请参阅[BizTalk Server 2013 和 2013 R2 安装概述](http://msdn.microsoft.com/library/8041926c-cfc9-4eaf-9c28-a2c6e8015bc5)  
   
@@ -41,18 +41,18 @@ ms.locfileid: "37014134"
   
 - 如果安装 Microsoft Office，则将 BAM.xla 安装中 \Program Files\Microsoft 网络*xx*\Library\ 文件夹。  
   
-  还可以从其他计算机上的共享文件夹将 BAM.xla 复制到您的计算机。 然后通过从要复制到的位置选择它以便注册 XLA。  
+  此外可以从另一台计算机上的共享文件夹到您的计算机复制将 BAM.xla。 然后可以通过从复制到其中的位置选择它来注册 XLA。  
   
   若要启用 BAM 外接程序在 Excel 菜单工具栏上，单击**文件**菜单，然后单击**选项**，然后单击**外接程序**。选择**业务活动监视**，然后单击**转**，在 Ad 接窗口中，选中复选框旁边**业务活动监视**，然后单击**确定**。  
   
 > [!NOTE]
->  使用 BAM 外接程序可避免两个正在运行的 Excel 实例被加载到同一进程中。  使用外接程序时，在以下情况下会在同一进程中出现多个实例：  
+>  使用 BAM 外接程序，不能包含两个实例加载到同一进程中运行 Excel。  当使用外接程序，在同一进程中的多个实例可能会发生以下情况下：  
 >   
->  打开一个 Excel 电子表格后，又启用了 BAM 外接程序，然后双击另一个 Excel 电子表格，Excel 会尝试将电子表格加载到当前正在运行的实例。  
+>  具有的 Excel 电子表格打开与 BAM 外接程序启用时，并双击不同的 Excel 电子表格，Excel 尝试将电子表格加载到当前正在运行的实例。  
 >   
->  打开一个 Excel 电子表格后，又启用了 BAM 外接程序，这时使用“文件”/“打开”菜单选项加载另一个 Excel 电子表格。  
+>  Excel 电子表格打开后，使用 BAM 外接程序已启用，并使用文件 / 打开菜单选项加载另一个 Excel 电子表格。  
   
- 在这种情况下，您不能正常使用外接程序。 若要在启用 BAM 外接程序的情况下打开多个 Excel 电子表格，必须先打开一个 Excel 的新副本，然后将电子表格加载到该 Excel 实例中。  
+ 您不能使用外接程序正确地在这种情况下。 若要打开多个 Excel 电子表格具有 BAM 外接程序启用时，必须打开 Excel 的新副本并将电子表格加载到该 Excel 实例。  
   
 > [!NOTE]
 >  在 Excel 中使用 BAM.xla 时，你可能会收到错误"此工作簿已丢失了其 VBA 项目、 ActiveX 控件和任何其他与可编程序相关的功能。" 有关错误的详细信息，请参阅[故障排除 BAM](../core/troubleshooting-bam.md)。  

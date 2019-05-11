@@ -1,5 +1,5 @@
 ---
-title: 如何： 验证使用 ESB 接入点的消息 |Microsoft Docs
+title: 如何：验证使用 ESB 接入点的消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 62df8ec8628353aa127ed6cde8380e5724ddf12a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2c441d3d67cde0cc4c3243a085623adb9cdb349b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37020565"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400112"
 ---
-# <a name="how-to-validate-a-message-using-an-esb-on-ramp"></a>如何： 验证使用 ESB 接入点的消息
+# <a name="how-to-validate-a-message-using-an-esb-on-ramp"></a>如何：验证使用 ESB 接入点的消息
 ## <a name="goal"></a>目的  
  本部分演示如何配置 ESB 调度程序反汇编管道组件来执行消息验证的 XML 消息提交到 ESB 接入点。  
   
@@ -33,7 +33,7 @@ ms.locfileid: "37020565"
   
 -   测试使用了有效的消息和一个无效的消息的消息验证。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  本操作指南主题中的过程要求在完成[开发活动的先决条件](../esb-toolkit/prerequisites-for-the-development-activities.md)。  
   
 ## <a name="before-you-begin"></a>开始之前  
@@ -172,7 +172,7 @@ ms.locfileid: "37020565"
   
     3.  单击**DocumentSpecNames**属性，并键入完全限定名称的架构。 完全限定的名名称开头且后跟一个逗号和在步骤中提取的程序集信息。 以下是一个示例：  
   
-         GlobalBank.ESB.DynamicResolution.Schemas.NAOrderDoc，GlobalBank.ESB.DynamicResolution.Schemas，版本 = 2.0.0.0，区域性 = 中性，PublicKeyToken = c2c8b2b87f54180a  
+         GlobalBank.ESB.DynamicResolution.Schemas.NAOrderDoc, GlobalBank.ESB.DynamicResolution.Schemas, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c2c8b2b87f54180a  
   
         > [!NOTE]
         >  这是架构的要进行验证，则的完全限定的名称它包含的架构名称和四个程序集属性： 程序集名称、 版本、 区域性和公钥标记。 允许多个值;使用竖线分隔多个架构 (&#124;) 符号。  
@@ -229,7 +229,7 @@ ms.locfileid: "37020565"
 ## <a name="additional-resources"></a>其他资源  
  有关详细信息，请参阅下列相关主题：  
   
--   [如何：使用业务规则策略选择路线](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
+-   [如何：选择使用业务规则策略路线](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
   
 -   [开发活动](../esb-toolkit/development-activities.md)  
   

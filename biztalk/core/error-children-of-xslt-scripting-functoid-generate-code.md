@@ -1,5 +1,5 @@
 ---
-title: 错误-的 XSLT 脚本 Functoid 子级生成代码 |Microsoft 文档
+title: 错误-XSLT 脚本 Functoid 的相关子节点生成代码 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 810fe9befecd9bbd1a15468ca714177900450cb7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4111d359c0a764c92fc9736fdd2fcbc879252274
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239549"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388990"
 ---
-# <a name="error---children-of-xslt-scripting-functoid-generate-code"></a>错误-的 XSLT 脚本 Functoid 子级生成代码
+# <a name="error---children-of-xslt-scripting-functoid-generate-code"></a>错误-XSLT 脚本 Functoid 的相关子节点生成代码
 **错误代码**  
   
  btm1063  
   
  **说明**  
   
- 这不符合的使用方案**脚本**配置为使用内联 XSLT 或 XSLT 调用模板的 functoid 找映射中。 在目标架构中，链接到此类的输出的节点的子代节点**脚本**functoid 尝试生成其自己的 XSLT 代码。  
+ 这不符合的使用方案**脚本**在映射中发现已配置为使用内联 XSLT 或 XSLT 调用模板的 functoid。 在目标架构中，链接到此类输出节点的后代节点**脚本**functoid 试图生成它们自己的 XSLT 代码。  
   
  **用户执行任何操作**  
   
- 通过更改相关的使用情况删除不兼容性**脚本**functoid 或更改的子节点，以便它们不会再生成它们自己的 XSLT 代码。
+ 通过更改相关的使用情况来删除不兼容性**脚本**functoid 或更改的子节点，以便它们不会再生成它们自己的 XSLT 代码。

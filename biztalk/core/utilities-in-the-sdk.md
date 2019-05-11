@@ -1,5 +1,5 @@
 ---
-title: SDK 中的实用程序 |Microsoft 文档
+title: 在 SDK 中的实用程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,27 +14,27 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7f8db994395ead14ed0e452ff8461f0aa55f8f2a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5c9869ccf526d9a3618fab7f06767f0f426973e2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287573"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401593"
 ---
-# <a name="utilities-in-the-sdk"></a>SDK 中的实用程序
-本部分提供 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 软件开发工具包 (SDK) 中包含的多个有用实用程序的使用说明。  
+# <a name="utilities-in-the-sdk"></a>SDK 中的实用工具
+本部分提供有关使用 Microsoft 中包含的几个有用实用程序的说明[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]软件开发工具包 (SDK)。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [适配器注册表向导](../core/adapter-registry-wizard.md)  
+-   [适配器注册向导](../core/adapter-registry-wizard.md)  
   
--   [AS2 发送方实用程序](../core/as2-sender-utility.md)  
+-   [AS2 发送方实用工具](../core/as2-sender-utility.md)  
   
--   [BatchTerminator 实用程序](../core/batchterminator-utility.md)  
+-   [BatchTerminator 实用工具](../core/batchterminator-utility.md)  
   
 -   [BizTalk 消息队列大型消息扩展](../core/biztalk-message-queuing-large-message-extension.md)  
   
--   [证书向导实用程序](../core/certificate-wizard-utility.md)  
+-   [证书向导实用工具](../core/certificate-wizard-utility.md)  
   
 -   [EDI 迁移实用工具](../core/edi-migration-utilities.md)  
   
@@ -42,4 +42,4 @@ ms.locfileid: "22287573"
   
 -   [如何扩展架构生成器向导](../core/how-to-extend-the-schema-generator-wizard.md)  
   
--   [将公共密钥令牌实用程序](../core/replace-public-key-token-utility.md)
+-   [替换公钥令牌实用工具](../core/replace-public-key-token-utility.md)

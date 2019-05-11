@@ -15,15 +15,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 18cec34263598f50c9852ffe3f3a7d749914c977
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7eb6c74ddd5a480f3e4048079e346cf23570c1f9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984014"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398318"
 ---
 # <a name="querying-activity-relationships"></a>查询活动关系
-在为每个活动动态创建的 SQL 视图中，可以找到活动关系信息。 此视图的名称是  
+在每个活动动态创建的 SQL 视图提供了活动关系信息。 此视图的名称是  
   
  **bam_\<**  *活动*  **\>_AllRelationships**  
   

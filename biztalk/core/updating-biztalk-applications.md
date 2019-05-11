@@ -1,5 +1,5 @@
 ---
-title: 更新 BizTalk 应用程序 |Microsoft 文档
+title: 更新 BizTalk 应用程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -22,15 +22,15 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d921e6cf12198f0d7c8c4aa7ea532f0159d1148a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f3049e39c410d3e05f0e2abc3e74e16706f9302d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286837"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398610"
 ---
 # <a name="updating-biztalk-applications"></a>更新 BizTalk 应用程序
-本部分中的主题介绍在将 BizTalk 应用程序部署到生产环境中后，如何更新这些应用程序。 有关所涉及的更新应用程序任务的列表，请参阅[清单： 更新 BizTalk 应用程序中的项目](../core/checklist-update-the-artifacts-in-a-biztalk-application.md)。  
+在本部分中的主题上更新 BizTalk 应用程序部署到生产环境后提供说明。 更新应用程序所涉及任务的列表，请参阅[核对清单：更新 BizTalk 应用程序中的项目](../core/checklist-update-the-artifacts-in-a-biztalk-application.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -40,4 +40,4 @@ ms.locfileid: "22286837"
   
 -   [如何部署与现有版本运行的并行应用程序的新版本](../core/deploy-new-application-version-to-run-side-by-side-with-existing-version.md)  
   
--   [部署和以编程方式启动的业务流程的新版本](../core/deploying-and-starting-a-new-version-of-an-orchestration-programmatically.md)
+-   [以编程方式部署和启动业务流程的新版本](../core/deploying-and-starting-a-new-version-of-an-orchestration-programmatically.md)

@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bafbafdd799330b9c34179cfd1949629eee4ca3b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 76aade02065fbfb001bf1a02ceea26f0901854f2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001814"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388659"
 ---
-# <a name="max-limit-of-acceptable-x12-transaction-set-control-number-has-reached-for-party"></a>已达到参与方的可接受 X12 事务集控制编号最大限制
+# <a name="max-limit-of-acceptable-x12-transaction-set-control-number-has-reached-for-party"></a>可接受 X12 事务集控制编号已达到参与方的最大限制
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                             |

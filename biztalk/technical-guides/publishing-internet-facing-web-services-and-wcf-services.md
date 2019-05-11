@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 32a0478e43f87dfbf29f736fde062c67fb4a94cc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c16812fc99c6fa38ad55c7e69afb8b6bb256136c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009198"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399553"
 ---
 # <a name="publishing-internet-facing-web-services-and-wcf-services"></a>发布面向 Internet 的 Web 服务和 WCF 服务
 可以使用多种方法进行发布[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Web 服务和 WCF 服务添加到 Internet:  
@@ -33,9 +33,9 @@ ms.locfileid: "37009198"
   
  有关使用反向代理的详细信息，请参阅 BizTalk Server 帮助中的以下主题：  
   
--   ["示例体系结构： HTTP 和 SOAP 适配器"](http://go.microsoft.com/fwlink/?LinkId=153339) (http://go.microsoft.com/fwlink/?LinkId=153339)。  
+-   ["示例体系结构：HTTP 和 SOAP 适配器"](http://go.microsoft.com/fwlink/?LinkId=153339) (http://go.microsoft.com/fwlink/?LinkId=153339)。  
   
--   ["示例 TMA: HTTP 和 SOAP 适配器"](http://go.microsoft.com/fwlink/?LinkId=153340) (http://go.microsoft.com/fwlink/?LinkId=153340)。  
+-   ["示例 TMA:HTTP 和 SOAP 适配器"](http://go.microsoft.com/fwlink/?LinkId=153340) (http://go.microsoft.com/fwlink/?LinkId=153340)。  
   
 -   ["大型分布式体系结构"](http://go.microsoft.com/fwlink/?LinkId=153341) (http://go.microsoft.com/fwlink/?LinkId=153341)。  
   

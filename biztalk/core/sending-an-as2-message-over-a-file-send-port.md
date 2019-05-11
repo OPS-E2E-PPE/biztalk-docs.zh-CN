@@ -1,5 +1,5 @@
 ---
-title: 通过文件发送端口发送 AS2 消息 |Microsoft 文档
+title: 通过 FILE 发送端口发送 AS2 消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 555066cb81eabe7328734e73fd9598fbd2cd418a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 184a6a1b6a0111dffaf9096e23e60945d8310ecf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270725"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399059"
 ---
 # <a name="sending-an-as2-message-over-a-file-send-port"></a>通过 FILE 发送端口发送 AS2 消息
 AS2 消息通常是通过 HTTP 适配器发送的。 然而，如果创建了自定义组件，则可以通过 FILE 适配器发送 AS2 消息。 本主题介绍了这种解决方案的工作原理并提供了该解决方案的示例代码。  
@@ -97,5 +97,5 @@ Message_2(EdiIntAS.OriginalMessageId)="2123456";
 Message_2(HTTP.UserHttpHeaders)="Message1-Id: xyz\r\nMyHeader: MyValue";  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发和配置 BizTalk Server AS2 解决方案](../core/developing-and-configuring-biztalk-server-as2-solutions.md)

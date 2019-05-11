@@ -16,21 +16,21 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4d55456a78c126eec3d14c3b26852d488da3b5b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a635ce657109a0bf4671e83aaade3e23ac05a886
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991214"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334992"
 ---
 # <a name="how-to-remove-bam-alerts"></a>如何删除 BAM 警报
 管理员使用**删除警报**命令以从指定的视图中删除所有警报。  
   
 ### <a name="to-remove-bam-alerts"></a>若要删除 BAM 警报  
   
-1. 按如下所示打开命令提示符： 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
+1. 打开命令提示符，如下所示：单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2. 导航到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking。  
+2. 导航到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]跟踪。  
   
 3. 类型**bm 删除警报的视图：\<视图名称\>**。  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c59c396534d6c555cfd133e949e3a5becb5375b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 30107d8cf3624e22099efb5d14daf59b4e256105
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998830"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399576"
 ---
 # <a name="pre-configuration-database-optimizations"></a>预配置数据库优化
 BizTalk Server 是非常占用大量数据库的应用程序可能要求的 Microsoft SQL Server 中最多 13 个单独的数据库创建的。 由于 SQL Server 在任何 BizTalk Server 环境中起着关键角色，它是极其重要，SQL Server 将配置/进行优化以获得最佳性能。 如果 SQL Server 不优化很好地运行，然后 BizTalk Server 使用的数据库将成为瓶颈，并在 BizTalk Server 环境的整体性能将会受到影响。 本主题介绍在安装 BizTalk Server 和配置 BizTalk Server 数据库之前应遵循的几个 SQL Server 性能优化。  
@@ -60,7 +60,7 @@ sp_configure ‘Min Server memory (MB)’,(min size in MB)
  确保使用的 tempdb 数据文件大小相等的非常重要，因为使用的按比例填充算法[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]取决于数据文件的大小。 此算法将尝试确保[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]成比例的可用空间的每个文件保持在该文件，以便达到了解同一时间在其最大容量的填充。 如果使用不相等大小创建数据文件，按比例填充算法将使用为 GAM 分配，而不是所有的文件，这违背创建多个数据文件的目的之间进行分配更多的最大文件。 Tempdb 数据库数据文件数应配置为至少等于分配适用于 SQL Server 的处理器数。  
   
 ## <a name="enable-trace-flag-t1118-as-a-startup-parameter-for-all-instances-of-sql-server"></a>启用跟踪标志 T1118 作为引导参数的所有实例的 SQL Server  
- 实现跟踪标志-T1118 可帮助减少 SQL Server 实例之间的争用，通过删除几乎所有的单页分配。 有关详细信息，请参阅 Microsoft 知识库文章 328551"PRB: tempdb 数据库的并发性增强功能"处[ http://go.microsoft.com/fwlink/?LinkID=103713 ](http://go.microsoft.com/fwlink/?LinkID=103713)。  
+ 实现跟踪标志-T1118 可帮助减少 SQL Server 实例之间的争用，通过删除几乎所有的单页分配。 有关详细信息，请参阅 Microsoft 知识库文章 328551"PRB:并发的增强功能，tempdb 数据库"处[ http://go.microsoft.com/fwlink/?LinkID=103713 ](http://go.microsoft.com/fwlink/?LinkID=103713)。  
   
 ## <a name="do-not-change-default-sql-server-settings-for-max-degree-of-parallelism-sql-server-statistics-or-database-index-rebuilds-and-defragmentation"></a>不更改默认的最大并行度、 SQL Server 统计信息或数据库索引重新生成和碎片整理的 SQL Server 设置  
  如果 SQL Server 实例将承载 BizTalk Server 数据库，则某些 SQL Server 设置应不会更改。 具体而言，SQL Server 最大并行度，MessageBox 数据库和数据库索引的设置的 SQL Server 统计信息重新生成，不应修改碎片整理。 有关详细信息，请在 BizTalk Server 操作指南 》 中参阅"SQL Server 设置，不应更改"主题[ http://go.microsoft.com/fwlink/?LinkId=114358 ](http://go.microsoft.com/fwlink/?LinkId=114358)。

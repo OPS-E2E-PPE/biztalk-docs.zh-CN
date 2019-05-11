@@ -12,25 +12,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ae25a8e09b6e9aa8f4b5cef7b6dc5365a601e7de
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9a2b31f73340db43d84f1a2d643c6fc651e3c940
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001182"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65332373"
 ---
 # <a name="implementing-message-security"></a>实现消息安全性
-可以配置 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 环境以使用证书来发送和接收签名消息和加密消息。 通过使用证书来进行加密和数字签名，BizTalk Server 可以：  
+你可以配置您的 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境以使用证书来发送和接收签名消息和加密消息。 通过使用证书进行加密和数字签名，BizTalk Server 可以：  
   
-- 发送和接收可信任的数据。  
+- 发送和接收可能会受信任的数据。  
   
-- 确保它所处理的数据是安全的。  
+- 请确保所处理的数据安全。  
   
-- 确保经授权的参与方收到其消息。  
+- 请确保授权的方收到其消息。  
   
-- 确保它收到来自授权参与方的消息。  
+- 请确保它来自授权参与方接收的消息。  
   
-  本部分提供有关如何配置 BizTalk Server 管道、接收位置、端口和 BizTalk Server 环境以实施消息安全性的信息。  
+  本部分提供有关如何配置 BizTalk Server 管道、 接收位置、 端口和 BizTalk Server 环境以实施消息安全性的信息。  
   
   有关消息安全性的详细信息，请参阅[规划消息安全性](../core/planning-message-security.md)。  
   

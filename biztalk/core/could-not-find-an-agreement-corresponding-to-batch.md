@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4b51fabd7aaf01d751f1a5ecff3c3a4e773e0b7b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3b505c9c3919a11e0832ac88a8d20ad8f85d2706
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978374"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390178"
 ---
-# <a name="could-not-find-an-agreement-corresponding-to-batch"></a>找不到对应于批的协议
+# <a name="could-not-find-an-agreement-corresponding-to-batch"></a>找不到与批相对应的协议
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                        |

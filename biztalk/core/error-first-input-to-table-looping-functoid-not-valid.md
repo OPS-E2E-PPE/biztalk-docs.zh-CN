@@ -1,5 +1,5 @@
 ---
-title: 错误-第一个输入到循环 Functoid 不是有效的表 |Microsoft 文档
+title: 错误-第一个输入到循环 Functoid 不是有效的表 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fb9ebecbd92b43dd25e6ff3dde04d942b936f40d
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 20ecfb5402cc4c544acc208654cd7fe7459de985
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25968331"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389291"
 ---
 # <a name="error---first-input-to-table-looping-functoid-not-valid"></a>错误-第一个输入到循环 Functoid 不是有效的表
 **错误代码**  
@@ -28,14 +28,14 @@ ms.locfileid: "25968331"
   
  **说明**  
   
- 到相关的第一个输入的参数**表循环**functoid 无效。 此参数必须是来自源架构中的节点的链接-输入的实例消息中的相应元素的出现次数将控制的组的关联的次数**表提取程序**functoid将在运行时调用。  
+ 第一个输入的参数的相关**表循环**functoid 不是有效。 此参数必须是来自源架构中的节点的链接，输入的实例消息中的相应元素的出现次数将控制的一组关联的次数**表提取程序**functoid将在运行时调用。  
   
  **用户执行任何操作**  
   
- 确保的输入的参数**表循环**functoid，如通过访问**输入参数**属性和**配置\<Functoid\>Functoid**对话框中，是下表中所示。  
+ 确保输入的参数**表循环**functoid，在通过访问**输入参数**属性并**配置\<Functoid\>Functoid**对话框中下, 表所示。  
   
-|“表循环”functoid 输入参数编号|Description|  
+|表循环 functoid 输入参数编号|Description|  
 |---------------------------------------------------|-----------------|  
-|1|从记录的链接或源架构中的字段，其中的次数输入的实例消息控制的次数的一套关联**表提取程序**functoid 运行。|  
-|2|通过配置的数据表中的列数**表循环网格**的相关属性**表循环**functoid。|  
-|3 – 100|常量和链接 （来自源架构或从其他 functoid 的输出中） 将成为可能的与循环网格表的数据源。|
+|1|输入的实例消息从一条记录的链接或源架构中的字段，其中出现次数控制的一组关联的次数**表提取程序**functoid 的运行。|  
+|2|通过配置的数据表中的列数**表循环网格**属性的相关**表循环**functoid。|  
+|3 – 100|常量和链接 （来自源架构或来自其他 functoid 的输出中） 将成为可能的与表循环网格的数据源。|

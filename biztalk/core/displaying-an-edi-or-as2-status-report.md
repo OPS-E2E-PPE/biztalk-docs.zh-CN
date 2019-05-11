@@ -12,30 +12,30 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a729e089c3d833d7bf8d8b87ebabeec0743b358a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 699218479eb0d8bb5a37eb21afc4eb814cf51233
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018631"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389354"
 ---
 # <a name="displaying-an-edi-or-as2-status-report"></a>显示 EDI 或 AS2 状态报告
-EDI 和 AS2 状态报告启用后，您可访问以下状态报告：  
+启用 EDI 和 AS2 状态报告后，将有权访问以下状态报告：  
   
-|报告类型|级别更高的状态报告|级别更低的状态报告|  
+|类型的报告|更高级别的状态报告|较低级别状态报告|  
 |--------------------|---------------------------------|--------------------------------|  
 |EDI|EDI 交换和相关 ACK 状态|-交换状态和确认详细信息<br /><br /> --事务集详细信息<br /><br /> EDI 消息内容|  
-|EDI|批状态|-|  
+|EDI|批处理状态|-|  
 |EDI|交换聚合报告|-|  
 |EDI|事务集聚合报告|-|  
-|AS2|AS2 消息和相关 MDN 状态|AS2 消息内容|  
+|AS2|AS2 消息和相关的 MDN 状态|AS2 消息内容|  
   
-## <a name="prerequisites"></a>必要條件  
- 以下为执行本主题中的过程的前提条件：  
+## <a name="prerequisites"></a>先决条件  
+ 在本主题中执行该过程的先决条件如下：  
   
-- 必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组成员的身份登录，才能自定义任何状态报告。  
+- 必须以成员的身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Administrators 组才能自定义任何状态报告。  
   
-- 如果以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 操作员组成员的身份登录，可以显示只读状态报告。  
+- 如果作为的成员身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Operators 组可以显示只读状态报告。  
   
 ## <a name="display-an-edi-or-as2-status-report"></a>显示 EDI 或 AS2 状态报告  
   
@@ -53,7 +53,7 @@ EDI 和 AS2 状态报告启用后，您可访问以下状态报告：
   
    4.  若要显示有关的标头和负载的事务集的详细信息，请右键单击中的条目**事务集详细信息**报告，然后依次**查看事务集内容**。  
   
-   5.  若要显示包含事务集的交换有关的数据，请右键单击中的条目**事务集详细信息**报告，然后依次**交换 /ACK 状态**。 包含事务集的交换会在“交换/ACK 状态”报告中突出显示。  
+   5.  若要显示包含事务集的交换有关的数据，请右键单击中的条目**事务集详细信息**报告，然后依次**交换 /ACK 状态**。 包含事务集的交换将在交换 /ACK 状态报告中突出显示。  
   
 4. 若要显示**批状态**报告，则会继续，如下所示：  
   
@@ -61,7 +61,7 @@ EDI 和 AS2 状态报告启用后，您可访问以下状态报告：
   
    2.  若要显示与中的批处理条目相关联的已完成的批处理**批状态**报告，右键单击该条目，然后单击**完成批处理**。  
   
-   3.  若要显示有关已完成的批处理交换的数据，请右键单击中的交换**已完成的批处理**报告，然后依次**交换 /ACK 状态**。 批处理交换的条目会在“交换/ACK 状态”报告中突出显示。  
+   3.  若要显示有关已完成的批处理交换的数据，请右键单击中的交换**已完成的批处理**报告，然后依次**交换 /ACK 状态**。 为批处理交换的条目将在交换 /ACK 状态报告中突出显示。  
   
 5. 若要显示**交换聚合报告**，继续操作，如下所示：  
   

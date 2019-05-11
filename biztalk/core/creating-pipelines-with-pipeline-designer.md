@@ -16,17 +16,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 51d7f15a50c5504468cc3da19293afd251dff312
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 62942e055832b6bac97f37a3d4cd5fe753269566
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969174"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390426"
 ---
 # <a name="creating-pipelines-with-pipeline-designer"></a>使用管道设计器创建管道
 本部分介绍如何执行以下操作：  
   
-- 创建、打开和保存管道  
+- 创建、 打开和保存管道  
   
 - 向管道添加组件  
   

@@ -12,39 +12,39 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8c4980eb1045d12986ec486308231ab2f219445b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 716154cbc315c24f7a6a3cd65f9d26a7dfe2fa54
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993806"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399423"
 ---
 # <a name="wcf-adapters"></a>WCF 适配器
 
 ## <a name="overview"></a>概述
-用于 Windows Communication Foundation (WCF) 的 BizTalk 适配器允许 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 与基于 WCF 的应用程序通信。 BizTalk WCF 适配器包括五个物理适配器，分别表示 WCF 预定义绑定 —**BasicHttpBinding**， **WsHttpBinding**， **NetTcpBinding**， **NetNamedPipeBinding**，并**NetMsmqBinding**。 通过用于预定义绑定的 WCF 适配器，您可以轻松配置大多数应用程序要求的必需信息。  
+BizTalk 适配器的 Windows Communication Foundation (WCF) 允许[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]与基于 WCF 的应用程序进行通信。 BizTalk WCF 适配器包括五个物理适配器，分别表示 WCF 预定义绑定 —**BasicHttpBinding**， **WsHttpBinding**， **NetTcpBinding**， **NetNamedPipeBinding**，并**NetMsmqBinding**。 预定义绑定的 WCF 适配器提供以便您可以轻松配置大多数应用程序要求所需的信息。  
   
- BizTalk WCF 适配器还包括用于随意配置接收位置和发送端口的 WCF 绑定和行为信息的两个适配器。  
+ BizTalk WCF 适配器还包括两个适配器，您可以自由地配置 WCF 绑定和行为信息的接收位置和发送端口。  
 
 ## <a name="available-wcf-adapters"></a>可用的 WCF 适配器
     
-- **Wcf-wshttp 适配器**。 通过 HTTP 传输提供对于 WS-* 标准的支持。 WCF-WSHttp 适配器实现了下列规范：WS-Transaction（用来在外部应用程序和 MessageBox 数据库之间进行事务性交互）和 WS-Security（用来实现消息安全和身份验证）。 传输协议是 HTTP 或 HTTPS，消息编码是文本或消息传输优化机制 (MTOM) 编码。  
+- **Wcf-wshttp 适配器**。 提供对于 WS-* 标准的支持通过 HTTP 传输。 Wcf-wshttp 适配器实现了下列规范：WS 事务之间外部应用程序和 MessageBox 数据库和 Ws-security 的消息安全性和身份验证的事务交互。 传输协议是 HTTP 或 HTTPS，并且消息编码是文本或消息传输优化机制 (MTOM) 编码。  
   
-- **Wcf-basichttp 适配器**。 与基于 ASMX 的 Web Services 以及符合 WS-I 基本配置文件 1.1 的客户端和其他服务进行通信。 传输协议是 HTTP 或 HTTPS，消息编码是文本编码。  
+- **Wcf-basichttp 适配器**。 与基于 ASMX 的 Web 服务和客户端以及符合 WS 其他服务进行通信的基本配置文件 1.1。 传输协议是 HTTP 或 HTTPS，并且消息编码是文本编码。  
   
-- **Wcf-nettcp 适配器**。 通过 TCP 传输提供对 WS-* 标准的支持。 WCF-NetTcp 适配器可在 WCF 到 WCF 环境中提供有效的通信。 该适配器实现了下列规范： Ws-transaction 之间外部应用程序和 MessageBox 数据库和 Ws-security 的消息安全性和身份验证的事务交互。 传输协议是 TCP，和消息编码是二进制编码。  
+- **Wcf-nettcp 适配器**。 提供对于 WS-* 标准的支持通过 TCP 传输。 Wcf-nettcp 适配器提供了在 WCF 到 WCF 环境中有效的通信。 该适配器实现了下列规范：WS 事务之间外部应用程序和 MessageBox 数据库和 Ws-security 的消息安全性和身份验证的事务交互。 传输协议是 TCP，和消息编码是二进制编码。  
   
-- **Wcf-netmsmq 适配器**。 使用 [!INCLUDE[btsCoName](../includes/btsconame-md.md)] 消息队列 (MSMQ) 作为传输手段来提供队列支持，同时还提供对松散耦合应用程序、故障隔离、负载级别划分和脱机操作的支持。  
+- **Wcf-netmsmq 适配器**。 通过利用机制来提供支持[!INCLUDE[btsCoName](../includes/btsconame-md.md)]消息队列 (MSMQ) 传输支持松散耦合应用程序、 故障隔离、 负载均衡，和断开连接操作。  
   
-- **Wcf-netnamedpipe 适配器**。 对计算机上的跨进程通信提供了安全优化。 WCF-NetNamedPipe 适配器使用传输安全性保证传输安全，使用命名管道进行消息传送，并且使用二进制消息编码方式。  
+- **Wcf-netnamedpipe 适配器**。 提供了计算机上的跨进程通信的安全优化。 Wcf-netnamedpipe 适配器使用传输安全性保证传输安全，命名管道进行消息传递，并且包含二进制消息编码。  
   
-- **WCF 自定义适配器**。 允许使用 WCF 扩展功能。 用户使用此适配器可以为接收位置和发送端口选择并配置 WCF 绑定和行为信息。  
+- **WCF 自定义适配器**。 启用 WCF 扩展功能的使用。 该适配器，可以选择和配置 WCF 绑定和行为信息的接收位置和发送端口。  
   
-- **Wcf-customisolated 适配器**。 允许通过 HTTP 传输使用 WCF 扩展功能。 使用该适配器，可以为运行于独立主机上的接收位置选择和配置 WCF 绑定和行为信息。  
+- **Wcf-customisolated 适配器**。 允许通过 HTTP 传输使用 WCF 扩展功能。 该适配器，可以选择和配置 WCF 绑定和行为信息在独立主机中运行的接收位置。  
   
-  此外，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 提供 BizTalk WCF 服务发布向导和 BizTalk WCF 服务使用向导。 可以使用 BizTalk WCF 服务发布向导创建 BizTalk 业务流程并将其发布为 WCF 服务，还可以将架构发布为 WCF 服务。 可以使用 BizTalk WCF 服务使用向导生成 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 项目，如业务流程和类型，以便基于 WCF 服务的元数据文档使用 WCF 服务。  
+  此外，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]提供 BizTalk WCF 服务发布向导和 BizTalk WCF 服务使用向导。 若要创建和发布为 WCF 服务的 BizTalk 业务流程，并将架构发布为 WCF 服务，可以使用 BizTalk WCF 服务发布向导。 可以使用 BizTalk WCF 服务使用向导来生成[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]项目，如业务流程和类型，以便 WCF 服务使用基于 WCF 服务的元数据文档。  
   
-  本部分提供的资源有助于您配置和部署 WCF 适配器。  
+  本部分提供了资源，以帮助您配置和部署 WCF 适配器。  
   
 ## <a name="next"></a>Next 
   
@@ -52,7 +52,7 @@ ms.locfileid: "36993806"
   
 -   [配置 WCF 适配器](../core/configuring-the-wcf-adapters.md)  
   
--   [WCF-BasicHttp 适配器](../core/wcf-basichttp-adapter.md)  
+-   [Wcf-basichttp 适配器](../core/wcf-basichttp-adapter.md)  
   
 -   [WCF-WSHttp 适配器](../core/wcf-wshttp-adapter.md)  
   

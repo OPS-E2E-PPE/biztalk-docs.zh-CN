@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e5ce0694b60afcb743c138d3059a78f63f6fcb5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5d2b57fb3c520b283fa8d0fbb160efb87d3378e4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994294"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65244147"
 ---
 # <a name="structural-error-encountered-during-serialization-of-an-interchange-xml-message"></a>交换 XML 消息序列化期间遇到结构错误
 ## <a name="details"></a>详细信息  
@@ -30,10 +30,10 @@ ms.locfileid: "36994294"
 |  事件源   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
 |    组件    |                                       EDI 引擎                                       |
 |  符号名称  |                                  InvalidXmlNodeFound                                   |
-|  消息正文   |    交换 XML 消息序列化期间遇到结构错误     |
+|  消息正文   |    交换 Xml 消息序列化期间遇到结构错误     |
 
 ## <a name="explanation"></a>解释  
- 此错误表明在交换 XML 消息的序列化期间遇到结构错误。 BTS 查找 XML StartElement 或 EndElement，但遇到另一个 XML 节点类型。  
+ 此错误表明交换 XML 消息序列化期间遇到结构错误。 BTS 查找 XML StartElement 或 EndElement，但改为遇到不同的 XML 节点类型了。  
 
 ## <a name="user-action"></a>用户操作  
  若要解决此错误，请确保消息结构正确，然后重试：  

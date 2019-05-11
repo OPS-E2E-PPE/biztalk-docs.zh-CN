@@ -1,5 +1,5 @@
 ---
-title: 如何查看相关的活动和相关的文档 |Microsoft 文档
+title: 如何查看相关的活动和相关的文档 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,36 +16,36 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d23915fba0f5cd95e5b21e0c58e950e45c12c677
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8e65009f122a669f308210f32ea2e10c72e381a3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256533"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333039"
 ---
-# <a name="how-to-view-related-activities-and-related-documents"></a>如何查看相关活动和相关文档
-在 BAM Web 门户中，您可以通过“业务活动搜索结果”页查看相关活动和相关文档。 您可以从一个相关活动导航到另一个相关活动，例如，如果搜索特定的采购订单，则可以查看有关该采购订单的多次发货情况。 还可以查看相关文档，例如，对于该采购订单，还可以查看相关的销售订单。  
+# <a name="how-to-view-related-activities-and-related-documents"></a>如何查看相关的活动和相关的文档
+在 BAM Web 门户中，可以查看相关的活动和通过业务活动搜索结果页的文档。 可以从一个相关活动导航到另一个，例如，如果您搜索特定的采购订单，则可以查看有关该采购订单的多次发货情况。 您还可以查看相关文档，例如，对于该采购订单，您可以查看相关的销售订单。  
   
- 搜索活动的步骤，请参阅[如何搜索活动](../core/how-to-search-for-activities.md)  
+ 有关搜索活动的步骤，请参阅[如何搜索活动](../core/how-to-search-for-activities.md)  
   
-### <a name="to-view-related-activities"></a>查看相关活动  
+### <a name="to-view-related-activities"></a>若要查看相关的活动  
   
-1.  在 BAM Web 门户中，搜索某个特定的活动。  
+1.  在 BAM Web 门户中，搜索特定活动。  
   
-2.  在活动状态页上，单击加号 （+） 中的图标**相关活动**区域的内容的帧。  
+2.  在活动状态页上，单击加号 （+） 中的图标**相关活动**内容框架的区域。  
   
-     此时将显示相关活动的列表。  
+     将显示相关活动的列表。  
   
-3.  在列表中单击某个相关活动。  
+3.  单击列表中的相关的活动。  
   
-### <a name="to-view-related-documents"></a>查看相关文档  
+### <a name="to-view-related-documents"></a>若要查看相关的文档  
   
-1.  BAM Web 门户中，在搜索特定活动...  
+1.  在 BAM Web 门户中，搜索特定活动...  
   
-2.  在活动状态页上，单击加号 （+） 中的图标**相关文档**区域的内容的帧。  
+2.  在活动状态页上，单击加号 （+） 中的图标**相关文档**内容框架的区域。  
   
-     此时将显示相关文档的列表。  
+     显示相关文档的列表。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何查看单个活动](../core/how-to-view-an-individual-activity.md)   
  [如何搜索活动](../core/how-to-search-for-activities.md)

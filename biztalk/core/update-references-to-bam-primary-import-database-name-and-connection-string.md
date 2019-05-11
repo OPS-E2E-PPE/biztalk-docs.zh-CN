@@ -12,15 +12,15 @@ caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 846aa3b08ce6cce9b2334da72440cf5ba918e5d9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3021542b405e7511c71b1de11752c16b387d3013
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003134"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399545"
 ---
 # <a name="update-references-to-the-bam-primary-import-database-name-and-connection-string"></a>更新对 BAM 主导入数据库名称和连接字符串引用
-如果备份了 BAMPrimaryImport 数据库，则在系统或数据发生故障时，可以将该备份还原到其他计算机上，然后重命名该备份。  
+如果备份了 BAMPrimaryImport 数据库，则在系统或数据发生故障时，可以将该备份还原到其他计算机和重命名该备份。  
   
  BAM 事件总线服务将事件数据从 MessageBox 数据库移到 BAMPrimaryImport 数据库。 BAM 事件总线服务包括故障容错逻辑，使它能够恢复并重新启动从意外故障而不会丢失任何数据。 有关 BAM 事件总线服务的详细信息，请参阅[管理 BAM 事件总线服务](../core/managing-the-bam-event-bus-service.md)。  
   
@@ -32,24 +32,24 @@ ms.locfileid: "37003134"
   
 -   更新对 BAMPrimaryImport 数据库中所有 BAM 实时数据 Microsoft Excel 文件的引用。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
 以 BizTalk Server Administrators 组的成员身份登录。  
   
 ## <a name="update-the-references"></a>更新引用  
   
-1. 停止任何 BAM 多维数据集更新和数据维护数据转换服务 (DTS) 包，或者阻止它们运行，直到 BAMPrimaryImport 数据库的还原完成为止。  
+1. 停止任何 BAM 多维数据集更新和数据维护数据转换服务 (DTS) 包，或者阻止它们运行，直到 BAMPrimaryImport 数据库的还原。  
   
 2. 停止 BizTalk 应用程序服务 （其中包括 BAM 事件总线服务） 以便不会尝试导入数据库的更多的数据。  
   
    1.  从**启动**菜单中，键入**services.msc**，然后打开**Services**。  
   
-   2.  右键单击**BizTalk 服务 BizTalk 组： BizTalkServerApplication**服务，然后**停止**。  
+   2.  右键单击**BizTalk 服务 BizTalk 组：BizTalkServerApplication**服务，然后**停止**。  
   
 3. 还原 BAMPrimaryImport 数据库 (中的步骤[如何还原您数据库](../core/how-to-restore-your-databases.md))。  
   
 4. 更新以下 Web.Config 文件：  
   
-   - [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\BAMPortal\BamManagementService\Web.Config。  
+   - [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\BAMPortal\BamManagementService\Web.Config.  
   
       替换*\<ServerName\>* 具有新的服务器名称的字符串并*\<DatabaseName\>* 使用新的数据库名称。 更新以下连接字符串：  
   
@@ -57,13 +57,13 @@ ms.locfileid: "37003134"
   
       <add key="BamServer" value="*\<ServerName\>*" /\>  
   
-      < 添加 key ="BamDatabase"value ="*\<DatabaseName\>*"/\>  
+      <add key="BamDatabase" value="*\<DatabaseName\>*" /\>  
   
       \<add key="MaxResultRows" value="2000" /\>  
   
       \</appSettings\>  
   
-   - [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\BAMPortal\BamQueryService\Web.Config。  
+   - [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\BAMPortal\BamQueryService\Web.Config.  
   
       替换*\<ServerName\>* 具有新的服务器名称的字符串并*\<DatabaseName\>* 使用新的数据库名称。 更新以下连接字符串：  
   
@@ -71,7 +71,7 @@ ms.locfileid: "37003134"
   
       \<add key="BamServer" value="*\<ServerName\>*" /\>  
   
-      \<添加键 ="BamDatabase"value ="*\<DatabaseName\>*"/\>  
+      \<add key="BamDatabase" value="*\<DatabaseName\>*" /\>  
   
       \<add key="MaxResultRows" value="2000" /\>  
   
@@ -87,7 +87,7 @@ ms.locfileid: "37003134"
    3.  对于 PrimaryImportDatabase，设置**SourceServer**到移动 BAM 主导入数据库的服务器的名称。  
   
        > [!IMPORTANT]
-       >  用引号将源系统和目标系统的名称括起来。  
+       >  包括源和目标系统的名称周围的引号。  
   
        > [!NOTE]
        >  如果您重命名任何 BizTalk Server 数据库，请务必也更新数据库的名称。  
@@ -103,7 +103,7 @@ ms.locfileid: "37003134"
    > 
    >  在 64 位计算机上 64 位命令提示符下运行 UpdateDatabase.vbs。  
   
-8. 在命令提示符下，导航到以下目录：  
+8. 在命令提示符处，导航到以下目录：  
   
      [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\Tracking  
   
@@ -125,7 +125,7 @@ ms.locfileid: "37003134"
   
     1.  打开 **“services.msc”**。  
   
-    2.  右键单击**BizTalk 服务 BizTalk 组： BizTalkServerApplication**服务，然后**启动**。  
+    2.  右键单击**BizTalk 服务 BizTalk 组：BizTalkServerApplication**服务，然后**启动**。  
   
 12. 启用任何 BAM 多维数据集更新和数据维护 DTS 包。  
   

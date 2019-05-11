@@ -1,5 +1,5 @@
 ---
-title: 用于维护性能最佳实践 |Microsoft 文档
+title: 维护性能的最佳做法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 84d94b65c80ae258d4100c0cf7ad1fb1f3b5dc89
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 95d37b6d3e620f63786189a0aec76956bcf3baf1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22299597"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399360"
 ---
-# <a name="best-practices-for-maintaining-performance"></a>用于维护性能的最佳方案
-本主题向您指出了解决性能问题时应遵循的最佳实践[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]系统。  
+# <a name="best-practices-for-maintaining-performance"></a>维护性能的最佳做法
+本主题提供解决性能问题时应遵循的最佳实践[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]系统。  
   
 |||  
 |-|-|  
-|为每周性能检查|[清单： 执行每周性能检查](../technical-guides/checklist-performing-weekly-performance-checks.md)|  
-|为每月性能检查|[清单： 执行每月性能检查](../technical-guides/checklist-performing-monthly-performance-checks.md)|  
+|为每周性能检查|[清单：执行每周性能检查](../technical-guides/checklist-performing-weekly-performance-checks.md)|  
+|为每月性能检查|[清单：执行每月性能检查](../technical-guides/checklist-performing-monthly-performance-checks.md)|  
   
-## <a name="see-also"></a>另请参阅  
- [保持性能](../technical-guides/maintaining-performance.md)
+## <a name="see-also"></a>请参阅  
+ [维护性能](../technical-guides/maintaining-performance.md)

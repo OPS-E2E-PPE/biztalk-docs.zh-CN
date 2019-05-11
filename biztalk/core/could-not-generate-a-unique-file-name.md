@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f86cd0867e9b4819c88c2d788b7c7775cba35028
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 88955b113e40016a0cbd5c39c1cc83a878510c6e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010654"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390183"
 ---
 # <a name="could-not-generate-a-unique-file-name"></a>无法生成唯一的文件名
 ## <a name="details"></a>详细信息  
@@ -33,7 +33,7 @@ ms.locfileid: "37010654"
 |  消息正文   |          无法生成唯一的文件名为"{0}"中的文件夹"{1}"           |
   
 ## <a name="explanation"></a>解释  
- 此错误表明已存在同名文件。  
+ 此错误表示已存在具有相同名称的文件。  
   
 ## <a name="user-action"></a>用户操作  
- 重命名文件。
+ 重命名该文件。

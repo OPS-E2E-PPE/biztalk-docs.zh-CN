@@ -13,12 +13,12 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e1ea2d56-2ace-40f2-80df-8a7489bbfc2e
 ms.author: mandia
-ms.openlocfilehash: 5dc6c935933d9879005bafc75bb993f7d436ef50
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 11c673b2bbfde82a29acc94378d4b26f1d721da0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992542"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399598"
 ---
 # <a name="troubleshoot-the-biztalk-esb-toolkit"></a>BizTalk ESB 工具包疑难解答
 

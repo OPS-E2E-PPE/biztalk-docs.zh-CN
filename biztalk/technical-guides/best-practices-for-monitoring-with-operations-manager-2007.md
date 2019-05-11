@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d099ba9ea60fd8f553d4eaf2011e93a054f59e68
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: afdc0c4e9d89b83aedf184dc138a3558ef3f5eec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018693"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399311"
 ---
 # <a name="best-practices-for-monitoring-with-operations-manager-2007"></a>监视使用 Operations Manager 2007 的最佳做法
 遵循本主题以有效地监视使用 Operations Manager 2007 的应用程序中列出的最佳实践。  
@@ -40,7 +40,7 @@ ms.locfileid: "37018693"
   
   **查看并确定每日警报优先级**  
   
-- 每天检查警报并区分警报的优先级可确保及时解决问题。  
+- 检查并确定每日警报优先级有助于确保及时地解决问题。  
   
   **验证[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]与 Operations Manager 2007 服务器通信。**  
   
@@ -48,7 +48,7 @@ ms.locfileid: "37018693"
   
   **启用和禁用规则，根据需要**  
   
-- 默认情况下中的规则的一些[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包处于禁用状态。 这些禁用的规则类型如下：需要自定义的规则，用作模板的规则，以及用于监控附加 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 事件的规则。 请确保相关的规则你[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]之外的环境。  
+- 默认情况下中的规则的一些[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包处于禁用状态。 这些禁用的规则属于以下类型： 需要自定义，用作模板的规则和规则用于监视其他[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]事件。 请确保相关的规则你[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]之外的环境。  
   
   **自定义规则根据您的环境**  
   
@@ -56,13 +56,13 @@ ms.locfileid: "37018693"
   
   **创建其他规则有必要，请根据中包含的规则[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包**  
   
-- 规则提供用于连接作为项目的创建，如模板[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]主机。 在创建如下特定于项目的规则时，应将这些模板规则作为参考：  
+- 规则提供用于连接作为项目的创建，如模板[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]主机。 创建特定于项目的规则，如时，应使用这些模板规则作为参考：  
   
   -   特定于主机的规则，例如，托管队列监视，并托管阻止监视  
   
   -   特定于 MessageBox 的规则  
   
-  -   用于其他第三方组件（如 MQSeries 适配器）的规则  
+  -   对于其他第三方组件，例如，MQSeries 适配器的规则  
   
   **监视所有 BizTalk Server 相关组件**  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b0e54e0eac7e3f8ae54d23417033388bc493b0ab
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a34b014015d97a6dfa9dc11345e47480f055a237
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981630"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399496"
 ---
 # <a name="unexpected-root-element"></a>意外的根元素
 ## <a name="details"></a>详细信息  
@@ -33,7 +33,7 @@ ms.locfileid: "36981630"
 |  消息正文   |                              意外的根元素                               |
   
 ## <a name="explanation"></a>解释  
- 标头属性不在\<标头\>...\</headers\>格式。 这种情况通常发生在 InboundHeaders 和 OutboundCustomHeaders。  
+ 标头属性不在\<标头\>...\</headers\>格式。 这种情况通常适用于发生在 InboundHeaders 和 OutboundCustomHeaders。  
   
 ## <a name="user-action"></a>用户操作  
  确保标头属性的格式\<标头\>...\</headers\>。

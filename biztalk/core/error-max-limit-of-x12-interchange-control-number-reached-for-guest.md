@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1145573dc5aec674e79cef960c4737ddfe6d5e9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 89de1672ab7813c3e8eab7f6f9d188b51b799f6c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005950"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388690"
 ---
 # <a name="max-limit-of-acceptable-x12-interchange-control-number-has-reached-for-guest-settings"></a>可接受 X12 交换控制编号已达到来宾设置的最大限制
 ## <a name="details"></a>详细信息  

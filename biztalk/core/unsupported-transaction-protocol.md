@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5dde6df3360a7b4581964f26e395448d15f3de73
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 05023ca937ab8ff74323f4dbcbe52643e5efa01d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022355"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399465"
 ---
 # <a name="unsupported-transaction-protocol"></a>不支持的事务协议
 ## <a name="details"></a>详细信息  
@@ -33,7 +33,7 @@ ms.locfileid: "37022355"
 |  消息正文   |                       不支持的事务协议： {0}                        |
   
 ## <a name="explanation"></a>解释  
- 如果接收位置或发送端口的事务协议属性设置为无效的值，则发生此错误。  
+ 当接收位置或发送端口的事务协议属性设置为无效值时，将发生此错误。  
   
 ## <a name="user-action"></a>用户操作  
  若要解决此错误，请执行下列一项或多项操作:  

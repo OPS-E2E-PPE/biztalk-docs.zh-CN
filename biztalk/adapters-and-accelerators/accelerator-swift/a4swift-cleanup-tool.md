@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: db6e9f6f6ec25762abc4416bc18f0955055b7e70
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 494225194e3b302acb868277696054260b7c1a07
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983614"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65527545"
 ---
 # <a name="a4swift-cleanup-tool"></a>A4SWIFT 清理工具
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]清理工具，您可以准备了 Microsoft 的服务器[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]的新安装上安装[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]。 该工具删除 A4SWIFT 项目，例如协议、 部门和业务规则引擎 (BRE) 策略，并取消部署程序集。 运行此工具使你可以避免手动删除许多 A4SWIFT 项目，并用于解决可能与其他程序集引用的取消部署程序集的问题。  

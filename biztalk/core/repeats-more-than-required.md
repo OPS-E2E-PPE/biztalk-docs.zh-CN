@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4ac4649ea88756ba63393155ca8910437567fbd1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5d241e357425f18f6a378dc3dba9a2ffbd32c3ec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024035"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397898"
 ---
 # <a name="repeats-more-than-required"></a>重复次数大于必需次数
 ## <a name="details"></a>详细信息  

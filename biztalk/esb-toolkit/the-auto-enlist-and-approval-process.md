@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 39dae57d3265ed4e8a383c315276a7e8c510ce37
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: aafe1e5557d61303370b2119a82340288d8744f1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968142"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399872"
 ---
 # <a name="the-auto-enlist-and-approval-process"></a>自动登记和审批过程
 可以配置 ESB 管理门户以两种方式发布 Microsoft BizTalk Server 终结点：  

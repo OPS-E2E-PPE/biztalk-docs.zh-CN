@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f7e539cbc4a8a7227815c7d836b61b028bcee2f5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ca3eed2b26b01840104ba1219dd6acde7e2b0ae2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990622"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398289"
 ---
 # <a name="reading-batch-descriptions-from-database-failed"></a>从数据库读取批说明失败
 ## <a name="details"></a>详细信息  
@@ -33,7 +33,7 @@ ms.locfileid: "36990622"
 |  消息正文   |     从数据库中读取 BatchDescriptions 失败。 错误： {0}。 堆栈跟踪： {1}。      |
   
 ## <a name="explanation"></a>解释  
- 此错误/警告/信息事件表明 BizTalk Server 无法加载为配置为比较传入消息的上下文属性的批处理指定的筛选器。  
+ 此错误/警告/信息事件表明 BizTalk Server 无法加载指定要比较的传入消息的上下文属性的已配置批的筛选器。  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请确保管理数据库正在运行，并且可以连接。
+ 若要解决此错误，请确保管理数据库已启动，并且可以连接。

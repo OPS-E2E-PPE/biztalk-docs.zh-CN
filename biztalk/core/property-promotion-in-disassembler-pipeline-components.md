@@ -1,5 +1,5 @@
 ---
-title: 在反汇编程序管道组件中的属性提升 |Microsoft 文档
+title: 拆装器管道组件中的属性升级 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,21 +19,21 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d6c95c58dafe1f7f875232c5b65962e731334f16
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 26e8b358b70c12ecf5567c19377fa8419f5bea83
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25971835"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398466"
 ---
-# <a name="property-promotion-in-disassembler-pipeline-components"></a>在反汇编程序管道组件中的属性提升
-属性升级是使用 XPath 表达式从 XML 文档中提取属性值，再将其放置到消息上下文中以便用于消息路由的过程。  
+# <a name="property-promotion-in-disassembler-pipeline-components"></a>拆装器管道组件中的属性升级
+属性升级是使用 XPath 表达式从 XML 文档中提取属性值并将它放置在消息上下文，以便它可用于消息路由所依据的进程。  
   
- 如果已提升的属性没有默认值或固定值，该属性的 XML 字段是缺失，并且验证文档结构属性是**False**，该属性不提升。  
+ 如果升级的属性不具有默认值或固定值，该属性的 XML 字段是缺失，并且验证文档结构属性是**False**，则不升级该属性。  
   
- 自定义管道组件可以升级多值（即数组）属性。 只有在基于内容的路由 (CBR) 方案中，才支持包含多值属性的消息；此类消息无法路由到业务流程或用于跟踪用途。  
+ 自定义管道组件可以升级多值 （即数组） 属性。 基于内容的路由 (CBR) 方案; 仅支持包含多值的属性的消息它们不能路由到业务流程或用于进行跟踪。  
   
- 如果空元素带有结束标记，则 XML 拆装器不会升级其默认值或固定值。 例如， \<field1\>在下面的 XML 中不会对其进行提升。  
+ XML 拆装器不会升级其默认值或固定值的空元素，如果它具有结束标记。 例如， \<field1\>以下 XML 不会升级。  
   
 ```  
 <document>  
@@ -41,7 +41,7 @@ ms.locfileid: "25971835"
 </document>  
 ```  
   
- 但是，没有结束标记的空元素将升级，如下例所示：  
+ 但是，升级空元素没有结束标记 （如下面的示例中所示）。  
   
 ```  
 <document>  
@@ -49,8 +49,8 @@ ms.locfileid: "25971835"
 </document>  
 ```  
   
- 从文档中读取日期时间数据并将其放在上下文属性中时，如果数据采用 UTC 格式，则保留该格式。 如果日期时间数据采用“本地时间+偏移量”格式，则 BizTalk Server 将日期时间格式转换为偏移量加本地时间所得到的 UTC 格式。 如果日期时间格式没有指定时区或 UTC 格式，则时间假定为本地时间，并基于当前时区转换为 UTC 格式。  
+ 当从一个文档并将其放置到上下文属性，如果数据采用 UTC 格式读取日期时间数据，则保留该格式。 如果日期时间数据的格式本地 + 偏移量，BizTalk Server 将日期时间格式转换为偏移量加本地时间而得出的 UTC 格式。 如果日期时间格式没有指定时区或 UTC 格式，时间被假定为本地和转换为 UTC 基于当前时区。  
   
-## <a name="see-also"></a>另请参阅  
- [XML 反汇编程序管道组件](../core/xml-disassembler-pipeline-component.md)   
- [如何将 XML 反汇编程序管道组件配置](../core/how-to-configure-the-xml-disassembler-pipeline-component.md)
+## <a name="see-also"></a>请参阅  
+ [XML 拆装器管道组件](../core/xml-disassembler-pipeline-component.md)   
+ [如何配置 XML 拆装器管道组件](../core/how-to-configure-the-xml-disassembler-pipeline-component.md)

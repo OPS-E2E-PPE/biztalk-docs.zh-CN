@@ -12,17 +12,17 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4eaa3d227a2f02990befeafbd9ead5313fed3c7f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 372c3b7e7ce839729af416385b1404c09a7ca5dd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009830"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65322364"
 ---
-# <a name="orchestrationbinding-biztalk-server-sample"></a>OrchestrationBinding（BizTalk Server 示例）
+# <a name="orchestrationbinding-biztalk-server-sample"></a>OrchestrationBinding （BizTalk Server 示例）
 业务流程绑定示例演示使用 [Microsoft.BizTalk.ExplorerOM](http://msdn.microsoft.com/library/microsoft.biztalk.explorerom.aspx) 管理对象来配置和管理业务流程。  
 
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
 
 - 此示例要求，通过运行位于中的 setup.bat 来部署 HelloWorld 示例\<*示例路径*\>\Orchestrations\HelloWorld 目录。  
 
@@ -44,14 +44,14 @@ ms.locfileid: "37009830"
 ## <a name="where-to-find-this-sample"></a>本示例的所在位置  
  本示例位于以下 SDK 位置中：  
 
- \<*示例路径*\>\Admin\ExplorerOM\OrchestrationBinding  
+ \<*Samples Path*\>\Admin\ExplorerOM\OrchestrationBinding  
 
  下表显示了本示例中的文件及其用途说明：  
 
 
 |                                     文件                                     |                                                 Description                                                  |
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-|                             OrchestrationBinding.cs                             | 本示例中演示的操作所需的 [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 源文件。 |
+|                             OrchestrationBinding.cs                             | [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 此示例中演示的操作的源文件。 |
 | OrchestrationBinding.sln、OrchestrationBinding.csproj、OrchestrationBinding.suo |                                  示例的解决方案文件和项目文件。                                  |
 
 ## <a name="building-and-running-this-sample"></a>生成并运行本示例  
@@ -60,7 +60,7 @@ ms.locfileid: "37009830"
 
 1. 确保您已经完成生成和初始化 HelloWorld 示例的步骤。 中提供了这些步骤[HelloWorld （BizTalk Server 示例）](../core/helloworld-biztalk-server-sample.md)。  
 
-2. 在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中，打开解决方案文件 OrchestrationBinding.sln。  
+2. 在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]中，打开解决方案文件 OrchestrationBinding.sln。  
 
 3. 在“生成”  菜单上，单击“生成解决方案” 。  
 
@@ -68,7 +68,7 @@ ms.locfileid: "37009830"
 
 1.  打开命令窗口并导航到以下文件夹：  
 
-     \<*示例路径*\>\Admin\ExplorerOM\OrchestrationBinding\bin\Debug  
+     \<*Samples Path*\>\Admin\ExplorerOM\OrchestrationBinding\bin\Debug  
 
 2.  运行文件 OrchestrationBinding.exe 并按照示例提供的说明进行操作。  
 

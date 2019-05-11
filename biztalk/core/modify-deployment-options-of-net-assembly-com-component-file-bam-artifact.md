@@ -29,15 +29,15 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 641e955a5eed0bb18df90b170daa6b87feba0876
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a516857d6f790dfd1d5f4c7ad51c34144913785b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992006"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65324585"
 ---
 # <a name="how-to-modify-the-deployment-options-of-a-net-assembly-com-component-file-or-bam-artifact"></a>如何修改.NET 程序集、 COM 组件、 文件或 BAM 项目的部署选项
-本主题将介绍如何使用 BizTalk Server 管理控制台修改以下资源项目的部署选项：  
+本主题介绍如何使用 BizTalk Server 管理控制台来修改以下资源项目的部署选项：  
   
 - .NET 程序集  
   
@@ -47,28 +47,28 @@ ms.locfileid: "36992006"
   
 - BAM 项目  
   
-  您可能要修改部署属性，以便更改在本地计算机上安装应用程序时项目文件将复制到的目标位置。 如果未提供路径，则在安装时该文件将不会复制到本地计算机。  
+  你可能想要修改部署属性，以便更改在本地计算机上安装应用程序项目文件将复制到的目标位置。 如果未提供路径，该文件将不复制到本地计算机上安装。  
   
-  此外，您可能要修改 .NET 程序集的以下选项：  
+  此外，你可能想要修改.NET 程序集的以下选项：  
   
-- **将添加到全局程序集缓存添加资源 (gacutil)。** 如果选择此选项，则在将程序集添加到应用程序时，该程序集将添加到本地计算机上的全局程序集缓存 (GAC) 中。 此外，如果您以后刷新该程序集 (右键单击它，然后单击**刷新**)，该程序集添加到 GAC。 清除此选项的复选框并不从 GAC 删除该程序集（如果该程序集当前在 GAC 中存在）。  
+- **将添加到全局程序集缓存添加资源 (gacutil)。** 如果选择此选项，该程序集时将添加到全局程序集缓存 (GAC) 在本地计算机上该程序集添加到应用程序。 此外，如果您以后刷新该程序集 (右键单击它，然后单击**刷新**)，该程序集添加到 GAC。 清除此选项的复选框不会删除该程序集从 GAC 中，如果当前存在。  
   
-- **将添加到 MSI 文件导入 (gacutil) 上的全局程序集缓存。** 如果您选择了此选项，则在应用程序导出到某一 .msi 文件，然后该 .msi 文件导入到 BizTalk 组时，程序集将作为导入过程的一部分安装到本地计算机上的 GAC 中。  
+- **将添加到 MSI 文件导入 (gacutil) 上的全局程序集缓存。** 当选中此选项时，如果应用程序导出到.msi 文件，并且该.msi 文件导入到 BizTalk 组，导入过程的一部分在本地计算机上的 GAC 中安装该程序集。  
   
-- **添加到全局程序集缓存 (gacutil) 安装 MSI 文件。** 如果您选择了此选项，则在应用程序导出到某一 .msi 文件，然后应用程序根据该 .msi 文件安装到某一计算机时，程序集将作为安装过程的一部分安装到本地计算机上的 GAC 中。  
+- **添加到全局程序集缓存 (gacutil) 安装 MSI 文件。** 当选择此选项时，如果应用程序导出到.msi 文件，并根据该.msi 文件的计算机上安装应用程序时，作为安装过程的一部分在本地计算机上的 GAC 中安装该程序集。  
   
-- **请对 COM 组件可见 (regasm)。** 在选择此选项时，如果应用程序导出到某一 .msi 文件，并且应用程序根据该 .msi 文件安装到计算机上，则托管的 COM 程序集将作为安装过程的一部分添加到本地计算机上的 Windows 注册表中。 如果您指定该选项，则还必须为目标中的文件指定位置。  
+- **请对 COM 组件可见 (regasm)。** 时选择此选项时，如果应用程序导出到.msi 文件，并根据该.msi 文件的计算机上安装应用程序，托管的 COM 程序集添加到作为安装过程的一部分在本地计算机上的 Windows 注册表中。 如果指定此选项，还必须指定目标中的文件的位置。  
   
-- **注册服务组件 (regsvcs)。** 在选择此选项时，如果应用程序导出到某一 .msi 文件，并且应用程序根据该 .msi 文件安装到计算机上，则托管的 COM+ 程序集将作为安装过程的一部分添加到本地计算机上的 Windows 注册表中。 如果您指定该选项，则还必须为目标中的文件指定位置。  
+- **注册服务组件 (regsvcs)。** 时选择此选项时，如果应用程序导出到.msi 文件，并根据该.msi 文件的计算机上安装应用程序，托管的 COM + 程序集添加到作为安装过程的一部分在本地计算机上的 Windows 注册表中。 如果指定此选项，还必须指定目标中的文件的位置。  
   
-## <a name="prerequisites"></a>必要條件  
- 若要执行本主题中的过程，必须是 BizTalk Server Administrators 组的成员的帐户登录。 此外，如果您选择立即将程序集添加到 GAC 中的选项，则您的帐户必须也是本地管理员组的成员。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
+## <a name="prerequisites"></a>先决条件  
+ 若要执行本主题中的过程，必须是 BizTalk Server Administrators 组的成员的帐户登录。 此外，如果您选择立即将程序集添加到 GAC 的选项，你的帐户还必须是本地管理员组的成员。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
   
-### <a name="to-modify-the-deployment-properties-of-a-resource-artifact"></a>修改资源项目的部署属性  
+### <a name="to-modify-the-deployment-properties-of-a-resource-artifact"></a>若要修改资源项目的部署属性  
   
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
-2. 在控制台树中，依次展开 [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]、包含要修改其部署选项的项目的 BizTalk 组，以及包含该项目的应用程序。  
+2. 在控制台树中，展开[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，展开包含要修改部署选项，该项目的 BizTalk 组，然后展开包含该项目的应用程序。  
   
 3. 单击**资源**文件夹，右键单击该项目，然后单击**修改**。  
   

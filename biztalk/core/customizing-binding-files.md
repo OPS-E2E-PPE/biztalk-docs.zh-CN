@@ -1,5 +1,5 @@
 ---
-title: 自定义绑定文件 |Microsoft 文档
+title: 自定义绑定文件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,20 +17,20 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1534be96255084b963ed3883a1370af00f73b605
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 74322134891c7f52f9892d4c658d897fb95f9305
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238365"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390012"
 ---
 # <a name="customizing-binding-files"></a>自定义绑定文件
-绑定文件是 XML 文件，用于描述 BizTalk 管理数据库中的项目以及这些项目之间的关系。 绑定文件可用于将配置信息从一个 BizTalk 配置数据库中导出，再将这些信息导入其他 BizTalk 配置数据库。 例如，开发人员可以在开发环境中设计一个 BizTalk 解决方案及其相关项目，然后将这些项目导出到某一绑定文件中，并最终将这些项目导入到某一生产环境。 您还可以使用绑定文件更新现有配置。 例如，您可以使用绑定文件将在开发环境中进行的配置更改应用于生产环境中。 本主题介绍在使用绑定文件更新现有配置时需要注意的事项、绑定文件的结构以及可在绑定文件中设置的特定于适配器的配置属性。  
+绑定文件是描述 BizTalk 管理数据库和这些项目之间的关系中的项目的 XML 文件。 绑定文件可用于从一个 BizTalk 配置数据库中导出配置信息并导入另一个 BizTalk 配置数据库的此信息。 例如，开发人员可能设计一个 BizTalk 解决方案，并在开发环境中，及其相关的项目，然后将这些项目导出到绑定文件和最后，这些项目导入到生产环境。 绑定文件还可用于更新现有配置。 例如可以应用与绑定文件一起在开发环境与生产环境中进行的配置更改。 更新现有配置与绑定文件中，绑定文件，并可以在绑定文件中设置的适配器特定的配置属性的结构时，本主题讨论的注意事项。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [与绑定文件更新现有配置](../core/updating-an-existing-configuration-with-a-binding-file.md)  
+-   [使用绑定文件更新现有配置](../core/updating-an-existing-configuration-with-a-binding-file.md)  
   
 -   [绑定文件的结构](../core/structure-of-a-binding-file.md)  
   
--   [集成的 BizTalk 适配器的配置属性](../core/configuration-properties-for-integrated-biztalk-adapters.md)
+-   [配置集成的 BizTalk 适配器的属性](../core/configuration-properties-for-integrated-biztalk-adapters.md)

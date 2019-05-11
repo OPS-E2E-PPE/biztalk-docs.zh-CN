@@ -1,5 +1,5 @@
 ---
-title: 类型强制转换的支持 |Microsoft 文档
+title: 类型强制转换支持 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4e863221a556343ee7dc39825199dd8236408977
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9517a398dbdd75ac2a31bad6d92c82922ad64510
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279501"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398921"
 ---
-# <a name="support-for-type-casting"></a>类型强制转换的支持
-你可以使用**强制转换**方法**ClassMemberBinding**类将一种类型的对象转换为另一台兼容类型的对象。 目前，业务规则编辑器工具不支持创建规则使用**强制转换**方法。 您必须使用规则引擎对象模型通过编程方式来创建规则，以充分利用此功能。  
+# <a name="support-for-type-casting"></a>类型强制转换支持
+可以使用**Cast**方法**ClassMemberBinding**类，以一种类型的对象转换为另一种兼容类型的对象。 目前，业务规则编辑器工具不支持创建规则通过使用**强制转换**方法。 使用规则引擎对象模型来充分利用此功能，必须以编程方式创建规则。  
   
- 下面的示例代码演示如何使用**强制转换**方法将转换的实例**System.Object**类的实例**Cls2**类。 此示例还演示如何访问嵌套的成员的类中所述[访问类中的嵌套成员](../core/accessing-nested-members-of-a-class.md)。  
+ 下面的示例代码演示如何使用**Cast**方法的实例转换**System.Object**类的实例**Cls2**类。 此示例还演示如何访问类的嵌套的成员，如中所述[访问的类的嵌套成员](../core/accessing-nested-members-of-a-class.md)。  
   
 ```  
 using Microsoft.RuleEngine;  
@@ -91,6 +91,6 @@ namespace RuleTypeCasting
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [针对业务规则引擎中的类继承的支持](../core/support-for-class-inheritance-in-the-business-rule-engine.md)   
- [嵌套类成员访问](../core/accessing-nested-members-of-a-class.md)
+## <a name="see-also"></a>请参阅  
+ [对业务规则引擎中的类继承的支持](../core/support-for-class-inheritance-in-the-business-rule-engine.md)   
+ [访问类的嵌套成员](../core/accessing-nested-members-of-a-class.md)

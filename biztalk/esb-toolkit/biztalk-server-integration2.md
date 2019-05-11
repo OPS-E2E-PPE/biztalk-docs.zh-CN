@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server Integration2 |Microsoft 文档
+title: BizTalk Server Integration2 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,29 +12,29 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c47976873fcdd4efbb63bbceca653802cb8b9962
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: aa771b568123a9aedaf7e6d53928a20a0c659270
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26007078"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65302320"
 ---
-# <a name="biztalk-server-integration"></a>BizTalk Server 的集成
-AmberPoint 包作为自定义的 BizTalk 管道组件其 Microsoft BizTalk Server 集成产品。 你可以向你现有的自定义管线，使用 Visual Studio 中，添加此组件，如图 1 中所示。  
+# <a name="biztalk-server-integration"></a>BizTalk Server 集成
+AmberPoint 打包作为自定义 BizTalk 管道组件在其 Microsoft BizTalk Server 的集成产品。 可以向现有的自定义管道使用 Visual Studio 中，添加此组件，如图 1 中所示。  
   
- ![Visual Studio 管道](../esb-toolkit/media/ch9-visualstudiopipeline.jpg "Ch9 VisualStudioPipeline")  
+ ![VisualStudio Pipeline](../esb-toolkit/media/ch9-visualstudiopipeline.jpg "Ch9-VisualStudioPipeline")  
   
  **图 1**  
   
- **安装到发送管道 AmberPoint 组件**  
+ **将 AmberPoint 组件安装到发送管道**  
   
- 此外，AmberPoint 附带四个预定义的管道，你可以直接绑定到现有接收位置和发送端口使用 BizTalk 管理控制台。 图 2 显示给适配器接收管道的绑定。  
+ 此外，AmberPoint 随附于四个预定义的管道，您可以直接绑定到现有的接收位置和发送端口使用 BizTalk 管理控制台。 图 2 显示了向适配器的接收管道的绑定。  
   
- ![绑定 AmberPoint](../esb-toolkit/media/ch9-bindingamberpoint.jpg "Ch9 BindingAmberPoint")  
+ ![绑定 AmberPoint](../esb-toolkit/media/ch9-bindingamberpoint.jpg "Ch9-BindingAmberPoint")  
   
  **图 2**  
   
- **绑定 AmberPoint 接收管道到适配器**  
+ **绑定 AmberPoint 接收到适配器的管道**  
   
 > [!NOTE]
->  AmberPoint SOA 管理系统 (SMS) 产品是与 BizTalk Server 集成的 AmberPoint，Inc.的产品。 关于 AmberPoint 和其 SOA 监管产品的详细信息，请参阅[AmberPoint](http://go.microsoft.com/fwlink/?LinkId=188561) Web 站点。
+>  AmberPoint SOA 管理系统 (SMS) 产品是与 BizTalk Server 集成的 AmberPoint，inc.的产品。 有关 AmberPoint 和其 SOA 管理产品的详细信息，请参阅[AmberPoint](http://go.microsoft.com/fwlink/?LinkId=188561) Web 站点。

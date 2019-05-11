@@ -18,12 +18,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d8eb06321fc5025efa17796a79cddcbe2d14ef9e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 70d06bb7832d42264d90d0edd63faf5d747bf849
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970814"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65247672"
 ---
 # <a name="batch-definition-tab"></a>批处理定义选项卡
 您使用**批定义**选项卡以启用中的入站批处理，批处理 / 出站批处理，批处理并选择可用架构以供出站批处理。  

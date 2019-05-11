@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d80d5aeb35c27a04f637f4e5ca466996855f35fb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fe75100af806224f79fe14d69fbf5e090f78182f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973062"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400200"
 ---
 # <a name="biztalk-server-messagebox-database-filegroups-sql-script"></a>BizTalk Server MessageBox 数据库文件组 SQL 脚本
 本主题提供了可以在 BizTalk Server 环境中创建多个文件和文件组的 BizTalk MessageBox 数据库中的 SQL Server 实例运行的 SQL 脚本。  
@@ -32,7 +32,7 @@ ms.locfileid: "36973062"
 > 
 >    - 如果安装运行的 BizTalk Server 修补程序或 service pack **msgboxlogic.sql**，将需要再次运行的 MessageBox 数据库文件组 SQL 脚本。 这是必需的因为 msgboxlogic.sql 还原 MessageBox 文件组和文件复制到默认设置，即使用主文件组。 若要确定是否修补程序或服务包运行 msgboxlogic.sql，检查**文件信息**修补程序 KB 文章的部分。 或检查 setup.xml 文件所包含的服务包文件。  
 >    - 如果您添加到 BizTalk Server 组新的主机，将需要再次运行 MessageBox 数据库文件组 SQL 脚本。 这是必需的因为存储的过程创建新主机配置为主机默认使用的主文件组的表。  
->    - **在多 MessageBox 环境中应用 MessageBox 数据库文件组 SQL 脚本：** 但不是必需的可以对在多 Messagebox 环境中每个 MessageBox 执行 MessageBox 数据库文件组 SQL 脚本。  
+>    - **应用在多 MessageBox 环境中的 MessageBox 数据库文件组 SQL 脚本：** 尽管不是必需的则可以对在多 Messagebox 环境中每个 MessageBox 执行 MessageBox 数据库文件组 SQL 脚本。  
   
 ## <a name="biztalk-messagebox-database-filegroups-sql-script"></a>BizTalk MessageBox 数据库文件组 SQL 脚本  
  可以使用以下 SQL 脚本来创建多个文件和文件组主题中所述[优化文件组的数据库 2](../technical-guides/optimizing-filegroups-for-the-databases2.md)。  

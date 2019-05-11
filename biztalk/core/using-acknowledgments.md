@@ -34,38 +34,38 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2fe568185bde471bea9396786e58c31ced960d23
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ec79910977625c7e93bac1e70b0f482a0db67677
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968182"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399951"
 ---
 # <a name="using-acknowledgments"></a>使用确认
-在对通过端口处理消息期间所遇到的情况作出响应时，BizTalk 消息引擎将生成肯定确认 (ACK) 和否定确认 (NACK)。 BizTalk Server 发布肯定确认以指示消息传输成功，发布否定确认以指示传输失败并挂起消息。  
+BizTalk 消息引擎生成肯定确认 (ACK) 和否定确认 (NACK) 以响应通过端口的消息处理过程中遇到的条件。 BizTalk Server 发布肯定确认以指示成功的消息传输和否定确认来指明传输失败和消息挂起。  
   
 ## <a name="why-use-acknowledgments"></a>为什么使用确认？  
- 肯定确认和否定确认所提供的强有力的反馈信息可以用来确定消息是否到达其目标，或是否在传输过程中遇到一个或多个问题。 例如，确认在以下情况下非常有用：  
+ 正和负确认所提供的强有力的反馈，可用于确定消息是否到达其目标，或遇到了此过程的一个或多个问题。 例如，确认时很有用：  
   
-- 您希望监视新贸易合作伙伴的接收端口，以查看架构验证信息和其他错误。  
+- 你想要进行架构验证新的贸易合作伙伴和其他错误的监视器接收端口。  
   
-- 如果您希望将已发出的贷款申请的状态标记为“正在处理”（如果该申请已成功发送给合作伙伴进行审批）或“失败”（如果传输失败。例如，合作伙伴的服务器停机）。  
+- 你想要将标记为"进程内"发出，如果已成功发送给合作伙伴进行审批或"失败"如果传输失败 （例如，如果合作伙伴的服务器已关闭） 贷款申请的状态。  
   
-- 所处理的交换包含多个采购订单，您希望对已传输或传输失败的订单数进行跟踪。  
+- 处理的交换包含多个采购订单，并且想要跟踪对已传输或传输失败的订单数。  
   
-  通过使用确认和利用筛选器的基于内容的路由，可以完成以下各个方案：  
+  可以使用确认和基于内容的路由使用筛选器来完成这些方案的每个操作。  
   
 ## <a name="routing-acknowledgments"></a>路由确认  
- 在发布 ACK 或 NACK 后，引发 ACK/NACK 的消息内的所有消息上下文属性都将降级。 已升级的任何属性都不会流向确认。 若要确认路由，生成使用的以下属性的筛选器**BTS**命名空间：  
+ 当发布 ACK 或 NACK 后时，所有从导致 ACK/NACK 的消息的消息上下文属性都将降级。 提升了任何属性不会流向确认。 若要确认路由，生成使用的以下属性的筛选器**BTS**命名空间：  
   
 |属性名称|数据类型|Description|  
 |-------------------|---------------|-----------------|  
 |BTS.AckFailureCategory|xs:int|标识**ErrorCategory**，它可使位置和挂起的原因。|  
 |BTS.AckFailureCode|xs:string|标识**ErrorCode**，它可使位置和挂起的原因。|  
-|BTS.AckType|xs:string|对于肯定确认，值为 ACK；对于否定确认，值为 NACK。|  
+|BTS.AckType|xs:string|值是 ACK 肯定确认和 NACK 对于否定确认。|  
 |BTS.AckID|xs:string|标识**MessageID**的原始消息。|  
 |BTS.AckOwnerID|xs:string|标识原始消息中的实例 ID。|  
-|BTS.CorrelationToken|xs:string|标识原始消息（如果出现一个）中的相关标记。|  
+|BTS.CorrelationToken|xs:string|如果不存在，请标识原始消息中的相关标记。|  
 |BTS.AckDescription|xs:string|标识**ErrorDescription**，它可使位置和挂起的原因。|  
 |BTS.AckSendPortID|xs:string|标识**SendPortID**原始消息中。|  
 |BTS.AckSendPortName|xs:string|标识**SendPortName**原始消息中。|  
@@ -75,10 +75,10 @@ ms.locfileid: "36968182"
 |BTS.AckInboundTransportLocation|xs:string|标识**InboundTransportLocation**原始消息中。|  
   
 > [!NOTE]
->  包含错误信息的属性不会出现在 ACK 中，因为它们表示传递成功。  
+>  包含错误信息的属性不出现在 Ack，因为它们表示传递成功。  
   
 ## <a name="negative-acknowledgment-message-body"></a>否定确认消息正文  
- 有关肯定确认或否定确认的很多重要信息都包含在上下文属性中。 除上下文属性之外，NACK 还包含消息正文部分，其中包含 SOAP 错误。 SOAP 错误的格式如下：  
+ 很多有关肯定或否定确认的重要信息都包含在上下文属性。 除了上下文属性，Nack 还包含消息正文部分包含 SOAP 错误。 SOAP 错误的格式如下所示：  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -101,10 +101,10 @@ ms.locfileid: "36968182"
 </SOAP:Envelope>  
 ```  
   
- 适配器引发的异常消息位于 ErrorDescription 元素的“SOAP 详细信息”部分中。  
+ 适配器引发的异常消息位于 ErrorDescription 元素中的 SOAP 详细信息部分。  
   
-### <a name="accessing-the-message-body-from-an-orchestration"></a>在业务流程中访问消息正文  
- 如果具有需要送达通知的业务流程端口，则传输失败时引发的 DeliveryFailureException 是从 NACK 消息正文中包含的 SOAP 错误反序列化而来的。 若要在业务流程中访问异常消息字符串，请将 DeliveryFailureException 转换为 SoapException，然后访问 InnerXml，如以下代码所示：  
+### <a name="accessing-the-message-body-from-an-orchestration"></a>从业务流程中访问消息正文  
+ 如果您具有需要送达通知的业务流程端口，传输失败时引发的 DeliveryFailureException 是从 NACK 消息正文中包含的 SOAP 错误反序列化。 若要访问异常消息的字符串从业务流程中，将 DeliveryFailureException 转换为 SoapException，然后访问 InnerXml，如以下代码所示：  
   
 ```  
 // Cast the DeliveryFailureException to a SoapException…  
@@ -127,7 +127,7 @@ System.Diagnostics.Trace.WriteLine(se.Detail.InnerXml);
 ```  
   
 ## <a name="when-is-an-acknowledgment-published"></a>何时发布确认？  
- 肯定确认 (ACK) 和否定确认 (NACK) 都是在失败时向 MessageBox 数据库发布的（假设至少有一个匹配订阅）。 例如，如果 BizTalk Server 找不到与从接收端口读取的消息相匹配的架构，并且没有任何 NACK 订阅，则将会挂起该消息（如果尚未启用失败消息路由），并且不发布 NACK。  
+ 肯定 (确认 ACK) 和否定 (NACK) 确认发布到 MessageBox 数据库发生失败时提供至少一个相匹配的订阅。 例如，如果 BizTalk Server 找不到匹配的架构，从接收端口读取一个消息，并没有任何 NACK 订阅，它将挂起消息 （如果失败的消息路由尚未启用） 而不发布 NACK  
   
 ## <a name="see-also"></a>请参阅  
  [错误处理](../core/error-handling.md)   

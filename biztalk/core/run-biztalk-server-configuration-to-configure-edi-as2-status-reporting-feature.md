@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 89d7fcf5e473485d0b61edcd6d5f287198021d3f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 96b885b9fcf16929a8f6ac064fbbf56354c7e1e7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992710"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65254527"
 ---
 # <a name="to-enable-status-reporting-run-39biztalk-server-configuration39-and-configure-edi-as2-status-reporting-feature"></a>若要启用状态报告，请运行&#39;BizTalk Server 配置&#39;并配置 EDI-AS2 状态报告功能
 ## <a name="details"></a>详细信息  
@@ -30,7 +30,7 @@ ms.locfileid: "36992710"
 |  事件源   |             [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI             |
 |    组件    |                                                   EDI 引擎                                                   |
 |  符号名称  |                                                       0                                                        |
-|  消息正文   | 若要启用状态报告，请运行“BizTalk Server 配置”并配置 EDI/AS2 状态报告功能。  |
+|  消息正文   | 若要启用状态报告，请运行 BizTalk Server 配置，并配置 EDI/AS2 状态报告功能。 |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明，EDI/AS2 状态报告为不工作，因为尚未配置。  

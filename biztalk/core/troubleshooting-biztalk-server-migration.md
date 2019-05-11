@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server 迁移的疑难解答 |Microsoft 文档
+title: BizTalk Server 迁移疑难解答 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1ddb6d9780a86183de5a09791de44adda5d57dab
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 931dd72f3c6ffc73209fca61a1c75becd30151c7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26006054"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398680"
 ---
 # <a name="troubleshooting-biztalk-server-migration"></a>BizTalk Server 迁移疑难解答
-本部分提供有关从迁移 BizTalk 应用程序时遇到的常见问题的信息的一个集中的位置[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]或[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]给 BizTalk Server 2009。  
+本部分提供有关从应用程序迁移 BizTalk 时遇到的常见问题的信息的一个集中的位置[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]或[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]2009 升级到 BizTalk Server。  
   
 ## <a name="known-issues"></a>已知问题  
   
-#### <a name="custom-applications-might-not-work-while-upgrading"></a>自定义应用程序可能无法升级时  
+#### <a name="custom-applications-might-not-work-while-upgrading"></a>自定义应用程序可能无法工作时升级  
   
 ##### <a name="problem"></a>问题  
- 从升级时[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]或[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]给 BizTalk Server 2009 某些自定义应用程序可能无法工作。  
+ 从升级时[!INCLUDE[btsbiztalkserver2006r2](../includes/btsbiztalkserver2006r2-md.md)]或[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]2009 升级到 BizTalk Server 中，某些自定义应用程序可能无法工作。  
   
 ##### <a name="cause"></a>原因  
- 所有 BizTalk 都托管在 CLR 4.0 上运行的代码组件。 由于这些组件是针对 [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] 而编译的，所以它们需要有 config 文件才能在 CLR 4.0 上运行。  
+ 所有 BizTalk 都托管代码组件在 CLR 4.0 上运行。 这些组件编译针对[!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]，他们需要一个配置文件用于在 CLR 4.0 上运行。  
   
 ##### <a name="solution"></a>解决方案  
- 若要解决此问题，更新配置文件。  
+ 若要解决此问题，请更新配置文件。  
   
 ```  
 <configuration>  
@@ -43,5 +43,5 @@ ms.locfileid: "26006054"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [故障排除](../core/troubleshooting.md)

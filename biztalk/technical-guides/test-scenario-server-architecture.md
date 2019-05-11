@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 369286ea2c5c42a53a8e22a7e0b03ac5701db0d5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4394ab90c9a20ebb081f5d8844a2ad727ac1c71b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981262"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65301649"
 ---
 # <a name="test-scenario-server-architecture"></a>测试方案服务器体系结构
 本主题提供了在负载测试期间的服务器和对其执行负载测试的不同的服务器体系结构之间的消息流的概览。  
@@ -31,7 +31,7 @@ ms.locfileid: "36981262"
  下图提供消息流的概述。 在图中的数字对应于图下方列出的步骤。  
   
  ![消息流概述](../technical-guides/media/archmsgflow.gif "ArchMsgFlow")  
-“消息流”概述  
+消息流概述  
   
 1. 负载测试的负载代理控制器计算机启动**VSTS_TestController**:  
   

@@ -19,33 +19,33 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7baf6af0e4505e448a854fe6def372614bfdaa49
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fd85029e2d38134123b3667f06de3ceadab6f3b7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269021"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398344"
 ---
 # <a name="publishing-web-services-with-soap-headers"></a>使用 SOAP 标头的发布 Web 服务
 运行 BizTalk Web Services 发布向导时，会将 SOAP 标头添加到 Web Services 中。 当发布支持 SOAP 标头的 Web 服务时，标头可供业务流程和管道组件作为包含的 SOAP 标头的字符串表示形式之间实现的上下文属性。  
   
 ## <a name="defined-soap-headers"></a>已定义的 SOAP 标头  
- 当使用向导添加已定义的 SOAP 标头时，向导会使用对应于 SOAP 标头的根元素的名称创建上下文属性。 所有定义的 SOAP 标头上下文属性具有命名空间**http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**。 当 SOAP 适配器将 SOAP 请求转换为 BizTalk 消息时，它会创建一个 SOAP 标头上下文属性。  
+ 当使用向导添加已定义的 SOAP 标头时，向导会使用对应于 SOAP 标头的根元素的名称创建上下文属性。 定义的 SOAP 标头上下文属性具有的命名空间**http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**。 当 SOAP 适配器将 SOAP 请求转换为 BizTalk 消息时，它会创建一个 SOAP 标头上下文属性。  
   
  下面的示例显示一个简单的 SOAP 请求：  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
-       <soap:Header>  
-             <OrigDest xmlns="http://SOAPHeaderWS.ItemAvailability">  
-                    <Origination>Work</Origination>  
-                    <Destination>Home</Destination>  
-             </OrigDest>  
-       </soap:Header>  
-       <soap:Body>  
+       <soap:Header>  
+             <OrigDest xmlns="http://SOAPHeaderWS.ItemAvailability">  
+                    <Origination>Work</Origination>  
+                    <Destination>Home</Destination>  
+             </OrigDest>  
+       </soap:Header>  
+       <soap:Body>  
   
-       </soap:Body>  
+       </soap:Body>  
 </soap:Envelope>  
 ```  
   
@@ -58,7 +58,7 @@ ms.locfileid: "22269021"
 ```  
   
 ## <a name="unknown-soap-headers"></a>未知的 SOAP 标头  
- 如果你选择在向导中支持未知的 SOAP 标头，向导将创建同名的上下文属性**UnknownHeaders**和命名空间**http://schemas.microsoft.com/BizTalk/2003/soap-properties**. **UnknownHeaders**上下文属性包含所有收到的未知 SOAP 标头。  
+ 如果你选择在向导中支持未知的 SOAP 标头，向导将创建的上下文属性名称**UnknownHeaders**和命名空间**http://schemas.microsoft.com/BizTalk/2003/soap-properties**。 **UnknownHeaders**上下文属性包含所有收到的未知 SOAP 标头。  
   
  例如，如果你收到具有根元素名称的未知的 SOAP 标头**CustomerGroup**、 **UnknownHeaders**上下文属性包含字符串：  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3cd153a8ceeba983c71854d02854e37ed046e1bd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2bbb3f1478e0c6436dceafcc8874de23ee10cb2b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987526"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399703"
 ---
 # <a name="the-resolver-web-service"></a>解析程序 Web 服务
 解析程序 Web 服务是在 ESB 动态解析机制的网关。 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] 包括此服务的两个版本： ASP.NET (ASMX) 版本和 Windows Communication Foundation (WCF) 版本。 服务名称是**ESB。ResolverServices**和**ESB。ResolverServices.WCF**分别和服务公开以下方法：  

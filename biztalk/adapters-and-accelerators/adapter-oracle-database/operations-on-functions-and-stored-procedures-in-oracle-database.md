@@ -19,12 +19,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 856e6bf882605737380f0bbe6185dce8a56c5828
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2e091c31879fadef5c30ac25671297c3f18152b8
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979606"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528989"
 ---
 # <a name="operations-on-functions-and-stored-procedures-in-oracle-database"></a>对函数和 Oracle 数据库中的存储的过程的操作
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]按以下方式支持 Oracle 函数、 过程和包：  

@@ -1,5 +1,5 @@
 ---
-title: 故障排除 BizTalk Server 依赖项 |Microsoft 文档
+title: 故障排除 BizTalk Server 依赖项 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,30 +12,30 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a75cf1986c9c7bf66aa48370704ca3569d0db87
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4b532fcdd7b323ad537a6cd0534ae690bd0c360c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279245"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398688"
 ---
 # <a name="troubleshooting-biztalk-server-dependencies"></a>故障排除的 BizTalk Server 依赖项
-Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]广泛使用的几个其他 Microsoft 产品的设计时和运行时操作。 本部分包含了解决可能出现在这些基础技术中的问题的疑难解答。  
+Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]广泛使用的多个其他 Microsoft 产品的设计时和运行时操作。 本部分包含用于解决可能发生在这些基础技术的问题的故障排除指南。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [与 MSDTC 问题疑难解答](../core/troubleshooting-problems-with-msdtc.md)  
+-   [对 MSDTC 问题进行故障排除](../core/troubleshooting-problems-with-msdtc.md)  
   
--   [故障排除的证书](../core/troubleshooting-certificates.md)  
+-   [证书疑难解答](../core/troubleshooting-certificates.md)  
   
 -   [企业单一登录故障排除](../core/troubleshooting-enterprise-single-sign-on.md)  
   
 -   [故障排除 SQL Server](../core/troubleshooting-sql-server.md)  
   
--   [Web 服务疑难解答](../core/troubleshooting-web-services.md)  
+-   [Web Services 疑难解答](../core/troubleshooting-web-services.md)  
   
 -   [Windows Server 群集进行疑难解答](../core/troubleshooting-a-windows-server-cluster.md)  
   
--   [Internet 信息服务疑难解答](../core/troubleshooting-internet-information-services.md)  
+-   [Internet 信息服务的故障排除](../core/troubleshooting-internet-information-services.md)  
   
--   [故障排除 Windows SharePoint Services](../core/troubleshooting-windows-sharepoint-services.md)
+-   [Windows SharePoint Services 故障排除](../core/troubleshooting-windows-sharepoint-services.md)

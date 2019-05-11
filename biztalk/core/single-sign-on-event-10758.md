@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10758 |Microsoft Docs
+title: 单一登录：Event 10758 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b6fb431e66396c813076be8081f25b4664d629f9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b628b902177065e0a27e054b7bf632ad50a9bb44
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000726"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65307611"
 ---
-# <a name="single-sign-on-event-10758"></a>单一登录： 事件 10758
+# <a name="single-sign-on-event-10758"></a>单一登录：事件 10758
 ## <a name="details"></a>详细信息  
   
 |                 |                                                            |
@@ -28,7 +28,7 @@ ms.locfileid: "37000726"
 | 产品版本 | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
 |    事件 ID     |                           10758                            |
 |  事件源   |                           ENTSSO                           |
-|    组件    |                            N/A                             |
+|    组件    |                            不可用                             |
 |  符号名称  |                   ENTSSO_E_FIELD_EXISTS                    |
 |  消息正文   |                 该字段已存在。                  |
   
@@ -36,4 +36,4 @@ ms.locfileid: "37000726"
  该字段已存在。  
   
 ## <a name="user-action"></a>用户操作  
- 不需要用户进行任何操作。
+ 不不需要任何用户操作。

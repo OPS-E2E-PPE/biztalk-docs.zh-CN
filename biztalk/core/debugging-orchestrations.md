@@ -1,5 +1,5 @@
 ---
-title: 调试业务流程 |Microsoft 文档
+title: 调试业务流程 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,24 +17,24 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8e51bacd379cbf998019ede10847e333090c65b4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7bfacf3d7f969cda8cffc256ccb3a94e6e5dec5c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238421"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389751"
 ---
 # <a name="debugging-orchestrations"></a>调试业务流程
-使用 BizTalk Server 管理控制台中的组中心数据库页上，BizTalk 使您能够跟踪、 视图和高级进度或业务流程和实现它的组件的低级别的详细信息的报表。 除此之外，你还可以通过将信息写入事件日志以跟踪输出，或使用自定义代码来跟踪您的业务流程来调试你的业务流程。  
+在 BizTalk Server 管理控制台中使用的组中心页，BizTalk 使您能够跟踪、 视图和报告高级进度或业务流程和实现它的组件的低级别详细信息。 除此之外，还可以通过将信息写入事件日志以跟踪输出，或使用自定义代码来跟踪您的业务流程调试您的业务流程。  
   
 ## <a name="in-this-section"></a>本节内容  
  [调试业务流程运行时错误](../core/debugging-orchestration-runtime-errors.md)  
   
- [将信息写入到事件日志](../core/writing-information-to-the-event-log.md)  
+ [将信息写入事件日志](../core/writing-information-to-the-event-log.md)  
   
- [使用自定义代码进行调试业务流程](../core/debugging-orchestrations-by-using-custom-code.md)  
+ [使用自定义代码调试业务流程](../core/debugging-orchestrations-by-using-custom-code.md)  
   
- [配置业务流程的远程调试](../core/configuring-remote-debugging-for-orchestrations.md)  
+ [为业务流程配置远程调试](../core/configuring-remote-debugging-for-orchestrations.md)  
   
-## <a name="see-also"></a>另请参阅  
- [生成并运行业务流程](../core/building-and-running-orchestrations.md)
+## <a name="see-also"></a>请参阅  
+ [生成和运行业务流程](../core/building-and-running-orchestrations.md)

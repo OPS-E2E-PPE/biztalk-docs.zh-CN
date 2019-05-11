@@ -1,5 +1,5 @@
 ---
-title: 错误-泛型输入验证 |Microsoft 文档
+title: 错误-常规输入验证 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ee7d197655b440c5217366cbdc45af39d9def96b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e9ad5d3e89600723e0fade50e93b20f7b9a0be43
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239789"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389049"
 ---
-# <a name="error---generic-input-validation"></a>错误-泛型输入验证
+# <a name="error---generic-input-validation"></a>错误-常规输入验证
 **错误代码**  
   
  btm1045  
   
  **说明**  
   
- 无法根据源架构来验证为测试映射操作指定的输入实例消息文件，具体原因并未指明。  
+ 为测试映射操作指定的输入的实例消息文件不是根据源架构验证原因不明。  
   
  **用户执行任何操作**  
   
- 在 BizTalk 编辑器中打开源架构和使用**验证架构**和**生成实例**命令中，右键单击解决方案资源管理器，以找出问题中的架构时可用。
+ 在 BizTalk 编辑器中打开源架构并使用**验证架构**并**生成实例**命令中，右键单击解决方案资源管理器中，以找出问题的架构后即可。

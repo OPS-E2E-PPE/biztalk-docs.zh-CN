@@ -1,5 +1,5 @@
 ---
-title: 与使用的 Web 服务的 SOAP 标头 |Microsoft 文档
+title: SOAP 标头与已使用的 Web 服务 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,64 +18,64 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b486517e062067b76cd7598a7d8117b92ff83e39
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9cd18a60feae0d3726b56892d1bcea2864a25d97
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276565"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65244346"
 ---
-# <a name="soap-headers-with-consumed-web-services"></a>SOAP 标头与使用的 Web Services
-将 Web 服务添加到你的业务流程使用后**添加 Web 引用**对话框中，你可以使用 Web 服务描述语言 (WSDL) 定义 Web 服务中的 SOAP 标头。  
+# <a name="soap-headers-with-consumed-web-services"></a>SOAP 标头与已使用的 Web 服务
+将 Web 服务添加到你的业务流程使用后**添加 Web 引用**对话框中，可以使用 Web 服务描述语言 (WSDL) 定义 Web 服务中的 SOAP 标头。  
   
 > [!NOTE]
->  使用的 Web Services 不支持未知 SOAP 标头。  
+>  已使用的 Web services 不支持未知的 SOAP 标头。  
   
- 已耗用的 Web 服务的 WSDL 列出绑定元素中定义的 SOAP 标头。 下面的示例演示在使用 Web 服务的 WSDL 文件中的一个绑定元素：  
+ 已使用的 Web 服务的 WSDL 列出绑定元素中定义的 SOAP 标头。 下面的示例演示已使用的 Web 服务的 WSDL 文件中的绑定元素：  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
 <definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://SOAPHeaderWS.ItemAvailability" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://SOAPHeaderWS.ItemAvailability" xmlns="http://schemas.xmlsoap.org/wsdl/">  
-       <types>  
-             <s:schema elementFormDefault="qualified" targetNamespace="http://SOAPHeaderWS.ItemAvailability">  
+       <types>  
+             <s:schema elementFormDefault="qualified" targetNamespace="http://SOAPHeaderWS.ItemAvailability">  
   
-                    <s:element name="OrigDest" type="s0:OrigDest"/>  
-                    <s:complexType name="OrigDest">  
-                           <s:sequence>  
-                                 <s:element minOccurs="0" maxOccurs="1" name="Origination" type="s:string"/>  
-                                 <s:element minOccurs="0" maxOccurs="1" name="Destination" type="s:string"/>  
-                           </s:sequence>  
-                    </s:complexType>  
-             </s:schema>  
-       </types>  
+                    <s:element name="OrigDest" type="s0:OrigDest"/>  
+                    <s:complexType name="OrigDest">  
+                           <s:sequence>  
+                                 <s:element minOccurs="0" maxOccurs="1" name="Origination" type="s:string"/>  
+                                 <s:element minOccurs="0" maxOccurs="1" name="Destination" type="s:string"/>  
+                           </s:sequence>  
+                    </s:complexType>  
+             </s:schema>  
+       </types>  
   
-       <binding name="ItemAvailabilityServiceSoap" type="s0:ItemAvailabilityServiceSoap">  
-             <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>  
-             <operation name="ItemAvailability">  
-                    <soap:operation soapAction="http://SOAPHeaderWS.ItemAvailability/ItemAvailability" style="document"/>  
-                    <input>  
-                           <soap:body use="literal"/>  
-                           <soap:header message="s0:ItemAvailabilityOrigDest" part="OrigDest" use="literal"/>  
-                    </input>  
-                    <output>  
-                           <soap:body use="literal"/>  
-                           <soap:header message="s0:ItemAvailabilityOrigDest" part="OrigDest" use="literal"/>  
-                    </output>  
-             </operation>  
-       </binding>  
-       <service name="ItemAvailabilityService">  
-             <port name="ItemAvailabilityServiceSoap" binding="s0:ItemAvailabilityServiceSoap">  
-                    <soap:address location="http://localhost/SOAPHeaderWS/ItemAvailability.asmx"/>  
-             </port>  
-       </service>  
+       <binding name="ItemAvailabilityServiceSoap" type="s0:ItemAvailabilityServiceSoap">  
+             <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>  
+             <operation name="ItemAvailability">  
+                    <soap:operation soapAction="http://SOAPHeaderWS.ItemAvailability/ItemAvailability" style="document"/>  
+                    <input>  
+                           <soap:body use="literal"/>  
+                           <soap:header message="s0:ItemAvailabilityOrigDest" part="OrigDest" use="literal"/>  
+                    </input>  
+                    <output>  
+                           <soap:body use="literal"/>  
+                           <soap:header message="s0:ItemAvailabilityOrigDest" part="OrigDest" use="literal"/>  
+                    </output>  
+             </operation>  
+       </binding>  
+       <service name="ItemAvailabilityService">  
+             <port name="ItemAvailabilityServiceSoap" binding="s0:ItemAvailabilityServiceSoap">  
+                    <soap:address location="http://localhost/SOAPHeaderWS/ItemAvailability.asmx"/>  
+             </port>  
+       </service>  
 </definitions>  
 ```  
   
- 有关使用 SOAP 标头的详细信息，请在.NET Framework 文档中参阅"使用 SOAP 标头" [http://go.microsoft.com/fwlink/?LinkId=62266](http://go.microsoft.com/fwlink/?LinkId=62266)。  
+ 有关使用 SOAP 标头的详细信息，请参阅"使用 SOAP 标头"在.NET Framework 文档中[ http://go.microsoft.com/fwlink/?LinkId=62266 ](http://go.microsoft.com/fwlink/?LinkId=62266)。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [使用 SOAP 标头使用的 Web 服务](../core/consuming-web-services-with-soap-headers.md)  
+-   [使用具有 SOAP 标头的 Web 服务](../core/consuming-web-services-with-soap-headers.md)  
   
 -   [在业务流程中使用 SOAP 标头](../core/using-soap-headers-in-orchestrations.md)  
   

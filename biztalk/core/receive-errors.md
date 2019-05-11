@@ -1,5 +1,5 @@
 ---
-title: 收到错误 |Microsoft 文档
+title: 收到错误 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3a04bd00d17a0f59a97f5fec8256e573a2e271a3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 78cdc8f7b0c6b6f730473ddcfffd0f63edd31d02
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268269"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398255"
 ---
 # <a name="receive-errors"></a>收到错误
 本部分包含诊断和解决 WCF 接收错误的详细信息。  
@@ -26,12 +26,12 @@ ms.locfileid: "22268269"
   
 -   [创建接收位置命令失败](../core/create-receive-locations-command-failed.md)  
   
--   [注册独立接收方地址失败](../core/failed-to-register-isolated-receiver-for-address.md)  
+-   [无法为地址注册独立的接收器](../core/failed-to-register-isolated-receiver-for-address.md)  
   
--   [接收位置找不到的地址](../core/receive-location-for-address-not-found.md)  
+-   [找不到地址接收位置](../core/receive-location-for-address-not-found.md)  
   
--   [接收位置找不到的元数据](../core/receive-location-for-metadata-not-found.md)  
+-   [未找到元数据的接收位置](../core/receive-location-for-metadata-not-found.md)  
   
--   [事务请求-响应接收位置不支持](../core/transactional-request-response-receive-location-is-not-supported.md)  
+-   [不支持事务性请求-响应接收位置](../core/transactional-request-response-receive-location-is-not-supported.md)  
   
 -   [无法创建一个或多个 BizTalk 接收位置](../core/unable-to-create-one-or-more-biztalk-receive-locations.md)

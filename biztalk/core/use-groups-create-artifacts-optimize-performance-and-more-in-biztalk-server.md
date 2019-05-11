@@ -1,6 +1,6 @@
 ---
-title: 使用组、 创建项目、 优化性能，以及在 BizTalk Server 中的更多 |Microsoft 文档
-description: 快速链接以使用 BizTalk 管理创建组、 部署应用程序、 更改性能设置，和在 BizTalk Server 中重新启动 BizTalk 服务
+title: 使用组、 创建项目、 优化性能，并在 BizTalk Server 中的详细信息 |Microsoft Docs
+description: 若要使用 BizTalk 管理的快速链接创建组、 部署应用程序、 更改性能设置和重新启动 BizTalk Server 中的 BizTalk 服务
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 28d46e846907e0ea22f24051e392019ddfc8b580
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2a3d95040ffd28c18288aa9c68d76525519ce744
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286957"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398593"
 ---
-# <a name="use-groups-create-artifacts-optimize-performance-and-more-in-biztalk-server"></a>使用组、 创建项目、 优化性能，和 BizTalk Server 中的详细信息
+# <a name="use-groups-create-artifacts-optimize-performance-and-more-in-biztalk-server"></a>使用组、 创建项目、 优化性能，并在 BizTalk Server 中的详细信息
 管理 BizTalk Server 组、 应用程序、 性能设置和重新启动服务的信息。  
   
 ## <a name="next-steps"></a>后续步骤 
@@ -39,4 +39,4 @@ ms.locfileid: "22286957"
 
 - [管理 BizTalk Server 性能设置](../core/managing-biztalk-server-performance-settings.md)  
 
--   [重新启动 BizTalk Server 服务，并关闭 BizTalk 服务器](../core/how-to-start-stop-pause-resume-or-restart-biztalk-server-services.md)  
+-   [重新启动 BizTalk Server 服务，并关闭 BizTalk Server](../core/how-to-start-stop-pause-resume-or-restart-biztalk-server-services.md)  

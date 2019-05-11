@@ -1,5 +1,5 @@
 ---
-title: 错误-Functoid 有任何输出 |Microsoft 文档
+title: 错误-Functoid 具有任何输出 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,14 +14,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d8ae2b13a37c678116dc803a83df3ccade7064b7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 70d6e7d85ca0ec9fe0d3d7c41080b1ec3df16654
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239757"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388850"
 ---
-# <a name="error---functoid-has-no-output"></a>错误-Functoid 有任何输出
+# <a name="error---functoid-has-no-output"></a>错误-Functoid 具有任何输出
 **错误代码**  
   
  btm1013  

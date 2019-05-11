@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bab7a46a02dc080fa27b9df2b30614bc8a45c6e0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 207299cefb5632072fdced38f3c25ad495a6d775
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976430"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400802"
 ---
 # <a name="how-the-dynamic-resolution-sample-works"></a>动态解析示例工作原理
 动态解析示例使用上一节中所述的所有消息传送示例 ESB 调度程序反汇编程序管道组件。  

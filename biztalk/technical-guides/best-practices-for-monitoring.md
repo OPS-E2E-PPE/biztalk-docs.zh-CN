@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9bfb2b5575fe46c1104ddc6b852695fb777275ef
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b8951b603fda6204ee8398d2dee9922a0f70a059
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981654"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399324"
 ---
 # <a name="best-practices-for-monitoring"></a>监视的最佳做法
 本主题提供用于监视你的 Microsoft BizTalk Server 环境和应用程序的最佳实践。  
@@ -71,7 +71,7 @@ ms.locfileid: "36981654"
   如果 BizTalk MsgBoxViewer 工具确定任何问题，运行[终止符工具](http://go.microsoft.com/fwlink/?LinkId=151931)网址[ http://go.microsoft.com/fwlink/?LinkId=151931 ](http://go.microsoft.com/fwlink/?LinkId=151931)。 此工具使用户能够轻松地解决由 BizTalk MsgBoxViewer 工具标识的任何问题。 有关如何使用 BizTalk MsgBoxViewer 工具相集成的终结器工具的详细信息，请参阅[使用 BizTalk 终止符，以解决问题由 BizTalk MsgBoxViewer](http://go.microsoft.com/fwlink/?LinkId=151932) (http://go.microsoft.com/fwlink/?LinkId=151932)。  
   
 > [!NOTE]  
->  使用这些工具不受 Microsoft，因此 Microsoft 不保证这些程序的适用性。 使用这些程序完全需要您自担风险。  
+>  使用这些工具不受 Microsoft，因此 Microsoft 不保证这些程序的适用性。 使用这些程序是完全由您自己承担。  
   
  **请监视优先级**  
   

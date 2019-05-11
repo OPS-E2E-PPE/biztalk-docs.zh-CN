@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a17da64d784d433d18720ca9a0c35c359fffb7b9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4f034c0892c7a6614bedbdd3754db1f7f3a0951d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966102"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306184"
 ---
 # <a name="esb-itinerary-management"></a>ESB 路线管理
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)] 提供两个不同选项，ESB 路线管理： 集中式的分散。 本部分讨论的每个选项的好处和风险。  

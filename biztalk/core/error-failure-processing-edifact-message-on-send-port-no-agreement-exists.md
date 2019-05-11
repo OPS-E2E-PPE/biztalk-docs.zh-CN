@@ -1,5 +1,5 @@
 ---
-title: 在发送端口上处理 Edifact 消息时发生故障： 不存在用于收件人和发件人标识符限定符对和不带名称的参与方协议 |Microsoft Docs
+title: 在发送端口上处理 Edifact 消息时发生故障：不存在用于收件人和发件人标识符限定符对和不带名称的参与方协议 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f0b4e66ce918f59502125e77b7c19615cb281660
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ebd3df9a2635864f0dcc884426816f1674c9284c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009910"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389304"
 ---
-# <a name="a-failure-occurred-in-processing-edifact-message-on-send-port-no-agreement-for-receiver-and-sender-identifier-qualifier-pairs-and-no-party-with-name"></a>在发送端口上处理 Edifact 消息时发生故障： 不存在用于收件人和发件人标识符限定符对和不带名称的参与方协议
+# <a name="a-failure-occurred-in-processing-edifact-message-on-send-port-no-agreement-for-receiver-and-sender-identifier-qualifier-pairs-and-no-party-with-name"></a>在发送端口上处理 Edifact 消息时发生故障：不存在用于收件人和发件人标识符限定符对和不带名称的参与方协议
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                                  |
@@ -30,10 +30,10 @@ ms.locfileid: "37009910"
 |  事件源   |                                                      [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                                                      |
 |    组件    |                                                                                            EDI 引擎                                                                                            |
 |  符号名称  |                                                                                                -                                                                                                 |
-|  消息正文   | 在发送端口上处理 Edifact 消息时发生故障{0}。 不存在 {1}、{2}、{3}、{4} 的接收方和发送方标识符/限定符对的协议。 不存在名称为 {5} 的参与方。 |
+|  消息正文   | 在发送端口上处理 Edifact 消息时发生故障{0}。 不存在协议的接收方和发件人标识符/限定符对的{1}， {2}， {3}， {4}。 存在具有名称的参与方{5}。 |
   
 ## <a name="explanation"></a>解释  
- 此错误/警告/信息事件表明 BizTalk Server 无法解析 EDIFACT 交换的参与方，因为 BizTalk Server 无法通过某一方的相应值来匹配升级后的发送方限定符和标识符属性、升级后的接收方限定符和标识符属性。  
+ 此错误/警告/信息事件表明 BizTalk Server 无法解析 EDIFACT 交换的参与方，因为它无法匹配提升发件人限定符和标识符属性，并提升接收方限定符和标识符为参与方的相应值的属性。  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请确保参与方的“EDI 属性”对话框的“UNB 段定义”页中定义的发送方限定符和标识符（UNB2.1 和 UNB2.2）以及接收方限定符和标识符（UNB3.1 和 UNB3.2）与交换的上下文中相对应的升级后的属性匹配。
+ 若要解决此错误，请确保发送方限定符和标识符 （UNB2.1 和 UNB2.2） 和接收方限定符和标识符 （UNB3.1 和 unb3.2 一起使用） 的 EDI 属性对话框中的参与方的 UNB 段定义页中定义的匹配相应交换的上下文中的升级的属性。

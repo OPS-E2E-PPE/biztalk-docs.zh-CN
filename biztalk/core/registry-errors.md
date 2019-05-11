@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 62522299866748d92abf91d36a01444c3175b070
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: afca0825ee04334385925d08e3edb0d0ed055c19
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975110"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398002"
 ---
 # <a name="registry-errors"></a>注册表错误
 诊断和解决 WCF 注册表错误的信息。  
@@ -38,7 +38,7 @@ ms.locfileid: "36975110"
  此错误表明访问注册表失败。  
   
 ### <a name="user-action"></a>用户操作  
- 确保您具有注册表的读取访问权限。 要访问注册表，请确保您具有管理员权限，或者与计算机管理员联系。
+ 确保对注册表有读取访问权限。 若要访问注册表，请确保你具有管理员权限或计算机的管理员联系。
  
 ## <a name="failed-to-obtain-biztalk-install-path"></a>未能获取 BizTalk 安装路径
   
@@ -53,7 +53,7 @@ ms.locfileid: "36975110"
 |  消息正文   |             未能从 HKLM 获取 BizTalk 安装路径\\{0}\\{1}              |
   
 ## <a name="explanation"></a>解释  
- 此错误表明访问注册表失败，并且该密钥具有不正确的值。  
+ 此错误表示无法访问注册表，并且该密钥具有不正确的值。  
   
 ## <a name="user-action"></a>用户操作  
- 确保您具有注册表的读取访问权限。 确保密钥具有正确的值。 要访问注册表，请确保您具有管理员权限，或者与计算机管理员联系。 
+ 确保对注册表有读取访问权限。 确保密钥具有正确的值。 若要访问注册表，请确保你具有管理员权限或计算机的管理员联系。 

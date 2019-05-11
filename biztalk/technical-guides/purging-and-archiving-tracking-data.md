@@ -1,5 +1,5 @@
 ---
-title: 清除和存档跟踪数据 |Microsoft 文档
+title: 清除和存档跟踪数据 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,35 +12,35 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 94a2560bc8a57a8f60bf2d1ebcddf68b62fd178a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7f18b65d8e33a7a651d743f0ff6cd3292396189a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302933"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399555"
 ---
 # <a name="purging-and-archiving-tracking-data"></a>清除和存档跟踪数据
-务必要配置并启用 DTA 清除和存档 SQL 代理作业。 此作业存档，并从 BizTalk 跟踪 (DTA) 数据库中清除旧数据。 这是必需的正常[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]系统。 大型的跟踪数据库将开始对跟踪主机和任何其他进程的性能影响该查询跟踪数据库。 如果跟踪数据不会清除从跟踪数据库，数据库将继续增长。  
+若要配置和启用 DTA 清除和存档 SQL 代理作业至关重要。 此作业存档和清除 BizTalk 跟踪 (DTA) 数据库中的旧数据。 这是必需的正常[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]系统。 大型的跟踪数据库将开始跟踪主机和任何其他进程的性能影响该查询跟踪数据库。 如果从跟踪数据库不清除跟踪数据，则数据库将继续增长。  
   
-## <a name="guidelines-for-using-the-dta-purge-and-archive-job"></a>使用 DTA 的指导原则清除和存档作业  
+## <a name="guidelines-for-using-the-dta-purge-and-archive-job"></a>使用 DTA 的准则清除和存档作业  
   
--   **确保 DTA 清除和存档 SQL 代理作业正确配置和启用，并且已成功完成。**  
+-   **请确保该 DTA 清除和存档 SQL 代理作业已正确配置和启用，并且已成功完成。**  
   
-     默认情况下不启用此作业，因为你必须首先将其配置为包括可以在其中写入存档文件的目录。  
+     默认情况下不启用此作业，因为必须先配置为包含在其中写入的存档文件的目录。  
   
--   **如果你只需以清除旧数据并不需要将其存档在第一次，然后更改 SQL 代理作业调用存储的过程"dtasp_PurgeTrackingDatabase"。**  
+-   **如果您只需清除旧数据，则不需要将其存档在第一次，然后更改 SQL 代理作业来调用存储的过程"dtasp_PurgeTrackingDatabase"。**  
   
-     这跳过存档步骤中，并只是执行清除。 有关详细信息，有关此存储的过程和更改 SQL 代理作业以使用它，请参阅["如何清除数据从 BizTalk 跟踪数据库的"](http://go.microsoft.com/fwlink/?LinkId=153817) (http://go.microsoft.com/fwlink/?LinkId=153817)。  
+     这跳过存档步骤中，并只是执行清除。 有关更多相关信息的存储的过程和更改 SQL 代理作业以使用它，请参阅["如何清除数据从 BizTalk 跟踪数据库的"](http://go.microsoft.com/fwlink/?LinkId=153817) (http://go.microsoft.com/fwlink/?LinkId=153817)。  
   
--   **确保作业能够快速生成传入的跟踪数据清除的跟踪数据。**  
+-   **确保作业可以快速生成传入跟踪数据清除跟踪数据。**  
   
-     是可以接受作业的计划全力支持在高峰负载，但它应始终能保持同步。 如果清除作业获取，并且永远不会是能够赶上，跟踪数据库将不断变大，，性能将最终会受到不利影响。  
+     可接受的作业以在负载高峰，全力支持，但它应始终能够保持同步。 如果清除作业落后，并且永远不会为能够保持同步，跟踪数据库会继续增加，并最终将产生负面影响性能。  
   
--   **查看软清除并硬清除参数，以确保你保存的数据的最佳总时间。**  
+-   **查看软清除和硬清除参数，以确保保持最佳的时间长度的数据。**  
   
      有关这些参数的详细信息请参阅["存档和清除 BizTalk 跟踪数据库"](http://go.microsoft.com/fwlink/?LinkId=153816) (http://go.microsoft.com/fwlink/?LinkId=153816)。  
   
--   **如果你需要保留跟踪存档文件，请确保你有一个进程的位置，以成功还原并使用它们。**  
+-   **如果需要保留跟踪存档文件，请确保你有一个进程已成功还原和使用它们。**  
   
-## <a name="see-also"></a>另请参阅  
- [清单： 配置 SQL Server](~/technical-guides/checklist-configuring-sql-server.md)
+## <a name="see-also"></a>请参阅  
+ [清单：配置 SQL Server](~/technical-guides/checklist-configuring-sql-server.md)

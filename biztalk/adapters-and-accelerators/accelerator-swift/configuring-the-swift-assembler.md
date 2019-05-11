@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 50c58ad000e465949229400128ce4c47da40806e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3bc1129d413f204baf22193e4a2bba2b54178e17
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993662"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65527553"
 ---
 # <a name="configuring-the-swift-assembler"></a>配置 SWIFT 汇编程序
 SWIFT 汇编程序执行以下任务时调用在 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]发送管道：  

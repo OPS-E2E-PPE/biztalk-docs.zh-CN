@@ -1,5 +1,5 @@
 ---
-title: 时间维度 |Microsoft 文档
+title: 时间维度 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 418afdc5b7507aba9a564628341c10495b2a740a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2ac4e3d64b2bfee949ca0adca06dc79c9b944192
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279445"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399471"
 ---
 # <a name="time-dimension"></a>时间维度
-使用时间维度可以根据时间创建聚合。 例如，使用时间维度可以创建下表：  
+时间维度，您可以根据时间创建的聚合。 例如时间维度可以用于创建下表：  
   
 |Year|Month|Count|  
 |----------|-----------|-----------|  
@@ -32,7 +32,7 @@ ms.locfileid: "22279445"
 ||March|350|  
 ||April|280|  
   
- 时间维度可以与任何其他维度结合使用。 例如，您可以对行使用时间维度，对列使用数据维度，以创建下表：  
+ 可以与任何其他维度结合使用时间维度。 例如，可以在行和列的数据维度使用时间维度创建以下表：  
   
 |||网球拍|足球|  
 |------|------|---------------------|------------------|  
@@ -41,7 +41,7 @@ ms.locfileid: "22279445"
 ||March|300|50|  
 ||April|220|60|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [数值范围维度](../core/numeric-range-dimension.md)   
  [进度维度](../core/progress-dimension.md)   
  [数据维度](../core/data-dimension.md)   

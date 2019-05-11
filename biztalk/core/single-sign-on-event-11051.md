@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 11051 |Microsoft Docs
+title: 单一登录：事件 11051 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c73cb8b07f8cc621c84b654aceba47cc499b2e51
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4375b2a018fa649ef795e425e83078ac3add5cef
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969050"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400922"
 ---
-# <a name="single-sign-on-event-11051"></a>单一登录： 事件 11051
+# <a name="single-sign-on-event-11051"></a>单一登录：事件 11051
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                                                                                                                                                                              |
@@ -28,12 +28,12 @@ ms.locfileid: "36969050"
 | 产品版本 |                                                                                                                                          [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                                                                                          |
 |    事件 ID     |                                                                                                                                                                    11051                                                                                                                                                                     |
 |  事件源   |                                                                                                                                                                    ENTSSO                                                                                                                                                                    |
-|    组件    |                                                                                                                                                                     N/A                                                                                                                                                                      |
+|    组件    |                                                                                                                                                                     不可用                                                                                                                                                                      |
 |  符号名称  |                                                                                                                                                         SSO_WARN_SSO_ADMIN_NOT_GROUP                                                                                                                                                         |
-|  消息正文   | SSO Administrators 帐户包含一个或多个个人 （非组） 帐户。 如果已经从 Active Directory 或本地计算机删除这些个人帐户，则必须立即从 SSO 系统中删除这些帐户，否则它们会成为安全隐患。%r<br /><br /> SSO Administrators: %1 %r<br /><br /> 个人帐户： %2 |
+|  消息正文   | SSO Administrators 帐户包含一个或多个个人 （非组） 帐户。 如果从 Active Directory 或本地计算机删除了这些个人帐户则必须立即删除从 SSO 系统或它们将造成安全 risk.%r<br /><br /> SSO Administrators: %1 %r<br /><br /> 个人帐户： %2 |
   
 ## <a name="explanation"></a>解释  
- 从 Active Directory 或本地计算机上删除个人帐户并不会自动从 SSO 系统删除该帐户。 这意味着如果从本地计算机删除帐户 USER1，然后另一个不同用户（例如新的员工）使用相同的名称加入到系统，则 SSO 系统会将原来 USER1 所具有的安全权限都授予新的 USER1。 这会形成安全隐患。  
+ 从 Active Directory 或本地计算机上删除个人帐户不会自动删除该帐户从 SSO 系统。 这意味着，如果 USER1 本地已删除的帐户，然后选择其他用户 （例如，新的员工） 使用相同的名称将系统加入，SSO 系统将授予新的 USER1 将原来 USER1 所具有的所有安全权限。 这会带来安全风险。  
   
 ## <a name="user-action"></a>用户操作  
- 在从 Active Directory 或本地计算机中删除个人帐户之前，无需进行操作。 如果发生上述删除操作，则必须尽快从 SSO 系统删除该个人帐户。
+ 从 Active Directory 或本地计算机中删除个人帐户之前，不不需要任何操作。 此时，必须尽可能快地删除从 SSO 系统的单个帐户。

@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9fc0661bfbc88c78a9afda7811c9a183b2160b05
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f55bb6d0f5959a53781e7f48e69b89762a104377
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986582"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388919"
 ---
-# <a name="edifact-interchange-xml-serialization-failed-due-to-invalid-structure-no-transactionset-or-une"></a>由于结构无效，无 transactionSet 或 UNE，EDIFACT 交换 XML 序列化失败
+# <a name="edifact-interchange-xml-serialization-failed-due-to-invalid-structure-no-transactionset-or-une"></a>由于结构无效，无 transactionSet 或 UNE，Edifact 交换 Xml 序列化失败
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                         |

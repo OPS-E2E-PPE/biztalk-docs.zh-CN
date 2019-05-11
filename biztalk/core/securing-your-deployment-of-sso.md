@@ -1,5 +1,5 @@
 ---
-title: 保护的 SSO 部署 |Microsoft 文档
+title: 确保 SSO 部署的安全 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f7727ba7e93a14f6107856fb05cedaf4b8f0a4eb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3eb05f95221567dc41605801bae1f1b499cc2ade
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269469"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65251187"
 ---
-# <a name="securing-your-deployment-of-sso"></a>保护你的部署的 SSO
-本部分简要介绍了企业单一登录安全部署的典型方案。 有关在 SQL Server 中执行操作的详细过程，请参阅 SQL Server 文档。  
+# <a name="securing-your-deployment-of-sso"></a>确保 SSO 部署的安全
+本部分概述的企业单一登录的安全部署的典型方案。 要在 SQL Server 中执行的操作的详细过程，请参阅 SQL Server 文档。  
   
 ## <a name="in-this-section"></a>本节内容  
   

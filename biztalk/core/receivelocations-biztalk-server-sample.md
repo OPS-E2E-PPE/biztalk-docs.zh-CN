@@ -12,64 +12,64 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df19296fcf6c93d582034464402597248335e826
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4018ddf9a2b542de9545f566cf88d26069672ef1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37019165"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398160"
 ---
-# <a name="receivelocations-biztalk-server-sample"></a>ReceiveLocations（BizTalk Server 示例）
+# <a name="receivelocations-biztalk-server-sample"></a>ReceiveLocations （BizTalk Server 示例）
 ReceiveLocations 示例演示了如何创建接收位置中的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]通过使用环境**ExplorerOM**管理对象。 有关详细信息在一般情况下接收位置，请参阅[接收位置](../core/receive-locations.md)。  
 
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
 
 - 您必须具有 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理权限才能使用此示例中的管理对象。  
 
 - Windows PowerShell 脚本需要 Windows PowerShell 执行策略以允许脚本执行。 有关详细信息，请参阅 [检查执行策略](http://go.microsoft.com/fwlink/?LinkId=128930)。  
 
 ## <a name="what-this-sample-does"></a>本示例的用途  
- 此示例演示如何使用**ExplorerOM**管理类来创建和配置接收端口和接收位置。 本主题中还包含 Windows PowerShell 示例脚本。 本示例将执行以下操作：  
+ 此示例演示如何使用**ExplorerOM**管理类来创建和配置接收端口和接收位置。 本主题中还包含 Windows PowerShell 示例脚本。 该示例将执行以下操作：  
 
--   创建名为“我的接收端口”的新接收端口。  
+-   创建新接收端口名为"我的接收端口"。  
 
--   创建与新端口相关的新接收位置，并将该位置配置为使用 HTTP 传输协议。  
+-   创建新接收位置与新端口相关联并且配置为使用 HTTP 传输协议。  
 
--   本示例还包含用于删除和枚举接收端口和位置的示例过程。  
+-   此示例还包含示例过程来删除和枚举接收端口和位置。  
 
 ## <a name="where-to-find-this-sample"></a>本示例的所在位置  
  此示例将位于以下 SDK 位置：  
 
- \<*示例路径*\> \Admin\ExplorerOM\ReceiveLocations  
+ \<*Samples Path*\> \Admin\ExplorerOM\ReceiveLocations  
 
  下表显示了本示例中的文件及其用途说明：  
 
 
 |                     文件                      |                                                   Description                                                    |
 |--------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-|               ReceiveLocations.cs                | 本示例中演示的操作的 [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 源文件。 |
-| ReceiveLocations.sln 和 ReceiveLocations.csproj |                                   本示例的解决方案文件和项目文件。                                    |
+|               ReceiveLocations.cs                | [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 此示例中演示的操作的源文件。 |
+| ReceiveLocations.sln 和 ReceiveLocations.csproj |                                   本示例的解决方案和项目文件。                                    |
 
 ## <a name="building-and-running-this-sample"></a>生成并运行本示例  
 
 #### <a name="to-build-this-sample"></a>生成示例  
 
-1. 在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中，打开解决方案文件 ReceiveLocations.sln。  
+1. 在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，打开解决方案文件 ReceiveLocations.sln。  
 
 2. 在“生成”  菜单上，单击“生成解决方案” 。  
 
 #### <a name="to-run-this-sample"></a>运行本示例的步骤  
 
-1. 使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员权限打开命令提示符。  
+1. 打开命令提示符下使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理权限。  
 
 2. 将更改为\<*示例*\>\Admin\ExplorerOM\ReceiveLocations\bin\debug 目录。  
 
 3. 运行 ReceiveLocations.exe。  
 
-4. 在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台中查看新的接收端口和接收位置。  
+4. 查看新的接收端口和接收位置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。  
 
 ## <a name="windows-powershell-script-example"></a>Windows Powershell 脚本示例  
- 以下 PowerShell 示例脚本演示与 [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 版本相同的操作。 确保已按照本主题的要求部分中所述正确配置了脚本执行策略。  
+ 以下 PowerShell 示例脚本演示与相同的操作[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)]版本。 请确保脚本执行策略已正确配置此主题的要求部分中所述。  
 
 ```  
 #==================================================================#  
@@ -227,7 +227,7 @@ EnumerateReceiveLocations
 
 ```  
 
- 以下是 PowerShell 脚本执行的示例输出，显示了将要创建和删除的接收端口和位置：  
+ 下面是示例输出显示接收端口和位置在创建和删除的 PowerShell 脚本执行：  
 
 ```  
 PS C:\> .\ReceiveLocations.ps1  

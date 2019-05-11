@@ -1,5 +1,5 @@
 ---
-title: 使用 MSMQ 适配器可靠消息传递的属性 |Microsoft 文档
+title: 使用 MSMQ 适配器可靠消息传送属性 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -27,32 +27,32 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 49aebf12c86ae72d5dcb224d078c62afefcb8f46
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 54a33fdd3ced15230d2b0c1417d1f5398678f183
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268845"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398495"
 ---
-# <a name="properties-for-reliable-messaging-with-the-msmq-adapter"></a>使用 MSMQ 适配器可靠消息传递的属性
-通过配置 MSMQ 适配器，可以提高使用 MSMQ 适配器发送和接收消息的可靠性。 本主题将介绍使用多个配置属性进行可靠的消息传送。  
+# <a name="properties-for-reliable-messaging-with-the-msmq-adapter"></a>可靠消息传送的 MSMQ 适配器属性
+可以提高可靠性的发送和接收消息使用 MSMQ 适配器配置 MSMQ 适配器的方式。 本主题讨论如何使用可靠消息传送的多个配置属性。  
   
-## <a name="running-msmq-adapter-handlers-within-a-clustered-biztalk-host"></a>在群集的 BizTalk 主机内运行 MSMQ 适配器处理程序  
- 确保高可用性的一个方法是：在不同的 BizTalk Server 上的多个主机实例中同时运行适配器处理程序。 对于 MSMQ 适配器处理程序，不建议使用此方法，因为 MSMQ 不支持远程事务性读取，并且 MSMQ 发送处理程序对于 MSMQ 服务的本地运行实例具有依存关系。 为了提高 MSMQ 发送和接收处理程序的可用性，建议您在 BizTalk 主机的群集实例中运行 MSMQ 适配器处理程序。 有关详细信息，请参阅[在群集主机内运行适配器处理程序的注意事项](../core/considerations-for-running-adapter-handlers-within-a-clustered-host1.md)。  
+## <a name="running-msmq-adapter-handlers-within-a-clustered-biztalk-host"></a>在群集 BizTalk 主机内运行 MSMQ 适配器处理程序  
+ 高可用性的一种方法是运行适配器处理程序中多个主机实例在不同 BizTalk 服务器上同时。 不建议使用此方法对于 MSMQ 适配器处理程序，因为 MSMQ 不支持远程事务性的读取，MSMQ 发送处理程序具有依存的 MSMQ 服务的本地运行实例。 若要提供高可用性的 MSMQ 发送和接收处理程序建议在群集 BizTalk 主机的实例中运行 MSMQ 适配器处理程序。 有关详细信息，请参阅[群集主机内运行适配器处理程序的注意事项](../core/considerations-for-running-adapter-handlers-within-a-clustered-host1.md)。  
   
 ## <a name="queue-failure-and-the-dead-letter-queue"></a>队列错误和死信队列  
- 消息成功发送后，如果禁用或删除接收队列，则后续消息不会出错。 这种情况会导致消息丢失。  
+ 已成功发送一条消息后, 没有错误的后续消息如果禁用或删除接收队列。 这种情况下可能会导致消息丢失。  
   
- 设置**使用死信队列**配置属性设置为**True**防止丢失消息。 当该属性是`True`（默认值）、 队列没有接收的消息就可进入死信队列。  
+ 设置**使用死信队列**配置属性设置为**True**防止丢失消息。 当该属性是`True`（默认值），进入死信队列的队列不会接收的消息。  
   
 ## <a name="impersonation-and-remote-queues"></a>模拟和远程队列  
- 你还必须设置**使用死信队列**配置属性设置为**True**当你使用远程队列。 如果 MSMQ 适配器在没有远程队列使用权限的情况下模拟用户，则消息会丢失。  
+ 您还必须设置**使用死信队列**配置属性设置为**True**当你使用远程队列。 如果 MSMQ 适配器模拟而无需使用远程队列的权限的用户，该消息可能会丢失。  
   
- 当该属性是**True**和模拟的用户没有使用远程队列的权限，该消息在本地或远程计算机上将转到死信队列。 在事务性发送中，消息将进入本地计算机的死信队列。 在非事务性发送中，消息将进入远程计算机的死信队列。  
+ 当该属性是 **，则返回 True**和模拟的用户不具有使用远程队列的权限，消息将进入死信队列在本地或远程计算机上。 在事务性发送中，消息将发送到死信队列在本地计算机上。 在非事务性发送中，消息将发送到死信队列在远程计算机上。  
   
-## <a name="recoverable-and-use-journal-queue-properties"></a>“可恢复”和“使用日志队列”属性  
- 这两个**可恢复**和**使用日记队列**属性保存发送消息的副本。 有关这些属性的详细信息，请参阅[如何配置 MSMQ 接收位置](../core/how-to-configure-an-msmq-receive-location.md)和[如何配置 MSMQ 发送端口](../core/how-to-configure-an-msmq-send-port.md)。  
+## <a name="recoverable-and-use-journal-queue-properties"></a>可恢复，并使用日志队列属性  
+ 这两个**可恢复**并**使用日志队列**属性都可保存发送消息的副本。 有关这些属性的详细信息，请参阅[如何配置 MSMQ 接收位置](../core/how-to-configure-an-msmq-receive-location.md)并[如何配置 MSMQ 发送端口](../core/how-to-configure-an-msmq-send-port.md)。  
   
-## <a name="see-also"></a>另请参阅  
- [使用 MSMQ 适配器可靠消息传递](../core/reliable-messaging-with-the-msmq-adapter.md)   
- [运行在群集主机内的适配器处理程序的注意事项](../core/considerations-for-running-adapter-handlers-within-a-clustered-host1.md)
+## <a name="see-also"></a>请参阅  
+ [使用 MSMQ 适配器可靠消息传送](../core/reliable-messaging-with-the-msmq-adapter.md)   
+ [在群集主机内运行适配器处理程序的注意事项](../core/considerations-for-running-adapter-handlers-within-a-clustered-host1.md)

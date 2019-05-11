@@ -15,25 +15,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e2e8ef3800b67119bf9ffaffb4fd069064b640d1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 60eee7ce4acb940d2d0011ead80bdcf9c5ed335c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985342"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65254882"
 ---
 # <a name="restrictions-on-the-smtp-host-property"></a>对 SMTP 主机属性的限制
-SMTP 主机属性是一个字符串，它指定 SMTP 适配器将用于从 BizTalk 服务器发送消息的 SMTP 服务器。  
+SMTP 主机属性是一个字符串，指定将使用 SMTP 适配器将消息从 BizTalk server 发送的 SMTP 服务器。  
   
- 此属性适用以下规则和限制：  
+ 为此属性适用以下规则和限制：  
   
-- 必须在适配器处理程序级别、终结点级别或同时在这两个级别上配置此属性。  
+- 必须在适配器处理程序级别中，在终结点级别或这两个位置中配置此属性。  
   
 - SMTP 服务器属性不能包含以下字符: ' ~ ！ @ # $ ^ & * ( ) = + [ ] { } \ &#124; ; : ' " , \< \> /, ?;  
   
 - SMTP 服务器名称的长度不得超过 256 个字符。  
   
-  SMTP 适配器将始终在设计时通过使用上述规则验证 SMTP 主机名称。 此外，如果 SMTP 适配器通过动态端口发送消息，则它将在运行时验证 SMTP 主机名称。  
+  SMTP 适配器始终验证 SMTP 主机名称在设计时通过使用前面所述的规则。 此外，SMTP 适配器验证 SMTP 主机名称在运行时如果通过 SMTP 适配器的动态端口发送一条消息。  
   
 ## <a name="see-also"></a>请参阅  
  [配置 SMTP 适配器时的限制](../core/restrictions-when-configuring-the-smtp-adapter.md)

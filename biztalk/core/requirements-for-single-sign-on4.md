@@ -12,19 +12,19 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8baf665a7f997293130a2c1eb93f893167f39a4f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9a07e4ecf344b06c9d1f98297acb3b3a851283e7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967878"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399122"
 ---
 # <a name="requirements-for-single-sign-on"></a>单一登录的要求
 
 ## <a name="overview"></a>概述
-用于 TIBCO Enterprise Message Service (EMS) 的 Microsoft BizTalk 适配器提供单一登录 (SSO) 支持。 由企业单一登录工具创建的关联应用程序表示诸如 TIBCO EMS 等服务器系统。  
+用于 TIBCO Enterprise Message Service (EMS) 的 Microsoft BizTalk 适配器提供单一登录 (SSO) 支持。 由企业单一登录工具创建关联应用程序代表诸如 TIBCO EMS 等服务器系统。  
   
- 若要使用单一登录，需具备以下各项：  
+ 若要使用单一登录，必须具有：  
   
 - Microsoft BizTalk Server
   
@@ -40,7 +40,7 @@ ms.locfileid: "36967878"
   
 1.  在中**传输属性**窗口中，选择**是**有关**使用 SSO**。  
   
-2.  在指定传输属性时选择相应的关联应用程序。  
+2.  指定传输属性时，请选择相应的关联应用程序。  
   
      有关如何创建关联应用程序的信息，请参阅[创建关联应用程序](../core/creating-affiliate-applications5.md)。  
   

@@ -1,5 +1,5 @@
 ---
-title: 部署过程 |Microsoft 文档
+title: 部署进程 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,53 +19,53 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 21be32ec58c90c1fb95134a002bee82ef5d78fa5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 89b5e3640626ce63a58532568b08b7290bc40c4c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240661"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65389742"
 ---
 # <a name="deployment-process"></a>部署过程
-以下步骤对企业单一登录的安全部署进行了高级概述。 有关在 SQL Server 中执行操作的详细过程，请参阅 SQL Server 文档。  
+以下步骤进行安全的企业单一登录部署了高级概述。 要在 SQL Server 中执行的操作的详细过程，请参阅 SQL Server 文档。  
   
-1.  在 SQL Server 域控制器上，使用新建信任向导可创建具有以下属性的信任：  
+1.  在 SQL Server 域控制器上，使用新建信任向导来创建具有以下属性的信任：  
   
     -   **名称：** ORCH.com  
   
     -   **方向：** 双向  
   
-    -   **边：** 仅限于此域  
+    -   **信任方：** 仅限此域  
   
-    -   **传出信任身份验证级别的本地域：** 选择性身份验证  
+    -   **传出信任身份验证级别-本地域：** 选择性身份验证  
   
-    -   **密码：** 选择一个密码  
+    -   **密码：** 选择的密码  
   
     -   **确认传出信任：** 是  
   
     -   **确认传入信任：** 否  
   
-2.  在 ORCH.com 域控制器上，使用新建信任向导可创建具有以下属性的信任：  
+2.  在 ORCH.com 域控制器上，使用新建信任向导来创建具有以下属性的信任：  
   
     -   **名称：** SQL.com  
   
     -   **方向：** 双向  
   
-    -   **边：** 仅限于此域  
+    -   **信任方：** 仅限此域  
   
-    -   **传出信任身份验证级别的本地域：** 选择性身份验证  
+    -   **传出信任身份验证级别-本地域：** 选择性身份验证  
   
-    -   **密码：** 必须是与密码相同的 ORCH.com  
+    -   **密码：** 必须为 ORCH.com 的密码相同  
   
     -   **确认传出信任：** 是  
   
     -   **确认传入信任：** 否  
   
-3.  在 ORCH.com 域控制器上，为从 SQL.COM 的传入通信设置域范围信任。  
+3.  在 ORCH.com 域控制器上，从 SQL.COM 设置传入域范围信任。  
   
-4.  在 SQL.com 域控制器上，为从 ORCH.COM 的传出通信设置域范围信任。  
+4.  在 SQL.com 域控制器设置从 ORCH.COM 的传出域范围信任。  
   
-5.  在 ORCH.com 域控制器上，将域功能级别提升到 Windows Server 2008 SP2 或 Windows Server 2008 R2。  
+5.  在 ORCH.com 域控制器上，域功能级别提升到 Windows Server 2008 SP2 或 Windows Server 2008 R2。  
   
 6.  在 ORCH 域中，创建以下新用户：  
   
@@ -75,55 +75,55 @@ ms.locfileid: "22240661"
   
     -   ORCH\AffAppUser  
   
-7.  添加**充当操作系统的一部分**SSOSvcUser 和 TestAppUser。  
+7.  添加**充当操作系统的一部分**到 SSOSvcUser 和 TestAppUser。  
   
-8.  添加**以进行身份验证允许**ORCH\TestAdmin 特权。  
+8.  添加**进行身份验证允许**到 ORCH\TestAdmin 特权。  
   
-9. 将 ORCH\SSOSvcUser 添加到 SQL 域的 SQL2 中。 （此步骤需要使用 Active Directory MMC 中的高级视图。）  
+9. 将 ORCH\SSOSvcUser 添加到 SQL 域中的 SQL2 中。 （此步骤需要使用 Active Directory MMC 中的高级视图。）  
   
-10. 在 SQL2 计算机上，创建以下两个新登录名：  
+10. 在 SQL2 计算机上创建以下两个新登录名：  
   
     -   ORCH\TestAdmin  
   
     -   ORCH\SSOSvcUser  
   
-11. 在 SQL2 域上，创建两个域全局组：  
+11. 在 SQL2 域上创建两个域全局组：  
   
     -   ORCH\SSOAdminGroup  
   
     -   ORCH\SSOAffAdminGroup  
   
-12. 添加**以进行身份验证允许**ORCH\SSOAdminGroup 组特权。  
+12. 添加**进行身份验证允许**到 ORCH\SSOAdminGroup 组的权限。  
   
-13. 在 SQL2 数据库上，创建以下新登录名：  
+13. 在 SQL2 数据库上创建以下新登录名：  
   
     -   ORCH\SSOAdminGroup  
   
-14. 按照以下步骤安装主密钥服务器：  
+14. 安装主密钥服务器，如下所示：  
   
     -   使用 ORCH\TestAdmin 登录到 NTS5。  
   
-    -   将 SQL2 用作主密钥服务器以安装 ESSO。  
+    -   安装 ESSO 将 SQL2 用作主密钥服务器。  
   
-15. 使用 ORCH\TestAdmin 登录到 HIS1，然后安装企业单一登录。 使用数据库服务器名称 SQL2 来将 ESSO 配置为 SSO 联接 HIS2。  
+15. 使用 ORCH\TestAdmin，登录到 HIS1 并安装企业单一登录。 使用数据库服务器名称 SQL2 为 SSO 联接 HIS2，来将 ESSO 配置。  
   
-16. 使用 ORCH\TestAdmin 在 HIS3 上安装企业单一登录管理实用工具。  
+16. 安装使用 ORCH\TestAdmin 在 HIS3 上的企业单一登录管理员实用程序。  
   
-17. 将以下用户添加到以下组中：  
+17. 将以下用户添加到以下组：  
   
-    -   将 ORCH\TestAppUser 添加到 ORCH\SSOAdminGroup 中  
+    -   将 ORCH\TestAppUser 添加到 orch\ssoadmingroup 中  
   
-    -   将 ORCH\AffAppUser 添加到 ORCH\TestAffUserGroup 中  
+    -   将 ORCH\AffAppUser 添加到 orch\testaffusergroup 中  
   
-18. 在 HIS3 上安装 SQL Server Enterprise Edition，并添加登录名 ORCH\AffAppUser。  
+18. SQL Server Enterprise Edition HIS3 上安装，并添加登录名 ORCH\AffAppUser。  
   
-19. 在 HIS1 计算机上，打开命令提示符，使用以下命令设置约束委托和协议转换：  
+19. 在 HIS1 计算机上打开命令提示符并使用以下命令设置约束委派和协议转换：  
   
-    -   **setspn-A MSSQLSvc/HIS3.ORCH.com:1433 ORCH\SSOSvcUser**  
+    -   **setspn -A MSSQLSvc/HIS3.ORCH.com:1433 ORCH\SSOSvcUser**  
   
-    -   **setspn-A MSSQLSvc/HIS3.ORCH.com:1433 ORCH\TestAppUser**  
+    -   **setspn -A MSSQLSvc/HIS3.ORCH.com:1433 ORCH\TestAppUser**  
   
-20. 上**ORCH\SSOSvcUser**和**ORCH\TestAppUser**属性页中，通过选择以下选项来设置这两个用户帐户的正确委派：  
+20. 上**ORCH\SSOSvcUser**并**ORCH\TestAppUser**属性页中，通过选择以下选项设置为这两个用户帐户适当的委托：  
   
     -   **信任仅委派到指定服务的用户**  
   
@@ -131,13 +131,13 @@ ms.locfileid: "22240661"
   
 21. 在 HIS1 计算机上使用 ORCH\TestAdmin，执行以下操作：  
   
-    -   将 ORCH\TestAppUser 添加到远程桌面用户组中  
+    -   将 ORCH\TestAppUser 添加到远程桌面用户组  
   
-    -   授予**模拟身份验证后**ORCH\SSOSvcUser 特权  
+    -   授予**进行身份验证之后模拟**权限授予 ORCH\SSOSvcUser  
   
-    -   授予**模拟身份验证后**ORCH\TestAppUser 特权  
+    -   授予**进行身份验证之后模拟**特权授予 ORCH\TestAppUser  
   
-22. 通过使用 ORCH\TestAppUser 登录到 HIS1 并运行以下应用程序配置，以验证您的部署：  
+22. 通过登录到 HIS1 验证您的部署使用 ORCH\TestAppUser 并运行以下应用程序配置：  
   
      运行 LogonExternalUser 测试。  
   
@@ -166,5 +166,5 @@ ms.locfileid: "22240661"
   
     ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [SSO 部署概述](../core/sso-deployment-overview.md)

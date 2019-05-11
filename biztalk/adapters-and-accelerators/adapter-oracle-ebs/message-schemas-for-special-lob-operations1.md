@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 651a4fe57d4b7ef7c85cc9c195c0ec96c67d0e8f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cc8461bf0f70515344206e677d2fa95d8c2858a1
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014550"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528960"
 ---
 # <a name="message-schemas-for-special-lob-operations"></a>特殊 LOB 操作的消息架构
 Read_\<LOBColName\>和 Update_\<LOBColName\>操作提供的表和视图包含 LOB 列，其中\<LOBColName\>是表中的 LOB 列或视图。 这些操作，可读取或写入 LOB 数据作为流 base64Binary 编码数据。 它们对单个列的单个行中的 LOB 数据的操作。  
@@ -30,7 +30,7 @@ Read_\<LOBColName\>和 Update_\<LOBColName\>操作提供的表和视图包含 LO
 > [!NOTE]
 >  实体说明表后进行查看。  
   
-|           运算            |                                                                                  XML 消息                                                                                  |                                                                                                                                                                                                                                                              Description                                                                                                                                                                                                                                                              |
+|           操作            |                                                                                  XML 消息                                                                                  |                                                                                                                                                                                                                                                              Description                                                                                                                                                                                                                                                              |
 |--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |      Read_\<LOBColName\>       |                           `<Read_[LOBColName] xmlns="[VERSION]/Tables/[SCHEMA]/[TABLE_NAME]">  <FILTER>[WHERE_clause]</FILTER></Read_[LOBColName]>`                           |                                                                                                           LOB 数据的匹配位置的行中返回筛选器元素中指定的子句。 Where 子句应匹配只有一行。 如果多个匹配行，[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]将引发异常。                                                                                                            |
 |  Read_\<LOBColName\>响应  | `<Read_[LOBColName]Response xmlns="[VERSION]/Tables/[SCHEMA]/[TABLE_NAME]">  <Read_[LOBColName]Result>    [LOB_DATA]  </Read_[LOBColName]Result></Read_[LOBColName]Response>` |                                                                                                                                                                                                                                  LOB 数据返回为 base64Binary 编码数据的流。                                                                                                                                                                                                                                   |
@@ -60,7 +60,7 @@ Read_\<LOBColName\>和 Update_\<LOBColName\>操作提供的表和视图包含 LO
 > [!NOTE]
 >  实体说明表后进行查看。  
   
-|运算|操作|示例|  
+|操作|操作|示例|  
 |---------------|------------|-------------|  
 |Read_\<LOBColName\>|`Tables/ReadLOB/[SCHEMA]/[TABLE_NAME]/[LOBColName]`|`Tables/ReadLOB/SCOTT/CUSTOMER/Photo`|  
 |Read_\<LOBColName\>响应|`Tables/ReadLOB/[SCHEMA]/[TABLE_NAME]/[LOBColName]/response`|`Tables/ReadLOB/SCOTT/CUSTOMER/Photo/response`|  
@@ -79,4 +79,4 @@ Read_\<LOBColName\>和 Update_\<LOBColName\>操作提供的表和视图包含 LO
 >  Read_ 的消息操作\<LOBColName\>和 Update_\<LOBColName\>视图上的操作类似于用于表格，只是操作的操作指定一个视图，而不是一个表： `Views/ReadLOB/[SCHEMA]/[VIEW_NAME]/[LOBColName]`.  
   
 ## <a name="see-also"></a>请参阅  
- [用于 Oracle E-Business Suite 的 BizTalk 适配器的消息和消息架构](../../adapters-and-accelerators/adapter-oracle-ebs/messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)
+ [消息和用于 Oracle E-business Suite 的 BizTalk Adapter 的消息架构](../../adapters-and-accelerators/adapter-oracle-ebs/messages-and-message-schemas-for-biztalk-adapter-for-oracle-e-business-suite.md)

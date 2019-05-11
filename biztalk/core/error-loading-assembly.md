@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df561b964faa0fae80f41f1423d3034466bbb8ce
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 665b6b00aca8f7f059f021bfc2e1c5803bfc0156
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994950"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388768"
 ---
 # <a name="error-loading-assembly"></a>加载程序集时出错
 ## <a name="details"></a>详细信息  
@@ -30,10 +30,10 @@ ms.locfileid: "36994950"
 |  事件源   |                                                                                                                                                                                  0                                                                                                                                                                                   |
 |    组件    |                                                                                                                                                                                  0                                                                                                                                                                                   |
 |  符号名称  |                                                                                                                                                                                  0                                                                                                                                                                                   |
-|  消息正文   | 此错误表示位置的网络共享上是否可能不完全受信任。 检查区域的代码访问安全策略。 或者，文件可能不是 BizTalk .NET 程序集。 检查的程序集 [程序集： BizTalkAssembly] 自定义属性。 或者，文件可能不是 .NET 程序集。 如果文件是 .dll 或 exe，则可能为非托管代码 |
+|  消息正文   | 此错误表示位置的网络共享上是否可能不完全受信任。 检查该区域的代码访问安全策略。 或者，文件可能不是 BizTalk.NET 程序集。 检查的程序集 [程序集：BizTalkAssembly] 自定义属性。 或者，文件可能不是.NET 程序集。 如果文件是.dll 或 exe，则可能为非托管的代码 |
   
 ## <a name="explanation"></a>解释  
- 此错误表示位置的网络共享上是否可能不完全受信任。 检查区域的代码访问安全策略。 或者，文件可能不是 BizTalk .NET 程序集。 检查的程序集 [*程序集： BizTalkAssembly*] 自定义属性。 或者，文件可能不是 .NET 程序集。 如果文件是 .dll 或 exe，则可能为非托管代码。  
+ 此错误表示位置的网络共享上是否可能不完全受信任。 检查该区域的代码访问安全策略。 或者，文件可能不是 BizTalk.NET 程序集。 检查的程序集 [*程序集：BizTalkAssembly*] 自定义属性。 或者，文件可能不是.NET 程序集。 如果文件是.dll 或 exe，则可能为非托管的代码。  
   
 ## <a name="user-action"></a>用户操作  
- 如果位置的来源可靠，则为其授予完全信任级别。  确保 dll 是有效的 BizTalk .net 程序集。
+ 如果它来自可靠来源位置授予完全信任级别。  请确保 dll 是有效的 BizTalk.net 程序集。

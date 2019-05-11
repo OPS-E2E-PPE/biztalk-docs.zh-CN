@@ -1,5 +1,5 @@
 ---
-title: 实时查询聚合数据 |Microsoft 文档
+title: 查询实时聚合数据 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b71c3adbcbe5aaaea4d9fa4bf25b2aa4191c580
-ms.sourcegitcommit: 3fd1c85d9dc2ce7b77da75a5c2087cc48cfcbe50
+ms.openlocfilehash: 72ee6612fc99d9411f0fb26c91c5d8ad6041edf1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/17/2018
-ms.locfileid: "25971715"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398294"
 ---
-# <a name="querying-real-time-aggregated-data"></a>查询实时的聚合的数据
-实时聚合 (RTA) 数据可在主导入数据库中动态创建的 SQL 视图内进行查询。  
+# <a name="querying-real-time-aggregated-data"></a>查询实时聚合的数据
+实时聚合 (RTA) 数据是可在 BAM 主导入数据库中动态创建的 SQL 视图中进行查询。  
   
  此视图的名称是  
   
@@ -31,22 +31,22 @@ ms.locfileid: "25971715"
   
  位置  
   
- **\<***ViewName*  **\>** 为 BAM 定义 XML 中的视图元素的名称属性即相同在相关的 Microsoft Excel 向导中输入视图名称。  
+ **\<** *ViewName* **\>** 是 BAM 定义 XML 中 View 元素的 Name 属性即相同相关的 Microsoft Excel 向导中输入视图名称。  
   
- **\<***RTAName*  **\>** 在 BAM 定义 XML 中，BAM 生成是唯一的 RealTimeAggregation 元素的名称属性基于的视图名称。  
+ **\<** *RTAName* **\>** BAM 生成唯一 BAM 定义 XML 中 RealTimeAggregation 元素的 Name 属性基于视图名称。  
   
- 在查询实时聚合数据时，请一定要注意下列情况：  
+ 请务必查询实时聚合的数据时，请注意以下条件：  
   
--   必须对实时聚合进行配置，将聚合保留给定的时间（默认值为一天），而且要限制其大小，不能增长得太大。 旧的聚合应该从 OLAP 多维数据集中获得。  
+-   若要将聚合保留给定的时间 （默认值为一天） 内，并且永远不会变得很大，则必须配置实时聚合。 而是应在 OLAP 多维数据集中提供旧的聚合。  
   
--   任何针对 RTA 的查询都必须包括对处于 RTA 数据的联机时段内的时间维度所进行的筛选。 之所以必须这样做，是因为 BAM 基于 BAM 数据的时间戳执行 RTA 数据维护，并且 BAM 已优化为以块的形式删除数据。 因此，如果发出 Transact-SQL 命令“`select *`”，其结果变动很大，难以预测。  
+-   任何针对 RTA 的查询必须包括筛选将为 RTA 数据的联机时段内的时间维度。 这是必需的因为 BAM 执行数据维护 rta 基于 BAM 数据，以及上的时间戳经过优化，可在区块中放置数据。 因此如果您只需发送 TRANSACT-SQL 命令"`select *`"，其结果变动不可预见。  
   
--   如果活动数据通过 DirectEventStream 发送到 BAM，则实时聚合数据没有延迟，即这些数据在调用应用程序中的事务提交后立刻显示出来。  
+-   如果活动数据发送到 BAM 通过 DirectEventStream，实时聚合的数据没有延迟 – 调用应用程序中的事务提交后立刻显示。  
   
--   如果活动数据通过 BufferedEventStream 发送到 BAM，则 RTA 数据将在查询几秒钟后显示，具体的时间取决于 BAM 事件总线服务的负载以及 BAM 主导入数据库的宿主 SQL 服务器。  
+-   如果活动数据发送到 BAM 通过 BufferedEventStream，RTA 数据将显示查询几秒钟后，具体取决于 BAM 事件总线服务和承载 BAM 主导入数据库的 SQL server 的负载。  
   
--   BAM 基于一个自己维护的、与使用触发器的活动数据存储记录中的更改和插入内容保持同步的表进行实时聚合。 有关详细信息，请参阅[活动数据存储](../core/activity-data-storage.md)。 因此，实时聚合可以对性能有很大的影响。 有关详细信息，请参阅[实时聚合](../core/real-time-aggregations.md)。  
+-   BAM 基于它所维护与更改和活动数据存储记录使用触发器中的插入内容同步的表进行实时聚合。 有关详细信息，请参阅[活动数据存储](../core/activity-data-storage.md)。 因此，实时聚合可以产生显著的性能影响。 有关详细信息，请参阅[实时聚合](../core/real-time-aggregations.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [查询计划的聚合数据](../core/querying-scheduled-aggregated-data.md)   
  [查询 BAM 数据](../core/querying-bam-data.md)

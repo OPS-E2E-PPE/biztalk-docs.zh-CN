@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10574 |Microsoft Docs
+title: 单一登录：Event 10574 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: be3700f565dafb9003a3cc05d9e52c7559904f88
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ae5f0ecae1e9c3016817d1627ad0bfba75ef7ba4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976950"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398718"
 ---
-# <a name="single-sign-on-event-10574"></a>单一登录： 事件 10574
+# <a name="single-sign-on-event-10574"></a>单一登录：事件 10574
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                          |
@@ -28,12 +28,12 @@ ms.locfileid: "36976950"
 | 产品版本 |                                                        [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                        |
 |    事件 ID     |                                                                                  10574                                                                                   |
 |  事件源   |                                                                                  ENTSSO                                                                                  |
-|    组件    |                                                                                   N/A                                                                                    |
+|    组件    |                                                                                   不可用                                                                                    |
 |  符号名称  |                                                                     SSO_WARN_INVALID_SSO_ADMIN_GROUP                                                                     |
-|  消息正文   | SSO 管理员帐户不能用于全局信息更新。%r<br /><br /> SSO Administrators: %1 %r<br /><br /> 无效帐户: %2 %r<br /><br /> 错误代码： %3 |
+|  消息正文   | SSO Administrators 帐户对于全局信息 update.%r 无效<br /><br /> SSO Administrators: %1 %r<br /><br /> 无效帐户: %2 %r<br /><br /> 错误代码： %3 |
   
 ## <a name="explanation"></a>解释  
- SSO 管理员帐户不能用于全局信息更新。  
+ SSO Administrators 帐户无效，不能用于全局信息更新。  
   
 ## <a name="user-action"></a>用户操作  
- 此警告消息包含有关 SSO 管理员帐户和无效帐户的信息。 查看此信息，进行任何必要的更正，然后重试更新。
+ 此警告消息包含有关 SSO 管理员帐户和无效帐户的信息。 查看此信息，进行任何必要的更正，并重试该更新。

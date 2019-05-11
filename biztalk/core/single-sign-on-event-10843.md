@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10843 |Microsoft Docs
+title: 单一登录：Event 10843 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 40b7e03f54d4c4ac2b7074d2aa13d771ce20a9e5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8389a1b6443fbe2d4abe592b305508b2780afdf6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012998"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65307307"
 ---
-# <a name="single-sign-on-event-10843"></a>单一登录： 事件 10843
+# <a name="single-sign-on-event-10843"></a>单一登录：事件 10843
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                     |
@@ -28,12 +28,12 @@ ms.locfileid: "37012998"
 | 产品版本 |                                                     [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                      |
 |    事件 ID     |                                                                                10843                                                                                |
 |  事件源   |                                                                               ENTSSO                                                                                |
-|    组件    |                                                                                 N/A                                                                                 |
+|    组件    |                                                                                 不可用                                                                                 |
 |  符号名称  |                                                                         ENTSSO_E_NO_SECRET2                                                                         |
-|  消息正文   | 无法执行加密或解密，因为密钥不在主密钥服务器中。 有关相关错误，请参阅事件日志（在计算机 %1 上）。 |
+|  消息正文   | 无法执行加密或解密，因为密钥不能从主密钥服务器。 请参阅事件日志中 （在计算机"%1"） 相关的错误。 |
   
 ## <a name="explanation"></a>解释  
  拒绝访问。  
   
 ## <a name="user-action"></a>用户操作  
- 主密钥服务器脱机，或主密钥服务器缺少所需的主密钥。 参阅指定计算机上的事件日志，了解相关错误。
+ 主密钥服务器脱机，或在主密钥服务器缺少所需的主密钥。 有关相关错误指定的计算机上，请参阅事件日志。

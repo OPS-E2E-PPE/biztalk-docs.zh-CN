@@ -12,12 +12,12 @@ caps.latest.revision: 29
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f07cd5f5406475fad3cfc3b9c1d234c5d93cf1eb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3eb61f489eb22bcd2c73be3c528c788d97d23878
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975086"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399299"
 ---
 # <a name="biztalk-server-2010-hyper-v-guide"></a>BizTalk Server 2010 HYPER-V 指南
 本指南的目的是提供一些实践指导，用于将 Microsoft BizTalk Server 与 Microsoft[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]的 HYPER-V。 该技术着重于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，但性能评估方法和测试方案的性能非常适用于一般情况下分析虚拟化的服务器应用程序的性能。 本指南将对其感兴趣的 IT 专业人员和开发人员社区。  
@@ -33,7 +33,7 @@ ms.locfileid: "36975086"
 
  BizTalk Server 将利用作为的一部分包含的最新的虚拟化改进[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]HYPER-V，可能会导致降低通过生产服务器合并和业务连续性管理，以及更多动态创建的成本IT 基础结构。 聚类分析功能允许在多站点而无需其他软件或硬件的聚类分析环境中部署 BizTalk Server。 HYPER-V 提供了支持的虚拟化实例上运行的 BizTalk Server 的多个实例[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]。 服务器虚拟化使 BizTalk 客户能够以安全的方式合并未充分利用的资源的 BizTalk 部署硬件的占用最小化。  
 
- BizTalk Server 部署通常包含多个其他组件包括： SQL Server、 Windows Server 和 Internet 信息服务 (IIS)。 HYPER-V 动态预配通过 System Center Virtual Machine Manager (VMM) 这使预配按需真实方案提供支持。  
+ BizTalk Server 部署通常包含多个其他组件包括：SQL Server、 Windows Server 和 Internet 信息服务 (IIS)。 HYPER-V 动态预配通过 System Center Virtual Machine Manager (VMM) 这使预配按需真实方案提供支持。  
 
  [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] 提供的 HYPER-V 技术，以容纳通过虚拟化到一台物理服务器上的多个操作系统实例的服务器合并。 作为的核心部分提供的 HYPER-V[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]或作为独立产品，以使其尽可能地接受在其组织中的虚拟化的客户轻松。 有几个主要方案实现 Hyper-v:  
 
@@ -46,13 +46,13 @@ ms.locfileid: "36975086"
   > [!NOTE]  
   >  有关如何备份 HYPER-V 虚拟机使用 Windows Server Backup，请参阅 Microsoft 知识库文章 958662，"如何备份 HYPER-V 虚拟机从父分区的 Windows Server 2008 基于计算机上使用 Windows在进行服务器备份" [ http://go.microsoft.com/fwlink/?LinkId=131207 ](http://go.microsoft.com/fwlink/?LinkId=131207)。  
   >   
-  >  有关如何使用 HYPER-V 实时迁移提供的功能在 Windows Server 2008 R2 中的信息，请参阅"Hyper-v： 分步指南为使用实时迁移在 Windows Server 2008 R2"网址[ http://go.microsoft.com/fwlink/?LinkID=139667 ](http://go.microsoft.com/fwlink/?LinkID=139667)。  
+  >  有关如何使用 HYPER-V 实时迁移提供的功能在 Windows Server 2008 R2 中的信息，请参阅"Hyper-v:在 Windows Server 2008 R2 中使用实时迁移的分步指南"处[ http://go.microsoft.com/fwlink/?LinkID=139667 ](http://go.microsoft.com/fwlink/?LinkID=139667)。  
 
 - **动态数据中心**-通过将 HYPER-V 结合使用的工具 Microsoft System Center 套件，组织可以自动执行虚拟机配置和监视。 详细信息，请参阅"System Center Virtual Machine Manager"网址[ http://go.microsoft.com/fwlink/?LinkID=111303 ](http://go.microsoft.com/fwlink/?LinkID=111303)。  
 
   本指南中的信息与直接相关的服务器合并和测试和开发方案的 HYPER-V。 本指南的范围超出了另外两个。  
 
-  有关 HYPER-V 的核心方案的详细信息，请参阅[Hyper-v： 概述使用虚拟化](http://go.microsoft.com/fwlink/?LinkID=202438)和中的主题[Appendices1](../technical-guides/appendices1.md)本指南的部分。  
+  有关 HYPER-V 的核心方案的详细信息，请参阅[Hyper-v： 使用虚拟化概述](http://go.microsoft.com/fwlink/?LinkID=202438)和中的主题[Appendices1](../technical-guides/appendices1.md)本指南的部分。  
 
 ### <a name="who-should-read-this"></a>谁应该读懂？  
 
@@ -86,20 +86,20 @@ ms.locfileid: "36975086"
 ### <a name="whats-in-this-guide"></a>本指南中是什么？  
  实现指南[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]上的 HYPER-V 虚拟化环境的解决方案。 本指南包括：  
 
-- **部署 BizTalk Server 上的 HYPER-V**: [HYPER-V 上部署 BizTalk Server](../technical-guides/deploying-biztalk-server-on-hyper-v.md)介绍的步骤来设置用于比较的性能在实验室环境中遵循[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]正在运行的解决方案HYPER-V 虚拟机到同一个[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]物理硬件上运行的解决方案。  
+- **HYPER-V 上部署 BizTalk Server**:[部署 BizTalk Server 上的 HYPER-V](../technical-guides/deploying-biztalk-server-on-hyper-v.md)介绍的步骤来设置用于比较的性能在实验室环境中遵循[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]上的 HYPER-V 虚拟机运行到同一个解决方案[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]正在运行的解决方案物理硬件。  
 
-- **评估 HYPER-V 上的 BizTalk Server 性能**:[的 BizTalk Server 性能评估 HYPER-V](../technical-guides/evaluating-biztalk-server-performance-on-hyper-v.md)在衡量性能的详细信息的重要注意事项[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]的 HYPER-V 上运行的解决方案虚拟化的环境。  
+- **评估 HYPER-V 上的 BizTalk Server 性能**:[评估 HYPER-V 上的 BizTalk Server 性能](../technical-guides/evaluating-biztalk-server-performance-on-hyper-v.md)时测量性能的详细信息的重要注意事项[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]的 HYPER-V 虚拟化环境中运行的解决方案。  
 
-- **测试 HYPER-V 上的 BizTalk Server 性能**:[测试 BizTalk Server 虚拟化性能](../technical-guides/testing-biztalk-server-virtualization-performance.md)提供的性能进行比较的四个不同的测试方案的详细的结果[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]HYPER-V 虚拟机上运行相同的解决方案[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]物理硬件上运行的解决方案。  
+- **测试 HYPER-V 上的 BizTalk Server 性能**:[测试 BizTalk Server 虚拟化性能](../technical-guides/testing-biztalk-server-virtualization-performance.md)提供的性能进行比较的四个不同的测试方案的详细的结果[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]上的 HYPER-V 虚拟机运行到同一个解决方案[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]解决方案在物理硬件上运行。  
 
-- **附录**： 中的主题[Appendices1](../technical-guides/appendices1.md)提供本指南中包括的重要参考资料：  
+- **附录**:中的主题[Appendices1](../technical-guides/appendices1.md)提供本指南中包括的重要参考资料：  
 
-  -   [附录 a： 优化应用到测试环境中计算机](../technical-guides/appendix-a-optimizations-applied-to-computers-in-test-environment.md)– 提供有关已应用到测试环境中的计算机的性能优化的详细的信息。  
+  -   [附录 a:优化应用到测试环境中计算机](../technical-guides/appendix-a-optimizations-applied-to-computers-in-test-environment.md)– 提供有关已应用到测试环境中的计算机的性能优化的详细的信息。  
 
-  -   [附录 b: HYPER-V 体系结构和功能概述](../technical-guides/appendix-b-hyper-v-architecture-and-feature-overview.md)-提供 HYPER-V 体系结构的概述，描述了 HYPER-V 的优点和缺点和描述的 HYPER-V 和 Virtual Server 2005 之间的差异  
+  -   [附录 b:HYPER-V 体系结构和功能概述](../technical-guides/appendix-b-hyper-v-architecture-and-feature-overview.md)-提供 HYPER-V 体系结构的概述，描述了 HYPER-V 的优点和缺点和描述的 HYPER-V 和 Virtual Server 2005 之间的差异  
 
-  -   [附录 c: BizTalk Server 和 SQL Server 的 HYPER-V 可支持性](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)– 描述的 HYPER-V 虚拟机上运行 BizTalk Server 和 SQL Server 支持策略。  
+  -   [附录 c:BizTalk Server 和 SQL Server 的 HYPER-V 可支持性](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)– 描述的 HYPER-V 虚拟机上运行 BizTalk Server 和 SQL Server 支持策略。  
 
-  -   [附录 d： 用于测量性能工具](../technical-guides/appendix-d-tools-for-measuring-performance.md)-描述可用于监视和评估 BizTalk Server 环境的性能的几个工具。  
+  -   [附录 d:用于测量性能工具](../technical-guides/appendix-d-tools-for-measuring-performance.md)-描述可用于监视和评估 BizTalk Server 环境的性能的几个工具。  
 
-- **术语表**: [Glossary8](../technical-guides/glossary8.md)定义本指南中使用的关键术语。
+- **术语表**:[Glossary8](../technical-guides/glossary8.md)定义本指南中使用的关键术语。

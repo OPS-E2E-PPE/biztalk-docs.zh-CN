@@ -2,14 +2,14 @@
 redirect_url: /biztalk/core/installing-biztalk-adapter-for-tibco-rendezvous/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: bcccc92430a73685ced9ad7259d8ec57dfc450b8
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 7c45ae5859f8a42a581777b6d5ad870a66d9dc4a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24013228"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399478"
 ---
-# <a name="tibco-rendezvous-limitations"></a>TIBCO Rendezvous 限制
+# <a name="tibco-rendezvous-limitations"></a>TIBCO Rendezvous Limitations
 在 TIBCO Rendezvous 中，不能保证字段名的唯一性。 如果 TIBCO Rendezvous 消息包含两个相同的名称字段，则结果 XML 无效。  
   
  其他限制包括：  
@@ -24,6 +24,6 @@ ms.locfileid: "24013228"
   
 -   传输端不支持经过验证的消息。  
   
-## <a name="see-also"></a>另请参阅  
- [TIBCO 会合概念](../core/tibco-rendezvous-concepts.md)   
+## <a name="see-also"></a>请参阅  
+ [TIBCO Rendezvous 概念](../core/tibco-rendezvous-concepts.md)   
  [入门](../core/getting-started-with-biztalk-adapter-for-tibco-rendezvous.md)

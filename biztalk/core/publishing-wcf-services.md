@@ -1,5 +1,5 @@
 ---
-title: 发布 WCF 服务 |Microsoft 文档
+title: 发布 WCF 服务 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 00136b64d5feaf552f77b92b3ad4442da4e447cc
-ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
+ms.openlocfilehash: 3cc57665a8f57fde0d1ea410c0bad4454cb1a7a4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2018
-ms.locfileid: "29710236"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65398360"
 ---
 # <a name="publish-wcf-services"></a>发布 WCF 服务
-业务流程可以作为由 WCF 客户端调用的 BizTalk Server 中的 WCF 服务发布。  
+业务流程可以作为 BizTalk Server 将调用的 WCF 客户端中的 WCF 服务发布。  
   
-## <a name="publish-wcf-services-with-the-isolated-wcf-adapters"></a>发布具有独立的 WCF 适配器的 WCF 服务 
+## <a name="publish-wcf-services-with-the-isolated-wcf-adapters"></a>发布独立 WCF 适配器的 WCF 的服务 
   
- 通过使用针对独立 WCF 适配器（WCF-BasicHttp 适配器、WCF-WSHttp 适配器和 WCF-CustomIsolated 适配器）的 BizTalk WCF 服务发布向导，可以创建并发布 WCF 服务。 这将创建一个接收位置，作为 IIS 中进程外应用程序存在。  
+ 创建并如 Wcf-basichttp 适配器的独立的 WCF 适配器、 Wcf-wshttp 适配器和 Wcf-customisolated 适配器使用 BizTalk WCF 服务发布向导发布 WCF 服务。 这将创建一个接收位置，作为进程外应用程序在 IIS 中存在。  
   
- 在使用独立 WCF 适配器发布 WCF 服务之前，您应当了解如何在 Internet 信息服务 (IIS) 中承载 WCF 服务。  
+ 通过独立 WCF 适配器发布 WCF 服务之前，应具有托管 WCF 服务如何了解在 Internet 信息服务 (IIS)。  
   
 ## <a name="publish-service-metadata-for-the-wcf-receive-locations"></a>为 WCF 接收位置发布服务元数据
   
- 通过使用 BizTalk WCF 服务发布向导，可以为已发布的 WCF 接收位置创建服务元数据。 若要从已发布的元数据文档生成服务模型客户端代码可以使用服务模型元数据实用工具 (SvcUtil.exe) 包含在 Windows 软件开发工具包 (SDK) 和.NET Framework 运行时组件。  
+ 对于已发布的 WCF 接收位置使用 BizTalk WCF 服务发布向导创建服务元数据。 若要从已发布元数据文档生成服务模型客户端代码可以使用 Windows 软件开发工具包 (SDK) 和.NET Framework 运行时组件中包含的服务模型元数据实用工具工具 (SvcUtil.exe)。  
   
 > [!IMPORTANT]
->  在运行 BizTalk WCF 服务发布向导之前，必须先启用 WCF 服务。 有关启用你的系统的 WCF 服务的详细信息，请参阅[将 IIS 配置为独立的 WCF 接收适配器](../core/configuring-iis-for-the-isolated-wcf-receive-adapters.md)。  
+>  运行 BizTalk WCF 服务发布向导之前，必须启用 WCF 服务。 有关启用你的系统的 WCF 服务的详细信息，请参阅[配置 IIS 以实现独立 WCF 接收适配器](../core/configuring-iis-for-the-isolated-wcf-receive-adapters.md)。  
   
 ## <a name="next-steps"></a>后续步骤
   
