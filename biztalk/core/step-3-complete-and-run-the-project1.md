@@ -1,5 +1,5 @@
 ---
-title: 步骤 3： 完成并运行 Project1 |Microsoft 文档
+title: 步骤 3：完成并运行 Project1 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,27 +12,27 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1abf7785a496e1ac1c58de67122fc9e9007aa93c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 22d2d4c4d05b157e6ab0d95de3b7528a06e196ba
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276389"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392727"
 ---
-# <a name="step-3-complete-and-run-the-project"></a>步骤 3： 完成并运行项目
-在添加程序集密钥并绑定端口后，就可以测试业务流程。  
+# <a name="step-3-complete-and-run-the-project"></a>步骤 3：完成并运行项目
+在添加程序集密钥并绑定端口之后, 就可以测试业务流程。  
   
- 对于测试而言，如果您使用了相同的对象，则可以使用 Sample XML BeginDoc 示例。 如果没有，你可以[步骤 4： 创建示例 XML BeginDoc](../core/step-4-create-a-sample-xml-begindoc2.md)因为这是刚开始整个过程的触发器。  
+ 用于测试你可以使用示例示例 XML BeginDoc，如果使用了相同的对象。 如果不是，你可以[步骤 4:创建示例 XML BeginDoc](../core/step-4-create-a-sample-xml-begindoc2.md)因为这是只需启动整个进程的触发器。  
   
-### <a name="to-complete-and-run-the-project"></a>完成并运行项目  
+### <a name="to-complete-and-run-the-project"></a>若要完成并运行项目  
   
 1.  在解决方案资源管理器，右键单击你的项目，然后选择**生成**。  
   
-2.  右键单击你的项目，然后选择**部署**。  
+2.  右键单击项目，然后依次**部署**。  
   
-3.  在 BizTalk Explorer 中，选择**绑定**， **Enlist**和**启动**测试您的业务流程。  
+3.  在 BizTalk 浏览器中，选择**绑定**，**登记**并**启动**来测试业务流程。  
   
-## <a name="see-also"></a>另请参阅  
- [步骤 1： 引用 DLL 的架构](../core/step-1-reference-the-schema-dll1.md)   
- [步骤 2： 创建业务流程](../core/step-2-create-the-orchestration2.md)   
- [步骤 4： 创建示例 XML BeginDoc](../core/step-4-create-a-sample-xml-begindoc2.md)
+## <a name="see-also"></a>请参阅  
+ [步骤 1：引用架构 DLL](../core/step-1-reference-the-schema-dll1.md)   
+ [步骤 2：创建业务流程](../core/step-2-create-the-orchestration2.md)   
+ [步骤 4：创建示例 XML BeginDoc](../core/step-4-create-a-sample-xml-begindoc2.md)

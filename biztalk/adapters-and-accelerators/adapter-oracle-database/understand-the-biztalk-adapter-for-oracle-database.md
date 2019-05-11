@@ -25,12 +25,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97fda25d77571a3c0128317a557e5f9d15bbc472
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6233044306df0ae03d3d1dd6b1a65b75129d1c37
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994614"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375880"
 ---
 # <a name="understand-the-biztalk-adapter-for-oracle-database"></a>了解用于 Oracle 数据库的 BizTalk 适配器
 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]还支持与外部系统进行交互，以面向服务的编程访问。 适配器向客户端提供以下优势：  

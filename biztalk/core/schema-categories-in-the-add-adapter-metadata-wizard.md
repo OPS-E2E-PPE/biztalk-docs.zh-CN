@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 46fd9ffab7aa4f8617e08a18824cc251ad9f4173
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6d31124c5e7da2550767dd87f8fcf53768362322
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008006"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395589"
 ---
 # <a name="schema-categories-in-the-add-adapter-metadata-wizard"></a>中的架构类别添加适配器元数据向导
 
@@ -25,21 +25,21 @@ ms.locfileid: "37008006"
 > [!NOTE]
 >  本主题仅适用于实现的静态适配器**IStaticAdapterConfig**接口。  
   
- 适配器可能会使用任意一种成千上万的架构将数据转换之前将其传递给[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 向某个 BizTalk 项目添加元数据时，使用“添加适配器元数据”向导可以从与适配器交互的所有架构的列表中选择所需架构。  
+ 适配器可能会使用任意一种成千上万的架构将数据转换之前将其传递给[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 当向 BizTalk 项目添加元数据，使用添加适配器元数据向导从适配器与之进行交互的所有架构的列表中选择架构。  
   
- 在示例文件适配器中，CategorySchema.xml 文件是一个架构实例，它与适配器框架的 BiztalkAdapterFramework.xsd 文件一起用于填充服务架构的树视图组织。  BizTalkAdapterFramework.xsd 文件位于 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] Developer Tools 文件夹中。  
+ 在示例文件适配器中，CategorySchema.xml 文件是一个架构实例，结合使用适配器框架的 BiztalkAdapterFramework.xsd 文件来填充服务架构的树视图组织。  BizTalkAdapterFramework.xsd 文件位于[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]开发人员工具文件夹。  
   
- 应该创建此文件，以便按照对您的解决方案直观明了的方式来组织架构。 CategorySchema.xml 中的现有类别仅作为示例，向您演示您可以在自己的树中执行的操作。 这些类别与示例适配器所传递的数据没有任何特别的关联。 架构的组织方式对特定于应用程序的适配器尤为重要，适配器中可能包含成千上万的不同架构。 对于特定于传输的适配器，不必使用树视图组织。  
+ 应创建此文件，以便它将组织到你的解决方案直观的方式中的架构。 CategorySchema.xml 中的现有类别是只是执行自己的树中的一个示例。 类别不具有任何特别的关联示例适配器传递的数据。 架构的组织是尤为重要，特定于应用程序的适配器，数千个不同的架构可能可用。 对于特定于传输的适配器，此树视图组织是不必要的。  
   
  下图显示**选择导入的服务**添加适配器元数据向导中的页。  
   
  ![](../core/media/ebiz-prog-custad-tree.gif "ebiz_prog_custad_tree")  
-“添加适配器元数据”向导中的架构类别树视图  
+在添加适配器元数据向导中的架构类别树视图  
 
 
 ## <a name="sample-xml"></a>示例 XML
   
- 下面的代码显示 CategorySchema.xml 文件：  
+ 以下代码显示 CategorySchema.xml 文件：  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -75,7 +75,7 @@ ms.locfileid: "37008006"
 </CategoryTree>  
 ```  
   
- 此架构实例中存在下列节点类型：  
+ 在此架构实例中显示了以下节点类型：  
   
 - **CategoryTree。** 模型的系统信息的顶级结构。 包含零个或多个 CategoryTreeNode、 ExpandableCategoryTreeNode 和 ServiceTreeNode 节点。  
   
@@ -83,7 +83,7 @@ ms.locfileid: "37008006"
   
 - **ExpandableCategoryTreeNode。** 展开时，将动态填充一个叶节点。 ExpandableCategoryTreeNode 用作占位符，并出现在 UI 中的文件夹。 这可以用于延迟填充具有子元素的类别节点，直到用户单击以展开的节点。 适配器可能会使用 ExpandableCategoryTreeNode，如果类别包含大量的子节点。  
   
-- **ServiceTreeNode。** ServiceTreeNode 为文档或叶节点，在 UI 中的显示，表示 Web 服务描述语言 (WSDL) 文件。  
+- **ServiceTreeNode.** ServiceTreeNode 为文档或叶节点，在 UI 中的显示，表示 Web 服务描述语言 (WSDL) 文件。  
   
   当用户单击来展开一个节点的文件夹时，适配器框架将调用**IStaticAdapterConfig.GetServiceOrganization**作为值传递的节点名称的适配器上的方法**NodeIdentifier**属性。 适配器应返回包含子节点 CategoryTree，若要添加 ExpandableCategoryTreeNode 下。 适配器框架 ExpandableCategoryTreeNode 替换 CategoryTreeNode 并向其添加返回 CategoryTree 的子级。  
   

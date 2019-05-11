@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c6e5ed96162adac55de0bda042a12d45b4243eef
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1c589c4abfe957b2b6515a1508bdf2da3cadd75a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971142"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394776"
 ---
-# <a name="error-encountered-during-instance-generation--field-can-repeat-but-repetition-delimiter-has-not-been-defined"></a>实例生成期间遇到错误 - 字段可以重复，但尚未定义重复分隔符
+# <a name="error-encountered-during-instance-generation--field-can-repeat-but-repetition-delimiter-has-not-been-defined"></a>实例生成-期间遇到的错误字段可以重复，但尚未定义重复分隔符
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                       |

@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e9650567f9f2072662af7f75d735a5a647de6d10
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 044969142c39d2844c2d9afd4bfe94ade8eded84
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014182"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373032"
 ---
 # <a name="receive-inbound-rfc-calls-in-sap-using-the-wcf-service-model"></a>在使用 WCF 服务模型的 SAP 中收到的入站 RFC 调用
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]可以充当一个 RFC 服务器用于接收 Rfc SAP 系统调用。  

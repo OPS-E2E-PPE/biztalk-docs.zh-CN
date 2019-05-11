@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 配置业务流程在 BizTalk Server 管理控制台中使用 Oracle 数据库适配器 |Microsoft Docs
+title: 第 2 步：若要使用 Oracle 数据库适配器的 BizTalk Server 管理控制台中配置业务流程 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e0a8b8035b27babeacd6e5ade8c2cc40c8af2d75
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 113d1b90f02961fd8ecdf5fd7ecc894e664b3796
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007862"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376000"
 ---
-# <a name="step-2-configure-the-orchestration-in-biztalk-server-administration-console-to-use-the-oracle-database-adapter"></a>步骤 2： 配置业务流程在 BizTalk Server 管理控制台中使用 Oracle 数据库适配器
+# <a name="step-2-configure-the-orchestration-in-biztalk-server-administration-console-to-use-the-oracle-database-adapter"></a>第 2 步：若要使用 Oracle 数据库适配器的 BizTalk Server 管理控制台中配置业务流程
 ![步骤 2 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")  
   
- **完成时间：** 10 分钟  
+ **若要完成的时间：** 10 分钟。  
   
- **目标：** 在此步骤中，执行以下任务：  
+ **目标：** 在此步骤中，您可以执行以下任务：  
   
 - 创建 WCF 自定义发送接收端口以发送和接收消息从 Oracle 数据库使用[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。 配置此端口以使用在上一步中创建的映射。  
   
@@ -79,7 +79,7 @@ ms.locfileid: "37007862"
       有关配置应用程序的详细信息，请参阅"如何配置应用程序的"网址[ http://go.microsoft.com/fwlink/?LinkID=196961 ](http://go.microsoft.com/fwlink/?LinkID=196961)。  
   
 ## <a name="next-steps"></a>后续步骤  
- 你现在已经完成迁移到 BizTalk 项目，将消息发送到使用基于 WCF 的 Oracle 数据库 vPrev BizTalk 项目的[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。 您现在必须测试已迁移的 BizTalk 应用程序通过发送请求消息以执行插入操作上，对 Oracle 数据库中所述[第 3 步： 测试已迁移应用程序到 Oracle 数据库适配器](../../adapters-and-accelerators/adapter-oracle-database/step-3-test-the-migrated-application-to-oracle-database-adapter.md)。  
+ 你现在已经完成迁移到 BizTalk 项目，将消息发送到使用基于 WCF 的 Oracle 数据库 vPrev BizTalk 项目的[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。 您现在必须测试已迁移的 BizTalk 应用程序通过发送请求消息以执行插入操作上，对 Oracle 数据库中所述[步骤 3:测试已迁移应用程序到 Oracle 数据库适配器](../../adapters-and-accelerators/adapter-oracle-database/step-3-test-the-migrated-application-to-oracle-database-adapter.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [教程： 迁移 BizTalk 项目](https://msdn.microsoft.com/library/dd788186(v=bts.80).aspx)
+ [教程：迁移 BizTalk 项目](https://msdn.microsoft.com/library/dd788186(v=bts.80).aspx)

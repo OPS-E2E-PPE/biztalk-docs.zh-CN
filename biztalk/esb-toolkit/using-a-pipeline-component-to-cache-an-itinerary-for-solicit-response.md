@@ -1,5 +1,5 @@
 ---
-title: 使用管道组件来缓存请求作出响应一条路线 |Microsoft 文档
+title: 使用管道组件来缓存要求-响应路线 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 64b6822a4f4ca70e88ee86277e00645982595b47
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5ddb3f639286ba29e28230b53b9a8a26a8304ea1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294989"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396506"
 ---
-# <a name="using-a-pipeline-component-to-cache-an-itinerary-for-solicit-response"></a>使用管道组件来缓存请求作出响应一条路线
-通过提交消息[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]路线上负载增加可以通过单向路线或双向 （请求-响应） 路线。 若要支持请求-响应路线，路线机制必须提供 BizTalk 动态请求-响应发送端口的缓存。  
+# <a name="using-a-pipeline-component-to-cache-an-itinerary-for-solicit-response"></a>使用管道组件来缓存要求-响应路线
+通过提交消息[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]路线接入点即可完成单向路线或双向 （请求-响应） 路线。 若要支持请求-响应路线，路线机制必须提供 BizTalk 动态要求响应发送端口的缓存。  
   
- ESB 路线缓存管道组件将存储到缓存中的出站消息上下文路线，并将其附加到响应消息中;它将返回发送端口的使用可配置的缓存密钥。 这允许路线的服务处理和执行后续后路线中的当前服务定义的服务。  
+ ESB 路线缓存管道组件将放入缓存中存储出站消息上下文中路线，并将其附加到响应消息中;使用可配置的缓存密钥的发送端口返回。 这样，路线服务来处理和执行后路线中的当前服务定义的后续服务。  
   
- 默认情况下，ESB 路线缓存管道组件的驻留在 ItineraryReceiveSend BizTalk 管道中，如图 1 中所示。 此管道应只可用作接收管道请求-响应发送端口。  
+ 默认情况下，ESB 路线缓存管道组件驻留在 ItineraryReceiveSend BizTalk 管道中，如图 1 中所示。 此管道应使用仅作为接收管道中，对于要求-响应发送端口中。  
   
- ![管道组件缓存](../esb-toolkit/media/ch4-pipelinecomponentcache.gif "第四章第 4 PipelineComponentCache")  
+ ![管道组件缓存](../esb-toolkit/media/ch4-pipelinecomponentcache.gif "Ch4-PipelineComponentCache")  
   
  **图 1**  
   
  **ESB 路线缓存管道组件**  
   
- 使用 BizTalk 中的 ESB 路线缓存管道组件接收请求-响应发送端口的管道。
+ 使用 ESB 路线缓存管道组件在 BizTalk 接收管道要求响应发送端口。

@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c788bf8c98fc06511ce692c84600f040443dd993
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b99e0dbce9bc4adca6cfebd50b7aeda023b64a17
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989166"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373677"
 ---
 # <a name="configure-the-sign-in-credentials-for-the-sap-system"></a>配置 SAP 系统的凭据登录
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]要求适配器客户端提供客户端凭据。 SAP 系统与用户进行身份验证和建立连接，适配器将使用这些凭据。  
@@ -59,7 +59,7 @@ ms.locfileid: "36989166"
    | **模板**  | 单击**添加适配器元数据**。 |
 
 
-3. 单击 **“添加”**。 此时[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]会打开。  
+3. 单击 **“添加”**。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]随即打开。  
 
 4. 在添加适配器向导中，选择**WCF-SAP**。 选择在其安装 BizTalk Server 的计算机和 BizTalk 数据库的名称。  
 

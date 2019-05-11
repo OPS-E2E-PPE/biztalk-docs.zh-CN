@@ -22,12 +22,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 411ae3a1b044b89a0ef5390a0f0ad26430909bcb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 832df9dfe3384a239ab4e4148229e9bc65f65e77
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984630"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373443"
 ---
 # <a name="features-for-sap-adapter-clients"></a>SAP 适配器客户端的功能
 除了讨论的主题的功能[用于 mySAP Business Suite 的 BizTalk 适配器的体系结构概述](../../adapters-and-accelerators/adapter-sap/architecture-overview-of-the-biztalk-adapter-for-mysap-business-suite.md)，则[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]还提供了以下功能，可用于适配器客户端。  

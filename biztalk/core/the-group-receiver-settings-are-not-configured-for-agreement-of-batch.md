@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 534d426d192e27bbe7c6c7e866399b42360a8e3a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: aa5b6e201ffc3321920e23129adf9073589c25f6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990638"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394129"
 ---
-# <a name="the-group-receiver-settings-are-not-configured-for-agreement-of-batch"></a>未针对批协议配置组接收器设置
+# <a name="the-group-receiver-settings-are-not-configured-for-agreement-of-batch"></a>未批处理的协议配置组接收器设置
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                     |

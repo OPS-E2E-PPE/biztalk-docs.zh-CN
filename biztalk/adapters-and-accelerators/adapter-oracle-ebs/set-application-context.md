@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3a512f2b3e198d496390bdc462af073bf05c1668
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 539983840f07160ad58ec688eda24286dc1a3abc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004230"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374573"
 ---
 # <a name="set-application-context"></a>设置应用程序上下文
 在[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]，设置应用程序上下文是所必需的 （接口表、 界面视图、 并发程序和请求集） 的某些 Oracle E-business Suite 项目之前您可以对其执行操作。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]不允许你在设置应用程序上下文之前执行这些项目上的操作。 但是，对于基础的 Oracle 数据库中的项目，是由用户是否要设置应用程序上下文。  
@@ -25,20 +25,20 @@ ms.locfileid: "37004230"
 ## <a name="what-is-application-context"></a>什么是应用程序上下文  
  应用程序上下文是一组与实现用户首选项和相应的项目的访问控制的 Oracle E-business Suite 中的项目相关联的元素。 应用程序上下文包含以下元素：  
   
-- **用户名称**： 用户可以连接到 Oracle E-business Suite。  
+- **用户名称**:可以连接到 Oracle E-business Suite 用户。  
   
-- **责任**： 负责在 Oracle E-business Suite，允许用户访问这些数据和函数，适合于组织中其角色的访问级别。 责任可以允许访问特定的应用程序，操作系统单位、 书籍、 组和一个 windows、 函数和其他责任的限制的列表。 由于分配给用户的职责，您可以授予/限制访问的 Oracle E-business Suite 中的用户。  
+- **责任**:负责在 Oracle E-business Suite，允许用户访问这些数据和函数，适合于组织中其角色的访问级别。 责任可以允许访问特定的应用程序，操作系统单位、 书籍、 组和一个 windows、 函数和其他责任的限制的列表。 由于分配给用户的职责，您可以授予/限制访问的 Oracle E-business Suite 中的用户。  
   
-- **组织 ID**: Oracle E-business Suite 设置最多可支持多个组织。 一个值，组织 ID 中的表中存储有关这些组织的信息的 Oracle E-business Suite 的 Org_ID 列进行唯一标识这些不同的组织。 通过将分配到组织的职责或显式选择组织，你可以授予/限制访问的用户的组织。  
+- **组织 ID**:Oracle E-business Suite 支持设置最多家组织。 一个值，组织 ID 中的表中存储有关这些组织的信息的 Oracle E-business Suite 的 Org_ID 列进行唯一标识这些不同的组织。 通过将分配到组织的职责或显式选择组织，你可以授予/限制访问的用户的组织。  
   
   有关职责的详细信息，搜索多个组织和 Oracle E-business Suite 中的组织 ID [Oracle 帮助中心](http://docs.oracle.com)。  
   
 ## <a name="setting-application-context"></a>设置应用程序上下文  
  作为[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]用于 Oracle E-business Suite 项目未建立或初始化适配器中连接到 Oracle E-business Suite，应用程序上下文中的基础数据库。 你可以初始化，或设置在这些项目的应用程序上下文[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]通过下列操作之一：  
   
-- **绑定属性**:[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公开以下绑定属性来设置应用程序上下文： **OracleEBSOrganizationId**， **OracleUserName**， **OraclePassword**， **OracleEBSResponsibilityKey**， **OracleEBSResponsibilityName**，并且**ApplicationShortName**。 不需要指定所有这些绑定属性，若要设置的各种项目的应用程序上下文的值。 有关所需的某一项目的设置应用程序上下文的绑定属性的信息，请参阅[设置应用程序上下文的各种项目的绑定属性](#Binding)本主题中更高版本。  
+- **绑定属性**:[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公开以下绑定属性来设置应用程序上下文：**OracleEBSOrganizationId**， **OracleUserName**， **OraclePassword**， **OracleEBSResponsibilityKey**， **OracleEBSResponsibilityName**，并**ApplicationShortName**。 不需要指定所有这些绑定属性，若要设置的各种项目的应用程序上下文的值。 有关所需的某一项目的设置应用程序上下文的绑定属性的信息，请参阅[设置应用程序上下文的各种项目的绑定属性](#Binding)本主题中更高版本。  
   
-- **消息上下文属性**:[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公开以下消息上下文属性用于设置应用程序上下文： **ApplicationShortName**， **OrganizationID****ResponsibilityKey**，并**ResponsibilityName**。 对于指定的用户名和密码，必须使用的绑定属性。 有关如何设置应用程序上下文中使用消息上下文属性的信息，请参阅[配置应用程序上下文使用消息上下文属性](../../adapters-and-accelerators/adapter-oracle-ebs/configure-application-context-using-message-context-properties-in-oracle-ebs.md)。  
+- **消息上下文属性**:[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公开以下消息上下文属性用于设置应用程序上下文：**ApplicationShortName**， **OrganizationID**， **ResponsibilityKey**，并且**ResponsibilityName**。 对于指定的用户名和密码，必须使用的绑定属性。 有关如何设置应用程序上下文中使用消息上下文属性的信息，请参阅[配置应用程序上下文使用消息上下文属性](../../adapters-and-accelerators/adapter-oracle-ebs/configure-application-context-using-message-context-properties-in-oracle-ebs.md)。  
   
 > [!IMPORTANT]
 >  为指定的值**OracleEBSResponsibilityKey**绑定属性将重写的值**OracleEBSResponsibilityName**属性绑定。 同样，为指定的值**ResponsibilityKey**消息上下文属性将为指定的值重写**ResponsibilityName**消息上下文属性。  
@@ -83,9 +83,9 @@ ms.locfileid: "37004230"
   
 - **PL/SQL Api**:[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公开 PL/SQL Api 与 Oracle 数据库，以及 Oracle E-business Suite 应用程序相关联。 可选应用程序上下文设置 PL/SQL api 与 Oracle 数据库相关联时，它是必须为与 Oracle E-business Suite 应用程序关联的 PL/SQL Api 设置应用程序上下文。  
   
-- **过程和函数**： 不一定要设置应用程序上下文的 Oracle 数据库中执行操作过程和函数。  
+- **过程和函数**:不一定要设置应用程序上下文的 Oracle 数据库中执行操作过程和函数。  
   
-- **表和视图**： 不一定要设置要在 Oracle 数据库中执行对表和视图的操作的应用程序上下文。 但是，对于自定义 Oracle E-business Suite 应用程序，用户可能会或可能无法注册接口表为基础数据库表。 如果数据库表未注册为接口表，它将显示中的数据库表以及[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。 由于这些表与相关联的 Oracle 电子商务应用程序，必须对这些表的任何操作的设置应用程序上下文。  
+- **表和视图**:不一定要设置要在 Oracle 数据库中执行对表和视图的操作的应用程序上下文。 但是，对于自定义 Oracle E-business Suite 应用程序，用户可能会或可能无法注册接口表为基础数据库表。 如果数据库表未注册为接口表，它将显示中的数据库表以及[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。 由于这些表与相关联的 Oracle 电子商务应用程序，必须对这些表的任何操作的设置应用程序上下文。  
   
   若要设置这些项目的应用程序上下文，必须为绑定属性或前面指定的消息上下文属性提供相应的值。  
   
@@ -109,7 +109,7 @@ ms.locfileid: "37004230"
 ##  <a name="Binding"></a> 设置的各种项目的应用程序上下文的绑定属性  
  下表提供了有关必须为其指定适当的值以设置各种项目的应用程序上下文的绑定属性的信息：  
   
-|项目|OracleEBSOrganizationId|OracleUserName|OraclePassword|OracleEBSResponsibilityKey<br />或多个<br />OracleEBSResponsibilityName|ApplicationShortName|  
+|项目|OracleEBSOrganizationId|OracleUserName|OraclePassword|OracleEBSResponsibilityKey<br />或<br />OracleEBSResponsibilityName|ApplicationShortName|  
 |---|---|---|---|---|---|  
 |界面表和界面视图|√*|√|√|√||  
 |并发程序|√*|√|√|√||  

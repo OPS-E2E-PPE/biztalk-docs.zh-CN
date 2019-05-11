@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ebf84eef3d5e1ec4730926dd34b6533e1a7491f8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9437ba17f67ca35303c02ca1522ffe8c7851ff3a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980542"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374321"
 ---
 # <a name="understand-biztalk-adapter-for-oracle-e-business-suite"></a>了解用于 Oracle E-business Suite 的 BizTalk 适配器
 ## <a name="biztalk-adapter-pack-features"></a>BizTalk 适配器包功能
@@ -49,7 +49,7 @@ ms.locfileid: "36980542"
   
  本部分中列出的功能[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]。  
   
-## <a name="more-good-stuff"></a>更多有用内容  
+## <a name="more-good-stuff"></a>更多有用资料  
   
 -    [使用适配器连接到 Oracle E-Business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-oracle-e-business-suite-using-the-adapter.md)
 

@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a7674b1f7b9a24337985bcb7496c03cae88115de
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6263e9af9ce9ec826c887e04b398fa862edf0332
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007878"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392018"
 ---
 # <a name="general-guidelines-for-improving-operating-system-performance"></a>优化操作系统性能的通用指南
 应遵循以下常规准则来提高操作系统性能：  
@@ -36,7 +36,7 @@ ms.locfileid: "37007878"
 ## <a name="enable-the-high-performance-power-plan-on-all-biztalk-server-and-sql-server-computers"></a>启用"高性能"电源计划在所有 BizTalk Server 和 SQL Server 计算机上。  
  默认情况下，Windows Server 2008/2008 R2 集 （推荐） 已平衡电源计划，从而使能源节省，但可能会导致增加延迟时间 （速度较慢的一些任务响应时间） 并导致性能问题与 CPU 密集型应用程序。  
   
- 为了降低延迟，您必须确保运行 BizTalk Server 的所有服务器和 SQL Server 的 Windows**电源计划**设置为**高性能**。 有关如何切换到详细信息**高性能**电源计划，请参阅知识库文章： 2207548 [Windows Server 2008 R2 上的总体性能下降](http://go.microsoft.com/fwlink/?LinkID=219677)(http://go.microsoft.com/fwlink/?LinkID=219677)。  
+ 为了降低延迟，您必须确保运行 BizTalk Server 的所有服务器和 SQL Server 的 Windows**电源计划**设置为**高性能**。 有关如何切换到详细信息**高性能**电源计划，请参阅知识库文章：2207548 [Windows Server 2008 R2 上的总体性能下降](http://go.microsoft.com/fwlink/?LinkID=219677)(http://go.microsoft.com/fwlink/?LinkID=219677)。  
   
 ## <a name="evaluate-the-usage-of-intel-hyper-threading-on-biztalk-server-and-sql-server-computers"></a>评估 BizTalk Server 和 SQL Server 计算机上的 Intel 超线程使用情况  
   
@@ -46,9 +46,9 @@ ms.locfileid: "37007878"
   
     -   超线程应关闭状态在 SQL Server 计算机，因为可能会导致高水平的争用 （例如 BizTalk Server) 的应用程序可能导致性能降低在 SQL Server 计算机上的超线程环境中使用。  
   
--   **Nehalem 超线程**： 与不同在较旧体系结构中启用超线程在 Intel 微体系结构"Nehalem"处理器可提供最大容量几乎呈线性增加。 为获得最佳性能结果，在将"Nehalem"处理器时我们建议通过启用标记会增加吞吐量 Intel 超线程 (H T) 技术来配置计算机的 BIOS。  
+-   **Nehalem 超线程**:与不同在较旧体系结构中启用超线程在 Intel 微体系结构"Nehalem"处理器可提供最大容量几乎呈线性增加。 为获得最佳性能结果，在将"Nehalem"处理器时我们建议通过启用标记会增加吞吐量 Intel 超线程 (H T) 技术来配置计算机的 BIOS。  
   
--   **硬件虚拟化**： 时使用的硬件虚拟化，虚拟机使用虚拟处理器。 可用的 Cpu 数基于时配置虚拟机选择的设置。 如果硬件超线程，虚拟机不会知道它是超线程。  
+-   **硬件虚拟化**:在使用硬件虚拟化，虚拟机使用虚拟处理器。 可用的 Cpu 数基于时配置虚拟机选择的设置。 如果硬件超线程，虚拟机不会知道它是超线程。  
   
 ## <a name="assign-the-msdtc-log-file-directory-to-a-separate-dedicated-drive"></a>将 MSDTC 日志文件目录分配到单独的专用驱动器  
  在 BizTalk Server 环境使用不同的 SQL Server 计算机上的多个 MessageBox 数据库中，产生关联与 Microsoft 分布式事务处理协调器 (MSDTC) 的额外开销。 默认情况下，MSDTC 日志文件位于运行 DTC 服务的计算机的 %systemdrive%\windows\system32\msdtc 目录中。 若要降低 DTC 日志记录可能成为性能瓶颈的可能性，请考虑将 MSDTC 日志文件目录移到快速的磁盘驱动器。  
@@ -81,7 +81,7 @@ ms.locfileid: "37007878"
   
 1.  单击**启动**，单击**运行**，类型**dcomcnfg**，然后单击**确定**打开**组件服务**.  
   
-2.  在控制台树中，依次展开“组件服务”、“计算机”、“我的计算机”、“分布式事务处理协调器”，然后单击“本地 DTC”。  
+2.  在控制台树中，展开**组件服务**，展开**计算机**，展开**我的电脑**，展开**分布式事务处理协调器**，然后单击**本地 DTC**。  
   
 3.  右键单击**本地 DTC**，然后单击**属性**以显示**本地 DTC 属性**对话框。  
   
@@ -89,7 +89,7 @@ ms.locfileid: "37007878"
   
 5.  单击 **“安全性”** 选项卡。  
   
-6.  确保以下四个选项均处于选中状态，且清除所有其他选项：  
+6.  确保以下四个选项中的每个已选择，所有其他清除：  
   
     -   **网络 DTC 访问**  
   
@@ -101,7 +101,7 @@ ms.locfileid: "37007878"
   
 7.  单击**确定**以关闭**本地 DTC 属性**对话框。 如果系统提示您重新启动 MSDTC 服务，请单击**是**。  
   
-8.  关闭“组件服务”。  
+8.  关闭**组件服务**。  
   
 9. 单击**启动**，依次指向**管理工具**，然后单击**高级安全 Windows 防火墙**。  
   
@@ -119,11 +119,11 @@ ms.locfileid: "37007878"
   
 16. 在右侧窗格中的**服务 （本地）**，右键单击**COM + 系统应用程序**，单击**重启**，并等待服务重新启动。  
   
-17. 右键单击并重启“分布式事务处理协调器”服务。  
+17. 右键单击并重启**分布式事务处理协调器**服务。  
   
-18. 右键单击并重启“SQL Server (MSSQLSERVER)”服务。  
+18. 右键单击并重启**SQL Server (MSSQLSERVER)** 服务。  
   
-19. 关闭“服务(本地)”，然后关闭“管理工具”。  
+19. 关闭**服务 （本地）**，然后关闭**管理工具**。  
   
 ## <a name="configure-firewalls-for-biztalk-server"></a>为 BizTalk Server 配置防火墙  
   
@@ -214,7 +214,7 @@ Windows Server 2008 使用强占式多任务来确定将为参加由 CPU 的进�
   
     -   Alerter  
   
-    -   剪贴簿  
+    -   ClipBook  
   
     -   DHCP 服务器  
   
@@ -282,7 +282,7 @@ Windows Server 2008 使用强占式多任务来确定将为参加由 CPU 的进�
   
 3. 从命令提示符下输入以下命令以使用 certutil 实用程序以使用在步骤 1 中下载 CRL 更新本地证书存储区：  
   
-    certutil – addstore CA c:\CodeSignPCA.crl  
+    certutil –addstore CA c:\CodeSignPCA.crl  
   
    CRL 文件将定期更新，因此您应该考虑设置重复的任务的下载和安装 CRL 更新。 若要查看下一步的更新时间，双击.crl 文件以及查看的值**下一步更新**字段。  
   

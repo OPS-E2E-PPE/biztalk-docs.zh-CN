@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1ca8464af7002fe7863246dc440a4da27ee23e1f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1030db388020104fcdf678cb08d09ec10fca0e58
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970318"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372882"
 ---
 # <a name="send-idocs-to-sap-using-biztalk-server"></a>向使用 BizTalk Server 的 SAP 发送 Idoc
 所有对 SAP 的 IDOC 调用在内部被视为 tRFC 调用其中适配器可用作 tRFC 客户端，并在 SAP 发送 IDOC 中调用 RFC。 本部分介绍在使用向 SAP 发送 Idoc[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]与[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]两个不同的操作以发送 Idoc 的图面：  
@@ -125,7 +125,7 @@ ms.locfileid: "36970318"
 ### <a name="adding-ports"></a>添加端口  
  请确保为每个逻辑端口中指定以下属性。 中列出的名称*端口*列是在业务流程中显示的端口的名称。  
 
-|端口|属性|  
+|Port|属性|  
 |----------|----------------|  
 |FileIn|-设置**标识符**到*FileIn*<br />-设置**类型**到*FileInType*<br />-设置**通信模式**到*单向*<br />-设置**通信方向**到*接收*|  
 |LOBPort|-设置**标识符**到*LOBPort*<br />-设置**类型**到*LOBPortType*<br />-设置**通信模式**到*请求-响应*<br />-设置**通信方向**到*发送接收*|  
@@ -142,7 +142,7 @@ ms.locfileid: "36970318"
 
     |使用此选项|执行的操作|  
     |--------------|----------------|  
-    |类别|管道文件|  
+    |Categories|管道文件|  
     |Visual Studio 已安装的模板|接收管道|  
     |“属性”|IDOCReceive|  
 

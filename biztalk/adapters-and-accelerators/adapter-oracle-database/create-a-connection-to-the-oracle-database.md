@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c79af51280879e1cf6c72053a42822cd24fae68e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dddc8a375672227358ee82c54035382ae0838da3
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988454"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529289"
 ---
 # <a name="create-a-connection-to-the-oracle-database"></a>创建与 Oracle 数据库的连接
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]是[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]自定义绑定。 在这种情况下，它支持到 Oracle 数据库通过 WCF 终结点地址的通信。 在 WCF 中，终结点地址通常表示为统一资源标识符 (URI)，用于标识该服务的网络位置。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]表达此位置作为一个连接 URI，其中包含属性的[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]用于建立与 Oracle 数据库的连接。  

@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e484b221df54f00b02f20ef89466fed6b99cd69d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a1acb8f56a4318695584abb074ddfcc0cf0c28c0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22225093"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65361923"
 ---
 # <a name="accessing-soap-headers-in-pipeline-components"></a>访问在管道组件中的 SOAP 标头
 你可以访问在管道组件中的 SOAP 标头上下文属性。 使用上下文属性名称和目标命名空间的组合**http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**。  

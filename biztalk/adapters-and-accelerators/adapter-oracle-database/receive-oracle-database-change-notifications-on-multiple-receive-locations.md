@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9da4eac1c08768e5c4c349ae12de26dce2266d1e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ce52404e04b8820d63035c0328969100967c4e16
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011295"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529591"
 ---
 # <a name="receive-oracle-database-change-notifications-on-multiple-receive-locations"></a>接收到 Oracle 数据库更改通知在多个接收位置
 假设其中有多个接收位置配置为接收同一个表 (例如 ACCOUNTACTIVITY) 的查询通知的不同 BizTalk 应用程序的一部分创建的同一数据库中。 如果 100 个记录插入到同一个表，所有接收位置将都收到通知消息。 若要有效地接收通知跨多个接收位置，可以从 BizTalk 应用程序如果收到了通知由一个接收位置的此类的方式调用操作，其他接收位置不会获取相同的通知。 因此，您可以有效地在多个位置上接收到的负载平衡通知。  
@@ -55,8 +55,8 @@ END NOTIFY_LOAD_BALANCE;
    |     绑定属性      |                                                                                                                                                                                                                                                                         ReplTest1                                                                                                                                                                                                                                                                         |
    |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | **InboundOperationType**  |                                                                                                                                                                                                                                                             将此设置为**通知**。                                                                                                                                                                                                                                                             |
-   |   **NotificationPort**    | 指定 ODP.NET 必须打开从 Oracle 数据库的数据库更改通知侦听的端口号。 将此设置为相同的端口号必须已添加到 Windows 防火墙例外列表。 有关如何将端口添加到 Windows 防火墙例外列表的说明，请参阅[ http://go.microsoft.com/fwlink/?LinkID=196959 ](http://go.microsoft.com/fwlink/?LinkID=196959)。 **重要说明：** 如果将其设置为默认值-1，必须完全禁用 Windows 防火墙，以接收通知消息。 |
-   | **NotificationStatement** |                                                                                                                                                                 将此设置为：<br /><br /> `SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’` **注意：** 必须指定表名称以及架构名称。 例如， `SCOTT.ACCOUNTACTIVITY`。                                                                                                                                                                 |
+   |   **NotificationPort**    | 指定 ODP.NET 必须打开从 Oracle 数据库的数据库更改通知侦听的端口号。 将此设置为相同的端口号必须已添加到 Windows 防火墙例外列表。 有关如何将端口添加到 Windows 防火墙例外列表的说明，请参阅[ http://go.microsoft.com/fwlink/?LinkID=196959 ](http://go.microsoft.com/fwlink/?LinkID=196959)。 **重要提示：** 如果将其设置为默认值-1，必须将完全禁用 Windows 防火墙，以接收通知消息。 |
+   | **NotificationStatement** |                                                                                                                                                                 将此设置为：<br /><br /> `SELECT TID,ACCOUNT,PROCESSED FROM SCOTT.ACCOUNTACTIVITY WHERE PROCESSED = ‘n’` **注意：** 必须指定表名称以及架构名称。 例如，`SCOTT.ACCOUNTACTIVITY`。                                                                                                                                                                 |
    | **NotifyOnListenerStart** |                                                                                                                                                                                                                                                                 将此设置为 **，则返回 True**。                                                                                                                                                                                                                                                                 |
 
 

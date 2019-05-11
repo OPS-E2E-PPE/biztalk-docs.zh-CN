@@ -1,5 +1,5 @@
 ---
-title: 步骤 3D： 添加 FILEACT 发送端口 FileAct 应用商店应用和向前方案 |Microsoft 文档
+title: 步骤 3D:添加 FILEACT 发送端口为 FileAct 存储和转发方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,76 +12,76 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3944c58aecda3d9ea984e0ef0ce9a2bf168ea80
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 9673f80bf19b365297b76ba3775f8f73813052f3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25965483"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65365512"
 ---
-# <a name="step-3d-add-a-fileact-send-port-for-the-fileact-store-and-forward-scenario"></a>步骤 3D： 添加 FILEACT 发送端口 FileAct 应用商店应用和转发方案
-在开始此步骤之前，必须完成[步骤 3c： 添加捕获 Sw:HandleFileRequest 文件发送端口和 FileAct 应用商店应用和转发方案 Sw:HandleSnFRequest 消息](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlefilerequest-and-sw-handlesnfrequest.md)。  
+# <a name="step-3d-add-a-fileact-send-port-for-the-fileact-store-and-forward-scenario"></a>步骤 3D:添加 FILEACT 发送端口为 FileAct 存储和转发方案
+在开始此步骤之前，必须完成[步骤 3c:添加 FILE 发送端口以捕获为 FileAct 存储和转发方案: handlefilerequest 和 sw: handlesnfrequest 消息](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlefilerequest-and-sw-handlesnfrequest.md)。  
   
 ### <a name="to-add-a-fileact-send-port"></a>若要添加 FILEACT 发送端口  
   
 1.  启动**BizTalk Server 管理**。  
   
-2.  在控制台树中，展开 BizTalk 组中，，然后展开你想要创建发送端口的 BizTalk 应用程序。  
+2.  在控制台树中，依次展开 BizTalk 组，和你想要创建的发送端口的 BizTalk 应用程序。  
   
-3.  右键单击**发送端口**，指向**新建**，然后单击**静态请求-响应发送端口**。  
+3.  右键单击**发送端口**，依次指向**新建**，然后单击**静态要求响应发送端口**。  
   
-4.  在**发送端口属性**窗口中，名称发送端口 Tutorial_FA_SendRequest_SnF。  
+4.  在中**发送端口属性**窗口中，命名该发送端口，Tutorial_FA_SendRequest_SnF。  
   
-5.  在**发送端口属性**窗口中，从**传输类型**下拉列表中，选择**FILEACT**，然后单击**配置**。  
+5.  在中**发送端口属性**窗口中，从**传输类型**下拉列表中，选择**FILEACT**，然后单击**配置**。  
   
-6.  在**FILEACT 传输属性**对话框框中，执行以下操作：  
+6.  在中**FILEACT 传输属性**对话框框中，执行以下操作：  
   
-    |**使用此方法**|**若要执行此操作**|  
+    |**使用此**|**若要执行此操作**|  
     |------------------|--------------------|  
     |**密码**|根据压降连接需要设置密码。|  
     |**用户名**|根据压降连接需要设置的用户名。|  
-    |**适配器模式**|从下拉列表中选择**存储和转发**。|  
-    |**不可否认性指示器**|从下拉列表中选择**FALSE**。|  
-    |**请求类型**|设置为相应\<RequestType\>基于 SWIFT 你设置的字符串。|  
-    |**ResponseCrypto**|从下拉列表中选择**FALSE**。|  
-    |**请求者**|设置为相应\<请求者\>基于 SWIFT 你设置的字符串。|  
-    |**响应方**|设置为相应\<响应方\>字符串。|  
-    |**服务名称**|设置为相应\<服务名称\>。|  
-    |**确认指示器**|从下拉列表中选择**FALSE**。|  
-    |**FileCompression**|从下拉列表中选择**无**。|  
+    |**适配器模式**|从下拉列表中，选择**存储和转发**。|  
+    |**不可否认指示器**|从下拉列表中，选择**FALSE**。|  
+    |**请求类型**|设置为适当\<RequestType\>为基础的 SWIFT 应用预配的字符串。|  
+    |**ResponseCrypto**|从下拉列表中，选择**FALSE**。|  
+    |**请求者**|设置为适当\<请求程序\>为基础的 SWIFT 应用预配的字符串。|  
+    |**响应方**|设置为适当\<响应方\>字符串。|  
+    |**服务名称**|设置为适当\<服务名称\>。|  
+    |**确认指示器**|从下拉列表中，选择**FALSE**。|  
+    |**FileCompression**|从下拉列表中，选择**None**。|  
     |**事件终结点**|键入相应压降终结点。|  
     |**物理文件夹名称**|键入 C:\SWIFTAdapterTutorial\Fileact\ClientLocation。|  
-    |**传输终结点**|键入压降路由组的相应终结点。 此值应与匹配压降中配置的 SnL 终结点。|  
-    |**ServiceProfile**|从下拉列表中选择**事务计数**。|  
-    |**传递通知**|从下拉列表中选择**FALSE**。|  
-    |**通知队列**|键入根据 SWIFT 你设置的队列名称。|  
+    |**传输终结点**|键入压降路由组的相应终结点。 此值应与配置中压降 SnL 终结点匹配。|  
+    |**ServiceProfile**|从下拉列表中，选择**事务计数**。|  
+    |**送达通知**|从下拉列表中，选择**FALSE**。|  
+    |**通知队列**|键入基于 SWIFT 与预配的队列名称。|  
   
     > [!WARNING]
-    >  如果消息与事务计数要传输，服务配置文件中设置模式为"事务计数"FileAct 发送端口。  
+    >  如果要传输消息的事务计数，服务配置文件将模式设置为"事务计数"FileAct 发送端口。  
   
-7.  单击 **“确定”**。  
+7.  单击“确定” 。  
   
-8.  在**发送端口属性**窗口中，执行以下操作：  
+8.  在中**发送端口属性**窗口中，执行以下操作：  
   
-    |**使用此方法**|**若要执行此操作**|  
+    |**使用此**|**若要执行此操作**|  
     |------------------|--------------------|  
     |**发送处理程序**|从下拉列表中，选择 Fileact 主机。|  
-    |**发送管道**|从下拉列表中选择**XMLTransmit**。|  
-    |**接收管道**|从下拉列表中选择**XMLReceive**。|  
+    |**发送管道**|从下拉列表中，选择**XMLTransmit**。|  
+    |**接收管道**|从下拉列表中，选择**XMLReceive**。|  
   
-9. 在**发送端口属性**窗口，请在**筛选器**选项卡上，执行以下操作：  
+9. 在中**发送端口属性**窗口，然后在**筛选器**选项卡上，执行以下操作：  
   
-    |**使用此方法**|**若要执行此操作**|  
+    |**使用此**|**若要执行此操作**|  
     |------------------|--------------------|  
-    |**属性**|从下拉列表中选择**BTS。ReceivePortName**。|  
-    |**运算符**|从下拉列表中选择 **==** 。|  
-    |**值**|类型 Tutorial_FA_InputRequest_SnF。|  
+    |**属性**|从下拉列表中，选择**BTS。ReceivePortName**。|  
+    |**“运算符”**|从下拉列表中，选择**==**。|  
+    |**ReplTest1**|类型 Tutorial_FA_InputRequest_SnF。|  
     |**分组依据**|保留默认值。|  
   
-10. 单击 **“确定”**。  
+10. 单击“确定” 。  
   
-## <a name="see-also"></a>另请参阅  
- [步骤 3： 创建发送端口和接收端口 FileAct 应用商店应用和转发方案](../../adapters-and-accelerators/fileact-interact/step-3-create-send-ports-and-receive-ports-for-the-fileact-store-and-forward.md)   
- [步骤 3A： 添加一个文件接收位置 FileAct 应用商店应用和转发方案](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-fileact-store-and-forward-scenario.md)   
- [步骤 3B： 添加 FILEACT 接收位置 FileAct 应用商店应用和转发方案](../../adapters-and-accelerators/fileact-interact/step-3b-add-a-fileact-receive-location-for-fileact-store-and-forward-scenario.md)   
- [步骤 3C：为 FileAct 存储和转发方案添加 FILE 发送端口以捕获 Sw:HandleFileRequest 和 Sw:HandleSnFRequest 消息](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlefilerequest-and-sw-handlesnfrequest.md)
+## <a name="see-also"></a>请参阅  
+ [步骤 3：创建发送端口和接收端口为 FileAct 存储和转发方案](../../adapters-and-accelerators/fileact-interact/step-3-create-send-ports-and-receive-ports-for-the-fileact-store-and-forward.md)   
+ [步骤 3a:为 FileAct 存储和转发方案添加文件接收位置](../../adapters-and-accelerators/fileact-interact/step-3a-add-a-file-receive-location-for-the-fileact-store-and-forward-scenario.md)   
+ [步骤 3b:为 FileAct 存储和转发方案添加 FILEACT 接收位置](../../adapters-and-accelerators/fileact-interact/step-3b-add-a-fileact-receive-location-for-fileact-store-and-forward-scenario.md)   
+ [步骤 3c:添加 FILE 发送端口以捕获为 FileAct 存储和转发方案: handlefilerequest 和 sw: handlesnfrequest 消息](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlefilerequest-and-sw-handlesnfrequest.md)

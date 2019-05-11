@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 819143bd7e65c9cea91232e2529b20cfab2c049d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c85557014b9df46bf939e23894a8e6453c9580c8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003166"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368579"
 ---
 # <a name="overview-of-the-wcf-channel-model-with-the-sql-adapter"></a>与 SQL 适配器的 WCF 通道模型概述
 若要在调用操作[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]，你的代码可用作 WCF 客户端，并将出站操作发送到适配器。 在 WCF 通道模型中，你的代码的通道上发送请求消息来调用在适配器上的操作。  

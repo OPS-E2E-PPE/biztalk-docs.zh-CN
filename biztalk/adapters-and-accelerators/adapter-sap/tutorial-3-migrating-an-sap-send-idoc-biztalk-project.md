@@ -1,5 +1,5 @@
 ---
-title: 教程 3： 迁移 SAP 发送 IDOC BizTalk 项目 |Microsoft Docs
+title: 教程 3:迁移 SAP 发送 IDOC BizTalk 项目 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9aaf4fae9afaad2900f0354aec9f1eeb3f3de0ee
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 524e6fd3bbd793f318013c55da0a8987244aa682
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966446"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372289"
 ---
-# <a name="tutorial-3-migrating-an-sap-send-idoc-biztalk-project"></a>教程 3： 迁移 SAP 发送 IDOC BizTalk 项目
+# <a name="tutorial-3-migrating-an-sap-send-idoc-biztalk-project"></a>教程 3:迁移 SAP 发送 IDOC BizTalk 项目
 SAP 适配器随 Microsoft BizTalk Server 的以前版本不同于基于 WCF 的[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]在许多方面，包括：  
   
 - 创建 BizTalk 项目的设计时体验。  
@@ -49,7 +49,7 @@ SAP 适配器随 Microsoft BizTalk Server 的以前版本不同于基于 WCF 的
 ## <a name="sample-used-for-the-tutorial"></a>本教程使用示例  
  基于本教程演示如何迁移将 IDOC 发送到 SAP 系统的 vPrev BizTalk 项目的示例 (SendIDOC_Migration)。 使用提供了示例[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。 有关详细信息，请参阅[适配器示例](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
   
 -   必须有一个 vPrev BizTalk 项目。 本教程涉及到将 BOMDOC IDOC 发送到 SAP 系统的 BizTalk 项目。  
   

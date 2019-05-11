@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 02112b6974a537c9f66cc301014ae16bb4bf326f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e474d083c352e4fbc73076c4248db9a16cfa13ee
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967463"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373402"
 ---
 # <a name="get-started-with-the-biztalk-adapter-for-mysap-business-suite"></a>开始使用用于 mySAP Business Suite 的 BizTalk 适配器
 本部分中的用户不熟悉 Microsoft 提供的适配器、 先决条件和主题概述[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。 它讨论的功能[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]和可以使用该适配器在 SAP 系统执行不同操作。  

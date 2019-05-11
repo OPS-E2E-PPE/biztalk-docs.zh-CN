@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10816 |Microsoft Docs
+title: 单一登录：Event 10816 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3b4d55a243377c6f26443c8c00b09dfdae2ba8a3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 682a85171b71d78d648b8d0ec5a4f8aea19d5f92
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004790"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396091"
 ---
-# <a name="single-sign-on-event-10816"></a>单一登录： 事件 10816
+# <a name="single-sign-on-event-10816"></a>单一登录：事件 10816
 ## <a name="details"></a>详细信息  
   
 |                 |                                                               |
@@ -28,12 +28,12 @@ ms.locfileid: "37004790"
 | 产品版本 |  [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]   |
 |    事件 ID     |                             10816                             |
 |  事件源   |                            ENTSSO                             |
-|    组件    |                              N/A                              |
+|    组件    |                              不可用                              |
 |  符号名称  |          ENTSSO_E_EXTERNAL_UPDATE_FAILED_MORE_RECENT          |
-|  消息正文   | SSO 数据库中的外部凭据较新。 |
+|  消息正文   | 更新 SSO 数据库中的外部凭据。 |
   
 ## <a name="explanation"></a>解释  
- 已从外部系统收到过期的密码，将忽略此密码。  
+ 过期的密码已收到来自外部系统，并且将被忽略。  
   
 ## <a name="user-action"></a>用户操作  
- 不需要用户进行任何操作。
+ 不不需要任何用户操作。

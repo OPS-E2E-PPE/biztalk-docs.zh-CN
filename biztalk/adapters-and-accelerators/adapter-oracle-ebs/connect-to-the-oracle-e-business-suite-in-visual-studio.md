@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3be6f861e2346b4cc7d8ad29598d8efbc4707c76
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d98aaf7f2a8f377f9369e7e446f95c964e3f9db7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984270"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375594"
 ---
 # <a name="connect-to-the-oracle-e-business-suite-in-visual-studio"></a>连接到在 Visual Studio 中的 Oracle 电子商务套件
 本部分提供有关如何使用信息[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]，则[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]，和[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。  

@@ -1,5 +1,5 @@
 ---
-title: 消息传递负载视图 |Microsoft 文档
+title: 消息传送负载视图 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,23 +18,23 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2c0ac1c7371bc149e6e132fd810cecf88e31490a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 13637ca6842d56358f82ceac2430b30740f8b6af
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263021"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394506"
 ---
-# <a name="messaging-payload-view"></a>消息传递负载视图
-“消息传送负载”视图显示与所选操作（例如，消息已发送或消息已接收）相关联的 XML 消息的架构。 可以从“业务流程调度”视图中的某些形状的快捷菜单访问此视图。  
+# <a name="messaging-payload-view"></a>消息传送负载视图
+消息传送负载视图显示与所选操作 （例如，消息发送或接收） 相关联的 XML 消息的架构。 该视图是可从某些业务流程调度视图中的形状的快捷菜单。  
   
-## <a name="working-with-the-messaging-payload-view"></a>使用“消息传送负载”视图  
- 通过单击选择事件源按钮并单击选择消息传递负载架构菜单项选择你的业务流程计划视图。 选择架构后，可以将此架构中的元素拖到活动的数据项文件夹，以指示您希望从此操作的消息内的特定 XPath 表达式提取这些数据。  
+## <a name="working-with-the-messaging-payload-view"></a>使用消息传送负载视图  
+ 可以通过单击选择事件源按钮并单击选择消息传送负载架构菜单项选择业务流程调度视图。 一旦选择架构，您可以将元素从此架构到活动的数据项文件夹以指示您希望从此操作的消息内的特定 XPath 表达式提取这些数据。  
   
- 您可以从“业务流程调度”视图中打开“消息传送负载”视图，方法是右键单击包含消息负载的形状。 此操作将打开一个上下文菜单，您可以在其中单击“消息传送负载”菜单项来检索消息传送属性架构。  
+ 可以通过右键单击包含消息负载的形状从业务流程调度视图打开消息传送负载视图。 这将打开上下文菜单，单击要检索的消息传送属性架构的消息传送负载菜单项。  
   
- 有关 XPath 表达式的详细信息，请参阅[消息分配中使用 Xpath](../core/using-xpaths-in-message-assignments.md)。  
+ 有关 XPath 表达式的详细信息，请参阅[在消息赋值中使用 Xpath](../core/using-xpaths-in-message-assignments.md)。  
   
-## <a name="see-also"></a>另请参阅  
- [源事件视图是什么？](../core/what-is-the-source-event-view.md)   
+## <a name="see-also"></a>请参阅  
+ [什么是源事件视图？](../core/what-is-the-source-event-view.md)   
  [跟踪配置文件编辑器](../core/tracking-profile-editor.md)

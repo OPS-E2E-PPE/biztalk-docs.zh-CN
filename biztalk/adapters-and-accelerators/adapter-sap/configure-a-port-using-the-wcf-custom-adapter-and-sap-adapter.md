@@ -13,17 +13,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9baf552efc102d13b83b28f5c5b0c473147b2812
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 304fa647f0b50549c6f5779f2579d8d2f473c9ae
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982942"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373851"
 ---
 # <a name="configure-a-port-using-the-wcf-custom-adapter-and-sap-adapter"></a>使用 WCF 自定义适配器和 SAP 适配器配置端口
 本主题说明了如何配置 WCF 自定义发送和接收端口，以执行对 SAP 系统使用的出站和入站操作[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
 是的成员的帐户登录[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]Administrators 组或 BizTalk Operators 组。 详细了解权限的详细信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)，并[最低安全用户权限](../../core/minimum-security-user-rights.md)。 
   
 ## <a name="deploy-adapters-to-send-messages-to-sap"></a>部署适配器将消息发送到 SAP  

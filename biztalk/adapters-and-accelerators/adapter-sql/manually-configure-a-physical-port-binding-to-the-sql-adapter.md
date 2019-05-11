@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c7a9fb7a1390a59c564063f889a86096d2989d55
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0fccfcfed0e965831d0c40ccde94348440db357e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979966"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368790"
 ---
 # <a name="manually-configure-a-physical-port-binding-to-the-sql-adapter"></a>手动配置与 SQL 适配器的物理端口绑定
 本部分提供有关配置信息[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]作为 WCF 自定义绑定或通过使用 WCF SQL 端口[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 在部署后，适配器，您将能够发送和接收消息从 SQL Server 使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 部署该适配器的步骤会有所不同，具体取决于：  
@@ -27,7 +27,7 @@ ms.locfileid: "36979966"
   |端口方向|通信模式|可供选择的通信方向|  
   |--------------------|---------------------------|-----------------------------------------------|  
   |Send|单向|我将始终在发送消息此端口上。|  
-  |Receive|单向|始终在此端口上接收消息。|  
+  |Receive|单向|我始终将接收此端口上的消息。|  
   |发送接收|请求-响应|我将发送请求并接收响应。|  
   
   > [!NOTE]

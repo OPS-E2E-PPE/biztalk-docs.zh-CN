@@ -13,20 +13,20 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5d6957a4f3d73c5f59df5cd36f70a7ed34631fa6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a00e4abf979b7e52cd649c8ef663af22016967bc
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37019827"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531098"
 ---
 # <a name="manage-maps"></a>管理映射
 
 ## <a name="overview"></a>概述
-本部分介绍如何使用 BizTalk Server 管理控制台来管理映射。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用映射转换的记录和记录的一个架构中的字段和另一个架构中的字段。 业务流程、发送端口和接收端口均可使用映射。  
+本部分说明了使用 BizTalk Server 管理控制台来管理映射。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用映射转换的记录和记录的一个架构中的字段和另一个架构中的字段。 映射可能由业务流程，发送端口和接收端口。  
 
 ## <a name="add-maps-to-an-application"></a>将地图添加到应用程序  
- 映射内置的[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]并编译到 BizTalk 程序集。 不能向应用程序中单独添加映射，而应按照以下方式向应用程序添加映射：  
+ 映射内置的[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]并编译到 BizTalk 程序集。 不能单独; 将映射添加到应用程序映射添加到应用程序，如下所示：  
   
 - 添加 BizTalk 程序集包含映射到该应用程序，如中所述[如何将 BizTalk 程序集添加到应用程序](../core/how-to-add-a-biztalk-assembly-to-an-application.md)。  
   

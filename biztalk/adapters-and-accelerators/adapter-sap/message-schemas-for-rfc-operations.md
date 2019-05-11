@@ -15,12 +15,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 156b8e8c218c4ad23d49959323ed324b0c7cdfd0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ccc0e3c37ab74e4682c0eaa209580507ba7628c3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972846"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373216"
 ---
 # <a name="message-schemas-for-rfc-operations"></a>RFC 操作的消息架构
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]作为操作的图面 SAP 远程函数调用 (RFC)。 本主题包含有关消息架构和使用 RFC 操作的消息操作的信息。 消息结构是相同的入站和出站 RFC 操作。 适配器支持 RFC 操作的概述，请参阅[Rfc 在 SAP 中的操作](../../adapters-and-accelerators/adapter-sap/operations-on-rfcs-in-sap.md)。  
@@ -34,9 +34,9 @@ ms.locfileid: "36972846"
 |                             消息                              |                                                                                                                                                                                                                         XML 消息结构                                                                                                                                                                                                                          |                                                                                                                                                                                                     Description                                                                                                                                                                                                      |
 |------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                   RFC<br /><br /> ([RFC_NAME])                   | `<[RFC_NAME] xmlns="[VERSION]/Rfc/">   <IN1_PARAM_NAME>v1</IN1_PARAM_NAME>   <IN2_PARAM_NAME>v2</IN2_PARAM_NAME>   …   <INOUT1_PARAM_NAME>v3</INOUT1_PARAM_NAME>   <INOUT2_PARAM_NAME>v4</INOUT2_PARAM_NAME>   …   <TABLE1_PARAM_NAME xmlns="[VERSION]/Types/Rfc/">     <STRUCT1_PARAM_NAME>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </STRUCT1_PARAM_NAME>     …   </TABLE1_PARAM_NAME>   … </[RFC_NAME]>` |                                                                                              调用上的 SAP 系统的 RFC。<br /><br /> -导入，更改，并支持表参数。<br /><br /> -导入并更改参数可以为 SAP 结构类型、 SAP 表类型或 SAP 简单数据类型。                                                                                              |
-|                RFC 响应 （[RFC_NAME] 响应）                 |     `<[RFC_NAME]Response xmlns="[VERSION]/Rfc/">   <OUT1_PARAM_NAME>v1</OUT1_PARAM_NAME>   <OUT2_PARAM_NAME>v2</OUT2_PARAM_NAME>   …   <INOUT1_PARAM_NAME>v3</INOUT1_PARAM_NAME>   <INOUT2_PARAM_NAME>v4</INOUT2_PARAM_NAME>   …   <TABLE1_PARAM_NAME>     <STRUCT1_PARAM_NAME>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </STRUCT1_PARAM_NAME>     …   </TABLE1_PARAM_NAME>   … </[RFC_NAME]Response>`      | RFC 返回。<br /><br /> -导出，更改，并支持表参数。<br /><br /> **注意：** 默认情况下，表参数不显示在响应消息。 如果您需要在响应消息中的表参数，您必须在请求消息中传递空表参数。<br /><br /> -导入并更改参数可以为 SAP 结构类型、 SAP 表类型或 SAP 简单数据类型。 |
+|                RFC 响应 （[RFC_NAME] 响应）                 |     `<[RFC_NAME]Response xmlns="[VERSION]/Rfc/">   <OUT1_PARAM_NAME>v1</OUT1_PARAM_NAME>   <OUT2_PARAM_NAME>v2</OUT2_PARAM_NAME>   …   <INOUT1_PARAM_NAME>v3</INOUT1_PARAM_NAME>   <INOUT2_PARAM_NAME>v4</INOUT2_PARAM_NAME>   …   <TABLE1_PARAM_NAME>     <STRUCT1_PARAM_NAME>       <[FIELD1_NAME]>value1</[FIELD1_NAME]>       <[FIELD2_NAME]>value2</[FIELD2_NAME]>       …     </STRUCT1_PARAM_NAME>     …   </TABLE1_PARAM_NAME>   … </[RFC_NAME]Response>`      | RFC 返回。<br /><br /> -导出，更改，并支持表参数。<br /><br /> **注意：** 默认情况下，响应消息中不显示表参数。 如果您需要在响应消息中的表参数，您必须在请求消息中传递空表参数。<br /><br /> -导入并更改参数可以为 SAP 结构类型、 SAP 表类型或 SAP 简单数据类型。 |
 |         RfcGetAttributes<br /><br /> (RfcGetAttributes)          |                                                                                                                                                                                                                `<RfcGetAttributes> </RfcGetAttributes>`                                                                                                                                                                                                                |                                                  RfcGetAttributes 是 RFC SDK API 操作显示的[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。 RfcGetAttributes 操作允许一个客户端程序来检索语言、 系统 ID 和与 RFC 连接相关联的合作伙伴代码页。                                                   |
-| RfcGetAttributes 响应<br /><br /> (RfcGetAttributesResponse) |                                                                                                                                                          `<RfcGetAttributesResponse>   <Language>lang</Language>   <SysId>id</SysId>   <PartnerCodePage>pnrcp</PartnerCodePage> </RfcGetAttributesResponse>`                                                                                                                                                           |                                                                                                                              RfcGetAttributes 操作的响应返回的语言、 系统 ID 和与 RFC 连接相关联的合作伙伴代码页。                                                                                                                              |
+| RfcGetAttributes Response<br /><br /> (RfcGetAttributesResponse) |                                                                                                                                                          `<RfcGetAttributesResponse>   <Language>lang</Language>   <SysId>id</SysId>   <PartnerCodePage>pnrcp</PartnerCodePage> </RfcGetAttributesResponse>`                                                                                                                                                           |                                                                                                                              RfcGetAttributes 操作的响应返回的语言、 系统 ID 和与 RFC 连接相关联的合作伙伴代码页。                                                                                                                              |
 
  [VERSION] = 消息版本字符串;例如， http://Microsoft.LobServices.SAP/2007/03。  
 
@@ -56,12 +56,12 @@ ms.locfileid: "36972846"
  下表显示了 RFC 操作的消息操作。  
 
 
-|         运算         |           消息操作           |                                示例                                 |
+|         操作         |           消息操作           |                                示例                                 |
 |---------------------------|------------------------------------|------------------------------------------------------------------------|
 |        [RFC_NAME]         |      [VERSION]/Rfc/[RFC_NAME]      |     http://Microsoft.LobServices.Sap/2007/03/Rfc/RFC_CUSTOMER_GET      |
-|    [RFC_NAME]响应    | [VERSION] /Rfc/ [RFC_NAME] / 响应  | http://Microsoft.LobServices.Sap/2007/03/Rfc/RFC_CUSTOMER_GET/response |
-|     RfcGetAttributes      |     [VERSION] / RfcGetAttributes     |       http://Microsoft.LobServices.Sap/2007/03/RfcGetAttributes        |
-| RfcGetAttributes 响应 | 版本 [/ RfcGetAttributes/响应 |   http://Microsoft.LobServices.Sap/2007/03/RfcGetAttributes/response   |
+|    [RFC_NAME]响应    | [VERSION]/Rfc/[RFC_NAME]/response  | http://Microsoft.LobServices.Sap/2007/03/Rfc/RFC_CUSTOMER_GET/response |
+|     RfcGetAttributes      |     [VERSION]/RfcGetAttributes     |       http://Microsoft.LobServices.Sap/2007/03/RfcGetAttributes        |
+| RfcGetAttributes Response | [VERSION/RfcGetAttributes/response |   http://Microsoft.LobServices.Sap/2007/03/RfcGetAttributes/response   |
 
  [VERSION] = 消息版本字符串;例如， http://Microsoft.LobServices.Sap/2007/03。  
 

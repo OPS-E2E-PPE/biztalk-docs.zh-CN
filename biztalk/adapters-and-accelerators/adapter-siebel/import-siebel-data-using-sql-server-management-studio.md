@@ -15,17 +15,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fdcc6140bb50ebca299cd58f78063be8f108dea4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3bd0fd82745dd9ba287f6f445e4353340a5009bf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013174"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371557"
 ---
 # <a name="import-siebel-data-using-sql-server-management-studio"></a>导入 Siebel 数据使用 SQL Server Management Studio
 本部分提供有关如何使用 SQL Server Management Studio 从 Siebel 系统到 SQL Server 数据库导入数据的信息。 它还说明了如何创建和执行 SSIS 包将此数据导入。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  在执行之前在本主题中提供的过程，请确保：  
   
 - [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]的计算机上安装。  

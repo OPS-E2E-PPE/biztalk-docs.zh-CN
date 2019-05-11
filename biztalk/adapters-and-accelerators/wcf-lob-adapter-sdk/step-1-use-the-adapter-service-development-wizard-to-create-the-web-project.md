@@ -1,5 +1,5 @@
 ---
-title: 步骤 1： 使用适配器服务开发向导创建 Web 项目 |Microsoft Docs
+title: 第 1 步：使用适配器服务开发向导创建 Web 项目 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5fb8737f51f9e0b6afe3d61218f69015c1cd5d72
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 121eb5c3c9b0782249ab338a520323b1a2fd6a9e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984030"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363349"
 ---
-# <a name="step-1-use-the-adapter-service-development-wizard-to-create-the-web-project"></a>步骤 1： 使用适配器服务开发向导创建 Web 项目
+# <a name="step-1-use-the-adapter-service-development-wizard-to-create-the-web-project"></a>第 1 步：使用适配器服务开发向导创建 Web 项目
 ![步骤 1，共 4 步](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
   
- **完成时间：** 10 分钟  
+ **若要完成的时间：** 10 分钟。  
   
  在此步骤中，创建使用 Visual Studio 的项目和[!INCLUDE[afsvcdevwizshort](../../includes/afsvcdevwizshort-md.md)]。 [!INCLUDE[afsvcdevwizshort](../../includes/afsvcdevwizshort-md.md)]收集有关适配器、 操作和终结点配置的信息，并生成然后部署到 IIS 的 Web 项目。  
   
-## <a name="prerequisites"></a>必要條件  
- 必须生成并部署 Echo 示例中所述[教程 1： 开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)之前开始学习本教程。  
+## <a name="prerequisites"></a>先决条件  
+ 必须生成并部署 Echo 示例中所述[教程 1:开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)之前开始学习本教程。  
   
 ### <a name="to-start-the-adapter-service-development-wizard"></a>若要启动适配器服务开发向导  
   
@@ -51,7 +51,7 @@ ms.locfileid: "36984030"
   
 2.  上**安全**选项卡**配置适配器**对话框中，将**客户端凭据类型**到**用户名**，然后设置**用户名凭据**，如下所示：  
   
-    |“属性”|ReplTest1|  
+    |属性|ReplTest1|  
     |--------------|-----------|  
     |**用户名**|username|  
     |**密码**|password|  
@@ -61,7 +61,7 @@ ms.locfileid: "36984030"
   
 3.  单击**URI 属性**选项卡，然后按如下所示设置属性：  
   
-    |“属性”|ReplTest1|  
+    |属性|ReplTest1|  
     |--------------|-----------|  
     |**应用程序**|LobApplication|  
     |**EnableAuthentication**|True|  
@@ -95,7 +95,7 @@ ms.locfileid: "36984030"
   
 1.  上**配置服务和终结点行为**页上，输入以下值：**服务行为配置**:  
   
-    |“属性”|ReplTest1|  
+    |属性|ReplTest1|  
     |--------------|-----------|  
     |**EnableMetadataExchange**|True|  
     |**IncludeExceptionDetailsinFault**|True|  
@@ -106,7 +106,7 @@ ms.locfileid: "36984030"
   
 2.  输入以下值：**终结点行为配置**:  
   
-    |“属性”|ReplTest1|  
+    |属性|ReplTest1|  
     |--------------|-----------|  
     |**名称**|customEndpointBehavior|  
     |**AuthenticationType**|**HTTPUsernamePassword**|  
@@ -129,11 +129,11 @@ ms.locfileid: "36984030"
   
 4. 上**摘要**页上，查看的约定和操作为此项目中，选择，然后单击**完成**。 您将看到 EchoWeb 解决方案，其中包含创建的项目文件 [!INCLUDE[afsvcdevwizshort](../../includes/afsvcdevwizshort-md.md)]  
   
-## <a name="what-did-i-just-do"></a>内容回顾  
- 在此步骤中，您使用[!INCLUDE[afsvcdevwizshort](../../includes/afsvcdevwizshort-md.md)]生成 Web 项目，在发布到 IIS 中，将在开发 Echo 适配器的主机[教程 1： 开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)在 IIS 进程。 生成的 Web 项目允许 Web 服务和 WCF 客户端访问所选的操作。  
+## <a name="what-did-i-just-do"></a>我只需做了什么？  
+ 在此步骤中，您使用[!INCLUDE[afsvcdevwizshort](../../includes/afsvcdevwizshort-md.md)]生成 Web 项目，在发布到 IIS 中，将在开发 Echo 适配器的主机[教程 1:开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)在 IIS 进程。 生成的 Web 项目允许 Web 服务和 WCF 客户端访问所选的操作。  
   
 ## <a name="next-steps"></a>后续步骤  
- 要生成并部署 Web 项目，请转到[步骤 2： 将 Web 项目部署](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-deploy-the-web-project.md)  
+ 要生成并部署 Web 项目，请转到[步骤 2:部署 Web 项目](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-deploy-the-web-project.md)  
   
 ## <a name="see-also"></a>请参阅  
- [教程 1：开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)
+ [教程 1:开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)

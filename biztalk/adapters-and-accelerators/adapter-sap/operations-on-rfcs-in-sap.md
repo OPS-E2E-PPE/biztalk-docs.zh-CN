@@ -21,12 +21,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e8219a063fed2c940cfcd2658937fde0686542d1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5370ec67511088b070568218320e0d015cfd25f5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015356"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373169"
 ---
 # <a name="operations-on-rfcs-in-sap"></a>在 SAP 中的 Rfc 的操作
 可以使用[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]作为 RFC 客户端和 RFC 服务器。 在 RFC 客户端方案中，你的应用程序调用 Rfc SAP 系统上通过在调用 RFC 操作[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。 在 RFC 服务器方案中将 SAP 系统调用 Rfc 上[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]，其中，反过来，以在应用程序上操作的方式调用 RFC。  

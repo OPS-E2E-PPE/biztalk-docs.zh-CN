@@ -1,5 +1,5 @@
 ---
-title: 拦截器配置文件的结构 |Microsoft 文档
+title: 侦听器配置文件的结构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b5bc48ece2fe1735056b178ff8f17cfaca7a484
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 268d2814b77a01be5c488640942afaf96b5c3483
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278349"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396063"
 ---
 # <a name="structure-of-an-interceptor-configuration-file"></a>侦听器配置文件的结构
-本部分包含侦听器配置文件结构的相关信息。 此基本结构由 WF 和 WCF 侦听器配置共享。  
+本部分包含侦听器配置文件的结构的信息。 此基本结构将 WF 和 WCF 侦听器配置为共享。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [拦截器 EventSource 元素](../core/interceptor-eventsource-element.md)  
+-   [侦听器 EventSource 元素](../core/interceptor-eventsource-element.md)  
   
--   [拦截器 BamActivity 元素](../core/interceptor-bamactivity-element.md)  
+-   [侦听器 BamActivity 元素](../core/interceptor-bamactivity-element.md)  
   
--   [拦截器 OnEvent 元素](../core/interceptor-onevent-element.md)  
+-   [侦听器 OnEvent 元素](../core/interceptor-onevent-element.md)  
   
 -   [侦听器配置表达式](../core/interceptor-configuration-expressions.md)  
   
-## <a name="see-also"></a>另请参阅  
- [拦截器配置文件](../core/interceptor-configuration-file.md)
+## <a name="see-also"></a>请参阅  
+ [侦听器配置文件](../core/interceptor-configuration-file.md)

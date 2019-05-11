@@ -12,17 +12,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: da52668f0e94da23afdd8246f0acb0ca89d1c36a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 320ad56411660320f7d58494fbcc00d576aae3d9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014118"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375442"
 ---
 # <a name="invoke-request-sets-in-oracle-e-business-suite"></a>调用 Oracle E-business Suite 中的请求集
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] 可以在 Oracle E-business Suite 中执行请求集。 请求集划分为一个或多个阶段，并且每个阶段包含了一组报表和并发程序。 有关如何在适配器支持请求集的详细信息，请参阅[对请求设置操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-request-sets.md)。 对于用于调用请求集消息的 SOAP 结构有关的信息，请参阅[请求设置的消息架构](../../adapters-and-accelerators/adapter-oracle-ebs/message-schemas-for-request-sets.md)。  
 
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  你必须完成中的步骤[创建 Oracle E-business Suite 的应用程序的先决条件](../../adapters-and-accelerators/adapter-oracle-ebs/prerequisites-to-create-oracle-e-business-suite-applications.md)。  
 
 ## <a name="how-to-invoke-request-sets-in-oracle-e-business-suite"></a>在 Oracle E-business Suite 中如何调用请求集  
@@ -48,7 +48,7 @@ ms.locfileid: "37014118"
  因此，在本主题中，我们生成的架构**FNDRSSUB43**请求组。 请参阅[检索用于 Oracle E-business Suite 操作在 Visual Studio 中的元数据](../../adapters-and-accelerators/adapter-oracle-ebs/get-metadata-for-oracle-e-business-suite-operations-in-visual-studio.md)有关如何生成架构的详细信息。  
 
 ## <a name="defining-messages-and-message-types"></a>定义消息和消息类型  
- 你之前生成的架构描述了业务流程中的消息所需的“类型”。 一条消息通常是一个变量，要为其类型定义由相应的架构。 现在必须为该业务流程创建消息并将其链接到你在上一步中生成的架构。  
+ 先前生成的架构描述业务流程中的消息所需的"类型"。 一条消息通常是一个变量，要为其类型定义由相应的架构。 现在必须为该业务流程创建消息并将其链接到你在上一步中生成的架构。  
 
  在此业务流程中，你必须创建两条消息，其中一个将消息发送到调用请求集，另一个用于接收响应的请求集。  
 
@@ -73,7 +73,7 @@ ms.locfileid: "37014118"
 
     |使用此选项|执行的操作|  
     |--------------|----------------|  
-    |响应|*RequestSet.OracleEBSBindingRequestSets_FND。FNDRSSUB43Response*|  
+    |响应|*RequestSet.OracleEBSBindingRequestSets_FND.FNDRSSUB43Response*|  
 
 ## <a name="setting-up-the-orchestration"></a>设置业务流程  
  必须创建 BizTalk 业务流程使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]用于调用 Oracle E-business Suite 中的请求集。 在此业务流程中删除时的请求消息定义接收位置。 业务流程使用此消息，并将其传递到 Oracle E-business Suite 来调用**FNDRSSUB43**请求组。 请求集的响应从 Oracle 接收，然后保存在另一个位置。 一个典型的业务流程调用请求集将包含：  
@@ -103,7 +103,7 @@ ms.locfileid: "37014118"
 ### <a name="adding-ports"></a>添加端口  
  请确保为每个逻辑端口中指定以下属性。 中列出的名称*端口*列是在业务流程中显示的端口的名称。  
 
-|端口|属性|  
+|Port|属性|  
 |----------|----------------|  
 |MessageIn|-设置**标识符**到*MessageIn*<br />-设置**类型**到*MessageInType*<br />-设置**通信模式**到*单向*<br />-设置**通信方向**到*接收*|  
 |LOBPort|-设置**标识符**到*LOBPort*<br />-设置**类型**到*LOBPortType*<br />-设置**通信模式**到*请求-响应*<br />-设置**通信方向**到*发送接收*|  
@@ -124,7 +124,7 @@ ms.locfileid: "37014118"
  你必须现在生成 BizTalk 解决方案，然后将其部署到 BizTalk Server。 有关详细信息，请参阅[构建和运行业务流程](../../core/building-and-running-orchestrations.md)。  
 
 ## <a name="configuring-the-biztalk-application"></a>配置 BizTalk 应用程序  
- 部署 BizTalk 项目后，在业务流程窗格中列出前面创建的业务流程[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 必须使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台来配置应用程序。 有关配置应用程序的详细信息，请参阅[演练： 部署基本 BizTalk 应用程序](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)。  
+ 部署 BizTalk 项目后，在业务流程窗格中列出前面创建的业务流程[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 必须使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台来配置应用程序。 有关配置应用程序的详细信息，请参阅[演练：部署基本 BizTalk 应用程序](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)。  
 
  配置应用程序包括：  
 

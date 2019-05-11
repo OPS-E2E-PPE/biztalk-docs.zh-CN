@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 07bdb873875d147911f2eb8cb2fd7a80ba01f67e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a310d80200115f78b5ecd1e383e94caba2de6d6c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991350"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375782"
 ---
 # <a name="considerations-for-receiving-database-change-notifications-using-the-oracle-e-business-suite-adapter"></a>注意事项接收数据库更改通知使用 Oracle E-business Suite 适配器
 本主题提供的一些注意事项和最佳实践，您在使用时必须牢记于心[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]从 Oracle 数据库接收数据库通知。  
@@ -50,11 +50,11 @@ ms.locfileid: "36991350"
   </Notification>  
   ```  
   
-   请注意内的值**\<信息\>** 元素。 此值提供为其接收通知消息操作的信息。 你的应用程序应具有的功能中的值中提取**\<信息\>** 元素，然后根据值，执行后续任务。 本主题[进程通知消息到 Oracle E-business Suite 中完成特定任务](../../adapters-and-accelerators/adapter-oracle-ebs/process-notification-messages-to-complete-specific-tasks-in-oracle-ebs.md)说明了如何在值中提取**\<信息\>** 元素.  
+   请注意内的值 **\<信息\>** 元素。 此值提供为其接收通知消息操作的信息。 你的应用程序应具有的功能中的值中提取 **\<信息\>** 元素，然后根据值，执行后续任务。 本主题[进程通知消息到 Oracle E-business Suite 中完成特定任务](../../adapters-and-accelerators/adapter-oracle-ebs/process-notification-messages-to-complete-specific-tasks-in-oracle-ebs.md)说明了如何在值中提取**\<信息\>** 元素.  
   
 - 理想情况下，客户端应用程序收到通知后，它应更新为其已收到通知，以便后续通知不能用于同一条记录的记录。 例如，考虑**ACCOUNTACTIVITY**具有表**处理**列。 对于所有新记录插入到**ACCOUNTACTIVITY**表中的值**处理**列始终是 ' n '。 例如，在插入操作，在中记录**ACCOUNTACTIVITY**表将如下所示：  
   
-  |帐户事务 ID|已处理|  
+  |帐户事务 ID|处理|  
   |----------------------------|---------------|  
   |10001|n|  
   
@@ -66,7 +66,7 @@ ms.locfileid: "36991350"
   
    之后，接收通知，客户端应用程序必须设置的值**处理**为 y 的列，以便通知语句不会进行的记录的有关已通知的操作。 因此，若要实现此目的，客户端应用程序必须执行更新操作上**ACCOUNTACTIVITY**表。 更新操作后，该记录中**ACCOUNTACTIVITY**表将如下所示：  
   
-  |帐户事务 ID|已处理|  
+  |帐户事务 ID|处理|  
   |----------------------------|---------------|  
   |10001|y|  
   

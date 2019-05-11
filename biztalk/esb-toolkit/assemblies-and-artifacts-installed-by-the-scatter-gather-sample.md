@@ -1,5 +1,5 @@
 ---
-title: 程序集和项目安装散播-聚集示例 |Microsoft 文档
+title: 程序集和散播-聚集示例安装的项目 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e62dd1701284fec27084bbdaf5aab19d6dca64a4
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: d8185eaad2921e534a187132e8595bc3d291d14e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26008054"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392107"
 ---
-# <a name="assemblies-and-artifacts-installed-by-the-scatter-gather-sample"></a>程序集和项目安装散播-聚集示例
-下表列出的程序集和 ESB 散播-聚集示例安装其他项目。  
+# <a name="assemblies-and-artifacts-installed-by-the-scatter-gather-sample"></a>程序集和散播-聚集示例安装的项目
+下表列出了程序集和为 ESB 散播-聚集示例安装的其他项目。  
   
-|位置|类别|名称和版本的组件|  
+|Location|Category|名称和版本的组件|  
 |--------------|--------------|---------------------------------------|  
 |BizTalk 应用程序 GlobalBank.ESB|业务流程|GlobalBank.ESB.ScatterGather.Processes.Broker|  
 |||GlobalBank.ESB.ScatterGather.Processes.ServiceDispatcher|  
@@ -34,10 +34,10 @@ ms.locfileid: "26008054"
 |||GlobalBank.ESB.ScatterGather.Schemas.ServiceResponse 版本 2.0.0.0|  
 |||GlobalBank.ESB.ScatterGather.Schemas.ServicePayload 版本 2.0.0.0|  
 |BizTalk 应用程序 GlobalBank.ESB|管道|GlobalBank.ESB.ScatterGather.Processes.AggregatingPipeline 版本 2.0.0.0|  
-|BizTalk 应用程序 GlobalBank.ESB|Resources|GlobalBank.ESB.ScatterGather.Processes 版本 2.0.0.0|  
+|BizTalk 应用程序 GlobalBank.ESB|资源|GlobalBank.ESB.ScatterGather.Processes 版本 2.0.0.0|  
 |||GlobalBank.ESB.ScatterGather.Schemas 版本 2.0.0.0|  
 |BizTalk 应用程序 GlobalBank.ESB|策略|ResolveEndPointScatterGather<br /><br /> ResolveMapScatterGather|  
 |BizTalk 应用程序 GlobalBank.ESB|地图||  
 |全局程序集缓存|程序集|GlobalBank.ESB.ScatterGather.Processes 版本 2.0.0.0|  
 |||GlobalBank.ESB.ScatterGather.Schemas 版本 2.0.0.0|  
-|%Program 文件 %\\BizTalk Server\Pipeline 组件|管道组件||
+|%Program Files %\\BizTalk Server\Pipeline 组件|管道组件||

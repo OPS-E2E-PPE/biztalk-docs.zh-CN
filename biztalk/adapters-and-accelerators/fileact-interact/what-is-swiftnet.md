@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 02f09a1ccc9b67b084a6f683125bacaec5eae77c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a46f793f55d92d020c989569bcbc2d7e5a74c61b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989334"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65364084"
 ---
 # <a name="what-is-swiftnet"></a>SWIFTNet 是什么？
 作为常规用途，金融业的行业标准解决方案 SWIFTNet 提供全局财务社区中参与的所有机构中的所有连接的应用程序独立于应用程序的单个窗口界面。 实际的访问控制的业务策略决策的每个服务管理员，而不是基础结构的技术限制。  
@@ -62,7 +62,7 @@ ms.locfileid: "36989334"
   
 - 业务应用程序软件可能会建立端到端安全性 （对用户应用程序用户应用程序，） 的安全功能时所需。  
   
-  在使用 c + + 或 Java 源代码级进行编程，方面有只有两个函数： SwCall 和 SwCallback。 客户端应用程序使用 SwCall 通过 SWIFTNet 访问服务器应用程序。 SwCallback 是服务器应用程序用于响应通过 SWIFTNet 客户端。  
+  在位于源代码级别使用的编程方面C++或 Java 中，有只有两个函数：SwCall 和 SwCallback。 客户端应用程序使用 SwCall 通过 SWIFTNet 访问服务器应用程序。 SwCallback 是服务器应用程序用于响应通过 SWIFTNet 客户端。  
   
   SwCall 和 SwCallback 函数访问 SWIFTNet 的功能通过将传递到和从 SWIFTNet 结构化的 XML 消息。 在运行时 SNL 包括这两个软件库-作为业务应用程序客户端或服务器进程的相同地址空间内的代码执行 — 和运行在其自己的独立进程 （守护程序或服务），地址空间。 软件库都可通过 SNL Api 访问。  
 

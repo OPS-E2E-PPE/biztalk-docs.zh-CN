@@ -1,5 +1,5 @@
 ---
-title: 有关业务流程 |Microsoft 文档
+title: 有关业务流程 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,38 +17,38 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0bd3c1abeeb2c42c399a54aea4ba0128cc19bcd8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a8517433777e57b9811ec16ce08bb12ada139ee4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22225133"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362324"
 ---
 # <a name="about-orchestrations"></a>有关业务流程
-业务流程是用于基于 XLANG/s 语言表示可执行业务程序的灵活且功能强大的工具。 作为消息传递使用的某些表达式功能的 C# 语言，可以查看 XLANG/s。 您可以在直观的可视化绘图中设计流、解释和生成数据、调用自定义代码以及组织整个流程；并且在运行时，BizTalk 业务流程引擎执行 XLANG/s 文件（作为由 BizTalk 业务流程设计器生成的可执行业务流程）。  
+业务流程是一个灵活、 强大的工具，用于表示基于 XLANG/s 语言的可执行的业务过程。 XLANG/s 可被视为的表达式功能的某些消息传递语言C#。 可以设计流、 解释和生成数据、 调用自定义代码和组织的整个过程中直观的可视化绘图，并在运行时，BizTalk 业务流程引擎执行 XLANG/s 文件即是可执行业务流程BizTalk 业务流程设计器生成的。  
   
- 消息、作用于消息的发送和接收操作以及传输消息的端口都是业务流程的基本元素。 消息是业务流程与外界进行通信以及实施电子商务的媒介。  
+ 消息、 发送和接收操作对它们，并通过该传输这些端口是业务流程的所有基本元素。 消息是依据业务流程与外部世界和通信进行电子商务的媒介。  
   
- **接收**和**发送**形状封装需要接收消息发送到您的业务流程，并从其发送消息的功能。 您应熟悉业务流程设计器提供的各种形状，而这些形状表示了业务流程的逻辑流。  
+ **接收**并**发送**形状封装到您的业务流程接收消息和从其发送消息所需的功能。 您应熟悉业务流程设计器提供的用于表示您的业务流程的逻辑流的各种形状。  
   
- 您应理解高级业务流程概念，例如 Web Services、相关和长期事务。 您可能无需使用所有这些功能，但了解其作用将会对您有很大帮助。  
+ 您应该了解高级业务流程概念，如 Web 服务、 关联和长时间运行的事务。 您可能不需要使用所有这些功能，但最好知道他们可以为您做什么。  
   
- Web Services 是指接口符合 Web Services 描述语言 (WSDL) 所述标准的程序。 通过使用标准方法定义消息类型、端口、端口类型和操作，不同的系统之间可有效地进行通信。  
+ Web 服务是具有遵守规定 Web 服务描述语言 (WSDL) 中的标准的界面的程序。 通过以标准方式定义消息类型、 端口、 端口类型和操作，不同的系统可以彼此有效地通信。  
   
- 相关是一种机制，消息利用该机制与正在运行的特定业务流程实例相关联，以便当正在运行的实例很多并且来回发送的消息也很多时，业务程序能够获得正确的信息。  
+ 相关是所依据的消息是与特定运行的业务流程实例相关联的机制，以便您的业务流程获取相应的信息时运行多个实例并且来回发送多条消息。  
   
- 使用事务可在出现意外问题时适当地维护业务流程的状态。 业务流程设计器提供不同的方法来处理异常，使您可通过可控制和可预测的方式处理错误。  
+ 事务可以适当地维护业务流程的状态，如果出现意外的问题。 业务流程设计器提供了各种方法来处理异常，以便你能够控制和可预测的方式处理错误。  
   
 ## <a name="in-this-section"></a>本节内容  
   
 -   [业务流程设计图面](../core/the-orchestration-design-surface.md)  
   
--   [BizTalk 业务流程选项卡工具箱](../core/biztalk-orchestrations-tab-toolbox.md)  
+-   [“BizTalk 业务流程”选项卡，工具箱](../core/biztalk-orchestrations-tab-toolbox.md)  
   
--   [业务流程开发中的步骤](../core/steps-in-orchestration-development.md)  
+-   [业务流程开发步骤](../core/steps-in-orchestration-development.md)  
   
--   [有关开发业务流程的安全注意事项](../core/security-considerations-for-developing-orchestrations.md)  
+-   [开发业务流程的安全注意事项](../core/security-considerations-for-developing-orchestrations.md)  
   
 -   [XLANG-s 语言](../core/xlang-s-language.md)  
   
--   [有关 BizTalk 业务流程引擎](../core/about-the-biztalk-orchestration-engine.md)
+-   [关于 BizTalk 业务流程引擎](../core/about-the-biztalk-orchestration-engine.md)

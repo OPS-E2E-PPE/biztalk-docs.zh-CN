@@ -16,12 +16,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3ca773a4e7cd5c1d600f82b3af7b471929cff212
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 865f7fe900d009db7ac79ba933f484cae3fd3e00
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971854"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371837"
 ---
 # <a name="configure-the-sign-in-credentials-for-the-siebel"></a>配置用于 Siebel 的登录凭据
 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]要求适配器客户端提供客户端凭据。 适配器使用这些凭据与 Siebel 系统用户进行身份验证并建立连接。  
@@ -63,7 +63,7 @@ ms.locfileid: "36971854"
    | **模板**  | 单击**添加适配器元数据**。 |
 
 
-3. 单击 **“添加”**。 此时[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]会打开。  
+3. 单击 **“添加”**。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]随即打开。  
 
 4. 在添加适配器向导中，选择**Wcf-siebel**。 选择的计算机上[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]安装和 BizTalk 数据库的名称。  
 

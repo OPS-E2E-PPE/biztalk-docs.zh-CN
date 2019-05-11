@@ -1,5 +1,5 @@
 ---
-title: EXECQUERY SAP 中的命令选项 |Microsoft 文档
+title: 在 SAP 中的 EXECQUERY 命令选项 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0ae3bfc139b0290bc18d03fa7121a018d3668900
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 22260b750a56e36e33449182d9c4f6ecf38a40af
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22216221"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373423"
 ---
-# <a name="execquery-command-options-in-sap"></a>EXECQUERY SAP 中的命令选项
-[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]使客户端能够使用 EXECQUERY 命令调用 SAP 查询从 ADO.NET 应用程序。 本部分提供 EXECQUERY 命令的语法的信息以及如何使用它。 本部分还提供有关如何通过查看在 SAP 系统中的查询定义框架 EXECQUERY 语法的信息。  
+# <a name="execquery-command-options-in-sap"></a>在 SAP 中的 EXECQUERY 命令选项
+[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]使客户端能够使用 EXECQUERY 命令调用 SAP 查询从 ADO.NET 应用程序。 本部分提供的 EXECQUERY 命令语法的信息以及如何使用它。 本部分还提供有关如何通过 SAP 系统中查看查询的定义帧 EXECQUERY 语法的信息。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [SAP 中 EXECQUERY 语句语法](../../adapters-and-accelerators/adapter-sap/syntax-for-an-execquery-statement-in-sap.md)  
+-   [在 SAP 中的 EXECQUERY 语句的语法](../../adapters-and-accelerators/adapter-sap/syntax-for-an-execquery-statement-in-sap.md)  
   
 -   [将 SAP 查询参数转换为 EXECQUERY 命令](../../adapters-and-accelerators/adapter-sap/translate-sap-query-parameters-into-execquery-command.md)  
   
-## <a name="see-also"></a>另请参阅  
- [使用.NET Framework 数据提供程序为 mySAP Business Suite](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)
+## <a name="see-also"></a>请参阅  
+ [使用 mySAP Business Suite 的 .NET Framework 数据提供程序](../../adapters-and-accelerators/adapter-sap/use-the-net-framework-data-provider-for-mysap-business-suite.md)

@@ -19,12 +19,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 09cbd6fa8be325a31a6c3acd7ffb3c84092f9d63
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b380496d0186789d3ff8109903d88e8f01b39c46
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010902"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371602"
 ---
 # <a name="generate-a-wcf-client-or-a-wcf-service-contract-for-siebel-solution-artifacts"></a>生成 WCF 客户端或 WCF 服务协定为 Siebel 解决方案项目
 可以使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]针对所选操作对 Siebel 项目生成 WCF 客户端类。 此外可以使用 ServiceModel Metadata Utility Tool (svcutil.exe) 来生成 WCF 客户端类;但是，[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]公开 ServiceModel Metadata Utility Tool 通过标准的 Microsoft Windows 界面的功能。 它还提供浏览和搜索功能，使用 svcutil.exe 工具中，未提供，并生成一个基于连接到 Siebel 系统时选择的绑定属性的配置文件。  

@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5ac7a1c2cda4fd66e450d23022787f5e7d0e0324
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4586563f3f218b818555ac683207afe4d02a7229
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006446"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376056"
 ---
 # <a name="samples-for-the-oracle-database-adapter"></a>适用于 Oracle 数据库适配器示例
 示例[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]分为：  
@@ -30,7 +30,7 @@ ms.locfileid: "37006446"
 - WCF 通道模型示例  
 
   
-这些示例目前[BizTalk 适配器包 2010年: Oracle 数据库适配器示例](https://www.microsoft.com/download/details.aspx?id=4675)。 包含创建的表和示例中使用的包的 SQL 脚本。 
+这些示例是在[BizTalk 适配器包 2010年:Oracle 数据库适配器示例](https://www.microsoft.com/download/details.aspx?id=4675)。 包含创建的表和示例中使用的包的 SQL 脚本。 
 
 > [!NOTE]
 > [!INCLUDE[files-need-updated](../../includes/files-need-updated.md)]

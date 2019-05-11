@@ -19,12 +19,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5ab369a74058f374ee229eb25d0697dc96f539ed
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c3478a85d55c0a3192292b598a10819da2e6297c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994574"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371690"
 ---
 # <a name="diagnostic-tracing-and-message-logging-for-the-siebel-adapter"></a>诊断跟踪和 Siebel 适配器的消息日志记录
 适配器客户端可以启用诊断跟踪以有效地诊断使用适配器时遇到的问题。 适配器客户端可以激活三个不同级别的跟踪：  

@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cff2f0f5324dfacd118bc59dccfa524819acaa75
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4945b7c2dfb72286682b8afa396f882648c88118
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021947"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370615"
 ---
 # <a name="siebelparameter-class-in-the-siebel-adapter"></a>Siebel 适配器的 SiebelParameter 类
 [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]提供了`DbParameter`实现启用的 ADO.NET 客户端，若要指定特定命令的参数。 使用的实例`System.Data.Common.DbCommand`的类[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]，客户端程序可以获取的实例`System.Data.Common.DbParameter`类。  
@@ -42,7 +42,7 @@ param.ParameterName = "@Time";
 
  `SiebelParameter`类继承自`DbParameter`。  命名空间中存在`Microsoft.Data.SiebelClient`。  
 
-## <a name="supported-properties"></a>受支持的属性  
+## <a name="supported-properties"></a>支持的属性  
  `SiebelParameter`类支持以下`DbParameter`*公共*属性：  
 
 
@@ -51,13 +51,13 @@ param.ParameterName = "@Time";
 |    **DbType**     | 获取和设置 |                                               参数的数据类型。 请参阅[基本 Siebel 数据类型](../../adapters-and-accelerators/adapter-siebel/basic-siebel-data-types.md)。                                               |
 |   **方向**   | 获取和设置 | 支持以下值：<br /><br /> -                     `ParameterDirection.Input`<br /><br /> -                     `ParameterDirection.Output`<br /><br /> -                     `ParameterDirection.InputOutput` |
 |  **IsNullable**   | 获取和设置 |                                                                               该属性不受支持，并将引发异常，如果调用。                                                                               |
-| **参数名** | 获取和设置 |                                  [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]支持此属性对于 ADO.NET 客户端指定的参数名称。                                  |
+| **ParameterName** | 获取和设置 |                                  [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]支持此属性对于 ADO.NET 客户端指定的参数名称。                                  |
 |     **ReplTest1**     | 获取和设置 |                                                    [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]表示以字符串形式的参数值。                                                    |
 
 ###  <a name="BKMK_Datatypes"></a> 支持的数据类型  
  下表总结了简单 Siebel 字段类型[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]支持。 有关更详细的覆盖范围，请参阅[基本 Siebel 数据类型](../../adapters-and-accelerators/adapter-siebel/basic-siebel-data-types.md)。  
 
-|Siebel 字段类型|.NET 类型|XML 架构类型|  
+|Siebel 字段类型|.NET Type|XML 架构类型|  
 |-----------------------|---------------|---------------------|  
 |DTYPE_BOOL|Boolean|xsd:boolean|  
 |DTYPE_CURRENCY|Decimal|xsd:decimal|  

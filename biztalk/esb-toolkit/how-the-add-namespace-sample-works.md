@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 33fc168ff5461ffc4145e83efaf2192cbc785820
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dccb5aebb19895e05ed424f64b4f2ba431174f6d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975062"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397112"
 ---
 # <a name="how-the-add-namespace-sample-works"></a>如何添加 Namespace 示例能够正常工作
 第一，第二和第四个测试使用**添加 Namespace**组件位于 NamespaceSampleReceivePipeline 管道中。 它将作为输入具有对根节点，如下所示没有命名空间的文档：  
@@ -29,13 +29,13 @@ ms.locfileid: "36975062"
  下表显示了设置的属性值**添加 Namespace**组件。  
 
 
-|      “属性”       |  类型   |                          ReplTest1                           |
+|      属性       |  类型   |                          ReplTest1                           |
 |---------------------|---------|----------------------------------------------------------|
-| ExtractionNodeXPath | 静态  |                         （空）                          |
-|    NamespaceBase    | 静态  |    http://schemas.microsoft.biztalk.esb.test.com/test    |
-|   NamespacePrefix   | 静态  |                         esbTest                          |
-|      分隔符      | 静态  |                            /                             |
-|       Xpath        | Dynamic | /CanonicalOrder/@OrderID&#124;/CanonicalOrder/@OrderDate |
+| ExtractionNodeXPath | Static  |                         （空）                          |
+|    NamespaceBase    | Static  |    http://schemas.microsoft.biztalk.esb.test.com/test    |
+|   NamespacePrefix   | Static  |                         esbTest                          |
+|      Separator      | Static  |                            /                             |
+|       Xpath        | 动态 | /CanonicalOrder/@OrderID&#124;/CanonicalOrder/@OrderDate |
 
  表中显示的属性设置会导致要通过执行两个 XPath 查询来搜索 XML 文档的组件/CanonicalOrder/@OrderID并/CanonicalOrder/@OrderDate(为指定的两个查询**Xpath**分隔"管道"属性字符）。 这些查询返回的值**OrderID**并**OrderDate**属性的根节点的文档; 在此示例中，两个值是"OrderID_0"和"OrderDate_1"。  
 

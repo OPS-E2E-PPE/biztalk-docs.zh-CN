@@ -14,12 +14,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0c3eb2a0a0afe6126a622bad1d18bf3fcc198fb0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 338130847a220d16cd4b5e42c1f93ff2bc3b2334
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988254"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373410"
 ---
 # <a name="get-metadata-for-sap-operations-in-visual-studio"></a>获取 Visual Studio 中的 SAP 操作的元数据
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]提供了两个[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]可用于帮助您开发使用该适配器的解决方案的组件 — [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]，则[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]，和[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。 适配器客户端必须使用这些组件连接到 SAP 系统，然后生成他们想要调用 SAP 项目的元数据。  

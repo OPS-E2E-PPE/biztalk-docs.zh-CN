@@ -17,12 +17,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef25dddf3d30f584b30aa0f35b8b1c4140d285e2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 58d823dda4b4697161a9f4e3df12f8cc48e97889
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36965806"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373575"
 ---
 # <a name="create-a-connection-to-the-sap-system"></a>创建连接到 SAP 系统
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]是[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]自定义绑定。 在这种情况下，它使到 SAP 系统通过 WCF 终结点地址的通信。 WCF 中的终结点地址标识服务的网络位置，并通常都表示为统一资源标识符 (URI)。 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]表达此位置作为一个连接 URI，其中包含属性的[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]用于建立到 SAP 系统的连接。 必须指定连接 URI 时您：  

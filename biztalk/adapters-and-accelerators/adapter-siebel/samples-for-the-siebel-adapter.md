@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 608603ead6b708722a7fc51cd2d5e2849812b408
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 57b338fd5cb445d8d83e9d3d364909cf7a9eb6b5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014822"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371032"
 ---
 # <a name="samples-for-the-siebel-adapter"></a>Siebel 适配器的示例
 示例[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]分为：  
@@ -30,7 +30,7 @@ ms.locfileid: "37014822"
 - [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)] 示例  
 
 
-这些示例目前[BizTalk 适配器包 2010年: Siebel 适配器示例](https://www.microsoft.com/download/details.aspx?id=6492)。 
+这些示例是在[BizTalk 适配器包 2010年:Siebel 适配器示例](https://www.microsoft.com/download/details.aspx?id=6492)。 
 
 > [!NOTE]
 > [!INCLUDE[files-need-updated](../../includes/files-need-updated.md)]

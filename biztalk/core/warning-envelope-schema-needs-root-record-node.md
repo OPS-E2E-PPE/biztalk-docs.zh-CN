@@ -1,5 +1,5 @@
 ---
-title: 警告-信封架构需要根记录节点 |Microsoft 文档
+title: 警告-信封架构需要根记录节点 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6ccc0f472e15a31c9bef6e1090e8c153f730acbf
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4869a5a346e49d7febbccb628799430922dd8cb2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288285"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393684"
 ---
 # <a name="warning---envelope-schema-needs-root-record-node"></a>警告-信封架构需要根记录节点
 **错误代码**  
@@ -28,8 +28,8 @@ ms.locfileid: "22288285"
   
  **说明**  
   
- 信封架构都需要有至少一个根**记录**节点的子级作为其**架构**节点。  
+ 信封架构需要具有至少一个根**记录**节点的子级作为其**架构**节点。  
   
  **用户执行任何操作**  
   
- 右键单击**架构**节点，单击**插入子记录**上为快捷菜单，然后按插入的描述性名称**记录**节点。 一般情况下，信封架构也将具有插入根目录内的其他节点**记录**节点。
+ 右键单击**架构**节点中，单击**插入子记录**上为快捷菜单，然后按为插入的描述性名称**记录**节点。 一般情况下，信封架构也会在根目录下插入其他节点**记录**节点。

@@ -12,15 +12,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7370b37c7c390e6a837dbf3f700784dbc7fee7e3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 81d1eb8c500ac746606da82509fb74e4d9afeb6a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017961"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391385"
 ---
-# <a name="configuring-acknowledgements-mdns-as2"></a>配置确认 (MDN) (AS2)
-在合作伙伴协议中，您可以指定接收 AS2 消息的参与方生成 MDN 响应并将其发回的方式。  
+# <a name="configuring-acknowledgements-mdns-as2"></a>配置确认 (Mdn) (AS2)
+在合作伙伴协议中，可以指定如何接收 AS2 消息的参与方生成 MDN 响应并将其发回。  
   
 > [!IMPORTANT]
 >  以下属性禁用此页上，如果您清除**本地 BizTalk 处理参与方或支持来自此参与方发送消息的接收的消息**要为其创建的参与方时的复选框协议。  
@@ -28,10 +28,10 @@ ms.locfileid: "37017961"
 > - **未收到 MDN 时重新发送 AS2 消息**复选框以及关联的属性  
 >   -   **替代发送端口设置**复选框以及关联的属性  
 > 
->   仅在与从参与方发送交换的属性相对应的单向协议选项卡上禁用这些属性。 例如，如果创建两个参与方 Party A 和参与方 B，并且对于参与方 A 清除该复选框，上述列表中的属性上禁用**参与方 A-> 参与方 B**单向协议选项卡。  
+>   仅在与参与方所发送交换的属性相对应的单向协议选项卡上禁用这些属性。 例如，如果创建两个参与方 Party A 和参与方 B，并且对于参与方 A 清除该复选框，上述列表中的属性上禁用**参与方 A-> 参与方 B**单向协议选项卡。  
   
-## <a name="prerequisites"></a>必要條件  
- 必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组或 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators 组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 必须以成员的身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理员或[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]B2B Operators 组。  
   
 ### <a name="to-configure-acknowledgements"></a>配置确认  
   
@@ -39,7 +39,7 @@ ms.locfileid: "37017961"
   
 2. 在单向协议选项卡上，单击**确认 (Mdn)**。  
   
-3. 选择**到 MessageBox 中处理入站的 MDN 以进行路由/传递**路由通过 A2 解码器将 MDN 作为直通消息，然后到 MessageBox 中的复选框。 当选择此属性时，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 会提升用于路由的 `IsAS2MdnResponseMessage` 属性。  
+3. 选择**到 MessageBox 中处理入站的 MDN 以进行路由/传递**路由通过 A2 解码器将 MDN 作为直通消息，然后到 MessageBox 中的复选框。 选中此属性后，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]促进`IsAS2MdnResponseMessage`属性供路由使用。  
   
 4. 如果您选中**使用的验证和 MSDN 的协议设置而非消息标头**属性中的**验证**页上，选择**请求 MDN**如果复选框贸易合作伙伴必须生成 MDN 以响应 AS2 消息。  
   
@@ -61,7 +61,7 @@ ms.locfileid: "37017961"
   
       2. 如果**MDN 未收到时重新发送 AS2 消息**选中复选框，选中**替代发送端口设置**若要指定**最小 HTTP 重试间隔**和**HTTP 重试尝试次数**。 输入一个值**停止尝试 HTTP 重试后**字段来指定最长时间使用 HTTP 适配器进行重试尝试。  
   
-   3. 如果所选**请求异步 MDN**复选框并且指定的 URL**回执送达选项 (URL)** 属性，**处置-到通知**文本框中，默认情况下设置为相同的 URL。 如果未选中**请求异步 MDN**复选框，您必须输入的值**处置-到通知**。 此字段中的值不会在 AS2 处理中使用。  
+   3. 如果所选**请求异步 MDN**复选框并且指定的 URL**回执送达选项 (URL)** 属性，**处置-到通知**文本框中，默认情况下设置为相同的 URL。 如果未选中**请求异步 MDN**复选框，您必须输入的值**处置-到通知**。 此字段的值不使用在 AS2 处理。  
   
 5. 单击**Apply**以接受更改，然后才能继续进行配置，或单击**确定**以验证所做的更改，然后关闭对话框。  
   

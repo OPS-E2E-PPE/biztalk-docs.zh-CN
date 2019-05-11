@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10660 |Microsoft Docs
+title: 单一登录：Event 10660 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 963dd57e750be2e5b00b9a2a25d8805c705de7b6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0044b4da219623a42719c46863b216f30dbd2916
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005470"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397594"
 ---
-# <a name="single-sign-on-event-10660"></a>单一登录： 事件 10660
+# <a name="single-sign-on-event-10660"></a>单一登录：事件 10660
 ## <a name="details"></a>详细信息  
 
 |                 |                                                            |
@@ -30,16 +30,16 @@ ms.locfileid: "37005470"
 |  事件源   |                           ENTSSO                           |
 |    组件    |                            N\A                             |
 |  符号名称  |           SSO_INFO_PASSWORD_SYNC_WINDOWS_STARTED           |
-|  消息正文   |    Windows（从 PCNS）的密码同步已开始。%r    |
+|  消息正文   |    Windows （从 PCNS) 的密码同步已经 started.%r    |
 
 ## <a name="explanation"></a>解释  
- 此信息事件表示已针对外部适配器启动密码同步。  
+ 此信息事件表明外部适配器的密码同步已启动。  
 
 ## <a name="user-action"></a>用户操作  
 
-- 不需要用户进行任何操作。  
+- 不不需要任何用户操作。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [密码同步](../core/password-synchronization2.md)  
 

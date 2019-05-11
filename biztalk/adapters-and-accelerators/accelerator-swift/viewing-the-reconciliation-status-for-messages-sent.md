@@ -1,5 +1,5 @@
 ---
-title: 发送的消息中查看的对帐状态 |Microsoft 文档
+title: 查看发送的消息的对帐状态 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e0fbcdbbec66c16cdf2592ac7eacfd6d69fdc2b6
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: f0cfa8614c879f2375af8f97da17c9ab0b41296a
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25961323"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529661"
 ---
-# <a name="viewing-the-reconciliation-status-for-messages-sent"></a>发送的消息中查看的对帐状态
+# <a name="viewing-the-reconciliation-status-for-messages-sent"></a>查看发送的消息的对帐状态
 若要查看发送的消息的对帐状态：  
   
 1.  在程序中，单击**Microsoft BizTalk Server\<版本\>**，然后单击**BAM 门户网站**。  
   
-2.  BAM 门户网站中，我的 View\XMLV2View\Activity 搜索下面选择**消息发送活动**。  
+2.  在 BAM 门户网站，在我 View\XMLV2View\Activity 搜索中，选择**消息发送活动**。  
   
-3.  在列选择器中移动中的所有列**可用数据**和**到显示的项的里程碑**。  
+3.  在列选择器，将移动中的所有列**可用的数据**并**显示的项的里程碑**。  
   
-4.  单击**执行查询**。 这将返回所有存储针对消息发送活动的记录。  
+4.  单击**执行查询**。 这将返回所有消息发送活动根据存储的记录。  
   
-5.  同样，你可以看到的数据传递通知、 未送达报告、 传输报表和摘要的活动。
+5.  同样，您可以看到数据送达通知、 未送达报告、 传输报表和摘要的活动。

@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 12c9393504332da636de8b09cca0e76f4dfe0da6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9a026cabfbfd2dfb846ec3dd2ca27483f5c564fc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983454"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368507"
 ---
 # <a name="overview-of-biztalk-adapter-for-sql-server"></a>适用于 SQL Server 的 BizTalk 适配器概述
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]公开为 WCF 服务的 SQL Server 数据库。 适配器客户端可以通过交换 SOAP 消息与适配器执行 SQL Server 数据库上的操作。 适配器将使用 SOAP 消息，并执行相应的 ADO.NET 调用，以执行该操作。 适配器返回到 SOAP 消息的窗体中的客户端从 SQL Server 数据库返回响应。  

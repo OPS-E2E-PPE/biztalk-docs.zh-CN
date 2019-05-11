@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ccf479438a5b0960a66b35ef7946df63d088284b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 67fab30acf0e76ccb60ca53d441f8f9d590bc2c7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982014"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372689"
 ---
 # <a name="syntax-for-an-execquery-statement-in-sap"></a>在 SAP 中的 EXECQUERY 语句的语法
 可以使用 SAP GUI 以图形方式选择想要查询的列和排序的顺序您要包括在结果集，等等的表创建查询。[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]使用户能够通过提供用户可用于执行 SAP 系统中定义的查询的 EXECQUERY 操作从 ADO.NET 应用程序执行此类查询。  

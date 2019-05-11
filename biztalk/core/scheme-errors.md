@@ -1,5 +1,5 @@
 ---
-title: 方案错误 |Microsoft 文档
+title: 方案错误 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b05b2637b449f8bbd9d82950d853af707972a815
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 15a56af28ba6c1e10fe31bfad436c4ae9fd16ed4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268893"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395541"
 ---
 # <a name="scheme-errors"></a>方案错误
-本部分包含有关诊断和解决 WCF 方案错误的详细信息。  
+本部分包含有关诊断和解决 WCF 方案错误的详细的信息。  
   
 ## <a name="in-this-section"></a>本节内容  
   
 -   [无法确定方案](../core/cannot-determine-scheme.md)  
   
--   [无法从绑定来验证地址获取方案](../core/cannot-obtain-scheme-from-binding-to-validate-address.md)  
+-   [无法从绑定中获取方案以验证地址](../core/cannot-obtain-scheme-from-binding-to-validate-address.md)  
   
--   [无效的标识符](../core/invalid-identifier.md)  
+-   [标识符无效](../core/invalid-identifier.md)  
   
 -   [方案无效](../core/invalid-scheme.md)

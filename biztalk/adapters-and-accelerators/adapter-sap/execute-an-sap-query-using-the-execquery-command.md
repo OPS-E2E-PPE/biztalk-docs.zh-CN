@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f250befed19f285baefc1c192f25b335701fa6ca
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2b53d7137e8adcb4ce6e140c1ad9e27054e787ff
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972158"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373438"
 ---
 # <a name="execute-an-sap-query-using-the-execquery-command"></a>执行 SAP 查询使用 EXECQUERY 命令
 [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]公开为 ADO.NET 数据源的 SAP 系统。 使用[!INCLUDE[adoprovidersapshort](../../includes/adoprovidersapshort-md.md)]，可以在 SAP 系统中执行预定义的查询，通过执行 EXECQUERY 语句。  

@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 947dc1a0a2b602d1dbcce032f721998b9fc84a84
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ce7852afade2cceaa6c881145d947ca0ec1e02ab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984638"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375585"
 ---
 # <a name="create-a-channel-using-oracle-e-business-suite"></a>创建一个通道，使用 Oracle E-business Suite
 在 WCF 通道模型中，调用对 Oracle E-business Suite 操作并通过交换 SOAP 消息接收结果[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]通过 WCF 通道。  

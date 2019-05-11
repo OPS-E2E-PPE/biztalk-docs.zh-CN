@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3360433e97b9b7d21a06d3ad5c304f37a924589f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 62dccdba63067a35e2ba001fac331e932d2bd9c2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000614"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371801"
 ---
 # <a name="create-the-siebel-system-connection-uri"></a>创建 Siebel 系统连接 URI
 [!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]连接 URI 包含适配器用来建立与 Siebel 系统的连接属性。  
@@ -73,7 +73,7 @@ siebel://Username=[USER_NAME];Password=[PASSWORD]@[SERVER]:[PORT]?SiebelObjectMa
 
   Siebel 连接 URI 表示为的用户身份验证所需的参数的名称 / 值集合中的用户信息 (userinfoparams)。 下表介绍了这些参数。  
 
-| “属性” |                                                                                                                                                                                                          Description                                                                                                                                                                                                          |
+| 属性 |                                                                                                                                                                                                          Description                                                                                                                                                                                                          |
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 用户名 |      Siebel 系统用户名此值是区分大小写。 必须设置**AcceptCredentialsInUri**属性绑定到**true**连接 URI 中指定的用户名和密码。 **注意：** [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]将保留在打开 Siebel 系统上的连接时输入的用户名的值的大小写。       |
 | Password | Siebel 系统用户的密码此值是区分大小写。 必须设置**AcceptCredentialsInUri**属性绑定到**true**连接 URI 中指定的用户名和密码。 **注意：** [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]将保留在打开 Siebel 系统上的连接时输入的密码值的大小写。 |
@@ -92,11 +92,11 @@ siebel://Username=[USER_NAME];Password=[PASSWORD]@[SERVER]:[PORT]?SiebelObjectMa
  Siebel 连接 URI 中的查询信息 (query_string) 用于指定附加的连接属性。  
 
 
-|        “属性”        |                                                                                                                                          Description                                                                                                                                           |
+|        属性        |                                                                                                                                          Description                                                                                                                                           |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  SiebelObjectManager   |                                                                                                  企业服务器上的 Siebel 对象管理器的名称。 此参数是必需的。                                                                                                   |
 | SiebelEnterpriseServer |                                                                                                             Siebel 企业服务器的名称。 此参数是必需的。                                                                                                              |
-|        “报表”        |                                             对象管理器的语言。 此参数可选。 如果未指定，[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]提供默认值 (enu)。                                              |
+|        语言        |                                             对象管理器的语言。 此参数可选。 如果未指定，[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]提供默认值 (enu)。                                              |
 |       Transport        |                                                                        传输;仅支持 tcpip。 此参数可选。 如果未指定，Siebel 系统提供默认值 (tcpip)。                                                                         |
 |       加密       | 要使用之间的加密类型[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]和 Siebel 系统。 支持的值为 none、 mscrypto，或 rsa。 此参数可选。 如果未指定，Siebel 系统提供的默认值 （无）。 |
 |      压缩      |    要使用之间的压缩算法[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]和 Siebel 系统。 支持的值为 none 或使用 zlib。 此参数可选。 如果未指定，Siebel 系统提供默认值 (使用 zlib)。     |

@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ba602119a6143aae83e72b5c230f91f33a4eb5bf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 11fe9ab767b11d1dc22bc1a8341093ed066abf44
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977614"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374702"
 ---
 # <a name="receive-polling-based-data-changed-messages-from-oracle-e-business-suite"></a>从 Oracle E-business Suite 接收基于轮询的数据更改消息
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]支持接收基于轮询的数据更改消息通过轮询接口表、 界面视图、 表和视图。 该适配器将消息传递给由应用程序：  
@@ -36,7 +36,7 @@ ms.locfileid: "36977614"
  配置[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]以通过设置某些或所有以下绑定属性来接收数据更改消息。  
 
 
-|         绑定属性         |                                                                                                                                                                                                                                                                                                                                                                                     ReplTest1                                                                                                                                                                                                                                                                                                                                                                                     | ，则“默认” |                                必需/可选                                |
+|         绑定属性         |                                                                                                                                                                                                                                                                                                                                                                                     ReplTest1                                                                                                                                                                                                                                                                                                                                                                                     | 默认 |                                必需/可选                                |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|---------------------------------------------------------------------------------|
 |     **InboundOperationType**     |                                                                                                                                                                                                                                                                                                                                                                请确保值设置为**轮询**。                                                                                                                                                                                                                                                                                                                                                                | 轮询 |         必需的。 如果未显式设置，默认值将应用。          |
 | **PolledDataAvailableStatement** | 指定 SELECT 语句可确定是否可用于轮询的特定表的任何数据。 指定的语句必须返回的结果集由行和列组成。 在结果集中的第一个单元中的值指示适配器是否执行指定的值**PollingInput**属性绑定。 如果结果的第一个单元格包含一个正值，适配器将执行轮询语句。 例如，将为此绑定属性有效的语句：<br /><br /> `Select * from <table_name>`<br /><br /> **注意：** 您必须指定此绑定属性的存储的过程。 此外，此语句不能修改 Oracle E-business Suite 或基础的 Oracle 数据库中的数据。 |  null   |                                    必需的。                                    |
@@ -59,7 +59,7 @@ ms.locfileid: "36977614"
 
 - 如果**TransactionIsolationLevel**设置为**ReadCommitted**后, 轮询查询将不会更新所选的行。  
 
-- 如果**TransactionIsolationLevel**设置为**Serializable**，以下目标的系统异常 (**Microsoft.ServiceModel.Channels.Common.TargetSystemException**) 执行轮询后语句时，将发生:"ora-08177 无法序列化此事务的访问权限"。 在这种情况下，必须设置**PollingRetryCount**绑定属性可以定义你想要重试同一事务的适配器的次数。  
+- 如果**TransactionIsolationLevel**设置为**Serializable**，以下目标的系统异常 (**Microsoft.ServiceModel.Channels.Common.TargetSystemException**) 执行轮询后语句时，将发生："Ora-08177 无法序列化此事务的访问权限"。 在这种情况下，必须设置**PollingRetryCount**绑定属性可以定义你想要重试同一事务的适配器的次数。  
 
   有关如何设置事务隔离级别的说明，请参阅[与 Oracle E-business Suite 中配置事务隔离级别和事务超时](../../adapters-and-accelerators/adapter-oracle-ebs/configure-transaction-isolation-level-and-transaction-timeout-with-oracle-ebs.md)。  
 

@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2bada45064e588748b25947e08b104dc79838ee0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 424a3721b2ff12fb14be18c7d11a46de9a116338
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975982"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372967"
 ---
 # <a name="special-operations"></a>特殊操作
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]显示多个特殊操作。 这些操作不基于 SAP 系统项目。 它们会显示为适配器客户端应用程序提供的功能。 特殊的操作包括：  
@@ -38,7 +38,7 @@ ms.locfileid: "36975982"
   
    详细了解如何使用 RfcConfirmTransID 操作和有关其消息架构，请参阅[Trfc 在 SAP 中的操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)。  
   
-- **字符串 SapAdapterUtilities.ConvertGuidToTid(Guid)**。 这是 SAP 适配器程序集公开的公共方法。 （不是由适配器的操作。）它将返回 SAP 事务 ID (TID) 映射到指定的 GUID。  
+- **string SapAdapterUtilities.ConvertGuidToTid(Guid)**. 这是 SAP 适配器程序集公开的公共方法。 （不是由适配器的操作。）它将返回 SAP 事务 ID (TID) 映射到指定的 GUID。  
   
    在内部，[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]映射到 GUID 在 SAP 系统上的 SAP 事务 ID (TID)，用于标识工作 (LUW) 的逻辑单元。 此 GUID 是向适配器客户端公开，以便它们可以提交一个 tRFC (LUW) 通过调用 RfcConfirmTransID 操作以确认其 TID SAP 系统上。  
   

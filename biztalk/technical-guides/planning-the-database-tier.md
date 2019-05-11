@@ -1,5 +1,5 @@
 ---
-title: 规划数据库层 |Microsoft 文档
+title: 规划数据库层 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f4e815e58d993096ace47057249f16427f4e6bdb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c212e9759d225fdc6f030fb780602025d4658f3c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302173"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397033"
 ---
 # <a name="planning-the-database-tier"></a>规划数据库层
-本节包含与规划 BizTalk 解决方案的数据库层的建议主题。  
+本部分包含与规划 BizTalk 解决方案的数据库层的建议主题。  
   
 ## <a name="in-this-section"></a>本节内容  
   
 -   [规划数据库性能](../technical-guides/planning-for-database-performance.md)  
   
--   [数据库可用性规划](../technical-guides/planning-for-database-availability.md)  
+-   [规划数据库可用性](../technical-guides/planning-for-database-availability.md)  
   
--   [计划测试数据库](../technical-guides/planning-for-database-testing.md)
+-   [规划数据库测试](../technical-guides/planning-for-database-testing.md)

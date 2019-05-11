@@ -1,5 +1,5 @@
 ---
-title: 步骤 1： 修改 vPrev BizTalk 项目使用 SQL 适配器 |Microsoft Docs
+title: 第 1 步：修改 vPrev BizTalk 项目使用 SQL 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2161520d1dba4ae070398668c53de2039e66e67d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7b54953af2bf3e1a3783dd05f8a98b4ac6bfd32a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979406"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367843"
 ---
-# <a name="step-1-modify-the-vprev-biztalk-project-using-the-sql-adapter"></a>步骤 1： 修改 vPrev BizTalk 项目使用 SQL 适配器
+# <a name="step-1-modify-the-vprev-biztalk-project-using-the-sql-adapter"></a>第 1 步：修改 vPrev BizTalk 项目使用 SQL 适配器
 ![3 的第 1 步](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")  
   
- **完成时间：** 10 分钟  
+ **若要完成的时间：** 10 分钟。  
   
- **目标：** 到现有 vPrev BizTalk 项目，在此步骤中，进行以下更改：  
+ **目标：** 在此步骤中，向现有 vPrev BizTalk 项目进行以下更改：  
   
 - 生成上使用基于 WCF 的 Customer 表的插入操作的元数据[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。  
   
@@ -32,7 +32,7 @@ ms.locfileid: "36979406"
   
 - 使用基于 WCF 的接收响应消息映射[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]到使用 vPrev SQL 适配器接收响应消息。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  必须具有 SQL Server 数据库中执行插入操作的客户表上的 vPrev BizTalk 项目。  
   
 ### <a name="to-modify-the-vprev-biztalk-project"></a>若要修改 vPrev BizTalk 项目  
@@ -67,7 +67,7 @@ ms.locfileid: "36979406"
   
        ![映射请求架构](../../adapters-and-accelerators/adapter-sql/media/850bbf52-fc3e-42c5-b879-51c6e39a502d.gif "850bbf52-fc3e-42c5-b879-51c6e39a502d")  
   
-   9. 保存映射。  
+   9. 保存该映射。  
   
 4. 响应消息中，将映射生成使用 vPrev SQL 适配器添加到使用基于 WCF 的生成的架构的架构[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。  
   
@@ -102,14 +102,14 @@ ms.locfileid: "36979406"
       > [!NOTE]
       >  有关批量复制 functoid 的详细信息，请参阅[ http://go.microsoft.com/fwlink/?LinkId=119749 ](http://go.microsoft.com/fwlink/?LinkId=119749)。  
   
-   9. 保存映射。  
+   9. 保存该映射。  
   
 5. 保存并生成 BizTalk 解决方案。 右键单击解决方案，然后依次**生成解决方案**。  
   
-6. 部署该解决方案。 右键单击解决方案，然后依次**部署解决方案**。  
+6. 部署解决方案。 右键单击解决方案，然后依次**部署解决方案**。  
   
 ## <a name="next-steps"></a>后续步骤  
- 创建 WCF 自定义发送端口，并将其配置为使用在此步骤中创建的地图中所述[步骤 2： 使用 SQL 适配器的 BizTalk Server 管理控制台中配置业务流程](../../adapters-and-accelerators/adapter-sql/step-2-configure-the-orchestration-to-use-the-sql-adapter-in-biztalk-server.md)。  
+ 创建 WCF 自定义发送端口，并将其配置为使用在此步骤中创建的地图中所述[步骤 2:在使用 SQL 适配器的 BizTalk Server 管理控制台中配置业务流程](../../adapters-and-accelerators/adapter-sql/step-2-configure-the-orchestration-to-use-the-sql-adapter-in-biztalk-server.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [教程 1： 将 BizTalk 项目迁移到 SQL 适配器](../../adapters-and-accelerators/adapter-sql/tutorial-1-migrate-biztalk-projects-to-the-sql-adapter.md)
+ [教程 1:将 BizTalk 项目迁移到 SQL 适配器](../../adapters-and-accelerators/adapter-sql/tutorial-1-migrate-biztalk-projects-to-the-sql-adapter.md)

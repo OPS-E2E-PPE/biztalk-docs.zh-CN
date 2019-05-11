@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10539 |Microsoft Docs
+title: 单一登录：Event 10539 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f7934b3011af2656f413270b4d249ca4f7f96bae
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cbae36ca6e261fab1b7ae4e691f64da2bf9ba718
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006270"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392922"
 ---
-# <a name="single-sign-on-event-10539"></a>单一登录： 事件 10539
+# <a name="single-sign-on-event-10539"></a>单一登录：事件 10539
 ## <a name="details"></a>详细信息  
 
 |                 |                                                            |
@@ -30,17 +30,17 @@ ms.locfileid: "37006270"
 |  事件源   |                           ENTSSO                           |
 |    组件    |                             CO                             |
 |  符号名称  |              SSO_WARN_SSO_TICKETS_NOT_ALLOWED              |
-|  消息正文   |        SSO 系统没有启用票证。         |
+|  消息正文   |        SSO 系统未启用票证。         |
 
 ## <a name="explanation"></a>解释  
- 此警告事件表示 SSO 票证尚未启用。 允许使用 SSO 票证是 SSO 系统的一个可选功能。 您的 SSO 系统上尚未启用此功能。  
+ 此警告事件表明未启用使用 SSO 票证。 允许使用 SSO 票证是 SSO 系统的一项可选功能。 尚未在 SSO 系统上启用此功能。  
 
 ## <a name="user-action"></a>用户操作  
- 若要解决此警告问题，请执行以下操作：  
+ 若要解决此警告，请执行以下操作：  
 
-- 请与 SSO 管理员联系以启用 SSO 系统票证。 可使用 SSO 管理工具（GUI 或命令行）完成此操作。  
+- 与 SSO 管理员联系以启用 SSO 系统票证。 这可以使用 SSO 管理工具 （GUI 或命令行）。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [如何配置 SSO 票证](../core/how-to-configure-the-sso-tickets.md)  
 

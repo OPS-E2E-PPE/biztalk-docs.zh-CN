@@ -1,5 +1,5 @@
 ---
-title: 步骤 1： 修改 vPrev BizTalk 项目以调用 RFC |Microsoft Docs
+title: 第 1 步：修改 vPrev BizTalk 项目以调用 RFC |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,19 +15,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2e2624ede6d2710db2d82311c2f452f8be372aa2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6a9000f4754517223fe39856cdac9e50e2ab676c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969646"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372935"
 ---
-# <a name="step-1-modify-the-vprev-biztalk-project-for-invoking-an-rfc"></a>步骤 1： 修改 vPrev BizTalk 项目以调用 RFC
+# <a name="step-1-modify-the-vprev-biztalk-project-for-invoking-an-rfc"></a>第 1 步：修改 vPrev BizTalk 项目以调用 RFC
 ![3 的第 1 步](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")  
   
- **完成时间：** 10 分钟  
+ **若要完成的时间：** 10 分钟。  
   
- **目标：** 到现有 vPrev BizTalk 项目，在此步骤中，进行以下更改：  
+ **目标：** 在此步骤中，向现有 vPrev BizTalk 项目进行以下更改：  
   
 - 为使用基于 WCF 的 SD_RFC_CUSTOMER_GET RFC 生成元数据[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。  
   
@@ -74,7 +74,7 @@ ms.locfileid: "36969646"
       > [!NOTE]
       >  有关字符串左侧空格裁剪 functoid 的详细信息，请参阅"字符串左剪裁 ' Functoid"网址[ http://go.microsoft.com/fwlink/?LinkId=105774 ](http://go.microsoft.com/fwlink/?LinkId=105774)。  
   
-   8. 保存映射。  
+   8. 保存该映射。  
   
 4. 响应消息中，将映射生成使用 vPrev SAP 适配器添加到使用基于 WCF 的生成的架构的架构[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。  
   
@@ -98,14 +98,14 @@ ms.locfileid: "36969646"
   
        ![映射响应消息在适配器各版本之间](../../adapters-and-accelerators/adapter-sap/media/d8dddaba-d978-4159-bcc6-6a6bfee36564.gif "d8dddaba-d978-4159-bcc6-6a6bfee36564")  
   
-   9. 保存映射。  
+   9. 保存该映射。  
   
 5. 保存并生成 BizTalk 解决方案。 右键单击解决方案，然后依次**生成解决方案**。  
   
-6. 部署该解决方案。 右键单击解决方案，然后依次**部署解决方案**。  
+6. 部署解决方案。 右键单击解决方案，然后依次**部署解决方案**。  
   
 ## <a name="next-steps"></a>后续步骤  
- 创建 WCF 自定义发送端口，并将其配置为使用在此步骤中创建的地图中所述[步骤 2： 在 BizTalk Server 管理控制台中配置业务流程](../../adapters-and-accelerators/adapter-sap/step-2-configure-the-orchestration-in-biztalk-server-administration-console1.md)。  
+ 创建 WCF 自定义发送端口，并将其配置为使用在此步骤中创建的地图中所述[步骤 2:在 BizTalk Server 管理控制台中配置业务流程](../../adapters-and-accelerators/adapter-sap/step-2-configure-the-orchestration-in-biztalk-server-administration-console1.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [教程 2：迁移 SAP RFC BizTalk 项目](../../adapters-and-accelerators/adapter-sap/tutorial-2-migrating-an-sap-rfc-biztalk-project.md)

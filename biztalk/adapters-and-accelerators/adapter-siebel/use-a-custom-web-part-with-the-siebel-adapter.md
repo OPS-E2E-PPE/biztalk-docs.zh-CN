@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7b8843a3336c6cec17120bef109aa5119509aed9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d7da481b326c434890d18d08b4a1625602ba0e3e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999758"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370369"
 ---
 # <a name="use-a-custom-web-part-with-the-siebel-adapter"></a>使用 Siebel 适配器的自定义 Web 部件
 本部分提供有关 Microsoft Office SharePoint Server 中使用自定义 Web 部件的信息。 若要使用自定义 Web 部件，必须执行以下操作：  
@@ -31,11 +31,11 @@ ms.locfileid: "36999758"
 ## <a name="before-you-begin"></a>开始之前  
  创建自定义 Web 部件之前：  
   
--   将 Siebel 项目发布为 WCF 服务。 有关详细信息，请参阅[步骤 1： 将 Siebel 业务组件操作作为 WCF 服务发布](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md)中[教程 1： 演示数据从 Siebel 系统的 SharePoint 站点上](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)。  
+-   将 Siebel 项目发布为 WCF 服务。 有关详细信息，请参阅[步骤 1:将 Siebel 业务组件操作作为 WCF 服务发布](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md)在[教程 1:从 SharePoint 站点上的 Siebel 系统提供数据](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)。  
   
--   创建使用 Microsoft Office SharePoint Server 中的业务数据目录的 Siebel 项目应用程序定义文件。 有关详细信息，请参阅[步骤 2： 为 Siebel 业务组件操作创建应用程序定义文件](../../adapters-and-accelerators/adapter-siebel/step-2-create-an-application-definition-file-for-siebel-business-component.md)中[教程 1： 演示数据从 Siebel 系统的 SharePoint 站点上](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)。  
+-   创建使用 Microsoft Office SharePoint Server 中的业务数据目录的 Siebel 项目应用程序定义文件。 有关详细信息，请参阅[步骤 2:为 Siebel 业务组件操作创建应用程序定义文件](../../adapters-and-accelerators/adapter-siebel/step-2-create-an-application-definition-file-for-siebel-business-component.md)在[教程 1:从 SharePoint 站点上的 Siebel 系统提供数据](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)。  
   
-##  <a name="Create_a_Custom_Web_Part"></a> 步骤 1： 创建自定义 Web 部件  
+##  <a name="Create_a_Custom_Web_Part"></a> 步骤 1：创建自定义 Web 部件  
  若要创建自定义 Web 部件使用 Visual Studio，请执行以下操作：  
   
 1.  启动 Visual Studio 中，并创建一个项目。  
@@ -48,17 +48,17 @@ ms.locfileid: "36999758"
   
 5.  添加基于你在项目中的问题所需的代码。 与某些问题相关的代码示例，请参阅"问题涉及自定义 Web 部件"中[与 SharePoint 结合使用 Siebel 适配器时的注意事项](../../adapters-and-accelerators/adapter-siebel/considerations-when-using-the-siebel-adapter-with-sharepoint.md)。  
   
-6.  生成此项目。 在项目的成功生成，.dll 文件，CustomWebPart.dll，将在其中生成\<*项目文件夹* \> /bin/Debug 文件夹。  
+6.  生成项目。 在项目的成功生成，.dll 文件，CustomWebPart.dll，将在其中生成\<*项目文件夹* \> /bin/Debug 文件夹。  
   
-## <a name="step-2-deploy-the-custom-web-part-to-a-sharepoint-portal"></a>步骤 2： 将自定义 Web 部件部署到 SharePoint 门户网站  
- 必须执行以下操作来使 CustomWebPart.dll 文件 （自定义 Web 部件） 中创建的"步骤 1： 创建自定义 Web 部件"的 SharePoint 门户上可使用本主题：  
+## <a name="step-2-deploy-the-custom-web-part-to-a-sharepoint-portal"></a>第 2 步：将自定义 Web 部件部署到 SharePoint 门户网站  
+ 必须执行以下操作来使 CustomWebPart.dll 文件 （自定义 Web 部件） 中创建的"步骤 1:创建自定义 Web 部件"本主题的 SharePoint 门户上可用：  
   
--   **将 CustomWebPart.dll 文件复制到 bin 文件夹中的 SharePoint Portal**: Microsoft Office SharePoint Server 创建下的门户网站\<*根驱动器*\>: \Inetpub\wwwroot\wss\VirtualDirectories 文件夹。 文件夹创建每个门户中，并可以使用的端口号标识。 必须将 CustomWebPart.dll 文件中创建"步骤 1： 创建自定义 Web 部件"到本主题的\<*根驱动器*\>: \Inetpub\wwwroot\wss\VirtualDirectories\\ <*Port_Number*\>\bin 文件夹。 例如，如果你的 SharePoint 门户的端口号是 13614，您必须 CustomWebPart.dll 文件复制到\<*根驱动器*\>: \Inetpub\wwwroot\wss\VirtualDirectories\13614\bin 文件夹。  
+-   **将 CustomWebPart.dll 文件复制到 bin 文件夹中的 SharePoint Portal**:Microsoft Office SharePoint Server 创建下的门户网站\<*根驱动器*\>: \Inetpub\wwwroot\wss\VirtualDirectories 文件夹。 文件夹创建每个门户中，并可以使用的端口号标识。 必须将 CustomWebPart.dll 文件中创建"步骤 1:创建自定义 Web 部件"到本主题的\<*根驱动器*\>: \Inetpub\wwwroot\wss\VirtualDirectories\\<*Port_Number* \>\bin 文件夹。 例如，如果你的 SharePoint 门户的端口号是 13614，您必须 CustomWebPart.dll 文件复制到\<*根驱动器*\>: \Inetpub\wwwroot\wss\VirtualDirectories\13614\bin 文件夹。  
   
     > [!TIP]
     >  若要查找你的 SharePoint 门户的文件夹位置的另一种方法是使用**Internet 信息服务 (IIS) 管理器**窗口 (**启动** > **运行** >  **inetmgr**)。 找到你的 SharePoint 门户中**Internet 信息服务 (IIS) 管理器**窗口 ([*computer_name*] > 网站 > [*门户名称*])，右键单击，并然后单击**属性**的快捷菜单中。 在 SharePoint 门户的属性对话框中，单击**主目录**选项卡，然后选择**本地路径**框。  
   
--   **在 web.config 文件中添加安全控件项**： 因为 CustomWebPart.dll 文件用于不同的计算机上，并由多个用户，必须声明为"安全"。 文件 为此，请打开 web.config 文件位于 SharePoint 门户文件夹在\<*根驱动器*\>: \Inetpub\wwwroot\wss\VirtualDirectories\\< Port_Number\>。 下`<SafeControls>`部分中的 web.config 文件中，添加以下安全控件项：  
+-   **在 web.config 文件中添加安全控件项**:因为 CustomWebPart.dll 文件用于不同的计算机上，并由多个用户，必须声明为"安全"。 文件 为此，请打开 web.config 文件位于 SharePoint 门户文件夹在\<*根驱动器*\>: \Inetpub\wwwroot\wss\VirtualDirectories\\< Port_Number\>。 下`<SafeControls>`部分中的 web.config 文件中，添加以下安全控件项：  
   
     ```  
     <SafeControl Assembly="CustomWebPart" Namespace="CustomWebPart" TypeName="*" Safe="True" />  
@@ -66,8 +66,8 @@ ms.locfileid: "36999758"
   
      保存 web.config 文件中，并将其关闭。  
   
-## <a name="step-3-configure-the-sharepoint-portal-to-use-the-custom-web-part"></a>步骤 3： 配置 SharePoint 门户以使用自定义 Web 部件  
- 需要将自定义 Web 部件添加到 Microsoft Office SharePoint Server Web 部件库，以便 SharePoint 门户网站上使用它。 为此：  
+## <a name="step-3-configure-the-sharepoint-portal-to-use-the-custom-web-part"></a>步骤 3：配置 SharePoint 门户以使用自定义 Web 部件  
+ 需要将自定义 Web 部件添加到 Microsoft Office SharePoint Server Web 部件库，以便 SharePoint 门户网站上使用它。 为此，请执行以下操作：  
   
 1. 启动 SharePoint 3.0 管理中心。 单击**启动**，依次指向**所有程序**，指向**Microsoft Office Server**，然后单击**SharePoint 3.0 管理中心**.  
   

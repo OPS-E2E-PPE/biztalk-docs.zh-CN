@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7078fed7a007eca4dfb3eb5608eb6e688bb74a45
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c0ae5bc30d8f65b87dfdad6b8c86ad7157197ac0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011966"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375807"
 ---
 # <a name="message-schemas-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作的消息架构
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]公开在根级别，以在 Oracle E-business Suite 中执行任何任意 SQL 语句或 PL/SQL 块的 ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 出站操作。  
@@ -34,7 +34,7 @@ ms.locfileid: "37011966"
 > [!NOTE]
 >  实体说明表后进行查看。  
   
-|运算|XML 消息|  
+|操作|XML 消息|  
 |---------------|-----------------|  
 |ExecuteNonQuery 请求|`<?xml version="1.0" encoding="utf-8" ?> <ExecuteNonQuery xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/GenericOperation/ ">   <Query>[PL/SQL block]</Query>   <OutputRefCursorNames>     <string>[stringvalue1]</string>     <string>[stringvalue2]</string>     …   </OutputRefCursorNames> </ExecuteNonQuery>`|  
 |ExecuteNonQuery 响应|`<?xml version="1.0" encoding="utf-8" ?> <ExecuteNonQueryResponse xmlns="http://schemas.microsoft.com/OracleEBS/2008/05/GenericOperation/ ">   <ExecuteNonQueryResult>[value]</ExecuteNonQueryResult>   <OutputRefCursors>     <DataSet>       <Any>[value]</Any>       <Any>[value]</Any>       …     </DataSet>   </OutputRefCursors> </ExecuteNonQueryResponse>`|  
@@ -52,11 +52,11 @@ ms.locfileid: "37011966"
 ## <a name="message-action-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作的消息操作  
  下表显示了使用的 ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作的消息操作。  
   
-|运算|操作|  
+|操作|操作|  
 |---------------|------------|  
 |ExecuteNonQuery 请求|GenericOp/ExecuteNonQuery|  
-|ExecuteNonQuery 响应|GenericOp/ExecuteNonQuery/响应|  
+|ExecuteNonQuery 响应|GenericOp/ExecuteNonQuery/response|  
 |ExecuteReader 请求|GenericOp/ExecuteReader|  
-|ExecuteReader 响应|GenericOp/ExecuteReader/响应|  
+|ExecuteReader 响应|GenericOp/ExecuteReader/response|  
 |ExecuteScalar 请求|GenericOp/ExecuteScalar|  
-|ExecuteScalar 响应|GenericOp/ExecuteScalar/响应|
+|ExecuteScalar 响应|GenericOp/ExecuteScalar/response|

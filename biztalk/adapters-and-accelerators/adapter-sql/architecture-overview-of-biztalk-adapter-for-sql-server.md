@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 37b5a21380b3883967e4478940ee7abbee6760c2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f837105c816124163bacec0dc15e96544d294dce
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995486"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370279"
 ---
 # <a name="architecture-overview-of-biztalk-adapter-for-sql-server"></a>用于 SQL Server 的 BizTalk 适配器的体系结构概述
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]是[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]自定义绑定。 此绑定包含一个自定义传输绑定元素，可实现与 SQL Server 数据库通信。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]由包装[!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)]运行时和公开给应用程序可以通过[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]通道体系结构。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]与通过 ADO.NET 的 SQL Server 数据库进行通信。  

@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 创建库存请求架构 |Microsoft Docs
+title: 第 2 步：创建库存请求架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,31 +12,31 @@ caps.latest.revision: 45
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d4c434fe058380f7c9384e3e6c7308393ec01be0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c0729083983aad67ad751aa3dd25d63c6a4c031f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985758"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392752"
 ---
-# <a name="step-2-create-the-inventory-request-schema"></a>步骤 2：创建库存请求架构
+# <a name="step-2-create-the-inventory-request-schema"></a>第 2 步：创建库存请求架构
 ![步骤 2，共 5](../core/media/step-2of5.gif "Step_2of5")  
 
- **完成时间：** 7 分钟  
+ **若要完成的时间：** 7 分钟  
 
- **目标：** 在此步骤中，定义库存补货消息的架构。  仓库系统发送此消息以请求库存补货。  此架构是必须为该项目创建的两个架构之一。  
+ **目标：** 在此步骤中，定义库存补货消息的架构。  仓库系统发送此消息以请求库存补货。  这是一个必须为此项目创建的两个架构。  
 
- **目的：** XML 不仅结构和标识信息与标准化的标记代码，但也有使用架构的功能。 架构是一类工作方式与字典类似的 XML 文档，可供其他 XML 文档用作参考。 架构代码定义 XML 元素的拼写以及用这些元素括起来的数据类型。 通过使用架构，程序可轻松处理 XML 文档，并确保信息的结构和类型正确。  
+ **目的：** XML 不仅结构和标识信息与标准化的标记代码，但也有使用架构的功能。 架构是由其他 XML 文档的 XML 文档的工作方式类似于字典和用作参考。 架构代码定义 XML 元素的拼写和由这些元素括起来的数据类型。 使用架构为 XML 文档，并确保结构和类型的信息是正确的处理程序提供一种简便方法。  
 
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  在开始此步骤之前，请注意以下要求：  
 
--   在开始此步骤之前，必须完成[步骤 1： 创建 EAISchemas 项目](../core/step-1-create-eaischemas-project.md)。  
+-   在开始此步骤之前，必须完成[步骤 1:创建 EAISchemas 项目](../core/step-1-create-eaischemas-project.md)。  
 
 ## <a name="procedures"></a>过程  
- 在中[步骤 1： 创建 EAISchemas 项目](../core/step-1-create-eaischemas-project.md)，创建了一个新[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]项目。  如果关闭 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 窗口，可使用以下过程打开该项目。  否则，可跳过“打开 Visual Studio 项目”这一步骤。  
+ 在[步骤 1:创建 EAISchemas 项目](../core/step-1-create-eaischemas-project.md)，创建了一个新[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]项目。  如果您关闭[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]窗口中，您可以使用以下过程以打开该项目。  否则，则可以跳过此过程中，"若要打开 Visual Studio 项目"。  
 
-#### <a name="to-open-the-visual-studio-project"></a>打开 Visual Studio 项目  
+#### <a name="to-open-the-visual-studio-project"></a>若要打开 Visual Studio 项目  
 
 1. 启动**Microsoft Visual Studio**。  
 
@@ -44,9 +44,9 @@ ms.locfileid: "36985758"
 
 3. 在中**打开项目**对话框中，浏览到**C:\BTSTutorials\EAISolution\EAISolution.sln**解决方案文件，然后单击**打开**。  
 
-   在下面的过程中，针对库存补货消息向项目添加新架构文件。  
+   在下面的过程中，向库存补货消息的项目添加新的架构文件。  
 
-#### <a name="to-add-a-new-schema-to-the-project"></a>向项目添加新架构  
+#### <a name="to-add-a-new-schema-to-the-project"></a>若要向项目添加新架构  
 
 1. 在解决方案资源管理器中右键单击**EAISchemas**项目，指向**添加**，然后单击**新项**。  
 
@@ -59,11 +59,11 @@ ms.locfileid: "36985758"
    |        **名称**         |             类型**Request.xsd**。              |
 
 
-3. 单击 **“添加”**。 此时，将显示架构树和 XSD 窗格。 在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中，此区域称为“BizTalk 编辑器”。 此外，新添加的架构将显示在解决方案资源管理器中的 EAISchemas 项目下。  
+3. 单击 **“添加”**。 显示架构树和 XSD 窗格。 此区域[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]称为作为 BizTalk 编辑器。 此外，新添加的架构将显示在解决方案资源管理器中的 EAISchemas 项目下。  
 
     ![BizTalk 项目的不同部分](../core/media/differentpartsofbiztalkserver.gif "DifferentpartsofBizTalkServer")  
 
-#### <a name="to-add-elements-to-the-schema"></a>向架构添加元素  
+#### <a name="to-add-elements-to-the-schema"></a>若要将元素添加到架构  
 
 1. 在架构树中，单击**根**节点。  
 
@@ -95,11 +95,11 @@ ms.locfileid: "36985758"
 
     - `UnitPrice`  
 
-      完成的 Request.xsd 应类似于下图：  
+      已完成的 Request.xsd 应类似于下图。  
 
       ![使用请求架构的解决方案资源管理器](../core/media/solutionexplorerwiththerequestschema.gif "SolutionExplorerwiththeRequestSchema")  
 
-    在向架构添加节点时，BizTalk 编辑器会为这些节点的属性分配一组默认值。  必须按照要求配置它们。  
+    时将节点添加到架构，BizTalk 编辑器提供一组默认值为其属性。  必须将它们根据要求配置。  
 
 #### <a name="to-configure-the-elements"></a>若要配置的元素  
 
@@ -109,18 +109,18 @@ ms.locfileid: "36985758"
 
 3. 重复步骤 1 和 2 来配置以下属性：  
 
-   |元素|“属性”|ReplTest1|  
+   |元素|属性|ReplTest1|  
    |-------------|--------------|-----------|  
-   |**GrandTotal**|**数据类型**|**Xs: decimal**|  
+   |**GrandTotal**|**数据类型**|**Xs:decimal**|  
    |**项**|**最大出现次数**|**不受限制**|  
    |**项**|**最小出现次数**|**1**|  
    |**数量**|**数据类型**|**xs:unsignedInt**|  
 
-   虽然一个架构可包含多个元素，但应用程序可能只需要使用其中的几个元素来处理数据。 为了节约计算机资源，BizTalk Server 不自动读取每个架构元素。 如果你希望 BizTalk Server 读取来自某个特定元素的数据，则必须使用 BizTalk 编辑器标识该元素以升级其属性。  
+   架构可以具有多个元素，但你的应用程序可能只需进行数据处理使用其中几个。 若要保存的计算机资源，BizTalk Server 不自动读取每个架构元素。 如果你想要从特定元素中读取数据的 BizTalk Server，必须通过使用 BizTalk 编辑器以升级其属性来标识该元素。  
 
-   我们将在中创建的业务流程[第 2 课： 定义业务流程](../core/lesson-2-define-the-business-process.md)会基于 GrandTotal 字段来路由消息。  因此，必须升级 GrandTotal 字段。  
+   我们将在中创建的业务流程[第 2 课：定义业务流程](../core/lesson-2-define-the-business-process.md)会基于 GrandTotal 字段来路由消息。  因此，必须升级 GrandTotal 字段。  
 
-#### <a name="to-promote-an-element"></a>升级元素  
+#### <a name="to-promote-an-element"></a>若要升级元素  
 
 1.  在架构树中，右键单击**GrandTotal**，依次指向**Promote**，然后单击**快速升级**。  
 
@@ -128,16 +128,16 @@ ms.locfileid: "36985758"
 
 3.  在“文件”  菜单上，单击“全部保存” 。  
 
-## <a name="what-did-i-just-do"></a>内容回顾  
- 在此步骤中，定义了仓库库存补货消息架构。  
+## <a name="what-did-i-just-do"></a>我只需做了什么？  
+ 在此步骤中，您将定义仓库库存补货消息架构。  
 
 ## <a name="next-steps"></a>后续步骤  
  定义请求拒绝消息架构。  
 
 ## <a name="see-also"></a>请参阅  
- [步骤 1： 创建 EAISchemas 项目](../core/step-1-create-eaischemas-project.md)   
- [步骤 3： 创建请求拒绝架构](../core/step-3-create-the-request-decline-schema.md)   
- [步骤 4： 创建映射](../core/step-4-create-the-map.md)   
- [步骤 5： 生成 EAISchemas 项目](../core/step-5-build-the-eaischemas-project.md)   
+ [步骤 1：创建 EAISchemas 项目](../core/step-1-create-eaischemas-project.md)   
+ [步骤 3：创建请求拒绝架构](../core/step-3-create-the-request-decline-schema.md)   
+ [步骤 4：创建映射](../core/step-4-create-the-map.md)   
+ [步骤 5：生成 EAISchemas 项目](../core/step-5-build-the-eaischemas-project.md)   
  [使用 BizTalk 编辑器创建架构](../core/creating-schemas-using-biztalk-editor.md)   
  [关于 BizTalk 消息上下文属性](../core/about-biztalk-message-context-properties.md)

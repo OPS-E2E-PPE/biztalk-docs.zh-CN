@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af09f938d93377a6463926fad3725c9f9dace294
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2451661db0e4da8dd801a3e4296b4c4f712ff503
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022179"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392041"
 ---
 # <a name="general-biztalk-server-optimizations"></a>一般 BizTalk Server 优化
 以下建议可用于增加[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]性能。 本主题中列出的优化应用后[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]已安装并配置。  
@@ -92,7 +92,7 @@ ms.locfileid: "37022179"
   
 ```  
 <!-- <processModel autoConfig="true" /> -->  
-    <processModel maxWorkerThreads="200" maxIoThreads="200" />  
+    <processModel maxWorkerThreads="200" maxIoThreads="200" />  
 ```  
   
 > [!NOTE]  
@@ -142,9 +142,9 @@ ms.locfileid: "37022179"
 >  此值将覆盖为指定的值**maxConcurrentThreadsPerCPU**注册表中。 RequestQueueLimit 设置等同于 processModel/requestQueueLimit，不同之处在于 aspnet.config 文件中的设置将覆盖在 machine.config 文件中的设置。  
   
 ## <a name="define-clr-hosting-thread-values-for-biztalk-host-instances"></a>定义的 CLR 承载 BizTalk 主机实例的线程值  
- 因为 Windows 线程是 Windows 进程可用的最基本的可执行单元，因此，有必要为与 BizTalk 主机实例相关联的 .NET 线程池分配足够的线程以防止线程不足。 线程不足时，是不足够的线程用于执行请求的作业的性能有负面影响。 在同一时间，应格外小心以防止分配更多不必要的主机与相关联的.net 线程池线程。 为与主机相关联的 .NET 线程池分配过多的线程会增加上下文切换。 Windows 内核从运行一个线程为不同的线程，这会导致性能开销切换时，会发生上下文切换。 过多的线程分配可能会导致过多的上下文切换，这将产生负面影响整体性能。  
+ 因为 Windows 线程是最基本的可执行单元可用于 Windows 进程，务必分配足够的线程以防止线程不足的 BizTalk 主机实例相关联的.NET 线程池。 线程不足时，是不足够的线程用于执行请求的作业的性能有负面影响。 在同一时间，应格外小心以防止分配更多不必要的主机与相关联的.net 线程池线程。 与主机相关联的.NET 线程池线程过多的分配可能会增加上下文切换。 Windows 内核从运行一个线程为不同的线程，这会导致性能开销切换时，会发生上下文切换。 过多的线程分配可能会导致过多的上下文切换，这将产生负面影响整体性能。  
   
- 通过在 BizTalk Server 的注册表中创建相应的 CLR Hosting 值，可以修改与 BizTalk 主机的实例相关联的 .NET 线程池中可用的 Windows 线程数。  
+ 修改中通过在 BizTalk Server 的注册表中创建相应的 CLR Hosting 值与 BizTalk 主机的实例相关联的.NET 线程池可用的 Windows 线程数。  
   
 > [!WARNING]  
 >  对注册表编辑器的不当使用可能会引起问题，而必须重新安装操作系统。 请慎用注册表编辑器，风险自负。 有关如何备份、 还原和修改注册表的详细信息，请参阅 Microsoft 知识库文章"Microsoft Windows 注册表说明"处[ http://go.microsoft.com/fwlink/?LinkId=62729 ](http://go.microsoft.com/fwlink/?LinkId=62729)。  
@@ -173,15 +173,15 @@ ms.locfileid: "37022179"
    |DWORD 项|默认值|推荐值|  
    |-----------------|-------------------|-----------------------|  
    |MaxIOThreads|20|100|  
-   |MaxWorkerThreads|25|100**重要说明：** 该值增加到 100 可以拥有对承载 BizTalk Server MessageBox 数据库的 SQL Server 计算机的性能产生负面影响。 当发生此问题时，SQL Server 可能会遇到死锁情况。 建议此参数不超过 100 的值。|  
-   |MinIOThreads|@shouldalert|25|  
-   |MinWorkerThreads|@shouldalert|25|  
+   |MaxWorkerThreads|25|100**重要：** 该值增加到 100 可以对承载 BizTalk Server MessageBox 数据库的 SQL Server 计算机的性能产生负面影响。 发生此问题时，SQL Server 可能会遇到死锁情况。 建议此参数不超过 100 的值。|  
+   |MinIOThreads|1|25|  
+   |MinWorkerThreads|1|25|  
   
    > [!NOTE]  
    >  这些建议值足够在大多数情况下，但可能需要根据每个主机实例中运行适配器处理程序或业务流程的数量增加。  
   
    > [!NOTE]  
-   >  这些值隐式乘以服务器上的处理器数。 例如，MaxWorkerThreads 项设置为值 100 将在具有 4 个 CPU 的服务器上有效设置值 400。  
+   >  这些值隐式乘以服务器上的处理器数。 例如，MaxWorkerThreads 项设置为 100 的值将有效地设置值 400 4 个 CPU 的服务器上。  
   
 5. 关闭“注册表编辑器”。  
   

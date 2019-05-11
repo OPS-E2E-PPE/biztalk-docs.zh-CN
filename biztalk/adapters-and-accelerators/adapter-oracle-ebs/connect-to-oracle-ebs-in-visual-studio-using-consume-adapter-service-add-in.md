@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 59f7da0c9f293d770efb1b13aebcd01762941793
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 66e0962ba33606129b3ac6a6747a75fa5ca2bf4c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981414"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375608"
 ---
 # <a name="connect-to-oracle-e-business-suite-in-visual-studio-using-consume-adapter-service-add-in"></a>连接到 Visual Studio 中使用适配器服务外接程序使用 Oracle E-business Suite
 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]安装时安装[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]加载在计算机上安装的所有 WCF 自定义绑定。 若要连接到使用基于 WCF 的 Oracle E-business Suite[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]在 BizTalk 项目中，必须使用**oracleEBSBinding**。  
@@ -44,7 +44,7 @@ ms.locfileid: "36981414"
       | **模板**  | 单击**使用适配器服务**。 |
 
 
-   4. 单击 **“添加”**。 此时[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]会打开。  
+   4. 单击 **“添加”**。 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]随即打开。  
 
 2. 从**选择绑定**下拉列表中，选择**oracleEBSBinding**然后单击**配置**。  
 

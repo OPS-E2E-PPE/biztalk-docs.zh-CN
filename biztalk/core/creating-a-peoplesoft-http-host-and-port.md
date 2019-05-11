@@ -15,12 +15,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d991642b45a636c50ea12148d07efd8b93917754
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 18675298b03e380ed53629a74fff31dfb4680068
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997158"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390104"
 ---
 # <a name="creating-a-peoplesoft-http-host-and-port"></a>创建 PeopleSoft HTTP 主机和端口
 PeopleSoft 中的消息发布体系结构称为 Integration Broker。 Integration Broker 的主要组件如下所示：  
@@ -29,11 +29,11 @@ PeopleSoft 中的消息发布体系结构称为 Integration Broker。 Integratio
   
 - 发布节点  
   
-- 订户节点  
+- 订阅服务器节点  
   
-  这三个组件协同工作将消息发布到 HTTP 侦听器的 URL。 您必须设置发布节点。 PeopleSoft 有一个默认发布节点，也称为本地消息节点。 您必须激活该节点和发布节点事务。 您必须将订阅节点的类型设置为外部节点，然后激活该节点和事务。 对于该节点，也可以将类型设置为 HTTP 并设置连接信息。  
+  所有这三个协同工作将消息发布到的 URL 为 HTTP 侦听器。 必须设置发布节点。 PeopleSoft 有一个默认发布节点，也称为本地消息节点。 必须激活该节点和发布节点事务。 必须为外部节点，将订阅节点的类型，然后激活该节点和事务。 对于该节点，还设置为 HTTP 并设置连接信息的类型。  
   
-  可使用 PeopleSoft Integration Broker 创建 PeopleSoft 用来发送事件的 PeopleSoft HTTP 主机和端口。 请确保消息处于活动状态且路由，通过使用中的过程[如何验证消息的活动状态](../core/how-to-verify-activity-status-of-a-message.md)。  
+  使用 PeopleSoft Integration Broker 创建 PeopleSoft HTTP 主机和端口发送事件。 请确保消息处于活动状态且路由，通过使用中的过程[如何验证消息的活动状态](../core/how-to-verify-activity-status-of-a-message.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
   

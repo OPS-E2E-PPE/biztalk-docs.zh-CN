@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10777 |Microsoft Docs
+title: 单一登录：Event 10777 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 08c3f3d1022e58f922ed8e300396fbfe2b8acf8d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4fd1c534ba326728014e02d6fbec603169b94511
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968590"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394223"
 ---
-# <a name="single-sign-on-event-10777"></a>单一登录： 事件 10777
+# <a name="single-sign-on-event-10777"></a>单一登录：事件 10777
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                           |
@@ -28,9 +28,9 @@ ms.locfileid: "36968590"
 | 产品版本 |                [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                 |
 |    事件 ID     |                                           10777                                           |
 |  事件源   |                                          ENTSSO                                           |
-|    组件    |                                            N/A                                            |
+|    组件    |                                            不可用                                            |
 |  符号名称  |                               ENTSSO_E_NO_BUILTIN_ACCOUNTS                                |
-|  消息正文   | 出于安全原因，不允许使用以下帐户： 内置帐户;每个人都; |
+|  消息正文   | 出于安全原因不允许使用以下帐户：内置帐户;每个人都; |
   
 ## <a name="explanation"></a>解释  
  不允许使用这些帐户。  

@@ -1,5 +1,5 @@
 ---
-title: 性能计数器 |Microsoft 文档
+title: 性能计数器 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,25 +16,25 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1894757edfc2e51e6117ceef2fd22c72b2877561
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b21c7573a3590b9d08557896e5bbc8869a04e22c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263933"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394374"
 ---
 # <a name="performance-counters"></a>性能计数器
-Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]包括可用于检测瓶颈的性能计数器。 本部分将介绍这些性能计数器。  
+Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]包括可用于检测瓶颈的性能计数器。 在本部分中介绍的这些性能计数器。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [消息框性能计数器](../core/message-box-performance-counters.md)  
+-   [MessageBox 性能计数器](../core/message-box-performance-counters.md)  
   
 -   [业务流程引擎性能计数器](../core/orchestration-engine-performance-counters.md)  
   
 -   [主机限制性能计数器](../core/host-throttling-performance-counters.md)  
   
--   [消息传递性能计数器](../core/messaging-performance-counters.md)  
+-   [消息传送性能计数器](../core/messaging-performance-counters.md)  
   
 -   [跟踪数据解码服务性能计数器](../core/tracking-data-decode-services-performance-counters.md)  
   

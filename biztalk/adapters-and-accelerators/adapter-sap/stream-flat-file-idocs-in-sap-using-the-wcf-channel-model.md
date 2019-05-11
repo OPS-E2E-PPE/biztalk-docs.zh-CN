@@ -1,5 +1,5 @@
 ---
-title: 流中使用 WCF 通道模型的 SAP 的平面文件 Idoc |Microsoft 文档
+title: Stream 中使用 WCF 通道模型的 SAP 的平面文件 Idoc |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,31 +14,31 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8de850022a03a3be0310da3022a2cf496c94f30
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: bf0b2c0cd8fe401e8d410c8827d2d3ed7547edab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25966035"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372777"
 ---
-# <a name="stream-flat-file-idocs-in-sap-using-the-wcf-channel-model"></a>SAP 使用 WCF 通道模型中的流平面文件 Idoc
-[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]支持节点值对于 SendIdoc 和 ReceiveIdoc 操作流式处理。 这些操作用于发送和接收平面文件 （字符串） Idoc 与其他适配器。 在这两种操作，整个 IDOC 的数据包含在单个节点下的字符串 (\<idocData\>)。 对于大型 Idoc，流式处理的 IDOC 数据适配器和代码之间可能会节省大量的内存资源。  
+# <a name="stream-flat-file-idocs-in-sap-using-the-wcf-channel-model"></a>在 SAP 中使用 WCF 通道模型 Stream 平面文件 Idoc
+[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]支持节点值对于 SendIdoc 和 ReceiveIdoc 操作流式处理。 这些操作用于发送和接收平面文件 （字符串） Idoc 与该适配器。 在这两种操作，整个 IDOC 的数据包含在下一个节点字符串 (\<idocData\>)。 对于大型 Idoc，流式传输适配器与你的代码之间的 IDOC 数据可能会节省大量内存资源。  
   
- 有关如何适配器支持流式处理的背景信息，请参阅[流式处理和 SAP 适配器](../../adapters-and-accelerators/adapter-sap/streaming-and-the-sap-adapter.md)。 您应该阅读然后再继续本主题。  
+ 有关如何在适配器支持的流式处理的背景信息，请参阅[流式处理和 SAP 适配器](../../adapters-and-accelerators/adapter-sap/streaming-and-the-sap-adapter.md)。 您应阅读本主题继续操作之前。  
   
- 本主题中的各节描述了如何实现节点值时使用 WCF 通道模型对于 SendIdoc 和 ReceiveIdoc 操作流式处理。  
+ 本主题中的部分介绍如何实现节点值时使用的 WCF 通道模型对于 SendIdoc 和 ReceiveIdoc 操作流式处理。  
   
 ## <a name="streaming-outbound-flat-file-idocs-to-the-adapter"></a>流式处理到适配器的出站平面文件 Idoc  
- 适配器支持节点值 SendIdoc 操作的请求消息流式处理。  
+ 该适配器支持节点值 SendIdoc 操作的请求消息流处理。  
   
- 若要支持节点值流式处理 SendIdoc 操作以 WCF 通道模型，你必须：  
+ 若要支持节点值中的 WCF 通道模型 SendIdoc 操作的流式处理，必须：  
   
-1.  实现**System.ServiceModel.Channels.BodyWriter** ，它能够流式处理 （执行节点值的 IDOC 数据流式处理） 的 IDOC 数据。  
+1.  实现**System.ServiceModel.Channels.BodyWriter** ，它能够流式传输 （执行节点值流处理的 IDOC 数据） IDOC 的数据。  
   
-2.  创建**System.ServiceModel.Message**用于通过提供与此消息正文中调用该操作**BodyWriter**使用适当的重载**Message.Create**方法。  
+2.  创建**System.ServiceModel.Message**用于通过提供与此消息正文中调用该操作**BodyWriter**使用的适当重载**Message.Create**方法。  
   
 ### <a name="implementing-a-bodywriter"></a>实现 BodyWriter  
- 下面的示例演示如何实现**BodyWriter**执行节点值流式处理。  
+ 下面的示例演示的实现**BodyWriter**执行节点值流式处理。  
   
 ```  
 /// <summary>  
@@ -122,17 +122,17 @@ Message InputMsg = Message.CreateMessage(MessageVersion.Default,
   
 ```  
   
-## <a name="streaming-inbound-flat-file-idocs-from-the-adapter"></a>从适配器的流式处理入站的平面文件 Idoc  
- 入站 ReceiveIdoc 操作中接收平面文件 Idoc。 适配器支持节点值 ReceiveIdoc 操作的请求消息流式处理。  
+## <a name="streaming-inbound-flat-file-idocs-from-the-adapter"></a>流式处理来自适配器的入站的平面文件 Idoc  
+ 在入站 ReceiveIdoc 操作中接收平面文件 Idoc。 该适配器支持节点值 ReceiveIdoc 操作的请求消息流处理。  
   
- 若要支持节点值流式处理 ReceiveIdoc 操作以 WCF 通道模型，你必须：  
+ 若要支持节点值中的 WCF 通道模型 ReceiveIdoc 操作的流式处理，必须：  
   
-1.  实现**System.Xml.XmlDictionaryWriter** ，它能够流式处理 （执行节点值的 IDOC 数据流式处理） 的 IDOC 数据。  
+1.  实现**System.Xml.XmlDictionaryWriter** ，它能够流式传输 （执行节点值流处理的 IDOC 数据） IDOC 的数据。  
   
-2.  使用**消息**通过调用其**WriteBodyContents**方法与此**XmlDictionaryWriter**。  
+2.  占用**消息**通过调用其**WriteBodyContents**方法与此**XmlDictionaryWriter**。  
   
 ### <a name="implementing-an-xmldictionarywriter"></a>实现 XmlDictionaryWriter  
- 下面的示例演示如何实现**XmlDictionaryWriter**执行节点值流式处理。  
+ 下面的示例演示的实现**XmlDictionaryWriter**执行节点值流式处理。  
   
 ```  
 using System;  
@@ -277,7 +277,7 @@ class FileXmlWriter : XmlDictionaryWriter
 ```  
   
 ### <a name="consuming-a-message-by-using-an-xmldictionarywriter"></a>通过使用 XmlDictionaryWriter 来使用一条消息  
- 下面的示例演示如何使用 ReceiveIdoc 请求消息使用**FileXmlWriter**实现在前面的示例。 ( **FileWriter**类由子类分类**XmlDictionaryWriter**。)该示例使用**IReplyChannel**通道接收 ReceiveIdoc 操作。 省略了创建频道的详细信息。 ReceiveIdoc 请求消息写入到文件。  
+ 下面的示例演示如何使用 ReceiveIdoc 请求消息使用**FileXmlWriter**在前面的示例中实现。 ( **FileWriter**类创建子类**XmlDictionaryWriter**。)该示例使用**IReplyChannel**频道接收 ReceiveIdoc 操作。 省略了创建通道的详细信息。 ReceiveIdoc 请求消息写入到文件。  
   
 ```  
 // Receive the ReceiveIdoc request message from the adapter.  
@@ -292,5 +292,5 @@ fileXmlWriter.Close();
   
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [使用 WCF 通道模型开发应用程序](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)

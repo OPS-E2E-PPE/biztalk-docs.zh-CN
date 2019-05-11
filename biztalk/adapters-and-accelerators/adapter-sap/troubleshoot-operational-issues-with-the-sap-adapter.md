@@ -13,12 +13,12 @@ caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1c137b60c9c9a8c354baf39b91349e0836c94b91
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5c9888127e93b381f9148d995adb90e5706b07a6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998270"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372422"
 ---
 # <a name="troubleshoot-operational-issues-with-the-sap-adapter"></a>使用 SAP 适配器进行的操作问题故障排除
 本部分讨论如何使用故障排除技术来解决操作使用时可能遇到的错误[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]。  
@@ -214,7 +214,7 @@ ERROR       max no of 100 conversations exceeded
   
  若要增加最大连接数，必须已安装并将其设置为数字值的 SAP 客户端库的计算机上创建一个环境变量。 为此环境变量指定的值是最大可为 SAP 系统的连接数。 使用以下详细信息创建环境变量：  
   
-- **变量名称**: CPIC_MAX_CONV  
+- **变量名称**:CPIC_MAX_CONV  
   
 - **变量值**： 任何正的数字值。 例如，如果要启用 200 个连接到 SAP 系统，可以指定值设为 200。  
   
@@ -385,7 +385,7 @@ Microsoft.ServiceModel.Channels.Common.UnsupportedOperationException: Incorrect 
   
  **解决方法**  
   
- 你可以请求所需的表[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]作为响应一部分返回。 就可以做到的请求消息发送到 SAP 系统的一部分提供一个空表参数。 例如， `<table_parameter_name />`。  
+ 你可以请求所需的表[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]作为响应一部分返回。 就可以做到的请求消息发送到 SAP 系统的一部分提供一个空表参数。 例如，`<table_parameter_name />`。  
   
 ##  <a name="BKMK_SAPIncorrectCreds"></a> 适配器客户端不从 SAP 接收响应
  **问题**  
@@ -404,7 +404,7 @@ Microsoft.ServiceModel.Channels.Common.UnsupportedOperationException: Incorrect 
 ```  
 The Messaging Engine failed to add a receive location "<location_name>" with URL "<connection URI>" to the adapter "WCF-Custom".  
 Reason: "Microsoft.Adapters.SAP.RFCException: Details: ErrorCode=RFC_OK. ErrorGroup=RFC_ERROR_COMMUNICATION. SapErrorMessage=Connect to SAP gateway failed  
-Connect_PM  TPNAME=<name>, GWHOST=<host>, GWSERV=<server>  
+Connect_PM  TPNAME=<name>, GWHOST=<host>, GWSERV=<server>  
 ```  
   
  但是，你将能够成功地将消息发送到 SAP 系统使用 Wcf-custom 发送端口。  
@@ -444,7 +444,7 @@ The element 'bindings' has invalid child element 'sapBinding'. List of possible 
   
  **解决方法**  
   
- 可以安全地忽略此警告。  
+ 可以放心地忽略此警告。  
   
 ##  <a name="BKMK_SAPSimilarSchema"></a> 在 BizTalk Server 中的 XLANG 异常
  **问题**  

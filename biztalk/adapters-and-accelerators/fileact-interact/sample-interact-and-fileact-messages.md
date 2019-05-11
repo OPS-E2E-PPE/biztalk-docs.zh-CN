@@ -1,5 +1,5 @@
 ---
-title: 示例交互和 FileAct 消息 |Microsoft 文档
+title: 示例进行交互和 FileAct 消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 30c2541e2ec3a6fe77de374843a47befacf3a791
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 776659a7bcd6c882a514098758385123e4cfc0ea
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22222413"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65366519"
 ---
-# <a name="sample-interact-and-fileact-messages"></a>示例交互和 FileAct 消息
-下面提供的交互和 FileAct 实时消息的示例。  
+# <a name="sample-interact-and-fileact-messages"></a>示例进行交互和 FileAct 消息
+下面给出了 InterAct 和 FileAct 实时消息的示例。  
   
- **示例交互实时消息**  
+ **示例 InterAct 实时消息**  
   
 ```  
 <SwInt-ExchangeRequest>  
@@ -34,7 +34,7 @@ TestPayloadRequestSnF
 </SwInt-ExchangeRequest>  
 ```  
   
- **示例 FileAct 实时消息 （put 请求）**  
+ **示例 FileAct 实时消息 （put 的请求）**  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  

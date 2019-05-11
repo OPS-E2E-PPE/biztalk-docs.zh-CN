@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 为 Siebel 业务组件操作创建应用程序定义文件 |Microsoft Docs
+title: 第 2 步：为 Siebel 业务组件操作创建应用程序定义文件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,29 +12,29 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c017d5e71cdd2a4281849647727364520ad77784
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e845d4a11563d06686749a451998e7b48bbec7ef
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967614"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370600"
 ---
-# <a name="step-2-create-an-application-definition-file-for-siebel-business-component-operations"></a>步骤 2： 为 Siebel 业务组件操作创建应用程序定义文件
+# <a name="step-2-create-an-application-definition-file-for-siebel-business-component-operations"></a>第 2 步：为 Siebel 业务组件操作创建应用程序定义文件
 ![步骤 2，共 4 步](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
   
- **完成时间：** 15 分钟  
+ **若要完成的时间：** 15 分钟  
   
- **目标：** 公开业务数据目录，并将业务 (LOB) 应用程序中的数据合并到门户。 若要将此数据合并到您的门户网站，必须生成可以使用 Microsoft Office SharePoint Server 应用程序定义文件。  
+ **目标：** 业务数据目录公开，并将业务 (LOB) 应用程序中的数据合并到门户。 若要将此数据合并到您的门户网站，必须生成可以使用 Microsoft Office SharePoint Server 应用程序定义文件。  
   
  Business Data Catalog Definition Editor 工具，可为业务数据目录中创建应用程序定义文件。 此工具会自动生成的 XML 定义文件。 因此，无需手动创建该文件在 XML 编辑器。  
   
  要创建的 Microsoft Office SharePoint Server 应用程序的用途是执行要检索的记录列表帐户业务组件上的查询操作。 若要实现此目的，必须完成一组任务中 Business Data Catalog Definition Editor。 本主题提供有关如何执行这些任务的说明。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
   
 -   您必须具有 Microsoft Office SharePoint Server 2007 SDK 的一部分安装 Business Data Catalog Definition Editor。 你可以下载从 SDK [ http://go.microsoft.com/fwlink/?LinkId=104130 ](http://go.microsoft.com/fwlink/?LinkId=104130)。  
   
--   您应已发布 WCF 服务，如中所述[步骤 1： 将 Siebel 业务组件操作作为 WCF 服务发布](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md)。  
+-   您应已发布 WCF 服务，如中所述[步骤 1:将 Siebel 业务组件操作作为 WCF 服务发布](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md)。  
   
 ## <a name="creating-an-application-definition-file"></a>创建应用程序定义文件  
  本部分提供分步说明来创建 WCF 服务应用程序定义文件。  
@@ -58,7 +58,7 @@ ms.locfileid: "36967614"
   
      其中，BusinessObjects_Account_Account_Operation.svc 是创建 Siebel 协定的服务文件。  
   
-     当你测试是否成功，如中所述发布 WCF 服务时，必须键入的 URL 才可用[步骤 1： 将 Siebel 业务组件操作作为 WCF 服务发布](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md)。  
+     测试是否成功，如中所述发布 WCF 服务时，必须键入的 URL 是可用[步骤 1:将 Siebel 业务组件操作作为 WCF 服务发布](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md)。  
   
 5.  单击 **“连接”**。  
   
@@ -84,7 +84,7 @@ ms.locfileid: "36967614"
          ![重命名实体](../../adapters-and-accelerators/adapter-siebel/media/44eda1de-b348-4421-9c51-0355b51f4a90.gif "44eda1de-b348-4421-9c51-0355b51f4a90")  
   
 ### <a name="specify-user-name-and-password-headers-for-methods"></a>为方法中指定用户名和密码标头  
- 创建 WCF 服务时所选的业务组件操作的 Siebel 系统中，指定用户名称和密码标头为终结点行为配置的一部分 ([步骤 1： 发布 Siebel 业务组件操作为 WCF 服务](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md))。 必须指定方法属性相同的值。  
+ 创建 WCF 服务时所选的业务组件操作的 Siebel 系统中，指定用户名称和密码标头为终结点行为配置的一部分 ([步骤 1:将 Siebel 业务组件操作作为 WCF 服务发布](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md))。 必须指定方法属性相同的值。  
   
 ##### <a name="to-specify-user-name-and-password-headers-for-the-query-method"></a>若要指定用户名称和密码标头为该查询方法  
   
@@ -117,7 +117,7 @@ ms.locfileid: "36967614"
   
 4.  单击“确定” 。  
   
-### <a name="requirement-perform-a-query-operation-on-the-account-business-component"></a>要求： 执行帐户业务组件上的查询操作  
+### <a name="requirement-perform-a-query-operation-on-the-account-business-component"></a>要求：执行帐户业务组件上的查询操作  
  此示例中的第一个要求是创建可用于执行查询操作帐户业务组件上的应用程序定义。 若要实现此要求，必须执行以下一组任务：  
   
 -   在查询方法中，创建一个筛选器，并将其映射到其执行查询操作的参数。 对于帐户业务组件，您将执行查询时使用**SearchExpr**参数。 因此，您将映射到筛选器**SearchExpr**参数。  
@@ -211,7 +211,7 @@ ms.locfileid: "36967614"
  如本主题前面所述，Business Data Catalog Definition Editor 工具不处理枚举的数据类型。 Business Data Catalog Definition Editor 工具导入字段，直到它遇到的枚举的数据类型，并忽略剩余的字段。 因此，你想在应用程序中的某些字段可能被取消。 您可以手动编辑应用程序定义文件以包括这些字段。  
   
 > [!NOTE]
->  您必须确保要添加的参数是由 WCF 适配器服务开发向导中生成的.cs 文件中存在[步骤 1： 将 Siebel 业务组件操作作为 WCF 服务发布](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md)。  
+>  您必须确保要添加的参数是由 WCF 适配器服务开发向导中生成的.cs 文件中存在[步骤 1:将 Siebel 业务组件操作作为 WCF 服务发布](../../adapters-and-accelerators/adapter-siebel/step-1-publish-the-siebel-business-component-operations-as-a-wcf-service.md)。  
   
  在此应用程序定义文件中，您将添加或删除的返回参数**QueryAccount**方法。  
   
@@ -243,7 +243,7 @@ ms.locfileid: "36967614"
    >  可以导入回中 Business Data Catalog Definition Editor 工具，可查看新添加的字段的更新的应用程序定义文件。 但是，在导入之前你将需要从 Business Data Catalog Definition Editor 工具中删除现有"Siebel_Account"应用程序。  
   
 ## <a name="next-steps"></a>后续步骤  
- 现在必须创建 SharePoint 应用程序以从 Siebel 系统中检索数据。 请参阅[第 3 步： 创建 SharePoint 应用程序检索的数据从 Siebel](../../adapters-and-accelerators/adapter-siebel/step-3-create-a-sharepoint-application-to-retrieve-data-from-siebel.md)有关的说明。  
+ 现在必须创建 SharePoint 应用程序以从 Siebel 系统中检索数据。 请参阅[步骤 3:创建 SharePoint 应用程序检索的数据从 Siebel](../../adapters-and-accelerators/adapter-siebel/step-3-create-a-sharepoint-application-to-retrieve-data-from-siebel.md)有关的说明。  
   
 ## <a name="see-also"></a>请参阅  
- [教程 1：在 SharePoint 站点上从 Siebel 系统提供数据](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)
+ [教程 1:在 SharePoint 站点上提供来自 Siebel 系统的数据](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)

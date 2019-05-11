@@ -1,5 +1,5 @@
 ---
-title: 步骤 1： 修改 vPrev BizTalk 项目使用 Siebel 适配器 |Microsoft Docs
+title: 第 1 步：修改 vPrev BizTalk 项目使用 Siebel 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e03b915abcaef48cf8c31001f6c096e5040a247b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 68a3bc43e3f8f946652b75768c1846a388a28c13
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004182"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370899"
 ---
-# <a name="step-1-modify-the-vprev-biztalk-project-with-the-siebel-adapter"></a>步骤 1： 修改 vPrev BizTalk 项目使用 Siebel 适配器
+# <a name="step-1-modify-the-vprev-biztalk-project-with-the-siebel-adapter"></a>第 1 步：修改 vPrev BizTalk 项目使用 Siebel 适配器
 ![3 的第 1 步](../../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")  
   
- **完成时间：** 10 分钟  
+ **若要完成的时间：** 10 分钟。  
   
- **目标：** 到现有 vPrev BizTalk 项目，在此步骤中，进行以下更改：  
+ **目标：** 在此步骤中，向现有 vPrev BizTalk 项目进行以下更改：  
   
 - 为使用基于 WCF 的帐户业务组件上的插入操作生成元数据[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。  
   
@@ -64,9 +64,9 @@ ms.locfileid: "37004182"
   
    7. 在中**目标架构的根节点**对话框中，选择*插入*，然后单击**确定**。  
   
-   8. 映射这两个架构中的下列元素： **Currency_Code**， **Current_Volume**， **Customer_Account_Group**，**位置**，**Main_Phone_Number**，**名称**， **Party_Name**， **Primary_Address_Id**，  
+   8. 映射这两个架构中的下列元素：**Currency_Code**， **Current_Volume**， **Customer_Account_Group**，**位置**， **Main_Phone_Number**， **名称**， **Party_Name**， **Primary_Address_Id**，  
   
-   9. 保存映射。  
+   9. 保存该映射。  
   
 4. 响应消息中，将映射生成使用 vPrev Siebel 适配器添加到使用基于 WCF 的生成的架构的架构[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。  
   
@@ -90,14 +90,14 @@ ms.locfileid: "37004182"
   
        ![映射响应消息在适配器各版本之间](../../adapters-and-accelerators/adapter-siebel/media/6352035b-79c0-4850-a8f7-e4f6581c8532.gif "6352035b-79c0-4850-a8f7-e4f6581c8532")  
   
-   9. 保存映射。  
+   9. 保存该映射。  
   
 5. 保存并生成 BizTalk 解决方案。 右键单击解决方案，然后依次**生成解决方案**。  
   
-6. 部署该解决方案。 右键单击解决方案，然后依次**部署解决方案**。  
+6. 部署解决方案。 右键单击解决方案，然后依次**部署解决方案**。  
   
 ## <a name="next-steps"></a>后续步骤  
- 创建一个 WCF 自定义发送端口并将其配置为使用在此步骤中创建的地图中所述[步骤 2： 配置业务流程在 BizTalk Server 管理控制台中使用 Oracle 数据库适配器](../../adapters-and-accelerators/adapter-oracle-database/step-2-configure-an-orchestration-to-use-the-oracle-db-adapter-in-biztalk.md)。  
+ 创建一个 WCF 自定义发送端口并将其配置为使用在此步骤中创建的地图中所述[步骤 2:若要使用 Oracle 数据库适配器的 BizTalk Server 管理控制台中配置业务流程](../../adapters-and-accelerators/adapter-oracle-database/step-2-configure-an-orchestration-to-use-the-oracle-db-adapter-in-biztalk.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [教程 2： 迁移中 Siebel 的 BizTalk 项目](../../adapters-and-accelerators/adapter-siebel/tutorial-2-migrating-biztalk-projects-in-siebel.md)
+ [教程 2：在 Siebel 的 BizTalk 项目迁移](../../adapters-and-accelerators/adapter-siebel/tutorial-2-migrating-biztalk-projects-in-siebel.md)

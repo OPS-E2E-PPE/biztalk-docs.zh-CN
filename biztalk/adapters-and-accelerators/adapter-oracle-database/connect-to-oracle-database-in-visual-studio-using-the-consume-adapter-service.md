@@ -15,12 +15,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19e83b518e188528b357e52f6397045baeb3ed76
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6e459878a54fd91784443f0712f70567edcbf92d
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010472"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529481"
 ---
 # <a name="connect-to-oracle-database-in-visual-studio-using-the-consume-adapter-service"></a>连接到 Visual Studio 中使用使用适配器服务中的 Oracle 数据库
 使用适配器服务外接程序被安装在安装 WCF LOB 适配器 SDK 时。 使用适配器服务外接程序加载的计算机上安装的所有 WCF 自定义绑定。 若要连接到使用基于 WCF 的 Oracle 数据库[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]在 BizTalk 项目中，必须使用**oracleDBBinding**。  
@@ -43,7 +43,7 @@ ms.locfileid: "37010472"
       | **模板**  | 单击**使用适配器服务**。 |
 
 
-   3. 单击 **“添加”**。 此时[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]会打开。  
+   3. 单击 **“添加”**。 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]随即打开。  
 
 2. 从**选择绑定**下拉列表中，选择**oracleDBBinding**然后单击**配置**。  
 
@@ -51,7 +51,7 @@ ms.locfileid: "37010472"
 
    1. 若要使用 Oracle 数据库凭据进行连接，请键入中的数据库凭据**用户名**并**密码**文本框。 请确保指定的用户名和密码以连接到 Oracle 数据库时遵循以下注意事项：  
 
-      - **用户名称**。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]将保留在打开对 Oracle 数据库的连接时输入的用户名的值的大小写。 对 Oracle 数据库用户名称是区分大小写。 应确保提供 Oracle 用户名称[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]在所需的 Oracle 数据库的情况下。 通常情况下，这意味着在 SCOTT/TIGER 凭据的用户名称应为大写:"SCOTT"。  
+      - **用户名称**。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]将保留在打开对 Oracle 数据库的连接时输入的用户名的值的大小写。 对 Oracle 数据库用户名称是区分大小写。 应确保提供 Oracle 用户名称[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]在所需的 Oracle 数据库的情况下。 通常情况下，这意味着在 SCOTT/TIGER 凭据的用户名称应为大写："SCOTT"。  
 
       - **密码**。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]将保留在打开对 Oracle 数据库的连接时输入的密码值的大小写。 对于发行版 10g 和更早版本，不区分大小写上 Oracle 系统的密码。  
 

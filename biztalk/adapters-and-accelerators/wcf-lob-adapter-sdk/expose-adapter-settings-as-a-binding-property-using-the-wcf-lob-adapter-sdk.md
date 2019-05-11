@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a51833c9f1a27185654bf8f0ddaca0fdd8ac0b57
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bae73accfb6e65624f672ce1674b9e0429b6f3da
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002334"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363632"
 ---
 # <a name="expose-adapter-settings-as-a-binding-property-using-the-wcf-lob-adapter-sdk"></a>将适配器设置为使用 WCF LOB 适配器 SDK 的绑定属性
 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]使用不同的类来配置连接池、 元数据缓存和其他适配器行为中定义的属性。 本主题介绍作为绑定属性，您就可能会出现这些属性，以便适配器使用者可以通过配置文件设置它们。  
@@ -50,4 +50,4 @@ ms.locfileid: "37002334"
 8. 在 Visual Studio 中，在**文件**菜单上，单击**全部保存**。  
   
 ## <a name="see-also"></a>请参阅  
- [教程 1： 开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)[开发活动](../../esb-toolkit/development-activities.md)
+ [教程 1:开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)[开发活动](../../esb-toolkit/development-activities.md)

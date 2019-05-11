@@ -1,5 +1,5 @@
 ---
-title: 门户注册表页 |Microsoft 文档
+title: 门户注册表页 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,16 +12,16 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1be1beceead307c358213eb72f7c69e4f5c5065c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2a09355e379d71d39da23897e9f314da7cf30c32
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294325"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396714"
 ---
 # <a name="portal-registry-pages"></a>门户注册表页
-将鼠标移**注册表**选项卡上，一个弹出菜单，提供以下门户注册表任务的列表：  
+将鼠标移**注册表**选项卡上，弹出菜单提供以下门户注册表任务的列表：  
   
--   [新的注册表条目页](../esb-toolkit/new-registry-entry-page.md)。 此菜单项将打开页，其中你可以查看现有终结点的列表中指定的 Microsoft BizTalk Server ESB 应用程序。 每个可用的终结点的行中的链接将打开[注册表的详细信息页](../esb-toolkit/registry-details-page.md)其中你可以编辑注册表的详细信息，或创建新的通用、 描述、 发现和集成 (UDDI) 发布的请求当前UDDI 服务器配置。  
+-   [新建注册表项页](../esb-toolkit/new-registry-entry-page.md)。 此菜单项将打开页，其中您可以查看现有终结点的列表中指定的 Microsoft BizTalk Server ESB 应用程序。 每个可用的终结点的行中的链接将打开[注册表详细信息页](../esb-toolkit/registry-details-page.md)，可以编辑注册表详细信息，或创建新的通用描述、 发现和集成 (UDDI) 发布请求的当前配置的 UDDI 服务器。  
   
--   [管理挂起的请求页](../esb-toolkit/manage-pending-requests-page.md)。 此菜单项将打开列出所有挂起的 UDDI 注册表注册请求，并允许你管理这些请求的页面。 你还可以查看以前的请求和其状态的历史记录。
+-   [管理挂起的请求页](../esb-toolkit/manage-pending-requests-page.md)。 此菜单项将打开一个页面，列出了所有挂起的 UDDI 注册表注册请求，并允许你管理这些请求。 此外可以查看以前的请求及其状态的历史记录。

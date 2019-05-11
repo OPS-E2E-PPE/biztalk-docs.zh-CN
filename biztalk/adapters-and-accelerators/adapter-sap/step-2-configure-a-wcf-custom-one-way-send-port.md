@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 配置 WCF 自定义单向发送端口 |Microsoft Docs
+title: 第 2 步：配置 WCF 自定义单向发送端口 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,21 +15,21 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 662007dc6f75e1ca0459e53f576c816d23b71404
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a5daec84fac1987fccc015da9d457e26f86dea61
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005718"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372841"
 ---
-# <a name="step-2-configure-a-wcf-custom-one-way-send-port"></a>步骤 2： 配置 WCF 自定义单向发送端口
+# <a name="step-2-configure-a-wcf-custom-one-way-send-port"></a>第 2 步：配置 WCF 自定义单向发送端口
 ![步骤 2 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")  
   
- **完成时间：** 10 分钟  
+ **若要完成的时间：** 10 分钟。  
   
- **目标：** 在此步骤中，配置用于将平面文件 IDOC 发送到 SAP 系统的 WCF 自定义端口。 后配置端口时，BizTalk 应用程序使用 WCF 自定义发送端口配置。  
+ **目标：** 在此步骤中，你配置用于将平面文件 IDOC 发送到 SAP 系统的 WCF 自定义端口。 后配置端口时，BizTalk 应用程序使用 WCF 自定义发送端口配置。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  你必须构建和部署 vPrev BizTalk 项目以将 Idoc 发送到 SAP 系统。  
   
 ### <a name="to-configure-a-wcf-custom-one-way-send-port"></a>若要配置 WCF 自定义单向发送端口  
@@ -103,7 +103,7 @@ ms.locfileid: "37005718"
       有关配置应用程序的详细信息，请参阅"如何配置应用程序的"网址[ http://go.microsoft.com/fwlink/?LinkId=102360 ](http://go.microsoft.com/fwlink/?LinkId=102360)。  
   
 ## <a name="next-steps"></a>后续步骤  
- 你现在已经完成迁移到 BizTalk 项目，将 Idoc 发送到 SAP 系统使用基于 WCF 的 vPrev BizTalk 项目的[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。 你必须现在测试已迁移的 BizTalk 应用程序通过发送平面文件 IDOC 中所述[第 3 步： 测试迁移应用程序](../../adapters-and-accelerators/adapter-sap/step-3-test-the-migrated-application2.md)。  
+ 你现在已经完成迁移到 BizTalk 项目，将 Idoc 发送到 SAP 系统使用基于 WCF 的 vPrev BizTalk 项目的[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。 你必须现在测试已迁移的 BizTalk 应用程序通过发送平面文件 IDOC 中所述[步骤 3:测试已迁移应用程序](../../adapters-and-accelerators/adapter-sap/step-3-test-the-migrated-application2.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [教程 3：迁移 SAP 发送 IDOC BizTalk 项目](../../adapters-and-accelerators/adapter-sap/tutorial-3-migrating-an-sap-send-idoc-biztalk-project.md)

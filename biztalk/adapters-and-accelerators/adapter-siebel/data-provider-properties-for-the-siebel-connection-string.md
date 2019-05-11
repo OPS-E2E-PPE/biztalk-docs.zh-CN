@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0954cbec3c2dbd044037cc817a8ef97b1250bf8b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f3c01126e4d1738d50ae4cf0342bfcb20e80d5b0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988822"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371707"
 ---
 # <a name="data-provider-properties-for-the-siebel-connection-string"></a>Siebel 连接字符串的数据提供程序属性
 [!INCLUDE[adoprovidersiebellong](../../includes/adoprovidersiebellong-md.md)] ([!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]) 使用[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]访问 Siebel 系统。 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]反过来使用 Siebel COM 数据控件库来访问 Siebel 系统。 Siebel COM 数据控件捆绑了 Siebel Web 客户端。  
@@ -30,13 +30,13 @@ ms.locfileid: "36988822"
  要连接到 Siebel 系统使用的连接字符串[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]包含以下属性。  
 
 
-|        “属性”        |                                                                                                                                                     Description                                                                                                                                                      |
+|        属性        |                                                                                                                                                     Description                                                                                                                                                      |
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |        Password        |            Siebel 系统用户的密码此值是区分大小写。 **注意：** [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]将保留在打开 Siebel 系统上的连接时输入的密码值的大小写。             |
 |        用户名        |                  Siebel 系统用户名此值是区分大小写。 **注意：** [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]将保留在打开 Siebel 系统上的连接时输入的用户名的值的大小写。                  |
 |      压缩       |      要使用之间的压缩算法[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]和 Siebel 系统。 支持的值为**无**或**zlib**。 此参数可选。 如果未指定，Siebel 系统提供的默认值 (**zlib**)。       |
 |       加密       | 要使用之间的加密类型[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]和 Siebel 系统。 支持的值为**无**， **mscrypto**，或**rsa**。 此参数可选。 如果未指定，Siebel 系统提供的默认值 (**none**)。 |
-|        “报表”        |                                                                                                             对象管理器的语言。 示例值是**简体中文**。 此参数是必需的。                                                                                                             |
+|        语言        |                                                                                                             对象管理器的语言。 示例值是**简体中文**。 此参数是必需的。                                                                                                             |
 | SiebelEnterpriseServer |                                                                                                                        Siebel 企业服务器的名称。 此参数是必需的。                                                                                                                         |
 |     SiebelGateway      |                                                                                                                     Siebel 服务器 IP 和端口组成。 例如，Siebel_Server:1234。                                                                                                                      |
 |  SiebelObjectManager   |                                                                                                             企业服务器上的 Siebel 对象管理器的名称。 此参数是必需的。                                                                                                              |

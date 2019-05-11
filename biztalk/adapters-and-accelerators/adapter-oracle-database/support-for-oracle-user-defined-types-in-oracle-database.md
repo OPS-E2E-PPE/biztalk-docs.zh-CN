@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9bf839d214d0877ea51430cd0c4a7784ebfa3cc8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4224b054980b4f4444ee3c24b4cb59259b8e9717
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007054"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375949"
 ---
 # <a name="support-for-oracle-user-defined-types-in-oracle-database"></a>对 Oracle 数据库中的 Oracle 用户定义类型的支持
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]包含 Oracle User-Defined 类型 (Udt) 的支持的 Oracle 数据库中执行对项目的操作。 Udt 可出现在以下项目：  

@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9824e99014431c452f49d4a80e45efe4852c519f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e5076360f7f91da1bf3fe127953c8fa6d58ae1d8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986894"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375852"
 ---
 # <a name="generate-a-wcf-client-or-a-wcf-service-contract-for-oracle-e-business-suite-solution-artifacts"></a>生成 WCF 客户端或 WCF 服务协定为 Oracle E-business Suite 解决方案项目
 可以使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]生成 WCF 客户端类或针对 Oracle E-business Suite 项目上的所选操作的 WCF 服务协定 （接口）。 您还可以使用 ServiceModel Metadata Utility Tool (svcutil.exe) 来生成 WCF 客户端类或 WCF 服务协定;但是，[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]公开 ServiceModel Metadata Utility Tool 通过标准的 Microsoft Windows 界面的功能。 它还提供浏览和搜索功能所不具备使用 svcutil.exe 工具中，并生成基于连接到 Oracle E-business Suite 时选择的绑定属性的配置文件。  
@@ -35,7 +35,7 @@ ms.locfileid: "36986894"
   
    [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]将两个文件添加到你的项目：  
   
-- **OracleEBSBindingClient.cs**。 此文件包含生成的 WCF 客户端类和帮助程序的代码所选的操作。  
+- **OracleEBSBindingClient.cs**. 此文件包含生成的 WCF 客户端类和帮助程序的代码所选的操作。  
   
 - **App.config**。此文件包含的绑定配置和客户端终结点配置。 这些配置根据配置的绑定和连接时所做的选择[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。  
   
@@ -63,7 +63,7 @@ ms.locfileid: "36986894"
   
 - **OracleEBSBindingInterface.cs**。 此文件包含生成的 WCF 服务协定 （接口） 和入站操作的帮助器代码。  
   
-- **OracleEBSBindingService.cs**。 此文件包含实现 OracleDBBindingInterface.cs 中定义的接口的类。 可实现业务逻辑处理入站操作返回的记录。  
+- **OracleEBSBindingService.cs**. 此文件包含实现 OracleDBBindingInterface.cs 中定义的接口的类。 可实现业务逻辑处理入站操作返回的记录。  
   
 - **App.config**。此文件包含的绑定配置、 终结点行为，以及基于配置的绑定和连接时所做的选择的服务终结点配置[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。  
   

@@ -12,43 +12,43 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 393006fdcb02f84b14e63646acec134a72c68cd6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9bc98cc3136483a1481590fade44de2796562b2c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011702"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396768"
 ---
 # <a name="using-tibco-rendezvous-send-ports"></a>使用 TIBCO Rendezvous 发送端口
-传输端口可以发送任何种类的信息。 当 BizTalk Server 通过用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器发送消息时，适配器将基于消息上下文属性值生成消息，或者使用默认消息并将其发送到指定主题。  
+传输端口可以发送任何种类的信息。 BizTalk Server 发送用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器通过一条消息，适配器生成基于消息上下文属性值，该消息或它使用默认值并将其发送到指定主题。  
   
 > [!NOTE]
->  根据 TIBCO Rendezvous 文档，在传输主题名称中不支持通配符。  
+>  根据 TIBCO Rendezvous 文档，通配符字符不支持在传输主题名称。  
   
 ## <a name="message-handling"></a>消息处理  
  适配器会保持某种状态，并相应地处理传入的 BizTalk Server 消息。  
   
--   如果因为传输失败而无法发送消息，则指示 BizTalk Server 稍后重新提交。  
+-   如果因为传输失败而无法发送一条消息，则指示 BizTalk Server 稍后重新提交。  
   
--   如果因为适配器正在初始化而无法发送消息，则会将 BizTalk Server 消息排入队列。 如果初始化失败，则指示 BizTalk Server 稍后重新提交。  
+-   如果无法发送一条消息，因为仍在初始化适配器，BizTalk Server 消息排入队列。 如果初始化失败，则指示 BizTalk Server 稍后重新提交。  
   
 ## <a name="message-generation"></a>消息的生成  
- 使用传输适配器，用于 TIBCO Rendezvous 的 BizTalk 适配器会忽略消息目标命名空间和根元素。 如果适配器发送消息，则会原样发送负载。 如果适配器生成结构化 TIBCO Rendezvous 消息，则会忽略根元素的名称（消息没有名称）。 在每种情况下，适配器都将使用上下文属性来查找发布消息时使用的主题。  
+ 传输适配器，用于 TIBCO Rendezvous 的 BizTalk 适配器将忽略消息目标命名空间和根元素。 如果适配器发送消息，它将发送原样的有效负载。 如果适配器生成结构化的 TIBCO Rendezvous 消息，忽略根元素的名称 （一条消息不具有一个名称）。 在所有情况下，适配器使用的上下文属性以了解使用受发布消息时。  
   
  有关详细信息，请参阅[BizTalk Server 消息上下文属性 （发送处理程序）](../core/biztalk-server-message-context-properties-send-handlers.md)并[TIBCO Rendezvous 中的接收处理程序的数据类型映射](../core/data-type-mapping-for-receive-handlers-in-tibco-rendezvous.md)。  
 
 ## <a name="using-biztalk-to-send-messages"></a>使用 BizTalk 发送消息
-用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器使用异步 API (Transport.Send)。 您可以指定适配器使用消息上下文属性发送的消息类型：  
+用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器使用异步 API (Transport.Send)。 您可以指定适配器使用消息上下文属性发送的消息的类型：  
   
-- **结构化**: 适配器生成 TIBRVMSG_MSG 结构化的消息，根据从 BizTalk Server 收到的 XML 数据。 (*)  
+- **结构化**:适配器生成 TIBRVMSG_MSG 结构化的消息，根据从 BizTalk Server 收到的 XML 数据。 (*)  
   
-  如果 BizTalk Server 发送字段名称长于 127 个字符的消息，则用于 TIBCO Rendezvous 的 BizTalk 适配器会将名称截断到 TIBCO Rendezvous 的最大字段名称大小（即 127）。  
+  如果 BizTalk Server 发送字段名称长度超过 127 个字符的消息，用于 TIBCO Rendezvous 的 BizTalk 适配器会将名称截断到最大字段名称大小适用于 TIBCO Rendezvous 即 127。  
   
-  如果提供 `reply subject name` 属性，则该属性用于在 TIBCO Rendezvous 消息上设置答复主题。 假设将接收端口设置为侦听回复或将其转发到 BizTalk Server，或者一些其他的 TIBCO Rendezvous 程序负责回复。  
+  如果`reply subject name`提供属性，它用于 TIBCO Rendezvous 消息上设置答复主题。 假定的接收端口设置为侦听回复，并将其转发到 BizTalk Server 中，或某些其他 TIBCO Rendezvous 程序负责回复。  
   
-  三联（服务、后台程序、网络）组成传输配置。 空（默认）传输配置导致通过默认传输对象发送消息。  
+  三元数组 （服务、 守护程序、 网络） 组成传输配置。 一个空 （默认值） 传输配置导致通过默认传输对象发送一条消息。  
   
-  如果未指定代码页，则适配器使用 UTF-8 编码（代码页 65001）。 发送器端不支持经过认证的消息。  
+  如果代码页处于未指定，则适配器将使用 utf-8 编码 （代码页 65001）。 认证发送器端不支持消息。  
   
 ## <a name="see-also"></a>请参阅  
  [创建发送端口](../core/creating-send-ports2.md)   

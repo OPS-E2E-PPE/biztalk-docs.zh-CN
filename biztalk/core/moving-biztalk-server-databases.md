@@ -1,5 +1,5 @@
 ---
-title: 将 BizTalk 服务器数据库移 |Microsoft 文档
+title: 移动 BizTalk Server 数据库 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,19 +18,19 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fb2effe8f274ab2d4f564a431d2c068fd8c55bcb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 372083383dd7d20b448d3f03623b12045bcf4a0b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263165"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394359"
 ---
-# <a name="moving-biztalk-server-databases"></a>将 BizTalk Server 数据库
-对于任何活动的数据中心，有时需要将数据库移到其他硬件。 例如，当数据库大小超过硬件的容量、硬件升级或更换新的硬件设备时，就需要移动数据库。 本部分中的过程介绍如何移动最常移动的 BizTalk Server 数据库。  
+# <a name="moving-biztalk-server-databases"></a>移动 BizTalk Server 数据库
+在任何活动的数据中心，有时需要数据库移动到不同的硬件。 例如，您可能需要移动数据库时数据库超过其硬件升级或替换为较新的设备时。 在本部分中的过程描述如何移动最常移动的 BizTalk Server 数据库。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [如何将 BizTalk Server 数据库移](../core/how-to-move-the-biztalk-server-databases.md)  
+-   [如何移动 BizTalk Server 数据库](../core/how-to-move-the-biztalk-server-databases.md)  
   
 -   [如何移动 BAM 主导入数据库](../core/how-to-move-the-bam-primary-import-database1.md)  
   
@@ -40,4 +40,4 @@ ms.locfileid: "22263165"
   
 -   [如何移动 BAM 分析数据库](../core/how-to-move-the-bam-analysis-database2.md)  
   
--   [如何移动 BAM 通知 Services 数据库](../core/how-to-move-the-bam-notification-services-databases2.md)
+-   [如何移动 BAM Notification Services 数据库](../core/how-to-move-the-bam-notification-services-databases2.md)

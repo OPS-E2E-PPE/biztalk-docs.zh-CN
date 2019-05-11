@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c1eda3c0afb5998485977efddb8a69d47ed4b92a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cb6c7ff189ffe711e34d087f0a00cff72abed082
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015416"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374987"
 ---
 # <a name="poll-oracle-e-business-suite-using-select-statement"></a>使用 SELECT 语句轮询 Oracle E-business Suite
 你可以配置[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]要接收使用 SELECT 语句，若要连续轮询接口表定期的数据更改消息，接口视图、 表和 Oracle E-business Suite 中的视图。 您可以指定为适配器执行定期轮询 Oracle E-business Suite 的轮询语句的 SELECT 语句。 此外可以指定后轮询 PL/SQL 代码块适配器执行轮询语句执行后。  
@@ -33,7 +33,7 @@ ms.locfileid: "37015416"
 |     **InboundOperationType**     |                                                                                                                                                                          指定是否想要执行**轮询**或**通知**的入站操作。 默认值是**轮询**。                                                                                                                                                                          |
 | **PolledDataAvailableStatement** |                                                                                                             指定适配器执行以确定是否可用于轮询的任何数据的 SQL 语句。 仅当一条记录不可用，SELECT 语句指定的**PollingInput**将执行属性绑定。                                                                                                              |
 |       **PollingInterval**        | 指定的时间间隔，以秒为单位，从该处[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]执行该语句为指定**PolledDataAvailableStatement**属性绑定。 默认值为 30 秒。 轮询间隔确定连续轮询之间的时间间隔。 如果在指定时间间隔内执行该语句，则适配器将休眠的剩余时间间隔中。 |
-|         **PollingInput**         |                         指定的轮询语句。 若要轮询使用 SELECT 语句，必须指定此绑定属性的 SELECT 语句。 默认值为 null。<br /><br /> 必须指定的值**PollingInput**绑定属性来启用轮询。 仅当没有数据可用于轮询，该域由执行轮询语句**PolledDataAvailableStatement**属性绑定。                          |
+|         **PollingInput**         |                         指定的轮询语句。 若要轮询使用 SELECT 语句，必须指定此绑定属性的 SELECT 语句。 默认值为 NULL。<br /><br /> 必须指定的值**PollingInput**绑定属性来启用轮询。 仅当没有数据可用于轮询，该域由执行轮询语句**PolledDataAvailableStatement**属性绑定。                          |
 |        **PollingAction**         |                                                                                                    指定轮询操作的操作。 您可以确定操作使用生成的元数据中的特定操作的轮询操作[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。                                                                                                     |
 |      **PostPollStatement**       |                                                                                                                                                                  指定在指定的语句之后执行的语句块**PollingInput**执行绑定属性。                                                                                                                                                                  |
 |      **PollWhileDataFound**      |                                    指定是否[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]忽略的轮询间隔，连续执行轮询语句中，如果数据是可用的轮询的表。 如果表中有任何数据，不则适配器将恢复执行轮询语句按照指定的轮询间隔。 默认值为 false。                                     |
@@ -145,7 +145,7 @@ ms.locfileid: "37015416"
 
 2.  在中**发送端口属性**对话框中，单击**筛选器**选项卡。  
 
-3.  请指定以下值：  
+3.  指定以下值：  
 
     -   在中**属性**列表中，单击**BTS。ReceivePortName**。  
 

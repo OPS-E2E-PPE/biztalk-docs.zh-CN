@@ -12,21 +12,21 @@ caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e5ee288b9772b7585fe972a4335e3cf8c5595024
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 73da5474278ba9bde92aaaf11e90a9f506014529
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989382"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367026"
 ---
 # <a name="install-the-fileact-and-interact-adapter"></a>安装 FileAct 和 InterAct 适配器
 本部分提供安装说明[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]– 对于 SWIFT。 安装适配器之前，必须安装必备软件。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
 
 * 使用的是本地管理员组的成员和 BizTalk Server Administrators 组的成员的帐户登录
   
-## <a name="step-1-install-biztalk-server-and-configure-bam"></a>步骤 1： 安装 BizTalk Server 并配置 BAM
+## <a name="step-1-install-biztalk-server-and-configure-bam"></a>第 1 步：安装 BizTalk Server 并配置 BAM
 
 1. 安装[BizTalk Server 2016](../../install-and-config-guides/biztalk-server-2016-what-s-new-and-installation.md)，或[BizTalk Server 2013 R2 / 2013年](../../install-and-config-guides/biztalk-server-2013-and-2013-r2-what-s-new-install-and-upgrade.md)，并安装业务活动监视 (BAM)。
 
@@ -34,17 +34,17 @@ ms.locfileid: "36989382"
   
 3. 请确保有足够的安全特权访问[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 [为 BizTalk Server 的最低安全权限](http://social.technet.microsoft.com/wiki/contents/articles/24590.minimum-security-rights-for-biztalk-server-2006-to-2016.aspx)是一个不错的资源。
   
-## <a name="step-2-install-biztalk-accelerator-for-swift-a4swift"></a>步骤 2： 安装 BizTalk Accelerator for SWIFT (A4SWIFT)  
+## <a name="step-2-install-biztalk-accelerator-for-swift-a4swift"></a>第 2 步：安装 BizTalk Accelerator for SWIFT (A4SWIFT)  
 
 安装和配置[BizTalk Accelerator for SWIFT](../../adapters-and-accelerators/accelerator-swift/install-configure-and-deploy-the-biztalk-accelerator-for-swift.md)。
 
   
-## <a name="step-3-install-swiftalliance-gateway-sag"></a>步骤 3： 安装 SWIFTAlliance 网关 （压降）  
+## <a name="step-3-install-swiftalliance-gateway-sag"></a>步骤 3：安装 SWIFTAlliance 网关 （压降）  
  安装 FileAct 和 InterAct 适配器之前，请创建压降消息合作伙伴、 终结点和路由规则，并测试压降连接，可以在其中安装 FileAct 和 InterAct 适配器的计算机。
 
 请参阅[ https://www.swift.com/our-solutions/interfaces-and-integration/alliance-gateway ](https://www.swift.com/our-solutions/interfaces-and-integration/alliance-gateway) SWIFTAlliance 网关上的特定详细信息。  
 
-## <a name="step-4-install-the-biztalk-fileact-and-interact-adapters"></a>步骤 4： 安装 BizTalk FileAct 和 InterAct 适配器  
+## <a name="step-4-install-the-biztalk-fileact-and-interact-adapters"></a>步骤 4：安装 BizTalk FileAct 和 InterAct 适配器  
   
 1. 运行**Setup.exe**以管理员身份开始安装。  
   
@@ -60,7 +60,7 @@ ms.locfileid: "36989382"
   
    - 选择**自定义**选项以选择要安装哪些组件。  
   
-     验证安装位置，或选择**浏览**来选择不同的安装位置。 选择“下一步” 。  
+     验证安装位置，或选择**浏览**来选择不同的安装位置。 选择“**下一步**”。  
   
 6. 上**摘要**页上，选择**安装**安装列出的组件。  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ea8e7d4f4ed8397c88a3cf21280352b446d629c8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d97c1bd20341719440637f0fa37bd8a806a84224
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37020149"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65366682"
 ---
 # <a name="interact-adapter-messages-for-business-exchange"></a>Business Exchange 的 interAct 适配器消息
 InterAct 适配器端到端周期中有四个消息。 这些消息是 SWIFTNet 基元。 第一个和最后一个消息包含客户端基元、 SwInt:ExchangeRequest 和 SwInt:ExchangeResponse。 中间的两个消息组成的服务器端基元、 SwInt:HandleRequest 和 SwInt:HandleResponse。  
@@ -42,7 +42,7 @@ InterAct 适配器端到端周期中有四个消息。 这些消息是 SWIFTNet 
   
    下图显示了 InterAct 消息交换。  
   
-   ![InterAct 消息交换](../../adapters-and-accelerators/fileact-interact/media/12fbebc6-5ab7-4d7f-9f94-4069b22161fa.gif "12fbebc6-5ab7-4d7f-9f94-4069b22161fa")  
+   ![InterAct message exchange](../../adapters-and-accelerators/fileact-interact/media/12fbebc6-5ab7-4d7f-9f94-4069b22161fa.gif "12fbebc6-5ab7-4d7f-9f94-4069b22161fa")  
   
 ## <a name="see-also"></a>请参阅  
  [InterAct 适配器体系结构](../../adapters-and-accelerators/fileact-interact/interact-adapter-architecture.md)   

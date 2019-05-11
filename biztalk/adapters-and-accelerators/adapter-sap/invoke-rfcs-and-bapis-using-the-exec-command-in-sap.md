@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b7ddd9e4d3e7d4c4d34445c7a42d83262d04f4b2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3700ce02f90c15d1367b49af459cb61a4edc4cca
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988190"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373329"
 ---
 # <a name="invoke-rfcs-and-bapis-using-the-exec-command-in-sap"></a>调用 Rfc 和 Bapi 在 SAP 中使用 EXEC 命令
 [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]公开为 ADO.NET 数据源的 SAP 系统。 通过使用[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]，可以在 SAP 系统通过 EXEC 命令调用 Rfc 和 Bapi。  

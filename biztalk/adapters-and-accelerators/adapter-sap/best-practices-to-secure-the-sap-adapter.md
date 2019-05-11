@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4223012d5f91d1682f165aff48d615c50c708566
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1f51c25a3eff54d86e715b870c56848b896bfbee
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003182"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374098"
 ---
 # <a name="best-practices-to-secure-the-sap-adapter"></a>最佳做法来保护 SAP 适配器
 本部分提供了更完整地保护敏感数据，使用或开发使用的应用程序时应遵循的最佳实践[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]。  

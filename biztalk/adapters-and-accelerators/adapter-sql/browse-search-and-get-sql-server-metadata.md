@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 37308bf4f5a1d6bedba061337b2352f198354dd7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 13d8746a78ffc57fa282abaa8891fda429bb8b86
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994150"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370073"
 ---
 # <a name="browse-search-and-get-sql-server-metadata"></a>浏览、 搜索和获取 SQL Server 元数据
 元数据的[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]从 SQL Server 数据库的图面介绍与 SQL Server 数据库使用的适配器通信的消息结构。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]支持两个接口用于检索元数据。  
@@ -46,7 +46,7 @@ ms.locfileid: "36994150"
   
 - 对表、 视图、 过程、 标量函数和表值函数的操作。 例如，[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]可能图面 Insert、 Update、 Select、 然后删除 EMPLOYEE 表的操作。  
   
-- 在集中\<列名\>使适配器客户端能够以流的形式写入大型数据值的表和视图的操作。 设置操作时，才返回这些表和包含具有以下数据类型的任何列的视图： varchar （max）、 nvarchar （max） 或 varbinary （max）。 有关详细信息，请参阅[对表和视图包含使用 SQL 适配器的较大的数据类型的操作](../../adapters-and-accelerators/adapter-sql/supported-operations-on-tables-and-views-with-large-data-types-with-sql-adapter.md)。  
+- 在集中\<列名\>使适配器客户端能够以流的形式写入大型数据值的表和视图的操作。 设置操作时，才返回这些表和包含具有以下数据类型的任何列的视图：Varchar （max）、 nvarchar （max） 或 varbinary （max）。 有关详细信息，请参阅[对表和视图包含使用 SQL 适配器的较大的数据类型的操作](../../adapters-and-accelerators/adapter-sql/supported-operations-on-tables-and-views-with-large-data-types-with-sql-adapter.md)。  
   
 - ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作使适配器客户端可以在 SQL Server 中执行任意 SQL 语句。 有关这些操作的详细信息，请参阅[支持 ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作](../../adapters-and-accelerators/adapter-oracle-ebs/support-for-executenonquery-executereader-and-executescalar-operations.md)。  
   

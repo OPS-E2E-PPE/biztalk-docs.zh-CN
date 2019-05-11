@@ -22,17 +22,17 @@ caps.latest.revision: 36
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fef8fb531ae88552d888fb2ebea4854151eca11e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a45873711255d6bde4fb6ef5727a2acaea37d1f9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990686"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395648"
 ---
 # <a name="planning-for-the-bam-portal"></a>规划 BAM 门户
-本主题介绍规划业务活动监视 (BAM) 门户部署时应考虑的事项。  
+本主题介绍规划业务活动监视 (BAM) 门户部署时应考虑的项。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  **系统要求**。 除了 BizTalk Server 的系统要求，必须安装以下软件才能安装 BAM 门户：  
   
 -   Internet 信息服务 (IIS)  
@@ -45,71 +45,71 @@ ms.locfileid: "36990686"
   
 -   Microsoft XML Core Services (MSXML) 6.0  
   
--   Microsoft Data Access Components (MDAC) 2.7  
+-   Microsoft 数据访问组件 (MDAC) 2.7  
   
 ## <a name="configuration-planning"></a>配置规划  
- **从以前版本的 BizTalk Server 迁移**。 从早期版本的 BizTalk Server 迁移完成后，BAM 门户中安装的现有页可能将不再起作用。 若要使 BAM 门户成功运行，请参阅 BizTalk Server 升级指南中提供的 BAM 相关注意事项和指南。  
+ **从以前版本的 BizTalk Server 迁移**。 从以前版本的 BizTalk Server 进行迁移之后, 你安装 BAM 门户中的现有页可能不再起作用。 若要成功运行 BAM 门户，请参阅 BizTalk Server 升级指南中提供的 BAM 的相关注意事项和准则。  
   
- **数据库**。 规划数据库时，请考虑以下问题：  
+ **数据库**。 规划数据库时，请考虑以下信息：  
   
-- 为了提高性能，需要规划数据库的索引。 日期和时间列通常需要进度维度的索引。 对无索引的进度维度的查询将是缓慢的，并且会对 BAM 主导入表的性能造成负面影响。  
+- 您需要规划数据库来增强性能的索引。 日期和时间列通常需要进度维度的索引。 进度维度没有索引的查询速度较慢，并将对 BAM 主导入表的性能产生负面影响。  
   
-- 需要考虑是否应设置无警报的 BAM。  
+- 需要考虑是否应设置 BAM 而无需警报。  
   
-  **SQL Server Notification Services**。 SQL Server Notification Services 不支持本地主机或用于标识服务器的服务器名称的 IP 地址。  在以下两种情况下，可能会遇到此问题：  
+  **SQL Server Notification Services**。 SQL Server Notification Services 不支持本地主机或 IP 地址的服务器名称以标识服务器。  您可能遇到这在两个位置：  
   
-1. 在配置过程中 - 如果你选择了 BAM 并打开了警报，配置过程将要求提供服务器名称。  
+1. 在配置-如果选择了 BAM 并打开了警报，配置过程将要求提供服务器名称。  
   
-2. 修改配置 .xml 文件 - 如果你试图修改配置过程中留下的配置 .xml 文件以便重复使用的情况下。  
+2. 如果你尝试修改配置.xml 文件，修改配置.xml 文件-从留下的配置过程以便重复使用。  
   
-   **IIS 安装**。 BAM 门户仅在 32 位模式下运行。 如果在 64 位计算机上安装 IIS，则必须确保在 32 位模式下启用 ASP.NET 2.0。 若要执行此操作，请打开 IIS 管理器中，打开**应用程序池**，选择应用程序池 (BAMAppPool)，然后单击**高级设置**。 在“启用 32 位应用程序”中，选择 **True**。 有关详细信息，请参阅 BizTalk Server 升级指南。  
+   **IIS 安装**。 BAM 门户仅在 32 位模式下运行。 如果要在 64 位计算机上安装 IIS，则必须确保在 32 位模式下启用 ASP.NET 2.0。 若要执行此操作，请打开 IIS 管理器中，打开**应用程序池**，选择应用程序池 (BAMAppPool)，然后单击**高级设置**。 在中**启用 32 位应用程序**，选择**True**。 有关详细信息，请参阅 BizTalk Server 升级指南。  
   
 ## <a name="deployment-planning"></a>部署规划  
- **多计算机部署**。 你是否要在多计算机环境下部署 BizTalk Server？ 如果配置 BAM 门户的服务器不是警报数据库所在的服务器，则必须在多服务器环境下增大查询服务超时值。 有关其他配置信息，请参阅[自定义 BAM 门户配置](../core/customizing-the-bam-portal-configuration.md)。  
+ **多计算机部署**。 是在多计算机环境的 BizTalk Server 部署？ 如果不在警报数据库的不同服务器上配置 BAM 门户，您必须增加多服务器环境中的查询服务超时值。 有关其他配置信息，请参阅[自定义 BAM 门户配置](../core/customizing-the-bam-portal-configuration.md)。  
   
-- **多区域性部署**。 你是否要在多区域性环境下部署 BizTalk Server？ 安装 BizTalk Server 时，用户界面 (UI) 使用你所安装的语言版本，而 BAM 门户将采取用户为其配置的区域性设置。 若要修改 BAM 门户 web.config 文件以反映正确的区域性设置，请参阅[自定义 BAM 门户配置](../core/customizing-the-bam-portal-configuration.md)。  
+- **多区域性部署**。 多区域性环境下是 BizTalk Server 的部署？ 安装 BizTalk Server 时的用户界面 (UI) 是在您安装的版本的语言中，BAM 门户将采取用户为其配置的区域性设置。 若要修改 BAM 门户 web.config 文件以反映正确的区域性设置，请参阅[自定义 BAM 门户配置](../core/customizing-the-bam-portal-configuration.md)。  
   
-  **群集部署**。 你是否要在网络负载平衡 (NLB) 群集中进行部署？ 请参阅[自定义 BAM 门户配置](../core/customizing-the-bam-portal-configuration.md)有关其他配置信息。  
+  **群集部署**。 您要部署在网络负载平衡 (NLB) 群集中？ 请参阅[自定义 BAM 门户配置](../core/customizing-the-bam-portal-configuration.md)有关其他配置信息。  
   
-  **SSL**。 你是否要在使用 SSL 的 IIS 安装上部署 BAM 门户？ 请参阅[自定义 BAM 门户配置](../core/customizing-the-bam-portal-configuration.md)主题，了解其他配置信息。  
+  **SSL**。 要部署使用 SSL 的 IIS 安装上的 BAM 门户？ 请参阅[自定义 BAM 门户配置](../core/customizing-the-bam-portal-configuration.md)主题，了解其他配置信息。  
   
-  创建视图的用户必须安装了用于 Excel 的 BAM 外接程序。  
+  正在创建视图的用户必须安装 Excel 的 BAM 外接程序。  
   
 ## <a name="permissions"></a>权限  
- **BAM 管理器**。 BAM 管理器 (bm.exe) 的 add-account 命令不会自动将数据库权限授予添加的用户。 这是因为运行 BAM 管理器只需 dbo 权限。 因此，从 BAM 门户访问实时聚合 (RTA) 将导致 SQL Server 失败，除非你属于 SQL Server 内特定的组，见下述。  
+ **BAM 管理器**。 Add-account 命令的 BAM 管理器 (bm.exe) 不会向添加的用户自动授予数据库权限。 这是由于运行 BAM 管理器，只需 dbo 权限。 因此，从 BAM 门户访问实时聚合 (Rta) 会导致 SQL Server 失败，除非你属于 SQL Server 内特定的组按下文所述。  
   
- **SQL Server 角色**。 若要授予用户对数据库的访问权限，你必须是 securityadmin 或 sysadmin 组的成员。  
+ **SQL Server 角色**。 若要授予用户访问数据库，必须是 securityadmin 或 sysadmin 组的成员。  
   
- securityadmin 或 sysadmin 组的成员可以通过运行 sp_grantdbaccess 和 sp_grantlogin 进行授权。  
+ Securityadmin 或 sysadmin 组的成员可以通过运行 sp_grantdbaccess 和 sp_grantlogin 进行授权授予权限。  
   
  有关 SQL Server 中的角色的详细信息，请参阅"角色中 SQL Server 体系结构"网址[ http://go.microsoft.com/fwlink/?LinkId=56205 ](http://go.microsoft.com/fwlink/?LinkId=56205)。  
   
 ## <a name="development-planning"></a>开发规划  
- **数据透视表的连接字符串**。 在部署期间，BAM 管理器实用程序不总能更改实时聚合 (RTA) 透视数据表定义的连接字符串。 当 RTA 数据透视表具有预先存在的 OLAP 连接字符串（该字符串已经过手动编辑）并且值项的大小写不正确时，就会发生这种情况。 例如，在 BAM 定义 XML 文件中有以下行，其中值项为 RTARef，而不是想要的 RtaRef：  
+ **数据透视表的连接字符串**。 BAM 管理器实用程序不会始终更改实时聚合 (RTA) 透视数据表定义的连接字符串在部署过程。 当 RTA 数据透视表具有预先存在的已经过手动编辑 OLAP 连接字符串和值项的大小写不正确时，将发生这种情况。 例如，在 BAM 定义 XML 文件中有以下行中的关键是 RTARef，而不是预期的 RtaRef:  
   
- **\<PivotTableView CubeRef ="POCube"RTARef ="POAmountByLocation"\>**  
+ **\<PivotTableView CubeRef="POCube" RTARef="POAmountByLocation"\>**  
   
- 这将导致通过 OLAP 多维数据集，而不是通过 RTA 数据透视表来生成数据透视表。  
+ 这将导致通过 OLAP 多维数据集而不是通过 RTA 数据透视表生成数据透视表。  
   
- **字段名称**。 建议你在开发监视解决方案时，为字段名选择不同的命名约定。 BAM 不需要在 BAM 定义的视图部分和聚合的 OLAP 多维数据集之间使用不同的名称。  因此，“活动搜索”查询生成器中的列选择器和字段选择下拉列表可以包含同名的两个字段。 这会导致在尝试选择要包含在结果中的正确字段时出现错误。  
+ **字段名称**。 我们建议在开发监视解决方案时选择不同的字段名称的命名约定。 BAM 不需要 BAM 定义的视图部分和聚合的 OLAP 多维数据集之间的唯一名称。  因此，列选择器和活动搜索查询生成器中的字段选择下拉列表可以包含具有相同名称的两个字段。 尝试选择要在结果中包括的正确字段时，这会导致错误。  
   
- 对于使用直通管道的 BizTalk Server 端口，不可能跟踪来自消息负载的数据。 直通管道不会将消息类型转换为架构名称，因此所有消息的架构都为空。  
+ 对于使用直通管道的 BizTalk Server 端口，它不能从消息有效负载跟踪数据。 直通管道不会评估消息类型转换为架构名称，这会导致所有架构都为空的消息。  
   
-- 由于跟踪配置文件映射到端口和架构对，因此尝试跟踪直通管道的消息负载数据将跟踪不到任何数据。  
+- 由于跟踪配置文件映射到端口和架构对，尝试跟踪直通管道结果之外的任何其他所跟踪的消息有效负载数据。  
   
-  **数据透视表的名称**： 在 Excel 中创建的数据透视表的友好名称时规划和开发用户体验中聚合任务的 BAM 门户，您都应创建用户。  你可以自定义该名称，方法是右键单击数据透视表，然后从上下文菜单中选择“表”选项。  
+  **数据透视表的名称**:规划和开发用户体验时聚合任务的 BAM 门户中，应在 Excel 中创建的数据透视表的友好名称创建用户。  通过右键单击数据透视表并从上下文菜单中选择表选项，可以自定义名称。  
   
   **日期范围**。 当创建查询和实例警报使用活动搜索页请记住，如果 @@DateFirst SQL 查询中的值与 CultureInfo.CurrentCulture.DateTimeFormat.FirstDayOfWeek 值不匹配，然后在显示的日期范围搜索页将与用于生成聚合的一周边界不匹配。  
   
-  例如，如果 SQL Server 中的每周起始日设置为星期日，则 2005 年第二周的日期范围为 2005 年 1 月 2 日至 2005 年 1 月 8 日，SQL Server 和 OLAP 中显示的第二周的聚合将基于此日期范围。 但是，如果 BAM 门户指定每周的起始日为星期六，则对 2005 年第二周执行深入探查的用户在搜索页上看到的日期范围将从 2005 年 1 月 8 日至 2005 年 1 月 14 日。 因此，搜索查询返回的值会与数据透视表中显示的聚合值不匹配。  
+  例如，如果一周的开始日期在 SQL Server 中设置为星期日，则在日期范围的第二个每周 2005年是从 1/2/2005 通过 2005 年 1 月 8 日，并在 SQL Server 和 OLAP 周 2 所示的聚合基于此日期范围。 但是，如果 BAM 门户指定每周的起始日为星期六，则第二周执行深入探查用户，2005年将在搜索页上看到一个从 1/8/2005 通过 2005 年 1 月 14 日的日期范围。 因此，搜索查询返回的值可能不匹配该数据透视表中显示的聚合值。  
   
-  若要获得所需的结果，请调整查询中的时间范围，以检索所需的日期范围。  
+  若要获取所需的结果，请调整查询以检索所需的日期范围中的时间范围。  
   
-  **分布式导航**。 用户使用 BAM 门户的分布式导航功能可以跨远程边界查看活动关系。 开发活动时，请考虑以下情况：  
+  **分布式导航**。 BAM 门户分布式的导航功能允许用户跨远程边界查看活动关系。 当开发活动，请考虑以下：  
   
-- 有时可能要将来自各个 BAM 主导入数据库中的相关活动置于同一视图中。 存在于不同的服务器上的活动可能会有相同的名称，如两个不同的部门各有一个“采购订单”活动。 BAM 门户用户在门户的“我的视图”窗格中选择“视图”时，将看到每个任务下都列出这两个活动。  
+- 可能情况下，您将在其中放置到同一视图从单独的 BAM 主导入数据库的相关的活动。 有可能活动可以具有相同名称但位于不同的服务器，例如两个不同的部门都有一个采购订单活动。 BAM 门户用户在门户上我的视图窗格中选择视图时，他们将看到下列出每个任务这两个活动。  
   
-- 如果用户在不同的服务器上使用 BAM 门户查看部署的视图，则需要对称地启用引用，以使两个门户体验（每一个都针对它本地的 BAM 主导入数据库运行）相同。  
+- 如果用户在不同的服务器上使用 BAM 门户查看已部署的视图，则需要将对称地启用两个门户体验，每个针对其本地 BAM 主导入数据库中，运行相同引用。  
   
 ## <a name="see-also"></a>请参阅  
  [自定义 BAM 门户配置](../core/customizing-the-bam-portal-configuration.md)

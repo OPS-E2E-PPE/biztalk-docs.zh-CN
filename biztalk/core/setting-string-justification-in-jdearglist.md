@@ -1,6 +1,6 @@
 ---
-title: 在博士 Edwards OneWorld 适配器中设置字符串理由 |Microsoft 文档
-description: 更新 jdearglist 文件以在 BizTalk Server 业务流程中使用博士 Edwards OneWorld 适配器
+title: 在 JD Edwards OneWorld 适配器中设置字符串对齐 |Microsoft Docs
+description: 更新 jdearglist 文件以在 BizTalk Server 业务流程中使用 JD Edwards OneWorld 适配器
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -13,21 +13,21 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 70b32d0106d95a1970b480e32dfa47a81ebf98ca
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 8f33941e997315a5e91e5c99f4e6dc4bd0d2b7aa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24012996"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393247"
 ---
-# <a name="set-string-justification-in-jdearglist"></a>在 Jdearglist 中设置字符串理由
+# <a name="set-string-justification-in-jdearglist"></a>在 Jdearglist 中设置字符串对齐
 
 ## <a name="overview"></a>概述
-若要在 JD Edwards OneWorld jdearglist.txt 文件中将某些字符串参数配置为右对齐（并且向左填充），您必须知道要访问哪一个业务函数；尤其必须了解要调用业务函数中的哪些字段。  
+若要配置某些字符串参数，右对齐 （并且向左填充） 在 JD Edwards OneWorld jdearglist.txt 文件中，您必须知道你想要访问; 哪些业务函数具体而言，您必须知道你想要调用业务函数中的哪些字段。  
   
- 您必须先更新该 jdearglist.txt，然后在业务流程中生成绑定（架构）。 更新 jdearglist.txt 文件的说明所述[处理字符串值](../core/handling-string-values1.md)。  
+ 在业务流程中生成的绑定 （架构） 之前，必须更新 jdearglist.txt。 用于更新 jdearglist.txt 文件的说明所述[处理字符串值](../core/handling-string-values1.md)。  
   
- 如果在审核日志中收到 jdearglist.txt 警告消息，则是通知您缺少 jdearglist.txt。 如果运行 SalesOrder 或 PurchaseOrder 业务函数，您的路径中必须具有该文件，否则它将不会运行。  
+ 如果审核日志中收到 jdearglist.txt 警告消息，它将通知您缺少指定 jdearglist.txt。 如果运行 SalesOrder 或 PurchaseOrder 业务函数，该文件必须在你的路径，或它将无法工作。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
 [使用 BizTalk Server 异常处理](using-biztalk-server-exception-handling1.md)

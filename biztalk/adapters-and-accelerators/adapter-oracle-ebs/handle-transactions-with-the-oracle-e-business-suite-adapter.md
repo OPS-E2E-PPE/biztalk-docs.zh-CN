@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a9d5bc59cdce4b78a01dc867e12a84eac3b3469d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ddfe7ebc56fce471bb4dceabf24c09e7a084bca1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010910"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375487"
 ---
 # <a name="handle-transactions-with-the-oracle-e-business-suite-adapter"></a>使用 Oracle E-business Suite 适配器处理事务
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] 并不会启动 Oracle E-business Suite 中执行操作时的事务。 相反，适配器执行的操作提供的适配器客户端的事务上下文。 若要执行操作在事务中使用[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]，您必须：  
@@ -35,9 +35,9 @@ ms.locfileid: "37010910"
 ## <a name="transactions-in-the-inbound-operations"></a>入站操作中的事务  
  [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公开以下两个入站的操作：  
   
-- **轮询**： 轮询语句和轮询后语句 （如果指定） 的执行在事务中，而轮询的数据可用语句在不同事务中执行。 同样，轮询语句和轮询后语句的执行使用相同的 ODP.NET 连接，而使用不同的 ODP.NET 连接执行轮询的数据可用语句。  
+- **轮询**:轮询语句和轮询后语句 （如果指定） 的执行在事务中，而轮询的数据可用语句在不同事务中执行。 同样，轮询语句和轮询后语句的执行使用相同的 ODP.NET 连接，而使用不同的 ODP.NET 连接执行轮询的数据可用语句。  
   
-- **通知**： 在使用单个 ODP.NET 连接的事务中执行通知操作。  
+- **通知**:在使用单个 ODP.NET 连接事务中执行通知操作。  
   
   有关显示的入站操作详细信息[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]，请参阅[原理适配器面 Oracle E-business Suite 元数据？](https://msdn.microsoft.com/library/dd788431.aspx)。  
   

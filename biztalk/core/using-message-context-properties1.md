@@ -1,5 +1,5 @@
 ---
-title: 使用消息上下文 Properties1 |Microsoft 文档
+title: 使用消息上下文 Properties1 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf36c3135dccb5e0dcae788fe191d15f38e1a28f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d7e02c944690e50f87535fc7cec8e06e0dd27c48
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287109"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396814"
 ---
 # <a name="using-message-context-properties"></a>使用消息上下文属性
 本部分介绍如何通过 BizTalk 消息上下文属性控制连接会话。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [如何将消息上下文属性值分配](../core/how-to-assign-message-context-property-values1.md)  
+-   [如何分配消息上下文属性值](../core/how-to-assign-message-context-property-values1.md)  
   
--   [有关会话管理](../core/about-session-management2.md)
+-   [关于会话管理](../core/about-session-management2.md)

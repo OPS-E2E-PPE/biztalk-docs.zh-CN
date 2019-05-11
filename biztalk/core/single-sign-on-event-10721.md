@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10721 |Microsoft Docs
+title: 单一登录：Event 10721 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ae378123f8c80eaba178c49b164fa6f4223fbf5f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f497915a72b00f486d658c9138ef54ee091aa185
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993022"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397161"
 ---
-# <a name="single-sign-on-event-10721"></a>单一登录： 事件 10721
+# <a name="single-sign-on-event-10721"></a>单一登录：事件 10721
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                 |
@@ -30,14 +30,14 @@ ms.locfileid: "36993022"
 |  事件源   |                                     ENTSSO                                      |
 |    组件    |                                       N\A                                       |
 |  符号名称  |                        SSO_INFO_REPLAY_FILE_CLOSED_FULL                         |
-|  消息正文   | 重播文件已关闭，因为它已满。%r<br /><br /> 文件名称： %1 |
+|  消息正文   | 重播文件已关闭，因为它是 full.%r<br /><br /> 文件名称： %1 |
 
 ## <a name="explanation"></a>解释  
- 此信息事件表明，重播文件已关闭，因为它已满。 如有必要，将创建一个新的重播文件。  
+ 此信息事件表明重播文件已被关闭，因为它已满。 如有必要，将创建一个新的重播文件。  
 
 ## <a name="user-action"></a>用户操作  
 
-- 不必进行用户操作。  
+- 不不需要任何用户操作  
 
   有关详细信息，请参阅下列资源：  
 

@@ -1,5 +1,5 @@
 ---
-title: 步骤 1： 将 Siebel 业务组件操作作为 WCF 服务发布 |Microsoft Docs
+title: 第 1 步：将 Siebel 业务组件操作作为 WCF 服务发布 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 800e9789eca1121abd37de4df92e9d5e735802f3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b11d94de7e7b5d6ff9ced397d30c78235ad20bfe
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983014"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370679"
 ---
-# <a name="step-1-publish-the-siebel-business-component-operations-as-a-wcf-service"></a>步骤 1： 将 Siebel 业务组件操作发布为 WCF 服务
+# <a name="step-1-publish-the-siebel-business-component-operations-as-a-wcf-service"></a>第 1 步：将 Siebel 业务组件操作发布为 WCF 服务
 ![步骤 1，共 4 步](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
   
- **完成时间：** 10 分钟  
+ **若要完成的时间：** 10 分钟。  
   
- **目标：** 可以使用 WCF 适配器服务开发向导在如 Internet 信息服务 (IIS) 或 Windows 进程激活服务 (WAS) 宿主环境中生成可承载的 WCF 服务。 本主题演示如何使用向导生成的 WCF 服务文件。  
+ **目标：** WCF 适配器服务开发向导可用于在如 Internet 信息服务 (IIS) 或 Windows 进程激活服务 (WAS) 宿主环境中生成可承载的 WCF 服务。 本主题演示如何使用向导生成的 WCF 服务文件。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  运行向导之前，安装以下组件：  
   
 - [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)] 使用**完成**选项或**自定义**选项 (，然后选择**工具**中此选项)。 这为 WCF 适配器服务开发向导将安装 Visual Studio 模板。  
@@ -52,7 +52,7 @@ ms.locfileid: "36983014"
   
 4. 在欢迎页上，单击**下一步**。  
   
-5. 在选择操作页上指定要连接到 Siebel 系统的连接字符串。 为此：  
+5. 在选择操作页上指定要连接到 Siebel 系统的连接字符串。 为此，请执行以下操作：  
   
    1. 在中**选择绑定**列表中，单击**siebelBinding**，然后单击**配置**。  
   
@@ -93,10 +93,10 @@ ms.locfileid: "36983014"
       |IncludeExceptionDetailsinFault|将此设置为 **，则返回 True**返回到客户端以便进行调试的 SOAP 错误的详细信息中包含托管的异常信息。 默认值是**False**。|  
       |“属性”|服务行为配置名称。|  
       |UseServiceCertificate|指定是否想要使用的 WCF 消息级别安全模式。 默认值是 **，则返回 True**。<br /><br /> 对于本教程，必须将其设置**False**。|  
-      |FindValue|一个字符串，指定要在 X.509 证书存储区中搜索的值。<br /><br /> **注意：** 为此属性仅当指定值**UseServiceCertificate**设置为**True**。|  
-      |StoreLocation|一个值，指定该服务可用于验证的客户端证书的证书存储区位置。<br /><br /> **注意：** 为此属性仅当指定值**UseServiceCertificate**设置为**True**。|  
-      |StoreName|要打开的 X.509 证书存储的名称。<br /><br /> **注意：** 为此属性仅当指定值**UseServiceCertificate**设置为**True**。|  
-      |X509FindType|要执行的 X.509 搜索的类型。<br /><br /> **注意：** 为此属性仅当指定值**UseServiceCertificate**设置为**True**。|  
+      |FindValue|一个字符串，指定要在 X.509 证书存储区中搜索的值。<br /><br /> **注意：** 请为此属性仅当**UseServiceCertificate**设置为**True**。|  
+      |StoreLocation|一个值，指定该服务可用于验证的客户端证书的证书存储区位置。<br /><br /> **注意：** 请为此属性仅当**UseServiceCertificate**设置为**True**。|  
+      |StoreName|要打开的 X.509 证书存储的名称。<br /><br /> **注意：** 请为此属性仅当**UseServiceCertificate**设置为**True**。|  
+      |X509FindType|要执行的 X.509 搜索的类型。<br /><br /> **注意：** 请为此属性仅当**UseServiceCertificate**设置为**True**。|  
   
       > [!NOTE]
       >  有关证书和关联的属性的详细信息，请参阅[X509ClientCertificateCredentialsElement 属性](https://msdn.microsoft.com/library/system.servicemodel.configuration.x509clientcertificatecredentialselement_properties.aspx)。
@@ -107,8 +107,8 @@ ms.locfileid: "36983014"
       |----------------------|-----------------------|  
       |身份验证类型|-将此设置为**ClientCredentialUserNamePassword**使客户端可以使用 WCF 服务时指定的用户名和密码。<br /><br /> -将此设置为**HTTPUserNamePassword**若要启用客户端的 HTTP 标头的一部分指定用户名和密码。<br /><br /> -将此设置为**自动**首先使客户端可以指定通过凭据**ClientCredential**接口。 如果此操作失败，客户端可以将作为 HTTP 标头的一部分传递的凭据。<br /><br /> 默认值是**自动**。对于 Microsoft Office SharePoint Server 使用 WCF 服务，应设置为**HTTPUserNamePassword**。|  
       |“属性”|指定的终结点行为配置名称。|  
-      |UsernameHeader|用户名称标头的名称。 对于此示例中，指定**MyUserHeader**。 有关 HTTP 标头的详细信息，请参阅"支持的自定义 HTTP 和 SOAP 标头"网址[ http://go.microsoft.com/fwlink/?LinkId=106692 ](http://go.microsoft.com/fwlink/?LinkId=106692)。<br /><br /> **注意：** 必须指定此属性的值，如果**身份验证类型**设置为**HTTPUserNamePassword**。 如果**身份验证类型**设置为**自动**，此为可选属性。|  
-      |PasswordHeader|密码标头的名称。 对于此示例中，指定**MyPassHeader**。 有关 HTTP 标头的详细信息，请参阅"支持的自定义 HTTP 和 SOAP 标头"网址[ http://go.microsoft.com/fwlink/?LinkId=106692 ](http://go.microsoft.com/fwlink/?LinkId=106692)。<br /><br /> **注意：** 必须指定此属性的值，如果**身份验证类型**设置为**HTTPUserNamePassword**。 如果**身份验证类型**设置为**自动**，此为可选属性。|  
+      |UsernameHeader|用户名称标头的名称。 对于此示例中，指定**MyUserHeader**。 有关 HTTP 标头的详细信息，请参阅"支持的自定义 HTTP 和 SOAP 标头"网址[ http://go.microsoft.com/fwlink/?LinkId=106692 ](http://go.microsoft.com/fwlink/?LinkId=106692)。<br /><br /> **注意：** 如果满足以下条件，则必须指定此属性的值**身份验证类型**设置为**HTTPUserNamePassword**。 如果**身份验证类型**设置为**自动**，此为可选属性。|  
+      |PasswordHeader|密码标头的名称。 对于此示例中，指定**MyPassHeader**。 有关 HTTP 标头的详细信息，请参阅"支持的自定义 HTTP 和 SOAP 标头"网址[ http://go.microsoft.com/fwlink/?LinkId=106692 ](http://go.microsoft.com/fwlink/?LinkId=106692)。<br /><br /> **注意：** 如果满足以下条件，则必须指定此属性的值**身份验证类型**设置为**HTTPUserNamePassword**。 如果**身份验证类型**设置为**自动**，此为可选属性。|  
   
       下图显示了具有指定值的配置服务和终结点行为页。  
   
@@ -179,7 +179,7 @@ ms.locfileid: "36983014"
         ```  
   
 ## <a name="next-steps"></a>后续步骤  
- 现可用于 Siebel 业务组件的 WCF 服务。 使用 Business Data Catalog Definition Editor 创建 Siebel 业务组件操作的应用程序定义文件。 请参阅[步骤 2： 为 Siebel 业务组件操作创建应用程序定义文件](../../adapters-and-accelerators/adapter-siebel/step-2-create-an-application-definition-file-for-siebel-business-component.md)有关的说明。 应用程序定义文件来确定存储 LOB 数据和在其中存储的格式。  
+ 现可用于 Siebel 业务组件的 WCF 服务。 使用 Business Data Catalog Definition Editor 创建 Siebel 业务组件操作的应用程序定义文件。 请参阅[步骤 2:为 Siebel 业务组件操作创建应用程序定义文件](../../adapters-and-accelerators/adapter-siebel/step-2-create-an-application-definition-file-for-siebel-business-component.md)有关的说明。 应用程序定义文件来确定存储 LOB 数据和在其中存储的格式。  
   
 ## <a name="see-also"></a>请参阅  
- [教程 1：在 SharePoint 站点上从 Siebel 系统提供数据](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)
+ [教程 1:在 SharePoint 站点上提供来自 Siebel 系统的数据](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)

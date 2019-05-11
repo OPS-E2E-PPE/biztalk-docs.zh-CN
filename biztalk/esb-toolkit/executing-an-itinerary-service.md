@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6a85e5c134e9fbbd2d1b6880fdb9e5cd866bc512
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 83551e31bfd822473e639c12abcf440c154dc826
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024379"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395123"
 ---
 # <a name="executing-an-itinerary-service"></a>执行路线服务
 ESB 路线可以包含任何路线服务，可能是实现与业务流程或消息传递执行以下任务：  

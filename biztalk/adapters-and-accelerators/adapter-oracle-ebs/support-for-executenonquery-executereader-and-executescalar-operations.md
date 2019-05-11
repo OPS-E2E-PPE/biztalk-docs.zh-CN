@@ -12,21 +12,21 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 592c61fd821920656cc12744f290505828cadcd9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 30669e4f055e6a9783b87d78e774944370421b70
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981366"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374530"
 ---
 # <a name="support-for-executenonquery-executereader-and-executescalar-operations"></a>支持 ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]公开的根级别以下的出站操作：  
   
--   **ExecuteNonQuery**： 此操作用于在 Oracle E-business Suite 中执行任何任意 SQL 语句或 PL/SQL 块，如果你想要返回多个结果集。 此函数的输入的参数包括字符串参数 （在整个 PL/SQL 块中执行） 和一个字符串 (OutRefCursorNames) 数组。 OutRefCursorNames 中指定每个字符串值被假定为与 PL/SQL 块具有相同名称返回 REF CURSOR 的 REF CURSOR 的输出的参数名称。 此函数还采用一个输出参数 (OutRefCursors)，这是数据集的数组。 有关数据集的信息，请参阅 Oracle 文档，网址[ http://go.microsoft.com/fwlink/?LinkId=124538 ](http://go.microsoft.com/fwlink/?LinkId=124538)。 此操作的返回值是整数数据类型，并指示受影响的行数。  
+-   **ExecuteNonQuery**:此操作用于在 Oracle E-business Suite 中执行任何任意 SQL 语句或 PL/SQL 块，如果你想要返回多个结果集。 此函数的输入的参数包括字符串参数 （在整个 PL/SQL 块中执行） 和一个字符串 (OutRefCursorNames) 数组。 OutRefCursorNames 中指定每个字符串值被假定为与 PL/SQL 块具有相同名称返回 REF CURSOR 的 REF CURSOR 的输出的参数名称。 此函数还采用一个输出参数 (OutRefCursors)，这是数据集的数组。 有关数据集的信息，请参阅 Oracle 文档，网址[ http://go.microsoft.com/fwlink/?LinkId=124538 ](http://go.microsoft.com/fwlink/?LinkId=124538)。 此操作的返回值是整数数据类型，并指示受影响的行数。  
   
--   **ExecuteReader**： 此操作用于在 Oracle E-business Suite 中执行任何任意 SQL 语句或 PL/SQL 块，如果你想要作为数据集返回的结果集。 此操作采用字符串参数作为输入，并返回一个数据集。  
+-   **ExecuteReader**:此操作用于在 Oracle E-business Suite 中执行任何任意 SQL 语句或 PL/SQL 块，如果你想要作为数据集返回的结果集。 此操作采用字符串参数作为输入，并返回一个数据集。  
   
--   **ExecuteScalar**： 此操作用于在 Oracle E-business Suite 中执行任何任意 SQL 语句或 PL/SQL 块，如果你想要返回一个值。 如果返回值是结果集，仅第一行的第一列中的值是以 XML 字符串格式返回。  
+-   **ExecuteScalar**:此操作用于在 Oracle E-business Suite 中执行任何任意 SQL 语句或 PL/SQL 块，如果你想要返回一个值。 如果返回值是结果集，仅第一行的第一列中的值是以 XML 字符串格式返回。  
   
 > [!NOTE]
 > - ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作不是支持用户定义类型 (Udt)。  

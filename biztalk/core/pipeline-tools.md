@@ -28,64 +28,64 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9c53791906e64930b39b15a89ca20bc269dc8cd9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b5d9a2aeff4b73eebb95b8be8a76b92fb9c7848d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017042"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395758"
 ---
 # <a name="pipeline-tools"></a>管道工具
-使用随 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 软件开发工具包 (SDK) 提供的管道工具可以验证管道在正常工作，而不必配置 BizTalk Server 环境，如发送/接收端口。 管道工具还具有以下用途：  
+使用 Microsoft 提供的管道工具[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]软件开发工具包 (SDK) 使您可以验证管道工作正常，而无需配置 BizTalk Server 环境，如发送/接收端口。 此外可以使用管道工具：  
 
 -   调试服务器环境外的第三方管道组件。  
 
 -   诊断解析引擎错误消息。  
 
--   试验不同的架构，但不必编译、部署、取消部署和重新编译。  
+-   尝试使用不同的架构，而无需编译、 部署、 取消部署和重新编译的负担。  
 
--   浏览平面文件和 XML 程序集/拆装器行为。  
+-   浏览平面文件和 XML 组装器/拆装器行为。  
 
--   查看拆装器输出，发现哪些消息上下文属性已升级及属性值。  
+-   查看拆装器输出和发现哪些消息上下文属性将升级以及它们的值。  
 
--   运行没有拆装器和组装器组件的发送/接收管道（例如，您可以查看 S/MIME 解码器的输出）。  
+-   运行没有拆装器和组装器组件发送/接收管道 （例如，可以查看 S/MIME 解码器的输出）。  
 
--   单独对管道（而不是整个消息传送子系统）进行精细的性能测量。  
+-   使管道的细粒度的性能度量值本身 （而不是整个消息传送子系统）。  
 
 ## <a name="location-in-sdk"></a>在 SDK 中的位置  
- \<*安装路径*\>\SDK\Utilities\PipelineTools  
+ \<*Installation Path*\>\SDK\Utilities\PipelineTools  
 
- 将管道工具用于执行、调试和分析管道和管道组件（即平面文件和 XML 组装器/拆装器组件）。  
+ 将管道工具用于执行、 调试和分析管道和管道组件 （即，平面文件和 XML 组装器/拆装器组件）。  
 
-## <a name="file-inventory"></a>文件库存  
- 下表列出了管道工具文件并说明其用途。  
+## <a name="file-inventory"></a>文件清单  
+ 下表列出了管道工具文件，并描述其用途。  
 
 
 |   文件    |                                                                                                                                                                                                                                Description                                                                                                                                                                                                                                 |
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  DSDump.exe  |                                                允许您转储文档架构结构，它是一个或多个 XSD 架构的内存中轻量表示形式，有或没有平面文件批注。 此工具在您获取诸如 $Root$0$3$2 这样的解析引擎错误并且需要对其进行解码时很有帮助。 $ 后的数字表示基于 0 的索引或记录，这些索引或记录显示在文档架构中。                                                |
-|  FFAsm.exe   |                                                                                                                                     运行平面文件组装器组件，通过模拟发送管道来直接调用它，从而允许您看到它如何将用户的 XML 文档序列化或组装到平面文件文档中。                                                                                                                                      |
-|  FFDasm.exe  |                                                                                                                               运行平面文件拆装器组件，通过模拟接收管道来直接调用它，从而允许您看到它如何将用户的平面文件文档解析或拆装到一个或多个 XML 文档中。                                                                                                                               |
-| Pipeline.exe | 运行发送或接收管道；接受一个或多个输入文档及其部分、XSD 架构和相关信息；并且在管道运行后生成输出文档。 因此，访问包含 BizTalk 框架组装器和拆装器组件的管道，Pipeline.exe 不访问 BizTalk Server 数据库，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]可能不支持在执行过程的数据库。 |
-|  XMLAsm.exe  |                                                                                                                                 运行 XML 组装器组件，通过模拟发送管道来直接调用它，从而允许您看到它如何将用户的 XML 文档序列化、组装或封装到输出 XML 文档中。                                                                                                                                  |
-| XMLDasm.exe  |                                                                                                                             运行 XML 拆装器组件，通过模拟接收管道来直接调用它，从而允许您看到它如何将用户的 XML 文档解析、拆装或解封装到一个或多个 XML 文档中。                                                                                                                              |
+|  DSDump.exe  |                                                允许您转储文档架构结构，它是内存中轻量表示形式的一个或多个 XSD 架构，有或没有平面文件批注。 获取解析引擎错误时，此工具很有帮助如 $Root 0 美元 $ 3 个 2 美元，并且需要对其进行解码。 $ 后的数字表示基于 0 的索引或记录的文档架构中的显示方式。                                                |
+|  FFAsm.exe   |                                                                                                                                     运行平面文件组装器组件，通过模拟发送管道，使您可以查看如何序列化或用户的 XML 文档组装到平面文件文档直接调用它。                                                                                                                                      |
+|  FFDasm.exe  |                                                                                                                               运行平面文件拆装器组件，通过模拟接收管道，使您可以查看如何解析或拆装到一个或多个 XML 文档的用户的平面文件文档直接调用它。                                                                                                                               |
+| Pipeline.exe | 运行发送或接收管道;接受一个或多个输入的文档及其部分、 XSD 架构和相关的信息;并生成输出文档后管道运行。 因此，访问包含 BizTalk 框架组装器和拆装器组件的管道，Pipeline.exe 不访问 BizTalk Server 数据库，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]可能不支持在执行过程的数据库。 |
+|  XMLAsm.exe  |                                                                                                                                 运行 XML 组装器组件，直接调用它，通过模拟发送管道来，可以查看如何序列化、 组装或信封用户的 XML 文档转换为输出 XML 文档。                                                                                                                                  |
+| XMLDasm.exe  |                                                                                                                             运行 XML 拆装器组件，直接调用它，通过模拟接收管道来，可以查看如何分析拆装或解用户的 XML 文档到一个或多个 XML 文档。                                                                                                                              |
 
 ## <a name="usage"></a>用法  
- 后面的部分针对每个文件提供了更详细的说明。  
+ 以下各节提供了每个文件的更详细的说明。  
 
 ### <a name="dsdumpexe"></a>DSDump.exe  
- DSDump.exe 允许您转储文档架构结构，它是一个或多个 XSD 架构的内存中轻量表示形式，有或没有平面文件批注。  
+ DSDump.exe 允许您转储文档架构结构，它是一个或多个 XSD 架构、 有或没有平面文件批注的内存中轻量表示形式。  
 
- DSDump.exe（文档架构转储工具）支持以下命令行参数：  
+ DSDump.exe （文档架构转储工具） 支持以下命令行参数：  
 
 ```  
 DSDump.exe schemaFileName  
 ```  
 
- 如果成功，DSDump 则将文档架构显示到控制台。  
+ 如果成功，DSDump 打印到控制台的文档架构。  
 
 ### <a name="ffasmexe"></a>FFAsm.exe  
- FFAsm.exe（平面文件组装器）支持以下命令行参数：  
+ FFAsm.exe （平面文件组装器） 支持以下命令行参数：  
 
 ```  
 usage: ffasm document... [-dm documentMask...]-bs bodySchema [ -hs headerSchema ] [ -ts trailerSchema ] [ -c ] [ -d ] [ -sb ] [ -m filenamemask ] [ -en encoding ] [ -v ]  
@@ -110,14 +110,14 @@ file name macros:
 
 ```  
 
- 例如，如果您希望将三个输入 XML 文档组装到一个具有头部和属性降级的平面文件文档，请使用以下命令：  
+ 例如，如果你想要将三个输入的 XML 文档组装到一个具有标头和属性降级的单个平面文件文档，使用以下命令：  
 
 ```  
 FFAsm.exe file_in1.xml file_in2.xml file_in3.xml –hs myHeaderSchema.xsd –bs myBodySchema.xsd -d  
 ```  
 
 ### <a name="ffdasmexe"></a>FFDasm.exe  
- FFDasm.exe（平面文件拆装器）支持以下命令行参数：  
+ FFDasm.exe （平面文件反汇编程序） 支持以下命令行参数：  
 
 ```  
 usage: ffdasm document -bs bodySchema [ -hs headerSchema ] [ -ts trailerSchema ] [ -s ] [ -c ] [ -p ] [ -m filenamemask ] [ -en encoding ] [ -v ]  
@@ -140,14 +140,14 @@ file name macros:
 
 ```  
 
- 例如，如果您希望拆装一个具有头部、正文和尾部的平面文件文档，并将结果显示到控制台，请使用以下命令：  
+ 例如，如果你想要拆装平面文件文档包含头部、 正文和尾部，并将结果显示到控制台，使用以下命令：  
 
 ```  
 FFDasm.exe file_in.txt –hs myHeaderSchema.xsd –bs myBodySchema.xsd –ts myTrailerSchema.xsd –c  
 ```  
 
 ### <a name="pipelineexe"></a>Pipeline.exe  
- Pipeline.exe（管道工具）支持以下命令行参数：  
+ Pipeline.exe （管道工具） 支持以下命令行参数：  
 
 ```  
 usage: pipeline ( pipeline[.btp] | -pt pipelineTypeName [ -an assemblyName ] ) -d document... [ -part part... ] [ -s schema[.xsd][:namespace.type]... ] [ -proj project[.btproj] ] [ -p ] [ -c ] [ -t ] [ -m filenamemask ] [ -pm partfilenamemask ] [ -en encoding ] [ -v ]  
@@ -193,7 +193,7 @@ file name macros:
 
 ```  
 
- 例如，如果要使用 mySchema.xsd 从 ReceivePipeline.btp（具有 XML 拆装器和 XML 验证器组件）运行接收管道，并将结果显示到控制台，请使用以下命令：  
+ 例如，如果你想要从 receivepipeline.btp (具有 XML 拆装器和 XML 验证器组件） 运行接收管道使用 mySchema.xsd 和显示到控制台，结果，请使用以下命令：  
 
 ```  
 Pipeline.exe ReceivePipeline.btp –d file_in.xml –s MySchema.xsd:MyProject.MySchema -c  
@@ -207,7 +207,7 @@ Pipeline.exe ReceivePipeline.btp –d file_in.xml –s MySchema.xsd –proj MyPr
 
 ```  
 
- 在第一个示例中，限定的类型名称 (**MyProject.MySchema**) 架构是包含作为命令行参数。 在第二个示例中，从指定的 BizTalk 项目文件获取架构。  
+ 在第一个示例中，限定的类型名称 (**MyProject.MySchema**) 架构是包含作为命令行参数。 在第二个示例中，从指定的 BizTalk 项目文件中获取该架构。  
 
  此外可以从编译运行管道[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]项目文件，如下面的示例 （管道由其程序集限定类型名称引用） 中所示：  
 
@@ -215,24 +215,24 @@ Pipeline.exe ReceivePipeline.btp –d file_in.xml –s MySchema.xsd –proj MyPr
 Pipeline.exe -pt "TestBtsProject.ReceivePipeline, TestBtsProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e03965cb5971ad66" -d in.xml -s PO.xsd -proj TestBtsProject.btproj –c  
 ```  
 
- 在以下示例中，管道由其类型名和程序集文件名分别引用：  
+ 在以下示例中，管道引用由其类型名称和程序集文件名分别：  
 
 ```  
 Pipeline.exe -pt TestBtsProject.ReceivePipeline –an TestBtsProject.dll -d in.xml -s PO.xsd -proj TestBtsProject.btproj –c   
 ```  
 
- 以下示例显示了由其程序集名称引用的管道：  
+ 下面的示例演示其程序集名称所引用的管道：  
 
 ```  
 Pipeline.exe -pt TestBtsProject.ReceivePipeline –an "TestBtsProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e03965cb5971ad66" -d in.xml -s PO.xsd -proj TestBtsProject.btproj –c  
 ```  
 
- Pipeline.exe 运行时，使用您用于启动它的任意凭据。 它不使用的普通帐户[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]主机实例下运行，您可能不能运行包含需要数据库访问权限组件的管道。 请确保在具有所有必需权限的帐户下运行 Pipeline.exe。  
+ Pipeline.exe 运行时使用你用于启动其任何凭据。 它不使用的普通帐户[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]主机实例下运行，您可能不能运行包含需要数据库访问权限组件的管道。 请确保具有所需的所有权限的帐户下运行 Pipeline.exe。  
 
- 您应该只使用 Pipeline.exe 来验证没有第三方自定义组件的自定义管道。 如果使用 pipeline.exe 来验证有第三方自定义组件的自定义管道，Pipeline.exe 将生成所需的输出。 不过，如果部署同一个具有第三方自定义组件的自定义管道，在接收或发送端口中使用管道，然后使用 Pipeline.exe 将消息提交到管道，该管道将失败，BizTalk Server 将返回错误。  
+ 仅应使用 Pipeline.exe 来验证没有第三方自定义组件的自定义管道。 如果使用 pipeline.exe 来验证与第三方自定义组件的自定义管道，Pipeline.exe 将生成所需的输出。 但是，如果在部署具有第三方自定义组件的相同自定义管道使用管道在接收或发送端口，然后使用 Pipeline.exe 将消息提交到管道，管道将失败，BizTalk Server 将返回错误。  
 
 ### <a name="xmlasmexe"></a>XMLAsm.exe  
- XMLAsm.exe（XML 组装器工具）支持以下命令行参数：  
+ XMLAsm.exe （XML 组装器工具） 支持以下命令行参数：  
 
 ```  
 usage: xmlasm document...[-dm documentmask...] -ds documentSchema... [ -es envelopeSchema... ] [ -c ] [ -d ] [ -sd ] [ -m filenamemask ] [ -v ]  
@@ -255,7 +255,7 @@ file name macros:
 
 ```  
 
- 例如，如果您希望将两个输入 XML 文档组装到一个具有信封的 XML 文档，并将结果显示到控制台，请使用以下命令：  
+ 例如，如果你想要将两个输入的 XML 文档组装到一个具有信封的单个 XML 文档并将结果显示到控制台，使用以下命令：  
 
 ```  
 FFAsm.exe file_in1.xml file_in2.xml–es myEnvelopeSchema.xsd –ds myBodySchema.xsd –c  
@@ -287,7 +287,7 @@ file name macros:
 
 ```  
 
- 例如，如果您希望拆装具有两个嵌套信封的 XML 文档，并将结果显示到控制台，请使用以下命令：  
+ 例如，如果您希望拆装具有两个嵌套信封的 XML 文档并将结果显示到控制台，请使用以下命令：  
 
 ```  
 XmlDasm.exe file_in.txt –ds myDocumentSchema.xsd –es myEnvelopeSchema1.xsd –es myEnvelopeSchema2.xsd –c  

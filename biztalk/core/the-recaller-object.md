@@ -1,5 +1,5 @@
 ---
-title: Recaller 对象 |Microsoft 文档
+title: Recaller 对象 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,43 +17,43 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 731f7703eb9145b1249872902d0b867fe22622ec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 15ad2868892f0190cb9ebf8c63dfd6e3df200505
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279885"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394065"
 ---
 # <a name="the-recaller-object"></a>Recaller 对象
-业务流程管理解决方案支持以常规方式重试某些失败的对象方法调用。 解决方案执行此通过**Recaller**对象在**ExceptionHandler**业务流程。 **ExceptionHandler**业务流程使用对象来重试对象方法调用。 有关详细信息，请参阅[ExceptionHandler Orchestration](../core/the-exceptionhandler-orchestration.md)。  
+业务流程管理解决方案提供的重试，在泛型方法，一些失败的对象方法调用。 该解决方案的作用通过这**Recaller**对象中**ExceptionHandler**业务流程。 **ExceptionHandler**业务流程使用的对象来重试对象方法调用。 有关详细信息，请参阅[ExceptionHandler 业务流程](../core/the-exceptionhandler-orchestration.md)。  
   
-## <a name="the-invoke-method"></a>Invoke 方法  
- **Recaller**对象具有单一的静态方法**Invoke**。 由于它是静态的永远不会需要创建的实例**Recaller**对象。 你可以使用**Invoke**三种方式的方法： 若要构造一个对象，若要为对象，调用静态方法，或若要为对象调用非静态方法。  
+## <a name="the-invoke-method"></a>调用方法  
+ **Recaller**对象具有单个静态方法， **Invoke**。 因为它是静态的永远不需要创建的实例**Recaller**对象。 可以使用**Invoke**三种方式的方法： 若要构造一个对象，若要为对象，调用静态方法，或若要为对象调用非静态方法。  
   
 > [!NOTE]
->  **Invoke**方法用作包装器**为**中的方法[!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)]类库。  
+>  **Invoke**方法用作的包装**Type.InvokeMember**中的方法[!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)]类库。  
   
-### <a name="arguments-for-the-invoke-method"></a>Invoke 方法的参数  
- 下表介绍参数**Invoke**方法：  
+### <a name="arguments-for-the-invoke-method"></a>自变量调用方法  
+ 下表描述了参数**Invoke**方法：  
   
 |参数|类型|Description|  
 |---------------|----------|-----------------|  
-|*t*|**类型**|对其调用该方法的对象的类型。|  
-|*obj*|**对象**|要使用的对象的实例。|  
-|*方法名称*|**string**|要调用的方法的名称。|  
-|*参数*|**数组**|类型的数组**对象**包含方法的自变量。|  
+|*t*|**类型**|要对其调用该方法的对象的类型。|  
+|obj|**Object**|要使用的对象的实例。|  
+|*methodName*|**string**|要调用的方法的名称。|  
+|*args*|**Array**|类型的数组**对象**包含方法的参数。|  
   
- 若要为对象调用构造函数，使用空字符串 ("") 或**null**为*methodName*。  
+ 若要为对象调用构造函数，请使用空字符串 ("") 或**null**有关*methodName*。  
   
- 若要调用的静态方法，使用**null**为*obj*。  
+ 若要调用静态方法，请使用**null**有关*obj*。  
   
- 若要调用非静态方法，请提供所有参数。  
+ 若要调用非静态方法，提供的所有参数。  
   
 > [!NOTE]
->  使用**null**作为类型参数的值*t*，导致**Invoke**引发**ArgumentNullException**异常。 自变量*t*不应为 null 因为**Invoke**方法使用**为**[!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)]方法。  
+>  使用**null**作为类型参数的值*t*，导致**Invoke**引发**ArgumentNullException**异常。 自变量*t*不应为 null 因为**Invoke**方法使用**Type.InvokeMember** [!INCLUDE[btsDotNetFramework](../includes/btsdotnetframework-md.md)]方法。  
   
 ## <a name="calling-invoke"></a>调用 Invoke  
- 在解决方案中，仅**ExceptionHandler**业务流程使用**Recaller**对象。 **ExceptionHandler** ，反过来，可供其他业务流程。 值传递给**Invoke**方法来自这些其他业务流程。 例如，下面的代码将出现在**激活**中的业务流程**InitialException**表达式形状：  
+ 在解决方案中，仅**ExceptionHandler**业务流程将使用**Recaller**对象。 **ExceptionHandler** ，反过来，由其他业务流程。 传递给的值**Invoke**方法来自其他业务流程。 例如，下面的代码中将出现**激活**中的业务流程**InitialException**表达式形状：  
   
 ```  
 Ex = CodeEx;  
@@ -70,9 +70,9 @@ ReturnValue = null; // no return value expected
   
 ```  
   
- 请注意该代码如何创建数组使用**System.Array.CreateInstance**并使用**SetValue**方法来存储用于它的值。  
+ 请注意，该代码如何创建数组使用**System.Array.CreateInstance** ，并使用**SetValue**方法来存储中使用的值。  
   
- 表达式形状后激活业务流程调用**ExceptionHandler**业务流程。 以下代码显示了业务流程设计器是如何转换调用形状的：  
+ 表达式形状后，将调用 Activate 业务流程**ExceptionHandler**业务流程。 下面的代码演示如何在业务流程设计器转换调用形状：  
   
 ```  
 call Microsoft.Samples.  
@@ -92,7 +92,7 @@ call Microsoft.Samples.
   
 ```  
   
- 在**ExceptionHandler**业务流程，下面的代码将出现在**调用原始代码**表达式形状：  
+ 在中**ExceptionHandler**业务流程中，以下代码显示在**调用原始代码**表达式形状：  
   
 ```  
 ReturnValue =   
@@ -107,8 +107,8 @@ ReturnValue =
                 );  
 ```  
   
- 请注意，尽管参数名称与 Activate 业务流程的调用中的名称相匹配，但在调用业务流程时，是按顺序匹配参数，而不是按名称匹配参数。  
+ 请注意，尽管参数名称与 Activate 业务流程的调用中的匹配，参数匹配的顺序并不是按名称调用业务流程时。  
   
-## <a name="see-also"></a>另请参阅  
- [实现突出显示的业务流程管理解决方案](../core/implementation-highlights-of-the-business-process-management-solution.md)   
+## <a name="see-also"></a>请参阅  
+ [业务流程管理解决方案的实施要点](../core/implementation-highlights-of-the-business-process-management-solution.md)   
  [ExceptionHandler 业务流程](../core/the-exceptionhandler-orchestration.md)

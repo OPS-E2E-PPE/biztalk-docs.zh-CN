@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b972993026822aa66b2863a3409e35f0a1b3f434
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9a461a5db58a2ca41fdd7e42211fbb798bc6e197
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009614"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394759"
 ---
-# <a name="error-encountered-during-serialization-the-x12-functional-group-had-the-following-errors"></a>在序列化期间遇到错误。 X 12 功能组发生了以下错误
+# <a name="error-encountered-during-serialization-the-x12-functional-group-had-the-following-errors"></a>在序列化期间遇到错误。 X12 功能组发生以下错误
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                 |
@@ -33,7 +33,7 @@ ms.locfileid: "37009614"
 |  消息正文   | 在序列化期间遇到错误。 X12 功能组 id 为 '{0}，交换中包含的 id{1}，发送方 id'{2}，接收方 id{3}发生以下错误： |
   
 ## <a name="explanation"></a>解释  
- 此错误/警告/信息事件表明由于通过标识的功能指明的错误，在序列化传出的 X12 交换期间 EDI 发送管道遇到错误。  
+ 此错误/警告/信息事件表明 EDI 发送管道遇到错误，在序列化传出的 X12 交换，由于通过标识的功能组指出的错误。  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请使用错误消息中的信息来标识功能组中的错误，然后在产品帮助中确定问题解决方案。
+ 若要解决此错误，需要使用错误消息中的信息来标识功能组中的错误，然后确定问题解决方案产品帮助中。

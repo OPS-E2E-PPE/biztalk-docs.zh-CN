@@ -12,21 +12,21 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d4f693b676c1e3c0675051e9d0faf685e8b9d8df
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c07a7e4c400aea3206f8601965ceb4eca56ea8a8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021185"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367604"
 ---
 # <a name="operations-on-tables-and-views-that-contain-large-data-types-using-the-sql-adapter"></a>对表和视图包含使用 SQL 适配器的较大的数据类型的操作
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]用于以下 SQL Server 较大的数据类型提供支持：  
   
 - Varchar （max)  
   
-- Nvarchar （max)  
+- Nvarchar(Max)  
   
-- Varbinary （max)  
+- Varbinary(Max)  
   
   若要从 SQL Server 读取大型数据值[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]公开选择操作。  
   

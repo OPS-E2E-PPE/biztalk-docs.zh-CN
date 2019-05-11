@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7efff52b335acb9ab1835bdecf38caf8d0e67e71
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b31823494068dab5f106f79cc404b9b5d35ad7a1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988222"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372874"
 ---
 # <a name="send-idocs-to-sap-using-the-wcf-service-model"></a>向使用 WCF 服务模型的 SAP 发送 Idoc
 在内部，[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]将 Idoc 发送到 SAP 系统，通过调用两个以下 Rfc 之一：  

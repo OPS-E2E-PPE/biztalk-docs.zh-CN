@@ -1,5 +1,5 @@
 ---
-title: 示例 BizTalk Server 体系结构 |Microsoft 文档
+title: 示例 BizTalk Server 体系结构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,30 +14,30 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 17f512015d5f2c1fd1a3bedc002140628fde4969
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: db0ba518280f4273211eb0bba16aa6b097eb078c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269013"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393923"
 ---
 # <a name="sample-biztalk-server-architectures"></a>示例 BizTalk Server 体系结构
-为了最大限度地提高 Microsoft® BizTalk® Server 环境的安全性，建议您在使用的结构中根据 BizTalk Server 所包含数据和服务的重要性以及服务器受到攻击的可能性来分布这些服务器。  
+若要提供给你的 Microsoft® BizTalk® Server 环境最大可能的安全，建议使用将基于的数据和所包含的服务的重要程度 BizTalk 服务器分发的体系结构和如果攻击者危及服务器的含义。  
   
- 使用本部分提供的信息可以帮助确定您自己的 BizTalk Server 安全部署方式，以满足您的公司和环境的特定需求和挑战。  
+ 本部分提供信息以帮助您派生您自己的 BizTalk Server，以满足特定需求的安全部署和您的公司和环境的挑战。  
   
 ## <a name="in-this-section"></a>本节内容  
   
 -   [大型分布式体系结构](../core/large-distributed-architecture.md)  
   
--   [使用信息辅助服务的大型分布式体系结构](../core/large-distributed-architecture-with-information-worker-services.md)  
+-   [具有信息工作者服务的大型分布式体系结构](../core/large-distributed-architecture-with-information-worker-services.md)  
   
--   [服务器的命名约定](../core/server-naming-conventions.md)  
+-   [服务器命名约定](../core/server-naming-conventions.md)  
   
--   [按比例缩小体系结构](../core/scaled-down-architecture.md)  
+-   [缩减的体系结构](../core/scaled-down-architecture.md)  
   
--   [按比例缩小使用信息辅助服务的体系结构](../core/scaled-down-architecture-with-information-worker-services.md)  
+-   [具有信息工作者服务的缩减体系结构](../core/scaled-down-architecture-with-information-worker-services.md)  
   
--   [Windows 帐户，可以一种安全的分布式 BizTalk Server 部署](../core/windows-accounts-for-a-secure-distributed-biztalk-server-deployment.md)  
+-   [安全分布式 BizTalk Server 部署的 Windows 帐户](../core/windows-accounts-for-a-secure-distributed-biztalk-server-deployment.md)  
   
--   [BizTalk Server 所需的端口](../core/required-ports-for-biztalk-server.md)
+-   [BizTalk Server 必需的端口](../core/required-ports-for-biztalk-server.md)

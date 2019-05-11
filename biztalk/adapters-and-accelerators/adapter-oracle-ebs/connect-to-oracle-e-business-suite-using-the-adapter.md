@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a7ef5a7dc47b135cbeeec348c2af2d5054163d33
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 00f944cb0cf52b9e50a6e587e1e9b465ec558af6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980694"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375649"
 ---
 # <a name="connect-to-oracle-e-business-suite-using-the-adapter"></a>连接到 Oracle E-business Suite 使用适配器
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] ODP.NET 11.1.0.7 用于连接到 Oracle E-business Suite。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]要求适配器客户端提供连接字符串，调用统一资源标识符 (URI)，以连接到 Oracle E-business Suite 的连接。 在内部，[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]对通过 URI 基础的 Oracle 数据库连接。 使用一个连接 URI，适配器客户端可以指定连接参数，以连接到外部系统。  
@@ -25,12 +25,12 @@ ms.locfileid: "36980694"
 ## <a name="connectivity-to-oracle-ebs"></a>与 Oracle EBS 的连接  
  [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]使适配器客户端能够连接到 Oracle E-business Suite 中的以下两种方法：  
   
-- **使用 tnsnames.ora**： 连接适配器客户端提供的 URI 包含 tnsnames.ora 文件中指定的网络服务名称。 适配器从 tnsnames.ora 文件中的 net 服务名称条目提取如服务器名称、 服务名称和端口号的连接参数。 若要使用此方法，运行 Oracle 客户端的计算机必须配置为在 tnsnames.ora 文件中包含的 Oracle 数据库的 net 服务名称。  
+- **使用 tnsnames.ora**:连接由适配器客户端提供的 URI 包含 tnsnames.ora 文件中指定的网络服务名称。 适配器从 tnsnames.ora 文件中的 net 服务名称条目提取如服务器名称、 服务名称和端口号的连接参数。 若要使用此方法，运行 Oracle 客户端的计算机必须配置为在 tnsnames.ora 文件中包含的 Oracle 数据库的 net 服务名称。  
   
   > [!IMPORTANT]
   >  由于 Oracle 客户端限制， **DataSourceName**中的参数 （net 服务名称）[创建 SQL Server 连接 URI](../../adapters-and-accelerators/adapter-sql/create-the-sql-server-connection-uri.md)不能包含超过 39 个字符，如果您正在执行操作在事务中。 因此，请确保为指定的值**DataSourceName**参数是小于或等于 39 个字符如果您将在事务中执行的操作。  
   
-- **而无需使用 tnsnames.ora**： 连接由适配器客户端提供的 URI 包含连接参数，如服务器名称、 服务名称和端口号。 在这种情况下，net 服务名称在 tnsnames.ora 文件或实际 tnsnames.ora 文件本身，不需要在客户端计算机上显示。 如果有大量用户连接到 Oracle 数据库中你的组织，并添加/更新服务器不会导致手动添加/更新每个客户端计算机上的 tnsnames.ora 文件中的连接详细信息，这非常有用。  
+- **而无需使用 tnsnames.ora**:连接由适配器客户端提供的 URI 包含如服务器名称、 服务名称和端口号的连接参数。 在这种情况下，net 服务名称在 tnsnames.ora 文件或实际 tnsnames.ora 文件本身，不需要在客户端计算机上显示。 如果有大量用户连接到 Oracle 数据库中你的组织，并添加/更新服务器不会导致手动添加/更新每个客户端计算机上的 tnsnames.ora 文件中的连接详细信息，这非常有用。  
   
   > [!IMPORTANT]
   >  如果你在事务中执行操作，则不支持这种模式的连接。 这是由于 Oracle 客户端的限制。  

@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5dbc153e559e60b91f2ccfd04132a102b946505c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1644132db366e22e0c55fcd293bcfa82506a0c82
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977646"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370017"
 ---
 # <a name="configure-the-sign-in-credentials-for-the-sql-adapter"></a>配置 SQL 适配器的凭据登录
 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]要求适配器客户端提供客户端凭据。 若要使用 SQL Server 用户进行身份验证和建立连接，适配器将使用这些凭据。  
@@ -53,7 +53,7 @@ ms.locfileid: "36977646"
     |----------------|----------------|  
     |**无**|使用 Windows 身份验证连接到 SQL Server。|  
     |**Windows**|使用 Windows 身份验证连接到 SQL Server。|  
-    |**用户名**|通过指定 SQL Server 数据库中定义的用户凭据，指定用于连接 SQL Server 的用户名和密码。 请注意，用户名和密码区分大小写。 **注意：** 如果将保留**用户名**并**密码**字段留为空白，适配器将连接到 SQL Server 使用 Windows 身份验证。|  
+    |**用户名**|指定的用户名和密码以连接到 SQL Server 通过指定 SQL Server 数据库中定义的用户的凭据。 请注意，用户名和密码是区分大小写。 **注意：** 如果将保留**用户名**并**密码**字段留为空白，适配器将连接到 SQL Server 使用 Windows 身份验证。|  
 
 6.  单击“确定” 。  
 
@@ -70,7 +70,7 @@ ms.locfileid: "36977646"
    | **模板**  | 单击**添加适配器元数据**。 |
 
 
-3. 单击 **“添加”**。 此时[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]会打开。  
+3. 单击 **“添加”**。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]随即打开。  
 
 4. 在添加适配器向导中，选择**WCF-SQL**。 选择在其安装 BizTalk Server 的计算机和 BizTalk 数据库的名称。  
 
@@ -90,7 +90,7 @@ ms.locfileid: "36977646"
    |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |   **无**   |                                                                                                                                         使用 Windows 身份验证连接到 SQL Server。                                                                                                                                         |
    | **Windows**  |                                                                                                                                         使用 Windows 身份验证连接到 SQL Server。                                                                                                                                         |
-   | **用户名** | 通过指定 SQL Server 数据库中定义的用户凭据，指定用于连接 SQL Server 的用户名和密码。 请注意，用户名和密码区分大小写。 **注意：** 如果将保留**用户名**并**密码**字段留为空白，适配器将连接到 SQL Server 使用 Windows 身份验证。 |
+   | **用户名** | 指定的用户名和密码以连接到 SQL Server 通过指定 SQL Server 数据库中定义的用户的凭据。 请注意，用户名和密码是区分大小写。 **注意：** 如果将保留**用户名**并**密码**字段留为空白，适配器将连接到 SQL Server 使用 Windows 身份验证。 |
 
 
 8. 单击“确定” 。  
@@ -111,7 +111,7 @@ ms.locfileid: "36977646"
 
 4. 如果要创建的发送端口，请在**Wcf-custom 传输属性**对话框中，单击**凭据**选项卡，然后执行下列操作之一：  
 
-   -   选择**不使用单一登录**选项，然后指定用户名和密码以连接到 SQL Server。 请注意，用户名和密码区分大小写。  
+   -   选择**不使用单一登录**选项，然后指定用户名和密码以连接到 SQL Server。 请注意，用户名和密码是区分大小写。  
 
        > [!NOTE]
        >  如果你想要连接到 SQL Server 使用 Windows 身份验证，则指定空的用户名和密码。 中所述执行此操作之前，必须将与你登录 Windows 用户添加到 SQL Server[连接到 SQL Server 使用 Windows 身份验证与 SQL 适配器](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md)。  
@@ -120,7 +120,7 @@ ms.locfileid: "36977646"
 
 5. 如果要创建接收端口，请在**Wcf-custom 传输属性**对话框中，单击**其他**选项卡，然后执行下列操作之一：  
 
-   -   选择**用户帐户**选项，然后指定用户名和密码以连接到 SQL Server。 请注意，用户名和密码区分大小写。  
+   -   选择**用户帐户**选项，然后指定用户名和密码以连接到 SQL Server。 请注意，用户名和密码是区分大小写。  
 
        > [!NOTE]
        >  如果你想要连接到 SQL Server 使用 Windows 身份验证，则指定空的用户名和密码。 中所述执行此操作之前，必须将与你登录 Windows 用户添加到 SQL Server[连接到 SQL Server 使用 Windows 身份验证与 SQL 适配器](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md)。  
@@ -144,7 +144,7 @@ ms.locfileid: "36977646"
 
 5. 如果要创建的发送端口，在传输属性对话框中，单击**凭据**选项卡，然后执行下列操作之一：  
 
-   -   选择**不使用单一登录**选项，然后指定用户名和密码以连接到 SQL Server。 请注意，用户名和密码区分大小写。  
+   -   选择**不使用单一登录**选项，然后指定用户名和密码以连接到 SQL Server。 请注意，用户名和密码是区分大小写。  
 
        > [!NOTE]
        >  如果你想要连接到 SQL Server 使用 Windows 身份验证，则指定空的用户名和密码。 中所述执行此操作之前，必须将与你登录 Windows 用户添加到 SQL Server[连接到 SQL Server 使用 Windows 身份验证与 SQL 适配器](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md)。  
@@ -153,7 +153,7 @@ ms.locfileid: "36977646"
 
 6. 如果要创建接收端口，在传输属性对话框中，单击**其他**选项卡，然后执行下列操作之一：  
 
-   -   选择**用户帐户**选项，然后指定用户名和密码以连接到 SQL Server。 请注意，用户名和密码区分大小写。  
+   -   选择**用户帐户**选项，然后指定用户名和密码以连接到 SQL Server。 请注意，用户名和密码是区分大小写。  
 
        > [!NOTE]
        >  如果你想要连接到 SQL Server 使用 Windows 身份验证，则指定空的用户名和密码。 中所述执行此操作之前，必须将与你登录 Windows 用户添加到 SQL Server[连接到 SQL Server 使用 Windows 身份验证与 SQL 适配器](../../adapters-and-accelerators/adapter-sql/connect-to-sql-server-using-windows-authentication-with-the-sql-adapter.md)。  

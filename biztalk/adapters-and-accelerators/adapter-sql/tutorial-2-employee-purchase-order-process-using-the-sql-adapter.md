@@ -1,5 +1,5 @@
 ---
-title: 教程 2： 员工-采购订单流程使用 SQL 适配器 |Microsoft Docs
+title: 教程 2:员工-采购订单流程使用 SQL 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d14008611bfb22bf39e446e72ecb3bba4571761
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fa2e0968743f88c9ae7d5b5ca683f0fb46d81f5c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010774"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367489"
 ---
-# <a name="tutorial-2-employee---purchase-order-process-using-the-sql-adapter"></a>教程 2： 员工-采购订单流程使用 SQL 适配器
+# <a name="tutorial-2-employee---purchase-order-process-using-the-sql-adapter"></a>教程 2:员工-采购订单流程使用 SQL 适配器
 在本教程中，将自动在其中放置设备的采购部门订购每次新员工加入组织的过程。 在中维护员工详细信息和采购订单详细信息**员工**并**Purchase_Order**表分别，SQL Server 数据库中。 通过更新 SQL Server 数据库中的 Purchase_Order 表并发送一封电子邮件，采购部门将得到通知。 在进程中，执行下列操作：  
   
 1. 适配器接收的通知每次**员工**更新表。 然后，适配器向 BizTalk 业务流程发送通知。  

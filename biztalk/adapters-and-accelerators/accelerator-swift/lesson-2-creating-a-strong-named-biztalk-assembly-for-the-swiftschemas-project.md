@@ -1,5 +1,5 @@
 ---
-title: 第 2 课： 创建 swift 架构项目的强名称的 BizTalk 程序集 |Microsoft Docs
+title: 第 2 课：创建 swift 架构项目的强名称的 BizTalk 程序集 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d8e5b9ccc56b6b75ea574f956faac462e5b35dca
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 98739cfa16aa519bc67ca5a4c2b5dfa5bd2af371
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995518"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530350"
 ---
-# <a name="lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project"></a>第 2 课： 创建 swift 架构项目的强名称的 BizTalk 程序集
+# <a name="lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project"></a>第 2 课：创建 swift 架构项目的强名称的 BizTalk 程序集
 在本课程中，您创建强名称对其编译并部署 BizTalk 程序集。 强名称的程序集提供了多个安全优势：  
   
 - 强名称通过分配的数字签名和唯一的密钥对保证唯一性的程序集。  
@@ -58,4 +58,4 @@ ms.locfileid: "36995518"
   
 10. 上**文件**菜单上，单击**全部保存**以保存所做的更改。  
   
-    请继续执行[第 3 课： 将 SWIFT 架构添加到项目](../../adapters-and-accelerators/accelerator-swift/lesson-3-adding-swift-schemas-to-a-project.md)。
+    请继续执行[第 3 课：将 SWIFT 架构添加到项目](../../adapters-and-accelerators/accelerator-swift/lesson-3-adding-swift-schemas-to-a-project.md)。

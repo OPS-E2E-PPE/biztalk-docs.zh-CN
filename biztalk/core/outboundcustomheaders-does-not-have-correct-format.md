@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6d9cb9311015bfa7d88169944a206a8882b11cfe
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: db856038267ff6c8472f85e1a9b87a389a1d8047
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008918"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393448"
 ---
 # <a name="outboundcustomheaders-does-not-have-correct-format"></a>OutboundCustomHeaders 不具有正确的格式
 ## <a name="details"></a>详细信息  
@@ -30,7 +30,7 @@ ms.locfileid: "37008918"
 |  事件源   |                                         0                                          |
 |    组件    |                                         0                                          |
 |  符号名称  |                                         0                                          |
-|  消息正文   |                OutboundCustomHeaders 的格式不正确                |
+|  消息正文   |                OutboundCustomHeaders 格式不是正确的格式                |
   
 ## <a name="explanation"></a>解释  
  WCF 的值。InboundHeaders 或 WCF。OutboundCustomHeaders 不是采用以下格式：\<标头\>...\</headers\>。  

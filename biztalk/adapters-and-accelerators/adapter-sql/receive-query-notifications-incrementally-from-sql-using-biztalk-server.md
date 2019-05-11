@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e278b4e25db6c62127d2aac4ee8d29c3c422e463
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 43616dd0cb8b70d8363c39e897f81e59832ccf8e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007758"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368308"
 ---
 # <a name="receive-query-notifications-incrementally-from-sql-using-biztalk-server"></a>从使用 BizTalk Server 的 SQL 查询通知以增量方式接收
 > [!IMPORTANT]
@@ -61,7 +61,7 @@ ms.locfileid: "37007758"
         ```  
   
         > [!NOTE]
-        >  具体而言，必须指定在此所示的语句中的列名称的 SELECT 语句。 此外，您必须始终指定表名称以及架构名称。 例如， `dbo.Employee`。  
+        >  具体而言，必须指定在此所示的语句中的列名称的 SELECT 语句。 此外，您必须始终指定表名称以及架构名称。 例如，`dbo.Employee`。  
   
     -   要更新的行已为其发送通知的发送端口。 通过将值设置为 1 的状态列中执行此操作。 您可以为此选择操作的一部分，将显示以下消息发送到适配器。  
   
@@ -232,7 +232,7 @@ Select(WCF.Action) = "TableOp/Select/dbo/Employee";
 ### <a name="adding-ports"></a>添加端口  
  请确保为每个逻辑端口中指定以下属性。 端口列中列出的名称是在业务流程中显示的端口的名称。  
   
-|端口|属性|  
+|Port|属性|  
 |----------|----------------|  
 |SQLNotifyPort|-设置**标识符**到*SQLNotifyPort*<br /><br /> -设置**类型**到*SQLNotifyPortType*<br /><br /> -设置**通信模式**到*单向*<br /><br /> -设置**通信方向**到*接收*|  
 |SaveMessagePort|-设置**标识符**到*SaveMessagePort*<br /><br /> -设置**类型**到*SaveMessagePortType*<br /><br /> -设置**通信模式**到*单向*<br /><br /> -设置**通信方向**到*发送*<br /><br /> -创建一个操作*通知*。 此操作用于通知消息。<br /><br /> -创建一个操作*选择*。 此操作用于选择响应消息。|  
@@ -254,7 +254,7 @@ Select(WCF.Action) = "TableOp/Select/dbo/Employee";
  现在必须生成 BizTalk 解决方案，并将其部署到[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 有关详细信息，请参阅[构建和运行业务流程](../../core/building-and-running-orchestrations.md)。
   
 ## <a name="configuring-the-biztalk-application"></a>配置 BizTalk 应用程序  
- 部署 BizTalk 项目后，将前面创建的业务流程下列出**业务流程**BizTalk Server 管理控制台窗格中的。 必须使用 BizTalk Server 管理控制台来配置应用程序。 有关演练，请参阅[演练： 部署基本 BizTalk 应用程序](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)。
+ 部署 BizTalk 项目后，将前面创建的业务流程下列出**业务流程**BizTalk Server 管理控制台窗格中的。 必须使用 BizTalk Server 管理控制台来配置应用程序。 有关演练，请参阅[演练：部署基本 BizTalk 应用程序](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)。
   
  配置应用程序包括：  
   
@@ -270,7 +270,7 @@ Select(WCF.Action) = "TableOp/Select/dbo/Employee";
     |绑定属性|ReplTest1|  
     |----------------------|-----------|  
     |**InboundOperationType**|将此设置为**通知**。|  
-    |**NotificationStatement**|将此设置为：<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **注意：** 您必须专门的列名称在语句中指定此 SELECT 语句中所示。 此外，您必须始终指定表名称以及架构名称。 例如， `dbo.Employee`。|  
+    |**NotificationStatement**|将此设置为：<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **注意：** 具体而言，必须指定在此所示的语句中的列名称的 SELECT 语句。 此外，您必须始终指定表名称以及架构名称。 例如，`dbo.Employee`。|  
     |**NotifyOnListenerStart**|将此设置为 **，则返回 True**。|  
   
      有关不同的绑定属性的详细信息，请参阅[了解关于 BizTalk Adapter for SQL Server 适配器绑定属性](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)。  

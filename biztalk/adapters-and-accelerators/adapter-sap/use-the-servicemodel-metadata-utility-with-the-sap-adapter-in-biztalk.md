@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a8bdbf2a3b3a3c359a4c3e4912e2b6e18928023
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 12a7317ca742c6ce1909890a98738e36852f445d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003174"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372035"
 ---
 # <a name="using-the-servicemodel-metadata-utility-tool-with-the-biztalk-adapter-for-mysap-business-suite"></a>用于 mySAP Business Suite 的 BizTalk 适配器使用 ServiceModel Metadata Utility Tool
 可以使用 ServiceModel Metadata Utility Tool (svcutil.exe) 生成 WCF 客户端类或操作的 WCF 服务协定 （接口） 的[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]公开。 运行 svcutil.exe 来生成 WCF 客户端类或 WCF 服务协定后，您可以在代码中包含生成的文件和创建生成的类的实例或实现中生成的接口对 SAP 执行操作的 WCF 服务系统。  

@@ -12,18 +12,18 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 81f181cfad40c31abc0d5b3517f0d7f8d9c32d7b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2265c1509a89dca7ead1b124267182bcaaa7fa0e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002350"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374658"
 ---
 # <a name="invoke-concurrent-programs-in-oracle-e-business-suite-using-the-wcf-service-model"></a>调用 Oracle E-business Suite 使用 WCF 服务模型中的并发程序
 Oracle E-business Suite 公开您可以执行对 Oracle 应用程序的特定操作的并发程序。 每个 Oracle 应用程序一的组标准的并发程序 （即在所有操作都相同） 和某些特定于 Oracle 应用程序的并发程序。 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公开所有的并发程序作为适配器客户端可以调用的操作。 有关适配器如何支持并发程序的详细信息，请参阅[操作对并发程序](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-concurrent-programs.md)。  
   
 > [!NOTE]
->  对于那些不公开其元数据的并发程序，Oracle E-business 适配器公开这些并发程序的每个 100 的可选参数。 若要成功调用这些并发程序，用户必须请查阅 Oracle E-business Suite 文档以找出需要一个值，用于并发程序的参数，然后指定它们。 此类的并发程序的一个示例是**日记本的导入**(实际名称： **GLLEZL**) 中**总帐**应用程序。  
+>  对于那些不公开其元数据的并发程序，Oracle E-business 适配器公开这些并发程序的每个 100 的可选参数。 若要成功调用这些并发程序，用户必须请查阅 Oracle E-business Suite 文档以找出需要一个值，用于并发程序的参数，然后指定它们。 此类的并发程序的一个示例是**日记本的导入**(实际名称：**GLLEZL**) 中**总帐**应用程序。  
   
 ## <a name="about-the-examples-used-in-this-topic"></a>有关使用在本主题中的示例  
  本主题中的示例调用**MS_SAMPLE_COPY_EMP_DATA**并发程序中后, 跟**Get_Status**并发程序能够了解第一个并发程序的状态。 从这些并发程序中调用**应用程序对象库**应用程序。 **MS_SAMPLE_COPY_EMP_DATA**通过在运行这些示例提供的脚本。 有关示例的详细信息，请参阅[适用于 Oracle EBS 适配器示例](../../adapters-and-accelerators/adapter-oracle-ebs/samples-for-the-oracle-ebs-adapter.md)。 示例中， **ConcurrentProgram_ServiceModel**，后者基于本主题中，还提供与[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]示例。  
@@ -33,14 +33,14 @@ Oracle E-business Suite 公开您可以执行对 Oracle 应用程序的特定操
   
 |项目|WCF 客户端名称|  
 |--------------|---------------------|  
-|并发程序|ConcurrentPrograms_ [APP_NAME] 客户端|  
+|并发程序|ConcurrentPrograms_[APP_NAME]Client|  
   
  [A p p _] = Oracle E-business Suite 应用程序; 的实际名称例如，查找。  
   
 ### <a name="method-signature-for-invoking-concurrent-programs"></a>用于调用并发程序的方法签名  
  下表显示了并发程序的方法签名。  
   
-|运算|方法签名|  
+|操作|方法签名|  
 |---------------|----------------------|  
 |并发程序|公共\<返回类型\>< Concurrent_program_name > （参数 1，参数 2，...）|  
   

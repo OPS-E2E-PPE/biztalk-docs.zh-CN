@@ -1,5 +1,5 @@
 ---
-title: 键入组件 |Microsoft 文档
+title: TPE 的组件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 79a693a5c5d77fd331a500049560de3aba1f5311
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d5443b469a334cd02a80d499f8c638071ead25e4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231829"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391646"
 ---
 # <a name="components-of-the-tpe"></a>TPE 的组件
-本部分介绍了有关 TPE 用户界面以及它所执行的功能的信息。  
+本部分包含有关 TPE 用户界面和功能的信息执行。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [键入菜单选项](../core/tpe-menu-options.md)  
+-   [TPE 菜单选项](../core/tpe-menu-options.md)  
   
--   [活动视图是什么？](../core/what-is-an-activity-view.md)  
+-   [活动视图概述](../core/what-is-an-activity-view.md)  
   
--   [源事件视图是什么？](../core/what-is-the-source-event-view.md)  
+-   [源事件视图概述](../core/what-is-the-source-event-view.md)  
   
--   [键入活动视图节点](../core/tpe-activity-view-nodes.md)
+-   [“TPE 活动视图”节点](../core/tpe-activity-view-nodes.md)

@@ -13,27 +13,27 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d4981067305a6b1de57c393cea7d49323933a0ad
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ce12c33570189f8436752d1741957f51779d25d5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972798"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391369"
 ---
 # <a name="configure-an-edi-and-as2-status-report"></a>配置 EDI 和 AS2 状态报告
-已启用 EDI 或 AS2 状态报告，可显示状态报告后你想从**EDI 状态报告**或**EDIINT 状态报告**一部分**组中心**选项卡**组概述**页中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。 在所显示的状态报告中将看到一组默认数据。 您可以配置状态报告的如下方面：  
+已启用 EDI 或 AS2 状态报告，可显示状态报告后你想从**EDI 状态报告**或**EDIINT 状态报告**一部分**组中心**选项卡**组概述**页中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。 显示的状态报告，你将看到默认值的数据集。 你可以配置状态报告的以下方面：  
   
-- 查询表达式：运行查询表达式可确定要报告的状态的数据范围，例如，日期范围、数据方向（接收或发送）或者状态值（“已接受”、“已拒绝”、“所有”等）  
+- 用于运行以确定报告的状态，例如数据、 日期范围、 数据方向的范围的查询表达式 （接收或发送） 或者状态值 （接受，将被拒绝，所有等。）  
   
-- 显示在状态报告窗格中的数据类型：由报告中的数据列确定。  
+- 显示在状态报告窗格中，由报表中的数据列的数据类型。  
   
   > [!NOTE]
-  >  如果启用了状态报告，则所有状态都将保存在存储区中。 通过自定义查询表达式或状态列，可以定义要显示的保存数据。  
+  >  每当启用状态报告后，所有状态都将都保存在存储中。 通过自定义查询表达式或状态列，可以定义显示的已保存的数据。  
   
-  五个不同的 EDI 和 AS2 状态报告 (请参阅[类型的 EDI 和 AS2 状态报告](../core/types-of-edi-and-as2-status-reports.md))。 即使每个报告的数据有所不同，每个报告的配置方式也是相同的。  
+  五个不同的 EDI 和 AS2 状态报告 (请参阅[类型的 EDI 和 AS2 状态报告](../core/types-of-edi-and-as2-status-reports.md))。 配置每个报表的方式是相同的即使每个报表的数据不同。  
   
-## <a name="prerequisites"></a>必要條件  
- 你必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 必须以成员的身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Administrators 组。  
   
 ## <a name="configure-the-status-report-query-expression"></a>配置状态报告查询表达式  
   
@@ -43,7 +43,7 @@ ms.locfileid: "36972798"
   
 3. 在中**查询表达式**区域状态报表窗格中，验证想要定义查询的所有筛选器条件是否存在。 如果没有，请单击在空行中的向下箭头**字段名**底部的查询表达式中，并选择你想要添加到查询表达式的条件的任何筛选的列。 可以通过选择行并单击删除筛选条件行**删除**键盘上的按钮。  
   
-4. 验证筛选表达式的值是否符合预期。 如果没有，请单击向下的箭头**运算符**要选择查询操作，并输入相应的值的列**值**列。  
+4. 验证筛选器表达式的值是否为所需。 如果没有，请单击向下的箭头**运算符**要选择查询操作，并输入相应的值的列**值**列。  
   
    > [!NOTE]
    >  中所述的运算符和值可用于在查询表达式中的筛选器条件[类型的 EDI 和 AS2 状态报告](../core/types-of-edi-and-as2-status-reports.md)并**EDI-AS2 状态报告 UI** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。  

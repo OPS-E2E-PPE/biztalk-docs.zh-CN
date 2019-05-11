@@ -19,12 +19,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f012073f507026a03060a4ddf6c0574fe34186ef
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 59ede457ffd415d3ac7cae9a15ebe61cf46a1138
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004350"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372766"
 ---
 # <a name="streaming-and-the-sap-adapter"></a>流式处理和 SAP 适配器
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]支持流式处理本身和客户端应用程序之间的消息。 使用[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]调用操作和通过交换 SOAP 消息返回响应。 SOAP 消息正文组成的 XML 节点。  
@@ -92,14 +92,14 @@ ms.locfileid: "37004350"
 ## <a name="streaming-support-in-the-wcf-channel-model"></a>WCF 通道模型中的流式处理支持  
  下表提供了有关如何流式处理中的 WCF 通道模型支持的详细的信息。  
   
-|运算|流式处理的节点|节点值流式处理|Description|  
+|操作|流式处理的节点|节点值流式处理|Description|  
 |---------------|--------------------|---------------------------|-----------------|  
 |（从适配器到客户端） 的出站 RFC 和 BAPI 操作|不支持|不支持||  
 |出站 tRFC 操作 （从适配器到客户端）|不支持|不支持||  
 |发送 IDOC 的操作 （强类型）|不支持|不支持||  
-|接收 IDOC 的操作 （强类型）|是否支持|不支持||  
-|SendIdoc 操作 （字符串）|是否支持|是否支持|该适配器将使用**XmlDictionaryWriter**来使用请求消息。 如果客户端创建的消息**BodyWriter**，会出现节点值从客户端流式传输到适配器。|  
-|ReceiveIdoc 操作 （字符串）|是否支持|是否支持|该适配器将使用**BodyWriter**创建请求消息。 如果客户端使用消息使用**XmlDictionaryWriter**，会出现节点值从适配器流式传输到客户端。|  
+|接收 IDOC 的操作 （强类型）|支持|不支持||  
+|SendIdoc 操作 （字符串）|支持|支持|该适配器将使用**XmlDictionaryWriter**来使用请求消息。 如果客户端创建的消息**BodyWriter**，会出现节点值从客户端流式传输到适配器。|  
+|ReceiveIdoc 操作 （字符串）|支持|支持|该适配器将使用**BodyWriter**创建请求消息。 如果客户端使用消息使用**XmlDictionaryWriter**，会出现节点值从适配器流式传输到客户端。|  
 |RFC 的入站的操作|不支持|不支持||  
 |入站 tRFC 操作|不支持|不支持||  
   
@@ -111,14 +111,14 @@ ms.locfileid: "37004350"
 ## <a name="streaming-support-in-biztalk-server"></a>BizTalk Server 中的流式处理支持  
  下表提供了有关如何流式处理 BizTalk Server 中支持的详细的信息。  
   
-|运算|流式处理的节点|节点值流式处理|Description|  
+|操作|流式处理的节点|节点值流式处理|Description|  
 |---------------|--------------------|---------------------------|-----------------|  
 |（从适配器到客户端） 的 RFC 和 BAPI 操作|不支持|不支持||  
 |tRFC 操作 （从适配器到客户端）|不支持|不支持||  
 |发送 IDOC 的操作 （强类型）|不支持|不支持||  
-|接收 IDOC 的操作 （强类型）|是否支持|不支持||  
-|SendIdoc 操作 （字符串）|是否支持|是否支持|WCF 自定义适配器将使用**BodyWriter**创建请求消息，因此节点值流式处理支持。|  
-|ReceiveIdoc 操作 （字符串）|是否支持|是否支持|WCF 自定义适配器将使用**XmlDictionaryWriter**来使用请求消息，因此节点值流式处理支持。|  
+|接收 IDOC 的操作 （强类型）|支持|不支持||  
+|SendIdoc 操作 （字符串）|支持|支持|WCF 自定义适配器将使用**BodyWriter**创建请求消息，因此节点值流式处理支持。|  
+|ReceiveIdoc 操作 （字符串）|支持|支持|WCF 自定义适配器将使用**XmlDictionaryWriter**来使用请求消息，因此节点值流式处理支持。|  
 |RFC 的入站的操作|不支持|不支持||  
 |入站 tRFC 操作|不支持|不支持||  
   

@@ -1,5 +1,5 @@
 ---
-title: 策略测试跟踪输出示例 |Microsoft 文档
+title: 策略测试跟踪输出示例 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,18 +16,18 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6e3678769dffa03bb77c3e86fef02998a354b1fb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 365d962c7a21721e75eb3c0c5abd6e2d93bfd5aa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22266677"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394951"
 ---
 # <a name="policy-test-trace-output-examples"></a>策略测试跟踪输出示例
-本部分包含用于不同类型事实的策略测试输出的示例。  
+本部分包含不同类型的事实的策略测试输出的示例。  
   
 ## <a name="net-class"></a>.Net 类  
- 策略“ LoanProcessing” 中的示例规则“ TestRule1” ：  
+ 策略"LoanProcessing"中的示例规则"TestRule1":  
   
 ```  
 IF test.get_ID > 0  
@@ -36,70 +36,70 @@ THEN <do something>
   
  **输出：**  
   
- 对于 RULESET 的规则引擎跟踪： LoanProcessing 2004 年 3 月 16 日上午 9:50:28  
+ 规则集的规则引擎跟踪：LoanProcessing 2004 年 3 月 16 日上午 9:50:28  
   
  事实活动 2004 年 3 月 16 日上午 9:50:28  
   
- 规则引擎实例标识符: 9effe3f9-d3ad-4125-99fa-56bb379188f7  
+ 规则引擎实例标识符：9effe3f9-d3ad-4125-99fa-56bb379188f7  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作: 添加  
+ 操作：ActualRebinds  
   
- 对象类型: MyTest.test  
+ 对象类型：MyTest.test  
   
- 对象实例标识符： 872  
+ 对象实例标识符：872  
   
  条件评估测试 （匹配） 2004 年 3 月 16 日上午 9:50:28  
   
- 规则引擎实例标识符: 9effe3f9-d3ad-4125-99fa-56bb379188f7  
+ 规则引擎实例标识符：9effe3f9-d3ad-4125-99fa-56bb379188f7  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 测试表达式： MyTest.test.get_ID > 0  
+ 测试表达式：MyTest.test.get_ID > 0  
   
- 左操作数的值： 100  
+ 左的操作数的值：100  
   
- 右操作数的值： 0  
+ 右操作数的值：0  
   
- 测试结果： True  
+ 测试结果：True  
   
- 安排更新 2004 年 3 月 16 日上午 9:50:28  
+ 议程更新 2004 年 3 月 16 日上午 9:50:28  
   
- 规则引擎实例标识符: 9effe3f9-d3ad-4125-99fa-56bb379188f7  
+ 规则引擎实例标识符：9effe3f9-d3ad-4125-99fa-56bb379188f7  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作： 添加  
+ 操作：添加  
   
- 规则名称： TestRule1  
+ 规则名称：TestRule1  
   
- 冲突解决标准： 0  
+ 冲突解决标准：0  
   
  规则触发 2004 年 3 月 16 日上午 9:50:28  
   
- 规则引擎实例标识符: 9effe3f9-d3ad-4125-99fa-56bb379188f7  
+ 规则引擎实例标识符：9effe3f9-d3ad-4125-99fa-56bb379188f7  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 规则名称： TestRule1  
+ 规则名称：TestRule1  
   
- 冲突解决标准： 0  
+ 冲突解决标准：0  
   
  事实活动 2004 年 3 月 16 日上午 9:50:28  
   
- 规则引擎实例标识符: 9effe3f9-d3ad-4125-99fa-56bb379188f7  
+ 规则引擎实例标识符：9effe3f9-d3ad-4125-99fa-56bb379188f7  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作： 收回  
+ 操作：收回  
   
- 对象类型: MyTest.test  
+ 对象类型：MyTest.test  
   
- 对象实例标识符： 872  
+ 对象实例标识符：872  
   
 ## <a name="dataconnectiontypeddatarow"></a>DataConnection/TypedDataRow  
- 策略“ LoanProcessing” 中的示例规则“ TestRule1” ：  
+ 策略"LoanProcessing"中的示例规则"TestRule1":  
   
 ```  
 IF NorthWind.CustInfo.CreditCardBalance > 0  
@@ -108,188 +108,188 @@ THEN <do something>
   
  **输出：**  
   
- 对于 RULESET 的规则引擎跟踪： LoanProcessing 2004 年 3 月 16 日上午 8:30:16  
+ 规则集的规则引擎跟踪：LoanProcessing 2004 年 3 月 16 日上午 8:30:16  
   
- 事实活动 3/16/2004 8:30:16 AM  
+ 事实活动 2004 年 3 月 16 日上午 8:30:16  
   
- 规则引擎实例标识符： 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ 规则引擎实例标识符：1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作: 添加  
+ 操作：ActualRebinds  
   
- 对象类型： DataConnection:Northwind:CustInfo  
+ 对象类型：DataConnection:Northwind:CustInfo  
   
- 对象实例标识符： 874  
+ 对象实例标识符：874  
   
- 条件评估测试(匹配) 3/16/2004 8:30:16 AM  
+ 条件评估测试 （匹配） 2004 年 3 月 16 日上午 8:30:16  
   
- 规则引擎实例标识符： 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ 规则引擎实例标识符：1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
  测试表达式： 选择 * 从 [CustInfo] 其中 [CreditCardBalance] > 0  
   
- 左操作数的值：  
+ 左的操作数的值：  
   
- 右操作数的值:  
+ 右操作数的值：  
   
- 测试结果： True  
+ 测试结果：True  
   
- 事实活动 3/16/2004 8:30:16 AM  
+ 事实活动 2004 年 3 月 16 日上午 8:30:16  
   
- 规则引擎实例标识符： 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ 规则引擎实例标识符：1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作: 添加  
+ 操作：ActualRebinds  
   
- 对象类型： TypedDataRow:Northwind:CustInfo  
+ 对象类型：TypedDataRow:Northwind:CustInfo  
   
- 对象实例标识符： 177556  
+ 对象实例标识符：177556  
   
- 日程更新 3/16/2004 8:30:16 AM  
+ 议程更新 2004 年 3 月 16 日上午 8:30:16  
   
- 规则引擎实例标识符： 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ 规则引擎实例标识符：1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作： 添加  
+ 操作：添加  
   
- 规则名称： TestRule1  
+ 规则名称：TestRule1  
   
- 冲突解决标准： 0  
+ 冲突解决标准：0  
   
- 事实活动 3/16/2004 8:30:16 AM  
+ 事实活动 2004 年 3 月 16 日上午 8:30:16  
   
- 规则引擎实例标识符： 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ 规则引擎实例标识符：1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作: 添加  
+ 操作：ActualRebinds  
   
- 对象类型： TypedDataRow:Northwind:CustInfo  
+ 对象类型：TypedDataRow:Northwind:CustInfo  
   
- 对象实例标识符： 177559  
+ 对象实例标识符：177559  
   
- 日程更新 3/16/2004 8:30:16 AM  
+ 议程更新 2004 年 3 月 16 日上午 8:30:16  
   
- 规则引擎实例标识符： 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ 规则引擎实例标识符：1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作： 添加  
+ 操作：添加  
   
- 规则名称： TestRule1  
+ 规则名称：TestRule1  
   
- 冲突解决标准： 0  
+ 冲突解决标准：0  
   
- 事实活动 3/16/2004 8:30:16 AM  
+ 事实活动 2004 年 3 月 16 日上午 8:30:16  
   
- 规则引擎实例标识符： 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ 规则引擎实例标识符：1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作: 添加  
+ 操作：ActualRebinds  
   
- 对象类型： TypedDataRow:Northwind:CustInfo  
+ 对象类型：TypedDataRow:Northwind:CustInfo  
   
- 对象实例标识符： 177558  
+ 对象实例标识符：177558  
   
- 日程更新 3/16/2004 8:30:16 AM  
+ 议程更新 2004 年 3 月 16 日上午 8:30:16  
   
- 规则引擎实例标识符： 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ 规则引擎实例标识符：1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作： 添加  
+ 操作：添加  
   
- 规则名称： TestRule1  
+ 规则名称：TestRule1  
   
- 冲突解决标准： 0  
+ 冲突解决标准：0  
   
- 触发的规则 3/16/2004 8:30:16 AM  
+ 规则触发 2004 年 3 月 16 日上午 8:30:16  
   
- 规则引擎实例标识符： 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ 规则引擎实例标识符：1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 规则名称： TestRule1  
+ 规则名称：TestRule1  
   
- 冲突解决标准： 0  
+ 冲突解决标准：0  
   
- 触发的规则 3/16/2004 8:30:16 AM  
+ 规则触发 2004 年 3 月 16 日上午 8:30:16  
   
- 规则引擎实例标识符： 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ 规则引擎实例标识符：1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 规则名称： TestRule1  
+ 规则名称：TestRule1  
   
- 冲突解决标准： 0  
+ 冲突解决标准：0  
   
- 触发的规则 3/16/2004 8:30:16 AM  
+ 规则触发 2004 年 3 月 16 日上午 8:30:16  
   
- 规则引擎实例标识符： 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ 规则引擎实例标识符：1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 规则名称： TestRule1  
+ 规则名称：TestRule1  
   
- 冲突解决标准： 0  
+ 冲突解决标准：0  
   
- 事实活动 3/16/2004 8:30:16 AM  
+ 事实活动 2004 年 3 月 16 日上午 8:30:16  
   
- 规则引擎实例标识符： 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ 规则引擎实例标识符：1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作： 收回  
+ 操作：收回  
   
- 对象类型： DataConnection:Northwind:CustInfo  
+ 对象类型：DataConnection:Northwind:CustInfo  
   
- 对象实例标识符： 874  
+ 对象实例标识符：874  
   
- 事实活动 3/16/2004 8:30:16 AM  
+ 事实活动 2004 年 3 月 16 日上午 8:30:16  
   
- 规则引擎实例标识符： 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ 规则引擎实例标识符：1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作： 收回  
+ 操作：收回  
   
- 对象类型： TypedDataRow:Northwind:CustInfo  
+ 对象类型：TypedDataRow:Northwind:CustInfo  
   
- 对象实例标识符： 177559  
+ 对象实例标识符：177559  
   
- 事实活动 3/16/2004 8:30:16 AM  
+ 事实活动 2004 年 3 月 16 日上午 8:30:16  
   
- 规则引擎实例标识符： 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ 规则引擎实例标识符：1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作： 收回  
+ 操作：收回  
   
- 对象类型： TypedDataRow:Northwind:CustInfo  
+ 对象类型：TypedDataRow:Northwind:CustInfo  
   
- 对象实例标识符： 177558  
+ 对象实例标识符：177558  
   
- 事实活动 3/16/2004 8:30:16 AM  
+ 事实活动 2004 年 3 月 16 日上午 8:30:16  
   
- 规则引擎实例标识符： 1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
+ 规则引擎实例标识符：1aad35bb-0599-470b-b0fa-73b3fa1dfb83  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作： 收回  
+ 操作：收回  
   
- 对象类型： TypedDataRow:Northwind:CustInfo  
+ 对象类型：TypedDataRow:Northwind:CustInfo  
   
- 对象实例标识符： 177556  
+ 对象实例标识符：177556  
   
- 以上示例指示 CustInfo 表中有三行满足该规则中的条件。  这导致三个唯一的 TypedDataRow 被添加到引擎中并对每个实例进行了议程更新和规则触发。  
+ 上面的示例指示 CustInfo 表中的三个行满足规则中的条件。  这导致三个唯一的 Typeddatarow 被添加到引擎和议程更新和规则触发对每个实例。  
   
 ## <a name="typedatatabletypeddatarow"></a>TypeDataTable/TypedDataRow  
- 策略“ LoanProcessing” 中的示例规则“ TestRule1” ：  
+ 策略"LoanProcessing"中的示例规则"TestRule1":  
   
 ```  
 IF NorthWind.CustInfo.CreditCardBalance > 0  
@@ -298,217 +298,217 @@ THEN <do something>
   
  **输出：**  
   
- 对于 RULESET 的规则引擎跟踪： LoanProcessing 2004 年 3 月 17 日上午 11:27:35  
+ 规则集的规则引擎跟踪：LoanProcessing 2004 年 3 月 17 日上午 11:27:35  
   
  事实活动 2004 年 3 月 17 日上午 11:27:35  
   
- 规则引擎实例标识符： 0f7bcdf3-8103-4990-a740-acaeee386439  
+ 规则引擎实例标识符：0f7bcdf3-8103-4990-a740-acaeee386439  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作: 添加  
+ 操作：ActualRebinds  
   
- 对象类型： TypedDataTable:Northwind:CustInfo  
+ 对象类型：TypedDataTable:Northwind:CustInfo  
   
- 对象实例标识符： 377  
+ 对象实例标识符：377  
   
  事实活动 2004 年 3 月 17 日上午 11:27:35  
   
- 规则引擎实例标识符： 0f7bcdf3-8103-4990-a740-acaeee386439  
+ 规则引擎实例标识符：0f7bcdf3-8103-4990-a740-acaeee386439  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作: 添加  
+ 操作：ActualRebinds  
   
- 对象类型： TypedDataRow:Northwind:CustInfo  
+ 对象类型：TypedDataRow:Northwind:CustInfo  
   
- 对象实例标识符： 376  
+ 对象实例标识符：376  
   
  条件评估测试 （匹配） 2004 年 3 月 17 日上午 11:27:35  
   
- 规则引擎实例标识符： 0f7bcdf3-8103-4990-a740-acaeee386439  
+ 规则引擎实例标识符：0f7bcdf3-8103-4990-a740-acaeee386439  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 测试表达式： TypedDataRow:Northwind:CustInfo.CreditCardBalance > 0  
+ 测试表达式：TypedDataRow:Northwind:CustInfo.CreditCardBalance > 0  
   
- 左操作数的值： 500  
+ 左的操作数的值：500  
   
- 右操作数的值： 0  
+ 右操作数的值：0  
   
- 测试结果： True  
+ 测试结果：True  
   
- 安排更新 2004 年 3 月 17 日上午 11:27:35  
+ 议程更新 2004 年 3 月 17 日上午 11:27:35  
   
- 规则引擎实例标识符： 0f7bcdf3-8103-4990-a740-acaeee386439  
+ 规则引擎实例标识符：0f7bcdf3-8103-4990-a740-acaeee386439  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作： 添加  
+ 操作：添加  
   
- 规则名称： TestRule1  
+ 规则名称：TestRule1  
   
- 冲突解决标准： 0  
+ 冲突解决标准：0  
   
  事实活动 2004 年 3 月 17 日上午 11:27:35  
   
- 规则引擎实例标识符： 0f7bcdf3-8103-4990-a740-acaeee386439  
+ 规则引擎实例标识符：0f7bcdf3-8103-4990-a740-acaeee386439  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作: 添加  
+ 操作：ActualRebinds  
   
- 对象类型： TypedDataRow:Northwind:CustInfo  
+ 对象类型：TypedDataRow:Northwind:CustInfo  
   
- 对象实例标识符： 375  
+ 对象实例标识符：375  
   
  条件评估测试 （匹配） 2004 年 3 月 17 日上午 11:27:35  
   
- 规则引擎实例标识符： 0f7bcdf3-8103-4990-a740-acaeee386439  
+ 规则引擎实例标识符：0f7bcdf3-8103-4990-a740-acaeee386439  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 测试表达式： TypedDataRow:Northwind:CustInfo.CreditCardBalance > 0  
+ 测试表达式：TypedDataRow:Northwind:CustInfo.CreditCardBalance > 0  
   
- 左操作数的值： 1000年  
+ 左的操作数的值：1000  
   
- 右操作数的值： 0  
+ 右操作数的值：0  
   
- 测试结果： True  
+ 测试结果：True  
   
- 安排更新 2004 年 3 月 17 日上午 11:27:35  
+ 议程更新 2004 年 3 月 17 日上午 11:27:35  
   
- 规则引擎实例标识符： 0f7bcdf3-8103-4990-a740-acaeee386439  
+ 规则引擎实例标识符：0f7bcdf3-8103-4990-a740-acaeee386439  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作： 添加  
+ 操作：添加  
   
- 规则名称： TestRule1  
+ 规则名称：TestRule1  
   
- 冲突解决标准： 0  
+ 冲突解决标准：0  
   
  事实活动 2004 年 3 月 17 日上午 11:27:35  
   
- 规则引擎实例标识符： 0f7bcdf3-8103-4990-a740-acaeee386439  
+ 规则引擎实例标识符：0f7bcdf3-8103-4990-a740-acaeee386439  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作: 添加  
+ 操作：ActualRebinds  
   
- 对象类型： TypedDataRow:Northwind:CustInfo  
+ 对象类型：TypedDataRow:Northwind:CustInfo  
   
- 对象实例标识符： 374  
+ 对象实例标识符：374  
   
  条件评估测试 （匹配） 2004 年 3 月 17 日上午 11:27:35  
   
- 规则引擎实例标识符： 0f7bcdf3-8103-4990-a740-acaeee386439  
+ 规则引擎实例标识符：0f7bcdf3-8103-4990-a740-acaeee386439  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 测试表达式： TypedDataRow:Northwind:CustInfo.CreditCardBalance > 0  
+ 测试表达式：TypedDataRow:Northwind:CustInfo.CreditCardBalance > 0  
   
- 左操作数的值： 35000  
+ 左的操作数的值：35000  
   
- 右操作数的值： 0  
+ 右操作数的值：0  
   
- 测试结果： True  
+ 测试结果：True  
   
- 安排更新 2004 年 3 月 17 日上午 11:27:35  
+ 议程更新 2004 年 3 月 17 日上午 11:27:35  
   
- 规则引擎实例标识符： 0f7bcdf3-8103-4990-a740-acaeee386439  
+ 规则引擎实例标识符：0f7bcdf3-8103-4990-a740-acaeee386439  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作： 添加  
+ 操作：添加  
   
- 规则名称： TestRule1  
+ 规则名称：TestRule1  
   
- 冲突解决标准： 0  
-  
- 规则触发 2004 年 3 月 17 日上午 11:27:35  
-  
- 规则引擎实例标识符： 0f7bcdf3-8103-4990-a740-acaeee386439  
-  
- 规则集名称: LoanProcessing  
-  
- 规则名称： TestRule1  
-  
- 冲突解决标准： 0  
+ 冲突解决标准：0  
   
  规则触发 2004 年 3 月 17 日上午 11:27:35  
   
- 规则引擎实例标识符： 0f7bcdf3-8103-4990-a740-acaeee386439  
+ 规则引擎实例标识符：0f7bcdf3-8103-4990-a740-acaeee386439  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 规则名称： TestRule1  
+ 规则名称：TestRule1  
   
- 冲突解决标准： 0  
+ 冲突解决标准：0  
   
  规则触发 2004 年 3 月 17 日上午 11:27:35  
   
- 规则引擎实例标识符： 0f7bcdf3-8103-4990-a740-acaeee386439  
+ 规则引擎实例标识符：0f7bcdf3-8103-4990-a740-acaeee386439  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 规则名称： TestRule1  
+ 规则名称：TestRule1  
   
- 冲突解决标准： 0  
+ 冲突解决标准：0  
   
- 事实活动 2004 年 3 月 17 日上午 11:27:35  
+ 规则触发 2004 年 3 月 17 日上午 11:27:35  
   
- 规则引擎实例标识符： 0f7bcdf3-8103-4990-a740-acaeee386439  
+ 规则引擎实例标识符：0f7bcdf3-8103-4990-a740-acaeee386439  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作： 收回  
+ 规则名称：TestRule1  
   
- 对象类型： TypedDataTable:Northwind:CustInfo  
-  
- 对象实例标识符： 377  
+ 冲突解决标准：0  
   
  事实活动 2004 年 3 月 17 日上午 11:27:35  
   
- 规则引擎实例标识符： 0f7bcdf3-8103-4990-a740-acaeee386439  
+ 规则引擎实例标识符：0f7bcdf3-8103-4990-a740-acaeee386439  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作： 收回  
+ 操作：收回  
   
- 对象类型： TypedDataRow:Northwind:CustInfo  
+ 对象类型：TypedDataTable:Northwind:CustInfo  
   
- 对象实例标识符： 375  
-  
- 事实活动 2004 年 3 月 17 日上午 11:27:35  
-  
- 规则引擎实例标识符： 0f7bcdf3-8103-4990-a740-acaeee386439  
-  
- 规则集名称: LoanProcessing  
-  
- 操作： 收回  
-  
- 对象类型： TypedDataRow:Northwind:CustInfo  
-  
- 对象实例标识符： 374  
+ 对象实例标识符：377  
   
  事实活动 2004 年 3 月 17 日上午 11:27:35  
   
- 规则引擎实例标识符： 0f7bcdf3-8103-4990-a740-acaeee386439  
+ 规则引擎实例标识符：0f7bcdf3-8103-4990-a740-acaeee386439  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作： 收回  
+ 操作：收回  
   
- 对象类型： TypedDataRow:Northwind:CustInfo  
+ 对象类型：TypedDataRow:Northwind:CustInfo  
   
- 对象实例标识符： 376  
+ 对象实例标识符：375  
+  
+ 事实活动 2004 年 3 月 17 日上午 11:27:35  
+  
+ 规则引擎实例标识符：0f7bcdf3-8103-4990-a740-acaeee386439  
+  
+ 规则集名称：LoanProcessing  
+  
+ 操作：收回  
+  
+ 对象类型：TypedDataRow:Northwind:CustInfo  
+  
+ 对象实例标识符：374  
+  
+ 事实活动 2004 年 3 月 17 日上午 11:27:35  
+  
+ 规则引擎实例标识符：0f7bcdf3-8103-4990-a740-acaeee386439  
+  
+ 规则集名称：LoanProcessing  
+  
+ 操作：收回  
+  
+ 对象类型：TypedDataRow:Northwind:CustInfo  
+  
+ 对象实例标识符：376  
   
 > [!NOTE]
->  以上示例显示 TypedDataTable 包含三行，每行均作为 TypedDataRow 添加。  每行在条件中的计算结果都为 True，因而导致该规则被添加到议程中并且已触发。  
+>  上面的示例显示 TypedDataTable 包含三个行，并且每个均作为 typeddatarow 添加。  每个计算结果为 True 的条件中导致要添加到议程的规则和触发。  
   
 ## <a name="typedxmldocument"></a>TypedXmlDocument  
- 策略“ LoanProcessing” 中的示例规则“ TestRule1” ：  
+ 策略"LoanProcessing"中的示例规则"TestRule1":  
   
 ```  
 IF Microsoft.Samples.BizTalk.LoansProcessor.Case:/Root/EmploymentType.TimeInMonths >= 4  
@@ -517,100 +517,100 @@ THEN <do something>
   
  **输出：**  
   
- 对于 RULESET 的规则引擎跟踪： LoanProcessing 2004 年 3 月 17 日上午 9:23:05  
+ 规则集的规则引擎跟踪：LoanProcessing 2004 年 3 月 17 日上午 9:23:05  
   
  事实活动 2004 年 3 月 17 日上午 9:23:05  
   
- 规则引擎实例标识符： 51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
+ 规则引擎实例标识符：51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作: 添加  
+ 操作：ActualRebinds  
   
- 对象类型： TypedXmlDocument:Microsoft.Samples.BizTalk.LoansProcessor.Case  
+ 对象类型：TypedXmlDocument:Microsoft.Samples.BizTalk.LoansProcessor.Case  
   
- 对象实例标识符： 858  
+ 对象实例标识符：858  
   
  事实活动 2004 年 3 月 17 日上午 9:23:05  
   
- 规则引擎实例标识符： 51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
+ 规则引擎实例标识符：51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作: 添加  
+ 操作：ActualRebinds  
   
- 对象类型： TypedXmlDocument:Microsoft.Samples.BizTalk.LoansProcessor.Case:/Root/EmploymentType  
+ 对象类型：TypedXmlDocument:Microsoft.Samples.BizTalk.LoansProcessor.Case:/Root/EmploymentType  
   
- 对象实例标识符： 853  
+ 对象实例标识符：853  
   
  条件评估测试 （匹配） 2004 年 3 月 17 日上午 9:23:05  
   
- 规则引擎实例标识符： 51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
+ 规则引擎实例标识符：51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 测试表达式： TypedXmlDocument:Microsoft.Samples.BizTalk.LoansProcessor.Case:/Root/EmploymentType.TimeInMonths > = 4  
+ 测试表达式：TypedXmlDocument:Microsoft.Samples.BizTalk.LoansProcessor.Case:/Root/EmploymentType.TimeInMonths >= 4  
   
- 左操作数的值： 6  
+ 左的操作数的值：6  
   
- 右操作数的值： 4  
+ 右操作数的值：4  
   
- 测试结果： True  
+ 测试结果：True  
   
- 安排更新 2004 年 3 月 17 日上午 9:23:05  
+ 议程更新 2004 年 3 月 17 日上午 9:23:05  
   
- 规则引擎实例标识符： 51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
+ 规则引擎实例标识符：51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作： 添加  
+ 操作：添加  
   
- 规则名称： TestRule1  
+ 规则名称：TestRule1  
   
- 冲突解决标准： 0  
+ 冲突解决标准：0  
   
  规则触发 2004 年 3 月 17 日上午 9:23:05  
   
- 规则引擎实例标识符： 51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
+ 规则引擎实例标识符：51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 规则名称： TestRule1  
+ 规则名称：TestRule1  
   
- 冲突解决标准： 0  
-  
- 事实活动 2004 年 3 月 17 日上午 9:23:05  
-  
- 规则引擎实例标识符： 51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
-  
- 规则集名称: LoanProcessing  
-  
- 操作： 收回  
-  
- 对象类型： TypedXmlDocument:Microsoft.Samples.BizTalk.LoansProcessor.Case  
-  
- 对象实例标识符： 858  
+ 冲突解决标准：0  
   
  事实活动 2004 年 3 月 17 日上午 9:23:05  
   
- 规则引擎实例标识符： 51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
+ 规则引擎实例标识符：51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
   
- 规则集名称: LoanProcessing  
+ 规则集名称：LoanProcessing  
   
- 操作： 收回  
+ 操作：收回  
   
- 对象类型： TypedXmlDocument:Microsoft.Samples.BizTalk.LoansProcessor.Case:/Root/EmploymentType  
+ 对象类型：TypedXmlDocument:Microsoft.Samples.BizTalk.LoansProcessor.Case  
   
- 对象实例标识符： 853  
+ 对象实例标识符：858  
   
- 此示例演示**TypedXmlDocument**文档类型为"Microsoft.Samples.BizTalk.LoansProcessor.Case"引擎所断言。  接下来，根据该规则中定义的 XPath 选择器，引擎基于文档类型和选择器字符串创建和添加了类型为“Microsoft.Samples.BizTalk.LoansProcessor.Case:/Root/EmploymentType”的子级 TypedXmlDocument。  
+ 事实活动 2004 年 3 月 17 日上午 9:23:05  
   
- 此子级 TypedXmlDocument 在条件中的计算结果为 True，从而导致议程更新和规则触发。  父级和子级**TypedXmlDocument**的然后收回。  
+ 规则引擎实例标识符：51ffbea4-468f-4ce8-8ab7-977cadda2e2b  
+  
+ 规则集名称：LoanProcessing  
+  
+ 操作：收回  
+  
+ 对象类型：TypedXmlDocument:Microsoft.Samples.BizTalk.LoansProcessor.Case:/Root/EmploymentType  
+  
+ 对象实例标识符：853  
+  
+ 此示例演示**TypedXmlDocument**已添加到文档类型为"Microsoft.Samples.BizTalk.LoansProcessor.Case"引擎。  引擎根据规则中定义的 XPath 选择器，然后创建和添加"Microsoft.Samples.BizTalk.LoansProcessor.Case:/Root/EmploymentType"基于文档类型和选择器字符串类型的子级 TypedXmlDocument。  
+  
+ 此子级 TypedXmlDocument 计算结果为 True 在条件中，从而导致议程更新和规则触发。  父级和子级**TypedXmlDocument**的然后，取消。  
   
 ## <a name="update-function"></a>Update 函数  
- 示例策略“Order”  
+ 示例策略"Order"  
   
- **"InventoryCheck"规则**  
+ **"InventoryCheck" Rule**  
   
 ```  
 IF Inventory.AllocateInventory == True  
@@ -618,7 +618,7 @@ THEN Order.inventoryAvailable == True
    Update(Order)  
 ```  
   
- **"发货"规则**  
+ **"Ship"规则**  
   
 ```  
 IF Order.inventoryAvailable == True  
@@ -627,179 +627,179 @@ THEN Shipment.ShipOrder
   
  **输出：**  
   
- 对于 RULESET 的规则引擎跟踪： 排序 2004 年 3 月 17 日上午 10:31:17  
+ 规则集的规则引擎跟踪：订购 2004 年 3 月 17 日上午 10:31:17  
   
- 事实活动 3/17/2004 10:31:17 AM  
+ 事实活动 2004 年 3 月 17 日上午 10:31:17  
   
- 规则引擎实例标识符： 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ 规则引擎实例标识符：533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- Ruleset 名称： 顺序  
+ 规则集名称：订单  
   
- 操作: 添加  
+ 操作：ActualRebinds  
   
- 对象类型： TestClasses.Order  
+ 对象类型：TestClasses.Order  
   
- 对象实例标识符： 448  
+ 对象实例标识符：448  
   
- 条件评估测试(匹配) 3/17/2004 10:31:17 AM  
+ 条件评估测试 （匹配） 2004 年 3 月 17 日上午 10:31:17  
   
- 规则引擎实例标识符： 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ 规则引擎实例标识符：533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- Ruleset 名称： 顺序  
+ 规则集名称：订单  
   
- 测试表达式： TestClasses.Order.inventoryAvailable = = True  
+ 测试表达式：TestClasses.Order.inventoryAvailable == True  
   
  左操作数的值： null  
   
- 右操作数的值： True  
+ 右操作数的值：True  
   
- 测试结果： False  
+ 测试结果：False  
   
- 事实活动 3/17/2004 10:31:17 AM  
+ 事实活动 2004 年 3 月 17 日上午 10:31:17  
   
- 规则引擎实例标识符： 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ 规则引擎实例标识符：533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- Ruleset 名称： 顺序  
+ 规则集名称：订单  
   
- 操作: 添加  
+ 操作：ActualRebinds  
   
- 对象类型： TestClasses.Shipment  
+ 对象类型：TestClasses.Shipment  
   
- 对象实例标识符： 447  
+ 对象实例标识符：447  
   
- 事实活动 3/17/2004 10:31:17 AM  
+ 事实活动 2004 年 3 月 17 日上午 10:31:17  
   
- 规则引擎实例标识符： 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ 规则引擎实例标识符：533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- Ruleset 名称： 顺序  
+ 规则集名称：订单  
   
- 操作: 添加  
+ 操作：ActualRebinds  
   
- 对象类型： TestClasses.Inventory  
+ 对象类型：TestClasses.Inventory  
   
- 对象实例标识符： 446  
+ 对象实例标识符：446  
   
- 条件评估测试(匹配) 3/17/2004 10:31:17 AM  
+ 条件评估测试 （匹配） 2004 年 3 月 17 日上午 10:31:17  
   
- 规则引擎实例标识符： 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ 规则引擎实例标识符：533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- Ruleset 名称： 顺序  
+ 规则集名称：订单  
   
- 测试表达式： TestClasses.Inventory.AllocateInventory = = True  
+ 测试表达式：TestClasses.Inventory.AllocateInventory == True  
   
- 左操作数的值： True  
+ 左的操作数的值：True  
   
- 右操作数的值： True  
+ 右操作数的值：True  
   
- 测试结果： True  
+ 测试结果：True  
   
- 日程更新 3/17/2004 10:31:17 AM  
+ 议程更新 2004 年 3 月 17 日上午 10:31:17  
   
- 规则引擎实例标识符： 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ 规则引擎实例标识符：533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- Ruleset 名称： 顺序  
+ 规则集名称：订单  
   
- 操作： 添加  
+ 操作：添加  
   
- 规则名称： InventoryCheck  
+ 规则名称：InventoryCheck  
   
- 冲突解决标准： 0  
+ 冲突解决标准：0  
   
- 触发的规则 3/17/2004 10:31:17 AM  
+ 规则触发 2004 年 3 月 17 日上午 10:31:17  
   
- 规则引擎实例标识符： 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ 规则引擎实例标识符：533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- Ruleset 名称： 顺序  
+ 规则集名称：订单  
   
- 规则名称： InventoryCheck  
+ 规则名称：InventoryCheck  
   
- 冲突解决标准： 0  
+ 冲突解决标准：0  
   
- 事实活动 3/17/2004 10:31:17 AM  
+ 事实活动 2004 年 3 月 17 日上午 10:31:17  
   
- 规则引擎实例标识符： 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ 规则引擎实例标识符：533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- Ruleset 名称： 顺序  
+ 规则集名称：订单  
   
- 操作： 更新  
+ 操作：Update  
   
- 对象类型： TestClasses.Order  
+ 对象类型：TestClasses.Order  
   
- 对象实例标识符： 448  
+ 对象实例标识符：448  
   
- 条件评估测试(匹配) 3/17/2004 10:31:17 AM  
+ 条件评估测试 （匹配） 2004 年 3 月 17 日上午 10:31:17  
   
- 规则引擎实例标识符： 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ 规则引擎实例标识符：533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- Ruleset 名称： 顺序  
+ 规则集名称：订单  
   
- 测试表达式： TestClasses.Order.inventoryAvailable = = True  
+ 测试表达式：TestClasses.Order.inventoryAvailable == True  
   
- 左操作数的值： True  
+ 左的操作数的值：True  
   
- 右操作数的值： True  
+ 右操作数的值：True  
   
- 测试结果： True  
+ 测试结果：True  
   
- 日程更新 3/17/2004 10:31:17 AM  
+ 议程更新 2004 年 3 月 17 日上午 10:31:17  
   
- 规则引擎实例标识符： 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ 规则引擎实例标识符：533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- Ruleset 名称： 顺序  
+ 规则集名称：订单  
   
- 操作： 添加  
+ 操作：添加  
   
- 规则名称： 发货  
+ 规则名称：发货  
   
- 冲突解决标准： 0  
+ 冲突解决标准：0  
   
- 触发的规则 3/17/2004 10:31:17 AM  
+ 规则触发 2004 年 3 月 17 日上午 10:31:17  
   
- 规则引擎实例标识符： 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ 规则引擎实例标识符：533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- Ruleset 名称： 顺序  
+ 规则集名称：订单  
   
- 规则名称： 发货  
+ 规则名称：发货  
   
- 冲突解决标准： 0  
+ 冲突解决标准：0  
   
- 事实活动 3/17/2004 10:31:17 AM  
+ 事实活动 2004 年 3 月 17 日上午 10:31:17  
   
- 规则引擎实例标识符： 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ 规则引擎实例标识符：533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- Ruleset 名称： 顺序  
+ 规则集名称：订单  
   
- 操作： 收回  
+ 操作：收回  
   
- 对象类型： TestClasses.Order  
+ 对象类型：TestClasses.Order  
   
- 对象实例标识符： 448  
+ 对象实例标识符：448  
   
- 事实活动 3/17/2004 10:31:17 AM  
+ 事实活动 2004 年 3 月 17 日上午 10:31:17  
   
- 规则引擎实例标识符： 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ 规则引擎实例标识符：533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- Ruleset 名称： 顺序  
+ 规则集名称：订单  
   
- 操作： 收回  
+ 操作：收回  
   
- 对象类型： TestClasses.Shipment  
+ 对象类型：TestClasses.Shipment  
   
- 对象实例标识符： 447  
+ 对象实例标识符：447  
   
- 事实活动 3/17/2004 10:31:17 AM  
+ 事实活动 2004 年 3 月 17 日上午 10:31:17  
   
- 规则引擎实例标识符： 533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
+ 规则引擎实例标识符：533f2fb6-a91f-49c1-8f36-e03a27ca9d72  
   
- Ruleset 名称： 顺序  
+ 规则集名称：订单  
   
- 操作： 收回  
+ 操作：收回  
   
- 对象类型： TestClasses.Inventory  
+ 对象类型：TestClasses.Inventory  
   
- 对象实例标识符： 446  
+ 对象实例标识符：446  
   
- 在本示例中，第一次检查与 Ship 规则相关联的条件时，该条件的计算结果为 False。  但是，在触发 InventoryCheck 规则时，将更改“Order”上的“inventoryAvailable”字段，并在引擎上为“Order”对象发出 Update 命令。  这将导致对 Ship 规则进行重新计算。  重新计算后，该条件的计算结果为 True，从而触发 Ship 规则。  
+ 在此示例中，与 Ship 规则相关联的条件计算结果为 False 第一次对其进行检查。  但是，当在触发 InventoryCheck 规则触发时，更改顺序中的 inventoryavailable 字段，且在引擎上为 Order 对象发出 Update 命令。  这将导致对 Ship 规则重新计算。  此时间条件的计算结果为 true，并且 Ship 规则将触发。  
   
 > [!NOTE]
->  如果不正确地编写了规则，则具有 Update 函数的正向链接可能会导致无限循环。  如果出现这种情况，则在业务规则编辑器中测试策略时会收到错误消息，该消息文本为“规则引擎检测到执行循环”。
+>  如果你的规则编写不正确，则具有 Update 函数的正向链接可能会导致无限循环。  如果发生这种情况，你将收到一条错误消息中包含文本的业务规则编辑器测试策略时"规则引擎检测到执行循环。"

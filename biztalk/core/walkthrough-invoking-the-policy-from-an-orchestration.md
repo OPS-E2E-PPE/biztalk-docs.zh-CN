@@ -1,5 +1,5 @@
 ---
-title: 演练： 调用从业务流程的策略 |Microsoft Docs
+title: 演练：从业务流程调用策略 |Microsoft Docs
 ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 30
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 33bef51b2c702e71fcf6ef0ea0c4fd63b28fbde8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 21872a8ecab002c15cd8a108887a0a7bbb3a2b9d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976551"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395344"
 ---
-# <a name="walkthrough-invoking-the-policy-from-an-orchestration"></a>演练： 调用的策略与业务流程
-你可以通过以下方式之一从业务流程调用策略：  
+# <a name="walkthrough-invoking-the-policy-from-an-orchestration"></a>演练：从业务流程调用策略
+你可以通过以下方式之一来调用从业务流程的策略：  
 
 - 通过使用**调用规则**形状  
 
@@ -28,23 +28,23 @@ ms.locfileid: "36976551"
 
   使用**调用规则**形状是最常见的方式，还从业务流程调用策略的推荐的方法。 本演练提供了使用的分步过程**调用规则**形状来调用**ProcessPurchaseOrder**策略。  
 
-## <a name="prerequisites"></a>必要條件  
- 必须完成[演练： 测试策略](../core/walkthrough-testing-the-policy.md)执行本演练中之前的演练。  
+## <a name="prerequisites"></a>先决条件  
+ 必须完成[演练：测试策略](../core/walkthrough-testing-the-policy.md)执行本演练中之前的演练。  
 
 ## <a name="overview-of-this-walkthrough"></a>本演练概述  
- 本演练包含七个过程，如下表所述。  
+ 本演练包含七个过程，如下表中所述。  
 
 |过程标题|过程说明|  
 |---------------------|---------------------------|  
-|创建具有架构和业务流程的 BizTalk 项目|提供用于创建架构和调用的业务流程的分步说明**ProcessPurchaseOrder**策略。|  
-|创建消息变量|提供创建在业务流程中使用的消息变量的分步说明。|  
-|配置形状|提供在业务流程中配置形状的分步说明。|  
+|若要使用架构和业务流程中创建 BizTalk 项目|提供用于创建架构和调用的业务流程的分步说明**ProcessPurchaseOrder**策略。|  
+|若要创建消息变量|提供用于创建业务流程中使用的消息变量的分步说明。|  
+|若要配置形状|提供在业务流程中配置形状的分步说明。|  
 |若要创建端口|提供在业务流程中创建端口的分步说明。|  
-|将端口与形状连接|提供将端口与形状连接的分步说明。|  
-|若要生成并部署解决方案|提供生成和部署解决方案的分步说明。|  
-|若要测试解决方案|提供用于测试解决方案的分步说明。|  
+|若要将端口与形状连接|提供连接端口与形状的分步说明。|  
+|若要生成并部署解决方案|提供用于构建和部署解决方案的分步说明。|  
+|若要测试解决方案|提供用于测试该解决方案的分步说明。|  
 
-### <a name="to-create-a-biztalk-project-with-a-schema-and-an-orchestration"></a>创建具有架构和业务流程的 BizTalk 项目  
+### <a name="to-create-a-biztalk-project-with-a-schema-and-an-orchestration"></a>若要使用架构和业务流程中创建 BizTalk 项目  
 
 1. 启动**Microsoft Visual Studio**。  
 
@@ -60,14 +60,14 @@ ms.locfileid: "36976551"
    |             **名称**              |                         类型**RuleTest**。                          |
    |           **位置**            |                  指定**C:\BRE-Walkthroughs**。                   |
    |         **解决方案名称**         |                        类型**RuleTestSol**。                        |
-   | **创建解决方案的目录** | 选中此复选框以便为解决方案文件创建目录。 |
+   | **创建解决方案的目录** | 选中此复选框以创建解决方案文件的目录。 |
 
 
 4. 单击“确定” 。 **RuleTest**项目应该显示在解决方案资源管理器。 如果看不到解决方案资源管理器，请单击**解决方案资源管理器**上**视图**菜单。  
 
 5. 在解决方案资源管理器中右键单击**RuleTest**，依次指向**添加**，然后单击**现有项**。  
 
-6. 浏览并添加**PO.xsd**中创建的架构文件[演练： 创建简单业务策略](../core/walkthrough-creating-a-simple-business-policy.md)演练。 Visual Studio，可以一份**PO.xsd**文件，并将其添加到项目。  
+6. 浏览并添加**PO.xsd**中创建的架构文件[演练：创建简单业务策略](../core/walkthrough-creating-a-simple-business-policy.md)演练。 Visual Studio，可以一份**PO.xsd**文件，并将其添加到项目。  
 
 7. 在解决方案资源管理器中右键单击**RuleTest**，依次指向**添加**，然后单击**新项**。  
 
@@ -93,19 +93,19 @@ ms.locfileid: "36976551"
 
 14. 下单击鼠标右键**调用规则**形状中，依次指向**插入形状**，然后单击**发送**。  
 
-15. 在属性窗口中，将名称更改**发送**形状变为**SendPO**。 业务流程如下图所示。  
+15. 在属性窗口中，将名称更改**发送**形状变为**SendPO**。 业务流程应如下图所示。  
 
-     ![BRE&#45;演练&#45;UnconfiguredOrch](../core/media/1f3502ac-82a9-40bf-ae31-6e8356a283e2.gif "1f3502ac-82a9-40bf-ae31-6e8356a283e2")  
+     ![BRE&#45;Walkthrough&#45;UnconfiguredOrch](../core/media/1f3502ac-82a9-40bf-ae31-6e8356a283e2.gif "1f3502ac-82a9-40bf-ae31-6e8356a283e2")  
 
-### <a name="to-create-message-variables"></a>创建消息变量  
+### <a name="to-create-message-variables"></a>若要创建消息变量  
 
-1.  在业务流程视图窗口中，右键单击**消息**，然后单击**新消息**。 如果看不到业务流程视图窗口，请单击**视图**菜单，依次指向**其他 Windows**，然后单击**业务流程视图**。 通常，“业务流程视图”窗口显示在“解决方案资源管理器”选项卡的旁边。默认情况下，命名为新的消息**Message_1**。  
+1.  在业务流程视图窗口中，右键单击**消息**，然后单击**新消息**。 如果看不到业务流程视图窗口，请单击**视图**菜单，依次指向**其他 Windows**，然后单击**业务流程视图**。 通常情况下，业务流程视图窗口是解决方案资源管理器选项卡旁边的选项卡上。默认情况下，命名为新的消息**Message_1**。  
 
-     ![BRE&#45;演练&#45;OrchViewNewMsg](../core/media/a0b7fee3-af90-4c01-9464-146f0ca449e5.gif "a0b7fee3-af90-4c01-9464-146f0ca449e5")  
+     ![BRE&#45;Walkthrough&#45;OrchViewNewMsg](../core/media/a0b7fee3-af90-4c01-9464-146f0ca449e5.gif "a0b7fee3-af90-4c01-9464-146f0ca449e5")  
 
 2.  在业务流程视图窗口中，单击**Message_1**。  
 
-3.  在“属性”窗口中，执行以下操作：  
+3.  在属性窗口中执行以下步骤：  
 
     |使用此选项|执行的操作|  
     |--------------|----------------|  
@@ -114,7 +114,7 @@ ms.locfileid: "36976551"
 
      ![BRE&#45;Walkthrough&#45;MsgProps](../core/media/c82cfb67-63f6-4133-95bf-daadac0e213a.gif "c82cfb67-63f6-4133-95bf-daadac0e213a")  
 
-### <a name="to-configure-shapes"></a>配置形状  
+### <a name="to-configure-shapes"></a>若要配置形状  
 
 1. 选择**接收**形状在业务流程设计器中的。  
 
@@ -126,7 +126,7 @@ ms.locfileid: "36976551"
 
 5. 旁边**\\**<em>下文 * * 参数名称</em><em>，然后选择 **POInst</em>* 作为策略的参数。  
 
-    ![BRE&#45;演练&#45;ConfigureCallRules](../core/media/0e7dab04-41db-433b-bbf5-b13901033b41.gif "0e7dab04-41db-433b-bbf5-b13901033b41")  
+    ![BRE&#45;Walkthrough&#45;ConfigureCallRules](../core/media/0e7dab04-41db-433b-bbf5-b13901033b41.gif "0e7dab04-41db-433b-bbf5-b13901033b41")  
 
 6. 单击“确定” 。  
 
@@ -164,9 +164,9 @@ ms.locfileid: "36976551"
 
 14. 单击“下一步” ，然后单击“完成” 。  
 
-### <a name="to-connect-ports-with-the-shapes"></a>将端口与形状连接  
+### <a name="to-connect-ports-with-the-shapes"></a>若要将端口与形状连接  
 
-1.  连接**ReceivePOPrt**到端口**ReceivePO**形状。 （将端口图面上 ReceivePOPrt 端口右侧的箭头拖到 ReceivePO 形状上的框。）  
+1.  连接**ReceivePOPrt**到端口**ReceivePO**形状。 （将箭头拖到 ReceivePOPrt 端口右侧端口图面上给数字显示框以 ReceivePO 形状上。）  
 
      ![BRE&#45;Walkthrough&#45;ConnectRP](../core/media/75bdf79e-ca98-43bb-8ff6-5f46005a6490.gif "75bdf79e-ca98-43bb-8ff6-5f46005a6490")  
 
@@ -202,7 +202,7 @@ ms.locfileid: "36976551"
 
 2. 右键单击**版本 1.0-已发布**，然后单击**部署**。  
 
-3. 在中**启动**菜单中，打开**BizTalk Server 管理**。 如果 BizTalk Server 管理控制台已经打开，则按下 F5 键以便刷新它。  
+3. 在中**启动**菜单中，打开**BizTalk Server 管理**。 如果你有在 BizTalk Server 管理控制台已打开，请按 f5 键刷新。  
 
 4. 展开**控制台根节点**，展开[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，展开**BizTalk 组**，然后展开**应用程序**。  
 
@@ -210,7 +210,7 @@ ms.locfileid: "36976551"
 
 6. 单击**Orchestration_1**，并指定**BizTalkServerApplication**作为主机。  
 
-    ![BRE&#45;演练&#45;AppHost](../core/media/ba348a98-661f-4e71-8b9b-b8c5fadf035a.gif "ba348a98-661f-4e71-8b9b-b8c5fadf035a")  
+    ![BRE&#45;Walkthrough&#45;AppHost](../core/media/ba348a98-661f-4e71-8b9b-b8c5fadf035a.gif "ba348a98-661f-4e71-8b9b-b8c5fadf035a")  
 
 7. 单击“确定” 。  
 
@@ -222,26 +222,26 @@ ms.locfileid: "36976551"
 
 11. 复制**SamplePO.xml**文件从 C:\BRE-Walkthroughs 目录的 C:\BRE-Walkthroughs\RuleTestSol\Input 目录到业务流程。  
 
-12. 你应该在业务流程的 C:\BRE-Walkthroughs\RuleTestSol\Output 目录中看到输出文件。 打开输出 XML 文件，可以看到的值**状态**字段设置为**Approved**。  
+12. 您应看到业务流程的 C:\BRE-Walkthroughs\RuleTestSol\Output 目录中输出文件。 打开输出 XML 文件，可以看到的值**状态**字段设置为**Approved**。  
 
 13. 重复步骤 11 和 12 个**SamplePO2.xml**，您会发现的值**状态**输出文档中的字段是与输入文档中的相同 (**xyz**)。  
 
 ## <a name="comments"></a>注释  
 
--   在此业务流程中，为了向业务流程添加形状，你没有使用工具栏中的形状。 相反，你单击了鼠标右键，并选择了要插入的形状。  
+-   在本演练中，将形状添加到业务流程中，未使用工具箱中的形状。 不过，您可以单击鼠标右键，选择你想要插入的形状。  
 
--   配置**调用规则**形状的外观保存的最新版本时确定使用的类型。 运行时，将使用部署的最新版本。  
+-   配置**调用规则**形状的外观保存的最新版本时确定使用的类型。 在运行时，将使用部署的最新版本。  
 
 -   如果你打算使用策略版本，而不是最新的已部署版本，则应使用**表达式**形状，并调用规则引擎以编程方式来执行该特定版本的策略。 有关详细信息，请参阅[如何执行策略](../core/how-to-execute-policies.md)。  
 
 -   **调用规则**形状重新构造消息，如同使用**构造消息**形状，因而可能导致消息丢失的上下文属性。  
 
--   策略在发布之后不能修改。  
+-   发布后，不能修改的策略。  
 
--   客户端应用程序只能访问已部署的策略。 如果客户端应用程序调用未部署的策略，规则引擎将生成**RuleEngineDeploymentNotDeployedException**异常。 在应用程序事件日志中可看到详细的错误消息。  
+-   客户端应用程序可以访问已部署的策略。 如果客户端应用程序调用未部署的策略，规则引擎将生成**RuleEngineDeploymentNotDeployedException**异常。 可以看到应用程序事件日志中的详细的错误消息。  
 
 ## <a name="next-steps"></a>后续步骤  
- 现在，已完成本演练中，执行[演练： 创建和使用策略中的某一词汇](../core/walkthrough-creating-and-using-a-vocabulary-in-the-policy.md)演练中，为您提供用于创建词汇和使用词汇的分步说明**ProcessPurchaseOrder**策略。  
+ 现在，已完成本演练中，执行[演练：创建和使用策略中的某一词汇](../core/walkthrough-creating-and-using-a-vocabulary-in-the-policy.md)演练中，为您提供用于创建词汇和使用词汇的分步说明**ProcessPurchaseOrder**策略。  
 
 ## <a name="see-also"></a>请参阅  
  [条件评估和操作执行](../core/condition-evaluation-and-action-execution.md)   

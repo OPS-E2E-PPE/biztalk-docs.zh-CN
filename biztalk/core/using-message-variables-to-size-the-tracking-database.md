@@ -24,60 +24,60 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9ef731d12155ae20d7f78aaaf4a5f990b76affba
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8ac96e6784ed73dce415c78ff5f559d52be42395
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985678"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396827"
 ---
 # <a name="using-message-variables-to-size-the-tracking-database"></a>使用消息变量调整跟踪数据库的大小
-在 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中，可以使用许多变量来确定 BizTalk 跟踪 (BizTalkDTADb) 数据库在给定时间段后的大小。 这些变量包括：  
+在 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，可以使用许多变量来确定如何大型 BizTalk 跟踪 (BizTalkDTADb) 数据库将处于给定的一段时间。 这些变量包括：  
   
 - 使用的管道数  
   
-- 涉及的业务流程数  
+- 所涉及的业务流程数  
   
 - 生成的事件数  
   
-- 跟踪的消息属性数  
+- 跟踪消息属性的数目  
   
 - 创建的其他消息数  
   
-- 在指定时间范围内估计接收的消息数  
+- 估计在指定时间范围内接收的消息数  
   
-  尽管用于估算 BizTalk 跟踪数据库大小的公式简单易懂，但您必须将其应用于每个使用 BizTalk Server 实现的传入和传出消息进程。 换而言之，您需要将此公式应用于每个不同的消息方案，然后对其结果进行合计以获得最终估算的数据库大小。 在本文档中我们将介绍两个方案。 这两个方案分别是：  
+  尽管用于估算 BizTalk 跟踪数据库的大小的公式非常简单，必须先将它应用于使用 BizTalk Server 实现每个传入和传出消息进程。 换句话说，需要将每个不同的消息方案为此公式应用以及如何将结果以获得最终估算的数据库大小。 本文档中我们将介绍两种方案。 方案是：  
   
-1. 接收消息，转换该消息，然后发送生成的消息。  
+1. 接收一条消息，转换该消息，然后发送生成的消息  
   
-2. 接收消息，使用该消息运行业务流程，然后发送生成的消息。  
+2. 接收消息，运行业务流程使用的消息，并将发送生成的消息。  
   
-   这两个方案可能出现在一个 BizTalk Server 安装中，而每个方案会生成不同数量的跟踪数据。 为该 BizTalk Server 安装生成的全部跟踪数据就是这两个方案生成的总数据量。  
+   这两个方案可能会出现在 BizTalk Server 安装，并每个方案生成不同数量的跟踪数据。 跟踪生成的 BizTalk Server 安装的数据的总是所有方案的总和。  
   
-   公式中使用的一些变量如下所示：  
+   等式中使用的一些变量如下：  
   
 |变量|Description|  
 |--------------|-----------------|  
-|**Nserv**|服务数（管道数 + 业务流程数）|  
+|**Nserv**|许多服务 （管道数） + 的业务流程数|  
 |**事件**|生成的消息事件数|  
-|**属性**|跟踪的消息属性数|  
-|**PropSize**|升级属性（字段）的大小（字节）|  
-|**CMsgs**|为每个传入消息创建的其他消息数|  
-|**消息数**|给定时间段内估计传入的消息数|  
+|**属性**|跟踪消息属性的数目|  
+|**PropSize**|大小 （以字节为单位） 的升级属性 （字段）|  
+|**CMsgs**|创建每个传入消息的其他消息数|  
+|**消息数**|在给定的时间段内估计传入消息数|  
 |**MsgSize**|消息大小|  
-|**消息号**|为每个传入消息跟踪的消息数|  
+|**MsgNum**|为每个传入消息跟踪的消息数|  
   
- 该公式如下所示：  
+ 公式如下所示：  
   
 ```  
 [((Nserv * 150 bytes) + (Events * 230 bytes) + (Properties * CMsgs*(52 bytes + PropSize))) * Msgs]/1024/1024 = Data size in MB  
 ```  
   
- 此公式仅计算由消息生成的跟踪数据，不包括为业务流程调试器生成的跟踪数据。 必须将此公式应用于所有消息进程才能估算 BizTalk 跟踪数据库的大小。  
+ 此公式计算由消息生成的跟踪数据并不包括为业务流程调试器生成的跟踪数据。 必须将此公式应用于每个消息进程才能估算 BizTalk 跟踪数据库的大小。  
   
 ## <a name="see-also"></a>请参阅  
  [调整跟踪数据库来跟踪消息正文大小](../core/sizing-the-tracking-database-to-track-message-bodies.md)   
- [方案 1： 调整简单 BizTalk 消息的大小跟踪数据库](../core/scenario-1-sizing-the-tracking-database-for-simple-biztalk-messages.md)   
- [方案 2： 业务流程中消息调整跟踪数据库](../core/scenario-2-sizing-the-tracking-database-for-messages-in-orchestrations.md)   
- [方案 4： 为所有消息调整跟踪数据库](../core/scenario-4-sizing-the-tracking-database-for-all-messages.md)   
- [方案 3：为发送到通讯组列表的消息调整跟踪数据库的大小](../core/scenario-3-size-the-tracking-database-for-messages-sent-to-distribution-lists.md)
+ [方案 1：为简单 BizTalk 消息调整跟踪数据库的大小](../core/scenario-1-sizing-the-tracking-database-for-simple-biztalk-messages.md)   
+ [方案 2：为业务流程中消息调整跟踪数据库的大小](../core/scenario-2-sizing-the-tracking-database-for-messages-in-orchestrations.md)   
+ [方案 4:为所有消息调整跟踪数据库的大小](../core/scenario-4-sizing-the-tracking-database-for-all-messages.md)   
+ [方案 3:为发送到分发列表的消息调整跟踪数据库的大小](../core/scenario-3-size-the-tracking-database-for-messages-sent-to-distribution-lists.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7233c5d5f5a3669cf23931afc29dfaac8548dc3d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e1a393fc6df4674cd34e0b9131950b06e1a720ae
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022083"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395914"
 ---
 # <a name="message-routing-patterns"></a>消息路由模式
 消息路由模式定义消息路由到其目标终结点的经验证的准则。 路由可以是静态配置的结果，也可以将它动态地配置基于许多条件和使用多种方法。  
@@ -37,9 +37,9 @@ ms.locfileid: "37022083"
   
   有关实现此模式中的示例[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]，请参阅以下资源：  
   
-- [如何：使用 UDDI 绑定密钥搜索解析服务终结点](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-binding-key-search.md)  
+- [如何：解析服务终结点使用 UDDI 绑定密钥搜索](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-binding-key-search.md)  
   
-- [如何：使用 UDDI 类别搜索解析服务终结点](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-category-search.md)  
+- [如何：解析服务终结点使用 UDDI 类别搜索](../esb-toolkit/how-to-resolve-a-service-endpoint-using-a-uddi-category-search.md)  
   
 ## <a name="content-based-router"></a>基于内容的路由器  
  基于内容的路由器模式确定基于消息内容的消息接收的方。 此模式的详细说明，请参阅[基于内容的路由器](http://go.microsoft.com/fwlink/?LinkId=186839)([http://go.microsoft.com/fwlink/?LinkId=186839](http://go.microsoft.com/fwlink/?LinkId=186839)) 企业集成模式站点上。  
@@ -69,9 +69,9 @@ ms.locfileid: "37022083"
   
 - [安装和运行路线接入点示例](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)  
   
-- [如何：使用已知消息类型的业务规则策略实现基于内容的路由](../esb-toolkit/apply-content-based-routing-using-business-rules-policy-for-known-message-type.md)  
+- [如何：实现基于内容的路由使用业务规则策略为已知的消息类型](../esb-toolkit/apply-content-based-routing-using-business-rules-policy-for-known-message-type.md)  
   
-- [如何：使用业务规则策略动态路由基于消息上下文的消息](../esb-toolkit/dynamically-route-messages-based-on-message-context-using-business-rules-policy.md)  
+- [如何：动态路由基于消息上下文中使用业务规则策略的消息](../esb-toolkit/dynamically-route-messages-based-on-message-context-using-business-rules-policy.md)  
   
 ## <a name="routing-slip"></a>传送名单  
  传送名单模式描述了一条消息必须路由通过一系列中预定义的顺序，不可能在设计时已知的组件的方案。 此模式的详细说明，请参阅[传送名单](http://go.microsoft.com/fwlink/?LinkId=186840)([http://go.microsoft.com/fwlink/?LinkId=186840](http://go.microsoft.com/fwlink/?LinkId=186840)) 企业集成模式站点上。  
@@ -86,14 +86,14 @@ ms.locfileid: "37022083"
   
   有关实现此模式的详细信息，请参阅以下资源：  
   
-- [如何：使用业务规则策略选择路线](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
+- [如何：选择使用业务规则策略路线](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
   
-- [如何：转换消息并使用路线传送名单将生成的消息路由至文件位置](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
+- [如何：转换消息并将生成的消息路由到使用路线传送名单的文件位置](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
   
   > [!NOTE]
   >  除了前面的方案中，可以开发自定义路线的冲突解决程序和路线的路由服务。 你可以考虑在路线设计器中创建用于自定义路线服务的设计器扩展器。  
   
-## <a name="scatter-gather"></a>散播-聚集  
+## <a name="scatter-gather"></a>Scatter-Gather  
  散播-聚集模式可以使信息发送到多个收件人，并聚合其响应;这会导致一条消息。 此模式的详细说明，请参阅[散播-聚集](http://go.microsoft.com/fwlink/?LinkId=186841)([http://go.microsoft.com/fwlink/?LinkId=186841](http://go.microsoft.com/fwlink/?LinkId=186841)) 企业集成模式站点上。  
   
  有关实现此模式的示例，请参阅[安装和运行分散-集中示例](../esb-toolkit/installing-and-running-the-scatter-gather-sample.md)示例。  
@@ -111,9 +111,9 @@ ms.locfileid: "37022083"
   
   与路线的路由服务相关联的冲突解决程序确定基于消息内容的消息接收的方。 可以选择冲突解决程序所提供的一套[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]要实现此方案。 有关实现此模式的详细信息，请参阅以下资源：  
   
-- [如何：使用路线传送名单将单条消息路由至多个收件人](../esb-toolkit/route-a-single-message-to-multiple-recipients-using-an-itinerary-routing-slip.md)  
+- [如何：将一条消息路由到多个收件人使用路线传送名单](../esb-toolkit/route-a-single-message-to-multiple-recipients-using-an-itinerary-routing-slip.md)  
   
 ## <a name="splitter"></a>拆分器  
  拆分器模式在单个消息需要进行拆分为多个消息时解决问题。 此模式的详细说明，请参阅[Splitter](http://go.microsoft.com/fwlink/?LinkId=186843) ([http://go.microsoft.com/fwlink/?LinkId=186843](http://go.microsoft.com/fwlink/?LinkId=186843)) 企业集成模式站点上。 有关实现此模式的详细信息，请参阅以下资源：  
   
--   [如何：拆分交换并使用不同的路线将生成的消息路由至多个文件位置](../esb-toolkit/split-an-interchange-and-route-messages-to-multiple-locations-using-itineraries.md)
+-   [如何：将某个交换拆分，并将结果的消息路由到多个使用不同的路线的文件位置](../esb-toolkit/split-an-interchange-and-route-messages-to-multiple-locations-using-itineraries.md)

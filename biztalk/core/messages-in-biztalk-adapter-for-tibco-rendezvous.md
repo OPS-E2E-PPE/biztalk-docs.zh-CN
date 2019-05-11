@@ -12,53 +12,53 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d916b51e57d05fade93c4efc32eb4f6d544f2c94
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 686b8f5764c0d4832770f777cdf65b5287bd848e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005078"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394511"
 ---
-# <a name="messages-in-biztalk-adapter-for-tibco-rendezvous"></a>TIBCO Rendezvous 的 BizTalk 适配器中的消息
-用于 TIBCO Rendezvous 的 BizTalk 适配器提供了 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 和 TIBCO Rendezvous 之间的双向连接。 此适配器同时使用 TIBCO Rendezvous API 和 BizTalk 适配器框架 API 来提供紧密集成。  
+# <a name="messages-in-biztalk-adapter-for-tibco-rendezvous"></a>用于 TIBCO Rendezvous 的 BizTalk 适配器中的消息
+用于 TIBCO Rendezvous 的 BizTalk 适配器提供之间的双向连接[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]和 TIBCO Rendezvous。 此适配器使用 TIBCO Rendezvous API 和 BizTalk 适配器框架 API 来提供紧密集成。  
   
 ## <a name="about-tibco-rendezvous"></a>有关 TIBCO Rendezvous  
- TIBCO Rendezvous 是为企业应用程序集成 (EAI) 提供消息总线的程序。 TIBCO 在 C、C++、Java、Visual Basic 中提供了消息传送 API，并为 Microsoft .NET Framework 提供了用于接收 Microsoft Office Excel 工作表及其他所选应用程序上的数据馈送的消息传送 API。 有关详细信息，请参阅[TIBCO Rendezvous 概念](../core/tibco-rendezvous-concepts.md)。  
+ TIBCO Rendezvous 是为企业应用程序集成 (EAI) 提供消息总线的程序。 TIBCO 提供消息传送 Api 在 C 中， C++、 Java、 Visual Basic 和 Microsoft.NET framework，若要接收 Microsoft Office Excel 工作表和所选的其他应用程序上的数据源。 有关详细信息，请参阅[TIBCO Rendezvous 概念](../core/tibco-rendezvous-concepts.md)。  
   
 ## <a name="message-passing"></a>消息传递  
- 消息传递的基本概念相当简单：  
+ 消息传递的基本概念是相当简单：  
   
-- 消息具有单个主题，其中包含用句点分隔的元素。 尽管消息最终可能会被广播到其他后台程序，但它也会被发送到单个的 Rendezvous 后台程序。  
+- 消息具有单个主题，其中用句点分隔的元素组成。 一条消息发送到单个的 Rendezvous 后台程序，尽管可能最终需要广播其他守护程序。  
   
-- 侦听器会向后台程序宣布其感兴趣的主题（带有基本通配符）。 如果两个后台程序相互连接，或者它们实际上是同一个后台程序，则会将拥有匹配主题的消息传递到该侦听程序。  
+- 侦听器宣布其感兴趣的后台程序 （使用基本的通配符工具） 的主题。 如果两个守护程序连接到对方，或者它们实际上是同一个守护程序拥有匹配主题的消息传递到它。  
   
-  可以使用可能的“容错/可靠”或“已认证”选项，根据需要将重要的“企业”功能分层部署到此后台程序，所有操作均通过潜在的基本消息实现。  
+  重要"的企业"功能分层到此，如果所需-，容错/可靠或 Certified 选项可能进行-所有已通过基础的基本消息实现。  
   
-  消息本身可看作是键入的名称-值字段或数字-值字段（消息中的两个标识机制可以混合，并且可以与某些限制混合使用）。 消息本身可包含子消息，子消息中还可以包含子消息。  
+  消息本身可看作是键入的名称-值字段或数字-值字段 （在消息中的两个标识机制可以混合和匹配的某些限制）。 消息本身可包含子消息，可以包含子消息。  
   
-  主题名称由圆点字符（句点）分隔的一个或多个元素组成。 这些元素实现一个主题名称层次结构，反映信息在应用程序系统中的结构。 以下字符串是有效主题名称的示例：  
+  使用者名称包含一个或多个由圆点字符 （句点） 分隔的元素。 元素实现的信息的结构反映在应用程序系统中的主题名称层次结构。 以下字符串是有效的主题名称的示例：  
   
 - 运行。主页  
   
 - RUN.for.Elected_Office  
   
-  用于 TIBCO Rendezvous 的 BizTalk 适配器使用 TIBCO Rendezvous SDK 来将消息发布到 TIBCO Rendezvous 主题，并注册 TIBCO Rendezvous 事件。 与 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 相关的类在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 计算机中托管。 将启动单独的进程（运行时代理）并用作 Rendezvous 程序，.NET Framework 远程调用用于在这两者之间交换消息。  
+  用于 TIBCO Rendezvous 的 BizTalk 适配器使用 TIBCO Rendezvous SDK 将消息发布到 TIBCO Rendezvous 主题并注册 TIBCO Rendezvous 事件。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]的相关的类托管在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机。 单独的进程 （运行时代理） 启动，并且可作为 Rendezvous 程序，.NET Framework 远程处理用于这两个之间交换消息。  
   
-- 信息级别、警告级别和错误级别的消息将被发送到 Windows 事件日志。  
+- 信息级警告级别和错误级别的消息发送到 Windows 事件日志。  
   
-- 包括调试级别消息在内的所有级别的消息都将被发送到 Windows 跟踪日志。  
+- 所有级别，包括调试级别消息被都发送到 Windows 跟踪日志。  
   
 ## <a name="transmitter"></a>发送器  
- 用于 TIBCO Rendezvous 的 BizTalk 适配器会对每个发送端口启动一个运行时代理。 TIBCO Rendezvous .net Framework API 只允许在全局范围内设置字符编码。 因此，其中一个端口配置选项是代码页数。 通过为每个代码页启动不同的进程，适配器可以为全球化提供更好的支持。  
+ 用于 TIBCO Rendezvous 的 BizTalk 适配器将启动一个运行时代理，每个发送端口。 TIBCO Rendezvous.NET Framework API 只允许设置字符编码在全局范围内。 因此，一个端口配置选项是一个代码页编号。 通过启动的每个代码页不同的进程，适配器可以提供更好地支持全球化。  
   
 ## <a name="receiver"></a>接收方  
- 用于 TIBCO Rendezvous 的 BizTalk 适配器会对每个接收位置启动一个运行时代理。  
+ 用于 TIBCO Rendezvous 启动一个运行时代理，每个 BizTalk 适配器接收位置。  
   
-## <a name="transactions"></a>中的  
- TIBCO Rendezvous 产品不是事务性的。 需要一个单独的产品，即 TIBCO Rendezvous TX。 用于 TIBCO Rendezvous 的 BizTalk 适配器不支持此版本中的事务。  
+## <a name="transactions"></a>事务  
+ TIBCO Rendezvous 产品不是事务性的。 需要一个单独的产品，TIBCO Rendezvous TX。 用于 TIBCO Rendezvous 的 BizTalk 适配器不在此版本中支持事务。  
   
-## <a name="security"></a>Security  
- TIBCO Rendezvous 仅支持 TIBCO Rendezvous 程序与后台程序之间的身份验证。 它不会执行授权或加密。 需要一个单独的产品，即 TIBCO Rendezvous DataSecurity。  
+## <a name="security"></a>安全性  
+ TIBCO Rendezvous 仅支持 TIBCO Rendezvous 程序和守护程序之间的身份验证。 它不会执行授权或加密。 需要一个单独的产品，TIBCO Rendezvous DataSecurity。  
   
 ## <a name="see-also"></a>请参阅  
  [TIBCO Rendezvous 概念](../core/tibco-rendezvous-concepts.md)   

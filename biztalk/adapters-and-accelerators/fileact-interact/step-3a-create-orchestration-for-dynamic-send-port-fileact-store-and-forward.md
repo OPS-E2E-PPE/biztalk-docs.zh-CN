@@ -1,5 +1,5 @@
 ---
-title: 步骤 3A： 创建 FileAct 应用商店应用和向前 （请求） 方案的动态发送端口业务流程 |Microsoft 文档
+title: 步骤 3a:创建为 FileAct 存储和转发 （拉取） 方案的动态发送端口业务流程 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c91f9054885de1d19b467646ee7b82b342a76d6e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 346c45e35609ab6c8f74fcc9b982b9b3f5e21aaf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22223541"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65365876"
 ---
-# <a name="step-3a-create-an-orchestration-for-dynamic-send-port-for-fileact-store-and-forward-pull-scenario"></a>步骤 3A： 创建 FileAct 应用商店应用和向前 （请求） 方案的动态发送端口业务流程
-在开始此部分中的步骤之前，必须完成中的步骤[步骤 2c: FileAct 存储和转发 （请求） 方案的 FILEACT 发送端口添加](../../adapters-and-accelerators/fileact-interact/step-2c-add-a-fileact-send-port-for-fileact-store-and-forward-pull-scenario.md)部分。  
+# <a name="step-3a-create-an-orchestration-for-dynamic-send-port-for-fileact-store-and-forward-pull-scenario"></a>步骤 3a:创建为 FileAct 存储和转发 （拉取） 方案的动态发送端口业务流程
+在开始本部分中的步骤之前，必须完成中的步骤[步骤 2c:添加 FILEACT 发送端口为 FileAct 存储和转发 （拉取） 方案](../../adapters-and-accelerators/fileact-interact/step-2c-add-a-fileact-send-port-for-fileact-store-and-forward-pull-scenario.md)部分。  
   
-### <a name="to-create-an-orchestration"></a>若要创建业务流程  
+### <a name="to-create-an-orchestration"></a>若要创建一个业务流程  
   
-1.  创建订阅的所有消息类型软件 ExchangeSnFRequest 的消息的接收形状。  
+1.  创建订阅的所有消息类型 Sw ExchangeSnFRequest 的消息的接收形状。  
   
-2.  添加从 ExchangeRequestSnF 消息中获取所有所需的值是表达式形状。 请参阅下面的表达式形状示例：  
+2.  添加表达式形状 ExchangeRequestSnF 消息中获取所有所需的值。 请参阅下面的表达式形状示例：  
   
     ```  
     ExchangeSnFRequestDoc=ExchangeSnFRequest;  
@@ -49,7 +49,7 @@ ms.locfileid: "22223541"
   
     ```  
   
-3.  有关动态发送构造类型 PullSnFRequest 的消息和 URL。 请参阅分配形状的构造消息示例：  
+3.  为动态发送构造类型 PullSnFRequest 的消息和 URL。 请参阅构造消息赋值形状示例：  
   
     ```  
     PullMessage = new System.Xml.XmlDocument();  
@@ -60,21 +60,21 @@ ms.locfileid: "22223541"
   
     ```  
   
-4.  在此示例中，PullMessage 是类型软件 PullSnFRequest 的消息。  
+4.  在此示例中，PullMessage 是软件 PullSnFRequest 类型的消息。  
   
 5.  添加发送形状发送 PullMessage （拉取请求）。  
   
-6.  添加用于发送请求消息或用于对动态绑定接收的请求响应的请求-响应端口。  
+6.  添加用于发送请求消息并使用动态绑定接收的请求响应的请求-响应端口。  
   
-7.  连接到在上一步中创建的端口发送形状。  
+7.  发送形状连接上一步中创建的端口。  
   
-8.  添加一个接收形状接收 PullResponse （类型 PullSnFResponse 的消息），然后将接收形状连接与以前创建的端口。  
+8.  添加接收形状接收 PullResponse （消息类型 PullSnFResponse 的），并使用以前创建的端口连接接收形状。  
   
 9. 将响应发送到使用发送形状的相应文件夹。  
   
-10. 如果要拉取所有消息，请添加所有这些活动 （发送拉取请求和接收响应） 循环。  
+10. 如果你想要将所有消息，请添加这些活动 （发送拉取请求和接收响应） 的所有循环。  
   
-11. 添加表达式形状 CheckQueueEmpty 以保留拉动直到时间队列为空。 请参阅下面的表达式形状示例：  
+11. 添加表达式形状 CheckQueueEmpty 以保持拉动直到时间队列为空。 下面的表达式形状示例，请参阅：  
   
     ```  
     PullResponseDoc=PullResponse;  
@@ -86,7 +86,7 @@ ms.locfileid: "22223541"
   
     ```  
   
-12. 这便会设置 IsPull = false，一旦队列为空。  
+12. 这会设置 IsPull = false，一旦队列为空。  
   
-## <a name="see-also"></a>另请参阅  
- [步骤 3B： 将绑定与 FileAct 应用商店应用和向前 （请求） 方案的动态发送端口业务流程](../../adapters-and-accelerators/fileact-interact/step-3b-bind-orchestration-with-dynamic-send-for-fileact-store-and-forward.md)
+## <a name="see-also"></a>请参阅  
+ [步骤 3b:将替换为 FileAct 存储和转发 （拉取） 方案的动态发送端口业务流程绑定](../../adapters-and-accelerators/fileact-interact/step-3b-bind-orchestration-with-dynamic-send-for-fileact-store-and-forward.md)

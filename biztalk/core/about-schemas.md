@@ -1,5 +1,5 @@
 ---
-title: 有关架构 |Microsoft 文档
+title: 有关架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a452675cb11b13ae83f940ce10b09c72a622dc8b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9bda778473e1b2f79608650271ad3d250ed294cb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22224221"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362288"
 ---
 # <a name="about-schemas"></a>有关架构
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用 XML 架构定义 (XSD) 语言来定义所处理的所有消息的结构，并将这些消息结构定义称为架构。 除少数情况外，结构化消息是所有应用程序的核心。 这些结构化消息可以采用任何形式（大型或小型），并面向一系列众多的后端系统和数据存储。 创建和使用结构化消息的系统通常使用不同的格式。 结构化消息的两种最常用的格式为 XML 和平面文件。  
@@ -40,18 +40,18 @@ Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernover
   
 -   [XSD 的角色](../core/role-of-xsd.md)  
   
--   [在 Web 上找到的 XSD 资源](../core/xsd-resources-on-the-web.md)  
+-   [Web 上的 XSD 资源](../core/xsd-resources-on-the-web.md)  
   
--   [BizTalk 表示形式架构](../core/biztalk-representation-of-schemas.md)  
+-   [架构的 BizTalk 表示形式](../core/biztalk-representation-of-schemas.md)  
   
 -   [使用其他架构的架构](../core/schemas-that-use-other-schemas.md)  
   
 -   [类型重用和派生](../core/type-reuse-and-derivations.md)  
   
--   [从以前版本的 BizTalk Server 架构迁移](../core/schema-migration-from-previous-versions-of-biztalk-server.md)  
+-   [从早期版本的 BizTalk Server 迁移架构](../core/schema-migration-from-previous-versions-of-biztalk-server.md)  
   
--   [使用与控件消息处理的消息内容的方法](../core/ways-to-use-message-content-to-control-message-processing.md)  
+-   [使用消息内容控制消息处理的方法](../core/ways-to-use-message-content-to-control-message-processing.md)  
   
 -   [Visual Studio 中的架构验证](../core/schema-validation-in-visual-studio.md)  
   
--   [实例消息生成和验证](../core/instance-message-generation-and-validation.md)
+-   [实例消息的生成和验证](../core/instance-message-generation-and-validation.md)

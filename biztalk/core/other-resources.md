@@ -1,5 +1,5 @@
 ---
-title: 其他资源 |Microsoft 文档
+title: 其他资源 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -40,17 +40,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8e96a8641b1e05abe55b4613df261d15f457cfe0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b64ea6f6d4d8d18ae2452161c9381523130bfe73
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22264061"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393429"
 ---
 # <a name="other-resources"></a>其他资源
 以下资源是可以在 BizTalk 应用程序中使用的受支持外部项目类型。 资源包括：  
   
-|项目|完全限定资源类型|  
+|项目|完全限定的资源类型|  
 |--------------|-----------------------------------|  
 |**.NET 程序集**|System.BizTalk:Assembly|  
 |**BAM 定义**|System.BizTalk:Bam|  
@@ -58,12 +58,12 @@ ms.locfileid: "22264061"
 |**BizTalk 绑定文件**|System.BizTalk:BizTalkBinding|  
 |**安全证书**|System.BizTalk:Certificate|  
 |**COM 组件**|System.BizTalk:Com|  
-|**临时文件**|System.BizTalk:File|  
+|**特别文件**|System.BizTalk:File|  
 |**后续处理脚本**|System.BizTalk:PostProcessingScript|  
 |**预处理脚本**|System.BizTalk:PreProcessingScript|  
 |**策略或规则**|System.BizTalk:Rules|  
 |**虚拟目录**|System.BizTalk:WebDirectory|  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [管理资源](../core/managing-resources.md)   
  [项目](../core/artifacts.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df24fa8ee0bd51ddf919e5f88a47ceae9d0743fa
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 19ff7bbc86931523cef0845720d855e8f3f2a4f4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001366"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371191"
 ---
 # <a name="operations-on-business-services-in-siebel"></a>在 Siebel 业务服务上的操作
 Siebel 业务服务是一系列可以在 Siebel 中直接调用的业务方法。 业务组件和业务对象是关联到特定的数据和 Siebel 中的表，而业务服务调用的对象执行特定任务。  

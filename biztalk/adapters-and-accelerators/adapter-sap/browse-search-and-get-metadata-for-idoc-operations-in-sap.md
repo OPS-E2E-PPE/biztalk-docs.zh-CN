@@ -20,12 +20,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27b84c7c3ae8732caaafadfcc403808845d2ccbd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 536a7ab77073c668378d65ffa29309a14a8159ac
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996190"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374138"
 ---
 # <a name="browse-search-and-get-metadata-for-idoc-operations-in-sap"></a>浏览、 搜索和获取 IDOC 操作在 SAP 中的元数据
 本部分提供有关如何浏览、 搜索和检索元数据从 SAP IDOC 操作使用的说明[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]， [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]，或[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。 说明的大多数都是相同的所有三个用户界面。 只要为相关的用户界面提供了适用的单独操作步骤。  

@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 14b8a05a636be08e605d8d2a5bae98748fd3dbb7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e247e75d7ac1f789ee3c1747e89c1f737c6d71cc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971678"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394440"
 ---
 # <a name="missing-or-invalid-transaction-set-control-number"></a>事务集控制编号缺失或无效
 ## <a name="details"></a>详细信息  

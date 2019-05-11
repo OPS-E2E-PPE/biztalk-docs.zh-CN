@@ -12,17 +12,17 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7af5cea62d3f0ce51109d7aec8d06eb6b0abb1bd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e8c8f2bab06208037dd40a60c2dae2af849d0492
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967926"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391026"
 ---
 # <a name="configuring-general-party-properties"></a>配置常规参与方属性
 参与方或贸易合作伙伴表示业务关系中的一个参与组织。 参与方属性包含下列信息：  
 
-- 常规信息（如参与方名称）  
+- 常规信息，如参与方名称  
 
 - 与该参与方关联的发送端口  
 
@@ -30,10 +30,10 @@ ms.locfileid: "36967926"
 
   有关参与方或贸易合作伙伴的详细信息，请参阅[贸易合作伙伴](../core/trading-partners-and-business-profiles.md)。  
 
-## <a name="prerequisites"></a>必要條件  
- 必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组或 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators 组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 必须以成员的身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理员或[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]B2B Operators 组。  
 
-### <a name="to-configure-party-properties"></a>配置参与方属性  
+### <a name="to-configure-party-properties"></a>若要配置参与方属性  
 
 1. 中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，右键单击**方**，依次指向**新建**，然后单击**方**。  
 
@@ -43,19 +43,19 @@ ms.locfileid: "36967926"
    |                                                使用此选项                                                 |                                                                                                                                                                                                                                                                      执行的操作                                                                                                                                                                                                                                                                       |
    |---------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                **名称**                                                 |                                                                                                                                                                                                                                                                  输入参与方名称。                                                                                                                                                                                                                                                                  |
-   | **本地 BizTalk 处理参与方或支持来自此参与方发送消息的接收的消息** | 选中此复选框以指定该参与方代表托管 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的同一个贸易合作伙伴。 **重要说明：** 对于双方 TPM 解决方案，它使用开箱管道附带[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，必须选择至少一个参与方此复选框。 **注意：** 如果清除此复选框，将创建为此参与方协议时禁用某些属性。 |
-   |                                **其他属性 – 名称/值**                                 |                                                                                                                                                输入一个名称/值对以存储有关参与方的任何信息。 可以根据需要添加任意数量的名称/值对。 **注意：** 名称 / 值对不能由 BizTalk Server 进行任何处理; 此数据是为了仅提供信息。                                                                                                                                                 |
-   |                                               **删除**                                                |                                                                                                                                                                                                                                                     单击此项可删除所选的名称/值对。                                                                                                                                                                                                                                                     |
+   | **本地 BizTalk 处理参与方或支持来自此参与方发送消息的接收的消息** | 选中此复选框以指定该参与方代表相同的贸易合作伙伴也承载[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 **重要提示：** 对于两个参与方 TPM 解决方案，它使用开箱管道附带[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，必须选择至少一个参与方此复选框。 **注意：** 如果清除此复选框，将创建为此参与方协议时禁用某些属性。 |
+   |                                **其他属性 – 名称/值**                                 |                                                                                                                                                输入的名称-值对来存储有关参与方的任何信息。 您可以添加所需的任意多个名称 / 值对。 **注意：** 名称 / 值对不进行任何处理; 使用由 BizTalk Server此数据是为了仅提供信息。                                                                                                                                                 |
+   |                                               **删除**                                                |                                                                                                                                                                                                                                                     单击此项可删除所选的名称-值对。                                                                                                                                                                                                                                                     |
 
 
 3. 上**发送端口**页**参与方属性**对话框框中，执行以下操作。  
 
    > [!NOTE]
-   >  在 BizTalk Server 发送端口关联在协议级别完成。 **发送端口**页如的参与方属性一部分仅仅是用于向后兼容性。 每当您将发送端口与协议相关联时，发送端口设置也会传播到参与方设置，您同时会在此页面上看到发送端口关联。 但是，反之则不然。 不能将发送端口与参与方关联，然后使该发送端口自动作为协议设置的一部分使用。 有关如何将发送端口与协议相关联的详细信息，请参阅[配置将发送的端口关联 (X12)](../core/configuring-send-port-association-x12.md)或[配置发送端口关联 (EDIFACT)](../core/configuring-send-port-association-edifact.md)。  
+   >  在 BizTalk Server 发送端口关联在协议级别完成。 **发送端口**页如的参与方属性一部分仅仅是用于向后兼容性。 每当将发送端口与协议相关联，也会发送端口设置传播到参与方设置，您可以看到这个页面中的发送端口关联。 但是，反之不成立。 不能将发送端口与参与方相关联，然后使自动提供该发送端口作为协议设置的一部分。 有关如何将发送端口与协议相关联的详细信息，请参阅[配置将发送的端口关联 (X12)](../core/configuring-send-port-association-x12.md)或[配置发送端口关联 (EDIFACT)](../core/configuring-send-port-association-edifact.md)。  
 
    |       使用此选项        |                                      执行的操作                                      |
    |-----------------------|--------------------------------------------------------------------------------------|
-   | **发送端口-名称** |          从下拉列表中选择要绑定到此参与方的发送端口。          |
+   | **发送端口-名称** |          从下拉列表中，选择要绑定到此参与方的发送端口。          |
    | **发送端口-URI**  |                           显示发送端口地址。                            |
    |      **删除**       |                单击此项可从该参与方中删除所选的发送端口。                |
    |    **属性**     | 单击此项可显示**发送端口属性**所选的发送端口对话框。 |
@@ -68,11 +68,11 @@ ms.locfileid: "36967926"
    |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |       **“浏览”**       |                                                 单击此项可显示**选择证书**对话框中，在从本地计算机或其他人证书存储，应用到消息传输到参与方选择签名证书。                                                 |
    |    **公用名**     |                                                                                                                            显示所选证书的说明。                                                                                                                             |
-   |     **指纹**     | 显示用于参与方解析和签名验证的私钥证书的指纹。 证书指纹的格式 HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH，其中 H 为十六进制数字 （从 0 到 9 的数字） 或为从 A 到 F 的字母。 |
-   | **删除证书** |                                                                                                                                 单击此项可删除所显示证书。                                                                                                                                 |
+   |     **Thumbprint**     | 显示用于参与方解析和签名验证的私钥证书的指纹。 证书指纹的格式 HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH，其中 H 为十六进制数字 （从 0 到 9 的数字） 或为从 A 到 F 的字母。 |
+   | **删除证书** |                                                                                                                                 单击此项可删除所显示的证书。                                                                                                                                 |
 
 
-5. 单击**Apply**以接受这些属性，或单击**确定**即可完成配置设置。 以上任一操作均将验证设置。  
+5. 单击**Apply**以接受这些属性，或单击**确定**即可完成配置设置。 以上任一操作将验证设置。  
 
 ## <a name="see-also"></a>请参阅  
  [配置 EDI 属性](../core/configuring-edi-properties.md)

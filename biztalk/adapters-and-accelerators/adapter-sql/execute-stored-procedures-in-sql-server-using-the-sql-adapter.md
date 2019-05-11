@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c6515baa313fc6b68c62556ad5b5883500cfde8a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 61ee70f52a6d8f9b539b742ef96498f724b3adc7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021550"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369606"
 ---
 # <a name="execute-stored-procedures-in-sql-server-using-the-sql-adapter"></a>在使用 SQL 适配器的 SQL Server 中执行存储过程
 TRANSACT-SQL 和 SQL Server 中的 CLR 存储过程作为中的操作[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]下**过程**时使用的节点[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]或[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。 操作名称由[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]将与 SQL Server 中的存储过程的名称相同。 在相应的操作中公开的存储过程中的所有参数。 OUT 参数包含存储过程的返回值。 存储过程的结果集是数据集的数组。 有关数据集的详细信息，请参阅[ http://go.microsoft.com/fwlink/?LinkId=196853 ](http://go.microsoft.com/fwlink/?LinkId=196853)。 在运行时作为响应消息的一部分获取的目标对象的架构信息。  
@@ -45,8 +45,8 @@ TRANSACT-SQL 和 SQL Server 中的 CLR 存储过程作为中的操作[!INCLUDE[a
 
 |    结果集包含...     |                                                                                                                                                       存储过程                                                                                                                                                       |                                                                                                           强类型的存储的过程                                                                                                            |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  **没有名称的列**  | [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]按以下方式生成列的名称： 为没有列生成唯一 ID (GUID)"-"（连字符），然后此 GUID 字符串前缀为"C"因为生成的 GUID 可能会以数字开头，但 XML 标记名称不能。 |                                [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]会生成以下名称的列:"UnNamedColumn [column_index]"，从该位置 column_index 开始从"0"。                                |
-| **具有相同名称的列** |                                                                                第一个以外的列的名称后面附加了"*"（下划线） 后, 跟没有的情况下的随机 GUID"-"（连字符）。例如:"\\*[GUID]"。                                                                                | [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]不支持具有相同名称的列中的结果集，并引发异常。 **重要说明：** 必须确保在结果集中的列名称具有唯一的名称。 |
+|  **没有名称的列**  | [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]按以下方式生成列的名称： 为没有列生成唯一 ID (GUID)"-"（连字符），然后此 GUID 字符串前缀为"C"因为生成的 GUID 可能会以数字开头，但 XML 标记名称不能。 |                                [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]会生成以下名称的列："UnNamedColumn [column_index]"，从该位置 column_index 开始从"0"。                                |
+| **具有相同名称的列** |                                                                                第一个以外的列的名称后面附加了"*"（下划线） 后, 跟没有的情况下的随机 GUID"-"（连字符）。例如:"\\*[GUID]"。                                                                                | [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]不支持具有相同名称的列中的结果集，并引发异常。 **重要提示：** 您必须确保在结果集中的列名称具有唯一的名称。 |
 
 > [!NOTE]
 >  一般情况下，建议在结果中的所有列都设置的存储过程和强类型化的存储的过程必须命名为，并且具有唯一的名称。  

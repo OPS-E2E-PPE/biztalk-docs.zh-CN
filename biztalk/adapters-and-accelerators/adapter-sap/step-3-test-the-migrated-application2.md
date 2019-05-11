@@ -1,5 +1,5 @@
 ---
-title: 步骤 3： 测试已迁移应用程序 2 |Microsoft Docs
+title: 步骤 3：测试已迁移应用程序 2 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,21 +15,21 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cc49906e58e549a8ed9c90446b011dc3b51e0a45
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7ba3f3534153a0e1e7445a50266a9f9f2b3fd98b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017813"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372807"
 ---
-# <a name="step-3-test-the-migrated-application"></a>步骤 3： 测试已迁移应用程序
+# <a name="step-3-test-the-migrated-application"></a>步骤 3：测试已迁移应用程序
 ![第 3 部分，共 3 步](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")  
   
- **完成时间：** 5 分钟  
+ **若要完成的时间：** 5 分钟  
   
  **目标：** 在此步骤中，您将测试已迁移应用程序通过发送使用基于 WCF 的平面文件 IDOC [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
   
 - 通过将 BizTalk 业务流程中的逻辑端口映射到物理端口在 BizTalk Server 管理控制台中配置的 BizTalk 应用程序。  
   

@@ -1,5 +1,5 @@
 ---
-title: 教程： 将 BizTalk 项目迁移到 Oracle 数据库适配器 |Microsoft Docs
+title: 教程：将 BizTalk 项目迁移到 Oracle 数据库适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cdde0ae8992fc9ae0c7dd30b91b7f38733c1de2b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1aca70228a53e88ab143820e3a6bf07409844392
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999838"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375890"
 ---
-# <a name="tutorial-migrate-biztalk-projects-to-the-oracle-database-adapter"></a>教程： 将 BizTalk 项目迁移到 Oracle 数据库适配器
+# <a name="tutorial-migrate-biztalk-projects-to-the-oracle-database-adapter"></a>教程：将 BizTalk 项目迁移到 Oracle 数据库适配器
 用于与 Microsoft BizTalk Server 附带的 Oracle 数据库的 BizTalk ODBC 适配器不同于基于 WCF 的[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]在许多方面，包括：  
   
 - 创建 BizTalk 项目的设计时体验。  
@@ -46,7 +46,7 @@ ms.locfileid: "36999838"
 ## <a name="sample-used-for-the-tutorial"></a>本教程使用示例  
  基于本教程演示如何迁移 vPrev BizTalk 项目的示例 (Oracle_Migration)。 与 Microsoft 提供了示例[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。 有关详细信息，请参阅[适配器示例](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
   
 - 必须有一个 vPrev BizTalk 项目。 本教程涉及到执行插入操作客户表上的 BizTalk 项目。 通过运行提供的 SQL 脚本在 SCOTT 架构下创建客户表[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]示例。  
   

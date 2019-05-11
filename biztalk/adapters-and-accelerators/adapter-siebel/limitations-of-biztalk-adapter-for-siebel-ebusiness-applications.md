@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e47e558ccf0d9841c47911490c1cee319515fd90
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 482d48a4d67ea6c232c892045548e2ac180289db
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37019441"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371475"
 ---
 # <a name="limitations-of-biztalk-adapter-for-siebel-ebusiness-applications"></a>用于 Siebel eBusiness 应用程序的 BizTalk 适配器的限制
 以下已知的限制[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]:  

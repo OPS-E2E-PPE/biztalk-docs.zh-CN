@@ -12,34 +12,34 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6f436c9c3193a895d38df630c1bec88abfadc12c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ca67c8637f3738169e9818795eebefd9faeabe70
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022883"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390003"
 ---
 # <a name="creating-affiliate-applications"></a>创建关联应用程序
-下列步骤显示如何开始使用关联应用程序和单一登录 (SSO)。  
+以下步骤说明如何开始使用关联应用程序和单一登录 (SSO)。  
   
 > [!NOTE]
->  如果收到 SSO 错误，请确认您在配置 BizTalk Server 时使用的是域帐户，因为它会影响企业 SSO 服务的功能。 SSO 仅在域帐户下起作用。  
+>  如果收到 SSO 错误，请验证域帐户时使用在配置 BizTalk Server，因为它会影响企业 SSO 服务的功能。 SSO 仅在域帐户下起作用。  
   
 ## <a name="create-an-affiliate-application"></a>创建关联应用程序  
   
 1. 在控制面板中，打开**Services**，并验证是否正在运行企业单一登录服务。  
   
-2. 在命令提示符下，将目录更改为 Enterprise Single Sign-On 文件夹。  
+2. 在命令提示符中，将目录更改为 Enterprise Single Sign-on 文件夹。  
   
     例如：  
   
-    **C:\Program Files\Common Files\Enterprise Single Sign-on >**  
+    **C:\Program Files\Common Files\Enterprise Single Sign-On>**  
   
 3. 使用企业单一登录命令。 命令的列表，请 **-帮助**切换。  
   
     ![](../core/media/siebeladapter-23-sso-commands.gif "SiebelAdapter_23_SSO_Commands")  
   
-4. 若要使用 *.XML 作为创建关联应用程序的起始操作，请键入以下命令：  
+4. 若要使用创建的关联应用程序 *。XML 作为一个开始，请键入以下命令：  
   
     `ssomanage.exe -createapps C:\SSOtest\AffiliateApplication.xml`  
   
@@ -47,7 +47,7 @@ ms.locfileid: "37022883"
   
    - C:\SSOtest 是您的应用程序 XML 所在的文件夹。  
   
-   - AffiliateApplication.xml 是已创建的包含登录信息的应用程序 XML。  
+   - AffiliateApplication.xml 是应用程序创建的 XML，其中包含登录信息。  
   
      例如：  
   
@@ -70,11 +70,11 @@ ms.locfileid: "37022883"
   
 ## <a name="create-single-sign-on-tickets"></a>创建单一登录票证  
   
-1.  键入以下命令以便控制 SSO 票证行为：  
+1.  键入以下命令来控制 SSO 票证行为：  
   
      `ssomanage.exe -tickets yes yes`  
   
-2.  回答以下问题：  
+2.  回答的问题：  
   
      `ssomanage -tickets <allowed yes | no> <validate yes | no>`  
   
@@ -88,19 +88,19 @@ ms.locfileid: "37022883"
   
      `ssomanage -enableapp PeopleSoftApp`  
   
-2.  键入以下命令列出应用程序并验证是否已创建应用程序：  
+2.  键入以下命令列出应用程序并验证已创建应用程序：  
   
      `ssoclient.exe –listapps`  
   
-     列表中将显示可供使用的关联应用程序。  
+     在列表中显示可供使用的关联应用程序。  
   
-     **可用的应用程序用于 IBI\YourID-PeopleSoftApp**  
+     **Applications available for IBI\YourID - PeopleSoftApp**  
   
 3.  键入以下命令，设置关联应用程序凭据：  
   
      `ssoclient.exe -setcredentials PeopleSoftApp`  
   
-4.  在提示符下输入用户名和密码。 输入 PeopleSoftApp 关联应用程序的登录凭据。  
+4.  输入用户名和密码在提示进行操作。 输入 PeopleSoftApp 关联应用程序的登录凭据。  
   
      例如，输入用户标识和该用户就可以通过 SSO 服务器系统中输入的密码。  
   
@@ -110,7 +110,7 @@ ms.locfileid: "37022883"
   
     -   **确认？密码：** `******`  
   
-5.  关联应用程序将显示在用于 PeopleSoft Enterprise 的 BizTalk 适配器的“传输属性”对话框中。  
+5.  关联应用程序将显示在 PeopleSoft Enterprise 传输属性对话框的 BizTalk 适配器。  
   
 ## <a name="see-also"></a>请参阅  
  [保护适配器](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)

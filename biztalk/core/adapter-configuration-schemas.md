@@ -1,5 +1,5 @@
 ---
-title: 适配器配置架构 |Microsoft 文档
+title: 适配器配置架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,38 +12,38 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 89ca7d02c756fdbdf819e1a15069a95d0784d764
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 837e4ff704b086f5511c42f8184c1edc03928ef8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25966499"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65361564"
 ---
 # <a name="adapter-configuration-schemas"></a>适配器配置架构
-在适配器的设计时配置中使用不同类型的架构。 根据属性值的可见性和作用域，可修改和使用不同的架构。  
+在设计时适配器配置中使用不同类型的架构。 根据的可见性和作用域的属性值，不同的架构修改，使用。  
   
 ## <a name="handler-schemas"></a>处理程序架构  
- 来自处理程序的适配器配置适用于适配器及其在全局作用域的所有使用者。 管理员可以通过使用静态更改在设计时的处理程序配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台，可展开的适配器接收或发送处理程序并打开指定的主机的属性。  
+ 来自处理程序的适配器配置适用于适配器，并在全局作用域所有使用者。 管理员可以通过使用以静态方式更改在设计时的处理程序配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台，可展开的适配器接收或发送处理程序，此时指定主机的属性。  
   
- SDK 中包括的示例文件适配器有一组 XSD 文件，用于配置其接收位置、发送端口、接收处理程序和发送处理程序。 可以修改这些 XSD 文件，从而使您的自定义适配器接收所需要的配置属性。 随示例文件适配器提供的需要修改的文件为 TransmitHandler.xsd and ReceiveHandler.xsd 架构文件。 这些文件配置发送处理程序，并接收处理程序中，分别通过控制用于配置中的处理程序的属性页[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。  
+ SDK 中包含的示例文件适配器具有一组 XSD 文件用来配置其接收位置、 发送端口、 接收处理程序和发送处理程序。 修改这些 XSD 文件，使您的自定义适配器接收它需要的配置属性。 您需要修改示例文件适配器附带的文件是 TransmitHandler.xsd and ReceiveHandler.xsd 架构文件。 这些文件配置发送处理程序和接收处理程序，分别通过控制用于配置中的处理程序的属性页[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。  
   
- 使用适配器要求，创建每个终结点所需的配置属性列表。 如果所有配置属性为全局的，您可能只需要修改发送和接收端口配置。 如果需要为每个发送端口或接收位置设置适配器属性，您还必须修改接收位置和发送端口配置文件。  
+ 使用适配器要求，创建所需的每个终结点的配置属性的列表。 如果所有配置属性都是全局的可能只需要修改发送和接收端口配置。 如果需要为每个发送端口或接收位置设置适配器属性，您必须修改接收位置和发送端口配置文件。  
   
- 适配器框架提供架构扩展和高级配置选项，以支持常见的适配器配置要求。 它还提供与示例文件适配器包括在一起的架构中没有的扩展。 有关这些适配器 Framework 架构扩展的详细信息，请参阅[适配器 Framework 配置架构扩展](../core/adapter-framework-configuration-schema-extensions.md)。 有关高级的配置选项，例如自定义下拉列表编辑器和自定义类型转换器的详细信息，请参阅[适配器的高级配置组件](../core/advanced-configuration-components-for-adapters.md)。  
+ 适配器框架提供架构扩展和高级的配置选项，以支持常见的适配器配置要求。 它还提供了不在随附的示例文件适配器的架构中的扩展。 有关适配器框架架构扩展的详细信息，请参阅[适配器框架配置架构扩展](../core/adapter-framework-configuration-schema-extensions.md)。 有关高级的配置选项，例如自定义下拉编辑器和自定义类型转换器的详细信息，请参阅[适配器的高级配置组件](../core/advanced-configuration-components-for-adapters.md)。  
   
- 本主题末尾部分的代码来自 TransmitHandler.xsd 文件，它生成以下属性页。  
+ 在本主题末尾的代码来自 TransmitHandler.xsd 文件中，它生成以下属性页。  
   
  ![](../core/media/ebiz-prog-custad-sh.gif "ebiz_prog_custad_sh")  
-TransmitHandler.xsd 文件创建的发送处理程序属性页  
+发送处理程序属性页创建的 TransmitHandler.xsd 文件  
   
- 请注意，使用\<baf:designer\>， \<baf:displayname\>，和\<baf:description\>如下所示的 TransmitHandler.xsd 代码中的标记。 这些标记是适配器框架提供的自定义修饰，以便更快地生成这些属性页。  
+ 请注意，使用\<baf: designer\>， \<baf:displayname\>，并\<baf: description\>如下所示的 TransmitHandler.xsd 代码中的标记。 这些是自定义提供的适配器框架，以更快地做出这些属性页生成的修饰。  
   
- 有关所有可供使用的适配器框架中的修饰的列表，请参阅[适配器 Framework 配置架构修饰标记](../core/adapter-framework-configuration-schema-decoration-tags.md)。  
+ 有关所有可供使用适配器框架中的修饰的列表，请参阅[适配器框架配置架构修饰标记](../core/adapter-framework-configuration-schema-decoration-tags.md)。  
   
- 注意，架构只有一个元素，不包含 URI 元素。  
+ 请注意，架构只有一个元素不包含 URI 元素。  
   
 > [!IMPORTANT]
->  不要将敏感的客户数据存储在默认适配器架构中。 为安全起见，应当只在部署适配器之后才配置用户名和密码信息。 这样可以确保信息存储在企业单一登录 (SSO) 数据库中。 SSO 数据库有关的详细信息，请参阅[使用 SSO](../core/using-sso.md)。  
+>  在默认适配器架构中存储敏感的客户数据。 出于安全原因，只在部署适配器之后才配置用户名和密码信息。 这可确保信息获取存储在企业单一登录 (SSO) 数据库。 有关 SSO 数据库的详细信息，请参阅[使用 SSO](../core/using-sso.md)。  
   
 ```  
 <?xml version="1.0" encoding="utf-16"?>  
@@ -98,18 +98,18 @@ number of threads per CPU to execute in the thread pool</baf:description>
 ```  
   
 ## <a name="send-port-and-receive-location-schemas"></a>发送端口和接收位置架构  
- 若要为适配器设置特定于端口的属性，请修改接收位置和发送端口配置架构。 TransmitLocation.xsd 和 ReceiveLocation.xsd 架构文件分别配置发送端口和接收位置。  
+ 若要为适配器设置特定于端口的属性，修改接收位置和发送端口配置架构。 TransmitLocation.xsd 和 ReceiveLocation.xsd 架构文件配置发送端口和接收位置，分别。  
   
- 适配器框架提供架构扩展和高级配置选项，以支持常见的适配器配置要求。 有关这些适配器 Framework 架构扩展的详细信息，请参阅[适配器 Framework 配置架构扩展](../core/adapter-framework-configuration-schema-extensions.md)。 有关高级的配置选项，例如自定义下拉列表编辑器和自定义类型转换器的详细信息，请参阅[适配器的高级配置组件](../core/advanced-configuration-components-for-adapters.md)。  
+ 适配器框架提供架构扩展和高级的配置选项，以支持常见的适配器配置要求。 有关适配器框架架构扩展的详细信息，请参阅[适配器框架配置架构扩展](../core/adapter-framework-configuration-schema-extensions.md)。 有关高级的配置选项，例如自定义下拉编辑器和自定义类型转换器的详细信息，请参阅[适配器的高级配置组件](../core/advanced-configuration-components-for-adapters.md)。  
   
- 下面的代码来自 TransmitLocation.xsd 文件，它生成以下属性页。  
+ 下面的代码来自 TransmitLocation.xsd 文件中，并生成以下属性页。  
   
  ![](../core/media/ebiz-prog-custad-sp.gif "ebiz_prog_custad_sp")  
-解释示例文件适配器的发送端口属性页  
+说明了示例文件适配器的发送端口属性页  
   
- 请注意下面 TransmitLocation.xsd 文件中，发送端口配置包含\<baf:designer\>， \<baf:displayname\>，和\<baf:description\>标记，就像发送处理程序，而且它还使用\<baf:category\>标记。 类别标记允许您将属性一起分组。 如果有一个以上的类别，则类别是可展开的、可折叠的，并且作为标题以灰色显示在该类别中属性上方。 有关详细信息，请参阅[适配器 Framework 配置架构扩展](../core/adapter-framework-configuration-schema-extensions.md)。  
+ 请注意在下面的 TransmitLocation.xsd 文件中的发送端口配置包含\<baf: designer\>， \<baf:displayname\>，并\<baf: description\>标记，就像发送处理程序，它也使用\<baf:category\>标记。 类别标记允许您将组属性在一起。 如果有多个类别，类别是可展开和折叠和作为该类别中属性上方的标头显示为灰色。 有关详细信息，请参阅[适配器框架配置架构扩展](../core/adapter-framework-configuration-schema-extensions.md)。  
   
- 此架构还包含 URI 字段。 此字段填充在当您在适配器执行的验证处理期间在发送端口属性页上输入所有字段信息后显示的页面上。  
+ 此架构还包含 URI 字段。 这被填充上显示的验证处理期间发送端口属性页上输入的所有字段信息后的页适配器。  
   
 ```  
 <?xml version="1.0" encoding="utf-16"?>  

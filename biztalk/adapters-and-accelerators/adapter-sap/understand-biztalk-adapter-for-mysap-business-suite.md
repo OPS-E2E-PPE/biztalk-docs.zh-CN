@@ -19,12 +19,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 709833ecec71a98e0e09d2cd660b68bf5b647d8b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c2a4b611184962138c102dfadc6f33250ce16a29
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985606"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372242"
 ---
 # <a name="understand-biztalk-adapter-for-mysap-business-suite"></a>了解用于 mySAP Business Suite 的 BizTalk 适配器
 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]还支持与外部系统进行交互，以面向服务的编程访问。 适配器向客户端提供以下优势：  

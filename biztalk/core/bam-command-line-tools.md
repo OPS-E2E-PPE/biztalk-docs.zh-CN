@@ -1,6 +1,6 @@
 ---
-title: BAM 命令行工具 |Microsoft 文档
-description: 要开始使用 BAM 管理实用程序，用于 BizTalk Server 中的业务活动监视的跟踪配置文件部署工具
+title: BAM 命令行工具 |Microsoft Docs
+description: 开始使用 BAM 管理实用程序为业务活动监视 BizTalk Server 中的跟踪配置文件部署工具
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9c0583b119aec96264807928b1dab6bd219b5ab2
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 5e9f43f9a1b8ac980253c501d5809fe3a8462a06
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26005934"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530591"
 ---
 # <a name="bam-command-line-tools"></a>BAM 命令行工具
 本部分提供有关 Microsoft BizTalk Server 附带的 BAM 命令行工具的参考信息。  

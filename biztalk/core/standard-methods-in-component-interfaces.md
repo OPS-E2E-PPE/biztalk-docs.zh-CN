@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eecb56f262a56e6567b44b146c631542cb1ceda6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 308e099f6e16cadd671785947300ada4e113e7a7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994822"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392906"
 ---
 # <a name="standard-methods-in-component-interfaces"></a>组件接口中的标准方法
-组件接口的标准方法如下：  
+组件接口的标准方法如下所示：  
   
 - `Create`  
   
@@ -35,7 +35,7 @@ ms.locfileid: "36994822"
   
 - `Save`  
   
-  只有基础组件中的这些方法可用。 例如，如果基础组件不包含 `Add` 功能，则 `Create` 不可用。  
+  提供基础组件中的这些方法。 例如，如果基础组件不包含`Add`功能，`Create`不可用。  
   
 ## <a name="viewing-or-changing-available-methods"></a>查看或更改可用方法  
   
@@ -51,4 +51,4 @@ ms.locfileid: "36994822"
   
 ## <a name="see-also"></a>请参阅  
  [如何创建组件接口](../core/how-to-create-component-interfaces.md)   
- [附件 C：使用组件接口](../core/appendix-c-using-component-interfaces.md)
+ [附录 c:使用组件接口](../core/appendix-c-using-component-interfaces.md)

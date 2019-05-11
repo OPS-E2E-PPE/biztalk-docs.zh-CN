@@ -20,12 +20,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8e3e244691d61ef27c55f606414dd08857d58f14
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2457489bf5605b281b450f9c51df8b9fb21fab5e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998150"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390312"
 ---
 # <a name="considerations-when-using-orchestration-debugger"></a>使用业务流程调试器时的注意事项
 以下是一些需要处理业务流程调试器时，请考虑事项。  

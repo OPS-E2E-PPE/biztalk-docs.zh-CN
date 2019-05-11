@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c2d01bcfd2b004042ce69f4843bb9ae7bb2f323f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2938d8057f4ca7a1239d7bc050333bb8d800912d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007406"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374975"
 ---
 # <a name="poll-oracle-e-business-suite-using-stored-procedures-with-the-wcf-service-model"></a>存储的过程中使用 WCF 服务模型轮询 Oracle E-business Suite
 你可以配置[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]通过使用存储的过程来定期轮询 Oracle 数据库接收定期的数据更改消息。 您可以指定存储的过程作为适配器执行定期轮询 Oracle 数据库的轮询语句。  
@@ -33,7 +33,7 @@ ms.locfileid: "37007406"
 |     **InboundOperationType**     |                                                                                                                                                                                                                   指定是否想要执行**轮询**或**通知**的入站操作。 默认值是**轮询**。                                                                                                                                                                                                                    |
 | **PolledDataAvailableStatement** |                                                                                                                                                       指定适配器执行以确定是否可用于轮询的任何数据的 SQL 语句。 仅当一条记录不可用，存储的过程为指定**PollingInput**将执行属性绑定。                                                                                                                                                       |
 |       **PollingInterval**        |                                           指定的时间间隔，以秒为单位，从该处[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]执行该语句为指定**PolledDataAvailableStatement**属性绑定。 默认值为 30 秒。 轮询间隔确定连续轮询之间的时间间隔。 如果在指定时间间隔内执行该语句，则适配器将休眠的剩余时间间隔中。                                            |
-|         **PollingInput**         | 指定的轮询语句。 若要轮询使用存储的过程，必须指定此绑定属性的整个请求消息。 请求消息必须向适配器发送用于调用存储的过程以出站操作的方式相同。 默认值为 null。<br /><br /> 必须指定的值**PollingInput**绑定属性来启用轮询。 仅当没有数据可用于轮询，该域由执行轮询语句**PolledDataAvailableStatement**属性绑定。 |
+|         **PollingInput**         | 指定的轮询语句。 若要轮询使用存储的过程，必须指定此绑定属性的整个请求消息。 请求消息必须向适配器发送用于调用存储的过程以出站操作的方式相同。 默认值为 NULL。<br /><br /> 必须指定的值**PollingInput**绑定属性来启用轮询。 仅当没有数据可用于轮询，该域由执行轮询语句**PolledDataAvailableStatement**属性绑定。 |
 |        **PollingAction**         |                                                                                                                                                          指定轮询操作的操作。 您可以确定从服务接口生成的操作使用的轮询操作[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]。                                                                                                                                                           |
 |      **PostPollStatement**       |                                                                                                                                                                                                            指定在指定的语句之后执行的语句块**PollingInput**执行绑定属性。                                                                                                                                                                                                             |
 |      **PollWhileDataFound**      |                                                                               指定是否[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]忽略的轮询间隔，连续执行轮询语句中，如果数据是可用的轮询的表。 如果表中有任何数据，不则适配器将恢复执行轮询语句按照指定的轮询间隔。 默认值为 false。                                                                               |
@@ -239,7 +239,7 @@ namespace OracleEBSBindingNamespace {
 
    ```  
 
-8. 将服务终结点添加到服务主机。 为此，请执行以下操作：  
+8. 将服务终结点添加到服务主机。 若要执行此操作：  
 
    -   使用在步骤 4 中创建的绑定。  
 

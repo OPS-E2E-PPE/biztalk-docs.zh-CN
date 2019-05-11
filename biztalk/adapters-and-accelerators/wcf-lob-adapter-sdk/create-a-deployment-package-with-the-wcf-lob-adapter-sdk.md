@@ -1,5 +1,5 @@
 ---
-title: 使用 WCF LOB 适配器 SDK 创建部署包 |Microsoft 文档
+title: 使用 WCF LOB 适配器 SDK 创建部署包 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 734d79e92a4864090720434b9a1fb83387a0a850
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: f6d8a74929d5a3f5073e2ac927d3959068166dc1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25966555"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363739"
 ---
 # <a name="create-a-deployment-package-with-the-wcf-lob-adapter-sdk"></a>使用 WCF LOB 适配器 SDK 创建部署包
-在开发周期中，可以生成、 调试和运行你在 Visual Studio 中的适配器。 适配器解决方案的输出是一个 DLL 程序集。 你可以生成使用 Visual Studio IDE 适配器解决方案，或使用 devenv.exe 脚本来创建一个适配器程序集。 一旦开发适配器并且可供适配器使用者的环境中使用，你必须创建一个允许的适配器，测试和生产环境中安装的部署包。  
+在开发周期中，可以生成、 调试和运行您在 Visual Studio 中的适配器。 适配器解决方案的输出是一个 DLL 程序集。 可以生成使用 Visual Studio IDE 适配器解决方案或使用 devenv.exe 脚本创建一个适配器程序集。 一旦开发了适配器，并且它是供适配器使用者的环境中使用，必须创建允许适配器在测试和生产环境中安装的部署包。  
   
- 你可以包括解决方案中的 Visual Studio 安装程序和部署项目。 这可以用于自动生成作为解决方案生成的一部分的.msi 文件。  
+ 可以包括在解决方案中的 Visual Studio 安装程序和部署项目。 这可以用于自动生成的.msi 文件作为解决方案生成的一部分。  
   
 > [!NOTE]
->  你可以阻止安装和部署项目生成每次通过排除它通过配置管理器 （在生成菜单中） 在 Visual Studio.NET 中，在本地工作站生成解决方案。 如果从使用此方法对解决方案生成中排除一个项目，不会影响源受控的解决方案文件。 解决方案用户选项文件的说明进行操作，这是特定于开发人员的和不受源代码管理中，更改将保留下来。  
+>  可以生成每次通过排除它通过配置管理器 （在生成菜单） Visual Studio.NET 中，在本地工作站生成解决方案时阻止安装和部署项目。 如果从使用此方法的解决方案生成中排除项目，不会影响源代码控制的解决方案文件。 解决方案用户选项文件的说明进行操作，这是特定于开发人员的和不受源代码管理中维护的更改。  
   
- 每当新项目添加到你的解决方案必须记住来更新和配置部署项目，以确保该新项目的输出是包含在.msi 文件并执行任何特定于项目的安装步骤。  
+ 每当新项目添加到你的解决方案时，您必须记得更新和配置部署项目，以确保新项目的输出是包含在.msi 文件并执行任何特定于项目的安装步骤。  
   
- 它不是足够，以只在用户的计算机上安装适配器项目的输出。 适配器需要安装在全局程序集缓存 (GAC) 和 machine.config 文件需要更新注册的适配器[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]。  
+ 不足够，以只在用户计算机上安装适配器项目的输出。 适配器需要安装在全局程序集缓存 (GAC) 中，machine.config 文件需要更新，以注册适配器[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]。  
   
- 下面是可以用于注册或注销拥有的适配器的示例自定义操作[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]。  
+ 下面是可用于注册或注销使用的适配器的示例自定义操作[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]。  
   
 ```  
 using System;  
@@ -261,8 +261,8 @@ namespace Microsoft.Adapters.Samples.EchoV2
 }  
 ```  
   
- 如果你想要浏览与部署包的示例适配器，你可以下载已完成的 Echo 适配器包括测试代码和安装脚本。 此示例是在你 BizTalk 安装文件附带`\BizTalk Server\ASDK_x86\Program Files\WCF LOB Adapter SDK\Documents\Samples`或`\BizTalk Server\ASDK_x64\Program Files\WCF LOB Adapter SDK\Documents\Samples`。
+ 如果你想要了解与部署包的示例适配器，可以下载包含测试代码和安装脚本已完成的 Echo 适配器。 此示例是在你 BizTalk 安装文件附带`\BizTalk Server\ASDK_x86\Program Files\WCF LOB Adapter SDK\Documents\Samples`或`\BizTalk Server\ASDK_x64\Program Files\WCF LOB Adapter SDK\Documents\Samples`。
   
-## <a name="see-also"></a>另请参阅  
- [部署使用 WCF LOB 适配器 SDK 的适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/deploy-an-adapter-using-the-wcf-lob-adapter-sdk.md)   
- [取消部署使用 WCF LOB 适配器 SDK 的适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/undeploy-an-adapter-using-the-wcf-lob-adapter-sdk.md)
+## <a name="see-also"></a>请参阅  
+ [部署适配器使用 WCF LOB 适配器 SDK](../../adapters-and-accelerators/wcf-lob-adapter-sdk/deploy-an-adapter-using-the-wcf-lob-adapter-sdk.md)   
+ [取消部署适配器使用 WCF LOB 适配器 SDK](../../adapters-and-accelerators/wcf-lob-adapter-sdk/undeploy-an-adapter-using-the-wcf-lob-adapter-sdk.md)

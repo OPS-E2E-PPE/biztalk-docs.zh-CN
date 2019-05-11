@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2d8373ffa078b0138979e34a154330b429a73664
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3d5998fbdefeb36af8f6a437613523b95b3d9aba
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986070"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393480"
 ---
 # <a name="planning-for-consuming-web-services"></a>规划使用 Web 服务
 Web 服务的规划可以分为两类，用于发布 Web 服务和规划使用 Web 服务计划。 本主题介绍有关使用 Web services 的注意事项。 有关发布 Web 服务的信息，请参阅[规划发布 Web Services1](../technical-guides/planning-for-publishing-web-services1.md)。  
@@ -26,7 +26,7 @@ Web 服务的规划可以分为两类，用于发布 Web 服务和规划使用 W
   
 - **在参数名称中使用两个下划线字符**  
   
-   Web 方法的参数名称不能以“__”（两条下划线）开始。 以两条下划线开始的名称可以创建 XLANG/s 不支持（无法使用）的 Web 消息部分。  
+   Web 方法的参数名称不能以"__"（两条下划线） 开头。 以两个下划线字符开头的名称可能会创建不受支持的 Web 消息部分 （不可用） 的 XLANG/s。  
   
 - **任何元素和 anyAttribute Web 方法中不支持特性**  
   
@@ -38,15 +38,15 @@ Web 服务的规划可以分为两类，用于发布 Web 服务和规划使用 W
   
 - **对参数类型的所需的 XLANG/s 支持**  
   
-   使用非 XLANG/s 支持的 Web 方法参数类型将导致编译错误。 例如，BizTalk Server 不支持由架构类型的一维数组组成的参数。 此外，BizTalk Server 不支持多维数组。 XLANG/s 语言保留在 BizTalk Server 中的单词列表，请参阅[XLANG/s 保留字](http://go.microsoft.com/fwlink/?LinkId=155765)(http://go.microsoft.com/fwlink/?LinkId=155765)。  
+   使用非 XLANG/s 支持的 Web 方法参数类型将导致编译错误。 例如，BizTalk Server 不支持包含的一维数组的架构类型的参数。 此外，BizTalk Server 不支持多维数组。 XLANG/s 语言保留在 BizTalk Server 中的单词列表，请参阅[XLANG/s 保留字](http://go.microsoft.com/fwlink/?LinkId=155765)(http://go.microsoft.com/fwlink/?LinkId=155765)。  
   
 - **避免由添加 Web 引用包含 C# 关键字或标识符导致编译错误**  
   
-   当你使用**添加 Web 引用**若要添加到 BizTalk 项目的 Web 引用，BizTalk Server 将调用架构到每个 Web 方法所需的架构类型。 BizTalk Server 将这些架构添加到 Reference.xsd。 如果您的架构包含元素名称的 C# 关键字或元素名称不是有效的 C# 标识符，您可能会出现运行时错误。 要避免运行时错误，请确保您使用的 Web Services 不包含属于 C# 关键字或无效 C# 标识符的元素名称。  
+   当你使用**添加 Web 引用**若要添加到 BizTalk 项目的 Web 引用，BizTalk Server 将调用架构到每个 Web 方法所需的架构类型。 BizTalk Server 将这些架构添加到 Reference.xsd。 如果您的架构包含元素名称的 C# 关键字或元素名称不是有效的 C# 标识符，您可能会出现运行时错误。 若要避免运行时错误，请确保你使用的 Web 服务不包含 C# 关键字或无效 C# 标识符的元素名称。  
   
 - **不支持多个服务/端口类型定义**  
   
-   BizTalk Server 支持添加具有单个服务和端口类型定义的 Web Services 文件。 若要添加具有多个服务或端口类型定义的 WSDL 文件，则可能产生下列错误：  
+   BizTalk Server 支持添加单个服务和端口类型定义的 Web 服务文件。 如果添加具有多个服务的 WSDL 文件或端口类型定义，可能会收到以下错误：  
   
    `Could not generate BizTalk files. Object reference not set to an instance of an object.`  
   
@@ -62,9 +62,9 @@ Web 服务的规划可以分为两类，用于发布 Web 服务和规划使用 W
   
 - **Web 方法参数必须是 Xml 可序列化**  
   
-   已使用的 Web Services 中的所有参数都必须执行 Xml 序列化。 若所添加的 Web 方法包含未执行 Xml 序列化的参数，则可能会收到以下错误消息：  
+   已使用的 Web 服务中的所有参数必须都是 Xml 可序列化。 如果添加的 Web 方法包含不是 Xml 可序列化的参数时，可能会收到以下错误消息：  
   
-   必须对 System.Xml.Element 执行 Xml 序列化，才能使其成为消息部分类型。  
+   才能使其必须是 Xml Seralizeable 为消息部分类型。  
   
   > [!NOTE]  
   >  数据类型， **XmlDocument**并**数据集**，支持时不执行 Xml 序列化。  
@@ -79,7 +79,7 @@ Web 服务的规划可以分为两类，用于发布 Web 服务和规划使用 W
   
 - **以编程方式配置 SOAP 发送端口**  
   
-   可以在消息上下文中以编程方式设置配置属性。 发送端口是静态还是动态，可以在业务流程或自定义管道组件中设置这些属性。  
+   就可以以编程方式设置配置属性在消息上下文。 发送端口是静态还是动态，可以在业务流程或自定义管道组件中设置这些属性。  
   
   > [!NOTE]  
   >  若要配置**MethodName**属性为静态 SOAP 发送端口以编程方式，您需要设置**方法名称**到 **[以后指定]** 中**Web服务**选项卡**SOAP 传输属性**BizTalk Server 管理控制台中的对话框。  
@@ -88,15 +88,15 @@ Web 服务的规划可以分为两类，用于发布 Web 服务和规划使用 W
   
 - **属性规则**  
   
-   如果在业务流程或接收管道的自定义管道组件中设置配置属性，则需遵循下列规则：  
+   如果在业务流程中或在接收管道的自定义管道组件中设置配置属性，然后应用以下规则：  
   
   - 如果一条消息发送到静态发送端口，属性值将覆盖与该发送端口配置的值。  
   
   - 如果一条消息发送到动态发送端口，则不会覆盖属性值。  
   
-    如果在发送管道的自定义管道组件中设置配置属性，则需遵循下列规则：  
+    如果在发送管道的自定义管道组件中设置配置属性，则应用以下规则：  
   
-  - 无论将消息发送到静态发送端口还是动态发送端口，都不会覆盖属性值。 换言之，无论在哪里设置配置属性，发送管道组件都会将其覆盖。  
+  - 值不会被覆盖而不考虑是否将消息发送到静态或动态发送端口。 换而言之，发送管道组件覆盖无论后者已设置的配置属性。  
   
   - 有关自定义管道组件的详细信息，请参阅[开发自定义管道组件](http://go.microsoft.com/fwlink/?LinkId=155769)(http://go.microsoft.com/fwlink/?LinkId=155769)。  
   
@@ -104,23 +104,23 @@ Web 服务的规划可以分为两类，用于发布 Web 服务和规划使用 W
   
 - **添加对包含多个根的架构将导致编译错误的已使用的 Web 服务的 Web 引用**  
   
-   如果添加对已发布的 BizTalk 业务流程中派生的 Web 服务的项目的 Web 引用，并且该业务流程包含具有多个根的架构，然后编译项目时也将会出错。 如果给项目添加的 Web 引用派生自已发布的 BizTalk 业务流程，需确保业务流程不包含任何多根架构。  
+   如果添加对已发布的 BizTalk 业务流程中派生的 Web 服务的项目的 Web 引用，并且该业务流程包含具有多个根的架构，然后编译项目时也将会出错。 如果您添加到你的项目已发布的 BizTalk 业务流程中派生的 Web 引用，请确保该业务流程不包含任何多根的架构。  
   
 - **将 TypedDataSets 用作 Web 方法的参数**  
   
-   为支持将 TypedDataSets 用作 Web 方法的参数，需要执行以下操作：  
+   下面是需要执行的操作支持将 TypedDataSets 用作 Web 方法的参数：  
   
-  1.  将 Web 引用添加到 C# 项目，然后生成代理。  
+  1.  添加一个 C# 项目的 Web 引用，然后生成代理。  
   
-  2.  创建 SOAP 发送端口并在发送端口上指定该代理，然后选择方法。  
+  2.  创建 SOAP 发送端口和发送端口上指定该代理，并选择的方法。  
   
-  3.  在业务流程中定义后期绑定端口和消息类型。 在大多数情况下需要没有属性升级或可分辨的字段访问的位置，该类型可以定义为**XMLDocument**。 为该类型选择直通管道。  
+  3.  在业务流程，定义后期绑定的端口并定义消息类型。 在大多数情况下需要没有属性升级或可分辨的字段访问的位置，该类型可以定义为**XMLDocument**。 与此类型选择直通管道。  
   
-  4.  在 BizTalk Server 管理控制台中，在**Web 服务**选项卡**SOAP 传输属性**对话框中的 soap 发送端口中，指定你想要使用创建该代理。 您还需要指定程序集、类型和方法。  
+  4.  在 BizTalk Server 管理控制台中，在**Web 服务**选项卡**SOAP 传输属性**对话框中的 soap 发送端口中，指定你想要使用创建该代理。 此外需要指定程序集、 类型和方法。  
   
 - **添加对包含的 Web 方法需要基于泛型的参数将导致编译错误的已使用的 Web 服务的 Web 引用**  
   
-   如果添加对包含的 Web 方法需要基于泛型的参数，如可以为 null 的参数的 Web 服务的项目的 Web 引用时，编译项目时，将会出错。 不支持此设置。 您必须使用显式专用化从 XLANG/s 中调用泛型类。  
+   如果添加对包含的 Web 方法需要基于泛型的参数，如可以为 null 的参数的 Web 服务的项目的 Web 引用时，编译项目时，将会出错。 不支持此设置。 您必须使用显式专用化从 XLANG/s 调用泛型类。  
   
 - **使用添加 Web 引用生成 BizTalk 架构**  
   
@@ -134,11 +134,11 @@ Web 服务的规划可以分为两类，用于发布 Web 服务和规划使用 W
   
   -   不能使用 web 方法**RequestNamespace**并**ResponseNamespace**中的属性**SoapDocumentMethodAttribute**。  
   
-  -   Web Services 必须符合 Web Services 互操作性 (WSI) 基本配置文件版本 1.1。  
+  -   Web 服务必须符合 Web 服务互操作性 (WSI) 基本概要 1.1 版。  
   
 - **添加 Web 引用不支持 Web 服务描述语言 (WSDL) 导入元素**  
   
-   在为具有导入元素的 WSDL 文件添加 Web 引用时，“添加 Web 引用”会失败。  
+   添加 Web 引用的 WSDL 文件的导入元素时，添加 Web 引用将失败。  
   
 ## <a name="see-also"></a>请参阅  
  [规划 BizTalk Server 层](../technical-guides/planning-the-biztalk-server-tier.md)

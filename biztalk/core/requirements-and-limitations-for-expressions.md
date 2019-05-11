@@ -19,14 +19,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bb9b3cbbd426227e21f16d5bde4186823164f1fa
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 250e262470325318a62236630542fd96ff0d4b52
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999686"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394834"
 ---
-# <a name="requirements-and-limitations-for-expressions"></a>对表达式的要求和限制
+# <a name="requirements-and-limitations-for-expressions"></a>表达式的要求和限制
 业务流程设计器中的 BizTalk 表达式编辑器是标准的 Visual Studio 文本编辑器，这意味着它提供 IntelliSense 功能。 使用 BizTalk 表达式编辑器可通过文本形式输入表达式。  
   
  使用文本框可通过文本形式输入单个表达式。 表达式可以跨多行，但必须以单个分号结束。  

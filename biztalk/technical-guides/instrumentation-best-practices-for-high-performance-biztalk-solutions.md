@@ -12,31 +12,31 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 60faad9e9e2905da963ee911dc9d7f13a39d2c67
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b41d67b45c8d3fa18761154e61b449fdf17df9dc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997462"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391826"
 ---
 # <a name="instrumentation-best-practices-for-high-performance-biztalk-solutions"></a>高性能 BizTalk 解决方案的检测最佳做法
 若要下载本白皮书的副本，请转到[ http://go.microsoft.com/fwlink/?LinkId=205874 ](http://go.microsoft.com/fwlink/?LinkId=205874)。  
   
  **发布日期：** 2010 年 11 月  
   
- **作者：** Valery Mizonov、 Microsoft Corporation  
+ **作者：** Valery Mizonov, Microsoft Corporation  
   
  **审阅者：**  
   
-- Mark Simms、 Microsoft Corporation  
+- Mark Simms, Microsoft Corporation  
   
-- Jayanthi Sampathkumar，Microsoft Corporation  
+- Jayanthi Sampathkumar, Microsoft Corporation  
   
-- Krish Srinivasan，Microsoft Corporation  
+- Krish Srinivasan, Microsoft Corporation  
   
   **适用于：** Microsoft BizTalk Server  
   
-  **摘要：** 检测 BizTalk 解决方案的传统方法可能始终无法从性能角度来看最有效。 常用的检测和跟踪组件利用 Win32 调试 Api 可能会造成潜在瓶颈并让其负责在压力下运行的多线程 BizTalk 应用程序中的性能下降。  
+  **摘要：** 传统的检测 BizTalk 解决方案的方法可能始终无法从性能角度来看最有效。 常用的检测和跟踪组件利用 Win32 调试 Api 可能会造成潜在瓶颈并让其负责在压力下运行的多线程 BizTalk 应用程序中的性能下降。  
   
   从另一侧，源代码检测提供非常精确地洞察应用程序的行为，并有助于降低整体故障排除工作。 因此，一种全新检测的高性能 BizTalk 解决方案变得至关重要的一点是重要，以便使用几乎没有开销也不会影响非侵入性的方式收集诊断信息丰富和详细信息对应用程序性能。  
   

@@ -12,17 +12,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d631c461c876ef4066e497d7d72d2e5fe13d022
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3397bfcb75dd68945b87c47ad0af237e677c3a92
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978030"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371493"
 ---
 # <a name="import-siebel-data-using-visual-studio"></a>导入 Siebel 数据使用 Visual Studio
 本部分提供有关如何使用 Microsoft 信息[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]从 Siebel 系统到 SQL Server 数据库导入数据。 它还说明了如何创建和执行 SSIS 包将此数据导入。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  在执行之前在本主题中提供的过程，请确保：  
   
 - [!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]的计算机上安装。  

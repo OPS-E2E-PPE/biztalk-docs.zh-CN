@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e5e4edb19c3f69b14dd55219f504a6a3d0cc1688
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 989c35ee55e22cd644fa64e6bba661239cf9aa40
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971078"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373047"
 ---
 # <a name="run-a-query-using-the-select-command-in-sap"></a>在 SAP 中使用 SELECT 命令运行查询
 [!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]公开为 ADO.NET 数据源的 SAP 系统。 使用[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]，可以通过执行 SELECT 语句查询 SAP 项目。  

@@ -16,21 +16,21 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 189886d80b921fc155672d56a77cc39817e30622
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dfda44cc6239bc7ad00144eea74453c2f58fe2a1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967038"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65361230"
 ---
-# <a name="adapter-samples---development"></a>适配器示例 - 开发
-本部分介绍每个适配器示例所演示的功能、生成和运行每个示例的说明，以及可预期的结果。  
+# <a name="adapter-samples---development"></a>适配器示例-开发
+本部分提供有关每个适配器示例中，用于构建和运行示例，以及可以预期的结果的说明所演示的功能的信息。  
   
 ## <a name="in-this-section"></a>本节内容  
   
 - [文件适配器 （BizTalk Server 示例）](../core/file-adapter-biztalk-server-sample.md)。 演示如何编写。基于 NET 的文件适配器在 Microsoft Visual C#。  
   
-- [HTTP 适配器 （BizTalk Server 示例）](../core/http-adapter-biztalk-server-sample.md)。 演示如何实现 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中使用的请求/响应和要求/响应范例。  
+- [HTTP 适配器 （BizTalk Server 示例）](../core/http-adapter-biztalk-server-sample.md)。 演示如何实现中使用的请求/响应和要求/响应范例[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
   
 - [SubmitDirect （BizTalk Server 示例）](../core/submitdirect-biztalk-server-sample.md)。 演示两种方法将消息提交给 BizTalk Server 中。使用适配器的基于网络的应用程序。  
   

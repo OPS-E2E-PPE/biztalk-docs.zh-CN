@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a701b2c0170b8687e48ff61c369ac25ef41ab6bd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d9208b8321a3b1a3eae3d421cc1f46c1cf40df4e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999382"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392276"
 ---
 # <a name="architecture-of-the-biztalk-esb-toolkit"></a>BizTalk ESB 工具包的体系结构
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]系列进行互操作支持和实现松散耦合的消息传送环境可简化构建基于消息的企业应用程序组件组成。 服务和组件很自然地划分为以下七个类别：  
@@ -47,7 +47,7 @@ ms.locfileid: "36999382"
 ## <a name="how-the-biztalk-esb-toolkit-works"></a>BizTalk ESB 工具包的工作原理  
  [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]接受入站的消息并对其进行操作，可能是 （但不是总是） 通过执行进程，例如转换，路由，或任何其他自定义进程。 若要指定的操作需要，核心处理组件需要每条消息具有传送名单，其中包含关联的说明或定义应用的进程的元数据和要使用消息内容执行的任务。 这些路由滑动称为路线和可以自动解决，检索从中央存储库，和附加到消息时接收到的途径。  
   
- 此路由的名单方法提供服务，这意味着 ESB 不需要事先了解的特定处理每条消息之间的松散耦合。 它只须了解可能的进程范围是什么以及如何将应用每个进程。 用于指定可用进程及进程与消息中说明间映射的选项众多，它们提供了一个配置和调整行为的灵活机制，不需要更改代码和重新部署组件。  
+ 此路由的名单方法提供服务，这意味着 ESB 不需要事先了解的特定处理每条消息之间的松散耦合。 它只须了解可能的进程范围是什么以及如何将应用每个进程。 多种选项用于指定可用进程及进程与消息中的说明进行操作之间的映射提供了用于配置和调整行为，而无需更改代码和重新部署的灵活机制组件。  
   
 ## <a name="design-patterns"></a>设计模式  
  使用 ESB，其中进程 Messagebox 数据库中存放消息和订阅服务器中选取它们基于在消息中，处理指令的体系结构有效地实现状态机设计模式。 此外，ESB 实现，并在面向服务的方式，包括对外部应用程序通过一系列核心 Web 服务中公开其核心功能。  

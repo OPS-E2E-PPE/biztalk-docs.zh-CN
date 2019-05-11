@@ -1,5 +1,5 @@
 ---
-title: 为 Siebel 中 EXEC 语句的语法 |Microsoft 文档
+title: 在 Siebel EXEC 语句的语法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4db9ca810860ea64ffa474725dc485fecfaa5e78
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 094161f866b12f656dd42e3eddbaba7c56a6ff01
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25963075"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370490"
 ---
-# <a name="syntax-for-an-exec-statement-in-siebel"></a>Siebel 中 EXEC 语句的的语法
-使用[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]，ADO.NET 客户端还可以在执行运算 EXEC [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。 EXEC 语句的语法是：  
+# <a name="syntax-for-an-exec-statement-in-siebel"></a>在 Siebel EXEC 语句的语法
+使用[!INCLUDE[adoprovidersiebelshort](../../includes/adoprovidersiebelshort-md.md)]，ADO.NET 客户端还可以根据执行 EXEC 操作[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]。 EXEC 语句的语法是：  
   
 ```  
 EXEC  
@@ -34,14 +34,14 @@ EXEC
   
 ```  
   
- 在前面的语法中，`\<value 1..n\>`表示一组未命名参数。 这些是硬编码值。 它们通常表示参数中。  它们还可以表示 INOUT 参数。 但是，如果硬编码的值用于 INOUT 参数，执行 EXEC 语句后无法检索到该参数与关联的输出值。  
+ 在上述语法中，`\<value 1..n\>`表示一组未命名参数。 这些是硬编码值。 它们通常代表参数中。  它们可以表示 INOUT 参数。 但是，如果硬编码值用于 INOUT 参数，在 EXEC 语句执行后不能检索到该参数与关联的输出值。  
   
- `@parameter 1..n`语法表示一组命名的参数，可以为 IN、 INOUT 或 OUT 参数。 输出参数的后面必须跟**输出**关键字。  
+ `@parameter 1..n`语法表示一组的命名参数，这些可以是 IN、 INOUT 参数或 OUT 参数。 输出参数必须后跟**输出**关键字。  
   
 > [!NOTE]
->  **输出**OUT 参数而不是与 INOUT 参数关键字必须仅与一起使用。  
+>  **输出**关键字必须仅可用于 OUT 参数而不是与 INOUT 参数。  
   
- 若要指定参数值内联，使用`@parameter 1..n = <value>`语法。  
+ 若要指定内联参数值，请使用`@parameter 1..n = <value>`语法。  
   
  所有参数必须都是以逗号分隔。  
   
@@ -59,7 +59,7 @@ EXEC ExtractDataService.Echo 'InputValue', @Out OUTPUT, @InOut='InputValue'
 ```  
   
 > [!NOTE]
->  每个参数的名称 (如`@In`在前面的示例) Siebel 业务服务方法中的相应自变量名称必须匹配。  
+>  每个参数的名称 (如`@In`前面的示例中) 的 Siebel 业务服务方法中的相应参数名称必须匹配。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用用于 Siebel eBusiness 应用程序的 .NET Framework 数据提供程序](../../adapters-and-accelerators/adapter-siebel/use-the-net-framework-data-provider-for-siebel-ebusiness-applications.md)

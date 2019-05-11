@@ -1,5 +1,5 @@
 ---
-title: 基本业务流程 Design4 |Microsoft 文档
+title: 基本业务流程 Design4 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,19 +14,19 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 80a1ed1359370c6b048ed7e0753cd32f4ff787c0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 01c2bf6a1a3fc74b27a0dadd7ce7ad0185a51a12
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230597"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529147"
 ---
 # <a name="basic-orchestration-design"></a>基本业务流程设计
-当创建基本的业务流程时，会出现 XML 中您的业务流程的接收端口。 然后将 XML 发送到后端系统以供处理。 在后端系统中，可能会发生停止业务流程的异常。 生成该异常提供业务流程未完成的信息。  
+创建基本业务流程时，您在您的业务流程的接收端口接收 XML。 将 XML 然后发送到后端系统进行处理。 在后端系统中，可能会发生异常，无法停止业务流程。 生成的异常提供了业务流程未完成的信息。  
   
- 出现错误时，调用将被挂起。 在事件查看器日志中，您可以查看该故障的错误和原因。  
+ 发生错误时，调用将被挂起。 在事件查看器日志，可以查看错误和失败的原因。  
   
- 若要防止业务流程进入挂起状态和重定向错误，您可创建一个 CatchExpression。 若要捕获由后端生成的异常并帮助找到问题起因，可以在业务流程中使用作用域形状。  
+ 若要防止业务流程进入挂起的状态并将重定向错误，可以创建一个 CatchExpression。 若要捕获由后端生成的异常并帮助找到问题的原因，您可以在业务流程中使用作用域形状。  
   
-## <a name="see-also"></a>另请参阅  
- [使用 BizTalk Server 异常处理](../core/using-biztalk-server-exception-handling4.md)
+## <a name="see-also"></a>请参阅  
+ [使用 BizTalk Server 的异常处理](../core/using-biztalk-server-exception-handling4.md)

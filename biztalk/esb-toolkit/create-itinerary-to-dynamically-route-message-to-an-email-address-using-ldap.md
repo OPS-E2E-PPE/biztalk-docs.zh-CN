@@ -1,5 +1,5 @@
 ---
-title: 如何： 创建路线以便动态地将消息路由到电子邮件地址使用的 LDAP 查询 |Microsoft Docs
+title: 如何：创建路线以便动态地将消息路由到电子邮件地址使用的 LDAP 查询 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 93a2237b76524488d7a3903468ebb321d19ae623
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 10e9ca97e52ef901301d141a278d49e4026a2fcb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987598"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396522"
 ---
-# <a name="how-to-create-an-itinerary-to-dynamically-route-a-message-to-an-email-address-using-an-ldap-query"></a>如何： 创建路线以便动态地将消息路由到电子邮件地址使用的 LDAP 查询
+# <a name="how-to-create-an-itinerary-to-dynamically-route-a-message-to-an-email-address-using-an-ldap-query"></a>如何：创建路线以便动态地将消息路由到电子邮件地址使用的 LDAP 查询
 ## <a name="goal"></a>目的  
  本部分演示如何创建路线的查询通过 LDAP （轻型目录访问协议） 的电子邮件地址，然后将电子邮件发送到使用 BizTalk Server SMTP 适配器的解析终结点。  
   
@@ -29,7 +29,7 @@ ms.locfileid: "36987598"
   
 -   测试使用路线测试客户端示例应用程序的路线。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  本操作指南主题中的过程要求在完成[开发活动的先决条件](../esb-toolkit/prerequisites-for-the-development-activities.md)。  
   
  将在其完成本部分中的计算机必须具备 Microsoft Active Directory 目录服务配置并且正在运行 (它不是所需的计算机是域控制器，但必须连接到域)。 此外，SMTP 服务器必须配置并可运行;若要测试本操作指南主题的结果，您必须具有要检查电子邮件发送的 ESB 的客户端。  

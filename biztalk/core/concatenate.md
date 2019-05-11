@@ -1,5 +1,5 @@
 ---
-title: 连接 |Microsoft 文档
+title: 串联 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4766f65fb0cbe26c8f3c545c38235d83abb283a4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4d47db49e60b95071b48393735b3b4b0e7cee528
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231693"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391631"
 ---
 # <a name="concatenate"></a>连接
-删除堆栈最上方的两项，连接这两项，然后将结果推送到堆栈上。  
+从堆栈移除的前两个项，将它们，连接，然后将推送到堆栈上的结果。  
   
 ## <a name="syntax"></a>语法  
   
@@ -30,15 +30,15 @@ ms.locfileid: "22231693"
 ```  
   
 #### <a name="parameters"></a>Parameters  
- 堆栈最上方的两项。  
+ 在堆栈上前两个项。  
   
 ## <a name="pushed-value"></a>推送的值  
- 连接操作的字符串结果。  
+ 字符串串联操作的结果。  
   
-## <a name="remarks"></a>注释  
+## <a name="remarks"></a>备注  
   
 ## <a name="example"></a>示例  
- 在下面的示例更新表达式，常量字符串"启动:"是"EventTime"上下文属性的值连接在一起并保存到数据库列 NewOrderCreateTime。  
+ 在下面的示例更新表达式中，常量字符串"启动:"与"EventTime"上下文属性的值连接和持久保存到 NewOrderCreateTime 数据库列中。  
   
 ```  
 <ic:Update DataItemName="NewOrderCreateTime" Type="NVARCHAR">  
@@ -54,5 +54,5 @@ ms.locfileid: "22231693"
 </ic:Update>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [拦截器操作](../core/interceptor-operations.md)
+## <a name="see-also"></a>请参阅  
+ [侦听器运算](../core/interceptor-operations.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3a3cb898643e8a7eff1b73a138f98f1ecfc05248
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1a3a3a44292c3c439c7556bd14e7aa7acadd4fdc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993126"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362731"
 ---
 # <a name="understand-the-lob-system-with-the-wcf-lob-adapter-sdk"></a>了解 LOB 系统与 WCF LOB 适配器 SDK
 开发适配器使用之前[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，您必须全面了解目标业务线系统。 如果您不了解提供业务线系统、 公开方式和提供安全、 事务和其他功能的支持的不同级别的功能，您的适配器可能无法提供所需的适配器的功能使用者。 本部分介绍必须了解要高效地设计您的适配器的区域。  

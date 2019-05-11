@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ced821c84408d519b6ed2ef09d444013a9c6ba82
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6bab35ce497113d00be79fccc5e701b7791cc7a2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971510"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373600"
 ---
 # <a name="connecting-to-sap-in-visual-studio-using-add-adapter-service-reference-plug-in"></a>Visual Studio 中使用连接到 SAP 添加适配器服务引用插件
 若要连接到 SAP 系统使用[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]在.NET 编程解决方案中，必须使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]。 本主题说明了如何使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。  
@@ -31,7 +31,7 @@ ms.locfileid: "36971510"
   
    1. 创建的项目中[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]。  
   
-   2. 右键单击解决方案资源管理器中的项目，然后单击**添加适配器服务引用**。 此时[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]会打开。  
+   2. 右键单击解决方案资源管理器中的项目，然后单击**添加适配器服务引用**。 [!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]随即打开。  
   
 2. 从**选择绑定**下拉列表中，选择**sapBinding**然后单击**配置**。  
   

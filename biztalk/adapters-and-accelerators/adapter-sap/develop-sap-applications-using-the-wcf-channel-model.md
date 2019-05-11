@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e2bce6ad43b6efce111a2801ba7a5b44e73dce1a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c7eadb0d0564fe1cec246c91c28ff192dac17f28
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013126"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373514"
 ---
 # <a name="develop-sap-applications-using-the-wcf-channel-model"></a>开发 SAP 应用程序使用 WCF 通道模型
 可以使用[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]通道模型使用[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]通过直接通过使用 SAP 绑定创建通道实例发送 XML 消息。  

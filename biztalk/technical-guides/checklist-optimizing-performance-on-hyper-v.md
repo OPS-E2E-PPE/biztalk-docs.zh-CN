@@ -1,5 +1,5 @@
 ---
-title: 清单： 优化 HYPER-V 上的性能 |Microsoft Docs
+title: 清单：优化 HYPER-V 上的性能 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/29/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bbd9ec3f47c12107c4ebfc32f109a5248b97a75f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2274266a62f427b9a47b51989ea80cd2e1373e4a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975558"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397091"
 ---
-# <a name="checklist-optimizing-performance-on-hyper-v"></a>清单： 优化 HYPER-V 上的性能
+# <a name="checklist-optimizing-performance-on-hyper-v"></a>清单：Hyper V 上优化性能
 以下注意事项适用时运行 BizTalk Server 和/或[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]的 HYPER-V 虚拟机具有 BizTalk Server 数据库的实例。  
 
 ## <a name="allocate-110125-of-cpu-and-disk-resources-to-the-hyper-v-virtual-machines"></a>分配给 HYPER-V 虚拟机的 110%– 125%的 CPU 和磁盘资源  
@@ -36,7 +36,7 @@ ms.locfileid: "36975558"
 
 |步骤|参考|  
 |----------|---------------|  
-|应用的性能优化虚拟化服务器推荐的指导。 **注意：** 的测试方案中所述[测试 BizTalk Server 虚拟化性能](~/technical-guides/testing-biztalk-server-virtualization-performance.md)，已应用的配置选项所述"物理基础结构详细信息"和"虚拟化详细信息"部分[测试方案概述](~/technical-guides/test-scenario-overview.md)主题。|在"性能优化准则的 Windows Server 2008 R2"文档"的虚拟化服务器的性能优化"部分[ http://go.microsoft.com/fwlink/?LinkID=202087 ](http://go.microsoft.com/fwlink/?LinkID=202087)。|  
+|应用的性能优化虚拟化服务器推荐的指导。 **注意：** 有关测试方案中所述[测试 BizTalk Server 虚拟化性能](~/technical-guides/testing-biztalk-server-virtualization-performance.md)，"物理基础结构详细信息"和"虚拟化详细信息"中描述了已应用的配置选项部分[测试方案概述](~/technical-guides/test-scenario-overview.md)主题。|在"性能优化准则的 Windows Server 2008 R2"文档"的虚拟化服务器的性能优化"部分[ http://go.microsoft.com/fwlink/?LinkID=202087 ](http://go.microsoft.com/fwlink/?LinkID=202087)。|  
 |关闭不会使用任何虚拟机连接窗口。|当双击虚拟机名称中的 HYPER-V 管理器时显示的虚拟机连接窗口使用无法否则利用的资源。|  
 |关闭或最小化的 HYPER-V 管理器。|HYPER-V 管理器会通过不断轮询每个运行的虚拟机的 CPU 使用率和正常运行时间占用资源。 关闭或最小化的 HYPER-V 管理器将释放这些资源。|  
 
@@ -55,12 +55,12 @@ ms.locfileid: "36975558"
 
 |                                                                      操作系统                                                                       | 虚拟处理器限制 |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]的用户。 所有版本的[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]只有 64 位。 |            4            |
+| [!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)] 的用户。 所有版本的[!INCLUDE[btsWinSvr2k8R2](../includes/btswinsvr2k8r2-md.md)]只有 64 位。 |            4            |
 |                                               [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] 64 位                                               |            4            |
 |                                               [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] 32 位                                               |            4            |
 |                                                                      Windows 7 64 位                                                                       |            4            |
 |                                                                      Windows 7 32 位                                                                       |            4            |
-|                                                                    64 位 Windows Vista                                                                     |            2            |
+|                                                                    Windows Vista 64 位                                                                     |            2            |
 |                                                                    Windows Vista 32 位                                                                    |            2            |
 
 > [!NOTE]
@@ -72,14 +72,14 @@ ms.locfileid: "36975558"
 |步骤|参考|  
 |----------|---------------|  
 |配置用于虚拟磁盘的 HYPER-V 虚拟机使用固定大小虚拟硬盘 (VHD) 选项。 固定大小 VHD 可提供接近的功能，例如群集的支持和快照的磁盘支持的灵活性以及物理磁盘的性能。|通过虚拟 IDE 控制器或虚拟 SCSI 控制器可访问的 HYPER-V 环境中的磁盘存储。 与以前版本的 Microsoft 虚拟化技术，是访问虚拟硬盘时，使用虚拟 IDE 控制器或虚拟 SCSI 控制器之间没有性能差异。 以下的磁盘存储选项是可用于在 HYPER-V 环境中使用：<br /><br /> -   **固定大小磁盘-** 固定大小虚拟硬盘 (VHD) 是一个数据块是在创建时定义的最大磁盘大小的物理磁盘上预先分配。 例如，如果您创建的 100 GB 的固定大小 VHD，HYPER-V 将分配所有 100 GB 的数据块存储，除了创建新的 VHD 时所需的 VHD 页眉和页脚的开销。<br />-   **动态扩展磁盘-** 动态扩展 VHD 是一个为其初始虚拟硬盘包含任何数据块。 而是动态分配空间，随着数据写入到 VHD，最多创建 VHD 时指定的最大大小。 例如，100 GB 动态扩展磁盘最初包含仅 VHD 标头，并且需要小于 2 MB 的物理存储空间。 虚拟机的情况下，新数据写入到动态扩展 VHD，会以 2 MB 到 VHD 文件，最多为 100 GB 的增量分配其他物理数据块。<br />-   **差异磁盘-** 差异磁盘是一种特殊类型的动态扩展的"父级"VHD 与关联的 VHD 文件。 在此父/子存储拓扑中，父磁盘保持不变，"子"差异磁盘仅对所做的任何写入操作。 任何读取的操作首先检查对差异磁盘，以查看更新的内容已写入到差异磁盘;如果内容不在差异磁盘，然后从父 VHD 读取内容。 差异磁盘可用于需要维护特定基准配置和想要轻松地测试和回滚然后更改到基线的方案。 可用于测试的父/子存储拓扑通过差异磁盘提供灵活性时，这不是性能的最佳配置因为没有与维护父/子拓扑相关的开销使用差异磁盘时需要。<br />-   **传递磁盘，即**传递磁盘功能，来宾操作系统来绕过 HYPER-V 主机文件系统和直接访问磁盘。 都提供给来宾操作系统可通过传递磁盘必须设置为"脱机"中的 HYPER-V 主机以确保，主机和来宾操作系统不要尝试同时访问该磁盘。 传递磁盘存储选项确实提供了相比其他磁盘的边际性能优势，但不支持的虚拟磁盘，例如虚拟机快照和聚类分析支持特定功能。 因此使用的传递磁盘功能建议不要在 BizTalk 或 SQL Server 环境中因为边际性能优势会超过偏移量为缺少的功能。<br /><br /> 有关磁盘存储选项中使用的 HYPER-V 提供的相对性能的详细信息，请参阅博客文章"HYPER-V 存储分析"，在[ http://go.microsoft.com/fwlink/?LinkID=132848 ](http://go.microsoft.com/fwlink/?LinkID=132848)。|  
-|配置为使用 SCSI 控制器的数据卷的磁盘|此建议，因为如果安装 HYPER-V 集成服务，而无需安装 HYPER-V 集成服务中，模拟的 IDE 控制器可用，可以仅安装 SCSI 控制器。 使用 integration services 提供的 IDE 筛选器驱动程序执行的磁盘 I/O 是明显优于磁盘 I/O 性能提供与仿真的 IDE 控制器。 因此，若要确保获得最佳磁盘 I/O 性能的 HYPER-V 虚拟化环境中的数据文件，主机和来宾操作系统上安装集成服务并将数据卷的磁盘合成 SCSI 控制器的配置。 对于跨多个数据驱动器的高密集型存储 I/O 工作负荷，每个 VHD 应附加到单独的合成 SCSI 控制器以提高整体性能。 此外，每个 VHD 应存储在单独的物理磁盘上。 **重要说明：** 不将系统磁盘附加到 SCSI 控制器。 包含一个操作系统虚拟硬盘必须附加到 IDE 控制器。|  
+|配置为使用 SCSI 控制器的数据卷的磁盘|此建议，因为如果安装 HYPER-V 集成服务，而无需安装 HYPER-V 集成服务中，模拟的 IDE 控制器可用，可以仅安装 SCSI 控制器。 使用 integration services 提供的 IDE 筛选器驱动程序执行的磁盘 I/O 是明显优于磁盘 I/O 性能提供与仿真的 IDE 控制器。 因此，若要确保获得最佳磁盘 I/O 性能的 HYPER-V 虚拟化环境中的数据文件，主机和来宾操作系统上安装集成服务并将数据卷的磁盘合成 SCSI 控制器的配置。 对于跨多个数据驱动器的高密集型存储 I/O 工作负荷，每个 VHD 应附加到单独的合成 SCSI 控制器以提高整体性能。 此外，每个 VHD 应存储在单独的物理磁盘上。 **重要提示：** 不要将系统磁盘附加到 SCSI 控制器。 包含一个操作系统虚拟硬盘必须附加到 IDE 控制器。|  
 
 ### <a name="optimize-memory-performance"></a>优化内存性能  
  请遵循以下准则来优化的 HYPER-V 虚拟环境中运行的来宾操作系统的内存性能：  
 
 |步骤|参考|  
 |----------|---------------|  
-|确保有足够的内存将托管的 HYPER-V 虚拟机的物理计算机上安装|可用物理内存通常是 HYPER-V 虚拟机上运行的 BizTalk Server 性能的最重要因素。 这是因为每个虚拟机必须驻留在非分页缓冲池内存中或不能分页到磁盘的内存。 因为非页面缓冲池内存不能分页到磁盘，托管虚拟机的物理计算机应具有的内存总量的可用物理内存分配的每个虚拟机以及下列：<br />     虚拟机监控程序的 300 MB 加上 32 MB 的第一个 GB 的 RAM 分配给每个虚拟机、 另一个 8 MB 的每个其他 GB 的 RAM 分配给每个虚拟机和主机的 512 MB根分区上运行的操作系统<br />     例如，如果 HYPER-V 虚拟机所分配到 2 GB 的内存中的 HYPER-V 管理器，当运行的 HYPER-V 虚拟机是大约 2388 MB 时使用的实际物理内存 (虚拟机分配的虚拟机监控程序 300 MB + 2 GB +32 MB + 8 MB = 2388 MB)。 虚拟机监控程序只需一次进行加载，因为初始化的后续虚拟机不会产生与加载虚拟机监控程序相关的留出 300 MB 开销。 因此，如果两个 HYPER-V 虚拟机是每个已分配的 2 GB 的内存中的 HYPER-V 管理器，使用这些 HYPER-V 虚拟机运行时的实际物理内存将为大约 4476 MB （虚拟机监控程序 300 MB + 4 GB 为分配的虚拟机 + 64 MB + 16 MB = 4476 MB)。 **注意：** 作为常规经验，计划分配为根分区提供服务，例如 I/O 虚拟化、 快照文件支持和子分区管理至少 512 MB 内存。<br />-   **使用 64 位来宾操作系统时可能**– 请考虑使用为每个来宾操作系统的 64 位操作系统。 这样应做因为默认情况下，32 位 Windows 操作系统仅可以解决最多 2 GB 的每个进程虚拟地址空间。 64 位操作系统的安装允许应用程序充分利用托管的 HYPER-V 虚拟机的物理计算机上安装的内存。|  
+|确保有足够的内存将托管的 HYPER-V 虚拟机的物理计算机上安装|可用物理内存通常是 HYPER-V 虚拟机上运行的 BizTalk Server 性能的最重要因素。 这是因为每个虚拟机必须驻留在非分页缓冲池内存中或不能分页到磁盘的内存。 因为非页面缓冲池内存不能分页到磁盘，托管虚拟机的物理计算机应具有的内存总量的可用物理内存分配的每个虚拟机以及下列：<br />     虚拟机监控程序的 300 MB 加上 32 MB 的第一个 GB 的 RAM 分配给每个虚拟机、 另一个 8 MB 的每个其他 GB 的 RAM 分配给每个虚拟机和主机的 512 MB根分区上运行的操作系统<br />     例如，如果 HYPER-V 虚拟机所分配到 2 GB 的内存中的 HYPER-V 管理器，当运行的 HYPER-V 虚拟机是大约 2388 MB 时使用的实际物理内存 (虚拟机分配的虚拟机监控程序 300 MB + 2 GB +32 MB + 8 MB = 2388 MB)。 虚拟机监控程序只需一次进行加载，因为初始化的后续虚拟机不会产生与加载虚拟机监控程序相关的留出 300 MB 开销。 因此，如果两个 HYPER-V 虚拟机是每个已分配的 2 GB 的内存中的 HYPER-V 管理器，使用这些 HYPER-V 虚拟机运行时的实际物理内存将为大约 4476 MB （虚拟机监控程序 300 MB + 4 GB 为分配的虚拟机 + 64 MB + 16 MB = 4476 MB)。 **注意：**     作为常规经验，计划分配为根分区提供服务，例如 I/O 虚拟化、 快照文件支持和子分区管理至少 512 MB 内存。<br />-   **使用 64 位来宾操作系统时可能**– 请考虑使用为每个来宾操作系统的 64 位操作系统。 这样应做因为默认情况下，32 位 Windows 操作系统仅可以解决最多 2 GB 的每个进程虚拟地址空间。 64 位操作系统的安装允许应用程序充分利用托管的 HYPER-V 虚拟机的物理计算机上安装的内存。|  
 
 ### <a name="optimize-network-performance"></a>优化网络性能  
  HYPER-V 虚拟机中支持合成和模拟的网络适配器，但是合成设备提供显著提高性能并减少 CPU 开销。 每个这些适配器连接到虚拟网络交换机，如果需要外部网络连接可以连接到物理网络适配器。 遵循本部分中的建议，以优化网络性能的来宾操作系统的 HYPER-V 虚拟环境中运行。  

@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9bd501c81b92f4fa7824009a949fd6c7e58eaf3b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b6fb92d0b8a20e9ca4e1a71aead55af21b1daeea
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023099"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394785"
 ---
 # <a name="x12-edi-character-set"></a>X12 EDI 字符集
 使用 Ñ 字符或重读符号 （'） 时，指定以下项：  
@@ -25,9 +25,9 @@ ms.locfileid: "37023099"
 
 |                                                                   |                                  字符集                                   |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------|
-|             仅 Ñ EDI 文档中的字符              |                            使用扩展字符集                            |
-|           抑音符 (\`) EDI 文档中            |                              使用 UTF8 字符集                              |
-| Ñ 字符**并**抑音符 (\`) 在同一文档中： | -入站的文档必须具有 UTF8 编码<br />-使用 UTF8 字符集 |
+|             仅 Ñ EDI 文档中的字符              |                            使用扩展的字符集                            |
+|           抑音符 (\`) 中的 EDI 文档 |                             使用 UTF8 字符集                              |
+| Ñ 字符**并**抑音符 (\`) 在同一文档中: | 的入站的文档必须具有 UTF8 编码<br />-使用 UTF8 字符集 |
 
  以下链接提供了有关 EDI 字符集的详细信息：  
 

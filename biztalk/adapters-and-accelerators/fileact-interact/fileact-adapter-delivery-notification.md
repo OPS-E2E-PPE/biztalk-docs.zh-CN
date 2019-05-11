@@ -1,5 +1,5 @@
 ---
-title: FileAct 适配器传递通知 |Microsoft 文档
+title: FileAct 适配器送达通知 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b969e26e0b3219a5789d0f3fd5fd333a3ba45a56
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 79cee79c3eb33010ba4c9f9695d0140844077e04
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22223965"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367211"
 ---
-# <a name="fileact-adapter-delivery-notification"></a>FileAct 适配器传递通知
-验证后完成 （包括签名和摘要式验证） 的回执的消息请求中所述，FileAct 适配器传输到发件人相应传递通知。  
+# <a name="fileact-adapter-delivery-notification"></a>FileAct 适配器送达通知
+在验证后完成 （包括摘要和签名验证） 的回执的消息请求中所示，FileAct 适配器传输到发件人的相应的传递通知。  
   
- 同样，如果 FileAct 适配器接收收到传递通知，它将传输正确的响应。  
+ 同样，FileAct 适配器接收时收到送达通知，它会传输正确的响应。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [FileAct 适配器体系结构](../../adapters-and-accelerators/fileact-interact/fileact-adapter-architecture.md)   
  [FileAct 适配器实时端到端基元](../../adapters-and-accelerators/fileact-interact/fileact-adapter-real-time-end-to-end-primitives.md)   
  [FileAct 适配器实时本地基元](../../adapters-and-accelerators/fileact-interact/fileact-adapter-real-time-local-primitives.md)   

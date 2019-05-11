@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6787edc22c06d6935518be9d223f5968a595d6cf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6141ccc31943844c87182a6682a705a62bf06382
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997014"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396545"
 ---
 # <a name="two-way-messaging-scenarios-for-the-dynamic-resolution-sample"></a>动态解析示例的双向消息传送方案
 本主题演示如何运行的双向消息传送方案[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]动态解析示例。  

@@ -16,12 +16,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3620ea444dd42863ea8242640fb94c873f63c001
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6673d6a35853ab240218c29afba50579c614135e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989766"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373090"
 ---
 # <a name="receive-idocs-from-sap-using-biztalk-server"></a>接收来自使用 BizTalk Server 的 SAP 的 Idoc
 接收 IDOC 涉及[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]充当一个 RFC 服务器用于从 SAP 接收特殊的 RFC 调用。 SAP 适配器可以接收 Idoc 作为 RFC 服务器或 tRFC 服务器。 有关使用 tRFC 服务器正常运行的适配器接收 IDOC 的详细信息，请参阅[接收来自事务性上下文中使用 BizTalk server 中的 SAP 的 Idoc](../../adapters-and-accelerators/adapter-sap/receive-idocs-from-sap-in-a-transactional-context-using-biztalk-server.md)。  
@@ -201,7 +201,7 @@ Response(WCF.Action)= "http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS03/
 ### <a name="adding-ports"></a>添加端口  
  请确保指定的逻辑端口的以下属性。 中列出的名称*端口*列是在业务流程中显示的端口的名称。  
 
-|端口|属性|  
+|Port|属性|  
 |----------|----------------|  
 |ReceiveIDOCPort|-设置**标识符**到*ReceiveIDOCPort*<br /><br /> -设置**类型**到*ReceiveIDOCPortType*<br /><br /> -设置**通信模式**到*请求-响应*<br /><br /> -设置**通信方向**到*接收发送*|  
 |GetIDOCPort|-设置**标识符**到*GetIDOCPort*<br /><br /> -设置**类型**到*GetIDOCPortType*<br /><br /> -设置**通信模式**到*单向*<br /><br /> -设置**通信方向**到*发送*|  
@@ -220,7 +220,7 @@ Response(WCF.Action)= "http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS03/
 
     |使用此选项|执行的操作|  
     |--------------|----------------|  
-    |类别|管道文件|  
+    |Categories|管道文件|  
     |Visual Studio 已安装的模板|发送管道|  
     |“属性”|SendIDOC|  
 
@@ -266,7 +266,7 @@ Response(WCF.Action)= "http://Microsoft.LobServices.Sap/2007/03/Idoc/3/ORDERS03/
     > [!NOTE]
     >  生成架构使用[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]还会创建包含有关端口和要为这些端口设置的操作信息的绑定文件。 从 BizTalk 管理控制台来创建 （对于出站调用） 的发送端口或接收端口 （对于入站调用），可以导入此绑定文件。 有关详细信息，请参阅[配置物理端口绑定使用的端口绑定文件与 SAP](../../adapters-and-accelerators/adapter-sap/configure-a-physical-port-binding-using-a-port-binding-file-to-sap.md)。
 
-  您还必须将 IdocReceiveResponseMessageCreator 项目的程序集添加到 BizTalk 应用程序。 创建此项目以生成要发送到 SAP 系统的响应。 为此：  
+  您还必须将 IdocReceiveResponseMessageCreator 项目的程序集添加到 BizTalk 应用程序。 创建此项目以生成要发送到 SAP 系统的响应。 为此，请执行以下操作：  
 
 1.  在下导入绑定，其中的 BizTalk 应用程序的 BizTalk Server 管理控制台左侧的控制台树中右键单击**资源**，依次指向**添加**，然后单击**BizTalk 程序集**。  
 

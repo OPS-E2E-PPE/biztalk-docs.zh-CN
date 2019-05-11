@@ -1,5 +1,5 @@
 ---
-title: 获取 Started8 |Microsoft 文档
+title: 获取 Started8 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a5c1169167003edcb655737b17a0b37097f1a1d3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 09f198d0d54f6125dc4a00decc157b26f6f06eb5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22297925"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391984"
 ---
 # <a name="getting-started"></a>入门
-本部分介绍你导入管理包之前应执行的操作、 在导入的管理包和有关自定义信息之后应采取的任何步骤。  
+本部分介绍在导入管理包之前应采取的操作、 在导入管理包和有关自定义信息后应执行的所有步骤。  
   
-## <a name="in-this-section"></a>在本节中  
+## <a name="in-this-section"></a>本节内容  
   
 -   [导入管理包之前](../technical-guides/before-you-import-the-management-pack.md)  
   
--   [导入监视管理包 BizTalk Server 2013](../technical-guides/import-the-biztalk-server-2013-monitoring-management-pack.md)  
+-   [导入 BizTalk Server 2013 监视管理包](../technical-guides/import-the-biztalk-server-2013-monitoring-management-pack.md)  
   
--   [为自定义项创建新的管理包](../technical-guides/create-a-new-management-pack-for-customizations.md)
+-   [新建管理包进行自定义](../technical-guides/create-a-new-management-pack-for-customizations.md)

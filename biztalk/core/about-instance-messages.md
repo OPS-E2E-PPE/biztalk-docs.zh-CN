@@ -1,5 +1,5 @@
 ---
-title: 有关实例消息 |Microsoft 文档
+title: 有关实例消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bf956fb9f201697ac8c2b7da2135e469e03de55e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7ccd2e6cbaca7a592c54fd2d36941ac1c004440c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22224773"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362358"
 ---
 # <a name="about-instance-messages"></a>有关实例消息
 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 发送和接收实例消息，每个实例消息通常表示诸如采购订单之类的一个或多个业务文档。 实例消息是由一个或多个架构定义的消息结构的实例。 一个架构或者一起使用的一组架构将定义有效实例消息的组成部分。 例如，采购订单可能定义为在其中具有若干记录（如 ShipTo 记录、BillTo 记录和 Items 记录等）。 这些记录中的每一个都可以定义为包含它们自己的子记录和字段。 相应的架构定义这些记录和字段的潜在内容，相应的实例消息包含实际采购订单，这些采购订单又包含根据架构组织的采购订单数据。  

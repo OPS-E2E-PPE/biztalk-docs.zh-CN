@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 81eba8c28b3bf11eea38624e0a017d8bca9eb9a9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6433f9318444ba45c4ae2b99de12e044c0b990d7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013182"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373126"
 ---
 # <a name="overview-of-the-wcf-channel-model-with-the-sap-adapter"></a>使用 SAP 适配器的 WCF 通道模型概述
 若要在 SAP 系统中，调用 Rfc、 Trfc 或 Bapi 或 IDOC 发送到 SAP 系统，你的代码可作为 WCF 客户端，将向适配器发送出站操作。 在 WCF 通道模型中，你的代码的通道上发送请求消息来调用在适配器上的操作。  

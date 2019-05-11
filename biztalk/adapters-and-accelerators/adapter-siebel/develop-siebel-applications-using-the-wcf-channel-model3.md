@@ -1,5 +1,5 @@
 ---
-title: 开发 Siebel 应用程序使用 WCF 通道 Model3 |Microsoft 文档
+title: 开发 Siebel 应用程序使用 WCF 通道 Model3 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 25e504bb9634ab917ee1c4b8d9fa20dc2c4728e5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b2451ad1bc51a8af211f4afbc0efe0bec2ebd3a4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22221877"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371723"
 ---
 # <a name="develop-siebel-applications-using-the-wcf-channel-model3"></a>开发 Siebel 应用程序使用 WCF 通道 Model3
-本部分提供有关创建通道，并可以在 Siebel 执行的操作信息使用的通道。  
+本部分提供有关创建通道和 Siebel 可以执行的操作信息使用的通道。  
   
 ## <a name="in-this-section"></a>本节内容  
   

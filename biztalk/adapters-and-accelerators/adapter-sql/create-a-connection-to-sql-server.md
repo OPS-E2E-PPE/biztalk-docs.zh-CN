@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b7c5f186a28f068f3ffc217ce5f252a1512f03a0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bbf9a791ba404f1890becc81cfcc545df2cb3f78
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978006"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369882"
 ---
 # <a name="create-a-connection-to-sql-server"></a>创建与 SQL Server 的连接
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]是[!INCLUDE[firstref_btsWinCommFoundation](../../includes/firstref-btswincommfoundation-md.md)]自定义绑定。 在这种情况下，它使到 SQL Server 数据库通过 WCF 终结点地址的通信。 在 WCF 中，终结点地址标识服务的网络位置，并通常都表示为统一资源标识符 (URI)。 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]表达此位置作为一个连接 URI，其中包含属性的[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]用于建立与 SQL Server 数据库的连接。 必须指定连接 URI 时您：  

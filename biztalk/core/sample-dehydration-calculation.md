@@ -12,17 +12,17 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 77701083272da9e09c21cb05daf3c4e9764b604c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 025d83e8a7bd6c5a3c324bd5dae8354ac43321ed
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993038"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393904"
 ---
 # <a name="sample-dehydration-calculation"></a>示例冻结计算
-下面是一个计算示例，它使用专用字节来确定 BizTalk 是否将冻结计算。 它使用默认配置值以及一些示例运行时值。  
+下面是示例计算，使用专用字节数，以确定将冻结 BizTalk 的示例。 它使用默认配置值和一些示例运行时的值。  
   
- 假定冻结属性值如下：  
+ 假定冻结属性的以下值：  
   
 - **TimeBlocked** = 60 （示例时间以秒为单位）  
   
@@ -50,11 +50,11 @@ TestThreshold = 1 + 599.66
 TestThreshold = 600.66  
 ```  
   
- 最终，决定是否冻结：  
+ 和最后，决定冻结：  
   
 ```  
 Dehydrate = (90 == -1 OR 90 > 600 OR 60 > (2 * 600))  
 Dehydrate = false  
 ```  
   
- 使用此示例，您可以确定在此时将不冻结业务流程。
+ 使用此示例中，可以确定，该业务流程将不会冻结这一次。

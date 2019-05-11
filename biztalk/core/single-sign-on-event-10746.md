@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10746 |Microsoft Docs
+title: 单一登录：Event 10746 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b3f4fa77909ba53e16d3dffd31073ff93e233ed5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 19bef7a20062761f1d019b786bd96581b302bec4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998862"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395495"
 ---
-# <a name="single-sign-on-event-10746"></a>单一登录： 事件 10746
+# <a name="single-sign-on-event-10746"></a>单一登录：事件 10746
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                                               |
@@ -30,7 +30,7 @@ ms.locfileid: "36998862"
 |  事件源   |                                                                    ENTSSO                                                                     |
 |    组件    |                                                                      N\A                                                                      |
 |  符号名称  |                                                           SSO_WARN_PASSWORD_EXPIRED                                                           |
-|  消息正文   | 外部帐户密码已过期。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> 外部帐户： %3 |
+|  消息正文   | 外部帐户的密码已 expired.%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> 外部帐户： %3 |
 
 ## <a name="explanation"></a>解释  
  此警告事件表明外部帐户的密码已过期。  
@@ -41,6 +41,6 @@ ms.locfileid: "36998862"
 ## <a name="more-info"></a>详细信息
 有关详细信息，请参阅下列资源：  
 
-- **密码同步适配器属性： 选项** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]  
+- **密码同步适配器属性：选项** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]  
 
 - [密码同步](../core/password-synchronization2.md)

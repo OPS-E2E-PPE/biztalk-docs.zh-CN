@@ -1,5 +1,5 @@
 ---
-title: 使用与 SharePoint Siebel 适配器时的注意事项 |Microsoft 文档
+title: 与 SharePoint 结合使用 Siebel 适配器时的注意事项 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,50 +12,50 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1df22d3eb20dc6286d5b85c3648db98518f23e37
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ee3328ea53a68688441c25c254a73e45cb94f083
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22223917"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371778"
 ---
-# <a name="considerations-when-using-the-siebel-adapter-with-sharepoint"></a>使用与 SharePoint Siebel 适配器时的注意事项
-本主题包含有关的问题的信息时使用可能会遇到[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]与 Microsoft Office SharePoint Server，以及解决方法。 问题分为两个类别：  
+# <a name="considerations-when-using-the-siebel-adapter-with-sharepoint"></a>与 SharePoint 结合使用 Siebel 适配器时的注意事项
+本主题包含有关的问题的信息可能会遇到同时使用[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]使用 Microsoft Office SharePoint Server，以及解决方法。 问题分为两个类别：  
   
--   一般问题  
+-   常规问题  
   
 -   涉及自定义 Web 部件的问题  
   
 ## <a name="general-issues"></a>一般问题  
- 本部分包含没有解决方法，或需要修改的分辨率的应用程序定义文件的问题。  
+ 本部分包含有没有解决方法，或需要修改应用程序定义文件，解决的问题。  
   
-### <a name="issue-1-the-simple-type-data-returned-by-the-wcf-service-is-not-displayed"></a>问题 1： 不显示返回的 WCF 服务的简单类型数据  
- **说明**: Microsoft Office SharePoint Server 需要要进行的数据集或集合类型的 WCF 服务返回的数据。 如果 WCF 服务返回的数据的简单类型，Microsoft Office SharePoint Server 将不显示数据。  
+### <a name="issue-1-the-simple-type-data-returned-by-the-wcf-service-is-not-displayed"></a>问题 1:不显示 WCF 服务返回简单类型数据  
+ **说明**:Microsoft Office SharePoint Server 需要为数据集或集合类型的 WCF 服务返回的数据。 如果 WCF 服务返回的数据的简单类型，则 Microsoft Office SharePoint Server 不显示数据。  
   
- **解析**： 没有解决方法。 它是一个与 Microsoft Office SharePoint Server 的已知的限制。  
+ **解析**:没有解决方法。 这是一个使用 Microsoft Office SharePoint Server 的已知的限制。  
   
-### <a name="issue-2-an-error-message-is-displayed-if-the-data-returned-by-the-wcf-service-is-null"></a>问题 2： 一条错误消息显示如果 WCF 服务返回的数据为 NULL  
- **说明**： 如果 WCF 服务返回的数据为 NULL 值，Microsoft Office SharePoint Server 将显示一条错误消息。 例如，假设你正在使用业务数据列表 Web 部件**Finder**方法实例，并正在寻求 Siebel 系统基于搜索表达式中的客户。 你指定的搜索表达式提取一个 NULL 值。 在这种情况下，Microsoft Office SharePoint Server 将显示一条错误消息。  
+### <a name="issue-2-an-error-message-is-displayed-if-the-data-returned-by-the-wcf-service-is-null"></a>问题 2:如果 WCF 服务返回的数据为 NULL，将显示一条错误消息  
+ **说明**:如果 WCF 服务返回的数据为 NULL 值，Microsoft Office SharePoint Server 将显示一条错误消息。 例如，假设要使用的业务数据列表 Web 部件**Finder**方法实例，并在搜索表达式所基于的 Siebel 系统中进行搜索的客户。 指定的搜索表达式中提取一个 NULL 值。 在这种情况下，Microsoft Office SharePoint Server 将显示一条错误消息。  
   
- **解析**： 没有解决方法。 它是一个与 Microsoft Office SharePoint Server 的已知的限制。  
+ **解析**:没有解决方法。 这是一个使用 Microsoft Office SharePoint Server 的已知的限制。  
   
-### <a name="issue-3-an-array-of-simple-type-returned-by-the-wcf-service-is-not-displayed"></a>问题 3: WCF 服务返回的简单类型的数组不显示  
- **说明**： 如果 WCF 服务返回的数据是简单类型的数组，Microsoft Office SharePoint Server 将不显示数据。 此外，在业务数据目录定义编辑器中返回数组的简单类型执行的方法实例时，会显示以下错误消息:"后端系统适配器返回一个结构使用的相应的元数据 （不兼容实例，但、 参数或 TypeDescriptor）。"  
+### <a name="issue-3-an-array-of-simple-type-returned-by-the-wcf-service-is-not-displayed"></a>问题 3:不显示 WCF 服务返回简单类型的数组  
+ **说明**:如果 WCF 服务返回的数据是简单类型的数组，Microsoft Office SharePoint Server 将不显示数据。 此外，在执行方法实例中 Business Data Catalog Definition Editor 返回简单类型的数组时，将显示以下错误消息："后端系统适配器返回结构与相应的元数据 （MethodInstance、 参数或 TypeDescriptor） 不兼容。"  
   
- **解析**： 没有解决方法。 它是使用 Microsoft Office SharePoint Server 和业务数据目录定义编辑器已知的限制。  
+ **解析**:没有解决方法。 它是使用 Microsoft Office SharePoint Server 和 Business Data Catalog Definition Editor 已知的限制。  
   
-### <a name="issue-4-cannot-import-an-application-definition-file-that-contains-a-complex-type-parameter-having-more-than-300-fields"></a>问题 4： 无法导入一个包含具有大于 300 个字段的复杂类型形参的应用程序定义文件  
- **说明**: Microsoft Office SharePoint Server 无法导入具有 WCF 服务返回的复杂类型参数中的大于 300 个字段并显示一条错误消息，如果你尝试执行此操作的应用程序定义文件。 这是因为 Microsoft Office SharePoint Server 无法显示大于 300 个字段的复杂类型参数的限制。  
+### <a name="issue-4-cannot-import-an-application-definition-file-that-contains-a-complex-type-parameter-having-more-than-300-fields"></a>问题 4:无法导入包含复杂类型参数都有 300 多个字段的应用程序定义文件  
+ **说明**:Microsoft Office SharePoint Server 无法导入应用程序定义文件中的 WCF 服务，返回的复杂类型参数的 300 多个字段并显示一条错误消息，如果您尝试执行此操作。 这是因为不能够显示 300 多个字段的复杂类型参数的 Microsoft Office SharePoint Server 的限制。  
   
- **解析**： 使用业务数据目录定义编辑器来限制小于或等于 300 的复杂类型参数的字段数。 具体取决于你的需求，你可以删除复杂类型参数在业务数据目录定义编辑器中，不需要 Microsoft Office SharePoint Server 中显示的字段。  或者，你可以在其中还将应用程序定义文件从业务数据目录定义编辑器导出了所有字段，，然后修改在记事本或任何 XML 创作应用程序以删除不是字段中的应用程序定义文件需要限制和 300 之间的字段数。  
+ **解析**:使用 Business Data Catalog Definition Editor 可限制小于或等于 300 的复杂类型参数的字段的数目。 具体取决于你的要求，可以删除复杂类型参数在 Business Data Catalog Definition Editor 不需要 Microsoft Office SharePoint Server 中显示的字段。  或者，您可以还将应用程序定义文件从 Business Data Catalog Definition Editor 导出所有字段，然后修改在记事本或任何 XML 创作应用程序以删除不是字段中的应用程序定义文件必须以限制为 300 的字段数。  
   
-##  <a name="Custom_Web_Part"></a>涉及自定义 Web 部件的问题  
- 本部分包含有关解决方法需要自定义 Web 部件使用的问题。 有关使用自定义 Web 部件以解决在使用时可能出现的问题的详细信息[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]和 Microsoft Office SharePoint Server，请参阅[用于 Siebel 适配器的自定义 Web 部件](../../adapters-and-accelerators/adapter-siebel/use-a-custom-web-part-with-the-siebel-adapter.md)。  
+##  <a name="Custom_Web_Part"></a> 涉及自定义 Web 部件的问题  
+ 本部分包含用于解析都需要使用自定义 Web 部件的问题。 有关使用自定义 Web 部件以解决可能会使用时产生的问题的详细信息[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]和 Microsoft Office SharePoint Server，请参阅[Siebel 适配器一起使用自定义 Web 部件](../../adapters-and-accelerators/adapter-siebel/use-a-custom-web-part-with-the-siebel-adapter.md)。  
   
-### <a name="issue-1-index-of-an-enumerator-is-displayed-instead-of-the-value-for-the-enum-data-type"></a>问题 1： 枚举器的索引都显示而不是枚举数据类型的值  
- **说明**： 如果业务数据列表或 Microsoft Office SharePoint Server 中的业务数据项 Web 部件包含对于枚举类型 （包含一组称为枚举数的已命名常数的不同类型） 的数据，枚举数的索引是显示而不是 Microsoft Office SharePoint Server 中其值。 这是因为业务数据列表和业务数据项 Web 部件正确打印到 SharePoint 门户的枚举类型数据的值。  
+### <a name="issue-1-index-of-an-enumerator-is-displayed-instead-of-the-value-for-the-enum-data-type"></a>问题 1:一个枚举器的索引显示而不是枚举数据类型的值  
+ **说明**:如果 Microsoft Office SharePoint Server 中的业务数据项 Web 部件或业务数据列表包含枚举类型 （一组称为枚举器的命名常量组成的不同类型） 的数据，而不是其值中显示的枚举器的索引Microsoft Office SharePoint Server。 这是因为业务数据列表和业务数据 Web 部件未正确打印到 SharePoint 门户的枚举类型数据的值。  
   
- **解析**： 使用自定义 Web 部件来打印而不是索引的枚举数的值。 有关使用自定义 Web 部件的信息，请参阅[用于 Siebel 适配器的自定义 Web 部件](../../adapters-and-accelerators/adapter-siebel/use-a-custom-web-part-with-the-siebel-adapter.md)。 例如，可以在 Web 部件中使用下面的代码示例可在 Microsoft Office SharePoint Server 上打印枚举类型数据的正确值。  
+ **解析**:使用自定义 Web 部件来打印而不是索引的枚举器的值。 有关使用自定义 Web 部件的信息，请参阅[Siebel 适配器一起使用自定义 Web 部件](../../adapters-and-accelerators/adapter-siebel/use-a-custom-web-part-with-the-siebel-adapter.md)。 例如，可以在 Web 部件中使用下面的代码示例可在 Microsoft Office SharePoint Server 上打印的枚举类型数据的正确值。  
   
 ```  
 namespace CustomWebpart  
@@ -140,10 +140,10 @@ namespace CustomWebpart
   
 ```  
   
-### <a name="issue-2-cannot-specify-values-to-array-elements"></a>问题 2： 不能指定对数组元素的值  
- **说明**: WCF 服务的输入的参数是一个数组，如果你不能指定到使用在创建使用业务数据目录定义编辑器的应用程序定义文件中定义的筛选器的数组元素的值。 这意味着，你不能用于业务数据列表或业务数据项 Web 部件在 Microsoft Office SharePoint Server 中指定这些到 WCF 服务的输入参数 （数组的元素） 的值。 这是由于应用程序定义文件中定义数组的方法。  
+### <a name="issue-2-cannot-specify-values-to-array-elements"></a>问题 2:不能指定为数组元素的值  
+ **说明**:如果 WCF 服务的输入的参数是一个数组，则无法指定使用在使用 Business Data Catalog Definition Editor 创建的应用程序定义文件中定义的筛选器的数组元素的值。 这意味着，您不能使用的业务数据列表或业务数据 Web 部件在 Microsoft Office SharePoint Server 中指定这些输入参数 （数组的元素） 的 WCF 服务的值。 这是因为应用程序定义文件中定义数组的方式。  
   
- **解析**： 使用自定义 Web 部件将值分配到数组元素。 有关使用自定义 Web 部件的信息，请参阅[用于 Siebel 适配器的自定义 Web 部件](../../adapters-and-accelerators/adapter-siebel/use-a-custom-web-part-with-the-siebel-adapter.md)。 例如，可以使用下面的代码示例中的步骤 3 中"问题 1： 枚举器的索引而不是枚举数据类型的值将显示"将值分配到数组元素。  
+ **解析**:使用自定义 Web 部件将值分配给数组元素。 有关使用自定义 Web 部件的信息，请参阅[Siebel 适配器一起使用自定义 Web 部件](../../adapters-and-accelerators/adapter-siebel/use-a-custom-web-part-with-the-siebel-adapter.md)。 例如，可以使用下面的代码示例中的步骤 3 中"问题 1:一个枚举器的索引而不是枚举数据类型的值显示"将值分配到数组元素。  
   
 ```  
 /***Assign required values to parameters of type array.***/   
@@ -170,18 +170,18 @@ namespace CustomWebpart
   
 ```  
   
-### <a name="issue-3-limitation-with-specifying-null-values-to-complex-type-parameters"></a>指定给复杂类型参数的 NULL 值的问题 3： 限制  
- **说明**： 如果 Microsoft Office SharePoint Server 中不指定任何值为复杂类型参数从 Web 部件，NULL 应传递为复杂类型参数的值到 WCF 服务。 但是，非 NULL 值传递为复杂类型参数，并且为其子元素 （的简单类型） 传递了 NULL。 这将导致预期的消息架构与传递到 WCF 服务的消息架构不匹配。 因此，[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]可能会显示一条错误消息。  
+### <a name="issue-3-limitation-with-specifying-null-values-to-complex-type-parameters"></a>问题 3:指定到复杂类型参数的 NULL 值的限制  
+ **说明**:如果 Microsoft Office SharePoint Server 中不指定 Web 部件中的一个复杂类型参数的任何值，NULL 应传递复杂类型参数的值作为到 WCF 服务。 但是，为复杂类型参数，传递了非 NULL 值和 NULL 传递 （的简单类型） 及其子元素。 这将导致预期的消息架构传递给 WCF 服务的消息架构不匹配。 因此，[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]可能会显示一条错误消息。  
   
 > [!NOTE]
->  若要了解复杂类型参数的默认值，当从 Microsoft Office SharePoint Server 中的 Web 部件不传递任何值，请使用步骤 2 中的代码示例中所述"问题 1： 枚举器的索引显示而不是枚举数据类型的值。"  
+>  若要从 Microsoft Office SharePoint Server 中的 Web 部件不传递任何值时，找出复杂类型参数的默认值，请使用步骤 2 中的代码示例中所述"问题 1:枚举器的显示索引而不是枚举数据类型的值。"  
   
- **解析**： 使用自定义 Web 部件时从 Microsoft Office SharePoint Server 中的 Web 部件不指定任何值将 NULL 值分配给复杂类型参数。 有关使用自定义 Web 部件的信息，请参阅[用于 Siebel 适配器的自定义 Web 部件](../../adapters-and-accelerators/adapter-siebel/use-a-custom-web-part-with-the-siebel-adapter.md)。  
+ **解析**:使用自定义 Web 部件时从 Microsoft Office SharePoint Server 中的 Web 部件未不指定任何值为复杂类型参数分配一个 NULL 值。 有关使用自定义 Web 部件的信息，请参阅[Siebel 适配器一起使用自定义 Web 部件](../../adapters-and-accelerators/adapter-siebel/use-a-custom-web-part-with-the-siebel-adapter.md)。  
   
-###  <a name="Issue1"></a>问题 4： 与 Microsoft Office SharePoint Server 中显示的单个记录限制基于多个值  
- **说明**： 如果你想要基于从 Siebel 系统的多个值 （输入参数） 的 Microsoft Office SharePoint Server 中显示一条记录，则无法使用任何三个 Web 部件 （业务数据列表、 业务数据项和业务数据相关的列表） 中指定[步骤 3： 创建一个 SharePoint 应用程序检索数据从 Siebel](../../adapters-and-accelerators/adapter-siebel/step-3-create-a-sharepoint-application-to-retrieve-data-from-siebel.md)中[教程 1： 演示数据从 Siebel 系统 SharePoint 站点上](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)。  
+###  <a name="Issue1"></a> 问题 4:在 Microsoft Office SharePoint Server 中显示一条记录限制基于多个值  
+ **说明**:如果你想要在基于多个值 （输入参数） 从 Siebel 系统的 Microsoft Office SharePoint Server 中显示一条记录，则无法使用所有三个 Web 部件 （业务数据列表中，业务数据项和业务数据相关列表） 指定在[步骤 3:创建 SharePoint 应用程序以从 Siebel 检索数据](../../adapters-and-accelerators/adapter-siebel/step-3-create-a-sharepoint-application-to-retrieve-data-from-siebel.md)在[教程 1:从 SharePoint 站点上的 Siebel 系统提供数据](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)。  
   
- **解析**： 你必须使用自定义 Web 部件执行此操作。 有关使用自定义 Web 部件的信息，请参阅[用于 Siebel 适配器的自定义 Web 部件](../../adapters-and-accelerators/adapter-siebel/use-a-custom-web-part-with-the-siebel-adapter.md)。 例如，在步骤 3 中"问题 1： 枚举器的索引显示而不是枚举数据类型的值"可以修改为多个而不是提供给单个业务组件参数的输入参数提供值的代码。  
+ **解析**:必须使用自定义 Web 部件来执行此操作。 有关使用自定义 Web 部件的信息，请参阅[Siebel 适配器一起使用自定义 Web 部件](../../adapters-and-accelerators/adapter-siebel/use-a-custom-web-part-with-the-siebel-adapter.md)。 例如，在步骤 3 中"问题 1:一个枚举器的索引而不是枚举数据类型的值显示"可以修改代码以提供多个而不是提供单个业务组件参数的输入参数的值。  
   
-## <a name="see-also"></a>另请参阅  
- [使用带有 SharePoint Siebel 适配器](../../adapters-and-accelerators/adapter-siebel/use-the-siebel-adapter-with-sharepoint.md)
+## <a name="see-also"></a>请参阅  
+ [使用 Siebel 适配器和 SharePoint](../../adapters-and-accelerators/adapter-siebel/use-the-siebel-adapter-with-sharepoint.md)

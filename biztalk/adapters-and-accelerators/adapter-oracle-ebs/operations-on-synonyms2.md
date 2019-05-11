@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ce9b6ef6415778f0c5d894f2fb4e14b4da87ffdc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ce3de4d9c1010449c3f56cf2b47579dcc0210351
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005710"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375299"
 ---
 # <a name="operations-on-synonyms"></a>对同义词的操作
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]使您能够对同义词的操作。 同义词是别名或友好名称 （如表、 视图、 存储的过程、 函数和包） 的数据库对象。 有关在 Oracle 中的同义词的详细信息，请参阅[ http://go.microsoft.com/fwlink/?LinkId=138058 ](http://go.microsoft.com/fwlink/?LinkId=138058)。  
@@ -25,22 +25,22 @@ ms.locfileid: "37005710"
 ## <a name="advantages-of-using-synonyms"></a>使用同义词的优点  
  同义词是在以下情况下有用：  
   
--   **使用不同的架构**： 如果你正在使用不同的架构，并且需要在架构之间访问的对象，您必须使用不同的 SQL 语句来访问这些对象。 可以在架构中创建对象的同义词，并在 SQL 语句中使用同义词，若要访问的对象。 如果需要访问不同架构中的基础对象，修改同义词以指向不同的架构中的对象的定义。 因此，基于针对同义词的应用程序仍然有效的 SQL 语句中未进行修改。  
+-   **使用不同的架构**:如果你正在使用不同的架构，并且需要在架构之间访问的对象，您必须使用不同的 SQL 语句来访问这些对象。 可以在架构中创建对象的同义词，并在 SQL 语句中使用同义词，若要访问的对象。 如果需要访问不同架构中的基础对象，修改同义词以指向不同的架构中的对象的定义。 因此，基于针对同义词的应用程序仍然有效的 SQL 语句中未进行修改。  
   
-     例如，假设测试和生产环境中有两个完全相同的架构:"Test"和"Prod"。 若要访问名为"Test"架构中的"Employee"的表，必须使用`Test.Employee`或`Employee`（如果"Test"的默认架构） 中 SQL 语句。 如果你想要在生产架构中使用"Employee"表，则现在必须使用`Prod.Employee`或`Employee`（将默认架构更改为"Prod"） 在 SQL 语句中。 若要解决此问题，可以创建"Test.Employee"表 (假设"EMP") 的同义词，然后在您的 SQL 语句中使用它。 无论何时需要对"Prod.Employee"表执行的操作，修改"EMP"同义词，使其指向"Prod.Employee"表的定义。 这可确保不需要修改您的 SQL 语句来执行不同的架构中的对象上的操作。  
+     例如，假设测试和生产环境有两个完全相同的架构："测试"和"Prod"。 若要访问名为"Test"架构中的"Employee"的表，必须使用`Test.Employee`或`Employee`（如果"Test"的默认架构） 中 SQL 语句。 如果你想要在生产架构中使用"Employee"表，则现在必须使用`Prod.Employee`或`Employee`（将默认架构更改为"Prod"） 在 SQL 语句中。 若要解决此问题，可以创建"Test.Employee"表 (假设"EMP") 的同义词，然后在您的 SQL 语句中使用它。 无论何时需要对"Prod.Employee"表执行的操作，修改"EMP"同义词，使其指向"Prod.Employee"表的定义。 这可确保不需要修改您的 SQL 语句来执行不同的架构中的对象上的操作。  
   
--   **基础对象中的更改**: 同义词使您免受中的名称或在其正在执行的操作的基础对象的位置的任何更改。 您可以修改同义词定义以适应的名称或位置的基础对象中的任何更改。  
+-   **基础对象中的更改**:同义词使您免受中的名称或在其正在执行的操作的基础对象的位置的任何更改。 您可以修改同义词定义以适应的名称或位置的基础对象中的任何更改。  
   
      例如，假设使用一个表中其中一个存储过程。 现在，如果表名称更改或表移动到其他某个位置然后你的存储的过程将停止工作。 若要解决此问题，可以在存储过程中，表使用同义词和更新同义词定义，如果中的名称或位置的表的更改。  
   
--   **简化、 安全地访问**： 在分布式环境中，您必须使用架构名称和对象名称以确保访问正确的对象。 此外，还必须确保用户拥有所需的目标对象的权限。 若要简化此操作，可以通过创建具有该对象的完全限定的路径的同义词来分配对象的简单名称，然后授予针对同义词的适当权限。  
+-   **简化、 安全地访问**:在分布式环境中，必须使用架构名称和对象名称以确保访问正确的对象。 此外，还必须确保用户拥有所需的目标对象的权限。 若要简化此操作，可以通过创建具有该对象的完全限定的路径的同义词来分配对象的简单名称，然后授予针对同义词的适当权限。  
   
 ## <a name="working-with-synonyms-in-the-adapter"></a>该适配器中使用同义词  
  [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公开在 Oracle 中的同义词：  
   
 - 表  
   
-- 视图  
+- Views  
   
 - 存储过程  
   

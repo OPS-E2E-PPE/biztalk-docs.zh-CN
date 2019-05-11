@@ -26,12 +26,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b99822d838f0681cf9a6ce336ed1a23f4088c659
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a122f1c1f432a6af9361ee86e7f832627ca638dc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996134"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373147"
 ---
 # <a name="operations-on-trfcs-in-sap"></a>在 SAP 中 Trfc 的操作
 事务 Rfc (Trfc) 是工作的作为一个逻辑单元 (LUW) 的一部分调用的 Rfc。 在 SAP 系统中，LUW 包含所有完成的业务或编程任务所需的步骤。 TRFC 表示一种方法调用 RFC;它不是唯一的 SAP 项目。  
@@ -108,7 +108,7 @@ ms.locfileid: "36996134"
 ### <a name="the-tid-database"></a>TID 数据库  
  当它充当 tRFC 服务器时，则适配器将使用 SQL Server 数据库 — TID 数据库 — 管理事务接收来自 SAP 系统的 Id。 例如，它使用 TID 数据库来帮助管理呼叫从 SAP 系统以提交、 回滚，并确认 TID。 适配器还将存储它会创建并将每个 SAP TID TID 数据库中与相关联的 GUID。  
   
-### <a name="prerequisites"></a>必要條件  
+### <a name="prerequisites"></a>先决条件  
  对于作为 tRFC 服务器运行的适配器，必须确保在以下情况成立：  
   
 - RFC 必须声明上的 SAP 系统。 这是因此适配器可以检索描述从 SAP 系统的 RFC 的元数据。 在你的应用程序中实际实现 RFC。  
@@ -148,7 +148,7 @@ ms.locfileid: "36996134"
 ## <a name="special-trfc-operations"></a>特殊 tRFC 操作  
  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]还可以执行某些特殊 tRFC 操作上的 SAP 系统。 一个此类操作，RfcConfirmTransID。  
   
-- **RfcConfirmTransID。** 在调用此操作[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]确认 tRFC 调用到 SAP 服务器。 RfcConfirmTransID 可能需要在其中使用该适配器以将 Idoc 发送到 SAP 服务器作为 tRFC 的方案中。 该操作位于下**TRFC**节点时使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]和[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。  
+- **RfcConfirmTransID.** 在调用此操作[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]确认 tRFC 调用到 SAP 服务器。 RfcConfirmTransID 可能需要在其中使用该适配器以将 Idoc 发送到 SAP 服务器作为 tRFC 的方案中。 该操作位于下**TRFC**节点时使用[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]和[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。  
   
   有关消息结构和 RfcConfirmTransID 操作的 SOAP 操作的详细信息，请参阅[tRFC 操作的消息架构](../../adapters-and-accelerators/adapter-sap/message-schemas-for-trfc-operations.md)。  
   

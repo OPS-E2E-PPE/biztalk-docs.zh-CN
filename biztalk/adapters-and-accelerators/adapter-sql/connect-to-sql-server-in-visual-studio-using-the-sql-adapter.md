@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 22e527714bb1cf14531a6565cd7987531a4eb07b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 78f447d2a30d3082d26ccf04750ae7c9c5580c67
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014502"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369917"
 ---
 # <a name="connect-to-sql-server-in-visual-studio-using-the-sql-adapter"></a>连接到 SQL Server 在 Visual Studio 中使用 SQL 适配器
 本部分提供有关如何使用说明[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]，则[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]，和[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。  

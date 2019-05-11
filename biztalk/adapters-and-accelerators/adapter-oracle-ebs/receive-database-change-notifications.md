@@ -12,17 +12,17 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5eaeab1e3dc08ec88766242b202bb1210ae69533
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 91bf169514d455b3f16800511557afba94fb321d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968326"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374763"
 ---
 # <a name="receive-database-change-notifications"></a>接收数据库更改通知
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]支持 ODP.NET 数据库更改通知功能。 使用此功能，适配器客户端可以将注册的 SELECT 语句为通知查询上，对数据库和数据库将通知发送到适配器客户端和结果集的 SELECT 语句更改。 在适配器使用 OracleDependency 类中实现数据库更改通知。 有关 ODP.NET 和 OracleDependency 类中的数据库的更改支持功能的更多特定于 Oracle 的信息，请转到[ http://go.microsoft.com/fwlink/p/?LinkId=124801 ](http://go.microsoft.com/fwlink/p/?LinkId=124801)。  
 
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]公开的入站的操作，通知，以支持数据库更改通知。 但是，数据库的更改通知，以使用[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]，必须确保以下：  
 
 - 使用基础的 Oracle 数据库版本 10.2 或更高版本连接到 Oracle E-business Suite。 10.2 之前的 oracle 数据库版本不支持通知。  
@@ -55,7 +55,7 @@ ms.locfileid: "36968326"
 |                                                                                                                              通知                                                                                                                               |                                                                                                                                                                                                                                                      轮询                                                                                                                                                                                                                                                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                                                                               通知是仅支持 Oracle 数据库版本 10.2 和更高版本。                                                                                               |                                                                                                                                                                   对于所有支持的 Oracle 数据库版本支持轮询[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。                                                                                                                                                                    |
-|                                                                                                          数据更改通知始终是瞬间完成的。                                                                                                          | 你可以配置轮询间隔来检查可用的固定时间间隔轮询的数据或在瞬间完成，以及何时有可用的数据。 **提示：** 轮询可以为您提供更好的吞吐量中情况下，数据更改发生的连续，并且不希望为每个更改的和发生时收到通知。 相反，您指定要在其后的发生是因为最后一个更改通知的所有更改通知的轮询间隔。 |
+|                                                                                                          数据更改通知始终是瞬间完成的。                                                                                                          | 你可以配置轮询间隔来检查可用的固定时间间隔轮询的数据或在瞬间完成，以及何时有可用的数据。 **提示：** 轮询可以提供更好的吞吐量中情况下，数据更改发生的连续，并且不希望为每个更改的和发生时收到通知。 相反，您指定要在其后的发生是因为最后一个更改通知的所有更改通知的轮询间隔。 |
 | Oracle 数据库发出通知。 只需在适配器发出的通知语句指示要在没有语句的结果集中的更改的情况下启动通知的数据库。 通知是 Oracle 数据库的一项功能。 |                                                                                                                                         由适配器启动轮询。 适配器执行 SQL 语句，以验证是否可用于轮询，然后通过执行轮询语句，如果某些数据可用于轮询启动轮询数据。                                                                                                                                         |
 |                                                                                             通知语句可用于只读取 Oracle 数据库中的数据。                                                                                             |                                                                                                                                                                                                                 轮询语句可用于读取或更新 Oracle 数据库中的数据。                                                                                                                                                                                                                  |
 |                                                                                   通知只告知如 Insert、 数据更改的类型更新和删除。                                                                                    |                                                                                                                                                                                                                            轮询通知您已更改的实际数据。                                                                                                                                                                                                                            |

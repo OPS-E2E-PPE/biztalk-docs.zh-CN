@@ -1,5 +1,5 @@
 ---
-title: XLANG-s 表达式 |Microsoft 文档
+title: Xlang-s 表达式 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 37d6099757998b0428d761f124785c363a24f2b9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fe22d2ed03f213e8240aba867fff545a2e488b73
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289357"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394702"
 ---
-# <a name="xlang-s-expressions"></a>XLANG-s 表达式
-表达式是运算符和操作数构成的序列。 本主题将说明 XLANG/s 针对各种表达式所支持的语法。  
+# <a name="xlang-s-expressions"></a>Xlang-s 表达式
+表达式是一系列运算符和操作数。 本主题说明 XLANG/s 支持针对各种表达式的语法。  
   
 ## <a name="basic-expressions"></a>基本表达式  
  下面的代码显示了基本表达式的语法：  
@@ -136,7 +136,7 @@ invocation-expression:
 ```  
   
 ## <a name="service-and-method-arguments"></a>服务和方法参数  
- 下面的代码显示了服务和方法参数的语法：  
+ 下面的代码演示了服务和方法参数的语法：  
   
 ```  
 service-argument-list:  
@@ -184,9 +184,9 @@ string-expression:
      conditional-expression  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [XLANG-s 数据类型](../core/xlang-s-data-types.md)   
- [XLANG-s 语句](../core/xlang-s-statements.md)   
- [XLANG-s 变量和运算符](../core/xlang-s-variables-and-operators.md)   
- [XLANG-s 保留字](../core/xlang-s-reserved-words.md)   
- [XLANG-s 的 BPEL4WS 类型转换](../core/xlang-s-to-bpel4ws-type-conversions.md)
+## <a name="see-also"></a>请参阅  
+ [Xlang-s 数据类型](../core/xlang-s-data-types.md)   
+ [Xlang-s 语句](../core/xlang-s-statements.md)   
+ [Xlang-s 变量和运算符](../core/xlang-s-variables-and-operators.md)   
+ [Xlang-s 保留字](../core/xlang-s-reserved-words.md)   
+ [XLANG-s 到 BPEL4WS 的类型转换](../core/xlang-s-to-bpel4ws-type-conversions.md)

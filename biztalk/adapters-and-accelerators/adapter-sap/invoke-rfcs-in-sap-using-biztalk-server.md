@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 381cbebae5e87e459b8283c90b4bbc0de9afb1cc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 35d27d21a147aef162bed6a7920aab2a086f0a00
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988782"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373291"
 ---
 # <a name="invoke-rfcs-in-sap-using-biztalk-server"></a>调用中使用 BizTalk Server 的 SAP Rfc
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]呈现为可由适配器客户端调用的操作公开的 SAP 系统的 Rfc。 本部分说明了通过使用 SAP 系统中调用 RFC[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]与 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 详细了解如何[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]支持 RFC 调用在 SAP 系统中，请参阅[Rfc 在 SAP 中的操作](../../adapters-and-accelerators/adapter-sap/operations-on-rfcs-in-sap.md)。 有关以调用 RFC 的 SOAP 消息的结构的详细信息，请参阅[RFC 操作的消息架构](../../adapters-and-accelerators/adapter-sap/message-schemas-for-rfc-operations.md)。  
@@ -101,7 +101,7 @@ ms.locfileid: "36988782"
 ### <a name="adding-ports"></a>添加端口  
  为每个逻辑端口中指定以下属性。 中列出的名称*端口*列是在业务流程中显示的端口的名称。  
   
-|端口|属性|  
+|Port|属性|  
 |----------|----------------|  
 |ReceiveMsgPort|-设置**标识符**到*ReceiveMsgPort*<br />-设置**类型**到*ReceiveMsgPortType*<br />-设置**通信模式**到*单向*<br />-设置**通信方向**到*接收*|  
 |SendToLOBPort|-设置**标识符**到*SendToLOBPort*<br />-设置**类型**到*SendToLOBPortType*<br />-设置**通信模式**到*请求-响应*<br />-设置**通信方向**到*发送接收*|  

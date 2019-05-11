@@ -13,17 +13,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5dc78e6bd96f69bb92018af7a68007acfe47636d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 26a656f303b10c6c2b62f5c12ecefe0b25be49f4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988790"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375708"
 ---
 # <a name="configure-a-port-using-the-wcf-oracleebs-adapter"></a>使用 Wcf-oracleebs 适配器配置端口
 如何配置 WCF OracleEBS 发送和接收端口，以执行对 Oracle E-business Suite 使用出站和入站操作[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
 是的成员的帐户登录[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]Administrators 组或 BizTalk Operators 组。 详细了解权限的详细信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)，并[最低安全权限](https://social.technet.microsoft.com/wiki/contents/articles/24590.minimum-security-rights-for-biztalk-server-2006-to-2016.aspx)。
   
 ## <a name="deploy-adapters-to-send-messages-to-oracle-ebs"></a>部署适配器将消息发送到 Oracle EBS 

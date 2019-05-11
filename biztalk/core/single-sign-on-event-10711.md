@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10711 |Microsoft Docs
+title: 单一登录：Event 10711 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9966cd2f588d34c3be60282bc7acfa54cd1f42b3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a656e0bc079c2fb11a2cef59e86e914087259cef
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982574"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397235"
 ---
-# <a name="single-sign-on-event-10711"></a>单一登录： 事件 10711
+# <a name="single-sign-on-event-10711"></a>单一登录：事件 10711
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                                                                                                                                                   |
@@ -30,15 +30,15 @@ ms.locfileid: "36982574"
 |  事件源   |                                                                                                                      ENTSSO                                                                                                                       |
 |    组件    |                                                                                                                        N\A                                                                                                                        |
 |  符号名称  |                                                                                                         SSO_WARN_PS_MISSING_INITIAL_CREDS                                                                                                         |
-|  消息正文   | 外部密码更改。 已将此映射的某些缺少的外部凭据字段设置为默认值。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> 应用程序名称: %3 %r<br /><br /> 外部帐户： %4 |
+|  消息正文   | 外部密码更改。 此映射某些缺少的外部凭据字段已设置为默认 values.%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> 应用程序名称: %3 %r<br /><br /> 外部帐户： %4 |
 
 ## <a name="explanation"></a>解释  
- 此警告事件表示接收到一个外部密码更改，但凭据丢失。 这些字段中使用了默认值。  
+ 此警告事件表示外部密码更改已收到凭据丢失。 这些字段使用了默认值。  
 
 ## <a name="user-action"></a>用户操作  
- 若要解决此警告问题，请执行以下操作：  
+ 若要解决此警告，请执行以下操作：  
 
-- 如有必要，将凭据设置为匹配。  
+- 如有必要，设置要匹配的凭据。  
 
   有关详细信息，请参阅下列资源：  
 

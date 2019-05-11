@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 74b2070ecf59e76ec587fae3e2bc3be20b5b7976
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fd2c7eecc6bf7edaaf51faea7962bd8a32785caf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989254"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373609"
 ---
 # <a name="connecting-to-sap-in-visual-studio-using-add-adapter-metadata-wizard"></a>Visual Studio 中使用连接到 SAP 添加适配器元数据向导
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]还会显示为 BizTalk 适配器，因此，可以使用[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]来为你想要在使用适配器的 SAP 系统上执行的操作生成架构。  
@@ -42,7 +42,7 @@ ms.locfileid: "36989254"
       | **模板**  | 单击**添加适配器元数据**。 |
 
 
-   4. 单击 **“添加”**。 此时[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]会打开。  
+   4. 单击 **“添加”**。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]随即打开。  
 
    5. 在添加适配器向导中，选择**WCF-SAP**。 选择的计算机上[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]安装和 BizTalk 数据库的名称。  
 

@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10595 |Microsoft Docs
+title: 单一登录：Event 10595 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0cbc952197971f4e0db0586bc4f1d2d6c37aba44
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5b6aecfef61ece56075c4eb0c47ba7852380d4c1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995222"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397843"
 ---
-# <a name="single-sign-on-event-10595"></a>单一登录： 事件 10595
+# <a name="single-sign-on-event-10595"></a>单一登录：事件 10595
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                                                    |
@@ -28,12 +28,12 @@ ms.locfileid: "36995222"
 | 产品版本 |                                                                             [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                             |
 |    事件 ID     |                                                                                                       10595                                                                                                        |
 |  事件源   |                                                                                                       ENTSSO                                                                                                       |
-|    组件    |                                                                                                        N/A                                                                                                         |
+|    组件    |                                                                                                        不可用                                                                                                         |
 |  符号名称  |                                                                                           SSO_WARN_APP_INCOMPLETE_FIELDS                                                                                           |
-|  消息正文   | 由于此应用程序的字段未完成，因此无法启用该应用程序。%r<br /><br /> 应用程序名称: %1 %r<br /><br /> 定义的字段数: %2 %r<br /><br /> 创建的字段数： %3 |
+|  消息正文   | 无法启用应用程序，因为的字段不全 application.%r<br /><br /> 应用程序名称: %1 %r<br /><br /> 定义的字段数: %2 %r<br /><br /> 创建的字段数： %3 |
   
 ## <a name="explanation"></a>解释  
- 当创建 API 级别的应用程序时，您指定了应用程序将要定义的字段数（例如：用户 ID 和密码）。 还必须创建每个已定义的字段。 此警告消息列出了应用程序名称、定义的字段数量，以及创建的字段数量。  
+ 在创建时应用程序在 API 级别，您指定的字段 (即用户 Id 和密码) 会定义应用程序的数目。 此外必须创建每个已定义的字段。 此警告消息列出了应用程序名称、 字段定义，数和创建的字段数。  
   
 ## <a name="user-action"></a>用户操作  
- 确定已定义但未创建哪些字段，然后返回并创建它们。
+ 确定哪些字段已定义但未创建，然后返回并创建它们。

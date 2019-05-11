@@ -1,5 +1,5 @@
 ---
-title: 第 4 课： 生成和部署程序集 |Microsoft Docs
+title: 第 4 课：生成和部署程序集 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,14 +17,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 867fe91ad0dd8dcb00c0293da08753f38e5005d6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d180180f178defe4fc4d93de36fb8ac8f6ed88a0
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988270"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530299"
 ---
-# <a name="lesson-4-building-and-deploying-the-assembly"></a>第 4 课： 生成和部署程序集
+# <a name="lesson-4-building-and-deploying-the-assembly"></a>第 4 课：生成和部署程序集
 在本课程中，将生成和部署此项目以生成包含你在前面的课程中创建的架构的程序集。 此任务可确保到目前为止创建的工作中没有任何编译错误。  
   
  部署程序集的程序集的副本放在配置数据库，并将其安装在全局程序集缓存 (GAC) 中。 在下面的过程中，则直接从部署解决方案资源管理器。  
@@ -53,4 +53,4 @@ ms.locfileid: "36988270"
   
     Swift 架构将显示在列表中，如果该程序集已成功部署并可以引用和使用从其他[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]项目。  
   
-   请继续执行[模块 3： 添加管道项目](../../adapters-and-accelerators/accelerator-swift/module-3-adding-a-pipeline-project.md)。
+   请继续执行[模块 3:添加管道项目](../../adapters-and-accelerators/accelerator-swift/module-3-adding-a-pipeline-project.md)。

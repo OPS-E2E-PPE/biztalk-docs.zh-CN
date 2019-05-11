@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3356b41fc7929c55794c65e804245ed231b19b18
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c0c108490d9ce280f6926bc66ba2d2665254f636
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007822"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375338"
 ---
 # <a name="operations-on-functions-and-stored-procedures"></a>对函数和存储的过程的操作
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]支持 Oracle 函数和过程。

@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1cc8174db5193702e512f5f8b01c2a8ecfbeeee5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cc64165dcdf642e1ce9a0166b4f38c1c229e391f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988886"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368230"
 ---
 # <a name="receive-sql-query-notifications-using-biztalk-server"></a>接收使用 BizTalk Server 的 SQL 查询通知
 你可以配置[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]以接收通知消息的 SQL Server 表或视图。 可以指定适配器用于与 SQL Server 通知注册的 SQL 语句。 通知语句可以是 SELECT 语句或存储的过程返回一个结果集。 有关查询通知的详细信息，请参阅"使用查询通知"网址[ http://go.microsoft.com/fwlink/?LinkId=122159 ](http://go.microsoft.com/fwlink/?LinkId=122159)。 有关可用于查询通知的查询的信息，请参阅"创建查询的通知"网址[ http://go.microsoft.com/fwlink/?LinkId=122160 ](http://go.microsoft.com/fwlink/?LinkId=122160)。  

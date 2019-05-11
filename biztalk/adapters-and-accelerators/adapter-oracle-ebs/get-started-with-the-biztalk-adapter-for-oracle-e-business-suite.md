@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bdbfdeb58fdf8abde97db5b466008c32a0b54699
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3c32bfb27935bc93163bd777d0c604a0c08f303a
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006070"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530711"
 ---
 # <a name="get-started-with-the-biztalk-adapter-for-oracle-e-business-suite"></a>开始使用 BizTalk 适配器用于 Oracle E-business Suite
 适配器、 先决条件和用户的 Microsoft BizTalk 适配器包的新主题的概述。 提供的功能的信息[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]以及可以使用该适配器执行对 Oracle 数据库的不同操作。  
@@ -28,9 +28,9 @@ ms.locfileid: "37006070"
   
  中的适配器[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]可以分为两大类：  
   
-- **LOB 适配器**: LOB 适配器提供与访问 LOB 系统的面向服务的编程模型 — 例如，用于 SAP 或 Siebel 应用程序的适配器。  
+- **LOB 适配器**:LOB 适配器提供与访问 LOB 系统的面向服务的编程模型 — 例如，用于 SAP 或 Siebel 应用程序的适配器。  
   
-- **数据适配器**： 数据适配器提供面向服务的编程模型访问数据库 — 例如，Oracle 数据库或 SQL Server 的适配器。  
+- **数据适配器**:数据适配器提供面向服务的编程模型访问数据库 — 例如，Oracle 数据库或 SQL Server 的适配器。  
   
   有五个适配器中的[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]:  
   
@@ -53,6 +53,6 @@ ms.locfileid: "37006070"
   
 -   [了解用于 Oracle E-Business Suite 的 BizTalk 适配器](../../adapters-and-accelerators/adapter-oracle-ebs/understand-biztalk-adapter-for-oracle-e-business-suite.md)  
   
--   [教程： 从 SharePoint 站点上的 Oracle E-business Suite 提供数据](Tutorial:%20Presenting%20Data%20from%20Oracle%20E-Business%20Suite%20on%20a%20SharePoint%20Site.md)
+-   [教程：从 SharePoint 站点上的 Oracle E-business Suite 中呈现数据](Tutorial:%20Presenting%20Data%20from%20Oracle%20E-Business%20Suite%20on%20a%20SharePoint%20Site.md)
   
 - [Oracle EBS 适配器故障排除](../../adapters-and-accelerators/adapter-oracle-ebs/troubleshooting-the-oracle-ebs-adapter.md)

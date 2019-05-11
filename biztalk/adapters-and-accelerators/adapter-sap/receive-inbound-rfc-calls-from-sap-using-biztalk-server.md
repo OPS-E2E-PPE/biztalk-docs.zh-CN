@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6e70e2b81fd71a01ef6eae9e77ae3efea8cbf494
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c8e92d79aff5984517190f3f66382ec5d33caaed
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986982"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373077"
 ---
 # <a name="receive-inbound-rfc-calls-from-sap-using-biztalk-server"></a>接收来自 SAP 使用 BizTalk Server 的入站 RFC 调用
 在 RFC 服务器方案中，有三个实体：  
@@ -202,7 +202,7 @@ Response(WCF.Action) = "http://Microsoft.LobServices.Sap/2007/03/Rfc/Z_RFC_ADD/r
 ### <a name="adding-ports"></a>添加端口  
  请确保指定的逻辑端口的以下属性。 中列出的名称*端口*列是在业务流程中显示的端口的名称。  
   
-|端口|属性|  
+|Port|属性|  
 |----------|----------------|  
 |RFCServerPort|-设置**标识符**到*RFCServerPort*<br />-设置**类型**到*RFCServerPortType*<br />-设置**通信模式**到*请求-响应*<br />-设置**通信方向**到*接收发送*|  
   
@@ -232,7 +232,7 @@ Response(WCF.Action) = "http://Microsoft.LobServices.Sap/2007/03/Rfc/Z_RFC_ADD/r
     > [!NOTE]
     >  生成架构使用[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]还会创建包含有关端口和要为这些端口设置的操作信息的绑定文件。 从 BizTalk 管理控制台来创建 （对于出站调用） 的发送端口或接收端口 （对于入站调用），可以导入此绑定文件。 有关详细信息，请参阅[配置物理端口绑定使用的端口绑定文件与 SAP](../../adapters-and-accelerators/adapter-sap/configure-a-physical-port-binding-using-a-port-binding-file-to-sap.md)。
   
-  您还必须将 RFCServerResponseCreator 项目的程序集添加到 BizTalk 应用程序。 创建此项目以处理来自 SAP 系统的 RFC 调用。 为此：  
+  您还必须将 RFCServerResponseCreator 项目的程序集添加到 BizTalk 应用程序。 创建此项目以处理来自 SAP 系统的 RFC 调用。 为此，请执行以下操作：  
   
 1.  在下导入绑定，其中的 BizTalk 应用程序的 BizTalk Server 管理控制台左侧的控制台树中右键单击**资源**，依次指向**添加**，然后单击**BizTalk 程序集**。  
   

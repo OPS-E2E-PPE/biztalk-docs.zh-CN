@@ -1,5 +1,5 @@
 ---
-title: 版本控制服务面向解决方案 |Microsoft 文档
+title: 版本控制服务面向解决方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,19 +15,19 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af1c5d1475fc37322be9a8483963bbfd1432fbb4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 34896f02ac6335c8f5041ca959b25fe9ab2716c3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287637"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393738"
 ---
 # <a name="versioning-the-service-oriented-solution"></a>版本控制服务面向解决方案
-充当前端到解决方案中，两个业务流程**CustomerServiceReceiveSend**和**CustomerServiceNativeRequestResponse**，调用中部、 工作业务流程的**CustomerService**。 业务流程调用取决于包含该业务流程的程序集的版本号。 由于所有三个业务流程都位于同一个程序集中，因此不存在版本控制问题。  
+充当前端到解决方案中，两个业务流程**CustomerServiceReceiveSend**并**CustomerServiceNativeRequestResponse**，中间的工作业务流程调用**CustomerService**。 业务流程调用取决于包含该业务流程的程序集的版本号。 由于所有三个业务流程是在同一程序集中，没有任何版本控制问题。  
   
- 此外，业务流程所实现的业务程序是寿命非常短的请求-响应过程，该过程会很快完成。 因此，在此解决方案中不会出现业务程序的版本控制问题，这是因为在不同版本的不同程序集中不存在不同的业务流程。  
+ 此外，实现的业务流程的业务流程是一个快速完成的生存期很短的请求-响应过程。 因此，版本控制的业务流程的问题不会出现在此解决方案中，有不同的业务流程中使用不同版本的不同程序集。  
   
- 但是，业务流程要使用架构程序集中的架构。 如果对架构进行了修订并将其编译为不同的版本，则必须使用更新版本的架构程序集重新编译业务流程。  
+ 但是，业务流程执行操作中的架构程序集使用的架构。 如果架构进行了修订，并且编译为不同的版本，则必须重新编译了架构程序集的较新版本的业务流程。  
   
-## <a name="see-also"></a>另请参阅  
- [面向开发的服务解决方案](../core/developing-a-service-oriented-solution.md)
+## <a name="see-also"></a>请参阅  
+ [开发面向服务的解决方案](../core/developing-a-service-oriented-solution.md)

@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10765 |Microsoft Docs
+title: 单一登录：事件 10765 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bd49ead3fc30d3b98ea804a98a5882696ea749d7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f509bb4a00bc4f1e77b09fa0b93ccaf7d50ad0ca
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975102"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394306"
 ---
-# <a name="single-sign-on-event-10765"></a>单一登录： 事件 10765
+# <a name="single-sign-on-event-10765"></a>单一登录：事件 10765
 ## <a name="details"></a>详细信息  
   
 |                 |                                                            |
@@ -28,12 +28,12 @@ ms.locfileid: "36975102"
 | 产品版本 | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
 |    事件 ID     |                           10765                            |
 |  事件源   |                           ENTSSO                           |
-|    组件    |                            N/A                             |
+|    组件    |                            不可用                             |
 |  符号名称  |                  ENTSSO_E_NO_CREDENTIALS                   |
-|  消息正文   |       尚未为此映射设置凭据。        |
+|  消息正文   |       已为映射设置凭据。        |
   
 ## <a name="explanation"></a>解释  
- 您请求了一个映射的 GetCredentials，但指定的映射没有凭据。  
+ 你已请求映射的 GetCredentials 和指定的映射具有任何凭据。  
   
 ## <a name="user-action"></a>用户操作  
  使用命令行或 MMC 管理单元为映射设置凭据。

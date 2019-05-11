@@ -13,12 +13,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fb945aba089e0c57e42e846cec765ae48b10d433
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0a751259d256d217a1830df3373a2d4699c67a72
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022243"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371864"
 ---
 # <a name="configure-the-soap-action-for-siebel"></a>配置用于 Siebel 的 SOAP 操作
 若要对使用基于 WCF 的 Siebel 系统执行任何操作[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]，适配器的用户必须指定 SOAP 操作。 SOAP 操作通信适配器应执行什么操作。 可以指定在设计时或在运行时的 SOAP 操作。 但是，如果指定的 SOAP 操作这两个在设计时和运行时，将替代在设计时指定的操作。  

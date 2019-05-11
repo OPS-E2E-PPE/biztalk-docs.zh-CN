@@ -1,5 +1,5 @@
 ---
-title: 如何： 实现基于内容的路由使用业务规则策略为已知的消息类型 |Microsoft Docs
+title: 如何：为已知的消息类型实现基于内容的路由使用业务规则策略 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a7b47fd54aaf6dc93ed26ba7efec3b14bf31401e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f687ae84782866809ef882a5389e35da8f7ce5a9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004910"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392307"
 ---
-# <a name="how-to-implement-content-based-routing-using-a-business-rules-policy-for-a-known-message-type"></a>如何： 实现基于内容的路由使用业务规则策略为已知的消息类型
+# <a name="how-to-implement-content-based-routing-using-a-business-rules-policy-for-a-known-message-type"></a>如何：实现基于内容的路由使用业务规则策略为已知的消息类型
 ## <a name="goal"></a>目的  
  本部分演示如何创建动态路由基于消息的路线上已知的消息类型 （架构部署到 Microsoft BizTalk Server 配置数据库） 的内容，使用业务规则策略。  
   
@@ -31,7 +31,7 @@ ms.locfileid: "37004910"
   
 -   测试使用路线测试客户端示例应用程序的路线。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  本操作指南主题中的过程要求在完成[开发活动的先决条件](../esb-toolkit/prerequisites-for-the-development-activities.md)。  
   
 ## <a name="before-you-begin"></a>开始之前  
@@ -279,9 +279,9 @@ ms.locfileid: "37004910"
 ## <a name="additional-resources"></a>其他资源  
  有关详细信息，请参阅下列相关主题：  
   
--   [如何：使用业务规则策略选择路线](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
+-   [如何：选择使用业务规则策略路线](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
   
--   [如何：使用业务规则策略动态路由基于消息上下文的消息](../esb-toolkit/dynamically-route-messages-based-on-message-context-using-business-rules-policy.md)  
+-   [如何：动态路由基于消息上下文中使用业务规则策略的消息](../esb-toolkit/dynamically-route-messages-based-on-message-context-using-business-rules-policy.md)  
   
 -   [开发活动](../esb-toolkit/development-activities.md)  
   

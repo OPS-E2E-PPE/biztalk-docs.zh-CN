@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 60bb78e2bbf06ff80315bd9bbc2b33346ed18d5d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7ef2ef118aab93f10d766aeaf34af74a23908822
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024163"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394537"
 ---
-# <a name="message-types-without-parts-are-not-supported"></a>不支持没有消息部分的消息类型
+# <a name="message-types-without-parts-are-not-supported"></a>不支持没有部分消息类型
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                           |
@@ -33,9 +33,9 @@ ms.locfileid: "37024163"
 |  消息正文   | 不支持没有部分的消息类型。 更正服务说明"{0}"消息类型"{1}"，然后重新运行该向导。 |
   
 ## <a name="explanation"></a>解释  
- 此错误表示尝试使用的服务没有定义消息类型。  
+ 此错误表示尝试使用该服务不具有定义的消息类型。  
   
 ## <a name="user-action"></a>用户操作  
- 将服务更正为具有正确的消息类型，然后尝试使用此服务（如果您拥有要尝试使用的 WCF 服务）。 否则，请联系服务提供商。  有关消息的其他信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
+ 更正服务与相应的消息类型，然后尝试使用 （如果您拥有要尝试使用的 WCF 服务）。 否则，请联系服务提供商。  有关消息的其他信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
   
 -   [构造 Web 消息](../core/constructing-web-messages.md)

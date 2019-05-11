@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eae7e2c1be56a886578f7bba83901f218c42b94e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bd42207ce96cd322f37fa75cc6fdd0f38727c634
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972174"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374597"
 ---
 # <a name="secure-programming-with-the-oracle-ebs-adapter"></a>使用 Oracle EBS 适配器进行安全编程
 ## <a name="how-do-i-protect-credentials-when-i-use-the-add-adapter-service-reference-visual-studio-plug-in"></a>在使用时如何保护凭据添加适配器服务参考 Visual Studio 插件？  

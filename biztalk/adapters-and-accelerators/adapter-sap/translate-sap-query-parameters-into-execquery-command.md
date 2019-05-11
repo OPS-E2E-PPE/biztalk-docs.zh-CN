@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8ffd480e952e0df7114a93f6cb2a5baf631ad96
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8dd9db83cbc3a8b8a3c6a0d56282580f0c07814f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021692"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372543"
 ---
 # <a name="translate-sap-query-parameters-into-execquery-command"></a>将 SAP 查询参数转换为 EXECQUERY 命令
 介绍如何将查询的参数转换为 EXECQUERY 命令文本。 本主题使用的自定义 SAP 查询 ZQUERY_TST_NEW 示例。  

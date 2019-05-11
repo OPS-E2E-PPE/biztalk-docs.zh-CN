@@ -12,26 +12,26 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a154255cb64fcebafa2ef8164714e46bf5673ba
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a9a87bb700ecddc5ae0bf9a4e6319d7b84fa55ec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007198"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390744"
 ---
-# <a name="configuring-signing-compression-and-encryption-in-as2-transport"></a>配置 AS2 传输中的签名、压缩和加密
-可以从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台内配置数字签名、签名验证、加密和解密。 该配置需要设置 AS2 管道和 BizTalk 参与方的相应属性。  
+# <a name="configuring-signing-compression-and-encryption-in-as2-transport"></a>配置签名、 压缩和 AS2 传输中加密
+你可以配置数字签名、 签名验证、 加密和解密中的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。 此配置需要设置 AS2 管道和 BizTalk 参与方的相应属性。  
   
 ## <a name="using-as2-pipelines"></a>使用 AS2 管道  
- 若要确保入站 AS2 消息的安全，请在接收位置使用 AS2 接收管道（AS2EdiReceive 或 AS2Receive）。 AS2 解码器对 AS2 消息进行解密、解压缩和/或执行签名验证。 有关如何执行以上的详细信息，请参阅的"AS2 解码器"部分[AS2 接收组件](../core/as2-receive-components.md)。  
+ 若要帮助保护入站的 AS2 消息，请使用 AS2 接收管道 （AS2EdiReceive 或 AS2Receive） 中将接收位置。 AS2 解码器解密、 解压缩和/或 AS2 消息执行签名验证。 有关如何执行以上的详细信息，请参阅的"AS2 解码器"部分[AS2 接收组件](../core/as2-receive-components.md)。  
   
- 若要确保出站 AS2 消息的安全，请在发送端口使用 AS2 发送管道（AS2EdiSend 或 AS2Send）。 AS2 编码器对出站 AS2 消息进行签名、压缩和加密。 有关如何执行以上的详细信息，请参阅的"AS2 编码器"部分[AS2 发送组件](../core/as2-send-components.md)。  
+ 若要帮助保护出站 AS2 消息，请在发送端口使用 AS2 发送管道 （AS2EdiSend 或 AS2Send）。 AS2 编码器对进行签名、 压缩，并对出站 AS2 消息进行加密。 有关如何执行以上的详细信息，请参阅的"AS2 编码器"部分[AS2 发送组件](../core/as2-send-components.md)。  
   
 > [!IMPORTANT]
->  在对消息进行签名之后，不得对签名 blob 进行更改。 如果将其更改，则签名会受损。 可以更改边界标头和边界标头以外的对象，但不得更改边界标头以内的对象。  
+>  后一条消息已签名，不得更改签名 blob。 如果更改，则会损坏签名。 可以更改边界标头，或边界标头以外的任何内容，但不得更改边界标头中的任何内容。  
   
 ## <a name="setting-as2-agreement-properties"></a>设置 AS2 协议属性  
- 可以通过设置 AS2 协议属性来配置签名和加密处理，如下所示：  
+ 配置签名和加密处理，通过设置 AS2 协议属性，如下所示：  
   
 - 若要签名、 压缩和/或加密出站消息，检查**应对消息进行签名**，**应对消息进行压缩**，并**应对消息进行加密**上的属性**验证**（对于传出的 AS2 消息） 的单向协议选项卡中的页**协议属性**对话框。  
   

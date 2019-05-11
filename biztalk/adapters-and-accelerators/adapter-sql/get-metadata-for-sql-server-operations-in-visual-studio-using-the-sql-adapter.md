@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2e9b8b7ab1d1cf8a0223756ae5fe7cacaf154750
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 35733d7d90bca30218901f145acfefc763b8ccda
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010750"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369439"
 ---
 # <a name="get-metadata-for-sql-server-operations-in-visual-studio-using-the-sql-adapter"></a>获取 Visual Studio 中使用 SQL 适配器中的 SQL Server 操作的元数据
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]提供三种[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]可用于帮助您开发使用该适配器的解决方案的组件 — [!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]，则[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]，和[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]。 适配器客户端必须使用这些组件连接到 SQL Server，然后生成他们想要执行的操作的元数据。  

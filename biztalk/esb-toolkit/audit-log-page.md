@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19c5568170c2e6f8afb9a922686c068ad63aecf5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f14db6262157ec97bee57ea1536136a70c92fa24
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015967"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392070"
 ---
 # <a name="audit-log-page"></a>审核日志页
 图 1 显示了审核日志页。 此页显示已审核事件的列表。  

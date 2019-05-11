@@ -1,5 +1,5 @@
 ---
-title: 第 2 课： 提交无效的 MT103 消息 |Microsoft Docs
+title: 第 2 课：提交无效的 MT103 消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,14 +18,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8cb8f0539f3a832e3b54a6fa45b300558a8e39a1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b686b0ba84d5069f739f129495ee14c7654645d8
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014878"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530336"
 ---
-# <a name="lesson-2-submitting-an-mt103-message-that-is-not-valid"></a>第 2 课： 提交无效的 MT103 消息
+# <a name="lesson-2-submitting-an-mt103-message-that-is-not-valid"></a>第 2 课：提交无效的 MT103 消息
 在本课中，提交是无效的 MT103 消息并您解决在使用系统工具所生成的错误。  
   
 ### <a name="to-submit-an-mt103-message-that-is-not-valid"></a>若要提交无效的 MT103 消息  
@@ -56,4 +56,4 @@ ms.locfileid: "37014878"
   
 13. 验证消息详细信息对话框中的正文窗格中显示该消息对应于 MT103_Invalid_Sample.txt 在记事本中打开。  
   
-    请继续执行[第 3 课： 测试 XML 实例](../../adapters-and-accelerators/accelerator-swift/lesson-3-testing-an-xml-instance.md)。
+    请继续执行[第 3 课：测试 XML 实例](../../adapters-and-accelerators/accelerator-swift/lesson-3-testing-an-xml-instance.md)。

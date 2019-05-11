@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10800 |Microsoft Docs
+title: 单一登录：Event 10800 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 86d6f4078511470fa272e51661fc9bb8d0c8ce63
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: eb61b27fae9306a394625bdba28787c6a95c8dfb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976870"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394146"
 ---
-# <a name="single-sign-on-event-10800"></a>单一登录： 事件 10800
+# <a name="single-sign-on-event-10800"></a>单一登录：事件 10800
 ## <a name="details"></a>详细信息  
   
 |                 |                                                            |
@@ -28,12 +28,12 @@ ms.locfileid: "36976870"
 | 产品版本 | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
 |    事件 ID     |                           10800                            |
 |  事件源   |                           ENTSSO                           |
-|    组件    |                            N/A                             |
+|    组件    |                            不可用                             |
 |  符号名称  |                    ENTSSO_E_WRONG_STATE                    |
 |  消息正文   |     此函数调用了有状态错误。      |
   
 ## <a name="explanation"></a>解释  
- 调用了此函数，但状态有误。  
+ 该函数调用了有状态错误。  
   
 ## <a name="user-action"></a>用户操作  
- 检查您的应用程序。
+ 检查你的应用程序。

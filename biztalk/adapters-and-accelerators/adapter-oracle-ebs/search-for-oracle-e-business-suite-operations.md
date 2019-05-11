@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e861f23a13f6c3e7d5ac500de3b7750429a9cfd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b6b2e55465d61448a88db025ab1343fa7dd4029c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977206"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374606"
 ---
 # <a name="search-for-oracle-e-business-suite-operations"></a>用于 Oracle E-business Suite 操作的搜索
 可以使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]或[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]搜索 Oracle E-business Suite 中的特定项目。 本主题提供有关如何搜索支持不同的视图和内容的信息可以用于通配符搜索 Oracle 项目。 本主题还介绍如何使用搜索[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]或[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。  
@@ -29,7 +29,7 @@ ms.locfileid: "36977206"
   
  有关详细信息请参阅[使用包含 SharePoint 的 Oracle E-business Suite 适配器](../../adapters-and-accelerators/adapter-oracle-ebs/use-the-oracle-e-business-suite-adapter-with-sharepoint.md)。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  可以搜索目标操作的元数据之前，必须连接到 Oracle E-business Suite。 有关如何连接到 Oracle 数据库的信息时则使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]或[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]，请参阅[连接到在 Visual Studio 中的 Oracle 电子商务套件](../../adapters-and-accelerators/adapter-oracle-ebs/connect-to-the-oracle-e-business-suite-in-visual-studio.md)。  
   
 ## <a name="support-for-wildcard-characters"></a>对通配符字符的支持  

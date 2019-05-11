@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 29a829ced566e5a969cce5257a64da0999cce7be
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a2e1075960fdb6ca637d81238de776ba30ae0f78
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968102"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375654"
 ---
 # <a name="configure-the-soap-action-for-oracle-e-business-suite"></a>配置用于 Oracle E-business Suite 的 SOAP 操作
 若要执行任何操作上使用基于 WCF 的 Oracle E-business Suite [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]，你必须指定 SOAP 操作。 SOAP 操作通信适配器应执行什么操作。 可以从指定的 SOAP 操作[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]或从[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 但是，如果指定的 SOAP 操作从这两个位置，指定的操作，从[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]被重写。  

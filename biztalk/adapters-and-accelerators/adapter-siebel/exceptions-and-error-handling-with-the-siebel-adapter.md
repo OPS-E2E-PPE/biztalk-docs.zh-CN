@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 67a615bec1bf1b8cd29e84728f39d6fea626f16e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 149f69681e66a9be39a2586563d6d6a4df649f1d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977117"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371743"
 ---
 # <a name="exceptions-and-error-handling-with-the-siebel-adapter"></a>异常和错误处理与 Siebel 适配器
 ## <a name="exception-list"></a>异常列表

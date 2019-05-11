@@ -1,5 +1,5 @@
 ---
-title: 步骤 1： 使用 Oracle E-business 适配器创建并发布 WCF 服务 |Microsoft Docs
+title: 第 1 步：使用 Oracle E-business 适配器创建和发布 WCF 服务 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 75bbbb57b633475d9973d187d61d6e698f6cadb2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 88b8ae60cd9b2daa15c9d33888eeaa6c6b703408
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981022"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374559"
 ---
-# <a name="step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service"></a>步骤 1： 使用 Oracle E-business 适配器创建并发布 WCF 服务
+# <a name="step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service"></a>第 1 步：使用 Oracle E-business 适配器创建和发布 WCF 服务
 ![步骤 1，共 4 步](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-1of4.gif "Step_1of4")  
   
- **完成时间：** 15 分钟  
+ **若要完成的时间：** 15 分钟  
   
  **目标：** 可以使用[!INCLUDE[afsvcdevwizlong](../../includes/afsvcdevwizlong-md.md)]从可以如 Internet 信息服务 (IIS) 或 Windows 进程激活服务 (WAS) 宿主环境中托管的 Oracle E-business Suite 项目生成 WCF 服务。 本主题演示如何使用向导生成的 WCF 服务文件。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  运行向导之前，安装以下组件：  
   
 - [!INCLUDE[afproductnamelong](../../includes/afproductnamelong-md.md)] 使用**完成**选项或**自定义**选项 (，然后选择**工具**中此选项)。 这将安装[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]模板[!INCLUDE[afsvcdevwizshort](../../includes/afsvcdevwizshort-md.md)]。  
@@ -62,7 +62,7 @@ ms.locfileid: "36981022"
   
 4. 在欢迎页上，单击**下一步**。  
   
-5. 在选择操作页上指定要连接到 Oracle E-business Suite 的连接字符串。 为此：  
+5. 在选择操作页上指定要连接到 Oracle E-business Suite 的连接字符串。 为此，请执行以下操作：  
   
    1. 在中**选择绑定**列表中，单击**oracleEBSBinding**，然后单击**配置**。  
   
@@ -113,8 +113,8 @@ ms.locfileid: "36981022"
        |----------------------|-----------------------|  
        |身份验证类型|对于 Microsoft Office SharePoint Server 使用 WCF 服务，应设置为**HTTPUserNamePassword**。 这允许客户端的 HTTP 标头的一部分指定用户名和密码。|  
        |“属性”|指定的终结点行为配置名称。 对于本教程中，键入**customEndpointBehavior**。|  
-       |UsernameHeader|用户名称标头的名称。 对于此示例中，指定**MyUserHeader**。 有关 HTTP 标头的详细信息，请参阅"支持的自定义 HTTP 和 SOAP 标头"网址[ http://go.microsoft.com/fwlink/?LinkId=106692 ](http://go.microsoft.com/fwlink/?LinkId=106692)。 **注意：** 必须指定此属性的值，如果**身份验证类型**设置为**HTTPUserNamePassword**。 如果**身份验证类型**设置为**自动**，此为可选属性。|  
-       |PasswordHeader|密码标头的名称。 对于此示例中，指定**MyPassHeader**。 有关 HTTP 标头的详细信息，请参阅"支持的自定义 HTTP 和 SOAP 标头"网址[ http://go.microsoft.com/fwlink/?LinkId=106692 ](http://go.microsoft.com/fwlink/?LinkId=106692)。 **注意：** 必须指定此属性的值，如果**身份验证类型**设置为**HTTPUserNamePassword**。 如果**身份验证类型**设置为**自动**，此为可选属性。|  
+       |UsernameHeader|用户名称标头的名称。 对于此示例中，指定**MyUserHeader**。 有关 HTTP 标头的详细信息，请参阅"支持的自定义 HTTP 和 SOAP 标头"网址[ http://go.microsoft.com/fwlink/?LinkId=106692 ](http://go.microsoft.com/fwlink/?LinkId=106692)。 **注意：** 如果满足以下条件，则必须指定此属性的值**身份验证类型**设置为**HTTPUserNamePassword**。 如果**身份验证类型**设置为**自动**，此为可选属性。|  
+       |PasswordHeader|密码标头的名称。 对于此示例中，指定**MyPassHeader**。 有关 HTTP 标头的详细信息，请参阅"支持的自定义 HTTP 和 SOAP 标头"网址[ http://go.microsoft.com/fwlink/?LinkId=106692 ](http://go.microsoft.com/fwlink/?LinkId=106692)。 **注意：** 如果满足以下条件，则必须指定此属性的值**身份验证类型**设置为**HTTPUserNamePassword**。 如果**身份验证类型**设置为**自动**，此为可选属性。|  
   
        下图显示了具有指定值的配置服务和终结点行为页。  
   
@@ -209,7 +209,7 @@ SelectResponse InterfaceTables_FND_APPS_MS_SAMPLE_EMPLOYEE.Select(SelectRequest 
         ```  
   
 ## <a name="next-step"></a>下一步  
- 若要创建 Oracle E-business Suite 项目应用程序定义文件，请使用 Business Data Catalog Definition Editor。 有关说明，请参阅[步骤 2： 为 Oracle E-business Suite 项目创建应用程序定义文件](../../adapters-and-accelerators/adapter-oracle-ebs/step-2-create-an-application-definition-file-for-the-oracle-ebs-artifacts.md)。 应用程序定义文件来确定存储 LOB 数据和在其中存储的格式。  
+ 若要创建 Oracle E-business Suite 项目应用程序定义文件，请使用 Business Data Catalog Definition Editor。 有关说明，请参阅[步骤 2:为 Oracle E-business Suite 项目创建应用程序定义文件](../../adapters-and-accelerators/adapter-oracle-ebs/step-2-create-an-application-definition-file-for-the-oracle-ebs-artifacts.md)。 应用程序定义文件来确定存储 LOB 数据和在其中存储的格式。  
   
 ## <a name="see-also"></a>请参阅  
- [教程： 从 Oracle E-business Suite 的 SharePoint 站点上显示数据](Tutorial:%20Present%20data%20from%20Oracle%20E-Business%20Suite%20on%20a%20SharePoint%20Site.md)
+ [教程：从 SharePoint 站点上的 Oracle E-business Suite 中显示数据](Tutorial:%20Present%20data%20from%20Oracle%20E-Business%20Suite%20on%20a%20SharePoint%20Site.md)

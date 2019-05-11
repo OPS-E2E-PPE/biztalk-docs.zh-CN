@@ -1,5 +1,5 @@
 ---
-title: 步骤 1： 为操作生成架构 |Microsoft Docs
+title: 第 1 步：为操作生成架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6eb6de636ba2ee587fa1da3720c38ef517f0ba01
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bfc8f1aaf02b2dc28c4612ee5ce3df879d8ed938
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997854"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367868"
 ---
-# <a name="step-1-generate-schema-for-operations"></a>步骤 1： 为操作生成架构
+# <a name="step-1-generate-schema-for-operations"></a>第 1 步：为操作生成架构
 ![2 的第 1 步](../../adapters-and-accelerators/adapter-sql/media/step-1of2.gif "Step_1of2")  
   
- **完成时间：** 5 分钟  
+ **若要完成的时间：** 5 分钟  
   
  **目标：** 在此步骤中，生成使用 SQL Server 数据库执行操作的架构[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]。 对于本教程中，必须生成以下架构：  
   
@@ -32,7 +32,7 @@ ms.locfileid: "36997854"
   
 -   **插入**上的操作**Purchase_Order**表 （出站操作）。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  您继续阅读本教程之前，请确保：  
   
 -   你必须完成中的步骤[之前在开发 BizTalk 应用程序](http://msdn.microsoft.com/library/3539741d-5266-43d4-9b7b-73e82f0ed4f6)。  
@@ -74,7 +74,7 @@ ms.locfileid: "36997854"
   
    4. 从**选择一个类别**框中，展开**表**节点，然后单击的节点**Purchase_Order**表。 从**可用类别和操作**s 框中，选择**插入**，单击**添加**，然后单击**确定**。  
   
-## <a name="what-did-i-just-do"></a>内容回顾  
+## <a name="what-did-i-just-do"></a>我只需做了什么？  
  在此步骤中，生成的架构**通知**（入站操作）， **UPDATE_EMPLOYEE**存储过程，并**插入**操作**Purchase_Order**表。 生成架构后[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]向 BizTalk 项目中添加以下文件：  
   
 - 包含要调用 SQL Server 上的操作的请求消息的架构的 XSD 文件。  
@@ -84,7 +84,7 @@ ms.locfileid: "36997854"
   有关生成架构的详细信息，请参阅[浏览、 搜索和获取元数据的 SQL 操作使用 SQL 适配器](../../adapters-and-accelerators/adapter-sql/browse-search-and-get-metadata-for-sql-operations-using-the-sql-adapter.md)。  
   
 ## <a name="next-steps"></a>后续步骤  
- 中的架构在 BizTalk 项目中创建的消息[步骤 2： 创建 BizTalk 业务流程的消息](../../adapters-and-accelerators/adapter-sql/step-2-create-messages-for-biztalk-orchestrations.md)。  
+ 中的架构在 BizTalk 项目中创建消息[步骤 2:为 BizTalk 业务流程创建消息](../../adapters-and-accelerators/adapter-sql/step-2-create-messages-for-biztalk-orchestrations.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [第 1 课：生成架构并创建消息](../../adapters-and-accelerators/adapter-sql/lesson-1-generate-schemas-and-create-messages.md)

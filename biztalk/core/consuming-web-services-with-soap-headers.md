@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 45a3efa628e435092505fdc3884704baa15be34c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 29781c8b68229e04d398a71d62b60b24ab04a3eb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22237805"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390265"
 ---
 # <a name="consuming-web-services-with-soap-headers"></a>使用 SOAP 标头使用的 Web 服务
-使用具有定义的 SOAP 标头的 Web 服务后，这些标头可供你的业务流程和管道组件作为上下文属性。 这些上下文属性包含的 SOAP 标头的字符串表示形式。 对于 Web 服务中每个定义 SOAP 标头，你可以使用对应于 SOAP 标头的根元素的名称来创建上下文属性。 所有定义的 SOAP 标头上下文属性位于**http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**命名空间。  
+使用具有定义的 SOAP 标头的 Web 服务后，这些标头可供你的业务流程和管道组件作为上下文属性。 这些上下文属性包含的 SOAP 标头的字符串表示形式。 对于 Web 服务中每个定义 SOAP 标头，你可以使用对应于 SOAP 标头的根元素的名称来创建上下文属性。 定义的 SOAP 标头上下文属性位于**http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**命名空间。  
   
  下面的示例演示如何创建 SOAP 标头上下文属性**OrigDest**使用中的 SOAP 标头示例[与使用 Web 服务的 SOAP 标头](../core/soap-headers-with-consumed-web-services.md):  
   

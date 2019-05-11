@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f7c0c819372cf23842eb5311df8636e55e28c72a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f13a75346fd419f18de1d9574d96c3dafde3046c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969678"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373051"
 ---
 # <a name="receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model"></a>使用 WCF 通道模型的 SAP 系统从接收的入站的操作
 若要为 RFC 服务器和接收操作 （如发送 IDOC 或调用 RFC） SAP 系统调用，必须创建可通过侦听来自 SAP 程序 ID 的消息的通道侦听器**System.ServiceModel.Channels.IReplyChannel**通道形状。  
@@ -49,7 +49,7 @@ ms.locfileid: "36969678"
   
  如果 SAP 系统将调用不在入站的操作集合中的操作：  
   
-- [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]具有以下消息的 SAP 系统上向调用方返回一个异常异常:"未处理 Rfc 服务器上的传入 RFC 调用 [RFC_NAME]"。 此消息中，[RFC_NAME] 是 RFC (例如，IDOC_INBOUND_ASYNCHRONOUS) 的名称。  
+- [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]具有以下消息的 SAP 系统上向调用方返回一个异常异常："不处理 Rfc 服务器上的传入 RFC 调用 [RFC_NAME]"。 此消息中，[RFC_NAME] 是 RFC (例如，IDOC_INBOUND_ASYNCHRONOUS) 的名称。  
   
 - 适配器将引发**Microsoft.ServiceModel.Channels.Common.AdapterException**并显示消息，指示接收到的操作。 有关如何使用此异常的示例，请参阅本主题末尾处的示例。  
   

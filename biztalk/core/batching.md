@@ -1,5 +1,5 @@
 ---
-title: 批处理 |Microsoft 文档
+title: 批处理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,38 +19,38 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ca31344e60daa88a37c21d0f90b6cf2d2a8aa5a7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 941ded3f6b88c835c2eae819099449ed7d4e6974
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230885"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529094"
 ---
 # <a name="batching"></a>批处理
-*批处理*是一种允许与目标为数据库优化往返的一组消息的序列化的处理。 批是原子工作单元；也就是说，它或者全部成功，或者全部失败。 如果批中的某个操作成功，但另一个操作失败，则构成该批的所有操作都将失效，必须重新执行。  
+*批处理*是一种允许将用于优化数据库往返过程的一组消息的序列化的处理。 一批是原子; 工作单元也就是说，它要么全部成功要么所有失败。 如果在批处理中的一个操作成功，但另一个操作失败，构成批的所有操作都将失效，并且必须重复。  
   
- BizTalk Server 使用批处理执行以下操作：  
+ BizTalk Server 使用批处理执行：  
   
--   对于不同的许多消息分摊事务的成本。  
+-   在许多消息范围内分摊交易成本。  
   
--   通过减少数据库内部数量的增加速度往返。  
+-   通过减少数据库的内部数量的增加速度往返。  
   
--   通过使用 BizTalk Server 异步 API 更高效地使用 BizTalk Server 线程池。  
+-   使用 BizTalk Server 异步 API 发出更有效地使用 BizTalk Server 线程池。  
   
 ## <a name="applying-batching"></a>应用批处理  
- 批处理在接收位置的高级属性中进行配置，并且在发送端口端自动启用。  
+ 批处理的接收位置的高级属性中配置和发送端口端自动启用。  
   
 ## <a name="lowering-the-batch-size"></a>减小批大小  
- 在以下情况下应减小批大小：  
+ 如果在以下情况下，应减小批大小：  
   
--   在处理大的消息时  
+-   处理大消息时  
   
--   当数据库往返过程并非瓶颈所在时  
+-   当数据库往返行程不是瓶颈所在  
   
 > [!NOTE]
->  更改时要小心**LargeMessageThreshold**设置。 乘以平均消息大小的批处理大小应该小于**LargeMessageThreshold**设置，除非批处理大小为 1。  
+>  更改时要小心**LargeMessageThreshold**设置。 批大小乘以平均消息大小应小于**LargeMessageThreshold**设置，除非批大小为 1。  
   
-## <a name="see-also"></a>另请参阅  
- [消息传送的引擎](../core/the-messaging-engine.md)   
- [批处理消息接收处理](../core/batching-messages-for-receive-processing.md)   
- [对消息进行批处理的发送处理](../core/batching-messages-for-send-processing.md)
+## <a name="see-also"></a>请参阅  
+ [消息引擎](../core/the-messaging-engine.md)   
+ [批处理消息的接收处理](../core/batching-messages-for-receive-processing.md)   
+ [为发送处理批处理消息](../core/batching-messages-for-send-processing.md)

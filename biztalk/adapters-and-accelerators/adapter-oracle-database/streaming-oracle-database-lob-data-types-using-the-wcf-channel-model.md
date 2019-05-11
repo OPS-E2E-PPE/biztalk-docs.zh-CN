@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aa8a493c94761ce74d76885ee59fae1425c15523
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9d9c1ad3c50cf2383ad9b2d65af3d8c79f2c1862
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013838"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375982"
 ---
 # <a name="streaming-oracle-database-lob-data-types-using-the-wcf-channel-model"></a>使用 WCF 通道模型的流式处理 Oracle 数据库 LOB 数据类型
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]支持端到端的流式处理的 LOB 数据的某些操作。 本主题中的部分介绍如何实现流式处理 LOB 数据时使用的 WCF 通道模型。  

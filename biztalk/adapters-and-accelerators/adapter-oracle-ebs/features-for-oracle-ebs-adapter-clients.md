@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 974f75eaa2416ae11572a1b29eb682d6bc7c0172
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5378f72b9d3d0ff3343c17c68b9332d6e0adf8fa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968878"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375520"
 ---
 # <a name="features-for-oracle-ebs-adapter-clients"></a>Oracle EBS 适配器客户端的功能
 除了讨论的主题的功能[概述的 BizTalk 适配器用于 Oracle E-business Suite](http://msdn.microsoft.com/library/4f18fa2e-4e97-4c28-b38d-fc39ac53789e)，则[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]还提供了可用于适配器客户端的以下功能：  

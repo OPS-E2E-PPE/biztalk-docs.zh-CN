@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 58f6249774697e12e12ab5b85bccf6df210a5d4e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 271b733430b1b31828903add62bd8d71318abafb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981838"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373140"
 ---
 # <a name="overview-of-the-sap-adapter"></a>SAP 适配器概述
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]公开为 WCF 服务的 SAP 系统。 适配器客户端可以通过该适配器与交换的 SOAP 消息执行 SAP 系统的操作。 适配器使用 WCF 消息并进行相应调用到 SAP 系统，以执行操作。 适配器返回到 SOAP 消息的窗体中的客户端从 SAP 系统返回的响应。  

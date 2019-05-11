@@ -1,5 +1,5 @@
 ---
-title: 方案 2： 使用搜索框 web 部件进行搜索 |Microsoft Docs
+title: 应用场景 2：使用搜索框 web 部件进行搜索 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6ac446f83af49d8d2faa06c7b43b1f59d343679b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6f8eff487547ad3c7e101c7cf002b0dca1833e71
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991702"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374641"
 ---
-# <a name="scenario-2--search-using-the-search-box-web-part"></a>方案 2： 使用搜索框 web 部件进行搜索
+# <a name="scenario-2--search-using-the-search-box-web-part"></a>应用场景 2：使用搜索框 web 部件进行搜索
 我们将在 Microsoft Office SharePoint Server，若要配置使用它可以在执行全文搜索的搜索应用程序中配置搜索设置 MS_SAMPLE_EMPLOYEE 接口表 Oracle E-business Suite 中的。 更高版本，我们将添加搜索框 Web 部件添加到从可在其中执行搜索。  
   
  
   
 ##  <a name="Define"></a> 定义内容的源  
- 本部分说明如何定义从 Microsoft Office SharePoint Server 可对数据爬网内容源。 这涉及到将内容映射到 Id 枚举器中创建方法实例[步骤 2： 创建用于 Oracle E-business Suite 项目的应用程序定义文件](../../adapters-and-accelerators/adapter-oracle-ebs/step-2-create-an-application-definition-file-for-the-oracle-ebs-artifacts.md)。  
+ 本部分说明如何定义从 Microsoft Office SharePoint Server 可对数据爬网内容源。 这涉及到将内容映射到方法实例中创建 Id 枚举器[步骤 2:创建用于 Oracle E-business Suite 项目的应用程序定义文件](../../adapters-and-accelerators/adapter-oracle-ebs/step-2-create-an-application-definition-file-for-the-oracle-ebs-artifacts.md)。  
   
 #### <a name="to-define-a-content-source"></a>若要定义的内容源  
   
@@ -125,7 +125,7 @@ ms.locfileid: "36991702"
   
 #### <a name="to-add-the-search-box-web-part"></a>若要添加搜索框 Web 部件  
   
-1.  创建名为的 Web 部件页**MS_SAMPLE_EMPLOYEE_Search**。 若要了解有关创建 Web 部件页的步骤，请参阅[方案 1： 使用业务数据列表 web 部件显示数据](../../adapters-and-accelerators/adapter-oracle-ebs/scenario-1-display-data-using-business-data-list-web-part.md)中[方案 1： 使用业务数据列表 web 部件显示数据](../../adapters-and-accelerators/adapter-oracle-ebs/scenario-1-display-data-using-business-data-list-web-part.md)。  
+1.  创建名为的 Web 部件页**MS_SAMPLE_EMPLOYEE_Search**。 若要了解有关创建 Web 部件页的步骤，请参阅[方案 1:使用业务数据列表 web 部件显示数据](../../adapters-and-accelerators/adapter-oracle-ebs/scenario-1-display-data-using-business-data-list-web-part.md)在[方案 1:使用业务数据列表 web 部件显示数据](../../adapters-and-accelerators/adapter-oracle-ebs/scenario-1-display-data-using-business-data-list-web-part.md)。  
   
 2.  在 MS_SAMPLE_EMPLOYEE_Search 页上，单击**添加 Web 部件**。  
   
@@ -138,5 +138,5 @@ ms.locfileid: "36991702"
      ![搜索框 Web 部件](../../adapters-and-accelerators/adapter-oracle-ebs/media/33-search-web-part-final.gif "33_Search_Web_Part_Final")  
   
 ## <a name="see-also"></a>请参阅  
- [步骤 3： 创建 SharePoint 应用程序以从 Oracle E-business Suite 中检索数据](../../adapters-and-accelerators/adapter-oracle-ebs/step-3-create-a-sharepoint-application-to-retrieve-data-from-oracle-ebs.md)  
+ [步骤 3：创建 SharePoint 应用程序以从 Oracle E-business Suite 中检索数据](../../adapters-and-accelerators/adapter-oracle-ebs/step-3-create-a-sharepoint-application-to-retrieve-data-from-oracle-ebs.md)  
  [方案 1：使用业务数据列表 Web 部件显示数据](../../adapters-and-accelerators/adapter-oracle-ebs/scenario-1-display-data-using-business-data-list-web-part.md)

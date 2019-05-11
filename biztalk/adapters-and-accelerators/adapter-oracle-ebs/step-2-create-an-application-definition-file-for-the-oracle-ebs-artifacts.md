@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 创建 Oracle E-business Suite 项目应用程序定义文件 |Microsoft Docs
+title: 第 2 步：创建用于 Oracle E-business Suite 项目的应用程序定义文件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f0bd73da129e978bfe2d4ad5af2b4f26fb9bcc16
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ad908429c8daccef990377c953fda334558440aa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970750"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374568"
 ---
-# <a name="step-2-create-an-application-definition-file-for-the-oracle-e-business-suite-artifacts"></a>步骤 2： 创建 Oracle E-business Suite 项目应用程序定义文件
+# <a name="step-2-create-an-application-definition-file-for-the-oracle-e-business-suite-artifacts"></a>第 2 步：创建用于 Oracle E-business Suite 项目的应用程序定义文件
 ![步骤 2，共 4 步](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
   
- **完成时间：** 15 分钟  
+ **若要完成的时间：** 15 分钟  
   
- **目标：** Microsoft SharePoint Server 中的业务数据目录功能公开，并将业务 (LOB) 应用程序中的数据合并到门户。 若要将此数据合并到您的门户网站，必须生成可以使用 Microsoft Office SharePoint Server 应用程序定义文件。  
+ **目标：** Microsoft SharePoint Server 中的业务数据目录功能公开，并将业务线 (LOB) 应用程序中的数据合并到门户。 若要将此数据合并到您的门户网站，必须生成可以使用 Microsoft Office SharePoint Server 应用程序定义文件。  
   
  Microsoft Office SharePoint Server 2007 SDK 提供的 Business Data Catalog Definition Editor 工具，可为业务数据目录中创建应用程序定义文件。 此工具自动生成 XML 文件，以便定义文件中，因此不需要手动创建该文件在 XML 编辑器。  
   
@@ -36,11 +36,11 @@ ms.locfileid: "36970750"
   
   对于每个这些要求，必须完成一组 Business Data Catalog Definition Editor tool 中的任务。 本主题提供有关如何执行这些任务的说明。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
   
 -   必须确保您具有 Microsoft Office SharePoint Server 2007 SDK 的一部分安装 Business Data Catalog Definition Editor。 你可以下载从 SDK [ http://go.microsoft.com/fwlink/?LinkId=104130 ](http://go.microsoft.com/fwlink/?LinkId=104130)。  
   
--   发布 WCF 服务，如中所述[步骤 1： 使用 Oracle E-business 适配器创建并发布 WCF 服务](../../adapters-and-accelerators/adapter-oracle-ebs/step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service.md)。  
+-   发布 WCF 服务，如中所述[步骤 1:使用 Oracle E-business 适配器创建和发布 WCF 服务](../../adapters-and-accelerators/adapter-oracle-ebs/step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service.md)。  
   
 
   
@@ -61,11 +61,11 @@ ms.locfileid: "36970750"
     https://<COMPUTER_NAME>:<PORT_NUMBER>/MS_SAMPLE_EMPLOYEE/InterfaceTables_FND_APPS_MS_SAMPLE_EMPLOYEE.svc  
     ```  
   
-     当测试是否成功，如中所述发布 WCF 服务时，该 URL 才可用[步骤 1： 使用 Oracle E-business 适配器创建并发布 WCF 服务](../../adapters-and-accelerators/adapter-oracle-ebs/step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service.md)。  
+     测试是否成功，如中所述发布 WCF 服务时，URL 是可用[步骤 1:使用 Oracle E-business 适配器创建和发布 WCF 服务](../../adapters-and-accelerators/adapter-oracle-ebs/step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service.md)。  
   
 5.  单击 **“连接”**。  
   
-6.  若要查看你在 WCF 适配器服务开发向导中选择的操作，请单击**添加 Web 方法**选项卡。您将看到以下方法：**选择**。  
+6.  若要查看你在 WCF 适配器服务开发向导中选择的操作，请单击**添加 Web 方法**选项卡。你将看到以下方法：**选择**。  
   
 7.  拖动**选择**方法添加到设计图面。 将拖到设计图面上的方法，如创建实体，和该方法将成为该实体的一部分。  
   
@@ -86,7 +86,7 @@ ms.locfileid: "36970750"
          ![重命名实体](../../adapters-and-accelerators/adapter-oracle-ebs/media/06-entity-name.gif "06_Entity_Name")  
   
 ##  <a name="Headers"></a> 为方法中指定用户名和密码标头  
- 如果创建 Oracle E-business Suite MS_SAMPLE_EMPLOYEE 接口表上的选择操作的 WCF 服务，请指定用户名称和密码标头中的终结点行为配置的一部分[步骤 1： 使用 Oracle若要创建并发布 WCF 服务的电子商务适配器](../../adapters-and-accelerators/adapter-oracle-ebs/step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service.md)。 必须指定 Select 方法属性相同的值。  
+ 如果创建 Oracle E-business Suite MS_SAMPLE_EMPLOYEE 接口表上的选择操作的 WCF 服务，请指定用户名称和密码标头中的终结点行为配置的一部分[步骤 1:使用 Oracle E-business 适配器创建和发布 WCF 服务](../../adapters-and-accelerators/adapter-oracle-ebs/step-1-use-the-oracle-e-business-adapter-to-create-and-publish-a-wcf-service.md)。 必须指定 Select 方法属性相同的值。  
   
 #### <a name="to-specify-user-name-and-password-headers-for-the-select-method"></a>若要指定用户名称和密码标头的 Select 方法  
   
@@ -102,7 +102,7 @@ ms.locfileid: "36970750"
   
 5.  单击“确定” 。  
   
-##  <a name="Scenario1"></a> 使用业务数据列表 Web 部件的员工的方案 1： 查询  
+##  <a name="Scenario1"></a> 方案 1:使用业务数据列表 Web 部件的员工的查询  
  若要创建可用于搜索业务数据列表 Web 部件的员工和基于雇员姓名的应用程序定义文件，必须执行以下一组任务。  
   
 1.  在中**选择**方法，创建一个筛选器，并将其映射到**筛选器**参数。  
@@ -155,7 +155,7 @@ ms.locfileid: "36970750"
   
      ![指定 Finder 方法实例的名称](../../adapters-and-accelerators/adapter-oracle-ebs/media/13-instance-property.gif "13_Instance_Property")  
   
-##  <a name="Scenario2"></a> 方案 2： 从 Microsoft Office SharePoint Server MS_SAMPLE_EMPLOYEE 接口表的全文搜索  
+##  <a name="Scenario2"></a> 方案 2:从 Microsoft Office SharePoint Server MS_SAMPLE_EMPLOYEE 接口表的全文搜索  
  若要创建可用于从 Microsoft Office SharePoint Server MS_SAMPLE_EMPLOYEE 接口表中执行全文搜索应用程序定义文件，必须执行以下一组任务。  
   
 -   在中**选择**方法中，创建一个标识符，并将其映射到筛选器参数和返回值，用于存储员工姓名。  
@@ -296,7 +296,7 @@ ms.locfileid: "36970750"
 2.  将文件另存 Employee.xml。  
   
 ## <a name="next-steps"></a>后续步骤  
- 现在必须创建 SharePoint 应用程序以从 Oracle E-business Suite 中检索数据。 有关说明，请参阅[第 3 步： 创建 SharePoint 应用程序检索的数据从 Oracle E-business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/step-3-create-a-sharepoint-application-to-retrieve-data-from-oracle-ebs.md)。  
+ 现在必须创建 SharePoint 应用程序以从 Oracle E-business Suite 中检索数据。 有关说明，请参阅[步骤 3:创建 SharePoint 应用程序以从 Oracle E-business Suite 中检索数据](../../adapters-and-accelerators/adapter-oracle-ebs/step-3-create-a-sharepoint-application-to-retrieve-data-from-oracle-ebs.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [教程： 从 Oracle E-business Suite 的 SharePoint 站点上显示数据](Tutorial:%20Present%20data%20from%20Oracle%20E-Business%20Suite%20on%20a%20SharePoint%20Site.md)
+ [教程：从 SharePoint 站点上的 Oracle E-business Suite 中显示数据](Tutorial:%20Present%20data%20from%20Oracle%20E-Business%20Suite%20on%20a%20SharePoint%20Site.md)

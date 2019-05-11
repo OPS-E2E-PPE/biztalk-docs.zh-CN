@@ -1,5 +1,5 @@
 ---
-title: 使用 Siebel 适配器使用 WCF 服务模型运行业务组件上的操作 |Microsoft 文档
+title: 使用 Siebel 适配器使用 WCF 服务模型运行业务组件上的操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,20 +17,20 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 99ac40efda9ed8c27fb5ac5fedfbe782b9a4f645
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 111d8397b2784fdbb01f1cdf7dbf05036bc50bce
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22222221"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371044"
 ---
 # <a name="run-operations-on-business-components-with-the-siebel-adapter-using-the-wcf-service-model"></a>使用 Siebel 适配器使用 WCF 服务模型运行业务组件上的操作
-你可以创建面向 Siebel 在业务组件的 WCF 客户端。 WCF 客户端然后可以用于 Siebel 系统上执行插入、 更新、 查询、 删除、 关联、 取消关联和在业务组件上的子记录的查询操作。 Siebel 业务对象下的业务对象节点中加以表示[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]。 在对应于该对象的节点下中加以表示业务组件构成每个业务对象。 你可以按照中的步骤[与 Siebel 适配器的 WCF 服务模型概述](../../adapters-and-accelerators/adapter-siebel/overview-of-the-wcf-service-model-with-the-siebel-adapter.md)来生成 WCF 客户端程序针对特定操作的业务组件，并使用客户端以调用这些操作对业务组件。  
+您可以创建面向 Siebel 业务组件的 WCF 客户端。 然后可以使用 WCF 客户端 Siebel 系统上执行插入、 更新、 查询、 删除、 关联、 取消关联和子业务组件上的记录的查询操作。 Siebel 业务对象会显示在业务对象节点下[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]。 构成每个业务对象的业务组件在与该对象对应的节点下显示。 可以按照中的步骤[使用 Siebel 适配器的 WCF 服务模型概述](../../adapters-and-accelerators/adapter-siebel/overview-of-the-wcf-service-model-with-the-siebel-adapter.md)生成目标特定操作的业务组件的 WCF 客户端并使用客户端来调用这些操作对业务组件。  
   
 > [!NOTE]
->  本主题提供有关执行基本操作 （插入、 更新，查询中，删除） 在业务组件上的信息。 有关执行取消关联和子记录的查询操作相关联的详细信息，请参阅[与使用 WCF 服务模型的 MVG 字段的业务组件上运行的操作](../../adapters-and-accelerators/adapter-siebel/work-with-mvp-fields-using-the-siebel-adapter-and-the-wcf-service-model.md)  
+>  本主题提供有关执行基本操作 （插入、 更新，查询中，删除） 在业务组件上的信息。 有关执行关联、 取消关联和子记录的查询操作的详细信息，请参阅[与使用 WCF 服务模型在包含 MVG 字段的业务组件上运行操作](../../adapters-and-accelerators/adapter-siebel/work-with-mvp-fields-using-the-siebel-adapter-and-the-wcf-service-model.md)  
   
- 下面的代码使用 WCF 客户端的帐户业务对象的帐户业务组件中执行上一条记录的插入、 更新和删除操作。 每个操作之间执行查询操作以验证结果。 WCF 客户端在此示例中初始化从配置文件由生成[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。 生成的配置文件的示例，请参阅[为 Siebel 系统配置 WCF 客户端](../../adapters-and-accelerators/adapter-siebel/configure-a-wcf-client-for-a-siebel-system.md)。  
+ 以下代码使用 WCF 客户端帐户业务对象的帐户业务组件中执行上一条记录的 Insert、 Update 和 Delete 操作。 每个操作之间执行查询操作以验证结果。 在此示例 WCF 客户端初始化从配置文件由生成[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。 生成的配置文件的示例，请参阅[为 Siebel 系统配置 WCF 客户端](../../adapters-and-accelerators/adapter-siebel/configure-a-wcf-client-for-a-siebel-system.md)。  
   
 ```  
   
@@ -148,5 +148,5 @@ namespace Business_Component_Operations
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发 Siebel 应用程序使用 WCF 服务模型](../../adapters-and-accelerators/adapter-siebel/develop-siebel-applications-using-the-wcf-service-model.md)

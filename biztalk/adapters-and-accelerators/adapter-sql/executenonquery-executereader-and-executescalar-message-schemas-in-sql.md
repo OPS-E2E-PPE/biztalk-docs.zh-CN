@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ede2d471ce935d11286c49cc7cfb53c0e7ea9d92
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 77dfd6fcd54edb1253eb153b4a3560b8bf6b6357
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001422"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369531"
 ---
 # <a name="message-schemas-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作的消息架构
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]公开 ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 出站操作在根级别，以在 SQL Server 中执行任何任意 SQL 语句。  
@@ -31,7 +31,7 @@ ms.locfileid: "37001422"
 ## <a name="message-structure-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作的消息结构  
  这些操作中的消息遵循请求-响应消息交换模式，并下表显示了这些请求和响应消息的结构。  
   
-|运算|XML 消息|Description|  
+|操作|XML 消息|Description|  
 |---------------|-----------------|-----------------|  
 |ExecuteNonQuery 请求|`<ExecuteNonQuery xmlns="http://schemas.microsoft.com/Sql/2008/05/GenericTableOp/">    <Query>[PL/SQL STATEMENT1];[PL/SQL STATEMENT2];…</Query>  </ExecuteNonQuery>`|在`<Query>`标记，可以指定多个以分号分隔的 PL/SQL 语句。|  
 |ExecuteNonQuery 响应|`<?xml version="1.0" encoding="utf-8" ?> <ExecuteNonQueryResponse xmlns="http://schemas.microsoft.com/Sql/2008/05/GenericTableOp/">   <ExecuteNonQueryResult>[value]</ExecuteNonQueryResult> </ExecuteNonQueryResponse>`|对于 UPDATE、 INSERT 和 DELETE 语句，`[value]`表示的 PL/SQL 语句中受影响的行数*ExecuteNonQuery 请求*消息。 对于所有其他类型的语句，`[value]`为-1。|  
@@ -45,14 +45,14 @@ ms.locfileid: "37001422"
 ## <a name="message-action-for-the-executenonquery-executereader-and-executescalar-operations"></a>ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作的消息操作  
  下表显示了使用的 ExecuteNonQuery、 ExecuteReader 和 ExecuteScalar 操作的消息操作。  
   
-|运算|操作|  
+|操作|操作|  
 |---------------|------------|  
 |ExecuteNonQuery 请求|GenericOp/ExecuteNonQuery|  
-|ExecuteNonQuery 响应|GenericOp/ExecuteNonQuery/响应|  
+|ExecuteNonQuery 响应|GenericOp/ExecuteNonQuery/response|  
 |ExecuteReader 请求|GenericOp/ExecuteReader|  
-|ExecuteReader 响应|GenericOp/ExecuteReader/响应|  
+|ExecuteReader 响应|GenericOp/ExecuteReader/response|  
 |ExecuteScalar 请求|GenericOp/ExecuteScalar|  
-|ExecuteScalar 响应|GenericOp/ExecuteScalar/响应|  
+|ExecuteScalar 响应|GenericOp/ExecuteScalar/response|  
   
 ## <a name="see-also"></a>请参阅  
  [消息和用于 SQL Server 的 BizTalk 适配器的消息架构](../../adapters-and-accelerators/adapter-sql/messages-and-message-schemas-for-biztalk-adapter-for-sql-server.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dcf58b5ff9a379b7b28647e0d5b07475d08310db
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ed0b353ddfd5a04ba2eafc0205d7d154e2049c33
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011164"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369438"
 ---
 # <a name="insert-update-delete-or-select-operations-in-sql-using-the-wcf-service-model"></a>插入、 更新、 删除或在 SQL 中使用 WCF 服务模型中选择操作
 [!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]发现一组基本的 Insert、 Select、 Update 和 Delete 操作上 SQL Server 数据库表和视图。 通过使用这些操作，你可以执行简单 SQL Insert、 Select、 Update 和 Delete 语句限定由 Where 子句对目标表或视图。 本主题将说明了如何使用 WCF 服务模型执行这些操作。  
@@ -47,12 +47,12 @@ ms.locfileid: "37011164"
 ### <a name="method-signature-for-invoking-operations-on-tables"></a>调用表操作的方法签名  
  下表显示了对表的基本操作的方法签名。 签名是相同的视图，只不过视图命名空间和名称替换这些表。  
   
-|运算|方法签名|  
+|操作|方法签名|  
 |---------------|----------------------|  
 |Insert|long[] Insert([TABLE_NS].[TABLE_NAME][] Rows);|  
 |选择|[TABLE_NS]。[TABLE_NAME][选择 （字符串列，查询字符串）;]|  
 |Update|int Update([TABLE_NS].[TABLE_NAME].RowPair[] Rows);|  
-|DELETE|int Delete ([TABLE_NS]。 [TABLE_NAME] [] 行）;|  
+|DELETE|int Delete([TABLE_NS].[TABLE_NAME][] Rows);|  
   
  [TABLE_NS] = 表命名空间; 的名称例如，schemas.microsoft.com.Sql._2008._05.Types.Tables.dbo.Employee。  
   

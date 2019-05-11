@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 724d5bc41686abc3928716a0e08801107df25055
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d7624211805af0e16df4cd6853f1a425edf874d6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979382"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374535"
 ---
 # <a name="support-for-composite-operations"></a>支持复合操作
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]使适配器客户端能够执行可以包含任意数量的以下操作，并按任何顺序的复合操作：  

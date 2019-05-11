@@ -1,5 +1,5 @@
 ---
-title: 管理平台设置 |Microsoft 文档
+title: 管理平台设置 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27666e83fa1a4332105ac1f0391dc6d8ed247da2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 088f6fd17402c65be0ecc054b6d5dd6056089f35
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262125"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531126"
 ---
 # <a name="managing-platform-settings"></a>管理平台设置
-本部分中的主题介绍了如何管理主机、主机实例、服务器、MessageBox 数据库以及如何使用适配器。  
+在本部分中的主题介绍如何管理主机、 主机实例、 服务器、 MessageBox 数据库，以及如何使用适配器。  
   
 ## <a name="in-this-section"></a>本节内容  
   

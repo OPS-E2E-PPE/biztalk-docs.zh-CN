@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10612 |Microsoft Docs
+title: 单一登录：Event 10612 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3fdc86dd2143bf8b2b4c27dab66cc4c06ddff5ae
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9b73a601e883f651b5333224c557a1344d32943c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973014"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397714"
 ---
-# <a name="single-sign-on-event-10612"></a>单一登录： 事件 10612
+# <a name="single-sign-on-event-10612"></a>单一登录：事件 10612
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                                                                                                                 |
@@ -28,12 +28,12 @@ ms.locfileid: "36973014"
 | 产品版本 |                                                                                                           [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                                                            |
 |    事件 ID     |                                                                                                                                      10612                                                                                                                                      |
 |  事件源   |                                                                                                                                     ENTSSO                                                                                                                                      |
-|    组件    |                                                                                                                                       N/A                                                                                                                                       |
+|    组件    |                                                                                                                                       不可用                                                                                                                                       |
 |  符号名称  |                                                                                                                          SSO_WARN_TRANSACTION_TIMEOUT                                                                                                                           |
-|  消息正文   | 事务超时时间超出了此操作的建议最大值。 有关详细信息，请参阅文档。%r<br /><br /> 事务 ID: %1 %r<br /><br /> 事务超时： %2 分钟 （零表示无限超时） %r<br /><br /> 建议最大值： %3 分钟 |
+|  消息正文   | 事务超时时间超出了此操作的建议最大值。 请参阅 details.%r 文档<br /><br /> 事务 ID: %1 %r<br /><br /> 事务超时： %2 分钟 （零表示无限超时） %r<br /><br /> 建议最大值： %3 分钟 |
   
 ## <a name="explanation"></a>解释  
- 一个具有过大超时值的事务已进入系统。 如果 ENTSSO 系统轮询 SSO 数据库，但该数据库被某个长时间运行的事务将其锁定，则系统最终会处于脱机状态。  
+ 事务已进入系统具有过大超时值。 如果 ENTSSO 系统轮询 SSO 数据库时锁定由长时间运行事务时，系统最终会处于脱机状态。  
   
 ## <a name="user-action"></a>用户操作  
  不需要任何用户操作。

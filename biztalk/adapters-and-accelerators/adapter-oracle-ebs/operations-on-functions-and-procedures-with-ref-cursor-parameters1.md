@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f7227d6fd100714c0b467f0b43537b364af98d37
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7ee9eba5aae898ddc57352ed3bb30b4e5b1b8cbe
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978646"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375362"
 ---
 # <a name="operations-on-functions-and-procedures-with-ref-cursor-parameters"></a>对包含 REF CURSOR 参数函数和过程的操作
 REF CURSOR 是 PL/SQL 数据类型表示的指针指向服务器端结果集生成的执行查询。 REF CURSOR 类型支持输入和输出数据的流，适合用于传输大量数据传入和传出 PL/SQL 代码。 

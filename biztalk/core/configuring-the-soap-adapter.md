@@ -1,5 +1,5 @@
 ---
-title: 配置 SOAP 适配器 |Microsoft 文档
+title: 配置 SOAP 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 81d41cc925a68cc7aadfac53e82d622fe7d38461
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 841a27052185abbf96c903c506955fcb4773d9f5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232589"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390707"
 ---
 # <a name="configuring-the-soap-adapter"></a>配置 SOAP 适配器
-本部分将介绍如何配置 SOAP 适配器。  
+本部分介绍如何配置 SOAP 适配器。  
   
 ## <a name="in-this-section"></a>本节内容  
   

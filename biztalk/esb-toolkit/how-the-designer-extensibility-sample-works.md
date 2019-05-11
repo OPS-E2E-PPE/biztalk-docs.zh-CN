@@ -1,5 +1,5 @@
 ---
-title: 设计器扩展性示例的工作原理 |Microsoft 文档
+title: 设计器扩展性示例工作原理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f78e5ab2c8a274b53b3cc580b37842772924af94
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 963c5ae2f778f193135fa73366d81cc359f5a798
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25975868"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397122"
 ---
-# <a name="how-the-designer-extensibility-sample-works"></a>设计器扩展性示例的工作原理
-在设计器扩展性示例的每个项目包含两个类：**扩展程序**类和**扩展提供程序**类。 这些类设计用于扩展功能，并定义属性的**ItineraryDsl**模型元素。  
+# <a name="how-the-designer-extensibility-sample-works"></a>设计器扩展性示例工作原理
+设计器扩展性示例的每个项目包含两个类： **Extender**类和一个**扩展提供程序**类。 这些类用于扩展功能，并定义的属性**ItineraryDsl**模型元素。  
   
- **扩展提供程序**类派生自**ExtensionProviderBase**类并具有**ExtensionProviderAttribute**具有属性应用于它们的确定扩展和其用途。 设置用户时，将向设计器中的用户显示这些值**扩展程序**模型元素的属性。 当**扩展提供程序**类初始化它们对的调用的构造函数**ExtensionProviderBase**并将传递给它的一种扩展类。  
+ **扩展提供程序**类派生自**ExtensionProviderBase**类，并有**ExtensionProviderAttribute**属性应用到它们，确定扩展和它的用途。 用户设置时，将在设计器中向用户显示这些值**扩展器**模型元素上的属性。 当**扩展提供程序**构造函数对它们调用类初始化**ExtensionProviderBase**并将扩展器类的类型传递给它。  
   
- **扩展程序**类具有**ObjectExtender**属性应用到它们; 到**ObjectExtender**属性，它们将中的对象类型传递**ItineraryDsl** ，它们扩展。 这些类的基类各不相同，具体取决于扩展程序的类型。 对于冲突解决程序扩展程序的基类是**ObjectExtender\<冲突解决程序\>**。 对于路线服务扩展程序的基类是**ItineraryServiceExtenderBase**。 在**扩展程序**类，以下属性应用到属性： 属性一定用于正确显示在属性网格中，出于验证目的，Microsoft 企业库中包含的属性正确的序列化所需的属性和/或确定如何保持属性的属性。  
+ **Extender**类具有**ObjectExtender**特性应用到它们; 到**ObjectExtender**属性，它们将中的对象类型传递**ItineraryDsl** ，它们扩展。 这些类的基类会有所不同，具体取决于扩展程序的类型。 对于冲突解决程序扩展程序的基类是**ObjectExtender\<冲突解决程序\>**。 对于路线服务扩展程序的基类是**ItineraryServiceExtenderBase**。 在中**扩展器**类，以下属性应用于的属性： 所需的正确显示在属性网格中，属性在出于验证目的，Microsoft Enterprise Library 中所包含的属性所需的正确序列化属性和/或确定如何保留属性的属性。  
   
- 在这些程序集进行编译，并在 Lib 文件夹中放入，它们是加载，且在运行时缓存由设计器。 根据需要扩展程序， **ItineraryDsl**使用反射来检查导出的类型和对这些类型的属性从缓存中加载的适用的程序集。
+ 当编译这些程序集并将其放到 Lib 文件夹中时，它们加载并缓存在运行时由设计器。 当需要扩展器时， **ItineraryDsl**使用反射来从缓存加载适用的程序集，通过检查导出的类型和这些类型的属性。

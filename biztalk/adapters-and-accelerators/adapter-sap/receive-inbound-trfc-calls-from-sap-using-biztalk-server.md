@@ -15,12 +15,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 49d83d8710b36d0900c2d7b3a6b02c7d0a389ba4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d98d1f38e45109649d64758b74c0ae5fc1489e9c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978614"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373040"
 ---
 # <a name="receive-inbound-trfc-calls-from-sap-using-biztalk-server"></a>接收来自 SAP 使用 BizTalk Server 的入站的 tRFC 调用
 TRFC 服务器调用是事务性的 RFC 服务器调用。 在事务上下文中接收 RFC 所需的业务流程将类似于业务流程，以接收来自 SAP 系统发送任何其他入站的 RFC。 但是，您需要执行某些其他任务以确保 Rfc 接收事务上下文中。 有关接收来自 SAP 系统使用的入站的 RFC [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]，请参阅[SAP 使用 BizTalk Server 接收入站 RFC 调用](../../adapters-and-accelerators/adapter-sap/receive-inbound-rfc-calls-from-sap-using-biztalk-server.md)。 详细了解如何[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]支持入站的 tRFC 调用接收来自 SAP 系统，请参阅[Trfc 在 SAP 中的操作](../../adapters-and-accelerators/adapter-sap/operations-on-trfcs-in-sap.md)。  

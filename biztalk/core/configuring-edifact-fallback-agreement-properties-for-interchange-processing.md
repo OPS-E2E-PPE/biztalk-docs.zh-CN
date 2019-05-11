@@ -1,5 +1,5 @@
 ---
-title: 配置 EDIFACT 回退协议属性交换处理 |Microsoft 文档
+title: 配置 EDIFACT 后备协议属性为交换处理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eab4905e2f6615fdba8a93150646309f0b7856e5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3b9ea5499ecc87b289fbd40648d04ba83bf348b8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232285"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391282"
 ---
 # <a name="configuring-edifact-fallback-agreement-properties-for-interchange-processing"></a>为交换处理配置 EDIFACT 后备协议属性
 EDIFACT 交换处理属性定义 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 如何处理从参与方接收的以 EDIFACT 编码的信封。  
@@ -28,13 +28,13 @@ EDIFACT 交换处理属性定义 [!INCLUDE[btsBizTalkServerNoVersion](../include
   
 -   [配置回退确认属性 (EDIFACT)](../core/configuring-fallback-acknowledgement-properties-edifact.md)  
   
--   [配置回退信封属性 (EDIFACT 交换 Settngs)](../core/configuring-fallback-envelope-properties-edifact-interchange-settngs.md)  
+-   [配置回退信封属性（EDIFACT-交换设置）](../core/configuring-fallback-envelope-properties-edifact-interchange-settngs.md)  
   
 -   [配置回退验证属性 (EDIFACT)](../core/configuring-fallback-validation-properties-edifact.md)  
   
 -   [配置回退字符集和分隔符属性 (EDIFACT)](../core/configuring-fallback-charset-and-separator-properties-edifact.md)  
   
--   [配置回退本地主机设置 （EDIFACT 交换设置）](../core/configuring-fallback-local-host-settings-edifact-interchange-settings.md)  
+-   [配置回退本地主机设置（EDIFACT-交换设置）](../core/configuring-fallback-local-host-settings-edifact-interchange-settings.md)  
   
-## <a name="see-also"></a>另请参阅  
- [配置 EDIFACT 回退协议属性](../core/configuring-edifact-fallback-agreement-properties.md)
+## <a name="see-also"></a>请参阅  
+ [配置 EDIFACT 后备协议属性](../core/configuring-edifact-fallback-agreement-properties.md)

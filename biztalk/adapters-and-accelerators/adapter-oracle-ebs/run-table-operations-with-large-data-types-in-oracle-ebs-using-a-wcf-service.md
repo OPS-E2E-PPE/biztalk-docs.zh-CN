@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9869cd49ed09d80a866f3dcbb6f4b9429788339b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f6fc43815d7df4542f5d95de085e2d68040d1705
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982558"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374631"
 ---
 # <a name="complete-operations-on-tables-with-large-data-types-in-oracle-e-business-suite-using-the-wcf-service-model"></a>完成对表包含 Oracle E-business Suite 使用 WCF 服务模型中的大型数据类型的操作
 [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]使适配器客户端能够执行对界面表和视图的较大的数据类型，如 BLOB、 CLOB、 NCLOB、 和 BFILE 操作。  
@@ -40,7 +40,7 @@ ms.locfileid: "36982558"
 
 |     项目     |                     WCF 客户端名称                      |
 |------------------|----------------------------------------------------------|
-| 接口表 | [A p p _] InterfaceTables_*[SCHEMA]\\*[TABLE_NAME] 客户端 |
+| 接口表 | InterfaceTables_[APP_NAME]*[SCHEMA]\\*[TABLE_NAME]Client |
 
  [A p p _] = Oracle E-business Suite 应用程序; 的实际名称例如，查找。  
 
@@ -53,10 +53,10 @@ ms.locfileid: "36982558"
 ### <a name="method-signature-for-invoking-operations-on-tables"></a>调用表操作的方法签名  
  下表显示了对表的基本操作的方法签名。 签名是相同的视图，只不过视图命名空间和名称替换这些表。  
 
-|运算|方法签名|  
+|操作|方法签名|  
 |---------------|----------------------|  
 |Update_\<*column_name*\>|public void Update_\<*column_name*\>（字符串筛选器，byte [] 的数据）;|  
-|Read_\<*column_name*\>|公共 System.IO.Stream Read_\<*column_name*\>（字符串筛选器）;|  
+|Read_\<*column_name*\>|public System.IO.Stream Read_\<*column_name*\>(string FILTER);|  
 
  例如，下面的代码演示对应用程序架构下的客户数据库表的 Update_PHOTO 和 Read_PHOTO 操作生成的 WCF 客户端类的方法签名。  
 
@@ -76,8 +76,8 @@ public partial class Tables_APPS_CUSTOMERClient : System.ServiceModel.ClientBase
 
 |操作名称|Parameters|  
 |--------------------|----------------|  
-|Update_\<*column_name*\>|需要以下参数：<br /><br /> -   `string FILTER`. 此参数必须包含 where 子句表示针对其数据的更新的记录。 例如， `"WHERE Name='Mindy Martin'"`。<br />-   `byte[] DATA`. 包含要更新的大型数据类型列中数据的字节数组。|  
-|Read_\<*column_name*\>|需要以下参数：<br /><br /> -   `string FILTER`. 此参数必须包含 where 子句，它表示具有要读取数据的记录。 例如， `"WHERE Name='Mindy Martin'"`。|  
+|Update_\<*column_name*\>|需要以下参数：<br /><br /> -   `string FILTER`. 此参数必须包含 where 子句表示针对其数据的更新的记录。 例如，`"WHERE Name='Mindy Martin'"`。<br />-   `byte[] DATA`. 包含要更新的大型数据类型列中数据的字节数组。|  
+|Read_\<*column_name*\>|需要以下参数：<br /><br /> -   `string FILTER`. 此参数必须包含 where 子句，它表示具有要读取数据的记录。 例如，`"WHERE Name='Mindy Martin'"`。|  
 
 ## <a name="creating-a-wcf-client-to-invoke-operations-on-tables-with-columns-of-large-data-types"></a>创建 WCF 客户端来调用具有较大的数据类型的列的表操作  
  通用组执行对 Oracle E-business Suite 使用 WCF 客户端的操作所需的操作涉及到一组任务中所述[与 Oracle E-business Suite 适配器的 WCF 服务模型概述](../../adapters-and-accelerators/adapter-oracle-ebs/overview-of-the-wcf-service-model-with-the-oracle-e-business-suite-adapter.md)。 本部分介绍如何创建 WCF 客户端以调用 Update_PHOTO 和 Read_PHOTO 客户数据库表上的操作。  

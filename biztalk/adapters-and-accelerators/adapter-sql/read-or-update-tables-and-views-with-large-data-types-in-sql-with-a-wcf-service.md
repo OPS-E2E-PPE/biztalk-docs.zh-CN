@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a2bfb30c01113e868bd6a662d004639645e29746
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 031e65cc749de34807993e858c066cfc9438cc7b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992478"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368557"
 ---
 # <a name="run-operations-on-tables-and-views-with-large-data-types-in-sql-using-the-wcf-service-model"></a>包含 SQL 使用 WCF 服务模型中的大型数据类型运行操作表和视图
 [!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]使适配器客户端读取和更新的大型数据类型列中的数据，它是、 varchar （max）、 nvarchar （max） 或 varbinary （max）。 若要从这样的列读取数据，适配器客户端可以使用选择的操作。 若要插入或更新到此类列的数据，该适配器公开一组\<*column_name* \>操作，其中\< *column_name* \>名称类型 varchar （max）、 nvarchar （max），或 varbinary （max） 列。  
@@ -29,7 +29,7 @@ ms.locfileid: "36992478"
 > [!NOTE]
 >  如果您正在执行对具有用户定义类型的列的表操作，请确保您参考[对表和视图使用 SQL 适配器的用户定义类型的操作](../../adapters-and-accelerators/adapter-sql/operations-on-tables-and-views-with-user-defined-types-using-the-sql-adapter.md)。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  运行 SQL Server 的计算机和运行适配器客户端计算机上，必须执行以下任务。  
   
 - **运行 SQL Server 的计算机上**  
@@ -74,9 +74,9 @@ ms.locfileid: "36992478"
 ### <a name="method-signature-for-invoking-operations-on-columns-of-large-data-types"></a>针对大型数据类型的列调用操作的方法签名  
  下表显示了对表的基本操作的方法签名。 签名是相同的视图，只不过视图命名空间和名称替换这些表。  
   
-|运算|方法签名|  
+|操作|方法签名|  
 |---------------|----------------------|  
-|设置\<*column_name*\>|公共 void Set\<*column_name*\>（字符串筛选器，byte [] 的数据）;|  
+|Set\<*column_name*\>|公共 void Set\<*column_name*\>（字符串筛选器，byte [] 的数据）;|  
   
  \<*column_name* \> = 较大的数据类型的列的名称。  
   
@@ -96,7 +96,7 @@ public partial class TableOp_dbo_RecordsClient : System.ServiceModel.ClientBase<
 |参数名称|Description|  
 |--------------------|-----------------|  
 |字符串筛选器|指定 WHERE 子句基于适配器在其上更新的记录的大数据类型的列。|  
-|byte [] 的数据|指定必须更新为较大的数据类型的列的值。|  
+|byte[] Data|指定必须更新为较大的数据类型的列的值。|  
   
  在集中\<*column_name* \>操作不返回任何值。  
   

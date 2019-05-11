@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7a587b70eb3ae603d59dd5a6f21270133b5a8125
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4b1a6b5cf310dfd7e65cba21364cbccc385300df
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005302"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65364078"
 ---
 # <a name="understanding-fileact-and-interact-adapter-architecture"></a>了解 FileAct 和 InterAct 适配器体系结构
 SWIFT 适配器基于 BizTalk 适配器框架。 使用 BizTalk Server 中的适配器的分类，SWIFT 适配器，FileAct 和 InterAct，表示以下：  

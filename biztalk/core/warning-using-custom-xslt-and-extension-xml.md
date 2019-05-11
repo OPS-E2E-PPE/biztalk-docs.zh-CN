@@ -1,5 +1,5 @@
 ---
-title: 警告-使用自定义 XSLT 和扩展的 XML |Microsoft 文档
+title: 警告-使用自定义 XSLT 和扩展 XML |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 90644aec738345e3a36286cc62aaa7a355e04348
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ce44d40fd726731261536b622fdb9b24c65f4281
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288581"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393635"
 ---
 # <a name="warning---using-custom-xslt-and-extension-xml"></a>警告-使用自定义 XSLT 和扩展 XML
 **错误代码**  
@@ -28,9 +28,9 @@ ms.locfileid: "22288581"
   
  **说明**  
   
- 值替代存在**自定义 XSLT 路径**和**自定义扩展 XML**属性控制此映射，完全忽略任何映射生成的输出实例消息指定源和目标架构之间。 如果是故意如此，则可忽略此警告。  
+ 替代值**自定义 XSLT 路径**并**自定义扩展 XML**属性控制此映射，完全忽略任何映射生成的输出实例消息指定源和目标架构之间。 如果这是有意为之，你可以忽略此警告。  
   
- 这是有效的一种情况是使用 BizTalk 映射程序来生成的映射的初步 XSLT，修改此 XSLT 手动来满足特定的其他要求，然后指定作为的值的修改后的文件**自定义 XSLT 路径**属性，从而在后续的映射操作期间替代初级 XSLT。  
+ 这是有效的一种方案是使用 BizTalk 映射器来生成初级 XSLT 的映射，修改此 XSLT 手动以满足特定的其他要求，并作为的值指定修改后的文件**自定义 XSLT 路径**属性，从而在随后的映射操作过程中替代初级 XSLT。  
   
  **用户执行任何操作**  
   

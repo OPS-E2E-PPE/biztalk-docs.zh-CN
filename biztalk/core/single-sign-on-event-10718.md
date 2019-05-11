@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10718 |Microsoft Docs
+title: 单一登录：Event 10718 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 958753d50d15662cd138ea5460c121eefcac8a98
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 331d78687d7948a4f37ab3b16e4a95e42c5e209c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004982"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397215"
 ---
-# <a name="single-sign-on-event-10718"></a>单一登录： 事件 10718
+# <a name="single-sign-on-event-10718"></a>单一登录：事件 10718
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                                                                   |
@@ -35,14 +35,14 @@ ms.locfileid: "37004982"
 ## <a name="explanation"></a>解释  
  此错误事件表明重播或进度文件中检测到损坏。  
 
- 重播文件存储特定的密码同步适配器，因此可以为该特定适配器重放。 适配器名称以明文和加密两种形式存储。 此消息表示解密重播文件进行播放时，解密的适配器名称与该适配器名称不匹配。 这可以建议发生了一些损坏或与重播文件可能被篡改。  
+ 重播文件存储特定的密码同步适配器，因此可以为该特定适配器重放。 适配器名称存储在明文和加密的窗体中。 此消息表示，如果重播文件已解密的播放已解密的适配器名称不匹配适配器名称。 这可以建议发生了一些损坏或与重播文件可能被篡改。  
 
 ## <a name="user-action"></a>用户操作  
  若要解决此错误，请执行下列一项或多项操作:  
 
-- 确定重播文件内容被修改的原因，查看是否存在备份。  
+- 确定为什么重播文件的内容可能已被修改，请参阅备份是否存在。  
 
-- 检查是否更改了 SSO 主密钥或 SSO 服务帐户，这可能会影响加密行为。  
+- 检查是否 SSO 主密钥已更改或已更改 SSO 服务帐户，这可能会影响加密行为。  
 
 - 删除重播文件。  
 

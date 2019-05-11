@@ -25,12 +25,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8e85f067b53c8a46238e4de343f240cfc2784885
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2c227fa80a7152ade8bcc6f745d6c5fb2f760715
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994566"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373280"
 ---
 # <a name="key-features-in-the-sap-adapter"></a>SAP 适配器的主要功能
 本部分列出了中的新的和已弃用功能[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]。  

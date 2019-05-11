@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 408d2ce053a30a4692b6e17a73087b13c648ab2a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6eeaa671bbcc1ad45ab06074d6cef6e362e66c41
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997334"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373386"
 ---
 # <a name="invoke-operations-on-the-sap-system-using-the-wcf-channel-model"></a>调用上使用 WCF 通道模型的 SAP 系统的操作
 在调用操作[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]通过使用**IRequestChannel**或**IOutputChannel**通道形状将消息发送到适配器。 基本模式是通过使用绑定创建通道工厂为所需的通道形状 (**SAPBinding**) 并创建从一个连接 URI 的终结点。 然后，创建**消息**为目标操作的消息架构表示符合的 SOAP 消息的实例。 然后可以将发送这**消息**到[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]使用从通道工厂创建的通道。 如果使用的**IRequestChannel**，你收到的响应。 如果执行对 SAP 系统的操作问题[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]将引发**Microsoft.ServiceModel.Channels.Common.TargetSystemException**。  
@@ -128,7 +128,7 @@ ms.locfileid: "36997334"
   
 -   您创建**ChannelFactory\<IOutputChannel\>** 步骤 1 中。  
   
--   在调用**发送**步骤 6 中的通道上的方法。 `channel.Send(messageIn);`的用户。  
+-   在调用**发送**步骤 6 中的通道上的方法。 `channel.Send(messageIn);` 的用户。  
   
 -   不没有返回任何响应消息**IOutputChannel**。  
   

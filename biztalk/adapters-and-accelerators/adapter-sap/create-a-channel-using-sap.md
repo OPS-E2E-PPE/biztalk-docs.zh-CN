@@ -17,12 +17,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8f42d21fe70a3058a9d92384c6a2853b0e35c84
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 75aa48af8d252db3d493f0ee7814edbdbdc7498e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981406"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373571"
 ---
 # <a name="create-a-channel-using-sap"></a>创建一个通道，使用 SAP
 在 WCF 通道模型中，调用上的 SAP 系统的操作或从 SAP 系统接收消息，通过交换 SOAP 消息具有[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]通过 WCF 通道。  

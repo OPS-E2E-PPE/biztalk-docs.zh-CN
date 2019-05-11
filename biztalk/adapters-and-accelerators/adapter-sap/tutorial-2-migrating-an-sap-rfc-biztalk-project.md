@@ -1,5 +1,5 @@
 ---
-title: 教程 2： 迁移 SAP RFC BizTalk 项目 |Microsoft Docs
+title: 教程 2:迁移 SAP RFC BizTalk 项目 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bf741fdbbf996fa54c227cc879c850304413d25f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 76eee4656808c56664f23cd216afeef5f564f9b0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978982"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372319"
 ---
-# <a name="tutorial-2-migrating-an-sap-rfc-biztalk-project"></a>教程 2： 迁移 SAP RFC BizTalk 项目
+# <a name="tutorial-2-migrating-an-sap-rfc-biztalk-project"></a>教程 2:迁移 SAP RFC BizTalk 项目
 SAP 适配器随 Microsoft BizTalk Server 的以前版本不同于基于 WCF 的[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]在许多方面，包括：  
   
 - 创建 BizTalk 项目的设计时体验。  
@@ -50,7 +50,7 @@ SAP 适配器随 Microsoft BizTalk Server 的以前版本不同于基于 WCF 的
 ## <a name="sample-used-for-the-tutorial"></a>本教程使用示例  
  基于本教程演示如何将 SAP 系统中调用 RFC vPrev BizTalk 项目迁移的示例 (SAP_RFC_Migration)。 使用提供了示例[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。 有关详细信息，请参阅[适配器示例](../../adapters-and-accelerators/accelerator-rosettanet/adapter-samples.md)。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
   
 -   必须有一个 vPrev BizTalk 项目。 本教程涉及调用 SD_RFC_CUSTOMER_GET RFC BizTalk 项目。  
   

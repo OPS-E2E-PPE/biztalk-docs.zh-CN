@@ -15,12 +15,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f481a5f71ea5677165390177eb809239961eb9e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1e0d5406ceb728d28906665fff262edab1623e3f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018432"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372436"
 ---
 # <a name="troubleshoot-issues-with-the-data-provider-for-sap"></a>SAP 数据提供程序疑难解答
 本部分讨论如何使用故障排除技术来解决操作使用时可能遇到的错误[!INCLUDE[adoprovidersaplong](../../includes/adoprovidersaplong-md.md)]。  

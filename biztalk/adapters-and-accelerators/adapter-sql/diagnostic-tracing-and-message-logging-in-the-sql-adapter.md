@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5fbcdac66c40a4b1d9c2b35d2f8268a63c8bd0e5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 78b3a3d59619df42070fdbed3508fbafb2b37c36
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968150"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369836"
 ---
 # <a name="diagnostic-tracing-and-message-logging-in-the-sql-adapter"></a>诊断跟踪和消息日志记录中的 SQL 适配器
 诊断跟踪有助于有效地诊断使用适配器时可能遇到的问题。 适配器客户端可以激活在两个级别的诊断跟踪：  

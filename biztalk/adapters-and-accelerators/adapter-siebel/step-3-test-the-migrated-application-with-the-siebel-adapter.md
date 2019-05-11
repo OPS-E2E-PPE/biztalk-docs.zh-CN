@@ -1,5 +1,5 @@
 ---
-title: 步骤 3： 测试具有 Siebel 适配器的迁移应用程序 |Microsoft Docs
+title: 步骤 3：测试与 Siebel 适配器迁移应用程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c1669ed459dffbd8746936ffa1ba8c23677173e5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0eaed7d5beb9fffe30f435fa0a1fff0c0349f4e4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989582"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370546"
 ---
-# <a name="step-3-test-the-migrated-application-with-the-siebel-adapter"></a>步骤 3： 测试具有 Siebel 适配器的迁移应用程序
+# <a name="step-3-test-the-migrated-application-with-the-siebel-adapter"></a>步骤 3：测试迁移应用程序使用 Siebel 适配器
 ![第 3 部分，共 3 步](../../adapters-and-accelerators/adapter-oracle-database/media/step-3of3.gif "Step_3of3")  
   
- **完成时间：** 5 分钟  
+ **若要完成的时间：** 5 分钟  
   
- **目标：** 在此步骤中，您将通过执行插入操作帐户业务组件上的测试已迁移应用程序。 若要执行此操作，则删除与使用 vPrev Siebel 适配器生成的架构一致的请求消息。  
+ **目标：** 在此步骤中，将通过执行插入操作帐户业务组件上的测试已迁移应用程序。 若要执行此操作，则删除与使用 vPrev Siebel 适配器生成的架构一致的请求消息。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
   
 - 通过将 BizTalk 业务流程中的逻辑端口映射到物理端口在 BizTalk Server 管理控制台中配置的 BizTalk 应用程序。  
   
@@ -66,4 +66,4 @@ ms.locfileid: "36989582"
    ```  
   
 ## <a name="see-also"></a>请参阅  
- [教程 2： 迁移中 Siebel 的 BizTalk 项目](../../adapters-and-accelerators/adapter-siebel/tutorial-2-migrating-biztalk-projects-in-siebel.md)
+ [教程 2：在 Siebel 的 BizTalk 项目迁移](../../adapters-and-accelerators/adapter-siebel/tutorial-2-migrating-biztalk-projects-in-siebel.md)

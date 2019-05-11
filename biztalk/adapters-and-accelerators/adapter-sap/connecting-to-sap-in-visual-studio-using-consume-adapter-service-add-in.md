@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f776f47e3a037a83d36e0d4c47518dc3efe03947
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 36897cf2102858fb43f79c88ea24dc7954df3b75
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992726"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373592"
 ---
 # <a name="connecting-to-sap-in-visual-studio-using-consume-adapter-service-add-in"></a>Visual Studio 中使用连接到 SAP 使用适配器服务外接程序
 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]安装 WCF LOB 适配器 SDK 时会安装。 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]加载在计算机上安装的所有 WCF 自定义绑定。 若要连接到 SAP 系统使用基于 WCF 的[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]在 BizTalk 项目中，必须使用**sapbinding**。  
@@ -44,7 +44,7 @@ ms.locfileid: "36992726"
       | **模板**  | 单击**使用适配器服务**。 |
 
 
-   4. 单击 **“添加”**。 此时[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]会打开。  
+   4. 单击 **“添加”**。 [!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]随即打开。  
 
 2. 从**选择绑定**下拉列表中，选择**sapBinding**然后单击**配置**。  
 

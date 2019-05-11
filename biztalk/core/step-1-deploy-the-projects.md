@@ -1,5 +1,5 @@
 ---
-title: 步骤 1： 部署项目 |Microsoft Docs
+title: 第 1 步：将项目部署 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 44
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b25af8ee1095a5365fabd955f7185acbc79254db
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9d9a4fe56fe845ddbb98e4d19142fa732bbe250c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007550"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392858"
 ---
-# <a name="step-1-deploy-the-projects"></a>步骤 1：部署项目
+# <a name="step-1-deploy-the-projects"></a>第 1 步：将项目部署
 ![3 的第 1 步](../adapters-and-accelerators/adapter-oracle-database/media/step-1of3.gif "Step_1of3")  
   
- **完成时间：** 5 分钟  
+ **若要完成的时间：** 5 分钟  
   
- **目标：** 在此步骤中，部署了 EAISchemas 和 EAIOrchestration 项目。  
+ **目标：** 在此步骤中，你部署了 EAISchemas 和 EAIOrchestration 项目。  
   
- **目的：** 时部署项目或解决方案在 Visual Studio 中的，程序集是自动生成并部署到指定的应用程序。 在此过程中，程序集连同它所包含的业务流程、架构和映射（称为“项目”）将导入本地 BizTalk 管理数据库，并在该数据库中与指定的应用程序建立关联。  
+ **目的：** 在部署项目或 Visual Studio 中的解决方案时，程序集是自动生成并部署到指定的应用程序。 作为此过程的一部分，以及业务流程、 架构和映射，它包含 （称为"项目"） 的程序集是导入本地 BizTalk 管理数据库，数据库中与指定的应用程序相关联。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
   
 - [第 1 课：定义架构和映射](../core/lesson-1-define-schemas-and-a-map.md)  
   
@@ -39,7 +39,7 @@ ms.locfileid: "37007550"
 - 使用管理权限运行 Visual Studio
 
 > [!TIP]
-> 您可以下载所需的教程文件位于[教程 1： 企业应用程序集成](https://www.microsoft.com/download/details.aspx?id=22793)。
+> 您可以下载所需的教程文件在[教程 1:企业应用程序集成](https://www.microsoft.com/download/details.aspx?id=22793)。
 
 ## <a name="open-the-solution-with-administrative-rights"></a>使用管理权限打开的解决方案  
   
@@ -51,9 +51,9 @@ ms.locfileid: "37007550"
   
 4. 在中**打开项目**对话框中，浏览到**EAISolution.sln**项目解决方案文件，然后单击**打开**。  
   
-   部署过程要求程序集是强签名的。  必须通过将该项目与一个强名称程序集密钥文件相关联来签名你的程序集。  此文件包含在教程文件中。  
+   部署过程要求程序集强签名。  必须将项目与一个强名称程序集密钥文件相关联来签名你的程序集。  此文件包含在教程文件中。  
   
-   BizTalk 应用程序是 BizTalk Server 的一项功能，可使你更快、更轻松地对 BizTalk Server 业务解决方案进行部署、管理和故障排除。 BizTalk 应用程序是 BizTalk Server 业务解决方案中使用的项（称为“项目”）的逻辑分组。 可为项目指定应用程序名。  部署过程会自动创建新的应用程序如果不存在具有指定的名称。  
+   BizTalk 应用程序是一项功能会更加快速、 更轻松地部署、 管理和故障排除 BizTalk Server 业务解决方案的 BizTalk Server。 BizTalk 应用程序是称为"项目，"BizTalk Server 业务解决方案中使用的项的逻辑分组。 我们可以指定一个项目的应用程序名称。  部署过程会自动创建新的应用程序如果不存在具有指定的名称。  
   
 ## <a name="configure-and-deploy-the-projects"></a>配置和部署项目  
   
@@ -69,7 +69,7 @@ ms.locfileid: "37007550"
   
 6.  从下拉列表右侧的框中**重新部署**，选择**True**。  
   
-7.  在解决方案资源管理器中右键单击**EAISchemas**，然后单击**部署**。  “输出”窗口应显示：  
+7.  在解决方案资源管理器中右键单击**EAISchemas**，然后单击**部署**。  输出窗口应显示：  
   
     ```  
     ========== Build: 1 succeeded or up-to-date, 0 failed, 0 skipped ==========  
@@ -79,11 +79,11 @@ ms.locfileid: "37007550"
   
 8.  重复步骤 1 至 7 以部署 EAIOrchestration 项目。  
   
-## <a name="what-did-i-just-do"></a>内容回顾  
+## <a name="what-did-i-just-do"></a>我只需做了什么？  
  在此步骤中，你已部署了 EAISchemas 和 EAIOrchestration 项目。  
   
 ## <a name="next-steps"></a>后续步骤  
- 创建物理端口，然后将其绑定到业务流程的逻辑端口。  
+ 创建物理端口，并将其绑定到业务流程的逻辑端口。  
   
- [步骤 2： 配置并启动应用程序](../core/step-2-configure-and-start-the-application1.md)   
+ [步骤 2：配置并启动应用程序](../core/step-2-configure-and-start-the-application1.md)   
  [步骤 3：测试解决方案](../core/step-3-test-the-solution2.md)

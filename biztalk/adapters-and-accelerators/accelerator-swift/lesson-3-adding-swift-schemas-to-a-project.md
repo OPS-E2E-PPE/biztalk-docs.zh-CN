@@ -1,5 +1,5 @@
 ---
-title: 第 3 课： 将 SWIFT 架构添加到项目 |Microsoft Docs
+title: 第 3 课：将 SWIFT 架构添加到项目 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3fcaa7f9af0dd802f457f84d7661f92bcdf08157
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ba000b90196fb625981244420269274804c24836
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982038"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530344"
 ---
-# <a name="lesson-3-adding-swift-schemas-to-a-project"></a>第 3 课： 将 SWIFT 架构添加到项目
+# <a name="lesson-3-adding-swift-schemas-to-a-project"></a>第 3 课：将 SWIFT 架构添加到项目
 现在，有一个解决方案和新项目时，您可以将项添加到项目。 您添加的第一项是 MT103 SWIFT 付款消息的架构。 当选择架构模板时，BizTalk 编辑器中启动。  
   
-### <a name="to-add-a-new-schema-to-the-project"></a>向项目添加新架构  
+### <a name="to-add-a-new-schema-to-the-project"></a>若要向项目添加新架构  
   
 1. 在解决方案资源管理器中右键单击**swift 架构**项目，指向**添加**，然后单击**现有项**。  
   
@@ -52,4 +52,4 @@ ms.locfileid: "36982038"
   
 8. 上**文件**菜单上，单击**全部保存**以保存所做的更改。  
   
-   请继续执行[第 4 课： 生成和部署程序集](../../adapters-and-accelerators/accelerator-swift/lesson-4-building-and-deploying-the-assembly.md)。
+   请继续执行[第 4 课：生成和部署程序集](../../adapters-and-accelerators/accelerator-swift/lesson-4-building-and-deploying-the-assembly.md)。

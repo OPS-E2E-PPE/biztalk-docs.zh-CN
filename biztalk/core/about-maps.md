@@ -19,28 +19,28 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cd27793be4f1b1d9fd2b404f9a2a3a678b7622b2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 64b7a2e7f89e927b4759ea814f341684195273e5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966278"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362339"
 ---
 # <a name="about-maps"></a>有关地图
-通过 BizTalk 映射器，可以使用链接和 functoid 在输入架构和输出架构之间定义关系。 链接定义了记录或字段的直接数据复制。 链接可以直接连接到另一架构中的项，也可以构成指向 functoid 的连接。 functoid 可以执行更加复杂的数据操作，例如：  
+使用 BizTalk 映射器，通过使用链接和 functoid 定义输入和输出架构之间的关系。 链接定义记录或字段的直接数据的复制。 链接可以直接连接到其他架构中的项或也可以构成指向 functoid 的连接。 Functoid 可以执行更复杂的数据操作，如：  
   
-- 将源架构中的两个字段的值相加，然后将结果复制到目标架构。  
+- 在源架构并将结果复制到目标架构中添加两个字段的值。  
   
 - 将字符转换为 ASCII 格式。  
   
-- 返回重复记录中某个字段的平均值，然后将结果复制到目标架构中的字段。  
+- 在重复记录并将结果复制到目标架构中的字段中返回字段的平均值。  
   
-  BizTalk 映射器使用扩展名为 .btm 的文件存储映射。 该文件保存了映射的有关设计信息：表示 functoid 的图标的位置、架构项和 functoid 之间的链接以及有关该映射的其他信息。 在构建或编译映射时，BizTalk 映射器可以将该映射的有关信息转换为相应的可扩展样式表转换 (XSLT) 样式表。  
+  BizTalk 映射器将映射存储在扩展名为.btm 的文件中。 该文件将保存该映射的有关设计信息 — 的图标表示 functoid、 架构项和 functoid 之间的链接的位置和该映射的有关其他信息。 当生成或编译映射时，BizTalk 映射器将相应的可扩展语言样式表转换 (XSLT) 样式表转换为该映射的有关信息。  
   
 > [!NOTE]
->  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]编译器中的单个项目的所有字符串的总大小具有 16 兆字节的限制。 而编译 BizTalk 项目，编译器将序列化架构、 映射和业务流程创建程序集，而这会增大可能会超出此限制的所有字符串的总大小。 若要解决此问题，您可以通过将架构和/或映射放入不同的 Biztalk 项目（通常在同一个解决方案下）以对您的项目进行重新组织，以便使每个项目中的所有字符串的总大小小于 16 MB。  
+>  [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]编译器中的单个项目的所有字符串的总大小具有 16 兆字节的限制。 而编译 BizTalk 项目，编译器将序列化架构、 映射和业务流程创建程序集，而这会增大可能会超出此限制的所有字符串的总大小。 若要解决此问题，您可以通过重新组织你的项目将架构和/或映射放入不同的 Biztalk 项目 （通常情况下，相同的解决方案） 下,，每个项目中的所有字符串的总大小小于 16 MB。  
   
- 所创建的映射可以用于转换或翻译数据，这些映射可以特定于单个贸易合作伙伴，也可以用于多个贸易合作伙伴。 本部分中的主题介绍了映射架构中所涉及的概念。 有关地图的背景信息，请参阅[映射](../core/maps.md)。  
+ 您创建的映射可以转换或翻译数据，并且它们可以是特定于单个贸易合作伙伴也可以用于多个贸易合作伙伴。 在本部分中的主题提供针对映射架构中所涉及的概念的介绍。 有关地图的背景信息，请参阅[映射](../core/maps.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
   

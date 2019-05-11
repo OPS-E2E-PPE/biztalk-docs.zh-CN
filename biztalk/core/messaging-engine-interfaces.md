@@ -1,5 +1,5 @@
 ---
-title: 消息传送引擎接口 |Microsoft 文档
+title: 消息引擎接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a135505240e94fb42e5810a3e7ac71d4c99c34a8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 08b8d795b6df72f3e555f527e3d995cab1d288e8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263285"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394530"
 ---
-# <a name="messaging-engine-interfaces"></a>消息传递引擎接口
+# <a name="messaging-engine-interfaces"></a>消息引擎接口
 适配器可以使用三种公共接口来允许与消息引擎的交互。 下面几部分将概要介绍这些公共接口。  
   
 ## <a name="ibttransportproxy"></a>IBTTransportProxy  

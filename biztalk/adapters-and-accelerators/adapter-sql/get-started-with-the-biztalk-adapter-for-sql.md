@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ee7f6a4942d1ea6980850cbbbdc5336b7a01cffc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 53a5021825d7e707b0f7f63935145986252ddc32
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996854"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369413"
 ---
 # <a name="get-started-with-the-biztalk-adapter-for-sql"></a>开始使用的 BizTalk 适配器进行 SQL
 
@@ -58,4 +58,4 @@ ms.locfileid: "36996854"
   
 -   [SQL 适配器教程](../../adapters-and-accelerators/adapter-sql/sql-adapter-tutorials.md)  
   
--   [方面的常见问题](../../adapters-and-accelerators/adapter-sql/sql-adapter-faqs.md)
+-   [常见问题解答](../../adapters-and-accelerators/adapter-sql/sql-adapter-faqs.md)

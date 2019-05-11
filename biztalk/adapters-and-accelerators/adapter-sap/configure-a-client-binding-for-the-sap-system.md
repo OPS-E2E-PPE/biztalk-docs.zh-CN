@@ -1,5 +1,5 @@
 ---
-title: 配置客户端绑定 SAP 系统 |Microsoft 文档
+title: 配置客户端绑定为 SAP 系统 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,22 +16,22 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e1e9a4f84dbf98a17b2c1a918e30ab85b8e86c13
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 6788d735a1c2d91937473661365e7da393426b65
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25963851"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373962"
 ---
-# <a name="configure-a-client-binding-for-the-sap-system"></a>配置客户端绑定 SAP 系统
-在你生成 WCF 客户端类后，可以创建一个 WCF 客户端 （实例） 并调用其方法来使用[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]。 有关如何生成操作的 WCF 客户端类和帮助程序代码，[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]公开，请参阅[生成 WCF 客户端或 SAP 解决方案项目关联的 WCF 服务协定](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)。  
+# <a name="configure-a-client-binding-for-the-sap-system"></a>配置客户端 SAP 系统的绑定
+生成 WCF 客户端类后，您可以创建 WCF 客户端 （实例） 并调用其方法来使用[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]。 有关如何生成操作的 WCF 客户端类和帮助程序代码的信息的[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]公开，请参阅[生成 WCF 客户端或 SAP 解决方案项目的 WCF 服务约定](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)。  
   
- 若要创建 WCF 客户端，必须指定终结点地址和绑定。 终结点地址必须包含有效的 SAP 连接 URI，并且绑定必须 SAP 绑定的一个实例 (**SAPBinding**)。 有关 SAP 连接 URI 的详细信息，请参阅[创建 SAP 系统连接 URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)。  
+ 若要创建 WCF 客户端，必须指定一个终结点地址和绑定。 终结点地址必须包含有效的 SAP 连接 URI，并且该绑定必须是 SAP 绑定的一个实例 (**SAPBinding**)。 有关 SAP 连接 URI 的详细信息，请参阅[创建 SAP 系统连接 URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)。  
   
- 在你的代码或配置文件中，可以指定 SAP 绑定和终结点地址。 当你使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]若要生成 WCF 客户端类，创建配置文件 (app.config) 还为你的项目。 此文件包含反映的绑定属性和连接信息 （除凭据） 时连接到 SAP 系统，以及使用指定的配置设置[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。  
+ 在代码中或在配置文件中，可以指定 SAP 绑定和终结点地址。 当你使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]生成 WCF 客户端类，创建配置文件 (app.config) 还为你的项目。 此文件包含反映的绑定属性和连接信息 （除了凭据） 时连接到 SAP 系统与指定的配置设置[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。  
   
 ## <a name="specifying-the-binding-and-endpoint-address-in-code"></a>在代码中指定的绑定和终结点地址  
- 下面的代码演示如何通过在代码中指定的绑定和终结点地址创建 WCF 客户端。 很好的做法，使用指定的 SAP 系统凭据**ClientCredentials**的 WCF 客户端而不是连接的终结点地址为提供的 URI 中的属性。  
+ 下面的代码演示如何通过在代码中指定的绑定和终结点地址创建 WCF 客户端。 它是通过使用指定的 SAP 系统凭据的好办法**ClientCredentials**的 WCF 客户端，而不是连接提供的终结点地址 URI 中的属性。  
   
 ```  
 // A WCF client that targets an RFC is created  
@@ -48,7 +48,7 @@ rfcClient.Open();
 ```  
   
 ## <a name="specifying-the-binding-and-endpoint-address-in-a-configuration-file"></a>在配置文件中指定的绑定和终结点地址  
- 下面的代码演示如何通过 app.config 文件中指定的绑定和终结点地址创建 WCF 客户端。  
+ 下面的代码演示如何通过在 app.config 文件中指定的绑定和终结点地址创建 WCF 客户端。  
   
 ```  
 // A WCF client that targets an RFC is created  
@@ -61,7 +61,7 @@ rfcClient.ClientCredentials.UserName.Password = "YourPassword";
 rfcClient.Open();  
 ```  
   
- 下面的 XML 演示通过 EMP 表所创建的配置文件[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。 此文件包含在前面的示例中引用的客户端终结点配置。  
+ 下面的 XML 演示配置文件的 EMP 表创建的[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。 此文件包含在前面的示例中引用的客户端终结点配置。  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -88,12 +88,12 @@ rfcClient.Open();
 </configuration>  
 ```  
   
- 如果一个项目具有多个 WCF 客户端，将有多个客户端配置文件中定义的终结点条目。 WCF 客户端的每个条目将具有唯一的名称基于它的绑定配置和目标 SAP 系统项目 （如 Rfc 和 Trfc）;例如，"SAPBinding_Rfc"。 如果你连接多个项目中创建 WCF 客户端的时机，多个绑定配置条目将创建，一个用于每个连接。 这些绑定配置条目将被命名为按以下方式： SAPBinding1、 SAPBinding2，依次类推。 在特定的连接过程中创建的每个客户端终结点条目将引用在该连接过程中创建的绑定项。  
+ 如果一个项目具有多个 WCF 客户端，将有多个客户端配置文件中定义的终结点条目。 每个 WCF 客户端条目将具有唯一的名称基于其绑定配置和目标 SAP 系统项目 （如 Rfc 和 Trfc）;例如，"SAPBinding_Rfc"。 如果连接多个要在项目中创建 WCF 客户端的时间，多个绑定配置条目将创建，另一个用于每个连接。 将按以下方式命名这些绑定配置条目：SAPBinding1、 SAPBinding2，等等。 在特定的连接过程中创建每个客户端终结点条目将引用在该连接过程中创建的绑定项。  
   
 > [!IMPORTANT]
->  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]显示不同的 SAP 项目的相同的类型 （例如 RFC、 TRFC 和 IDOC） 为相同的服务协定的不同操作。 例如，两个不同的 Rfc、 RFC_EXAMPLE_A 和 RFC_EXAMPLE_B，同时不会出现在相同的服务协定 ("Rfc")。 这意味着同一 WCF 客户端类，将调用两个 Rfc **RfcClient**，并且将在相同的命名空间中声明两个 Rfc 的参数。 因此，你必须在相同期间生成 WCF 客户端中的两个 Rfc[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]会话 （连接），以避免在生成解决方案时遇到命名空间冲突。  
+>  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]显示相同类型 （如 RFC、 TRFC 和 IDOC） 的不同 SAP 项目作为相同的服务协定的不同操作。 例如，两个不同的 Rfc、 RFC_EXAMPLE_A 和 RFC_EXAMPLE_B，不会同时出现在相同的服务合同 ("Rfc")。 这意味着同一 WCF 客户端类，将调用这两个 Rfc **RfcClient**，并将在相同的命名空间中声明这两个 Rfc 的参数。 因此，必须在同一生成 WCF 客户端为这两个 Rfc[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]会话 （连接），以避免生成解决方案时遇到的命名空间冲突。  
   
-## <a name="see-also"></a>另请参阅  
-[开发使用 WCF 服务模型的 SAP 应用程序](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-service-model.md)   
- [生成 WCF 客户端或 SAP 解决方案项目关联的 WCF 服务协定](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)   
+## <a name="see-also"></a>请参阅  
+[开发 SAP 应用程序使用 WCF 服务模型](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-service-model.md)   
+ [生成 WCF 客户端或 WCF 服务约定的 SAP 解决方案项目](../../adapters-and-accelerators/adapter-sap/generate-a-wcf-client-or-a-wcf-service-contract-for-sap-solution-artifacts.md)   
  [创建 SAP 系统连接 URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)

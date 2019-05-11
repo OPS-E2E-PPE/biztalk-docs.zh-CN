@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cb28399887452688e084f5f2858745958fd85991
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 29e6bdb107a845682aae8d587ccaa619ac075a45
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993750"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367410"
 ---
 # <a name="use-performance-counters-with-the-sql-adapter"></a>使用 SQL 适配器的性能计数器
 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)] 客户端可以使用性能计数器来测量的适配器的性能。 [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装程序创建的性能计数器类别"[!INCLUDE[adaptersql](../../includes/adaptersql-md.md)]"以及适配器包安装。  

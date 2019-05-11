@@ -1,5 +1,5 @@
 ---
-title: 步骤 3： 创建 SharePoint 应用程序以从 Siebel 检索数据 |Microsoft Docs
+title: 步骤 3：创建 SharePoint 应用程序以从 Siebel 检索数据 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df6c92b371291f4359c4bbce5e16529700bcc0c8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6d6d70e1c2d876262ddab35720be4e6991d0374d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971862"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370538"
 ---
-# <a name="step-3-create-a-sharepoint-application-to-retrieve-data-from-siebel"></a>步骤 3： 创建 SharePoint 应用程序以从 Siebel 检索数据
+# <a name="step-3-create-a-sharepoint-application-to-retrieve-data-from-siebel"></a>步骤 3：创建 SharePoint 应用程序以从 Siebel 检索数据
 ![步骤 3，共 4 步](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-3of4.gif "Step_3of4")  
   
- **完成时间：** 15 分钟。  
+ **若要完成的时间：** 15 分钟。  
   
  **目标：** 现在必须通过使用 Business Data Catalog Definition Editor，创建将应用程序定义文件，并将其导入 Office SharePoint Server。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
   
--   您应创建了一个应用程序定义文件，如中所述[步骤 2： 为 Siebel 业务组件操作创建应用程序定义文件](../../adapters-and-accelerators/adapter-siebel/step-2-create-an-application-definition-file-for-siebel-business-component.md)。  
+-   您应创建了一个应用程序定义文件，如中所述[步骤 2:为 Siebel 业务组件操作创建应用程序定义文件](../../adapters-and-accelerators/adapter-siebel/step-2-create-an-application-definition-file-for-siebel-business-component.md)。  
   
 -   必须运行 Microsoft 单一登录服务。  
   
@@ -59,7 +59,7 @@ ms.locfileid: "36971862"
     4.  在管理企业应用程序定义页上，提供的值**显示名称**，**应用程序名称**，并**联系人电子邮件地址**字段。  
   
         > [!IMPORTANT]
-        >  有关**应用程序名称**字段中，请确保指定相同的 SSO 应用程序名称为指定**SecondarySsoApplicationId**时创建应用程序定义文件中，为变量中所述[步骤 2： 为 Siebel 业务组件操作创建应用程序定义文件](../../adapters-and-accelerators/adapter-siebel/step-2-create-an-application-definition-file-for-siebel-business-component.md)。  
+        >  有关**应用程序名称**字段中，请确保指定相同的 SSO 应用程序名称为指定**SecondarySsoApplicationId**时创建应用程序定义文件中，为变量中所述[步骤 2:为 Siebel 业务组件操作创建应用程序定义文件](../../adapters-and-accelerators/adapter-siebel/step-2-create-an-application-definition-file-for-siebel-business-component.md)。  
   
     5.  将其他字段保留为默认值，然后单击**确定**。  
   
@@ -70,7 +70,7 @@ ms.locfileid: "36971862"
   
  必须创建 SSP 时定义 Web 站点 请记住的端口号和你创建的站点地址。 你将导出到此站点的业务数据目录应用程序定义。  
   
- 有关创建 SSP 的详细信息，请参阅"一章概述： 创建和配置共享服务提供程序"处[ http://go.microsoft.com/fwlink/?LinkId=105119 ](http://go.microsoft.com/fwlink/?LinkId=105119)。  
+ 有关创建 SSP 的详细信息，请参阅"一章概述：创建和配置共享服务提供程序"处[ http://go.microsoft.com/fwlink/?LinkId=105119 ](http://go.microsoft.com/fwlink/?LinkId=105119)。  
   
 ## <a name="importing-the-application-definition-file"></a>导入应用程序定义文件  
  现在必须将应用程序定义文件导入 ssp。  
@@ -166,7 +166,7 @@ ms.locfileid: "36971862"
 8.  单击**退出编辑模式**从页面的右上角。  
   
 ## <a name="next-steps"></a>后续步骤  
- 通过从 Siebel 系统检索数据来测试 SharePoint 应用程序。 请参阅[步骤 4： 测试 SharePoint 应用程序](../../adapters-and-accelerators/adapter-oracle-ebs/step-4-test-your-sharepoint-application.md)。  
+ 通过从 Siebel 系统检索数据来测试 SharePoint 应用程序。 请参阅[步骤 4:测试 SharePoint 应用程序](../../adapters-and-accelerators/adapter-oracle-ebs/step-4-test-your-sharepoint-application.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [教程 1：在 SharePoint 站点上从 Siebel 系统提供数据](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)
+ [教程 1:在 SharePoint 站点上提供来自 Siebel 系统的数据](../../adapters-and-accelerators/adapter-siebel/tutorial-1-presenting-data-from-a-siebel-system-on-a-sharepoint-site.md)

@@ -1,5 +1,5 @@
 ---
-title: 使用 MQSeries 适配器 |Microsoft 文档
+title: 使用 MQSeries 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a7e774a951ad13f4c0c6b9050cfc03358114fb6f
-ms.sourcegitcommit: 32f380810b90b70e5df7be72a6a14988a747868e
+ms.openlocfilehash: 1e03454c28153df86296278ec3b573b60a02fdeb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2018
-ms.locfileid: "29710604"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395978"
 ---
 # <a name="using-the-mqseries-adapter"></a>使用 MQSeries 适配器
 
 ## <a name="overvew"></a>概述
-MQSeries 适配器服务组织需要与 BizTalk Server 的集成，并使用 MQSeries 服务器作为主消息传送系统。  
+MQSeries 适配器需要与 BizTalk Server 的集成，并将 MQSeries 服务器用作主要消息传送系统的组织提供服务。  
   
- 网络管理员可部署和配置该适配器。 软件开发人员可通过创建适配器组件来扩展功能。  
+ 网络管理员部署和配置适配器。 软件开发人员可以通过创建适配器组件来扩展功能。  
   
 > [!NOTE]
->  与 BizTalk Server 的适配器配置 MQSeries 可用于多台计算机。  
+>  对于多台计算机，可以使用 MQSeries 适配器与 BizTalk Server 配置。  
   
 ## <a name="next-steps"></a>后续步骤
   

@@ -15,12 +15,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: efe8faae6e29663be03d32483e6bafd1d6649269
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1b9a7f701fe5aafe1a9692f45fd826ea99d5c5a0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023387"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371489"
 ---
 # <a name="invoke-business-service-methods-using-biztalk-server-and-the-siebel-adapter"></a>调用业务服务方法使用 BizTalk Server 和 Siebel 适配器
 Siebel 业务服务是一系列可以在 Siebel 中直接调用的业务方法。 详细了解如何[!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]支持调用业务服务在 Siebel 系统中，请参阅[在 Siebel 业务服务上的操作](../../adapters-and-accelerators/adapter-siebel/operations-on-business-services-in-siebel.md)。 对于执行业务服务操作的消息的 SOAP 结构有关的详细信息，请参阅[业务服务操作的消息架构](../../adapters-and-accelerators/adapter-siebel/message-schemas-for-business-service-operations.md)。  
@@ -105,7 +105,7 @@ Siebel 业务服务是一系列可以在 Siebel 中直接调用的业务方法�
 ### <a name="adding-ports"></a>添加端口  
  请确保为每个逻辑端口中指定以下属性。 中列出的名称*端口*列是在业务流程中显示的端口的名称。  
   
-|端口|属性|  
+|Port|属性|  
 |----------|----------------|  
 |FileIn|-设置**标识符**到*FileIn*<br />-设置**类型**到*FileInType*<br />-设置**通信模式**到*单向*<br />-设置**通信方向**到*接收*|  
 |LOBPort|-设置**标识符**到*LOBPort*<br />-设置**类型**到*LOBPortType*<br />-设置**通信模式**到*请求-响应*<br />-设置**通信方向**到*发送接收*|  

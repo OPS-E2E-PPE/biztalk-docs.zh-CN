@@ -13,12 +13,12 @@ caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2bc00f1b22777829b314ccd1171cbc7fb6b4e5ff
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f756a983dcdd8753b55bca1844f1fea5527ee692
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972814"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375819"
 ---
 # <a name="develop-your-oracle-e-business-suite-applications"></a>开发 Oracle E-business Suite 应用程序
 
@@ -39,7 +39,7 @@ ms.locfileid: "36972814"
   
 - 提供了指向包含有关执行任务使用所选的方法的信息的主题 ([!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，WCF 服务模型或 WCF 通道模型)。  
   
-|运算|BizTalk Server|WCF 服务模型|WCF 通道模型|  
+|操作|BizTalk Server|WCF 服务模型|WCF 通道模型|  
 |---|---|---|---|  
 |对界面表和视图执行操作 | [插入、 更新、 删除或选择对界面表和界面视图与 Oracle E-business Suite](../../adapters-and-accelerators/adapter-oracle-ebs/insert-update-delete-or-select-on-interface-tables-and-views-with-oracle-ebs.md) |[插入、 更新、 删除或选择对界面表和视图使用 WCF 服务模型的操作](../../adapters-and-accelerators/adapter-oracle-ebs/insert-update-delete-select-on-interface-tables-and-views-with-a-wcf-service.md)|[Oracle E-business Suite 使用 WCF 通道模型中运行插入操作在界面表](../../adapters-and-accelerators/adapter-oracle-ebs/insert-on-an-interface-table-in-oracle-ebs-using-the-wcf-channel-model.md)|  
 |执行对表和视图包含大型数据类型的操作 | [完成对表包含 Oracle E-business Suite 使用 WCF 服务模型中的大型数据类型的操作](../../adapters-and-accelerators/adapter-oracle-ebs/run-table-operations-with-large-data-types-in-oracle-ebs-using-a-wcf-service.md) |[完成对表包含 Oracle E-business Suite 使用 WCF 服务模型中的大型数据类型的操作](../../adapters-and-accelerators/adapter-oracle-ebs/run-table-operations-with-large-data-types-in-oracle-ebs-using-a-wcf-service.md)||  

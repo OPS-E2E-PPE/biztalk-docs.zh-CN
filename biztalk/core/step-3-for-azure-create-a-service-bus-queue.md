@@ -1,5 +1,5 @@
 ---
-title: （适用于 Azure) 中的步骤 3： 创建 Service Bus 队列 |Microsoft 文档
+title: 步骤 3 （适用于 Azure):创建服务总线队列 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,27 +12,27 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d55b3222798edb245000cdde8de52565c39758a7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f7fe6744ab7f12b539efb9a91627abe9111373e4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277333"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392615"
 ---
-# <a name="step-3-for-azure-create-a-service-bus-queue"></a>（适用于 Azure) 中的步骤 3： 创建 Service Bus 队列
-在本主题中，你将创建一个 Service Bus 队列，在使用 EDI 协议处理并转换 X12 销售订单后会将其发送至该队列。  
+# <a name="step-3-for-azure-create-a-service-bus-queue"></a>步骤 3 （适用于 Azure):创建服务总线队列
+在本主题中，你创建服务总线队列到 X12 销售订单发送后它处理并转换使用 EDI 协议。  
   
-### <a name="to-create-a-service-bus-queue"></a>创建 Service Bus 队列的步骤  
+### <a name="to-create-a-service-bus-queue"></a>若要创建服务总线队列  
   
 1.  登录到[Windows Azure CTP 管理门户](http://go.microsoft.com/fwlink/p/?LinkId=202886)使用你的 Microsoft 帐户。  
   
-2.  在该页的较低的左侧，单击**AppFabric**。  
+2.  在较低的页的左侧，单击**AppFabric**。  
   
-3.  展开左侧树中的服务，展开你的订阅，然后单击你必定已创建的一个命名空间。 如果你已没有命名空间，请参阅[如何： 创建或修改 Windows Azure CTP 服务 Namespace](http://msdn.microsoft.com/library/windowsazure/hh697699.aspx)。  
+3.  在左侧树中展开服务，展开你的订阅，然后单击你必须已创建的命名空间。 如果你尚未拥有一个命名空间，请参阅[如何：创建或修改 Windows Azure CTP 服务 Namespace](http://msdn.microsoft.com/library/windowsazure/hh697699.aspx)。  
   
-4.  若要创建队列单击**新队列**从**管理实体**从页面顶部的工具栏的类别。  
+4.  若要创建一个队列依次单击**新队列**从**管理实体**在页面顶部工具栏中的类别。  
   
-5.  在**新队列**对话框框中，输入队列的名称。 对于本教程中，输入作为名称`queueordersedi`，然后单击**确定**。 在指定此名称为的 EDI 协议的一部分中创建[(为 Azure) 的步骤 2： 创建 EDI 协议](../core/step-2-for-azure-create-an-edi-agreement.md)。  
+5.  在中**新队列**对话框框中，输入队列的名称。 对于本教程中，输入作为名称`queueordersedi`，然后单击**确定**。 此名称指定为一部分的 EDI 协议中创建[步骤 2 (用于 Azure):创建 EDI 协议](../core/step-2-for-azure-create-an-edi-agreement.md)。  
   
-## <a name="see-also"></a>另请参阅  
- [教程 4： 创建使用 BizTalk Server 2013 的混合应用程序](../core/tutorial-4-creating-a-hybrid-application-using-biztalk-server-2013.md)
+## <a name="see-also"></a>请参阅  
+ [教程 4：创建混合应用程序使用 BizTalk Server 2013](../core/tutorial-4-creating-a-hybrid-application-using-biztalk-server-2013.md)

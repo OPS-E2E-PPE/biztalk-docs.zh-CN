@@ -15,12 +15,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed3fab4973950b70a49efc90e1bc947561e602c6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7b8f305d168c0435a760837a0295204875206130
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983494"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370426"
 ---
 # <a name="troubleshoot-installation-issues-with-the-siebel-adapter"></a>使用 Siebel 适配器进行故障排除安装问题：
 Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装将复制的计算机上的产品二进制文件并注册每个适配器的绑定。 本部分讨论故障排除技术来解决安装错误。  

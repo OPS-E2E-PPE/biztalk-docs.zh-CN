@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: baebf2a3f1723265612974f4728797bca7a070a9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4795d8579f9fb2ac5aceac3c208db3676a82840d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989744"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373273"
 ---
 # <a name="invoke-trfcs-in-sap-using-biztalk-server"></a>调用 Trfc SAP 使用 BizTalk Server 中
 事务性远程函数调用 (Trfc) 保证 SAP 系统上的 RFC 有且只有一个时执行。 您可以调用任何显示的 Rfc[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]作为 tRFC。 调用 tRFC 是类似于调用 RFC (请参阅[调用中使用 BizTalk server 的 SAP 的 Rfc](../../adapters-and-accelerators/adapter-sap/invoke-rfcs-in-sap-using-biztalk-server.md)) 具有以下差异：  
@@ -150,7 +150,7 @@ TIDRequest.TransactionalRfcOperationIdentifier = xpath(Response,"string(/*[local
 ### <a name="adding-ports"></a>添加端口  
  请确保为每个逻辑端口中指定以下属性。 中列出的名称*端口*列是在业务流程中显示的端口的名称。  
   
-|端口|属性|  
+|Port|属性|  
 |----------|----------------|  
 |FileIn|-设置**标识符**到*FileIn*<br />-设置**类型**到*FileInPortType*<br />-设置**通信模式**到*单向*<br />-设置**通信方向**到*接收*|  
 |tRFC_Port|-设置**标识符**到*tRFC_Port*<br />-设置**类型**到*tRFC_PortType*<br />-设置**通信模式**到*请求-响应*<br />-设置**通信方向**到*发送接收*|  

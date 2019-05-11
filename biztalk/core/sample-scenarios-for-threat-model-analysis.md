@@ -17,15 +17,15 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ce179e4496ee9be3f9a5d3a2d019128a56485813
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a1d376344c4164c76d6485d2a96ef951de79ea77
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023539"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393895"
 ---
 # <a name="sample-scenarios-for-threat-model-analysis"></a>威胁模型分析的示例方案
-本部分提供的步骤和结果的威胁模型分析 (TMA) 中标识的示例体系结构每个使用方案[适用于小型和中小型公司的示例体系结构](../core/sample-architectures-for-small-medium-sized-companies.md)。 本部分的用途是为您显示 TMA 的步骤。 这有助于您了解 TMA 的工作方式，并为您介绍对示例结构标识的潜在威胁分类以及建议您减少这些威胁的影响的方式。  
+本部分提供的步骤和结果的威胁模型分析 (TMA) 中标识的示例体系结构每个使用方案[适用于小型和中小型公司的示例体系结构](../core/sample-architectures-for-small-medium-sized-companies.md)。 本部分的目的是说明 TMA 的步骤。 这有助于您了解 TMA 的工作方式，并为您介绍的潜在威胁分类的示例体系结构和我们建议你降低其影响。  
   
  我们将分类基于不同的适配器可以使用与 Microsoft 的使用方案[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，以及如何使用企业单一登录。  
   
@@ -45,12 +45,12 @@ ms.locfileid: "37023539"
   
 -   [示例方案的背景信息](../core/background-information-for-sample-scenarios.md)  
   
--   [示例 TMA：HTTP 和 SOAP 适配器](../core/sample-tma-http-and-soap-adapters.md)  
+-   [示例 TMA:HTTP 和 SOAP 适配器](../core/sample-tma-http-and-soap-adapters.md)  
   
--   [示例 TMA：BizTalk 消息队列适配器](../core/sample-tma-biztalk-message-queuing-adapter.md)  
+-   [示例 TMA:BizTalk 消息队列适配器](../core/sample-tma-biztalk-message-queuing-adapter.md)  
   
--   [示例 TMA：文件适配器](../core/sample-tma-file-adapter.md)  
+-   [示例 TMA:文件适配器](../core/sample-tma-file-adapter.md)  
   
--   [示例 TMA：FTP 适配器](../core/sample-tma-ftp-adapter.md)  
+-   [示例 TMA:FTP Adapter](../core/sample-tma-ftp-adapter.md)  
   
--   [示例 TMA：企业单一登录](../core/sample-tma-enterprise-single-sign-on.md)
+-   [示例 TMA:企业单一登录](../core/sample-tma-enterprise-single-sign-on.md)

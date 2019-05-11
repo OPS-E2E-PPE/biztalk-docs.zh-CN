@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 15ab173c8950e3a86d8f68abf5e84d821b2b38d1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3524777dd23f6b39253039bb90bdda95f228fad0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996526"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375722"
 ---
 # <a name="configure-a-physical-port-binding-using-a-port-binding-file-to-oracle-e-business-suite"></a>配置使用到 Oracle E-business Suite 的端口绑定文件的物理端口绑定
 当你使用[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]生成 Oracle E-business Suite 中，项目的架构文件以外的元数据[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]还会生成端口绑定文件。 您可以将此绑定文件导入 BizTalk 应用程序，以创建物理发送端口或接收端口。 有关导入绑定文件的说明，请参阅[Oracle E-business Suite 的重用适配器绑定](../../adapters-and-accelerators/adapter-oracle-ebs/reuse-adapter-bindings-with-oracle-e-business-suite.md)。 如果此绑定文件导入，您无需手动创建物理发送或接收端口。  
@@ -56,7 +56,7 @@ ms.locfileid: "36996526"
   
 - 默认情况下，出站操作的端口绑定文件始终包含定义为双向发送端口。 导入 BizTalk 应用程序中的此文件时，它会创建一个双向发送端口。 但是，您可能有一个单向发送端口业务流程。 因此，当您配置此类业务流程，并使用通过导入绑定文件创建的端口，端口不可用在列表中。 发生这种情况是因为业务流程的一部分创建的逻辑端口是单向端口，而在业务流程中创建的物理端口为双向端口。 在这种情况下，可以编辑绑定文件以进行以下更改：  
   
-  |若要了解|操作|  
+  |为此|操作|  
   |--------------|-------------|  
   |若要编辑该端口绑定文件，以配置一个单向发送端口|1.在以下摘录中，更改的值**IsTwoWay**属性设置为**false**。 最初，此值设置为 **，则返回 true**。<br />     `<SendPort Name="port_name" IsStatic="true" IsTwoWay="false " BindingOption="0">`<br />2.注释掉下面的摘录：<br />     `<ReceivePipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLReceive"   FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLReceive,   Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral,   PublicKeyToken= token" Type="1" TrackingOption="None" Description=""/>`<br />     `<ReceivePipelineData xsi:nil="true" />`|  
   

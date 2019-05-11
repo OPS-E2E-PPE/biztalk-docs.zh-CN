@@ -12,15 +12,15 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 867ea9be9d9e2cae0e167ec8c958d7d004730af8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bf152826fa5e2e0873d0544236fa73c110c4536d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007534"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393514"
 ---
 # <a name="how-to-avoid-disk-contention"></a>如何避免磁盘争用
-BizTalk Server 设计为永久性系统。 对于高吞吐量方案中，MessageBox 和 BizTalk 跟踪数据库可能会遇到严重的争用现象。 缓慢的磁盘速度会进一步加重这种争用状况。 如果是磁盘速度缓慢 （大于平均的平均时间Disk sec/Read 和平均值。Disk sec/Write)，它可能会导致 SQL Server 保存锁定更长 （高锁定等待时间和高锁定超时）。 此操作，反过来，可能导致 MessageBox 表 （Spool 和应用程序队列） 不断增长，引起数据库膨胀和限制。 这种情况下会最终导致较低的整体稳定吞吐量。  
+BizTalk Server 设计为永久性系统。 对于高吞吐量方案中，MessageBox 和 BizTalk 跟踪数据库可能会遇到严重的争用现象。 这种争用可以将变得更加严重缓慢的磁盘。 如果是磁盘速度缓慢 （大于平均的平均时间Disk sec/Read 和平均值。Disk sec/Write)，它可能会导致 SQL Server 保存锁定更长 （高锁定等待时间和高锁定超时）。 此操作，反过来，可能导致 MessageBox 表 （Spool 和应用程序队列） 不断增长，引起数据库膨胀和限制。 这种情况下会最终导致较低的整体稳定吞吐量。  
   
 > [!NOTE]  
 >  有关如何确定服务器是否存在磁盘瓶颈的信息，请参阅[Windows 性能监视器](http://go.microsoft.com/fwlink/?LinkID=204007)(http://go.microsoft.com/fwlink/?LinkID=204007)。 Windows 性能监视器是 Microsoft 管理控制台 (MMC) 管理单元提供用于分析系统性能的工具。  
@@ -34,7 +34,7 @@ BizTalk Server 设计为永久性系统。 对于高吞吐量方案中，Message
 |请考虑为 TEMPDB 数据库中，分配多个文件，这是因为这将显著减少磁盘争用并跨多个数据文件分散负载。|[预配置数据库 Optimizations2](../technical-guides/pre-configuration-database-optimizations2.md)|  
 |请考虑将 MessageBox 数据库是独立于 BizTalk 跟踪数据库的专用服务器上。|[配置后数据库 Optimizations2](../technical-guides/post-configuration-database-optimizations2.md)|  
 |将 MSDTC 日志文件目录分配到单独的专用驱动器。|[优化操作系统性能](../technical-guides/optimizing-operating-system-performance.md)|  
-|如果因 PageFile 或 MSDTC 日志而在本地驱动器上出现争用情况，请尝试将 PageFile 和/或 MSDTC 日志移到不同的驱动器上。|[避免瓶颈的最佳做法](../technical-guides/best-practices-for-avoiding-bottlenecks.md)|  
+|如果由于页面文件或 MSDTC 日志的本地驱动器上的争用，请尝试将 PageFile 和/或 MSDTC 日志移到单独的驱动器。|[避免瓶颈的最佳做法](../technical-guides/best-practices-for-avoiding-bottlenecks.md)|  
 |优化写入操作的跟踪数据库。|[如何找出跟踪数据库数据库的瓶颈](../technical-guides/how-to-identify-bottlenecks-in-the-tracking-database.md)|  
 |优化 MessageBox 数据库进行读取和写入操作。|[如何找出 MessageBox 数据库 1 的瓶颈](../technical-guides/how-to-identify-bottlenecks-in-the-messagebox-database1.md)|  
 |如果 BizTalk 主机实例使 CPU 负载饱和，请考虑将发送、 接收、 处理和跟踪到多个主机的功能。 这会配置系统，以便在单独的专用服务器来提高系统的整体吞吐量上运行的业务流程功能。|[优化 BizTalk Server 性能](../technical-guides/optimizing-biztalk-server-performance.md)|  
