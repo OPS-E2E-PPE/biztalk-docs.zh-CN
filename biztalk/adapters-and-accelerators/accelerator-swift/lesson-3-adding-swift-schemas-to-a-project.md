@@ -1,5 +1,5 @@
 ---
-title: 第 3 课： 将 SWIFT 架构添加到项目 |Microsoft Docs
+title: 第 3 课：将 SWIFT 架构添加到项目 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,41 +15,41 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3fcaa7f9af0dd802f457f84d7661f92bcdf08157
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ba000b90196fb625981244420269274804c24836
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982038"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530344"
 ---
-# <a name="lesson-3-adding-swift-schemas-to-a-project"></a><span data-ttu-id="f74af-102">第 3 课： 将 SWIFT 架构添加到项目</span><span class="sxs-lookup"><span data-stu-id="f74af-102">Lesson 3: Adding SWIFT Schemas to a Project</span></span>
-<span data-ttu-id="f74af-103">现在，有一个解决方案和新项目时，您可以将项添加到项目。</span><span class="sxs-lookup"><span data-stu-id="f74af-103">Now that you have a solution and a new project, you can add items to the project.</span></span> <span data-ttu-id="f74af-104">您添加的第一项是 MT103 SWIFT 付款消息的架构。</span><span class="sxs-lookup"><span data-stu-id="f74af-104">The first item you add is a schema for an MT103 SWIFT Payment message.</span></span> <span data-ttu-id="f74af-105">当选择架构模板时，BizTalk 编辑器中启动。</span><span class="sxs-lookup"><span data-stu-id="f74af-105">When you select the Schema template, BizTalk Editor starts.</span></span>  
+# <a name="lesson-3-adding-swift-schemas-to-a-project"></a><span data-ttu-id="f188d-102">第 3 课：将 SWIFT 架构添加到项目</span><span class="sxs-lookup"><span data-stu-id="f188d-102">Lesson 3: Adding SWIFT Schemas to a Project</span></span>
+<span data-ttu-id="f188d-103">现在，有一个解决方案和新项目时，您可以将项添加到项目。</span><span class="sxs-lookup"><span data-stu-id="f188d-103">Now that you have a solution and a new project, you can add items to the project.</span></span> <span data-ttu-id="f188d-104">您添加的第一项是 MT103 SWIFT 付款消息的架构。</span><span class="sxs-lookup"><span data-stu-id="f188d-104">The first item you add is a schema for an MT103 SWIFT Payment message.</span></span> <span data-ttu-id="f188d-105">当选择架构模板时，BizTalk 编辑器中启动。</span><span class="sxs-lookup"><span data-stu-id="f188d-105">When you select the Schema template, BizTalk Editor starts.</span></span>  
   
-### <a name="to-add-a-new-schema-to-the-project"></a><span data-ttu-id="f74af-106">向项目添加新架构</span><span class="sxs-lookup"><span data-stu-id="f74af-106">To add a new schema to the project</span></span>  
+### <a name="to-add-a-new-schema-to-the-project"></a><span data-ttu-id="f188d-106">若要向项目添加新架构</span><span class="sxs-lookup"><span data-stu-id="f188d-106">To add a new schema to the project</span></span>  
   
-1. <span data-ttu-id="f74af-107">在解决方案资源管理器中右键单击**swift 架构**项目，指向**添加**，然后单击**现有项**。</span><span class="sxs-lookup"><span data-stu-id="f74af-107">In Solution Explorer, right-click the **SWIFTSchemas** project, point to **Add**, and then click **Existing Item**.</span></span>  
+1. <span data-ttu-id="f188d-107">在解决方案资源管理器中右键单击**swift 架构**项目，指向**添加**，然后单击**现有项**。</span><span class="sxs-lookup"><span data-stu-id="f188d-107">In Solution Explorer, right-click the **SWIFTSchemas** project, point to **Add**, and then click **Existing Item**.</span></span>  
   
-2. <span data-ttu-id="f74af-108">在添加现有项-swift 架构对话框中，浏览到 **\<*驱动器*\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\<版本\>MessagePack\SWIFT Messages\A4SWIFT SRG\<版本\>\Base 架构**。</span><span class="sxs-lookup"><span data-stu-id="f74af-108">In the Add Existing Item-SWIFTSchemas dialog box, browse to **\<*drive*\>:\Program Files\Microsoft BizTalk Accelerator for SWIFT \<version\> MessagePack\SWIFT Messages\A4SWIFT-SRG\<version\>\Base Schemas**.</span></span>  
+2. <span data-ttu-id="f188d-108">在添加现有项-swift 架构对话框中，浏览到 **\<*驱动器*\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\<版本\>MessagePack\SWIFT Messages\A4SWIFT SRG\<版本\>\Base 架构**。</span><span class="sxs-lookup"><span data-stu-id="f188d-108">In the Add Existing Item-SWIFTSchemas dialog box, browse to **\<*drive*\>:\Program Files\Microsoft BizTalk Accelerator for SWIFT \<version\> MessagePack\SWIFT Messages\A4SWIFT-SRG\<version\>\Base Schemas**.</span></span>  
   
-3. <span data-ttu-id="f74af-109">选择**SWIFT 基本 Types.xsd**并**SWIFT 常见数据 Types.xsd**架构，并单击**添加**。</span><span class="sxs-lookup"><span data-stu-id="f74af-109">Select the **SWIFT Base Types.xsd** and the **SWIFT Common Data Types.xsd** schemas, and then click **Add**.</span></span>  
-  
-   > [!NOTE]
-   >  <span data-ttu-id="f74af-110">SWIFT 基本 Types.xsd 和 SWIFT 常见数据 Types.xsd 架构显示在解决方案资源管理器 swift 架构项目下。</span><span class="sxs-lookup"><span data-stu-id="f74af-110">The SWIFT Base Types.xsd and the SWIFT Common Data Types.xsd schemas appear in Solution Explorer under the SWIFTSchemas project.</span></span>  
-  
-4. <span data-ttu-id="f74af-111">在解决方案资源管理器中右键单击**swift 架构**项目，指向**添加**，然后单击**现有项**。</span><span class="sxs-lookup"><span data-stu-id="f74af-111">In Solution Explorer, right-click the **SWIFTSchemas** project, point to **Add**, and then click **Existing Item**.</span></span>  
-  
-5. <span data-ttu-id="f74af-112">在添加现有项-swift 架构对话框中，浏览到 **\<*驱动器*\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\<版本\>MessagePack\SWIFT Messages\A4SWIFT SRG\<版本\>\Category 1\MT103**文件夹。</span><span class="sxs-lookup"><span data-stu-id="f74af-112">In the Add Existing Item-SWIFTSchemas dialog box, browse to the **\<*drive*\>:\Program Files\Microsoft BizTalk Accelerator for SWIFT \<version\> MessagePack\SWIFT Messages\A4SWIFT-SRG\<version\>\Category 1\MT103** folder.</span></span>  
-  
-6. <span data-ttu-id="f74af-113">选择**MT103.xsd**架构中，并单击**添加**。</span><span class="sxs-lookup"><span data-stu-id="f74af-113">Select the **MT103.xsd** schema, and then click **Add**.</span></span>  
+3. <span data-ttu-id="f188d-109">选择**SWIFT 基本 Types.xsd**并**SWIFT 常见数据 Types.xsd**架构，并单击**添加**。</span><span class="sxs-lookup"><span data-stu-id="f188d-109">Select the **SWIFT Base Types.xsd** and the **SWIFT Common Data Types.xsd** schemas, and then click **Add**.</span></span>  
   
    > [!NOTE]
-   >  <span data-ttu-id="f74af-114">新的架构，MT103.xsd，将显示在解决方案资源管理器下 swift 架构项目。</span><span class="sxs-lookup"><span data-stu-id="f74af-114">The new schema, MT103.xsd, appears in Solution Explorer under the SWIFTSchemas project.</span></span>  
+   >  <span data-ttu-id="f188d-110">SWIFT 基本 Types.xsd 和 SWIFT 常见数据 Types.xsd 架构显示在解决方案资源管理器 swift 架构项目下。</span><span class="sxs-lookup"><span data-stu-id="f188d-110">The SWIFT Base Types.xsd and the SWIFT Common Data Types.xsd schemas appear in Solution Explorer under the SWIFTSchemas project.</span></span>  
   
-7. <span data-ttu-id="f74af-115">在解决方案资源管理器中双击**MT103.xsd**以便查看在 BizTalk 编辑器中的架构。</span><span class="sxs-lookup"><span data-stu-id="f74af-115">In Solution Explorer, double-click **MT103.xsd** to view the schema in BizTalk Editor.</span></span>  
+4. <span data-ttu-id="f188d-111">在解决方案资源管理器中右键单击**swift 架构**项目，指向**添加**，然后单击**现有项**。</span><span class="sxs-lookup"><span data-stu-id="f188d-111">In Solution Explorer, right-click the **SWIFTSchemas** project, point to **Add**, and then click **Existing Item**.</span></span>  
+  
+5. <span data-ttu-id="f188d-112">在添加现有项-swift 架构对话框中，浏览到 **\<*驱动器*\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT\<版本\>MessagePack\SWIFT Messages\A4SWIFT SRG\<版本\>\Category 1\MT103**文件夹。</span><span class="sxs-lookup"><span data-stu-id="f188d-112">In the Add Existing Item-SWIFTSchemas dialog box, browse to the **\<*drive*\>:\Program Files\Microsoft BizTalk Accelerator for SWIFT \<version\> MessagePack\SWIFT Messages\A4SWIFT-SRG\<version\>\Category 1\MT103** folder.</span></span>  
+  
+6. <span data-ttu-id="f188d-113">选择**MT103.xsd**架构中，并单击**添加**。</span><span class="sxs-lookup"><span data-stu-id="f188d-113">Select the **MT103.xsd** schema, and then click **Add**.</span></span>  
   
    > [!NOTE]
-   >  <span data-ttu-id="f74af-116">架构树 （左窗格） 和 XSD 视图 （右窗格） 显示在 BizTalk 编辑器中。</span><span class="sxs-lookup"><span data-stu-id="f74af-116">The schema tree (left pane) and XSD view (right pane) appear in BizTalk Editor.</span></span>  
+   >  <span data-ttu-id="f188d-114">新的架构，MT103.xsd，将显示在解决方案资源管理器下 swift 架构项目。</span><span class="sxs-lookup"><span data-stu-id="f188d-114">The new schema, MT103.xsd, appears in Solution Explorer under the SWIFTSchemas project.</span></span>  
   
-8. <span data-ttu-id="f74af-117">上**文件**菜单上，单击**全部保存**以保存所做的更改。</span><span class="sxs-lookup"><span data-stu-id="f74af-117">On the **File** menu, click **Save All** to save your changes.</span></span>  
+7. <span data-ttu-id="f188d-115">在解决方案资源管理器中双击**MT103.xsd**以便查看在 BizTalk 编辑器中的架构。</span><span class="sxs-lookup"><span data-stu-id="f188d-115">In Solution Explorer, double-click **MT103.xsd** to view the schema in BizTalk Editor.</span></span>  
   
-   <span data-ttu-id="f74af-118">请继续执行[第 4 课： 生成和部署程序集](../../adapters-and-accelerators/accelerator-swift/lesson-4-building-and-deploying-the-assembly.md)。</span><span class="sxs-lookup"><span data-stu-id="f74af-118">Proceed to [Lesson 4: Building and Deploying the Assembly](../../adapters-and-accelerators/accelerator-swift/lesson-4-building-and-deploying-the-assembly.md).</span></span>
+   > [!NOTE]
+   >  <span data-ttu-id="f188d-116">架构树 （左窗格） 和 XSD 视图 （右窗格） 显示在 BizTalk 编辑器中。</span><span class="sxs-lookup"><span data-stu-id="f188d-116">The schema tree (left pane) and XSD view (right pane) appear in BizTalk Editor.</span></span>  
+  
+8. <span data-ttu-id="f188d-117">上**文件**菜单上，单击**全部保存**以保存所做的更改。</span><span class="sxs-lookup"><span data-stu-id="f188d-117">On the **File** menu, click **Save All** to save your changes.</span></span>  
+  
+   <span data-ttu-id="f188d-118">请继续执行[第 4 课：生成和部署程序集](../../adapters-and-accelerators/accelerator-swift/lesson-4-building-and-deploying-the-assembly.md)。</span><span class="sxs-lookup"><span data-stu-id="f188d-118">Proceed to [Lesson 4: Building and Deploying the Assembly](../../adapters-and-accelerators/accelerator-swift/lesson-4-building-and-deploying-the-assembly.md).</span></span>

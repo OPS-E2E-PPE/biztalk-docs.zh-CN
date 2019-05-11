@@ -1,5 +1,5 @@
 ---
-title: 面向服务的解决方案 |Microsoft 文档
+title: 面向服务的解决方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -34,25 +34,25 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5a1c69d537469cc1c2a4d9d93cde37014b31daa8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 53712039f5aa64f85fddd1d18af121abb3bb2dbf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22271365"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393282"
 ---
-# <a name="service-oriented-solution"></a><span data-ttu-id="c8fc7-102">面向服务的解决方案</span><span class="sxs-lookup"><span data-stu-id="c8fc7-102">Service Oriented Solution</span></span>
-<span data-ttu-id="c8fc7-103">面向服务的解决方案显示如何将 BizTalk 应用程序展示为用作 Web Services 的服务、以及旧版应用程序可访问的表单。</span><span class="sxs-lookup"><span data-stu-id="c8fc7-103">The service oriented solution shows how to present a BizTalk application as a service that is available as a Web service and in forms accessible to legacy applications.</span></span> <span data-ttu-id="c8fc7-104">该解决方案还显示如何与作为 Web Services 的后端进程进行通信，以及如何从多个后端系统聚合响应。</span><span class="sxs-lookup"><span data-stu-id="c8fc7-104">The solution also shows how to communicate with back-end processes as Web services, as well as how to aggregate responses from multiple back-end systems.</span></span>  
+# <a name="service-oriented-solution"></a><span data-ttu-id="a6800-102">面向服务的解决方案</span><span class="sxs-lookup"><span data-stu-id="a6800-102">Service Oriented Solution</span></span>
+<span data-ttu-id="a6800-103">面向服务的解决方案演示如何提供一种服务，可为 Web 服务和可访问的旧版应用程序表单将 BizTalk 应用程序。</span><span class="sxs-lookup"><span data-stu-id="a6800-103">The service oriented solution shows how to present a BizTalk application as a service that is available as a Web service and in forms accessible to legacy applications.</span></span> <span data-ttu-id="a6800-104">该解决方案还显示如何与 Web 服务作为后端进程进行通信，以及如何聚合来自多个后端系统的响应。</span><span class="sxs-lookup"><span data-stu-id="a6800-104">The solution also shows how to communicate with back-end processes as Web services, as well as how to aggregate responses from multiple back-end systems.</span></span>  
   
- <span data-ttu-id="c8fc7-105">本部分对该解决方案进行了概括介绍，对模式和设计选项进行了详细说明，并提供了有关构建和运行该解决方案的信息。</span><span class="sxs-lookup"><span data-stu-id="c8fc7-105">The sections provide an overview of the solution, detailed explanations of the patterns and design choices, and information about building and running the solution.</span></span>  
+ <span data-ttu-id="a6800-105">各节概述了解决方案的模式和设计选项和有关生成和运行解决方案的信息的详细说明。</span><span class="sxs-lookup"><span data-stu-id="a6800-105">The sections provide an overview of the solution, detailed explanations of the patterns and design choices, and information about building and running the solution.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="c8fc7-106">这些部分中介绍的模式和指南旨在阐释一种针对特殊类型业务解决方案的方法。</span><span class="sxs-lookup"><span data-stu-id="c8fc7-106">The patterns and guidance documented in these sections are intended to illustrate an approach to a particular kind of business solution.</span></span> <span data-ttu-id="c8fc7-107">模式是一些可应用于特定问题的简单机制并且通常结合了其他模式。</span><span class="sxs-lookup"><span data-stu-id="c8fc7-107">Patterns are simple mechanisms that are meant to be applied to a specific problem and are usually combined with other patterns.</span></span> <span data-ttu-id="c8fc7-108">它们并非是要插入到某个应用程序之中。</span><span class="sxs-lookup"><span data-stu-id="c8fc7-108">They are not meant to be plugged into an application.</span></span> <span data-ttu-id="c8fc7-109">示例代码按“原样”提供并且不应将其用于生产目的。</span><span class="sxs-lookup"><span data-stu-id="c8fc7-109">Example code is provided "as is" and is not intended for production use.</span></span> <span data-ttu-id="c8fc7-110">提供示例代码的目的仅在于描述模式，因此并未包含诸如异常处理、日志记录、安全性和有效性验证之类的额外代码。</span><span class="sxs-lookup"><span data-stu-id="c8fc7-110">It is only intended to illustrate the pattern and therefore does not include extra code, such as exception handling, logging, security, and validation.</span></span> <span data-ttu-id="c8fc7-111">Microsoft 不支持将按“原样”提供的示例代码部署到生产环境中。</span><span class="sxs-lookup"><span data-stu-id="c8fc7-111">Microsoft does not support deploying the example code "as is" to production.</span></span>  
+>  <span data-ttu-id="a6800-106">模式和这些部分中介绍的指南旨在阐释一种特定类型的业务解决方案的方法。</span><span class="sxs-lookup"><span data-stu-id="a6800-106">The patterns and guidance documented in these sections are intended to illustrate an approach to a particular kind of business solution.</span></span> <span data-ttu-id="a6800-107">模式是简单的机制，旨在应用于特定的问题，通常与其他模式相结合。</span><span class="sxs-lookup"><span data-stu-id="a6800-107">Patterns are simple mechanisms that are meant to be applied to a specific problem and are usually combined with other patterns.</span></span> <span data-ttu-id="a6800-108">它们不应插入到应用程序。</span><span class="sxs-lookup"><span data-stu-id="a6800-108">They are not meant to be plugged into an application.</span></span> <span data-ttu-id="a6800-109">"按原样"提供的示例代码，不适合生产环境中使用。</span><span class="sxs-lookup"><span data-stu-id="a6800-109">Example code is provided "as is" and is not intended for production use.</span></span> <span data-ttu-id="a6800-110">它仅用于阐释模式，并因此不包含额外的代码，如异常处理、 日志记录、 安全性和验证。</span><span class="sxs-lookup"><span data-stu-id="a6800-110">It is only intended to illustrate the pattern and therefore does not include extra code, such as exception handling, logging, security, and validation.</span></span> <span data-ttu-id="a6800-111">Microsoft 不支持"按原样"的示例代码部署到生产环境。</span><span class="sxs-lookup"><span data-stu-id="a6800-111">Microsoft does not support deploying the example code "as is" to production.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="c8fc7-112">本节内容</span><span class="sxs-lookup"><span data-stu-id="c8fc7-112">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="a6800-112">本节内容</span><span class="sxs-lookup"><span data-stu-id="a6800-112">In This Section</span></span>  
   
--   [<span data-ttu-id="c8fc7-113">了解服务面向解决方案</span><span class="sxs-lookup"><span data-stu-id="c8fc7-113">Understanding the Service Oriented Solution</span></span>](../core/understanding-the-service-oriented-solution.md)  
+-   [<span data-ttu-id="a6800-113">了解面向服务的解决方案</span><span class="sxs-lookup"><span data-stu-id="a6800-113">Understanding the Service Oriented Solution</span></span>](../core/understanding-the-service-oriented-solution.md)  
   
--   [<span data-ttu-id="c8fc7-114">面向开发的服务解决方案</span><span class="sxs-lookup"><span data-stu-id="c8fc7-114">Developing a Service Oriented Solution</span></span>](../core/developing-a-service-oriented-solution.md)  
+-   [<span data-ttu-id="a6800-114">开发面向服务的解决方案</span><span class="sxs-lookup"><span data-stu-id="a6800-114">Developing a Service Oriented Solution</span></span>](../core/developing-a-service-oriented-solution.md)  
   
--   [<span data-ttu-id="c8fc7-115">部署服务面向解决方案</span><span class="sxs-lookup"><span data-stu-id="c8fc7-115">Deploying the Service Oriented Solution</span></span>](../core/deploying-the-service-oriented-solution.md)
+-   [<span data-ttu-id="a6800-115">部署服务面向解决方案</span><span class="sxs-lookup"><span data-stu-id="a6800-115">Deploying the Service Oriented Solution</span></span>](../core/deploying-the-service-oriented-solution.md)

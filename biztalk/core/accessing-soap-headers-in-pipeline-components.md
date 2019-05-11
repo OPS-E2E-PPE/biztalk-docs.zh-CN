@@ -16,17 +16,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e484b221df54f00b02f20ef89466fed6b99cd69d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a1acb8f56a4318695584abb074ddfcc0cf0c28c0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22225093"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65361923"
 ---
-# <a name="accessing-soap-headers-in-pipeline-components"></a><span data-ttu-id="03a19-102">访问在管道组件中的 SOAP 标头</span><span class="sxs-lookup"><span data-stu-id="03a19-102">Accessing SOAP Headers in Pipeline Components</span></span>
-<span data-ttu-id="03a19-103">你可以访问在管道组件中的 SOAP 标头上下文属性。</span><span class="sxs-lookup"><span data-stu-id="03a19-103">You can access SOAP header context properties in pipeline components.</span></span> <span data-ttu-id="03a19-104">使用上下文属性名称和目标命名空间的组合**http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**。</span><span class="sxs-lookup"><span data-stu-id="03a19-104">You use a combination of the context property name and the target namespace **http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**.</span></span>  
+# <a name="accessing-soap-headers-in-pipeline-components"></a><span data-ttu-id="4a4c5-102">访问在管道组件中的 SOAP 标头</span><span class="sxs-lookup"><span data-stu-id="4a4c5-102">Accessing SOAP Headers in Pipeline Components</span></span>
+<span data-ttu-id="4a4c5-103">你可以访问在管道组件中的 SOAP 标头上下文属性。</span><span class="sxs-lookup"><span data-stu-id="4a4c5-103">You can access SOAP header context properties in pipeline components.</span></span> <span data-ttu-id="4a4c5-104">使用上下文属性名称和目标命名空间的组合**http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**。</span><span class="sxs-lookup"><span data-stu-id="4a4c5-104">You use a combination of the context property name and the target namespace **http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**.</span></span>  
   
- <span data-ttu-id="03a19-105">下面的代码示例获取请求的 SOAP 标头中接收管道组件的属性**OrigDest**:</span><span class="sxs-lookup"><span data-stu-id="03a19-105">The following code example gets the request SOAP header in a receive pipeline component for the property **OrigDest**:</span></span>  
+ <span data-ttu-id="4a4c5-105">下面的代码示例获取请求的 SOAP 标头中接收管道组件的属性**OrigDest**:</span><span class="sxs-lookup"><span data-stu-id="4a4c5-105">The following code example gets the request SOAP header in a receive pipeline component for the property **OrigDest**:</span></span>  
   
 ```  
 public IBaseMessage Execute(IPipelineContext pc, IBaseMessage inmsg)  
@@ -43,7 +43,7 @@ return inmsg;
 }  
 ```  
   
- <span data-ttu-id="03a19-106">有关管道组件的详细信息，请参阅[开发自定义管道组件](../core/developing-custom-pipeline-components.md)。</span><span class="sxs-lookup"><span data-stu-id="03a19-106">For more information about pipeline components, see [Developing Custom Pipeline Components](../core/developing-custom-pipeline-components.md).</span></span>  
+ <span data-ttu-id="4a4c5-106">有关管道组件的详细信息，请参阅[开发自定义管道组件](../core/developing-custom-pipeline-components.md)。</span><span class="sxs-lookup"><span data-stu-id="4a4c5-106">For more information about pipeline components, see [Developing Custom Pipeline Components](../core/developing-custom-pipeline-components.md).</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="03a19-107">另请参阅</span><span class="sxs-lookup"><span data-stu-id="03a19-107">See Also</span></span>  
- [<span data-ttu-id="03a19-108">与发布的 Web 服务的 SOAP 标头</span><span class="sxs-lookup"><span data-stu-id="03a19-108">SOAP Headers with Published Web Services</span></span>](../core/soap-headers-with-published-web-services.md)
+## <a name="see-also"></a><span data-ttu-id="4a4c5-107">另请参阅</span><span class="sxs-lookup"><span data-stu-id="4a4c5-107">See Also</span></span>  
+ [<span data-ttu-id="4a4c5-108">与发布的 Web 服务的 SOAP 标头</span><span class="sxs-lookup"><span data-stu-id="4a4c5-108">SOAP Headers with Published Web Services</span></span>](../core/soap-headers-with-published-web-services.md)

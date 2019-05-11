@@ -1,5 +1,5 @@
 ---
-title: 示例交互和 FileAct 消息 |Microsoft 文档
+title: 示例进行交互和 FileAct 消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 30c2541e2ec3a6fe77de374843a47befacf3a791
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 776659a7bcd6c882a514098758385123e4cfc0ea
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22222413"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65366519"
 ---
-# <a name="sample-interact-and-fileact-messages"></a><span data-ttu-id="c2224-102">示例交互和 FileAct 消息</span><span class="sxs-lookup"><span data-stu-id="c2224-102">Sample InterAct and FileAct Messages</span></span>
-<span data-ttu-id="c2224-103">下面提供的交互和 FileAct 实时消息的示例。</span><span class="sxs-lookup"><span data-stu-id="c2224-103">Samples of InterAct and FileAct real-time messages are given below.</span></span>  
+# <a name="sample-interact-and-fileact-messages"></a><span data-ttu-id="cc502-102">示例进行交互和 FileAct 消息</span><span class="sxs-lookup"><span data-stu-id="cc502-102">Sample InterAct and FileAct Messages</span></span>
+<span data-ttu-id="cc502-103">下面给出了 InterAct 和 FileAct 实时消息的示例。</span><span class="sxs-lookup"><span data-stu-id="cc502-103">Samples of InterAct and FileAct real-time messages are given below.</span></span>  
   
- <span data-ttu-id="c2224-104">**示例交互实时消息**</span><span class="sxs-lookup"><span data-stu-id="c2224-104">**Sample InterAct real-time message**</span></span>  
+ <span data-ttu-id="cc502-104">**示例 InterAct 实时消息**</span><span class="sxs-lookup"><span data-stu-id="cc502-104">**Sample InterAct real-time message**</span></span>  
   
 ```  
 <SwInt-ExchangeRequest>  
@@ -34,7 +34,7 @@ TestPayloadRequestSnF
 </SwInt-ExchangeRequest>  
 ```  
   
- <span data-ttu-id="c2224-105">**示例 FileAct 实时消息 （put 请求）**</span><span class="sxs-lookup"><span data-stu-id="c2224-105">**Sample FileAct real-time message (put request)**</span></span>  
+ <span data-ttu-id="cc502-105">**示例 FileAct 实时消息 （put 的请求）**</span><span class="sxs-lookup"><span data-stu-id="cc502-105">**Sample FileAct real-time message (put request)**</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -49,7 +49,7 @@ TestPayloadRequestSnF
 </Sw-ExchangeFileRequest>  
 ```  
   
- <span data-ttu-id="c2224-106">**示例 FileAct 实时消息 （get 请求）**</span><span class="sxs-lookup"><span data-stu-id="c2224-106">**Sample FileAct real-time message (get request)**</span></span>  
+ <span data-ttu-id="cc502-106">**示例 FileAct 实时消息 （get 请求）**</span><span class="sxs-lookup"><span data-stu-id="cc502-106">**Sample FileAct real-time message (get request)**</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  

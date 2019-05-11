@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10597 |Microsoft Docs
+title: 单一登录：Event 10597 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2d0c0f1959580dfb9bc9327021c179f616f98d71
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a65e16c4575b1eee29fd920ab55a3bf76bf87197
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970558"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397831"
 ---
-# <a name="single-sign-on-event-10597"></a><span data-ttu-id="71b12-102">单一登录： 事件 10597</span><span class="sxs-lookup"><span data-stu-id="71b12-102">Single Sign-On: Event 10597</span></span>
-## <a name="details"></a><span data-ttu-id="71b12-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="71b12-103">Details</span></span>  
+# <a name="single-sign-on-event-10597"></a><span data-ttu-id="5084b-102">单一登录：事件 10597</span><span class="sxs-lookup"><span data-stu-id="5084b-102">Single Sign-On: Event 10597</span></span>
+## <a name="details"></a><span data-ttu-id="5084b-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="5084b-103">Details</span></span>  
   
 |                 |                                                                                                                                                                                              |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  <span data-ttu-id="71b12-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="71b12-104">Product Name</span></span>   |                                                                                  <span data-ttu-id="71b12-105">企业单一登录</span><span class="sxs-lookup"><span data-stu-id="71b12-105">Enterprise Single Sign-On</span></span>                                                                                   |
-| <span data-ttu-id="71b12-106">产品版本</span><span class="sxs-lookup"><span data-stu-id="71b12-106">Product Version</span></span> |                                                                  [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                  |
-|    <span data-ttu-id="71b12-107">事件 ID</span><span class="sxs-lookup"><span data-stu-id="71b12-107">Event ID</span></span>     |                                                                                            <span data-ttu-id="71b12-108">10597</span><span class="sxs-lookup"><span data-stu-id="71b12-108">10597</span></span>                                                                                             |
-|  <span data-ttu-id="71b12-109">事件源</span><span class="sxs-lookup"><span data-stu-id="71b12-109">Event Source</span></span>   |                                                                                            <span data-ttu-id="71b12-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="71b12-110">ENTSSO</span></span>                                                                                            |
-|    <span data-ttu-id="71b12-111">组件</span><span class="sxs-lookup"><span data-stu-id="71b12-111">Component</span></span>    |                                                                                             <span data-ttu-id="71b12-112">N/A</span><span class="sxs-lookup"><span data-stu-id="71b12-112">N/A</span></span>                                                                                              |
-|  <span data-ttu-id="71b12-113">符号名称</span><span class="sxs-lookup"><span data-stu-id="71b12-113">Symbolic Name</span></span>  |                                                                             <span data-ttu-id="71b12-114">SSO_WARN_CALLER_NOT_IN_NEW_SSO_ADMIN</span><span class="sxs-lookup"><span data-stu-id="71b12-114">SSO_WARN_CALLER_NOT_IN_NEW_SSO_ADMIN</span></span>                                                                             |
-|  <span data-ttu-id="71b12-115">消息正文</span><span class="sxs-lookup"><span data-stu-id="71b12-115">Message Text</span></span>   | <span data-ttu-id="71b12-116">客户端用户必须是新 SSO 管理员帐户的成员，才能更改 SSO 管理员帐户名称。%r</span><span class="sxs-lookup"><span data-stu-id="71b12-116">The client user must be a member of the new SSO Administrators account to change the SSO Administrators account name.%r</span></span><br /><br /> <span data-ttu-id="71b12-117">客户端用户: %1 %r</span><span class="sxs-lookup"><span data-stu-id="71b12-117">Client User: %1%r</span></span><br /><br /> <span data-ttu-id="71b12-118">新的 SSO Administrators: %2</span><span class="sxs-lookup"><span data-stu-id="71b12-118">New SSO Administrators: %2</span></span> |
+|  <span data-ttu-id="5084b-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="5084b-104">Product Name</span></span>   |                                                                                  <span data-ttu-id="5084b-105">企业单一登录</span><span class="sxs-lookup"><span data-stu-id="5084b-105">Enterprise Single Sign-On</span></span>                                                                                   |
+| <span data-ttu-id="5084b-106">产品版本</span><span class="sxs-lookup"><span data-stu-id="5084b-106">Product Version</span></span> |                                                                  [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                  |
+|    <span data-ttu-id="5084b-107">事件 ID</span><span class="sxs-lookup"><span data-stu-id="5084b-107">Event ID</span></span>     |                                                                                            <span data-ttu-id="5084b-108">10597</span><span class="sxs-lookup"><span data-stu-id="5084b-108">10597</span></span>                                                                                             |
+|  <span data-ttu-id="5084b-109">事件源</span><span class="sxs-lookup"><span data-stu-id="5084b-109">Event Source</span></span>   |                                                                                            <span data-ttu-id="5084b-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="5084b-110">ENTSSO</span></span>                                                                                            |
+|    <span data-ttu-id="5084b-111">组件</span><span class="sxs-lookup"><span data-stu-id="5084b-111">Component</span></span>    |                                                                                             <span data-ttu-id="5084b-112">不可用</span><span class="sxs-lookup"><span data-stu-id="5084b-112">N/A</span></span>                                                                                              |
+|  <span data-ttu-id="5084b-113">符号名称</span><span class="sxs-lookup"><span data-stu-id="5084b-113">Symbolic Name</span></span>  |                                                                             <span data-ttu-id="5084b-114">SSO_WARN_CALLER_NOT_IN_NEW_SSO_ADMIN</span><span class="sxs-lookup"><span data-stu-id="5084b-114">SSO_WARN_CALLER_NOT_IN_NEW_SSO_ADMIN</span></span>                                                                             |
+|  <span data-ttu-id="5084b-115">消息正文</span><span class="sxs-lookup"><span data-stu-id="5084b-115">Message Text</span></span>   | <span data-ttu-id="5084b-116">客户端用户必须是新 SSO 管理员帐户的成员，才能更改 SSO Administrators 帐户 name.%r</span><span class="sxs-lookup"><span data-stu-id="5084b-116">The client user must be a member of the new SSO Administrators account to change the SSO Administrators account name.%r</span></span><br /><br /> <span data-ttu-id="5084b-117">客户端用户: %1 %r</span><span class="sxs-lookup"><span data-stu-id="5084b-117">Client User: %1%r</span></span><br /><br /> <span data-ttu-id="5084b-118">新的 SSO Administrators: %2</span><span class="sxs-lookup"><span data-stu-id="5084b-118">New SSO Administrators: %2</span></span> |
   
-## <a name="explanation"></a><span data-ttu-id="71b12-119">解释</span><span class="sxs-lookup"><span data-stu-id="71b12-119">Explanation</span></span>  
- <span data-ttu-id="71b12-120">客户端用户必须是新 SSO 管理员帐户的成员，才能更改 SSO 管理员帐户名称。</span><span class="sxs-lookup"><span data-stu-id="71b12-120">The client user must be a member of the new SSO Administrators account to change the SSO Administrators account name.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="5084b-119">解释</span><span class="sxs-lookup"><span data-stu-id="5084b-119">Explanation</span></span>  
+ <span data-ttu-id="5084b-120">客户端用户必须是新 SSO 管理员帐户的成员，才能更改 SSO 管理员帐户名。</span><span class="sxs-lookup"><span data-stu-id="5084b-120">The client user must be a member of the new SSO Administrators account to change the SSO Administrators account name.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="71b12-121">用户操作</span><span class="sxs-lookup"><span data-stu-id="71b12-121">User Action</span></span>  
- <span data-ttu-id="71b12-122">您必须是新 SSO 管理员帐户的成员，才能更改 SSO 管理员帐户名称。</span><span class="sxs-lookup"><span data-stu-id="71b12-122">You must be a member of the new SSO Administrators account to change the SSO Administrators account name.</span></span>
+## <a name="user-action"></a><span data-ttu-id="5084b-121">用户操作</span><span class="sxs-lookup"><span data-stu-id="5084b-121">User Action</span></span>  
+ <span data-ttu-id="5084b-122">必须是新 SSO 管理员帐户的成员，才能更改 SSO 管理员帐户名。</span><span class="sxs-lookup"><span data-stu-id="5084b-122">You must be a member of the new SSO Administrators account to change the SSO Administrators account name.</span></span>

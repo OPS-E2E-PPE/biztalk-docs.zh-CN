@@ -17,41 +17,41 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8f42d21fe70a3058a9d92384c6a2853b0e35c84
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 75aa48af8d252db3d493f0ee7814edbdbdc7498e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981406"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373571"
 ---
-# <a name="create-a-channel-using-sap"></a><span data-ttu-id="de57f-102">创建一个通道，使用 SAP</span><span class="sxs-lookup"><span data-stu-id="de57f-102">Create a channel using SAP</span></span>
-<span data-ttu-id="de57f-103">在 WCF 通道模型中，调用上的 SAP 系统的操作或从 SAP 系统接收消息，通过交换 SOAP 消息具有[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]通过 WCF 通道。</span><span class="sxs-lookup"><span data-stu-id="de57f-103">In the WCF channel model, you invoke operations on the SAP system or receive messages from the SAP system by exchanging SOAP messages with the [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] over a WCF channel.</span></span>  
+# <a name="create-a-channel-using-sap"></a><span data-ttu-id="629e9-102">创建一个通道，使用 SAP</span><span class="sxs-lookup"><span data-stu-id="629e9-102">Create a channel using SAP</span></span>
+<span data-ttu-id="629e9-103">在 WCF 通道模型中，调用上的 SAP 系统的操作或从 SAP 系统接收消息，通过交换 SOAP 消息具有[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]通过 WCF 通道。</span><span class="sxs-lookup"><span data-stu-id="629e9-103">In the WCF channel model, you invoke operations on the SAP system or receive messages from the SAP system by exchanging SOAP messages with the [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)] over a WCF channel.</span></span>  
   
-- <span data-ttu-id="de57f-104">通过使用调用操作 （出站操作） **IRequestChannel**或**IOutputChannel**将消息发送到适配器</span><span class="sxs-lookup"><span data-stu-id="de57f-104">You invoke operations (outbound operations) by using either an **IRequestChannel** or an **IOutputChannel** to send messages to the adapter</span></span>  
+- <span data-ttu-id="629e9-104">通过使用调用操作 （出站操作） **IRequestChannel**或**IOutputChannel**将消息发送到适配器</span><span class="sxs-lookup"><span data-stu-id="629e9-104">You invoke operations (outbound operations) by using either an **IRequestChannel** or an **IOutputChannel** to send messages to the adapter</span></span>  
   
-- <span data-ttu-id="de57f-105">接收消息 （从触发 SAP 系统） 通过**IReplyChannel**。</span><span class="sxs-lookup"><span data-stu-id="de57f-105">You receive messages (triggered from the SAP system) over an **IReplyChannel**.</span></span>  
+- <span data-ttu-id="629e9-105">接收消息 （从触发 SAP 系统） 通过**IReplyChannel**。</span><span class="sxs-lookup"><span data-stu-id="629e9-105">You receive messages (triggered from the SAP system) over an **IReplyChannel**.</span></span>  
   
-  <span data-ttu-id="de57f-106">在本部分中的主题提供有关如何创建和配置用于入站和出站操作的通道形状的信息。</span><span class="sxs-lookup"><span data-stu-id="de57f-106">The topics in this section provide information about how to create and configure channel shapes that are used for inbound and outbound operations.</span></span>  
+  <span data-ttu-id="629e9-106">在本部分中的主题提供有关如何创建和配置用于入站和出站操作的通道形状的信息。</span><span class="sxs-lookup"><span data-stu-id="629e9-106">The topics in this section provide information about how to create and configure channel shapes that are used for inbound and outbound operations.</span></span>  
   
-## <a name="creating-outbound-client-channels"></a><span data-ttu-id="de57f-107">创建出站 （客户端） 通道</span><span class="sxs-lookup"><span data-stu-id="de57f-107">Creating Outbound (Client) Channels</span></span>  
- <span data-ttu-id="de57f-108">你可以使用**IRequestChannel**或**IOutputChannel**调用 SAP 系统的操作。</span><span class="sxs-lookup"><span data-stu-id="de57f-108">You can use either an **IRequestChannel** or an **IOutputChannel** to invoke operations on the SAP system.</span></span> <span data-ttu-id="de57f-109">在任一情况下，你首先创建**System.ServiceModel.ChannelFactory**使用适当的接口。</span><span class="sxs-lookup"><span data-stu-id="de57f-109">In either case, you first create a **System.ServiceModel.ChannelFactory** using the appropriate interface.</span></span> <span data-ttu-id="de57f-110">然后使用工厂来创建通道。</span><span class="sxs-lookup"><span data-stu-id="de57f-110">You then use the factory to create the channel.</span></span> <span data-ttu-id="de57f-111">创建通道后可用于调用在适配器上的操作。</span><span class="sxs-lookup"><span data-stu-id="de57f-111">After you have created the channel you can use it to invoke operations on the adapter.</span></span>  
+## <a name="creating-outbound-client-channels"></a><span data-ttu-id="629e9-107">创建出站 （客户端） 通道</span><span class="sxs-lookup"><span data-stu-id="629e9-107">Creating Outbound (Client) Channels</span></span>  
+ <span data-ttu-id="629e9-108">你可以使用**IRequestChannel**或**IOutputChannel**调用 SAP 系统的操作。</span><span class="sxs-lookup"><span data-stu-id="629e9-108">You can use either an **IRequestChannel** or an **IOutputChannel** to invoke operations on the SAP system.</span></span> <span data-ttu-id="629e9-109">在任一情况下，你首先创建**System.ServiceModel.ChannelFactory**使用适当的接口。</span><span class="sxs-lookup"><span data-stu-id="629e9-109">In either case, you first create a **System.ServiceModel.ChannelFactory** using the appropriate interface.</span></span> <span data-ttu-id="629e9-110">然后使用工厂来创建通道。</span><span class="sxs-lookup"><span data-stu-id="629e9-110">You then use the factory to create the channel.</span></span> <span data-ttu-id="629e9-111">创建通道后可用于调用在适配器上的操作。</span><span class="sxs-lookup"><span data-stu-id="629e9-111">After you have created the channel you can use it to invoke operations on the adapter.</span></span>  
   
-#### <a name="to-create-and-open-an-outbound-channel"></a><span data-ttu-id="de57f-112">若要创建并打开出站通道</span><span class="sxs-lookup"><span data-stu-id="de57f-112">To create and open an outbound channel</span></span>  
+#### <a name="to-create-and-open-an-outbound-channel"></a><span data-ttu-id="629e9-112">若要创建并打开出站通道</span><span class="sxs-lookup"><span data-stu-id="629e9-112">To create and open an outbound channel</span></span>  
   
-1. <span data-ttu-id="de57f-113">创建和初始化的实例**ChannelFactory**为通过使用一个终结点和绑定所需的通道形状。</span><span class="sxs-lookup"><span data-stu-id="de57f-113">Create and initialize an instance of **ChannelFactory** for the desired channel shape by using an endpoint and a binding.</span></span> <span data-ttu-id="de57f-114">终结点指定 URI 的 SAP 连接并绑定是的一个实例**SAPDBBinding**。</span><span class="sxs-lookup"><span data-stu-id="de57f-114">The endpoint specifies an SAP connection URI and the binding is an instance of **SAPDBBinding**.</span></span> <span data-ttu-id="de57f-115">（设置之前打开通道工厂所需的任何绑定属性。）</span><span class="sxs-lookup"><span data-stu-id="de57f-115">(Set any binding properties required before you open the channel factory.)</span></span>  
+1. <span data-ttu-id="629e9-113">创建和初始化的实例**ChannelFactory**为通过使用一个终结点和绑定所需的通道形状。</span><span class="sxs-lookup"><span data-stu-id="629e9-113">Create and initialize an instance of **ChannelFactory** for the desired channel shape by using an endpoint and a binding.</span></span> <span data-ttu-id="629e9-114">终结点指定 URI 的 SAP 连接并绑定是的一个实例**SAPDBBinding**。</span><span class="sxs-lookup"><span data-stu-id="629e9-114">The endpoint specifies an SAP connection URI and the binding is an instance of **SAPDBBinding**.</span></span> <span data-ttu-id="629e9-115">（设置之前打开通道工厂所需的任何绑定属性。）</span><span class="sxs-lookup"><span data-stu-id="629e9-115">(Set any binding properties required before you open the channel factory.)</span></span>  
   
-2. <span data-ttu-id="de57f-116">使用通道工厂提供 SAP 凭据**ClientCredentials**属性。</span><span class="sxs-lookup"><span data-stu-id="de57f-116">Provide SAP credentials for the channel factory by using the **ClientCredentials** property.</span></span>  
+2. <span data-ttu-id="629e9-116">使用通道工厂提供 SAP 凭据**ClientCredentials**属性。</span><span class="sxs-lookup"><span data-stu-id="629e9-116">Provide SAP credentials for the channel factory by using the **ClientCredentials** property.</span></span>  
   
-3. <span data-ttu-id="de57f-117">打开通道工厂。</span><span class="sxs-lookup"><span data-stu-id="de57f-117">Open the channel factory.</span></span>  
+3. <span data-ttu-id="629e9-117">打开通道工厂。</span><span class="sxs-lookup"><span data-stu-id="629e9-117">Open the channel factory.</span></span>  
   
-4. <span data-ttu-id="de57f-118">通过调用获取通道的实例**CreateChannel**方法对的通道工厂。</span><span class="sxs-lookup"><span data-stu-id="de57f-118">Get an instance of the channel by invoking the **CreateChannel** method on the channel factory.</span></span>  
+4. <span data-ttu-id="629e9-118">通过调用获取通道的实例**CreateChannel**方法对的通道工厂。</span><span class="sxs-lookup"><span data-stu-id="629e9-118">Get an instance of the channel by invoking the **CreateChannel** method on the channel factory.</span></span>  
   
-5. <span data-ttu-id="de57f-119">打开通道。</span><span class="sxs-lookup"><span data-stu-id="de57f-119">Open the channel.</span></span>  
+5. <span data-ttu-id="629e9-119">打开通道。</span><span class="sxs-lookup"><span data-stu-id="629e9-119">Open the channel.</span></span>  
   
-   <span data-ttu-id="de57f-120">在代码中或从配置，可以指定的绑定和终结点地址。</span><span class="sxs-lookup"><span data-stu-id="de57f-120">You can specify the binding and endpoint address in your code or from configuration.</span></span>  
+   <span data-ttu-id="629e9-120">在代码中或从配置，可以指定的绑定和终结点地址。</span><span class="sxs-lookup"><span data-stu-id="629e9-120">You can specify the binding and endpoint address in your code or from configuration.</span></span>  
   
-### <a name="specifying-the-binding-and-endpoint-address-in-code"></a><span data-ttu-id="de57f-121">在代码中指定的绑定和终结点地址</span><span class="sxs-lookup"><span data-stu-id="de57f-121">Specifying the Binding and Endpoint Address in Code</span></span>  
- <span data-ttu-id="de57f-122">下面的代码示例演示如何创建**IRequestChannel**通过在代码中指定的绑定和终结点地址。</span><span class="sxs-lookup"><span data-stu-id="de57f-122">The following code example shows how to create an **IRequestChannel** by specifying the binding and endpoint address in code.</span></span> <span data-ttu-id="de57f-123">若要创建的代码**IOutputChannel**是相同，只不过必须指定**IOutputChannel**接口**ChannelFactory**和通道类型。</span><span class="sxs-lookup"><span data-stu-id="de57f-123">The code to create an **IOutputChannel** is the same except that you must specify an **IOutputChannel** interface for the **ChannelFactory** and channel type.</span></span>  
+### <a name="specifying-the-binding-and-endpoint-address-in-code"></a><span data-ttu-id="629e9-121">在代码中指定的绑定和终结点地址</span><span class="sxs-lookup"><span data-stu-id="629e9-121">Specifying the Binding and Endpoint Address in Code</span></span>  
+ <span data-ttu-id="629e9-122">下面的代码示例演示如何创建**IRequestChannel**通过在代码中指定的绑定和终结点地址。</span><span class="sxs-lookup"><span data-stu-id="629e9-122">The following code example shows how to create an **IRequestChannel** by specifying the binding and endpoint address in code.</span></span> <span data-ttu-id="629e9-123">若要创建的代码**IOutputChannel**是相同，只不过必须指定**IOutputChannel**接口**ChannelFactory**和通道类型。</span><span class="sxs-lookup"><span data-stu-id="629e9-123">The code to create an **IOutputChannel** is the same except that you must specify an **IOutputChannel** interface for the **ChannelFactory** and channel type.</span></span>  
   
 ```  
 // Create binding -- set binding properties before you open the factory.  
@@ -76,8 +76,8 @@ IRequestChannel channel = factory.CreateChannel();
 channel.Open();  
 ```  
   
-### <a name="specifying-the-binding-and-endpoint-address-in-configuration"></a><span data-ttu-id="de57f-124">在配置中指定的绑定和终结点地址</span><span class="sxs-lookup"><span data-stu-id="de57f-124">Specifying the Binding and Endpoint Address in Configuration</span></span>  
- <span data-ttu-id="de57f-125">下面的代码示例演示如何从配置中指定的客户端终结点创建通道工厂。</span><span class="sxs-lookup"><span data-stu-id="de57f-125">The following code example shows how to create a channel factory from a client endpoint specified in configuration.</span></span>  
+### <a name="specifying-the-binding-and-endpoint-address-in-configuration"></a><span data-ttu-id="629e9-124">在配置中指定的绑定和终结点地址</span><span class="sxs-lookup"><span data-stu-id="629e9-124">Specifying the Binding and Endpoint Address in Configuration</span></span>  
+ <span data-ttu-id="629e9-125">下面的代码示例演示如何从配置中指定的客户端终结点创建通道工厂。</span><span class="sxs-lookup"><span data-stu-id="629e9-125">The following code example shows how to create a channel factory from a client endpoint specified in configuration.</span></span>  
   
 ```  
 // Create channel factory from configuration.  
@@ -96,8 +96,8 @@ IRequestChannel channel = factory.CreateChannel();
 channel.Open();  
 ```  
   
-#### <a name="the-configuration-settings"></a><span data-ttu-id="de57f-126">配置设置</span><span class="sxs-lookup"><span data-stu-id="de57f-126">The Configuration Settings</span></span>  
- <span data-ttu-id="de57f-127">下面的代码演示上述示例使用的配置设置。</span><span class="sxs-lookup"><span data-stu-id="de57f-127">The following code shows the configuration settings used for the preceding example.</span></span> <span data-ttu-id="de57f-128">客户端终结点的协定必须是"System.ServiceModel.Channels.IRequestChannel"或"System.ServiceModel.Channels.IRequestChannel"取决于你想要创建的通道形状的类型。</span><span class="sxs-lookup"><span data-stu-id="de57f-128">The contract for the client endpoint must be "System.ServiceModel.Channels.IRequestChannel" or "System.ServiceModel.Channels.IRequestChannel" depending on the kind of channel shape that you want to create.</span></span>  
+#### <a name="the-configuration-settings"></a><span data-ttu-id="629e9-126">配置设置</span><span class="sxs-lookup"><span data-stu-id="629e9-126">The Configuration Settings</span></span>  
+ <span data-ttu-id="629e9-127">下面的代码演示上述示例使用的配置设置。</span><span class="sxs-lookup"><span data-stu-id="629e9-127">The following code shows the configuration settings used for the preceding example.</span></span> <span data-ttu-id="629e9-128">客户端终结点的协定必须是"System.ServiceModel.Channels.IRequestChannel"或"System.ServiceModel.Channels.IRequestChannel"取决于你想要创建的通道形状的类型。</span><span class="sxs-lookup"><span data-stu-id="629e9-128">The contract for the client endpoint must be "System.ServiceModel.Channels.IRequestChannel" or "System.ServiceModel.Channels.IRequestChannel" depending on the kind of channel shape that you want to create.</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -124,26 +124,26 @@ channel.Open();
 </configuration>  
 ```  
   
-### <a name="creating-inbound-service-channels"></a><span data-ttu-id="de57f-129">创建入站 （服务） 通道</span><span class="sxs-lookup"><span data-stu-id="de57f-129">Creating Inbound (Service) Channels</span></span>  
- <span data-ttu-id="de57f-130">配置适配器接收来自 SAP 系统的入站的消息，通过设置绑定属性的实例上**SAPBinding**。</span><span class="sxs-lookup"><span data-stu-id="de57f-130">You configure the adapter to receive inbound messages from an SAP system by setting binding properties on an instance of **SAPBinding**.</span></span> <span data-ttu-id="de57f-131">然后使用此绑定来生成通道侦听器可以获取**IReplyChannel**通道，以接收来自适配器的操作。</span><span class="sxs-lookup"><span data-stu-id="de57f-131">You then use this binding to build a channel listener from which you can get an **IReplyChannel** channel to receive operations from the adapter.</span></span>  
+### <a name="creating-inbound-service-channels"></a><span data-ttu-id="629e9-129">创建入站 （服务） 通道</span><span class="sxs-lookup"><span data-stu-id="629e9-129">Creating Inbound (Service) Channels</span></span>  
+ <span data-ttu-id="629e9-130">配置适配器接收来自 SAP 系统的入站的消息，通过设置绑定属性的实例上**SAPBinding**。</span><span class="sxs-lookup"><span data-stu-id="629e9-130">You configure the adapter to receive inbound messages from an SAP system by setting binding properties on an instance of **SAPBinding**.</span></span> <span data-ttu-id="629e9-131">然后使用此绑定来生成通道侦听器可以获取**IReplyChannel**通道，以接收来自适配器的操作。</span><span class="sxs-lookup"><span data-stu-id="629e9-131">You then use this binding to build a channel listener from which you can get an **IReplyChannel** channel to receive operations from the adapter.</span></span>  
   
-##### <a name="to-create-and-open-an-ireplychannel-to-receive-data-changed-notifications"></a><span data-ttu-id="de57f-132">若要创建并打开 IReplyChannel 接收数据更改通知</span><span class="sxs-lookup"><span data-stu-id="de57f-132">To create and open an IReplyChannel to Receive Data-changed Notifications</span></span>  
+##### <a name="to-create-and-open-an-ireplychannel-to-receive-data-changed-notifications"></a><span data-ttu-id="629e9-132">若要创建并打开 IReplyChannel 接收数据更改通知</span><span class="sxs-lookup"><span data-stu-id="629e9-132">To create and open an IReplyChannel to Receive Data-changed Notifications</span></span>  
   
-1. <span data-ttu-id="de57f-133">创建的实例**SAPBinding**。</span><span class="sxs-lookup"><span data-stu-id="de57f-133">Create an instance of **SAPBinding**.</span></span>  
+1. <span data-ttu-id="629e9-133">创建的实例**SAPBinding**。</span><span class="sxs-lookup"><span data-stu-id="629e9-133">Create an instance of **SAPBinding**.</span></span>  
   
-2. <span data-ttu-id="de57f-134">设置你想要接收的操作所需的任何绑定属性。</span><span class="sxs-lookup"><span data-stu-id="de57f-134">Set any binding properties required for the operations you want to receive.</span></span> <span data-ttu-id="de57f-135">请务必设置**AcceptCredentialsInUri**属性绑定。</span><span class="sxs-lookup"><span data-stu-id="de57f-135">Be sure to set the **AcceptCredentialsInUri** binding property.</span></span>  
+2. <span data-ttu-id="629e9-134">设置你想要接收的操作所需的任何绑定属性。</span><span class="sxs-lookup"><span data-stu-id="629e9-134">Set any binding properties required for the operations you want to receive.</span></span> <span data-ttu-id="629e9-135">请务必设置**AcceptCredentialsInUri**属性绑定。</span><span class="sxs-lookup"><span data-stu-id="629e9-135">Be sure to set the **AcceptCredentialsInUri** binding property.</span></span>  
   
-3. <span data-ttu-id="de57f-136">创建**BindingParameterCollection**并添加**InboundActionCollection** ，其中包含你想要接收的操作的操作。</span><span class="sxs-lookup"><span data-stu-id="de57f-136">Create a **BindingParameterCollection** and add an **InboundActionCollection** that contains the actions of the operations that you want to receive.</span></span> <span data-ttu-id="de57f-137">该适配器将到 SAP 系统的所有其他操作返回一个异常。</span><span class="sxs-lookup"><span data-stu-id="de57f-137">The adapter will return an exception to the SAP system for all other operations.</span></span> <span data-ttu-id="de57f-138">此步骤为可选步骤。</span><span class="sxs-lookup"><span data-stu-id="de57f-138">This step is optional.</span></span> <span data-ttu-id="de57f-139">有关详细信息，请参阅[接收从使用 WCF 通道模型 SAP 系统的入站操作](../../adapters-and-accelerators/adapter-sap/receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model.md)。</span><span class="sxs-lookup"><span data-stu-id="de57f-139">For more information, see [Receiving Inbound Operations from the SAP System by Using the WCF Channel Model](../../adapters-and-accelerators/adapter-sap/receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model.md).</span></span>  
+3. <span data-ttu-id="629e9-136">创建**BindingParameterCollection**并添加**InboundActionCollection** ，其中包含你想要接收的操作的操作。</span><span class="sxs-lookup"><span data-stu-id="629e9-136">Create a **BindingParameterCollection** and add an **InboundActionCollection** that contains the actions of the operations that you want to receive.</span></span> <span data-ttu-id="629e9-137">该适配器将到 SAP 系统的所有其他操作返回一个异常。</span><span class="sxs-lookup"><span data-stu-id="629e9-137">The adapter will return an exception to the SAP system for all other operations.</span></span> <span data-ttu-id="629e9-138">此步骤为可选步骤。</span><span class="sxs-lookup"><span data-stu-id="629e9-138">This step is optional.</span></span> <span data-ttu-id="629e9-139">有关详细信息，请参阅[接收从使用 WCF 通道模型 SAP 系统的入站操作](../../adapters-and-accelerators/adapter-sap/receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model.md)。</span><span class="sxs-lookup"><span data-stu-id="629e9-139">For more information, see [Receiving Inbound Operations from the SAP System by Using the WCF Channel Model](../../adapters-and-accelerators/adapter-sap/receive-inbound-operations-from-the-sap-system-using-the-wcf-channel-model.md).</span></span>  
   
-4. <span data-ttu-id="de57f-140">通过调用创建的通道侦听器**BuildChannelListener\<IReplyChannel\>** 方法**SAPBinding**。</span><span class="sxs-lookup"><span data-stu-id="de57f-140">Create a channel listener by invoking **BuildChannelListener\<IReplyChannel\>** method on the **SAPBinding**.</span></span> <span data-ttu-id="de57f-141">作为此方法的参数之一指定 SAP 连接 URI。</span><span class="sxs-lookup"><span data-stu-id="de57f-141">You specify the SAP connection URI as one of the parameters to this method.</span></span> <span data-ttu-id="de57f-142">连接 URI 必须包含适用于 SAP 系统的 RFC 目标的参数。</span><span class="sxs-lookup"><span data-stu-id="de57f-142">The connection URI must contain parameters for an RFC Destination on the SAP system.</span></span> <span data-ttu-id="de57f-143">有关 SAP 连接 URI 的详细信息，请参阅[创建 SAP 系统连接 URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)。</span><span class="sxs-lookup"><span data-stu-id="de57f-143">For more information about the SAP connection URI, see The [Create the SAP System Connection URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md).</span></span> <span data-ttu-id="de57f-144">如果您创建**BindingParameterCollection**在步骤 3 中，您还这在创建时指定的通道侦听器。</span><span class="sxs-lookup"><span data-stu-id="de57f-144">If you created a **BindingParameterCollection** in step 3, you also specify this when you create the channel listener.</span></span>  
+4. <span data-ttu-id="629e9-140">通过调用创建的通道侦听器**BuildChannelListener\<IReplyChannel\>** 方法**SAPBinding**。</span><span class="sxs-lookup"><span data-stu-id="629e9-140">Create a channel listener by invoking **BuildChannelListener\<IReplyChannel\>** method on the **SAPBinding**.</span></span> <span data-ttu-id="629e9-141">作为此方法的参数之一指定 SAP 连接 URI。</span><span class="sxs-lookup"><span data-stu-id="629e9-141">You specify the SAP connection URI as one of the parameters to this method.</span></span> <span data-ttu-id="629e9-142">连接 URI 必须包含适用于 SAP 系统的 RFC 目标的参数。</span><span class="sxs-lookup"><span data-stu-id="629e9-142">The connection URI must contain parameters for an RFC Destination on the SAP system.</span></span> <span data-ttu-id="629e9-143">有关 SAP 连接 URI 的详细信息，请参阅[创建 SAP 系统连接 URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md)。</span><span class="sxs-lookup"><span data-stu-id="629e9-143">For more information about the SAP connection URI, see The [Create the SAP System Connection URI](../../adapters-and-accelerators/adapter-sap/create-the-sap-system-connection-uri.md).</span></span> <span data-ttu-id="629e9-144">如果您创建**BindingParameterCollection**在步骤 3 中，您还这在创建时指定的通道侦听器。</span><span class="sxs-lookup"><span data-stu-id="629e9-144">If you created a **BindingParameterCollection** in step 3, you also specify this when you create the channel listener.</span></span>  
   
-5. <span data-ttu-id="de57f-145">打开侦听器。</span><span class="sxs-lookup"><span data-stu-id="de57f-145">Open the listener.</span></span>  
+5. <span data-ttu-id="629e9-145">打开侦听器。</span><span class="sxs-lookup"><span data-stu-id="629e9-145">Open the listener.</span></span>  
   
-6. <span data-ttu-id="de57f-146">获取**IReplyChannel**通道通过调用**AcceptChannel**在侦听器上的方法。</span><span class="sxs-lookup"><span data-stu-id="de57f-146">Get an **IReplyChannel** channel by invoking the **AcceptChannel** method on listener.</span></span>  
+6. <span data-ttu-id="629e9-146">获取**IReplyChannel**通道通过调用**AcceptChannel**在侦听器上的方法。</span><span class="sxs-lookup"><span data-stu-id="629e9-146">Get an **IReplyChannel** channel by invoking the **AcceptChannel** method on listener.</span></span>  
   
-7. <span data-ttu-id="de57f-147">打开通道。</span><span class="sxs-lookup"><span data-stu-id="de57f-147">Open the channel.</span></span>  
+7. <span data-ttu-id="629e9-147">打开通道。</span><span class="sxs-lookup"><span data-stu-id="629e9-147">Open the channel.</span></span>  
   
-   <span data-ttu-id="de57f-148">下面的代码演示如何创建通道侦听器，并获取**IReplyChannel**若要从适配器接收操作。</span><span class="sxs-lookup"><span data-stu-id="de57f-148">The following code shows how to create a channel listener and get an **IReplyChannel** to receive operations from the adapter.</span></span>  
+   <span data-ttu-id="629e9-148">下面的代码演示如何创建通道侦听器，并获取**IReplyChannel**若要从适配器接收操作。</span><span class="sxs-lookup"><span data-stu-id="629e9-148">The following code shows how to create a channel listener and get an **IReplyChannel** to receive operations from the adapter.</span></span>  
   
 ```  
 // Create a binding and specify any binding properties required  
@@ -176,5 +176,5 @@ channel = listener.AcceptChannel();
 channel.Open();  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="de57f-149">请参阅</span><span class="sxs-lookup"><span data-stu-id="de57f-149">See Also</span></span>  
-[<span data-ttu-id="de57f-150">使用 WCF 通道模型开发应用程序</span><span class="sxs-lookup"><span data-stu-id="de57f-150">Develop applications using the WCF Channel Model</span></span>](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)
+## <a name="see-also"></a><span data-ttu-id="629e9-149">请参阅</span><span class="sxs-lookup"><span data-stu-id="629e9-149">See Also</span></span>  
+[<span data-ttu-id="629e9-150">使用 WCF 通道模型开发应用程序</span><span class="sxs-lookup"><span data-stu-id="629e9-150">Develop applications using the WCF Channel Model</span></span>](../../adapters-and-accelerators/adapter-sap/develop-sap-applications-using-the-wcf-channel-model.md)

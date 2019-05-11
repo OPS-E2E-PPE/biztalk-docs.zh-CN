@@ -1,5 +1,5 @@
 ---
-title: 规划数据库层 |Microsoft 文档
+title: 规划数据库层 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f4e815e58d993096ace47057249f16427f4e6bdb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c212e9759d225fdc6f030fb780602025d4658f3c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302173"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397033"
 ---
-# <a name="planning-the-database-tier"></a><span data-ttu-id="58627-102">规划数据库层</span><span class="sxs-lookup"><span data-stu-id="58627-102">Planning the Database Tier</span></span>
-<span data-ttu-id="58627-103">本节包含与规划 BizTalk 解决方案的数据库层的建议主题。</span><span class="sxs-lookup"><span data-stu-id="58627-103">This section contains topics with planning recommendations for the database tier of a BizTalk solution.</span></span>  
+# <a name="planning-the-database-tier"></a><span data-ttu-id="722d2-102">规划数据库层</span><span class="sxs-lookup"><span data-stu-id="722d2-102">Planning the Database Tier</span></span>
+<span data-ttu-id="722d2-103">本部分包含与规划 BizTalk 解决方案的数据库层的建议主题。</span><span class="sxs-lookup"><span data-stu-id="722d2-103">This section contains topics with planning recommendations for the database tier of a BizTalk solution.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="58627-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="58627-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="722d2-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="722d2-104">In This Section</span></span>  
   
--   [<span data-ttu-id="58627-105">规划数据库性能</span><span class="sxs-lookup"><span data-stu-id="58627-105">Planning for Database Performance</span></span>](../technical-guides/planning-for-database-performance.md)  
+-   [<span data-ttu-id="722d2-105">规划数据库性能</span><span class="sxs-lookup"><span data-stu-id="722d2-105">Planning for Database Performance</span></span>](../technical-guides/planning-for-database-performance.md)  
   
--   [<span data-ttu-id="58627-106">数据库可用性规划</span><span class="sxs-lookup"><span data-stu-id="58627-106">Planning for Database Availability</span></span>](../technical-guides/planning-for-database-availability.md)  
+-   [<span data-ttu-id="722d2-106">规划数据库可用性</span><span class="sxs-lookup"><span data-stu-id="722d2-106">Planning for Database Availability</span></span>](../technical-guides/planning-for-database-availability.md)  
   
--   [<span data-ttu-id="58627-107">计划测试数据库</span><span class="sxs-lookup"><span data-stu-id="58627-107">Planning for Database Testing</span></span>](../technical-guides/planning-for-database-testing.md)
+-   [<span data-ttu-id="722d2-107">规划数据库测试</span><span class="sxs-lookup"><span data-stu-id="722d2-107">Planning for Database Testing</span></span>](../technical-guides/planning-for-database-testing.md)

@@ -12,31 +12,31 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a51833c9f1a27185654bf8f0ddaca0fdd8ac0b57
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bae73accfb6e65624f672ce1674b9e0429b6f3da
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002334"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363632"
 ---
-# <a name="expose-adapter-settings-as-a-binding-property-using-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="46924-102">将适配器设置为使用 WCF LOB 适配器 SDK 的绑定属性</span><span class="sxs-lookup"><span data-stu-id="46924-102">Expose adapter settings as a binding property using the WCF LOB Adapter SDK</span></span>
-<span data-ttu-id="46924-103">[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]使用不同的类来配置连接池、 元数据缓存和其他适配器行为中定义的属性。</span><span class="sxs-lookup"><span data-stu-id="46924-103">The [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] uses the properties defined in different classes for configuring the connection pool, metadata cache, and other adapter behaviors.</span></span> <span data-ttu-id="46924-104">本主题介绍作为绑定属性，您就可能会出现这些属性，以便适配器使用者可以通过配置文件设置它们。</span><span class="sxs-lookup"><span data-stu-id="46924-104">This topic describes how you can surface these properties as binding properties, so that the adapter consumer can set them through a configuration file.</span></span>  
+# <a name="expose-adapter-settings-as-a-binding-property-using-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="fcf79-102">将适配器设置为使用 WCF LOB 适配器 SDK 的绑定属性</span><span class="sxs-lookup"><span data-stu-id="fcf79-102">Expose adapter settings as a binding property using the WCF LOB Adapter SDK</span></span>
+<span data-ttu-id="fcf79-103">[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]使用不同的类来配置连接池、 元数据缓存和其他适配器行为中定义的属性。</span><span class="sxs-lookup"><span data-stu-id="fcf79-103">The [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] uses the properties defined in different classes for configuring the connection pool, metadata cache, and other adapter behaviors.</span></span> <span data-ttu-id="fcf79-104">本主题介绍作为绑定属性，您就可能会出现这些属性，以便适配器使用者可以通过配置文件设置它们。</span><span class="sxs-lookup"><span data-stu-id="fcf79-104">This topic describes how you can surface these properties as binding properties, so that the adapter consumer can set them through a configuration file.</span></span>  
   
-### <a name="to-surface-an-adapter-setting-as-an-adapter-binding-property"></a><span data-ttu-id="46924-105">若要显示为适配器绑定属性的适配器设置</span><span class="sxs-lookup"><span data-stu-id="46924-105">To surface an adapter setting as an adapter binding property</span></span>  
+### <a name="to-surface-an-adapter-setting-as-an-adapter-binding-property"></a><span data-ttu-id="fcf79-105">若要显示为适配器绑定属性的适配器设置</span><span class="sxs-lookup"><span data-stu-id="fcf79-105">To surface an adapter setting as an adapter binding property</span></span>  
   
-1. <span data-ttu-id="46924-106">启动 Visual Studio，然后在**文件**菜单，依次指向**新建**，然后单击**项目**。</span><span class="sxs-lookup"><span data-stu-id="46924-106">Start Visual Studio, and then on the **File** menu, point to **New**, and then click **Project**.</span></span>  
+1. <span data-ttu-id="fcf79-106">启动 Visual Studio，然后在**文件**菜单，依次指向**新建**，然后单击**项目**。</span><span class="sxs-lookup"><span data-stu-id="fcf79-106">Start Visual Studio, and then on the **File** menu, point to **New**, and then click **Project**.</span></span>  
   
-2. <span data-ttu-id="46924-107">选择**WCF LOB 适配器**模板，然后提供其他适配器项目信息。</span><span class="sxs-lookup"><span data-stu-id="46924-107">Choose the **WCF LOB Adapter** template, and then provide the other adapter project information.</span></span>  
+2. <span data-ttu-id="fcf79-107">选择**WCF LOB 适配器**模板，然后提供其他适配器项目信息。</span><span class="sxs-lookup"><span data-stu-id="fcf79-107">Choose the **WCF LOB Adapter** template, and then provide the other adapter project information.</span></span>  
   
-3. <span data-ttu-id="46924-108">单步执行[!INCLUDE[afdevwizardnamelong](../../includes/afdevwizardnamelong-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="46924-108">Step through the [!INCLUDE[afdevwizardnamelong](../../includes/afdevwizardnamelong-md.md)].</span></span> <span data-ttu-id="46924-109">当您到达**适配器属性**页上，添加你想要公开提供的绑定属性**属性名称**，**数据类型**，和**默认值**，然后单击**添加**添加新的适配器属性。</span><span class="sxs-lookup"><span data-stu-id="46924-109">When you get to the **Adapter Properties** page, add the binding properties that you want to expose by providing a **Property name**, **Data type**, and **Default value**, and then click **Add** to add the new adapter property.</span></span>  
+3. <span data-ttu-id="fcf79-108">单步执行[!INCLUDE[afdevwizardnamelong](../../includes/afdevwizardnamelong-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="fcf79-108">Step through the [!INCLUDE[afdevwizardnamelong](../../includes/afdevwizardnamelong-md.md)].</span></span> <span data-ttu-id="fcf79-109">当您到达**适配器属性**页上，添加你想要公开提供的绑定属性**属性名称**，**数据类型**，和**默认值**，然后单击**添加**添加新的适配器属性。</span><span class="sxs-lookup"><span data-stu-id="fcf79-109">When you get to the **Adapter Properties** page, add the binding properties that you want to expose by providing a **Property name**, **Data type**, and **Default value**, and then click **Add** to add the new adapter property.</span></span>  
   
-4. <span data-ttu-id="46924-110">完成[!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="46924-110">Complete the [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)].</span></span> <span data-ttu-id="46924-111">你的项目应包含由向导提供的新文件。</span><span class="sxs-lookup"><span data-stu-id="46924-111">Your project should contain new files provided by the wizard.</span></span>  
+4. <span data-ttu-id="fcf79-110">完成[!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="fcf79-110">Complete the [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)].</span></span> <span data-ttu-id="fcf79-111">你的项目应包含由向导提供的新文件。</span><span class="sxs-lookup"><span data-stu-id="fcf79-111">Your project should contain new files provided by the wizard.</span></span>  
   
-5. <span data-ttu-id="46924-112">在 Visual Studio 中，在解决方案资源管理器中打开适配器派生类。</span><span class="sxs-lookup"><span data-stu-id="46924-112">In Visual Studio, in Solution Explorer, open the adapter-derived class.</span></span> <span data-ttu-id="46924-113">例如，如果适配器项目的名称，"SampleAdapter"可以"SampleAdapter.cs"中找到的派生的适配器类。</span><span class="sxs-lookup"><span data-stu-id="46924-113">For example, if the name of your adapter project is "SampleAdapter", the adapter derived class can be found in "SampleAdapter.cs".</span></span>  
+5. <span data-ttu-id="fcf79-112">在 Visual Studio 中，在解决方案资源管理器中打开适配器派生类。</span><span class="sxs-lookup"><span data-stu-id="fcf79-112">In Visual Studio, in Solution Explorer, open the adapter-derived class.</span></span> <span data-ttu-id="fcf79-113">例如，如果适配器项目的名称，"SampleAdapter"可以"SampleAdapter.cs"中找到的派生的适配器类。</span><span class="sxs-lookup"><span data-stu-id="fcf79-113">For example, if the name of your adapter project is "SampleAdapter", the adapter derived class can be found in "SampleAdapter.cs".</span></span>  
   
-6. <span data-ttu-id="46924-114">删除你想要获取和设置从适配器设置的属性的私有变量。</span><span class="sxs-lookup"><span data-stu-id="46924-114">Remove the private variables for the properties that you want to get and set from adapter settings.</span></span> <span data-ttu-id="46924-115">私有变量由生成[!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="46924-115">The private variables were generated by the [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)].</span></span>  
+6. <span data-ttu-id="fcf79-114">删除你想要获取和设置从适配器设置的属性的私有变量。</span><span class="sxs-lookup"><span data-stu-id="fcf79-114">Remove the private variables for the properties that you want to get and set from adapter settings.</span></span> <span data-ttu-id="fcf79-115">私有变量由生成[!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="fcf79-115">The private variables were generated by the [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)].</span></span>  
   
-7. <span data-ttu-id="46924-116">更新 get/set 方法为读/写从/向适配器设置的值。</span><span class="sxs-lookup"><span data-stu-id="46924-116">Update the get/set methods to read/write values from/to adapter settings.</span></span> <span data-ttu-id="46924-117">以下示例使用适配器属性以允许启用性能计数器。</span><span class="sxs-lookup"><span data-stu-id="46924-117">The following example uses an adapter property to allow enablement of performance counters.</span></span>  
+7. <span data-ttu-id="fcf79-116">更新 get/set 方法为读/写从/向适配器设置的值。</span><span class="sxs-lookup"><span data-stu-id="fcf79-116">Update the get/set methods to read/write values from/to adapter settings.</span></span> <span data-ttu-id="fcf79-117">以下示例使用适配器属性以允许启用性能计数器。</span><span class="sxs-lookup"><span data-stu-id="fcf79-117">The following example uses an adapter property to allow enablement of performance counters.</span></span>  
   
    ```  
    [System.Configuration.ConfigurationProperty("enablePerfCounters", DefaultValue = false)]  
@@ -47,7 +47,7 @@ ms.locfileid: "37002334"
    }  
    ```  
   
-8. <span data-ttu-id="46924-118">在 Visual Studio 中，在**文件**菜单上，单击**全部保存**。</span><span class="sxs-lookup"><span data-stu-id="46924-118">In Visual Studio, on the **File** menu, click **Save All**.</span></span>  
+8. <span data-ttu-id="fcf79-118">在 Visual Studio 中，在**文件**菜单上，单击**全部保存**。</span><span class="sxs-lookup"><span data-stu-id="fcf79-118">In Visual Studio, on the **File** menu, click **Save All**.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="46924-119">请参阅</span><span class="sxs-lookup"><span data-stu-id="46924-119">See Also</span></span>  
- <span data-ttu-id="46924-120">[教程 1： 开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)[开发活动](../../esb-toolkit/development-activities.md)</span><span class="sxs-lookup"><span data-stu-id="46924-120">[Tutorial 1: Develop the Echo Adapter](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md) [Development Activities](../../esb-toolkit/development-activities.md)</span></span>
+## <a name="see-also"></a><span data-ttu-id="fcf79-119">请参阅</span><span class="sxs-lookup"><span data-stu-id="fcf79-119">See Also</span></span>  
+ <span data-ttu-id="fcf79-120">[教程 1:开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)[开发活动](../../esb-toolkit/development-activities.md)</span><span class="sxs-lookup"><span data-stu-id="fcf79-120">[Tutorial 1: Develop the Echo Adapter](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md) [Development Activities](../../esb-toolkit/development-activities.md)</span></span>

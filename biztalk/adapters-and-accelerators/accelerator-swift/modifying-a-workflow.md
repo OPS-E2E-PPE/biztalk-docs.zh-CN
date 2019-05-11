@@ -1,5 +1,5 @@
 ---
-title: 修改工作流 |Microsoft 文档
+title: 修改工作流 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,12 +16,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3fbd3c28dc6499cb83fcff672673f729ac970ea4
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: e413a6f476fe23ba82655412cc8d1e3ef51ae758
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25960997"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65530269"
 ---
-# <a name="modifying-a-workflow"></a><span data-ttu-id="92367-102">修改工作流</span><span class="sxs-lookup"><span data-stu-id="92367-102">Modifying a Workflow</span></span>
-<span data-ttu-id="92367-103">请参阅\<驱动器：\>files\microsoft SWIFT\SDK\Samples\ CustomMrsrModel\ ProfileWebClientUserManual.doc 为 BizTalk 快捷键有关详细信息。</span><span class="sxs-lookup"><span data-stu-id="92367-103">Please refer to \<Drive:\>\Program Files\Microsoft BizTalk Accelerator For SWIFT\SDK\Samples\ CustomMrsrModel\ ProfileWebClientUserManual.doc for more information.</span></span>
+# <a name="modifying-a-workflow"></a><span data-ttu-id="ea658-102">修改工作流</span><span class="sxs-lookup"><span data-stu-id="ea658-102">Modifying a Workflow</span></span>
+<span data-ttu-id="ea658-103">请参阅\<驱动器：\>files\microsoft SWIFT\SDK\Samples\ CustomMrsrModel\ ProfileWebClientUserManual.doc 为 BizTalk Accelerator for 的详细信息。</span><span class="sxs-lookup"><span data-stu-id="ea658-103">Please refer to \<Drive:\>\Program Files\Microsoft BizTalk Accelerator For SWIFT\SDK\Samples\ CustomMrsrModel\ ProfileWebClientUserManual.doc for more information.</span></span>

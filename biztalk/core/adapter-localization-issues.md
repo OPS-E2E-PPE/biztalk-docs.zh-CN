@@ -12,36 +12,36 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c829ce496c124f3333c353f481eb3958e29d5c77
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d5ebd852d51671d0b3b2312db74433f0af10a974
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996334"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65361398"
 ---
-# <a name="adapter-localization-issues"></a><span data-ttu-id="69984-102">适配器本地化问题</span><span class="sxs-lookup"><span data-stu-id="69984-102">Adapter Localization Issues</span></span>
-<span data-ttu-id="69984-103">下列主题涉及您在开发自定义适配器时可能遇到的本地化问题。</span><span class="sxs-lookup"><span data-stu-id="69984-103">The following topics cover localization issues that you may encounter when developing custom adapters.</span></span>  
+# <a name="adapter-localization-issues"></a><span data-ttu-id="af5c5-102">适配器本地化问题</span><span class="sxs-lookup"><span data-stu-id="af5c5-102">Adapter Localization Issues</span></span>
+<span data-ttu-id="af5c5-103">以下主题介绍了开发自定义适配器时可能遇到的本地化问题。</span><span class="sxs-lookup"><span data-stu-id="af5c5-103">The following topics cover localization issues that you may encounter when developing custom adapters.</span></span>  
   
-## <a name="xsd-issues"></a><span data-ttu-id="69984-104">XSD 问题</span><span class="sxs-lookup"><span data-stu-id="69984-104">XSD Issues</span></span>  
- <span data-ttu-id="69984-105">通过使用适配器框架，适配器开发人员可以实现具有 XML 架构定义 (XSD) 架构的适配器属性页。</span><span class="sxs-lookup"><span data-stu-id="69984-105">By using the Adapter Framework, adapter developers can implement adapter property pages with XML Schema Definition (XSD) schemas.</span></span>  
+## <a name="xsd-issues"></a><span data-ttu-id="af5c5-104">XSD 问题</span><span class="sxs-lookup"><span data-stu-id="af5c5-104">XSD Issues</span></span>  
+ <span data-ttu-id="af5c5-105">通过使用适配器框架，适配器开发人员可以实现与 XML 架构定义 (XSD) 架构的适配器属性页。</span><span class="sxs-lookup"><span data-stu-id="af5c5-105">By using the Adapter Framework, adapter developers can implement adapter property pages with XML Schema Definition (XSD) schemas.</span></span>  
   
- <span data-ttu-id="69984-106">如果您的适配器没有全球化或本地化的要求，则您可以将内部的 XSD 架构字符串硬编码 **: Getconfigschema**函数。</span><span class="sxs-lookup"><span data-stu-id="69984-106">If your adapter has no globalization or localization requirements, then you can hard code the XSD schema string inside the **IDynamicAdapterConfig:GetConfigSchema** function.</span></span>  
+ <span data-ttu-id="af5c5-106">如果您的适配器没有全球化或本地化的要求，则您可以将内部的 XSD 架构字符串硬编码 **: Getconfigschema**函数。</span><span class="sxs-lookup"><span data-stu-id="af5c5-106">If your adapter has no globalization or localization requirements, then you can hard code the XSD schema string inside the **IDynamicAdapterConfig:GetConfigSchema** function.</span></span>  
   
- <span data-ttu-id="69984-107">如果您的适配器具有全球化或本地化方面的要求，则可以采用以下两种方式之一实现 XSD 架构。</span><span class="sxs-lookup"><span data-stu-id="69984-107">If your adapter has globalization or localization requirements, you can implement the XSD schema in one of two ways.</span></span>  
+ <span data-ttu-id="af5c5-107">如果您的适配器具有全球化或本地化的要求，可以按两种方式之一实现 XSD 架构。</span><span class="sxs-lookup"><span data-stu-id="af5c5-107">If your adapter has globalization or localization requirements, you can implement the XSD schema in one of two ways.</span></span>  
   
-- <span data-ttu-id="69984-108">在设计时二进制文件之外使用单独的 XSD 文件。</span><span class="sxs-lookup"><span data-stu-id="69984-108">Use separate XSD files outside the design-time binary.</span></span> <span data-ttu-id="69984-109">将架构的全部文本作为清单资源。</span><span class="sxs-lookup"><span data-stu-id="69984-109">Make the whole text of the schema a manifest resource.</span></span>  
+- <span data-ttu-id="af5c5-108">使用设计时二进制文件之外的单独 XSD 文件。</span><span class="sxs-lookup"><span data-stu-id="af5c5-108">Use separate XSD files outside the design-time binary.</span></span> <span data-ttu-id="af5c5-109">请在架构的整个文本清单资源。</span><span class="sxs-lookup"><span data-stu-id="af5c5-109">Make the whole text of the schema a manifest resource.</span></span>  
   
-- <span data-ttu-id="69984-110">动态替换资源中的属性名称和说明：</span><span class="sxs-lookup"><span data-stu-id="69984-110">Dynamically replace the Property Names and Description from the resource:</span></span>  
+- <span data-ttu-id="af5c5-110">动态资源从替换属性名称和说明：</span><span class="sxs-lookup"><span data-stu-id="af5c5-110">Dynamically replace the Property Names and Description from the resource:</span></span>  
   
-  -   <span data-ttu-id="69984-111">将 _locID 添加到要本地化的每个元素。</span><span class="sxs-lookup"><span data-stu-id="69984-111">Add a _locID to each element that you want to localize.</span></span>  
+  -   <span data-ttu-id="af5c5-111">将 _locID 添加到要本地化的每个元素。</span><span class="sxs-lookup"><span data-stu-id="af5c5-111">Add a _locID to each element that you want to localize.</span></span>  
   
-  -   <span data-ttu-id="69984-112">使用 xpath 拖回架构中具有 _locID 属性的所有节点。</span><span class="sxs-lookup"><span data-stu-id="69984-112">Use an xpath to pull back all the nodes in the schema that have a _locID attribute.</span></span>  
+  -   <span data-ttu-id="af5c5-112">使用 xpath 拖回架构中具有 _locID 属性的所有节点。</span><span class="sxs-lookup"><span data-stu-id="af5c5-112">Use an xpath to pull back all the nodes in the schema that have a _locID attribute.</span></span>  
   
-  -   <span data-ttu-id="69984-113">在资源中查找使用 _locID 值作为索引的字符串。</span><span class="sxs-lookup"><span data-stu-id="69984-113">Look up the resources for a string indexed by the value of the _locID.</span></span>  
+  -   <span data-ttu-id="af5c5-113">查找使用 _locID 值索引的字符串的资源。</span><span class="sxs-lookup"><span data-stu-id="af5c5-113">Look up the resources for a string indexed by the value of the _locID.</span></span>  
   
-  -   <span data-ttu-id="69984-114">用结果替换节点文本。</span><span class="sxs-lookup"><span data-stu-id="69984-114">Replace the node text with the result.</span></span>  
+  -   <span data-ttu-id="af5c5-114">用结果替换节点文本。</span><span class="sxs-lookup"><span data-stu-id="af5c5-114">Replace the node text with the result.</span></span>  
   
-  <span data-ttu-id="69984-115">以下为第二个选项的示例代码：</span><span class="sxs-lookup"><span data-stu-id="69984-115">The following is sample code for the second option:</span></span>  
+  <span data-ttu-id="af5c5-115">以下是第二个选项的示例代码：</span><span class="sxs-lookup"><span data-stu-id="af5c5-115">The following is sample code for the second option:</span></span>  
   
 ```  
 string mySchema = GetSchemaFromResource(“mySchema”);  

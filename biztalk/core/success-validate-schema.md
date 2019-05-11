@@ -1,5 +1,5 @@
 ---
-title: 成功的验证架构 |Microsoft 文档
+title: 成功-验证架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,18 +14,18 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 924da3a605363b3f15d9e3597d2813e7b148c100
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7e58b98cbb5f84d3a43a494beae1c38eddb1896b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277669"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395226"
 ---
-# <a name="success---validate-schema"></a><span data-ttu-id="98a10-102">成功的验证架构</span><span class="sxs-lookup"><span data-stu-id="98a10-102">Success - Validate Schema</span></span>
-<span data-ttu-id="98a10-103">**说明**</span><span class="sxs-lookup"><span data-stu-id="98a10-103">**Explanation**</span></span>  
+# <a name="success---validate-schema"></a><span data-ttu-id="71b68-102">成功-验证架构</span><span class="sxs-lookup"><span data-stu-id="71b68-102">Success - Validate Schema</span></span>
+<span data-ttu-id="71b68-103">**说明**</span><span class="sxs-lookup"><span data-stu-id="71b68-103">**Explanation**</span></span>  
   
- <span data-ttu-id="98a10-104">所指示的架构已验证成功。</span><span class="sxs-lookup"><span data-stu-id="98a10-104">The indicated schema was successfully validated.</span></span>  
+ <span data-ttu-id="71b68-104">已成功验证所指示的架构。</span><span class="sxs-lookup"><span data-stu-id="71b68-104">The indicated schema was successfully validated.</span></span>  
   
- <span data-ttu-id="98a10-105">**用户执行任何操作**</span><span class="sxs-lookup"><span data-stu-id="98a10-105">**User Action**</span></span>  
+ <span data-ttu-id="71b68-105">**用户执行任何操作**</span><span class="sxs-lookup"><span data-stu-id="71b68-105">**User Action**</span></span>  
   
- <span data-ttu-id="98a10-106">无需执行任何操作。</span><span class="sxs-lookup"><span data-stu-id="98a10-106">None required.</span></span>
+ <span data-ttu-id="71b68-106">无需执行任何操作。</span><span class="sxs-lookup"><span data-stu-id="71b68-106">None required.</span></span>
