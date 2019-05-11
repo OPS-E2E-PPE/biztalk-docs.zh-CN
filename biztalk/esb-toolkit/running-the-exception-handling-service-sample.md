@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dabab8678d8ee8b65854e494ce0a2ec53eba78fb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 17a1460b1248aa64ba043e8e6c01a66dc6215490
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999390"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242860"
 ---
 # <a name="running-the-exception-handling-service-sample"></a>运行异常处理服务示例
 异常处理服务示例演示如何使用异常处理 Web 服务才能提交到 ESB 异常处理框架从外部应用程序的错误。 有关运行此示例的以下过程要求[安装异常管理示例](../esb-toolkit/installing-the-exception-management-samples.md)。  

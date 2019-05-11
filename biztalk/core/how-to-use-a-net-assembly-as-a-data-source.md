@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8fa56370cf894d0d18a36320ca97c4d028fee487
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3308a8f292bcf28cfe9f4b6680efa9c1c7c9b595
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256629"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333613"
 ---
 # <a name="how-to-use-a-net-assembly-as-a-data-source"></a>如何将 .NET 程序集用作数据源
 您可以指定 .NET 程序集作为数据源。 随后可以从该程序集，选择一个类或类成员，并将其拖到词汇定义或规则。  

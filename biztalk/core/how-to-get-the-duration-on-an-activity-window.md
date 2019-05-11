@@ -16,21 +16,21 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e562e1580f616d8298b07c17a950edecc7f2c13e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7cd175c4bc4f96a9717371ad3fe72433231cbc44
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993542"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65337641"
 ---
 # <a name="how-to-get-the-duration-on-an-activity-window"></a>如何获取活动时段的持续时间
-管理员使用**get activitywindow**命令来获取指定活动的持续时间。 该命令返回持续时间的长度和度量单位。  
+管理员使用**get activitywindow**命令来获取指定活动的持续时间。 该命令返回持续时间和持续时间单位所依据的单位的长度。  
   
-### <a name="to-get-the-duration-on-an-activity"></a>获取活动的持续时间  
+### <a name="to-get-the-duration-on-an-activity"></a>若要获取活动的持续时间  
   
-1. 按如下所示打开命令提示符： 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
+1. 打开命令提示符，如下所示：单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2. 导航到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking。  
+2. 导航到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]跟踪。  
   
 3. 键入 bm get activitywindow-活动：\<活动名称\>。  
   

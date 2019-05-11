@@ -21,12 +21,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3339ded8edf46f7c5b96317cdf7a3ec822ec808b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 13568a08b804f172af3e7c461810b0df650cc372
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001494"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65303875"
 ---
 # <a name="message-delimiters"></a>消息分隔符
 HL7 标准中定义的消息事件采用以下格式：  

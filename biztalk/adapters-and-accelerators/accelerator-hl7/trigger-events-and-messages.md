@@ -17,12 +17,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 309d420d97cdc22c4f0eaca30bb6426e295cbe33
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 533594b0113be48e719b92273ae0a2413348d2a0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971606"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286552"
 ---
 # <a name="trigger-events-and-messages"></a>触发器事件和消息
 在数字卫生保健系统中，应用程序由于实际发生的事件，例如放置在实验室的订单或药物顺序创建 HL7 消息。 HL7 组织撰写了 HL7 标准基于美国卫生保健的真实世界中的事件创建对数据以流的应用程序之间，即使这些应用程序跨异类系统的需求的假设。 HL7 标准调用此实际发生的事件*触发器事件*。 自动的系统必须系统地识别触发器事件。  

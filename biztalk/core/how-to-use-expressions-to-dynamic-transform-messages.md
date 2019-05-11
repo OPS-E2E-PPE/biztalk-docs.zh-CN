@@ -1,5 +1,5 @@
 ---
-title: 如何使用动态转换消息的表达式 |Microsoft 文档
+title: 如何使用表达式来动态转换消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,25 +12,25 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4b9d16c38fefb4e2732bd05f7c3489acaa8ca645
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 084d8144aae37f3036d17f574a7fb663755e0b26
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256933"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333468"
 ---
-# <a name="how-to-use-expressions-to-dynamic-transform-messages"></a>如何使用动态转换消息的表达式
-可以在业务流程中使用表达式来动态转换消息。 XLANG 公开的转换方法，可以从调用**消息分配**形状内**构造消息**形状。 这是时，将调用的相同方法**转换**形状会使用，但是，可以以编程方式将转换使用业务流程中指定映射的消息。 在您执行与类型无关的消息处理时该方法会很有用。 例如，如果您具有需要从一系列映射中选择的业务流程，以便基于接收的入站消息提供的参数转换入站消息，则可以通过在表达式形状中使用该转换方法实现此要求，同时保持整体业务流程的完整性。  
+# <a name="how-to-use-expressions-to-dynamic-transform-messages"></a>如何使用表达式来动态转换消息
+您可以在业务流程中使用表达式来动态转换消息。 XLANG 公开一个可从内部调用的转换方法**消息赋值**形状的内部**构造消息**形状。 这是相同时，将调用的方法**转换**形状，但允许您以编程方式转换消息使用您在业务流程内指定的映射。 执行类型未知的消息处理时，这是非常有用。 例如，如果需要从一系列映射中选择转换基于接收的入站消息所提供的参数的入站的消息的业务流程，您可以实现此目的通过在表达式形状中同时使用 transform 方法维护整体业务流程保持不变。  
   
 ## <a name="transforming-messages"></a>转换消息  
- 你可以使用下面的示例代码要以编程方式转换中的消息**消息分配**形状：  
+ 可以使用下面的示例代码以编程方式转换中的消息**消息赋值**形状：  
   
 ```  
 MyMapType = typeof(MyMapName);  
 transform(MyOutputMsg) = MyMapType(MyInputMsg);  
 ```  
   
- 在此示例中，MyMapType 声明为类型的变量的**System.Type**业务流程中。 MyMapName 是已在您的 BizTalk 项目中创建的映射的名称。 如果您要在单独的 BizTalk 程序集中引用某一映射，将需要在您的 BizTalk 项目中引用该程序集。 MyInputMsg 是源消息，MyOutputMsg 是目标消息。 如果您的映射采用多个源消息，则可以使用以下代码示例来转换这些消息：  
+ 在此示例中，MyMapType 声明为类型的变量**System.Type**业务流程中。 MyMapName 是已在 BizTalk 项目中创建映射的名称。 如果你想要引用位于单独的 BizTalk 程序集中某一映射，需要引用该程序集在 BizTalk 项目中。 MyInputMsg 是源消息，MyOutputMsg 是目标消息。 如果您的映射采用多个源消息，则可以使用下面的示例代码以转换消息：  
   
 ```  
 MyMapType = typeof(MyMapName);  
@@ -38,11 +38,11 @@ transform(MyOutputMsg) = MyMapType(MyInputMsg1, MyInputMsg2);
 ```  
   
 > [!NOTE]
->  如果您具有多个源消息，则必须根据在映射中指示的输入消息部分号在表达式中有序放置它们。  
+>  如果有多个源消息，必须将它们放在顺序中相对于在映射中指示的输入的消息部件号的表达式中。  
   
 > [!IMPORTANT]
->  在表达式形状中动态转换消息时，建议您在用户代码中编写一个缓存，以便缓存已编译的映射，然后在表达式形状中使用该缓存来在转换消息前检索这些映射。 如果您没有缓存映射，则可能会发现公共语言运行库 (CLR) 内存会显著增长。 动态映射要求 .NET 运行库执行代码访问检查，该检查将导致 .NET Evidence 对象放置于每个转换的大对象堆中，并且在业务流程完成前不处置此对象。 因此，当同时发生许多上述类型的转换时，您可能会看到内存使用率显著增加，从而还可能导致内存不足异常。  
+>  时动态转换消息在表达式形状中的，我们建议在用于缓存已编译的映射，用户代码中编写一个缓存，然后使用表达式形状中的缓存转换消息前检索这些映射。 如果您没有缓存映射，则可能会发现公共语言运行时 (CLR) 内存会显著增长。 动态映射要求.NET 运行时执行的代码访问检查，这会导致.NET Evidence 对象放置在每个转换大型对象堆和此对象未释放的直到在业务流程完成。 因此，当存在大量的这些类型的同时发生的转换时，可能会看到内存使用率显著增加，这也会导致内存不足异常。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [业务流程形状](../core/orchestration-shapes.md)   
- [创建使用 BizTalk 映射程序图](../core/creating-maps-using-biztalk-mapper.md)
+ [使用 BizTalk 映射器创建映射](../core/creating-maps-using-biztalk-mapper.md)

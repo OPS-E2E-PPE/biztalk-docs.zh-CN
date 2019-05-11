@@ -16,12 +16,12 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 39d1d6b29c7f0b2b7704d6634b49b93a0aede738
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 53e1811e30ed1c74023b4402bcfc0f0d86b2c516
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985438"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65343323"
 ---
 # <a name="how-to-add-accounts-to-a-view"></a>如何将帐户添加到视图
 管理员使用**添加帐户**命令以将用户与 BAM 视图相关联，以防止未经授权的访问 BAM Excel 电子表格视图。 当用户保存 BAM 视图时，视图将引用隐藏工作簿中的 SQL 连接字符串。 工作簿保护，但必须确保已保护文档。  
@@ -35,9 +35,9 @@ ms.locfileid: "36985438"
   
 ### <a name="to-add-an-account-to-a-view"></a>若要将帐户添加到视图  
   
-1. 按如下所示打开命令提示符： 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
+1. 打开命令提示符，如下所示：单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2. 通过在命令提示符处键入 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Tracking，导航到跟踪文件夹。 按 **Enter**。  
+2. 通过键入导航到跟踪文件夹[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]跟踪在命令提示符处。 按 **Enter**。  
   
 3. 类型**bm 添加帐户-AccountName:\<帐户名称\>的视图：\<视图名称\>**。  
   

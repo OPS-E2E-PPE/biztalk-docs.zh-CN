@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 142bd0d2e5ff86362fe3c3ffa7ef8ec256202708
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 51bb6af0647c2fde7409cb2414b8707d41b0e353
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979710"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65301844"
 ---
 # <a name="preserving-jms-headers-when-routing-through-an-orchestration"></a>路由经过业务流程时保留 JMS 标头
 在此用例，组件提供的[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]从传入消息中提取 Java 消息服务 (JMS) 标头，然后将它们重新构造在传出消息中。 本示例演示 JMS 消息标头保留和访问从业务流程中的标头上下文中图 1 所示。  

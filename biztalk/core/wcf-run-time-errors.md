@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df75d019b9af36f4ef7fce21ea17dc1e9a8e7aac
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8ca38035582fe8a8d37d66f61fbca820dd14c0c4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999926"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65267003"
 ---
 # <a name="wcf-run-time-errors"></a>WCF 运行时错误
 有关诊断和解决 WCF 运行时事件的信息。  

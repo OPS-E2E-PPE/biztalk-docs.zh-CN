@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 688ff81133e60d5be5ef2f9d6826b9b6ca93919c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c8a4d25a694c74c9d5667995b4d70866fc021e3e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979262"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65305751"
 ---
 # <a name="disabling-windows-server-2003-sp1-and-sp2-denial-of-service-checking"></a>禁用 Windows Server 2003 SP1 和 SP2 拒绝服务检查
 > [!NOTE]  

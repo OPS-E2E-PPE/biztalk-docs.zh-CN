@@ -17,87 +17,87 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d3595d664e53a5abc20a69d990391e3c273ee3f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a7114ab32084abd45eb6169e1bb4e54bcf3b5f25
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010340"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292711"
 ---
 # <a name="understanding-the-service-oriented-solution"></a>了解面向服务的解决方案
-面向服务的解决方案提供了设计为服务的信用余额报告应用程序。 该应用程序又使用三个作为服务公开的后端应用程序来获取信用余额所需的信息。  
+面向服务的解决方案提供的信用余额报告应用程序设计为服务。 应用程序，反过来，使用三个后端应用程序，作为服务公开，获取信用余额所需的信息。  
   
- 面向服务的结构 (SOA) 是一种与构建分布式系统部分重叠的方法。 面向服务的方法具有以下几个特征：  
+ 面向服务体系结构 (SOA) 是一种方法，与构建分布式的系统部分重叠。 面向服务的方法有几个特性：  
   
-- 松散连接。 应用程序的业务逻辑独立于处理服务的逻辑。  
+- 松散耦合。 应用程序的业务逻辑是独立于处理服务的逻辑。  
   
-- 可发现。 应存在可供应用程序查找服务的机制。  
+- 可发现。 应为应用程序以查找该服务的机制。  
   
-- 契约性。 指向服务的接口实现了用户与服务之间的契约。  
+- 合同。 服务的接口实现的用户和服务之间的约定。  
   
-  尽管在文献资料中通常将面向服务的方法视为与 Web Services 同义，但两者并不一定是同义词。 Web Services 提供了一种实现面向服务的解决方案的有效方法，但您也可以使用 .NET 远程处理等其他技术来创建服务。  
+  尽管文献资料通常将面向服务的方法视为与 web services 同义，但它们不一定是同义词。 Web services 提供的极具吸引力的方法来实现面向服务的解决方案，但可以使用其他技术，如.NET 远程处理，以创建服务。  
   
   有关面向服务体系结构的详细信息，请参阅"服务接口"处[ http://go.microsoft.com/fwlink/?LinkId=46185 ](http://go.microsoft.com/fwlink/?LinkId=46185)和"面向服务的集成"， [ http://go.microsoft.com/fwlink/?LinkId=46186 ](http://go.microsoft.com/fwlink/?LinkId=46186)。  
   
 ## <a name="reader-guidance"></a>读者指南  
- 此解决方案的文档假定您熟悉[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]和 Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]。 并假定您了解有关企业应用程序集成和 Web Services 的基本概念。  
+ 此解决方案的文档假定您熟悉[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]和 Microsoft [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]。 它还假定您了解有关企业应用程序集成和 web 服务的基本概念。  
   
  此外，若要阅读并遵循开发人员文档，应熟悉如何使用生成应用程序[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]并熟悉如何执行以下任务： 创建项目、 设置引用以及调试和测试 BizTalk解决方案。  
   
-## <a name="credit-card-reporting-at-woodgrove-bank"></a>Woodgrove Bank 的信用卡报告  
- 面向服务的结构解决方案示例是 Woodgrove Bank 的信用卡余额报告服务。 尽管银行是虚构的但方案并不是-该方案基于实际的已部署的客户应用程序。  
+## <a name="credit-card-reporting-at-woodgrove-bank"></a>报告在 Woodgrove Bank 的信用卡  
+ 面向服务的体系结构解决方案是报告服务的 Woodgrove Bank 的信用卡余额。 尽管银行是虚构的但方案并不是-该方案基于实际的已部署的客户应用程序。  
   
- 在该方案中，对信用卡余额的请求来自两个来源：  
+ 在方案中，对信用卡余额的请求来自两个方面：  
   
 - 交互式语音应答 (IVR) 应用程序。  
   
-- 交互式客户端，例如网页或自定义客户端应用程序。  
+- Web 页面或自定义客户端应用程序之类的交互式客户端。  
   
-  该解决方案通过 MQSeries 接收来自 IVR 应用程序的请求。 它通过使用 HTTP 和 SOAP 的 Web Services 处理来自交互式客户端的请求。  
+  该解决方案接收来自 IVR 应用程序通过 MQSeries 的请求。 它处理来自交互式客户端通过使用 HTTP 和 SOAP 的 web 服务请求。  
   
-  新的面向服务的结构应用程序通常需要使用采用早期技术的旧版应用程序，同时也需要使用现代应用程序，例如使用 Web Services 的网站。 该方案进行建模这一现实世界要求-IVR 应用程序表示旧版应用程序，客户服务客户端应用程序时，是现代。  
+  新的面向服务应用程序通常需要使用的旧版应用程序使用较旧技术，同时也与现代应用程序，如使用 web 服务的网站的体系结构。 该方案进行建模这一现实世界要求-IVR 应用程序表示旧版应用程序，客户服务客户端应用程序时，是现代。  
   
-  Woodgrove Bank 应用程序使用三个后端原有系统中的数据来响应请求：  
+  Woodgrove Bank 应用程序使用三个后端，从旧系统，用于对请求作出响应的数据：  
   
-- 一个提供信用总限额的应用程序。 此应用程序为大型机上的 SAP 系统。  
+- 一个提供信用总限额的应用程序。 这是大型机上的 SAP 系统。  
   
-- 一个用于根据帐户来报告挂起事务总数的挂起事务系统。 此系统为大型机或 AS/400 系统。 该解决方案使用 Web Services 和 Microsoft Host Integration Server (HIS) 与大型机或 AS/400 系统进行通信。  
+- 挂起事务系统报告事务挂起针对帐户的总金额的一个。 此系统为大型机或 AS / 400 系统。 该解决方案使用 web 服务和 Microsoft Host Integration Server (HIS) 与大型机或进行通信 / 400 系统。  
   
-- 一个付款跟踪系统，用于提供对系统进行的最近一次付款。 此付款跟踪系统可以使用 MQSeries 来实现。  
+- 付款跟踪系统，用于提供对系统所做的最近付款。 可以使用 MQSeries 达到付款跟踪系统。  
   
-  在收集和编译了原有系统中的信息后，该解决方案会将响应发送回源应用程序，从而也将响应发送给客户。  
+  收集并编译了原有系统中的信息后, 解决方案将响应发送回原始应用程序，因此，给客户。  
   
-## <a name="business-requirements"></a>业务需求  
- 由于信用报告应用程序将实时响应客户请求，因此为了迅速处理这些请求，该应用程序必须具有低延迟时间。 此外，它还必须能够同时处理大量的请求。 该解决方案将使用敏感信息和公共接口，因此安全性十分重要。 最后，还需要确保服务可靠性。  
+## <a name="business-requirements"></a>业务要求  
+ 由于信用报告应用程序实时响应客户请求，它必须具有较低的延迟，若要快速处理请求。 此外，它还必须能够处理大量的并发请求数。 该解决方案使用敏感信息和一个公共接口，因此安全性十分重要。 最后，该服务必须是可靠。  
   
  有关解决方案如何满足这些要求的信息，请参阅[开发面向服务的解决方案](../core/developing-a-service-oriented-solution.md)。  
   
 ## <a name="performance-characteristics"></a>性能特征  
- 为了满足上述业务需求，该方案具有以下性能特征：  
+ 为了满足业务要求，该方案具有以下性能特征：  
   
--   每秒 40 个传入请求的持续吞吐量。  
+-   每秒 40 个传入请求的持续的吞吐量。  
   
 -   每秒 100 个传入请求的峰值吞吐量。  
   
--   在 1000 毫秒内为 90% 的请求提供服务（在 BizTalk Server 内部和外部）。  
+-   90%的请求 （传入和传出 BizTalk Server) 在 1000 毫秒内提供服务。  
   
--   在 2000 毫秒内为 95% 的请求提供服务（在 BizTalk Server 内部和外部）。  
+-   95%的请求 （传入和传出 BizTalk Server) 在 2000 毫秒内提供服务。  
   
--   在 5000 毫秒内为 100% 的请求提供服务（在 BizTalk Server 内部和外部）。  
+-   100%的请求 （传入和传出 BizTalk Server) 在 5000 毫秒内提供服务。  
   
 > [!NOTE]
 >  这些时间不包括后端系统的延迟时间。  
   
-## <a name="three-versions-of-the-solution"></a>解决方案的三个版本  
- 该解决方案具有以下三个版本：  
+## <a name="three-versions-of-the-solution"></a>三个版本的解决方案  
+ 有三个版本的解决方案：  
   
-- 存根版本使用软件存根替换所有的后端系统。 这些存根模拟后端系统。 使用此版本，可以在单台计算机上快速部署和运行解决方案。  
+- 存根版本将替换所有后端系统使用软件存根。 这些存根模拟后端系统。 此版本提供了部署并运行该解决方案在单台计算机上的快速方法。  
   
-- 适配器版本使用 BizTalk 适配器来连接到后端系统。 此版本是实施解决方案时首先考虑使用的版本。 但是，如果使用适配器向后端系统发送消息，则在获取响应时会有较高的延迟时间。 尽管适配器自身只会造成很短的延迟，但 BizTalk Server 的分布式结构要求适配器与使用 MessageBox 的业务流程主机实例进行通信。 这会导致消息在适配器与该数据库之间往返，从而影响延迟时间。  
+- 适配器版本使用 BizTalk 适配器来连接到后端系统。 此版本是如何首先想象来实现此解决方案。 但是，将消息发送到后端系统使用的适配器有明显的延迟在获取响应。 虽然适配器本身无法提供延迟非常低，BizTalk Server 的分布式的结构要求适配器与使用 messagebox 的业务流程主机实例进行通信。 这给数据库带来了往返行程，从而影响延迟时间。  
   
-- 内联版本使用与后端系统直接进行通信的内联代码来替换适配器。 解决方案的内联版本具有最低的延迟时间和最高的吞吐量。  
+- 内联版本使用直接与后端系统进行通信的内联代码替换适配器。 该解决方案的内联版本具有最低的延迟和最高的吞吐量。  
   
-  部署指南为生成和部署该解决方案的上述三个版本提供了指导信息，并且在每个版本中都提供了模拟通过 HIS 连接到挂起事务系统的方法。 有关生成和部署解决方案的信息，请参阅[部署面向服务的解决方案](../core/deploying-the-service-oriented-solution.md)。  
+  部署指南为构建和部署的解决方案，所有三个版本，以及提供一种方法，在每个版本中，以模拟通过 HIS 连接到挂起事务系统提供说明。 有关生成和部署解决方案的信息，请参阅[部署面向服务的解决方案](../core/deploying-the-service-oriented-solution.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [面向服务的解决方案](../core/service-oriented-solution.md)

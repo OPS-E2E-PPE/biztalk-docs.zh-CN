@@ -1,5 +1,5 @@
 ---
-title: SFT HL7 消息中的 |Microsoft 文档
+title: HL7 消息中的 SFT |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 58cf1536d8619e47a9a33c77e4f95387e0ebb559
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c8c53698a9ddce80ed466de17c67e6d5ebf7bf47
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206165"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289175"
 ---
-# <a name="sft-in-hl7-messages"></a>SFT HL7 消息中
-[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]支持将软件段 (SFT) 添加到消息。 SFT 细分市场提供有关用作发送应用程序的软件产品的其他信息。 SFT 段主要用于诊断。 作为 HL7 v2.5 标准的一部分，SFT 段会显示在应用程序确认。  
+# <a name="sft-in-hl7-messages"></a>HL7 消息中的 SFT
+[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] 将软件领域 (SFT) 添加到消息的支持。 SFT 段提供用作发送应用程序的软件产品相关的其他信息。 SFT 段主要用于诊断。 标准 HL7 版本 2.5 的一部分，SFT 段会显示在应用程序确认。  
   
-## <a name="message-instance-with-sft-segment"></a>使用 SFT 段消息实例  
- 使用以下过程来创建一个 ADT^A01.txt 消息具有一个 SFT 段。  
+## <a name="message-instance-with-sft-segment"></a>SFT 段的消息实例  
+ 使用以下过程来创建一个 ADT^A01.txt 消息具有 SFT 段。  
   
 > [!NOTE]
->  当你在记事本中创建此消息时，删除回车符后的最后一行。  
+>  在记事本中创建此消息，请删除回车符后的最后一行。  
   
-#### <a name="to-create-an-adta01txt-message-with-an-sft-segment"></a>若要创建一个 ADT^A01.txt 消息具有一个 SFT 段  
+#### <a name="to-create-an-adta01txt-message-with-an-sft-segment"></a>若要创建一个 ADT^A01.txt 消息具有 SFT 段  
   
 1.  打开记事本。  
   
@@ -104,9 +104,9 @@ ms.locfileid: "22206165"
   
 3.  保存该文件，然后关闭记事本。  
   
-4.  检查源方的确认文件夹。  
+4.  检查源参与方的确认文件夹。  
   
-     此消息的正文确认包含消息的 SFT 段。 个以上的消息 ACK 是：  
+     此消息的正文确认包含消息的 SFT 段。 以上消息确认信息是：  
   
     ```  
     MSH|^~\&|Tutorial_BatchDest||Tutorial_ADTSystem|MCM|20070508175311||ACK^A01^ACK|000001|P|2.5|||AL  
@@ -114,6 +114,6 @@ ms.locfileid: "22206165"
     SFT|ST^A^1^2^ISO^String&String&DNS^AM^String&String&DNS^P^String|String|String|String|String|DTM^H  
     ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [HL7 消息传送](../../adapters-and-accelerators/accelerator-hl7/hl7-messaging.md)   
-[了解 HL7 快捷键和提供的 BizTalk 工具](../../adapters-and-accelerators/accelerator-hl7/learn-the-hl7-accelerator-and-the-biztalk-tools-available.md)
+[了解 HL7 加速器及可用的 BizTalk 工具](../../adapters-and-accelerators/accelerator-hl7/learn-the-hl7-accelerator-and-the-biztalk-tools-available.md)

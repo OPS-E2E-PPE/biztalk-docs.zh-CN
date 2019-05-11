@@ -1,5 +1,5 @@
 ---
-title: 步骤 12： 配置业务流程形状 |Microsoft Docs
+title: 步骤 12:配置业务流程形状 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,17 +16,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d269fa177e7c0da857fb903cef5013f434554d17
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 095413899df297eba4912d3f4d495527ec666d5e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991470"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289010"
 ---
-# <a name="step-12-configure-orchestration-shapes"></a>步骤 12： 配置业务流程形状
+# <a name="step-12-configure-orchestration-shapes"></a>步骤 12:配置业务流程形状
 在此步骤中，若要删除的配置不完全的智能标记完成业务流程形状的配置。 您指定**DoorbellOutputMessage**作为输出的第一个转换过程中，指定**DoorbellMap.btm**作为该过程中使用的映射。 然后指定**DoorbellFinalMessage**作为第二个输出转换过程中，并添加使其更加丰富的消息的其他字段数据的表达式。  
   
- **先决条件：** [知识库文章 941261](http://support.microsoft.com/kb/941261)必须设置业务流程配置之前应用。  
+ **先决条件：**[知识库文章 941261](http://support.microsoft.com/kb/941261)必须设置业务流程配置之前应用。  
   
 ### <a name="to-configure-orchestration-shapes"></a>若要配置业务流程形状  
   
@@ -94,7 +94,7 @@ ms.locfileid: "36991470"
     > [!NOTE]
     >  前面的第一个块是文本的硬编码的 XML 标头的示例。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]序列化程序需要标头段。 您可以自定义这些标头值根据您的环境需求。 前面的文本的第二个块定义多部分消息中所需的三个消息部分。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]序列化程序需要多部分消息。 前面的文本的第三个块包含升级的属性的[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]HL7 平面文件消息序列化为 XML 消息序列化程序检查。  
   
-    请继续执行[步骤 13： 创建和配置端口](../../adapters-and-accelerators/accelerator-hl7/step-13-create-and-configure-ports.md)。  
+    请继续执行[步骤 13:创建和配置端口](../../adapters-and-accelerators/accelerator-hl7/step-13-create-and-configure-ports.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [消息充实教程](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

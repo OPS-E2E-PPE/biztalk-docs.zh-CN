@@ -1,5 +1,5 @@
 ---
-title: 步骤 7： 创建和配置源参与方 |Microsoft Docs
+title: 步骤 7：创建并配置源参与方 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4708a682047ced4fa33ae34781fd88d379c5e70b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c1bc0b0981ebaeeca4e68d4139a8b49cb6ac7499
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968926"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65287901"
 ---
-# <a name="step-7-create-and-configure-a-source-party"></a>步骤 7： 创建和配置源参与方
+# <a name="step-7-create-and-configure-a-source-party"></a>步骤 7：创建并配置源参与方
 在此步骤中，创建并配置源参与方，并分配要启用消息标头转换为传出消息的发送端口。  
   
 ### <a name="to-create-and-configure-a-source-party"></a>若要创建和配置源参与方  
@@ -45,4 +45,4 @@ ms.locfileid: "36968926"
   
 9. 选择**确认**选项卡。有关**确认类型**，选择**OriginalMode**，然后单击**保存**。  
   
-   请继续执行[步骤 8： 重启 BizTalk Server](../../adapters-and-accelerators/accelerator-hl7/step-8-restart-biztalk-server.md)。
+   请继续执行[步骤 8:重启 BizTalk Server](../../adapters-and-accelerators/accelerator-hl7/step-8-restart-biztalk-server.md)。

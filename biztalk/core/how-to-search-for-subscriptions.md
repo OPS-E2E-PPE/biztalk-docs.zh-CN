@@ -17,24 +17,24 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 07230ace1e097d71e728110b8f2280e903ea67b8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 475510273ec8d97c7aa848667967c6917fc2c61c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023243"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334805"
 ---
 # <a name="how-to-search-for-subscriptions"></a>如何搜索订阅
-可以使用**查询**BizTalk Server 管理控制台来搜索订阅中的选项卡。 当希望查看系统中定义的所有订阅时，这就非常有用。 在排除路由故障时，您可以查看是不是由于某些订阅未正确设置而导致了路由故障。  
+可以使用**查询**BizTalk Server 管理控制台来搜索订阅中的选项卡。 当你想要查看所有系统中定义的订阅时，这很有用。 当路由故障排除，可以查看订阅如果未正确配置其中任何一个，从而导致了路由故障。  
 
-## <a name="prerequisites"></a>必要條件  
- 若要执行此过程，则必须以 BizTalk Server Operators 组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 若要执行此过程，必须以 BizTalk Server Operators 组的成员的身份登录。  
 
-### <a name="to-search-for-subscriptions"></a>搜索订阅  
+### <a name="to-search-for-subscriptions"></a>若要搜索订阅  
 
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]。  
 
-2. 在控制台树中，展开“[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]”，然后单击“BizTalk 组”。  
+2. 在控制台树中，展开[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，然后单击 BizTalk 组。  
 
 3. 在详细信息窗格中，单击**新查询**选项卡。  
 
@@ -45,10 +45,10 @@ ms.locfileid: "37023243"
 
    |          项           |                                    Description                                    |
    |-------------------------|-----------------------------------------------------------------------------------|
-   |   **最大匹配数**   |                         要显示的匹配数。                         |
-   | **服务实例 ID** |               您可以按服务实例 ID 对订阅进行筛选。                |
-   |    **服务名称**     |                   您可以按服务名对订阅进行筛选。                   |
-   |  **订阅类型**  | 您可以按“激活订阅”或“实例订阅”对订阅进行筛选。 |
+   |   **最大匹配数**   |                         若要显示的匹配项的数目。                         |
+   | **服务实例 ID** |               您可以筛选订阅的服务实例 id。                |
+   |    **服务名称**     |                   可以按服务名称来筛选订阅。                   |
+   |  **订阅类型**  | 您可以筛选由激活订阅的订阅或实例订阅。 |
 
 
 6. 完成**值**根据需要将所选内容中所做的列**字段名**列。  

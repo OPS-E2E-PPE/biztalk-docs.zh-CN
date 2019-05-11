@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 69ae115eef4440490fd4fc5ed4f40c5600b6cdb2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9199b959c4a120f294ef5cf30739bafccf901690
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37016970"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65266480"
 ---
-# <a name="unable-to-find-match-for-inbound-body-path-expression"></a>找不到入站主体路径表达式的匹配项
+# <a name="unable-to-find-match-for-inbound-body-path-expression"></a>找不到入站的正文路径表达式的匹配项
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                    |
@@ -33,10 +33,10 @@ ms.locfileid: "37016970"
 |  消息正文   |       找不到入站的正文路径表达式的匹配项"{0}"消息中       |
 
 ## <a name="explanation"></a>解释  
- 对传入消息执行的正文路径表达式未返回任何匹配项。  
+ 执行对传入消息的正文路径表达式未返回任何匹配项。  
 
 ## <a name="user-action"></a>用户操作  
- 确保正文路径表达式正确，并且传入消息具有正确数据。  
+ 请确保正文路径表达式正确，并且传入消息具有正确的数据。  
 
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
 

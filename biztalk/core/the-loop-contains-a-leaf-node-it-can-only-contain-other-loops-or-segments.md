@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8d88e0fb114255d19310eefb87e00c820b17420
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8d603e961218bf3f1c0c2597d46fa4be0d7b8e93
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014230"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65277997"
 ---
 # <a name="the-loop-contains-a-leaf-node-it-can-only-contain-other-loops-or-segments"></a>循环包含叶节点。 它只能包含其他循环或段
 ## <a name="details"></a>详细信息  

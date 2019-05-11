@@ -12,17 +12,17 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b3752348a5cc9273ad203b78b77b58bde33bd141
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e8013921cbff0e1723aa6c41d48fae57ad3e1fb9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981710"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400819"
 ---
 # <a name="creating-a-custom-resolver"></a>创建自定义冲突解决程序
 中的冲突解决程序和适配器提供程序框架实现[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]使用名为调度程序的管道组件和名为 ItineraryReceive 和 ItinerarySend 的管道。  
   
- 调度程序管道组件有四个属性：**验证、 已启用、 终结点，** 并**MapName**。 **终结点**属性可以包含冲突解决程序连接字符串值如下所示，其中**UDDI:\\ \\** 表示要使用 （根的解析类型名字对象）。  
+ 调度程序管道组件都具有四个属性：**验证，启用终结点，** 并**MapName**。 **终结点**属性可以包含冲突解决程序连接字符串值如下所示，其中**UDDI:\\ \\** 表示要使用 （根的解析类型名字对象）。  
   
 ```  
 UDDI:\\serverUrl=http://localhost/uddi;serviceName=OrderPurchaseToOrderPost;serviceProvider=Microsoft.Practices.ESB  
@@ -62,7 +62,7 @@ UDDI:\\serverUrl=http://localhost/uddi;serviceName=OrderPurchaseToOrderPost;serv
   
  **ResolverConfig**部分中的每个冲突解决程序节点下，可配置您的解析程序可能需要的特定环境中运行的其他属性。 若要访问的配置，您的解析程序必须公开采用的类型参数的构造函数**Microsoft.Practices.ESB.Configuration.Resolver**。 在解析程序实现中，配置属性可以访问使用**ReadResolverConfigByKey**方法**ResolverConfigHelper**类; 若要执行此操作，将传递的参数中最初传递给构造函数中，然后传入名称值有问题。 如果没有名称-值对中指定**resolverConfig**节点，将使用默认的无参数构造函数来实例化您的解析程序。  
   
- 两个通用描述、 发现和集成 (UDDI) 3 已在配置中定义冲突解决程序： UDDI 3 和 UDDI 3 SOASOFTWARE。 这些冲突解决程序都使用相同的基础程序集，但它们提供不同的配置，以支持不同的 UDDI 3.0 兼容注册表使用不同的统一资源标识符 (URI) 格式和安全要求。 如果你需要配置 UDDI 3.0 兼容的注册表，除了那些已支持为其他名字对象，可以使用以下配置属性：  
+ 两个通用描述、 发现和集成 (UDDI) 3 已在配置中定义冲突解决程序：UDDI 3 和 UDDI 3 SOASOFTWARE。 这些冲突解决程序都使用相同的基础程序集，但它们提供不同的配置，以支持不同的 UDDI 3.0 兼容注册表使用不同的统一资源标识符 (URI) 格式和安全要求。 如果你需要配置 UDDI 3.0 兼容的注册表，除了那些已支持为其他名字对象，可以使用以下配置属性：  
   
 - **cacheTimeoutValue**  
   
@@ -138,7 +138,7 @@ UDDI:\\serverUrl=http://localhost/uddi;serviceName=OrderPurchaseToOrderPost;serv
   
  **解析**结构，位于 Microsoft.Practices.ESB.Resolver 项目还定义中存储的名称/值对**字典**实例。 **解析**结构揭示了多个属性; 下表列出了最相关的这些。 **CreateResolverDictionary**方法**ResolutionHelper**类可用于生成一个冲突解决程序字典，其中包含最常用的关键字，使用空字符串值。 **字典**实例支持的自定义冲突解决程序名称/值对的具体实现通过添加**冲突解决程序**类。  
   
-|“属性”|数据类型|数据类型|数据类型|  
+|属性|数据类型|数据类型|数据类型|  
 |--------------|---------------|---------------|---------------|  
 |**TransformType**|String|**ActionField**|String|  
 |**成功**|Boolean|**EpmRRCorrelationTokenField**|String|  
@@ -173,7 +173,7 @@ UDDI:\\serverUrl=http://localhost/uddi;serviceName=OrderPurchaseToOrderPost;serv
   
 1.  创建实现的类的程序集**IResolveProvider**接口并包含**解决**方法，它返回的实例作为冲突解决程序事实**字典**类。  
   
-2.  通过将其添加到 Esb.config 配置文件使用注册冲突解决程序**\<冲突解决程序\>** 元素，其中包含作为根名字对象**名称**属性和完全限定的程序集同名**类型**属性。  
+2.  通过将其添加到 Esb.config 配置文件使用注册冲突解决程序 **\<冲突解决程序\>** 元素，其中包含作为根名字对象 **名称** 属性和完全限定的程序集同名 **类型** 属性。  
   
 3.  （可选）创建架构定义的根名字对象和查询参数，并将其保存在 ESB。Schemas.Resolvers 文件夹。 该名称应采用现有 ESB 命名约定;这意味着它应使用的名称后追加"_Resolution.xsd"的根名字对象。  
   

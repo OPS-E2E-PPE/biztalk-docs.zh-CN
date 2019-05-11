@@ -15,38 +15,38 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a62808e556ae7870c52b7b4101c86ec697a04f1e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ee9292e97c3511e08c8fb053fb2d49c144258df7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967494"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280540"
 ---
 # <a name="the-supply-chain-solution"></a>供应链解决方案
-技术有助于解决与业务流程和数据通信相关的业务难题。 信息技术 (IT) 系统可以帮助高科技公司，将他们与贸易合作伙伴的通信从分离且不兼容的流程转变为一体化的标准流程。  
+技术可以帮助解决与业务流程和数据通信相关的业务挑战。 信息技术 (IT) 系统可以帮助高科技公司，将与从断开连接、 不兼容的过程集成到其合作伙伴的通信进行标准化的。  
   
 ## <a name="supply-chain-integration"></a>供应链集成  
- 即使供应链中各个合作伙伴的流程不兼容，您也可以将其集成。 您可以使用以下技术将流程集成。对于多个特征为自定义连接的系统，该技术可将其转换为一种基于一个标准连接的系统。 有关此类解决方案的示例，请参阅下图中，并将其与系统中的图中所示比较[供应链挑战](../../adapters-and-accelerators/accelerator-rosettanet/the-supply-chain-challenge.md)。  
+ 即使供应链中各个合作伙伴的流程不兼容，可以将其集成。 您可以将其转换为一种基于标准的单一连接的自定义连接的各种特征包括一个系统的技术。 有关此类解决方案的示例，请参阅下图中，并将其与系统中的图中所示比较[供应链挑战](../../adapters-and-accelerators/accelerator-rosettanet/the-supply-chain-challenge.md)。  
   
- ![&#60;不更改&#62;](../../adapters-and-accelerators/accelerator-rosettanet/media/rn3-integrated-supply-chain-scenario.gif "RN3_Integrated_Supply_Chain_Scenario")  
+ ![&#60;No Change&#62;](../../adapters-and-accelerators/accelerator-rosettanet/media/rn3-integrated-supply-chain-scenario.gif "RN3_Integrated_Supply_Chain_Scenario")  
   
- 在此系统中，贸易合作伙伴间的标准接口为 RosettaNet 实现框架 (RNIF) 连接。 此系统用自动 RNIF 连接代替了所有自定义交互和手动交互，从而实现了与 RosettaNet 的兼容。 这并不妨碍公司自定义各自的系统，不妨碍公司与合作伙伴创建协议，也不妨碍在希望使用或必须使用时使用其他通信设备。 合作伙伴可以根据自己的需要灵活地自定义此系统。 但这毕竟意味着，在日常的数据通信中所有的合作伙伴要使用统一的流程。  
+ 在此系统中，贸易合作伙伴之间的标准接口是 RosettaNet 实现框架 (RNIF) 连接。 系统正将替换与自动 RNIF 连接的所有自定义和手动交互与 RosettaNet 兼容实现。 这不会阻止从自定义其系统，与合作伙伴，创建自己的协议或时他们希望使用或必须使用其他通信设备的公司。 此系统使合作伙伴可以灵活地自定义以便实现自己需求的系统。 但是，它意味着所有合作伙伴为日常的数据通信都使用一致的流程。  
   
- 此供应链中的所有公司共享一个 RNIF 连接。 对于大型公司，可以设置使用 MicrosoftBizTalk 服务器的完全自动化的企业系统和[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]。 对于某个贸易合作伙伴，您也可以让其使用已安装的任何 RosettaNet 兼容实现，或继续使用 EDI 系统。 另一方面，小型公司可能不具备安装完整 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 系统所需的资源。 对于这些公司而言，您可以设置 Web Services 使他们能够连接到供应链系统。 在这种情况下，唯一的技术要求是 Web 浏览器。 在上述几种情况下，系统中的所有公司都使用统一的方法与合作伙伴连接。  
+ 在此供应链中的所有公司都共享一个 RNIF 连接。 对于大型公司，可以设置使用 MicrosoftBizTalk 服务器的完全自动化的企业系统和[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]。 此外可以启用使用它们已安装的任何 RosettaNet 兼容实现某个贸易合作伙伴也可以继续使用 EDI 系统。 小型公司，但是，可能不具有完整的资源[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]系统。 对于它们，您可以设置 Web 服务，使他们能够连接到供应链系统。 在这种情况下，唯一的技术要求是 Web 浏览器。 在每个这种情况下，在系统中的所有公司与合作伙伴连接到都充分利用统一的方法。  
   
 ## <a name="the-benefits-of-standardization"></a>标准化的优点  
- 公司可以通过电子手段进行数据交换，而不必加入完整的集成系统。 但是，如果不同的贸易伙伴以不同的格式维护数据，而且他们的系统通过不同的数据协议进行数据传输，那么，可能需要对数据交换进行大量的设计与自定义工作。 如果每个已连接的合作伙伴将其数据交换所用的格式与协议标准化，那么，将极大地提高业务往来的效率。  
+ 公司可以通过电子方式交换数据，而不必加入完整的集成系统。 但是，如果维护单独的贸易合作伙伴的数据在不同的格式，而其系统传输不同的数据协议，数据交换可能需要大量工作来设计和自定义。 如果每个已连接的合作伙伴标准化格式并使用与数据交换协议，极大地提高业务往来的效率。  
   
- RosettaNet 组织已创建了用于定义合作伙伴如何通过 Internet 交换消息的标准 (RNIF)，以及合作伙伴如何构建消息内容的标准 - 合作伙伴接口流程 (PIP)。 RosettaNet 即时可用证书可以确保实现互操作性。 如果集成解决方案是经 RosettaNet 认证的，那么您可以将其扩展到多个合作伙伴。 它可以处理现有解决方案，不管现有解决方案是集成技术（如 EDI）还是后端系统（如 Oracle 和 SAP）。  
+ RosettaNet 组织已创建定义合作伙伴交换消息的方式通过 Internet (RNIF) 和合作伙伴如何构建消息的内容的标准-合作伙伴接口流程 (Pip)。 RosettaNet 即时可用证书可以确保互操作性。 如果集成解决方案是经 RosettaNet 认证，你可以将其扩展到多个合作伙伴。 它可以处理现有解决方案，无论它们是集成技术，例如 EDI 或后端系统，如 Oracle 和 SAP。  
   
- RosettaNet 非常关注高科技制造业的特定需求。 如果供应链中的所有合作伙伴将架构和消息处理建立在相同标准的基础之上，则会降低总体工作量、成本以及与数据交换相关的风险，并可获得满足其特定需求的系统。  
+ RosettaNet 非常关注高科技制造业的特定需求。 当在供应链中的所有合作伙伴都基于其架构和消息处理建立在相同的标准时，它们降低了总体工作量、 成本和风险关联与数据交换，并可获得满足其特定需求的系统。  
   
-## <a name="visibility-and-cost"></a>可视化和成本  
- 通过集成系统，您可以连接到每个合作伙伴，提供流程绑定机制，解决存在的差异。 集成系统按照行业标准将数据交换自动化，因而运行业务流程只需极少的人工干预。 这就为通信提供了通用性，使您可以从中获取技术投资带来的收益。  
+## <a name="visibility-and-cost"></a>可见性和成本  
+ 通过集成系统，您可以连接到每个合作伙伴，提供流程绑定机制和解决它们之间的差异。 集成的系统会自动根据行业标准数据交换，以便业务流程可以运行最少的人工干预。 这为通信，提供了通用性并允许您的技术投资中获益。  
   
- 通过集成系统，您可以更好地了解自己的库存在整个供应链中所处的位置。 您可以更快更准地评估需求，并顺应趋势，因时而动。 还可以确定订单在供应链中的位置，并准确评估系统的运行状况。  
+ 通过集成系统，您可以更好地了解到库存位置在整个供应链。 可以更快速、 准确地说，评估需求，并顺应趋势。 可以确定订单在供应链中的位置，并准确评估系统的运行状况。  
   
- 有了对端对端供应链更充分的了解，您可以通过减少库存、加快库存周转速度以及降低运费来降低成本。 借助自动化系统，您可以通过减少手动数据输入和错误更正功能来提高职员工作效率并降低成本。 由于更多的使用了自动流程，您还可以减少其他通信成本。  
+ 通过增加可见性的端到端供应链，可以通过减少库存、 加快库存周转和降低运费成本减少你的成本。 借助自动化系统，可以提高员工的工作效率，并通过减少手动数据条目和错误更正功能来降低成本。 由于越来越依赖自动化过程，可以减少其他通信成本。  
   
 ## <a name="see-also"></a>请参阅  
  [供应链方案示例](../../adapters-and-accelerators/accelerator-rosettanet/sample-supply-chain-scenario.md)   

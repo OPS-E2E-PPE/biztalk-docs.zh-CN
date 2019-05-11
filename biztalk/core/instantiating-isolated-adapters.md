@@ -1,5 +1,5 @@
 ---
-title: 实例化隔离的适配器 |Microsoft 文档
+title: 实例化独立的适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9e3090252f63221547604a4fdf88388bcbf8296f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 89f534ab91f940a179c765fba6f109a9da6df5ae
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257485"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65331835"
 ---
-# <a name="instantiating-isolated-adapters"></a>实例化隔离的适配器
-如前面所述，由 BizTalk Server 未实例化隔离的适配器。 而是在另一个进程中实例化并以此进程为宿主。 负责创建其传输代理的适配器**QueryInterface**，为**IBTTransportProxy**，然后调用**IBTTransportProxy**。**RegisterIsolatedReceiver**注册消息引擎。  
+# <a name="instantiating-isolated-adapters"></a>实例化独立的适配器
+如前面所述，独立的适配器是通过 BizTalk Server 未实例化。 相反，它们是实例化，在另一个进程中托管。 若要创建其传输代理的适配器负责**QueryInterface**，对于**IBTTransportProxy**，然后调用**IBTTransportProxy**。**RegisterIsolatedReceiver**向消息引擎注册。  
   
- 重新注册需要其配置和启用的适配器传递一个接收到消息引擎的位置。 适配器的主机进程凭据必须是 BizTalk 隔离主机用户组的成员。 只需使用模拟此处是不够的除非用户是该组的成员。 此外，该适配器将查询以确保它具有正确**ClassID**并且为该主机实例已配置的计算机上运行。 适配器已成功向其传输代理注册后，将其配置发送给它使用通过调用的 Load 方法**IPersistPropertyBag**接口。  
+ 注册需要适配器传递一个其配置和启用的接收到消息引擎的位置。 适配器的主机进程凭据必须是 BizTalk Isolated Host Users 组的成员。 只需在此处使用模拟是不够的除非用户是该组的成员。 此外，查询该适配器以确保它具有正确**ClassID**和已配置为该主机实例的计算机上运行。 向其传输代理，该适配器已成功注册后，将其配置发送给它使用通过调用 Load 方法**IPersistPropertyBag**接口。  
   
- 下图说明了这一序列的 API 调用。 以蓝色表示接口实现的适配器。  
+ 下图说明了这一序列的 API 调用。 蓝色的接口由适配器实现。  
   
  ![](../core/media/isolated-adapter-init.gif "Isolated_adapter_init")  
   
- 下面的代码片段阐释了注册 API 调用：  
+ 下面的代码段演示如何注册 API 调用：  
   
 ```  
 using Microsoft.BizTalk.TransportProxy.Interop;  
@@ -57,8 +57,8 @@ private IBTTransportProxy transportProxy;
 }  
 ```  
   
- **实现提示：** 建议适配器保留工作正在进行的计数。 适配器应阻止**终止**直到消息计数已达到零。 在接收端此工作包括尚未发布到 BizTalk Server 任何未完成的请求。 响应消息还未发送到接收适配器后**终止**已调用。  
+ **实现提示：** 我们建议适配器对正在进行的工作的计数。 适配器应该一直阻止**Terminate**直到消息计数归零。 在接收端这项工作包括尚未发布到 BizTalk Server 的任何未完成请求。 响应消息不传送给接收适配器后**Terminate**已调用。  
   
- 对于发送适配器，应适当地处理正在进行的消息。 这意味着应从要阻止不止一次发送消息的适配器的私有应用程序消息队列中删除已成功传递的任何消息。  
+ 对于发送适配器，应适当地处理正在进行中的消息。 这意味着应从要阻止消息多次发送适配器的专用应用程序消息队列中删除已成功传递任何消息。  
   
- 后**终止**称为 the Messaging Engine 不接受请求以发布新消息，但对于请求-响应对响应消息除外。
+ 之后**Terminate**调用消息引擎不接受请求发布新消息，但要求-响应对的响应消息除外。

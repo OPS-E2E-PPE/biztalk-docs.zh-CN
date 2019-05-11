@@ -20,21 +20,21 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: faae7013c824926adea67feab296e1993f93e326
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cce21530c975356b811378f437cddaf8eb64612d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288533"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65321772"
 ---
 # <a name="using-soap-headers-in-orchestrations"></a>在业务流程中使用 SOAP 标头
 业务流程使用属性架构来定义 SOAP 标头上下文属性。 使用 BizTalk 编辑器可以设置 SOAP 标头上下文属性。  
   
 ## <a name="defining-soap-header-context-properties-with-property-schemas"></a>使用属性架构定义 SOAP 标头上下文属性  
- 若要在业务流程中使用已定义的 SOAP 标头上下文属性，您需要一个属性架构。 属性架构必须具有的目标命名空间**http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**，和**属性架构基**属性设置为**MessageContextPropertyBase**。 属性架构中的每个根元素名称必须与已定义的 SOAP 标头的根元素名称匹配。 然后，可以使用属性架构的命名空间和属性名称设置上下文属性的值。  
+ 若要在业务流程中使用已定义的 SOAP 标头上下文属性，您需要一个属性架构。 属性架构必须具有的目标命名空间**http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**，和**Property Schema Base**属性设置为**MessageContextPropertyBase**。 属性架构中的每个根元素名称必须与已定义的 SOAP 标头的根元素名称匹配。 然后，可以使用属性架构的命名空间和属性名称设置上下文属性的值。  
   
 > [!NOTE]
->  属性架构的命名空间是不同的目标架构的命名空间 (**http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**)。 命名空间可以是任何字符串；但是，它通常默认为项目的名称。  
+>  属性架构的命名空间是不同于目标架构的命名空间 (**http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**)。 命名空间可以是任何字符串；但是，它通常默认为项目的名称。  
   
  下面的代码演示分配属性架构命名空间的 SOAP 标头上下文属性**SOAPHeader**属性名称为**OrigDest**:  
   
@@ -95,7 +95,7 @@ RequestMessageInstance(SOAPHeader.OrigDest) = xmlDoc.OuterXml;
  下面的代码显示了如何访问响应 SOAP 标头：  
   
 ```  
-stringVar = ResponseMessageInstance(SOAPHeader.OrigDest);  
+stringVar = ResponseMessageInstance(SOAPHeader.OrigDest);  
 ```  
   
  上下文属性中包含的值是包含 XML 数据的字符串。 设置使用 BizTalk 表达式编辑器，在这些字符串**消息分配**或**表达式**形状。 加载中的字符串**XmlDocument**并使用 XPath 查询来访问特定字段。  

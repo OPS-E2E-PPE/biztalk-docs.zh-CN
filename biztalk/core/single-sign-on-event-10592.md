@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10592 |Microsoft Docs
+title: 单一登录：Event 10592 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b9fdf7259de2217c2e6cd616f58b3b1118bf991c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0bfd622db90bbafcb4d2af1b45ae2b2286e3345c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017253"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65270948"
 ---
-# <a name="single-sign-on-event-10592"></a>单一登录： 事件 10592
+# <a name="single-sign-on-event-10592"></a>单一登录：事件 10592
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                    |
@@ -28,12 +28,12 @@ ms.locfileid: "37017253"
 | 产品版本 |                                             [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                             |
 |    事件 ID     |                                                                       10592                                                                        |
 |  事件源   |                                                                       ENTSSO                                                                       |
-|    组件    |                                                                        N/A                                                                         |
+|    组件    |                                                                        不可用                                                                         |
 |  符号名称  |                                                           SSO_WARN_TICKET_DECRYPT_FAILED                                                           |
-|  消息正文   | 无法对票证进行解密。 票证无效或者可能已过期。%r<br /><br /> 应用程序名称: %1 %r<br /><br /> 错误代码： %2 |
+|  消息正文   | 无法解密该票证。 票证无效或者它可能具有 expired.%r<br /><br /> 应用程序名称: %1 %r<br /><br /> 错误代码： %2 |
   
 ## <a name="explanation"></a>解释  
  票证无效或者可能已过期。  
   
 ## <a name="user-action"></a>用户操作  
- 确认要使用的票证是有效的并且尚未过期。
+ 请确认你想要使用该票证有效，并且未过期。

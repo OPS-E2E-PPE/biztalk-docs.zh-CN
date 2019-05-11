@@ -18,29 +18,29 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 046e51424427973534d9e4defdbf6e8d58eb8b2f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 095a1c2a180c0592641cd791875f23d633d908c8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966246"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65337837"
 ---
 # <a name="how-to-enlist-or-unenlist-a-party-for-a-role"></a>如何登记或取消登记角色参与方
-本主题将介绍如何使用 BizTalk Server 管理控制台来登记或取消登记角色参与方。 登记角色参与方将为参与方指定角色，而取消登记角色参与方将从角色中删除该参与方。  
+本主题介绍如何使用 BizTalk Server 管理控制台来登记或取消登记角色参与方。 登记参与方的角色分配给该角色的参与方和取消登记参与方从角色中删除该参与方。  
   
- 登记或取消登记角色参与方时，请切记以下几点：  
+ 当登记或取消登记角色参与方时，请记住以下几点：  
   
--   登记角色参与方前，必须先创建要登记的参与方。 有关说明，请参阅[如何创建参与方](http://msdn.microsoft.com/library/f6feca1d-bc83-4fb6-981d-26c9e0d53044)。  
+-   您可以登记之前，必须创建参与方。 有关说明，请参阅[如何创建参与方](http://msdn.microsoft.com/library/f6feca1d-bc83-4fb6-981d-26c9e0d53044)。  
   
--   可在不重启应用程序的情况下，登记或取消登记角色参与方。  
+-   您可以登记或取消角色参与方登记而无需重新启动该应用程序。  
   
 > [!NOTE]
 >  应用程序开发人员可以登记或取消参与方登记在开发过程中，通过使用本主题中的过程。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  若要执行本主题中的过程，必须是 BizTalk Server Administrators 组的成员的帐户登录。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
   
-### <a name="to-enlist-or-unenlist-a-party-for-a-role"></a>登记或取消登记角色参与方  
+### <a name="to-enlist-or-unenlist-a-party-for-a-role"></a>若要登记或取消登记角色参与方  
   
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
@@ -48,7 +48,7 @@ ms.locfileid: "36966246"
   
 3. 单击**角色链接**，右键单击你想要登记或取消登记参与方，然后单击该角色链接**属性**。  
   
-4. 若要登记参与方，请执行以下操作：  
+4. 登记参与方，请执行以下操作：  
   
    -   单击**登记**单击要登记的参与方。  
   

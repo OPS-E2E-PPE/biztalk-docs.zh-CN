@@ -1,5 +1,5 @@
 ---
-title: 步骤 6： 创建发送端口以将 ^ A03 至 RX 系统使用文件适配器的消息 |Microsoft Docs
+title: 步骤 6：创建发送端口以将 ^ A03 至 RX 系统使用文件适配器的消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 95a9200d4c03f11f2feca89042bfb57ba36de345
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7674721e3c59ea9f7af0864b2c0790ebf9a1ab92
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004374"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288001"
 ---
-# <a name="step-6-create-a-send-port-to-deliver-the-adta03-message-to-the-rx-system-using-the-file-adapter"></a>步骤 6： 创建发送端口以将 ^ A03 至 RX 系统使用文件适配器的消息
+# <a name="step-6-create-a-send-port-to-deliver-the-adta03-message-to-the-rx-system-using-the-file-adapter"></a>步骤 6：创建发送端口以将 ^ A03 至 RX 系统使用文件适配器的消息
 在此步骤中，您创建的发送端口文件适配器时的药房系统 (RX)。  
 
 ### <a name="to-create-the-tutorialsendmsgrx-send-port"></a>若要创建 Tutorial_sendMsg_RX 发送端口  
@@ -78,4 +78,4 @@ ms.locfileid: "37004374"
 
 7. 在管理控制台中，单击**发送端口**，右键单击**Tutorial_sendMsg_RX**，然后单击**启动**。  
 
-   请继续执行[步骤 7： 创建一个发送端口以将 ^ A03 消息到他使用 MLLP 适配器](../../adapters-and-accelerators/accelerator-hl7/step-7-create-send-port-to-deliver-adt^a03-message-to-his-using-mllp-adapter.md)。
+   请继续执行[步骤 7:创建发送端口以将 ^ A03 消息到他使用 MLLP 适配器](../../adapters-and-accelerators/accelerator-hl7/step-7-create-send-port-to-deliver-adt^a03-message-to-his-using-mllp-adapter.md)。

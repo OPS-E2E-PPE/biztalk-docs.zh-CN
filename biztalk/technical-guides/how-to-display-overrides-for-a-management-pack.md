@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bc2a40fde14001668f94549240643160fd1af73a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b7b3757781f7567a10db56fceaa6b429309476e1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979654"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253418"
 ---
 # <a name="how-to-display-overrides-for-a-management-pack"></a>如何显示管理包的替代
 若要显示管理包的替代，请使用以下过程。  

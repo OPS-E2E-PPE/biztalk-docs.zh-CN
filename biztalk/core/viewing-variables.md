@@ -12,29 +12,29 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6a09c586e535d8670a0e130e23a6f90d38c1ab23
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9c2993de1711d47553638b47048d319d65b3ae6b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004934"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65320777"
 ---
 # <a name="viewing-variables"></a>查看变量
-可以采用两种模式查看变量：  
+你可以在两种模式中查看变量：  
   
-- 在跟踪存档数据时 - 脱机  
+- 当您正在跟踪存档的数据-脱机  
   
-- 在对实时数据进行交互调试时  
+- 当执行操作上的实时数据进行交互式调试  
   
-  在处理存档数据时，可以看到某些变量的状态为：  
+  当处理存档数据，您可以看到某些变量的状态是：  
   
-- 尚未在作用域中的变量  
+- 尚不支持范围内的变量  
   
 - 当前处于活动状态  
   
-- 单击该值可获取详细信息  
+- 可以单击了解详细信息的值  
   
-- 值已超出作用域；不能再访问任何详细信息  
+- 值已不在范围内;你不再能够访问任何详细信息  
   
 ## <a name="see-also"></a>请参阅  
  [使用“业务流程调试器”视图](../core/working-with-the-orchestration-debugger-view.md)

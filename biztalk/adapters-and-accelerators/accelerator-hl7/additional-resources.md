@@ -14,19 +14,19 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 44a3099fa34c4560c4a63de3d359b6f4b8ffc44a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a3e06e1d62eef7fa45111bed74b5f8f59d4ab31d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982006"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65248273"
 ---
 # <a name="additional-resources"></a>其他资源
 除了 Microsoft [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] MicrosoftBizTalk Server 帮助，有编程讨论此平台的其他资源。 有关这些资源的详细信息，请转到以下网站：  
   
 - MSDN 上 [http://go.microsoft.com/fwlink/?LinkId=25353](http://go.microsoft.com/fwlink/?LinkId=25353)  
   
-- GotDotNet: Microsoft[!INCLUDE[btsDotNetFramework](../../includes/btsdotnetframework-md.md)]社区， [http://go.microsoft.com/fwlink/?LinkId=25354](http://go.microsoft.com/fwlink/?LinkId=25354)  
+- GotDotNet:Microsoft[!INCLUDE[btsDotNetFramework](../../includes/btsdotnetframework-md.md)]社区， [http://go.microsoft.com/fwlink/?LinkId=25354](http://go.microsoft.com/fwlink/?LinkId=25354)  
   
 - Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]在 [http://go.microsoft.com/fwlink/?LinkId=25355](http://go.microsoft.com/fwlink/?LinkId=25355)  
   

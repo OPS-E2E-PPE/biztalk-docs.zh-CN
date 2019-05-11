@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2bfe15cf5aeab233c4ecef56f7b278e0646de5ad
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2d7ebd9b4bfab5c775ac35d2d9468282f5b345de
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015638"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292645"
 ---
 # <a name="unknown-or-unexpected-binding-element"></a>未知或意外的绑定元素
 ## <a name="details"></a>详细信息  
@@ -36,9 +36,9 @@ ms.locfileid: "37015638"
  此错误表明适配器找不到绑定中指定的用户定义的绑定元素。 主要与 Wcf-custom 和 Wcf-customisolated 适配器出现这种情况。  
 
 ## <a name="user-action"></a>用户操作  
- 使用以下过程验证绑定元素是否有效。  
+ 使用以下过程验证绑定元素有效。  
 
-#### <a name="to-verify-binding-elements-are-valid"></a>验证绑定元素是否有效  
+#### <a name="to-verify-binding-elements-are-valid"></a>若要验证绑定元素有效  
 
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
 
@@ -56,4 +56,4 @@ ms.locfileid: "37015638"
 
 8. 在 WCF **[**<em>传输类型</em>**] 传输属性**对话框中，单击**绑定**选项卡。  
 
-9. 确保配置中指定的绑定元素有效。
+9. 确保在配置中指定的绑定元素有效。

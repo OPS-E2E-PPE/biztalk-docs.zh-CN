@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f60a6cc6bcb98e01489e981a39370215744ab860
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c2760cfa52fc7e761829d3005bfecbb8bb40a728
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004038"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65303691"
 ---
 # <a name="message-enrichment-tutorial"></a>消息充实教程
 本教程提供了分步过程使用 Microsoft[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]解决特定业务问题： 消息充实问题。 消息充实教程介绍了需要添加或丰富的情况下，一条消息，不符合 HL7 和/或不完整。 这可能会出现应用程序，如患者注册应用程序，或您在安装消息与来自 Microsoft 的 XML 数据时可能发生[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]。  
@@ -45,7 +45,7 @@ ms.locfileid: "37004038"
   
 -   [步骤 1：配置应用程序池标识](../../adapters-and-accelerators/accelerator-hl7/step-1-configure-application-pool-identity.md)  
   
--   [步骤 2：创建新项目](../../adapters-and-accelerators/accelerator-hl7/step-2-create-a-new-project.md)  
+-   [步骤 2：创建一个新项目](../../adapters-and-accelerators/accelerator-hl7/step-2-create-a-new-project.md)  
   
 -   [步骤 3：为程序集分配强名称](../../adapters-and-accelerators/accelerator-hl7/step-3-assign-a-strong-name-to-the-assembly.md)  
   
@@ -63,7 +63,7 @@ ms.locfileid: "37004038"
   
 -   [步骤 10：创建业务流程](../../adapters-and-accelerators/accelerator-hl7/step-10-create-an-orchestration.md)  
   
--   [步骤 11：创建业务流程变量](../../adapters-and-accelerators/accelerator-hl7/step-11-create-orchestration-variables.md)  
+-   [步骤 11:创建业务流程变量](../../adapters-and-accelerators/accelerator-hl7/step-11-create-orchestration-variables.md)  
   
 -   [步骤 12：配置业务流程形状](../../adapters-and-accelerators/accelerator-hl7/step-12-configure-orchestration-shapes.md)  
   

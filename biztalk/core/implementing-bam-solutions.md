@@ -1,5 +1,5 @@
 ---
-title: 实现 BAM 解决方案 |Microsoft 文档
+title: 实现 BAM 解决方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,36 +12,36 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1a167f2991250c446bedcb6bb235739f5414454e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9abc0c5cc39a624746eff42397efd9b88a826196
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257165"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65332395"
 ---
 # <a name="implementing-bam-solutions"></a>实现 BAM 解决方案
-本部分介绍的方式来实现 BAM 解决方案，包括捕获感兴趣数据，将数据发送到 BAM，并修改的数据将发送到 BAM 由于变化的业务需求。  
+本部分介绍如何实现 BAM 解决方案，包括捕获数据感兴趣，将数据发送到 BAM，并修改的数据向 BAM 发送由于不断变化的业务要求。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [安装 BAM 事件软件](../core/installing-the-bam-eventing-software.md)  
+-   [安装 Bam-eventing 软件](../core/installing-the-bam-eventing-software.md)  
   
 -   [跟踪配置文件编辑器](../core/tracking-profile-editor.md)  
   
--   [实现事件流 BAM 活动](../core/implementing-bam-activities-with-event-streams.md)  
+-   [与事件流实现 BAM 活动](../core/implementing-bam-activities-with-event-streams.md)  
   
--   [BAM 侦听器是什么？](../core/what-is-the-bam-interceptor.md)  
+-   [BAM 侦听器概述](../core/what-is-the-bam-interceptor.md)  
   
 -   [如何创建自定义分析任务](../core/how-to-create-a-custom-analysis-task.md)  
   
--   [有关 BAM 事件发布的性能注意事项](../core/performance-considerations-for-bam-event-publishing.md)  
+-   [BAM 事件发布的性能注意事项](../core/performance-considerations-for-bam-event-publishing.md)  
   
--   [BAM 代码维护注意事项](../core/considerations-for-bam-code-maintenance.md)  
+-   [BAM 代码维护的注意事项](../core/considerations-for-bam-code-maintenance.md)  
   
--   [使用 BAM Api 的注意事项](../core/considerations-for-working-with-bam-apis.md)  
+-   [使用 BAM API 的注意事项](../core/considerations-for-working-with-bam-apis.md)  
   
--   [如何使用查找 BAM 数据扩充](../core/how-to-enrich-bam-data-using-lookups.md)  
+-   [如何使用查找的 BAM 数据扩充](../core/how-to-enrich-bam-data-using-lookups.md)  
   
--   [部署本地化的 BAM XML 文件](../core/deploying-localized-bam-xml-files.md)  
+-   [部署已本地化的 BAM XML 文件](../core/deploying-localized-bam-xml-files.md)  
   
--   [使用 BAM WCF 和 WF 拦截器](../core/using-the-bam-wcf-and-wf-interceptors.md)
+-   [使用 BAM WCF 和 WF 侦听器](../core/using-the-bam-wcf-and-wf-interceptors.md)

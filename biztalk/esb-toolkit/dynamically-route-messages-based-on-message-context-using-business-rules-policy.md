@@ -1,5 +1,5 @@
 ---
-title: 如何： 动态路由基于消息上下文中使用业务规则策略的消息 |Microsoft Docs
+title: 如何：动态路由基于消息上下文中使用业务规则策略的消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7406b0daed4374241bb92fdcb4afcdcd5acd77b9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4e13a2e214622027ee8e28980c4d7cbc97714bd7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973886"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306298"
 ---
-# <a name="how-to-dynamically-route-a-message-based-on-message-context-using-a-business-rules-policy"></a>如何： 动态路由基于消息上下文中使用业务规则策略的消息
+# <a name="how-to-dynamically-route-a-message-based-on-message-context-using-a-business-rules-policy"></a>如何：动态路由基于消息上下文中使用业务规则策略的消息
 ## <a name="goal"></a>目的  
  本部分演示如何创建路线，其确定消息终结点，基于消息上下文属性，使用 BizTalk Server 业务规则引擎 (BRE) 策略，然后使用 BizTalk Server 文件适配器将消息路由。  
   
@@ -31,7 +31,7 @@ ms.locfileid: "36973886"
   
 -   测试使用路线测试客户端示例应用程序的路线。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  本操作指南主题中的过程要求在完成[开发活动的先决条件](../esb-toolkit/prerequisites-for-the-development-activities.md)。  
   
 ## <a name="steps"></a>步骤  
@@ -180,11 +180,11 @@ ms.locfileid: "36973886"
 ## <a name="additional-resources"></a>其他资源  
  有关详细信息，请参阅下列相关主题：  
   
--   [如何：使用业务规则策略选择路线](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
+-   [如何：选择使用业务规则策略路线](../esb-toolkit/how-to-select-an-itinerary-using-a-business-rules-policy.md)  
   
--   [如何：转换消息并使用路线传送名单将生成的消息路由至文件位置](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
+-   [如何：转换消息并将生成的消息路由到使用路线传送名单的文件位置](../esb-toolkit/transform-message-and-route-the-message-to-a-location-using-itinerary-routing.md)  
   
--   [如何：使用已知消息类型的业务规则策略实现基于内容的路由](../esb-toolkit/apply-content-based-routing-using-business-rules-policy-for-known-message-type.md)  
+-   [如何：实现基于内容的路由使用业务规则策略为已知的消息类型](../esb-toolkit/apply-content-based-routing-using-business-rules-policy-for-known-message-type.md)  
   
 -   [开发活动](../esb-toolkit/development-activities.md)  
   

@@ -1,5 +1,5 @@
 ---
-title: GetUserKey |Microsoft 文档
+title: GetUserKey |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0701ff1df912cc113205bad573b6cebc0f02a13a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: cc4f163d35901a0cec9919e3053f84fd21cb712f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246117"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65344889"
 ---
 # <a name="getuserkey"></a>GetUserKey
-将当前用户密钥推送到堆栈上。  
+将推送到堆栈上的当前用户密钥。  
   
 ## <a name="syntax"></a>语法  
   
@@ -35,11 +35,11 @@ ms.locfileid: "22246117"
 ## <a name="pushed-value"></a>推送的值  
  包含当前用户密钥的字符串。  
   
-## <a name="remarks"></a>注释  
- 此操作仅在用户跟踪点中有效。  
+## <a name="remarks"></a>备注  
+ 此操作是仅在用户跟踪点中有效。  
   
 ## <a name="example"></a>示例  
- 下面的示例包含计算结果将为事件筛选器表达式`true`时用户密钥等同于"DocumentUrl"。  
+ 下面的示例包含的事件筛选器表达式的计算结果将为`true`用户密钥等于"DocumentUrl"时。  
   
 ```  
 <ic:Filter>  

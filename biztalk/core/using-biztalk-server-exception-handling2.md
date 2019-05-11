@@ -1,6 +1,6 @@
 ---
-title: 使用 BizTalk Server 中的异常处理 PeopleSoft 企业 |Microsoft 文档
-description: 处理异常和正在更新你在 BizTalk Server 中使用 PeopleSoft 企业适配器的业务流程的 jdearglist.txt 文件概述
+title: 使用 BizTalk Server 异常处理在 PeopleSoft Enterprise |Microsoft Docs
+description: 处理异常和更新使用 PeopleSoft Enterprise 适配器在 BizTalk Server 业务流程的 jdearglist.txt 文件概述
 ms.custom: ''
 ms.date: 10/19/2017
 ms.prod: biztalk-server
@@ -13,17 +13,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 73a334983f82714acb147f1a4b2ace1bd29edb4f
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 0becfba09ca9d749854a332119a8d74561fbbfa5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24015910"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401663"
 ---
 # <a name="use-biztalk-server-exception-handling"></a>使用 BizTalk Server 异常处理
 
 ## <a name="overview"></a>概述
-在您的业务流程中添加形状以处理错误和异常从后端服务器。 
+在您的业务流程添加形状以处理错误和异常从后端服务器。 
   
 ## <a name="next-steps"></a>后续步骤  
   

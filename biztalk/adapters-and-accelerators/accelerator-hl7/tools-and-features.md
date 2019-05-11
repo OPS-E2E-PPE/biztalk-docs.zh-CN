@@ -15,15 +15,15 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f1d93b0d614d0db16dc2e6ab615171b4e47bd9a9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1ec7e3056a9470fc341bf0739c7a8d06c8e64dbf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974686"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286579"
 ---
 # <a name="tools-and-features"></a>工具和功能
-Microsoft BizTalk Accelerator for HL7 的用户 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 有权访问 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]基于角色的功能和工具，以及[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]-针对卫生保健行业特定的工具和功能。 本节将对这些功能和工具进行描述。  
+Microsoft BizTalk Accelerator for HL7 的用户 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 有权访问 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]基于角色的功能和工具，以及[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]-针对卫生保健行业特定的工具和功能。 本部分介绍这些功能和工具。  
   
 ## <a name="in-this-section"></a>本节内容  
   

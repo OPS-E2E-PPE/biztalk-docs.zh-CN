@@ -1,5 +1,5 @@
 ---
-title: 优化 BizTalk Server 性能 |Microsoft 文档
+title: 优化 BizTalk Server 性能 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b33a9b0491394344545ccb474fd2715d92cefe3c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: db3c5e03eab7a944df6464abdb58aea4f24f00d9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22298525"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400731"
 ---
 # <a name="optimizing-biztalk-server-performance"></a>优化 BizTalk Server 性能
-本部分提供用于提高 BizTalk Server 性能准则。 安装并配置 BizTalk Server 之后，将应用列出的优化。  
+本部分提供可用于提高 BizTalk Server 性能的指导原则。 安装并配置 BizTalk Server 之后，将应用列出的优化。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [常规 BizTalk Server Optimizations1](../technical-guides/general-biztalk-server-optimizations1.md)  
+-   [一般 BizTalk Server Optimizations1](../technical-guides/general-biztalk-server-optimizations1.md)  
   
 -   [低延迟方案 Optimizations2](../technical-guides/low-latency-scenario-optimizations2.md)  
   

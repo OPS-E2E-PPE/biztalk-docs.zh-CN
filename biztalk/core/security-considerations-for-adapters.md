@@ -1,5 +1,5 @@
 ---
-title: 适配器的安全注意事项 |Microsoft 文档
+title: 有关适配器的安全注意事项 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,18 +15,18 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6e306f8607c4128c8cb84df8bf421615c0e2e92b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7a9d2dfb17f43f3c21a4eda6ed687adc3128fa17
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269477"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65250940"
 ---
-# <a name="security-considerations-for-adapters"></a>适配器的安全注意事项
+# <a name="security-considerations-for-adapters"></a>有关适配器的安全注意事项
 本部分包含有关创建和维护适配器安全性的信息。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [保护适配器的最佳方案](../core/best-practices-for-securing-adapters.md)  
+-   [确保适配器安全的最佳做法](../core/best-practices-for-securing-adapters.md)  
   
--   [适用于本机的适配器的 SSO](../core/sso-for-native-adapters.md)
+-   [本地适配器的 SSO](../core/sso-for-native-adapters.md)

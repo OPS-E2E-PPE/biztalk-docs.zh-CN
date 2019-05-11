@@ -12,27 +12,27 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 899b28a95b6f07d7aec20868ea6b71138acfe60f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4dbc1adba5ef1b0c0a86c456a86ac3cce627d34f
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987374"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528533"
 ---
-# <a name="bam-api-biztalk-server-sample"></a>BAM API（BizTalk Server 示例）
-BAM API 示例显示如何将对 BAM API 的调用合并到应用程序中，以保存可以监视的关键信息。  
+# <a name="bam-api-biztalk-server-sample"></a>BAM API （BizTalk Server 示例）
+BAM API 示例说明了如何将对 BAM API 的调用合并到应用程序以保存可以监视的关键信息。  
   
 ## <a name="what-this-sample-does"></a>本示例的用途  
- 本示例用于实现简单的购买方案。 它将生成采购订单、处理每个采购订单、创建装运并创建和处理发票。 在本示例运行时，将创建和更新 BAM 活动，以反映采购订单和发票的详细信息和对它们的处置。  
+ 此示例实现一个简单的购买方案。 它生成采购订单、 处理每个采购订单、 创建装运并创建和处理发票。 在示例运行时，它将创建并更新 BAM 活动，以反映的详细信息和处置的采购订单和发票。  
   
-## <a name="how-this-sample-was-designed-and-why"></a>本示例的设计方式和原因  
- 本示例旨在说明如何使用 BAM 存储不是来自 BizTalk 业务流程的应用程序提供的信息。 当应用程序比较简单时，将介绍很可能需要在生产应用程序中使用的多个方面的 BAM。 其中包括：  
+## <a name="how-this-sample-was-designed-and-why"></a>此示例设计的方式和原因  
+ 此示例旨在演示了如何使用 BAM 存储不是 BizTalk 业务流程的应用程序中的信息。 简单应用程序时，它说明了可能会在生产应用程序中使用的 BAM 的几个方面。 其中包括：  
   
 - 向单个活动分配多个线程  
   
 - 创建两个活动之间的关系  
   
-- 使用继续功能允许通过不同的 ID 访问同一活动  
+- 使用继续功能允许使用不同的 Id 访问同一活动  
   
   BAM API 示例由三个主要类组成： 一个处理采购订单，一个处理发货和一个处理发票。 每个类具有**RunOnce**方法从队列检索消息，然后处理该消息。 每个类还具有**运行**持续调用的方法**RunOnce**方法。  
   
@@ -40,19 +40,19 @@ BAM API 示例显示如何将对 BAM API 的调用合并到应用程序中，以
   
 1. 创建表示采购订单的 XML 消息。  
   
-2. 开始 BAMApiPo 活动，向获得添加有关采购订单及接收时间的信息。  
+2. 开始 BAMApiPo 活动，并添加有关采购订单和收到它时的信息。  
   
 3. 任意批准或拒绝采购订单。  
   
-4. 更新 BAMApiPo 活动以记录采购订单的状态（接受或拒绝）。  
+4. 更新 BAMApiPo 活动以记录采购订单 （接受或拒绝） 的状态。  
   
 5. 如果已接受采购订单， **RunOnce**方法还执行以下操作：  
   
-   1.  创建 XML 消息以代表要发运的货包，并将该消息添加到发货队列。  
+   1.  创建 XML 消息，以表示包要寄送，并将消息添加到发货队列。  
   
-   2.  将表示采购订单的 XML 消息添加到要包含在发票中的采购订单队列中。  
+   2.  将添加到要包含在发票中的采购订单队列表示采购订单的 XML 消息。  
   
-   3.  启用 BAMApiPo 活动的继续。  
+   3.  启用 BAMApiPo 活动的继续符。  
   
    4.  结束 BAMApiPo 活动。  
   
@@ -60,21 +60,21 @@ BAM API 示例显示如何将对 BAM API 的调用合并到应用程序中，以
   
 6. 从其队列中检索代表要发运的货包的 XML 消息。  
   
-7. 更新 BAMApiPo 活动以记录发运货包的时间。  
+7. 更新 BAMApiPo 活动以记录货包的时间。  
   
 8. 结束 BAMApiPo 活动。  
   
    **RunOnce**方法**InvoiceApplication**类执行以下操作：  
   
-9. 从其队列中检索代表要开发票的采购订单的 XML 消息。  
+9. 从其队列中检索代表开发票的采购订单的 XML 消息。  
   
 10. 开始 BAMApiInvoice 活动。  
   
-11. 为将要开发票的采购订单在 BAMApiInvoice 活动和 BAMApiPo 活动之间创建 BAM 关系。  
+11. 创建 BAM 关系 BAMApiInvoice 活动和 BAMApiPo 活动将要开发票的采购订单之间。  
   
-12. 向 BAMApiPo 活动中添加有关发票和创建时间的信息。  
+12. 向 BAMApiPo 活动有关的信息和发票时创建它。  
   
-13. 在任意延迟模拟等待要付款的发票之后，向 BAMApiInvoice 活动中添加发票的付款时间。  
+13. 在任意延迟模拟等待要付款的发票后, 向 BAMApiInvoice 活动发票支付的时间。  
   
 14. 结束 BAMApiInvoice 活动。  
   
@@ -99,21 +99,21 @@ BAM API 示例显示如何将对 BAM API 的调用合并到应用程序中，以
   
 |文件|Description|  
 |----------|-----------------|  
-|BamApiSample.cs|开发的应用程序。|  
-|BamApiSample.csproj|开发的应用程序项目。|  
-|BamApiSample.sln|开发的应用程序解决方案。|  
+|BamApiSample.cs|已检测应用程序。|  
+|BamApiSample.csproj|已检测应用程序项目。|  
+|BamApiSample.sln|检测应用程序解决方案。|  
 |BamApiSample.xls|BAM 定义样式表。|  
-|Cleanup.bat|用于删除已部署示例文件的批处理文件。|  
-|Input.txt|用于输入示例侦听器配置。|  
+|Cleanup.bat|若要删除已部署的示例文件的批处理文件。|  
+|Input.txt|输入示例侦听器配置。|  
 |InterceptorConfig.cs|API 示例的侦听器配置代码。|  
 |InterceptorConfig.csproj|侦听器配置项目。|  
 |Invoice_config.xml|Invoice 侦听器配置。|  
-|Invoice_interceptor.bin|序列化的 Invoice 侦听器。|  
+|Invoice_interceptor.bin|序列化的 invoice 侦听器。|  
 |PurchaseOrder_config.xml|PurchaseOrder 侦听器配置。|  
 |PurchaseOrder_interceptor.bin|序列化的 PurchaseOrder 侦听器。|  
-|Setup.bat|用于部署和登记示例文件的批处理文件。|  
+|Setup.bat|若要部署和登记示例文件的批处理文件。|  
 |Shipment_config.xml|Shipment 侦听器配置。|  
-|Shipment_interceptor.bin|序列化的 Shipment 侦听器。|  
+|Shipment_interceptor.bin|序列化的 shipment 侦听器。|  
   
 ## <a name="run-the-bam-api-sample"></a>运行 BAM API 示例  
   
@@ -122,7 +122,7 @@ BAM API 示例显示如何将对 BAM API 的调用合并到应用程序中，以
 2.  以管理员身份启动 Visual Studio 并打开*\<示例路径\>* BAMAPISAMPLE\BAMAPISAMPLE.SLN 解决方案。 
   
     > [!IMPORTANT]
-    >  必须注释掉 BamApiSample.cs 文件中的行 `//#define Interceptor`。请勿从该行中删除 “//”。 BAM API 示例只使用不在 `#if Interceptor` 的预处理器指令内的代码。  
+    >  在行`//#define Interceptor`中 BamApiSample.cs 文件必须注释掉。不要删除"/ /"从该行。 BAM API 示例使用的不是深入了解代码`#if Interceptor`预处理器指令。  
   
 3.  生成解决方案。  
   
@@ -148,7 +148,7 @@ BAM API 示例显示如何将对 BAM API 的调用合并到应用程序中，以
     ...  
     ```  
   
-5.  在大约一分钟后，按 Ctrl+C 或关闭命令提示符窗口，以停止 BamApiSample 程序。  
+5.  后一分钟左右，按 CTRL + C 或关闭命令提示符窗口以停止 BamApiSample 程序。  
   
 ## <a name="view-the-results"></a>查看结果
   
@@ -158,8 +158,8 @@ BAM API 示例显示如何将对 BAM API 的调用合并到应用程序中，以
   
 3.  右键单击**dbo.bam_BAMApiInvoice_Active** ，然后单击**打开表**。 如果使用 SQL Server，请单击**选择前 1000年行**。  
   
-     bam_BAMApiInvoice_Active 表的内容将显示在右窗格中。 表中的每行均表示已经启动但尚未完成的 BAMApiInvoice 活动。  
+     Bam_BAMApiInvoice_Active 表的内容显示在右窗格中。 在表中的每一行表示已经启动但尚未完成的 BAMApiInvoice 活动。  
   
 4.  右键单击**dbo.bam_BAMApiPo_Completed** ，然后单击**打开表**。 如果使用 SQL Server，请单击**选择前 1000年行**。  
   
-     bam_BAMApiPo_Completed 表的内容将显示在右窗格中。 表中的每行均表示已完成的 BAMApiPo 活动。
+     Bam_BAMApiPo_Completed 表的内容显示在右窗格中。 表中的每一行表示已完成的 BAMApiPo 活动。

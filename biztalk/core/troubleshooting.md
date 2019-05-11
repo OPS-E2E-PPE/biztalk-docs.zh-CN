@@ -13,12 +13,12 @@ caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df13438e641d55de91096b690a8e5e95e26cbfa4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 79364dfed295cf0faac573c080feb171184f2bb0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286685"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65321800"
 ---
 # <a name="troubleshooting"></a>故障排除
 

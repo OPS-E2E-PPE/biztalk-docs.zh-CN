@@ -12,21 +12,21 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b2a0b770ded2bef9ccf28a763f63f053c0b3c89e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 976e1d4fc3d31b10fb174a836025329c89be7171
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024307"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65305481"
 ---
 # <a name="monitoring-sql-server-agent-jobs-and-databases"></a>监视 SQL Server 代理作业和数据库
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 包含多个[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]执行重要功能，以使服务器正常操作和运行的代理作业。 您应该监视这些作业的运行状况，确保它们无错运行。 在 Microsoft[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]管理包包含用于监视 SQL 数据库等项目的规则和[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]代理作业。 应配置[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]适用于所有的全面的监视管理包[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库和[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]代理作业。  
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 包含多个[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]执行重要功能，以使服务器正常操作和运行的代理作业。 应监视这些作业的运行状况，并确保它们无错运行。 在 Microsoft[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]管理包包含用于监视 SQL 数据库等项目的规则和[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]代理作业。 应配置[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]适用于所有的全面的监视管理包[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库和[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]代理作业。  
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包包括用于监视的两个最重要的 BizTalk 运行状况的两个已禁用的规则[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]代理作业：  
   
-- 严重错误： BizTalk SQL Server 代理作业失败-备份 BizTalk Server  
+- 严重错误：BizTalk SQL Server 代理作业失败-备份 BizTalk Server  
   
-- 严重错误： BizTalk SQL Server 代理作业失败 – 跟踪消息复制  
+- 严重错误：BizTalk SQL Server 代理作业失败 – 跟踪消息复制  
   
   若要监视所有 BizTalk Server[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]代理作业中的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包，必须启用这些规则并创建为你想要使用以下过程都监视其他作业的其他规则。  
   

@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10742 |Microsoft Docs
+title: 单一登录：Event 10742 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 43595ad7a6817bd63e200a80ea90e23bd0245ceb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: afe1849acf5ad6cbafb948465a0cbc8f8f06ba84
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012990"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400576"
 ---
-# <a name="single-sign-on-event-10742"></a>单一登录： 事件 10742
+# <a name="single-sign-on-event-10742"></a>单一登录：事件 10742
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                                                                                                                                                                                                            |
@@ -30,15 +30,15 @@ ms.locfileid: "37012990"
 |  事件源   |                                                                                                                                                   ENTSSO                                                                                                                                                   |
 |    组件    |                                                                                                                                                    N\A                                                                                                                                                     |
 |  符号名称  |                                                                                                                                         SSO_WARN_NO_UPDATE_ADAPTER                                                                                                                                         |
-|  消息正文   | 若要更新适配器，客户端用户必须是 SSO 管理员帐户或应用程序管理员帐户的成员。%r<br /><br /> 客户端用户: %1 %r<br /><br /> SSO Administrators: %2 %r<br /><br /> 应用程序管理员: %3 %r<br /><br /> 适配器: %4 %r<br /><br /> 错误代码： %5 |
+|  消息正文   | 客户端用户必须是 SSO 管理员帐户或应用程序管理员帐户的成员才能更新 adapter.%r<br /><br /> 客户端用户: %1 %r<br /><br /> SSO Administrators: %2 %r<br /><br /> 应用程序管理员: %3 %r<br /><br /> 适配器: %4 %r<br /><br /> 错误代码： %5 |
 
 ## <a name="explanation"></a>解释  
- 此警告事件表示进行了更新指定适配器的尝试，但是无法完成，因为所使用的用户帐户不是 SSO 管理员帐户或应用程序管理员帐户的成员。  
+ 此警告事件表示尝试更新指定的适配器已进行，但是无法完成，因为使用的用户帐户不是 SSO 管理员帐户或应用程序管理员帐户的成员。  
 
 ## <a name="user-action"></a>用户操作  
- 若要解决此警告问题，请执行以下一项或多项操作：  
+ 若要解决此警告，请执行一个或多个以下操作：  
 
-- 将用户帐户添加到 SSO 管理员帐户或应用程序管理员帐户。  
+- 将用户帐户添加到 SSO Administrators 帐户或应用程序管理员帐户。  
 
 - 重试更新。  
 

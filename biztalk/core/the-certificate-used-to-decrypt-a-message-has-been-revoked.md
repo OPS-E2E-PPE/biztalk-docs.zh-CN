@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d23ce9304cf6688c9d81238edefb12b0c5b58fa
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a8302b4893b6014a260ce5f26e96138f7093bbf0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979694"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65298848"
 ---
-# <a name="the-certificate-used-to-decrypt-a-message-has-been-revoked"></a>用于解密消息的证书已经被吊销
+# <a name="the-certificate-used-to-decrypt-a-message-has-been-revoked"></a>用于解密消息的证书已被吊销
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                         |
@@ -30,14 +30,14 @@ ms.locfileid: "36979694"
 |  事件源   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI  |
 |    组件    |                                       AS2 引擎                                        |
 |  符号名称  |                        DecryptionCertificateHasBeenRevokedError                         |
-|  消息正文   | 用于解密消息的证书已经被吊销。 证书指纹： {0} |
+|  消息正文   | 用于解密消息的证书已吊销。 证书指纹： {0} |
   
 ## <a name="explanation"></a>解释  
- 此错误/警告/信息事件表明接收管道无法处理传入的消息，因为用于解密消息的证书已被吊销。  
+ 此错误/警告/信息事件表明接收管道不无法处理传入消息，因为要用于对消息进行解密的证书已被吊销。  
   
 ## <a name="user-action"></a>用户操作  
  若要解决此错误，请执行以下操作之一：  
   
--   创建新的证书来替换已吊销的证书。 将该证书添加到“当前用户/个人”证书存储区中，然后发送用于发送 AS2 消息的证书的公钥。  
+-   创建新的证书来替换已吊销的证书。 将证书添加到当前用户/个人证书存储区，，然后将该证书的公钥发送到发送 AS2 消息。  
   
--   通过打开 BizTalk Server 管理控制台、打开为传出消息解析的参与方的“AS2 属性”对话框，单击“常规”节点，然后清除“检查证书吊销列表”属性来禁用吊销列表检查。
+-   通过打开 BizTalk Server 管理控制台，打开为传出消息解析的参与方 AS2 属性对话框中，单击常规节点，然后清除检查证书吊销列表中禁用吊销列表检查属性。

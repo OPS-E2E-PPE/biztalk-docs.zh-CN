@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7102eb3fc0f6f7b1ef16a319e5e04daff6d544d1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 34d83aad4a393df0cc0532545d5518fff9e0f8e5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007870"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291355"
 ---
 # <a name="optimizing-pipeline-performance"></a>优化管道性能
 本主题介绍用于优化性能的管道中的指导原则[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]解决方案。  
@@ -30,11 +30,11 @@ ms.locfileid: "37007870"
   
 3. 如果你需要阅读的管道组件中的入站的消息，避免将整个文档加载到内存使用**XmlDocument**对象。 实例所需的空间量**XmlDocument**类来加载和创建 XML 文档的内存中表示形式是实际的消息大小的 10 倍。 为了读取一条消息，则应使用**XmlTextReader**对象以及以下类的实例：  
   
-   -   **为 VirtualStream (Microsoft.BizTalk.Streaming.dll)** -此类的源代码位于以下两个管道 SDK 位置，如下所示:: SDK\Samples\Pipelines\ArbitraryXPathPropertyHandler 和 SDK\Samples\Pipelines\SchemaResolverComponent\SchemaResolverFlatFileDasm。  
+   -   **为 VirtualStream (Microsoft.BizTalk.Streaming.dll)** -此类的源代码位于以下两个管道 SDK 位置，如下所示：: SDK\Samples\Pipelines\ArbitraryXPathPropertyHandler 和 SDK\Samples\Pipelines\SchemaResolverComponent\SchemaResolverFlatFileDasm。  
   
    -   **ReadOnlySeekableStream (Microsoft.BizTalk.Streaming.dll)**。  
   
-   -   **SeekAbleReadOnlyStream** -此类的源代码位于以下两个管道 SDK 位置，如下所示:: SDK\Samples\Pipelines\ArbitraryXPathPropertyHandler 和 SDK\Samples\Pipelines\SchemaResolverComponent\SchemaResolverFlatFileDasm。  
+   -   **SeekAbleReadOnlyStream** -此类的源代码位于以下两个管道 SDK 位置，如下所示：: SDK\Samples\Pipelines\ArbitraryXPathPropertyHandler 和 SDK\Samples\Pipelines\SchemaResolverComponent\SchemaResolverFlatFileDasm。  
   
 4. 使用 PassThruReceive 和 PassThruTransmit 标准管道，只要有可能。 它们不包含任何管道组件，不执行任何处理消息。 出于此原因，它们将确保在接收或发送消息的最大性能。 如果你需要将二进制文档发布到 BizTalk MessageBox 和 PassThruTransmit 管道在发送端口，如果需要发送二进制消息，可以在接收位置上使用 PassThruReceive 管道。 此外可以在绑定到业务流程，如果消息已经过格式设置，并且是准备要传输的物理发送端口使用 PassThruTransmit 管道。 需要使用不同的方法，如果您需要完成以下操作之一：  
   
@@ -230,13 +230,13 @@ public IBaseMessage Execute(IPipelineContext pContext, IBaseMessage pInMsg)
 ## <a name="comparison-of-loading-messages-into-pipelines-using-an-in-memory-approach-and-using-a-streaming-approach"></a>正在加载消息到管道中使用内存中的方法，并使用流式处理方法的比较  
  以下信息摘自 Nic Barden 博客[ http://blogs.objectsharp.com/cs/blogs/nbarden/archive/2008/04/14/developing-streaming-pipeline-components-part-1.aspx ](http://go.microsoft.com/fwlink/?LinkId=160228) (http://go.microsoft.com/fwlink/?LinkId=160228)。 此表提供到管道中使用内存中的方法，并使用流式处理方法加载消息的汇总的比较。  
   
-|比较...|流式传输|在内存中|  
+|比较...|流式处理|在内存中|  
 |----------------------|---------------|---------------|  
 |每个消息的内存使用情况|低，而不考虑消息大小|高 （消息大小而异）|  
 |用于处理 XML 数据的通用类|生成和自定义派生的：<br /><br /> XmlTranslatorStream、 XmlReader 和 XmlWriter|XmlDocument、 XPathDocument、 MemoryStream 和为 VirtualStream|  
 |文档|差 – 许多不受支持的和未有案可稽 BizTalk 类|很好的.NET Framework 类|  
 |"处理逻辑"代码的位置|-"绑定"读取器和流通过 Execute 方法。<br />-实际的执行发生在读取器和流中读取数据。|直接从管道组件的 Execute 方法。|  
-|data|重新创建在每个包装层，通过它读取数据。|读取、 修改并写出在之前被调用的下一个组件的每个组件。|  
+|数据|重新创建在每个包装层，通过它读取数据。|读取、 修改并写出在之前被调用的下一个组件的每个组件。|  
   
 ## <a name="see-also"></a>请参阅  
  [优化 BizTalk Server 应用程序](../technical-guides/optimizing-biztalk-server-applications.md)

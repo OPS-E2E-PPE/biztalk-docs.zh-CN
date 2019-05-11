@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9f14a6262a8f0ed816700f3e3c34307487874d25
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 73bb52934483cc47ea45cd0e6ff72e8e57752ffd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983334"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65331823"
 ---
 # <a name="instantiating-and-initializing-a-receive-adapter"></a>实例化和初始化接收适配器
 立即接收适配器实例化后由消息引擎初始化，该引擎将调用为 IBTTransportControl QueryInteraface。 然后，它调用 IBTTransportControl<strong>。初始化</strong>传入适配器的传输代理，该适配器仍然存在的成员变量中。 接下来，引擎将调用**QueryInterface**有关**IPersistPropertyBag**。 这是一个可选的接口;如果适配器实现它，处理程序配置传递给适配器**负载**方法调用。 初始化接收适配器的最后阶段涉及将终结点配置传递到适配器。 在此阶段则引擎将调用**IBTTransportConfig.AddReceiveEndpoint**一次针对每个活动的终结点，在 URI 中传递终结点、 适配器特定配置的终结点，和 BizTalk 配置该终结点。  

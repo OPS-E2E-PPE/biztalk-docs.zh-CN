@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10726 |Microsoft Docs
+title: 单一登录：Event 10726 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2799f35d233685ef07b446d2ed6ae2c7c931678c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7c14aea83bef1213eeda4bf56e4de7e400ee3e56
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990790"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65258976"
 ---
-# <a name="single-sign-on-event-10726"></a>单一登录： 事件 10726
+# <a name="single-sign-on-event-10726"></a>单一登录：事件 10726
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                                                    |

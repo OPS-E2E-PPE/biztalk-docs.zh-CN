@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 412b25d2f7ea027de53818b032b50562faab9865
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c2dfa36a5814b270da64eb95dc8e082a91674003
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009438"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65325019"
 ---
 # <a name="message-part-missing-element"></a>消息部分缺少元素
 ## <a name="details"></a>详细信息  
@@ -30,14 +30,14 @@ ms.locfileid: "37009438"
 |  事件源   |                                                         0                                                          |
 |    组件    |                                                         0                                                          |
 |  符号名称  |                                                         0                                                          |
-|  消息正文   | 消息部分丢失元素。 更正服务说明"{0}"消息类型"{1}"部分"{2}"，然后重新运行向导 |
+|  消息正文   | 消息部分缺少元素。 更正服务说明"{0}"消息类型"{1}"部分"{2}"，然后重新运行向导 |
   
 ## <a name="explanation"></a>解释  
- 此错误表示尝试使用的服务不具有标识消息类型的元素标签。  
+ 此错误表示尝试使用该服务不具有标识消息类型的元素标记。  
   
 ## <a name="user-action"></a>用户操作  
- 将服务更正为具有正确的消息类型，然后尝试使用此服务（如果您拥有要尝试使用的 WCF 服务）。 否则，请与服务提供商联系。  
+ 更正服务与相应的消息类型，然后尝试使用 （如果您拥有要尝试使用的 WCF 服务）。 否则，请与服务提供商联系。  
   
- 有关消息的其他信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+ 有关消息的其他信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
   
 -   [构造 Web 消息](../core/constructing-web-messages.md)

@@ -17,17 +17,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8af3a77b9bb169e394571444c7eb7e3984f7f7c3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9267de92dcefc9decc5932bee6b531e300be029b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013038"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333104"
 ---
 # <a name="how-to-verify-activity-status-of-a-message"></a>如何验证消息的活动状态
-使用 PeopleSoft Integration Broker 创建 PeopleSoft HTTP 主机和端口发送事件。 通过执行以下步骤确保消息处于活动状态并且已被路由。  
+使用 PeopleSoft Integration Broker 创建 PeopleSoft HTTP 主机和端口发送事件。 请确保消息处于活动状态且路由，通过执行以下步骤。  
   
-### <a name="to-verify-that-a-message-is-active-and-routed-correctly"></a>验证消息是否处于活动状态并被正确路由  
+### <a name="to-verify-that-a-message-is-active-and-routed-correctly"></a>若要验证消息处于活动状态且路由  
   
 1. 单击**启动**，依次指向**程序**，指向**PeopleSoft 应用程序名称**，然后选择**应用程序设计器**。  
   
@@ -57,7 +57,7 @@ ms.locfileid: "37013038"
   
     验证以下内容，然后依次**确定**。  
   
-   1. **消息：** Active  
+   1. **消息：** 在职  
   
    2. **消息通道：** ENTERPRISE_SETUP  
   
@@ -65,13 +65,13 @@ ms.locfileid: "37013038"
   
       ![](../core/media/psadapter-30-task-messageuse.gif "PSAdapter_30_Task_MessageUse")  
   
-8. 退出 Application Designer。  
+8. 退出应用程序设计器。  
   
-    这可确保消息处于活动状态、使用 VERSION_1 并流经 PeopleSoft 中的 ENTERPRISE_SETUP 通道。  
+    这可确保消息处于活动状态、 使用 VERSION_1 并流经 PeopleSoft 中的 ENTERPRISE_SETUP 通道。  
   
-9. 配置 Integration.Gateway.properties 文件以与 PeopleSoft 应用程序通信。  
+9. 配置 Integration.Gateway.properties 文件以与 PeopleSoft 应用程序进行通信。  
   
-     验证是否设置了以下属性：  
+     验证设置的以下属性：  
   
     -   **ig.isc.serverurl:** //server:9000  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 75cde12720ac67d74396c22282bddaf53e015960
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6f954de27e2e18adbb38a2eeed86557b4752aaa8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972366"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65248254"
 ---
 # <a name="batch-message-processing"></a>批处理消息处理
 Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 处理三种类型的 HL7 2.X 批处理方案：  
@@ -41,7 +41,7 @@ Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../
 ## <a name="see-also"></a>请参阅  
  [消息批处理](../../adapters-and-accelerators/accelerator-hl7/message-batching.md)   
  [批处理教程](../../adapters-and-accelerators/accelerator-hl7/batching-tutorial.md)   
- [第 1 部分： 零碎的入站的批处理方案](../../adapters-and-accelerators/accelerator-hl7/part-1-fragmented-inbound-batch-scenario.md)   
- [第 2 部分： 中的批处理 / 出站批处理方案](../../adapters-and-accelerators/accelerator-hl7/part-2-batch-in-batch-out-scenario.md)   
- [第 3 部分： Create-batch 方案](../../adapters-and-accelerators/accelerator-hl7/part-3-create-batch-scenario.md)   
+ [第 1 部分：零碎的入站的批处理方案](../../adapters-and-accelerators/accelerator-hl7/part-1-fragmented-inbound-batch-scenario.md)   
+ [第 2 部分：在批处理 / 批处理方案](../../adapters-and-accelerators/accelerator-hl7/part-2-batch-in-batch-out-scenario.md)   
+ [第 3 部分：创建批处理方案](../../adapters-and-accelerators/accelerator-hl7/part-3-create-batch-scenario.md)   
  [消息处理](../../adapters-and-accelerators/accelerator-hl7/message-processing.md)

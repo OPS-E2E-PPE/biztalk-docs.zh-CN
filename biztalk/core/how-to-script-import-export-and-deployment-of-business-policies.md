@@ -1,5 +1,5 @@
 ---
-title: 如何编写脚本导入导出和部署业务策略 |Microsoft 文档
+title: 如何导入 / 导出和业务策略的部署脚本 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -24,17 +24,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9fda67a54c63c8d1dd092e615b2057f00ad41bba
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 50358be7c04218321f76b56cb670d1b65f8c9477
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254965"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334854"
 ---
-# <a name="how-to-script-import-export-and-deployment-of-business-policies"></a>如何编写导入导出和业务策略的部署脚本
-本部分介绍如何以编程方式导入/导出和部署策略使用**RuleSetDeploymentDriver**。  
+# <a name="how-to-script-import-export-and-deployment-of-business-policies"></a>如何导入 / 导出和业务策略的部署脚本
+本部分介绍如何以编程方式导入/导出和部署使用的策略**RuleSetDeploymentDriver**。  
   
- 以下示例将显示如何将策略导出到文件：  
+ 下面的示例演示如何将策略导出到一个文件。  
   
 ```  
 using System;  
@@ -65,7 +65,7 @@ namespace SimpleExport
 }  
 ```  
   
- 以下示例将显示如何从文件中导入策略并对其进行部署：  
+ 下面的示例演示如何导入和部署策略文件中。  
   
 ```  
 using System;  
@@ -97,4 +97,4 @@ namespace SimpleImport
 ```  
   
 > [!NOTE]
->  代码假定对词汇没有依存关系；如果策略使用词汇，则必须首先导入这些词汇。
+>  该代码假定对词汇; 没有依赖关系如果该策略使用词汇它们必须导入第一次。

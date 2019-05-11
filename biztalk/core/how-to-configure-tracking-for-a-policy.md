@@ -21,26 +21,26 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f92e8555c0d644411c165284dd734eb94e6569e9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b6b7b4d2a5b653255398b938431a2ac26c74bcf1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980406"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65340202"
 ---
 # <a name="how-to-configure-tracking-for-a-policy"></a>如何配置跟踪的策略
-本主题介绍如何使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台为策略配置跟踪。 您可以选择相应的选项，以便在管理控制台上组中心页的查询视图中查看实例数据、条件结果、操作和议程更新。  
+本主题介绍如何使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台配置跟踪的策略。 你可以选择选项以查看实例数据、 条件、 操作和议程更新管理控制台上组中心页的查询视图中的结果。  
   
  有关创建和使用查询的详细信息，请参阅[使用 BizTalk Server 管理控制台](../core/using-the-biztalk-server-administration-console.md)。 有关消息和服务实例跟踪功能的详细信息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，请参阅[查看跟踪消息和实例数据](../core/viewing-tracked-message-and-instance-data.md)。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  若要执行本主题中的过程，必须是 BizTalk Server Administrators 组的成员的帐户登录。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
   
-### <a name="to-configure-tracking-for-a-policy"></a>为策略配置跟踪  
+### <a name="to-configure-tracking-for-a-policy"></a>若要配置跟踪的策略  
   
 1. 单击**启动**，单击**程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
-2. 在控制台树中，展开要为其配置跟踪的策略所属的 BizTalk 组和 BizTalk 应用程序。  
+2. 在控制台树中，展开 BizTalk 组和 BizTalk 应用程序要为其配置跟踪的策略。  
   
 3. 单击**策略**，右键单击该策略，单击**属性**，然后单击**跟踪**。  
   
@@ -48,10 +48,10 @@ ms.locfileid: "36980406"
   
    |使用此选项|执行的操作|  
    |--------------|----------------|  
-   |**快速活动**|选中此复选框可跟踪对其运行该策略的实例数据。|  
+   |**快速活动**|选中此复选框可跟踪运行该策略的实例数据。|  
    |**条件评估**|选中此复选框可跟踪所选策略中条件的真/假结果。|  
-   |**规则触发**|选中此复选框可跟踪该策略最终触发的操作。|  
-   |**议程更新**|选中此复选框可跟踪议程更新。 议程包含一系列值为“True”并需要触发的操作。|  
+   |**规则触发**|选择此复选框可跟踪该策略最终触发的操作。|  
+   |**议程更新**|选择此复选框可跟踪议程更新。 议程包含一系列为"true"，并需要触发的操作。|  
   
 ## <a name="see-also"></a>请参阅  
  [管理策略](../core/managing-policies.md)

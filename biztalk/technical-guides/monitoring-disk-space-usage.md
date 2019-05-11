@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 25035d50c6e69fcf74e1cf75e8f073b19cc0b47f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 12a0b8f020457679f2769e188e8c1936a1cb1869
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986926"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253343"
 ---
 # <a name="monitoring-disk-space-usage"></a>监视磁盘空间使用情况
 操作就绪性的监视过程的一部分[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，监视磁盘空间使用情况，如下所示：  

@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c6c3623a7f39f773f720fa33cd64a7e93c3668d9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1ad2616191dc146774c9b3d90664322992bb753d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991102"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65302333"
 ---
 # <a name="world-wide-web-service-on-host-not-available"></a>主机上的 World Wide Web 服务不可用
 ## <a name="details"></a>详细信息  
@@ -33,12 +33,12 @@ ms.locfileid: "36991102"
 |  消息正文   |             World Wide Web 服务 (W3SVC) 主机上的"{0}"不可用             |
   
 ## <a name="explanation"></a>解释  
- 此错误表示“万维网服务”未运行。  
+ 此错误表示未运行 World Wide Web 服务。  
   
 ## <a name="user-action"></a>用户操作  
- 使用以下过程启动“万维网服务”。  
+ 使用以下过程启动 World Wide Web 服务。  
   
-#### <a name="to-start-the-world-wide-web-service"></a>启动“万维网服务”的步骤  
+#### <a name="to-start-the-world-wide-web-service"></a>若要启动 World Wide Web 服务  
   
 1.  单击**启动**，单击**控制面板**，双击**管理工具**，然后双击**服务**。  
   

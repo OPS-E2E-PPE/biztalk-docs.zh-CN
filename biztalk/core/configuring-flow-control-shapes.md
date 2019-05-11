@@ -1,5 +1,5 @@
 ---
-title: 配置流控制形状 |Microsoft 文档
+title: 配置流控制形状 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,19 +19,19 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 69feb8b4562bdcc137a405aeae3876e600d017d8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fdeb5cb849bab9890c706d1ac16a2bc1d766a656
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232885"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355498"
 ---
 # <a name="configuring-flow-control-shapes"></a>配置流控制形状
-业务流程设计器提供了许多可用于控制你的业务流程的流通过显式使用的形状的**并行操作**调整或有条件地通过使用**决策**，**侦听**，或**循环**形状。 它还提供了**延迟**调整为你要暂停业务流程，并提供**挂起**形状和**终止**形状以挂起和终止你业务流程。  
+业务流程设计器提供了多种形状，可用于控制您的业务流程，流显式使用**并行操作**形状或有条件地通过使用**决策**，**侦听**，或**循环**形状。 它还提供了**延迟**用于暂停业务流程形状，然后提供**挂起**形状并**终止**形状来挂起和终止应用业务流程。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [如何配置确定形状](../core/how-to-configure-the-decide-shape.md)  
+-   [如何配置判定形状](../core/how-to-configure-the-decide-shape.md)  
   
 -   [如何配置并行操作形状](../core/how-to-configure-the-parallel-actions-shape.md)  
   

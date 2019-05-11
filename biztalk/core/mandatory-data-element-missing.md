@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6a44e4824805a137121bf1f5bd030cb16329484d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 61911e53061b0c4ec84b73f533f85a868a0088aa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966486"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65327627"
 ---
 # <a name="mandatory-data-element-missing"></a>必需数据元素缺失
 ## <a name="details"></a>详细信息  

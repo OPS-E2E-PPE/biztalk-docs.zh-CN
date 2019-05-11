@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 108bc63536e84dd18cd738fbc6ec10d1e07c404b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b47b3cc13d5c77dcc8efc8f5fd19e049b321a4f9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978134"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286464"
 ---
 # <a name="update2xmlschema-tool"></a>Update2XMLSchema 工具
 Update2XMLSchema 工具，可修改 HL7 2.xml 架构以使用 BizTalk 编辑器。 这是必需的因为 Microsoft 中无法正常工作某些 HL7 2.xml 架构[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]无需修改即可。 修改后的架构，该工具将它们放在此架构文件夹位置[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]已安装，例如， *\<驱动器\>*: \Program Files\Microsoft BizTalk\<版本\>Accelerator for HL7\Templates\Schemas。  
@@ -40,7 +40,7 @@ Update2XMLSchema /s /v
   
 |参数|“属性”|ReplTest1|  
 |---------------|----------|-----------|  
-|*S*|数据源|原始的 HL7 架构的完整路径|  
+|*S*|Source|原始的 HL7 架构的完整路径|  
 |*V*|版本|2.XML 架构的版本： 2.3.1、 2.4 或 2.5|  
   
 ## <a name="example"></a>示例  

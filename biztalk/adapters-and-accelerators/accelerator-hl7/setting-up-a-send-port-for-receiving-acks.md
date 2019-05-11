@@ -17,12 +17,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f70be6d66d0ba8aa3385760bfc17b4b19f50351a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2489a8c26d418782e661629afd65f3bafd3b03ff
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984742"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289589"
 ---
 # <a name="setting-up-a-send-port-for-receiving-acks"></a>设置用于接收 Ack 的发送端口
 Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 可以在一个单向发送端口上接收确认 (ACK)。 如果设置了新的单向发送端口用于接收 Ack 的同一连接上时，必须将关联该发送端口使用一个单向接收端口。  

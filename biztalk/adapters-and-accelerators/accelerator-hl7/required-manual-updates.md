@@ -1,5 +1,5 @@
 ---
-title: 所需的手动更新 |Microsoft 文档
+title: 所需的手动更新 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,22 +15,22 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c4992334aa6aed6e073cca8a1d9ea34096f09a4b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c0d877f6080777d6e84f210c5b17c4207f0c5964
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22205957"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289915"
 ---
 # <a name="required-manual-updates"></a>所需的手动更新
-后 Update2XMLSchema 工具转换 HL7 架构版本，[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]可以使用，你必须手动更新生成的架构的某些字段。  
+后 Update2XMLSchema 工具将 HL7 架构转换为版本的[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]可以使用，则必须手动更新生成的架构的某些字段。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [V2 中的 DFT_P03。XML 2.4](../../adapters-and-accelerators/accelerator-hl7/dft-p03-in-v2-xml-2-4.md)  
+-   [V2.XML 2.4 中的 DFT_P03](../../adapters-and-accelerators/accelerator-hl7/dft-p03-in-v2-xml-2-4.md)  
   
--   [V2 中的 DFT_P11。XML 2.4](../../adapters-and-accelerators/accelerator-hl7/dft-p11-in-v2-xml-2-4.md)  
+-   [V2.XML 2.4 中的 DFT_P11](../../adapters-and-accelerators/accelerator-hl7/dft-p11-in-v2-xml-2-4.md)  
   
--   [V2 中的 REF_I12。XML 2.4](../../adapters-and-accelerators/accelerator-hl7/ref-i12-in-v2-xml-2-4.md)  
+-   [V2.XML 2.4 中的 REF_I12](../../adapters-and-accelerators/accelerator-hl7/ref-i12-in-v2-xml-2-4.md)  
   
--   [V2 中的 REF_I12。XML 2.3.1](../../adapters-and-accelerators/accelerator-hl7/ref-i12-in-v2-xml-2-3-1.md)
+-   [V2.XML 2.3.1 中的 REF_I12](../../adapters-and-accelerators/accelerator-hl7/ref-i12-in-v2-xml-2-3-1.md)

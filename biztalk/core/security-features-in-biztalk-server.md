@@ -29,31 +29,31 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d904bc842cb04bdf9c1457440c838c8a78e5c8f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d1473ef87ccab6d035799f37a44b341e58a27a04
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992614"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279951"
 ---
-# <a name="security-features-in-biztalk-server"></a>BizTalk Server 中的安全功能
-Microsoft® BizTalk® Server 提供了一个标准网关以便在 Intranet 中或通过 Internet 发送和接收文档。 由于发往和从 BizTalk Server 发回的消息可能是业务关键信息，因此在传输消息时以及当 BizTalk Server 处理并存储消息时，采取措施保护这些消息及其所包含信息的安全非常重要。 本部分提供了有关 BizTalk Server 安全功能的信息，并介绍如何使用这些功能来确保数据和环境的安全。  
+# <a name="security-features-in-biztalk-server"></a>BizTalk Server 中安全功能
+Microsoft® BizTalk® Server 提供了用于发送和接收的文档在 intranet 中或通过 Internet 的标准网关。 由于发往和来自 BizTalk Server 的消息的可能的业务关键特性，务必要考虑措施，以帮助安全，这些消息和它们同时包含因为它们是在传输中和时 BizTalk Server 进程和存储的信息它们。 本部分提供有关 BizTalk Server 安全功能，以及如何使用它们来帮助保护你的数据和环境的信息。  
   
- BizTalk Server 采用以下措施来确保入站和出站消息的安全，确保运行时和配置信息的安全，以及确保与其他应用程序和系统进行安全地集成：  
+ BizTalk Server 使用以下措施来保护入站和出站消息，来帮助保护的运行时和配置信息，并帮助安全地与其他应用程序和系统集成：  
   
  **消息安全**  
   
-- 对消息的发件人进行验证。 BizTalk Server 能够进行身份验证 （通过证书信息或 Windows 集成的安全性） 的消息的发送方验证消息的发件人的身份。 有关详细信息，请参阅[入站消息身份验证](../core/inbound-message-authentication.md)。  
+- 对消息的发件人进行身份验证。 BizTalk Server 能够进行身份验证 （通过证书信息或 Windows 集成的安全性） 的消息的发送方验证消息的发件人的身份。 有关详细信息，请参阅[入站消息身份验证](../core/inbound-message-authentication.md)。  
   
-- 向消息的收件人进行授权。 BizTalk Server 收到消息后，可确定哪些流程和用户有权接收消息。 有关详细信息，请参阅[向消息收件人授权](../core/authorizing-the-receiver-of-a-message.md)。  
+- 授权的消息的接收方。 BizTalk Server 接收消息后，BizTalk Server 可以确定哪些进程和用户有权接收消息。 有关详细信息，请参阅[向消息收件人授权](../core/authorizing-the-receiver-of-a-message.md)。  
   
   **运行时和配置安全**  
   
-- **访问控制和保护数据。** BizTalk Server 使用访问控制来确保 BizTalk Server 流程有适当的限制，并且对业务关键信息的访问受到了控制。 换句话说，BizTalk Server 确保用户和帐户具有完成任务所需的最小用户权限。 有关详细信息，请参阅[访问控制和数据安全性](../core/access-control-and-data-security.md)。  
+- **访问控制和保护数据。** BizTalk Server 使用访问控制以确保 BizTalk Server 进程有适当的限制和控制访问的业务关键信息。 换而言之，BizTalk Server 确保用户和帐户具有的最低用户权限可以启用它们来执行其任务。 有关详细信息，请参阅[访问控制和数据安全性](../core/access-control-and-data-security.md)。  
   
   **集成的安全性**  
   
-- 企业单一登录。 BizTalk Server 使用企业单一登录 (SSO) 确保对适配器、发送和接收位置所需的敏感配置信息进行加密，从而确保 BizTalk Server 以安全方式存储和传输此信息。 有关详细信息，请参阅[使用 SSO](../core/using-sso.md)。  
+- 企业单一登录。 BizTalk Server 使用企业单一登录 (SSO) 以确保它对适配器，发送和接收位置的敏感配置信息进行加密要求，从而帮助确保 BizTalk Server 将存储和传输中的此信息安全的方式。 有关详细信息，请参阅[使用 SSO](../core/using-sso.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [为 BizTalk Server 设计系统体系结构](../core/designing-the-system-architectures-for-biztalk-server.md)   

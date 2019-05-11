@@ -16,19 +16,19 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a0525578ca611217677c7b28d6065991d375e49a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 533baacb49f486620675bf50593844d995569202
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981678"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65254590"
 ---
 # <a name="running-sso-projects"></a>运行 SSO 项目
-您可以从 Internet Explorer 中运行该示例。  
+可以从 Internet Explorer 运行示例。  
   
 ## <a name="running-a-sample-from-internet-explorer"></a>从 Internet Explorer 运行示例  
   
-#### <a name="to-run-the-sample-from-the-internet-explorer"></a>从 Internet Explorer 运行示例  
+#### <a name="to-run-the-sample-from-the-internet-explorer"></a>若要从 Internet Explorer 运行示例  
   
 1. 打开浏览器。  
   
@@ -42,7 +42,7 @@ ms.locfileid: "36981678"
   
     http://localhost/SSODemo/BTSHTTPReceive.dll?<ns0:method_list_method%20xmlns:ns0="http://microsoft.com/exposed/object/object1"><ns0:method_list_method><ns1:method_list%20xmlns:ns1="http://microsoft.com/exposed/object"><ns1:comp_code></ns1:comp_code><ns1:comp_name></ns1:comp_name></ns1:object_1></ns0:method_list></ns0:method_list_method>  
   
-    在这种情况下，不必提供凭据。  
+    在这种情况下不需要提供凭据。  
   
 ## <a name="see-also"></a>请参阅  
  [保护适配器](../core/security-in-biztalk-adapter-for-peoplesoft-enterprise.md)

@@ -12,41 +12,41 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fcab9b35759d491c0732cfb2613a2fd4fe992a3e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 682e87e2cfca4906b0f9c582d5e33a235525e293
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022483"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65329106"
 ---
 # <a name="known-issues-with-the-ftp-adapter"></a>FTP 适配器的已知的问题
-本部分包含可帮助你避免出现错误的信息。  
+本部分包含可能帮助您避免错误的信息。  
   
 ## <a name="known-issues"></a>已知问题  
   
 #### <a name="data-may-be-duplicated-or-lost-when-you-receive-data-in-biztalk-server-by-using-the-ftp-adapter"></a>数据可能会重复或丢失时通过使用 FTP 适配器，BizTalk Server 中接收数据  
   
 ##### <a name="problem"></a>问题  
- 在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中使用 FTP 适配器接收数据时，数据会重复或丢失。  
+ 数据会重复或丢失时接收中的数据[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]通过使用 FTP 适配器。  
   
 ##### <a name="cause"></a>原因  
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] FTP 适配器使用 FTP 客户端协议轮询指定的 FTP 服务器，并“按原样”从服务器检索数据。 FTP 适配器不会对所检索的任何数据执行验证。 FTP 适配器只是将检索到的文档发送到 BizTalk 消息引擎以进行处理，然后从 FTP 服务器中删除原始文档。 如果 FTP 适配器从 FTP 服务器检索的文档仍在由主机应用程序进行写入，则检索到的文档将不完整。 如果 FTP 适配器检索到原始文档的不完整副本，则可能会发生数据重复或数据丢失的情况，如下所述：  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] FTP 适配器使用 FTP 客户端协议轮询指定的 FTP 服务器，并从"按原样。"的服务器中检索数据 FTP 适配器不会验证它检索任何数据。 FTP 适配器将检索到的文档发送到 BizTalk 消息引擎进行处理，然后从 FTP 服务器中删除原始文档。 如果 FTP 适配器从 FTP 服务器仍被写入到主机应用程序检索文档，检索到的文档将不完整。 如果 FTP 适配器检索不完整的原始文档的副本，重复数据或数据丢失可能出现在以下方案中：  
   
--   如果原始文档仍在由主机应用程序写入 FTP 服务器，则 FTP 适配器将无法删除该文档，并将在为接收位置配置的下一轮询间隔期间检索到该文档的另一个副本。 这一行为将导致出现文档重复。  
+-   如果原始文档仍正在由主机应用程序写入 FTP 服务器，FTP 适配器不能删除该文档，并将在下一个轮询间隔配置为接收位置检索文档的另一个副本。 此行为会导致出现文档重复。  
   
--   如果主机应用程序已完成将文档写入 FTP 服务器的过程，则该文档将被删除。 这一行为将导致出现数据丢失。  
+-   如果主机应用程序已完成将文档写入 FTP 服务器，将删除文档。 此行为将导致出现数据丢失。  
   
 ##### <a name="resolution"></a>解决方法  
  若要解决此问题，请使用以下方法之一：  
   
-- 将主机应用程序配置成向公共 FTP 文件夹所在硬盘上的一个临时文件夹中进行写入，然后定期将临时文件夹的内容移动到 FTP 文件夹中。 临时文件夹应与公共 FTP 文件夹位于同一硬盘上，以确保移动操作为原子操作。 原子操作是功能上无法分割的操作。 如果您通过使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] FTP 适配器将数据写入公共 FTP 文件夹，则配置发送端口时，可以通过在“FTP 传输属性”对话框中指定“临时文件夹”属性来实现。 如果指定“临时文件夹”属性，请确保此文件夹与公共 FTP 文件夹位于同一物理磁盘上。  
+- 配置主机应用程序要写入到临时文件夹与公共 FTP 文件夹位于同一硬盘上，并定期将临时文件夹的内容移动到 FTP 文件夹。 临时文件夹应与公共 FTP 文件夹，以确保移动操作为原子同一硬盘上。 以原子操作是功能上无法分割的操作。 如果您数据写入公共 FTP 文件夹使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]FTP 适配器，您可以执行此操作通过在 FTP 传输属性对话框中指定临时文件夹属性时，发送端口配置。 如果您指定的临时文件夹属性，请确保此文件夹与公共 FTP 文件夹位于同一个物理磁盘上。  
   
-- 将 FTP 接收位置配置为在主机应用程序不向 FTP 服务器写入数据的服务时段执行操作。 可以在配置接收位置属性时指定该服务时段。  
+- 配置 FTP 接收位置主机应用程序不向 FTP 服务器写入数据时运行的服务时段。 在配置的接收位置属性时，可以指定服务时段。  
   
-#### <a name="ftp-adapter-does-not-support-revocation-checks-on-the-server-certificates"></a>FTP 适配器不支持对服务器证书执行吊销检查。  
+#### <a name="ftp-adapter-does-not-support-revocation-checks-on-the-server-certificates"></a>FTP 适配器不支持对服务器证书的吊销检查  
   
 ##### <a name="problem"></a>问题  
- FTP 适配器在 BizTalk Server 中的得到了增强，可支持安全文件传输到和从 FTPS 服务器使用 SSL/TLS。 证书吊销列表 (CRL) 包含已吊销的及不再有效的证书列表。 FTP 适配器不能查阅 CRL 来对服务器证书进行身份验证。  
+ FTP 适配器在 BizTalk Server 中的得到了增强，可支持安全文件传输到和从 FTPS 服务器使用 SSL/TLS。 证书吊销列表 (CRL) 包含一系列已被吊销，并且将不再有效的证书。 FTP 适配器不能查阅 CRL 进行身份验证服务器证书。  
   
 ##### <a name="cause"></a>原因  
  根据设计，FTP 适配器不能查阅 CRL 再接受服务器证书。  

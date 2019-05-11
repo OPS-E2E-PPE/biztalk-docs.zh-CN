@@ -14,14 +14,14 @@ caps.latest.revision: 33
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d5c3f4fa3b978775c9f2c8fa91467b88cc74eae8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2de325312d81ba5b4d666d47c0af829835dc764d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976566"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65247210"
 ---
-# <a name="using-failed-message-routing"></a>使用失败消息路由
+# <a name="using-failed-message-routing"></a>使用失败的消息路由
 使用错误处理功能，设计者可以指定对消息传送失败进行自动处理，以此作为将失败消息放在挂起队列中的传统（现在是默认）行为的替换选择。 此自动处理方式会将错误消息路由到任何订阅路由目标（例如发送端口或业务流程）。 错误消息是原始消息的克隆，其中以前升级的所有属性将降级，与特定消息传送失败相关的所选属性将升级到消息上下文。  
   
 > [!WARNING]
@@ -34,7 +34,7 @@ ms.locfileid: "36976566"
   
 - 如果在发送端口上启用失败消息路由，并且消息在发送管道中失败，则会生成失败消息。  
   
-  生成失败消息时，BizTalk Server 会在发布失败消息之前将与错误报告相关的消息上下文属性升级，并将常规消息上下文属性降级。 未启用失败的消息时，与默认行为相比较：失败的邮件都将挂起。  
+  生成失败消息时，BizTalk Server 会在发布失败消息之前将与错误报告相关的消息上下文属性升级，并将常规消息上下文属性降级。 这与默认行为时失败的消息路由未启用：失败的消息被挂起。  
   
 ## <a name="what-kinds-of-messaging-failures-trigger-an-error-message"></a>有哪些种类的消息失败会触发错误消息？  
  如果启用了对失败消息的路由，则在适配器处理、管道处理、映射或消息路由过程中所发生的任何故障都将导致错误消息。 如果从接收端口接收或向发送端口发送业务流程时出现了消息传送错误，则生成的错误消息将与业务流程所绑定的消息端口关联。  
@@ -51,7 +51,7 @@ ms.locfileid: "36976566"
 |-------------------|---------------|--------------|-----------------|  
 |FailureCode|System.String|是|错误代码。 十六进制值，在 BizTalk Server 管理控制台中报告该值。|  
 |FailureCategory|System.Int32|是|不使用此属性。 未定义其值。|  
-|Description|System.String|“否”|错误说明。 与写入应用程序事件日志中的内容相同的诊断文本，提供有关此消息传送失败的信息。|  
+|Description|System.String|否|错误说明。 与写入应用程序事件日志中的内容相同的诊断文本，提供有关此消息传送失败的信息。|  
 |MessageType|System.String|是|失败消息的消息类型，如果消息类型不确定则为空。<br /><br /> BizTalk Server 使用消息类型将消息与其 XML 架构相关联。 消息类型通过连接架构命名空间和架构根节点形成： http://mynamespace#rootnode。 **注意：** 消息失败之前确定其消息类型不具有此属性设置。|  
 |ReceivePortName|System.String|如果失败发生在入站处理期间（在接收端口中），则为“已升级” 。<br /><br /> 如果在发生端口发生失败，则为“未升级” 。|发生失败的接收端口的名称。|  
 |InboundTransportLocation|System.String|如果失败发生在入站处理期间（在接收端口中），则为“已升级” 。<br /><br /> 如果在发生端口发生失败，则为“未升级” 。|发生失败的接收位置的 URI。|  
@@ -91,9 +91,9 @@ ms.locfileid: "36976566"
   
  消息通常以其原始形式（管道处理之前的形式）挂起，但以下两种消息除外：  
   
--   **由管道组件挂起的消息。** BizTalk 服务器以将其提供给失败管道组件时的相同形式挂起此类消息。 恢复消息时，从同一管道的开始位置执行管道处理。 这意味着，对于在出现原始失败的阶段以前的管道阶段中的管道组件，它们必须准备以不同于原始形式（处理该消息的形式）的形式处理“相同”消息。  
+-   **由管道组件挂起的消息。** BizTalk Server 以将其提供给失败管道组件时的相同形式挂起此类消息。 恢复消息时，从同一管道的开始位置执行管道处理。 这意味着，对于在出现原始失败的阶段以前的管道阶段中的管道组件，它们必须准备以不同于原始形式（处理该消息的形式）的形式处理“相同”消息。  
   
--   **来自可恢复的消息的交换拆装随后路由失败。** BizTalk 服务器以其被发布时的相同形式挂起此类消息。 这是在管道执行 **之后** 消息所具有的形式。 消息恢复后，会跳过管道处理，直接发布到 MessageBox 数据库。  
+-   **来自可恢复的消息的交换拆装随后路由失败。** BizTalk Server 以其被发布时的相同形式挂起此类消息。 这是在管道执行 **之后** 消息所具有的形式。 消息恢复后，会跳过管道处理，直接发布到 MessageBox 数据库。  
   
 ## <a name="scenarios-leading-to-suspended-non-resumable-messages"></a>导致消息挂起（不可恢复）的情况  
  通常，挂起的消息是可恢复的，不过在某些情况下，也会导致不可恢复的消息：  
@@ -109,4 +109,4 @@ ms.locfileid: "36976566"
 ## <a name="see-also"></a>请参阅  
  [错误处理](../core/error-handling.md)   
  [使用确认](../core/using-acknowledgments.md)   
- [消息按序送达](../core/ordered-delivery-of-messages.md)
+ [按序送达消息](../core/ordered-delivery-of-messages.md)

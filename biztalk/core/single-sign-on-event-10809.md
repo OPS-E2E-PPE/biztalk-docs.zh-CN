@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10809 |Microsoft Docs
+title: 单一登录：Event 10809 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d4bf5ba006af8c479abc621accdc28296c0eae3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3dc0f1b98ed1b9b3e414888b01f2693a9f1786f4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37016060"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65293005"
 ---
-# <a name="single-sign-on-event-10809"></a>单一登录： 事件 10809
+# <a name="single-sign-on-event-10809"></a>单一登录：事件 10809
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                   |
@@ -28,14 +28,14 @@ ms.locfileid: "37016060"
 | 产品版本 |    [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]     |
 |    事件 ID     |                               10809                               |
 |  事件源   |                              ENTSSO                               |
-|    组件    |                                N/A                                |
+|    组件    |                                不可用                                |
 |  符号名称  |                  ENTSSO_E_HISSO_APP_NOT_ENABLED                   |
-|  消息正文   | 主机启动的单一登录未启用该应用程序。 |
+|  消息正文   | 该应用不支持为主机启动的单一登录。 |
   
 ## <a name="explanation"></a>解释  
- 主机启动的单一登录未启用该应用程序。  
+ 该应用不支持为主机启动的单一登录。  
   
 ## <a name="user-action"></a>用户操作  
- 使用管理工具配置主机启动的单一登录。 这会设置  
+ 使用管理工具来配置主机启动的单一登录。 这会设置  
   
- SSO_FLAG_SSO_EXTERNAL_TO_WINDOWS 标志。
+ SSO_FLAG_SSO_EXTERNAL_TO_WINDOWS 标记应用程序。

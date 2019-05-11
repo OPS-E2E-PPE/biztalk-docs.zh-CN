@@ -1,5 +1,5 @@
 ---
-title: 步骤 10： 验证端到端方案 |Microsoft Docs
+title: 步骤 10:验证端到端方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,14 +14,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 43d95e54bbcf0c7c716630305b85ba8b9bed1a52
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 081f2e7f81c7ea293cac8717434a451d0d2ecd6f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990342"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289054"
 ---
-# <a name="step-10-verify-the-end-to-end-scenario"></a>步骤 10： 验证端到端方案
+# <a name="step-10-verify-the-end-to-end-scenario"></a>步骤 10:验证端到端方案
 在此步骤中，对于本教程中验证端到端方案。  
   
 ### <a name="to-verify-the-end-to-end-tutorial-scenario"></a>若要验证的端到端教程方案  
@@ -75,7 +75,7 @@ ms.locfileid: "36990342"
    > [!NOTE]
    >  如果未正确显示消息，请使用运行状况与活动跟踪 (HAT) 工具解决该错误。  
   
-   恭喜！ 已成功完成 BTAHL7 的端到端教程。  
+   祝贺你！ 已成功完成 BTAHL7 的端到端教程。  
   
 ## <a name="see-also"></a>请参阅  
  [端到端教程](../../adapters-and-accelerators/accelerator-hl7/end-to-end-tutorial1.md)

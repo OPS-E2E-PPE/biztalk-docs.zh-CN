@@ -12,21 +12,21 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0a700282aee9651b8f259c931a460a774f900a4a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5999d52c8896a750810edfa64c0874c8d0948fef
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999726"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355033"
 ---
-# <a name="configuring-validation-edifact-interchange-settings"></a>配置验证（EDIFACT-交换设置）
-本部分说明如何防止处理重复控制编号。  
+# <a name="configuring-validation-edifact-interchange-settings"></a>配置验证 （EDIFACT-交换设置）
+本部分将说明了如何防止处理重复控制编号。  
   
 > [!IMPORTANT]
 >  没有属性禁用此页上，即使您清除**本地 BizTalk 处理参与方或支持来自此参与方发送消息的接收的消息**要为其创建的参与方时的复选框协议。  
   
-## <a name="prerequisites"></a>必要條件  
- 必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组或 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators 组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 必须以成员的身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理员或[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]B2B Operators 组。  
   
 ### <a name="to-configure-duplicate-validation"></a>若要配置重复验证  
   
@@ -34,7 +34,7 @@ ms.locfileid: "36999726"
   
 2. 在单向协议选项卡下**交换设置**部分中，单击**验证**。  
   
-3. 选择**交换控制编号 (UNB5)** 复选框以启用接收管道可阻止重复交换。 如果选中此选项，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将检查所接收的交换的控制编号是否与接收的其他交换的控制编号匹配。 如果检测到匹配，则接收管道将不处理交换。  
+3. 选择**交换控制编号 (UNB5)** 复选框以启用接收管道可阻止重复交换。 如果选择，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将检查接收交换的交换控制编号与接收的其他交换的交换控制编号不匹配。 如果检测到匹配项，则接收管道将不处理交换。  
   
 4. 如果**交换控制编号 (UNB5)** 处于选中状态，在**检查重复的 UNB5 范围**字段中，输入天数，以检查是否有重复交换。  
   

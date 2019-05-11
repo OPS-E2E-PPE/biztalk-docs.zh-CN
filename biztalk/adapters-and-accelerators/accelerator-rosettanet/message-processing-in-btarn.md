@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f2833d0ae20462d5be84a45b49fc2e1fde44be4f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f586b9c26016e555f1b55f06bec975281fd7bf0a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967142"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282974"
 ---
 # <a name="message-processing-in-btarn"></a>BTARN 中的消息处理
-本部分介绍了如何 Microsoft® 的主要组件[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]处理消息。 本节中的主题在合适处包含了对通过组件的消息流的说明。  
+本部分介绍了如何 Microsoft® 的主要组件[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]处理消息。 根据需要，在本部分中的主题包括消息流通过组件的说明。  
   
 ## <a name="in-this-section"></a>本节内容  
   

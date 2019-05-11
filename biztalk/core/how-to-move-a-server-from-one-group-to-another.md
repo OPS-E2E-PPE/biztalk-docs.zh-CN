@@ -19,20 +19,20 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0492af242b742fa51b75ae36ac577cd0ff0b8714
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b3ef92cecddc32915a194cd5058e7337511ab609
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971766"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65335956"
 ---
 # <a name="how-to-move-a-server-from-one-group-to-another"></a>如何将服务器从一个组移到另一个
-一台服务器只能与一个 BizTalk Server 组相关联。 若要将服务器从一个组移至另一个组，则必须首先通过取消原始组中对该服务器的配置将其从组中删除，然后再将该服务器添加到新组中。  
+一台服务器只能与一个 BizTalk Server 组相关联。 若要将服务器从一个组移动到另一个，必须首先从原始组删除服务器，从而取消它，并将服务器添加到新的组。  
   
-## <a name="prerequisites"></a>必要條件  
- 若要执行此过程，必须以 SSO Administrators 组成员和 Windows Administrators 组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 若要执行此过程，必须为 SSO Administrators 组的成员和 Windows Administrators 组的成员身份登录。  
   
-### <a name="to-move-a-server-from-one-biztalk-group-to-another"></a>将服务器从一个 BizTalk 组移至另一个 BizTalk 组  
+### <a name="to-move-a-server-from-one-biztalk-group-to-another"></a>若要将服务器从一个 BizTalk 组移动到另一个  
   
 1. 在你想要从 BizTalk 组移动到另一个计算机，单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 配置**.  
   
@@ -41,13 +41,13 @@ ms.locfileid: "36971766"
 3. 在中**取消对功能**对话框中，选择**企业 SSO**，选择**组**，然后单击**确定**。  
   
    > [!CAUTION]
-   >  取消组配置还将取消配置该计算机上已配置的所有依存功能。  
+   >  取消组配置还将取消已在该计算机配置的所有依存功能。  
   
 4. 单击 **“是”**。  
   
 5. 在中**Microsoft BizTalk Server 配置**窗口中，单击**下一步**。  
   
-    这样就取消了对企业 SSO、组及其依存功能的配置。  
+    未配置企业 SSO、 组和及其依存功能。  
   
 6. 单击 **“完成”**。  
   
@@ -61,13 +61,13 @@ ms.locfileid: "36971766"
   
 11. 上**企业单一登录**页上，单击**加入现有 SSO 系统**。  
   
-     确保服务器名称和数据库名称均指向该服务器要移动到的 BizTalk Server 组的主 SSO 数据库服务器。  
+     确保服务器名称和数据库名称均指向到的 BizTalk Server 组的主 SSO 数据库服务器要移动服务器。  
   
 12. 在屏幕左侧导航树中，单击**组**。  
   
 13. 上**组**页上，单击**加入现有 BizTalk 组**。  
   
-     确保服务器名称和数据库名称均指向该服务器要移动到的 BizTalk Server 组的数据库。  
+     确保服务器名称和数据库名称均指向到 BizTalk Server 组的数据库要移动服务器。  
   
 14. 在菜单栏上，单击**应用配置**若要在此计算机上配置企业单一登录和组。  
   

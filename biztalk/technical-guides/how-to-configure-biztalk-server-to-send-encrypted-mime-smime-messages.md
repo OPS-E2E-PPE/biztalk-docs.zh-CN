@@ -12,18 +12,18 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 02f8bb1c1cb11df4d3438f6a8d8af38edf547ea7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2dded85a219f5a32ce83ebc4da96f0f0566bf8c7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981278"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253383"
 ---
 # <a name="how-to-configure-biztalk-server-to-send-encrypted-mimesmime-messages"></a>如何配置 BizTalk Server 以便发送加密的 MIME/SMIME 消息
 本主题介绍如何配置 BizTalk Server 以便使用证书来发送加密的 MIME/SMIME 消息。 下面的过程也适用于配置通过 AS2 传输发送加密消息。  
   
-## <a name="prerequisites"></a>必要條件  
- 若要执行本主题中的过程，则必须以 BizTalk Server Administrators 组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 若要执行本主题中的过程，必须以 BizTalk Server Administrators 组的成员的身份登录。  
   
 ### <a name="to-configure-biztalk-server-to-send-encrypted-messages"></a>若要配置 BizTalk Server 以便发送加密的消息  
   
@@ -37,7 +37,7 @@ ms.locfileid: "36981278"
    2.  在中**属性**窗口中，配置到的 MIME/SMIME 编码器管道组件启用加密属性**True**。  
   
        > [!NOTE]  
-       >  您可以在将管道部署到某一 BizTalk 组中后使用 BizTalk Server 管理控制台配置发送管道组件属性。  
+       >  可以配置管道部署到 BizTalk 组后，使用 BizTalk Server 管理控制台的发送管道组件属性。  
   
    3.  生成并部署发送管道。  
   
@@ -53,4 +53,4 @@ ms.locfileid: "36981278"
    3.  通过右键单击该发送端口，单击安装的加密证书分配**属性**，然后单击**证书**。 单击**浏览**，浏览到你想要将分配到此发送端口，然后单击该证书**确定**。  
   
        > [!NOTE]  
-       >  如果证书中不存在本地计算机上**指纹**框中，键入或粘贴证书指纹，然后单击**确定**。 证书指纹的格式为 HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH，其中 H 为十六进制数。
+       >  如果证书中不存在本地计算机上**指纹**框中，键入或粘贴证书指纹，然后单击**确定**。 证书指纹的格式 HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH HHHH，其中 H 为十六进制数字。

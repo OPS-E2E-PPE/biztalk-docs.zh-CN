@@ -1,5 +1,5 @@
 ---
-title: ImportSettings 命令 |Microsoft 文档
+title: ImportSettings 命令 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,36 +12,36 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9c609634422f8c8b5f2c1a96691fe4eda708e5c9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 040e0d827fd8039433ed950119e6c7b2d0ee3a9b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257549"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65332164"
 ---
 # <a name="importsettings-command"></a>ImportSettings 命令
-将 BizTalk 组、主机或主机实例设置从 XML 源文件导入到配置数据库。 设置将按照映射 XML 文件中的方式进行映射。 这些设置可能已导出中所述[导入或导出 BizTalk 设置使用设置仪表板](how-to-import-biztalk-settings-using-settings-dashboard.md)或[导入或导出 BizTalk 设置使用 BTSTask](how-to-import-biztalk-settings-using-btstask.md)。  
+导入 BizTalk 组、 主机或主机实例设置从源 XML 文件配置数据库。 设置映射以及映射 XML 文件。 这些设置可能已导出中所述[导入或导出 BizTalk 设置使用设置仪表板](how-to-import-biztalk-settings-using-settings-dashboard.md)或[导入或导出 BizTalk 设置使用 BTSTask](how-to-import-biztalk-settings-using-btstask.md)。  
   
 ## <a name="prerequisites"></a>先决条件  
- 若要执行此操作，你必须作为 BizTalk Server Administrators 组的成员身份登录。  
+ 若要执行此操作，必须以 BizTalk Server Administrators 组的成员的身份登录。  
   
 ## <a name="usage"></a>用法  
  `ImportSettings –Source:value –Map: value [-Server:value] [-Database:value]`  
   
 ## <a name="parameters"></a>Parameters  
   
-|**参数**|必需|值|  
+|**参数**|Required|ReplTest1|  
 |-------------------|--------------|-----------|  
-|**源代码**|是|导出的设置 XML 文件的路径和文件名。|  
-|**映射**|是|映射 XML 文件的路径和文件名。|  
-|**服务器**|可选|托管 BizTalk 配置数据库的 SQL 服务器计算机名称。|  
-|**数据库**|可选|BizTalk 配置数据库的名称。|  
+|**-Source**|是|导出的设置 XML 文件的路径和文件名称。|  
+|**-Map**|是|映射 XML 文件的路径和文件名称。|  
+|**-Server**|可选|承载 BizTalk 配置数据库的 SQL Server 计算机的名称。|  
+|**-Database**|可选|BizTalk 配置数据库的名称。|  
   
 ## <a name="sample"></a>示例  
  `BTSTask ImportSettings /Source:”C:\My Folder>\ExportedSettings.xml” /Map:Mappings.xml /Server:MyServer /Database:MyMgmtDb`  
   
-## <a name="remarks"></a>注释  
- 参数不区分大小写。 指定参数无需键入整个参数名，只需键入可明确标识该参数的参数名的前几个字母即可。  
+## <a name="remarks"></a>备注  
+ 参数不区分大小写。 不需要键入整个参数名称来指定它;您可以键入明确标识参数名称的第几个字母。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [BTSTask 命令行参考](../core/btstask-command-line-reference.md)

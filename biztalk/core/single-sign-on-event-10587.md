@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10587 |Microsoft Docs
+title: 单一登录：Event 10587 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 33b8de68cec25dbd6ef6508dcc8a39246fb9992d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 08f72f866a465f5519d1507ac4f13e15d59cb8a0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014254"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65270995"
 ---
-# <a name="single-sign-on-event-10587"></a>单一登录： 事件 10587
+# <a name="single-sign-on-event-10587"></a>单一登录：事件 10587
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                         |
@@ -28,12 +28,12 @@ ms.locfileid: "37014254"
 | 产品版本 |                       [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                        |
 |    事件 ID     |                                                  10587                                                  |
 |  事件源   |                                                 ENTSSO                                                  |
-|    组件    |                                                   N/A                                                   |
+|    组件    |                                                   不可用                                                   |
 |  符号名称  |                                    SSO_INFO_CRED_CACHE_SIZE_CHANGED                                     |
-|  消息正文   | 已经为此 SSO 服务器更改了凭据缓存大小。%r<br /><br /> 凭据缓存大小： %1 |
+|  消息正文   | 凭据缓存大小已更改为该 SSO server.%r<br /><br /> 凭据缓存大小： %1 |
   
 ## <a name="explanation"></a>解释  
- 凭据缓存大小已更改为此消息中列出的新值。  
+ 凭据缓存大小已为消息中列出的新值。  
   
 ## <a name="user-action"></a>用户操作  
  不需要任何用户操作。

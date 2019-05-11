@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 527f6709d48124f7ffcc0823bdc5ff84e92256ff
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b5ba87e528063e8c4ba4159d9a0fbb299d55c236
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978398"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65347460"
 ---
-# <a name="max-limit-of-acceptable-x12-functional-group-control-number-has-reached-for-party"></a>已达到参与方的可接受 X12 功能组控制编号最大限制
+# <a name="max-limit-of-acceptable-x12-functional-group-control-number-has-reached-for-party"></a>可接受 X12 功能组控制编号已达到参与方的最大限制
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                              |

@@ -1,5 +1,5 @@
 ---
-title: 如何测试组件接口 |Microsoft 文档
+title: 如何测试组件接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,58 +15,58 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: be50521e5c4421d8ac8902bcf7a414d734c3b9f8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d8450177cd97d7136d8ee4146ff93fceee20b351
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256565"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333859"
 ---
 # <a name="how-to-test-component-interfaces"></a>如何测试组件接口
-Microsoft BizTalk Adapter for PeopleSoft Enterprise 使用 PeopleSoft 元数据和组件接口；因此，它可以处理新增或改进过的组件接口。 除假设组件接口符合逻辑并且有效之外，该适配器不对组件接口进行任何其他假设。 因此，每个组件接口在用作适配器的来源之前都必须进行测试。  
+适用于 PeopleSoft Enterprise 的 Microsoft BizTalk 适配器使用 PeopleSoft 元数据和组件接口;因此，它可以处理新的或已修改的组件接口。 适配器组件接口中进行任何假设，只不过逻辑并且有效。 因此，每个组件接口必须为适配器作为源使用之前进行测试。  
   
- 如果用户或 PeopleSoft 软件升级对底层应用程序进行了任何更改，并且这些更改使得某个组件接口变为无效，那么在适配器使用组件接口之前，用户必须首先修复无效的接口。  
+ 如果由用户或 peoplesoft 软件升级，对基础应用程序进行更改，并且所做的更改使之无效的组件接口，用户必须首先修复无效的组件接口之前，适配器将使用它。  
   
-### <a name="to-test-a-component-interface"></a>测试组件接口  
+### <a name="to-test-a-component-interface"></a>若要测试组件接口  
   
 1.  在应用程序设计器上**工具**菜单上，单击**测试组件接口**。  
   
      ![](../core/media/psadapter-54-ps-testcompinterface1.gif "PSAdapter_54_PS_TestCompInterface1")  
   
-2.  在**组件接口测试人员**对话框框中，通过使用以下方法之一来测试该组件接口。 在您完成更改工作之后，请右键单击窗格中最顶部的一项。  
+2.  在中**Component Interface Tester**对话框框中，通过使用以下方法之一测试组件接口。 完成更改后，右键单击窗格顶部的项目。  
   
     > [!NOTE]
-    >  如果需要，请单击对话框使其成为前台窗口。  
+    >  如果需要，单击对话框中，将其置于前台。  
   
-    -   若要测试使用查找方法该组件接口，请单击**查找**。  
+    -   若要测试组件接口使用 Find 方法，请单击**查找**。  
   
-         **组件接口测试器-查找结果**对话框随即打开，显示基础组件的可能的所有项。 如果项数超过 300，会显示一条消息。  
+         **Component Interface Tester-查找结果**对话框将打开，显示针对该底层组件的所有可能的项。 如果有 300 多个项，会显示一条消息。  
   
          a. 在左窗格中**查找结果**对话框中，选择一个字段。  
   
          b. 若要显示该特定字段的相关数据，请单击**获取的所选**。  
   
-         将出现以下屏幕。  
+         出现以下屏幕。  
   
          ![](../core/media/psadapter-55-ps-testcompinterface2.gif "PSAdapter_55_PS_TestCompInterface2")  
   
-         如果安全设置允许，可以更改各个字段中的值。  
+         如果安全设置允许，可以更改中的每个字段的值。  
   
-         将打开以下对话框。  
+         此时将打开以下对话框。  
   
          ![](../core/media/psadapter-56-ps-testcompinterface3.gif "PSAdapter_56_PS_TestCompInterface3")  
   
     -   若要测试组件接口使用`Get`方法：  
   
-         a. 输入现有密钥。  
+         a. 输入现有键。  
   
          b. 单击**获取现有**。  
   
-         这会返回您输入的键的已公开属性。  
+         这会返回您输入的密钥的公开的属性。  
   
-         你可以更改值，如果**更新访问权限**指定。  
+         您可以更改值，如果**更新访问**指定。  
   
-         或者，你可以测试使用`Create`方法。  
+         或者，您可以使用测试`Create`方法。  
   
          ![](../core/media/psadapter-57-ps-testcompinterface4.gif "PSAdapter_57_PS_TestCompInterface4")  
   
@@ -74,24 +74,24 @@ Microsoft BizTalk Adapter for PeopleSoft Enterprise 使用 PeopleSoft 元数据�
   
          a. 输入所有所需的密钥值。  
   
-         b. 单击**创建新**。  
+         b. 单击**创建新的**。  
   
-         在输入中的有效值**创建密钥**，与默认数据就地展开表名后，此时将打开显示 JOBCODE 数据窗格。  
+         当输入中的有效值**创建密钥**，完成对默认数据扩展表名称后，将打开显示 JOBCODE 数据的窗格。  
   
-         现在，可以更改字段。  
+         可以现在更改字段。  
   
          ![](../core/media/psadapter-58-ps-testcompinterface5.gif "PSAdapter_58_PS_TestCompInterface5")  
   
-         将针对组件的底层业务逻辑对更改进行验证。  
+         更改针对组件的基础业务逻辑对进行验证。  
   
 3.  若要保存所做的更改，请单击**保存**图标。  
   
-     用来创建记录的键可以与 Get 方法一起使用以查看数据。 可以在 PeopleSoft Component 中查看添加的数据，如下例所示。  
+     用于创建记录的密钥可以用于查看数据的 Get 方法。 可以在 PeopleSoft Component 中查看已添加的数据，如下面的示例中所示。  
   
      ![](../core/media/psadapter-59-ps-testcompinterface6.gif "PSAdapter_59_PS_TestCompInterface6")  
   
      **生效日期**是默认值之一。  
   
-## <a name="see-also"></a>另请参阅  
- [附录 a： 组件接口方法](../core/appendix-a-component-interface-methods.md)   
- [附录 c： 使用组件接口](../core/appendix-c-using-component-interfaces.md)
+## <a name="see-also"></a>请参阅  
+ [附录 a:组件接口方法](../core/appendix-a-component-interface-methods.md)   
+ [附录 c:使用组件接口](../core/appendix-c-using-component-interfaces.md)

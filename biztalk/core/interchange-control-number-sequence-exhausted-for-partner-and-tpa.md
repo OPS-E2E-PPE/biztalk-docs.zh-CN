@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19f1aeb79febf8bca10f46b2b5a3a5ba319f6028
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ad35d7ddd35b6f21b2aef73cd7ddf12fe42ebcc2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989358"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65331699"
 ---
 # <a name="interchange-control-number-sequence-exhausted-for-partner-and-tpa"></a>交换控制编号序列的合作伙伴和 TPA 耗尽
 ## <a name="details"></a>详细信息  
@@ -36,4 +36,4 @@ ms.locfileid: "36989358"
  此错误/警告/信息事件表明 BizTalk Server 无法处理文档，因为交换的控制范围已用完中协议{2}。  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请选中该复选框以重置 {2} 协议的控制编号或增加控制编号范围，或者针对协议中的控制编号范围规范单击“重置”按钮。
+ 若要解决此错误，请选中该复选框以重置的控制编号{2}协议或增加控制编号范围，或者在协议中命中根据控制编号范围规范的重置按钮。

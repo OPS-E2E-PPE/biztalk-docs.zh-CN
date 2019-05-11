@@ -1,5 +1,5 @@
 ---
-title: 使用结果列表 |Microsoft 文档
+title: 使用结果列表 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,18 +16,18 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f6b8350acd8ebc1e979421caf728ad4bedb0c54f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f482528f93bbae4ab5de7cea3abb64cc21c26261
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289565"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65277189"
 ---
-# <a name="working-with-the-results-list"></a>使用“结果”列表
-在组中心页中运行查询时，它会生成**查询结果**包含搜索结果中，例如相关的消息、 管道和程序集的列表。  
+# <a name="working-with-the-results-list"></a>使用结果列表
+如果在组中心页中运行的查询，它将生成**查询结果**列表，其中包含搜索结果中的，如相关消息、 管道和程序集。  
   
 > [!NOTE]
->  若要排序结果列表，请单击任一列标题。 每次单击时，将在列值的升序、降序字母顺序或数字显示之间转换。  
+>  若要排序结果列表，请单击任何列标题。 每次单击时，它将切换升序或降序字母顺序或数字显示的列的值。  
   
 ## <a name="in-this-section"></a>本节内容  
   

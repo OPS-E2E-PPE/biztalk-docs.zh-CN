@@ -20,20 +20,20 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5f3243173f454d560515d1c3cbb9bef749fc17d6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9e5e712f0ec845c4f895833908954711cdce0698
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991166"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334907"
 ---
 # <a name="how-to-resume-suspended-orchestration-instances"></a>如何恢复挂起的业务流程实例
-如果你已挂起被列为“可恢复的挂起”的业务流程实例，则可以尝试从查询结果或预览窗格中恢复该业务流程实例。 只有在导致业务流程实例挂起的根本问题也得到解决后，才能成功恢复该业务流程实例。  
+如果你已挂起被列为"可恢复挂起"的业务流程实例，可以尝试恢复该业务流程实例从查询结果或预览窗格。 如果导致业务流程实例挂起的根本问题也得到解决，才会成功恢复业务流程实例。  
   
-## <a name="prerequisites"></a>必要條件  
- 必须以 BizTalk Server Operators 组成员的身份登录，才能执行此过程。  
+## <a name="prerequisites"></a>先决条件  
+ 您必须为要执行此过程的 BizTalk Server Operators 组的成员身份登录。  
   
-### <a name="to-resume-suspended-orchestration-instances"></a>恢复挂起的业务流程实例  
+### <a name="to-resume-suspended-orchestration-instances"></a>若要恢复挂起的业务流程实例  
   
 1. 单击**启动**，单击**程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   

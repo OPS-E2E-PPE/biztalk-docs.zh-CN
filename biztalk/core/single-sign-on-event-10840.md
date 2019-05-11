@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10840 |Microsoft Docs
+title: 单一登录：Event 10840 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 703695c4dabd6f65664f2ebd8d4b344b2b418f0d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1bfe65f1bc128c3ba595b4079ec8f390d1dd3d0d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021771"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65307347"
 ---
-# <a name="single-sign-on-event-10840"></a>单一登录： 事件 10840
+# <a name="single-sign-on-event-10840"></a>单一登录：事件 10840
 ## <a name="details"></a>详细信息  
   
 |                 |                                                            |
@@ -28,7 +28,7 @@ ms.locfileid: "37021771"
 | 产品版本 | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
 |    事件 ID     |                           10840                            |
 |  事件源   |                           ENTSSO                           |
-|    组件    |                            N/A                             |
+|    组件    |                            不可用                             |
 |  符号名称  |               ENTSSO_E_MAX_PASSWORD_REMINDER               |
 |  消息正文   |  最大密码提醒长度为 512 个字符。   |
   

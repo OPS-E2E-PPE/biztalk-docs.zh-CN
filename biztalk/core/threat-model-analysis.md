@@ -16,12 +16,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f7fa52a2d256bace363c3453f19cabefca81cb73
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7e16ae71495980e3897ab1e847600222b1c276d2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37016844"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399986"
 ---
 # <a name="threat-model-analysis"></a>威胁模型分析
 威胁模型分析 (TMA) 是可以帮助您确定对产品、 应用程序、 网络或环境中，带来安全风险分析和攻击可以出现。 目标是确定哪些威胁需要迁移以及如何缓解这些问题。  
@@ -86,7 +86,7 @@ ms.locfileid: "37016844"
   
 -   请注意所涉及的资产。  
   
--   讨论每个 DFD 和威胁的 DFD 中的所有条目的以下类别中查找： **S**poofing 标识，请**T**篡改数据， **R**epudiation， **我**表示信息泄露**D**表示拒绝服务，和**E**表示特权提升。  
+-   讨论每个 DFD 和威胁的 DFD 中的所有条目的以下类别中查找：**S**poofing 标识，请**T**篡改数据， **R**epudiation，**我**表示信息泄露**D**表示拒绝服务，并**E**表示特权提升。  
   
 -   创建威胁分类列表。 我们建议，此列表包括以下： 标题、 简要说明 （包括威胁树）、 资产 （资产）、 impact(s)、 风险、 缓解措施，缓解状态和 bug 数。  
   
@@ -94,7 +94,7 @@ ms.locfileid: "37016844"
     >  查看威胁，可以添加风险、 缓解措施和缓解状态。 不占用太多时间在这些领域在威胁模型会议。  
   
 ## <a name="step-3-review-threats"></a>步骤 3. 查看威胁  
- 确定对你的环境的威胁后，必须对每个威胁的风险并确定你想要对每个威胁做出响应。 与其他团队会议或通过电子邮件时，可以执行此操作。 可以使用以下影响类别来计算风险危害： **D**潜在，损害**R**再现， **E**xploitability， 可用户，并**D**iscoverability。  
+ 确定对你的环境的威胁后，必须对每个威胁的风险并确定你想要对每个威胁做出响应。 与其他团队会议或通过电子邮件时，可以执行此操作。 可以使用以下影响类别来计算风险危害：**D**潜在，损害**R**再现， **E**xploitability，**一个**可用户并**D**iscoverability。  
   
  对你按风险设置优先级的目标环境的威胁的列表后，您必须确定将如何应对每个威胁。 您的响应可以是不执行任何操作 （很少是一个不错的选择）、 有关潜在问题的用户，则发出警告，删除该问题，或解决该问题。  
   

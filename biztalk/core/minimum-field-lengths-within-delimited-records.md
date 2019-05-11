@@ -12,15 +12,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 992ffbc6a2e0568bc000413bf90b3c92012d4d59
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f7e30f3bcb6b26a13dfd964eb59796dcdee56237
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983310"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65324681"
 ---
 # <a name="minimum-field-lengths-within-delimited-records"></a>分隔记录中的最小字段长度
-根据定义，位置记录中的字段都定义为具体特定的确切长度。 您还可以将分隔记录中的字段定义为具有最小长度。 此特性定义的 **[填充字符的最小长度**的属性**Field 元素**并**字段属性**节点。  
+根据定义，位置记录中的字段都定义为具有特定的确切长度。 分隔记录中的字段还可以定义为具有最小长度。 此特性定义的 **[填充字符的最小长度**的属性**Field 元素**并**字段属性**节点。  
 
  提供一个非零值时**填充字符的最小长度**属性，平面文件组装器将确定与字段关联的数据字符数是否小于设置**填充字符的最小长度**属性，将使用相关的填充字符以组成一个不同之处。  
 

@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 199726853eae4faf6efe67f622a8df2cbab1ccd1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4814cda3568d724664bd98556d46e5ae3552683c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986030"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289188"
 ---
 # <a name="selecting-the-logging-store"></a>选择日志记录存储
 Microsoft[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]提供了选项来选择不同的日志记录存储的组合，如[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]Management Instrumentation (WMI) [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]，和[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]事件日志。  
@@ -49,7 +49,7 @@ Microsoft[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversio
    |  **事件日志**   |          选择此选项，如果你想要使用[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]作为日志记录存储的事件日志。 您使用[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]事件查看器查看事件消息。          |
 
 
-2. 单击 **“保存”**。  
+2. 单击“保存” 。  
 
    > [!NOTE]
    >  日志记录事件代理记录的事件的区域设置依赖于日志记录服务帐户的区域设置。  

@@ -1,5 +1,5 @@
 ---
-title: 测试结果： SQL Server 关键性能指标 |Microsoft Docs
+title: 测试结果：SQL Server 关键性能指标 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed7f1348a23e6c4b145748ccfc0832c97648bdff
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6ba49d2b4e62041a0b47361144c1293bf7d7edf6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007510"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65301641"
 ---
-# <a name="test-results-sql-server-key-performance-indicators"></a>测试结果： SQL Server 关键性能指标
+# <a name="test-results-sql-server-key-performance-indicators"></a>测试结果：SQL Server 关键性能指标
 本主题总结了 SQL Server 关键性能指标 (KPI) 的测试方案期间观察到。 这些测试评估以下 SQL Server KPI:  
   
 -   SQL 处理器使用率由度量**\SQL\Processor(_Total)\\%Processor Time**性能监视器计数器。  
@@ -37,22 +37,22 @@ ms.locfileid: "37007510"
   
 1. **分配其他固定的 VHD 磁盘具有专用的虚拟控制器和通道 –** 分配使用的其他固定 VHD 磁盘的专用虚拟控制器，通道将会增加与使用单个 VHD 磁盘的磁盘吞吐量。  
   
-2. **优化网络性能 –** 的"优化网络性能"部分中所述的步骤[核对清单： 优化 HYPER-V 上的性能](~/technical-guides/checklist-optimizing-performance-on-hyper-v.md)。 多个 HYPER-V 虚拟机相同的 HYPER-V 主机上运行时是非常重要，遵循"相同的 HYPER-V 运行的配置的 HYPER-V 虚拟机宿主计算机以使用专用虚拟网络"部分中的建议[网络优化](../technical-guides/network-optimizations.md)。  
+2. **优化网络性能 –** 遵循的"优化网络性能"部分中所述步骤[核对清单：Hyper V 上优化性能](~/technical-guides/checklist-optimizing-performance-on-hyper-v.md)。 多个 HYPER-V 虚拟机相同的 HYPER-V 主机上运行时是非常重要，遵循"相同的 HYPER-V 运行的配置的 HYPER-V 虚拟机宿主计算机以使用专用虚拟网络"部分中的建议[网络优化](../technical-guides/network-optimizations.md)。  
   
    由于无状态性质[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]、 其他[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]虚拟机可以轻松地添加到环境根据需要提供横向扩展并提高系统的整体性能。  
   
    下图说明了各种测试平台上的 SQL Server 性能：  
   
    ![SQL 关键绩效指标](../technical-guides/media/sqlkpi.gif "SQLKPI")  
-   SQL 关键绩效指标  
+   SQL 关键性能指标  
   
-   下表说明了收集 KPI 的每个配置的相对性能。 每个结果集计算的基线配置 KPI 百分比  
+   下表说明了每个配置的收集 KPI 的相对性能。 每个结果集计算的基线配置 KPI 百分比  
   
-|KPI|虚拟 BizTalk/物理 SQL|在单独主机上的虚拟 BizTalk/虚拟 SQL|合并环境上的虚拟 BizTalk/虚拟 SQL|  
+|KPI|虚拟 BizTalk/物理 SQL|在单独的主机的虚拟 BizTalk/虚拟 SQL|合并环境上的虚拟 BizTalk/虚拟 SQL|  
 |---------|-----------------------------------|----------------------------------------------------|--------------------------------------------------------------|  
 |\SQL\Processor(_Total)\\处理器时间百分比|97.7%|98.4%|99.9%|  
 |\SQL server: SQL Statistics\Batch 请求数/秒|97.1%|83.3%|71.2%|  
   
- 有关如何评估磁盘 I/O 性能的详细信息，请参阅**衡量磁盘 I/O 性能**主题的部分[核对清单： 度量 HYPER-V 上的性能](../technical-guides/checklist-measuring-performance-on-hyper-v.md)。  
+ 有关如何评估磁盘 I/O 性能的详细信息，请参阅**衡量磁盘 I/O 性能**主题的部分[核对清单：Hyper V 上测量性能](../technical-guides/checklist-measuring-performance-on-hyper-v.md)。  
   
  有关在 HYPER-V 环境中运行 SQL Server 2008 时的最佳做法的详细信息，请参阅白皮书"运行 SQL Server 2008 in a HYPER-V 环境 – 最佳实践和性能建议"下载[ http://go.microsoft.com/fwlink/?LinkId=144622](http://go.microsoft.com/fwlink/?LinkId=144622).

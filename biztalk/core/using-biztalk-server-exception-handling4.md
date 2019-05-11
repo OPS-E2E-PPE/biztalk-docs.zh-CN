@@ -1,6 +1,6 @@
 ---
-title: 添加异常处理来 TIBCO 会合 |Microsoft 文档
-description: 处理在 BizTalk Server 中使用 TIBCO 会合适配器你业务流程的异常的概述
+title: 添加异常处理到 TIBCO Rendezvous |Microsoft Docs
+description: 使用 TIBCO Rendezvous 适配器在 BizTalk Server 业务流程的异常处理的概述
 ms.custom: ''
 ms.date: 10/24/2017
 ms.prod: biztalk-server
@@ -13,26 +13,26 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3c42fbca645667f8ef8e1f06345760bae743e22e
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: c8c2fdb7a13b07aa71fdfa4f5b665a559548b9c8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24014740"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401658"
 ---
 # <a name="use-biztalk-server-exception-handling"></a>使用 BizTalk Server 异常处理
 
 ## <a name="overview"></a>概述
-在您的业务流程中添加形状以处理错误和异常从后端服务器。 
+在您的业务流程添加形状以处理错误和异常从后端服务器。 
   
 ## <a name="next-steps"></a>后续步骤
   
 -   [基本业务流程设计](../core/basic-orchestration-design4.md)  
   
--   [如何将消息添加到为异常](../core/how-to-add-a-message-for-an-exception3.md)  
+-   [如何添加异常的消息](../core/how-to-add-a-message-for-an-exception3.md)  
   
 -   [如何添加作用域形状](../core/how-to-add-a-scope-shape4.md)  
   
--   [如何添加 Catch 异常块](../core/how-to-add-a-catch-exception-block2.md)  
+-   [如何添加捕获异常块](../core/how-to-add-a-catch-exception-block2.md)  
   
 -   [完成异常消息](../core/completing-the-exception-message4.md)

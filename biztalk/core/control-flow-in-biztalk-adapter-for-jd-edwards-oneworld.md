@@ -17,18 +17,18 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c777d909d5ffd405caec6641ef4a50a59e66b3b9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6f6514a62a90fd2088c494ab2cc7384ceb0b59a9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978926"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65354529"
 ---
-# <a name="control-flow-in-biztalk-adapter-for-jd-edwards-oneworld"></a>控制 JD Edwards OneWorld 的 BizTalk 适配器中的流
-本主题讨论了适用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器中的设计时间和运行时间控制流。  
+# <a name="control-flow-in-biztalk-adapter-for-jd-edwards-oneworld"></a>用于 JD Edwards OneWorld 的 BizTalk 适配器中的控制流
+本主题讨论用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器中的设计时和运行时控制流。  
   
 ## <a name="design-time-flow"></a>设计时流  
- 打开适配器时（使用“传输属性”对话框中的凭据和系统信息），将创建并轮询一个或多个 JD Edwards OneWorld 应用程序业务函数实例。 当您浏览适配器向导中的命名空间时，显示业务功能的列表。 单击业务函数显示其逻辑方法以及方法签名。  
+ 当适配器打开时 （从传输属性对话框中使用的凭据和系统信息） 时，创建和共用的 JD Edwards OneWorld 应用程序业务函数的一个或多个实例。 当您浏览适配器向导中的命名空间时，显示业务功能的列表。 单击业务函数显示其逻辑方法以及方法签名。  
   
 ## <a name="run-time-flow"></a>运行时流  
  创建 JD Edwards OneWorld 业务函数实例和组建成池供每个线程。 方法调用提交到一种业务服务，该方法的元数据是使用 JD Edwards OneWorld 应用程序业务函数; 读取但是，如果已缓存的元数据的方法，业务功能，使用缓存的信息并将调用相应方法。 在运行时动态构造 JD Edwards OneWorld 接口层。 它是通过接口层用于 JD Edwards OneWorld 的 BizTalk 适配器支持调用和数据转换。  

@@ -1,5 +1,5 @@
 ---
-title: 为单一登录支持的平台 |Microsoft 文档
+title: 为实现单一登录支持的平台 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f17c8c107897955b9ae014fe0ea47726d827ece2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7acff889362523a7ea7cdbdfd881159946cf90ec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278421"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306555"
 ---
-# <a name="supported-platforms-for-single-sign-on"></a>受支持的平台上单一登录
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中包含企业单一登录。 因此，支持 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的所有操作系统均支持该功能。  
+# <a name="supported-platforms-for-single-sign-on"></a>支持的平台上单一登录
+企业单一登录是附带[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 因此，它受支持的所有操作系统[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
   
-## <a name="see-also"></a>另请参阅  
- [编程单一登录概述](../core/programming-single-sign-on-overview.md)
+## <a name="see-also"></a>请参阅  
+ [对单一登录进行编程概述](../core/programming-single-sign-on-overview.md)

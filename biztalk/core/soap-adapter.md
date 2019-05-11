@@ -1,5 +1,5 @@
 ---
-title: SOAP 适配器 |Microsoft 文档
+title: SOAP 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,20 +14,20 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0305359cf505baf6967eec3825a59304fdfc9d73
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 57cd807b504f4235285acb9f06a994514ab69051
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277861"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243367"
 ---
 # <a name="soap-adapter"></a>SOAP 适配器
-Microsoft BizTalk Server Web Services 在接收和发送 Web Services 请求时使用 SOAP 适配器。 使用 SOAP 适配器，您可以将业务流程发布为 Web Services 并使用外部 Web Services。  
+Microsoft BizTalk Server Web 服务使用 SOAP 适配器时接收和发送 Web 服务请求。 SOAP 适配器，可将业务流程作为 Web 服务发布和使用外部 Web 服务。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [什么是 SOAP 适配器？](../core/what-is-the-soap-adapter.md)  
+-   [SOAP 适配器概述](../core/what-is-the-soap-adapter.md)  
   
 -   [配置 SOAP 适配器](../core/configuring-the-soap-adapter.md)  
   
--   [SOAP 适配器安全建议](../core/soap-adapter-security-recommendations.md)
+-   [SOAP 适配器的安全建议](../core/soap-adapter-security-recommendations.md)

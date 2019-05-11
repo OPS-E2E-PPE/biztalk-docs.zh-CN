@@ -1,5 +1,5 @@
 ---
-title: 步骤 4： 创建 HeaderHelper 项目 |Microsoft Docs
+title: 步骤 4：创建 HeaderHelper 项目 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a01323dba6fba4673e4bcd2886df53d408421f9f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 850c3b5321c5b167bf3946a26d94db21bdb6ba35
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970790"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280917"
 ---
-# <a name="step-4-creating-the-headerhelper-project"></a>步骤 4： 创建 HeaderHelper 项目
-在此步骤中，将创建 [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] 类库。 当专用业务流程收到传入消息时，HeaderHelper 库确定是否需要进行文档转换，如果需要，则执行该转换。 这使你的业务流程能够使用不同版本的 RosettaNet 实现框架 (RNIF) 文档。 此外，当发出 3A2 响应消息时，HeaderHelper 库在传送该消息之前执行另一种文档转换。  
+# <a name="step-4-creating-the-headerhelper-project"></a>步骤 4：创建 HeaderHelper 项目
+在此步骤中，您将创建[!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]类库。 当专用业务流程收到传入消息时，HeaderHelper 库确定的文档转换是否是必需的如果它是必需的则执行该转换。 这使您的业务流程处理 RosettaNet 实现框架 (RNIF) 文档的不同版本。 此外，3A2 响应消息发送时，HeaderHelper 库在执行传送该消息之前的其他文档转换。  
   
-### <a name="to-create-the-headerhelper-project"></a>创建 HeaderHelper 项目  
+### <a name="to-create-the-headerhelper-project"></a>若要创建 HeaderHelper 项目  
   
 1. 在中[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]，在解决方案资源管理器中右键单击 Contoso 解决方案，指向**添加**，然后单击**新项目**。  
   
@@ -37,11 +37,11 @@ ms.locfileid: "36970790"
   
 5. 在解决方案资源管理器，右键单击**Class1.cs**中的文件**HeaderHelper**项目，然后单击**重命名**，类型**HeaderHelper.cs**，然后按**Enter**。  
   
-### <a name="to-create-the-helper-class"></a>创建 Helper 类  
+### <a name="to-create-the-helper-class"></a>若要创建帮助器类  
   
 1.  在解决方案资源管理器，展开**HeaderHelper**项目，然后再双击**HeaderHelper.cs**节点以打开 HeaderHelper 源文件。  
   
-2.  在源文件中键入以下代码，覆盖全部现有代码：  
+2.  键入以下代码到源文件，覆盖所有现有代码：  
   
     ```  
     using System;  
@@ -105,7 +105,7 @@ ms.locfileid: "36970790"
   
 3.  在“文件”  菜单上，单击“全部保存” 。  
   
-### <a name="to-create-a-strong-named-assembly-for-the-headerhelper-project"></a>为 HeaderHelper 项目创建强名称程序集  
+### <a name="to-create-a-strong-named-assembly-for-the-headerhelper-project"></a>若要创建 HeaderHelper 项目的强命名程序集  
   
 1.  在解决方案资源管理器中右键单击**HeaderHelper**项目，并单击**属性**。  
   
@@ -121,7 +121,7 @@ ms.locfileid: "36970790"
   
 7.  在解决方案资源管理器，展开**HeaderHelper**项目中，展开**属性**节点，然后再双击**AssemblyInfo.cs**节点打开 AssemblyInfo.cs源文件。  
   
-8.  在 AssemblyInfo.cs 源文件的 AssemblyCulture 属性后面的行中，键入以下代码：  
+8.  在 AssemblyInfo.cs 源文件中，键入以下代码行上的 AssemblyCulture 属性后面：  
   
     ```  
     [assembly: AssemblyKeyFile("../../../FabConPriceAvail.snk")]  
@@ -129,7 +129,7 @@ ms.locfileid: "36970790"
   
 9. 在“文件”  菜单上，单击“全部保存” 。  
   
-### <a name="to-build-and-deploy-the-headerhelper-project"></a>生成和部署 HeaderHelper 项目  
+### <a name="to-build-and-deploy-the-headerhelper-project"></a>若要生成和部署 HeaderHelper 项目  
   
 1.  在解决方案资源管理器中右键单击**HeaderHelper**项目，并单击**生成**。  
   
@@ -140,4 +140,4 @@ ms.locfileid: "36970790"
 4.  在命令提示符处，键入**gacutil /if HeaderHelper.dll**然后按**Enter**安装**HeaderHelper**程序集到**全局程序集缓存**.  
   
 ## <a name="see-also"></a>请参阅  
- [步骤 5：修改 Contoso 私有业务流程](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)
+ [步骤 5：修改 Contoso 专用业务流程](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)

@@ -17,17 +17,17 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6955acfee9052a3b46dcfb70c90ecc95fe216be3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f9cf784eba26f93e6634863d02d36a4bb2e01c38
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003110"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333260"
 ---
 # <a name="how-to-use-the-call-rules-shape"></a>如何使用调用规则形状
 在业务流程设计器中，你可以使用**调用规则**形状调用业务策略。  
   
-### <a name="to-configure-the-call-rules-shape"></a>配置调用规则形状  
+### <a name="to-configure-the-call-rules-shape"></a>若要配置调用规则形状  
   
 1. 从工具箱中**BizTalk 业务流程**选项卡上，拖动**调用规则**形状在业务流程设计图面上的连接线上。  
   
@@ -45,7 +45,7 @@ ms.locfileid: "37003110"
 4. 在中**选择你想要调用的业务策略**下拉列表中，选择所需的策略。  
   
    > [!NOTE]
-   >  调用规则配置在确定策略中使用的类型时将查看保存策略的最新版本。 运行时，将使用部署的该策略的最新版本。  
+   >  确定策略中使用的类型时，调用规则配置着眼于最新的已保存策略版本。 在运行时，将使用最新的部署的策略版本。  
   
 5. 在中**指定策略参数**列表框中，选择从变量**参数名称**属性。  
   
@@ -53,4 +53,4 @@ ms.locfileid: "37003110"
    >  **调用规则**形状实质上重新构造消息，如同使用**构造**形状，因而可能导致消息丢失的上下文属性。  
   
    > [!NOTE]
-   >  您可以指定一条消息或.NET 变量作为 BRE 策略的参数。 要传递**TypedXmlDocument**这一事实，指定作为参数在业务流程中声明的相应消息。 若要传递 .NET 事实，请将在业务流程中声明的 .NET 变量指定为参数。 若要传递数据库事实，指定类型的.NET 变量**DataConnection**或**TypedDataTable**作为策略的参数。
+   >  您可以指定一条消息或.NET 变量作为 BRE 策略的参数。 要传递**TypedXmlDocument**这一事实，指定作为参数在业务流程中声明的相应消息。 若要传递.NET 事实，指定作为参数的业务流程中声明的.NET 变量。 若要传递数据库事实，指定类型的.NET 变量**DataConnection**或**TypedDataTable**作为策略的参数。

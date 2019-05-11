@@ -1,5 +1,5 @@
 ---
-title: 在导入管理包之前 |Microsoft 文档
+title: 在导入管理包之前 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1c11849c379a4654bed78a8e86ba263e6da428c5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 28bd8cdbb520c5f2ee7f22cb0e2b035b32c44aa8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22299445"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401299"
 ---
 # <a name="before-you-import-the-management-pack"></a>导入管理包之前
-作为最佳做法，应将用于正在使用的操作系统的 Windows Server 管理包导入。 在导入之前[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包中，执行以下操作：  
+作为最佳做法，应导入 Windows Server 管理包使用的操作系统。 在导入之前[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包中，执行以下操作：  
   
--   确保安装了 Operations Manager 2007 R2/2012年。  
+-   请确保已安装 Operations Manager 2007 R2/2012年。  
   
--   你必须是 SCOM 管理员组或 SCOM 作者组的成员。 SCOM 管理服务器上的本地管理员具有所有权限和授予的 SCOM 管理员组的权限。  
+-   必须是 SCOM Administrators 组或 SCOM 作者组的成员。 SCOM 管理服务器上的本地管理员具有所有权限和到 SCOM Administrators 组授予的权限。  
   
--   通过将设置你的 BizTalk 服务器为 Operations Manager 中被管理的计算机部署上每个你想要管理的 BizTalk Server 的 SCOM 代理。 SCOM 代理部署涉及以下任务：  
+-   部署上你想要管理每个 BizTalk Server 的 SCOM 代理到的 BizTalk 服务器设置为在 Operations Manager 中的托管计算机。 SCOM 代理部署过程包括以下任务：  
   
     -   安装 SCOM 代理。  
   
@@ -40,15 +40,15 @@ ms.locfileid: "22299445"
   
         -   SSO 管理员。  
   
-        -   SSO Affiliate 管理员。  
+        -   SSO 关联管理员。  
   
     -   秨 ﹍ 菏跌。  
   
 -   在 Operation Manager 控制台中，被管理的计算机处于正常状态。  
   
--   配置需要设置，如任何所需的运行方式帐户或配置文件的任何用户帐户。 此管理包包括运行方式配置文件命名为"BizTalk Server 监视帐户"和"BizTalk Server 发现帐户"上的每个代理基础定义具体的凭据。 你可能需要在导入管理包之后，为一些代理使用此运行方式配置文件。  
+-   配置任何必须进行设置，例如任何所需的运行方式帐户或配置文件的用户帐户。 此管理包包括运行方式配置文件命名为"BizTalk Server 监视帐户"和"BizTalk Server 发现帐户"以在每个代理的基础上定义具体的凭据。 您可能需要为一些代理使用此运行方式配置文件导入管理包后。  
   
-## <a name="in-this-section"></a>在本节中  
+## <a name="in-this-section"></a>本节内容  
   
 -   [此管理包中的文件](../technical-guides/files-in-this-management-pack.md)  
   

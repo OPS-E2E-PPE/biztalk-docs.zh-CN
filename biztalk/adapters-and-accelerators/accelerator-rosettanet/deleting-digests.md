@@ -18,20 +18,20 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 10e32f8d86d6723965e8a27ad51f7551fdda0b60
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a3564b89c69183133bcc31e692aff5b1c85af80d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002398"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283736"
 ---
 # <a name="deleting-digests"></a>删除摘要
-Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]存储为传出消息的摘要，以便它可以根据信号内容验证它们。 不过，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 不会在验证后删除摘要。 您可能希望定期删除这些摘要以保持系统性能。  
+Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]存储为传出消息的摘要，以便它可以根据信号内容验证它们。 但是，[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]不会验证后删除摘要。 定期，您可能想要删除这些摘要以保持系统性能。  
   
-## <a name="when-and-how-to-delete-digests"></a>何时及如何删除摘要  
- 摘要存储在 BTARNDATA 数据库的 MessageDigestHelper 表中。 若要定期从表中删除这些摘要，您可以使用存储过程仅删除那些早于某段时间的摘要。 MessageDigestHelper 表中包含`TimeCreated`属性，可以使用实现此目的。  
+## <a name="when-and-how-to-delete-digests"></a>何时以及如何删除摘要  
+ 摘要存储在 BTARNDATA 数据库的 MessageDigestHelper 表中。 定期，您可能想要通过删除早于特定时间段的这些摘要的存储的过程从表中删除这些摘要。 MessageDigestHelper 表中包含`TimeCreated`属性，可以使用实现此目的。  
   
- 请使用以下 SQL 语句创建存储过程（可根据您的目的修改），并运行存储过程来删除旧摘要。 此示例语句删除所有保存了七天以上的摘要：  
+ 使用以下 SQL 语句 （如修改您的要求），创建一个存储的过程并运行存储的过程来删除旧摘要。 此示例语句删除超过七天的所有摘要：  
   
 ```  
 delete from MessageDigestHelper where datediff(day, TimeCreated, getutcdate()) > 7  

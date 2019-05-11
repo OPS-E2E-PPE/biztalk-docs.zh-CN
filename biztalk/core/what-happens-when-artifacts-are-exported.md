@@ -15,38 +15,38 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b4a4b83608c09ff08fd8536bcdac806e3299775b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 90ab32fb2931f8a0294356e94d9f80f29b5b7c84
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977318"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65258508"
 ---
-# <a name="what-happens-when-artifacts-are-exported"></a>导出项目时发生的情况
-本主题介绍导出项目时发生的情况。 可以通过本主题介绍的三种方式导出项目：  
+# <a name="what-happens-when-artifacts-are-exported"></a>导出项目时，会发生什么情况
+本主题介绍导出项目时，会发生什么情况。 有三种方法导出本主题中介绍的项目：  
   
--   将 BizTalk 应用程序及其项目导出到 BizTalk .msi (Windows Installer) 文件中  
+-   将 BizTalk 应用程序及其项目导出到 BizTalk.msi （Windows 安装程序） 文件  
   
--   将策略导出到 .xml 文件中  
+-   将策略导出到.xml 文件  
   
--   将绑定导出到 .xml 文件中  
+-   将绑定导出到.xml 文件  
   
 ## <a name="exporting-a-biztalk-application"></a>导出 BizTalk 应用程序  
- 在导出某一 BizTalk 应用程序以及它所包含的项目时，应用程序配置信息和项目数据将导出到 BizTalk .msi 文件中。 大多数项目数据都会从 BizTalk 管理数据库导出，但存在以下例外：  
+ 导出 BizTalk 应用程序和它包含的项目时，应用程序配置信息和项目数据导出到 BizTalk.msi 文件中。 大多数项目数据导出从 BizTalk 管理数据库，但存在以下例外：  
   
-- 策略数据从组的规则引擎数据库中导出。  
+- 从组的规则引擎数据库导出策略的数据。  
   
-- 虚拟目录数据从 Internet 信息服务 (IIS) 元数据库导出（如果在管理数据库中不存在这些数据）。 虚拟目录尚未显式添加到应用程序时，会遇到这种情况 (如中所述[如何向应用程序添加虚拟目录](../core/how-to-add-a-virtual-directory-to-an-application.md)) 或应用程序已不导入此组从某一.msi 文件从其他 BizTalk 组导出。  
+- 如果不存在管理数据库中，从 Internet 信息服务 (IIS) 元数据库导出虚拟目录的数据。 虚拟目录尚未显式添加到应用程序时，会遇到这种情况 (如中所述[如何向应用程序添加虚拟目录](../core/how-to-add-a-virtual-directory-to-an-application.md)) 或应用程序已不导入此组从某一.msi 文件从其他 BizTalk 组导出。  
   
-- 证书数据从本地计算机上的其他人证书存储导出（如果在管理数据库中不存在证书数据）。 该证书尚未显式添加到应用程序时，会遇到这种情况 (如中所述[如何将证书添加到应用程序](../core/how-to-add-a-certificate-to-an-application.md)) 或应用程序已不导入从.msi 文件时，此组从另一个 BizTalk 组中导出。 在应用程序与证书与之关联的接收端口一起导出时，将导出证书。 在导出时私钥将会从证书中删除。  
+- 如果不存在管理数据库中，从本地计算机上的其他人证书存储导出证书数据。 该证书尚未显式添加到应用程序时，会遇到这种情况 (如中所述[如何将证书添加到应用程序](../core/how-to-add-a-certificate-to-an-application.md)) 或应用程序已不导入从.msi 文件时，此组从另一个 BizTalk 组中导出。 导出具有与之关联的证书的接收端口的应用程序时，将导出的证书。 从导出的证书删除私钥。  
   
-  您可以使用此 .msi 文件将应用程序的项目（包括其所有数据）导入到其他 BizTalk 组的应用程序中。 您还可以使用此 .msi 文件在计算机上安装应用程序。  
+  您可以使用此.msi 文件导入应用程序的项目，包括其所有数据，更改为另一个 BizTalk 组中的应用程序。 此外可以使用此.msi 文件的计算机上安装应用程序。  
   
 ## <a name="exporting-a-policy"></a>导出策略  
- 在您使用管理控制台导出某一 BizTalk 组或应用程序的策略时，它将生成包含该策略信息的一个 .xml 策略文件。 您可以将该策略文件导入到其他 BizTalk 组中以在那里创建策略，以便该组中的应用程序可以使用该策略。 您还可以通过使用 BTSTask 导出应用程序的策略信息。 但是，BTSTask 不具有用于导出策略 .xml 文件的命令。 您而是可以导出只包含该策略的应用程序 .msi 文件。 然后，可以将该 .msi 文件导入到另一个组的应用程序中。  
+ 当你使用管理控制台导出的 BizTalk 组或应用程序策略时，会生成包含策略信息的.xml 策略文件。 您可以导入此策略文件到另一个 BizTalk 组中创建的策略，以便组中的应用程序可以使用它。 此外可以通过使用 BTSTask 导出应用程序的策略信息。 BTSTask，但是，没有要导出策略.xml 文件的命令。 相反，您可以导出只包含该策略的应用程序.msi 文件。 您然后可以导入另一个组中的应用程序的.msi 文件。  
   
 ## <a name="exporting-bindings"></a>导出绑定  
- 您可以使用管理控制台或 BTSTask 为 BizTalk 组、应用程序或程序集导出绑定。 这样做了之后，BizTalk Server 将生成一个 .xml 文件，包含该组、应用程序或程序集的绑定信息。 在您导出绑定时，还可以导出该组的全局参与方信息。 然后，您可以将此绑定文件添加到某一应用程序中，或将它导入到某一 BizTalk 组或应用程序中。  
+ 可以使用管理控制台或 BTSTask 导出 BizTalk 组、 应用程序或程序集的绑定。 当执行此操作时，BizTalk Server 将生成包含组、 应用程序或程序集的绑定信息的.xml 文件。 在导出绑定时，还可以导出全局参与方的组的信息。 然后，您可以将此绑定文件添加到应用程序或将其导入 BizTalk 组或应用程序。  
   
 ## <a name="see-also"></a>请参阅  
  [对项目采取的应用程序部署过程](../core/what-happens-to-artifacts-during-application-deployment.md)   

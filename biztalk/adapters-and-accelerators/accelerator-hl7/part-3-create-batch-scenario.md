@@ -1,5 +1,5 @@
 ---
-title: 第 3 部分： Create-batch 方案 |Microsoft Docs
+title: 第 3 部分：创建批处理方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e487bfbe29ee2a34f2e50affa502d7f20592fe0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 439e285ddc432a57add0a9a719553eb532f12bbf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975950"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65290020"
 ---
-# <a name="part-3-create-batch-scenario"></a>第 3 部分： Create-batch 方案
+# <a name="part-3-create-batch-scenario"></a>第 3 部分：创建批处理方案
 在此方案的一部分，您收到两条传入消息、 将它们合并到批处理消息，和向目标发送一批。 BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 返回包含两个确认从目标到源的消息生成确认批处理。 下图显示了本教程的此部分的处理流程。  
   
  ![](../../adapters-and-accelerators/accelerator-hl7/media/hl7-create-batch-scenario.gif "hl7_create_batch_scenario")  

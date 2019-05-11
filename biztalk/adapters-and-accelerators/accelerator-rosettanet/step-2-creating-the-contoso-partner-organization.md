@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 创建 Contoso 合作伙伴组织 |Microsoft Docs
+title: 第 2 步：创建 Contoso 合作伙伴组织 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,17 +14,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97e811493c1347bc016671469da8a0dc18483e85
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7d540a24be7ae5421956a3ad80536490f5a9fef6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969774"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281283"
 ---
-# <a name="step-2-creating-the-contoso-partner-organization"></a>步骤 2： 创建 Contoso 合作伙伴组织
+# <a name="step-2-creating-the-contoso-partner-organization"></a>第 2 步：创建 Contoso 合作伙伴组织
 在此步骤中，使用 Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]管理控制台创建新的贸易合作伙伴。 本教程中的贸易合作伙伴为 Contoso 组织。  
 
-### <a name="to-start-the-btarn-management-console"></a>启动 BTARN 管理控制台  
+### <a name="to-start-the-btarn-management-console"></a>若要启动 BTARN 管理控制台  
 
 - 单击**启动**，依次指向**所有程序**，指向**Microsoft BizTalk\<版本\>Accelerator for RosettaNet**，然后单击**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台。  
 

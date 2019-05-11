@@ -1,5 +1,5 @@
 ---
-title: 步骤 4： 创建贸易协议 |Microsoft Docs
+title: 步骤 4：创建贸易协议 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bbe74e1b214d733615bbc46deaea9f8a7e6c5134
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2aa9be8b5435b212838a40059e784b0f54c17b36
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994630"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280988"
 ---
-# <a name="step-4-create-a-trade-agreement"></a>步骤 4： 创建贸易协议
+# <a name="step-4-create-a-trade-agreement"></a>步骤 4：创建贸易协议
 在此步骤中，创建使用 Microsoft® 主页和合作伙伴组织之间的贸易协议[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]管理控制台。  
 
 ### <a name="to-create-a-trade-agreement"></a>若要创建贸易协议  
@@ -49,14 +49,14 @@ ms.locfileid: "36994630"
    |----------------|--------------------------------------------------------------------------------------------|
    | **操作 URL** |                   类型**<http://localhost/BTARNApp/RNIFReceive.aspx>**。                   |
    | **信号 URL** |                   类型**<http://localhost/BTARNApp/RNIFReceive.aspx>**。                   |
-   |  **同步 URL**  | 留空。 同步合作伙伴接口流程 (PIP) 不需要同步 URL。 |
+   |  **同步 URL**  | 保留为空。 同步 URL 不需要的同步合作伙伴接口流程 (PIP)。 |
 
 
 4. 单击**Apply**，然后单击**确定**。  
 
-   创建完贸易协议之后，你必须激活该协议。  
+   创建贸易协议后，必须激活它。  
 
-### <a name="to-activate-the-trade-agreement"></a>激活贸易协议  
+### <a name="to-activate-the-trade-agreement"></a>若要激活贸易协议  
 
 - 在中[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]管理控制台中，展开[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]，单击**协议**，右键单击**贸易协议**在结果窗格中，然后单击**激活**.  
 

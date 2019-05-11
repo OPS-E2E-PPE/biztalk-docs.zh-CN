@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 11014 |Microsoft Docs
+title: 单一登录：事件 11014 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8e86642a7f62b53d45f20e140131d6a12d0771ec
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: aebd0225967e3165f19449b73488d8f938b349ef
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001112"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65267272"
 ---
-# <a name="single-sign-on-event-11014"></a>单一登录： 事件 11014
+# <a name="single-sign-on-event-11014"></a>单一登录：事件 11014
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                          |
@@ -28,12 +28,12 @@ ms.locfileid: "37001112"
 | 产品版本 |                                                [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                |
 |    事件 ID     |                                                                          11014                                                                           |
 |  事件源   |                                                                          ENTSSO                                                                          |
-|    组件    |                                                                           N/A                                                                            |
+|    组件    |                                                                           不可用                                                                            |
 |  符号名称  |                                                                  SSO_ERROR_ACCESS_CHECK                                                                  |
-|  消息正文   | 访问检查失败。%r<br /><br /> 客户端用户： %1\\%2 %r<br /><br /> 应用程序名称: %3 %r<br /><br /> 其他数据: %4 %r<br /><br /> 错误代码： %5 |
+|  消息正文   | 访问检查 failed.%r<br /><br /> 客户端用户： %1\\%2 %r<br /><br /> 应用程序名称: %3 %r<br /><br /> 其他数据: %4 %r<br /><br /> 错误代码： %5 |
   
 ## <a name="explanation"></a>解释  
- 所列客户端和应用程序的访问检查失败。  
+ 访问检查失败的客户端和应用程序列出。  
   
 ## <a name="user-action"></a>用户操作  
- 其他信息应该可以帮助您解决该问题。 为了避免将来再出现此错误，您还可以降低审核级别。
+ 其他信息应可以解决此问题。 若要避免此错误在将来，您可以降低审核级别。

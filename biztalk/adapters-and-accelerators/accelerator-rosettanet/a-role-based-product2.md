@@ -17,24 +17,24 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 21abc71e05a1ee3cf9487021b1311637c39d59e6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5c8f2d0bcde8743c605e1a0f24c942af816d674c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988286"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65284983"
 ---
 # <a name="a-role-based-product"></a>基于角色的产品
-Microsoft BizTalk Server 和 Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]提供功能和工具的用户角色适合的环境中。 通过这些功能和工具可以实现快速开发、部署、操作、管理和业务使用。  
+Microsoft BizTalk Server 和 Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]提供功能和工具的用户角色适合的环境中。 这些功能和工具启用快速开发、 部署、 操作、 管理和业务使用。  
   
 ## <a name="features-and-tools"></a>功能和工具  
- 开发人员的工具集成到 Microsoft [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]® [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]。 开发人员可以在“解决方案资源管理器”中管理解决方案和项目，且可快速访问 BizTalk 设计时工具。  
+ 开发人员的工具集成到 Microsoft [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]® [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]。 开发人员可以管理其解决方案和项目在解决方案资源管理器，并且可以快速访问 BizTalk 设计时工具。  
   
- Microsoft 管理控制台 (MMC) 承载适用于 IT 专业人员的工具。 界面分析人员、IT 执行人员和 IT 操作人员可通过基于 MMC 的 BizTalk 管理控制台、BizTalk 浏览器、[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 管理控制台和其他运行时工具管理 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 系统。  
+ Microsoft 管理控制台 (MMC) 承载适用于 IT 专业人员的工具。 界面分析人员、 IT 实施人员和 IT 操作人员管理其[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]基于 MMC 的 BizTalk 管理控制台中，BizTalk 浏览器中，通过系统[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理控制台和其他运行时工具。  
   
- 通过他们自已的 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 工具集，业务分析人员和其他信息工作人员可以分析业务状态并可以访问业务数据。  
+ 业务分析员和其他信息工作者分析业务状态和有权访问业务数据通过其自己的一组[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]工具。  
   
- [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK 提供了很多工具，在开发和管理系统时你会发现这些工具很有用。  
+ [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK 提供了一些您可能会发现在开发和管理您的系统中有用的工具。  
   
 ## <a name="see-also"></a>请参阅  
  [BizTalk 设计时工具](../../adapters-and-accelerators/accelerator-rosettanet/biztalk-design-time-tools.md)   

@@ -1,5 +1,5 @@
 ---
-title: 步骤 16： 启动业务流程 |Microsoft Docs
+title: 步骤 16:启动业务流程 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d2d1429d6b5d8df7facf55900683356200279b9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ade61af4ced6af3e256b3bc9095e911bf40db2a3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992766"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288705"
 ---
-# <a name="step-16-start-the-orchestration"></a>步骤 16： 启动业务流程
+# <a name="step-16-start-the-orchestration"></a>步骤 16:启动业务流程
 在此步骤中，您才能将相关联的业务流程与该业务流程将在其中运行的物理环境中设计的业务流程登记服务。 此外，启动业务流程的处理，以便可以测试你的应用程序。  
   
 ### <a name="to-start-the-orchestration"></a>若要启动的业务流程  
@@ -34,7 +34,7 @@ ms.locfileid: "36992766"
    > [!NOTE]
    >  确保你已启动**MLLPSendPort**发送端口并启用**WebService_BTAHL7_Project_Proxy/BTAHL7_Project_Doorbell_Orchestration_SOAPReceivePort**接收位置。  
   
-   请继续执行[步骤 17： 创建 WSClient 应用程序](../../adapters-and-accelerators/accelerator-hl7/step-17-create-the-wsclient-application.md)。  
+   请继续执行[步骤 17:创建 WSClient 应用程序](../../adapters-and-accelerators/accelerator-hl7/step-17-create-the-wsclient-application.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [消息充实教程](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

@@ -1,5 +1,5 @@
 ---
-title: 错误-的大容量复制 Functoid 子级生成代码 |Microsoft 文档
+title: 错误-批量复制 Functoid 的相关子节点生成代码 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 68183a90be46b176d13100b02cbed2798fe24b34
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c11f96b753b100a9662671ff0c20d5671ad07055
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240565"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65349007"
 ---
-# <a name="error---children-of-mass-copy-functoid-generate-code"></a>错误-的大容量复制 Functoid 子级生成代码
+# <a name="error---children-of-mass-copy-functoid-generate-code"></a>错误-批量复制 Functoid 的相关子节点生成代码
 **错误代码**  
   
  btm1068  
   
  **说明**  
   
- 功能，这不符合的方案**大容量复制**functoid 找映射中。 在目标架构中，链接到的输出的节点的子代节点**大容量复制**functoid 尝试生成其自己的 XSLT 代码。  
+ 冲突的功能的情况**批量复制**functoid 在映射中找到。 在目标架构中，链接到的输出节点的后代节点**批量复制**functoid 试图生成它们自己的 XSLT 代码。  
   
  **用户执行任何操作**  
   
- 通过更改相关的使用情况删除不兼容性**大容量复制**functoid 或更改的子节点，以便它们不会再生成它们自己的 XSLT 代码。
+ 通过更改相关的使用情况来删除不兼容性**批量复制**functoid 或更改的子节点，以便它们不会再生成它们自己的 XSLT 代码。

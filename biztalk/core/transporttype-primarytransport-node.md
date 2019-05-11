@@ -1,5 +1,5 @@
 ---
-title: TransportType （PrimaryTransport 节点） |Microsoft 文档
+title: TransportType （PrimaryTransport 节点） |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,21 +14,21 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 40e0f005e7279541a2cdcb5c2bf205b7731e5263
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b9b3bf1461d13a1de375b3aaa76d959e68f15088
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279381"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243360"
 ---
 # <a name="transporttype-primarytransport-node"></a>TransportType （PrimaryTransport 节点）
-绑定文件的“PrimaryTransport”节点的“TransportType”节点包含有关适配器的特定信息，该适配器与随同该绑定文件一起导出的传输相关联。  
+绑定文件的 PrimaryTransport 节点的 TransportType 节点包含有关与绑定文件一起导出的传输相关联的适配器的特定信息。  
   
 ## <a name="nodes-in-the-transporttype-node"></a>TransportType 节点中的节点  
  下表列出了可为绑定文件的此节点设置的属性：  
   
-|**名称**|**节点类型**|**数据类型**|**Description**|**限制**|**注释**|  
+|**名称**|**节点类型**|**数据类型**|**说明**|**限制**|**注释**|  
 |--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|Name|Attribute|xs:string|指定与此传输关联的适配器的名称。|可选|默认值：空|  
-|功能|Attribute|xs:int|指定与此传输关联的适配器的功能。|Required|默认值：无<br /><br /> 可能的值包括 [Microsoft.BizTalk.ExplorerOM.Capabilities](http://msdn.microsoft.com/library/microsoft.biztalk.explorerom.capabilities.aspx) 枚举中的值。|  
-|ConfigurationClsid|Attribute|xs:string|指定与此传输关联的适配器的配置 GUID。|可选|默认值：空|
+|“属性”|特性|xs:string|指定与此传输关联的适配器的名称。|可选|默认值：空|  
+|功能|特性|xs:int|指定与此传输关联的适配器的功能。|Required|默认值：无<br /><br /> 可能的值包括 [Microsoft.BizTalk.ExplorerOM.Capabilities](http://msdn.microsoft.com/library/microsoft.biztalk.explorerom.capabilities.aspx) 枚举中的值。|  
+|ConfigurationClsid|特性|xs:string|指定与此传输关联的适配器的配置 GUID。|可选|默认值：空|

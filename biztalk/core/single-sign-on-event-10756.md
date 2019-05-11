@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10756 |Microsoft Docs
+title: 单一登录：Event 10756 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 751b777baa38f2157969f59e321f13813dafbd87
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e8231f3bb6d6beadedda9b1a31f9e27a5ec9531c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973510"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65307933"
 ---
-# <a name="single-sign-on-event-10756"></a>单一登录： 事件 10756
+# <a name="single-sign-on-event-10756"></a>单一登录：事件 10756
 ## <a name="details"></a>详细信息  
   
 |                 |                                                            |
@@ -28,12 +28,12 @@ ms.locfileid: "36973510"
 | 产品版本 | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
 |    事件 ID     |                           10756                            |
 |  事件源   |                           ENTSSO                           |
-|    组件    |                            N/A                             |
+|    组件    |                            不可用                             |
 |  符号名称  |                      ENTSSO_E_NO_APP                       |
 |  消息正文   |              应用程序不存在。               |
   
 ## <a name="explanation"></a>解释  
- 给定的应用程序名称不正确，或者该应用程序已被删除。  
+ 未正确，给定的应用程序名称，或者删除应用程序。  
   
 ## <a name="user-action"></a>用户操作  
  检查应用程序名称。

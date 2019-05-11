@@ -12,14 +12,14 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf61012de6ba864d6f0ff4e553b4c74e1d501c20
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5b7d64c575f3be0fb3a4d69c56e9509dcb66699b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988166"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65263445"
 ---
-# <a name="number-of-included-groups-do-not-match"></a>包括的组的数目不匹配
+# <a name="number-of-included-groups-do-not-match"></a>包含的组的数目不匹配
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                        |
@@ -33,7 +33,7 @@ ms.locfileid: "36988166"
 |  消息正文   |                         组的包含的数目不匹配                         |
   
 ## <a name="explanation"></a>解释  
- 此错误/警告/信息事件表明交换中的组数不等于交换尾部（IEA01 字段）中的数量。 保留交换并且出错时挂起交换时会发生这种情况。 （如果保留交换并且出错时挂起事务集或者拆分交换，则不会发布此错误消息。）  
+ 此错误/警告/信息事件表明交换中的组数不等于交换尾部 （IEA01 字段） 中的数量。 保留交换并且出错时挂起交换时会发生这种情况。 （如果保留交换并且出错时挂起事务集或者拆分交换，则不会发布此错误消息。）  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请确保交换尾部的 IEA01 字段中的数量与交换中的组数相同，然后重新发送交换。
+ 若要解决此错误，请确保交换尾部的 IEA01 字段中数量与交换中的组数相同，然后重新发送交换。

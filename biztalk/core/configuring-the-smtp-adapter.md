@@ -1,5 +1,5 @@
 ---
-title: 配置 SMTP 适配器 |Microsoft 文档
+title: 配置 SMTP 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,20 +15,20 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4eb8673b9f3e3497b28b03a4c90b479cf9a875b7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d13b1a88a5fee95d878ae0c51035c4f5dfdcd1f1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232581"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355135"
 ---
 # <a name="configuring-the-smtp-adapter"></a>配置 SMTP 适配器
-本部分将介绍如何配置 SMTP 适配器。  
+本部分介绍如何配置 SMTP 适配器。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [如何配置一个 SMTP 发送处理程序](../core/how-to-configure-an-smtp-send-handler.md)  
+-   [如何配置 SMTP 发送处理程序](../core/how-to-configure-an-smtp-send-handler.md)  
   
--   [如何配置一个 SMTP 发送端口](../core/how-to-configure-an-smtp-send-port.md)  
+-   [如何配置 SMTP 发送端口](../core/how-to-configure-an-smtp-send-port.md)  
   
 -   [SMTP 适配器属性架构和属性](../core/smtp-adapter-property-schema-and-properties.md)

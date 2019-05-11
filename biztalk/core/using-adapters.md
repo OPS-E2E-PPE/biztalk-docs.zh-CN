@@ -13,17 +13,17 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cbf2cd833a607efb98ee634774885ffaa1692f4a
-ms.sourcegitcommit: e7609c319b64ec20bf215d17aa5ac4f9dcae52ec
+ms.openlocfilehash: 27d442a80445f498cdcada89d9dbcbd1d2a1bf94
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36945552"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399934"
 ---
 # <a name="available-adapters-in-biztalk-server"></a>在 BizTalk Server 中的可用适配器
 
 ## <a name="overview"></a>概述
-本部分包含有关适配器的全面信息。 它描述了如何在 Microsoft 中使用适配器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]以及如何配置适配器处理程序、 发送端口和接收位置的每个适配器。 本部分还提供了批处理支持信息以帮助你理解本地适配器以及在 BizTalk 解决方案中使用本地适配器。  
+本部分包含有关适配器的全面信息。 它描述了如何在 Microsoft 中使用适配器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]以及如何配置适配器处理程序、 发送端口和接收位置的每个适配器。 它提供了批处理支持信息以帮助你了解并在您的 BizTalk 解决方案中使用本地适配器。  
   
  有关使用键盘快捷键的适配器属性页的信息，请参阅[适配器属性页键盘快捷方式](../core/adapter-property-page-keyboard-shortcuts.md)。  
   

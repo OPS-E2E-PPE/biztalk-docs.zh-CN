@@ -1,5 +1,5 @@
 ---
-title: 使用现有节点 |Microsoft 文档
+title: 使用现有节点 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 53e3a5b8b0f7f8f9af66fbb370faf2c8710d41e3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 753a4a07d07c1ddc3e0e7b7e41ca5dd194f33859
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289373"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65277234"
 ---
 # <a name="working-with-existing-nodes"></a>使用现有节点
-已将节点放入架构树之后，你可能会发现它需要将节点移到不同位置，请重命名它们，依次类推。 本部分提供的最常见的分步说明此类任务。  
+已将节点放入在架构树后，您可能会发现它需要将节点移动到不同的位置、 重命名它们，依次类推。 本部分提供了最常见的分步说明此类任务。  
   
 ## <a name="in-this-section"></a>本节内容  
   

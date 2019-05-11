@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 83a24d2720fd9c46bd1d5ccb70d92a068f8a2ec4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 31a7ced4587f693c13f3fd45f24057eb882f1d43
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021730"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242719"
 ---
 # <a name="running-the-namespace-component-sample"></a>运行 Namespace 组件示例
 Namespace 组件示例应用程序包含四个接收位置 / 发送端口对。 每一对表示一个测试。 以下是四种测试：  

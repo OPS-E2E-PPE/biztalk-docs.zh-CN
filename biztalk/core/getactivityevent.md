@@ -1,5 +1,5 @@
 ---
-title: GetActivityEvent |Microsoft 文档
+title: GetActivityEvent | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9fb039c0e9946091214a52fbb605753a212c233c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 28c237cc32afb41d0fde2e702c9b0b42a2d14f41
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246245"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345151"
 ---
 # <a name="getactivityevent"></a>GetActivityEvent
-将当前活动事件的名称推送到堆栈上。  
+将推送到堆栈上的当前活动事件的名称。  
   
 ## <a name="syntax"></a>语法  
   
@@ -35,22 +35,22 @@ ms.locfileid: "22246245"
 ## <a name="pushed-value"></a>推送的值  
  包含当前活动事件的字符串。  
   
-## <a name="remarks"></a>注释  
- 一个工作流活动在工作流的生存期中可以传递几种状态。 Windows Workflow Foundation BAM 侦听器支持的定义的执行状态值大多数`System.Workflow.ComponentModel.ActivityExecutionStatus`枚举下, 表中所示。  
+## <a name="remarks"></a>备注  
+ 工作流活动在工作流的生存期内可以传递几种状态。 Windows Workflow Foundation BAM 侦听器支持的执行状态值定义的大多数`System.Workflow.ComponentModel.ActivityExecutionStatus`枚举下, 表中所示。  
   
 |执行状态|Description|  
 |----------------------|-----------------|  
-|Canceling|正在取消活动时，可表示的状态。|  
-|已关闭|表示活动关闭时的状态。|  
-|Compensating|表示活动正在补偿时的状态。|  
-|Executing|表示活动正在执行时的状态。|  
-|Faulting|表示活动发生故障时的状态。|  
+|正在取消|正在取消活动时表示的状态。|  
+|已关闭|表示活动已关闭的状态。|  
+|补偿|表示正在补偿活动的状态。|  
+|执行|表示正在执行活动的状态。|  
+|出错|表示正在进行错误处理活动的状态。|  
   
 > [!NOTE]
->  你不能同时使用`GetActivityEvent`和`GetWorkflowEvent`相同 OnEvent 元素中。  
+>  不能使用两者`GetActivityEvent`和`GetWorkflowEvent`同一个 OnEvent 元素中。  
   
 ## <a name="example"></a>示例  
- 下面的示例包含一个配置为在关闭的工作流中查找特定活动 (FoodAndDringPolicy) 的事件筛选器表达式。 这可通过使用的操作包括组合`GetActivityEvent`， `GetActivityName`，和逻辑运算。  
+ 下面的示例包含配置为查找特定活动的事件筛选器表达式-FoodAndDringPolicy — 关闭的工作流中。 这是通过使用的操作，包括组合`GetActivityEvent`， `GetActivityName`，和逻辑运算。  
   
 ```  
 <ic:Filter>  
@@ -70,10 +70,10 @@ ms.locfileid: "22246245"
 </ic:Filter>  
 ```  
   
- 该筛选模式常用于 Windows Workflow Foundation 侦听器配置文件。  
+ 此筛选器模式非常常见的 Windows Workflow Foundation 侦听器配置文件。  
   
 > [!NOTE]
->  参数不需要使用引号，除非您明确尝试匹配包含引号的字符串。  
+>  参数不需要引号，除非您明确尝试匹配包含引号的字符串。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [System.Workflow.ComponentModel.ActivityExecutionStatus 枚举](http://go.microsoft.com/fwlink/?LinkId=119570)

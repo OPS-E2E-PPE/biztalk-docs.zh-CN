@@ -1,5 +1,5 @@
 ---
-title: 推荐的其他管理包 |Microsoft 文档
+title: 推荐的其他管理包 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7f60e3c8227d087a73cc1eb81d9554bee49a2e53
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: df076647bcc0a01c3b08ca4f0da4f6cd92b9249c
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302013"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65527544"
 ---
 # <a name="recommended-additional-management-packs"></a>推荐的其他管理包
-以下是附加的管理包为 SCOM 2007 R2/2012年建议用于完全监视[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]部署：  
+以下是附加的管理包的适用于完全监视的建议 SCOM 2007 R2/2012年[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]部署：  
   
 -   Microsoft Windows 基本操作系统  
   

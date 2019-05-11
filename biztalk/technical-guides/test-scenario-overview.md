@@ -12,12 +12,12 @@ caps.latest.revision: 32
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1c30bf4102da74869e596af32f8c9361fc796ce7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e412c771e321f364ecfd565bd2031e647d4e6e5a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997686"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65301742"
 ---
 # <a name="test-scenario-overview"></a>测试方案概述
 本主题概述了测试应用程序;测试，所使用的方法和列表的说明在负载测试期间捕获的关键绩效指标 (Kpi)。  
@@ -95,7 +95,7 @@ ms.locfileid: "36997686"
 
 - 收集应用程序日志，并写入到.csv 文件中的结果文件夹。  
 
-- 针对收集的性能日志，以生成统计信息、 图表和报表运行性能分析的日志 (PAL) 工具、 重新记录和日志分析程序工具。 有关 PAL、 重新记录，以及日志分析程序的详细信息，请参阅[用于衡量性能的附录 d： 工具](../technical-guides/appendix-d-tools-for-measuring-performance.md)。  
+- 针对收集的性能日志，以生成统计信息、 图表和报表运行性能分析的日志 (PAL) 工具、 重新记录和日志分析程序工具。 有关 PAL、 重新记录，以及日志分析程序的详细信息，请参阅[附录 d:性能度量工具](../technical-guides/appendix-d-tools-for-measuring-performance.md)。  
 
 > [!NOTE]  
 >  已禁用所有跟踪和测试过程中都禁用 BizTalk Server SQL Server 代理作业。  
@@ -175,7 +175,7 @@ ms.locfileid: "36997686"
  适用于所有测试运行的关键绩效指标 (KPI) 作为捕获以下性能监视器计数器：  
 
 > [!NOTE]  
->  有关评估性能监视器计数器的性能的详细信息，请参阅[清单： 度量 HYPER-V 上的性能](../technical-guides/checklist-measuring-performance-on-hyper-v.md)。  
+>  有关评估性能监视器计数器的性能的详细信息，请参阅[核对清单：Hyper V 上测量性能](../technical-guides/checklist-measuring-performance-on-hyper-v.md)。  
 
  **BizTalk Server KPI**  
 
@@ -233,19 +233,19 @@ ms.locfileid: "36997686"
 - 除此之外，单独的 LUN 提供 MSDTC 日志文件。 在高吞吐量 BizTalk 系统中，MSDTC 日志文件活动已被证实将导致 I/O 瓶颈，如果它将保留在操作系统所在的物理驱动器上。  
 
 
-  |      卷名      |               “文件”               | LUN 大小 GB | 主机分区大小 GB | 群集大小 |
+  |      卷名      |               文件               | LUN 大小 GB | 主机分区大小 GB | 群集大小 |
   |-----------------------|-----------------------------------|-------------|------------------------|--------------|
-  |       Data_Sys        |    MASTER 和 MSDB 数据文件    |     10      |           10           |     64 KB     |
-  |       Logs_Sys        |     MASTER 和 MSDB 日志文件     |     10      |           10           |     64 KB     |
-  |      Data_TempDb      |         TempDB 数据文件          |     50      |           50           |     64 KB     |
-  |      Logs_TempDb      |          TempDB 日志文件          |     50      |           50           |     64 KB     |
-  |    Data_BtsMsgBox     |     BizTalkMsgBoxDb 数据文件     |     300     |          100           |     64 KB     |
-  |    Logs_BtsMsgBox     |     BizTalkMsgBoxDb 日志文件      |     100     |          100           |     64 KB     |
-  | Data_BAMPrimaryImport |    BAMPrimaryImport 数据文件     |     10      |           10           |     64 KB     |
-  | Logs_BAMPrimaryImport |     BAMPrimaryImport 日志文件     |     10      |           10           |     64 KB     |
-  | Data_BizTalkDatabases | 其他 BizTalk 数据库数据文件 |     20      |           20           |     64 KB     |
-  | Logs_BizTalkDatabases | 其他 BizTalk 数据库日志文件  |     20      |           20           |     64 KB     |
-  |          N/A          |          MSDTC 日志文件           |      5      |           5            |     N/A      |
+  |       Data_Sys        |    MASTER 和 MSDB 数据文件    |     10      |           10           |     64KB     |
+  |       Logs_Sys        |     MASTER 和 MSDB 日志文件     |     10      |           10           |     64KB     |
+  |      Data_TempDb      |         TempDB 数据文件          |     50      |           50           |     64KB     |
+  |      Logs_TempDb      |          TempDB 日志文件          |     50      |           50           |     64KB     |
+  |    Data_BtsMsgBox     |     BizTalkMsgBoxDb 数据文件     |     300     |          100           |     64KB     |
+  |    Logs_BtsMsgBox     |     BizTalkMsgBoxDb 日志文件      |     100     |          100           |     64KB     |
+  | Data_BAMPrimaryImport |    BAMPrimaryImport 数据文件     |     10      |           10           |     64KB     |
+  | Logs_BAMPrimaryImport |     BAMPrimaryImport 日志文件     |     10      |           10           |     64KB     |
+  | Data_BizTalkDatabases | 其他 BizTalk 数据库数据文件 |     20      |           20           |     64KB     |
+  | Logs_BizTalkDatabases | 其他 BizTalk 数据库日志文件  |     20      |           20           |     64KB     |
+  |          不可用          |          MSDTC 日志文件           |      5      |           5            |     不可用      |
 
 
 - 根据安装指南位于安装了 BizTalk Server [ http://go.microsoft.com/fwlink/?LinkId=128383 ](http://go.microsoft.com/fwlink/?LinkId=128383)。  
@@ -267,4 +267,4 @@ ms.locfileid: "36997686"
  无人参与 Windows 安装程序参考位于[ http://go.microsoft.com/fwlink/?LinkId=142364 ](http://go.microsoft.com/fwlink/?LinkId=142364)。  
 
 ## <a name="see-also"></a>请参阅  
- [附录 C：BizTalk Server 和 SQL Server Hyper-V 支持性](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)
+ [附录 c:BizTalk Server 和 SQL Server 的 HYPER-V 可支持性](../technical-guides/appendix-c-biztalk-server-and-sql-server-hyper-v-supportability.md)

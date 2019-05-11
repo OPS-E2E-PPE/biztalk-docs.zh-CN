@@ -15,12 +15,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 73cc1caa3207901780a57e7b1213215217b73326
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 236cdfaca89068ad67b8f70138d926f4b60cedf1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010574"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286443"
 ---
 # <a name="validation-known-issues"></a>验证的已知问题
 本部分包含可帮助您避免验证错误的有用信息。  

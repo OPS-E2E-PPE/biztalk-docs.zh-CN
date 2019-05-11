@@ -1,5 +1,5 @@
 ---
-title: 演练： 创建事实创建器 |Microsoft Docs
+title: 演练：创建事实创建器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fbe1e856ad97d81a153828a4d5ae45795670ed1f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2d159428f3e9b2c303a9e4df69d1df616aaabf5f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017318"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65250176"
 ---
-# <a name="walkthrough-creating-a-fact-creator"></a>演练： 创建事实创建器
+# <a name="walkthrough-creating-a-fact-creator"></a>演练：创建事实创建器
 本演练提供了创建事实创建器组件的分步过程**POFactCreator**，这可用于测试**ProcessPurchaseOrder**先前在创建的策略演练。  
 
-## <a name="prerequisites"></a>必要條件  
- 必须完成[演练： 创建简单业务策略](../core/walkthrough-creating-a-simple-business-policy.md)演练在执行本演练之前。  
+## <a name="prerequisites"></a>先决条件  
+ 必须完成[演练：创建简单业务策略](../core/walkthrough-creating-a-simple-business-policy.md)演练在执行本演练之前。  
 
 ## <a name="overview-of-this-walkthrough"></a>本演练概述  
- 本概览包含两个过程，如下表所述。  
+ 本演练包含两个过程，如下表中所述。  
 
 |过程标题|过程说明|  
 |---------------------|---------------------------|  
@@ -49,7 +49,7 @@ ms.locfileid: "37017318"
    |             **名称**              |                     类型**POFactCreatorLib**。                      |
    |           **位置**            |          指定**C:\BRE-Walkthroughs**作为位置。           |
    |         **解决方案名称**         |                     类型**POFactCreatorSol**。                      |
-   | **创建解决方案的目录** | 选中此复选框以便为解决方案文件创建目录。 |
+   | **创建解决方案的目录** | 选中此复选框以创建解决方案文件的目录。 |
 
 
 4. 单击“确定” 。 **POFactCreatorLib**项目应该显示在解决方案资源管理器。 如果看不到解决方案资源管理器，请单击**解决方案资源管理器**上**视图**菜单。  
@@ -143,7 +143,7 @@ ms.locfileid: "37017318"
 
 20. 将目录更改为**C:\BRE-Walkthroughs\POFactCreatorSol**，然后执行以下命令：  
 
-     **Sn-k POFactCreator.snk**  
+     **Sn -k POFactCreator.snk**  
 
 21. 在中[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，在解决方案资源管理器，展开**属性**，然后双击**AssemblyInfo.cs**。  
 
@@ -155,13 +155,13 @@ ms.locfileid: "37017318"
 
 23. 在解决方案资源管理器窗口中，右键单击**POFactCreatorLib**，然后单击**生成**。  
 
-24. 在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]命令提示符下，将目录更改为**C:\BRE-Walkthroughs\POFactCreatorSol\POFactCreatorLib\Bin\Debug**，然后执行以下命令以注册**POFactCreator**组件向 GAC （全局程序集缓存）。 如果没有打开命令提示，请按照步骤 19 的方法打开它。  
+24. 在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]命令提示符下，将目录更改为**C:\BRE-Walkthroughs\POFactCreatorSol\POFactCreatorLib\Bin\Debug**，然后执行以下命令以注册**POFactCreator**组件向 GAC （全局程序集缓存）。 如果没有命令提示符下打开，请按照步骤 19，以将其打开。  
 
-     **Gacutil-i POFactCreatorLib.dll**  
+     **Gacutil -i POFactCreatorLib.dll**  
 
 ### <a name="to-test-the-processpurchaseorder-policy-using-pofactcreator"></a>若要测试使用 POFactCreator ProcessPurchaseOrder 策略  
 
-1. 上**启动**菜单，依次指向**所有程序**，指向[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**业务规则编辑器**。 如果已打开业务规则编辑器，请按 F5 刷新。  
+1. 上**启动**菜单，依次指向**所有程序**，指向[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**业务规则编辑器**。 如果你有业务规则编辑器已打开，请按 f5 键刷新。  
 
    > [!NOTE]
    >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。 要执行此操作，右键单击该应用程序，并选择**以管理员身份运行**。  
@@ -182,7 +182,7 @@ ms.locfileid: "37017318"
 
 ## <a name="comments"></a>注释  
 
--   若要借助业务规则编辑器来测试使用 .NET 类的非静态方法的策略，你必须创建一个事实创建器组件。  
+-   若要测试的策略，通过使用业务规则编辑器将使用.NET 类的非静态方法，必须创建事实创建器组件。  
 
 ## <a name="see-also"></a>请参阅  
  [如何创建事实检索器](../core/how-to-create-a-fact-retriever.md)

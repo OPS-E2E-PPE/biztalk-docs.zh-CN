@@ -18,22 +18,22 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6ce54faf09b45a46d2ac5150e1c2bbbe88c8ccac
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8c9ab95b645d3bcdcef249de9b65fcf3891677d3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018920"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65335053"
 ---
 # <a name="how-to-remove-a-send-port-from-a-send-port-group"></a>如何从发送端口组中删除发送端口
-本主题将介绍如何使用 BizTalk Server 管理控制台从发送端口组中删除发送端口。 执行此操作时，不会从应用程序或 BizTalk 管理数据库中删除发送端口。  
+本主题介绍如何使用 BizTalk Server 管理控制台从发送端口组中删除发送端口。 当执行此操作时，发送端口不会删除从应用程序或 BizTalk 管理数据库。  
   
- 删除发送端口时，该发送端口必须处于已停止状态或已取消登记状态。  
+ 删除发送端口之前，则它必须处于已停止或已取消登记状态。  
   
 > [!NOTE]
 >  若要将消息路由，发送端口组必须包含至少一个发送端口。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  若要执行本主题中的过程，必须是 BizTalk Server Administrators 组的成员的帐户登录。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
   
 ### <a name="to-remove-a-send-port-from-a-send-port-group"></a>若要从发送端口组中删除发送端口  

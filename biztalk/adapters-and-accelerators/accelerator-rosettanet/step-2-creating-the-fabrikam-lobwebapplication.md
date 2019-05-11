@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 创建 Fabrikam LOBWebApplication |Microsoft Docs
+title: 第 2 步：创建 Fabrikam LOBWebApplication |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,25 +15,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9c55234d8ee9c123c9efe9e7ec66b7c0db590b54
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5be0577e7fb301ceecf1e727c34cd078348c33e4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966622"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281218"
 ---
-# <a name="step-2-creating-the-fabrikam-lobwebapplication"></a>步骤 2： 创建 Fabrikam LOBWebApplication
-在此步骤中，你将创建 Fabrikam 用于向 Contoso 提交 3A2 PIP 请求的 LOB 应用程序。 LOBWebApplication 项目安装在 [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK 中。 若要运行的 Web 应用程序，您必须创建一个 Microsoft Internet 信息服务 (IIS) 虚拟目录，然后生成 LOBWebApplication 项目。  
+# <a name="step-2-creating-the-fabrikam-lobwebapplication"></a>第 2 步：创建 Fabrikam LOBWebApplication
+在此步骤中，您将创建 Fabrikam 用于提交 3A2 PIP 请求到 Contoso 的 LOB 应用程序。 LOBWebApplication 项目安装在[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]SDK。 若要运行的 Web 应用程序，您必须创建一个 Microsoft Internet 信息服务 (IIS) 虚拟目录，然后生成 LOBWebApplication 项目。  
   
 > [!NOTE]
->  如果已完成双操作教程，你无需执行此步骤。  
+>  如果你已完成双操作教程，您不需要执行此步骤。  
   
 ### <a name="to-create-the-lobwebapplication-virtual-directory"></a>创建 LOBWebApplication 虚拟目录  
   
 1.  单击**启动**，依次指向**管理工具**，然后单击**Internet Information Services Manager**。  
   
     > [!NOTE]
-    >  如果已完成双操作教程，则应已在该教程中创建了 LOBWebApplication 虚拟目录。 如果是这样，你无需执行这些步骤。 但是，将需要更改的虚拟目录的权限**运行脚本**到**读取**。  
+    >  如果你已完成双操作教程，你将已创建 LOBWebApplication 虚拟目录为该教程。 如果是这样，您无需执行这些步骤。 但是，将需要更改的虚拟目录的权限**运行脚本**到**读取**。  
   
 2.  在 Internet 信息服务管理器中，展开 **< 计算机名 > （本地计算机）**，然后展开**网站**。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "36966622"
 1.  单击**启动**，依次指向**所有程序**，指向**管理工具**，然后单击**SharePoint 管理中心**。  
   
     > [!NOTE]
-    >  如果已完成双操作教程，则应已在该教程中将 LOBWebApplication 虚拟目录从 SharePoint 中排除。 如果是这样，你无需执行这些步骤。  
+    >  如果你已完成双操作教程，你将已具有排除 LOBWebApplication 虚拟目录从 SharePoint 该教程。 如果是这样，您无需执行这些步骤。  
   
 2.  上**Central Administration**页上，在**虚拟服务器配置**部分中，选择**扩展或升级虚拟服务器**。  
   
@@ -66,7 +66,7 @@ ms.locfileid: "36966622"
   
 6.  在中**添加新路径**部分中，在**路径**框中，键入"/ LOBWebApplication"。 有关**类型**，选择**排除的路径**，然后单击**确定**。  
   
-### <a name="to-build-the-lobwebapplication-project"></a>生成 LOBWebApplication 项目  
+### <a name="to-build-the-lobwebapplication-project"></a>若要生成 LOBWebApplication 项目  
   
 1.  启动**Microsoft Visual Studio 2012**。  
   
@@ -82,7 +82,7 @@ ms.locfileid: "36966622"
   
 7.  上**构建**菜单上，单击**生成网站**。  
   
-### <a name="to-run-the-lobwebapplication-project"></a>运行 LOBWebApplication 项目  
+### <a name="to-run-the-lobwebapplication-project"></a>若要运行 LOBWebApplication 项目  
   
 1.  在解决方案资源管理器中右键单击**default.aspx**，然后选择**设为起始页**。  
   

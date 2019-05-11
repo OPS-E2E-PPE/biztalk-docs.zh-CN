@@ -1,5 +1,5 @@
 ---
-title: 消息传递引擎 |Microsoft 文档
+title: 消息引擎 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,15 +14,15 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4419c1b6265e57b035f7cd690799a92de357446
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 02f0a76df0073d7791a0a284d2d3053caae11df6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278797"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65247235"
 ---
-# <a name="the-messaging-engine"></a>消息传送的引擎
-本部分将介绍组成 Microsoft BizTalk Server 消息引擎的组件和结构。  
+# <a name="the-messaging-engine"></a>消息引擎
+本部分讨论的组件和体系结构，它包含 Microsoft BizTalk Server 消息引擎。  
   
 ## <a name="in-this-section"></a>本节内容  
   

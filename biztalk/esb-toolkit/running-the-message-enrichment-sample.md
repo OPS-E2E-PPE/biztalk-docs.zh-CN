@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 192d300702b8194096f40e5f54b57717669730ac
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: afa17db3817a485f11c63a88c796c93e6ec5354b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015126"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242868"
 ---
 # <a name="running-the-message-enrichment-sample"></a>运行消息充实示例
 消息收集示例使用路线接入点示例随附的 Windows 窗体测试客户端应用程序。  

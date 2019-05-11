@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b75a3e95c836f8a577543b43319e6abe49a96c42
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e928e05d1f0890d534fe768f843e5fe945706856
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005254"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65527581"
 ---
 # <a name="configuring-a4swift-users"></a>配置 A4SWIFT 用户
 安装过程中的[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]，A4SWIFT 配置程序创建默认贸易合作伙伴配置文件和协议，并将注册 BizTalk Server。 A4SWIFT 还会创建消息修复和新提交组件使用的文档库。  
@@ -44,6 +44,6 @@ ms.locfileid: "37005254"
   
 |部门名称|角色名称|收件箱名称|  
 |---------------------|---------------|----------------|  
-|支付|创建者|Payments_Creator|  
-|支付|Repairers|Payments_Repairers|  
-|支付|审批者|Payments_Approvers|
+|付款|创建者|Payments_Creator|  
+|付款|Repairers|Payments_Repairers|  
+|付款|审批者|Payments_Approvers|

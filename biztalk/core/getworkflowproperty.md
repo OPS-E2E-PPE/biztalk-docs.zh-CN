@@ -1,5 +1,5 @@
 ---
-title: GetWorkflowProperty |Microsoft 文档
+title: GetWorkflowProperty |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 505fc41ce544cdf16e3826116514ba1991ba012e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 53e31ea557508164bd5e434558ebdf6bb0689a7c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246429"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65344910"
 ---
 # <a name="getworkflowproperty"></a>GetWorkflowProperty
-将提取的属性从工作流的根活动推送到堆栈上。  
+推送到堆栈上的工作流的根活动中提取的属性。  
   
 ## <a name="syntax"></a>语法  
   
@@ -32,23 +32,23 @@ ms.locfileid: "22246429"
 ```  
   
 #### <a name="parameters"></a>Parameters  
- 属性名称。  
+ 属性的名称。  
   
 ## <a name="pushed-value"></a>推送的值  
- 包含属性值的字符串。  
+ 包含属性的值的字符串。  
   
-## <a name="remarks"></a>注释  
- 该操作仅在更新中有效。  
+## <a name="remarks"></a>备注  
+ 此操作只是在更新中有效。  
   
- 您可以使用以点分隔的表达式来限定希望检索的属性名称。 这会为您提供对通过属性公开的其他对象的内部对象的访问。 例如，要访问采购订单的 Address 实例的 City 属性，请使用“purchaseOrder.Address.City”。  
+ 对符合条件的你想要检索的属性名称，可以使用点分表示法。 这将提供对通过属性公开的其他对象的内部对象的访问。 例如，若要访问采购订单的 Address 实例的 City 属性，请使用"purchaseOrder.Address.City"。  
   
- 属性名称的第一次匹配区分大小写，其余匹配不区分大小写。 在 WF 应用程序中，当两个或多个活动属性仅大小写不同时，这一点非常重要。 例如，如果工作流应用程序定义了“myWorkflow”和“MyWorkflow”属性，而您正在查找“MyWorkflow”，则会通过区分大小写匹配与第二个属性进行匹配。 如果您指定了“MYWORKFLOW”，则在不区分大小写的匹配尝试失败后，会通过区分大小写匹配与“myWorkflow”进行匹配。  
+ 属性名称均区分大小写第一个，并区分大小写。 有两个或多个只是在 WF 应用程序中的大小写不同的活动属性时，这很重要。 例如，如果工作流应用程序具有的属性"了 myWorkflow"和"myworkflow 进行"定义，并且您正在查找"myworkflow"进行，它会通过区分大小写的匹配项的第二个属性上匹配。 如果指定了"MYWORKFLOW"，它将匹配了"myWorkflow"通过匹配区分大小写，不区分大小写的匹配尝试失败后。  
   
 > [!NOTE]
->  Null 属性值将导致 NullReferenceException 引发回工作流实例。  
+>  属性为空值将导致 NullReferenceException 引发回工作流实例。  
   
 ## <a name="example"></a>示例  
- 在下面的示例中，更新表达式用于通过使用 `GetWorkflowProperty` 持久化采购订单的工作流属性“City”。  
+ 在以下示例中，更新表达式用于通过使用保留从采购订单的工作流属性"City" `GetWorkflowProperty`。  
   
 ```  
 <ic:Update DataItemName="City" Type="NVARCHAR">  

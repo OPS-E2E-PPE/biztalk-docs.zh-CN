@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 87613f9482c5c54e99544b96ddd0d1cfc94d3c85
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4526c07171a96904299c60f12ee5c34c01816a42
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018135"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291669"
 ---
 # <a name="ta1-segment-found-after-a-functional-group"></a>在功能组后发现 TA1 段
 ## <a name="details"></a>详细信息  

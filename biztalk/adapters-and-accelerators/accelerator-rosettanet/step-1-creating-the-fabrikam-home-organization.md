@@ -1,5 +1,5 @@
 ---
-title: 步骤 1： 创建 Fabrikam 本组织 |Microsoft Docs
+title: 第 1 步：创建 Fabrikam 本组织 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,25 +14,25 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7da8abbaf99dee8d0e4d328a26f5471e9e8750ad
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dcbd52b20382268bcb07faa0b614df59bdb50c69
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994222"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281543"
 ---
-# <a name="step-1-creating-the-fabrikam-home-organization"></a>步骤 1： 创建 Fabrikam 本组织
+# <a name="step-1-creating-the-fabrikam-home-organization"></a>第 1 步：创建 Fabrikam 本组织
 在此步骤中，使用 Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]管理控制台创建 Fabrikam 本组织。  
 
-### <a name="to-start-the-btarn-management-console"></a>启动 BTARN 管理控制台  
+### <a name="to-start-the-btarn-management-console"></a>若要启动 BTARN 管理控制台  
 
 - 单击**启动**，依次指向**所有程序**，指向**Microsoft BizTalk\<版本\>Accelerator for RosettaNet**，然后单击**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台。  
 
-### <a name="to-create-the-home-organization"></a>创建本组织  
+### <a name="to-create-the-home-organization"></a>若要创建本组织  
 
 1. 在中**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台中，展开[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]，右键单击**本组织**，指向**新建**，然后单击**主页组织**。  
 
-2. 在“新本组织属性”对话框中，执行以下操作：  
+2. 在新本组织属性对话框中，请执行以下操作：  
 
 
    |               使用此选项               |                 执行的操作                  |

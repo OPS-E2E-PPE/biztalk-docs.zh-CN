@@ -19,12 +19,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9651b8d3414f792b81633cafbe41dd66559df04c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b5121952269715a27dcf7981e2ba44204fc5c856
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981974"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289908"
 ---
 # <a name="repeatable-field-segments"></a>可重复字段段
 HL7 访问数据库中的段表的 HL7 包含段 （ADD、 RDT 和 QPD） 的最后一个字段的列的 Microsoft BizTalk Accelerator ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 定义为可重复 (**Last_field_repeatable**  =  **，则返回 true**)。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 不支持添加。 但是，RDT 和 QPD 查询的表存在，并且使用表值进行响应。 下面的示例演示如何[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]处理这些列。  
@@ -57,16 +57,16 @@ RDT|555444222111^^^MPI^MR|Everyman^Adam|RE|00054384163^THEOPHYLLINE 80MG/15ML SO
 ## <a name="qpd---query-parameter-definition"></a>QPD-查询参数定义  
  下表显示了 HL7 规范定义 QPD 的方式。  
   
-|SEQ|LEN|DT|选择|RP / #|表 #|项 #|元素名称|  
+|SEQ|LEN|DT|选择|RP/#|TBL#|ITEM#|元素名称|  
 |---------|---------|--------|---------|------------|-----------|------------|------------------|  
-|@shouldalert|250|CE|R||0471|01375|消息查询名称|  
+|1|250|CE|R||0471|01375|消息查询名称|  
 |2|32|ST|C|||00696|查询标记|  
-|3-n|256|不定||||01435|连续的字段中的用户参数|  
+|3-n|256|各不相同||||01435|连续的字段中的用户参数|  
   
 ## <a name="rdt---table-row-data"></a>RDT-表行数据  
  下表显示了 HL7 规范定义 RDT 的方式。  
   
-|SEQ|LEN|DT|选择|RP / #|表 #|项 #|元素名称|  
+|SEQ|LEN|DT|选择|RP/#|TBL#|ITEM#|元素名称|  
 |---------|---------|--------|---------|------------|-----------|------------|------------------|  
 |1-n|变量|变量|R|||00703|列的值|  
   

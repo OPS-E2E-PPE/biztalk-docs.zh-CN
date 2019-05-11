@@ -1,5 +1,5 @@
 ---
-title: 步骤 8c： 配置 HI 系统的参与方信息 |Microsoft Docs
+title: 步骤 8c:配置 HI 系统的参与方信息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aba42674a78bbed850c0994ec23c477c36b29c2b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b4b0e60ddf093017e0b40424a748eb536849d48f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970822"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286673"
 ---
-# <a name="step-8c-configure-party-information-for-the-hi-system"></a>步骤 8c： 配置 HI 系统的参与方信息
+# <a name="step-8c-configure-party-information-for-the-hi-system"></a>步骤 8c:配置 HI 系统的参与方信息
 在此步骤中，你可以配置 HI 系统的参与方信息。  
 
 ### <a name="to-configure-the-hi-system-party-information"></a>若要配置 HI 系统的参与方信息  
@@ -52,4 +52,4 @@ ms.locfileid: "36970822"
    > [!NOTE]
    >  您不需要创建参与方信息 BTAHL7 接口引擎系统，因为不需要此方案的配置信息。  
 
-   请继续执行[步骤 9： 重启 BizTalk Server](../../adapters-and-accelerators/accelerator-hl7/step-9-restart-biztalk-server.md)。
+   请继续执行[步骤 9:重启 BizTalk Server](../../adapters-and-accelerators/accelerator-hl7/step-9-restart-biztalk-server.md)。

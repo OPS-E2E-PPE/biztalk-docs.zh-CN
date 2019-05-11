@@ -15,17 +15,17 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 31e72b51e327581c0a17f18582b0511218b556a7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b4b031e30bf1206b80d292458700b45470cb6cc7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979030"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65285326"
 ---
 # <a name="vocabulary"></a>词汇
 HL7 版本 2 提供一些支持的编码元素的词汇，但大多数情况下，提供传输来自本地编码系统的代码的结构。  
   
- HL7 版本 2 中的段表链接所有编码的字段。 段表包含的字段将使用的表的标识符。 有三种类型的表： HL7 定义外部定义和用户定义。 在某些情况下，标准提供用户定义表的示例值。 如 HL7 标准具有标记它们所示，应将它们。  
+ HL7 版本 2 中的段表链接所有编码的字段。 段表包含的字段将使用的表的标识符。 有三种类型的表：HL7 定义的外部定义和用户定义。 在某些情况下，标准提供用户定义表的示例值。 如 HL7 标准具有标记它们所示，应将它们。  
   
  在新版本中，不能从 HL7 定义的表，删除代码，但您可以添加新的代码。 你可以在将用户定义表。  
   

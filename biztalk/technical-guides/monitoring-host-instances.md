@@ -12,18 +12,18 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 91ad5ec158466db6716b515fe3d34ae76c4cde0f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9da52cf639cac369198e6fadc9c79dc7e2290a31
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003334"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65305552"
 ---
 # <a name="monitoring-host-instances"></a>监视主机实例
 本主题介绍使用 Microsoft System Center Operations Manager 监视 BizTalk 主机实例。  
   
 ## <a name="using-threshold-rules-to-monitor-health"></a>使用阈值规则监视运行状况  
- BizTalk Server 管理包集成了提供的 BizTalk 主机的运行状况的综合视图的性能阈值规则。 提供以下两种不同类型的阈值规则：  
+ BizTalk Server 管理包集成了提供的 BizTalk 主机的运行状况的综合视图的性能阈值规则。 提供两种不同类型的阈值规则：  
   
 - 一般情况下 （例如，对所有 BizTalk 主机和所有 MessageBox 数据库） 应用的规则。  
   
@@ -33,7 +33,7 @@ ms.locfileid: "37003334"
   
   BizTalk 主机特定的规则，可为不同的主机配置不同的阈值。 例如，规则 Monitor HostQ Size – BizTalkServerApplication 是特定于宿主的规则，用于监视 BizTalkServerApplication 主机工作队列。 在此示例中可以定义特定的 Operations Manager 提供程序为特定的性能计数器实例和阈值规则中使用该提供程序。 这些规则是特定于宿主的因为必须为每个新创建的主机定义特定规则。  
   
-  因为用于创建规则的模板规则是适用于你的环境提供了 BizTalk 特定于宿主的规则。 默认情况下，所有阈值监视规则都被禁用：  
+  因为用于创建规则的模板规则是适用于你的环境提供了 BizTalk 特定于宿主的规则。 默认情况下禁用所有阈值监视规则：  
   
 - 到你的环境，应使用特定的阈值配置一般的规则。  
   
@@ -48,7 +48,7 @@ ms.locfileid: "37003334"
   
 - 修改规则所使用的 Operations Manager 提供程序并使其指向新。  
   
-  假设你[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装有 BizTalk 主机 ReceiveHost，并且你想要监视此主机的主机队列大小。 在这种情况下，应创建为 BizTalk 主机基于队列大小的性能计数器的 ReceiveHost 实例上的 Operations Manager 提供程序。 您还应设置适合您环境的规则阈值。  
+  假设你[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装有 BizTalk 主机 ReceiveHost，并且你想要监视此主机的主机队列大小。 在这种情况下，应创建为 BizTalk 主机基于队列大小的性能计数器的 ReceiveHost 实例上的 Operations Manager 提供程序。 您还应设置阈值规则中适当地为您的环境。  
   
   如果使用的特定于宿主的阈值监视规则，则应禁用通用监视规则。 这可阻止多余警报。  
   

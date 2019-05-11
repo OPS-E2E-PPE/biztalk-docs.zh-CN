@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10805 |Microsoft Docs
+title: 单一登录：Event 10805 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 89f9837b4fc18beed4ba4f07945ba3d6e3820d3d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 639c212d085c5e30233cbb5ec3350d090ed38162
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992894"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399506"
 ---
-# <a name="single-sign-on-event-10805"></a>单一登录： 事件 10805
+# <a name="single-sign-on-event-10805"></a>单一登录：事件 10805
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                   |
@@ -28,12 +28,12 @@ ms.locfileid: "36992894"
 | 产品版本 |    [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]     |
 |    事件 ID     |                               10805                               |
 |  事件源   |                              ENTSSO                               |
-|    组件    |                                N/A                                |
+|    组件    |                                不可用                                |
 |  符号名称  |              ENTSSO_E_ACCOUNT_NOT_MAPPED_FOR_ADAPTER              |
-|  消息正文   | 未在此适配器上找到此外部帐户的映射。 |
+|  消息正文   | 此适配器上此外部帐户不找到任何映射。 |
   
 ## <a name="explanation"></a>解释  
- 未在此适配器上找到此外部帐户的映射。  
+ 此适配器上此外部帐户不找到任何映射。  
   
 ## <a name="user-action"></a>用户操作  
  不需要任何用户操作。

@@ -1,5 +1,5 @@
 ---
-title: 灾难恢复 |Microsoft 文档
+title: 灾难恢复 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e498ac5ff440fe3f0679623b5c7039e9e17de20f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8ad21621d20c154b86fac96e1a0697b17d3d7acf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22297629"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65305655"
 ---
 # <a name="disaster-recovery"></a>灾难恢复
-灾难恢复过程通过采用的步骤可恢复失败的系统操作来提高系统可用性。 灾难恢复与不同的容错能力的灾难恢复通常需要手动干预来还原发生故障的系统，而容错的设计可以继续操作而无需手动干预，如果系统遇到故障条件。  
+灾难恢复过程通过采用的步骤，恢复失败的系统的操作来提高系统的可用性。 灾难恢复与不同的容错能力，在灾难恢复通常需要手动操作来还原发生故障的系统，而容错的设计可以继续运行而无需手动干预，如果系统在遇到失败条件。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [针对灾难恢复进行规划](../technical-guides/planning-for-disaster-recovery.md)  
+-   [规划灾难恢复](../technical-guides/planning-for-disaster-recovery.md)  
   
--   [为灾难恢复配置](../technical-guides/configuring-for-disaster-recovery.md)  
+-   [配置灾难恢复](../technical-guides/configuring-for-disaster-recovery.md)  
   
 -   [从灾难中恢复](../technical-guides/recovering-from-a-disaster.md)  
   

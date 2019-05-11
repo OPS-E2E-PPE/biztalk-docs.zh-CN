@@ -12,17 +12,17 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 817840971deeb05aa4dd916a27e4e04e4322e750
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d68ae1c38802c0314844691a34ef4e7220ca8c54
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967574"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400720"
 ---
 # <a name="planning-for-high-availability-and-disaster-recovery"></a>规划高可用性和灾难恢复
 与开发解决方案[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]通常是需要最高的可用性的关键企业级应用程序。 这些解决方案都放到生产环境后，可以以千为单位的每秒以美元为单位测量停机时间与关联的成本。 出于此原因，应使用特定策略，以最大化的高可用性和灾难恢复功能可用于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]依赖软件和支持所需的硬件和[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]解决方案。  
   
-## <a name="hardware-considerations"></a>硬件考虑事项  
+## <a name="hardware-considerations"></a>硬件注意事项  
  若要确保高可用性[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境中，规划硬件时，请考虑以下：  
   
 - 计划在 BizTalk 组，以容纳跨组中的 BizTalk 服务器运行多个 BizTalk 主机实例中运行多个 （至少两个） 的 BizTalk server。 这将允许在主机实例中运行进程的负载平衡和容错的能力。  
@@ -48,8 +48,8 @@ ms.locfileid: "36967574"
 - 规划实现 Windows Server 群集以容纳[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库和企业单一登录主密钥服务器。 有关更多有关使用 Windows Server 群集的信息以提供高可用性[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库和企业单一登录主密钥服务器，请参阅[数据库的高可用性](../technical-guides/high-availability-for-databases.md)和[主密钥服务器的高可用性](../technical-guides/high-availability-for-the-master-secret-server.md)。  
   
 ## <a name="high-availability-vs-disaster-recovery"></a>高可用性与灾难恢复  
- 有两种用于提高可用性的规定的方法[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境： 提供使用容错能力和/或负载平衡，或提供使用灾难恢复的提高的可用性的高可用性。 虽然每个方法会增加可用性，它们之间主要区别是该容错能力，和/或负载平衡通常提供比灾难恢复速度快得多的恢复时间。 提供容错能力和/或负载平衡**高可用性**而灾难恢复提供**提高了可用性**。 有关实现灾难恢复的详细信息，请参阅[清单： 增加可用性灾难恢复](../technical-guides/checklist-increasing-availability-with-disaster-recovery.md)并[灾难恢复](../technical-guides/disaster-recovery.md)。  
+ 有两种用于提高可用性的规定的方法[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境： 提供使用容错能力和/或负载平衡，或提供使用灾难恢复的提高的可用性的高可用性。 虽然每个方法会增加可用性，它们之间主要区别是该容错能力，和/或负载平衡通常提供比灾难恢复速度快得多的恢复时间。 提供容错能力和/或负载平衡**高可用性**而灾难恢复提供**提高了可用性**。 有关实现灾难恢复的详细信息，请参阅[核对清单：提供高可用性灾难恢复](../technical-guides/checklist-increasing-availability-with-disaster-recovery.md)并[灾难恢复](../technical-guides/disaster-recovery.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [BizTalk Server 提供高可用性](../technical-guides/increasing-availability-for-biztalk-server.md)   
- [清单：提供高可用性容错或负载均衡](../technical-guides/checklist-providing-high-availability-with-fault-tolerance-or-load-balancing.md)
+ [清单：提供高可用性容错或负载平衡](../technical-guides/checklist-providing-high-availability-with-fault-tolerance-or-load-balancing.md)

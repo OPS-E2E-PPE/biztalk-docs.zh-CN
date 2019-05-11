@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 07167c2c0189c36f7b1a321d81bd0070398953e8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a7699aa162044e13b5f3176e38cf858a5268e25f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975118"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65324953"
 ---
 # <a name="metadata-errors"></a>元数据错误
 诊断和解决 WCF 元数据错误的信息。  
@@ -38,7 +38,7 @@ ms.locfileid: "36975118"
  此错误表示元数据存储服务未提供或无效。  
   
 ### <a name="user-action"></a>用户操作  
- 如果您拥有要尝试使用的 WCF 服务，则更正服务元数据，然后尝试使用该服务。 转到服务配置编辑器 (**svcConfigEditor.exe**) 并对配置文件进行更改。  否则，请联系服务提供商
+ 更正服务元数据，然后尝试使用 （如果您拥有要尝试使用的 WCF 服务）。 转到服务配置编辑器 (**svcConfigEditor.exe**) 并对配置文件进行更改。  否则，请联系服务提供程序
 
 ## <a name="failed-to-get-metadata"></a>无法获取元数据
 

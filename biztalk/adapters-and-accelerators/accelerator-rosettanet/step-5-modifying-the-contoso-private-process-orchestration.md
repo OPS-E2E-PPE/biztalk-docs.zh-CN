@@ -1,5 +1,5 @@
 ---
-title: 步骤 5： 修改 Contoso 专用业务流程 |Microsoft Docs
+title: 步骤 5：修改 Contoso 专用业务流程 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 197854a1a37846a11b07b126ec73cb7f204d91b1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 298a6ab0728928347b33f65ba5819a62897511cb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972894"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280855"
 ---
-# <a name="step-5-modifying-the-contoso-private-process-orchestration"></a>步骤 5： 修改 Contoso 专用业务流程
-在此步骤中，将修改专用业务流程以将其集成到 Contoso 的企业资源计划 (ERP) 系统中。 Contoso 的 ERP 系统将内部定义的架构用于产品价格与可用性。 通过自定义 3A2 - 价格与可用性合作伙伴接口流程 (PIP) 的专用流程，你将能够使用架构映射信息与 ERP 系统集成。  
+# <a name="step-5-modifying-the-contoso-private-process-orchestration"></a>步骤 5：修改 Contoso 专用业务流程
+在此步骤中，修改专用业务流程与企业资源规划 (ERP) 系统集成，为 Contoso。 Contoso ERP 系统使用的产品价格与可用性的内部定义的架构。 通过自定义专用流程 3a2-价格与可用性合作伙伴接口流程 (PIP)，你将能够通过使用架构映射信息与 ERP 系统集成。  
   
-### <a name="to-add-a-reference-to-the-contoso-priceandavailability-and-rnpips-assemblies"></a>添加对 Contoso PriceAndAvailability 和 RNPIP 程序集的引用  
+### <a name="to-add-a-reference-to-the-contoso-priceandavailability-and-rnpips-assemblies"></a>若要添加对 Contoso PriceAndAvailability 和 Rnpip 程序集的引用  
   
 1. Contoso 解决方案显示在解决方案资源管理器中，右键单击**PrivateResponder**项目，并单击**添加引用**。  
   
@@ -53,7 +53,7 @@ ms.locfileid: "36972894"
   
 6. 在 Microsoft 的开发环境对话框中，单击**确定**。  
   
-### <a name="to-create-new-message-types"></a>创建新消息类型  
+### <a name="to-create-new-message-types"></a>若要创建新的消息类型  
   
 1.  在解决方案资源管理器中双击**PrivateResponder**业务流程以将其打开。  
   
@@ -67,17 +67,17 @@ ms.locfileid: "36972894"
   
 6.  在选择项目类型框中，选择**Microsoft.Solutions.BTARN.Schemas.RNPIPs**在左窗格中，选择 **_3A2PriceAndAvailabilityQueryMessageGuideline_v1_3**在右窗格中，并然后单击**确定**。  
   
-7.  使用以下信息重复步骤 3 至 6，为解决方案创建所有消息类型：  
+7.  重复步骤 3 至 6 以创建使用以下信息的解决方案的所有消息类型：  
   
     |Identifier|Assembly|消息类型|  
     |----------------|--------------|------------------|  
-    |PIP3A2ResponseMessage|Microsoft.Solutions.BTARN。<br />Schemas.RNPips|_3A2PriceAndAvailability<br />ResponseMessageGuideline_v1_3|  
+    |PIP3A2ResponseMessage|Microsoft.Solutions.BTARN.<br />Schemas.RNPips|_3A2PriceAndAvailability<br />ResponseMessageGuideline_v1_3|  
     |Contoso3A2ResponseMessage|ContosoPriceAndAvailability|rootPriceResponse|  
     |Contoso3A2RequestMessage|ContosoPriceAndAvailability|rootPriceRequest|  
   
-8.  你已经完成为解决方案创建消息类型。  
+8.  你已创建解决方案的消息类型。  
   
-### <a name="to-create-new-variables"></a>创建新变量  
+### <a name="to-create-new-variables"></a>若要创建新变量  
   
 1.  在业务流程视图中，右键单击**变量，** ，然后单击**新变量**。  
   
@@ -95,7 +95,7 @@ ms.locfileid: "36972894"
   
 8.  在选择项目类型对话框中，在左窗格中，展开**当前项目**并**引用**节点，选择**再**，选择**SubmitRNIF**从列表中在右窗格中，然后单击**确定**。  
   
-### <a name="to-change-the-orchestration-filter-expression"></a>更改业务流程筛选器表达式  
+### <a name="to-change-the-orchestration-filter-expression"></a>若要更改的业务流程筛选器表达式  
   
 1.  在业务流程设计器中，选择**ReceiveFromPublicProcessResponder**形状。  
   
@@ -109,7 +109,7 @@ ms.locfileid: "36972894"
   
 6.  在同一行中，单击**AND**中**Group By**框，并选择**或**从下拉列表。  
   
-7.  在“筛选器表达式”对话框中，选择刚刚创建的行，然后单击一次向上箭头按钮，向上移动一行。  
+7.  在筛选器表达式对话框中，选择刚创建的行，然后单击上的箭头按钮一次移动一次一行。  
   
 8.  单击**单击此处可添加新行**，然后选择**Microsoft.Solutions.BTARN.GlobalSchemas.SCPIPCode**从下拉列表。  
   
@@ -117,7 +117,7 @@ ms.locfileid: "36972894"
   
 10. 单击“确定”。  
   
-### <a name="to-modify-the-business-process-workflow"></a>修改业务流程工作流  
+### <a name="to-modify-the-business-process-workflow"></a>若要修改业务流程工作流  
   
 1. 拖动**消息赋值**形状从工具箱拖到设计图面并将其下放置**ReceiveFromPublicProcessResponder**形状。 选择**ConstructMessage_1**已创建的形状并在**属性**窗口中，在**名称**框中，键入**ConstructPIP3A2RequestMessage**.  
   

@@ -1,5 +1,5 @@
 ---
-title: 如何： 启用 BAM 跟踪在 ESB 路线服务中 |Microsoft Docs
+title: 如何：启用 BAM 跟踪在 ESB 路线服务中 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27d0338ad56daa342fce1d339b9e7aa43fd7e25e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b685c1d1e670bec50f925c615a3a17222e0bfc92
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991542"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65258478"
 ---
-# <a name="how-to-enable-bam-tracking-in-an-esb-itinerary-service"></a>如何： 启用 BAM 跟踪在 ESB 路线服务
+# <a name="how-to-enable-bam-tracking-in-an-esb-itinerary-service"></a>如何：启用 BAM 跟踪在 ESB 路线服务
 ## <a name="goal"></a>目的  
  本部分演示如何启用业务活动监视 (BAM) 跟踪现有路线。  
   
@@ -31,7 +31,7 @@ ms.locfileid: "36991542"
   
 -   验证 BAM 结果使用 SQL 查询。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  本操作指南主题中的过程要求在完成[开发活动的先决条件](../esb-toolkit/prerequisites-for-the-development-activities.md)。  
   
 ## <a name="before-you-begin"></a>开始之前  

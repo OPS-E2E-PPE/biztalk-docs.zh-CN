@@ -1,5 +1,5 @@
 ---
-title: 步骤 5： 创建镜像协议 |Microsoft Docs
+title: 步骤 5：创建镜像协议 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,17 +16,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9fde79b9ee5cdbb5cd34440aa59e79e842f79b0b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 79cc7fb9d8eb54e45f2e4e86b36b12017ebf3c57
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006462"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280902"
 ---
-# <a name="step-5-create-a-mirror-agreement"></a>步骤 5： 创建镜像协议
-在此步骤中，将使用 Loopback 实用工具在你配置了本组织的计算机上创建模拟贸易合作伙伴的镜像协议。 Loopback 实用工具是一个命令行工具。  
+# <a name="step-5-create-a-mirror-agreement"></a>步骤 5：创建镜像协议
+在此步骤中，使用 Loopback 实用工具创建镜像协议模拟贸易合作伙伴在其配置本组织在同一计算机上。 Loopback 实用工具是一个命令行工具。  
   
-### <a name="to-create-a-mirror-agreement-using-the-loopback-utility"></a>使用 Loopback 实用工具创建镜像协议  
+### <a name="to-create-a-mirror-agreement-using-the-loopback-utility"></a>若要创建镜像协议使用 Loopback 实用工具  
   
 1. 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
@@ -42,10 +42,10 @@ ms.locfileid: "37006462"
    Loopback /mirror "Trade Agreement"   
    ```  
   
-   Loopback 实用工具会为本组织（发起方）自动创建发送端口，并为合作伙伴组织自动创建镜像贸易协议。 合作伙伴使用两个新的发送端口与本组织进行通信。  
+   Loopback 实用工具会自动创建本组织 （发起方） 发送端口和合作伙伴组织的镜像贸易协议。 合作伙伴使用两个新发送端口与本组织进行通信。  
   
 > [!NOTE]
->  在每次更新原始贸易协议时，都必须重新反映贸易协议。  
+>  每当你更新原始贸易协议时，必须重新反映贸易协议。  
   
 ## <a name="see-also"></a>请参阅  
  [步骤 6：启动业务流程](../../adapters-and-accelerators/accelerator-rosettanet/step-6-start-orchestrations.md)

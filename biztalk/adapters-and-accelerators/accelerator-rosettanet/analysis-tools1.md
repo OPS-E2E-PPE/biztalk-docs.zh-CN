@@ -17,12 +17,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c565beaba3a8d39d566a8c2b644256128c837157
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6c54ead500bb851c12a091fa56da9448a6aea5c6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988470"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65284934"
 ---
 # <a name="analysis-tools"></a>分析工具
 Microsoft BizTalk Server 为业务分析人员和信息工作者提供一组分析工具。 有关这些工具的详细信息，请参阅 MicrosoftBizTalk Server 帮助。  

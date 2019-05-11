@@ -1,5 +1,5 @@
 ---
-title: 加载 BAM 拦截器使用 BAM API |Microsoft 文档
+title: 使用 BAM API 加载 BAM 侦听器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 363c4fc43092e63b664d42bb0420263bd7439dad
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1236d674a643224d2aaf5ca2cb5be2be15c2f2bb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22261925"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65331150"
 ---
 # <a name="loading-bam-interceptors-using-the-bam-api"></a>使用 BAM API 加载 BAM 侦听器
 本主题提供有关如何从代码（而不是通过配置文件）加载 WF 和 WCF 侦听器的信息。  
@@ -65,5 +65,5 @@ foreach (System.ServiceModel.Description.ServiceEndpoint endpoint in myServiceHo
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [使用 BAM WCF 和 WF 拦截器](../core/using-the-bam-wcf-and-wf-interceptors.md)
+## <a name="see-also"></a>请参阅  
+ [使用 BAM WCF 和 WF 侦听器](../core/using-the-bam-wcf-and-wf-interceptors.md)

@@ -1,5 +1,5 @@
 ---
-title: 如何列出关联应用程序 |Microsoft 文档
+title: 如何列出关联应用程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,23 +15,23 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2f6c4d4e4118bfe5f5cab7a9c44e770dd12656c7
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 3b254be21078a53f7efa7291606bdd0038466bb3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25974147"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65336933"
 ---
 # <a name="how-to-list-affiliate-applications"></a>如何列出关联应用程序
-使用此命令可列出所有关联应用程序。 如果用户为 Application Administrators 帐户成员，则此命令将只显示用户是其管理员的应用程序。  
+使用此命令列出所有关联应用程序。 如果用户是应用程序管理员帐户的成员，此命令将仅显示为其用户是管理员的应用程序。  
   
 ### <a name="to-list-affiliate-applications-using-the-administration-utility"></a>使用管理实用工具列出关联应用程序  
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是\<*驱动器*\>: \program Files\Enterprise 单一登录。  
+2.  在命令行中，转至企业单一登录安装目录。 默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。  
   
-3.  类型**ssomanage listapps [全部]** 其中**所有**是也将显示使用的配置存储功能的应用程序的可选参数。 如果运行此命令的用户为应用程序管理员，将只列出用户是其管理员的应用程序。 如果运行此命令的用户是关联管理员或 SSO 管理员，则将列出所有关联应用程序。  
+3.  类型**ssomanage-listapps [all]** 其中**所有**是一个可选参数，还将显示使用的配置存储功能的应用程序。 如果运行此命令的用户是应用程序管理员，它将仅列出它们是管理员的应用程序。 如果运行此命令的用户是关联管理员或 SSO 管理员，它将列出所有关联应用程序。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
@@ -40,14 +40,14 @@ ms.locfileid: "25974147"
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行上，转至企业单一登录安装目录。 默认安装目录是\<*驱动器*\>: \program Files\Enterprise 单一登录。  
+2.  在命令行中，转至企业单一登录安装目录。 默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。  
   
-3.  类型**ssoclient – listapps**列出关联应用程序。 这样，将只列出执行此任务的用户所属的关联应用程序，即这些用户必须属于该关联应用程序的应用程序用户组帐户。  
+3.  类型**ssoclient – listapps**以列出关联应用程序。 这将列出仅的关联应用程序执行此任务的用户所在的即，它们需要属于该关联应用程序的应用程序用户组帐户。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [SSO 关联应用程序](../core/sso-affiliate-applications.md)   
  [如何创建关联应用程序](../core/how-to-create-an-affiliate-application.md)   
  [管理用户映射](../core/managing-user-mappings.md)   

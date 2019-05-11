@@ -1,5 +1,5 @@
 ---
-title: WCF NetTcp 适配器 |Microsoft 文档
+title: Wcf-nettcp 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,18 +14,18 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5225a6d64e5b7fe96d97b727a65fe459b58abfb4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c7cdea57c2c8550cf7c8c167b183a31419a0f40a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288685"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400563"
 ---
-# <a name="wcf-nettcp-adapter"></a>WCF NetTcp 适配器
-[!INCLUDE[btsCoName](../includes/btsconame-md.md)][!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]时接收和发送 WCF 服务通过请求使用 WCF NetTcp 适配器[NetTcpBinding](http://go.microsoft.com/fwlink/?LinkID=81087)。 WCF NetTcp 适配器使您能够发布业务流程和作为 WCF 服务的架构，并使用与外部 WCF 服务**NetTcpBinding**。  
+# <a name="wcf-nettcp-adapter"></a>Wcf-nettcp 适配器
+[!INCLUDE[btsCoName](../includes/btsconame-md.md)] [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 接收和发送 WCF 服务通过请求时，会使用 Wcf-nettcp 适配器[NetTcpBinding](http://go.microsoft.com/fwlink/?LinkID=81087)。 Wcf-nettcp 适配器，您可以将业务流程和架构作为 WCF 服务发布并使用外部 WCF 服务与**NetTcpBinding**。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [什么是 WCF NetTcp 适配器？](../core/what-is-the-wcf-nettcp-adapter.md)  
+-   [WCF-NetTcp 适配器概述](../core/what-is-the-wcf-nettcp-adapter.md)  
   
--   [配置 WCF NetTcp 适配器](../core/configuring-the-wcf-nettcp-adapter.md)
+-   [配置 WCF-NetTcp 适配器](../core/configuring-the-wcf-nettcp-adapter.md)

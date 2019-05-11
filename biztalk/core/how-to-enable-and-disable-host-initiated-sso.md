@@ -17,17 +17,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f187572f671328c77576749b1bf8f3564f025005
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 312d5c295981bf7af5ec4ed45140fa6c915a7ae6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979318"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65337968"
 ---
 # <a name="how-to-enable-and-disable-host-initiated-sso"></a>如何启用和禁用主机启动的 SSO
-默认情况下，单一登录系统中不启用主机启动的单一登录，而必须由 SSO 管理员启用。  
+默认情况下，主机启动单一登录未启用在单一登录系统中，且必须实现由 SSO 管理员。  
   
-### <a name="to-enable-host-initiated-sso-using-the-mmc-snap-in"></a>使用 MMC 管理单元启用主机启动的 SSO  
+### <a name="to-enable-host-initiated-sso-using-the-mmc-snap-in"></a>若要启用主机启动的 SSO 使用 Mmc 管理单元  
   
 1.  上**启动**菜单上，单击**程序**，单击**Microsoft 企业单一登录**，然后单击**SSO 管理**。  
   
@@ -39,22 +39,22 @@ ms.locfileid: "36979318"
   
 5.  选择**启用主机启动的 SSO**框中，然后单击**确定**。  
   
-### <a name="to-enable-host-initiated-sso-using-the-command-line"></a>使用命令行启用主机启动的 SSO  
+### <a name="to-enable-host-initiated-sso-using-the-command-line"></a>若要启用主机启动的 SSO 使用命令行  
   
 1. 在 **“开始”** 菜单上，单击 **“运行”**。  
   
 2. 在中**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3. 在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \Program Files\Common Files\Enterprise Single Sign-on。  
+3. 在命令行中，转至企业单一登录安装目录。 默认值是\<驱动器\>: \Program Files\Common Files\Enterprise Single Sign-on。  
   
 4. 类型**ssomanage-启用 hisso**。  
   
    > [!NOTE]
    >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
   
-   禁用 SSO 将应用于整个 SSO 系统，与主机启动的 SSO 相关的所有操作都将关闭。  
+   禁用 SSO 将应用于整个 SSO 系统，并与主机启动的 SSO 相关的所有操作均都已关闭。  
   
-#### <a name="to-disable-host-initiated-sso-using-the-mmc-snap-in"></a>使用 MMC 管理单元禁用主机启动的 SSO  
+#### <a name="to-disable-host-initiated-sso-using-the-mmc-snap-in"></a>若要禁用主机启动的 SSO 使用 Mmc 管理单元  
   
 1.  上**启动**菜单上，单击**程序**，单击**Microsoft 企业单一登录**，然后单击**SSO 管理**。  
   
@@ -66,13 +66,13 @@ ms.locfileid: "36979318"
   
 5.  清除**启用主机启动的 SSO**框中，然后单击**确定**。  
   
-#### <a name="to-disable-host-initiated-sso-using-the-command-line"></a>使用命令行禁用主机启动的 SSO  
+#### <a name="to-disable-host-initiated-sso-using-the-command-line"></a>若要禁用主机启动的 SSO 使用命令行  
   
 1.  在 **“开始”** 菜单上，单击 **“运行”**。  
   
 2.  在中**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \Program Files\Common Files\Enterprise Single Sign-on。  
+3.  在命令行中，转至企业单一登录安装目录。 默认值是\<驱动器\>: \Program Files\Common Files\Enterprise Single Sign-on。  
   
 4.  类型**ssomanage-禁用 hisso**根据需要。  
   

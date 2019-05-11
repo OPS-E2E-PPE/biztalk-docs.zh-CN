@@ -10,12 +10,12 @@ ms.assetid: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c169a0871826aaaae9341f3ccafcb3e888ffbdbb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 493a46d63fa85f181b2e019c307b7b5be66c9d72
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974622"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280440"
 ---
 # <a name="troubleshoot-the-installation-and-see-the-known-install-issues"></a>安装进行故障排除，请参阅已知的安装问题
 
@@ -33,7 +33,7 @@ BindingException: Could not validate TransportTypeData or Address properties for
 > [!IMPORTANT]
 >  不要在域控制器计算机上安装 SQL 服务器。  
 
-## <a name="service-account-for-the-application-pools-must-be-the-same-as-the-service-account-for-the-isolated-host-and-host-instances"></a>应用程序池的服务帐户必须与独立主机和主机实例的服务帐户相同  
+## <a name="service-account-for-the-application-pools-must-be-the-same-as-the-service-account-for-the-isolated-host-and-host-instances"></a>应用程序池的服务帐户必须是独立的主机和主机实例的服务帐户相同  
  如果为 BTARN 应用程序池设置的服务帐户与独立主机帐户不同，BTARN 不正确处理传入的消息。 当接收.aspx 页调用管道时，管道无法访问相应的证书。 因此，它不解密传入消息或验证签名。 此外，它将无法访问 MessageBox 数据库。  
 
 
@@ -43,7 +43,7 @@ BindingException: Could not validate TransportTypeData or Address properties for
 ### <a name="btarn-http-front-end-feature-configuration-fails"></a>BTARN HTTP 前端功能配置失败  
  **问题**  
 
- 如果通过执行自定义安装来仅安装 BTARN HTTP 前端功能，安装完成后，BTARN 配置可能会因以下错误而失败： 
+ 如果执行自定义安装来仅安装 BTARN HTTP 前端功能，BTARN 配置可能失败并出现以下错误，安装完成后： 
 
 `Failed to create object for feature: WebApp`  
 
@@ -61,7 +61,7 @@ BindingException: Could not validate TransportTypeData or Address properties for
 
      如果在同一 BizTalk Server 计算机上未安装 Visual Studio，两个文件的源文件夹是在 <*驱动器*>: \WINDOWS\WinSxS。  
 
-2. 将复制的文件添加到安装了 BTARN HTTP 前端功能的计算机。 默认情况下，将文件复制到 <*驱动器*>: \Program Files\Microsoft BizTalk Accelerator for RosettaNet。  
+2. 将复制的文件添加到其安装 BTARN HTTP 前端功能的计算机。 默认情况下，将文件复制到 <*驱动器*>: \Program Files\Microsoft BizTalk Accelerator for RosettaNet。  
 
 3. 文件复制到 HTTP 前端计算机后，运行**Configuration.exe**试。  
 
@@ -72,17 +72,17 @@ BindingException: Could not validate TransportTypeData or Address properties for
 
  **解决方法**  
 
- 重新安装 BTARN 前，从 GAC 中删除程序集。  
+ 重新安装 BTARN 前，从 GAC 删除程序集。  
 
- 使用**BtarnClean**实用程序删除程序集的 SDK。 该实用程序执行下列操作：  
+ 使用**BtarnClean**实用程序删除程序集的 SDK。 该实用程序执行以下操作：  
 
-- 停止和取消登记所有 BTARN 业务流程。  
+- 停止并取消登记所有 BTARN 业务流程。  
 
-- 停止和删除所有关联的端口。  
+- 停止并删除所有关联的端口。  
 
-- 取消部署所有 Microsoft.Solutions.BTARN.* 程序集。  
+- 取消部署所有 microsoft.solutions.btarn.* 程序集。  
 
-  运行该实用程序后，如果仍有程序集保留在 GAC 中，请打开 Windows 资源管理器，转到“C:\Windows\Assembly”文件夹，然后手动删除所有以 Microsoft.Solutions.BTARN 开头的程序集。  
+  之后运行此实用程序，如果有程序集保留在 GAC 中，打开 Windows 资源管理器，转到"C:\Windows\Assembly"文件夹中，然后手动删除所有以 Microsoft.Solutions.BTARN 开头的程序集。  
 
 ### <a name="service-unavailable-error-on-64-bit-os"></a>64 位操作系统上的服务不可用错误
  **问题**  
@@ -91,7 +91,7 @@ BindingException: Could not validate TransportTypeData or Address properties for
 
  **原因**  
 
- 此问题可能是由“RPCProxy.dll”ISAPI 筛选器造成的。  
+ 此问题可能由"RPCProxy.dll"ISAPI 筛选器。  
 
  **解决方法**  
 
@@ -112,7 +112,7 @@ BindingException: Could not validate TransportTypeData or Address properties for
 
 运行 \Program Files\Microsoft BizTalk Accelerator for RosettaNet\SDK\PIPAutomation\DoubleAction 文件夹来安装双操作 PIPAutomation Orchestration 示例中的 setupx64.bat。
 
-### <a name="download-the-btarn-setup-file-from-the-web-to-a-temp-folder"></a>将 BTARN 安装文件从 Web 下载到临时文件夹  
+### <a name="download-the-btarn-setup-file-from-the-web-to-a-temp-folder"></a>BTARN 安装程序文件从 Web 下载到临时文件夹  
  **问题**  
 
  如果您下载 BTARN 自解压可执行文件从 Web，并将其保存到 BizTalk Server 根文件夹中，当您尝试运行可执行文件，BizTalk**安装向导**运行，而不是 BTARN 安装向导。  

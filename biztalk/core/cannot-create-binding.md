@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 567b3d88ced85f427fde492cd3e68cefaaf47394
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f7910cf4c6e16d5af75e49bb829f1418a5e1455c
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999200"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528209"
 ---
 # <a name="cannot-create-binding"></a>无法创建绑定
 ## <a name="details"></a>详细信息  
@@ -30,13 +30,13 @@ ms.locfileid: "36999200"
 |  事件源   |                                                                       0                                                                        |
 |    组件    |                                                                       0                                                                        |
 |  符号名称  |                                                                       0                                                                        |
-|  消息正文   | 由于未指定绑定类型，因此无法创建绑定。 指定绑定类型，例如“basicHttpBinding”、“wsHttpBinding”或“customBinding” |
+|  消息正文   | 无法创建绑定，因为未指定绑定类型。 指定绑定类型，例如"basicHttpBinding"、"wsHttpBinding"或"customBinding |
   
 ## <a name="explanation"></a>解释  
- 配置 WCF-Custom 或 WCF-CustomIsolated 传输之后，未设置代码中的 BindingType 属性。 或者问题可能存在于其他代码路径中。 必须将用户界面中的值作为绑定设置。 在接收位置“属性”区域中查看您的配置，并确保已从下拉列表中选择绑定类型。  
+ 未不在代码中将 BindingType 属性设置在配置 Wcf-custom 或 Wcf-customisolated 传输之后。 或者，问题可能是在其他代码路径中。 绑定设置的用户界面中，必须具有一个值。 查看你的配置，并确保绑定类型从接收位置属性区域中的下拉列表中选择。  
   
 ## <a name="user-action"></a>用户操作  
- 要解决此问题，请查看用于配置 WCF-Custom 或 WCF-CustomIsolated 传输的代码。 絋粄**BindingType**中的 XML 数据的属性**TransportTypeData** ITransportInfo 接口的属性已正确设置。  
+ 若要解决此错误，请查看配置 Wcf-custom 或 Wcf-customisolated 传输的代码。 絋粄**BindingType**中的 XML 数据的属性**TransportTypeData** ITransportInfo 接口的属性已正确设置。  
   
  此外，指定绑定类型，例如**basicHttpBinding**， **wsHttpBinding**，或**customBinding**。  
   
@@ -58,7 +58,7 @@ ms.locfileid: "36999200"
   
 9. 确保在指定了值**绑定类型**列表。  
   
-   有关配置绑定的其他信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+   有关配置绑定的其他信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
   
 -   [如何配置 Wcf-customisolated 接收位置](../core/how-to-configure-a-wcf-customisolated-receive-location.md)  
   

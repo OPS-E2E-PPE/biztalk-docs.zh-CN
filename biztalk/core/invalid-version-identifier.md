@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: de725a51ba89312c7cb394e249c1ef40353f256b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 685e3229753405028104c3d2c3ad2b855640630b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022851"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330080"
 ---
 # <a name="invalid-version-identifier"></a>版本标识符无效
 ## <a name="details"></a>详细信息  

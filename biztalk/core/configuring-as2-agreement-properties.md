@@ -14,21 +14,21 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 960397bdce5090f57b9f2fe6882a27d313631df6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 27f6b95aa723f15f9290ac86fd9dc47f1cc4f9bb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000830"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356312"
 ---
-# <a name="configuring-as2-agreement-properties"></a>配置 AS2 确认属性
-本部分介绍 AS2 传输协议属性。 作为传输协议设置的一部分，您还可以定义消息是否已经标记，以及消息是否已经加密等。  
+# <a name="configuring-as2-agreement-properties"></a>配置 AS2 协议属性
+本部分介绍 AS2 传输协议属性。 作为传输协议设置的一部分，您还可以定义是否应对消息进行签名，是否应对消息进行加密，等等。  
   
 > [!NOTE]
->  配置 AS2 协议是可选的。 AS2 协议定义该消息是如何使用 AS2 协议进行传输的。 如果贸易合作伙伴决定使用任何其他协议来传输消息，可以选择不定义 AS2 协议。 但是，贸易合作伙伴必须定义一个管理形成和编码消息方式的编码协议。 有关编码协议的详细信息，请参阅[配置编码协议属性](../core/configuring-encoding-agreement-properties.md)。  
+>  配置 AS2 协议是可选的。 AS2 协议定义的消息是如何使用 AS2 协议传输。 如果贸易合作伙伴决定使用其他任何传输协议来传输消息，他们可以选择不定义 AS2 协议。 但是，贸易合作伙伴必须定义控制如何形成和编码消息的编码协议。 有关编码协议的详细信息，请参阅[配置编码协议属性](../core/configuring-encoding-agreement-properties.md)。  
 > 
 > [!IMPORTANT]
->  每次在协议中更改 AS2 设置时，都必须重新启动 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 主机实例，更改才能生效。  
+>  每次在协议中更改 AS2 设置，必须重新启动[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]主机实例，更改才会生效。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -36,9 +36,9 @@ ms.locfileid: "37000830"
   
 -   [配置标识符 (AS2)](../core/configuring-identifiers-as2.md)  
   
--   [配置验证（AS2）](../core/configuring-validation-as2.md)  
+-   [配置验证 (AS2)](../core/configuring-validation-as2.md)  
   
--   [配置确认 (MDN) (AS2)](../core/configuring-acknowledgements-mdns-as2.md)  
+-   [配置确认 (Mdn) (AS2)](../core/configuring-acknowledgements-mdns-as2.md)  
   
 -   [配置本地主机设置 (AS2)](../core/configuring-local-host-settings-as2.md)  
   

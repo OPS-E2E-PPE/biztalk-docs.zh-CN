@@ -1,5 +1,5 @@
 ---
-title: 疑难解答和已知问题中 HL7 |Microsoft 文档
+title: Hl7 的疑难解答和已知问题 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,23 +15,23 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 786c933d9caeb729b147fadc6282b56e4e6414e8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 914a977daa26a71c953077aa6ff3ac5bfd87a59b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206413"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286518"
 ---
-# <a name="troubleshooting-and-known-issues-in-hl7"></a>在 HL7 疑难解答和已知问题
-故障排除问题、 分辨率和已知的问题的[!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)]。  
+# <a name="troubleshooting-and-known-issues-in-hl7"></a>Hl7 的疑难解答和已知问题
+故障排除问题、 解决办法和已知的问题的[!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)]。  
   
-## <a name="in-this-section"></a>在本节中  
+## <a name="in-this-section"></a>本节内容  
   
--   [故障排除的确认](../../adapters-and-accelerators/accelerator-hl7/troubleshooting-acknowledgments.md)
+-   [确认疑难解答](../../adapters-and-accelerators/accelerator-hl7/troubleshooting-acknowledgments.md)
 
-- [故障排除批处理](../../adapters-and-accelerators/accelerator-hl7/troubleshooting-batching.md)
+- [批处理疑难解答](../../adapters-and-accelerators/accelerator-hl7/troubleshooting-batching.md)
 
-- [排除错误](../../adapters-and-accelerators/accelerator-hl7/troubleshooting-errors.md)
+- [错误疑难解答](../../adapters-and-accelerators/accelerator-hl7/troubleshooting-errors.md)
 
 - [其他问题疑难解答](../../adapters-and-accelerators/accelerator-hl7/troubleshooting-other-issues.md)
   

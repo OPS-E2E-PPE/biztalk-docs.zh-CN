@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 76cab24c2ba0d47baa22dbe694a1d929e98c8f9d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b304b843806ed5550dd623d9980794a141083432
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002750"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400755"
 ---
 # <a name="operational-readiness-checklists"></a>操作准备就绪清单
 操作准备就绪清单包含应考虑的建议和部署 BizTalk 解决方案到生产环境之前应执行的任务。 这些清单提供信息，以便配置必备软件，从而提高可用性，监视[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境中和用于测试的过程。  
@@ -70,12 +70,12 @@ ms.locfileid: "37002750"
   
 -   [清单：配置 BizTalk Server](../technical-guides/checklist-configuring-biztalk-server.md)  
   
--   [清单：提供高可用性容错或负载均衡](../technical-guides/checklist-providing-high-availability-with-fault-tolerance-or-load-balancing.md)  
+-   [清单：提供高可用性容错或负载平衡](../technical-guides/checklist-providing-high-availability-with-fault-tolerance-or-load-balancing.md)  
   
 -   [清单：提供高可用性灾难恢复](../technical-guides/checklist-increasing-availability-with-disaster-recovery.md)  
   
--   [清单：监视操作准备就绪](../technical-guides/checklist-monitoring-operational-readiness.md)  
+-   [清单：监视操作准备情况](../technical-guides/checklist-monitoring-operational-readiness.md)  
   
--   [清单：维护 BizTalk Server 数据库并进行故障排除](~/technical-guides/checklist-maintaining-and-troubleshooting-biztalk-server-databases.md)  
+-   [清单：维护和故障排除 BizTalk Server 数据库](~/technical-guides/checklist-maintaining-and-troubleshooting-biztalk-server-databases.md)  
   
 -   [清单：测试操作准备情况](../technical-guides/checklist-testing-operational-readiness.md)

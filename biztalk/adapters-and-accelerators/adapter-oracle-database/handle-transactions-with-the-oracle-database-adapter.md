@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d94914c2f0f7bde91ea55032048e30232af60d02
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 67d0cce0da65e1b2a7e3c1e6df1ef3eda944bbeb
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970702"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529184"
 ---
 # <a name="handle-transactions-with-the-oracle-database-adapter"></a>使用 Oracle 数据库适配器处理事务
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] 并不会启动事务时 Oracle 数据库上执行操作。 相反，适配器执行的操作提供的适配器客户端的事务上下文。 若要执行操作在事务中使用[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]，您必须：  
@@ -35,9 +35,9 @@ ms.locfileid: "36970702"
 ## <a name="transactions-in-the-inbound-operations"></a>入站操作中的事务  
  [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]公开以下两个入站的操作：  
   
-- **轮询**： 轮询语句和轮询后语句 （如果指定） 的执行在事务中，而轮询的数据可用语句在不同事务中执行。 同样，轮询语句和轮询后语句的执行使用相同的 ODP.NET 连接，而使用不同的 ODP.NET 连接执行轮询的数据可用语句。  
+- **轮询**:轮询语句和轮询后语句 （如果指定） 的执行在事务中，而轮询的数据可用语句在不同事务中执行。 同样，轮询语句和轮询后语句的执行使用相同的 ODP.NET 连接，而使用不同的 ODP.NET 连接执行轮询的数据可用语句。  
   
-- **通知**： 在使用单个 ODP.NET 连接的事务中执行通知操作。  
+- **通知**:在使用单个 ODP.NET 连接事务中执行通知操作。  
   
   有关显示的入站操作详细信息[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]，请参阅[原理适配器面 Oracle 元数据？](https://msdn.microsoft.com/library/cc185310(v=bts.10).aspx)。  
   

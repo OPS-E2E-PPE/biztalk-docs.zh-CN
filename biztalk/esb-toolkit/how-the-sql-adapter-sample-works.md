@@ -1,5 +1,5 @@
 ---
-title: SQL 适配器示例的工作原理 |Microsoft 文档
+title: SQL 适配器示例的工作原理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,16 +12,16 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d4ff56f2f2f88d35290ffd897d107910e206ac98
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4e59df235628539786917d7aa483e23a18d7c87c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294005"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279065"
 ---
 # <a name="how-the-sql-adapter-sample-works"></a>SQL 适配器示例的工作原理
-SQL 适配器示例提供了使用路由服务和转换消息服务配置示例双向路线。  
+SQL 适配器示例提供了使用路由服务和转换消息传送服务配置示例双向路线。  
   
- 路由服务配置了静态冲突解决程序，指定应将消息路由执行名为 InsertProduct 使用 WCF 自定义适配器提供程序的 GlobalBankESB 数据库内的一个 SQL 存储过程。  
+ 路由服务配置为静态解析程序，它指定应将消息路由执行名为 InsertProduct 使用 WCF 自定义适配器提供程序的 GlobalBankESB 数据库内的一个 SQL 存储过程。  
   
- 转换服务指定的地图，将传入消息转换为 InsertProduct 存储过程接受的格式。
+ 转换服务指定一个映射，以将传入消息转换为 InsertProduct 存储过程接受的格式。

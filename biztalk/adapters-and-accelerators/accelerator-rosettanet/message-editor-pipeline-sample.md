@@ -12,15 +12,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ea5ce9c658b7fa0f5a641166cc3423c948a8e6d7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f5a382e63114126d1bec454f5f6eccbd9e1c2798
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974614"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283119"
 ---
 # <a name="message-editor-pipeline-sample"></a>消息编辑器管道示例
-此示例演示如何通过向接收管道添加自定义组件来修改传入消息的内容。  
+此示例演示如何通过将自定义组件添加到接收管道来修改传入消息的内容。  
   
  此示例是可从 Microsoft 获得[!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)]网站，网址[ http://go.microsoft.com/fwlink/?LinkId=37877 ](http://go.microsoft.com/fwlink/?LinkId=37467)。  
   

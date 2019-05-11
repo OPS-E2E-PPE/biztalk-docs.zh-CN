@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7133134ddd37562ec30112549bb1a4ac16149b03
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e1a7f605f94c415909fcd8d5f023ddcfd6c1b1f0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969798"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400381"
 ---
 # <a name="how-to-install-certificates-for-biztalk-server"></a>如何为 BizTalk Server 安装证书
 若要帮助保护数据传输上[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，必须将相应的证书添加到相应的证书存储中，并将证书与相应的 BizTalk 项目相关联。 本主题介绍如何显示证书管理控制台界面，以便本地计算机和当前用户证书存储，以及如何在适当的存储中安装相应的证书。  
@@ -26,12 +26,12 @@ ms.locfileid: "36969798"
 
 |证书使用情况|证书类型|证书存储区|  
 |-----------------------|----------------------|-----------------------|  
-|签名（出站）|自己的私钥 (.pfx)|当前用户\\<br />每个托管每个主机实例服务帐户的 MIME/SMIME 编码器管道的 BizTalk 服务器的个人存储区|  
-|签名验证（入站）|贸易合作伙伴的公钥 (.cer)|本地计算机 \ 其他人将存储的每个 BizTalk server 用于承载 MIME/SMIME 解码器管道为每个主机实例服务帐户|  
-|加密（出站）|贸易合作伙伴的公钥 (.cer)|本地计算机 \ 其他人将存储的每个 BizTalk server 用于承载 MIME/SMIME 编码器管道|  
-|解密（入站）|自己的私钥 (.pfx)|当前用户 \ 个人存储的每个 BizTalk server 用于承载 MIME/SMIME 解码器管道为每个主机实例服务帐户|  
+|签名 （出站）|自己的私钥 (.pfx)|当前用户\\<br />每个托管每个主机实例服务帐户的 MIME/SMIME 编码器管道的 BizTalk 服务器的个人存储区|  
+|签名验证 （入站）|贸易合作伙伴的公钥 (.cer)|本地计算机 \ 其他人将存储的每个 BizTalk server 用于承载 MIME/SMIME 解码器管道为每个主机实例服务帐户|  
+|加密 （出站）|贸易合作伙伴的公钥 (.cer)|本地计算机 \ 其他人将存储的每个 BizTalk server 用于承载 MIME/SMIME 编码器管道|  
+|解密 （入站）|自己的私钥 (.pfx)|当前用户 \ 个人存储的每个 BizTalk server 用于承载 MIME/SMIME 解码器管道为每个主机实例服务帐户|  
 
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  若要执行必须作为的成员身份登录此主题中的过程[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Administrators 组。  
 
 ### <a name="to-display-the-certificates-management-console"></a>若要显示证书管理控制台  
@@ -51,7 +51,7 @@ ms.locfileid: "36969798"
 7.  选择**我的用户帐户**，然后单击**完成**。 这将添加**证书管理控制台**接口**当前用户**。  
 
     > [!NOTE]  
-    >  这将显示**证书管理控制台**当前以登录的帐户。 如果您需要为某一服务帐户将证书导入个人存储，则应首先使用该服务帐户的凭据登录。  
+    >  这将显示**证书管理控制台**当前以登录的帐户。 如果你需要将证书导入的服务帐户的个人存储然后您应该登录使用服务帐户凭据第一次。  
 
 8.  单击**关闭**按钮**独立管理单元中**对话框。  
 

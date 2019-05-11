@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5dcd37c3f3f2d56a9bdc2c576fee344a0eef7df4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 42d47f05542fa69279e65c3c71566f9f60787241
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005143"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330421"
 ---
 # <a name="invalid-service-certificate-thumbprint"></a>服务证书指纹无效
 ## <a name="details"></a>详细信息  
@@ -30,13 +30,13 @@ ms.locfileid: "37005143"
 |  事件源   |                                         0                                          |
 |    组件    |                                         0                                          |
 |  符号名称  |                                         0                                          |
-|  消息正文   |       服务证书指纹无效；应为十六进制的 40 位数字       |
+|  消息正文   |       服务证书指纹无效;预期的 40 个十六进制数字       |
   
 ## <a name="explanation"></a>解释  
- 指定的服务证书指纹无效。  
+ 指定了无效的服务证书指纹。  
   
 ## <a name="user-action"></a>用户操作  
- 在用于配置 WCF 端口的代码中，用户界面的服务证书属性应为十六进制的 40 位数字值。 示例： 798A68E7A3E6F2CCC6929FC4AF2A15A9EED66E39  
+ 在代码中配置 WCF 端口，用户界面的服务证书属性应十六进制的 40 位值。 例如：798A68E7A3E6F2CCC6929FC4AF2A15A9EED66E39  
   
  有关证书的其他信息，请参阅以下资源：  
   

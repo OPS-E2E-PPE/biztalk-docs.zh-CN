@@ -1,5 +1,5 @@
 ---
-title: 修改和扩展 BizTalk ESB 工具包 |Microsoft 文档
+title: 修改和扩展 BizTalk ESB 工具包 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 86cda11c8668370e5b2067b812d813d2c3642bdc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0d30442b5a79c44d325b14ee1559052c8d7f85f5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294365"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400083"
 ---
 # <a name="modifying-and-extending-the-biztalk-esb-toolkit"></a>修改和扩展 BizTalk ESB 工具包
-你可以修改和/或扩展[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]服务和组件，以适合你的特定要求。 例如，你可能想要更改现有组件的行为，请创建自定义的消息传送服务，以在管道中使用、 添加提供程序和适配器，或添加到其他自定义功能[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。  
+您可以修改和/或扩展[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]服务和组件，以适合你的特定要求。 例如，你可能想要更改现有组件的行为，请创建自定义的消息传送服务以使用在管道中，添加提供程序和适配器，或添加其他自定义功能[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。  
   
  本节包括下列主题：  
   
--   [扩展的解析程序和适配器提供程序框架](../esb-toolkit/extending-the-resolver-and-adapter-provider-framework.md)  
+-   [扩展解析程序和适配器提供程序框架](../esb-toolkit/extending-the-resolver-and-adapter-provider-framework.md)  
   
 -   [创建自定义路线服务](../esb-toolkit/creating-a-custom-itinerary-service.md)  
   

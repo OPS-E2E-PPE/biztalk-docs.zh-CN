@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4b0ff37ff260ca11e594a208c125f229e2961c01
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cad46899eb05520303116c08547a2b0e581608d8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967158"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286433"
 ---
 # <a name="using-dynamic-data-validation"></a>使用动态数据验证
 动态数据验证的一个重要部分就验证针对动态数据，其中包括验证的消息格式和消息内容的消息内容。 文档架构，MicrosoftBizTalk 服务器实现在 XSD 文件中，定义和验证消息格式。 业务规则定义消息内容，其中[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]通过业务规则引擎策略验证。 内容验证可以包括确认消息实例中的数据的相对频率可能会更改数据匹配。 Microsoft[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]以动态方式实现这种类型的验证，以便可以更新在生产环境中，此数据而无需重新编译代码或关闭服务。  

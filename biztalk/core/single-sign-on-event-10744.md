@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10744 |Microsoft Docs
+title: 单一登录：Event 10744 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3f4452d99b1869b058a70d6fa3e020c2dd26197c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: be7179cf01ed53be7ca8ce1471502f8dc03a8b0d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972942"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65308033"
 ---
-# <a name="single-sign-on-event-10744"></a>单一登录： 事件 10744
+# <a name="single-sign-on-event-10744"></a>单一登录：事件 10744
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                |
@@ -37,7 +37,7 @@ ms.locfileid: "36972942"
 
 ## <a name="user-action"></a>用户操作  
 
-- 不需要用户进行任何操作。  
+- 不不需要任何用户操作。  
 
   有关详细信息，请参阅下列资源：  
 

@@ -1,5 +1,5 @@
 ---
-title: 如何禁用 SSO |Microsoft 文档
+title: 如何禁用 SSO |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,19 +16,19 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d7096a9c77dda72bbf0aea3ec76423c759fa90df
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 0c14f83d4130153f7066b542702007bf9f704387
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25968851"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338084"
 ---
 # <a name="how-to-disable-sso"></a>如何禁用 SSO
-通过使用 MMC 管理单元或命令行，可以禁用整个单一登录系统。  
+可以使用 MMC 管理单元或命令行来禁用整个单一登录系统。  
   
- 禁用所有单一登录服务器将有短时间的延迟，因为它们会轮询 SSO 数据库以获取最新的全局信息。  
+ 将所有单一登录服务器要禁用短时间的延迟，因为它们会轮询 SSO 数据库的最新的全局信息。  
   
-### <a name="to-disable-enterprise-single-sign-on-using-the-mmc-snap-in"></a>使用 MMC 管理单元禁用企业单一登录  
+### <a name="to-disable-enterprise-single-sign-on-using-the-mmc-snap-in"></a>若要禁用企业单一登录使用 Mmc 管理单元  
   
 1.  在“开始”  菜单上，依次单击“所有程序” 、“Microsoft Enterprise Single Sign-On” 和“SSO 管理” 。  
   
@@ -36,17 +36,17 @@ ms.locfileid: "25968851"
   
 3.  右键单击**系统**，然后单击**禁用**。  
   
-### <a name="to-disable-enterprise-single-sign-on-using-the-command-line"></a>使用命令行禁用企业单一登录  
+### <a name="to-disable-enterprise-single-sign-on-using-the-command-line"></a>若要禁用企业单一登录使用命令行  
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录是*\<驱动器\>*: \program Files\Enterprise 单一登录。  
+2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。  
   
-3.  类型**ssomanage-disablesso**。  
+3.  类型**ssomanage – disablesso**。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何启用 SSO](../core/how-to-enable-sso.md)   
  [使用 SSO](../core/using-sso.md)

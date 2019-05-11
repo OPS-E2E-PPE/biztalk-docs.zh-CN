@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6b1d8f03201b04a3be1f7908eaf7e763a4ade226
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 259bc2d01401341e3cd8e7fb928fa373dfecfa3e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981246"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242684"
 ---
 # <a name="best-practices-for-maintaining-biztalk-server-databases"></a>维护 BizTalk Server 数据库的最佳做法
 本主题列出了维护的一些最佳做法[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库。  
@@ -33,5 +33,5 @@ ms.locfileid: "36981246"
 - 使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]最佳做法分析器 (BPA) 来评估现有[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]部署。 BPA 执行许多与数据库相关的检查。 您可以下载中的 BizTalk Server Best Practices Analyzer 工具[BizTalk Server Best Practices Analyzer 工具](http://go.microsoft.com/fwlink/?LinkId=83317)(<http://go.microsoft.com/fwlink/?LinkId=83317>)。  
   
 ## <a name="see-also"></a>请参阅  
- [清单： 维护和故障排除 BizTalk Server 数据库](~/technical-guides/checklist-maintaining-and-troubleshooting-biztalk-server-databases.md)   
+ [清单：维护和故障排除 BizTalk Server 数据库](~/technical-guides/checklist-maintaining-and-troubleshooting-biztalk-server-databases.md)   
  [大量增长的 BizTalk Server 数据库表](../technical-guides/large-growing-biztalk-server-database-tables.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 43f90723634a7192d6b8908a37f5d62fa2476997
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 415064960644356db37530b87ce0f591d5a23bb9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006118"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400711"
 ---
 # <a name="planning-for-disaster-recovery"></a>规划灾难恢复
 本主题提供灾难恢复要求的应用程序团队和 BizTalk Server 的过程指南。 Microsoft BizTalk Server 将存储在配置和处理信息[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]。 BizTalk Server 高可用性和灾难恢复通过的高可用性和灾难恢复功能[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]。  

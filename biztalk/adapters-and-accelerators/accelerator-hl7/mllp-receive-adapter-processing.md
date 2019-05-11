@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dbb5932d65bce2b17ebfca3645b8c755549b9a9c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 37cf1deb1ce956c94ffd44cc416cdf6970c81341
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968134"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65290408"
 ---
 # <a name="mllp-receive-adapter-processing"></a>MLLP 接收适配器处理
 最小的较低层协议 (MLLP) 接收适配器支持这两个单向和双向请求响应模式。 适配器侦听和接受连接。  
@@ -38,11 +38,11 @@ ms.locfileid: "36968134"
 ## <a name="acknowledgments-with-the-two-way-mllp-receive-adapter"></a>确认与双向 MLLP 接收适配器  
  当双向 MLLP 接收适配器接收消息时，Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 可以生成以下类型的确认：  
   
-- HL7 增强提交确认： 在此方案中，[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]同一个连接上发送了提交确认。 它会发送出不同的发送端口上应用程序接受确认。  
+- HL7 增强的提交确认：在此方案中，[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]同一个连接上发送了提交确认。 它会发送出不同的发送端口上应用程序接受确认。  
   
-- 应用程序接受确认： 在此方案中，[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]同一个连接上发送应用程序接受确认。  
+- 应用程序接受确认：在此方案中，[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]同一个连接上发送应用程序接受确认。  
   
-- 静态确认： 在此方案中，[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]同一个连接上发送确认。  
+- 静态确认：在此方案中，[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]同一个连接上发送确认。  
   
 - 生成的确认类型取决于[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]发送消息的参与方的配置资源管理器设置。 字段 MSH 15 和 16 个的单个消息中的值来覆盖此设置。 但是，对于应用程序应为静态 Ack，可以仅将配置设置通过[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]配置资源管理器。  
   
@@ -65,7 +65,7 @@ ms.locfileid: "36968134"
   
   下表列出了 MLLP 接收适配器返回的错误。  
   
-|            事件             |  ID  |                                                                                                          错误条件                                                                                                           |
+|            Event             |  ID  |                                                                                                          错误条件                                                                                                           |
 |------------------------------|------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |      **ErrorListening**      | 8448 |                                                   无法绑定到本地套接字 （很可能某些其他本地应用程序使用相同的 IP 地址/端口 ID 组合）。                                                    |
 | **ErrorAcceptingConnection** | 8449 | 无法建立与远程方的 TCP 连接。 任一[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]达到最大连接限制，或者资源不足。 |
@@ -78,8 +78,8 @@ ms.locfileid: "36968134"
 |计数器|含义|  
 |-------------|-------------|  
 |字节|已接收或发送的所有文档的有效负载的大小。|  
-|字节数/秒|已接收或发送的负载的当前吞吐量。|  
-|Documents processed|**MLLP 接收**:<br /><br /> 已成功传递到 MessageBox 数据库的文档数。<br /><br /> **MLLP 发送**:<br /><br /> 已成功传递到远程应用程序的文档数。|  
+|Bytes/sec|已接收或发送的负载的当前吞吐量。|  
+|处理的文档|**MLLP 接收**:<br /><br /> 已成功传递到 MessageBox 数据库的文档数。<br /><br /> **MLLP 发送**:<br /><br /> 已成功传递到远程应用程序的文档数。|  
 |失败的文档|**MLLP 接收**:<br /><br /> 未成功传送到 MessageBox 数据库的文档数。<br /><br /> **MLLP 发送**:<br /><br /> 未成功传递到远程应用程序的文档数。|  
 |连接状态|连接的适配器，状态 1 或 0 (1 = 连接)。|  
   

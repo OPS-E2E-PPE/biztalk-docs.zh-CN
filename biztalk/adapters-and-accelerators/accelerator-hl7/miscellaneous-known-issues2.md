@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7d0e845a6a178b66d2a817414666455eb20b5bb4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fd288206da44852d9b63b3170550756a16b85c2d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007854"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65303640"
 ---
 # <a name="miscellaneous-known-issues"></a>其他已知的问题
 本部分包含有关其他错误的有用信息。  

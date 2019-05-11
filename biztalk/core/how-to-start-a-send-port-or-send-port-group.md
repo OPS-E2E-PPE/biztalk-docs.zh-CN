@@ -19,23 +19,23 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3f3f88eca5a0c919de2c278bf1a11f8565de3f0f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b1749862ee78c549d3aa3fd79a62eedd1ecba144
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971438"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334041"
 ---
 # <a name="how-to-start-a-send-port-or-send-port-group"></a>如何启动发送端口或发送端口组
-本主题将介绍如何使用 BizTalk Server 管理控制台启动发送端口或发送端口组。 必须先启动发送端口或发送端口组，才能处理消息。 如果启动已取消登记的发送端口或发送端口组，则 BizTalk 将先登记该发送端口或发送端口组，然后再启动它。 发送端口组中必须至少包含一个处于登记状态的发送端口，才能启动。 启动和停止发送端口组不影响它所包含的任何发送端口的状态。  
+本主题介绍如何使用 BizTalk Server 管理控制台启动发送端口或发送端口组。 必须启动发送端口或发送端口组，然后才能处理消息。 如果启动某个已取消登记的发送端口或发送端口组，BizTalk 将登记发送端口或发送端口组，然后再启动它。 发送端口组必须包含至少一个发送端口处于登记状态，然后才能启动发送端口组。 启动和停止发送端口组不会影响它所包含的任何发送端口的状态。  
   
 > [!NOTE]
->  默认情况下，启动 BizTalk 应用程序将启动其包含的所有项目。 有关详细信息，请参阅[如何启动和停止 BizTalk 应用程序](../core/how-to-start-and-stop-a-biztalk-application.md)。  
+>  默认情况下，启动 BizTalk 应用程序启动的所有项目，它包含。 有关详细信息，请参阅[如何启动和停止 BizTalk 应用程序](../core/how-to-start-and-stop-a-biztalk-application.md)。  
   
-## <a name="prerequisites"></a>必要條件  
- 若要执行本主题中的过程，则必须以 BizTalk Server Operators 组或 BizTalk Server Administrators 组成员的身份登录。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
+## <a name="prerequisites"></a>先决条件  
+ 若要执行本主题中的过程，必须以 BizTalk Server Operators 组或 BizTalk Server Administrators 组的成员的身份登录。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
   
-### <a name="to-start-a-send-port-or-send-port-group"></a>启动发送端口或发送端口组  
+### <a name="to-start-a-send-port-or-send-port-group"></a>若要启动的发送端口或发送端口组  
   
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   

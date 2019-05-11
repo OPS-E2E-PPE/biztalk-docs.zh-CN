@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bcdc4c2c628a031ab235ce5821c01b56e5f86851
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 676f3078974384579c113bdcd51d5d118d43b4f3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991502"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65277323"
 ---
 # <a name="clustering-the-biztalk-server-databases"></a>聚类分析 BizTalk Server 数据库
 如果 BizTalk Server 数据库变得不可用，BizTalk Server 环境将不能正常工作。 若要提供高可用性，可以创建 BizTalk Server 数据库的 Microsoft SQL Server 群集，如下图中所示。  
@@ -55,7 +55,7 @@ ms.locfileid: "36991502"
   
 1. 在运行时服务器上安装 BizTalk Server。  
   
-2. 打开“BizTalk Server 配置”。  
+2. 打开**BizTalk Server 配置**。  
   
 3. 若要应用自定义配置，请参阅[导入和导出 BizTalk Server 配置](../install-and-config-guides/import-and-export-biztalk-server-configuration.md)。 若要指定 SQL Server 群集在 BizTalk Server 数据库输入中的 SQL Server 群集的名称**数据库**配置的对话框。  
   

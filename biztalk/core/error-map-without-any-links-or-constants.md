@@ -1,5 +1,5 @@
 ---
-title: 错误-不含任何链接或常量的映射 |Microsoft 文档
+title: 错误-映射不含任何链接或常数 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,14 +14,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d697d6d053f2c0a36d0f5cb45002dca28a92f005
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fa01eff9df2582a00418530e87e9658565722c23
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240637"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65347810"
 ---
-# <a name="error---map-without-any-links-or-constants"></a>错误-映射不含任何链接或常量
+# <a name="error---map-without-any-links-or-constants"></a>错误-映射不含任何链接或常数
 **错误代码**  
   
  btm1000  

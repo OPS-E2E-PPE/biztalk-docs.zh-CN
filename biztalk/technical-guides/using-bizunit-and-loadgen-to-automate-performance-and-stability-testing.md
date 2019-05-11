@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 53dde16a21679e7986f3369a825bc4281ed40f37
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 84dda7f9312f92dd50138f230407c600fac27dda
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981694"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400367"
 ---
 # <a name="using-bizunit-and-loadgen-to-automate-performance-and-stability-testing"></a>使用 BizUnit 和 LoadGen 自动执行性能和稳定性测试
 本主题提供有关如何使用 BizUnit 与 Microsoft BizTalk LoadGen 2007 工具来自动执行性能和稳定性测试 BizTalk Server 解决方案的信息。  
@@ -384,7 +384,7 @@ ms.locfileid: "36981694"
   
  此示例说明如何使用 LoadGen 自动执行性能测试组合 BizUnit。 与功能测试相同的方式，可以从 Visual Studio 测试工具执行 BizUnit 配置文件所述的负载测试。 采用此方法，可集中管理、 管理和收集的性能测试数据。  
   
- 通过使用 BizUnit 和 LoadGen 自动方法中，是非常容易制定计划以小时数，此过程中将提供充足的测试结果以进行分析正常工作时间内关闭过程中出现的多个测试运行。 自动执行性能测试，考虑预期的生产消息卷的使用 LoadGen 脚本，通过系统模型不同的负载，例如你可能想要模拟不同程度 （75%、 100%和 125%）。 在执行负载测试时，它是测试重载或"错误 day"方案中尤为重要。 在系统投入生产之前, 您应该知道什么是 BizTalk Server 环境中每个测试用例的最大可承受吞吐量 (MST)。 最大可承受性能的详细信息，请参阅[可承受性能？](http://go.microsoft.com/fwlink/?LinkID=132304) (http://go.microsoft.com/fwlink/?LinkID=132304) BizTalk Server 2009 文档中。  
+ 通过使用 BizUnit 和 LoadGen 自动方法中，是非常容易制定计划以小时数，此过程中将提供充足的测试结果以进行分析正常工作时间内关闭过程中出现的多个测试运行。 自动执行性能测试，请考虑使用 LoadGen 脚本时通过系统加载该模型不同，例如你可能希望模拟不同程度 （75%、 100%和 125%）预期的生产消息量。 在执行负载测试时，它是测试重载或"错误 day"方案中尤为重要。 在系统投入生产之前, 您应该知道什么是 BizTalk Server 环境中每个测试用例的最大可承受吞吐量 (MST)。 最大可承受性能的详细信息，请参阅[可承受性能？](http://go.microsoft.com/fwlink/?LinkID=132304) (http://go.microsoft.com/fwlink/?LinkID=132304) BizTalk Server 2009 文档中。  
   
 ### <a name="the-complete-bizunit-loadgen-sample-configuration-file"></a>完整的 BizUnit LoadGen 示例配置文件  
  以下列表包含前面提到的 BizUnit 配置文件的全部内容。  

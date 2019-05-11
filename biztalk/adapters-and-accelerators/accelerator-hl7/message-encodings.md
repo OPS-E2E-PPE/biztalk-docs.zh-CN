@@ -17,12 +17,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 013df4d29604e6dd7ce6d2e486612be303cc5898
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 186cd9293c69c21723c103ff265b933514c74de7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007086"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65303712"
 ---
 # <a name="message-encodings"></a>消息编码
 不是只需按顺序 for HL7 有用定义消息的语义。 一旦确定消息内容，该标准包括说明如何表示实际接口中的内容。 也就是说，必须指定"消息编码"。 HL7 版本 2 支持两种形式的消息编码、 自定义基于分隔符的编码和 XML 编码。  

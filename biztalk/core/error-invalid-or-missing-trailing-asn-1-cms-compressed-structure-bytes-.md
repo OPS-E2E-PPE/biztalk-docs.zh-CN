@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 768fb1aa2ada6fb6c585e29db1f19cf04a1bd118
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e6fd6f7e3d40b9f7f28d58642d85dd0f00d25f02
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991310"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65347956"
 ---
 # <a name="invalid-or-missing-trailing-asn1-cms-compressed-structure-bytes-during-decompression-processing"></a>解压缩处理期间尾部 ASN.1 CMS 压缩结构字节无效或缺失
 ## <a name="details"></a>详细信息  

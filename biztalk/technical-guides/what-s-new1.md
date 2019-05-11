@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 000d787e4a8b00d8d4539a043a36a8c4013fcc67
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 62984f6041823c2132ce06090739b39dd2eda48f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37020308"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291233"
 ---
-# <a name="what39s-new"></a>什么&#39;新增
+# <a name="what39s-new"></a>新增功能
 以下功能是在此版本中的新功能[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包：  
 
 - 更新的发现来处理大量的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]项目  

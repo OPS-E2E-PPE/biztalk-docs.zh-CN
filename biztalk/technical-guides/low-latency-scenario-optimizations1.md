@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed309a8ea9d6728dc4e0e653969f456e69f6eb34
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8dc842715be4e2ad97733c144302a52704865b57
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986054"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65266151"
 ---
 # <a name="low-latency-scenario-optimizations"></a>低延迟方案优化
 默认情况下，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]针对吞吐量而不是低延迟进行了优化。 以下优化应用于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]本指南中使用测试方案。  

@@ -1,5 +1,5 @@
 ---
-title: MSMQ 适配器示例 |Microsoft 文档
+title: MSMQ 适配器示例 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cbfe1d76204dca20ee8777a66b0f73a851561d71
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e2acf5b66b6e7124059f182f1db06dece04c8eef
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262741"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65263624"
 ---
 # <a name="msmq-adapter-samples"></a>MSMQ 适配器示例
-本节包含演示高级的功能，使用 BizTalk MSMQ 适配器时的示例。  
+本节包含演示使用 BizTalk MSMQ 适配器时的高级的功能的示例。  
   
 ## <a name="in-this-section"></a>本节内容  
   

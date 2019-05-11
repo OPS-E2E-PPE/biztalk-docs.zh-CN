@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10511 |Microsoft Docs
+title: 单一登录：Event 10511 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 828dab394e773f99b31ca23f19b2816ab8558a10
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 531e32a2c23c30095dc744c6e73d111ce9cccc13
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992086"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400244"
 ---
-# <a name="single-sign-on-event-10511"></a>单一登录： 事件 10511
+# <a name="single-sign-on-event-10511"></a>单一登录：事件 10511
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                                   |
@@ -30,18 +30,18 @@ ms.locfileid: "36992086"
 |  事件源   |                                                              ENTSSO                                                               |
 |    组件    |                                                                N\A                                                                |
 |  符号名称  |                                                         SSO_ERROR_NO_DSN                                                          |
-|  消息正文   | 注册表中找不到 SQL Server 和 SSO 数据库的名称。 使用 SSO 管理工具来配置这些值。 |
+|  消息正文   | 在注册表中找不到 SQL Server 和 SSO 数据库的名称。 使用 SSO 管理工具来配置这些值。 |
 
 ## <a name="explanation"></a>解释  
- 此错误事件表明注册表中找不到 SQL Server 和 SSO 数据库的名称。 该 SSO 服务需要使用此信息才能连接到 SSO 数据库。 此信息在配置过程中在注册表中设置。 这可能指示配置未正确完成，或者配置完成后这些注册表项已删除。  
+ 此错误事件表示，在注册表中未找到 SQL Server 和 SSO 数据库的名称。 SSO 服务需要使用此信息，以便它可以连接到 SSO 数据库。 在配置期间，如果在注册表中设置此信息。 这可能表示配置未正确完成，或注册表项已被删除后配置已完成。  
 
 ## <a name="user-action"></a>用户操作  
  若要解决此错误，请执行下列一项或多项操作:  
 
-- 如果您担心发生更大范围的配置故障，请对该产品取消配置，然后使用配置程序重新配置。  
+- 如果您怀疑更广泛的配置失败，取消对该产品，然后重新配置使用配置程序。  
 
-- 也可以使用 SSO 安装目录（通常为 C:\Program Files\Common Files\Enterprise Single Sign-On）中的 SSO 命令行工具 ssoconfig.exe 来设置这些具体的缺失注册表项。 您的 SSO 安装目录可能有所不同。 使用 **-setDB**选项设置的所需的 SQL Server 和 SSO 数据库名称。  
+- 或者可以使用 SSO 命令行工具 ssoconfig.exe SSO 安装目录，通常 C:\Program Files\Common Files\Enterprise Single Sign-on 中设置这些特定的缺失注册表项。 SSO 安装目录中可能会有所不同。 使用 **-setDB**选项设置的所需的 SQL Server 和 SSO 数据库名称。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [实现企业单一登录](../core/implementing-enterprise-single-sign-on.md)

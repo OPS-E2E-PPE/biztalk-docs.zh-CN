@@ -12,23 +12,23 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d867737599369ad8ff07780080b16f5ce0f6f2fe
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2d65b3e7489171236acdee6313bda2485f31553a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005574"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65301764"
 ---
 # <a name="processing-instructions-in-detail"></a>在详细信息的处理指令
 本主题介绍的格式和系统 Properties.xsd 属性架构，用于定义路线处理所需的多个上下文属性的结构。 这些属性将升级时接收并处理通过 BizTalk Server 管道; 一条消息由于它们是升级的属性，它们都可以访问 BizTalk Server 组件。 系统 Properties.xsd 属性架构中定义以下属性：  
   
-- **ItineraryHeader。** 此属性包含所有路线信息和路线服务通过一系列的路线步骤要调用的列表。 路线 API 在内部使用此属性。  
+- **ItineraryHeader.** 此属性包含所有路线信息和路线服务通过一系列的路线步骤要调用的列表。 路线 API 在内部使用此属性。  
   
 - **ServiceName。** 此属性包含要处理的当前路线服务的名称。  
   
-- **ServiceState。** 此属性包含当前的路线服务的状态：**挂起**，**完成**，或**Active**。 所有服务都订阅包含行程步骤**ServiceState**的值**挂起**。  
+- **ServiceState.** 此属性包含当前的路线服务的状态：**挂起**，**完整**，或**Active**。 所有服务都订阅包含行程步骤**ServiceState**的值**挂起**。  
   
-- **服务类型。** 此属性定义路线步骤的类型 (**Messaging**或**业务流程**)。  
+- **ServiceType.** 此属性定义路线步骤的类型 (**Messaging**或**业务流程**)。  
   
 - **IsRequestResponse。** 此属性定义的消息类型 (单向或请求-响应)。  
   

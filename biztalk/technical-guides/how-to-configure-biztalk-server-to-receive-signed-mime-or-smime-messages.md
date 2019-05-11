@@ -12,17 +12,17 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2df073a27cb9e17851c9afec4b5531424d913fab
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 26882e196fe90d87b9e63bc13d487f60ac99627c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009182"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253321"
 ---
 # <a name="how-to-configure-biztalk-server-to-receive-signed-mime-or-smime-messages"></a>如何配置 BizTalk Server 以便接收签名的 MIME 或 SMIME 消息
 本主题介绍如何配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用证书以接收签名的 MIME/SMIME 消息。 下面的过程也适用于配置的签名消息接收通过 AS2 传输。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  若要执行本主题中的过程，您必须登录以成员的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Administrators 组。  
   
 ### <a name="to-configure-biztalk-server-to-receive-signed-messages"></a>若要配置 BizTalk Server 以便接收签名消息  
@@ -37,7 +37,7 @@ ms.locfileid: "37009182"
    2. 在中**属性**窗口中，配置 MIME/SMIME 解码器管道组件属性。  
   
       > [!NOTE]
-      >  您可以在将管道部署到某一 BizTalk 组中后，使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台配置接收位置的管道属性。 还可以为 BizTalk 组中的每个接收位置配置不同的管道属性。  
+      >  管道部署到 BizTalk 组使用后，可以配置接收位置的管道属性[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。 每个接收位置在 BizTalk 组中，可以配置不同的管道属性。  
   
    3. 生成并部署接收管道。  
   
@@ -55,7 +55,7 @@ ms.locfileid: "37009182"
    -   打开**参与方属性**对话框的在 BizTalk Server 管理控制台中，单击**证书**选项卡上，单击**浏览**，选择相应的证书，然后单击**确定**。  
   
        > [!NOTE]
-       >  用于验证参与方签名的证书必须与用于验证其他参与方签名的证书不同。  
+       >  用于验证参与方签名的证书必须是唯一的证书用于验证其他参与方签名的证书。  
   
 ## <a name="see-also"></a>请参阅  
  [为 MIME 或 SMIME 消息配置证书](../technical-guides/configuring-certificates-for-mime-or-smime-messages.md)

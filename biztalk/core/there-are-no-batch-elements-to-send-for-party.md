@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 096f180ada0ae99eb4ed3ce00050809f0f39ac75
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9768a06f270e64eadc6bd3c00df337e96c2f1799
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997030"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65254031"
 ---
-# <a name="there-are-no-batch-elements-to-send-for-party"></a>没有要为参与方发送的批元素
+# <a name="there-are-no-batch-elements-to-send-for-party"></a>不没有要为参与方发送任何批处理元素
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                        |

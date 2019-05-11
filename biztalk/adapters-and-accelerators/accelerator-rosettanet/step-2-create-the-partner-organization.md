@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 创建合作伙伴组织 |Microsoft Docs
+title: 第 2 步：创建合作伙伴组织 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e3e7c8ae582f71c868f41a8ad2772e6f82d27d86
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 351a95b2d3f507b525e1315a5d9d1b5733953ee5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993702"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281193"
 ---
-# <a name="step-2-create-the-partner-organization"></a>步骤 2： 创建合作伙伴组织
+# <a name="step-2-create-the-partner-organization"></a>第 2 步：创建合作伙伴组织
 在此步骤中，创建合作伙伴组织使用 Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]管理控制台。  
 
 ### <a name="to-create-the-partner-organization"></a>若要创建合作伙伴组织  
@@ -54,7 +54,7 @@ ms.locfileid: "36993702"
 4. 单击**应用**，然后**确定**。  
 
 > [!NOTE]
->  如果有加密证书，请在此处进行配置。 有关配置加密证书的信息，请参阅[管理证书](../../adapters-and-accelerators/accelerator-rosettanet/managing-certificates1.md)。  
+>  如果有加密证书，你在此处配置它。 有关配置加密证书的信息，请参阅[管理证书](../../adapters-and-accelerators/accelerator-rosettanet/managing-certificates1.md)。  
 
 ## <a name="see-also"></a>请参阅  
  [步骤 3：编辑合作伙伴接口流程](../../adapters-and-accelerators/accelerator-rosettanet/step-3-edit-the-partner-interface-process.md)

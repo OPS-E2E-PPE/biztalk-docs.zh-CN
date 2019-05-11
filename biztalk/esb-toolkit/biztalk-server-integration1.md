@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server Integration1 |Microsoft 文档
+title: BizTalk Server Integration1 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 98ad69169b28e78158e021d3b84ed159cce7e64f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a2736c7a20ac76272060cf72e07d15a6f07ccb59
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289901"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65302421"
 ---
-# <a name="biztalk-server-integration"></a>BizTalk Server 的集成
-SOA 服务管理器提供了向导，可以帮助你设置 SOA 服务管理器用于与 Microsoft BizTalk Server。 例如，图 1 显示了向导，可帮助你安装和配置 BizTalk 集成点链接 BizTalk Server 发送端口和接收位置到 SOA 服务管理器。  
+# <a name="biztalk-server-integration"></a>BizTalk Server 集成
+SOA 服务管理器提供了向导，可以设置 SOA 服务管理器用于与 Microsoft BizTalk Server。 例如，图 1 显示了向导，可帮助你安装和配置 BizTalk 集成点链接 BizTalk Server 发送端口和接收位置到 SOA 服务管理器。  
   
- ![SOA BizTalk 集成点](../esb-toolkit/media/ch9-soabiztalkintegrationpoint.jpg "Ch9 SOABizTalkIntegrationPoint")  
+ ![SOA BizTalk 集成点](../esb-toolkit/media/ch9-soabiztalkintegrationpoint.jpg "Ch9-SOABizTalkIntegrationPoint")  
   
  **图 1**  
   
  **SOA BizTalk 集成点安装和配置向导**  
   
- 安装完成后，SOA 服务管理器可以显示发送端口的详细信息，并接收由向导配置的位置。 图 2 显示了操作页面显示名称、 接口、 策略和三个虚拟操作的数目接收位置和发送端口。  
+ 安装完成后，SOA 服务管理器可以显示详细信息的发送端口和接收位置配置向导。 图 2 显示了操作页面显示名称、 接口、 策略，并为三个虚拟操作数目接收位置和发送端口。  
   
- ![操作页](../esb-toolkit/media/ch9-operationspage.gif "Ch9 OperationsPage")  
+ ![操作页](../esb-toolkit/media/ch9-operationspage.gif "Ch9-OperationsPage")  
   
  **图 2**  
   
- **BizTalk Server 的列表发送端口和接收位置显示由 SOA 服务管理器**
+ **一组 BizTalk Server 发送端口和接收位置的 SOA 服务管理器中显示**

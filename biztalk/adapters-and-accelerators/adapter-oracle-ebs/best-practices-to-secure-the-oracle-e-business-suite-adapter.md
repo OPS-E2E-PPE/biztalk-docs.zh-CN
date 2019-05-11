@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 464670a268d0a320ceb2c83de71d083c915e6809
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 53b584ae00a5c4767bec842fd0878546e7842d85
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990030"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529582"
 ---
 # <a name="best-practices-to-secure-the-oracle-e-business-suite-adapter"></a>最佳做法来保护 Oracle E-business Suite 适配器
 本部分提供了更完整地保护敏感数据，使用或开发使用的应用程序时应遵循的最佳实践[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]。  

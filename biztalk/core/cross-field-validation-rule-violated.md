@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d590fc318e7d833a067f4275986bef88da10364
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e21c1f0ff73f1d3c26f6c1023c9bd221bf0625c5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976654"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65353474"
 ---
 # <a name="cross-field-validation-rule-violated"></a>违反跨字段验证规则
 ## <a name="details"></a>详细信息  

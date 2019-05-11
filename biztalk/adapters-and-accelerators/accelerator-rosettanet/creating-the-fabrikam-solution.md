@@ -14,15 +14,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c4f1540cb41605689c10e3b5afc9dd292f4f2603
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b72fdba4d66498c222370791c59265e01f4022fb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011998"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283903"
 ---
 # <a name="creating-the-fabrikam-solution"></a>创建 Fabrikam 解决方案
-本节包含创建 Fabrikam 解决方案时必须执行的步骤。 创建组织和贸易合作伙伴协议，使用在 Microsoft 提供的 SDK 示例后[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]与 Contoso 的业务线 (LOB) 应用程序进行通信。  
+本部分包含需要创建 Fabrikam 解决方案时要遵循的步骤。 创建组织和贸易合作伙伴协议，使用在 Microsoft 提供的 SDK 示例后[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]与 Contoso 的业务线 (LOB) 应用程序进行通信。  
   
 ## <a name="in-this-section"></a>本节内容  
   

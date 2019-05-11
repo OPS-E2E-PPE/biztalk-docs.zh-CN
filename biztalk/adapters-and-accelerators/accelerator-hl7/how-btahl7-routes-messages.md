@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c64cd0620dacf835d3765510ea74c2a8cc80c4a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6b4223648bc62cf748640a9528a831deafdafa2c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999286"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292933"
 ---
 # <a name="how-btahl7-routes-messages"></a>BTAHL7 如何路由消息
 Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 利用的消息处理功能的 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，而且还在特定于 HL7 消息传送要求多种扩展它。  

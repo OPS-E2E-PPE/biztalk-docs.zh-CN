@@ -1,5 +1,5 @@
 ---
-title: 步骤 5： 创建用于将确认传递至 ADT 系统使用文件适配器的发送端口 |Microsoft Docs
+title: 步骤 5：创建用于将确认传递至 ADT 系统使用文件适配器的发送端口 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,14 +18,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1421b39ed4bbd15fb82cb16ed55b23e5781eead6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 15b9663f8203a9cf907de76df680eefe069a17ec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002094"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288083"
 ---
-# <a name="step-5-create-a-send-port-to-deliver-acknowledgments-to-the-adt-system-using-the-file-adapter"></a>步骤 5： 创建用于将确认传递至 ADT 系统使用文件适配器的发送端口
+# <a name="step-5-create-a-send-port-to-deliver-acknowledgments-to-the-adt-system-using-the-file-adapter"></a>步骤 5：创建用于将确认传递至 ADT 系统使用文件适配器的发送端口
 在此步骤中，创建要生成确认使用文件适配器的发送端口。  
 
 ### <a name="to-create-the-tutorialsendackadt-send-port"></a>若要创建 Tutorial_sendAck_ADT 发送端口  
@@ -34,7 +34,7 @@ ms.locfileid: "37002094"
 
 2. 在 BizTalk Server 管理控制台中，右键单击**发送端口**，依次指向**新建**，然后单击**静态单向发送端口**。  
 
-3. 在“发送端口属性”对话框中，执行以下操作：  
+3. 在发送端口属性对话框中，请执行以下操作：  
 
 
    |      使用此选项      |                                执行的操作                                 |
@@ -84,4 +84,4 @@ ms.locfileid: "37002094"
 
 8. 在管理控制台中，单击**发送端口**，右键单击**Tutorial_sendAck_ADT**，然后单击**启动**。  
 
-   请继续执行[第 6 步： 创建一个发送端口以将 ^ A03 消息至 RX 系统使用文件适配器](../../adapters-and-accelerators/accelerator-hl7/step-6-create-send-port-to-deliver-adt^a03-message-to-rx-system-using-file.md)。
+   请继续执行[步骤 6:创建发送端口以将 ^ A03 消息至 RX 系统使用文件适配器](../../adapters-and-accelerators/accelerator-hl7/step-6-create-send-port-to-deliver-adt^a03-message-to-rx-system-using-file.md)。

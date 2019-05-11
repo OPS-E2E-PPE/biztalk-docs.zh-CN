@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: def67be8b1c146bd6da37b669a71f2be15e22e2d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 814da0db8dce26e9078126ede767f623b59b6401
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985958"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65251011"
 ---
-# <a name="segment-should-have-a-name-with-at-least-two-characters"></a>段的名称应具有至少两个字符
+# <a name="segment-should-have-a-name-with-at-least-two-characters"></a>段应具有至少两个字符的名称
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                        |

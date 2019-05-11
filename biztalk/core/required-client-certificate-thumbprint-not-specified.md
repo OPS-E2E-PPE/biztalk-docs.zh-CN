@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4bea510fba1a9c4ab972229042e7af1e22cc2ad8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4ec653bcfaf3316d0c41c21395a711fa88793df4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993470"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65268083"
 ---
 # <a name="required-client-certificate-thumbprint-not-specified"></a>未指定必需的客户端证书指纹
 ## <a name="details"></a>详细信息  
@@ -30,15 +30,15 @@ ms.locfileid: "36993470"
 |  事件源   |                                         0                                          |
 |    组件    |                                         0                                          |
 |  符号名称  |                                         0                                          |
-|  消息正文   |               未指定所需的客户端证书指纹。                |
+|  消息正文   |               未指定必需的客户端证书指纹。                |
   
 ## <a name="explanation"></a>解释  
- 您未设置 WCF 发送端口的安全设置所需的客户端证书属性。  
+ 未设置客户端证书的 WCF 发送端口的安全设置所需的属性。  
   
 ## <a name="user-action"></a>用户操作  
- 使用以下过程配置 WCF 发送端口的安全设置。  
+ 使用以下过程来配置安全设置的 WCF 发送端口。  
   
-#### <a name="to-configure-security-settings"></a>配置安全设置  
+#### <a name="to-configure-security-settings"></a>若要配置安全设置  
   
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   

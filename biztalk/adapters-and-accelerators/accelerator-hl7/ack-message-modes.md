@@ -17,12 +17,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 181617a41ba892a8ac04f2bf2154bbe78e8c892e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 66636704ccbe63be2a47fb56dd43f797174fc89a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967847"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65247472"
 ---
 # <a name="ack-message-modes"></a>ACK 消息模式
 对于确认 (ACK) 消息，Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 确定的确认模式和要用于填充你想要生成的确认 MSH15 和 MSH16 字段值。 这些值是在贸易合作伙伴管理 (TPM) 配置中存在。 下面是可能值为 ACK 模式：  
@@ -40,9 +40,9 @@ ms.locfileid: "36967847"
   
 3. 延迟-发送两条确认消息。  
   
-   - 原始模式： 接收系统后验证标头和正文会发送此类型的确认。 此模式都涉及到架构验证。  
+   - 原始模式：接收系统验证标头和正文后会发送此类型的确认。 此模式都涉及到架构验证。  
   
-   - 延迟模式下： 业务线应用程序在处理它之后确认消息。 应用程序提供对延迟的消息[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，它将它作为独立的消息处理，并将其传送到目标。  
+   - 延迟模式下：业务线应用程序在处理它之后确认消息。 应用程序提供对延迟的消息[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，它将它作为独立的消息处理，并将其传送到目标。  
   
 4. 静态-在成功或失败时发送的确认。  
   

@@ -1,5 +1,5 @@
 ---
-title: 用于 JDE OneWorld 的 BizTalk Adapter 的用户界面参考 |Microsoft 文档
+title: 用于 JDE OneWorld 的 BizTalk 适配器用户界面参考 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,18 +15,18 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 82354e9b54ca827fd5535f951db13b0e0c10c2a2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: db7a1e123e896c11c853f7d0eca06771eef586c9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286461"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65258582"
 ---
-# <a name="ui-reference-for-biztalk-adapter-for-jde-oneworld"></a>用于 JDE OneWorld 的 BizTalk Adapter 的用户界面参考
-此部分中的主题为博士 Edwards OneWorld Microsoft BizTalk 适配器描述的用户界面。  
+# <a name="ui-reference-for-biztalk-adapter-for-jde-oneworld"></a>用于 JDE OneWorld 的 BizTalk 适配器用户界面参考
+在本部分中的主题介绍一用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器用户界面。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [博士 Edwards OneWorld 传输的属性对话框](../core/jd-edwards-oneworld-transport-properties-dialog-box.md)  
+-   [“JD Edwards OneWorld 传输属性”对话框](../core/jd-edwards-oneworld-transport-properties-dialog-box.md)  
   
--   [博士 Edwards OneWorld 添加适配器元数据向导](../core/jd-edwards-oneworld-add-adapter-metadata-wizard.md)
+-   [JD Edwards OneWorld 添加适配器元数据向导](../core/jd-edwards-oneworld-add-adapter-metadata-wizard.md)

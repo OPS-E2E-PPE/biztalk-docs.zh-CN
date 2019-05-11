@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1eb33c091c064c8a94939a8b9f2f0ee37f75881b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 03a31833947c755e2434c563a28412427af901fc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015425"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399803"
 ---
 # <a name="the-esb-fault-processor-pipeline"></a>ESB 故障处理器管道
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]安装名为所有的发送端口。使用 ESBFaultProcessor 异常发送管道。 图 1 显示所有的属性。异常发送端口。  
@@ -28,7 +28,7 @@ ms.locfileid: "37015425"
   
  **所有的配置。异常发送端口，包括其使用的 ESBFaultProcessor 管道**  
   
- ESBFaultProcessor 管道包含以下管道组件： ESB 异常编码器、 ESB 业务活动监视 (BAM) 跟踪器和 ESB 转换。  
+ ESBFaultProcessor 管道包含以下管道组件：ESB 异常编码器、 ESB 业务活动监视 (BAM) 跟踪程序和 ESB 转换。  
   
  所有。异常将发送端口订阅到所有 ESB 错误消息和生成的 BizTalk 失败消息路由机制的所有消息。 图 2 显示的筛选器的所有属性设置。异常发送端口。  
   
@@ -49,7 +49,7 @@ ms.locfileid: "37015425"
   
 - **EscapeCDATA。** 此属性确定是否该组件将转义任何**CDATA**中找到的部分保留消息，以便可通过 InfoPath 正确显示。  
   
-- **FaultDocumentNamespace。** 此属性具有默认值为**http://schemas.microsoft.biztalk.practices.esb.com/exceptionhandling**。 可以修改此保留的消息使用自定义出站命名空间。  
+- **FaultDocumentNamespace.** 此属性具有默认值为**http://schemas.microsoft.biztalk.practices.esb.com/exceptionhandling**。 可以修改此保留的消息使用自定义出站命名空间。  
   
 - **ProcessingInstruction。** 此属性可以包含任何符合 ESB 异常报告错误架构的 InfoPath 处理指令。 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]包括符合以下处理指令的 InfoPath 模板。  
   
@@ -70,19 +70,19 @@ ms.locfileid: "37015425"
   
 - **应用程序**  
   
-- **Description**  
+- **说明**  
   
 - **FaultSeverity**  
   
 - **ServiceName**  
   
-- **错误类型**  
+- **ErrorType**  
   
 - **FaultCode**  
   
 - **MachineName**  
   
-- **消息 Id**  
+- **MessageID**  
   
 - **DateTime**  
   
@@ -100,7 +100,7 @@ ms.locfileid: "37015425"
   
 - **已启用。** 此属性确定组件是否将处理该消息并将其写入到 BAM 数据库。 如果设置为**False**，组件只是将消息发送到管道中的下一个组件。  
   
-- **FaultDocumentNamespace。** 此属性具有默认值为**http://schemas.microsoft.biztalk.practices.esb.com/exceptionhandling**。  
+- **FaultDocumentNamespace.** 此属性具有默认值为**http://schemas.microsoft.biztalk.practices.esb.com/exceptionhandling**。  
   
 ## <a name="the-fault-processor-pipeline-transform-component"></a>故障处理器管道转换组件  
  ESB 故障处理器管道使用 ESB 转换管道组件执行编码的 ESB 错误消息转换为与架构匹配的 BizTalk SQL 适配器 (ExceptionSql.xsd) 格式的 BizTalk 映射。 然后，组件将转换后的消息传递到 SQL 适配器，ESB 管理门户数据库中插入 ESB 错误消息。  

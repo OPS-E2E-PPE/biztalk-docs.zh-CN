@@ -1,5 +1,5 @@
 ---
-title: 如何使用表达式来执行消息分配 |Microsoft 文档
+title: 如何使用表达式来执行消息分配 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -21,27 +21,27 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f423e1b797cfff95bae1d9b1dd862d28210cd26
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: acadf37a102cedb9ddc902b4ca854d5e8458fa7c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256741"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333447"
 ---
 # <a name="how-to-use-expressions-to-perform-message-assignments"></a>如何使用表达式来执行消息分配
-可以在业务流程中使用表达式来以各种方式对消息进行操作。  
+表达式可用于在业务流程中处理以各种方式的消息。  
   
-## <a name="referring-to-message-fields"></a>引用消息字段  
- 也可以通过将字段名称，如下所示追加到消息名称引用到一条消息中的可分辨字段：  
+## <a name="referring-to-message-fields"></a>消息字段引用  
+ 可以按如下所示将字段名称附加到消息名称引用的一条消息中的可分辨字段：  
   
 ```  
 MyMsg.Amount  
 ```  
   
- 在此示例中，MyMsg 是消息，Amount 是已标识为 MyMsg 所基于的消息类型的可分辨字段的字段。  
+ 在此示例中，MyMsg 是消息，并量是已标识为消息类型的可分辨字段，MyMsg 所基于的字段。  
   
 ## <a name="assigning-to-messages-and-message-parts"></a>将分配给消息和消息部分  
- 你可以直接向另一条消息或到消息部分的消息部分指定一条消息：  
+ 您可以直接向另一条消息或消息部分的消息部分分配一条消息：  
   
 ```  
 MyMsg=IncomingMsg;  
@@ -50,17 +50,17 @@ MyMsg.Invoice=IncomingMsg.Invoice;
   
  在此示例中，Invoice 是基于架构的消息部分。  
   
- 如果你想要修改已构造一条消息的属性 — 例如收到一条消息 — 你必须通过将第一个分配到一个构造消息形状上，在第二个构造一条新消息和修改的属性中的新消息相同的构造消息形状。  
+ 如果你想要修改已构造的消息的属性，例如已收到的消息，必须通过将第一个分配到第二个构造消息形状中构造新消息并修改的属性中的新消息在同一构造消息形状。  
   
 > [!NOTE]
->  不能引用或分配给诸如 MyMsg.Invoice.MyField 之类的消息字段，除非已升级这些字段。只能引用或分配给整个消息、消息部分、升级的消息属性或可分辨字段。  
+>  不能引用或分配给消息字段，诸如 mymsg.invoice.myfield 之类，除非已升级这些;你只可以引用或分配给整个消息、 消息部分、 升级的消息属性或可分辨的字段。  
   
 ## <a name="adding-message-parts"></a>添加消息部分  
- 你可以附加将部件添加到现有的多部分消息使用**XLANGs.BaseTypes.XLANGMessage.AddPart**方法。 为此，请执行以下操作：  
+ 可以通过使用现有的多部分消息中添加其他部分**XLANGs.BaseTypes.XLANGMessage.AddPart**方法。 为此，请执行以下操作：  
   
--   创建 C# 项目并添加对引用**Microsoft.XLANGs.BaseTypes**。  
+-   创建C#项目，并添加对的引用**Microsoft.XLANGs.BaseTypes**。  
   
--   实现类似于以下的公共类：  
+-   实现类似于下面的公共类：  
   
     ```  
     public class MyAddPartHelper  
@@ -72,7 +72,7 @@ MyMsg.Invoice=IncomingMsg.Invoice;
     }  
     ```  
   
-     有三个重载的方法**Microsoft.XLANGs.BaseTypes.AddPart**:  
+     有三个重载的方法**microsoft.xlangs.basetypes.addpart 具有**:  
   
     ```  
     public void AddPart(object part, String partName);  
@@ -80,21 +80,21 @@ MyMsg.Invoice=IncomingMsg.Invoice;
     public void AddPart(XLANGPart part, String partName);  
     ```  
   
--   在 BizTalk 项目中，添加对公共类并调用的引用**AddPart**方法从**表达式**调整您的业务流程中，如下所示：  
+-   在 BizTalk 项目中，添加对公共类和调用的引用**AddPart**方法从**表达式**形状在业务流程中，如下所示：  
   
     ```  
     MyAddPartHelper.AddPart(myMessage, myStringObject, “StringObject1”);  
     ```  
   
 > [!NOTE]
->  不能将非序列化对象或自定义的格式化对象作为消息部分添加。 必须添加使用的其他部分之前初始化所有静态部分**AddPart**方法。 仅可在某个消息的消息构造语句中将任意部分添加到此消息中。 不支持在消息构造语句之外添加其他部分。  
+>  不能用作消息部分添加非可序列化对象或自定义格式化的对象。 添加使用的其他部分之前，必须初始化所有静态部分**AddPart**方法。 您可以添加任意部分仅在其消息内消息构造语句。 不支持添加消息之外的其他部分构造语句。  
   
 ## <a name="retrieving-message-parts"></a>检索消息部分  
  可以通过使用从现有的多部分消息中检索消息部分**RetrieveAs**方法从**Microsoft.XLANGs.BaseTypes**。 为此，请执行以下操作：  
   
--   创建 C# 项目并添加对引用**Microsoft.XLANGs.BaseTypes**。  
+-   创建C#项目，并添加对的引用**Microsoft.XLANGs.BaseTypes**。  
   
--   实现类似于以下的公共类：  
+-   实现类似于下面的公共类：  
   
     ```  
     Public class MyAddPartHelper  
@@ -113,9 +113,9 @@ MyMsg.Invoice=IncomingMsg.Invoice;
     ```  
   
     > [!NOTE]
-    >  **RetrieveAs**方法按名称、 索引支持检索消息部分。  
+    >  **RetrieveAs**方法支持检索消息部分，按名称和索引。  
   
--   在 BizTalk 项目中，添加对公共类并调用的引用**GetPart**方法从**表达式**调整您的业务流程中，如下所示：  
+-   在 BizTalk 项目中，添加对公共类和调用的引用**GetPart**方法从**表达式**形状在业务流程中，如下所示：  
   
     ```  
     sPart = (System.String) MyAddPartHelper.GetPart(msg, "StringObject1" , typeof(System.String));  
@@ -125,9 +125,9 @@ MyMsg.Invoice=IncomingMsg.Invoice;
     ```  
   
 ## <a name="message-part-context-property-access"></a>消息部分上下文属性访问  
- 消息部分具有与消息上下文分开的上下文。 设置时，可以构造消息通过架构编辑器的一部分上下文属性**属性架构基**到关联的元素的属性**PartContextPropertyBase。**  
+ 消息部分都有独立于消息上下文的上下文。 在设置时，可以构造消息部分上下文属性通过架构编辑器**Property Schema Base**到关联的元素属性的**PartContextPropertyBase。**  
   
- 访问是类似于消息属性，通过等表达式：  
+ 访问是类似于消息属性，通过之类的表达式：  
   
 ```  
 Msg.PartName(myPartContextProperty)  
@@ -140,11 +140,11 @@ Str=Msg.PartName(myPartContextProperty); //assumes myPartContextProperty is of t
 ```  
   
 ## <a name="xlangmessage-context-property-access"></a>XLANGMessage 上下文属性访问  
- 如果你想要访问消息属性从**XLANGMessage**接口从代码中，可以将消息传递的类型参数**Microsoft.XLANGs.BaseTypes.XLANGMessage**到方法从表达式形状，然后使用**Microsoft.XLANGs.BaseTypes.XLANGMessage**方法**SetPropertyValue**和**GetPropertyValue**以实现此。 为此，请执行以下操作：  
+ 如果你想要访问消息属性**XLANGMessage**接口从你的代码，可以将消息传递类型的参数**Microsoft.XLANGs.BaseTypes.XLANGMessage**方法从表达式形状，然后使用**Microsoft.XLANGs.BaseTypes.XLANGMessage**方法**SetPropertyValue**并**GetPropertyValue**实现此。 为此，请执行以下操作：  
   
--   创建 C# 项目并添加对引用**Microsoft.XLANGs.BaseTypes**和**Microsoft.BizTalk.GlobalPropertySchemas**。  
+-   创建C#项目，并添加对的引用**Microsoft.XLANGs.BaseTypes**并**Microsoft.BizTalk.GlobalPropertySchemas**。  
   
--   访问使用类似于代码的上下文属性下面：  
+-   访问使用类似于代码的上下文属性如下：  
   
     ```  
     MyMsg.GetPropertyValue(typeof(BTS.MessageID));  
@@ -152,24 +152,24 @@ Str=Msg.PartName(myPartContextProperty); //assumes myPartContextProperty is of t
     ```  
   
 > [!NOTE]
->  如果您希望获得或设置自己的自定义上下文属性，则需要在 C# 项目中添加对于属性架构项目的引用或添加对于包含属性架构的程序集的引用。  
+>  如果你想要获取或设置您自己的自定义上下文属性，则需要添加到属性架构项目的引用或添加对程序集的引用包含中的属性架构在C#项目。  
   
 ## <a name="assigning-to-message-properties"></a>将分配给消息属性  
- 你可以将值分配给消息属性：  
+ 可以将值分配到的消息属性：  
   
 ```  
 MyMessage(MySchemaNamespace.MyProperty)=True;  
 ```  
   
- 在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中，可以引用多部分消息的 MIME 属性，并对该属性进行赋值：  
+ 在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]可以引用并将值分配给多部分消息的 MIME 属性：  
   
 ```  
 Message_Out.MessagePart_1(MIME.FileName)="document.doc";  
 ```  
   
 > [!NOTE]
->  BizTalk 消息由消息上下文和消息部分组成。 首先必须初始化消息部分，然后才能获取或设置任何消息上下文属性；否则，您将在 XLANG 编译时期间收到错误。  
+>  BizTalk 消息由消息上下文和消息部分组成。 可以获取或设置任何消息上下文属性; 之前，必须先初始化消息部分否则，将在 XLANG 编译时期间收到错误。  
   
-## <a name="see-also"></a>另请参阅  
- [在业务流程中使用消息](../core/using-messages-in-orchestrations.md)   
- [构造在用户代码中的消息](../core/constructing-messages-in-user-code.md)   
+## <a name="see-also"></a>请参阅  
+ [业务流程中使用的消息](../core/using-messages-in-orchestrations.md)   
+ [在用户代码中构造消息](../core/constructing-messages-in-user-code.md)   

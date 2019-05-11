@@ -1,5 +1,5 @@
 ---
-title: 查看历史记录将备份还原 |Microsoft 文档
+title: 查看历史记录的还原备份 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,12 +15,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa5a7fbe2b0e731920880570b0555402ba162c7a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9f4685512b0dc841bd0cbbd7673ed1bf4d8b130a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288149"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65320858"
 ---
 # <a name="viewing-the-history-of-restored-backups"></a>查看已还原备份的历史记录
 若要确定最近成功还原的备份集，请查看 Master.dbo.bts_LogShippingHistory 表的内容。 此表由获取备份历史记录作业来填充，由还原数据库作业来更新。 如果备份还原成功，则 Restored 列将设为 1，RestoredDateTime 将设为当前日期和时间。  
@@ -33,5 +33,5 @@ ms.locfileid: "22288149"
 > [!NOTE]
 >  仅在重新创建数据库以及修复日志历史记录备份链中的问题时，才需要还原完整备份。 多数情况下，并不还原完整备份集，因为它们不是日志备份链的一部分。  
   
-## <a name="see-also"></a>另请参阅  
- [有关备份和还原的高级的信息](../core/advanced-information-about-backup-and-restore1.md)
+## <a name="see-also"></a>请参阅  
+ [有关备份和还原的高级信息](../core/advanced-information-about-backup-and-restore1.md)

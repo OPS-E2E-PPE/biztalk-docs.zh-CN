@@ -19,24 +19,24 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ee33b2ea9711b19e23067b164ecef9084541ba87
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7dbd8a3a7c3450fcf36d66467cd95a38e39583dd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967742"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333779"
 ---
 # <a name="how-to-unenlist-a-send-port-or-send-port-group"></a>如何取消登记发送端口或发送端口组
-本主题将介绍如何使用 BizTalk Server 管理控制台来取消登记发送端口或发送端口组。 取消登记发送端口或发送端口组可取消与该发送端口或发送端口组相关联的所有订阅。 正在运行的和已停止的发送端口或发送端口组都可以取消登记。 取消登记发送端口或发送端口组将自动停止端口或端口组。  
+本主题介绍如何使用 BizTalk Server 管理控制台来取消登记发送端口或发送端口组。 取消登记发送端口或发送端口组可消除与该发送端口关联的所有订阅，或发送端口组。 你可以取消登记正在运行和已停止的发送端口或发送端口组。 自动取消登记发送端口或发送端口组将停止它。  
   
- 例如，您可能需要取消登记发送端口或发送端口组以编辑其绑定，或者取消登记发送端口或发送端口组以将其从 BizTalk Server 环境中删除。  
+ 例如，你可能想要取消登记发送端口或发送端口组，若要编辑其绑定，或者如果你想要删除发送端口或发送端口组从 BizTalk Server 环境。  
   
- 您不能取消登记发送端口组中最近登记或运行的发送端口。 取消登记发送端口组不会改变其包含的任何发送端口的状态。  
+ 无法取消登记发送端口组，或运行中的最后一个已登记的发送端口。 取消登记发送端口组不会更改它所包含的任何发送端口的状态。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  若要执行本主题中的过程，必须是 BizTalk Server Administrators 组的成员的帐户登录。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
   
-### <a name="to-unenlist-a-send-port-or-send-port-group"></a>取消登记发送端口或发送端口组  
+### <a name="to-unenlist-a-send-port-or-send-port-group"></a>若要取消登记发送端口或发送端口组  
   
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   

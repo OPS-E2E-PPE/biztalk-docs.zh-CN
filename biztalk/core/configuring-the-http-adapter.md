@@ -1,5 +1,5 @@
 ---
-title: 配置 HTTP 适配器 |Microsoft 文档
+title: 配置 HTTP 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,21 +15,21 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f3eb3367e39a75ae2be4f7f24f7352e3e24f2dc2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 64b19a05f4478adfa400492d3af1c7cb36d98351
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232477"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355165"
 ---
 # <a name="configuring-the-http-adapter"></a>配置 HTTP 适配器
-本部分将介绍如何配置 HTTP 适配器。  
+本部分介绍如何配置 HTTP 适配器。  
   
 ## <a name="in-this-section"></a>本节内容  
   
 -   [如何配置 HTTP 接收处理程序](../core/how-to-configure-an-http-receive-handler.md)  
   
--   [如何配置 IIS，用于 HTTP 接收位置](../core/how-to-configure-iis-for-an-http-receive-location.md)  
+-   [如何为 HTTP 接收位置配置 IIS](../core/how-to-configure-iis-for-an-http-receive-location.md)  
   
 -   [如何配置 HTTP 接收位置](../core/how-to-configure-an-http-receive-location.md)  
   

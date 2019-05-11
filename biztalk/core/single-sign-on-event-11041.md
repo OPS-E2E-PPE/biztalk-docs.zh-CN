@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 11041 |Microsoft Docs
+title: 单一登录：事件 11041 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 004945467fcbc1a3fc4dd6ed5c2b8ef07b8bb9bc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e0630a35a7a6a327f4475d4a0b6d9d997c434e2a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982238"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401002"
 ---
-# <a name="single-sign-on-event-11041"></a>单一登录： 事件 11041
+# <a name="single-sign-on-event-11041"></a>单一登录：事件 11041
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                              |
@@ -28,12 +28,12 @@ ms.locfileid: "36982238"
 | 产品版本 |                                                                  [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                  |
 |    事件 ID     |                                                                                            11041                                                                                             |
 |  事件源   |                                                                                            ENTSSO                                                                                            |
-|    组件    |                                                                                             N/A                                                                                              |
+|    组件    |                                                                                             不可用                                                                                              |
 |  符号名称  |                                                                                    SSO_WARN_LOCAL_ACCOUNT                                                                                    |
-|  消息正文   | SSO 服务在本地帐户下运行。 不建议这样做，否则会限制 SSO 的功能。 有关详细信息，请参阅您的文档。%r<br /><br /> SSO 服务帐户： %1 |
+|  消息正文   | SSO 服务正在本地帐户。 这不建议也会限制 SSO 的功能。 请参阅有关 details.%r 文档<br /><br /> SSO 服务帐户： %1 |
   
 ## <a name="explanation"></a>解释  
- SSO 服务在本地帐户下运行。 不建议这样做，否则会限制 SSO 的功能。  
+ SSO 服务正在本地帐户。 这不建议也会限制 SSO 的功能。  
   
 ## <a name="user-action"></a>用户操作  
  有关详细信息，请参阅[SSO 安全建议](../core/sso-security-recommendations.md)。

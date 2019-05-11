@@ -12,20 +12,20 @@ caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed1a3591314634c41cfd598aa074e497dd19ec03
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7e78055229a522afcc0af02e5ea4ff0ea66b6189
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983718"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65313339"
 ---
-# <a name="trading-partner-management-using-biztalk-server"></a>使用 BizTalk Server 进行贸易合作伙伴管理
+# <a name="trading-partner-management-using-biztalk-server"></a>使用 BizTalk Server 贸易合作伙伴管理
 ## <a name="introduction-to-tpm"></a>TPM 简介
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 贸易合作伙伴管理 (TPM) 围绕如何管理和存储有关合作伙伴及其业务的信息重建基本概念。 增强 TPM 解决方案反映了字段中的业务实体和关系，从而使组织能够更好地管理与贸易合作伙伴的业务伙伴关系。 TPM 解决方案如何塑造 BizTalk 环境中的贸易伙伴关系的详细信息，请参阅[贸易合作伙伴管理解决方案的构建基块](../core/building-blocks-of-a-trading-partner-management-solution.md)。  
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]贸易合作伙伴管理 (TPM) 的重建基本概念围绕如何管理和存储有关合作伙伴及其业务的信息。 增强的 TPM 解决方案反映了业务实体和关系的字段中，从而使组织能够更好地管理与贸易合作伙伴的业务伙伴关系。 TPM 解决方案如何塑造 BizTalk 环境中的贸易伙伴关系的详细信息，请参阅[贸易合作伙伴管理解决方案的构建基块](../core/building-blocks-of-a-trading-partner-management-solution.md)。  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 包括对电子数据交换 (EDI) 数据交换和 AS2 数据传输的本机支持。 凭借这种支持，企业可以将基于 EDI 的业务流程管理解决方案加以扩展，充分利用 EDI 事务的自动化交换能力所提供的生产力改进。 使用 BizTalk Server 后，这些企业可使用 EDI 和 EDIINT/AS2 以更为安全和可靠的方式将合作伙伴连接到关键的供应链业务流程。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 包括对电子数据交换 (EDI) 数据交换和 AS2 数据传输的本机支持。 这种支持使得企业可以扩展其基于 EDI 的业务流程管理解决方案，利用 EDI 事务的自动化的交换提供的工作效率改进。 BizTalk Server 提供了这些企业更安全可靠地将合作伙伴连接到关键的供应链业务流程使用 EDI 和 ediint/as2 的手段。  
   
- TPM 解决方案结合了 EDI 和 AS2 支持中管理贸易合作伙伴提供功能强大且可扩展的解决方案[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 本部分中的主题和下面列出的其他主题提供了 TPM 和如何使用 TPM 管理贸易合作伙伴的高级概述。 该主题还提供了 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 如何执行 EDI 和 AS2 处理的概述。  
+ TPM 解决方案结合了 EDI 和 AS2 支持中管理贸易合作伙伴提供功能强大且可扩展的解决方案[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 此部分中的主题和下面列出，其他主题提供 TPM 和如何使用 TPM 管理贸易合作伙伴的高级概述。 该主题还提供说明如何[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]执行 EDI 和 AS2 处理。  
   
 ## <a name="in-this-section-and-more-good-info"></a>在本部分和良好的详细信息
 

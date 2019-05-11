@@ -1,5 +1,5 @@
 ---
-title: 步骤 4： 创建用于接受批处理消息接收端口 |Microsoft Docs
+title: 步骤 4：创建用于接受批处理消息接收端口 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a0d2f6f36ee34f93e8a5069aadc1958837af00c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4fca10f31c3de2d82b769cb63a732c7c144a465a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966806"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288205"
 ---
-# <a name="step-4-create-a-receive-port-for-accepting-the-batch-message"></a>步骤 4： 创建用于接受批处理消息接收端口
+# <a name="step-4-create-a-receive-port-for-accepting-the-batch-message"></a>步骤 4：创建用于接受批处理消息接收端口
 此步骤中，创建并配置要接收传入的批的端口。  
 
  创建请求-响应 （双向） 接收端口，因为该方案包括一代应用程序的接受为批处理中的单个消息的确认。 在双向模式下，MLLP 接收适配器将不接受新的传入消息，直到接收管道都生成确认 (ACK) 前面的消息。  
@@ -69,7 +69,7 @@ ms.locfileid: "36966806"
    |  **发送管道**   |      选择**BTAHL72XPipelines.BTAHL72XSendPipeline**      |
 
 
-10. 单击“确定”保存更改。  
+10. 选择**确定**以保存所做的更改。  
 
 11. 启用通过右键单击它，刚刚创建的接收位置，然后选择**启用**。  
 

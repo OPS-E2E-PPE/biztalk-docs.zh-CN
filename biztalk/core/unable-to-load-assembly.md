@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a90808c4c2b9047590ed4c1de64d98d770f945d5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 18cd87738c81f9d08fc8978c1c77438320f76d49
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002118"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292713"
 ---
 # <a name="unable-to-load-assembly"></a>无法加载程序集
 ## <a name="details"></a>详细信息  

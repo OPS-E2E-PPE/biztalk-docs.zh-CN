@@ -1,5 +1,5 @@
 ---
-title: 管理 Affiliate 应用程序 |Microsoft 文档
+title: 管理关联应用程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dc5a355faed995fb6543b1e8f5810eec14584600
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 67a23bb1e237299a7745a0f53e3cf6a12e6dd51b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262205"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330052"
 ---
 # <a name="managing-affiliate-applications"></a>管理关联应用程序
-本部分提供了有关如何创建和配置关联应用程序的信息。  
+本部分提供有关如何创建和配置关联应用程序的信息。  
   
 ## <a name="in-this-section"></a>本节内容  
   

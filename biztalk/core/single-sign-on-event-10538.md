@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10538 |Microsoft Docs
+title: 单一登录：Event 10538 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9f4b7fba63d26fde664e14470eb95b41a1580ae7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d9d1a1b8b09d9bc4725c55060aebe705f256e691
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975774"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65250381"
 ---
-# <a name="single-sign-on-event-10538"></a>单一登录： 事件 10538
+# <a name="single-sign-on-event-10538"></a>单一登录：事件 10538
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                           |
@@ -30,17 +30,17 @@ ms.locfileid: "36975774"
 |  事件源   |                                  ENTSSO                                   |
 |    组件    |                                    CO                                     |
 |  符号名称  |                           SSO_WARN_APP_DISABLED                           |
-|  消息正文   | 目前禁用了此应用程序。%r<br /><br /> 应用程序名称： %1 |
+|  消息正文   | 应用程序当前被 disabled.%r<br /><br /> 应用程序名称： %1 |
 
 ## <a name="explanation"></a>解释  
- 此警告事件表示应用程序管理员已禁用了 SSO 关联应用程序。  
+ 此警告事件表明 SSO 关联应用程序已禁用了由应用程序管理员。  
 
 ## <a name="user-action"></a>用户操作  
- 若要解决此警告问题，请执行以下一项或多项操作：  
+ 若要解决此警告，请执行一个或多个以下操作：  
 
-- 联系应用程序管理员以启用 SSO 关联应用程序。 可使用 SSO 管理工具（GUI 或命令行）完成此操作。  
+- 请联系你的应用程序管理员联系以启用 SSO 关联应用程序。 这可以使用 SSO 管理工具 （GUI 或命令行）。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [如何启用关联应用程序](../core/how-to-enable-an-affiliate-application.md)  
 

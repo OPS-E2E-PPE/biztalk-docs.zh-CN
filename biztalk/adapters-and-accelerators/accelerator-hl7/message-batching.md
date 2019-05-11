@@ -17,12 +17,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cc1157dc270fceae7b092a252f75e2c0de658eb9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f487d479036f9946dbd32ff9444d8cd714a0a1f1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004966"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65303827"
 ---
 # <a name="message-batching"></a>消息批处理
 协议标准、 计划问题或消息大小限制可能会促使对消息进行批处理的需求。 运行状况级别 7 (HL7) 批处理包含包围在 HL7 批处理标头和尾部批处理的消息。 消息分隔符分隔各条消息的批处理中。  

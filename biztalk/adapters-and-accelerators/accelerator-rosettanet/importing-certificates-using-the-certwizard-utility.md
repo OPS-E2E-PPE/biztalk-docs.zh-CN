@@ -22,21 +22,21 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 50bdce5ff094153e0aaa0e6ca69b106993722722
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2545da0d4ac9e62e500a24a49c8b3a10dd37adac
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993798"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283582"
 ---
 # <a name="importing-certificates-using-the-certwizard-utility"></a>使用 CertWizard 实用工具导入证书
-本主题介绍如何使用 CertWizard 实用程序，在 Microsoft 中可用的分步命令行实用工具导入证书[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]SDK。 本主题说明如何导入私钥、公钥和根钥， 还说明了用于配置证书的开关。  
+本主题介绍如何使用 CertWizard 实用程序，在 Microsoft 中可用的分步命令行实用工具导入证书[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]SDK。 本主题说明如何导入私钥、 公钥和根项。 它描述了用于配置该证书的开关。  
   
- CertWizard 实用工具可自动执行许多必须通过使用 Microsoft 管理控制台 (MMC) 手动执行的步骤。 CertWizard 实用工具可执行**runas**命令，以打开 MMC 主机服务帐户。 如果不添加**Useridentity**开关，它将检测并使用主机服务帐户，提示你输入密码。 该实用工具存储并配置证书。  
+ CertWizard 实用工具可自动执行许多必须通过使用 Microsoft 管理控制台 (MMC) 手动执行的步骤。 CertWizard 实用工具可执行**runas**命令，以打开 MMC 主机服务帐户。 如果不添加**Useridentity**开关，它将检测并使用主机服务帐户，提示你输入密码。 它将存储并配置该证书。  
   
- 通过使用多个 CertWizard 实用工具命令创建批处理文件，可以同时导入多个证书。  
+ 可以在同一时间使用多个 CertWizard 实用工具命令创建批处理文件导入多个证书。  
   
-### <a name="to-import-a-private-key"></a>导入私钥  
+### <a name="to-import-a-private-key"></a>若要导入私钥  
   
 1. 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
@@ -65,13 +65,13 @@ ms.locfileid: "36993798"
   
 8. 按 **Enter**。  
   
-9. 如果你没有键入命令所要求的密码，该工具将提示你键入密码。 键入密码，然后按**Enter**。  
+9. 如果您没有键入命令所要求的密码之一，工具将提示您为它。 键入密码，然后按**Enter**。  
   
-10. 如果该文件包含多个证书，但是你在命令中没有键入指纹，则该工具将显示出可用的指纹并提示你选择其中一个。 键入指纹，然后按数**Enter**。  
+10. 如果该文件包含多个证书，但未在命令中键入指纹，该工具显示可用的指纹，并提示您选择一个。 键入指纹，然后按数**Enter**。  
   
-     该工具将证书导入中指定的用户 \Personal\Certificates 存储 **/useridentity**切换。 如果未指定用户，默认的用户将是 BizTalkServerApplication 和 BizTalkServerIsolatedHost 主机的用户标识。  
+     该工具将证书导入中指定的用户 \Personal\Certificates 存储 **/useridentity**切换。 如果未指定用户，默认用户是 BizTalkServerApplication 和 BizTalkServerIsolatedHost 主机的用户标识。  
   
-### <a name="to-import-a-public-key"></a>导入公钥  
+### <a name="to-import-a-public-key"></a>若要导入公钥  
   
 1. 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
@@ -81,9 +81,9 @@ ms.locfileid: "36993798"
   
 4. 如果你想要指定.cer 或.der 文件中的证书指纹，则将追加 **/Thumbprint\<指纹\>** 命令。  
   
-    该工具将证书导入“证书（本地计算机）”\“其他人”\“证书”存储区，然后设置其配置。  
+    该工具将证书导入证书 （本地计算机） \Other People\Certificates 存储，并设置其配置。  
   
-### <a name="to-import-a-root-key"></a>导入根钥  
+### <a name="to-import-a-root-key"></a>若要导入根钥  
   
 1. 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
@@ -93,7 +93,7 @@ ms.locfileid: "36993798"
   
 4. 如果你想要指定.cer 或.der 文件中的证书指纹，则将追加 **/Thumbprint\<指纹\>** 命令。  
   
-    该工具将证书导入“证书（本地计算机）”\“受信任根证书授权机构”\“证书”存储区，然后设置其配置。  
+    该工具将证书导入证书 （本地计算机） \Trusted Root Certification Authority\Certificates 存储，并设置其配置。  
   
 ## <a name="see-also"></a>请参阅  
  [CertWizard](../../adapters-and-accelerators/accelerator-rosettanet/certwizard.md)   

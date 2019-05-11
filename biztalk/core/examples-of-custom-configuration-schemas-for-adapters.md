@@ -1,5 +1,5 @@
 ---
-title: 适配器的自定义配置架构的示例 |Microsoft 文档
+title: 示例适配器的自定义配置架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b11cb16c7b7ae9285b6ffb77c7177964d211482f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 101a7a38ef9dbebc7829281bb1bfb6d547ef2f2b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22245909"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65346079"
 ---
 # <a name="examples-of-custom-configuration-schemas-for-adapters"></a>适配器的自定义配置架构的示例
-本节提供以下示例，介绍如何为适配器自定义配置架构：  
+本部分提供有关如何自定义适配器的配置架构的以下示例：  
   
--   **示例 1**演示表示使用 baf:designer 和 baf:description 扩展适配器属性页的完整自定义 XSD 架构文件。  
+-   **示例 1**显示表示使用 baf: designer 和 baf: description 扩展一个适配器属性页的完整自定义 XSD 架构文件。  
   
--   **示例 2**还使用 baf:designer 和 baf:description 扩展来演示如何创建的自定义属性值窗口**BatchSize**只接受介于 1 和 99 之间 （含） 之间的值的属性。  
+-   **示例 2**还使用 baf: designer 和 baf: description 扩展来说明如何创建一个自定义属性值范围，对于**BatchSize**只接受 1 和 99 之间 （含） 之间的值的属性。  
   
--   **示例 3**演示如何限制为 8 个字符 baf:Password。 默认情况下，它允许 22 个字符。  
+-   **示例 3**演示如何为 8 个字符 baf: password 限制。 默认情况下，它允许 22 个字符。  
   
 -   **示例 4**演示如何实现对属性值的模式匹配约束，因为不支持 XSD 模式。  
   
 ## <a name="example-1"></a>示例 1  
- 该示例说明了一个完整的自定义 XSD 架构。 它使用 baf:designer 和 baf:description 扩展表示一个适配器属性页。  
+ 此示例演示完整的自定义 XSD 架构。 它表示使用 baf: designer 和 baf: description 扩展一个适配器属性页。  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -90,72 +90,72 @@ ms.locfileid: "22245909"
 ```  
   
 ## <a name="example-2"></a>示例 2  
- 此示例使用在 baf:designer 和 baf:description 扩展来演示如何创建的自定义属性值窗口**BatchSize**只接受介于 1 和 99 之间 （含） 之间的值的属性。  
+ 此示例使用 baf: designer 和 baf: description 扩展来说明如何创建一个自定义属性值范围，对于**BatchSize**只接受 1 和 99 之间 （含） 之间的值的属性。  
   
 ```  
-   <xs:element name="BatchSize">  
-          <xs:simpleType>  
-            <xs:annotation>  
-              <xs:appinfo>  
-                <baf:designer>  
-                  <baf:displayname>Batch Size</baf:displayname>  
-                  <baf:description>Enter the batch size (1-99)</baf:description>  
-                </baf:designer>  
-              </xs:appinfo>  
-            </xs:annotation>  
-            <xs:restriction base="xs:int">  
-              <xs:minInclusive value="1" />  
-              <xs:maxInclusive value="99" />  
-            </xs:restriction>  
-          </xs:simpleType>  
-        </xs:element>  
+   <xs:element name="BatchSize">  
+          <xs:simpleType>  
+            <xs:annotation>  
+              <xs:appinfo>  
+                <baf:designer>  
+                  <baf:displayname>Batch Size</baf:displayname>  
+                  <baf:description>Enter the batch size (1-99)</baf:description>  
+                </baf:designer>  
+              </xs:appinfo>  
+            </xs:annotation>  
+            <xs:restriction base="xs:int">  
+              <xs:minInclusive value="1" />  
+              <xs:maxInclusive value="99" />  
+            </xs:restriction>  
+          </xs:simpleType>  
+        </xs:element>  
 ```  
   
 ## <a name="example-3"></a>示例 3  
- 该示例说明如何将 baf:Password 限制为 8 个字符。 默认情况下，它允许 22 个字符。  
+ 此示例演示如何为 8 个字符 baf: password 限制。 默认情况下，它允许 22 个字符。  
   
 ```  
 <xs:element name="AdapterPassword">  
-          <xs:simpleType>  
-            <xs:annotation>  
-              <xs:appinfo>  
-                <baf:designer>  
-                  <baf:displayname>Adapter Password</baf:displayname>  
-                  <baf:description>Enter the password (up to 8 characters)</baf:description>  
-                  <baf:editor assembly="%BTSROOT%\\Developer Tools\\Microsoft.BizTalk.Adapter.Framework.dll">Microsoft.BizTalk.Adapter.Framework.ComponentModel.PasswordUITypeEditor</baf:editor>  
-                  <baf:converter assembly="%BTSROOT%\\Developer Tools\\Microsoft.BizTalk.Adapter.Framework.dll">Microsoft.BizTalk.Adapter.Framework.ComponentModel.PasswordTypeConverter</baf:converter>  
-                </baf:designer>  
-              </xs:appinfo>  
-            </xs:annotation>  
-            <xs:restriction base="xs:string">  
-              <xs:maxLength value="8" />  
-            </xs:restriction>  
-          </xs:simpleType>  
-        </xs:element>  
+          <xs:simpleType>  
+            <xs:annotation>  
+              <xs:appinfo>  
+                <baf:designer>  
+                  <baf:displayname>Adapter Password</baf:displayname>  
+                  <baf:description>Enter the password (up to 8 characters)</baf:description>  
+                  <baf:editor assembly="%BTSROOT%\\Developer Tools\\Microsoft.BizTalk.Adapter.Framework.dll">Microsoft.BizTalk.Adapter.Framework.ComponentModel.PasswordUITypeEditor</baf:editor>  
+                  <baf:converter assembly="%BTSROOT%\\Developer Tools\\Microsoft.BizTalk.Adapter.Framework.dll">Microsoft.BizTalk.Adapter.Framework.ComponentModel.PasswordTypeConverter</baf:converter>  
+                </baf:designer>  
+              </xs:appinfo>  
+            </xs:annotation>  
+            <xs:restriction base="xs:string">  
+              <xs:maxLength value="8" />  
+            </xs:restriction>  
+          </xs:simpleType>  
+        </xs:element>  
 ```  
   
 ## <a name="example-4"></a>示例 4  
- 此示例说明如何对属性值实现模式匹配约束，因为不支持 XSD 模式。  
+ 此示例演示如何实现对属性值的模式匹配约束，因为不支持 XSD 模式。  
   
- 如字段**ClientIdentifier**始终是三个字符的数值字符串。 属性值 10 无效，而 010 有效。 以下配置架构片段定义**ClientIdentifier**属性。 **ClientIdentifierConverter**类，实现您的适配器集，在实现模式匹配。 在这个例子中，自定义类型转换器将值限制为恰好 3 位的字符串（000 到 999）。 在配置架构中，请确保 baf:converter 节点正确设置了程序集和类型全名。 如果用户尝试输入无效值，在属性页中发生验证错误时，将会弹出一个异常消息。  
+ 字段如**ClientIdentifier**始终是三个字符的数字字符串。 属性值 10 无效，而 010 有效。 定义了以下配置架构片断**ClientIdentifier**属性。 **ClientIdentifierConverter**类，实现适配器程序集中，实现模式匹配。 在这种情况下，自定义类型转换器将值限制为恰好 3 位 (000 到 999) 的字符串。 在配置架构中，请确保 baf: converter 节点具有程序集和类型正确设置的完整名称。 如果用户尝试输入不是有效的值，一条异常消息时弹出的属性页中发生验证错误。  
   
- 您可以在适配器属性页配置架构中使用以下代码。  
+ 可以在适配器属性页配置架构中使用下面的代码。  
   
 ```  
-        <xs:element name="ClientIdentifier" type="xs:string">  
-          <xs:annotation>  
-            <xs:appinfo>  
-              <baf:designer>  
-                <baf:displayname>Adapter Client</baf:displayname>  
-                <baf:description>Enter the Adapter Client (3 digit string)</baf:description>  
-                <baf:converter assembly="%BTSROOT%\\Developer Tools\\Microsoft.BizTalk.TestAdapter.dll">Microsoft.BizTalk.TestAdapter.ClientIdentifierConverter</baf:converter>  
-              </baf:designer>  
-            </xs:appinfo>  
-          </xs:annotation>  
-        </xs:element>  
+        <xs:element name="ClientIdentifier" type="xs:string">  
+          <xs:annotation>  
+            <xs:appinfo>  
+              <baf:designer>  
+                <baf:displayname>Adapter Client</baf:displayname>  
+                <baf:description>Enter the Adapter Client (3 digit string)</baf:description>  
+                <baf:converter assembly="%BTSROOT%\\Developer Tools\\Microsoft.BizTalk.TestAdapter.dll">Microsoft.BizTalk.TestAdapter.ClientIdentifierConverter</baf:converter>  
+              </baf:designer>  
+            </xs:appinfo>  
+          </xs:annotation>  
+        </xs:element>  
 ```  
   
- 可在适配器程序集中放置以下代码。  
+ 您可以在适配器程序集中放置以下代码。  
   
 ```  
 using System;  
@@ -165,41 +165,41 @@ using System.Text.RegularExpressions;
   
 namespace Microsoft.BizTalk.TestAdapter  
 {  
-       /// <summary>  
-       /// Summary description for ClientIdentifierConverter.  
-       /// </summary>  
-       public class ClientIdentifierConverter : System.ComponentModel.StringConverter   
-       {  
-              private void Validate(string value)  
-              {  
-                     Regex regex = new Regex(@"^\d{3}$"); // ^=begin, \d=digit, {3}=exactly 3 occurrences, $=end  
-                     Match match = regex.Match((string)value);  
-                     if (!match.Success)  
-                     {  
-                           throw new ApplicationException("Value does not match pattern \"" + regex.ToString() + "\".");  
-                     }  
-              }  
+       /// <summary>  
+       /// Summary description for ClientIdentifierConverter.  
+       /// </summary>  
+       public class ClientIdentifierConverter : System.ComponentModel.StringConverter   
+       {  
+              private void Validate(string value)  
+              {  
+                     Regex regex = new Regex(@"^\d{3}$"); // ^=begin, \d=digit, {3}=exactly 3 occurrences, $=end  
+                     Match match = regex.Match((string)value);  
+                     if (!match.Success)  
+                     {  
+                           throw new ApplicationException("Value does not match pattern \"" + regex.ToString() + "\".");  
+                     }  
+              }  
   
-              public override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)  
-              {  
-                     if (value is string)  
-                     {  
-                           this.Validate((string)value);  
-                     }  
-                     return base.ConvertFrom(context, culture, value);  
-              }  
+              public override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)  
+              {  
+                     if (value is string)  
+                     {  
+                           this.Validate((string)value);  
+                     }  
+                     return base.ConvertFrom(context, culture, value);  
+              }  
   
-              public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destinationType)  
-              {  
-                     if (typeof(string) == destinationType && value is string)  
-                     {  
-                           this.Validate((string)value);  
-                     }  
-                     return base.ConvertTo(context, culture, value, destinationType);  
-              }  
-       }  
+              public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destinationType)  
+              {  
+                     if (typeof(string) == destinationType && value is string)  
+                     {  
+                           this.Validate((string)value);  
+                     }  
+                     return base.ConvertTo(context, culture, value, destinationType);  
+              }  
+       }  
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [适配器 Framework 配置架构扩展](../core/adapter-framework-configuration-schema-extensions.md)
+## <a name="see-also"></a>请参阅  
+ [适配器框架配置架构扩展](../core/adapter-framework-configuration-schema-extensions.md)

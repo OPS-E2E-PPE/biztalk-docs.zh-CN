@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fc2191a5d9ea891efa285d8fc5006f243319fde5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 921ab75467fa408a837d61fcd66d2dc4cd1f2a63
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008438"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65277840"
 ---
 # <a name="the-schema-does-not-contain-the-root-element"></a>架构不包含根元素
 ## <a name="details"></a>详细信息  

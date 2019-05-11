@@ -1,5 +1,5 @@
 ---
-title: 使用单元测试功能包含架构和映射 |Microsoft 文档
+title: 使用单元测试功能架构和映射 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,55 +12,55 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fbc14621a1830f15da02336b7b82e9df475cfe9b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 576974b71b5f5312fdcea792458b86ea1590d42d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288989"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65302829"
 ---
-# <a name="using-the-unit-testing-feature-with-schemas-and-maps"></a>对架构和映射使用单元测试功能
-本主题介绍如何在 HelloWord 工作流程示例中使用单元测试功能添加架构和映射。  
+# <a name="using-the-unit-testing-feature-with-schemas-and-maps"></a>使用单元测试功能架构和映射
+本主题演示如何使用单元测试功能在 HelloWorld 业务流程的示例中添加架构和映射的单元测试。  
   
 > [!NOTE]
->  用于映射的单元测试功能当前不支持多输入映射。  
+>  单元测试适用于映射的功能当前不支持多个输入的映射。  
   
 ## <a name="prerequisites"></a>先决条件  
- 您必须首先按照以下步骤构建 HelloWorld 示例。 这些步骤可在此处找到： [HelloWorld （BizTalk Server 示例）](../core/helloworld-biztalk-server-sample.md)  
+ 您必须首先按照用于生成 HelloWorld 示例的步骤。 这些步骤可在此处找到：[HelloWorld（BizTalk Server 示例）](../core/helloworld-biztalk-server-sample.md)  
   
 ### <a name="adding-a-unit-test-project-to-the-helloworld-sample"></a>将单元测试项目添加到 HelloWorld 示例  
   
 1.  在 Visual Studio 中，打开 HelloWorld.sln 解决方案文件。  
   
-2.  在解决方案资源管理器，右键单击**HelloWorld**项目，，然后单击**属性**。  
+2.  在解决方案资源管理器中右键单击**HelloWorld**项目，并单击**属性**。  
   
 3.  在项目设计器中，单击**部署**属性页选项卡和组**启用单元测试**到`True`。  
   
-4.  关闭项目属性页，保存更改。  
+4.  关闭项目属性页，保存所做的更改。  
   
-5.  在主菜单上，单击**生成**，然后单击**重新生成解决方案**。  
+5.  在主菜单中，单击**构建**，然后单击**重新生成解决方案**。  
   
-6.  在主菜单中，单击**测试**，然后单击**新测试**。  
+6.  在主菜单上，单击**测试**，然后单击**新测试**。  
   
-7.  在**添加新测试**对话框中，选择**创建新的 Visual C# 测试项目**为**将添加到测试项目**字段。 选择**单元测试向导**中**模板**列表，，然后单击**确定**。  
+7.  在中**添加新测试**对话框中，选择**创建新的视觉对象C#测试项目**有关**将添加到测试项目**字段。 选择**单元测试向导**中**模板**列表，，然后单击**确定**。  
   
-8.  在**新的测试项目**对话框框中，保留项目同名**TestProject1**单击**创建**。  
+8.  在中**新的测试项目**对话框框中，将项目名称设置为**TestProject1**然后单击**创建**。  
   
-9. 在**创建单元测试**对话框中，展开类型并选择**POSchema()** 构造函数下的**Microsoft.Samples.BizTalk.HelloWorld.POSchema**节点。 此外选择**POToInvoice()** 构造函数下的**Microsoft.Samples.BizTalk.HelloWorld.POToInvoice**节点。 下图显示了应进行的选择。 完成后会显示下面的选项，请按**确定**。  
+9. 在中**创建单元测试**对话框中，展开类型并选择**POSchema()** 下的构造函数**Microsoft.Samples.BizTalk.HelloWorld.POSchema**节点。 此外选择**POToInvoice()** 构造函数下的**Microsoft.Samples.BizTalk.HelloWorld.POToInvoice**节点。 下图显示了应做的选择。 做出如下所示选择后，按**确定**。  
   
      ![](../core/media/schemaandmapsunittestwizardselection.gif "SchemaAndMapsUnitTestWizardSelection")  
   
 ### <a name="adding-test-code-to-test-the-schemas-and-map"></a>添加测试代码以测试架构和映射  
   
-1.  添加以下引用到**TestProject1**项目从 **.NET**添加引用对话框中的选项卡：  
+1.  添加到以下引用**TestProject1**从项目 **.NET**添加引用对话框中的选项卡：  
   
     -   Microsoft.BizTalk.TestTools  
   
     -   Microsoft XLANG/s 基本类型  
   
-2.  在解决方案资源管理器中，打开 POSchemaTest.cs  
+2.  在解决方案资源管理器，打开 POSchemaTest.cs  
   
-3.  滚动到文件的底部并替换**POSchemaConstructorTest**方法替换为以下代码验证示例 PO 输入消息：  
+3.  滚动到文件的底部，并替换**POSchemaConstructorTest**方法，使用以下代码用于验证示例 PO 输入消息：  
   
     ```  
     [TestMethod()]  
@@ -76,14 +76,14 @@ ms.locfileid: "22288989"
     }  
     ```  
   
-4.  在解决方案资源管理器中，打开 POToInvoiceTest.cs 并在该文件顶部添加以下指令：  
+4.  在解决方案资源管理器中打开 POToInvoiceTest.cs 并向该文件的顶部添加以下指令：  
   
     ```  
   
     using System.IO;   
     ```  
   
-5.  滚动到文件的底部并替换**POToInvoiceConstructorTest**方法替换为以下代码的测试使用示例 PO 映射输入消息：  
+5.  滚动到文件的底部，并替换**POToInvoiceConstructorTest**方法，用下面的代码测试映射使用示例 PO 输入消息：  
   
     ```  
   
@@ -111,23 +111,23 @@ ms.locfileid: "22288989"
     }  
     ```  
   
-### <a name="building-and-running-the-unit-test"></a>生成并运行单元测试  
+### <a name="building-and-running-the-unit-test"></a>生成和运行单元测试  
   
-1.  在解决方案资源管理器，右键单击**TestProject1**，然后单击**生成**。  
+1.  在解决方案资源管理器中右键单击**TestProject1**，然后单击**生成**。  
   
-2.  在主菜单中，单击**测试**，然后在**Windows**列表中，单击**测试视图**。  
+2.  在主菜单上，单击**测试**，然后在**Windows**列表中，单击**测试视图**。  
   
-3.  在测试视图窗口中，右键单击**POSchemaInstanceValidationTest**，然后单击**运行选定内容**。 确认你看到**通过**测试结果窗口中。  
+3.  在测试视图窗口中，右键单击**POSchemaInstanceValidationTest**，然后单击**运行选定内容**。 验证是否看到**已通过**测试结果窗口中。  
   
-4.  在测试视图窗口中，右键单击**POToInvoiceMapTest**，然后单击**运行选定内容**。 确认你看到**通过**测试结果窗口中。  
+4.  在测试视图窗口中，右键单击**POToInvoiceMapTest**，然后单击**运行选定内容**。 验证是否看到**已通过**测试结果窗口中。  
   
-5.  如果任何测试失败，你可以双击“测试结果”窗口中的测试以查看导致该测试失败的添加或异常。  
+5.  如果任何测试失败，您可以双击测试结果窗口以查看添加或导致该测试失败的异常中的测试。  
   
 ## <a name="test-code-summary"></a>测试代码摘要  
- 为单元测试已启用时**HelloWorld**项目，与关联的 C# 类**POSchema.xsd**派生自**Microsoft.BizTalk.TestTools.Schema.TestableSchemaBase**类。 **POSchemaInstanceValidationTest**中的方法**TestProject1**使用**ValidateInstance**方法**POSchema**类验证 SamplePOInput.xml 针对采购订单架构。  
+ 有关启用单元测试时**HelloWorld**项目，C#类与关联**POSchema.xsd**派生自**Microsoft.BizTalk.TestTools.Schema.TestableSchemaBase**类。 **POSchemaInstanceValidationTest**中的方法**TestProject1**使用**ValidateInstance**方法**POSchema**类针对 PO 架构验证 SamplePOInput.xml。  
   
- 同样，当单元测试为启用了**HelloWorld**项目，与关联的 C# 类**POToInvoice.btm**映射派生自**Microsoft.BizTalk.TestTools.Mapper.TestableMapBase**类。 **POToInvoiceMaptest**方法使用**测试映射**方法**POToInvoice**类，以测试使用同一 SamplePOInput.xml 消息映射。 这会在 HelloWorld 目录中创建 SampleInvoiceOutput.xml。  
+ 同样，当启用单元测试时用于**HelloWorld**项目，C#类与关联**POToInvoice.btm**派生与**Microsoft.BizTalk.TestTools.Mapper.TestableMapBase**类。 **POToInvoiceMaptest**方法使用**测试映射**方法**POToInvoice**类，以测试使用相同 SamplePOInput.xml 消息映射。 这会导致在 HelloWorld 目录中创建 SampleInvoiceOutput.xml。  
   
-## <a name="see-also"></a>另请参阅  
- [使用单元测试使用管道功能](../core/using-the-unit-testing-feature-with-pipelines.md)   
+## <a name="see-also"></a>请参阅  
+ [使用单元测试功能管道](../core/using-the-unit-testing-feature-with-pipelines.md)   
  [使用单元测试 (Visual Studio)](http://go.microsoft.com/fwlink/?LinkId=128890)

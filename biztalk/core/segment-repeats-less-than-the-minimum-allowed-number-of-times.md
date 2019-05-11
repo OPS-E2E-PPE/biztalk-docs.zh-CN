@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 29df069fefbf6e47b711d37884c00a40318e96b0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 99af818f32d5ca177c60fcccb310f8b9a91f6e2a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008830"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65251046"
 ---
 # <a name="segment-repeats-less-than-the-minimum-allowed-number-of-times"></a>段重复次数低于所允许的最少次数
 ## <a name="details"></a>详细信息  

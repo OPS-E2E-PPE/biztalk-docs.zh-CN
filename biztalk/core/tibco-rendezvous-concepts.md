@@ -1,5 +1,5 @@
 ---
-title: TIBCO 会合概念 |Microsoft 文档
+title: TIBCO Rendezvous 概念 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,33 +12,33 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9969ff652791e551f8603c0ec890704bccb12c37
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: fad646b84cf904481a181b0ef9c6870b655bee3f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24013740"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65314125"
 ---
 # <a name="tibco-rendezvous-concepts"></a>TIBCO Rendezvous 概念
 
-## <a name="concepts-explained"></a>所述的概念
-下表介绍 TIBCO Rendezvous 中的某些功能和概念。  
+## <a name="concepts-explained"></a>所述概念
+下表介绍的一些功能和 TIBCO Rendezvous 中的概念。  
   
 |概念|定义|  
 |-------------|----------------|  
-|**消息**|在程序进程或线程之间传递数据。 消息包含自描述数据字段。 程序可以操作消息字段、发送消息和接收消息。|  
-|**事件**|创建事件对象以在明确的条件下有意向注册。 例如，调度侦听器事件将通知程序消息已经到达，调度计时器事件将通知程序已经过设置的时间间隔。<br /><br /> 程序定义事件回调函数来处理事件。|  
-|**使用者**|消息与逻辑名称（主题）相关联。 程序侦听某个特定主题，或在特定主题下发布消息。|  
-|**传输**|定义传递作用域、机制和协议的对象。|  
-|**批处理模式**|TIBCO Rendezvous 传输对象支持使用批处理模式发布消息。 <br />默认模式是： 将消息发送越早越好。 计时器批处理模式是： 累积消息并发送缓冲区已满或计时器时间间隔到期时。|  
-|**队列**|程序创建事件队列来组织事件。 队列保留准备进行处理的事件对象的序列。|  
-|**队列组**|通过合并队列（使用不同的优先级）来自定义事件处理。|  
-|**认证的消息传递**|确认将每个消息传递给每个已注册的收件人。 即时进程终止仍然发送消息，并使用基于文件的分类帐重新启动。<br /><br /> 认证的传递可向程序确保使每个认证的消息到达每个目标收件人（按发送顺序）。 无法实现传递时，发送和侦听程序将收到有关每个未传递消息的显式信息。<br /><br /> 程序确定每个消息的显式时间限制。<br /><br /> 在程序发送已认证的消息之后，TIBCO Rendezvous 软件会继续进行传递尝试，直到传递成功，或消息的时间限制过期为止。<br /><br /> TIBCO Rendezvous 认证的传递软件显示提示消息，以通知程序与传递相关的每个重要事件。<br /><br /> TIBCO Rendezvous 认证的传递软件将每个消息的状态都记录在分类帐中。 仅针对程序进程持续时间要求认证的程序应该使用基于进程的分类帐。 要求认证超越进程终止和程序重新启动的程序应该使用基于文件的分类帐。<br /><br /> 不允许认证的传递时，传递条件将下降至标准的 TIBCO Rendezvous 可靠传递语义。|  
-|**分布式的队列守护程序**|通过多个进程分发服务。<br /><br /> TIBCO Rendezvous 后台程序完成整个网络中 TIBCO Rendezvous 程序进程间的信息路径。 程序尝试连接到 TIBCO Rendezvous 后台程序进程。 如果本地后台程序进程尚未运行，则程序将自动启动一个进程，并与其相连接。 TIBCO Rendezvous 后台程序将排列数据传输、数据包排序、确认回执、重新传输请求以及将信息调度到正确程序进程中的详细信息。 后台程序将从 TIBCO Rendezvous 程序中隐藏所有这些详细信息。 TIBCO Rendezvous 后台程序对于依赖它的程序几乎是不可见的。 程序使用 TIBCO Rendezvous 通信调用发送和接收信息，并且 TIBCO Rendezvous 后台程序会将信息放在合适位置。<br /><br /> 后台程序执行以下操作：<br /><br /> -传输来自程序进程到网络的出站消息。<br />-提供入站消息从网络到程序进程。<br />-筛选器使用者发送消息。<br />-可保护从操作系统特性，例如低级别的套接字的程序。|  
-|**安全性**|TIBCO Rendezvous 支持基于证书或（用户，密码）的身份验证。|  
-|**虚拟线路**|让 Rendezvous 通过独占和连续的监视连接在两个终端之间进行通信。|  
-|**直接通信**|无中间 Rendezvous 后台程序进程的点对点通信。|  
+|**消息**|执行程序进程或线程之间的数据。 消息包含自描述数据字段。 程序可以操作消息字段、 将消息，发送和接收消息。|  
+|**事件**|创建用于注册重要条件感兴趣的 event 对象。 例如，调度侦听器事件通知的程序的已接收到消息;调度计时器事件通知其时间间隔已过的程序。<br /><br /> 程序定义事件回调函数来处理事件。|  
+|**Subjects**|消息相关联的逻辑名称 （主题）。 程序侦听某个特定主题，或特定主题下发布消息。|  
+|**传输**|定义传递作用域、 机制和协议的对象。|  
+|**批处理模式**|TIBCO Rendezvous 传输对象支持批处理模式发布的消息。 <br />默认模式是：尽快发送消息。 计时器批处理模式是：积累消息并发送缓冲区已满或计时器间隔过期时。|  
+|**Queue**|程序创建事件队列来组织事件。 队列保留准备就绪待处理的事件对象的序列。|  
+|**队列组**|通过合并队列 （使用不同的优先级） 来自定义事件处理。|  
+|**认证的消息传递**|确认每个消息传递给每个已注册的收件人。 尽管进程终止，并通过使用基于文件的分类帐重新启动消息传递。<br /><br /> 认证的传递可确保程序每个认证的消息到达每个目标的收件人-发送的顺序。 不可能传递时，发送和侦听程序将收到有关每个未传递消息的显式信息。<br /><br /> 程序确定明确的时间限制为每个消息。<br /><br /> 在程序发送已认证的消息之后，TIBCO Rendezvous 软件将继续多次传送尝试，直到传递成功，或超过消息的时间限制。<br /><br /> TIBCO Rendezvous 认证的传递软件显示提示消息，以通知程序与传递相关的每个重要事件。<br /><br /> TIBCO Rendezvous 认证的传递软件记录在分类帐的每个消息状态。 仅针对程序进程的持续时间要求认证的程序应使用基于进程的分类帐。 要求认证超越进程终止和程序重新启动的程序使用基于文件的分类帐。<br /><br /> 如果不允许认证的传递，传递条件将下降至标准的 TIBCO Rendezvous 可靠传递语义。|  
+|**分布式的队列守护程序**|通过多个进程分发服务。<br /><br /> TIBCO Rendezvous 后台程序完成整个网络的 TIBCO Rendezvous 程序进程之间的信息路径。 程序尝试连接到 TIBCO Rendezvous 后台程序进程。 如果本地后台程序进程尚未运行，该程序将自动启动一个，并连接到它。 TIBCO Rendezvous 后台程序排列数据传输、 数据包排序、 确认回执、 重新传输请求和调度到正确程序进程的信息的详细的信息。 守护程序将隐藏从 TIBCO Rendezvous 程序的所有这些详细信息。 TIBCO Rendezvous 后台程序几乎是不可见的程序依赖于它。 程序发送和接收信息使用 TIBCO Rendezvous 通信调用和 TIBCO Rendezvous 后台程序会将适当的位置信息。<br /><br /> 守护程序执行以下任务：<br /><br /> -将传输到网络的出站消息从程序进程。<br />-提供入站消息从网络到程序进程。<br />-筛选主题寻址消息。<br />-保护程序从操作系统特性，例如低级别套接字。|  
+|**安全性**|TIBCO Rendezvous 支持基于证书或 （用户、 密码） 身份验证。|  
+|**虚拟线路**|功能 Rendezvous 通过独占和连续监视连接的两个终端之间的通信。|  
+|**直接通信**|点到点通信，而无需中间 Rendezvous 后台程序进程。|  
   
-## <a name="see-also"></a>另请参阅  
- [用于 TIBCO 会合的 BizTalk Adapter 中的消息](../core/messages-in-biztalk-adapter-for-tibco-rendezvous.md)   
+## <a name="see-also"></a>请参阅  
+ [用于 TIBCO Rendezvous 的 BizTalk 适配器中的消息](../core/messages-in-biztalk-adapter-for-tibco-rendezvous.md)   
  [入门](../core/getting-started-with-biztalk-adapter-for-tibco-rendezvous.md)

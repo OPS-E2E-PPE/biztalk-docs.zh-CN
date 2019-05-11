@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dc5b91513833b76ba7dc3697f9eee409bf9752bf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 60e8e5ab2b5072679e9d29f1c13f58c554e41c93
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987846"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65268057"
 ---
 # <a name="extending-enumerations"></a>扩展枚举
 可以将值添加到 HL7 消息正文、 确认和消息正文架构中建立的许多字段，段和数据类型可接受的值的枚举。 这涉及到更改您正在工作的 HL7 版本的公共表值架构文件中的特定表中的值集 ( **Tablevalues_\<**<em>版本</em> **\>.xsd**架构文件)。  

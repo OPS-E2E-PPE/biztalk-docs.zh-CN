@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2aae2a6d9b4f3a35c55ffa731323547b1b54a4d5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d4c73d3ac6d96b1cfae4a8e8092669b6b0edcad0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999406"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400298"
 ---
 # <a name="how-to-restore-applications-and-enable-processing"></a>如何还原应用程序和启用处理
 在 BizTalk 组中配置的应用程序并启用主题所述的步骤操作后的应用程序处理[如何更新运行时计算机](../technical-guides/how-to-update-the-runtime-computers.md)。  

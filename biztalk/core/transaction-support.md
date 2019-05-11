@@ -16,15 +16,15 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4fc4141e248047b3add5bae6259f1039b75a40bb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 79f078800926852be5dcd24679157b000dab1c19
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969086"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279695"
 ---
 # <a name="transaction-support"></a>事务支持
-规则引擎通常不支持事务。 但是，您可以更新数据库中事务的方式使用**DataConnection**对象中的以下步骤所示：  
+规则引擎通常情况下不支持事务。 但是，您可以更新数据库中事务的方式使用**DataConnection**对象中的以下步骤所示：  
   
 1. 创建**SqlConnection**对象使用的连接字符串，并打开该连接。  
   
@@ -57,7 +57,7 @@ ms.locfileid: "36969086"
    policy.Execute(facts);    
    ```  
   
-5. 调用**更新**数据连接对象上的方法。 执行策略时，所进行的所有更新都是在内存中完成的。 必须调用**更新**要更新数据库的数据连接对象上的方法。  
+5. 调用**更新**数据连接对象上的方法。 执行策略仅在内存中完成时完成的所有更新。 必须调用**更新**要更新数据库的数据连接对象上的方法。  
   
    ```  
    dc.Update();  
@@ -82,7 +82,7 @@ ms.locfileid: "36969086"
    policy.Dispose();  
    ```  
   
-   下列代码是上述所有步骤的完整代码：  
+   下面的代码是使用的所有步骤的完整代码：  
   
 ```  
 SqlConnection connection = new SqlConnection("Initial Catalog=Northwind;Data Source=(local);Integrated Security=SSPI;");  
@@ -108,6 +108,6 @@ policy.Dispose();
   
 -   此外可以使用**OleDbConnection**并**OleDbTransaction**而不是使用对象**SqlConnection**并**SqlTransaction**以事务方式执行数据库更新的对象。  
   
--   所有通过策略进行的修改都是在内存中完成的。 必须调用**更新**方法**DataConnection**对象来更新数据库。  
+-   通过策略的所有修改都在内存中都完成。 必须调用**更新**方法**DataConnection**对象来更新数据库。  
   
 -   您可以提交或回滚该事务通过调用**提交**或**回滚**方法**DataConnection**分别对象。

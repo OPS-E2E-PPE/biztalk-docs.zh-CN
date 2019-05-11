@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6b9038e443784ae0f2839c2656f62131e9a0fdfa
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1f6d5c4555620b2ea51a176e153dc5acdcbfabd8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011374"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400180"
 ---
 # <a name="moving-non-bam-databases"></a>移动非 BAM 数据库
 可以使用此过程将主要 BizTalk Server 数据库移动到另一台服务器。 此外可以使用此相同的基本过程将 BizTalk Server 数据库从本地 SQL Server 移到远程 SQL Server 或 SQL Server 群集。 本部分介绍如何将移动[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]不相关的 BAM 数据库。  

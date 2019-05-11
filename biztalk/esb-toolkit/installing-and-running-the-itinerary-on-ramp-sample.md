@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4fcad54e40ad489b5a5d55ceabac50f6381e4e0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 02829131deaeb5ba61aa10271de1eb4e5229fa0e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994934"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65261905"
 ---
 # <a name="installing-and-running-the-itinerary-on-ramp-sample"></a>安装和运行路线接入点示例
 路线接入点示例演示了如何配置 ESB 路线属性和运行单向和请求-响应消息传送方案，如下所示：  

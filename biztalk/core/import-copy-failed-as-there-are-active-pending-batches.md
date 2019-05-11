@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a74bfdccbd12db00cd0f325aedee2e42cc76729
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 12da45bba963244391b2df0cc8d502e2262b0314
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970534"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65332187"
 ---
 # <a name="import-copy-failed-as-there-are-active-pending-batches"></a>导入复制失败，因为有活动挂起的批处理
 ## <a name="details"></a>详细信息  

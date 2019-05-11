@@ -1,5 +1,5 @@
 ---
-title: 管理 BAM 定义文件所需的用户权限 |Microsoft 文档
+title: 管理 BAM 定义文件所需的用户权限 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d5e39c86eec0cf198a5b879cbc98d29321de71dc
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: e12997684bb934e4e5f2891046afe07c749b2a70
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2018
-ms.locfileid: "22268749"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65267666"
 ---
 # <a name="required-user-rights-for-managing-bam-definition-files"></a>管理 BAM 定义文件所需的用户权限
 任何角色的用户均可以创建、管理和查看 BAM 定义文件。 管理 BAM 定义文件包括部署和删除这些文件，以及管理与定义文件相关联的活动、视图、警报和项目。  
@@ -31,7 +31,7 @@ ms.locfileid: "22268749"
 > [!NOTE]
 >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [管理 BAM 动态基础结构](../core/managing-the-bam-dynamic-infrastructure.md)   
  [BAM 定义是什么？](../core/what-is-a-bam-definition.md)   
  [如何部署 BAM 定义](../core/how-to-deploy-bam-definitions.md)

@@ -1,5 +1,5 @@
 ---
-title: 如何创建密码同步适配器 |Microsoft 文档
+title: 如何创建密码同步适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,40 +12,40 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c47381cc1ed71788673602c1db7eec5b5ac049ec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a2c3ca305f86f541bd1cb681ed97aea7768e77c7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22249365"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65339932"
 ---
 # <a name="how-to-create-a-password-sync-adapter"></a>如何创建密码同步适配器
-密码同步 (PS) 适配器是使用密码同步助手组件向企业单一登录 (SSO) 传递通知或从企业单一登录传递通知的应用程序。 请注意，虽然密码同步助手组件公开的是 COM 和 .NET Framework 接口，但适配器并不一定必须为 COM 组件。 可以将适配器设计为独立进程、COM+ 应用程序或 Windows 服务。  
+密码同步 (PS) 适配器是使用密码同步助手组件传递通知到和从企业单一登录 (SSO) 的应用程序。 请注意，尽管 PS 助手组件公开的 COM 和.NET Framework 接口，您的适配器不会不一定必须是 COM 组件。 您可以设计您的适配器作为独立进程、 COM + 应用程序，或者 Windows 服务。  
   
-### <a name="to-create-a-password-sync-adapter"></a>创建密码同步适配器  
+### <a name="to-create-a-password-sync-adapter"></a>若要创建密码同步适配器  
   
-1.  通知企业单一登录服务 (ENTSSO) 提供程序是活动使用`ISSOPSWrapper.InitializeAdapter`。  
+1.  通知企业单一登录服务 (ENTSSO) 您的提供程序是活动使用`ISSOPSWrapper.InitializeAdapter`。  
   
-     `InitializeAdapter`提供程序，通常进行调用，同一提供程序当前开启，且因此将通信从系统的密码更新通知 ENTSSO。 你还可以使用`InitializeAdapter`激活组适配器等资源。  
+     `InitializeAdapter` 通知 ENTSSO 提供程序，通常进行调用，同一提供程序当前已打开，并因此将通信从系统的密码更新。 此外可以使用`InitializeAdapter`激活其他资源，例如组适配器。  
   
-2.  通过将密码更新发送给 ENTSSO `ISSOPSWrapper.SendNotification`。  
+2.  使用向 ENTSSO 发送密码更新`ISSOPSWrapper.SendNotification`。  
   
-     您必须确定如何从非 Windows 系统接收密码更新。 接收更新后，你可以将传递到 ENTSSO 使用信息`SendNotification`。 请注意，`SendNotification`并不局限于发送密码更新： 的体系结构`SendNotification`还可用于发送其他类型的通知。  
+     您必须确定如何从非 Windows 系统接收密码更新。 接收到更新后，可以将传递到 entsso 之间使用的信息`SendNotification`。 请注意，`SendNotification`并不仅限于发送密码更新： 的体系结构`SendNotification`还可以发送其他类型的通知。  
   
-3.  通过使用从 ENTSSO 申请密码更新`ISSOPSWrapper.ReceiveNotification`。  
+3.  通过使用从 ENTSSO 请求密码更新`ISSOPSWrapper.ReceiveNotification`。  
   
-     由于密码同步适配器采用的是请求技术，因此 ENTSSO 永远也不会调用您的适配器。 相反，你的适配器定期调用`ReceiveNotification`若要查看是否有任何密码更新可用。 你可以选择在上设置等待标志`ReceiveNotification`。 设置 WAIT 会阻止该线程，直至有通知可用。  
+     由于密码同步适配器的是请求技术，因此 ENTSSO 永远不会调用您的适配器。 相反，适配器定期调用`ReceiveNotification`以查看是否有可用的任何密码更新。 您可以选择对设置 WAIT 标志`ReceiveNotification`。 设置 WAIT 会阻止线程，直至有通知可用。  
   
-     请注意，ENTSSO 使用纯文本格式向适配器传递密码更改。 适配器负责保护密码信息不致意外泄漏。 此外，适配器还要保护自身免遭其他无效源的欺骗或攻击，其中包括密码同步助手组件的欺骗。  
+     请注意 ENTSSO 到适配器以纯文本形式传递密码更改。 它负责保护密码信息不致意外泄漏的适配器。 它也是保护自身免遭欺骗的适配器的责任，或从其他无效源，包括密码同步助手组件的欺骗攻击。  
   
-     通过 `pReceiveNotification` 参数从 ENTSSO 接收到密码更新之后，您必须将此信息传递到非 Windows 系统。 与`SendNotification`，必须确定与远程服务器通信的最佳方式。  
+     从通过 ENTSSO 接收到密码更新之后`pReceiveNotification`参数，必须将此信息传递到非 Windows 系统。 与使用`SendNotification`，必须确定与远程服务器通信的最佳方式。  
   
-4.  关闭你适配器使用`ISSOPSWrapper.ShutdownAdapter`。  
+4.  关闭适配器使用`ISSOPSWrapper.ShutdownAdapter`。  
   
-     `ShutdownApplication`应为最后一个方法调用由适配器，并指示该适配器将不再发送或接收到 ENTSSO 的密码更新。  
+     `ShutdownApplication` 应为最后一个方法由适配器调用，并指示该适配器将无法再发送或接收到 ENTSSO 密码更新。  
   
-     请注意，在关闭适配器后，ENTSSO 仍会缓存用户所做的所有密码更改，直到达到缓冲区大小限制。  
+     请注意 ENTSSO 缓冲用户使适配器关闭的情况下，最多的缓冲区大小限制为任何密码更改。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用企业单一登录进行编程](../core/programming-with-enterprise-single-sign-on.md)   
  [同步密码](../core/synchronizing-passwords.md)

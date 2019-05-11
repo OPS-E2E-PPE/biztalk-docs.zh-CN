@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10529 |Microsoft Docs
+title: 单一登录：Event 10529 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 74bc28f01db257c06223e1b1f79268ca63e3ca49
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 204e5d2ff2093b5980176d1696fd9bd45b892023
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976942"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65262425"
 ---
-# <a name="single-sign-on-event-10529"></a>单一登录： 事件 10529
+# <a name="single-sign-on-event-10529"></a>单一登录：事件 10529
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                   |
@@ -30,16 +30,16 @@ ms.locfileid: "36976942"
 |  事件源   |                                                      ENTSSO                                                       |
 |    组件    |                                                        N\A                                                        |
 |  符号名称  |                                            SSO_INFO_GOT_CURRENT_SECRET                                            |
-|  消息正文   | 从主密钥服务器获取最新密钥。%r<br /><br /> 密钥服务器名称: %1 %r<br /><br /> MSID: %2 |
+|  消息正文   | 已从主 server.%r 获得当前密钥<br /><br /> 密钥服务器名称: %1 %r<br /><br /> MSID: %2 |
 
 ## <a name="explanation"></a>解释  
- 此信息事件表明 SSO 具有主密钥服务器请求的主密钥。  
+ 此信息事件表明 SSO 已从主密钥服务器请求的主密钥。  
 
 ## <a name="user-action"></a>用户操作  
 
-- 不需要用户进行任何操作。  
+- 不不需要任何用户操作。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [如何生成主密钥](../core/how-to-generate-the-master-secret.md)  
 

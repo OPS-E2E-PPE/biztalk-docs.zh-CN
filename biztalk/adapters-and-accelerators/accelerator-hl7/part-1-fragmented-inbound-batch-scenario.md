@@ -1,5 +1,5 @@
 ---
-title: 第 1 部分： 零碎的入站的批处理方案 |Microsoft Docs
+title: 第 1 部分：零碎的入站的批处理方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c5cf6f38daca7b1773798e4bc8ed2e40ad143bd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0d334c9cee7da4cca1a28268f0d693b5a7813839
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970502"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65290035"
 ---
-# <a name="part-1-fragmented-inbound-batch-scenario"></a>第 1 部分： 零碎的入站的批处理方案
+# <a name="part-1-fragmented-inbound-batch-scenario"></a>第 1 部分：零碎的入站的批处理方案
 在本教程的此部分中，接收 HL7 编码的批、 为单个消息片段和各个消息发送到目标。 下图显示了此过程的流。  
   
  ![](../../adapters-and-accelerators/accelerator-hl7/media/hl7-fragmented-inbound-batching-scenario.gif "hl7_fragmented_inbound_batching_scenario")  

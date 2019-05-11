@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 46e961934b1595217b94aab82b2adae9fd3e456f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5f7bb3bbad38918679c56383720aea27001654d5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985478"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289513"
 ---
 # <a name="segments-common-schemas"></a>段通用架构
 **Segments_\<*版本*\>.xsd**文件包括 datatypes_\<*版本*\>.xsd 和包含HL7 版本与相关的所有段的定义。 每个消息架构使用 segments_\<*版本*\>.xsd。 HL7 消息定义下每个子文件夹，并且包括 segments_\<*版本*\>.xsd。 SegmentDataElements 和 DataElements 访问数据库表生成 segments_\<*版本*\>.xsd 文件，其中包含指向所有数据类型的 Fields.xsd 架构文件的指针。 架构文件的格式为：  

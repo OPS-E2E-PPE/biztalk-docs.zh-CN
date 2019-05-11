@@ -1,5 +1,5 @@
 ---
-title: 创建 WMI 审核和日志记录事件接收器 |Microsoft 文档
+title: 用于审核和日志记录事件创建 WMI 接收器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,15 +18,15 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2d9592bb8fc140fc088906d9d7e565c5cbc40bb3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 375a16a338c991f80e6a1ffb079ea15fedc0389c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22204549"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65255676"
 ---
-# <a name="creating-a-wmi-sink-for-auditing-and-logging-events"></a>为审核和记录的事件创建 WMI 接收器
-你可以使用下面的示例代码创建[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]Management Instrumentation (WMI) 接收器监视审核和记录的事件：  
+# <a name="creating-a-wmi-sink-for-auditing-and-logging-events"></a>用于审核和日志记录事件创建 WMI 接收器
+可以使用下面的示例代码创建[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]Management Instrumentation (WMI) 接收器以监视审核和日志记录事件：  
   
  `//Create the WMI query and Event watcher and subscribe to events`  
   
@@ -36,5 +36,5 @@ ms.locfileid: "22204549"
   
  `//Do what you want with the event`  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [编程指南](../../adapters-and-accelerators/accelerator-hl7/programming-guide1.md)

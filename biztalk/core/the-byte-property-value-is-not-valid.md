@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1ef443c74c47883d04bcad2c1da5bb9423f7c01d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9e69924f220c159092765333a153bf903ac002dc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977848"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65298958"
 ---
-# <a name="the-byte-property-value-is-not-valid"></a>byte 属性值无效
+# <a name="the-byte-property-value-is-not-valid"></a>Byte 属性值无效
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                        |
@@ -30,7 +30,7 @@ ms.locfileid: "36977848"
 |  事件源   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
 |    组件    |                                    批处理引擎                                     |
 |  符号名称  |                                InvalidBytePropertyValue                                |
-|  消息正文   |                          byte 属性值无效                          |
+|  消息正文   |                          Byte 属性值无效                          |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明，输入批处理筛选器对话框中的某一行中的属性的值无效，因为该属性需要一个字节值，但输入的值不是一个字节。  

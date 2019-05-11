@@ -1,5 +1,5 @@
 ---
-title: 教程 1： 企业应用程序集成 |Microsoft Docs
+title: 教程 1:企业应用程序集成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,58 +16,58 @@ caps.latest.revision: 37
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 04e0c7e6e654290aaf5bebf786f3294e988364f8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6abc6e3b56c0145a10392a8523700115b79c66cd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968526"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279654"
 ---
-# <a name="tutorial-1-enterprise-application-integration"></a>教程 1：企业应用程序集成
-Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 为应用程序集成和业务流程管理 (BPM) 提供了开发和运行时环境。 本教程为使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 设置和部署企业应用程序集成 (EAI) 解决方案提供了一个端到端的练习。  
+# <a name="tutorial-1-enterprise-application-integration"></a>教程 1:企业应用程序集成
+Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]为应用程序集成和业务流程管理 (BPM) 提供了开发和运行时环境。 本教程提供了一个端到端练习设置和部署企业应用程序集成 (EAI) 解决方案使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
   
 ##  <a name="BKMK_Tut1_scenario"></a> 业务方案  
- Contoso 是销售计算机硬件和软件的在线商店。  该公司最近购买的企业资源规划 (ERP) 系统来管理其资源。  在本教程中，将开发企业应用程序集成 (EAI) 解决方案使用 BizTalk Server 来集成到 ERP 系统中，现有仓库系统，并自动执行仓库请求过程。  
+ Contoso 是销售计算机硬件和软件的一个联机商店。  该公司最近购买的企业资源规划 (ERP) 系统来管理其资源。  在本教程中，将开发企业应用程序集成 (EAI) 解决方案使用 BizTalk Server 来集成到 ERP 系统中，现有仓库系统，并自动执行仓库请求过程。  
   
  有有关此集成解决方案的几个问题：  
   
-- **消息传输**。  仓库系统和 ERP 系统可以驻留在两个不同的平台，并使用不同传输协议来发送和接收消息。 此解决方案必须能够接收使用发送系统支持的协议的消息和转发的消息使用接收系统支持的协议。  BizTalk Server 使用*适配器*消息传输。  有许多都附带有 BizTalk Server 安装和 BizTalk 适配器包的本地适配器。  如需其他适配器，您可以从供应商处购买，也可以使用 BizTalk Server 提供的适配器框架自己开发。 有关适配器的详细信息，请参阅[ http://go.microsoft.com/fwlink/?LinkId=191131 ](http://go.microsoft.com/fwlink/?LinkId=191131)。  
+- **消息传输**。  仓库系统和 ERP 系统可以驻留在两个不同的平台，并使用不同传输协议来发送和接收消息。 此解决方案必须能够接收使用发送系统支持的协议的消息和转发的消息使用接收系统支持的协议。  BizTalk Server 使用*适配器*消息传输。  有许多都附带有 BizTalk Server 安装和 BizTalk 适配器包的本地适配器。  如需其他适配器，可以从供应商购买或开发自己的使用适配器框架提供的 BizTalk Server。 有关适配器的详细信息，请参阅[ http://go.microsoft.com/fwlink/?LinkId=191131 ](http://go.microsoft.com/fwlink/?LinkId=191131)。  
   
-- **消息转换**。 存在多种消息类型，如可扩展标记语言 (XML)、电子数据交换 (EDI)、分界文件等。 BizTalk Server 以 XML 为中心。 在大多数情况下，您会先将入站消息转换为 XML。  此过程称为*分析*。  在出站方，您可以将消息从 XML 转换为其他类型。  此过程称为*序列化*。  
+- **消息转换**。 有多种消息类型，例如，扩展标记语言 (XML)、 电子数据交换 (EDI)、 分界的文件等。 BizTalk Server 是以 XML 为中心。 在大多数情况下，可以将入站的消息转换 XML 第一次。  此过程称为*分析*。  在出站端，可以将消息从 XML 转换为其他类型。  此过程称为*序列化*。  
   
-- **业务流程管理**。 大多数 EAI 方案都不是只将消息从一个系统转发到另一个系统。  它们通常涉及多个系统和复杂的工作流。  在这种情况下，仓库将发送一条请求库存补货的消息；您的解决方案将接收该消息，然后检查请求的总计。  如果总计超出特定数量，则解决方案将自动拒绝该请求并发送一条拒绝消息；否则解决方案会将请求转发到 ERP 系统。  
+- **业务流程管理**。 大多数 EAI 方案将多个只需转发的消息从一个系统到另一个系统。  它们通常涉及多个系统和复杂的工作流。  在此方案中，仓库发送一条请求库存补货;你的解决方案接收的消息，然后检查请求的总计。  如果总计超出特定数量，解决方案会自动拒绝该请求并发送拒绝消息;否则该解决方案将请求转发到 ERP 系统。  
   
-   下图对此业务流程进行了说明：  
+   下图说明了业务流程：  
   
    ![教程 1 消息流](../core/media/tut1-msg-flow.gif "tut1_msg_flow")  
   
-  在本教程中，您将使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 开发工具来设计和部署业务流程。  
+  在本教程中，您使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]开发工具来设计和部署业务流程。  
   
 ## <a name="preparation"></a>准备  
- 在创建 BizTalk Server 集成解决方案之前，您必须收集一些基本信息：  
+ 还有一些必须在创建 BizTalk Server 的集成解决方案之前收集的基本信息：  
   
--   BizTalk Server 解决方案需要集成多少应用程序/系统？  在本方案中有两个系统：ERP 系统和仓库系统。  
+-   多少应用程序/系统的 BizTalk Server 解决方案需要集成？  在此方案中，有两个系统：ERP 和仓库。  
   
--   每个应用程序支持哪种传输协议？  为简化此解决方案，我们假设两个应用程序都使用文件。  仓库系统将请求作为文件放入文件夹。 BizTalk Server 解决方案从该文件夹提取此文件，再处理此文件，然后将请求放入 ERP 系统监视的另一个文件夹。  
+-   哪种传输协议支持的每个应用程序？  若要简化此解决方案，我们假设两个应用程序使用的文件。  仓库系统删除请求作为文件文件夹中的文件。 BizTalk Server 解决方案从文件夹提取该文件，处理该文件，然后将请求放入 ERP 系统监视的另一个文件夹。  
   
--   应用程序使用什么消息类型？  为简化此解决方案，我们假设两个应用程序都使用 XML 类型。 BizTalk 架构是一些定义 BizTalk 消息中 XML 数据结构的文档，其目的是创建用于处理和验证 XML 消息的模板。 BizTalk Server 附带用于创建 BizTalk 架构的 BizTalk 编辑器。  
+-   使用什么消息类型的应用程序？  若要简化此解决方案，我们假设两个应用程序使用的 XML 类型。 BizTalk 架构是 BizTalk 消息中定义的 XML 数据结构的文档和它们的用途是创建用于处理和验证 XML 消息的模板。 BizTalk Server 附带用于创建 BizTalk 架构的 BizTalk 编辑器。  
   
--   业务流程是什么？  在本文的前面部分已经介绍了该流程。  
+-   业务流程是什么？  此标题在前面已经介绍了该过程。  
   
 ## <a name="biztalk-server-architecture"></a>BizTalk Server 体系结构  
- 这对于理解 BizTalk Server 如何运行解决方案十分有用。  下图显示了通过 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的数据流。  
+ 它是有助于您了解 BizTalk Server 如何运行该解决方案。  下图显示了通过的数据流[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
   
  ![教程 1 方案数据流](../core/media/tut1-dataflow.gif "Tut1_Dataflow")  
   
--   （仓库系统将请求放入文件夹。）  
+-   （仓库系统将请求放到文件文件夹。）  
   
--   BizTalk Server 接收位置通过文件适配器和 XML 传输管道进行配置。  文件适配器定期从文件夹轮询文件。 收到消息后，BizTalk Server 消息引擎将通过管道推送该消息。  由于请求消息是 XML 格式，因此在这种情况下使用 XML 传输管道。  XML 传输管道将确保该消息是格式正确的 XML 文件。  然后，该消息将保存到 MessageBox 数据库。  
+-   BizTalk Server 接收位置使用文件适配器和 XML 传输管道配置。  文件适配器轮询定期从该文件夹的文件。 一旦收到一条消息，BizTalk Server 消息引擎将推送消息传递管道。  由于请求消息是 XML 格式，因此在这种情况下使用 XML 传输管道。  XML 传输管道可确保消息是格式正确的 XML 文件。  然后该消息将保存到 MessageBox 数据库。  
   
--   业务流程引擎发现某条消息已准备好供业务流程处理时，它将实例化该业务流程的实例。  业务流程引擎会将请求消息或请求拒绝消息保存到 MessageBox 数据库，具体取决于消息的总计。  
+-   当业务流程引擎发现一条消息已准备好处理的业务流程时，它实例化业务流程的实例。  具体取决于消息的总计，业务流程引擎将请求消息或请求拒绝消息保存到 MessageBox 数据库。  
   
--   同样，根据是请求消息还是请求拒绝消息，消息引擎将使用任一发送端口处理该消息。  消息引擎先通过 XML 传输管道推送该消息，然后根据发送端口配置，使用文件适配器将该消息发送到不同的文件夹。  
+-   同样，具体取决于请求消息或请求拒绝消息，消息引擎使用的发送端口来处理该消息。  消息引擎先推送消息传递 XML 传输管道，，然后使用文件适配器将消息发送到发送端口配置基于不同的文件文件夹。  
   
--   （仓库系统和 ERP 系统都会监视指定的文件夹以获取消息。）  
+-   （仓库系统和 ERP 系统监视指定的文件夹以获取消息。）  
   
 ## <a name="in-this-section"></a>本节内容  
   

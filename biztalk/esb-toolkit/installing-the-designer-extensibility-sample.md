@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7068f86f3e6be2cd71741a6afe5f2438ac3800b4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ad1a88c7f497d236a8e11456cfbc48de45494e1b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985710"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65295121"
 ---
 # <a name="installing-the-designer-extensibility-sample"></a>安装设计器扩展性示例
 本部分介绍安装设计器扩展性示例的过程。 必须安装中的示例[安装和运行路线接入点示例](../esb-toolkit/installing-and-running-the-itinerary-on-ramp-sample.md)并[安装和运行动态解析示例](../esb-toolkit/installing-and-running-the-dynamic-resolution-sample.md)安装和使用此示例之前。  

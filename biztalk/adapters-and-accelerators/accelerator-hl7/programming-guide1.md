@@ -15,12 +15,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f0a36c2714c8da07f054553466f4e9105c4f6517
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8622f8bd3c20cc9b3c983a609a4d3aea310db4e2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980686"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289979"
 ---
 # <a name="programming-guide"></a>编程指南
 Microsoft[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]编程指南面向开发人员编写的代码具有 BTAHL7 介绍的概念和过程。 使用本指南中与 Microsoft[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]文档。  
@@ -44,4 +44,4 @@ Microsoft[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversio
   
 -   [为审核与记录事件创建 WMI 接收器](../../adapters-and-accelerators/accelerator-hl7/creating-a-wmi-sink-for-auditing-and-logging-events.md)  
   
--   [Additional Resources](../../adapters-and-accelerators/accelerator-hl7/additional-resources.md)
+-   [其他资源](../../adapters-and-accelerators/accelerator-hl7/additional-resources.md)

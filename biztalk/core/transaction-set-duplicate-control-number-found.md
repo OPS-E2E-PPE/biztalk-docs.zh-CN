@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d6b9b55dc5cd61bc4c8c806f2dc42259cadf2f69
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4f273d7e66f4ebe942044e30adccbc7994720a99
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977703"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279719"
 ---
 # <a name="transaction-set-duplicate-control-number-found"></a>发现事务集重复控制编号
 ## <a name="details"></a>详细信息  
@@ -33,19 +33,19 @@ ms.locfileid: "36977703"
 |  消息正文   |                     发现事务集重复控制编号                     |
   
 ## <a name="explanation"></a>解释  
- 此错误/警告/信息事件表明接收管道无法处理传入的 X12 交换，因为该交换的组中某个事务集的事务集控制编号与该组中的另一个事务集的控制编号相同。  
+ 此错误/警告/信息事件表明接收管道无法处理传入的 X12 交换，因为事务集控制编号的组中的事务集的交换已与另一个的控制编号相同事务集在该组中。  
   
 ## <a name="user-action"></a>用户操作  
  若要解决此错误，请执行以下操作之一：  
   
--   请更改传入交换中事务集的事务集控制编号，以便组中的事务集没有重复的控制编码。  
+-   组中的更改的事务集数量的事务设置中传入的交换，因此事务没有重复的控制编号的控件集。  
   
--   按照如下方式禁用检查重复的事务集控制编号：  
+-   禁用对重复的事务集控制编号的检查，如下所示：  
   
     1.  打开 BizTalk Server 管理控制台。  
   
-    2.  打开发送交换的参与方的“EDI 属性”对话框。  
+    2.  打开发送交换的参与方 EDI 属性对话框。  
   
-    3.  对于 X12 交换，请清除“EDI 属性”对话框的“X12 交换处理属性”页中的“检查组中重复的 ST2（事务集控制编号）”。  
+    3.  对于 X12 交换，清除"检查重复的 st2 （事务集控制编号） 组中"x12 交换处理属性页 EDI 属性对话框。  
   
-    4.  对于 EDIFACT 交换，请清除“EDI 属性”对话框的“EDIFACT 交换处理属性”页中的“检查组中重复的 UNH1（事务集参考编号）”。
+    4.  对于 EDIFACT 交换，清除"检查重复的 unh1 （事务集参考编号） 组中"EDIFACT 交换处理属性页的 EDI 属性对话框中的属性。

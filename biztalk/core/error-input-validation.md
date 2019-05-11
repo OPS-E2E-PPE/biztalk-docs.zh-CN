@@ -1,5 +1,5 @@
 ---
-title: 错误-输入验证 |Microsoft 文档
+title: 错误-输入验证 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b7f6392c6f5aad85442659beb9f6f1e3ef989299
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 500bf24833391290f816ba9b68532c35f931eff9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240421"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348023"
 ---
 # <a name="error---input-validation"></a>错误-输入验证
 **错误代码**  
@@ -28,8 +28,8 @@ ms.locfileid: "22240421"
   
  **说明**  
   
- 由于错误消息所指示的原因，无法根据源架构来验证为测试映射操作指定的输入实例消息文件。  
+ 所指示的原因，无法验证根据源架构为测试映射操作指定的输入的实例消息文件。  
   
  **用户执行任何操作**  
   
- 根据所指示的原因，适当修改输入实例消息文件或源架构，或者对二者同时进行修改。 它可能有助于 BizTalk 编辑器中打开源架构以及使用**验证架构**和**生成实例**右键单击解决方案资源管理器中的架构时可用命令。
+ 输入的实例消息文件或源架构中，或者对二者同时，根据所指示的原因，进行合适的更正。 可能会有帮助，BizTalk 编辑器中打开源架构和使用**验证架构**并**生成实例**右键单击解决方案资源管理器中的架构时可用的命令。

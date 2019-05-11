@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ba35674614a755340a656c4389652276d83ae584
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 69d62640613e16004cbf67bb11cb14c9cf3e4b95
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969430"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65303657"
 ---
 # <a name="message-processing"></a>消息处理
 本部分提供有关 Microsoft BizTalk Accelerator for HL7 的信息 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 引擎运行时组件。 消息处理过程将包括 HL7 消息的处理 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2 X 平面文件) 的 XML 消息进行处理 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2XML)，batch 处理和确认处理。  

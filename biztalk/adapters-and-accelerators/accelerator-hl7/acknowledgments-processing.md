@@ -14,12 +14,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cb8bf0620c3e336317382cbeb299cf2d6d17faa2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 198f2abf046eec28d75ef6486eaa89ec5f4df004
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969462"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65247563"
 ---
 # <a name="acknowledgments-processing"></a>确认处理
 HL7 规范支持两种格式中的消息交换：  

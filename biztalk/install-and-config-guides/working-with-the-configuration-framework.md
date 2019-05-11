@@ -1,5 +1,5 @@
 ---
-title: 使用配置框架 |Microsoft 文档
+title: 使用配置框架 |Microsoft Docs
 ms.custom: ''
 ms.date: 2015-10-28
 ms.prod: biztalk-server
@@ -12,33 +12,33 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dc5360cf5e76bfc6218f0fe54444b1651afdefae
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 982712c778fe087d98178439203964e15beca374
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25976619"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401423"
 ---
 # <a name="working-with-the-configuration-framework"></a>使用配置框架
-通过配置框架，可在安装时轻松快速地更改 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 配置。 通过与 Microsoft Windows Installer (MSI) 结合使用，配置框架可以读取并报告计算机的状态和需要操作的配置任务。  
+配置框架使你能够快速轻松地更改 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装时配置。 使用 Microsoft Windows Installer (MSI) 结合使用，配置框架读取并报告的计算机和请求操作的配置任务的状态。  
   
- 在使用配置向导首次配置 BizTalk Server 时，配置框架将生成一个 XML 文件（配置快照），您随后可对该文件进行修改（即更改用户名、密码等）并将其导出到其他计算机。 您可在“配置摘要”页（配置向导的一部分）上保存配置快照。 您还可使用此快照将配置作为脚本安装的一部分进行复制。 此文件位于\< *BizTalk 安装路径*\>\ConfigMain.xml。  
+ 当首次使用配置向导配置 BizTalk Server 时，配置框架将生成一个 XML 文件 （配置快照），然后，可以修改 （即，更改用户名、 密码等） 并将导出到其他计算机。 在配置摘要页上，配置向导的一部分保存配置快照。 此快照可用于复制你的配置作为脚本化安装的一部分。 此文件位于\< *BizTalk 安装路径*\>\ConfigMain.xml。  
   
 > [!NOTE]
->  该 XML 文件中不存储密码。 使用此文件之前，必须输入密码。  
+>  密码未存储在 XML 文件。 使用此文件之前，必须输入密码。  
   
 ## <a name="configuration-framework-command-line-parameters"></a>配置框架命令行参数  
- 下表说明了可以在配置框架中通过命令行运行的参数：  
+ 下表介绍可以在配置框架中通过命令行运行的参数。  
   
-|命令行参数|说明|  
+|命令行参数|Description|  
 |----------------------------|-----------------|  
-|**/U**|取消对所有功能的配置。 **注意：** 取消对 BizTalk Server 功能的配置后，可删除 BizTalk Server 数据库。 请不要在运行此命令之前删除 BizTalk Server 数据库。 **注意：** 如果要在取消对 BizTalk Server 功能的配置后，删除 BizTalk Server 数据库，建议使用  **net stop winmgmt** 命令停止可能仍在运行的 Windows 管理规范 (WMI) 服务。|  
-|**/S**|无提示配置。<br /><br /> 您还必须提供包含要安装和配置的功能的配置 XML 的完整路径。 如果没有传递 **/s**，则该工具将以用户界面 (UI) 模式运行。|  
-|**/L**|-   设置日志文件的完整路径（可选）。|  
-|**/H**|-   显示有效的命令行参数。|  
+|**/U**|0}run 所有功能。 **注意：** 取消对 BizTalk Server 功能后，您可以删除 BizTalk Server 数据库。 不要删除在运行此命令之前的 BizTalk Server 数据库。 **注意：** 如果你想要删除 BizTalk Server 数据库后取消对 BizTalk Server 功能，我们建议你使用**net stop winmgmt**命令来停止可能仍是 Windows Management Instrumentation (WMI) 服务正在运行。|  
+|**/S**|无提示配置。<br /><br /> 您还必须将的完整路径传递给配置 XML，其中包含要安装和配置的功能。 如果 **/s**未传递，在用户界面 (UI) 模式下运行工具。|  
+|**/L**|-设置的完整路径的日志文件 （可选）。|  
+|**/H**|-显示了有效的命令行参数。|  
   
 ## <a name="sample-configuration-xml-file"></a>示例配置 XML 文件  
- 下面是一个示例配置 XML 文件，其中安装了所有功能。 若要创建自己的配置文件，请使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上的自定义配置选项，确认所有组件已成功完成，然后在“配置”窗口中，选择“导出配置”。 然后可使用导出的配置文件来配置其他的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
+ 以下是安装所有功能的示例配置 XML 文件。 若要创建您自己的配置文件，请使用自定义配置选项上[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，已成功，确认完成的所有组件，然后选择**导出配置**配置窗口中。 然后可以使用导出的配置文件来配置其他[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]s。  
   
 ```  
 <Configuration>  
@@ -309,5 +309,5 @@ ms.locfileid: "25976619"
 </Configuration>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [配置 BizTalk Server](../install-and-config-guides/configure-biztalk-server.md)   

@@ -12,25 +12,25 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c4187d666cb0f93229a0cf4117ca24b92d479c9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f8996bac83803917c3fb3fd5b209d5cbfa73ff75
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995990"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292941"
 ---
 # <a name="troubleshooting-biztalk-server-permissions"></a>故障排除的 BizTalk Server 权限
-BizTalk Server 中存在的权限问题通常属于以下类别之一：  
+在 BizTalk Server 中的权限问题通常属于以下类别之一：  
   
 - SQL Server 权限  
   
-- 多服务器 BizTalk Server 安装中的 Active Directory 权限  
+- 在 BizTalk Server 的多服务器安装的 active Directory 权限  
   
-- Web Services 权限  
+- Web services 权限  
   
 - IIS 权限  
   
-  本主题提供了避免出现权限问题的一些通用准则，并介绍了针对特定方案的疑难解答步骤。  
+  本主题提供了避免出现权限问题和故障排除步骤适用于特定方案的一些通用准则。  
   
 ## <a name="in-this-section"></a>本节内容  
   

@@ -14,33 +14,33 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cd2474aebf77baf39a623a246cf575ba9af7a113
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8c78ab2ef84572084ba74d253a48e15d8a70ca84
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970174"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65335813"
 ---
 # <a name="how-to-open-a-saved-query"></a>如何打开保存的查询
-您可以直接从保存查询的文件夹中或 BizTalk Server 管理控制台内打开保存的查询。 当直接从文件夹中打开查询时，将会在管理控制台中打开对应的 BizTalk Server 组。 当从管理控制台中打开查询时，将显示在列出的所有组上运行查询的选项。  
+您可以打开保存的查询，直接从保存查询的文件夹或在 BizTalk Server 管理控制台。 直接从文件夹中打开一个查询，它也将在管理控制台中打开相应的 BizTalk Server 组。 打开时从管理控制台中的查询，可以在任何列出的组上运行查询的选择。  
   
-## <a name="prerequisites"></a>必要條件  
- 若要执行此过程，则必须以 BizTalk Server Operators 组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 若要执行此过程，必须以 BizTalk Server Operators 组的成员的身份登录。  
   
-### <a name="to-open-a-saved-query-from-disk"></a>从磁盘打开保存的查询  
+### <a name="to-open-a-saved-query-from-disk"></a>若要从磁盘打开保存的查询  
   
-1.  浏览至存储了保存的查询的文件夹。  
+1.  浏览到已保存的查询的存储位置的文件夹。  
   
     > [!NOTE]
     >  默认情况下，已保存的查询存储在**我的文档**创建并保存它们的用户的文件夹。  
   
-2.  双击该保存的查询，这将打开 BizTalk Server 管理控制台并执行该查询。  
+2.  双击已保存的查询，这将打开 BizTalk Server 管理控制台并执行查询。  
   
-### <a name="to-open-a-saved-query-from-the-administration-console"></a>从管理控制台打开保存的查询  
+### <a name="to-open-a-saved-query-from-the-administration-console"></a>若要从管理控制台打开保存的查询  
   
 1. 单击**启动**，单击**程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
-2. 在控制台树中，展开“[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]”，然后单击“BizTalk 组”。  
+2. 在控制台树中，展开[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，然后单击 BizTalk 组。  
   
 3. 在详细信息窗格中，单击**新查询**选项卡，然后依次**打开查询**。  
   

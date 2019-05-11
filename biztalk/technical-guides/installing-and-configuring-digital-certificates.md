@@ -1,5 +1,5 @@
 ---
-title: 安装和配置数字证书 |Microsoft 文档
+title: 安装和配置数字证书 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/29/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 68d098bc70a29a576d8f79a38e54c2d1f11059e0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3868a041bfa1ac87f508c96027c8508966a2c3f3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22298245"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401233"
 ---
 # <a name="installing-and-configuring-digital-certificates"></a>安装和配置数字证书
-本部分提供的管理使用的数字证书的过程[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
+本部分介绍如何管理使用的数字证书[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [如何为 BizTalk Server 中安装证书](~/technical-guides/how-to-install-certificates-for-biztalk-server.md)  
+-   [如何为 BizTalk Server 安装证书](~/technical-guides/how-to-install-certificates-for-biztalk-server.md)  
   
 -   [为 MIME 或 SMIME 消息配置证书](../technical-guides/configuring-certificates-for-mime-or-smime-messages.md)  
   

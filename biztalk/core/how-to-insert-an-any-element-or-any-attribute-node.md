@@ -12,15 +12,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8bce55126fe800841aef325f22de0afe62e03cec
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c00aa62a118b0da30deba77f7a4ceb2c1cc1cf7e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021072"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65337093"
 ---
 # <a name="how-to-insert-an-any-element-or-any-attribute-node"></a>如何插入任何元素或任何属性节点
-BizTalk 编辑器支持两种类型的任何节点： **Any 元素**并**任何属性**。 使用这些节点，您可以在架构中创建与相应实例消息中的位置对应的位置，您不知道哪些元素或属性会出现在这些位置。 有关如何在处理实例消息时解释这些节点的详细信息，请直接参阅 Web 上有关 XML 架构定义 (XSD) 语言的信息。 此信息的链接，请参阅[在 Web 上找到的 XSD 资源](../core/xsd-resources-on-the-web.md)。  
+BizTalk 编辑器支持两种类型的任何节点：**任何元素**并**任何属性**。 这些节点，可创建在架构中与您不知道哪些元素或属性将出现在相应实例消息中的位置相对应的位置。 有关如何解释这些节点的详细信息时处理实例消息，请直接参阅 Web 上有关 XML 架构定义 (XSD) 语言的信息。 此信息的链接，请参阅[在 Web 上找到的 XSD 资源](../core/xsd-resources-on-the-web.md)。  
 
 ## <a name="insert-an-any-element-node-or-an-any-attribute-node"></a>插入任何元素或任何属性节点  
 

@@ -1,5 +1,5 @@
 ---
-title: 步骤 6： 创建用于传递确认消息的发送端口 |Microsoft Docs
+title: 步骤 6：创建用于传递确认消息的发送端口 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 47e30db70d67cb70ba87cf661e46ca325de1f3cc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: aa256bd6eca2486bba0e71fdaae69bde0defe759
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003614"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288046"
 ---
-# <a name="step-6-create-a-send-port-to-deliver-acknowledgments"></a>步骤 6： 创建用于传递确认消息的发送端口
+# <a name="step-6-create-a-send-port-to-deliver-acknowledgments"></a>步骤 6：创建用于传递确认消息的发送端口
 在此步骤中，您将创建一个端口来发送确认回批处理的源。  
 
  创建此端口是静态的以便仅将 MLLP 适配器，与相关联，而只会发送到特定目标 （批处理的源）。 在本教程中，源是与该参与方 Tutorial_BatchSource 相关联。 此源参与方都包含在单个消息和 FHS3 MSH3 和 BHS3 原始批处理。  
@@ -32,7 +32,7 @@ ms.locfileid: "37003614"
 
 1. 在 BizTalk Server 管理控制台中，右键单击**发送端口**，依次指向**新建**，然后单击**静态单向发送端口**。  
 
-2. 在“发送端口属性”对话框中，执行以下操作：  
+2. 在发送端口属性对话框中，请执行以下操作：  
 
 
    |      使用此选项      |                                执行的操作                                 |
@@ -89,4 +89,4 @@ ms.locfileid: "37003614"
 
 9. 单击**接收位置**。 验证已启用 TwoWayAckReceiveLocation 的状态。 如果没有，请右键单击**TwoWayAckReceiveLocation**，然后单击**启用**。  
 
-   请继续执行[步骤 7： 创建和配置源参与方](../../adapters-and-accelerators/accelerator-hl7/step-7-create-and-configure-a-source-party.md)。
+   请继续执行[步骤 7:创建并配置源参与方](../../adapters-and-accelerators/accelerator-hl7/step-7-create-and-configure-a-source-party.md)。

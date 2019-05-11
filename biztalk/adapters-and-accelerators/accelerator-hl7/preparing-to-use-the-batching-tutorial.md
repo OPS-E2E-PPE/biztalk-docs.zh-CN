@@ -1,5 +1,5 @@
 ---
-title: 准备使用批处理教程 |Microsoft 文档
+title: 为使用批处理教程做准备 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,25 +14,25 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 287f94ce9d5f96921729a28ce99bf4e84aad5a6d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 89f95ff8b3bdf8c68a940b90df8ac4ee10ee542f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22206037"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65290031"
 ---
-# <a name="preparing-to-use-the-batching-tutorial"></a>准备使用批处理教程
-你可以使用批处理教程之前，必须执行本节中的任务。  
+# <a name="preparing-to-use-the-batching-tutorial"></a>为使用批处理教程做准备
+可以使用批处理教程之前，必须在本部分中执行任务。  
   
 > [!IMPORTANT]
->  你将获取在学习本教程中，如果你遵循过程，并完全按照编写输入文本，获得最佳结果。 文本条目是区分大小写，，因此不是编写此处输入与具有不同大小写的文本可能会导致你的解决方案失败。  
+>  则会遵循的过程，并原封不动地输入文本，如果在完成本教程中的最佳结果。 文本条目是区分大小写，因此不是编写此处输入文本，使用不同的情况下可能会导致你的解决方案失败。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [取消部署其他教程的项目](../../adapters-and-accelerators/accelerator-hl7/undeploy-other-tutorial-projects.md)  
+-   [取消部署其他教程项目](../../adapters-and-accelerators/accelerator-hl7/undeploy-other-tutorial-projects.md)  
   
 -   [创建教程文件夹](../../adapters-and-accelerators/accelerator-hl7/create-the-tutorial-folders.md)  
   
--   [安装所需的软件、 实用程序和示例](../../adapters-and-accelerators/accelerator-hl7/install-the-required-software-utilities-and-samples.md)  
+-   [安装所需软件、实用工具和示例](../../adapters-and-accelerators/accelerator-hl7/install-the-required-software-utilities-and-samples.md)  
   
 -   [创建消息实例](../../adapters-and-accelerators/accelerator-hl7/create-the-message-instances.md)

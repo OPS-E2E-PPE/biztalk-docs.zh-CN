@@ -1,5 +1,5 @@
 ---
-title: MSBUILD 集成 |Microsoft 文档
+title: MSBUILD 集成 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 24c049af6869377363d90bca50c8091b15c8041d
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: f569235627630bb7b12a00d2b6611efd429339be
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26007270"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65323664"
 ---
 # <a name="msbuild-integration"></a>MSBUILD 集成
-Visual Studio 使用 MSBUILD 项目文件格式来存储有关包括 BizTalk 服务器项目的托管项目的生成信息并可以在计算机和不带生成 BizTalk 项目[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]。 本部分为您提供了关于此新增功能的详细信息。  
+Visual Studio 使用 MSBUILD 项目文件格式来存储有关托管项目包括 BizTalk Server 项目的生成信息，还可以使用或不在计算机上生成 BizTalk 项目[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]。 本部分为您提供了关于此新增功能的详细信息。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -28,5 +28,5 @@ Visual Studio 使用 MSBUILD 项目文件格式来存储有关包括 BizTalk 服
   
 -   [独立 MSBUILD](../core/standalone-msbuild.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [MSBUILD 概述](http://go.microsoft.com/fwlink/?LinkId=131739)

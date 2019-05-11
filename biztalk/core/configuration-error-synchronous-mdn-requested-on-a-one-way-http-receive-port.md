@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1d0d6e78830c06c11c4c6f54789ba522cfaf366
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9a5bdd3f27fa8a4abe5cb9f2ff16310a6e0e85f9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004726"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356522"
 ---
-# <a name="configuration-error-synchronous-mdn-requested-on-a-one-way-http-receive-port"></a>配置错误。 在单向 HTTP 接收端口上请求了同步 MDN
+# <a name="configuration-error-synchronous-mdn-requested-on-a-one-way-http-receive-port"></a>配置错误。 在单向 HTTP 上请求了同步 MDN 接收端口
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                        |
@@ -33,7 +33,7 @@ ms.locfileid: "37004726"
 |  消息正文   |       配置错误。 在单向 HTTP 发送端口上请求了同步 MDN。        |
   
 ## <a name="explanation"></a>解释  
- 此错误/警告/信息事件表明在接收 AS2 消息后 BizTalk Server 无法返回同步 MDN，因为处理传入的 AS2 消息的 HTTP 接收端口是单向端口。 双向请求-响应接收端口返回同步 MDN 以响应传入的 AS2 消息所需。 在这种情况下，必须同步返回 MDN，因为 AS2 消息包含 Disposition-Notification-To 标头，或者在作为 AS2 消息发送方的参与方的配置中，选中了属性“替代入站消息属性”，选中了“生成 MDN”属性，并且清除了“异步传输 MDN”属性。  
+ 此错误/警告/信息事件表明 BizTalk Server 无法后收到的 AS2 消息，因为 HTTP 接收处理传入的 AS2 消息的端口是单向端口返回同步 MDN。 双向请求-响应接收端口返回同步 MDN 以响应传入的 AS2 消息所需。 在这种情况下，必须同步返回 MDN，因为 AS2 消息包含的处置通知的标题，或作为 AS2 消息发送方，重写已签入站的消息属性的属性，生成的参与方的配置中MDN 属性被选中，并且传输 MDN 以异步方式属性为清除。  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请将接收 AS2 消息的接收端口改为请求响应接收端口，而不是单向接收端口。 将请求响应接收位置的发送管道设置为 AS2EdiSend（对于 EDI 交换）或 AS2Send（对于非 EDI 交换）。
+ 若要解决此错误，请更改接收端口接收 AS2 消息是请求响应接收端口，而不是一个单向接收端口。 设置发送管道的请求响应接收位置设置为非 EDI 交换的 EDI 交换的或 AS2Send 为 AS2EdiSend。

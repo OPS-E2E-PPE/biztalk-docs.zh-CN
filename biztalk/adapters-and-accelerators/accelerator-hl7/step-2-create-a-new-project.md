@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 创建一个新项目 |Microsoft Docs
+title: 第 2 步：创建一个新项目 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4e17dccc7ef83114fe17c26b03aaa8d06f7ac783
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d4147db9f24855a340ed616a794e2ee05822e24e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994646"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288765"
 ---
-# <a name="step-2-create-a-new-project"></a>步骤 2： 创建一个新项目
+# <a name="step-2-create-a-new-project"></a>第 2 步：创建一个新项目
 在此步骤中，您生成一个新的解决方案通过使用 Microsoft[!INCLUDE[btsVStudio2008](../../includes/btsvstudio2008-md.md)]环境。 首先，您创建新项目 (BTAHL7V22Common) 包含三个常见 （适用于数据类型、 段，以及表值） 使用架构的 HL7 V2.2 架构，包括将用于传出的 HL7 消息架构。 其次，将生成另一个新包含用于 HL7 消息 (MSH_25_GLO_DEF) 中的标头的通用标准架构的项目 (BTAHL7V2XCommon)。  
   
 ### <a name="to-create-a-new-project"></a>创建新项目的步骤  
@@ -74,7 +74,7 @@ ms.locfileid: "36994646"
   
       [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] 创建项目文件夹和文件中**\<驱动器\>: \Tutorial\BTAHL7V22Common\BTAHL72XCommon**文件夹。  
   
-    请继续执行[步骤 3： 对程序集分配强名称](../../adapters-and-accelerators/accelerator-hl7/step-3-assign-a-strong-name-to-the-assembly.md)。  
+    请继续执行[步骤 3:对程序集分配强名称](../../adapters-and-accelerators/accelerator-hl7/step-3-assign-a-strong-name-to-the-assembly.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [消息充实教程](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

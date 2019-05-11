@@ -19,27 +19,27 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2442551819d338d0cd78f7f7d112ffb8800aee6f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0d813adad739f7843308bcd3c53aa242ff97520c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970806"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283597"
 ---
 # <a name="importing-certificates-using-mmc"></a>使用 MMC 导入证书
 本主题介绍如何导入的数字证书，Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]用于验证贸易合作伙伴、 解密传入消息，或加密或签名传出消息。  
   
- 此过程使用证书管理单元中的 Microsoft 管理控制台 (MMC)。 此手动流程将证书导入证书存储区，并要求您单独配置证书的使用。 您还可以使用 CertWizard 实用工具（该工具自动为您配置证书的使用）导入证书。  
+ 此过程使用证书管理单元中的 Microsoft 管理控制台 (MMC)。 这一手动流程将证书导入证书存储中，无需单独配置证书的使用。 此外可以通过使用自动配置为证书使用 CertWizard 实用工具导入证书。  
   
- 要导入私用证书，必须使用运行 BizTalk 主机的用户帐户。  
+ 若要导入私用证书，必须使用 BizTalk 主机在其下运行的用户帐户。  
   
-### <a name="to-import-a-public-key-certificate"></a>导入公钥证书  
+### <a name="to-import-a-public-key-certificate"></a>若要导入公钥证书  
   
-1. 将公钥 (.cer) 证书文件复制到服务器硬盘上的某个位置，该位置也是您正在向其复制证书的位置。  
+1. 复制到硬盘上的位置服务器正在向其复制证书的公钥 (.cer) 证书文件。  
   
 2. 单击**启动**，依次指向**所有程序**，指向**Microsoft** [!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]，然后单击[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]**管理控制台**.  
   
-3. 在中[!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)]管理控制台中，展开**证书 （本地计算机）**。 登录用户必须对该计算机具有管理权限。  
+3. 在中[!INCLUDE[btaBTARNNoVersion](../../includes/btabtarnnoversion-md.md)]管理控制台中，展开**证书 （本地计算机）**。 登录的用户必须具有计算机的管理权限。  
   
 4. 右键单击**其他人**，依次指向**的所有任务**，然后单击**导入**。  
   
@@ -51,9 +51,9 @@ ms.locfileid: "36970806"
   
 8. 单击 **“完成”**。  
   
-### <a name="to-import-a-private-key-certificate"></a>导入私钥证书  
+### <a name="to-import-a-private-key-certificate"></a>若要导入私钥证书  
   
-1. 将私钥 (.pfx) 证书文件复制到服务器硬盘上的某个位置，该位置也是您正在向其复制证书的位置。  
+1. 复制私钥 (.pfx) 证书文件复制到硬盘上的服务器正在向其复制证书的位置。  
   
 2. 单击**启动**，单击**运行**，类型**runas /user:\<承载服务\>mmc**，然后单击**确定**。  
   

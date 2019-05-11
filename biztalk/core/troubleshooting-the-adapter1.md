@@ -1,5 +1,5 @@
 ---
-title: 解决博士 Edwards EnterpriseOne 适配器 |Microsoft 文档
+title: JD Edwards EnterpriseOne 适配器疑难解答 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eac716a7567930509ebfd310cdaf9874286b349c
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 1d6ba3fdb8789f7d258291aee05d9e7b481e905a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24013124"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65306394"
 ---
-# <a name="troubleshooting-the-adapter"></a>故障排除适配器
-本主题包含可帮助您标识和解决使用用于 JD Edwards EnterpriseOne 的 Microsoft BizTalk 适配器时可能遇到的问题的信息。  
+# <a name="troubleshooting-the-adapter"></a>适配器疑难解答
+本主题包含有助于您确定和解决使用用于 JD Edwards EnterpriseOne 的 Microsoft BizTalk 适配器时可能遇到的问题的信息。  
   
-## <a name="cannot-use-wildcards-in-send-port-properties"></a>无法在发送端口属性中使用通配符  
- 用于 JD Edwards Enterprise One 的适配器不支持在以下发送端口属性字段中使用通配符：  
+## <a name="cannot-use-wildcards-in-send-port-properties"></a>不能在发送端口属性中使用通配符  
+ 用于 JD Edwards Enterprise One 适配器不支持在以下发送端口属性字段中使用通配符：  
   
 -   用户名  
   
@@ -31,7 +31,7 @@ ms.locfileid: "24013124"
   
 -   主机  
   
--   端口  
+-   Port  
   
 -   Java_Home  
   
@@ -52,22 +52,22 @@ ms.locfileid: "24013124"
 -   物理数据库名称  
   
 ## <a name="connecting-to-oracle-database"></a>连接到 Oracle 数据库  
- 将 Oracle 数据库与 JD Edwards 一起使用时，必须修改 jdeinterop.ini 文件。 [JDBj-ORACLE] 部分使用单一登录功能定义 Oracle tnsnames 位置；必须使用数据库参数；BizTalk Server 计算机上必须存在 SQLNET.ORA 文件（此文件应包含在 Oracle 客户端）。  
+ 与 JD Edwards 一起使用 Oracle 数据库时必须修改 jdeinterop.ini 文件。 使用单点登录 [JDBJ-ORACLE] 部分定义 Oracle tnsnames 位置;必须使用数据库参数;和 SQLNET。ORA 文件必须存在于 BizTalk Server 计算机 （这应为包含在 Oracle 客户端） 上。  
   
- 将以下内容添加到 jdeinterop.ini 文件：  
+ 以下代码添加到 jdeinterop.ini 文件：  
   
-1.  在 [JDBj-ORACLE] 下：  
+1.  在 [JDBJ-ORACLE]:  
   
     ```  
     tns=c:\Oracle\ora92\network\Admin\tnsnames.ora  
     ```  
   
-2.  在 [JDBj-BOOTSTRAP DATA SOURCE] 下：  
+2.  在 [JDBJ-BOOTSTRAP DATA SOURCE]:  
   
     ```  
     database=sys810 [hardcode the database name. This information is available in the JDE.ini file on the JD Edwards computer.]  
     ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [添加适配器，并创建项目](../core/adding-biztalk-adapter-for-jd-edwards-enterpriseone.md)   
- [故障排除博士 Edwards EnterpriseOne](../core/troubleshooting-jd-edwards-enterpriseone.md)
+ [Troubleshooting JD Edwards EnterpriseOne](../core/troubleshooting-jd-edwards-enterpriseone.md)

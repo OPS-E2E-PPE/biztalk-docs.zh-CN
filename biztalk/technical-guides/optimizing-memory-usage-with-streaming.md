@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 55c86fafdab538dcf60f52265e10711b1a43340a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2ed7f6a3c9f20f112d5a976642d2cdd23a6890e7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024147"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291398"
 ---
 # <a name="optimizing-memory-usage-with-streaming"></a>通过流式处理优化内存使用情况
 本主题提供有关使用流模式来尽量减少消息内存占用时发送或接收大型消息与 WCF 传输或加载业务流程中的消息时的建议。   

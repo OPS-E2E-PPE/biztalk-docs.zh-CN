@@ -1,5 +1,5 @@
 ---
-title: Windows Communication Foundation 架构 |Microsoft 文档
+title: Windows Communication Foundation 架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5094e2d7544a88ebfd759fcb3c39fedd1dd411d3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c40ede53410a2b75b1d63b86c7ed4eacc0f085be
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288597"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242836"
 ---
 # <a name="windows-communication-foundation-schema"></a>Windows Communication Foundation 架构
 本部分包含 Windows Communication Framework 侦听器的架构。  
@@ -67,6 +67,6 @@ ms.locfileid: "22288597"
 </xs:schema>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [Windows 工作流基础架构](../core/windows-workflow-foundation-schema.md)   
+## <a name="see-also"></a>请参阅  
+ [Windows Workflow Foundation 架构](../core/windows-workflow-foundation-schema.md)   
  [侦听器配置架构](../core/interceptor-configuration-schema.md)

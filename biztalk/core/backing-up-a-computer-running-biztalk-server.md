@@ -1,5 +1,5 @@
 ---
-title: 备份运行 BizTalk Server 的计算机 |Microsoft 文档
+title: 备份运行 BizTalk Server 的计算机 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,32 +12,32 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 537ea40b39ecd35127b62f8d96f0175e98a1f3b2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 04f8a0073ffd4117da1d5cf5d92dd969b9a0abfc
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230501"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528576"
 ---
-# <a name="backing-up-a-computer-running-biztalk-server"></a>对运行 BizTalk Server 的计算机进行备份
-如果运行 BizTalk Server 的计算机出现了不可恢复的硬件故障，则必须用相同的计算机来替代它。 您应该在替代计算机上安装基本平台软件、必备软件和 BizTalk Server 组件，并设置相同的配置。 这些配置设置包括相应的注册表项、文件、文件夹以及正确操作 BizTalk 应用程序所需的相关 Windows 服务。  
+# <a name="backing-up-a-computer-running-biztalk-server"></a>备份运行 BizTalk Server 的计算机
+如果运行 BizTalk Server 的计算机出现了不可恢复的硬件故障，必须将该计算机为使用完全相同。 应设置基本平台软件、 必备软件、 BizTalk Server 组件和设置相同的配置在替代计算机。 这些配置设置可能会包含相应的注册表项、 文件、 文件夹和 BizTalk 应用程序正确操作所需的相关的 Windows 服务。  
   
- 为了确保在发生硬件故障后能够恢复 BizTalk Server，除了备份 BizTalk Server 数据库外，还应备份以下 BizTalk Server 组件：  
+ 除了备份 BizTalk Server 数据库，您应备份以下 BizTalk Server 组件，以确保可以在硬件故障后恢复 BizTalk Server:  
   
 -   BizTalk Server 配置  
   
 -   企业单一登录 (SSO) 主密钥  
   
--   业务活动监视 (BAM) 门户（不使用 BAM 时不需要）  
+-   业务活动监视 (BAM) 门户 （除非使用 BAM 时不需要）  
   
 -   BizTalk 应用程序  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [如何备份的 BizTalk Server 配置](../core/how-to-back-up-the-biztalk-server-configuration.md)  
+-   [如何备份 BizTalk Server 配置](../core/how-to-back-up-the-biztalk-server-configuration.md)  
   
 -   [如何备份主密钥](../core/how-to-back-up-the-master-secret.md)  
   
 -   [如何备份 BAM 门户](../core/how-to-back-up-the-bam-portal.md)  
   
--   [备份 BizTalk 服务器应用程序](../core/backing-up-biztalk-server-applications.md)
+-   [备份 BizTalk Server 应用程序](../core/backing-up-biztalk-server-applications.md)

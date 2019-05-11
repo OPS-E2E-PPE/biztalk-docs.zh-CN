@@ -1,5 +1,5 @@
 ---
-title: 调查业务流程、 端口和消息失败 |Microsoft 文档
+title: 调查业务流程、 端口和消息失败 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -23,30 +23,30 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 94417135f707d77377686745e35e6fb1f02087b9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5841327da65842b7d9c442604e9d1740a23f1eb9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262301"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65329958"
 ---
 # <a name="investigating-orchestration-port-and-message-failures"></a>调查业务流程、 端口和消息失败
-使用 BizTalk Server 管理控制台中的组中心页可以调查业务流程、端口和消息的故障。 通过组中心页可以查看系统的当前实时状态，访问 MessageBox 数据库中的数据。 您可以查看所有服务实例（例如业务流程、端口和消息传送）及其关联的消息。 使用组中心页可以实现以下操作：  
+可以使用 BizTalk Server 管理控制台中组中心页来调查业务流程、 端口和消息失败。 组中心页可以访问系统，访问 MessageBox 数据库中的数据的当前实时状态。 您可以查看业务流程、 端口和消息传送，及其关联的消息以及等的所有服务实例。 使用组中心页可以：  
   
--   查看当前运行的服务实例（例如业务流程和消息传送）及其关联的消息。  
+-   请参阅当前正在运行的服务实例，如业务流程和消息传送和及其关联的消息。  
   
--   在 MessageBox 数据库中进行搜索，以显示系统的当前数据以及实时状态的视图。  
+-   查找到 MessageBox 数据库中的视图的当前数据和系统的实时状态。  
   
--   挂起、终止和恢复服务实例。  
+-   挂起、 终止和恢复服务实例。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [业务流程失败](../core/orchestration-failures.md)  
+-   [业务流程故障](../core/orchestration-failures.md)  
   
--   [类型的消息失败](../core/types-of-message-failures.md)  
+-   [消息失败的类型](../core/types-of-message-failures.md)  
   
 -   [如何挂起业务流程实例或端口](../core/how-to-suspend-orchestration-instances-or-ports.md)  
   
 -   [如何终止挂起的业务流程实例](../core/how-to-terminate-suspended-orchestration-instances.md)  
   
--   [如何恢复已挂起的业务流程实例](../core/how-to-resume-suspended-orchestration-instances.md)
+-   [如何恢复挂起的业务流程实例](../core/how-to-resume-suspended-orchestration-instances.md)

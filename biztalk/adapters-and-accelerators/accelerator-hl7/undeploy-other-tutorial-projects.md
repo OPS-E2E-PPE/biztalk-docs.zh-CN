@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e2c014a094acac4e374605cd0ebd9b9c50c9d733
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d4de399020c4fe41f3c65d3e6119cbe11469efd5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976278"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286384"
 ---
 # <a name="undeploy-other-tutorial-projects"></a>取消部署其他教程项目
 当你部署 BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 的教程中，[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]在配置数据库 （也称为 BizTalk 管理数据库） 和全局程序集缓存中存储的教程程序集文件。 如果您已运行另一个[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]教程，并已部署在该教程中创建的程序集，您可能会遇到错误时在批处理教程的三个部分中测试您的程序集。 这可能是因为一次只能部署一个消息架构。  

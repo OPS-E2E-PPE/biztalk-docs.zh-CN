@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2d4313c073abff7022de99ac1d38375599b6ee43
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b1c9ad8fe4fb38ec09eb271e732894a244bea243
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966910"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291276"
 ---
 # <a name="performing-load-and-throughput-testing"></a>执行负载和吞吐量测试
 您应提供匹配的性能和压力测试在生产环境的环境。 此环境应已安装并运行，如监视代理和防病毒软件的所有标准服务。  

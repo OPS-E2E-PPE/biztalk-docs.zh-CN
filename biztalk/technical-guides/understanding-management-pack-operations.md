@@ -1,5 +1,5 @@
 ---
-title: 了解管理包操作 |Microsoft 文档
+title: 了解管理包操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f9fa319fc352cd46a452cf039476a29e91db962b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0b51900970c3bf53d65c8e1b24ad10db7edd024c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22302973"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400605"
 ---
 # <a name="understanding-management-pack-operations"></a>了解管理包操作
-下列各节描述对象的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包可发现，状态监视定义、 如何汇总运行状况和监视你的 BizTalk 服务器环境的关键方案。  
+以下各节描述的对象的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包可发现，状态监视定义、 如何汇总运行状况和监视 BizTalk Server 环境的关键方案。  
   
-## <a name="in-this-section"></a>在本节中  
+## <a name="in-this-section"></a>本节内容  
   
 -   [管理包发现的对象](../technical-guides/objects-the-management-pack-discovers.md)  
   
@@ -30,6 +30,6 @@ ms.locfileid: "22302973"
   
 -   [在 Operations Manager 控制台中查看信息](../technical-guides/viewing-information-in-the-operations-manager-console.md)  
   
--   [如何汇总运行状况](../technical-guides/how-health-rolls-up.md)  
+-   [运行状况汇总方式](../technical-guides/how-health-rolls-up.md)  
   
 -   [主要监视方案](../technical-guides/key-monitoring-scenarios.md)

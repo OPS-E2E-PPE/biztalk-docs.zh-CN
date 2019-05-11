@@ -1,5 +1,5 @@
 ---
-title: 步骤 8： 测试 Create-batch 方案 |Microsoft Docs
+title: 步骤 8：测试 Create-batch 方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d880d1f9d586878a28803ef5060cfb770bf67a7d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6770cbb7e97b7614ec55bebed0120c3367d9437d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007806"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65287877"
 ---
-# <a name="step-8-test-the-create-batch-scenario"></a>步骤 8： 测试 Create-batch 方案
+# <a name="step-8-test-the-create-batch-scenario"></a>步骤 8：测试 Create-batch 方案
 在此步骤中，通过删除你想要到源 Tutorial_BTAHL7Pickup 文件夹进行批处理的消息的测试实例来测试创建 Batch 方案。 设置发送端口提取消息源文件夹中，并将其; 发送接收端口接收它;和接收管道对其进行处理，并将其放入目标 Tutorial_BTAHL7Drop 文件夹。  
 
 ### <a name="to-test-the-create-batch-scenario"></a>若要测试创建批处理方案  
@@ -38,22 +38,22 @@ ms.locfileid: "37007806"
 
    |FHS.5|BHS.5|BTS.1|FTS.1|  
    |-----------|-----------|-----------|-----------|  
-   |Tutorial_BatchSource|Tutorial_BatchSource|2|@shouldalert|  
+   |Tutorial_BatchSource|Tutorial_BatchSource|2|1|  
 
     在批处理中的确认应具有以下字段：  
 
 
    |    MSH.9    | MSA.2 | MSA.1 |       MSH.3        |        MSH.5         |
    |-------------|-------|-------|--------------------|----------------------|
-   | ACK ^ A03 ^ ACK | Msg01 |  AA   | Tutorial_BatchDest | Tutorial_BatchSource |
-   | ACK ^ A03 ^ ACK | Msg02 |  AA   | Tutorial_BatchDest | Tutorial_BatchSource |
+   | ACK^A03^ACK | Msg01 |  AA   | Tutorial_BatchDest | Tutorial_BatchSource |
+   | ACK^A03^ACK | Msg02 |  AA   | Tutorial_BatchDest | Tutorial_BatchSource |
 
 
 2. 使用[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]资源管理器，浏览到 **\<*驱动器*\>: \Program Files\Microsoft BizTalk\<版本\>HL7\SDK\End 端到端的快捷键Tutorial\Tutorial_BatchMsgDrop**文件夹。 一小时后，您应该可以看到处理的实例消息批次出现在文件夹中。 如果未显示，请检查[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]事件查看器的错误消息。 该文件应具有名称\< *Guid*\>.txt。 此批处理应包含最初发送两条消息。 此批处理应具有以下字段：  
 
    |FHS.5|BHS.5|BTS.1|FTS.1|  
    |-----------|-----------|-----------|-----------|  
-   |Tutorial_BatchDest|Tutorial_BatchDest|2|@shouldalert|  
+   |Tutorial_BatchDest|Tutorial_BatchDest|2|1|  
 
     批中的消息应具有以下字段：  
 
@@ -69,5 +69,5 @@ ms.locfileid: "37007806"
    -   批处理标头和尾部 （BHS 和 BTS），用于将每个批次。 请注意在 BTS2 中接收应用程序和批处理创建日期/时间，如 FHS 和批处理消息计数 (2) 中所示的文件。  
 
 ## <a name="see-also"></a>请参阅  
- [第 1 部分： 零碎的入站的批处理方案](../../adapters-and-accelerators/accelerator-hl7/part-1-fragmented-inbound-batch-scenario.md)   
+ [第 1 部分：零碎的入站的批处理方案](../../adapters-and-accelerators/accelerator-hl7/part-1-fragmented-inbound-batch-scenario.md)   
  [第 3 部分：Create-Batch 方案](../../adapters-and-accelerators/accelerator-hl7/part-3-create-batch-scenario.md)

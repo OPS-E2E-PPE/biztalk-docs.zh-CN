@@ -16,23 +16,23 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 62e182440522e82f7ae6eaeaf52234161bee7483
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ead846de3a731a73ee1c0908801485d67ff68a79
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998606"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65353624"
 ---
 # <a name="creating-pipelines-using-pipeline-designer"></a>使用管道设计器创建管道
-Microsoft BizTalk Server 主要处理 XML 文档格式。 通常，消息必须从本身格式转换为其 XML 表示形式，才能充分利用 BizTalk Server 的处理功能。 BizTalk Server 管道可对传入消息和传出消息执行这种转换，并执行其他特定于数据的操作（例如数据加密或解密、属性升级等）。 本部分提供有关管道和管道设计器的概念信息和任务特定信息。  
+Microsoft BizTalk Server 程序主要处理 XML 文档格式。 若要充分利用 BizTalk Server 处理的消息，必须经常将它转换从其本机格式转换为 XML 表示形式。 BizTalk Server 管道对传入和传出消息执行此转换，以及其他特定于数据的操作 （例如数据加密或解密、 属性升级等）。 本部分提供有关管道和管道设计器的概念和特定于任务的信息。  
   
- 管道的作用是在适配器接收消息后对消息进行准备以便服务器处理，或在服务器处理消息后对消息进行准备以便发送。  
+ 若要准备的消息进行处理服务器在适配器接收后或准备服务器处理后发送一条消息，管道的作用。  
   
- 管道通常执行以下操作：  
+ 管道通常执行：  
   
-- 从不同格式到 XML 格式的数据规范化。  
+- 数据规范化为各种格式为 XML。  
   
-- 从 XML 格式到不同格式的数据转换。  
+- 数据转换为 XML 为各种格式。  
   
 - 属性升级和降级。  
   
@@ -44,12 +44,12 @@ Microsoft BizTalk Server 主要处理 XML 文档格式。 通常，消息必须�
   
 - 文档签名和数字签名验证。  
   
-  下图显示了在使用管道处理消息过程中涉及的工作流：  
+  下图显示工作流所涉及到使用管道来处理一条消息。  
   
-  ![用于处理消息的工作流的图表。](../core/media/ebiz-dev-busprcsadptc.gif "ebiz_dev_busprcsadptc")  
+  ![消息的处理的工作流的图示。](../core/media/ebiz-dev-busprcsadptc.gif "ebiz_dev_busprcsadptc")  
   消息处理工作流示意图  
   
-  如图所示，消息将从适配器传递到接收管道，在管道中消息将转换为 XML。 然后，消息可由业务流程使用，或传递给发送管道，然后传递给发送适配器。  
+  如图所示，该消息是从适配器传递到接收管道它将转换为 XML。 然后可以使用的业务流程，或传递到发送管道，再到发送适配器消息。  
   
   有关使用键盘快捷键的管道设计器的信息，请参阅[管道设计器键盘快捷方式](../core/pipeline-designer-keyboard-shortcuts.md)。  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d55a8ddccb996f11315c8856797147083da9123
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a1174466897c94b1a7797c32620e88dae6ae57c6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998030"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334037"
 ---
 # <a name="set-map-compilation-and-output-settings"></a>设置映射编译和输出设置
 在 BizTalk 映射器中设置映射属性。 
@@ -34,7 +34,7 @@ ms.locfileid: "36998030"
 2. 在映射器网格中，右键单击任意位置，然后选择**属性**。  
 3. 设置**使用 XSL 转换**属性： 
 
-    | 选项 | Description |
+    | Option | Description |
     | --- | --- |
     | 未定义 | 使用 XslTransform 设置的注册表标志： <ul><li>64 位主机实例： `HKLM\SOFTWARE\Microsoft\BizTalk Server\3.0\Configuration`</li><li>32 位主机实例和 Visual Studio 的测试映射功能： `HKLM\SOFTWARE\Wow6432Node\Microsoft\BizTalk Server\3.0\Configuration`</li></ul> | 
     | True | 映射级别编译属性设置为`XslTransform`（旧版行为） | 
@@ -59,7 +59,7 @@ ms.locfileid: "36998030"
 ```  
   
 ## <a name="set-encoding-for-output-instance-data"></a>设置编码为输出实例数据  
-编码为运行时引擎提供确定在创建映射的输出结果时使用的字符集所需的信息。  
+编码提供运行时引擎，它需要用来确定哪一字符集创建映射的输出结果时要使用的信息。  
    
 1. 在网格视图中打开您的映射。
 2. 在映射器网格中，右键单击任意位置，然后选择**属性**。    

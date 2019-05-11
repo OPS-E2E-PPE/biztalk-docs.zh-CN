@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 87b44f68168570c229b66cb6ee767cf38229dc74
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c1a9a6495400869a3c8adaf15d935e03b1ed2bcc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989710"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65298872"
 ---
 # <a name="the-comparison-operator-is-not-valid"></a>比较运算符无效
 ## <a name="details"></a>详细信息  
@@ -36,4 +36,4 @@ ms.locfileid: "36989710"
  此错误/警告/信息事件表示行的批处理筛选器对话框中输入的比较运算符不是有效的属性和值。  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请从“EDI 属性”对话框的“交换批处理创建设置”页中打开“批处理筛选器”对话框。 确保为“批处理筛选器”网格中的行输入的比较运算符对于该属性和值来说无效。
+ 若要解决此错误，请从“EDI 属性”对话框的“交换批处理创建设置”页中打开“批处理筛选器”对话框。 请确保输入的批处理筛选器网格中的行的比较运算符适用于属性和值。

@@ -1,5 +1,5 @@
 ---
-title: 如何从一个策略返回 True 或 False |Microsoft 文档
+title: 如何从策略返回 True 或 False |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 281d5ab7648545f2e0616095f3c535d7d109136f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 093d58d97d6ecc2df842118b5a30f9858f4b4b96
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22254405"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334899"
 ---
-# <a name="how-to-return-true-or-false-from-a-policy"></a>如何从一个策略返回 True 或 False
-不能直接指定返回类型的策略。 不过，您可以将以下某种类型的事实传递给策略，使策略将事实的值更改为 `true` 或 `false`，然后在执行策略后检查属性/元素/列的值：  
+# <a name="how-to-return-true-or-false-from-a-policy"></a>如何从策略返回 True 或 False
+不能直接指定返回类型的策略。 但是，可以将一个以下类型的事实传递到该策略，使策略更改为事实的值`true`或`false`，然后检查属性/元素/列的值后执行的策略：  
   
--   属性类型为 `Boolean` 的 .NET 对象  
+-   具有类型的属性的.NET 对象 `Boolean`  
   
--   元素类型为 `Boolean` 的 XML 文档  
+-   使用类型的元素的 XML 文档 `Boolean`  
   
--   列类型为 `Boolean` 的数据库表
+-   数据库表具有的列的类型 `Boolean`

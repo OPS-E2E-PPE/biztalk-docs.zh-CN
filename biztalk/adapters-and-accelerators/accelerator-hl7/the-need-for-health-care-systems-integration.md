@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b2527b3174b0497025e070a9228f420a31523f24
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: afc078ff4d72dffc9717464934a46c1a9b314f98
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972878"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286530"
 ---
 # <a name="the-need-for-health-care-systems-integration"></a>对卫生保健系统集成需求
 Microsoft[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]医疗保健提供商提供的解决方案用于其应用程序集成和业务流程自动化需求。 本主题介绍了一些业务挑战面临的医疗保健组织，以及如何将 Microsoft 的系统[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]和[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]可帮助组织应对这些挑战。 此外看一看演示一个示例业务方案使用一种常见方案[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]。  

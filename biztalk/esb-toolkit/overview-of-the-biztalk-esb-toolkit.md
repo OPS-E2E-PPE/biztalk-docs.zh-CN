@@ -13,12 +13,12 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 3e190b34-40bc-4f27-9b4f-56e98591e1d4
 ms.author: mandia
-ms.openlocfilehash: 404e93739d45cbca0235990dc7d2014bf38e0a84
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c334e5c4404492fbda28c301d8806471b25623ca
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008782"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400049"
 ---
 # <a name="what-is-the-biztalk-esb-toolkit"></a>什么是 BizTalk ESB 工具包
 

@@ -1,5 +1,5 @@
 ---
-title: 将项目添加到应用程序 |Microsoft 文档
+title: 将项目添加到应用程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,33 +12,33 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2c08fa95dddad06efb2c51d93df56b757ae4caca
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9ac647201a834d90d745564076b040954c1c3667
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22295645"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401411"
 ---
 # <a name="adding-artifacts-to-an-application"></a>将项目添加到应用程序
-你可以添加和配置项目，比如发送和接收端口、 接收位置和业务流程，通过使用管理控制台。 你还可以生成绑定文件，并将其添加到应用程序中，如果你想要应用的不同环境中将导入到应用程序的不同绑定。  
+可以添加和配置项目，例如发送和接收端口、 接收位置和业务流程，使用管理控制台。 您还可以生成绑定文件并将其添加到应用程序中，如果你想要应用于不同的环境，您将导入到应用程序的不同绑定。  
   
- 你可以添加其他 (通常非 BizTalk Server) 项目，比如脚本、 证书和自述文件，为资源节点下的应用程序。 为此，请使用管理控制台或 BTSTask。  
+ 您可以添加其他 (通常非 BizTalk Server) 项目，如脚本、 证书和自述文件、 到资源节点下的应用程序。 若要执行此操作，使用管理控制台或 BTSTask。  
   
- 有关项目的详细信息，请参阅[如何创建或添加项目](http://go.microsoft.com/fwlink/?LinkID=154724)(http://go.microsoft.com/fwlink/?LinkID = 154724)，[管理项目](http://go.microsoft.com/fwlink/?LinkID=154725)(http://go.microsoft.com/fwlink/?LinkID = 154725) 和[绑定文件和应用程序部署](http://go.microsoft.com/fwlink/?LinkID=154726)(http://go.microsoft.com/fwlink/?LinkID = 154726)。  
+ 有关项目的详细信息，请参阅[如何创建或添加项目](http://go.microsoft.com/fwlink/?LinkID=154724)(http://go.microsoft.com/fwlink/?LinkID=154724)，[管理项目](http://go.microsoft.com/fwlink/?LinkID=154725)(http://go.microsoft.com/fwlink/?LinkID=154725)和[绑定文件和应用程序部署](http://go.microsoft.com/fwlink/?LinkID=154726) (http://go.microsoft.com/fwlink/?LinkID=154726).  
   
-## <a name="factoring-artifacts-into-multiple-biztalk-applications"></a>将项目分解为多个 BizTalk 应用程序  
- 在开发过程中，出于方便，您可能会将程序集部署到单个应用程序中。 由于许多原因，您可能要将项目分解到多个应用程序中，然后再将它们部署到生产中。  
+## <a name="factoring-artifacts-into-multiple-biztalk-applications"></a>分解为多个 BizTalk 应用程序的项目  
+ 在开发过程中，你可能已部署您的程序集到单一应用程序中为方便起见。 由于各种原因，你可能想要部署到生产环境之前，将项目分解到多个应用程序。  
   
- 在部署之前，应执行的程序集分解的深入分析。 确定是否应执行任何将分解、 完整分解或者最佳将分解。  
+ 在部署之前，应执行程序集的分解情况的深入的分析。 确定是否应执行任何分解、 完整分解或者最佳分解。  
   
- **没有将分解**  
+ **没有分解**  
   
- BizTalk 中的所有项目都都在一个程序集中。 这是最容易了解和部署，但可以最大的灵活性。  
+ 所有 BizTalk 项目都是在一个程序集中。 这是最容易了解和部署，但可以最大的灵活性。  
   
- **完整将分解**  
+ **完整分解**  
   
- 每个 BizTalk 项目位于其自己的程序集中。 这提供了最大的灵活性，但最复杂部署并了解。  
+ 每个 BizTalk 项目是在自己的程序集。 这提供了最大的灵活性，但最复杂部署和了解。  
   
- **最佳将分解**  
+ **最佳分解**  
   
- 最佳将分解介于之间否将分解和完整分解基于 BizTalk 应用程序的深入分析。 除了版本控制，这允许你更轻松地实现您的 BizTalk 主机设计。 这被通过寻找 BizTalk 项目之间的关系。 如果可能，将始终是版本控制的同一程序集中在一起的项目。 如果需要的项目的独立版本控制，然后必须将它们置于不同的程序集中。 这是你想要实现分解的级别。
+ 最佳分解介于之间无分解和完整分解基于 BizTalk 应用程序的深入分析。 除了版本控制，这样，您可以更轻松地实现您的 BizTalk 主机设计。 这被通过查找 BizTalk 项目之间的关系。 如果可能，将始终在同一程序集版本控制的项目。 如果需要独立的版本控制的项目，然后它们必须放入不同的程序集。 这是你想要实现的分解级别。

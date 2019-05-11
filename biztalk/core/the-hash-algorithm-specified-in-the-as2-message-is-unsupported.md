@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8c3c46f65fb71ef810fc4e657df01e0065757cae
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e8ac08333b5506e342fe84a2e7a950610bcdd1b1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008590"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65258617"
 ---
-# <a name="the-hash-algorithm-specified-in-the-as2-message-is-unsupported"></a>不支持在 AS2 消息中指定的哈希算法
+# <a name="the-hash-algorithm-specified-in-the-as2-message-is-unsupported"></a>不支持 AS2 消息中指定的哈希算法
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                        |

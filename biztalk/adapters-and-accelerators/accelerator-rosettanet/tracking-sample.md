@@ -12,15 +12,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1b4d85f8c8f389728bbf50eeeb68c9228012b46
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fd621e65abedea79c8dc792fddd3d3e8662a2292
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986382"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280495"
 ---
 # <a name="tracking-sample"></a>跟踪示例
-跟踪用户界面示例演示如何创建[!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]-基于 Web 应用程序以在 Microsoft 中显示的消息和流程的当前状态[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]。 该应用程序向用户提供一个包含多个搜索标准的表单。 当用户执行搜索时，跟踪示例将生成一个显示 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 中符合这些标准的消息和流程的详细列表。  
+跟踪用户界面示例演示如何创建[!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]-基于 Web 应用程序以在 Microsoft 中显示的消息和流程的当前状态[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]。 应用程序向用户提供一个包含多个搜索标准窗体。 当用户执行搜索时，跟踪示例生成显示消息的详细的列表，并在处理[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]中符合这些标准。  
   
  此示例是可从 Microsoft 下载[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]网站，网址[ http://go.microsoft.com/fwlink/?LinkId=37467 ](http://go.microsoft.com/fwlink/?LinkId=37467)。  
   

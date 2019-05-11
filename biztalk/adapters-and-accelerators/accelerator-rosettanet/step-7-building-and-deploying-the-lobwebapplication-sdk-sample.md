@@ -1,5 +1,5 @@
 ---
-title: 步骤 7： 生成和部署 LOBWebApplication SDK 示例 |Microsoft Docs
+title: 步骤 7：生成和部署 LOBWebApplication SDK 示例 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3a0716c854c20f5ea7fa7d2ad91576cb142f6a02
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5bbe4c2bad357f479c337b8f889a4e4ed588dcf4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996182"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280629"
 ---
-# <a name="step-7-building-and-deploying-the-lobwebapplication-sdk-sample"></a>步骤 7： 生成和部署 LOBWebApplication SDK 示例
-在此步骤中，将创建业务线 (LOB) 应用程序，而 Fabrikam 将使用此应用程序向 Contoso 提交合作伙伴接口流程 (PIP) 请求。 您可以 Microsoft® 中找到 LOBWebApplication 项目[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]SDK 文件夹。 若要运行的 Web 应用程序，您需要创建一个 Microsoft Internet 信息服务 (IIS) 虚拟目录，然后生成 LOBWebApplication 项目。  
+# <a name="step-7-building-and-deploying-the-lobwebapplication-sdk-sample"></a>步骤 7：生成和部署 LOBWebApplication SDK 示例
+在此步骤中，您将创建 Fabrikam 使用合作伙伴接口流程 (PIP) 将请求提交给 Contoso 的业务线 (LOB) 应用程序。 您可以 Microsoft® 中找到 LOBWebApplication 项目[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]SDK 文件夹。 若要运行的 Web 应用程序，您需要创建一个 Microsoft Internet 信息服务 (IIS) 虚拟目录，然后生成 LOBWebApplication 项目。  
   
 ### <a name="to-create-the-lobwebapplication-virtual-directory"></a>创建 LOBWebApplication 虚拟目录  
   
@@ -43,7 +43,7 @@ ms.locfileid: "36996182"
   
 8.  上**您已成功完成虚拟目录创建向导**页上，单击**完成**创建虚拟目录。  
   
-### <a name="to-exclude-the-lobwebapplication-web-site-from-the-sharepoint-configuration"></a>从 SharePoint 配置中排除 LOBWebApplication 网站  
+### <a name="to-exclude-the-lobwebapplication-web-site-from-the-sharepoint-configuration"></a>若要从 SharePoint 配置中排除 LOBWebApplication 网站  
   
 1.  单击**启动**，依次指向**所有程序**，指向**管理工具**，然后单击**SharePoint 管理中心**。  
   
@@ -59,7 +59,7 @@ ms.locfileid: "36996182"
   
 7.  有关**类型**，选择**排除的路径**，然后单击**确定**。  
   
-### <a name="to-build-the-lobwebapplication-project"></a>生成 LOBWebApplication 项目  
+### <a name="to-build-the-lobwebapplication-project"></a>若要生成 LOBWebApplication 项目  
   
 1.  单击**启动**，依次指向**所有程序**，指向**Microsoft Visual Studio 2008**，然后单击**Microsoft Visual Studio 2008**。  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f017fa273d91d1c40727ba34c6d047383054d52
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3c95a8de4437f2ae52c01f77fbfe6e4ff0d559d7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000918"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65300079"
 ---
 # <a name="installation-known-issues"></a>安装的已知问题
 有用的信息可帮助你避免出现安装问题。  

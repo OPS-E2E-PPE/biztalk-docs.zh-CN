@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10528 |Microsoft Docs
+title: 单一登录：Event 10528 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2e91944de7399f8bee3e03f3facdb91263d2761
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f7e39b0c781b417bcf8eca635e9a47b1fd2f2b18
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974822"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65262383"
 ---
-# <a name="single-sign-on-event-10528"></a>单一登录： 事件 10528
+# <a name="single-sign-on-event-10528"></a>单一登录：事件 10528
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                                                                            |
@@ -30,16 +30,16 @@ ms.locfileid: "36974822"
 |  事件源   |                                                                                   ENTSSO                                                                                   |
 |    组件    |                                                                                    N\A                                                                                     |
 |  符号名称  |                                                                           SSO_INFO_REENCRYPT_OK                                                                            |
-|  消息正文   | 已成功完成 SSO 数据库重新加密。%r<br /><br /> 重新加密的凭据数: %1 %r<br /><br /> 当前 MSID: %2 %r<br /><br /> 上一个 MSID: %3 |
+|  消息正文   | SSO 数据库重新加密已 successfully.%r 完成<br /><br /> 重新加密的凭据数: %1 %r<br /><br /> 当前 MSID: %2 %r<br /><br /> 上一个 MSID: %3 |
 
 ## <a name="explanation"></a>解释  
- 此信息性事件表示 SSO 数据库的重新加密已经成功完成。  
+ 此信息事件表明该重新加密的 SSO 数据库已成功完成。  
 
 ## <a name="user-action"></a>用户操作  
 
-- 不需要用户进行任何操作。  
+- 不不需要任何用户操作。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [如何更新 SSO 数据库](../core/how-to-update-the-sso-database.md)  
 

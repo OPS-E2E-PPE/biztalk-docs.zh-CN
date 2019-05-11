@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10741 |Microsoft Docs
+title: 单一登录：事件 10741 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1901ad4c58f3056b74f50fead72637bc9bb8b62e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2150f33b90137d5f5e1258a829901426a45d7856
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006830"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291737"
 ---
-# <a name="single-sign-on-event-10741"></a>单一登录： 事件 10741
+# <a name="single-sign-on-event-10741"></a>单一登录：事件 10741
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                           |
@@ -30,16 +30,16 @@ ms.locfileid: "37006830"
 |  事件源   |                                          ENTSSO                                           |
 |    组件    |                                            N\A                                            |
 |  符号名称  |                                SSO_WARN_SAVING_REPLAY_FILE                                |
-|  消息正文   | 正在保存重播文件或进度文件。%r<br /><br /> 保存的文件: %1 %r<br /><br /> 错误代码： %2 |
+|  消息正文   | 正在保存重播或进度 file.%r<br /><br /> 保存的文件: %1 %r<br /><br /> 错误代码： %2 |
 
 ## <a name="explanation"></a>解释  
- 此警告事件表明 SSO 正在保存重播文件或进度文件。  
+ 此警告事件表明 SSO 正在保存重播或进度文件。  
 
  ENTSSO 服务器无法与 SSO 数据库取得联系时，密码同步使用重播文件。 进度文件指示，距离通过 SSO 无法重播文件中用例联系人与 SSO 数据库会再次读取。  
 
 ## <a name="user-action"></a>用户操作  
 
-- 不需要用户进行任何操作。  
+- 不不需要任何用户操作。  
 
   有关详细信息，请参阅下列资源：  
 

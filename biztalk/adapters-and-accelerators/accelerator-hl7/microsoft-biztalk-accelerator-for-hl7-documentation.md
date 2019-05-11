@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 82ec20bc1b1b7958aca0730bd113c4c5c37a0828
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b462ec77897959382f94eb310b02a8f0b3e8d229
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006502"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65303644"
 ---
 # <a name="microsoft-biztalk-accelerator-for-hl7-documentation"></a>Microsoft BizTalk Accelerator for HL7 文档
 Microsoft[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]文档介绍新增功能的新功能的不同[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]版本中，介绍如何安装[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]，包括分步教程，并提供信息以了解有关 HL7，开发任务和操作任务。   
@@ -45,7 +45,7 @@ Microsoft[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]�
 ## <a name="logging-and-batching"></a>日志记录和批处理 
 [操作日志记录、 消息批处理、 验证和确认设置](../../adapters-and-accelerators/accelerator-hl7/operational-logging-message-batching-validation-and-asknowledgment-settings.md)演示如何配置日志记录、 配置批处理，介绍了验证，介绍了确认，和的详细信息。
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 [Hl7 的疑难解答和已知问题](../../adapters-and-accelerators/accelerator-hl7/troubleshooting-and-known-issues-in-hl7.md)提供有关故障排除批处理和确认详细信息，包括一些已知的问题。
 
 

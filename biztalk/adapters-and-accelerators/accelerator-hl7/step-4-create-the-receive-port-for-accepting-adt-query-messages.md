@@ -1,5 +1,5 @@
 ---
-title: 步骤 4： 创建用于接收 ADT 查询消息接收端口 |Microsoft Docs
+title: 步骤 4：创建接收端口用于接收 ADT 查询消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,14 +14,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: acda59342c8469810a4645521c395c458fe5d73e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 74dcce5c6fdf32f0b20574735f981b854a52e6e4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000750"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291163"
 ---
-# <a name="step-4-create-the-receive-port-for-accepting-adt-query-messages"></a>步骤 4： 创建用于接收 ADT 查询消息接收端口
+# <a name="step-4-create-the-receive-port-for-accepting-adt-query-messages"></a>步骤 4：创建用于接收 ADT 查询消息接收端口
 创建接收端口，以指定发送的病人入院，放电装置，传入查询消息的位置和传输 (ADT) 系统。 使用以下过程来创建用于接受查询的接收端口 (QRY ^ Q01 消息) 从 ADT 系统使用最少的较低层协议 (MLLP) 适配器。  
 
 ## <a name="create-the-adtreceiveport-receive-port"></a>创建 ADT_ReceivePort 接收端口  
@@ -62,7 +62,7 @@ ms.locfileid: "37000750"
 
 11. 设置**发送管道**到**PassThruTransmit**。
 
-12. 单击“确定”保存更改。  
+12. 选择**确定**以保存所做的更改。  
 
 13. 启用通过右键单击它，刚刚创建的接收位置，然后选择**启用**。  
 

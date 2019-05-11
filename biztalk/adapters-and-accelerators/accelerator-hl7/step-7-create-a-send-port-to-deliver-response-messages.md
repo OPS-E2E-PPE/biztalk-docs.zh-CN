@@ -1,5 +1,5 @@
 ---
-title: 步骤 7： 创建用于传递响应消息的发送端口 |Microsoft Docs
+title: 步骤 7：创建用于传递响应消息的发送端口 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,21 +14,21 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4139e07c5ca503a8cb58b1aa88fe8e602a92ee07
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a07e4a084fecd17bc2fbe2ec05b5fe17a046bfba
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987822"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65287980"
 ---
-# <a name="step-7-create-a-send-port-to-deliver-response-messages"></a>步骤 7： 创建用于传递响应消息的发送端口
+# <a name="step-7-create-a-send-port-to-deliver-response-messages"></a>步骤 7：创建用于传递响应消息的发送端口
 在此步骤中，创建发送端口以将查询响应返回到病人入院、 放电装置和传输 (ADT) 系统。  
 
 ### <a name="to-create-the-adtsend-send-port"></a>若要创建 ADT_Send 发送端口  
 
 1. 在 BizTalk Server 管理控制台中，右键单击**发送端口**，依次指向**新建**，然后选择**静态单向发送端口**。  
 
-2. 在“发送端口属性”对话框中，执行以下操作：  
+2. 在发送端口属性对话框中，请执行以下操作：  
 
 
    |      使用此选项      |                        执行的操作                        |
@@ -70,4 +70,4 @@ ms.locfileid: "36987822"
 
 7. 在管理控制台中，单击**发送端口**，右键单击**ADT_Send**，然后单击**启动**。  
 
-   请继续执行[步骤 8： 配置参与方信息](../../adapters-and-accelerators/accelerator-hl7/step-8-configure-party-information-hl7-main.md)。
+   请继续执行[步骤 8:配置参与方信息](../../adapters-and-accelerators/accelerator-hl7/step-8-configure-party-information-hl7-main.md)。

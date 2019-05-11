@@ -17,12 +17,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a6b88bd76a1fac2ebfa5c2f75a6abbf78aab75b7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0c84acde2b7d3049c415954a561c1a53edb16a0b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966902"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289941"
 ---
 # <a name="sample-business-scenario"></a>示例业务方案
 卫生保健进程通常很复杂，涉及到许多系统。 示例是一个患者进入医院，时发生的过程和一名医生将发送的实验室测试患者。 在此过程中所涉及是五个参与方：  

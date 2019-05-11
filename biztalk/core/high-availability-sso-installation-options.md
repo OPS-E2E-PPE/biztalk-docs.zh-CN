@@ -1,5 +1,5 @@
 ---
-title: 高可用性 SSO 安装选项 |Microsoft 文档
+title: 高可用性 SSO 安装选项 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,24 +15,24 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 88cfcdfb96818223e21daa17b22c0632be75cce8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3fa923e01f52bf445b769487556bc4c4bba4ce61
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246149"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65344327"
 ---
 # <a name="high-availability-sso-installation-options"></a>高可用性 SSO 安装选项
-本部分中的主题将介绍针对企业单一登录的高可用性的安装，例如，多计算机部署。  
+在本部分中的主题介绍安装高可用性的企业单一登录，如多计算机部署为中心的。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [如何创建使用磁盘、 IP 地址和名称资源的群集组](../core/how-to-create-a-cluster-group-with-a-disk-ip-address-and-name-resource1.md)  
+-   [如何创建具有磁盘、 IP 地址和名称资源的群集组](../core/how-to-create-a-cluster-group-with-a-disk-ip-address-and-name-resource1.md)  
   
--   [如何安装群集主密钥服务器](../core/how-to-cluster-the-master-secret-server1.md)  
+-   [如何群集主密钥服务器](../core/how-to-cluster-the-master-secret-server1.md)  
   
 -   [如何安装群集 SQL Server](../core/how-to-cluster-the-sql-server.md)  
   
--   [如何安装群集实现 SSO 和相同的群集组中的 BizTalk 主机](../core/how-to-cluster-sso-and-a-biztalk-host-in-the-same-cluster-group1.md)  
+-   [如何安装群集 SSO 和 BizTalk 主机在同一群集组中](../core/how-to-cluster-sso-and-a-biztalk-host-in-the-same-cluster-group1.md)  
   
 -   [如何在多计算机方案中配置 SSO](../core/how-to-configure-sso-in-a-multicomputer-scenario.md)

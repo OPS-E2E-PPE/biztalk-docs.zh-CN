@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 11067 |Microsoft Docs
+title: 单一登录：事件 11067 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b2a75534c58f990575471644ad212235b4797ccf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5fc2b57b4a02504f0e21f74b55c94e8060926538
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990990"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65247304"
 ---
-# <a name="single-sign-on-event-11067"></a>单一登录： 事件 11067
+# <a name="single-sign-on-event-11067"></a>单一登录：事件 11067
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                     |
@@ -28,12 +28,12 @@ ms.locfileid: "36990990"
 | 产品版本 |             [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]              |
 |    事件 ID     |                                        11067                                        |
 |  事件源   |                                       ENTSSO                                        |
-|    组件    |                                         N/A                                         |
+|    组件    |                                         不可用                                         |
 |  符号名称  |                      SSO_ERROR_PASSWORD_SYNC_MIIS_START_FAILED                      |
-|  消息正文   | Windows 的密码同步（从 MIIS）启动失败。%r<br /><br /> 错误代码： %1 |
+|  消息正文   | Windows （从 MIIS 进行) 的密码同步无法 start.%r<br /><br /> 错误代码： %1 |
   
 ## <a name="explanation"></a>解释  
- 此信息消息表示，Windows 的密码同步（从 MIIS）启动失败。  
+ 这是一条信息性消息，指出无法启动 （从 MIIS 进行) 的 Windows 密码同步。  
   
 ## <a name="user-action"></a>用户操作  
  不需要任何用户操作。

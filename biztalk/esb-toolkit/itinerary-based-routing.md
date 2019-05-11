@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 13be8ab9078a2c12e110c5d80b65b2930d805952
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fe1132920b18cc331786d515b916de2861409339
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970878"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65261557"
 ---
 # <a name="itinerary-based-routing"></a>基于路线的路由
 核心功能之一[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]是预配的基于路线的路由，简化了企业级消息传送应用程序的开发和降低成本的维护大量的静态发送端口和接收位置。  

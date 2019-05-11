@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a63f015541c93f1fb2000eed064aaa50df0fca86
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9d9ab8aa171c814ed353e289911c31e8c08fcb11
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977310"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286411"
 ---
 # <a name="update-repair-or-uninstall-biztalk-accelerator-for-hl7"></a>更新、 修复或卸载 BizTalk Accelerator for HL7
 
@@ -26,7 +26,7 @@ ms.locfileid: "36977310"
 > [!IMPORTANT]
 >  请务必卸载[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]然后再卸载[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)] 如果无法卸载[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]不再安装。  
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先决条件
 * 使用的成员帐户登录[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]Administrators 组。  
 
 * 此用户帐户还必须是 Administrators 组的成员上[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]存储 BizTalk Accelerator for HL7 数据。  
@@ -50,7 +50,7 @@ ms.locfileid: "36977310"
   
 6. 选择“安装”。  
   
-7. 完成时，选择“完成”。  
+7. 完成后，选择**完成**。  
 
 ## <a name="repair-an-existing-installation"></a>修复现有安装
 [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]向导通过修复丢失或损坏的文件、 快捷方式或注册表项来修复安装。  
@@ -75,7 +75,7 @@ ms.locfileid: "36977310"
 > [!IMPORTANT]
 >  如果接收位置或发送端口使用 MLLP 传输类型，BTAHL7 安装程序不会在卸载 BTAHL7 的过程删除 MLLP 适配器。 在卸载之前，删除所有接收位置或发送端口使用 MLLP 传输。 或者，从 MLLP 的传输类型更改为另一种类型。 然后，卸载会删除 MLLP 适配器。  
       
-1. 打开“程序和功能”。  
+1. 打开**程序和功能**。  
   
 2. 选择[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]，然后选择**卸载**。  
   
@@ -97,9 +97,9 @@ ms.locfileid: "36977310"
   
 1. 以本地管理员身份登录到服务器。  
   
-2. 卸载 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。  
+2. 卸载[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。  
   
-3. 卸载 [!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]。  
+3. 卸载[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]。  
   
 ## <a name="see-also"></a>请参阅  
 [安装或升级 Microsoft BizTalk Accelerator for HL7](../../adapters-and-accelerators/accelerator-hl7/install-or-upgrade-microsoft-biztalk-accelerator-for-hl7.md)

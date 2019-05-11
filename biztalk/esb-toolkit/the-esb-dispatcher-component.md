@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 16281ff49da6470212e9e8396a051270adf1eef7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0a3a46e9a8fab078b9599fce9d149781bf140001
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982126"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65399839"
 ---
 # <a name="the-esb-dispatcher-component"></a>ESB 调度程序组件
 ESB 调度程序组件内执行基于消息传送的路线服务。 调度程序组件可以动态地设置终结点的出站消息的位置属性，并动态转换消息。  

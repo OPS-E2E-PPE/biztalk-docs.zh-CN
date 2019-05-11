@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 613bfa623110a4792894da71365c1a40d7856c15
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 541e5bcce9420fdbca8af25de9bee24bfb607435
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003622"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253475"
 ---
 # <a name="how-to-identify-bottlenecks-in-the-bam-primary-import-database"></a>如何找出 BAM 主导入数据库的瓶颈
 若要标识业务活动监视 (BAM) 数据库的瓶颈，请执行以下步骤：  

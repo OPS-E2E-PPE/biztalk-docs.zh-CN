@@ -12,23 +12,23 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c00e49afa528bc0008d73272dca561d461660367
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1e524f96114e887569c10294be0e665f1aa711a6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008486"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65337933"
 ---
 # <a name="how-to-enable-routing-for-failed-messages"></a>如何为失败消息启用路由功能
-失败消息路由是发送端口和接收端口的属性，可通过在端口的属性页上指示“为失败消息启用路由功能”来启用。  
+失败的消息路由是一个属性的发送和接收端口和情况下，该值指示"为失败消息启用路由"端口的属性页上启用。  
   
 > [!NOTE]
->  配置在接收端口上时，适用于与该接收端口有关的所有接收位置。  
+>  接收端口上的配置适用于所有与该接收端口相关联的接收位置。  
   
 > [!NOTE]
->  配置在发送端口上时，既适用于主传输，也适用于备份传输。  
+>  发送端口上的配置适用于主要和备份传输。  
   
-### <a name="to-configure-failed-message-routing-for-a-receive-port-this-applies-to-both-one-way-and-request-response-receive-ports"></a>为接收端口配置失败消息路由（此配置适用于单向接收端口和请求-响应接收端口）  
+### <a name="to-configure-failed-message-routing-for-a-receive-port-this-applies-to-both-one-way-and-request-response-receive-ports"></a>若要配置失败的消息路由的接收端口 (这适用于单向和请求-响应接收端口)  
   
 1. 打开 BizTalk Server 管理控制台。  
   
@@ -36,13 +36,13 @@ ms.locfileid: "37008486"
   
 3. 单击**接收端口**文件夹。  
   
-4. 在右侧窗格中，双击要配置的接收端口的名称。  
+4. 在右窗格中，双击你想要配置的接收端口的名称。  
   
 5. 在接收端口属性页上，在左窗格中，选择**常规**类别。  
   
 6. 在右窗格中，选择**失败消息启用路由功能**复选框，然后依次**应用**。  
   
-### <a name="to-configure-failed-message-routing-for-a-send-port-this-applies-only-to-static-one-way-and-static-solicit-response-send-ports"></a>为发送端口配置失败消息路由（此配置仅适用于静态单向发送端口和静态要求-响应发送端口）  
+### <a name="to-configure-failed-message-routing-for-a-send-port-this-applies-only-to-static-one-way-and-static-solicit-response-send-ports"></a>若要配置失败消息路由的发送端口 （这仅适用于静态单向和静态要求响应发送端口）  
   
 1. 打开 BizTalk Server 管理控制台。  
   
@@ -50,7 +50,7 @@ ms.locfileid: "37008486"
   
 3. 单击**发送端口**文件夹。  
   
-4. 在右侧窗格中，双击要配置的发送端口的名称。  
+4. 在右窗格中，双击你想要配置的发送端口的名称。  
   
 5. 在发送端口的属性页上，在左窗格中，选择**传输高级选项**类别。  
   

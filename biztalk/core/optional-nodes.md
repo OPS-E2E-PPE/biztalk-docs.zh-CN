@@ -18,23 +18,23 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 91fe82709df36b374d8744e2060798074835b891
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bbab14a66f0ac88f32e945bf7b9c738eb419b654
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994086"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65323399"
 ---
 # <a name="optional-nodes"></a>可选节点
-使用可选节点将导致在测试映射时出现警告。 在以下两种情况中源节点可能会被视为可选节点：  
+使用可选节点会在测试映射时生成警告。 有在其中一个源节点可能会被视为可选的两个条件：  
   
 - 实际的记录或字段是可选的。  
   
-- 源记录或源字段是必需的，但是其父级、祖父级或更高级别的层次是可选的。  
+- 源记录或字段是必需的但父级、 祖父级和更高级别的层次结构是可选的。  
   
-  可能存在这样的情况，源架构中的记录和字段是可选的，但目标架构却需要相应的记录或字段。  
+  您可能会存在这样的情况的记录和源架构中的字段是可选的但目标架构所需的相应记录或字段。  
   
-  在这种可能的情况，测试您的映射生成中的警告**输出**窗口。 此外，输出数据将不包含目标节点。  
+  在这种可能的情况，测试您的映射生成中的警告**输出**窗口。 此外，输出数据将不包括目标节点。  
   
 ## <a name="see-also"></a>请参阅  
  [测试映射](../core/testing-maps.md)

@@ -1,5 +1,5 @@
 ---
-title: EDI 组结构化元素 |Microsoft 文档
+title: EDI 组结构元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 555d7b86e069adda4f7761b698793fd4ec2af721
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c05591419e83063d8ebd8f4f79dffe801eeb2a76
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22242517"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65350482"
 ---
 # <a name="edi-group-structural-element"></a>EDI 组结构元素
-组包含一个或多个事务集。 一个 EDIFACT 组必须包含同一类型的事务集。 一个 X12 组可能包含类似类型的事务集（基于事务集 - 组 (GS01-ST01) 映射）或相同类型的事务集。 列表类似 X12 事务集 (ST01)，可以在一个组 (GS01) 一起发生这种情况下表。  
+组包含一个或多个事务集。 一个 EDIFACT 组必须包含相同类型的事务集。 X12 组可能包含类似类型的事务集 （基于事务集-组 (GS01-ST01) 映射） 或相同类型的事务集。 下面列出了类似 X12 事务集 (ST01) 可能会一起发生在单个组 (GS01) 表。  
   
 |GS01|ST01|  
 |----------|----------|  
@@ -105,12 +105,12 @@ ms.locfileid: "22242517"
 |WA|143|  
   
 > [!NOTE]
->  HIPAA 5010 组还允许单一组内存在不同版本的事务集。  
+>  HIPAA 5010 组还允许单个组中的不同版本的事务集。  
   
- 如果在处理事务集时遇到异常，将使用 EDI 参与方属性来确定是挂起整个交换还是仅挂起失败的事务集。  
+ 如果处理事务集时遇到异常，则挂起 EDI 参与方属性用于确定是否设置整个交换还是仅失败的事务。  
   
- 一个组必须以功能组标头（X12 中的 GS 或 EDIFACT 中的 UNG），且必须以功能组尾部（X12 中的 GE 或 EDIFACT 中的 UNE）结束。 组标头包含发送方和接收方代码、日期和时间、与标头和尾部匹配的控制编号、可能包括在功能组内的用于定义事务集的集合的组标识符以及其他信息。 组尾部具有指示组内事务集数目的元素。  
+ 组必须使用功能组标头 (GS 在 X12 中) 或在 EDIFACT 中，UNG 开头，它必须以功能组尾部 (X12 中的 GE) 或 EDIFACT 中的 UNE 结尾。 组标头包含发送方和接收方代码、 日期和时间、 与标头和尾部，定义可能会包含在功能组和其他信息的事务集的集合的组标识符相匹配的控制编号。 组尾部具有指示组内事务集数目的元素。  
   
- 组在 EDIFACT 交换内是可选的。 即使不存在组（不存在 UNG 段），一个 EDIFACT 交换也可包含多个事务集。 在此情况下，所有事务集都必须具有同一类型，因为一个组中的事务集的类型必须相同。 例如，APERAK 和 ORDERS 事务集不能同时出现在一个组或不具有多个组的交换中。  
+ 组是可选的 EDIFACT 交换中。 EDIFACT 交换可以包含多个事务集，即使不不存在任何组 （UNG 段不存在）。 在这种情况下，的事务集必须均为相同的类型，如单个组中的事务集必须属于同一类型。 例如，APERAK 和 ORDERS 事务集可能不能同时是存在于单个组或不具有多个组的交换中。  
   
- 组在 X12 交换内是必需的。
+ 一组需要在 X12 交换。

@@ -18,12 +18,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2215a5464c2798c7b7ffe6f128deccf48d8500e3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1127eed100389f548c7a4b579a44ee84120529e2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009150"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283774"
 ---
 # <a name="customizing-send-and-receive-components"></a>自定义发送和接收组件
 在本部分中的主题介绍如何创建、 自定义，或设置属性的 Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]发送和接收组件。 这些组件包括 ASPX 页、 发送和接收端口和适配器。  

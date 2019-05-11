@@ -13,15 +13,15 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8a4ed81978dd275be8eb0348ff15dc8748258239
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bebb8d3899c34dcde7a5d5c3059434d23202929a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977166"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65334978"
 ---
 # <a name="remove-incomplete-activity-instances"></a>删除不完整的活动实例
-在部署 BAM 定义文件时，系统会在 BAM 主导入数据库中为在该定义文件中定义的每个活动创建五个表。 这些表分别为：  
+部署 BAM 定义文件时，定义文件中定义的每个活动的 BAM 主导入数据库中创建五个表。 这些表是：  
   
 - bam_`ActivityName`_Active  
   
@@ -33,13 +33,13 @@ ms.locfileid: "36977166"
   
 - bam_`ActivityName`_Continuations  
   
-  其中，`ActivityName` 是用户已定义的活动名称。  
+  其中`ActivityName`是用户定义的活动的名称。  
   
   常规执行期间，不完整的数据保留在 bam_`ActivityName`*活动表。如果数据包含关系和引用，则不会在 bam 中有数据\\*`ActivityName`_ActiveRelationships 表。  
   
-  在跟踪使用继续符的活动期间，可能存在其活动在 BAM 数据库中尚保持未完成状态的实例。 您可以使用本主题结尾处的存储过程创建脚本创建将清除不完整记录的存储过程。  
+  在使用继续符的活动跟踪，都可能有未完成状态在 BAM 数据库中保留一个活动的实例。 可以使用本主题末尾的存储的过程创建脚本以创建将清除不完整记录的存储的过程。  
   
-  若要创建该存储过程，请通过使用 SQL Server Management 复制该脚本并对 BAM 主导入数据库执行它。 此脚本将生成一个名为的存储的过程**RemoveDanglingInstances**数据库中。  
+  若要创建存储的过程，将脚本复制并执行它对 BAM 主导入数据库使用 SQL Server 管理。 此脚本将生成一个名为的存储的过程**RemoveDanglingInstances**数据库中。  
   
 ## <a name="create-the-removedanglinginstances-stored-procedure"></a>创建 RemoveDanglingInstances 存储过程  
   
@@ -70,26 +70,26 @@ ms.locfileid: "36977166"
   
 |参数|Description|  
 |---------------|-----------------|  
-|@ActivityName nvarchar(128)|指定要删除的不完整活动实例的名称。|  
-|@ActivityId nvarchar(128)|（可选）指定存储过程只删除具有指定实例标识符的虚实例。|  
-|@DateThreshold 日期时间|（可选）指定删除活动表中早于（不是等于和早于，只是早于）给定日期的所有活动实例。|  
-|@NewTableExtension nvarchar(30)|（可选）指定存储过程通过将提供的扩展连接到现有活动表，创建三个新表。<br /><br /> 生成的表将是：<br /><br /> bam_ActivityName_Active_\<Extension\><br /><br /> bam_ActivityName_ActiveRelationships_\<Extension\><br /><br /> bam_ActivityName_Continuations_\<Extension\><br /><br /> 不完整实例将会移到新的表中，而不是从数据库中清除。<br /><br /> 如果这些表已存在，则该存储过程将重复使用它们；否则，将创建这些表。 **重要说明：** 的存储的过程已存在的表，如果假定其架构匹配的那些可在创建它们。 如果架构不匹配，则该存储过程将无法插入记录，并且取消操作也会失败。|  
+|@ActivityName nvarchar(128)|指定要删除的不完整的活动实例的名称。|  
+|@ActivityId nvarchar(128)|（可选）指定存储的过程删除仅与指定的实例标识符的虚实例。|  
+|@DateThreshold 日期时间|（可选）指定所有活动都实例中活动较旧的表 （不等于和早，只是早于） 给定日期会删除。|  
+|@NewTableExtension nvarchar(30)|（可选）指定该存储的过程通过连接到现有活动表提供的扩展来创建三个新表。<br /><br /> 将生成的表：<br /><br /> bam_ActivityName_Active_\<Extension\><br /><br /> bam_ActivityName_ActiveRelationships_\<Extension\><br /><br /> bam_ActivityName_Continuations_\<Extension\><br /><br /> 未完成的实例会移到新表，而不是从数据库中清除。<br /><br /> 如果已存在的表，存储的过程重新使用它们;否则，将创建。 **重要提示：** 如果已存在的表，存储的过程假定其架构匹配的那些可在创建它们。 如果架构不匹配，存储的过程将无法将记录插入和删除操作将失败。|  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder'`  
   
- 删除活动表、活动关系表和继续符表中“PurchaseOrder”活动的所有活动实例。  
+ 删除 PurchaseOrder 活动的所有活动实例处于活动状态，活动关系表和继续符表。  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder', @ActivityId = 'PO220567'`  
   
- 从“PurchaseOrder”活动的活动表、活动关系表和继续符表中只删除 ID 为“PO220567”的活动实例。  
+ 已从活动，活动 ID 为 PO220567 的活动实例中删除活动关系表和 PurchaseOrder 活动的继续符表。  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder', @DateThreshold='2005-02-02 19:27:03:533'`  
   
- 从“PurchaseOrder”活动的活动表、活动关系表和继续符表中删除 LastModified 时间早于 2005 年 2 月 2 日的 7:27:03.533 PM 的所有活动实例。  
+ 删除 LastModified 时间早于 2005 年 2 月 2 日的所有活动实例从活动，7:27:03.533 PM 活动关系表和 PurchaseOrder 活动的继续符表。  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder', @ActivityId = 'PO220567', @DateThreshold='2005-02-02 19:27:03:533'`  
   
- 删除其活动 ID 为 PO220567 且其 LastModified 列早于 2005 年 2 月 2 日 7:27:03.533 PM 的实例。  
+ 删除其活动 ID 为 po220567 且其 LastModified 列是早于 2005 年 2 月 2 日的活动实例 7:27:03.533 PM。  
   
  `exec RemoveDanglingInstances @ActivityName = 'PurchaseOrder', @DateThreshold='2005-02-02 19:27:03:533', @NewTableExtension=N'Dangling'`  
   
@@ -101,9 +101,9 @@ ms.locfileid: "36977166"
   
  bam_PurchaseOrder_Continuations_Dangling  
   
- 存储过程将从“PurchaseOrder”活动的活动表、活动关系表和继续符表中复制早于 2005 年 2 月 2 日的 7:27:03.533 PM 的所有未完成实例，然后将它们插入新创建的表中。 然后，将已复制的活动实例从活动表、活动关系表和继续符表中删除。  
+ 存储的过程将复制所有早于 2005 年 2 月 2 日的不完整的活动实例从活动、 活动关系 7:27:03.533 PM 和继续符表为 PurchaseOrder 活动，并将其插入到新创建的表。 从活动状态，然后删除复制的活动实例活动关系表和继续符表。  
   
-## <a name="stored-procedure-creation-script"></a>存储过程创建脚本  
+## <a name="stored-procedure-creation-script"></a>存储的过程创建脚本  
   
 ```  
 EXEC sp_stored_procedures @sp_name = 'RemoveDanglingInstances'  

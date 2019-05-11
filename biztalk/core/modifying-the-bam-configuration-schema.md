@@ -1,5 +1,5 @@
 ---
-title: 修改 BAM 配置架构 |Microsoft 文档
+title: 修改 BAM 配置架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,20 +16,20 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 87721445a19cff96799418c019560d09a1287488
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 18537eca346eef03676978a0e80c31e2daed9ba1
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263277"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65527591"
 ---
 # <a name="modifying-the-bam-configuration-schema"></a>修改 BAM 配置架构
-配置向导可自动创建此配置文件。 如果在完成部署后更改了服务器名称或其他配置信息，则必须手动修改此文件。  
+配置向导将自动创建此配置文件。 如果在完成部署后更改了服务器名称或其他配置信息，必须手动修改此文件。  
   
 > [!NOTE]
->  若要使自己在 BAM 配置文件中所做的更改生效，管理员必须先取消部署当前 BAM 配置，然后部署已更新的 BAMConfiguration.xml。  
+>  若要执行他们所做的更改 BAM 配置文件中，管理员必须取消部署当前 BAM 配置，然后部署已更新的 BAMConfiguration.xml。  
   
- 有关取消部署的 BAM 定义的信息，请参阅[正在取消部署的 BAM 定义](../core/how-to-remove-bam-definitions.md)。 有关部署的 BAM 定义的信息，请参阅[部署 BAM 定义](../core/how-to-deploy-bam-definitions.md)。  
+ 有关取消部署 BAM 定义的信息，请参阅[取消部署 BAM 定义](../core/how-to-remove-bam-definitions.md)。 有关部署 BAM 定义的信息，请参阅[部署 BAM 定义](../core/how-to-deploy-bam-definitions.md)。  
   
  下面是用于 BAMConfiguration.xml 文件的架构：  
   
@@ -59,7 +59,7 @@ ms.locfileid: "22263277"
 </xs:schema>  
 ```  
   
- 下面是符合 BAM 配置架构的 XML 文件的示例：  
+ 下面的示例是符合 BAM 配置架构的 XML 文件。  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -97,7 +97,7 @@ ms.locfileid: "22263277"
 </BAM:BAMConfiguration>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [BAM 配置架构](../core/bam-configuration-schema.md)   
  [BAM 安全建议](../core/bam-security-recommendations.md)   
  [业务活动监视 (BAM)](../core/business-activity-monitoring-bam.md)

@@ -1,5 +1,5 @@
 ---
-title: 如何： 选择使用业务规则策略路线 |Microsoft Docs
+title: 如何：选择使用业务规则策略路线 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 12496da0de4057e96be0b714ad1af048ee6b8ef1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1fa3ace22ccbb503e48355162e845218dd68f1e8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976958"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65258485"
 ---
-# <a name="how-to-select-an-itinerary-using-a-business-rules-policy"></a>如何： 选择使用业务规则策略路线
+# <a name="how-to-select-an-itinerary-using-a-business-rules-policy"></a>如何：选择使用业务规则策略路线
 ## <a name="goal"></a>目的  
  本部分演示如何创建可用于选择路线根据收到的消息的内容的业务规则以及如何配置路线选择器管道组件中泛型路线接入点来调用这些规则。 本部分介绍业务方案中的消息路由以不同的方式，根据客户所在的区域。  
   
@@ -31,7 +31,7 @@ ms.locfileid: "36976958"
   
 -   配置路线选择器管道组件以使用业务规则策略选择适当的路线。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  本操作指南主题中的过程要求在完成[开发活动的先决条件](../esb-toolkit/prerequisites-for-the-development-activities.md)。  
   
 ## <a name="before-you-begin"></a>开始之前  
@@ -72,7 +72,7 @@ ms.locfileid: "36976958"
 2.  在策略浏览器中右键单击**策略**，然后单击**添加新策略**。 将策略命名**ResolveItineraryBasedOnCustomer**。  
   
     > [!NOTE]
-    >  本操作指南主题的主题中创建使用相同的业务规则策略和路线[如何： 拆分交换并将生成的消息路由到多个文件的位置使用不同的路线](../esb-toolkit/split-an-interchange-and-route-messages-to-multiple-locations-using-itineraries.md)。 如果你已完成该部分，可以跳过本主题中后面到过程中，"以创建和配置 ESB 接入点"。  
+    >  本操作指南主题的主题中创建使用相同的业务规则策略和路线[如何：将某个交换拆分，并将结果消息路由到多个文件位置，使用不同的路线](../esb-toolkit/split-an-interchange-and-route-messages-to-multiple-locations-using-itineraries.md)。 如果你已完成该部分，可以跳过本主题中后面到过程中，"以创建和配置 ESB 接入点"。  
   
 #### <a name="to-add-a-selection-rule-for-customer-globalbank-west"></a>若要添加客户 GlobalBank 西部选择规则  
   
@@ -338,7 +338,7 @@ ms.locfileid: "36976958"
 ## <a name="additional-resources"></a>其他资源  
  有关详细信息，请参阅下列相关主题：  
   
--   [如何：拆分交换并使用不同的路线将生成的消息路由至多个文件位置](../esb-toolkit/split-an-interchange-and-route-messages-to-multiple-locations-using-itineraries.md)  
+-   [如何：将某个交换拆分，并将结果的消息路由到多个使用不同的路线的文件位置](../esb-toolkit/split-an-interchange-and-route-messages-to-multiple-locations-using-itineraries.md)  
   
 -   [开发活动](../esb-toolkit/development-activities.md)  
   

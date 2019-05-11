@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 359b91a1a5da9ce435d3d9aa5884d6928d0e0a9b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ad8fe10f3da18822e722c57159fd9707de5ced8a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987534"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400066"
 ---
 # <a name="one-way-messaging-scenarios-for-the-dynamic-resolution-sample"></a>动态解析示例的单向消息传送方案
 本主题演示如何运行的单向消息传送方案[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]动态解析示例。  
@@ -85,7 +85,7 @@ ms.locfileid: "36987534"
 
 5. 在 Windows 资源管理器，打开文件夹 \Source\Samples\DynamicResolution\Test\Data 并将相应的输入的文件复制到文件夹 \Source\Samples\DynamicResolution\Test\Filedrop\In。 使用的文件取决于您决定要执行的示例：  
 
-   -   有关 XPATH 的示例中，使用以下文件之一： NAOrderDoc_XPATH_FILE.xml、 NAOrderDoc_XPATH_FTP.xml 或 NAOrderDoc_XPATH_MQS.xml。  
+   -   有关 XPATH 的示例中，使用以下文件之一：NAOrderDoc_XPATH_FILE.xml、 NAOrderDoc_XPATH_FTP.xml 或 NAOrderDoc_XPATH_MQS.xml。  
 
    -   对于所有其他示例，请使用文件 NAOrderDoc.xml。  
 

@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 555934e0be188011a69efb3966e5316bc716c254
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c305afe09a7ff116d04554bb1c1962a137274945
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023819"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330094"
 ---
 # <a name="invalid-time"></a>无效的时间
 ## <a name="details"></a>详细信息  
@@ -33,7 +33,7 @@ ms.locfileid: "37023819"
 |  消息正文   |                                      无效的时间                                      |
   
 ## <a name="explanation"></a>解释  
- 此错误/警告/信息事件表明接收管道无法处理传入的交换，因为数据元素中的某个时间值不符合 EDI 架构指定的数据类型或者 X12 交换中 GS05 字段标头的此时间值不符合服务架构（BaseArtifacts.dll 中的 X12ServiceSchema）。 对于 X12，服务架构在 GS05 字段中定义了一个 X12_TM 数据类型的时间，字符长度介于 4 和 8 个字符之间。  
+ 此错误/警告/信息事件表明接收管道不无法处理传入的交换，因为数据元素中的时间值不符合指定的 EDI 架构或 GS05 字段标头在 X12 中的时间值的数据类型交换不符合服务架构 (baseartifacts.dll 中的 X12ServiceSchema)。 对于 X12，服务架构在 GS05 字段 X12_TM 数据类型和长度的四个和 8 个字符之间定义的时间。  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请确保数据元素中的时间值符合 EDI 架构指定的数据类型或 X12 交换的 GS05 标头中的时间值符合服务架构，然后重新发送交换。
+ 若要解决此错误，请确保时间数据元素中的值符合 EDI 架构或时间值的 X12 交换符合服务架构在 GS05 标头中指定的数据类型，然后重新发送交换。

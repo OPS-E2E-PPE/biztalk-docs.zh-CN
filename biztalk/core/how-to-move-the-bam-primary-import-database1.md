@@ -15,18 +15,18 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ff5caa9120be64e919ab4b6050f8df0c62fa33a6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5035be00b043b7ea35c76fcecabd50663ef91f26
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010606"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65335860"
 ---
 # <a name="how-to-move-the-bam-primary-import-database"></a>如何移动 BAM 主导入数据库
-您可以使用此过程将 BAM 主导入数据库移至其他服务器。  
+可以使用此过程将 BAM 主导入数据库移到另一台服务器。  
   
-## <a name="prerequisites"></a>必要條件  
- 若要执行此过程，必须以 SQL Server sysadmin 固定服务器角色成员的帐户登录。  
+## <a name="prerequisites"></a>先决条件  
+ 您必须是 SQL Server sysadmin 固定服务器角色的成员才能执行此过程的帐户登录。  
   
 ### <a name="to-move-the-bam-primary-import-database"></a>移动 BAM 主导入数据库  
   
@@ -34,7 +34,7 @@ ms.locfileid: "37010606"
   
 2. 停止 IIS 服务。  
   
-3. 停止 BAM 警报 Notification Service：  
+3. 停止 BAM 警报 Notification Service:  
   
    1.  单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
@@ -44,13 +44,13 @@ ms.locfileid: "37010606"
        Net stop NS$BamAlerts  
        ```  
   
-4. 按照 SQL Server 联机从书中的说明在旧服务器上备份 BAM 主导入数据库。  
+4. 按照 SQL Server 联机丛书中的说明在旧服务器上备份 BAM 主导入数据库。  
   
-5. 将 BAM 主导入数据库复制到新 SQL Server 中。  
+5. 将 BAM 主导入数据库复制到新的 SQL Server。  
   
-6. 按照 SQL Server 联机从书中的说明在新服务器上还原 BAM 主导入数据库。  
+6. 按照 SQL Server 联机丛书中的说明来还原新服务器上的 BAM 主导入数据库。  
   
-7. 在运行 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的计算机中，浏览至以下文件夹：  
+7. 运行的计算机上[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，浏览到以下文件夹：  
   
     [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Schema\Restore  
   
@@ -59,12 +59,12 @@ ms.locfileid: "37010606"
 9. 在该文件的主导入数据库部分，将为**SourceServer**的源系统，然后替换名称 **"DestinationServer"** 与目标系统的名称。  
   
     > [!IMPORTANT]
-    >  用引号将源系统和目标系统的名称括起来。  
+    >  包括源和目标系统的名称周围的引号。  
   
     > [!NOTE]
-    >  如果对任何 BizTalk Server 数据库进行了重命名，则必须也相应地更新这些数据库的名称。  
+    >  如果您重命名任何 BizTalk Server 数据库，还必须更新相应数据库的名称。  
   
-10. 取消 xml 文件中以下行的注释：  
+10. 取消注释的 xml 文件中的以下行：  
   
     ```  
     - <UpdateConfiguration>  
@@ -103,11 +103,11 @@ ms.locfileid: "37010606"
       </UpdateConfiguration>  
     ```  
   
-11. 编辑完此文件后，请进行保存然后退出。  
+11. 在完成编辑文件，请将其保存并退出。  
   
 12. 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-13. 在命令提示符下，导航到以下目录：  
+13. 在命令提示符处，导航到以下目录：  
   
      [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]Schema\Restore  
   
@@ -127,7 +127,7 @@ ms.locfileid: "37010606"
   
     5.  在“文件”菜单上，单击“保存”。  
   
-16. 按照以下步骤，更新所有 BAM 分析 DTS 包（带有“BAM_AN_”或“BAM_DM_”前缀）中的服务器名称和数据库名称：  
+16. 更新所有 BAM 分析 DTS 包中，通过执行以下步骤带有"BAM_AN_"或"BAM_DM_"前缀的服务器和数据库名称：  
   
     1.  在 BAM 的宿主服务器上，打开 SQL Server 企业管理器。  
   
@@ -141,15 +141,15 @@ ms.locfileid: "37010606"
   
     6.  更改以下行，以匹配新的服务器和数据库：  
   
-         PrimaryImportServer ="*\<ServerName\>*"  
+         PrimaryImportServer= "*\<ServerName\>*"  
   
-         PrimaryImportDatabase ="*\<DatabaseName\>*"  
+         PrimaryImportDatabase = "*\<DatabaseName\>*"  
   
 17. 启动所有 BizTalk Server 服务。 有关详细信息，请参阅[如何启动、 停止、 暂停、 继续或重新启动 BizTalk Server Services](../core/how-to-start-stop-pause-resume-or-restart-biztalk-server-services.md)。  
   
 18. 启动 IIS 服务。  
   
-19. 启动 BAM 警报 Notification Service：  
+19. 启动 BAM 警报 Notification Service:  
   
     1.  单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   

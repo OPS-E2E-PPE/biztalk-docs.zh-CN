@@ -12,17 +12,17 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4bf978b64876a91d06acfbe4c5d34278935cfa55
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 85aa5f7d134e14d16fbb4fb88fcff29cf6ce672f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970886"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400273"
 ---
 # <a name="how-to-update-a-pipeline-using-side-by-side-versioning"></a>如何更新使用的并行版本控制的管道
 使用新的管道的并行版本控制添加的简单方法是选择新部署的管道版本中的发送端口或接收位置。 这将使用新替换旧的管道。 但是，如果用于向后兼容性需要真正的并行功能，然后你必须创建新发送端口和接收位置并将其绑定到指定的新管道版本。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  若要执行本主题中的过程，必须是 BizTalk Server Administrators 组的成员的帐户登录。  
   
 ### <a name="to-add-a-new-version-of-a-pipeline-component"></a>若要添加管道组件的新版本  

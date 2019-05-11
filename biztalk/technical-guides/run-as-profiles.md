@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5a1281fa77956d96e4461a91fffb737499327ef2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4a51092ace594033ae559e536cb65240ac44e063
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982086"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65270425"
 ---
 # <a name="run-as-profiles"></a>运行方式配置文件
 首次导入 BizTalk Server 核心库管理包，将创建两个新运行方式配置文件：  

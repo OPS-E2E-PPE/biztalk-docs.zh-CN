@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 90c66ee201e5a73d8f632a8002a9a3627d1885f1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4f577b96f07daa6367a6e68550df441b9d355c5d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968062"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286561"
 ---
 # <a name="table-values-common-schemas"></a>表值通用架构
 Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 生成**tablevalues_*\<版本\>*.xsd**文件为每个 HL7 版本，并查找的根目录处的文件HL7 版本特定的文件夹。 数据类型通用架构文件引用的表值通用架构文件。  

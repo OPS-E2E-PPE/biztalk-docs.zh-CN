@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 947a557a81c6857b5d31f447acb2ec5a46cfcef9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 762aa7fbbb76cb97e796fa85e89158cd594d8ce0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993342"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253872"
 ---
-# <a name="the-x12-transaction-set-had-a-mismatched-count-in-se01"></a>X12 事务集在 SE01 中的计数不匹配
+# <a name="the-x12-transaction-set-had-a-mismatched-count-in-se01"></a>X12 事务集在 SE01 中有计数不匹配
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                               |
@@ -30,10 +30,10 @@ ms.locfileid: "36993342"
 |  事件源   |                    [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                     |
 |    组件    |                                                          EDI 引擎                                                           |
 |  符号名称  |                                                     X12StSeCountMismatch                                                      |
-|  消息正文   | X12 事务集在 SE01 中的计数不匹配。 SE01 为{0}，而它应该已{1}。 此错误已纠正。 |
+|  消息正文   | X12 事务集在 SE01 中有计数不匹配。 SE01 为{0}，而它应该已{1}。 已纠正。 |
   
 ## <a name="explanation"></a>解释  
- 此警告表明事务集尾部中的数字（SE01 字段）与交换的事务集中的段数不匹配。 发送管道纠正了 SE01 字段中的计数并发布了此警告。  
+ 此警告表明事务集尾部 （SE01 字段） 中的编号未与交换的事务集中的段数不匹配。 发送管道纠正了 SE01 字段中的计数，发布了此警告。  
   
 ## <a name="user-action"></a>用户操作  
  无需执行任何操作。

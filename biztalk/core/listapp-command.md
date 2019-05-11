@@ -12,39 +12,39 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 51299b6f3488e1088fac2b903c9146bee93885e5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e397fe9ad768ffa367c6699ec2f3abb4006e4a26
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987302"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65328723"
 ---
 # <a name="listapp-command"></a>ListApp 命令
-将 BizTalk 应用程序中所有资源项目的列表以及每个项目的本地唯一标识符 (LUID) 和类型输出到控制台。 资源项目是可以通过使用添加到 BizTalk 应用程序[AddResource 命令](../core/addresource-command.md)，如程序集、 脚本、 文件、 策略、 COM 组件、 虚拟目录、 BAM 项目或证书。 这些资源项目还会显示在 BizTalk Server 管理控制台的“资源”节点下。  
+所有 BizTalk 应用程序，以及本地唯一标识符 (LUID) 和类型的每个项目中的资源项目的列表输出到控制台。 资源项目是可以通过使用添加到 BizTalk 应用程序[AddResource 命令](../core/addresource-command.md)，如程序集、 脚本、 文件、 策略、 COM 组件、 虚拟目录、 BAM 项目或证书。 这些资源项目还会显示在 BizTalk Server 管理控制台的资源节点中。  
   
- 如果为此命令指定 ResourceSpec 参数，则相同的信息将被写入 .xml 文件中。 可以使用此.xml 文件，其**ExportApp**命令，将导出到.msi 文件，应用程序中的项目的子集，如中所述[ExportApp 命令](../core/exportapp-command.md)。  
+ 如果指定此命令的 ResourceSpec 参数，则相同的信息写入一个.xml 文件。 可以使用此.xml 文件，其**ExportApp**命令，将导出到.msi 文件，应用程序中的项目的子集，如中所述[ExportApp 命令](../core/exportapp-command.md)。  
   
- 对于虚拟目录，此命令将“localhost”替换为 Web 服务器主机名。 如果使用 ExportApp 命令的 ResourceSpec 参数所生成的文件，则在 Web 服务器存在于远程计算机时，需要手动编辑该文件，将“localhost”替换为主机名和端口号。 如果不这样做，虚拟目录及其内容将不添加到应用程序的 .msi 文件中。  
+ 对于虚拟目录，此命令将替换为 Web 服务器主机名"localhost"。 如果使用 ExportApp 命令的 ResourceSpec 参数生成的文件，则手动编辑要替换的主机名为"localhost"和端口号，如果 Web 服务器存在于远程计算机上的文件。 如果不这样做，虚拟目录及其内容将不会添加到应用程序.msi 文件。  
   
  示例： http://MyWebServer:80/MyVirtualDirectory。  
   
 ## <a name="usage"></a>用法  
- **BTSTask ListApp** [**/ApplicationName:**<em>值</em>] [**/ResourceSpec:**<em>值</em>] [**/Server:**<em>值</em>] [**/database:**<em>值</em>]  
+ **BTSTask ListApp** [**/ApplicationName:**<em>value</em>] [**/ResourceSpec:**<em>value</em>] [**/Server:**<em>value</em>] [**/Database:**<em>value</em>]  
   
 ## <a name="parameters"></a>Parameters  
   
 |参数|Required|ReplTest1|  
 |---------------|--------------|-----------|  
-|**/ ApplicationName** (或 **/A**，请参阅备注)|“否”|要列出其项目的 BizTalk 应用程序的名称。 如果名称包含空格，必须将其用双引号 （"）。  如果未指定此参数，则使用默认的应用程序。|  
-|**/ ResourceSpec** (或 **/R**，请参阅备注)|“否”|要用此命令生成的 .xml 文件的完整路径。 此文件将列出应用程序中的各个项目，以及每个项目的 LUID 和类型。 示例： C:\Artifacts\MyArtifacts.xml。 如果路径包含空格，则必须用双引号 （"）。 如果已存在具有相同路径和文件名的文件，则该文件将被覆盖。|  
-|**/ 服务器**(或 **/S**，请参阅备注)|“否”|BizTalk 管理数据库的宿主 SQL Server 实例的名称，格式为“服务器名称\实例名称,端口”。<br /><br /> 只在实例名称与服务器名称不相同时才需要指定实例名称。 只在 SQL Server 不使用默认端口号 (1433) 时才需要指定端口。<br /><br /> 示例：<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> 如果未提供，则使用本地计算机上运行的 SQL Server 实例的名称。|  
-|**/ 数据库**(或 **/D**，请参阅备注)|“否”|BizTalk 管理数据库的名称。 如果未指定，则使用在本地 SQL Server 实例中运行的 BizTalk 管理数据库。|  
+|**/ ApplicationName** (或 **/A**，请参阅备注)|否|向 BizTalk 应用程序的项目列表的名称。 如果名称包含空格，必须将其用双引号 （"）。  如果未指定此参数，则使用默认应用程序。|  
+|**/ ResourceSpec** (或 **/R**，请参阅备注)|否|若要使用此命令生成的.xml 文件的完整路径。 此文件将列出应用程序，以及的 LUID 和类型的每个中的项目。 例如：C:\Artifacts\MyArtifacts.xml. 如果路径包含空格，则必须用双引号 （"）。 如果已具有相同的路径和文件名称的文件存在，则将覆盖。|  
+|**/ 服务器**(或 **/S**，请参阅备注)|否|承载 BizTalk 管理数据库，在窗体 ServerName\InstanceName，端口中的 SQL Server 实例的名称。<br /><br /> 实例名称仅是所需的实例名称不同于服务器名称时。 端口是仅在 SQL Server 使用的端口号而不是默认 (1433) 时所需。<br /><br /> 示例：<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> 如果未提供，则使用本地计算机上运行的 SQL Server 实例的名称。|  
+|**/ 数据库**(或 **/D**，请参阅备注)|否|BizTalk 管理数据库的名称。 如果未指定，使用 SQL Server 的本地实例中运行的 BizTalk 管理数据库。|  
   
 ## <a name="sample"></a>示例  
  **BTSTask ListApp /ApplicationName:MyApplication /ResourceSpec:C:\Artifacts\MyArtifacts.xml**  
   
-## <a name="remarks"></a>Remarks  
- 参数不区分大小写。 指定参数无需键入整个参数名，只需键入可明确标识该参数的参数名的前几个字母即可。  
+## <a name="remarks"></a>备注  
+ 参数不区分大小写。 不需要键入整个参数名称来指定它;您可以键入明确标识参数名称的第几个字母。  
   
 ## <a name="see-also"></a>请参阅  
  [BTSTask 命令行参考](../core/btstask-command-line-reference.md)

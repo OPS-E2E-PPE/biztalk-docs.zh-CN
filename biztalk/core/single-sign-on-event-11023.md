@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 11023 |Microsoft Docs
+title: 单一登录：Event 11023 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cecf9536babaf2510444abade571149c5fc0e0a2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 525c2bd0759aa24c191991e075276bd75233d6d0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991534"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65266537"
 ---
-# <a name="single-sign-on-event-11023"></a>单一登录： 事件 11023
+# <a name="single-sign-on-event-11023"></a>单一登录：事件 11023
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                                                                                                                            |
@@ -28,12 +28,12 @@ ms.locfileid: "36991534"
 | 产品版本 |                                                                                                                 [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                                                                 |
 |    事件 ID     |                                                                                                                                           11023                                                                                                                                            |
 |  事件源   |                                                                                                                                           ENTSSO                                                                                                                                           |
-|    组件    |                                                                                                                                            N/A                                                                                                                                             |
+|    组件    |                                                                                                                                            不可用                                                                                                                                             |
 |  符号名称  |                                                                                                                             SSO_WARN_WINDOWS_PASSWORD_DELETED                                                                                                                              |
-|  消息正文   | 已删除 SSO 数据库中无效的 Windows 密码以阻止帐户锁定。%r<br /><br /> 请使用 SSO 管理工具为此 Windows 帐户设置外部凭据。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> Windows 帐户： %3 |
+|  消息正文   | 已删除 SSO 数据库中无效的 Windows 密码以阻止帐户 lockout.%r<br /><br /> 使用 SSO 管理工具设置为此 Windows account.%r 的外部凭据<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> Windows 帐户： %3 |
   
 ## <a name="explanation"></a>解释  
- 已删除无效的 Windows 密码。  
+ 无效的 Windows 密码已被删除。  
   
 ## <a name="user-action"></a>用户操作  
- 使用 SSO 管理工具为此 Windows 帐户设置外部凭据。 有关详细信息，请参阅[使用 SSO](../core/using-sso.md)。
+ 使用 SSO 管理工具来设置此 Windows 帐户的外部凭据。 有关详细信息，请参阅[使用 SSO](../core/using-sso.md)。

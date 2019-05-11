@@ -15,17 +15,17 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5f5a4390cc62fdb46cbad9993a106d98163c0838
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 00fb00a1b256be192ce591b2b11ec70ab9b9d398
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975862"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283725"
 ---
 # <a name="exporting-certificates"></a>导出证书
-本主题说明如何使用证书导出向导导出证书。 使用此向导可导出公用证书或私用证书。  
+本主题介绍如何使用证书导出向导导出的证书。 使用此向导导出公共证书或私用证书。  
   
-### <a name="to-export-a-partner-certificate"></a>导出合作伙伴证书  
+### <a name="to-export-a-partner-certificate"></a>若要导出合作伙伴证书  
   
 1. 单击**启动**，依次指向**所有程序**，指向**Microsoft** [!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)] ，然后单击[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]**管理控制台**.  
   
@@ -35,14 +35,14 @@ ms.locfileid: "36975862"
   
 4. 上**欢迎使用证书导出向导**页上，单击**下一步**。  
   
-5. 上**导出文件格式**页上，选择你想要使用的文件的格式。 此格式通常为 DER 编码二进制 x.509，用于导出二进制编码文件，或者是 Base64 编码的 x.509，用于导出 Base64 编码文件。  
+5. 上**导出文件格式**页上，选择你想要使用的文件的格式。 此格式通常为 DER 编码二进制 x.509，用于导出二进制编码的文件，或 Base-64 编码 x.509，用于导出的 Base-64 编码文件。  
   
    > [!NOTE]
-   >  使用 Base64 对证书编码使得可以在 UNIX 服务器上使用证书。  
+   >  对证书采用 Base-64 编码，可以在 UNIX 服务器上使用证书。  
   
 6. 上**导出的文件**页上，单击**浏览**，找到你想要将文件存储，其中类型的文件的名称，单击**下一步**，然后单击**完成**.  
   
-### <a name="to-export-the-home-organization-certificate"></a>导出本组织证书  
+### <a name="to-export-the-home-organization-certificate"></a>若要导出本组织证书  
   
 1. 单击**启动**，单击**运行**，类型**runas /user:\<承载服务\>mmc**，其中\< *hostservice* \>是安装 Microsoft 时与主机服务关联的服务名称[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]，然后单击**确定**中运行 Microsoft 管理控制台 (MMC)主机服务的上下文。  
   
@@ -63,10 +63,10 @@ ms.locfileid: "36975862"
    > [!NOTE]
    >  **是，导出私钥**选项将不可用，如果你未作私钥可导出时您首次导入它。  
   
-6. 上**导出文件格式**页上，选择你想要使用的文件的格式。 此格式通常为 DER 编码二进制 x.509，用于导出二进制编码文件，或者是 Base64 编码的 x.509，用于导出 Base64 编码文件。  
+6. 上**导出文件格式**页上，选择你想要使用的文件的格式。 此格式通常为 DER 编码二进制 x.509，用于导出二进制编码的文件，或 Base-64 编码 x.509，用于导出的 Base-64 编码文件。  
   
    > [!NOTE]
-   >  使用 Base64 对证书编码使得可以在 UNIX 服务器上使用证书。  
+   >  对证书采用 Base-64 编码，可以在 UNIX 服务器上使用证书。  
   
 7. 上**导出的文件**页上，单击**浏览**，找到你想要将文件存储，其中类型的文件的名称，单击**下一步**，然后单击**完成**.  
   

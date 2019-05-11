@@ -1,5 +1,5 @@
 ---
-title: 信息-显示 XSLT 文件 |Microsoft 文档
+title: 信息-显示 XSLT 文件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d082c892546016286db68b17bb54abdff61db715
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0f0f761a47531cf6d6a783001366282e0fef08e4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256573"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65332109"
 ---
 # <a name="information---display-xslt-file"></a>信息-显示 XSLT 文件
 **错误代码**  

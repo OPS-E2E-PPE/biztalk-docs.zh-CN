@@ -13,17 +13,17 @@ caps.latest.revision: 35
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fca4bd709a872df739d82fbdfbeabc78df9d09f0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 17ba248941ef6351bd421b30bd0124073e20b791
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006494"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528639"
 ---
-# <a name="bam-end-to-end-biztalk-server-sample"></a>BAM 端对端（BizTalk Server 示例）
+# <a name="bam-end-to-end-biztalk-server-sample"></a>BAM 端对端 （BizTalk Server 示例）
 端到端示例演示如何使用 BAM 关联来自多个组件 （在这种情况下，三个业务流程和管道） 的事件。  
 
- BAM 重新构造了跨管道组件和业务流程的业务活动。 在最低级别，这是通过调用**EventStream.EnableContinuation**从每个实现组件的更多事件的活动。 在调用**EnableContinuation**是显式的同时通过将继续符文件夹添加到另一个调度和 ContinuationID 文件夹到遵循的计划中的跟踪配置文件进行 Orchestration1 和 Orchestration2 中的调用它。  
+ BAM 重新构造跨管道组件和业务流程的业务活动。 在最低级别，这是通过调用**EventStream.EnableContinuation**从每个实现组件的更多事件的活动。 在调用**EnableContinuation**是显式的同时通过将继续符文件夹添加到另一个调度和 ContinuationID 文件夹到遵循的计划中的跟踪配置文件进行 Orchestration1 和 Orchestration2 中的调用它。  
 
  下图说明了本示例中使用的工作流。  
 
@@ -31,29 +31,29 @@ ms.locfileid: "37006494"
 
 
 ## <a name="what-this-sample-does"></a>本示例的用途  
- BAM 端对端示例显示如何使用 BAM 从管道和多个业务流程收集信息并更新单个活动。  
+ BAM 端到端示例演示如何使用 BAM 从管道和多个业务流程收集信息并更新单个活动。  
 
-## <a name="how-this-sample-was-designed-and-why"></a>本示例的设计方式和原因  
- BAM 端对端示例旨在阐释下列活动：  
+## <a name="how-this-sample-was-designed-and-why"></a>此示例设计的方式和原因  
+ BAM 端到端示例旨在阐释下列活动：  
 
 -   在管道中使用 BAM。  
 
--   使用跟踪配置文件编辑器 (TPE) 将活动项映射到业务流程中的形状和消息的元素。  
+-   使用跟踪配置文件编辑器 (TPE) 将活动项映射到业务流程和消息的元素中的形状。  
 
--   当一个解决方案的多个部分都作用于活动时，使用继续符使活动保持活动状态。  
+-   使用继续符来使活动解决方案的多个部分都作用于活动时保持活动状态。  
 
 
-本示例的工作原理如下所示：  
+该示例的工作方式如下：  
 
 1.  从输入的消息中检索*\<示例路径\>* \BamEndToEnd\Input 文件夹。  
 
-2.  管道组件向消息分配唯一的 DocumentID，然后使用 BAM API 开始一个新 BAM 活动。 将此 DocumentID 作为此输入消息的一个单独部分附加，以使其可用于业务流程。  
+2.  管道组件向消息中，分配一个唯一的 DocumentID，然后使用 BAM API 开始一个新的 BAM 活动。 DocumentID 作为输入的消息，以使其可供业务流程的一个单独部分附加。  
 
-3.  在收到此输入消息时激活服务 Orchestration1。  
+3.  接收输入的消息时激活服务 Orchestration1。  
 
-4.  Orchestration1 修改此输入消息，然后将其作为参数传递给 Orchestration2。  
+4.  Orchestration1 修改此输入的消息，并将其作为参数传递给 Orchestration2。  
 
-5.  Orchestration2 修改此输入消息，然后将其发送给 MessageBox 数据库，这便激活了 Orchestration3。  
+5.  Orchestration2 修改此输入的消息，然后将其发送到 MessageBox 数据库，这便激活了 Orchestration3。  
 
 6.  Orchestration3 修改此消息，并将其写入到的文件夹*\<示例路径\>* \BamEndToEnd\Output。  
 
@@ -67,18 +67,18 @@ ms.locfileid: "37006494"
 
 |                                        文件                                        |                                         Description                                          |
 |---------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-|                                    BamEndToEnd.sln                                    |                               BAM 端对端示例解决方案。                                |
+|                                    BamEndToEnd.sln                                    |                               BAM 端到端示例解决方案。                                |
 |                                    BamEndToEnd.xls                                    |                                 BAM 定义样式表。                                  |
 |                                    BamEndToEnd.xml                                    |                                     BAM 定义 XML。                                      |
 |                                BAMEndToEndBinding.xml                                 |                                         BAM 绑定。                                         |
-|                                      Cleanup.bat                                      |                              用于取消部署本示例的批处理文件。                              |
-|                                   InputMessage.xml                                    |                                        输入消息。                                        |
-|                                       Setup.bat                                       |                         用于编译和部署本示例的批处理文件。                         |
+|                                      Cleanup.bat                                      |                              若要取消部署本示例的批处理文件。                              |
+|                                   InputMessage.xml                                    |                                        输入的消息。                                        |
+|                                       Setup.bat                                       |                         若要编译并部署示例的批处理文件。                         |
 |                              \Components\AssemblyInfo.cs                              |                                   管道组件代码。                                   |
 |                       \Components\BAMMessagePartPLComponent.cs                        |                                   管道组件代码。                                   |
 |                             \Components\Components.csproj                             |                                 管道组件项目。                                  |
 | \Messages\InputMessage01.xml<br /><br /> ...<br /><br /> \Messages\InputMessage10.xml |                                    示例输入的消息。                                    |
-|                               \Services\BAMInbound.btp                                |                                    入站管道文件。                                    |
+|                               \Services\BAMInbound.btp                                |                                    入站的管道文件。                                    |
 |                              \Services\BAMPartSchema.xsd                              |                                   BAM 部分消息架构。                                   |
 |                             \Services\Orchestration1.odx                              |                                        业务流程。                                        |
 |                             \Services\Orchestration2.odx                              |                                        业务流程。                                        |
@@ -92,8 +92,8 @@ ms.locfileid: "37006494"
 |                               \Services\Transform_2.btm                               |                                          映射文件。                                           |
 |                               \Services\Transform_3.btm                               |                                          映射文件。                                           |
 
-## <a name="how-to-use-this-sample"></a>如何使用本示例  
- 请按下面的过程生成并运行 BAM 端对端示例：  
+## <a name="how-to-use-this-sample"></a>如何使用此示例  
+ 使用以下过程生成并运行 BAM 端到端示例：  
 
 -   [若要生成并初始化本示例](#To_Build_Sample)  
 
@@ -103,18 +103,18 @@ ms.locfileid: "37006494"
 
 ##  <a name="To_Build_Sample"></a>生成并初始化本示例  
 
-1.  打开命令提示符下以管理员身份，并运行*\<示例路径\>* \BAM\BAMEndToEnd\Setup.bat。 Setup.bat 为此示例生成并初始化 BAM 基础结构。 保持命令提示符处于打开状态。  
+1.  打开命令提示符下以管理员身份，并运行*\<示例路径\>* \BAM\BAMEndToEnd\Setup.bat。 Setup.bat 会生成并初始化本示例的 BAM 基础结构。 命令提示符保持打开状态。  
 
-2.  创建一个跟踪配置文件，以将 Orchestration1、Orchestration2 和 Orchestration3 映射到 BAM 活动。 (在名为一个单独的过程中创建跟踪配置文件是一个复杂的过程，因为的详细的说明**创建跟踪配置文件**。 此过程位于本文档后面的部分中。）  
+2.  创建跟踪配置文件来将 Orchestration1 和 Orchestration2，Orchestration3 映射到 BAM 活动。 (在名为一个单独的过程中创建跟踪配置文件是一个复杂的过程，因为的详细的说明**创建跟踪配置文件**。 此过程将显示在本文档后面。）  
 
-3.  部署上一步中创建的跟踪配置文件 BamEndToEnd.btt。  在命令提示符将更改为*\<示例路径\>* \BAM\BamEndToEnd 目录。 若要部署跟踪配置文件，请键入以下行，然后按**Enter**:  
+3.  部署跟踪配置文件 BamEndToEnd.btt 你在上一步中创建。  在命令提示符将更改为*\<示例路径\>* \BAM\BamEndToEnd 目录。 若要部署跟踪配置文件，请键入以下行，然后按**Enter**:  
 
     `“<BizTalkInstallationPath>\Tracking\bttdeploy” BamEndToEnd.btt`
 
      [如何部署跟踪配置文件使用跟踪配置文件管理实用程序](../core/how-to-deploy-tracking-profiles-with-the-tracking-profiles-management-utility.md)提供了详细信息。
 
     > [!IMPORTANT]
-    >  你可以忽略 ContinuationID Orch1_ 没有匹配继续符的消息。 预期会出现此消息，因为名为 Orch1_ 的继续符是在管道组件中定义的，而不是在踪配置文件中。  
+    >  可以忽略 ContinuationID Orch1_ 没有匹配继续符的消息。 此消息被预期的因为在管道组件，而不在跟踪配置文件定义名为 Orch1_ 的继续符。  
 
 ##  <a name="To_Run_Sample"></a>运行此示例  
 
@@ -128,7 +128,7 @@ ms.locfileid: "37006494"
 
 3.  右键单击**dbo.bam_EndToEndActivity_Completed**，然后单击**打开表**。 如果使用 SQL Server，请单击**选择前 1000年行**。  
 
-     右窗格中会显示 bam_EndToEndActivity_Completed 表的内容。 表中的每一行均代表一个已完成的 EndToEndActivity 活动。  
+     在右窗格中显示 bam_EndToEndActivity_Completed 表的内容。 在表中的每一行表示已完成的 EndToEndActivity 活动。  
 
 #### <a name="rerun-this-sample"></a>重新运行此示例  
 

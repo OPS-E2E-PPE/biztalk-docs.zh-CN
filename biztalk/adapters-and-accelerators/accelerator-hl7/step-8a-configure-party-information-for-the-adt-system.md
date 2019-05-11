@@ -1,5 +1,5 @@
 ---
-title: 步骤 8A： 配置 ADT 系统的参与方信息 |Microsoft Docs
+title: 步骤 8A:配置 ADT 系统的参与方信息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6c1a608571c9cc3f939f9387c2e3a113273af554
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5abeb65ac140bfcbc96c5c925960f38b539eeabf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969758"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65287890"
 ---
-# <a name="step-8a-configure-party-information-for-the-adt-system"></a>步骤 8A： 配置 ADT 系统的参与方信息
+# <a name="step-8a-configure-party-information-for-the-adt-system"></a>步骤 8A:配置 ADT 系统的参与方信息
 在此步骤中，你可以配置 ADT 系统的参与方信息。  
   
 ### <a name="to-configure-the-adt-system-party-information"></a>若要配置 ADT 系统参与方信息  
@@ -38,4 +38,4 @@ ms.locfileid: "36969758"
   
 7. 单击**保存**，然后关闭 BTAHL7 配置资源管理器。  
   
-   请继续执行[步骤 8B： 配置 RX 系统的参与方信息](../../adapters-and-accelerators/accelerator-hl7/step-8b-configure-party-information-for-the-rx-system.md)。
+   请继续执行[步骤 8B:配置 RX 系统的参与方信息](../../adapters-and-accelerators/accelerator-hl7/step-8b-configure-party-information-for-the-rx-system.md)。

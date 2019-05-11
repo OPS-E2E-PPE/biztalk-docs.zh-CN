@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 023cf9829d71155fec439f040bb526fd82572ac8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8c984130ad3a85d6441a192506202489759b5bc9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011606"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330312"
 ---
 # <a name="invalid-time-to-live-timeout"></a>无效生存时间超时
 ## <a name="details"></a>详细信息  
@@ -30,14 +30,14 @@ ms.locfileid: "37011606"
 |  事件源   |                                               0                                                |
 |    组件    |                                               0                                                |
 |  符号名称  |                                               0                                                |
-|  消息正文   | 无效生存时间超时。 有效范围： 0 至 23 小时，0-59 分钟和 0 到 59 秒 |
+|  消息正文   | 无效生存时间超时。 有效范围：0 到 23 小时，0-59 分钟和 0 到 59 秒 |
 
 ## <a name="explanation"></a>解释  
 
 ## <a name="user-action"></a>用户操作  
  使用以下过程配置超时范围。  
 
-#### <a name="to-configure-the-timeout-range"></a>配置超时范围的步骤  
+#### <a name="to-configure-the-timeout-range"></a>若要配置超时范围  
 
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
 
@@ -55,4 +55,4 @@ ms.locfileid: "37011606"
 
 8. 在中**Wcf-netmsmq 传输属性**对话框中，单击**绑定**选项卡。  
 
-9. 在中**队列设置**部分中，确保**消息到实时 (dd:hh:mm:ss) 时间**范围是否有效。 可接受的值包括：0 到 23 小时、0 到 59 分钟和 0 到 59 秒。
+9. 在中**队列设置**部分中，确保**消息到实时 (dd:hh:mm:ss) 时间**范围是否有效。 可接受的值为 0 到 23 小时，0-59 分钟和 0 到 59 秒。

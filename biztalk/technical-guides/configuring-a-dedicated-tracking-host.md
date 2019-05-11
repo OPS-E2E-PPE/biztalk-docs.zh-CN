@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: defed64020300ebe6843e8e06bb15a51af2c4ec3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6feb950bccf51f61026a332b3b0fff4f3cceb458
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986710"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65277170"
 ---
 # <a name="configuring-a-dedicated-tracking-host"></a>配置专用的跟踪主机
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 优化吞吐量，因此，主业务流程和消息传递引擎不实际移动的事件或消息直接向 BizTalk 跟踪 (DTA) 或业务活动监视 (BAM) 数据库，因为这会将转移这些引擎从其主执行业务流程的作业。 相反，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]在 MessageBox 数据库中留出的事件和消息并将其标记为需要迁移到 BizTalk 跟踪或 BAM 数据库。 后台进程 （跟踪主机），然后移动到的 BizTalk 跟踪数据库和 BAM 数据库，到 BizTalk 跟踪数据库的 SQL Server 代理作业将跟踪消息时的事件。  
@@ -51,7 +51,7 @@ ms.locfileid: "36986710"
   
 - 您必须是属于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Administrators 组。  
   
-- 必须在 SQL Server 中具有以下权限：  
+- SQL Server 中，必须具有以下权限：  
   
   -   您必须是 SQL Server 管理员或的成员*db_owner*或*db_securityadmin*中 BizTalk 跟踪数据库 (BizTalk DTADb) MessageBox 数据库 （SQL Server 数据库角色BizTalkMsgBoxDb) 和 BAM 主导入数据库 (BAMPrimaryImport)。  
   
@@ -67,9 +67,9 @@ ms.locfileid: "36986710"
   
 4. 在中**主机属性**对话框中，在**常规**选项卡上，选中或清除**选项-允许主机跟踪**，然后单击**确定**。  
   
-    选中此复选框可指示主机加载 BizTalk 跟踪组件以处理运行状况监视数据和业务数据。 如果选中此复选框，当前主机将具有读/写访问 MessageBox 数据库中的跟踪表以及跟踪数据库。 因此，运行在此主机中的任何对象也具有对这些数据库的读/写权限。  
+    选中此复选框以指示主机加载 BizTalk 跟踪组件，以处理运行状况监视和业务数据。 如果选中此复选框，当前主机将具有读/写访问 MessageBox 数据库中的跟踪表以及跟踪数据库。 因此，在此主机中运行的所有对象也都具有对这些数据库的读/写访问权限。  
   
-    如果清除此复选框，该主机将仅对 MessageBox 数据库中的跟踪表具有写权限并且无权访问跟踪数据库。  
+    如果清除该复选框，主机将 MessageBox 数据库中具有只写访问权限的跟踪表，并且不会对跟踪数据库的访问。  
   
 ## <a name="see-also"></a>请参阅  
  [清单：配置 BizTalk Server](../technical-guides/checklist-configuring-biztalk-server.md)

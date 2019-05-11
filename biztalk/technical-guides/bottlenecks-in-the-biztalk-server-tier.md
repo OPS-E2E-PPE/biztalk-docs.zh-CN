@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f8c7b4366390c040d7a4a34b473bdf4c3cfd352
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 66b3a61e71f6051429f0a9b674c37be977275eb4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004942"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65400447"
 ---
 # <a name="bottlenecks-in-the-biztalk-server-tier"></a>BizTalk Server 层的瓶颈
 BizTalk 层可分为以下功能区域：  
@@ -32,7 +32,7 @@ BizTalk 层可分为以下功能区域：
   
 - 其他  
   
-  对于这些区域，如果系统资源 （CPU、 内存和磁盘） 似乎趋于饱和，通过扩展平台升级服务器或缩小基于你的应用程序的特征。 如果系统资源不饱和，请执行本部分中介绍的这些步骤。  
+  对于这些区域，如果系统资源 （CPU、 内存和磁盘） 似乎趋于饱和，通过扩展平台升级服务器或缩小基于你的应用程序的特征。 如果不饱和的系统资源，请执行本节中所述的步骤。  
   
 ## <a name="bottlenecks-in-the-receive-location"></a>接收位置中的瓶颈  
  如果消息在接收位置生成 （例如，文件接收文件夹增长大），这表示无法以足够快的速度消减数据才能跟上传入负载的系统。 这是因为内部限制。 它是 BizTalk Server 接收的速率减少到如果订阅服务器无法处理的数据快速足够导致积压累积在数据库表中的。 如果通过硬件限制所导致的瓶颈，请尝试纵向扩展。 有关向上扩展的详细信息，请参阅 BizTalk Server 2010 文档中的以下主题：  
@@ -47,26 +47,26 @@ BizTalk 层可分为以下功能区域：
   
 - [SQL Server 层向外缩放](http://go.microsoft.com/fwlink/?LinkId=158075)(http://go.microsoft.com/fwlink/?LinkId=158075)。  
   
-  使用 Perfmon 来监视系统上的资源使用。 确认外部接收位置不是导致瓶颈的原因至关重要。 例如，确认是否远程文件共享饱和由于较高的磁盘 I/O、 远程传出队列的宿主服务器不饱和，或用于生成 HTTP 负载的客户端不会耗尽线程上。  
+  使用 Perfmon 来监视系统上的资源使用。 务必确认外部接收位置不是瓶颈的原因。 例如，确认是否远程文件共享饱和由于较高的磁盘 I/O、 远程传出队列的宿主服务器不饱和，或用于生成 HTTP 负载的客户端不会耗尽线程上。  
   
 ## <a name="processing-bottlenecks"></a>处理瓶颈  
  如果增加主机队列-长度性能计数器，它表明业务流程速度不够快完成。 有关详细信息，请参阅本主题中的 Perfmon 计数器表。 这可能是由于内存争用或 CPU 饱和所致。  
   
- 如果业务流程服务器是瓶颈，请使用 Perfmon 来标识来源。  
+ 如果业务流程服务器是瓶颈，使用 Perfmon 来标识源。  
   
- 如果服务器受到 CPU 的约束，请考虑以下情况：  
+ 如果服务器是受到 CPU 的约束，考虑以下方面：  
   
 -   如果在工作流复杂，请考虑将拆分到多个较小的业务流程的业务流程  
   
     > [!NOTE]  
-    >  将一个业务流程拆分成多个工作流可能会导致额外的延迟并使复杂性增加。 多个工作流也会导致增加发布到和从 BizTalkMsgBoxDb，使用消息的数量数据库带来额外压力。  
+    >  拆分到多个工作流的业务流程可能会导致额外的延迟，并会增加复杂性。 多个工作流也会导致增加发布到和从 BizTalkMsgBoxDb，使用消息的数量数据库带来额外压力。  
   
 -   如果使用复杂的映射，请考虑是否可以将它们移到接收/发送端口。 请务必验证哪个端口具有额外的带宽。  
   
 -   请考虑向上扩展硬件或通过配置其他处理服务器向外扩展。  
   
 ## <a name="transmitting-bottlenecks"></a>传输瓶颈  
- 如果承载对资源 （例如，磁盘、 内存或 CPU） 趋于饱和发送适配器的服务器，请考虑向上扩展服务器或向外扩展到其他主机服务器发送。 如果目标（位于 BizTalk 外部）接收数据的速度不够快，发送层则可能成为瓶颈。 这将会导致消息在 MessageBox 数据库（应用程序 SendHostQ）中累积。  
+ 如果承载对资源 （例如，磁盘、 内存或 CPU） 趋于饱和发送适配器的服务器，请考虑向上扩展服务器或向外扩展到其他主机服务器发送。 如果目标 （BizTalk 外部） 不能以足够快的速度接收数据，发送层则可能成为瓶颈。 这将导致消息累积到 MessageBox 数据库 (应用程序 SendHostQ) 中。  
   
  如果所有终结点拓扑的范围内，隔离的目标处的原因。 例如，确定是否以最佳方式配置 HTTP 位置来接收负载。 如果没有，请考虑向外扩展。此外确定是否由于 BizTalk 传送了过多的输出消息增长目标。 如果是，您可能需要的维护计划来存档和清除目标消息。 目标文件夹中的文件较大数字会严重影响 BizTalk 服务的数据提交到磁盘驱动器的功能。  
   
@@ -80,18 +80,18 @@ BizTalk 层可分为以下功能区域：
  只应启用最小跟踪所需的应用程序，因为这将减少记录的数据量并降低跟踪瓶颈的风险。 有关禁用单个项，例如业务流程和发送/接收端口的跟踪设置的信息，请参阅[如何禁用跟踪](http://go.microsoft.com/fwlink/?LinkId=160064)(http://go.microsoft.com/fwlink/?LinkId=160064)。  
   
 ## <a name="other"></a>其他  
- 配置部署拓扑结构，以使不同的功能运行在专用的独立主机实例中。 这种方式每个主机实例获取自己的资源 （例如，在 32 位系统、 2GB 虚拟内存地址空间、 句柄、 线程） 的一组。 服务器是否具有足够的 CPU 余量和内存来承载多个主机实例，则可以配置为在同一台物理计算机上运行。 如果没有，请考虑通过将功能移动到专用服务器来向外扩展。 在多个服务器上运行相同的功能也可用于提供高可用性的配置。  
+ 配置的部署拓扑，以便在专用的独立主机实例中运行不同的功能。 这种方式每个主机实例获取自己的资源 （例如，在 32 位系统、 2GB 虚拟内存地址空间、 句柄、 线程） 的一组。 服务器是否具有足够的 CPU 余量和内存来承载多个主机实例，则可以配置为在同一台物理计算机上运行。 如果没有，请考虑通过将功能移动到专用服务器来向外扩展。 多个服务器上运行相同的功能也可用于提供高度可用的配置。  
   
 ## <a name="biztalk-system-performance-counters"></a>BizTalk 系统性能计数器  
   
 |Object|实例|计数器|监视目的|  
 |------------|--------------|-------------|------------------------|  
-|处理器|_Total|% Processor Time|资源争用|  
-|处理|BTSNTSvc|Virtual Bytes|内存泄漏/膨胀|  
-|处理|BTSNTSvc|Private Bytes|内存泄漏/膨胀|  
-|处理|BTSNTSvc|Handle Count|资源争用|  
-|处理|BTSNTSvc|线程计数|资源争用|  
-|物理磁盘|实例 （_i)|% Idle Time|资源争用|  
+|处理器|_Total|处理器时间百分比|资源争用|  
+|Process|BTSNTSvc|虚拟字节数|内存泄漏/膨胀|  
+|Process|BTSNTSvc|专用字节数|内存泄漏/膨胀|  
+|Process|BTSNTSvc|句柄计数|资源争用|  
+|Process|BTSNTSvc|线程计数|资源争用|  
+|物理磁盘|实例 （_i)|空闲时间百分比|资源争用|  
 |物理磁盘|实例 （_i)|Average Disk Queue Length|资源争用|  
   
 ### <a name="cpu-contention"></a>CPU 争用  
@@ -105,7 +105,7 @@ BizTalk 层可分为以下功能区域：
  下游瓶颈和/或资源争用可能会导致后台处理从开始增长过并且降低整体性能。 详细信息，请参阅"后台处理表增长量"中[如何识别瓶颈在 MessageBox 数据库 1](../technical-guides/how-to-identify-bottlenecks-in-the-messagebox-database1.md)。  
   
 ### <a name="memory-starvation"></a>内存不足  
- 高吞吐量情况可能会增加对系统内存的要求。 由于 32 位进程受到可使用的内存量，建议来分隔到单独的主机实例的接收/处理/发送功能，以便每个主机接收自己 2 GB 的地址空间。 此外，如果多个主机实例正在同一台物理服务器上运行，则可以升级到 4/8 GB 内存，以避免从实际内存到磁盘交换数据。 长时间运行的业务流程可以保存分配的内存。 这可能导致内存膨胀和限制，以开始。 大消息也会导致高内存消耗。  
+ 高吞吐量情况可能会增加系统内存的需求。 由于 32 位进程受到可使用的内存量，建议来分隔到单独的主机实例的接收/处理/发送功能，以便每个主机接收自己 2 GB 的地址空间。 此外，如果多个主机实例正在同一台物理服务器上运行，则可以升级到 4/8 GB 内存，以避免从实际内存到磁盘交换数据。 长时间运行的业务流程可以保存分配的内存。 这可能导致内存膨胀和限制，以开始。 大消息也会导致高内存消耗。  
   
  您可以轻松地通过降低来处理大型消息时发生的内存膨胀问题**内部消息队列大小**并**每个 CPU 的进程内消息**特定主机的值。  
   
@@ -154,19 +154,19 @@ BizTalk 层可分为以下功能区域：
   
 |Object|实例|计数器|Description|  
 |------------|--------------|-------------|-----------------|  
-|BizTalk 消息传送|RxHost|Documents received/sec|传入速率|  
-|BizTalk 消息传送|TxHost|Documents processed/Sec|传出速率|  
-|XLANG/s 业务流程|PxHost|Orchestrations Completed/Sec.|处理速率|  
-|BizTalk: MessageBox： 常规计数器|MsgBoxName|后台处理大小|所有主机队列的累积大小|  
-|BizTalk: MessageBox： 常规计数器|MsgBoxName|Tracking Data Size|MessageBox 上 TrackingData 表的大小|  
-|BizTalk:MessageBox:主机计数器|PxHost:MsgBoxName|Host Queue - Length|特定主机队列中的消息数|  
-|BizTalk:MessageBox:主机计数器|TxHost:MsgBoxName|Host Queue - Length|特定主机队列中的消息数|  
-|BizTalk：消息代理|RxHost|Database Size|发布 (PxHost) 队列的大小|  
-|BizTalk：消息代理|PxHost|Database Size|发布 (TxHost) 队列的大小|  
-|BizTalk：消息代理|HostName|Message delivery throttling state|影响 XLANG 和出站传输|  
-|BizTalk：消息代理|HostName|消息发布阻止状态|影响 XLANG 和入站传输|  
+|BizTalk 消息传送|RxHost|Documents Received/Sec|传入速率|  
+|BizTalk 消息传送|TxHost|处理的文档数/秒|传出速率|  
+|XLANG/s 业务流程|PxHost|业务流程完成数/秒。|处理速率|  
+|BizTalk:MessageBox:常规计数器|MsgBoxName|后台处理大小|所有主机队列的累积大小|  
+|BizTalk:MessageBox:常规计数器|MsgBoxName|跟踪数据大小|MessageBox 上 TrackingData 表的大小|  
+|BizTalk:MessageBox:Host 计数器|PxHost:MsgBoxName|主机队列-长度|特定主机队列中的消息数|  
+|BizTalk:MessageBox:Host 计数器|TxHost:MsgBoxName|主机队列-长度|特定主机队列中的消息数|  
+|Biztalk: Message Agent|RxHost|数据库大小|发布 (PxHost) 队列的大小|  
+|Biztalk: Message Agent|PxHost|数据库大小|发布 (TxHost) 队列的大小|  
+|Biztalk: Message Agent|HostName|Message Delivery Throttling State|影响 XLANG 和出站传输|  
+|Biztalk: Message Agent|HostName|消息发布阻止状态|影响 XLANG 和入站传输|  
   
-### <a name="where-do-i-start"></a>应该从何处开始？  
+### <a name="where-do-i-start"></a>如何开始？  
  监视**Message Delivery Throttling State**并**Message Publishing Throttling State**对于每个主机实例是启动的好时机。 如果这些计数器的值不为零，这表明 BizTalk 系统中的阻止行为，可以进一步分析瓶颈的原因。 有关其他性能计数器的说明，请参阅[数据库层的瓶颈](../technical-guides/bottlenecks-in-the-database-tier.md)。  
   
 ## <a name="orchestration-engine-performance-counters"></a>业务流程引擎性能计数器  
@@ -175,14 +175,14 @@ BizTalk 层可分为以下功能区域：
 |计数器|注释|  
 |-------------|--------------|  
 |Orchestrations dehydrated/sec|平均每秒冻结的业务流程数。|  
-|Orchestrations rehydrated/sec|平均每秒解除冻结的业务流程数。|  
-|Persistence points/sec|平均每秒持久化业务流程实例的次数。|  
-|Orchestrations resident in memory|当前以主机实例为宿主的业务流程实例的数量。|  
-|Orchestrations completed/sec|平均每秒完成的业务流程数。|  
-|Orchestrations suspended/sec|平均每秒挂起的业务流程数。|  
-|Transactional scopes committed/sec|平均每秒提交的事务作用域数。|  
-|Transactional scopes aborted/sec|平均每秒中止的事务作用域数。|  
-|Transactional scopes compensated/sec|平均每秒补偿的事务作用域数。|  
+|Orchestrations rehydrated/sec|每秒解除冻结的平均数。|  
+|暂留点/秒|每秒持久化业务流程实例的平均数量。|  
+|驻留在内存中的业务流程|当前以主机实例为宿主的业务流程实例数。|  
+|已完成的业务流程数/秒|每秒完成的平均数量。|  
+|挂起的业务流程数/秒|每秒挂起的平均数。|  
+|已提交的事务作用域数/秒|每秒提交的平均数。|  
+|中止的事务作用域数/秒|每秒中止的平均数。|  
+|每秒补偿事务作用域|每秒补偿的平均数。|  
   
 ## <a name="backlog-buildup"></a>出现积压  
  对于 1-1 部署方案 1 条消息 1 个消息接收结果的位置处理，并且传输时，如果传出速率不等于传入速率，积压工作系统中。 在这种情况下，可以监视 Spool Size。 在确定传出速率的瓶颈的原因，一次运行的单个的用例方案。 隔离业务流程、 接收位置和发送位置来分隔不同的主机。  
@@ -201,33 +201,33 @@ BizTalk 层可分为以下功能区域：
  性能计数器可用于检测在高级别瓶颈的位置。 但是，一旦范围缩小，你可能需要检查该问题的更多的代码紧密，以帮助简化。 使用 Visual Studio 2010 附带独立 Profiler 可以是非常有用的工具可帮助您诊断代码上花费其周期的大多数。 有关详细信息，请参阅  
   
 ## <a name="l2l3-cache"></a>L2/L3 缓存  
- 从硬件的角度看，可以通过使用板载 CPU 高速缓存获得的最大优势。 较高的 CPU 高速缓存可增加高速缓存命中率，减少系统在内存和磁盘之间读/写数据页的需要。  
+ 从硬件的角度看，可以通过使用板载 CPU 高速缓存获得的最大优势。 更高 CPU 缓存可帮助增加高速缓存命中率减少系统的需求对数据传入和传出内存到磁盘进行分页。  
   
 ## <a name="64-bit-performance-bottlenecks"></a>64 位性能瓶颈  
- 64 位系统的性能表现可能不如 32 位系统获得的性能。 这是可能的几个原因，最重要的一个是内存。  
+ 在 64 位系统上的性能可能不如 32 位系统上可以获得的内容。 这是可能的几个原因，最重要的一个是内存。  
   
  具有 2 GB 的内存的 32 位系统上的性能测量并比较结果为 2 gb 的内存的类似 64 位系统不比较相同的操作。 64 位系统将显示为磁盘 i/o 绑定 （低于 %磁盘空闲时间和高磁盘队列长度） 以及 CPU 限制 （最大 CPU 和高上下文切换）。 但是，这是不是因为在 64 位系统上执行文件 I/O 开销更大。  
   
- 64 位系统需要更多内存密集型 （64 位寻址） 这会导致操作系统占用 2 GB 可用内存的大部分。 在此情况下，大部分的其他操作会导致对强调文件子系统的磁盘进行分页。 因此，系统花费 CPU 周期分页的内存的输入/输出这两个数据和代码，受高磁盘延迟开销。 它表现为更多的磁盘争用和更多的 CPU 占用。  
+ 64 位系统需要更多内存密集型 （64 位寻址） 这会导致操作系统占用 2 GB 可用内存的大部分。 在此情况下，大部分的其他操作会导致对强调文件子系统的磁盘进行分页。 因此，系统花费 CPU 周期分页的内存的输入/输出这两个数据和代码，受高磁盘延迟开销。 它表现为更多的磁盘争用和更高的 CPU 占用率。  
   
  若要缓解此问题的方法是来向上扩展服务器通过升级内存。 向上扩展到 8 GB 是主意，但是，添加更多的内存将无法帮助提高吞吐量，除非问题的原因是由于内存不足的情况的 CPU 资源不足。  
   
 ## <a name="using-bam-to-identify-bottlenecks-and-high-latency-issues"></a>使用 BAM 来查找瓶颈和高延迟问题  
  当低延迟很重要时，可以使用 BAM 来测量系统完成 BizTalk Server 系统中的每个阶段所花费的时间。 尽管可以使用 HAT 来调试消息的状态和诊断路由消息中的问题的根源，但可以使用 BAM 跟踪的消息流的各个点。 通过创建一个 BAM 跟踪配置文件用于定义带有继续符的活动，可以测量系统来帮助跟踪工作流进程中成本最高的阶段的不同部件之间的延迟。  
   
- 可以使用 HAT 中业务流程调试器，查询挂起的实例，恢复处于调试模式，该实例并添加适当的断点使用技术的详细信息视图。 这些操作允许您分步跟踪活动和调试消息。  
+ 可以使用 HAT 中业务流程调试器，查询挂起的实例，恢复处于调试模式，该实例并添加适当的断点使用技术的详细信息视图。 这样，便可以跟踪活动和调试分步的消息。  
   
- 可以设置断点来跟踪以下事件：  
+ 您可以设置断点来跟踪以下事件：  
   
-- 业务流程的启动和结束  
+- 启动和结束业务流程  
   
-- 形状的启动和结束  
+- 启动和结束形状  
   
-- 消息的发送或接收  
+- 发送或接收消息  
   
-- 异常  
+- Exceptions  
   
-  在每个断点，您可以查看有关局部变量、消息及其属性、端口和角色链接的信息。  
+  在每个断点，可以检查有关局部变量、 消息和其属性、 端口和角色链接的信息。  
   
 ## <a name="see-also"></a>请参阅  
  [查找并消除瓶颈](../technical-guides/finding-and-eliminating-bottlenecks.md)

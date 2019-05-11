@@ -12,32 +12,32 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0ad2254a4f6df5812d04823022a8ef3a66747530
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8b604db858e6ad2826ece6c1a925b1ec80d45c6c
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967110"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528632"
 ---
 # <a name="as2-over-file-biztalk-server-sample"></a>AS2 over File （BizTalk Server 示例）
-AS2 Over File 示例演示了如何通过 FILE 接收位置接收 AS2 消息。 这样，便可使用 FILE 适配器接收 AS2 消息，而不是通常使用的 HTTP 适配器。 若要完成该操作，此解决方案会按照 AS2 解码器的要求，将 AS2 消息中的 HTTP 标头写入 InboundHTTPHeaders 上下文属性。  
+AS2 Over File 示例演示如何通过 FILE 接收 AS2 消息接收位置。 这使您可以使用 FILE 适配器以接收 AS2 消息，而不是通常使用的 HTTP 适配器。 若要执行此操作，此解决方案将 HTTP 标头 AS2 消息中写入 InboundHTTPHeaders 上下文属性，所需的 AS2 解码器。  
 
 ## <a name="what-this-sample-does"></a>本示例的用途  
- 本示例演示如何在没有 HTTP 适配器的情况下处理 AS2 消息中的 HTTP 标头。 具体而言，本示例执行下列操作：  
+ 此示例演示如何处理 AS2 消息中的 HTTP 标头，而无需 HTTP 适配器。 具体而言，此示例执行以下任务：  
 
-1.  当将测试消息放入输入文件夹时，FILE 接收位置将提取该消息。  
+1.  当测试消息放入输入文件夹时，文件接收位置提取该消息。  
 
-2.  自定义 AS2 接收管道中的自定义管道组件处理该消息，将其 HTTP 标头写入 InboundHTTPHeaders 上下文属性中。  
+2.  自定义管道组件中的自定义 AS2 接收管道处理消息，其 HTTP 标头写入 InboundHTTPHeaders 上下文属性。  
 
     > [!NOTE]
-    >  如果在自定义管道组件的下游消息处理失败，则可能难以恢复消息处理，因为该消息已经转换为 XML 编码。  
+    >  如果处理的自定义管道组件的下游消息失败，则可能难以恢复消息处理的消息，因为它将具有已经转换为 XML 编码。  
 
-3.  自定义接收管道中的 AS2 解码器处理消息，读取 InboundHTTPHeaders 上下文属性中的属性以进行处理。  
+3.  自定义接收管道中的 AS2 解码器处理消息，读取 InboundHTTPHeaders 上下文属性以进行处理中的属性。  
 
-4.  发送端口订阅由接收管道生成的 XML 消息，将其通过直通发送管道传递，并将其放入输出文件夹。  
+4.  发送端口订阅由接收管道生成的 XML 消息，将其通过直通发送管道，并将其放入输出文件夹。  
 
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- 此示例位于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装文件夹： [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File。  
+ 此示例位于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装文件夹：[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File。  
 
  下表显示了本示例中的文件及其用途说明：  
 
@@ -51,27 +51,27 @@ AS2 Over File 示例演示了如何通过 FILE 接收位置接收 AS2 消息。 
 ## <a name="implementing-and-running-this-sample"></a>实现和运行本示例  
  若要实现 AS2 Over File 示例，需要执行以下操作：  
 
--   生成并部署本示例的 BizTalk 项目，创建自定义管道组件  
+-   生成和部署本示例中，创建自定义管道组件的 BizTalk 项目  
 
--   使用自定义管道组件创建自定义管道，并且用该自定义管道生成和部署项目  
+-   创建使用自定义管道组件的自定义管道并生成和部署具有该自定义管道的项目  
 
--   创建输入和输出文件夹  
+-   创建输入和输出文件文件夹  
 
--   配置接收端口和位置，并且启用接收位置  
+-   配置接收端口和位置，并启用接收位置  
 
 -   配置发送端口并启动发送端口  
 
--   创建发送示例消息的参与方  
+-   创建的参与方发送示例消息  
 
-#### <a name="to-build-a-custom-pipeline-with-the-as2-over-file-emulator-pipeline-component"></a>生成具有 AS2 Over File Emulator 管道组件的自定义管道  
+#### <a name="to-build-a-custom-pipeline-with-the-as2-over-file-emulator-pipeline-component"></a>若要生成的自定义管道使用 AS2 通过 File Emulator 管道组件  
 
-1. 在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中，打开 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] SDK\Samples\AS2\AS2 Over File 文件夹中的 AS2OverFile 项目。  
+1. 在中[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，打开中的 AS2OverFile 项目[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File 文件夹。  
 
-2. 创建强名称密钥文件，打开 AS2OverFile 项目的“属性”对话框，并将该密钥文件分配给此项目。  
+2. 创建强名称密钥文件，打开 AS2OverFile 项目的属性对话框并将密钥文件分配到项目。  
 
-3. 生成此项目。  
+3. 生成项目。  
 
-4. 在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中，创建名为 AS2OverFile_Pipeline 的新 BizTalk 项目。  
+4. 在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，创建一个名为 AS2OverFile_Pipeline 的新 BizTalk 项目。  
 
 5. 右键单击 AS2OverFile_Pipeline 项目，指向**外**，然后单击**新项**。  
 
@@ -83,29 +83,29 @@ AS2 Over File 示例演示了如何通过 FILE 接收位置接收 AS2 消息。 
 
 9. 在中**选择工具箱项**对话框中，单击**BizTalk 管道组件**选项卡。单击**AS2 Over File Emulator**，然后单击**确定**。  
 
-10. 通过打开 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 命令提示符，并对 \AS2 Over File\obj\Debug 文件夹中的 Microsoft.BizTalk.Sdk.Components.AS2OverFile.dll 执行命令 `gacutil /if "<file name and path>"`，将 AS2OverFile.dll 文件添加到全局程序集缓存中。  
+10. 通过打开将 AS2OverFile.dll 文件添加到全局程序集缓存[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]命令提示符处，并执行命令`gacutil /if "<file name and path>"`上 Microsoft.BizTalk.Sdk.Components.AS2OverFile.dll \AS2 Over File\obj\Debug 文件夹中。  
 
 11. 在中[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，将 AS2 Over File Emulator 管道组件从工具箱拖到**解码**自定义管道阶段。  
 
 12. AS2 解码器将组件拖至**解码**自定义管道，AS2 Over File 组件之后阶段。  
 
     > [!NOTE]
-    >  如果要生成 MDN，请将 AS2 拆装器添加到自定义管道的“拆装”阶段。 如果不返回 MDN，则不需要 AS2 拆装器。  
+    >  如果你想要生成 MDN，将 AS2 拆装器添加到自定义管道的拆装阶段。 如果不返回 MDN，则不需要 AS2 拆装器。  
 
-13. 创建强名称密钥文件，打开 AS2OverFile_Pipeline 项目的“属性”对话框，并将该密钥文件分配给此项目。  
+13. 创建强名称密钥文件，打开 AS2OverFile_Pipeline 项目的属性对话框并将密钥文件分配到项目。  
 
-14. 生成并部署自定义管道。  
+14. 生成和部署自定义管道。  
 
 15. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，将自定义管道添加到管道节点中，通过单击管道节点，然后单击**刷新**。  
 
-#### <a name="to-implement-the-solution-for-this-sample"></a>实现本示例的解决方案  
+#### <a name="to-implement-the-solution-for-this-sample"></a>若要实现此示例的解决方案  
 
-1. 在 Windows 资源管理器中的 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\SDK\Samples\AS2\AS2 Over File 文件夹中，创建一个 In 输入文件夹和一个 Out 输出文件夹。  
+1. 在 Windows 资源管理器中[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File 文件夹中，创建一个 In 输入的文件夹和一个 Out 输出文件夹。  
 
-2. 在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台中，创建一个名为 AS2OverFile_Receive 的单向接收端口。 在此接收端口中，创建具有下列属性的接收位置：  
+2. 在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，创建一个单向接收端口名为 AS2OverFile_Receive。 在接收端口中创建具有以下属性的接收位置：  
 
 
-   |     “属性”     |                                                 设置                                                  |
+   |     属性     |                                                 设置                                                  |
    |------------------|----------------------------------------------------------------------------------------------------------|
    |       “属性”       |                                           AS2OverFile_Receive                                            |
    |       类型       |                                                   FILE                                                   |
@@ -116,14 +116,14 @@ AS2 Over File 示例演示了如何通过 FILE 接收位置接收 AS2 消息。 
 
 3. 在接收位置节点，右键单击 AS2OverFile_Receive 接收位置，然后单击**启用**。  
 
-4. 在“发送端口”节点中，创建具有下列属性的静态单向发送端口：  
+4. 在发送端口节点中，创建具有以下属性的静态单向发送端口:  
 
 
-   |    “属性”    |                                                  设置                                                  |
+   |    属性    |                                                  设置                                                  |
    |----------------|-----------------------------------------------------------------------------------------------------------|
    |      “属性”      |                                             AS2OverFile_Send                                              |
    |      类型      |                                                   FILE                                                    |
-   | 接收文件夹 | [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File/Out |
+   | 接收文件夹 | [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File 输入/输出 |
    |   文件掩码    |                                              %MessageID%.xml                                              |
    | 发送管道  |                                                 Passthru                                                  |
    |     “筛选器”     |                                BTS.REceivePortName == AS2OverFile_Receive                                 |
@@ -131,7 +131,7 @@ AS2 Over File 示例演示了如何通过 FILE 接收位置接收 AS2 消息。 
 
 5. 在发送端口节点中，右键单击 AS2OverFile_Send 发送端口，然后依次**启动**。  
 
-6. 在“参与方”节点中，创建名为“伙伴”的参与方。 到别名列表中，添加一个别名**名称**的**EDIINT-AS2 From 值**即**限定符**的**AS2-从**，和一个**值**的**合作伙伴**。  
+6. 在参与方节点中，创建名为"合作伙伴"参与方。 到别名列表中，添加一个别名**名称**的**EDIINT-AS2 From 值**即**限定符**的**AS2-从**，和一个**值**的**合作伙伴**。  
 
    BizTalk Server 现在已准备好可使用本示例。  
 
@@ -140,14 +140,14 @@ AS2 Over File 示例演示了如何通过 FILE 接收位置接收 AS2 消息。 
 
 #### <a name="to-run-this-sample"></a>运行本示例的步骤  
 
-1. 将该 SampleMessage.txt 文件从 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File 文件夹复制到 \AS2 Over File\In 文件夹。  
+1. 复制该 SampleMessage.txt 文件从[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\AS2\AS2 Over File 文件夹复制到 \AS2 Over File\In 文件夹。  
 
-2. 验证是否已将输出 XML 消息放入 \AS2 Over File\Out 输出文件夹中。  
+2. 验证已将输出 XML 消息放入 \AS2 Over File\Out 输出文件夹。  
 
-3. 在文本编辑器中，打开输入的消息 SampleMessage.txt，打开输出消息\<GUID\>在文本编辑器中的.xml。 验证 SampleMessage.txt 输入消息是否具有 HTTP（和 AS2）标头以及输出消息是否不具有 HTTP 标头。  
+3. 在文本编辑器中，打开输入的消息 SampleMessage.txt，打开输出消息\<GUID\>在文本编辑器中的.xml。 验证 SampleMessage.txt 输入的消息具有 HTTP （和 AS2） 标头以及输出消息不具有 HTTP 标头。  
 
-## <a name="classes-or-methods-used-in-this-sample"></a>本示例中使用的类或方法  
- InclusionThresholdSetting  
+## <a name="classes-or-methods-used-in-this-sample"></a>类或方法在此示例中使用  
+ None  
 
 ## <a name="see-also"></a>请参阅  
  [EDI 和 AS2 （BizTalk Server 示例文件夹）](../core/edi-and-as2-biztalk-server-samples-folder.md)   

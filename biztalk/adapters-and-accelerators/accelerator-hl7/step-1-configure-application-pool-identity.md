@@ -1,5 +1,5 @@
 ---
-title: 步骤 1： 配置应用程序池标识 |Microsoft Docs
+title: 第 1 步：配置应用程序池标识 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 61cdbc019b2e36ea8c50d97ff03597374cb07253
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fc2e5c81973caba71f0bb1dfe97f555c42366e68
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988486"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289084"
 ---
-# <a name="step-1-configure-application-pool-identity"></a>步骤 1： 配置应用程序池标识
+# <a name="step-1-configure-application-pool-identity"></a>第 1 步：配置应用程序池标识
 在本教程中，你可以使用应用程序池在 Microsoft Internet 信息服务 (IIS) 来处理业务流程发布为 Web 服务。 应用程序池是由工作进程提供服务的一个或多个 Url 的分组。  
 
  应用程序池标识是在其下运行的应用程序池辅助进程的服务帐户的名称。 默认情况下，应用程序池具有低级别的用户访问权限并且是本教程中对函数没有足够的网络服务用户帐户下运行。 出于安全原因，你想要配置应用程序池标识设置为用户帐户的绝对最低权限，但在最少的权限写入到 MessageBox (BizTalkMsgBoxDb) 数据库和配置数据库 (也称为 BizTalk管理数据库中，或 BizTalkMgmtDb）。  
@@ -51,7 +51,7 @@ ms.locfileid: "36988486"
    > [!NOTE]
    >  或者，为了提高安全性，可以创建在你创建具备定制为本教程的权限的自定义标识下运行的全新应用程序池。  
 
-   请继续执行[步骤 2： 创建一个新项目](../../adapters-and-accelerators/accelerator-hl7/step-2-create-a-new-project.md)。  
+   请继续执行[步骤 2:创建一个新项目](../../adapters-and-accelerators/accelerator-hl7/step-2-create-a-new-project.md)。  
 
 ## <a name="see-also"></a>请参阅  
  [消息充实教程](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

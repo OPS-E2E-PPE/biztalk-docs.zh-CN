@@ -1,5 +1,5 @@
 ---
-title: 如何使用组形状 |Microsoft 文档
+title: 如何使用组形状 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,21 +19,21 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 268241f336b4252ab8baf1c9dc101d41a7eb1893
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7c4320646cbc42fd4539760138eee16d044219ff
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256421"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333329"
 ---
 # <a name="how-to-use-the-group-shape"></a>如何使用组形状
 ![](../core/media/ebiz-orch-group.gif "ebiz_orch_group")  
 组形状  
   
 ## <a name="annotations-and-placeholders"></a>批注和占位符  
- 你可以使用**组**形状作为占位符功能有待添加，也可以使用它来使有关执行的操作中它的注释。  
+ 可以使用**组**形状作为功能的占位符，需要添加，也可以使用它以进行有关执行的操作中它的批注。  
   
- 上的名称属性**组**形状可以最多 512 个字符。 你可以键入到批注**名称**属性和形状折叠时，将显示整个名称。 展开形状时，名称被截断。  
+ 上的 name 属性**组**形状可以最多 512 个字符。 您可以键入到批注**名称**属性，当折叠形状时，将显示整个名称。 展开该形状时，该名称被截断。  
   
-## <a name="see-also"></a>另请参阅  
- [配置流控制形状](../core/configuring-flow-control-shapes.md)
+## <a name="see-also"></a>请参阅  
+ [配置“流控制”形状](../core/configuring-flow-control-shapes.md)

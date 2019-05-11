@@ -1,5 +1,5 @@
 ---
-title: 步骤 1： 为 Contoso 价格与可用性请求创建新的 BizTalk 解决方案 |Microsoft Docs
+title: 第 1 步：为 Contoso 价格与可用性请求创建新的 BizTalk 解决方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,17 +14,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a4d48087411241f6ba26b55d4b20f6dce6a255e5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ad2b35b6b687c820f872bdb63087cca07ead5a4c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971574"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281677"
 ---
-# <a name="step-1-creating-a-new-biztalk-solution-for-the-contoso-price-and-availability-request"></a>步骤 1： 为 Contoso 价格与可用性请求创建新的 BizTalk 解决方案
-在此步骤中，创建一个 Microsoft[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]将为 Contoso 价格与可用性请求项目的解决方案。 此项目包含 3A2 价格与可用性消息的请求和响应的架构和映射。  
+# <a name="step-1-creating-a-new-biztalk-solution-for-the-contoso-price-and-availability-request"></a>第 1 步：为 Contoso 价格与可用性请求创建新的 BizTalk 解决方案
+在此步骤中，创建一个 Microsoft[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]将为 Contoso 价格与可用性请求项目的解决方案。 此项目将包含的架构和映射的请求和响应的 3A2 价格与可用性消息。  
   
-### <a name="to-create-a-blank-solution"></a>创建空白解决方案  
+### <a name="to-create-a-blank-solution"></a>若要创建空白解决方案  
   
 1.  启动**Microsoft Visual Studio 2012**。  
   
@@ -34,7 +34,7 @@ ms.locfileid: "36971574"
   
 4.  在中**名称**框中，键入**Contoso**作为解决方案的名称，然后单击**确定**以打开新的解决方案。  
   
-### <a name="to-create-the-price-and-availability-project"></a>创建价格与可用性项目  
+### <a name="to-create-the-price-and-availability-project"></a>若要创建价格与可用性项目  
   
 1.  在 Visual Studio 中，在**文件**菜单，依次指向**新建**，然后单击**项目**。  
   
@@ -43,4 +43,4 @@ ms.locfileid: "36971574"
 3.  在中**名称**框中，键入**ContosoPriceAndAvailability**作为项目名称。 有关**解决方案**，选择**将添加到解决方案**。 单击**确定**打开新项目。  
   
 ## <a name="see-also"></a>请参阅  
- [步骤 2：使用 BizTalk 编辑器为价格和可用性项目创建 Contoso LOB 应用程序架构](../../adapters-and-accelerators/accelerator-rosettanet/step-2-create-contoso-lob-application-schema-for-price-and-availability.md)
+ [步骤 2：使用 BizTalk 编辑器创建价格与可用性项目的 Contoso LOB 应用程序架构](../../adapters-and-accelerators/accelerator-rosettanet/step-2-create-contoso-lob-application-schema-for-price-and-availability.md)

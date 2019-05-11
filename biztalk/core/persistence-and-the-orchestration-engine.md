@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3d61d6665ba0828fb6cf24ef71ffb04fbcb94d5e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c322c000002360e7637db3971721aa53e9225c5b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022515"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65314523"
 ---
 # <a name="persistence-and-the-orchestration-engine"></a>持久化和业务流程引擎
 状态持久性、 其管理和还原构成大量的业务流程引擎的基本功能的基础。 具体而言，持久性至关重要的正确运行：  
@@ -72,7 +72,7 @@ ms.locfileid: "37022515"
 -   业务流程实例已完成。  
   
 ## <a name="serialization"></a>序列化  
- 您的业务流程直接或间接引用的所有对象实例 （如通过其他对象） 必须是可序列化的业务流程状态持久保存。 有以下两种例外情况：  
+ 您的业务流程直接或间接引用的所有对象实例 （如通过其他对象） 必须是可序列化的业务流程状态持久保存。 有两种例外情况：  
   
 -   您可以在原子事务内声明的不可序列化对象。 可以这样做是因为原子作用域不包含持久化点。  
   

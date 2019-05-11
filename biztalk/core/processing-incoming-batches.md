@@ -1,5 +1,5 @@
 ---
-title: 处理传入的批次 |Microsoft 文档
+title: 处理传入批 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ca3781d9b7c1ed2190a8334f272c04d304669ace
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a6a7b40401623a867d706d82c50eb150a84a9eff
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22264069"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65299813"
 ---
 # <a name="processing-incoming-batches"></a>处理传入批
-当 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 收到批处理 EDI 交换时，它可以将交换拆分为事务集，然后对每一个事务集分别加以处理，也可以保留交换，将所有事务集作为一个组进行处理。  
+当[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]接收批处理的 EDI 交换，它可以将交换拆分为单独处理每个其事务集，也可以保留交换，处理所有事务集作为一个组。  
   
- 确定在批处理**本地主机设置**页中的单向协议选项卡**协议属性**X12 和 EDIFACT 协议的对话框。 当保留交换时，如果出现错误，则可以选择挂起相应的交换或事务集。  
+ 确定批处理**本地主机设置**页中的单向协议选项卡**协议属性**针对 X12 和 EDIFACT 协议的对话框。 保留交换时，必须选择出错时挂起交换或事务集。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [拆分批处理的 EDI 交换](../core/splitting-a-batched-edi-interchange.md)  
+-   [拆分成批 EDI 交换](../core/splitting-a-batched-edi-interchange.md)  
   
 -   [拆分 HIPAA 子文档](../core/splitting-hipaa-subdocuments.md)  
   
--   [保留已收到批处理的 EDI 交换](../core/preserving-a-received-batched-edi-interchange.md)
+-   [保留收到的批处理 EDI 交换](../core/preserving-a-received-batched-edi-interchange.md)

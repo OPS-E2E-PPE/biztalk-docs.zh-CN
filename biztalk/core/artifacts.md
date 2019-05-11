@@ -1,5 +1,5 @@
 ---
-title: 项目 |Microsoft 文档
+title: 项目 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,15 +14,15 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c26e58b110b3437b2552299112ec6c05bb53faac
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3c3af7c1a6ad3a5a4ef9e3081fa1c892c73d15e0
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230429"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528601"
 ---
 # <a name="artifacts"></a>项目
-本主题将介绍各个 BizTalk Server 项目。 项目包括 BizTalk 应用程序正常运行所必需的程序集、安全证书、业务规则策略、BAM 配置文件和绑定等。 可以从 BizTalk 管理控制台中查看和管理应用程序的项目。  
+本主题讨论各种 BizTalk Server 项目。 项目包括程序集、 安全证书、 业务规则策略、 BAM 配置文件、 绑定和所需的 BizTalk 应用程序正常等。 查看和管理应用程序的项目从 BizTalk 管理控制台中。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -44,7 +44,7 @@ ms.locfileid: "22230429"
   
 -   [角色链接和服务链接角色](../core/role-links-and-service-link-roles.md)  
   
--   [方](../core/parties.md)  
+-   [参与方](../core/parties.md)  
   
 -   [策略](../core/policies.md)  
   

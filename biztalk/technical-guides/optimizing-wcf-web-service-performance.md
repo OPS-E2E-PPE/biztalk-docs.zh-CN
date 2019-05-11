@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1b0dc200135d65f179d565ba0fe03cc8df897eeb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 63ee4af7de8485b95e142d2291ada66d53d7da4d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999374"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291321"
 ---
 # <a name="optimizing-wcf-web-service-performance"></a>优化 WCF Web 服务性能
 WCF 服务公开大量会影响性能的配置参数。 本主题提供有关设置这些配置参数，以提高性能的 WCF 服务的最佳值的一般指南。  
@@ -122,7 +122,7 @@ maxConcurrentInstances="200" />
   
 - WCF HTTP 模块和处理程序  
   
-  详细了解使用异步的 WCF HTTP 模块/处理程序中以提高可伸缩性的 IIS 7.5/7.0 中承载 WCF 服务，请参阅 Wenlong 盾博客[Orcas SP1 改善： 异步 WCF HTTP 模块/处理程序的更好的 IIS7服务器的可伸缩性](http://go.microsoft.com/fwlink/?LinkId=157428)(http://go.microsoft.com/fwlink/?LinkId=157428)。  
+  详细了解使用异步的 WCF HTTP 模块/处理程序中以提高可伸缩性的 IIS 7.5/7.0 中承载 WCF 服务，请参阅 Wenlong 盾博客[Orcas SP1 改进：异步 WCF HTTP 模块/处理程序更好的服务器可伸缩性的 IIS7](http://go.microsoft.com/fwlink/?LinkId=157428) (http://go.microsoft.com/fwlink/?LinkId=157428)。  
   
 ## <a name="see-also"></a>请参阅  
  [优化 BizTalk Server WCF 适配器性能](../technical-guides/optimizing-biztalk-server-wcf-adapter-performance.md)

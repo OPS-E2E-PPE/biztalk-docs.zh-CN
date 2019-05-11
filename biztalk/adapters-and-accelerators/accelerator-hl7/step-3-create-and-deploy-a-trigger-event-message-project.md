@@ -1,5 +1,5 @@
 ---
-title: 步骤 3： 创建和部署触发器事件 （消息） 项目 |Microsoft Docs
+title: 步骤 3：创建和部署触发器事件 （消息） 项目 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: deb9d6160fc0b094f0af6f75ab4ab8e5be22462c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 688d71ba78b79e3cfa7571e6e2f9acb9fe8c6fa9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998686"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288380"
 ---
-# <a name="step-3-create-and-deploy-a-trigger-event-message-project"></a>步骤 3： 创建和部署触发器事件 （消息） 项目
+# <a name="step-3-create-and-deploy-a-trigger-event-message-project"></a>步骤 3：创建和部署触发器事件 （消息） 项目
 在此步骤中，您的触发器事件消息创建架构。 例如，可能是病人入院出院事项和传输系统 (ADT) 发送消息到医院信息系统 (HIS)。 需要此架构来定义您的消息的格式。  
   
 ### <a name="to-create-the-project-for-the-trigger-event-message"></a>若要创建触发器事件消息的项目  
@@ -37,7 +37,7 @@ ms.locfileid: "36998686"
   
 5. 在添加引用对话框中，在**项目**选项卡上，选择**BTAHL7V231Common Project1**，单击**添加**，然后单击**确定**。  
   
-## <a name="step-3a-add-the-schema"></a>步骤 3A： 将架构添加  
+## <a name="step-3a-add-the-schema"></a>步骤 3a:添加架构  
  使用以下过程将新的架构添加到项目。  
   
 #### <a name="to-add-the-schema-to-the-project"></a>若要将架构添加到项目  
@@ -59,7 +59,7 @@ ms.locfileid: "36998686"
   
 5.  单击**完成**将该架构添加到项目。  
   
-## <a name="step-3b-assign-a-strong-key-to-the-assembly-and-deploy"></a>步骤 3B： 对程序集分配强密钥并将其部署  
+## <a name="step-3b-assign-a-strong-key-to-the-assembly-and-deploy"></a>步骤 3b:对程序集分配强密钥并将其部署  
  使用以下过程来对程序集分配强密钥并随后部署该程序集。  
   
 #### <a name="to-assign-a-strong-key-and-deploy-the-assembly"></a>若要分配一个强密钥并将其部署该程序集  
@@ -79,4 +79,4 @@ ms.locfileid: "36998686"
    > [!NOTE]
    >  如果未显示成功部署消息，使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]来解决您的架构。  
   
-   请继续执行[步骤 4： 创建接收端口用于接收 ADT ^ A03 消息从 ADT 系统使用 MLLP 适配器](../../adapters-and-accelerators/accelerator-hl7/step-4-create-receive-port-to-accept-adt^a03-messages-from-adt-using-mllp.md)。
+   请继续执行[步骤 4:创建接收端口用于接收 ADT ^ A03 消息从 ADT 系统使用 MLLP 适配器](../../adapters-and-accelerators/accelerator-hl7/step-4-create-receive-port-to-accept-adt^a03-messages-from-adt-using-mllp.md)。

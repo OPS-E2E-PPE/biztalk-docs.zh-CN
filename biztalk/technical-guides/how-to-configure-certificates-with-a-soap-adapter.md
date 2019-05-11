@@ -12,21 +12,21 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f0a709ab6b28796328677e7e8ae009e3273565a3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0e7f45ae5cec3d0921a4fbc32456c5856a8f5159
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012278"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253413"
 ---
 # <a name="how-to-configure-certificates-with-a-soap-adapter"></a>如何使用 SOAP 适配器配置证书
-SOAP 发送适配器可帮助保护与接受或不需要客户端证书的服务器的连接。 如果指定了客户端证书，则在连接要求或接受客户端证书的服务器时，SOAP 发送适配器将使用该证书。 如果未指定客户端证书和目标服务器需要客户端证书、 发件人未经过身份验证和 SOAP 发送适配器无法发送消息，并按照标准的重试逻辑。  
+SOAP 发送适配器可帮助保护与接受或不需要客户端证书的服务器的连接。 如果指定的客户端证书，SOAP 发送适配器使用的证书使用要求或接受客户端证书的服务器进行连接时。 如果未指定客户端证书和目标服务器需要客户端证书、 发件人未经过身份验证和 SOAP 发送适配器无法发送消息，并按照标准的重试逻辑。  
 
- SOAP 发送适配器使用的客户端证书位于运行 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 进程的帐户的个人存储中。 SOAP 适配器根据证书的指纹来指定证书。 如果 SOAP 发送适配器由于某种原因无法加载证书，则会挂起该适配器正在发送的消息。  
+ SOAP 发送适配器使用的客户端证书所用的帐户的个人存储中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]进程正在运行。 SOAP 适配器指定由其指纹的证书。 如果 SOAP 发送适配器无法加载证书出于任何原因，已发送的消息被挂起。  
 
  当使用 SOAP 适配器发送加密或签名邮件时，配置发送端口的客户端证书指纹 SOAP 传输属性。  
 
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  若要执行本主题中的过程，您必须登录以成员的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Administrators 组。  
 
 ### <a name="to-configure-biztalk-server-to-send-messages-over-a-soap-connection"></a>若要配置 BizTalk Server 通过 SOAP 连接发送消息  

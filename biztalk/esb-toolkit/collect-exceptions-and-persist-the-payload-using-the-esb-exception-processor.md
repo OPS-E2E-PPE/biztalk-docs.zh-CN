@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c43925006153ccfdcfa0c9700dd1ecf27fd3fd2f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cdbffb24052e1dd926f74252c68a621fe92c5ab6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994814"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65302206"
 ---
 # <a name="collecting-exceptions-and-persisting-the-payload-using-the-esb-exception-processor"></a>收集异常并保留使用 ESB 异常处理器的有效负载
 在此用例，业务流程的异常处理程序将到 ESB 的错误消息发布到 BizTalk Server 消息框，或者 BizTalk 失败消息路由机制将生成错误消息。 使用 ESB 异常编码器管道组件，预配置的发送端口订阅这两种错误消息。 它处理的错误消息，然后将其保留为磁盘文件，你可以查看使用 InfoPath，如图 1 中所示。  

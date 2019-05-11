@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d33b9b4963b69ed732c16e266300e398d7884035
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 85d6fb8006020c47dcec56aa2a173fa36a1aff28
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994310"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292756"
 ---
 # <a name="unable-to-import-service-endpoint-configuration"></a>无法导入服务终结点配置。
 ## <a name="details"></a>详细信息  
@@ -33,7 +33,7 @@ ms.locfileid: "36994310"
 |  消息正文   |                  无法导入服务终结点配置                   |
   
 ## <a name="explanation"></a>解释  
- 对于此错误可能有多种解释。 配置文件可能包含无效的字符。 根元素可能丢失。 根级别的数据可能无效。  
+ 可能有多个解释此错误。 配置文件可能包含无效字符。 可能缺少根元素。 根级别的数据可能无效。  
   
 ## <a name="user-action"></a>用户操作  
- 验证配置文件是否有效。 尝试使用服务配置编辑器中打开配置文件 (**svcConfigEditor.exe**)，并验证每个属性。
+ 验证配置文件的有效性。 尝试使用服务配置编辑器中打开配置文件 (**svcConfigEditor.exe**)，并验证每个属性。

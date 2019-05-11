@@ -18,24 +18,24 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fc4e6e8650f0da1446a48b5da8c8f7c2142af7bb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d4a6e166a891da2a3d393d176555c2b50deed044
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997894"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65284847"
 ---
 # <a name="creating-a-send-port-to-handle-orphan-or-duplicate-messages"></a>创建处理孤立或重复消息的发送端口
-本主题描述如何设置可用于删除孤立或重复消息的发送端口。  
+本主题介绍如何设置可用于删除孤立或重复消息的发送端口。  
   
  孤立或重复消息可能是个问题，如果 Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]公用业务流程完成处理该消息的第一个副本后收到一条消息的其他副本。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将标记为重复这些消息并将它们挂起。 您可以在 BizTalk 管理控制台中查看这些消息。 有关 BizTalk 管理控制台的详细信息，请参阅"使用 BizTalk 管理控制台"中的 BizTalk Server 帮助。  
   
- 在您查看并删除孤立或重复的消息之前，这些消息将一直保存在 BizTalk 管理控制台中。 删除这些消息最有效的方法是设置具有特定筛选器的发送端口，这些筛选器针对孤立或重复的消息进行设置。 您可以移动它们使用任何 BizTalk Server 中可用的运输方式。 例如，可以通过使用文件传输移动它们。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将孤立或重复消息作为文件发送到硬盘上的位置。 这可使您轻松删除它们。 该端口可处于登记并停止的状态，在这种情况下，所有发送到该端口的消息都将显示为在该发送端口下挂起。  
+ 孤立或重复消息保留在 BizTalk 管理控制台查看或删除它们之前。 删除它们的最有效方法是与筛选器针对孤立或重复消息的发送端口设置。 您可以移动它们使用任何 BizTalk Server 中可用的运输方式。 例如，可以通过使用文件传输移动它们。 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 将孤立或重复消息作为文件发送到硬盘上的位置。 这样可以轻松删除它们。 该端口可处于登记并停止状态，为在已挂起，所有消息都发送给它的情况下将显示该发送端口。  
   
 > [!NOTE]
->  除创建发送端口来处理重复/孤立的消息外，还可以创建特殊的管道组件从 MessageBox 数据库中删除这些消息。 您可以使用 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] SDK 中的 FixMsg 组件作为模板， 您必须修改`IComponent.Execute`方法返回 null。 这将导致[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]放弃发送到包含该组件的管道的任何消息。 您必须编译此管道组件并将其添加到发送管道，然后编译、部署该发送管道并为接收端口选择该发送管道。 有关详细信息，请参阅"CustomComponent ([!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]示例)"BizTalk Server 帮助中。  
+>  而不是创建用于处理重复/孤立的消息的发送端口，可以创建一个特殊的管道组件以从 MessageBox 数据库中删除这些消息。 可以使用中的 FixMsg 组件[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]作为模板的 SDK。 您必须修改`IComponent.Execute`方法返回 null。 这将导致[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]放弃发送到包含该组件的管道的任何消息。 您必须编译此管道组件并将其添加到发送管道，，然后编译、 部署和选择接收端口的发送管道。 有关详细信息，请参阅"CustomComponent ([!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]示例)"BizTalk Server 帮助中。  
   
-### <a name="to-create-a-send-port-to-handle-orphan-or-duplicate-messages"></a>创建处理孤立或重复消息的发送端口  
+### <a name="to-create-a-send-port-to-handle-orphan-or-duplicate-messages"></a>若要创建处理孤立或重复消息的发送端口  
   
 1. 在中[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]，然后在**视图**菜单中，单击**BizTalk 浏览器**。  
   

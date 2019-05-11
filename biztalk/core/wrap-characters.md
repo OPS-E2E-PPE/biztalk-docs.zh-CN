@@ -12,23 +12,23 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b7d88c412c94505600443d351a150b6ca8a6876a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2bb046f40af842bf49834873090b8c3864f37dcd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996590"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65262086"
 ---
 # <a name="wrap-characters"></a>自动换行字符
 
 ## <a name="overview"></a>概述
-环绕符是单个字符，用于环绕字段中的数据字符，以便取消这些数据字符原本具有的特殊意义。 例如，如果您将某个平面文件记录定义为具有以下特性：  
+环绕符是单个字符，用于包装以便取消这些数据字符的任何其他可能需要任何特殊含义的字段中的数据字符。 例如，如果平面文件记录定义为具有以下特征：  
   
 - 名称 = Record1  
   
 - 带分隔符  
   
-- 子分隔符 = 逗号字符 (,)  
+- 子分隔符 = 逗号字符 （，）  
   
 - 子顺序 = 中缀  
   
@@ -36,9 +36,9 @@ ms.locfileid: "36996590"
   
 - 标记 = RECORD1  
   
-- 名为 Field1、Field2 和 Field3 的三个字段均定义为使用数字符号字符 (#) 作为其环绕符。  
+- 名为 Field1，Field2 和 Field3 的三个字段，每个定义要使用数字符号字符 （#） 作为其环绕符。  
   
-  则以下平面文件数据适用于记录：  
+  然后以下平面文件数据适用于该记录。  
   
 ```  
 RECORD1#field1#,#field2#,#field3#  
@@ -56,11 +56,11 @@ RECORD1#field1#,#field2#,#field3#
   
 ```  
   
- 请注意，环绕粗体数据字符 field1、field2 和 field3 的环绕符 (#) 已删除。  
+ 请注意，已删除环绕粗体数据字符 field1，field2 和 field3 的环绕符 （#）。  
   
  当平面文件组装器执行反向操作，将记录的 XML 版本转换为其等效的平面文件记录时，换行字符被插入之前和之后的每个字段，无法完成的原始序列的数据字符平面文件字符。  
   
- 定义的转义符可与定义的环绕符一起使用。 例如，假定按如下所示更改 Field1 的值（以粗体显示）：  
+ 可以与定义的环绕符结合使用定义的转义符。 例如，假设 Field1 的值更改，如下所示 （以粗体显示）。  
   
 ```  
 <Record1>  
@@ -71,7 +71,7 @@ RECORD1#field1#,#field2#,#field3#
   
 ```  
   
- 当使用所提供记录和字段定义组装此 XML 片断时，将生成以下平面文件字符的序列（以粗体显示转义的数字符号字符序列）：  
+ 当使用提供的记录和字段定义组装此 XML 片段生成以下平面文件字符序列 （以粗体显示转义的数字符号字符序列）。  
   
 ```  
 RECORD1#field1#,#field2#,#field3#  

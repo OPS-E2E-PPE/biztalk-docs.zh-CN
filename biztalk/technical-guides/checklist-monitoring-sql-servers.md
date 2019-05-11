@@ -1,5 +1,5 @@
 ---
-title: 清单： 监视 SQL Server |Microsoft Docs
+title: 清单：监视 SQL Server |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8835af94ec16d344cd85c0321731ac4150451acf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 12ee05a8f18c06516ecb6542b003a74537995894
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993390"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65270636"
 ---
-# <a name="checklist-monitoring-sql-servers"></a>清单： 监视 SQL Server
+# <a name="checklist-monitoring-sql-servers"></a>清单：监视 SQL Server
 本主题介绍监视应遵循的步骤[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]在生产中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境。  
 
 

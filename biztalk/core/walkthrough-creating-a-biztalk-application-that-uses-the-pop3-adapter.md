@@ -1,5 +1,5 @@
 ---
-title: 演练： 创建 BizTalk 应用程序使用 POP3 适配器 |Microsoft Docs
+title: 演练：创建 BizTalk 应用程序使用 POP3 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,30 +19,30 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c3bd79682f78591b066fe1e6db671c3dab4a8333
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6f94c34361eb69f2e9838da26a3ea30f95cb3a85
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985302"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65250233"
 ---
-# <a name="walkthrough-creating-a-biztalk-application-that-uses-the-pop3-adapter"></a>演练： 创建使用 POP3 适配器的 BizTalk 应用程序
-本部分将指导您创建一个使用 POP3 适配器的简单 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 应用程序。  
+# <a name="walkthrough-creating-a-biztalk-application-that-uses-the-pop3-adapter"></a>演练：创建 BizTalk 应用程序使用 POP3 适配器
+本部分将指导您创建的简单 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用 POP3 适配器的应用程序。  
   
 > [!NOTE]
->  该应用程序假设您有权限访问安装并配置了电子邮件服务的 Microsoft [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] 或 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] 运行所在的计算机。 有关配置具有电子邮件服务的 [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] 或 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] 的信息，请参阅 Windows Server 帮助。  
+>  该应用程序假设您有权访问运行 Microsoft 的计算机[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]或[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]了电子邮件服务安装和配置。 璝惠砞[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]或[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]了电子邮件服务，请参阅 Windows Server 帮助。  
 > 
 > [!NOTE]
->  在本示例中，Microsoft Outlook Express 用作电子邮件客户端，[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] 或 [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)] 用作电子邮件服务器。 不过，任何 POP3 电子邮件客户端和符合 RFC 的 POP3 服务器均可用于此方案。  
+>  在此示例中 Microsoft Outlook Express 用作电子邮件客户端和[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]或[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]用作电子邮件服务器。 但是，任何 POP3 电子邮件客户端和符合 RFC 的 POP3 服务器无法用于此方案。  
   
- 此应用程序假设您尚未创建任何发送端口或接收位置。 如果已存在发送端口或接收位置，请在执行以下步骤时替换相应的名称。  
+ 此应用程序假定你尚未创建任何发送端口或接收位置。 在执行以下步骤时，如果您有现有发送端口或接收位置，请替换相应的名称。  
   
- 该应用程序是一个简单的基于内容的路由应用程序，仅使用一个接收位置和一个发送端口。 接收位置从运行的服务器上的邮箱中读取[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]或[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]("Windows server"\)。 发送端口从该接收位置获取消息，并将其发送到 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 本地文件系统的文件夹中。  
+ 应用程序是一个简单的基于内容的路由应用程序使用接收位置和发送端口。 接收位置从运行的服务器上的邮箱中读取[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]或[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]("Windows server"\)。 发送端口从接收位置获取消息，并将其发送到的本地文件系统上的文件夹[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
   
- 若要创建该应用程序，您必须执行以下操作：创建邮箱、设置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 接收位置和发送端口、启动发送端口并启用接收位置，以及向邮箱发送测试邮件。 请遵循以下步骤来创建应用程序。  
+ 若要创建应用程序，您需要创建邮箱、 设置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]接收位置和发送端口、 启动发送端口并启用接收位置，并向邮箱发送测试消息。 请按照以下步骤来创建应用程序。  
   
 ## <a name="create-a-mailbox-on-windows-server-2003"></a>在 Windows Server 2003 上创建邮箱  
- 若要在安装了电子邮件服务的 Windows Server 2003 上创建邮箱，请执行以下步骤：  
+ 若要安装的电子邮件服务与 Windows Server 2003 上创建邮箱，请按照下列步骤：  
   
 1. 单击**启动**，依次指向**程序**，指向**管理工具**，然后单击**POP3 服务**。  
   
@@ -56,10 +56,10 @@ ms.locfileid: "36985302"
   
 6. 在中**密码**并**确认密码**框中，键入一个密码，然后单击**确定**。  
   
-7. 请记下的**帐户名称**并**邮件服务器**登录信息显示的用于明文形式中的身份验证**POP3 服务**对话框中，然后单击**确定**。 为 POP3 传输类型配置的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 接收位置将使用此信息。  
+7. 请记下的**帐户名称**并**邮件服务器**登录信息显示的用于明文形式中的身份验证**POP3 服务**对话框中，然后单击**确定**。 此信息将由[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]POP3 传输类型配置的接收位置。  
   
 ## <a name="create-the-receive-location"></a>创建接收位置  
- 请遵循以下步骤创建接收位置：  
+ 请执行以下步骤创建接收位置：  
   
 1. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中双击默认数据库**\<** <em>m a c h</em>**\>。BizTalkMgmtDb.dbo**，其中*m a c h*是您的计算机的名称。 单击**应用程序**，然后单击**BizTalk.Application.1**。  
   
@@ -89,10 +89,10 @@ ms.locfileid: "36985302"
   
 14. 在中**轮询间隔**框中，键入**1**，单击**确定**，然后单击**确定**试。  
   
-## <a name="create-the-send-port-and-destination-folder-on-the-biztalk-server"></a>在 BizTalk Server 上创建发送端口和目标文件夹  
- 请遵循以下步骤在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 上创建发送端口和目标文件夹：  
+## <a name="create-the-send-port-and-destination-folder-on-the-biztalk-server"></a>在 BizTalk server 上创建发送端口和目标文件夹  
+ 请按照以下步骤创建发送端口和目标文件夹上[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]:  
   
-1. 在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 文件系统上创建一个文件夹。 它将成为发送端口的目标文件夹。  
+1. 上创建一个文件夹[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]文件系统。 这将是发送端口的目标。  
   
 2. 右键单击**发送端口**，单击**新建，** 然后单击**静态单向发送端口。**  
   
@@ -115,16 +115,16 @@ ms.locfileid: "36985302"
 11. 在中**值**框中，键入**POP3Receive**，然后单击**确定**。  
   
 ## <a name="enable-the-receive-location-and-start-the-send-port"></a>启用接收位置并启动发送端口  
- 请遵循以下步骤来启用接收位置和启动发送端口：  
+ 请按照下列步骤以启用接收位置并启动发送端口：  
   
 1. 右键单击**POP3Receive**接收位置，然后依次**启用**。  
   
 2. 右键单击**SendToFile**发送端口，然后依次**启动**。  
   
-   下一步就是通过向接收位置监视的邮箱发送测试邮件来测试该应用程序。  
+   下一步是通过向接收位置监视的邮箱发送测试消息来测试应用程序。  
   
-## <a name="configure-outlook-express-to-send-an-e-mail-message-to-the-mailbox"></a>配置 Outlook Express 以便向邮箱发送电子邮件  
- 请遵循以下步骤来配置 Outlook Express 向邮箱发送一封电子邮件：  
+## <a name="configure-outlook-express-to-send-an-e-mail-message-to-the-mailbox"></a>配置 Outlook Express 向邮箱发送一封电子邮件  
+ 请按照下列步骤来配置 Outlook Express 向邮箱发送一封电子邮件：  
   
 1.  单击**启动**，依次指向**程序**，然后单击**Outlook Express**。  
   
@@ -136,7 +136,7 @@ ms.locfileid: "36985302"
   
 5.  在中**Internet 电子邮件地址**对话框中**电子邮件地址**框中，键入**EmailTest @< 域名 >**，然后单击**下一步**.  
   
-     请务必输入适当的值 *< 域名 >*。 此值应与在 Windows 服务器上 POP3 服务管理用户界面中创建此邮箱使用的域名匹配。  
+     请务必输入适当的值 *< 域名 >*。 此值应与在 Windows 服务器上的 POP3 服务管理接口中以其名义创建此邮箱的域的名称匹配。  
   
 6.  在中**电子邮件服务器名称**对话框中**传入邮件**并**传出邮件**框中，键入服务器名称或 IP 地址的 Windows 服务器，然后单击**下一步**。  
   
@@ -154,12 +154,12 @@ ms.locfileid: "36985302"
   
 13. 单击**发送**发送测试消息。 若要确保，Outlook Express 立即发送测试消息，请单击**发送/接收**Outlook Express 工具栏中的按钮。  
   
-## <a name="view-the-message"></a>查看邮件  
- 请遵循以下步骤查看消息：  
+## <a name="view-the-message"></a>查看消息  
+ 请按照下列步骤以查看该消息：  
   
 1.  使用 Windows 资源管理器中打开指定为的文件夹**目标文件夹**发送端口。  
   
-2.  双击该文件夹中的文档，以便用记事本查看该文档的内容。  
+2.  双击要在记事本中查看文档的内容的文件夹中的文档。  
   
 ## <a name="see-also"></a>请参阅  
  [POP3 适配器概述](../core/what-is-the-pop3-adapter.md)

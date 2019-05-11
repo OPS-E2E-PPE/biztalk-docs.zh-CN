@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 589d55d4ffccadf277f586104f8d5b9b1bf36b00
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 75350c5f49e7d9f7e6f70365d3978e953ac620b0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996222"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330933"
 ---
 # <a name="invalid-binding"></a>绑定无效
 ## <a name="details"></a>详细信息  

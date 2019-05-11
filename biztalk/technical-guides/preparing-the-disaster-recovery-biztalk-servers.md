@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f9d806f3f757200e425b2f922032cb8f8d26bc6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 61e283233017723a5dbb014eae41073820a7f43d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981566"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279024"
 ---
 # <a name="preparing-the-disaster-recovery-biztalk-servers"></a>准备灾难恢复 BizTalk Server
 安装[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]在按照中的建议进行灾难恢复站点的运行时服务器[BizTalk Server 2010 安装和升级指南](http://go.microsoft.com/fwlink/?LinkID=194815)(<http://go.microsoft.com/fwlink/?LinkID=194815>)。 配置这些[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用 BizTalk 配置向导以将它们加入到生产 BizTalk 组的运行时服务器。 配置时[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]在灾难恢复站点 （包括灾难恢复企业单一登录主密钥服务器） 的运行时服务器，请确保为：  

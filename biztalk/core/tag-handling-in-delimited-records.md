@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c50a3daad9bb77ba4a9cbc264f018e29601edfff
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3b2c9a792eb498c1bb7bf45ccd4f42110169c17c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972462"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291660"
 ---
 # <a name="tag-handling-in-delimited-records"></a>分隔记录中的标记处理
 

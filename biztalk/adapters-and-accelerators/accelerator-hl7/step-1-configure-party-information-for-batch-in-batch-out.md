@@ -1,5 +1,5 @@
 ---
-title: 步骤 1： 配置参与方信息批处理中批处理扩展 |Microsoft Docs
+title: 第 1 步：配置批处理批中扩展的参与方信息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eafe692cf86ccf3c6fbe0713c1e621a99a601d5d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 188b7cae45ac9cae0076ed129e92147f276a79d6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974918"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289070"
 ---
-# <a name="step-1-configure-party-information-for-batch-inbatch-out"></a>步骤 1： 配置参与方信息中的批处理/出站批处理
+# <a name="step-1-configure-party-information-for-batch-inbatch-out"></a>第 1 步：配置参与方信息中的批处理/出站批处理
 在此步骤中，你将关闭碎片的参与方启用批处理的批处理中 / 出站批处理方案。 然后重新启动[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]若要启用配置更改才能生效。  
   
 ### <a name="to-turn-off-fragmentation-of-batching-for-the-party"></a>若要关闭的批处理的参与方的碎片  
@@ -34,4 +34,4 @@ ms.locfileid: "36974918"
   
 5. 请确保考虑到这**可恢复交换支持必需**下拉列表中**False**处于选中状态。  
   
-   请继续执行[步骤 2： 修改或创建发送和接收端口](../../adapters-and-accelerators/accelerator-hl7/step-2-modify-or-create-the-send-and-receive-ports.md)。
+   请继续执行[步骤 2:修改或创建发送和接收端口](../../adapters-and-accelerators/accelerator-hl7/step-2-modify-or-create-the-send-and-receive-ports.md)。

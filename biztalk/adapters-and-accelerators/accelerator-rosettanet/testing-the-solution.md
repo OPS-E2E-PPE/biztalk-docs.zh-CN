@@ -1,5 +1,5 @@
 ---
-title: 测试解决方案 |Microsoft 文档
+title: 测试解决方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7af2cab529344f499ff006a6cd99401ae63c4668
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 7b43ab300fefbe1916b58e9c606c2541dfd0a10e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26005534"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280599"
 ---
 # <a name="testing-the-solution"></a>测试解决方案
-在此部分中，你可以测试你完成的解决方案。 在 Fabrikam 解决方案中创建该 LOBWebApplication 工具用于 3A2 PIP 将请求提交给 Contoso LOB 应用程序。 Contoso 私有业务流程，然后创建 Contoso 基于的 3A2 价格和可用性将请求提交到 BizTalk server 使用的 SQL 适配器的 ERP 系统。 当从 ERP 系统收到响应时，业务流程调用业务规则引擎，以强制实施紧急情况下需要你创建的业务策略。  
+在本部分中，测试完整的解决方案。 使用 LOBWebApplication 工具创建 Fabrikam 解决方案中提交 3A2 PIP 请求到 Contoso LOB 应用程序。 然后创建 Contoso 专用业务流程将提交到 ERP 系统为 BizTalk Server 使用 SQL 适配器的 Contoso 基于的 3A2 价格与可用性请求。 当从 ERP 系统收到响应时，业务流程调用业务规则引擎，以强制实施紧急情况下需要你创建的业务策略。  
   
 ## <a name="in-this-section"></a>本节内容  
   

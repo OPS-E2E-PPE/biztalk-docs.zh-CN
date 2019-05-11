@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10743 |Microsoft Docs
+title: 单一登录：Event 10743 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dd0c8c170a17fade96daa0b9ecc0a3613afb1236
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 10ec09fac8f7b555cb189e032b94bf0c8f8da839
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003662"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65278024"
 ---
-# <a name="single-sign-on-event-10743"></a>单一登录： 事件 10743
+# <a name="single-sign-on-event-10743"></a>单一登录：事件 10743
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                                                                |
@@ -30,10 +30,10 @@ ms.locfileid: "37003662"
 |  事件源   |                                                                             ENTSSO                                                                             |
 |    组件    |                                                                              N\A                                                                               |
 |  符号名称  |                                                                    SSO_ERROR_REPLAY_STOPPED                                                                    |
-|  消息正文   | 由于发生错误，已停止重播存储的外部密码更改。%r<br /><br /> 重播文件: %1 %r<br /><br /> 其他数据: %2 %r<br /><br /> 错误代码： %3 |
+|  消息正文   | 由于 errors.%r 已停止重播存储的外部密码更改<br /><br /> 重播文件: %1 %r<br /><br /> 其他数据: %2 %r<br /><br /> 错误代码： %3 |
 
 ## <a name="explanation"></a>解释  
- 此错误事件表示，由于发生某些错误，已停止重播存储的外部密码更改。  
+ 此错误事件表示该重播存储的外部密码更改由于错误已停止。  
 
  ENTSSO 服务器无法与 SSO 数据库取得联系时，密码同步使用重播文件。 进度文件指示，距离通过 SSO 无法重播文件中用例联系人与 SSO 数据库会再次读取。  
 

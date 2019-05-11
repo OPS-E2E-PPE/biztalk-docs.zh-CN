@@ -19,19 +19,19 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 80b6fdd65067599ed14c37ff00507279ce9b2f47
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e2090d300259949b8d5e26f2fa48cc416beba3ca
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006686"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401546"
 ---
 # <a name="xsd-element-groups"></a>XSD 元素组
-通过在架构中使用某些结构，可以在 BizTalk 映射器生成的可扩展样式表语言转换 (XSLT) 中创建变体。  
+使用的架构中某些结构，创建变体中可扩展样式表语言转换 (XSLT) 的 BizTalk 映射器生成。  
   
- 当映射中包括定义序列、所选项或所有元素组的架构时，可能会出现上述情况。 例如，如果您使用的架构，包括**选择组**节点，它是您可以创建一个映射，需要两个或更多的子级**选择组**节点可出现在输出实例消息。 在这种情况下，BizTalk 映射器将在编译映射时显示警告。 警告将提示您，所映射的必填字段中只有一个字段能在运行时通过父循环的同一个迭代填充。 BizTalk 映射器将不显示表明映射逻辑不正确的错误消息。  
+ 定义 sequence、 choice 或所有元素组在映射中包括的架构时会发生该错误。 例如，如果您使用的架构，包括**选择组**节点，它是您可以创建一个映射，需要两个或更多的子级**选择组**节点可出现在输出实例消息。 在这种情况下，BizTalk 映射器将在编译映射时显示警告。 警告将提示您只有一个必填字段已映射可能在运行时的同一个父循环迭代填充。 BizTalk 映射器不授予您一条错误消息，指出映射逻辑不正确。  
   
- 另一种可以在 XSLT 中生成变体情况需要满足以下条件：  
+ 可能会在其中生成变体，则 XSLT 中的另一种情况是当满足以下条件：  
   
 - **记录 A**具有子级**字段元素 B**。  
   
@@ -39,10 +39,10 @@ ms.locfileid: "37006686"
   
 - **记录 A**属于**选择组**重复执行。  
   
-  在这种情况下，BizTalk 映射器将生成包含迭代逻辑的 XSLT，以处理可能会有许多源记录变体的情形。  
+  在此情况下，BizTalk 映射器将生成包含迭代逻辑，以便处理许多不同的源记录的可能性的 XSLT。  
   
 > [!NOTE]
->  对于涉及组的映射，必须明确地加以指定。 例如，如果目标架构包含**选择组**具有子节点 A 和 B 节点，不有效 a 和 B 同时在其父组的同一个迭代。 BizTalk 映射器不会阻止您创建无效的映射。 因此，必须使用判断 functoid 设置映射，以便 A 和 B 永远不会同时出现。  
+>  您必须是明确地加以指定涉及组的映射。 例如，如果目标架构包含**选择组**具有子节点 A 和 B 节点，不有效 a 和 B 同时在其父组的同一个迭代。 BizTalk 映射器不会阻止你创建有效的映射。 因此，必须使用判断 functoid 设置映射，其中 A 和 B 可以永远不会出现在同一时间。  
   
 ## <a name="see-also"></a>请参阅  
  [映射](../core/maps.md)   

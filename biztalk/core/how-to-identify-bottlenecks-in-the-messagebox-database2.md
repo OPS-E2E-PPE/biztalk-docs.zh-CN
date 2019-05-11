@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ffc04f31544a48f0ab25338c95beefaf14d5097c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ca799b6fc97262d1e7e3af4f4d73b09ca24eb444
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010622"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65337168"
 ---
 # <a name="how-to-identify-bottlenecks-in-the-messagebox-database"></a>如何找出 MessageBox 数据库的瓶颈
 若要找出 MessageBox 数据库的瓶颈，首先要确保 SQL Server 代理服务已启动。 将服务的启动状态从“手动”改为“自动”，这样即使服务器重新启动了，服务也会自动重新启动。  

@@ -1,5 +1,5 @@
 ---
-title: 故障排除 FTP 适配器 |Microsoft 文档
+title: FTP 适配器故障排除 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 545d99b9ca056ca14f4bf6a92bd9be5b54b52104
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7e786ad9059e7b46c0e573e1162e5bc37e14f6ac
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286405"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292902"
 ---
-# <a name="troubleshooting-the-ftp-adapter"></a>故障排除 FTP 适配器
-本部分中所介绍的疑难解答技巧用于诊断 FTP 适配器问题以及使用 FTP 适配器时的已知问题。  
+# <a name="troubleshooting-the-ftp-adapter"></a>FTP 适配器故障排除
+本部分介绍可用于诊断 FTP 适配器并使用 FTP 适配器的已知的问题的问题的故障排除方法。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [如何使用 FTP 适配器诊断问题](../core/how-to-diagnose-problems-with-the-ftp-adapter.md)  
+-   [如何诊断 FTP 适配器问题](../core/how-to-diagnose-problems-with-the-ftp-adapter.md)  
   
--   [与 FTP 适配器的已知的问题](../core/known-issues-with-the-ftp-adapter.md)
+-   [FTP 适配器的已知问题](../core/known-issues-with-the-ftp-adapter.md)

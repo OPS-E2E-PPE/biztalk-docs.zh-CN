@@ -17,17 +17,17 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3e3867c50e73c1747ed6e800f624b674e2ee737c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c9f7b7bf3f3095e5ac1f5bc87b730935de70d63e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004862"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282914"
 ---
 # <a name="modifying-an-existing-pip-in-rnpips"></a>修改 Rnpip 中的现有 PIP
-本主题介绍如何更改和重新部署安装的 Microsoft 合作伙伴接口流程 (PIP) 架构中的一个[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]安装程序。 该架构部署为 RNPIP 程序集的组成部分。  
+本主题介绍如何更改和重新部署安装的 Microsoft 合作伙伴接口流程 (PIP) 架构中的一个[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]安装程序。 部署为 Rnpip 程序集的一部分的架构。  
   
-### <a name="to-modify-an-existing-pip-in-rnpips"></a>修改 RNPIP 中的现有 PIP  
+### <a name="to-modify-an-existing-pip-in-rnpips"></a>修改 Rnpip 中的现有 PIP  
   
 1. 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
@@ -56,7 +56,7 @@ ms.locfileid: "37004862"
   
 12. 在中**属性页**对话框中，单击**配置属性**，单击**部署**，单击**重新部署**，选择`True`，然后依次**确定**。  
   
-13. 根据需要编辑 RNPIP 中的任何现有架构。  
+13. 编辑任何所需 Rnpip 中的现有架构。  
   
 14. 单击**文件**，然后单击**保存**。  
   

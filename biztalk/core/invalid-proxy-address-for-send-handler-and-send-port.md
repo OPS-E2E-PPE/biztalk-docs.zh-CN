@@ -12,14 +12,14 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5f509676b17a04fdbe0f0934225b5dc64546fed8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bdfa5951ed261d3e8bd63811764595d1b7e3858c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973542"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330621"
 ---
-# <a name="invalid-proxy-address-for-send-handler-and-send-port"></a>无效的代理地址（用于发送处理程序和发送端口)
+# <a name="invalid-proxy-address-for-send-handler-and-send-port"></a>无效的代理地址 （用于发送处理程序和发送端口）
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                    |
@@ -33,12 +33,12 @@ ms.locfileid: "36973542"
 |  消息正文   |                             无效的代理地址： {0}                             |
   
 ## <a name="explanation"></a>解释  
- 您为 WCF 发送处理程序或 WCF 发送端口提供的代理地址无效。  
+ 未提供 WCF 发送处理程序或 WCF 发送端口使用有效的代理地址。  
   
 ## <a name="user-action"></a>用户操作  
- 使用以下过程配置代理地址。  
+ 使用以下过程来配置代理地址。  
   
-#### <a name="to-configure-a-proxy-address"></a>配置代理地址的步骤  
+#### <a name="to-configure-a-proxy-address"></a>若要配置的代理地址  
   
 1. 单击**启动**，单击**所有程序**，单击**Microsoft [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]** ，然后单击**BizTalk Server 管理**。  
   
@@ -58,7 +58,7 @@ ms.locfileid: "36973542"
   
 9. 验证中的代理地址**代理设置**部分已正确配置。  
   
-   有关发送端口和发送处理程序的其他信息，请参阅以下资源：  
+   发送端口和发送处理程序的其他信息，请参阅以下资源：  
   
 -   [如何配置 Wcf-wshttp 发送端口](../core/how-to-configure-a-wcf-wshttp-send-port.md)  
   

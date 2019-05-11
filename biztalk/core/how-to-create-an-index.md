@@ -18,17 +18,17 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b15fd07049ee31162b2ed69f38a99d26100e08c4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 764456fa0f58c1bc5fe526b0ceede2e85ff6f85b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989694"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65339532"
 ---
 # <a name="how-to-create-an-index"></a>如何创建索引
 管理员使用**创建索引**命令以在指定检查点指定的活动创建索引。  
   
-### <a name="to-create-an-index-on-an-activity"></a>对活动创建索引  
+### <a name="to-create-an-index-on-an-activity"></a>若要在活动上创建索引  
   
 1. 从命令提示符处，浏览到以下目录：[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]跟踪。  
   

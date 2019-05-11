@@ -12,39 +12,39 @@ caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6ecc7999e807b4036f80e8fdd1941d447f7af163
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 472dac5fe3f4cf71431ad670b87aa3a1958abf9b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023579"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338792"
 ---
 # <a name="delete-a-host-instance"></a>删除主机实例
 
 ## <a name="overview"></a>概述
-可以使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台或 Windows 管理规范 (WMI) 来删除主机实例。 有关主机实例的详细信息，请参阅[主机实例](../core/host-instances.md)。 有关使用 WMI 删除主机实例的信息，请参阅**MSBTS_HostInstance (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
+可以使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台或 Windows Management Instrumentation (WMI) 来删除主机实例。 有关主机实例的详细信息，请参阅[主机实例](../core/host-instances.md)。 有关使用 WMI 删除主机实例的信息，请参阅**MSBTS_HostInstance (WMI)** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
   
- 在删除主机实例时，将会从关联的服务器中删除 izTalk Server 运行时的实例，并更新 BizTalk 管理数据库以从该主机中删除该实例。  
+ 删除主机实例时，从关联的服务器中删除 BizTalk Server 运行时的实例和更新 BizTalk 管理数据库以从主机中删除该实例。  
   
- 为了避免在删除主机实例时丢失消息，BizTalk Server 会在实际删除该实例之前完成所有的处理任务。  
+ 若要避免在删除主机实例时丢失消息，BizTalk Server 完成所有处理，就该实例实际上会删除。  
   
-## <a name="prerequisites"></a>必要條件  
- 若要执行此过程，则必须以 Administrators 组和 BizTalk Server Administrators 组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 若要执行此过程，必须以 Administrators 组和 BizTalk Server Administrators 组的成员的身份登录。  
   
- 此外，您还必需是以下数据库所在服务器上的 db_securityadmin SQL Server 数据库角色和 securityadmin SQL Server 角色的成员：  
+ 此外，您还必须是 db_securityadmin SQL Server 数据库角色和以下数据库所在的服务器上的 securityadmin SQL Server 角色的成员：  
   
 -   BAM 主导入 (BAMPrimaryImport)  
   
 -   BizTalk 管理 (BizTalkMgmtDb)  
   
--   BizTalk MessageBox (BizTalkMsgBoxDb)（全部）  
+-   BizTalk MessageBox (BizTalkMsgBoxDb) （全部）  
   
 -   BizTalk 跟踪 (BizTalk DTADb)  
   
 -   规则引擎 (BizTalkRuleEngineDb)  
   
 > [!CAUTION]
->  建议使用 BizTalk Server 管理控制台或 Windows 管理规范 (WMI) 脚本来更新主机实例的帐户信息。 这样可以确保 BizTalk Server 能够更新 BizTalk Server 数据库中的帐户信息，并在数据库与主机实例之间保持安全配置同步。  
+>  我们建议使用 BizTalk Server 管理控制台或 Windows Management Instrumentation (WMI) 脚本更新主机实例的帐户信息。 这可确保 BizTalk Server 可以更新 BizTalk Server 数据库中的帐户信息并保持数据库和同步的主机实例之间的安全配置。  
   
 ## <a name="steps"></a>步骤
   
@@ -57,7 +57,7 @@ ms.locfileid: "37023579"
 4. 在中**确认删除主机实例**对话框中，单击**是**。  
   
    > [!NOTE]
-   >  如果 BizTalk Server 无法删除该主机实例，则将会显示一个对话框，您可以在此对话框中强制删除该主机实例。 阅读完后提供的信息，请单击**是**以删除该主机实例。  
+   >  如果 BizTalk Server 无法删除主机实例，则会出现对话框，可以在其中强制删除该主机实例。 阅读完后提供的信息，请单击**是**以删除该主机实例。  
   
 ## <a name="see-also"></a>请参阅  
  [管理 BizTalk 主机和主机实例](../core/managing-biztalk-hosts-and-host-instances.md)   

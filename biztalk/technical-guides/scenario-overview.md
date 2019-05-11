@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f5bbc23f4d6b9d1e2886059cf053a495562c1d01
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 31a5294c8bd7e5340b0fa66499055138e10984a5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007142"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65313313"
 ---
 # <a name="scenario-overview"></a>方案概述
 本主题概述的负载测试由 BizTalk Server 已完成产品组，以在现代企业级别的硬件上运行时评估 BizTalk Server 的可伸缩性。  
@@ -109,20 +109,20 @@ BizTalk Server 能够轻松地通过将一个或多个 BizTalk Server 计算机�
 
 |“属性”|“模型”|CPU 类型|CPU 数|核心/CPU 数|CPU 体系结构|内存|操作系统|软件|  
 |----------|-----------|--------------|--------------------|--------------------------|----------------------|------------|----------------------|--------------|  
-|R710-01|Dell PowerEdge R710|Intel Xeon X5570|2 x 2.93 GHz|4|x64|72 GB|Windows Server 2008 R2 企业版|BizTalk Server|  
-|R710-02|Dell PowerEdge R710|Intel Xeon X5570|2 x 2.93 GHz|4|x64|72 GB|Windows Server 2008 R2 企业版|BizTalk Server|  
-|DL380G7-01|Hewlett Packard DL380 G7|Intel Xeon X5670|2 x 2.93 GHz|6|x64|192 GB|Windows Server 2008 R2 企业版|BizTalk Server|  
-|DL380G7-02|Hewlett Packard DL380 G7|Intel Xeon X5670|2 x 2.93 GHz|6|x64|192 GB|Windows Server 2008 R2 企业版|BizTalk Server|  
-|DL380-01|Hewlett Packard DL380|Intel Xeon 5150|2 x 2.66 GHz|2|x64|8 GB|Windows Server 2008 R2 企业版|SQL Server 2008 R2 负载测试数据库<br /><br /> Visual Studio 2010<br /><br /> WCF 后端服务|  
-|DL380-02|Hewlett Packard DL380|Intel Xeon E5335|2 x 2.00 GHz|4|x64|8 GB|Windows Server 2008 R2 企业版|Visual Studio 2010 负载测试控制器|  
-|DL380-03|Hewlett Packard DL380|Intel Xeon E5335|2 x 2.00 GHz|4|x64|8 GB|Windows Server 2008 R2 企业版|Visual Studio 2010 负载测试代理|  
-|DL380-04|Hewlett Packard DL380|Intel Xeon E5335|2 x 2.00 GHz|4|x64|8 GB|Windows Server 2008 R2 企业版|Visual Studio 2010 负载测试代理。<br /><br /> Perfmon 命令行|  
-|R805-06|Dell PowerEdge R805|AMD 四核 Opteron 2354|2 x 2.2 GHz|4|x64|32 GB|Windows Server 2008 R2 企业版|Visual Studio 2010 负载测试代理|  
-|R805-07|Dell PowerEdge R805|AMD 四核 Opteron 2354|2 x 2.2 GHz|4|x64|32 GB|Windows Server 2008 R2 企业版|Visual Studio 2010 负载测试代理|  
-|R900-03|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2 企业版|SQL Server 2008 R2 累积更新 4|  
-|R900-04|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2 企业版|SQL Server 2008 R2 累积更新 4|  
-|R900-05|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2 企业版|SQL Server 2008 R2 累积更新 4|  
-|R900-06|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2 企业版|SQL Server 2008 R2 累积更新 4|  
+|R710-01|Dell PowerEdge R710|Intel Xeon X5570|2 x 2.93 GHz|4|x64|72 GB|Windows Server 2008 R2 Enterprise Edition|BizTalk Server|  
+|R710-02|Dell PowerEdge R710|Intel Xeon X5570|2 x 2.93 GHz|4|x64|72 GB|Windows Server 2008 R2 Enterprise Edition|BizTalk Server|  
+|DL380G7-01|Hewlett Packard DL380 G7|Intel Xeon X5670|2 x 2.93 GHz|6|x64|192 GB|Windows Server 2008 R2 Enterprise Edition|BizTalk Server|  
+|DL380G7-02|Hewlett Packard DL380 G7|Intel Xeon X5670|2 x 2.93 GHz|6|x64|192 GB|Windows Server 2008 R2 Enterprise Edition|BizTalk Server|  
+|DL380-01|Hewlett Packard DL380|Intel Xeon 5150|2 x 2.66 GHz|2|x64|8 GB|Windows Server 2008 R2 Enterprise Edition|SQL Server 2008 R2 负载测试数据库<br /><br /> Visual Studio 2010<br /><br /> WCF 后端服务|  
+|DL380-02|Hewlett Packard DL380|Intel Xeon E5335|2 x 2.00 GHz|4|x64|8 GB|Windows Server 2008 R2 Enterprise Edition|Visual Studio 2010 负载测试控制器|  
+|DL380-03|Hewlett Packard DL380|Intel Xeon E5335|2 x 2.00 GHz|4|x64|8 GB|Windows Server 2008 R2 Enterprise Edition|Visual Studio 2010 负载测试代理|  
+|DL380-04|Hewlett Packard DL380|Intel Xeon E5335|2 x 2.00 GHz|4|x64|8 GB|Windows Server 2008 R2 Enterprise Edition|Visual Studio 2010 负载测试代理。<br /><br /> Perfmon 命令行|  
+|R805-06|Dell PowerEdge R805|AMD 四核 Opteron 2354|2 x 2.2 GHz|4|x64|32 GB|Windows Server 2008 R2 Enterprise Edition|Visual Studio 2010 负载测试代理|  
+|R805-07|Dell PowerEdge R805|AMD 四核 Opteron 2354|2 x 2.2 GHz|4|x64|32 GB|Windows Server 2008 R2 Enterprise Edition|Visual Studio 2010 负载测试代理|  
+|R900-03|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2 Enterprise Edition|SQL Server 2008 R2 累积更新 4|  
+|R900-04|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2 Enterprise Edition|SQL Server 2008 R2 累积更新 4|  
+|R900-05|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2 Enterprise Edition|SQL Server 2008 R2 累积更新 4|  
+|R900-06|Dell PowerEdge R900|Intel Xeon E7330|4 x 2.4 GHz|4|x64|64 GB|Windows Server 2008 R2 Enterprise Edition|SQL Server 2008 R2 累积更新 4|  
 
 ### <a name="storage-area-network-configuration"></a>存储区域网络配置  
  下图描绘了存储区域网络 (SAN) 配置用于实验室环境。  
@@ -133,7 +133,7 @@ BizTalk Server 能够轻松地通过将一个或多个 BizTalk Server 计算机�
 
 |服务处理器和高速缓存信息|LUN 配置|  
 |---------------------------------------------|-----------------------|  
-|两个服务处理器，每个都有：<br /><br /> -读取缓存大小： 2000 MB。<br />-写入缓存大小： 8000 MB。<br />的连接到光纤交换机两个前端端口。 每个端口中 4 Gbps。|-64 个磁盘 (268 GB，15 k RPM，光纤通道 Seagate。<br />-八个 8 磁盘 RAID 1 + 0 从这些 64 个磁盘划分的组。<br />-每个 DB 服务器分配 5 个 Metalun 均匀地从这些 RAID 组配置。|  
+|两个服务处理器，每个都有：<br /><br /> -读取缓存大小：2000 MB。<br />-写入缓存大小：8000 MB。<br />的连接到光纤交换机两个前端端口。 每个端口中 4 Gbps。|-64 个磁盘 (268 GB，15 k RPM，光纤通道 Seagate。<br />-八个 8 磁盘 RAID 1 + 0 从这些 64 个磁盘划分的组。<br />-每个 DB 服务器分配 5 个 Metalun 均匀地从这些 RAID 组配置。|  
 
  务必确定 SAN 的最大可以利用它来吞吐量，并将此值设置为针对在生产环境中 SAN 的预期负载进行比较。 这将有助于防止你的应用程序从测试/质量保证 (QA) 环境移动到生产环境时未预料到会产生与 SAN 相关硬件支出。 例如，SAN 的最大可用吞吐量可能多个足以满足您的沙盒测试环境中的应用程序。 但是，如果其他服务器应用程序将在生产环境中使用 SAN，可用 SAN 吞吐量可能不符合要求，并且可能会成为瓶颈。  
 
@@ -147,7 +147,7 @@ BizTalk Server 能够轻松地通过将一个或多个 BizTalk Server 计算机�
 
    下面的 LUN 配置为每个测试环境中运行 SQL Server 的四个计算机使用。  
 
-|驱动器号|卷名|“文件”|LUN 的大小 (GB)|  
+|驱动器号|卷名|文件|LUN 的大小 (GB)|  
 |------------------|-----------------|-----------|---------------------|  
 |C|本地 C 驱动器|MASTER、 MSDB 和 MODEL|136|  
 |H|Data_Tempdb|TempDB 数据文件|50|  
@@ -181,7 +181,7 @@ BizTalk Server 能够轻松地通过将一个或多个 BizTalk Server 计算机�
 
   Param.txt 文件包含以下信息：  
 
-- **驱动器数量：** h:、 i:、 j:，和 K  
+- **驱动器数量：** H:、 i:、 j:，和 K  
 
 - **测试文件的物理位置**:  
 
