@@ -17,12 +17,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6b7f8f86e4b74b84cef556ae95bc6255d8575237
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5512c9233e292fdafa232db5c36ac6ff14de53cc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012566"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378798"
 ---
 # <a name="base-and-common-schemas"></a>基类和通用架构
 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]已实现的记录和所包含不同的架构中的单个消息架构的元素。 这种方法提供单个位置来提供更新的字段和格式，使此类更改的消息架构。  

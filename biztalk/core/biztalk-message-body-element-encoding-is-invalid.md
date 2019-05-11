@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c6bca7046606461dd3368224364c21dd48ea5dfb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c468679853f450695f6fa2194c303be5438a4e90
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967966"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357987"
 ---
 # <a name="biztalk-message-body-element-encoding-is-invalid"></a>BizTalk 消息正文元素编码无效
 ## <a name="details"></a>详细信息  
@@ -33,12 +33,12 @@ ms.locfileid: "36967966"
 |  消息正文   | BizTalk 消息正文元素编码"{0}"无效。 希望的编码:"xml"，"base64"、"hex"或"string" |
   
 ## <a name="explanation"></a>解释  
- 此错误表示对传出消息使用了 BizTalk 正文模板选项，但是，为 BizTalk 正文指定的编码类型无效。  
+ 此错误表示 BizTalk 正文模板选项用于传出消息;但是，为 BizTalk 正文指定的编码类型无效。  
   
 ## <a name="user-action"></a>用户操作  
  使用以下过程配置编码类型。  
   
-#### <a name="to-configure-the-encoding-type"></a>配置编码类型的步骤  
+#### <a name="to-configure-the-encoding-type"></a>若要配置的编码类型  
   
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   

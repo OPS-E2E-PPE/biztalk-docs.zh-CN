@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e10f711bddfb3a04c6f7db7e639694e9bbb87b80
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3d8dd38c71c0257cd0e8c4396445d8c881a04d39
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010950"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381301"
 ---
 # <a name="invalid-project-location"></a>项目位置无效
 ## <a name="details"></a>详细信息  

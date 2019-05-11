@@ -12,19 +12,19 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0fd8a1a49be2416fb8b7fe5d160dd5228a95e94f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 97319d9bef68aa29be1c8de04b1f876a1bb778d6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983390"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65337986"
 ---
 # <a name="how-to-enable-notifications-services-on-additional-computers-in-a-group"></a>如何启用在组中的其他计算机上的通知服务
-在多计算机环境中运行 BAM 时，必须在将运行 BAM 管理实用程序以便部署某一活动的每台计算机上都启用 Notification Services。  
+当在多计算机环境中运行 BAM，必须在其将运行 BAM 管理实用程序来部署某一活动每台计算机上启用 Notification Services。  
   
  请考虑下列方案：  
   
-- 组 A 由以下计算机组成：  
+- 组 A 包含以下计算机：  
   
   - 计算机 1 用作 BAM 管理计算机。  
   
@@ -42,11 +42,11 @@ ms.locfileid: "36983390"
   
   若要能够从组 B 中的计算机组 A 中的数据库部署某一活动，必须先注册 Notification Services[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]托管通知服务。 如果未注册 Notification Services，您将收到以下错误：  
   
-  部署警报...错误： BAM 部署失败。  
+  部署警报...错误：BAM 部署失败。  
   
   未部署警报。  
   
-  调用的目标发生了异常。  
+  调用的目标已引发异常。  
   
   找不到指定的 Notification Services 实例的注册表项。  
   
@@ -54,7 +54,7 @@ ms.locfileid: "36983390"
   
 1.  在其他组中计算机上，单击**启动**，依次指向**所有程序**，单击**Microsoft SQL Server 2005**，单击**配置工具**，然后单击**Notification Services 命令提示**。  
   
-2.  在命令提示符处，键入： **nscontrol register-名称\<NS 前缀名称在配置选择\>-服务器\<ns db sql server\>**。 这样可使 Notification Services 登录到正确的数据库（此信息由 nscontrol 在服务所在计算机的注册表中维护）。  
+2.  在命令提示符处，键入： **nscontrol register-名称\<NS 前缀名称在配置选择\>-服务器\<ns db sql server\>**。 这可使 Notification Services 登录到正确的数据库 （此信息保留在服务计算机的注册表中由 nscontrol）。  
   
 ## <a name="see-also"></a>请参阅  
  [更改 BAM 运行时设置](../core/changing-bam-runtime-settings.md)   

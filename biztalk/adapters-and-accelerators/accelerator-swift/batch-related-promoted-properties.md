@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a27d10fd4fc4224d54db166ecdf5f774192cb10a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ea49f40097df45bac158150cd22d124b43831bcb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000678"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378950"
 ---
 # <a name="batch-related-promoted-properties"></a>与批处理相关的已提升的属性
 当 SWIFT 反汇编程序发布到 MessageBox 数据库源自的入站批处理的消息时，拆装器会将消息标记与特殊 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]提升特定对消息进行批处理的属性。 这些属性提供上下文信息，如从哪些序号位置发出一条消息的批时中的批处理，部件 A4SWIFT 已预留，等等。  

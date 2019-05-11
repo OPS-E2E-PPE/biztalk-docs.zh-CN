@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5e6217a96bfbbe0a9dfddef6e8cec5a82cb93254
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 787ed9f5fd2f94f719e224db471bde8c2aad9829
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004070"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357105"
 ---
 # <a name="common-issues-with-the-bam-interceptors"></a>BAM 侦听器中的常见问题
 本主题讨论使用 BAM 侦听器时，可能会出现的以下常见问题：  
@@ -39,7 +39,7 @@ ms.locfileid: "37004070"
   
 - 使用 SQL Server Profiler 并检查存在错误将导致事务中止的跟踪中。  
   
-## <a name="you-receive-an-error-similar-to-interceptor-configuration-polling-interval-0-must-be-at-least-5-seconds-when-using-the-wcf-interceptor"></a>使用 WCF 侦听器时收到“侦听器配置轮询间隔‘0’必须至少为‘5’秒”的错误  
+## <a name="you-receive-an-error-similar-to-interceptor-configuration-polling-interval-0-must-be-at-least-5-seconds-when-using-the-wcf-interceptor"></a>使用 WCF 侦听器时收到类似于"侦听器配置轮询间隔 '0' 必须至少 '5' 秒"的错误  
  未显式提供侦听器配置轮询间隔值在应用程序配置文件中，或提供一个值，但它是 5 秒内，需最小值时，可能会遇到此错误。  
   
  若要解决此问题，请为 PollingIntervalSec 提供有效的值所示：  

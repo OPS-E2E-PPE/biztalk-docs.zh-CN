@@ -2,7 +2,7 @@
 redirect_url: /biztalk/core/feature-pack-add-application-project/
 redirect_document_id: true
 ROBOTS: NOINDEX
-title: 配置自动部署的 JSON 模板 |Microsoft 文档
+title: 配置用于自动部署的 JSON 模板 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.reviewer: ''
@@ -15,32 +15,32 @@ caps.latest.revision: 4
 author: tordgladnordahl
 ms.author: tonordah
 manager: anneta
-ms.openlocfilehash: 10d85b625d759af675ecc1a38d540da8a304ba43
-ms.sourcegitcommit: a0165ec2f1e8b58545638666b7bfa2bf440036fd
+ms.openlocfilehash: d1587b7cf11b431e960035d4da4414a9a526c724
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2017
-ms.locfileid: "24054517"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356422"
 ---
-# <a name="configure-the-json-template-for-automatic-deployment"></a>配置自动部署的 JSON 模板
+# <a name="configure-the-json-template-for-automatic-deployment"></a>配置用于自动部署的 JSON 模板
 
 
-生成你的应用程序使用 Visual Studio Team Services 时，BizTalk 项目创建新的文件是 – (.btaproj)。 此新项目包含所有的 BizTalk 应用程序使用 VSTS 生成。 
+生成使用 Visual Studio Team Services 在应用程序时，新的 BizTalk 项目文件创建 – (.btaproj)。 此新项目将包含使用 VSTS 生成的所有 BizTalk 应用程序。 
 
-你的项目包括`BizTalkServerInventory.json`文件。 在此文件中，添加你的 BizTalk 程序集、 添加 BizTalk 应用程序时，绑定文件和设置的部署序列。 
+你的项目包括`BizTalkServerInventory.json`文件。 此文件中添加 BizTalk 程序集、 添加 BizTalk 应用程序，绑定文件和设置的部署序列。 
 
-本主题演示如何更新 json 文件。 
+本主题演示如何更新的 json 文件。 
 
 ## <a name="add-assemblies-binding-files-and-deployment-sequence"></a>添加程序集、 绑定文件和部署序列
 
-1. 打开`BizTalkServerInventory.json`文件在你**BizTalk Server 应用程序**项目 (.btaproj)。
+1. 打开`BizTalkServerInventory.json`文件中您**BizTalk Server 应用程序**项目 (.btaproj)。
 
 2. 该模板包括以下各节： 
 
     | | |
     |---|---|
     |BizTalkAssemblies | 在应用程序中使用的程序集 |
-    |BindingFiles | 你正在引用绑定文件|
+    |BindingFiles | 所引用的绑定文件|
     | DeploymentSequence | 若要安装的元素序列|
     
     示例模板： 
@@ -48,9 +48,9 @@ ms.locfileid: "24054517"
     ![FP1 Json 模板图像 1](../core/media/fp1-json-template-image-1.png)
 
     > [!IMPORTANT]
-    > 根据你的解决方案的复杂性，必须在此 JSON 模板文件中引用您要在生成中的元素。
+    > 具体取决于解决方案的复杂性，你想在生成中的元素必须引用此 JSON 模板文件中。
 
-3. 在`BizTalkAssemblies`，添加你的 BizTalk 应用程序使用的程序集： 
+3. 在`BizTalkAssemblies`，添加 BizTalk 应用程序使用的程序集： 
 
     ```
     "BizTalkAssemblies": [
@@ -61,7 +61,7 @@ ms.locfileid: "24054517"
     ]
     ```
 
-4. 在`BindingsFiles`，添加你的 BizTalk 应用程序的绑定文件： 
+4. 在`BindingsFiles`，添加 BizTalk 应用程序的绑定文件： 
 
     ```
     "BindingsFiles": [
@@ -72,7 +72,7 @@ ms.locfileid: "24054517"
     ]
     ```
 
-5. 在`DeploymentSequence`，将应用程序名称添加你希望这些部署，并且在安装顺序[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]: 
+5. 在中`DeploymentSequence`，用所需部署，并且在安装它们的顺序添加应用程序名称[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]: 
 
     ```
     "DeploymentSequence": [
@@ -84,7 +84,7 @@ ms.locfileid: "24054517"
     
 6. **保存**所做的更改。 
 
-完成后，Visual Studio 团队服务部署任务服从所需的文件和安装序列。 
+完成后，Visual Studio Team Service 部署任务将具有所需的文件和安装序列。 
 
 ## <a name="next-step"></a>下一步
 [配置令牌和变量](../core/configure-environmental-tokens-and-variables-for-automatic-deployment.md)绑定文件部署到多个相同的 BizTalk 应用程序中[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]s。

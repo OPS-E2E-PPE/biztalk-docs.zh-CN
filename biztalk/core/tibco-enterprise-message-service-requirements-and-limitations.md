@@ -12,20 +12,20 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 453edabdadbd50b320a0bc078a638991ab7a3a5c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 94a0adbc67dfb78eef97876d65b4da50a343efce
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995982"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379844"
 ---
 # <a name="tibco-enterprise-message-service-requirements-and-limitations"></a>TIBCO Enterprise Message Service 要求和限制
 
 ## <a name="system-requirements"></a>系统要求  
-包含与 TIBCO Enterprise Message Service 包括客户端 SDK （使用 TIBCO EMS C# API）。 用于 TIBCO EMS 的 BizTalk 适配器使用此 API 与 TIBCO EMS 通信。  
+包含与 TIBCO Enterprise Message Service 包括客户端 SDK （使用 TIBCO EMS C# API）。 用于 TIBCO EMS 的 BizTalk 适配器使用此 API 与 TIBCO EMS 进行通信。  
   
 ## <a name="add-the-api-to-the-gac"></a>将 API 添加到 GAC  
- 用于 TIBCO EMS 的 BizTalk 适配器要求将 TIBCO EMS C# API TIBCO.EMS.dll 添加到全局程序集缓存 (GAC) 中。 如果未安装此程序集，则适配器会触发异常并记录相应的消息。  
+ 用于 TIBCO EMS 的 BizTalk 适配器要求 TIBCO EMS C# API，TIBCO。EMS.dll，若要添加到全局程序集缓存 (GAC)。 适配器触发异常并记录相应的消息，如果未安装此程序集。  
   
 1. 将复制到 TIBCO EMS C #API 你[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机。  
   

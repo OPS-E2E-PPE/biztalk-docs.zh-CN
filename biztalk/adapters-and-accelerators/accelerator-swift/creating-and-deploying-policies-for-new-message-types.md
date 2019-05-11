@@ -13,11 +13,11 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: 570afc1035b9b9430c7f223df4dcec8b82eab756
-ms.sourcegitcommit: 0e14c3e018b091d81d0e4a68fafc10f6e31697e7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "25966307"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378458"
 ---
 # <a name="creating-and-deploying-policies-for-new-message-types"></a>创建和部署策略的新消息类型
 若要创建和部署策略的新消息类型：  

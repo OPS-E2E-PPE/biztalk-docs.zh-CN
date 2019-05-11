@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e4f9fd17807d9bc1b92b1eae1ac75662843c8e17
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1c925cecaec71eb0be8f9dd3d997b33090f286f8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993158"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377860"
 ---
 # <a name="failed-messages-and-errorcollection-objects"></a>失败的消息和 ErrorCollection 对象
 除了修饰具有升级属性，Microsoft 的失败的消息[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]将失败的消息发布到 MessageBox 数据库使用的其他消息*一部分*称为**ErrorSegment**. 此错误的部分包含表示 XML **ErrorCollection**对象。 A4SWIFT 拆装器填充**ErrorCollection**在每个阶段中的消息处理 （分析，XML 验证和业务规则引擎 (BRE) 验证） 的对象。  

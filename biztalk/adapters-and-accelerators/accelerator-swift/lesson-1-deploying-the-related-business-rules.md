@@ -1,5 +1,5 @@
 ---
-title: 第 1 课： 部署相关的业务规则 |Microsoft Docs
+title: 第 1 课：部署相关的业务规则 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6228f890e0f508650827f2bb2c3e52b5d29f96f7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4aef396419be1fa20e706d68151245a30c594f80
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971102"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377636"
 ---
-# <a name="lesson-1-deploying-the-related-business-rules"></a>第 1 课： 部署相关的业务规则
+# <a name="lesson-1-deploying-the-related-business-rules"></a>第 1 课：部署相关的业务规则
 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]包括在 A4SWIFT 软件开发工具包 (SDK) 调用的业务规则引擎 (BRE) 部署实用程序的程序。 在本课程中，使用此实用程序来检查程序集的部署的架构，确定所需的规则，并部署必要的词汇和策略的每个架构。  
   
  您还可以通过使用 SWIFT 标准发布指南 (SRG) 来确定所需的规则，然后使用业务规则编辑器工具来部署词汇和策略部署规则。  
@@ -53,4 +53,4 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
   
 7. 重新启动规则引擎更新服务。 通过单击**启动**，再单击**运行**，输入**services.msc**，然后单击**确定**。 在中**服务 （本地）** 窗口中，右键单击**规则引擎更新服务**，然后单击**重启**。  
   
-   请继续执行[第 2 课： 确认部署使用业务规则编辑器工具](../../adapters-and-accelerators/accelerator-swift/lesson-2-confirming-the-deployment-using-the-business-rule-composer-tool.md)。
+   请继续执行[第 2 课：确认使用业务规则编辑器工具部署](../../adapters-and-accelerators/accelerator-swift/lesson-2-confirming-the-deployment-using-the-business-rule-composer-tool.md)。

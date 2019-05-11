@@ -1,5 +1,5 @@
 ---
-title: 使用 WCF 通道模型的 Oracle 数据库中运行插入操作 |Microsoft 文档
+title: 使用 WCF 通道模型的 Oracle 数据库中运行插入操作 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,18 +18,18 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9fd689cbf378f41578c5f46b3067410a184cf650
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 70e78e8aab8e981087485cbc186ac3b488a39b61
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25963315"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376143"
 ---
 # <a name="run-an-insert-operation-in-oracle-database-using-the-wcf-channel-model"></a>使用 WCF 通道模型的 Oracle 数据库中运行插入操作
-本部分演示如何将一个记录插入 Oracle 数据库通过通道进行。 当你发送一条消息时，必须指定消息正文和消息操作。  
+本部分演示如何通过使用通道将一条记录插入到 Oracle 数据库。 当您发送一条消息时，必须指定消息正文和消息操作。  
   
 ## <a name="the-insert-message"></a>插入消息  
- 下面的 XML 演示在 HR 插入操作的消息正文。员工表。 记录集包含单个员工记录。 Insert 消息架构的详细信息，请参阅[基本插入、 更新、 删除和选择表和视图上的操作的消息架构](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md)。 这是示例中使用 Employee_Insert.xml 文件的内容。  
+ 以下 XML 显示了 HR 插入操作的消息正文。EMPLOYEES 表。 记录集包含的单个员工记录。 插入消息的架构的详细信息，请参阅[基本插入、 更新、 删除和选择表和视图操作的消息架构](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md)。 这是在示例中使用的 Employee_Insert.xml 文件的内容。  
   
 ```  
 <!-- New namespace: http://Microsoft.LobServices.OracleDB/2007/03/HR/Table/EMPLOYEES -->  
@@ -53,16 +53,16 @@ ms.locfileid: "25963315"
 ```  
   
 ## <a name="specifying-the-message-action"></a>指定的消息操作  
- 当你发送到的 SOAP 消息时，必须指定消息操作[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。 在创建如以下示例所示的消息时，你可以指定的消息操作。  
+ 发送到 SOAP 消息时，必须指定消息操作[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。 在创建如以下示例所示的消息时，可以指定的消息操作。  
   
 ```  
 Message messageIn2 = Message.CreateMessage(MessageVersion.Default, "http://Microsoft.LobServices.OracleDB/2007/03/HR/Table/EMPLOYEES/Insert", readerIn2);  
 ```  
   
- 消息操作在此示例中，"/ HR/表/员工/插入"，指定对 HR 的插入操作。EMPLOYEES 表是执行  
+ 消息操作在此示例中，"/ HR/表/员工/插入"，指定 HR 插入操作。雇员表执行的条件  
   
-## <a name="sending-the-insert-message"></a>发送的 Insert 消息  
- 此示例演示如何通过通道执行对 Oracle 表的插入操作。 该代码使用公开 SQLEXECUTE 操作[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]返回 Oracle 序列的下一个值。 此值然后写入中插入记录的 EMPLOYEE_ID 字段。 此模式，可将行插入到具有自动生成主键值的数据库。 有关通过通道调用 SQLEXECUTE 操作的详细信息，请参阅[使用 WCF 通道模型运行 SQLEXECUTE 操作](../../adapters-and-accelerators/adapter-oracle-database/run-a-sqlexecute-operation-in-oracle-database-using-the-wcf-channel-model.md)。  
+## <a name="sending-the-insert-message"></a>发送插入消息  
+ 此示例演示如何通过通道执行插入操作上的 Oracle 表。 该代码使用 SQLEXECUTE 操作公开的[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]返回下一步的 Oracle 序列值。 此值然后写入到插入记录中的 EMPLOYEE_ID 字段。 此模式，可将行插入到具有自动生成的主键值的数据库。 通过对通道调用 SQLEXECUTE 操作的详细信息，请参阅[通过使用 WCF 通道模型运行 SQLEXECUTE 操作](../../adapters-and-accelerators/adapter-oracle-database/run-a-sqlexecute-operation-in-oracle-database-using-the-wcf-channel-model.md)。  
   
 ```  
 using System;  
@@ -151,8 +151,8 @@ namespace OracleDMLChannel
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发 Oracle 数据库应用程序使用 WCF 通道模型](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-channel-model.md)   
  [创建一个通道，使用 Oracle 数据库](../../adapters-and-accelerators/adapter-oracle-database/create-a-channel-using-oracle-database.md)   
  [使用 WCF 通道模型运行 SQLEXECUTE 操作](../../adapters-and-accelerators/adapter-oracle-database/run-a-sqlexecute-operation-in-oracle-database-using-the-wcf-channel-model.md)   
- [调用中使用 WCF 通道模型的 Oracle 数据库的函数](../../adapters-and-accelerators/adapter-oracle-database/invoke-a-function-in-oracle-database-using-the-wcf-channel-model.md)
+ [调用使用 WCF 通道模型的 Oracle 数据库中的函数](../../adapters-and-accelerators/adapter-oracle-database/invoke-a-function-in-oracle-database-using-the-wcf-channel-model.md)

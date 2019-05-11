@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 26ac72c9d122b626411e67cfc6e18f76de226415
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 12e4e34ef888fa8c6ae7c91cc6b822c164daa9da
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002854"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378379"
 ---
 # <a name="creating-the-frr-receive-location-for-receiving-from-the-back-end-application"></a>创建 FRR 接收位置接收来自后端应用程序
 若要执行 FIN 响应对帐，需要创建从后端应用程序接收消息的接收位置[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]。  

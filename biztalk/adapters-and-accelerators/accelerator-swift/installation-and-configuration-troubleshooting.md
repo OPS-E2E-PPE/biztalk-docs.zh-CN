@@ -17,12 +17,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 10c0816508d2efb05dbac14797f80ffef12765fa
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 96353350f39668250977d46fb58b56b6693d7e30
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967174"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377416"
 ---
 # <a name="installation-and-configuration-troubleshooting"></a>安装和配置故障排除
 ## <a name="setup-is-unable-to-deploy-the-runtimeschemas-assembly"></a>安装程序无法将 RuntimeSchemas 程序集部署  
@@ -154,7 +154,7 @@ ms.locfileid: "36967174"
 ### <a name="symptom"></a>故障现象  
  [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]配置向导不会正确配置的 web 服务功能。 您收到以下错误：  
   
- "无法创建 MRSR 项目： 无法连接到远程服务器。"  
+ "无法创建 MRSR 项目：无法连接到远程服务器。"  
   
 ### <a name="possible-cause"></a>可能的原因  
  IIS 管理服务已停止运行时[!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]配置向导。  
@@ -182,7 +182,7 @@ ms.locfileid: "36967174"
 ### <a name="symptom"></a>故障现象  
  [!INCLUDE[A4SWIFT_CurrentVersion_abbrev](../../includes/a4swift-currentversion-abbrev-md.md)]配置向导不会正确配置的 web 服务功能。 您收到以下错误：  
   
- "无法创建 MRSR 项目： 对象引用未设置为某个对象的实例。"  
+ "无法创建 MRSR 项目：对象引用中未设置为某个对象的实例。"  
   
 ### <a name="possible-cause"></a>可能的原因  
  BizTalk Server 运行时配置过程中未创建进程内主机和主机实例。  
@@ -204,9 +204,9 @@ ms.locfileid: "36967174"
   
 4.  在主机属性屏幕中，在常规窗格中，输入以下信息：  
   
-    -   主机名： **BizTalkServerApplication**  
+    -   主机名：**BizTalkServerApplication**  
   
-    -   类型：**进程内**  
+    -   键入：**In-Process**  
   
     -   Windows 组：  **\<*域*\>\BizTalk 应用程序用户**（或在用于运行 BizTalk 进程内的 BizTalk Server 配置过程中设置的帐户应用程序）  
   
@@ -232,4 +232,4 @@ ms.locfileid: "36967174"
  在记事本中，打开 BREDeployment.exe.config 并更改的基本策略、 架构和词汇目录的文件夹中更新该实用程序的配置。  
   
 ## <a name="see-also"></a>请参阅  
- [疑难解答：问题和解决方法](../../adapters-and-accelerators/accelerator-swift/troubleshooting-issues-and-resolutions1.md)
+ [故障排除：问题和解决方法](../../adapters-and-accelerators/accelerator-swift/troubleshooting-issues-and-resolutions1.md)

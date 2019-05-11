@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1085af05221b252bb6942e2c32bbe1f91c8d7688
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 26375519e77de07161e20d9e373f2382cdbf0aac
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010766"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378009"
 ---
 # <a name="error-extractor-sample-class"></a>错误提取程序示例类
 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]拆装器序列化将错误记录到 XML 对象，并将 XML 对象附加到多部分消息的错误部分。 拆装器就像一样是有效的消息，然后将失败的消息发布到 MessageBox 数据库。 因此，失败消息携带错误详细信息到 MessageBox 数据库。 可以使用错误提取程序示例类从失败的消息，提取错误详细信息，并生成一个文件包含错误详细信息，并具有原始消息的另一个文件。  

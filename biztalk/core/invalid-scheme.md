@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 063c60ed07d89429f14f7ed3b7c090cdc0bac033
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b29ee2fb5361aed12c7f90a094e3abeb7296e495
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008158"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381271"
 ---
 # <a name="invalid-scheme"></a>方案无效
 ## <a name="details"></a>详细信息  
@@ -33,7 +33,7 @@ ms.locfileid: "37008158"
 |  消息正文   |                  方案无效;应为方案"{0}"或"{1}"                   |
   
 ## <a name="explanation"></a>解释  
- 发生以下情况之一： URI （统一资源标识符） 字段中指定的地址必须以 http:// 或 https:// 开头。 或者，该方案与传输绑定元素的实现中指定的方案不匹配。  
+ 发生以下情况之一： URI （统一资源标识符） 字段中指定的地址必须以 http:// 或 https:// 开头。 或方案不匹配的传输绑定元素实现中指定的内容。  
   
 ## <a name="user-action"></a>用户操作  
- 输入以 http:// 或 https:// 开头的有效代理地址 URI
+ 输入有效的代理地址以 http:// 或 https:// 开头的 URI

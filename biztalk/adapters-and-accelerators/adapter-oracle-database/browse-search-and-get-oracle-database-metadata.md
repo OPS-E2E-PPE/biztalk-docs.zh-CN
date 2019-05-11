@@ -20,12 +20,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6e67a1b1357798333cef8ccdd37074482fb06a29
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b4fb9d908e925ebfad42eb50aef28f94ae9f1972
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966126"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376789"
 ---
 # <a name="browse-search-and-get-oracle-database-metadata"></a>浏览、 搜索和获取 Oracle 数据库元数据
 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]图面元数据从 Oracle 数据库描述与 Oracle 数据库使用的适配器通信的消息结构。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]支持两个接口用于检索元数据。  
@@ -45,15 +45,15 @@ ms.locfileid: "36966126"
   
  包含一系列基础的 Oracle 数据库中的架构。 展开架构节点，请参阅以下项目：  
   
-- **表**： 架构中的所有表的列表。 选择一个表以查看插入、 选择、 更新和删除操作。  
+- **表**：在架构中的所有表的列表。 选择一个表以查看插入、 选择、 更新和删除操作。  
   
-- **过程**： 架构中作为操作公开的存储过程的列表。  
+- **过程**:在架构中作为操作公开的存储过程的列表。  
   
-- **函数**： 架构中作为操作公开的函数的列表。  
+- **函数**:在架构中作为操作公开的函数的列表。  
   
-- **包**： 架构中的所有包的列表。 选择要查看的过程和函数在包内的公开作为操作的包。  
+- **包**:在架构中的所有程序包的列表。 选择要查看的过程和函数在包内的公开作为操作的包。  
   
-- **视图**： 架构中的所有视图的列表。 选择视图以查看插入、 选择、 更新和删除操作。  
+- **视图**:在架构中的所有视图的列表。 选择视图以查看插入、 选择、 更新和删除操作。  
   
   除此之外，这两[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]还公开**SQLEXECUTE**出站操作，这使适配器客户端能够在 Oracle 数据库中执行任何泛型数据操作语言 (DML) 或存储的过程。 当你选择的根节点 （/），SQLEXECUTE 操作才可用。 请注意，SQLEXECUTE 的输出数据读取器 （通用记录的数组作为输出） 的数组。 因此，任何简单的 out 参数不会显示使用 SQLEXECUTE 操作。 有关操作的详细信息，请参阅[SQLEXECUTE 操作 Oracle 数据库中](../../adapters-and-accelerators/adapter-oracle-database/sqlexecute-operation-in-oracle-database.md)。  
   
@@ -61,11 +61,11 @@ ms.locfileid: "36966126"
   
   包含一系列基础的 Oracle 数据库中的架构。 展开架构节点，请参阅以下项目：  
   
-- **过程**： 架构中作为用于轮询的操作公开的存储过程的列表。  
+- **过程**:在架构中作为用于轮询的操作公开的存储过程的列表。  
   
-- **函数**： 公开作为操作的轮询架构中的函数的列表。  
+- **函数**:在架构中作为用于轮询的操作公开的函数的列表。  
   
-- **包**： 架构中的包的列表。 选择要查看的打包的过程和函数公开为操作的轮询的包。  
+- **包**:在架构中的包的列表。 选择要查看的打包的过程和函数公开为操作的轮询的包。  
   
   除此之外，这两[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]还公开**POLLINGSTMT**并**通知**入站操作。 POLLINGSTMT 操作使适配器客户端能够从基于查询轮询机制适配器支持的 Oracle 数据库中获取入站的数据。 通知操作使适配器客户端能够注册为在数据库中，通知查询的 SELECT 语句和数据库将通知发送到适配器客户端和结果集的 SELECT 语句更改。 选择根节点 （/） 时可用的 POLLINGSTMT 和通知操作。 有关操作的详细信息，请参阅[对基于接收轮询的数据更改消息的支持](../../adapters-and-accelerators/adapter-oracle-database/support-for-receiving-polling-based-data-changed-messages-in-oracle-database.md).md) 和[接收数据库更改器通知使用的 Oracle 数据库适配器时的注意事项](../../adapters-and-accelerators/adapter-oracle-database/before-you-receive-database-change-notifications-using-the-oracle-db-adapter.md).  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 30c343d214a97895e90bae2bc3a041180c0cc8e3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f1e3873bd70055d59cf4a216b084ea84594980f7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987006"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377570"
 ---
 # <a name="frr-processing"></a>FRR 处理
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] FIN 响应对帐 (FRR) 功能将与来自原始消息相关联 FIN 消息从 SWIFT 联盟访问 (SAA) [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] SAA 消息响应。 每当[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]发送原始消息时，FRR 缓存的和 SWIFT 绑定任何消息的副本不具有故障处理。 然后，它监视的响应消息返回到 SAA MessageBox [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]，接收对应于缓存的消息复制任何 ACK/NAK 消息。  

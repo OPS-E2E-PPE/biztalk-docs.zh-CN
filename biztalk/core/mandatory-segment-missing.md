@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e2bc9775da2fcbef756774c576074b471e808484
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 05a2c3a1ed86e57a307c5b7e335febff87ce53cf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977086"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380127"
 ---
 # <a name="mandatory-segment-missing"></a>必需段缺失
 ## <a name="details"></a>详细信息  
@@ -33,7 +33,7 @@ ms.locfileid: "36977086"
 |  消息正文   |                               必需段缺失                                |
   
 ## <a name="explanation"></a>解释  
- 此错误/警告/信息事件表明接收管道无法处理传入的 X12 交换，因为交换不包含消息架构（其 minOccurs 大于 0）所需的段。  
+ 此错误/警告/信息事件表明接收管道无法处理传入的 X12 交换，因为交换不包含消息架构 （其 minoccurs 大于 0） 所需的段。  
   
 ## <a name="user-action"></a>用户操作  
  若要解决此错误，请确保交换包含消息架构所需的所有段，然后重新发送消息。

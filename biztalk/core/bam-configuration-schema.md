@@ -1,5 +1,5 @@
 ---
-title: BAM 配置架构 |Microsoft 文档
+title: BAM 配置架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0b0d73435dc0245c3c3ce2b1574aa5a70b468c60
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a4ece27da0bdbfe43981add9d7f39aeb0ba7a89e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230221"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358606"
 ---
 # <a name="bam-configuration-schema"></a>BAM 配置架构
 BAM 配置架构定义一个 XML 文档，该文档中包含 BAM 管理器实用程序进行部署所用的基础结构的信息。 您可以将数据库部署至多台服务器，以获得可伸缩性。 为了支持此可伸缩性，请确保 BAM 配置 XML 文档中包含适用于以下数据库的不同服务器名称和配置设置：  
@@ -39,5 +39,5 @@ BAM 配置架构定义一个 XML 文档，该文档中包含 BAM 管理器实用
   
 -   [BAM DTS 包](../core/bam-dts-packages.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [更改 BAM 运行时设置](../core/changing-bam-runtime-settings.md)

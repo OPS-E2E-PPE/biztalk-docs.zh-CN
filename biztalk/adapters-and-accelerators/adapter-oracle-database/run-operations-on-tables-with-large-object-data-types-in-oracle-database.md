@@ -15,12 +15,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9ea86bd08a926c3274b16b26b093380396f17887
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 407c161590753a1d6d31b03f1b97eb86ddb58723
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966982"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376340"
 ---
 # <a name="run-operations-on-tables-with-large-object-data-types-in-oracle-database"></a>使用 Oracle 数据库中的大型对象数据类型运行对表的操作
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]对 Oracle 大型对象 (LOB) 数据类型提供支持：  
@@ -89,9 +89,9 @@ ms.locfileid: "36966982"
 
    |将标识符设置为|将消息类型设置为|  
    |-----------------------|-------------------------|  
-   |响应|*Operate_LOB。OracleDBBindingSchema.ReadLOBResponse*|  
-   |请求 2|*Operate_LOB。OracleDBBindingSchema.UpdateLOB*|  
-   |Response2|*Operate_LOB。OracleDBBindingSchema.UpdateLOBResponse*|  
+   |响应|*Operate_LOB.OracleDBBindingSchema.ReadLOBResponse*|  
+   |请求 2|*Operate_LOB.OracleDBBindingSchema.UpdateLOB*|  
+   |Response2|*Operate_LOB.OracleDBBindingSchema.UpdateLOBResponse*|  
 
 ## <a name="setting-up-the-orchestration"></a>设置业务流程  
  必须创建 BizTalk 业务流程使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]调用 ReadLOB 和 UpdateLOB 对表的操作。 在此业务流程，则删除两个请求消息，一个用于 ReadLOB 操作，另一个用于 UpdateLOB 操作。 这些消息的接收位置将被删除。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]使用的消息并通过 ODP 将它们传递到 Oracle 数据库。 从 Oracle 数据库的响应保存到另一个位置。  
@@ -132,7 +132,7 @@ ms.locfileid: "36966982"
 ### <a name="adding-ports"></a>添加端口  
  请确保为每个逻辑端口中指定以下属性。 端口列中列出的名称是在业务流程中显示的端口的名称。  
 
-|端口|属性|  
+|Port|属性|  
 |----------|----------------|  
 |FileIn|-设置**标识符**到*FileIn*<br />-设置**类型**到*FileInType*<br />-设置**通信模式**到*单向*<br />-设置**通信方向**到*接收*|  
 |LOBPort|-设置**标识符**到*LOBPort*<br />-设置**类型**到*LOBPortType*<br />-设置**通信模式**到*请求-响应*<br />-设置**通信方向**到*发送接收*|  
@@ -165,14 +165,14 @@ ms.locfileid: "36966982"
 
     |使用此选项|执行的操作|  
     |--------------|----------------|  
-    |相关类型|*Operate_LOB。CorrelationType_ReadLOB*|  
+    |相关类型|*Operate_LOB.CorrelationType_ReadLOB*|  
     |Identifier|*Correlation_ReadLOB*|  
 
 9. 添加另一个相关集，并指定属性窗格的以下属性。  
 
     |使用此选项|执行的操作|  
     |--------------|----------------|  
-    |相关类型|*Operate_LOB。CorrelationType_UpdateLOB*|  
+    |相关类型|*Operate_LOB.CorrelationType_UpdateLOB*|  
     |Identifier|*Correlation_UpdateLOB*|  
 
 ## <a name="specify-messages-for-action-shapes-and-connect-them-to-ports"></a>为操作形状指定消息并将它们连接到端口  
@@ -194,7 +194,7 @@ ms.locfileid: "36966982"
  现在必须生成 BizTalk 解决方案，并将其部署到[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 有关详细信息，请参阅[构建和运行业务流程](../../core/building-and-running-orchestrations.md)。  
 
 ## <a name="configuring-the-biztalk-application"></a>配置 BizTalk 应用程序  
- 部署 BizTalk 项目后，将前面创建的业务流程下列出**业务流程**BizTalk Server 管理控制台窗格中的。 必须使用 BizTalk Server 管理控制台来配置应用程序。 有关演练，请参阅[演练： 部署基本 BizTalk 应用程序](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)。
+ 部署 BizTalk 项目后，将前面创建的业务流程下列出**业务流程**BizTalk Server 管理控制台窗格中的。 必须使用 BizTalk Server 管理控制台来配置应用程序。 有关演练，请参阅[演练：部署基本 BizTalk 应用程序](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)。
 
  配置应用程序包括：  
 

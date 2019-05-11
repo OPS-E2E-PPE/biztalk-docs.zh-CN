@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 41b349991d0e0d6949754c804fcd1ebf16ea7ad1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0e277a1b2a02ee622f37007a2d2a001570bded79
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012344"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381347"
 ---
 # <a name="invalid-identifier"></a>无效的标识符
 ## <a name="details"></a>详细信息  
@@ -36,4 +36,4 @@ ms.locfileid: "37012344"
  此错误表明发布一个架构不是有效的.net 标识符时定义的 web 方法。  
   
 ## <a name="user-action"></a>用户操作  
- 将 web 方法重命名为有效的.net 标识符。 有效的标识符由一个字母后跟零个或多个字母或数字组成，但不能包含空格。
+ 将 web 方法重命名为有效的.net 标识符。 是有效的标识符以字母开头后, 跟零个或多个字母或数字，并且不能包含空格。

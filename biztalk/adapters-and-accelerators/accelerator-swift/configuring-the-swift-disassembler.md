@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5ad88310f5bbf600edd576bc0bc17c64fe3ecbea
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f13de9a2b1566a289d2abee63035e9d1462bf44d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001462"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378526"
 ---
 # <a name="configuring-the-swift-disassembler"></a>配置 SWIFT 反汇编程序
 SWIFT 反汇编程序 (DASM) 执行以下任务时调用在 Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]接收管道：  

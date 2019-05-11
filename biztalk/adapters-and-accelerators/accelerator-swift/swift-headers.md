@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e516fc906d2eac0610cb576266a034c54b42cae7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 21f0e80542292138706efa62410ef0de27c5eb60
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984438"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376973"
 ---
 # <a name="swift-headers"></a>SWIFT 标头
 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]提供 SWIFT 标头和尾部架构。 A4SWIFT 已合并到各种财务 (FIN) 消息交换的架构。 如果你想要创建一个自定义的 SWIFT FIN 格式样式消息类型 （例如，N98 消息），您可以将标头和尾部架构合并到您自己的格式。  
@@ -58,8 +58,8 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
 |**消息优先级 （块 2）**|优先级的消息;"S"表示系统消息 (类型 000-099);"U"紧急或"N"的用户的消息 (类型 100-999)。|  
 |**消息类型 （块 2）**|三位 FIN 消息类型，000-999。|  
 |**过时期限 （块 2--可选）**|默认值的优先级为 3 个单位 （15 分钟），您和 20 个单位 （100 分钟） 的优先级 n。（始终使用默认值。 交付监视存在时才有效。|  
-|**输出日期 （块 2）**|输出日期，本地的接收方，用以下格式： YYMMDD。|  
-|**输出时间 （块 2）**|输出时，本地的接收方，用以下格式： HHMM。|  
+|**输出日期 （块 2）**|输出日期，本地的接收方，编写采用以下格式：YYMMDD。|  
+|**输出时间 （块 2）**|输出时，本地的接收方，编写采用以下格式：HHMM。|  
 |**序列号 （块 1）**|对于所有 FIN 消息使用的服务标识符**01**或**05**，此数字是适用于传输的方向的下一个预期的序列号。<br /><br /> FIN 消息使用的服务标识符**21**或**25**，序列号是，确认的服务消息。|  
 |**服务标识符 （块 1）**|查找应用程序到相应的标识服务消息类型的两位数字。 对于的 FIN 类型 000 到 999 的所有消息，使用**01**。 对于类型 02 为 43 的所有消息，使用它们两位数字服务的消息类型。|  
 |**会话标识符 （块 1）**|根据需要，在当前应用程序会话数基于登录名。|  

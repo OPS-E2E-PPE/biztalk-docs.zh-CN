@@ -18,12 +18,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bc2b4436906b1df913deec8b525143773dd43e4e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ba6669f743a20cdde123eff397604fbad1ddb040
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979638"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377925"
 ---
 # <a name="extending-the-solution-for-capture-and-message-repair"></a>捕获和消息修复扩展的解决方案
 此帮助中的 MT103 端到端教程演示如何构造用于订阅失败的 SWIFT 消息的 BizTalk 业务流程。  

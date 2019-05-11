@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fe8b1b2c1043551b692530dcff4b8fdf49a44b54
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 62bb4567a73411c28ba68010b7def22a121ddda2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994670"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377004"
 ---
 # <a name="configure-the-soap-action-for-oracle-database"></a>配置 Oracle 数据库的 SOAP 操作
 若要完成对使用基于 WCF 的 Oracle 数据库的任何操作[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]，适配器的用户必须输入 SOAP 操作。 SOAP 操作与适配器通信应完成的操作。 您可以输入在设计时或在运行时的 SOAP 操作。 但是，如果输入的 SOAP 操作这两个在设计时和运行时，会覆盖在设计时输入的操作。  

@@ -1,5 +1,5 @@
 ---
-title: 第 1 课： 定义架构和映射 |Microsoft Docs
+title: 第 1 课：定义架构和映射 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,29 +14,29 @@ caps.latest.revision: 35
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b1e017239fc70186660812ea941fe11209506b1f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 02069f45a537a645dc0c3948e13d1f9208a8e5b3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980366"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380772"
 ---
 # <a name="lesson-1-define-schemas-and-a-map"></a>第 1 课：定义架构和映射
-在本课中，您将在企业应用程序集成 (EAI) 解决方案中创建并生成第一个项目。 此项目包含两个消息架构和一个映射。  
+在本课程中，将创建和构建企业应用程序集成 (EAI) 解决方案中的第一个项目。 该项目包含两个消息架构和映射。  
   
- 在 EAI 解决方案中，仓库系统将向 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 发送库存补货请求消息以进行处理。 在本课中，您将创建以下项：  
+ 在 EAI 解决方案中，仓库系统将发送到库存补货请求消息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]进行处理。 在本课中，您将创建以下各项：  
   
-- EAI 解决方案，用来容纳项目。  
+- EAI 解决方案中，若要保存项目。  
   
 - 项目，用来容纳架构和映射。  
   
-- 仓库向 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 发送的库存补货请求消息的架构。  
+- 由仓库发送给消息的架构，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]到库存补货请求。  
   
-- 在请求遭到拒绝时仓库接收的消息的架构。  
+- 在请求遭到拒绝时仓库接收的消息架构。  
   
-- 映射，用来重新格式化请求消息以创建请求拒绝消息。  
+- 映射，用来重新格式化请求消息创建请求拒绝消息。  
   
-  在开始之前生成项目的最后[第 2 课： 定义业务流程](../core/lesson-2-define-the-business-process.md)。 在第 2 课中，您将创建路由消息并根据批准条件评估库存补货请求消息内容的业务流程。  
+  在开始之前生成项目的最后[第 2 课：定义业务流程](../core/lesson-2-define-the-business-process.md)。 第 2 课中创建路由消息并根据批准条件的库存补货请求消息的内容的计算结果的业务流程。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -52,5 +52,5 @@ ms.locfileid: "36980366"
   
 ## <a name="see-also"></a>请参阅  
  [开始本教程之前](../core/before-you-begin-the-tutorial.md)   
- [第 2 课： 定义业务流程](../core/lesson-2-define-the-business-process.md)   
+ [第 2 课：定义业务流程](../core/lesson-2-define-the-business-process.md)   
  [第 3 课：部署解决方案](../core/lesson-3-deploy-the-solution.md)

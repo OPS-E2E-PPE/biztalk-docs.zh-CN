@@ -12,23 +12,23 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 177e0a7ac81717cfcbad159609b3f88f6a9a85fe
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6e98e1f5080af6aaf12dee8fd5d48833a83ebaef
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973622"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65353590"
 ---
-# <a name="creating-schemas-using-biztalk-flat-file-schema-wizard"></a>使用“BizTalk 平面文件架构向导”创建架构
-“BizTalk 平面文件架构向导”是为简化平面文件架构的创建过程而设计的，它提供了以下功能：  
+# <a name="creating-schemas-using-biztalk-flat-file-schema-wizard"></a>使用 BizTalk 平面文件架构向导创建架构
+BizTalk 平面文件架构向导旨在简化通过提供以下创建平面文件架构的过程：  
   
-- 将平面文件实例用作输入的功能  
+- 使用平面文件实例用作输入的功能  
   
-- 用于处理分隔平面文件架构和位置平面文件架构的可视化设计图面  
+- 用于处理分隔和位置平面文件架构的可视化设计图面  
   
-- 一个基于向导的交互式过程，用于向架构添加元素和定义与平面文件相关的批注。  
+- 用于向架构添加元素和定义平面文件交互基于向导的进程相关的批注。  
   
-  本部分对 BizTalk 平面文件架构向导、启动该向导的步骤、使用该向导时的注意事项以及演示如何从文档实例中创建平面文件架构的演练进行了概述。  
+  本部分中概述的 BizTalk 平面文件架构向导中，启动该向导的步骤使用向导中和一个演练，演示如何从文档实例创建平面文件架构的注意事项。  
   
 ## <a name="in-this-section"></a>本节内容  
   

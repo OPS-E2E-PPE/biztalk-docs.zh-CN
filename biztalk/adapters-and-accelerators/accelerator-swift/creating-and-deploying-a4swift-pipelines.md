@@ -17,12 +17,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d337b97dfb1973ef10c113ae0a206a51dcd63b1a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 64c58e313b3b48b78c6a0788b9a104cff3d18d2b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002446"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378437"
 ---
 # <a name="creating-and-deploying-a4swift-pipelines"></a>创建和部署 A4SWIFT 管道
 下图中所示，请执行以下步骤来创建和部署消息修复和新提交的 SWIFT 管道。  

@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 21bbdbca8b0b13887ed49dc662910dac3c0310da
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4a3634fc02958c47bb933a100e60214de3082ea2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009486"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381339"
 ---
 # <a name="invalid-or-missing-asn1-zlib-oid-encountered-during-decompression-processing"></a>解压缩处理期间 ASN.1 ZLib OID 无效或缺失
 ## <a name="details"></a>详细信息  

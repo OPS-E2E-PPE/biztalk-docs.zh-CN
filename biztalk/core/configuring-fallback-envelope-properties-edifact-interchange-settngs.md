@@ -12,28 +12,28 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b7547e646e166a9ec438da246242a2d460d77d63
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 12185022eb7af494fa01a3643d7486fc0c253577
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013070"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355676"
 ---
 # <a name="configuring-fallback-envelope-properties-edifact-interchange-settngs"></a>配置回退信封属性（EDIFACT-交换设置）
-本节提供有关如何配置 EDIFACT 待发邮件的信封的说明。  
+本部分说明如何配置为传出 EDIFACT 消息信封。  
   
-## <a name="prerequisites"></a>必要條件  
- 必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组或 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators 组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 必须以成员的身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理员或[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]B2B Operators 组。  
   
-### <a name="to-configure-the-interchange-envelope"></a>配置交换信封  
+### <a name="to-configure-the-interchange-envelope"></a>若要配置交换信封  
   
 1. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，右键单击**方**节点，，然后单击**EDIFACT 后备设置**。  
   
 2. 在中**EDIFACT 后备设置**对话框中**EDIFACT 协议页**选项卡上，在**交换设置**部分中，单击**信封**.  
   
-3. 有关**处理优先级代码 (UNB8)**，输入最少一个字符，最多为 1 个字符的字母数字值。 此字段为可选字段。  
+3. 有关**处理优先级代码 (UNB8)**，输入最少一个字符，最多为 1 个字符的字母数字值。 这是一个可选字段。  
   
-4. 有关**通信协议 (UNB10)**，输入包含最少一个字符，最多为 35 个字符的字母数字值。 此字段为可选字段  
+4. 有关**通信协议 (UNB10)**，输入包含最少一个字符，最多为 35 个字符的字母数字值。 这是一个可选字段  
   
 5. 选择**测试指示器 (UNB11)** 以指示由生成的交换[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]是测试数据。  
   

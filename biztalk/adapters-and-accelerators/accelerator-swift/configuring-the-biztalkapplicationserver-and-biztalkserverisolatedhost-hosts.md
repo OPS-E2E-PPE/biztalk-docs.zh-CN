@@ -1,5 +1,5 @@
 ---
-title: 配置 BizTalkApplicationServer 和 BizTalkServerIsolatedHost 主机 |Microsoft 文档
+title: 配置 BizTalkApplicationServer 和 BizTalkServerIsolatedHost 主机 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,17 +17,17 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8459debcd52ce990bc98adf3a2a2372206bae336
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 462abf2b0b7f9fc0df8a1b754d0fa5803656ab88
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22208797"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378532"
 ---
 # <a name="configuring-the-biztalkapplicationserver-and-biztalkserverisolatedhost-hosts"></a>配置 BizTalkApplicationServer 和 BizTalkServerIsolatedHost 主机
-若要限制到 BizTalk 消息传送服务器的消息传送的 （发送和接收消息），你需要配置运行 MSMQT 发送和接收处理程序，仅在消息传递的服务器上运行的默认主机。  
+若要限制到 BizTalk 消息传送服务器的消息 （发送和接收消息），需要配置的默认主机，哪些运行 MSMQT 发送并接收处理程序，仅在消息传送的服务器上运行。  
   
-### <a name="to-configure-the-default-hosts"></a>若要将默认主机配置  
+### <a name="to-configure-the-default-hosts"></a>若要配置的默认主机  
   
 1.  使用 BizTalk 管理控制台，从 BizTalkApplicationServer 主机中删除业务流程服务器主机实例：  
   

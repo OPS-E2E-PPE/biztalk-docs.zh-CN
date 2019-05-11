@@ -1,5 +1,5 @@
 ---
-title: 如何查看单个活动 |Microsoft 文档
+title: 如何查看单个活动 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,24 +16,24 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e8726941e09d045a6b5d6021be2467f70f43fd6c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ac39531ff97fb97181ead85760c74ffdbc3f14e0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22255973"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383174"
 ---
 # <a name="how-to-view-an-individual-activity"></a>如何查看单个活动
-您可以在 BAM Web 门户的“业务活动搜索结果”页中查看活动。 搜索活动的步骤，请参阅[如何搜索活动](../core/how-to-search-for-activities.md)。  
+在 BAM Web 门户中的业务活动搜索结果页面中查看活动。 有关搜索活动的步骤，请参阅[如何搜索活动](../core/how-to-search-for-activities.md)。  
   
-### <a name="to-view-detailed-tracking-information"></a>查看详细的跟踪信息  
+### <a name="to-view-detailed-tracking-information"></a>若要查看详细的跟踪信息  
   
-1.  在 BAM Web 门户上搜索可用活动后，在“业务活动搜索结果”页上，单击表示要查看的活动的返回行。  
+1.  在 BAM Web 门户上的可用活动搜索后，在业务活动搜索结果页上，单击表示你想要查看的活动的返回行。  
   
-2.  此时将显示“活动状态”页，其中包含有关所选活动的信息。  
+2.  活动状态页将显示与所选活动的信息。  
   
-3.  在查看某个业务活动后，可以查看任何相关活动或相关文档。  
+3.  在查看某个业务活动后，可以在任何相关的活动或相关的文档中进行查看。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何查看相关的活动和相关的文档](../core/how-to-view-related-activities-and-related-documents.md)   
  [如何搜索活动](../core/how-to-search-for-activities.md)

@@ -1,5 +1,5 @@
 ---
-title: 疑难解答： 问题和 Resolutions1 |Microsoft Docs
+title: 故障排除：问题和 Resolutions1 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3a2b2f7cbbe2fb6f4ba67ce1268d9ebea4ff48e3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4940eedd99c2087bf8d3397025a5e7752b3e07e0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982918"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376920"
 ---
-# <a name="troubleshooting-issues-and-resolutions"></a>故障排除： 问题和解决方法
+# <a name="troubleshooting-issues-and-resolutions"></a>故障排除：问题和解决方法
 本主题介绍与运行 Microsoft 相关的问题[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]。 特定的症状、 可能的原因和解决方案详细介绍每个问题。  
   
  问题和解决方法归为以下几个方面：  

@@ -12,15 +12,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 226a0197f1f66313de994269039107b47ed03b9b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c61dc6e070e6dd4832cdba999c44b74d9e80e05f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002054"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357339"
 ---
-# <a name="choice-group-nodes"></a>“选择组”节点
-在 BizTalk 编辑器中，可以插入**选择组**节点以包含其他节点 （或整个子树中的节点），其中只有一个可以显示在实例消息。 给定的实例消息（如果有效）将仅显示这些选择之一。 包含的节点必须是与 XML 元素对应的节点，但不能是与 XML 属性对应的节点。  
+# <a name="choice-group-nodes"></a>选择组节点
+在 BizTalk 编辑器中，可以插入**选择组**节点以包含其他节点 （或整个子树中的节点），其中只有一个可以显示在实例消息。 给定的实例消息，如果有效，会显示这些选择之一。 包含的节点必须是与 XML 元素相对应的节点，但不能为对应于 XML 特性的节点。  
 
 > [!NOTE]
 >  在 BizTalk 编辑器中，**选择组**节点表示的字符串\<选择\>架构树视图中。 如果引用设置为**选择组**节点，如 x，它将表示为\<Group: x\>架构树视图中。  

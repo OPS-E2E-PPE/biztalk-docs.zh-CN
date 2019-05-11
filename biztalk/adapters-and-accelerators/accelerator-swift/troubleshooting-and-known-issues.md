@@ -13,17 +13,17 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5a275822f49fe84d76ab6bc764bc74e67770edd1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: effccda356e4bb7df20dbc95a4f67eaee1f78a38
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971118"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376934"
 ---
 # <a name="troubleshooting-and-known-issues"></a>疑难解答和已知问题
 本部分提供与 Microsoft 进行故障排除相关的信息的一个集中的位置[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]。  
 
-## <a name="readme"></a>自述文件
+## <a name="readme"></a>ReadMe
   
  与位于中的自述文件中包含此 A4SWIFT 文档发布后发现的问题相关的补充信息\<*驱动器：*\>\Program Files\\Microsoft BizTalk Accelerator for SWIFT\Documentation 文件夹。  
 

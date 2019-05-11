@@ -12,36 +12,36 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af801bd6ec61c883d81e7ea6fd15e92f2186b777
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d79d8814caeb43d4338815bd6e73cde742a3fca4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021524"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380492"
 ---
-# <a name="managing-batches"></a>管理批
-如何手动控制版本的批处理交换，在顶部使用的控件**批配置**页的单向协议选项卡**协议属性**对话框 (在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台) X12 和 EDIFACT 编码的。 其中包括下列控件：  
+# <a name="managing-batches"></a>管理批处理
+如何手动控制版本的批处理交换，在顶部使用的控件**批配置**页的单向协议选项卡**协议属性**对话框 (在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台) X12 和 EDIFACT 编码的。 这涉及到以下控件：  
   
 - **启动批**。 激活批处理业务流程的实例。 选择后**启动**按钮时，批处理元素将收集实例在激活范围内时。  
   
-- **重写批**。 创建使用现有元素一个批并立即发送它。 发送批之后，批处理业务流程将根据已建立的设置，继续进行批处理。  
+- **重写批**。 创建使用现有元素一个批并立即发送它。 将批处理发送后，批处理业务流程将继续根据已建立的设置的批处理。  
   
 - **停止批**。 停用批处理业务流程的激活的实例。 选择后**停止**按钮，该业务流程基于现有批元素创建批，将交换传送给 EDI 发送管道，并且将终止。  
   
   控件对单个批配置进行操作。  
   
-  按下时，BizTalk 采取的操作**启动**取决于按钮**筛选器**条件**版本**条件，和**激活**上的范围设置**批配置**页。 筛选条件确定将对哪些消息进行批处理。 发布条件确定何时发布批。 “激活范围”属性确定批处理业务流程的激活实例是否将收集批处理元素。 有关这些设置的详细信息，请参阅[配置传出批](../core/configuring-an-outgoing-batch.md)。  
+  按下时，BizTalk 采取的操作**启动**取决于按钮**筛选器**条件**版本**条件，和**激活**上的范围设置**批配置**页。 筛选条件确定将哪些消息进行批处理。 发布条件确定何时发布批。 激活范围属性确定是否已激活批处理业务流程实例将收集批处理元素。 有关这些设置的详细信息，请参阅[配置传出批](../core/configuring-an-outgoing-batch.md)。  
 
 本主题演示如何启动、 停止、 重写，以及删除批。  
 
 > [!NOTE]
 >  有关如何配置批处理的说明，请参阅[配置 X12 批处理](../core/configuring-batching-x12.md)或[配置 EDIFACT 批处理](../core/configuring-batching-edifact.md)。 
   
-## <a name="prerequisites"></a>必要條件  
- 必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组或 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators 组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 必须以成员的身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理员或[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]B2B Operators 组。  
   
 > [!NOTE]
->  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators 组成员可以启动、停止或重写批，但不能更改与批处理相关的任何配置设置。 必须是 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators 组的成员才能更改批配置。  
+>  成员[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]B2B Operators 组可以启动、 停止或重写批，但不能更改任何配置设置与批处理相关。 您必须是属于[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Administrators 组才能更改批配置。  
   
 ## <a name="start-stop-and-override-batches"></a>启动、 停止和重写批  
   
@@ -53,7 +53,7 @@ ms.locfileid: "37021524"
   
 4. 上**批配置**页上，选择你想要启动、 停止或重写批的选项卡。  
   
-5. 验证筛选条件、发布条件和激活范围属性是否使用其应当使用的值。  
+5. 验证筛选条件、 发布条件和激活范围属性应如此。  
   
    > [!NOTE]
    >  如果您的成员[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]操作员组，但不是[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Administrators 组，可以启动、 停止、 或重写批。 但是，不能更改批配置设置。 设置都可见，但是如果更改了设置，然后选择**确定**，出现权限错误。  

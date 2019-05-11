@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cbaef31e6bf47538e57b4c509efcb7a8cf565162
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5597788d20ad1f1e75b35a81ea7294de75830662
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970094"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378478"
 ---
 # <a name="creating-and-submitting-a-new-message"></a>创建和提交新消息
 本部分介绍如何提交新消息。 作为修复后的消息，使用新的消息必须验证和批准的消息创建者以外的人员。  
@@ -45,15 +45,15 @@ ms.locfileid: "36970094"
 
 5. 在[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]2007年窗口中的，消息中窗体中，所有必填的字段 （作为由星号表示） 和你想要使用的任何可选字段的类型消息数据。  
 
-6. 若要查找 BIC、 当前角色中： 创建窗格，请单击**BIC 查找**。  
+6. 若要查找 BIC、 当前角色中：创建窗格，请单击**BIC 查找**。  
 
 7. 键入的金融机构、 bank 代码和国家/地区的名称，然后单击**搜索**。  
 
 8. BIC 查找窗格中，将 BIC 复制到消息窗体中的相应的银行代码字段。  
 
-9. 在当前角色中： 创建窗格，请单击**验证**，然后单击**验证消息**。  
+9. 中的当前角色：创建窗格，请单击**验证**，然后单击**验证消息**。  
 
-10. 在当前角色的结果窗格中： 创建窗格中，确定需要在消息中修复的错误。  
+10. 在当前角色的结果窗格中：创建窗格中，确定需要在消息中修复的错误。  
 
     > [!NOTE]
     >  如果修复所有验证错误消息中，您只能提交一封新邮件。  

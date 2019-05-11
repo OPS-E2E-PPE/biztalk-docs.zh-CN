@@ -1,5 +1,5 @@
 ---
-title: 将 SWIFT 管道组件添加到工具箱 |Microsoft 文档
+title: 将 SWIFT 管道组件添加到工具箱 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aaef345994a1d849e09025d9ad1bb0f133c1b224
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4594b3ed3ca1c348a9d903217d165f8f9d2380d9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22208925"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378635"
 ---
 # <a name="adding-swift-pipeline-components-to-the-toolbox"></a>将 SWIFT 管道组件添加到工具箱
-你必须添加到 SWIFT 管道组件[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]工具箱中，以便你可以创建自定义管线，使用这些组件。 这是为消息修复和新提交或 FIN 响应对帐创建管道所需的。  
+您必须添加到 SWIFT 管道组件[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]工具箱中，以便您可以创建自定义管道使用这些组件。 这被必需的消息修复和新提交或 FIN 响应对帐创建管道。  
   
  **摘要**  
   
@@ -33,16 +33,16 @@ ms.locfileid: "22208925"
   
 -   SWIFT 反汇编程序 （用于消息修复和新提交或 FRR）  
   
--   SWIFT Frr 相关设置 （对于 FRR) 的解析程序  
+-   SWIFT 的 Frr 相关集冲突解决程序 （适用于 FRR)  
   
--   SWIFT Frr MQSeries 解码器 （FRR)  
+-   SWIFT 的 Frr MQSeries 解码器 （适用于 FRR)  
   
--   SWIFT Frr MQSeries 发送组件 （用于 FRR)  
+-   （适用于 FRR) SWIFT 的 Frr MQSeries 发送组件  
   
-### <a name="to-add-a4swift-pipeline-components-to-the-toolbox"></a>将 A4SWIFT 管道组件添加到工具箱  
+### <a name="to-add-a4swift-pipeline-components-to-the-toolbox"></a>若要向工具箱添加 A4SWIFT 管道组件  
   
 1.  在 Visual Studio 中，在**工具**菜单上，单击**选择工具箱项**。  
   
-2.  在**选择工具箱项**对话框中，在**BizTalk 管道组件**选项卡上，选择**SWIFT 汇编程序**和**SWIFT 反汇编程序**. 如果你将使用 FIN 响应对帐，选择**SWIFT Frr 相关设置解析程序**， **SWIFT Frr MQSeries 解码器**，和**SWIFT Frr MQSeries 发送组件**。  
+2.  在中**选择工具箱项**对话框中，在**BizTalk 管道组件**选项卡上，选择**SWIFT 汇编程序**和**SWIFT 反汇编程序**. 如果您将使用 FIN 响应对帐，选择**SWIFT Frr 相关设置解析程序**， **SWIFT 的 Frr MQSeries 解码器**，并**SWIFT 的 Frr MQSeries 发送组件**。  
   
-3.  单击 **“确定”**。
+3.  单击“确定” 。

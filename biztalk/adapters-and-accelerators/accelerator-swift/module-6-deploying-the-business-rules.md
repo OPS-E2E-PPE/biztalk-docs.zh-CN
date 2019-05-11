@@ -1,5 +1,5 @@
 ---
-title: 模块 6： 部署业务规则 |Microsoft Docs
+title: 模块 6:部署业务规则 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 389d8038b5a216f90d85399eeefaebde86284c71
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 504857e04fc909dc558b0900f23d0d226d82fcf9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972838"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377154"
 ---
-# <a name="module-6-deploying-the-business-rules"></a>模块 6： 部署业务规则
+# <a name="module-6-deploying-the-business-rules"></a>模块 6:部署业务规则
 在此模块中部署的业务规则、 确认你安装的日志，并确认您使用业务规则编辑器工具的部署。  
   
  使用业务规则以确保 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]消息符合格式规范、 字段规范和验证的网络规则对全球范围内 Interbank 金融电信 (SWIFT) 标准协会中定义。 格式规范适用于整个消息的结构和字段规范详细信息消息中的每个字段。 验证的网络规则适用于跨字段验证，并在本质上复杂。  

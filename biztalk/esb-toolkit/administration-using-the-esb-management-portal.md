@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 24c44951b4284e0d17b2d8e69011cedfa213c219
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9b0687b57ed18cd657a70ce50f1d1efc284d6392
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967758"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379492"
 ---
 # <a name="administration-using-the-esb-management-portal"></a>使用 ESB 管理门户管理
 ESB 管理门户中，作为的一部分包括[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]，是演示如何使用指标和存在的可能性用于扩展 BizTalk ESB 工具包的示例站点。 该门户提供了可以从其生成自己的自定义的门户的起始点。  

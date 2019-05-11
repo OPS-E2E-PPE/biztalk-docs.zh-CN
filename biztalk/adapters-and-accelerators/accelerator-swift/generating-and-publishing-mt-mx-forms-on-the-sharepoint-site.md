@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 492eda3b4bf3d3950c084bc9234b52b911b84a2b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dcb32891ef9a8d78f032eececfab7644c6d5ae56
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980046"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377653"
 ---
 # <a name="generating-and-publishing-mtmx-forms-on-the-sharepoint-site"></a>生成和发布在 SharePoint 站点上的 MT/MX 表单
 **若要生成和发布 MT/MX 表单上的 SharePoint 站点：**  
@@ -30,7 +30,7 @@ ms.locfileid: "36980046"
 
 4. 键入 FormGenerator.exe [-b] [-\<不可以。 模板文件夹路径的\>]  
 
-    `<TemplateFolderPath> <DestinationFolderPath> <DocumentSchemaLocation> {[<SpaceSeparatedDocumentSchemaList>] | [-f <NameOfFileContainingSchemaList>]}`的用户。 参数替换为新创建的文件夹名称。  
+    `<TemplateFolderPath> <DestinationFolderPath> <DocumentSchemaLocation> {[<SpaceSeparatedDocumentSchemaList>] | [-f <NameOfFileContainingSchemaList>]}` 的用户。 参数替换为新创建的文件夹名称。  
 
 5. 上述命令还将生成所需的 MX 消息修复的信封架构。  
 
@@ -61,7 +61,7 @@ ms.locfileid: "36980046"
 
 17. 指向 **\<MessageType\>**，单击它，旁边的向下箭头，然后单击**编辑属性**。  
 
-18. 在模板中：\< MessageType\>窗口中的，在 Namespace 框中：  
+18. 在模板中：\<MessageType\>窗口中的，在 Namespace 框中：  
 
     - 如果生成 MT InfoPath 窗体，请键入： **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMTxxx**  
 

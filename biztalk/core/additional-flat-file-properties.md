@@ -12,24 +12,24 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 56db18d93eda3c5ddaaefcf58b73e0870cbb332c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cab0391fd8ffb8388d113301f7a3655f703c2c77
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013308"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360734"
 ---
 # <a name="additional-flat-file-properties"></a>其他平面文件属性
 
 ## <a name="hidden-properties"></a>隐藏的属性
-下表列出了在架构编辑器中未显示的其他平面文件节点属性。 使用这些属性需要在文本编辑器中手动编辑架构文件。  
+下表列出了不会出现在架构编辑器中的其他平面文件节点属性。 使用这些属性需要手动编辑在文本编辑器中的架构文件。  
 
-|“属性”|值|默认值|Description|  
+|属性|值|默认值|Description|  
 |--------------|------------|-------------------|-----------------|  
-|suppress_empty_nodes|**true** 或 **false**|**false**|指示是否在解析程序生成 XML 实例数据后删除空 XML 节点。|  
-|generate_empty_nodes|**true** 或 **false**|**true**|为 XML 实例数据中的现有记录生成空节点。|  
-|parser_optimization|**速度**或**复杂性**|**速度**|针对速度进行优化可缩短解析时间，但需要处理某些数据多义性问题。 针对复杂度进行优化可处理更广泛的多义性问题，但会影响处理速度。|  
-|lookahead_depth|任何正整数；0 表示 lookahead 无限制。|3|在查找匹配数据时向前查找的深度。|  
+|suppress_empty_nodes|**true** 或 **false**|**false**|指示在解析程序生成的 XML 实例数据后删除空 XML 节点。|  
+|generate_empty_nodes|**true** 或 **false**|**true**|在 XML 实例数据中生成空节点的现有记录。|  
+|parser_optimization|**速度**或**复杂性**|**speed**|优化速度缩短解析时间有关，但需要处理某些数据多义性问题。 针对复杂度进行优化处理更广泛的多义性问题，但会影响处理速度。|  
+|lookahead_depth|任何正整数;零 (0) 表示 lookahead 无限制。|3|向前查找匹配的数据的方式。|  
 |allow_early_termination|**true** 或 **false**|**false**|指示位置记录是否可以提前终止 (**，则返回 true**) 或必须包含所有记录的字段的数据 (**false**)。|  
 |early_terminate_optional_fields|**true** 或 **false**|**false**|允许提前终止可选尾部字段 (**，则返回 true**)。 如果在 BizTalk 编辑器中打开现有架构无此批注，则将使用默认值设置为添加到它此批注 (**false**)。 **注意：** 时，early_terminate_optional_fields 批注才会生效在 allow_early_termination 设置为"true"。|  
 

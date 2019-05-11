@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1f1afec8c125d2350d7fa7706b523931a3c6bdfd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e2c563d635c3f303cca800feef6c703de67002b9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003446"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376575"
 ---
 # <a name="get-metadata-for-oracle-database-operations-in-visual-studio"></a>获取 Visual Studio 中的 Oracle 数据库操作的元数据
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]提供三种[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]可用来帮助您开发使用该适配器的解决方案的组件。  

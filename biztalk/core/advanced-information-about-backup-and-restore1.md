@@ -1,5 +1,5 @@
 ---
-title: 有关备份和 Restore1 的高级信息 |Microsoft 文档
+title: 有关备份和 Restore1 的高级信息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,19 +15,19 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0be8744c26fbc61a84b4d4bfe0b76cb8440bbe95
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3cfe1ba20fa3ecd14a2052889dc1c9573b46d801
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22229941"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360460"
 ---
 # <a name="advanced-information-about-backup-and-restore"></a>有关备份和还原的高级信息
 本部分中的主题将详细介绍备份和还原过程，这些主题适用于全面了解 BizTalk Server 的高级用户。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [标记的事务、 完整备份和日志备份](../core/marked-transactions-full-backups-and-log-backups.md)  
+-   [标记的事务、完整备份和日志备份](../core/marked-transactions-full-backups-and-log-backups.md)  
   
 -   [日志传送](../core/log-shipping.md)  
   
@@ -37,4 +37,4 @@ ms.locfileid: "22229941"
   
 -   [如何创建链接的服务器](../core/how-to-create-a-linked-server.md)  
   
--   [查看已恢复的备份历史记录](../core/viewing-the-history-of-restored-backups.md)
+-   [查看已还原备份的历史记录](../core/viewing-the-history-of-restored-backups.md)

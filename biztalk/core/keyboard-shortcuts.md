@@ -1,5 +1,5 @@
 ---
-title: 键盘快捷方式 |Microsoft 文档
+title: 键盘快捷方式 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ee67d21ec067e0364fe4b7d0f0444afcae53ddbf
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 0cb656f693517c996cbf52c680b263690e38dd77
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26006358"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380673"
 ---
 # <a name="keyboard-shortcuts"></a>键盘快捷键
-本部分列出了 Microsoft BizTalk Server 键盘快捷方式。  
+本部分列出的 Microsoft BizTalk Server 的键盘快捷方式。  
   
 ## <a name="in-this-section"></a>本节内容  
   

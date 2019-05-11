@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1f681b4a4725f4e866d8959d8851362f0214137
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2018910c79e0dea66caaf412d8dc2c650647d819
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992686"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376692"
 ---
 # <a name="overview-of-the-wcf-channel-model-with-the-oracle-database-adapter"></a>使用 Oracle 数据库适配器的 WCF 通道模型概述
 若要在调用操作[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]，你的代码可用作 WCF 客户端，并将出站操作发送到适配器。 在 WCF 通道模型中，你的代码的通道上发送请求消息来调用在适配器上的操作。  

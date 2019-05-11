@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 37cdfd9a98f035b306bed1db88f3256336c0d1d1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ba63d822a6edf76cd9673a4c1cdffcddf3697055
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972782"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65344325"
 ---
 # <a name="high-availability-and-the-microsoft-operations-framework"></a>高可用性和 Microsoft Operations Framework
 将 Microsoft Operations Framework (MOF) 流程模型应用于计划和实现高度可用的 Microsoft BizTalk Server 解决方案可以帮助您确保在版本生命周期的不同阶段具有适当的流程。 通过提前查看所有生命周期阶段的高可用性图面，可以使安装过程中，维护，以及对您更轻松的环境中的可用性问题的疑难解答。  
@@ -39,7 +39,7 @@ ms.locfileid: "36972782"
   
   下图显示了需要考虑高可用性的 MOF 过程。  
   
-  ![MOF 过程](../core/media/tdi-highava-mof.gif "TDI_HighAva_MOF")  
+  ![MOF Processes](../core/media/tdi-highava-mof.gif "TDI_HighAva_MOF")  
   
 ## <a name="changing-quadrant"></a>更改象限  
  更改象限包括标识、 查看、 批准和将更改合并到托管的 IT 环境所需的服务管理功能 (Smf)。 这包括软件、 硬件、 文档、 角色和职责，并还特定进程和过程更改中的更改。  
@@ -66,7 +66,7 @@ ms.locfileid: "36972782"
   
 -   域控制器创建的域组和将在 BizTalk Server 环境中使用的帐户。  
   
--   基础结构管理员为 BizTalk Server 数据库创建 Windows 群集，并为主密钥服务器创建 Windows 群集。  
+-   基础结构管理员创建 Windows 群集的 BizTalk Server 数据库和主密钥服务器的 Windows 群集。  
   
 -   数据库管理员安装和配置 BizTalk Server 数据库的 Windows 群集上的 Microsoft SQL Server。  
   

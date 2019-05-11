@@ -1,5 +1,5 @@
 ---
-title: 错误-所需的目标具有选择源节点 |Microsoft 文档
+title: 错误-所需的目标具有选择源节点 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 91c9ad912b03bbb475efcc9eb8207a388400b43b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: a33a5fc9bbcfe44e71b0caab6569279aeb9c32f8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240621"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388472"
 ---
 # <a name="error---required-target-has-choice-node-source"></a>错误-必需的目标具有选择源节点
 **错误代码**  
@@ -28,8 +28,8 @@ ms.locfileid: "22240621"
   
  **说明**  
   
- 指定目标架构中指定的节点作为所需但链接到位于源架构中的节点**选择**节点。 由于源架构中指定的节点不应出现在输入的实例消息，不可能从其目标架构中创建所需的节点的源。  
+ 指定目标架构中所指示的节点为必需，但链接到位于源架构中的节点**选择**节点。 由于源架构中所指示的节点可能会出现在输入的实例消息中，不可能从其在目标架构中创建所需的节点的源。  
   
  **用户执行任何操作**  
   
- 根据需要，将目标架构中的指定的节点更改为可选的或者为必须出现在所有有效输入的实例消息的目标架构中的指定节点提供不同的源。
+ 根据需要，将目标架构中所指示的节点更改为可选的或者必须在所有有效的输入的实例消息中的目标架构中所指示的节点提供不同的源。

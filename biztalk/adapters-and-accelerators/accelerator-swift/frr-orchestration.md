@@ -32,12 +32,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3ad5d9dd1b582aefa9a440508650ecd0e653dbfe
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6c5cd411773555e87cb3395291b6b6f900e83a94
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998368"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377603"
 ---
 # <a name="frr-orchestration"></a>FRR 业务流程
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] 实现 FRR 通过 FRR 业务流程。 业务流程可确定的 FIN 响应的令牌相关的匹配原始消息的消息 ID。 与执行向 SAA，发送消息的发送端口的发送功能和执行的从 SAA 接收消息的接收位置的接收函数，它处理并行中的消息。  

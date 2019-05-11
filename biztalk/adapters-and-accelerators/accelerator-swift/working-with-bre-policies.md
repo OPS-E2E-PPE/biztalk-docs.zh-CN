@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bdb05d6f11d0d4d4f4ef5fd990d05c51b5e0df64
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bb730236e690e5a09d7cd4af27eaec9486da22a0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968950"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376909"
 ---
 # <a name="working-with-bre-policies"></a>使用 BRE 策略
 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]验证 SWIFT 消息通过使用业务规则引擎 (BRE) 策略，如中所述*SWIFT 参考指南*。 这些策略包括：  

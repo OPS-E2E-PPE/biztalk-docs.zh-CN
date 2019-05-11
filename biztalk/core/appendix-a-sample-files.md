@@ -1,5 +1,5 @@
 ---
-title: 附录 a： 示例文件 |Microsoft Docs
+title: 附录 A：示例文件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,14 +14,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b4aeb71cdd79df800e5d14fd35ebe106f3af0c48
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a3e01374f69ab8fa501186a87e8ce64395d1389b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995294"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359542"
 ---
-# <a name="appendix-a-sample-files"></a>附录 a： 示例文件
+# <a name="appendix-a-sample-files"></a>附录 A：示例文件
 用于 JD Edwards EnterpriseOne 的 Microsoft BizTalk 适配器支持 jdeRequest 和 jdeResponse XML 结构，以在 JD Edwards EnterpriseOne 内执行业务函数。  
   
  您可以使用 JD Edwards EnterpriseOne XML 执行以下操作：  

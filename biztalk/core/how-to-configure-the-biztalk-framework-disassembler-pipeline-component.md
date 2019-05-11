@@ -1,5 +1,5 @@
 ---
-title: 如何将 BizTalk Framework 反汇编程序管道组件配置 |Microsoft 文档
+title: 如何配置 BizTalk 框架拆装器管道组件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,31 +17,31 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 07fefb577e5322fa303a1a1476a976b453adb083
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 46ce50dc68f7a11cd63c7244c9abcb6930a08f3f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22249189"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65341140"
 ---
-# <a name="how-to-configure-the-biztalk-framework-disassembler-pipeline-component"></a>如何将 BizTalk Framework 反汇编程序管道组件配置
-BizTalk 框架拆装器管道组件应在接收管道的拆装阶段使用。  
+# <a name="how-to-configure-the-biztalk-framework-disassembler-pipeline-component"></a>如何配置 BizTalk 框架拆装器管道组件
+BizTalk 框架拆装器管道组件应在接收管道的拆装阶段中使用。  
   
-### <a name="to-configure-the-properties-for-the-biztalk-framework-disassembler-pipeline-component"></a>配置 BizTalk 框架拆装器管道组件的属性  
+### <a name="to-configure-the-properties-for-the-biztalk-framework-disassembler-pipeline-component"></a>若要配置 BizTalk 框架拆装器管道组件的属性  
   
-1.  将 BizTalk 框架拆装器管道组件拖入接收管道的拆装阶段。  
+1.  将 BizTalk 框架拆装器管道组件拖至接收管道的拆装阶段。  
   
-2.  在属性窗口中，在**管道组件属性**部分中，执行以下操作。  
+2.  在属性窗口中**管道组件属性**部分中，执行以下操作。  
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
-    |**允许无法识别的消息**|指示是否允许不具有可识别的架构通过反汇编程序传递的消息。<br /><br /> 默认值： **False**|  
-    |**文档架构**|指明要应用于文档的一个或多个架构的命名空间和类型名。 有关详细信息，请参阅[如何使用架构集合属性编辑器](../core/how-to-use-the-schema-collection-property-editor.md)。<br /><br /> 此属性中指定的架构应具有唯一目标命名空间。 如果有任何架构的命名空间与之相同，则对文档实例的验证将可能无法按预期方式工作。 如果多个架构必须使用同一命名空间，则应为每个架构创建单独的管道，并为每个 BizTalk 框架拆装器管道组件指定一个架构，或者使用一个管道但不将任何架构指定为 BizTalk 框架拆装器管道组件的参数。<br /><br /> 默认值：空集合|  
-    |**信封架构**|指明要应用于信封的一个或多个架构的命名空间和类型名。 有关详细信息，请参阅[如何使用架构集合属性编辑器](../core/how-to-use-the-schema-collection-property-editor.md)。<br /><br /> 此属性中指定的架构应具有唯一目标命名空间。 如果有任何架构的命名空间与之相同，则对文档实例的验证将可能无法按预期方式工作。 如果多个架构必须使用同一命名空间，则应为每个架构创建单独的管道，并为每个 BizTalk 框架拆装器管道组件指定一个架构，或者使用一个管道但不将任何架构指定为 BizTalk 框架拆装器管道组件的参数。<br /><br /> 默认值：空集合|  
-    |**验证文档结构**|当**True**，执行到反汇编程序，包括包络线的传入消息验证。 **注意：** 时**True**，如果你指定两个或多个架构，可能会收到"两个或多个所选架构共享相同的目标命名空间"的错误**文档架构**或**信封架构**属性。 <br /><br /> 默认值： **False**|  
+    |**允许无法识别的消息**|指示是否允许没有可识别的架构通过拆装器传递的消息。<br /><br /> 默认值：**False**|  
+    |**文档架构**|指示命名空间和类型名或多个架构应用于文档。 有关详细信息，请参阅[如何使用架构集合属性编辑器](../core/how-to-use-the-schema-collection-property-editor.md)。<br /><br /> 此属性中指定的架构应具有唯一目标命名空间。 如果具有相同的命名空间的任何架构，对文档实例的验证可能不会按预期工作。 如果架构必须具有相同的命名空间，您应创建单独的管道为每个架构和指定每个 BizTalk 框架拆装器管道组件的一个架构，或使用一个管道但不是指定任何架构作为参数的 BizTalk框架拆装器管道组件。<br /><br /> 默认值：空集合|  
+    |**信封架构**|指示命名空间和类型名或多个要应用于信封的架构。 有关详细信息，请参阅[如何使用架构集合属性编辑器](../core/how-to-use-the-schema-collection-property-editor.md)。<br /><br /> 此属性中指定的架构应具有唯一目标命名空间。 如果具有相同的命名空间的任何架构，对文档实例的验证可能不会按预期工作。 如果架构必须具有相同的命名空间，您应创建单独的管道为每个架构和指定每个 BizTalk 框架拆装器管道组件的一个架构，或使用一个管道但不是指定任何架构作为参数的 BizTalk框架拆装器管道组件。<br /><br /> 默认值：空集合|  
+    |**验证文档结构**|当 **，则返回 True**，执行的传入消息和拆装器，包括信封验证。 **注意：** 当 **，则返回 True**，如果指定两个或多个架构，可能会收到错误"两个或多个所选架构共享同一目标命名空间"**文档架构**或**信封架构**属性。 <br /><br /> 默认值：**False**|  
   
-## <a name="see-also"></a>另请参阅  
- [BizTalk Framework 反汇编程序管道组件](../core/biztalk-framework-disassembler-pipeline-component.md)   
- [配置本机管道组件](../core/configuring-native-pipeline-components.md)   
- [管道 AssemblerDisassembler （BizTalk Server 示例文件夹中）](../core/pipelines-assemblerdisassembler-biztalk-server-samples-folder.md)   
- [配置本机管道组件](../core/configuring-native-pipeline-components.md)
+## <a name="see-also"></a>请参阅  
+ [BizTalk 框架拆装器管道组件](../core/biztalk-framework-disassembler-pipeline-component.md)   
+ [配置本地管道组件](../core/configuring-native-pipeline-components.md)   
+ [Pipelines-assemblerdisassembler （BizTalk Server 示例文件夹）](../core/pipelines-assemblerdisassembler-biztalk-server-samples-folder.md)   
+ [配置本地管道组件](../core/configuring-native-pipeline-components.md)

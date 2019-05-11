@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8b24b7db4013e5e1f8fdb03c1278a19dc070d0e0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 77478326c3f2f457c5b88b4234d8087ec512215b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998662"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377497"
 ---
 # <a name="handling-an-unparsed-message"></a>处理未分析的消息
 本部分介绍如何处理未分析的消息。 与不同的验证失败的消息，不能修复一条消息的[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]无法分析。 消息修复和新提交显示消息和分析错误的性质，并使您能够打印消息或将其保存到本地文件。 然后可以发出警报将消息发送到分析失败的特定特性的实体。  

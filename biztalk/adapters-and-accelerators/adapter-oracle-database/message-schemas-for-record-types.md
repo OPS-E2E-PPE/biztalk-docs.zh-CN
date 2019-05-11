@@ -15,12 +15,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aae82fad713fd9a2789e165845958421e1213402
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4405dfff4868cbe9632fcd71d2a151555e56e95c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996918"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376447"
 ---
 # <a name="message-schemas-for-record-types"></a>记录类型的消息架构
 Oracle 记录类型是结构化的 PL/SQL 数据类型组成的一个或更简单或结构化的数据库类型。 记录类型主要用于在 PL/SQL 存储过程和函数来发送和接收分层数据。  

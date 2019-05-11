@@ -1,5 +1,5 @@
 ---
-title: 生成类别 0 和 MT121 窗体 |Microsoft 文档
+title: 生成类别 0 和 MT121 表单 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 40f9de5ff6e5f988422574640e13a45f8fd81632
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 15f79784a227833695068681e1738d901f263680
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22207301"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377630"
 ---
-# <a name="generating-category-0-and-mt121-forms"></a>生成类别 0 和 MT121 窗体
-类别 0 和 MT121 InfoPath 窗体生成需要不同的模板文件。 类别 0 窗体划分为 5 个类别。 常规类别消息会生成相同的方式执行 MT 类别的其余部分。 下面给出了其消息名称与其他 4 个类别的示例：  
+# <a name="generating-category-0-and-mt121-forms"></a>生成类别 0 和 MT121 表单
+类别 0 和 MT121 InfoPath 窗体生成需要不同的模板文件。 类别 0 窗体分为 5 个类别。 常规类别消息生成相同的方式完成 MT 类别的其余部分。 下面给出了其消息名称与其他 4 个类别的示例：  
   
 -   **若要生成类别 0 GAHeader 窗体 （MT036、 MT042、 MT047、 MT072、 MT077 和 MT085）：**  
   

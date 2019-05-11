@@ -1,5 +1,5 @@
 ---
-title: Windows SharePoint Services 安全 |Microsoft 文档
+title: Windows SharePoint 服务的安全性 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,17 +17,17 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 184f5a237f796eac69de6c481e69a87a4a5358df
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0979e0a7c75cf3f1450500253569fc47b3dae8b7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22214485"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376902"
 ---
 # <a name="windows-sharepoint-services-security"></a>Windows SharePoint Services 安全性
-Windows SharePoint Services 3.0 使用 Windows SharePoint Services 站点组来管理站点范围的安全。 每个站点组拥有相应权限。 权限是用户可以执行的操作-例如视图中，编辑和删除站点资源。 资源包括站点列表、 文档库和网站管理。 为在配置文件 Web 客户端需要定义 Windows SharePoint 服务站点组并相应地分配权限到每个资源组中创建每个角色具有访问权限。  
+Windows SharePoint Services 3.0 使用 Windows SharePoint Services 站点组来管理站点范围的安全性。 每个站点组都拥有相应权限。 权限是用户可以执行的操作，如查看、 编辑和删除站点资源。 资源包括站点列表、 文档库和网站管理。 在配置文件 Web 客户端需要定义 Windows SharePoint 服务站点组并相应地将权限分配到每个资源组中创建每个角色具有访问权限。  
   
- WSS 3.0 安全有关的详细信息，请参阅 WSS 3.0 评估指南： [http://go.microsoft.com/fwlink/?LinkID=94370](http://go.microsoft.com/fwlink/?LinkID=94370)。  
+ WSS 3.0 安全有关的详细信息，请参阅 WSS 3.0 评估指南，网址[ http://go.microsoft.com/fwlink/?LinkID=94370 ](http://go.microsoft.com/fwlink/?LinkID=94370)。  
   
  本部分包含：  
   

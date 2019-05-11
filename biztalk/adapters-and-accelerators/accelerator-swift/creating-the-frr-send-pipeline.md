@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d16003e489944016a7b840b870d33d8ebcf671d5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 971fde4a2f0f743574e60911dcb091a325efd079
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005742"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378335"
 ---
 # <a name="creating-the-frr-send-pipeline"></a>创建 FRR 发送管道
 若要执行 FIN 响应对帐，您需要创建包含 SWIFT 汇编程序之外的 SWIFTAsmFrrMQSeriesHelper 管道组件的发送管道。  

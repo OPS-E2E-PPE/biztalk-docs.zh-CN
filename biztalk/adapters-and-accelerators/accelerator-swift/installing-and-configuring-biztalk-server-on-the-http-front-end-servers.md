@@ -15,12 +15,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 38605a921a1c2761f73c5871544d8853814f6e0f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b6f2b656a45b8ef86df96d1234eb25344cf0cbd7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014166"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377375"
 ---
 # <a name="installing-and-configuring-biztalk-server-on-the-http-front-end-servers"></a>安装和配置 BizTalk Server HTTP 前端服务器上
 本部分介绍如何安装和配置 BizTalk Server 用作托管 MRSR 站点 HTTP 前端服务器和[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]模板窗体。  

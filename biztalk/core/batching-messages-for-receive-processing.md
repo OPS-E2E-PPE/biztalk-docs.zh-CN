@@ -12,16 +12,16 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 21ce691f51d6c389073c98dadc9ce0f5dfb68504
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e60bab7b9f6d41268bd60be0b1f37daf07019af1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971054"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358294"
 ---
 # <a name="batching-messages-for-receive-processing"></a>批处理消息的接收处理
 ## <a name="batch-callbacks"></a>批回调  
- 提交的批次接收到消息引擎适配器异步处理。 因此适配器需要一种机制来将绑定到适配器中的某些状态回调，因此它可以成功或失败通知并执行任何必要的清理操作。 回调语义非常灵活，以便适配器可以使用一个或这三种方法的组合。 以下是：  
+ 提交的批次接收到消息引擎适配器异步处理。 因此适配器需要一种机制来将绑定到适配器中的某些状态回调，因此它可以成功或失败通知并执行任何必要的清理操作。 回调语义非常灵活，以便适配器可以使用一个或这三种方法的组合。 这些是：  
   
 - 实现在同一对象实例上进行所有回调**IBTBatchCallBack**。  
   
@@ -29,7 +29,7 @@ ms.locfileid: "36971054"
   
 - 没有实现每个批次不同的回调对象**IBTBatchCallBack**。 此处的每个对象包含其自己的私有状态。  
   
-  适配器时已处理批，实现其回叫**IBTBatchCallBack.BatchComplete**。 由第一个参数，HRESULT 状态指示批处理的总体状态。 如果此值是大于或等于零，然后在批处理成功意义上说，该引擎还具有数据的所有权和适配器可以自由地从网络中删除该数据。 负值状态表示该批次失败： 任何批处理中的操作都成功，适配器负责处理失败。  
+  适配器时已处理批，实现其回叫**IBTBatchCallBack.BatchComplete**。 由第一个参数，HRESULT 状态指示批处理的总体状态。 如果此值是大于或等于零，然后在批处理成功意义上说，该引擎还具有数据的所有权和适配器可以自由地从网络中删除该数据。 负值状态表示该批次失败：任何批处理中的操作都成功，适配器负责处理失败。  
   
   如果批失败，适配器需要知道哪一项操作失败，在其中。 例如，假设适配器已从磁盘并将它们到提交读取 20 个文件[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]并用一批。 如果第 10 个文件已损坏，适配器需要挂起的文件，然后重新提交剩余 19。 此信息可供适配器中的第二个和第三个参数 —`opCount` （操作计数） 的 short 类型和`operationStatus`，它属于类型 BTBatchOperationStatus []。  
   
@@ -45,52 +45,52 @@ using Microsoft.BizTalk.TransportProxy.Interop;
 using Microsoft.BizTalk.Message.Interop;  
   
 public class MyAdapter :   
-                  IBTTransport,   
-                  IBTTransportConfig,   
-                  IBTTransportControl,  
-                  IPersistPropertyBag,   
-                  IBaseComponent,  
-                  IBTBatchCallBack  
+                  IBTTransport,   
+                  IBTTransportConfig,   
+                  IBTTransportControl,  
+                  IPersistPropertyBag,   
+                  IBaseComponent,  
+                  IBTBatchCallBack  
 {  
-      private IBTTransportProxy _tp;  
+      private IBTTransportProxy _tp;  
   
-      public void BatchComplete(      
-            Int32                         status,   
-            Int16                         opCount,   
-            BTBatchOperationStatus[]      operationStatus,   
-            System.Object                 callbackCookie)  
-      {  
-            // Use cookie to correlate callback with work done,  
-            // in this example the batch is to submit a single  
-            // file the name of which will be in the  
-            // callbackCookie  
-            string fileName = (string)callbackCookie;  
-            if ( status >= 0 )  
-                  // DeleteFile from disc  
-                  File.Delete(fileName);          
-            else  
-                  // Rename file to fileName.bad  
-                  File.Move(fileName, fileName + ".bad");  
-      }  
+      public void BatchComplete(      
+            Int32                         status,   
+            Int16                         opCount,   
+            BTBatchOperationStatus[]      operationStatus,   
+            System.Object                 callbackCookie)  
+      {  
+            // Use cookie to correlate callback with work done,  
+            // in this example the batch is to submit a single  
+            // file the name of which will be in the  
+            // callbackCookie  
+            string fileName = (string)callbackCookie;  
+            if ( status >= 0 )  
+                  // DeleteFile from disc  
+                  File.Delete(fileName);          
+            else  
+                  // Rename file to fileName.bad  
+                  File.Move(fileName, fileName + ".bad");  
+      }  
   
-      private void SubmitMessage(  
-            IBaseMessage                  msg,   
-            string                        fileName)  
-      {  
-            // Note: Pass in the filename as the cookie  
-            IBTTransportBatch batch =   
-                  _tp.GetBatch(this, (object)fileName);  
+      private void SubmitMessage(  
+            IBaseMessage                  msg,   
+            string                        fileName)  
+      {  
+            // Note: Pass in the filename as the cookie  
+            IBTTransportBatch batch =   
+                  _tp.GetBatch(this, (object)fileName);  
   
-            // Add msg to batch for submitting   
-            batch.SubmitMessage(msg);   
+            // Add msg to batch for submitting   
+            batch.SubmitMessage(msg);   
   
-            // Process this batch  
-            batch.Done(null);  
-      }  
+            // Process this batch  
+            batch.Done(null);  
+      }  
 }  
 ```  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] SDK 包括下列适配器的示例： 文件、 HTTP、 MSMQ 和事务性适配器。 所有这些适配器是基于名为 BaseAdapter 常见构建基块。 版本 1.0.1 的 baseadapter 包括所有相关的代码分析操作状态并重新生成新的批次提交。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] SDK 包括下列适配器的示例：文件、 HTTP、 MSMQ 和事务性适配器。 所有这些适配器是基于名为 BaseAdapter 常见构建基块。 版本 1.0.1 的 baseadapter 包括所有相关的代码分析操作状态并重新生成新的批次提交。  
   
 ## <a name="race-condition"></a>争用条件  
  解决错误，并决定提交了一批的最终结果的两个任务看似非常简单，但实际上它们依赖于来自不同线程的信息：  
@@ -103,21 +103,21 @@ public class MyAdapter :
   
   因为不存在可能出现的争用条件的适配器的实现**BatchComplete**可以假设**IBTDTCCommitConfirm**返回对象**ibttransportbatch:: Done**时，才始终可用**BatchComplete**执行。 但是， **BatchComplete**可以在单独的消息引擎线程，即使之前调用**ibttransportbatch:: Done**返回。 可能的适配器尝试访问**IBTDTCCommitConfirm**对象的一部分**BatchComplete**实现中，则会访问冲突，因为调用线程不能再存在。 使用以下解决方案来避免这种情况。  
   
-  在以下示例中，通过使用事件解决此问题。 在这里，通过使用事件的属性来访问接口指针。 Get 总是等待设置完成，然后继续下一步。  
+  在以下示例中，通过使用事件解决此问题。 此处可通过使用事件属性访问的接口指针。 Get 总是等待设置完成，然后继续下一步。  
   
 ```  
 protected IBTDTCCommitConfirm CommitConfirm  
 {  
-      set  
-      {  
-            this.commitConfirm = value;  
-            this.commitConfirmEvent.Set();  
-      }  
-      get  
-      {  
-            this.commitConfirmEvent.WaitOne();  
-            return this.commitConfirm;  
-      }  
+      set  
+      {  
+            this.commitConfirm = value;  
+            this.commitConfirmEvent.Set();  
+      }  
+      get  
+      {  
+            this.commitConfirmEvent.WaitOne();  
+            return this.commitConfirm;  
+      }  
 }  
 protected IBTDTCCommitConfirm commitConfirm = null;  
 private ManualResetEvent commitConfirmEvent = new ManualResetEvent(false);  
@@ -129,7 +129,7 @@ private ManualResetEvent commitConfirmEvent = new ManualResetEvent(false);
 |代码 （BTTransportProxy 的类中定义）|成功/失败代码|Description|  
 |----------------------------------------------------|---------------------------|-----------------|  
 |BTS_S_EPM_SECURITY_CHECK_FAILED|成功|该端口已配置为执行安全检查和删除身份验证失败的消息。 适配器应挂起返回此状态代码的批处理。|  
-|BTS_S_EPM_MESSAGE_SUSPENDED，则|成功|指示一个或多个消息被挂起，并且该引擎还具有数据的所有权。 它是成功代码，因为消息引擎已接受提交消息。|  
+|BTS_S_EPM_MESSAGE_SUSPENDED|成功|指示一个或多个消息被挂起，并且该引擎还具有数据的所有权。 它是成功代码，因为消息引擎已接受提交消息。|  
 |E_BTS_URL_DISALLOWED|失败|一条消息已提交具有无效**InboundTransportLocation**。|  
   
 ## <a name="batch-operations"></a>批处理操作  
@@ -146,7 +146,7 @@ private ManualResetEvent commitConfirmEvent = new ManualResetEvent(false);
 |**SubmitRequestMessage**|SubmitRequest|提交请求消息。 这是请求-响应对中的请求消息。|  
 |**CancelRequestForResponse**|CancelRequestForResponse|通知引擎，该适配器不再想要等待的请求-响应对中的响应消息。|  
 |**Clear**|不适用|清除批处理中的所有工作。|  
-|**完成**|不适用|将提交一批引擎进行处理的消息。|  
+|**Done**|不适用|将提交一批引擎进行处理的消息。|  
   
 ## <a name="batch-management"></a>Batch 管理  
  消息引擎中的本机代码中实现批处理。 出于此原因在托管代码中编写的适配器应释放运行时可调用包装 (RCW) 批处理使用批处理完成之后。 这是通过托管代码中使用**Marshal.ReleaseComObject** API。 务必要记住，应在一段时间中调用此 API 循环播放，直到返回的引用计数达到零时。  

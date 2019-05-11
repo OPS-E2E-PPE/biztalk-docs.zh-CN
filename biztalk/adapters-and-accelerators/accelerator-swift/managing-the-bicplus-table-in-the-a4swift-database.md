@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5a3988a7b86d3f31365019c10cdfb640313dc2d6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f446c2757c4454cce681461bae23bd28ecb151f2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010678"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377233"
 ---
 # <a name="managing-the-bicplus-table-in-the-a4swift-database"></a>管理 Bicplus 表 A4SWIFT 数据库中
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] 使用 BIC 条目的表来执行 BIC 验证。 此表，可以在 Bicplus 表[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]数据库或自定义数据库中的表。  

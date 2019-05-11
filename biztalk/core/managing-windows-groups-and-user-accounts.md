@@ -1,5 +1,5 @@
 ---
-title: 管理 Windows 组和用户帐户 |Microsoft 文档
+title: 管理 Windows 组和用户帐户 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,15 +18,15 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5677302806097b82e9f3c4430d20d7893195046b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bbb3e9052078ab72cd5f5f20e563d3edc6734a7a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262245"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380165"
 ---
 # <a name="managing-windows-groups-and-user-accounts"></a>管理 Windows 组和用户帐户
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用大量的 Windows 组和用户帐户。 有关完整列表和组和 BizTalk Server 中其关联的用户帐户的说明，请参阅[Windows 组和 BizTalk Server 中的用户帐户](../core/windows-groups-and-user-accounts-in-biztalk-server.md)。  
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用 Windows 组和用户帐户的数量。 有关完整列表和组和 BizTalk Server 中其关联的用户帐户的说明，请参阅[Windows 组和 BizTalk Server 中的用户帐户](../core/windows-groups-and-user-accounts-in-biztalk-server.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
   

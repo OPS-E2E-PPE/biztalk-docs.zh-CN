@@ -1,5 +1,5 @@
 ---
-title: 其他适配器信息 |Microsoft 文档
+title: 其他适配器信息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,16 +12,16 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ba9abb1c1bd0a6e6791048e8073c8d4c53260d54
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7c4f6ef1ae89f76414d7a93b6cfbdc6b9a9e321f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22229757"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360740"
 ---
 # <a name="additional-adapter-information"></a>其他适配器信息
 其他适配器信息包括：  
   
  [X12 EDI 字符集](../core/x12-edi-character-set.md)  
   
- [A4SWIFT 快捷键](../core/a4swift-accelerator.md)
+ [A4SWIFT 加速器](../core/a4swift-accelerator.md)

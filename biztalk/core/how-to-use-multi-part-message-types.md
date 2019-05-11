@@ -25,17 +25,17 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 083746c38a175db840f4554297e86d26b5fcb366
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a6b4a6d6714b7e4f3d31ad25c72277ef725d3592
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013942"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383317"
 ---
 # <a name="how-to-use-multi-part-message-types"></a>如何使用多部分消息类型
-每条消息都具有多部分消息类型，该消息类型描述由零个或多个消息部分构成的消息结构。 这些部分由 XML 架构定义 (XSD) 语言架构或 .NET 类定义。 您可以定义自己的多部分消息类型，或使用现有的 .NET 类和架构。  
+每个消息具有多部分消息类型，包含零个或多个消息部分的消息结构的说明。 通过 XML 架构定义 (XSD) 语言架构或.NET 类定义部分。 可以定义自己的多部分消息类型，也可以使用现有的.NET 类和架构。  
 
- 您可以在业务流程中直接访问或分配消息部分，或使用消息部分中已公开为可分辨字段或属性字段的单个元素。 有关详细信息，请参阅[使用可分辨字段和消息属性](../core/using-distinguished-fields-and-property-fields.md)。  
+ 您可以访问或将消息部分分配直接在您的业务流程，也可以使用的消息部分公开为可分辨的字段或属性字段的单个元素。 有关详细信息，请参阅[使用可分辨字段和消息属性](../core/using-distinguished-fields-and-property-fields.md)。  
 
 > [!NOTE]
 >  多部分消息类型不一定包含多个部分。  
@@ -51,21 +51,21 @@ ms.locfileid: "37013942"
 
      **多部分消息类型**文件夹扩展，如果处于折叠状态，并与一个默认消息部分添加一个新的多部分消息类型。  
 
-3.  命名多部分消息类型和所提供的消息部分。  
+3.  命名多部分消息类型和提供的消息部分。  
 
      如果您的多部分消息类型需要多个消息部分，可以通过将分配到的名称添加其他部分\<新建\>消息部分。  
 
-4.  将每个消息部分与一个类型相关联，如 .NET 类或架构。  
+4.  将每个消息部分类型，如.NET 类或架构与相关联。  
 
 ## <a name="remove-a-multi-part-message-type"></a>删除多部分消息类型  
 
 -   在中**业务流程视图**窗口中，右键单击多部分消息的类型要删除，然后单击**删除**。  
 
     > [!NOTE]
-    >  从业务流程中删除多部分消息类型还会从使用它的消息中删除类型信息。  
+    >  从您的业务流程中删除多部分消息类型也将删除的类型信息从使用它的消息。  
 
     > [!NOTE]
-    >  显示为只读的项目将在其他业务流程中定义。  
+    >  另一个业务流程中定义了项显示为只读的。  
 
 ## <a name="remove-a-part-from-a-multi-part-message-type"></a>从多部分消息类型中删除部件  
 
@@ -79,13 +79,13 @@ ms.locfileid: "37013942"
 - 在中**属性**窗口中，设置以下属性：  
 
 
-  |     “属性”      |                                                                                                                                                                                        Description                                                                                                                                                                                         |
+  |     属性      |                                                                                                                                                                                        Description                                                                                                                                                                                         |
   |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
   | **类型修饰符** | 确定多部分消息类型的作用域：<br /><br /> -   <strong>私有 —</strong>此多部分消息类型的访问权限仅限于包含模块。<br />-   <strong>公共 —</strong>访问此多部分消息类型不受限制。<br />-   <strong>内部 —</strong>此多部分消息类型的访问权限仅限于同一项目中的模块。 |
 
 ## <a name="add-parts-to-an-existing-multi-part-message"></a>将部件添加到现有的多部分消息  
 
-- 使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 可以向多部分 XLANG 消息中添加部分，还可以使用大于最初声明的部分号的索引来引用消息部分（如果该部分存在）。 在发送或接收附件数量不确定的 SMTP 邮件时，此功能可能十分有用。 按照以下所述进行操作，即可实现此功能：  
+- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 提供将部件添加到多部分 XLANG 消息，还可以来引用消息部分索引大于最初声明的部分数如果该部分存在的功能。 此功能可能可用于发送或接收 SMTP 消息具有可变数量的附件。 此功能实现，如下所示：  
 
 - 从你的项目，添加对的引用**Microsoft.XLANGs.BaseTypes**。  
 

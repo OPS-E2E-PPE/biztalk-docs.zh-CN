@@ -17,12 +17,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1942e6648311c65acc2bb1cd91406904906cc8f4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7e61d34b8ab92f20c2c39c9b4c9394b78d13f100
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005734"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376863"
 ---
 # <a name="working-with-the-swift-disassembler-and-assembler"></a>使用 SWIFT 反汇编程序和汇编程序
 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]提供自定义管道组件、 SWIFT 反汇编程序和功能专门用于处理 SWIFT 平面文件消息的 SWIFT 汇编程序。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]发送和接收管道使用 A4SWIFT 管道组件来执行特定任务，在定义阶段的入站 （接收） 和出站 （发送） 处理。 有关消息处理、 管道和管道组件的更多详细信息，请参阅 BizTalk Server 帮助。  

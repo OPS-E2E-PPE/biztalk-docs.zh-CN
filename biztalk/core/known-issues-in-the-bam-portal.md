@@ -12,22 +12,22 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0533a1431ada4127e2b4746af19b0ccbaf4ecd39
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8a6eb2c711b654f5541c2c8fb7c42540b9210eb8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973070"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380952"
 ---
 # <a name="known-issues-in-the-bam-portal"></a>BAM 门户中的已知的问题
-本主题中包含的信息可以帮助您确定和解决使用 BAM 门户过程中可能出现的问题。  
+本主题包含有助于您确定和解决在使用 BAM 门户时可能出现的问题的信息。  
   
 ## <a name="errors-occur-when-the-bam-portal-and-ie-are-on-the-same-computer-and-security-settings-are-low"></a>BAM 门户和 IE 位于同一台计算机，和安全设置是低时出现错误  
  **问题**  
   
  使用 Internet Explorer，可能会遇到的错误消息**中的服务器错误 / BAM 应用程序**在下列情况下：  
   
-- 单击指向不存在的活动实例的相关活动时。  
+- 单击指向不存在的活动实例的相关的活动时。  
   
 - 单击同时**保存警报**在以下方案中的按钮：  
   
@@ -35,19 +35,19 @@ ms.locfileid: "36973070"
   
   -   填写各个警报字段然后依次**保存警报**。  
   
-  -   单击“上一步”按钮。  
+  -   单击后退按钮。  
   
   -   单击**保存警报**按钮再次。  
   
   **原因**  
   
-  如果使用的安全级别运行 Internet Explorer 设置为低，Web 请求执行具有较低的权限。 为了满足 Windows 的集成安全性，Internet Explorer 传递具有低权限的用户令牌。  
+  如果使用的安全级别运行 Internet Explorer 设置为低，Web 请求执行具有较低的权限。 为了满足 Windows 集成的安全性，Internet Explorer 传递具有较低的权限的用户令牌。  
   
-  如果在安装 BAM 门户的计算机上使用 Internet Explorer，并在 Internet Explorer 中将安全级别设置为低，则门户将模拟具有低权限令牌的用户。 此令牌不具有向事件日志写入数据的权限。 如果门户遇到错误，它将尝试将其记录到事件日志中并且此尝试将失败，因为用户令牌的权限被降低而不足以访问事件日志。  
+  如果与安装 BAM 门户的同一计算机上使用 Internet Explorer，您将安全级别设置在 Internet Explorer 中为低，则门户将模拟具有低权限令牌的用户。 此令牌没有写入事件日志的权限。 如果在门户时遇到错误，它将尝试记录到事件日志并将失败，因为减少的权限的用户令牌没有足够权限来访问事件日志。  
   
   **解决方法**  
   
-  如果需要从本地计算机浏览，则应添加http://localhost到受信任的站点的列表。  
+  如果需要从本地计算机浏览，则应添加 http://localhost到受信任的站点的列表。  
   
 #### <a name="add-localhost-to-the-list-of-trusted-sites"></a>将 localhost 添加到受信任站点列表  
   
@@ -57,7 +57,7 @@ ms.locfileid: "36973070"
   
 3.  单击**站点**按钮。  
   
-4.  在中**向区域添加此网站**文本框中，键入**http://localhost**。 如果**要求服务器验证 (https:) 此区域中的所有站点**复选框处于选中状态，请清除它，然后单击**添加**按钮。 在站点http://localhost，将出现在**网站**列表。  
+4.  在中**向区域添加此网站**文本框中，键入**http://localhost**。 如果**要求服务器验证 (https:) 此区域中的所有站点**复选框处于选中状态，请清除它，然后单击**添加**按钮。 在站点 http://localhost，将出现在**网站**列表。  
   
 5.  如有必要，还原**要求服务器验证 (https:) 此区域中的所有站点**到其原始状态的复选框。  
   
@@ -66,7 +66,7 @@ ms.locfileid: "36973070"
 ## <a name="bam-portal-aggregations-do-not-populate-existing-data-when-using-an-ip-address-as-a-url-in-internet-explorer"></a>Bam 门户聚合不填充现有数据时使用 IP 地址作为 Internet Explorer 中的 URL
  **问题**  
   
- 当使用 IP 地址作为 URL 来用于 Internet Explorer 查看 BAM 门户，聚合显示以下消息:"没有详细信息。 The query could not be processed."  
+ 当使用 IP 地址作为 URL 来用于 Internet Explorer 查看 BAM 门户，聚合显示以下消息："没有详细信息。 查询无法处理。"  
   
  **原因**  
   
@@ -74,7 +74,7 @@ ms.locfileid: "36973070"
   
  **解决方法**  
   
- 将站点地址添加到受信任的站点列表中，即可跨域访问数据源。  
+ 将站点地址添加到受信任的站点列表并启用跨域访问数据源。  
   
 #### <a name="add-the-ip-address-to-the-trusted-sites-list"></a>将 IP 地址添加到受信任的站点列表  
   
@@ -101,7 +101,7 @@ ms.locfileid: "36973070"
 ## <a name="bmexe-does-not-run-in-powershell"></a>BM.exe 不在 PowerShell 中运行  
  **问题**  
   
- 在 PowerShell 中运行时，以下命名引发错误。  
+ 以下命令将引发错误时在 PowerShell 中运行。  
   
 ```  
 bm.exe get-config -FileName:config.xml  

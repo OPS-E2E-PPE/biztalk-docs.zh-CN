@@ -16,30 +16,30 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ece5525e18eda82d480adec407f92f9f632453e2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 520e3e5de989f1a9800fab21a31f2997f634d8e6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970246"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383130"
 ---
 # <a name="how-to-view-instance-information-for-a-receive-port"></a>如何查看实例信息的接收端口
-本主题将介绍如何使用 BizTalk Server 管理控制台查看接收端口的服务实例。 每次接收端口收到消息，都会创建一个服务实例来处理该消息。 按照本主题中的过程操作后，实例信息将显示在接收端口的“组概述”页中。  
+本主题介绍如何使用 BizTalk Server 管理控制台查看接收端口的服务实例。 接收端口接收消息时，每次创建服务实例来处理该消息。 当您按照本主题中的过程时，实例信息将显示为接收端口的组概述页中。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  若要执行本主题中的过程，必须是 BizTalk Server Administrators 组的成员的帐户登录。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
   
-### <a name="to-view-instance-information-for-a-receive-port"></a>查看接收端口的实例信息  
+### <a name="to-view-instance-information-for-a-receive-port"></a>若要查看实例信息的接收端口  
   
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
-2. 在控制台树中，展开要查看其实例信息的接收端口所属的 BizTalk 组和 BizTalk 应用程序。  
+2. 在控制台树中，展开 BizTalk 组和 BizTalk 应用程序想要查看实例信息的接收端口。  
   
 3. 单击**接收端口**，选择接收端口，单击**视图**，然后单击**实例信息**。  
   
-    此页下半部分的“查询结果”面板将显示该接收端口的所有实例。  
+    查询结果窗格中的页的下半部分中显示的接收端口的所有实例。  
   
-4. 若要修改查询和查看接收端口的其他实例信息，请单击下面的框**值**有关**搜索**字段中，选择要查看，然后单击实例类型**运行查询**。 有关创建查询的详细信息，请参阅“另请参见”下面的有关搜索的主题。  
+4. 若要修改查询和查看接收端口的其他实例信息，请单击下面的框**值**有关**搜索**字段中，选择要查看，然后单击实例类型**运行查询**。 有关创建查询的详细信息，请参阅另请参阅下面的有关搜索的主题。  
   
 ## <a name="see-also"></a>请参阅  
  [管理接收端口](../core/managing-receive-ports.md)   

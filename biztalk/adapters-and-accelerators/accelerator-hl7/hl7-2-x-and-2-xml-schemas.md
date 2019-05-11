@@ -33,15 +33,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 69dc39b3f61dbb564fc3ef128405b8721633dd2d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9af15d1abb9357bb41de4def6ec90908e6d6656f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994182"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65290422"
 ---
 # <a name="hl7-2x-and-2xml-schemas"></a>HL7 2.X 和 2.xml 架构
-HL7 组织发布的架构的两个集： HL7 2.X 架构，用于 HL7 编码的消息和 HL7 2.xml 架构，用于 XML 编码的消息。  
+HL7 组织发布架构的两个的集：HL7 2.X 架构，用于 HL7 编码的消息和 HL7 2.xml 架构，用于 XML 编码的消息。  
 
  Microsoft[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]本机配合 HL7 2.X 架构。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 安装程序到加载 HL7 2.X 架构文件\<*驱动器*\>: \program files\\Microsoft BizTalk\<版本\>HL7\Templates\Schemas\2.X 的加速器。 因此，HL7 2.X 架构均位于 HL7 架构选择器。 在 Microsoft 中运行 HL7 架构选择器[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]。  
 
@@ -59,8 +59,8 @@ HL7 组织发布的架构的两个集： HL7 2.X 架构，用于 HL7 编码的�
 
 |            架构类型            |                                                                                                                                                                                                                                                                                                   Description                                                                                                                                                                                                                                                                                                    |
 |-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| HL7FF – ER7 编码 (2.X) 架构 | BTAHL7 提供 HL7 2.X 架构派生自 HL7 访问数据库，包括：<br /><br /> 的基于版本、 消息类型或事件的所有特定架构一组<br />的段、 数据类型、 表、 标头和确认 (Ack) 通用架构<br /><br /> BTAHL7 支持以下架构模板：<br /><br /> -2.1 版<br />-V2.2<br />-V2.3<br />-适用于版本 V2.3.1<br />-于 V2.4<br />-版本 2.5<br /><br /> BTAHL7 安装程序安装 V2。中的架构 0x \<*驱动器*\>\Program Files\\Microsoft BizTalk Accelerator for HL7\Templates\Schemas。 |
-|      HL7XML – 2.XML 编码      |                                                                                                                                            BTAHL7 支持以下架构：<br /><br /> -适用于版本 V2.3.1<br />-于 V2.4<br />-版本 2.5<br /><br /> BTAHL7 安装程序不安装 2.XML 架构。 若要安装它们，修改它们以使用 BizTalk 编辑器，请参阅[Update2XMLSchema 工具](../../adapters-and-accelerators/accelerator-hl7/update2xmlschema-tool.md)。                                                                                                                                            |
+| HL7FF – ER7 编码 (2.X) 架构 | BTAHL7 提供 HL7 2.X 架构派生自 HL7 访问数据库，包括：<br /><br /> 的基于版本、 消息类型或事件的所有特定架构一组<br />的段、 数据类型、 表、 标头和确认 (Ack) 通用架构<br /><br /> BTAHL7 支持以下架构模板：<br /><br /> -   V2.1<br />-   V2.2<br />-   V2.3<br />-   V2.3.1<br />-   V2.4<br />-   V2.5<br /><br /> BTAHL7 安装程序安装 V2。中的架构 0x \<*驱动器*\>\Program Files\\Microsoft BizTalk Accelerator for HL7\Templates\Schemas。 |
+|      HL7XML – 2.XML 编码      |                                                                                                                                            BTAHL7 支持以下架构：<br /><br /> -   V2.3.1<br />-   V2.4<br />-   V2.5<br /><br /> BTAHL7 安装程序不安装 2.XML 架构。 若要安装它们，修改它们以使用 BizTalk 编辑器，请参阅[Update2XMLSchema 工具](../../adapters-and-accelerators/accelerator-hl7/update2xmlschema-tool.md)。                                                                                                                                            |
 
 ## <a name="common-schemas"></a>常见的架构  
  BTAHL7 使用 HL7 架构特定于消息类型来创建并验证该消息类型的实例的正文。 它还使用常见的架构，除了特定的架构。 BTAHL7 使用常见的 HL7 架构来验证 HL7 消息标头和确认。 这些文件是 MSH_25_GLO_DEF.xsd 标头和 ACK_24_GLO_DEF 确认。  

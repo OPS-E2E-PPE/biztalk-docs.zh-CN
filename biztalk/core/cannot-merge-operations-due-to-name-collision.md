@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 57bbb3b085af45ede5632e20f67d5e6c0c4e304e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a8ab241fe80b63f833c9eb373627d445dc7fd08d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992318"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357628"
 ---
 # <a name="cannot-merge-operations-due-to-name-collision"></a>由于名称冲突，无法合并操作
 ## <a name="details"></a>详细信息  

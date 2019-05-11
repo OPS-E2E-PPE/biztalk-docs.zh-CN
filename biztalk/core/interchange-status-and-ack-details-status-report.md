@@ -12,20 +12,20 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3201bc969bc053e9a128cbb0e65a42a2714480c3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 167162a47516279c22bd250589246b3dbd12f109
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999022"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381932"
 ---
-# <a name="interchange-status-and-ack-details-status-report"></a>“交换状态和确认详细信息”状态报告
-此状态报告显示交换及其相关交换（技术）确认和功能确认的详细信息。 显示此报告，右键单击交换 /ACK 状态报表中的某个交换，然后单击**交换状态和确认详细信息**。  
+# <a name="interchange-status-and-ack-details-status-report"></a>交换状态和确认详细信息状态报告
+此状态报告显示交换及其相关的交换 （技术） 确认和功能确认的详细信息。 显示此报告，右键单击交换 /ACK 状态报表中的某个交换，然后单击**交换状态和确认详细信息**。  
   
- 此报告为交换及相关确认提供了以下不同的视图：  
+ 此报表提供的交换和相关的确认以下不同的视图：  
   
 ## <a name="interchange-status"></a>交换状态  
- 此视图提供一个表格，显示了以下字段的值：  
+ 此视图提供的表格显示以下字段的值：  
   
 - 发送方 ID  
   
@@ -37,14 +37,14 @@ ms.locfileid: "36999022"
   
 - 发送方的参与方名称  
   
-- 方向  
+- Direction  
   
 - 交换日期时间  
   
   > [!NOTE]
-  >  对于收到的文档，如果在交换中指定的日期格式为 YYMMDD 且 YY 大于等于 75，则 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 会将年份显示为 19YY。 如果日期中的 YY 小于 75，将显示为 20YY。  
+  >  对于收到的文档，如果交换中指定的日期格式为 YYMMDD 且 YY 大于或等于 75，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]会将年份显示为 19YY。 如果日期是小于 75，将显示为 20YY。  
   > 
-  >  例如，如果你收到的交换在 ISA09 中包含值 991113，则在报告中将“交换日期”显示为 11/13/1999。  
+  >  例如，如果收到包含在 ISA09 中的值 991113 的交换，交换日期将是报告中列出为 1999 年 11/13。  
   
 - 组计数  
   
@@ -54,32 +54,32 @@ ms.locfileid: "36999022"
   
 - EDI 编码类型  
   
-- 事务集相关 ID  
+- 事务集相关 Id  
   
-  如果为作为交换接收方的参与方启用了技术确认（在“EDI 属性”对话框的“确认处理和验证设置”页中），BizTalk Server 将期待返回为了响应它发送的交换而发回的技术（交换）确认。 在最初为出站交换创建交换状态条目的时候，它将在“交换状态”字段中输入“预期的确认”。 如果它收到了技术确认并且将其关联到原始交换，它会更新“交换状态”字段以指出它已收到确认。  
+  如果为参与方作为交换接收方 （在 EDI 属性对话框的确认处理和验证设置页中） 启用了技术确认，BizTalk Server 期望在响应中返回的技术 （交换） 确认发送的交换。 当它最初创建交换状态条目的出站交换时，它将进入预期的确认在交换状态字段中。 当它收到了技术确认，并将其关联到原始交换时，它将更新交换状态字段以指示它已收到确认。  
   
 ## <a name="interchange-ack-status"></a>交换确认状态  
- 此视图显示交换（技术）确认的状态值：  
+ 此视图显示交换 （技术） 确认的状态值：  
   
--   ACK 交换控制 ID  
+-   Ack 交换控制 ID  
   
 -   接收方  
   
 -   发送方  
   
--   方向  
+-   Direction  
   
--   ACK 交换日期  
+-   Ack 交换日期  
   
--   ACK 交换时间  
+-   Ack 交换时间  
   
--   ACK 状态  
+-   Ack 状态  
   
 -   状态代码  
   
--   ACK 注释代码 1  
+-   Ack 注释代码 1  
   
--   ACK 注释代码 2  
+-   Ack 注释代码 2  
   
 ## <a name="functional-acks"></a>功能确认  
  此视图显示功能确认的状态值：  
@@ -90,7 +90,7 @@ ms.locfileid: "36999022"
   
 -   发送方  
   
--   方向  
+-   Direction  
   
 -   “登录属性”  
   
@@ -100,24 +100,24 @@ ms.locfileid: "36999022"
   
 -   TS 计数  
   
--   ACK 交换控制 ID  
+-   Ack 交换控制 ID  
   
--   ACK 交换日期  
+-   Ack 交换日期  
   
--   ACK 交换时间  
+-   Ack 交换时间  
   
--   已送达 TS 计数  
+-   已送达的 TS 计数  
   
--   已接受 TS 计数  
+-   已接受的 TS 计数  
   
--   错误代码 1  
+-   ErrorCode 1  
   
 -   错误代码 2  
   
--   Errorcode 3  
+-   ErrorCode 3  
   
--   错误代码 4  
+-   ErrorCode 4  
   
--   错误代码 5  
+-   ErrorCode 5  
   
 -   接收时间

@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 96e10d45158dc3ce1f07032a182ce8088f90ac92
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b918d225dcc85cf48d805ace4700f954a8b4a808
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988230"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376233"
 ---
 # <a name="receive-oracle-database-change-notifications-after-a-receive-location-breakdown"></a>接收位置中断后接收 Oracle 数据库更改通知
 请考虑必须 ACCOUNTACTIVITY 表发生更改时接收数据库更改通知消息的 BizTalk 应用程序的方案。 如果接收位置配置的一部分的 BizTalk 应用程序细分的同时记录添加到 ACCOUNTACTIVITY 表，则收不到最近添加的记录的通知。 您还不知道当接收位置再次可用时。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]公开的绑定属性， **NotifyOnListenerStart**，可以配置为接收到通知，接收位置已恢复。 可以指定以下值： **NotifyOnListenerStart**绑定属性：  

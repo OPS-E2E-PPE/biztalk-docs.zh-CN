@@ -20,15 +20,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 47c1b85531a2efe13b91383a4bb5a8deb35b63e3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6b97a92ed1dd842f6b65b49d1c312ffd84eb8dac
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986334"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357481"
 ---
 # <a name="character-encoding-in-the-flat-file-assembler-pipeline-component"></a>平面文件组装器管道组件中的字符编码
-平面文件组装器可以使用用户指定的字符编码生成消息。 您可以在多个级别指定字符编码：  
+平面文件组装器可以生成用户指定的字符编码的消息。 您可以指定在多个级别的字符编码：  
   
 - **架构。** 设置**代码页**文档的平面文件架构中的属性。  
   
@@ -36,9 +36,9 @@ ms.locfileid: "36986334"
   
 - **消息。** 设置**XMLNorm.TargetCharset**消息上下文属性。  
   
-  对消息上下文设置的属性值将始终覆盖在管道设计器中设置的属性值。 此外，始终在管道设计器中设置的值将覆盖设置为值**代码页**平面文件文档架构中的属性。  
+  始终在消息上下文上设置的属性的值将覆盖在管道设计器中的一个集。 此外，始终在管道设计器中设置的值将覆盖设置为值**代码页**平面文件文档架构中的属性。  
   
-  平面文件组装器使用以下算法来确定输出消息要使用的编码：  
+  平面文件组装器使用以下算法来确定要用于输出消息的编码：  
   
 - 如果**XMLNorm.TargetCharset**上下文属性设置，则其值用于编码。  
   
@@ -48,7 +48,7 @@ ms.locfileid: "36986334"
   
 - 否则为如果**XMLNorm.SourceCharset**指定属性，则使用其值。  
   
-- 否则，将使用“UTF-8”。 请注意，使用 UTF-8 编码时，平面文件组装器管道组件不会在传出消息上添加字节顺序标记。  
+- 否则，使用"utf-8"。 请注意，平面文件组装器管道组件不会将字节顺序标记对传出消息时使用 utf-8 编码。  
   
   平面文件组装器将保存在中的 BizTalk 消息对象正文部分的信息进行编码**IBaseMessagePart.Charset**属性。  
   

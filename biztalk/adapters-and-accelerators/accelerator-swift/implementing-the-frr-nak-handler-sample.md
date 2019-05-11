@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 42885d6c487c6f088bfab113891ec5425d3fc82e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e9671538dfa33e2ea65b5009c19770f7d6830c3b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990278"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377389"
 ---
 # <a name="implementing-the-frr-nak-handler-sample"></a>实现 FRR NAK 处理程序示例
 若要实现示例 FRR NAK 自定义处理程序、 将示例项目添加到你的解决方案、 生成和部署项目、 绑定和启动业务流程，然后停止并重新启动[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。  

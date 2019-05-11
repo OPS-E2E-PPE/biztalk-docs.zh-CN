@@ -14,12 +14,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2635ac4b21173fe1a12603c60263dfa70b5a18e5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 393944d0f01e1ebb4010f3963337b1f2182e7623
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974198"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376335"
 ---
 # <a name="operations-on-functions-and-procedures-with-record-types-in-oracle-database"></a>对函数和过程的 Oracle 数据库中的记录类型的操作
 Oracle 记录类型用于表示层次结构中传递到 PL/SQL 函数和过程的参数信息。 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]呈现为 XML 的复杂类型的记录类型。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]支持以下类型的记录类型：  

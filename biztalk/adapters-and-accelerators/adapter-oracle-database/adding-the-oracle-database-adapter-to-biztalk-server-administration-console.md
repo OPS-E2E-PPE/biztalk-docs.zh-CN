@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 95ef6f3c4f33ddfdb6dbaca3e1823149ede66abf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f2a08982e8e58e9333c52121b9be9da4aecd7f37
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997870"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376828"
 ---
 # <a name="adding-the-oracle-database-adapter-to-biztalk-server-administration-console"></a>将 Oracle 数据库适配器添加到 BizTalk Server 管理控制台
 本主题说明了如何添加 Wcf-oracledb 适配器添加到[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。  
@@ -39,7 +39,7 @@ ms.locfileid: "36997870"
   
     ![添加 WCF&#45;OracleDB 适配器添加到 BizTalk Server](../../adapters-and-accelerators/adapter-oracle-database/media/wcf-oracledb.gif "WCF_OracleDB")  
   
-5. 选择“确定”。  
+5. 选择 **确定**。  
   
 ## <a name="see-also"></a>请参阅  
 [若要开发与 Oracle 数据库的 BizTalk 应用程序的构建基块](../../adapters-and-accelerators/adapter-oracle-database/building-blocks-to-develop-biztalk-applications-with-oracle-database.md)

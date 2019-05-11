@@ -16,12 +16,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 39f89720a36c026fa0e8f02902a8fefb08fcebf9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6f2d405a901ae38c7a003fe578aa11d3841fc346
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973310"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376989"
 ---
 # <a name="swift-assembler"></a>SWIFT 汇编程序
 出站发送管道处理所有消息传送的[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]（通过发送端口发送） 的应用程序。  

@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e9a069ee0c934f9a7636646a07bd5a7f777d88c5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9194267eecdbf2247155df297dffeedbf2cac3a8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37020581"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381362"
 ---
 # <a name="invalid-certificate-found"></a>找到的证书无效
 ## <a name="details"></a>详细信息  
@@ -33,7 +33,7 @@ ms.locfileid: "37020581"
 |  消息正文   |                             找到的证书无效                              |
   
 ## <a name="explanation"></a>解释  
- 您为 WCF 传输提供的证书无效。  
+ 你未为 WCF 传输提供有效的证书。  
 
 #### <a name="user-action"></a>用户操作
 添加证书。 
@@ -82,7 +82,7 @@ ms.locfileid: "37020581"
   
 9. 絋粄**指纹**服务和客户端证书的属性显示在证书中的有效证书**存储区名称**。  
   
-   在“证书”管理单元中，确保为 WCF 传输安装有效的证书。  
+   在证书管理单元中，请确保为 WCF 传输安装有效的证书。  
   
 ## <a name="see-also"></a>另请参阅 
   

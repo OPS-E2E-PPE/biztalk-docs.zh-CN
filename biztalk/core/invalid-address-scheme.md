@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5c9a0e7a9c200d2efc7d0e6e81158379200d55af
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1b2b1a1514c605a40c98dacfd90911f806ddcd2f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980998"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381493"
 ---
 # <a name="invalid-address-scheme"></a>地址方案无效
 ## <a name="details"></a>详细信息  
@@ -33,7 +33,7 @@ ms.locfileid: "36980998"
 |  消息正文   |                  无效的地址方案;应为"{0}"方案。                   |
   
 ## <a name="explanation"></a>解释  
- 您提供的协议纲要与传输绑定定义的类型不匹配。  
+ 提供的协议纲要与传输绑定定义的类型不匹配。  
   
 ## <a name="user-action"></a>用户操作  
  若要解决此错误，请执行以下操作：  

@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: da298e0c69de7a351e64aa33ac48611700de3621
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9eaa3a70c6ee734d409d8235a99d203879dcd7ef
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980670"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377946"
 ---
 # <a name="end-to-end-tutorial"></a>端到端教程
 本教程包含详细的步骤说明了如何创建并设置 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]解决方案。 模块和课程使用 Microsoft [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] [!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]创建架构，将业务流程和管道组件使用 A4SWIFT 映射。  

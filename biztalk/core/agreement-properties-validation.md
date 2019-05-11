@@ -1,5 +1,5 @@
 ---
-title: 协议属性验证 |Microsoft 文档
+title: 协议属性验证 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 20c01ec281005cbeaffda6dcd2349c1153a531b1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 38f03d5d504210d270e8892965bffa238ee49496
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22229869"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359381"
 ---
 # <a name="agreement-properties-validation"></a>协议属性验证
 协议属性包括对交换、组或事务集的重复控制编号的检查。 只有在协议属性中启用这些验证，EDI 接收管道才会执行这些验证。 这些验证包括：  
@@ -28,5 +28,5 @@ ms.locfileid: "22229869"
   
 -   检查功能组中的重复事务集控制编号（X12 中的 ST2 或 EDIFACT 中的 UNH1）  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [EDI 消息验证](../core/edi-message-validation.md)

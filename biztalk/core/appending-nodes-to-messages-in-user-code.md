@@ -1,5 +1,5 @@
 ---
-title: 在用户代码中对消息追加节点 |Microsoft 文档
+title: 将节点追加到用户代码中的消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b0376094f31478c74a408eacab6c363ce22c9d2a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6dacbe06634748590be17ca8cd668e0825de1880
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22229973"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359654"
 ---
 # <a name="appending-nodes-to-messages-in-user-code"></a>将节点追加到用户代码中的消息
-由于 BizTalk Server 处理消息的方法，不能只需直接向现有消息追加一个新的节点。 相反，必须克隆现有的消息，如下所示：  
+由于 BizTalk Server 处理消息的方式，只需不能直接向现有的消息中附加一个新的节点。 相反，必须按如下所示克隆现有的消息：  
   
 ```  
 myXMLDoc = myExistingMsg; // just holding a reference  
@@ -34,12 +34,12 @@ myXMLDoc.append myNode; // here is the node we want to append
 myModifiedMsg = myXMLDoc;  
 ```  
   
- 现在你可以使用 myModifiedMsg，其中包括新的节点。 如果出于某种原因，你想要重用 myExistingMsg，你可以构造新的 （空） 副本，并为其分配 myModifiedMsg。  
+ 现在可以使用 myModifiedMsg，其中包括新节点。 如果出于某种原因，你想要重复使用 myExistingMsg，可以构造新的 （空） 副本并为其分配 myModifiedMsg。  
   
 ```  
 myExistingMsg = myModifiedMsg;  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [构造在用户代码中的消息](../core/constructing-messages-in-user-code.md)   
+## <a name="see-also"></a>请参阅  
+ [在用户代码中构造消息](../core/constructing-messages-in-user-code.md)   
  [构造消息](../core/constructing-messages.md)

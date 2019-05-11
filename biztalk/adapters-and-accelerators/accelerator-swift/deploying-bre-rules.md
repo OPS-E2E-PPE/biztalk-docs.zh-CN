@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 311a15690dfa63fe18f67ce320310a0ed3339e6f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1074ed2fb4236ddb5fec83a711850ad7ca4efa85
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977958"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378027"
 ---
 # <a name="deploying-bre-rules"></a>部署 BRE 规则
 必须将部署使用的 BRE 规则[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]业务流程处理 SWIFT 消息。  

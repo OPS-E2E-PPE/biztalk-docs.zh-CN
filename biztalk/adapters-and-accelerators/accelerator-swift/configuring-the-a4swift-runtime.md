@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7fb2c4583b6b8dd4422fc31afa58e84e9bd26257
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1224522e3bf99cd75f4a0bf7cb01e69e0c7b8857
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015014"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378572"
 ---
 # <a name="configuring-the-a4swift-runtime"></a>配置 A4SWIFT 运行时
 完成 Microsoft 后[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]配置中，您必须执行中的步骤后面的部分，请确保 A4SWIFT 已准备好交换消息。 本部分不包括为消息修复和新提交或 FIN 响应对帐功能，提供了更高版本的特定配置步骤。  

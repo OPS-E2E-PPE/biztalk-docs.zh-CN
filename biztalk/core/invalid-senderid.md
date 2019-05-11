@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7517adcd214f789c8af37d4abce2478e6da20507
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 61ae69c91cc5e44d29e0f99abff9198632a02553
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976534"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381237"
 ---
 # <a name="invalid-senderid"></a>SenderId 无效
 ## <a name="details"></a>详细信息  

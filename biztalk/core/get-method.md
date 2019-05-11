@@ -1,5 +1,5 @@
 ---
-title: Get 方法 |Microsoft 文档
+title: Get 方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,15 +14,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d56b060cc261f707a4aa7b0d6a496a62707c4dca
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0fbf3b80fce70cac1ac95d21c143cdb64fae6305
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246517"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345144"
 ---
 # <a name="get-method"></a>Get 方法
-用于检索属性基于输入的密钥参数 (key1、 key2，... keyn)。 输出参数是一个结构，该结构包含与关键字参数匹配的记录的属性。 如果组件接口具有只有一个实例 （即，没有任何键） 的 Get 函数中不包含任何关键参数。 另请参阅[Find 方法](../core/find-method.md)。  
+用来检索属性基于输入键参数 (key1、 key2，... keyn)。 输出参数是记录的一个包含密钥的参数匹配的属性的结构。 如果组件接口只有一个实例 （即，没有任何键），Get 函数不包含任何关键字参数。 另请参阅[Find 方法](../core/find-method.md)。  
   
 ## <a name="syntax"></a>语法  
   
@@ -35,14 +35,14 @@ Get (key1, key2, ... keyn, getHistoryItems, properties)
   
 |参数|Description|  
 |---------------|-----------------|  
-|`key`|一组必须存在于服务器数据库中; 的参数否则将出现错误。 按照对特殊组件接口进行的定义，这些关键字对应于 Get 关键字组。|  
-|`properties`|包含组件接口属性的完整结构，在调用完成时会返回此结构。|  
-|`getHistoryItems`|一个布尔值。 如果组件接口的属性包含级别 0 以下的有效日期项（即，名为 EFFDT 的关键字段），则还需要附加参数 `getHistoryItems`。<br /><br /> 如果值为：<br /><br /> -True-所有有效的发布日期为项返回为一系列 （它无法在任何级别中嵌入）。 其中包括所有过去的有效日期项、当前的有效日期项以及所有将来的有效日期项<br />-False-返回仅当前和将来的所有有效过时的项目。 如果在同一个实例上更新的后续调用将进行，然后`getHistoryItems`应设置为 False。|  
+|`key`|一组必须存在于服务器数据库中; 的参数否则就会出错。 这些项对应于 Get 关键字组，为特定组件接口定义。|  
+|`properties`|包含组件接口属性，在调用完成时会返回此的完整结构。|  
+|`getHistoryItems`|一个布尔值。 如果组件接口的属性包含有效日期项级别 0 以下 （即，一个名为 EFFDT 键字段）`getHistoryItems`其他参数是必需的。<br /><br /> 如果值为：<br /><br /> -True-所有有效日期的项返回为一个序列 （可嵌入到任意级别）。 其中包括所有过去的有效日期的项、 当前的有效日期的项，以及所有将来的有效日期的项<br />-False，将返回仅当前和所有将来的有效日期的项。 如果在同一实例上更新的后续调用将进行，然后`getHistoryItems`应设置为 False。|  
   
-### <a name="remarks"></a>注释  
- 如果组件接口的属性包含级别 0 以下的有效日期项（即，名为 EFFDT 的关键字段），则还需要一个附加参数 `getHistoryItems`。 此参数为布尔型。 如果将其设置为 True，则所有有效日期项将作为一个序列（可嵌入到任意级别）返回。 其中包括所有过去的有效日期项、当前的有效日期项以及所有将来的有效日期项。 如果将 `getHistoryItems` 参数设置为 False，则只会返回当前和所有将来的有效日期项。 如果将来还会对同一实例调用更新，则应将 `getHistoryItems` 设置为 False。 另请参阅[UpdateEx 方法](../core/updateex-method.md)。  
+### <a name="remarks"></a>备注  
+ 如果组件接口的属性包含有效日期项级别 0 （即，键字段名称为 EFFDT），以下附加参数， `getHistoryItems`，是必需的。 此参数是布尔类型。 如果设置为 True，所有有效日期的项是作为一个序列 （可嵌入到任意级别） 返回。 其中包括所有过去的有效日期的项、 当前的有效日期的项，以及所有将来的有效日期的项。 如果`getHistoryItems`参数设置为 False，仅返回当前和所有将来的有效日期的项是。 如果在同一实例上更新的后续调用都将然后`getHistoryItems`应设置为 False。 另请参阅[UpdateEx 方法](../core/updateex-method.md)。  
   
- 如果组件接口没有关键字（即，仅存在一个实例），则 `Get()` 方法的形式如下：  
+ 如果组件接口没有键，这其中只有一个实例可以存在，这种情况则`Get()`方法采用以下格式：  
   
 ```  
 Get(properties)  
@@ -51,7 +51,7 @@ Get(properties)
  有关有效日期项的详细信息，请参阅 PeopleSoft Enterprise 文档。  
   
 > [!NOTE]
->  PeopleSoft 企业 BizTalk 适配器`Get()`提供方法是，如果 PeopleSoft`Get`启用组件界面中的函数。  
+>  用于 PeopleSoft Enterprise 的 BizTalk 适配器`Get()`方法提供如果 PeopleSoft`Get`启用组件接口中的函数。  
   
-## <a name="see-also"></a>另请参阅  
- [附录 a： 组件接口方法](../core/appendix-a-component-interface-methods.md)
+## <a name="see-also"></a>请参阅  
+ [附录 a:组件接口方法](../core/appendix-a-component-interface-methods.md)

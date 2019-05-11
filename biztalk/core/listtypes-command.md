@@ -1,5 +1,5 @@
 ---
-title: 默认应用命令 |Microsoft 文档
+title: ListTypes 命令 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: afe2519fc5507ae0975d050a998faec78f2940a3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fda39d682bfb4649fc22afd892dd13849bfd1b09
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262213"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380720"
 ---
-# <a name="listtypes-command"></a>默认应用命令
-列出的所有项目类型可添加到[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用**AddResource**命令。 有关详细信息**AddResource**命令，请参阅[AddResource 命令](../core/addresource-command.md)。  
+# <a name="listtypes-command"></a>ListTypes 命令
+列出可以添加到项目类型的所有[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]通过使用**AddResource**命令。 有关详细信息**AddResource**命令，请参阅[AddResource 命令](../core/addresource-command.md)。  
   
- 受支持的项目类型的完全限定名称如下所示：  
+ 受支持的项目类型的完全限定的名称如下所示：  
   
 -   .NET 程序集：System.BizTalk:Assembly  
   
@@ -47,10 +47,10 @@ ms.locfileid: "22262213"
 -   虚拟目录：System.BizTalk:WebDirectory  
   
 > [!NOTE]
->  为了避免命名空间冲突，应该始终使用完整的类型名称（如 System.BizTalk:Assembly），而不应只使用类型名（如 Assembly）。  
+>  若要避免命名空间冲突，始终应而不是类型名称 （如程序集） 中使用的完整类型名称 （如 system.biztalk: assembly)。  
   
 ## <a name="usage"></a>用法  
- **BTSTask 默认应用**  
+ **BTSTask ListTypes**  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [BTSTask 命令行参考](../core/btstask-command-line-reference.md)

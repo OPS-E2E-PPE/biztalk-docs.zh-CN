@@ -1,5 +1,5 @@
 ---
-title: 附录 a： 组件接口方法 |Microsoft 文档
+title: 附录 A：组件接口方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,18 +16,18 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 61cb5b87cb063f22c889291b8eff3b2be50d64a7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 48487071e0c4099158a10b0a7cfb922ad8d75717
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230101"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359611"
 ---
-# <a name="appendix-a-component-interface-methods"></a>附录 a： 组件接口方法
+# <a name="appendix-a-component-interface-methods"></a>附录 A：组件接口方法
 用于 PeopleSoft Enterprise 的 Microsoft BizTalk 适配器提供了组件接口的标准方法。  
   
 > [!NOTE]
->  各种方法的 Ex 版本中的 `interactiveMode` 参数有助于调试对后端（`Create/CreateEx`、`Update/UpdateEx` 和 `DeleteOnly`）的调用。 对后端的 *Ex 调用中的每个项都是单独调用的，因此您完全知道哪个项失败。 当你使用存在将导致性能降低\*Ex 方法因为每个属性项收到一个单独的调用。 你可以开发\*Ex 方法，然后切换到 main 方法 (例如， `Create`) 用于生产。 你还可以使用在用于生产调试交换机切换使用方法和\*Ex 方法。  
+>  `interactiveMode`参数的方法的 Ex 版本中有助于调试对后端的调用 (`Create/CreateEx`， `Update/UpdateEx`，和`DeleteOnly`)。 中的每项 * Ex 调用到后端分别调用，以便您知道哪一项完全失败。 存在使用时是性能降低\*Ex 方法因为每个属性的项都会接收单独调用。 可以使用开发\*Ex 方法，然后切换到 main 方法 (例如， `Create`) 用于生产。 您还可以使用在用于生产调试开关使用的方法之间进行切换和\*Ex 方法。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -43,4 +43,4 @@ ms.locfileid: "22230101"
   
 -   [组件接口用户定义的方法](../core/component-interface-user-defined-methods.md)  
   
--   [生效日期属性](../core/effective-date-properties.md)
+-   [“有效日期”属性](../core/effective-date-properties.md)

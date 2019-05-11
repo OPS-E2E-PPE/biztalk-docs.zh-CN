@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 48701d24b405f46ad66a76c0ac473fb7343317f2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e1c99776d350f556855b541290fac1f6a65f5921
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994126"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360259"
 ---
-# <a name="an-empty-as2-message-was-received-and-suspended"></a>收到空的 AS2 消息，该消息被挂起。
+# <a name="an-empty-as2-message-was-received-and-suspended"></a>空的 AS2 消息收到，被挂起
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                        |
@@ -30,7 +30,7 @@ ms.locfileid: "36994126"
 |  事件源   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
 |    组件    |                                       AS2 引擎                                       |
 |  符号名称  |                                           -                                            |
-|  消息正文   |           收到空的 AS2 消息。  该消息将被挂起。           |
+|  消息正文   |           收到空的 AS2 消息。  该消息将挂起。           |
   
 ## <a name="explanation"></a>解释  
  此错误/警告/信息事件表明 BizTalk Server 无法处理传入的 AS2 消息，因为该消息不包含正文。 正文必须由两个回车符/换行符馈送分隔从标头。  

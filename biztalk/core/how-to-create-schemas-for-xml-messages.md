@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a22b241d002884f24be0a2972db24b8a398ee1d7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 993d491dd6eda8f066598c98be0790813cc1e491
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984446"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338963"
 ---
 # <a name="how-to-create-schemas-for-xml-messages"></a>如何为 XML 消息创建架构
 有几种方法用于创建 BizTalk 消息架构。 本主题提供一些方法的分步说明。  
@@ -32,12 +32,12 @@ ms.locfileid: "36984446"
   
 4. 在中**名称**框中，键入架构的名称，然后单击**添加**。  
   
-5. 如有必要，可按 F4 打开 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 的“属性”窗口。  
+5. 如有必要，请按 F4 打开[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口。  
   
 6. 在架构树视图中，选择**架构**节点，然后在属性窗口中，选择**Target Namespace**属性并键入目标命名空间的名称。 务必将此属性设置在此初始阶段中的架构创建;避免使用默认值**目标 Namespace**属性值。  
   
    > [!NOTE]
-   >  某些项目成员文件，例如架构文件的名称选项可能会导致编译错误由于冲突而进行更高版本上使用 C# 保留字和.net Framework 类型和命名空间名称 （例如系统）。 例如以下架构名称：schema.xsd、XmlContent 和 RootNodes。 这是因为**类型名称**属性默认为基 （非扩展名） 部分**Filename**属性。 可以通过显式更改的值来解决这种类型的编译错误**类型名称**为不冲突的属性。  
+   >  某些项目成员文件，例如架构文件的名称选项可能会导致编译错误由于冲突而进行更高版本上使用 C# 保留字和.net Framework 类型和命名空间名称 （例如系统）。 有关架构的示例包括 schema.xsd、 XmlContent 和 RootNodes。 这是因为**类型名称**属性默认为基 （非扩展名） 部分**Filename**属性。 可以通过显式更改的值来解决这种类型的编译错误**类型名称**为不冲突的属性。  
   
    > [!NOTE]
    >  您可能需要添加、 删除和修改的记录和字段以及其关联的属性架构中。 若要了解详细信息，请参阅[管理架构节点内](../core/managing-the-nodes-within-a-schema.md)。  

@@ -1,5 +1,5 @@
 ---
-title: 构造消息 |Microsoft 文档
+title: 构造消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,21 +19,21 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 923fa87c4f3400a80ce83df132747d0004232323
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7c2267863facd50af0f2c2c018d158fa6ee678cd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22237813"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65354643"
 ---
 # <a name="constructing-messages"></a>构造消息
-只要您通过接收消息或为消息变量赋值将消息引入业务流程，就需要构造消息。 您构造的任何消息必须具有消息类型，这样运行时引擎才有所使用的对象的完整说明。 多部分消息类型可以是用户定义的，可以是 .NET 类，也可以是架构。 您可以构造消息以各种方式： 你可以调用一个.NET 类来创建一条消息，将一条消息分配给另一个字符串，或使用转换来将消息中的某些值映射到另一条消息中的值。 消息还可以由接收操作构造，或者在业务流程将消息作为参数来接受的时候构造。  
+在构造消息任何时候您引入到您的业务流程，一条消息由接收它或者将值分配给消息变量。 构造的任何消息必须具有消息类型，以便运行时引擎具有自己正在使用的对象的完整说明。 多部分消息类型可以是用户定义，它可以是.NET 类，也可以是一个架构。 您可以构造消息以各种方式： 您可以调用.NET 类来创建一条消息、 将一条消息分配给另一个，或使用转换来将一条消息中的某些值映射到另一个消息中的值。 接收操作或当您的业务流程接受消息作为参数时也被构造的消息。  
   
 > [!NOTE]
->  多部分消息类型不一定包含多个部分，也可能只包含一个部分。  
+>  多部分消息类型不一定包含多个部分;它可能只包含一个。  
   
 > [!IMPORTANT]
->  消息在 BizTalk 中是不可改变的，也就是说，在您构造它之后，就不能修改该原始消息了。 如果需要进行更改，必须构造消息的新副本，并适当地为其赋值。  
+>  消息是不可改变在 BizTalk 中;也就是说，一旦您构造它，不能修改原始。 如果需要进行更改，必须构造新消息的副本，并相应地向其分配值。  
   
 ## <a name="in-this-section"></a>本节内容  
  [如何配置构造消息形状](../core/how-to-configure-the-construct-message-shape.md)  
@@ -42,17 +42,17 @@ ms.locfileid: "22237813"
   
  [如何配置转换形状](../core/how-to-configure-the-transform-shape.md) 
   
- [消息赋值形状中的消息引用](../core/message-references-in-message-assignment-shape.md)  
+ [“消息赋值”形状中的消息引用](../core/message-references-in-message-assignment-shape.md)  
   
- [在用户代码中的消息引用](../core/message-references-in-user-code.md)  
+ [用户代码中的消息引用](../core/message-references-in-user-code.md)  
   
- [在消息分配中使用 Xpath](../core/using-xpaths-in-message-assignments.md)  
+ [在消息赋值中使用 XPath](../core/using-xpaths-in-message-assignments.md)  
   
- [在消息分配中使用非规范 Xpath](../core/using-non-canonical-xpaths-in-message-assignments.md)  
+ [在消息赋值中使用非规范化 XPath](../core/using-non-canonical-xpaths-in-message-assignments.md)  
   
- [构造在用户代码中的消息](../core/constructing-messages-in-user-code.md)  
+ [在用户代码中构造消息](../core/constructing-messages-in-user-code.md)  
   
- [将节点追加到用户代码中的消息](../core/appending-nodes-to-messages-in-user-code.md)  
+ [向用户代码中的消息追加节点](../core/appending-nodes-to-messages-in-user-code.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [在业务流程中使用消息](../core/using-messages-in-orchestrations.md)

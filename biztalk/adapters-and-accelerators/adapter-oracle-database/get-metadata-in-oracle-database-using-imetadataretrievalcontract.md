@@ -14,12 +14,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b9510c7ae534251218826a31eea1cc39c8d1f139
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 679a1be842b27431669e60089143c1972aaa0693
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977990"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376568"
 ---
 # <a name="get-metadata-in-oracle-database-using-imetadataretrievalcontract"></a>在 Oracle 数据库中使用 IMetadataRetrievalContract 获取元数据
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]公开**IMetadataRetrievalContract**，可以使用浏览和搜索 Oracle 数据库项目并检索窗体的 Web 服务描述语言 (WSDL 中的操作的元数据终结点) 文档。  
@@ -78,7 +78,7 @@ ms.locfileid: "36977990"
 >  您只能浏览类别节点，则无法浏览操作节点。  
   
 ### <a name="searching-for-metadata-nodes"></a>搜索元数据节点  
- 您使用**搜索**方法来执行所包含的父节点的节点的搜索。 适配器支持通配符搜索表达式; 中例如，您可以指定百分比 （%） 通配符来匹配零个或多个字符。 下面的示例显示包含字符串"EMP"SCOTT 架构中的所有表的搜索。 在此示例中，**客户端**的一个实例**MetadataRetrievalClient**。  
+ 您使用**搜索**方法来执行所包含的父节点的节点的搜索。 适配器支持通配符搜索表达式; 中例如，您可以指定百分比 （%）要匹配零个或多个字符的通配符字符。 下面的示例显示包含字符串"EMP"SCOTT 架构中的所有表的搜索。 在此示例中，**客户端**的一个实例**MetadataRetrievalClient**。  
   
 ```  
 // Search for all nodes that contain "EMP" under the SCOTT.Table node.  

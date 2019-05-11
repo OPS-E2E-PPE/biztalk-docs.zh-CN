@@ -1,5 +1,5 @@
 ---
-title: 开发和配置 BizTalk Server AS2 解决方案 |Microsoft 文档
+title: 开发和配置 BizTalk Server AS2 解决方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b3cd1bfb6bba469f6096242f3e57fd199a4439e5
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c22356c4f7bf8c6e3523bd2ae3fbbb9f506c2c9f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239341"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65351453"
 ---
 # <a name="developing-and-configuring-biztalk-server-as2-solutions"></a>开发和配置 BizTalk Server AS2 解决方案
 ## <a name="overview"></a>概述
-开发人员创建 BizTalk AS2 解决方案的信息。 使用 BizTalk 项目系统设计环境创建这些解决方案与[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。
+开发人员可以创建 BizTalk AS2 解决方案的信息。 这些解决方案创建使用 BizTalk 项目系统设计环境和[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。
   
- 在开发 BizTalk Server AS2 解决方案之前，请确保您已经完全安装和配置了具有 AS2 功能的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 请参阅[BizTalk Server 的最新内容、 安装、 配置和升级](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)。 有关所需的开发的 EDI 解决方案的其他 AS2 特定配置，请参阅[后配置步骤来优化您的环境](../install-and-config-guides/post-configuration-steps-to-optimize-your-environment.md)。
+ 在开发 BizTalk Server AS2 解决方案之前, 请确保完全安装并配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]具有 AS2 功能。 请参阅[BizTalk Server 的最新内容、 安装、 配置和升级](../install-and-config-guides/biztalk-server-what-s-new-installation-configuration-and-upgrade.md)。 有关开发 EDI 解决方案所需的其他特定于 AS2 的配置，请参阅[用于优化环境的配置后步骤](../install-and-config-guides/post-configuration-steps-to-optimize-your-environment.md)。
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [通过文件发送端口发送 AS2 消息](../core/sending-an-as2-message-over-a-file-send-port.md)  
+-   [通过 FILE 发送端口发送 AS2 消息](../core/sending-an-as2-message-over-a-file-send-port.md)  
   
 -   [配置 AS2 属性](../core/configuring-as2-properties.md)  
   
@@ -35,12 +35,12 @@ ms.locfileid: "22239341"
   
 -   [为 AS2 解决方案配置端口](../core/configuring-ports-for-an-as2-solution.md)  
   
--   [AS2 安全](../core/as2-security.md)  
+-   [AS2 安全性](../core/as2-security.md)  
   
--   [为出站的参与方解析编写 AS2 上下文属性](../core/writing-as2-context-properties-for-outbound-party-resolution.md)  
+-   [写入 AS2 上下文属性以进行出站参与方解析](../core/writing-as2-context-properties-for-outbound-party-resolution.md)  
   
 -   [AS2 上下文属性](../core/as2-context-properties.md)  
   
-## <a name="see-also"></a>另请参阅  
-[教程和演练 EDI、 AS2 和 EDIFACT](../core/tutorials-and-walkthroughs-for-edi-as2-and-edifact.md)  
+## <a name="see-also"></a>请参阅  
+[EDI、AS2 和 EDIFACT 的教程和演练](../core/tutorials-and-walkthroughs-for-edi-as2-and-edifact.md)  
 [开发和配置 BizTalk Server EDI 解决方案](../core/developing-and-configuring-biztalk-server-edi-solutions.md)

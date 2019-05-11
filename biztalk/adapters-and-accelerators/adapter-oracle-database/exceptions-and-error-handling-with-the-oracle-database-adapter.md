@@ -17,12 +17,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e12822c46af24e021df060e53d83c9b8f018e1f9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5496eb567e71fdd7d01e36445f21a83dfc7a3ff1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978606"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376582"
 ---
 # <a name="exceptions-and-error-handling-with-the-oracle-database-adapter"></a>异常和错误处理与 Oracle 数据库适配器
 本部分列出了异常的[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]引发。 这些可以包含：  

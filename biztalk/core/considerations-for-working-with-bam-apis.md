@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 416f8acca6412b8809d7843de7d8084d3df9efc1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d4962849a8596316cced7d02a130266528506a22
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005198"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65354720"
 ---
 # <a name="considerations-for-working-with-bam-apis"></a>有关使用 BAM Api 的注意事项
 在使用“Microsoft.BizTalk.Bam.EventObservation.EventStream”对象（如 DirectEventStream、BufferedEventStream、MessagingEventStream 或 OrchestrationEventStream）时，BAM 将会捕获里程碑，使这些里程碑自动以世界时 (UTC) 格式（也称为格林威治标准时间）进行记录。 当使用这些 API 向 BAM 发送日期/时间时，这些日期和时间将以发送格式接收，而不会转换为 UTC 格式。 在开发 BAM 解决方案时，应考虑以下情况：  

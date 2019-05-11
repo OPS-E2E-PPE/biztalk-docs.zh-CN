@@ -1,5 +1,5 @@
 ---
-title: 步骤 8： 配置后更改 |Microsoft 文档
+title: 步骤 8：配置后更改 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e0d30425e29269971050e8daf2bfc094f270bde0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 05c07e13c22a3b46758279bc9aaea6465e3878ec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22214029"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377027"
 ---
-# <a name="step-8-post-configuration-changes"></a>步骤 8： 后的配置更改
-以下部分可为你提供将完成你的部署的安装后步骤。  
+# <a name="step-8-post-configuration-changes"></a>步骤 8：配置后更改
+以下部分为您提供了将完成你的部署的安装后步骤。  
   
  本部分包含：  
   

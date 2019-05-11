@@ -1,5 +1,5 @@
 ---
-title: 第 2 部分： 批处理中的批处理方案 |Microsoft Docs
+title: 第 2 部分：批处理批处理方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 593f1e57b12eb30f47db65bfacd34a988f701f07
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d950a326aae07db4763210f67118ae272785444d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975414"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65290374"
 ---
-# <a name="part-2-batch-inbatch-out-scenario"></a>第 2 部分： 中的批处理 / 出站批处理方案
+# <a name="part-2-batch-inbatch-out-scenario"></a>第 2 部分：在批处理 / 批处理方案
 在本教程的此部分中，接收 HL7 编码的批文件，将通过其传递[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]而无需碎片，并发送到目标不变的批处理文件。 下图显示了此过程中，流和以下子节介绍了工作流。  
   
 > [!NOTE]

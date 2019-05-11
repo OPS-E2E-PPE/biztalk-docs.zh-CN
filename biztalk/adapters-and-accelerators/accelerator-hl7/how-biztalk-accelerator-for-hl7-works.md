@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7c923f81420910d5e41c846e1adfeee7f90fdd96
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5fef495a04343c8a8a5569d993db02f47fabd572
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996566"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65293009"
 ---
 # <a name="how-biztalk-accelerator-for-hl7-works"></a>BizTalk Accelerator for HL7 工作原理
 Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 通过基于 Microsoft 提供卫生保健解决方案[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 它会通过提供支持对于卫生保健的消息，并添加定制的消息处理对卫生保健应用程序的特定于美国卫生保健的组件。  

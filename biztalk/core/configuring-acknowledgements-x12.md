@@ -12,15 +12,15 @@ caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 28df03b8955c17888a4722c361a2e4481c63b413
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9cd9497c6367ae757206ba91d60575476fbfd05e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970688"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356322"
 ---
 # <a name="configuring-acknowledgements-x12"></a>配置确认 (X 12)
-在合作伙伴协议中，您可以指定 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 生成确认的方式，以响应从参与方接收的 X12 编码的交换，以及返回到参与方的确认类型。 您还可以指定是否批处理确认，以及是否为接收的事务集生成 AK2 循环。 本部分提供如何执行操作的说明。  
+在合作伙伴协议中，您可以指定如何[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]响应从参与方和类型的确认返回到参与方接收的 X12 编码交换而生成确认。 此外可以指定是否批处理确认，以及是否为接受的事务集生成 AK2 循环。 本部分将说明了如何执行此操作。  
   
 > [!NOTE]
 >  此处所述的确认属性同样适用于 HIPAA 确认。  
@@ -30,12 +30,12 @@ ms.locfileid: "36970688"
 > 
 > - **为接受的事务集包含 AK2 循环 （如果未选中，将生成循环仅当 AK501 不等于 A）**。  
 > 
->   仅在与从参与方发送交换的属性相对应的单向协议选项卡上禁用这些属性。 例如，如果创建两个参与方 Party A 和参与方 B，并且对于参与方 A 清除该复选框，上述列表中的属性上禁用**参与方 A-> 参与方 B**单向协议选项卡。  
+>   仅在与参与方所发送交换的属性相对应的单向协议选项卡上禁用这些属性。 例如，如果创建两个参与方 Party A 和参与方 B，并且对于参与方 A 清除该复选框，上述列表中的属性上禁用**参与方 A-> 参与方 B**单向协议选项卡。  
   
-## <a name="prerequisites"></a>必要條件  
- 必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组或 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators 组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 必须以成员的身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理员或[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]B2B Operators 组。  
   
-### <a name="to-configure-x12-ack-properties"></a>配置 X12 确认属性  
+### <a name="to-configure-x12-ack-properties"></a>若要配置 X12 确认属性  
   
 1.  创建 X12 编码协议，如中所述[配置常规设置 (X12)](../core/configuring-general-settings-x12.md)。 若要更新现有的协议，请右键单击中的协议**参与方和业务配置文件**页，然后单击**属性**。  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f749a06c694007008f3d8138b2b087b77b2c4f03
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 84bc0cde2b41d5518c7bd15bdc35b148c658a63e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996110"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376948"
 ---
 # <a name="swift-schemas"></a>SWIFT 架构
 [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)] 通过发送和接收 SWIFT 财务 (FIN) 消息作为单个平面文件的 SWIFT 网络。 每个消息包含一组标头块的一组预定义的标记的字段和位置或有序子字段和尾部尾部块内的一组组成的文本块。 文本块的内容因消息类型而异。  

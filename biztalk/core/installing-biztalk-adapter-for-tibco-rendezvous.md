@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7f1eafd0c4a5ff96c3083d28b23347a2908aa52c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2f00e77a4eb2234265430f3cadc6a8384d768d16
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022099"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382082"
 ---
 # <a name="install-schemas-and-limitations-of-the-tibco-rendezvous-adapter"></a>安装、 架构和 TIBCO Rendezvous 适配器限制
 
@@ -27,9 +27,9 @@ ms.locfileid: "37022099"
 [安装和配置企业应用程序的适配器](../adapters-and-accelerators/install-configure-biztalk-adapters-enterprise-applications.md)包括安装企业适配器的步骤，还包括关键信息，了解安装适配器之前和之后安装适配器。 
 
 ## <a name="generate-schemas"></a>生成架构
-TIBCO Rendezvous 系统中没有消息类型存储库。 所有消息构造和解析都在 Rendezvous 应用程序级别隐藏了。 鉴于此限制，适配器不能提供架构生成功能。  
+TIBCO Rendezvous 系统不包括消息类型存储库。 所有消息构造和分析隐藏在 Rendezvous 应用程序级别的信息。 鉴于此限制，适配器不能提供架构生成功能。  
   
-必须编写一个架构，并使用**添加现有项**在 Visual Studio 中将其导入在业务流程中使用。 架构对于 BizTalk Server 开发工具和 Visual Studio 中的集成都非常重要。 BizTalk Server 开发人员可以选择提供完整架构、最低限要求的架构，或介于二者之间的版本。  
+必须编写一个架构，并使用**添加现有项**在 Visual Studio 中将其导入在业务流程中使用。 架构是 BizTalk Server 开发工具和 Visual Studio 中的集成非常重要。 BizTalk Server 开发人员可以选择提供完整的架构、 最低要求的架构或二者之间的版本之间。  
 
 ## <a name="limitations"></a>限制
 
@@ -47,4 +47,4 @@ TIBCO Rendezvous 系统中没有消息类型存储库。 所有消息构造和�
 - 
   ## <a name="next-step"></a>下一步
 
-[教程：使用适用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器](../core/tutorials-using-the-microsoft-biztalk-adapter-for-tibco-rendezvous.md)  
+[教程：使用用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器](../core/tutorials-using-the-microsoft-biztalk-adapter-for-tibco-rendezvous.md)  

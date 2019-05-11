@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f2aedcd9874682ed71af774db72979c152836ab3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cf001bcfe96a2fb6849ce72ba5800117f62e618c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004848"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376063"
 ---
 # <a name="run-sqlexecute-operation-in-oracle-database-using-the-wcf-service-model"></a>在 Oracle 数据库中使用 WCF 服务模型运行 SQLEXECUTE 操作
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]显示一组标准的 Oracle 数据库项目上的操作。 通过使用这些操作，可以执行诸如调用 Oracle 函数或过程，或执行对表的基本 SQL 数据操作语言 (DML) 操作。 但是，可能有需要你执行操作的方案由您的业务逻辑驱动的[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]不能显示。 例如，您可能希望：  

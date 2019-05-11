@@ -16,17 +16,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2e69748feaeb877c816cc086ba978e53e8398baf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 826158471dbff3116df55a00f653740ab183e2d7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018349"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338053"
 ---
 # <a name="how-to-edit-xpath-selector-to-process-multiple-records"></a>如何编辑 XPath 选择器以处理多个记录
-单独的子 Typedxmldocument 时，会创建将 TypedXmlDocument 添加到引擎中;请参阅[Assert](../core/assert.md)。 引擎将根据规则中定义的 XPath 选择器决定创建哪些子 TypedXmlDocument。 在编辑器中生成规则时，XPath 选择器的值默认为事实浏览器的“XML 架构”选项卡中所选节点之上的那个节点。 相对于所选节点的父节点，XPath 字段的值默认为所选节点本身。  
+单独的子 Typedxmldocument 时，会创建将 TypedXmlDocument 添加到引擎中;请参阅[Assert](../core/assert.md)。 在引擎确定哪些子 Typedxmldocument 创建基于在规则中定义的 XPath 选择器。 生成在编辑器中的规则时，XPath 选择器值默认为事实浏览器中的 XML 架构选项卡中选择的节点上方的节点。 XPath 字段值默认为所选节点本身，相对于其父节点。  
   
- 在某些情况下，您可能希望自定义编辑器在生成规则时创建的默认 XPath。 假设存在以下示例 XML 文档：  
+ 在某些情况下您可能想要自定义默认的生成规则时创建编辑器的 XPath。 假定下面的示例 XML 文档。  
   
 ```  
 <Order>  
@@ -51,20 +51,20 @@ ms.locfileid: "37018349"
 </Order>  
 ```  
   
- 假设您希望生成计算每个 Orderline 的 Total 值的规则。 该规则应与下面所列相似：  
+ 假设你想要生成的规则，计算每个 Orderline 总计值。 你的规则如以下所示。  
   
  IF 1==1  
   
  然后<strong>/o/Orderline/</strong>总 = (<strong>顺序/Orderline/Hat/</strong>成本 + <strong>顺序/Orderline/Shirt/</strong>成本)  
   
- XPath 的粗体部分表示选择器部分，其余部分表示字段 XPath。 这些都是编辑器生成的默认值。 但是，运行此策略将导致创建 6 个对象：2 个 Orderline 对象、2 个 Hat 对象和 2 个 Shirt 对象。 Orderline 总计值将针对 Hat 对象和 Shirt 对象的每个组合来进行计算，并始终设置为同一值，该值源自上次执行规则所得的结果。 该规则将触发 8 次。 然而，这并不是本方案的预期结果。  
+ Xpath 的粗体部分表示选择器部分，其余部分表示字段 XPath。 这些是编辑器生成的默认值。 运行此策略，但是，将导致创建 6 个对象-2 个 Orderline 对象、 2 个 Hat 对象和 2 个 Shirt 对象。 将为 Hat 和 Shirt 对象的每个组合计算 Orderline 总计和总计将始终设置为相同的值，该值源自上次执行规则。 该规则将触发 8 次。 这是不是为想在此方案中。  
   
- 一种解决方案是按如下所示编辑 XPath 值：  
+ 一种解决方案是编辑 XPath 值是按如下所示。  
   
  IF 1==1  
   
  然后<strong>/o/Orderline/</strong>总 = (<strong>/o/Orderline/</strong>Hat/成本 + <strong>/o/Orderline/</strong>Shirt/成本)  
   
- 所有三个字段的选择器 XPath 值均已设置为同一 /Order/Orderline 值，并且字段 XPath 值也已进行相应的编辑。 这是在“XML 架构”选项卡中选择节点后，通过更改“属性”窗口中的 XPath 选择器和 XPath 字段值来完成的。该操作应在将字段拖到规则参数中之前完成。  
+ 所有三个字段的选择器 XPath 值已设置为同一 /Order/Orderline 值并相应地编辑的字段 XPath 值。 这是通过在 XML 架构选项卡中选择节点时更改属性窗口中的 XPath 选择器和 XPath 字段值。这应在将字段拖动到规则参数之前完成。  
   
- 如果执行包含此更改的策略，则会根据每个 Orderline 内 Shirt 节点和 Hat 节点的 Cost 值正确计算出该 Orderline 的 Total 值。
+ 执行此更改的策略将导致每个 Orderline 基于该 Orderline 内 Shirt 和 Hat 节点的 Cost 值正确计算出的总计值。

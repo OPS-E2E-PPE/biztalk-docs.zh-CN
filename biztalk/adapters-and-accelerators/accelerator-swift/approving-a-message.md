@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0c565f40c6c455456101521414edf0c377411014
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 481a0cab00152f947e17b57a92fc9cf0df84c06a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967102"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378867"
 ---
 # <a name="approving-a-message"></a>审核消息
 本部分描述如何批准一条消息，已修复和验证。  
@@ -39,9 +39,9 @@ ms.locfileid: "36967102"
 
 6. SWIFT 加速器窗格中的[!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)] [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] 2007年窗口中，单击**错误**。 查看任何错误中所示**分析和 XML 验证错误**框中， **BRE 验证错误**框中，并且**运行时错误**框。  
 
-7. 在[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]窗体中，滚动到错误的位置并验证是否已更正错误。 可以看到原始错误已通过单击**错误**中当前的角色： 批准窗格中，并在其中一个错误窗格中查看该错误。 此外可以通过单击比较消息的修复和已修复版本**消息的详细信息**中当前的角色： 批准窗格。  
+7. 在[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]窗体中，滚动到错误的位置并验证是否已更正错误。 可以看到原始错误已通过单击**错误**当前角色中：批准窗格中，并在其中一个错误窗格中查看该错误。 此外可以通过单击比较消息的修复和已修复版本**消息的详细信息**当前角色中：批准窗格。  
 
-8. 若要确保将验证该消息，请单击**验证**当前角色中： 批准窗格中，然后依次**验证消息**。 验证结果窗格中显示消息**该消息是否有效**。  
+8. 若要确保将验证该消息，请单击**验证**当前角色中：批准窗格中，然后依次**验证消息**。 验证结果窗格中显示消息**该消息是否有效**。  
 
 9. 如果已对该文档中的更改批准[!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)] [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] 2007年窗口中，单击**提交**。  
 

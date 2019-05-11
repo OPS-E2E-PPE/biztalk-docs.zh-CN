@@ -22,12 +22,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9b736fc7eb84964f9c0e74a3c319c9de1f3a3a44
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2235eacf4186277f068850eb9325fbc3ed8ece1f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989670"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378845"
 ---
 # <a name="assigning-rights"></a>分配权限
 应在文档库，用于在上一主题中创建每个站点组上授予以下权限：  

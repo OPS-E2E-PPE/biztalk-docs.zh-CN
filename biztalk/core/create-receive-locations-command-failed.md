@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 95b50fcb051b77b4d6516145a2c7fabfc52c2e7f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 559b2bee91cde68afa307de8d25fc89e4ceabcb7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976246"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65354267"
 ---
 # <a name="create-receive-locations-command-failed"></a>创建接收位置命令失败
 ## <a name="details"></a>详细信息  
@@ -30,15 +30,15 @@ ms.locfileid: "36976246"
 |  事件源   |                                         0                                          |
 |    组件    |                                         0                                          |
 |  符号名称  |                                         0                                          |
-|  消息正文   |  创建接收位置命令失败： FileName ={0}自变量 ={1} ExitCode ={2}  |
+|  消息正文   |  创建接收位置命令失败：FileName={0} Arguments={1} ExitCode={2}  |
   
 ## <a name="explanation"></a>解释  
- 发布向导无法创建接收位置。  
+ 发布向导创建接收位置失败。  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请执行以下： 在 BizTalk 管理控制台中，请确保 Web.config 文件中 receiveLocationName 属性指定的接收位置 BizTalk WCF 发布向导生成存在并且已启动。  
+ 若要解决此错误，请执行以下操作：在 BizTalk 管理控制台中，请确保 Web.config 文件中 receiveLocationName 属性指定的接收位置 BizTalk WCF 发布向导生成存在并且已启动。  
   
- 有关创建接收位置的其他信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+ 有关其他信息创建接收位置，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
   
 -   [通过独立 WCF 接收适配器发布 WCF 服务](../core/publishing-wcf-services-with-the-isolated-wcf-receive-adapters.md)  
   
@@ -48,4 +48,4 @@ ms.locfileid: "36976246"
   
 -   [如何配置 Wcf-customisolated 接收位置](../core/how-to-configure-a-wcf-customisolated-receive-location.md)  
   
--   [演练：通过 WCF-BasicHttp 适配器发布 WCF 服务](../core/walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter.md)
+-   [演练：使用 Wcf-basichttp 适配器发布 WCF 服务](../core/walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter.md)

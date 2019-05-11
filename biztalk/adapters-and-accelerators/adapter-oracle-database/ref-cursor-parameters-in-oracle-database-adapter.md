@@ -17,12 +17,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27b1d3ac6ff54fa15c300962e7ecfdae91414bff
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 847bf5f06f573b717a5845741fec35d163b66139
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014806"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376158"
 ---
 # <a name="operations-on-functions-and-procedures-with-ref-cursor-parameters-in-oracle-database"></a>对 Oracle 数据库中的 REF CURSOR 参数包含函数和过程的操作
 REF CURSOR 是 PL/SQL 数据类型表示的指针指向服务器端结果集生成的执行查询。 REF CURSOR 类型支持输入和输出数据的流，适合用于传输大量数据传入和传出 PL/SQL 代码。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]提供强类型化和弱类型 (SYS_REFCURSOR) REF Cursor，可缩小，传递给 PL/SQL 过程和函数中，或在 OUT 参数的支持。  

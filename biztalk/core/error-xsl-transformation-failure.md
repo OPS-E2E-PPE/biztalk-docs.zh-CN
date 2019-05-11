@@ -1,5 +1,5 @@
 ---
-title: 错误-XSL 转换失败 |Microsoft 文档
+title: 错误-XSL 转换失败 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 58548bccde30bc1d4fb07c13aa926aa36a30e070
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f08de2f8ca1450abff7028c9a35d0185ef624e16
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22245853"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388316"
 ---
 # <a name="error---xsl-transformation-failure"></a>错误-XSL 转换失败
 **错误代码**  

@@ -14,12 +14,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f753d2dcbd5782f456b099174e0369e37cca2e6f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dbf495f6e9e749cb9668dd3ff52c361b8e248ba1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981478"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376765"
 ---
 # <a name="message-schemas-for-the-sqlexecute-operation"></a>SQLEXECUTE 操作的消息架构
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] LOB 系统中的项目的强类型元数据的图面，并公开这些项目上的标准操作。 但是，有一个应用程序需要由应用程序中的业务逻辑驱动的任意 SQL 语句执行的方案。 例如，您可能希望：  

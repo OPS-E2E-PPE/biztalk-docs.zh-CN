@@ -1,5 +1,5 @@
 ---
-title: 已知问题的 POP3 适配器 |Microsoft 文档
+title: 使用 POP3 适配器的已知问题 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4bc86b2ae14b04b160f7387f870615116e659b3f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 78e978ed5be5fa556411566d35aa6fcf58c09fec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22261941"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380737"
 ---
 # <a name="known-issues-with-the-pop3-adapter"></a>POP3 适配器已知问题
-本部分包含可帮助你避免出现错误的信息。  
+本部分包含可能帮助您避免错误的信息。  
   
 ## <a name="known-issues"></a>已知问题  
   
-#### <a name="the-pop3-adapter-fails-to-process-documents-when-running-on-a-64-bit-operating-system"></a>POP3 适配器在运行在 64 位操作系统上时无法处理文档  
+#### <a name="the-pop3-adapter-fails-to-process-documents-when-running-on-a-64-bit-operating-system"></a>POP3 适配器无法处理文档，在 64 位操作系统上运行时  
   
 ##### <a name="problem"></a>问题  
- POP3 适配器在运行在 64 位操作系统上时将无法处理文档。  
+ 在 64 位操作系统上运行时，POP3 适配器将不处理文档。  
   
 ##### <a name="cause"></a>原因  
- POP3 适配器的适配器处理程序无法运行在 64 位主机实例上。  
+ POP3 适配器的适配器处理程序无法在 64 位主机实例中运行。  
   
 ##### <a name="resolution"></a>解决方法  
- 如果要在 64 位计算机上运行 POP3 适配器，需要将 POP3 适配器处理程序配置为在 32 位主机中运行。 在可通过 BizTalk 管理控制台访问的“主机属性”页上提供了此选项。  
+ 如果在 64 位计算机上正在运行 POP3 适配器，配置 POP3 适配器处理程序，在 32 位主机中运行。 此选项才可从 BizTalk 管理控制台访问的主机属性页上可用。  
   
-## <a name="see-also"></a>另请参阅  
- [故障排除 POP3 适配器](../core/troubleshooting-the-pop3-adapter.md)
+## <a name="see-also"></a>请参阅  
+ [POP3 适配器故障排除](../core/troubleshooting-the-pop3-adapter.md)

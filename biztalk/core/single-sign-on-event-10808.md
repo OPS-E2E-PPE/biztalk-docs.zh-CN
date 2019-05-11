@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10808 |Microsoft Docs
+title: 单一登录：Event 10808 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 49d4e6ab0f6a9ea10ef28440f5b8399778fbc93b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ae819cd41cc39b4866ae2d9befc0edc3952cb5b8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971398"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380021"
 ---
-# <a name="single-sign-on-event-10808"></a>单一登录： 事件 10808
+# <a name="single-sign-on-event-10808"></a>单一登录：事件 10808
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                  |
@@ -28,14 +28,14 @@ ms.locfileid: "36971398"
 | 产品版本 |    [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]    |
 |    事件 ID     |                              10808                               |
 |  事件源   |                              ENTSSO                              |
-|    组件    |                               N/A                                |
+|    组件    |                               不可用                                |
 |  符号名称  |                ENTSSO_E_HISSO_SYSTEM_NOT_ENABLED                 |
-|  消息正文   | 没有为主机启动的单一登录启用 SSO 系统。 |
+|  消息正文   | 未为主机启动的单一登录启用 SSO 系统。 |
   
 ## <a name="explanation"></a>解释  
- 没有为主机启动的单一登录启用 SSO 系统。  
+ 未为主机启动的单一登录启用 SSO 系统。  
   
 ## <a name="user-action"></a>用户操作  
- 使用管理工具配置主机启动的单一登录。 这会设置  
+ 使用管理工具来配置主机启动的单一登录。 这会设置  
   
- SSO_FLAG_SSO_EXTERNAL_TO_WINDOWS 标记。
+ SSO_FLAG_SSO_EXTERNAL_TO_WINDOWS 标志的全局信息。

@@ -20,59 +20,59 @@ caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fbc38ddedf1b71cba0df4306359df9bdb5c96c15
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ea93206c296df5c1930e699500aeba8fda253b75
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966310"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358152"
 ---
 # <a name="best-practices-for-securing-adapters"></a>确保适配器安全的最佳实践
-本主题提供了适配器安全性最佳实践的列表。  
+本主题提供了适配器安全性的最佳做法的列表。  
   
  **在您的计算机; 上未安装不受信任的适配器仅使用经认证的适配器开发合作伙伴。**  
   
  **在默认适配器架构中存储敏感的客户数据。**  
   
- 应当只在部署适配器之后才配置用户名和密码信息。 这样可以确保将信息存储在 SSO 数据库中。 有关 SSO 数据库的详细信息，请参阅[使用 SSO](../core/using-sso.md)。  
+ 只在部署适配器之后，应配置用户名和密码信息。 这可确保信息获取存储在 SSO 数据库。 有关 SSO 数据库的详细信息，请参阅[使用 SSO](../core/using-sso.md)。  
   
  **授予用于提取和存放文件使用的文件和 EDI 适配器的共享文件夹 （接收文件夹和发送文件夹） 上的以下权限：**  
   
 - **接收文件夹**  
   
-   文件适配器的接收文件夹可在接收位置上进行配置。 EDI 适配器的接收文件夹可在接收处理程序上进行配置。 提取文件的 BizTalk 主机的服务帐户应在文件系统级别具有以下权限：  
+   文件适配器的接收文件夹上的接收位置进行配置。 可在接收处理程序配置 EDI 适配器的接收文件夹。 在文件系统级别上，提取该文件的 BizTalk 主机服务帐户应具有以下权限：  
   
-  - 列出文件夹/读取数据  
+  - 列出文件夹 / 读取数据  
   
   - 删除子文件夹和文件  
   
-    如果接收文件夹位于网络共享上，则必须在文件共享级别授予以下权限：  
+    如果接收文件夹位于网络共享上，必须在文件共享级别上授予以下权限：  
   
-  - 提取文件的 BizTalk 主机的服务帐户必须具有“完全控制”权限。  
+  - 提取该文件的 BizTalk 主机服务帐户必须具有完全控制权限。  
   
-  - [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员必须具有“完全控制”权限，才能进行故障排除。  
+  - [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员必须具有用于故障排除的完全控制权限。  
   
-  - 将文件存放到此位置的外部用户或程序必须具有写权限。  
+  - 外部用户或程序文件放到此位置必须具有写入权限。  
   
 - **发送文件夹**  
   
-   文件适配器和 EDI 适配器的发送文件夹可在发送端口上进行配置。  
+   发送文件夹中的文件和 EDI 适配器的发送端口上进行配置。  
   
-  - BizTalk 主机或在将文件存放在此处的主机的服务帐户必须具有写权限。  
+  - BizTalk 主机或主机文件拖至此处的服务帐户必须具有写入权限。  
   
-  - [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员必须具有“完全控制”权限。  
+  - [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员必须具有完全控制权限。  
   
-  - 提取文件的外部用户或程序必须具有读权限。  
+  - 外部用户或提取文件的程序必须具有读取权限。  
   
   **将添加到 BTS_HOST_USERS SQL 角色运行 EDI 服务在其下的用户帐户。**  
   
-  此项为必需操作，以便可在不具有管理权限的情况下获取 BizTalk 浏览器对象管理 (OM) 访问权限。 若要执行此操作，请将“EDI Subsystem Users”添加到 BizTalk 管理数据库 (BizTalkMgmtDb) 的 BTS_HOST_USERS 角色中。  
+  这是必需的以便你可以获取 BizTalk 资源管理器对象管理 (OM) 访问权限，而无需管理权限。 若要执行此操作，添加到 BTS_HOST_USERS 角色中的 BizTalk 管理数据库，BizTalkMgmtDb"EDI Subsystem Users"。  
   
-  若要在 SQL Server 2005 上将“EDI Subsystem Users”添加到 BTS_HOST_USERS 角色中，请完成以下步骤：  
+  若要添加到 SQL Server 2005 上的 BTS_HOST_USERS 角色的"EDI Subsystem Users"，请完成以下步骤：  
   
 1. 启动从 SQL Server Management Studio**开始，程序，Microsoft SQL Server 2008**。  
   
-2. 连接到 BizTalk 管理数据库所在的 SQL Server。  
+2. 连接到托管 BizTalk 管理数据库的 SQL 服务器。  
   
 3. 展开对象资源管理器中的此服务器。  
   
@@ -84,7 +84,7 @@ ms.locfileid: "36966310"
   
 7. 在 BTS_HOST_USERS 对话框中，单击**外**，单击**浏览**，然后选中要将其添加的 EDI Subsystem Users 组旁边的框。  
   
-    如果 EDI Subsystem Users 组没有显示在要添加的用户列表中，则必须将 EDI Subsystem Users 组作为新数据库用户添加到 BizTalk 管理数据库中。 若要将 EDI Subsystem Users 组添加为新的数据库用户，完成 SQL Server Management Studio 中的以下步骤：  
+    如果 EDI Subsystem Users 组不存在要添加的用户的列表中，必须向 BizTalk 管理数据库将 EDI Subsystem Users 组添加为新的数据库用户。 若要将 EDI Subsystem Users 组添加为新的数据库用户，完成 SQL Server Management Studio 中的以下步骤：  
   
    1.  展开 BizTalk 管理数据库。  
   

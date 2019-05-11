@@ -16,12 +16,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 25c389e10a48287ef87495b32fe2d69644a8259e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a8baec8f140c0f7f0d3220b17c879a4868247bf6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010918"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376975"
 ---
 # <a name="swift-disassembler"></a>SWIFT 反汇编程序
 入站的接收管道处理所有消息提交到[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]（在接收位置收到） 的应用程序。  

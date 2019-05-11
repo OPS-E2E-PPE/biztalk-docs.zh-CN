@@ -15,20 +15,20 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 761f29d6f341410fec544fb0d6fdc032f671775c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 694beca5172f50052e0e58ce1087048ee149c6d2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983990"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383136"
 ---
 # <a name="how-to-view-instance-information-for-an-orchestration"></a>如何查看业务流程的实例信息
-本主题介绍如何使用 BizTalk Server 管理控制台来查看业务流程的实例信息。 服务实例是 BizTalk Server 正在处理或已经序列化到 MessageBox 中以便进一步处理或跟踪的业务流程实例。  
+本主题介绍如何使用 BizTalk Server 管理控制台中查看业务流程的实例信息。 服务实例是 BizTalk Server 正在业务流程的实例处理或已经序列化到 MessageBox 中以便进一步处理或跟踪。  
   
-## <a name="prerequisites"></a>必要條件  
- 若要执行本主题中的过程，则必须以 BizTalk Server Administrators 组成员的身份登录。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
+## <a name="prerequisites"></a>先决条件  
+ 若要执行本主题中的过程，必须以 BizTalk Server Administrators 组的成员的身份登录。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
   
-### <a name="to-view-instance-information-for-an-orchestration"></a>查看业务流程的实例信息  
+### <a name="to-view-instance-information-for-an-orchestration"></a>若要查看业务流程的实例信息  
   
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
@@ -36,9 +36,9 @@ ms.locfileid: "36983990"
   
 3. 单击**业务流程**，选择你想要查看实例信息的业务流程单击**视图**，然后选择**实例信息**。  
   
-    此页下半部分的“查询结果”面板将显示该业务流程的所有实例。  
+    查询结果窗格中的页的下半部分中显示业务流程的所有的实例。  
   
-    若要优化为业务流程的查询和视图不同的实例信息，请单击下面的方框**值**的搜索字段中，选择要查看，然后单击实例类型**运行查询**。 有关创建查询的详细信息，请参阅“另请参见”下面的有关搜索的主题。  
+    若要优化为业务流程的查询和视图不同的实例信息，请单击下面的方框**值**的搜索字段中，选择要查看，然后单击实例类型**运行查询**。 有关创建查询的详细信息，请参阅另请参阅下面的有关搜索的主题。  
   
 ## <a name="see-also"></a>请参阅  
  [管理业务流程](../core/managing-orchestrations.md)   

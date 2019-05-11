@@ -1,5 +1,5 @@
 ---
-title: MX 消息示例 |Microsoft 文档
+title: MX 消息示例 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7f5280f8ec2ce16344562907a95c1b0afa8c6627
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 26d86af52d8f93986d7028977166df8cfb28045c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209141"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377887"
 ---
-# <a name="examples-of-mx-messages"></a>MX 消息的示例
-命令行以生成不同 MX 消息的解决方案 （InfoPath 表单模板）  
+# <a name="examples-of-mx-messages"></a>MX 消息示例
+命令行以生成不同 MX 消息的解决方案 （InfoPath 窗体模板）  
   
- 下面的示例需要的架构"pacs.004.001.01"和"pain.002.001.01"架构都位于 c:\schemas。 这将为"C:\GeneratedForms"文件夹中的 InfoPath 窗体模板生成解决方案。 解决方案的文件夹名称将与为其 InfoPath 窗体需要为其生成的消息的名称相同。 这些示例假定已置于"C:\Program Files\Microsoft BizTalk 快捷键的 SWIFT\SDK\FormGeneratorUtility"文件夹上的实用工具。 将你选择用于的实用程序中的位置下面的命令。  
+ 以下示例要求在架构"pacs.004.001.01"和"pain.002.001.01"架构都在 c:\schemas。 这将为"C:\GeneratedForms"文件夹中的 InfoPath 窗体模板生成解决方案。 该解决方案的文件夹名称会与 InfoPath 窗体需要生成的消息的名称相同。 这些示例假定该实用程序已被放入"C:\Program Files\Microsoft BizTalk Accelerator 的 SWIFT\SDK\FormGeneratorUtility"文件夹。 中的实用程序为所选的位置替换为下面的命令。  
   
 -   **若要生成用于 pacs.004.001.01 架构的窗体：**  
   

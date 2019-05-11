@@ -17,15 +17,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 70eff140259cd7cf815e8e05125f9ade78bf5493
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d9bcebbb138d12514bbd6c6dbac1874e81f438e1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982358"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382469"
 ---
 # <a name="importing-schemas-into-biztalk-server-projects"></a>架构导入到 BizTalk Server 项目
-以下信息介绍如何将架构导入到 BizTalk Server 项目中。  
+以下信息介绍如何将架构导入 BizTalk Server 项目。  
   
 ## <a name="importing-schemas"></a>导入架构  
   
@@ -53,7 +53,7 @@ ms.locfileid: "36982358"
   
 9. 在解决方案资源管理器中双击**GetList.odx**来检查该业务流程。  
   
-## <a name="orchestration-types---port-types"></a>业务流程类型 - 端口类型  
+## <a name="orchestration-types---port-types"></a>业务流程类型-端口类型  
   
 -   **PortTypeIn/中/请求：** SSOSchedule.myJ.D。 Edwards OneWorld XEsso_transmitService_3.method  
   
@@ -63,7 +63,7 @@ ms.locfileid: "36982358"
   
 -   **PortTypeInOut/InOut/响应：** SSOSchedule.myJ.D。 Edwards OneWorld XE sso_transmitService_3.methodResponse  
   
-## <a name="orchestration-variables---messages"></a>Orchestration 变量 - 消息  
+## <a name="orchestration-variables---messages"></a>Orchestration 变量-消息  
   
 -   **MessageIn:** SSOSchedule.myJ.D。 Edwards OneWorld XEsso_transmitService_3.method  
   

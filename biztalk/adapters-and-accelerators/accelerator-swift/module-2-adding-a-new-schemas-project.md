@@ -1,5 +1,5 @@
 ---
-title: 模块 2： 添加新架构项目 |Microsoft Docs
+title: 模块 2:添加新架构项目 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b1eb2fa92842c6f4e3476d24cdde66319245d177
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 82b546a2465f8ae795305e4c745282078d332b20
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007062"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377167"
 ---
-# <a name="module-2-adding-a-new-schemas-project"></a>模块 2： 添加新架构项目
+# <a name="module-2-adding-a-new-schemas-project"></a>模块 2:添加新架构项目
 当你安装 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]更新 Microsoft[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]包括基本的 BizTalk 项目。 此项目模板可以对架构设计器、 BizTalk 映射器、 业务流程设计器、 管道设计器和 BizTalk 浏览器等工具和其他工具创建的 BizTalk 解决方案所需的访问。  
   
  本部分包含：  

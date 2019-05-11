@@ -1,5 +1,5 @@
 ---
-title: “字段元素”节点与字段属性节点 |Microsoft Docs
+title: 字段元素节点与字段属性节点 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e6c56aae4e681632ef056a7ed3b85aa5c4f88f89
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 50bb60f66b6de00510e973357bec43d0af506f4e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974158"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345586"
 ---
-# <a name="field-element-nodes-vs-field-attribute-nodes"></a>“字段元素”节点与“字段属性”节点
+# <a name="field-element-nodes-vs-field-attribute-nodes"></a>字段元素节点与字段属性节点
 
 ## <a name="overview"></a>概述
 使用平面文件架构的控制平面文件拆装器如何入站平面文件实例消息转换为其等效的 XML 格式，并将它们来控制出站平面文件组装器使用 XML 消息转换为其等效项平面文件实例消息。 当构造此类架构，您将使用两个**Field 元素**节点或**字段属性**节点特别是定位在控制架构是否在平面文件实例中的特定字段消息相对应的 XML 元素或等效的 XML 格式的消息中的 XML 属性。  

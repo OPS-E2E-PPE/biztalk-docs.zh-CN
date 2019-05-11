@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4fe33576bb23ff40fd80f85281c38a6f5a0ec930
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 582fde7ad899360aaa74a5fee1ece46ef068e56b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974166"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377963"
 ---
 # <a name="enabling-validation-of-bank-identifier-codes"></a>启用银行标识代码验证
 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]架构确保银行标识代码 (BICs) SWIFT 交换文档中指定符合 SWIFT 定义 BIC 数据格式。 A4SWIFT 还支持验证与数据库中的客户指定 BIC 列表 BICs。  
@@ -37,7 +37,7 @@ Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-curre
   为了提高性能，您不应部署 BIC 验证策略如果 BIC 验证不需要。  
 
 > [!NOTE]
->  您可以发布和部署 BIC 验证策略，仅当已发布 A4SWIFT_Codelist 和 A4SWIFT_Functions 词汇。 通过运行 swift 架构程序集上的 BRE 部署实用工具来发布这些词汇。 有关详细信息，请参阅[第 1 课： 部署相关的业务规则](../../adapters-and-accelerators/accelerator-swift/lesson-1-deploying-the-related-business-rules.md)。  
+>  您可以发布和部署 BIC 验证策略，仅当已发布 A4SWIFT_Codelist 和 A4SWIFT_Functions 词汇。 通过运行 swift 架构程序集上的 BRE 部署实用工具来发布这些词汇。 有关详细信息，请参阅[第 1 课：部署相关的业务规则](../../adapters-and-accelerators/accelerator-swift/lesson-1-deploying-the-related-business-rules.md)。  
 
 ### <a name="to-customize-the-bic-master-policy"></a>若要自定义 BIC Master 策略  
 

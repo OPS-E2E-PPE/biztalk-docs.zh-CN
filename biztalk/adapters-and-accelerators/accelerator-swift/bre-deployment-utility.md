@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5b2449795a52bd26bed0326a3aa2fcf57f8bb552
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d59a06b55e4d30e9e87a68adbf830dad38578f3f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010150"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378971"
 ---
 # <a name="bre-deployment-utility"></a>BRE 部署实用工具
 您可以使用 BRE 部署实用工具来发布和部署业务规则引擎 (BRE) 的词汇和策略所需的 SWIFT 架构。 启用消息类型的 BRE 验证需要发布和部署这些词汇和策略。  
@@ -58,7 +58,7 @@ ms.locfileid: "37010150"
 4.  单击**部署**。  
   
     > [!NOTE]
-    >  根据使用该程序集部署的架构，BRE 部署实用工具都要通过确定相关的规则并将其发布与 BRE 一起使用的过程。 BRE 部署实用工具完成后，显示以下消息：**完成部署后**。 使用业务规则编辑器来验证成功的部署。  
+    >  根据使用该程序集部署的架构，BRE 部署实用工具都要通过确定相关的规则并将其发布与 BRE 一起使用的过程。 完成后，BRE 部署实用工具将显示以下消息：**完成部署后**。 使用业务规则编辑器来验证成功的部署。  
   
     > [!NOTE]
     >  若要取消部署策略和词汇，请单击**Undeploy**。 取消部署过程取消 A4SWIFT_CodeLists.xml 和 A4SWIFT_Functions.xml 词汇，可能由其他已部署的策略未部署。  

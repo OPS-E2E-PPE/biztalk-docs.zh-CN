@@ -1,5 +1,5 @@
 ---
-title: 错误-节点不适于可分辨字段升级 |Microsoft 文档
+title: 错误-节点不适于可分辨字段升级 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d818ca11f1d6a151121cecc5d0bdd083e3cbdc9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 27fd5a4fab1af35775bedda6231fb5278379474c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240381"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65347341"
 ---
 # <a name="error---node-not-valid-for-distinguished-field-promotion"></a>错误-节点不适于可分辨的字段升级
 **错误代码**  
@@ -28,8 +28,8 @@ ms.locfileid: "22240381"
   
  **说明**  
   
- 所指示的节点不能用作可分辨字段升级，因为它不能包含必需的文本内容。 仅**Field 元素**节点，**字段特性**节点，或**记录**具有混合或简单内容的节点可以提升作为可分辨的字段。  
+ 不能作为可分辨字段升级所指示的节点，因为它不能包含必需的文本内容。 仅**Field 元素**节点， **Field 特性**节点，或**记录**可以作为可分辨字段升级具有混合内容或简单内容的节点。  
   
  **用户执行任何操作**  
   
- 使用**可分辨字段**选项卡**升级属性**对话框删除不允许的属性提升。
+ 使用**可分辨字段**选项卡**升级属性**对话框删除禁止使用的属性升级。

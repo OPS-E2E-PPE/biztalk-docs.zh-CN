@@ -15,19 +15,19 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b6fb901186dddf69a94fca4467b543f047c27719
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6ac920751fc8f653433525150be5684f93d2eb2b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013806"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65337710"
 ---
 # <a name="how-to-extend-the-schema-generator-wizard"></a>如何扩展架构生成器向导
 如何扩展现有架构生成器向导以及如何为架构生成创建一个新的向导。  
   
 ## <a name="extend-the-existing-schema-wizard"></a>扩展现有架构向导  
   
-1. 实现 ISchemaGenerator 接口，以创建可以集成到现有架构生成器向导中的新架构生成器模块。  
+1. 实现 ISchemaGenerator 接口，以创建新的架构生成器模块，您可以将它们集成到现有架构生成器向导。  
   
    ```  
    public interface ISchemaGenerator  
@@ -46,17 +46,17 @@ ms.locfileid: "37013806"
    }  
    ```  
   
-2. 将生成的程序集放入以下 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 安装文件夹中：  
+2. 生成的程序集放入以下 microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装文件夹：  
   
     [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\Developer Tools\Schema 编辑器扩展  
   
-    下次运行架构生成器向导时，此向导将自动加载新的架构生成器模块。  
+    在下次运行架构生成器向导，它会自动选取新的架构生成器模块。  
   
-   可使用以下过程创建新架构向导。  
+   使用以下过程创建新架构向导。  
   
    **在 SDK 中的位置**  
   
-   [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\SDK\Utilities\Schema generator  
+   [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]\SDK\Utilities\Schema Generator  
   
 ### <a name="create-a-new-schema-wizard"></a>创建新架构向导  
   

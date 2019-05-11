@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 57b56495e66d835451eb8641f3fd9407462593c9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2fff8f5aeebba2f9734f29ae929d23845431da7e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997454"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378829"
 ---
 # <a name="configure-biztalk-accelerator-for-swift"></a>配置 BizTalk Accelerator for SWIFT
 
@@ -42,7 +42,7 @@ ms.locfileid: "36997454"
 7. 在中**摘要**，验证配置设置，然后单击**配置**。 
 
     > [!TIP] 
-    > 如有需要，可以将配置设置另存为 XML 文件。
+    > 如果需要，可以为 XML 文件，保存的配置设置。
 
 8. 选择**完成**配置完成时。
 
@@ -68,7 +68,7 @@ ms.locfileid: "36997454"
 **步骤**:
 
 1. 打开**Services**。 服务也会出现在**服务器管理器**，然后**工具**。 
-2. 在列表中，找到**BizTalk 服务 BizTalk 组： BizTalkServerApplication**。 
+2. 在列表中，找到**BizTalk 服务 BizTalk 组：BizTalkServerApplication**. 
 3. 双击选择以打开其属性。
 4. 在中**Log On**选项卡中，记下的用户帐户列为**此帐户**。
 5. 打开**本地用户和组**（在计算机管理），然后找到**A4SWIFT 用户**组。 将用户帐户添加到此组。

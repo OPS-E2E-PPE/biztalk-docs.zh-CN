@@ -1,5 +1,5 @@
 ---
-title: CorrelationID |Microsoft 文档
+title: CorrelationID | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1192de4a49c300220ce0b297bbc1ee02ce64c6dc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 374ae165d48e1d91bc60d83a285df3b0f3594357
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22237765"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65354427"
 ---
 # <a name="correlationid"></a>CorrelationID
-`CorrelationID` 元素用于为消息指定一个相关 ID。  
+`CorrelationID`元素用于指定一条消息的相关 ID。  
   
 ## <a name="format"></a>格式  
- `CorrelationID` 元素由一个 `Expression` 元素组成，后者使用一个或多个 `Operation` 元素指定要用作相关 ID 的字符串。  
+ `CorrelationID`元素组成`Expression`元素使用一个或多个`Operation`元素，以指定的字符串以用作相关 id。  
   
 ```  
 <ic:CorrelationID>  
@@ -33,15 +33,15 @@ ms.locfileid: "22237765"
 </ic:CorrelationID>  
 ```  
   
-## <a name="remarks"></a>注释  
- correlation ID 表达式中不允许使用以下常见运算：  
+## <a name="remarks"></a>备注  
+ Correlation ID 表达式中不允许以下常见运算：  
   
 -   And  
   
 -   等于  
   
 ## <a name="example"></a>示例  
- 以下 Workflow Foundation (WF) 侦听器示例配置块使用“OrderNum”建立一个相关 ID。 使用 WF 和常用操作，可以建立复杂的表达式，为工作流构造适当的相关 ID。  
+ 以下 Workflow Foundation (WF) 侦听器示例配置块使用"OrderNum"建立一个相关 id。 使用 WF 和常用操作，可以构建复杂的表达式构造工作流的适当的相关 ID。  
   
 ```  
 <ic:CorrelationID>  
@@ -53,7 +53,7 @@ ms.locfileid: "22237765"
 </ic:CorrelationID>  
 ```  
   
- 对于 Windows Communication Foundation (WCF) 应用程序，可以使用特定于 WCF 的操作及常用操作构造相关 ID。 下面的示例使用**XPath**操作和 XPath 从消息以用作相关 ID 检索信用卡卡号：  
+ 对于 Windows Communication Foundation (WCF) 应用程序，您可以使用特定于 WCF 的和常用操作构造相关 id。 下面的示例使用**XPath**操作和 XPath 从将其用作相关 ID 的消息中检索信用卡卡号：  
   
 ```  
 <ic:CorrelationID>  
@@ -65,5 +65,5 @@ ms.locfileid: "22237765"
 </ic:CorrelationID>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [拦截器 OnEvent 元素](../core/interceptor-onevent-element.md)
+## <a name="see-also"></a>请参阅  
+ [侦听器 OnEvent 元素](../core/interceptor-onevent-element.md)

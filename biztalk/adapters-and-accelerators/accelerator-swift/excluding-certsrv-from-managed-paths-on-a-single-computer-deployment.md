@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1651131369ef4a8e0c4683b82f5b97163e33382f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 61ecb2f72dc3b9f1eb6e9898398b976f788a1421
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987838"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377917"
 ---
 # <a name="excluding-certsrv-from-managed-paths-on-a-single-computer-deployment"></a>从单台计算机部署的管理路径中排除证书服务器
 如果您部署了[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]一台计算机上并且也已安装证书服务器在同一台计算机，你需要排除证书服务器 (CertSrv) 从 Microsoft SharePoint Server 中心管理中的托管路径。  

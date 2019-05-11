@@ -1,5 +1,5 @@
 ---
-title: 提交通过消息接收位置和 InfoPath 窗体 |Microsoft 文档
+title: 提交消息通过接收位置和 InfoPath 窗体 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,23 +17,23 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4589649be79ce369f0e6756ae7f96615d4a36c0f
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: ebf95acf08084f7382e166efdace182a4464178c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26005118"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377010"
 ---
-# <a name="submitting-messages-through-receive-locations-and-infopath-forms"></a>通过提交消息接收位置和 InfoPath 窗体
-接收位置接收消息提交至[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]应用程序。 你可以定义接收位置作为物理终结点配置为接收使用指定的传输协议的消息。 例如，接收位置可能配置为拖放到特定的文件系统文件夹使用文件传输的接收文件。  
+# <a name="submitting-messages-through-receive-locations-and-infopath-forms"></a>提交消息通过接收位置和 InfoPath 窗体
+接收位置接收消息提交到[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]应用程序。 您可以定义接收位置作为物理终结点配置为使用指定的传输协议接收消息。 例如，接收位置可能配置为接收文件拖放到特定的文件系统文件夹，使用文件传输。  
   
- 你创建的逻辑分组，并管理的接收端口接收位置接收位置。 对于每个接收位置中，你将指定接收管道，在该特定接收位置接收的消息的实际处理 （解码、 反汇编、 验证和等等） 的作用。 A4SWIFT 绑定接收位置接收逻辑分组，并管理的端口接收位置。  
+ 创建接收端口，以逻辑方式分组和管理接收位置的接收位置。 对于每个接收位置指定接收管道，它会在该特定的接收位置接收消息的实际处理 （解码、 拆装、 验证等）。 A4SWIFT 绑定接收位置接收端口的逻辑分组并管理接收位置。  
   
- 若要提交到 A4SWIFT 应用程序接收位置通过 SWIFT 消息，消息必须是拖放到配置的接收位置、 通过使用 SWIFT 反汇编程序接收管道处理、 分析和通过 SWIFT 反汇编程序中，验证和发布到 MessageBox 数据库。 消息发布到 MessageBox 数据库之后，你 A4SWIFT 的应用程序中的其他组件以进行其他处理检索 （使用订阅） 的消息。 例如，可用于发送端口最终路由。  
+ 以将 SWIFT 消息提交到 A4SWIFT 应用程序，通过接收位置，消息必须进行拖放到已配置的接收位置，由接收管道使用 SWIFT 反汇编程序进行处理、 分析并由 SWIFT 反汇编程序、 验证和发布到 MessageBox 数据库。 消息发布到 MessageBox 数据库后，A4SWIFT 应用程序中的其他组件中检索进行其他处理 （使用订阅） 的消息。 例如，可用于发送端口最终路由。  
   
- 有关创建和配置的详细信息接收端口和接收位置，请参阅 BizTalk Server 帮助。  
+ 详细了解创建和配置接收端口和接收位置，请参阅 BizTalk Server 帮助。  
   
- 您还可以提交一条新消息通过[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]窗体中，使用消息修复和新提交功能。 若要执行此操作，你可以打开[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]该消息从 MRSR 网站的文件夹中的窗体。 在中的数据填充[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]窗体、 使用您的证书，其签名，然后提交它。 消息修复和新提交业务流程处理的消息。  
+ 您还可以提交新消息通过[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]窗体中，使用消息修复和新提交功能。 若要执行此操作，打开[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]窗体从 MRSR 网站的文件夹中，该消息。 在中的数据填充[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]窗体，它使用证书，请登录，然后将其提交。 消息修复和新提交业务流程处理消息。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [BizTalk Accelerator for SWIFT 运行时](../../adapters-and-accelerators/accelerator-swift/biztalk-accelerator-for-swift-runtime.md)

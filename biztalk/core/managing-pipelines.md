@@ -13,21 +13,21 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4b15931468b5ba3bf43f227563dd270aabbfa29b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 31e8705a2b7a04689ee4eefa6e3d75d2f063639a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995254"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380199"
 ---
 # <a name="managing-pipelines"></a>管理管道
 
 ## <a name="overview"></a>概述
-本部分说明如何使用 BizTalk Server 管理控制台来管理 BizTalk 组中的管道。 您既可为事件和消息配置跟踪，也可为特定发送端口或接收位置配置管道属性。  
+本部分说明了使用 BizTalk Server 管理控制台来管理 BizTalk 组中的管道。 可以配置跟踪的事件和消息，以及配置管道属性为特定的发送端口或接收位置。  
   
- 管道对传入消息和传出消息执行操作，例如将其从本机格式转换为 XML 格式、加密或解密数据、执行属性升级等等。  
+ 管道对传入和传出消息，例如将它们从本机格式转换为 XML，加密或解密数据执行属性升级执行操作，依此类推。  
   
- 不能向应用程序单独添加管道，而应按照以下方式向应用程序添加管道：  
+ 不能单独; 添加到应用程序的管道管道添加到应用程序，如下所示：  
   
 - 当添加包含到应用程序中，管道的 BizTalk 程序集，如中所述[如何将 BizTalk 程序集添加到应用程序](../core/how-to-add-a-biztalk-assembly-to-an-application.md)。  
   

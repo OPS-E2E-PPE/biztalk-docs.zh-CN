@@ -1,5 +1,5 @@
 ---
-title: 发出单函数请求 |Microsoft 文档
+title: 发出单函数请求 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,18 +16,18 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a12a91c3f155b3e2e2085edaf15fdbf8f1757f46
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bfa7b9c72b04a70d2a8a18b8a47c2e2099839e3b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262029"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380698"
 ---
 # <a name="issuing-a-single-function-request"></a>发出单函数请求
-下面的 GetEffectiveAddress 示例是一个对 JD Edwards EnterpriseOne 的单函数调用，该请求的结果是一个标准的响应文档。 在单函数请求中，XML 对象中仅指定了一个 callMethod。  
+下面的 GetEffectiveAddress 示例，是对 JD Edwards EnterpriseOne 的单函数调用和此请求的结果是标准的响应文档。 在单函数请求中，指定 XML 对象中的只有一个 callMethod。  
   
-## <a name="example-executing-a-business-function-with-a-single-function-call"></a>示例： 执行单函数调用的业务函数  
- 下面是一个示例 GetEffectiveAddress 请求文档。 该文档是 BizTalk Server 将其作为一个 XML 实例从 XSD 生成的，该 XSD 是在您添加所生成项时创建的。 此示例请求文档是使用发送端口配置中的 ATTRIBUTE_STYLE 架构类型生成的。  
+## <a name="example-executing-a-business-function-with-a-single-function-call"></a>例如：执行具有单函数调用的业务函数  
+ 下面是一个示例 GetEffectiveAddress 请求文档。 在添加时创建的 XSD 中的 XML 实例生成的项，它是由 BizTalk Server 生成。 此示例请求文档的发送端口配置中使用的 attribute_style 架构生成。  
   
  **请求的 XML 示例**  
   
@@ -41,7 +41,7 @@ ms.locfileid: "22262029"
   
 ```  
   
- 下面是 J.D.  Edwards EnterpriseOne 作为对 GetEffectiveAddress 请求的回复而返回的一个示例 GetEffectiveAddress 响应。  
+ 下面是一个示例 GetEffectiveAddress 响应返回的 j.d. Edwards EnterpriseOne 作为对 GetEffectiveAddress 请求的回复。  
   
  **响应 XML 示例**  
   
@@ -170,5 +170,5 @@ ms.locfileid: "22262029"
 </N0100041:AddressBookMasterMBFResponse>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [附录 a： 示例文件](../core/appendix-a-sample-files.md)
+## <a name="see-also"></a>请参阅  
+ [附录 a:示例文件](../core/appendix-a-sample-files.md)

@@ -15,15 +15,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 27880dc3f603f39c9cb9f71207edc1926df4df7f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 17f7758fce78c3cdd09850554d134057a717fe36
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002822"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380647"
 ---
 # <a name="limitations-when-querying-and-retrieving-lists"></a>查询和检索列表时的限制
-JD Edwards OneWorld 通信体系结构是一种单消息、 单回复体系结构。 不能返回数组或消息的列表。 基础代码是 c + +，其中具有指向一个结构的指针调用、 在结构中，进行更改，然后退出。  
+JD Edwards OneWorld 通信体系结构是一种单消息、 单回复体系结构。 不能返回数组或消息的列表。 基础代码是C++，它调用具有指向一个结构的指针在结构中，进行更改，然后退出。  
   
 ## <a name="querying-and-retrieving-lists"></a>查询和检索列出  
  您不能查询和检索的记录使用用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器，由于与 JD Edwards OneWorld 业务函数体系结构的限制的搜索条件的列表。  
@@ -42,7 +42,7 @@ JD Edwards OneWorld 通信体系结构是一种单消息、 单回复体系结�
 - 在 JD Edwards OneWorld 端，编写将结果集返回可以连续调用，以及记录号将游标定位在指定的 ID （如文件名称或作业数） 的临时存储文件。 基于传入的记录数的列表中的定位任何后续调用。  
   
   > [!NOTE]
-  >  通过用于 JD Edwards OneWorld 的 BizTalk 适配器的调用可以进行负载平衡;但是，它们最终由基于凭据和被调用的业务函数的单个应用程序服务器提供。 因此，如果调用创建的服务器上的临时文件，其他调用会通过在同一台服务器提供服务。 有关详细信息，请参阅 JD Edwards OneWorld CNC Guides（《JD Edwards OneWorld CNC 指南》）中的 Object Configuration Mapping（“对象配置映射”）。  
+  >  通过用于 JD Edwards OneWorld 的 BizTalk 适配器的调用可以进行负载平衡;但是，它们最终由基于凭据和被调用的业务函数的单个应用程序服务器提供。 因此，如果调用创建的服务器上的临时文件，其他调用会通过在同一台服务器提供服务。 有关详细信息，请参阅 JD Edwards OneWorld CNC 指南中的对象配置映射。  
   
 - 位置信息 （如主键值） 可以返回在第二个和后续调用中，并可以基于其他参数作为密钥重新发出查询。 用于 JD Edwards OneWorld 的 BizTalk 适配器浏览代码存储库中使用此方法。  
   
@@ -53,7 +53,7 @@ JD Edwards OneWorld 通信体系结构是一种单消息、 单回复体系结�
   
 - JD Edwards OneWorld 中的所有主记录的大多数都具有查找或备用键的概念。 可以使用此密钥存储在调用系统中的密钥信息。 在 JD Edwards OneWorld 端业务功能可以执行查找。 当传递到业务函数，以创建客户记录的参数时，长的密钥值设置。  
   
-  有关这些概念的详细信息，请参阅 JD Edwards OneWorld 帮助系统中的“Interoperability”（互操作性）主题。  
+  有关这些概念的详细信息，请参阅 JD Edwards OneWorld 帮助系统中的互操作性主题。  
   
 ## <a name="see-also"></a>请参阅  
  [规划和体系结构](../core/planning-and-architecture17.md)

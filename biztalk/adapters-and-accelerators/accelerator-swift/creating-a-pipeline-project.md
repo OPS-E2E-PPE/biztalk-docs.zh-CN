@@ -1,5 +1,5 @@
 ---
-title: 创建管道项目 |Microsoft 文档
+title: 创建管道项目 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,27 +12,27 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7eead267abbb990933e6fd3150d099d07b007526
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1f2e4ee625bd21dd16d58e5e75121de3a5c26308
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22209709"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378454"
 ---
 # <a name="creating-a-pipeline-project"></a>创建管道项目
 若要创建管道项目：  
   
-1.  在 Visual Studio 中，创建一个新的 BizTalk 项目。  
+1.  在 Visual Studio 中，创建新的 BizTalk 项目。  
   
-2.  将接收管道项和发送管道项添加到项目中。  
+2.  将接收管道项和发送管道项添加到项目。  
   
 3.  打开 ReceivePipeline.btp 文件。  
   
 4.  在管道设计器中，打开工具箱。  
   
-5.  右键单击**工具箱**图面，，然后选择**选择项**。  
+5.  右键单击**工具箱**图面，然后选择**选择项**。  
   
-6.  在选择工具箱项窗口中，单击**管道组件**选项卡上，然后选择以下的管道组件：  
+6.  在选择工具箱项窗口中，单击**管道组件**卡，并选择以下管道组件：  
   
     -   SwiftMXDisassembler  
   
@@ -42,28 +42,28 @@ ms.locfileid: "22209709"
   
     -   Swift MXRR 解码器组件  
   
-    -   Swift MXRR 相关当事方冲突解决程序组件  
+    -   Swift MXRR 相关参与方解析器组件  
   
-7.  拖动**SwiftMXDisassembler**组件到反汇编程序占位符接收管道中。  
+7.  拖动**SwiftMXDisassembler**组件在接收管道中拆装器占位符。  
   
-8.  在 SwiftMXDisassembler 组件属性中，设置**BRE 验证**具体取决于是否想要对传入消息启用业务规则验证属性设置为 TRUE 或 FALSE。 设置**TransportHeaderRequired**具体取决于是否想要提供的消息中传输标头属性设置为 TRUE 或 FALSE。  
+8.  在 SwiftMXDisassembler 组件属性中，设置**BRE 验证**属性设置为 TRUE 或 FALSE 具体取决于是否想要启用对传入的消息的业务规则验证。 设置**TransportHeaderRequired**属性设置为 TRUE 或 FALSE 具体取决于是否想要提供在消息的传输标头。  
   
-9. 将 Swift MXRR 解码器和 Swift MXRR 相关方冲突解决程序组件拖到解码器和方冲突解决程序占位符内接收管道。  
+9. 将 Swift MXRR 解码器和 Swift MXRR 相关参与方解析程序组件拖入解码器，并在接收管道的参与方解析程序占位符。  
   
-10. 选择**MXRR 相关方冲突解决程序**管道中。 在管道组件属性窗口中，设置**启用 BAM 日志记录对帐**属性设置为 TRUE 或 FALSE，具体取决于是否想要启用 SWIFT 响应的对帐。  
+10. 选择**MXRR 相关参与方解析程序**管道中。 在管道组件属性窗口中设置**启用 BAM 日志记录对帐**属性设置为 TRUE 或 FALSE，具体取决于是否想要启用的 SWIFT 响应对帐。  
   
 11. 打开**SendPipeline.btp**文件，在管道设计器中，打开**工具箱**。  
   
-12. 在工具箱中，拖动**SwiftMXAssembler**到汇编程序占位符内发送管道组件。  
+12. 在工具箱中拖动**SwiftMXAssembler**组件到在发送管道的组装器占位符。  
   
-13. 拖动**Swift MXRR 编码器**组件发送管道的编码器占位符。  
+13. 拖动**Swift MXRR 编码器**组件到发送管道的编码器占位符。  
   
-14. 选择**MXRR 编码器方冲突解决程序**在管线中，然后在管道组件属性窗口中，设置以下属性。  
+14. 选择**MXRR 编码器参与方解析程序**在管道中，然后在管道组件属性窗口中，设置以下属性。  
   
-15. 启用**BAM 日志记录对帐**TRUE 或 FALSE，具体取决于是否想要启用 SWIFT 响应的对帐。  
+15. 启用**BAM 日志记录对帐**为 TRUE 或 FALSE 具体取决于是否想要启用的 SWIFT 响应对帐。  
   
-16. 设置**所需的 LAU** TRUE 或 FALSE，具体取决于是否必须启用的消息在 SWIFT 联盟访问 (SAA) 的签名。  
+16. 设置**所需的 LAU**为 TRUE 或 FALSE 具体取决于是否必须启用消息在 SWIFT 联盟访问 (SAA) 的签名。  
   
-17. 如果所需的 LAU 属性已设置为 TRUE，然后提供 LAU 密钥第一个部分和 LAU 密钥第二个部分 （值必须是相同的配置 SAA 时提供。）  
+17. 如果已启动所需属性已设置为 TRUE，然后提供 LAU 密钥第一部分和启动密钥第二部分 （值必须是相同的配置 SAA 时提供的。）  
   
-18. 生成然后部署项目。
+18. 生成，然后部署该项目。

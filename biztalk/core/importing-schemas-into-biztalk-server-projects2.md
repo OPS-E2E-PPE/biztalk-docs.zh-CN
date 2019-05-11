@@ -12,23 +12,23 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1ffc55fcb2bf5dd563dcc0fc9e2aed93b3a0c624
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: be4fd488c762d69a85278af12ef21b25967ff3da
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009566"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382475"
 ---
 # <a name="importing-schemas-into-biztalk-server-projects"></a>架构导入到 BizTalk Server 项目
-本部分讨论浏览 JD Edwards EnterpriseOne 服务器和将架构导入 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 项目中。  
+本部分讨论浏览 JD Edwards EnterpriseOne 服务器和导入到架构[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]项目。  
   
 > [!NOTE]
->  您必须确保已设置 arglist。 在业务流程中生成架构之前，您必须更新 jdearglist.txt。 有关详细信息，请参阅[处理字符串值](../core/handling-string-values2.md)。  
+>  您必须确保已设置 arglist。 在业务流程中生成架构之前，必须更新 jdearglist.txt。 有关详细信息，请参阅[处理字符串值](../core/handling-string-values2.md)。  
   
 > [!NOTE]
->  每次更改 jdearglist 时，都必须为该业务对象重新生成架构。  
+>  每次更改 jdearglist，您必须重新生成该业务对象的架构。  
   
- 在创建 JD Edwards EnterpriseOne 端口后，可以通过从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 项目中启动 Microsoft 适配器向导来浏览 JD Edwards EnterpriseOne。  
+ 创建 JD Edwards EnterpriseOne 端口后，可以浏览 JD Edwards EnterpriseOne 通过启动 Microsoft 适配器向导从[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]项目。  
   
 ## <a name="import-schemas-into-visual-studio"></a>架构导入到 Visual Studio
   
@@ -44,29 +44,29 @@ ms.locfileid: "37009566"
   
 6. 在中**数据库**框中，选择一个数据库。  
   
-    默认数据库与 SQL 服务器相同。  
+    默认数据库是作为 SQL server 相同。  
   
 7. 在中**端口**框中，选择一个 SQL server，，然后单击**下一步**。  
   
-    浏览器中将显示 JD Edwards EnterpriseOne 系统。  
+    JD Edwards EnterpriseOne 系统会显示在浏览器中。  
   
 8. 继续执行下一个过程。  
   
-   添加适配器向导将显示所有已定义系统的树视图。 JD Edwards EnterpriseOne 具有许多模块。 这些模块根据其名称的前三个字符组合在一起。  
+   添加适配器向导会显示所有已定义的系统的树。 JD Edwards EnterpriseOne 具有许多模块。 根据其名称的前三个字符，将模块组合在一起。  
   
-- 层次结构的第一层是该模块名称所有三个字符前缀的列表。  
+- 在层次结构的第一个级别是该模块名称所有三个字符前缀的列表。  
   
 - 第二层列出所有共享相同三字符前缀的模块。  
   
-- 最后一层列出属于某个模块的业务功能。 当您展开服务图标时，便可以查看其操作。  
+- 最后一层列出属于某个模块的业务功能。 当您展开服务图标时，可以查看其操作。  
   
-  展开某项操作后，将显示输入/输出参数。 您可以展开输入/输出参数以查看该参数的数据类型。  
-  
-> [!NOTE]
->  如果服务器对象定义发生更改，您必须重新生成架构以刷新其包含的数据。  
+  展开某项操作显示的输入/输出参数。 您可以展开要查看的自变量的数据类型的输入/输出参数。  
   
 > [!NOTE]
->  如果您在生成架构后更改了 jdearglist.txt，则必须重新生成架构以刷新其包含的数据。 有关 jdearglist.txt 的详细信息，请参阅[处理字符串值](../core/handling-string-values2.md)。  
+>  如果服务器对象定义发生更改，必须重新生成架构以刷新其包含的数据。  
+  
+> [!NOTE]
+>  如果生成架构后更改了 jdearglist.txt，必须重新生成架构以刷新其包含的数据。 有关 jdearglist.txt 的详细信息，请参阅[处理字符串值](../core/handling-string-values2.md)。  
   
 ## <a name="select-the-schemas"></a>选择架构  
   
@@ -74,10 +74,10 @@ ms.locfileid: "37009566"
   
 2. 选择你想要导入，然后单击项旁边的复选框**确定**。  
   
-3. 为选定 JD Edwards EnterpriseOne 项目生成的架构将会导入 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 项目中。  
+3. 为选定的 JD Edwards EnterpriseOne 项目将导入到生成的架构在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]项目。  
   
 > [!NOTE]
->  使用 AddressBook (N0100041) 时的字段名称是**cActionCode**。 此操作是 XML 文件自身的一部分。 这些代码为：  
+>  使用 AddressBook (N0100041) 时的字段名称是**cActionCode**。 操作为 XML 文件本身的一部分。 这些代码为：  
   
 -   A 代表添加  
   

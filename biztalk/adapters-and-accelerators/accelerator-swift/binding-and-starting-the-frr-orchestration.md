@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b01386cedbd25148e5ea0ce2ac44fb56e9fe3d03
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f1189b7db68cc0894725a98887fc82d30dde5a33
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987438"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378981"
 ---
 # <a name="binding-and-starting-the-frr-orchestration"></a>绑定和启动 FRR 业务流程
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] 包括 FRR 业务流程，作为部署的程序集 (Microsoft。Solutions.FinancialServices.SWIFT.FrrOrchestration)。 您需要启动此业务流程。  

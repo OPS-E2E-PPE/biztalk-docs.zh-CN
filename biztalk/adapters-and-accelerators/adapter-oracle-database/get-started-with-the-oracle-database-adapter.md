@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: daead7b52c17fe5a045d6681a7aa957aaa23133c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 54d80b4e0f345a81d2b34215dec27085bad665dc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966854"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376535"
 ---
 # <a name="get-started-with-the-oracle-database-adapter"></a>开始使用 Oracle 数据库适配器
 本部分中的用户不熟悉 Microsoft 提供的适配器、 先决条件和主题概述[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]。 它讨论的功能[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]和可以使用该适配器在 Oracle 数据库执行不同操作。  

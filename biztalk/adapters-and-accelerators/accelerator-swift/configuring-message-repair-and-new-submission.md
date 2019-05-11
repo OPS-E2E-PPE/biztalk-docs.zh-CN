@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0544adb9fc2ffa60bfc3b69ebee1937e5eb7a18a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7280c541a29edc8a86f37732f5cc026b4469496a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995790"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378540"
 ---
 # <a name="configuring-message-repair-and-new-submission"></a>配置消息修复和新提交
 必须执行以下各节中，若要配置 Microsoft 消息修复和新提交功能中的步骤[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]下, 图中所示。  

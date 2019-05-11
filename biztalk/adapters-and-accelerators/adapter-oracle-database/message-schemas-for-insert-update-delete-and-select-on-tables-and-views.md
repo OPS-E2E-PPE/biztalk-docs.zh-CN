@@ -19,15 +19,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f7f815f88144c2cb3659614c517fdc224c601e27
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cd115d1ae12b1bed8921223df6ee64fcd4122c0a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989190"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376455"
 ---
 # <a name="message-schemas-for-the-basic-insert-update-delete-and-select-operations-on-tables-and-views"></a>消息架构进行基本插入、 更新、 删除和选择表和视图的操作
-[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]图面基本 Insert、 Update、 Delete 和 Select 操作为每个表并查看 Oracle 数据库中。 这些操作执行适当的 SQL 语句的 WHERE 子句的限定。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]这些操作中使用强类型的记录和记录集。  
+[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]图面基本 Insert、 Update、 Delete 和 Select 操作为每个表并查看 Oracle 数据库中。 这些操作执行的适当的 SQL 语句，由 WHERE 子句限定。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]这些操作中使用强类型的记录和记录集。  
 
 ## <a name="message-structure-for-basic-table-operations"></a>基本的表操作的消息结构  
  下表显示了通过公开的基本表操作的 XML 消息结构[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]对 Oracle 数据库表。 操作的目标表中的消息操作指定和也会出现在目标命名空间。  
@@ -73,7 +73,7 @@ SQL 适配器执行： `INSERT INTO TABLE_NAME (FIELD1_NAME, FIELD2_NAME, …)VA
 
 SQL 适配器执行： `INSERT INTO TABLE_NAME (COLUMN_list) SELECT_query;`
 
-### <a name="insert-response"></a>将响应插入
+### <a name="insert-response"></a>将响应
 InsertResult 元素中返回插入的行数。
 
 #### <a name="xml-message"></a>XML 消息  
@@ -85,7 +85,7 @@ InsertResult 元素中返回插入的行数。
 ```
 
 ### <a name="select"></a>选择
-使用 WHERE 子句筛选器元素中指定的目标表执行 SELECT 查询。 结果集包含 COLUMN_NAMES 元素中指定的列名称的逗号分隔的列表中的列。
+SELECT 查询执行使用 WHERE 子句筛选器元素中指定的目标表中。 结果集包含 COLUMN_NAMES 元素中指定的列名称的逗号分隔的列表中的列。
 
 #### <a name="xml-message"></a>XML 消息  
 ```
@@ -98,7 +98,7 @@ InsertResult 元素中返回插入的行数。
 SQL 适配器执行： `SELECT COLUMN_list FROM TABLE_NAME WHERE WHERE_clause;`
 
 ### <a name="select-response"></a>选择响应
-SELECT 查询生成的结果集。
+由 SELECT 查询生成的结果集。
 
 #### <a name="xml-message"></a>XML 消息  
 ```
@@ -163,8 +163,8 @@ SQL 适配器执行： `DELETE FROM [TABLE_NAME] WHERE WHERE_clause;`
 
   | 占位符值| Description |
   | --- | --- |
-  | [版本] | 消息版本字符串;例如， `http://Microsoft.LobServices.OracleDB/2007/03`|
-  | [架构] | Oracle 项目; 的集合例如， `SCOTT`|
+  | [VERSION] | 消息版本字符串;例如， `http://Microsoft.LobServices.OracleDB/2007/03`|
+  | [SCHEMA] | Oracle 项目; 的集合例如， `SCOTT`|
   | [TABLE_NAME] | 名称的表;例如， `EMP`|
   | [FIELD1_NAME] | 表字段名称;例如， `EMPNAME`|
   | [COLUMN_list] | 以逗号分隔的列;例如， `NAME`|
@@ -178,16 +178,16 @@ SQL 适配器执行： `DELETE FROM [TABLE_NAME] WHERE WHERE_clause;`
  下表显示了使用的消息操作[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]对表的基本表操作。 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]使用的消息操作中指定的表名称来确定该操作的目标表。  
 
 
-|    运算    |                    消息操作                     |                                    示例                                    |
+|    操作    |                    消息操作                     |                                    示例                                    |
 |-----------------|-------------------------------------------------------|-------------------------------------------------------------------------------|
-|     Insert      |     [VERSION] / [SCHEMA] /Table/ [TABLE_NAME] / 插入      |     http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Insert      |
-| 将响应插入 | [VERSION] / [SCHEMA] /Table/ [TABLE_NAME] / 插入/响应 | http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Insert/response |
-|     选择      |     [VERSION] / [SCHEMA] /Table/ [TABLE_NAME] / 选择      |     http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Select      |
-| 选择响应 | [VERSION] / [SCHEMA] /Table/ [TABLE_NAME] / 选择/响应 | http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Select/response |
-|     Update      |     [VERSION] / [SCHEMA] /Table/ [TABLE_NAME] / 更新      |     http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Update      |
-| 更新响应 | [VERSION] / [SCHEMA] /Table/ [TABLE_NAME] / 更新/响应 | http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Update/response |
-|     DELETE      |     [VERSION] / [SCHEMA] /Table/ [TABLE_NAME] / 删除      |     http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Delete      |
-| 删除响应 | [VERSION] / [SCHEMA] /Table/ [TABLE_NAME] / Delete/响应 | http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Delete/response |
+|     Insert      |     [VERSION]/[SCHEMA]/Table/[TABLE_NAME]/Insert      |     http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Insert      |
+| 将响应 | [VERSION]/[SCHEMA]/Table/[TABLE_NAME]/Insert/response | http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Insert/response |
+|     选择      |     [VERSION]/[SCHEMA]/Table/[TABLE_NAME]/Select      |     http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Select      |
+| 选择响应 | [VERSION]/[SCHEMA]/Table/[TABLE_NAME]/Select/response | http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Select/response |
+|     Update      |     [VERSION]/[SCHEMA]/Table/[TABLE_NAME]/Update      |     http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Update      |
+| 更新响应 | [VERSION]/[SCHEMA]/Table/[TABLE_NAME]/Update/response | http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Update/response |
+|     DELETE      |     [VERSION]/[SCHEMA]/Table/[TABLE_NAME]/Delete      |     http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Delete      |
+| 删除响应 | [VERSION]/[SCHEMA]/Table/[TABLE_NAME]/Delete/response | http://Microsoft.LobServices.OracleDB/2007/03/SCOTT/Table/EMP/Delete/response |
 
  [VERSION] = 消息版本字符串;例如， http://Microsoft.LobServices.OracleDB/2007/03。  
 

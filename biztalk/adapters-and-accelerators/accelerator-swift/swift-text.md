@@ -14,12 +14,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 06e46c8be5da2f62f2b59ce2591e0559367adf08
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6dbf2c26518924f1ddf0e1cd77a4ac6e52eec54a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990926"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376951"
 ---
 # <a name="swift-text"></a>SWIFT 文本
 消息文本构成消息负载的财务 (FIN)，并且包含的所有数据字段包含发件人、 收件人和消息类型的字段除外。 这三个字段都包含在标头部分。 有些消息还包含一个可选用户标头，它还可能提供处理信息。  

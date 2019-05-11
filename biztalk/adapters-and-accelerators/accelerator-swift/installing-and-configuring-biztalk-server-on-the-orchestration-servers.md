@@ -15,12 +15,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ecd5e9e4be9c9274a402b54a5bf6a2eba4ed73cc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f4b1883199408b503cdbd79b276257bec604ab60
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984094"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377726"
 ---
 # <a name="installing-and-configuring-biztalk-server-on-the-orchestration-servers"></a>安装和配置 BizTalk Server 业务流程服务器上
 本部分介绍如何安装和配置 BizTalk Server 以便用作运行消息修复 / 新建提交业务流程以及 FIN 修复和对帐业务流程的业务流程服务器。  

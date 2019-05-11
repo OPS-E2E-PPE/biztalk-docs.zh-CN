@@ -16,25 +16,25 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dbe45a252b650bd3b5f4d2990d0c66e5a54e1e07
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 527774808bc2015189015adc41a894824c5208ec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985102"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289641"
 ---
 # <a name="segment-and-field"></a>段和字段
 段表定义 HL7 段。 每个段定义遵循如下所示的模式。  
   
-|SEQ|LEN|DT|选择|RP / #|表 #|项 #|元素名称|  
+|SEQ|LEN|DT|选择|RP/#|TBL#|ITEM#|元素名称|  
 |---------|---------|--------|---------|------------|-----------|------------|------------------|  
-|@shouldalert|4|SI|O|||00104|设置 ID 的 PID|  
+|1|4|SI|O|||00104|设置 ID 的 PID|  
 |2|20|CX|B|||00105|患者 ID|  
-|3|250|CX|R|是||00106|患者标识符列表|  
-|4|20|CX|B|是||00107|备用患者 ID-PID|  
-|5|250|XPN|R|是||00108|患者的名称|  
-|.||||||||  
-|.||||||||  
+|3|250|CX|R|Y||00106|患者标识符列表|  
+|4|20|CX|B|Y||00107|备用患者 ID-PID|  
+|5|250|XPN|R|Y||00108|患者的名称|  
+|..||||||||  
+|..||||||||  
 |37|80|ST|O|||01541|压力|  
 |38|250|CE|O|2|0429|01542|生产类代码|  
   

@@ -1,5 +1,5 @@
 ---
-title: 在插入检测点解决方案： 分步 API 使用情况 |Microsoft 文档
+title: 检测解决方案：分步 API 使用情况 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 73c59ab28c228c779fd9e6e84d836b87415d6386
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3c9d3ecd3f479729acd720a61254a6f82c655a0a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22258229"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382053"
 ---
-# <a name="instrumenting-a-solution-step-by-step-api-usage"></a>在插入检测点解决方案： 分步 API 使用情况
+# <a name="instrumenting-a-solution-step-by-step-api-usage"></a>检测解决方案：分步 API 使用情况
 本主题说明如何用关键的 BAM API 类检测应用程序。 在以下代码段中，我们使用常量和检测应用程序所必需的最少代码对示例代码进行了简化。  
   
  以下代码段演示如何创建新的 [Microsoft.BizTalk.Bam.EventObservation.EventStream](http://msdn.microsoft.com/library/Microsoft.BizTalk.Bam.EventObservation.EventStream.aspx) 对象，尤其是 [Microsoft.BizTalk.Bam.EventObservation.DirectEventStream](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.directeventstream.aspx)。 在此代码段中，第一个参数指定 BAM 主导入数据库数据存储区的连接字符串，第二个参数指定事件写入数据存储区的频率。  
   
 > [!NOTE]
->  BAM 支持连接仅为[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]数据存储区。 该示例连接字符串代表建立连接所需的最小连接字符串。 您的配置可能要求在连接字符串中指定其他参数。  
+>  BAM 只支持与 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] 数据存储区的连接。 该示例连接字符串代表建立连接所需的最小连接字符串。 您的配置可能要求在连接字符串中指定其他参数。  
   
  如果 *FlushThreshold* 值为 0，则指定事件不会自动写入，你必须调用 Flush 方法来写入事件。 如果值为 1，则各事件在发生时即被写入。 如果值大于 1，则指定在发生的事件数量达到指定的批次累计数量时，写入这些事件。 使用大于 1 的值有助于提高性能。  
   
@@ -40,7 +40,7 @@ EventStream es =
    new DirectEventStream(connBAMPIT, flushThreshold);  
 ```  
   
- 创建 [Microsoft.BizTalk.Bam.EventObservation.EventStream](http://msdn.microsoft.com/library/Microsoft.BizTalk.Bam.EventObservation.EventStream.aspx) 对象后，即可开始活动，并可用收集的里程碑和数据来更新活动表。 部署 BAM 活动后，将在 BAM 主导入数据库中创建五个表。 有关在开发过程的详细信息，请参阅[BAM 开发过程的概述](../core/overview-of-the-bam-development-process.md)。  
+ 创建 [Microsoft.BizTalk.Bam.EventObservation.EventStream](http://msdn.microsoft.com/library/Microsoft.BizTalk.Bam.EventObservation.EventStream.aspx) 对象后，即可开始活动，并可用收集的里程碑和数据来更新活动表。 部署 BAM 活动后，将在 BAM 主导入数据库中创建五个表。 有关开发过程的详细信息，请参阅 [Overview of the BAM Development Process](../core/overview-of-the-bam-development-process.md)。  
   
  调用 [Microsoft.BizTalk.Bam.EventObservation.EventStream.BeginActivity](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.eventstream.beginactivity.aspx) 方法将向 bam_ PurchaseOrder_Activity 表添加一条记录。 第一个参数包含要更新的活动的名称，第二个参数包含此活动实例的标识符。 标识符可以是任何字符串，但它在针对活动的记录集中必须是唯一的。  
   
@@ -57,7 +57,7 @@ es.UpdateActivity ("PurchaseOrder", "PO123",
                     "T_Customer", "Joe");  
 ```  
   
- 在此示例中，我们继续执行第二个活动。 有关延续的详细信息，请参阅[活动延续](../core/activity-continuation.md)。  
+ 在此示例中，我们继续执行第二个活动。 有关继续的详细信息，请参阅 [Activity Continuation](../core/activity-continuation.md)。  
   
  若要启用其他被检测的应用程序来更新 PurchaseOrder 活动，可包含一个对 [Microsoft.BizTalk.Bam.EventObservation.EventStream.EnableContinuation](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.eventstream.EnableContinuation.aspx) 方法的调用。 此调用指定其他应用程序可参与的活动、被跟踪活动实例的标识符以及其他应用程序用于更新活动的继续符。 将在 bam_ PurchaseOrder_continuations 表中写入一条记录，以跟踪继续符的状态。 如果活动继续执行其他进程，则使用唯一的继续标记为 [Microsoft.BizTalk.Bam.EventObservation.EventStream.EnableContinuation](http://msdn.microsoft.com/library/microsoft.biztalk.bam.eventobservation.eventstream.EnableContinuation.aspx) 方法的每次调用写入一条记录。  
   
@@ -223,5 +223,5 @@ namespace EventStreamSample
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [实现事件流 BAM 活动](../core/implementing-bam-activities-with-event-streams.md)
+## <a name="see-also"></a>请参阅  
+ [与事件流实现 BAM 活动](../core/implementing-bam-activities-with-event-streams.md)

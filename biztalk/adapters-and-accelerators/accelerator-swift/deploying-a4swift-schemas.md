@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8382141993d214ffbfc79a0a4eec3f2c06b4e456
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3bcd4b739313affc65788b1511bed4bd786616c6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966358"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378357"
 ---
 # <a name="deploying-a4swift-schemas"></a>部署 A4SWIFT 架构
 您必须部署你想要交换的 SWIFT 消息的架构。  

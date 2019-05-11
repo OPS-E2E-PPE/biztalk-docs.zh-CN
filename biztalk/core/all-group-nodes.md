@@ -12,17 +12,17 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 084b12f16e72507a7d5568bdee022925eca52c0e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 29b189311ebf6aa61a762cc31f09239cb69387b9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989230"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360414"
 ---
-# <a name="all-group-nodes"></a>“全部组”节点
+# <a name="all-group-nodes"></a>所有组节点
 在 BizTalk 编辑器中，可以插入**全部组**节点可包含零个或一个时，按任意顺序将出现其他节点。 在 XML 架构定义 (XSD) 语言中，**所有组**具有更多的使用情况限制比**序列**并**选择**组，这会转换为内，这样的情况BizTalk 编辑器中，你将能够创建**全部组**节点。  
 
- 若要使用**全部组**节点在 BizTalk 编辑器中，你需要遵循一些额外的步骤： 创建的最简单办法**全部组**节点是将的值更改**Group Order Type**属性的父**记录**节点到节点**所有**。 这可确保所有的从属节点**记录**节点中包含**全部组**节点。  请参阅**组顺序类型** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
+ 若要使用**全部组**节点在 BizTalk 编辑器中，你需要遵循一些额外的步骤：创建的最简单办法**全部组**节点是若要更改的值**Group Order Type**的父对象**记录**节点到**所有**. 这可确保所有的从属节点**记录**节点中包含**全部组**节点。  请参阅**组顺序类型** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
 
  另一种方法使用**全部组**节点在 BizTalk 编辑器中首先插入一个新**记录**节点。 插入新后**记录**节点，更改其**内容类型**属性设置为**ComplexContent**。 然后可以插入**全部组**节点的子级作为节点**记录**节点。 这是必需的因为**全部组**仅涉及继承时，要插入。 通过指定包含**记录**节点包含复杂内容，其数据类型将变为基于的数据类型**xs: anytype**、 通过扩展派生。  
 

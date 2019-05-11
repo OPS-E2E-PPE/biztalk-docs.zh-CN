@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 659b9b39beea4bf5efed4c6d1553fca173191cc5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2621287c35a60f57c4706e0901c7f786166d6cee
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988758"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65343269"
 ---
-# <a name="how-to-add-looping-functoids-to-a-map"></a>如何向映射添加“循环”Functoid
+# <a name="how-to-add-looping-functoids-to-a-map"></a>如何添加循环 Functoid 映射
 
 ## <a name="overview"></a>概述
 **循环**functoid 将多个记录或源架构中的字段合并到目标架构中的单个记录。  
@@ -28,7 +28,7 @@ ms.locfileid: "36988758"
 
  某些情况下，某些 functoid 可能不会按预期方式与在映射中使用时**循环**functoid。 如果此类某个 functoid 符合以下条件，此操作未生成预期的结果：  
 
--   functoid 具有多个输入链接。  
+-   Functoid 具有多个输入的链接。  
 
 -   两个或多个 functoid 输入链接链接到输入记录的子字段**循环**functoid，这些子字段不是同级。  
 
@@ -38,7 +38,7 @@ ms.locfileid: "36988758"
 
 1. 与[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]工具箱处于活动状态，单击**高级 Functoid**选项卡以选择该类别的 functoid。  
 
-    此时，将显示所选类别的高级 functoid 列表。  
+    将显示所选类别的高级 functoid 列表。  
 
 2. 拖动**循环**functoid 从工具箱拖至网格页上的适当位置。  
 
@@ -46,9 +46,9 @@ ms.locfileid: "36988758"
    循环 functoid  
 
    > [!NOTE]
-   >  该 functoid 将放置到显示的网格页上。 如果你想要将该 functoid 放置到其他网格页上，您需要首先显示该其他网格页。  
+   >  该 functoid 将放置上显示的网格页。 如果你想要将该 functoid 放置到其他网格页上，您需要首先显示该其他网格页。  
    > 
-   >  如果是构造使用多个 functoid 的映射，则需要考虑它们的左右位置关系。 Functoid 是按照从左到右的顺序执行的。 一个 functoid 的输出只能输入到其右侧的另一个 functoid 中。  
+   >  如果构造一起使用多个 functoid 的映射，您需要考虑它们的左右位置关系。 从左向右执行 Functoid。 Functoid 的输出只能输入到其右侧的另一个 functoid。  
 
 3. 若要建立的输入的参数的**循环**functoid 创建输入的链接： 将一条记录或字段从源架构**循环**functoid，或拖动**循环** functoid 到记录或源架构中的字段。 根据需要包含所有相关输入的记录或字段添加到重复**循环**functoid。  
 

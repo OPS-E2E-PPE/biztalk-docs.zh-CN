@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5bb3eb733dcf7c7199282ad4e5512e8d590e8c41
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4e2966a905ea57ed0867a3c3f4c333e88416be9c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018779"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292815"
 ---
 # <a name="unable-to-export-configuration"></a>无法导出配置
 ## <a name="details"></a>详细信息  
@@ -33,12 +33,12 @@ ms.locfileid: "37018779"
 |  消息正文   |                    无法将配置导出到文件"{0}"                    |
 
 ## <a name="explanation"></a>解释  
- 未正确指定某些所需属性，例如“地址(URI)”和“绑定类型”。  
+ 某些所需的属性未正确指定，如地址 (URI) 和绑定类型。  
 
 ## <a name="user-action"></a>用户操作  
- 使用以下过程验证属性是否正确。  
+ 使用以下过程验证属性正确。  
 
-#### <a name="to-verify-properties"></a>验证属性  
+#### <a name="to-verify-properties"></a>若要验证属性  
 
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
 
@@ -58,4 +58,4 @@ ms.locfileid: "37018779"
 
 9. 单击 **“导出”**。  
 
-10. 确保已正确指定所需属性。 “地址(URI)”的方案必须与“绑定类型”中的方案正确匹配。
+10. 请确保已正确指定所需的属性。 方案的地址 (URI) 必须正确匹配的绑定类型。

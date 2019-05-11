@@ -19,12 +19,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bb276c069a86d060c319f960e666210691b69056
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 96bbf81638b6099f6e4d6f74704b1f94faf82679
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973326"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378678"
 ---
 # <a name="adding-a4swift-users-and-updating-windows-groups"></a>添加 A4SWIFT 用户和更新 Windows 组
 创建和安装为消息修复和新提交的角色的证书后，必须创建[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]用户，并添加[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]用户到组。  

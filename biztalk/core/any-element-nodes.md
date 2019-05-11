@@ -12,15 +12,15 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 905d6c25c5c2021840f4257c29df015d4bcb374e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3d5581ed73c6bb2fdf625a976a33d906bd5d2836
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002430"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359159"
 ---
-# <a name="any-element-nodes"></a>“任何元素”节点
-在 BizTalk 编辑器中，可以使用**Any 元素**节点指示实例消息中可能出现未知的元素的位置。 这适用于以下情况：您知道某个元素可能会出现在实例消息内的特定位置，但不知道该元素的名称或其可能的复杂程度。 如果将置于**Any 元素**BizTalk 架构中适当的位置的节点可以处理此类未知的消息部分。 唯一的要求是相应的 XML 应具有正确的格式。  
+# <a name="any-element-nodes"></a>任何元素节点
+在 BizTalk 编辑器中，可以使用**Any 元素**节点指示实例消息中可能出现未知的元素的位置。 这适合于以下情况： 您知道某些元素可能会出现在实例消息中的特定位置，但不是知道元素的名称也可能很复杂。 如果将置于**Any 元素**BizTalk 架构中适当的位置的节点可以处理此类未知的消息部分。 唯一要求是相应的 XML 的格式正确。  
   
 > [!NOTE]
 >  在 BizTalk 编辑器中， **Any 元素**节点表示的字符串\<任何\>架构树视图中。  

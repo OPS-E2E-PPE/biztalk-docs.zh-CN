@@ -1,5 +1,5 @@
 ---
-title: 第 1 课： 添加新的 BizTalk 项目 |Microsoft Docs
+title: 第 1 课：添加新的 BizTalk 项目 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c6760719bad28463b99a9de389b012156c1abb2f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b98c3744786b12fb9b0113181ee844aecef5f97d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987414"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377271"
 ---
-# <a name="lesson-1-adding-a-new-biztalk-project"></a>第 1 课： 添加新的 BizTalk 项目
+# <a name="lesson-1-adding-a-new-biztalk-project"></a>第 1 课：添加新的 BizTalk 项目
 在本课中，将新的 BizTalk 项目添加到你的解决方案。 在本教程使用此项目中创建架构。  
   
  选择 BizTalk 项目模板中公开的 BizTalk 工具，BizTalk 映射器中，如[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)][!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)]开发环境。  
@@ -43,4 +43,4 @@ ms.locfileid: "36987414"
   
     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] 将新项目添加到解决方案资源管理器和创建项目文件夹和文件中\<*驱动器*:\>\labs\SWIFTProject\SWIFTSchemas 文件夹。  
   
-   请继续执行[第 2 课： 创建 swift 架构项目的强名称的 BizTalk 程序集](../../adapters-and-accelerators/accelerator-swift/lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project.md)。
+   请继续执行[第 2 课：创建 swift 架构项目的强名称的 BizTalk 程序集](../../adapters-and-accelerators/accelerator-swift/lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project.md)。

@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cdf371335a1242423c4497f186fa5764f5b2fb2f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 15778686c162b6e8bc3fce7bf87eda94797926f5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991686"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376416"
 ---
 # <a name="message-schemas-for-the-notification-operation"></a>通知操作的消息架构
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]用于从 Oracle 数据库接收数据库更改通知的通知操作的图面。  
@@ -27,7 +27,7 @@ ms.locfileid: "36991686"
 ## <a name="message-structure-for-the-notification-operation"></a>通知操作的消息结构  
  下表显示了通知操作的 XML 消息结构。  
   
-|运算|XML 消息|Description|  
+|操作|XML 消息|Description|  
 |---------------|-----------------|-----------------|  
 |通知|`<?xml version="1.0" encoding="utf-8" ?>  <Notification xmlns="http://Microsoft.LobServices.OracleDB/2007/03/Notification">    <Info>Value</Info>    <Source>Value</Source>    <Type>Value</Type> </Notification>`|这是 Oracle 数据库发送到适配器客户端的入站的消息。 在消息：<br /><br /> -`<Info>`标记指示通知的原因。 例如，此标记中的"插入"值指示表明已在一个或多个通知语句中引用的表中插入数据。<br /><br /> -`<Source>`标记指示通知的源。 例如，此标记中的"数据"值指示被引用对象中的数据的更改。 同样，此标记中的"对象"值指示被引用对象的更改。<br /><br /> -`<Type>`标记表示的数据更改的类型。 例如，"更新"值中`<Type>`标记指示已更新查询的结果。|  
   

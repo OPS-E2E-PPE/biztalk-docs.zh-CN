@@ -16,12 +16,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b3b1c3eed2ab71282a50ccbb6709601aa69ca733
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0068fbac2f1ee59cd367799b5e44a3d545063380
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973294"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376370"
 ---
 # <a name="metadata-and-the-wcf-service-model-with-oracle-database"></a>元数据和具有 Oracle 数据库的 WCF 服务模型
 在 WCF 服务模型，可使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]或 ServiceModel Metadata Utility Tool (svcutile.exe) 生成代理类通过它你代码可能是：  

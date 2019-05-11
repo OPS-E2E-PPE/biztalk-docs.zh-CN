@@ -17,12 +17,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e41359bd9fa7a54a68de49bfe115ca7c563dfdb3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 23139cb3c335418af677e666359a5fcd862067a5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979014"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376440"
 ---
 # <a name="message-schemas-for-ref-cursors"></a>REF CURSOR 的消息架构
 REF CURSOR 是 Oracle PL/SQL 数据类型对结果集的 Oracle 数据库中表示的指针。 REF CURSOR 类型启用输入和输出流的数据非常适合用于传输大量数据传入和传出 PL/SQL 代码块。 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] 为出将强类型化和弱类型化 REF CURSOR 参数传递给 PL/SQL 过程和函数中，并在 OUT 参数提供支持。  

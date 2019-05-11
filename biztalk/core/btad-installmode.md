@@ -1,5 +1,5 @@
 ---
-title: BTAD_InstallMode |Microsoft 文档
+title: BTAD_InstallMode | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,25 +14,25 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c2bcb527bda0a8ee2bfb36b06d317d952b48e699
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d94b86412d081602ab77330bb4a6b6e567d662d9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231109"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357822"
 ---
 # <a name="btadinstallmode"></a>BTAD_InstallMode
-BTAD_InstallMode 描述 BizTalk 应用程序部署的安装模式。  
+BTAD_InstallMode 介绍 BizTalk 应用程序部署的安装模式。  
   
-## <a name="remarks"></a>注释  
+## <a name="remarks"></a>备注  
  下表介绍 BTAD_InstallMode 可能的值。  
   
-|值|Description|  
+|ReplTest1|Description|  
 |-----------|-----------------|  
-|Install|创建或更新到 BizTalkHostInstance （本地计算机）|  
-|导入|创建或更新到 ConfigurationDb （BizTalk 管理组的数据库）|  
+|安装|创建或更新到 BizTalkHostInstance （本地计算机）|  
+|导入|创建或更新到 ConfigurationDb （组的 BizTalk 管理数据库）|  
 |Uninstall|删除从 BizTalkHostInstance （本地计算机）|  
   
-## <a name="see-also"></a>另请参阅  
- [前期和后期处理脚本环境变量](../core/pre-and-post-processing-script-environment-variables.md)   
+## <a name="see-also"></a>请参阅  
+ [预处理和后处理脚本环境变量](../core/pre-and-post-processing-script-environment-variables.md)   
  [环境变量如何指示部署状态](../core/how-environment-variables-indicate-deployment-state.md)

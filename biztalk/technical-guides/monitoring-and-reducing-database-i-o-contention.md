@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e4a58b0733f44ca2d85c96a9b4a91045bb3947be
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ab8c8ca63556281644100e026a278c4141e19077
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001095"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379471"
 ---
 # <a name="monitoring-and-reducing-database-io-contention"></a>监视和降低数据库 I/O 争用
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 性能通常取决于所设计时[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]性能，这又通常取决于所设计时的磁盘 I/O 性能。 因此，你应监视并调整到最佳性能运行的计算机上的磁盘 I/O[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]用于容装[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库。  

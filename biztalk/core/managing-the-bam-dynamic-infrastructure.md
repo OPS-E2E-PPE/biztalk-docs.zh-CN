@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 861390d71c7cd16815ae7f3d446e956f0ae3bb74
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 40b0ef23d013149f7f01efe6f0157ce98b856f2e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004702"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380184"
 ---
 # <a name="managing-the-bam-dynamic-infrastructure"></a>管理 BAM 动态基础结构
 业务活动监视 (BAM) 功能使用动态生成的 SQL 和联机分析处理 (OLAP) 基础结构。 管理员使用 BAM 管理实用程序来部署 BAM 定义工作簿或 XML 文件，业务分析人员开发。  

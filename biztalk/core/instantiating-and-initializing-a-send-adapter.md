@@ -12,22 +12,22 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b91bb59d974d68595e53c563311c74f590d33b3d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f3808af04a8b2bcf6f866629f254212d5b10b8d2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978918"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382072"
 ---
 # <a name="instantiating-and-initializing-a-send-adapter"></a>实例化和初始化发送适配器
-默认情况下，在第一个消息传送到发送适配器之前，不会实例化发送适配器，这一过程称为“懒创建”。 默认的“懒创建”方法有助于节省系统资源。 创建发送适配器之后，在停止 BizTalk Server 服务之前该发送适配器将一直被缓存并且处于活动状态。  
+默认情况下，发送适配器不会实例化，直到第一条消息传递到它们，该过程称为"懒创建。 默认的懒创建方法有助于节省系统资源。 创建发送适配器后，它将被缓存，位于直到 BizTalk Server 服务已停止。  
   
  **InitTransmitterOnServiceStart**的成员**功能**枚举指示消息引擎在服务启动，而不是使用默认延迟创建，创建发送适配器如果这所需。  
   
- 在消息的批处理方面，消息的发送是一个不同于消息接收的模型。 对于接收，适配器的传入消息将插入到从消息引擎获得的某个批。 对于发送，消息引擎从适配器获得批并将要传输的消息发送到适配器。 这两种情况都使用传输代理来获取消息批对象。  
+ 发送一条消息是与接收消息的消息批处理方面不同的模型。 对于接收适配器的传入消息将从消息引擎获取一批中插入。 在发送的情况下，消息引擎从适配器获得批并将消息发送到传输的适配器。 同时使用传输代理来获取消息批对象。  
   
 ## <a name="how-a-send-adapter-is-initialized"></a>如何初始化发送适配器  
- 若要启用对传输代理的配置和绑定，适配器必须实现以下配置接口：  
+ 若要启用配置和绑定到传输代理，适配器必须实现以下配置接口：  
   
 - **IBTTransport**  
   
@@ -37,9 +37,9 @@ ms.locfileid: "36978918"
   
 - **IPersistPropertyBag**  
   
-  以下步骤介绍了在初始化发送适配器时所涉及事件的顺序：  
+  以下步骤介绍在初始化发送适配器所涉及的事件序列：  
   
-1. 当消息引擎初始化发送适配器时，它首先会执行**QueryInterface**有关**IPersistPropertyBag**，这是一个可选接口。 如果适配器实现了接口，处理程序配置传递给适配器**负载**方法调用。 适配器将使用此信息来确保它得到正确地配置。  
+1. 当消息引擎初始化发送适配器时，它首先会执行**QueryInterface**有关**IPersistPropertyBag**，这是一个可选接口。 如果适配器实现了接口，处理程序配置传递给适配器**负载**方法调用。 适配器使用此信息以确保配置正确。  
   
 2. 消息引擎执行**QueryInterface**有关**IBTTransportControl**，这是必需的接口。  
   
@@ -47,22 +47,22 @@ ms.locfileid: "36978918"
   
 4. 消息引擎执行**QueryInterface**有关**IBTTransmitter**。  
   
-    如果消息引擎找到该接口，则适配器将被视为不支持批的发送器。  
+    如果消息引擎找到该接口，适配器将被视为不支持批的发送器。  
   
     如果消息引擎不会发现此接口，消息引擎将执行**QueryInterface**有关**IBTBatchTransmitter**，发现其中表示适配器是可识别批发送器。  
   
-    如果消息引擎找不到这两个接口中的任何一个，则会出现错误，从而导致初始化失败。 如果未找到任何必需接口，则初始化将失败。  
+    如果消息引擎发现任一这些接口，产生的错误条件，从而导致初始化失败。 初始化失败，则如果未发现任何必需接口。  
   
-   下图说明了 API 调用的顺序；蓝色的接口由适配器实现。  
+   下图说明了这一序列的 API 调用异步方法。蓝色的接口由适配器实现。  
   
    ![](../core/media/transmit-adapter-init.gif "Transmit_adapter_init")  
   
-   适配器在初始化和配置完毕后就可发送消息。  
+   一旦初始化和配置，适配器可以发送消息。  
   
-   下图显示了初始化发送适配器时所涉及的对象交互。  
+   下图显示了在初始化发送适配器所涉及的对象交互。  
   
    ![](../core/media/ebiz-sdk-devadapter10.gif "ebiz_sdk_devadapter10")  
-   初始化发送适配器的工作流  
+   用于初始化发送适配器的工作流  
   
 > [!NOTE]
->  适配器不应阻止消息引擎在调用如**IBTTransportControl.Initialize**并**ipersistpropertybag.load 这样**。 在这些调用中执行过多的处理会影响服务启动时间。
+>  适配器不应阻止消息引擎在调用如**IBTTransportControl.Initialize**并**ipersistpropertybag.load 这样**。 执行过多的处理中这些调用会影响服务启动时间。

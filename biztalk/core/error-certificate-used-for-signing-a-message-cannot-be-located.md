@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: feb6a4cc1e5272a4a2c6760ca4585dd0dc10c031
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f452ff362a11a824f749fc1a9c87b0905340c467
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001358"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348965"
 ---
-# <a name="the-certificate-used-for-signing-a-message-cannot-be-located-in-the-local-certificate-store"></a>无法在本地证书存储中定位用于对消息签名的证书
+# <a name="the-certificate-used-for-signing-a-message-cannot-be-located-in-the-local-certificate-store"></a>不能在本地证书存储中定位用于对消息进行签名的证书
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                          |
@@ -30,16 +30,16 @@ ms.locfileid: "37001358"
 |  事件源   |                  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                  |
 |    组件    |                                                        AS2 引擎                                                        |
 |  符号名称  |                                                 CertificateMissingError                                                  |
-|  消息正文   | 无法在本地证书存储中定位用于对消息签名的证书。 证书指纹： {0} |
+|  消息正文   | 不能本地证书存储中定位用于对消息进行签名的证书。 证书指纹： {0} |
   
 ## <a name="explanation"></a>解释  
- 此错误/警告/信息事件表明发送管道无法处理传出的消息，因为标识为签名证书的证书不在所需的证书存储区中。  
+ 此错误/警告/信息事件表明发送管道不无法处理传出消息，因为标识为签名证书的证书不在所需的证书存储区中。  
   
 ## <a name="user-action"></a>用户操作  
  若要解决此错误，请执行以下操作：  
   
-1.  通过打开 BizTalk Server 管理控制台，右键单击“BizTalk 组”，然后单击“证书”节点来标识签名证书。  
+1.  通过打开 BizTalk Server 管理控制台中，右键单击 BizTalk 组，然后单击证书节点标识签名证书。  
   
-2.  打开 MMC，添加“我的用户帐户”的管理单元，然后打开“证书”、“个人”和“证书”节点。  
+2.  打开 MMC，添加管理单元为我的用户帐户，然后打开证书、 个人和证书节点。  
   
-3.  通过查找在错误消息文本中标识的指纹，确保“当前用户”证书存储区包含该签名证书的私钥。
+3.  请确保当前用户证书存储区通过查看错误消息文本中标识的指纹包含该签名证书的私钥。

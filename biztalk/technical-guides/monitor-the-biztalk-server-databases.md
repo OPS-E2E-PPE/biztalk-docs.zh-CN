@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b041822791b08890a34c39f3658de879062d9fb7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d5a4db14f9bdebc8d368a21d6955547d65e2eb7f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973814"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379452"
 ---
 # <a name="monitor-the-biztalk-server-databases"></a>监视 BizTalk Server 数据库
 可以运行监视 BizTalk Server SQL 代理作业，以标识管理、 消息框中或 DTA 数据库中的任何已知的问题。 在 BizTalk Server 管理控制台中配置 BizTalk 组或从早期版本升级 BizTalk 时创建作业。  
@@ -32,11 +32,11 @@ ms.locfileid: "36973814"
   
 - 没有引用计数的消息  
   
-- 引用计数小于 0 的消息  
+- 具有引用计数小于 0 的消息  
   
 - 无后台行的消息引用  
   
-- 无实例的消息引用  
+- 没有实例的消息引用  
   
 - 没有实例的实例状态  
   
@@ -48,8 +48,8 @@ ms.locfileid: "36973814"
   
 - TDDS 未运行任何主机实例上启用全局跟踪选项  
   
-  “监视 BizTalk Server”作业已配置为每周自动运行一次。 由于是计算密集型作业，我们建议您计划的停机时间或低流量期间运行。  
-  作业失败时如果遇到任何问题;返回的错误字符串包含找到的问题数。 否则，它将成功运行。 您可以在作业历史中查看详细信息。 如果使用管理员特权运行该作业，将向作业历史记录和 SQL Server 应用程序日志记录的错误字符串。  
+  监视 BizTalk Server 作业配置和自动运行一次在一周内。 由于是计算密集型作业，我们建议您计划的停机时间或低流量期间运行。  
+  作业失败时如果遇到任何问题;返回的错误字符串包含找到的问题数。 否则，它将成功运行。 您可以看到作业历史记录中的详细信息。 如果使用管理员特权运行该作业，将向作业历史记录和 SQL Server 应用程序日志记录的错误字符串。  
   
 > [!IMPORTANT]  
 >  此作业的失败不一定是构成是关键问题，但而不是问题，应调查并解决的定期维护 BizTalk Server 数据库的一部分。 此作业失败按照设计，它会发现其中一个上面列出的问题的事件中。 上面列出的问题的详细信息，并访问通常由使用 Microsoft 产品支持服务来解决这些问题的实用程序，请参阅[使用 BizTalk 终止符，若要解决标识 BizTalk 的问题MsgBoxViewer](http://go.microsoft.com/fwlink/?LinkId=210367) (http://go.microsoft.com/fwlink/?LinkId=210367)。

@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a22f02fe6dde63c01707d15f4210c29f52f112e8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f6359031b4e05f737c8b209b94ae8f8967939a68
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974838"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380052"
 ---
 # <a name="marked-transactions-full-backups-and-log-backups"></a>标记的事务、完整备份和日志备份
 备份 BizTalk Server 作业创建的所有 BizTalk Server 数据库使用完整数据库备份和事务日志备份，以及一种称为事务中的同步的备份*标记的事务*。 标记的事务是在事务中放置到的参与的所有数据库的事务日志标记的事务。 标记的事务阻止启动新的分布式的事务，等待当前正在运行才能完成，则分布式事务，然后执行以放置标记。  
@@ -41,7 +41,7 @@ ms.locfileid: "36974838"
   
  标记，通过使用创建的字符串 *\<ServerName\>*<em>*\<DatabaseName\>*（_l)\\</em>   *\<LogMarkName\>*\_*\<时间戳\>*.bak，其中 *\<日志标记名称\>* 配置中的 SQL Server 代理作业。 最后一个日志还原到每个数据库时，必须使用此标记。  
   
- 有关详细信息，请参阅 SQL Server 联机丛书中的“事务日志备份”和“相关数据库的备份和恢复”。  
+ 有关详细信息，请参阅"事务日志备份"和"备份和恢复相关数据库的"SQL Server 联机丛书中。  
   
 ## <a name="see-also"></a>请参阅  
  [有关备份和还原的高级信息](../core/advanced-information-about-backup-and-restore1.md)

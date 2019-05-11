@@ -15,17 +15,17 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8c30ef9b9cb5604936f5cd71bcecdc7068c54744
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e25825fbcb755179ce833a3c542e9554b99ac923
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006438"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383170"
 ---
 # <a name="how-to-view-bam-aggregations"></a>如何查看 BAM 聚合
-BAM 聚合是由业务分析员在 Excel 中使用 Excel 外接程序定义的。  
+BAM 聚合由业务分析员在 Excel 中使用的 Excel 外接程序定义。  
   
-### <a name="to-view-your-bam-aggregations"></a>查看您的 BAM 聚合  
+### <a name="to-view-your-bam-aggregations"></a>若要查看您的 BAM 聚合  
   
 1. 运行的计算机上[!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]; 单击**启动**，依次指向**所有程序**，右键单击**Internet Explorer**，然后单击**以运行管理员**。 在中**用户帐户控制**对话框中，单击**继续**。 在 Internet Explorer 地址栏中，键入`http://<server>/BAM/`，其中*\<服务器 >* 是正在运行 BAM 门户的计算机的名称。  
   
@@ -40,7 +40,7 @@ BAM 聚合是由业务分析员在 Excel 中使用 Excel 外接程序定义的�
 4. 单击列出要加载的 BAM 门户内容框架中聚合的聚合。  
   
 > [!NOTE]
->  如果没有显示任何视图，则是因为视图尚未创建（此任务通常由业务分析员执行），或尚未向用户授予权限（此任务通常由管理员执行）。  
+>  如果不没有显示任何视图，然后是因为视图尚未创建，通常由业务分析员执行的任务，或已授予权限给用户，通常由管理员执行的任务。  
   
  使用实时数据工作簿可以执行的操作的详细信息，请参阅[查看实时 BAM 数据](../core/viewing-live-bam-data.md)。  
   

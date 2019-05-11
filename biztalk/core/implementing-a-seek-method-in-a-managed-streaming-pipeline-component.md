@@ -1,5 +1,5 @@
 ---
-title: 实现查找托管流式处理管道组件中的方法 |Microsoft 文档
+title: 实现 Seek 方法中的托管流管道组件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,21 +17,21 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b5181957f691502dcc2b09a367c31de575097d1a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9986f2c19a1966d50e267ad8f10181d081be58dc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22256517"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382643"
 ---
-# <a name="implementing-a-seek-method-in-a-managed-streaming-pipeline-component"></a>实现查找托管流式处理管道组件中的方法
-本机**IStream**接口不提供一种检查将当前流的位置，因此消息引擎使用以下方法**Seek**方法。  
+# <a name="implementing-a-seek-method-in-a-managed-streaming-pipeline-component"></a>实现 Seek 方法中的托管流管道组件
+本机**IStream**接口不提供一种检查当前的流位置，因此，消息引擎使用以下方法**Seek**方法。  
   
 ```  
 pStream->Seek(0, STREAM_SEEK_CUR, &pNewPosition);  
 ```  
   
- 此方法不移动流指针，而是查询当前位置。 因此如果你实现的管道组件的适用于 nonseekable 流，你可以使用**Stream.Seek**如以下示例所示的方法。  
+ 此方法不移动流指针;而是查询当前位置。 因此，如果你实现适用于一流的管道组件，可以使用**Stream.Seek**如以下示例所示的方法。  
   
 ## <a name="example"></a>示例  
   
@@ -67,5 +67,5 @@ override public long Seek(long offset, SeekOrigin origin)
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [开发自定义管道组件](../core/developing-custom-pipeline-components.md)

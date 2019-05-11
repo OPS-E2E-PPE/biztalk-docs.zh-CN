@@ -16,17 +16,17 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ab9885497468f91b309eb51ac0abbf4c0807ca76
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 028e560dc7a536dd99b8a9461211dd3e712a361a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998254"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376306"
 ---
 # <a name="operations-on-tables-with-bfile-data-types-in-oracle-database"></a>对包含 BFILE 数据类型在 Oracle 数据库中的表的操作
 [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]表和存储的过程中支持 BFILE 数据类型。 下表总结了由适配器基于执行的操作公开的 BFILE 数据类型和访问 LOB 项目 （表/过程）：  
   
-|项目|运算|BFILE col/param 公开的数据类型|注释|  
+|项目|操作|BFILE col/param 公开的数据类型|注释|  
 |--------------|---------------|--------------------------------------------|--------------|  
 |TABLE|Insert|String|表示要插入到 BFILE 列的文件的逻辑的 Oracle 目录路径<br /><br /> 例如 MYDIR/screen.jpg MYDIR 其中是 Oracle 中的逻辑目录|  
 |TABLE|UPDATE|String|表示要更新到 BFILE 列的文件的逻辑的 Oracle 目录路径|  

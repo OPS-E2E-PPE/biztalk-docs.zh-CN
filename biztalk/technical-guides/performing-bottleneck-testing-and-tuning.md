@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 468f7a3a35922c6348369050593cbb56b56457d3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 57d5d46bfa71fe6502b1831a8851e2ff448821d7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018590"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291314"
 ---
 # <a name="performing-bottleneck-testing-and-tuning"></a>执行瓶颈测试并优化
 您应该完成性能测试来确定系统中的瓶颈和相应地调整系统。  

@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8da5e041ad861557817491695f0d7972a207864a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5c23c8c20dba45957cb338b588e16013a01626b0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008470"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381484"
 ---
 # <a name="invalid-address-length"></a>地址长度无效
 ## <a name="details"></a>详细信息  
@@ -33,12 +33,12 @@ ms.locfileid: "37008470"
 |  消息正文   | 地址长度无效;指定的地址长度为{0}字符，限制是{1}字符 |
 
 ## <a name="explanation"></a>解释  
- 为 WCF 传输提供的地址超出 255 个字符的最大长度。 这是 BizTalk Server（而不是 WCF）规定的限制。  
+ 提供的地址超出 255 个字符为 WCF 传输的最大长度。 这是 BizTalk Server 中，不是由 WCF 规定的限制。  
 
 ## <a name="user-action"></a>用户操作  
  使用以下过程配置有效地址。  
 
-#### <a name="to-configure-a-valid-address"></a>配置有效地址  
+#### <a name="to-configure-a-valid-address"></a>若要配置有效地址  
 
 1. 单击**启动**，单击**所有程序**，单击**Microsoft [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]** ，然后单击**BizTalk Server 管理**。  
 

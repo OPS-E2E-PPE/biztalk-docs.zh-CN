@@ -1,5 +1,5 @@
 ---
-title: 配置 MSMQ 适配器 |Microsoft 文档
+title: 配置 MSMQ 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,18 +15,18 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 74e2cac70171a22dad391addc81daa696e204fd6
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5615178f5eb5248f74b0991075e159df70c89a09
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22232949"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355174"
 ---
 # <a name="configuring-the-msmq-adapter"></a>配置 MSMQ 适配器
-本部分介绍有关配置 MSMQ 适配器的信息。 对接收位置和发送端口均可配置 MSMQ 适配器。  
+本部分包括有关配置 MSMQ 适配器的信息。 对于接收位置和发送端口，可以配置 MSMQ 适配器。  
   
 > [!NOTE]
->  若要清除某些字段在属性表中，如**用户名**和**密码**，右键单击属性名称 （不是值），然后单击**Nullify**。  
+>  若要清除属性表中的某些字段，如**用户名**并**密码**，右键单击属性名称 （不是值），并单击**Nullify**。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -42,8 +42,8 @@ ms.locfileid: "22232949"
   
 -   [如何管理多个接收位置使用 MSMQ 适配器](../core/how-to-manage-multiple-receive-locations-using-the-msmq-adapter.md)  
   
--   [消息队列的队列](../core/message-queuing-queues.md)  
+-   [“消息队列”队列](../core/message-queuing-queues.md)  
   
--   [优化性能的 MSMQ 适配器](../core/optimizing-performance-of-the-msmq-adapter.md)  
+-   [优化 MSMQ 适配器的性能](../core/optimizing-performance-of-the-msmq-adapter.md)  
   
--   [发送和接收使用 MSMQ 适配器的大型消息](../core/sending-and-receiving-large-messages-using-the-msmq-adapter.md)
+-   [使用 MSMQ 适配器发送和接收大型消息](../core/sending-and-receiving-large-messages-using-the-msmq-adapter.md)

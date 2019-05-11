@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 380af93ccba2671e3ffa3e6377c049eaf23dcd67
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f8005fa8287b7156374445b1a596a2c4bc21709c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995814"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379485"
 ---
 # <a name="monitoring-biztalk-server-with-system-center-operations-manager-2007"></a>监视 BizTalk Server 使用 System Center Operations Manager 2007
 监视 BizTalk 应用程序和基础结构与 Microsoft System Center Operations Manager (Operations Manager) 是首选的监视方法。 Operations Manager 的 Microsoft BizTalk Server 管理包提供运行的计算机的主动式和反应式监视[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 这些管理包提供了几十个内置的可自定义规则以允许进行全面和自动监视[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  

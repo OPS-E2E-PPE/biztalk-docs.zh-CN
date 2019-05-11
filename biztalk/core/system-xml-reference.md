@@ -1,5 +1,5 @@
 ---
-title: System.Xml 引用 |Microsoft 文档
+title: System.Xml 引用 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 82277d78c044c49916a9f2c619f0faaed54949b9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8eef3b90b636f20d7564fa2ed0d2260fde72ac0f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277741"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291687"
 ---
 # <a name="systemxml-reference"></a>System.Xml 引用
-**System.Xml**引用命名空间提供基于标准的支持，用于处理 XML 文档。 所有 BizTalk 项目均需要此默认引用才能正常运行。 强烈建议您不要删除此默认引用。  
+**System.Xml**引用命名空间提供用于处理 XML 文档的基于标准的支持。 此默认引用是必需的所有 BizTalk 项目才能正常工作。 强烈建议您不要删除此默认引用。  
   
- 有关详细信息**System.Xml**引用，请参阅在 Visual Studio 结合使用集合中的"System.Xml Namespace" [http://go.microsoft.com/fwlink/?LinkId=25498](http://go.microsoft.com/fwlink/?LinkId=25498)。  
+ 有关详细信息**System.Xml**引用，请参阅在 Visual Studio 结合使用集合中的"System.Xml Namespace" [ http://go.microsoft.com/fwlink/?LinkId=25498 ](http://go.microsoft.com/fwlink/?LinkId=25498)。  
   
-## <a name="see-also"></a>另请参阅  
- [有关 BizTalk 项目中包含的 BizTalk Namespace 引用](../core/about-biztalk-namespace-references-included-in-biztalk-projects.md)
+## <a name="see-also"></a>请参阅  
+ [关于 BizTalk 项目中包含的 BizTalk 命名空间引用](../core/about-biztalk-namespace-references-included-in-biztalk-projects.md)

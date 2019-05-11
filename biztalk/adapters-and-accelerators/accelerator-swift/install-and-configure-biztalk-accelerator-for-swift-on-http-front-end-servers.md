@@ -15,12 +15,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 375f5f26c9c71554f4ad44bd688f1d715cb81b92
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9cf35a971dbc3dad14568f880b058c1ff131a087
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973454"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377365"
 ---
 # <a name="installing-and-configuring-biztalk-accelerator-for-swift-on-http-front-end-servers"></a>安装和配置 BizTalk Accelerator for SWIFT HTTP 前端服务器上
 本部分介绍如何安装和配置[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]HTTP 前端服务器上。 这些服务器主要用于与 SWIFT 网络进行通信。  

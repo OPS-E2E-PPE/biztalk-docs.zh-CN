@@ -1,5 +1,5 @@
 ---
-title: 拦截器 EventSource 元素 |Microsoft 文档
+title: 侦听器 EventSource 元素 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,29 +12,29 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 35b5cd6b2e872f689988f3d10d18df002f66d6a0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 001dfe8c2e4fe09b71bcdd8c053f59938be76cc4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257469"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382022"
 ---
 # <a name="interceptor-eventsource-element"></a>侦听器 EventSource 元素
-**EventSource**元素提供有关的一个或多个显示在侦听器配置文件中的事件源的信息。 除事件源名称之外，您还需要指示源的技术和清单。  
+**EventSource**元素提供有关一个或多个侦听器配置文件中显示的事件源的信息。 除了事件源名称，您需要指出的技术和源清单。  
   
 ## <a name="format"></a>格式  
- `EventSource` 元素具有三个属性，该元素可能包含或不包含子元素，这取决于包含的架构。 例如，WCF 架构 WcfInterceptorConfiguration.xsd 提供 `NamespaceMapping` 元素。  
+ `EventSource`元素具有三个属性可能会或可能不包含子元素，具体取决于包含的哪些架构。 例如，WCF 架构 WcfInterceptorConfiguration.xsd 提供`NamespaceMapping`元素。  
   
-### <a name="attributes"></a>属性  
+### <a name="attributes"></a>特性  
   
 |属性名称|Description|  
 |--------------------|-----------------|  
-|Name|该事件源的名称。 通过使用此名称**OnEvent**条目以引用源。|  
-|技术|承载清单中指示的事件源的技术类型。 使用“WF”表示 Windows Workflow Foundation；使用“WCF”表示 Windows Communication Framework。|  
-|Manifest|用作事件源的类型的程序集限定类名。 例如，使用 IPv4 地址 `TopNamespace.SubNameSpace.ContainingClass+NestedClass, MyAssembly, Version=1.3.0.0, Culture=neutral, PublicKeyToken=b17a5c561934e08`<br /><br /> 如果你没有公钥标记，使用`PublicKeyToken=null`。|  
+|“属性”|此事件源的名称。 此名称由**OnEvent**条目以引用源。|  
+|技术|承载清单中指示的事件源的技术类型。 "WF"用于 Windows Workflow Foundation 和"WCF"用于 Windows Communication Framework。|  
+|清单|要用作事件源的类型的程序集限定类名。 例如： `TopNamespace.SubNameSpace.ContainingClass+NestedClass, MyAssembly, Version=1.3.0.0, Culture=neutral, PublicKeyToken=b17a5c561934e08`<br /><br /> 如果没有公钥标记，使用`PublicKeyToken=null`。|  
   
 ## <a name="example"></a>示例  
- 下面的示例包含两个**EventSource**元素，一个目标 WF 和一个目标 WCF。  
+ 下面的示例包含两个**EventSource**元素，一个以 WF 为目标和一个以 WCF 为目标。  
   
 ```  
 <!-- WF -->  

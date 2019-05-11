@@ -1,5 +1,5 @@
 ---
-title: 配置 EDI 确认接收 |Microsoft 文档
+title: 配置 EDI 确认的接收 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ee41a04bbef8a5651acedf1df85fc5d93349e9ea
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: e877edd9860c72019acce9e67e443e507f4a26c0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26005238"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355179"
 ---
 # <a name="configuring-the-receiving-of-edi-acknowledgments"></a>配置 EDI 确认的接收
-在 BizTalk Server 中，通过引入双向协议，你可以设置为发送确认配置相同协议中接收的确认。 通过在不同的单向协议选项卡中指定属性可完成此操作。 有关如何配置的确认消息的接收的信息，请参阅[配置发送和接收的 EDI 确认](../core/configuring-the-sending-and-receiving-of-edi-acknowledgments.md)。  
+BizTalk Server 中引入的双向协议，您可以设置配置为发送确认的同一协议中接收的确认。 这样通过不同的单向协议选项卡中指定属性。 有关如何配置接收确认的信息，请参阅[配置发送和接收的 EDI 确认](../core/configuring-the-sending-and-receiving-of-edi-acknowledgments.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [配置 EDI 确认](../core/configuring-edi-acknowledgments.md)

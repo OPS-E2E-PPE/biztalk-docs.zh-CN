@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7a1732e5e41cd60f6c98f435197e2e9c6284e4dd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fa0de25c96ec7d685fa68b1d2bd675d95dea0cda
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991734"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378074"
 ---
 # <a name="frr-send-port-for-messages-to-swift"></a>用于发送到 SWIFT 消息的 FRR 发送端口
 若要启用 FIN 响应对帐 (FRR)，必须设置为 MQSeries 向 SAA 通过 BizTalk 适配器发送一条消息的 FRR 发送端口。 此发送端口路由任何消息通过自定义的 FRR 发送管道组件，则必须使用以下管道组件创建：  

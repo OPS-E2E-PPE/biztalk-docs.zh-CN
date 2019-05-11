@@ -18,12 +18,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7f19db0461fc4dc5584fa0774ba0476e3ee471b8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e56eb836ffde957244b5ca80e6d7491f9e8c207c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36969766"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378958"
 ---
 # <a name="configuring-a4swift-site-groups"></a>配置 A4SWIFT 站点组
 您需要创建相应的网站用户组，可以锁定消息修复和新提交配置过程中创建的文档库上的权限。 若要执行此操作与在上一部分中的示例，A4SWIFT 管理员会转到 MRSR 站点并设置以下站点组：  

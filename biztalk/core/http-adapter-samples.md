@@ -15,43 +15,43 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f7682a16bd298ed58cf55e5122603bb2b3af9003
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1747a9bb28bc84dc0f6772435411d07557bf463e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977966"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383115"
 ---
 # <a name="http-adapter-samples"></a>HTTP 适配器示例
-本部分中包含的示例演示 BizTalk HTTP 适配器的高级功能。  
+本节包含演示使用 BizTalk HTTP 适配器时的高级的功能的示例。  
   
 > [!NOTE]
->  在运行此示例之前，需要执行以下步骤：  
+>  运行此示例之前，需要执行以下步骤：  
 > 
 > 1. 打开 IIS，添加 ISAPI 和 CGI 限制：  
 > 
->    单击左侧面板中的计算机名称，再单击右侧面板中的“ISAPI 和 CGI 限制”，然后添加 ISAPI 或 CGI 路径：  
+>    在左面板中，单击计算机名称，然后单击"ISAPI 和 CGI 限制"的右侧面板中，然后添加 ISAPI 或 CGI 路径：  
 > 
->    在 64 位计算机上添加： C:\Program Files (x86) \Microsoft BizTalk Server\<版本\>\HttpReceive64\BTSHTTPReceive.dll  
+>    在 64 位计算机上添加： C:\Program Files (x86)\Microsoft BizTalk Server \<version\>\HttpReceive64\BTSHTTPReceive.dll  
 > 
->    在 32 位计算机上添加： C:\Program Files (x86) \Microsoft BizTalk Server\<版本\>\HttpReceive\BTSHTTPReceive.dll  
+>    在 32 位计算机上添加： C:\Program Files (x86)\Microsoft BizTalk Server \<version\>\HttpReceive\BTSHTTPReceive.dll  
 > 
 >    检查允许的扩展路径或执行。  
->    2.  单击左侧面板中的“HTTPRequestResponseSample”，再单击中间面板中的“处理程序映射”，然后单击“添加脚本映射”并进行以下设置：  
+>    2.  左面板中，单击"HTTPRequestResponseSample"，中间面板中，单击"处理程序映射"，然后单击"添加脚本映射"，使用以下设置：  
 > 
->    请求路径：BTSHTTPReceive.dll  
+>    请求路径： btshttpreceive.dll  
 > 
 >    可执行文件：  
 > 
->    在 64 位计算机上添加： C:\Program Files (x86) \Microsoft BizTalk Server\<版本\>\HttpReceive64\  
+>    64 位计算机上添加： C:\Program Files (x86)\Microsoft BizTalk Server \<version\>\HttpReceive64\  
 > 
->    在 32 位计算机上添加： C:\Program Files (x86) \Microsoft BizTalk Server\<版本\>\HttpReceive\  
+>    在 32 位计算机上添加： C:\Program Files (x86)\Microsoft BizTalk Server \<version\>\HttpReceive\  
 > 
 >    请求限制：  
 > 
->    动词： POST  
+>    谓词：发布  
 > 
->    访问： 脚本  
+>    访问：脚本  
   
 ## <a name="in-this-section"></a>本节内容  
   

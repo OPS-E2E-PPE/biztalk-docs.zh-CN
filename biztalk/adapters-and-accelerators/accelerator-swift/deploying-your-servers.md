@@ -1,5 +1,5 @@
 ---
-title: 部署你的服务器 |Microsoft 文档
+title: 部署服务器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8fc3da3798e78e9b5fcf1ce09180c43e10417997
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 566a2ed7f24a175bb75733906634dfd2e158e557
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26005398"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377898"
 ---
-# <a name="deploying-your-servers"></a>部署你的服务器
-本部分提供有关将每个中的服务器配置的说明你[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]部署。 配置网络后你可以通过执行以下步骤部署每个服务器上的软件。  
+# <a name="deploying-your-servers"></a>部署服务器
+本部分提供有关配置的每个服务器中的说明在[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]部署。 配置网络后，通过使用以下步骤部署每个服务器上的软件。  
   
- 在开始之前服务器部署，请确保你阅读并执行步骤中所述部署准备[为部署做好准备](../../adapters-and-accelerators/accelerator-swift/preparing-for-deployment.md)。 未能遵循上一节中的规范性指南可能导致的未知和不受支持配置的部署 （和后续步骤可能会失败）。  
+ 在开始之前服务器部署，请确保您阅读并完成步骤中所述部署准备[为部署做好准备](../../adapters-and-accelerators/accelerator-swift/preparing-for-deployment.md)。 未能遵循上一节中的说明性指导可能会导致的未知和不受支持配置的部署 （和后续步骤可能会失败）。  
   
  有关详细信息，请参阅 BizTalk Server 部署指南。  
   

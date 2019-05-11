@@ -19,12 +19,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b1590ad1450453602b4dd5f25b2d52a4364787af
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d22f0431e59f2cae0aecf3e3dc8284a41c16069a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996766"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380141"
 ---
 # <a name="map-components"></a>映射组件
 映射的大多数组件存储在映射文件（扩展名为 .btm）中。 该文件中存储的项包括：  

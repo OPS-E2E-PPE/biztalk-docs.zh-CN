@@ -12,24 +12,24 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f8d36df63d1bcad0ebd39bd828a1a9407e6cc480
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 73214ab78dfb262113df25e55cec76b6cc08f473
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977102"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355719"
 ---
 # <a name="configuring-fallback-charset-and-separator-properties-edifact"></a>配置回退字符集和分隔符属性 (EDIFACT)
-在回滚协议中，您可以指定在为传出 EDIFACT 消息创建信封时 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用哪个字符集 (UNMA) 来验证参与方属性。 此外可以指定将交换中的分段使用哪些分隔符和终止符 (UNB)。  
+在后备协议中，您可以指定字符集 (UNA)[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将用于创建为传出 EDIFACT 消息信封时验证参与方属性。 此外可以指定将交换中的分段使用哪些分隔符和终止符 (UNB)。  
   
- 在 UNA 段中，可以定义 BizTalk Server 如何生成它发送到参与方的 EDIFACT 编码交换的 UNA 段。 UNA 段定义将用作 EDIFACT 编码的交换的分隔符和指示器的字符。 使用此段，仅当该交换包含非标准分隔符字符。  
+ 在 UNA 段中，可以定义 BizTalk Server 如何生成它发送到参与方的 EDIFACT 编码交换的 UNA 段。 UNA 段定义将用作分隔符和指示器的 EDIFACT 编码交换的字符。 使用此段，仅当该交换包含非标准分隔符字符。  
   
  在 UNB 段定义将设置为使用的 EDIFACT 字符集。  
   
-## <a name="prerequisites"></a>必要條件  
- 必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组或 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators 组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 必须以成员的身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理员或[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]B2B Operators 组。  
   
-### <a name="to-configure-the-character-set-and-separators"></a>配置字符集和分隔符  
+### <a name="to-configure-the-character-set-and-separators"></a>若要配置字符集和分隔符  
   
 1. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，右键单击**方**节点，，然后单击**EDIFACT 后备设置**。  
   
@@ -39,7 +39,7 @@ ms.locfileid: "36977102"
   
    1.  有关**标识符 (UNB1.1)**，为要应用于传出交换的 EDIFACT 字符集输入。 这是必填字段。  
   
-   2.  有关**版本 (UNB1.2)**，选择介于**1**并**4**。 此字段为可选字段。  
+   2.  有关**版本 (UNB1.2)**，选择介于**1**并**4**。 这是一个可选字段。  
   
 4. 在中**分隔符**部分中，执行以下操作：  
   
@@ -55,7 +55,7 @@ ms.locfileid: "36977102"
   
    6.  有关**段终止符 (UNA6)**，用于指示 EDI 段尾段终止符输入的值。  
   
-   7.  有关**UNA6 后缀**，选择 BizTalk Server 将与段标识符，或者使用的字符**None**， **CR** （回车符）、 **LF**（换行符），或**CR LF** （回车符/换行符）。 如果指定后缀，则段终止符数据元素可以为空。 如果段终止符留空，则必须指定后缀。 段终止符和后缀的组合可以采用以下任何形式：  
+   7.  有关**UNA6 后缀**，选择 BizTalk Server 将与段标识符，或者使用的字符**None**， **CR** （回车符）、 **LF**（换行符），或**CR LF** （回车符/换行符）。 如果指定了后缀，则段终止符数据元素可以为空。 如果段终止符留空，则必须指定后缀。 段终止符和后缀的组合可以是以下任一项：  
   
        -   段终止符  
   

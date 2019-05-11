@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d980b13224918ae66d4ae35ec67f1bf3c3dba8ca
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fa4611ba6ae23b8e752690e5f15f022ffc53846d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971086"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376215"
 ---
 # <a name="receive-oracle-database-change-notifications-using-the-wcf-service-model1"></a>接收使用 WCF 服务 Model1 Oracle 数据库更改通知
 本主题演示如何配置[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]从 Oracle 数据库接收查询通知消息。 为了演示通知，请考虑表中的，ACCOUNTACTIVITY，"处理"列。 一条新记录插入到此表时，状态列的值设置为 ' n '。 可以配置要通过使用用于检索具有与"处理"列的所有记录的 SQL 语句注册通知接收通知的适配器 ' n '。 您可以通过指定的 SQL 语句来实现**NotificationStatement**属性绑定。 一旦适配器客户端收到通知，它可以包含用于执行对 Oracle 数据库的所有后续任务的逻辑。 在此示例中，为简单起见，适配器客户端列出具有"处理"列作为表中的所有记录 ' n '。  
@@ -292,7 +292,7 @@ namespace OracleDBBindingNamespace {
   
    ```  
   
-9. 将服务终结点添加到服务主机。 为此，请执行以下操作：  
+9. 将服务终结点添加到服务主机。 若要执行此操作：  
   
    - 使用在步骤 5 中创建的绑定。  
   

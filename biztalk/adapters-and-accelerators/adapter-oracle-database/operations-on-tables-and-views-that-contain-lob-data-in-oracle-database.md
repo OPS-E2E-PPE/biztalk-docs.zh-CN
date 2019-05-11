@@ -26,12 +26,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a35be7008c47e46ca65962d113c4604c1cfad42b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6a520d4d5e46131111c1f433b3b47485bae3a38b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984294"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376322"
 ---
 # <a name="operations-on-tables-and-views-that-contain-lob-data-in-oracle-database"></a>对表和视图包含在 Oracle 数据库中的 LOB 数据的操作
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]对 Oracle 大型对象 (LOB) 数据类型提供支持：  

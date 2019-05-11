@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9d7237037794168ffb136c95734582b3df95db48
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 965e5334da8e76e6172ab5236cfda948e4d8a93c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015190"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376809"
 ---
 # <a name="considerations-for-receiving-database-change-notifications-using-the-oracle-database-adapter"></a>接收数据库更改通知使用的 Oracle 数据库适配器时的注意事项
 本主题提供的一些注意事项和最佳实践，您在使用时必须牢记于心[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]从 Oracle 数据库接收数据库通知。  
@@ -51,11 +51,11 @@ ms.locfileid: "37015190"
   
   ```  
   
-   请注意内的值**\<信息\>** 元素。 此值提供为其接收通知消息操作的信息。 你的应用程序应具有的功能中的值中提取**\<信息\>** 元素，然后根据值，执行后续任务。 本主题[处理通知消息，以完成特定任务在 Oracle 数据库中](../../adapters-and-accelerators/adapter-oracle-database/process-notification-messages-to-run-specific-tasks-in-oracle-db-using-biztalk.md)说明了如何在值中提取**\<信息\>** 元素。  
+   请注意内的值 **\<信息\>** 元素。 此值提供为其接收通知消息操作的信息。 你的应用程序应具有的功能中的值中提取 **\<信息\>** 元素，然后根据值，执行后续任务。 本主题[处理通知消息，以完成特定任务在 Oracle 数据库中](../../adapters-and-accelerators/adapter-oracle-database/process-notification-messages-to-run-specific-tasks-in-oracle-db-using-biztalk.md)说明了如何在值中提取**\<信息\>** 元素。  
   
 - 理想情况下，客户端应用程序收到通知后，它应更新为其已收到通知，以便后续通知不能用于同一条记录的记录。 例如，考虑**ACCOUNTACTIVITY**具有表**处理**列。 对于所有新记录插入到**ACCOUNTACTIVITY**表中的值**处理**列始终是 ' n '。 例如，在插入操作，在中记录**ACCOUNTACTIVITY**表将如下所示：  
   
-  |帐户事务 ID|已处理|  
+  |帐户事务 ID|处理|  
   |----------------------------|---------------|  
   |10001|n|  
   
@@ -67,7 +67,7 @@ ms.locfileid: "37015190"
   
    之后，接收通知，客户端应用程序必须设置的值**处理**为 y 的列，以便通知语句不会进行的记录的有关已通知的操作。 因此，若要实现此目的，客户端应用程序必须执行更新操作上**ACCOUNTACTIVITY**表。 更新操作后，该记录中**ACCOUNTACTIVITY**表将如下所示：  
   
-  |帐户事务 ID|已处理|  
+  |帐户事务 ID|处理|  
   |----------------------------|---------------|  
   |10001|y|  
   

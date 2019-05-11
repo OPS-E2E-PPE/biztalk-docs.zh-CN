@@ -12,14 +12,14 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 252da9de050c228a7b2d8a4f549d2d084e2a2f81
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5db094dafd795b27095179b38c55e81bc36d44be
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978702"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65294951"
 ---
-# <a name="portal-alerts-page"></a>“门户警报”页
+# <a name="portal-alerts-page"></a>门户警报页
 图 1 显示了警报页，其中包含两个部分：  
 
 - 主要部分显示用于创建新的警报和现有警报的列表的链接。 每个警报有一个对应的链接，您可以订阅警报。 您还可以单击要查看警报详细信息、 创建的新订阅的警报，并删除该警报的操作列中的图标。  

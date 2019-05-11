@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dbc2db94a98e7bfca6b5fc5b9c16ceb304b5d22b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e0a4f9fbc64d8572b8dcc5bcebc85e28e440942c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988462"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377118"
 ---
 # <a name="network-requirements"></a>网络要求
 您将需要以下的网络组件，来构建规定的部署体系结构：  

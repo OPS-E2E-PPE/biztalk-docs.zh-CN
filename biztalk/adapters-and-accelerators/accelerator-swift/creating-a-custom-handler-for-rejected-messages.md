@@ -1,5 +1,5 @@
 ---
-title: 创建自定义处理程序拒绝消息 |Microsoft 文档
+title: 创建自定义处理程序被拒绝消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,21 +16,21 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: baa02ad0fcb0236ec879e43b44a891fcdf591beb
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: f7fb2ebe02d4f64923239bb67aa3667ac4f3ff0b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25963779"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378501"
 ---
-# <a name="creating-a-custom-handler-for-rejected-messages"></a>为被拒绝的邮件创建自定义处理程序
-如果在验证或批准阶段中，拒绝消息[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]将消息返回至工作流 （这在此情况下是始终修复，即使创建该工作流中的第一个阶段） 定义的第一个阶段。 但是，如果工作流的第一个阶段会拒绝该消息，修复业务流程将发布消息到 MessageBox 具有提升的属性，该值指示 MrsrRepair 业务流程已拒绝该消息。 若要处理这些消息，你可以创建自定义处理 （业务流程） 来订阅这些提升的属性并处理所需的消息。  
+# <a name="creating-a-custom-handler-for-rejected-messages"></a>为已拒绝消息创建自定义处理程序
+如果在验证或审批阶段中，拒绝消息，则[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]该消息返回给工作流 （这在此情况下是始终修复，即使创建工作流中的第一个阶段） 定义的第一个阶段。 但是，如果工作流的第一个阶段会拒绝该消息，修复业务流程将消息发布到 MessageBox 与升级的属性，该值指示 MrsrRepair 业务流程已拒绝该消息。 若要处理这些消息，可以创建一个自定义处理程序 （业务流程），订阅这些升级的属性，并处理所需的消息。  
   
- MrsrRepair 业务流程中有多个原因情况下，一条消息可能会失败。 不，业务流程提升下表中的属性，并将这些属性分配值，或表的右侧列中显示的值之一。  
+ 一条消息失败 MrsrRepair 业务流程中存在多个原因。 当它执行业务流程升级下表中的属性，并将这些属性分配值，或显示表的右侧列中的值之一。  
   
 |属性|值|  
 |--------------|------------|  
-|BTS。操作|A4SWIFT_MRSRFailed|  
-|A4SWIFT_MRSRFailedReason|超时<br /><br /> 被拒绝 （表示消息已被拒绝来自第一个阶段）<br /><br /> CantRepairInInfoPath|  
-|A4SWIFT_MRSRLastStage|\<消息在失败之前已在最后一个阶段 （角色） 的名称\>|  
-|A4SWIFT_MRSRDepartment|\<部门的名称\>|
+|BTS.Operation|A4SWIFT_MRSRFailed|  
+|A4SWIFT_MRSRFailedReason|超时<br /><br /> 已拒绝 （表示消息已被拒绝来自第一个阶段）<br /><br /> CantRepairInInfoPath|  
+|A4SWIFT_MRSRLastStage|\<消息已在失败之前的最后一个阶段 （角色） 的名称\>|  
+|A4SWIFT_MRSRDepartment|\<系的名称\>|

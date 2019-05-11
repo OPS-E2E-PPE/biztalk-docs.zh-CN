@@ -1,5 +1,5 @@
 ---
-title: 安装 SSO |Microsoft 文档
+title: 安装 SSO |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,21 +15,21 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1aca387eea00ca2caf95ac948cf1fae26bb06b6b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 35cb450eb1d9005afbe0068d2697beba94692361
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22257069"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382063"
 ---
 # <a name="installing-sso"></a>安装 SSO
-以下各部分包含有关安装企业单一登录功能的信息。 由于 SSO 与其他功能和系统的关系复杂并且它对于系统安全性至关重要，因此应在安装企业单一登录之前仔细阅读本部分。  
+以下部分包含有关安装企业单一登录功能的信息。 由于 SSO 和其他功能与系统之间的复杂关系，并且由于其系统安全性至关重要，应该在安装企业单一登录之前仔细阅读此部分。  
   
- 此外，建议检查有关安装企业单一登录的最新软件必备组件。  
+ 此外建议你查看安装企业单一登录的最新的软件先决条件。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [升级从早期版本的 SSO](../core/upgrading-from-a-previous-version-of-sso.md)  
+-   [从早期版本的 SSO 升级](../core/upgrading-from-a-previous-version-of-sso.md)  
   
 -   [标准 SSO 安装选项](../core/standard-sso-installation-options.md)  
   

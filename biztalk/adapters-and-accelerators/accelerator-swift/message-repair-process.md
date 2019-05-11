@@ -18,12 +18,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bb8e8cd5a23cd0187b5476688a00d1ca800c45d4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6f9f42b23a7849c918f583946fd2c8e7cace4bf8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999062"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377211"
 ---
 # <a name="message-repair-process"></a>消息修复进程
 默认情况下， [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] MessageBox 数据库的挂起队列中挂起失败的消息。 此过程处理独立于成功的消息失败的消息。 使用此默认的机制，但是，可以检索失败的消息并修复它们的能力有限。 消息修复和新提交的功能[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]使[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]用户修复一条消息并将其重新提交。 另一个[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]然后，用户可以验证修复，并且第三个可以批准修复。  

@@ -1,5 +1,5 @@
 ---
-title: 编译和测试映射 |Microsoft 文档
+title: 编译和测试映射 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eca31af2361bdbe416b5cafa6d51fbf79cc128a8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 031c2d0d2ed838ada4ace8951a98a8ecfd2e5390
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231285"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356901"
 ---
 # <a name="compiling-and-testing-maps"></a>编译和测试映射
-在建立映射之后，接下来要执行的步骤就是对其进行验证和测试。 本部分对验证和测试映射进行了逐步说明。  
+开发映射后下, 一步是验证，并对其进行测试。 本部分提供有关验证和测试映射的分步说明。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -30,8 +30,8 @@ ms.locfileid: "22231285"
   
 -   [验证和测试映射](../core/how-to-configure-map-validation-and-test-parameters.md)  
   
--   [如何调试地图](../core/how-to-debug-maps.md)  
+-   [如何调试映射](../core/how-to-debug-maps.md)  
   
--   [如何创建多个部分组成的映射](../core/how-to-create-multi-part-mappings.md)  
+-   [如何创建多部分映射](../core/how-to-create-multi-part-mappings.md)  
   
 -   [如何指定 XSLT 输出设置](../core/how-to-specify-xslt-output-settings.md)

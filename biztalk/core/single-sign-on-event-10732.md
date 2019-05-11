@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10732 |Microsoft Docs
+title: 单一登录：事件 10732 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d5cafb7335964530bf1aed09cc9de3432e1121fc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 960b2fe2339c8f42b2aebd3d68a276bec4846974
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015662"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291893"
 ---
-# <a name="single-sign-on-event-10732"></a>单一登录： 事件 10732
+# <a name="single-sign-on-event-10732"></a>单一登录：事件 10732
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                                        |
@@ -30,14 +30,14 @@ ms.locfileid: "37015662"
 |  事件源   |                                                                 ENTSSO                                                                 |
 |    组件    |                                                                  N\A                                                                   |
 |  符号名称  |                                                    SSO_INFO_PS_SET_WINDOWS_PASSWORD                                                    |
-|  消息正文   | 在 SSO 数据库中成功更新了 Windows 密码。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> Windows 帐户： %2\\%3 |
+|  消息正文   | SSO database.%r 中已成功更新 Windows 密码<br /><br /> 跟踪 ID: %1 %r<br /><br /> Windows 帐户： %2\\%3 |
 
 ## <a name="explanation"></a>解释  
- 此信息事件表示在 SSO 数据库中成功更新了 Windows 密码。  
+ 此信息事件表明 SSO 数据库中已成功更新 Windows 密码。  
 
 ## <a name="user-action"></a>用户操作  
 
-- 不必进行用户操作。  
+- 不不需要任何用户操作  
 
   有关详细信息，请参阅下列资源：  
 

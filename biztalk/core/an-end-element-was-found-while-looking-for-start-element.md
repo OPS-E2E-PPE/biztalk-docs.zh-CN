@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2e200f4ffd8d822a5c2bb1a0bad74a60e84a408a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b44cd404242c19ebbfbc92b358fb33de9b510b95
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992425"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360195"
 ---
 # <a name="an-end-element-was-found-while-looking-for-start-element"></a>查找 Start 元素时发现一个 End 元素
 ## <a name="details"></a>详细信息  
@@ -33,7 +33,7 @@ ms.locfileid: "36992425"
 |  消息正文   | 名称的 EndElement{0}具有名称查找的 StartElement 时已发现{1}，在深度 {2} |
   
 ## <a name="explanation"></a>解释  
- 此错误/警告/信息事件表明 BizTalk Server 无法处理传入的 XML 消息（分析后）或传出的 XML 消息（序列化前），因为 XML 消息未通过验证。 XML 消息不包含标头或数据元素的结束标记。  
+ 此错误/警告/信息事件表明 BizTalk Server 无法处理传入 XML 消息 （分析后） 或传出 XML 消息 （序列化前） 因为 XML 消息未通过验证。 XML 消息不包含标头或数据元素的结束标记。  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请向 XML 消息中添加相应的结束标记或尾部，然后重新发送消息。
+ 若要解决此错误，请向 XML 消息，并添加相应的结束标记或尾部，然后重新发送消息。

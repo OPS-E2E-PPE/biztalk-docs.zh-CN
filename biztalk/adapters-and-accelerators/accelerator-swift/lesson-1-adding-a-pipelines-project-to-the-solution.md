@@ -1,5 +1,5 @@
 ---
-title: 第 1 课： 向解决方案添加管道项目 |Microsoft Docs
+title: 第 1 课：向解决方案添加管道项目 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cc2d7081b7f07cb50200d16415394f48651f525e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 81f7f27a106a4ec096158f73cc3f64196ff63325
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982974"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377301"
 ---
-# <a name="lesson-1-adding-a-pipelines-project-to-the-solution"></a>第 1 课： 向解决方案添加管道项目
+# <a name="lesson-1-adding-a-pipelines-project-to-the-solution"></a>第 1 课：向解决方案添加管道项目
 在本课程中，添加新的 BizTalk 项目的 SWIFT 管道到解决方案以便您可以自定义发送和接收管道。  
   
 ### <a name="to-add-a-new-swift-pipelines-project-to-the-solution"></a>若要向解决方案添加新的 SWIFT 管道项目  
@@ -41,6 +41,6 @@ ms.locfileid: "36982974"
   
     [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] 将新项目添加到解决方案资源管理器，并创建项目文件夹和文件中\<*驱动器*\>: \Labs\SWIFTProject 文件夹。  
   
-7. 将应用到 SWIFTPipelines 项目模块 2 的第 2 课中创建的程序集密钥文件。 有关详细信息，请参阅[第 2 课： 为 swift 架构项目创建强名称 BizTalk 程序集](../../adapters-and-accelerators/accelerator-swift/lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project.md)。  
+7. 将应用到 SWIFTPipelines 项目模块 2 的第 2 课中创建的程序集密钥文件。 有关详细信息，请参阅[第 2 课：创建 swift 架构项目的强名称的 BizTalk 程序集](../../adapters-and-accelerators/accelerator-swift/lesson-2-creating-a-strong-named-biztalk-assembly-for-the-swiftschemas-project.md)。  
   
-   请继续执行[第 2 课： 添加项目引用](../../adapters-and-accelerators/accelerator-swift/lesson-2-adding-project-references.md)。
+   请继续执行[第 2 课：添加项目引用](../../adapters-and-accelerators/accelerator-swift/lesson-2-adding-project-references.md)。

@@ -12,21 +12,21 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b9f99849a812e859f527b3f39a2184508d244a29
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 57eaeee848ae5c9ea316b9f0b5998805581faca1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004454"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358283"
 ---
 # <a name="batching-outgoing-edi-messages"></a>对传出 EDI 消息进行批处理
-如果已为协议（与将接收它的业务合作伙伴相关联）启用了批处理，则 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将对 EDI 事务集进行批处理。 使用协议的 EDI 属性可以执行以下操作：  
+Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将 EDI 事务集如果批处理已启用的关联将接收它的业务合作伙伴的协议。 为协议的 EDI 属性可以执行以下操作：  
   
 - 定义多个传出批处理  
   
 - 定义交换  
   
-- 定义交换中的组  
+- 交换中定义的组  
   
 - 设置批处理发布条件  
   
@@ -42,7 +42,7 @@ ms.locfileid: "37004454"
   
 - EDI 批处理业务流程 XML 事务集组装成 EDI 交换，并验证和根据协议的 EDI 属性将交换传送。  
   
-  EDI 批处理（又称为交换）包含消息组，而消息组包含各个消息。 传出批处理可包含多个组，不过每一种文档类型只允许有一个组。 组中可以包含多个事务集，但每个事务集必须属于相同的文档类型。 消息信封用于包装各个事务集、各个组和整个交换。  
+  EDI 批，又称为交换，包含消息组，而消息组包含各个消息。 传出批处理可包含多个组，但每个文档类型的一个组。 一个组可以包含多个事务集，但每个必须文档类型相同。 消息信封用于包装各个事务集、 单个组和整个交换。  
   
 ## <a name="in-this-section"></a>本节内容  
   

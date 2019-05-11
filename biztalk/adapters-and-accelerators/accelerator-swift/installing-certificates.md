@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 111bd267bc7d0bc12d582c3b74846b8874ed8b4d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4d1593c28186e0b5f96c749e67469257592e291d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012542"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377287"
 ---
 # <a name="installing-certificates"></a>安装证书
 若要发送、 修复或将消息提交，您必须安装了正确的证书。 本主题介绍如何添加证书。 在生产环境中，请参阅 IT 部门以获得证书。  

@@ -16,15 +16,15 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f7c164e8c0d6713389fd317c8839d72770f07c56
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8f20477988a3a4f60522a7c05270e72ac525dead
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000550"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377310"
 ---
 # <a name="known-issues"></a>已知问题
-本部分包含可帮助你避免与 Microsoft 的错误的有用信息[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]。 已知问题归为以下几个方面：  
+本部分包含可帮助你避免与 Microsoft 的错误的有用信息[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]。 已知的问题分为以下几个方面：  
   
 ## <a name="message-repair-and-new-submission"></a>消息修复和新提交
 
@@ -59,7 +59,7 @@ ms.locfileid: "37000550"
  如果消息修复业务流程将路由到 MessageBox 已修复未分析的消息，它会设置[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]_MRSRDepartment 属性为空字符串，并将其升级。 发送端口不能订阅此属性。  
   
 #### <a name="cannot-save-a-department-if-the-sso-service-has-been-stopped"></a>如果 SSO 服务已停止，无法保存部门  
- 主 SSO 服务器如果尝试添加系，SSO 服务停止时，你都将收到错误，指示\<machinename\>失败。 请检查是否正确配置了 SSO 以及 SSO 服务是否正在该服务器上运行。  
+ 主 SSO 服务器如果尝试添加系，SSO 服务停止时，你都将收到错误，指示\<machinename\>失败。 检查配置了 SSO 以及 SSO 服务正在该服务器上。  
   
 #### <a name="a-department-name-must-not-contain-the-character-"></a>部门名称不得包含字符"~"  
  部门名称包含字符"~"将导致 A4SWIFT 数据库出现问题。  
@@ -67,7 +67,7 @@ ms.locfileid: "37000550"
 #### <a name="signing-infopath-forms"></a>签名 Infopath 窗体  
  对签名的 InfoPath 窗体需要手动完成。  
   
-## <a name="security"></a>Security
+## <a name="security"></a>安全性
 
 #### <a name="mixing-trusted-and-untrusted-hosts-can-enable-spoofing"></a>混合使用受信任和不受信任主机可以启用欺骗  
 

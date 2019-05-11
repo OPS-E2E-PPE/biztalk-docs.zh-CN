@@ -1,5 +1,5 @@
 ---
-title: 成功-创建 XML 实例 |Microsoft 文档
+title: 成功-创建 XML 实例 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6ef12214b75f718de105034f841d004af6516ffd
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 68b0f900c853c28671f5468c6ee5d68eb44231f2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22277893"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379917"
 ---
 # <a name="success---create-xml-instance"></a>成功-创建 XML 实例
 **说明**  

@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 490c1244b8ea63dda255220569f3ccee4e0f70c5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e31545fae97387033fc0c9c97687b8973649f53e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007838"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378368"
 ---
 # <a name="defining-a-custom-bam-view-for-message-repair-and-new-submission-data"></a>定义用于消息修复和新提交数据的自定义 BAM 视图
 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] 安装程序提供了用于定义业务活动和业务视图的 BAM 定义文件。 可以部署 BAM 定义文件中使用该视图中，也可以创建自定义视图，可以将它们添加到 BAM 定义文件。  

@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 117ad9a604f0b0d61cd494da52d84b8aabd4a9eb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7abce71026f0780d25ba586feaa08f53bfa41962
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987894"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292863"
 ---
 # <a name="unable-to-create-binding-element"></a>无法创建绑定元素
 ## <a name="details"></a>详细信息  
@@ -33,10 +33,10 @@ ms.locfileid: "36987894"
 |  消息正文   |                 无法创建绑定的绑定元素"{0}                  |
 
 ## <a name="explanation"></a>解释  
- 此错误表明适配器无法创建运行时配置中指定的绑定。 主要与 Wcf-custom 和 Wcf-customisolated 适配器出现这种情况。  
+ 此错误表明适配器无法创建在运行时配置中指定的绑定。 主要与 Wcf-custom 和 Wcf-customisolated 适配器出现这种情况。  
 
 ## <a name="user-action"></a>用户操作  
- 使用以下过程验证绑定元素是否有效。  
+ 使用以下过程验证绑定元素有效。  
 
 #### <a name="to-verify-binding-elements"></a>若要验证绑定元素  
 
@@ -56,4 +56,4 @@ ms.locfileid: "36987894"
 
 8. 在中**WCF [**<em>传输类型</em>**] 传输属性**对话框中，单击**绑定**选项卡。  
 
-9. 确保配置中指定的绑定元素有效。
+9. 确保在配置中指定的绑定元素有效。

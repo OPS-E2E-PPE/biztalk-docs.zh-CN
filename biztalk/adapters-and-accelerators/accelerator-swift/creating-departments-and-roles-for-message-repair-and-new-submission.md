@@ -20,12 +20,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 21abbaa8b5e3b36dfb5ad9091afa0e05a6d807d1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3fbfe21ff49a8793e818215b72fe7f844cae85e5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988878"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378411"
 ---
 # <a name="creating-departments-and-roles-for-message-repair-and-new-submission"></a>为消息修复和新提交创建部门和角色
 消息修复和新提交涉及以下四个不同的操作：  

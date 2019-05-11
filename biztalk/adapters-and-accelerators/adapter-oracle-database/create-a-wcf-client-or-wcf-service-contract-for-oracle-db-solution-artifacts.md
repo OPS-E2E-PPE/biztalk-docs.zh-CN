@@ -17,12 +17,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1e042fb8a60953996f4651d4a4397f75a264e32
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e24b9efeab379d425d098c4323239bc5a943aad8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967502"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376614"
 ---
 # <a name="generate-a-wcf-client-or-a-wcf-service-contract-for-oracle-database-solution-artifacts"></a>生成 WCF 客户端或 WCF 服务协定用于 Oracle 数据库解决方案项目
 可以使用[!INCLUDE[addadapterservreflong](../../includes/addadapterservreflong-md.md)]生成 WCF 客户端类或针对 Oracle 数据库项目上的所选操作的 WCF 服务协定 （接口）。 您还可以使用 ServiceModel Metadata Utility Tool (svcutil.exe) 来生成 WCF 客户端类或 WCF 服务协定;但是，[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]公开 ServiceModel Metadata Utility Tool 通过标准的 Microsoft Windows 界面的功能。 它还提供浏览和搜索功能所不具备使用 svcutil.exe 工具中，并生成一个基于连接到 Oracle 数据库时选择的绑定属性的配置文件。  
@@ -68,7 +68,7 @@ ms.locfileid: "36967502"
   
 - **OracleDBBindingInterface.cs**。 此文件包含生成的 WCF 服务协定 （接口），并为 POLLINGSTMT 操作的帮助器代码。  
   
-- **OracleDBBindingService.cs**。 此文件包含实现 OracleDBBindingInterface.cs 中定义的接口的类。 可实现业务逻辑，用于处理此类中的 POLLINGSTMT 方法中的轮询查询返回的记录。  
+- **OracleDBBindingService.cs**. 此文件包含实现 OracleDBBindingInterface.cs 中定义的接口的类。 可实现业务逻辑，用于处理此类中的 POLLINGSTMT 方法中的轮询查询返回的记录。  
   
 - **App.config**。此文件包含的绑定配置、 终结点行为，以及基于配置的绑定和连接时所做的选择的服务终结点配置[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]。  
   

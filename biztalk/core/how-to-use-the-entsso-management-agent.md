@@ -12,19 +12,19 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 68c354f2250e9abc6a02ea52f4b7c106f57144e6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e5316fc279ea7dc0c29038ffefb1b16770bf6469
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018473"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383348"
 ---
 # <a name="how-to-use-the-entsso-management-agent"></a>如何使用 ENTSSO 管理代理
-企业单一登录 (SSO) 的此版本包含 Microsoft Identity Integration Server (MIIS) 的管理代理 (MA)，后者将企业 SSO 与 MIIS 的帐户同步功能集成在一起。 这样，MIIS 管理员便可管理 SSO 数据库中的 SSO 映射。  
+此版本的企业单一登录 (SSO) 包含管理代理 (MA) 的 Microsoft Identity Integration Server (MIIS)，其中将企业 SSO 与 MIIS 的帐户同步功能集成起来。 这样，MIIS 管理员来管理 SSO 数据库中的 SSO 映射。  
   
- 在企业 SSO 之间创建映射的 Windows 域帐户 (*域名 \ 用户名*) 和外部凭据。 如果为外部数据源具有 Active Directory 管理代理和管理代理 (示例： RACF MA)，可以使用企业 SSO MA (ENTSSO MA) 来管理 SSO 数据库中的映射。 ENTSSO MA 是*基于呼叫的导出*仅管理代理。  
+ 在企业 SSO 之间创建映射的 Windows 域帐户 (*域名 \ 用户名*) 和外部凭据。 如果为外部数据源具有 Active Directory 管理代理和管理代理 (示例：RACF MA)，可以使用企业 SSO MA (ENTSSO MA) 来管理 SSO 数据库中的映射。 ENTSSO MA 是*基于呼叫的导出*仅管理代理。  
   
- 您需在三个不同的部分配置该管理代理：  
+ 在三个独立的部分中配置管理代理：  
   
 - 配置文件 (ENTSSO.xml)  
   
@@ -32,7 +32,7 @@ ms.locfileid: "37018473"
   
 - ENTSSO 用户界面  
   
-  本部分中的主题将介绍这一配置过程。  
+  在本部分中的主题介绍配置过程。  
   
 ## <a name="in-this-section"></a>本节内容  
   

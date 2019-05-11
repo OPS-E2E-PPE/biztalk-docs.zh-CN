@@ -1,5 +1,5 @@
 ---
-title: 调用平面文件分析引擎 |Microsoft 文档
+title: 调用平面文件解析引擎 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,15 +17,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 90108ff2ade354c51f87499a388ae54135f14c7f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 66142e4d70f317d0baeba75cae6b1f1bcb528140
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22261837"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380854"
 ---
-# <a name="invoking-the-flat-file-parsing-engine"></a>调用分析引擎的平面文件
-可以通过调用调用平面文件分析引擎**分析**方法**IFFDocumentSpec**接口，反过来转换从`IDocumentSpec Interface`从检索到**PipelineContext**。 因为**XmlReader**从返回**分析**方法允许客户端一次检索一个节点，这是自定义解析程序的最佳时机。  
+# <a name="invoking-the-flat-file-parsing-engine"></a>调用平面文件解析引擎
+可以通过调用来调用平面文件解析引擎**分析**方法**IFFDocumentSpec**接口，在进行类型转换`IDocumentSpec Interface`从检索**PipelineContext**。 因为**XmlReader**返回从**分析**方法允许客户端一次检索一个节点，这是一个很好的机会，以自定义分析器。  
   
 ## <a name="example"></a>示例  
   
@@ -49,5 +49,5 @@ while (xr.Read())
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [使用平面文件分析引擎](../core/using-the-flat-file-parsing-engine.md)
+## <a name="see-also"></a>请参阅  
+ [使用平面文件解析引擎](../core/using-the-flat-file-parsing-engine.md)

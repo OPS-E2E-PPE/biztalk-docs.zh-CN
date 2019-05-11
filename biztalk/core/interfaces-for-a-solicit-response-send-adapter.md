@@ -12,20 +12,20 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f5056092886ad9d73d3db3dcc910038bc7dcd6e4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3958629596a11bbfcb6ae109c36ab0237a780542
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024131"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381873"
 ---
-# <a name="interfaces-for-a-solicit-response-send-adapter"></a>用于要求响应发送适配器的接口
-发送适配器与接收适配器使用相同的批处理机制将响应消息提交回服务器中。  
+# <a name="interfaces-for-a-solicit-response-send-adapter"></a>发送适配器的接口的要求响应
+发送适配器使用相同的批处理机制与接收适配器将响应消息提交回服务器。  
   
 > [!NOTE]
->  建议让请求-响应适配器异步处理消息。 如果适配器以同步方式处理消息，会有消息重复的风险。  
+>  建议要求-响应适配器异步是处理消息。 如果适配器处理消息以同步方式，则消息重复的风险。  
   
- 发送适配器需要实现以下接口才能在请求-响应模式中工作：  
+ 发送适配器需要实现以下接口，在要求-响应模式下工作：  
   
 - **IBTTransport**  
   
@@ -41,9 +41,9 @@ ms.locfileid: "37024131"
   
 - **IBTBatchCallBack**  
   
-  对象交互涉及的步骤如下：  
+  中的对象交互涉及的步骤如下所示：  
   
-1. 适配器发送要求消息后，会从目标服务器收到响应消息。 然后会从传输代理获得一个批。  
+1. 适配器发送要求消息后，它将接收返回的响应消息从目标服务器。 然后，它获取一批从传输代理。  
   
 2. 适配器通过调用将响应消息添加到批**ibttransportproxy:: Submitresponsemessage**。  
   
@@ -51,10 +51,10 @@ ms.locfileid: "37024131"
   
 4. 消息引擎调用适配器的**ibtbatchcallback:: Batchcomplete**使用传输代理通知它提交操作的结果的回调方法。  
   
-   下图显示了创建要求-响应发送适配器所涉及的对象交互。  
+   下图显示了发送适配器中创建要求响应所涉及的对象交互。  
   
    ![](../core/media/ebiz-sdk-devadapter13.gif "ebiz_sdk_devadapter13")  
-   要求-响应发送适配器的交互图  
+   要求响应发送适配器的交互图  
   
 ## <a name="see-also"></a>请参阅  
  [适配器变量](../core/adapter-variables.md)   

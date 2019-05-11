@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7f4cf13bb338959ca4cd7d2d25a85749f0ff0171
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e023f205252b04dc5122cfa8c01b617758a25771
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981814"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381333"
 ---
 # <a name="invalid-receiverid-qualifier"></a>ReceiverId 限定符无效
 ## <a name="details"></a>详细信息  

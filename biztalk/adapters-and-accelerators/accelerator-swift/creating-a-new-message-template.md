@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e89c34b29818ab053217b823c6f8a787ce50a15d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cdd76cf788447aa496ac986c9ed9a287958f3b5e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999830"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378517"
 ---
 # <a name="creating-a-new-message-template"></a>创建新的消息模板
 可以通过现有模板创建新的消息模板。 这使自定义窗体，如一份已向其中输入一些数据的标准 SWIFT 窗体上创建新的消息实例的创建者。 使用新的模板，创建者无需输入所有所需使用一个空窗体时的数据。  
@@ -46,7 +46,7 @@ ms.locfileid: "36999830"
   
 8. 在弹出窗口，该值指示窗体包含验证错误，单击**是**。  
   
-9. 在另存为对话框中，选择的文件夹中的模板**将保存在**文本框中，并输入中的文件名**文件名**文本框。 单击 **“保存”**。  
+9. 在另存为对话框中，选择的文件夹中的模板**将保存在**文本框中，并输入中的文件名**文件名**文本框。 单击“保存” 。  
   
 10. 关闭[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]新模板的窗体。  
   

@@ -17,19 +17,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 91fa9b1828a8519dcbf7e1efba1db99ba84f1d0d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9544551d19b595c113407fda4736f0d5d48bd5fa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982446"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376520"
 ---
 # <a name="insert-update-delete-or-select-operations-in-oracle-database-using-the-wcf-service-model"></a>插入、 更新、 删除或使用 WCF 服务模型的 Oracle 数据库中选择操作
 [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]显示一组基本的 Insert、 Update、 Delete 和 Oracle 数据库表和视图的 Select 操作。 通过使用这些操作，可以执行简单的 SQL INSERT、 UPDATE、 SELECT 和 DELETE 语句目标表或视图的 WHERE 子句的限定。 若要执行更复杂的操作，例如 SQL SELECT 查询使用联接运算符，可以使用 SQLEXECUTE 操作。 SQLEXECUTE 操作的详细信息，请参阅[WCF 服务模型中使用 Oracle 数据库执行 SQLEXECUTE 操作](../../adapters-and-accelerators/adapter-oracle-database/run-sqlexecute-operation-in-oracle-database-using-the-wcf-service-model.md)。  
   
  下表总结了基本的 SQL 操作的[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]表和视图的图面。 有关这些操作的完整说明，请参阅[基本插入、 更新、 删除和选择表和视图操作的消息架构](../../adapters-and-accelerators/adapter-oracle-database/message-schemas-for-insert-update-delete-and-select-on-tables-and-views.md)。  
   
-|运算|Description|  
+|操作|Description|  
 |---------------|-----------------|  
 |Insert|插入操作支持多个记录或大容量插入到目标表或视图：<br /><br /> -多个记录的插入操作将行插入到表或视图基于提供的记录集。<br />-如果在大容量插入操作将行插入到表或视图的基础提供 SQL SELECT 查询和列列表。 该查询将返回的记录插入到目标表基于列的列表。|  
 |选择|对基于提供的列名称和一个筛选器字符串，指定 SQL WHERE 子句列表的目标表执行 SQL SELECT 查询。|  
@@ -44,8 +44,8 @@ ms.locfileid: "36982446"
   
 |Oracle 数据库项目|WCF 客户端名称|  
 |------------------------------|---------------------|  
-|表|[架构]表 [TABLE_NAME] 客户端|  
-|“查看”|[架构]视图 [VIEW_NAME] 客户端|  
+|表|[SCHEMA]Table[TABLE_NAME]Client|  
+|“查看”|[SCHEMA]View[VIEW_NAME]Client|  
   
  [架构] = Oracle 集合项目;例如，SCOTT。  
   
@@ -55,12 +55,12 @@ ms.locfileid: "36982446"
   
  下表显示了对表的基本 SQL 操作的方法签名。 签名是相同的视图，只不过视图命名空间和名称替换这些表。  
   
-|运算|方法签名|  
+|操作|方法签名|  
 |---------------|----------------------|  
 |Insert|长时间插入 ([TABLE_NS]。 [TABLE_NAME] RECORDINSERT [] 记录集，字符串 COLUMN_NAMES，查询字符串);|  
-|选择|[TABLE_NS]。[TABLE_NAME]RECORDSELECT [] 选择 (string COLUMN_NAMES，字符串筛选器);|  
+|选择|[TABLE_NS].[TABLE_NAME]RECORDSELECT[] Select(string COLUMN_NAMES, string FILTER);|  
 |Update|长时间更新 ([TABLE_NS]。 [TABLE_NAME] RECORDUPDATE 记录集，筛选器字符串）;|  
-|DELETE|长时间删除 （字符串筛选器）;|  
+|DELETE|Long Delete(string FILTER);|  
   
  [TABLE_NS] = 表命名空间; 的名称例如，microsoft.lobservices.oracledb._2007._03.SCOTT。Table.ACCOUNTACTIVITY。  
   
@@ -113,81 +113,81 @@ public partial class SCOTTTableACCOUNTACTIVITYClient : System.ServiceModel.Clien
   
 ```  
 // Insert records  
-                using (SCOTTTableACCOUNTACTIVITYClient aaTableClient =   
-                    new SCOTTTableACCOUNTACTIVITYClient("OracleDBBinding_SCOTT.Table.ACCOUNTACTIVITY"))  
-                {  
-                    long recsInserted;  
+                using (SCOTTTableACCOUNTACTIVITYClient aaTableClient =   
+                    new SCOTTTableACCOUNTACTIVITYClient("OracleDBBinding_SCOTT.Table.ACCOUNTACTIVITY"))  
+                {  
+                    long recsInserted;  
   
-                    aaTableClient.ClientCredentials.UserName.UserName = "SCOTT";  
-                    aaTableClient.ClientCredentials.UserName.Password = "TIGER";  
+                    aaTableClient.ClientCredentials.UserName.UserName = "SCOTT";  
+                    aaTableClient.ClientCredentials.UserName.Password = "TIGER";  
   
-                    try  
-                    {  
-                        aaTableClient.Open();  
-                    }  
-                    catch (Exception ex)  
-                    {  
-                        // handle exception  
-                        Console.WriteLine("Exception: " + ex.Message);  
-                        throw;  
-                    }  
+                    try  
+                    {  
+                        aaTableClient.Open();  
+                    }  
+                    catch (Exception ex)  
+                    {  
+                        // handle exception  
+                        Console.WriteLine("Exception: " + ex.Message);  
+                        throw;  
+                    }  
   
-                    // Do a multiple record Insert of 2 records for account 100001  
+                    // Do a multiple record Insert of 2 records for account 100001  
   
-                    microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDINSERT[] insertRecs =  
-                        new microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDINSERT[2];  
+                    microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDINSERT[] insertRecs =  
+                        new microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDINSERT[2];  
   
-                                  TID__COMPLEX_TYPE tid = new TID__COMPLEX_TYPE();  
-                                  tid.InlineValue = "tidSequence.NextVal()";  
+                                  TID__COMPLEX_TYPE tid = new TID__COMPLEX_TYPE();  
+                                  tid.InlineValue = "tidSequence.NextVal()";  
   
-                                  ACCOUNT__COMPLEX_TYPE account = new ACCOUNT__COMPLEX_TYPE();  
-                                  account.Value = 100001;  
+                                  ACCOUNT__COMPLEX_TYPE account = new ACCOUNT__COMPLEX_TYPE();  
+                                  account.Value = 100001;  
   
-                    AMOUNT__COMPLEX_TYPE amount = new AMOUNT__COMPLEX_TYPE();  
-                    amount.Value = 400;  
+                    AMOUNT__COMPLEX_TYPE amount = new AMOUNT__COMPLEX_TYPE();  
+                    amount.Value = 400;  
   
-                    TRANSDATE__COMPLEX_TYPE transdate = new TRANSDATE__COMPLEX_TYPE();  
-                    transdate.Value = DateTime.Now.Date;  
+                    TRANSDATE__COMPLEX_TYPE transdate = new TRANSDATE__COMPLEX_TYPE();  
+                    transdate.Value = DateTime.Now.Date;  
   
-                    PROCESSED__COMPLEX_TYPE processed = new PROCESSED__COMPLEX_TYPE();  
-                    processed.Value = "n";  
+                    PROCESSED__COMPLEX_TYPE processed = new PROCESSED__COMPLEX_TYPE();  
+                    processed.Value = "n";  
   
-                    DESCRIPTION__COMPLEX_TYPE description1 = new DESCRIPTION__COMPLEX_TYPE();  
-                    description1.Value = "Inserted Record #1";  
+                    DESCRIPTION__COMPLEX_TYPE description1 = new DESCRIPTION__COMPLEX_TYPE();  
+                    description1.Value = "Inserted Record #1";  
   
-                    DESCRIPTION__COMPLEX_TYPE description2 = new DESCRIPTION__COMPLEX_TYPE();  
-                    description2.Value = "Inserted Record #2";  
+                    DESCRIPTION__COMPLEX_TYPE description2 = new DESCRIPTION__COMPLEX_TYPE();  
+                    description2.Value = "Inserted Record #2";  
   
-                    insertRecs[0] =   
-                        new microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDINSERT();  
-                    insertRecs[0].TID = tid;  
-                    insertRecs[0].ACCOUNT = account;  
-                    insertRecs[0].AMOUNT = amount;  
-                    insertRecs[0].TRANSDATE = transdate;  
-                    insertRecs[0].DESCRIPTION = description1;  
-                    insertRecs[0].PROCESSED = processed;  
+                    insertRecs[0] =   
+                        new microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDINSERT();  
+                    insertRecs[0].TID = tid;  
+                    insertRecs[0].ACCOUNT = account;  
+                    insertRecs[0].AMOUNT = amount;  
+                    insertRecs[0].TRANSDATE = transdate;  
+                    insertRecs[0].DESCRIPTION = description1;  
+                    insertRecs[0].PROCESSED = processed;  
   
-                    insertRecs[1] =   
-                        new microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDINSERT();  
-                    insertRecs[1].TID = tid;  
-                    insertRecs[1].ACCOUNT = account;  
-                    insertRecs[1].AMOUNT = amount;  
-                    insertRecs[1].TRANSDATE = transdate;  
-                    insertRecs[1].DESCRIPTION = description2;  
-                    insertRecs[1].PROCESSED = processed;  
+                    insertRecs[1] =   
+                        new microsoft.lobservices.oracledb._2007._03.SCOTT.Table.ACCOUNTACTIVITY.ACCOUNTACTIVITYRECORDINSERT();  
+                    insertRecs[1].TID = tid;  
+                    insertRecs[1].ACCOUNT = account;  
+                    insertRecs[1].AMOUNT = amount;  
+                    insertRecs[1].TRANSDATE = transdate;  
+                    insertRecs[1].DESCRIPTION = description2;  
+                    insertRecs[1].PROCESSED = processed;  
   
-                    try  
-                    {  
-                        recsInserted = aaTableClient.Insert(insertRecs, null, null);  
-                    }  
-                    catch (Exception ex)  
-                    {  
-                        // handle exception  
-                        Console.WriteLine("Exception: " + ex.Message);  
-                        throw;  
-                    }  
+                    try  
+                    {  
+                        recsInserted = aaTableClient.Insert(insertRecs, null, null);  
+                    }  
+                    catch (Exception ex)  
+                    {  
+                        // handle exception  
+                        Console.WriteLine("Exception: " + ex.Message);  
+                        throw;  
+                    }  
   
-                    Console.WriteLine("Insert Done: {0} records inserted", recsInserted);  
+                    Console.WriteLine("Insert Done: {0} records inserted", recsInserted);  
 ```  
   
 ### <a name="select-operation"></a>选择操作  

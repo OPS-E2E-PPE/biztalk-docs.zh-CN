@@ -19,43 +19,43 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f65455e5ad2a87f2d95afcdebe9a81c0d2f87e4d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e6d7cb6adf314bd5575d354c52c2682138bad784
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000086"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382200"
 ---
 # <a name="improving-the-performance-of-the-archiving-and-purging-process"></a>提高存档和清除进程的性能
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 数据库中存储的数据量有可能增长得非常迅速，这与 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 方案的设计方式、[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 方案所处理的消息数量和消息大小以及跟踪的配置方式都有关。 使数据库大小维持在合理的水平，可提高处理效率并使系统中的数据量在任何给定时间都保持正常。 这样能够发挥出高效而稳定的性能。 此过程的自动化，可免去您手动维护数据库的工作。  
+存储中的数据量[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库可根据设计方式非常快速地增长你[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]方案中，根据的数量和处理的消息的大小在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]方案中，并取决于如何具有配置跟踪。 通过维护你的数据库大小正常级别，处理效率更高，并且在任何给定时间规范化你的系统中的数据量。 这提供了高效的一致性能。 通过自动执行此过程，解放自我您手动维护数据库的负担。  
   
-## <a name="configuring-a-healthy-environment"></a>配置运行状况良好的环境  
- 维护运行状况良好的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 环境的策略主要取决于您的特定方案和运行该方案的硬件。 关键是监视 BizTalk 跟踪 (BizTalkDTADb) 数据库的增长速率和大小。 跟踪数据库的一些表占据大量数据库空间，因此在运行时会影响性能。  
+## <a name="configuring-a-healthy-environment"></a>配置正常运行的环境  
+ 策略维护正常[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境是很大程度上取决于特定方案和硬件运行。 若要监视的重要事项是 BizTalk 跟踪 (BizTalkDTADb) 数据库的大小和增长的速率。 跟踪数据库的一些表占据大量数据库大小，因此将运行时对性能的影响。  
   
- 配置同一个方案，却可以产生数量大不相同的跟踪数据，这取决于跟踪点的数量、用到的不同消息的数量、这些消息的大小以及所使用的消息正文跟踪的级别。 下面是有关的一些重要因素：  
+ 相同的方案可以配置为生成都得到了显著不同数量的跟踪数据基于跟踪点的数量都存在，如何使用许多不同的消息，使用的消息大小和消息正文跟踪的级别。 以下是一些重要因素：  
   
-- 跟踪点（如管道、业务流程和端口）的数量  
+- 跟踪点-例如管道、 业务流程和端口号  
   
-- 跟踪的消息属性数  
+- 跟踪消息属性的数目  
   
 - 每个传入消息的消息数  
   
 - 消息大小  
   
-- 通信速率（平均值和峰值）  
+- 通信速率 （平均值和峰值）  
   
 - 消息正文跟踪配置  
   
-  在涉及自动存档和清除数据时，请考虑需要保存在跟踪数据库中的实时数据量。 您需要根据您的环境调整 DTA 清除和存档作业参数，以便在清除性能不会下降的前提下支持目标实时数据量。  
+  自动存档和清除数据，请考虑需要保留在跟踪数据库中的实时数据量。 您需要调整 DTA 清除和存档作业参数，以根据你的环境，以便清除而不会降低性能可以支持目标实时数据量。  
   
-  DTA 清除和存档作业可在给定时间间隔内清除特定数量的数据。 该作业的处理能力取决于运行的方案、当前数据库大小和硬件。 为了获得稳定的环境，必须在传入跟踪数据的生成和清除之间取得平衡。 在测试环境中，可通过改变数据的生存时段和清除作业的频率来找到平衡。 在平衡状态下，系统将具有持续稳定的吞吐量。 您的目标是在 BizTalk 跟踪数据库表大小导致持续显著的性能问题之前，具有足够的缓冲区。  
+  DTA 清除和存档作业可以在给定的时间间隔内清除一定数量的数据。 作业的容量取决于运行的方案、 当前数据库大小和硬件。 为了获得稳定的环境，必须具有传入的跟踪数据的生成和清除之间的平衡。 在测试环境中，可以通过不同的数据生存时段和清除作业的频率来找到平衡。 在平衡状态下，系统将提供可承受吞吐量。 你的目标是缓冲区的具有足够，然后 BizTalk 跟踪数据库表大小导致持续显著的性能问题。  
   
 ## <a name="performance-limitations"></a>性能限制  
- 清除时的性能对所有方案都是不可调整的。 对于任何方案，跟踪数据量都可能不断增加。 当以持续较低速率清除跟踪数据时，跟踪数据库的大小就会增大，这会使清除性能进一步恶化。  
+ 所有情况下将不能清除时的性能。 对于任何方案，就可以生成数量不断增长的跟踪数据。 当以持续较低速率清除跟踪数据时，会跟踪的数据库大小，清除性能进一步恶化。  
   
- 在负载不可承受的条件下，复制消息正文的速度也会降低，这可能在 MessageBox 数据库中形成积压。 在极端条件下，日常消息正文复制和跟踪会产生消息正文不可用的存档，即使该消息包含相关的实例信息。 通常，高负载阶段和低负载阶段交替进行，使落后的作业在低负载阶段得以弥补。  
+ 在负载不可承受情况下复制消息正文可能也会降低，并且那里可能会积压在 MessageBox 数据库中。 在极端条件下每日消息正文复制和跟踪可能会导致存档消息正文并不可用的即使它包含相关的实例信息。 通常情况下，高负载的时间段与低负载的高峰期的备用和启用作业，以便在低负载时段保持同步。  
   
- 由于不断清除数据库并对存储的跟踪数据进行压缩，存档和清除 BizTalk 跟踪数据库能够大大降低发生负载不可承受情况的可能性。 这些进程极大地减少了手动干预的需要。  
+ 存档和清除 BizTalk 跟踪数据库能够大大降低负载不可承受情况可能会由于数据库的连续修剪和存储的跟踪数据压缩。 这些进程极大地减少需手动干预。  
   
 ## <a name="see-also"></a>请参阅  
  [存档和清除 BizTalk 跟踪数据库](../core/archiving-and-purging-the-biztalk-tracking-database.md)

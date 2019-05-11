@@ -1,5 +1,5 @@
 ---
-title: 附录 c： 使用组件接口 |Microsoft Docs
+title: 附录 C：使用组件接口 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,30 +16,30 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df03df6a1e36fd988109ebe85913512916b4222e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1f15e64837f16701332ff5f527cd14548fbb9974
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968902"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359481"
 ---
-# <a name="appendix-c-using-component-interfaces"></a>附录 c： 使用组件接口
-本部分中的主题介绍如何创建新的组件接口以及如何修改现有组件接口，以便与用于 PeopleSoft Enterprise 的 Microsoft BizTalk 适配器一起使用。 这些主题还介绍了如何对这些组件接口应用安全设置以及如何测试它们。  
+# <a name="appendix-c-using-component-interfaces"></a>附录 C：使用组件接口
+在本部分中的主题介绍如何创建新的组件接口，以及如何修改现有组件接口 — 用于 PeopleSoft Enterprise 的 Microsoft BizTalk 适配器一起使用。 它们还描述如何将安全性应用于这些组件接口以及如何对其进行测试。  
   
  您可以执行下列操作：  
   
-- 将 PeopleSoft 提供的组件接口与应用程序一起使用。  
+- 使用与你的应用程序提供的 PeopleSoft 组件接口。  
   
-   组件接口也称作“企业集成点”(EIP)。  
+   组件接口也称作企业集成点 (EIP)。  
   
-- 修改现有的组件接口。  
+- 修改现有组件接口。  
   
-- 创建新的组件接口。  
+- 创建一个新组件接口。  
   
-  在使用组件接口前，必须应用并测试安全设置。  
+  然后再使用组件接口，必须将应用和测试安全。  
   
 > [!NOTE]
->  本部分仅为补充内容，用于提供帮助，不能代替 PeopleSoft 文档使用。 有关 PeopleSoft 组件接口的完整的最新信息，请参阅 PeopleSoft Online Library。  
+>  本部分被用于有用补充;它不能代替 PeopleSoft 文档。 有关 PeopleSoft 组件接口的完整且最新信息，请参阅 PeopleSoft Online Library。  
   
 ## <a name="in-this-section"></a>本节内容  
   

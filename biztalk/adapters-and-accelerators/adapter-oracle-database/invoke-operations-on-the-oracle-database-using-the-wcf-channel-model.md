@@ -17,12 +17,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c1ff19d925ac8892fdaed62204f4da742d1e86ef
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 95220f03bb427d2a849b23e278763d3beb0d3632
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007414"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376500"
 ---
 # <a name="invoke-operations-on-the-oracle-database-using-the-wcf-channel-model"></a>调用上使用 WCF 通道模型，在 Oracle 数据库的操作
 可在调用操作[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]通过使用**IRequestChannel**或**IOutputChannel**形状将消息发送到适配器。 基本模式是通过使用绑定创建通道工厂为所需的通道形状 (**OracleDBBinding**) 并创建从一个连接 URI 的终结点。 然后，创建**消息**为目标操作的消息架构表示符合的 SOAP 消息的实例。 然后可以将发送这**消息**到[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]使用从通道工厂创建的通道。 如果使用的**IRequestChannel**，你收到的响应。 如果执行对 Oracle 数据库的操作问题[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]将引发**Microsoft.ServiceModel.Channels.Common.TargetSystemException**。  
@@ -150,7 +150,7 @@ ms.locfileid: "37007414"
   
 -   您创建**ChannelFactory\<IOutputChannel\>** 步骤 1 中。  
   
--   在调用**发送**步骤 6 中的通道上的方法。 `channel.Send(messageIn);`的用户。  
+-   在调用**发送**步骤 6 中的通道上的方法。 `channel.Send(messageIn);` 的用户。  
   
 -   不没有返回任何响应消息**IOutputChannel**。  
   

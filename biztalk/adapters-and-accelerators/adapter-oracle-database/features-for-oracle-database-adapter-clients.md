@@ -22,12 +22,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ce283c3fd63f72d67e31806e86bf9caa08555dd9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f369c3a0689898bafb5383e333b980398054d0ac
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976174"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376725"
 ---
 # <a name="features-for-oracle-database-adapter-clients"></a>Oracle 数据库适配器客户端的功能
 除了讨论的主题的功能[概述的 BizTalk 适配器用于 Oracle 数据库](../../adapters-and-accelerators/adapter-oracle-database/overview-of-biztalk-adapter-for-oracle-database.md)，则[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]还提供了可用于适配器客户端的以下功能：  

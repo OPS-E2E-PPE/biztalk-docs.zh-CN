@@ -19,12 +19,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: df24dced4d7075e85b8b002bf90b821ce745f91e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0e0cc2b49c154f930c925ae88ee66889107a63f2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289157"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65379702"
 ---
 # <a name="what-is-an-aggregation"></a>什么是聚合？
 Excel 将聚合定义为预先计算的数据汇总，通过在提问之前准备好答案的方式来提高查询响应时间。 例如，在数据仓库事实表中包含数以万计的行时，检索两种特定产品发货计划的查询可能需要很长时间才能完成，因为必须扫描该事实表才能计算出答案。 然而，如果预先计算了答复此查询的汇总数据，则查询几乎可以即时得到响应。  
@@ -44,6 +44,6 @@ BAM OLAP 多维数据集
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [计划的聚合](../core/scheduled-aggregations.md)  
+-   [计划聚合](../core/scheduled-aggregations.md)  
   
 -   [实时聚合](../core/real-time-aggregations.md)

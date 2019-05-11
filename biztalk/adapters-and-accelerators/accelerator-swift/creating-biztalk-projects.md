@@ -1,5 +1,5 @@
 ---
-title: 创建 BizTalk 项目 |Microsoft 文档
+title: 创建 BizTalk 项目 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 356f382d9d0db29035feb2fcc7ee86b0caf284e1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b3a1e220f546dcd9693d2fe0d33203c256a2507d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22208957"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378430"
 ---
 # <a name="creating-biztalk-projects"></a>创建 BizTalk 项目
-下面的步骤突出显示创建 BizTalk 项目所需的步骤。  
+执行以下步骤重点介绍创建 BizTalk 项目所需的步骤。  
   
 -   [创建架构项目](../../adapters-and-accelerators/accelerator-swift/creating-a-schema-project.md)  
   
 -   [创建管道项目](../../adapters-and-accelerators/accelerator-swift/creating-a-pipeline-project.md)  
   
--   [将 BRE 策略部署的现有消息](../../adapters-and-accelerators/accelerator-swift/deploying-bre-policies-for-existing-messages.md)  
+-   [为现有消息部署 BRE 策略](../../adapters-and-accelerators/accelerator-swift/deploying-bre-policies-for-existing-messages.md)  
   
--   [部署 BIC/北路/国家/地区/货币验证规则](../../adapters-and-accelerators/accelerator-swift/deploying-bic-bei-country-currency-validation-rules.md)
+-   [部署 BIC/BEI/国家（地区）/货币验证规则](../../adapters-and-accelerators/accelerator-swift/deploying-bic-bei-country-currency-validation-rules.md)

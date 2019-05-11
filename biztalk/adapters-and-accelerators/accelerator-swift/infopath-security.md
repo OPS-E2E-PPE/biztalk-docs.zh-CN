@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef3b1eff57f225d90e7f491f0a8f48ef88f00463
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2797cd51e6e013feb6c273b3aace8a007d71a4eb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983574"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377397"
 ---
 # <a name="infopath-security"></a>InfoPath 安全性
 Microsoft [!INCLUDE[btsOfficeNoVersion](../../includes/btsofficenoversion-md.md)] [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)] 2007年会使用 XML 签名来让你使用的数字证书对表单进行数字签名。 XML 签名定义一个标准的基于 XML 的数字签名，用来帮助保护在 XML 文档中包含的数据。 XML 签名是受 World Wide Web 联合会 (W3C) 标准。  

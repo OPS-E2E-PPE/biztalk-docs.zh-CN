@@ -1,5 +1,5 @@
 ---
-title: 在解析过程中遇到错误。 Edifact 交换发生了以下错误 |Microsoft Docs
+title: 解析期间遇到错误。 Edifact 交换发生了以下错误 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 86d891abe7ca75dbbe9052f221970e235b390269
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b7828cbc9c908e9338762081217ab363e71ffc96
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988206"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348994"
 ---
-# <a name="error-encountered-during-parsing-the-edifact-interchange-had-the-following-errors"></a>在解析过程中遇到错误。 EDIFACT 交换发生了以下错误
+# <a name="error-encountered-during-parsing-the-edifact-interchange-had-the-following-errors"></a>解析期间遇到错误。 Edifact 交换发生了以下错误
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                            |
@@ -30,10 +30,10 @@ ms.locfileid: "36988206"
 |  事件源   |                           [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI                           |
 |    组件    |                                                                 EDI 引擎                                                                 |
 |  符号名称  |                                                        EfactInterchangeReceiveError                                                        |
-|  消息正文   | 在解析过程中遇到错误。 Edifact 交换中的 id 为 '{0}，发送方 id{1}，接收方 id{2}发生以下错误： |
+|  消息正文   | 解析期间遇到错误。 Edifact 交换中的 id 为 '{0}，发送方 id{1}，接收方 id{2}发生以下错误： |
   
 ## <a name="explanation"></a>解释  
- 此错误/警告/信息事件表明由于在交换中指出的错误，在分析传入的 EDIFACT 交换时 EDI 接收管道遇到错误。  
+ 此错误/警告/信息事件表明 EDI 接收管道遇到错误，因为交换中指出的错误分析传入的 EDIFACT 交换时。  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请使用错误消息中的信息来标识交换中的错误，然后在产品帮助中确定问题解决方案。
+ 若要解决此错误，需要使用错误消息中的信息来标识交换中的错误，然后确定问题解决方案产品帮助中。

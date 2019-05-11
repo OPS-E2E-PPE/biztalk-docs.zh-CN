@@ -2,15 +2,15 @@
 redirect_url: /biztalk/core/using-biztalk-server-exception-handling1/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: ee3a5831246ad7c88e0150ff01dcd182873d6c5d
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: ed790fdf63c9619baa90db02dba3d4a7971b8ec5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24015844"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359943"
 ---
 # <a name="administering-biztalk-adapter-for-jd-edwards-oneworld"></a>管理用于 JD Edwards OneWorld 的 BizTalk 适配器
-本部分提供了有关管理用于 JD Edwards OneWorld 的 BizTalk 适配器的信息。  
+本部分提供有关管理用于 JD Edwards OneWorld 的 BizTalk 适配器的信息。  
   
 ## <a name="in-this-section"></a>本节内容  
   

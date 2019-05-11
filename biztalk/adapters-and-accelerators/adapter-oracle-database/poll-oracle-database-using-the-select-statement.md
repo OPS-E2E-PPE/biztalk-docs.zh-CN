@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8ee68ce4e3147fa1f7b29a892e79b4b026b02de5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7f5d4a540f5a7e3b6cf589bfe247720aef829cc3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967238"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376257"
 ---
 # <a name="poll-oracle-database-using-the-select-statement"></a>使用 SELECT 语句轮询 Oracle 数据库
 你可以配置[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]通过使用 SELECT 语句，若要连续轮询的表和视图中 Oracle 的 Oracle 数据库接收定期的数据更改消息。 您可以指定为适配器执行定期轮询 Oracle 数据库的轮询语句的 SELECT 语句。 （可选） 还可以指定如果数据中的更改，则执行适配器后轮询 PL/SQL 代码块。 若要更新目标中的查询记录的字段或将查询的记录移到另一个表或视图，通常使用此块。  
@@ -36,7 +36,7 @@ ms.locfileid: "36967238"
 |     **InboundOperationType**     |                                                                                                                                                                       指定是否想要执行轮询或入站操作的通知。 默认值是**轮询**。                                                                                                                                                                        |
 | **PolledDataAvailableStatement** |                        指定适配器执行以确定是否可用于轮询的任何数据的 SQL 语句。 仅当一条记录不可用，SELECT 语句指定的**PollingStatement**将执行属性绑定。 默认值是`SELECT 1 FROM DUAL`，这意味着与否，适配器必须继续轮询而不考虑轮询表是否包含数据。                        |
 |       **PollingInterval**        | 指定的时间间隔，以秒为单位，从该处[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]执行该语句为指定**PolledDataAvailableStatement**属性绑定。 默认值为 500 秒。 轮询间隔确定连续轮询之间的时间间隔。 如果在指定时间间隔内执行该语句，则适配器将休眠的剩余时间间隔中。 |
-|       **PollingStatement**       |                 指定的轮询语句。 若要轮询使用 SELECT 语句，必须指定此绑定属性的 SELECT 语句。 默认值为 null。<br /><br /> 必须指定的值**PollingStatement**绑定属性来启用轮询。 仅当没有数据可用于轮询，该域由执行轮询语句**PolledDataAvailableStatement**属性绑定。                 |
+|       **PollingStatement**       |                 指定的轮询语句。 若要轮询使用 SELECT 语句，必须指定此绑定属性的 SELECT 语句。 默认值为 NULL。<br /><br /> 必须指定的值**PollingStatement**绑定属性来启用轮询。 仅当没有数据可用于轮询，该域由执行轮询语句**PolledDataAvailableStatement**属性绑定。                 |
 |        **PollingAction**         |                                                                                              指定轮询操作的操作。 您可以确定操作使用生成的元数据中的特定操作的轮询操作[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。                                                                                              |
 |      **PostPollStatement**       |                                                                                                                                                         指定在指定的语句之后执行的语句块**PollingStatement**执行绑定属性。                                                                                                                                                          |
 |      **PollWhileDataFound**      |                                     指定是否[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]忽略的轮询间隔，连续执行轮询语句中，如果数据是可用的轮询的表。 如果表中有任何数据，不则适配器将恢复执行轮询语句按照指定的轮询间隔。 默认值为 false。                                     |
@@ -157,7 +157,7 @@ SELECT * FROM ACCOUNTACTIVITY FOR UPDATE
 ### <a name="adding-ports"></a>添加端口  
  请确保为每个逻辑端口中指定以下属性。 端口列中列出的名称是在业务流程中显示的端口的名称。  
 
-|端口|属性|  
+|Port|属性|  
 |----------|----------------|  
 |OracleReceivePort|-设置**标识符**到*OracleReceivePort*<br /><br /> -设置**类型**到*OracleReceivePortType*<br /><br /> -设置**通信模式**到*单向*<br /><br /> -设置**通信方向**到*接收*|  
 |SaveMessagePort|-设置**标识符**到*SaveMessagePort*<br /><br /> -设置**类型**到*SaveMessagePortType*<br /><br /> -设置**通信模式**到*单向*<br /><br /> -设置**通信方向**到*发送*|  
@@ -175,7 +175,7 @@ SELECT * FROM ACCOUNTACTIVITY FOR UPDATE
  现在必须生成 BizTalk 解决方案，并将其部署到[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 有关详细信息，请参阅[构建和运行业务流程](../../core/building-and-running-orchestrations.md)。  
 
 ## <a name="configuring-the-biztalk-application"></a>配置 BizTalk 应用程序  
- 部署 BizTalk 项目后，将前面创建的业务流程下列出**业务流程**BizTalk Server 管理控制台窗格中的。 必须使用 BizTalk Server 管理控制台来配置应用程序。 有关演练，请参阅[演练： 部署基本 BizTalk 应用程序](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)。
+ 部署 BizTalk 项目后，将前面创建的业务流程下列出**业务流程**BizTalk Server 管理控制台窗格中的。 必须使用 BizTalk Server 管理控制台来配置应用程序。 有关演练，请参阅[演练：部署基本 BizTalk 应用程序](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)。
 
  配置应用程序包括：  
 

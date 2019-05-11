@@ -1,5 +1,5 @@
 ---
-title: GetActivityName |Microsoft 文档
+title: GetActivityName | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 55e8f35746f5f4ed1bbbe10a4d45300895340869
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 597b08fc9ea9f19b6c3d7f7e3488ae7f77b2c62f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246341"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387743"
 ---
 # <a name="getactivityname"></a>GetActivityName
-将当前活动的名称推送到堆栈上。  
+将推送到堆栈上当前活动的名称。  
   
 ## <a name="syntax"></a>语法  
   
@@ -35,11 +35,11 @@ ms.locfileid: "22246341"
 ## <a name="pushed-value"></a>推送的值  
  包含当前活动名称的字符串。  
   
-## <a name="remarks"></a>注释  
- Windows Workflow Foundation 所执行的工作为开发人员配置的一系列活动。 在工作流中将为每个活动分配唯一的名称。 根据活动的唯一名称进行筛选，您可以侦听特定活动的数据。  
+## <a name="remarks"></a>备注  
+ Windows Workflow Foundation 作为一系列由开发人员配置的活动执行其工作。 每个活动分配在工作流中的唯一名称。 通过筛选根据其唯一名称，可以拦截特定活动的数据。  
   
 ## <a name="example"></a>示例  
- 下面的示例包含一个配置为在关闭的工作流中查找特定活动 FoodAndDrinksPolicy 的事件筛选器表达式。 这可通过使用的操作包括组合`GetActivityName`， `GetActivityEvent`，和逻辑运算。  
+ 下面的示例包含配置为查找特定活动的事件筛选器表达式-FoodAndDrinksPolicy — 关闭的工作流中。 这是通过使用的操作，包括组合`GetActivityName`， `GetActivityEvent`，和逻辑运算。  
   
 ```  
 <ic:Filter>  
@@ -59,7 +59,7 @@ ms.locfileid: "22246341"
 </ic:Filter>  
 ```  
   
- 该筛选模式常用于 Windows Workflow Foundation 侦听器配置文件。  
+ 此筛选器模式非常常见的 Windows Workflow Foundation 侦听器配置文件。  
   
 > [!NOTE]
->  参数不需要使用引号，除非您明确尝试匹配包含引号的字符串。
+>  参数不需要引号，除非您明确尝试匹配包含引号的字符串。
