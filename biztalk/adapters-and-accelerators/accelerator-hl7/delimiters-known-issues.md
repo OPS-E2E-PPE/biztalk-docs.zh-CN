@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6de686d136d0158315dfd00eba9690b8ffcbdccc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5b7a9c95318f3c95f65ef7b0fdfe616e71bfe3af
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985646"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65255517"
 ---
 # <a name="delimiters-known-issues"></a>分隔符已知的问题
 本部分包含可帮助你避免分隔符错误的有用信息。  

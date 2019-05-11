@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 62a52f7589dc42d3af6b07db6fcbeb926a3d5dbc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f7a260d68d608bb88cc0252ad2a1ec5c125e2b0a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985318"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279813"
 ---
 # <a name="segment-exceeds-maximum-use-description"></a>段超出了最大值使用说明
 ## <a name="details"></a>详细信息  
@@ -36,4 +36,4 @@ ms.locfileid: "36985318"
  此错误/警告/信息事件表明接收管道不无法处理传入的交换，因为该交换包含一个段的更多实例不是架构所允许的。  
   
 ## <a name="user-action"></a>用户操作  
- 若要解决此错误，请确保交换中的段数未超过所允许的最大段数，然后重新发送交换。
+ 若要解决此错误，请确保交换不超过允许的段数，最大值，然后重新发送交换。

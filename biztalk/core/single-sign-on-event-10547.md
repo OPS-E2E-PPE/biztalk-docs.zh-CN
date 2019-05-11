@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10547 |Microsoft Docs
+title: 单一登录：Event 10547 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1af15d6a6259142d243738ab83cabe3e0c63e9c6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a8ec8133a6d2456e2cdafca56ae956f6be1d31a0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010942"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243428"
 ---
-# <a name="single-sign-on-event-10547"></a>单一登录： 事件 10547
+# <a name="single-sign-on-event-10547"></a>单一登录：事件 10547
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                           |
@@ -30,16 +30,16 @@ ms.locfileid: "37010942"
 |  事件源   |                                  ENTSSO                                   |
 |    组件    |                                    CO                                     |
 |  符号名称  |                          SSO_WARN_UPDATE_FAILED                           |
-|  消息正文   | 无法在重新加密过程中更新 SSO 数据库中的凭据。 |
+|  消息正文   | 未能重新加密过程中更新 SSO 数据库中的凭据 |
 
 ## <a name="explanation"></a>解释  
- 此警告事件表示不可能更新凭据以完成新的加密。 当更改主密钥（通过生成新密钥或还原旧密钥）时，将在 SSO 数据库上执行重新加密，以解密使用旧密钥加密的所有密钥，并使用新密钥对其重新加密。 如果已经删除凭据，则会发生此事件，因为凭据正处于重新加密的过程中。  
+ 此警告事件表示没有可以使用新的加密结果更新凭据。 当更改主密钥时，通过生成新密钥或还原旧密钥，重新加密对 SSO 数据库进行解密使用旧密钥加密的所有密钥和使用新密钥重新加密。 如果凭据已删除，因为它们是在重新加密的过程中，会发生此事件。  
 
 ## <a name="user-action"></a>用户操作  
- 若要解决此警告问题，请执行以下操作：  
+ 若要解决此警告，请执行以下操作：  
 
-- 稍候一小段时间等待另一次重新加密；如果未自动发生，请重新启动 SSO 服务，这将触发新的重新加密（如果需要的话）。  
+- 等待一小段延迟; 后进行另一个重新加密如果未自动放弃，重新启动 SSO 服务，这将触发新的重新加密，如果需要。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [了解 SSO](../core/understanding-sso.md)

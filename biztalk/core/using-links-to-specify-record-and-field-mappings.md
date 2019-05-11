@@ -1,5 +1,5 @@
 ---
-title: 使用链接以指定记录和字段映射 |Microsoft 文档
+title: 使用链接指定记录和字段映射 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a79595e3acc916e61919d77c4f39fe24ff43b00f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b807bebaeb60a72287d0ef2694739c961ee29fd1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287245"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65246441"
 ---
 # <a name="using-links-to-specify-record-and-field-mappings"></a>使用链接指定记录和字段映射
-在 BizTalk 映射器中，使用链接可以将源架构中的数据项与目标架构中的数据项关联起来。 在设置好的映射中，通常包含许多源架构和目标架构之间的链接。 这些链接在一起指定了源实例消息中的数据将如何转换为语义相同、但语法不同的目标实例消息。  
+在 BizTalk 映射器链接是在将源架构中的数据项与目标架构中的数据项关联的方法。 通常情况下，已完成映射中有许多源架构和目标架构之间的链接。 所有内容的链接指定的源实例消息中的数据将如何转换为语义相同、 但语法不同，目标实例消息。  
   
- 本部分提供有关创建新链接、使用现有链接、自动创建链接以及其他链接操作的任务特定信息。  
+ 本部分提供有关创建新的链接，使用现有链接，自动创建链接以及其他链接操作的特定于任务的信息。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -30,13 +30,13 @@ ms.locfileid: "22287245"
   
 -   [如何编辑链接属性](../core/how-to-edit-link-properties.md)  
   
--   [如何自动将记录的链接](../core/how-to-link-records-automatically.md)  
+-   [如何自动链接记录](../core/how-to-link-records-automatically.md)  
   
--   [如何管理现有的链接](../core/how-to-manage-existing-links.md)  
+-   [如何管理现有链接](../core/how-to-manage-existing-links.md)  
   
--   [如何配置匹配的节点层次结构](../core/how-to-configure-node-hierarchy-matching.md)  
+-   [如何配置节点层次级别匹配](../core/how-to-configure-node-hierarchy-matching.md)  
   
--   [如何将源链接编译器值设置](../core/how-to-set-the-source-links-compiler-value.md)  
+-   [如何设置源链接编译器值](../core/how-to-set-the-source-links-compiler-value.md)  
   
 -   [如何显示和隐藏编译器链接](../core/how-to-show-and-hide-compiler-links.md)  
   

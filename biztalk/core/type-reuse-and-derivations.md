@@ -1,5 +1,5 @@
 ---
-title: 键入重用和派生 |Microsoft 文档
+title: 类型重用和派生 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2982fdf5e46f813669ff74b513615637aa699bd4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6bf55f714b5a54ef9f3f07dc04d89afc23fcca04
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286613"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65268825"
 ---
 # <a name="type-reuse-and-derivations"></a>类型重用和派生
 在 XML 架构定义 (XSD) 语言中，复杂的全局类型提供了定义可在架构中各个位置重用并可能进行重新定义的结构化数据类型的机制。 例如，最传统的示例之一是包含姓名、街道、城市、省/自治区等信息的地址结构。 此外，姓名本身可能是包含名字、中名和姓氏字符串的结构。 如果对此复杂结构进行全局定义，则可以在架构中的多个位置使用该结构，例如用于发货地址和帐单邮寄地址。  
@@ -32,6 +32,6 @@ ms.locfileid: "22286613"
   
 -   [复杂全局类型定义和命名](../core/complex-global-type-definition-and-naming.md)  
   
--   [如何使用复杂全局类型](../core/ways-to-use-complex-global-types.md)  
+-   [使用复杂全局类型的方法](../core/ways-to-use-complex-global-types.md)  
   
 -   [简单类型派生](../core/simple-type-derivation.md)

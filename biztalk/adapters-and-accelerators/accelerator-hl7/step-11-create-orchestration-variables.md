@@ -1,5 +1,5 @@
 ---
-title: 步骤 11： 创建业务流程变量 |Microsoft Docs
+title: 步骤 11:创建业务流程变量 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dfe49f533989e339e6eb4318460a444ed0d8b741
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1675a2e00219b8afc2f7c94c755c12140e5f3665
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991158"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288989"
 ---
-# <a name="step-11-create-orchestration-variables"></a>步骤 11： 创建业务流程变量
+# <a name="step-11-create-orchestration-variables"></a>步骤 11:创建业务流程变量
 在此步骤中，您创建消息实例发送和接收的业务流程的业务流程变量。  
   
  BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 序列化程序要求的以下部分名称。 如果使用任何其他部分组成的名称创建多部分消息，序列化程序会拒绝该消息。 消息部件名称为：  
@@ -97,7 +97,7 @@ ms.locfileid: "36991158"
   
 21. 在中**文件**菜单上，单击**全部保存**。  
   
-    请继续执行[第 12 步： 配置业务流程形状](../../adapters-and-accelerators/accelerator-hl7/step-12-configure-orchestration-shapes.md)。  
+    请继续执行[步骤 12:配置业务流程形状](../../adapters-and-accelerators/accelerator-hl7/step-12-configure-orchestration-shapes.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [消息充实教程](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

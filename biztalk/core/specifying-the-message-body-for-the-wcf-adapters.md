@@ -17,18 +17,18 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 32e62da213c4fceaf54773c2fe44584f43de9155
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c68a6d7b3da82bac90f98f79b67affc700ec75c5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972136"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243126"
 ---
 # <a name="specifying-the-message-body-for-the-wcf-adapters"></a>指定 WCF 适配器的消息正文
 可以使用**消息**选项卡中的 WCF 适配器以指定如何从传入 SOAP 消息提取 BizTalk 消息正文和 BizTalk 消息正文的方式放置在传出 SOAP 消息中。  
 
 ## <a name="specifying-how-the-biztalk-message-body-is-extracted-from-an-incoming-soap-message"></a>指定如何从传入 SOAP 消息提取 BizTalk 消息正文  
- 可以控制如何从通过 WCF 适配器传入的 SOAP 消息创建入站 BizTalk 消息正文。 下图显示**消息**选项卡的 Wcf-netnamedpipe 接收适配器和发送适配器作为示例。  
+ 您可以控制如何通过 WCF 适配器传入的 SOAP 消息创建入站的 BizTalk 消息正文。 下图显示**消息**选项卡的 Wcf-netnamedpipe 接收适配器和发送适配器作为示例。  
 
  ![消息选项卡中的 WCF 接收适配器](../core/media/abbaccfc-092c-42c6-9207-fa1af28912ac.gif "abbaccfc-092c-42c6-9207-fa1af28912ac")  
 
@@ -36,19 +36,19 @@ ms.locfileid: "36972136"
 
  若要指定如何创建 BizTalk 消息正文，请选择中的下列选项之一**入站 BizTalk 消息正文**上面各图中的部分：  
 
-- **信封--整个\<soap: Envelope\>**。 使用 SOAP**信封**传入消息创建 BizTalk 消息正文部分的元素。 整个传入消息将成为 BizTalk 消息正文。 使用此选项可以创建并入了所有标头的 BizTalk 消息正文。  
+- **信封--整个\<soap: Envelope\>**。 使用 SOAP**信封**传入消息创建 BizTalk 消息正文部分的元素。 整个传入消息将成为 BizTalk 消息正文。 此选项用于创建 BizTalk 消息正文将合并所有标头。  
 
   > [!NOTE]
-  >  SOAP 标头放置在消息上下文中，但不会自动升级。 可以在自定义管道组件中进行升级。  
+  >  SOAP 标头都将置于消息上下文，但它们不会自动升级。 自定义管道组件可进行升级。  
 
 - **--正文\<soap: Body\>元素**。 使用 SOAP 的内容**正文**传入消息创建 BizTalk 消息正文部分的元素。 如果 **Body** 元素具有多个子元素，则只有第一个元素将成为 BizTalk 消息正文部分。  
 
-- **路径-按正文路径定位内容**。 使用中的正文路径表达式**正文路径表达式**文本框中，用于创建 BizTalk 消息正文部分。 针对传入消息的 SOAP **Body** 元素的直接子元素计算正文路径表达式。 当传入消息有二进制数据时，可以使用此选项让 BizTalk 消息正文仅包括二进制数据而没有任何标记。  
+- **路径-按正文路径定位内容**。 使用中的正文路径表达式**正文路径表达式**文本框中，用于创建 BizTalk 消息正文部分。 针对传入消息的 SOAP **Body** 元素的直接子元素计算正文路径表达式。 当传入消息有二进制数据时，可以使用此选项用于 BizTalk 消息正文以仅包括二进制数据而没有任何标记。  
 
-  当**路径-按正文路径定位内容**选项，则**节点编码**属性可以配置为指定的正文路径表达式中指定的节点所需编码类型**正文路径表达式**文本框。 如果正文路径表达式与多个元素匹配，则仅使用第一个匹配的元素。  
+  当**路径-按正文路径定位内容**选项，则**节点编码**属性可以配置为指定的正文路径表达式中指定的节点所需编码类型**正文路径表达式**文本框。 如果正文路径表达式匹配多个元素，则使用的第一个匹配的元素。  
 
 > [!NOTE]
->  有关**正文路径表达式**属性，仅支持 XML 的适用于只进处理的表达式的 XPath。 有关可用于此属性的 XPath 表达式的详细信息，请参阅"最佳的两个领域:: 组合 XPath 与 XmlReader"网址[ http://go.microsoft.com/fwlink/?LinkID=75701 ](http://go.microsoft.com/fwlink/?LinkID=75701)。  
+>  有关**正文路径表达式**属性，仅支持 XML 的适用于只进处理的表达式的 XPath。 有关可用于此属性的 XPath 表达式的详细信息，请参阅"的这两个优势：将 XPath 与 XmlReader"处[ http://go.microsoft.com/fwlink/?LinkID=75701 ](http://go.microsoft.com/fwlink/?LinkID=75701)。  
 
  如果**路径-按正文路径定位内容**选择选项和**节点编码**属性设置为**字符串**，则 WCF 适配器期望匹配的节点具有 utf-8编码的字符数据。 如果传入消息包含转义字符数据的 XML 特殊字符，如\<和\>，创建 BizTalk 消息正文部分时，WCF 适配器会还原转义的字符数据。 例如，如果匹配的节点已转义字符数据，如**&lt;FirstName&gt;CONTOSO&lt;/FirstName&gt;** WCF 适配器会创建**\<FirstName\>CONTOSO\</FirstName\>** 在入站 BizTalk 消息正文。  
 
@@ -83,21 +83,21 @@ ms.locfileid: "36972136"
 
  如果你配置**入站 BizTalk 消息正文**部分下的表中，前面的传入 SOAP 消息中所示将成为入站的 BizTalk 消息正文部分。  
 
-|入站 BizTalk 消息正文|正文路径表达式|节点编码|  
+|入站的 BizTalk 消息正文|正文路径表达式|节点编码|  
 |----------------------------------|--------------------------|-------------------|  
-|**信封--整个\<soap: Envelope\>**|N/A|N/A|  
+|**信封--整个\<soap: Envelope\>**|不可用|不可用|  
 
  如果你配置**BizTalk 消息正文**部分下表中所示，WCF 适配器会创建入站的 BizTalk 消息正文部分以仅包含**顺序**中的上一个元素传入的 SOAP 消息。  
 
-|入站 BizTalk 消息正文|正文路径表达式|节点编码|  
+|入站的 BizTalk 消息正文|正文路径表达式|节点编码|  
 |----------------------------------|--------------------------|-------------------|  
-|**--正文\<soap: Body\>元素**|N/A|N/A|  
+|**--正文\<soap: Body\>元素**|不可用|不可用|  
 
  如果你配置**BizTalk 消息正文**部分下表中所示，则 WCF 适配器期望正文路径表达式匹配的传入节点将具有 utf-8 编码字符数据。  
 
-|入站 BizTalk 消息正文|正文路径表达式|节点编码|  
+|入站的 BizTalk 消息正文|正文路径表达式|节点编码|  
 |----------------------------------|--------------------------|-------------------|  
-|**路径-按正文路径定位内容**|/ * [local-name = Order] /\*[本地名称 （) = OrderDetail] /\*[本地名称 （) = CustomerID]|**String**|  
+|**路径-按正文路径定位内容**|/*[local-name()='Order']/\*[local-name()='OrderDetail']/\*[local-name()='CustomerID']|**String**|  
 
  在前面的传入 SOAP 消息，WCF 适配器使用的字符数据， **CONTOSO**的**CustomerID**元素来创建入站的 BizTalk 消息正文部分。  
 
@@ -106,22 +106,22 @@ ms.locfileid: "36972136"
 
  如果你配置**BizTalk 消息正文**部分下表中所示**CustomID**前面的传入 SOAP 消息中的元素应具有一个有效**BinHex**或**Base64**序列。  
 
-|入站 BizTalk 消息正文|正文路径表达式|节点编码|  
+|入站的 BizTalk 消息正文|正文路径表达式|节点编码|  
 |----------------------------------|--------------------------|-------------------|  
-|**路径-按正文路径定位内容**|/ * [local-name = Order] /\*[本地名称 （) = OrderDetail] /\*[本地名称 （) = CustomerID]|**十六进制**或**Base64**|  
+|**路径-按正文路径定位内容**|/*[local-name()='Order']/\*[local-name()='OrderDetail']/\*[local-name()='CustomerID']|**十六进制**或**Base64**|  
 
  如果你配置**BizTalk 消息正文**部分下表中所示，WCF 适配器创建前面的传入 SOAP 消息的入站的 BizTalk 消息正文，如表后，在代码中所示。  
 
-|入站 BizTalk 消息正文|正文路径表达式|节点编码|  
+|入站的 BizTalk 消息正文|正文路径表达式|节点编码|  
 |----------------------------------|--------------------------|-------------------|  
-|**路径-按正文路径定位内容**|/ * [local-name = Order] /\*[本地名称 （) = OrderDetail] /\*[本地名称 （) = CustomerID]|**XML**|  
+|**路径-按正文路径定位内容**|/*[local-name()='Order']/\*[local-name()='OrderDetail']/\*[local-name()='CustomerID']|**XML**|  
 
 ```  
 <CustomerID xmlns="http://Microsoft.Samples.BizTalk.NetNamedPipe/OrderProcess">CONTOSO</CustomerID>   
 ```  
 
 ## <a name="specifying-the-source-of-the-outbound-wcf-message-body"></a>指定出站 WCF 消息正文的源  
- 可以控制如何从 BizTalk 消息正文创建出站 WCF 消息正文以通过 WCF 适配器发送。 若要指定出站 WCF 消息正文中放置 BizTalk 消息正文的方式，可以使用中的下列选项之一**出站 WCF 消息正文**部分**消息**选项卡中所示上一节中的图形：  
+ 您可以控制如何创建从 BizTalk 消息正文，以便通过 WCF 适配器发送的出站 WCF 消息正文。 若要指定出站 WCF 消息正文中放置 BizTalk 消息正文的方式，可以使用中的下列选项之一**出站 WCF 消息正文**部分**消息**选项卡中所示上一节中的图形：  
 
 - **正文--BizTalk 响应消息正文**。 使用 BizTalk 消息正文部分创建的 soap 内容**正文**为传出消息的元素。 传出 BizTalk 消息正文将成为出站 SOAP 消息的正文。  
 
@@ -156,7 +156,7 @@ ms.locfileid: "36972136"
 
 |出站 WCF 消息正文|XML|  
 |-------------------------------|---------|  
-|**正文--BizTalk 响应消息正文**|N/A|  
+|**正文--BizTalk 响应消息正文**|不可用|  
 
 ```  
 <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">  
@@ -184,7 +184,7 @@ ms.locfileid: "36972136"
 
 |         出站 WCF 消息正文         |                                                                    XML                                                                    |
 |-------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| **正文--BizTalk 响应消息正文** | \<通讯簿\><br /><br /> \<**bts-msg-body** xmlns="<http://www.microsoft.com/schemas/bts2010>" encoding="**string**"/\><br /><br /> \</Book\> |
+| **正文--BizTalk 响应消息正文** | \<Book\><br /><br /> \<**bts-msg-body** xmlns="<http://www.microsoft.com/schemas/bts2010>" encoding="**string**"/\><br /><br /> \</Book\> |
 
 ```  
 <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">  
@@ -208,7 +208,7 @@ ms.locfileid: "36972136"
 
 |         出站 WCF 消息正文         |                                                                    XML                                                                    |
 |-------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| **正文--BizTalk 响应消息正文** | \<通讯簿\><br /><br /> \<**bts-msg-body** xmlns="<http://www.microsoft.com/schemas/bts2010>" encoding="**base64**"/\><br /><br /> \</Book\> |
+| **正文--BizTalk 响应消息正文** | \<Book\><br /><br /> \<**bts-msg-body** xmlns="<http://www.microsoft.com/schemas/bts2010>" encoding="**base64**"/\><br /><br /> \</Book\> |
 
 ```  
 <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://ww  
@@ -238,7 +238,7 @@ FBMmM8L25zMDpPcmRlcklEPg0KICA8L25zMDpPcmRlckRldGFpbD4NCjwvbnMwOk9yZGVyPg==</Book
 
 |         出站 WCF 消息正文         |                                                                  XML                                                                   |
 |-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| **正文--BizTalk 响应消息正文** | \<通讯簿\><br /><br /> \<**bts-msg-body** xmlns="<http://www.microsoft.com/schemas/bts2010>" encoding="**xml**"/\><br /><br /> \</Book\> |
+| **正文--BizTalk 响应消息正文** | \<Book\><br /><br /> \<**bts-msg-body** xmlns="<http://www.microsoft.com/schemas/bts2010>" encoding="**xml**"/\><br /><br /> \</Book\> |
 
 ```  
 <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:a="http://www.w3.org/2005/08/addressing">  

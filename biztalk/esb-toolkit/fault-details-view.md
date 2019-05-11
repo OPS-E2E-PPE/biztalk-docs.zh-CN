@@ -1,5 +1,5 @@
 ---
-title: 错误详细信息视图 |Microsoft 文档
+title: 错误详细信息视图 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 54a2d86082524b257c5765b8336197256c901c5e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d2ebeb1750f9fb3a52cf1418f0517f7f01872142
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294117"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65250065"
 ---
 # <a name="fault-details-view"></a>错误详细信息视图
-图 1 显示错误详细信息视图，其中显示的错误和基础异常的环境属性。 在此页的底部是与此错误关联的消息列表。 单击以打开它在以下消息之一的标识符[消息详细信息视图](../esb-toolkit/message-details-view.md)，或单击**下载**要下载的 XML 文档形式的消息的行末尾的图标。  
+图 1 显示了错误的详细信息视图，其中显示环境的容错域和基础异常属性。 在此页的底部是与此错误关联的消息列表。 单击其中一条消息，以打开该文件的标识符[消息详细信息视图](../esb-toolkit/message-details-view.md)，或单击**下载**要下载的 XML 文档形式的消息的行的末尾的图标。  
   
- ![错误详细信息视图](../esb-toolkit/media/ch8-faultdetailsview.gif "Ch8 FaultDetailsView")  
+ ![错误详细信息视图](../esb-toolkit/media/ch8-faultdetailsview.gif "Ch8-FaultDetailsView")  
   
  **图 1**  
   
- **ESB 错误消息查看器显示的错误详细信息视图**
+ **ESB 故障消息查看器显示的错误的详细信息视图**

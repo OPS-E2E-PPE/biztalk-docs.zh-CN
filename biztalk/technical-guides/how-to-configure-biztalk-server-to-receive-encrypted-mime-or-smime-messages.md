@@ -12,17 +12,17 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ffb471a5c40ed61be45f40e842cb755023aa26b5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5b785e85f4d53feda47f4ebf4bf0ab34c56b830d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968078"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242621"
 ---
 # <a name="how-to-configure-biztalk-server-to-receive-encrypted-mime-or-smime-messages"></a>如何配置 BizTalk Server 以便接收加密的 MIME 或 SMIME 消息
 本主题介绍如何配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用证书以便接收加密的 MIME/SMIME 消息。 下面的过程也适用于配置的加密消息接收通过 AS2 传输。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  若要执行本主题中的过程，您必须登录以成员的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Administrators 组。  
   
 ### <a name="to-configure-biztalk-server-to-receive-encrypted-messages"></a>若要配置 BizTalk Server 以便接收加密的消息  
@@ -33,17 +33,17 @@ ms.locfileid: "36968078"
    >  配置 AS2 传输，以便接收加密的消息，因为 BizTalk Server 中包含的 AS2Receive 和 AS2EdiReceive 管道处理此函数时，不需要此步骤。  
    > 
    > [!NOTE]
-   >  MIME/SMIME 解码器管道组件既执行解密，又执行数字签名验证（在配置为执行这两个功能时）。 因此，如果将 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 配置为接收加密和签名消息，则可以使用同一接收管道。 换言之，您不必为解密和数字签名验证创建不同的管道。  
+   >  MIME/SMIME 解码器管道组件执行解密和数字签名验证 （如果配置为执行这两个函数）。 因此，如果你要配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]接收加密和签名消息，则可以使用相同的接收管道。 换而言之，不需要创建单独的管道解密和数字签名验证。  
   
    1. 创建一个接收管道，然后将 MIME/SMIME 解码器管道组件拖至管道的解码阶段。  
   
    2. 在中**属性**窗口中，配置 MIME/SMIME 解码器管道组件属性。  
   
       > [!NOTE]
-      >  配置 MIME/SMIME 解码器管道组件属性包括检查吊销列表属性设置为 True，如果你想要检查证书吊销列表的证书，发件人用于签名消息发送到[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. 禁用此选项可提高该组件的性能。 与证书关联的证书吊销列表从相应的证书服务 Web 站点下载。 如果[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]无法连接到远程网站，而管道中则消息将失败。  
+      >  配置 MIME/SMIME 解码器管道组件属性包括检查吊销列表属性设置为 True，如果你想要检查证书吊销列表的证书，发件人用于签名消息发送到[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]. 如果禁用此选项会增加该组件的性能。 与证书关联的证书吊销列表从相应的证书服务 Web 站点下载。 如果[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]无法连接到远程网站，而管道中则消息将失败。  
       > 
       > [!NOTE]
-      >  您可以在将管道部署到某一 BizTalk 组中后，使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台配置接收位置的管道属性。 还可以为 BizTalk 组中的每个接收位置配置不同的管道属性。  
+      >  管道部署到 BizTalk 组使用后，可以配置接收位置的管道属性[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。 每个接收位置在 BizTalk 组中，可以配置不同的管道属性。  
   
    3. 生成并部署接收管道。  
   

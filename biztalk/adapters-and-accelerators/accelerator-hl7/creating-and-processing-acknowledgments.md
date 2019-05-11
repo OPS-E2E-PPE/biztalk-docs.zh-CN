@@ -1,5 +1,5 @@
 ---
-title: 创建和处理确认 |Microsoft 文档
+title: 创建和处理确认 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,15 +16,15 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 065bbd14f725ed82917dc70393b8b3354bb9b3d2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4d21adbb78cdbcfd0be54d82f6c18ee54a694c97
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22204461"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65255654"
 ---
 # <a name="creating-and-processing-acknowledgments"></a>创建和处理确认
-以下主题提供有关 ACK 消息架构的信息以及如何 BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 处理确认。  
+以下主题提供有关 ACK 消息架构的信息以及如何 BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 处理的确认。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -34,6 +34,6 @@ ms.locfileid: "22204461"
   
 -   [静态确认](../../adapters-and-accelerators/accelerator-hl7/static-acknowledgments.md)  
   
--   [设置发送端口用于接收确认](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)  
+-   [设置用于接收 ACK 的发送端口](../../adapters-and-accelerators/accelerator-hl7/setting-up-a-send-port-for-receiving-acks.md)  
   
--   [确认错误条件](../../adapters-and-accelerators/accelerator-hl7/acknowledgment-error-conditions.md)
+-   [错误条件确认](../../adapters-and-accelerators/accelerator-hl7/acknowledgment-error-conditions.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c9de18c9d3fa7ccf89a33eb6b09e6c11381a73a2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d935044695d2e9f74e763196c08bd53f8f429d72
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972022"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243150"
 ---
 # <a name="unable-to-find-content-for-inbound-body-path-expression"></a>找不到入站的主体路径表达式的内容
 ## <a name="details"></a>详细信息  
@@ -36,7 +36,7 @@ ms.locfileid: "36972022"
  通过执行正文路径表达式从传入消息中提取的内容不包含任何数据。  
 
 ## <a name="user-action"></a>用户操作  
- 确保正文路径表达式正确，并且传入消息具有正确数据。  
+ 请确保正文路径表达式正确，并且传入消息具有正确的数据。  
 
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
 

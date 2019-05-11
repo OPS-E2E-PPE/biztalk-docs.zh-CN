@@ -1,5 +1,5 @@
 ---
-title: 步骤 17： 创建 WSClient 应用程序 |Microsoft Docs
+title: 步骤 17:创建 WSClient 应用程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9da92bf7631b254ac8464cad058a6500305f01bf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c9238e94168060c8e8853bbd8108ae62a57397d1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993254"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288843"
 ---
-# <a name="step-17-create-the-wsclient-application"></a>步骤 17： 创建 WSClient 应用程序
+# <a name="step-17-create-the-wsclient-application"></a>步骤 17:创建 WSClient 应用程序
 WSClient.exe （Web 服务客户端） 是编写的控制台应用程序[!INCLUDE[btsVCSharp](../../includes/btsvcsharp-md.md)]，说明了如何将数据发送到业务流程发布为 Web 服务中的上一步骤。 WSClient 应用程序接受四个输入参数顺序： 患者的名字、 中间名分别姓氏和社会安全号码。 若要将患者信息发送到你的 Web 服务，使用以下命令行语法：  
   
 ```  
@@ -79,7 +79,7 @@ wsclient john henry smith 123456789
   
 9. 在解决方案资源管理器中右键单击**WSClient**，然后单击**生成**。 确保在输出窗口中显示一条成功消息。 如果不显示任何成功消息，进行故障排除**WSClient**。 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] 将可执行文件为 WSClient.exe，一个副本放到\<*驱动器*\>: \Tutorial\WSClient\bin\Debug 文件夹。  
   
-   请继续执行[步骤 18： 测试新消息充实解决方案](../../adapters-and-accelerators/accelerator-hl7/step-18-test-your-new-message-enrichment-solution.md)。  
+   请继续执行[步骤 18:测试新消息充实解决方案](../../adapters-and-accelerators/accelerator-hl7/step-18-test-your-new-message-enrichment-solution.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [消息充实教程](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

@@ -12,18 +12,18 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b386ee074538af7960ca39bfb50c25ac59df1dbb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1457191c414204f76cdf1c47bedc10f56ce357cc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010278"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242620"
 ---
 # <a name="planning-for-testing"></a>规划测试
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 测试可以划分为多个类别，包括单元测试、 功能测试、 负载测试，以及可用性测试。 本主题介绍单元和负载测试，以及如何为每个计划。  
   
 ## <a name="planning-for-unit-testing"></a>规划单元测试  
- 单元测试是用来验证该单个代码单元的过程工作正常。 单元测试可以被视为"的故障维修服务"测试： 软件不会执行不同条件下所需的功能，可以在这些情况下出现的软件句柄错误？  
+ 单元测试是用来验证该单个代码单元的过程工作正常。 单元测试可以被视为"的故障维修服务"测试：该软件是否执行不同条件下所需的功能和软件是否可以处理这些情况下会发生的错误？  
   
  通常在各个组件上执行单元测试，因为关联的测试平台上不需要实际的生产环境的处理能力。 出于此原因，你应该考虑执行需要显著较少的硬件资源的虚拟服务器环境中的单元测试。  
   

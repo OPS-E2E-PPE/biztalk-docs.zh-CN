@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10515 |Microsoft Docs
+title: 单一登录：Event 10515 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f1c3d7498bcd6a045936103d682d3643761a182c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3071aa76f6a1366c3a17c38a51f81da7048331b0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980814"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243468"
 ---
-# <a name="single-sign-on-event-10515"></a>单一登录： 事件 10515
+# <a name="single-sign-on-event-10515"></a>单一登录：事件 10515
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                               |
@@ -30,7 +30,7 @@ ms.locfileid: "36980814"
 |  事件源   |                                    ENTSSO                                     |
 |    组件    |                                      N\A                                      |
 |  符号名称  |                            SSO_ERROR_POLL_DATABASE                            |
-|  消息正文   | 丢失与 SSO 数据库的联系。 请检查 SSO 数据库是否可用。 |
+|  消息正文   | 与 SSO 数据库失去的联系。 检查 SSO 数据库可用。 |
   
 ## <a name="explanation"></a>解释  
  此错误事件表示 SSO 服务已丢失与 SSO 数据库的联系。  
@@ -40,9 +40,9 @@ ms.locfileid: "36980814"
   
 - 验证 SQL Server (MSSQLSERVER) 服务正在运行。  
   
-- 如果在远程服务器上，则验证到 SQL Server 的网络连接是否正常。  
+- 如果远程服务器上验证网络连接到 SQL 服务器。  
   
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
   
 - [实现企业单一登录](../core/implementing-enterprise-single-sign-on.md)  
   

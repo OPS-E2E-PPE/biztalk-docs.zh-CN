@@ -12,34 +12,34 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 035cd5d0f6b3c37861574d3ace81b15e1dfbc06d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ca073cdbe6bc7a32ce0168db227d2121980c92ef
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990038"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65254428"
 ---
-# <a name="sendportgroups-biztalk-server-sample"></a>SendPortGroups（BizTalk Server 示例）
+# <a name="sendportgroups-biztalk-server-sample"></a>SendPortGroups （BizTalk Server 示例）
 SendPortGroups 示例演示了如何枚举和管理通过使用发送端口组**Microsoft.BizTalk.ExplorerOM**管理类。  
 
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
 
 - 您必须具有 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理权限才能使用此示例中的管理对象。  
 
 - Windows PowerShell 脚本需要 Windows PowerShell 执行策略以允许脚本执行。 有关详细信息，请参阅 [检查执行策略](http://go.microsoft.com/fwlink/?LinkId=128930)。  
 
 ## <a name="what-this-sample-does"></a>本示例的用途  
- 此示例演示如何使用**BtsCatalogExplorer**并**发送端口组**类**Microsoft.BizTalk.ExplorerOM**命名空间以管理发送端口组在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境。 本示例是使用 Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 编写的。 本主题中还包含 Windows PowerShell 示例脚本。 本示例将演示以下操作：  
+ 此示例演示如何使用**BtsCatalogExplorer**并**发送端口组**类**Microsoft.BizTalk.ExplorerOM**命名空间以管理发送端口组在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境。 在 Microsoft 中编写示例[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)]。 本主题中还包含 Windows PowerShell 示例脚本。 此示例演示了以下操作：  
 
 - 通过使用连接到 BizTalk 管理数据库**BtsCatalogExplorer**类。  
 
-- 创建一个名为“My Send Port Group”的新发送端口组。  
+- 创建名为"My Send Port Group"的新发送端口组。  
 
 - 枚举可显示新创建的发送端口组发送端口组。  
 
 - 正在删除新发送端口组。  
 
-  本示例中还有一些附加功能，但不会在 [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 版本中执行。  中的 PowerShell 示例脚本演示了一些其他函数。 其他函数演示以下功能：  
+  其他函数都位于该示例，但不是在中执行[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)]版本。  中的 PowerShell 示例脚本演示了一些其他函数。 其他函数演示以下功能：  
 
 - 将发送端口添加到新创建的发送端口组 （PowerShell 示例中介绍）。  
 
@@ -52,15 +52,15 @@ SendPortGroups 示例演示了如何枚举和管理通过使用发送端口组**
 ## <a name="where-to-find-this-sample"></a>本示例的所在位置  
  本示例位于以下 SDK 位置中：  
 
- \<*示例路径*\>\Admin\ExplorerOM\SendPortGroups  
+ \<*Samples Path*\>\Admin\ExplorerOM\SendPortGroups  
 
  下表显示了本示例中的文件及其用途说明：  
 
 
 |                            文件                            |                                                 Description                                                  |
 |---------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-|                       SendPortGroups.cs                       | 本示例中演示的操作所需的 [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 源文件。 |
-| SendPortGroups.sln，SendPortGroups.csproj，SendPortGroups.suo |                                  示例的解决方案文件和项目文件。                                  |
+|                       SendPortGroups.cs                       | [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 此示例中演示的操作的源文件。 |
+| SendPortGroups.sln, SendPortGroups.csproj, SendPortGroups.suo |                                  示例的解决方案文件和项目文件。                                  |
 
 ## <a name="building-and-running-this-sample"></a>生成并运行本示例  
 
@@ -70,7 +70,7 @@ SendPortGroups 示例演示了如何枚举和管理通过使用发送端口组**
 
 2. 在解决方案资源管理器，双击**SendPortGroups.cs**打开示例代码。  
 
-3. 在 `root.ConnectionString` 函数中找到 `CreateSendPortGroup`。  必须更改服务器规范以正确地指向托管 BizTalk 管理数据库的 SQL server。  此外可以使用句点 （.） 来连接到本地 SQL server。  例如：  
+3. 查找`root.ConnectionString`在`CreateSendPortGroup`函数。  必须更改服务器规范以正确地指向托管 BizTalk 管理数据库的 SQL server。  此外可以使用句点 （.） 来连接到本地 SQL server。  例如：  
 
    ```  
    root.ConnectionString = "Integrated Security=SSPI;database=BizTalkMgmtDb;server=.";  
@@ -90,7 +90,7 @@ SendPortGroups 示例演示了如何枚举和管理通过使用发送端口组**
 
 1.  打开命令窗口并导航到以下文件夹：  
 
-     \<*示例路径*\>\Admin\ExplorerOM\SendPortGroups\bin\Debug  
+     \<*Samples Path*\>\Admin\ExplorerOM\SendPortGroups\bin\Debug  
 
 2.  运行文件 SendPortGroups.exe。  
 

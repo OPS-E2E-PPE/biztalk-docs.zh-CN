@@ -21,12 +21,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 77bf987966e7f52b103c205298d8bf07c1fc1a5e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 76ddf6ebce9cb9e473a348f1abca6a1af49abb02
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977286"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65251442"
 ---
 # <a name="btahl72xml-processing"></a>BTAHL72XML 处理
 Microsoft BizTalk Accelerator for HL7 中的以下组件 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 处理 HL7 2.XML （XML 编码） 的消息：  

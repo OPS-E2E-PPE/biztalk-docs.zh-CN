@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e89da931e7f7a007734d69dfec8921556982ec24
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 16f789c57c57ce198a6adeaaad549f275b90fbc4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975078"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65249621"
 ---
 # <a name="post-configuration-database-optimizations"></a>配置后数据库优化
 除了遵循中的建议，还[预配置数据库优化](../technical-guides/post-configuration-database-optimizations1.md)，应遵循的几个步骤以优化 SQL Server 上的 BizTalk Server 数据库性能*后*安装 BizTalk Server 和 BizTalk Server 数据库已配置。 本主题提供了一系列这些优化。  

@@ -1,5 +1,5 @@
 ---
-title: 清单： 执行每周性能检查 |Microsoft Docs
+title: 清单：执行每周性能检查 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dee2dd8711d944aa8823b3a3a5954e7280b7a205
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e743ae5c33bb8530d4135e9aaba66a613baa6826
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990966"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242601"
 ---
-# <a name="checklist-performing-weekly-performance-checks"></a>清单： 执行每周性能检查
+# <a name="checklist-performing-weekly-performance-checks"></a>清单：执行每周性能检查
 本主题列出了最佳做法，以避免性能问题时应遵循每周都会[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]系统。  
 
 

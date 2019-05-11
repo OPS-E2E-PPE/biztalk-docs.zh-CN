@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4ed3f25f7e029b26730264f98f4ed79a6def7997
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 12ef79b1381186d56fd5241bf15efff7008ef93b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289941"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65240354"
 ---
 # <a name="windows-of-the-business-rule-composer"></a>业务规则编辑器的窗口
 业务规则编辑器是用于创作、 版本控制和部署策略和词汇一个图形工具。 本部分提供有关业务规则编辑器中不同窗口的信息。  

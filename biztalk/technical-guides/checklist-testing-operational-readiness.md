@@ -1,5 +1,5 @@
 ---
-title: 清单： 测试操作准备情况 |Microsoft Docs
+title: 清单：测试操作准备情况 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 58a10610595b990e6fc2bae1838fa5653a4b2be0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c8903e3c8885c846cd6ce810281eeae48e30482c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982596"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242583"
 ---
-# <a name="checklist-testing-operational-readiness"></a>清单： 测试操作准备情况
+# <a name="checklist-testing-operational-readiness"></a>清单：测试操作准备情况
 操作就绪性测试是经常被忽视或只按最小方式执行的重要过程。 彻底的测试是一项关键要求的任何企业级别的应用程序，并使用一种解决方案开发[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]也不例外。 至少，应执行以下测试的 BizTalk 解决方案移动到生产环境之前：  
 
 

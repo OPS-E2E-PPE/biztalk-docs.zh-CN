@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10509 |Microsoft Docs
+title: 单一登录：Event 10509 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 12e21d19a4504ecebd14060c784a19f5f7446035
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2911358dd326c5fa7f2673567f53805edb898de0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968718"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243416"
 ---
-# <a name="single-sign-on-event-10509"></a>单一登录： 事件 10509
+# <a name="single-sign-on-event-10509"></a>单一登录：事件 10509
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                |
@@ -30,17 +30,17 @@ ms.locfileid: "36968718"
 |  事件源   |                             ENTSSO                             |
 |    组件    |                              N\A                               |
 |  符号名称  |                 SSO_INFO_SERVICE_REMOVE_FAILED                 |
-|  消息正文   | 无法删除 SSO 服务。%r<br /><br /> 错误代码： %1 |
+|  消息正文   | 未能删除 SSO service.%r<br /><br /> 错误代码： %1 |
 
 ## <a name="explanation"></a>解释  
- 此事件表示无法卸载 ENTSSO 服务。 只有在手动卸载企业单一登录时，才会发生此事件。  
+ 此事件表示无法卸载 ENTSSO 服务。 在手动卸载的企业单一登录，才会发生此事件。  
 
 ## <a name="user-action"></a>用户操作  
  若要解决此事件，请执行以下操作：  
 
-- 检查应用程序和系统事件日志，以了解 ENTSSO 或其他服务的相关错误。  
+- 检查应用程序和系统事件日志中的 ENTSSO 或其他服务的相关错误。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [安装 SSO](../core/installing-sso.md)  
 

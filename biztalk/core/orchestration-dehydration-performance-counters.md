@@ -1,5 +1,5 @@
 ---
-title: 业务流程冻结性能计数器 |Microsoft 文档
+title: 业务流程冻结性能计数器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4e81052f0061ff4ad802a084536c09d48cb6cb55
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d7e00a5c6c0adb1e964d9872d048a22d1d8b7eae
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263781"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65262857"
 ---
 # <a name="orchestration-dehydration-performance-counters"></a>业务流程冻结性能计数器
 下表列出了专门用于监视冻结行为的业务流程引擎性能计数器的名称。 使用性能监视器可以在优化冻结参数的过程中查看这些计数器。  

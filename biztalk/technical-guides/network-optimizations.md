@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 66419a1c864b4c22d4fb28a70c85cabf2eceb1a8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 04c6f8250fb67b74c1faad2feeb46207aeb902e6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994790"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242606"
 ---
 # <a name="network-optimizations"></a>网络优化
 在 BizTalk Server 环境中的 BizTalk Server 计算机都独立于 SQL Server 计算机，每个 BizTalk Server 处理的消息需要通过网络通信。 此通信包括 BizTalk Server 计算机和 BizTalk Messagebox 数据库、 BizTalk 管理数据库、 BAM 数据库和其他数据库之间的大量流量。 在高负载情况下，此通信可能会导致大量网络流量，可能成为瓶颈，尤其是在没有优化网络设置、 安装没有足够的网络接口卡，或没有足够的网络带宽可用。  

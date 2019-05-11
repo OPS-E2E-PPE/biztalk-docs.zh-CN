@@ -17,12 +17,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6565f10b311a504edbd3323cc0fe3b318c7b2410
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7a98cfde175b9377be11bf4b18570eb93bd16437
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981062"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282427"
 ---
 # <a name="responder-public-process"></a>响应方公用流程
 响应方在此公用流程接收 RosettaNet 实现框架 (RNIF) 消息从发起方，并做出相应响应。  
@@ -54,7 +54,7 @@ ms.locfileid: "36981062"
   
        如果公用流程接收通知，Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]未成功发送消息，则公用流程将该状态发送回专用流程，然后结束。  
   
-       如果公用流程接收到 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 成功发送消息的通知，则公用流程进入等待状态（等待发起方的操作）。 该等待状态是类似于发起方时它正在等待由响应方操作进入等待状态。  
+       如果公用流程接收通知的[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]成功发送消息，流程进入等待状态 （等待操作由发起方）。 该等待状态是类似于发起方时它正在等待由响应方操作进入等待状态。  
   
    2. 公用流程从发起方接收失败通知消息 (NoF)。  
   

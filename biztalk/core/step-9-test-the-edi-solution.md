@@ -1,5 +1,5 @@
 ---
-title: 步骤 9： 测试 EDI 解决方案 |Microsoft Docs
+title: 步骤 9：测试 EDI 解决方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,35 +12,35 @@ caps.latest.revision: 21
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ab6da406d2de066f9a1a7f4a99576ca9c2fa14d8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2d07bc0d28bf7d983a70c2f5ec7ee5e0329da714
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979670"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65244221"
 ---
-# <a name="step-9-test-the-edi-solution"></a>步骤 9： 测试 EDI 解决方案
+# <a name="step-9-test-the-edi-solution"></a>步骤 9：测试 EDI 解决方案
 ![步骤 9 的 9](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-9of9.gif "Step_9of9")  
   
- 在本主题中，您将测试入站处理和查看有关处理信息的 EDI 交换状态报告。  
+ 在本主题将测试入站的处理和查看的处理信息的 EDI 交换状态报告。  
   
-## <a name="prerequisites"></a>必要條件  
- 你必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 必须以成员的身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Administrators 组。  
   
 ### <a name="testing-the-solution"></a>测试解决方案  
   
-1. 在 Windows 资源管理器中，将移动到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] SDK\EDI 界面开发工具 Tutorial\ProcessEDI_TestLocations。 复制**SamplePO.txt**文件。  
+1. 在 Windows 资源管理器，转到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\ProcessEDI_TestLocations。 复制**SamplePO.txt**文件。  
   
 2. 粘贴**SamplePO.txt**文件到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\ProcessEDI_TestLocations\Scenario A\fromTHEM 文件夹。  
   
-3. 将移动到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] SDK\EDI 界面开发人员 Tutorial\ProcessEDI_TestLocations\Scenario A\toOrderSystem 文件夹中。 确认此文件夹中含有一个 txt 输出文件。  
+3. 将移动到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI 界面开发人员 Tutorial\ProcessEDI_TestLocations\Scenario A\toOrderSystem 文件夹。 确认文件夹中含有一个 txt 输出文件。  
   
-4. 打开 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI 界面开发人员 Tutorial\ProcessEDI_TestLocations\Scenario A\toOrderSystem 中的输出文件，以及 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\ProcessEDI_TestLocations 中的 SamplePO.txt 输入文件。 验证输出消息中的数据相对应的数据在原始**SamplePO.txt**文件。  
+4. 打开输出文件中的[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI 界面开发人员 Tutorial\ProcessEDI_TestLocations\Scenario A\toOrderSystem 和中的 SamplePO.txt 输入的文件[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\ProcessEDI_TestLocations。 验证输出消息中的数据相对应的数据在原始**SamplePO.txt**文件。  
   
    > [!NOTE]
-   >  可以通过在 Visual Studio 中打开 Inbound4010850_to_OrderFile.btm 文件并检查映射，验证输出文件中的数据是否是从输出文件中的数据转换过来的。  
+   >  你可以验证，输出文件中的数据已从输入文件中的数据转换通过在 Visual Studio 中打开 Inbound4010850_to_OrderFile.btm 文件并检查映射。  
   
-5. 将移动到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] SDK\EDI 界面开发人员 Tutorial\ProcessEDI_TestLocations\Scenario A\toTHEM_997 文件夹中。 确认该文件夹包含输出 997 确认 txt 文件，且其中 ST01 数据元素是“997”。  
+5. 将移动到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI 界面开发人员 Tutorial\ProcessEDI_TestLocations\Scenario A\toTHEM_997 文件夹。 确认该文件夹包含输出 997 确认 txt 文件，在其中 ST01 数据元素是"997"。  
   
 6. 在控制台树中的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，单击**BizTalk 组**。 在右窗格的底部，单击**EDI 交换和相关 ACK 状态**。  
   
@@ -48,19 +48,19 @@ ms.locfileid: "36979670"
   
 8. 单击**运行查询**。  
   
-9. 验证是否有两条消息显示在状态报告中，一条为从 THEM (Fabrikam) 到 US (OrderSystem) 的接收方向的消息（850 消息），另一条为从 US (OrderSystem) 到 THEM (Fabrikam) 的发送方向的消息（997 确认）。  
+9. 验证两个消息显示在状态报告中，从 THEM (Fabrikam) 到 US (OrderSystem) （850 消息），另一种从 US (OrderSystem) 到 THEM (Fabrikam) （997 确认） 的发送方向接收方向的其中一个。  
   
 10. 双击从 THEM 到 US 的消息。 在中**交换状态和确认详细信息**对话框框中，验证交换的详细信息是否显示在右窗格中。  
   
-11. 单击**功能确认**。 验证确认的报告详细信息是否显示在右窗格中。  
+11. 单击**功能确认**。 验证确认的报告详细信息显示在右窗格中。  
   
-12. 关闭“交换状态和确认详细信息”对话框。  
+12. 关闭交换状态和确认详细信息对话框。  
   
-13. 在中**交换 /ACK 状态**窗格中，右键单击从 THEM 到 US 的消息，然后单击**事务集详细信息**。 右键单击中的条目**查询结果**窗格中，，然后单击**查看事务集内容**。 验证事务集数据是否显示在**消息的详细信息**对话框。 在 Windows 资源管理器中，打开 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] SDK\ProcessEDI_TestLocations 中的 SamplePO.txt 文件。 验证事务集显示在**消息的详细信息**对话框输入消息，且没有交换和组标头和尾部中是相同的。  
+13. 在中**交换 /ACK 状态**窗格中，右键单击从 THEM 到 US 的消息，然后单击**事务集详细信息**。 右键单击中的条目**查询结果**窗格中，，然后单击**查看事务集内容**。 验证事务集数据是否显示在**消息的详细信息**对话框。 在 Windows 资源管理器中打开中的 SamplePO.txt 文件[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\ProcessEDI_TestLocations。 验证事务集显示在**消息的详细信息**对话框输入消息，且没有交换和组标头和尾部中是相同的。  
   
 ## <a name="next-steps"></a>后续步骤  
- 您已完成 EDI 接口开发人员教程。  
+ 已完成 EDI 接口开发人员教程。  
   
 ## <a name="see-also"></a>请参阅  
- [教程 2: EDI 接口开发人员教程](../core/tutorial-2-edi-interface-developer-tutorial.md)   
+ [教程 2：EDI 接口开发人员教程](../core/tutorial-2-edi-interface-developer-tutorial.md)   
  [步骤 1：EDI 接口开发人员教程的准备工作](../core/step-1-prepare-for-the-edi-interface-developer-tutorial.md)

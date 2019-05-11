@@ -1,6 +1,6 @@
 ---
-title: TIBCO 会合适配器中的安全 |Microsoft 文档
-description: 使用 enterprise 上单一登录 (SSO) 来保护在 BizTalk 使用 TIBCO 会合适配器的应用程序
+title: TIBCO Rendezvous 适配器中的安全性 |Microsoft Docs
+description: 使用企业单一登录 (SSO) 来保护你的应用程序在 BizTalk 中使用 TIBCO Rendezvous 适配器
 ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
@@ -13,20 +13,20 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0c06b241bff7595f4119a0226a07d45d365a4faa
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: fd96118e2d7301169b7fa3dd7c6fadf500feacf4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24015828"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279780"
 ---
-# <a name="sso-security-in-biztalk-adapter-for-tibco-rendezvous"></a>SSO TIBCO 会合的 BizTalk 适配器中的安全
+# <a name="sso-security-in-biztalk-adapter-for-tibco-rendezvous"></a>用于 TIBCO Rendezvous 的 BizTalk 适配器中的 SSO 安全性
 
 ## <a name="overview"></a>概述
-用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器提供单一登录 (SSO) 支持。 由企业单一登录工具创建的关联应用程序表示诸如 TIBCO Rendezvous 等服务器系统。 
+用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器提供单一登录 (SSO) 支持。 由企业单一登录工具创建关联应用程序代表诸如 TIBCO Rendezvous 等服务器系统。 
   
 > [!CAUTION]
->  强烈建议您将企业应用程序的 BizTalk 适配器限制为仅供授权的用户使用，因为客户端文件将直接连接到行业应用程序。  
+>  强烈建议您限制为仅授权用户的企业应用程序使用的 BizTalk 适配器由于客户端文件直接连接到业务线应用程序。  
   
 ## <a name="next-steps"></a>后续步骤
   

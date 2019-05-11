@@ -18,12 +18,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b417398786e602379d16d6734a5ed366b9d6f2ec
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 774764c030b2e6d6f74770f8a1aa2682e5eb6d65
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22210413"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282058"
 ---
 # <a name="sample-hub-based-scenario"></a>示例基于中心的方案
 在众多的供应链方案中，公司将与每个贸易合作伙伴合作以建立 RosettaNet 实现框架 (RNIF) 连接。 这是在整个供应链中对通信进行标准化的有效方式。 此方案中所述[示例提供链方案](../../adapters-and-accelerators/accelerator-rosettanet/sample-supply-chain-scenario.md)。  
@@ -31,7 +31,7 @@ ms.locfileid: "22210413"
  在整个供应链中自动化交易还有另一种方法，就是公司与另一家公司签署合同，以设置并管理集成系统。 这是一个有中心的方案。  
   
 ## <a name="how-a-hub-based-system-works"></a>有中心的系统的工作方式  
- 在有中心的系统中，承购集成系统的公司使用 RNIF 连接与中心公司建立连接。 然后中心使用任意所需类型的电子连接与此公司的所有贸易合作伙伴建立连接。 中心公司提供与连接选项的所有贸易合作伙伴： RNIF 连接、 EDI、 平面文件、 Web 应用程序或不符合标准的、 专用连接。 通信系统由中心公司负责管理。 下图显示了此类系统的工作原理。  
+ 在有中心的系统中，承购集成系统的公司使用 RNIF 连接与中心公司建立连接。 然后中心使用任意所需类型的电子连接与此公司的所有贸易合作伙伴建立连接。 中心公司提供了所有贸易合作伙伴的连接选项：RNIF 连接、 EDI、 平面文件、 Web 应用程序或不符合标准的专用连接。 通信系统由中心公司负责管理。 下图显示了此类系统的工作原理。  
   
  ![& #60;无更改 & #62;](../../adapters-and-accelerators/accelerator-rosettanet/media/hub-based-scenario.gif "Hub_Based_Scenario")  
   

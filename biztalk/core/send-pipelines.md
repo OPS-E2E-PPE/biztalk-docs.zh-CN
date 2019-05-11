@@ -19,12 +19,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef08909dbc47e11f5c9fecae6f65e01dbe79441b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 38b33fc28e9a8ec051f00c846275451a7fcbcb96
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22270173"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65250450"
 ---
 # <a name="send-pipelines"></a>发送管道
 下图显示消息处理工作流，其中突出显示了发送管道：  
@@ -36,7 +36,7 @@ ms.locfileid: "22270173"
   
  你可以创建新的发送管道或可以使用 BizTalk Server 中包含两个默认发送管道之一-传递发送管道和 XML 发送管道。  
   
- 默认情况下，发送管道由三个空阶段组成：预组装、组装和编码。 本主题包含了有关填充这些阶段的设计注意事项。  
+ 默认情况下，发送管道由三个空阶段组成：预组装、 组装和编码。 本主题包含了有关填充这些阶段的设计注意事项。  
   
 > [!NOTE]
 >  如果向发送管道添加了使用组件，则该管道不会生成消息。  

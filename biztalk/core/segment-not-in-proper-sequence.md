@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d2e90f42fdc3226827dae670daecb0e856eba156
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0562c55f6b0b494058805febde18593da1b567f1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980358"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279772"
 ---
 # <a name="segment-not-in-proper-sequence"></a>段未处于正确顺序
 ## <a name="details"></a>详细信息  

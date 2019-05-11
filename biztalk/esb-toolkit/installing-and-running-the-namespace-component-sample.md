@@ -1,5 +1,5 @@
 ---
-title: 安装和运行 Namespace 组件示例 |Microsoft 文档
+title: 安装和运行 Namespace 组件示例 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e8235fd3e24cc60715cabe8ff6ae163541fc46ed
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f08cb6332b3fd3e5c8c57768ec78532c2e0de123
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22293925"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65261738"
 ---
 # <a name="installing-and-running-the-namespace-component-sample"></a>安装和运行 Namespace 组件示例
-Namespace 组件示例演示 ESB Namespace 组件的典型使用方案。 它演示如何使用该组件将注入和作为发送和接收过程的一部分在文档中删除命名空间。  
+Namespace 组件示例演示了 ESB Namespace 组件的典型使用方案。 它演示如何使用该组件可以将注入，作为发送和接收过程的一部分在文档中删除的命名空间。  
   
  本节包含下列主题：  
   
--   [安装 Namespace 组件示例](../esb-toolkit/installing-the-namespace-component-sample.md)  
+-   [安装命名空间组件示例](../esb-toolkit/installing-the-namespace-component-sample.md)  
   
--   [运行 Namespace 组件示例](../esb-toolkit/running-the-namespace-component-sample.md)
+-   [运行命名空间组件示例](../esb-toolkit/running-the-namespace-component-sample.md)

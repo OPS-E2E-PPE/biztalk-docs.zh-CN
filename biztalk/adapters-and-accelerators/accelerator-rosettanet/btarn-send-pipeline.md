@@ -21,12 +21,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0791ab4714e1e8a9de847a60d17d14e38f095ecf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 62c86e810ad185f7497f73c1b4d4d53cffe8f29e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011630"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65284869"
 ---
 # <a name="btarn-send-pipeline"></a>BTARN 发送管道
 Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]做好 RNIFSend 管道 (RNIFSend.btp) 中的传输 RosettaNet 实现框架 (RNIF) 消息。 发送管道包括以下组件：  
@@ -57,7 +57,7 @@ Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentve
   详细了解本机[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]MIME/SMIME 编码器，请参阅"MIME/SMIME 编码器管道组件"部分中 BizTalk Server 帮助。  
   
 ## <a name="message-flow"></a>消息流  
- 消息流通过 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 发送管道的步骤如下：  
+ 消息流通过[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]发送管道是，如下所示：  
   
 1.  如果设置了**所有部分都编码**设置为贸易合作伙伴协议的`True`，MIME / SMIME 编码器将对所有消息部分进行都都编码。 它将使用在中设置的编码方法`Encoding`协议的属性。  
   

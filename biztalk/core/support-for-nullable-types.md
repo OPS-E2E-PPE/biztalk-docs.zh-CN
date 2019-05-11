@@ -1,5 +1,5 @@
 ---
-title: 可以为 Null 的类型的支持 |Microsoft 文档
+title: 对可以为 Null 的类型的支持 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: abd277db970a00e9d7d8f20de65e85c607c2a861
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7c468df33b522f14608fbe001f4ce4be52ba524e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278717"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65254422"
 ---
-# <a name="support-for-nullable-types"></a>可以为 Null 的类型的支持
-规则引擎支持业务规则中使用可以为 null 的类型。 你可以使用.NET 类绑定、 XML 绑定和数据库绑定中可以为 null 的类型。 目前，业务规则编辑器工具不支持业务规则中使用可以为 null 的类型。 以编程方式创建规则时，你可以使用可以为 null 的类型。  
+# <a name="support-for-nullable-types"></a>对可以为 Null 的类型的支持
+规则引擎支持业务规则中使用可以为 null 的类型。 可以使用.NET 类绑定、 XML 绑定和数据库绑定中为 null 的类型。 目前，业务规则编辑器工具不支持业务规则中使用可以为 null 的类型。 以编程方式创建规则时，可以使用可以为 null 的类型。  
   
 ## <a name="using-nullable-types-in-net-class-bindings"></a>在.NET 类绑定中使用可以为 Null 的类型  
- 你可以创建绑定到的属性或其类型为 null 的类型的字段的类成员。 你还可以创建绑定到采用可以为 null 的类型的参数和/或返回值为 null 的类型的方法的类成员。 下面的示例代码演示如何访问的可以为 null 的字段，以及如何从业务规则中的方法访问可以为 null 的类型的返回值。 如果按原样执行一个控制台应用程序替换为以下代码，你将看到的值**prop**字段设置为 5。 如果未初始化**prop**在类字段或将其初始化以 null，并且运行这些代码，你将看到的值**prop**字段设置为 1。  
+ 可以创建绑定到一个属性或其类型为 null 的类型的字段的类成员。 此外可以创建绑定到方法采用一个参数为 null 的类型和/或返回值为 null 的类型的类成员。 下面的示例代码演示如何访问可以为 null 的字段，以及如何访问从业务规则中的方法的返回值为 null 的类型。 如果您执行与下面的代码的控制台应用程序，因为它是，您将看到的值**prop**字段设置为 5。 如果未初始化**prop**字段在类或初始化该为空并运行代码，您将看到的值**prop**字段设置为 1。  
   
 ```  
 using Microsoft.RuleEngine;  
@@ -118,16 +118,16 @@ namespace UseNullableAsm
 ```  
   
 ## <a name="using-nullable-types-in-database-bindings"></a>在数据库绑定中使用可以为 Null 的类型  
- 此外可以在数据库的绑定中使用可以为 null 的类型。 下面的示例代码段演示如何在数据库绑定中使用可以为 null 的类型。  
+ 此外可以在数据库绑定中使用可以为 null 的类型。 下面的示例代码段演示了如何在数据库绑定中使用可以为 null 的类型。  
   
 ```  
 DataColumnBinding dcBinding = new DataColumnBinding(“col”, typeof(int?), dbBinding);  
 ```  
   
- 假设你有具有检查的值的条件的规则的数据库列以查看是否等于 3。 如果列的值为 null，表达式的计算结果为 false。 它不会导致异常。  
+ 假设您有一个条件，检查的值的规则的数据库列以查看是否等于 3。 如果列的值为 null，表达式的计算结果为 false。 它不会导致异常。  
   
 ## <a name="using-nullable-types-in-xml-bindings"></a>在 XML 绑定中使用可以为 Null 的类型  
- 同样，你可以在 XML 的绑定中使用可以为 null 的类型。 下面的示例代码段演示如何在 XML 绑定中使用可以为 null 的类型。  
+ 同样，您可以在 XML 绑定中使用可以为 null 的类型。 下面的示例代码段演示如何在 XML 绑定中使用可以为 null 的类型。  
   
 ```  
 XMLDocumentFieldBinding xfb1 = new XMLDocumentFieldBinding(typeof(int?),"ID",xdb);  

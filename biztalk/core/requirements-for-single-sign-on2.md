@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 96a4101dc5380168db60e687ddc450f98f9192f4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 62bc38cadb304f753a408c9c9573056c70b34671
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987310"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65240314"
 ---
 # <a name="requirements-for-single-sign-on"></a>单一登录的要求
 若要使用单一登录 (SSO)，需要：  
@@ -36,7 +36,7 @@ ms.locfileid: "36987310"
   
 1. 在中**传输属性**窗口中，选择**是**有关**使用 SSO**。  
   
-2. 在指定传输属性时选择相应的关联应用程序。  
+2. 指定传输属性时，请选择相应的关联应用程序。  
   
    有关如何创建关联应用程序的信息，请参阅[创建关联应用程序](../core/creating-affiliate-applications2.md)。  
   

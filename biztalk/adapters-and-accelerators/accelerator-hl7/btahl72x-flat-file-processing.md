@@ -38,12 +38,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0a0220d44386eed94efbddc1a5a22fe6704a7780
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bd0755b31e56474a4cfde05264b0e1696d3aece7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975550"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65251486"
 ---
 # <a name="btahl72x-flat-file-processing"></a>BTAHL72X 平面文件处理
 Microsoft BizTalk Accelerator for HL7 中的以下组件 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 处理 HL7 2.X （HL7 编码） 消息：  
@@ -151,7 +151,7 @@ Microsoft BizTalk Accelerator for HL7 中的以下组件 ([!INCLUDE[btaBTAHL71.3
   
      ACK 或 NAK  
   
-## <a name="property-promotion"></a>属性提升  
+## <a name="property-promotion"></a>属性升级  
  [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 支持升级以下 2.X 属性：  
   
 -   属性架构  
