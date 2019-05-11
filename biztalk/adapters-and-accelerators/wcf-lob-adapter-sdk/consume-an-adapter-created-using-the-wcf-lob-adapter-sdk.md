@@ -1,5 +1,5 @@
 ---
-title: 使用使用 WCF LOB 适配器 SDK 创建的适配器 |Microsoft 文档
+title: 使用适配器使用 WCF LOB 适配器 SDK 创建 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f38f8243443618db2b9c6f8ed08a9a045346dd0d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8f8b54926cfd1b706daf1440e1b84dea28099c7f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22222933"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363731"
 ---
-# <a name="consume-an-adapter-created-using-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="2838c-102">使用使用 WCF LOB 适配器 SDK 创建的适配器</span><span class="sxs-lookup"><span data-stu-id="2838c-102">Consume an adapter created using the WCF LOB Adapter SDK</span></span>
-<span data-ttu-id="2838c-103">你可以使用使用构建适配器[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]中各种不同的方案和拓扑。</span><span class="sxs-lookup"><span data-stu-id="2838c-103">You can consume an adapter built using the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] in a variety of different scenarios and topologies.</span></span> <span data-ttu-id="2838c-104">在本部分介绍了一些更常用的方法。</span><span class="sxs-lookup"><span data-stu-id="2838c-104">Some of the more common ways are described in this section.</span></span>  
+# <a name="consume-an-adapter-created-using-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="419af-102">使用创建使用 WCF LOB 适配器 SDK 的适配器</span><span class="sxs-lookup"><span data-stu-id="419af-102">Consume an adapter created using the WCF LOB Adapter SDK</span></span>
+<span data-ttu-id="419af-103">可以使用使用构建适配器[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]中各种不同的方案和拓扑。</span><span class="sxs-lookup"><span data-stu-id="419af-103">You can consume an adapter built using the [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)] in a variety of different scenarios and topologies.</span></span> <span data-ttu-id="419af-104">一些更常用的方法是在本部分中所述。</span><span class="sxs-lookup"><span data-stu-id="419af-104">Some of the more common ways are described in this section.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="2838c-105">本节内容</span><span class="sxs-lookup"><span data-stu-id="2838c-105">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="419af-105">本节内容</span><span class="sxs-lookup"><span data-stu-id="419af-105">In This Section</span></span>  
   
--   [<span data-ttu-id="2838c-106">使用.NET 项目中的 WCF LOB 适配器 SDK 适配器</span><span class="sxs-lookup"><span data-stu-id="2838c-106">Consume a WCF LOB Adapter SDK adapter in a .NET project</span></span>](../../adapters-and-accelerators/wcf-lob-adapter-sdk/consume-a-wcf-lob-adapter-sdk-adapter-in-a-net-project.md)  
+-   [<span data-ttu-id="419af-106">使用.NET 项目中的 WCF LOB 适配器 SDK 适配器</span><span class="sxs-lookup"><span data-stu-id="419af-106">Consume a WCF LOB Adapter SDK adapter in a .NET project</span></span>](../../adapters-and-accelerators/wcf-lob-adapter-sdk/consume-a-wcf-lob-adapter-sdk-adapter-in-a-net-project.md)  
   
--   [<span data-ttu-id="2838c-107">使用 BizTalk 服务器项目中的 WCF LOB 适配器 SDK 适配器</span><span class="sxs-lookup"><span data-stu-id="2838c-107">Consume a WCF LOB Adapter SDK adapter in a BizTalk Server project</span></span>](../../adapters-and-accelerators/wcf-lob-adapter-sdk/consume-a-wcf-lob-adapter-sdk-adapter-in-a-biztalk-server-project.md) 
+-   [<span data-ttu-id="419af-107">使用 BizTalk Server 项目中的 WCF LOB 适配器 SDK 适配器</span><span class="sxs-lookup"><span data-stu-id="419af-107">Consume a WCF LOB Adapter SDK adapter in a BizTalk Server project</span></span>](../../adapters-and-accelerators/wcf-lob-adapter-sdk/consume-a-wcf-lob-adapter-sdk-adapter-in-a-biztalk-server-project.md) 
   
-## <a name="see-also"></a><span data-ttu-id="2838c-108">另请参阅</span><span class="sxs-lookup"><span data-stu-id="2838c-108">See Also</span></span>  
- [<span data-ttu-id="2838c-109">开发活动</span><span class="sxs-lookup"><span data-stu-id="2838c-109">Development Activities</span></span>](../../esb-toolkit/development-activities.md)
+## <a name="see-also"></a><span data-ttu-id="419af-108">请参阅</span><span class="sxs-lookup"><span data-stu-id="419af-108">See Also</span></span>  
+ [<span data-ttu-id="419af-109">开发活动</span><span class="sxs-lookup"><span data-stu-id="419af-109">Development Activities</span></span>](../../esb-toolkit/development-activities.md)

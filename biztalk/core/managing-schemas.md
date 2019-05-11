@@ -13,37 +13,37 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 400d6946235c2137a389b22f639159c9f92d6f4a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 09c39d6bd414a1f9558e058881c41f6dd9bd1e5d
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973150"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531139"
 ---
-# <a name="manage-schemas"></a><span data-ttu-id="35c2b-103">管理架构</span><span class="sxs-lookup"><span data-stu-id="35c2b-103">Manage Schemas</span></span>
+# <a name="manage-schemas"></a><span data-ttu-id="fae7d-103">管理架构</span><span class="sxs-lookup"><span data-stu-id="fae7d-103">Manage Schemas</span></span>
 
-## <a name="overiew"></a><span data-ttu-id="35c2b-104">概述</span><span class="sxs-lookup"><span data-stu-id="35c2b-104">Overiew</span></span>
-<span data-ttu-id="35c2b-105">本部分介绍如何使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台来管理架构。</span><span class="sxs-lookup"><span data-stu-id="35c2b-105">This section provides instructions on using the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console to manage schemas.</span></span> <span data-ttu-id="35c2b-106">管道和业务流程使用架构来表示将处理的消息。</span><span class="sxs-lookup"><span data-stu-id="35c2b-106">Schemas are used by pipelines and orchestrations to represent the message that will be processed.</span></span>  
+## <a name="overiew"></a><span data-ttu-id="fae7d-104">概述</span><span class="sxs-lookup"><span data-stu-id="fae7d-104">Overiew</span></span>
+<span data-ttu-id="fae7d-105">本部分说明了使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台来管理架构。</span><span class="sxs-lookup"><span data-stu-id="fae7d-105">This section provides instructions on using the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administration console to manage schemas.</span></span> <span data-ttu-id="fae7d-106">管道和业务流程使用架构来表示将处理的消息。</span><span class="sxs-lookup"><span data-stu-id="fae7d-106">Schemas are used by pipelines and orchestrations to represent the message that will be processed.</span></span>  
   
- <span data-ttu-id="35c2b-107">在创建架构[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]并编译到 BizTalk 程序集。</span><span class="sxs-lookup"><span data-stu-id="35c2b-107">Schemas are created in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] and compiled into BizTalk assemblies.</span></span> <span data-ttu-id="35c2b-108">不能单独; 将架构添加到应用程序架构添加到应用程序，如下所示：</span><span class="sxs-lookup"><span data-stu-id="35c2b-108">You cannot add a schema to an application individually; a schema is added to an application as follows:</span></span>  
+ <span data-ttu-id="fae7d-107">在创建架构[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]并编译到 BizTalk 程序集。</span><span class="sxs-lookup"><span data-stu-id="fae7d-107">Schemas are created in [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] and compiled into BizTalk assemblies.</span></span> <span data-ttu-id="fae7d-108">不能单独; 将架构添加到应用程序架构添加到应用程序，如下所示：</span><span class="sxs-lookup"><span data-stu-id="fae7d-108">You cannot add a schema to an application individually; a schema is added to an application as follows:</span></span>  
   
-- <span data-ttu-id="35c2b-109">当添加包含到应用程序，架构的 BizTalk 程序集，如中所述[如何将 BizTalk 程序集添加到应用程序](../core/how-to-add-a-biztalk-assembly-to-an-application.md)。</span><span class="sxs-lookup"><span data-stu-id="35c2b-109">When you add a BizTalk assembly containing a schema to the application, as described in [How to Add a BizTalk Assembly to an Application](../core/how-to-add-a-biztalk-assembly-to-an-application.md).</span></span>  
+- <span data-ttu-id="fae7d-109">当添加包含到应用程序，架构的 BizTalk 程序集，如中所述[如何将 BizTalk 程序集添加到应用程序](../core/how-to-add-a-biztalk-assembly-to-an-application.md)。</span><span class="sxs-lookup"><span data-stu-id="fae7d-109">When you add a BizTalk assembly containing a schema to the application, as described in [How to Add a BizTalk Assembly to an Application](../core/how-to-add-a-biztalk-assembly-to-an-application.md).</span></span>  
   
-- <span data-ttu-id="35c2b-110">某一.msi 文件导入包含 BizTalk 程序集包含架构，如中所述的应用程序[导入 BizTalk 应用程序的方式](../core/how-to-import-a-biztalk-application.md)。</span><span class="sxs-lookup"><span data-stu-id="35c2b-110">When you import an .msi file into an application that includes a BizTalk assembly containing a schema, as described in [How to Import a BizTalk Application](../core/how-to-import-a-biztalk-application.md).</span></span>  
+- <span data-ttu-id="fae7d-110">某一.msi 文件导入包含 BizTalk 程序集包含架构，如中所述的应用程序[导入 BizTalk 应用程序的方式](../core/how-to-import-a-biztalk-application.md)。</span><span class="sxs-lookup"><span data-stu-id="fae7d-110">When you import an .msi file into an application that includes a BizTalk assembly containing a schema, as described in [How to Import a BizTalk Application](../core/how-to-import-a-biztalk-application.md).</span></span>  
   
-- <span data-ttu-id="35c2b-111">当开发人员部署到应用程序包含来自的架构的程序集[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，如中所述[从到 BizTalk 应用程序的 Visual Studio 部署 BizTalk 程序集](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)。</span><span class="sxs-lookup"><span data-stu-id="35c2b-111">When a developer deploys into an application an assembly containing a schema from [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], as described in [Deploying BizTalk Assemblies from Visual Studio into a BizTalk Application](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md).</span></span>  
+- <span data-ttu-id="fae7d-111">当开发人员部署到应用程序包含来自的架构的程序集[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，如中所述[从到 BizTalk 应用程序的 Visual Studio 部署 BizTalk 程序集](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md)。</span><span class="sxs-lookup"><span data-stu-id="fae7d-111">When a developer deploys into an application an assembly containing a schema from [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], as described in [Deploying BizTalk Assemblies from Visual Studio into a BizTalk Application](../core/deploying-biztalk-assemblies-from-visual-studio-into-a-biztalk-application.md).</span></span>  
   
-  <span data-ttu-id="35c2b-112">有关架构的背景信息，请参阅[架构](../core/schemas.md)。</span><span class="sxs-lookup"><span data-stu-id="35c2b-112">For background information about schemas, see [Schemas](../core/schemas.md).</span></span> <span data-ttu-id="35c2b-113">有关开发架构的信息，请参阅[使用 BizTalk 编辑器创建架构](../core/creating-schemas-using-biztalk-editor.md)。</span><span class="sxs-lookup"><span data-stu-id="35c2b-113">For information about developing schemas, see [Creating Schemas Using BizTalk Editor](../core/creating-schemas-using-biztalk-editor.md).</span></span>  
+  <span data-ttu-id="fae7d-112">有关架构的背景信息，请参阅[架构](../core/schemas.md)。</span><span class="sxs-lookup"><span data-stu-id="fae7d-112">For background information about schemas, see [Schemas](../core/schemas.md).</span></span> <span data-ttu-id="fae7d-113">有关开发架构的信息，请参阅[使用 BizTalk 编辑器创建架构](../core/creating-schemas-using-biztalk-editor.md)。</span><span class="sxs-lookup"><span data-stu-id="fae7d-113">For information about developing schemas, see [Creating Schemas Using BizTalk Editor](../core/creating-schemas-using-biztalk-editor.md).</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="35c2b-114">Microsoft Windows Management Instrumentation (WMI) 对象模型可用于创建和运行自动执行管理任务的脚本。</span><span class="sxs-lookup"><span data-stu-id="35c2b-114">You can use Microsoft Windows Management Instrumentation (WMI) Object Model to create and run scripts that automate administrative tasks.</span></span> <span data-ttu-id="35c2b-115">有关使用 WMI 的信息，请参阅**WMI 类引用** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。</span><span class="sxs-lookup"><span data-stu-id="35c2b-115">For information about using WMI, see the **WMI Class Reference** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].</span></span>
+>  <span data-ttu-id="fae7d-114">Microsoft Windows Management Instrumentation (WMI) 对象模型可用于创建和运行自动执行管理任务的脚本。</span><span class="sxs-lookup"><span data-stu-id="fae7d-114">You can use Microsoft Windows Management Instrumentation (WMI) Object Model to create and run scripts that automate administrative tasks.</span></span> <span data-ttu-id="fae7d-115">有关使用 WMI 的信息，请参阅**WMI 类引用** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。</span><span class="sxs-lookup"><span data-stu-id="fae7d-115">For information about using WMI, see the **WMI Class Reference** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)].</span></span>
   
-## <a name="next-steps"></a><span data-ttu-id="35c2b-116">后续步骤</span><span class="sxs-lookup"><span data-stu-id="35c2b-116">Next steps</span></span> 
+## <a name="next-steps"></a><span data-ttu-id="fae7d-116">后续步骤</span><span class="sxs-lookup"><span data-stu-id="fae7d-116">Next steps</span></span> 
   
--   [<span data-ttu-id="35c2b-117">显示和隐藏属性架构</span><span class="sxs-lookup"><span data-stu-id="35c2b-117">Show and Hide Property Schemas</span></span>](../core/how-to-show-and-hide-property-schemas.md)  
+-   [<span data-ttu-id="fae7d-117">显示和隐藏属性架构</span><span class="sxs-lookup"><span data-stu-id="fae7d-117">Show and Hide Property Schemas</span></span>](../core/how-to-show-and-hide-property-schemas.md)  
   
--   [<span data-ttu-id="35c2b-118">查看某一架构的架构定义 (XSD)</span><span class="sxs-lookup"><span data-stu-id="35c2b-118">View the Schema Definition (XSD) of a Schema</span></span>](../core/how-to-view-the-schema-definition-xsd-of-a-schema.md)  
+-   [<span data-ttu-id="fae7d-118">查看某一架构的架构定义 (XSD)</span><span class="sxs-lookup"><span data-stu-id="fae7d-118">View the Schema Definition (XSD) of a Schema</span></span>](../core/how-to-view-the-schema-definition-xsd-of-a-schema.md)  
   
--   [<span data-ttu-id="35c2b-119">为架构配置跟踪</span><span class="sxs-lookup"><span data-stu-id="35c2b-119">Configure Tracking for a Schema</span></span>](../core/how-to-configure-tracking-for-a-schema.md)  
+-   [<span data-ttu-id="fae7d-119">为架构配置跟踪</span><span class="sxs-lookup"><span data-stu-id="fae7d-119">Configure Tracking for a Schema</span></span>](../core/how-to-configure-tracking-for-a-schema.md)  
   
--   [<span data-ttu-id="35c2b-120">从应用程序中删除架构</span><span class="sxs-lookup"><span data-stu-id="35c2b-120">Remove a Schema from an Application</span></span>](../core/how-to-remove-a-schema-from-an-application.md)
+-   [<span data-ttu-id="fae7d-120">从应用程序中删除架构</span><span class="sxs-lookup"><span data-stu-id="fae7d-120">Remove a Schema from an Application</span></span>](../core/how-to-remove-a-schema-from-an-application.md)

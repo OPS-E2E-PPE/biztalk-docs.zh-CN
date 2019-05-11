@@ -1,5 +1,5 @@
 ---
-title: 适配器属性页键盘快捷键 |Microsoft 文档
+title: 适配器属性页键盘快捷方式 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,27 +16,27 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f3b136bed68d2ca9e93104c18fa1d964ca068e7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 821956fcdaf670a3d4d1014e6e97f77f7021e475
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22229773"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65361286"
 ---
-# <a name="adapter-property-page-keyboard-shortcuts"></a><span data-ttu-id="3de6b-102">适配器属性页键盘快捷键</span><span class="sxs-lookup"><span data-stu-id="3de6b-102">Adapter Property Page Keyboard Shortcuts</span></span>
-<span data-ttu-id="3de6b-103">与在所有标准 Microsoft Windows 应用程序中一样，您可以在适配器属性页中使用键盘快捷键来访问可通过菜单访问的命令。</span><span class="sxs-lookup"><span data-stu-id="3de6b-103">As in any standard Microsoft Windows application, you can use keyboard shortcuts in the adapter property pages to access commands that are otherwise available by using menus.</span></span> <span data-ttu-id="3de6b-104">下表对可用的键盘快捷键进行了说明：</span><span class="sxs-lookup"><span data-stu-id="3de6b-104">The following table describes the available keyboard shortcuts.</span></span>  
+# <a name="adapter-property-page-keyboard-shortcuts"></a><span data-ttu-id="ff7f2-102">适配器属性页键盘快捷方式</span><span class="sxs-lookup"><span data-stu-id="ff7f2-102">Adapter Property Page Keyboard Shortcuts</span></span>
+<span data-ttu-id="ff7f2-103">与所有标准 Microsoft Windows 应用程序，您可以使用适配器属性页中的键盘快捷方式访问适用的使用菜单命令。</span><span class="sxs-lookup"><span data-stu-id="ff7f2-103">As in any standard Microsoft Windows application, you can use keyboard shortcuts in the adapter property pages to access commands that are otherwise available by using menus.</span></span> <span data-ttu-id="ff7f2-104">下表描述了可用的键盘快捷方式。</span><span class="sxs-lookup"><span data-stu-id="ff7f2-104">The following table describes the available keyboard shortcuts.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="3de6b-105">在键入组合键时，必须以逗号分隔。</span><span class="sxs-lookup"><span data-stu-id="3de6b-105">You must type comma-separated key combinations.</span></span> <span data-ttu-id="3de6b-106">例如，"CTRL + I，CTRL + R"意味着你必须首先键入 CTRL + I，然后您必须键入 CTRL + R。</span><span class="sxs-lookup"><span data-stu-id="3de6b-106">For example, "CTRL+I, CTRL+R" means that you must first type CTRL+I, and then you must type CTRL+R.</span></span> <span data-ttu-id="3de6b-107">如"ALT + Z，I，F"键组合意味着你必须首先键入 ALT + Z，然后可以键入"I"和"F"没有按住 ALT 键。</span><span class="sxs-lookup"><span data-stu-id="3de6b-107">A key combination such as "ALT+Z, I, F" means that you must first type ALT+Z, but then can type "I" and "F" without holding down the ALT key.</span></span>  
+>  <span data-ttu-id="ff7f2-105">您必须键入以逗号分隔的组合键。</span><span class="sxs-lookup"><span data-stu-id="ff7f2-105">You must type comma-separated key combinations.</span></span> <span data-ttu-id="ff7f2-106">例如，"CTRL + I，CTRL + R"意味着您必须先按 CTRL + I，然后您必须键入 CTRL + R。</span><span class="sxs-lookup"><span data-stu-id="ff7f2-106">For example, "CTRL+I, CTRL+R" means that you must first type CTRL+I, and then you must type CTRL+R.</span></span> <span data-ttu-id="ff7f2-107">如"ALT + Z，I，F"组合键意味着您必须先按 ALT + Z，但然后可以键入"I"和"F"需松开 ALT 键。</span><span class="sxs-lookup"><span data-stu-id="ff7f2-107">A key combination such as "ALT+Z, I, F" means that you must first type ALT+Z, but then can type "I" and "F" without holding down the ALT key.</span></span>  
   
-|<span data-ttu-id="3de6b-108">操作</span><span class="sxs-lookup"><span data-stu-id="3de6b-108">Action</span></span>|<span data-ttu-id="3de6b-109">键盘快捷键</span><span class="sxs-lookup"><span data-stu-id="3de6b-109">Keyboard shortcut</span></span>|  
+|<span data-ttu-id="ff7f2-108">操作</span><span class="sxs-lookup"><span data-stu-id="ff7f2-108">Action</span></span>|<span data-ttu-id="ff7f2-109">键盘快捷键</span><span class="sxs-lookup"><span data-stu-id="ff7f2-109">Keyboard shortcut</span></span>|  
 |------------|-----------------------|  
-|<span data-ttu-id="3de6b-110">导航到属性网格上，并在所有对话框按钮之间进行导航。</span><span class="sxs-lookup"><span data-stu-id="3de6b-110">Navigate onto the property grid, and through the dialog box buttons.</span></span> <span data-ttu-id="3de6b-111">-或者- 在属性网格中使用箭头按钮导航到相应属性值之后，使用 Tab 键编辑属性值。</span><span class="sxs-lookup"><span data-stu-id="3de6b-111">-or- After you are in the property grid, and after using the arrow buttons to navigate to the appropriate property value, use the TAB key to edit the property value.</span></span> <span data-ttu-id="3de6b-112">如果该属性值具有省略号 (...) 按钮或下拉菜单，请改用 F4。</span><span class="sxs-lookup"><span data-stu-id="3de6b-112">If the property value has an ellipsis (...) button or a drop-down menu, use F4 instead.</span></span>|<span data-ttu-id="3de6b-113">Tab</span><span class="sxs-lookup"><span data-stu-id="3de6b-113">TAB</span></span>|  
-|<span data-ttu-id="3de6b-114">在属性网格的所有属性字段之间进行导航。</span><span class="sxs-lookup"><span data-stu-id="3de6b-114">Navigate through the property fields in the property grid.</span></span>|<span data-ttu-id="3de6b-115">箭头键</span><span class="sxs-lookup"><span data-stu-id="3de6b-115">Arrow keys</span></span>|  
-|<span data-ttu-id="3de6b-116">从属性名称字段置空可选字符串值。</span><span class="sxs-lookup"><span data-stu-id="3de6b-116">Nullify an optional string value from the property name field.</span></span>|<span data-ttu-id="3de6b-117">Fn, N -或者- Shift + F10, N</span><span class="sxs-lookup"><span data-stu-id="3de6b-117">Fn, N -or- SHIFT + F10, N</span></span>|  
-|<span data-ttu-id="3de6b-118">编辑具有省略号 （...） 按钮或下拉列表框; 的属性值所有其他人使用 TAB 键。</span><span class="sxs-lookup"><span data-stu-id="3de6b-118">Edit a property value that has an ellipsis (...) button or drop-down box; all others use the TAB key.</span></span>|<span data-ttu-id="3de6b-119">F4</span><span class="sxs-lookup"><span data-stu-id="3de6b-119">F4</span></span>|  
-|<span data-ttu-id="3de6b-120">将更改保存到所编辑的属性值中。</span><span class="sxs-lookup"><span data-stu-id="3de6b-120">Save the changes to the property value that you edited.</span></span>|<span data-ttu-id="3de6b-121">Enter</span><span class="sxs-lookup"><span data-stu-id="3de6b-121">ENTER</span></span>|  
-|<span data-ttu-id="3de6b-122">关闭弹出菜单。</span><span class="sxs-lookup"><span data-stu-id="3de6b-122">Close pop-up menus.</span></span>|<span data-ttu-id="3de6b-123">Esc</span><span class="sxs-lookup"><span data-stu-id="3de6b-123">ESC</span></span>|  
+|<span data-ttu-id="ff7f2-110">导航到属性网格中，并通过对话框按钮。</span><span class="sxs-lookup"><span data-stu-id="ff7f2-110">Navigate onto the property grid, and through the dialog box buttons.</span></span> <span data-ttu-id="ff7f2-111">-或者-在属性网格中，并且在使用箭头按钮以导航到相应的属性值后，使用 TAB 键编辑属性值。</span><span class="sxs-lookup"><span data-stu-id="ff7f2-111">-or- After you are in the property grid, and after using the arrow buttons to navigate to the appropriate property value, use the TAB key to edit the property value.</span></span> <span data-ttu-id="ff7f2-112">如果属性值具有省略号 （...） 按钮或下拉列表菜单，请改用 F4。</span><span class="sxs-lookup"><span data-stu-id="ff7f2-112">If the property value has an ellipsis (...) button or a drop-down menu, use F4 instead.</span></span>|<span data-ttu-id="ff7f2-113">Tab</span><span class="sxs-lookup"><span data-stu-id="ff7f2-113">TAB</span></span>|  
+|<span data-ttu-id="ff7f2-114">在属性网格中的属性字段中导航。</span><span class="sxs-lookup"><span data-stu-id="ff7f2-114">Navigate through the property fields in the property grid.</span></span>|<span data-ttu-id="ff7f2-115">箭头键</span><span class="sxs-lookup"><span data-stu-id="ff7f2-115">Arrow keys</span></span>|  
+|<span data-ttu-id="ff7f2-116">置空属性名称字段中的可选字符串值。</span><span class="sxs-lookup"><span data-stu-id="ff7f2-116">Nullify an optional string value from the property name field.</span></span>|<span data-ttu-id="ff7f2-117">Fn，N-或者-SHIFT + F10，N</span><span class="sxs-lookup"><span data-stu-id="ff7f2-117">Fn, N -or- SHIFT + F10, N</span></span>|  
+|<span data-ttu-id="ff7f2-118">编辑具有省略号 （...） 按钮或下拉列表框; 的属性值所有其他人使用 TAB 键。</span><span class="sxs-lookup"><span data-stu-id="ff7f2-118">Edit a property value that has an ellipsis (...) button or drop-down box; all others use the TAB key.</span></span>|<span data-ttu-id="ff7f2-119">F4</span><span class="sxs-lookup"><span data-stu-id="ff7f2-119">F4</span></span>|  
+|<span data-ttu-id="ff7f2-120">将所做的更改保存到您编辑的属性值。</span><span class="sxs-lookup"><span data-stu-id="ff7f2-120">Save the changes to the property value that you edited.</span></span>|<span data-ttu-id="ff7f2-121">Enter</span><span class="sxs-lookup"><span data-stu-id="ff7f2-121">ENTER</span></span>|  
+|<span data-ttu-id="ff7f2-122">关闭弹出菜单。</span><span class="sxs-lookup"><span data-stu-id="ff7f2-122">Close pop-up menus.</span></span>|<span data-ttu-id="ff7f2-123">Esc</span><span class="sxs-lookup"><span data-stu-id="ff7f2-123">ESC</span></span>|  
   
-## <a name="see-also"></a><span data-ttu-id="3de6b-124">另请参阅</span><span class="sxs-lookup"><span data-stu-id="3de6b-124">See Also</span></span>  
- [<span data-ttu-id="3de6b-125">使用适配器 Framework 工具</span><span class="sxs-lookup"><span data-stu-id="3de6b-125">Using the Adapter Framework Tools</span></span>](../core/using-the-adapter-framework-tools.md)
+## <a name="see-also"></a><span data-ttu-id="ff7f2-124">请参阅</span><span class="sxs-lookup"><span data-stu-id="ff7f2-124">See Also</span></span>  
+ [<span data-ttu-id="ff7f2-125">使用适配器框架工具</span><span class="sxs-lookup"><span data-stu-id="ff7f2-125">Using the Adapter Framework Tools</span></span>](../core/using-the-adapter-framework-tools.md)

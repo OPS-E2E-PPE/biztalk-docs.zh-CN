@@ -1,5 +1,5 @@
 ---
-title: 使用服务行为来输入具有 WCF LOB 适配器 SDK 凭据 |Microsoft 文档
+title: 一种服务行为用于输入凭据与 WCF LOB 适配器 SDK |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3cc494e55aee70a9a441eccbe056f4651448752d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 446bb6e93336f765560742c070ee55921df42a9b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22223877"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65362714"
 ---
-# <a name="use-a-service-behavior-to-enter-credentials-with-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="34009-102">使用服务行为来输入具有 WCF LOB 适配器 SDK 的凭据</span><span class="sxs-lookup"><span data-stu-id="34009-102">Use a service behavior to enter credentials with the WCF LOB Adapter SDK</span></span>
-<span data-ttu-id="34009-103">很多时候，适配器使用者将需要将凭据传递给业务系统的目标行。</span><span class="sxs-lookup"><span data-stu-id="34009-103">Many times, adapter consumers will be required to pass credentials to the target line of business system.</span></span> <span data-ttu-id="34009-104">若要提供此功能，你将需要提供 WCF 服务行为。</span><span class="sxs-lookup"><span data-stu-id="34009-104">To provide this functionality, you will need to provide a WCF service behavior.</span></span>  
+# <a name="use-a-service-behavior-to-enter-credentials-with-the-wcf-lob-adapter-sdk"></a><span data-ttu-id="fd8f5-102">一种服务行为用于输入凭据与 WCF LOB 适配器 SDK</span><span class="sxs-lookup"><span data-stu-id="fd8f5-102">Use a service behavior to enter credentials with the WCF LOB Adapter SDK</span></span>
+<span data-ttu-id="fd8f5-103">很多时候，适配器使用者将需要将凭据传递给业务系统的目标行。</span><span class="sxs-lookup"><span data-stu-id="fd8f5-103">Many times, adapter consumers will be required to pass credentials to the target line of business system.</span></span> <span data-ttu-id="fd8f5-104">若要提供此功能，将需要提供一个 WCF 服务行为。</span><span class="sxs-lookup"><span data-stu-id="fd8f5-104">To provide this functionality, you will need to provide a WCF service behavior.</span></span>  
   
- <span data-ttu-id="34009-105">下面的代码示例演示如何从服务行为。</span><span class="sxs-lookup"><span data-stu-id="34009-105">The following example code demonstrates how to derive a service behavior.</span></span> <span data-ttu-id="34009-106">它将委托到适配器从适配器的使用者获取的凭据。</span><span class="sxs-lookup"><span data-stu-id="34009-106">It delegates the credentials obtained from the consumer of the adapter to the adapter.</span></span> <span data-ttu-id="34009-107">该适配器然后必须使用业务线协议进行身份验证凭据。</span><span class="sxs-lookup"><span data-stu-id="34009-107">The adapter then must use line-of-business protocols to authenticate the credentials.</span></span> <span data-ttu-id="34009-108">一旦凭据进行身份验证，服务可以启动侦听从业务线应用程序的传入事件。</span><span class="sxs-lookup"><span data-stu-id="34009-108">Once the credentials are authenticated, the service can start listening for incoming events from the line of business application.</span></span>  
+ <span data-ttu-id="fd8f5-105">下面的代码示例演示如何从一种服务行为。</span><span class="sxs-lookup"><span data-stu-id="fd8f5-105">The following example code demonstrates how to derive a service behavior.</span></span> <span data-ttu-id="fd8f5-106">它将委托给适配器从适配器的使用者获取的凭据。</span><span class="sxs-lookup"><span data-stu-id="fd8f5-106">It delegates the credentials obtained from the consumer of the adapter to the adapter.</span></span> <span data-ttu-id="fd8f5-107">适配器则必须使用的业务协议进行身份验证凭据。</span><span class="sxs-lookup"><span data-stu-id="fd8f5-107">The adapter then must use line-of-business protocols to authenticate the credentials.</span></span> <span data-ttu-id="fd8f5-108">一旦凭据进行身份验证，服务可以开始侦听来自业务线应用程序的传入事件。</span><span class="sxs-lookup"><span data-stu-id="fd8f5-108">Once the credentials are authenticated, the service can start listening for incoming events from the line of business application.</span></span>  
   
 ```  
 /// <summary>  
@@ -63,7 +63,7 @@ public class InboundClientCredentialsServiceBehavior : ClientCredentials, IServi
 }  
 ```  
   
- <span data-ttu-id="34009-109">下面的代码示例演示如何使用服务行为来将凭据传递给适配器。</span><span class="sxs-lookup"><span data-stu-id="34009-109">The following example code shows how to use the service behavior to pass credentials to the adapter.</span></span>  
+ <span data-ttu-id="fd8f5-109">下面的代码示例演示如何使用服务行为来将凭据传递给适配器。</span><span class="sxs-lookup"><span data-stu-id="fd8f5-109">The following example code shows how to use the service behavior to pass credentials to the adapter.</span></span>  
   
 ```  
 // Create a ServiceHost for the EchoServiceImpl type  
@@ -87,5 +87,5 @@ Console.ReadLine();
 host.Close();  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="34009-110">另请参阅</span><span class="sxs-lookup"><span data-stu-id="34009-110">See Also</span></span>  
- [<span data-ttu-id="34009-111">使用 WCF LOB 适配器 SDK 开发最佳做法</span><span class="sxs-lookup"><span data-stu-id="34009-111">Development best practices using the WCF LOB Adapter SDK</span></span>](../../adapters-and-accelerators/wcf-lob-adapter-sdk/development-best-practices-using-the-wcf-lob-adapter-sdk.md)
+## <a name="see-also"></a><span data-ttu-id="fd8f5-110">请参阅</span><span class="sxs-lookup"><span data-stu-id="fd8f5-110">See Also</span></span>  
+ [<span data-ttu-id="fd8f5-111">使用 WCF LOB 适配器 SDK 开发最佳做法</span><span class="sxs-lookup"><span data-stu-id="fd8f5-111">Development best practices using the WCF LOB Adapter SDK</span></span>](../../adapters-and-accelerators/wcf-lob-adapter-sdk/development-best-practices-using-the-wcf-lob-adapter-sdk.md)

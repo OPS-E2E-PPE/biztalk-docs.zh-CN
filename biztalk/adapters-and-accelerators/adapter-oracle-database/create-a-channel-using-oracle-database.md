@@ -17,41 +17,41 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 18d3964cabfec2b1e33813e3811bfeb696cd4280
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: abce809fb62966fc311f59c8706c8d6823a16d13
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972238"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529411"
 ---
-# <a name="create-a-channel-using-oracle-database"></a><span data-ttu-id="50080-102">创建一个通道，使用 Oracle 数据库</span><span class="sxs-lookup"><span data-stu-id="50080-102">Create a channel using Oracle Database</span></span>
-<span data-ttu-id="50080-103">在 WCF 通道模型中，调用对 Oracle 数据库的操作和接收的交换的 SOAP 消息具有轮询查询的结果[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]通过 WCF 通道。</span><span class="sxs-lookup"><span data-stu-id="50080-103">In the WCF channel model, you invoke operations on the Oracle database and receive the results of a polling query by exchanging SOAP messages with the [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] over a WCF channel.</span></span>  
+# <a name="create-a-channel-using-oracle-database"></a><span data-ttu-id="32bd1-102">创建一个通道，使用 Oracle 数据库</span><span class="sxs-lookup"><span data-stu-id="32bd1-102">Create a channel using Oracle Database</span></span>
+<span data-ttu-id="32bd1-103">在 WCF 通道模型中，调用对 Oracle 数据库的操作和接收的交换的 SOAP 消息具有轮询查询的结果[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]通过 WCF 通道。</span><span class="sxs-lookup"><span data-stu-id="32bd1-103">In the WCF channel model, you invoke operations on the Oracle database and receive the results of a polling query by exchanging SOAP messages with the [!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)] over a WCF channel.</span></span>  
   
-- <span data-ttu-id="50080-104">通过使用调用操作 （出站操作） **IRequestChannel**或**IOutputChannel**将消息发送到适配器。</span><span class="sxs-lookup"><span data-stu-id="50080-104">You invoke operations (outbound operations) by using either an **IRequestChannel** or an **IOutputChannel** to send messages to the adapter.</span></span>  
+- <span data-ttu-id="32bd1-104">通过使用调用操作 （出站操作） **IRequestChannel**或**IOutputChannel**将消息发送到适配器。</span><span class="sxs-lookup"><span data-stu-id="32bd1-104">You invoke operations (outbound operations) by using either an **IRequestChannel** or an **IOutputChannel** to send messages to the adapter.</span></span>  
   
-- <span data-ttu-id="50080-105">通过接收 POLLINGSTMT 消息接收基于轮询的数据更改消息**IInputChannel**。</span><span class="sxs-lookup"><span data-stu-id="50080-105">You receive polling-based data-changed messages by receiving POLLINGSTMT messages over an **IInputChannel**.</span></span>  
+- <span data-ttu-id="32bd1-105">通过接收 POLLINGSTMT 消息接收基于轮询的数据更改消息**IInputChannel**。</span><span class="sxs-lookup"><span data-stu-id="32bd1-105">You receive polling-based data-changed messages by receiving POLLINGSTMT messages over an **IInputChannel**.</span></span>  
   
-  <span data-ttu-id="50080-106">在本部分中的主题提供有关如何创建和配置用于入站和出站操作的通道形状的信息。</span><span class="sxs-lookup"><span data-stu-id="50080-106">The topics in this section provide information about how to create and configure channel shapes that are used for inbound and outbound operations.</span></span>  
+  <span data-ttu-id="32bd1-106">在本部分中的主题提供有关如何创建和配置用于入站和出站操作的通道形状的信息。</span><span class="sxs-lookup"><span data-stu-id="32bd1-106">The topics in this section provide information about how to create and configure channel shapes that are used for inbound and outbound operations.</span></span>  
   
-## <a name="creating-outbound-client-channels"></a><span data-ttu-id="50080-107">创建出站 （客户端） 通道</span><span class="sxs-lookup"><span data-stu-id="50080-107">Creating Outbound (Client) Channels</span></span>  
- <span data-ttu-id="50080-108">你可以使用**IRequestChannel**或**IOutputChannel**调用对 Oracle 数据库的操作。</span><span class="sxs-lookup"><span data-stu-id="50080-108">You can use either an **IRequestChannel** or an **IOutputChannel** to invoke operations on the Oracle database.</span></span> <span data-ttu-id="50080-109">在任一情况下，你首先创建**System.ServiceModel.ChannelFactory**使用适当的接口。</span><span class="sxs-lookup"><span data-stu-id="50080-109">In either case, you first create a **System.ServiceModel.ChannelFactory** using the appropriate interface.</span></span> <span data-ttu-id="50080-110">然后使用工厂来创建通道。</span><span class="sxs-lookup"><span data-stu-id="50080-110">You then use the factory to create the channel.</span></span> <span data-ttu-id="50080-111">创建通道后可用于调用在适配器上的操作。</span><span class="sxs-lookup"><span data-stu-id="50080-111">After you have created the channel you can use it to invoke operations on the adapter.</span></span>  
+## <a name="creating-outbound-client-channels"></a><span data-ttu-id="32bd1-107">创建出站 （客户端） 通道</span><span class="sxs-lookup"><span data-stu-id="32bd1-107">Creating Outbound (Client) Channels</span></span>  
+ <span data-ttu-id="32bd1-108">你可以使用**IRequestChannel**或**IOutputChannel**调用对 Oracle 数据库的操作。</span><span class="sxs-lookup"><span data-stu-id="32bd1-108">You can use either an **IRequestChannel** or an **IOutputChannel** to invoke operations on the Oracle database.</span></span> <span data-ttu-id="32bd1-109">在任一情况下，你首先创建**System.ServiceModel.ChannelFactory**使用适当的接口。</span><span class="sxs-lookup"><span data-stu-id="32bd1-109">In either case, you first create a **System.ServiceModel.ChannelFactory** using the appropriate interface.</span></span> <span data-ttu-id="32bd1-110">然后使用工厂来创建通道。</span><span class="sxs-lookup"><span data-stu-id="32bd1-110">You then use the factory to create the channel.</span></span> <span data-ttu-id="32bd1-111">创建通道后可用于调用在适配器上的操作。</span><span class="sxs-lookup"><span data-stu-id="32bd1-111">After you have created the channel you can use it to invoke operations on the adapter.</span></span>  
   
-#### <a name="to-create-and-open-an-outbound-channel"></a><span data-ttu-id="50080-112">若要创建并打开出站通道</span><span class="sxs-lookup"><span data-stu-id="50080-112">To create and open an outbound channel</span></span>  
+#### <a name="to-create-and-open-an-outbound-channel"></a><span data-ttu-id="32bd1-112">若要创建并打开出站通道</span><span class="sxs-lookup"><span data-stu-id="32bd1-112">To create and open an outbound channel</span></span>  
   
-1. <span data-ttu-id="50080-113">创建和初始化的实例**ChannelFactory**为通过使用一个终结点和绑定所需的通道形状。</span><span class="sxs-lookup"><span data-stu-id="50080-113">Create and initialize an instance of **ChannelFactory** for the desired channel shape by using an endpoint and a binding.</span></span> <span data-ttu-id="50080-114">终结点指定 URI 的 Oracle 连接并绑定是的一个实例**OracleDBBinding**。</span><span class="sxs-lookup"><span data-stu-id="50080-114">The endpoint specifies an Oracle connection URI and the binding is an instance of **OracleDBBinding**.</span></span>  
+1. <span data-ttu-id="32bd1-113">创建和初始化的实例**ChannelFactory**为通过使用一个终结点和绑定所需的通道形状。</span><span class="sxs-lookup"><span data-stu-id="32bd1-113">Create and initialize an instance of **ChannelFactory** for the desired channel shape by using an endpoint and a binding.</span></span> <span data-ttu-id="32bd1-114">终结点指定 URI 的 Oracle 连接并绑定是的一个实例**OracleDBBinding**。</span><span class="sxs-lookup"><span data-stu-id="32bd1-114">The endpoint specifies an Oracle connection URI and the binding is an instance of **OracleDBBinding**.</span></span>  
   
-2. <span data-ttu-id="50080-115">通过使用通道工厂提供的 Oracle 凭据**凭据**属性。</span><span class="sxs-lookup"><span data-stu-id="50080-115">Provide Oracle credentials for the channel factory by using the **Credentials** property.</span></span>  
+2. <span data-ttu-id="32bd1-115">通过使用通道工厂提供的 Oracle 凭据**凭据**属性。</span><span class="sxs-lookup"><span data-stu-id="32bd1-115">Provide Oracle credentials for the channel factory by using the **Credentials** property.</span></span>  
   
-3. <span data-ttu-id="50080-116">打开通道工厂。</span><span class="sxs-lookup"><span data-stu-id="50080-116">Open the channel factory.</span></span>  
+3. <span data-ttu-id="32bd1-116">打开通道工厂。</span><span class="sxs-lookup"><span data-stu-id="32bd1-116">Open the channel factory.</span></span>  
   
-4. <span data-ttu-id="50080-117">通过调用获取通道的实例**CreateChannel**方法对的通道工厂。</span><span class="sxs-lookup"><span data-stu-id="50080-117">Get an instance of the channel by invoking the **CreateChannel** method on the channel factory.</span></span>  
+4. <span data-ttu-id="32bd1-117">通过调用获取通道的实例**CreateChannel**方法对的通道工厂。</span><span class="sxs-lookup"><span data-stu-id="32bd1-117">Get an instance of the channel by invoking the **CreateChannel** method on the channel factory.</span></span>  
   
-5. <span data-ttu-id="50080-118">打开通道。</span><span class="sxs-lookup"><span data-stu-id="50080-118">Open the channel.</span></span>  
+5. <span data-ttu-id="32bd1-118">打开通道。</span><span class="sxs-lookup"><span data-stu-id="32bd1-118">Open the channel.</span></span>  
   
-   <span data-ttu-id="50080-119">在代码中或从配置，可以指定的绑定和终结点地址。</span><span class="sxs-lookup"><span data-stu-id="50080-119">You can specify the binding and endpoint address in your code or from configuration.</span></span>  
+   <span data-ttu-id="32bd1-119">在代码中或从配置，可以指定的绑定和终结点地址。</span><span class="sxs-lookup"><span data-stu-id="32bd1-119">You can specify the binding and endpoint address in your code or from configuration.</span></span>  
   
-### <a name="specifying-the-binding-and-endpoint-address-in-code"></a><span data-ttu-id="50080-120">在代码中指定的绑定和终结点地址</span><span class="sxs-lookup"><span data-stu-id="50080-120">Specifying the Binding and Endpoint Address in Code</span></span>  
- <span data-ttu-id="50080-121">下面的代码示例演示如何创建**IRequestChannel**通过在代码中指定的绑定和终结点地址。</span><span class="sxs-lookup"><span data-stu-id="50080-121">The following code example shows how to create an **IRequestChannel** by specifying the binding and endpoint address in code.</span></span> <span data-ttu-id="50080-122">若要创建的代码**IOutputChannel**是相同，只不过必须指定**IOutputChannel**接口**ChannelFactory**和通道类型。</span><span class="sxs-lookup"><span data-stu-id="50080-122">The code to create an **IOutputChannel** is the same except that you must specify an **IOutputChannel** interface for the **ChannelFactory** and channel type.</span></span>  
+### <a name="specifying-the-binding-and-endpoint-address-in-code"></a><span data-ttu-id="32bd1-120">在代码中指定的绑定和终结点地址</span><span class="sxs-lookup"><span data-stu-id="32bd1-120">Specifying the Binding and Endpoint Address in Code</span></span>  
+ <span data-ttu-id="32bd1-121">下面的代码示例演示如何创建**IRequestChannel**通过在代码中指定的绑定和终结点地址。</span><span class="sxs-lookup"><span data-stu-id="32bd1-121">The following code example shows how to create an **IRequestChannel** by specifying the binding and endpoint address in code.</span></span> <span data-ttu-id="32bd1-122">若要创建的代码**IOutputChannel**是相同，只不过必须指定**IOutputChannel**接口**ChannelFactory**和通道类型。</span><span class="sxs-lookup"><span data-stu-id="32bd1-122">The code to create an **IOutputChannel** is the same except that you must specify an **IOutputChannel** interface for the **ChannelFactory** and channel type.</span></span>  
   
 ```  
 // Create binding -- set binding properties before you open the factory.  
@@ -76,8 +76,8 @@ IRequestChannel channel = factory.CreateChannel();
 channel.Open();  
 ```  
   
-### <a name="specifying-the-binding-and-endpoint-address-in-configuration"></a><span data-ttu-id="50080-123">在配置中指定的绑定和终结点地址</span><span class="sxs-lookup"><span data-stu-id="50080-123">Specifying the Binding and Endpoint Address in Configuration</span></span>  
- <span data-ttu-id="50080-124">下面的代码示例演示如何从配置中指定的客户端终结点创建通道工厂。</span><span class="sxs-lookup"><span data-stu-id="50080-124">The following code example shows how to create a channel factory from a client endpoint specified in configuration.</span></span>  
+### <a name="specifying-the-binding-and-endpoint-address-in-configuration"></a><span data-ttu-id="32bd1-123">在配置中指定的绑定和终结点地址</span><span class="sxs-lookup"><span data-stu-id="32bd1-123">Specifying the Binding and Endpoint Address in Configuration</span></span>  
+ <span data-ttu-id="32bd1-124">下面的代码示例演示如何从配置中指定的客户端终结点创建通道工厂。</span><span class="sxs-lookup"><span data-stu-id="32bd1-124">The following code example shows how to create a channel factory from a client endpoint specified in configuration.</span></span>  
   
 ```  
 // Create channel factory from configuration.  
@@ -96,8 +96,8 @@ IRequestChannel channel = factory.CreateChannel();
 channel.Open();  
 ```  
   
-#### <a name="the-configuration-settings"></a><span data-ttu-id="50080-125">配置设置</span><span class="sxs-lookup"><span data-stu-id="50080-125">The Configuration Settings</span></span>  
- <span data-ttu-id="50080-126">下面的代码演示上述示例使用的配置设置。</span><span class="sxs-lookup"><span data-stu-id="50080-126">The following code shows the configuration settings used for the preceding example.</span></span> <span data-ttu-id="50080-127">客户端终结点的协定必须是"System.ServiceModel.Channels.IRequestChannel"或"System.ServiceModel.Channels.IRequestChannel"取决于你想要创建的通道形状的类型。</span><span class="sxs-lookup"><span data-stu-id="50080-127">The contract for the client endpoint must be "System.ServiceModel.Channels.IRequestChannel" or "System.ServiceModel.Channels.IRequestChannel" depending on the kind of channel shape that you want to create.</span></span>  
+#### <a name="the-configuration-settings"></a><span data-ttu-id="32bd1-125">配置设置</span><span class="sxs-lookup"><span data-stu-id="32bd1-125">The Configuration Settings</span></span>  
+ <span data-ttu-id="32bd1-126">下面的代码演示上述示例使用的配置设置。</span><span class="sxs-lookup"><span data-stu-id="32bd1-126">The following code shows the configuration settings used for the preceding example.</span></span> <span data-ttu-id="32bd1-127">客户端终结点的协定必须是"System.ServiceModel.Channels.IRequestChannel"或"System.ServiceModel.Channels.IRequestChannel"取决于你想要创建的通道形状的类型。</span><span class="sxs-lookup"><span data-stu-id="32bd1-127">The contract for the client endpoint must be "System.ServiceModel.Channels.IRequestChannel" or "System.ServiceModel.Channels.IRequestChannel" depending on the kind of channel shape that you want to create.</span></span>  
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -127,29 +127,29 @@ channel.Open();
 </configuration>  
 ```  
   
-### <a name="creating-inbound-service-channels"></a><span data-ttu-id="50080-128">创建入站 （服务） 通道</span><span class="sxs-lookup"><span data-stu-id="50080-128">Creating Inbound (Service) Channels</span></span>  
- <span data-ttu-id="50080-129">在配置[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]轮询 Oracle 数据库表和视图的实例上设置绑定属性**OracleDBBinding**。</span><span class="sxs-lookup"><span data-stu-id="50080-129">You configure the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] to poll the Oracle database tables and views by setting binding properties on an instance of **OracleDBBinding**.</span></span> <span data-ttu-id="50080-130">然后使用此绑定来生成通道侦听器可以获取**IInputChannel**通道用于接收来自适配器的入站操作消息。</span><span class="sxs-lookup"><span data-stu-id="50080-130">You then use this binding to build a channel listener from which you can get an **IInputChannel** channel to receive message for inbound operations from the adapter.</span></span>  
+### <a name="creating-inbound-service-channels"></a><span data-ttu-id="32bd1-128">创建入站 （服务） 通道</span><span class="sxs-lookup"><span data-stu-id="32bd1-128">Creating Inbound (Service) Channels</span></span>  
+ <span data-ttu-id="32bd1-129">在配置[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]轮询 Oracle 数据库表和视图的实例上设置绑定属性**OracleDBBinding**。</span><span class="sxs-lookup"><span data-stu-id="32bd1-129">You configure the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] to poll the Oracle database tables and views by setting binding properties on an instance of **OracleDBBinding**.</span></span> <span data-ttu-id="32bd1-130">然后使用此绑定来生成通道侦听器可以获取**IInputChannel**通道用于接收来自适配器的入站操作消息。</span><span class="sxs-lookup"><span data-stu-id="32bd1-130">You then use this binding to build a channel listener from which you can get an **IInputChannel** channel to receive message for inbound operations from the adapter.</span></span>  
   
-##### <a name="to-create-and-open-an-iinputchannel-to-receive-messages-for-inbound-operations"></a><span data-ttu-id="50080-131">若要创建并打开 IInputChannel 接收消息的入站操作</span><span class="sxs-lookup"><span data-stu-id="50080-131">To create and open an IInputChannel to receive messages for inbound operations</span></span>  
+##### <a name="to-create-and-open-an-iinputchannel-to-receive-messages-for-inbound-operations"></a><span data-ttu-id="32bd1-131">若要创建并打开 IInputChannel 接收消息的入站操作</span><span class="sxs-lookup"><span data-stu-id="32bd1-131">To create and open an IInputChannel to receive messages for inbound operations</span></span>  
   
-1. <span data-ttu-id="50080-132">创建的实例**OracleDBBinding**。</span><span class="sxs-lookup"><span data-stu-id="50080-132">Create an instance of **OracleDBBinding**.</span></span>  
+1. <span data-ttu-id="32bd1-132">创建的实例**OracleDBBinding**。</span><span class="sxs-lookup"><span data-stu-id="32bd1-132">Create an instance of **OracleDBBinding**.</span></span>  
   
-2. <span data-ttu-id="50080-133">设置所需的入站操作的绑定属性。</span><span class="sxs-lookup"><span data-stu-id="50080-133">Set the binding properties required for the inbound operation.</span></span> <span data-ttu-id="50080-134">例如，对于 POLLINGSTMT 操作中，至少必须设置**InboundOperationType**， **PollingStatement**，并**PollingInterval**绑定到的属性配置[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]轮询 Oracle 数据库。</span><span class="sxs-lookup"><span data-stu-id="50080-134">For example, for the POLLINGSTMT operation, at a minimum you must set the **InboundOperationType**, **PollingStatement**, and **PollingInterval** binding properties to configure the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] to poll the Oracle database.</span></span>  
+2. <span data-ttu-id="32bd1-133">设置所需的入站操作的绑定属性。</span><span class="sxs-lookup"><span data-stu-id="32bd1-133">Set the binding properties required for the inbound operation.</span></span> <span data-ttu-id="32bd1-134">例如，对于 POLLINGSTMT 操作中，至少必须设置**InboundOperationType**， **PollingStatement**，并**PollingInterval**绑定到的属性配置[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]轮询 Oracle 数据库。</span><span class="sxs-lookup"><span data-stu-id="32bd1-134">For example, for the POLLINGSTMT operation, at a minimum you must set the **InboundOperationType**, **PollingStatement**, and **PollingInterval** binding properties to configure the [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] to poll the Oracle database.</span></span>  
   
-3. <span data-ttu-id="50080-135">创建一个绑定参数集合使用**BindingParameterCollection**类，并设置凭据。</span><span class="sxs-lookup"><span data-stu-id="50080-135">Create a binding parameter collection using the **BindingParameterCollection** class and set the credentials.</span></span>  
+3. <span data-ttu-id="32bd1-135">创建一个绑定参数集合使用**BindingParameterCollection**类，并设置凭据。</span><span class="sxs-lookup"><span data-stu-id="32bd1-135">Create a binding parameter collection using the **BindingParameterCollection** class and set the credentials.</span></span>  
   
-4. <span data-ttu-id="50080-136">通过调用创建的通道侦听器**BuildChannelListener\<IInputChannel\>** 方法**OracleDBBinding**。</span><span class="sxs-lookup"><span data-stu-id="50080-136">Create a channel listener by invoking **BuildChannelListener\<IInputChannel\>** method on the **OracleDBBinding**.</span></span> <span data-ttu-id="50080-137">作为此方法的参数之一指定 Oracle 连接 URI。</span><span class="sxs-lookup"><span data-stu-id="50080-137">You specify the Oracle connection URI as one of the parameters to this method.</span></span> <span data-ttu-id="50080-138">有关 Oracle 连接 URI 的详细信息，请参阅[创建的 Oracle 数据库连接 URI](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)。</span><span class="sxs-lookup"><span data-stu-id="50080-138">For more information about the Oracle connection URI, see [Create the Oracle Database connection URI](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md).</span></span>  
+4. <span data-ttu-id="32bd1-136">通过调用创建的通道侦听器**BuildChannelListener\<IInputChannel\>** 方法**OracleDBBinding**。</span><span class="sxs-lookup"><span data-stu-id="32bd1-136">Create a channel listener by invoking **BuildChannelListener\<IInputChannel\>** method on the **OracleDBBinding**.</span></span> <span data-ttu-id="32bd1-137">作为此方法的参数之一指定 Oracle 连接 URI。</span><span class="sxs-lookup"><span data-stu-id="32bd1-137">You specify the Oracle connection URI as one of the parameters to this method.</span></span> <span data-ttu-id="32bd1-138">有关 Oracle 连接 URI 的详细信息，请参阅[创建的 Oracle 数据库连接 URI](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md)。</span><span class="sxs-lookup"><span data-stu-id="32bd1-138">For more information about the Oracle connection URI, see [Create the Oracle Database connection URI](../../adapters-and-accelerators/adapter-oracle-database/create-the-oracle-database-connection-uri.md).</span></span>  
   
-5. <span data-ttu-id="50080-139">打开侦听器。</span><span class="sxs-lookup"><span data-stu-id="50080-139">Open the listener.</span></span>  
+5. <span data-ttu-id="32bd1-139">打开侦听器。</span><span class="sxs-lookup"><span data-stu-id="32bd1-139">Open the listener.</span></span>  
   
-6. <span data-ttu-id="50080-140">获取**IInputChannel**通道通过调用**AcceptChannel**在侦听器上的方法。</span><span class="sxs-lookup"><span data-stu-id="50080-140">Get an **IInputChannel** channel by invoking the **AcceptChannel** method on listener.</span></span>  
+6. <span data-ttu-id="32bd1-140">获取**IInputChannel**通道通过调用**AcceptChannel**在侦听器上的方法。</span><span class="sxs-lookup"><span data-stu-id="32bd1-140">Get an **IInputChannel** channel by invoking the **AcceptChannel** method on listener.</span></span>  
   
-7. <span data-ttu-id="50080-141">打开通道。</span><span class="sxs-lookup"><span data-stu-id="50080-141">Open the channel.</span></span>  
+7. <span data-ttu-id="32bd1-141">打开通道。</span><span class="sxs-lookup"><span data-stu-id="32bd1-141">Open the channel.</span></span>  
   
-   <span data-ttu-id="50080-142">下面的代码演示如何创建通道侦听器，并获取**IInputChannel**到入站消息从适配器使用 POLLINGSTMT 操作。</span><span class="sxs-lookup"><span data-stu-id="50080-142">The following code shows how to create a channel listener and get an **IInputChannel** to inbound messages from the adapter using the POLLINGSTMT operation.</span></span>  
+   <span data-ttu-id="32bd1-142">下面的代码演示如何创建通道侦听器，并获取**IInputChannel**到入站消息从适配器使用 POLLINGSTMT 操作。</span><span class="sxs-lookup"><span data-stu-id="32bd1-142">The following code shows how to create a channel listener and get an **IInputChannel** to inbound messages from the adapter using the POLLINGSTMT operation.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="50080-143">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]仅支持单向接收。</span><span class="sxs-lookup"><span data-stu-id="50080-143">The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] only supports one-way receive.</span></span> <span data-ttu-id="50080-144">因此，必须使用 IInputChannel 从 Oracle 数据库接收消息的入站操作。</span><span class="sxs-lookup"><span data-stu-id="50080-144">So, you must use IInputChannel to receive messages for inbound operations from Oracle database.</span></span>  
+>  <span data-ttu-id="32bd1-143">[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]仅支持单向接收。</span><span class="sxs-lookup"><span data-stu-id="32bd1-143">The [!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)] only supports one-way receive.</span></span> <span data-ttu-id="32bd1-144">因此，必须使用 IInputChannel 从 Oracle 数据库接收消息的入站操作。</span><span class="sxs-lookup"><span data-stu-id="32bd1-144">So, you must use IInputChannel to receive messages for inbound operations from Oracle database.</span></span>  
   
 ```  
 // Create a binding: specify the InboundOperationType, PollingInterval (in seconds), the PollingStatement, and  
@@ -178,5 +178,5 @@ channel = listener.AcceptChannel();
 channel.Open();  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="50080-145">请参阅</span><span class="sxs-lookup"><span data-stu-id="50080-145">See Also</span></span>  
- [<span data-ttu-id="50080-146">开发 Oracle 数据库应用程序使用 WCF 通道模型</span><span class="sxs-lookup"><span data-stu-id="50080-146">Develop Oracle Database applications using the WCF Channel Model</span></span>](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-channel-model.md)
+## <a name="see-also"></a><span data-ttu-id="32bd1-145">请参阅</span><span class="sxs-lookup"><span data-stu-id="32bd1-145">See Also</span></span>  
+ [<span data-ttu-id="32bd1-146">开发 Oracle 数据库应用程序使用 WCF 通道模型</span><span class="sxs-lookup"><span data-stu-id="32bd1-146">Develop Oracle Database applications using the WCF Channel Model</span></span>](../../adapters-and-accelerators/adapter-oracle-database/develop-oracle-database-applications-using-the-wcf-channel-model.md)
