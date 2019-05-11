@@ -1,5 +1,5 @@
 ---
-title: 完成异常 Message4 |Microsoft 文档
+title: 完成异常 Message4 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,18 +15,18 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7e4901a353361091c3d0706e1ec59c47f131eb07
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4f30cb22bad77515927b0107cfa6e54aa3a3fbf7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231341"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356817"
 ---
-# <a name="completing-the-exception-message"></a><span data-ttu-id="54aa3-102">完成的异常消息</span><span class="sxs-lookup"><span data-stu-id="54aa3-102">Completing the Exception Message</span></span>
-### <a name="to-complete-the-exception-message"></a><span data-ttu-id="54aa3-103">完成异常消息</span><span class="sxs-lookup"><span data-stu-id="54aa3-103">To complete the exception message</span></span>  
+# <a name="completing-the-exception-message"></a><span data-ttu-id="73c61-102">完成异常消息</span><span class="sxs-lookup"><span data-stu-id="73c61-102">Completing the Exception Message</span></span>
+### <a name="to-complete-the-exception-message"></a><span data-ttu-id="73c61-103">若要完成异常消息</span><span class="sxs-lookup"><span data-stu-id="73c61-103">To complete the exception message</span></span>  
   
--   <span data-ttu-id="54aa3-104">若要完成的异常，将添加**发送**形状将错误 Message_3 重定向到受监视的文件夹。</span><span class="sxs-lookup"><span data-stu-id="54aa3-104">To complete the flow of the exception, add a **Send** shape to redirect the fault Message_3 to a monitored folder.</span></span>  
+-   <span data-ttu-id="73c61-104">若要完成异常流，将添加**发送**形状以将错误 message_3 发送重定向到所监视的文件夹。</span><span class="sxs-lookup"><span data-stu-id="73c61-104">To complete the flow of the exception, add a **Send** shape to redirect the fault Message_3 to a monitored folder.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="54aa3-105">另请参阅</span><span class="sxs-lookup"><span data-stu-id="54aa3-105">See Also</span></span>  
- <span data-ttu-id="54aa3-106">[如何添加 Catch 异常块](../core/how-to-add-a-catch-exception-block2.md) </span><span class="sxs-lookup"><span data-stu-id="54aa3-106">[How to Add a Catch Exception Block](../core/how-to-add-a-catch-exception-block2.md) </span></span>  
- [<span data-ttu-id="54aa3-107">使用 BizTalk Server 异常处理</span><span class="sxs-lookup"><span data-stu-id="54aa3-107">Using BizTalk Server Exception Handling</span></span>](../core/using-biztalk-server-exception-handling4.md)
+## <a name="see-also"></a><span data-ttu-id="73c61-105">请参阅</span><span class="sxs-lookup"><span data-stu-id="73c61-105">See Also</span></span>  
+ <span data-ttu-id="73c61-106">[如何添加捕获异常块](../core/how-to-add-a-catch-exception-block2.md) </span><span class="sxs-lookup"><span data-stu-id="73c61-106">[How to Add a Catch Exception Block](../core/how-to-add-a-catch-exception-block2.md) </span></span>  
+ [<span data-ttu-id="73c61-107">使用 BizTalk Server 的异常处理</span><span class="sxs-lookup"><span data-stu-id="73c61-107">Using BizTalk Server Exception Handling</span></span>](../core/using-biztalk-server-exception-handling4.md)

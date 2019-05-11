@@ -17,72 +17,72 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8382141993d214ffbfc79a0a4eec3f2c06b4e456
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3bcd4b739313affc65788b1511bed4bd786616c6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966358"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378357"
 ---
-# <a name="deploying-a4swift-schemas"></a><span data-ttu-id="34bf3-102">部署 A4SWIFT 架构</span><span class="sxs-lookup"><span data-stu-id="34bf3-102">Deploying A4SWIFT Schemas</span></span>
-<span data-ttu-id="34bf3-103">您必须部署你想要交换的 SWIFT 消息的架构。</span><span class="sxs-lookup"><span data-stu-id="34bf3-103">You must deploy schemas for the SWIFT messages that you want to exchange.</span></span>  
+# <a name="deploying-a4swift-schemas"></a><span data-ttu-id="d6e6d-102">部署 A4SWIFT 架构</span><span class="sxs-lookup"><span data-stu-id="d6e6d-102">Deploying A4SWIFT Schemas</span></span>
+<span data-ttu-id="d6e6d-103">您必须部署你想要交换的 SWIFT 消息的架构。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-103">You must deploy schemas for the SWIFT messages that you want to exchange.</span></span>  
   
- <span data-ttu-id="34bf3-104">**摘要**</span><span class="sxs-lookup"><span data-stu-id="34bf3-104">**Summary**</span></span>  
+ <span data-ttu-id="d6e6d-104">**摘要**</span><span class="sxs-lookup"><span data-stu-id="d6e6d-104">**Summary**</span></span>  
   
- <span data-ttu-id="34bf3-105">部署了以下架构：</span><span class="sxs-lookup"><span data-stu-id="34bf3-105">Deploy the following schemas:</span></span>  
+ <span data-ttu-id="d6e6d-105">部署了以下架构：</span><span class="sxs-lookup"><span data-stu-id="d6e6d-105">Deploy the following schemas:</span></span>  
   
--   <span data-ttu-id="34bf3-106">SWIFT 基 Types.xsd</span><span class="sxs-lookup"><span data-stu-id="34bf3-106">SWIFT Base Types.xsd</span></span>  
+-   <span data-ttu-id="d6e6d-106">SWIFT 基 Types.xsd</span><span class="sxs-lookup"><span data-stu-id="d6e6d-106">SWIFT Base Types.xsd</span></span>  
   
--   <span data-ttu-id="34bf3-107">SWIFT 常见数据 Types.xsd</span><span class="sxs-lookup"><span data-stu-id="34bf3-107">SWIFT Common Data Types.xsd</span></span>  
+-   <span data-ttu-id="d6e6d-107">SWIFT 常见数据 Types.xsd</span><span class="sxs-lookup"><span data-stu-id="d6e6d-107">SWIFT Common Data Types.xsd</span></span>  
   
--   <span data-ttu-id="34bf3-108">对于消息类型，例如，MT103.xsd 特定的架构</span><span class="sxs-lookup"><span data-stu-id="34bf3-108">Specific schema for a message type, for example, MT103.xsd</span></span>  
+-   <span data-ttu-id="d6e6d-108">对于消息类型，例如，MT103.xsd 特定的架构</span><span class="sxs-lookup"><span data-stu-id="d6e6d-108">Specific schema for a message type, for example, MT103.xsd</span></span>  
   
-### <a name="to-create-a-strong-named-swift-project"></a><span data-ttu-id="34bf3-109">若要创建强名称的 SWIFT 项目</span><span class="sxs-lookup"><span data-stu-id="34bf3-109">To create a strong-named SWIFT project</span></span>  
+### <a name="to-create-a-strong-named-swift-project"></a><span data-ttu-id="d6e6d-109">若要创建强名称的 SWIFT 项目</span><span class="sxs-lookup"><span data-stu-id="d6e6d-109">To create a strong-named SWIFT project</span></span>  
   
-1. <span data-ttu-id="34bf3-110">在 Visual Studio 中，单击**文件**，依次指向**新建**，然后单击**项目**。</span><span class="sxs-lookup"><span data-stu-id="34bf3-110">In Visual Studio, click **File**, point to **New**, and then click **Project**.</span></span>  
+1. <span data-ttu-id="d6e6d-110">在 Visual Studio 中，单击**文件**，依次指向**新建**，然后单击**项目**。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-110">In Visual Studio, click **File**, point to **New**, and then click **Project**.</span></span>  
   
-2. <span data-ttu-id="34bf3-111">在新建项目对话框中，在**项目类型**窗格中，选择**BizTalk 项目**文件夹。</span><span class="sxs-lookup"><span data-stu-id="34bf3-111">In the New Project dialog box, in the **Project types** pane, select the **BizTalk Projects** folder.</span></span>  
+2. <span data-ttu-id="d6e6d-111">在新建项目对话框中，在**项目类型**窗格中，选择**BizTalk 项目**文件夹。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-111">In the New Project dialog box, in the **Project types** pane, select the **BizTalk Projects** folder.</span></span>  
   
-3. <span data-ttu-id="34bf3-112">在中**模板**窗格中，选择**空的 BizTalk Server 项目**。</span><span class="sxs-lookup"><span data-stu-id="34bf3-112">In the **Templates** pane, select **Empty BizTalk Server Project**.</span></span>  
+3. <span data-ttu-id="d6e6d-112">在中**模板**窗格中，选择**空的 BizTalk Server 项目**。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-112">In the **Templates** pane, select **Empty BizTalk Server Project**.</span></span>  
   
-4. <span data-ttu-id="34bf3-113">在中**名称**框中，键入所需的项目名称的名称。</span><span class="sxs-lookup"><span data-stu-id="34bf3-113">In the **Name** box, type the name you want for the project name.</span></span>  
+4. <span data-ttu-id="d6e6d-113">在中**名称**框中，键入所需的项目名称的名称。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-113">In the **Name** box, type the name you want for the project name.</span></span>  
   
-5. <span data-ttu-id="34bf3-114">在中**解决方案**框中，选择**创建新的解决方案**。</span><span class="sxs-lookup"><span data-stu-id="34bf3-114">In the **Solution** box, select **Create new Solution**.</span></span> <span data-ttu-id="34bf3-115">在中**位置**框中，输入要添加到架构项目的项目的位置。</span><span class="sxs-lookup"><span data-stu-id="34bf3-115">In the **Location** box, enter the location of the project that you are adding the schema project to.</span></span>  
+5. <span data-ttu-id="d6e6d-114">在中**解决方案**框中，选择**创建新的解决方案**。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-114">In the **Solution** box, select **Create new Solution**.</span></span> <span data-ttu-id="d6e6d-115">在中**位置**框中，输入要添加到架构项目的项目的位置。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-115">In the **Location** box, enter the location of the project that you are adding the schema project to.</span></span>  
   
-6. <span data-ttu-id="34bf3-116">单击**确定**打开新项目。</span><span class="sxs-lookup"><span data-stu-id="34bf3-116">Click **OK** to open the new project.</span></span>  
-   [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]<span data-ttu-id="34bf3-117">[!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] 将新项目添加到解决方案资源管理器，并指定的文件夹中创建的项目文件夹和文件。</span><span class="sxs-lookup"><span data-stu-id="34bf3-117">[!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] adds a new project to Solution Explorer, and creates the project folder and files in the folder specified.</span></span>  
+6. <span data-ttu-id="d6e6d-116">单击**确定**打开新项目。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-116">Click **OK** to open the new project.</span></span>  
+   [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]<span data-ttu-id="d6e6d-117">[!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] 将新项目添加到解决方案资源管理器，并指定的文件夹中创建的项目文件夹和文件。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-117">[!INCLUDE[btsDotNet](../../includes/btsdotnet-md.md)] adds a new project to Solution Explorer, and creates the project folder and files in the folder specified.</span></span>  
   
-7. <span data-ttu-id="34bf3-118">启动 Visual Studio 命令提示符。</span><span class="sxs-lookup"><span data-stu-id="34bf3-118">Start Visual Studio command prompt.</span></span>  
+7. <span data-ttu-id="d6e6d-118">启动 Visual Studio 命令提示符。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-118">Start Visual Studio command prompt.</span></span>  
   
-8. <span data-ttu-id="34bf3-119">在 Visual Studio 命令提示符下，浏览到 **\<*驱动器*\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT**。</span><span class="sxs-lookup"><span data-stu-id="34bf3-119">At the Visual Studio command prompt, browse to **\<*drive*\>:\Program Files\Microsoft BizTalk Accelerator for SWIFT**.</span></span>  
+8. <span data-ttu-id="d6e6d-119">在 Visual Studio 命令提示符下，浏览到 **\<*驱动器*\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT**。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-119">At the Visual Studio command prompt, browse to **\<*drive*\>:\Program Files\Microsoft BizTalk Accelerator for SWIFT**.</span></span>  
   
-9. <span data-ttu-id="34bf3-120">在命令提示符处，键入**sn – k key.snk**，然后按 ENTER。</span><span class="sxs-lookup"><span data-stu-id="34bf3-120">At the command prompt, type **sn –k key.snk**, and then press ENTER.</span></span> <span data-ttu-id="34bf3-121">请确保在命令提示符窗口中，该值指示密钥对已写入 key.snk 显示一条消息。</span><span class="sxs-lookup"><span data-stu-id="34bf3-121">Ensure that a message is displayed in the command-prompt window indicating that a key pair was written to key.snk.</span></span>  
+9. <span data-ttu-id="d6e6d-120">在命令提示符处，键入**sn – k key.snk**，然后按 ENTER。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-120">At the command prompt, type **sn –k key.snk**, and then press ENTER.</span></span> <span data-ttu-id="d6e6d-121">请确保在命令提示符窗口中，该值指示密钥对已写入 key.snk 显示一条消息。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-121">Ensure that a message is displayed in the command-prompt window indicating that a key pair was written to key.snk.</span></span>  
   
-10. <span data-ttu-id="34bf3-122">在解决方案资源管理器，右键单击项目名称，然后依次**属性**。</span><span class="sxs-lookup"><span data-stu-id="34bf3-122">In Solution Explorer, right-click your project name, and then click **Properties**.</span></span>  
+10. <span data-ttu-id="d6e6d-122">在解决方案资源管理器，右键单击项目名称，然后依次**属性**。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-122">In Solution Explorer, right-click your project name, and then click **Properties**.</span></span>  
   
-11. <span data-ttu-id="34bf3-123">在左窗格中**属性页**对话框中，单击**程序集**。</span><span class="sxs-lookup"><span data-stu-id="34bf3-123">In the left pane of the **Property Pages** dialog box, click **Assembly**.</span></span>  
+11. <span data-ttu-id="d6e6d-123">在左窗格中**属性页**对话框中，单击**程序集**。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-123">In the left pane of the **Property Pages** dialog box, click **Assembly**.</span></span>  
   
-12. <span data-ttu-id="34bf3-124">在右窗格中**属性页**对话框中，向下滚动到**强名称**部分中，单击右侧的字段**程序集密钥文件**，然后单击省略号 （...） 按钮。</span><span class="sxs-lookup"><span data-stu-id="34bf3-124">In the right pane of the **Property Pages** dialog box, scroll down to the **Strong name** section, click the field to the right of **Assembly Key File**, and then click the ellipsis () button.</span></span>  
+12. <span data-ttu-id="d6e6d-124">在右窗格中**属性页**对话框中，向下滚动到**强名称**部分中，单击右侧的字段**程序集密钥文件**，然后单击省略号 （...） 按钮。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-124">In the right pane of the **Property Pages** dialog box, scroll down to the **Strong name** section, click the field to the right of **Assembly Key File**, and then click the ellipsis () button.</span></span>  
   
-13. <span data-ttu-id="34bf3-125">在中**程序集密钥文件**对话框中，浏览到 **\<*驱动器*\>: \Program Files\Microsoft**[!INCLUDE[btaA4SWIFTNoVersionui](../../includes/btaa4swiftnoversionui-md.md)]，单击**key.snk**，然后单击**打开**。</span><span class="sxs-lookup"><span data-stu-id="34bf3-125">In the **Assembly Key File** dialog box, browse to **\<*drive*\>:\Program Files\Microsoft**[!INCLUDE[btaA4SWIFTNoVersionui](../../includes/btaa4swiftnoversionui-md.md)], click **key.snk**, and then click **Open**.</span></span>  
+13. <span data-ttu-id="d6e6d-125">在中**程序集密钥文件**对话框中，浏览到 **\<*驱动器*\>: \Program Files\Microsoft**[!INCLUDE[btaA4SWIFTNoVersionui](../../includes/btaa4swiftnoversionui-md.md)]，单击**key.snk**，然后单击**打开**。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-125">In the **Assembly Key File** dialog box, browse to **\<*drive*\>:\Program Files\Microsoft**[!INCLUDE[btaA4SWIFTNoVersionui](../../includes/btaa4swiftnoversionui-md.md)], click **key.snk**, and then click **Open**.</span></span>  
   
-14. <span data-ttu-id="34bf3-126">在中**属性页**对话框中，单击**确定**以保存所做的更改。</span><span class="sxs-lookup"><span data-stu-id="34bf3-126">In the **Property Pages** dialog box, click **OK** to save your changes.</span></span>  
+14. <span data-ttu-id="d6e6d-126">在中**属性页**对话框中，单击**确定**以保存所做的更改。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-126">In the **Property Pages** dialog box, click **OK** to save your changes.</span></span>  
   
-### <a name="to-add-a-swift-schema"></a><span data-ttu-id="34bf3-127">若要添加 SWIFT 架构</span><span class="sxs-lookup"><span data-stu-id="34bf3-127">To add a SWIFT schema</span></span>  
+### <a name="to-add-a-swift-schema"></a><span data-ttu-id="d6e6d-127">若要添加 SWIFT 架构</span><span class="sxs-lookup"><span data-stu-id="d6e6d-127">To add a SWIFT schema</span></span>  
   
-1.  <span data-ttu-id="34bf3-128">在解决方案资源管理器的 Visual Studio 中，打开你的项目。</span><span class="sxs-lookup"><span data-stu-id="34bf3-128">In Solution Explorer of Visual Studio, open your project.</span></span>  
+1.  <span data-ttu-id="d6e6d-128">在解决方案资源管理器的 Visual Studio 中，打开你的项目。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-128">In Solution Explorer of Visual Studio, open your project.</span></span>  
   
-2.  <span data-ttu-id="34bf3-129">右键单击你的项目，指向**外**，然后单击**现有项**。</span><span class="sxs-lookup"><span data-stu-id="34bf3-129">Right-click your project, point to **Add**, and then click **Existing Item**.</span></span>  
+2.  <span data-ttu-id="d6e6d-129">右键单击你的项目，指向**外**，然后单击**现有项**。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-129">Right-click your project, point to **Add**, and then click **Existing Item**.</span></span>  
   
-3.  <span data-ttu-id="34bf3-130">在中**添加现有项**对话框中:\\**Program Files\Microsoft BizTalk Accelerator for SWIFT\<版本\>消息 Pack\SWIFT Messages\A4SWIFT-SRG\<版本\>\Base 架构**。</span><span class="sxs-lookup"><span data-stu-id="34bf3-130">In the **Add Existing Item** dialog box, in the :\\**Program Files\Microsoft BizTalk Accelerator for SWIFT \<version\> Message Pack\SWIFT Messages\A4SWIFT-SRG\<version\>\Base Schemas**.</span></span> <span data-ttu-id="34bf3-131">选择**SWIFT 基本 Types.xsd**并**SWIFT 常见数据 Types.xsd**架构，并单击**添加**。</span><span class="sxs-lookup"><span data-stu-id="34bf3-131">Select the **SWIFT Base Types.xsd** and **SWIFT Common Data Types.xsd** schemas, and then click **Add**.</span></span>  
+3.  <span data-ttu-id="d6e6d-130">在中**添加现有项**对话框中:\\**Program Files\Microsoft BizTalk Accelerator for SWIFT\<版本\>消息 Pack\SWIFT Messages\A4SWIFT-SRG\<版本\>\Base 架构**。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-130">In the **Add Existing Item** dialog box, in the :\\**Program Files\Microsoft BizTalk Accelerator for SWIFT \<version\> Message Pack\SWIFT Messages\A4SWIFT-SRG\<version\>\Base Schemas**.</span></span> <span data-ttu-id="d6e6d-131">选择**SWIFT 基本 Types.xsd**并**SWIFT 常见数据 Types.xsd**架构，并单击**添加**。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-131">Select the **SWIFT Base Types.xsd** and **SWIFT Common Data Types.xsd** schemas, and then click **Add**.</span></span>  
   
-4.  <span data-ttu-id="34bf3-132">右键单击你的项目，指向**外**，然后单击**添加现有项**。</span><span class="sxs-lookup"><span data-stu-id="34bf3-132">Right-click your project, point to **Add**, and then click **Add Existing Item**.</span></span>  
+4.  <span data-ttu-id="d6e6d-132">右键单击你的项目，指向**外**，然后单击**添加现有项**。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-132">Right-click your project, point to **Add**, and then click **Add Existing Item**.</span></span>  
   
-5.  <span data-ttu-id="34bf3-133">在中**添加现有项**对话框中**查找**下拉列表框中，转到**\<驱动器\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT \<版本\>消息 Pack\SWIFT Messages\A4SWIFT SRG\<版本\>\Category n\MTxxx**。</span><span class="sxs-lookup"><span data-stu-id="34bf3-133">In the **Add Existing Item** dialog box, in the **Look in** drop-down box, move to **\<drive\>:\Program Files\Microsoft BizTalk Accelerator for SWIFT \<version\> Message Pack\SWIFT Messages\A4SWIFT-SRG\<version\>\Category n\MTxxx**.</span></span> <span data-ttu-id="34bf3-134">为选择架构的消息类型，例如**MT103.xsd**，然后单击**添加**。</span><span class="sxs-lookup"><span data-stu-id="34bf3-134">Select a schema for a message type, for instance **MT103.xsd**, and then click **Add**.</span></span>  
+5.  <span data-ttu-id="d6e6d-133">在中**添加现有项**对话框中**查找**下拉列表框中，转到**\<驱动器\>: \Program Files\Microsoft BizTalk Accelerator for SWIFT \<版本\>消息 Pack\SWIFT Messages\A4SWIFT SRG\<版本\>\Category n\MTxxx**。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-133">In the **Add Existing Item** dialog box, in the **Look in** drop-down box, move to **\<drive\>:\Program Files\Microsoft BizTalk Accelerator for SWIFT \<version\> Message Pack\SWIFT Messages\A4SWIFT-SRG\<version\>\Category n\MTxxx**.</span></span> <span data-ttu-id="d6e6d-134">为选择架构的消息类型，例如**MT103.xsd**，然后单击**添加**。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-134">Select a schema for a message type, for instance **MT103.xsd**, and then click **Add**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="34bf3-135">A4SWIFT 添加你的项目的架构，如解决方案资源管理器中所示。</span><span class="sxs-lookup"><span data-stu-id="34bf3-135">A4SWIFT adds the schema for your project, as shown in Solution Explorer.</span></span>  
+    >  <span data-ttu-id="d6e6d-135">A4SWIFT 添加你的项目的架构，如解决方案资源管理器中所示。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-135">A4SWIFT adds the schema for your project, as shown in Solution Explorer.</span></span>  
   
-6.  <span data-ttu-id="34bf3-136">在解决方案资源管理器，右键单击项目名称，然后单击**生成**。</span><span class="sxs-lookup"><span data-stu-id="34bf3-136">In Solution Explorer, right-click the project name, and then click **Build**.</span></span>  
+6.  <span data-ttu-id="d6e6d-136">在解决方案资源管理器，右键单击项目名称，然后单击**生成**。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-136">In Solution Explorer, right-click the project name, and then click **Build**.</span></span>  
   
-7.  <span data-ttu-id="34bf3-137">在解决方案资源管理器，右键单击项目名称，然后单击**部署**。</span><span class="sxs-lookup"><span data-stu-id="34bf3-137">In Solution Explorer, right-click the project name, and then click **Deploy**.</span></span>
+7.  <span data-ttu-id="d6e6d-137">在解决方案资源管理器，右键单击项目名称，然后单击**部署**。</span><span class="sxs-lookup"><span data-stu-id="d6e6d-137">In Solution Explorer, right-click the project name, and then click **Deploy**.</span></span>

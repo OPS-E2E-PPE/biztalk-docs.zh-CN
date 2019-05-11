@@ -1,5 +1,5 @@
 ---
-title: Windows SharePoint Services 安全 |Microsoft 文档
+title: Windows SharePoint 服务的安全性 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,22 +17,22 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 184f5a237f796eac69de6c481e69a87a4a5358df
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0979e0a7c75cf3f1450500253569fc47b3dae8b7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22214485"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376902"
 ---
-# <a name="windows-sharepoint-services-security"></a><span data-ttu-id="7a39d-102">Windows SharePoint Services 安全性</span><span class="sxs-lookup"><span data-stu-id="7a39d-102">Windows SharePoint Services Security</span></span>
-<span data-ttu-id="7a39d-103">Windows SharePoint Services 3.0 使用 Windows SharePoint Services 站点组来管理站点范围的安全。</span><span class="sxs-lookup"><span data-stu-id="7a39d-103">Windows SharePoint Services 3.0 uses Windows SharePoint Services site groups to manage site-wide security.</span></span> <span data-ttu-id="7a39d-104">每个站点组拥有相应权限。</span><span class="sxs-lookup"><span data-stu-id="7a39d-104">Each site group possesses corresponding rights.</span></span> <span data-ttu-id="7a39d-105">权限是用户可以执行的操作-例如视图中，编辑和删除站点资源。</span><span class="sxs-lookup"><span data-stu-id="7a39d-105">Rights are actions that users can perform—such as view, edit, and delete site resources.</span></span> <span data-ttu-id="7a39d-106">资源包括站点列表、 文档库和网站管理。</span><span class="sxs-lookup"><span data-stu-id="7a39d-106">Resources include site lists, document libraries, and site administration.</span></span> <span data-ttu-id="7a39d-107">为在配置文件 Web 客户端需要定义 Windows SharePoint 服务站点组并相应地分配权限到每个资源组中创建每个角色具有访问权限。</span><span class="sxs-lookup"><span data-stu-id="7a39d-107">For each role created in the Profile Web Client you need to define a Windows SharePoint Service site group and assign rights accordingly to each resource to which that group has access.</span></span>  
+# <a name="windows-sharepoint-services-security"></a><span data-ttu-id="9de19-102">Windows SharePoint Services 安全性</span><span class="sxs-lookup"><span data-stu-id="9de19-102">Windows SharePoint Services Security</span></span>
+<span data-ttu-id="9de19-103">Windows SharePoint Services 3.0 使用 Windows SharePoint Services 站点组来管理站点范围的安全性。</span><span class="sxs-lookup"><span data-stu-id="9de19-103">Windows SharePoint Services 3.0 uses Windows SharePoint Services site groups to manage site-wide security.</span></span> <span data-ttu-id="9de19-104">每个站点组都拥有相应权限。</span><span class="sxs-lookup"><span data-stu-id="9de19-104">Each site group possesses corresponding rights.</span></span> <span data-ttu-id="9de19-105">权限是用户可以执行的操作，如查看、 编辑和删除站点资源。</span><span class="sxs-lookup"><span data-stu-id="9de19-105">Rights are actions that users can perform—such as view, edit, and delete site resources.</span></span> <span data-ttu-id="9de19-106">资源包括站点列表、 文档库和网站管理。</span><span class="sxs-lookup"><span data-stu-id="9de19-106">Resources include site lists, document libraries, and site administration.</span></span> <span data-ttu-id="9de19-107">在配置文件 Web 客户端需要定义 Windows SharePoint 服务站点组并相应地将权限分配到每个资源组中创建每个角色具有访问权限。</span><span class="sxs-lookup"><span data-stu-id="9de19-107">For each role created in the Profile Web Client you need to define a Windows SharePoint Service site group and assign rights accordingly to each resource to which that group has access.</span></span>  
   
- <span data-ttu-id="7a39d-108">WSS 3.0 安全有关的详细信息，请参阅 WSS 3.0 评估指南： [http://go.microsoft.com/fwlink/?LinkID=94370](http://go.microsoft.com/fwlink/?LinkID=94370)。</span><span class="sxs-lookup"><span data-stu-id="7a39d-108">For more information about WSS 3.0 security, see the WSS 3.0 evaluation guide at [http://go.microsoft.com/fwlink/?LinkID=94370](http://go.microsoft.com/fwlink/?LinkID=94370).</span></span>  
+ <span data-ttu-id="9de19-108">WSS 3.0 安全有关的详细信息，请参阅 WSS 3.0 评估指南，网址[ http://go.microsoft.com/fwlink/?LinkID=94370 ](http://go.microsoft.com/fwlink/?LinkID=94370)。</span><span class="sxs-lookup"><span data-stu-id="9de19-108">For more information about WSS 3.0 security, see the WSS 3.0 evaluation guide at [http://go.microsoft.com/fwlink/?LinkID=94370](http://go.microsoft.com/fwlink/?LinkID=94370).</span></span>  
   
- <span data-ttu-id="7a39d-109">本部分包含：</span><span class="sxs-lookup"><span data-stu-id="7a39d-109">This section contains:</span></span>  
+ <span data-ttu-id="9de19-109">本部分包含：</span><span class="sxs-lookup"><span data-stu-id="9de19-109">This section contains:</span></span>  
   
--   [<span data-ttu-id="7a39d-110">配置 A4SWIFT 用户</span><span class="sxs-lookup"><span data-stu-id="7a39d-110">Configuring A4SWIFT Users</span></span>](../../adapters-and-accelerators/accelerator-swift/configuring-a4swift-users.md)  
+-   [<span data-ttu-id="9de19-110">配置 A4SWIFT 用户</span><span class="sxs-lookup"><span data-stu-id="9de19-110">Configuring A4SWIFT Users</span></span>](../../adapters-and-accelerators/accelerator-swift/configuring-a4swift-users.md)  
   
--   [<span data-ttu-id="7a39d-111">配置 A4SWIFT 站点组</span><span class="sxs-lookup"><span data-stu-id="7a39d-111">Configuring A4SWIFT Site Groups</span></span>](../../adapters-and-accelerators/accelerator-swift/configuring-a4swift-site-groups.md)  
+-   [<span data-ttu-id="9de19-111">配置 A4SWIFT 站点组</span><span class="sxs-lookup"><span data-stu-id="9de19-111">Configuring A4SWIFT Site Groups</span></span>](../../adapters-and-accelerators/accelerator-swift/configuring-a4swift-site-groups.md)  
   
--   [<span data-ttu-id="7a39d-112">分配权限</span><span class="sxs-lookup"><span data-stu-id="7a39d-112">Assigning Rights</span></span>](../../adapters-and-accelerators/accelerator-swift/assigning-rights.md)
+-   [<span data-ttu-id="9de19-112">分配权限</span><span class="sxs-lookup"><span data-stu-id="9de19-112">Assigning Rights</span></span>](../../adapters-and-accelerators/accelerator-swift/assigning-rights.md)

@@ -1,5 +1,5 @@
 ---
-title: 基本业务流程 Design5 |Microsoft 文档
+title: 基本业务流程 Design5 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,25 +15,25 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 224b8e507fc9319a2a4b66006914b3ebc27a8421
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 96606eac3ed552dfb07d82630d1ae82830b040c4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230845"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358323"
 ---
-# <a name="basic-orchestration-design"></a><span data-ttu-id="263f2-102">基本业务流程设计</span><span class="sxs-lookup"><span data-stu-id="263f2-102">Basic Orchestration Design</span></span>
-<span data-ttu-id="263f2-103">当您在 PeopleSoft Enterprise 的 BizTalk 适配器中创建基本业务流程时，将在该业务流程的接收端口中接收 XML，</span><span class="sxs-lookup"><span data-stu-id="263f2-103">When you create a basic orchestration in BizTalk Adapter for PeopleSoft Enterprise, you receive XML into the receive port of your orchestration.</span></span> <span data-ttu-id="263f2-104">然后将 XML 发送到后端系统以供处理。</span><span class="sxs-lookup"><span data-stu-id="263f2-104">The XML is then sent to the back-end system to be processed.</span></span> <span data-ttu-id="263f2-105">在后端系统中，可能会发生异常，将停止业务流程，并生成错误。</span><span class="sxs-lookup"><span data-stu-id="263f2-105">In the back-end system, an exception might occur that would stop the orchestration and generate a fault.</span></span> <span data-ttu-id="263f2-106">生成的错误提供了业务流程未完成的相关信息，</span><span class="sxs-lookup"><span data-stu-id="263f2-106">The fault that is produced provides information that the orchestration was not completed.</span></span> <span data-ttu-id="263f2-107">但这并不能帮助确定错误起因。</span><span class="sxs-lookup"><span data-stu-id="263f2-107">This is not helpful in debugging the cause of the error.</span></span>  
+# <a name="basic-orchestration-design"></a><span data-ttu-id="3a181-102">基本业务流程设计</span><span class="sxs-lookup"><span data-stu-id="3a181-102">Basic Orchestration Design</span></span>
+<span data-ttu-id="3a181-103">当 PeopleSoft Enterprise 的 BizTalk 适配器中创建基本业务流程时，请插入您的业务流程的接收端口接收 XML。</span><span class="sxs-lookup"><span data-stu-id="3a181-103">When you create a basic orchestration in BizTalk Adapter for PeopleSoft Enterprise, you receive XML into the receive port of your orchestration.</span></span> <span data-ttu-id="3a181-104">将 XML 然后发送到后端系统进行处理。</span><span class="sxs-lookup"><span data-stu-id="3a181-104">The XML is then sent to the back-end system to be processed.</span></span> <span data-ttu-id="3a181-105">在后端系统中，可能会发生异常，将停止业务流程并生成错误。</span><span class="sxs-lookup"><span data-stu-id="3a181-105">In the back-end system, an exception might occur that would stop the orchestration and generate a fault.</span></span> <span data-ttu-id="3a181-106">生成的错误提供了业务流程未完成的信息。</span><span class="sxs-lookup"><span data-stu-id="3a181-106">The fault that is produced provides information that the orchestration was not completed.</span></span> <span data-ttu-id="3a181-107">这不是有帮助的调试错误的原因。</span><span class="sxs-lookup"><span data-stu-id="3a181-107">This is not helpful in debugging the cause of the error.</span></span>  
   
- ![](../core/media/siebeladapter-15-exceptionhandling-start.gif "SiebelAdapter_15_ExceptionHandling_Start")  
-<span data-ttu-id="263f2-108">异常处理</span><span class="sxs-lookup"><span data-stu-id="263f2-108">Exception handling</span></span>  
+ <span data-ttu-id="3a181-108">![](../core/media/siebeladapter-15-exceptionhandling-start.gif "SiebelAdapter_15_ExceptionHandling_Start")</span><span class="sxs-lookup"><span data-stu-id="3a181-108">![](../core/media/siebeladapter-15-exceptionhandling-start.gif "SiebelAdapter_15_ExceptionHandling_Start")</span></span>  
+<span data-ttu-id="3a181-109">异常处理</span><span class="sxs-lookup"><span data-stu-id="3a181-109">Exception handling</span></span>  
   
- <span data-ttu-id="263f2-109">出现故障时，调用将被挂起。</span><span class="sxs-lookup"><span data-stu-id="263f2-109">When a fault occurs the call is suspended.</span></span> <span data-ttu-id="263f2-110">在审核日志中，该调用设置为“失败”。</span><span class="sxs-lookup"><span data-stu-id="263f2-110">In the Auditing log, the call is set to FAILED.</span></span> <span data-ttu-id="263f2-111">在审核日志中右键单击“失败”，失败的调用将打开一个弹出消息。</span><span class="sxs-lookup"><span data-stu-id="263f2-111">When you right-click FAILED in the Auditing log, the failed call opens a pop-up message.</span></span> <span data-ttu-id="263f2-112">单击报告选项后，后端系统将显示出错误以及失败原因。</span><span class="sxs-lookup"><span data-stu-id="263f2-112">When you click the reporting selection, you are shown the fault and the reason for the failure from the back-end system.</span></span>  
+ <span data-ttu-id="3a181-110">在发生错误时调用将被挂起。</span><span class="sxs-lookup"><span data-stu-id="3a181-110">When a fault occurs the call is suspended.</span></span> <span data-ttu-id="3a181-111">在审核日志中，在调用设置为失败。</span><span class="sxs-lookup"><span data-stu-id="3a181-111">In the Auditing log, the call is set to FAILED.</span></span> <span data-ttu-id="3a181-112">在审核日志中右键单击失败时，失败的调用将打开一个弹出消息。</span><span class="sxs-lookup"><span data-stu-id="3a181-112">When you right-click FAILED in the Auditing log, the failed call opens a pop-up message.</span></span> <span data-ttu-id="3a181-113">当您单击报告选项时，将显示容错域和后端系统从失败的原因。</span><span class="sxs-lookup"><span data-stu-id="3a181-113">When you click the reporting selection, you are shown the fault and the reason for the failure from the back-end system.</span></span>  
   
- <span data-ttu-id="263f2-113">若要防止业务流程进入挂起状态和重定向错误，您可创建一个 CatchExpression。</span><span class="sxs-lookup"><span data-stu-id="263f2-113">To prevent the orchestration from entering a suspended state and to redirect the fault, you can create a CatchExpression.</span></span> <span data-ttu-id="263f2-114">若要捕获由后端生成的异常并帮助找到错误起因，可以在业务流程中使用作用域形状。</span><span class="sxs-lookup"><span data-stu-id="263f2-114">To trap the exception generated by the back-end, and to help in locating the cause of the fault, you can use the Scope shape in your orchestration.</span></span>  
+ <span data-ttu-id="3a181-114">若要防止业务流程进入挂起的状态并将重定向错误，可以创建一个 CatchExpression。</span><span class="sxs-lookup"><span data-stu-id="3a181-114">To prevent the orchestration from entering a suspended state and to redirect the fault, you can create a CatchExpression.</span></span> <span data-ttu-id="3a181-115">若要捕获由后端生成的异常并帮助找到错误的原因，您可以在业务流程中使用作用域形状。</span><span class="sxs-lookup"><span data-stu-id="3a181-115">To trap the exception generated by the back-end, and to help in locating the cause of the fault, you can use the Scope shape in your orchestration.</span></span>  
   
- ![](../core/media/siebeladapter-16-exceptionhandling-total.gif "SiebelAdapter_16_ExceptionHandling_Total")  
-<span data-ttu-id="263f2-115">异常处理总计</span><span class="sxs-lookup"><span data-stu-id="263f2-115">Exception handling total</span></span>  
+ <span data-ttu-id="3a181-116">![](../core/media/siebeladapter-16-exceptionhandling-total.gif "SiebelAdapter_16_ExceptionHandling_Total")</span><span class="sxs-lookup"><span data-stu-id="3a181-116">![](../core/media/siebeladapter-16-exceptionhandling-total.gif "SiebelAdapter_16_ExceptionHandling_Total")</span></span>  
+<span data-ttu-id="3a181-117">异常处理总计</span><span class="sxs-lookup"><span data-stu-id="3a181-117">Exception handling total</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="263f2-116">另请参阅</span><span class="sxs-lookup"><span data-stu-id="263f2-116">See Also</span></span>  
- [<span data-ttu-id="263f2-117">使用 BizTalk Server 异常处理</span><span class="sxs-lookup"><span data-stu-id="263f2-117">Using BizTalk Server Exception Handling</span></span>](../core/using-biztalk-server-exception-handling2.md)
+## <a name="see-also"></a><span data-ttu-id="3a181-118">请参阅</span><span class="sxs-lookup"><span data-stu-id="3a181-118">See Also</span></span>  
+ [<span data-ttu-id="3a181-119">使用 BizTalk Server 的异常处理</span><span class="sxs-lookup"><span data-stu-id="3a181-119">Using BizTalk Server Exception Handling</span></span>](../core/using-biztalk-server-exception-handling2.md)

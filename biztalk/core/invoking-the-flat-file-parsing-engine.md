@@ -1,5 +1,5 @@
 ---
-title: 调用平面文件分析引擎 |Microsoft 文档
+title: 调用平面文件解析引擎 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,17 +17,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 90108ff2ade354c51f87499a388ae54135f14c7f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 66142e4d70f317d0baeba75cae6b1f1bcb528140
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22261837"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380854"
 ---
-# <a name="invoking-the-flat-file-parsing-engine"></a><span data-ttu-id="5d8df-102">调用分析引擎的平面文件</span><span class="sxs-lookup"><span data-stu-id="5d8df-102">Invoking the Flat File Parsing Engine</span></span>
-<span data-ttu-id="5d8df-103">可以通过调用调用平面文件分析引擎**分析**方法**IFFDocumentSpec**接口，反过来转换从`IDocumentSpec Interface`从检索到**PipelineContext**。</span><span class="sxs-lookup"><span data-stu-id="5d8df-103">The flat file parsing engine can be invoked by calling the **Parse** method of the **IFFDocumentSpec** interface, which in turn is typecast from the `IDocumentSpec Interface` retrieved from the **PipelineContext**.</span></span> <span data-ttu-id="5d8df-104">因为**XmlReader**从返回**分析**方法允许客户端一次检索一个节点，这是自定义解析程序的最佳时机。</span><span class="sxs-lookup"><span data-stu-id="5d8df-104">Because the **XmlReader** returned from the **Parse** method allows clients to retrieve one node at a time, this is a good opportunity to customize the parser.</span></span>  
+# <a name="invoking-the-flat-file-parsing-engine"></a><span data-ttu-id="14673-102">调用平面文件解析引擎</span><span class="sxs-lookup"><span data-stu-id="14673-102">Invoking the Flat File Parsing Engine</span></span>
+<span data-ttu-id="14673-103">可以通过调用来调用平面文件解析引擎**分析**方法**IFFDocumentSpec**接口，在进行类型转换`IDocumentSpec Interface`从检索**PipelineContext**。</span><span class="sxs-lookup"><span data-stu-id="14673-103">The flat file parsing engine can be invoked by calling the **Parse** method of the **IFFDocumentSpec** interface, which in turn is typecast from the `IDocumentSpec Interface` retrieved from the **PipelineContext**.</span></span> <span data-ttu-id="14673-104">因为**XmlReader**返回从**分析**方法允许客户端一次检索一个节点，这是一个很好的机会，以自定义分析器。</span><span class="sxs-lookup"><span data-stu-id="14673-104">Because the **XmlReader** returned from the **Parse** method allows clients to retrieve one node at a time, this is a good opportunity to customize the parser.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="5d8df-105">示例</span><span class="sxs-lookup"><span data-stu-id="5d8df-105">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="14673-105">示例</span><span class="sxs-lookup"><span data-stu-id="14673-105">Example</span></span>  
   
 ```  
 XmlReader xr = docspec.Parse(new DataReader());  
@@ -49,5 +49,5 @@ while (xr.Read())
 }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="5d8df-106">另请参阅</span><span class="sxs-lookup"><span data-stu-id="5d8df-106">See Also</span></span>  
- [<span data-ttu-id="5d8df-107">使用平面文件分析引擎</span><span class="sxs-lookup"><span data-stu-id="5d8df-107">Using the Flat File Parsing Engine</span></span>](../core/using-the-flat-file-parsing-engine.md)
+## <a name="see-also"></a><span data-ttu-id="14673-106">请参阅</span><span class="sxs-lookup"><span data-stu-id="14673-106">See Also</span></span>  
+ [<span data-ttu-id="14673-107">使用平面文件解析引擎</span><span class="sxs-lookup"><span data-stu-id="14673-107">Using the Flat File Parsing Engine</span></span>](../core/using-the-flat-file-parsing-engine.md)

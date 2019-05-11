@@ -12,28 +12,28 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 063c60ed07d89429f14f7ed3b7c090cdc0bac033
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b29ee2fb5361aed12c7f90a094e3abeb7296e495
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008158"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381271"
 ---
-# <a name="invalid-scheme"></a><span data-ttu-id="b12be-102">方案无效</span><span class="sxs-lookup"><span data-stu-id="b12be-102">Invalid scheme</span></span>
-## <a name="details"></a><span data-ttu-id="b12be-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="b12be-103">Details</span></span>  
+# <a name="invalid-scheme"></a><span data-ttu-id="86f8d-102">方案无效</span><span class="sxs-lookup"><span data-stu-id="86f8d-102">Invalid scheme</span></span>
+## <a name="details"></a><span data-ttu-id="86f8d-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="86f8d-103">Details</span></span>  
   
 |                 |                                                                                    |
 |-----------------|------------------------------------------------------------------------------------|
-|  <span data-ttu-id="b12be-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="b12be-104">Product Name</span></span>   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] |
-| <span data-ttu-id="b12be-105">产品版本</span><span class="sxs-lookup"><span data-stu-id="b12be-105">Product Version</span></span> |             [!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]             |
-|    <span data-ttu-id="b12be-106">事件 ID</span><span class="sxs-lookup"><span data-stu-id="b12be-106">Event ID</span></span>     |                                         <span data-ttu-id="b12be-107">0</span><span class="sxs-lookup"><span data-stu-id="b12be-107">0</span></span>                                          |
-|  <span data-ttu-id="b12be-108">事件源</span><span class="sxs-lookup"><span data-stu-id="b12be-108">Event Source</span></span>   |                                         <span data-ttu-id="b12be-109">0</span><span class="sxs-lookup"><span data-stu-id="b12be-109">0</span></span>                                          |
-|    <span data-ttu-id="b12be-110">组件</span><span class="sxs-lookup"><span data-stu-id="b12be-110">Component</span></span>    |                                         <span data-ttu-id="b12be-111">0</span><span class="sxs-lookup"><span data-stu-id="b12be-111">0</span></span>                                          |
-|  <span data-ttu-id="b12be-112">符号名称</span><span class="sxs-lookup"><span data-stu-id="b12be-112">Symbolic Name</span></span>  |                                         <span data-ttu-id="b12be-113">0</span><span class="sxs-lookup"><span data-stu-id="b12be-113">0</span></span>                                          |
-|  <span data-ttu-id="b12be-114">消息正文</span><span class="sxs-lookup"><span data-stu-id="b12be-114">Message Text</span></span>   |                  <span data-ttu-id="b12be-115">方案无效;应为方案"{0}"或"{1}"</span><span class="sxs-lookup"><span data-stu-id="b12be-115">Invalid scheme; expecting scheme "{0}" or "{1}"</span></span>                   |
+|  <span data-ttu-id="86f8d-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="86f8d-104">Product Name</span></span>   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] |
+| <span data-ttu-id="86f8d-105">产品版本</span><span class="sxs-lookup"><span data-stu-id="86f8d-105">Product Version</span></span> |             [!INCLUDE[btsWCFVersion](../includes/btswcfversion-md.md)]             |
+|    <span data-ttu-id="86f8d-106">事件 ID</span><span class="sxs-lookup"><span data-stu-id="86f8d-106">Event ID</span></span>     |                                         <span data-ttu-id="86f8d-107">0</span><span class="sxs-lookup"><span data-stu-id="86f8d-107">0</span></span>                                          |
+|  <span data-ttu-id="86f8d-108">事件源</span><span class="sxs-lookup"><span data-stu-id="86f8d-108">Event Source</span></span>   |                                         <span data-ttu-id="86f8d-109">0</span><span class="sxs-lookup"><span data-stu-id="86f8d-109">0</span></span>                                          |
+|    <span data-ttu-id="86f8d-110">组件</span><span class="sxs-lookup"><span data-stu-id="86f8d-110">Component</span></span>    |                                         <span data-ttu-id="86f8d-111">0</span><span class="sxs-lookup"><span data-stu-id="86f8d-111">0</span></span>                                          |
+|  <span data-ttu-id="86f8d-112">符号名称</span><span class="sxs-lookup"><span data-stu-id="86f8d-112">Symbolic Name</span></span>  |                                         <span data-ttu-id="86f8d-113">0</span><span class="sxs-lookup"><span data-stu-id="86f8d-113">0</span></span>                                          |
+|  <span data-ttu-id="86f8d-114">消息正文</span><span class="sxs-lookup"><span data-stu-id="86f8d-114">Message Text</span></span>   |                  <span data-ttu-id="86f8d-115">方案无效;应为方案"{0}"或"{1}"</span><span class="sxs-lookup"><span data-stu-id="86f8d-115">Invalid scheme; expecting scheme "{0}" or "{1}"</span></span>                   |
   
-## <a name="explanation"></a><span data-ttu-id="b12be-116">解释</span><span class="sxs-lookup"><span data-stu-id="b12be-116">Explanation</span></span>  
- <span data-ttu-id="b12be-117">发生以下情况之一： URI （统一资源标识符） 字段中指定的地址必须以 http:// 或 https:// 开头。</span><span class="sxs-lookup"><span data-stu-id="b12be-117">One of the following situations has occurred: the address that is specified in the URI (uniform resource identifier) field must start with either http:// or https://.</span></span> <span data-ttu-id="b12be-118">或者，该方案与传输绑定元素的实现中指定的方案不匹配。</span><span class="sxs-lookup"><span data-stu-id="b12be-118">Or the scheme does not match what is specified in the implementation of the transport binding element.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="86f8d-116">解释</span><span class="sxs-lookup"><span data-stu-id="86f8d-116">Explanation</span></span>  
+ <span data-ttu-id="86f8d-117">发生以下情况之一： URI （统一资源标识符） 字段中指定的地址必须以 http:// 或 https:// 开头。</span><span class="sxs-lookup"><span data-stu-id="86f8d-117">One of the following situations has occurred: the address that is specified in the URI (uniform resource identifier) field must start with either http:// or https://.</span></span> <span data-ttu-id="86f8d-118">或方案不匹配的传输绑定元素实现中指定的内容。</span><span class="sxs-lookup"><span data-stu-id="86f8d-118">Or the scheme does not match what is specified in the implementation of the transport binding element.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="b12be-119">用户操作</span><span class="sxs-lookup"><span data-stu-id="b12be-119">User Action</span></span>  
- <span data-ttu-id="b12be-120">输入以 http:// 或 https:// 开头的有效代理地址 URI</span><span class="sxs-lookup"><span data-stu-id="b12be-120">Enter a valid proxy address URI that starts with http:// or https://</span></span>
+## <a name="user-action"></a><span data-ttu-id="86f8d-119">用户操作</span><span class="sxs-lookup"><span data-stu-id="86f8d-119">User Action</span></span>  
+ <span data-ttu-id="86f8d-120">输入有效的代理地址以 http:// 或 https:// 开头的 URI</span><span class="sxs-lookup"><span data-stu-id="86f8d-120">Enter a valid proxy address URI that starts with http:// or https://</span></span>

@@ -1,5 +1,5 @@
 ---
-title: 社区 Resources5 |Microsoft 文档
+title: 社区 Resources5 |Microsoft Docs
 ms.custom: ''
 ms.date: 2016-03-24
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 61e2aba1f649352468d73e5c33c474c371175a26
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7d976fefbea18798ed6ada675746a2282a747d31
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231717"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356999"
 ---
-# <a name="community-resources"></a><span data-ttu-id="bfdc7-102">社区资源</span><span class="sxs-lookup"><span data-stu-id="bfdc7-102">Community Resources</span></span>
-<span data-ttu-id="bfdc7-103">插入了 BizTalk Server 社区来连接与其他开发人员和管理员并获取问题的答案，从不同的 BizTalk 社区资源中读取最新观看第 9 频道视频，深入了解 Azure，和的详细信息。</span><span class="sxs-lookup"><span data-stu-id="bfdc7-103">Plug into the BizTalk Server community to connect with other developers and admins and get answers to your questions, read the latest from different BizTalk community resources, watch Channel 9 videos, dive into Azure, and more.</span></span>  
+# <a name="community-resources"></a><span data-ttu-id="3846a-102">社区资源</span><span class="sxs-lookup"><span data-stu-id="3846a-102">Community Resources</span></span>
+<span data-ttu-id="3846a-103">插入到 BizTalk Server 社区，与其他开发人员和管理员连接，并获取问题的答案，从不同 BizTalk 社区资源中读取最新观看第 9 频道视频，深入了解 Azure 中，和的详细信息。</span><span class="sxs-lookup"><span data-stu-id="3846a-103">Plug into the BizTalk Server community to connect with other developers and admins and get answers to your questions, read the latest from different BizTalk community resources, watch Channel 9 videos, dive into Azure, and more.</span></span>  
   
-|<span data-ttu-id="bfdc7-104">资源</span><span class="sxs-lookup"><span data-stu-id="bfdc7-104">Resource</span></span>|<span data-ttu-id="bfdc7-105">位置</span><span class="sxs-lookup"><span data-stu-id="bfdc7-105">Location</span></span>|  
+|<span data-ttu-id="3846a-104">Resource</span><span class="sxs-lookup"><span data-stu-id="3846a-104">Resource</span></span>|<span data-ttu-id="3846a-105">Location</span><span class="sxs-lookup"><span data-stu-id="3846a-105">Location</span></span>|  
 |--------------|--------------|  
-|<span data-ttu-id="bfdc7-106">第 9 频道视频</span><span class="sxs-lookup"><span data-stu-id="bfdc7-106">Channel 9 videos</span></span>|[<span data-ttu-id="bfdc7-107">https://channel9.msdn.com/tags/Biztalk/</span><span class="sxs-lookup"><span data-stu-id="bfdc7-107">https://channel9.msdn.com/tags/Biztalk/</span></span>](https://channel9.msdn.com/tags/Biztalk/)|  
-|<span data-ttu-id="bfdc7-108">TechNet Wiki</span><span class="sxs-lookup"><span data-stu-id="bfdc7-108">TechNet Wiki</span></span>|<span data-ttu-id="bfdc7-109">BizTalk 资源和更多信息，请访问搜索[http://social.technet.microsoft.com/wiki](http://social.technet.microsoft.com/wiki)。</span><span class="sxs-lookup"><span data-stu-id="bfdc7-109">Search for BizTalk resources and more at [http://social.technet.microsoft.com/wiki](http://social.technet.microsoft.com/wiki).</span></span>|  
-|<span data-ttu-id="bfdc7-110">BizTalk 支持团队博客</span><span class="sxs-lookup"><span data-stu-id="bfdc7-110">BizTalk support team blog</span></span>|[<span data-ttu-id="bfdc7-111">https://blogs.msdn.microsoft.com/biztalkcpr/</span><span class="sxs-lookup"><span data-stu-id="bfdc7-111">https://blogs.msdn.microsoft.com/biztalkcpr/</span></span>](https://blogs.msdn.microsoft.com/biztalkcpr/)|  
-|<span data-ttu-id="bfdc7-112">BizTalk 集成平台</span><span class="sxs-lookup"><span data-stu-id="bfdc7-112">BizTalk integration platform</span></span>|[<span data-ttu-id="bfdc7-113">https://www.microsoft.com/en-us/server-cloud/products/biztalk</span><span class="sxs-lookup"><span data-stu-id="bfdc7-113">https://www.microsoft.com/en-us/server-cloud/products/biztalk</span></span>](https://www.microsoft.com/en-us/server-cloud/products/biztalk)|  
-|<span data-ttu-id="bfdc7-114">BizTalk 论坛</span><span class="sxs-lookup"><span data-stu-id="bfdc7-114">BizTalk forums</span></span>|[<span data-ttu-id="bfdc7-115">https://social.msdn.microsoft.com/Forums/en-US/home?forum=biztalkgeneral</span><span class="sxs-lookup"><span data-stu-id="bfdc7-115">https://social.msdn.microsoft.com/Forums/en-US/home?forum=biztalkgeneral</span></span>](https://social.msdn.microsoft.com/Forums/en-US/home?forum=biztalkgeneral)|  
-|<span data-ttu-id="bfdc7-116">搜索 Microsoft 社区</span><span class="sxs-lookup"><span data-stu-id="bfdc7-116">Search the Microsoft community</span></span>|<span data-ttu-id="bfdc7-117">搜索 BizTalk 提问和讨论在[http://go.microsoft.com/fwlink/p/?LinkId=49361](http://go.microsoft.com/fwlink/p/?LinkId=49361) 。</span><span class="sxs-lookup"><span data-stu-id="bfdc7-117">Search                for BizTalk questions and discussions at [http://go.microsoft.com/fwlink/p/?LinkId=49361](http://go.microsoft.com/fwlink/p/?LinkId=49361) .</span></span>|  
-|<span data-ttu-id="bfdc7-118">Azure 入门</span><span class="sxs-lookup"><span data-stu-id="bfdc7-118">Get started with Azure</span></span>|[<span data-ttu-id="bfdc7-119">https://azure.microsoft.com/documentation/articles/app-service-logic-what-are-logic-apps</span><span class="sxs-lookup"><span data-stu-id="bfdc7-119">https://azure.microsoft.com/documentation/articles/app-service-logic-what-are-logic-apps</span></span>](https://azure.microsoft.com/documentation/articles/app-service-logic-what-are-logic-apps)|  
+|<span data-ttu-id="3846a-106">第 9 频道视频</span><span class="sxs-lookup"><span data-stu-id="3846a-106">Channel 9 videos</span></span>|[https://channel9.msdn.com/tags/Biztalk/](https://channel9.msdn.com/tags/Biztalk/)|  
+|<span data-ttu-id="3846a-107">TechNet Wiki</span><span class="sxs-lookup"><span data-stu-id="3846a-107">TechNet Wiki</span></span>|<span data-ttu-id="3846a-108">BizTalk 资源和详细信息，请搜索[ http://social.technet.microsoft.com/wiki ](http://social.technet.microsoft.com/wiki)。</span><span class="sxs-lookup"><span data-stu-id="3846a-108">Search for BizTalk resources and more at [http://social.technet.microsoft.com/wiki](http://social.technet.microsoft.com/wiki).</span></span>|  
+|<span data-ttu-id="3846a-109">BizTalk 支持团队博客</span><span class="sxs-lookup"><span data-stu-id="3846a-109">BizTalk support team blog</span></span>|[https://blogs.msdn.microsoft.com/biztalkcpr/](https://blogs.msdn.microsoft.com/biztalkcpr/)|  
+|<span data-ttu-id="3846a-110">BizTalk 集成平台</span><span class="sxs-lookup"><span data-stu-id="3846a-110">BizTalk integration platform</span></span>|[https://www.microsoft.com/en-us/server-cloud/products/biztalk](https://www.microsoft.com/en-us/server-cloud/products/biztalk)|  
+|<span data-ttu-id="3846a-111">BizTalk 论坛</span><span class="sxs-lookup"><span data-stu-id="3846a-111">BizTalk forums</span></span>|[https://social.msdn.microsoft.com/Forums/en-US/home?forum=biztalkgeneral](https://social.msdn.microsoft.com/Forums/en-US/home?forum=biztalkgeneral)|  
+|<span data-ttu-id="3846a-112">搜索 Microsoft 社区</span><span class="sxs-lookup"><span data-stu-id="3846a-112">Search the Microsoft community</span></span>|<span data-ttu-id="3846a-113">搜索 BizTalk 问题和讨论[ http://go.microsoft.com/fwlink/p/?LinkId=49361 ](http://go.microsoft.com/fwlink/p/?LinkId=49361) 。</span><span class="sxs-lookup"><span data-stu-id="3846a-113">Search                for BizTalk questions and discussions at [http://go.microsoft.com/fwlink/p/?LinkId=49361](http://go.microsoft.com/fwlink/p/?LinkId=49361) .</span></span>|  
+|<span data-ttu-id="3846a-114">开始使用 Azure</span><span class="sxs-lookup"><span data-stu-id="3846a-114">Get started with Azure</span></span>|[https://azure.microsoft.com/documentation/articles/app-service-logic-what-are-logic-apps](https://azure.microsoft.com/documentation/articles/app-service-logic-what-are-logic-apps)|  
   

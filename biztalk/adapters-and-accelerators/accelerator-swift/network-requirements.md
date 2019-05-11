@@ -15,14 +15,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dbc2db94a98e7bfca6b5fc5b9c16ceb304b5d22b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e0a4f9fbc64d8572b8dcc5bcebc85e28e440942c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988462"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377118"
 ---
-# <a name="network-requirements"></a><span data-ttu-id="c6a8a-102">网络要求</span><span class="sxs-lookup"><span data-stu-id="c6a8a-102">Network Requirements</span></span>
-<span data-ttu-id="c6a8a-103">您将需要以下的网络组件，来构建规定的部署体系结构：</span><span class="sxs-lookup"><span data-stu-id="c6a8a-103">You will need the following network components to build the prescribed deployment architecture:</span></span>  
+# <a name="network-requirements"></a><span data-ttu-id="77aa7-102">网络要求</span><span class="sxs-lookup"><span data-stu-id="77aa7-102">Network Requirements</span></span>
+<span data-ttu-id="77aa7-103">您将需要以下的网络组件，来构建规定的部署体系结构：</span><span class="sxs-lookup"><span data-stu-id="77aa7-103">You will need the following network components to build the prescribed deployment architecture:</span></span>  
 
-- <span data-ttu-id="c6a8a-104">如 Microsoft Internet Security and Acceleration (ISA) Server 的服务器的防火墙。</span><span class="sxs-lookup"><span data-stu-id="c6a8a-104">A firewall server such as the Microsoft Internet Security and Acceleration (ISA) Server.</span></span>
+- <span data-ttu-id="77aa7-104">如 Microsoft Internet Security and Acceleration (ISA) Server 的服务器的防火墙。</span><span class="sxs-lookup"><span data-stu-id="77aa7-104">A firewall server such as the Microsoft Internet Security and Acceleration (ISA) Server.</span></span>

@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10808 |Microsoft Docs
+title: 单一登录：Event 10808 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,30 +12,30 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 49d4e6ab0f6a9ea10ef28440f5b8399778fbc93b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ae819cd41cc39b4866ae2d9befc0edc3952cb5b8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971398"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380021"
 ---
-# <a name="single-sign-on-event-10808"></a><span data-ttu-id="f7ae2-102">单一登录： 事件 10808</span><span class="sxs-lookup"><span data-stu-id="f7ae2-102">Single Sign-On: Event 10808</span></span>
-## <a name="details"></a><span data-ttu-id="f7ae2-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="f7ae2-103">Details</span></span>  
+# <a name="single-sign-on-event-10808"></a><span data-ttu-id="78b2d-102">单一登录：事件 10808</span><span class="sxs-lookup"><span data-stu-id="78b2d-102">Single Sign-On: Event 10808</span></span>
+## <a name="details"></a><span data-ttu-id="78b2d-103">详细信息</span><span class="sxs-lookup"><span data-stu-id="78b2d-103">Details</span></span>  
   
 |                 |                                                                  |
 |-----------------|------------------------------------------------------------------|
-|  <span data-ttu-id="f7ae2-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="f7ae2-104">Product Name</span></span>   |                    <span data-ttu-id="f7ae2-105">企业单一登录</span><span class="sxs-lookup"><span data-stu-id="f7ae2-105">Enterprise Single Sign-On</span></span>                     |
-| <span data-ttu-id="f7ae2-106">产品版本</span><span class="sxs-lookup"><span data-stu-id="f7ae2-106">Product Version</span></span> |    [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]    |
-|    <span data-ttu-id="f7ae2-107">事件 ID</span><span class="sxs-lookup"><span data-stu-id="f7ae2-107">Event ID</span></span>     |                              <span data-ttu-id="f7ae2-108">10808</span><span class="sxs-lookup"><span data-stu-id="f7ae2-108">10808</span></span>                               |
-|  <span data-ttu-id="f7ae2-109">事件源</span><span class="sxs-lookup"><span data-stu-id="f7ae2-109">Event Source</span></span>   |                              <span data-ttu-id="f7ae2-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="f7ae2-110">ENTSSO</span></span>                              |
-|    <span data-ttu-id="f7ae2-111">组件</span><span class="sxs-lookup"><span data-stu-id="f7ae2-111">Component</span></span>    |                               <span data-ttu-id="f7ae2-112">N/A</span><span class="sxs-lookup"><span data-stu-id="f7ae2-112">N/A</span></span>                                |
-|  <span data-ttu-id="f7ae2-113">符号名称</span><span class="sxs-lookup"><span data-stu-id="f7ae2-113">Symbolic Name</span></span>  |                <span data-ttu-id="f7ae2-114">ENTSSO_E_HISSO_SYSTEM_NOT_ENABLED</span><span class="sxs-lookup"><span data-stu-id="f7ae2-114">ENTSSO_E_HISSO_SYSTEM_NOT_ENABLED</span></span>                 |
-|  <span data-ttu-id="f7ae2-115">消息正文</span><span class="sxs-lookup"><span data-stu-id="f7ae2-115">Message Text</span></span>   | <span data-ttu-id="f7ae2-116">没有为主机启动的单一登录启用 SSO 系统。</span><span class="sxs-lookup"><span data-stu-id="f7ae2-116">The SSO system is not enabled for Host Initiated Single Sign-On.</span></span> |
+|  <span data-ttu-id="78b2d-104">产品名称</span><span class="sxs-lookup"><span data-stu-id="78b2d-104">Product Name</span></span>   |                    <span data-ttu-id="78b2d-105">企业单一登录</span><span class="sxs-lookup"><span data-stu-id="78b2d-105">Enterprise Single Sign-On</span></span>                     |
+| <span data-ttu-id="78b2d-106">产品版本</span><span class="sxs-lookup"><span data-stu-id="78b2d-106">Product Version</span></span> |    [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]    |
+|    <span data-ttu-id="78b2d-107">事件 ID</span><span class="sxs-lookup"><span data-stu-id="78b2d-107">Event ID</span></span>     |                              <span data-ttu-id="78b2d-108">10808</span><span class="sxs-lookup"><span data-stu-id="78b2d-108">10808</span></span>                               |
+|  <span data-ttu-id="78b2d-109">事件源</span><span class="sxs-lookup"><span data-stu-id="78b2d-109">Event Source</span></span>   |                              <span data-ttu-id="78b2d-110">ENTSSO</span><span class="sxs-lookup"><span data-stu-id="78b2d-110">ENTSSO</span></span>                              |
+|    <span data-ttu-id="78b2d-111">组件</span><span class="sxs-lookup"><span data-stu-id="78b2d-111">Component</span></span>    |                               <span data-ttu-id="78b2d-112">不可用</span><span class="sxs-lookup"><span data-stu-id="78b2d-112">N/A</span></span>                                |
+|  <span data-ttu-id="78b2d-113">符号名称</span><span class="sxs-lookup"><span data-stu-id="78b2d-113">Symbolic Name</span></span>  |                <span data-ttu-id="78b2d-114">ENTSSO_E_HISSO_SYSTEM_NOT_ENABLED</span><span class="sxs-lookup"><span data-stu-id="78b2d-114">ENTSSO_E_HISSO_SYSTEM_NOT_ENABLED</span></span>                 |
+|  <span data-ttu-id="78b2d-115">消息正文</span><span class="sxs-lookup"><span data-stu-id="78b2d-115">Message Text</span></span>   | <span data-ttu-id="78b2d-116">未为主机启动的单一登录启用 SSO 系统。</span><span class="sxs-lookup"><span data-stu-id="78b2d-116">The SSO system is not enabled for Host Initiated Single Sign-On.</span></span> |
   
-## <a name="explanation"></a><span data-ttu-id="f7ae2-117">解释</span><span class="sxs-lookup"><span data-stu-id="f7ae2-117">Explanation</span></span>  
- <span data-ttu-id="f7ae2-118">没有为主机启动的单一登录启用 SSO 系统。</span><span class="sxs-lookup"><span data-stu-id="f7ae2-118">The SSO system is not enabled for Host Initiated Single Sign-On.</span></span>  
+## <a name="explanation"></a><span data-ttu-id="78b2d-117">解释</span><span class="sxs-lookup"><span data-stu-id="78b2d-117">Explanation</span></span>  
+ <span data-ttu-id="78b2d-118">未为主机启动的单一登录启用 SSO 系统。</span><span class="sxs-lookup"><span data-stu-id="78b2d-118">The SSO system is not enabled for Host Initiated Single Sign-On.</span></span>  
   
-## <a name="user-action"></a><span data-ttu-id="f7ae2-119">用户操作</span><span class="sxs-lookup"><span data-stu-id="f7ae2-119">User Action</span></span>  
- <span data-ttu-id="f7ae2-120">使用管理工具配置主机启动的单一登录。</span><span class="sxs-lookup"><span data-stu-id="f7ae2-120">Use the administrative tools to configure Host Initiated Single Sign-On.</span></span> <span data-ttu-id="f7ae2-121">这会设置</span><span class="sxs-lookup"><span data-stu-id="f7ae2-121">This will set the</span></span>  
+## <a name="user-action"></a><span data-ttu-id="78b2d-119">用户操作</span><span class="sxs-lookup"><span data-stu-id="78b2d-119">User Action</span></span>  
+ <span data-ttu-id="78b2d-120">使用管理工具来配置主机启动的单一登录。</span><span class="sxs-lookup"><span data-stu-id="78b2d-120">Use the administrative tools to configure Host Initiated Single Sign-On.</span></span> <span data-ttu-id="78b2d-121">这会设置</span><span class="sxs-lookup"><span data-stu-id="78b2d-121">This will set the</span></span>  
   
- <span data-ttu-id="f7ae2-122">SSO_FLAG_SSO_EXTERNAL_TO_WINDOWS 标记。</span><span class="sxs-lookup"><span data-stu-id="f7ae2-122">SSO_FLAG_SSO_EXTERNAL_TO_WINDOWS flag on the global information.</span></span>
+ <span data-ttu-id="78b2d-122">SSO_FLAG_SSO_EXTERNAL_TO_WINDOWS 标志的全局信息。</span><span class="sxs-lookup"><span data-stu-id="78b2d-122">SSO_FLAG_SSO_EXTERNAL_TO_WINDOWS flag on the global information.</span></span>

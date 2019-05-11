@@ -12,28 +12,28 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f4e4901d11bda5fb6633c00dd72899ee1b72db4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a76ae6dac1e095ac68c93477a3f3eafcfc170bff
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012870"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382098"
 ---
-# <a name="instance-validation"></a><span data-ttu-id="c5faa-102">实例验证</span><span class="sxs-lookup"><span data-stu-id="c5faa-102">Instance Validation</span></span>
-<span data-ttu-id="c5faa-103">BizTalk 编辑器将调用**IInstanceValidator.ValidateInstance**扩展时满足以下条件的方法：</span><span class="sxs-lookup"><span data-stu-id="c5faa-103">BizTalk Editor invokes the **IInstanceValidator.ValidateInstance** method of an extension when the following conditions are met:</span></span>  
+# <a name="instance-validation"></a><span data-ttu-id="6cc11-102">实例验证</span><span class="sxs-lookup"><span data-stu-id="6cc11-102">Instance Validation</span></span>
+<span data-ttu-id="6cc11-103">BizTalk 编辑器将调用**IInstanceValidator.ValidateInstance**扩展时满足以下条件的方法：</span><span class="sxs-lookup"><span data-stu-id="6cc11-103">BizTalk Editor invokes the **IInstanceValidator.ValidateInstance** method of an extension when the following conditions are met:</span></span>  
   
-- <span data-ttu-id="c5faa-104">扩展使用设置为标准**标准**的属性**架构**节点。</span><span class="sxs-lookup"><span data-stu-id="c5faa-104">The extension is set as standard by using the **Standard** property of the **Schema** node.</span></span>  
+- <span data-ttu-id="6cc11-104">扩展使用设置为标准**标准**的属性**架构**节点。</span><span class="sxs-lookup"><span data-stu-id="6cc11-104">The extension is set as standard by using the **Standard** property of the **Schema** node.</span></span>  
   
-- <span data-ttu-id="c5faa-105">上**属性页**与架构相关联的对话框中**生成实例输出类型**属性设置为**本机。**</span><span class="sxs-lookup"><span data-stu-id="c5faa-105">On the **Property Pages** dialog box associated with the schema, the **Generate Instance Output Type** property is set to **Native.**</span></span>  
+- <span data-ttu-id="6cc11-105">上**属性页**与架构相关联的对话框中**生成实例输出类型**属性设置为**本机。**</span><span class="sxs-lookup"><span data-stu-id="6cc11-105">On the **Property Pages** dialog box associated with the schema, the **Generate Instance Output Type** property is set to **Native.**</span></span>  
   
-- <span data-ttu-id="c5faa-106">上**属性页**与架构相关联的对话框中**输入实例文件名**属性设置为包含要验证的实例消息的文件的名称。</span><span class="sxs-lookup"><span data-stu-id="c5faa-106">On the **Property Pages** dialog box associated with the schema, the **Input Instance Filename** property is set to the name of a file containing the instance message to be validated.</span></span>  
+- <span data-ttu-id="6cc11-106">上**属性页**与架构相关联的对话框中**输入实例文件名**属性设置为包含要验证的实例消息的文件的名称。</span><span class="sxs-lookup"><span data-stu-id="6cc11-106">On the **Property Pages** dialog box associated with the schema, the **Input Instance Filename** property is set to the name of a file containing the instance message to be validated.</span></span>  
   
-  <span data-ttu-id="c5faa-107">中指定的文件**输入实例文件名**属性作为参数传递给**IInstanceValidator.ValidateInstance**方法。</span><span class="sxs-lookup"><span data-stu-id="c5faa-107">The file specified in the **Input Instance Filename** property is passed as a parameter to the **IInstanceValidator.ValidateInstance** method.</span></span>  
+  <span data-ttu-id="6cc11-107">中指定的文件**输入实例文件名**属性作为参数传递给**IInstanceValidator.ValidateInstance**方法。</span><span class="sxs-lookup"><span data-stu-id="6cc11-107">The file specified in the **Input Instance Filename** property is passed as a parameter to the **IInstanceValidator.ValidateInstance** method.</span></span>  
   
-  <span data-ttu-id="c5faa-108">如果出现错误，数组的形式返回错误消息**IValidationInfo**对象，并显示在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]任务列表窗口。</span><span class="sxs-lookup"><span data-stu-id="c5faa-108">If errors occur, error messages are returned as an array of **IValidationInfo** objects, and are displayed in the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Task List window.</span></span>  
+  <span data-ttu-id="6cc11-108">如果出现错误，数组的形式返回错误消息**IValidationInfo**对象，并显示在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]任务列表窗口。</span><span class="sxs-lookup"><span data-stu-id="6cc11-108">If errors occur, error messages are returned as an array of **IValidationInfo** objects, and are displayed in the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Task List window.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="c5faa-109">如果架构包含模式语句，该文件传递给**ValidateInstance**方法使用相应生成**生成实例**命令时，可能无法通过在实例消息验证。</span><span class="sxs-lookup"><span data-stu-id="c5faa-109">If the schema contains pattern statements, and the file passed to the **ValidateInstance** method was generated by using the corresponding **Generate Instance** command, the instance message may not pass validation.</span></span>  
+>  <span data-ttu-id="6cc11-109">如果架构包含模式语句，该文件传递给**ValidateInstance**方法使用相应生成**生成实例**命令时，可能无法通过在实例消息验证。</span><span class="sxs-lookup"><span data-stu-id="6cc11-109">If the schema contains pattern statements, and the file passed to the **ValidateInstance** method was generated by using the corresponding **Generate Instance** command, the instance message may not pass validation.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="c5faa-110">请参阅</span><span class="sxs-lookup"><span data-stu-id="c5faa-110">See Also</span></span>  
- [<span data-ttu-id="c5faa-111">扩展 BizTalk 编辑器</span><span class="sxs-lookup"><span data-stu-id="c5faa-111">Extending BizTalk Editor</span></span>](../core/extending-biztalk-editor.md)
+## <a name="see-also"></a><span data-ttu-id="6cc11-110">请参阅</span><span class="sxs-lookup"><span data-stu-id="6cc11-110">See Also</span></span>  
+ [<span data-ttu-id="6cc11-111">扩展 BizTalk 编辑器</span><span class="sxs-lookup"><span data-stu-id="6cc11-111">Extending BizTalk Editor</span></span>](../core/extending-biztalk-editor.md)

@@ -1,5 +1,5 @@
 ---
-title: 解决错误 |Microsoft 文档
+title: 解决错误 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d706f72aa2fd150a7c659be9473474c366e3ccc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ddc1b5d41277b9ba9faba2aceaf32f1fba6f7a12
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22229845"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65360186"
 ---
-# <a name="address-errors"></a><span data-ttu-id="57c8e-102">地址错误</span><span class="sxs-lookup"><span data-stu-id="57c8e-102">Address Errors</span></span>
-<span data-ttu-id="57c8e-103">本部分包含有关诊断和解决 WCF 地址错误的详细信息。</span><span class="sxs-lookup"><span data-stu-id="57c8e-103">This section contains detailed information for diagnosing and resolving WCF Address errors.</span></span>  
+# <a name="address-errors"></a><span data-ttu-id="7681c-102">地址错误</span><span class="sxs-lookup"><span data-stu-id="7681c-102">Address Errors</span></span>
+<span data-ttu-id="7681c-103">本部分包含有关诊断和解决 WCF 地址错误的详细信息。</span><span class="sxs-lookup"><span data-stu-id="7681c-103">This section contains detailed information for diagnosing and resolving WCF Address errors.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="57c8e-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="57c8e-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="7681c-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="7681c-104">In This Section</span></span>  
   
--   [<span data-ttu-id="57c8e-105">无效的地址 (绝对 uri)</span><span class="sxs-lookup"><span data-stu-id="57c8e-105">Invalid address (absolute uri)</span></span>](../core/invalid-address-absolute-uri.md)  
+-   [<span data-ttu-id="7681c-105">地址无效（绝对 URI）</span><span class="sxs-lookup"><span data-stu-id="7681c-105">Invalid address (absolute uri)</span></span>](../core/invalid-address-absolute-uri.md)  
   
--   [<span data-ttu-id="57c8e-106">无效的地址 (相对 uri 需要斜杠 （"/"）)</span><span class="sxs-lookup"><span data-stu-id="57c8e-106">Invalid address (relative uri needs slash ("/"))</span></span>](../core/invalid-address-relative-uri-needs-slash.md)  
+-   [<span data-ttu-id="7681c-106">地址无效（相对 URI 需要斜杠 ("/")）</span><span class="sxs-lookup"><span data-stu-id="7681c-106">Invalid address (relative uri needs slash ("/"))</span></span>](../core/invalid-address-relative-uri-needs-slash.md)  
   
--   [<span data-ttu-id="57c8e-107">无效的地址 (相对 uri)</span><span class="sxs-lookup"><span data-stu-id="57c8e-107">Invalid address (relative uri)</span></span>](../core/invalid-address-relative-uri.md)  
+-   [<span data-ttu-id="7681c-107">地址无效（相对 URI）</span><span class="sxs-lookup"><span data-stu-id="7681c-107">Invalid address (relative uri)</span></span>](../core/invalid-address-relative-uri.md)  
   
--   [<span data-ttu-id="57c8e-108">无效的地址的长度</span><span class="sxs-lookup"><span data-stu-id="57c8e-108">Invalid address length</span></span>](../core/invalid-address-length.md)  
+-   [<span data-ttu-id="7681c-108">地址长度无效</span><span class="sxs-lookup"><span data-stu-id="7681c-108">Invalid address length</span></span>](../core/invalid-address-length.md)  
   
--   [<span data-ttu-id="57c8e-109">无效的地址方案</span><span class="sxs-lookup"><span data-stu-id="57c8e-109">Invalid address scheme</span></span>](../core/invalid-address-scheme.md)  
+-   [<span data-ttu-id="7681c-109">寻址方案无效</span><span class="sxs-lookup"><span data-stu-id="7681c-109">Invalid address scheme</span></span>](../core/invalid-address-scheme.md)  
   
--   [<span data-ttu-id="57c8e-110">无效的代理地址</span><span class="sxs-lookup"><span data-stu-id="57c8e-110">Invalid proxy address</span></span>](../core/invalid-proxy-address-for-send-handler-and-send-port.md)
+-   [<span data-ttu-id="7681c-110">代理地址无效</span><span class="sxs-lookup"><span data-stu-id="7681c-110">Invalid proxy address</span></span>](../core/invalid-proxy-address-for-send-handler-and-send-port.md)

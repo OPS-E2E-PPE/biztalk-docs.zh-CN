@@ -1,5 +1,5 @@
 ---
-title: 管理 FIN 响应对帐 |Microsoft 文档
+title: 管理 FIN 响应对帐 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,18 +15,18 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e183d5f763a9466511258e1556f423ee74627165
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fa8e1b6fb7170fe08921adacdc301ba01f053962
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22208933"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378632"
 ---
-# <a name="administering-fin-response-reconciliation"></a><span data-ttu-id="7579e-102">管理 FIN 响应对帐</span><span class="sxs-lookup"><span data-stu-id="7579e-102">Administering FIN Response Reconciliation</span></span>
-<span data-ttu-id="7579e-103">本部分提供用于设置 FIN 响应对帐的配置过程。</span><span class="sxs-lookup"><span data-stu-id="7579e-103">This section provides procedures for setting the configuration for FIN Response Reconciliation.</span></span>  
+# <a name="administering-fin-response-reconciliation"></a><span data-ttu-id="cfc65-102">管理 FIN 响应对帐</span><span class="sxs-lookup"><span data-stu-id="cfc65-102">Administering FIN Response Reconciliation</span></span>
+<span data-ttu-id="cfc65-103">本部分提供有关设置的配置 FIN 响应对帐过程。</span><span class="sxs-lookup"><span data-stu-id="cfc65-103">This section provides procedures for setting the configuration for FIN Response Reconciliation.</span></span>  
   
- <span data-ttu-id="7579e-104">本部分包含：</span><span class="sxs-lookup"><span data-stu-id="7579e-104">This section contains:</span></span>  
+ <span data-ttu-id="cfc65-104">本部分包含：</span><span class="sxs-lookup"><span data-stu-id="cfc65-104">This section contains:</span></span>  
   
--   [<span data-ttu-id="7579e-105">设置 FRR 延迟超时</span><span class="sxs-lookup"><span data-stu-id="7579e-105">Setting the FRR Delay Time-Out</span></span>](../../adapters-and-accelerators/accelerator-swift/setting-the-frr-delay-time-out.md)  
+-   [<span data-ttu-id="cfc65-105">设置 FRR 延迟超时</span><span class="sxs-lookup"><span data-stu-id="cfc65-105">Setting the FRR Delay Time-Out</span></span>](../../adapters-and-accelerators/accelerator-swift/setting-the-frr-delay-time-out.md)  
   
--   [<span data-ttu-id="7579e-106">禁用 BAM 跟踪</span><span class="sxs-lookup"><span data-stu-id="7579e-106">Disabling BAM Tracking</span></span>](../../adapters-and-accelerators/accelerator-swift/disabling-bam-tracking.md)
+-   [<span data-ttu-id="cfc65-106">禁用 BAM 跟踪</span><span class="sxs-lookup"><span data-stu-id="cfc65-106">Disabling BAM Tracking</span></span>](../../adapters-and-accelerators/accelerator-swift/disabling-bam-tracking.md)

@@ -1,5 +1,5 @@
 ---
-title: 管理 BAM 安全性 |Microsoft 文档
+title: 管理 BAM 安全性 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,32 +15,32 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1486df4b766a8e77b23a0d7e5c135f6c17f85a29
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4c372abd429a44c4ef78b4d8d4712efa1c7e391a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262317"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65380354"
 ---
-# <a name="managing-bam-security"></a><span data-ttu-id="5342a-102">管理 BAM 安全性</span><span class="sxs-lookup"><span data-stu-id="5342a-102">Managing BAM Security</span></span>
-<span data-ttu-id="5342a-103">本部分提供有关 BAM 安全性的信息。</span><span class="sxs-lookup"><span data-stu-id="5342a-103">This section provides information about BAM security.</span></span> <span data-ttu-id="5342a-104">这里介绍了管理 BAM 视图的用户帐户以及警报订阅的过程。</span><span class="sxs-lookup"><span data-stu-id="5342a-104">It includes procedures for managing user accounts for BAM views and managing subscriptions to alerts.</span></span>  
+# <a name="managing-bam-security"></a><span data-ttu-id="915b5-102">管理 BAM 安全性</span><span class="sxs-lookup"><span data-stu-id="915b5-102">Managing BAM Security</span></span>
+<span data-ttu-id="915b5-103">本部分提供有关 BAM 安全性的信息。</span><span class="sxs-lookup"><span data-stu-id="915b5-103">This section provides information about BAM security.</span></span> <span data-ttu-id="915b5-104">它包括用于管理 BAM 视图的用户帐户和管理警报的订阅的过程。</span><span class="sxs-lookup"><span data-stu-id="915b5-104">It includes procedures for managing user accounts for BAM views and managing subscriptions to alerts.</span></span>  
   
- <span data-ttu-id="5342a-105">关于 BAM 门户的安全信息，请参阅[BAM 门户的安全注意事项](../core/security-considerations-for-the-bam-portal.md)。</span><span class="sxs-lookup"><span data-stu-id="5342a-105">For information about security for the BAM portal, see [Security Considerations for the BAM Portal](../core/security-considerations-for-the-bam-portal.md).</span></span>  
+ <span data-ttu-id="915b5-105">有关 BAM 门户的安全信息，请参阅[BAM 门户的安全注意事项](../core/security-considerations-for-the-bam-portal.md)。</span><span class="sxs-lookup"><span data-stu-id="915b5-105">For information about security for the BAM portal, see [Security Considerations for the BAM Portal](../core/security-considerations-for-the-bam-portal.md).</span></span>  
   
- <span data-ttu-id="5342a-106">有关安全信息跟踪配置文件编辑器 （键入），请参阅[管理键入的用户权限](../core/user-rights-for-managing-tpe.md)。</span><span class="sxs-lookup"><span data-stu-id="5342a-106">For information about security for the Tracking Profile Editor (TPE), see [User Rights for Managing TPE](../core/user-rights-for-managing-tpe.md).</span></span>  
+ <span data-ttu-id="915b5-106">有关安全信息的跟踪配置文件编辑器 (TPE)，请参阅[管理 TPE 的用户权限](../core/user-rights-for-managing-tpe.md)。</span><span class="sxs-lookup"><span data-stu-id="915b5-106">For information about security for the Tracking Profile Editor (TPE), see [User Rights for Managing TPE](../core/user-rights-for-managing-tpe.md).</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="5342a-107">本节内容</span><span class="sxs-lookup"><span data-stu-id="5342a-107">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="915b5-107">本节内容</span><span class="sxs-lookup"><span data-stu-id="915b5-107">In This Section</span></span>  
   
--   [<span data-ttu-id="5342a-108">BAM 安全建议</span><span class="sxs-lookup"><span data-stu-id="5342a-108">BAM Security Recommendations</span></span>](../core/bam-security-recommendations.md)  
+-   [<span data-ttu-id="915b5-108">BAM 安全建议</span><span class="sxs-lookup"><span data-stu-id="915b5-108">BAM Security Recommendations</span></span>](../core/bam-security-recommendations.md)  
   
--   [<span data-ttu-id="5342a-109">如何列出具有到视图的访问权限的用户帐户</span><span class="sxs-lookup"><span data-stu-id="5342a-109">How to List User Accounts With Access to a View</span></span>](../core/how-to-list-user-accounts-with-access-to-a-view.md)  
+-   [<span data-ttu-id="915b5-109">如何列出具有视图访问权限的用户帐户</span><span class="sxs-lookup"><span data-stu-id="915b5-109">How to List User Accounts With Access to a View</span></span>](../core/how-to-list-user-accounts-with-access-to-a-view.md)  
   
--   [<span data-ttu-id="5342a-110">如何将帐户添加到视图</span><span class="sxs-lookup"><span data-stu-id="5342a-110">How to Add Accounts to a View</span></span>](../core/how-to-add-accounts-to-a-view.md)  
+-   [<span data-ttu-id="915b5-110">如何将帐户添加到视图</span><span class="sxs-lookup"><span data-stu-id="915b5-110">How to Add Accounts to a View</span></span>](../core/how-to-add-accounts-to-a-view.md)  
   
--   [<span data-ttu-id="5342a-111">如何从视图中删除帐户</span><span class="sxs-lookup"><span data-stu-id="5342a-111">How to Remove Accounts from a View</span></span>](../core/how-to-remove-accounts-from-a-view.md)  
+-   [<span data-ttu-id="915b5-111">如何从视图中删除帐户</span><span class="sxs-lookup"><span data-stu-id="915b5-111">How to Remove Accounts from a View</span></span>](../core/how-to-remove-accounts-from-a-view.md)  
   
--   [<span data-ttu-id="5342a-112">如何列出警报的订阅服务器</span><span class="sxs-lookup"><span data-stu-id="5342a-112">How to List Subscribers to an Alert</span></span>](../core/how-to-list-subscribers-to-an-alert.md)  
+-   [<span data-ttu-id="915b5-112">如何列出警报的订户</span><span class="sxs-lookup"><span data-stu-id="915b5-112">How to List Subscribers to an Alert</span></span>](../core/how-to-list-subscribers-to-an-alert.md)  
   
--   [<span data-ttu-id="5342a-113">如何将订阅服务器添加到警报</span><span class="sxs-lookup"><span data-stu-id="5342a-113">How to Add Subscribers to an Alert</span></span>](../core/how-to-add-subscribers-to-an-alert.md)  
+-   [<span data-ttu-id="915b5-113">如何向警报添加订户</span><span class="sxs-lookup"><span data-stu-id="915b5-113">How to Add Subscribers to an Alert</span></span>](../core/how-to-add-subscribers-to-an-alert.md)  
   
--   [<span data-ttu-id="5342a-114">如何从警报中删除订阅服务器</span><span class="sxs-lookup"><span data-stu-id="5342a-114">How to Remove Subscribers from an Alert</span></span>](../core/how-to-remove-subscribers-from-an-alert.md)
+-   [<span data-ttu-id="915b5-114">如何从警报删除订户</span><span class="sxs-lookup"><span data-stu-id="915b5-114">How to Remove Subscribers from an Alert</span></span>](../core/how-to-remove-subscribers-from-an-alert.md)
