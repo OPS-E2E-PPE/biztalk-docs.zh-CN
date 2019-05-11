@@ -1,5 +1,5 @@
 ---
-title: 如何使用直接密码同步 |Microsoft 文档
+title: 如何使用直接密码同步 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,36 +12,36 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6080589271d845432e875cb335a2ef354c9784ca
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e9baa74b383ee30c1fba70c7f9bb966706d60142
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22255941"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65333537"
 ---
 # <a name="how-to-use-direct-password-sync"></a>如何使用直接密码同步
-此版本的企业单一登录包括了从 Windows 直接进行密码同步的功能。 这样，您便可以绕过密码同步适配器，直接从 Windows 更新 SSO 数据库中的密码。  
+此版本的企业单一登录包括了从 Windows 功能直接进行密码同步。 这使你可以绕过密码同步适配器和更新 SSO 数据库中直接从 Windows 中的密码。  
   
- 从 Windows 直接进行密码同步这一功能在以下情况下十分有用：  
+ 从 Windows 直接进行密码同步是在以下情况下有用：  
   
--   您的企业系统要求 Windows 到 Windows 的映射。  
+-   企业系统要求 Windows 到 Windows 的映射。  
   
--   在 Windows 用户的密码发生更改时，您需要对 SSO 数据库中的外部用户的密码进行更新。 可以使用其他机制更改外部用户所对应的后端系统中的密码。 例如，可以使用 Microsoft Identity Integration Server，通过 RACF Management Agent 更新 IBM 大型机上 Resource Access Control Facility (RACF) 中的密码。  
+-   您需要为 Windows 用户的密码更改时直接更新 SSO 数据库中的外部用户的密码。 可以通过使用其他机制更改密码的后端系统上 （相对应的外部用户）。 例如，可以使用 Microsoft Identity Integration Server 更新中资源的访问控制工具 (RACF) 使用 RACF Management Agent IBM 大型机上的密码。  
   
-### <a name="to-enable-direct-password-sync"></a>启用直接密码同步  
+### <a name="to-enable-direct-password-sync"></a>若要启用直接密码同步  
   
 1.  打开企业单一登录。  
   
-2.  在作用域窗格中，单击**Affiliate 应用程序**。  
+2.  在作用域窗格中，单击**关联应用程序**。  
   
-3.  右键单击相应**Affiliate 应用程序**。  
+3.  右键单击相应**关联应用程序**。  
   
 4.  单击 **“属性”**。  
   
-     **Affiliate 应用程序属性**对话框随即出现。  
+     **关联的应用程序属性**对话框随即出现。  
   
 5.  单击**选项**选项卡。  
   
-6.  选择**直接从 Windows 的密码同步**复选框。  
+6.  选择**从 Windows 直接进行密码同步**复选框。  
   
-7.  单击 **“确定”**。
+7.  单击“确定” 。

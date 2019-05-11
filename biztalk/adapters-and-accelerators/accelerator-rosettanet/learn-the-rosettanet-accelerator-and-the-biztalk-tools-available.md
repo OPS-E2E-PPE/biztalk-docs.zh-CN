@@ -13,15 +13,15 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: e8f09634-5adb-4782-bf48-8b24b0a7e630
 ms.author: mandia
-ms.openlocfilehash: 078b8d7304bfae50fa9084b4ecd4e482780d22d4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fb725c887de1a9fc91f87d92d3176c6e06b2ece1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978342"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283369"
 ---
 # <a name="about-the-rosettanet-accelerator"></a>有关 RosettaNet 加速器
-Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]高科技之间的数据交换的完整解决方案制造业计算机应用程序基于 RosettaNet 标准。 使用本文档集可以熟悉 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 的各种服务和功能。  
+Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]高科技之间的数据交换的完整解决方案制造业计算机应用程序基于 RosettaNet 标准。 使用此文档集可以熟悉服务、 功能和功能的[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]。  
   
 ## <a name="next-steps"></a>后续步骤 
   

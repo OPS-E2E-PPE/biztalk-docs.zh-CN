@@ -16,17 +16,17 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a8abeb606ea422af4d04ca6e527795d722b58464
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f0a64026dcf699c1d643aa50eca797111bac3227
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981950"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338149"
 ---
 # <a name="how-to-disable-an-affiliate-application"></a>如何禁用关联应用程序
 可以使用 MMC 管理单元或命令行来禁用指定的关联应用程序。  
   
-### <a name="to-disable-an-affiliate-application-using-the-mmc-snap-in"></a>使用 MMC 管理单元禁用关联应用程序  
+### <a name="to-disable-an-affiliate-application-using-the-mmc-snap-in"></a>若要禁用关联应用程序使用 Mmc 管理单元  
   
 1.  上**启动**菜单上，单击**程序**，单击**Microsoft 企业单一登录**，然后单击**SSO 管理**。  
   
@@ -34,11 +34,11 @@ ms.locfileid: "36981950"
   
 3.  右键单击关联应用程序，然后依次**禁用**。  
   
-### <a name="to-disable-an-affiliate-application-using-the-command-line"></a>使用命令行禁用关联应用程序  
+### <a name="to-disable-an-affiliate-application-using-the-command-line"></a>若要禁用关联应用程序使用命令行  
   
 1. 单击**启动**，单击**运行**，然后键入**cmd**。  
   
-2. 在命令行上，转至企业单一登录安装目录。 默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。  
+2. 在命令行中，转至企业单一登录安装目录。 默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。  
   
 3. 类型<strong>ssomanage-disableapp *\<应用程序名称\></strong><em>，其中\<</em>应用程序的名称*\>名称您要禁用的关联应用程序。  
   

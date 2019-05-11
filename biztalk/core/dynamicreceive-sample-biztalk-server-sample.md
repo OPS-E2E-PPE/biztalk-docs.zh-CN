@@ -12,25 +12,25 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af89bac79614268f4648f688d8cabfc913ed2277
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 38cde24f8bc91fc5a2fc741978ebfac9d7283c51
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974126"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65350612"
 ---
-# <a name="dynamicreceive-sample-biztalk-server-sample"></a>DynamicReceive 示例（BizTalk Server 示例）
+# <a name="dynamicreceive-sample-biztalk-server-sample"></a>DynamicReceive 示例 （BizTalk Server 示例）
 DynamicReceive 示例演示如何接收[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]来自 MQSeries 的消息队列时动态指定 MQSeries 队列的 URI。  
   
 ## <a name="what-this-sample-does"></a>本示例的用途  
  此示例将动态创建 MQSeries 队列由指定**queueManager**，**队列**，并**server**变量。 启用动态接收方案并获取[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]动态指定 MQSeries 队列中的消息基于中指定的筛选器条件**MQMD_MsgId**并**MQMD_CorrelId**消息属性。  
   
-## <a name="how-this-sample-was-designed-and-why"></a>本示例的设计方式和原因  
- 通过在业务流程中指定 MQSeries 队列的 URI 地址，MQSeries 适配器即可从该队列动态接收消息。 此功能可通过在业务流程中使用要求-响应发送端口来获得。  
+## <a name="how-this-sample-was-designed-and-why"></a>此示例设计的方式和原因  
+ MQSeries 适配器可以在业务流程中指定的队列的 URI 地址动态从 MQSeries 队列接收消息。 通过使用要求响应发送端口业务流程中的实现此功能。  
   
  若要动态接收消息，指定以下**表达式**形状在业务流程中：  
   
-1. 启用动态接收通过设置以下属性[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]消息： **MQSeries.DynamicReceive** = `'Yes'`  
+1. 启用动态接收通过设置以下属性[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]消息：**MQSeries.DynamicReceive** = `'Yes'`  
   
 2. 指定要从其中获取消息通过设置 URI 的端口地址。 （可选） 你可以指定以下项：  
   
@@ -47,18 +47,18 @@ DynamicReceive 示例演示如何接收[!INCLUDE[btsBizTalkServerNoVersion](../i
   使用动态接收更加灵活地因为固定的接收位置不是必需的功能提供。 在某些情况下，可能不知道到运行时的 URI。 动态接收功能，您可以动态确定从何处可以获取消息。 这还意味着不需要实现业务流程中的排队协定。  你可以等待可以通过使用动态指定从指定的匹配条件的 MQSeries 队列的 URI 中获取消息。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- \<*示例路径*\>\Samples\AdaptersUsage\MQSeriesAdapter\DynamicReceive  
+ \<*Samples Path*\>\Samples\AdaptersUsage\MQSeriesAdapter\DynamicReceive  
   
  下表显示了本示例中的文件及其用途说明：  
   
 |||  
 |-|-|  
 |文件|Description|  
-|DynamicReceive.btproj，<br /><br /> DynamicReceive.sln|应用程序的项目和解决方案文件。|  
+|DynamicReceive.btproj,<br /><br /> DynamicReceive.sln|应用程序的项目和解决方案文件。|  
 |DynamicReceive e.odx|应用程序的 BizTalk 业务流程文件。|  
 |Setup.bat|若要创建的密钥文件、 编译该项目，并将其部署的批处理文件。|  
   
-## <a name="how-to-use-this-sample"></a>如何使用本示例  
+## <a name="how-to-use-this-sample"></a>如何使用此示例  
  指定**Microsoft.XLANGs.BaseTypes.Address**适合你的解决方案。 更改**MQSeries.WaitInterval**以指定希望接收响应消息。 更新 （或添加） 的匹配选项，或删除它们，如果你打算中获取所有消息。  
   
 ## <a name="building-and-running-the-sample"></a>构建和运行示例  
@@ -75,7 +75,7 @@ DynamicReceive 示例演示如何接收[!INCLUDE[btsBizTalkServerNoVersion](../i
   
    1.  使用获取消息之前，指定等待间隔**MQSeries.WaitInterval**消息属性。  
   
-   2.  指定用于接收消息的匹配条件。 有关详细信息，请参阅“匹配选项”帮助。  
+   2.  指定用于接收消息的匹配条件。 请参阅"匹配选项"更多详细信息的帮助。  
   
 5. 更改业务流程，以指定从中获取从消息中的以下变量：  
   
@@ -89,26 +89,26 @@ DynamicReceive 示例演示如何接收[!INCLUDE[btsBizTalkServerNoVersion](../i
   
    -   或者，运行 setup.bat 文件创建密钥文件，生成项目，并将其部署。  
   
-#### <a name="to-run-the-sample"></a>运行示例  
+#### <a name="to-run-the-sample"></a>若要运行示例  
   
-1.  将业务流程绑定到 BizTalk 主机。  
+1.  将业务流程绑定到的 BizTalk 主机。  
   
-2.  启用业务流程创建的文件接收端口。 将文件接收位置从**c:\temp\in**到正确的文件的文件夹。  
+2.  启用文件接收端口创建的业务流程。 将文件接收位置从**c:\temp\in**到正确的文件的文件夹。  
   
-3.  登记并启动已创建的两个发送端口。 一个端口是动态要求响应端口类型，另一个是文件发送端口且是用于发送消息的队列。 确保已将此设置为正确的位置。  
+3.  登记并启动已创建两个发送端口。 一个端口是动态要求响应端口类型，而其他是 file 发送端口，是队列发送消息。 请确保此值设置为正确的位置。  
   
-4.  若要启动该业务流程，请将一个文件放在输入文件夹中。 这将调用 MQSeries 适配器并调用**MQSAgent2** COM + 组件上指定的服务器以获取消息。 接收到的消息将存储在文件发送端口中指定的文件夹位置。  
+4.  若要启动业务流程，请输入文件夹中删除文件。 这将调用 MQSeries 适配器并调用**MQSAgent2** COM + 组件上指定的服务器以获取消息。 收到的消息出现在 file 发送端口中指定的文件夹位置。  
   
 5.  如果未找到消息中指定的条件匹配的**表达式**形状，一个虚拟消息放入输出文件夹。 若要禁用匹配选项，将最后两个行中注释掉**表达式**形状。  
   
 ## <a name="comments"></a>注释  
   
--   如果正在动态创建队列但未删除，则该队列将在下一个业务流程实例激活时引发错误。  
+-   如果队列正在动态创建，但未删除，则将导致错误下, 一个业务流程实例激活时。  
   
--   还可通过其他方法动态设置 URI，此示例只指定了一个选项。 例如，可在消息上下文中读取某些属性来设置 URI。  
+-   还有其他方法动态; 设置 URI此示例指定一个选项。 例如，可以通过读取某些属性在消息上下文中的设置 URI。  
   
--   如果队列中没有满足匹配选项的消息，则将返回一个虚拟消息。  
+-   如果没有满足匹配选项在队列中的没有消息，则返回一个虚拟消息。  
   
--   由于此示例使用动态发送端口，因此，可能需要指定诸如重试和事务等其他选项。 使用由适配器公开的上下文属性，可在将消息发送到动态要求-响应端口前设置这些选项。  
+-   由于此示例使用动态发送端口，可能需要指定重试和事务等其他选项。 由适配器公开的上下文属性用于将消息发送到动态要求响应端口前设置这些选项。  
   
 -   可以创建和使用动态删除 MQSeries 队列**MQSAdapterAdmin2**接口。 如何动态创建 MQSeries 队列的示例，请参阅"支持的队列管理"在[ http://go.microsoft.com/fwlink/?LinkId=89400 ](http://go.microsoft.com/fwlink/?LinkId=89400)。

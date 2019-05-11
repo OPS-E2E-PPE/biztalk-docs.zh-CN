@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c11029af5b2f87e4e1bf3e7fc4225bfc5ba46105
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dc41a3a7a9f128ee244a1f39fc13711f32a33666
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998198"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65347606"
 ---
-# <a name="max-limit-of-acceptable-edifact-interchange-control-number-has-reached-for-party"></a>已达到参与方的可接受 EDIFACT 交换控制编号最大限制
+# <a name="max-limit-of-acceptable-edifact-interchange-control-number-has-reached-for-party"></a>可接受 Edifact 交换控制编号的最大限制已达到参与方
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                              |

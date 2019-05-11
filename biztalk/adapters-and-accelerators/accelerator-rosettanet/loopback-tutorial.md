@@ -17,23 +17,23 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97714d5f7e604acbb798739fc4eb545a07968980
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f96d81e59686759300e996e2f257da5afbc91ed0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010094"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283290"
 ---
 # <a name="loopback-tutorial"></a>Loopback 教程
 本教程包含详细的步骤，描述如何使用 Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]来模拟一台计算机上的家庭和合作伙伴组织之间的流程实施。  
   
- 在实际生产环境中，您的合作伙伴组织在远程计算机上实施流程。 本教程使用 Loopback 实用工具创建镜像贸易协议，从而在同一台计算机上模拟贸易合作伙伴。 单台计算机环回方案可用于开发和测试。 建议您不要在生产环境中使用 Loopback 实用工具。  
+ 在实际生产环境中，您的合作伙伴组织实现驻留在远程计算机上。 本教程使用 Loopback 实用工具创建镜像贸易协议，从而模拟贸易合作伙伴的同一计算机上。 使用单台计算机环回方案适用于开发和测试目的。 建议您不应在生产环境中使用 Loopback 实用工具。  
   
- 此环回方案不支持签名消息，因此不支持不可否认性。  
+ 此环回方案不支持签名消息，并因此不支持不可否认性。  
   
- 如果配置了证书颁发机构，并拥有供测试使用的加密私钥，那么本方案支持消息加密。  
+ 如果你具有证书颁发机构配置，且具有私钥的加密可用于测试目的，这种情况下支持加密的消息。  
   
- 在本教程中，您可以创建本组织，合作伙伴组织和贸易协议，并使用 Loopback 实用工具创建镜像协议，然后运行示例流程来验证环回方案。  
+ 在本教程中，您将创建本组织、 合作伙伴组织和贸易协议、 使用 Loopback 实用工具创建镜像协议，，然后运行示例流程来验证环回方案。  
   
 ## <a name="in-this-section"></a>本节内容  
   

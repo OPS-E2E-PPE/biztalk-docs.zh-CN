@@ -1,5 +1,5 @@
 ---
-title: UninstallApp 命令 |Microsoft 文档
+title: UninstallApp 命令 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,36 +12,36 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ea94335882ffbcf01b69c450ef4a5eb80ef4fa3d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b4fc9da4d645b710490447addc2d4fd8691f199d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286781"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292683"
 ---
 # <a name="uninstallapp-command"></a>UninstallApp 命令
-该命令从本地计算机中卸载 BizTalk 应用程序，并且将从“控制面板”的“添加或删除程序”中的程序列表中删除该应用程序。 此命令与使用“添加或删除程序”删除应用程序的效果相同。 如果为要删除的应用程序安装了多个 .msi 文件，则所有这些 .msi 文件安装的全部项都将被卸载。  
+从本地计算机中卸载 BizTalk 应用程序，并从列表中的程序中添加或删除程序控制面板中移除应用程序。 此命令的效果删除应用程序通过添加或删除程序。 如果为此应用程序安装了多个.msi 文件，将卸载的所有安装的.msi 文件的所有项。  
   
- 为此命令指定的应用程序名称必须与显示在“添加或删除程序”中的应用程序名称相匹配。 如果您不确定的应用程序名称，则可以使用**ListPackage**命令以获取它中, 所述[ListPackage 命令](../core/listpackage-command.md)。  
+ 添加或删除程序中所示，此命令指定的应用程序名称必须与应用程序的名称匹配。 如果您不确定的应用程序名称，则可以使用**ListPackage**命令来获取它，如中所述[ListPackage 命令](../core/listpackage-command.md)。  
   
 > [!IMPORTANT]
->  虽然通过双击 .msi 文件能够卸载应用程序，但建议不要这样做。 因为可以为同一个应用程序安装多个 .msi 文件，如果采用这种方法卸载应用程序，将不能卸载与该应用程序相关联的所有项。  
+>  尽管可以通过双击.msi 文件卸载的应用程序，但不支持执行此操作。 这是因为可以为同一应用程序，安装多个.msi 文件并使用此方法将不会卸载所有应用程序与关联的项。  
   
 ## <a name="usage"></a>用法  
  **BTSTask UninstallApp /ApplicationName:** *值*  
   
 ## <a name="parameters"></a>Parameters  
   
-|参数|必需|Description|  
+|参数|Required|Description|  
 |---------------|--------------|-----------------|  
-|**/ ApplicationName** (或 **/A**，请参阅备注)|是|要卸载的 BizTalk 应用程序的名称。 如果名称包含空格，必须将它括在双引号 （"）。|  
+|**/ ApplicationName** (或 **/A**，请参阅备注)|是|若要卸载的 BizTalk 应用程序的名称。 如果名称包含空格，则必须将其括在双引号 （"）。|  
   
 ## <a name="sample"></a>示例  
  **BTSTask UninstallApp /ApplicationName:MyApplication**  
   
-## <a name="remarks"></a>注释  
- 参数不区分大小写。 指定参数无需键入整个参数名，只需键入可明确标识该参数的参数名的前几个字母即可。  
+## <a name="remarks"></a>备注  
+ 参数不区分大小写。 不需要键入整个参数名称来指定它;您可以键入明确标识参数名称的第几个字母。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [BTSTask 命令行参考](../core/btstask-command-line-reference.md)   
  [如何卸载 BizTalk 应用程序](../core/how-to-uninstall-a-biztalk-application.md)

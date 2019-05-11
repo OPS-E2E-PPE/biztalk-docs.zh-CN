@@ -16,28 +16,28 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0a4c272dfa76c8604224a9fc83ae888ce9b2c186
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f8a3591c6f904db07f51610e0bcff7afae7b8e31
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996022"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65335745"
 ---
 # <a name="how-to-publish-a-policy"></a>如何发布策略
-本主题介绍如何使用 BizTalk Server 管理控制台在 BizTalk 组中发布策略。 发布某一策略，可将它添加到 BizTalk 应用程序，如中所述[如何向应用程序添加策略](../core/how-to-add-a-policy-to-an-application.md)。  
+本主题介绍如何使用 BizTalk Server 管理控制台来发布 BizTalk 组中的策略。 发布某一策略，可将它添加到 BizTalk 应用程序，如中所述[如何向应用程序添加策略](../core/how-to-add-a-policy-to-an-application.md)。  
   
- 在您可以发布某一策略前，该策略必须存在于 BizTalk 组的规则引擎数据库中。 可以通过以下三种方式将策略导入规则引擎数据库中：  
+ 可以发布策略之前，它必须存在于 BizTalk 组的规则引擎数据库中。 有三种方法可以将策略导入规则引擎数据库：  
   
--   可以导入包含策略的应用程序。 在进行这一导入时，该策略自动导入到规则引擎数据库中。  
+-   您可以导入包含策略的应用程序。 当执行此操作时，该策略将自动导入到规则引擎数据库。  
   
 -   您可以显式将策略导入规则引擎数据库通过使用管理控制台或 BTSTask，如中所述[如何导入策略](../core/how-to-import-a-policy.md)。  
   
 -   您可以将策略添加到规则引擎数据库中使用规则引擎部署向导，如中所述[如何部署和取消部署策略及词汇](../core/how-to-deploy-and-undeploy-policies-and-vocabularies.md)。  
   
 > [!NOTE]
->  尽管可以通过导入的其他策略覆盖某一已发布策略，但如果您指定这一选项，则永远不会覆盖已发布的词汇。 若要更新某一已发布的词汇，必须从规则引擎数据库中删除它，然后导入新版本。  
+>  尽管已发布的策略可以覆盖由另一个策略导入，您应指定此选项，可以永远不会覆盖已发布的词汇。 若要更新已发布的词汇，必须从规则引擎数据库中删除它，然后导入新版本。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  若要执行本主题中的过程，必须是 BizTalk Server Administrators 组的成员的帐户登录。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
   
 ### <a name="to-publish-a-policy"></a>若要发布策略  

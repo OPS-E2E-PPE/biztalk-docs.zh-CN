@@ -1,5 +1,5 @@
 ---
-title: 错误-未引用的源架构 |Microsoft 文档
+title: 错误-未引用的源架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 434a3dd5bbe4a1f491392a11068de6e9c6f78a35
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9725e9453f02d51a60ce31218fa062723a81de4b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240717"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65346248"
 ---
 # <a name="error---unreferenced-source-schema"></a>错误-未引用的源架构
 **错误代码**  
@@ -28,8 +28,8 @@ ms.locfileid: "22240717"
   
  **说明**  
   
- 指示的源架构不包含的映射，根据需要 Microsoft BizTalk 服务器项目中。  
+ 指示的源架构不包含该映射，所需的 Microsoft BizTalk Server 项目中。  
   
  **用户执行任何操作**  
   
- 将源架构添加到 BizTalk 项目通过使用包含映射**添加现有项**可用的命令**文件**菜单在解决方案中的 BizTalk 项目的快捷菜单资源管理器。
+ 将源架构添加到包含该映射使用的 BizTalk 项目**添加现有项**可用的命令**文件**菜单在解决方案中的 BizTalk 项目的快捷菜单资源管理器。

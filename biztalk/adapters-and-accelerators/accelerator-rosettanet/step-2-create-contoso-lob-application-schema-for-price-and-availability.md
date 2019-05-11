@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 创建 Contoso LOB 应用程序架构为价格与可用性项目使用 BizTalk 编辑器 |Microsoft Docs
+title: 第 2 步：有关使用 BizTalk 编辑器中的价格与可用性项目创建 Contoso LOB 应用程序架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,17 +14,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f899a6614ea5d5d28c555be1b39e72b5880fe3ae
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8ca16160005cb90e342c7c92c711081aa7a7fd16
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999326"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281619"
 ---
-# <a name="step-2-creating-the-contoso-lob-application-schemas-for-the-price-and-availability-project-using-biztalk-editor"></a>步骤 2： 创建 Contoso LOB 应用程序架构为价格与可用性项目使用 BizTalk 编辑器
-在此步骤中，将生成用于查询 Contoso ERP 系统中特定产品的价格与可用性的架构。 通过使用 BizTalk server 的 Microsoft® SQL 适配器生成此架构。  
+# <a name="step-2-creating-the-contoso-lob-application-schemas-for-the-price-and-availability-project-using-biztalk-editor"></a>第 2 步：价格与可用性项目使用 BizTalk 编辑器创建 Contoso LOB 应用程序架构
+在此步骤中，生成要用于查询 Contoso ERP 系统中的价格与可用性的某一特定产品的架构。 通过使用 BizTalk server 的 Microsoft® SQL 适配器生成此架构。  
 
-### <a name="to-update-the-sql-stored-procedure-for-schema-generation"></a>更新 SQL 存储过程以生成架构  
+### <a name="to-update-the-sql-stored-procedure-for-schema-generation"></a>若要更新 SQL 存储过程的架构生成  
 
 1.  单击**启动**，依次指向**所有程序**，指向**Microsoft SQL Server 2008 R2**，然后单击**SQL Server Management Studio**。  
 
@@ -32,7 +32,7 @@ ms.locfileid: "36999326"
 
 3.  右键单击**dbo。SP_GetInventoryForProductID**，然后单击**修改**。  
 
-4.  在查询窗口中，紧接在“for xml auto”后面插入逗号、空格和“xmldata”。 该代码行应为如下所示：  
+4.  在查询窗口中，插入一个逗号、 空格和"xmldata"紧跟"for xml auto"。 代码行应如下所示：  
 
     ```  
     for xml auto, xmldata  
@@ -41,11 +41,11 @@ ms.locfileid: "36999326"
 5.  单击**Execute**若要将所做的更改保存到存储过程。  
 
     > [!NOTE]
-    >  保持 Microsoft SQL Server Management Studio 为打开状态，以执行下一个过程。  
+    >  保持 Microsoft SQL Server Management Studio 打开下一步的过程。  
 
-### <a name="to-create-the-contoso-price-and-availability-schema"></a>创建 Contoso 价格与可用性架构  
+### <a name="to-create-the-contoso-price-and-availability-schema"></a>若要创建 Contoso 价格与可用性架构  
 
-1. 打开 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] 中的 Contoso 解决方案。  
+1. 打开中的 Contoso 解决方案[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]。  
 
 2. 在解决方案资源管理器中右键单击**ContosoPriceAndAvailability**项目，指向**添加**，然后单击**添加生成的项**。  
 
@@ -87,4 +87,4 @@ ms.locfileid: "36999326"
 16. Microsoft SQL Server Management Studio 中删除`xmldata`谓词和逗号`SP_GetInventoryForProductID`存储过程，在上一步骤中，添加它，然后单击**Execute**。  
 
 ## <a name="see-also"></a>请参阅  
- [步骤 3：使用 BizTalk 映射器为价格和可用性项目创建 Contoso LOB 应用程序映射](../../adapters-and-accelerators/accelerator-rosettanet/step-3-create-contoso-lob-application-map-for-price-and-availability-in-mapper.md)
+ [步骤 3：使用 BizTalk 映射器创建价格与可用性项目的 Contoso LOB 应用程序映射](../../adapters-and-accelerators/accelerator-rosettanet/step-3-create-contoso-lob-application-map-for-price-and-availability-in-mapper.md)

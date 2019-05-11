@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 98499420c773328d647a9c7fa1c80e3ab09ba1b1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4d935ca74ce1fd6b8137807f14184d4fa22f3ade
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003454"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359038"
 ---
 # <a name="application-not-found"></a>找不到应用程序
 ## <a name="details"></a>详细信息  
@@ -33,15 +33,15 @@ ms.locfileid: "37003454"
 |  消息正文   | 应用程序"{0}"找不到。验证应用程序的默认 BizTalk 配置数据库中存在 |
 
 ## <a name="explanation"></a>解释  
- 此错误表示 BizTalk 使用的是 BizTalk 数据库中没有的应用程序。  
+ 此错误表示 BizTalk 使用的 BizTalk 数据库中不存在的应用程序。  
 
 ## <a name="user-action"></a>用户操作  
  使用以下过程配置有效的应用程序。  
 
-#### <a name="to-configure-a-valid-application"></a>配置有效应用程序的步骤  
+#### <a name="to-configure-a-valid-application"></a>若要配置有效的应用程序  
 
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
 
 2. 在控制台根目录中，展开[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，展开**BizTalk 组**，然后展开**应用程序**。  
 
-3. 确保应用程序在此处存在。 如果不存在，请选择其他有效应用程序。
+3. 请确保该应用程序存在。 如果没有，请选择其他有效应用程序。

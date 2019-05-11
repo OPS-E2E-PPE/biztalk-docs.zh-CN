@@ -15,12 +15,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6495aea00b8a0d06f112cf6592bc9f15b5a4073e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8e53fbbc614eb833e176adcba84cb3363f128254
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985622"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378665"
 ---
 # <a name="biztalk-accelerator-for-swift-programming-guide"></a>BizTalk Accelerator for SWIFT 编程指南
 本部分介绍的概念和过程开发人员编写代码与 Microsoft [!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]。 将本指南中结合使用[!INCLUDE[btsBizTalkServerNoVersion_md](../../includes/btsbiztalkservernoversion-md.md)]文档。  

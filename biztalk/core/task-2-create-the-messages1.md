@@ -1,5 +1,5 @@
 ---
-title: 任务 2︰ 创建消息 1> |Microsoft 文档
+title: 任务 2：创建消息 1> |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3e326662737919e325f95d82b86aa8824e4e3a06
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c0af56f8a289498e44129ca02b669bb76d88a268
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278845"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291484"
 ---
-# <a name="task-2-create-the-messages"></a>任务 2： 创建消息
-创建以下消息时，它们将业务流程中使用。  
+# <a name="task-2-create-the-messages"></a>任务 2：创建消息
+创建以下消息，将在业务流程中使用它们。  
   
-### <a name="to-create-the-messages"></a>创建消息的步骤  
+### <a name="to-create-the-messages"></a>若要创建消息  
   
 1.  右键单击**消息**，然后选择**新消息**。  
   
-2.  在“标识符”和“消息类型”>“架构”中填入以下内容，然后从显示的列表中为每个消息选择类型。  
+2.  在下面的示例为标识符和消息类型填充 > 架构，然后选择从显示的列表，为每个消息类型。  
   
     |Identifier|消息类型 > 架构|  
     |----------------|--------------------------|  
@@ -40,8 +40,8 @@ ms.locfileid: "22278845"
     |EndDocResponseMsg|BeginDocTest.B4200310Service_1.F4211FSEndDocResponse|  
     |EndDocSessionMsg|BeginDocTest.B4200310Service_1.F4211FSEndDoc|  
   
-## <a name="see-also"></a>另请参阅  
- [任务 1： 创建端口](../core/task-1-create-the-ports2.md)   
- [任务 3： 配置发送和接收形状](../core/task-3-configure-the-send-and-receive-shapes1.md)   
- [任务 4： 配置构造消息形状](../core/task-4-configure-the-construct-message-shape2.md)   
- [任务 5： 配置转换形状](../core/task-5-configure-the-transform-shape1.md)
+## <a name="see-also"></a>请参阅  
+ [任务 1:创建端口](../core/task-1-create-the-ports2.md)   
+ [任务 3:配置发送和接收形状](../core/task-3-configure-the-send-and-receive-shapes1.md)   
+ [任务 4:配置构造消息形状](../core/task-4-configure-the-construct-message-shape2.md)   
+ [任务 5:配置转换形状](../core/task-5-configure-the-transform-shape1.md)

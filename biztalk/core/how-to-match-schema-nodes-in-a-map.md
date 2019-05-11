@@ -1,5 +1,5 @@
 ---
-title: 如何匹配映射中的架构节点 |Microsoft 文档
+title: 如何匹配在映射中的架构节点 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,45 +12,45 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c1e2ce880489ca49b0b55d2e6f45b9e887d719a8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3a25bf295a767f34b692d54fc922fb8fe489ecc1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22253933"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65336154"
 ---
-# <a name="how-to-match-schema-nodes-in-a-map"></a>如何在映射中匹配架构节点
-如果源或目标架构很复杂，映射元素将非常困难。 BizTalk 映射程序引入了**指示匹配**功能，使得您可以将复杂架构元素映射的建议最可能的匹配。 本主题提供有关如何执行此操作的信息。  
+# <a name="how-to-match-schema-nodes-in-a-map"></a>如何匹配在映射中的架构节点
+当源或目标架构很复杂时，它可能很难将元素映射。 BizTalk 映射器引入**指示匹配**功能，它使您能够通过建议最佳匹配映射复杂架构元素。 本主题提供有关如何执行此操作的信息。  
   
 > [!NOTE]
->  BizTalk 映射器为架构节点建议可能的匹配。 当前仅为英语名称支持此功能。  
+>  BizTalk 映射器建议可能的匹配架构节点。 当前仅为英语名称支持此功能。  
   
 ## <a name="prerequisites"></a>先决条件  
- 这些操作需要 BizTalk 映射器处于运行状态。  
+ 这些说明需要 BizTalk 映射器处于运行状态。  
   
-### <a name="to-match-relevant-schema-nodes"></a>匹配相关架构节点  
+### <a name="to-match-relevant-schema-nodes"></a>若要匹配相关架构节点  
   
-1.  选择并右键单击你需要知道最佳匹配项，并依次的架构元素**指示匹配**。 BizTalk 映射器突出显示最佳匹配（仅限于 7 个），且最优化匹配处于选中状态。  
+1.  选择并右键单击的架构元素，需要知道最佳匹配项，然后依次**指示匹配**。 BizTalk 映射器突出显示最佳匹配 （仅限于 7 个），并选中最佳匹配。  
   
-     或者，你可以选择**指示匹配**BizTalk 菜单上，或者按 SHIFT + 空间键。  
+     或者，可以选择**指示匹配**从 BizTalk 菜单中或按 SHIFT + 空格键。  
   
-     下图显示了目标架构中所选节点的建议匹配。  
+     下图显示目标架构中所选节点的建议匹配。  
   
-     ![暗示映射](../core/media/suggestive-mapping.gif "Suggestive_Mapping")  
+     ![暗示性映射](../core/media/suggestive-mapping.gif "Suggestive_Mapping")  
   
     > [!NOTE]
     >  按住 SHIFT 键以遍历建议匹配。  
   
-2.  现在您可以执行以下操作：  
+2.  您现在可以执行以下操作：  
   
-    -   按 Enter 确认突出显示（最佳）的匹配。  
+    -   按 ENTER 确认突出显示最佳 （如有可能） 的匹配。  
   
-    -   使用向上/向下键按优先顺序在突出显示的匹配中循环选择。  
+    -   使用向上箭头键循环按首选项顺序在突出显示匹配。  
   
         > [!NOTE]
-        >  按向下键可遍历到下一个最佳匹配，按向上键可突出显示上一个最佳匹配。  
+        >  按向下箭头键可遍历到下一个最佳匹配项，并向上箭头键突出显示上一个最佳匹配项。  
   
-    -   按主页键返回到顶部的匹配项。  
+    -   按 HOME 键返回到上匹配。  
   
-## <a name="see-also"></a>另请参阅  
- [在 BizTalk 映射程序中使用增强的功能](../core/using-enhanced-features-in-biztalk-mapper.md)
+## <a name="see-also"></a>请参阅  
+ [使用 BizTalk 映射器中的增强功能](../core/using-enhanced-features-in-biztalk-mapper.md)

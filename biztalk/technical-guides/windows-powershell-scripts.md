@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b531fa3469139434f341fe9e413a49b4b021e86f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2addea893d139dbb4f0efd401ac0af6410ad4f24
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979126"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291218"
 ---
 # <a name="windows-powershell-scripts"></a>Windows PowerShell 脚本
 本主题包含 Windows PowerShell 脚本可在 BizTalk Server 环境，以应用本指南中描述的注册表设置中的计算机上运行。  

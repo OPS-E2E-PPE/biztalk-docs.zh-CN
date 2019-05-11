@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6c8595aafb14b42240a5f781faf481977be2b821
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 703a3d6c25de9151a5ed7c5dddfe67b948c35a1d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014678"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378879"
 ---
 # <a name="components"></a>组件
 使用 Microsoft[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]组件来实现 SWIFT 为中心的中间件解决方案，可协助贸易合作伙伴关系、 企业应用程序集成 (EAI) 和应用程序和业务工作流自动化。 这些组件包括：  

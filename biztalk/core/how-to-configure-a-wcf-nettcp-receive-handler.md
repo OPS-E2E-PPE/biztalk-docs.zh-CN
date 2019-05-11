@@ -17,17 +17,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8d7e68e4df5a729aae7f84932b53d319fea0114
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 48133eaa50fed0062b17d9e3b25fe180d7495f89
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009942"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65342196"
 ---
 # <a name="how-to-configure-a-wcf-nettcp-receive-handler"></a>如何配置 WCF-NetTcp 接收处理程序
-可使用以下过程配置 WCF-NetTcp 接收处理程序。  
+使用以下过程配置 Wcf-nettcp 接收处理程序。  
 
-### <a name="to-change-global-variables-for-a-wcf-nettcp-receive-handler"></a>更改 WCF-NetTcp 接收处理程序的全局变量  
+### <a name="to-change-global-variables-for-a-wcf-nettcp-receive-handler"></a>若要更改全局变量的 Wcf-nettcp 接收处理程序  
 
 1. 在 BizTalk 管理控制台中，展开[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**管理**，展开**BizTalk 组**，展开**平台设置**，然后展开**适配器**。  
 
@@ -40,7 +40,7 @@ ms.locfileid: "37009942"
 
    |        使用此选项         |                                                                                                                         执行的操作                                                                                                                         |
    |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | **最大连接数** | 指定监听程序可以拥有的等待应用程序接受的最大连接数。 在超过此配额值时，将删除新的传入连接，而不是等待接受这些连接。<br /><br /> 默认值为 10。 |
+   | **最大连接数** | 指定的最大侦听器可以拥有等待接受的应用程序的连接数。 当超过此配额值时，会删除新的传入连接而不是等待接受。<br /><br /> 默认值为 10。 |
 
 
 5. 单击“确定” 。  

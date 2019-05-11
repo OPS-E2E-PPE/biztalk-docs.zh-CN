@@ -1,5 +1,5 @@
 ---
-title: 创建 Affiliate Applications3 |Microsoft 文档
+title: 创建关联 Applications3 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,42 +18,42 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 857ee7edd623332e72176ac09082f0ec9fc460f4
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 48aaf4d7cd6df05d99f31a9ddce7c6ccb6e7ae68
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "24015148"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65353950"
 ---
 # <a name="creating-affiliate-applications"></a>创建关联应用程序
-下列步骤介绍了如何开始使用关联应用程序和单一登录 (SSO)。  
+以下步骤介绍如何开始使用单一登录 (SSO) 关联应用程序使用。  
   
 > [!NOTE]
->  如果收到 SSO 错误，请确认您配置 BizTalk Server 时使用的是域帐户，因为它会影响 ESSO 服务的功能。 SSO 仅在域帐户下起作用。  
+>  如果收到 SSO 错误，请确认使用的域帐户配置 BizTalk Server 中，因为这会影响 ESSO 服务的功能。 SSO 仅在域帐户下起作用。  
   
 ## <a name="creating-an-affiliate-application"></a>创建关联应用程序  
   
 #### <a name="to-create-an-affiliate-application"></a>若要创建关联应用程序  
   
-1.  在 **控制面板**, ，打开 **服务**, ，并验证企业单一登录服务正在运行。  
+1.  在中**Control Panel**，打开**服务**，并验证是否正在运行企业单一登录服务。  
   
-2.  在命令提示符下，将目录更改为 Enterprise Single Sign-On 文件夹。  
+2.  在命令提示符中，将目录更改为 Enterprise Single Sign-on 文件夹。  
   
      例如：  
   
-     **C:\Program Files\Common Files\Enterprise 上单一登录 >**  
+     **C:\Program Files\Common Files\Enterprise Single Sign-On>**  
   
-3.  使用企业单一登录命令。 有关命令列表，请使用 -help 开关。  
+3.  使用企业单一登录命令。 对于命令的列表，请使用-help 开关。  
   
      ![](../core/media/siebeladapter-23-sso-commands.gif "SiebelAdapter_23_SSO_Commands")  
   
-4.  若要创建关联应用程序中使用 *。XML 作为一个开始，键入以下命令︰  
+4.  若要创建关联应用程序使用 *。XML 作为一个开始，键入以下命令：  
   
-     **ssomanage.exe createapps C:\SSOtest\AffiliateApplication.xml**  
+     **ssomanage.exe -createapps C:\SSOtest\AffiliateApplication.xml**  
   
      其中：  
   
-     C:\SSOtest 是包含你的应用程序 XML 的文件夹。  
+     C:\SSOtest 是包含 XML 应用程序的文件夹。  
   
      AffiliateApplication.xml 是应用程序创建包含登录信息的 XML。  
   
@@ -78,49 +78,49 @@ ms.locfileid: "24015148"
   
 ## <a name="creating-single-sign-on-tickets"></a>创建单一登录票证  
   
-#### <a name="to-create-sso-tickets"></a>创建 SSO 票证  
+#### <a name="to-create-sso-tickets"></a>若要创建 SSO 票证  
   
 1.  键入以下命令来控制 SSO 票证行为：  
   
      `ssomanage.exe -tickets yes yes`  
   
-2.  回答以下问题：  
+2.  回答的问题：  
   
      `ssomanage -tickets <allowed yes | no> <validate yes | no>`  
   
-     完成后，您将收到以下确认：  
+     完成后你收到一条确认消息：  
   
-     **使用此计算机上的 SSO 服务器。已成功完成该操作。**  
+     **在此计算机上使用 SSO 服务器。已成功完成该操作。**  
   
 ## <a name="enabling-the-affiliate-application-xml"></a>启用关联应用程序 XML  
   
-#### <a name="to-enable-affiliate-application-xml"></a>启用关联应用程序 XML  
+#### <a name="to-enable-affiliate-application-xml"></a>若要启用关联应用程序 XML  
   
-1.  键入以下命令︰  
+1.  键入以下命令：  
   
      `ssomanage -enableapp JDEdwardsApp`  
   
-2.  键入以下命令以列出应用程序并验证是否已创建该应用程序：  
+2.  键入以下命令以列出的应用程序并验证已创建应用程序中：  
   
      `ssoclient.exe –listapps`  
   
-     列表中显示 Affiliate 应用程序可供使用。  
+     列表中将显示关联应用程序可供使用。  
   
-     **有关 IBI\YourID-JDEdwardsApp 可用应用程序**  
+     **可用的应用程序用于 IBI\YourID-JDEdwardsApp**  
   
-3.  键入以下命令，设置关联应用程序的凭据：  
+3.  键入以下命令，设置关联应用程序凭据：  
   
      `ssoclient.exe -setcredentials JDEdwardsApp`  
   
-4.  在提示符下输入用户名和密码。 输入 JDEdwardsApp 关联应用程序的登录凭据。 例如，输入用户标识和该用户就可以通过 SSO 服务器系统中输入的密码。  
+4.  输入用户名和密码在提示进行操作。 输入 JDEdwardsApp 关联应用程序的登录凭据。 例如，输入用户标识和该用户就可以通过 SSO 服务器系统中输入的密码。  
   
     -   **用户 ID:** 用户  
   
-    -   **密码︰** ******  
+    -   **密码：** ******  
   
-    -   **确认？密码︰** ******  
+    -   **确认？密码：** ******  
   
-5.  此关联应用程序显示在“JD Edwards OneWorld 传输属性”对话框的 BizTalk 适配器的下拉列表中。  
+5.  用于 JD Edwards OneWorld 传输属性对话框中的 BizTalk 适配器的下拉列表中显示的关联应用程序。  
   
-## <a name="see-also"></a>另请参阅  
- [适配器中的安全](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)
+## <a name="see-also"></a>请参阅  
+ [适配器中的安全性](../core/security-in-biztalk-adapter-for-jd-edwards-oneworld.md)

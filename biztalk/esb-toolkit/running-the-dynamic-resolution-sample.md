@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 66a61262bab3c3abeb7a4eb7113f09d8d3f7e8db
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2d6d6aaf524af19672c86c5fe4a2a6d052bbfe2c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983126"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292549"
 ---
 # <a name="running-the-dynamic-resolution-sample"></a>运行动态解析示例
 若要执行用例之一，您将相应的 Microsoft BizTalk 绑定文件导入 GlobalBank.ESB BizTalk 应用程序并放入的示例输入文件夹的适当消息或调用示例 Web 服务。 动态解析示例支持两个主要方案：  

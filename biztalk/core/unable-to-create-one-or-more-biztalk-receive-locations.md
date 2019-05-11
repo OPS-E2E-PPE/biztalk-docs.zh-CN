@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b0dfc81876cba51b4dad03a01c2feb935b4fc959
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 06f8fa39d5998b37e994cd599466eee123798292
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986398"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292807"
 ---
 # <a name="unable-to-create-one-or-more-biztalk-receive-locations"></a>无法创建一个或多个 BizTalk 接收位置
 ## <a name="details"></a>详细信息  
@@ -33,12 +33,12 @@ ms.locfileid: "36986398"
 |  消息正文   |              无法创建一个或多个 BizTalk 接收位置。               |
   
 ## <a name="explanation"></a>解释  
- 此错误表示 BizTalk WCF 发布向导创建宿主独立 WCF 适配器的接收位置时失败。  
+ 此错误表示 BizTalk WCF 发布向导无法创建接收位置承载独立的 WCF 适配器。  
   
 ## <a name="user-action"></a>用户操作  
- 确保已启动 BizTalk 实例。  
+ 请确保启动 BizTalk 实例。  
   
- 有关创建接收位置的其他信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 文档中的以下资源：  
+ 有关其他信息创建接收位置，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]文档：  
   
 -   [通过独立 WCF 接收适配器发布 WCF 服务](../core/publishing-wcf-services-with-the-isolated-wcf-receive-adapters.md)  
   
@@ -48,4 +48,4 @@ ms.locfileid: "36986398"
   
 -   [如何配置 Wcf-customisolated 接收位置](../core/how-to-configure-a-wcf-customisolated-receive-location.md)  
   
--   [演练：通过 WCF-BasicHttp 适配器发布 WCF 服务](../core/walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter.md)
+-   [演练：使用 Wcf-basichttp 适配器发布 WCF 服务](../core/walkthrough-publishing-wcf-services-with-the-wcf-basichttp-adapter.md)

@@ -18,12 +18,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 45d541138d566eb6791385cdb23413187d2e68ba
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e640a1c1630a024ca3d39915fb6a75cfd12d6eaf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971126"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378648"
 ---
 # <a name="biztalk-server-security-features"></a>BizTalk Server 安全功能
 通过使用财务服务应用程序和集成解决方案的开发[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]都[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]由本机保护的应用程序和是否[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]安全功能。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 应用程序通常由构成的消息传送功能 (消息处理、 转换、 路由) 和工作流自动化 （业务流程自动化、 业务规则和逻辑求值）。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 提供常规消息传送和工作流自动化安全性。 [!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)] 提供特定于保护最终用户消息项、 修复、 批准和提交的其他安全功能。 有关详细信息[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]-特定的安全，请参阅[A4SWIFT 安全功能，用于消息修复和新提交](../../adapters-and-accelerators/accelerator-swift/a4swift-security-features-for-message-repair-and-new-submission.md)。  

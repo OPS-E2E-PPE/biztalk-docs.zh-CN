@@ -13,18 +13,18 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b632f494766974079ec13dd0803ae776c96adfe2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9445614fd0048056a139a8c9768820b216a0290a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997878"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65267922"
 ---
 # <a name="glossary"></a>词汇表
 Microsoft BizTalk Accelerator for HL7 使用以下术语和定义。
 
-## <a name="a"></a>仅当辅助副本配置为使用手动故障转移模式，并且至少一个辅助副本当前与主要副本同步时，    
- **项目**    
+## <a name="a"></a>A    
+ **artifact**    
  构成 HL7 V3.0 选票的项目是导致发现、 分析和设计活动导致创建消息规范的可交付结果。  
   
  HL7 V3.0 标准内组成文档的组件是项目。 这包括情节提要、 应用程序角色、 触发事件、 域的消息信息模型规范 (D MIMs)、 优化的消息信息模型规范 (R MIMs)、 层次结构的消息说明 specificatins(HMDs)、 消息类型和交互。  
@@ -38,13 +38,13 @@ Microsoft BizTalk Accelerator for HL7 使用以下术语和定义。
  数据元素 （数据元素可以重复执行中的对象视图的个别事件的时间数） 或分层消息说明 （最小值和最大次数的消息元素） 中的列的属性。 请参阅层次结构的消息说明。  
   
 ## <a name="d"></a>D   
- **域**    
+ **domain**    
  1. 问题或使用者需要解决的一组 HL7 消息或系统 （"应用程序域"）。 美国卫生保健感兴趣的特定区域。 
  2. 可能的值集的数据类型、 属性或数据类型的组件。 请参阅词汇域。 
  3. HL7，如药房，实验室，患者管理中一个感兴趣组。  
   
 ## <a name="e"></a>E 
- **事件**    
+ **event**    
  1. 值得注意的状态更改的对象将导致激发因素。 调用对象的行为信号。 请参阅触发器事件。 
  2. 心情词汇域值。  
   
@@ -80,7 +80,7 @@ Microsoft BizTalk Accelerator for HL7 使用以下术语和定义。
  指定在分层消息说明 (HMD) 组织的消息元素。 每种消息类型的交互模型中的一个或多个交互的一部分传递。 消息类型实际上构成了一组用于构造给定一组特定的实例数据的消息的规则。 它还定义用于分析一条消息，还原实例数据的规则。 消息类型无关的实现技术规范，因此，如果使用相同的消息类型和不同的实现技术规范发送相同的数据，可以从另一个转译的消息类型。  
 
 ## <a name="p"></a>P  
- **属性**    
+ **property**    
  任何属性、 关联、 方法或类或对象定义的状态模型。 在 HMD 状态的类、 属性或关联的角色名称作为其名称的列将出现在引用信息模型 (RIM)。  
 
 ## <a name="r"></a>R  
@@ -91,7 +91,7 @@ Microsoft BizTalk Accelerator for HL7 使用以下术语和定义。
  表示一组消息的要求信息结构。 可能包含 RIM 类从克隆的其他类的边缘约束的子集。 包含支持一个或多个层次结构消息说明 (HMDs) 所需的那些类、 属性、 关联和数据类型。 可以为 R MIM 中的类通过特定路径显示一条消息。  
 
 ## <a name="s"></a>S  
- **方案**    
+ **scenario**    
  在统一建模语言 (UML)，"通过单一的用例，来执行的单个路径"。 定义为一系列交互在医疗保健相关事件的语句。 方案提供了一组交互建模委员会需要在域中，通常会出现。 通常情况下，构造序列图以显示组的单个方案的交互。 每个方案显示为交互模型的子集。  
   
  **schema**    

@@ -14,25 +14,25 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f995d16d2ef4d45f734058887469863ecabd624
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e2d504489740976fda5bcff37c41f792ec95b3e1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970598"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65335055"
 ---
-# <a name="how-to-remove-a-reference-to-another-application"></a>如何删除对另一应用程序的引用
-本主题介绍如何使用 BizTalk Server 管理控制台从一个应用程序删除对另一应用程序的引用。 如果不再需要在当前应用程序中使用在同一 BizTalk 组中的另一应用程序中存在的项目，就要删除引用。 有关添加引用的详细信息，请参阅[如何添加对另一个应用程序的引用](../core/how-to-add-a-reference-to-another-application.md)。  
+# <a name="how-to-remove-a-reference-to-another-application"></a>如何删除对另一个应用程序的引用
+本主题介绍如何使用 BizTalk Server 管理控制台从一个应用程序到另一个应用程序中删除的引用。 当不再需要在同一 BizTalk 组中的另一个应用程序中存在的当前应用程序中使用项目时删除引用。 有关添加引用的详细信息，请参阅[如何添加对另一个应用程序的引用](../core/how-to-add-a-reference-to-another-application.md)。  
   
- 如果当前应用程序中的项目仍然使用引用应用程序中的项目，删除引用的操作将失败。  
+ 如果当前应用程序中的项目仍在引用的应用程序中使用项目，删除引用的操作将失败。  
   
 > [!CAUTION]
->  BizTalk Server 中的每个应用程序都自动包含对 BizTalk.System 应用程序的引用。 这是因为 BizTalk.System 包含的项目会被每一个 BizTalk 应用程序使用。 绝不能删除对 BizTalk.System 应用程序的引用。 如果删除了，则应用程序无法正常运行。  
+>  在 BizTalk Server 中的每个应用程序会自动包含对 BizTalk.System 应用程序的引用。 这是因为 BizTalk.System 包含的项目使用的每个 BizTalk 应用程序。 您应永远不会删除对 BizTalk.System 应用程序的引用。 如果这样做，你的应用程序可能无法正常运行。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  若要执行本主题中的过程，必须是 BizTalk Server Administrators 组的成员的帐户登录。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
   
-### <a name="to-remove-a-reference-to-another-application"></a>删除对另一应用程序的引用  
+### <a name="to-remove-a-reference-to-another-application"></a>若要删除对另一个应用程序的引用  
   
 1. 单击**启动**，依次指向**所有程序**，指向[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   

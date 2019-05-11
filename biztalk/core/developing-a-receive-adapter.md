@@ -1,5 +1,5 @@
 ---
-title: 开发接收适配器 |Microsoft 文档
+title: 开发接收适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,26 +12,26 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8be86000a154da7b3087d34e92f61da964065ed
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f093b56569f3e61196921812df905d72f368b035
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238461"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65351504"
 ---
 # <a name="developing-a-receive-adapter"></a>开发接收适配器
-本部分介绍在接收适配器中发生的对象交互。 您可以使用此信息在创建接收适配器时指导自定义适配器开发，或了解本地适配器是如何工作的。  
+本部分介绍了该对象接收适配器中发生的交互。 若要创建接收适配器时指导自定义适配器开发，或若要了解有关本地适配器的工作原理，可以使用此信息。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [交换模式接收适配器](../core/exchange-patterns-for-receive-adapters.md)  
+-   [接收适配器的交换模式](../core/exchange-patterns-for-receive-adapters.md)  
   
 -   [实例化和初始化接收适配器](../core/instantiating-and-initializing-a-receive-adapter.md)  
   
 -   [接收适配器操作](../core/receive-adapter-operations.md)  
   
--   [批处理消息接收处理](../core/batching-messages-for-receive-processing.md)  
+-   [为接收处理批处理消息](../core/batching-messages-for-receive-processing.md)  
   
--   [接口接收适配器](../core/interfaces-for-receive-adapters.md)  
+-   [接收适配器的接口](../core/interfaces-for-receive-adapters.md)  
   
--   [对 SSO 支持接收适配器](../core/sso-support-for-receive-adapters.md)
+-   [接收适配器的 SSO 支持](../core/sso-support-for-receive-adapters.md)

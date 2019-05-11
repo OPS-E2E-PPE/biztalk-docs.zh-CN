@@ -13,21 +13,21 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b6ab7cefe79d59927b481bf20d8b0961bf296595
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 05a6593d13e2b7afb249f7349b3c702ad70691d2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009470"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377557"
 ---
 # <a name="glossary"></a>词汇表
 Microsoft BizTalk Accelerator for SWIFT 使用以下术语表术语和定义。  
   
-## <a name="a"></a>仅当辅助副本配置为使用手动故障转移模式，并且至少一个辅助副本当前与主要副本同步时，  
- **组装器**  
+## <a name="a"></a>A  
+ **assembler**  
  Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]出站管道处理的组装阶段调用的发送管道组件。 组装器通常执行序列化到某些平面文件格式从 XML 出站消息的作业。  
   
- **程序集**  
+ **assembly**  
  Microsoft 的主要构建基块[!INCLUDE[btsDotNetFramework](../../includes/btsdotnetframework-md.md)]应用程序。 它是重复使用、 版本控制、 安全性和部署的基本单位。 它是显示给程序员来说，单个动态链接库 (DLL) 或可执行文件 (EXE) 文件的集合。  
   
  **程序集缓存**  
@@ -38,17 +38,17 @@ Microsoft BizTalk Accelerator for SWIFT 使用以下术语表术语和定义。
  用于标识的金融机构定义的 SWIFT 代码。  
   
  **业务规则编辑器工具**  
- 用于编写策略的图形用户界面工具。  
+ 用来编写策略的图形用户界面工具。  
   
  **业务规则引擎 (BRE)**  
- 根据事实评估规则并根据评估结果启动操作的运行时推理引擎。  
+ 根据评估结果所基于的事实和启动操作评估规则运行时推理引擎。  
   
 ## <a name="c"></a>C  
  **条件规则**  
  一个规则，指定在 SWIFT 消息类型的字段之间的关系。 SWIFT 标准版本指南中定义条件规则。  
   
 ## <a name="d"></a>D  
- **拆装器**  
+ **disassembler**  
  一个[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]接收管道组件中处理入站的管道的拆装阶段调用。 拆装器通常会为 XML 分析来自某些平面文件格式的入站的消息的作业。  
   
 ## <a name="e"></a>E  
@@ -74,12 +74,12 @@ Microsoft BizTalk Accelerator for SWIFT 使用以下术语表术语和定义。
  超文本传输协议 (HTTP) 使用安全套接字层 (SSL) 加密协议。  
   
 ## <a name="i"></a>I  
- **交换**  
+ **interchange**  
  完整消息的较小的消息部分或块组成。 例如，SWIFT 交换中[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]指的是 SWIFT 标头部分串联 （SWIFT 的块 1、 2、 3） 后, 跟 SWIFT 正文部分 （SWIFT 阻止 4），跟 SWIFT 尾部部分 （SWIFT 阻止 5）。  
   
 ## <a name="m"></a>M  
- **映射**  
- 定义一种规范的记录和字段与另一种规范的记录和字段之间对应关系的 XML 文件。 映射包含可扩展样式表语言 (XSL) 样式表[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]用于执行在映射中所描述的转换。 在 BizTalk 映射器创建映射。  
+ **map**  
+ XML 文件的另一个规范中定义的记录和一个规范中的字段和记录和字段之间的对应关系。 映射包含可扩展样式表语言 (XSL) 样式表[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]用于执行在映射中所描述的转换。 在 BizTalk 映射器创建映射。  
   
  **消息类型**  
  在 SWIFT 标准的版本指南，例如"接收针对付款"中定义的消息格式之一。 由"MT"后跟三位代码通常表示消息类型。  
@@ -88,8 +88,8 @@ Microsoft BizTalk Accelerator for SWIFT 使用以下术语表术语和定义。
  **付款事务标识符 (PTI)**  
  附加到付款相关银行消息源自银行，例如付款启动消息和信用额度通知启动客户提供一个唯一事务标识符。  
   
- **策略**  
- 版本化的业务规则集合。  
+ **policy**  
+ 版本控制的业务规则的集合。  
   
  **PTI**  
  付款事务标识符。  
@@ -99,7 +99,7 @@ Microsoft BizTalk Accelerator for SWIFT 使用以下术语表术语和定义。
  条件和操作对。  
   
  **规则集**  
- 相似规则的逻辑分组。 可将规则集看作规则引擎的一种分组/分区机制。  
+ 类似的规则的逻辑分组。 此可查看作为规则引擎的一种分组/分区机制。  
   
 ## <a name="s"></a>S  
  **schema**  
@@ -108,8 +108,8 @@ Microsoft BizTalk Accelerator for SWIFT 使用以下术语表术语和定义。
  **全球范围内 Interbank 金融电信 (SWIFT) 协会**  
  全球范围内 Interbank 金融电信协会。 提供消息传递到银行、 经纪商、 投资经理和市场中付款、 财务、 证券和贸易的基础结构服务组织。 SWIFT 创建共享的全球数据处理和通信链接和国际金融交易的通用语言。  
   
- **规范**  
- 特定于 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 的 XML 架构。 规范创建在 BizTalk 编辑器中，并且可以根据行业标准 （如 SWIFT，EDIFACT，x12 和 XML) 或平面文件 （带分隔符、 位置，或分隔和位置）。 BizTalk 映射器使用规范作为源规范和目标规范，打开创建映射。  
+ **specification**  
+ 一个[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]-特定 XML 架构。 规范创建在 BizTalk 编辑器中，并且可以根据行业标准 （如 SWIFT，EDIFACT，x12 和 XML) 或平面文件 （带分隔符、 位置，或分隔和位置）。 BizTalk 映射器使用规范作为源规范和目标规范，打开创建映射。  
   
  **强名称**  
  包含的程序集的标识的名称 — 其简单文本名称、 版本号和区域性信息 （如果提供） — 通过公钥和针对该程序集生成的数字签名加强。 由于程序集清单包含构成程序集实现的所有文件的文件哈希值，就足以通过只包含程序集清单的程序集的一个文件生成数字签名。 具有相同强名称程序集都将是完全相同。  

@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 为 Contoso 3A2 价格和可用性查询响应方案中使用 BizTalk 资源管理器创建端口 |Microsoft 文档
+title: 第 2 步：为 Contoso 3A2 价格与可用性查询响应方案中使用 BizTalk 浏览器创建端口 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,14 +14,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 64101a31b1d1ea9c7af00471c5d764a1d8cfe598
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 44291057590bbde758de91a4416499cbfe06d888
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22210141"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281202"
 ---
-# <a name="step-2-creating-ports-for-the-contoso-3a2-price-and-availability-queryresponse-scenario"></a>步骤 2： 为 Contoso 3A2 价格和可用性查询/响应方案创建端口
+# <a name="step-2-creating-ports-for-the-contoso-3a2-price-and-availability-queryresponse-scenario"></a>第 2 步：为 Contoso 3A2 价格与可用性查询/响应方案创建端口
 在此步骤中，你可以创建使用 BizTalk Server 提供的 SQL 适配器的发送端口。 该 SQL 端口将用于向 Contoso ERP 系统发送 3A2 价格与可用性响应，及从 Contoso ERP 系统接收 3A2 价格与可用性响应。  
   
 ### <a name="to-configure-a-send-port-using-the-sql-adapter"></a>使用 SQL 适配器配置发送端口  

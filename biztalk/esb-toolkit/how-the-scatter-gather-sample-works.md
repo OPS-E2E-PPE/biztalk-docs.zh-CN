@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c675f2c6a9f558be597f7765ec936daf0a5a2dde
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 27b52b9ca48b381cf8032c5b33600ce349ce054c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001094"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279047"
 ---
 # <a name="how-the-scatter-gather-sample-works"></a>散播-聚集示例工作原理
 示例应用程序生成一组 SOAP 标头包含从散播-聚集路线文件加载路线、 从磁盘加载指定的消息文件、 路线标头附加到消息，并将其提交到 ESB 接入点为通过正在处理。 如果路线时都生成响应，该应用程序收集这和在应用程序窗口中显示。  

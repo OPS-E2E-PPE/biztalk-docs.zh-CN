@@ -13,46 +13,46 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dbf7e57d163b5729685c4103a8a3e5da78e37355
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4aa96e84003b27f9e65aa282cf157314ec5f852f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979686"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383340"
 ---
 # <a name="test-a-biztalk-web-service"></a>测试 BizTalk Web 服务
 
 ## <a name="overview"></a>概述
-您无需编写 Web 客户端应用程序即可测试已发布的 Web Services。 可以用 Web 浏览器（如 Internet Explorer）测试已发布的 Web Services。 尽管可以用 Web 浏览器访问任意已发布的 Web Services，但只能用含有简单类型参数的 Web 方法来测试 Web Services。 若要在 Web 浏览器中测试您的 Web 方法，在接收端口中使用的请求和响应消息应用消息部分只能是简单类型，如**System.String**或**System.Int32**。 如果有消息部分将架构用作消息类型，则无法用浏览器来测试 Web 方法。  
+而无需编写 Web 客户端应用程序，可以测试已发布的 Web 服务。 可以使用 Web 浏览器中的，如 Internet Explorer 测试已发布的 Web 服务。 虽然可以访问任何已发布的 Web 服务使用 Web 浏览器，你可以仅用含有简单类型参数的 Web 方法测试 Web 服务。 若要在 Web 浏览器中测试您的 Web 方法，在接收端口中使用的请求和响应消息应用消息部分只能是简单类型，如**System.String**或**System.Int32**。 如果有消息部分使用架构作为消息类型，不能测试的浏览器的 Web 方法。  
   
- 如果想用 HTTP-GET 或 HTTP-POST 来测试已发布的 Web Services，则必须配置用于 SOAP 适配器的 BizTalk 接收位置，并修改用于已发布的 Web Services 的 Web.config 文件。  
+ 如果你想要测试已发布的 Web 服务使用 HTTP GET 或 HTTP POST，则必须配置 BizTalk SOAP 适配器的接收位置和修改已发布的 Web 服务的 Web.config 文件。  
   
  **修改接收位置**  
   
- SOAP 适配器配置接收位置时，通常会通过提供虚拟目录和 Web Services .asmx 文件名来设置接收位置的 URI：  
+ 当 SOAP 适配器配置接收位置时，SOAP 适配器通常情况下的虚拟目录和 Web 服务.asmx 文件名称，从而设置接收位置的 URI:  
   
 ```  
 /PurchaseOrder/POOrchestration.asmx  
 ```  
   
- 这可以使 SOAP 适配器使用 HTTP-SOAP 协议来接收 Web Services 请求。 要配置接收位置以使用 HTTP-GET 或 HTTP-POST 协议，必须将方法名称附加到 URI 上：  
+ 这样，SOAP 适配器来接收 Web 服务请求使用 HTTP SOAP 协议。 若要配置接收位置以使用 HTTP-GET 或 HTTP-POST 协议，必须将方法名称追加到 URI:  
   
 ```  
 /PurchaseOrder/POOrchestration.asmx/Operation_1  
 ```  
   
- 方法名称与业务流程中的端口操作名称相同。  
+ 方法名称是在业务流程中的端口操作名称相同。  
   
  **修改 Web.config 文件**  
   
- 默认情况下，向导将 Web Services 配置为使用 HTTP-SOAP 协议。 HTTP-GET 和 HTTP-POST 均被显式禁用。 若要用 Web 浏览器来测试 Web Services，则必须启用 HTTP-GET。  
+ 默认情况下，向导将配置为使用 HTTP SOAP 协议的 Web 服务。 HTTP-GET 和 HTTP-POST 均被显式禁用。 若要测试的 Web 浏览器的 Web 服务，必须启用 HTTP GET。  
   
 ## <a name="update-the-webconfig"></a>更新 Web.config
   
-1. 打开已发布的 Web Services 的 Web.config 文件。  
+1. 打开已发布的 Web 服务的 Web.config 文件。  
   
    > [!NOTE]
-   >  可在为含有 Web Services 的 IIS 虚拟根目录所配置的目录中找到 Web.config 文件。  
+   >  可以在你配置的目录中找到 Web.config 文件，包含 Web 服务的 IIS 虚拟根。  
   
 2. 查找\<协议\>部分：  
   
@@ -77,19 +77,19 @@ ms.locfileid: "36979686"
   
   |参数|ReplTest1|  
   |---------------|-----------|  
-  |***servername***|已部署 XML Web Services 的服务器的名称。|  
-  |***apppath***|虚拟目录和 Web 应用程序路径的名称。|  
-  |***webservicename.asmx***|XML Web 服务的 .asmx 文件的名称。|  
+  |***servername***|部署 XML Web 服务的服务器的名称。|  
+  |***Apppath***|虚拟目录和 Web 应用程序路径的名称。|  
+  |***webservicename.asmx***|XML Web 服务.asmx 文件的名称。|  
   
-  Web Services 的说明介绍了特定 Web Services 所支持的所有 Web Services 方法。 Web Services 的说明页含有每个可用 Web 方法的链接以及该 Web Services 的服务说明。  
+  Web 服务的说明介绍了特定的 Web 服务支持的所有 Web 服务方法。 Web 服务描述页包含每个可用的 Web 方法和 Web 服务的服务说明的链接。  
   
 #### <a name="test-a-web-service-with-internet-explorer-using-http-get"></a>通过 Internet Explorer 用 HTTP-GET 测试 Web 服务  
   
-1.  访问 Web Services 的说明页后，请单击 Web Services 说明页中列出的一项 Web 方法。  
+1.  在访问 Web 服务描述页之后, 单击 Web 服务说明页中列出的 Web 方法之一。  
   
 2.  键入对于 Web 方法中，所需的参数，然后单击**Invoke**。  
   
-3.  服务器在浏览器中返回一条 XML 响应。 如果 Web Services 的返回数据类型为双精度浮点数，则结果可能会类似如下：  
+3.  服务器将在浏览器中返回 XML 响应。 如果 Web 服务的返回数据类型为双精度浮点数，结果可能类似以下形式：  
   
     ```  
     <?xml version="1.0" ?>  
@@ -102,19 +102,19 @@ ms.locfileid: "36979686"
   
     |参数|ReplTest1|  
     |---------------|-----------|  
-    |***servername***|已部署 XML Web Services 的服务器的名称。|  
-    |***apppath***|虚拟目录和 Web 应用程序路径的名称。|  
-    |***webservicename.asmx***|XML Web 服务的 .asmx 文件的名称。|  
-    |***方法名称***|XML Web Services 公开的公共方法的名称。 如果保留为空，则 XML Web Services 的说明页就会出现，列出在 .asmx 文件中可用的每个公共方法。 （可选）|  
-    |***parameter***|方法所需要的任何参数的相应参数名称和值。 如果保留为空，则 XML Web Services 的说明页就会出现，列出在 .asmx 文件中可用的每个公共方法。 （可选）|  
+    |***servername***|部署 XML Web 服务的服务器的名称。|  
+    |***Apppath***|虚拟目录和 Web 应用程序路径的名称。|  
+    |***webservicename.asmx***|XML Web 服务.asmx 文件的名称。|  
+    |***方法名称***|XML Web 服务公开一个公共方法的名称。 如果留空，则会显示 XML Web 服务的说明页，其中列出在.asmx 文件中的每个公共方法。 （可选）|  
+    |***parameter***|适当的参数名称和任何所需的方法的参数的值。 如果留空，则会显示 XML Web 服务的说明页，其中列出在.asmx 文件中的每个公共方法。 （可选）|  
   
     > [!NOTE]
-    >  在本语法中，XML Web Services 方法名称区分大小写，但服务器、项目及 XML Web Services 名称都不区分。  
+    >  此语法中的 XML Web 服务方法名称区分大小写，但服务器、 项目和 XML Web 服务名称不是。  
   
-2.  按 Enter 键。 Web 浏览器显示一条来自服务器的 XML 响应。  
+2.  按 Enter 键。 Web 浏览器显示来自服务器的 XML 响应。  
   
     > [!NOTE]
-    >  也可以用 HTTP-POST 来调用 Web Services。 有关信息和有关从 Web 浏览器调用 XML Web 服务的示例，请参阅[从浏览器访问 XML Web Services](https://msdn.microsoft.com/library/45fez2a8.aspx)。  
+    >  此外可以使用 HTTP POST 来调用 Web 服务。 有关信息和有关从 Web 浏览器调用 XML Web 服务的示例，请参阅[从浏览器访问 XML Web Services](https://msdn.microsoft.com/library/45fez2a8.aspx)。  
   
 ## <a name="see-also"></a>请参阅  
  [测试已发布的 Web 服务](../core/testing-published-web-services.md)

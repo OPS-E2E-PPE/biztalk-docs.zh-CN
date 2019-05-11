@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a36a41e5bb60169632072445ff4685e1df5dbce9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f1c9a527b932e2ed532d20840f522328da9d4e78
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979590"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282992"
 ---
 # <a name="message-submission-aspx-sample"></a>消息提交 ASPX 示例
 本主题提供可用于提交给专用流程的服务内容的示例.aspx 代码。 而不是业务 (LOB) 应用程序，可以使用此.aspx 代码。  

@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 启用批处理业务流程 |Microsoft Docs
+title: 第 2 步：启用批处理业务流程 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4b44dd71c44f2510b6ccd80a731dd21739ed7055
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f0afe72cdf0ea747e5236f02577de16acb685061
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996166"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288615"
 ---
-# <a name="step-2-enable-the-batch-orchestration"></a>步骤 2： 启用批处理业务流程
+# <a name="step-2-enable-the-batch-orchestration"></a>第 2 步：启用批处理业务流程
 批处理业务流程控制创建批处理过程。 它维护要包含在批处理中的所有消息的引用、 控制出站批事务、 生成批消息，将路由传出批，和处理传入确认批。 您需要创建批处理过程，以便批处理业务流程登记。  
   
 ### <a name="to-enable-the-batch-orchestration"></a>若要启用批处理业务流程  
@@ -32,4 +32,4 @@ ms.locfileid: "36996166"
   
 4. 在 BizTalk 管理控制台中，右键单击**BatchOrchestration.Orchestration_1**，然后单击**登记**。  
   
-   请继续执行[步骤 3： 创建和配置目标参与方](../../adapters-and-accelerators/accelerator-hl7/step-3-create-and-configure-a-destination-party.md)。
+   请继续执行[步骤 3:创建并配置目标参与方](../../adapters-and-accelerators/accelerator-hl7/step-3-create-and-configure-a-destination-party.md)。

@@ -1,5 +1,5 @@
 ---
-title: XML 消息的结构 |Microsoft 文档
+title: XML 消息的结构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f35e48e90ffb089342c268b7b6a45069e2f9869
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: d4e7501165dca01c81ad43a0e79184f7e5614ae9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278477"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65295813"
 ---
 # <a name="structure-of-an-xml-message"></a>XML 消息的结构
 在 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 环境中，XML 实例消息是一个有效的 XML 标记层次结构，这些标记共同构成零个或多个 XML 信封和一个或多个 XML 文档。 例如，以下 XML 实例消息由包含单个 XML 文档（以粗体显示）的单个 XML 信封（使用常规字体）组成。  
@@ -38,6 +38,6 @@ ms.locfileid: "22278477"
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [XML 消息包络线](../core/xml-message-envelopes.md)  
+-   [XML 消息信封](../core/xml-message-envelopes.md)  
   
--   [嵌套的 XML 消息包络线](../core/nested-xml-message-envelopes.md)
+-   [嵌套 XML 消息信封](../core/nested-xml-message-envelopes.md)

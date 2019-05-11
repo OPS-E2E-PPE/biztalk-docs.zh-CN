@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 025826673538b0272c3ce79d6e748c559b3eefe7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4a1c8f2d988068f5a49a5d2f69064c4d9a46a207
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984454"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338993"
 ---
 # <a name="create-references-to-another-node-or-type"></a>创建对其他节点或类型的引用
 可以使用全局节点来创建可重用的数据类型-结构片段 —，您可以使用整个架构任何该结构是适当位置。 只能使用节点的直接子级**架构**节点来创建全局类型。  

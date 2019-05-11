@@ -15,24 +15,24 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 96bdc2a681cf3632f6393a3fef05ec275f60f82f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 96dd45cb6a4f973b98a0a7a4a0c32c2d8452c0a0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006078"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283655"
 ---
 # <a name="importing-certificates"></a>导入证书
-本节介绍如何导入证书，包括从何处导入证书、将证书存储在何处以及使用何工具来导入证书。  
+本部分介绍如何导入证书，包括从其导入的位置、 它们的存储的位置和使用导入它们何种工具。  
   
- 有两种方法可导入证书。 可以使用 CertWizard 工具或证书管理单元中的 Microsoft 管理控制台 (MMC)。  
+ 有两种方法来导入证书。 可以使用 CertWizard 工具或证书管理单元中的 Microsoft 管理控制台 (MMC)。  
   
-- CertWizard 为分步式命令行工具，基于开关设置来配置证书的使用。 此工具现已推出 Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK 文件夹。  
+- CertWizard 为分步式命令行，用于配置基于开关设置的证书的使用。 此工具现已推出 Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] SDK 文件夹。  
   
-- 使用 MMC 中的证书管理单元，可将证书导入到证书存储区中。 但是，该手动过程需要您单独配置证书的使用。  
+- 证书管理单元在 MMC 中，您可导入证书的证书存储中。 但是，此手动过程需要您单独配置证书的使用。  
   
   > [!IMPORTANT]
-  >  要在 MMC 中导入或使用私用证书，已登录的用户必须具有 BizTalk 主机的用户标识。 如果不是，您必须运行**runas**与用户开关和主机服务帐户，以启动证书 MMC，例如，命令**runas /user: hostsvc mmc**。 通过运行此命令，您可获得 BizTalk 主机（BizTalkServerApplication 和 BizTalkServerIsolatedHost）的用户标识。  
+  >  若要导入或使用私用证书 MMC 中，登录的用户必须具有 BizTalk 主机的用户标识。 如果不是，您必须运行**runas**与用户开关和主机服务帐户，以启动证书 MMC，例如，命令**runas /user: hostsvc mmc**。 通过运行以下命令，您假定 BizTalk 主机 （BizTalkServerApplication 和 BizTalkServerIsolatedHost） 的用户标识。  
   
 ## <a name="in-this-section"></a>本节内容  
   

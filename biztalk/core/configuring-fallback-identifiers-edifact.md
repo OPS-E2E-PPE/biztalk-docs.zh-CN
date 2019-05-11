@@ -12,20 +12,20 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f7db7e20f8ccb4db8da53483e7c33285f4b75afb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8b3e52be4985b1c28c8214b6db558c14f9ffaa7b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991982"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355660"
 ---
 # <a name="configuring-fallback-identifiers-edifact"></a>配置回退标识符 (EDIFACT)
-在后备协议中，必须设置收件人引用密码，以确认交换不会被未经授权的收件人接收。  
+在后备协议中，必须设置收件人引用密码，以确认交换不被未经授权的收件人接收。  
   
-## <a name="prerequisites"></a>必要條件  
- 必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组或 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators 组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 必须以成员的身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理员或[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]B2B Operators 组。  
   
-### <a name="to-set-the-sender-recipient-recipient-password"></a>设置发件人、收件人、收件人密码  
+### <a name="to-set-the-sender-recipient-recipient-password"></a>若要设置发件人、 收件人、 收件人密码  
   
 1. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，右键单击**方**节点，，然后单击**EDIFACT 后备设置**。  
   
@@ -35,9 +35,9 @@ ms.locfileid: "36991982"
   
    1.  有关**标识 (UNB2.1)**，输入一个最小值和最多为 35 的字母数字值。 这是必填字段。  
   
-   2.  有关**代码限定符 (UNB2.2)**，从下拉列表中选择一个值。 此字段为可选字段。  
+   2.  有关**代码限定符 (UNB2.2)**，从下拉列表中选择一个值。 这是一个可选字段。  
   
-   3.  有关**反向路由地址 (UNB2.3)**，输入包含最少一个字符，最多为 14 个字符的字母数字值。 此字段为可选字段。  
+   3.  有关**反向路由地址 (UNB2.3)**，输入包含最少一个字符，最多为 14 个字符的字母数字值。 这是一个可选字段。  
   
    4.  有关**应用程序引用 ID (UNB7)**，输入包含最少一个字符，最多为 6 个字符的字母数字值。 这是必填字段。  
   
@@ -45,17 +45,17 @@ ms.locfileid: "36991982"
   
    1.  有关**标识 (UNB3.1)**，输入一个最小值和最多为 35 的字母数字值。 这是必填字段。  
   
-   2.  有关**代码限定符 (UNB3.2)**，从下拉列表中选择一个值。 此字段为可选字段。  
+   2.  有关**代码限定符 (UNB3.2)**，从下拉列表中选择一个值。 这是一个可选字段。  
   
-   3.  有关**反向路由地址 (UNB3.3)**，输入包含最少一个字符，最多为 14 个字符的字母数字值。 此字段为可选字段。  
+   3.  有关**反向路由地址 (UNB3.3)**，输入包含最少一个字符，最多为 14 个字符的字母数字值。 这是一个可选字段。  
   
-   4.  如果需要，在**收件人引用密码 (UNB6)** 部分中，输入收件人引用密码的值。 有关**值 (UNB6.1)**，输入一个最小值和最多 14 个字母数字值。 有关**限定符 (UNB6.2)**，输入包含最少一个字符，最多两个字符的字母数字值。 这些是可选字段。 如果这些值与所接收交换中的 UNB6.1 和 UNB6.2 字段不匹配，BizTalk Server 将挂起该交换。  
+   4.  如果需要，在**收件人引用密码 (UNB6)** 部分中，输入收件人引用密码的值。 有关**值 (UNB6.1)**，输入一个最小值和最多 14 个字母数字值。 有关**限定符 (UNB6.2)**，输入包含最少一个字符，最多两个字符的字母数字值。 这些是可选字段。 如果这些值与收到的交换中的 UNB6.1 和 UNB6.2 字段不匹配，BizTalk Server 将挂起该交换。  
   
        > [!NOTE]
        >  组合**UNB6.1**并**UNB6.2**必须是唯一的。  
   
        > [!NOTE]
-       >  如果同时为 UNB6.1 和 UNB6.2 输入值，应用更改，然后取消 UNB6.1，则 UNB6.2 中的值也将被删除，而且该字段将被禁用。  
+       >  如果为 UNB6.1 和 UNB6.2 输入值，应用所做的更改，然后取消 unb6.1，UNB6.2 中的值也将被删除和字段将被禁用。  
   
 5. 单击**Apply**以接受更改，然后才能继续进行配置，或单击**确定**以验证所做的更改，然后关闭对话框。  
   

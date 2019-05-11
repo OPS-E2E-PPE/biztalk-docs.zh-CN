@@ -12,21 +12,21 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f2ddd2a3fa4b8bb2f97e25809121fa11b1f473f1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 012ae1302571355e56adda51714bd9206cf51fb0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999638"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65382883"
 ---
 # <a name="http-send-adapter"></a>HTTP 发送适配器
-HTTP 发送适配器用于从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 获取消息，并将其发送到 HTTP POST 请求的目标 URL。 HTTP 发送适配器获取消息内容从 BizTalk 消息对象正文部分。 HTTP 发送适配器将忽略 BizTalk 消息对象的所有其他部分。  
+HTTP 发送适配器获取来自消息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]并将它们发送到 HTTP POST 请求的目标 URL。 HTTP 发送适配器获取消息内容从 BizTalk 消息对象正文部分。 HTTP 发送适配器将忽略 BizTalk 消息对象的所有其他部分。  
   
  该适配器将消息发送到目标 URL 和 BizTalk 消息引擎接收 HTTP 成功状态代码后，HTTP 发送适配器从 MessageBox 数据库中删除该消息。  
   
  HTTP 消息的重定向支持，并且可以配置发送端口上。  
   
- [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 用作 HTTP 发送适配器的宿主，将其视为本地 BizTalk 应用程序。 它支持单向发送的消息以及要求-响应传输。 HTTP 发送适配器的发送位置是一个通过发送端口配置的独特 URL。 此唯一 URL 可以包括查询字符串追加到基 URL。  
+ [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 主机 HTTP 发送适配器作为本机 BizTalk 应用程序。 它支持单向发送的消息以及要求-响应传输。 HTTP 发送适配器的发送位置是一个通过发送端口配置的独特 URL。 此唯一 URL 可以包括查询字符串追加到基 URL。  
   
 ## <a name="batching-support-for-the-http-send-adapter"></a>HTTP 发送适配器的批处理支持  
  HTTP 发送适配器不支持批处理操作。  
@@ -52,7 +52,7 @@ HTTP 发送适配器用于从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/b
 ## <a name="client-certificates-for-the-http-send-adapter"></a>HTTP 发送适配器的客户端证书  
  HTTP 发送适配器可以建立与接受或不需要客户端证书的服务器的安全连接。 如果指定客户端证书，则 HTTP 发送适配器将连接与服务器的要求或接受客户端证书时使用该证书。 如果未指定客户端证书和目标服务器需要客户端证书，HTTP 发送适配器无法发送消息，并按照标准的重试逻辑。  
   
- HTTP 发送适配器使用的客户端证书位于运行 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 进程的帐户的个人存储中。 证书的指纹来指定。 如果 HTTP 发送适配器无法加载证书出于任何原因，已发送的消息被挂起。  
+ HTTP 发送适配器使用的客户端证书所用的帐户的个人存储中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]进程正在运行。 证书的指纹来指定。 如果 HTTP 发送适配器无法加载证书出于任何原因，已发送的消息被挂起。  
   
 ## <a name="single-sign-on-support-for-the-http-adapter"></a>HTTP 适配器的单一登录支持  
  用于 HTTP 接收位置或发送端口使用 BizTalk 管理控制台中，可以配置企业单一登录 (SSO)。 本主题介绍使用 HTTP 适配器的 SSO 工作原理。  
@@ -61,13 +61,13 @@ HTTP 发送适配器用于从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/b
   
  当由 Microsoft Internet 信息服务 (IIS) 从 Web 客户端收到的 HTTP 请求时，IIS 进行用户身份验证。 Internet 服务器应用程序编程接口 (ISAPI) 扩展将模拟的 Microsoft Windows 用户，然后调用 SSO 凭据存储区获取加密的票证。 此票证将被视为**SSOTicket**中消息的上下文属性。  
   
- 在直通方案中，BizTalk 消息引擎将把消息引入 MessageBox 数据库中。 当适配器从 MessageBox 数据库接收消息时，HTTP 适配器调用**ISSOTicket.RedeemTicket 方法**使用加密票证和要检索从后端凭据的应用程序名称SSO 存储区。 HTTP 适配器使用的外部凭据连接到后端系统并处理该请求。 有关关联应用程序的详细信息，请参阅[SSO 关联应用程序](../core/sso-affiliate-applications.md)。  
+ 在直通方案中，BizTalk 消息引擎将定向到 MessageBox 数据库的消息。 当适配器从 MessageBox 数据库接收消息时，HTTP 适配器调用**ISSOTicket.RedeemTicket 方法**使用加密票证和要检索从后端凭据的应用程序名称SSO 存储区。 HTTP 适配器使用的外部凭据连接到后端系统并处理该请求。 有关关联应用程序的详细信息，请参阅[SSO 关联应用程序](../core/sso-affiliate-applications.md)。  
   
  在方案中在业务流程调用该适配器，BizTalk 消息引擎将此消息发送到 MessageBox 数据库。 业务流程应确保同时**SSOTicket**上下文属性和**Microsoft.BizTalk.XLANGs.BTXEngine.OriginatorSID**是包含该票证在消息上下文属性维护。 当适配器从 MessageBox 数据库接收此消息时，适配器调用**RedeemTicket**使用加密票证以从 SSO 存储中检索后端凭据。 具体而言，设计计划的用户应将此属性复制到消息。  
   
  **HTTP 发送适配器的单一登录支持**  
   
- 如果启用 SSO，则当 HTTP 发送端口收到的消息**Secure**属性，它将调用 SSO 服务器以验证并兑换票证关联应用程序。 关联应用程序的管理应用程序、关联管理员或 SSO 管理员可调用 SSO 以兑换票证。 然后，SSO 将对票证进行解密，并获取后端凭据。 直通和业务流程方案是与 HTTP 发送端口相同。  
+ 如果启用 SSO，则当 HTTP 发送端口收到的消息**Secure**属性，它将调用 SSO 服务器以验证并兑换票证关联应用程序。 管理应用程序、 关联管理员或 SSO 关联应用程序的管理员可调用 SSO 以兑换票证。 然后，SSO 对票证进行解密，并获取后端凭据。 直通和业务流程方案是与 HTTP 发送端口相同。  
   
  默认情况下，为 HTTP 发送端口已禁用 SSO。 有关为 HTTP 发送端口启用 SSO 的详细信息，请参阅[配置 HTTP 发送端口](../core/configuring-an-http-send-port.md)。  
   
@@ -82,10 +82,10 @@ HTTP 发送适配器用于从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/b
   
     -   用于 HTTP 适配器运行在独立主机实例的登录凭据。 有关如何配置主机实例的登录凭据的信息，请参阅[如何修改主机实例属性](../core/how-to-modify-host-instance-properties.md)。  
   
--   HTTP 适配器将使用的独立主机必须配置为“受信任验证”。 有关如何将主机配置为受信任验证的信息，请参阅[如何修改主机属性](../core/how-to-modify-host-properties.md)。  
+-   使用 HTTP 适配器的独立主机必须配置为受信任的身份验证。 有关如何将主机配置为受信任验证的信息，请参阅[如何修改主机属性](../core/how-to-modify-host-properties.md)。  
   
 ## <a name="negative-acknowledgment-nack-messages-generated-for-failed-transmissions-by-the-http-or-soap-adapter"></a>对于失败的传输生成的 HTTP 或 SOAP 适配器的否定确认 (NACK) 消息  
- 当已成功传输一条消息时，BizTalk 消息引擎发布到 MessageBox 相关联的确认 (ACK) 消息，如果启用了送达通知。 同样，当 BizTalk 消息引擎挂起消息或业务流程引擎挂起业务流程时，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 也会向 MessageBox 发布一个关联的否定确认 (NACK) 消息。 NACK 消息包含上下文属性和消息正文部分组成的 SOAP 错误。 如果因 HTTP 或 SOAP 适配器的传输失败而生成的 NACK 消息，则 SOAP 错误将包含标头元素和来自目标 Web 服务器的响应的正文元素。 以下是 SOAP 错误而失败的 HTTP 传输生成的 NACK 中的示例：  
+ 当已成功传输一条消息时，BizTalk 消息引擎发布到 MessageBox 相关联的确认 (ACK) 消息，如果启用了送达通知。 同样，当 BizTalk 消息引擎挂起消息或业务流程引擎挂起业务流程[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将关联的否定确认 (NACK) 消息发布到 MessageBox。 NACK 消息包含上下文属性和消息正文部分组成的 SOAP 错误。 如果因 HTTP 或 SOAP 适配器的传输失败而生成的 NACK 消息，则 SOAP 错误将包含标头元素和来自目标 Web 服务器的响应的正文元素。 以下是 SOAP 错误而失败的 HTTP 传输生成的 NACK 中的示例：  
   
 ```  
 <SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/" SOAP:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">  
@@ -114,16 +114,16 @@ HTTP 发送适配器用于从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/b
 ```  
   
 > [!NOTE]
->  Headers 元素和 Body 元素限制在 48 KB 之内。 Headers 元素将舍入为不超出该限制的最接近完整形式的标头值对。 Body 元素将被截至 48 KB。  
+>  限制为 48 KB 的标头元素和 Body 元素。 标头元素是舍入为最接近完整的标头值对不超出该限制。 正文元素将被截至 48 KB。  
   
 > [!NOTE]
 >  如果没有匹配的订阅，则会放弃 NACK 和 ACK 消息。 BizTalk 消息引擎不会挂起 NACK 和 ACK 消息。  
   
- 若要订阅 NACK 消息，可执行以下操作之一：  
+ 若要订阅 NACK 消息，可以执行下列任一操作：  
   
-- 创建带有相应消息上下文属性筛选器的发送端口。 请参阅**消息上下文属性**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]有关系统消息上下文属性的列表，包括那些与消息确认相关。  
+- 使用相应的消息上下文属性的筛选器创建发送端口。 请参阅**消息上下文属性**[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]有关系统消息上下文属性的列表，包括那些与消息确认相关。  
   
-- 从标记为业务流程端口发送**送达通知 = 传输**。 如果业务流程端口标有**送达通知 = 传输**，业务流程将等待，直到收到 ACK 或 NACK 消息与已传输。 如果生成了 NACK，则会将其路由到业务流程，然后业务流程将引发 DeliveryFailureException。 DeliveryFailureException 是从 NACK 消息正文中包含的 SOAP 错误反序列化而来的。 若要从返回到业务流程的 SOAP 错误中检索异常消息字符串，请将 DeliveryFailureException 转换为 SoapException，然后访问“SOAP 详细信息”部分中的 InnerXml。 下面的代码示例演示了如何执行此操作：  
+- 从标记为业务流程端口发送**送达通知 = 传输**。 如果业务流程端口标有**送达通知 = 传输**，业务流程将等待，直到收到 ACK 或 NACK 消息与已传输。 如果生成了 NACK，然后它将路由到业务流程和业务流程将引发 DeliveryFailureException。 DeliveryFailureException 是从 NACK 消息正文中包含的 SOAP 错误反序列化。 若要检索从返回到业务流程的 SOAP 错误的异常消息字符串，将 DeliveryFailureException 转换为 SoapException，然后访问 InnerXml，从 SOAP 详细信息部分。 下面的代码示例演示如何执行此操作：  
   
   ```  
   // Cast the DeliveryFailureException to a SoapException…  
@@ -134,7 +134,7 @@ HTTP 发送适配器用于从 [!INCLUDE[btsBizTalkServerNoVersion](../includes/b
   
   ```  
   
-   上面的代码示例返回的 XML 片断类似于以下形式：  
+   上面的代码示例将返回类似于以下 XML 片段：  
   
   ```  
   <ns0:NACK Type="NACK" xmlns:ns0="http://schema.microsoft.com/BizTalk/2003/NACKMessage.xsd">  

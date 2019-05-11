@@ -18,15 +18,15 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 57df4978f2b133794efd8fbdc99819bcedf144cb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9f330e6a4d3dd2525e79ad70b2fcad73217c70c2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015902"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338931"
 ---
 # <a name="how-to-define-bam-aggregations"></a>如何定义 BAM 聚合
-BAM 支持以下两种类型的数据聚合：  
+BAM 支持两种类型的数据聚合：  
   
 - 联机分析处理 (OLAP) 聚合  
   
@@ -36,9 +36,9 @@ BAM 支持以下两种类型的数据聚合：
   
   必须在定义 RTA 的 BAM 主导入数据库上配置触发器。  
   
-### <a name="to-define-olap-aggregations"></a>定义 OLAP 聚合  
+### <a name="to-define-olap-aggregations"></a>若要定义 OLAP 聚合  
   
-1.  在 BAM Excel 工作簿中，创建一个视图，向数据透视表中至少添加一个维度和一个度量值，清除 RTA 工具栏按钮，然后保存该工作簿。  
+1.  BAM Excel 工作簿中创建视图、 将至少一个维度和一个度量值添加到数据透视表报表、 清除 RTA 工具栏按钮，然后保存该工作簿。  
   
     -   有关打开 BAM 工作簿的信息，创建视图、 添加维度和度量值，请参阅[定义 BAM 视图](../core/defining-a-bam-view.md)。  
   
@@ -54,17 +54,17 @@ BAM 支持以下两种类型的数据聚合：
   
     -   有关运行更新多维数据集 DTS 包的信息，请参阅[BAM DTS 包](../core/bam-dts-packages.md)。  
   
-5.  打开工作簿的最新实时数据副本以查看 OLAP 聚合。  
+5.  打开要查看 OLAP 聚合的工作簿的最新实时数据副本。  
   
     > [!IMPORTANT]
-    >  出于安全原因，BAM 不删除工作簿的现有实时数据副本。 BAM 而是递增实时数据副本的文件名中的数字。  
+    >  出于安全原因，BAM 不删除现有的工作簿的实时数据副本。 相反，BAM 递增实时数据副本的文件名。  
   
-### <a name="to-define-the-rta"></a>定义 RTA  
+### <a name="to-define-the-rta"></a>若要定义 RTA  
   
-1.  在 BAM Excel 工作簿中，创建一个视图，向数据透视表中至少添加一个维度和一个度量值，选择 RTA 工具栏按钮，然后保存该工作簿。  
+1.  BAM Excel 工作簿中创建视图、 将至少一个维度和一个度量值添加到数据透视表报表中，选择 RTA 工具栏按钮，然后保存该工作簿。  
   
     > [!WARNING]
-    >  不要定义使用同一个 BAM 活动的多个 RTA。 否则，当您存档 BAM 数据时，RTA 数据将不正确。  
+    >  未定义使用同一个 BAM 活动的多个 Rta。 如果这样做，RTA 数据将不正确，当您存档 BAM 数据。  
   
     -   有关打开 BAM 工作簿的信息，创建视图、 添加维度和度量值，请参阅"定义业务活动视图"和"定义聚合"中*信息工作者用户指南*。  
   
@@ -75,10 +75,10 @@ BAM 支持以下两种类型的数据聚合：
 3.  解决方案开发人员可以使用**DirectEventStream**类将事件导入 BAM 主导入数据库。  
 
   
-4.  打开工作簿的最新实时数据副本以查看 RTA。  
+4.  打开工作簿以查看 Rta 的最新的实时数据副本。  
   
     > [!IMPORTANT]
-    >  出于安全原因，BAM 不删除工作簿的现有实时数据副本。 BAM 而是递增实时数据副本的文件名中的数字。  
+    >  出于安全原因，BAM 不删除现有的工作簿的实时数据副本。 相反，BAM 递增实时数据副本的文件名。  
   
 ## <a name="see-also"></a>请参阅  
  [BAM DTS 包](../core/bam-dts-packages.md)   

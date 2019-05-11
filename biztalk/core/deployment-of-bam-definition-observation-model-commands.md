@@ -1,5 +1,5 @@
 ---
-title: 部署的 BAM 定义 （观察模式） 命令 |Microsoft 文档
+title: 部署 BAM 定义 （观察模型） 命令 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,66 +12,66 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0dba1e1a4f54b3b33ebca8297cfe9beef7c4f868
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 506b563136fec86fdde9aebab31ad9bb4435736b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25973187"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65351742"
 ---
-# <a name="deployment-of-bam-definition-observation-model-commands"></a>部署的 BAM 定义 （观察模式） 命令
-您可借助 BAM 管理实用程序部署命令来应用、修改和删除定义。  
+# <a name="deployment-of-bam-definition-observation-model-commands"></a>部署的 BAM 定义 （观察模型） 命令
+BAM 管理实用程序部署命令，可将应用、 修改和删除定义。  
   
--   部署所有： 将部署的 BAM 定义。  
+-   部署所有：部署 BAM 定义。  
   
--   更新所有： BAM 定义更新。  
+-   更新所有：更新 BAM 定义。  
   
--   删除 all： 删除 BAM 定义。  
+-   全部删除：删除 BAM 定义。  
   
--   更新 livedataworkbook： 更新实时数据工作簿中的数据库连接信息。  
+-   更新 livedataworkbook:更新实时数据工作簿中的数据库连接信息。  
   
--   重新生成 livedataworkbook： 重新生成服务器上的实时数据工作簿。  
+-   重新生成 livedataworkbook:重新生成实时数据工作簿的服务器上。  
   
 > [!NOTE]
->  你可以通过包括启用任何 BM 实用工具命令的跟踪 **-跟踪： 在 &#124; 关闭**参数交换机。 使用 Trace 开关将重写配置文件中的跟踪设置。 该开关可与所有标准 BM 命令一起使用。  
+>  通过将可以启用任何 BM 实用工具命令的跟踪 **-跟踪： 在&#124;关闭**参数开关。 使用 Trace 开关将重写配置文件中的跟踪设置。 此开关可以与所有标准 BM 命令结合使用。  
   
 > [!NOTE]
 >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
   
 ## <a name="deploy-all-command"></a>deploy-all 命令  
- **用法**  
+ **Usage**  
   
- **bm.exe 部署所有-DefinitionFile:\<def 文件\>[-Server:\<服务器\>] [-数据库：\<数据库\>]**  
+ **bm.exe deploy-all -DefinitionFile:\<def file\>[ -Server:\<server\> ][ -Database:\<database\> ]**  
   
- **参数**  
+ **Parameters**  
   
 |参数|Description|  
 |---------------|-----------------|  
-|DefinitionFile:\<def 文件\>|包含要部署的定义的文件的路径和名称。|  
-|服务器：\<服务器\>|可选： 要将定义部署到服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
-|数据库：\<数据库\>|可选： 要将定义部署到数据库的名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
+|DefinitionFile:\<def 文件\>|路径和包含要部署的定义文件的名称。|  
+|服务器：\<服务器\>|可选：向其部署定义的服务器的名称。 服务器必须位于与运行 bm.exe 的计算机位于同一域中。 如果未指定服务器名称，则 bm.exe 将使用默认名称 localhost。|  
+|数据库：\<数据库\>|可选：向其部署定义的数据库的名称。 如果未指定名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
   
- 将指定 BAM 定义 XML 文件中的所有项目部署到指定的服务器和数据库。 该文件可以是包含 BAM 定义 XML 的文本文件，也可以是 BAM Excel 工作簿。 该定义文件必须仅包含新项目。 如果该文件包含已部署的项目，部署将会失败并报告错误。  
+ 将部署到指定的服务器和数据库指定 BAM 定义 XML 文件中的所有项目。 文件可以是包含 BAM 定义 XML 文件或 BAM Excel 工作簿的文本文件。 定义文件必须仅包含新项目。 如果该文件包含已部署的项目，部署将失败并报告错误。  
   
- **部署 BAM 定义注意事项**  
+ **部署 BAM 定义的注意事项**  
   
- 在部署警报订阅时，必须以“域\用户”格式指定订户的用户 ID。  
+ 在部署警报订阅时，必须以 domain\user 格式指定用户的订阅服务器的 Id。  
   
- 必须在其上的计算机上运行的分布式的事务协调器 (DTC) 服务**部署所有**发出命令。  
+ 分布式的事务处理协调器 (DTC) 服务必须在其上的计算机上运行**部署所有**发出命令。  
   
- 在部署定义时，BAM 管理实用程序仅在实时聚合 (RTA) 视图中支持 14 个维度级别。 部署超过此数量的级别将返回部署失败的错误。  
+ 部署定义时，BAM 管理实用程序仅在实时聚合 (RTA) 视图中支持 14 个维度级别。 部署其他级别返回部署失败的错误。  
   
- 如果定义了多个视图，它们使用不同的语言设置，然后将解决方案部署到使用单一语言的服务器中，则这些视图将无法部署。 这种方案只在没有计划聚合需要 BAM 定义中包含 OLAP 的情况下才支持。  
+ 如果定义多个使用不同的语言设置并将你的解决方案部署到使用一种语言的服务器的视图，视图将无法部署。 仅在您不需要计划的聚合需要 BAM 定义的一部分的 OLAP 的情况下支持此方案。  
   
- 启用 BAM 警报后，BAM 管理实用程序将已部署的活动视图限制为 49 个。 活动视图数的计算方法如下：各视图（1 至 N）乘以相应父活动的数量，然后将所得结果相加。  例如，如果部署了一个基于两个活动的视图，则结果为两个活动视图。  如果部署了两个视图，其中一个视图涉及两个活动，另一个视图基于一个活动，则您有 3 个活动视图。  
+ BAM 管理实用程序限制为 49 已部署的活动视图启用 BAM 警报时也是如此。 活动视图数计算为求和方法 1..N 乘以的父活动数。  例如，如果部署基于两个活动的视图，您将获得两个活动视图。  如果部署两个视图，其中一个跨越两个活动和其他基于单个活动，您有 3 个活动视图。  
   
- 对于具有多个数据透视表的 BAM 定义，如果这些数据透视表是在相同 RTA 和多维数据集名称组合的基础上定义的，则 BAM 管理实用程序不允许部署这种 BAM 定义。 Bm.exe 将终止部署并返回以下错误：  
+ BAM 管理实用程序块部署 BAM 定义具有多个数据透视表报告上的相同 RTA 和多维数据集名称组合所定义。 Bm.exe 将终止部署并返回以下错误：  
   
- 正在部署视图...错误： BAM 部署失败。  
+ 正在部署视图...错误：BAM 部署失败。  
   
- 对于一个给定的 RTA 和多维数据集，只能定义一个数据透视表视图。  
+ 可以在给定的 RTA 和多维数据集上定义只有一个数据透视表视图。  
   
- 下列名称是保留名称，如果使用会导致定义部署失败：  
+ 下面的列表的名称是保留，并将导致定义部署失败：  
   
 -   RecordID  
   
@@ -84,10 +84,10 @@ ms.locfileid: "25973187"
 -   LastModified  
   
 > [!NOTE]
->  如果 bm.exe 在部署过程中遇到错误，部署将终止，对视图和活动的更改也会回滚。 对 OLAP 多维数据集的更改不会回滚，这是因为 OLAP 不支持事务性部署。  
+>  如果 bm.exe 在部署过程中遇到错误，部署将终止并回滚对视图和活动的更改。 对 OLAP 多维数据集的更改不会回滚，因为 OLAP 不支持事务性部署。  
   
 > [!NOTE]
->  在使用一种区域设置的计算机上创建的 BAM 定义无法部署到配置为另一种区域设置的计算机上。 例如，在配置为英语区域设置的计算机上用英文版 Microsoft Excel 生成的 BAM 定义，无法部署到用日语区域设置配置为日文的计算机上。  
+>  使用一种区域设置的计算机上创建的 BAM 定义无法部署到使用不同的区域设置设置配置的计算机。 例如，不能配置为日文使用日语区域设置的计算机上部署生成配置为英语区域设置的计算机上使用英语语言版本的 Microsoft Excel 的 BAM 定义。  
   
  **示例**  
   
@@ -97,24 +97,24 @@ bm.exe deploy-all -DefinitionFile:MyWorkbook.xls -Server:machine1
 ```  
   
 ## <a name="update-all-command"></a>update-all 命令  
- **用法**  
+ **Usage**  
   
- **bm.exe 更新所有-DefinitionFile:\<def 文件\>[-Server:\<服务器\>] [-数据库：\<数据库\>]**  
+ **bm.exe update-all -DefinitionFile:\<def file\>[ -Server:\<server\> ][ -Database:\<database\> ]**  
   
- **参数**  
+ **Parameters**  
   
 |参数|Description|  
 |---------------|-----------------|  
-|DefinitionFile:\<def 文件\>|包含执行更新所用定义的文件的路径和名称。|  
-|服务器：\<服务器\>|可选： 要将定义更新部署到服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
-|数据库：\<数据库\>|可选： 要将定义更新部署到数据库的名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
+|DefinitionFile:\<def 文件\>|路径和包含要执行更新定义的文件的名称。|  
+|服务器：\<服务器\>|可选：要将定义更新部署到服务器的名称。 服务器必须位于与运行 bm.exe 的计算机位于同一域中。 如果未指定服务器名称，则 bm.exe 将使用默认名称 localhost。|  
+|数据库：\<数据库\>|可选：向其部署定义更新的数据库的名称。 如果未指定名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
   
- 更新 BAM 定义 XML 中的某些项目。 该文件可以是包含 BAM 定义 XML 的文本文件，也可以是 BAM Excel 工作簿。 更新不会删除当前定义文件中没有描述的项目。 更新可以将新检查点添加到活动中，但是不能从已部署的活动中删除检查点。 更新既不能重命名检查点，也不能更改检查点的属性。  
+ 更新 BAM 定义 XML 中的某些项目。 文件可以是包含 BAM 定义 XML 文件或 BAM Excel 工作簿的文本文件。 更新不会删除当前定义文件中未描述的项目。 它可以将新的检查点添加到活动，但无法从已部署的活动中删除检查点。 更新既不重命名检查点也不能更改检查点属性。  
   
- 部署某个活动后，对该活动可执行的操作就会受到限制。 具体而言，除非准备让管理员取消部署整个 BAM 活动和视图集，然后重新部署它们，否则，您无法从活动中删除项。 这可能导致查看中断和数据丢失，除非管理员进行数据备份和还原。  
+ 活动部署后，可在活动执行的操作就会受到限制。 具体而言，除非你已准备好让管理员取消部署整个 BAM 活动和视图集，然后重新部署它们，否则您不能从活动中删除项目。 除非管理员进行备份，这可能导致查看中断和数据丢失的数据和还原。  
   
 > [!NOTE]
->  您不能使用此命令向现有视图添加新活动。 若要将视图添加到活动中，必须创建包含新活动的新视图。 然后可以取消部署旧视图，但是要知道，您将丢失 OLAP 数据历史记录。  
+>  不能使用此命令将新活动添加到现有视图。 若要向活动中添加一个视图，必须创建一个包含新活动的新视图。 然后，您可以取消部署旧视图，但请注意，您将丢失 OLAP 数据历史记录。  
   
  **示例**  
   
@@ -124,19 +124,19 @@ bm.exe update-all -DefinitionFile:MyWorkbook.xls -Server:machine1
 ```  
   
 ## <a name="remove-all-command"></a>remove-all 命令  
- **用法**  
+ **Usage**  
   
- **bm.exe 删除全部 DefinitionFile:\<def 文件\>[-Server:\<服务器\>] [-数据库：\<数据库\>]**  
+ **bm.exe remove-all DefinitionFile:\<def file\> [ -Server:\<server\> ][ -Database:\<database\> ]**  
   
- **参数**  
+ **Parameters**  
   
 |参数|Description|  
 |---------------|-----------------|  
-|DefinitionFile:\<def 文件\>|包含要删除的定义的文件的路径和名称。|  
-|服务器：\<服务器\>|可选： 将从中删除定义的服务器的名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
-|数据库：\<数据库\>|可选： 定义将从中删除数据库的名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
+|DefinitionFile:\<def 文件\>|路径和包含要删除的定义文件的名称。|  
+|服务器：\<服务器\>|可选：要从中删除定义的服务器的名称。 服务器必须位于与运行 bm.exe 的计算机位于同一域中。 如果未指定服务器名称，则 bm.exe 将使用默认名称 localhost。|  
+|数据库：\<数据库\>|可选：要从中删除定义的数据库的名称。 如果未指定名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
   
- 删除在 BAM 定义 XML 文件中指定的所有项目。 该文件可以是包含 BAM 定义 XML 的文本文件，也可以是 BAM Excel 工作簿。 每个项目的定义必须与部署所用的初始定义完全匹配。  
+ 删除 BAM 定义 XML 文件中指定的所有项目。 文件可以是包含 BAM 定义 XML 文件或 BAM Excel 工作簿的文本文件。 每个项目的定义必须与部署所用的原始定义完全匹配。  
   
  **示例**  
   
@@ -146,22 +146,22 @@ bm.exe remove-all -DefinitionFile:MyWorkbook.xls -Server:machine1
 ```  
   
 ## <a name="update-livedataworkbook-command"></a>update-livedataworkbook 命令  
- **用法**  
+ **Usage**  
   
- **bm.exe 更新 livedataworkbook-名称：\<livedata 工作簿文件名称\>[-Server:\<服务器\>] [-数据库：\<数据库\>]**  
+ **bm.exe update-livedataworkbook -Name:\<livedata workbook file name\>[ -Server:\<server\> ][ -Database:\<database\> ]**  
   
- **参数**  
+ **Parameters**  
   
 |参数|Description|  
 |---------------|-----------------|  
-|名称：\<livedata 工作簿\>|要更新的现有活动工作簿的名称。|  
-|服务器：\<服务器\>|可选： 工作簿所驻留的服务器名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
-|数据库：\<数据库\>|可选： 在其上工作簿所在的数据库名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
+|名称：\<实时数据工作簿\>|要更新的现有实时工作簿的名称。|  
+|服务器：\<服务器\>|可选：该工作簿所驻留的服务器的名称。 服务器必须位于与运行 bm.exe 的计算机位于同一域中。 如果未指定服务器名称，则 bm.exe 将使用默认名称 localhost。|  
+|数据库：\<数据库\>|可选：该工作簿所驻留的数据库的名称。 如果未指定名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
   
  更新指定 BAM 实时数据工作簿中的 BAM 主导入数据库连接信息。  
   
 > [!NOTE]
->  配置新连接字符串时，必须重新启动 TDDS 服务，才能确保服务能够识别出该更改。 TDDS 服务的详细信息，请参阅[BAM 事件总线服务存储过程](../core/bam-event-bus-service-stored-procedures.md)。  
+>  配置新的连接字符串时，必须重新启动 TDDS 服务，以确保服务识别出该更改。 有关 TDDS 服务的详细信息，请参阅[BAM 事件总线服务存储过程](../core/bam-event-bus-service-stored-procedures.md)。  
   
  **示例**  
   
@@ -171,17 +171,17 @@ bm.exe update-livedataworkbook -Name:SalesManager_Live.xls -Server:SalesSrv
 ```  
   
 ## <a name="regenerate-livedataworkbook-command"></a>regenerate-livedataworkbook 命令  
- **用法**  
+ **Usage**  
   
- **bm.exe 重新生成 livedataworkbook WorkbookName:\<livedata 工作簿文件名称\>[-Server:\<服务器\>] [-数据库：\<数据库\>]**  
+ **bm.exe regenerate-livedataworkbook -WorkbookName:\<livedata workbook file name\>[ -Server:\<server\> ][ -Database:\<database\> ]**  
   
- **参数**  
+ **Parameters**  
   
 |参数|Description|  
 |---------------|-----------------|  
-|WorkbookName:\<livedata 工作簿文件名称\>|要更新的工作簿的名称。|  
-|服务器：\<服务器\>|可选： 工作簿所驻留的服务器名称。 服务器必须是从中运行 bm.exe 计算机位于同一域中。 如果未指定服务器名称，bm.exe 使用 localhost 的默认名称。|  
-|数据库：\<数据库\>|可选： 在其上工作簿所在的数据库名称。 如果未指定该名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
+|WorkbookName:\<实时数据工作簿文件名称\>|要更新的工作簿的名称。|  
+|服务器：\<服务器\>|可选：该工作簿所驻留的服务器的名称。 服务器必须位于与运行 bm.exe 的计算机位于同一域中。 如果未指定服务器名称，则 bm.exe 将使用默认名称 localhost。|  
+|数据库：\<数据库\>|可选：该工作簿所驻留的数据库的名称。 如果未指定名称，则 bm.exe 将使用默认名称 BamPrimaryImport。|  
   
  生成 BAM 实时数据工作簿，但不部署该工作簿。  
   
@@ -192,5 +192,5 @@ bm.exe regenerate-livedataworkbook -WorkbookName:SalesManager_Live.xls
 bm.exe regenerate-livedataworkbook -WorkbookName:SM_Live.xls -Server:S1  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [BAM 管理实用工具](../core/bam-management-utility.md)

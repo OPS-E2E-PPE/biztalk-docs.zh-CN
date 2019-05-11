@@ -1,5 +1,5 @@
 ---
-title: 错误-用于脚本编写 Functoid 没有任何类 |Microsoft 文档
+title: 错误-脚本 Functoid 未设置类 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1668f4d29dc5748290e24b85a6f1a2623393e1b8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1e328c2ace0dae325553789a1662075fa58395ab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240749"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65347287"
 ---
-# <a name="error---no-class-for-scripting-functoid"></a>错误-用于脚本编写 Functoid 没有任何类
+# <a name="error---no-class-for-scripting-functoid"></a>错误-脚本 Functoid 未设置类
 **错误代码**  
   
  btm1008  
   
  **说明**  
   
- **脚本类**属性指示**脚本**即使未设置 functoid**脚本类型**属性指示外部程序集包含此脚本**脚本**functoid。  
+ **脚本类**属性所指示**脚本**functoid 即使设置**脚本类型**属性指示外部程序集包含此脚本**脚本**functoid。  
   
  **用户执行任何操作**  
   
- 选择指示**脚本**functoid，单击省略号 (**...**) 与关联的按钮**脚本**中的属性[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口中，然后将适当的值中设置**配置 Functoid 脚本**对话框中，包括**脚本类**属性。
+ 选择所指示**Scripting** functoid，单击省略号 (**...**) 按钮与相关联**脚本**中的属性[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口中，然后将相应的值设置**配置 Functoid 脚本**对话框中，其中包括**脚本类**属性。

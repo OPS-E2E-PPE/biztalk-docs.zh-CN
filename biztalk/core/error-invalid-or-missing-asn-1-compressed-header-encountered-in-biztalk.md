@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 682b30bdb513aa9318dbc56cd592aa0009d56e39
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5f1329fd8afd46ad48d014a173dd1680d12462e2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011958"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348009"
 ---
 # <a name="invalid-or-missing-asn1-compressed-header-encountered-during-decompression-processing"></a>ASN.1 压缩头部解压缩处理期间遇到无效或缺失
 ## <a name="details"></a>详细信息  

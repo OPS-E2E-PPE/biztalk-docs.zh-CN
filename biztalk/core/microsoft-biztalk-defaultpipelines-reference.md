@@ -26,14 +26,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: de2ec54b34a4e6d92f471db7fe9ad5dbc7933014
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a183aa499b5acb56813fcb0433d2fd57258a777d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022051"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65324843"
 ---
-# <a name="microsoftbiztalkdefaultpipelines-reference"></a>Microsoft.BizTalk.DefaultPipelines 引用
+# <a name="microsoftbiztalkdefaultpipelines-reference"></a>Microsoft.BizTalk.DefaultPipelines Reference
 **Microsoft.BizTalk.DefaultPipelines**命名空间包含以下管道：  
   
 - XMLReceive  
@@ -44,11 +44,11 @@ ms.locfileid: "37022051"
   
 - PassThruTransmit  
   
-  管道是一个软件组件，用于定义和链接一个或多个阶段的处理的消息接收或发送的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 这些阶段包括诸如编码或解码、拆装或组装、解密或加密这类功能。 这些功能是按特定顺序实现的。 可以使用管道设计器来创建接收管道和发送管道。  
+  管道是一个软件组件，用于定义和链接一个或多个阶段的处理的消息接收或发送的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 阶段包括诸如编码或解码、 拆装或组装和解密或加密。 这些函数的实现特定的顺序。 可以使用管道设计器创建接收和发送管道。  
   
   BizTalk 项目中包含的默认管道引用可以处理所有类型的文档使用**PassThruReceive**并**PassThruTransmit**管道。  
   
-  下面分别列出了各默认管道中的默认组件。 其中还指示了每个管道中组件的默认顺序。 如有必要，可以添加和删除组件。  
+  以下列表显示了各默认管道中的默认组件。 其中还指示了每个管道中的组件的默认顺序。 可以添加和删除组件，如有必要。  
   
   默认 XMLReceive 管道中的默认组件包括：  
   
@@ -68,7 +68,7 @@ ms.locfileid: "37022051"
   
 - 编码器  
   
-- 加密器  
+- 那样  
   
 ## <a name="see-also"></a>请参阅  
  [使用管道设计器创建管道](../core/creating-pipelines-using-pipeline-designer.md)   

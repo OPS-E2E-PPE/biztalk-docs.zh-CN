@@ -20,20 +20,20 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3157eca412123556a6e9637e1ffa28a8da7daa19
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1910d143aaac50d7690c4338c053873f70d2db38
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012318"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65340050"
 ---
 # <a name="how-to-create-a-fact-retriever"></a>如何创建事实检索器
-事实检索器是在策略执行期间用来将长期事实实例添加到该策略中的组件。 您可以实现**IFactRetriever**接口，并配置要在运行时使用此实现，以便在长期事实实例中的策略版本。 策略版本调用**UpdateFacts**上每个执行循环，如果事实检索器配置为该特定版本的事实检索器实现的方法。  
+事实检索器是用于在其执行期间添加到策略的长期事实实例的组件。 您可以实现**IFactRetriever**接口，并配置要在运行时使用此实现，以便在长期事实实例中的策略版本。 策略版本调用**UpdateFacts**上每个执行循环，如果事实检索器配置为该特定版本的事实检索器实现的方法。  
   
- 您可以选择实现**IFactRemover**事实检索器组件上的接口。 规则引擎将调用**UpdateFactsAfterExecution**方法**IFactRemover**接口时将在释放策略。 这使您可以有机会进行执行后工作，例如提交任何数据库更改或从规则引擎的工作内存取消任何对象实例。  
+ 您可以选择实现**IFactRemover**事实检索器组件上的接口。 规则引擎将调用**UpdateFactsAfterExecution**方法**IFactRemover**接口时将在释放策略。 这可以执行任何执行后工作，例如提交任何数据库更改或取消任何对象实例的规则引擎工作内存中提供的机会。  
   
-## <a name="to-specify-a-fact-retriever-for-a-policy"></a>为策略指定事实检索器  
- 您可以使用以下代码配置规则集，使用“MyAssembly”程序集中的“Retriever”类作为事实检索器。  
+## <a name="to-specify-a-fact-retriever-for-a-policy"></a>若要指定策略的事实检索器  
+ 您可以使用下面的代码配置规则集，使用名为"MyAssembly"作为事实检索器程序集中名为"检索器"的类。  
   
 ```  
 RuleEngineComponentConfiguration fr = new RuleEngineComponentConfiguration("MyAssembly", "Retriever");  
@@ -44,19 +44,19 @@ rsCfg.FactRetriever = factRetriever;
 ```  
   
 > [!NOTE]
->  如果指定简单程序集名称（如 MyAssembly）作为 RuleEngineComponentConfiguration 构造函数的第一个参数，则 BizTalk 规则引擎将假定它是私有程序集，并在应用程序文件夹中查找该程序集。 如果指定完全限定的程序集名称，例如**MyAssembly，版本 = 1.0.0.0，区域性 = 中性，PublicKeyToken = a310908b42c024fe**，规则引擎将假定它是共享的程序集并查找在全局程序集程序集缓存 (GAC)。 您可以找到在简单和完全限定的程序集名称的定义[ http://go.microsoft.com/fwlink/?LinkId=64535 ](http://go.microsoft.com/fwlink/?LinkId=64535)。  
+>  如果作为 RuleEngineComponentConfiguration 构造函数的第一个参数指定简单程序集名称，如 MyAssembly，则 BizTalk 规则引擎将假定它是私有程序集并查找你的应用程序文件夹中的程序集。 如果指定完全限定的程序集名称，例如**MyAssembly，版本 = 1.0.0.0，区域性 = 中性，PublicKeyToken = a310908b42c024fe**，规则引擎将假定它是共享的程序集并查找在全局程序集程序集缓存 (GAC)。 您可以找到在简单和完全限定的程序集名称的定义[ http://go.microsoft.com/fwlink/?LinkId=64535 ](http://go.microsoft.com/fwlink/?LinkId=64535)。  
   
- 您可以使用所需的特定于应用程序的逻辑来设计事实检索器以连接所需的数据源，将该数据作为长期事实添加到到引擎中，并指定刷新或向引擎中添加新的长期事实实例的逻辑。 只有在更新之后，最初添加到引擎中并随后缓存的值才将用于后续的执行循环。 事实检索器实现将返回一个对象，它类似于标记，并可以在连同**factsHandleIn**对象，以确定是否要更新现有事实或添加新的事实。 当策略版本首次调用其事实检索器时**factsHandleIn**对象始终为 null，然后在事实检索器执行之后会返回对象的值。  
+ 您可以设计具有所需的特定于应用程序逻辑，以连接到所需的数据源，断言将数据作为长期事实添加到引擎，并指定刷新或添加到的长期事实数据的新实例的逻辑事实检索器引擎。 直到更新，将在后续的执行循环上使用是最初添加到引擎中并随后缓存的值。 事实检索器实现将返回一个对象，它类似于标记，并可以在连同**factsHandleIn**对象，以确定是否要更新现有事实或添加新的事实。 当策略版本首次调用其事实检索器时**factsHandleIn**对象始终为 null，然后在事实检索器执行之后会返回对象的值。  
   
- 请注意，对于同一规则引擎实例，一个长期事实只需添加一次。 例如，使用**调用规则**形状在业务流程，该策略实例移动到内部缓存。 此时，将取消所有短期事实，并保留所有长期事实。 如果同一策略由同一业务流程实例或同一主机中的不同业务流程实例再次调用，则将从缓存中提取此策略实例并重新使用。 在某些批处理环境中，可以创建同一策略的多个策略实例。 如果创建新的策略实例，则必须确保添加了正确的长期事实。  
+ 请注意，对于相同的规则引擎实例，长期事实只需添加一次。 例如，使用**调用规则**形状在业务流程，该策略实例移动到内部缓存。 在此期间，取消所有短期事实，并保留长期事实。 如果调用同一策略同样，相同的业务流程实例或同一主机中的不同业务流程实例此策略实例是从缓存中提取和重复使用。 在某些批处理环境，可以创建同一策略的多个策略实例。 如果创建新的策略实例，则必须确保添加正确的长期事实。  
   
- 此外，您需要编写自定义代码以实现以下策略：  
+ 此外，你将需要编写自定义代码以实现以下策略：  
   
 - 了解何时更新长期事实  
   
-- 跟踪规则引擎所使用的长期事实  
+- 跟踪的规则引擎所使用的长期事实  
   
-  下面的示例代码显示了不同的事实检索器实现，它们使用不同的绑定类型与 MyPolicy 相关联以将 MyTableInstance 添加为长期事实。  
+  下面的示例代码显示了不同的事实检索器实现，与 MyPolicy 将 mytableinstance 添加为长期事实，使用不同的绑定类型相关联。  
   
 ## <a name="datatable-binding"></a>DataTable 绑定  
   
@@ -145,7 +145,7 @@ namespace MyBizTalkApplication.FactRetriever
 }  
 ```  
   
- 下面的示例代码演示了如何在事实检索器实现中添加 .NET 和 XML 事实。  
+ 下面的示例代码演示如何添加事实检索器实现中的.NET 和 XML 事实。  
   
 ```  
 using System;  

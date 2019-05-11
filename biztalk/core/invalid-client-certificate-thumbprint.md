@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 74551ac825f9e517bec1d07edc7f288db732b348
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c3f349dbc2eb3ffd6a1bfa38c3231461d45a8ae7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018879"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65381387"
 ---
 # <a name="invalid-client-certificate-thumbprint"></a>客户端证书指纹无效
 ## <a name="details"></a>详细信息  
@@ -30,14 +30,14 @@ ms.locfileid: "37018879"
 |  事件源   |                                         0                                          |
 |    组件    |                                         0                                          |
 |  符号名称  |                                         0                                          |
-|  消息正文   |       客户端证书指纹无效；应为十六进制的 40 位数字。       |
+|  消息正文   |       客户端证书指纹无效;预期的 40 个十六进制数字。       |
   
 ## <a name="explanation"></a>解释  
- 指定的客户端证书指纹无效。  
+ 指定了无效的客户端证书指纹。  
   
 ## <a name="user-action"></a>用户操作  
- 在用于配置 WCF 发送端口的代码中，用户界面的客户端证书属性应为十六进制的 40 位值。 示例： 798A68E7A3E6F2CCC6929FC4AF2A15A9EED66E39  
+ 在代码中配置 WCF 发送端口，客户端证书属性的用户界面需要十六进制 40 位值。 例如：798A68E7A3E6F2CCC6929FC4AF2A15A9EED66E39  
   
- 有关证书的其他信息，请参阅以下内容：  
+ 证书的其他信息，请参阅：  
   
 -   [安装用于 WCF 适配器的证书](../core/installing-certificates-for-the-wcf-adapters.md)

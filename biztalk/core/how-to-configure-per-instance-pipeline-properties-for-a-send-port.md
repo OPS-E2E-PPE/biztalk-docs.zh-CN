@@ -22,17 +22,17 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2d1d49f0c6f54341c14cb14c38cc0de7fefaa9a9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 49ab5b83ae12cd6de262e23ed2136f1c9a886d57
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990998"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65341235"
 ---
-# <a name="how-to-configure-per-instance-pipeline-properties-for-a-send-port"></a>如何为发送端口配置基于实例的管道属性
+# <a name="how-to-configure-per-instance-pipeline-properties-for-a-send-port"></a>如何配置每个实例为发送端口的管道属性
 本主题介绍如何使用 BizTalk Server 管理控制台后管道部署到 BizTalk 组配置为发送端口的管道属性。 所做的更改覆盖默认管道，此发送端口属性，因此如果希望，可以将不同的管道属性的每个发送端口配置 BizTalk 组中。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  若要执行本主题中的过程，必须是 BizTalk Server Administrators 组的成员的帐户登录。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
   
 > [!NOTE]

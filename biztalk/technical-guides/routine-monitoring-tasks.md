@@ -12,39 +12,39 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d500e79cdf20c6a1914708976101715c2f00ae69
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 81e43036407d193eed167b206eedc3a49ae27d14
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001654"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291237"
 ---
 # <a name="routine-monitoring-tasks"></a>例程监视任务
 执行以下监视任务按定期计划将帮助您保护您[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]应用程序和基础结构做好运行准备。  
   
 ## <a name="daily-monitoring-tasks"></a>每日监视任务  
   
-- 检查所有打开的警报。  
+- 查看所有未处理警报。  
   
-- 使用**组中心**页中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台来调查业务流程、 端口和消息失败。 **组中心**提供了对系统中，访问 MessageBox 数据库中的数据的当前实时状态的访问。 您可以查看所有服务实例（例如业务流程、端口和消息传送）及其关联的消息。 使用**组中心**页面可以执行以下活动：  
+- 使用**组中心**页中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台来调查业务流程、 端口和消息失败。 **组中心**提供了对系统中，访问 MessageBox 数据库中的数据的当前实时状态的访问。 您可以查看业务流程、 端口和消息传送，及其关联的消息以及等的所有服务实例。 使用**组中心**页面可以执行以下活动：  
   
   - 请参阅当前正在运行的服务实例，如业务流程和消息传送和及其关联的消息。  
   
-  - 在 MessageBox 数据库中进行搜索，以显示系统的当前数据以及实时状态的视图。  
+  - 查找到 MessageBox 数据库中的视图的当前数据和系统的实时状态。  
   
-  - 挂起、终止和恢复服务实例。  
+  - 挂起、 终止和恢复服务实例。  
   
     有关使用详细信息**组中心**页上，请参阅[ http://go.microsoft.com/fwlink/?LinkId=155281 ](http://go.microsoft.com/fwlink/?LinkId=155281)。  
   
-- 检查警告（可选）。  
+- 查看警告 （可选）。  
   
-  有关详细信息，请参阅[清单： 执行每日维护检查](../technical-guides/checklist-performing-daily-maintenance-checks.md)。  
+  有关详细信息，请参阅[核对清单：执行每日维护检查](../technical-guides/checklist-performing-daily-maintenance-checks.md)。  
   
 ## <a name="weekly-monitoring-tasks"></a>监视的每周任务  
   
 - 查看至少一次每周的事件日志。 此任务的原因是为了防止问题，例如将未能检测到的 DBNetLib 错误。 服务中断可能会被忽略，除非你有一个很短的延迟系统。 但是，这些错误的一些可以指示一个更大的问题 （示例中，过多主机或 BizTalk Server 服务器的消息框、 上的 SQL 框等的性能问题数）。  
   
-  有关详细信息，请参阅[清单： 执行每周维护检查](../technical-guides/checklist-performing-weekly-maintenance-checks.md)。  
+  有关详细信息，请参阅[核对清单：执行每周维护检查](../technical-guides/checklist-performing-weekly-maintenance-checks.md)。  
   
 ## <a name="as-needed-tasks"></a>根据任务  
   
@@ -62,12 +62,12 @@ ms.locfileid: "37001654"
   >  此外可以保存以供将来使用的报表。 BizTalk 应用程序的问题进行故障排除时，这些报表可能很有用。  
   
   > [!NOTE]  
-  >  使用此工具不受 Microsoft，因此 Microsoft 不保证此程序的适用性。 使用此程序风险自负。  
+  >  使用此工具不受 Microsoft，因此 Microsoft 不保证此程序的适用性。 使用此程序是完全由您自己承担。  
   
 - 运行[终止符工具](http://go.microsoft.com/fwlink/?LinkId=151931)(http://go.microsoft.com/fwlink/?LinkId=151931)。 此工具使用户能够轻松地解决由 BizTalk MsgBoxViewer 工具标识的任何问题。 有关如何使用 BizTalk MsgBoxViewer 工具相集成的终结器工具的详细信息，请参阅[使用 BizTalk 终止符，以解决问题由 BizTalk MsgBoxViewer](http://go.microsoft.com/fwlink/?LinkId=151932)(http://go.microsoft.com/fwlink/?LinkId=151932)。  
   
   > [!NOTE]  
-  >  使用此工具不受 Microsoft，因此 Microsoft 不保证此程序的适用性。 使用此程序风险自负。  
+  >  使用此工具不受 Microsoft，因此 Microsoft 不保证此程序的适用性。 使用此程序是完全由您自己承担。  
   
 ## <a name="annual-monitoring-tasks"></a>每年的监视任务  
   

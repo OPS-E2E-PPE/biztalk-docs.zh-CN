@@ -1,5 +1,5 @@
 ---
-title: 位置记录中标记处理 |Microsoft 文档
+title: 在位置记录中标记处理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 804647b3cf43b9b6747b2e5f50e05e38313b03d9
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8fe1ec096926dc8737c6657ca99fb3cb90b59673
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22278565"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291624"
 ---
-# <a name="tag-handling-in-positional-records"></a>处理位置记录中的标记
+# <a name="tag-handling-in-positional-records"></a>位置记录中的标记处理
 
 ## <a name="overview"></a>概述
-位置记录可以包括一种称为标记的已知字符序列，使用标记可以消除一种类型的记录与其他类型的记录之间的歧义。 这样，平面文件拆装器正确地标识相应**记录**包含正确分析的平面文件记录所需的信息的架构中的节点。  
+位置记录可以包含的已知字符序列，称为一个标记，它可用于消除从另一个记录的一种类型的歧义。 这样，平面文件拆装器以便正确标识适当**记录**中包含正确解析平面文件记录所需的信息的架构的节点。  
   
- 你可以使用 **[标记标识符**和**标记偏移量**属性在一起以指定的标记，并在位置记录其位置。 请注意，这会允许要出现在任何地方中位置的记录，具体取决于你设置的标记**位置长度**和**位置偏移量**内的各个字段的属性该记录，该标记可以解释为与某一关联的数据的一部分或多个这些字段。  
+ 可以使用 **[标记标识符**并**标记偏移量**属性一起以指定的标记，并在位置记录其位置。 请注意，这会允许标记可以根据你设置的位置记录中任意位置出现**位置长度**并**位置偏移量**内的各字段的属性该记录，该标记可以解释为与某个关联的数据的一部分或多个字段。  
   
- **位置偏移量**属性还允许你以从记录中的数据单独处理标记。 例如，如果标签在记录的开始处出现，它是四个字符的长度，则可设置的值**位置偏移量**到四个，从而有效地跳过的记录中的第一个字段的属性位置记录标记时的第一个字段的值转换为等效的 XML 格式的记录。  
+ **位置偏移量**属性还允许您从记录中的数据单独处理标记。 例如，如果标签的记录开始时，它是长度为四个字符，则可以设置的值**位置偏移量**到四个，从而有效地跳过的记录中的第一个字段的属性位置记录标记中的记录的等效 XML 格式翻译第一个字段的值时。  
 
 这些属性的更多详细信息[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。 
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [位置记录注意事项](../core/positional-record-considerations.md)   

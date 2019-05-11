@@ -20,15 +20,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3e0977589e310746e2c75c1f89fdd2c41ecb86aa
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 70dd783e805116b24e224886e02d0f46fe2edfed
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976710"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281821"
 ---
 # <a name="setting-time-outs-for-a-public-process-orchestration-and-an-http-adapter"></a>设置公用业务流程和 HTTP 适配器的超时值
-在同步方案中，如果将公用业务流程与 HTTP 适配器一起使用，则必须为它们设置相应的超时值。 业务流程的超时设置（执行时间）必须小于 HTTP 适配器的超时设置（请求超时值）。 这是因为如果 HTTP 适配器的设置较小，则适配器可能会在业务流程执行完之前发生超时。 这使适配器可以控制流程。 业务流程必须在流程的控制之下；因此，业务流程的超时设置必须较小。  
+当使用 HTTP 适配器在同步方案中使用公用业务流程时，必须在相应地为每个设置的超时。 业务流程 （执行时间） 的超时设置必须小于 HTTP 适配器 （请求超时） 的超时值。 这是因为如果 HTTP 适配器设置为较小，则适配器可能会超时后，业务流程。 这使适配器可以控制的过程。 业务流程必须掌控的进程;因此，其超时设置必须为较小。  
   
 ### <a name="to-set-the-time-out-setting-for-the-http-adapter"></a>设置 HTTP 适配器的超时设置  
   

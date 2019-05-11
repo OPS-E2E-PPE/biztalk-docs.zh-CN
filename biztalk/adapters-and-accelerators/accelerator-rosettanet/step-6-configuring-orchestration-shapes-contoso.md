@@ -1,5 +1,5 @@
 ---
-title: 步骤 6： 配置业务流程形状 (Contoso) |Microsoft Docs
+title: 步骤 6：配置业务流程形状 (Contoso) |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 31ffbdbe5cea810f08b5dc08b8d3dcae265c9f04
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ec97411d1a6fa6fe9d2cfff98e3491e6d60845b8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980646"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280682"
 ---
-# <a name="step-6-configuring-orchestration-shapes-contoso"></a>步骤 6： 配置业务流程形状 (Contoso)
-在此步骤中，配置添加到你在中创建的 PrivateResponder 业务流程的业务流程形状[步骤 5： 修改 Contoso 专用业务流程](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)。 这包括设置 Contoso 的 Microsoft® BizTalk Server 和企业资源规划 (ERP) 系统之间的通信。  
+# <a name="step-6-configuring-orchestration-shapes-contoso"></a>步骤 6：配置业务流程形状 (Contoso)
+在此步骤中，配置添加到你在中创建的 PrivateResponder 业务流程的业务流程形状[步骤 5:修改 Contoso 专用业务流程](../../adapters-and-accelerators/accelerator-rosettanet/step-5-modifying-the-contoso-private-process-orchestration.md)。 这包括设置 Contoso 的 Microsoft® BizTalk Server 和企业资源规划 (ERP) 系统之间的通信。  
   
-### <a name="to-configure-the-constructmessagepip3a2requestmessage-shape"></a>配置 ConstructMessagePIP3A2RequestMessage 形状  
+### <a name="to-configure-the-constructmessagepip3a2requestmessage-shape"></a>若要配置 ConstructMessagePIP3A2RequestMessage 形状  
   
 1.  在解决方案资源管理器，在业务流程设计图面上，选中 privateresponder.odx 选择**ConstructPIP3A2RequestMessage**形状。  
   
@@ -33,7 +33,7 @@ ms.locfileid: "36980646"
   
 3.  双击**消息赋值**形状中**ConstructPIP3A2RequestMessage**形状以打开 BizTalk 表达式编辑器。  
   
-4.  在 BizTalk 表达式编辑器中，键入以下内容：  
+4.  在 BizTalk 表达式编辑器中，键入以下命令：  
   
     ```  
     PIP3A2RequestMessage = Helper.NormalizeHeader(Microsoft.Solutions.BTARN.Shared.SCContainer.ConvertFromContainer(ActionMessage));  
@@ -41,7 +41,7 @@ ms.locfileid: "36980646"
   
 5.  单击“确定” 。  
   
-### <a name="to-configure-the-constructcontoso3a2requestmessage-transform-shape"></a>配置“ConstructContoso3A2RequestMessage 转换”形状  
+### <a name="to-configure-the-constructcontoso3a2requestmessage-transform-shape"></a>若要配置 ConstructContoso3A2RequestMessage 转换形状  
   
 1.  在业务流程设计图面上，单击**ConstructContoso3A2RequestMessage**形状。  
   
@@ -61,7 +61,7 @@ ms.locfileid: "36980646"
   
 9. 选择**目标**在左窗格中，单击**Contoso3A2RequestMessage**从**VariableName**下拉列表中，并单击**确定**.  
   
-### <a name="to-configure-the-execute3a2vocabulary-call-rules-shape"></a>配置“Execute3A2Vocabulary 调用规则”形状  
+### <a name="to-configure-the-execute3a2vocabulary-call-rules-shape"></a>若要配置 Execute3A2Vocabulary 调用规则形状  
   
 1.  在业务流程设计图面上，双击**Execute3A2Vocabulary**形状内**Scope_1**形状。  
   
@@ -71,7 +71,7 @@ ms.locfileid: "36980646"
   
 4.  单击“确定” 。  
   
-### <a name="to-configure-the-construct3a2responsemessage-transform-shape"></a>配置“Construct3A2ResponseMessage 转换”形状  
+### <a name="to-configure-the-construct3a2responsemessage-transform-shape"></a>若要配置 Construct3A2ResponseMessage 转换形状  
   
 1. 在业务流程设计图面上，单击**Construct3A2ResponseMessage**形状。  
   
@@ -102,7 +102,7 @@ ms.locfileid: "36980646"
   
 13. 上**编辑**菜单上，单击**全**。  
   
-14. 将以下 XML 复制到剪贴板中。 上**编辑**菜单上，单击**粘贴**覆盖当前映射：  
+14. 将以下 XML 复制到剪贴板。 上**编辑**菜单上，单击**粘贴**覆盖当前映射：  
   
     ```  
     <?xml version="1.0" encoding="utf-16"?>  
@@ -154,7 +154,7 @@ ms.locfileid: "36980646"
   
 15. 在“文件”  菜单上，单击“全部保存” 。  
   
-### <a name="to-configure-the-expression1-shape"></a>配置 Expression_1 形状  
+### <a name="to-configure-the-expression1-shape"></a>若要配置 Expression_1 形状  
   
 1.  在解决方案资源管理器中双击**PrivateResponder.odx**。  
   

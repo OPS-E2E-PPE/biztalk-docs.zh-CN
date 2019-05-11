@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fab810e4cfadc77c8fafe34b5cb78aaa417dfe5c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 564cacb8d1389f03404939a0c9c7f557b6fa7393
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015062"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65298824"
 ---
 # <a name="the-batch-was-not-found"></a>未找到批处理
 ## <a name="details"></a>详细信息  

@@ -20,12 +20,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5c19cfb387ba3cce61d21c467c1c91674204d4c4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 77a883a4d506d3ee65a5ef0edc7ab5dc6495f039
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998678"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65267979"
 ---
 # <a name="global-settings-tab"></a>全局设置选项卡
 您使用**全局设置**选项卡可配置使用的日志记录存储区[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]。  

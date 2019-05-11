@@ -1,5 +1,5 @@
 ---
-title: 错误-必填字段都不需要输入 |Microsoft 文档
+title: 错误-必填字段都没有输入 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,14 +14,14 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 343b565dec1ee3d0bc2487bd32ea3854cbacb3bc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9f7443efd49c5d5375b025fd4fcf93f60d253d4b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240173"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65346980"
 ---
-# <a name="error---required-field-has-no-input"></a>错误-必填的字段具有没有输入
+# <a name="error---required-field-has-no-input"></a>错误-必填的字段具有任何输入
 **错误代码**  
   
  btm1028  

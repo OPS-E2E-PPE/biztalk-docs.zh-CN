@@ -1,5 +1,5 @@
 ---
-title: 步骤 1： 添加标头及确认架构 |Microsoft Docs
+title: 第 1 步：添加标头及确认架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ae0712e2ee4498b8f6f2eb8cb9527aa8ee8e4582
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 87e470abd9e8e8d71f657d789089caefa40dc1e4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011296"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65289038"
 ---
-# <a name="step-1-add-header-and-acknowledgment-schemas"></a>步骤 1： 添加标头及确认架构
+# <a name="step-1-add-header-and-acknowledgment-schemas"></a>第 1 步：添加标头及确认架构
 在此步骤中，你创建基于 BTAHL72XCommon 项目模板的新项目。 此模板包含消息标头 (MSH_25_GLO_DEF.xsd) 和确认 (ACK_24_GLO_DEF.xsd) 的三个常见架构和 (ACK_25_GLO_DEF.xsd)。 您必须包括这些架构在项目中因此该 BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 生成和/或正确验证消息标头和确认。 此过程是通用于所有架构版本[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2.X。  
   
  你还创建强密钥，将其分配给该程序集，并随后部署该程序集。 强密钥提供安全和标识了程序集，并且部署所需的。 在部署程序集时，它存储在配置数据库 （也称为 BizTalk 管理数据库） 和全局程序集缓存 (GAC) 中。  
@@ -69,4 +69,4 @@ ms.locfileid: "37011296"
     > [!NOTE]
     >  如果未显示正确的部署消息，使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]若要排查部署问题。  
   
-    请继续执行[步骤 2： 添加适用于 v2.3.1 的通用架构](../../adapters-and-accelerators/accelerator-hl7/step-2-add-common-schemas-for-v2-3-1.md)。
+    请继续执行[步骤 2:添加适用于 v2.3.1 的通用架构](../../adapters-and-accelerators/accelerator-hl7/step-2-add-common-schemas-for-v2-3-1.md)。

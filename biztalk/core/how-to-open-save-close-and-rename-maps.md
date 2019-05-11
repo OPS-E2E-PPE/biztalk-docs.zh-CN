@@ -12,15 +12,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4a95ba8e22baa10a0b47721b8a8b3eb3554e2b8a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a5ef0bcaad7dc3cd4bd526657eb86194e2d986e8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968758"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65335819"
 ---
 # <a name="how-to-open-save-close-and-rename-maps"></a>如何打开、 保存、 关闭和重命名映射
-在 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中，映射在文件系统中以扩展名为 .btm 的文件形式存在。 不过，它是更常见，若要使用映射作为 BizTalk 项目，从其执行操作，如打开、 保存和关闭映射中的项。  
+在 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，映射在文件系统中以扩展名为.btm 文件形式存在。 不过，它是更常见，若要使用映射作为 BizTalk 项目，从其执行操作，如打开、 保存和关闭映射中的项。  
   
 ### <a name="to-open-a-map"></a>若要打开地图  
   
@@ -50,7 +50,7 @@ ms.locfileid: "36968758"
 4.  在中**文件名**框中，键入该文件的名称，然后单击**保存**。  
   
     > [!IMPORTANT]
-    >  不使用映射以下名称:"XmlContent"、"SourceSchemas"、"TargetSchemas"或"XsltArgumentListContent"，因此，这样做将会编译问题导致在 C# 中生成的代码的相应的.NET 程序集。 有关问题及其解决方案的信息，请参阅[故障排除映射](../core/troubleshooting-maps.md)。  
+    >  不要使用以下名称用于映射："XmlContent"、"SourceSchemas"、"TargetSchemas"或者"XsltArgumentListContent"，这样做将导致编译问题在生成C#中相应的.NET 程序集的代码。 有关问题及其解决方案的信息，请参阅[故障排除映射](../core/troubleshooting-maps.md)。  
   
 ### <a name="to-rename-a-map"></a>若要重命名映射  
   

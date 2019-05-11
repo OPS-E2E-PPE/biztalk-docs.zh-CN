@@ -1,5 +1,5 @@
 ---
-title: 创建业务流程 |Microsoft 文档
+title: 创建业务流程 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,19 +15,19 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 40af6f8c3d2dede604001dc422b58cd11256c68e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4984a058fe4957697ba4e15243aa3ef6d03fc9b8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22238205"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65353667"
 ---
 # <a name="creating-orchestrations"></a>创建业务流程
-本部分介绍你需要执行创建你的业务流程和设计你的业务流程的各种任务。  
+本部分介绍需要执行，因为创建您的业务流程和设计您的业务流程的各种任务。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [在业务流程设计器中工作](../core/working-in-orchestration-designer.md)  
+-   [使用业务流程设计器](../core/working-in-orchestration-designer.md)  
   
 -   [设计业务流程流](../core/designing-orchestration-flow.md)  
   
@@ -37,15 +37,15 @@ ms.locfileid: "22238205"
   
 -   [在业务流程中使用变量](../core/using-variables-in-orchestrations.md)  
   
--   [在业务流程中使用相关性](../core/using-correlations-in-orchestrations.md)  
+-   [在业务流程中使用关联](../core/using-correlations-in-orchestrations.md)  
   
 -   [在业务流程中使用角色链接](../core/using-role-links-in-orchestrations.md)  
   
--   [使用在业务流程中的端口](../core/using-ports-in-orchestrations.md)  
+-   [在业务流程中使用端口](../core/using-ports-in-orchestrations.md)  
   
 -   [如何在业务流程中使用业务规则](../core/how-to-use-business-rules-in-orchestrations.md)  
   
--   [如何在业务流程中使用地图](../core/how-to-use-maps-in-orchestrations.md)  
+-   [如何在业务流程中使用映射](../core/how-to-use-maps-in-orchestrations.md)  
   
 -   [如何在业务流程中使用 Web 服务](../core/how-to-use-web-services-in-orchestrations.md)  
   
@@ -55,5 +55,5 @@ ms.locfileid: "22238205"
   
 -   [如何导入 BPEL4WS](../core/how-to-import-bpel4ws.md)  
   
-## <a name="see-also"></a>另请参阅  
- [创建使用业务流程设计器的业务流程](../core/creating-orchestrations-using-orchestration-designer.md)
+## <a name="see-also"></a>请参阅  
+ [使用业务流程设计器创建业务流程](../core/creating-orchestrations-using-orchestration-designer.md)

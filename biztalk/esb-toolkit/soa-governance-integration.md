@@ -13,12 +13,12 @@ ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: ccb5ac2d-cd90-414d-a6c7-045a8fe9450b
 ms.author: mandia
-ms.openlocfilehash: 1b989373f4e0f10439374842c2dcf6c8b8226165
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c2dcdc9f40d31a8ea037b1475cdb7a9a1380de44
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023043"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65268790"
 ---
 # <a name="soa-governance-integration"></a>SOA 管理集成
 企业级应用程序必须支持功能强大、 可靠的管理功能，以便能够符合业务要求、 政府立法、 服务级别协议 (Sla) 和客户和贸易合作伙伴的要求。 运行时管理将特别重点，要求和挑战，成功运行面向服务的体系结构 (SOA) – 基于系统满足这些要求。 由业务系统提供的质量是服务的定义其成功或失败的主要因素。  

@@ -1,5 +1,5 @@
 ---
-title: 完成异常 Message1 |Microsoft 文档
+title: 完成异常 Message1 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 25bd6a104adc2825dca694e9a13b24e92f387b9c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0a6e043dd33d80e9c9cbb7771a2b8671da32285a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231453"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356871"
 ---
-# <a name="completing-the-exception-message"></a>完成的异常消息
-### <a name="to-complete-the-exception-message"></a>完成异常消息  
+# <a name="completing-the-exception-message"></a>完成异常消息
+### <a name="to-complete-the-exception-message"></a>若要完成异常消息  
   
--   若要完成异常流，请添加“发送”形状以将错误 Message_3 发送到所监视的文件夹。  
+-   若要完成异常流，添加发送形状以将错误 message_3 发送放入所监视的文件夹。  
   
-## <a name="see-also"></a>另请参阅  
- [使用 BizTalk Server 异常处理](../core/using-biztalk-server-exception-handling5.md)
+## <a name="see-also"></a>请参阅  
+ [使用 BizTalk Server 的异常处理](../core/using-biztalk-server-exception-handling5.md)

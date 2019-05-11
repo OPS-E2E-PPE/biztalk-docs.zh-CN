@@ -1,5 +1,5 @@
 ---
-title: BAM 动态基础结构 |Microsoft 文档
+title: BAM 动态基础结构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,32 +15,32 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3660eeb6f85fb21ff78b7b833b21adbb3af87385
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 2ed2c99ad52068d26a1144bb47cf3d247c6456d7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230445"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358554"
 ---
 # <a name="bam-dynamic-infrastructure"></a>BAM 动态基础结构
-BAM 基础结构包含的 SQL Server 表、 BAM 视图、 存储的过程和作为配置和通过增量托管的 BAM 数据库 （主导入、 存档、 星型架构和分析） 中的数据转换服务 (DTS) 包部署的 BAM 定义。 基础结构是其中，在运行时，事件是关联、 聚合，并且之后可用于查询的用户。  
+BAM 基础结构包括 SQL Server 表、 BAM 视图、 存储的过程和 BAM 数据库 （主导入、 存档、 星型架构和分析） 配置和管理通过增量中的数据转换服务 (DTS) 包部署 BAM 定义。 基础结构是位置，在运行时，事件是相关、 聚合，之后可用于查询的用户。  
   
- 本部分介绍一些基础结构流程。 例如，从应用程序（BAM 定义）提取目标数据后，可以将其存储以便进行查询。 此外，可以维护预先创建的特定数据聚合，以使聚合查询更加迅速。  
+ 本部分介绍一些基础结构流程。 例如后从您的应用程序 （BAM 定义） 中提取所需的数据，, 您可以将其存储，这样就可用于查询。 此外，可以维护更快地聚合查询的数据的某些预创建的聚合。  
   
- 通常，需要在实现数据仓库方面进行广泛的开发工作才能实现此功能。 但是，Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中的 BAM 大大简化了此过程，因为其基于活动和视图定义自动生成 SQL 和 OLAP 基础结构。  
+ 通常情况下，通过广泛的开发工作来实现数据仓库实现此类功能。 Microsoft 中的 BAM[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]极大地简化了此过程中，但是，自动生成基于活动和视图定义的 SQL 和 OLAP 基础结构。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [BAM 定义是什么？](../core/what-is-a-bam-definition.md)  
+-   [BAM 定义概述](../core/what-is-a-bam-definition.md)  
   
--   [什么是 BAM 定义架构？](../core/what-is-a-bam-definition-schema.md)  
+-   [BAM 定义架构概述](../core/what-is-a-bam-definition-schema.md)  
   
 -   [活动数据存储](../core/activity-data-storage.md)  
   
--   [聚合是什么？](../core/what-is-an-aggregation.md)  
+-   [聚合概述](../core/what-is-an-aggregation.md)  
   
 -   [查询 BAM 数据](../core/querying-bam-data.md)  
   
 -   [BAM 基础结构限制](../core/bam-infrastructure-limitations.md)  
   
--   [如何在非英语安装中定义的范围外数值维度警报](../core/define-out-of-range-numeric-dimension-alerts-in-non-english-installations--bam.md)
+-   [如何在非英语系统中定义的范围的数值维度警报](../core/define-out-of-range-numeric-dimension-alerts-in-non-english-installations--bam.md)

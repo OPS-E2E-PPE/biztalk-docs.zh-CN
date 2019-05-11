@@ -19,23 +19,23 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 127673659878738a57045ea1b5bd9f1d1cf16d10
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2bb7ff544b1c6d5ae5559dd4b64348a92cacb56b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37016192"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65337895"
 ---
 # <a name="how-to-enlist-a-send-port-or-send-port-group"></a>如何登记发送端口或发送端口组
-本主题将介绍如何使用 BizTalk Server 管理控制台登记发送端口或发送端口组。 登记发送端口或发送端口组将把发送端口或发送端口组与 BizTalk 主机相关联，并为发送端口或发送端口组创建订阅。 如果发送端口组不包含发送端口，登记发送端口组将不会创建任何订阅。 此外，登记发送端口组不会改变其包含的任何发送端口的状态。  
+本主题介绍如何使用 BizTalk Server 管理控制台来登记发送端口或发送端口组。 登记发送端口或发送端口组的 BizTalk 主机相关联的发送端口或发送端口组，并创建发送端口或发送端口组的订阅。 如果发送端口组不包含发送端口，登记发送端口组不会创建任何订阅。 此外，登记发送端口组不会更改它所包含的任何发送端口的状态。  
   
 > [!NOTE]
->  启动发送端口或发送端口组也会自动登记该发送端口或发送端口组。 此外，默认情况下，启动应用程序会登记并启动它的所有项目。 有关详细信息，请参阅[如何启动发送端口或发送端口组](../core/how-to-start-a-send-port-or-send-port-group.md)。 另请参阅[如何启动和停止 BizTalk 应用程序](../core/how-to-start-and-stop-a-biztalk-application.md)。  
+>  启动发送端口或发送端口组也会自动登记。 此外，默认情况下启动应用程序登记并启动所有项目。 有关详细信息，请参阅[如何启动发送端口或发送端口组](../core/how-to-start-a-send-port-or-send-port-group.md)。 另请参阅[如何启动和停止 BizTalk 应用程序](../core/how-to-start-and-stop-a-biztalk-application.md)。  
   
-## <a name="prerequisites"></a>必要條件  
- 若要执行本主题中的过程，则必须以 BizTalk Server Administrators 组成员的身份登录。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
+## <a name="prerequisites"></a>先决条件  
+ 若要执行本主题中的过程，必须以 BizTalk Server Administrators 组的成员的身份登录。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
   
-### <a name="to-enlist-a-send-port-or-send-port-group"></a>登记发送端口或发送端口组  
+### <a name="to-enlist-a-send-port-or-send-port-group"></a>若要登记的发送端口或发送端口组  
   
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   

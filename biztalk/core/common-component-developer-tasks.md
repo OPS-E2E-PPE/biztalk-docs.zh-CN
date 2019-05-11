@@ -12,17 +12,17 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 55039e4aa2c85cef9f0c3c71a5872c593353d390
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 779cc347176432fee0850221c55da4559909f969
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996790"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357127"
 ---
 # <a name="common-component-developer-tasks"></a>常见组件开发人员任务
-组件开发人员负责设计和开发先进的 BizTalk Server 组件，这些组件以后将用于 BizTalk Server 解决方案中。  
+组件开发人员设计和开发高级稍后在 BizTalk Server 解决方案中使用的 BizTalk Server 组件。  
 
- 为了帮助组件开发人员尽可能有效地工作，下面的列表提供了指向有关开发 BizTalk Server 组件的教程、演练及一般信息的链接。  
+ 为了帮助组件开发人员尽可能提高效率下, 表，请提供的教程、 演练和开发 BizTalk Server 组件的一般信息的链接。  
 
 
 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |

@@ -1,5 +1,5 @@
 ---
-title: 步骤 13： 创建和配置端口 |Microsoft Docs
+title: 步骤 13:创建和配置端口 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,14 +18,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4414795b1c214e8dbe15eb3117527c3cb5227cde
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 09113f9fb108c79630597c5e930e13651e679944
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991934"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288944"
 ---
-# <a name="step-13-create-and-configure-ports"></a>步骤 13： 创建和配置端口
+# <a name="step-13-create-and-configure-ports"></a>步骤 13:创建和配置端口
 在此步骤中，使用端口配置向导来创建和业务流程设计器中配置的端口。 端口指定您的业务流程发送和接收消息与业务流程的方式。 每个端口都具有一个类型、 方向和绑定。 属性共同确定通信、 通信模式、 位置或从其方向[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]发送或接收的消息和进行通信的方式的位置。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 为发送端口使用的最小值较低层协议 (MLLP) 适配器。 MLLP 适配器到接口与其他应用程序，如实验室应用程序、 保险应用程序和旧业务线应用程序使用 TCP 套接字通信。 MLLP 发送适配器表示[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]适配器：  
 
 - 自定义。 仅附带了适配器[!INCLUDE[HL7_CurrentVersion_abbrev](../../includes/hl7-currentversion-abbrev-md.md)]，而不是与 BizTalk Server 的传送。  
@@ -49,7 +49,7 @@ ms.locfileid: "36991934"
 
  在此步骤中，您可以配置的 MLLP 适配器和 SOAP 适配器。  
 
-### <a name="to-create-and-configure-the-ports"></a>创建并配置端口  
+### <a name="to-create-and-configure-the-ports"></a>若要创建和配置的端口  
 
 1. 在业务流程设计器中拖动**端口**形状从工具箱拖到设计视图图面上，左侧端口图面并将该形状放以便与水平对齐**DoorbellReceive**形状。  
 
@@ -76,14 +76,14 @@ ms.locfileid: "36991934"
 8. 使用**端口配置向导**与你在步骤 2 到 7 中，创建一个附加的发送端口使用以下参数：  
 
 
-   |              “属性”               |                   参数                   |
+   |              属性               |                   参数                   |
    |-------------------------------------|-----------------------------------------------|
    |      **端口属性名称**       |                 MLLPSendPort                  |
    |         **端口类型名称**          |               MLLPSendPortType                |
    |      **通信模式**      |                    单向                    |
-   |       **访问限制**       |               公有 - 无限制               |
+   |       **访问限制**       |               公有-无限制               |
    |          **端口绑定**           |                 以后指定                 |
-   | **端口通信方向** | 始终在此端口上发送消息。 |
+   | **端口通信方向** | 我始终在发送消息此端口上。 |
 
 
 9. 在中**业务流程视图**窗口中，使用**类型**，**端口类型**，以及**SOAPReceivePortType**节点已展开，展开**Operation_1**，然后单击**请求**。  
@@ -117,7 +117,7 @@ ms.locfileid: "36991934"
 
 22. 右键单击**BTAHL7 项目**，然后单击**部署**部署 BTAHL7 项目。  
 
-    请继续执行[步骤 14： 将发布为 Web 服务的业务流程](../../adapters-and-accelerators/accelerator-hl7/step-14-publish-the-orchestration-as-a-web-service.md)。  
+    请继续执行[步骤 14:发布为 Web 服务的业务流程](../../adapters-and-accelerators/accelerator-hl7/step-14-publish-the-orchestration-as-a-web-service.md)。  
 
 ## <a name="see-also"></a>请参阅  
  [消息充实教程](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

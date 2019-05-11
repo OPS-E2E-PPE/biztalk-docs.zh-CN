@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f5736a9146a88dd9c9dac6747e381fccc88f18d9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d7e0b0d046b18d62b3d07fc8406f16d73a5be40e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979326"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65348892"
 ---
 # <a name="edifact-interchange-should-have-contained-transactionsetgroup-or-functionalgroup-xml-tags"></a>Edifact 交换应该包含 TransactionSetGroup 或 FunctionalGroup Xml 标记
 ## <a name="details"></a>详细信息  

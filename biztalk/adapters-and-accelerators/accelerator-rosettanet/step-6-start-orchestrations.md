@@ -1,5 +1,5 @@
 ---
-title: 步骤 6： 启动业务流程 |Microsoft Docs
+title: 步骤 6：启动业务流程 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 973d0c5e8628d2363e8192c7faffeaebcc6d63b6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a79ac73ef2b275cd5b3740f6dccd32918f43b493
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993182"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280637"
 ---
-# <a name="step-6-start-orchestrations"></a>步骤 6： 启动业务流程
+# <a name="step-6-start-orchestrations"></a>步骤 6：启动业务流程
 在此步骤中，使用 Microsoft[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]启动 microsoft 业务流程[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]。  
   
-### <a name="to-start-the-btarn-orchestrations-using-visual-studio"></a>使用 Visual Studio 启动 BTARN 业务流程  
+### <a name="to-start-the-btarn-orchestrations-using-visual-studio"></a>启动 BTARN 业务流程使用 Visual Studio  
   
 1.  在中**BTARN**管理控制台中，展开**BizTalk Server 管理**，展开**BizTalk 组**，展开**应用程序**，和然后展开**BizTalk Application 1**。  
   
@@ -36,5 +36,5 @@ ms.locfileid: "36993182"
 4.  单击**业务流程**，并启动所有**BTARN 业务流程**。  
   
 ## <a name="see-also"></a>请参阅  
- [步骤 7： 创建示例 LOB 消息](../../adapters-and-accelerators/accelerator-rosettanet/step-7-create-a-sample-lob-message.md)   
+ [步骤 7：创建示例 LOB 消息](../../adapters-and-accelerators/accelerator-rosettanet/step-7-create-a-sample-lob-message.md)   
  [以编程方式停止和启动业务流程、发送端口和接收位置](../../adapters-and-accelerators/accelerator-rosettanet/code-to-stop-and-start-orchestrations-send-ports-and-receive-locations.md)

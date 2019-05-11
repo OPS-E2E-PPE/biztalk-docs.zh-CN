@@ -12,31 +12,31 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 81486bedb71d69dde815f2849e0faf5b3b841f08
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7b630b586e1252d0afb244deb77ab3e4c7bfaf30
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981286"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65343058"
 ---
-# <a name="how-to-add-value-mapping-flattening-functoids-to-a-map"></a>如何向映射添加“值映射（平展）”Functoid
-**值映射 （平展）** functoid，您可以通过将多个记录转换成一条记录进行平展处理的输入的实例消息的一部分。 在转换 Microsoft Commerce Server 目录时通常执行此操作。  
+# <a name="how-to-add-value-mapping-flattening-functoids-to-a-map"></a>如何添加值映射 （平展） Functoid 映射到
+**值映射 （平展）** functoid，可通过将多个记录转换为单个记录平展输入的实例消息的一部分。 在转换 Microsoft Commerce Server 目录时通常执行此操作。  
   
  有关概念性信息**值映射 （平展）** functoid，请参阅[值映射 （平展） Functoid](../core/value-mapping-flattening-functoid.md)。  
   
-### <a name="to-add-the-value-mapping-flattening-functoid-to-a-map-and-configure-it"></a>向映射添加“值映射(平展)”functoid 并对其进行配置  
+### <a name="to-add-the-value-mapping-flattening-functoid-to-a-map-and-configure-it"></a>向映射添加值映射 （平展） functoid 并将其配置  
   
 1. 与[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]工具箱处于活动状态，单击**高级 Functoid**选项卡以选择该类别的 functoid。  
   
-    此时，将显示所选类别的高级 functoid 列表。  
+    将显示所选类别的高级 functoid 列表。  
   
 2. 拖动**值映射 （平展）** functoid (![](../core/media/bts-tls-valmapflat.gif "bts_tls_valmapflat")) 从工具箱拖到网格页上的适当位置。  
   
    > [!NOTE]
-   >  该 functoid 将放置到显示的网格页上。 如果你想要将该 functoid 放置到其他网格页上，您需要首先显示该其他网格页。  
+   >  该 functoid 将放置上显示的网格页。 如果你想要将该 functoid 放置到其他网格页上，您需要首先显示该其他网格页。  
   
    > [!NOTE]
-   >  如果是构造使用多个 functoid 的映射，则需要考虑它们的左右位置关系。 Functoid 是按照从左到右的顺序执行的。 一个 functoid 的输出只能输入到其右侧的另一个 functoid 中。  
+   >  如果构造一起使用多个 functoid 的映射，您需要考虑它们的左右位置关系。 从左向右执行 Functoid。 Functoid 的输出只能输入到其右侧的另一个 functoid。  
   
 3. 若要建立的第一个输入的参数**值映射 （平展）** functoid 创建输入的链接： 将**值映射 （平展）** 源中的记录或字段节点到 functoid架构，或其左侧的另一个 functoid，具有布尔数据类型，并且，将生成的输入的值为"true"或"false。  
   

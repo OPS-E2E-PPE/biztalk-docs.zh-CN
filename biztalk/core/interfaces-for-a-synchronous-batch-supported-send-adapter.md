@@ -12,15 +12,15 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d14e278869854535695babc9ff8796a833de7217
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 091b735604a0b38044498f712de63ad9eac1c057
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968222"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65331607"
 ---
 # <a name="interfaces-for-a-synchronous-batch-supported-send-adapter"></a>同步的支持批的发送适配器的接口
-可识别批的适配器可以同步或异步发送消息，并且可以执行事务性发送操作。 若要发送消息批，发送适配器必须实现以下接口：  
+可识别批的适配器可以同步或以异步方式发送消息，并且可以执行事务性的发送操作。 若要发送消息批，发送适配器必须实现以下接口：  
   
 - **IBTTransport**  
   
@@ -34,9 +34,9 @@ ms.locfileid: "36968222"
   
 - **IBTTransmitterBatch**  
   
-  对于同步批发送，消息引擎将从适配器获取一个批，并且将要传输的消息添加到该批。 消息引擎将每个消息添加到批处理和发送消息，仅当它调用**完成**批上的方法。 适配器返回`True`有关**bDeleteMessage**为打算同步传输每个消息。 适配器应将消息数据，而不是消息指针保存在其**TransmitMessage**实现。 这是因为消息指针将不再有效后`True`返回，并且不应使用或缓存供以后使用。  
+  对于同步批发送，消息引擎从适配器获取批，并将添加到该批传输的消息。 消息引擎将每个消息添加到批处理和发送消息，仅当它调用**完成**批上的方法。 适配器返回`True`有关**bDeleteMessage**为打算同步传输每个消息。 适配器应将消息数据，而不是消息指针保存在其**TransmitMessage**实现。 这是因为消息指针将不再有效后`True`返回，并且不应使用或缓存供以后使用。  
   
-  下图显示在创建同步的支持批的发送适配器时涉及的对象交互。  
+  下图显示了发送适配器中创建同步的支持批所涉及的对象交互。  
   
   ![](../core/media/ebiz-sdk-devadapter6.gif "ebiz_sdk_devadapter6")  
   同步提交消息的工作流  

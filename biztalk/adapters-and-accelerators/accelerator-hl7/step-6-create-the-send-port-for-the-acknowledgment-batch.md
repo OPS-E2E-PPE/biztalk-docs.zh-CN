@@ -1,5 +1,5 @@
 ---
-title: 步骤 6： 为确认批处理创建发送端口 |Microsoft Docs
+title: 步骤 6：为确认批处理创建发送端口 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3f38b8c7f8e2f486e4de6feca12bf69551221428
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 960e05afa424adf4d23980618170f82987a192ab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004998"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65287949"
 ---
-# <a name="step-6-create-the-send-port-for-the-acknowledgment-batch"></a>步骤 6： 为确认批处理创建发送端口
+# <a name="step-6-create-the-send-port-for-the-acknowledgment-batch"></a>步骤 6：为确认批处理创建发送端口
 在此步骤中，您创建用于传递确认批处理创建的源参与方的发送端口。 这是一个静态单向端口与文件适配器类型。 指定用于源 (\Tutorial_BatchACKDrop) 的文件文件夹位置[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]将删除确认批处理文件。 定义用于指示哪种类型的确认批将发送端口的端口的筛选器。 筛选器指定 Tutorial_BatchSource 和 OutboundBatch 的消息类型的源。  
 
 ### <a name="to-create-the-send-port-for-the-acknowledgment-batch"></a>若要创建确认批处理的发送端口  
 
 1. 在 BizTalk Server 管理控制台中，右键单击**发送端口**，依次指向**新建**，然后单击**静态单向发送端口**。  
 
-2. 在“发送端口属性”对话框中，执行以下操作：  
+2. 在发送端口属性对话框中，请执行以下操作：  
 
 
    |   使用此选项    |                              执行的操作                               |
@@ -74,4 +74,4 @@ ms.locfileid: "37004998"
 
 2. 在参与方属性对话框中，单击**发送端口**在控制台树中。 有关**发送端口**，选择**Tutorial_BatchSource**从下拉列表中，然后单击**确定**。  
 
-   请继续执行[第 7 步： 启动业务流程和重新启动 BizTalk Server](../../adapters-and-accelerators/accelerator-hl7/step-7-start-the-orchestration-and-restart-biztalk-server.md)。
+   请继续执行[步骤 7:启动业务流程和重新启动 BizTalk Server](../../adapters-and-accelerators/accelerator-hl7/step-7-start-the-orchestration-and-restart-biztalk-server.md)。

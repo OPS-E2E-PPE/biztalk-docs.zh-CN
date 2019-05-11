@@ -12,25 +12,25 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fc036be84bb64e794e6109e1ebc4ec730f382878
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8331026992e9715793cf366409cb68904e5058c0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023107"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65298973"
 ---
 # <a name="testing-schemas"></a>测试架构
-在创建架构之后，您可能希望验证该架构的 XML 结构符合您的要求。 您可以对架构执行以下三种操作以进行验证：  
+创建您的架构后，您可能想要验证它想要介绍的 XML 结构。 您可以执行您对其进行验证的架构上的以下三个操作：  
   
-- **实例生成**。 此操作将从架构生成实例消息，创建要显示由该架构指定的 XML 元素和属性的测试数据。  
+- **实例生成**。 此操作将从创建测试数据随附的 XML 元素和属性架构指定的架构生成实例消息。  
   
-- **架构验证**。 此操作将验证架构的内部一致性，确保它符合 XML 架构定义 (XSD) 语言架构标准。  
+- **架构验证**。 此操作将验证架构，确保它符合 XML 架构定义 (XSD) 语言架构标准的内部一致性。  
   
-- **实例验证**。 此操作将依据架构验证给定的实例消息。  
+- **实例验证**。 此操作将验证架构针对给定的实例消息。  
   
-  对于在生产环境中使用架构之前测试该架构，所有这三种操作都非常有用。  
+  所有这三种操作可用于之前将其放入生产环境中测试您的架构。  
   
-  本部分较详细地介绍了这些操作。  
+  本部分介绍了更详细地介绍这些操作。  
   
 ## <a name="in-this-section"></a>本节内容  
   

@@ -1,6 +1,6 @@
 ---
-title: 开始使用的 BizTalk Adapter for 博士 Edwards OneWorld |Microsoft 文档
-description: 安装并单步教程，说明如何为 BizTalk 适配器为博士 Edwards OneWorld BizTalk Server 中
+title: 开始使用 BizTalk 适配器用于 JD Edwards OneWorld |Microsoft Docs
+description: 安装和的分步教程的 BizTalk 适配器用于 BizTalk Server 中的 JD Edwards OneWorld
 ms.custom: ''
 ms.date: 10/16/2017
 ms.prod: biztalk-server
@@ -13,20 +13,20 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3bfae9bd57e79f49fef2d318b88e4f1b43d44301
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: 19528c093d8450f72e8f81cefc5e2fc7d693fbea
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2017
-ms.locfileid: "23450550"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387662"
 ---
-# <a name="get-started-with-biztalk-adapter-for-jd-edwards-oneworld"></a>入门博士 Edwards OneWorld BizTalk 适配器
+# <a name="get-started-with-biztalk-adapter-for-jd-edwards-oneworld"></a>入门 JD Edwards OneWorld 的 BizTalk 适配器
 
 ## <a name="overview"></a>概述
-通过用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器，可以在 BizTalk Server 中使用 JD Edwards OneWorld 业务功能。 本部分介绍适配器，描述其主要功能、描述如何对其进行设置以访问特定于 JD Edwards OneWorld 的信息，并提供一个简短的教程。  
+用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器，可使用 BizTalk Server 中的 JD Edwards OneWorld 业务功能。 本部分介绍适配器，描述其主要功能，介绍了如何将其设置以访问特定于 JD Edwards OneWorld 的信息，并提供简短的教程。  
   
 ## <a name="next-steps"></a>后续步骤
   
--   [安装适用于博士 Edwards OneWorld BizTalk 适配器](../core/installing-biztalk-adapter-for-jd-edwards-oneworld.md)  
+-   [安装用于 JD Edwards OneWorld 的 BizTalk 适配器](../core/installing-biztalk-adapter-for-jd-edwards-oneworld.md)  
   
--   [教程： 使用适用于博士 Edwards OneWorld BizTalk 适配器](../core/tutorial-using-the-biztalk-adapter-for-jd-edwards-oneworld.md)
+-   [教程：使用用于 JD Edwards OneWorld 的 BizTalk 适配器](../core/tutorial-using-the-biztalk-adapter-for-jd-edwards-oneworld.md)

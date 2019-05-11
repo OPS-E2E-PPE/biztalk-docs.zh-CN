@@ -17,21 +17,21 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a45201791912e960976d2e7820ae5421ebefe411
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b309d3e850d37bd4095d375110c643b92fb59422
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972758"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384324"
 ---
 # <a name="how-to-remove-bam-activities"></a>如何删除 BAM 活动
 管理员使用**删除活动**命令以从 BAM 主导入数据库中删除指定的活动。  
   
-### <a name="to-remove-a-bam-activity"></a>删除 BAM 活动  
+### <a name="to-remove-a-bam-activity"></a>若要删除 BAM 活动  
   
-1. 按如下所示打开命令提示符： 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
+1. 打开命令提示符，如下所示：单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2. 导航到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]。  
+2. 导航到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]。  
   
 3. 类型**bm 删除活动-名称：\<活动名称\>**。  
   

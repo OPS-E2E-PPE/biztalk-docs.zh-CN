@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9b4c94b7a7122572724060b2a45447699e15c1a0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 67d3da2162fedcb266e5b754e8bb55893238d7e3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970190"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65303681"
 ---
 # <a name="message-validation"></a>消息验证
 消息验证发生的传入和传出 HL7 消息 HL7 2.X 接收和发送管道。 你可以配置验证只有 MSH （标头） 段，或整个消息正文。 此外，就可以根据唯一本地化版本的架构进行验证。 通过定义一个唯一的命名空间值，并使用此命名空间值 （在参与方级别） 的 HL7 消息传送配置和定义消息的实际架构的目标命名空间属性中完成此操作。 在运行时，Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 使用命名空间和架构的根引用属性的组合来选择消息分析和验证相应的架构。  

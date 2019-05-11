@@ -14,19 +14,19 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f2aef1c49ca4bb87ef2e9388b9cdfcc86d2f35f1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c6f1045e3a9562821c64e74df300ccbf9ab279d7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36988862"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281727"
 ---
 # <a name="setting-up-cidx-estandards-message-exchange"></a>设置 CIDX eStandards 消息交换
 本主题介绍如何设置化工数据交换 (CIDX) eStandards 消息交换。 CIDX 需要设置以下三个属性：  
   
 - `Standard` 为流程配置设置中的属性**CIDX**  
   
-- 流程配置设置中设置为 `True` 的 `Is Single Action` 属性  
+- `Is Single Action` 为流程配置设置中的属性 `True`  
   
 - `0A1 agreement` 在贸易合作伙伴协议中为属性**非 0A1**  
   
@@ -36,7 +36,7 @@ ms.locfileid: "36988862"
   
 1. 单击**启动**，依次指向**所有程序**，指向**Microsoft** [!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]，然后单击[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]**管理控制台**.  
   
-2. 在 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 管理控制台中，展开 [!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]。  
+2. 在中[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]管理控制台中，展开[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]。  
   
 3. 右键单击**流程配置设置**，依次指向**新建**，然后单击**过程配置**。  
   

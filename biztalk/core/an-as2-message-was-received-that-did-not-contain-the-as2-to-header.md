@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0a2390406d202bebd74f45efd84fd3aae6db1137
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f8bee1ee759a8aefb83aa3045808b6ce22689a6a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983462"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359239"
 ---
 # <a name="an-as2-message-was-received-that-did-not-contain-the-as2-to-header"></a>收到的 AS2 消息不包含 AS2-To 标头
 ## <a name="details"></a>详细信息  

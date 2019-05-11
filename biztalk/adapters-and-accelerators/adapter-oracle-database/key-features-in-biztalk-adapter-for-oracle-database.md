@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e63212e0f0c77e020ea4ad1a43639dff09cd7654
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ccba29495a1d74135ba34ab6228523b50dc59595
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995686"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65376466"
 ---
 # <a name="key-features-in-biztalk-adapter-for-oracle-database"></a>用于 Oracle 数据库的 BizTalk 适配器的主要功能
 本部分列出了中的新的和已弃用功能[!INCLUDE[adapteroracle](../../includes/adapteroracle-md.md)]。  
@@ -72,16 +72,16 @@ ms.locfileid: "36995686"
   
     -   REF CURSOR 中的输入和输出数据是类型的相同。  
   
-* "Nil"属性的不正确的行为： 对于所有的简单数据类型，如果设置为"true"nil 属性的值和字段或参数的值不存在则 Oracle 数据库适配器错误地将传指定的值而不是 NULL。 解决方法是，如果你想要传递 NULL 值的字段或参数，则必须确保未指定字段或参数的任何值。 例如，若要将一个字段的 NULL 值传递名为"name":  
+* "Nil"属性的不正确的行为：对于所有的简单数据类型，如果设置为"true"nil 属性的值和字段或参数的值则存在 Oracle 数据库适配器错误地将传递指定的值而不是 NULL。 解决方法是，如果你想要传递 NULL 值的字段或参数，则必须确保未指定字段或参数的任何值。 例如，若要将一个字段的 NULL 值传递名为"name":  
   
   ```  
   <name xsi:nil="true"/>  
   ```  
 * Real、 Float 和长时间数据类型和额外的零 (0) 中选择操作的结果集的值的末尾将不会被截断。 此外，始终在选择操作的结果集返回与实际的精度 8、 Float 和长时间数据类型的值。  
   
-* 处理的记录类型的数据： 为这些节点上的值取决于传递的值**SkipNilNodes**属性绑定。 有关此绑定属性的详细信息，请参阅[用于 Oracle 数据库配置的绑定属性](../../adapters-and-accelerators/adapter-oracle-database/configure-the-binding-properties-for-oracle-database.md)。 
+* 记录类型的数据的处理方式：为这些节点上的值取决于传递的值**SkipNilNodes**属性绑定。 有关此绑定属性的详细信息，请参阅[用于 Oracle 数据库配置的绑定属性](../../adapters-and-accelerators/adapter-oracle-database/configure-the-binding-properties-for-oracle-database.md)。 
   
-* 出站操作： 没有值发送不具有在 XML 输入文件中指定的值的参数。 如果存储过程中指定默认值，则 Oracle 数据库将使用该值，因为由适配器不发送任何值。 如果需要发送 NULL 值，用户需要通过设置为"true。"nil"属性的值输入的 XML 文件中指定 NULL 节点  
+* 出站操作：没有输入的 XML 文件中指定的值的参数会不发送任何值。 如果存储过程中指定默认值，则 Oracle 数据库将使用该值，因为由适配器不发送任何值。 如果需要发送 NULL 值，用户需要通过设置为"true。"nil"属性的值输入的 XML 文件中指定 NULL 节点  
   
 * 支持命令的超时值。  
   
@@ -89,15 +89,15 @@ ms.locfileid: "36995686"
   
 ### <a name="biztalk-scenario"></a>BizTalk 方案  
   
-- 出站操作： 如果**UseAmbientTransaction**绑定属性为"True"上的 Oracle 数据库的操作，并且在 BizTalk MessageBox 数据库在同一分布式事务中执行。 有关中的事务的详细信息[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]，请参阅[与 Oracle 数据库适配器处理事务](../../adapters-and-accelerators/adapter-oracle-database/handle-transactions-with-the-oracle-database-adapter.md)。  
+- 出站操作：如果**UseAmbientTransaction**绑定属性为"True"上的 Oracle 数据库的操作，并且在 BizTalk MessageBox 数据库在同一分布式事务中执行。 有关中的事务的详细信息[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]，请参阅[与 Oracle 数据库适配器处理事务](../../adapters-and-accelerators/adapter-oracle-database/handle-transactions-with-the-oracle-database-adapter.md)。  
   
-- 入站操作： 不能使用请求-响应接收端口中的[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]入站操作使用[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。 只有单向接收端口可以用于。  
+- 入站的操作：不能使用请求-响应接收端口中的[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]入站操作使用[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]。 只有单向接收端口可以用于。  
   
 ### <a name="other-scenarios"></a>其他方案  
   
-- 出站操作： 适配器并不会启动一个事务。 如果用户想要在同一事务中插入的多个行，则用户的责任，以执行此操作 System.Transactions 事务范围内。 用户还需要设置的值**UseAmbientTransaction**属性设置为**True**。 有关中的事务的详细信息[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]，请参阅[与 Oracle 数据库适配器处理事务](../../adapters-and-accelerators/adapter-oracle-database/handle-transactions-with-the-oracle-database-adapter.md)。  
+- 出站操作：该适配器并不会启动一个事务。 如果用户想要在同一事务中插入的多个行，则用户的责任，以执行此操作 System.Transactions 事务范围内。 用户还需要设置的值**UseAmbientTransaction**属性设置为**True**。 有关中的事务的详细信息[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]，请参阅[与 Oracle 数据库适配器处理事务](../../adapters-and-accelerators/adapter-oracle-database/handle-transactions-with-the-oracle-database-adapter.md)。  
   
-- 出站操作： Sll 相同 IRequestChannel/代理对象上执行的操作可能不会对同一个物理连接到 Oracle 数据库执行。  
+- 出站操作：不可能在同一物理连接到 Oracle 数据库上执行 Sll 相同 IRequestChannel/代理对象上执行的操作。  
   
 - WCF 通道模型：[!INCLUDE[adapteroracle_short](../../includes/adapteroracle-short-md.md)]使用 WCF 通道模型时，不支持 IReplyChannel。 但是，可用于 IInputChannel 执行入站的操作。 此外，有关的事务，该适配器依赖 WCF 调度程序启动的事务执行轮询语句和发布针对 Oracle 数据库的轮询语句。 可以通过在 servicebehavior 设置适当的值控制的事务隔离级别和 WCF 调度程序启动的事务的超时时间。  
   

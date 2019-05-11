@@ -13,12 +13,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 60479097dc9e56c2bc0c525d0de7d7a33afccaa5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9cfbacbce925ae81e41467196e052d258d59124e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978262"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65278955"
 ---
 # <a name="sql-server-settings-that-should-not-be-changed"></a>不应更改的 SQL Server 设置
 设置时[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]期间的操作准备情况过程[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，您应该对以下设置进行更改。  
@@ -30,7 +30,7 @@ ms.locfileid: "36978262"
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]存储的过程提供正确的连接，并尽可能以尝试使查询优化器很少，将计划更改锁定提示。 这些存储的过程通过构建查询，以便查询优化器执行不相关的最大程度地提供一致的查询执行。  
   
- 有关详细信息，请参阅[KB 899000: BizTalk Server 使用的 SQL Server 实例的并行度设置](https://support.microsoft.com/help/899000/the-parallelism-setting-for-the-instance-of-sql-server-when-you-config)。  
+ 有关详细信息，请参阅[KB 899000:BizTalk Server 使用的 SQL Server 实例的并行度设置](https://support.microsoft.com/help/899000/the-parallelism-setting-for-the-instance-of-sql-server-when-you-config)。  
   
 ## <a name="sql-server-statistics-on-the-messagebox-database"></a>在 MessageBox 数据库上的 SQL Server 统计信息  
  默认情况下关闭的以下选项[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]MessageBox 数据库时创建它：  
@@ -55,7 +55,7 @@ ms.locfileid: "36978262"
 ## <a name="default-settings-for-the-database-index-rebuilds-and-defragmentation"></a>数据库索引重新生成和碎片整理的默认设置  
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 不支持磁盘碎片整理的索引。 "DBCC INDEXDEFRAG"和"ALTER INDEX... 重新组织..." 不受支持，因为它们使用页锁定，这可能导致阻塞和死锁[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 执行支持数据库索引重新生成 （"DBCC DBREINDEX"和"ALTER INDEX... 重新生成..."），但它们仅应执行在维护时段时[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]未处理的数据。 索引重新生成时[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]正在处理的数据不受支持。  
   
- 有关详细信息，请参阅[KB 917845： 体验阻塞，当您尝试连接到 BizTalk Server 中在 BizTalkMsgBoxDb 数据库死锁条件或其他 SQL Server 问题"](https://support.microsoft.com/help/917845/you-experience-blocking--deadlock-conditions--or-other-sql-server-issu)。  
+ 有关详细信息，请参阅[KB 917845:遇到阻止，当您尝试连接到 BizTalk Server 中在 BizTalkMsgBoxDb 数据库死锁条件或其他 SQL Server 问题"](https://support.microsoft.com/help/917845/you-experience-blocking--deadlock-conditions--or-other-sql-server-issu)。  
   
  索引碎片不太多的性能问题的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]因为它将针对 DSS 系统或执行索引扫描的 OLTP 系统。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 执行极具选择性的查询和更新和[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]存储的过程并不会导致表扫描或索引扫描。  
   

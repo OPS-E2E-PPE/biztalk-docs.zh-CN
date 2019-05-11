@@ -17,17 +17,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2601bcd6e68f8752699474c4d02295d353064083
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e6a56fbeca1e2e6d362cef94dd6aa68161152b4b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022899"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65342225"
 ---
 # <a name="how-to-configure-a-wcf-netnamedpipe-receive-handler"></a>如何配置 WCF-NetNamedPipe 接收处理程序
-可使用以下过程配置 WCF-NetNamedPipe 接收处理程序。  
+使用以下过程来配置 Wcf-netnamedpipe 接收处理程序。  
 
-### <a name="to-change-global-variables-for-a-wcf-netnamedpipe-receive-handler"></a>更改 WCF-NetNamedPipe 接收处理程序的全局变量  
+### <a name="to-change-global-variables-for-a-wcf-netnamedpipe-receive-handler"></a>若要更改全局变量为 Wcf-netnamedpipe 接收处理程序  
 
 1. 在 BizTalk 管理控制台中，展开[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**管理**，展开**BizTalk 组**，展开**平台设置**，然后展开**适配器**。  
 
@@ -40,7 +40,7 @@ ms.locfileid: "37022899"
 
    |        使用此选项         |                                                                                                                         执行的操作                                                                                                                         |
    |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | **最大连接数** | 指定监听程序可以拥有的等待应用程序接受的最大连接数。 在超过此配额值时，将删除新的传入连接，而不是等待接受这些连接。<br /><br /> 默认值为 10。 |
+   | **最大连接数** | 指定的最大侦听器可以拥有等待接受的应用程序的连接数。 当超过此配额值时，会删除新的传入连接而不是等待接受。<br /><br /> 默认值为 10。 |
 
 
 5. 单击“确定” 。  

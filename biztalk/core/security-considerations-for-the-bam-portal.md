@@ -1,5 +1,5 @@
 ---
-title: BAM 门户的安全注意事项 |Microsoft 文档
+title: 有关 BAM 门户的安全注意事项 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,31 +19,31 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5b0f5220eba5b66daf41dffc7ab74f93df8bb509
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 22aa95167640482ccd2e00dfbfd98b0a323da1a9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269381"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65280312"
 ---
-# <a name="security-considerations-for-the-bam-portal"></a>BAM 门户的安全注意事项
-遵循最小权限原则，用户帐户在 BAM 门户中应使用受限制的权限来执行日常的任务。 在设置 BAM 的用户帐户时请记住以下几点，通过适当的用户访问权限来平衡安全性。  
+# <a name="security-considerations-for-the-bam-portal"></a>有关 BAM 门户的安全注意事项
+使用最小特权原则，用户帐户应具有限制性的权限在 BAM 门户中执行日常任务。 请设置 BAM 来平衡安全性具有适当访问权限的用户的用户帐户时注意以下几点。  
   
 ## <a name="user-accounts"></a>用户帐户  
- 使用最小权限的用户帐户不能使用 BAM 门户分布式的 navigationfeature。 要使用此功能，必须授予这些帐户足够的权限，使其不仅可以访问本地计算机上的 Web Services，也能够访问远程计算机上的 Web Services。  
+ 不能使用 BAM 门户分布式的 navigationfeature 具有最低权限的用户帐户。 若要能够使用此功能，这些帐户必须具有足够权限以允许对 Web 服务的访问，远程计算机上以及在本地计算机上。  
   
- BAM Web Services 的用户帐户必须具有访问所有引用的数据库的权限，并且在引用的数据库中必须是 BAM_ManagementWS 角色的成员。  
+ BAM Web services 的用户帐户必须有权访问所有引用的数据库，并且必须被引用数据库中的 BAM_ManagementWS 角色的成员。  
   
- 对于下面的用户类型，应注意以下事项：  
+ 对于以下用户类型，您应注意以下事项：  
   
--   域用户必须具有对要访问的主导入数据库的宿主远程计算机的访问权限。  
+-   域用户，必须在远程计算机上正在访问该主机主导入数据库具有访问权限。  
   
--   指定为“本地用户”角色的用户无法使用分布式导航。  
+-   分配本地用户角色的用户不能使用分布式的导航。  
   
 ## <a name="administrator-accounts"></a>管理员帐户  
- 管理员必须是 securityadmin 或 sysadmin 组的成员，才能授予域用户权限。  
+ 管理员必须是 securityadmin 或 sysadmin 组的成员的域用户授予权限。  
   
- 要运行 BAM 管理实用程序，您必须至少是 BAM 数据库的数据库操作员。  
+ 若要运行 BAM 管理实用程序，您必须是 BAM 数据库的至少一个数据库运算符。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [BAM 门户](../core/bam-portal.md)

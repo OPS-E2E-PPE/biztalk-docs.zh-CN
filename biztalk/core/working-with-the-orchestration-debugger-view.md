@@ -1,5 +1,5 @@
 ---
-title: 使用业务流程调试器视图 |Microsoft 文档
+title: 使用业务流程调试器视图 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,19 +15,19 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: db77bb1c7805d39bc4f11fa217ba931769e6130b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 5835ee172a31e5a084d4be4fb0c6fa0591cfcde1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289389"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65277220"
 ---
 # <a name="working-with-the-orchestration-debugger-view"></a>使用业务流程调试器视图
-通过右键单击结果列表中的单元格，然后选择“业务流程调试器”，可以访问“业务流程调试器”视图。  
+可以通过右键单击结果列表中的单元格并选择业务流程调试器来访问业务流程调试器视图。  
   
- 业务流程调试器可显示单个实例的技术性处理活动。 该视图可显示业务流程的呈现图像。  
+ 业务流程调试器显示单个实例的技术性处理活动。 该视图显示业务流程的呈现的图像。  
   
- 从“业务流程调试器”视图，您可以转到“消息流”视图。  
+ 从业务流程调试器视图中，你可以转到消息流视图。  
   
 ## <a name="in-this-section"></a>本节内容  
   

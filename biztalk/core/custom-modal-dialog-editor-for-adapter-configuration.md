@@ -1,5 +1,5 @@
 ---
-title: 为适配器配置的自定义模式对话框编辑器 |Microsoft 文档
+title: 为适配器配置的自定义模式对话框编辑器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3408df319f6c90fb75099463422fb1a7687bdd27
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 29556f71c830336e95c3cf8d738da929f9bb4ff8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239229"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65353333"
 ---
 # <a name="custom-modal-dialog-editor-for-adapter-configuration"></a>适配器配置的的自定义模式对话框编辑器
-自定义编辑器的代码演示一个派生自的编辑器**System.Drawing.Design.UITypeEditor**显示用于输入密码模式弹出对话框中的类。 **GetEditStyle**方法重写返回**UIEditorEditStyle.Modal**以指示模式窗体子控件。 服务方法**ShowDialog**管理控制创建与**CreatePassword**。 **ShowDialog**返回**DialogResult**在通常的方式 （例如，switch 语句） 中在与处理**DialogResult.OK**大小写更改仅值。  
+自定义编辑器的代码显示了派生自编辑器**System.Drawing.Design.UITypeEditor**显示用于输入密码模式弹出对话框中的类。 **GetEditStyle**方法重写返回**UIEditorEditStyle.Modal**以指示模式窗体子控件。 服务方法**ShowDialog**管理使用创建的控件**CreatePassword**。 **ShowDialog**将返回**DialogResult**按常规方式 （例如，switch 语句） 在使用处理**DialogResult.OK**大小写更改仅为值。  
   
  以下代码是自定义模式编辑器的类定义：  
   
@@ -100,7 +100,7 @@ namespace AdapterManagement.ComponentModel
             return new PasswordForm(PasswordUITypeEditor.PasswordChar);  
 ```  
   
- 以下代码是自定义对话框的类定义：  
+ 以下代码是自定义对话框中的类定义：  
   
 ```  
 /*************************************************************************  
@@ -307,8 +307,8 @@ namespace Microsoft.BizTalk.Samples.CustomUITypeEditors
 }  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [自定义适配器配置设计器](../core/custom-adapter-configuration-designer.md)   
- [适配器配置的的自定义下拉列表编辑器](../core/custom-drop-down-editor-for-adapter-configuration.md)   
- [适配器配置的的自定义类型转换器](../core/custom-type-converter-for-adapter-configuration.md)   
- [适配器的高级的配置组件](../core/advanced-configuration-components-for-adapters.md)
+ [适配器配置的自定义下拉编辑器](../core/custom-drop-down-editor-for-adapter-configuration.md)   
+ [适配器配置的自定义类型转换器](../core/custom-type-converter-for-adapter-configuration.md)   
+ [适配器的高级配置组件](../core/advanced-configuration-components-for-adapters.md)

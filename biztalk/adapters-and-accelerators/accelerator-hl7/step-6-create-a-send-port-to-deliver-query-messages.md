@@ -1,5 +1,5 @@
 ---
-title: 步骤 6： 创建用于传递查询消息的发送端口 |Microsoft Docs
+title: 步骤 6：创建用于传递查询消息的发送端口 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,21 +14,21 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 24e65ec7bc4e04850907609fc6d1d63e6f166593
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5039f73a71e0f34aa00069f4b6bfb1f536395529
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004046"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65287990"
 ---
-# <a name="step-6-create-a-send-port-to-deliver-query-messages"></a>步骤 6： 创建用于传递查询消息的发送端口
+# <a name="step-6-create-a-send-port-to-deliver-query-messages"></a>步骤 6：创建用于传递查询消息的发送端口
 在此步骤中，创建发送端口以将传入的查询 (QRY ^ Q01 消息) 到医院信息系统 (HIS)。  
 
 ### <a name="to-create-the-hissend-send-port"></a>若要创建 HIS_Send 发送端口  
 
 1. 在 BizTalk Server 管理控制台中，右键单击**发送端口**，依次指向**新建**，然后选择**静态单向发送端口**。  
 
-2. 在“发送端口属性”对话框中，执行以下操作：  
+2. 在发送端口属性对话框中，请执行以下操作：  
 
 
    |      使用此选项      |                        执行的操作                        |
@@ -70,4 +70,4 @@ ms.locfileid: "37004046"
 
 7. 在管理控制台中，选择**发送端口**，右键单击**HIS_Send**，然后单击**启动**。  
 
-   请继续执行[步骤 7： 创建用于传递响应消息的发送端口](../../adapters-and-accelerators/accelerator-hl7/step-7-create-a-send-port-to-deliver-response-messages.md)。
+   请继续执行[步骤 7:创建用于传递响应消息的发送端口](../../adapters-and-accelerators/accelerator-hl7/step-7-create-a-send-port-to-deliver-response-messages.md)。

@@ -1,5 +1,5 @@
 ---
-title: 演练： 创建简单业务策略 |Microsoft Docs
+title: 演练：创建简单业务策略 |Microsoft Docs
 ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 25
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1cecf7078592d322f9cc9777aeb530759c5ecf4c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8ad7eb892174c850d991ae9fdc7cdff0b4fbf241
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023857"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65262130"
 ---
-# <a name="walkthrough-creating-a-simple-business-policy"></a>演练： 创建简单业务策略
+# <a name="walkthrough-creating-a-simple-business-policy"></a>演练：创建简单业务策略
 本演练提供使用业务规则编辑器创建一个名为的简单业务策略的分步过程**ProcessPurchaseOrder**包含一个名为规则**ApprovedRule**。 **ApprovedRule**规则需要用户以提交 XML 文档作为事实，并设置的值**状态**到文档中字段**已批准**如果的值**Quantity**字段是否小于或等于**500**。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  您必须熟悉要执行本演练的业务规则框架的基础知识。 如果您不熟悉业务规则框架，我们建议你阅读在业务规则框架的体系结构概述[业务规则引擎](../core/business-rules-engine.md)执行本演练之前。  
   
 ## <a name="overview-of-this-walkthrough"></a>本演练概述  
- 本概览包含两个过程，如下表所述。  
+ 本演练包含两个过程，如下表中所述。  
   
 |过程标题|过程说明|  
 |---------------------|---------------------------|  
@@ -37,7 +37,7 @@ ms.locfileid: "37023857"
   
 1.  上**启动**菜单中，打开**记事本**。  
   
-2.  在 **“文件”** 菜单上，指向 **“新建”**，然后单击 **“文件”**。  
+2.  上**文件**菜单，依次指向**新建**，然后单击**文件**。  
   
 3.  将以下 XML 文本复制到编辑器：  
   
@@ -107,9 +107,9 @@ ms.locfileid: "37023857"
 8. 在属性窗口中的值更改**文档类型**属性从**PO**到**RuleTest.PO**。  
   
    > [!NOTE]
-   >  您将创建一个名为的 BizTalk 项目**RuleTest**后面[演练： 从业务流程调用策略](../core/walkthrough-invoking-the-policy-from-an-orchestration.md)演练。 中的演练中，您将添加**PO.xsd**到项目文件中，创建调用业务流程**ProcessPurchaseOrder**策略，然后测试策略。 若要测试的策略与业务流程，您需要确保您更改**文档类型**属性设置为**\<项目名称\>。\<SchemaName\>**，即**RuleTest.PO**这种情况下。  
+   >  您将创建一个名为的 BizTalk 项目**RuleTest**更高版本中[演练：从业务流程调用策略](../core/walkthrough-invoking-the-policy-from-an-orchestration.md)演练。 中的演练中，您将添加**PO.xsd**到项目文件中，创建调用业务流程**ProcessPurchaseOrder**策略，然后测试策略。 若要测试的策略与业务流程，您需要确保您更改**文档类型**属性设置为**\<项目名称\>。\<SchemaName\>**，即**RuleTest.PO**这种情况下。  
   
-    ![BRE&#45;演练&#45;ChangeDocType](../core/media/e9a370fd-d9b2-48f0-ad0e-85a5428a9c21.gif "e9a370fd-d9b2-48f0-ad0e-85a5428a9c21")  
+    ![BRE&#45;Walkthrough&#45;ChangeDocType](../core/media/e9a370fd-d9b2-48f0-ad0e-85a5428a9c21.gif "e9a370fd-d9b2-48f0-ad0e-85a5428a9c21")  
   
 9. 在事实浏览器窗口中，展开**PurchaseOrder**，然后展开**项**。  
   
@@ -135,16 +135,16 @@ ms.locfileid: "37023857"
   
 ## <a name="comments"></a>注释  
   
--   一个策略可拥有一个或多个规则。 你将添加另一个规则**DeniedRule**，在[演练： 向策略添加规则](../core/walkthrough-adding-a-rule-to-the-policy.md)演练。  
+-   策略可以有一个或多个规则。 你将添加另一个规则**DeniedRule**，请在[演练：向策略添加规则](../core/walkthrough-adding-a-rule-to-the-policy.md)演练。  
   
--   当策略处于“已保存”状态时，您可以修改策略以添加更多规则及更改条件和操作。  
+-   您可以修改策略以添加更多的规则、 更改条件，以及当策略处于已保存状态时更改操作。  
   
 -   可以通过指定优先级的规则执行**优先级**上业务规则编辑器中的规则的属性。 例如，如果您单击**ApprovedRule**策略浏览器窗口中的节点，您可以看到**优先级**属性窗口中的属性。 数字越大，规则优先级越高。  
   
 -   您可以使用 XML 架构、 数据库或.NET 程序集作为数据源的策略。 在本演练中，使用 XML 架构作为数据源。 应将该架构的 XML 文档实例作为规则引擎以执行策略的事实提交。  
   
 ## <a name="next-steps"></a>后续步骤  
- 现在，已完成本演练中，执行[演练： 测试策略](../core/walkthrough-testing-the-policy.md)演练中，为您提供用于测试的分步说明**ProcessPurchaseOrder**策略，在本演练中创建。  
+ 现在，已完成本演练中，执行[演练：测试策略](../core/walkthrough-testing-the-policy.md)演练中，为您提供用于测试的分步说明**ProcessPurchaseOrder**本演练中创建的策略。  
   
 ## <a name="see-also"></a>请参阅  
  [关于业务规则](../core/about-business-rules.md)

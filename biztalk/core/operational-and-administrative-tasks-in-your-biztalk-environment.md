@@ -1,5 +1,5 @@
 ---
-title: 在 BizTalk 环境中的操作和管理任务 |Microsoft 文档
+title: 在 BizTalk 环境中的操作和管理任务 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,15 +17,15 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ffb132fe5c28d7fa1ef148c42d3ef5c98ac56e31
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: a594e880d70fa10fa80861d86e29f4589b357de6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26006862"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65263329"
 ---
 # <a name="operational-and-administrative-tasks-in-your-biztalk-environment"></a>在 BizTalk 环境中的操作和管理任务
-BizTalk Server 包括使管理 BizTalk Server 速度更快，比以往版本的 BizTalk Server 中的新增功能。 本部分介绍有关管理 BizTalk Server 的信息。  
+BizTalk Server 包含新功能，使 BizTalk Server 更快、 比在以前版本的 BizTalk Server 更轻松的管理。 本部分提供有关管理 BizTalk Server 的信息。  
   
 ## <a name="in-this-section"></a>本节内容  
   

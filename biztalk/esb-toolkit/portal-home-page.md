@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1cec16922e7d7f5075942577750867c4739602e9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9c02b37b9c4ccf0c1acd03d6040c2e0169f86992
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011022"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65295163"
 ---
 # <a name="portal-home-page"></a>门户主页
 图 1 显示了主页上，其中包含四个部分：  

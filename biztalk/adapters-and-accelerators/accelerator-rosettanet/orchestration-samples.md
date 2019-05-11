@@ -16,15 +16,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cd0afe156d33dca1dabc55f31203fbeecbbb37d9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bad72680d93d7aa14d7a9ca9302edfa26ef28731
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977182"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282884"
 ---
 # <a name="orchestration-samples"></a>业务流程示例
-The Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]软件开发工具包 (SDK) 包含几个业务流程示例。 本节提供了有关这些业务流程示例所演示功能的详细信息、生成和运行这些示例的说明以及预期得到的结果。  
+The Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]软件开发工具包 (SDK) 包含几个业务流程示例。 本部分提供有关这些业务流程示例，说明用于构建和运行示例中，以及可以预期的结果所演示的功能的详细的信息。  
   
 ## <a name="in-this-section"></a>本节内容  
   

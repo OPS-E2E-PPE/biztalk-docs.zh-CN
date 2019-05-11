@@ -1,5 +1,5 @@
 ---
-title: 步骤 5： 创建用于传递消息的发送端口 |Microsoft Docs
+title: 步骤 5：创建用于传递消息的发送端口 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5ec45b98cf1ef5152f52e6d11c9d3f6d150c6b55
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ec8a5919c6cebaa8d1a6a977bdae92834023745d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001678"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288014"
 ---
-# <a name="step-5-create-a-send-port-to-deliver-messages"></a>步骤 5： 创建用于传递消息的发送端口
+# <a name="step-5-create-a-send-port-to-deliver-messages"></a>步骤 5：创建用于传递消息的发送端口
 此步骤中，创建并配置用于发送包含接收的批中的单个消息的端口。 稍后在本教程中，将在中启用发起方 (Tutorial_BatchSource) 的碎片[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]配置资源管理器。 因此，BizTalk 集成引擎将拆分批处理为单个消息和[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]将通过在此步骤中创建的发送端口发送这些消息。  
 
  创建此端口是静态的以便仅将 MLLP 适配器，与相关联，而只会发送到特定目标 （目标业务线应用程序）。 在本教程中，该目标是 MESA_IS，MSH5 单条消息中。 用于限制通过过滤掉符合 ACK_024_GLO_DEF 架构或任何静态确认 (ACK) 消息发送消息，而不是确认，对该端口的筛选器创建端口。  
@@ -30,7 +30,7 @@ ms.locfileid: "37001678"
 
 1. 在 BizTalk Server 管理控制台中，右键单击**发送端口**，依次指向**新建**，然后单击**静态单向发送端口**。  
 
-2. 在“发送端口属性”对话框中，执行以下操作：  
+2. 在发送端口属性对话框中，请执行以下操作：  
 
 
    |      使用此选项      |                              执行的操作                               |
@@ -78,4 +78,4 @@ ms.locfileid: "37001678"
 
 8. 在管理控制台中，单击**发送端口**，右键单击**Tutorial_2wayMsg**，然后单击**启动**。  
 
-   请继续执行[第 6 步： 创建用于传递确认消息的发送端口](../../adapters-and-accelerators/accelerator-hl7/step-6-create-a-send-port-to-deliver-acknowledgments.md)。
+   请继续执行[步骤 6:创建用于传递确认消息的发送端口](../../adapters-and-accelerators/accelerator-hl7/step-6-create-a-send-port-to-deliver-acknowledgments.md)。

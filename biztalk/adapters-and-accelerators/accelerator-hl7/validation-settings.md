@@ -15,12 +15,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 01f85c02434f8b20124258d95fd484c79809b509
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 92fa9c8106dd8d00b3d7090e05d65b7d2632d193
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966318"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65285344"
 ---
 # <a name="validation-settings"></a>验证设置
 使用[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]，可以验证你对 HL7 标准的消息。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 可确保发送或接收的消息具有符合 HL7 标准的消息结构和正文段。 此外可以验证 HL7 支持自定义数据类型，并允许尾部分隔符。 您使用[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]配置资源管理器**验证**选项卡可配置验证。  
@@ -47,7 +47,7 @@ ms.locfileid: "36966318"
 
 -   单击**启动**，单击**程序**，单击**Microsoft BizTalk\<版本\>Accelerator for HL7**，然后单击**BTAHL7 配置资源管理器**。  
 
-#### <a name="to-configure-validation-settings"></a>配置验证设置  
+#### <a name="to-configure-validation-settings"></a>若要配置验证设置  
 
 1. 在 BTAHL7 配置资源管理器上**验证**选项卡上，执行以下操作：  
 
@@ -60,7 +60,7 @@ ms.locfileid: "36966318"
    |            **架构 Namespace**            | 键入架构命名空间位置。 默认值是 http://microsoft.com/HealthCare/HL7/2X。 |
 
 
-2. 单击 **“保存”**。  
+2. 单击“保存” 。  
 
 ## <a name="see-also"></a>请参阅  
  [日志记录配置](../../adapters-and-accelerators/accelerator-hl7/logging-configuration.md)   

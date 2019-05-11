@@ -1,5 +1,5 @@
 ---
-title: 使用 BizTalk Server 项目进行单元测试 |Microsoft 文档
+title: 使用 BizTalk Server 项目进行单元测试 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: da7147f4c2500946fb97c47592a2a4a35d3dcf62
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 19cb904341baf5d6a48af2ea55006522793b3d59
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26008118"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292637"
 ---
 # <a name="unit-testing-with-biztalk-server-projects"></a>使用 BizTalk Server 项目进行单元测试
-BizTalk Server 引入单元测试可在中启用的功能**部署**BizTalk 项目属性页。 以下屏幕截图显示当你右键单击某个项目并单击时从项目设计器访问此项目设置**属性**。  
+BizTalk Server 引入了单元测试功能，可以在启用了**部署**BizTalk 项目属性页。 以下屏幕截图显示右键单击项目，然后单击从项目设计器访问此项目设置**属性**。  
   
  ![](../core/media/projectdesignerenableunittesting.gif "ProjectDesignerEnableUnitTesting")  
   
- **项目设计器公开启用单元测试项目属性中的部署选项卡的屏幕截图。**  
+ **项目设计器将公开启用单元测试项目属性中的部署选项卡的屏幕截图。**  
   
- 此功能允许您为架构、映射和管道创建单元测试。 本部分中的主题提供使用单元测试功能的一些示例方法。 启用此功能并且重建项目之后，将从以下基类中派生项目类以支持单元测试。  
+ 此功能允许你创建单元测试的架构、 映射和管道。 在本部分中的主题提供使用单元测试功能的一些示例方法。 当启用此功能并重新生成项目，类将派生自以下基类以支持单元测试的项目。  
   
 |项目类型|基类|  
 |-------------------|----------------|  
@@ -36,9 +36,9 @@ BizTalk Server 引入单元测试可在中启用的功能**部署**BizTalk 项�
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [使用单元测试与架构和映射的功能](../core/using-the-unit-testing-feature-with-schemas-and-maps.md)  
+-   [使用单元测试功能架构和映射](../core/using-the-unit-testing-feature-with-schemas-and-maps.md)  
   
--   [使用单元测试使用管道功能](../core/using-the-unit-testing-feature-with-pipelines.md)  
+-   [使用单元测试功能管道](../core/using-the-unit-testing-feature-with-pipelines.md)  
   
 ## <a name="related-sections"></a>相关章节  
  [使用单元测试 (Visual Studio)](http://go.microsoft.com/fwlink/?LinkId=128890)

@@ -1,5 +1,5 @@
 ---
-title: 管理和跟踪体系结构 |Microsoft 文档
+title: 管理和跟踪体系结构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 660d4e71bc70d3ad8bc808040d4b56d6656753d1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9a33d09fab9b79240574fc8e0254065345230f3a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262037"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330046"
 ---
 # <a name="management-and-tracking-architecture"></a>管理和跟踪体系结构
 本主题讨论的组件和体系结构管理和跟踪。  
@@ -32,6 +32,6 @@ ms.locfileid: "22262037"
   
 -   [业务活动监视 (BAM)](../core/business-activity-monitoring-bam.md)  
   
--   [规划消息和跟踪的实例](../core/planning-for-message-and-instance-tracking.md)  
+-   [规划消息和实例跟踪](../core/planning-for-message-and-instance-tracking.md)  
   
--   [跟踪数据库中记录大小](../core/record-size-in-tracking-databases.md)
+-   [跟踪数据库中的记录大小](../core/record-size-in-tracking-databases.md)

@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9c19702cfa7179399ee89f6799b65f1d2cec27a3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 50813db21de9505b6c417be8950279fcd62a37cf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977294"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65277209"
 ---
 # <a name="clustering-the-master-secret-server"></a>聚类分析主密钥服务器
 BizTalk Server 应用程序服务维护硬编码依赖于随一起安装的企业单一登录 (SSO) 服务[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 SSO 服务必须能够与启动主密钥服务器进行通信。 我们建议您在主密钥服务器提供容错能力的主密钥服务器上群集 SSO 服务。 有关详细信息，请参阅[高可用性 SSO 安装选项](http://go.microsoft.com/fwlink/?LinkId=156838)(<http://go.microsoft.com/fwlink/?LinkId=156838>) 在 BizTalk Server 帮助。  

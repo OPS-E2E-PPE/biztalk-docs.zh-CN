@@ -1,5 +1,5 @@
 ---
-title: 登记方 （角色节点） |Microsoft 文档
+title: 已登记参与方 （角色节点） |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,19 +14,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 662f4221213240df2feb63eca0f75d96aa44449f
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e52f53c08673d1c270202da76113a131007e8ec3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22239685"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65349473"
 ---
-# <a name="enlisted-parties-role-node"></a>已登记参与方（角色节点）
-对于任何“已登记参与方”节点，只要它包含与通过某个绑定文件导出的角色关联的已登记参与方相关的特定信息，则该绑定文件的“已登记参与方”节点就是此节点的父节点。  
+# <a name="enlisted-parties-role-node"></a>已登记参与方 （角色节点）
+绑定文件的已登记参与方节点是所有已登记参与方节点包含有关与绑定文件一起导出的角色相关联的已登记参与方的特定信息的父节点。  
   
-## <a name="nodes-in-the-enlisted-parties-node"></a>“已登记参与方”节点中的节点  
+## <a name="nodes-in-the-enlisted-parties-node"></a>在已登记参与方节点的节点  
  下表列出了可为绑定文件的此节点设置的属性：  
   
-|**名称**|**节点类型**|**数据类型**|**Description**|**限制**|**注释**|  
+|**名称**|**节点类型**|**数据类型**|**说明**|**限制**|**注释**|  
 |--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|[已登记参与的方](../core/enlisted-party-enlisted-parties-node.md)|录制|EnlistedParty (ComplexType)|指定与角色有关的已登记参与方的信息。|不需要|默认值：无|
+|[已登记参与方](../core/enlisted-party-enlisted-parties-node.md)|录制|EnlistedParty (ComplexType)|指定与角色相关联的已登记参与方有关的信息。|不需要|默认值：无|

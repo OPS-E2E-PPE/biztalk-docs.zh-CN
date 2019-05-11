@@ -1,5 +1,5 @@
 ---
-title: 错误-节点的太多逻辑输入 |Microsoft 文档
+title: 错误-节点的逻辑输入太多 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e363d79a2b013b8e90533c4e6e36cff5b5798b77
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4892eca0fc65fe281ab9464eba914603f7ab392b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22241701"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65346312"
 ---
 # <a name="error---too-many-logical-inputs-to-node"></a>错误-节点的逻辑输入太多
 **错误代码**  
@@ -28,8 +28,8 @@ ms.locfileid: "22241701"
   
  **说明**  
   
- 有更多的逻辑链接连接到比数输入指向目标架构中的指定节点**循环**functoid 连接到指定的节点的祖先节点。 前一类型和后一类型的链接数应该一致。  
+ 有大量的逻辑链接连接到的输入链接数比目标架构中所指示的节点**循环**functoid 连接到所指示的节点的祖先节点。 前者和后者类型的链接数应与匹配。  
   
  **用户执行任何操作**  
   
- 链接数连接到指定的节点和返工**循环**functoid 连接到祖先节点以便将它们与匹配。
+ 链接的数目已连接到所指示的节点和返工**循环**functoid 连接到祖先节点，使其匹配。

@@ -16,12 +16,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aa1437d1dbe154f553323077b1c29127c58abdf4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 98fada75af4d94daeb39d94a3178bd3787f7fb86
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009526"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283817"
 ---
 # <a name="customizing-private-processes"></a>自定义专用流程
 本部分介绍如何自定义处理服务内容的专用流程业务流程。 Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]业务流程作为专用流程将组织内部的实现。 这些流程是处理服务内容消息部分的业务流程。 有关详细信息，请参阅[专用流程](../../adapters-and-accelerators/accelerator-rosettanet/private-processes.md)。  

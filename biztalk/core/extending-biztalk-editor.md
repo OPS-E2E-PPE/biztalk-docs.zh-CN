@@ -1,5 +1,5 @@
 ---
-title: 扩展 BizTalk 编辑器 |Microsoft 文档
+title: 扩展 BizTalk 编辑器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,27 +12,27 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8f8e4f574e652420ae11410e52268a199639cf6e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 724ab7d8575a1db33654a0115530de6a259ca88e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246237"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388199"
 ---
 # <a name="extending-biztalk-editor"></a>扩展 BizTalk 编辑器
-BizTalk 编辑器允许使用扩展来支持其他实例消息格式。 实际上，XML 格式是 BizTalk 编辑器内置的唯一格式。 即使对平面文件格式（包含在 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中）的支持也是通过 BizTalk 编辑器扩展来实现的，因此，该扩展可作为此类扩展可添加的功能类型的有效示例。  
+BizTalk 编辑器旨在允许使用扩展来支持其他实例消息格式。 实际上，XML 格式是 BizTalk 编辑器内置的唯一格式。 甚至还支持对平面文件格式，包含在 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，作为 BizTalk 编辑器扩展，从而充当可以通过此类扩展添加的功能类型的一个很好示例。  
   
- 通常，BizTalk 编辑器扩展将其自定义数据保存为 XML 架构定义 (XSD) 语言批注，这些批注与对应于架构树中节点的 XSD 元素相关联。 此外，平面文件扩展向 BizTalk 编辑器添加的扩展批注集也可作为 BizTalk 编辑器扩展在机构中保存其自定义数据的有效示例。  
+ 一般情况下，BizTalk 编辑器扩展保留其自定义数据作为 XML 架构定义 (XSD) 语言批注与对应于在架构树中节点的 XSD 元素相关联。 同样，扩展由 BizTalk 编辑器的平面文件扩展添加的批注集用作在 BizTalk 编辑器扩展可以保留其自定义数据架构中的方法的一个很好示例。  
   
- BizTalk 编辑器扩展是用于扩展 BizTalk 编辑器功能的 .NET 程序集。 若要标识作为扩展，程序集必须实现的一个类**IExtension**接口，并且必须位于产品的安装目录中的开发人员 Tools\Schema 编辑器扩展文件夹下。  
+ BizTalk 编辑器扩展是扩展功能的 BizTalk 编辑器中的.NET 程序集。 若要将标识为扩展，程序集必须具有实现的一个类**IExtension**接口，并必须位于产品安装目录中的 Developer Tools\Schema Editor Extensions 文件夹下。  
   
- 扩展开发人员必须令其程序集引用 Microsoft.BizTalk.SchemaEditor.Extensibility.dll，其中包含向 BizTalk 编辑器公开扩展功能所需的所有接口的定义。 在定义那些接口**Microsoft.BizTalk.SchemaEditor.Extensibility**命名空间。  
+ 扩展开发人员必须具有其程序集引用 Microsoft.BizTalk.SchemaEditor.Extensibility.dll，其中包含公开扩展的功能向 BizTalk 编辑器所需的所有接口的定义。 这些接口定义下**Microsoft.BizTalk.SchemaEditor.Extensibility**命名空间。  
   
- **IExtension**接口是的扩展，BizTalk 编辑器从中访问的扩展的功能，如属性管理器、 自定义视图、 架构验证、 本地实例生成和本机入口点实例验证。  
+ **IExtension**接口是的扩展，BizTalk 编辑器中从其访问扩展的功能，例如属性管理器、 自定义视图、 架构验证、 本地实例生成和本机入口点实例验证。  
   
- 给定的架构可以具有多个与其关联的扩展，但只有一个可以在给定的时间; 设置为标准这在中设置**标准**属性**架构**节点。 当前设置为标准的扩展即为本地实例生成和验证以及架构验证所使用的扩展。  
+ 给定的架构可以具有多个扩展与之关联，但只有一个可以在给定的时间; 设置为标准这在中设置**标准**的属性**架构**节点。 当前设置为标准的扩展是用于本地实例生成和验证，以及架构验证。  
   
- 扩展可以通过编辑给定架构与相关联**架构编辑器扩展**属性**架构**节点。 有关与架构关联的扩展的信息存储在架构本身内,**批注**元素**架构**元素，如下面的 XSD 段中所示。  
+ 扩展可以通过编辑给定的架构与相关联**架构编辑器扩展**的属性**架构**节点。 与架构关联的扩展有关的信息存储在该架构内**批注**的元素**架构**元素，如以下 XSD 片断中所示。  
   
 ```  
 <?xml version="1.0" encoding="utf-16" ?>   
@@ -57,9 +57,9 @@ BizTalk 编辑器允许使用扩展来支持其他实例消息格式。 实际�
   
 ```  
   
- 实例化后的扩展对象，框架将调用**初始化**方法**IExtension**接口，将传递**ITree**对象，以便扩展可以访问有关架构树的信息。 例如，扩展无法遍历所有子节点，通过访问**ITree.RootNode**属性。  
+ 实例化后的扩展对象，框架将调用**初始化**方法**IExtension**接口，传递**ITree**对象，以便扩展可以访问有关在架构树的信息。 例如，扩展可以遍历所有子节点，通过访问**ITree.RootNode**属性。  
   
- 本部分介绍将 BizTalk 编辑器扩展集成到 BizTalk 编辑器环境中并将扩展本身与现有 BizTalk 编辑器命令挂接的方法。  
+ 本部分介绍在 BizTalk 编辑器扩展可以将集成到 BizTalk 编辑器环境并将自身挂接到现有 BizTalk 编辑器命令的方法。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -71,4 +71,4 @@ BizTalk 编辑器允许使用扩展来支持其他实例消息格式。 实际�
   
 -   [实例验证](../core/instance-validation.md)  
   
--   [生成实例](../core/instance-generation.md)
+-   [实例生成](../core/instance-generation.md)

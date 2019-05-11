@@ -12,30 +12,30 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6f14fc95dfba5e29089653ef02dddd1b0b366ff8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 45a115ed95546b99c52358d9cf15e51882991406
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012512"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65352927"
 ---
 # <a name="data-stored-for-as2-status-reports"></a>为 AS2 状态报告存储的数据
 AS2 状态报告中提供了两个级别的报告： 第一个 if**打开报告**为协议选择属性 (从**常规属性**页**常规**选项卡中**协议属性**对话框)，如果为协议选择不可否认数据库存储属性，第二个。  
   
-## <a name="data-stored-if-as2-reporting-is-activated"></a>激活 AS2 报告时存储的数据  
+## <a name="data-stored-if-as2-reporting-is-activated"></a>激活 AS2 报告存储的数据  
  如果**打开报告**协议，选择属性[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将保留记录所有发送或接收 AS2 消息和 Mdn。  
   
  对于接收的 AS2 消息，BizTalk Server 将存储以下信息：  
   
 - AS2 消息的记录。  
   
-  对于接收或发送的 MDN（同步或异步），BizTalk Server 将存储以下信息：  
+  对于接收或发送 MDN （同步或异步），BizTalk Server 将存储以下信息：  
   
 - MDN 的记录。  
   
-  通过状态报告 UI，您可以将 AS2 消息记录和相应的 MDN 记录关联起来。  
+  状态报告 UI AS2 消息记录到相应的 MDN 记录的关联。  
   
-## <a name="data-stored-if-resend-as2-message-if-mdn-not-received-is-enabled"></a>启用了“MDN 未收到时重新发送 AS2 消息”时存储的数据  
+## <a name="data-stored-if-resend-as2-message-if-mdn-not-received-is-enabled"></a>如果启用重新发送 AS2 消息未收到 MDN 时存储数据  
  如果**MDN 未收到时重新发送 AS2 消息**协议，选择属性[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将记录以下信息：  
   
 -   每次重新发送尝试的时间  
@@ -44,32 +44,32 @@ AS2 状态报告中提供了两个级别的报告： 第一个 if**打开报告*
   
 -   每次重新发送尝试的索引  
   
-## <a name="data-stored-if-non-repudiation-database-storage-is-enabled"></a>启用不可否认数据库存储时存储的数据  
- 选择下列协议属性可以启用不可否认数据库存储：  
+## <a name="data-stored-if-non-repudiation-database-storage-is-enabled"></a>启用不可否认数据库存储存储的数据  
+ 由以下启用不可否认数据库存储所选协议属性：  
   
-- 已为编码后的出站 AS2 消息启用 NRR  
+- 已为出站编码 AS2 消息启用 NRR  
   
 - 已为解码后的出站 AS2 消息启用 NRR  
   
 - 已为入站 MDN 启用 NRR  
   
-- 已为编码后的入站 AS2 消息启用 NRR  
+- 已为入站编码 AS2 消息启用 NRR  
   
-- 已为解码后的入站 AS2 消息启用 NRR  
+- 已为入站解码 AS2 消息启用 NRR  
   
 - 已为出站 MDN 启用 NRR  
   
-  如果选择上面的一个或多个属性，则 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将存储以下信息：  
+  如果选择一个或多个以上的属性，则[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将存储以下信息：  
   
-- 任何 AS2 消息的内容和任何 MDN（带有或不带有 AS2 标头）的内容。  
+- 任何 AS2 消息和任何 MDN （带有或不带 AS2 标头） 的内容的内容。  
   
 ## <a name="data-stored-for-edi-over-as2"></a>通过 AS2 为 EDI 存储的数据  
  如果**打开报告**属性已选，同时为 EDI 协议和 AS2 协议，然后可以将 AS2 消息记录 （包含 EDI 负载） 与 EDI 消息记录关联起来。  
   
- 如果启用事务集存储，则可以在状态报告 UI 中显示事务集的详细信息和 AS2 消息内容的详细信息。  
+ 如果启用了事务集存储，你可以在状态报告 UI 中显示事务集详细信息和 AS2 消息内容的详细信息。  
   
 > [!NOTE]
->  必须使用 AS2EdiReceive 或 AS2EdiSend 管道访问这些报告。  
+>  必须使用 AS2EdiReceive 或 AS2EdiSend 管道以有权访问这些报表。  
   
 ## <a name="see-also"></a>请参阅  
  [为 EDI 和 AS2 状态报告存储的数据](../core/data-stored-for-edi-and-as2-status-reports.md)   

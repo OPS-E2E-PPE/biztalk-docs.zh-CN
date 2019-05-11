@@ -1,5 +1,5 @@
 ---
-title: LOBWebApplication |Microsoft Docs
+title: LOBWebApplication | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -20,24 +20,24 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9120d9078303092740fdbfc27b6932b7849cc6a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bd28808854b07120cce7b021d27bf1146e23d749
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002102"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283319"
 ---
 # <a name="lobwebapplication"></a>LOBWebApplication
-使用 LOBWebApplication 实用工具可以将 ASPX 页中的操作或响应消息提交给贸易合作伙伴，从而模拟实际的业务线 Web 应用程序。  
+使用 LOBWebApplication 实用工具提交操作消息或响应消息从 ASPX 页向贸易合作伙伴，模拟实际的业务线 Web 应用程序。  
   
- 设置 ASPX 页后，您启动该页，输入消息的参数：本组织和合作伙伴组织；PIP 代码、版本和实例 ID；以及消息类别。 然后你可以修改服务内容并提交消息。  
+ 设置 ASPX 页后，起始页，并为一条消息输入参数： 本组织和合作伙伴组织;PIP 代码、 版本和实例 ID;和消息类别。 然后可以修改服务内容，并提交消息。  
   
 ## <a name="location-in-sdk"></a>在 SDK 中的位置  
- \<*驱动器*\>\Program Files (86) \Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\LOBWebApplication  
+ \<*drive*\>\Program Files (86)\Microsoft BizTalk \<version\> Accelerator for RosettaNet\SDK\LOBWebApplication  
   
 ## <a name="adding-a-virtual-server-for-lobwebapplication"></a>为 LOBWebApplication 添加虚拟服务器  
   
-#### <a name="to-add-a-virtual-server"></a>添加虚拟服务器  
+#### <a name="to-add-a-virtual-server"></a>若要添加虚拟服务器  
   
 1.  单击**启动**，依次指向**所有程序**，指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**.  
   
@@ -51,13 +51,13 @@ ms.locfileid: "37002102"
   
 6.  上**虚拟目录访问权限**页上，选择**读取**并**运行脚本**，然后单击**下一步**。 单击 **“完成”**。  
   
-7.  将用于配置 BTARN 的服务帐户用户（如 hostsvc）添加到 STS_WPG。  
+7.  添加配置 BTARN，（如 hostsvc) 到 STS_WPG 时所用的服务帐户用户。  
   
-8.  删除 C:\WINDOWS\Microsoft.NET\Framework\v2.0.\Temporary ASP.NET Files 中的所有文件。 在删除这些文件之前，你可能需要运行 iisreset 程序来取消这些文件的锁定。  
+8.  删除 C:\WINDOWS\Microsoft.NET\Framework\v2.0.\Temporary ASP.NET Files 中的所有文件。 您可能需要运行 iisreset 程序来解锁文件，然后才能删除它们。  
   
-9. 在 IIS 管理器中，将 LOBWebApplication 设置为在应用程序池 BTARNHTTPReceivePool 下运行。  
+9. 在 IIS 管理器中，将在应用程序池 BTARNHTTPReceivePool 下运行 LOBWebApplication 设置。  
   
-10. 在 IIS 管理器中 LOBWebApplication 实用工具的“目录安全性属性”部分中，禁用以匿名运行虚拟目录的选项。  
+10. 在 IIS 管理器中 LOBWebApplication 实用工具的目录安全属性部分禁用以匿名运行的虚拟目录的选项。  
   
 ## <a name="building-lobwebapplication"></a>生成 LOBWebApplication  
   
@@ -80,7 +80,7 @@ ms.locfileid: "37002102"
   
 ## <a name="running-lobwebapplication"></a>运行 LOBWebApplication  
   
-#### <a name="to-run-lobwebapplication-and-submit-a-message"></a>运行 LOBWebApplication 并提交消息  
+#### <a name="to-run-lobwebapplication-and-submit-a-message"></a>运行 LOBWebApplication 并提交一条消息  
   
 1.  单击**启动**，依次指向**所有程序**，然后单击**Internet Explorer**。  
   
@@ -92,10 +92,10 @@ ms.locfileid: "37002102"
   
 5.  单击“提交”。  
   
-## <a name="remarks"></a>Remarks  
- LOBWebApplication 实用工具从指定的 PIP 生成消息的实例，并将所生成的消息实例的服务内容输入到 ASPX 页。 为此，该实用工具采用直接从 PIP 生成格式正确的消息实例时所用的技术。 有关详细信息，请参阅[根据 PIP 创建格式正确的消息实例](../../adapters-and-accelerators/accelerator-rosettanet/creating-a-well-formed-message-instance-from-a-pip.md)。 你可以使用实际数据填充 ASPX 页中服务内容的任何字段，以生成实际消息实例。  
+## <a name="remarks"></a>备注  
+ LOBWebApplication 实用工具从指定的 PIP 生成消息实例，并生成的消息实例的服务内容输入到 ASPX 页。 若要执行此操作，该实用程序所用的技术，使用它来直接从 PIP 生成格式正确的消息实例。 有关详细信息，请参阅[根据 PIP 创建格式正确的消息实例](../../adapters-and-accelerators/accelerator-rosettanet/creating-a-well-formed-message-instance-from-a-pip.md)。 您可以填充 ASPX 页的实际数据来生成实际的消息实例中的服务内容的任何字段。  
   
- 使用 LOBWebApplication 实用工具还可以模拟业务线 Web 应用程序提交消息的过程。 使用 LOBApplication 实用工具还可以模拟业务线桌面应用程序提交消息的过程。  
+ 使用 LOBWebApplication 实用工具来模拟业务线 Web 应用程序提交一条消息。 使用 LOBApplication 实用工具来模拟业务线桌面应用程序提交消息。  
   
 ## <a name="see-also"></a>请参阅  
  [实用程序](../../adapters-and-accelerators/accelerator-rosettanet/utilities1.md)   

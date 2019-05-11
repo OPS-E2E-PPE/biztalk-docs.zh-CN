@@ -1,5 +1,5 @@
 ---
-title: 如何将消息添加 Exception1 |Microsoft 文档
+title: 如何将消息添加为 Exception1 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,27 +16,27 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b60bfdfb222761aadd54b6c32567dfa6821355ae
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: bf7064b77beebdbfdb0fdfc54cf3ba2daa769e08
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246589"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65343780"
 ---
-# <a name="how-to-add-a-message-for-an-exception"></a>如何将消息添加到为异常
-以下主题介绍如何添加异常消息。  
+# <a name="how-to-add-a-message-for-an-exception"></a>如何添加异常的消息
+以下主题介绍如何添加异常的消息。  
   
-### <a name="to-add-a-message-for-an-exception"></a>为异常添加消息  
+### <a name="to-add-a-message-for-an-exception"></a>若要添加的异常消息  
   
-1.  在**业务流程视图**窗口中，右键单击**消息**和选择**新消息**。  
+1.  在中**业务流程视图**窗口中，右键单击**消息**，然后选择**新消息**。  
   
-     由此将创建 Message_3，您可将其明确分配给该错误。  
+     这将创建 Message_3，您可以将其分配特定于该错误。  
   
-2.  右键单击**Message_3**和选择**属性**。  
+2.  右键单击**Message_3** ，然后选择**属性**。  
   
-3.  在**属性**窗口中，设置**消息类型**。  
+3.  在中**属性**窗口中，将**消息类型**。  
   
      选择 **.Net 类**，然后选择**SystemString**。  
   
-## <a name="see-also"></a>另请参阅  
- [使用 BizTalk Server 异常处理](../core/using-biztalk-server-exception-handling5.md)
+## <a name="see-also"></a>请参阅  
+ [使用 BizTalk Server 的异常处理](../core/using-biztalk-server-exception-handling5.md)

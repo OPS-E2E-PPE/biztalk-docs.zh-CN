@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1dc8093d477773d5efbab46670bac7e9c839d8d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ed13c1e68128ba542fa79e95222c35745a063fad
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999038"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65345312"
 ---
-# <a name="flat-schema-to-catalog"></a>将平面架构转换为目录
+# <a name="flat-schema-to-catalog"></a>平面架构转换为目录
 
 ## <a name="overview"></a>概述
 可以使用**循环**functoid 通过将单个记录映射到多个记录将平面架构转换为分层架构。 将平面架构转换为 Microsoft Commerce Server 目录时通常会执行此操作。  
@@ -48,13 +48,13 @@ ms.locfileid: "36999038"
 </ns0:Root>  
 ```  
   
- 下图显示了执行此转换的映射。  
+ 下图显示的地图，执行此转换。  
   
  ![演示如何使用循环 functoid 的映射。](../core/media/loopingflattenfunctoid.gif "loopingflattenfunctoid")  
-“循环”Functoid，平面架构映射  
+循环 Functoid，平面架构映射  
 
 ## <a name="set-the-schema"></a>设置的架构  
- 若要此类型映射正常工作，您必须执行以下操作：  
+ 对于此类型的映射才能正常工作，必须执行以下操作：  
   
 - 为连接到每个链接**名称**字段目标架构中，源架构链接属性设置为复制名称。 有关详细信息，请参阅[配置链接](../core/configuring-links.md)。 另请参阅**链接属性** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
   
@@ -65,6 +65,6 @@ ms.locfileid: "36999038"
   若要反转此映射，将目录架构转换为平面架构，请参阅[值映射 （平展） Functoid](../core/value-mapping-flattening-functoid.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [如何添加循环 Functoid 映射](../core/how-to-add-looping-functoids-to-a-map.md)   
+ [如何添加循环到图 Functoid](../core/how-to-add-looping-functoids-to-a-map.md)   
  [循环 Functoid](../core/looping-functoid.md)   
  [“值映射（平展）”Functoid](../core/value-mapping-flattening-functoid.md)

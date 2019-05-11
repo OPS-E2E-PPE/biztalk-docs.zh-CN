@@ -13,23 +13,23 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6102e4cce6a850c7e2ed5656a8fd5aacfd5d5a09
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0e5b2eec6b252417f73f917f1293ffc925f0e1a1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011710"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65336084"
 ---
 # <a name="update-biztalk-host-instance-settings"></a>更新 BizTalk 主机实例设置
 
 ## <a name="overview"></a>概述
-使用[!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)]，您可以修改整个 BizTalk 组中给定主机实例的配置信息。 本主题提供了用于修改 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中主机实例级别性能设置的分步过程。  
+使用[!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)]，可以跨 BizTalk 组中修改给定的主机实例的配置信息。 本主题提供的分步过程来修改主机实例级别性能设置在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
   
- 通常您将 BizTalk 设置（来自源环境）保存为 XML 文件。 XML 文件包含允许您在目标计算机上复制设置的信息。 可以将这些设置导入设置仪表板，而无需设置新值。 另一方面，为  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 设置新值后，您可以将其导出到 XML 文件以用于其他计算机。  
+ 通常可以另存为 XML 文件的 BizTalk 设置 （来自源环境）。 XML 文件包含允许您复制目标计算机上的设置的信息。 而不是设置新值，您可以导入设置仪表板中，这些设置。 但是，设置新值后[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，可以将其导出到 XML 文件以在另一台计算机中使用。  
   
  有关导入信息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]设置，请参阅[导入或导出 BizTalk 设置使用设置仪表板](how-to-import-biztalk-settings-using-settings-dashboard.md)并[导入或导出 BizTalk 设置使用 BTSTask](how-to-import-biztalk-settings-using-btstask.md)。 
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  若要执行此操作，必须以 BizTalk Server Administrators 组的成员的身份登录。  
   
 ## <a name="update-the-host-instance-level-settings"></a>更新主机实例级别设置  
@@ -38,7 +38,7 @@ ms.locfileid: "37011710"
   
 2. 在中**BizTalk 设置仪表板**对话框中，在**主机实例**选项卡上，执行以下任一操作：  
   
-   -   修改主机实例的 .NET CLR 设置。 请参阅[更改.NET CLR 设置](../core/how-to-modify-net-clr-settings.md)。  
+   -   修改主机实例的.NET CLR 设置。 请参阅[更改.NET CLR 设置](../core/how-to-modify-net-clr-settings.md)。  
   
    -   修改业务流程内存阻止设置。 请参阅[更改业务流程内存阻止设置](../core/how-to-modify-orchestration-memory-throttling-settings.md)。  
   

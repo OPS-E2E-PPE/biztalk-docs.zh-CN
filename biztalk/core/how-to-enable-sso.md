@@ -21,12 +21,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6bb2c6e5349a74fb212bdf7011fb294cb1810e67
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 863a17fc08ea09b79dc89ecb4a285c9cf7aa2d47
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966254"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385094"
 ---
 # <a name="how-to-enable-sso"></a>如何启用 SSO
 可以通过使用 MMC 管理单元或命令行启用整个企业单一登录 (SSO) 系统。  

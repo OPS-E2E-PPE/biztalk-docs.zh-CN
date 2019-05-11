@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 39a0e45cf540b07f167f2ca2a2ffcb52851e0327
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 34b1f5d49bfc34d0498d14ba54c866f2972c9035
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023531"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65331197"
 ---
 # <a name="invalid-address-relative-uri-needs-slash-quot-quot"></a>地址无效 (相对 uri 需要斜杠 (&quot;-&quot;))
 ## <a name="details"></a>详细信息  
@@ -30,7 +30,7 @@ ms.locfileid: "37023531"
 |  事件源   |                                         0                                          |
 |    组件    |                                         0                                          |
 |  符号名称  |                                         0                                          |
-|  消息正文   |         地址无效；应为以斜杠（“/”）开头的相对 URI          |
+|  消息正文   |         无效的地址;应为正斜杠 （"/"） 从开始的相对 uri          |
   
 ## <a name="explanation"></a>解释  
  您未提供一个相对地址格式正确的独立 WCF 接收位置。 例如， http://localhost/svc 不能作为相对地址。 您不能将独立 WCF 接收位置的地址属性设置为绝对地址。  
@@ -38,7 +38,7 @@ ms.locfileid: "37023531"
 ## <a name="user-action"></a>用户操作  
  使用以下过程配置地址。  
   
-#### <a name="to-configure-an-address"></a>配置地址  
+#### <a name="to-configure-an-address"></a>若要配置地址  
   
 1. 单击**启动**，单击**所有程序**，单击**Microsoft [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]** ，然后单击**BizTalk Server 管理**。  
   
@@ -56,9 +56,9 @@ ms.locfileid: "37023531"
   
 8. 在中**WCF [**<em>传输类型</em>**] 传输属性**对话框中，单击**常规**选项卡。  
   
-9. 在中**地址 (URI)** 文字框中，更改的地址。 例如，正确格式的相对地址为 /path/service.svc。  
+9. 在中**地址 (URI)** 文字框中，更改的地址。 举例说明的格式正确的相对地址为 /path/service.svc。  
   
-   有关接收位置的其他信息，请参阅以下内容：  
+   接收位置的其他信息，请参阅以下：  
   
 -   [如何配置 Wcf-customisolated 接收位置](../core/how-to-configure-a-wcf-customisolated-receive-location.md)  
   

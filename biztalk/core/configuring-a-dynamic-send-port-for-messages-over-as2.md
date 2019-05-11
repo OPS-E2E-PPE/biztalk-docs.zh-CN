@@ -12,45 +12,45 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9cacc1d502e258a68934ed66b8f67032f94d1620
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: af1952947120a6f90310244f7ef17ee6fc5810d1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005687"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356392"
 ---
 # <a name="configuring-a-dynamic-send-port-for-messages-over-as2"></a>配置动态发送端口通过 AS2 发送的消息
-本主题介绍如何配置 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 以通过动态发送端口发送 AS2 消息。 此配置包括创建动态发送端口和配置后端应用程序以设置相应的上下文属性。 在创建动态发送端口以发送 AS2 消息时，您必须升级特定属性才能使相应发送端口工作。 有关详细信息，请参阅[配置 BizTalk Server 以便发送 AS2 消息通过动态发送端口](../core/configuring-a-dynamic-send-port-for-messages-over-as2.md#BKMK_Proc)下面。  
+本主题介绍如何配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]发送 AS2 消息通过动态发送端口。 此配置包括创建动态发送端口和后端应用程序配置为设置相应的上下文属性。 在创建动态发送端口以发送 AS2 消息时，必须升级为发送端口，若要运行特定属性。 有关详细信息，请参阅[配置 BizTalk Server 以便发送 AS2 消息通过动态发送端口](../core/configuring-a-dynamic-send-port-for-messages-over-as2.md#BKMK_Proc)下面。  
   
- 动态发送端口允许您在参与方配置未进行硬编码的情况下，将消息发送至多个参与方。 发送消息时要使用的协议和目标通过上下文属性动态确定。 您不必为每个单独的客户创建静态发送端口。  
+ 动态发送端口，您可以将消息发送到多个参与方，无需进行硬编码的参与方配置。 用于发送消息的协议和目标通过上下文属性动态确定。 无需为每个单独的客户创建静态发送端口。  
   
- 若要发送带有 EDI 或非 EDI 消息或者 EDI 确认的 AS2 消息，请使用以下配置创建动态响应 HTTP 发送端口：  
+ 若要发送带有 EDI AS2 消息或非 EDI 消息或者 EDI 确认，创建动态响应 HTTP 发送端口使用以下配置：  
   
-|位置|“属性”|设置|  
+|Location|属性|设置|  
 |--------------|--------------|-------------|  
-|**发送端口属性： 常规**|端口类型|-动态要求响应 (如果在请求 MDN**确认 (Mdn)** 页的单向协议选项卡为选中状态)<br /><br /> -动态单向发送端口 (如果在请求 MDN**确认 (Mdn)** 清除页的单向协议选项卡)|  
-|**发送端口属性： 常规**|发送管道|-AS2EdiSend （用于 EDI 编码的消息）<br /><br /> -AS2Send （对于非 EDI 消息）|  
-|**发送端口属性： 常规**|接收管道<br /><br /> (如果在请求 MDN**确认 (Mdn)** 页的单向协议选项卡为选中状态)|AS2Receive（用于动态要求响应发送端口）|  
-|**发送端口属性： 筛选器**|“属性”|BTS.MessageType|  
-|**发送端口属性： 筛选器**|运算符|==|  
-|**发送端口属性： 筛选器**|ReplTest1|- `http://schemas.microsoft.com/BizTalk/EDI/X12/2006#<schema name>` （对于 EDI 消息）<br /><br /> - `http://schemas.microsoft.com/Edi/X12#X12_<997 or TA1>_Root` (对于 X12 确认)<br /><br /> - `http://schemas.microsoft.com/Edi/Efact#Efact_Contrl_Root` （对于 EDIFACT 确认）|  
+|**发送端口属性：常规**|端口类型|-动态要求响应 (如果在请求 MDN**确认 (Mdn)** 页的单向协议选项卡为选中状态)<br /><br /> -动态单向发送端口 (如果在请求 MDN**确认 (Mdn)** 清除页的单向协议选项卡)|  
+|**发送端口属性：常规**|发送管道|-AS2EdiSend （用于 EDI 编码的消息）<br /><br /> -AS2Send （对于非 EDI 消息）|  
+|**发送端口属性：常规**|接收管道<br /><br /> (如果在请求 MDN**确认 (Mdn)** 页的单向协议选项卡为选中状态)|AS2Receive （用于动态要求响应发送端口）|  
+|**发送端口属性：筛选器**|属性|BTS.MessageType|  
+|**发送端口属性：筛选器**|运算符|==|  
+|**发送端口属性：筛选器**|ReplTest1|- `http://schemas.microsoft.com/BizTalk/EDI/X12/2006#<schema name>` （对于 EDI 消息）<br /><br /> - `http://schemas.microsoft.com/Edi/X12#X12_<997 or TA1>_Root` (对于 X12 确认)<br /><br /> - `http://schemas.microsoft.com/Edi/Efact#Efact_Contrl_Root` （对于 EDIFACT 确认）|  
   
-## <a name="prerequisites"></a>必要條件  
- 你必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 必须以成员的身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Administrators 组。  
   
 ##  <a name="BKMK_Proc"></a> 若要配置 BizTalk Server 以便发送 AS2 消息通过动态发送端口  
   
-1. 在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台中，使用以上配置创建动态单向发送端口（如果未请求 MDN）或动态要求响应发送端口（如果请求了 MDN）。  
+1. 在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，创建动态单向发送端口 （如果未请求 MDN） 或动态要求响应发送端口 （如果请求一个 MDN） 使用上述配置。  
   
-2. 对于适用于此消息的协议，请设置必需的 AS2 和 EDI 属性。  
+2. 适用于此消息的协议，将设置所需的 AS2 和 EDI 属性。  
   
-3. 将下列属性升级到消息上下文：  
+3. 升级到消息上下文的以下属性：  
   
    -   `BTS.MessageType`  
   
    -   `EdiIntAS.MessageID`  
   
-4. 向后端应用程序添加功能以将下列属性写入到消息上下文，并为这些属性设置相应的值：  
+4. 将功能添加到后端应用程序要写入到消息上下文中，将其设置为适当的值的以下属性：  
   
    -   `EdiIntAS.AS2To`  
   
@@ -61,31 +61,31 @@ ms.locfileid: "37005687"
    -   `BTS.EncryptionCert`  
   
    > [!NOTE]
-   >  `AS2To` 上下文属性和 `OutboundTransportLocation` 上下文属性必须写入到消息上下文中，这样才能使动态发送端口正常工作。 端口需要使用 `AS2To` 属性来确定在处理传出消息时要使用的协议，而发送端口需要使用 `OutboundTransportLocation` 属性来确定消息的目标。 有关详细信息，请参阅[生成传出 AS2 消息](../core/generating-an-outgoing-as2-message.md)。  
+   >  `AS2To`上下文属性和`OutboundTransportLocation`上下文属性必须写入到消息上下文的动态发送端口才能正常工作。 `AS2To`属性是必需的端口，以确定在处理传出消息要使用的协议和`OutboundTransportLocation`属性是必需的发送端口，以确定消息的目标。 有关详细信息，请参阅[生成传出 AS2 消息](../core/generating-an-outgoing-as2-message.md)。  
   
 ## <a name="functionality"></a>功能  
- 动态发送端口和管道执行以下操作来通过 AS2 发送同步 EDI 或非 EDI 消息或确认并处理返回的 MDN：  
+ 动态发送端口和管道执行以下操作以通过 AS2 发送同步 EDI 或非 EDI 消息或确认并处理返回的 MDN:  
   
-- 如果发送一个 EDI 消息，则通过设置为 `BTS.MessageType`（例如，864 消息的架构为 X12_00401_864）的属性 `http://schemas.microsoft.com/BizTalk/EDI/X12/2006 namespace` 进行筛选来提取 EDI 消息。  
+- 如果发送 EDI 消息，EDI 消息进行筛选来提取的属性上`BTS.MessageType`设置为中的消息架构`http://schemas.microsoft.com/BizTalk/EDI/X12/2006 namespace`(例如，864 消息的为 X12_00401_864)。  
   
-- 如果发送 EDI 确认，则通过对设置为以下控制架构中某架构的属性 `BTS.MessageType` 进行筛选来提取确认：  
+- 如果发送 EDI 确认，确认进行筛选来提取的属性上`BTS.MessageType`设置为以下控制架构之一：  
   
-  -   997 确认的 `http://schemas.microsoft.com/BizTalk/EDI/X12#X12_997_Root`  
+  -   `http://schemas.microsoft.com/BizTalk/EDI/X12#X12_997_Root` 997 确认  
   
-  -   TA1 确认的 `http://schemas.microsoft.com/BizTalk/EDI/X12#X12_TA1_Root`  
+  -   `http://schemas.microsoft.com/BizTalk/EDI/X12#X12_TA1_Root` 有关 TA1 确认  
   
-  -   CONTRL 确认的 `http://schemas.microsoft.com/BizTalk/EDI/Efact#Efact_Contrl_Root`  
+  -   `http://schemas.microsoft.com/BizTalk/EDI/Efact#Efact_Contrl_Root` CONTRL 确认  
   
-- 如果发送非 EDI 消息，则使用相应的筛选器来提取消息。  
+- 如果发送非 EDI 消息，则提取使用相应的筛选器的消息。  
   
-- 生成 AS2 消息。 有关此过程的详细信息，请参阅[生成传出 AS2 消息](../core/generating-an-outgoing-as2-message.md)。  
+- 生成一个 AS2 消息。 有关此过程的详细信息，请参阅[生成传出 AS2 消息](../core/generating-an-outgoing-as2-message.md)。  
   
   > [!NOTE]
-  >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 根据 URL 的格式（即 http、smtp、ftp 等）确定动态发送端口要使用的传输类型。  
+  >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 确定要从 URL，即 http、 smtp、 ftp 等格式动态发送端口要使用的传输类型。  
   
-- 将消息或确认路由至发送端口的目标 URL。  
+- 将消息或确认路由到发送端口的目标 URL。  
   
-- 如果已启用而且是要求响应发送端口，则接收对消息或确认的 MDN 响应。 有关此过程的详细信息，请参阅[处理传入 MDN](../core/processing-an-incoming-mdn.md)。  
+- 如果启用，并且要求响应发送端口接收到的消息或确认的 MDN 响应。 有关此过程的详细信息，请参阅[处理传入 MDN](../core/processing-an-incoming-mdn.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [为 AS2 解决方案配置端口](../core/configuring-ports-for-an-as2-solution.md)

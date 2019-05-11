@@ -17,17 +17,17 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4fc9ef8086ae0cda04da3ecdc7eacbfcb6d01f14
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 69941385bdadc3670a88fd48c37fb77e22657752
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970222"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65342220"
 ---
 # <a name="how-to-configure-a-wcf-netnamedpipe-send-handler"></a>如何配置 WCF-NetNamedPipe 发送处理程序
-使用以下过程可配置 WCF-NetNamedPipe 发送处理程序。  
+使用以下过程来配置 Wcf-netnamedpipe 发送处理程序。  
 
-### <a name="to-change-global-variables-for-a-wcf-netnamedpipe-send-handler"></a>更改 WCF-NetNamedPipe 发送处理程序的全局变量  
+### <a name="to-change-global-variables-for-a-wcf-netnamedpipe-send-handler"></a>若要更改全局变量为 Wcf-netnamedpipe 发送处理程序  
 
 1. 在 BizTalk Server 管理控制台中，展开[!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]**管理**，展开**BizTalk 组**，展开**平台设置**，然后展开**适配器**。  
 
@@ -40,7 +40,7 @@ ms.locfileid: "36970222"
 
    |        使用此选项         |                                                                                                                                                                                                                                                                             执行的操作                                                                                                                                                                                                                                                                             |
    |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | **最大连接数** | 为在连接池中缓存的各终结点指定最大出站连接数。 这将限制为每个唯一的远程终结点缓存的连接数。 对于每个唯一的远程终结点，你应该将此值设置为一个大于最大期望缓存连接数的值。 如果活动的出站连接的数目超过此最大值，则服务可能不响应运行在此发送处理程序下的 WCF-NetNamedPipe 发送端口。<br /><br /> 默认值为 10。 |
+   | **最大连接数** | 指定的最大连接池中缓存的每个终结点的出站连接数。 这将限制为每个唯一的远程终结点缓存的连接数。 应设置此值大于最大期望缓存的任何唯一远程终结点的连接数。 如果活动出站连接数超过此最大值，则服务可能无法响应运行在此发送处理程序下的 Wcf-netnamedpipe 发送端口。<br /><br /> 默认值为 10。 |
 
 
 5. 单击“确定” 。  

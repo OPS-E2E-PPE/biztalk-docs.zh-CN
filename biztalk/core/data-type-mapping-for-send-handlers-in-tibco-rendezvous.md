@@ -1,5 +1,5 @@
 ---
-title: TIBCO 集合中的数据类型的发送处理程序映射 |Microsoft 文档
+title: TIBCO Rendezvous 中的数据类型用于发送处理程序映射 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,20 +12,20 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: bda336d149d373477b26efeb2e4b05de4aac7554
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 57987751e57353820f243d914da08f2fc57a73c3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24015236"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65352666"
 ---
-# <a name="data-type-mapping-for-send-handlers-in-tibco-rendezvous"></a>TIBCO Rendezvous 中用于发送处理程序的数据类型映射
-仅当 TIBCO 集合提供类型信息 (xsi:type=) 时，从 XML 架构类型到 TIBCO 集合类型的映射才有可能。 如果可能，会将任何不受支持的类型映射到字符串。 如果映射不可能，或者该选项已在端口配置中被禁用，则会生成错误。  
+# <a name="data-type-mapping-for-send-handlers-in-tibco-rendezvous"></a>用于 TIBCO Rendezvous 中的发送处理程序的数据类型映射
+从 XML 架构类型到 TIBCO 集合类型的映射是仅当 TIBCO 集合提供类型信息 (xsi: type =)。 如果可能，任何不受支持的类型将映射到字符串。 如果映射不可能实现，或在端口配置中禁用该选项，则生成错误。  
   
 ## <a name="xml-schema-to-tibco-rendezvous-data-type-mapping"></a>XML 架构到 TIBCO 集合数据类型映射  
- 下表显示从 XML 架构类型到 TIBCO 集合类型的可能映射。  
+ 下表显示可能的映射从 XML 架构类型到 TIBCO 集合类型。  
   
-|XML 类型|TIBCO RV 类型|  
+|XML 类型|TIBCO RV Type|  
 |--------------|-------------------|  
 ||TIBRVMSG_MSG|  
 ||TIBRVMSG_XML|  
@@ -53,12 +53,12 @@ ms.locfileid: "24015236"
 |tibrv:arrayOfUnsignedLong|TIBRVMSG_U64ARRAY|  
 |tibrv:arrayOfFloat|TIBRVMSG_F32ARRAY|  
 |tibrv:arrayOfDouble|TIBRVMSG_F64ARRAY|  
-|其他任何内容 - 具有调试消息|TIBRVMSG_STRING 日志。|  
+|其他任何内容-具有调试消息|TIBRVMSG_STRING 日志。|  
   
- 由于 TIBCO 集合的 BizTalk 适配器没有对架构的访问权限，因此当您从 BizTalk Server 传输到 TIBCO 集合时，必须为任何非字符串字段提供 XML `xsi:type` 属性。 适配器使用该信息生成 TIBCO 集合消息中的相应消息字段类型。  
+ 因为用于 TIBCO Rendezvous 的 BizTalk 适配器不具有访问架构，在从 BizTalk Server 传输到 TIBCO 集合时，必须提供 XML`xsi:type`任何非字符串字段的特性。 适配器使用该信息生成 TIBCO Rendezvous 消息中的相应消息字段类型。  
   
 ## <a name="message-mapping-example"></a>消息映射示例  
- 下面的示例演示从 BizTalk Server 到 TIBCO 集合的消息映射。 有关如何映射类型的信息，请参考数据类型映射表。  
+ 下面的示例演示如何映射到 TIBCO Rendezvous 从 BizTalk Server 消息。 请参阅有关如何映射类型信息的数据类型映射表。  
   
 ```  
 <ns:QuoteUpdate xmlns:xsi http://www.w3.org/2001/XMLSchema-instance"  
@@ -102,7 +102,7 @@ xmlns:ns="some namespace for this message [value not important, unless the schem
   
 ```  
   
- 将以前的消息生成为结构化的 TIBCO 集合消息之后，该消息将成为具有六个字段的顶级 TibcoMsg 实例。 最后字段是子消息，由两个数组类型的字段组成（“item”元素未映射到 TIBCO 集合消息字段，而是映射到类型为 `array` 的一个消息字段中的元素）。 未指定类型的 MarketCap 字段将作为字符串消息字段发送。  
+ 在前面的消息生成为结构化 TIBCO Rendezvous 消息后，它会具有六个字段的顶级 TibcoMsg 实例。 最后一个字段是子消息，两个字段组成的数组类型 (item 元素不映射到 TIBCO 集合消息字段，但一个类型的消息字段中的元素`array`)。 无类型的 MarketCap 字段将作为字符串消息字段发送。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [创建 TIBCO Rendezvous 发送处理程序](../core/creating-tibco-rendezvous-send-handlers.md)

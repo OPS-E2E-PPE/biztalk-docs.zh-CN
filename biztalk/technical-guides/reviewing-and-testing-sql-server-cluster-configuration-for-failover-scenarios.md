@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 981a879a5dad68bfb423a03b82e11fb646f912c1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 86d3b3c91fc4b2fc027ef11ff2f9a0253727eea1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973254"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291221"
 ---
 # <a name="reviewing-and-testing-sql-server-cluster-configuration-for-failover-scenarios"></a>查看和测试故障转移方案的 SQL Server 群集配置
 Windows 群集和 SQL Server 允许您在主动/主动模式下运行 SQL Server 的群集的每个节点都是"活动"并运行一个或多个 SQL Server 实例。 这将允许您，例如，要使上一个节点和所有其他 MessageBox 数据库[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]另一个节点上的数据库。 这可以最大程度提高群集的硬件的使用情况。  

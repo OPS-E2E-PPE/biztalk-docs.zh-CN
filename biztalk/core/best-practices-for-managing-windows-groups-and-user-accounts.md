@@ -1,5 +1,5 @@
 ---
-title: 管理 Windows 组和用户帐户的最佳实践 |Microsoft 文档
+title: 管理 Windows 组和用户帐户的最佳实践 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -27,33 +27,33 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 71f7560e3867bf290f20e0f2f49a740d7298131b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6720135f15b2c6d50bb193cd6e533e5b06f71961
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231221"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65358205"
 ---
 # <a name="best-practices-for-managing-windows-groups-and-user-accounts"></a>管理 Windows 组和用户帐户的最佳实践
-本部分包含了管理 Windows 组和用户帐户的安全性时的最佳实践和提示。  
+本部分包含最佳实践和管理安全性的 Windows 组和用户帐户的提示。  
   
--   **使用服务帐户与主机实例所需的最小权限**  
+-   **使用具有主机实例所需的最小特权的服务帐户**  
   
-     为了确保 BizTalk Server 环境的安全性，建议您使用具有运行主机实例时所需的最低权限的服务帐户。 有关服务帐户要求的最小特权的详细信息，请参阅[访问控制和数据安全](../core/access-control-and-data-security.md)。  
+     若要帮助确保 BizTalk Server 环境的安全性，我们建议使用具有运行主机实例所需的最小特权的服务帐户。 有关服务帐户需要的最小特权的详细信息，请参阅[访问控制和数据安全性](../core/access-control-and-data-security.md)。  
   
--   **使用不同的用户组来指定受信任的身份验证和非受信任的主机**  
+-   **受信任的身份验证和非信任主机使用不同的用户组**  
   
-     为了确保不受信任验证主机比受信任验证主机拥有更少的权限，每个主机必须使用不同的服务帐户。  
+     若要确保不受信任的主机具有较少的权限不是身份验证受信任的主机，必须为每个主机使用不同的服务帐户。  
   
 -   **为每个 BizTalk 主机使用不同的用户组**  
   
-     为了使各主机间的安全边界最大，建议对 BizTalk 组中每个 BizTalk 主机使用不同的 Windows 用户组。  
+     为获得最佳的主机之间的安全边界，我们建议你使用不同的 Windows 用户组每个 BizTalk 主机对 BizTalk 组中。  
   
 -   **从 BizTalk Server Administrators 组中删除安装用户**  
   
-     在具有本地组的单台计算机上安装 BizTalk Server 时，系统会自动将执行 BizTalk Server 交互式安装的用户添加到 BizTalk Server Administrators 组。 这使该用户可以使用配置管理器来配置 BizTalk Server。  
+     当使用本地组，一台计算机上安装 BizTalk Server 时，执行交互式安装的 BizTalk Server 的用户是自动添加到 BizTalk Server Administrators 组。 这允许该用户就可以使用 Configuration Manager 中配置 BizTalk Server。  
   
-     如果安装 BizTalk Server 的用户将来不需要对 BizTalk Server 进行管理，则建议在配置完 BizTalk Server 之后将该用户从 BizTalk Server Administrators 组中删除。  
+     如果安装 BizTalk Server 的用户不管理 BizTalk Server，我们建议配置 BizTalk Server 后，从 BizTalk Server Administrators 组删除此用户。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [管理 BizTalk Server 安全性](../core/managing-biztalk-server-security.md)

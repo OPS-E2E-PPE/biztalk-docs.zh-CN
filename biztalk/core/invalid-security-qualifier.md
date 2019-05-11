@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b8b0bd8b96d493641f58e445c4b45bd9f5df63e2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 48d7c57d7918557c3c17a4fa9931bb74f8c6a06b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986934"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330597"
 ---
 # <a name="invalid-security-qualifier"></a>安全限定符无效
 ## <a name="details"></a>详细信息  

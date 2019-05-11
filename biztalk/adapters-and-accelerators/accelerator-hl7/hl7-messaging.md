@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a06877838316c31aa8de6974fc40d4e54e74d407
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e86518dbab50f9dfa3c7ad8d500dadf83a8840bb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998391"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292950"
 ---
 # <a name="hl7-messaging"></a>HL7 消息传送
 Microsoft BizTalk Accelerator for HL7 的主要用途 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 是处理卫生保健符合 HL7 标准的消息。 若要向您介绍 HL7 消息传送，本部分提供有关 HL7 标准、 基本 HL7 消息模式、 消息类型的信息以及如何[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]触发 HL7 消息。  

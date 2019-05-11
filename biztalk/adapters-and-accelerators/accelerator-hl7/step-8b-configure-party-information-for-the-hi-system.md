@@ -1,5 +1,5 @@
 ---
-title: 步骤 8B： 配置 HI 系统的参与方信息 |Microsoft Docs
+title: 步骤 8B:配置 HI 系统的参与方信息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2d2cfc31d4bc42b599d7403006f8b44a8bfab447
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dd7afd025337d10e5f18fad03ded58544ce07ff0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973742"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286592"
 ---
-# <a name="step-8b-configure-party-information-for-the-hi-system"></a>步骤 8B： 配置 HI 系统的参与方信息
+# <a name="step-8b-configure-party-information-for-the-hi-system"></a>步骤 8B:配置 HI 系统的参与方信息
 在此步骤中，你可以配置 HI 系统的参与方信息。  
   
 ### <a name="to-configure-the-hi-system-party-information"></a>若要配置 HI 系统的参与方信息  
@@ -32,4 +32,4 @@ ms.locfileid: "36973742"
   
 4. 在中**发送端口**窗格中，对于**名称**在第一行中，选择**HIS_Send**，然后单击**确定**。  
   
-   请继续执行[步骤 9： 重启 BizTalk Server](../../adapters-and-accelerators/accelerator-hl7/step-9-restart-biztalk-server-hl7-main.md)。
+   请继续执行[步骤 9:重启 BizTalk Server](../../adapters-and-accelerators/accelerator-hl7/step-9-restart-biztalk-server-hl7-main.md)。

@@ -1,5 +1,5 @@
 ---
-title: 如何配置密码同步 |Microsoft 文档
+title: 如何配置密码同步 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,41 +19,41 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b2e8348cdf78db3e95ed75e5d83e6ea53bdffdee
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: b1b18d6f59b364a12a9ffe775d64a57e310f76e9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25968907"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65341303"
 ---
 # <a name="how-to-configure-password-synchronization"></a>如何配置密码同步
-使用 SSOCONFIG 命令行实用工具可配置密码同步设置。  
+使用 SSOCONFIG 命令行实用工具来配置密码同步设置。  
   
-### <a name="to-specify-the-directory-for-replay-files"></a>为重播文件指定目录  
-  
-1.  在 **“开始”** 菜单上，单击 **“运行”**。  
-  
-2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
-  
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
-  
-4.  类型**ssoconfig replayfiles\<重播文件目录\>&#124; 默认**，然后按 enter 键。  
-  
-> [!NOTE]
->  更改服务帐户时不会删除重播文件。 如果更改此帐户，则需要手动删除重播文件。  
-  
-#### <a name="to-display-or-change-maximum-password-synchronization-age"></a>显示或更改密码同步最长期限  
+### <a name="to-specify-the-directory-for-replay-files"></a>若要指定为重播文件目录  
   
 1.  在 **“开始”** 菜单上，单击 **“运行”**。  
   
-2.  在**运行**对话框中，键入**cmd**，然后单击**确定**。  
+2.  在中**运行**对话框中，键入**cmd**，然后单击**确定**。  
   
-3.  在命令行上，转至企业单一登录安装目录。 默认值是\<驱动器\>: \program Files\Enterprise 单一登录。  
+3.  在命令行中，转至企业单一登录安装目录。 默认值是\<驱动器\>: \Program Files\Common Files\Enterprise Single Sign-on。  
   
-4.  类型**ssoconfig-syncage\<以小时为单位的密码最长期限\>** ，然后按 enter 键。  
+4.  类型**ssoconfig-replayfiles\<重播文件目录\>&#124;的默认**并按 Enter。  
   
 > [!NOTE]
->  SSOCONFIG 实用工具将 SQL Server 计算机上的时间用作其系统时间。 在使用与时间相关的任何命令时，请注意这一点。  
+>  当您更改服务帐户时，不会删除重播文件。 如果更改此帐户，你将需要手动删除重播文件。  
   
-## <a name="see-also"></a>另请参阅  
+#### <a name="to-display-or-change-maximum-password-synchronization-age"></a>若要显示或更改最长密码同步期限  
+  
+1.  在 **“开始”** 菜单上，单击 **“运行”**。  
+  
+2.  在中**运行**对话框中，键入**cmd**，然后单击**确定**。  
+  
+3.  在命令行中，转至企业单一登录安装目录。 默认值是\<驱动器\>: \Program Files\Common Files\Enterprise Single Sign-on。  
+  
+4.  类型**ssoconfig-syncage\<以小时为单位的最长密码期限\>** 然后按 Enter。  
+  
+> [!NOTE]
+>  SSOCONFIG 实用工具在 SQL Server 计算机上使用的时间用作其系统时间。 使用与时间相关的任何命令时请记住这一点。  
+  
+## <a name="see-also"></a>请参阅  
  [密码同步](../core/password-synchronization2.md)

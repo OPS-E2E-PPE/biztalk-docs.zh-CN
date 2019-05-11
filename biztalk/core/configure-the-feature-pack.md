@@ -13,18 +13,18 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 210089dc225d85271a8c8fdc426d2ca68bf353e1
-ms.sourcegitcommit: 080224caa88f9935b5b13fa035d372f8964d2e52
+ms.openlocfilehash: 5e9dad92a11357c121e01a958996d0b335ba741b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36957865"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356448"
 ---
 # <a name="configure-the-feature-pack"></a>配置功能包
 
 ## <a name="overview"></a>概述
 
-[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] 使用功能包提供的改进、 功能和使用 Azure 的更紧密集成。 这些功能包来扩展在关键领域，例如部署、 安全性、 分析、 运行时、 维护、 标准符合性和混合集成的功能。 
+[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)] 使用功能包提供的改进、 功能和使用 Azure 的更紧密集成。 这些功能包来扩展在关键领域，例如部署、 安全性、 分析、 运行时、 维护、 标准符合性和混合集成的功能。 
 
 > [!NOTE]
 > 功能包是适用于 Enterprise edition 和 Developer edition 的[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]时： 
@@ -44,12 +44,12 @@ ms.locfileid: "36957865"
 
 * 下载[!INCLUDE[bts2016_md](../includes/bts2016-md.md)][功能包 1](https://www.microsoft.com/download/details.aspx?id=55100)。
 
-#### <a name="install"></a>Install
+#### <a name="install"></a>安装
 
 1. 以管理员身份运行安装程序。
 2. 在中**欢迎**，选择**下一步**。 
-3. 接受许可协议，然后选择“下一步”。 
-4. 继续安装。 在安装过程中多个命令窗口可能打开和关闭。 完成后，系统会提示您**完成**。
+3. 接受许可协议，然后选择**下一步**。 
+4. 继续进行安装。 在安装过程中多个命令窗口可能打开和关闭。 完成后，系统会提示您**完成**。
 
 在中创建的安装日志`C:\ProgramData\Microsoft\E-Business Servers Updates\Updates\Uninstall4014788-FP2\setup.log`。
 

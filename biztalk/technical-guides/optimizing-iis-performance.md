@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ad8db99f2f6d26b05960950376e30faaa5a2155d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d1939a3cacdccf613a7665a766c952c6bc9c5e91
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971446"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291393"
 ---
 # <a name="optimizing-iis-performance"></a>优化 IIS 性能
 ## <a name="apply-iis-configuration-options-to-improve-iis-performance"></a>应用 IIS 配置选项来提高 IIS 性能  
@@ -33,7 +33,7 @@ ms.locfileid: "36971446"
 3.  单击**禁用**中**操作**窗格，可以禁用此网站的日志记录。  
   
 ### <a name="disable-iis-asp-debugging-in-production-environments"></a>禁用 IIS ASP 在生产环境中进行调试  
- 应在生产环境中禁用 IIS ASP 调试。 若要禁用 IIS ASP 调试执行以下步骤： 在**连接**窗格中，单击以展开**站点**，单击此项可选择为其想要禁用 ASP 调试，请单击以选中网站**功能视图**，然后双击**ASP**功能。 单击此项可展开**编译**，单击此项可展开**调试属性**，并验证这两**启用客户端调试**和**启用服务器端调试**设置为**False**。  
+ 应在生产环境中禁用 IIS ASP 调试。 若要禁用 IIS ASP 调试，请执行以下步骤：在中**连接**窗格中，单击以展开**站点**，单击此项可选择为其想要禁用 ASP 调试，请单击以选择的 web 站点**功能视图**，，然后双击**ASP**功能。 单击此项可展开**编译**，单击此项可展开**调试属性**，并验证这两**启用客户端调试**和**启用服务器端调试**设置为**False**。  
   
 1. 单击**启动**，依次指向**所有程序**，单击**管理工具**，然后单击**Internet Information Services (IIS) Manager**.  
   

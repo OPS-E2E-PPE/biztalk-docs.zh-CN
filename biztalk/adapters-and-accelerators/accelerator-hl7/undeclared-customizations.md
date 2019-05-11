@@ -17,12 +17,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 05a33abb76d49cfa5db640b1d15d9fde420f19c6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6c5d31c7803eaa8fe0f8afeb6ed7c534f70233db
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974222"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286418"
 ---
 # <a name="undeclared-customizations"></a>未声明的自定义项
 而无需定义的格式或数据的性质，可以将数据添加到一条消息。 您使用未声明的 Z 段执行此操作。 未声明的 Z 段是一条消息末尾的意外的实例。 分析器/XML 验证器不会验证段。 它不由任何架构定义。 Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]) 将视为二进制大型对象 (BLOB) 的段。  

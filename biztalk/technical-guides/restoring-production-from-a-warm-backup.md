@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 66177cd1f6f10e252a71d2875b4079e660125719
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 43d3c2d771d26ffef720f256945e157b335141ed
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971358"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291279"
 ---
 # <a name="restoring-production-from-a-warm-backup"></a>从热备份还原生产
 如果源系统变得不可靠，就可以从目标到源还原数据库。 执行以下过程将从目标数据库还原到源。  

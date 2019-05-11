@@ -1,5 +1,5 @@
 ---
-title: 步骤 3： 测试批处理中的批处理方案 |Microsoft Docs
+title: 步骤 3：测试批处理中的批处理方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dcbbed83d8828aeb7169ea5fcdbe11ad343c353e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2c619c6f6ba1ee874c6b6eb54b9e499957d1dcee
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999366"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288189"
 ---
-# <a name="step-3-test-the-batch-inbatch-out-scenario"></a>步骤 3： 测试在入站批处理/出站批处理方案
+# <a name="step-3-test-the-batch-inbatch-out-scenario"></a>步骤 3：测试在入站批处理/出站批处理方案
 在此步骤中，您将测试批处理中 / 批处理出教程通过删除测试实例中的批处理 / 出消息批处理到的文件夹。 设置发送端口将消息发送、 接收端口将接收它，并接收管道将对其进行处理并将其放到目标文件夹。  
   
 ### <a name="to-test-the-batch-inbatch-out-scenario"></a>若要测试批处理中 / 出站批处理方案  
@@ -47,8 +47,8 @@ ms.locfileid: "36999366"
   
   |MSH.9|MSH.3|MSH.5|MSA.1|MSA.2|  
   |-----------|-----------|-----------|-----------|-----------|  
-  |ACK ^ A03 ^ ACK|MESA_IS|Tutorial_BatchSource|AA|000001|  
+  |ACK^A03^ACK|MESA_IS|Tutorial_BatchSource|AA|000001|  
   
 ## <a name="see-also"></a>请参阅  
- [第 1 部分： 零碎的入站的批处理方案](../../adapters-and-accelerators/accelerator-hl7/part-1-fragmented-inbound-batch-scenario.md)   
+ [第 1 部分：零碎的入站的批处理方案](../../adapters-and-accelerators/accelerator-hl7/part-1-fragmented-inbound-batch-scenario.md)   
  [第 3 部分：Create-Batch 方案](../../adapters-and-accelerators/accelerator-hl7/part-3-create-batch-scenario.md)

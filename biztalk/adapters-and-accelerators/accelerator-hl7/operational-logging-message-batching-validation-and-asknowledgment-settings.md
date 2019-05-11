@@ -17,12 +17,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 015182a6b091ccbba7452df4c44ed4e4f45c336e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 11d4588c1a8a2bd197651e1032db72a638f1d36b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974678"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65290047"
 ---
 # <a name="operational-logging-message-batching-validation-and-asknowledgment-settings"></a>操作日志记录、 消息批处理、 验证和确认设置
 Microsoft[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]包含服务器和系列的工具，用于企业应用程序集成 (EAI) 自动执行业务流程，促进与业务合作伙伴之间的交互。 基于[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]平台，BTAHL7 将升级的任何工具使用 HL7 标准的医疗应用程序集成。 HL7 包含标准的交换、 集成和检索电子临床做法和管理信息。  

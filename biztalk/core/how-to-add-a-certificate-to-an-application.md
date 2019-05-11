@@ -19,31 +19,31 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 764853a43f29910727b302d6554cb3bbd741abd8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a391759b0a05d4266e38ae0eed6d25fded834f0d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986414"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65343970"
 ---
-# <a name="how-to-add-a-certificate-to-an-application"></a>如何向应用程序添加证书
-本主题说明如何使用命令行向 BizTalk Server 应用程序添加证书。 此选项在 BizTalk Server 管理控制台中不可用。 您向某一 BizTalk 应用程序添加证书，以便可以将证书从一个 BizTalk 组传输到另一个组中，与应用程序打包在一起。 您使用证书来验证凭据并为发送端口和接收位置建立安全的链接。 有关详细信息，请参阅[如何为发送端口分配证书](../core/how-to-assign-a-certificate-to-a-send-port.md)并[如何将证书分配到接收位置](../core/how-to-assign-a-certificate-to-a-receive-location.md)。  
+# <a name="how-to-add-a-certificate-to-an-application"></a>如何将证书添加到应用程序
+本主题介绍如何使用命令行来将证书添加到 BizTalk 应用程序。 此选项不在 BizTalk Server 管理控制台中可用。 将证书添加到 BizTalk 应用程序，以便可以传输到另一个，与应用程序打包在一起的证书从一个 BizTalk 组。 若要验证标识，并建立安全链接，了解发送端口和接收位置使用的证书。 有关详细信息，请参阅[如何为发送端口分配证书](../core/how-to-assign-a-certificate-to-a-send-port.md)并[如何将证书分配到接收位置](../core/how-to-assign-a-certificate-to-a-receive-location.md)。  
   
- 向应用程序中添加证书时，请切记以下几点：  
+ 当将证书添加到应用程序，请记住以下重要事项：  
   
--   在将某一证书添加到应用程序时，该证书将作为证书项目添加到 BizTalk 管理数据库中。 在您安装该应用程序时，该证书将导入到本地计算机上的“其他人”证书存储中；因此，在您将证书分配给某一发送端口或接收位置前，可能无需执行额外的步骤来将证书导入到此证书存储中。 在您使用 BTSTask 来添加证书时，该证书必须存在于“其他人”证书存储中，并且必须指定其指纹。  
+-   时将证书添加到应用程序，该证书作为证书项目添加到 BizTalk 管理数据库。 在安装应用程序时，证书将导入本地计算机上的其他人证书存储，因此可能不需要执行额外的导入此存储可以将其分配给发送端口或接收位置之前的步骤。 当使用 BTSTask 来添加证书时，证书必须存在于其他人证书存储，并且必须指定其指纹。  
   
     > [!NOTE]
-    >  在导出某一证书时，私钥将被删除。 在安装应用程序时，尽管证书将导入证书存储中，但它不能用于解密已加密的消息，虽然它可用于发送已加密的消息。 如果您出于前述目的需要使用证书，则应在使用该证书的发送端口的宿主计算机上，在“其他人”证书存储中重新安装该证书。  
+    >  导出证书后，会删除私钥。 安装应用程序时，尽管将证书导入的证书存储区，它不能用于解密已加密的邮件，尽管它可以用来发送加密的消息。 如果需要对前一种用途使用的证书，应在宿主使用的证书的发送端口的计算机上的其他人证书存储中重新安装它。  
   
--   作为一种最佳实践，如果某个证书将由两个或多个应用程序中的发送端口或接收位置使用，应将该证书部署在一个单独的应用程序中，然后从需要使用该证书的应用程序中引用该应用程序。 这是因为 BizTalk 组中只能有一个证书具有特定的指纹，因此您不能将同一个证书导入到两个不同的应用程序中。 如果尝试导入两个使用同一证书的应用程序，则第一个导入将会成功，而第二个导入将会失败。 在这种情况下，使用“覆盖”导入选项并不能解决问题，因为您要覆盖的现有证书包含在另一个应用程序中。  
+-   最佳做法是，如果证书将由发送端口或接收位置在两个或多个应用程序中，您应将不同的应用程序，该证书部署，然后从需要使用证书的应用程序中引用此应用程序。 这是因为只有一个具有特定的指纹的证书可以存在于 BizTalk 组中，因此你将不能导入两个不同的应用程序中的相同证书。 如果你尝试导入每个使用相同的证书的两个应用程序，第一个导入将成功，并且第二个将不会。 在这种情况下，使用覆盖导入选项未更正问题，如你想要覆盖现有证书包含在另一个应用程序。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  若要执行本主题中的过程，必须是 BizTalk Server Administrators 组的成员的帐户登录。 有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。  
   
-### <a name="to-add-a-certificate-to-an-application"></a>向应用程序添加证书  
+### <a name="to-add-a-certificate-to-an-application"></a>若要将证书添加到应用程序  
   
-1. 按如下所示打开命令提示符： 单击**启动**，单击**运行**，类型`cmd`，然后单击**确定**。  
+1. 打开命令提示符，如下所示：单击**启动**，单击**运行**，类型`cmd`，然后单击**确定**。  
   
 2. 键入以下命令，替换适当的值下, 表中所述：  
   
@@ -55,14 +55,14 @@ ms.locfileid: "36986414"
   
    |参数|ReplTest1|  
    |---------------|-----------|  
-   |**/ 应用程序名称**|向其添加证书的 BizTalk 应用程序的名称。 如果未指定应用程序名称，则使用组的默认 BizTalk 应用程序。 如果名称包含空格，则必须将其括在双引号 （"）。|  
-   |**/ 类型**|**System.biztalk: certificate** （此值不区分大小写。）|  
-   |**/ 覆盖**|更新现有证书的选项。 如果未指定，且应用程序中已存在与要添加的证书具有相同 Thumbprint 属性的证书，则 Add 操作将失败。 通过在证书管理单元中双击证书，再单击“详细信息”选项卡，可以查看它的 Thumbprint 属性。有关详细信息，请参阅证书管理单元文档中的“查看证书信息”。|  
-   |**/ 指纹**|证书的指纹属性 (*指纹*是数据的摘要)。 此值必须放在双引号 (") 中。|  
-   |**/ 服务器**|BizTalk 管理数据库的宿主 SQL Server 实例的名称，格式为“服务器名称\实例名称,端口”。<br /><br /> 只在实例名称与服务器名称不相同时才需要指定实例名称。 只在 SQL Server 不使用默认端口号 (1433) 时才需要指定端口。<br /><br /> 示例：<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> 如果未提供，则使用本地计算机上运行的 SQL Server 实例的名称。|  
-   |**/ 数据库**|BizTalk 管理数据库的名称。 如果未指定，则使用在本地 SQL Server 实例中运行的 BizTalk 管理数据库。|  
+   |**/ApplicationName**|要将证书添加到 BizTalk 应用程序的名称。 如果未指定应用程序名称，则使用默认 BizTalk 应用程序组。 如果名称包含空格，则必须将其括在双引号 （"）。|  
+   |**/Type**|**System.biztalk: certificate** （此值不区分大小写。）|  
+   |**/Overwrite**|若要更新现有证书的选项。 如果未指定，且证书已存在具有相同 Thumbprint 属性为要添加，则添加操作将失败的证书的应用程序中。 可以通过双击证书管理单元中的证书，然后单击详细信息选项卡查看指纹属性。有关详细信息，请参阅"查看证书信息"文档中的证书管理单元中。|  
+   |**/Thumbprint**|证书的指纹属性 (*指纹*是数据的摘要)。 此值必须括在双引号 （"）。|  
+   |**/Server**|承载 BizTalk 管理数据库，在窗体 ServerName\InstanceName，端口中的 SQL Server 实例的名称。<br /><br /> 实例名称仅是所需的实例名称不同于服务器名称时。 端口是仅在 SQL Server 使用的端口号而不是默认 (1433) 时所需。<br /><br /> 示例：<br /><br /> Server=MyServer<br /><br /> Server=MyServer\MySQLServer,1533<br /><br /> 如果未提供，则使用本地计算机上运行的 SQL Server 实例的名称。|  
+   |**/Database**|BizTalk 管理数据库的名称。 如果未指定，使用 SQL Server 的本地实例中运行的 BizTalk 管理数据库。|  
   
 ## <a name="see-also"></a>请参阅  
  [管理.NET 程序集、 证书和其他资源](../core/managing-net-assemblies-certificates-and-other-resources.md)   
- [AddResource 命令： 证书](../core/addresource-command-certificate.md)   
+ [AddResource 命令：证书](../core/addresource-command-certificate.md)   
  [创建和修改 BizTalk 应用程序](../core/creating-and-modifying-biztalk-applications.md)

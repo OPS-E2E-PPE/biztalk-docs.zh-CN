@@ -24,17 +24,17 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 770691b2862aba307e6f1cc444c8d38adce4aeb4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fc14c208886497b001d50bbb8b5446b1ecccc20a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984286"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65281785"
 ---
 # <a name="setting-up-a-cidx-solution"></a>设置 CIDX 解决方案
-Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] 提供对 CIDX（化工行业数据交换）XML 消息交换（CIDX Chem eStandards 2.0 版和 3.0 版）的支持。 本主题讲述如何设置 CIDX 解决方案，步骤如下：  
+Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] CIDX （化工行业数据交换） XML 消息交换 (CIDX Chem eStandards 2.0 和 3.0 版) 的支持。 本主题介绍如何设置 CIDX 解决方案，通过执行以下操作：  
   
--   设置流程配置  
+-   流程配置设置  
   
 -   设置协议  
   
@@ -71,10 +71,10 @@ Microsoft [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentv
  若要为 CIDX 导入基于 XSD 的 PIP，需要在 cidx.org 下载 PIP 的 ZIP 文件[ http://go.microsoft.com/FWLink/?LinkID=33859 ](http://go.microsoft.com/FWLink/?LinkID=62361)。 请按照导入过程中所述[导入基于 XSD 的 PIP](../../adapters-and-accelerators/accelerator-rosettanet/importing-an-xsd-based-pip.md)。  
   
 ## <a name="connecting-to-the-elemica-network"></a>连接到 Elemica 网络  
- 可以使用 Elemica Connectivity Pack（Elemica 连接包）中的项目文件来自定义 [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]，使其连接到 Elemica。 您可以下载连接包从[ http://go.microsoft.com/fwlink/?LinkId=46195 ](http://go.microsoft.com/fwlink/?LinkId=46195)。 有关详细信息，请在 MSDN 上参阅"连接到 Elemica 网络使用 BizTalk Accelerator for RosettaNet 3.0"白皮书[ http://go.microsoft.com/fwlink/?linkid=46539 ](http://go.microsoft.com/fwlink/?linkid=46539)。  
+ 你可以自定义[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]以连接到 Elemica 使用 Elemica 连接包中的项目文件。 您可以下载连接包从[ http://go.microsoft.com/fwlink/?LinkId=46195 ](http://go.microsoft.com/fwlink/?LinkId=46195)。 有关详细信息，请在 MSDN 上参阅"连接到 Elemica 网络使用 BizTalk Accelerator for RosettaNet 3.0"白皮书[ http://go.microsoft.com/fwlink/?linkid=46539 ](http://go.microsoft.com/fwlink/?linkid=46539)。  
   
 > [!NOTE]
->  “Connecting to the Elemica Network with BizTalk Accelerator for RosettaNet 3.0”（使用 BizTalk Accelerator for RosettaNet 3.3 连接到 Elemica 网络）白皮书中的信息对 [!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)] 有效。  
+>  在"连接到 Elemica 网络使用 BizTalk Accelerator for RosettaNet 3.0"白皮书中的信息是对有效[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]。  
   
 ## <a name="see-also"></a>请参阅  
  [CIDX 支持](../../adapters-and-accelerators/accelerator-rosettanet/cidx-support.md)   

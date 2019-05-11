@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server 如何实例化适配器 |Microsoft 文档
+title: BizTalk Server 如何实例化适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,38 +12,38 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b32e6e40bf39c09e747391bba51a54143fc67e57
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4082d9ac17ce7e97b94cd9b585eb1a6ce326f0e0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246693"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65344227"
 ---
 # <a name="how-biztalk-server-instantiates-an-adapter"></a>BizTalk Server 如何实例化适配器
-在 BizTalk 服务启动时，所有接收适配器都将被实例化，只要它们具有一个或多个已配置且处于活动状态的接收位置。 默认情况下，在消息引擎从队列中删除要通过使用某一发送适配器发送的第一个消息前，将不会实例化该发送适配器。 （这有时称为"延迟创建。）但是，如果你需要实例化服务启动后上的发送适配器，你可以使用**InitTransmitterOnServiceStart**适配器功能。 这将引导消息引擎在服务启动时创建发送适配器，而非使用默认的“懒创建”方法。 默认的“懒创建”方法有助于减少在终结点上未配置适配器时占用的系统资源量。  
+BizTalk 服务启动时，所有接收适配器进行实例化，只要它们具有一个或多个已配置且处于活动状态的接收位置。 默认情况下，直到要通过使用发送的第一个消息从队列删除消息引擎不实例化发送适配器的发送适配器。 （这有时称为"懒创建。）但是，如果需要实例化发送适配器在服务启动，则可以使用**InitTransmitterOnServiceStart**适配器功能。 这会指示消息引擎在服务启动，而不是使用默认延迟创建创建发送适配器。 默认的懒创建方法有助于减少终结点上未配置适配器时使用的系统资源的数量。  
   
- 在创建自定义适配器时，建议使用托管代码。 但是，可以使用本地 COM 组件。 对于 COM 组件，该适配器在正常的方式使用中实例化**CoCreateInstance**。  
+ 创建自定义适配器时，我们建议使用托管的代码。 但是，就可以使用本机 COM 组件。 对于 COM 组件实例化适配器中采用正常方式使用**CoCreateInstance**。  
   
- 对于托管代码中，你需要指定.NET**类型**在配置文件中; 中的程序集路径是可选的。  
+ 对于托管代码中，您需要指定.NET**类型**配置文件中; 中的程序集路径是可选的。  
   
- 下面介绍可行的部署选项：  
+ 可能的部署选项包括：  
   
 |.NET 类型|程序集路径|程序集部署方法|  
 |---------------|-------------------|--------------------------------|  
-|Specified|未指定|通过 XCopy 复制方式将程序集复制到产品目录或者产品目录中的子目录，其名称与该程序集同名|  
+|Specified|未指定|与程序集 XCopy 到产品目录或者具有相同名称的产品目录中子目录的程序集|  
 |Specified|未指定|全局程序集缓存 (GAC) 程序集|  
-|Specified|Specified|将程序集以 XCopy 方式复制到指定目录|  
+|Specified|Specified|XCopy 到指定的目录的程序集|  
   
- **故障排除提示：** 当你创建使用托管的代码中，如果无法创建适配器时，使用 fuslogvw.exe 工具来确定是否存在无法解析的程序集的引用。 这是一个常见错误。  
+ **故障排除提示：** 创建使用托管的代码中，如果在无法创建适配器时，使用 fuslogvw.exe 工具确定是否存在无法解析的程序集的引用。 这是一个常见的错误。  
   
- 下图显示根据指定的配置创建适配器的逻辑：  
+ 下图显示了用于创建适配器，具体取决于指定的配置的逻辑：  
   
  ![](../core/media/initializingtheadapter.gif "InitializingTheAdapter")  
   
- 下表提供了一个示例，介绍如何配置接收适配器以及配置运行时程序集的方式。  
+ 下表提供了示例的接收适配器可能配置方式，并可能配置的运行时程序集的方法。  
   
 |程序集部署方法|InboundTypeName|InboundAssemblyPath|  
 |--------------------------------|---------------------|-------------------------|  
 |指定程序集位置|Microsoft.Samples.MyReceiveAdapter|C:\MyAdapter\MyAdapter.dll|  
-|指定 .NET 类型（包括公钥、版本和区域性信息）|Microsoft.Samples.MyReceiveAdapter, MyReceiveAdapter, Version=1.0.2510.24622, Culture=neutral, PublicKeyToken=077cf886a2d1c020|N/A|  
-|GAC 程序集|Microsoft.Samples.MyReceiveAdapter, MyReceiveAdapter, Version=1.0.2510.24622, Culture=neutral, PublicKeyToken=077cf886a2d1c020|N/A|
+|指定.NET 类型 （包括公钥、 版本和区域性信息）|Microsoft.Samples.MyReceiveAdapter, MyReceiveAdapter, Version=1.0.2510.24622, Culture=neutral, PublicKeyToken=077cf886a2d1c020|不可用|  
+|GAC 程序集|Microsoft.Samples.MyReceiveAdapter, MyReceiveAdapter, Version=1.0.2510.24622, Culture=neutral, PublicKeyToken=077cf886a2d1c020|不可用|

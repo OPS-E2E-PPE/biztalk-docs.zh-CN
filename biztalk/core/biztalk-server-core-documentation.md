@@ -12,12 +12,12 @@ caps.latest.revision: 48
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fd95fb76364eed3722391b25e77e4eab363b3be4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 55e505c7e8ecf4a8d8bed6688f746a99c50be502
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986886"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357943"
 ---
 # <a name="biztalk-server-core-documentation"></a>BizTalk Server 核心文档
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Core 文档中包含各种资源，可帮助你了解如何开发、 部署、 管理和使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  

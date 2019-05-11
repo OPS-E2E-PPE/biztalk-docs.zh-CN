@@ -1,6 +1,6 @@
 ---
-title: BizTalk Server 2016： 最新内容、 和安装 |Microsoft 文档
-description: 什么是新，以及安装和升级到 BizTalk Server 2016 的简介
+title: BizTalk Server 2016:最新内容、 和安装 |Microsoft Docs
+description: 什么是新，以及如何安装和升级到 BizTalk Server 2016 简介
 ms.custom: ''
 ms.prod: biztalk-server
 ms.date: 08/10/2017
@@ -13,24 +13,24 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 212eee411c78bacd3d46ca66762fc8fc0f25fa05
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4d877ba2b81a536e8c1818c243cf0eb82e5f2c8f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22300101"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65266497"
 ---
-# <a name="biztalk-server-2016-whats-new-and-installation"></a>BizTalk Server 2016：新增功能和安装
+# <a name="biztalk-server-2016-whats-new-and-installation"></a>BizTalk Server 2016:最新内容、 和安装
 
-## <a name="get-started-with-biztalk-server-2016"></a>BizTalk Server 2016 入门
+## <a name="get-started-with-biztalk-server-2016"></a>开始使用 BizTalk Server 2016
 
-[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] 是最新本地版本。 通过此新版本，可使用新的逻辑应用适配器实现与 Azure 的更紧密集成，还可使用文件适配器和 WCF-SQL 适配器连接到 Azure 资源。 
+[!INCLUDE[bts2016_md](../includes/bts2016-md.md)] 是最新的本地版本。 使用此新版本，可以与 Azure 中使用新的逻辑应用适配器期望更紧密集成，并连接到 Azure 资源使用的文件和 WCF SQL 适配器。 
 
-最大的变化之一是，支持 SQL Server 2016 AlwaysOn 可用性组 (AG)。 此支持包括在本地使用 BizTalk Server，以及使用 BizTalk Server Azure 虚拟机。 使用 AlwaysOn，现在可通过使用 Azure 虚拟机获得高可用性解决方案。
+最大的变化之一是支持的 SQL Server 2016 AlwaysOn 可用性组 (AG)。 此支持包括使用 BizTalk Server 的本地，并使用 BizTalk Server Azure 虚拟机。 使用 AlwaysOn，您现在可以使用 Azure 虚拟机高度可用的解决方案。
 
-还更新了 SHA-2 支持、用于参与方的导入和导出绑定选项，改进了管理控制台等。 
+此外需要进行更新的 sha-2 支持、 导入和导出的绑定选项参与方，改进了管理控制台，和很多得多。 
 
-在此 [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] 系列主题中，重点介绍 [!INCLUDE[bts2016_md](../includes/bts2016-md.md)] 的特定文档，包括更改的内容和安装。 因此，若要了解有关高可用性、监视 BIzTalk 环境等方面的信息，请转到 [BizTalk Server 核心文档](../core/biztalk-server-core-documentation.md)。 若要配置 BizTalk Server，请转到[配置 BizTalk Server](../install-and-config-guides/configure-biztalk-server.md)。 若要了解新增功能并安装 [!INCLUDE[bts2016_md](../includes/bts2016-md.md)]，可通过访问以下链接开始：  
+在此[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]组的主题，我们关注的特定文档[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]，包括更改的内容和安装。 因此，如果你想要深入了解高可用性，监视 BIzTalk 环境和的详细信息，然后转到[BizTalk Server 核心文档](../core/biztalk-server-core-documentation.md)。 如果你想要配置 BizTalk Server，然后转[配置 BizTalk Server](../install-and-config-guides/configure-biztalk-server.md)。 如果想要阅读有关哪些新增功能，并且安装[!INCLUDE[bts2016_md](../includes/bts2016-md.md)]，然后开始使用以下链接：  
 
 * [新增功能](../install-and-config-guides/what-s-new-in-biztalk-server-2016.md)  
 * [硬件和软件要求](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)  
@@ -38,7 +38,7 @@ ms.locfileid: "22300101"
 * [安装 BizTalk Server](../install-and-config-guides/install-biztalk-server-2016.md)
 * [升级 BizTalk Server](../install-and-config-guides/upgrade-to-biztalk-server-2016.md)
   
-## <a name="more-good-stuff"></a>更多有用内容
+## <a name="more-good-stuff"></a>更多有用资料
 [配置 BizTalk Server](../install-and-config-guides/configure-biztalk-server.md)
 
 [在群集中配置 BizTalk Server](../install-and-config-guides/configure-biztalk-server-in-a-cluster.md)
@@ -51,6 +51,6 @@ ms.locfileid: "22300101"
 
 [使用配置框架](../install-and-config-guides/working-with-the-configuration-framework.md)
 
-[确保 BizTalk Server 部署的安全](../install-and-config-guides/securing-your-biztalk-server-deployment.md)
+[保护 BizTalk Server 部署](../install-and-config-guides/securing-your-biztalk-server-deployment.md)
 
-[卸载 BizTalk Server 并取消配置以将其删除](../install-and-config-guides/uninstall-and-unconfigure-biztalk-server-to-remove-it.md)
+[卸载并取消配置 BizTalk Server 将其删除](../install-and-config-guides/uninstall-and-unconfigure-biztalk-server-to-remove-it.md)

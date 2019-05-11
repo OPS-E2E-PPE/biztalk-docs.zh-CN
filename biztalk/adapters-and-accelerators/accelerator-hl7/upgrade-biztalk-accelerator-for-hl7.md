@@ -12,18 +12,18 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 245d59e54a39cb77a71fc546920542619a4aeb3f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4bb5bbc8f1b17f47ab6463eab33cfc9fee62cc6c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977638"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65286398"
 ---
 # <a name="upgrade-biztalk-accelerator-for-hl7"></a>升级 BizTalk Accelerator for HL7
 概述[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]升级过程。 
 
 <a name="BKMK_BeforeUpgrade"></a>   
-## <a name="before-you-upgrade"></a>升级之前需完成的操作  
+## <a name="before-you-upgrade"></a>升级之前  
 
 - 运行升级的用户必须是 BizTalk Administrators 组的成员。  
 
@@ -47,8 +47,8 @@ ms.locfileid: "36977638"
 
 |                                                                                              | [!INCLUDE[bts2016_md](../../includes/bts2016-md.md)] | [!INCLUDE[bts2013r2](../../includes/bts2013r2-md.md)] | BizTalk Server 2013 |
 |----------------------------------------------------------------------------------------------|------------------------------------------------------|-------------------------------------------------------|---------------------|
-| [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 2013 |                         是                          |                          是                          |         “否”          |
-| [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 2010 |                          “否”                          |                          是                          |         是         |
+| [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 2013 |                         是                          |                          是                          |         否          |
+| [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 2010 |                          否                          |                          是                          |         是         |
 
 <a name="BKMK_UpgradeSteps"></a>   
 ## <a name="upgrade-steps"></a>升级步骤  
@@ -72,17 +72,17 @@ ms.locfileid: "36977638"
 
 7. 重新部署所有其他程序集。  
 
-8. 重建引用一个或多个 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 程序集的任何项目或程序集。 使用**BTSTask.exe**中\<*驱动器*\>: \Program Files\Microsoft BizTalk Server\<版本\>，请手动重新部署这些项目。  
+8. 重新生成任何项目或具有对一个或多个引用的程序集[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]程序集。 使用**BTSTask.exe**中\<*驱动器*\>: \Program Files\Microsoft BizTalk Server\<版本\>，请手动重新部署这些项目。  
 
 9. 重新启动 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 服务。  
 
 <a name="BKMK_UpgradeMulti"></a>   
 ## <a name="upgrading-in-a-multi-server-environment"></a>在多服务器环境中升级  
- 在多服务器[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]环境、 升级[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]s，然后再升级[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]所有服务器上。 请按以下顺序迁移服务器：  
+ 在多服务器[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]环境、 升级[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]s，然后再升级[!INCLUDE[btaBTAHL7NoNumber](../../includes/btabtahl7nonumber-md.md)]所有服务器上。 按以下顺序将服务器迁移：  
 
 -   承载 BizTalk 组的服务器  
 
--   各个处理节点  
+-   每个处理节点  
 
 -   BAM 门户服务器  
 

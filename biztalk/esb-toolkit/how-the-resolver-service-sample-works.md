@@ -1,5 +1,5 @@
 ---
-title: 解析程序服务示例的工作原理 |Microsoft 文档
+title: 解析程序服务示例的工作原理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af9f90bf80435b00a0d39e83d2b2293595f6f200
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: 2d07fbe42cf1253f5976227211f59ff66809fb70
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25973075"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279032"
 ---
 # <a name="how-the-resolver-service-sample-works"></a>解析程序服务示例的工作原理
-解析程序服务示例实例化解析程序服务，并将该消息传递指定向其进行处理。 解析程序服务示例客户端应用程序使用的第一个参数作为 ResolverList.xml 文件，以包含多个冲突解决程序请求，并将这些请求发送到解析程序服务的路径。 例如，下面是示例中使用 XPATH 请求。  
+解析程序服务示例实例化解析程序服务，并将的消息传递您指定对其进行处理。 解析程序服务示例客户端应用程序使用的第一个参数作为 ResolverList.xml 文件，其中包含多个冲突解决程序请求，并将这些请求发送到解析程序服务的路径。 例如，下面是本示例中使用 XPATH 请求。  
   
 ```  
   
@@ -50,13 +50,13 @@ ms.locfileid: "25973075"
 ```  
   
 > [!NOTE]
->  实际内容**\<内容\>** 元素不包含使用在前面的列表中将行的空白字符。  
+>  实际内容**\<内容\>** 元素不包含用于在上述列表中换行空格字符。  
   
- 前面的列表显示该请求包含中的解析程序配置连接字符串**\<内容\>** 元素。 **\<正文\>** 元素包含消息正文。  
+ 前面的列表显示该请求包含中的冲突解决程序配置连接字符串**\<内容\>** 元素。 **\<正文\>** 元素包含消息正文。  
   
- 解析程序服务使用**ResolverMgr**要实例化相应的解析程序，连接字符串中的冲突解决程序类型所定义的具体实例类。 如果 XPATH 请求中，这是由 XPATH 冲突解决程序。  
+ 解析程序服务使用**ResolverMgr**要实例化相应冲突解决程序，定义的连接字符串中的冲突解决程序类型的具体实例类。 如果 XPATH 请求中，这是 XPATH 冲突解决程序。  
   
- 接下来，框架将创建的实例**ResolveProvider**名为 ESB 类。Resolver.XPath 用于处理该请求。 客户端应用程序将从解析程序服务的响应消息写入到名为 \Source\Samples\ResolverService\Output 的文件夹。 以下列表显示响应的内容。  
+ 接下来，框架将创建的实例**ResolveProvider**类名为 ESB。Resolver.XPath 用于处理该请求。 客户端应用程序将从解析程序服务的响应消息写入到名为 \Source\Samples\ResolverService\Output 的文件夹。 以下列表显示了响应的内容。  
   
 ```  
   

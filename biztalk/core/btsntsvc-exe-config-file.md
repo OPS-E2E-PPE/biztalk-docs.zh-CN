@@ -1,5 +1,5 @@
 ---
-title: BTSNTSvc.exe.config 文件 |Microsoft 文档
+title: BTSNTSvc.exe.config File | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a7fae2fc49487597380e6c5d04a946b1078daeeb
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 1c8347f7027371cd77c5b712ed3e12380e30bc34
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26004814"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357991"
 ---
-# <a name="btsntsvcexeconfig-file"></a>BTSNTSvc.exe.config 文件
-冻结属性及其默认值在[!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)]中配置，或作为 XML 在 BizTalk 配置文件（BTSNTSvc.exe.config 或 BTSNTSvc64.exe.config）中配置。 将首先应用 BizTalk 配置文件中的值， 然后应用[!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)]设置。 所有包含业务流程的主机实例启动后，将读取冻结属性。  
+# <a name="btsntsvcexeconfig-file"></a>BTSNTSvc.exe.config File
+冻结属性和它们的默认值是可在中配置[!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)]或作为 XML 在 BizTalk 配置文件 （BTSNTSvc.exe.config 或 BTSNTSvc64.exe.config）。 首先应用 BizTalk 配置文件中的值。 然后，[!INCLUDE[btsSettingsDashboard](../includes/btssettingsdashboard-md.md)]应用设置。 所有主机实例包含业务流程开始时将读取冻结属性。  
   
- 本主题主要介绍 BizTalk 配置文件（BTSNTSvc.exe.config 或 BTSNTSvc64.exe.config）。 许多冻结属性并未列出， 但这些属性及其默认值仍然适用，即使并未在配置文件中明确指定它们。  
+ 本主题重点介绍 BizTalk 配置文件 （BTSNTSvc.exe.config 或 BTSNTSvc64.exe.config）。 许多冻结属性不会列出。 这些属性和它们的默认值仍然适用，即使它们未显式指定配置文件中。  
   
- 要更改默认值，必须将它们显式添加到你的配置文件。 有关如何更改默认冻结行为的信息，请参阅[如何修改业务流程限制设置](../core/how-to-modify-orchestration-throttling-settings.md)。 有关业务流程内存限制的信息，请参阅[如何修改 Orchestration 内存限制设置](../core/how-to-modify-orchestration-memory-throttling-settings.md)。  
+ 若要更改默认值，您必须显式添加到你的配置文件。 有关如何更改默认冻结行为的信息，请参阅[如何修改业务流程阻止设置](../core/how-to-modify-orchestration-throttling-settings.md)。 有关业务流程内存限制的信息，请参阅[如何修改业务流程内存阻止设置](../core/how-to-modify-orchestration-memory-throttling-settings.md)。  
   
- 以下为 BTSNTSvc.exe.config 文件的内容。 此文件始终位于 BTSNTSvc.exe 文件，这通常是 C:\Program Files\Microsoft BizTalk Server 所在的同一目录中。  
+ 下面是在 BTSNTSvc.exe.config 文件的内容。 此文件位于始终与 BTSNTSvc.exe 文件，这通常是 C:\Program Files\Microsoft BizTalk Server 的同一目录中。  
   
 ```  
 <?xml version="1.0" ?>  
@@ -51,5 +51,5 @@ ms.locfileid: "26004814"
 </configuration>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [使用设置仪表板进行 BizTalk Server 性能调整](../core/using-settings-dashboard-for-biztalk-server-performance-tuning.md)

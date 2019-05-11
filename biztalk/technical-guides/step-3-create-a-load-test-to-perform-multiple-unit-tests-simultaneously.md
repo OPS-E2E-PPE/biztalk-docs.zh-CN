@@ -1,5 +1,5 @@
 ---
-title: 步骤 3： 创建负载测试，以同时执行多个单元测试 |Microsoft Docs
+title: 步骤 3：创建负载测试，以同时执行多个单元测试 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d946c48c1bcaca420347771e73089e5535ab1229
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cb1f4949f8acb0e422888abc511b6323c57817c0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37002702"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65313283"
 ---
-# <a name="step-3-create-a-load-test-to-perform-multiple-unit-tests-simultaneously"></a>步骤 3： 创建负载测试，以同时执行多个单元测试
+# <a name="step-3-create-a-load-test-to-perform-multiple-unit-tests-simultaneously"></a>步骤 3：创建负载测试，以同时执行多个单元测试
 负载测试运行多个实例的一个或多个单元测试，以便您可以衡量应用程序的性能和处理负载的能力。 Visual Studio 2010 负载测试的主要组件包括：  
   
 - **方案**– 负载测试配置测试的负载模式、 测试组合模型、 测试组合、 网络组合和 Web 浏览器组合的其中的部分。 方案适应模拟复杂真实工作负载配置文件的复杂性。 对于所有的全面列表负载测试方案属性，请参阅[负载测试方案属性](http://go.microsoft.com/fwlink/?LinkId=208327)(http://go.microsoft.com/fwlink/?LinkId=208327)。  
@@ -30,7 +30,7 @@ ms.locfileid: "37002702"
   
   使用新建负载测试向导中，使用负载测试编辑器编辑和分析负载测试分析器中创建负载测试。 在 Microsoft Visual Studio 旗舰版中包含所有这些工具。 有关创建和编辑 Visual Studio 2010 Ultimate edition 中的负载测试的详细信息请参阅[创建和编辑负载测试](http://go.microsoft.com/fwlink/?LinkId=208308)(http://go.microsoft.com/fwlink/?LinkId=208308)。  
   
-  按照以下部分，以添加负载中的步骤测试对测试项目中所述[步骤 1： 创建单元测试将文档提交到 BizTalk Server](../technical-guides/step-1-create-a-unit-test-to-submit-documents-to-biztalk-server.md)。 这些步骤还介绍了如何配置**方案**，**计数器集**，并**运行设置**为负载测试。  
+  按照以下部分，以添加负载中的步骤测试对测试项目中所述[步骤 1:创建单元测试，以将文档提交给 BizTalk Server](../technical-guides/step-1-create-a-unit-test-to-submit-documents-to-biztalk-server.md)。 这些步骤还介绍了如何配置**方案**，**计数器集**，并**运行设置**为负载测试。  
   
 ##  <a name="BKMK_StepLoadTest"></a> 添加一个负载测试和配置负载测试方案、 计数器集，并运行设置  
  本主题介绍如何使用**新建负载测试向导**若要将负载添加到测试项目的测试，以及如何配置负载测试以满足特定需求。  
@@ -130,10 +130,10 @@ ms.locfileid: "37002702"
    |性能类别|性能计数器|  
    |--------------------------|-------------------------|  
    |处理器|_Total 计数器实例的处理器时间百分比。|  
-   |Biztalk: Message 框的作用： 常规计数器|后台处理大小 *\<BizTalk MessageBox 数据库名称\>*:*\<SQL Server 实例名称\>* 计数器实例。 **注意：***\<BizTalk MessageBox 数据库名称\>* 并 *\<SQL Server 实例名称\>* 是只是占位符BizTalk MessageBox 数据库和存储 BizTalk MessageBox 数据库的 SQL Server 实例的实际名称。 应使用 BizTalk MessageBox 数据库和关联的 SQL Server 实例的实际名称替换这些占位符。|  
+   |Biztalk: Message 框：常规计数器|后台处理大小 *\<BizTalk MessageBox 数据库名称\>*:*\<SQL Server 实例名称\>* 计数器实例。 **注意：** *\<BizTalk MessageBox 数据库名称\>* 并 *\<SQL Server 实例名称\>* 是仅仅作为占位符的实际名称的 BizTalk MessageBox 数据库和 SQL Server保存 BizTalk MessageBox 数据库的实例。 应使用 BizTalk MessageBox 数据库和关联的 SQL Server 实例的实际名称替换这些占位符。|  
    |BizTalk:Messaging|文档接收数/秒的接收主机计数器实例。<br /><br /> 记录每秒处理的传输主机计数器实例。|  
-   |BizTalk：消息代理|文档的消息送达传入速率接收主机。|  
-   |BizTalk：消息代理|消息发布传出速率文档传输主机。|  
+   |Biztalk: Message Agent|文档的消息送达传入速率接收主机。|  
+   |Biztalk: Message Agent|消息发布传出速率文档传输主机。|  
    |XLANG/s 业务流程|业务流程每秒完成的业务流程处理主机。|  
   
 ### <a name="modify-run-settings-to-map-counter-sets-to-appropriate-computers"></a>修改将计数器集映射到合适的计算机的运行的设置  
@@ -148,7 +148,7 @@ ms.locfileid: "37002702"
 4.  重复步骤 2 和 3，直到已与要收集性能数据的所有计算机关联计数器集。  
   
 ###  <a name="BKMK_TestSettings"></a> 将测试设置文件添加到解决方案后，若要运行测试并远程收集数据  
- 若要配置要使用你在中创建的测试控制器和测试代理计算机的负载测试[步骤 2： 配置负载测试控制器和代理计算机](../technical-guides/step-2-configure-load-test-controller-and-agent-computers.md)，按照中的步骤[添加远程执行的测试设置或到你的解决方案的数据收集](http://go.microsoft.com/fwlink/?LinkId=209182)(http://go.microsoft.com/fwlink/?LinkId=209182)如下所示：  
+ 若要使用的测试控制器和测试代理的计算机中创建负载测试配置[步骤 2:配置负载测试控制器和代理的计算机](../technical-guides/step-2-configure-load-test-controller-and-agent-computers.md)，按照中的步骤[将远程执行或数据收集的测试设置添加到你的解决方案](http://go.microsoft.com/fwlink/?LinkId=209182)(http://go.microsoft.com/fwlink/?LinkId=209182)如下所示：  
   
 1.  对于步骤 3 中，输入名称**BizTalkLoadTest**  
   

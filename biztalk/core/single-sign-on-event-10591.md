@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10591 |Microsoft Docs
+title: 单一登录：Event 10591 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f7ee8ffc559bd7196f86401296f773ec46122d3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4e1993ba318ed7b13b31ad6b5009cbe2594e64ab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004974"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65270941"
 ---
-# <a name="single-sign-on-event-10591"></a>单一登录： 事件 10591
+# <a name="single-sign-on-event-10591"></a>单一登录：事件 10591
 ## <a name="details"></a>详细信息  
   
 |                 |                                                            |
@@ -28,9 +28,9 @@ ms.locfileid: "37004974"
 | 产品版本 | [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)] |
 |    事件 ID     |                           10591                            |
 |  事件源   |                           ENTSSO                           |
-|    组件    |                            N/A                             |
+|    组件    |                            不可用                             |
 |  符号名称  |                    SSO_INFO_IN_SERVICE                     |
-|  消息正文   |         企业单一登录已恢复为联机状态。          |
+|  消息正文   |         企业单一登录是回到联机状态。          |
   
 ## <a name="explanation"></a>解释  
  这只是一条信息性消息。  

@@ -12,20 +12,20 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1422e524d9527b5e7e5362d5867654026cc03768
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 75545d752e531c603e7e7e04fee8bda311b6f1a1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974174"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65355820"
 ---
 # <a name="configuring-fallback-acknowledgement-properties-edifact"></a>配置回退确认属性 (EDIFACT)
-在备选协议中，您可以指定将何种类型的确认返回参与方。  
+在后备协议中，可以指定哪些类型的确认返回到参与方。  
   
-## <a name="prerequisites"></a>必要條件  
- 必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组或 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators 组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 必须以成员的身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理员或[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]B2B Operators 组。  
   
-### <a name="to-configure-edifact-ack-contrl-properties"></a>配置 EDIFACT 确认 (CONTRL) 属性  
+### <a name="to-configure-edifact-ack-contrl-properties"></a>若要配置 EDIFACT 确认 (CONTRL) 属性  
   
 1. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，右键单击**方**节点，，然后单击**EDIFACT 后备设置**。  
   

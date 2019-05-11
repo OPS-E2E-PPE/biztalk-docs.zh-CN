@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 14d35eb4f12bdb7a66da28d94c8fabd33b073127
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 412ee949494d6009032ace80cbf082a979afb492
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018365"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357895"
 ---
 # <a name="biztalk-server-project-templates"></a>BizTalk Server 项目模板
 

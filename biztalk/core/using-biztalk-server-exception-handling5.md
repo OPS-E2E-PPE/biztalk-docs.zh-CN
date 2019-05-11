@@ -1,6 +1,6 @@
 ---
-title: 添加异常处理来 TIBCO EMS |Microsoft 文档
-description: 处理在 BizTalk Server 中使用 TIBCO EMS 适配器你业务流程的异常的概述
+title: 添加异常处理到 TIBCO EMS |Microsoft Docs
+description: 使用 TIBCO EMS 适配器在 BizTalk Server 业务流程的异常处理的概述
 ms.custom: ''
 ms.date: 10/23/2017
 ms.prod: biztalk-server
@@ -13,17 +13,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 68e457c4cf77f947c5093e85efdcaa09d88bb4a3
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 0039df381d70442ee4da826c43f9f59ac2ca2ccb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24013092"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65277805"
 ---
 # <a name="use-biztalk-server-exception-handling"></a>使用 BizTalk Server 异常处理
 
 ## <a name="overview"></a>概述
-在您的业务流程中添加形状以处理错误和异常从后端服务器。 
+在您的业务流程添加形状以处理错误和异常从后端服务器。 
   
 ## <a name="next-steps"></a>后续步骤
   

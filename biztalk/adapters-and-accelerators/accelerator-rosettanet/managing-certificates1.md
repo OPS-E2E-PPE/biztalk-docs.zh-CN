@@ -15,21 +15,21 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2d9d326155ea788a77fe86c0c4eb126476d21ece
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 07ec8de4a08145bfddfc26c6b4900ac5ef62ffb2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984998"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65283252"
 ---
 # <a name="managing-certificates"></a>管理证书
-在 RosettaNet 中实现安全通信要求使用证书。 Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]使用证书来加密传出消息、 对传出消息进行签名、 解密传入消息和验证传入消息中的签名。  
+RosettaNet 中的实现安全通信要求使用证书。 Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]使用证书来加密传出消息、 对传出消息进行签名、 解密传入消息和验证传入消息中的签名。  
   
- 要使用证书，必须执行以下部分或全部步骤：  
+ 若要使用的证书，必须执行一些或所有以下步骤：  
   
--   将证书导入服务器的证书存储区中  
+-   证书导入服务器的证书存储区  
   
--   配置证书在消息中的使用方式  
+-   在消息中配置证书的使用  
   
 -   将证书导出到合作伙伴  
   
