@@ -18,12 +18,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f60e0ae7f9cf2e6a224ce9d919c7c4d5e6f3119c
-ms.sourcegitcommit: e172dedfd00d4de3a40c8289f3a97ef65cdadd3c
+ms.openlocfilehash: 5f9cb3433ecaff2f87e1cd4168b21cedfec05727
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "22277485"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65244405"
 ---
 # <a name="soap-headers-with-consumed-wcf-services"></a>SOAP 标头与使用的 WCF 服务
 若要将消息发送到 WCF 服务与自定义 SOAP 标头，这些标头必须设置 （在示例中的表达式形状） 的业务流程和管道组件 （在代码中） 中为上下文属性**OutboundCustomHeaders**。 此上下文属性位于目标命名空间 http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties ，并包含自定义 SOAP 标头的字符串表示形式。   
@@ -37,7 +37,7 @@ ms.locfileid: "22277485"
 </headers>  
 ```  
   
- 入站 SOAP 标头还包含 SOAP 标头的字符串表示形式。 此值类似于创建一个请求 SOAP 标头。  
+ 入站的 SOAP 标头还包含 SOAP 标头的字符串表示形式。 此值类似于创建一个请求 SOAP 标头。  
   
 ## <a name="in-this-section"></a>本节内容  
   

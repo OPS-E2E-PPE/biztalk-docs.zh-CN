@@ -1,5 +1,5 @@
 ---
-title: RNIFSend |Microsoft Docs
+title: RNIFSend | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,30 +12,30 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d9aca64afee9ed979b2eee58a5f2bdafb25b461
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 92ad9b7c0318a028b6b2f98a75eca1484014b305
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011598"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282236"
 ---
 # <a name="rnifsend"></a>RNIFSend
-此示例提供了一个有效的 Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RNIFSend.aspx 文件准备供 RNIF 处理的消息并将消息发送到响应方的 RNIFReceive.aspx 页。 你可以通过自定义 ASPX 页来执行以下操作：  
+此示例提供了一个有效的 Microsoft® [!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)] RNIFSend.aspx 文件准备供 RNIF 处理的消息并将消息发送到响应方的 RNIFReceive.aspx 页。 可以自定义 ASPX 页后，可以执行以下操作：  
   
 - 添加或删除性能计数器  
   
-- 向该页添加功能，例如，将数据写入数据库或自定义跟踪功能  
+- 将功能添加到页上，如向数据库写入数据或自定义跟踪功能  
   
-- 向该页添加验证功能  
+- 向页面添加验证  
   
   此示例位于*\<驱动器\>*: \Program Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\WebApplication\RNIFSender。  
   
 ## <a name="demonstrates"></a>演示  
- 此示例演示如何准备供 RNIF 处理的传出消息，包括以下内容：  
+ 此示例演示如何准备供 RNIF 处理，包括以下传出消息：  
   
--   验证 MIME 头的数据  
+-   验证 MIME 标头的数据  
   
--   向消息中添加 MIME 头和 MIME 边界  
+-   将 MIME 头和 MIME 边界添加到消息  
   
 -   将消息发送到合作伙伴的 RNIFReceive.aspx  
   

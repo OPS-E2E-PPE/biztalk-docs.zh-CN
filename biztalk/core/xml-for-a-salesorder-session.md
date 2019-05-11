@@ -1,5 +1,5 @@
 ---
-title: XML for SalesOrder 会话 |Microsoft 文档
+title: SalesOrder 会话的 XML |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 36b0a2b0fd5570a2daee83f07463d4cd67385427
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e3d5a3c816a553b312192d3d16bea7c415416f56
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22289773"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65246383"
 ---
 # <a name="xml-for-a-salesorder-session"></a>SalesOrder 会话的 XML
-下列各节提供 SalesOrder 会话的 XML 示例。  
+以下部分提供为 SalesOrder 会话的 XML 示例。  
   
 ## <a name="begindoc-xml-sample"></a>BeginDoc XML 示例  
   
@@ -106,5 +106,5 @@ ms.locfileid: "22289773"
   
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [附录 a： 示例文件](../core/appendix-a-sample-files.md)
+## <a name="see-also"></a>请参阅  
+ [附录 a:示例文件](../core/appendix-a-sample-files.md)

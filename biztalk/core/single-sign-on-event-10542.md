@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10542 |Microsoft Docs
+title: 单一登录：Event 10542 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: be63569d76bf7c0cfb14cb10bda27b6da52a3efc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 493937fbcf9eb04ccfe59881c56f12e4b3851f11
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979374"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243432"
 ---
-# <a name="single-sign-on-event-10542"></a>单一登录： 事件 10542
+# <a name="single-sign-on-event-10542"></a>单一登录：事件 10542
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                             |
@@ -30,19 +30,19 @@ ms.locfileid: "36979374"
 |  事件源   |                                                   ENTSSO                                                    |
 |    组件    |                                                     CO                                                      |
 |  符号名称  |                                       SSO_WARN_APP_TICKETS_VALIDATED                                        |
-|  消息正文   | 由于未经过验证，因此无法兑换此应用程序的票证。%r<br /><br /> 应用程序名称： %1 |
+|  消息正文   | 不能为此应用程序未经 validated.%r 兑换票证<br /><br /> 应用程序名称： %1 |
 
 ## <a name="explanation"></a>解释  
- 此警告事件表示，应用程序票证在不经过验证的情况下无法进行兑换。 应用程序票证兑换后，它们可能经过了验证也可能未经过验证。 验证过程会提高安全性，因为会将发出票证的用户的名称与 BizTalk 消息中用户的名称进行比较。 如果名称不相同，则验证失败。 当 BizTalk 消息在不受信任的主机中传输时，BizTalk 消息中用户的名称会更改为该不受信任主机的名称。 验证过程确保了 BizTalk 消息只能在受信任的主机中传输。 此消息特别指出，由于 SSO 系统选项设置原因，需要在应用程序系统级别进行验证，但是呼叫者并未提供任何验证信息。  
+ 此警告事件表示，不能应用程序票证兑换未经验证。 当应用程序票证兑换之后它们可以进行验证或不进行验证。 验证可以提高安全性，通过比较 BizTalk 消息中的用户的名称与颁发票证的用户的名称。 如果名称不同时验证失败。 当 BizTalk 消息流经的不受信任的主机时，BizTalk 消息中的用户的名称更改为不受信任的主机。 验证可确保 BizTalk 消息仅已流经受信任的主机。 此消息尤其意味着系统级别的应用程序 （由于 SSO 系统选项设置），需要验证但已由调用方提供任何验证信息。  
 
 ## <a name="user-action"></a>用户操作  
- 若要解决此警告问题，请执行以下一项或多项操作：  
+ 若要解决此警告，请执行一个或多个以下操作：  
 
-- 如果您使用的是 BizTalk Server，请确保您的消息只在受信任的主机之间传输。 这将降低在消息中篡改数据的风险。  
+- 如果使用 BizTalk Server，请确保，您的消息只流经受受信任的主机。 这将减少与消息中的数据被篡改的风险。  
 
-- 如果情况允许，请针对此应用程序关闭验证。 验证是一个管理选项，可以针对整个系统、或只针对此特定的应用程序关闭该选项。  
+- 如果你的方案允许，将关闭此应用程序的验证。 验证是一个管理选项，可以关闭状态的系统或只需为此特定应用程序。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [SSO 票证](../core/sso-tickets.md)  
 

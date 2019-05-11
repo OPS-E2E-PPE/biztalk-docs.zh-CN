@@ -15,17 +15,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 67216209204e8c621b387bee396b099081ea08c4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dc0dc9610b171ffa2049c5a4951d3846451aa2db
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994654"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65284685"
 ---
 # <a name="creating-a-well-formed-message-instance-from-a-pip"></a>根据 PIP 创建格式正确的消息实例
-本主题介绍如何生成格式正确的消息实例。 你可以根据合作伙伴接口流程 (PIP) 为消息实例生成模板。 执行此操作后，必须先修改该模板，以确保该模板的格式正确，然后才能添加数据。  
+本主题介绍如何生成格式正确的消息实例。 从合作伙伴接口流程 (PIP) 都可以生成消息实例模板。 完成后，必须修改该模板，以便它的格式正确，然后再添加你的数据。  
   
-### <a name="to-generate-a-message-instance-template-from-the-pip"></a>根据 PIP 生成消息实例模板  
+### <a name="to-generate-a-message-instance-template-from-the-pip"></a>若要从 PIP 生成消息实例模板  
   
 1. 启动**Microsoft Visual Studio 2012**。  
   
@@ -38,28 +38,28 @@ ms.locfileid: "36994654"
 5. 单击**生成实例**。  
   
    > [!NOTE]
-   >  这将生成一个根据 PIP 命名的文件，该文件名附加“_output”，并具有扩展名 .xml。 “输出”窗格中的语句指明 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 生成的实例的位置。  
+   >  这将生成名为 pip"_output"追加到的文件名和扩展名为.xml 文件。 输出窗格中的语句指示的位置[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]生成的实例。  
   
-### <a name="to-modify-the-message-instance-template"></a>修改消息实例模板  
+### <a name="to-modify-the-message-instance-template"></a>若要修改消息实例模板  
   
-1. 在 [!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)] 资源管理器中，找到包含该 XML 文件的文件夹，然后双击文件名打开该文件夹。  
+1. 在[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]资源管理器，找到包含 XML 文件的文件夹并双击要打开的文件夹的文件名称。  
   
-2. 在所有其他文本前添加指示 XML 版本和编码的 XML 头标记。 例如：  
+2. 添加之前，该值指示的 XML 并将编码版本的所有其他文本的 XML 头标记。 例如：  
   
    ```  
    <?xml version="1.0" encoding="UTF-8" ?>  
    ```  
   
-3. 在刚添加的行后面，添加指明 DTD 的 DOCTYPE 行。 例如，对于“3A4 采购订单请求”实例，该行如下所示：  
+3. 刚添加的行之后, 添加指明 DTD 的 DOCTYPE 行。 例如，对于 3A4 采购订单请求实例，行是按如下所示：  
   
    ```  
    <!DOCTYPE Pip3A4PurchaseOrderRequest SYSTEM "3A4_MS_V02_02_PurchaseOrderRequest.dtd">  
    ```  
   
    > [!NOTE]
-   >  每个消息实例都必须包括要进行处理的 DOCTYPE 行。  
+   >  每个消息实例必须包含要处理的 DOCTYPE 行。  
   
-4. 现在可自定义此消息实例以满足你的业务需求。 修改 XML 实例，不在其中使用 XML 命名空间或命名空间前缀。  
+4. 现在，您可以自定义此消息实例以满足你的业务需求。 修改 XML 实例，使它不使用 XML 命名空间或命名空间前缀。  
   
 ## <a name="see-also"></a>请参阅  
  [编程指南](../../adapters-and-accelerators/accelerator-rosettanet/programming-guide2.md)

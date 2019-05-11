@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a96c75ceadfeaf06dde2c3661dd00f435529dcc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8e78edd01348707190b6a07a83f4b1685f597029
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009518"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242564"
 ---
 # <a name="planning-for-sending-and-receiving"></a>规划发送和接收
 处理的几乎每个文档[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]收到[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]接收适配器，并从发送[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]发送适配器。 因为[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]适配器因此突出图中任何[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境中，务必要提前计划来确定哪些适配器或加速器你将使用以及如何正确配置这些适配器和/或加速器。  
@@ -28,7 +28,7 @@ ms.locfileid: "37009518"
 ## <a name="functionality-supported-by-biztalk-adapters"></a>BizTalk 适配器支持的功能  
  在本部分中的表列出了每种本地适配器和适配器是否提供了以下功能的主要优点：  
   
--   **事务支持**能够发送和接收文档的分布式的事务处理协调器 (DTC) 事务上下文。 若要确保按序送达消息并且不会复制或丢失文档，则必须使用此功能。  
+-   **事务支持**能够发送和接收文档的分布式的事务处理协调器 (DTC) 事务上下文。 此功能是必需的按序送达消息，并保证，文档不会重复或丢失的。  
   
     > [!NOTE]  
     >  如果遇到对 MSDTC 问题，请查看本主题[MSDTC 疑难解答](http://go.microsoft.com/fwlink/?LinkID=154693)(http://go.microsoft.com/fwlink/?LinkID=154693)。  
@@ -40,32 +40,32 @@ ms.locfileid: "37009518"
     > [!NOTE]  
     >  某些适配器可以强制执行在接收位置级别的有序的文档传递，而其他适配器不能。 仍在发送端口级别的顺序在接收位置级别的文档传递这些适配器不支持强制执行按序的送达，但这样做可能会对性能产生负面影响。 有关按序送达消息的详细信息，请参阅主题[的消息按序送达](http://go.microsoft.com/fwlink/?LinkId=155751)(http://go.microsoft.com/fwlink/?LinkId=155751)。  
   
--   **SSO 已启用。** 能够在通过适配器发送或接收文档时使用 SSO 验证。  
+-   **SSO 已启用。** 使用 SSO 身份验证时发送或接收适配器的文档功能。  
   
 |适配器|主要优点|事务支持|双向通信支持|按序接收支持|SSO 已启用|  
 |-------------|---------------------|-------------------------|------------------------------------|-------------------------------|-----------------|  
-|文件|易于使用|“否”|否|否|“否”|  
-|FTP|广泛用于企业到企业通信|“否”|否|否|是|  
-|HTTP(s)|广泛用于企业到企业通信|“否”|请求/响应和要求/响应|“否”|是|  
-|SOAP|支持使用 Web 服务|“否”|请求/响应和要求/响应|“否”|是|  
-|MSMQ|确保在 BizTalk Server 和 Microsoft 消息队列之间的消息的一次性送达|是|否|是|“否”|  
-|MQ Series|确保在仅限一次的 BizTalk Server 和 IBM WebSphere MQ 之间为 Windows 平台的消息送达|是|否|是|是|  
-|SQL|支持直接 BizTalk Server 和 SQL Server 数据库之间的通信|是|仅要求/响应|“否”|“否”|  
-|Windows SharePoint Services|支持 XML 和二进制消息，BizTalk Server 和 SharePoint 文档库之间交换|“否”|否|否|“否”|  
-|POP3|支持接收通过电子邮件的文档|“否”|否|否|“否”|  
-|SMTP|支持发送电子邮件通过文档|“否”|否|否|“否”|  
-|EDI|支持处理符合 EDI 标准的业务文档|“否”|否|否|“否”|  
-|自定义|支持您的旧系统|是，但需要自定义代码。|是，但需要自定义代码。|是，但需要自定义代码。|是，但需要自定义代码。|  
-|WCF-WSHttp|支持 WS-* 标准通过 HTTP 传输|是，WsHTTP 支持事务（仅限 WS-Transactions）|请求/响应和要求/响应|“否”|是|  
-|WCF-BasicHttp|与基于 ASMX 的 Web 服务和客户端以及符合 WS 其他服务进行通信的基本配置文件 1.1 使用 HTTP 或 HTTPS|“否”|请求/响应和要求/响应|“否”|是|  
-|WCF-NetTcp|支持 WS-* 标准通过 TCP 传输|是|请求/响应和要求/响应|“否”|是|  
+|文件|易于使用|否|否|否|否|  
+|FTP|广泛用于企业到企业通信|否|否|否|是|  
+|Http （s)|广泛用于企业到企业通信|否|请求/响应和要求/响应|否|是|  
+|SOAP|支持使用 Web 服务|否|请求/响应和要求/响应|否|是|  
+|MSMQ|确保在 BizTalk Server 和 Microsoft 消息队列之间的消息的一次性送达|是|否|是|否|  
+|MQ 系列|确保在仅限一次的 BizTalk Server 和 IBM WebSphere MQ 之间为 Windows 平台的消息送达|是|否|是|是|  
+|SQL|支持直接 BizTalk Server 和 SQL Server 数据库之间的通信|是|仅要求/响应|否|否|  
+|Windows SharePoint Services|支持 XML 和二进制消息，BizTalk Server 和 SharePoint 文档库之间交换|否|否|否|否|  
+|POP3|支持接收通过电子邮件的文档|否|否|否|否|  
+|SMTP|支持发送电子邮件通过文档|否|否|否|否|  
+|EDI|支持处理符合 EDI 标准的业务文档|否|否|否|否|  
+|自定义|支持您的旧系统|是的需要自定义代码。|是的需要自定义代码。|是的需要自定义代码。|是的需要自定义代码。|  
+|WCF-WSHttp|支持 WS-* 标准通过 HTTP 传输|是的 (仅限 Ws-transactions) wshttp 支持事务|请求/响应和要求/响应|否|是|  
+|WCF-BasicHttp|与基于 ASMX 的 Web 服务和客户端以及符合 WS 其他服务进行通信的基本配置文件 1.1 使用 HTTP 或 HTTPS|否|请求/响应和要求/响应|否|是|  
+|WCF-NetTcp|支持 WS-* 标准通过 TCP 传输|是|请求/响应和要求/响应|否|是|  
 |WCF-NetMsmq|通过利用 Microsoft 消息队列 (MSMQ) 作为传输协议队列的支持|是|否|是|是|  
-|WCF-NetNamedPipe|（仅适用于 WCF 应用程序） 在同一计算机上的跨进程通信提供快速传输|是|请求/响应和要求/响应|“否”|是|  
-|WCF-Custom|可以使用 WCF 扩展功能|是。|是。|是，只要绑定支持。|是。|  
+|WCF-NetNamedPipe|（仅适用于 WCF 应用程序） 在同一计算机上的跨进程通信提供快速传输|是|请求/响应和要求/响应|否|是|  
+|WCF 自定义|可以使用 WCF 扩展功能|是。|是。|是的只要绑定支持它。|是。|  
 |WCF-CustomIsolated|允许通过 HTTP 传输使用 WCF 扩展功能|是。|是。|否。|是。|  
   
 ## <a name="line-of-business-adapters"></a>业务线适配器  
- 下面是 Microsoft 提供的业务线 (LOB) 适配器的列表。  
+ 下面是由 Microsoft 提供的业务线 (LOB) 适配器的列表。  
   
 > [!NOTE]  
 >  除了 Microsoft BizTalk Adapter v2.0 for mySAP™ Business Suite （适配器），任何业务线适配器支持在 Windows Vista 上。  
@@ -73,14 +73,14 @@ ms.locfileid: "37009518"
 |适配器|Description|支持的版本|  
 |-------------|-----------------|------------------------|  
 |SAP （也称为"适配器"）|用于交换中间文档 (IDOC)、 BAPI 和 BizTalk Server 和 SAP R/3® 系统之间的远程函数调用 (RFC) 消息。|SAP R/3 4.x 和 R/3 6.20 (Enterprise)|  
-|PeopleSoft Enterprise|用于在 BizTalk Server 和 PeopleSoft 系统间交换组件接口 (CI) 消息。|PeopleTools 版本 8.17.02、8.43、8.45、8.46 和 8.48|  
-|JD Edwards OneWorld XE|用于在 BizTalk Server 和 JD Edwards OneWorld 系统间交换业务功能消息。|B7.3.3.3 SP23 和 JDE 8.0 (B7.3.3.4)|  
-|JD Edwards EnterpriseOne|用于在 BizTalk Server 和 JD Edwards EnterpriseOne 系统间交换业务功能消息。|8.10 & 8.11 工具发布 8.93、 8.94、 8.95 和 8.96|  
-|ODBC Adapter for Oracle Database|用于从 Oracle Server 数据库读取信息和将信息写入该数据库。|Oracle 8i (8.1.6.0) 9i (9.2.0.1) 或 10 g|  
-|Siebel eBusiness Applications|用于在 BizTalk Server 和 Siebel eBusiness Application 间交换业务组件和业务服务消息。|7.0、 7.5。 *、 7.7。\*，和 7.8。\*|  
-|TIBCO Rendezvous|用于在 BizTalk Server 和 TIBCO Rendezvous 间交换 XML 和二进制数据格式消息。|7.3|  
-|TIBCO Enterprise Message Service|用于在 BizTalk Server 和 TIBCO EMS 服务器间交换 XML 和二进制数据格式消息，可提供一个高度整合的可靠的应用程序基础结构。|4.2|  
-|WebSphere MQ|用于在 BizTalk Server 和 IBM WebSphere MQ 间交换消息。|5.3 带有 Fix Pack 10 或更高版本和 6.0 修复包 1.1 或更高版本|  
+|PeopleSoft Enterprise|用于 BizTalk Server 和 PeopleSoft 系统之间的组件接口 (CI) 消息交换。|PeopleTools 版本 8.17.02、 8.43、 8.45、 8.46 和 8.48|  
+|JD Edwards OneWorld XE|用于 BizTalk Server 和 JD Edwards OneWorld 系统间的业务功能消息交换。|JDE 8.0 (B7.3.3.4) 与 SP23 的 B7.3.3.3|  
+|JD Edwards EnterpriseOne|用于 BizTalk Server 和 JD Edwards EnterpriseOne 系统间的业务功能消息交换。|8.10 & 8.11 工具发布 8.93、 8.94、 8.95 和 8.96|  
+|用于 Oracle 数据库 ODBC 适配器|允许读取和写入信息从 / 向 Oracle Server 数据库。|Oracle 8i (8.1.6.0) 9i (9.2.0.1) 或 10 g|  
+|Siebel eBusiness 应用程序|用于 BizTalk Server 和 Siebel eBusiness 应用程序之间的业务组件和业务服务消息交换。|7.0、 7.5。 *、 7.7。\*，和 7.8。\*|  
+|TIBCO Rendezvous|用于交换 XML 和 BizTalk Server 和 TIBCO Rendezvous 之间的二进制数据格式消息。|7.3|  
+|TIBCO Enterprise Message Service|用于交换 XML 和 BizTalk Server 和 TIBCO EMS 服务器提供一个高度整合并且可靠的应用程序基础结构之间的二进制数据格式消息。|4.2|  
+|WebSphere MQ|用于 BizTalk Server 和 IBM WebSphere MQ 之间的消息交换。|5.3 带有 Fix Pack 10 或更高版本和 6.0 修复包 1.1 或更高版本|  
   
  有关与 BizTalk Server 提供的 LOB 适配器的详细信息，请参阅[适配器使用 BizTalk Server 2010 中包含](http://go.microsoft.com/fwlink/?LinkId=152664)(http://go.microsoft.com/fwlink/?LinkId=152664)。  
   
@@ -153,9 +153,9 @@ ms.locfileid: "37009518"
   
  **配置按序送达的消息**  
   
- 可以在以下位置配置按序消息送达：  
+ 可以在以下位置配置按序送达的消息：  
   
-- 业务流程中的 接收 形状  
+- 在业务流程中接收形状  
   
 - 某些适配器的接收位置  
   
@@ -163,7 +163,7 @@ ms.locfileid: "37009518"
   
   **按序送达使用现有传输实现**  
   
-  某些传输的基础协议（例如，FILE 和 HTTP）与按序送达的概念不一致。 但是，即使对于此类传输，如果将绑定到传输的端口标记为按序送达，BizTalk Server 也会通过确保在当前消息成功发送之后再获取下一个出站消息来强制实现按序送达。 若要实现此目的，BizTalk Server 每个将消息传递到传输的适配器在单个批次并等待直到适配器已成功删除该消息从 MessageBox 数据库在另一个批处理中的下一条消息，交付到适配器之前。  
+  某些传输，如文件和 HTTP 的基础的协议不一致的按序送达的概念。 但是，即使使用此类传输，如果该端口绑定到传输标记为按序送达，则 BizTalk Server 通过确保传输不会直到成功发送当前一获取下一个出站消息来强制执行按序的送达. 若要实现此目的，BizTalk Server 每个将消息传递到传输的适配器在单个批次并等待直到适配器已成功删除该消息从 MessageBox 数据库在另一个批处理中的下一条消息，交付到适配器之前。  
   
   **自定义适配器按序送达**  
   
@@ -174,13 +174,13 @@ ms.locfileid: "37009518"
 - 如果消息在管道中失败，则应挂起，最好作为不可恢复。 使用 BTS。SuspendAsNonResumable 消息上下文属性在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]来适当地标记消息。  
   
   > [!NOTE]  
-  >  如果随后恢复了挂起的消息，则可能会打乱消息顺序。 如果不希望此行为，挂起且不可恢复的失败的消息。  
+  >  如果以后恢复挂起的消息，消息顺序可能会中断。 如果不希望此行为，挂起且不可恢复的失败的消息。  
   
   **条件的端到端按序消息处理**  
   
-  为提供端对端的按序送达功能，必须满足以下条件：  
+  若要提供端到端按序的送达必须满足以下条件:  
   
-- 接收消息的适配器必须保持消息提交给 BizTalk Server 时的顺序。 在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中，这样的适配器的示例包括 MSMQ 和 MQSeries。 此外，HTTP 或 SOAP 适配器也可以用来按序提交消息，但在该情况下，HTTP 或 SOAP 客户端需要通过每次提交一条消息来强制实现顺序提交。  
+- 必须与适配器提交给 BizTalk Server 时保留消息的顺序接收消息。 在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，这样的适配器的示例包括 MSMQ 和 MQSeries。 此外，可以使用 HTTP 或 SOAP 适配器提交消息的顺序，但在这种情况下 HTTP 或 SOAP 客户端需要通过一次提交一个消息来强制实现顺序。  
   
 - 您必须订阅这些消息与发送端口都**按序送达**选项设置为**True**。  
   

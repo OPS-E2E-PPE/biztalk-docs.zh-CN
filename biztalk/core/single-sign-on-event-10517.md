@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10517 |Microsoft Docs
+title: 单一登录：Event 10517 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8c1426b4a45d55985ace0548b8e33bb2637f09c0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a9febc85f554b8736d75c9315a37214c8a81ca16
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011398"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279804"
 ---
-# <a name="single-sign-on-event-10517"></a>单一登录： 事件 10517
+# <a name="single-sign-on-event-10517"></a>单一登录：事件 10517
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                                                                                                                                                                                                                             |
@@ -30,16 +30,16 @@ ms.locfileid: "37011398"
 |  事件源   |                                                                                                                                                           ENTSSO                                                                                                                                                            |
 |    组件    |                                                                                                                                                             N\A                                                                                                                                                             |
 |  符号名称  |                                                                                                                                                   SSO_ERROR_BAD_SSO_ADMIN                                                                                                                                                   |
-|  消息正文   | SSO 管理员帐户无效。 如果是本地帐户，请检查服务器上是否存在此帐户。 如果是域帐户，请与域管理员联系。 当帐户有效时，启用 SSO。%r<br /><br /> SSO Administrators: %1 %r<br /><br /> 无效帐户: %2 %r<br /><br /> 错误代码： %3 |
+|  消息正文   | SSO 管理员帐户不是有效的。 如果它是本地帐户检查服务器上是否存在此帐户。 如果是域帐户与域管理员联系。 当帐户 valid.%r 时启用 SSO<br /><br /> SSO Administrators: %1 %r<br /><br /> 无效帐户: %2 %r<br /><br /> 错误代码： %3 |
 
 ## <a name="explanation"></a>解释  
- 此错误事件表示为企业单一登录指定的 SSO 管理员帐户不是有效的 Windows 帐户。 运行企业单一登录服务的服务帐户必须是此帐户的成员。 SSO 管理员帐户可以是 Windows 组帐户，也可以是单个帐户。 SSO 管理员帐户可以是域组帐户，也可以是本地组帐户。 如果使用个人帐户，则无法更改此帐户到另一个个人帐户。  
+ 此错误事件表示 SSO 管理员帐户指定为企业单一登录不是有效的 Windows 帐户。 运行企业单一登录服务的服务帐户必须是此帐户的成员。 SSO 管理员帐户可以是 Windows 组帐户或个人帐户。 SSO 管理员帐户也可以是域或本地组帐户。 如果使用个人帐户，则无法更改此帐户到另一个个人帐户。  
 
 ## <a name="user-action"></a>用户操作  
  若要解决此错误，请执行以下操作：  
 
-- 验证 SSO 管理员帐户是否存在。  
+- 验证 SSO 管理员帐户存在。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [SSO 用户组](../core/sso-user-groups.md)

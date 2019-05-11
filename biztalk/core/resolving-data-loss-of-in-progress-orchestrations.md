@@ -1,5 +1,5 @@
 ---
-title: 解决数据丢失的正在进行中业务流程 |Microsoft 文档
+title: 解决正在进行中的业务流程的数据丢失问题 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -22,19 +22,19 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5eca757b80e31ee5db829d2d2079bf657d01079b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: caef8b0cb30b739406a64a6f1ee5add8939ac38e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268997"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65254972"
 ---
-# <a name="resolving-data-loss-of-in-progress-orchestrations"></a>解决正在进行的业务流程的数据丢失问题
-MessageBox 数据库包含当前正在进行的业务流程的状态。 尽管没有没有方法来判断完全哪些数据已从 MessageBox 数据库丢失，但有一些可用于收集有关数据丢失的信息的步骤：  
+# <a name="resolving-data-loss-of-in-progress-orchestrations"></a>解决正在进行中的业务流程的数据丢失问题
+MessageBox 数据库包含当前正在进行的业务流程的状态。 尽管无法知道哪些数据已被完全从 MessageBox 数据库中丢失，但有一些可用于收集有关数据丢失的信息的步骤：  
   
--   确定哪些消息具有已发送和接收当前业务流程，以及哪些外部系统均已使用的恢复点之后。 例如，如果你的系统维护的消息和事件的外部日志，你可以检查该日志。 你可能还需要手动查看外部的系统，以查看发生了哪些活动。  
+-   确定哪些消息已发送并收到在当前业务流程，以及哪些外部系统已使用的恢复点后。 例如，如果您的系统维护外部的消息和事件日志，可以检查该日志。 您可能还需要手动查看外部系统，以查看发生了哪些活动。  
   
--   确定数据丢失的原因后，你可以开始更正系统还原，决定哪些进程可以继续，必须终止的进程，并将其重新启动 （通过在重新提交丢失的激活消息），以及哪些进程完成已成功，可以被终止。 此过程很大程度上取决于你的系统的体系结构，并且必须作为系统恢复规划的一部分加以考虑。  
+-   确定数据丢失的原因后，便可以更正已还原的系统，确定哪些进程可以继续，必须终止的进程，并将其重新启动 （通过重新提交丢失的激活消息），以及哪些过程都已完成已成功，可以终止。 此过程很大程度上取决于您的系统的体系结构，必须考虑作为系统恢复规划的一部分。  
   
-## <a name="see-also"></a>另请参阅  
- [解决数据丢失](../core/resolving-data-loss.md)
+## <a name="see-also"></a>请参阅  
+ [解决数据丢失问题](../core/resolving-data-loss.md)

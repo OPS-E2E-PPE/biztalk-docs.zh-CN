@@ -1,5 +1,5 @@
 ---
-title: 步骤 3： 创建并配置目标参与方 |Microsoft Docs
+title: 步骤 3：创建并配置目标参与方 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 086f2ff18db68651187e1b7392d5995f231234c4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 80dff125e13ffb12acaeb98664957ed4e681ffa3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997862"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288895"
 ---
-# <a name="step-3-create-and-configure-a-destination-party"></a>步骤 3： 创建并配置目标参与方
+# <a name="step-3-create-and-configure-a-destination-party"></a>步骤 3：创建并配置目标参与方
 此步骤中，创建并配置创建 Batch 方案的目标参与方。 你还选择的消息的[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]批处理和批处理计划，为该参与方定义的一样。 您计划为一小时后将文件复制到文件夹中的批发送时间。 [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] 频率为一小时之后收到任何消息进行批处理。  
   
 ### <a name="to-create-and-configure-a-destination-party"></a>若要创建和配置目标参与方  
@@ -38,4 +38,4 @@ ms.locfileid: "36997862"
   
 7. 单击**批处理计划**选项卡。在中**重复执行批处理后**部分中，验证**小时**已选中，然后键入**1**中**小时**框。 在中**小时之后第一批,** 框中，键入**1**，然后单击**开始计划**。  
   
-   请继续执行[步骤 4： 配置源参与方创建批处理方案](../../adapters-and-accelerators/accelerator-hl7/step-4-configure-the-source-party-for-the-create-batch-scenario.md)。
+   请继续执行[步骤 4:配置源参与方创建批处理方案](../../adapters-and-accelerators/accelerator-hl7/step-4-configure-the-source-party-for-the-create-batch-scenario.md)。

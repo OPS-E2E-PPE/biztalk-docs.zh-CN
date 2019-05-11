@@ -15,12 +15,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a7b8d75be35be01e9c961d6bd054dcaed6d3aee
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c5a9c18f7178615c069afeed484fba32ae5a0977
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984670"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65255565"
 ---
 # <a name="data-types"></a>数据类型
 数据类型规范是分区的 HL7 标准复杂性的一个重要工具，了解 HL7 字段的数据内容的关键。 某些数据类型是简单和包含只有一个组件，并且某些包含许多组件和子组件。 例如，PID.5 患者名称具有键入 XPN 版本 2.4 中的数据。 此数据类型支持的常见细分线的一个英语语言的名称，例如，姓氏、 名字、 中间名，以及后缀、 前缀、 名称类型代码和名称的有效性 (date) 范围。  

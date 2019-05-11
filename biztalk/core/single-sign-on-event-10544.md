@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10544 |Microsoft Docs
+title: 单一登录：Event 10544 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f476e664d50d05a57f42006ec08aa03d901e9f1f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 262a57b44143909b40842eddf7b1aba4049ca130
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983926"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243502"
 ---
-# <a name="single-sign-on-event-10544"></a>单一登录： 事件 10544
+# <a name="single-sign-on-event-10544"></a>单一登录：事件 10544
 ## <a name="details"></a>详细信息  
 
 |                 |                                                            |
@@ -30,19 +30,19 @@ ms.locfileid: "36983926"
 |  事件源   |                           ENTSSO                           |
 |    组件    |                             CO                             |
 |  符号名称  |                  SSO_WARN_TICKET_EXPIRED                   |
-|  消息正文   | 票证已过期。%r<br /><br /> 应用程序名称： %1 |
+|  消息正文   | 票证已 expired.%r<br /><br /> 应用程序名称： %1 |
 
 ## <a name="explanation"></a>解释  
- 此警告事件表示应用程序票证超时已过期。 票证超时可以在系统级别和应用程序级别上指定。 如果在系统级别和应用程序级别上都已指定超时，则将由应用程序级别的超时决定过期时间。  
+ 此警告事件表示应用程序票证超时已过期。 可以在系统级别和应用程序级别指定票证超时。 如果指定了系统级别和应用程序级超时，应用程序级超时用于确定的到期时间。  
 
 ## <a name="user-action"></a>用户操作  
- 若要解决此警告问题，请执行以下一项或多项操作：  
+ 若要解决此警告，请执行一个或多个以下操作：  
 
-- 确定票证在验证之前就过期的原因。  
+- 确定票证在验证之前过期的原因。  
 
-- 确保票证超时值足够长，以便可以从颁发票证之时延续到兑换票证之时。  
+- 确保票证超时值足够长上, 一次之间的时间兑换颁发票证之时的时间。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [SSO 票证](../core/sso-tickets.md)  
 

@@ -17,12 +17,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 633c1d338a87bef7c0fe53ff5df7f53438eac843
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 0903945fc9fdae1618f8548660c320187a0a71b8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990014"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65255270"
 ---
 # <a name="handling-undeclared-z-segments"></a>处理未声明的 Z 段
 有两种类型的 Z 段： 声明的 Z 段和未声明的 Z 段。 用于本地目的，它们很相似，尽管它们是在您使用它们的方式大不相同。  

@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ba137cd221d6cfa0ac373213d0c43dd49eafd756
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8ea5bbf1e819ae95cc0c0cc44de0992ae7994b04
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003758"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65267595"
 ---
 # <a name="required-service-certificate-thumbprint-not-specified"></a>未指定所需的服务证书指纹
 ## <a name="details"></a>详细信息  
@@ -33,12 +33,12 @@ ms.locfileid: "37003758"
 |  消息正文   |               未指定所需的服务证书指纹                |
   
 ## <a name="explanation"></a>解释  
- 您没有设置 WCF 发送端口的安全设置所需的“服务证书”属性。  
+ 未设置该服务的 WCF 发送端口的安全设置所需的证书属性。  
   
 ## <a name="user-action"></a>用户操作  
- 使用以下过程配置“服务证书”属性。  
+ 使用以下过程来配置服务证书属性。  
   
-#### <a name="to-configure-the-service-certificate-property"></a>配置服务证书属性的步骤  
+#### <a name="to-configure-the-service-certificate-property"></a>若要配置服务证书属性  
   
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   

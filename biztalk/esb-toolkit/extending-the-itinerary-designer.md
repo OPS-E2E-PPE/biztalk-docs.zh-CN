@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9fbe9e24560f8f00f4b3d806c76ebc326240add5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a853328e955f017a370b3025adb52d8f8706f796
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980742"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65249922"
 ---
 # <a name="extending-the-itinerary-designer"></a>扩展路线设计器
 路线设计器是 Microsoft Visual Studio，以用于路线图形建模 visual 域特定语言 (DSL) [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。 在设计器公开各种开发人员可以为其编写自定义扩展插件来启用新功能和/或新的配置选项的扩展点。  

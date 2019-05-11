@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9f7ce59f356cfbc6b1804dc033f40aa732691342
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 708939189ea11e40752a6bff08e4ce850553207d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982534"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65251329"
 ---
 # <a name="create-the-message-instances"></a>创建消息实例
 若要创建 ADT^A03.txt 消息文件，并创建你将需要运行批处理教程时要使用的消息实例，请使用以下过程。  
@@ -99,4 +99,4 @@ ms.locfileid: "36982534"
   
 5. 将该文件作为**CreateBatchMessage2.txt**中\<*驱动器*:\>\Batching Tutorial\Instances 文件夹，然后关闭记事本。  
   
-   请继续执行[第 1 部分： 零碎的入站的批处理方案](../../adapters-and-accelerators/accelerator-hl7/part-1-fragmented-inbound-batch-scenario.md)。
+   请继续执行[第 1 部分：零碎的入站的批处理方案](../../adapters-and-accelerators/accelerator-hl7/part-1-fragmented-inbound-batch-scenario.md)。

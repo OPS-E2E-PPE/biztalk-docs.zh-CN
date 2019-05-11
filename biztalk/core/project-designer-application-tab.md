@@ -1,5 +1,5 @@
 ---
-title: 项目设计器： 应用程序选项卡 |Microsoft Docs
+title: 项目设计器：应用程序选项卡 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8835c2fa0a18c8fe46611416e3fff191c0e7e417
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 66f5659a6a685dd1e73383efb7583cb1b4a2e548
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018523"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65267840"
 ---
-# <a name="project-designer-application-tab"></a>项目设计器：“应用程序”选项卡
+# <a name="project-designer-application-tab"></a>项目设计器：应用程序选项卡
 使用应用程序选项卡提供程序集信息。  
 
 |使用此选项|执行的操作|  
@@ -37,14 +37,14 @@ ms.locfileid: "37018523"
 |           使用此选项            |                                                                       执行的操作                                                                        |
 |-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 |           **标题**           |                                                      更新应用程序的程序集名称。                                                      |
-|        **Description**        |                                                          键入有关程序集的说明。                                                           |
-|          **Company**          |                                                                 键入公司名称。                                                                 |
+|        **说明**        |                                                          键入程序集的说明。                                                           |
+|          **Company**          |                                                                 键入你的公司名称。                                                                 |
 |          **Product**          |                                                                键入产品信息。                                                                |
-|         **版权信息**         |                                                            键入有关版权的信息。                                                             |
-|         **商标**         |                                                               键入商标信息。                                                               |
-|     **程序集版本**      |                                            按 major.minor.build.revision 格式键入版本号。                                             |
-|       **文件版本**        |                                          按 major.minor.build.revision 格式键入文件版本号。                                          |
-|           **GUID**            | 创建项目时，[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 生成一个标识程序集的唯一 GUID。 |
-|    **非特定语言**     |                                                      指定程序集支持的区域。                                                       |
-| **使程序集 COM 可见** |                               选中该复选框可指定 COM 是否可以访问程序集中的类型。                               |
+|         **Copyright**         |                                                            键入你的版权信息。                                                             |
+|         **Trademark**         |                                                               键入商标信息。                                                               |
+|     **程序集版本**      |                                            键入按 major.minor.build.revision 格式的版本号。                                             |
+|       **文件版本**        |                                          键入按 major.minor.build.revision 格式的文件版本号。                                          |
+|           **GUID**            | 创建项目时[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]生成标识的程序集的唯一 GUID。 |
+|    **非特定语言**     |                                                      指定的区域性程序集支持。                                                       |
+| **使程序集 COM 可见** |                               选中复选框以指定集中的类型是否可由 com 使用。                               |
 

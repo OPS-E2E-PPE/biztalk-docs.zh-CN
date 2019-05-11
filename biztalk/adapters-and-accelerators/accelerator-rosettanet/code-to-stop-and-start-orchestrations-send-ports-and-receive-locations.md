@@ -22,25 +22,25 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2736f76e3292c6e21a05c995afdd2808a9f60590
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 95864f4134f616e67e33c6b168eb119a3dc5e25f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995470"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65284806"
 ---
 # <a name="stopping-and-starting-orchestrations-send-ports-and-receive-locations-programmatically"></a>停止和启动业务流程、 发送端口和接收位置以编程方式
-本主题提供了以编程方式停止和启动业务流程、发送端口和接收位置的示例代码。 您可以对所有业务流程、发送端口和接收位置以组或个人身份执行这些操作。 可使程序包含这些代码，以便动态地执行这些操作。 这些操作是在图形用户界面中在设计时在 Microsoft 中执行[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]，或在运行时在 BizTalk 管理控制台中。  
+本主题提供的示例代码以编程方式停止和启动业务流程、 发送端口和接收位置。 可以执行这些操作对所有业务流程、 发送端口和接收作为一个组或单独的位置。 您可以在程序中动态地执行这些操作包括此代码。 这些操作是在图形用户界面中在设计时在 Microsoft 中执行[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]，或在运行时在 BizTalk 管理控制台中。  
   
 > [!NOTE]
->  对于启动或停止业务流程的代码，您无需指定业务流程、发送端口或接收位置。 示例代码对所有业务流程执行的操作、 发送端口和接收位置的[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]安装时所安装设置。 对于作用于单一业务流程、发送端口或接收位置的代码，请添加一个参数，指明代码要针对哪个业务流程、发送端口或接收位置来运行。  
+>  若要启动和停止业务流程的代码，无需指定业务流程、 发送端口或接收位置。 示例代码对所有业务流程执行的操作、 发送端口和接收位置的[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]安装时所安装设置。 作用于单个业务流程的代码，发送端口，或接收位置、 添加参数，该值指示针对哪个业务流程、 发送端口或接收的位置，你想要运行的代码。  
   
 ## <a name="demonstrates"></a>演示  
- 本主题中的示例代码包括执行以下功能的各个代码段：  
+ 本主题中的示例代码包括单独的代码部分，执行以下操作：  
   
--   启动业务流程—启动所有发送端口和接收位置，并登记和启动所有业务流程  
+-   启动业务流程 — 启动所有发送端口和接收位置和登记和都启动所有业务流程  
   
--   停止业务流程—取消登记所有业务流程，取消登记所有发送端口，并禁用所有接收位置  
+-   停止业务流程 — 取消登记所有业务流程、 取消登记所有发送端口，并禁用所有接收位置  
   
 -   启动单个发送端口  
   
@@ -55,7 +55,7 @@ ms.locfileid: "36995470"
 -   取消登记单个业务流程  
   
 ## <a name="example"></a>示例  
- 本主题中的示例代码包括执行“演示”部分中列出的功能的各个代码段。  
+ 本主题中的示例代码包括单独的代码段执行"演示"部分中列出的功能。  
   
 ```  
 using System;  

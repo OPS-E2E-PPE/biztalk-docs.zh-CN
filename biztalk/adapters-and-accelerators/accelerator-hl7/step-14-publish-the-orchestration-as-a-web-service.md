@@ -1,5 +1,5 @@
 ---
-title: '步骤 14: 业务流程发布为 Web 服务 |Microsoft Docs'
+title: 步骤 14:业务流程发布为 Web 服务 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -19,14 +19,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 64bcc47364cca427f2fc02a807528e7105a40837
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f168acb351dc1546b304a5c0f8226b00aab9b213
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992078"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288866"
 ---
-# <a name="step-14-publish-the-orchestration-as-a-web-service"></a>步骤 14: 业务流程发布为 Web 服务
+# <a name="step-14-publish-the-orchestration-as-a-web-service"></a>步骤 14:业务流程发布为 Web 服务
 在此步骤中，使用 BizTalk Web Services 发布向导发布您的业务流程作为 Web 服务。  
   
  在发布之前该业务流程作为 Web 服务，你需要确保 BizTalkServerIsolatedHost 的登录帐户是 BizTalk Isolated Host Users 组的一部分，因此它有权访问 BizTalk 数据库。 这是必要的因为本教程创建的 Web 服务发布向导的 SOAPReceivePort 接收位置的接收处理程序为 BizTalkServerIsolatedHost，不是 BizTalkServerApplication。 接收处理程序是 BizTalkServerIsolatedHost 因为 SOAP 适配器在 IIS 进程，不是 BizTalk 进程下运行。  
@@ -65,7 +65,7 @@ ms.locfileid: "36992078"
   
 13. 右键单击**WebService_BTAHL7_Project_Proxy/BTAHL7_Project_Doorbell_Orchestration_SOAPReceivePort**，然后单击**启用**。  
   
-    请继续执行[步骤 15： 配置发送和接收端口](../../adapters-and-accelerators/accelerator-hl7/step-15-configure-the-send-and-receive-ports.md)。  
+    请继续执行[步骤 15:配置发送和接收端口](../../adapters-and-accelerators/accelerator-hl7/step-15-configure-the-send-and-receive-ports.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [消息充实教程](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

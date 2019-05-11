@@ -1,5 +1,5 @@
 ---
-title: 步骤 1： 创建和部署标头及确认架构 |Microsoft Docs
+title: 第 1 步：创建和部署标头及确认架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 50aa394f033d935c3838e056c715ee74e296b063
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 03782a8c2692dea4af7df9e3e03526a919940257
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989390"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288921"
 ---
-# <a name="step-1-create-and-deploy-header-and-acknowledgment-schemas"></a>步骤 1： 创建和部署标头及确认架构
+# <a name="step-1-create-and-deploy-header-and-acknowledgment-schemas"></a>第 1 步：创建和部署标头及确认架构
 使用标头架构来验证消息实例的标头 （MSH 段）。 使用确认架构生成的确认消息实例。 此过程是通用于所有架构版本[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]2.X。  
   
 ### <a name="to-create-the-header-and-acknowledgment-schemas"></a>若要创建的标头和确认架构  
@@ -37,7 +37,7 @@ ms.locfileid: "36989390"
   
     在解决方案资源管理器，请注意，在项目中包含三个架构 （ACK_24_GLO_DEF.xsd ACK_25_GLO_DEF.xsd 和 MSH_25_GLO_DEF.xsd）。  
   
-## <a name="step-1a-assign-a-strong-key-to-the-assembly-and-deploy"></a>步骤 1A： 对程序集分配强密钥并将其部署  
+## <a name="step-1a-assign-a-strong-key-to-the-assembly-and-deploy"></a>步骤 1A:对程序集分配强密钥并将其部署  
  使用以下过程来对程序集分配强密钥并随后部署该程序集。  
   
 #### <a name="to-assign-a-strong-key-and-deploy-the-assembly"></a>若要分配一个强密钥并将其部署该程序集  
@@ -68,4 +68,4 @@ ms.locfileid: "36989390"
    > [!NOTE]
    >  如果未显示正确的部署消息，使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]若要排查部署问题。  
   
-   请继续执行[步骤 2： 创建适用于版本 V2.3.1 的通用架构](../../adapters-and-accelerators/accelerator-hl7/step-2-create-common-schemas-for-v2-3-1.md)。
+   请继续执行[步骤 2:创建适用于版本 V2.3.1 的通用架构](../../adapters-and-accelerators/accelerator-hl7/step-2-create-common-schemas-for-v2-3-1.md)。

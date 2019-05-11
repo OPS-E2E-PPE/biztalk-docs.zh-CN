@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4f5fd535b1a4db0a960c8f993cd6daf22ee9d1b0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 59c5dca63e5d4120aad364afe6ca2da740196ab2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976878"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65251280"
 ---
 # <a name="create-the-dsrtxt-file"></a>创建 DSR.txt 文件
 使用以下过程来创建响应 DSR.txt 消息文件。 您将更高版本使用此文件以验证教程的方案。  
@@ -42,4 +42,4 @@ ms.locfileid: "36976878"
   
 2. 将该文件作为**DSR.txt**中\<*驱动器*:\>\Program Files\Microsoft BizTalk\<版本\>HL7\SDK\Interrogative 的快捷键Tutorial 文件夹，然后再关闭编辑器。  
   
-   请继续执行[步骤 1： 创建和部署通用标头及确认架构](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-common-header-and-acknowledgment-schemas.md)。
+   请继续执行[步骤 1:创建和部署通用标头及确认架构](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-common-header-and-acknowledgment-schemas.md)。

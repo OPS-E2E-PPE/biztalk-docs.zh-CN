@@ -12,19 +12,19 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f12412e42eda63400260c466bf4c9b34f93881db
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 41275124cdf0db7329751c5973bbde0685bd49ec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989318"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65255294"
 ---
 # <a name="extended-encoding-support"></a>扩展的编码支持
 默认情况下，接收 HL7 管道，BTAHL72X，仅支持 ASCII 编码。 这意味着，具有等效值大于 127 将替换为输入消息中的任何字符"？"。 这是因为不表示 ASCII 字符集中具有等效值大于 127 个字符。  
   
  [!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)] 为两个新编码提供支持：  
   
-- 西欧语言  
+- 西欧语  
   
 - UTF-8  
   
@@ -50,7 +50,7 @@ ms.locfileid: "36989318"
   
 6. 在“文件”  菜单上，单击“全部保存” 。  
   
-7. 部署该项目。  
+7. 部署项目。  
   
     创建新接收位置以继续。  
   
@@ -75,7 +75,7 @@ ms.locfileid: "36989318"
 -   删除包含特殊字符和保存具有相同的编码到指定接收位置中的位置指定自定义管道中的文件。 输出位置上的文件应保留的特殊字符。  
   
     > [!NOTE]
-    >  如果你尝试使用不受支持编码将文件处理 （请记住，支持仅 ASCII、 西欧和 UTF8），并出现错误 ID 在应用程序事件查看器中记录错误： 5633。  
+    >  如果你尝试使用不受支持编码将文件处理 （请记住，支持仅 ASCII、 西欧和 UTF8），并出现错误 ID 在应用程序事件查看器中记录错误：5633.  
   
     > [!NOTE]
     >  如果要测试配置为 UTF8 编码的自定义管道，您应将字节顺序标记 (BOM) 字符附加到要传递的消息。 如果要测试配置为西欧语言编码的自定义管道，不附加 BOM 字符。

@@ -1,5 +1,5 @@
 ---
-title: V2 中的 DFT_P03。XML 2.4 |Microsoft 文档
+title: V2 中的 DFT_P03。XML 2.4 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,15 +14,15 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ff7e35c52c38d5e9738b557118a3caf1d03344ab
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f5e03c35c7ded579a90908c80202ec459fb7cba4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22204333"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65255469"
 ---
 # <a name="dftp03-in-v2xml-24"></a>V2 中的 DFT_P03。XML 2.4
-你必须手动更改 V2 中的 DFT_P03 架构中的以下代码。XML 2.4 后运行 Update2XMLSchema 工具：  
+您必须手动更改 V2 中的 DFT_P03 架构中的以下代码。XML 2.4，运行 Update2XMLSchema 工具后：  
   
 ```  
 <xsd:element ref="ROL" minOccurs="0" maxOccurs="unbounded" />  
@@ -31,7 +31,7 @@ ms.locfileid: "22204333"
 <xsd:element ref="ROL" minOccurs="0" maxOccurs="unbounded" />  
 ```  
   
- 你必须将上面的代码替换为以下，以便修复导致多个匹配项的多义性**角色**元素定义：  
+ 必须与以下内容，替换上面的代码中，若要解决多义性问题引起的多个实例**ROL**元素定义：  
   
 ```  
 <xsd:element minOccurs="0" maxOccurs="unbounded" ref="ROL" />  
@@ -48,6 +48,6 @@ ms.locfileid: "22204333"
   </xsd:choice>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [所需的手动更新](../../adapters-and-accelerators/accelerator-hl7/required-manual-updates.md)   
- [实用程序](../../adapters-and-accelerators/accelerator-hl7/utilities2.md)
+ [实用工具](../../adapters-and-accelerators/accelerator-hl7/utilities2.md)

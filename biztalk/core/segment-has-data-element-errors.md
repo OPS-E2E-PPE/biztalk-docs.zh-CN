@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 30b000f670e4329c68540b51f291097f5bbd4dc2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a8b96eb9eaff6e37c184cea23af96caf5e6ecee8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36998886"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279921"
 ---
 # <a name="segment-has-data-element-errors"></a>段有数据元素错误
 ## <a name="details"></a>详细信息  

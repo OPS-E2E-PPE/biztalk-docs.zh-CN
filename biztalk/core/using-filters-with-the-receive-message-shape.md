@@ -1,5 +1,5 @@
 ---
-title: 使用筛选器与接收消息形状 |Microsoft 文档
+title: 接收消息形状中使用筛选器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,27 +15,27 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1434e9704e073cfef1503ef550409e6d6414bb7c
-ms.sourcegitcommit: 8418b1a8f38b7f56979cd6e203f0b591e2f40fe1
+ms.openlocfilehash: 58c0ed34645fc7b576a76092c676d4eb4c390020
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2018
-ms.locfileid: "22287877"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65246424"
 ---
-# <a name="using-filters-with-the-receive-message-shape"></a>使用接收消息形状使用筛选器
-筛选器表达式是可应用于业务流程接收形状的可选参数，它将“激活”属性的值指定为 True。 如果指定了某一筛选器表达式，则只有当传入消息与该筛选器表达式中指定的条件匹配时，才会激活业务流程。 如果没有指定任何筛选器表达式，则业务流程订阅的任何传入消息都将激活该业务流程。  
+# <a name="using-filters-with-the-receive-message-shape"></a>接收消息形状中使用筛选器
+筛选器表达式是一个可选参数，可以应用于业务流程接收形状指定值的激活属性，则返回 True。 如果指定了筛选器表达式然后业务流程将仅激活如果传入消息与筛选器表达式中指定的条件相匹配。 如果不指定任何筛选器表达式，则业务流程订阅任何传入消息将激活业务流程。  
   
- 若要创建某一筛选器表达式，可以将表达式左侧的传入消息的属性与该表达式右侧的常量进行比较。 您还可以通过将 AND 和 OR 运算符应用于两个或多个表达式，创建复合表达式。 还可以将筛选器表达式保留为空，在此情况下，将会接受所有消息。  
+ 若要创建筛选器表达式，进行比较的表达式右侧的常量表达式左侧的传入消息的属性。 此外可以创建复合表达式，通过应用 AND 和 OR 运算符对两个或多个表达式。 您也可以将空白筛选器表达式中，在这种情况下将接受所有消息。  
   
- 筛选器表达式可能如下：  
+ 筛选器表达式可能如下所示：  
   
 ```  
 InvoiceSchema.Quantity >= 1000  
 ```  
   
- 在此示例中，将一个传入消息提供给业务流程。 该业务流程没有激活 **接收** 形状 ( **激活** 属性设置为 **True** ，以便收到某些消息会导致业务流程会) 与前面的筛选器表达式应用于它。 传入的消息应该具有属性的命名空间中调用数量 **InvoiceSchema**。 该业务流程只接受 1000 或更多项的发票，因此，运行时引擎将在该业务流程运行前检查传入的消息。  
+ 在此示例中，传入消息，提供给业务流程。 业务流程具有激活**接收**形状 (**激活**属性设置为**True** ，以便收到某些消息将导致业务流程，以运行) 与前面的筛选器表达式应用于它。 传入消息都必须具有属性的命名空间中名为 Quantity **InvoiceSchema**。 业务流程接受仅为 1000年或多个项的发票，因此其运行前，运行时引擎将检查传入的消息。  
   
- 下表显示您可以在筛选器表达式中使用的运算符。  
+ 下表显示了可以使用筛选器表达式中的多个运算符。  
   
 |运算符|Description|示例|  
 |--------------|-----------------|-------------|  
@@ -44,17 +44,17 @@ InvoiceSchema.Quantity >= 1000
 |<|小于|ReqMsg(Total) \< 100|  
 |>|大于|ReqMsg(Total) > 100|  
 |<=|小于或等于|ReqMsg(Total) \<= 100|  
-|>=|大于或等于|ReqMsg(Total) > = 100|  
-|存在|存在|ReqMsg(Description) exists|  
+|>=|大于或等于|ReqMsg(Total) >= 100|  
+|存在|存在|Reqmsg （description） 存在|  
   
 > [!NOTE]
->  在筛选表达式中的字符串值括在引号中，例如︰ reqmsg （description) ="采购订单状态"。 不能在筛选器表达式中使用字符值。  
+>  在筛选表达式中的字符串值括在引号中，例如：Reqmsg （description) ="Purchase Order Status"。 不能在筛选器表达式中使用的字符值。  
   
 > [!NOTE]
->  如果您的激活接收与某一直接绑定端口相关联，并且随后发送与在您的筛选器中测试的属性具有相同值的相同类型的消息，将会造成无限循环。 消息将发送到 MessageBox，在那里将会再次挑选它，因为该消息与筛选器条件匹配。 为了避免这一问题，您应该或者筛选不同属性，发送不同类型的消息，或者确保在发送出同一类型的消息前更改该属性的值。  
+>  如果您的激活接收程序与直接绑定端口，并随后发送具有相同的值在筛选器中测试的属性的相同类型的消息，将创建一个无限循环。 该消息将转到 MessageBox，其中它将会再次挑选由于它匹配的筛选条件。 若要避免此问题，应该对不同属性进行筛选、 可以发送不同类型的消息，或确保将相同类型的消息发送之前更改属性的值。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [如何配置接收形状](../core/how-to-configure-the-receive-shape.md)   
- [在业务流程中使用相关性](../core/using-correlations-in-orchestrations.md)   
+ [业务流程中使用的相关性](../core/using-correlations-in-orchestrations.md)   
  [使用可分辨的字段和属性字段](../core/using-distinguished-fields-and-property-fields.md)   
  [在业务流程中使用消息](../core/using-messages-in-orchestrations.md)

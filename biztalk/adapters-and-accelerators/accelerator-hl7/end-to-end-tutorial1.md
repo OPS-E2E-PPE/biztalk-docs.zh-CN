@@ -18,12 +18,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 264a6eee008b9b327185c931ad4e5ac60cdc995a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 284d3cd4d1d3a9a5e0a77b9f9b21d85cb8eff41f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000734"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65255483"
 ---
 # <a name="end-to-end-tutorial"></a>端到端教程
 本教程包含详细的步骤，描述如何使用 Microsoft[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]来推进业务流程在订阅服务器和发布服务器的方案。  
@@ -63,7 +63,7 @@ ms.locfileid: "37000734"
   
 -   [步骤 1：创建和部署标头及确认架构](../../adapters-and-accelerators/accelerator-hl7/step-1-create-and-deploy-header-and-acknowledgment-schemas.md)  
   
--   [步骤 2： 创建适用于 v2.3.1 的通用架构](../../adapters-and-accelerators/accelerator-hl7/step-2-create-common-schemas-for-v2-3-1.md)  
+-   [步骤 2：创建适用于 v2.3.1 的通用架构](../../adapters-and-accelerators/accelerator-hl7/step-2-create-common-schemas-for-v2-3-1.md)  
   
 -   [步骤 3：创建和部署触发器事件（消息）项目](../../adapters-and-accelerators/accelerator-hl7/step-3-create-and-deploy-a-trigger-event-message-project.md)  
   

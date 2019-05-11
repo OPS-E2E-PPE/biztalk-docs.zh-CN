@@ -12,21 +12,21 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2f4b60dfbc128baead6b0a1ad38d319ba7b6e8fc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8276e2986231c391479112b25e01bea778566093
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972406"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65246412"
 ---
 # <a name="xml-message-envelopes"></a>XML 消息信封
 在由 Microsoft 发送和接收的 XML 实例消息中的两个用途，XML 信封具有[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]:  
   
-- XML 信封可包含用于补充 XML 文档中数据的数据。 XML 拆装器可以将此数据升级成消息上下文，以使其可更方便地被各种 BizTalk Server 组件访问。 对于出站 XML 实例消息，XML 组装器可以将值从消息上下文降级到信封中，以便在实例消息传输中包括这些值。  
+- XML 信封可包含补充 XML 文档中的数据的数据。 此数据可以升级到消息上下文中，XML 拆装器以便更容易访问不同的 BizTalk Server 组件。 对于出站 XML 实例消息，XML 组装器可以将值从消息上下文降级到信封中，以包含在实例消息传输。  
   
-- 可以使用 XML 信封将多个 XML 文档合并到单个有效的 XML 实例消息中。 如果不使用信封来将多个文档包装到单个根标记中，则不会将包含多个文档的 XML 实例消息认定为格式正确的 XML。  
+- XML 信封可以用于将多个 XML 文档合并到单个有效的 XML 实例消息。 如果不使用信封来包装到单个根标记中的多个文档，包含多个文档的 XML 实例消息将不适合作为格式正确的 XML。  
   
-  典型的 XML 信封（以粗体显示）既包含数据，又包含用于分隔其包含的一个或多个 XML 文档（以常规字体显示）的标记。  
+  典型的 XML 信封 （以粗体显示） 包含数据和用于分隔 （以常规字体显示），它包含一个或多个 XML 文档的标记。  
   
 ```  
   
@@ -41,7 +41,7 @@ ms.locfileid: "36972406"
 </body>    ...</envelope>  
 ```  
   
- XML 信封（以粗体显示）不必包含任何数据或用于分隔其包含的 XML 文档（以常规类型显示）的标记，这种情况比较少见，但仍然有效。  
+ 不太常见，但仍然有效，XML 信封 （以粗体显示） 不需要包含任何数据或分隔的 XML 文档 （以常规类型显示），它包含的标记。  
   
 ```  
   
@@ -56,7 +56,7 @@ ms.locfileid: "36972406"
 </envelope>  
 ```  
   
- 在这种情况下，XML 信封仅由开始信封标记和结束信封标记组成。  
+ 在这种情况下，XML 信封包含开始和结束信封标记以外的任何内容。  
   
 ## <a name="see-also"></a>请参阅  
  [嵌套的 XML 消息信封](../core/nested-xml-message-envelopes.md)   

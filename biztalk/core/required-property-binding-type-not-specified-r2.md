@@ -12,14 +12,14 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b9851095ec9fac42faae4af149d0023d4b65ea05
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2e959b7e3e0a48dea0d18a73a898d2c39bfd576e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022859"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65267604"
 ---
-# <a name="required-property-binding-type-not-specified-r2"></a>未指定必需的属性绑定类型 (R2)
+# <a name="required-property-binding-type-not-specified-r2"></a>必需的属性绑定类型未指定 (R2)
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                    |
@@ -30,15 +30,15 @@ ms.locfileid: "37022859"
 |  事件源   |                                         0                                          |
 |    组件    |                                         0                                          |
 |  符号名称  |                                         0                                          |
-|  消息正文   |                    未指定所需的属性绑定类型                    |
+|  消息正文   |                    所需的属性未指定的绑定类型                    |
   
 ## <a name="explanation"></a>解释  
- 配置 WCF-Custom 或 WCF-CustomIsolated 传输时，未设置“绑定类型”属性。  
+ 配置 Wcf-custom 或 Wcf-customisolated 传输时未设置的绑定类型属性。  
   
 ## <a name="user-action"></a>用户操作  
  使用以下过程配置绑定类型属性。  
   
-#### <a name="to-configure-the-binding-type-property"></a>配置绑定类型属性的步骤  
+#### <a name="to-configure-the-binding-type-property"></a>若要配置的绑定类型属性  
   
 1. 单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。  
   
@@ -58,7 +58,7 @@ ms.locfileid: "37022859"
   
 9. 中指定一个值**绑定类型**列表。  
   
-   有关配置绑定的详细信息，请参阅以下资源：  
+   有关配置绑定的其他信息，请参阅以下资源：  
   
 -   [如何配置 Wcf-customisolated 接收位置](../core/how-to-configure-a-wcf-customisolated-receive-location.md)  
   

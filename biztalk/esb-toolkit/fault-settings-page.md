@@ -1,5 +1,5 @@
 ---
-title: 错误设置页 |Microsoft 文档
+title: 容错设置页 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,29 +12,29 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a5ce03e5284122e8c1de9bd4e5c2d69c392174e0
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f1129d0eb8894c777a76e129a3777cd0757594f1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294141"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65250167"
 ---
-# <a name="fault-settings-page"></a>“错误设置”页
-图 1 显示的错误设置页。 此页显示了一系列的可修改的管理设置。  
+# <a name="fault-settings-page"></a>错误设置页
+图 1 显示了容错设置页。 此页显示一系列的管理设置，可以修改它。  
   
- ![错误设置页](../esb-toolkit/media/ch8-faultsettingspage.gif "Ch8 FaultSettingsPage")  
+ ![错误设置页](../esb-toolkit/media/ch8-faultsettingspage.gif "Ch8-FaultSettingsPage")  
   
  **图 1**  
   
  **ESB 管理门户错误设置页**  
   
- 以下列表说明如何使用 ESB 管理门户错误设置页的功能：  
+ 以下列表说明了如何使用 ESB 管理门户错误设置页的功能：  
   
--   若要更改的审核选项，选择你要审核每个事件对应的复选框。 当重新提交错误时，可用的事件将非常保存修改后的设置，编辑和失败后成功重新提交错误。  
+-   若要更改的审核选项，选择你想要审核每个事件对应的复选框。 可用的事件。 保存修改的设置，编辑和失败后成功重新提交错误时重新提交错误  
   
--   门户维护 Portal Alert 服务生成的警报的队列。 你可以修改此服务中设置**警报队列选项**页的部分。 可以启用或禁用服务，指定与 Microsoft Active Directory 目录服务，其交互和控制的队列批大小和轮询间隔。  
+-   在门户保留 Portal Alert 服务生成的警报的一个队列。 您可以修改此服务中的设置**警报队列选项**页部分。 可以启用或禁用服务、 指定与 Microsoft Active Directory 目录服务交互，控制队列批大小和轮询间隔。  
   
--   若要更改的警报的电子邮件服务的设置，请使用中的控件**警报的电子邮件选项**页的部分。 你可以启用或禁用该服务;指定电子邮件服务器和的"发件人"地址;更改轮询间隔和批处理大小;并指定服务使用的 XSLT 文件的路径。  
+-   若要更改警报的电子邮件服务的设置，请使用中的控件**警报的电子邮件选项**页部分。 可以启用或禁用该服务;指定电子邮件服务器和"发件人"地址;更改轮询间隔和批大小;并指定该服务使用的 XSLT 文件的路径。  
   
 > [!NOTE]
->  安装和配置 ESB 门户和 Portal Alert 服务时，你必须在此页中输入值。 有关详细信息，请参阅[安装 ESB 管理门户](http://go.microsoft.com/fwlink/?LinkId=188554)。
+>  安装和配置 ESB 门户和门户通知服务时，必须在此页中输入值。 有关详细信息，请参阅[安装 ESB 管理门户](http://go.microsoft.com/fwlink/?LinkId=188554)。

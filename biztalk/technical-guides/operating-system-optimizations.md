@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f69f020cd728192308ebf160c4836599283fb412
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 93222268e3d59bccfe8222e0e0e9b276e21f3dfd
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992918"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242641"
 ---
 # <a name="operating-system-optimizations"></a>操作系统优化
 本主题提供有关优化性能的建议[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]在生产中使用计算机[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境。 这些优化应用后[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]已安装并配置。  
@@ -146,7 +146,7 @@ ms.locfileid: "36992918"
   
 3. 从命令提示符下输入以下命令以使用 certutil 实用程序以使用在步骤 1 中下载 CRL 更新本地证书存储区：  
   
-    certutil – addstore CA c:\CodeSignPCA.crl  
+    certutil –addstore CA c:\CodeSignPCA.crl  
   
    CRL 文件将定期更新，因此您应该考虑设置重复的任务的下载和安装 CRL 更新。 若要查看下一步的更新时间，双击.crl 文件以及查看的值**下一步更新**字段。  
   

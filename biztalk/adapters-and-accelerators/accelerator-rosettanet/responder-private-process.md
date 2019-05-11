@@ -19,12 +19,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 045559ad13492055e0e63a0cb19c4e7e780d5252
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 995c436baf94678ae36d31406fbdf72d83d53425
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989614"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282455"
 ---
 # <a name="responder-private-process"></a>响应方专用流程
 Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]使用响应方专用流程 (PrivateResponder.odx) 处理响应方计算机上的服务内容。 其中包括：  
@@ -33,9 +33,9 @@ Microsoft[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentve
   
 - 创建响应消息的服务内容和将消息路由到公用流程，在响应方计算机的路由  
   
-  专用流程还设置元数据，并将响应消息的任何附件。 专用流程将传出消息路由到响应方公用流程，用于添加 RosettaNet 实现框架 (RNIF) 标头并准备要传输的消息。 专用流程将传入消息路由到 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]DATA [!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)] 数据库的 MessagesToLOB 表中，再路由到 LOB 应用程序。  
+  专用流程还设置元数据，并将响应消息的任何附件。 专用流程将传出消息路由到响应方公用流程，用于添加 RosettaNet 实现框架 (RNIF) 标头并准备要传输的消息。 专用流程将传入消息路由到 MessagesToLOB 表中[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]数据[!INCLUDE[btsSQLServerNoVersion](../../includes/btssqlservernoversion-md.md)]中路由到 LOB 应用程序数据库。  
   
-  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK 包括两个响应方专用流程示例，可以对其进行自定义以实现特定业务流程。 第一个示例是 PrivateResponder 流程示例，它包含 [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] 安装的响应方专用流程的代码。 有关详细信息，请参阅[PrivateResponder 示例](../../adapters-and-accelerators/accelerator-rosettanet/privateresponder-sample.md)。  
+  [!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)] SDK 包括两个响应方专用流程示例，你可以为您的特定业务流程自定义。 第一种是 PrivateResponder 流程示例，其中包含安装的响应方专用流程的代码[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]。 有关详细信息，请参阅[PrivateResponder 示例](../../adapters-and-accelerators/accelerator-rosettanet/privateresponder-sample.md)。  
   
   第二个示例是自动执行使用 3A2 和 3A4 合作伙伴接口流程 (Pip) 购买查询/采购订单流程 PIP3A4PrivateResponder 专用流程示例。 它还处理任何其他 PIP 消息。 有关详细信息，请参阅[3A4 专用响应方业务流程使用业务规则](../../adapters-and-accelerators/accelerator-rosettanet/3a4-private-responder-orchestration-using-a-business-rule.md)。  
   

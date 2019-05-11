@@ -16,11 +16,11 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: e1ada7b36453945b676db8aa897d7e0e862d3907
-ms.sourcegitcommit: ec7013f5ddcd2da4291ae29ac28f965d89aa277a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "22263605"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65262947"
 ---
 # <a name="optimizing-resource-usage-through-host-throttling"></a>通过主机阻止优化资源使用情况
 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 使用多个不同的 Microsoft 技术，其中每个可使用内存、 磁盘和 BizTalk server 和包含 BizTalk Server 数据库的 SQL 服务器上的可用 CPU 资源的重要部分。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 利用阻止机制来帮助管理可用资源，以最大程度减少使用的资源争用的使用。 本主题讨论此机制的设计。 有关如何调整阻止值的信息，请参阅[使用设置仪表板进行 BizTalk Server 性能调整](../core/using-settings-dashboard-for-biztalk-server-performance-tuning.md)。  

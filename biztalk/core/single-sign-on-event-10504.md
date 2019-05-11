@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10504 |Microsoft Docs
+title: 单一登录：Event 10504 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 591636b488f15518688b717df0d2df23f3839b08
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 42c9c1016d4868da807b4bd7838f0b0104d194b5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985726"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243469"
 ---
-# <a name="single-sign-on-event-10504"></a>单一登录： 事件 10504
+# <a name="single-sign-on-event-10504"></a>单一登录：事件 10504
 ## <a name="details"></a>详细信息  
 
 |                 |                                                            |
@@ -30,15 +30,15 @@ ms.locfileid: "36985726"
 |  事件源   |                           ENTSSO                           |
 |    组件    |                            N\A                             |
 |  符号名称  |                 SSO_INFO_SERVICE_STOPPING                  |
-|  消息正文   |                SSO 服务停止。                |
+|  消息正文   |                SSO 服务正在停止。                |
 
 ## <a name="explanation"></a>解释  
- 此信息性事件表示正在停止 SSO 服务。  
+ 此信息事件表明 SSO 服务正在停止。  
 
 ## <a name="user-action"></a>用户操作  
 
-- 不需要用户进行任何操作。  
+- 不不需要任何用户操作。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [使用 SSO](../core/using-sso.md)

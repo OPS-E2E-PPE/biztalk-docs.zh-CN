@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 505f60d287b82b5650855870329e9a18496d63f1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7208878da8a2d88b89d1a9ed6a23ac6aaaa5e9a1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979070"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65268805"
 ---
 # <a name="running-the-sql-adapter-sample"></a>运行 SQL 适配器示例
 SQL 适配器示例使用路线接入点示例随附的 Windows 窗体测试客户端应用程序。  

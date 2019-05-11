@@ -1,5 +1,5 @@
 ---
-title: SOA BizTalk 管理点 |Microsoft 文档
+title: SOA BizTalk 管理点 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19d57f602854572349d7fc7905a607c19fec5cf2
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 0b04646a2336e3f4a75c77ff963dc62c0985020a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26009270"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65268923"
 ---
 # <a name="soa-biztalk-management-point"></a>SOA BizTalk 管理点
 BizTalk Server 的 BizTalk 管理点是 SOA 软件的 Web 服务管理点，应用专用于 BizTalk Server 环境并提供 Web 服务应用程序的运行时管理的概念扩展。  

@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 90cb589894b9bb2166cf701866575092da53540e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a213ad34f7a946b38cdd2d5f456cddc666467d9f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015118"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65246462"
 ---
 # <a name="using-fault-handling"></a>使用错误处理
 期间[!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)]的错误处理的异常消息不返回到客户端，除非**FaultException** （或子类型） 会引发或**FaultContract**实现。 因此你可以仅从错误消息本身在这些情况下跟踪数据。 回调实现中出现的异常自动回来作为错误消息的同时**ServerFault**并**ClientFault**跟踪点。 但是，它将始终返回泛型错误，该错误显示一条常规消息。 有关 WCF 错误协定的详细信息，请参阅[ http://go.microsoft.com/fwlink/?LinkId=83132 ](http://go.microsoft.com/fwlink/?LinkId=83132)。  
@@ -48,101 +48,101 @@ ms.locfileid: "37015118"
 ```  
 <ic:OnEvent IsBegin ="true" IsEnd="false" Name="AuthorizationServiceReply" Source="ESCreditCardService">  
   
-  <ic:Filter>  
-    <ic:Expression>  
-      <wcf:Operation Name="GetServiceContractCallPoint"/>  
-      <ic:Operation Name ="Constant">  
-        <ic:Argument>ServiceReply</ic:Argument>  
-      </ic:Operation>  
-      <ic:Operation Name ="Equals"/>  
-      <wcf:Operation Name="GetOperationName" />  
-      <ic:Operation Name="Constant">  
-        <ic:Argument>AuthorizeWithDataContract</ic:Argument>  
-      </ic:Operation>  
-      <ic:Operation Name ="Equals" />  
-      <ic:Operation Name ="And" />  
-    </ic:Expression>  
-  </ic:Filter>  
+  <ic:Filter>  
+    <ic:Expression>  
+      <wcf:Operation Name="GetServiceContractCallPoint"/>  
+      <ic:Operation Name ="Constant">  
+        <ic:Argument>ServiceReply</ic:Argument>  
+      </ic:Operation>  
+      <ic:Operation Name ="Equals"/>  
+      <wcf:Operation Name="GetOperationName" />  
+      <ic:Operation Name="Constant">  
+        <ic:Argument>AuthorizeWithDataContract</ic:Argument>  
+      </ic:Operation>  
+      <ic:Operation Name ="Equals" />  
+      <ic:Operation Name ="And" />  
+    </ic:Expression>  
+  </ic:Filter>  
   
-  <ic:CorrelationID>  
-    <ic:Expression>  
-      <wcf:Operation Name="AutoGenerateCorrelationToken"/>  
-    </ic:Expression>  
-  </ic:CorrelationID>  
+  <ic:CorrelationID>  
+    <ic:Expression>  
+      <wcf:Operation Name="AutoGenerateCorrelationToken"/>  
+    </ic:Expression>  
+  </ic:CorrelationID>  
   
-  <ic:Update DataItemName="Status" Type="NVARCHAR">  
-    <ic:Expression>  
-      <ic:Operation Name="Constant">  
-        <ic:Argument>Success</ic:Argument>  
-      </ic:Operation>  
-    </ic:Expression>  
-  </ic:Update>  
+  <ic:Update DataItemName="Status" Type="NVARCHAR">  
+    <ic:Expression>  
+      <ic:Operation Name="Constant">  
+        <ic:Argument>Success</ic:Argument>  
+      </ic:Operation>  
+    </ic:Expression>  
+  </ic:Update>  
   
-  <ic:Update DataItemName="Result" Type="NVARCHAR">  
-    <ic:Expression>  
-      <wcf:Operation Name ="XPath">  
-        <wcf:Argument>//s:Body/ccservice:*/ccservice:AuthorizeWithDataContractResult</wcf:Argument>  
-      </wcf:Operation>  
-    </ic:Expression>  
-  </ic:Update>  
+  <ic:Update DataItemName="Result" Type="NVARCHAR">  
+    <ic:Expression>  
+      <wcf:Operation Name ="XPath">  
+        <wcf:Argument>//s:Body/ccservice:*/ccservice:AuthorizeWithDataContractResult</wcf:Argument>  
+      </wcf:Operation>  
+    </ic:Expression>  
+  </ic:Update>  
   
-  <ic:Update DataItemName ="Service Call Date" Type ="DATETIME">  
-    <ic:Expression>  
-      <wcf:Operation Name ="GetContextProperty">  
-        <wcf:Argument>EventTime</wcf:Argument>  
-      </wcf:Operation>  
-    </ic:Expression>  
-  </ic:Update>  
+  <ic:Update DataItemName ="Service Call Date" Type ="DATETIME">  
+    <ic:Expression>  
+      <wcf:Operation Name ="GetContextProperty">  
+        <wcf:Argument>EventTime</wcf:Argument>  
+      </wcf:Operation>  
+    </ic:Expression>  
+  </ic:Update>  
   
 </ic:OnEvent>  
   
 <ic:OnEvent IsBegin ="true" IsEnd="false" Name="AuthorizationServiceFault" Source="ESCreditCardService">  
   
-  <ic:Filter>  
-    <ic:Expression>  
-      <wcf:Operation Name="GetServiceContractCallPoint"/>  
-      <ic:Operation Name ="Constant">  
-        <ic:Argument>ServiceFault</ic:Argument>  
-      </ic:Operation>  
-      <ic:Operation Name ="Equals"/>  
-      <wcf:Operation Name="GetOperationName" />  
-      <ic:Operation Name="Constant">  
-        <ic:Argument>AuthorizeWithDataContract</ic:Argument>  
-      </ic:Operation>  
-      <ic:Operation Name ="Equals" />  
-      <ic:Operation Name ="And" />  
-    </ic:Expression>  
-  </ic:Filter>  
+  <ic:Filter>  
+    <ic:Expression>  
+      <wcf:Operation Name="GetServiceContractCallPoint"/>  
+      <ic:Operation Name ="Constant">  
+        <ic:Argument>ServiceFault</ic:Argument>  
+      </ic:Operation>  
+      <ic:Operation Name ="Equals"/>  
+      <wcf:Operation Name="GetOperationName" />  
+      <ic:Operation Name="Constant">  
+        <ic:Argument>AuthorizeWithDataContract</ic:Argument>  
+      </ic:Operation>  
+      <ic:Operation Name ="Equals" />  
+      <ic:Operation Name ="And" />  
+    </ic:Expression>  
+  </ic:Filter>  
   
-  <ic:CorrelationID>  
-    <ic:Expression>  
-      <wcf:Operation Name="AutoGenerateCorrelationToken"/>  
-    </ic:Expression>  
-  </ic:CorrelationID>  
+  <ic:CorrelationID>  
+    <ic:Expression>  
+      <wcf:Operation Name="AutoGenerateCorrelationToken"/>  
+    </ic:Expression>  
+  </ic:CorrelationID>  
   
-  <ic:Update DataItemName="Status" Type="NVARCHAR">  
-    <ic:Expression>  
-      <ic:Operation Name="Constant">  
-        <ic:Argument>Fault</ic:Argument>  
-      </ic:Operation>  
-    </ic:Expression>  
-  </ic:Update>  
+  <ic:Update DataItemName="Status" Type="NVARCHAR">  
+    <ic:Expression>  
+      <ic:Operation Name="Constant">  
+        <ic:Argument>Fault</ic:Argument>  
+      </ic:Operation>  
+    </ic:Expression>  
+  </ic:Update>  
   
-      <ic:Update DataItemName="Source" Type="NVARCHAR">  
-        <ic:Expression>  
-          <wcf:Operation Name ="XPath">  
-            <wcf:Argument>//s:Body/Fault/Reason/Text</wcf:Argument>  
-          </wcf:Operation>  
-        </ic:Expression>  
-      </ic:Update>  
+      <ic:Update DataItemName="Source" Type="NVARCHAR">  
+        <ic:Expression>  
+          <wcf:Operation Name ="XPath">  
+            <wcf:Argument>//s:Body/Fault/Reason/Text</wcf:Argument>  
+          </wcf:Operation>  
+        </ic:Expression>  
+      </ic:Update>  
   
-  <ic:Update DataItemName ="Service Call Date" Type ="DATETIME">  
-    <ic:Expression>  
-      <wcf:Operation Name ="GetContextProperty">  
-        <wcf:Argument>EventTime</wcf:Argument>  
-      </wcf:Operation>  
-    </ic:Expression>  
-  </ic:Update>  
+  <ic:Update DataItemName ="Service Call Date" Type ="DATETIME">  
+    <ic:Expression>  
+      <wcf:Operation Name ="GetContextProperty">  
+        <wcf:Argument>EventTime</wcf:Argument>  
+      </wcf:Operation>  
+    </ic:Expression>  
+  </ic:Update>  
   
 </ic:OnEvent>  
 ```  

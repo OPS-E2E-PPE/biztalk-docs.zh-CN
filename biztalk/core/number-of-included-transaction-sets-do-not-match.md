@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 93d2f51abc20f9cb790d2e6df62443f428c03dc8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: eb45df387dd7c06e995c2e3a2790e6cc2af68260
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970102"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65263215"
 ---
 # <a name="number-of-included-transaction-sets-do-not-match"></a>包括的事务集的数目不匹配
 ## <a name="details"></a>详细信息  

@@ -1,5 +1,5 @@
 ---
-title: 步骤 3： 添加触发器事件 （消息） 架构 |Microsoft Docs
+title: 步骤 3：添加触发器事件 （消息） 架构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: adaab47647bff4ad912ebcc558f43069907e204a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c395a5dd68686b04d47af790f733174787b5a4b4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012142"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288890"
 ---
-# <a name="step-3-add-a-trigger-event-message-schema"></a>步骤 3： 添加触发器事件 （消息） 架构
+# <a name="step-3-add-a-trigger-event-message-schema"></a>步骤 3：添加触发器事件 （消息） 架构
 在此步骤中，创建基于空的新项目[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]项目模板。 将架构添加到此项目的[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]将用于验证传入的批中的消息 (ADT ^ A03)。 添加对包含适用于版本 v2.3.1 的通用架构的项目的引用、 分配到项目中，一个强名称，然后部署该项目。  
 
 ### <a name="to-add-the-project-containing-the-message-schema"></a>若要添加包含消息架构的项目  
@@ -76,4 +76,4 @@ ms.locfileid: "37012142"
    > [!NOTE]
    >  如果未显示 successful-deploy 消息，使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]来解决您的架构。  
 
-   请继续执行[步骤 4： 创建用于接受批处理消息接收端口](../../adapters-and-accelerators/accelerator-hl7/step-4-create-a-receive-port-for-accepting-the-batch-message.md)。
+   请继续执行[步骤 4:创建用于接受批处理消息接收端口](../../adapters-and-accelerators/accelerator-hl7/step-4-create-a-receive-port-for-accepting-the-batch-message.md)。

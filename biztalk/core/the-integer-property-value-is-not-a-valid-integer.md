@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af5810c6c4bd17bde5b9afc004825a756e80bc35
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3d097e657abc0b785a726617296f3b8b746bdf8a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986694"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65254395"
 ---
 # <a name="the-integer-property-value-is-not-a-valid-integer"></a>integer 属性值不是有效整数
 ## <a name="details"></a>详细信息  

@@ -1,5 +1,5 @@
 ---
-title: 订阅以及提取消息 |Microsoft 文档
+title: 订阅消息和提取消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 22d5a7f6065e8040e390947d44510bb7414e8e10
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 38a0df2f3c56681634f717f8e92bcf429002d208
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22294717"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65268816"
 ---
-# <a name="subscribing-to-and-extracting-messages"></a>订阅以及提取消息
-业务流程可以包含代码以订阅并从 ESB 错误消息中提取消息。 例如，下面的代码使用**GetMessage**和**GetException**方法提取两个强类型化消息和**System.Exception**从 ESB 对象错误消息。  
+# <a name="subscribing-to-and-extracting-messages"></a>订阅消息和提取消息
+业务流程可以包含代码以订阅并从到 ESB 的错误消息中提取消息。 例如，下面的代码使用**GetMessage**并**GetException**方法来提取两个强类型化消息并**System.Exception** ESB 中的对象错误消息。  
   
 ```csharp  
 // Retrieve two messages from the fault message.  
@@ -34,7 +34,7 @@ newExc = Microsoft.Practices.ESB.ExceptionHandling.ExceptionMgmt.GetException(
                                     faultMsg);  
 ```  
   
- 若要提取类型的消息，下面的代码使用**GetMessages**方法以提取所有消息，然后循环访问它们。  
+ 若要提取无类型的消息，下面的代码，请使用**GetMessages**方法来提取所有消息，然后循环访问它们。  
   
 ```csharp  
 Microsoft.Practices.ESB.ExceptionHandling.MessageCollection msgs;  

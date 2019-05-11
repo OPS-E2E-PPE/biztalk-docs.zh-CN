@@ -12,26 +12,26 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2a2c1de940fab14aa370dc1358efe36fe702a9d2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 211817d704faec2f936f33a04944360804b52e14
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990302"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282472"
 ---
 # <a name="receive-pipeline"></a>接收管道
 此示例提供了一个有效的 Microsoft®[!INCLUDE[BTARN_CurrentVersion_FirstRef](../../includes/btarn-currentversion-firstref-md.md)]接收管道，你可以为你的应用程序自定义。  
   
 ## <a name="demonstrates"></a>演示  
- 此示例演示如何使用 BTARN 接收管道 (PipelineReceive.btp) 将传入 RNIF 消息加工成等效的 XML 消息。 PipelineReceive.btp 位于*\<驱动器\>*: \Program Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\RNPipelines。 它包含以下阶段：  
+ 此示例演示如何将传入 RNIF 消息加工成等效的 XML 消息使用 BTARN 接收管道 (PipelineReceive.btp)。 PipelineReceive.btp 位于*\<驱动器\>*: \Program Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\RNPipelines。 它包括以下阶段：  
   
 - ReceiveMessageNonRepudiate  
   
-- RNMimeDecoder（MIME 预处理器/解码器）  
+- RNMimeDecoder (MIME Preprocessor/Decoder)  
   
-- RNDAsm（XML 拆装器）  
+- RNDAsm （XML 拆装器）  
   
-- RNPartyRes（参与方解析组件）  
+- RNPartyRes （参与方解析组件）  
   
 - MessageUpdater  
   

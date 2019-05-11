@@ -18,12 +18,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 14559d888bc020a5772fbbc6eddf3ba4fdb4beb0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6e1d4b8d33824d6eca25c52207b8aaa9473df5e9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989598"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65255316"
 ---
 # <a name="get-started-with-the-biztalk-accelerator-for-hl7"></a>开始使用 BizTalk Accelerator for HL7
 使用 Microsoft [!INCLUDE[HL7_CurrentVersion_FirstRef_md](../../includes/hl7-currentversion-firstref-md.md)]，可以在医疗保健计算机系统之间开发业务流程。 通过使用[!INCLUDE[HL7_CurrentVersion_abbrev_md](../../includes/hl7-currentversion-abbrev-md.md)]，开发人员、 IT 专业人员和接口分析师可以在常见环境来开发跨保健应用程序的端到端集成基于 BTAHL7 的解决方案下工作。  

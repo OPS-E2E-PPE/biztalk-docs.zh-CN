@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10540 |Microsoft Docs
+title: 单一登录：Event 10540 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b1bcd7cc64a79634aa7868791d7e74e92cd1c4a3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dd18184dbf06934600231a6bbb75abdc1709f5ec
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990942"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65243407"
 ---
-# <a name="single-sign-on-event-10540"></a>单一登录： 事件 10540
+# <a name="single-sign-on-event-10540"></a>单一登录：事件 10540
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                  |
@@ -30,17 +30,17 @@ ms.locfileid: "36990942"
 |  事件源   |                                      ENTSSO                                      |
 |    组件    |                                        CO                                        |
 |  符号名称  |                         SSO_WARN_APP_TICKETS_NOT_ALLOWED                         |
-|  消息正文   | 此应用程序未启用票证。%r<br /><br /> 应用程序名称： %1 |
+|  消息正文   | Application.%r 未启用票证<br /><br /> 应用程序名称： %1 |
 
 ## <a name="explanation"></a>解释  
- 此警告事件表示，此应用程序未启用票证功能。 使用 SSO 票证是每个 SSO 应用程序的可选功能。  
+ 此警告事件表示票证功能尚未启用此应用程序。 使用 SSO 票证是每个 SSO 应用程序的可选功能。  
 
 ## <a name="user-action"></a>用户操作  
- 若要解决此警告问题，请执行以下操作：  
+ 若要解决此警告，请执行以下操作：  
 
-- 与应用程序管理员联系，为此 SSO 应用程序启用票证。 可使用 SSO 管理工具（GUI 或命令行）完成此操作。  
+- 请联系你的应用程序管理员以启用对此 SSO 应用程序的票证。 这可以使用 SSO 管理工具 （GUI 或命令行）。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [SSO 票证](../core/sso-tickets.md)  
 

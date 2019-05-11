@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e767e81ba45ab711cc8c84b5f682ac0eba56b5a8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 908705bf733e7f95f771520ce9adee5a70dfe330
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001127"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279789"
 ---
 # <a name="transaction-set-not-supported"></a>不支持事务集
 ## <a name="details"></a>详细信息  

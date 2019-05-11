@@ -1,6 +1,6 @@
 ---
-title: 使用 SSO 安全博士 Edwards OneWorld |Microsoft 文档
-description: 在 BizTalk Server 中使用 Microsoft BizTalk 适配器博士 Edwards OneWorld 时的安全性概述
+title: 使用 SSO 来保护 JD Edwards OneWorld |Microsoft Docs
+description: 在 BizTalk Server 中使用 Microsoft BizTalk 适配器 JD Edwards OneWorld 时的安全性概述
 ms.custom: ''
 ms.date: 10/18/2017
 ms.prod: biztalk-server
@@ -13,22 +13,22 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97e72ffbc38cad2f5bbd622ed497663cf8ac5f3c
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: b44e203a614edf4fdf6fe1decd5862c5c33d3430
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24015942"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279962"
 ---
-# <a name="security-in-jd-edwards-oneworld"></a>博士 Edwards OneWorld 中的安全性
+# <a name="security-in-jd-edwards-oneworld"></a>JD Edwards OneWorld 中的安全性
 
 ## <a name="overview"></a>概述
-用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器提供单一登录 (SSO) 支持。 企业单一登录工具创建的关联应用程序代表一个服务器系统，如 JD Edwards OneWorld。  
+用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器提供单一登录 (SSO) 支持。 由企业单一登录工具创建的关联应用程序代表诸如 JD Edwards OneWorld 之类的服务器系统。  
 
-本部分提供有关如何在安全的环境中部署 JD Edwards OneWorld 的 Microsoft BizTalk 适配器的指南。  
+本部分提供有关如何在安全环境中部署用于 JD Edwards OneWorld 的 Microsoft BizTalk 适配器的指南。  
   
 > [!CAUTION]
->  我们建议您限制对博士 Edwards OneWorld 使用 BizTalk 适配器授权用户仅，如客户端文件直接连接到业务线应用程序。  
+>  我们建议将用于 JD Edwards OneWorld 的 BizTalk 适配器使用限制给已授权用户，如客户端文件直接连接到业务线应用程序。  
 
 ## <a name="next-steps"></a>后续步骤
   

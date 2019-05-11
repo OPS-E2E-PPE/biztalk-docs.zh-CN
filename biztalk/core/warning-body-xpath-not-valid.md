@@ -1,5 +1,5 @@
 ---
-title: 警告-无效的正文 XPath |Microsoft 文档
+title: 警告-正文 XPath 无效 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6b015871225c74c44a3b7943cc8ee85c5066109c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 7c282daa153398dc4d261377d62497f42614c5e4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22287949"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279129"
 ---
 # <a name="warning---body-xpath-not-valid"></a>警告-正文 XPath 无效
 **错误代码**  
@@ -28,8 +28,8 @@ ms.locfileid: "22287949"
   
  **说明**  
   
- **正文 XPath**此信封架构中指定的根节点的属性引用不是节点**记录**节点，根据需要。  
+ **正文 XPath**此信封架构中指示的根节点的属性引用了不是一个节点**记录**节点，根据需要。  
   
  **用户执行任何操作**  
   
- 选择指定的根节点，选择的值**正文 XPath**正确标识顶级属性**记录**关联的消息正文的节点。
+ 选择指示的根节点，然后选择的值**正文 XPath**属性，用于正确标识顶级**记录**节点相关联的消息正文。

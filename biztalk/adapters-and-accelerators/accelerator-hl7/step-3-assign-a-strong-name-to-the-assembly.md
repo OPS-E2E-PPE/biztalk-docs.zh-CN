@@ -1,5 +1,5 @@
 ---
-title: 步骤 3： 对程序集分配强名称 |Microsoft Docs
+title: 步骤 3：对程序集分配强名称 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,14 +16,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 591423d04d8551620036e94a6ec780271e04feec
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 01e98a471e2c91c463b7ead725cef61be1a52d92
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012622"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65288928"
 ---
-# <a name="step-3-assign-a-strong-name-to-the-assembly"></a>步骤 3： 对程序集分配强名称
+# <a name="step-3-assign-a-strong-name-to-the-assembly"></a>步骤 3：对程序集分配强名称
 在此步骤中，创建并分配强名称[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]程序集。 强名称的程序集提供多个安全优势和所需部署到全局程序集缓存 (GAC) 中的项目。 强名称通过分配的数字签名和唯一的密钥对保证唯一性的程序集。 这还可通过确保没有人可以生成的程序集的后续版本的程序集的沿袭。 最后，强名称提供可靠的完整性检查以确保自您生成后，未更改的程序集的内容。  
   
 ### <a name="to-assign-a-strong-name-to-the-assembly"></a>若要对程序集分配强名称  
@@ -49,7 +49,7 @@ ms.locfileid: "37012622"
   
 9. BTAHL7V2XCommon 项目重复步骤 4 到 8。  
   
-   请继续执行[步骤 4： 创建架构](../../adapters-and-accelerators/accelerator-hl7/step-4-create-the-schemas.md)。  
+   请继续执行[步骤 4:创建架构](../../adapters-and-accelerators/accelerator-hl7/step-4-create-the-schemas.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [消息充实教程](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md)

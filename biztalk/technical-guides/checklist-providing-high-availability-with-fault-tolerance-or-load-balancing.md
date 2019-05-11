@@ -1,5 +1,5 @@
 ---
-title: 清单： 提供高可用性容错或负载均衡 |Microsoft Docs
+title: 清单：提供高可用性容错或负载均衡 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2856572d2e85c6aa290d19c09cac76a2317a0acd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bc0e50aaecf9b66b24edc9ad0974b1dfc50e4718
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980760"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65242591"
 ---
-# <a name="checklist-providing-high-availability-with-fault-tolerance-or-load-balancing"></a>清单： 提供高可用性容错或负载平衡
+# <a name="checklist-providing-high-availability-with-fault-tolerance-or-load-balancing"></a>清单：提供高可用性容错或负载平衡
 本主题列出了应完成配置的容错能力和/或负载均衡的生产型的组件的步骤[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境，以提供高可用性。 这些组件的容错能力的配置将允许系统在以特定的组件失败时继续操作。  
 
 
@@ -34,7 +34,7 @@ ms.locfileid: "36980760"
 | 实现存储区域网络 (SAN) 以容纳[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库。 **注意：** 如果可能，请配置 SAN 磁盘使用 RAID 1 + 0 （带区的镜像集） 的最大性能和高可用性拓扑。 |                                                                                                                                                                                                                                    在中["BizTalk Server 数据库优化白皮书"](http://go.microsoft.com/fwlink/?linkid=104427) (<http://go.microsoft.com/fwlink/?linkid=104427>)，请参阅"优化性能"下的"磁盘基础结构"部分。                                                                                                                                                                                                                                    |
 |                                                                                                    使用 Windows 群集来群集企业单一登录 (SSO) 主密钥服务器。                                                                                                     | [主密钥服务器的高可用性](../technical-guides/high-availability-for-the-master-secret-server.md)**注意：** 未运行的计算机上群集 SSO 服务[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]除非群集 SSO 和 BizTalk 主机在同一群集组中的。 有关群集 SSO 服务的详细信息和一个[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]看到同一群集组中的主机[群集 SSO 和 BizTalk 主机在同一群集组中如何](http://go.microsoft.com/fwlink/?LinkId=154367)(<http://go.microsoft.com/fwlink/?LinkId=154367>)。 |
 |                                                                                                                     备份企业单一登录 (SSO) 主密钥。                                                                                                                     |                                                                                                                                                                                                                                                                               请参阅[如何备份主密钥](http://go.microsoft.com/fwlink/?LinkID=151395)(<http://go.microsoft.com/fwlink/?LinkID=151395>)。                                                                                                                                                                                                                                                                                |
-|                                           配置独立的主机实例和 BAM 门户网页上使用网络负载平衡 (NLB) 或其他负载平衡设备高度可用的 Internet 信息服务 (IIS) Web 服务器。                                           |                                                                                                                                                                                                                                                             **适用于 Windows Server 2008**： 请参阅[网络负载平衡部署指南](http://go.microsoft.com/fwlink/?LinkId=153139)(<http://go.microsoft.com/fwlink/?LinkId=153139>)。                                                                                                                                                                                                                                                              |
+|                                           配置独立的主机实例和 BAM 门户网页上使用网络负载平衡 (NLB) 或其他负载平衡设备高度可用的 Internet 信息服务 (IIS) Web 服务器。                                           |                                                                                                                                                                                                                                                             **适用于 Windows Server 2008**:请参阅[网络负载平衡部署指南](http://go.microsoft.com/fwlink/?LinkId=153139)(<http://go.microsoft.com/fwlink/?LinkId=153139>)。                                                                                                                                                                                                                                                              |
 
 ## <a name="see-also"></a>请参阅  
  [提供高可用性](../technical-guides/providing-high-availability.md)
