@@ -12,31 +12,31 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a36a41e5bb60169632072445ff4685e1df5dbce9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f1c9a527b932e2ed532d20840f522328da9d4e78
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979590"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65282992"
 ---
-# <a name="message-submission-aspx-sample"></a><span data-ttu-id="1438d-102">消息提交 ASPX 示例</span><span class="sxs-lookup"><span data-stu-id="1438d-102">Message Submission ASPX Sample</span></span>
-<span data-ttu-id="1438d-103">本主题提供可用于提交给专用流程的服务内容的示例.aspx 代码。</span><span class="sxs-lookup"><span data-stu-id="1438d-103">This topic provides sample .aspx code that you can use to submit service content to a private process.</span></span> <span data-ttu-id="1438d-104">而不是业务 (LOB) 应用程序，可以使用此.aspx 代码。</span><span class="sxs-lookup"><span data-stu-id="1438d-104">You can use this .aspx code instead of a line-of-business (LOB) application.</span></span>  
+# <a name="message-submission-aspx-sample"></a><span data-ttu-id="96d65-102">消息提交 ASPX 示例</span><span class="sxs-lookup"><span data-stu-id="96d65-102">Message Submission ASPX Sample</span></span>
+<span data-ttu-id="96d65-103">本主题提供可用于提交给专用流程的服务内容的示例.aspx 代码。</span><span class="sxs-lookup"><span data-stu-id="96d65-103">This topic provides sample .aspx code that you can use to submit service content to a private process.</span></span> <span data-ttu-id="96d65-104">而不是业务 (LOB) 应用程序，可以使用此.aspx 代码。</span><span class="sxs-lookup"><span data-stu-id="96d65-104">You can use this .aspx code instead of a line-of-business (LOB) application.</span></span>  
   
-## <a name="demonstrates"></a><span data-ttu-id="1438d-105">演示</span><span class="sxs-lookup"><span data-stu-id="1438d-105">Demonstrates</span></span>  
- <span data-ttu-id="1438d-106">此代码演示如何调用`SubmitRNIF`方法来提交一条消息，其中包括：</span><span class="sxs-lookup"><span data-stu-id="1438d-106">This code demonstrates how to call the `SubmitRNIF` method to submit a message, including the following:</span></span>  
+## <a name="demonstrates"></a><span data-ttu-id="96d65-105">演示</span><span class="sxs-lookup"><span data-stu-id="96d65-105">Demonstrates</span></span>  
+ <span data-ttu-id="96d65-106">此代码演示如何调用`SubmitRNIF`方法来提交一条消息，其中包括：</span><span class="sxs-lookup"><span data-stu-id="96d65-106">This code demonstrates how to call the `SubmitRNIF` method to submit a message, including the following:</span></span>  
   
--   <span data-ttu-id="1438d-107">设置从应用程序的消息参数输入</span><span class="sxs-lookup"><span data-stu-id="1438d-107">Setting message parameters input from an application</span></span>  
+-   <span data-ttu-id="96d65-107">设置从应用程序的消息参数输入</span><span class="sxs-lookup"><span data-stu-id="96d65-107">Setting message parameters input from an application</span></span>  
   
--   <span data-ttu-id="1438d-108">设置消息类别</span><span class="sxs-lookup"><span data-stu-id="1438d-108">Setting the message category</span></span>  
+-   <span data-ttu-id="96d65-108">设置消息类别</span><span class="sxs-lookup"><span data-stu-id="96d65-108">Setting the message category</span></span>  
   
--   <span data-ttu-id="1438d-109">如果提交的值为 null 或为空，则生成消息的合作伙伴接口流程 (PIP) 实例</span><span class="sxs-lookup"><span data-stu-id="1438d-109">Generating a Partner Interface Process (PIP) instance for the message if the submitted value is null or empty</span></span>  
+-   <span data-ttu-id="96d65-109">如果提交的值为 null 或为空，则生成消息的合作伙伴接口流程 (PIP) 实例</span><span class="sxs-lookup"><span data-stu-id="96d65-109">Generating a Partner Interface Process (PIP) instance for the message if the submitted value is null or empty</span></span>  
   
--   <span data-ttu-id="1438d-110">生成输入的附件的文件数组和备注</span><span class="sxs-lookup"><span data-stu-id="1438d-110">Generating the input attachment files array and remarks</span></span>  
+-   <span data-ttu-id="96d65-110">生成输入的附件的文件数组和备注</span><span class="sxs-lookup"><span data-stu-id="96d65-110">Generating the input attachment files array and remarks</span></span>  
   
-## <a name="example"></a><span data-ttu-id="1438d-111">示例</span><span class="sxs-lookup"><span data-stu-id="1438d-111">Example</span></span>  
- <span data-ttu-id="1438d-112">此代码接受前端应用程序，如浏览器中，输入[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]®，或 Microsoft® Word，并生成发起方专用流程可以使用的 XML 文档。</span><span class="sxs-lookup"><span data-stu-id="1438d-112">This code accepts input from a front-end application, such as a browser, [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]®, or Microsoft® Word, and generates the XML document that the initiator private process can consume.</span></span>  
+## <a name="example"></a><span data-ttu-id="96d65-111">示例</span><span class="sxs-lookup"><span data-stu-id="96d65-111">Example</span></span>  
+ <span data-ttu-id="96d65-112">此代码接受前端应用程序，如浏览器中，输入[!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]®，或 Microsoft® Word，并生成发起方专用流程可以使用的 XML 文档。</span><span class="sxs-lookup"><span data-stu-id="96d65-112">This code accepts input from a front-end application, such as a browser, [!INCLUDE[btsInpathNoVersion](../../includes/btsinpathnoversion-md.md)]®, or Microsoft® Word, and generates the XML document that the initiator private process can consume.</span></span>  
   
- <span data-ttu-id="1438d-113">LOBWebApplication 实用工具包括下面的代码。</span><span class="sxs-lookup"><span data-stu-id="1438d-113">The LOBWebApplication utility includes the following code.</span></span> <span data-ttu-id="1438d-114">有关详细信息，请参阅[LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md)。</span><span class="sxs-lookup"><span data-stu-id="1438d-114">For more information, see [LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md).</span></span>  
+ <span data-ttu-id="96d65-113">LOBWebApplication 实用工具包括下面的代码。</span><span class="sxs-lookup"><span data-stu-id="96d65-113">The LOBWebApplication utility includes the following code.</span></span> <span data-ttu-id="96d65-114">有关详细信息，请参阅[LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md)。</span><span class="sxs-lookup"><span data-stu-id="96d65-114">For more information, see [LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md).</span></span>  
   
 ```  
 using System;  
@@ -109,6 +109,6 @@ namespace Microsoft.Solutions.BTARN.SDK
 }  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="1438d-115">请参阅</span><span class="sxs-lookup"><span data-stu-id="1438d-115">See Also</span></span>  
- <span data-ttu-id="1438d-116">[LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md) </span><span class="sxs-lookup"><span data-stu-id="1438d-116">[LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md) </span></span>  
- [<span data-ttu-id="1438d-117">消息传送示例</span><span class="sxs-lookup"><span data-stu-id="1438d-117">Messaging Samples</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/messaging-samples.md)
+## <a name="see-also"></a><span data-ttu-id="96d65-115">请参阅</span><span class="sxs-lookup"><span data-stu-id="96d65-115">See Also</span></span>  
+ <span data-ttu-id="96d65-116">[LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md) </span><span class="sxs-lookup"><span data-stu-id="96d65-116">[LOBWebApplication](../../adapters-and-accelerators/accelerator-rosettanet/lobwebapplication.md) </span></span>  
+ [<span data-ttu-id="96d65-117">消息传送示例</span><span class="sxs-lookup"><span data-stu-id="96d65-117">Messaging Samples</span></span>](../../adapters-and-accelerators/accelerator-rosettanet/messaging-samples.md)

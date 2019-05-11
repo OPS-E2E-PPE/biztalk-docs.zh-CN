@@ -1,5 +1,5 @@
 ---
-title: 如何在添加或删除消息业务流程 |Microsoft 文档
+title: 如何添加或删除业务流程中的消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,24 +17,24 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dfbc05fe4f92826e432c4a2d4163ef9e09e21583
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0b405e57470d1e9a0153f225d316999b580387b7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246725"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65343237"
 ---
-# <a name="how-to-add-or-remove-messages-in-orchestrations"></a><span data-ttu-id="70ea0-102">如何在添加或删除消息业务流程</span><span class="sxs-lookup"><span data-stu-id="70ea0-102">How to Add or Remove Messages in Orchestrations</span></span>
-<span data-ttu-id="70ea0-103">一条消息是通信的一个业务流程中的基本单位。</span><span class="sxs-lookup"><span data-stu-id="70ea0-103">A message is the basic unit of communication in an orchestration.</span></span> <span data-ttu-id="70ea0-104">它包含一个或多个部件以及描述消息和其内容的属性的上下文数据。</span><span class="sxs-lookup"><span data-stu-id="70ea0-104">It contains one or more parts along with context data that describes properties of the message and its contents.</span></span>  
+# <a name="how-to-add-or-remove-messages-in-orchestrations"></a><span data-ttu-id="d7473-102">如何添加或删除业务流程中的消息</span><span class="sxs-lookup"><span data-stu-id="d7473-102">How to Add or Remove Messages in Orchestrations</span></span>
+<span data-ttu-id="d7473-103">一条消息是通信的在业务流程中的基本单位。</span><span class="sxs-lookup"><span data-stu-id="d7473-103">A message is the basic unit of communication in an orchestration.</span></span> <span data-ttu-id="d7473-104">它包含描述该消息及其内容的属性的上下文数据以及一个或多个部分。</span><span class="sxs-lookup"><span data-stu-id="d7473-104">It contains one or more parts along with context data that describes properties of the message and its contents.</span></span>  
   
-### <a name="to-add-a-message"></a><span data-ttu-id="70ea0-105">添加消息</span><span class="sxs-lookup"><span data-stu-id="70ea0-105">To add a message</span></span>  
+### <a name="to-add-a-message"></a><span data-ttu-id="d7473-105">若要添加一条消息</span><span class="sxs-lookup"><span data-stu-id="d7473-105">To add a message</span></span>  
   
-1.  <span data-ttu-id="70ea0-106">在业务流程视图窗口中，右键单击**消息**，然后单击**新消息**。</span><span class="sxs-lookup"><span data-stu-id="70ea0-106">In the Orchestration View window, right-click **Messages** and then click **New Message**.</span></span> <span data-ttu-id="70ea0-107">**消息**文件夹扩展，如果折叠状态，并添加一个新消息。</span><span class="sxs-lookup"><span data-stu-id="70ea0-107">The **Messages** folder expands, if collapsed, and a new message is added.</span></span>  
+1.  <span data-ttu-id="d7473-106">在业务流程视图窗口中，右键单击**消息**，然后单击**新消息**。</span><span class="sxs-lookup"><span data-stu-id="d7473-106">In the Orchestration View window, right-click **Messages** and then click **New Message**.</span></span> <span data-ttu-id="d7473-107">**消息**文件夹会展开，如果处于折叠状态，并将其添加新的消息。</span><span class="sxs-lookup"><span data-stu-id="d7473-107">The **Messages** folder expands, if collapsed, and a new message is added.</span></span>  
   
-2.  <span data-ttu-id="70ea0-108">名称的消息。</span><span class="sxs-lookup"><span data-stu-id="70ea0-108">Name the message.</span></span>  
+2.  <span data-ttu-id="d7473-108">命名该消息。</span><span class="sxs-lookup"><span data-stu-id="d7473-108">Name the message.</span></span>  
   
-3.  <span data-ttu-id="70ea0-109">指定消息类型。</span><span class="sxs-lookup"><span data-stu-id="70ea0-109">Specify the message type.</span></span>  
+3.  <span data-ttu-id="d7473-109">指定消息类型。</span><span class="sxs-lookup"><span data-stu-id="d7473-109">Specify the message type.</span></span>  
   
-### <a name="to-remove-a-message"></a><span data-ttu-id="70ea0-110">若要删除一条消息</span><span class="sxs-lookup"><span data-stu-id="70ea0-110">To remove a message</span></span>  
+### <a name="to-remove-a-message"></a><span data-ttu-id="d7473-110">若要删除的消息</span><span class="sxs-lookup"><span data-stu-id="d7473-110">To remove a message</span></span>  
   
--   <span data-ttu-id="70ea0-111">在业务流程视图窗口中，右键单击你想要删除，然后单击的邮件**删除**。</span><span class="sxs-lookup"><span data-stu-id="70ea0-111">In the Orchestration View window, right-click the message you want to remove and then click **Delete**.</span></span>
+-   <span data-ttu-id="d7473-111">在业务流程视图窗口中，右键单击你想要删除，然后单击的消息**删除**。</span><span class="sxs-lookup"><span data-stu-id="d7473-111">In the Orchestration View window, right-click the message you want to remove and then click **Delete**.</span></span>

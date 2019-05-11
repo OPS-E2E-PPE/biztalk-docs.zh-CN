@@ -1,5 +1,5 @@
 ---
-title: BizTalk Server 所需端口 |Microsoft 文档
+title: BizTalk Server 所需的端口 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,30 +12,30 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a3024d0a4b2012318b52b4ad51c328dd55124241
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f7f30257a85b19bf952672a5a27cc943fc50a68b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22268349"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65267786"
 ---
-# <a name="required-ports-for-biztalk-server"></a><span data-ttu-id="96ae9-102">BizTalk Server 必需的端口</span><span class="sxs-lookup"><span data-stu-id="96ae9-102">Required Ports for BizTalk Server</span></span>
-<span data-ttu-id="96ae9-103">有关保护你的 BizTalk Server 部署的完整信息，请参阅[示例 BizTalk 服务器体系结构](../core/sample-biztalk-server-architectures.md)。</span><span class="sxs-lookup"><span data-stu-id="96ae9-103">For complete information about securing your BizTalk Server deployment, see [Sample BizTalk Server Architectures](../core/sample-biztalk-server-architectures.md).</span></span>  
+# <a name="required-ports-for-biztalk-server"></a><span data-ttu-id="cee1c-102">BizTalk Server 所需的端口</span><span class="sxs-lookup"><span data-stu-id="cee1c-102">Required Ports for BizTalk Server</span></span>
+<span data-ttu-id="cee1c-103">有关确保 BizTalk Server 部署的安全性的完整信息，请参阅 [Sample BizTalk Server Architectures](../core/sample-biztalk-server-architectures.md)。</span><span class="sxs-lookup"><span data-stu-id="cee1c-103">For complete information about securing your BizTalk Server deployment, see [Sample BizTalk Server Architectures](../core/sample-biztalk-server-architectures.md).</span></span>  
   
- <span data-ttu-id="96ae9-104">本部分提供了有关为使 BizTalk Server 组件可以相互通信而需要在防火墙上打开的端口的信息。</span><span class="sxs-lookup"><span data-stu-id="96ae9-104">This section provides information about the ports you need to open on the firewalls so that the BizTalk Server components can communicate with each other.</span></span>  
+ <span data-ttu-id="cee1c-104">本部分提供您需要在防火墙上打开，以便 BizTalk Server 组件可以相互通信的端口信息。</span><span class="sxs-lookup"><span data-stu-id="cee1c-104">This section provides information about the ports you need to open on the firewalls so that the BizTalk Server components can communicate with each other.</span></span>  
   
- <span data-ttu-id="96ae9-105">如果生产环境中存在 BizTalk Server 所用的服务器之外的其他服务器，您可能需要打开其他端口。</span><span class="sxs-lookup"><span data-stu-id="96ae9-105">If you have other servers in your production environment in addition to the ones BizTalk Server uses, you may need to open additional ports.</span></span> <span data-ttu-id="96ae9-106">有关 Windows Server System™ 的端口要求的详细信息，请参阅[http://go.microsoft.com/fwlink/?LinkId=25713](http://go.microsoft.com/fwlink/?LinkId=25713)。</span><span class="sxs-lookup"><span data-stu-id="96ae9-106">For more information about the port requirements for the Windows Server System™, see [http://go.microsoft.com/fwlink/?LinkId=25713](http://go.microsoft.com/fwlink/?LinkId=25713).</span></span>  
+ <span data-ttu-id="cee1c-105">如果 BizTalk Server 使用除在生产环境中有其他服务器，您可能需要打开其他端口。</span><span class="sxs-lookup"><span data-stu-id="cee1c-105">If you have other servers in your production environment in addition to the ones BizTalk Server uses, you may need to open additional ports.</span></span> <span data-ttu-id="cee1c-106">有关 Windows Server System™ 的端口要求的详细信息，请参阅[ http://go.microsoft.com/fwlink/?LinkId=25713 ](http://go.microsoft.com/fwlink/?LinkId=25713)。</span><span class="sxs-lookup"><span data-stu-id="cee1c-106">For more information about the port requirements for the Windows Server System™, see [http://go.microsoft.com/fwlink/?LinkId=25713](http://go.microsoft.com/fwlink/?LinkId=25713).</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="96ae9-107">本节内容</span><span class="sxs-lookup"><span data-stu-id="96ae9-107">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="cee1c-107">本节内容</span><span class="sxs-lookup"><span data-stu-id="cee1c-107">In This Section</span></span>  
   
--   [<span data-ttu-id="96ae9-108">用于接收和发送服务器端口</span><span class="sxs-lookup"><span data-stu-id="96ae9-108">Ports for the Receive and Send Servers</span></span>](../core/ports-for-the-receive-and-send-servers.md)  
+-   [<span data-ttu-id="cee1c-108">用于接收服务器和发送服务器的端口</span><span class="sxs-lookup"><span data-stu-id="cee1c-108">Ports for the Receive and Send Servers</span></span>](../core/ports-for-the-receive-and-send-servers.md)  
   
--   [<span data-ttu-id="96ae9-109">管理服务器的端口</span><span class="sxs-lookup"><span data-stu-id="96ae9-109">Ports for the Administration Server</span></span>](../core/ports-for-the-administration-server.md)  
+-   [<span data-ttu-id="cee1c-109">用于管理服务器的端口</span><span class="sxs-lookup"><span data-stu-id="cee1c-109">Ports for the Administration Server</span></span>](../core/ports-for-the-administration-server.md)  
   
--   [<span data-ttu-id="96ae9-110">跟踪 Server 的端口</span><span class="sxs-lookup"><span data-stu-id="96ae9-110">Ports for the Tracking Server</span></span>](../core/ports-for-the-tracking-server.md)  
+-   [<span data-ttu-id="cee1c-110">用于跟踪服务器的端口</span><span class="sxs-lookup"><span data-stu-id="cee1c-110">Ports for the Tracking Server</span></span>](../core/ports-for-the-tracking-server.md)  
   
--   [<span data-ttu-id="96ae9-111">处理服务器的端口</span><span class="sxs-lookup"><span data-stu-id="96ae9-111">Ports for the Processing Servers</span></span>](../core/ports-for-the-processing-servers.md)  
+-   [<span data-ttu-id="cee1c-111">用于处理服务器的端口</span><span class="sxs-lookup"><span data-stu-id="cee1c-111">Ports for the Processing Servers</span></span>](../core/ports-for-the-processing-servers.md)  
   
--   [<span data-ttu-id="96ae9-112">企业单一登录服务器的端口</span><span class="sxs-lookup"><span data-stu-id="96ae9-112">Ports for the Enterprise Single Sign-On Servers</span></span>](../core/ports-for-the-enterprise-single-sign-on-servers.md)  
+-   [<span data-ttu-id="cee1c-112">用于企业单一登录服务器的端口</span><span class="sxs-lookup"><span data-stu-id="cee1c-112">Ports for the Enterprise Single Sign-On Servers</span></span>](../core/ports-for-the-enterprise-single-sign-on-servers.md)  
   
--   [<span data-ttu-id="96ae9-113">BAM 门户服务器的端口</span><span class="sxs-lookup"><span data-stu-id="96ae9-113">Ports for the BAM Portal Server</span></span>](../core/ports-for-the-bam-portal-server.md)
+-   [<span data-ttu-id="cee1c-113">用于 BAM 门户服务器的端口</span><span class="sxs-lookup"><span data-stu-id="cee1c-113">Ports for the BAM Portal Server</span></span>](../core/ports-for-the-bam-portal-server.md)

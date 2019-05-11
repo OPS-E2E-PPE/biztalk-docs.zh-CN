@@ -1,5 +1,5 @@
 ---
-title: 管理和跟踪体系结构 |Microsoft 文档
+title: 管理和跟踪体系结构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -18,20 +18,20 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 660d4e71bc70d3ad8bc808040d4b56d6656753d1
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9a33d09fab9b79240574fc8e0254065345230f3a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22262037"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65330046"
 ---
-# <a name="management-and-tracking-architecture"></a><span data-ttu-id="ca6f9-102">管理和跟踪体系结构</span><span class="sxs-lookup"><span data-stu-id="ca6f9-102">Management and Tracking Architecture</span></span>
-<span data-ttu-id="ca6f9-103">本主题讨论的组件和体系结构管理和跟踪。</span><span class="sxs-lookup"><span data-stu-id="ca6f9-103">This topic discusses the components and architecture management and tracking.</span></span>  
+# <a name="management-and-tracking-architecture"></a><span data-ttu-id="de622-102">管理和跟踪体系结构</span><span class="sxs-lookup"><span data-stu-id="de622-102">Management and Tracking Architecture</span></span>
+<span data-ttu-id="de622-103">本主题讨论的组件和体系结构管理和跟踪。</span><span class="sxs-lookup"><span data-stu-id="de622-103">This topic discusses the components and architecture management and tracking.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="ca6f9-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="ca6f9-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="de622-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="de622-104">In This Section</span></span>  
   
--   [<span data-ttu-id="ca6f9-105">业务活动监视 (BAM)</span><span class="sxs-lookup"><span data-stu-id="ca6f9-105">Business Activity Monitoring (BAM)</span></span>](../core/business-activity-monitoring-bam.md)  
+-   [<span data-ttu-id="de622-105">业务活动监视 (BAM)</span><span class="sxs-lookup"><span data-stu-id="de622-105">Business Activity Monitoring (BAM)</span></span>](../core/business-activity-monitoring-bam.md)  
   
--   [<span data-ttu-id="ca6f9-106">规划消息和跟踪的实例</span><span class="sxs-lookup"><span data-stu-id="ca6f9-106">Planning for Message and Instance Tracking</span></span>](../core/planning-for-message-and-instance-tracking.md)  
+-   [<span data-ttu-id="de622-106">规划消息和实例跟踪</span><span class="sxs-lookup"><span data-stu-id="de622-106">Planning for Message and Instance Tracking</span></span>](../core/planning-for-message-and-instance-tracking.md)  
   
--   [<span data-ttu-id="ca6f9-107">跟踪数据库中记录大小</span><span class="sxs-lookup"><span data-stu-id="ca6f9-107">Record Size in Tracking Databases</span></span>](../core/record-size-in-tracking-databases.md)
+-   [<span data-ttu-id="de622-107">跟踪数据库中的记录大小</span><span class="sxs-lookup"><span data-stu-id="de622-107">Record Size in Tracking Databases</span></span>](../core/record-size-in-tracking-databases.md)

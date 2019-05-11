@@ -1,5 +1,5 @@
 ---
-title: 在存档数据库中创建分区的视图 |Microsoft 文档
+title: 在存档数据库中创建分区的视图 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,32 +16,32 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 42adf8f614f124c9b17597a44cdaaba9d7ed4f93
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: c4a1b688356ca665f98903099c1acef293a21e64
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25968923"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65354092"
 ---
-# <a name="creating-a-partitioned-view-in-the-archiving-database"></a><span data-ttu-id="db69c-102">在存档数据库中创建分区的视图</span><span class="sxs-lookup"><span data-stu-id="db69c-102">Creating a Partitioned View in the Archiving Database</span></span>
-<span data-ttu-id="db69c-103">在运行 BAM 数据维护程序包 (BAM_DM_`<activity name>`) 时，BAM 会将 BAM 主导入数据库的每个分区分别复制到 BAM 存档数据库的一个单独的表中。</span><span class="sxs-lookup"><span data-stu-id="db69c-103">When you run the BAM data maintenance package (BAM_DM_`<activity name>`) BAM copies each partition in the BAM Primary Import database to a separate table in the BAM Archive database.</span></span> <span data-ttu-id="db69c-104">如果分离存档数据库，然后又重新附加它进行查询，那么很难找到您要查询的数据。</span><span class="sxs-lookup"><span data-stu-id="db69c-104">If you detach the archive database and reattach it for querying, it will be difficult to locate the data for your query.</span></span>  
+# <a name="creating-a-partitioned-view-in-the-archiving-database"></a><span data-ttu-id="15588-102">在存档数据库中创建分区的视图</span><span class="sxs-lookup"><span data-stu-id="15588-102">Creating a Partitioned View in the Archiving Database</span></span>
+<span data-ttu-id="15588-103">当您运行 BAM 数据维护程序包 (BAM_DM_`<activity name>`) BAM 将每个分区中的 BAM 主导入数据库复制到 BAM 存档数据库中的单独表。</span><span class="sxs-lookup"><span data-stu-id="15588-103">When you run the BAM data maintenance package (BAM_DM_`<activity name>`) BAM copies each partition in the BAM Primary Import database to a separate table in the BAM Archive database.</span></span> <span data-ttu-id="15588-104">如果分离存档数据库，并重新附加它进行查询，它将很难找到您的查询的数据。</span><span class="sxs-lookup"><span data-stu-id="15588-104">If you detach the archive database and reattach it for querying, it will be difficult to locate the data for your query.</span></span>  
   
- <span data-ttu-id="db69c-105">您可以在 BAM 存档数据库中创建分区视图，以简化数据查找过程。</span><span class="sxs-lookup"><span data-stu-id="db69c-105">You can create partitioned views in the BAM Archive database to facilitate locating the data.</span></span> <span data-ttu-id="db69c-106">BAM 最多支持 253 个分区。</span><span class="sxs-lookup"><span data-stu-id="db69c-106">BAM supports up to 253 partitions.</span></span> <span data-ttu-id="db69c-107">BAM 为每个活动生成一个 BAM 数据维护 DTS 程序包，该程序包将活动数据复制到 BAM 存档数据库，然后从 BAM 主导入数据库删除这些数据。</span><span class="sxs-lookup"><span data-stu-id="db69c-107">For each activity, BAM generates one BAM data maintenance DTS package, which copies the activity data to the BAM Archive database and then removes it from the BAM Primary Import database.</span></span> <span data-ttu-id="db69c-108">如果存档数据库在复制数据之后下一次备份之前失败，则数据将会丢失。</span><span class="sxs-lookup"><span data-stu-id="db69c-108">If the archive database fails after the data is copied but before the next backup, data is lost.</span></span>  
+ <span data-ttu-id="15588-105">您可以在 BAM 存档数据库以简化数据查找过程中创建分区的视图。</span><span class="sxs-lookup"><span data-stu-id="15588-105">You can create partitioned views in the BAM Archive database to facilitate locating the data.</span></span> <span data-ttu-id="15588-106">BAM 支持最多 253 个分区。</span><span class="sxs-lookup"><span data-stu-id="15588-106">BAM supports up to 253 partitions.</span></span> <span data-ttu-id="15588-107">对于每个活动，BAM 将生成一个 BAM 数据维护 DTS 包，其中将活动数据复制到 BAM 存档数据库，并将其删除从 BAM 主导入数据库。</span><span class="sxs-lookup"><span data-stu-id="15588-107">For each activity, BAM generates one BAM data maintenance DTS package, which copies the activity data to the BAM Archive database and then removes it from the BAM Primary Import database.</span></span> <span data-ttu-id="15588-108">如果存档数据库失败后将数据复制，但在下一次备份之前，数据都会丢失。</span><span class="sxs-lookup"><span data-stu-id="15588-108">If the archive database fails after the data is copied but before the next backup, data is lost.</span></span>  
   
- <span data-ttu-id="db69c-109">防止丢失数据的办法是，创建一个单独的存档程序包，该程序包首先复制所有活动的旧数据，然后备份 BAM 存档数据库，最后删除从 BAM 主导入数据库复制的那些分区。</span><span class="sxs-lookup"><span data-stu-id="db69c-109">The solution to prevent lost data is to have a single archiving package, which first copies the old data from all activities, then backs up the BAM Archive database, and finally drops the partitions that were copied from the BAM Primary Import database.</span></span>  
+ <span data-ttu-id="15588-109">要防止数据丢失的解决方案是具有单个的存档程序包，它先将旧数据复制所有活动，然后备份 BAM 存档数据库，并最后删除从 BAM 主导入数据库复制的分区。</span><span class="sxs-lookup"><span data-stu-id="15588-109">The solution to prevent lost data is to have a single archiving package, which first copies the old data from all activities, then backs up the BAM Archive database, and finally drops the partitions that were copied from the BAM Primary Import database.</span></span>  
   
-## <a name="prerequisites"></a><span data-ttu-id="db69c-110">先决条件</span><span class="sxs-lookup"><span data-stu-id="db69c-110">Prerequisites</span></span>  
- <span data-ttu-id="db69c-111">必须以 BizTalk Server Administrators 组成员的身份登录，才能执行此过程。</span><span class="sxs-lookup"><span data-stu-id="db69c-111">You must be logged on as a member of the BizTalk Server Administrators group to perform this procedure.</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="15588-110">先决条件</span><span class="sxs-lookup"><span data-stu-id="15588-110">Prerequisites</span></span>  
+ <span data-ttu-id="15588-111">您必须为要执行此过程的 BizTalk Server Administrators 组的成员身份登录。</span><span class="sxs-lookup"><span data-stu-id="15588-111">You must be logged on as a member of the BizTalk Server Administrators group to perform this procedure.</span></span>  
   
-### <a name="to-create-a-partitioned-view-in-the-bam-archive-database-in-sql-server-2008-sp1-or-sql-server-2008-r2"></a><span data-ttu-id="db69c-112">在 SQL Server 2008 SP1 或 SQL Server 2008 R2 的 BAM 存档数据库中创建分区视图</span><span class="sxs-lookup"><span data-stu-id="db69c-112">To create a partitioned view in the BAM Archive database in SQL Server 2008 SP1 or SQL Server 2008 R2</span></span>  
+### <a name="to-create-a-partitioned-view-in-the-bam-archive-database-in-sql-server-2008-sp1-or-sql-server-2008-r2"></a><span data-ttu-id="15588-112">若要在 SQL Server 2008 SP1 或 SQL Server 2008 R2 中的 BAM 存档数据库中创建分区的视图</span><span class="sxs-lookup"><span data-stu-id="15588-112">To create a partitioned view in the BAM Archive database in SQL Server 2008 SP1 or SQL Server 2008 R2</span></span>  
   
-1.  <span data-ttu-id="db69c-113">打开 SQL Server Management Studio。</span><span class="sxs-lookup"><span data-stu-id="db69c-113">Open SQL Server Management Studio.</span></span>  
+1.  <span data-ttu-id="15588-113">打开 SQL Server Management Studio。</span><span class="sxs-lookup"><span data-stu-id="15588-113">Open SQL Server Management Studio.</span></span>  
   
-2.  <span data-ttu-id="db69c-114">选择 BAM 存档数据库，然后单击**新查询**。</span><span class="sxs-lookup"><span data-stu-id="db69c-114">Select the BAM Archive database, and then click **New Query**.</span></span>  
+2.  <span data-ttu-id="15588-114">选择 BAM 存档数据库，然后单击**新查询**。</span><span class="sxs-lookup"><span data-stu-id="15588-114">Select the BAM Archive database, and then click **New Query**.</span></span>  
   
-3.  <span data-ttu-id="db69c-115">上**查询**菜单上，指向**结果到**，然后单击**结果显示为文本**。</span><span class="sxs-lookup"><span data-stu-id="db69c-115">On the **Query** menu, point to **Results To** and then click **Results to Text**.</span></span>  
+3.  <span data-ttu-id="15588-115">上**查询**菜单，依次指向**结果显示为**，然后单击**结果显示为文本**。</span><span class="sxs-lookup"><span data-stu-id="15588-115">On the **Query** menu, point to **Results To** and then click **Results to Text**.</span></span>  
   
-4.  <span data-ttu-id="db69c-116">将下面的 SQL 脚本复制到查询窗格中。</span><span class="sxs-lookup"><span data-stu-id="db69c-116">Copy the following SQL script into the query pane.</span></span> <span data-ttu-id="db69c-117">替换\<活动名称\>替换为你的活动名称，并将`<view type>`使用**实例**实例查看或**关系**关系视图。</span><span class="sxs-lookup"><span data-stu-id="db69c-117">Replace \<activity name\> with your activity name, and replace `<view type>` with either **Instances** for instance view or **Relationships** for relationship view.</span></span>  
+4.  <span data-ttu-id="15588-116">将以下 SQL 脚本复制到查询窗格。</span><span class="sxs-lookup"><span data-stu-id="15588-116">Copy the following SQL script into the query pane.</span></span> <span data-ttu-id="15588-117">替换\<活动名称\>与活动名称和替换`<view type>`与**实例**对于实例视图或**关系**对于关系视图。</span><span class="sxs-lookup"><span data-stu-id="15588-117">Replace \<activity name\> with your activity name, and replace `<view type>` with either **Instances** for instance view or **Relationships** for relationship view.</span></span>  
   
     ```  
     set nocount on  
@@ -93,8 +93,8 @@ ms.locfileid: "25968923"
     set nocount off  
     ```  
   
-5.  <span data-ttu-id="db69c-118">执行查询。</span><span class="sxs-lookup"><span data-stu-id="db69c-118">Execute the query.</span></span>  
+5.  <span data-ttu-id="15588-118">执行查询。</span><span class="sxs-lookup"><span data-stu-id="15588-118">Execute the query.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="db69c-119">另请参阅</span><span class="sxs-lookup"><span data-stu-id="db69c-119">See Also</span></span>  
- <span data-ttu-id="db69c-120">[BAM DTS 包](../core/bam-dts-packages.md) </span><span class="sxs-lookup"><span data-stu-id="db69c-120">[BAM DTS Packages](../core/bam-dts-packages.md) </span></span>  
- [<span data-ttu-id="db69c-121">如何备份 BAM 分析和跟踪 Analysis Server 数据库</span><span class="sxs-lookup"><span data-stu-id="db69c-121">How to Back Up the BAM Analysis and Tracking Analysis Server Databases</span></span>](../core/how-to-back-up-the-bam-analysis-and-tracking-analysis-server-databases.md)
+## <a name="see-also"></a><span data-ttu-id="15588-119">请参阅</span><span class="sxs-lookup"><span data-stu-id="15588-119">See Also</span></span>  
+ <span data-ttu-id="15588-120">[BAM DTS 包](../core/bam-dts-packages.md) </span><span class="sxs-lookup"><span data-stu-id="15588-120">[BAM DTS Packages](../core/bam-dts-packages.md) </span></span>  
+ [<span data-ttu-id="15588-121">如何备份 BAM 分析和跟踪分析服务器数据库</span><span class="sxs-lookup"><span data-stu-id="15588-121">How to Back Up the BAM Analysis and Tracking Analysis Server Databases</span></span>](../core/how-to-back-up-the-bam-analysis-and-tracking-analysis-server-databases.md)

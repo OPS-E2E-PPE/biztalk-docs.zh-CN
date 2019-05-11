@@ -1,5 +1,5 @@
 ---
-title: 错误-用于脚本编写 Functoid 没有任何类 |Microsoft 文档
+title: 错误-脚本 Functoid 未设置类 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1668f4d29dc5748290e24b85a6f1a2623393e1b8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 1e328c2ace0dae325553789a1662075fa58395ab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240749"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65347287"
 ---
-# <a name="error---no-class-for-scripting-functoid"></a><span data-ttu-id="53809-102">错误-用于脚本编写 Functoid 没有任何类</span><span class="sxs-lookup"><span data-stu-id="53809-102">Error - No Class for Scripting Functoid</span></span>
-<span data-ttu-id="53809-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="53809-103">**Error Code**</span></span>  
+# <a name="error---no-class-for-scripting-functoid"></a><span data-ttu-id="f6e8b-102">错误-脚本 Functoid 未设置类</span><span class="sxs-lookup"><span data-stu-id="f6e8b-102">Error - No Class for Scripting Functoid</span></span>
+<span data-ttu-id="f6e8b-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="f6e8b-103">**Error Code**</span></span>  
   
- <span data-ttu-id="53809-104">btm1008</span><span class="sxs-lookup"><span data-stu-id="53809-104">btm1008</span></span>  
+ <span data-ttu-id="f6e8b-104">btm1008</span><span class="sxs-lookup"><span data-stu-id="f6e8b-104">btm1008</span></span>  
   
- <span data-ttu-id="53809-105">**说明**</span><span class="sxs-lookup"><span data-stu-id="53809-105">**Explanation**</span></span>  
+ <span data-ttu-id="f6e8b-105">**说明**</span><span class="sxs-lookup"><span data-stu-id="f6e8b-105">**Explanation**</span></span>  
   
- <span data-ttu-id="53809-106">**脚本类**属性指示**脚本**即使未设置 functoid**脚本类型**属性指示外部程序集包含此脚本**脚本**functoid。</span><span class="sxs-lookup"><span data-stu-id="53809-106">The **Script Class** property of the indicated **Scripting** functoid has not been set even though the **Script Type** property indicates that an external assembly contains the script for this **Scripting** functoid.</span></span>  
+ <span data-ttu-id="f6e8b-106">**脚本类**属性所指示**脚本**functoid 即使设置**脚本类型**属性指示外部程序集包含此脚本**脚本**functoid。</span><span class="sxs-lookup"><span data-stu-id="f6e8b-106">The **Script Class** property of the indicated **Scripting** functoid has not been set even though the **Script Type** property indicates that an external assembly contains the script for this **Scripting** functoid.</span></span>  
   
- <span data-ttu-id="53809-107">**用户执行任何操作**</span><span class="sxs-lookup"><span data-stu-id="53809-107">**User Action**</span></span>  
+ <span data-ttu-id="f6e8b-107">**用户执行任何操作**</span><span class="sxs-lookup"><span data-stu-id="f6e8b-107">**User Action**</span></span>  
   
- <span data-ttu-id="53809-108">选择指示**脚本**functoid，单击省略号 (**...**) 与关联的按钮**脚本**中的属性[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口中，然后将适当的值中设置**配置 Functoid 脚本**对话框中，包括**脚本类**属性。</span><span class="sxs-lookup"><span data-stu-id="53809-108">Select the indicated **Scripting** functoid, click the ellipsis (**...**) button associated with the **Script** property in the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, and then set the appropriate values in the **Configure Functoid Script** dialog box, including the **Script Class** property.</span></span>
+ <span data-ttu-id="f6e8b-108">选择所指示**Scripting** functoid，单击省略号 (**...**) 按钮与相关联**脚本**中的属性[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]属性窗口中，然后将相应的值设置**配置 Functoid 脚本**对话框中，其中包括**脚本类**属性。</span><span class="sxs-lookup"><span data-stu-id="f6e8b-108">Select the indicated **Scripting** functoid, click the ellipsis (**...**) button associated with the **Script** property in the [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] Properties window, and then set the appropriate values in the **Configure Functoid Script** dialog box, including the **Script Class** property.</span></span>

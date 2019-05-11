@@ -12,23 +12,23 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b531fa3469139434f341fe9e413a49b4b021e86f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2addea893d139dbb4f0efd401ac0af6410ad4f24
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979126"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65291218"
 ---
-# <a name="windows-powershell-scripts"></a><span data-ttu-id="5c1f5-102">Windows PowerShell 脚本</span><span class="sxs-lookup"><span data-stu-id="5c1f5-102">Windows PowerShell Scripts</span></span>
-<span data-ttu-id="5c1f5-103">本主题包含 Windows PowerShell 脚本可在 BizTalk Server 环境，以应用本指南中描述的注册表设置中的计算机上运行。</span><span class="sxs-lookup"><span data-stu-id="5c1f5-103">This topic contains Windows PowerShell scripts that can be run on the computers in a BizTalk Server environment to apply registry settings described in this guide.</span></span>  
+# <a name="windows-powershell-scripts"></a><span data-ttu-id="1adc0-102">Windows PowerShell 脚本</span><span class="sxs-lookup"><span data-stu-id="1adc0-102">Windows PowerShell Scripts</span></span>
+<span data-ttu-id="1adc0-103">本主题包含 Windows PowerShell 脚本可在 BizTalk Server 环境，以应用本指南中描述的注册表设置中的计算机上运行。</span><span class="sxs-lookup"><span data-stu-id="1adc0-103">This topic contains Windows PowerShell scripts that can be run on the computers in a BizTalk Server environment to apply registry settings described in this guide.</span></span>  
   
 > [!IMPORTANT]
->  <span data-ttu-id="5c1f5-104">这些脚本应仅运行[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]，而不[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="5c1f5-104">These scripts should only be run on [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)], not on [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)].</span></span> <span data-ttu-id="5c1f5-105">虽然这些脚本将上成功执行[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]，实验室测试这些脚本在情况下不提供任何显著的性能优势已指明[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="5c1f5-105">While these scripts will execute successfully on [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)], lab testing has indicated that these scripts do not provide any significant performance advantage on [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)].</span></span> <span data-ttu-id="5c1f5-106">只应运行这些脚本[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]后全面测试和评估的生产环境。</span><span class="sxs-lookup"><span data-stu-id="5c1f5-106">These scripts should only be run on a [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] production environment after thorough testing and evaluation.</span></span>  
+>  <span data-ttu-id="1adc0-104">这些脚本应仅运行[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]，而不[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="1adc0-104">These scripts should only be run on [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)], not on [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)].</span></span> <span data-ttu-id="1adc0-105">虽然这些脚本将上成功执行[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]，实验室测试这些脚本在情况下不提供任何显著的性能优势已指明[!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)]。</span><span class="sxs-lookup"><span data-stu-id="1adc0-105">While these scripts will execute successfully on [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)], lab testing has indicated that these scripts do not provide any significant performance advantage on [!INCLUDE[btsWinSvr2k8](../includes/btswinsvr2k8-md.md)].</span></span> <span data-ttu-id="1adc0-106">只应运行这些脚本[!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)]后全面测试和评估的生产环境。</span><span class="sxs-lookup"><span data-stu-id="1adc0-106">These scripts should only be run on a [!INCLUDE[btsWinSvr2k3](../includes/btswinsvr2k3-md.md)] production environment after thorough testing and evaluation.</span></span>  
   
-## <a name="optimizing-operating-system-performance-through-registry-settings"></a><span data-ttu-id="5c1f5-107">优化操作系统性能通过注册表设置</span><span class="sxs-lookup"><span data-stu-id="5c1f5-107">Optimizing operating system performance through registry settings</span></span>  
- <span data-ttu-id="5c1f5-108">可以使用以下 Windows PowerShell 脚本以应用注册表设置中所述[优化操作系统性能](../technical-guides/optimizing-operating-system-performance.md)。</span><span class="sxs-lookup"><span data-stu-id="5c1f5-108">The following Windows PowerShell script can be used to apply the registry settings described in [Optimizing Operating System Performance](../technical-guides/optimizing-operating-system-performance.md).</span></span>  
+## <a name="optimizing-operating-system-performance-through-registry-settings"></a><span data-ttu-id="1adc0-107">优化操作系统性能通过注册表设置</span><span class="sxs-lookup"><span data-stu-id="1adc0-107">Optimizing operating system performance through registry settings</span></span>  
+ <span data-ttu-id="1adc0-108">可以使用以下 Windows PowerShell 脚本以应用注册表设置中所述[优化操作系统性能](../technical-guides/optimizing-operating-system-performance.md)。</span><span class="sxs-lookup"><span data-stu-id="1adc0-108">The following Windows PowerShell script can be used to apply the registry settings described in [Optimizing Operating System Performance](../technical-guides/optimizing-operating-system-performance.md).</span></span>  
   
- <span data-ttu-id="5c1f5-109">将以下脚本复制到记事本并将另存为组 OSRegSettings.ps1。</span><span class="sxs-lookup"><span data-stu-id="5c1f5-109">Copy the script below into Notepad and save as Set-OSRegSettings.ps1.</span></span> <span data-ttu-id="5c1f5-110">然后在每台计算机上运行脚本[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境中的说明[优化操作系统性能](../technical-guides/optimizing-operating-system-performance.md):</span><span class="sxs-lookup"><span data-stu-id="5c1f5-110">Then run the script on each computer in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment by following the instructions in [Optimizing Operating System Performance](../technical-guides/optimizing-operating-system-performance.md):</span></span>  
+ <span data-ttu-id="1adc0-109">将以下脚本复制到记事本并将另存为组 OSRegSettings.ps1。</span><span class="sxs-lookup"><span data-stu-id="1adc0-109">Copy the script below into Notepad and save as Set-OSRegSettings.ps1.</span></span> <span data-ttu-id="1adc0-110">然后在每台计算机上运行脚本[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境中的说明[优化操作系统性能](../technical-guides/optimizing-operating-system-performance.md):</span><span class="sxs-lookup"><span data-stu-id="1adc0-110">Then run the script on each computer in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment by following the instructions in [Optimizing Operating System Performance](../technical-guides/optimizing-operating-system-performance.md):</span></span>  
   
 ```  
 #Set-OSRegSettings.ps1  
@@ -121,10 +121,10 @@ SetProperty "HKLM:\System\CurrentControlSet\Services\LanmanServer\Parameters" "S
 SetProperty "HKLM:\System\CurrentControlSet\Control\Session Manager\Memory Management" "LargeSystemCache" 0          
 ```  
   
-## <a name="optimizing-network-performance-through-registry-settings"></a><span data-ttu-id="5c1f5-111">通过注册表设置的优化网络性能</span><span class="sxs-lookup"><span data-stu-id="5c1f5-111">Optimizing network performance through registry settings</span></span>  
- <span data-ttu-id="5c1f5-112">可以使用以下 Windows PowerShell 脚本以应用注册表设置中所述[优化网络性能](../technical-guides/optimizing-network-performance.md)。</span><span class="sxs-lookup"><span data-stu-id="5c1f5-112">The following Windows PowerShell script can be used to apply the registry settings described in [Optimizing Network Performance](../technical-guides/optimizing-network-performance.md).</span></span>  
+## <a name="optimizing-network-performance-through-registry-settings"></a><span data-ttu-id="1adc0-111">通过注册表设置的优化网络性能</span><span class="sxs-lookup"><span data-stu-id="1adc0-111">Optimizing network performance through registry settings</span></span>  
+ <span data-ttu-id="1adc0-112">可以使用以下 Windows PowerShell 脚本以应用注册表设置中所述[优化网络性能](../technical-guides/optimizing-network-performance.md)。</span><span class="sxs-lookup"><span data-stu-id="1adc0-112">The following Windows PowerShell script can be used to apply the registry settings described in [Optimizing Network Performance](../technical-guides/optimizing-network-performance.md).</span></span>  
   
- <span data-ttu-id="5c1f5-113">将以下脚本复制到记事本并将另存为组 NetworkRegSettings.ps1。</span><span class="sxs-lookup"><span data-stu-id="5c1f5-113">Copy the script below into Notepad and save as Set-NetworkRegSettings.ps1.</span></span> <span data-ttu-id="5c1f5-114">然后在每台计算机上运行脚本[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境中的说明[优化网络性能](../technical-guides/optimizing-network-performance.md):</span><span class="sxs-lookup"><span data-stu-id="5c1f5-114">Then run the script on each computer in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment by following the instructions in [Optimizing Network Performance](../technical-guides/optimizing-network-performance.md):</span></span>  
+ <span data-ttu-id="1adc0-113">将以下脚本复制到记事本并将另存为组 NetworkRegSettings.ps1。</span><span class="sxs-lookup"><span data-stu-id="1adc0-113">Copy the script below into Notepad and save as Set-NetworkRegSettings.ps1.</span></span> <span data-ttu-id="1adc0-114">然后在每台计算机上运行脚本[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境中的说明[优化网络性能](../technical-guides/optimizing-network-performance.md):</span><span class="sxs-lookup"><span data-stu-id="1adc0-114">Then run the script on each computer in the [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] environment by following the instructions in [Optimizing Network Performance](../technical-guides/optimizing-network-performance.md):</span></span>  
   
 ```  
 #Set-NetworkRegSettings.ps1  
@@ -213,5 +213,5 @@ SetProperty $path "DynamicBacklogGrowthDelta" 0x64 # DynamicBacklogGrowthDelta -
 #Disable NETBIOS on cluster private network, if configured  
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="5c1f5-115">请参阅</span><span class="sxs-lookup"><span data-stu-id="5c1f5-115">See Also</span></span>  
- [<span data-ttu-id="5c1f5-116">优化性能</span><span class="sxs-lookup"><span data-stu-id="5c1f5-116">Optimizing Performance</span></span>](../technical-guides/optimizing-performance.md)
+## <a name="see-also"></a><span data-ttu-id="1adc0-115">请参阅</span><span class="sxs-lookup"><span data-stu-id="1adc0-115">See Also</span></span>  
+ [<span data-ttu-id="1adc0-116">优化性能</span><span class="sxs-lookup"><span data-stu-id="1adc0-116">Optimizing Performance</span></span>](../technical-guides/optimizing-performance.md)

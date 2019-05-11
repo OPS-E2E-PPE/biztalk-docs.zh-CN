@@ -1,5 +1,5 @@
 ---
-title: 如何将数据存储用于 EDI 和 AS2 状态报告 |Microsoft 文档
+title: 如何为 EDI 和 AS2 状态报告存储数据 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9a77f0551653283a25fc1b47a5bf74b75bcef5e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 223bca505c3eb04ba5f8c1fca3348b0c188ce3f8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246421"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65344162"
 ---
-# <a name="how-data-is-stored-for-edi-and-as2-status-reports"></a><span data-ttu-id="da6a4-102">如何为 EDI 和 AS2 状态报告存储数据</span><span class="sxs-lookup"><span data-stu-id="da6a4-102">How Data Is Stored for EDI and AS2 Status Reports</span></span>
-<span data-ttu-id="da6a4-103">本部分说明 BizTalk [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 如何为 EDI 和 AS2 状态报告存储数据。</span><span class="sxs-lookup"><span data-stu-id="da6a4-103">This section describes how BizTalk [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] stores data for the EDI and AS2 status reports.</span></span>  
+# <a name="how-data-is-stored-for-edi-and-as2-status-reports"></a><span data-ttu-id="b5f5a-102">如何为 EDI 和 AS2 状态报告存储数据</span><span class="sxs-lookup"><span data-stu-id="b5f5a-102">How Data Is Stored for EDI and AS2 Status Reports</span></span>
+<span data-ttu-id="b5f5a-103">本部分介绍了如何 BizTalk[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]存储为 EDI 和 AS2 状态报告的数据。</span><span class="sxs-lookup"><span data-stu-id="b5f5a-103">This section describes how BizTalk [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] stores data for the EDI and AS2 status reports.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="da6a4-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="da6a4-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="b5f5a-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="b5f5a-104">In This Section</span></span>  
   
--   [<span data-ttu-id="da6a4-105">状态报告数据存储区</span><span class="sxs-lookup"><span data-stu-id="da6a4-105">Status Report Data Stores</span></span>](../core/status-report-data-stores.md)  
+-   [<span data-ttu-id="b5f5a-105">状态报告数据存储</span><span class="sxs-lookup"><span data-stu-id="b5f5a-105">Status Report Data Stores</span></span>](../core/status-report-data-stores.md)  
   
--   [<span data-ttu-id="da6a4-106">数据存储的入站的 EDI 消息的方式</span><span class="sxs-lookup"><span data-stu-id="da6a4-106">How Data Is Stored for Inbound EDI Messages</span></span>](../core/how-data-is-stored-for-inbound-edi-messages.md)  
+-   [<span data-ttu-id="b5f5a-106">如何为入站 EDI 消息存储数据</span><span class="sxs-lookup"><span data-stu-id="b5f5a-106">How Data Is Stored for Inbound EDI Messages</span></span>](../core/how-data-is-stored-for-inbound-edi-messages.md)  
   
--   [<span data-ttu-id="da6a4-107">如何将数据存储用于出站 EDI 消息</span><span class="sxs-lookup"><span data-stu-id="da6a4-107">How Data Is Stored for Outbound EDI Messages</span></span>](../core/how-data-is-stored-for-outbound-edi-messages.md)  
+-   [<span data-ttu-id="b5f5a-107">如何为出站 EDI 消息存储数据</span><span class="sxs-lookup"><span data-stu-id="b5f5a-107">How Data Is Stored for Outbound EDI Messages</span></span>](../core/how-data-is-stored-for-outbound-edi-messages.md)  
   
--   [<span data-ttu-id="da6a4-108">BAM 活动跟踪 EDI AS2 消息的创建</span><span class="sxs-lookup"><span data-stu-id="da6a4-108">BAM Activities Created to Track EDI-AS2 Messages</span></span>](../core/bam-activities-created-to-track-edi-as2-messages.md)
+-   [<span data-ttu-id="b5f5a-108">为跟踪 EDI/AS2 消息创建的 BAM 活动</span><span class="sxs-lookup"><span data-stu-id="b5f5a-108">BAM Activities Created to Track EDI-AS2 Messages</span></span>](../core/bam-activities-created-to-track-edi-as2-messages.md)
