@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 700c2ad92cd03b50808f6a785b34b4d745482acb
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 271e7d468c04b55c21110eafa3a5392a8dcb3144
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36983486"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371782"
 ---
 # <a name="connect-to-the-siebel-system-in-visual-studio-using-add-adapter-metadata-wizard"></a>连接到 Siebel 系统中 Visual Studio 中使用添加适配器元数据向导
 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]还会显示为 BizTalk 适配器，因此，可以使用[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]来为你想要使用的适配器在 Siebel 系统上执行的操作生成架构。  
@@ -42,7 +42,7 @@ ms.locfileid: "36983486"
       | **模板**  | 单击**使用适配器服务**。 |
 
 
-   4. 单击 **“添加”**。 此时[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]会打开。  
+   4. 单击 **“添加”**。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]随即打开。  
 
    5. 在[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]，选择 WCF Siebel。 选择的计算机上[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]安装和 BizTalk 数据库的名称。  
 

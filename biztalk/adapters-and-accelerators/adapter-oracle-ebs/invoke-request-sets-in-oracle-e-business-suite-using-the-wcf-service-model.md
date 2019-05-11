@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c85ee6a77bcd93deaceafde03cec9fb8b1d4f6ef
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 09eb5e16e45d97e4035f2f16639773f9fbaaa39f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971046"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375448"
 ---
 # <a name="invoke-request-sets-in-oracle-e-business-suite-using-the-wcf-service-model"></a>调用请求集 Oracle E-business Suite 使用 WCF 服务模型中
 [!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)] 可以在 Oracle E-business Suite 中执行请求集。 请求集划分为一个或多个阶段，并且每个阶段包含了一组报表和并发程序。 有关如何在适配器支持请求集的详细信息，请参阅[对请求设置操作](../../adapters-and-accelerators/adapter-oracle-ebs/operations-on-request-sets.md)。  
@@ -27,14 +27,14 @@ ms.locfileid: "36971046"
   
 |项目|WCF 客户端名称|  
 |--------------|---------------------|  
-|请求组|RequestSets_ [APP_NAME] 客户端|  
+|请求组|RequestSets_[APP_NAME]Client|  
   
  [A p p _] = Oracle E-business Suite 应用程序; 的实际名称例如，SQLAP。  
   
 ### <a name="method-signature-for-invoking-request-sets"></a>用于调用请求集的方法签名  
  下表显示了请求集的方法签名。  
   
-|运算|方法签名|  
+|操作|方法签名|  
 |---------------|----------------------|  
 |请求组|公共\<返回类型\>\<请求设置名称\>（参数 1，参数 2，...）|  
   

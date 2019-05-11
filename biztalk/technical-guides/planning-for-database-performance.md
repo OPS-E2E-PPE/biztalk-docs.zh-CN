@@ -1,5 +1,5 @@
 ---
-title: 规划数据库性能 |Microsoft 文档
+title: 规划数据库性能 |Microsoft Docs
 ms.custom: ''
 ms.date: 11/29/2017
 ms.prod: biztalk-server
@@ -12,36 +12,36 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 878320cf7c6a5762626087964033430afcf611cf
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: cbbf9c072289b177779ed8ae3a991f58b9f26efe
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26009502"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394611"
 ---
 # <a name="planning-for-database-performance"></a>规划数据库性能
 
 ## <a name="overview"></a>概述
-Microsoft BizTalk Server 是极数据库密集型应用程序，可能需要 Microsoft SQL Server 中最多 13 个单独的数据库的创建。 由于 BizTalk Server 的数据库密集型特性，它是一点的至关重要是一点的你选择的适当版本和将承载 BizTalk Server 数据库的 SQL server 的版本。 若要优化承载 BizTalk Server 数据库的计算机运行 SQL Server 的性能，请按照本主题中和在的建议[BizTalk Server 数据库优化](optimizing-database-performance.md)。
+Microsoft BizTalk Server 是极其数据库密集型应用程序可能要求的 Microsoft SQL Server 中最多 13 个单独的数据库创建的。 由于 BizTalk Server 的数据库密集型性质，它是至关重要的任务选择适当的版本和版本的 SQL Server 来存放 BizTalk Server 数据库问题。 若要优化运行 SQL Server 的计算机承载 BizTalk Server 数据库的性能，请按照建议在本主题并在[BizTalk Server 数据库优化](optimizing-database-performance.md)。
   
 
 > [!NOTE]  
->  尽管本指南针对其他版本的 BizTalk Server 和 SQL Server 编写的你可以对较新版本使用相同的建议。
+>  虽然本指南针对其他版本的 BizTalk Server 和 SQL Server 编写的您可能可以较新版本使用相同的建议。
   
 ## <a name="considerations-for-sql-server-editions"></a>SQL Server 版本的注意事项  
- BizTalk Server 数据库应配置为在尽可能的专用 SQL Server 实例上运行。 BizTalk Server 是数据库密集型应用程序，因此单独的 BizTalk Server 计算机和承载 BizTalk Server 数据库的 SQL Server 计算机将改进性能，以及应考虑在生产 BizTalk Server 中的最佳实践环境。  
+ 应将 BizTalk Server 数据库配置为只要有可能的专用 SQL Server 实例上运行。 BizTalk Server 是数据库密集型应用程序，因此，分离的 BizTalk Server 计算机和承载 BizTalk Server 数据库的 SQL Server 计算机将提高性能，应考虑生产 BizTalk Server 中的最佳做法环境。  
   
- 各种版本的 SQL Server 提供不同的功能，这可能会影响你的 BizTalk 服务器环境的性能。 例如，在高负载情况下可用于 SQL Server 的 32 位版本的可用的数据库锁的数目可能超过，这是对 BizTalk 解决方案的性能造成不利影响。 请考虑存放在 64 位版本的 SQL Server 上你 MessageBox 的数据库，如果你在测试环境中遇到"超出锁"错误。 在 64 位版本的 SQL Server 上，可用锁定的数目将大大增加。  
+ 各种版本的 SQL Server 提供不同的功能，这可能会影响 BizTalk Server 环境的性能。 例如，在高负载情况下是可用于 32 位版本的 SQL Server 的可用的数据库锁的数目可能会被超出，这是对 BizTalk 解决方案的性能造成不利影响。 请考虑保存 MessageBox 数据库上的 SQL Server 的 64 位版本，如果您在测试环境中遇到"内存不足"错误。 可用锁的数目是 64 位版本的 SQL Server 上高得多。  
   
- 请考虑下面当决定在数据库引擎功能的表将需要为您的 BizTalk 环境。 对于小规模解决方案，例如当运行 BizTalk Server 分支版，SQL Server Workgroup Edition 可能是够用的用于容纳 BizTalk Server 数据库。 大比例，需要群集的支持，企业级解决方案为 BizTalk 日志传送的支持或 Analysis Services 支持，则你需要以承载数据库的 SQL Server Enterprise Edition。  
+ 请考虑下时确定数据库引擎功能的表将需要为您的 BizTalk 环境。 对于小规模的解决方案，例如当运行 BizTalk Server 分支版，SQL Server Workgroup Edition 可以满足用于容纳 BizTalk Server 数据库。 较大的比例，需要群集的支持，企业级解决方案的 BizTalk 日志传送支持或 Analysis Services 支持，则需要 SQL Server Enterprise Edition 来承载数据库。  
   
 |版本的 SQL Server|64 位支持|多实例支持|群集的支持|Analysis Services|  
 |---|---|---|---|---|  
-|SQL Server Enterprise Edition|是|是|是|是|  
-|SQL Server Standard Edition|是|是|是 （2 个节点）|是|  
-|SQL Server Workgroup Edition|是|是|“否”|是|  
+|SQL Server 企业版|是|是|是|是|  
+|SQL Server 标准版|是|是|是 （2 个节点）|是|  
+|SQL Server Workgroup Edition|是|是|否|否|  
   
 > [!NOTE]  
 >  BAM RTA 需要 SQL Server Enterprise Edition。  
   
- 有关各个版本支持的功能的完整列表，请参阅[支持的 SQL Server 的版本功能](https://docs.microsoft.com/sql/sql-server/editions-and-components-of-sql-server-2016)。
+ 有关各个版本支持的功能的完整列表，请参阅[SQL server 各个版本支持的功能](https://docs.microsoft.com/sql/sql-server/editions-and-components-of-sql-server-2016)。

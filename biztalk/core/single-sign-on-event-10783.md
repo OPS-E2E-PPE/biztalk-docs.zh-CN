@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10783 |Microsoft Docs
+title: 单一登录：Event 10783 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9a8920c06d22f533b56984f80cf03a2e6fe64fe4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9b9e8ff8c0fa2568badd5c110c0349cd77ca75a9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014366"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394161"
 ---
-# <a name="single-sign-on-event-10783"></a>单一登录： 事件 10783
+# <a name="single-sign-on-event-10783"></a>单一登录：事件 10783
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                  |
@@ -28,12 +28,12 @@ ms.locfileid: "37014366"
 | 产品版本 |                                            [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                            |
 |    事件 ID     |                                                                      10783                                                                       |
 |  事件源   |                                                                      ENTSSO                                                                      |
-|    组件    |                                                                       N/A                                                                        |
+|    组件    |                                                                       不可用                                                                        |
 |  符号名称  |                                                                ENTSSO_E_NO_SECRET                                                                |
-|  消息正文   | 无法执行加密或解密，因为密钥不在主密钥服务器中。 请参阅事件日志相关错误。 |
+|  消息正文   | 无法执行加密或解密，因为密钥不能从主密钥服务器。 请参阅事件日志相关错误。 |
   
 ## <a name="explanation"></a>解释  
- 可能是在配置过程中出现了问题。  
+ 有可能已经问题在配置过程。  
   
 ## <a name="user-action"></a>用户操作  
- 请参阅事件日志，了解详细信息和相关错误。
+ 查看事件日志了解详细信息和相关的错误。

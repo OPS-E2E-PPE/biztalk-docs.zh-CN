@@ -12,17 +12,17 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a7f2799f21e16d1622f180229d14cb8bb93d4a67
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8b304af8fbc455a3a18b21774ebc9f1b25e55257
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37021193"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395595"
 ---
 # <a name="reusing-properties-from-another-agreement"></a>重用其他协议的属性
-您可以重复使用协议之间的属性。 当新协议的大多数或所有属性与现有协议的属性相同时，此操作可以节省大量时间。 [!INCLUDE[firstref_TPM](../includes/firstref-tpm-md.md)] BizTalk Server 中的用户界面，可导出到 XML 模板文件的协议。 然后，您可以导入该 XML 模板以重复使用相同的协议属性。  
+可以重复使用协议之间的属性。 这样可以节省大量的时间时大多数或所有新协议的属性将与这些现有的协议相同。 [!INCLUDE[firstref_TPM](../includes/firstref-tpm-md.md)] BizTalk Server 中的用户界面，可导出到 XML 模板文件的协议。 然后可以导入该 XML 模板以重复使用相同的协议属性。  
   
- 导出协议到 XML 模板可捕获该协议的大多数属性，但并非全部。 以下属性将*不*导出到 XML 模板文件：  
+ 导出协议到 XML 模板捕获最，而不是全部，协议的属性。 以下属性将*不*导出到 XML 模板文件：  
   
 - 中的所有属性**常规属性**页面**常规**选项卡。  
   
@@ -30,24 +30,24 @@ ms.locfileid: "37021193"
   
 - 中的所有属性**附加属性**页面**常规**选项卡。  
   
-- 从与标识符相关的设置**标识符**页的单向协议选项卡。以下是：  
+- 从与标识符相关的设置**标识符**页的单向协议选项卡。这些是：  
   
-  -   **对于 X12**: ISA5、 ISA6、 ISA7、 ISA8，和其他协议解析程序设置  
+  -   **对于 X12**:ISA5、 ISA6、 ISA7、 ISA8 和其他协议解析程序设置  
   
-  -   **对于 EDIFACT**: UNB 2.1、 UNB 2.2、 UNB 3.1，UNB 3.2 和其他协议解析程序设置  
+  -   **对于 EDIFACT**:UNB 2.1、 UNB 2.2、 UNB 3.1，UNB 3.2 和其他协议解析程序设置  
   
-  -   **适用于 AS2**: AS2-To、as2-From、 和其他协议解析程序设置  
+  -   **适用于 AS2**:AS2-To、as2-From、 和其他协议解析程序设置  
   
 - 发送端口关联**发送端口**协议中适用于 X12 和 AS2 的单向协议选项卡页。  
   
-  除以上所列属性之外，以下属性将被导出至 XML 模板文件：  
+  上面列出的属性，以外的下列属性将导出到 XML 模板文件：  
   
-- 所有与编码协议（X12、EDIFACT 或 AS2）相关的设置。  
+- 所有与编码协议 (X12、 EDIFACT 或 AS2) 相关的设置。  
   
-- 所有与批相关的设置（批 ID 除外）。  
+- 所有与批处理相关的设置 （而不是批处理 ID)。  
   
 > [!NOTE]
->  在复制属性到目标协议时所有相应属性都将被覆盖。  
+>  将属性复制到目标协议时，将覆盖所有适用的属性。  
   
 ## <a name="in-this-section"></a>本节内容  
   

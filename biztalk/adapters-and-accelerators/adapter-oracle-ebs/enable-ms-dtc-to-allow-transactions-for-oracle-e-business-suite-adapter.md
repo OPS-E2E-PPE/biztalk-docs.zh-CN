@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 53037e9a7dc1ccc3c0ef21860696060ad1c046a8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d26f37502c6bde3d5135d06e0b7f2cdccba199a8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36984990"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375538"
 ---
 # <a name="enable-ms-distributed-transaction-coordinator-to-allow-transactions-for-oracle-e-business-suite"></a>启用 MS 分布式事务处理协调器，以允许适用于 Oracle E-business Suite 的事务
 在开始创建应用程序使用之前配置 MSDTC [!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]。  
@@ -43,7 +43,7 @@ Oracle E-business Suite 使用执行的操作[!INCLUDE[adapteroraclebusinessshor
    - **允许出站** 
    - **所需的任何 Authetnication**
   
-4. 单击“确定”保存更改。  
+4. 选择**确定**以保存所做的更改。  
   
 5. 如果系统提示重新启动 MSDTC 服务，请选择**是**。 重新启动 MSDTC 服务后，关闭属性和组件服务 MMC。 
   

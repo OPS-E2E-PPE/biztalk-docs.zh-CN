@@ -2,15 +2,15 @@
 redirect_url: /biztalk/core/security-in-biztalk-adapter-for-tibco-ems/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: 6715342fde73a5243f1d076e0863ba796fb231a0
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 59f4de013f88d7d419cff6f42e30135613d14f30
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24013556"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395211"
 ---
 # <a name="using-single-sign-on"></a>使用单一登录
-用于 TIBCO Enterprise Message Service 的 Microsoft BizTalk 适配器提供单一登录 (SSO) 支持。 企业单一登录工具创建的关联应用程序代表诸如 TIBCO Enterprise Message Service 之类的服务器系统。  
+用于 TIBCO Enterprise Message Service 的 Microsoft BizTalk 适配器提供单一登录 (SSO) 支持。 由企业单一登录工具创建的关联应用程序代表诸如 TIBCO Enterprise Message Service 之类的服务器系统。  
   
 ## <a name="in-this-section"></a>本节内容  
   

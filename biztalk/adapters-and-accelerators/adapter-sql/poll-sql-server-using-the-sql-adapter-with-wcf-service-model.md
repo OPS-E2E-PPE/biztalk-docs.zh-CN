@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eb3bbd42c732f3377c5823831b9507bbeb0c83bf
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 81023090dc18230eedf184b80f268b94d98b8ea2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022307"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368634"
 ---
 # <a name="poll-sql-server-using-the-sql-adapter-with-wcf-service-model"></a>SQL 适配器使用 WCF 服务模型轮询 SQL Server
 你可以配置[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]从 SQL Server 接收基于轮询的数据更改消息。 可以指定适配器轮询数据库将执行的轮询语句。 轮询语句可以是 SELECT 语句或存储的过程返回一个结果集。 根据接收轮询消息的类型，该适配器公开不同的轮询操作：  

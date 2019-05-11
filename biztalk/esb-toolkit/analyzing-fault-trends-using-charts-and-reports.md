@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5b147ce36ba7303c698242ae378a0231e975ec75
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 17052b9d65d500fd9ca4a16162a1943d120dbcc9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36995822"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392343"
 ---
 # <a name="analyzing-fault-trends-using-charts-and-reports"></a>使用图表和报表分析故障趋势
 本部分介绍的图表和 ESB 管理门户将生成的报表。 这些图表和报表提供有价值的详细信息和趋势信息的错误、 警告和消息重新提交。 您可以查看以下信息：  

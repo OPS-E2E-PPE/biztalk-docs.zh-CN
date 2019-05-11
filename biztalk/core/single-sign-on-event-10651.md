@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10651 |Microsoft Docs
+title: 单一登录：Event 10651 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fff78608420b9fc3856c29df214b33aa24ba3873
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9b9f3a91e219ada44ace3ec392ef59d0e3eb4548
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007494"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397672"
 ---
-# <a name="single-sign-on-event-10651"></a>单一登录： 事件 10651
+# <a name="single-sign-on-event-10651"></a>单一登录：事件 10651
 ## <a name="details"></a>详细信息  
 
 |                 |                                                            |
@@ -30,16 +30,16 @@ ms.locfileid: "37007494"
 |  事件源   |                           ENTSSO                           |
 |    组件    |                            N\A                             |
 |  符号名称  |               SSO_INFO_PASSWORD_SYNC_STARTED               |
-|  消息正文   |       已正确初始化密码同步服务。%r        |
+|  消息正文   |       密码同步服务已初始化 OK.%r        |
 
 ## <a name="explanation"></a>解释  
- 此信息事件表示已初始化密码同步服务。  
+ 此信息事件表明密码同步服务已初始化。  
 
 ## <a name="user-action"></a>用户操作  
 
-- 不需要用户进行任何操作。  
+- 不不需要任何用户操作。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [密码同步](../core/password-synchronization2.md)  
 

@@ -1,5 +1,5 @@
 ---
-title: 演练： 使用数据库和.NET 事实 |Microsoft Docs
+title: 演练：使用数据库和.NET 事实 |Microsoft Docs
 ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
@@ -12,31 +12,31 @@ caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 94eb3f34a529950a7344f6cc4579aa6f6909f813
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 453d7e657c2e2a416729a68700098be9b69a3a86
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36966950"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395959"
 ---
-# <a name="walkthrough-using-database-and-net-facts"></a>演练： 使用数据库和.NET 事实
-此演练将介绍使用业务规则编辑器创建使用数据库和 .NET 事实的策略的分步说明。  
+# <a name="walkthrough-using-database-and-net-facts"></a>演练：使用数据库和.NET 事实
+本演练提供使用业务规则编辑器来创建使用数据库和.NET 事实的策略的分步过程。  
 
-## <a name="prerequisites"></a>必要條件  
- 必须设置的值**StaticSupport**为 1 或 2 才能执行本演练的注册表项。 这样可以使策略调用 .NET 类的静态方法，而无需客户端来断言该类的实例。 有关详细信息，请参阅[类的调用静态成员](../core/invoking-static-members-of-a-class.md)。  
+## <a name="prerequisites"></a>先决条件  
+ 必须设置的值**StaticSupport**为 1 或 2 才能执行本演练的注册表项。 这可以使策略调用.NET 类的静态方法而无需客户端来断言该类的实例。 有关详细信息，请参阅[类的调用静态成员](../core/invoking-static-members-of-a-class.md)。  
 
 ## <a name="overview-of-this-walkthrough"></a>本演练概述  
- 本演练包含五个过程，如下表所述。  
+ 本演练包含五个过程，如下表中所述。  
 
 |过程标题|过程说明|  
 |---------------------|---------------------------|  
-|创建 TestDB 数据库和 PO 表的步骤|提供创建的分步说明**TestDB**数据库并**PO**表。|  
-|创建 POUtility 组件的步骤|提供创建的分步说明**POUtility**组件。|  
-|创建 ProcessPurchaseOrderDbNet 业务策略的步骤|提供创建的分步说明**ProcessPurchaseOrderDbNet**策略。|  
-|使用业务规则编辑器测试 ProcessPurchaseOrderDbNet 策略|提供使用业务规则编辑器来测试的分步说明**ProcessPurchaseOrderDbNet**策略。|  
-|使用 Policy.Execute 方法测试 ProcessPurchaseOrderDbNet 策略|提供用于测试的分步说明**ProcessPurchaseOrderDbNet**通过使用策略**Policy.Execute**方法。|  
+|若要创建 TestDB 数据库和 PO 表|提供创建的分步说明**TestDB**数据库并**PO**表。|  
+|若要创建 POUtility 组件|提供创建的分步说明**POUtility**组件。|  
+|若要创建 ProcessPurchaseOrderDbNet 业务策略|提供创建的分步说明**ProcessPurchaseOrderDbNet**策略。|  
+|若要使用业务规则编辑器测试 ProcessPurchaseOrderDbNet 策略|提供使用业务规则编辑器来测试的分步说明**ProcessPurchaseOrderDbNet**策略。|  
+|若要使用 Policy.Execute 方法测试 ProcessPurchaseOrderDbNet 策略|提供用于测试的分步说明**ProcessPurchaseOrderDbNet**通过使用策略**Policy.Execute**方法。|  
 
-### <a name="to-create-the-testdb-database-and-the-po-table"></a>创建 TestDB 数据库和 PO 表的步骤  
+### <a name="to-create-the-testdb-database-and-the-po-table"></a>若要创建 TestDB 数据库和 PO 表  
 
 1.  打开 SQL Server Management Studio。  
 
@@ -75,7 +75,7 @@ ms.locfileid: "36966950"
     |PO1|400|NULL|  
     |PO2|700|NULL|  
 
-### <a name="to-create-the-poutility-component"></a>创建 POUtility 组件的步骤  
+### <a name="to-create-the-poutility-component"></a>若要创建 POUtility 组件  
 
 1. 启动**Microsoft Visual Studio**。  
 
@@ -91,14 +91,14 @@ ms.locfileid: "36966950"
    |             **名称**              |                       类型**POUtilityLib**。                        |
    |           **位置**            |          指定**C:\BRE-Walkthroughs**作为位置。           |
    |         **解决方案名称**         |                       类型**POUtilitySol**。                        |
-   | **创建解决方案的目录** | 选中此复选框以便为解决方案文件创建目录。 |
+   | **创建解决方案的目录** | 选中此复选框以创建解决方案文件的目录。 |
 
 
 4. 单击“确定” 。 **POUtilityLib**项目应该显示在解决方案资源管理器。 如果看不到解决方案资源管理器，请单击**解决方案资源管理器**上**视图**菜单。  
 
 5. 在属性窗口中更改文件的名称**Class1.cs**给**POUtility.cs**。  
 
-6. 向该类添加公共构造函数，如以下代码所示：  
+6. 向类添加公共构造函数，如下面的代码中所示：  
 
    ```  
    public POUtility()  
@@ -133,11 +133,11 @@ ms.locfileid: "36966950"
 
 13. 在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]命令提示符下，将目录更改为**C:\BRE-Walkthroughs\POUtilitySol\POUtilityLib\Bin\Debug**，然后执行以下命令以向 GAC （全局注册 POUtility 组件程序集缓存）。 如果没有命令提示符下打开，请执行步骤 8 以将其打开。  
 
-     **Gacutil-i POUtilityLib.dll**  
+     **Gacutil -i POUtilityLib.dll**  
 
-### <a name="to-create-the-processpurchaseorderdbnet-business-policy"></a>创建 ProcessPurchaseOrderDbNet 业务策略的步骤  
+### <a name="to-create-the-processpurchaseorderdbnet-business-policy"></a>若要创建 ProcessPurchaseOrderDbNet 业务策略  
 
-1.  上**启动**菜单中，打开**业务规则编辑器**。 如果已打开业务规则编辑器，请按 F5 刷新。  
+1.  上**启动**菜单中，打开**业务规则编辑器**。 如果你有业务规则编辑器已打开，请按 f5 键刷新。  
 
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。 要执行此操作，右键单击该应用程序，并选择**以管理员身份运行**。  
@@ -160,11 +160,11 @@ ms.locfileid: "36966950"
 
 10. 在策略浏览器窗口中，右键单击**策略**，然后单击**添加新策略**。  
 
-11. 更改从策略的名称**Policy1**到**ProcessPurchaseOrderDbNet** ，然后按 ENTER。 你还可以在“属性”窗口中更改策略的名称。  
+11. 更改从策略的名称**Policy1**到**ProcessPurchaseOrderDbNet** ，然后按 ENTER。 此外可以更改属性窗口中的策略的名称。  
 
 12. 右键单击**版本 1.0**，然后单击**AddNewRule**。  
 
-13. 更改规则的名称**Rule1**到**ApprovalRule** ，然后按 ENTER。 您还可以在“属性”窗口中更改规则的名称。  
+13. 更改规则的名称**Rule1**到**ApprovalRule** ，然后按 ENTER。 此外可以更改属性窗口中的规则的名称。  
 
 14. 在如果窗格 （顶部） 在右侧，右击**条件**，单击**谓词**，然后单击**小于或等于**。  
 
@@ -184,7 +184,7 @@ ms.locfileid: "36966950"
 
 22. 在事实浏览器窗口中，右键单击**版本 1.0**中**ProcessPurchaseOrderDbNet**，然后单击**AddNewRule**。  
 
-23. 更改规则的名称**Rule1**到**DeniedRule** ，然后按 ENTER。 您还可以在“属性”窗口中更改规则的名称。  
+23. 更改规则的名称**Rule1**到**DeniedRule** ，然后按 ENTER。 此外可以更改属性窗口中的规则的名称。  
 
 24. 在如果窗格 （顶部） 在右侧，右击**条件**，单击**谓词**，然后单击**GreaterThan**。  
 
@@ -204,9 +204,9 @@ ms.locfileid: "36966950"
 
 32. 在策略浏览器窗口中，右键单击**版本 1.0 （未保存）**，然后单击**保存**。  
 
-### <a name="to-test-the-processpurchaseorderdbnet-policy-by-using-the-business-rule-composer"></a>使用业务规则编辑器测试 ProcessPurchaseOrderDbNet 策略  
+### <a name="to-test-the-processpurchaseorderdbnet-policy-by-using-the-business-rule-composer"></a>若要使用业务规则编辑器测试 ProcessPurchaseOrderDbNet 策略  
 
-1.  上**启动**菜单中，打开**业务规则编辑器**。 如果已打开业务规则编辑器，请按 F5 刷新。  
+1.  上**启动**菜单中，打开**业务规则编辑器**。 如果你有业务规则编辑器已打开，请按 f5 键刷新。  
 
 2.  在策略浏览器窗口中，展开**策略**，展开**ProcessPurchaseOrderDbNet**，右键单击**版本 1.0**，然后单击**测试策略**.  
 
@@ -229,9 +229,9 @@ ms.locfileid: "36966950"
     > [!NOTE]
     >  如果仍看到的值**状态**字段为 NULL，右键单击包含数据的列表，然后单击**执行 SQL**，刷新视图。  
 
-11. 使 SQL Server Management Studio 保持打开的状态。  
+11. SQL Server Management Studio 保持打开状态。  
 
-### <a name="to-test-the-processpurchaseorderdbnet-policy-by-using-the-policyexecute-method"></a>使用 Policy.Execute 方法测试 ProcessPurchaseOrderDbNet 策略  
+### <a name="to-test-the-processpurchaseorderdbnet-policy-by-using-the-policyexecute-method"></a>若要使用 Policy.Execute 方法测试 ProcessPurchaseOrderDbNet 策略  
 
 1. 启动**Microsoft Visual Studio**。  
 
@@ -247,7 +247,7 @@ ms.locfileid: "36966950"
    |             **名称**              |                    类型**TestProcessPODbNet**。                     |
    |           **位置**            |          指定**C:\BRE-Walkthroughs**作为位置。           |
    |         **解决方案名称**         |                   类型**TestProcessPODbNetSol**。                   |
-   | **创建解决方案的目录** | 选中此复选框以便为解决方案文件创建目录。 |
+   | **创建解决方案的目录** | 选中此复选框以创建解决方案文件的目录。 |
 
 
 4. 单击“确定” 。 **TestProcessPODbNet**项目应该显示在解决方案资源管理器。 如果看不到解决方案资源管理器，请单击**解决方案资源管理器**上**视图**菜单。  
@@ -339,7 +339,7 @@ ms.locfileid: "36966950"
 
 ## <a name="comments"></a>注释  
 
--   如果策略使用 .NET 类的非静态方法，你需要使用断言 .NET 类的实例的事实创建器组件，以便通过使用业务规则编辑器来测试该策略。  
+-   如果策略使用.NET 类的非静态方法，您需要使用断言.NET 类，通过使用业务规则编辑器测试策略的实例的事实创建器组件。  
 
 -   它是非常重要，记住业务规则编辑器创建的实例**DataConnection**对象，并将其添加到规则引擎工作内存会自动为您。 但是，当调用从客户端 （BizTalk 或非 BizTalk） 应用程序中，策略**DataConnection**对象不为您自动创建。 创建客户端应**DataConnection**对象，并将其作为参数或事实传递到规则引擎以执行策略。  
 

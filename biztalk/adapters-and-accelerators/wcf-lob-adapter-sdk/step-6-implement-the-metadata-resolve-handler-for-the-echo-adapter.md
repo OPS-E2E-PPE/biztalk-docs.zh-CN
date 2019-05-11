@@ -1,5 +1,5 @@
 ---
-title: 步骤 6： 为 Echo 适配器实现的元数据解析处理 |Microsoft 文档
+title: 步骤 6：实现 Echo 适配器的元数据解析处理程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 022da31cacedaa59c9e5821fb049165f463c7f06
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 98171f958a1e16b5078fb570b107ffcf93cd5954
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22226997"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363134"
 ---
-# <a name="step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter"></a>步骤 6： 为 Echo 适配器实现的元数据解析处理程序
+# <a name="step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter"></a>步骤 6：实现 Echo 适配器的元数据解析处理程序
 ![步骤 6 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-6of9.gif "Step_6of9")  
   
- **完成时间：** 45 分钟  
+ **若要完成的时间：** 45 分钟  
   
- 在此步骤中，你实现`Microsoft.ServiceModel.Channels.Common.IMetadataResolverHandler`界面，用于解决操作和类型为 echo 适配器的元数据。 无论您的适配器的功能，则必须实现此接口。 [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)]自动生成为您调用 EchoAdapterMetadataResolverHandler 派生的类。  
+ 在此步骤中，您实现`Microsoft.ServiceModel.Channels.Common.IMetadataResolverHandler`接口解析操作，并键入 echo 适配器的元数据。 无论您的适配器的功能，您必须实现此接口。 [!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)]自动生成派生的类为您调用 EchoAdapterMetadataResolverHandler。  
   
- 在以下部分中，你将更新 EchoAdapterMetadataResolverHandler 类，以获取更好地了解如何实现此接口。 完成此步骤后，必须解决 echo 适配器处理程序的工作元数据。  
+ 在以下部分中，更新 EchoAdapterMetadataResolverHandler 类，以获取更好地了解如何实现此接口。 完成此步骤，必须解决 echo 适配器处理程序处理元数据。  
   
 ## <a name="prerequisites"></a>先决条件  
- 在开始此步骤之前，你必须已成功完成[步骤 5： 为 Echo 适配器实现的元数据搜索处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md)。 您还必须了解以下操作和类型类：  
+ 在开始此步骤之前，你必须已成功完成[步骤 5:实现 Echo 适配器的元数据搜索处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md)。 您还必须了解以下操作和类型类：  
   
 -   `Microsoft.ServiceModel.Channels.Common.ParameterizedOperationMetadata`  
   
@@ -61,22 +61,22 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
   }  
 ```  
   
- 下表描述每种方法执行的操作：  
+ 下表描述每个方法执行的操作：  
   
-|**方法名称**|**Description**|  
+|**方法名称**|**说明**|  
 |---------------------|---------------------|  
 |IsOperationMetadataValid|如果自指定日期和时间以来未更改的类型元数据，则返回 true|  
 |IsTypeMetadataValid|返回一个布尔值，该值指示指定的类型元数据是否有效。|  
-|ResolveOperationMetadata|解析为相应的操作 ID`Microsoft.ServiceModel.Channels.Common.OperationMetadata`|  
+|ResolveOperationMetadata|解析为相应的操作 ID `Microsoft.ServiceModel.Channels.Common.OperationMetadata`|  
 |ResolveTypeMetadata|解析为相应的提供的元数据 typeId `Microsoft.ServiceModel.Channels.Common.TypeMetadata`。|  
   
 ### <a name="to-implement-the-isoperationmetadatavalid-method"></a>若要实现 IsOperationMetadataValid 方法  
   
-1.  在解决方案资源管理器中，双击**EchoAdapterMetadataResolverHandler.cs**文件。  
+1.  在解决方案资源管理器中双击**EchoAdapterMetadataResolverHandler.cs**文件。  
   
-2.  在 Visual Studio 编辑器中，右键单击任意位置在编辑器中，在上下文菜单中，依次指向**大纲**，然后单击**停止大纲显示**。  
+2.  在 Visual Studio 编辑器中，右键单击任意位置在编辑器内，在上下文菜单中，指向**大纲**，然后单击**停止大纲显示**。  
   
-3.  在 Visual Studio 编辑器中，查找**IsOperationMetadataValid**方法，在此方法中，将现有与下面的单个语句以指示每个指定的操作元数据是否有效。  
+3.  在 Visual Studio 编辑器中，找到**IsOperationMetadataValid**方法，在此方法中，替换现有使用以下单个语句，以指示每个指定的操作元数据是否有效。  
   
     ```csharp  
     return true;  
@@ -84,7 +84,7 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
   
 ### <a name="to-implement-the-istypemetadatavalid-method"></a>若要实现 IsTypeMetadataValid 方法  
   
--   在 Visual Studio 编辑器中，查找**IsTypeMetadataValid**方法，在此方法中，将现有与下面的单个语句以指示每个指定的类型元数据是否有效。  
+-   在 Visual Studio 编辑器中，找到**IsTypeMetadataValid**方法，在此方法中，替换现有使用以下单个语句，以指示每个指定的类型元数据是否有效。  
   
     ```csharp  
     return true;  
@@ -92,7 +92,7 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
   
 ### <a name="to-implement-the-resolveoperationmetadata-method"></a>若要实现 ResolveOperationMetadata 方法  
   
-1.  在 Visual Studio 编辑器中，查找**ResolveOperationMetadata**方法，在此方法中，将现有替换为以下若要解决此 OnReceiveEcho 操作，void OnReceiveEcho （长 fileLength Uri 路径)。  
+1.  在 Visual Studio 编辑器中，找到**ResolveOperationMetadata**方法，在此方法中，替换以下解决 OnReceiveEcho 操作，void OnReceiveEcho （Uri 路径，长 fileLength） 存在。  
   
     ```csharp  
     extraTypeMetadataResolved = null;  
@@ -115,7 +115,7 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
             return om;  
     ```  
   
-2.  继续添加以下方法解决 Echo/EchoStrings 操作，字符串 [] EchoStrings(string data)。  
+2.  继续添加以下方法解决 Echo/EchoStrings 操作，string [] EchoStrings(string data)。  
   
     ```csharp  
     case "Echo/EchoStrings":  
@@ -132,7 +132,7 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
         return om;  
     ```  
   
-3.  继续添加以下逻辑，若要解决此 Echo/EchoStrings 操作，字符串 [] EchoStrings(string data)。  
+3.  继续添加下面的逻辑解决 Echo/EchoStrings 操作，string [] EchoStrings(string data)。  
   
     ```csharp  
     case "Echo/EchoGreetings":  
@@ -150,7 +150,7 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
         return om;  
     ```  
   
-4.  继续添加以下逻辑，若要解决 CustomGreeting EchoCustomGreetingFromFile(Uri greetingInstancePath) 操作。  
+4.  继续添加下面的逻辑解决 CustomGreeting EchoCustomGreetingFromFile(Uri greetingInstancePath) 操作。  
   
     ```csharp  
     case "Echo/EchoCustomGreetingFromFile":  
@@ -184,7 +184,7 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
   
 ### <a name="to-implement-the-resolvetypemetadata-method"></a>若要实现 ResolveTypeMetadata 方法  
   
--   在 Visual Studio 编辑器中，查找**ResolveTypeMetadata**方法，在此方法中，将替换为以下返回现有`Microsoft.ServiceModel.Channels.Common.TypeMetadata`对象。  
+-   在 Visual Studio 编辑器中，找到**ResolveTypeMetadata**方法，在此方法中，替换为以下内容，以返回与现有`Microsoft.ServiceModel.Channels.Common.TypeMetadata`对象。  
   
     ```csharp  
     extraTypeMetadataResolved = null;  
@@ -224,15 +224,15 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
   
 ### <a name="to-define-the-custom-greeting-type-metadata-class"></a>若要定义自定义问候语类型元数据类  
   
-1.  在解决方案资源管理器，右键单击**Echo 适配器**项目，指向**添加**，然后单击**新项**。  
+1.  在解决方案资源管理器中右键单击**Echo 适配器**项目，指向**添加**，然后单击**新项**。  
   
-2.  在**添加新项**对话框中，在**模板**，单击**类**。  
+2.  在中**添加新项**对话框中的**模板**，单击**类**。  
   
-3.  在**名称**文本框中，键入**CustomGreetingTypeMetadata**。  
+3.  在中**名称**文本框中，键入**CustomGreetingTypeMetadata**。  
   
 4.  单击 **“添加”**。  
   
-5.  在 Visual Studio 编辑器中，替换为以下替换现有代码：  
+5.  在 Visual Studio 编辑器中，使用以下替换现有代码：  
   
     ```csharp  
     using System;  
@@ -349,21 +349,21 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-6.  在 Visual Studio 中，从**文件**菜单上，单击**保存所有**。  
+6.  在 Visual Studio 中，从**文件**菜单上，单击**全部保存**。  
   
-### <a name="to-create-the-custom-greeting-xml-schema-definition"></a>若要创建自定义问候语 XML 架构定义  
+### <a name="to-create-the-custom-greeting-xml-schema-definition"></a>若要创建 XML 架构定义的自定义问候语  
   
-1.  在解决方案资源管理器，右键单击**Echo 适配器**项目，指向**添加**，然后单击**新项**。  
+1.  在解决方案资源管理器中右键单击**Echo 适配器**项目，指向**添加**，然后单击**新项**。  
   
-2.  在**添加新项**对话框中，在**模板**，单击**XML 架构**。  
+2.  在中**添加新项**对话框中的**模板**，单击**XML 架构**。  
   
-3.  在**名称**文本框中，键入**CustomGreeting**。  
+3.  在中**名称**文本框中，键入**CustomGreeting**。  
   
 4.  单击 **“添加”**。  
   
-5.  在解决方案资源管理器，右键单击**CustomGreeting.xsd**文件，然后选择**查看代码**。  
+5.  在解决方案资源管理器中右键单击**CustomGreeting.xsd**文件，然后选择**查看代码**。  
   
-6.  在 Visual Studio 编辑器中，开始通过将现有代码替换为以下代码，以开始 CustomGreeting 架构定义：  
+6.  在 Visual Studio 编辑器中，首先使用开始 CustomGreeting 架构定义的以下代码替换现有代码：  
   
     ```csharp  
     <?xml version="1.0" encoding="utf-8" ?>   
@@ -376,14 +376,14 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
     </xs:schema>  
     ```  
   
-     替换为以下代码，开始 CustomGreeting 架构的定义：  
+     使用以下代码，开始 CustomGreeting 架构的定义：  
   
     ```csharp  
     <?xml version="1.0" encoding="utf-16"?>  
     <xsd:schema xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns="echov2://microsoft.adapters.samples.echov2/PreDefinedTypes" elementFormDefault="qualified" targetNamespace="echov2://microsoft.adapters.samples.echov2/PreDefinedTypes" xmlns:xsd ="http://www.w3.org/2001/XMLSchema">  
     ```  
   
-7.  添加以下项来定义 CustomGreeting 元素：  
+7.  添加以下代码来定义 CustomGreeting 元素：  
   
     ```csharp  
     <xsd:element name="greeting" type="CustomGreeting" />  
@@ -400,7 +400,7 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
     </xsd:complexType>  
     ```  
   
-9. 通过添加 UsAddress 复杂类型继续 CustomGreeting 架构定义：  
+9. 继续 CustomGreeting 架构定义，添加 UsAddress 复杂类型：  
   
     ```csharp  
     <xsd:complexType name="UsAddress">  
@@ -414,7 +414,7 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
     </xsd:complexType>  
     ```  
   
-10. 通过添加 PostalCode 简单类型和架构的结束标记完成 CustomGreeting 架构的定义：  
+10. 通过添加邮政编码简单类型和架构的结束标记完成 CustomGreeting 架构的定义：  
   
     ```csharp  
       <xsd:simpleType name="PostalCode">  
@@ -425,20 +425,20 @@ public interface IMetadataResolverHandler : IConnectionHandler, IDisposable
     </xsd:schema>  
     ```  
   
-11. 现在更新此文件的生成操作，因此它将被视为嵌入的资源。 若要这样做，请在 Visual Studio 解决方案窗格中，右键单击该文件，然后选择**属性**。 更改生成操作从**无**到**嵌入资源**。  
+11. 现在更新此文件的生成操作，因此它将被视为嵌入的资源。 为此，请在 Visual Studio 解决方案窗格中，右键单击该文件，然后选择**属性**。 更改生成操作从**无**到**嵌入的资源**。  
   
-12. 在 Visual Studio 中，从**文件**菜单上，单击**保存所有**。  
+12. 在 Visual Studio 中，从**文件**菜单上，单击**全部保存**。  
   
 > [!NOTE]
->  保存所做的工作。 你可以安全地在此时关闭 Visual Studio 或转到下一步，[步骤 7： 为 Echo 适配器实现同步的出站处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter.md)。  
+>  保存所做的工作。 可以安全地关闭 Visual Studio 或转到下一步，[步骤 7:实现 Echo 适配器的同步出站处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter.md)。  
   
-## <a name="what-did-i-just-do"></a>未我只需做什么？  
- 你只需实现解析为 echo 适配器的功能的元数据。  
+## <a name="what-did-i-just-do"></a>我只需做了什么？  
+ 只需实现解析 echo 适配器的功能的元数据。  
   
 ## <a name="next-steps"></a>后续步骤  
- 在下一步的步骤中，为 Echo 适配器实现同步的出站处理程序。 您然后实现同步的入站处理程序然后构建和部署和 Echo 适配器。  
+ 在下一步，Echo 适配器实现出站的同步处理程序。 您然后实现同步的入站处理程序，然后生成并部署 Echo 适配器。  
   
-## <a name="see-also"></a>另请参阅  
- [步骤 5： 为 Echo 适配器实现的元数据搜索处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md)   
- [步骤 7： 为 Echo 适配器实现同步的出站处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter.md)   
- [教程 1： 开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)
+## <a name="see-also"></a>请参阅  
+ [步骤 5：实现 Echo 适配器的元数据搜索处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-5-implement-the-metadata-search-handler-for-the-echo-adapter.md)   
+ [步骤 7：实现 Echo 适配器的同步出站处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter.md)   
+ [教程 1:开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)

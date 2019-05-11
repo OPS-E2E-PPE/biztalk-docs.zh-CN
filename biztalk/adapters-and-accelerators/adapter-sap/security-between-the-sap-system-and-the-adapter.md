@@ -19,12 +19,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 72e0125887483cf9092b0ef4f73d7ca19fd3790c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: cca967a375e1d64a7e3f720648fb7eb8ceede98b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982550"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372893"
 ---
 # <a name="security-between-the-sap-system-and-the-adapter"></a>SAP 系统和适配器之间的安全性
 [!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]支持以帮助其与 SAP 服务器之间安全通信的 SAP 安全网络通信 (SNC) 或用户名称密码凭据。 用户名密码凭据仅提供到 SAP 系统; 连接的身份验证它们不提供任何安全性上通过连接交换的数据。 不能同时使用 SNC 和用户名称密码凭据。  

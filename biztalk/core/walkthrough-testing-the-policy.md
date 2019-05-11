@@ -1,5 +1,5 @@
 ---
-title: 演练： 测试策略 |Microsoft Docs
+title: 演练：测试策略 |Microsoft Docs
 ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
@@ -12,32 +12,32 @@ caps.latest.revision: 23
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0ddf9dcc459fbee7494a913846f1c9d2a7137579
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d6c969f6f0f36237fb48b015d5ff9eebea036d77
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001760"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395984"
 ---
-# <a name="walkthrough-testing-the-policy"></a>演练： 测试策略
-本演练中提供的测试中创建的策略的分步过程[演练： 创建简单业务策略](../core/walkthrough-creating-a-simple-business-policy.md)演练。  
+# <a name="walkthrough-testing-the-policy"></a>演练：测试策略
+本演练提供了分步操作过程中创建的策略测试[演练：创建简单业务策略](../core/walkthrough-creating-a-simple-business-policy.md)演练。  
 
-## <a name="prerequisites"></a>必要條件  
- 必须完成[演练： 创建简单业务策略](../core/walkthrough-creating-a-simple-business-policy.md)演练在执行本演练之前。  
+## <a name="prerequisites"></a>先决条件  
+ 必须完成[演练：创建简单业务策略](../core/walkthrough-creating-a-simple-business-policy.md)演练在执行本演练之前。  
 
 ## <a name="overview-of-this-walkthrough"></a>本演练概述  
- 本概览包含两个过程，如下表所述。  
+ 本演练包含两个过程，如下表中所述。  
 
 |过程标题|过程说明|  
 |---------------------|---------------------------|  
 |若要创建测试文件|提供了用于创建两个示例 XML 文件，其中的值为 400 Quantity 字段的分步说明 (\<= 500)，另一个为 700 (> 500) 的 Quantity 字段的值。|  
-|测试 ProcessPurchaseOrder 策略|提供使用业务规则编辑器来测试该策略的逐步说明。|  
+|若要测试 ProcessPurchaseOrder 策略|提供用于测试使用业务规则编辑器的策略的分步说明。|  
 
 ### <a name="to-create-the-test-files"></a>若要创建测试文件  
 
 1.  上**启动**菜单中，打开**记事本**。  
 
-2.  将下列 XML 复制到记事本中：  
+2.  将以下 XML 复制到记事本：  
 
     ```  
     <ns0:PurchaseOrder xmlns:ns0="http://EAISolution.PurchaseOrder">  
@@ -64,7 +64,7 @@ ms.locfileid: "37001760"
 
 7.  在“文件”  菜单上，单击“新建” 。  
 
-8.  将下列 XML 复制到记事本中：  
+8.  将以下 XML 复制到记事本：  
 
     ```  
     <ns0:PurchaseOrder xmlns:ns0="http://EAISolution.PurchaseOrder">  
@@ -91,7 +91,7 @@ ms.locfileid: "37001760"
 
 13. 关闭记事本。  
 
-### <a name="to-test-the-processpurchaseorder-policy"></a>测试 ProcessPurchaseOrder 策略  
+### <a name="to-test-the-processpurchaseorder-policy"></a>若要测试 ProcessPurchaseOrder 策略  
 
 1.  上**启动**菜单中，打开**业务规则编辑器**。 如果你有业务规则编辑器已打开，请按 f5 键刷新。  
 
@@ -108,7 +108,7 @@ ms.locfileid: "37001760"
 
 5.  单击**测试**。  
 
-6.  查看“输出”窗口中的输出。 查看“来自第一个测试的输出分析 (samplepo.xml)”部分，它解释了您所看到的输出。  
+6.  查看输出窗口中的输出。 请参阅"分析 (samplepo.xml) 的第一个测试的输出"部分，解释了您所看到的输出。  
 
 7.  打开**SamplePO.xml**记事本和通知中的值**状态**字段设置为**已批准**。  
 
@@ -118,16 +118,16 @@ ms.locfileid: "37001760"
 
 10. 选择**SamplePO2.xml**文件之前，创建，然后单击**打开**。  
 
-11. 单击**测试**。 查看“来自第二个测试的输出分析 (samplepo2.xml)”部分，它解释了您所看到的输出。  
+11. 单击**测试**。 请参阅"第二个测试 (samplepo2.xml) 的输出分析"部分，解释了您所看到的输出。  
 
 12. 打开**SamplePO2.xml**文件在记事本中，可以看到的值**状态**字段是仍**XYZ**。  
 
-## <a name="analysis-of-the-output-from-the-first-test-samplepoxml"></a>来自第一个测试的输出分析 (samplepo.xml)  
+## <a name="analysis-of-the-output-from-the-first-test-samplepoxml"></a>从第一个测试 (samplepo.xml) 的输出分析  
 
 > [!NOTE]
->  输出文本为粗体并且在输出文本后跟有解释。  
+>  输出文本以粗体显示，跟有解释输出文本。  
 
- **规则集的规则引擎跟踪： ProcessPurchaseOrder 2006 年 8 月 31 日下午 1:33:10**  
+ **规则集的规则引擎跟踪：ProcessPurchaseOrder 2006 年 8 月 31 日下午 1:33:10**  
 
  执行策略的规则引擎跟踪**ProcessPurchaseOrder**在 2006 年 8 月 31 日开始的 1:33:10 PM。  
 
@@ -135,13 +135,13 @@ ms.locfileid: "37001760"
 
  **规则引擎实例标识符： bc4f1cf5-e9a2-49d0-9cdd-76a2ac057240**  
 
- **规则集名称： ProcessPurchaseOrder**  
+ **规则集名称：ProcessPurchaseOrder**  
 
- **操作： 断言**  
+ **操作：Assert**  
 
- **对象类型： TypedXmlDocument:PurchaseOrder**  
+ **对象类型：TypedXmlDocument:PurchaseOrder**  
 
- **对象实例标识符： 14626574**  
+ **对象实例标识符：14626574**  
 
  当您单击**测试**，将发生以下情况：  
 
@@ -159,38 +159,38 @@ ms.locfileid: "37001760"
 
    **规则引擎实例标识符： bc4f1cf5-e9a2-49d0-9cdd-76a2ac057240**  
 
-   **规则集名称： ProcessPurchaseOrder**  
+   **规则集名称：ProcessPurchaseOrder**  
 
-   **操作： 断言**  
+   **操作：Assert**  
 
-   **对象类型： TypedXmlDocument:PurchaseOrder: / PurchaseOrder**  
+   **对象类型：TypedXmlDocument:PurchaseOrder:/PurchaseOrder**  
 
-   **对象实例标识符： 64530307**  
+   **对象实例标识符：64530307**  
 
    **事实活动 2006 年 8 月 31 日下午 1:33:10**  
 
    **规则引擎实例标识符： bc4f1cf5-e9a2-49d0-9cdd-76a2ac057240**  
 
-   **规则集名称： ProcessPurchaseOrder**  
+   **规则集名称：ProcessPurchaseOrder**  
 
-   **操作： 断言**  
+   **操作：Assert**  
 
-   **对象类型： TypedXmlDocument:PurchaseOrder: / PurchaseOrder/项**  
+   **对象类型：TypedXmlDocument:PurchaseOrder:/PurchaseOrder/Item**  
 
-   **对象实例标识符： 43901854**  
+   **对象实例标识符：43901854**  
 
-6. 规则引擎将确定哪些子**TypedXmlDocument**对象以创建基于在规则中定义的 XPath 选择器。 在生成业务规则编辑器中的规则时，XPath 选择器值默认为在所选节点上方的节点**XML 架构**在事实浏览器选项卡。 XPath 字段值默认为所选节点本身，相对于其父节点。 但是，如果所选节点具有子节点，则只创建指向所选节点的 XPath 选择器绑定，而不创建任何 XPath 字段绑定。  
+6. 规则引擎将确定哪些子**TypedXmlDocument**对象以创建基于在规则中定义的 XPath 选择器。 在生成业务规则编辑器中的规则时，XPath 选择器值默认为在所选节点上方的节点**XML 架构**在事实浏览器选项卡。 XPath 字段值默认为所选节点本身，相对于其父节点。 但是，如果您选择的节点没有子级，仅 XPath 选择器绑定不创建为指向的节点，选择，并且不创建任何 XPath 字段绑定。  
 
-7. 下表显示了 XPath 选择器和 XPath 字段绑定中使用的字段的值**ProcessPurchaseOrder**策略。 （该策略只具有一个规则，即 ApprovalRule。）  
+7. 下表显示了 XPath 选择器和 XPath 字段绑定中使用的字段的值**ProcessPurchaseOrder**策略。 （该策略具有只有一个规则，即 ApprovalRule。）  
 
-| 字段名称 |                                                             XPath 选择器                                                              |                    XPath 字段                     | XPath 选择器（简化形式） | XPath 字段<br /><br /> （简化形式） |
+| 字段名称 |                                                             XPath 选择器                                                              |                    XPath 字段                     | XPath 选择器 （简化形式） | XPath 字段<br /><br /> （简化的形式） |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|----------------------------------|-------------------------------------------|
-|  Quantity  | /\*[本地名称 （) = 'PurchaseOrder' and namespace-uri （) ='http://EAISolution.PurchaseOrder'] /\*[本地名称 （) = Item and namespace-uri （) ='] | \*[本地名称 （) 的数量 and namespace-uri （) = = '] |       / PurchaseOrder/项        |                 Quantity                  |
-|   “登录属性”   |                       /\*[本地名称 （) = 'PurchaseOrder' and namespace-uri （) ='<http://EAISolution.PurchaseOrder>']                        |  \*[本地名称 （) = 'Status' and namespace-uri （) = ']  |          / PurchaseOrder          |                  “登录属性”                   |
+|  Quantity  | /\*[local-name()='PurchaseOrder' and namespace-uri()='http://EAISolution.PurchaseOrder']/\*[local-name()='Item' and namespace-uri()=''] | \*[local-name()='Quantity' and namespace-uri()=''] |       /PurchaseOrder/Item        |                 Quantity                  |
+|   “登录属性”   |                       /\*[local-name()='PurchaseOrder' and namespace-uri()='<http://EAISolution.PurchaseOrder>']                        |  \*[local-name()='Status' and namespace-uri()='']  |          /PurchaseOrder          |                  “登录属性”                   |
 
 <!---Loc Comment: Please, verify strucutre in line 183 and 184--->
 
-#### <a name="to-view-the-xpath-selector-and-xpath-field-bindings-for-the-quantity-and-status-fields"></a>查看“数量”字段和“状态”字段的 Xpath 选择器和 Xpath 字段绑定  
+#### <a name="to-view-the-xpath-selector-and-xpath-field-bindings-for-the-quantity-and-status-fields"></a>若要查看的数量和状态字段的 Xpath 选择器和 Xpath 字段绑定  
 
 1. 在策略浏览器窗口中，展开**策略**，展开**ProcessPurchaseOrder**，然后展开**版本 1.0**。  
 
@@ -211,77 +211,77 @@ ms.locfileid: "37001760"
 
  **规则引擎实例标识符： bc4f1cf5-e9a2-49d0-9cdd-76a2ac057240**  
 
- **规则集名称： ProcessPurchaseOrder**  
+ **规则集名称：ProcessPurchaseOrder**  
 
- **测试表达式： TypedXmlDocument:PurchaseOrder:/PurchaseOrder/Item.Quantity < = 500**  
+ **测试表达式：TypedXmlDocument:PurchaseOrder:/PurchaseOrder/Item.Quantity <= 500**  
 
- **左操作数的值： 400**  
+ **左的操作数的值：400**  
 
- **右操作数的值： 500**  
+ **右操作数的值：500**  
 
- **测试结果： True**  
+ **测试结果：True**  
 
  **议程更新 2006 年 8 月 31 日下午 1:33:10**  
 
  **规则引擎实例标识符： bc4f1cf5-e9a2-49d0-9cdd-76a2ac057240**  
 
- **规则集名称： ProcessPurchaseOrder**  
+ **规则集名称：ProcessPurchaseOrder**  
 
- **操作： 添加**  
+ **操作：添加**  
 
- **规则名称： ApprovalRule**  
+ **规则名称：ApprovalRule**  
 
- **冲突解决标准： 0**  
+ **冲突解决标准：0**  
 
- 规则引擎使用三阶段的算法（条件评估-冲突解决-执行操作）来执行策略。 在条件评估阶段中，规则引擎中的策略中的所有规则的条件的计算结果，并添加其条件计算结果为规则`true`到该议程。 在此简单示例中， **ProcessPurchaseOrder**策略具有只有一个规则**ApprovalRule**。 因此，规则引擎计算条件的结果**数量 < = 500**，在**ApprovalRule**使用的值**Quantity**字段中提交的 XML 文档，这是**400**。 上面的输出显示左操作数、右操作数和测试结果的值。  
+ 规则引擎使用三个阶段条件评估-冲突解决-操作执行算法来执行策略。 在条件评估阶段中，规则引擎中的策略中的所有规则的条件的计算结果，并添加其条件计算结果为规则`true`到该议程。 在此简单示例中， **ProcessPurchaseOrder**策略具有只有一个规则**ApprovalRule**。 因此，规则引擎计算条件的结果**数量 < = 500**，在**ApprovalRule**使用的值**Quantity**字段中提交的 XML 文档，这是**400**。 上面的输出显示左的操作数、 右操作数和测试结果的值。  
 
- 在第二个阶段中，冲突解决标准阶段，其条件评估结果为规则`true`添加到议程中根据优先级顺序。 在此方案中，添加了规则引擎**ApprovalRule**到该议程因为的条件**ApprovalRule**计算结果为`true`。 上面的输出中显示冲突解决标准是只在规则的优先级 (**ApprovalRule**)。 如果单击**ApprovalRule**策略浏览器窗口中的节点，您可以看到值**优先级**上作为属性窗口中的规则的属性**0**，这是规则的默认值。 如果您在某个策略中具有多个规则，并且想要确保一个规则中的操作在另一个规则中的操作后执行，则应相应设置优先级。 该数字越大，规则的优先级就越高。  
+ 在第二个阶段中，冲突解决标准阶段，其条件评估结果为规则`true`添加到议程中根据优先级顺序。 在此方案中，添加了规则引擎**ApprovalRule**到该议程因为的条件**ApprovalRule**计算结果为`true`。 上面的输出中显示冲突解决标准是只在规则的优先级 (**ApprovalRule**)。 如果单击**ApprovalRule**策略浏览器窗口中的节点，您可以看到值**优先级**上作为属性窗口中的规则的属性**0**，这是规则的默认值。 如果在策略中，有多个规则，并且你想要确保在另一个规则中的操作之后要执行一条规则中的操作，应相应设置优先级。 数字越大，优先级越高。  
 
  **规则触发 2006 年 8 月 31 日下午 1:33:10**  
 
  **规则引擎实例标识符： bc4f1cf5-e9a2-49d0-9cdd-76a2ac057240**  
 
- **规则集名称： ProcessPurchaseOrder**  
+ **规则集名称：ProcessPurchaseOrder**  
 
- **规则名称： ApprovalRule**  
+ **规则名称：ApprovalRule**  
 
- **冲突解决标准： 0**  
+ **冲突解决标准：0**  
 
- 在最后一个阶段（执行操作阶段）中，规则引擎将开始执行规则中的操作。 中的一个操作**ApprovalRule**，用于设置的值**状态**字段中为提交的 XML 文档**已批准**。  
-
- **事实活动 2006 年 8 月 31 日下午 1:33:10**  
-
- **规则引擎实例标识符： bc4f1cf5-e9a2-49d0-9cdd-76a2ac057240**  
-
- **规则集名称： ProcessPurchaseOrder**  
-
- **操作： 收回**  
-
- **对象类型： TypedXmlDocument:PurchaseOrder**  
-
- **对象实例标识符： 14626574**  
+ 在最后一个阶段，操作执行阶段中，规则引擎开始执行规则中的操作。 中的一个操作**ApprovalRule**，用于设置的值**状态**字段中为提交的 XML 文档**已批准**。  
 
  **事实活动 2006 年 8 月 31 日下午 1:33:10**  
 
  **规则引擎实例标识符： bc4f1cf5-e9a2-49d0-9cdd-76a2ac057240**  
 
- **规则集名称： ProcessPurchaseOrder**  
+ **规则集名称：ProcessPurchaseOrder**  
 
- **操作： 收回**  
+ **操作：收回**  
 
- **对象类型： TypedXmlDocument:PurchaseOrder: / PurchaseOrder/项**  
+ **对象类型：TypedXmlDocument:PurchaseOrder**  
 
- **对象实例标识符： 43901854**  
+ **对象实例标识符：14626574**  
 
  **事实活动 2006 年 8 月 31 日下午 1:33:10**  
 
  **规则引擎实例标识符： bc4f1cf5-e9a2-49d0-9cdd-76a2ac057240**  
 
- **规则集名称： ProcessPurchaseOrder**  
+ **规则集名称：ProcessPurchaseOrder**  
 
- **操作： 收回**  
+ **操作：收回**  
 
- **对象类型： TypedXmlDocument:PurchaseOrder: / PurchaseOrder**  
+ **对象类型：TypedXmlDocument:PurchaseOrder:/PurchaseOrder/Item**  
+
+ **对象实例标识符：43901854**  
+
+ **事实活动 2006 年 8 月 31 日下午 1:33:10**  
+
+ **规则引擎实例标识符： bc4f1cf5-e9a2-49d0-9cdd-76a2ac057240**  
+
+ **规则集名称：ProcessPurchaseOrder**  
+
+ **操作：收回**  
+
+ **对象类型：TypedXmlDocument:PurchaseOrder:/PurchaseOrder**  
 
  **对象实例标识符：** 64530307  
 
@@ -292,28 +292,28 @@ ms.locfileid: "37001760"
 
  **规则引擎实例标识符： b749d2fd-a883-4c2f-9974-5cf688010622**  
 
- **规则集名称： ProcessPurchaseOrder**  
+ **规则集名称：ProcessPurchaseOrder**  
 
- **测试表达式： TypedXmlDocument:PurchaseOrder:/PurchaseOrder/Item.Quantity < = 500**  
+ **测试表达式：TypedXmlDocument:PurchaseOrder:/PurchaseOrder/Item.Quantity <= 500**  
 
- **左操作数的值： 700**  
+ **左的操作数的值：700**  
 
- **右操作数的值： 500**  
+ **右操作数的值：500**  
 
  **测试结果：** False  
 
- 规则引擎计算条件 (**数量 < = 500**) 中**ApprovalRule**使用单个**项**对象。 您可以看到左的操作数的值是的值**Quantity** XML 文档中的元素**700**。 测试结果`false`因为**700 < = 500**，因此，该规则不会添加到规则引擎的议程。 议程中没有任何规则。 因此，没有任何操作来执行和的值**状态**字段保持**XYZ**。  
+ 规则引擎计算条件 (**数量 < = 500**) 中**ApprovalRule**使用单个**项**对象。 您可以看到左的操作数的值是的值**Quantity** XML 文档中的元素**700**。 测试结果`false`因为**700 < = 500**，因此，该规则不会添加到规则引擎的议程。 议程中没有规则。 因此，没有任何操作来执行和的值**状态**字段保持**XYZ**。  
 
 ## <a name="comments"></a>注释  
 
--   建议您在客户端应用程序（例如 BizTalk 应用程序）中使用策略之前对策略进行测试。  
+-   我们建议你使用如 BizTalk 应用程序的客户端应用程序之前测试策略。  
 
 -   在您测试使用与数据库事实的策略**DataConnection**绑定在业务规则编辑器**DataConnection**对象将自动为您生成。 但是，在通过调用同一策略从业务流程通过使用**调用规则**形状，无**DataConnection**对象自动传递到该策略。 应创建**DataConnection**业务流程中的对象并将其作为参数传递或创建断言事实检索器组件**DataConnection**对象，并配置要使用的策略事实检索器组件。  
 
 -   若要测试使用.NET 事实的策略，应创建事实创建器组件，并指定它在**选择事实**对话框。 有关创建事实创建器的详细信息，请参阅[如何创建事实检索器](../core/how-to-create-a-fact-retriever.md)。 当该策略会使用数据库事实数据时，可以执行相同的操作 (**TypedDataConnection**或**TypedDataTable**或**TypedDataRow**) 或 XML 事实 (**TypedXmlDocument**)。  
 
 ## <a name="next-steps"></a>后续步骤  
- 现在，已完成本演练中，执行[演练： 从业务流程调用策略](../core/walkthrough-invoking-the-policy-from-an-orchestration.md)演练中，为你提供分步说明，用于调用**ProcessPurchaseOrder**从业务流程的策略。  
+ 现在，已完成本演练中，执行[演练：从业务流程调用策略](../core/walkthrough-invoking-the-policy-from-an-orchestration.md)演练中，为您提供用于调用的分步说明**ProcessPurchaseOrder**从业务流程的策略。  
 
 ## <a name="see-also"></a>请参阅  
  [策略测试跟踪输出](../core/policy-test-trace-output.md)   

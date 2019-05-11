@@ -22,12 +22,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4896256555ea6b721d917c992c9c41fd3737f101
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 65b23d912c4592bcb1ae30b7cc8fb75c35273e92
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018322"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371587"
 ---
 # <a name="key-features-in-the-siebel-adapter"></a>Siebel 适配器的主要功能
 本部分列出了中的新增功能[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]。  

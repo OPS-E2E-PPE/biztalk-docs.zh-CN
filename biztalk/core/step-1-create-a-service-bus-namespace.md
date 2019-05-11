@@ -1,5 +1,5 @@
 ---
-title: 步骤 1： 创建服务总线 Namespace |Microsoft 文档
+title: 第 1 步：创建服务总线 Namespace |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,31 +12,31 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f4d7630316f72fd63bac5ce7127b5451683e2f97
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8d8986f729d48fd25066bd166749d6bfb2b7ed3c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276757"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392819"
 ---
-# <a name="step-1-create-a-service-bus-namespace"></a>步骤 1： 创建服务总线 Namespace
-在此步骤中，你将创建[!INCLUDE[winazure](../includes/winazure-md.md)][!INCLUDE[sb](../includes/sb-md.md)]命名空间。 你将使用此命名空间托管用于从 Salesforce 接收机会通知的中继终结点。 在创建此解决方案的过程的后面部分，将使用此中继终结点将通知消息接收到 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 系统中。  
+# <a name="step-1-create-a-service-bus-namespace"></a>第 1 步：创建服务总线 Namespace
+在此步骤中，您将创建[!INCLUDE[winazure](../includes/winazure-md.md)][!INCLUDE[sb](../includes/sb-md.md)]命名空间。 将使用此命名空间来托管用于从 Salesforce 接收机会通知的中继终结点。 更高版本的过程中创建此解决方案，您将使用此中继终结点来接收通知消息到[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]系统。  
   
-### <a name="to-create-a-includesbincludessb-mdmd-namespace"></a>创建 [!INCLUDE[sb](../includes/sb-md.md)] 命名空间  
+### <a name="to-create-a-includesbincludessb-mdmd-namespace"></a>若要创建[!INCLUDE[sb](../includes/sb-md.md)]命名空间  
   
-1.  登录到[http://manage.windowsazure.com](http://manage.windowsazure.com)使用你的 Microsoft 帐户。  
+1.  登录到[ http://manage.windowsazure.com ](http://manage.windowsazure.com)使用你的 Microsoft 帐户。  
   
-2.  在页面底部，单击**新建**，**应用程序服务**， **Service Bus 中继**，，然后**快速创建**。  
+2.  在页面底部，单击**新建**，**应用服务**，**服务总线中继**，然后**快速创建**。  
   
-3.  输入作为命名空间`BtsSalesforce`选择离你当前的地理位置区域。 单击**创建中继**。  
+3.  输入的命名空间`BtsSalesforce`并选择离你当前的地理位置最近的区域。 单击**创建中继**。  
   
     > [!CAUTION]
-    >  这必须是全球唯一的命名空间。 因此，你必须使用本教程中提及的命名空间以外的命名空间。  
+    >  此命名空间必须是全局唯一。 因此，必须使用一个在本教程中所述之外的命名空间。  
   
     > [!NOTE]
-    >  请注意，中继并不作为操作的一部分创建，只有命名空间才是如此。 我们将配置的接收位置时，将中继终结点创建本教程中稍后**SB 消息**适配器。  
+    >  请注意，中继不作为操作的一部分创建，只有命名空间。 我们配置的接收位置时，稍后在本教程中创建的中继终结点**SB 消息**适配器。  
   
-4.  创建命名空间后，将状态设置为**Active**。 活动状态后，你可以选择的命名空间并单击**访问密钥**要获取有关如何连接到的详细信息的页的底部**BtsSalesforce**命名空间，包括的值**默认用户**和**默认密钥**。 在本教程的后面部分，你将需要这些详细信息。  
+4.  创建命名空间后，将状态设置为**Active**。 一旦激活状态，可以选择的命名空间，单击**访问密钥**底部的页后，可以获取有关如何连接到详细信息**BtsSalesforce**命名空间，其中包括的值**默认用户**并**默认密钥**。 本教程的后面，将需要这些详细信息。  
   
-## <a name="see-also"></a>另请参阅  
- [教程 6： 将与 Salesforce 集成 BizTalk Server 2013](Tutorial:%20Integrating%20BizTalk%20Server%202013%20with%20Salesforce.md)
+## <a name="see-also"></a>请参阅  
+ [教程 6:将 BizTalk Server 2013 与 Salesforce 集成](Tutorial:%20Integrating%20BizTalk%20Server%202013%20with%20Salesforce.md)

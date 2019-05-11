@@ -1,5 +1,5 @@
 ---
-title: 部署应用程序的已知问题 |Microsoft 文档
+title: 部署应用程序的已知问题 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,48 +12,48 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b7fa139469ea8718c3d4430235ffb576195e67a7
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: ee4bc6f54ad0ce3c355d8d6aad9a09e24387ec7e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26008230"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395823"
 ---
 # <a name="known-issues-with-deploying-an-application"></a>部署应用程序的已知的问题
 ## <a name="deploying-a-biztalk-application"></a>部署 BizTalk 应用程序  
  **部署更新的应用程序需要更正的引用**  
   
- 如果要部署一个全新的应用程序以替换现有的应用程序，必须更正其他应用程序与要替换的应用程序之间的所有引用。  
+ 如果部署全新的应用程序以替换现有应用程序，你必须更正其他应用程序以及要替换的应用程序之间的所有引用。  
   
- **使用 Visual Studio 部署应用程序可以停止应用程序**  
+ **使用 Visual Studio 部署应用程序，可以停止应用程序**  
   
 > [!NOTE]  
->  我们建议你避免使用 Visual Studio 部署到生产环境的应用程序。  
+>  我们建议您避免使用 Visual Studio 部署到生产环境的应用程序。  
   
- 如果你使用 Visual Studio 部署到生产环境的应用程序并且重新启动主机实例选项部署应用程序，包括那些不与相关联时，则设置为 True 在项目属性中，所有主机实例将重新启动此应用程序。 这样会停止在本地计算机的任何主机实例上运行的所有其他应用程序。  
+ 如果你使用 Visual Studio 部署到生产环境的应用程序并重新启动主机实例选项设置为在项目属性中，所有主机实例，则返回 True 部署包括那些不与相关联的应用程序时将重新启动此应用程序。 这将停止所有本地计算机上的任何主机实例运行其他应用程序。  
   
 ## <a name="adding-artifacts-to-a-biztalk-application"></a>将项目添加到 BizTalk 应用程序  
- **移动项目可以移动依赖关系**  
+ **移动项目可以移动的依赖项**  
   
- 当你将项目移到新的应用程序时，它在其具有依赖关系的任何其他项目也被移动，除非新的应用程序具有对包含已移动的项目取决于项目的应用程序的引用。 同样，与移动项目有依存关系的所有项目也会被移动，除非包含这些项目的应用程序具有对新应用程序的引用。 移动项目时，系统会显示一起移动的其他项目的列表。 有关移动项目的说明，请参阅[如何将项目移到不同的应用程序](http://go.microsoft.com/fwlink/?LinkId=154999)(http://go.microsoft.com/fwlink/?LinkId=154999)。  
+ 当将项目移到新的应用程序时，它在其具有依赖关系的任何其他项目也被移动，除非新的应用程序具有对包含取决于移动的项目的项目的应用程序的引用。 此外，移动项目有依赖关系的任何项目也将被移动，除非其包含的应用程序具有对新应用程序的引用。 当移动项目，将向您显示一起移动的其他项目的列表。 有关移动项目的说明，请参阅[如何将项目移到不同的应用程序](http://go.microsoft.com/fwlink/?LinkId=154999)(http://go.microsoft.com/fwlink/?LinkId=154999)。  
   
 ## <a name="exporting-a-biztalk-application"></a>导出 BizTalk 应用程序  
  **安装 Windows Vista 上的.msi 文件时，可以显示不正确错误**  
   
- 当安装.msi 程序包导出使用[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]在 BizTalk Server 中在 Windows Vista® 上运行，你可能会收到以下不正确的错误，"安装程序遇到意外的错误安装此包。 这可能表示此程序包有问题。 错误代码为 2869。” 若要更正此错误，首次导入包使用 BizTalk Server 和重新导出和安装包。  
+ 当使用安装.msi 程序包导出[!INCLUDE[btsBizTalkServer2006](../includes/btsbiztalkserver2006-md.md)]Windows Vista® 上运行的 BizTalk Server，可能会收到以下错误，"安装程序遇到意外的错误安装此包。 这可能表示此软件包存在问题。 错误代码为 2869年。" 若要更正此错误，首先使用 BizTalk Server 将包导入然后重新导出并安装包。  
   
 ## <a name="importing-a-biztalk-application"></a>导入 BizTalk 应用程序  
- **密码不会从绑定添加到应用程序的文件**  
+ **密码不会从绑定文件添加到应用程序**  
   
- 为安全起见，在导出应用程序的过程中，密码从应用程序绑定中删除。 不过，密码并未从已添加到应用程序的绑定文件中删除。 在导入应用程序后，您需要重新配置密码，以便应用程序可以正常运行。 可以通过编辑绑定文件或通过使用管理控制台执行此操作。 有关编辑绑定文件的详细信息，请参阅[自定义绑定文件](http://go.microsoft.com/fwlink/?LinkId=155000)(http://go.microsoft.com/fwlink/?LinkId=155000)。 有关配置的适配器的安全性的详细信息，请参阅[使用适配器](http://go.microsoft.com/fwlink/?LinkId=155001)(http://go.microsoft.com/fwlink/?LinkId=155001)。  
+ 出于安全原因，在应用程序导出过程中不会保留密码从应用程序绑定。 它们不会但是，删除从绑定文件已添加到应用程序中。 在导入应用程序之后, 将需要重新配置密码，以便对函数应用程序。 可以通过编辑绑定文件或使用管理控制台执行此操作。 有关编辑绑定文件的详细信息，请参阅[自定义绑定文件](http://go.microsoft.com/fwlink/?LinkId=155000)(http://go.microsoft.com/fwlink/?LinkId=155000)。 有关配置适配器的安全性的详细信息，请参阅[使用适配器](http://go.microsoft.com/fwlink/?LinkId=155001)(http://go.microsoft.com/fwlink/?LinkId=155001)。  
   
  **BizTalk Server 不会回滚已编写脚本的导入或安装**  
   
- 如果导入失败，则 BizTalk Server 将回滚所有导入操作（自定义脚本执行的所有操作除外）。 这也是如此安装和卸载操作。  
+ 如果导入失败，BizTalk Server 将回滚所有导入操作除外自定义脚本执行的任何操作。 这也是如此的安装和卸载操作。  
   
- **缺失的架构可能不会报告导入后**  
+ **缺少架构可能不会导入后报告**  
   
- 如果您在一个应用程序中为发送端口创建了筛选器，此应用程序使用另一个应用程序中的属性架构，然后将第一个应用程序导入到新 BizTalk 组中，则您将收到缺少架构的警告，并且在安装和启动该应用程序时筛选功能将无法正常运行。 解决这个问题的方法是：先导入包含该架构的应用程序，然后再安装不包含该架构的应用程序。  
+ 如果一个应用程序在另一个应用程序中使用的属性架构中创建的发送端口的筛选器，然后将第一个应用程序导入新的 BizTalk 组，不会收到的警告，该架构缺少，并且筛选功能将不正常时安装和启动应用程序。 可以通过导入包含架构，然后再安装不包含架构的应用程序的应用程序来更正此问题。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [部署应用程序](../technical-guides/deploying-an-application.md)

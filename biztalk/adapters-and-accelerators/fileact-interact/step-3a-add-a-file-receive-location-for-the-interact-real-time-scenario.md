@@ -1,5 +1,5 @@
 ---
-title: 步骤 3A： 添加一个文件接收位置交互实时方案 |Microsoft 文档
+title: 步骤 3a:添加 FILE 接收位置 InterAct 实时方案 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,44 +12,44 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6c29b3eb291b1b36daab5d77aae74f6055a3c738
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 776a5b8c708e9b86c6bd844fc2dcb46aed9efe40
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22224557"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65365673"
 ---
-# <a name="step-3a-add-a-file-receive-location-for-the-interact-real-time-scenario"></a>步骤 3A： 添加一个文件接收位置交互实时方案
-设置使您能够轻松地删除用于验证测试文件的接收位置。 此位置用于测试的方案。  
+# <a name="step-3a-add-a-file-receive-location-for-the-interact-real-time-scenario"></a>步骤 3a:添加 FILE 接收位置 InterAct 实时方案
+设置接收位置，可用于轻松地删除测试文件进行验证。 此位置用于测试的方案。  
   
-## <a name="add-a-file-receive-location"></a>添加文件接收位置  
+## <a name="add-a-file-receive-location"></a>添加 FILE 接收位置  
   
 1.  启动**BizTalk Server 管理**。  
   
-2.  在控制台树中，展开 BizTalk 组中，，然后展开你想要创建接收端口 BizTalk 应用程序。  
+2.  在控制台树中，依次展开 BizTalk 组，和你想要创建的接收端口的 BizTalk 应用程序。  
   
-3.  右键单击**接收端口**，指向**新建**，然后单击**单向接收端口。**  
+3.  右键单击**接收端口**，依次指向**新建**，然后单击**单向接收端口。**  
   
-4.  在**接收端口属性**窗口中，名称接收端口， **Tutorial_IA_InputRequest_RealTime**。  
+4.  在中**接收端口属性**窗口中，命名的接收端口， **Tutorial_IA_InputRequest_RealTime**。  
   
-5.  在**接收端口属性**窗口，请在**接收位置**选项卡上，单击**新建**。  
+5.  在中**接收端口属性**窗口，然后在**接收位置**选项卡上，单击**新建**。  
   
-6.  在**接收位置属性**窗口，请在**常规**选项卡上，从**传输类型**下拉列表中，选择**文件**，和然后单击**配置**。  
+6.  在中**接收位置属性**窗口，然后在**常规**选项卡上，从**传输类型**下拉列表中，选择**文件**，和然后单击**配置**。  
   
-7.  在**文件传输属性**对话框中，在**接收文件夹**框中，键入**C:\SWIFTAdapterTutorial\Interact\InputRequest_RealTime**，然后单击**确定**。  
+7.  在中**FILE 传输属性**对话框中**接收文件夹**框中，键入**C:\SWIFTAdapterTutorial\Interact\InputRequest_RealTime**，然后单击**确定**。  
   
-8.  在**接收位置属性**窗口，请在**常规**选项卡上，执行以下操作：  
+8.  在中**接收位置属性**窗口，然后在**常规**选项卡上，执行以下操作：  
   
-    |**使用此方法**|**若要执行此操作**|  
+    |**使用此**|**若要执行此操作**|  
     |------------------|--------------------|  
-    |**接收处理程序**|从下拉列表中选择**BizTalkServerApplication**。|  
-    |**接收管道**|从下拉列表中选择**XMLReceive**。|  
+    |**接收处理程序**|从下拉列表中，选择**BizTalkServerApplication**。|  
+    |**接收管道**|从下拉列表中，选择**XMLReceive**。|  
   
-9. 单击 **“确定”**。  
+9. 单击“确定” 。  
   
-## <a name="see-also"></a>另请参阅  
- [步骤 3： 创建发送和接收端口交互实时方案](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md)   
- [步骤 3B： 添加交互接收位置交互实时方案](../../adapters-and-accelerators/fileact-interact/step-3b-add-an-interact-receive-location-for-the-interact-real-time-scenario.md)   
- [步骤 3c： 添加要捕获的 Sw:HandleRequest 消息的文件发送端口交互实时方案](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-real-time-scenario.md)   
- [步骤 3D： 添加要捕获的 Sw:HandleResponse 消息的文件发送端口交互实时方案](../../adapters-and-accelerators/fileact-interact/step-3d-add-file-send-port-to-get-sw-handleresponse-message-for-interact.md)   
- [步骤 3E： 添加的交互发送端口交互实时方案](../../adapters-and-accelerators/fileact-interact/step-3e-add-an-interact-send-port-for-the-interact-real-time-scenario.md)
+## <a name="see-also"></a>请参阅  
+ [步骤 3：创建发送和接收端口 InterAct 实时方案](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md)   
+ [步骤 3b:添加 INTERACT 接收位置 InterAct 实时方案](../../adapters-and-accelerators/fileact-interact/step-3b-add-an-interact-receive-location-for-the-interact-real-time-scenario.md)   
+ [步骤 3c:添加 FILE 发送端口以捕获 sw: handlerequest 消息为 InterAct 实时方案](../../adapters-and-accelerators/fileact-interact/step-3c-add-file-send-port-to-get-sw-handlerequest-interact-real-time-scenario.md)   
+ [步骤 3D:添加 FILE 发送端口以捕获 sw: handleresponse 消息为 InterAct 实时方案](../../adapters-and-accelerators/fileact-interact/step-3d-add-file-send-port-to-get-sw-handleresponse-message-for-interact.md)   
+ [步骤 3E:添加 INTERACT 发送端口为 InterAct 实时方案](../../adapters-and-accelerators/fileact-interact/step-3e-add-an-interact-send-port-for-the-interact-real-time-scenario.md)

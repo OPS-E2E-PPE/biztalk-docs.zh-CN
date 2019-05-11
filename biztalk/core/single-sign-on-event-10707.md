@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10707 |Microsoft Docs
+title: 单一登录：Event 10707 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 773ba5034616742f7f63fbc90a848275587b3353
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e323f9b712e566278bf43224611b2d39e74dcecb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996726"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397275"
 ---
-# <a name="single-sign-on-event-10707"></a>单一登录： 事件 10707
+# <a name="single-sign-on-event-10707"></a>单一登录：事件 10707
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                                                                        |
@@ -30,15 +30,15 @@ ms.locfileid: "36996726"
 |  事件源   |                                                                                 ENTSSO                                                                                 |
 |    组件    |                                                                                  N\A                                                                                   |
 |  符号名称  |                                                                        SSO_WARN_PS_NO_APP_SYNC                                                                         |
-|  消息正文   | 此适配器的密码同步标志必须允许密码同步并且必须匹配全局标志。 请检查适配器标志和全局标志。%r<br /><br /> 适配器： %1 |
+|  消息正文   | 此适配器的密码同步标志必须允许密码同步，并且必须匹配全局标志。 检查适配器标志和全局 flags.%r<br /><br /> 适配器： %1 |
 
 ## <a name="explanation"></a>解释  
- 此警告事件表明此适配器的密码同步标志必须允许密码同步并且必须匹配全局标志。  
+ 此警告事件表明此适配器的密码同步标志必须允许密码同步，并且必须匹配全局标志。  
 
- 密码同步适配器的密码同步由两个标志控制，一个允许将密码发送到外部系统 (SSO_FLAG_FULL_SYNC_FROM_WINDOWS_TO_EXTERNAL)，另一个允许从外部系统接收密码 (SSO_FLAG_PARTIAL_SYNC_FROM_EXTERNAL_TO_DB)。 为成功进行密码同步，这些标志必须都设置为“全局标志”，也可以设置为特定适配器标志。 当外部密码同步适配器请求密码同步，并且这些标志未设置为“全局标志”和适配器标志时，将发出此警告事件。  
+ 一个由两个标志控制的密码同步适配器的密码同步，允许发送到外部系统 (SSO_FLAG_FULL_SYNC_FROM_WINDOWS_TO_EXTERNAL) 的密码，另一类允许接收来自外部系统 (SSO_FLAG_PARTIAL_ 密码SYNC_FROM_EXTERNAL_TO_DB)。 这些必须对于成功的密码同步设置这两个"全局标志"，还负责特定适配器标志。 外部密码同步适配器请求密码同步，并且这些标志设置为"全局标志"和适配器标志时，会发出此警告事件。  
 
 ## <a name="user-action"></a>用户操作  
- 若要解决此警告问题，请执行以下操作：  
+ 若要解决此警告，请执行以下操作：  
 
 -   使用 SSO Admin MMC 管理单元 (系统&#124;属性&#124;选项) 或命令行工具`ssomanage –enable winsync/extsync`来启用全局标志。  
 

@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 34e8cf9c1453b7a40f749e091d7ecdcef843d4e2
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e755a98cdc062e47eb7a2b9f6f2604ca4ec92b30
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000526"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65368442"
 ---
 # <a name="process-notification-messages-to-complete-specific-tasks-in-sql-using-biztalk-server"></a>进程通知消息，以完成特定任务中使用 BizTalk Server 的 SQL
 可以使用[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]接收通知的 SQL Server 数据库表的更改。 但是，适配器仅向你发送某些记录已插入、 更新或删除数据库表中的通知。 这些记录的任何后续处理必须由客户端应用程序本身进行处理。 本主题显示如何处理基于类型的通知接收到来自 SQL Server 数据库表中的记录上的基于方案的说明。  
@@ -197,7 +197,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
   
   请确保为每个逻辑端口中指定以下属性。 端口列中列出的名称是在业务流程中显示的端口的名称。  
   
-|端口|属性|  
+|Port|属性|  
 |----------|----------------|  
 |SQLNotifyPort|-设置**标识符**到*SQLNotifyPort*<br /><br /> -设置**类型**到*SQLNotifyPortType*<br /><br /> -设置**通信模式**到*单向*<br /><br /> -设置**通信方向**到*接收*|  
 |NotificationUpsertPort|-设置**标识符**到*NotificationUpsertPort*<br /><br /> -设置**类型**到*NotificationUpsertPortType*<br /><br /> -设置**通信模式**到*单向*<br /><br /> -设置**通信方向**到*发送*|  
@@ -217,7 +217,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
  现在必须生成 BizTalk 解决方案，并将其部署到[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 有关详细信息，请参阅[构建和运行业务流程](../../core/building-and-running-orchestrations.md)。
   
 ## <a name="configuring-the-biztalk-application"></a>配置 BizTalk 应用程序  
- 部署 BizTalk 项目后，将前面创建的业务流程下列出**业务流程**BizTalk Server 管理控制台窗格中的。 必须使用 BizTalk Server 管理控制台来配置应用程序。 有关演练，请参阅[演练： 部署基本 BizTalk 应用程序](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)。  
+ 部署 BizTalk 项目后，将前面创建的业务流程下列出**业务流程**BizTalk Server 管理控制台窗格中的。 必须使用 BizTalk Server 管理控制台来配置应用程序。 有关演练，请参阅[演练：部署基本 BizTalk 应用程序](Walkthrough:%20Deploying%20a%20Basic%20BizTalk%20Application.md)。  
   
  配置应用程序包括：  
   
@@ -233,7 +233,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
     |绑定属性|ReplTest1|  
     |----------------------|-----------|  
     |**InboundOperationType**|将此设置为**通知**。|  
-    |**NotificationStatement**|将此设置为：<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **注意：** 您必须专门的列名称在语句中指定此 SELECT 语句中所示。 此外，您必须始终指定表名称以及架构名称。 例如， `dbo.Employee`。|  
+    |**NotificationStatement**|将此设置为：<br /><br /> `SELECT Employee_ID, Name FROM dbo.Employee WHERE Status=0`<br /><br /> **注意：** 具体而言，必须指定在此所示的语句中的列名称的 SELECT 语句。 此外，您必须始终指定表名称以及架构名称。 例如，`dbo.Employee`。|  
     |**NotifyOnListenerStart**|将此设置为 **，则返回 True**。|  
   
      有关不同的绑定属性的详细信息，请参阅[了解关于 BizTalk Adapter for SQL Server 适配器绑定属性](../../adapters-and-accelerators/adapter-sql/read-about-the-biztalk-adapter-for-sql-server-adapter-binding-properties.md)。  
@@ -317,7 +317,7 @@ NotificationType.Equals("Insert") | NotificationType.Equals("Update")
 ## <a name="performing-complex-operations-after-receiving-notification-messages"></a>接收通知消息后执行复杂的操作  
  对于简单起见，更好地了解本主题中的业务流程将消息复制到不同的文件夹的通知类型。 但是，在实际方案中你可能想要执行更复杂的操作。 在此主题，并对其执行操作需要的生成中提供，可以执行类似的过程。 例如，可以更改业务流程，以在另一个表中插入记录，如果在 Employee 表的插入操作收到一条通知消息。 在这种情况下，您可以判定形状中的相应更改。  
   
- 中详细介绍了一个这样的方案[教程 2： 员工-采购订单流程使用 SQL 适配器](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)。  
+ 中详细介绍其中一种方案是[教程 2:员工-采购订单流程使用 SQL 适配器](../../adapters-and-accelerators/adapter-sql/tutorial-2-employee-purchase-order-process-using-the-sql-adapter.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [接收使用 BizTalk Server 的 SQL 查询通知](../../adapters-and-accelerators/adapter-sql/receive-sql-query-notifications-using-biztalk-server.md)

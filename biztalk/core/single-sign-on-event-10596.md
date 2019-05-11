@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10596 |Microsoft Docs
+title: 单一登录：Event 10596 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3a1e565ca3b96663e0ece5a2cf68c02d3258ac5d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f093968363a0c67d48e8e50e4bd0d44c45d9491a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37008790"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397839"
 ---
-# <a name="single-sign-on-event-10596"></a>单一登录： 事件 10596
+# <a name="single-sign-on-event-10596"></a>单一登录：事件 10596
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                                                                            |
@@ -28,12 +28,12 @@ ms.locfileid: "37008790"
 | 产品版本 |                                                                                         [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                                         |
 |    事件 ID     |                                                                                                                   10596                                                                                                                    |
 |  事件源   |                                                                                                                   ENTSSO                                                                                                                   |
-|    组件    |                                                                                                                    N/A                                                                                                                     |
+|    组件    |                                                                                                                    不可用                                                                                                                     |
 |  符号名称  |                                                                                                     SSO_WARN_TICKET_USER_NOT_IN_GROUP                                                                                                      |
-|  消息正文   | 无法兑换票证，因为要使用所颁发票证的用户不是应用程序用户帐户的成员。%r<br /><br /> 应用程序名称: %1 %r<br /><br /> 有关颁发票证: %2 %r<br /><br /> 应用程序用户： %3 |
+|  消息正文   | 无法兑换票证，因为要为其颁发票证的用户不是应用程序用户 account.%r 的成员<br /><br /> 应用程序名称: %1 %r<br /><br /> 有关颁发票证: %2 %r<br /><br /> 应用程序用户： %3 |
   
 ## <a name="explanation"></a>解释  
- 无法兑换票证，因为要使用所颁发票证的用户不是应用程序用户帐户的成员。  
+ 无法兑换票证，因为要为其颁发票证的用户不是应用程序用户帐户的成员。  
   
 ## <a name="user-action"></a>用户操作  
- 将票证重新颁发给属于应用程序用户帐户成员的用户。
+ 是 Application Users 帐户的成员的用户将票证重新颁发。

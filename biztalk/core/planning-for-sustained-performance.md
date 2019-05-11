@@ -1,5 +1,5 @@
 ---
-title: 规划持续性能 |Microsoft 文档
+title: 规划可持续性能 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,22 +16,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3cd0d87a5750aa506fb1e0b605d215e6229927c7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4eece626b48a1467127c836775b1680f11f59ff8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22264325"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395639"
 ---
-# <a name="planning-for-sustained-performance"></a>规划可维持性能
-本部分将介绍如何规划、测试和扩展 BizTalk Server 系统以获得最佳性能。  
+# <a name="planning-for-sustained-performance"></a>规划可持续性能
+本部分介绍如何规划、 测试和扩展 BizTalk Server 系统，以便获得最佳性能。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [项目规划阶段的建议](../core/project-planning-recommendations-by-phase.md)  
+-   [分阶段描述的项目规划建议](../core/project-planning-recommendations-by-phase.md)  
   
 -   [引擎性能特征](../core/engine-performance-characteristics.md)  
   
--   [跟踪的性能特征](../core/tracking-performance-characteristics.md)  
+-   [跟踪性能特征](../core/tracking-performance-characteristics.md)  
   
--   [缩放您的解决方案](../core/scaling-your-solutions.md)
+-   [缩放你的解决方案](../core/scaling-your-solutions.md)

@@ -1,5 +1,5 @@
 ---
-title: 教程 1： 开发 Echo 适配器 |Microsoft Docs
+title: 教程 1:开发 Echo 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3b1b1a4d0e0293ba26792508ea367c5e91cccec5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6ff9d3aa911785640cc0ea5f4d6e4deedc10d81c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977606"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363064"
 ---
-# <a name="tutorial-1-develop-the-echo-adapter"></a>教程 1： 开发 Echo 适配器
+# <a name="tutorial-1-develop-the-echo-adapter"></a>教程 1:开发 Echo 适配器
 在本教程中，将开发功能的适配器使用[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。 适配器模拟虚构的业务线系统，用于说明 WCF LOB 适配器 SDK 包括的主要功能的许多的操作：  
 
 - 同步入站  
@@ -59,10 +59,10 @@ EchoMainCategory
 
  以下是每个操作的定义：  
 
-|**名称**|**操作定义**|**Description**|**方向**|  
+|**名称**|**操作定义**|**说明**|**方向**|  
 |--------------|------------------------------|---------------------|-------------------|  
-|EchoMainCategory|类别|对操作进行分类。|N/A|  
-|Echo/EchoStrings|string [] EchoStrings(string data)|将传入的字符串回显到调用客户端按指定的次数。|出站|  
+|EchoMainCategory|Category|对操作进行分类。|不可用|  
+|Echo/EchoStrings|string[] EchoStrings(string data)|将传入的字符串回显到调用客户端按指定的次数。|出站|  
 |Echo/EchoGreetings|问候语 [] EchoGreetings(Greeting greeting)|将回显传入问候语对象到调用客户端按指定次数。|出站|  
 |Echo/EchoCustomGreetingFromFile|CustomGreeting EchoCustomGreetingFromFile(Uri greetingInstancePath)|通过从文件读取其实例回显问候语对象。 从预定义的 XSD 文件获取问候语对象的元数据。|出站|  
 |Echo/OnReceiveEcho|void OnReceiveEcho （Uri 路径，长时间内容）|回显的位置和长度的指定文件夹中删除的文件。|入站|  
@@ -71,7 +71,7 @@ EchoMainCategory
  该适配器公开以下适配器属性。  
 
 
-|            **名称**            | **类别** | **数据类型**  |                                                                                                              **Description**                                                                                                               |
+|            **名称**            | **类别** | **数据类型**  |                                                                                                              **说明**                                                                                                               |
 |--------------------------------|--------------|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |             Count              |     杂项     |  System.Int32  |                                                                    用于回显的输入指定次数的调用客户端。<br /><br /> 默认值 = 5                                                                     |
 |    EnableConnectionPooling     |     杂项     | System.Boolean | 用于启用或禁用连接池的适配器。<br /><br /> 默认值 = true，这意味着，在运行时引擎的启用连接池[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]。 |
@@ -81,7 +81,7 @@ EchoMainCategory
 ## <a name="connection-properties"></a>连接属性  
  Echo 适配器公开了以下连接属性。  
 
-|**名称**|**数据类型**|**Description**|  
+|**名称**|**数据类型**|**说明**|  
 |--------------|-------------------|---------------------|  
 |应用程序|System.String|LOB 系统中的应用程序名称。 此属性是用于演示目的。 Echo 适配器不涉及任何 LOB 系统。<br /><br /> 默认值 = lobapplication|  
 |EnableAuthentication|System.Boolean|为 true 时，适配器需要中用户名字段中的客户端凭据值。<br /><br /> 默认值 = false|  
@@ -91,7 +91,7 @@ EchoMainCategory
  [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]定义类和接口必须实现以支持特定功能的适配器的集合。 下表介绍这些类和接口，及其说明，以及何时实现它们。  
 
 
-|                       **类/接口**                       |                                                                                       **何时实现**                                                                                        |                                                                                      **Description**                                                                                       |
+|                       **类/接口**                       |                                                                                       **何时实现**                                                                                        |                                                                                      **说明**                                                                                       |
 |-----------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |       Microsoft.ServiceModel.Channels.Common.IConnection        |                                                                     如果您需要定义与目标系统的连接。                                                                     |                                                                        到目标系统中定义的连接。                                                                        |
 |    Microsoft.ServiceModel.Channels.Common.IConnectionFactory    |                                                                      如果需要创建与目标系统的连接。                                                                      |                                                                        创建与目标系统的连接。                                                                        |
@@ -112,7 +112,7 @@ EchoMainCategory
 
 - {Projectname}ConnectionUri.cs  
 
-  有关如何执行此操作的详细信息，请参阅[步骤 2： 将适配器和连接属性分类](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md)。  
+  有关如何执行此操作的详细信息，请参阅[步骤 2:将适配器和连接属性分类](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-2-categorize-the-adapter-and-connection-properties.md)。  
 
 ## <a name="see-also"></a>请参阅  
  [教程，了解 WCF LOB 适配器 SDK](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorials-to-learn-the-wcf-lob-adapter-sdk.md)

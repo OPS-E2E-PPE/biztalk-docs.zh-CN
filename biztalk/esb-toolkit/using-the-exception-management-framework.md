@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8146b3f2f9be6d076cfd7dddd651ee2c9bb4d3c6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 97af5b390fa3f2ba5255a28b77ec37ab5bec670f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991526"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396407"
 ---
 # <a name="using-the-exception-management-framework"></a>使用异常管理框架
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]使用异常的动态转换和路由进行通信故障 （例如，非部署映射或未返回映射名称的规则）。 当转换或路由过程失败时，ESB 创建一条异常消息，并将其提交到 Messagebox 数据库的直接绑定端口通过。 ESB 还实现了一个名为所有的发送端口。订阅和检索异常消息，并将其发布到 ESB 管理门户的异常。  

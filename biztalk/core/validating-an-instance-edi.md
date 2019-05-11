@@ -12,40 +12,40 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 58150705b504193a527be729028b00d4384325d6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 966c0323619985766eb39611c25fe813588b4082
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993934"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394047"
 ---
 # <a name="validating-an-instance-edi"></a>验证实例 (EDI)
-您可以在设计时验证针对其 EDI 架构实例。 为此，您可以使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 环境中的 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] XML 工具扩展。 验证的实例可以是单个事务集 （没有交换和组标头）、 是将单个事务集 （带有交换和组标头），包含的交换或具有多个事务集 （具有完整的批的交换交换和组标头）。  
+您可以在设计时验证针对其 EDI 架构实例。 若要执行此操作，您使用的 XML 工具扩展[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]环境。 验证的实例可以是单个事务集 （没有交换和组标头）、 是将单个事务集 （带有交换和组标头），包含的交换或具有多个事务集 （具有完整的批的交换交换和组标头）。  
   
 > [!NOTE]
 >  不支持验证 xml 保留交换。 但是，支持的保留的交换的 EDI 验证。  
   
  验证实例操作的执行 EDI 和 XSD 验证。  
   
- 在验证实例时，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 会显示一个对话框，可在其中指定该实例中要验证的配置，包括分隔符和语法标识符。  
+ 当验证实例，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]显示一个对话框，在其中指定要验证该实例，包括分隔符和语法标识符中的配置。  
   
-## <a name="prerequisites"></a>必要條件  
- 你必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 必须以成员的身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Administrators 组。  
   
 ### <a name="to-validate-an-instance-against-its-schema"></a>若要验证针对其架构实例  
   
-1. 在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中，打开一个项目。  
+1. 在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，打开一个项目。  
   
 2. 在解决方案资源管理器，向项目添加所需的消息实例的所有架构。  
   
    1. 如果您要验证单个事务集没有交换和组标头，添加该事务集的文档架构。  
   
-   2. 如果验证的是包含一个事务集的交换，则向项目添加该事务的架构和消息使用的编码类型的批架构（即 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] XSD_Schema\EDI 中的 Edifact_BatchSchema.xsd 或 X12_BatchSchema.xsd）。  
+   2. 如果验证的是包含单个事务集的交换，将添加到项目的事务的架构和消息使用的编码类型的批架构 (Edifact_BatchSchema.xsd 或 X12_BatchSchema.xsd 中的[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI)。  
   
       > [!NOTE]
       >  所需的批架构验证信封的实例。 如果您打算使用仅在消息架构，将不验证信封。  
   
-   3. 如果验证的是包含多个事务集的批处理交换，则向项目添加消息实例中各事务集组的架构和消息使用的编码类型的批架构（即 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] XSD_Schema\EDI 中的 Edifact_BatchSchema.xsd 或 X12_BatchSchema.xsd）。  
+   3. 如果您要验证包含多个事务集的批处理的交换，将添加到项目的架构中消息实例，并使用消息的编码类型的批架构的每个事务集组 (任一 Edifact_BatchSchema.xsd 或中的 X12_BatchSchema.xsd [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI)。  
   
       > [!NOTE]
       >  如果已自定义服务架构，必须文档 （事务集） 架构除了包括自定义服务架构在 BizTalk 项目中，并且如有必要，批架构。  

@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa19a836d4465b96b663dd4abc5f89500b37e338
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c6a96137243612042c8283ec5e5d15ced9d1d83b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973638"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65369904"
 ---
 # <a name="connect-to-sql-server-using-windows-authentication-with-the-sql-adapter"></a>连接到 SQL Server 与 SQL 适配器使用 Windows 身份验证
 [!INCLUDE[adaptersql_md](../../includes/adaptersql-md.md)]使适配器客户端能够使用 Windows 身份验证建立与 SQL Server 的连接。 若要使用 Windows 身份验证，适配器客户端必须输入的空用户名和密码。 
@@ -57,7 +57,7 @@ ms.locfileid: "36973638"
     > [!NOTE]
     > [服务器和 SQL Server 中的数据库角色](https://msdn.microsoft.com/library/bb669065.aspx)角色上提供有用信息。 
   
-6. 单击“确定”保存更改。
+6. 选择**确定**以保存所做的更改。
   
    添加用户后，用户可以连接并进行身份验证与 SQL Server 使用[!INCLUDE[adaptersqlshort](../../includes/adaptersqlshort-md.md)]、 日志记录使用空白用户名和密码。  
 

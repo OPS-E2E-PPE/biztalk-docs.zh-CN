@@ -12,35 +12,35 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f35d946ff595fa4d85427c7b3d6be81247cedf68
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2402b3b95e9eb12d3362f018a197dc6cbc602020
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977856"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395403"
 ---
-# <a name="using-non-canonical-xpaths-in-message-assignments"></a>在消息赋值中使用非规范化 XPath
-如果使用 .Net 消息部分，则可以用 XML 序列化属性批注代码，不过，当代码中还附带可分辨字段和/或属性批注时，会使 XPath 表达式变得极其复杂。 这些复杂的 XPath 表达式可能是非规范化的。 非规范化 XPath 只能用于直接绑定的业务流程，如果用于逻辑绑定或物理绑定的业务流程，可能会失败。 直接绑定的业务流程不依赖管道来处理 XML 文档，因此在处理之前，整个 XML 文档已加载到内存中。  
+# <a name="using-non-canonical-xpaths-in-message-assignments"></a>在消息赋值中使用非规范化 Xpath
+如果使用.Net 消息部分，就可以进行批注您用 XML 序列化属性的代码，当还附带可分辨的字段和/或属性批注，可能会导致相当复杂的 XPath 表达式。 很可能会不规范这些复杂的 XPath 表达式。 非规范化 XPath 只能用于直接绑定的业务流程中，可能会因逻辑或物理方式绑定的业务流程。 直接绑定的业务流程，不要依赖于用于处理 XML 文档; 的管道因此，在处理之前的内存中加载整个 XML 文档。  
   
 ## <a name="canonical-and-non-canonical-xpath"></a>规范的非规范化 XPath  
- 规范或简短形式的 XPath 使用 XPath 规范中的缩写的语法 ([http://www.w3.org/TR/xpath](http://go.microsoft.com/fwlink/?LinkId=119567)) 来指定位置的路径。 下面是规范化 XPath 表达式的一些判别属性：  
+ 规范或简短形式的 XPath 使用 XPath 规范中的缩写的语法 ([http://www.w3.org/TR/xpath](http://go.microsoft.com/fwlink/?LinkId=119567)) 来指定位置的路径。 规范化 XPath 表达式的一些判别属性包括：  
   
-- 默认情况下，在表达式的每一步中都假定一个 `child::` 轴  
+- `child::`轴假定默认情况下，每个步骤的表达式  
   
-- `@` 是 `attribute::` 的简写形式。  
+- `@` 是的缩写`attribute::`。  
   
-- `//` 是 `/descendant-or-self::node()/` 的简写形式。  
+- `//` 是的缩写`/descendant-or-self::node()/`。  
   
-- `.` 是 `self::node()` 的简写形式。  
+- `.` 是的缩写`self::node()`。  
   
-- `..` 是 `parent::node()` 的简写形式。  
+- `..` 是的缩写`parent::node()`。  
   
-  规范化 XPath 表达式是简单表达式，例如 `/*[local-name()='element-name' and namespaceURI()='http://MyUri.org']/*[local-name()='element-name']/@*[local-name='attribute-name']`。  
+  规范化 XPath 表达式是简单表达式，如`/*[local-name()='element-name' and namespaceURI()='http://MyUri.org']/*[local-name()='element-name']/@*[local-name='attribute-name']`。  
   
-  这与非规范化形式的 XPath 相反。 此窗体即所谓的"一般形式"任意 XPath"，其特点是由表达式的任意复杂，并且可以包含多个轴： `//element-name//*[local-name()='element-name' and position()=2]`。  
+  这可以与非规范化形式的 XPath 相反。 此窗体即所谓的"一般形式"任意 XPath"，其特点是由表达式的任意复杂，并且可以包含多个轴： `//element-name//*[local-name()='element-name' and position()=2]`。  
   
 ## <a name="example"></a>示例  
- 以下面的程序为例：  
+ 请考虑以下程序：  
   
 ```  
 using System;  
@@ -98,12 +98,12 @@ namespace ComplexNetXPath
 }   
 ```  
   
- Zoo 类型包含一个 Animal 字段，它可以是 Snake 或 Dog。 Animal 实例有一个 NumberOfLegs 字段，用 PropertyAttribute 进行批注，将 BTS.RetryCount 属性分配给此字段。  
+ Zoo 类型包含一个 Animal 字段，它可以是 Snake 或 Dog。 Animal 实例有一个 NumberOfLegs 字段，使用将分配 BTS PropertyAttribute 进行批注。RetryCount 属性设置为此字段。  
   
 > [!NOTE]
->  实际的应用程序要定义自己的属性。  
+>  实际的应用程序定义自己的属性。  
   
- 当本周动物是 Dog 时，序列化的 Zoo 实例如下所示：  
+ 当本周动物是 dog 时，序列化的 Zoo 实例如下所示：  
   
 ```  
 <Zoo>  
@@ -113,7 +113,7 @@ namespace ComplexNetXPath
 </Zoo>   
 ```  
   
- 当本周动物是 Snake 时，序列化的 Zoo 实例如下所示：  
+ 当本周动物是 snake 时，序列化的 Zoo 实例如下所示：  
   
 ```  
 <Zoo>  
@@ -123,13 +123,13 @@ namespace ComplexNetXPath
 </Zoo>  
 ```  
   
- 以与 .Net Zoo 类等价的 XML 架构为例，用于选择 RetryCount 属性的 XPath 表达式将允许 Snake 或 Dog 步骤显示在该属性的路径中：  
+ 考虑 Xml 架构与.Net Zoo 类，用于选择 RetryCount 属性的 XPath 表达式将允许 Snake 或 Dog 步骤显示在属性的路径上：  
   
 ```  
 /*[local-name()='Zoo' and namespace-uri()='']/*[(local-name()='Dog' and namespace-uri()='') or (local-name()='Snake' and namespace-uri()='')]/*[local-name()='NumberOfLegs' and namespace-uri()='']  
 ```  
   
- XML 管道组件无法处理这种非规范化 XPath 表达式。 为了避免这种情况，请不要将多选择 XML 序列化属性与 XML 管道一起使用，在使用以下 XML 序列化属性时也应谨慎：  
+ XML 管道组件无法处理此非规范化 XPath 表达式。 若要避免这种情况下，进行多项选择 Xml 序列化属性不应在与 XML 管道一起使用，并使用以下 xml 序列化属性时应小心：  
   
 -   XmlElementAttribute  
   

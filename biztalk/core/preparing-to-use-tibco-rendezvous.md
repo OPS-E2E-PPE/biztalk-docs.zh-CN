@@ -2,12 +2,12 @@
 redirect_url: /biztalk/core/installing-biztalk-adapter-for-tibco-rendezvous
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: 587e1ab1c7f12631d1e0988dd5456843d68423b3
-ms.sourcegitcommit: 6b6d905bbef7796c850178e99ac293578bb58317
+ms.openlocfilehash: e3f3b159674d1857c45620d71d4479b2ed3b4985
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2017
-ms.locfileid: "23450214"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396175"
 ---
 # <a name="preparing-to-use-tibco-rendezvous"></a>准备使用 TIBCO Rendezvous
-有关如何准备要与 Microsoft BizTalk 适配器用于 TIBCO 会合的 TIBCO 会合系统的信息，请参阅[企业应用程序安装的 Microsoft BizTalk 适配器指导](../adapters-and-accelerators/install-configure-biztalk-adapters-enterprise-applications.md)。
+有关如何准备 TIBCO Rendezvous 系统以适用于 TIBCO Rendezvous 的 Microsoft BizTalk 适配器使用的信息，请参阅[用于企业应用程序安装 Microsoft BizTalk 适配器指导](../adapters-and-accelerators/install-configure-biztalk-adapters-enterprise-applications.md)。

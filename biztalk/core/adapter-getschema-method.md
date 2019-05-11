@@ -1,5 +1,5 @@
 ---
-title: 适配器 GetSchema 方法 |Microsoft 文档
+title: 适配器 GetSchema 方法 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,19 +12,19 @@ caps.latest.revision: 18
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9c40e698b3c373aa4e10a8de2362650a42e71a1c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b7a06e6eedb57ea0cbca1c4572ddf755b9915ca7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22225189"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65361472"
 ---
 # <a name="adapter-getschema-method"></a>适配器 GetSchema 方法
-假定引用的 WSDL 文件只包含架构引用并且不包含嵌入的架构。 在这种情况下，使用**GetSchema**方法**IAdapterConfig**接口以加载 WSDL 文件中从引用的架构。  
+假设引用的 WSDL 文件只包含架构引用并且不包含嵌入的架构。 在这种情况下，使用**GetSchema**方法**IAdapterConfig**接口加载从 WSDL 文件中引用的架构。  
   
  在文件适配器示例中，修改中的代码**GetSchema** AdapterManagement.cs 返回不包含在 WSDL 文件的任何外部 XSD 文件的方法。  
   
- 下面的代码是从**GetSchema** AdapterManagement.cs 文件的方法。 它在此处将返回空，因为 Service1.wsdl 文件包含嵌入的架构。 如果不是这一情况，将需要返回与 XSD 架构文件相对应的字符串。  
+ 以下代码摘自**GetSchema** AdapterManagement.cs 文件的方法。 它返回 null 此处因为 Service1.wsdl 文件包含嵌入的架构。 如果不这样，需要返回到 XSD 架构文件相对应的字符串。  
   
 ```  
 /// <summary>  

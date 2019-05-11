@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10602 |Microsoft Docs
+title: 单一登录：Event 10602 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ec5f44a11c291ae4b9a71f95c6dfdb004f635457
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d249684fb08d7a61854047ddef176712a959a783
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006222"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397796"
 ---
-# <a name="single-sign-on-event-10602"></a>单一登录： 事件 10602
+# <a name="single-sign-on-event-10602"></a>单一登录：事件 10602
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                    |
@@ -28,12 +28,12 @@ ms.locfileid: "37006222"
 | 产品版本 |             [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]             |
 |    事件 ID     |                                       10602                                        |
 |  事件源   |                                       ENTSSO                                       |
-|    组件    |                                        N/A                                         |
+|    组件    |                                        不可用                                         |
 |  符号名称  |                               SSO_ERROR_RPC_FAILURE                                |
-|  消息正文   | RPC 失败。 请检查您的网络配置。%r<br /><br /> 错误代码： %1 |
+|  消息正文   | RPC 失败。 请检查网络 configuration.%r<br /><br /> 错误代码： %1 |
   
 ## <a name="explanation"></a>解释  
  RPC 失败。  
   
 ## <a name="user-action"></a>用户操作  
- 检查您的网络配置。
+ 检查你的网络配置。

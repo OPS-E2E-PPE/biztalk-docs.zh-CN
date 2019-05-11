@@ -12,58 +12,58 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6e0447a89929ba729de78b2e10f337f0a62b28e4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 30e9004b1e464b9decc60b78f2aba670f08e5a9f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013678"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395041"
 ---
-# <a name="partnermanagement-biztalk-server-sample"></a>PartnerManagement（BizTalk Server 示例）
+# <a name="partnermanagement-biztalk-server-sample"></a>PartnerManagement （BizTalk Server 示例）
 PartnerManagement 示例演示了如何管理中的参与方[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]通过使用环境**ExplorerOM**管理对象。  
 
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
 
 - 您必须具有 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理权限才能使用此示例中的管理对象。  
 
 - Windows PowerShell 脚本需要 Windows PowerShell 执行策略以允许脚本执行。 有关详细信息，请参阅 [检查执行策略](http://go.microsoft.com/fwlink/?LinkId=128930)。  
 
 ## <a name="what-this-sample-does"></a>本示例的用途  
- 此示例演示如何使用中的管理类**Microsoft.BizTalk.ExplorerOM**命名空间来管理参与方。 参与方代表贸易合作伙伴，或业务流程可与之交互的后端应用程序。 有关参与方的详细信息一般情况下，请参阅的文档[参与方](../core/parties.md)或[角色链接和服务链接角色](../core/role-links-and-service-link-roles.md)。 本示例是使用 Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 编写的。 本主题中还包含 Windows PowerShell 示例脚本。 本示例将演示以下操作：  
+ 此示例演示如何使用中的管理类**Microsoft.BizTalk.ExplorerOM**命名空间来管理参与方。 参与方表示贸易合作伙伴或后端应用程序可与之交互的业务流程。 有关参与方的详细信息一般情况下，请参阅的文档[参与方](../core/parties.md)或[角色链接和服务链接角色](../core/role-links-and-service-link-roles.md)。 在 Microsoft 中编写示例[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)]。 本主题中还包含 Windows PowerShell 示例脚本。 此示例演示了以下操作：  
 
-- 使用自定义或标准别名创建新的参与方，并向此参与方中添加现有 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 发送端口。  
+- 使用自定义或标准别名创建新的参与方和添加现有[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]到参与方发送端口。  
 
-- 向 BizTalk Server 上的现有角色链接登记新创建的参与方。  
+- 登记新参与方与 BizTalk server 上的现有角色链接。  
 
-- 注销新创建的参与方。  
+- 取消登记新参与方。  
 
-- 删除新创建的参与方。  
+- 正在删除新参与方。  
 
 ## <a name="where-to-find-this-sample"></a>本示例的所在位置  
  本示例位于以下 SDK 位置中：  
 
- \<*示例路径*\>\Admin\ExplorerOM\PartnerManagement  
+ \<*Samples Path*\>\Admin\ExplorerOM\PartnerManagement  
 
  下表显示了本示例中的文件及其用途说明：  
 
 
 |                      文件                       |                                                 Description                                                  |
 |----------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-|                PartnerManagement.cs                | 本示例中演示的操作所需的 [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 源文件。 |
+|                PartnerManagement.cs                | [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 此示例中演示的操作的源文件。 |
 | PartnerManagement.sln 和 PartnerManagement.csproj |                                  示例的解决方案文件和项目文件。                                  |
 
 ## <a name="building-and-running-this-sample"></a>生成并运行本示例  
- 在生成本示例之前，您需要进行四次代码修改，以便为 BizTalk Server 自定义本示例。 此操作是必须的，因为该示例对与参与方相关的发送端口使用任意名称，并且在登记时也使用任意角色名称。 因此，您需要为此示例提供有效名称。 为了演示此示例，本主题介绍如何首先生成 PartyResolution 示例从下列目录： \<*示例路径*\>\Orchestrations\PartyResolution。 此方法用于确保在 BizTalk Server 上存在有效的角色名称和发送端口名称，以演示示例过程。  
+ 在生成本示例之前，您需要进行四次代码修改自定义 BizTalk server 的示例。 这是必需的因为该示例使用的发送端口与参与方和登记的任意角色名称相关联的任意名称。 因此您需要提供有效的名称的示例。 为了演示此示例，本主题将介绍第一次生成 PartyResolution 示例从以下目录：\<*示例路径*\>\Orchestrations\PartyResolution。 这种方法用于确保有效的角色名称和发送端口名称均存在于 BizTalk server 才能演示示例过程。  
 
 #### <a name="to-build-this-sample"></a>生成示例  
 
-1. 首先，确保已生成并已初始化 PartyResolution 示例，以便此示例能够使用有效的角色名称和发送端口名称。 这在标题中的"生成和初始化此示例"部分中所述[PartyResolution （BizTalk Server 示例）](../core/partyresolution-biztalk-server-sample.md)。  
+1. 首先请确保已生成并初始化，以便可以通过该示例使用有效的角色名称和发送端口名称 PartyResolution 示例。 这在标题中的"生成和初始化此示例"部分中所述[PartyResolution （BizTalk Server 示例）](../core/partyresolution-biztalk-server-sample.md)。  
 
-2. 在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中打开 PartnerManagement.sln 解决方案文件。  
+2. 在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，打开解决方案文件 PartnerManagement.sln。  
 
-3. 在解决方案资源管理器中，打开源文件 PartnerManagement.cs。  
+3. 在解决方案资源管理器中打开源文件 PartnerManagement.cs。  
 
-4. 向下滚动到名为的函数**CreateParty**并插入两个发送端口名称来自 PartyResolution 示例，或使用来自 BizTalk server 环境的有效名称。 以下代码示例演示如何使用来自 PartyResolution 示例的发送端口进行更改。  
+4. 向下滚动到名为的函数**CreateParty**并插入两个发送端口名称来自 PartyResolution 示例，或使用来自 BizTalk server 环境的有效名称。 下面的代码示例演示如何使用来自 PartyResolution 示例的发送端口的更改。  
 
    ```  
    // Replacing arbitrary send port names with PartyResolution send port names ===  
@@ -75,7 +75,7 @@ PartnerManagement 示例演示了如何管理中的参与方[!INCLUDE[btsBizTalk
 
    ```  
 
-5. 向下滚动到名为的函数**EnlistParty**并更改 foreach 循环，使其搜索 Supplier 程序集，名为"ShipmentRole"的角色来登记时使用。 以下代码示例演示如何改为使用来自 PartyResolution 示例的 ShipmentRole。  
+5. 向下滚动到名为的函数**EnlistParty**并更改 foreach 循环，使其搜索 Supplier 程序集，名为"ShipmentRole"的角色来登记时使用。 下面的代码示例演示如何使用来自 PartyResolution 示例的 ShipmentRole 的更改。  
 
    ```  
                // Search for the “Shipmentrole” instead of “shipperRole”  
@@ -93,7 +93,7 @@ PartnerManagement 示例演示了如何管理中的参与方[!INCLUDE[btsBizTalk
 
    ```  
 
-6. 向下滚动到名为的函数**UnenlistParty**并更改 foreach 循环，以搜索 Supplier 程序集，查找 ShipmentRole。 以下代码示例演示了此更改。  
+6. 向下滚动到名为的函数**UnenlistParty**并更改 foreach 循环，以搜索 Supplier 程序集，查找 ShipmentRole。 下面的代码示例演示了此更改。  
 
    ```  
                // Search for the “ShipmentRole” instead of “shipperRole”  
@@ -111,7 +111,7 @@ PartnerManagement 示例演示了如何管理中的参与方[!INCLUDE[btsBizTalk
 
    ```  
 
-7. 使用 ShipmentRole 创建并登记新参与方之后，此示例用于立即注销此参与方并将其删除。 将以下代码更改添加到主过程，以暂停过程执行，并允许您在 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理控制台中查看为新参与方创建的登记。  
+7. 之后创建并登记新参与方使用 ShipmentRole，示例用于立即注销-此参与方并将其删除。 将以下代码更改添加到要暂停执行，可以查看为新参与方创建的登记的主要过程[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。  
 
    ```  
    static void Main(string[] args)  
@@ -134,7 +134,7 @@ PartnerManagement 示例演示了如何管理中的参与方[!INCLUDE[btsBizTalk
 
 1. 打开命令窗口并导航到以下文件夹：  
 
-    \<*示例路径*\>\Admin\ExplorerOM\PartnerManagement\bin\Debug  
+    \<*Samples Path*\>\Admin\ExplorerOM\PartnerManagement\bin\Debug  
 
 2. 运行文件 PartnerManagement.exe。  
 
@@ -142,7 +142,7 @@ PartnerManagement 示例演示了如何管理中的参与方[!INCLUDE[btsBizTalk
 
 4. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，导航到树视图**ShipmentRole**下**Applications\BizTalk Application 1\Role Links**。 双击**ShipmentRole** ，并注意**ShipmentAgency1**映射到**SupplierAdvice**操作和**ShipmentAgency2**映射到**SupplierOrder**中登记的操作。  
 
-5. 在命令窗口中，按 Enter 以允许示例注销并删除此新参与方。  
+5. 在命令窗口中，按 ENTER 以允许示例注销的登记和删除新参与方。  
 
 6. 在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，验证此参与方已从取消登记**ShipmentRole**并从已删除**方**节点。  
 
@@ -338,7 +338,7 @@ DeleteParty
 
 ```  
 
- 以下是运行 PowerShell 示例脚本的示例输出。 如果脚本运行失败，请确保已根据本主题前面部分中的要求说明启用 PowerShell 脚本功能。  
+ 下面是运行 PowerShell 示例脚本的示例输出。 如果脚本运行失败，请确保根据本主题顶部的要求说明启用 PowerShell 脚本。  
 
 ```  
 PS C:\> .\PartnerManagement.ps1  

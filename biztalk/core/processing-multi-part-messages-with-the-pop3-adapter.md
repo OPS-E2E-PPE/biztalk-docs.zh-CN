@@ -1,5 +1,5 @@
 ---
-title: 处理多部分消息使用 POP3 适配器 |Microsoft 文档
+title: 使用 POP3 适配器处理多部分消息 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,65 +12,65 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 26aff4569414103ad8c4f37a9e4699a85874e481
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 68c02f7a5bded3ccffa60ae7327297342ffdc0d6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22266437"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396977"
 ---
 # <a name="processing-multi-part-messages-with-the-pop3-adapter"></a>使用 POP3 适配器处理多部分消息
-POP3 适配器可以处理符合 IETF 标准中所述的 MIME 编码消息[RFC 2045](http://go.microsoft.com/fwlink/?LinkId=58810)， [RFC 2046](http://go.microsoft.com/fwlink/?LinkId=58811)，和[RFC 2047](http://go.microsoft.com/fwlink/?LinkId=58812)。 MIME 编码的消息可以只包含一个部分，也可以包含多个部分且各部分具有不同的内容类型。 本主题介绍 POP3 适配器将如何处理多部分 MIME 编码的消息。  
+POP3 适配器可以处理符合 IETF 标准中所述的 MIME 编码的消息[RFC 2045](http://go.microsoft.com/fwlink/?LinkId=58810)， [RFC 2046](http://go.microsoft.com/fwlink/?LinkId=58811)，并[RFC 最多允许 2047年](http://go.microsoft.com/fwlink/?LinkId=58812)。 MIME 编码的消息可以包含一到使用不同的内容类型的许多部件。 本主题讨论如何 POP3 适配器处理多部分 MIME 编码消息。  
   
 ## <a name="receiving-multi-part-messages-with-the-pop3-adapter"></a>使用 POP3 适配器接收多部分消息  
- 如果具有使用 POP3 适配器接收位置**应用 MIME 解码**选项设置为**True**然后 POP3 适配器接收 MIME 编码消息时执行下列操作：  
+ 使用 POP3 适配器的接收位置是否**应用 MIME 解码**选项设置为**True**然后 POP3 适配器接收的 MIME 编码消息时将执行以下操作：  
   
-1.  从其接收的 MIME 编码消息的各部分创建一个多部分 BizTalk 消息。 此多部分消息可包含一到多个部分，并且所包含的部分数与接收到的 MIME 编码消息相同。  
+1.  从其接收的 MIME 编码消息各部分创建多部分 BizTalk 消息。 此多部分消息可以包含一到多个部分，并且将包含接收的 MIME 编码消息相同的部分数。  
   
-2.  扫描 MIME 编码消息的标头。 如果任何标头与匹配的记录在该主题的属性列表[POP3 适配器属性架构和属性](../core/pop3-adapter-property-schema-and-properties.md)然后这些标头将被提升到多一部分 BizTalk 消息作为上下文属性。  
+2.  扫描 MIME 编码消息的标头。 如果任何标头与匹配的主题中描述的属性列表[POP3 适配器属性架构和属性](../core/pop3-adapter-property-schema-and-properties.md)然后这些标头升级到多部分 BizTalk 消息上下文属性为。  
   
-3.  使用一个可配置的算法，将 MIME 编码消息中的一个部分指定为 BizTalk 消息的正文部分。 用来确定哪些消息部分将 BizTalk 消息正文部分的算法节所述下面**POP3 适配器使用的正文部分选择算法**。  
+3.  使用可配置的算法来指定的 MIME 编码消息部分作为 BizTalk 消息正文部分。 用于确定哪个消息部分将 BizTalk 消息正文部分的算法部分所述下面**POP3 适配器使用的正文部分选择算法**。  
   
 4.  将多部分 BizTalk 消息发布到 MessageBox。  
   
 ## <a name="body-part-selection-algorithm-used-by-the-pop3-adapter"></a>POP3 适配器使用的正文部分选择算法  
- 当 POP3 适配器从其接收的 MIME 编码消息的各部分创建一个多部分 BizTalk 消息时，它将选择其中的一个消息部分作为 BizTalk 消息的正文部分。 BizTalk Server 将使用 BizTalk 消息正文部分来执行消息验证、映射、属性升级、平面文件组装等操作。 多部分 BizTalk 消息的订户将接收所有的消息部分，但除非使用可以理解多部分消息的业务流程、自定义管道或适配器，它将只使用指定的 BizTalk 消息正文部分。 例如，您可以配置业务流程，使其读取多部分消息的所有部分。SMTP 适配器可以读取多部分消息的所有部分。您也可以配置一个自定义管道，使其使用 MIME/SMIME 编码器管道组件。 有关使用业务流程使用多部分消息的详细信息请参阅以下部分，**在业务流程中处理多部分消息**。  
+ 当 POP3 适配器从其接收的 MIME 编码消息的各部分创建多部分 BizTalk 消息时，它选择一个消息部分作为 BizTalk 消息正文部分。 消息验证、 映射、 属性升级、 平面文件的程序集和其他操作等工作，BizTalk Server 使用 BizTalk 消息正文部分。 多部分 BizTalk 消息的订阅服务器接收所有消息部分，但将只使用指定的 BizTalk 消息正文部分，除非使用业务流程、 自定义管道或适配器，它可以理解多部分消息。 例如，可以配置业务流程可读取多部分消息; 的所有部分SMTP 适配器可以读取的所有部件的多部分消息，并可以将自定义管道配置为使用 MIME/SMIME 编码器管道组件。 有关使用业务流程使用多部分消息的详细信息请参阅以下部分**业务流程中处理多部分消息**。  
   
- POP3 适配器从可用的正文部分基于为提供的值选择 BizTalk 消息正文部分**正文部分索引**和**正文部分内容类型**。  
+ POP3 适配器从可用正文部分基于为提供的值中选择 BizTalk 消息正文部分**正文部分索引**并**正文部分内容类型**。  
   
 > [!NOTE]
->  POP3 适配器旨在识别中定义正文部分内容类型[RFC 2046](http://go.microsoft.com/fwlink/?LinkId=119569)。  
+>  POP3 适配器专门识别中定义正文部分内容类型[RFC 2046](http://go.microsoft.com/fwlink/?LinkId=119569)。  
   
- 下面介绍了用于选择电子邮件的 BizTalk 消息正文部分的算法：  
+ 用于选择电子邮件的 BizTalk 消息正文部分的算法如下所述：  
   
-1.  如果**正文部分索引**设置为 0 和**正文部分内容类型**为空，则将使用以下算法选择 BizTalk 消息正文部分：  
+1.  如果**正文部分索引**设置为 0，**正文部分内容类型**为空，则使用以下算法来选择 BizTalk 消息正文部分：  
   
-    -   使用内容说明标头设置为“body”的第一个 MIME 部分。  
+    -   设置为"body"的内容说明标头，使用第一个 MIME 部分。  
   
-    -   否则，使用内容类型标头设置为“text/xml”的第一个 MIME 部分。  
+    -   否则，第一个 MIME 部分使用设置为"text/xml"的内容类型标头。  
   
-    -   否则，使用内容类型标头设置为“text/plain”的第一个 MIME 部分。  
+    -   否则，第一个 MIME 部分使用设置为"text/plain"的内容类型标头。  
   
-    -   否则，使用内容类型标头设置为“text/”的第一个 MIME 部分。  
+    -   否则，第一个 MIME 部分使用内容类型标头设置为"text /"。  
   
-    -   否则，使用第一个 MIME 部分。  
+    -   否则使用第一个 MIME 部分。  
   
-2.  否则为如果**正文部分索引**设置为 0 和**正文部分内容类型**是设置，那么匹配所指定的传入消息的第一个正文部分**正文部分内容类型**被选为 BizTalk 消息正文部分。 如果所有部分的内容类型均不与指定的正文部分内容类型匹配，则挂起消息。  
+2.  否则为如果**正文部分索引**设置为 0，**正文部分内容类型**为集，则匹配所指定的传入消息的第一个正文部分**正文部分内容类型**选为 BizTalk 消息正文部分。 如果没有具有匹配的内容类型的部件会挂起消息。  
   
-3.  否则为如果**正文部分索引**设置为值大于 0 和**正文部分内容类型**为空，则具有指定索引的正文部分被选为 BizTalk 消息正文部分。 如果指定的索引大于正文部分的数量，则挂起消息。  
+3.  否则为如果**正文部分索引**设置为值大于 0 并**正文部分内容类型**为空，则选择具有指定索引的正文部分作为 BizTalk 消息正文部分。 如果指定的索引大于正文部分的数量会挂起消息。  
   
-4.  否则为如果**正文部分索引**设置为值大于 0 和**正文部分内容类型**设置，则**正文部分索引**仅应用到那些正文部分具有指定**正文部分内容类型**和相应的正文部分被选为 BizTalk 消息正文部分。 如果指定的索引大于具有匹配内容类型的部分的数量，则挂起消息。 如果所有部分的内容类型均不与指定的正文部分内容类型匹配，则挂起消息。  
+4.  否则为如果**正文部分索引**设置为值大于 0 并**正文部分内容类型**设置，则**正文部分索引**，才会应用为正文部分具有指定**正文部分内容类型**并选择相应的正文部分作为 BizTalk 消息正文部分。 如果指定的索引大于具有匹配的内容类型的部分数会挂起消息。 如果没有具有匹配的内容类型的部件会挂起消息。  
   
-5.  选择作为 BizTalk 消息正文部分的部分将被首先发布到 MessageBox，其余的多部分 BizTalk 消息部分则保持其在原始 MIME 编码消息中的顺序。  
+5.  BizTalk 消息正文部分变得多部分 BizTalk 消息发布到 MessageBox 的第一个部分所选的部分，该消息的其余部分保持顺序在原始 MIME 编码的消息所具有的。  
   
-## <a name="processing-multi-part-messages-in-orchestrations"></a>在业务流程中处理多部分消息  
- 当 POP3 适配器从其接收的 MIME 编码消息创建多部分 BizTalk 消息时，会将所有部分发布到 MessageBox 数据库，即使只有其中一个部分被指定为 BizTalk 消息正文部分，也会发布所有部分。 随后，订阅多部分消息的业务流程就可以使用这些部分。 本部分说明了一些在业务流程中处理多部分消息时应注意的事项。  
+## <a name="processing-multi-part-messages-in-orchestrations"></a>处理业务流程中的多部分消息  
+ 当 POP3 适配器从其接收的 MIME 编码消息创建多部分 BizTalk 消息时，所有部件被发布到 MessageBox 数据库中，即使只有其中一个部分指定为 BizTalk 消息正文部分。 订阅多部分消息的业务流程可以随后使用这些部件。 处理业务流程中的多部分消息时，本部分将介绍一些注意事项。  
   
-### <a name="processing-multi-part-messages-with-a-known-number-of-parts-and-known-part-types"></a>处理部分数和部分类型已知的多部分消息  
- 如果业务流程将要接收具有已知部分数和已知部分类型的多部分消息，则可以选择在业务流程中声明一个多部分消息，并在设计时设置部分数和部分类型。  
+### <a name="processing-multi-part-messages-with-a-known-number-of-parts-and-known-part-types"></a>处理具有已知数量的部件和已知的部分类型的多部分消息  
+ 如果业务流程将要接收具有已知部分数和已知的部分类型的多部分消息然后可以声明一个业务流程中的多部分消息，并在设计时设置部分和部件类型的数量。  
   
-### <a name="processing-multi-part-messages-with-unknown-part-types"></a>处理部分类型未知的多部分消息  
- 如果您的业务流程接收具有未知的部件类型的多部分消息，则你可以声明中的业务流程和使用多部分消息**XmlDocument**的每个部分的类型是未知的类型。  
+### <a name="processing-multi-part-messages-with-unknown-part-types"></a>处理多部分消息具有未知的部分类型  
+ 如果业务流程将要接收具有未知的部分类型的多部分消息，则可以声明多部分消息中的业务流程和使用**XmlDocument**的每个部分的类型是未知的类型。  
   
-### <a name="processing-multi-part-messages-with-an-unknown-number-of-parts-and-all-of-the-part-types-are-unknown"></a>处理部分数和所有部分类型均未知的多部分消息  
- 如果您的业务流程接收未知数量的部件的多部分消息，则你可以声明的单个部件的多部分消息**XmlDocument**业务流程中要接收消息的类型。 如果收到包含大于的声明部分数多部分消息时，有多少个部分是在消息中，业务流程引擎读取然后构造中声明的消息的部件的数量匹配的部件的正确部件类型类型，然后构造**XmlDocument**部件的其余部分。
+### <a name="processing-multi-part-messages-with-an-unknown-number-of-parts-and-all-of-the-part-types-are-unknown"></a>处理多部分消息具有未知的部分数和所有部件类型是未知  
+ 如果业务流程将要接收具有未知部分数多部分消息，则可以声明多部分消息的单个部分**XmlDocument**业务流程中的类型，用于接收消息。 如果收到包含多于声明部分数量更多部分消息，则业务流程引擎读取有多少个部分是在消息中，然后构造正确的部分类型的部件的匹配部分中声明的消息数类型，然后构造**XmlDocument**部件的剩余部分。

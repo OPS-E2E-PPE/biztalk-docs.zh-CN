@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 配置 WCF 自定义单向接收端口 |Microsoft Docs
+title: 第 2 步：配置 WCF 自定义单向接收端口 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,21 +15,21 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d3320e7a2e6b948309087f2b33def57db9db0c9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a39112ce0eac59acddd4d3111a93af33d63b2672
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36990294"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372914"
 ---
-# <a name="step-2-configure-a-wcf-custom-one-way-receive-port"></a>步骤 2： 配置 WCF 自定义单向接收端口
+# <a name="step-2-configure-a-wcf-custom-one-way-receive-port"></a>第 2 步：配置 WCF 自定义单向接收端口
 ![步骤 2 3](../../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")  
   
- **完成时间：** 10 分钟  
+ **若要完成的时间：** 10 分钟。  
   
- **目标：** 在此步骤中，配置 WCF 自定义端口以接收来自 SAP 系统的平面文件 IDOC。 后配置端口时，你可以配置 BizTalk 应用程序以使用 WCF 自定义接收端口。  
+ **目标：** 在此步骤中，您可以配置用于从 SAP 系统接收平面文件 IDOC 的 WCF 自定义端口。 后配置端口时，你可以配置 BizTalk 应用程序以使用 WCF 自定义接收端口。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  你必须构建和部署 vPrev BizTalk 项目以接收来自 SAP 系统的 Idoc。  
   
 ### <a name="to-configure-a-wcf-custom-one-way-receive-port"></a>若要配置 WCF 自定义单向接收端口  
@@ -70,9 +70,9 @@ ms.locfileid: "36990294"
   
       |绑定属性|设置到的值|  
       |----------------------|------------------|  
-      |FlatFileSegmentIndicator|**SegmentType**。 这表示平面文件应包含在 IDOC 中的每个段的段类型。|  
-      |PadReceivedIdocWithSpaces|**True**。 指定是否对 IDOC 中的每行填充为正确长度的空间。|  
-      |ReceiveIDocFormat|**字符串**。 这将指定 IDOC 消息，应表示为单个字符串字段。|  
+      |flatFileSegmentIndicator|**SegmentType**。 这表示平面文件应包含在 IDOC 中的每个段的段类型。|  
+      |padReceivedIdocWithSpaces|**True**。 指定是否对 IDOC 中的每行填充为正确长度的空间。|  
+      |receiveIDocFormat|**字符串**。 这将指定 IDOC 消息，应表示为单个字符串字段。|  
   
        有关绑定属性的详细信息，请参阅[了解用于 mySAP Business Suite 绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)。  
   
@@ -119,7 +119,7 @@ ms.locfileid: "36990294"
       有关配置应用程序的详细信息，请参阅[ http://go.microsoft.com/fwlink/?LinkId=102360 ](http://go.microsoft.com/fwlink/?LinkId=102360)。  
   
 ## <a name="next-steps"></a>后续步骤  
- 你现在已经完成迁移到 BizTalk 项目中使用基于 WCF 的 SAP 系统接收 Idoc vPrev BizTalk 项目的[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。 你必须现在测试已迁移的 BizTalk 应用程序通过接收平面文件 IDOC 中所述[第 3 步： 测试迁移应用程序](../../adapters-and-accelerators/adapter-sap/step-3-test-the-migrated-application5.md)。  
+ 你现在已经完成迁移到 BizTalk 项目中使用基于 WCF 的 SAP 系统接收 Idoc vPrev BizTalk 项目的[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。 你必须现在测试已迁移的 BizTalk 应用程序通过接收平面文件 IDOC 中所述[步骤 3:测试已迁移应用程序](../../adapters-and-accelerators/adapter-sap/step-3-test-the-migrated-application5.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [教程 4：迁移 SAP 接收 IDOC BizTalk 项目](../../adapters-and-accelerators/adapter-sap/tutorial-4-migrating-an-sap-receive-idoc-biztalk-project.md)

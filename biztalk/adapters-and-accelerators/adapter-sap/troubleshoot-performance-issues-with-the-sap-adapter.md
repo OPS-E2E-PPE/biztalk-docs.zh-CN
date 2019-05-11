@@ -1,5 +1,5 @@
 ---
-title: 解决性能问题与 SAP 适配器 |Microsoft 文档
+title: 使用 SAP 适配器进行性能问题故障排除 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,37 +15,37 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ef9e18a2f26af993da36a13d389f2aff2ad2f60a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: c44bf56f73cd23de36e53ae6f0720d863e4f694e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22217117"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372386"
 ---
-# <a name="troubleshoot-performance-issues-with-the-sap-adapter"></a>与 SAP 适配器解决性能问题
-本部分讨论如何使用故障排除方法来解决在使用时可能遇到的性能问题[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]。  
+# <a name="troubleshoot-performance-issues-with-the-sap-adapter"></a>使用 SAP 适配器进行故障排除性能问题：
+本部分讨论如何使用故障排除技术来解决使用时可能遇到的性能问题[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]。  
   
-##  <a name="BKMK_SAPSlowdown"></a>缓慢或吞吐量与 BizTalk Server 使用适配器时停止  
+##  <a name="BKMK_SAPSlowdown"></a> 缓慢或停滞在使用适配器与 BizTalk Server 时的吞吐量  
  **问题**  
   
- 使用时[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]与[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，由适配器发送或接收的消息数变慢或进入停止。  
+ 使用时[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]与[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]，消息发送或接收的适配器数速度变慢或进入停滞。  
   
- **可能的原因**  
+ **原因**  
   
- **EnableBizTalkCompatibilityMode**绑定属性未设置在 WCF 自定义上发送或接收 BizTalk Server 管理控制台中的端口。  
+ **EnableBizTalkCompatibilityMode**绑定属性中未设置 WCF 自定义发送或接收端口在 BizTalk Server 管理控制台。  
   
  **解决方法**  
   
- 设置**EnableBizTalkCompatibilityMode**绑定属性为 True。 有关此属性的详细信息，请参阅[了解针对 mySAP Business Suite 绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)。 有关如何设置绑定属性的说明，请参阅[配置 SAP 适配器的绑定属性](../../adapters-and-accelerators/adapter-sap/configure-the-binding-properties-for-the-sap-adapter.md)。  
+ 设置**EnableBizTalkCompatibilityMode**绑定属性为 True。 有关此属性的详细信息，请参阅[了解关于 BizTalk Adapter for mySAP Business Suite 绑定属性](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)。 有关如何设置绑定属性的说明，请参阅[配置的 SAP 适配器的绑定属性](../../adapters-and-accelerators/adapter-sap/configure-the-binding-properties-for-the-sap-adapter.md)。  
   
-##  <a name="BKMK_SAPMemLeak"></a>可能的内存泄漏时参数的使用 NULL 值  
+##  <a name="BKMK_SAPMemLeak"></a> 使用参数的 NULL 值时可能出现的内存泄漏  
  **问题**  
   
- 你可能会观察内存泄漏如果 SAP 系统中调用项目时未指定输入或表参数的值。  
+ 您可能会观察到内存泄漏如果调用 SAP 系统中的项目时未指定输入或表参数的值。  
   
  **解决方法**  
   
- 请确保在调用 SAP 系统中的项目时指定的输入和表的所有参数的值。  
+ 请确保在 SAP 系统中调用项目时指定的输入和表的所有参数的值。  
   
-## <a name="see-also"></a>另请参阅  
-[故障排除 SAP 适配器](../../adapters-and-accelerators/adapter-sap/troubleshoot-the-sap-adapter.md)
+## <a name="see-also"></a>请参阅  
+[SAP 适配器疑难解答](../../adapters-and-accelerators/adapter-sap/troubleshoot-the-sap-adapter.md)

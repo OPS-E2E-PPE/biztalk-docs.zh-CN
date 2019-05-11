@@ -1,5 +1,5 @@
 ---
-title: 转换 Functoid |Microsoft 文档
+title: 转换 Functoid |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,32 +12,32 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 192db4b03f80674f2eb90be2255a8682454bde2b
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0b042428f3a67227db6fb53966149458bc279926
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22237885"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390250"
 ---
-# <a name="conversion-functoids"></a>“转换”Functoid
+# <a name="conversion-functoids"></a>转换 Functoid
 
 ## <a name="overview"></a>概述
-**转换**functoid 用于数字和其 ASCII 等效项，之间进行转换和将 10 个基本数字转换为其以 8 为基数和基本 16 等效项。  
+**转换**functoid 用于数字和其 ASCII 等效，之间进行转换和十进制数字转换为其八进制和十六进制的等效值。  
   
- 所有“转换”functoid 都只有一个输入参数。  
+ 转换 functoid 的所有采用一个输入的参数。  
   
 > [!NOTE]
->  由于在基础类型系统中，更改**转换**在此版本的 BizTalk 映射程序 functoid 产生在早期版本生成的那些略有不同的结果。 例如，在以前版本的 BizTalk 映射器-20 的输入值到**十六进制**functoid 导致 0xFFEC 的输出。 而在此版本中，同样输入值 -20 则会导致输出 0xFFFFFFEC。  
+>  由于基础类型系统中的更改**转换**中此版本的 BizTalk 映射器 functoid 的计算产生比以前版本中生成略有不同的结果。 例如，在以前版本的 BizTalk 映射器输入值-20 到**十六进制**functoid 导致输出 0xffec。 在此版本中，同一输入的值-20 会导致输出 0xffffffec。  
 
 ## <a name="available-functoids"></a>可用的 functoid  
- **转换**functoid 均： 
+ **转换**functoid 包括： 
 
 * ASCII 到字符
 * 字符到 ASCII
-* Hexadecimal
+* 十六进制
 * 八进制
 
-描述了这些 functoid [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。 
+介绍了这些 functoid [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。 
 
-## <a name="see-also"></a>另请参阅  
- [如何在向地图添加基本 Functoid](../core/how-to-add-basic-functoids-to-a-map.md)   
+## <a name="see-also"></a>请参阅  
+ [如何向映射添加基本 Functoid](../core/how-to-add-basic-functoids-to-a-map.md)   

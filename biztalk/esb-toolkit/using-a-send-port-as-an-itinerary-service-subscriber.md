@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c8cf33ab303127ba369a619637abf455c80ee539
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 81ab596b01c515fad670b959c00e0571b5e9962c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018724"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396475"
 ---
 # <a name="using-a-send-port-as-an-itinerary-service-subscriber"></a>发送端口用作路线服务订阅方
 为举例说明如何将发送端口用作路线服务订阅方，图 1 显示了满足以下条件的消息会选取一个动态单向发送端口的筛选器条件：  
@@ -26,9 +26,9 @@ ms.locfileid: "37018724"
   
 - **ServiceName = DynamicTest**  
   
-- **ServiceState = 挂起**  
+- **ServiceState = Pending**  
   
-- **ServiceType = 消息传送**  
+- **ServiceType = Messaging**  
   
   ![发送端口](../esb-toolkit/media/ch4-sendport.gif "Ch4-SendPort")  
   

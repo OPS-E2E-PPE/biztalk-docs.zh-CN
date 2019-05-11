@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0bfe842e3b131e6b0fcde75485c1d472320644c3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1ba5e0944c8b816a4800618940048b3e427143ad
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994174"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391441"
 ---
 # <a name="configure-the-power-bi-operational-data-feed-in-biztalk-server"></a>配置 BizTalk Server 中的源的 Power BI 操作数据
 
@@ -43,13 +43,13 @@ ms.locfileid: "36994174"
 > [!TIP]
 > [PowerBI.com](http://powerbi.microsoft.com)是一个不错的资源以了解并了解有关 Power BI 的详细信息。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先决条件
 * 下载并安装[Power BI Desktop](https://powerbi.microsoft.com/desktop/)具有网络访问权限的任何计算机上你 [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
 * 安装[功能包 2](https://aka.ms/bts2016fp2)，或更高版本上功能包，你 [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]
 * 上安装 IIS [!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]。 在大多数[!INCLUDE[btsBizTalkServerNoVersion_md](../includes/btsbiztalkservernoversion-md.md)]环境中，IIS 已安装。 请参阅[硬件和软件要求 BizTalk Server 2016 的](../install-and-config-guides/hardware-and-software-requirements-for-biztalk-server-2016.md)。 确认 IIS 安装通过打开**Internet Information Services Manager**。 
 * 可选。 安装和配置[Power BI Gateway](https://powerbi.microsoft.com/gateway/)连接[PowerBI.com](http://powerbi.microsoft.com)与你的本地 BizTalk Server。 如果您不使用的本地 BizTalk Server，则不需要网关。
 
-## <a name="step-1-enable-operational-data"></a>步骤 1： 启用操作数据
+## <a name="step-1-enable-operational-data"></a>第 1 步：启用操作数据
 
 1. 以管理员身份运行 Windows PowerShell (**启动**菜单中，键入**PowerShell**，右键单击，然后选择**以管理员身份运行**)。 
 2. 转到 BizTalk 安装文件夹 (例如，键入： `cd 'C:\Program Files (x86)\Microsoft BizTalk Server 2016\'`)。
@@ -59,12 +59,12 @@ ms.locfileid: "36994174"
     FeaturePack.ConfigureServices.ps1 -Service operationaldata -WebSiteName '<Default Web Site>' -ApplicationPool <operationalDataServiceAppPool> -ApplicationPoolUser <domain>\<user\> -ApplicationPoolUserPassword <password> -AuthorizationRoles '<domain>\<group1\>, <domain>\<group2\>, <domain>\<user\>, <domain>\<user2\>'
     ```
 
-   * **服务**： 若要配置的服务 (**OperationalData**适用于 Power BI)
-   * **WebSiteName**： 现有托管服务的 IIS web 站点。 默认值是**默认网站**。
-   * **ApplicationPool**： 服务使用的应用程序池。 如果存在，则不会创建一个新。 默认值是**DefaultAppPool**。
-   * **ApplicationPoolUser**： 配置要作为此用户身份运行的应用程序池。 必须具有 BizTalk Server 操作员或更高的权限。
-   * **ApplicationPoolUserPassword**: ApplicationPoolUser 密码
-   * **AuthorizationAccount**： 授权组或用户可以使用此服务的列表
+   * **服务**:若要配置的服务 (**OperationalData**适用于 Power BI)
+   * **WebSiteName**:现有 IIS web 站点承载的服务。 默认值是**默认网站**。
+   * **ApplicationPool**:使用该服务的应用程序池。 如果存在，则不会创建一个新。 默认值是**DefaultAppPool**。
+   * **ApplicationPoolUser**:配置要作为此用户身份运行的应用程序池。 必须具有 BizTalk Server 操作员或更高的权限。
+   * **ApplicationPoolUserPassword**:ApplicationPoolUser 密码
+   * **AuthorizationAccount**:授权组或用户可以使用此服务的列表
 
      在以下示例中，我们将使用`Default Web Site`，创建名为应用程序池`PowerBIAppPool`，运行作为应用程序池`bootcampbts2016\btsservice`帐户，请使用`BIZTALK-serviceacct`作为用户帐户密码，并授予`BizTalk Server Administrators`组权限。 确保输入以下信息，包括单个空格周围值加引号： 
 
@@ -91,13 +91,13 @@ ms.locfileid: "36994174"
 > 
 > ![计算机名称是在全大写形式](../core/media/groups-case.png)
 
-## <a name="step-2-use-the-template-in-power-bi"></a>步骤 2： 在 Power BI 中使用模板
+## <a name="step-2-use-the-template-in-power-bi"></a>第 2 步：在 Power BI 中使用的模板
 
 1. 下载并安装[Power BI Desktop](https://powerbi.microsoft.com/desktop/) BizTalk 服务器上。 您可以选择将其打开，它是可选的。 如果您有工作或学校帐户，可能有权访问 Power BI。 请尝试使用该帐户登录。 或者，您可以在注册后免费试用它。 
 2. 打开`\Program Files (x86)\Microsoft BizTalk Server 2016\OperationalDataService`文件夹，并打开`BizTalkOperationalData.pbit`文件：  
 ![打开 pbit 文件](../core/media/operational-data-pbit.png)
 
-3. Power BI desktop 将打开，并且会提示输入一个 URL。 输入`http://localhost/<yourWebSite>`为 OData 数据源创建的 URL。 例如，输入`http://localhost/BizTalkOperationalDataService`。 你的 URL 类似于以下内容：  
+3. Power BI desktop 将打开，并且会提示输入一个 URL。 输入`http://localhost/<yourWebSite>`为 OData 数据源创建的 URL。 例如，输入 `http://localhost/BizTalkOperationalDataService`。 你的 URL 类似于以下内容：  
 ![输入的 URL](../core/media/operational-data-url.png)
 
 4. 选择**负载**。 在窗口加载并连接到不同的 oData 源 BizTalkOperationalDataService.json 文件中。 操作完成时，仪表板显示有关你的环境的详细信息。

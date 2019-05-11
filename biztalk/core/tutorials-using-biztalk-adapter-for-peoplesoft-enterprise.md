@@ -1,5 +1,5 @@
 ---
-title: 教程： 使用 BizTalk 适配器 PeopleSoft 企业 |Microsoft 文档
+title: 教程：使用用于 PeopleSoft Enterprise 的 BizTalk 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f1d2030ba6e675104ab0e0cbc1781371f5b32db4
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 07c7396190e166a86dd89c8f350d25d01f7ad90a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286549"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393802"
 ---
-# <a name="tutorials-using-biztalk-adapter-for-peoplesoft-enterprise"></a>教程： 使用 BizTalk 适配器 PeopleSoft 企业
-Microsoft BizTalk Adapter for PeopleSoft 企业是开发和业务线进程管理和自动化的运行时环境。 本部分介绍两个设置和部署适配器，以便你可以快速入门中存在一个端到端过程的 SDK 示例。  
+# <a name="tutorials-using-biztalk-adapter-for-peoplesoft-enterprise"></a>教程：使用用于 PeopleSoft Enterprise 的 BizTalk 适配器
+用于 PeopleSoft Enterprise 的 Microsoft BizTalk 适配器是开发和运行时环境，用于业务线流程管理和自动化。 本部分介绍设置和部署该适配器，这样，您可以获得快速入门中存在的端到端练习的两个 SDK 示例。  
   
- 这些教程包括有关将适配器添加到 BizTalk Server 的详细分步信息，创建相应发送和接收端口，生成和部署这些示例中，以及处理示例的测试数据。  
+ 这些教程包含有关将适配器添加到 BizTalk Server 的详细分步信息，创建相应的发送和接收端口、 构建和部署示例，以及处理这些示例的测试数据。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [教程： 使用 PeopleSoft 企业的 BizTalk 适配器将数据写入 PeopleSoft 企业](../core/tutorial-use-the-peoplesoft-adapter-in-biztalk-server-to-write-data.md)  
+-   [教程：使用用于 PeopleSoft Enterprise 的 BizTalk 适配器将数据写入 PeopleSoft Enterprise](../core/tutorial-use-the-peoplesoft-adapter-in-biztalk-server-to-write-data.md)  
   
--   [教程： 使用 PeopleSoft 企业的 BizTalk 适配器从 PeopleSoft Enterprise 检索数据](../core/tutorial-use-the-peoplesoft-enterprise-adapter-to-get-data-in-biztalk-server.md)  
+-   [教程：使用用于 PeopleSoft Enterprise 的 BizTalk 适配器从 PeopleSoft Enterprise 中检索数据](../core/tutorial-use-the-peoplesoft-enterprise-adapter-to-get-data-in-biztalk-server.md)  
   
 -   [使用 PeopleSoft 系统](../core/using-a-peoplesoft-system.md)  
   
--   [执行 PeopleSoft 企业示例 Get](../core/executing-a-peoplesoft-enterprise-sample-get.md)
+-   [执行 PeopleSoft Enterprise 示例获取](../core/executing-a-peoplesoft-enterprise-sample-get.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 070925b09cf4e4896097be1aa88bc57fcd625626
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 804a71f3a0bb29fd41e51ec6102853df035e8d38
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992390"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371831"
 ---
 # <a name="configure-the-connection-uri-for-the-siebel-adapter"></a>配置 Siebel 适配器的连接 URI
 一个连接 URI 是一个连接字符串以连接到 Siebel 系统。 连接 URI 包含建立与 Siebel 系统的连接所需的各种参数。 必须指定此连接在设计时和运行的时的 URI。 在设计时，必须指定要连接到 Siebel 系统生成的元数据的 URI。 在运行时，必须指定要连接到 Siebel 系统以执行操作的 URI。  
@@ -65,7 +65,7 @@ ms.locfileid: "36992390"
    | **模板**  | 单击**添加适配器元数据**。 |
 
 
-3. 单击 **“添加”**。 此时[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]会打开。  
+3. 单击 **“添加”**。 [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]随即打开。  
 
 4. 在添加适配器向导中，选择**Wcf-siebel**。 选择的计算机上[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]安装和 BizTalk 数据库的名称。  
 

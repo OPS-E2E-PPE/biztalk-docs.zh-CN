@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10654 |Microsoft Docs
+title: 单一登录：Event 10654 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6ca59040b340d033ab6c355c0440378f09d87000
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 703462b0d4988a60bc0d6fc6b11629fe3dbe0502
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974478"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397650"
 ---
-# <a name="single-sign-on-event-10654"></a>单一登录： 事件 10654
+# <a name="single-sign-on-event-10654"></a>单一登录：事件 10654
 ## <a name="details"></a>详细信息  
 
 |                 |                                                            |
@@ -33,13 +33,13 @@ ms.locfileid: "36974478"
 |  消息正文   |    密码同步服务器 （适用于 Windows) 访问 denied.%r     |
 
 ## <a name="explanation"></a>解释  
- 此错误事件表明消息发送到 [名称] 服务器但回复受到阻止。 此错误可能由许多不同原因导致，如协议不正确或对服务器没有足够的安全权限。  
+ 此错误事件表示一条消息发送到 [名称] 服务器但回复受到阻止。 原因可能是多种不同原因，例如协议不正确或服务器上没有足够的安全权限。  
 
 ## <a name="user-action"></a>用户操作  
  若要解决此错误，请执行以下操作：  
 
 - 请注意此消息中的信息和事件日志中的任何相关信息，请与 Microsoft 产品支持服务联系。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [密码同步](../core/password-synchronization2.md)

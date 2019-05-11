@@ -1,5 +1,5 @@
 ---
-title: 程序集和项目安装异常管理示例 |Microsoft 文档
+title: 程序集和项目由异常管理示例安装 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 59bff4a6b5962410b758f73895105eac280fa6c8
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: ac0a14eeb6eaca71cf346c901b33b03f590ca563
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26006294"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392294"
 ---
 # <a name="assemblies-and-artifacts-installed-by-the-exception-management-samples"></a>程序集和项目安装异常管理示例
-下表列出的程序集和 ESB 异常管理示例安装其他项目。  
+下表列出了程序集和为 ESB 异常管理示例安装的其他项目。  
   
-|位置|类别|名称和版本的组件|  
+|Location|Category|名称和版本的组件|  
 |--------------|--------------|---------------------------------------|  
 |BizTalk 应用程序 GlobalBank.ESB|业务流程|GlobalBank.ESB.ExceptionHandling.Processes.EAIProcess|  
 |||GlobalBank.ESB.ExceptionHandling.Handlers.EAIGenericHandler|  
@@ -39,14 +39,14 @@ ms.locfileid: "26006294"
 |||GlobalBank.ESB.ExceptionHandling.Schemas.Request 版本 2.0.0.0|  
 |||GlobalBank.ESB.ExceptionHandling.Schemas.RequestDenied 版本 2.0.0.0|  
 |BizTalk 应用程序 GlobalBank.ESB|管道|GlobalBank.ESB.ExceptionHandling.Pipelines.GlobalFaultProcessor 版本 2.0.0.0|  
-|BizTalk 应用程序 GlobalBank.ESB|Resources|GlobalBank.ESB.ExceptionHandling.Handlers 版本 2.0.0.0|  
-|||GlobalBank.ESB.ExceptionHandling.Processes 版本 2.0.0.0|  
+|BizTalk 应用程序 GlobalBank.ESB|资源|GlobalBank.ESB.ExceptionHandling.Handlers 版本 2.0.0.0|  
+|||GlobalBank.ESB.ExceptionHandling.Processes Version 2.0.0.0|  
 |||GlobalBank.ESB.ExceptionHandling.Schemas 版本 2.0.0.0|  
 |||GlobalBank.ESB.ExceptionHandling.Pipelines 版本 2.0.0.0|  
 |BizTalk 应用程序 GlobalBank.ESB|策略||  
 |BizTalk 应用程序 GlobalBank.ESB|地图|GlobalBank.ESB.ExceptionHandling.Schemas.MapToReqDenied 版本 2.0.0.0|  
 |全局程序集缓存|程序集|GlobalBank.ESB.ExceptionHandling.Handlers 版本 2.0.0.0|  
-|||GlobalBank.ESB.ExceptionHandling.Processes 版本 2.0.0.0|  
+|||GlobalBank.ESB.ExceptionHandling.Processes Version 2.0.0.0|  
 |||GlobalBank.ESB.ExceptionHandling.Schemas 版本 2.0.0.0|  
 |||GlobalBank.ESB.ExceptionHandling.Pipelines 版本 2.0.0.0|  
-|%Program 文件 %\\BizTalk Server\Pipeline 组件|管道组件||
+|%Program Files %\\BizTalk Server\Pipeline 组件|管道组件||

@@ -2,15 +2,15 @@
 redirect_url: /biztalk/core/security-in-biztalk-adapter-for-jd-edwards-enterpriseone/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: b5d9b6668ff57670dcecdc0dae38c8326800b395
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: a9b8e91d5c34e134c9fe61eb122e4c1593962886
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24013580"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395386"
 ---
 # <a name="using-single-sign-on"></a>使用单一登录
-用于 JD Edwards EnterpriseOne 的 Microsoft BizTalk 适配器提供了单一登录 (SSO) 支持。 由企业单一登录工具创建的关联应用程序表示服务器系统（例如，JD Edwards EnterpriseOne）。  
+用于 JD Edwards EnterpriseOne 的 Microsoft BizTalk 适配器提供单一登录 (SSO) 支持。 由企业单一登录工具创建的关联应用程序代表诸如 JD Edwards EnterpriseOne 之类的服务器系统。  
   
 ## <a name="in-this-section"></a>本节内容  
   

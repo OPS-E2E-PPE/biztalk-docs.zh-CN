@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eaf5ed992864c11d360baa30f35983f0082213b3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e670d0cfe476d086eaa52273d356aece34e4601b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971070"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363622"
 ---
 # <a name="generate-wsdl-with-the-wcf-lob-adapter-sdk"></a>生成 WSDL 与 WCF LOB 适配器 SDK
 在开发的适配器，或从 LOB 系统更改返回的元数据，通常很有用，若要查看返回的适配器，验证是否生成您的操作的元数据从 Web 服务描述语言 (WSDL) 过程正确。 有几种方法生成的 WSDL。 本主题提供有关使用 svcutil.exe 和元数据搜索浏览控件的信息。  

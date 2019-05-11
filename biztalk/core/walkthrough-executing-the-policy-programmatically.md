@@ -1,5 +1,5 @@
 ---
-title: 演练： 以编程方式执行策略 |Microsoft Docs
+title: 演练：以编程方式执行策略 |Microsoft Docs
 ms.custom: ''
 ms.date: 2016-04-05
 ms.prod: biztalk-server
@@ -12,28 +12,28 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 666b674e30e548489478af898d5fe88c47d21f14
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3682be5a36ade434c6123f5d2b1a7f02c133232e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985718"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395360"
 ---
-# <a name="walkthrough-executing-the-policy-programmatically"></a>演练： 以编程方式执行策略
-本演练提供了分步过程调用中创建的策略[演练： 创建简单业务策略](../core/walkthrough-creating-a-simple-business-policy.md)演练从一个控制台应用程序以编程方式。  
+# <a name="walkthrough-executing-the-policy-programmatically"></a>演练：以编程方式执行策略
+本演练提供了分步过程调用中创建的策略[演练：创建简单业务策略](../core/walkthrough-creating-a-simple-business-policy.md)演练从一个控制台应用程序以编程方式。  
 
-## <a name="prerequisites"></a>必要條件  
- 必须完成[演练： 创建简单业务策略](../core/walkthrough-creating-a-simple-business-policy.md)演练在执行本演练之前。  
+## <a name="prerequisites"></a>先决条件  
+ 必须完成[演练：创建简单业务策略](../core/walkthrough-creating-a-simple-business-policy.md)演练在执行本演练之前。  
 
 ## <a name="overview-of-this-walkthrough"></a>本演练概述  
- 本概览包含两个过程，如下表所述。  
+ 本演练包含两个过程，如下表中所述。  
 
 |过程标题|过程说明|  
 |---------------------|---------------------------|  
-|使用 Policy.Execute 方法调用 ProcessPurchaseOrder 策略|提供了通过使用调用策略的分步说明**Policy.Execute**方法。|  
-|使用 RuleEngine.Execute 方法调用 ProcessPurchaseOrder 策略|提供了通过使用调用策略的分步说明**RuleEngine.Execute**方法。|  
+|若要使用 Policy.Execute 方法调用 ProcessPurchaseOrder 策略|提供了通过使用调用策略的分步说明**Policy.Execute**方法。|  
+|若要使用 RuleEngine.Execute 方法调用 ProcessPurchaseOrder 策略|提供了通过使用调用策略的分步说明**RuleEngine.Execute**方法。|  
 
-### <a name="to-invoke-the-processpurchaseorder-policy-by-using-the-policyexecute-method"></a>使用 Policy.Execute 方法调用 ProcessPurchaseOrder 策略  
+### <a name="to-invoke-the-processpurchaseorder-policy-by-using-the-policyexecute-method"></a>若要使用 Policy.Execute 方法调用 ProcessPurchaseOrder 策略  
 
 1. 启动**Microsoft Visual Studio**。  
 
@@ -47,9 +47,9 @@ ms.locfileid: "36985718"
    |         **项目类型**         |                        单击**Visual C#**。                         |
    |           **模板**           |                   单击**控制台应用程序**。                    |
    |             **名称**              |                       类型**ConsoleClient**。                       |
-   |           **位置**            |     指定要保存项目文件的文件夹。      |
+   |           **位置**            |     指定用于保存项目文件的文件夹。      |
    |         **解决方案名称**         |                     类型**ConsoleClientSol**。                      |
-   | **创建解决方案的目录** | 选中此复选框以便为解决方案文件创建目录。 |
+   | **创建解决方案的目录** | 选中此复选框以创建解决方案文件的目录。 |
 
 
 4. 单击“确定” 。 **ConsoleClient**项目应该显示在解决方案资源管理器。 如果看不到解决方案资源管理器，请单击**解决方案资源管理器**上**视图**菜单。  
@@ -96,9 +96,9 @@ ms.locfileid: "36985718"
 
 11. 上**构建**菜单上，单击**生成 ConsoleClient**。  
 
-12. 按 CTRL+F5 执行此应用程序。 确认的值**状态**字段设置为**Approved**。  
+12. 按 CTRL + F5 执行应用程序。 确认的值**状态**字段设置为**Approved**。  
 
-### <a name="to-invoke-the-processpurchaseorder-policy-by-using-the-ruleengineexecute-method"></a>使用 RuleEngine.Execute 方法调用 ProcessPurchaseOrder 策略  
+### <a name="to-invoke-the-processpurchaseorder-policy-by-using-the-ruleengineexecute-method"></a>若要使用 RuleEngine.Execute 方法调用 ProcessPurchaseOrder 策略  
 
 1.  在解决方案资源管理器中右键单击**引用**，然后单击**添加引用**。  
 
@@ -114,7 +114,7 @@ ms.locfileid: "36985718"
     policy.Execute(txd);   
     ```  
 
-4.  在注释掉的代码后面添加下列代码，以访问规则引擎数据库：  
+4.  用于获取到规则引擎数据库的访问权限的注释掉的代码后添加以下代码：  
 
     ```  
     //Get access to the SQL rule store   
@@ -165,7 +165,7 @@ ms.locfileid: "36985718"
 
 11. 上**构建**菜单上，单击**生成 ConsoleClient**。  
 
-12. 按 CTRL+F5 执行此应用程序。 确认的值**状态**字段设置为**Approved**。  
+12. 按 CTRL + F5 执行应用程序。 确认的值**状态**字段设置为**Approved**。  
 
 ## <a name="comments"></a>注释  
 
@@ -205,7 +205,7 @@ ms.locfileid: "36985718"
 
 -   您可能想要添加**console.readline （)** 末尾处的语句**Main**函数，以便应用程序等候你来终止该应用程序。  
 
--   在本演练中，客户端只向 ProcessPurchaseOrder 策略提交一个事实。 如果客户端需要提交到策略的多个事实，则需要创建一个事实数组并使用重载**Execute**将数组作为参数的方法。 下列示例代码演示了具体做法：  
+-   在本演练中，客户端提交到 ProcessPurchaseOrder 策略的仅一个事实。 如果客户端需要提交到策略的多个事实，则需要创建一个事实数组并使用重载**Execute**将数组作为参数的方法。 下面的示例代码演示如何执行此操作：  
 
     ```  
     Policy policy = new Policy("PolicyName");  

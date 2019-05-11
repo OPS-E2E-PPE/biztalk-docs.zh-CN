@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 部署 Web 项目 |Microsoft Docs
+title: 第 2 步：部署 Web 项目 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a99defc18cd38dc6f88a16b8c3fd0db2a8168426
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f39a8b60918f2dd97ea9442fca5dda961e2cafde
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013118"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363269"
 ---
-# <a name="step-2-deploy-the-web-project"></a>步骤 2： 部署 Web 项目
+# <a name="step-2-deploy-the-web-project"></a>第 2 步：部署 Web 项目
 ![步骤 2，共 4 步](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-2of4.gif "Step_2of4")  
   
- **完成时间：** 5 分钟  
+ **若要完成的时间：** 5 分钟  
   
- 在此步骤中将发布 Web 项目中生成[步骤 1： 使用适配器服务开发向导创建 Web 项目](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-1-use-the-adapter-service-development-wizard-to-create-the-web-project.md)到 Internet 信息服务 (IIS)。  
+ 在此步骤中将发布 Web 项目中生成[步骤 1:使用适配器服务开发向导创建 Web 项目](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-1-use-the-adapter-service-development-wizard-to-create-the-web-project.md)到 Internet 信息服务 (IIS)。  
   
-## <a name="prerequisites"></a>必要條件  
- 若要完成此步骤中，应当已完成[步骤 1： 使用适配器服务开发向导创建 Web 项目](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-1-use-the-adapter-service-development-wizard-to-create-the-web-project.md)。 你的 Web 服务器还必须安装以启用 HTTPS 通信的 SSL 证书。  
+## <a name="prerequisites"></a>先决条件  
+ 若要完成此步骤中，应当已完成[步骤 1:使用适配器服务开发向导创建 Web 项目](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-1-use-the-adapter-service-development-wizard-to-create-the-web-project.md)。 你的 Web 服务器还必须安装以启用 HTTPS 通信的 SSL 证书。  
   
 ## <a name="compile-and-deploy-the-web-project"></a>编译和部署 Web 项目  
   
@@ -49,11 +49,11 @@ ms.locfileid: "37013118"
   
 7. 若要验证是否已正确创建网站，启动 Internet Explorer 中，输入 **"<http://localhost/EchoWeb/EchoOutboundContract.svc>"** 中地址栏中，然后按 ENTER。 应显示一个页面，介绍 EchoOutboundContractClient。  
   
-## <a name="what-did-i-just-do"></a>内容回顾  
+## <a name="what-did-i-just-do"></a>我只需做了什么？  
  你只是 Web 项目发布到 IIS。  
   
 ## <a name="next-steps"></a>后续步骤  
- 现在，已编译并部署该项目，你可以转到[步骤 3： 创建应用程序定义文件](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-create-an-application-definition-file.md)  
+ 现在，已编译并部署该项目，你可以转到[步骤 3:创建应用程序定义文件](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-create-an-application-definition-file.md)  
   
 ## <a name="see-also"></a>请参阅  
  [教程 3：在 IIS 中托管 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-3-hosting-the-echo-adapter-in-iis.md)

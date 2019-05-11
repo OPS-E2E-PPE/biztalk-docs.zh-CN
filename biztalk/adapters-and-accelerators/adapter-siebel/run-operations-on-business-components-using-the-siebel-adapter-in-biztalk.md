@@ -15,12 +15,12 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 49236c834477111ec8b940b4b44585731994fcd3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b5ecdff997f4a1606f33faa821861f7b51f75450
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989294"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65371042"
 ---
 # <a name="run-operations-on-business-components-using-biztalk-server-and-the-siebel-adapter"></a>运行业务组件使用 BizTalk Server 和 Siebel 适配器的操作
 [!INCLUDE[adaptersiebel_short](../../includes/adaptersiebel-short-md.md)]业务组件上的图面可以调用的操作。 在业务组件上的操作可以划分为：  
@@ -115,7 +115,7 @@ ms.locfileid: "36989294"
 ### <a name="adding-ports"></a>添加端口  
  请确保为每个逻辑端口中指定以下属性。 中列出的名称*端口*列是在业务流程中显示的端口的名称。  
   
-|端口|属性|  
+|Port|属性|  
 |----------|----------------|  
 |FileIn|-设置**标识符**到*FileIn*<br />-设置**类型**到*FileInType*<br />-设置**通信模式**到*单向*<br />-设置**通信方向**到*接收*|  
 |LOBPort|-设置**标识符**到*LOBPort*<br />-设置**类型**到*LOBPortType*<br />-设置**通信模式**到*请求-响应*<br />-设置**通信方向**到*发送接收*|  

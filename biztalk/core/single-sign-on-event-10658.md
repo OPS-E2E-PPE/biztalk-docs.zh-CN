@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10658 |Microsoft Docs
+title: 单一登录：Event 10658 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dd6ea4cb33e6df4fe8a59fc1041861bdb530aaa4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b8ac64b60ba9a4d92452b3299f0e1f30cef192d6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982246"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397615"
 ---
-# <a name="single-sign-on-event-10658"></a>单一登录： 事件 10658
+# <a name="single-sign-on-event-10658"></a>单一登录：事件 10658
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                   |
@@ -30,15 +30,15 @@ ms.locfileid: "36982246"
 |  事件源   |                                      ENTSSO                                       |
 |    组件    |                                        N\A                                        |
 |  符号名称  |                   SSO_ERROR_PASSWORD_SYNC_ADAPTERS_START_FAILED                   |
-|  消息正文   | 外部适配器的密码同步启动失败。%r<br /><br /> 错误代码： %1 |
+|  消息正文   | 外部适配器的密码同步无法 start.%r<br /><br /> 错误代码： %1 |
 
 ## <a name="explanation"></a>解释  
- 此错误事件表示，无法启动外部适配器的密码同步。  
+ 此错误事件表示无法启动的外部适配器的密码同步。  
 
 ## <a name="user-action"></a>用户操作  
  若要解决此错误，请执行下列一项或多项操作:  
 
--   检查相关事件的应用程序和系统事件日志。  
+-   检查应用程序和系统事件日志中的关联事件。  
 
 -   验证适配器配置属性。  
 

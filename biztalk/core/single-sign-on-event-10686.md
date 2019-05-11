@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10686 |Microsoft Docs
+title: 单一登录：Event 10686 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 363ec7268ca3088a4d7658bbf4497099c810f92f
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 90306488cb77f40458cf0fccacae9050807a2e3d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36987983"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397379"
 ---
-# <a name="single-sign-on-event-10686"></a>单一登录： 事件 10686
+# <a name="single-sign-on-event-10686"></a>单一登录：事件 10686
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                           |
@@ -30,16 +30,16 @@ ms.locfileid: "36987983"
 |  事件源   |                                  ENTSSO                                   |
 |    组件    |                                    N\A                                    |
 |  符号名称  |                          SSO_INFO_REPLAY_STARTED                          |
-|  消息正文   | 正在重播存储的外部密码更改。%r<br /><br /> 重播文件： %1 |
+|  消息正文   | 正在重播存储的外部密码 changes.%r<br /><br /> 重播文件： %1 |
 
 ## <a name="explanation"></a>解释  
- 此消息事件表示，SSO 正在重播已存储的外部密码更改文件。 ENTSSO 服务器无法与 SSO 数据库取得联系时，密码同步使用重播文件。  
+ 此信息事件表明 SSO 正在重播存储的外部密码更改文件。 ENTSSO 服务器无法与 SSO 数据库取得联系时，密码同步使用重播文件。  
 
 ## <a name="user-action"></a>用户操作  
 
-- 不需要用户进行任何操作。  
+- 不不需要任何用户操作。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [如何配置密码同步](../core/how-to-configure-password-synchronization.md)  
 

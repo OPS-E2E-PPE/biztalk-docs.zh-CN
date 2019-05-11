@@ -1,5 +1,5 @@
 ---
-title: 步骤 2： 配置并启动应用程序 1 |Microsoft Docs
+title: 第 2 步：配置并启动应用程序 1 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,33 +12,33 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8edeb1cdb1f24774ec7c1e615377d81e4393c9dc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 07fbdba63325f44a803fe4e9c5e83fbd5d31240e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024547"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392774"
 ---
-# <a name="step-2-configure-and-start-the-application"></a>步骤 2： 配置并启动应用程序
+# <a name="step-2-configure-and-start-the-application"></a>第 2 步：配置并启动应用程序
 ![步骤 2 3](../adapters-and-accelerators/adapter-oracle-database/media/step-2of3.gif "Step_2of3")  
   
- **完成时间：** 10 分钟  
+ **若要完成的时间：** 10 分钟。  
   
- **目标：** 在此步骤中，配置并启动 EAISolution 应用程序。  
+ **目标：** 在此步骤中，你可以配置并启动 EAISolution 应用程序。  
   
- **目的：** 的配置是主要是关于绑定。  绑定可以在逻辑终结点（如业务流程端口或角色链接）与物理终结点（如发送/接收端口或参与方）之间创建映射。 这样即可在 BizTalk 业务解决方案的不同组件之间进行通信。 使用 BizTalk Server 管理控制台可以创建绑定。  
+ **目的：** 主要是关于绑定配置。  一个绑定和之间创建映射逻辑终结点，如业务流程端口或角色链接，物理终结点，如发送和接收端口或参与方。 这样，BizTalk 业务解决方案的不同组件之间的通信。 可以使用 BizTalk Server 管理控制台来创建绑定。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
  在开始此步骤之前，请注意以下要求：  
   
-- 在开始此步骤之前，必须完成[步骤 1： 将项目部署](../core/step-1-deploy-the-projects.md)。  
+- 在开始此步骤之前，必须完成[步骤 1:将项目部署](../core/step-1-deploy-the-projects.md)。  
   
-- 必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] Administrators 组成员的身份登录。  
+- 您必须作为的成员登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Administrators 组。  
   
 ## <a name="procedures"></a>过程  
- BizTalk 应用程序是 BizTalk Server 的一项功能，可使你更快、更轻松地对 BizTalk Server 业务解决方案进行部署、管理和故障排除。 BizTalk 应用程序是 BizTalk Server 业务解决方案中使用的项（称为“项目”）的逻辑分组。  有关详细信息，请参阅[什么是 BizTalk 应用程序？](../core/what-is-a-biztalk-application.md)。  在中[步骤 1： 将项目部署](../core/step-1-deploy-the-projects.md)，我们配置的应用程序名称为"EAISolution"，然后再部署项目。  因此，EAISolution 应用程序中包含一个业务流程、两个架构和一个映射。  
+ BizTalk 应用程序是一项功能会更加快速、 更轻松地部署、 管理和故障排除 BizTalk Server 业务解决方案的 BizTalk Server。 BizTalk 应用程序是称为"项目，"BizTalk Server 业务解决方案中使用的项的逻辑分组。  有关详细信息，请参阅[什么是 BizTalk 应用程序？](../core/what-is-a-biztalk-application.md)。  在[步骤 1:将项目部署](../core/step-1-deploy-the-projects.md)，我们配置的应用程序名称为"EAISolution"，然后再部署项目。  因此，EAISolution 应用程序包含业务流程、 两个架构和映射。  
   
-#### <a name="to-open-the-eaisolution-application-from-biztalk-server-administration-console"></a>从 BizTalk Server 管理控制台打开 EAISolution 应用程序  
+#### <a name="to-open-the-eaisolution-application-from-biztalk-server-administration-console"></a>若要从 BizTalk Server 管理控制台打开 EAISolution 应用程序  
   
 1. 单击**启动**，依次指向**所有程序**，指向[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]。  
   
@@ -46,7 +46,7 @@ ms.locfileid: "37024547"
   
 3. 展开**BizTalk 组**，展开**应用程序**，然后单击**EAISolution**。  
   
-   在中[第 2 课： 定义业务流程](../core/lesson-2-define-the-business-process.md)，我们创建了业务流程。  在此业务流程中，我们定义了逻辑端口。  在下面的过程中，您将定义物理端口并将物理端口绑定到逻辑端口。  
+   在 [第 2 课：定义业务流程](../core/lesson-2-define-the-business-process.md)，我们创建了业务流程。  在业务流程，我们定义了逻辑端口。  在以下过程中，将定义物理端口并将物理端口绑定到逻辑端口。  
   
 #### <a name="to-create-the-receiverequest-port"></a>创建 ReceiveRequest 端口  
   
@@ -84,7 +84,7 @@ ms.locfileid: "37024547"
   
 1.  从 BizTalk Server 管理控制台中下, **EAISolution**节点，右键单击**发送端口**，指向**新建**，然后单击**静态单向发送端口**。  
   
-2.  在“常规”选项卡上，执行下列操作：  
+2.  在常规选项卡上，执行以下步骤：  
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
@@ -108,7 +108,7 @@ ms.locfileid: "37024547"
   
 1.  从 BizTalk Server 管理控制台中下, **EAISolution**节点，右键单击**发送端口**，指向**新建**，然后单击**静态单向发送端口**。  
   
-2.  在“常规”选项卡上，执行下列操作：  
+2.  在常规选项卡上，执行以下步骤：  
   
     |使用此选项|执行的操作|  
     |--------------|----------------|  
@@ -128,7 +128,7 @@ ms.locfileid: "37024547"
   
 5.  单击两次 **“确定”** 。  
   
-#### <a name="to-bind-the-ports"></a>绑定端口  
+#### <a name="to-bind-the-ports"></a>若要将端口绑定  
   
 1.  从 BizTalk Server 管理控制台中，右键单击**EAISolution**，然后单击**配置**。  
   
@@ -145,18 +145,18 @@ ms.locfileid: "37024547"
   
 4.  单击**确定**保存配置。  
   
-#### <a name="to-start-the-application"></a>启动应用程序  
+#### <a name="to-start-the-application"></a>若要启动该应用程序  
   
 1.  从 BizTalk Server 管理控制台中，右键单击**EAISolution**，然后单击**启动**。  
   
 2.  从对话框中，单击**启动**。  
   
-## <a name="what-did-i-just-do"></a>内容回顾  
- 在此步骤中，您配置并启动了 EAIApplication 应用程序。  
+## <a name="what-did-i-just-do"></a>我只需做了什么？  
+ 在此步骤中，将配置并启动了 EAIApplication 应用程序。  
   
 ## <a name="next-steps"></a>后续步骤  
- 测试 EAI 解决方案如何处理中的消息[第 3 步： 测试解决方案](../core/step-3-test-the-solution2.md)。  
+ 测试 EAI 解决方案如何处理中的消息[步骤 3:测试解决方案](../core/step-3-test-the-solution2.md)。  
   
 ## <a name="see-also"></a>请参阅  
- [步骤 1： 部署项目](../core/step-1-deploy-the-projects.md)   
+ [步骤 1：将项目部署](../core/step-1-deploy-the-projects.md)   
  [步骤 3：测试解决方案](../core/step-3-test-the-solution2.md)

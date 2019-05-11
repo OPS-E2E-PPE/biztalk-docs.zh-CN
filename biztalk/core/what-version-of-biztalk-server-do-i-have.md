@@ -1,5 +1,5 @@
 ---
-title: 我的 BizTalk Server 是哪个版本？ | Microsoft Docs
+title: 是否有哪个版本的 BizTalk Server？ | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e7003f2d3c61345462ca484f627110a6e507e748
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 974999da3d74075fa218e078d1a757a83dbd325e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976974"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395151"
 ---
-# <a name="what-version-of-biztalk-server-do-i-have"></a>我的 BizTalk Server 是哪个版本？
+# <a name="what-version-of-biztalk-server-do-i-have"></a>是否有哪个版本的 BizTalk Server？
 您可能会运行不同版本和不同版本的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 本主题演示如何确定[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装信息，包括版本数、 版本和安装路径。  
 
 ## <a name="use-the-registry"></a>使用注册表
@@ -28,13 +28,13 @@ ms.locfileid: "36976974"
 
 2. 展开**HKEY_LOCAL_MACHINE**，展开**软件**，展开**Microsoft**，展开**BizTalk Server**，然后选择**3.0**。  
 
-3. 右窗格中显示了安装信息，包括：  
+3. 右窗格中显示安装的信息，包括：  
 
 
-   |      子项       |                                                                                                         Description                                                                                                          |
+   |      子键       |                                                                                                         Description                                                                                                          |
    |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |  **InstallPath**   |                                             列出你安装 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的安装路径。                                              |
-   | **ProductEdition** |                                                        列出版本，包括：<br /><br /> -开发人员<br />分支<br />标准<br />-企业                                                         |
+   |  **InstallPath**   |                                             列出安装的安装路径[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。                                              |
+   | **ProductEdition** |                                                        列出版本，包括：<br /><br /> -开发人员<br />分支<br />-   Standard<br />-企业                                                         |
    | ProductVersion | 列出基本产品版本。 有关特定产品版本，包括 service pack 和累积更新，请参阅[的 BizTalk 版本](http://social.technet.microsoft.com/wiki/contents/articles/7915.biztalk-versions.aspx)。 |
 
 ## <a name="use-the-control-panel"></a>使用控制面板

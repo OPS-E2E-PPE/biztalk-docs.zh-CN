@@ -1,5 +1,5 @@
 ---
-title: 项目设计器： 部署选项卡 |Microsoft 文档
+title: 项目设计器：部署选项卡 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -26,44 +26,44 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 972f3956a19d66d47238ee8170584b4faf6ba886
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b6cf82e112834dbacc021e3ce5564866a2e8cbbb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22264941"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395618"
 ---
-# <a name="project-designer-deployment-tab"></a>项目设计器：“部署”选项卡
-**部署**项目设计器的属性选项卡允许你配置 BizTalk 项目的部署属性。 你必须配置这两**服务器**和**配置数据库**（也称为 BizTalk 管理数据库） 与用于部署成功的集的属性。  
+# <a name="project-designer-deployment-tab"></a>项目设计器：部署选项卡
+**部署**项目设计器的属性选项卡允许你配置的 BizTalk 项目的部署属性。 您必须同时配置两者**服务器**并**配置数据库**（也称为 BizTalk 管理数据库） 属性作为组进行部署才能成功。  
   
 ## <a name="application-name"></a>应用程序名称  
- 指定在其中部署程序集的 BizTalk 应用程序。 如果此项为空，则项目将部署到默认应用程序中。  
+ 指定要在其中部署该程序集的 BizTalk 应用程序。 如果它为空，则项目将部署到默认应用程序。  
   
 ## <a name="configuration-database"></a>配置数据库  
- 使用此字段可为已部署的程序集指定 BizTalk 配置数据库的名称。 此项适用于已将 BizTalk 项目配置为部署项目的情况。  
+ 使用此字段为部署的程序集指定 BizTalk 配置数据库的名称。 如果将 BizTalk 项目配置为部署项目是如此。  
   
 > [!NOTE]
 >  BizTalk 配置数据库也称为 BizTalk 管理数据库。  
   
- 默认配置数据库的名称为 BizTalkMgmtDb。  
+ 默认配置的数据库名称为 BizTalkMgmtDb。  
   
-## <a name="server"></a>Server  
- 这是配置存储库（也称为 BizTalk 管理数据库或配置数据库）所在的服务器的名称。 如果将 BizTalk 项目配置为“部署”，则会将该 BizTalk 项目部署到此服务器。  
+## <a name="server"></a>“服务器”  
+ 这是服务器的配置存储库 （也称为 BizTalk 管理数据库或配置数据库） 所在的名称。 如果配置为"部署"。 在 BizTalk 项目到此服务器部署 BizTalk 项目  
   
 ## <a name="redeploy"></a>重新部署  
- 你使用**重新部署**属性以确定是否要删除现有的配置并重新创建的配置部署程序集，每次。 默认值是`True`。  
+ 您使用**重新部署**属性来确定是否删除现有配置并重新创建配置每次部署程序集。 默认值是 `True`。  
   
 ## <a name="install-to-global-assembly-cache"></a>安装到全局程序集缓存  
- 你使用**安装到全局程序集缓存**属性以指示如果[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]需要将 BizTalk 程序集安装到全局程序集缓存 (GAC)。  
+ 您使用**安装到全局程序集缓存**属性以指示如果[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]需要 BizTalk 程序集安装到全局程序集缓存 (GAC)。  
   
 ## <a name="restart-host-instances"></a>重新启动主机实例  
- 如果你设置**重新启动主机实例**到**True**，将项目部署时重新启动本地计算机上的主机实例[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]。 在开发周期中要进行更改并经常重新部署时，使用此选项将十分有用，因为您无需手动重新启动相关的主机实例。  
+ 如果您设置**重新启动主机实例**到**True**，将部署项目时重新启动本地计算机上的主机实例[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]。 这可在开发周期时，您要进行更改，并经常重新部署;您不需要手动重新启动相关的主机实例。  
   
- 如果不重新启动相关的主机实例，则最新更改可能无法反映到 BizTalk 应用程序上，因为旧版本可能仍存在于缓存中。 重新启动主机实例将清除缓存的程序集。  
+ 如果不重新启动相关的主机实例，最新的更改可能不反映在 BizTalk 应用程序中，因为旧版本仍可进行缓存。 重新启动主机实例将清除缓存的程序集。  
   
 ## <a name="enable-unit-testing"></a>启用单元测试  
- 指定是否为项目启用单元测试。  
+ 指定是否启用单元测试项目。  
   
-## <a name="see-also"></a>另请参阅  
- [如何部署 BizTalk 程序集，从 Visual Studio](../core/how-to-deploy-a-biztalk-assembly-from-visual-studio.md)   
+## <a name="see-also"></a>请参阅  
+ [如何部署 BizTalk 程序集从 Visual Studio](../core/how-to-deploy-a-biztalk-assembly-from-visual-studio.md)   
  [BizTalk 项目属性窗口](../core/biztalk-project-properties-window.md)

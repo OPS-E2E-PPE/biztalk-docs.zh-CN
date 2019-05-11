@@ -1,5 +1,5 @@
 ---
-title: 步骤 4： 创建 Sharepoint 应用程序以访问适配器 |Microsoft Docs
+title: 步骤 4：创建 Sharepoint 应用程序以访问适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,23 +12,23 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 15da47a4171d6bdf4f3b53e2208851bd15ecb0d6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 37ee9f9c458fc16d7934d64ddb736a5f0c7f30a2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986638"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363165"
 ---
-# <a name="step-4-create-a-sharepoint-application-to-access-the-adapter"></a>步骤 4： 创建 Sharepoint 应用程序以访问适配器
+# <a name="step-4-create-a-sharepoint-application-to-access-the-adapter"></a>步骤 4：创建 Sharepoint 应用程序以访问适配器
 ![步骤 4 4](../../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")  
   
- **完成时间：** 15 分钟  
+ **若要完成的时间：** 15 分钟  
   
  在此步骤需要使用 Business Data Catalog Definition Editor 工具中，创建应用程序定义文件并将其导入 Microsoft Office SharePoint Server。  
   
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
   
--   您应创建了一个应用程序文件中所述[第 3 步： 创建应用程序定义文件](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-create-an-application-definition-file.md)。  
+-   您应创建了一个应用程序文件中所述[步骤 3:创建应用程序定义文件](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-create-an-application-definition-file.md)。  
   
 -   必须运行 Microsoft 单一登录服务。  
   
@@ -68,7 +68,7 @@ ms.locfileid: "36986638"
   
 4.  在管理企业应用程序定义页上，单击**新项**。  
   
-5.  在创建企业应用程序定义页，将**显示名称**字段**EchoSSO**，然后设置**应用程序名称**字段**EchoSSO**。 此值应匹配中指定的 SecondarySsoApplicationId[第 3 步： 创建应用程序定义文件](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-create-an-application-definition-file.md)。  
+5.  在创建企业应用程序定义页，将**显示名称**字段**EchoSSO**，然后设置**应用程序名称**字段**EchoSSO**。 此值应匹配中指定的 SecondarySsoApplicationId[步骤 3:创建应用程序定义文件](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-3-create-an-application-definition-file.md)。  
   
 6.  在中**联系人电子邮件地址**字段中输入你的电子邮件地址，然后单击**确定**。  
   
@@ -91,7 +91,7 @@ ms.locfileid: "36986638"
 8.  单击**确定**，然后单击**完成**。  
   
 ## <a name="creating-a-shared-services-provider-and-importing-the-application-definition-file"></a>创建共享服务提供程序和导入应用程序定义文件  
- 共享服务提供程序 (SSP) 是共享的服务和及其支持资源的逻辑分组。 可以使用 SharePoint 中心管理控制台来创建 SSP。 此示例适用于任何 ssp。 有关创建 SSP 的详细信息，请参阅"一章概述： 创建和配置共享服务提供程序"处[ http://go.microsoft.com/fwlink/?LinkId=105119 ](http://go.microsoft.com/fwlink/?LinkId=105119)。  
+ 共享服务提供程序 (SSP) 是共享的服务和及其支持资源的逻辑分组。 可以使用 SharePoint 中心管理控制台来创建 SSP。 此示例适用于任何 ssp。 有关创建 SSP 的详细信息，请参阅"一章概述：创建和配置共享的服务提供程序"处[ http://go.microsoft.com/fwlink/?LinkId=105119 ](http://go.microsoft.com/fwlink/?LinkId=105119)。  
   
 ### <a name="to-import-the-application-definition-file"></a>若要导入应用程序定义文件  
   
@@ -151,7 +151,7 @@ ms.locfileid: "36986638"
   
 8.  单击**退出编辑模式**从页面右上角。  
   
-## <a name="what-did-i-just-do"></a>内容回顾  
+## <a name="what-did-i-just-do"></a>我只需做了什么？  
  您使用 SharePoint 3.0 中心管理导入应用程序定义，并创建使用此定义调用 Echo 适配器的 EchoGreetings 操作的 Web 部件。  
   
 ## <a name="next-steps"></a>后续步骤  

@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ea069140b9dd89fafa13fe57be9eefa17eceb790
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 49e34847ae9ad93861a1e9cf18698f500cce5263
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023707"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396311"
 ---
 # <a name="how-to-mark-biztalk-server-databases-for-customized-monitoring"></a>如何将 BizTalk Server 数据库标记为自定义监视
 如果已安装 Microsoft[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]管理包，您可以自定义的方式[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]监视数据库。 这可确保[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]管理包监视以下[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库：  
@@ -51,7 +51,7 @@ ms.locfileid: "37023707"
   
 4. 若要找到适用于 SQL Server 发现，在操作控制台工具栏上单击**查找**，然后在**寻找**文本框中输入**SQL 2008**搜索 SQL Server 2008。  
   
-5. 下**发现的类型： SQL 2008 DB**类别中，选择**为数据库引擎发现数据库**。  
+5. 下**发现类型：SQL 2008 DB**类别中，选择**数据库引擎发现数据库**。  
   
 6. 在操作控制台工具栏上，单击**重写**，然后指向**替代对象发现**。 您可以选择替代该发现，对于特定类型的对象或组中的所有对象。 选择要替代的对象类型组之后**重写属性**对话框随即打开。  
   

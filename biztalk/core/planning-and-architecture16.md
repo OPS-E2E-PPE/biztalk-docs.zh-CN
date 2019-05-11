@@ -1,5 +1,5 @@
 ---
-title: 体系结构和 TIBCO 企业消息服务的要求 |Microsoft 文档
+title: 体系结构和适用于 TIBCO Enterprise Message Service 的要求 |Microsoft Docs
 ms.custom: ''
 ms.date: 10/19/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a126f2bc835a0f1e69e5c1b1cd7c870bbf6bed73
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 3d8a008e02bcd656a08f9f5eb02b9dda497a7a57
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24013604"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395707"
 ---
 # <a name="architecture-and-limitations"></a>体系结构和限制
 
 ## <a name="overview"></a>概述
-本部分讨论了使用 Microsoft 的 BizTalk adapter TIBCO 企业消息服务 (EMS) 设置 TIBCO 企业消息服务时可能遇到的体系结构方案。  
+本部分讨论设置 TIBCO Enterprise Message Service 的 Microsoft BizTalk 适配器一起使用的 TIBCO Enterprise Message Service (EMS) 时可能会看到的体系结构方案。  
   
 ## <a name="next-steps"></a>后续步骤
   

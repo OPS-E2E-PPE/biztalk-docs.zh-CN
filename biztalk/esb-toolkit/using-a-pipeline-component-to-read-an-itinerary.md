@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c03e4e48b125d7a8236c66ce36e458dd2d51a6f7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 153f99e68e2c2457db44998b6c955c02af73a6c9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991118"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396497"
 ---
 # <a name="using-a-pipeline-component-to-read-an-itinerary"></a>使用管道组件读取路线
 在接收管道中的消息可以包含其定义其处理要求 （客户端的路线） 的 SOAP 标头中的元数据。 图 1 说明了使用 ESB 路线和 ESB 调度程序管道组件。  
@@ -92,10 +92,10 @@ ms.locfileid: "36991118"
 
   - 组件会升级系统 Properties.xsd 架构中定义的值使用下表中列出的四个 BizTalk 上下文属性。  
 
-    |“属性”|ReplTest1|  
+    |属性|ReplTest1|  
     |--------------|-----------|  
     |**ServiceName**|在路线中定义的当前服务实例的名称。|  
-    |**服务类型**|设置为**业务流程**或**消息传送**|  
+    |**ServiceType**|设置为**业务流程**或**消息传送**|  
     |**IsRequestResponse**|设置为 **，则返回 True**或**False**|  
     |**ServiceState**|设置为**挂起**|  
 
@@ -104,6 +104,6 @@ ms.locfileid: "36991118"
 
 - 它管理的类型的任何路线步骤执行**Messaging** ，并将提升路线。 ESB 调度程序组件是位置感知，执行消息传送处理周期，可能是根据其位置的逻辑**接收的入站、 发送传输**，**发送入站**，或**接收出站**。 ESB 调度程序管道组件调用 ESB 路线消息传递服务 Esb.config 文件中指定。 默认情况下，此组件用于路由和转换的配置属性相关联与以下服务：  
 
-  - **Microsoft.Practices.ESB.Services.Transform。** 此服务执行针对入站消息的负载的 BizTalk 映射。 服务验证转换要求并更新包含该文档规范名称和消息类型的 BizTalk 上下文属性。 ESB 调度程序管道组件的相应属性中所示，这是转换服务的名称，ESB 调度程序就会执行此服务。  
+  - **Microsoft.Practices.ESB.Services.Transform.** 此服务执行针对入站消息的负载的 BizTalk 映射。 服务验证转换要求并更新包含该文档规范名称和消息类型的 BizTalk 上下文属性。 ESB 调度程序管道组件的相应属性中所示，这是转换服务的名称，ESB 调度程序就会执行此服务。  
 
   - <strong>Microsoft.Practices.ESB.Services.Routing。</strong>此服务使用的冲突解决程序和适配器提供程序框架设置相应的终结点路由信息。 ESB 调度程序管道组件的相应属性中所示，这是路由服务的名称，ESB 调度程序就会执行此服务。

@@ -1,5 +1,5 @@
 ---
-title: 策略 |Microsoft 文档
+title: 策略 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -23,12 +23,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0bd05d6cf67d89ee811cac45ac3950697db74f59
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f4d46929ab985008e826bab36ab6e1648d8602e9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22264429"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394978"
 ---
 # <a name="policies"></a>策略
 策略是一组逻辑规则。 您可以撰写一个策略版本，保存该策略版本，通过将该策略版本应用于事实来对其进行测试，并在得到满意结果后，发布该策略版本并将其部署到产品环境中。  
@@ -50,5 +50,5 @@ ms.locfileid: "22264429"
 ## <a name="dynamic-policy-updates"></a>动态策略更新  
  使用动态策略更新，您可以修改策略而不会影响业务流程的运行。 您可以创建和部署策略的更新版本，主机应用程序可以近乎实时地合并更新。 此更新不需要更改任何代码，因此，可以避免重新开发和重新部署应用程序所带来的开销。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [业务规则引擎](../core/business-rules-engine.md)

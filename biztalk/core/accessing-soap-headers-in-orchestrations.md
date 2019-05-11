@@ -16,18 +16,18 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 516b2bcc57bef507a028f30c61fd329a5fd7a598
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 01260e95c6e4bb1676c2bca589660e21812f2d9a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22225917"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65361934"
 ---
 # <a name="accessing-soap-headers-in-orchestrations"></a>访问在业务流程中的 SOAP 标头
 对于已定义的和未知的 SOAP 标头，您可以在业务流程中访问 SOAP 标头上下文属性。 有关属性架构和上下文属性的详细信息，请参阅[属性架构](../core/property-schemas.md)。  
   
 ## <a name="defined-soap-header-context-properties"></a>已定义的 SOAP 标头上下文属性  
- 在业务流程中的定义的 SOAP 标头上下文属性需要属性架构。 属性架构必须具有的目标命名空间**http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**，和**属性架构基**属性设置为**MessageContextPropertyBase**。 属性架构中的每个根元素名称必须与定义的 SOAP 标头的根元素名称匹配。 然后，就可以访问使用属性架构和属性名称的命名空间的上下文属性的值。 属性架构的命名空间是上面列出的目标命名空间不同。 尽管属性架构的命名空间可以是任意字符串，它通常默认项目的名称。  
+ 在业务流程中的定义的 SOAP 标头上下文属性需要属性架构。 属性架构必须具有目标命名空间**http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**，和**Property Schema Base**属性设置为**MessageContextPropertyBase**。 属性架构中的每个根元素名称必须与定义的 SOAP 标头的根元素名称匹配。 然后，就可以访问使用属性架构和属性名称的命名空间的上下文属性的值。 属性架构的命名空间是上面列出的目标命名空间不同。 尽管属性架构的命名空间可以是任意字符串，它通常默认项目的名称。  
   
  下面的示例演示访问属性架构命名空间中，SOAP 标头上下文属性**SOAPHeader**，及属性名称**OrigDest**:  
   

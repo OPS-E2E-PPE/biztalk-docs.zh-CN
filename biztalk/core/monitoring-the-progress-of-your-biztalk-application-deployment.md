@@ -17,24 +17,24 @@ caps.latest.revision: 20
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 07beea810ff64c807685b8170009d5204ede1af7
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 39f45fe2456286c4fb05c86f7b18b2d4c48a8665
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001150"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394402"
 ---
 # <a name="monitoring-the-progress-of-your-biztalk-application-deployment"></a>监视 BizTalk 应用程序部署的进度
-您可以用两种方式 BizTalk 应用程序部署的进度：  
+你可以监视 BizTalk 应用程序部署在两个方面的进度：  
   
-- **BizTalk 安装日志**： 您可以参阅 BizTalk Server 生成的安装日志。 安装日志文件位于 %SystemDrive%\Documents and 设置\\<*当前用户*\>\Application Data\Microsoft\BizTalk server\deployment。  
+- **BizTalk 安装日志**:可以参考 BizTalk Server 生成的安装日志。 安装日志文件位于 %SystemDrive%\Documents and 设置\\<*当前用户*\>\Application Data\Microsoft\BizTalk server\deployment。  
   
-- **本地事件日志**： 你可以跟踪的本地事件日志中的安装进度。 因此，您可以在每个服务器基础上跟踪自定义安装操作。  
+- **本地事件日志**:您可以跟踪本地事件日志中的安装的进度。 因此，你可以基于每个服务器跟踪自定义安装操作。  
   
-- **Windows 安装程序日志**: Microsoft Windows 安装程序创建自定义操作的操作记录在本地计算机上的日志文件。 您可以使用 msiexec 命令的 /log 选项指定此日志文件。 有关详细信息，请参阅 Windows Installer 的文档。  
+- **Windows 安装程序日志**:Microsoft Windows 安装程序会创建记录的自定义操作的操作在本地计算机上的日志文件。 可以使用 msiexec 命令的 /log 选项指定此日志文件。 有关详细信息，请参阅 Windows 安装程序的文档。  
   
 > [!IMPORTANT]
->  部署或取消部署属性架构可能会暴露敏感数据，进而在跟踪中暴露敏感信息。 只要部署或取消部署包含属性架构的程序集，事件查看器就会在 Windows 应用程序事件日志中记录该事件。 您应该在事件日志中检查这些消息，以确保所有程序集部署活动均符合您的敏感数据策略。 (部署为事件日志中生成的消息:"用户"{1}"已部署程序集"{0}"包含属性架构"。 取消部署为事件日志中生成的消息:"用户"{1}"已取消部署程序集"{0}"包含属性架构"。)  
+>  部署或取消部署属性架构可能暴露敏感数据，并随后暴露在跟踪的敏感信息。 每当部署或已取消部署包含属性架构的程序集时，事件查看器记录的事件在 Windows 应用程序事件日志中。 应检查这些消息，以确保所有程序集部署活动均符合你的策略的任何敏感数据在事件日志。 (部署为事件日志中生成的消息："用户"{1}"已部署程序集"{0}"包含属性架构"。 取消部署事件日志中生成的消息为："用户"{1}"已取消部署程序集"{0}"包含属性架构"。)  
   
 ## <a name="see-also"></a>请参阅  
  [部署 BizTalk 应用程序](../core/deploying-biztalk-applications.md)

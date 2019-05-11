@@ -12,12 +12,12 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f25bec37d7ee6ec02db5db28e32ce8ed5b62f724
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 14c7c7e8f6ba2632e68ed81e98a562e5ef316120
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996574"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394641"
 ---
 # <a name="design-of-the-esb-exception-management-framework"></a>ESB 异常管理框架设计
 用于管理异常的一致且可重用模式是所有开发项目; 一个核心考虑因素它们有助于最大程度提高可维护性，并使其更轻松地支持在部署后的应用程序。  

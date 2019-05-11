@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: af083b0e38d372c18bca4496033983cd7f579347
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8807fb2cf17bfffba48e8a71ed3ca7c623b8589f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014798"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65367310"
 ---
 # <a name="biztalk-fileact-and-interact-adapters-end-to-end-tutorial"></a>BizTalk FileAct 和交互适配器端到端教程
 The Microsoft®[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]端到端教程提供了有关如何使用的特定信息[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]和[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]来设置实时和存储和转发消息交换方案。  
@@ -34,7 +34,7 @@ The Microsoft®[!INCLUDE[swift_adapter](../../includes/swift-adapter-md.md)]端�
   
 - 测试方案  
   
-  在本教程中，您将扮演两个角色： 发送方和接收方。 您将创建将消息发送和接收端口。  
+  在本教程中，您将扮演两个角色：发送方和接收方。 您将创建将消息发送和接收端口。  
   
 ## <a name="in-this-section"></a>本节内容  
   

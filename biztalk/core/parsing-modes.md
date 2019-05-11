@@ -1,5 +1,5 @@
 ---
-title: 分析模式 |Microsoft 文档
+title: 解析模式 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,15 +15,15 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf8f9b2618b8cafd7813f08217457227a0f21809
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 72955f1dd560a442e011e176007defa236d39386
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263301"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395043"
 ---
-# <a name="parsing-modes"></a>分析模式
-分析模式是一个属性的 schemaInfo 记录，两种模式： 速度和复杂性。 在 BizTalk 架构编辑器中，可以配置分析器优化属性。  
+# <a name="parsing-modes"></a>解析模式
+解析模式是具有两种模式的 schemaInfo 记录的属性： 速度和复杂度。 分析程序优化属性可以配置 BizTalk 架构编辑器中。  
   
 ## <a name="example"></a>示例  
   
@@ -32,7 +32,7 @@ ms.locfileid: "22263301"
 root_reference="document" parser_optimization="complexity" />.  
 ```  
   
- 在速度模式下，分析器将尝试在流中显示适合数据。 例如，给定以下架构。  
+ 在速度模式下，分析器会尝试以适应数据在流中的显示方式。 例如，给定以下架构。  
   
 ```  
 <schema>  
@@ -47,13 +47,13 @@ root_reference="document" parser_optimization="complexity" />.
 </schema>  
 ```  
   
- 和输入的消息。  
+ 并输入的消息。  
   
 ```  
 ,1,2,3,4  
 ```  
   
- 速度模式下下面的 XML 文档被获得。  
+ 使用速度模式下面的 XML 文档被获取。  
   
 ```  
 <Root>  
@@ -64,7 +64,7 @@ root_reference="document" parser_optimization="complexity" />.
 </Root>  
 ```  
   
- 复杂性模式中，相同的架构生成以下输出。  
+ 复杂性模式下，相同的架构将生成以下输出。  
   
 ```  
 <Root>  
@@ -77,9 +77,9 @@ root_reference="document" parser_optimization="complexity" />.
 </Root>  
 ```  
   
- 在复杂性模式下，平面文件分析引擎使用自顶向下和自下而上的分析过程中，并尝试以更准确地适应数据。 在速度模式下，分析器将尝试在流中显示适合数据。  
+ 在复杂性模式下，平面文件解析引擎使用自上而下和自下而上的分析，并会尝试以更准确地适应数据。 在速度模式下，分析器会尝试以适应数据在流中的显示方式。  
   
- 如果例如具有具有必需的元素的可选元素。  
+ 如果你有具有所需元素的可选元素为例。  
   
 ```  
 <schema>  
@@ -92,7 +92,7 @@ root_reference="document" parser_optimization="complexity" />.
   
 ```  
   
- 你必须使用复杂性模式来正确分析数据，因为分析器表示的架构内部作为。  
+ 您必须使用复杂性模式可以正确地分析数据，因为分析器表示的架构在内部作为。  
   
 ```  
 <schema>  
@@ -103,5 +103,5 @@ root_reference="document" parser_optimization="complexity" />.
          Record3 (required)  
 ```  
   
-## <a name="see-also"></a>另请参阅  
- [使用平面文件分析引擎](../core/using-the-flat-file-parsing-engine.md)
+## <a name="see-also"></a>请参阅  
+ [使用平面文件解析引擎](../core/using-the-flat-file-parsing-engine.md)

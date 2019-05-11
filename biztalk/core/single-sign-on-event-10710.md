@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10710 |Microsoft Docs
+title: 单一登录：Event 10710 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 888468da03c01f654bd550ce210b02c4a03ad40b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 62c43785a276ce33412b509af7a034697caab9f7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989918"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397256"
 ---
-# <a name="single-sign-on-event-10710"></a>单一登录： 事件 10710
+# <a name="single-sign-on-event-10710"></a>单一登录：事件 10710
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                                                                             |
@@ -30,14 +30,14 @@ ms.locfileid: "36989918"
 |  事件源   |                                                                                   ENTSSO                                                                                    |
 |    组件    |                                                                                     N\A                                                                                     |
 |  符号名称  |                                                                        SSO_INFO_PS_WIN_CHANGE_DAMPED                                                                        |
-|  消息正文   | Windows 密码更改被阻止（检测为复制和丢弃）。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> Windows 帐户: %2 %r<br /><br /> 客户端用户： %3 |
+|  消息正文   | Windows 密码更改被阻止 （检测为重复 discarded).%r，因而<br /><br /> 跟踪 ID: %1 %r<br /><br /> Windows 帐户: %2 %r<br /><br /> 客户端用户： %3 |
 
 ## <a name="explanation"></a>解释  
- 此信息事件表明 Windows 密码更改由于被检测为重复而被丢弃。  
+ 此信息事件表明 Windows 密码更改已被丢弃，因为它被检测为重复。  
 
 ## <a name="user-action"></a>用户操作  
 
-- 不需要用户进行任何操作。  
+- 不不需要任何用户操作。  
 
   有关详细信息，请参阅下列资源：  
 

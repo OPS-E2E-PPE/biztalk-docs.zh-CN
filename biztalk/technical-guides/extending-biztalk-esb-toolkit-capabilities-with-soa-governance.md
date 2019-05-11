@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a770599e082d2f25062588247acfeb6a0449b974
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 74763e6bd88501e88606689075dbb701595abdad
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977502"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393543"
 ---
 # <a name="extending-biztalk-esb-toolkit-capabilities-with-soa-governance"></a>使用 SOA Governance 扩展 BizTalk ESB 工具包功能
 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]随[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]是一系列工具和扩展的库和[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]支持松散耦合和动态的消息传递体系结构的功能。 它充当快速中介服务及其使用者之间提供了工具的中间件。 在运行时，启用最大的灵活性[!INCLUDE[esbToolkit_short](../includes/esbtoolkit-short-md.md)]简化了松散耦合的服务终结点组合和管理服务的交互。  
@@ -72,12 +72,12 @@ ms.locfileid: "36977502"
 ## <a name="using-the-sentinet-biztalk-server-extensions"></a>使用 Sentinet BizTalk Server 扩展  
  在本部分中，我们介绍了如何使用 Sentinet BizTalk Server 扩展并展示上面提到的功能。  
   
-### <a name="prerequisites"></a>必要條件  
+### <a name="prerequisites"></a>先决条件  
  在本白皮书中的说明假定有以下安装和配置：  
   
--   Visual Studio 2012。  
+-   Visual Studio 2012.  
   
--   BizTalk Server 2013。 有关说明，请参阅[安装 BizTalk Server 2013](http://msdn.microsoft.com/library/jj248688\(v=bts.80\).aspx)。  
+-   BizTalk Server 2013. 有关说明，请参阅[安装 BizTalk Server 2013](http://msdn.microsoft.com/library/jj248688\(v=bts.80\).aspx)。  
   
 -   BizTalk Server ESB 工具包。 有关说明，请参阅[安装和配置 Microsoft BizTalk ESB 工具包](http://msdn.microsoft.com/library/jj684558\(v=bts.80\).aspx)。  
   
@@ -133,7 +133,7 @@ ms.locfileid: "36977502"
   
 7.  指定**操作**并**关键字**Sentinet 冲突解决程序扩展的属性。 我们将使用这些属性来唯一地解析为我们之前添加到 Sentinet 存储库的服务。 有也可以指定 Sentinet 冲突解决程序扩展的其他属性。 若要了解有关这些属性的详细信息，请参阅 Sentinet BizTalk 扩展用户指南。  
   
-    |“属性”|Description|  
+    |属性|Description|  
     |--------------|-----------------|  
     |操作|消息操作标头，用于唯一地标识而调用的服务操作。 此操作标头是服务 WSDL 的一部分，可在服务 WSDL、 中或从 Sentinet 管理控制台用户界面 （在下操作的请求消息属性。|  
     |关键字|提供关键字 (例如**TestKeyword**) 分配给 Sentinet 管理控制台中的服务。|  

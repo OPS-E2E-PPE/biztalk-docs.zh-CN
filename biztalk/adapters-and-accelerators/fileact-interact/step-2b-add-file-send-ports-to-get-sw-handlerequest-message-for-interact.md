@@ -1,5 +1,5 @@
 ---
-title: '步骤 2B： 添加 FILE 发送端口以捕获 sw: handlerequest 消息为 InterAct 存储和转发 （拉取） 方案 |Microsoft Docs'
+title: '步骤 2B:添加 FILE 发送端口以捕获 sw: handlerequest 消息为 InterAct 存储和转发 （拉取） 方案 |Microsoft Docs'
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,15 +12,15 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 56cee834f5974d993dfeaa8fbfee8313eeb74064
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 36ca62623cc6dd78f9c980fa35c3f0e744bc2666
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37004438"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65366115"
 ---
-# <a name="step-2b-add-file-send-ports-to-capture-the-swhandlerequest-message-for-the-interact-store-and-forward-pull-scenario"></a>步骤 2B： 添加 FILE 发送端口以捕获 sw: handlerequest 消息为 InterAct 存储和转发 （拉取） 方案
-在开始此步骤之前，必须完成[步骤 2A： 添加文件接收位置为 InterAct 存储和转发 （拉取） 方案](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-interact-store-and-forward-scenario.md)。  
+# <a name="step-2b-add-file-send-ports-to-capture-the-swhandlerequest-message-for-the-interact-store-and-forward-pull-scenario"></a>步骤 2B:添加 FILE 发送端口以捕获 sw: handlerequest 消息为 InterAct 存储和转发 （拉取） 方案
+在开始此步骤之前，必须完成[步骤 2A:为 InterAct 存储和转发 （拉取） 方案添加文件接收位置](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-interact-store-and-forward-scenario.md)。  
 
 ### <a name="to-add-a-file-send-port-to-capture-the-swhandlerequest-message"></a>若要添加一个 FILE 发送端口以捕获 sw: handlerequest 消息  
 
@@ -65,5 +65,5 @@ ms.locfileid: "37004438"
 13. 单击“确定” 。  
 
 ## <a name="see-also"></a>请参阅  
- [步骤 2A： 为 InterAct 存储和转发 （拉取） 方案添加文件接收位置](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-interact-store-and-forward-scenario.md)   
- [步骤 2C：为 InterAct 存储和转发（拉取）方案添加 INTERACT 发送端口](../../adapters-and-accelerators/fileact-interact/step-2c-add-interact-send-port-for-interact-store-and-forward-pull-scenario.md)
+ [步骤 2A:为 InterAct 存储和转发 （拉取） 方案添加文件接收位置](../../adapters-and-accelerators/fileact-interact/step-2a-add-file-receive-locations-for-interact-store-and-forward-scenario.md)   
+ [步骤 2c:为 InterAct 存储和转发 （拉取） 方案添加 INTERACT 发送端口](../../adapters-and-accelerators/fileact-interact/step-2c-add-interact-send-port-for-interact-store-and-forward-pull-scenario.md)

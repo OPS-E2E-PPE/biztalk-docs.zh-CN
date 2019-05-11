@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 14aea45a1032a2e01e9560d9ab47e85e75506836
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3011bea808e59ec0ee80f3ac030937a9987d9233
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994606"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373250"
 ---
 # <a name="manually-configure-a-physical-port-binding-to-the-sap-adapter"></a>手动配置到 SAP 适配器的物理端口绑定
 配置[!INCLUDE[adaptersap](../../includes/adaptersap-md.md)]为使用自定义 WCF 绑定[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 
@@ -29,14 +29,14 @@ ms.locfileid: "36994606"
 ## <a name="port-overview"></a>端口概述
 在部署后，适配器，您将能够发送和接收来自 SAP 系统的消息，通过使用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]管理控制台。 部署该适配器的步骤会有所不同，具体取决于：  
   
-- 之间的通信方向[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]和[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。 您可以选择配置发送、 接收、 发送-接收端口或接收发送端口。 下表对这些选项进行了概括介绍：  
+- 之间的通信方向[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]和[!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]。 您可以选择配置发送、 接收、 发送-接收端口或接收发送端口。 下表总结了你的选择：  
   
   |端口方向|通信模式|可供选择的通信方向|  
   |---|---|---|  
   |Send|单向|我将始终在发送消息此端口上。|  
-  |Receive|单向|始终在此端口上接收消息。|  
-  |发送-接收|请求-响应|我将发送请求并接收响应。|  
-  |接收-发送|要求响应|我将接收请求并发送响应。|  
+  |Receive|单向|我始终将接收此端口上的消息。|  
+  |发送接收|请求-响应|我将发送请求并接收响应。|  
+  |接收发送|要求响应|我将接收请求并发送响应。|  
   
    有关详细信息，请参阅[创建一个发送端口](../../core/how-to-create-a-send-port2.md)，或[创建一个接收端口](../../core/how-to-create-a-receive-port.md)。
   

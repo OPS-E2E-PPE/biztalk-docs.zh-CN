@@ -12,71 +12,71 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ac6ef809104e1ce11385cb88d94547d0de496af1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9fa1744a29d17be79766839c0f85a2a416110646
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009902"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393355"
 ---
-# <a name="sendports-biztalk-server-sample"></a>SendPorts（BizTalk Server 示例）
+# <a name="sendports-biztalk-server-sample"></a>SendPorts （BizTalk Server 示例）
 SendPorts 示例演示如何枚举和管理通过使用发送端口**Microsoft.BizTalk.ExplorerOM**管理类。  
 
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
 
 - 您必须具有 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理权限才能使用此示例中的管理对象。  
 
-- Windows PowerShell 脚本需要 Windows PowerShell 执行策略以允许脚本执行。 有关详细信息请参阅：[检查执行策略](http://go.microsoft.com/fwlink/?LinkId=128930)。  
+- Windows PowerShell 脚本需要 Windows PowerShell 执行策略以允许脚本执行。 有关详细信息，请参阅：[检查执行策略](http://go.microsoft.com/fwlink/?LinkId=128930)。  
 
 ## <a name="what-this-sample-does"></a>本示例的用途  
- 此示例演示如何使用**BtsCatalogExplorer**并**发送端口**类**Microsoft.BizTalk.ExplorerOM**命名空间以管理中的发送端口[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境。 本示例是使用 Microsoft [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 编写的。 本主题中还包含 Windows PowerShell 示例脚本。 本示例将演示以下操作：  
+ 此示例演示如何使用**BtsCatalogExplorer**并**发送端口**类**Microsoft.BizTalk.ExplorerOM**命名空间以管理中的发送端口[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境。 在 Microsoft 中编写示例[!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)]。 本主题中还包含 Windows PowerShell 示例脚本。 此示例演示了以下操作：  
 
 1. 通过使用连接到 BizTalk 管理数据库**BtsCatalogExplorer**类。  
 
 2. 创建两个新发送端口命名为 myStaticOnewaySendPort1 和 myDynamicTwowaySendPort1。 myStaticOnewaySendPort1，正如其名，是一个静态单向发送端口。  创建与示例目标 URL 使用 HTTP 传输 http://sample1 。 myDynamicTwowaySendPort1 创建为动态双向发送端口。  
 
-3. 枚举 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 环境中的发送端口。 此示例枚举应包括两个新发送端口。  
+3. 枚举中的发送端口[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境。 此示例枚举应包括两个新发送端口。  
 
-4. 删除这两个新发送端口。  
+4. 正在删除两个新发送端口。  
 
-5. 配置新发送端口。 此示例演示的配置应用于名为 myStaticOnewaySendPort1 的示例发送端口。 此示例应用的配置包括以下内容：  
+5. 配置新的发送端口。 此示例演示的配置将应用到名为 myStaticOnewaySendPort1 的示例发送端口。 此示例应用的配置如下所示：  
 
    -   启用**端口处理前的请求消息**跟踪消息正文的选项。  
 
    -   启用**端口处理后的请求消息**跟踪消息正文的选项。  
 
-   -   指定发送端口用于传出消息的加密证书。  
+   -   指定要使用对传出消息的发送端口加密证书。  
 
-   -   针对一组消息指定用于登记的筛选器。  
+   -   指定针对一组消息登记的筛选器。  
 
    -   添加映射以转换消息。  
 
-6. 更改两个新发送端口上的发送端口状态。  执行本示例将对 myStaticOnewaySendPort1 进行以下状态更改：  
+6. 更改两个新发送端口的发送端口状态。  执行该示例将对 myStaticOnewaySendPort1 进行以下的状态更改：  
 
-   -   将状态更改为已启动。  
+   -   若要开始将状态更改。  
 
-   -   将状态更改为已停止。  
+   -   若要停止将状态更改。  
 
-   -   将状态更改为已绑定。 绑定状态与注销状态相同。  
+   -   绑定状态更改。 绑定的状态为已取消登记与相同。  
 
 ## <a name="where-to-find-this-sample"></a>本示例的所在位置  
  本示例位于以下 SDK 位置中：  
 
- \<*示例路径*\>\Admin\ExplorerOM\SendPorts  
+ \<*Samples Path*\>\Admin\ExplorerOM\SendPorts  
 
  下表显示了本示例中的文件及其用途说明：  
 
 
 |                    文件                     |                                                 Description                                                  |
 |------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-|                  SendPorts.cs                  | 本示例中演示的操作所需的 [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 源文件。 |
-| SendPorts.sln、SendPorts.csproj、SendPorts.suo |                                  示例的解决方案文件和项目文件。                                  |
+|                  SendPorts.cs                  | [!INCLUDE[btsVCSharp](../includes/btsvcsharp-md.md)] 此示例中演示的操作的源文件。 |
+| SendPorts.sln, SendPorts.csproj, SendPorts.suo |                                  示例的解决方案文件和项目文件。                                  |
 
 ## <a name="building-and-running-this-sample"></a>生成并运行本示例  
 
 #### <a name="to-build-this-sample"></a>生成示例  
 
-1. 在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中，打开解决方案文件 SendPorts.sln。  
+1. 在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，打开解决方案文件 SendPorts.sln。  
 
 2. 在主菜单上，单击**构建**，然后单击**生成解决方案**。  
 
@@ -84,7 +84,7 @@ SendPorts 示例演示如何枚举和管理通过使用发送端口**Microsoft.B
 
 1.  打开命令窗口并导航到以下文件夹：  
 
-     \<*示例路径*\>\Admin\ExplorerOM\SendPorts\bin\Debug  
+     \<*Samples Path*\>\Admin\ExplorerOM\SendPorts\bin\Debug  
 
 2.  运行文件 SendPorts.exe。  
 

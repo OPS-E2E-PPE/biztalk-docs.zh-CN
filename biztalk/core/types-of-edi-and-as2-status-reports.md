@@ -1,5 +1,5 @@
 ---
-title: EDI 和 AS2 状态报表类型 |Microsoft 文档
+title: EDI 和 AS2 状态报告的类型 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,27 +12,27 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7babd5238b6520907551618fae8e61887dc08914
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 37979dfb79e17bda659e1bd670fb7a9231ff7135
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286413"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393770"
 ---
 # <a name="types-of-edi-and-as2-status-reports"></a>EDI 和 AS2 状态报告的类型
-此部分中的主题描述不同类型的 EDI 和 AS2 可显示的状态报告**组中心数据库**页[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。  
+在本部分中的主题介绍不同类型的 EDI 和 AS2 状态报告上可显示**组中心**页[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [EDI 交换和关联的 ACK 状态报表](../core/edi-interchange-and-correlated-ack-status-report.md)  
+-   [EDI 交换和相关 ACK 状态报告](../core/edi-interchange-and-correlated-ack-status-report.md)  
   
--   [Batch 状态报表](../core/batch-status-report.md)  
+-   [批状态报告](../core/batch-status-report.md)  
   
--   [交换聚合报表](../core/interchange-aggregation-report.md)  
+-   [交换聚合报告](../core/interchange-aggregation-report.md)  
   
--   [事务集聚合报表](../core/transaction-set-aggregation-report.md)  
+-   [事务集聚合报告](../core/transaction-set-aggregation-report.md)  
   
--   [AS2 消息和相关的 MDN 状态报表](../core/as2-message-and-correlated-mdn-status-report.md)  
+-   [AS2 消息和相关 MDN 状态报告](../core/as2-message-and-correlated-mdn-status-report.md)  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [EDI 和 AS2 状态报告](../core/edi-and-as2-status-reporting.md)

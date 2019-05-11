@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2f337efa7b72a40c37a4cc3f42a2bd5d846923dc
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8579726d4e97d7bce91dce2a27687528e6064794
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36970950"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397039"
 ---
 # <a name="plan-for-your-biztalk-solution"></a>规划您的 BizTalk 解决方案
 主要设计目标之一[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]是为了适应尽可能多的处理方案提供最大的灵活性。 由于此极大的灵活性，BizTalk 解决方案的开发人员所面临的主要挑战之一是确定如何在中提供的功能的最佳使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]以最好地满足其业务需要。 规划[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]可以分解为不同的阶段下面进行了汇总。  
@@ -31,9 +31,9 @@ ms.locfileid: "36970950"
   
 - 在解决方案中实现业务流程要求是什么？  
   
-- 文档的吞吐量要求： 解决方案的最大可承受吞吐量要求是什么？  
+- 文档的吞吐量要求：该解决方案的最大可承受吞吐量要求有哪些？  
   
-- 延迟要求： 响应能力如何解决方案需要位于要求-响应和请求-响应方案？  
+- 延迟要求：响应能力如何解决方案需要求-响应和请求-响应方案？  
   
 - 如何从文档负载高峰期期间恢复解决方案？  
   
@@ -45,7 +45,7 @@ ms.locfileid: "36970950"
   
 - 将 BizTalk 应用程序正在消耗与不相关的数据库[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]？ 例如，如果 BizTalk 应用程序过多占用 SQL Server 数据库使用 SQL 适配器中的表，表有效地配置？  
   
-### <a name="hardware-considerations"></a>硬件考虑事项  
+### <a name="hardware-considerations"></a>硬件注意事项  
  范围解决方案时创建的高级硬件关系图，包括以下：  
   
 -   计算机体系结构 （如 x86、 x64 和 IA64）  

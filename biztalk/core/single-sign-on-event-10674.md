@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10674 |Microsoft Docs
+title: 单一登录：Event 10674 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97f67258bb1ee9118c6f462d0eded4b8f238707b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f10f76d2d1be51271912b00110bb02f7009cfbc0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996126"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397488"
 ---
-# <a name="single-sign-on-event-10674"></a>单一登录： 事件 10674
+# <a name="single-sign-on-event-10674"></a>单一登录：事件 10674
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -30,10 +30,10 @@ ms.locfileid: "36996126"
 |  事件源   |                                                                                                                                                                                           ENTSSO                                                                                                                                                                                            |
 |    组件    |                                                                                                                                                                                             N\A                                                                                                                                                                                             |
 |  符号名称  |                                                                                                                                                                        SSO_WARN_WINDOWS_MAPPING_CONFLICT_NOT_ALLOWED                                                                                                                                                                        |
-|  消息正文   | 外部密码更改将导致多个 Windows 帐户更改。%r<br /><br /> 此操作已被阻止，因为此外部系统的适配器配置为不允许映射冲突。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> 外部帐户: %3 %r<br /><br /> Windows 帐户 1: %4 %r<br /><br /> Windows 帐户 2: %5 |
+|  消息正文   | 外部密码更改将导致对多个 Windows account.%r 的更改<br /><br /> 这已被阻止，因为此外部系统的适配器配置为不允许映射 conflicts.%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> 外部帐户: %3 %r<br /><br /> Windows 帐户 1: %4 %r<br /><br /> Windows 帐户 2: %5 |
 
 ## <a name="explanation"></a>解释  
- 此警告事件表示，外部密码更改将导致多个 Windows 帐户更改。 已阻止此更改，因为适配器配置不允许进行此项更改。  
+ 此警告事件表示外部密码更改可能导致对多个 Windows 帐户的更改。 已阻止此更改，因为适配器配置不允许它。  
 
 ## <a name="user-action"></a>用户操作  
  若要解决此错误，请执行以下操作：  
@@ -42,6 +42,6 @@ ms.locfileid: "36996126"
 
 ## <a name="more-info"></a>详细信息
 
-- **密码同步适配器属性： 选项** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+- **密码同步适配器属性：选项** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
 
 - [密码同步](../core/password-synchronization2.md)

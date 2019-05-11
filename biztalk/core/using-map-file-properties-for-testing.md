@@ -12,21 +12,21 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 45c494a1239d215c24ef2cb3394f5bb202a50955
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 16604b6fe3efc0f54a2fb1ad6ef7890765a3df6b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985270"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396839"
 ---
 # <a name="using-map-file-properties-for-testing"></a>使用映射文件属性进行测试
 
 ## <a name="overview"></a>概述
-通过右键单击解决方案资源管理器中的映射可显示该映射的属性，该页控制着测试期间的许多重要行为：  
+映射的属性，可通过在解决方案资源管理器，在地图上右击控制着测试期间的许多重要行为：  
   
-- 根据源架构和目标架构验证输入和输出实例  
+- 对源和目标架构的输入和输出实例的验证  
   
-- 选择是创建输入实例还是使用现有的输入实例  
+- 是否要创建输入的实例或使用现有的选项  
   
 - 输入和输出测试实例的格式  
   

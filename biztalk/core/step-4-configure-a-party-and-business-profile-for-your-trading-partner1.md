@@ -1,5 +1,5 @@
 ---
-title: 步骤 4： 配置参与方和业务配置文件贸易 Partner1 |Microsoft Docs
+title: 步骤 4：为贸易 Partner1 配置参与方和业务配置文件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,22 +12,22 @@ caps.latest.revision: 40
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: aa53034af1a07ca55574e2e37eecb7c0875f8a2e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: db279e32601603a8f539d6e95627f522e5f7bd85
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36989678"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392571"
 ---
-# <a name="step-4-configure-a-party-and-business-profile-for-your-trading-partner"></a>步骤 4： 为贸易合作伙伴配置参与方和业务配置文件
+# <a name="step-4-configure-a-party-and-business-profile-for-your-trading-partner"></a>步骤 4：为您的贸易合作伙伴配置参与方和业务配置文件
 ![步骤 4 9](../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-4of9.gif "Step_4of9")  
   
- 在此步骤中，你将为你的贸易合作伙伴 Fabrikam 配置一个参与方和业务配置文件，以便向组织发送 850 消息，并接收返回的 997 确认消息。  
+ 在此步骤中，为贸易合作伙伴 Fabrikam 向组织发送 850 消息并接收返回的 997 确认消息配置参与方和业务配置文件。  
   
-## <a name="prerequisites"></a>必要條件  
- 你必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 必须以成员的身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Administrators 组。  
   
-### <a name="to-configure-a-party-and-business-profile-for-your-trading-partner"></a>为你的贸易合作伙伴配置参与方和业务配置文件  
+### <a name="to-configure-a-party-and-business-profile-for-your-trading-partner"></a>若要为您的贸易合作伙伴配置参与方和业务配置文件  
   
 1. 打开[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]通过单击管理控制台**启动**，依次指向**所有程序**，指向**Microsoft BizTalk Server**，然后单击**BizTalk Server 管理**。  
   
@@ -44,12 +44,12 @@ ms.locfileid: "36989678"
 7. 在中**配置文件属性**对话框中，在**常规**页上，输入`Fabrikam_Profile`中**名称**文本框。  
   
    > [!NOTE]
-   >  一个配置文件时创建的参与方，名为*PartyName*（_p） 自动创建。 你可以使用此配置文件，不必创建新的配置文件。 若要重命名配置文件，请右键单击该配置文件，然后选择**属性**。 在中**常规**页上，指定配置文件的名称。  
+   >  一个配置文件时创建的参与方，名为*PartyName*（_p） 自动创建。 您可以使用此配置文件，而不是创建一个新。 若要重命名配置文件，请右键单击该配置文件，然后选择**属性**。 在中**常规**页上，指定配置文件的名称。  
   
 8. 单击“确定” 。  
   
 ## <a name="next-steps"></a>后续步骤  
- 配置接收位置 (**fromTHEM_4010_850**) 以从 Fabrikam 接收 850 消息中所述[步骤 5： 配置接收端口和接收位置](../core/step-5-configure-a-receive-port-and-receive-location.md)。  
+ 配置接收位置 (**fromTHEM_4010_850**) 中所述从 Fabrikam 接收 850 消息[步骤 5:配置接收端口和接收位置](../core/step-5-configure-a-receive-port-and-receive-location.md)。  
   
 ## <a name="see-also"></a>请参阅  
  [配置 EDI 属性](../core/configuring-edi-properties.md)

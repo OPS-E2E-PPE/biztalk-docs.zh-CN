@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 36ede86266ea02b05249aa3edd655f3b10a27f3a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 16b12c72a6b62979f3bccb8f73aed999e4cdaf1d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37007582"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393984"
 ---
 # <a name="performing-unit-testing"></a>执行单元测试
 单元测试集中于组件级和基本上是一个通过/失败测试，以便验证各个组件的 BizTalk 解决方案达到预期。 具有多个选项用于单元测试您的 BizTalk 解决方案。  
@@ -34,7 +34,7 @@ ms.locfileid: "37007582"
  单元测试 BizTalk 解决方案其他常用的两个工具都**BizUnit**并**NUnit**。 **BizUnit**无缝配合，Visual Studio Team System Test Edition。 同样， **NUnit**测试可以轻松地修改，使它们可以作为运行的是 Visual Studio Team System Test Edition 中。 有关这些工具的详细信息，请参阅[用于测试工具](~/technical-guides/tools-for-testing.md)。  
 
 > [!NOTE]  
->  利用**BizUnit**并**NUnit**不受 Microsoft，因此 Microsoft 不保证这些程序的适用性。 使用这些程序完全需要您自担风险。  
+>  利用**BizUnit**并**NUnit**不受 Microsoft，因此 Microsoft 不保证这些程序的适用性。 使用这些程序是完全由您自己承担。  
 
 ## <a name="using-the-biztalk-server-sdk"></a>使用 BizTalk Server SDK  
  你可以执行单元测试的实用程序中提供的单个 BizTalk 项目[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]SDK。 下表提供了可用于单元测试的 SDK 中的实用工具的摘要：  
@@ -42,13 +42,13 @@ ms.locfileid: "37007582"
 
 |    **实用工具**     |                                                                                                                                                                                                                                                                   **用途**                                                                                                                                                                                                                                                                   |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| AS2 发送方实用工具 |                                                                                                                                                                                              可以将 AS2 消息发送到一台计算机上的网站。 此实用工具可模拟从单独的计算机发送 AS2 消息的过程。                                                                                                                                                                                              |
-|     DSDump.exe     |                                                                                  允许您转储文档架构结构，它是一个或多个 XSD 架构的内存中轻量表示形式，有或没有平面文件批注。 此工具在您获取诸如 $Root$0$3$2 这样的解析引擎错误并且需要对其进行解码时很有帮助。 $ 后的数字表示基于 0 的索引或记录，这些索引或记录显示在文档架构中。                                                                                   |
-|     FFAsm.exe      |                                                                                                                                                                        运行平面文件组装器组件，通过模拟发送管道来直接调用它，从而允许您看到它如何将用户的 XML 文档序列化或组装到平面文件文档中。                                                                                                                                                                        |
-|     FFDasm.exe     |                                                                                                                                                                 运行平面文件拆装器组件，通过模拟接收管道来直接调用它，从而允许您看到它如何将用户的平面文件文档解析或拆装到一个或多个 XML 文档中。                                                                                                                                                                  |
+| AS2 发送方实用工具 |                                                                                                                                                                                              可以将 AS2 消息发送到一台计算机上的网站。 此实用程序模拟从单独的计算机上发送的 AS2 消息。                                                                                                                                                                                              |
+|     DSDump.exe     |                                                                                  允许您转储文档架构结构，它是内存中轻量表示形式的一个或多个 XSD 架构，有或没有平面文件批注。 获取解析引擎错误时，此工具很有帮助如 $Root 0 美元 $ 3 个 2 美元，并且需要对其进行解码。 $ 后的数字表示基于 0 的索引或记录的文档架构中的显示方式。                                                                                   |
+|     FFAsm.exe      |                                                                                                                                                                        运行平面文件组装器组件，通过模拟发送管道，使您可以查看如何序列化或用户的 XML 文档组装到平面文件文档直接调用它。                                                                                                                                                                        |
+|     FFDasm.exe     |                                                                                                                                                                 运行平面文件拆装器组件，通过模拟接收管道，使您可以查看如何解析或拆装到一个或多个 XML 文档的用户的平面文件文档直接调用它。                                                                                                                                                                  |
 |    Pipeline.exe    | 运行发送或接收管道;接受一个或多个输入的文档及其部分、 XSD 架构和相关的信息;并生成输出文档后管道运行。 Pipeline.exe 不访问[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库，因此包含访问的 BizTalk 框架组装器和拆装器组件的管道[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]可能不支持在执行过程的数据库。 |
-|     XMLAsm.exe     |                                                                                                                                                                    运行 XML 组装器组件，通过模拟发送管道来直接调用它，从而允许您看到它如何将用户的 XML 文档序列化、组装或封装到输出 XML 文档中。                                                                                                                                                                    |
-|    XMLDasm.exe     |                                                                                                                                                                运行 XML 拆装器组件，通过模拟接收管道来直接调用它，从而允许您看到它如何将用户的 XML 文档解析、拆装或解封装到一个或多个 XML 文档中。                                                                                                                                                                |
+|     XMLAsm.exe     |                                                                                                                                                                    运行 XML 组装器组件，直接调用它，通过模拟发送管道来，可以查看如何序列化、 组装或信封用户的 XML 文档转换为输出 XML 文档。                                                                                                                                                                    |
+|    XMLDasm.exe     |                                                                                                                                                                运行 XML 拆装器组件，直接调用它，通过模拟接收管道来，可以查看如何分析拆装或解用户的 XML 文档到一个或多个 XML 文档。                                                                                                                                                                |
 
  有关详细信息中提供的实用工具[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]SDK，请参阅[SDK 中的实用工具](http://go.microsoft.com/fwlink/?LinkId=154387)(<http://go.microsoft.com/fwlink/?LinkId=154387>)。  
 

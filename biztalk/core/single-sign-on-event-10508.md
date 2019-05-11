@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10508 |Microsoft Docs
+title: 单一登录：Event 10508 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1e4a9e90fdbb760b1cf76c44675fb62e5848aa0b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1660ff6d5bca3a00c892e364f1df30030540b52b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022827"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395262"
 ---
-# <a name="single-sign-on-event-10508"></a>单一登录： 事件 10508
+# <a name="single-sign-on-event-10508"></a>单一登录：事件 10508
 ## <a name="details"></a>详细信息  
 
 |                 |                                                            |
@@ -33,12 +33,12 @@ ms.locfileid: "37022827"
 |  消息正文   |                已删除 SSO 服务。                |
 
 ## <a name="explanation"></a>解释  
- 此信息性事件表示已删除 SSO 服务。  
+ 此信息事件表明 SSO 服务已删除。  
 
 ## <a name="user-action"></a>用户操作  
 
-- 不需要用户进行任何操作。  
+- 不不需要任何用户操作。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [使用 SSO](../core/using-sso.md)

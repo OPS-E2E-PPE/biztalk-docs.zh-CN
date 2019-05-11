@@ -1,5 +1,5 @@
 ---
-title: 程序集和项目安装路线上负载增加示例 |Microsoft 文档
+title: 程序集和路线接入点示例安装的项目 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,17 +12,17 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 34b9c6337a502a394dc01c54f3beda6cc8c9413c
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f60f70070d871c8c72ac9581468d1c0409304556
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22290125"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392218"
 ---
-# <a name="assemblies-and-artifacts-installed-by-the-itinerary-on-ramp-sample"></a>程序集和项目安装路线上负载增加示例
-下表列出的程序集和项目安装[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]路线入口示例。  
+# <a name="assemblies-and-artifacts-installed-by-the-itinerary-on-ramp-sample"></a>程序集和项目安装路线接入点示例
+下表列出的程序集和项目安装[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]路线接入点示例。  
   
-|位置|类别|名称和版本的组件|  
+|Location|Category|名称和版本的组件|  
 |--------------|--------------|---------------------------------------|  
 |BizTalk 应用程序 GlobalBank.ESB|业务流程|GlobalBank.ESB.Itinerary.Processes.ProcessAndRespond|  
 |BizTalk 应用程序 GlobalBank.ESB|发送端口|（无）|  
@@ -30,7 +30,7 @@ ms.locfileid: "22290125"
 |BizTalk 应用程序 GlobalBank.ESB|接收位置|（无）|  
 |BizTalk 应用程序 GlobalBank.ESB|架构|（无）|  
 |BizTalk 应用程序 GlobalBank.ESB|管道|（无）|  
-|BizTalk 应用程序 GlobalBank.ESB|Resources|（无）|  
+|BizTalk 应用程序 GlobalBank.ESB|资源|（无）|  
 |BizTalk 应用程序 GlobalBank.ESB|策略|（无）|  
 |BizTalk 应用程序 GlobalBank.ESB|地图|（无）|  
 |BizTalk 应用程序 GlobalBank.ESB|程序集|（无）|  

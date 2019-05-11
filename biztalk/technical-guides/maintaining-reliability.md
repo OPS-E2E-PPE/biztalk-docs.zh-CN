@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: faf58e24442d2a17bace7b0d56393d1c793b9cd9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7569b0abf5745a7809f371486492de2d880ad3d0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985670"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396280"
 ---
 # <a name="maintaining-reliability"></a>维护可靠性
 本部分提供有关如何解决可靠性问题的信息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]系统。 这些问题可能会发现通过在中执行的日常维护检查[例程维护清单](../technical-guides/routine-maintenance-checklists.md)本文档的部分。  
@@ -76,11 +76,11 @@ ms.locfileid: "36985670"
 ##  <a name="BKMK_BTSGrp"></a> 确保多个服务器是 BizTalk 组的一部分  
  若要确保系统的可靠性，至少两个物理 BizTalk server 应是 BizTalk 组的一部分。  如果需要将服务器添加到 BizTalk 组，请记住以下：  
 
-- 一台服务器只能与一个 BizTalk 组相关联。 如果某个服务器已属于其他组，则必须首先从其当前组中删除该服务器，然后才可以将该服务器添加到新的组。 有关从 BizTalk 组中删除服务器的详细信息，请参阅"如何删除服务器从将组"中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助[ http://go.microsoft.com/fwlink/?LinkId=155577 ](http://go.microsoft.com/fwlink/?LinkId=155577)。  
+- 一台服务器只能与一个 BizTalk 组相关联。 如果服务器已属于另一个组，则必须首先删除该服务器从其当前组之前可以将其添加到新的组。 有关从 BizTalk 组中删除服务器的详细信息，请参阅"如何删除服务器从将组"中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助[ http://go.microsoft.com/fwlink/?LinkId=155577 ](http://go.microsoft.com/fwlink/?LinkId=155577)。  
 
-- 与 BizTalk Server 环境中不同服务器关联的 BizTalk 组除交换消息之外不会进行任何其他交互。  
+- 与 BizTalk Server 环境中的不同服务器相关联的 BizTalk 组除交换消息不进行交互。  
 
-- 必须在要添加到 BizTalk 组的计算机上安装 BizTalk Server 运行时。  
+- 必须在你想要添加到 BizTalk 组的计算机上安装 BizTalk Server 运行时。  
 
 > [!NOTE]  
 >  若要执行本主题中的过程，必须为 SSO Administrators 组的成员和 Windows Administrators 组的成员身份登录。  
@@ -96,7 +96,7 @@ ms.locfileid: "36985670"
    > [!NOTE]  
    >  若要查看有关服务器的信息，请右键单击服务器，指向**视图**，然后单击**组中心页**。  
 
-#### <a name="to-add-a-server-to-a-biztalk-group"></a>向 BizTalk 组添加服务器  
+#### <a name="to-add-a-server-to-a-biztalk-group"></a>若要将服务器添加到 BizTalk 组  
 
 1. 在你想要添加到 BizTalk 组的计算机，单击**启动**，单击**所有程序**，单击**Microsoft [!INCLUDE[btsBizTalkServer2006r3ui](../includes/btsbiztalkserver2006r3ui-md.md)]** ，然后单击**BizTalk Server 配置**。  
 

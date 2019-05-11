@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2f3ce047de1c926e6e144b1351954774c1d3edb5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8697cd25af9622057d9bd3224fe93f26b214716d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37022587"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65366662"
 ---
 # <a name="interact-adapter-store-and-forward"></a>InterAct 适配器存储和转发
 在存储和转发 (SnF) 模式下，消息在发送时，传递到的队列和目标队列中的检索。 当使用 SnF，响应来自 SWIFTNet SnF 本身并不包含从响应方的任何反馈。  

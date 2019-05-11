@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10714 |Microsoft Docs
+title: 单一登录：Event 10714 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 30523330ccaabddb94acf1ca1eba7d5c46c5fe0c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 087592befd7f65241fdc413886f8245467f1e534
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36985294"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397208"
 ---
-# <a name="single-sign-on-event-10714"></a>单一登录： 事件 10714
+# <a name="single-sign-on-event-10714"></a>单一登录：事件 10714
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                   |
@@ -30,15 +30,15 @@ ms.locfileid: "36985294"
 |  事件源   |                                              ENTSSO                                               |
 |    组件    |                                                N\A                                                |
 |  符号名称  |                             SSO_WARN_PS_NOTIFICATION_RETRIES_EXPIRED                              |
-|  消息正文   | 重试过期，丢弃通知。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器： %2 |
+|  消息正文   | 重试过期，丢弃 notification.%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器： %2 |
 
 ## <a name="explanation"></a>解释  
- 此警告事件表明密码同步通知重试已过期，并已丢弃通知。  
+ 此警告事件表示密码同步通知重试已过期，并已丢弃通知。  
 
- 将密码更改（从 Windows 到外部系统）传送到密码同步适配器时，密码同步适配器确认已经成功处理了密码更改。 如果在指定时间段内未发生密码更改，或者如果在更改期间发生了其他问题，则密码更改将再次传送到密码同步适配器。 只能在有限次数（最大重试次数）内完成此操作，然后将丢弃密码更改通知。  
+ 将密码更改 （从 Windows 到外部系统) 传递到密码同步适配器，密码同步适配器确认它已成功处理密码更改。 如果在指定的时间内，密码更改不会发生，或者在更改期间会出现其他问题，是再次将密码更改传递到密码同步适配器。 这是有限的数量的时间 （最大重试），则密码更改通知将被丢弃。  
 
 ## <a name="user-action"></a>用户操作  
- 若要解决此警告问题，请执行以下操作：  
+ 若要解决此警告，请执行以下操作：  
 
 - 检查有相关事件的系统和应用程序事件日志。  
 

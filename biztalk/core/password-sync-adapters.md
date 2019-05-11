@@ -1,5 +1,5 @@
 ---
-title: 密码同步适配器 |Microsoft 文档
+title: 密码同步适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b7ff11e1cc98e953e89705b715db3709b4c4ffb
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 34ab34666c8b86cc10c9071f199c1b619032f0ab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22264125"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395010"
 ---
 # <a name="password-sync-adapters"></a>密码同步适配器
-A*密码同步适配器*是传播密码更改与其他非 Windows 系统的组件。 尽管密码同步适配器是类似于传统上单一登录应用程序，但它们有几处差异：  
+一个*密码同步适配器*是传播密码更改与非 Windows 系统的组件。 尽管密码同步适配器类似于传统的单一登录应用程序，但它们具有几个区别：  
   
--   它们进行管理使用专门的接口。  
+-   它们是使用专门的接口进行管理。  
   
--   它们描述了在配置存储区中使用专用的 XML 格式。  
+-   它们介绍在配置存储区中使用专用的 XML 格式。  
   
--   Host Integration Server 使用的专用的功能来组织中配置存储区的适配器。  
+-   在 host Integration Server 使用的专用的功能来组织中配置存储的适配器。  
   
 ## <a name="in-this-section"></a>本节内容  
  [密码同步编程体系结构](../core/password-sync-programming-architecture.md)  

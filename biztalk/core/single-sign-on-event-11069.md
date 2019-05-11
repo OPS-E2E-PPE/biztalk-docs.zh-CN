@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 11069 |Microsoft Docs
+title: 单一登录：事件 11069 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1e9df27e7a5ac5f4fcedb10935fb8e63a6e0bea0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dc680a452c6e70f6e10623779da1ca312f62a1fc
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36986158"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396080"
 ---
-# <a name="single-sign-on-event-11069"></a>单一登录： 事件 11069
+# <a name="single-sign-on-event-11069"></a>单一登录：事件 11069
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                                                                                                       |
@@ -28,12 +28,12 @@ ms.locfileid: "36986158"
 | 产品版本 |                                                                              [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                                                               |
 |    事件 ID     |                                                                                                         11069                                                                                                         |
 |  事件源   |                                                                                                        ENTSSO                                                                                                         |
-|    组件    |                                                                                                          N/A                                                                                                          |
+|    组件    |                                                                                                          不可用                                                                                                          |
 |  符号名称  |                                                                                             SSO_WARN_PS_PCNS_NOT_ALLOWED                                                                                              |
-|  消息正文   | 此 SSO 服务器当前未配置为允许从 PCNS 更改 Windows 密码。 使用“ssoconfig-allowPS PCNS yes”或 SSO 管理 MMC。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 客户端用户： %2 |
+|  消息正文   | 此 SSO 服务器当前未配置为允许从 PCNS 进行 Windows 密码更改。 使用 ssoconfig-allowPS PCNS yes 或 SSO 管理 MMC.%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 客户端用户： %2 |
   
 ## <a name="explanation"></a>解释  
- 此 SSO 服务器当前未配置为允许从 PCNS 更改 Windows 密码。  
+ 此 SSO 服务器当前未配置为允许从 PCNS 进行 Windows 密码更改。  
   
 ## <a name="user-action"></a>用户操作  
  若要允许从 PCNS，Windows 密码更改，在**服务器管理单元**，**密码同步属性**选项卡上，选择**允许从 PCNS 进行密码同步。**  

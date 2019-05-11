@@ -17,47 +17,47 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0d5780be22259fcd118ab70a0bc80174b53a9f27
-ms.sourcegitcommit: 5abd0ed3f9e4858ffaaec5481bfa8878595e95f7
+ms.openlocfilehash: b8968a30f9e78947cee20ddc10914413041fbac9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2017
-ms.locfileid: "25975795"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395938"
 ---
 # <a name="what-is-a-bam-definition-schema"></a>什么是 BAM 定义架构？
 BAM 定义架构定义由业务分析员创建的观察模型的结构。  
   
- 该架构定义 BAM 定义 XML 文档的结构，其中包括该文档的元素和子元素。 例如，根元素为 BAM 定义，在 BAM 定义内有以下元素：  
+ 架构定义文档的元素和子元素包括 BAM 定义 XML 文档的结构。 例如，根元素是 BAM 定义，并在 BAM 定义有以下元素：  
   
 -   活动  
   
--   视图  
+-   Views  
   
 -   多维数据集  
   
 -   警报  
   
 > [!NOTE]
->  如果 BAM 定义 XML 包含两个视图和用户只具有一个视图，请在调用权限**GetViewDefinition**，用户重新获取这两个视图的定义。  
+>  如果 BAM 定义 XML 包含两个视图，并且用户只具有一个视图，请在调用权限**GetViewDefinition**，用户将获取这两个视图定义。  
   
- 该架构定义文档约束。 例如，这些约束规定一些元素只能引用其他某些特定元素。  
+ 该架构定义文档约束。 约束规定，例如，一些元素只能引用其他某些特定元素。  
   
- 你可以创建包含 BAM 定义 （此架构的实例） 的 XML 文件，使用任何文本编辑器或通过使用 BAM 的外接程序 Excel 创建一个工作表可导出到 XML 文件中，通过使用导出到 XML 功能 BAM 外接程序。  
+ 使用任何文本编辑器或通过使用 BAM 外接程序 excel 创建的工作表中使用的 BAM 外接程序导出到 XML 功能导出到 XML 文件，可以创建包含 BAM 定义 （此架构的实例） 的 XML 文件。  
   
- 在定义 BAM 活动和视图后，您不必手动导出 XML 文件，因为 BAM 管理实用程序 (bm.exe) 可以读取此电子表格，并从中获取 XML，以便自动部署您的基础结构。 结果是名为电子表格的另一个副本\<工作薄名称\>_Livedata.xls。 可以使用此新电子表格连接到实时数据源并在数据透视表报告中查看聚合。  
-  
-> [!NOTE]
->  如果你手动导出通过 BAM 菜单项顶部的电子表格将 XML 文件，并使用 BAM 管理实用程序来部署导出的 XML 文件而不是 Microsoft Excel 文件，你无法查看您使用的 Office 工具的实时数据。  
+ 一旦定义 BAM 活动和视图，您无需手动导出 XML 文件中，因为 BAM 管理实用程序 (bm.exe) 可以读取此电子表格，并从中获取 XML，它将自动部署您的基础结构。 结果是名为电子表格的另一个副本\<工作簿名称\>_Livedata.xls。 此新的电子表格可用于连接到实时数据源和数据透视表中查看聚合。  
   
 > [!NOTE]
->  以 XML 形式导出 BAM 定义时，无法将 BAM 定义导出至 localhost。 例如，尝试将 BAM 定义导出到 `\\localhost\C$\definition1.xml` 将导致错误。  
+>  如果你手动导出 XML 文件通过电子表格顶部的 BAM 菜单项，并使用 BAM 管理实用程序部署导出的 XML 文件而不是 Microsoft Excel 文件，则无法查看您使用的 Office 工具的实时数据。  
+  
+> [!NOTE]
+>  以 XML 形式导出 BAM 定义时，您不能将 BAM 定义导出到 localhost。 例如，尝试导出 BAM 定义到`\\localhost\C$\definition1.xml`将导致错误。  
 >   
->  同样，无法从 localhost 导入 BAM 定义。  
+>  同样，您不能从导入 BAM 定义 localhost。  
   
 > [!NOTE]
->  如果更改活动或视图，则需要删除 BAM 定义，然后重新部署该定义。  
+>  如果更改活动或视图，您需要删除并重新部署 BAM 定义。  
   
- 以下文件为 BAM 定义架构本身：  
+ 以下文件是 BAM 定义架构本身：  
   
 ```  
 <?xml version="1.0" encoding="utf-16"?>  
@@ -687,7 +687,7 @@ BAM 定义架构定义由业务分析员创建的观察模型的结构。
   
  **示例 XML**  
   
- 以下示例是符合 BAM 定义架构的 XML 文件。  
+ 下面的示例是符合 BAM 定义架构的 XML 文件。  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -924,6 +924,6 @@ BAM 定义架构定义由业务分析员创建的观察模型的结构。
 </BAM:BAMDefinition>  
 ```  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [BAM 配置架构](../core/bam-configuration-schema.md)   
  [BAM 动态基础结构](../core/bam-dynamic-infrastructure.md)

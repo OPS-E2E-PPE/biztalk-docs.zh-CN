@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a72a5e2da055a9e4137e3e8954b72ad32cde40db
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d5b331d391229938093953dd6a6bcd65f8178265
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982726"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65372485"
 ---
 # <a name="troubleshoot-installation-issues-with-the-sap-adapter"></a>使用 SAP 适配器进行故障排除安装问题：
 安装 Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]复制产品二进制文件的计算机上并注册每个适配器的绑定。 本部分讨论故障排除技术来解决安装错误。  

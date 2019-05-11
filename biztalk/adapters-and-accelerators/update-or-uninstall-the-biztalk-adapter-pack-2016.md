@@ -13,12 +13,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: eef0252a2907287c3197d40558d605f5c9f5660e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a8019aad1487fad16d111db8f6cf711455bd20e2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36981862"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363928"
 ---
 # <a name="update-or-uninstall-the-biztalk-adapter-pack-2016"></a>更新或卸载 BizTalk 适配器包 2016
 如何更改或卸载[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]。
@@ -55,7 +55,7 @@ ms.locfileid: "36981862"
   
    -   展开**ADO 提供程序**节点，以选择要安装所有提供程序或特定提供程序。  
   
-   -   选择“下一步” 。  
+   -   选择“**下一步**”。  
   
    -   选择**更改**，然后选择**完成**。  
   
@@ -114,7 +114,7 @@ ms.locfileid: "36981862"
   
 1. 打开命令提示符，并转到根目录下的[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]安装程序。  
   
-2. 运行以下命令：  
+2. 运行下面的命令：  
   
    > [!NOTE]
    >  若要删除[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]在无提示模式在基于 x64 的平台，在以下命令中，替换`AdaptersSetup.msi`与`AdaptersSetup64.msi`。  

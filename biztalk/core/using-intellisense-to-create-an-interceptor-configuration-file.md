@@ -12,24 +12,24 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1d6df002c51bbcc51a3cb714e389a0f453a0693c
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 502b9f1d213a9440bb19820f9998604267045a44
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011350"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396853"
 ---
 # <a name="using-intellisense-to-create-an-interceptor-configuration-file"></a>使用 IntelliSense 创建侦听器配置文件
-可以使用 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中的 IntelliSense 和架构验证来帮助您构造从架构上来说有效的侦听器配置文件。 BAM 管理实用工具根据基本侦听器配置架构验证您的侦听器配置文件，如果此文件无效，则不部署该架构。 如果文件通过了根据基本侦听器配置架构进行的验证，则在运行时会根据特定于技术的架构（如 [!INCLUDE[firstref_btsWinWorkflowFoundation](../includes/firstref-btswinworkflowfoundation-md.md)] 架构或 [!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)] 架构）对其进行验证，如果出错，则不进行侦听。 构造侦听器配置文件时，可以通过使用 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中的架构验证来避免这些错误。  
+可以使用中的 IntelliSense 和架构验证[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]来帮助您构造从架构上来说有效的侦听器配置文件。 BAM 管理实用程序验证侦听器配置文件根据基本侦听器配置架构，并且如果文件不是有效的不会部署架构。 如果该文件通过了根据基本侦听器配置架构进行验证，它根据等特定于技术的架构验证[!INCLUDE[firstref_btsWinWorkflowFoundation](../includes/firstref-btswinworkflowfoundation-md.md)]架构或[!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)]架构在运行时，如果遇到错误，将没有拦截会出现。 可以通过使用中的架构验证来避免这些错误[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]构造侦听器配置文件时。  
   
 > [!NOTE]
->  示例 BAM 侦听器配置 XSD 文件与 SDK 文件一起安装。 它们位于 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\BAM\InterceptorXSDs：  
+>  示例 BAM 侦听器配置 XSD 文件已安装的 SDK 文件。 它们可以位于[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\Samples\BAM\InterceptorXSDs:  
 > 
 > - CommonInterceptorConfiguration.xsd  
 >   -   WcfInterceptorConfiguration.xsd  
 >   -   WorkflowInterceptorConfiguration.xsd  
   
-### <a name="to-obtain-a-copy-of-the-interceptor-schemas"></a>获取侦听器架构的副本  
+### <a name="to-obtain-a-copy-of-the-interceptor-schemas"></a>若要获取侦听器架构的副本  
   
 1. 打开记事本或其他文本编辑器。  
   
@@ -54,9 +54,9 @@ ms.locfileid: "37011350"
 6. 在中**XML 架构**对话框中，单击**添加**，然后导航到的位置的该架构，然后选择**CommonInterceptorConfiguration.xsd**和**WcfInterceptorConfiguration.xsd**如果你正在使用[!INCLUDE[firstref_btsWinCommFoundation](../includes/firstref-btswincommfoundation-md.md)]侦听器配置文件，或**WorkflowInterceptorConfiguration.xsd**如果你正在使用[!INCLUDE[firstref_btsWinWorkflowFoundation](../includes/firstref-btswinworkflowfoundation-md.md)]侦听器配置文件。  
   
    > [!NOTE]
-   >  如果使用其他名称保存这些文件，请改为选择那些文件。  
+   >  如果保存使用不同的名称的文件，请改为选择这些文件。  
   
-7. 现在，打开侦听器配置文件时，[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 将对其进行验证，并在您创建和修改该文件时提供 IntelliSense 帮助。  
+7. [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 现在打开时验证您的侦听器配置文件，并在创建和修改该文件提供 IntelliSense 帮助。  
   
 ## <a name="see-also"></a>请参阅  
  [Windows Workflow Foundation 架构](../core/windows-workflow-foundation-schema.md)   

@@ -1,5 +1,5 @@
 ---
-title: 设置和部署 Windows SharePoint Services 适配器 |Microsoft 文档
+title: 设置和部署 Windows SharePoint Services 适配器 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,18 +15,18 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c84e1a6efab2b099214a1c52bf4b962dad78f700
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f821e289c7887b79f640fe363b39e27ae49ea084
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22271117"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393196"
 ---
-# <a name="setting-up-and-deploying-the-windows-sharepoint-services-adapter"></a>安装和部署 Windows SharePoint Services 适配器
-本部分中的主题将介绍如何在单服务器部署和多服务器部署过程中安装和部署 Windows SharePoint Services (WSS) 适配器。  
+# <a name="setting-up-and-deploying-the-windows-sharepoint-services-adapter"></a>设置和部署 Windows SharePoint Services 适配器
+在本部分中的主题讨论设置和部署中的单服务器部署和多服务器部署的 Windows SharePoint Services (WSS) 适配器。  
   
 > [!WARNING]
->  有关 Windows SharePoint Services 适配器的已知问题，请参阅[已知的问题与 Windows SharePoint Services Adapter](../core/known-issues-with-the-windows-sharepoint-services-adapter.md)。  
+>  有关 Windows SharePoint Services 适配器的已知问题，请参阅[Windows SharePoint Services 适配器的已知问题](../core/known-issues-with-the-windows-sharepoint-services-adapter.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
   
@@ -34,7 +34,7 @@ ms.locfileid: "22271117"
   
 -   [多服务器部署](../core/multiserver-deployment.md)  
   
-## <a name="see-also"></a>另请参阅  
- [什么是 Windows SharePoint Services Adapter？](../core/what-is-the-windows-sharepoint-services-adapter.md)   
- [配置 Windows SharePoint Services Adapter](../core/configuring-the-windows-sharepoint-services-adapter.md)   
+## <a name="see-also"></a>请参阅  
+ [什么是 Windows SharePoint Services 适配器？](../core/what-is-the-windows-sharepoint-services-adapter.md)   
+ [配置 Windows SharePoint Services 适配器](../core/configuring-the-windows-sharepoint-services-adapter.md)   
  [Windows SharePoint Services 适配器演练](../core/windows-sharepoint-services-adapter-walkthroughs.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1ad63e44e4d2dde5ffee743e0758a37e48a3d4d4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 5c3902f859b315ebc65c8cbf05799d03d0167217
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012054"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65370928"
 ---
 # <a name="secure-your-siebel-applications"></a>保护 Siebel 应用程序
 Siebel 系统通常包含敏感商业信息，例如客户帐户详细信息。 使用的应用程序[!INCLUDE[adaptersiebel](../../includes/adaptersiebel-md.md)]访问和修改此信息是本地或分布式网络中可能会无意中使私钥暴露访问未经授权的参与者，除非工作进行防护和保护期间数据传输。 数据保护和安全性是通常认为的按下列术语：  

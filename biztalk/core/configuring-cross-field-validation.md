@@ -12,38 +12,38 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97951adc5c98f8350e7f42c92214f89558f2a70d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 6cd14497f08bf085c1a93122baa00875ad714cc1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014486"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65391346"
 ---
 # <a name="configuring-cross-field-validation"></a>配置跨字段验证
-本主题介绍如何对 EDI 编码消息中的事务集数据元素启用跨字段/段验证。 为此，你需要执行两个设置：  
+本主题介绍如何启用 EDI 编码消息中的事务集数据元素上的跨字段/段验证。 若要执行此操作，需要执行两个设置：  
   
 -   设置 EDI 架构的批注中的跨字段验证标志。 对于 X12 或 HIPAA 架构，这是**X12ConditionDesignator_Check**标志。 对于 EDIFACT 架构，则**EdifactDependencyRule_Check**标志。  
   
--   在协议属性中启用 EDI 类型验证。  
+-   启用的协议属性中的 EDI 类型验证。  
   
-## <a name="prerequisites"></a>必要條件  
- 你必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 必须以成员的身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]Administrators 组。  
   
 ### <a name="configuring-cross-field-validation"></a>配置跨字段验证  
   
-1. 在 BizTalk 编辑器中打开你的架构。  
+1. 在 BizTalk 编辑器中打开您的架构。  
   
 2. 对于 X12 或 HIPAA 架构，找到**X12ConditionDesignator_Check**中架构的 appinfo 部分批注中的标志。 将其设置为**是**。  
   
    > [!NOTE]
-   >  设置为将标记 X12ConditionDesignator_Check**是**无法执行从 BizTalk 架构编辑器。 若要设置该标记，必须在记事本或类似的文本编辑器中打开它并进行编辑，然后保存架构文件 (.xsd)。  
+   >  设置为将标记 X12ConditionDesignator_Check**是**无法执行从 BizTalk 架构编辑器。 设置该标记，你必须打开记事本或类似的文本编辑器中编辑和保存该架构文件 (.xsd)。  
   
 3. 对于 EDIFACT 架构，找到**EdifactDependencyRule_Check**中架构的 appinfo 部分批注的标志。 将其设置为**是**。  
   
-4. 对于适用的架构段，指定适用的关系条件（X12 和 HIPAA）或依赖规则 (EDIFACT)。 有关详细信息，请参阅[跨字段-段验证](../core/cross-field-segment-validation.md)。  
+4. 对于该架构适用段，指定关系条件 （x12 和 HIPAA） 或依赖规则 (EDIFACT) 的应用。 有关详细信息，请参阅[跨字段-段验证](../core/cross-field-segment-validation.md)。  
   
    > [!NOTE]
-   >  跨字段验证条件或规则是针对 EDI 架构中的段输入的。 如果针对数据元素（而非段）输入跨字段验证规则，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将在执行架构验证时生成警告。  
+   >  为 EDI 架构中的某个段被输入跨字段验证条件或规则。 如果针对数据元素，而不是一个段中，输入跨字段验证规则[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]执行架构验证时，会生成一个警告。  
   
 5. 在中**验证**页 (下**事务集设置**部分) 的单向协议选项卡**协议属性**相关协议的对话框请确保**EDI 类型验证**选择属性。  
   

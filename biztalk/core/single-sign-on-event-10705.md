@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10705 |Microsoft Docs
+title: 单一登录：Event 10705 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c74e4ebe0119698348668eb2ca6f78b5697cc5d0
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9e88a77cc05956f50af31094d299b653ce71056f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36976894"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397290"
 ---
-# <a name="single-sign-on-event-10705"></a>单一登录： 事件 10705
+# <a name="single-sign-on-event-10705"></a>单一登录：事件 10705
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                            |
@@ -30,15 +30,15 @@ ms.locfileid: "36976894"
 |  事件源   |                                                   ENTSSO                                                   |
 |    组件    |                                                    N\A                                                     |
 |  符号名称  |                                          SSO_WARN_PS_NOT_ADAPTER                                           |
-|  消息正文   | 指定的适配器不是适配器应用程序。 检查应用程序类型。%r<br /><br /> 适配器： %1 |
+|  消息正文   | 指定的适配器不是适配器应用程序。 检查应用程序 type.%r<br /><br /> 适配器： %1 |
 
 ## <a name="explanation"></a>解释  
- 此警告事件表明，指定的适配器不是适配器应用程序。  
+ 此警告事件表明指定的适配器不是适配器应用程序。  
 
 ## <a name="user-action"></a>用户操作  
- 若要解决此警告问题，请执行以下操作：  
+ 若要解决此警告，请执行以下操作：  
 
-- 使用 SSO Admin MMC 管理单元，右键单击指定的适配器，然后单击“属性”以确定应用程序类型，或者使用命令行工具 ssops -list and ssops -display 来确定应用程序类型。  
+- 使用 SSO Admin MMC 管理单元，右键单击指定的适配器，然后单击属性，以确定应用程序类型也可以使用命令行工具 ssops-列表和 ssops-display 来确定应用程序类型。  
 
 - 使用 SSO Admin MMC 管理单元或 ssops-addapp 设置适配器应用程序。  
 

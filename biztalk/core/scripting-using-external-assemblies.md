@@ -1,5 +1,5 @@
 ---
-title: 脚本使用外部程序集 |Microsoft 文档
+title: 使用外部程序集编写脚本 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,35 +15,35 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 475a3b9781eecb0ccc79165bbe54e6dfd542ecfc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 4876d0b7c236be890649e5050b09e538b07742a3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22269197"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395527"
 ---
 # <a name="scripting-using-external-assemblies"></a>使用外部程序集编写脚本
-使用外部程序集编写脚本是在 Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 中使用脚本的首选方式。 外部程序集具有多项优点：  
+使用外部程序集编写脚本是使用 Microsoft 中的脚本的首选的方式[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 外部程序集提供了几项优势：  
   
 -   便于代码共享  
   
 -   维护更简单  
   
--   调试更方便  
+-   更轻松地调试  
   
 > [!NOTE]
->  如果测试映射失败**脚本**functoid 使用一个外部的程序集，它不在 GAC 中注册。 它适用如果外部程序集 （放置在生成后） 的当前项目的程序集所在的 bin 文件夹中。  
+>  如果将测试映射失败**脚本**functoid 使用未在 GAC 中注册的外部程序集。 如果外部程序集在当前项目的程序集 （生成后放置） 所在的 bin 文件夹中，它有效。  
   
- 重新使用该脚本只需设置**脚本**属性**脚本**functoid。 由于脚本储存在映射之外，因此可以在不更改映射的情况下修改脚本。 并且你可以使用完整的数组的[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]调试工具以确保你的脚本正确运行。  
+ 重新使用脚本，只需要设置**脚本**的属性**脚本**functoid。 由于该脚本存储在映射之外，您可以修改脚本，而无需更改代码图。 您可以使用的完整阵列[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]调试工具，以确保您的脚本能够正常运行。  
   
 > [!WARNING]
->  外部程序集中的代码必须为线程安全代码。 在任务繁忙时，可以同时运行多个映射实例。  
+>  在外部程序集中的代码必须是线程安全。 高负荷环境下可能会同时运行多个映射实例。  
   
- 有关示例函数存放在外部程序集，请参阅[（BizTalk Server 示例文件夹中） 的 XML 工具](../core/xml-tools-biztalk-server-samples-folder.md)。  
+ 示例函数位于外部程序集，请参阅[XML 工具 （BizTalk Server 示例文件夹）](../core/xml-tools-biztalk-server-samples-folder.md)。  
   
-## <a name="see-also"></a>另请参阅  
+## <a name="see-also"></a>请参阅  
  [脚本 Functoid](../core/scripting-functoid.md)   
- [脚本使用内联 C#、 JScript.NET 和 Visual Basic.NET](../core/scripting-using-inline-csharp-jscript-net-and-visual-basic-net.md)   
- [脚本使用内联 XSLT 和 XSLT 调用模板](../core/scripting-using-inline-xslt-and-xslt-call-templates.md)   
- [如何在向地图添加脚本 Functoid](../core/how-to-add-scripting-functoids-to-a-map.md)   
+ [使用内联 C#、 JScript.NET 和 Visual Basic.NET 编写脚本](../core/scripting-using-inline-csharp-jscript-net-and-visual-basic-net.md)   
+ [使用内联 XSLT 和 XSLT 调用模板编写脚本](../core/scripting-using-inline-xslt-and-xslt-call-templates.md)   
+ [如何向映射添加脚本 Functoid](../core/how-to-add-scripting-functoids-to-a-map.md)   
  [如何配置脚本 Functoid](../core/how-to-configure-the-scripting-functoid.md)

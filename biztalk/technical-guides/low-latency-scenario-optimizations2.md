@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9e5c8c5e225239461c9509aa50c105e4181ba12
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bc6db1f67340092c27eea10f4847fa04b0269dab
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978622"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396331"
 ---
 # <a name="low-latency-scenario-optimizations"></a>低延迟方案优化
 默认情况下，BizTalk Server 进行了优化的吞吐量而不是低延迟。 以下优化可以应用于 BizTalk Server 中，在要求减少了的延迟的情况中。  

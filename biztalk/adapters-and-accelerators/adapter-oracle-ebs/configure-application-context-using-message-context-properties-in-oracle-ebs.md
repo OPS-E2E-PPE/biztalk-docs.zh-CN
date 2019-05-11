@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 71920920c11028adb1f699e3faee463876399b36
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9655d34a1bfce2b82a86c4bf153af940f168095d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37003998"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375691"
 ---
 # <a name="configure-the-application-context-using-message-context-properties-in-oracle-e-business-suite"></a>配置 Oracle E-business Suite 中使用消息上下文属性的应用程序上下文
 若要使用的 Oracle E-business Suite 项目上执行操作[!INCLUDE[adapteroraclebusinessshort](../../includes/adapteroraclebusinessshort-md.md)]，必须正确设置应用程序上下文。 可以按以下方式来设置应用程序上下文：  

@@ -12,22 +12,22 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 84dda0937fc0c7b060e483b2ca1585a3d5160ad1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bb6f1081969abbe4da5bd3a0c0504dde02a94217
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023403"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393536"
 ---
 # <a name="how-to-move-the-bam-archive-database"></a>如何移动 BAM 存档数据库
-您可以使用此过程将 BAM 存档数据库移到其他服务器。  从端到端方案的角度看，移动 BAM 存档数据库涉及两个主要步骤：  
+可以使用此过程将 BAM 存档数据库移到另一台服务器。  从端到端方案的角度看，移动 BAM 存档数据库涉及两个主要步骤：  
   
 -   [移动 BAM 存档数据库](../technical-guides/how-to-move-the-bam-archive-database1.md#BKMK_MovingArch)  
   
 -   [正在更新到新的 BAM 存档数据库的引用](../technical-guides/how-to-move-the-bam-archive-database1.md#BKMK_UpdateArch)  
   
-## <a name="prerequisites"></a>必要條件  
- 若要执行此过程，登录使用的帐户必须是 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)] sysadmin 固定服务器角色的成员。  
+## <a name="prerequisites"></a>先决条件  
+ 您必须是的成员的帐户登录[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]sysadmin 固定的服务器角色才能执行此过程。  
   
 ##  <a name="BKMK_MovingArch"></a> 移动 BAM 存档数据库  
  以下过程来移动 BAM 存档数据库中执行的步骤。  
@@ -36,7 +36,7 @@ ms.locfileid: "37023403"
   
 1. 停止任何 BAM 多维数据集更新和数据维护 SSIS 包，或者阻止它们运行，直到 BAM 存档数据库的还原。  
   
-2. 停止所有的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 服务。 有关详细信息，请参阅主题[如何启动、 停止、 暂停、 继续或重新启动 BizTalk Server Services](http://go.microsoft.com/fwlink/?LinkId=154394) (<http://go.microsoft.com/fwlink/?LinkId=154394>) 中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助。  
+2. 停止所有[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]服务。 有关详细信息，请参阅主题[如何启动、 停止、 暂停、 继续或重新启动 BizTalk Server Services](http://go.microsoft.com/fwlink/?LinkId=154394) (<http://go.microsoft.com/fwlink/?LinkId=154394>) 中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助。  
   
 3. 停止 IIS 服务。  
   
@@ -48,11 +48,11 @@ ms.locfileid: "37023403"
   
         **net stop NS$ BamAlerts**  
   
-5. 在旧服务器上备份 BAM 存档数据库。 备份数据库的说明，请遵循的说明[如何： 备份数据库 (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=156510) (<http://go.microsoft.com/fwlink/?LinkId=156510>) 中[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]上如何备份数据库的联机丛书。  
+5. 在旧服务器上备份 BAM 存档数据库。 备份数据库的说明，请遵循的说明[如何：备份数据库 (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=156510) (<http://go.microsoft.com/fwlink/?LinkId=156510>) 中[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]上如何备份数据库的联机丛书。  
   
 6. 将 BAM 存档数据库复制到新[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]计算机。  
   
-7. 还原新服务器上的 BAM 存档数据库。 对于还原数据库的说明，请按照的说明[如何： 还原数据库备份 (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=156511) (<http://go.microsoft.com/fwlink/?LinkId=156511>) 中[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]上如何还原数据库的联机丛书。  
+7. 还原新服务器上的 BAM 存档数据库。 对于还原数据库的说明，请按照的说明[如何：还原数据库备份 (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=156511) (<http://go.microsoft.com/fwlink/?LinkId=156511>) 中[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]上如何还原数据库的联机丛书。  
   
 ##  <a name="BKMK_UpdateArch"></a> 正在更新到新的 BAM 存档数据库的引用  
  在移动数据库之后，必须更新到新的 BAM 存档数据库的所有引用。 必须更新以下引用：  
@@ -63,7 +63,7 @@ ms.locfileid: "37023403"
   
 ###  <a name="BKMK_UpdateArchConfig"></a> 若要更新 BAM 配置  
   
-1. 获取用于还原 BAM 的 .xml 文件的副本：  
+1. 获取用于还原 BAM 的.xml 文件的副本：  
   
    1. 单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
@@ -79,7 +79,7 @@ ms.locfileid: "37023403"
   
    3. 在命令提示符下，键入：  
   
-       **Bm.exe 获取配置 –filename:BAMConfiguration.xml-server:\<servername\> -数据库：\<数据库\>**  
+       **Bm.exe get-config –filename:BAMConfiguration.xml -server:\<servername\> -database:\<database\>**  
   
       > [!NOTE]
       >  当运行此命令，替换从其获取的配置信息的服务器的实际名称\<servername\>并将其替换实际获取的配置信息的数据库的名称\<数据库\>。 有关使用 BAM 管理 (BM) 实用程序的详细信息，请参阅[基础结构管理命令](http://go.microsoft.com/fwlink/?LinkId=156516)(<http://go.microsoft.com/fwlink/?LinkId=156516>) 中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助。  
@@ -108,7 +108,7 @@ ms.locfileid: "37023403"
   
 1. 更新所有 BAM 分析 SSIS 包中，带有"BAM_DM_"前缀的服务器和数据库名称。 若要执行此操作，请单击**启动**，单击**所有程序**，单击**Microsoft SQL Server 2008 R2**或者**Microsoft SQL Server 2008 SP1**，然后单击**SQL Server Business Intelligence Development Studio**。  
   
-2. 在 SQL Server Business Intelligence Development Studio 中，创建一个新项目。 单击**文件**，单击**新建**，然后单击**项目**。  
+2. 在 SQL Server Business Intelligence Development Studio，创建新项目。 单击**文件**，单击**新建**，然后单击**项目**。  
   
 3. 在中**新的项目**对话框中**项目类型**框中，单击**商业智能项目**。 在右窗格中，在**模板**框中，单击**Integration Services 项目**，然后单击**确定**。  
   
@@ -120,7 +120,7 @@ ms.locfileid: "37023403"
   
 7. 在中**SSIS 包**对话框框中，选择你想要更新，请单击的包**确定**，然后单击**确定**。  
   
-    现在，该包列在解决方案资源管理器中。  
+    包现在列在解决方案资源管理器。  
   
 8. 在解决方案资源管理器，双击上一步中添加的包。 在中**连接管理器**选项卡 （可用于在屏幕下半部分） 中，双击数据源数 2 （BAMArchive 数据库）。  
   

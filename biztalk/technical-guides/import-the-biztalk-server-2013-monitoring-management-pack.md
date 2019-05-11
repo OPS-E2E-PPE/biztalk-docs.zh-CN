@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7756a6ca4301f7536a0e4964117f11cb92eb2fcd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c7561007ddf03b4a17357b2c5204f2bdd91acc73
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993782"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395855"
 ---
 # <a name="import-the-biztalk-server-2013-monitoring-management-pack"></a>导入 BizTalk Server 2013 监视管理包
 有关如何导入管理包时，有关说明，请参阅如何导入中的管理包[Operations Manager 2007 R2/2012年](http://go.microsoft.com/fwlink/?LinkId=142351)(<http://go.microsoft.com/fwlink/?LinkId=142351>)。 之后[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]导入管理包，请按照这些过程操作以完成初始配置：  

@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2c29400aae9a9bcd0cf36d49f9b619dc7642fa5a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: aa1ad45eeafae2f6f91936124f01677b5dc6c32a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978470"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363711"
 ---
 # <a name="deploy-an-adapter-using-the-wcf-lob-adapter-sdk"></a>部署适配器使用 WCF LOB 适配器 SDK
 若要部署一个适配器，必须将适配器程序集安装到全局程序集缓存 (GAC) 中，然后 machine.config 文件中注册该适配器。  
@@ -26,7 +26,7 @@ ms.locfileid: "36978470"
  使用 Visual Studio 中使用的适配器之前[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]命令或在[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]通过使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]功能，必须将程序集安装到 gac。 只有具有强名称的程序集可安装到 gac。  
   
 > [!NOTE]
->  若要完成此过程，必须在 GAC 上具有写权限的帐户登录。 本地计算机的管理员帐户拥有这些权限。  
+>  若要完成此过程，必须在 GAC 上具有写权限的帐户登录。 在本地计算机上的管理员帐户拥有这些权限。  
   
 #### <a name="configure-a-strong-name-assembly-key-file"></a>配置强名称程序集密钥文件  
   
@@ -34,9 +34,9 @@ ms.locfileid: "36978470"
   
 2. 打开[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]命令提示符。  
   
-3. 在命令提示符下，从你要存储密钥文件的文件夹，键入以下命令，然后按 Enter 键：  
+3. 在命令提示符下，从你想要存储密钥文件的文件夹键入以下命令，然后按 ENTER:  
   
-    **sn /k***file_name* **.snk**   
+    **sn /k**  *file_name* **.snk**  
   
     示例： **sn /k EchoAdapter.snk**  
   
@@ -79,7 +79,7 @@ ms.locfileid: "36978470"
   
     **gacutil.exe /if"\<**  *程序集.dll 文件路径*  **\>"**  
   
-4. 此命令将程序集安装到 GAC，覆盖任何具有相同程序集名称的现有程序集。  
+4. 这会将程序集安装到 GAC，覆盖任何现有的程序集都具有相同的程序集名称。  
   
 ## <a name="register-the-adapter-in-machineconfig"></a>在 Machine.config 中注册该适配器  
  使用适配器开发[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]呈现为 WCF 绑定。  有关详细信息，请参阅 Microsoft.ServiceModel.Channels.Common.AdapterBinding。  向 WCF 注册适配器绑定使用\<bindingExtensions\>节中\<系统。ServiceModel\> ，并使用 WCF 注册适配器的传输绑定元素使用\<bindingElementExtensions\>节中\<系统。ServiceModel\>。  
@@ -88,7 +88,7 @@ ms.locfileid: "36978470"
   
 #### <a name="manually-edit-the-machineconfig-file"></a>手动编辑 machine.config 文件  
   
-1. 编辑位于 Microsoft .NET 配置文件夹中的 machine.config 文件。 若要执行此操作，请单击**启动**，单击**运行**，键入 notepad \<Windows 安装路径\>\Microsoft.NET\Framework\\< 版本\>\CONFIG\machine.config，并单击**确定**。  
+1. 编辑 machine.config 文件位于 Microsoft.NET 配置文件夹中。 若要执行此操作，请单击**启动**，单击**运行**，键入 notepad \<Windows 安装路径\>\Microsoft.NET\Framework\\< 版本\>\CONFIG\machine.config，并单击**确定**。  
   
 2. 更新 machine.config 文件。 如果文件不包含 system.serviceModel 节，在配置文件，但之前关闭根标记的结尾处添加以下部分。  
   

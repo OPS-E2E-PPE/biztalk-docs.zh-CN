@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 67614e9ec07a2e675c0972ad4ea3429266726b56
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 21e0a04d9e35b900dab5d32d21abfba6bf3a8c03
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978670"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65373012"
 ---
 # <a name="run-bapi-transactions-in-sap-using-biztalk-server"></a>在 SAP 中使用 BizTalk Server 运行 BAPI 事务
 [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]使适配器客户端能够使用在 SAP 系统上执行事务[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 创建一个事务的业务流程之前, 必须先了解可在其中执行事务的基本方案。 在典型的事务方案中，多个操作 （如调用 BAPI） 的请求消息发送到 SAP 系统。 这会将称为"操作消息"。 业务流程必须从请求消息中提取每个操作消息，并将各个操作消息发送到 SAP 系统。 业务流程向他们发送一次是在另一个使用相同的连接。 业务流程使用通过 BizTalk 映射的 XML 转换中提取各个消息从"操作消息"。  
@@ -35,10 +35,10 @@ ms.locfileid: "36978670"
   
 |消息|OPEN|重复使用|CLOSE|ABORT|  
 |-------------|----------|-----------|-----------|-----------|  
-|第一条消息 （操作消息）|是|否|否|“否”|  
-|随后的消息 （操作消息）|“否”|是|否|“否”|  
-|BAPI_TRANSACTION_COMMIT （事务消息）|“否”|否|是|“否”|  
-|BAPI_TRANSACTION_ROLLBACK （事务消息）|“否”|否|是|是|  
+|第一条消息 （操作消息）|是|否|否|否|  
+|随后的消息 （操作消息）|否|是|否|否|  
+|BAPI_TRANSACTION_COMMIT （事务消息）|否|否|是|否|  
+|BAPI_TRANSACTION_ROLLBACK （事务消息）|否|否|是|是|  
   
  在表中，"是"表示要用于消息的消息上下文属性。 同样，"否"表示的消息上下文属性不与消息一起使用。  
   
@@ -285,7 +285,7 @@ BAPIRollbackMessage(Microsoft.Adapters.SAP.BiztalkPropertySchema.ConnectionState
   
 -   类似于第二个端口，此端口将还在接收消息具有三个不同的架构。 因此，有必要创建此端口上的三个不同操作。  
   
-|端口|属性|  
+|Port|属性|  
 |----------|----------------|  
 |FileIn|-设置**标识符**到*FileIn*<br /><br /> -设置**类型**到*FileInType*<br /><br /> -设置**通信模式**到*单向*<br /><br /> -设置**通信方向**到*接收*|  
 |LOBPort|-设置**标识符**到*LOBPort*<br /><br /> -设置**类型**到*LOBPortType*<br /><br /> -设置**通信模式**到*请求-响应*<br /><br /> -设置**通信方向**到*发送接收*<br /><br /> -创建一个操作*BAPIMessage*。<br /><br /> -创建一个操作*CommitMessage*。 此操作将用于发送提交消息。<br /><br /> -创建一个操作*RollbackMessage*。 此操作将用于发送回滚消息。|  
@@ -312,7 +312,7 @@ BAPIRollbackMessage(Microsoft.Adapters.SAP.BiztalkPropertySchema.ConnectionState
 ## <a name="handling-exceptions"></a>处理异常  
  在复杂的业务流程来执行 BAPI 事务类似，非常重要，跟踪的业务流程的状态，报告的错误发生时，以便在发生，可以解决这些问题。 BizTalk 业务流程提供了工具来处理错误，维护业务流程的状态并解决问题，在发生通过事务、 补偿和异常处理。  
   
- 作为用于事务和异常处理框架，业务流程设计器提供了**作用域**形状。 作用域可以具有事务类型、补偿和任意数目的异常处理程序。 一个作用域包含一个或多个块。 它具有一个主体，并可根据需要任意数量的异常处理块追加到它。 在 BAPI 事务的情况下整个业务流程 （请参阅前面的图） 可以包含的作用域中。  
+ 作为用于事务和异常处理框架，业务流程设计器提供了**作用域**形状。 作用域可以具有事务类型、 补偿和任意数量的异常处理程序。 一个作用域包含一个或多个块。 它具有一个主体，并可根据需要任意数量的异常处理块追加到它。 在 BAPI 事务的情况下整个业务流程 （请参阅前面的图） 可以包含的作用域中。  
   
  若要捕获的异常，必须添加**捕获异常**向业务流程的块。 **捕获异常**块附加到的末尾**作用域**形状在业务流程设计器中的。 必须在 BAPI 事务的情况下将添加到"中止"例程**捕获异常**块中，也就是说，必须将以下添加到"中止"例程：  
   

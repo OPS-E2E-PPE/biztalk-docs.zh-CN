@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0fff5c5ec4c965b9dbdaaf5d876ca0943a32be96
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d67497e3c462194e2306cf7ada0764943975cbb0
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36993294"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395882"
 ---
 # <a name="how-to-update-the-runtime-computers"></a>如何更新运行时计算机
 目标系统[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]运行时计算机上配置了[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]配置向导在生产环境中运行的生产 BizTalk 组的一部分。 在灾难恢复环境中还原生产 BizTalk 组时，必须在每个更新设置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]运行时计算机使其指向灾难恢复[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]个实例时它会尝试连接到已还原生产 BizTalk 组。 在目标系统中还原的 BizTalk 组后，使用以下过程来更新[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]运行时计算机。  

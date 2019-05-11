@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c6de74c7efb9aa4f900d555c265318bb17118082
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9d8d3b74fe8c0389093b9525be7ad7adbad5638f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37023699"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395845"
 ---
 # <a name="increasing-availability-for-biztalk-server"></a>BizTalk Server 提供高可用性
 本部分介绍可提升的可用性的方法在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]系统。  
@@ -37,7 +37,7 @@ ms.locfileid: "37023699"
   
   - 网络负载平衡 (NLB)。 NLB 将传入网络流量重定向到使用 NLB 群集主机，如果主机发生故障或处于脱机状态，以提供高可用性。 与不同的服务器群集，NLB 不需要特殊硬件。  
   
-  - BizTalk 主机负载平衡。 BizTalk 主机提供负载平衡的 BizTalk 主机添加多个服务器运行[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]到[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]组，然后配置这些服务器上运行的进程内主机的多个实例。 这可以跨主机的多个实例分发在该主机中配置的服务和项目的执行，这可增强其可用性与可伸缩性。  
+  - BizTalk 主机负载平衡。 BizTalk 主机提供负载平衡的 BizTalk 主机添加多个服务器运行[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]到[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]组，然后配置这些服务器上运行的进程内主机的多个实例。 这将分配服务和项目在该主机中配置增强了其可用性和可伸缩性的主机的多个实例的执行。  
   
     > [!NOTE]  
     >  对于进程内主机提供主机负载平衡功能。  
@@ -62,5 +62,5 @@ ms.locfileid: "37023699"
 -   [灾难恢复](../technical-guides/disaster-recovery.md)  
   
 ## <a name="see-also"></a>请参阅  
- [清单： 提供高可用性容错或负载平衡](../technical-guides/checklist-providing-high-availability-with-fault-tolerance-or-load-balancing.md)   
+ [清单：提供高可用性容错或负载平衡](../technical-guides/checklist-providing-high-availability-with-fault-tolerance-or-load-balancing.md)   
  [清单：提供高可用性灾难恢复](../technical-guides/checklist-increasing-availability-with-disaster-recovery.md)

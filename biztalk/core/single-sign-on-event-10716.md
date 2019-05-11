@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10716 |Microsoft Docs
+title: 单一登录：Event 10716 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 24096dcd2a8500f1d7906f705e4bb4518cee89c4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 63b543b0a5b941aaabdf73577928476deefefeb4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37017211"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397194"
 ---
-# <a name="single-sign-on-event-10716"></a>单一登录： 事件 10716
+# <a name="single-sign-on-event-10716"></a>单一登录：事件 10716
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                           |
@@ -30,14 +30,14 @@ ms.locfileid: "37017211"
 |  事件源   |                                                          ENTSSO                                                           |
 |    组件    |                                                            N\A                                                            |
 |  符号名称  |                                                  SSO_INFO_NEW_REPLAY_DIR                                                  |
-|  消息正文   | 已成功创建新的重播文件目录。%r<br /><br /> 客户端用户: %1 %r<br /><br /> 重播文件目录： %2 |
+|  消息正文   | 已成功创建新的重播文件 directory.%r<br /><br /> 客户端用户: %1 %r<br /><br /> 重播文件目录： %2 |
 
 ## <a name="explanation"></a>解释  
  此信息事件表明 SSO 密码同步已成功创建新的重播文件目录。  
 
 ## <a name="user-action"></a>用户操作  
 
-- 不需要用户进行任何操作。  
+- 不不需要任何用户操作。  
 
   有关详细信息，请参阅下列资源：  
 

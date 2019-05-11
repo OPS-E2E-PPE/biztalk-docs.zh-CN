@@ -1,5 +1,5 @@
 ---
-title: 管理 Certificates2 |Microsoft 文档
+title: 管理 Certificates2 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 50b9542a6199b065a9c6d65f4adda9f8b52306ba
-ms.sourcegitcommit: 3fc338e52d5dbca2c3ea1685a2faafc7582fe23a
+ms.openlocfilehash: 2d89c42c5bf576481b04ea9beae205b02bf5e2f6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2017
-ms.locfileid: "26008510"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396238"
 ---
 # <a name="managing-certificates"></a>管理证书
-本部分介绍如何管理与 BizTalk Server 使用的数字证书。 其主题描述如何安装证书 （以及将其安装到哪个文件夹），以及如何配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]为 MIME/SMIME 和 AS2，并使用 BizTalk 适配器使用的证书。 Microsoft BizTalk Server 可以使出于文档加密和解密的目的使用的公钥基础结构 (PKI) 数字证书，文档签名和验证 （不可否认性），并且方解析。  
+本部分介绍如何管理与 BizTalk Server 一起使用的数字证书。 其主题介绍如何安装证书 （和将其安装到哪个文件夹），以及如何配置[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]若要使用的证书，为 MIME/SMIME 和 AS2，并与 BizTalk 适配器一起使用。 Microsoft BizTalk Server 可以使用的公钥基础结构 (PKI) 数字证书进行文档加密和解密、 文档签名和验证 （不可否认），和参与方解析。  
   
- 有关安装证书的步骤清单，请参阅[清单： 安装和配置证书](~/technical-guides/checklist-installing-and-configuring-certificates.md)。  
+ 若要安装证书的步骤清单，请参阅[核对清单：安装和配置证书](~/technical-guides/checklist-installing-and-configuring-certificates.md)。  
   
 ## <a name="in-this-section"></a>本节内容  
   
--   [管理 Certificates2 最佳实践](../technical-guides/best-practices-for-managing-certificates2.md)  
+-   [管理 Certificates2 的最佳实践](../technical-guides/best-practices-for-managing-certificates2.md)  
   
 -   [BizTalk Server 中证书的已知问题](../technical-guides/known-issues-with-certificates-in-biztalk-server.md)  
   

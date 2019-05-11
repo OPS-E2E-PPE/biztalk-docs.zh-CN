@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 8583b615e6a6e8fcd999e5120bca531d3c74090d
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e7ec63ce59139d0a34aa66969bde1898c0981e94
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37010030"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363678"
 ---
 # <a name="difference-between-adapter-channel-and-service-in-the-wcf-lob-adapter-sdk"></a>WCF LOB 适配器 SDK 适配器通道和服务之间的差异
 [!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]和[!INCLUDE[nextref_btsWinCommFoundation](../../includes/nextref-btswincommfoundation-md.md)]每个提供了一组可用于将应用程序功能提供给使用方应用程序在同一计算机上或在网络上的 Api。 若要选择最合适的框架，您必须考虑将公开提供的功能的业务需求以及目标系统应用程序的属性。 本主题提供了可用于选择合适的框架的准则。  

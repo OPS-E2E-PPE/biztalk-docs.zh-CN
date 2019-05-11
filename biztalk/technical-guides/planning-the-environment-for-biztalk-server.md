@@ -12,12 +12,12 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d92039b397053d24909d6ade75797c9f68d06172
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a05640ac656bbd6ead6206b2c787829b19badcf8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36977734"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397003"
 ---
 # <a name="planning-the-environment-for-biztalk-server"></a>为 BizTalk Server 规划环境
 操作指南的规划部分介绍了角色和职责与关联[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境。 它包括规划的应用程序和数据层的建议[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]环境中，并提供规划建议的版本管理的 BizTalk 解决方案的各个阶段。  
@@ -33,7 +33,7 @@ ms.locfileid: "36977734"
   
  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 此外包括多种其他功能，便于业务集成，为信息工作人员例如业务活动监视 (BAM) 包括一个消息工作流引擎、 业务规则引擎 (BRE) 和技术。  
   
- 有关使用详细信息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]业务流程管理功能，请参阅[白皮书： Microsoft 和 BPM-技术概述](http://go.microsoft.com/fwlink/?LinkId=106015)(<http://go.microsoft.com/fwlink/?LinkId=106015>)。 若要了解有关 Microsoft 和优点而不是另一个具有所提供的不同的集成技术的详细信息，请参阅[Understanding Microsoft Integration Technologies](http://go.microsoft.com/fwlink/?LinkId=158452) (<http://go.microsoft.com/fwlink/?LinkId=158452>)。  
+ 有关使用详细信息[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]业务流程管理功能，请参阅[白皮书：Microsoft 和 BPM-技术概述](http://go.microsoft.com/fwlink/?LinkId=106015)(<http://go.microsoft.com/fwlink/?LinkId=106015>)。 若要了解有关 Microsoft 和优点而不是另一个具有所提供的不同的集成技术的详细信息，请参阅[Understanding Microsoft Integration Technologies](http://go.microsoft.com/fwlink/?LinkId=158452) (<http://go.microsoft.com/fwlink/?LinkId=158452>)。  
   
  某些集成方案并更好地适合于其他 Microsoft 产品。 如果你的主要任务是在下列任一情况时，请考虑使用这些 Microsoft 产品而不是[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]:  
   

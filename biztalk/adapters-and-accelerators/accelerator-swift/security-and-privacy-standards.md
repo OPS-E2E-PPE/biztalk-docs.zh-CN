@@ -19,12 +19,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 61daf6e28b03174af2b32a61c758a39b4cd16ff9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ba31b6d1dd4a1951289c74029c745c362f3149b8
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980598"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65529977"
 ---
 # <a name="security-and-privacy-standards"></a>安全和隐私标准
 使用 Microsoft 财务服务应用程序和集成解决方案开发[!INCLUDE[A4SWIFT_CurrentVersion_FirstRef](../../includes/a4swift-currentversion-firstref-md.md)]通常受本机[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]安全功能。 [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] 使用主动的安全机制，如实际上 Internet 加密消息传送标准和传输协议，签名证书时，[!INCLUDE[btsWinNoVersion](../../includes/btswinnoversion-md.md)]身份验证和企业单一登录来保护[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]应用程序、 数据和运行时。  

@@ -1,5 +1,5 @@
 ---
-title: 恢复运行时计算机 |Microsoft 文档
+title: 恢复运行时计算机 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,21 +12,21 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c980a0fcb680b529341c2567d4b28d08afaeb92d
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 486a3e7b2eb6b0349a5ffa77c87b9a68cb359438
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22301845"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395085"
 ---
 # <a name="recovering-the-runtime-computers"></a>恢复运行时计算机
-主题中的步骤后[还原 BizTalk 组](../technical-guides/restoring-the-biztalk-group.md)都完成后，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]运行时计算机可以还原。  
+本主题中的步骤后[正在还原 BizTalk 组](../technical-guides/restoring-the-biztalk-group.md)完成后，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]运行时计算机可以进行还原。  
   
 > [!NOTE]  
->  本部分假定主题中的步骤[准备灾难恢复 BizTalk 服务器](../technical-guides/preparing-the-disaster-recovery-biztalk-servers.md)和[灾难恢复准备应用程序](../technical-guides/preparing-applications-for-disaster-recovery.md)已完成。  
+>  本部分假定在主题中的步骤[准备灾难恢复 BizTalk Server](../technical-guides/preparing-the-disaster-recovery-biztalk-servers.md)并[准备灾难恢复的应用程序](../technical-guides/preparing-applications-for-disaster-recovery.md)已完成。  
   
 ## <a name="in-this-section"></a>本节内容  
   
 -   [如何更新运行时计算机](../technical-guides/how-to-update-the-runtime-computers.md)  
   
--   [如何还原应用程序和启用处理](../technical-guides/how-to-restore-applications-and-enable-processing.md)
+-   [如何还原应用程序以及如何启用处理](../technical-guides/how-to-restore-applications-and-enable-processing.md)

@@ -12,21 +12,21 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dd787ec23e09bc420939d33c25005dd611f5fd38
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 707c9b37f671191b743912cb391c8e41d67d007b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37009558"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396459"
 ---
 # <a name="using-an-orchestration-as-an-itinerary-service-subscriber"></a>将业务流程用作路线服务订阅方
 业务流程也可用作路线服务。 若要参与路线时，必须首先设计业务流程作为直接绑定;若要执行此操作，请使用类似于前一个主题中的发送端口的筛选器订阅[发送端口用作路线服务订阅方](../esb-toolkit/using-a-send-port-as-an-itinerary-service-subscriber.md)。 图 1 显示了合适的业务流程，可以提取满足以下条件的任何消息筛选器表达式的一个示例：  
 
 - **ServiceName = Microsoft.Practices.ESB.Services.Transform**  
 
-- **ServiceState = 挂起**  
+- **ServiceState = Pending**  
 
-- **ServiceType = 业务流程**  
+- **ServiceType = Orchestration**  
 
   ![业务流程](../esb-toolkit/media/ch4-orchestration.jpg "Ch4-业务流程")  
 
@@ -38,8 +38,8 @@ ms.locfileid: "37009558"
 
 - **ServiceName。** 这是服务的名称，存储在 ESB 路线中，可以是任何名称。 路线使用此名称来标识要执行的服务。  
 
-- **ServiceState。** 这是当前的路线服务步骤，若要执行的状态。 当前服务步骤 （适用于处理下一步） 将始终具有值**挂起**、 任一 ESB 路线管道组件设置，ESB 路线选择器管道组件或代码的调用**提前**路线 API 方法。  
+- **ServiceState.** 这是当前的路线服务步骤，若要执行的状态。 当前服务步骤 （适用于处理下一步） 将始终具有值**挂起**、 任一 ESB 路线管道组件设置，ESB 路线选择器管道组件或代码的调用**提前**路线 API 方法。  
 
-- **服务类型。** 此属性定义的服务，以指明是否源自从业务流程或消息传送子系统在 BizTalk 中的类型。  
+- **ServiceType.** 此属性定义的服务，以指明是否源自从业务流程或消息传送子系统在 BizTalk 中的类型。  
 
 - **IsRequestResponse。** 此可选属性必须具有相同的值**IsRequestResponse**服务属性。

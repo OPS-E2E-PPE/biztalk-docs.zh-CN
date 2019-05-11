@@ -1,5 +1,5 @@
 ---
-title: 步骤 4： 生成 EAIOrchestration 项目 |Microsoft 文档
+title: 步骤 4：生成 EAIOrchestration 项目 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,52 +12,52 @@ caps.latest.revision: 34
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 992d903fc64740cb9ec4bda762ee5ac032e51a77
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: e7c380d5aa68daeb6f7f05ca0846c00f1999b976
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22276669"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65392628"
 ---
-# <a name="step-4-build-the-eaiorchestration-project"></a>第 4 步：生成 EAIOrchestration 项目
+# <a name="step-4-build-the-eaiorchestration-project"></a>步骤 4：生成 EAIOrchestration 项目
 ![步骤 4 4](../adapters-and-accelerators/adapter-oracle-ebs/media/step-4of4.gif "Step_4of4")  
   
- **完成时间：** 5 分钟  
+ **若要完成的时间：** 5 分钟  
   
- **目标：** 在此步骤中，你将 EAIOrchestration 项目编译成程序集。  
+ **目标：** 在此步骤中，您将 EAIOrchestration 项目编译为程序集。  
   
- **用途：** BizTalk Server 需要要编译到.NET 程序集中的所有项目。  
+ **目的：** BizTalk Server 要求将所有项目编译为.NET 程序集。  
   
 ## <a name="prerequisites"></a>先决条件  
  在开始此步骤之前，请注意以下要求：  
   
--   在开始此步骤之前，必须完成以下步骤：  
+-   开始此步骤之前，必须完成以下步骤：  
   
-    -   [步骤 1： 向解决方案添加 EAIOrchestration 项目](../core/step-1-add-eaiorchestration-project-to-the-solution.md)  
+    -   [步骤 1：向解决方案中添加 EAIOrchestration 项目](../core/step-1-add-eaiorchestration-project-to-the-solution.md)  
   
-    -   [步骤 2： 定义的业务流程](../core/step-2-define-the-business-process.md)  
+    -   [步骤 2：定义业务流程](../core/step-2-define-the-business-process.md)  
   
-    -   [步骤 3： 将端口添加到业务流程](../core/step-3-add-ports-to-the-orchestration.md)  
+    -   [步骤 3：向业务流程添加端口](../core/step-3-add-ports-to-the-orchestration.md)  
   
 ## <a name="procedures"></a>过程  
   
-#### <a name="to-build-the-eaiorchestration-project"></a>生成 EAIOrchestration 项目  
+#### <a name="to-build-the-eaiorchestration-project"></a>若要生成 EAIOrchestration 项目  
   
--   在解决方案资源管理器，右键单击**EAIOrchestration**，然后单击**生成**。  
+-   在解决方案资源管理器中右键单击**EAIOrchestration**，然后单击**生成**。  
   
-     屏幕底部应显示：  
+     在屏幕底部应显示：  
   
     ```  
     ========== Build: 1 succeeded or up-to-date, 0 failed, 0 skipped ==========  
     ```  
   
-## <a name="what-did-i-just-do"></a>内容回顾  
- 在此步骤中，你编译的 EAIOrchestration 项目。  
+## <a name="what-did-i-just-do"></a>我只需做了什么？  
+ 在此步骤中，您编译 EAIOrchestration 项目。  
   
 ## <a name="next-steps"></a>后续步骤  
- 部署中的 EAISolution 解决方案[第 3 课： 部署解决方案](../core/lesson-3-deploy-the-solution.md)。  
+ 部署 EAISolution 解决方案中的[第 3 课：部署解决方案](../core/lesson-3-deploy-the-solution.md)。  
   
-## <a name="see-also"></a>另请参阅  
- [步骤 1： 向解决方案添加 EAIOrchestration 项目](../core/step-1-add-eaiorchestration-project-to-the-solution.md)   
- [步骤 2： 定义的业务流程](../core/step-2-define-the-business-process.md)   
- [步骤 3： 将端口添加到业务流程](../core/step-3-add-ports-to-the-orchestration.md)
+## <a name="see-also"></a>请参阅  
+ [步骤 1：向解决方案中添加 EAIOrchestration 项目](../core/step-1-add-eaiorchestration-project-to-the-solution.md)   
+ [步骤 2：定义业务流程](../core/step-2-define-the-business-process.md)   
+ [步骤 3：向业务流程添加端口](../core/step-3-add-ports-to-the-orchestration.md)

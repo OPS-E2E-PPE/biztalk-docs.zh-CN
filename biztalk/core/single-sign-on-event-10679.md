@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10679 |Microsoft Docs
+title: 单一登录：Event 10679 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dbeb91e58582fcd37fca4c791b35a9edfc558c96
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1f3b551d0c5eecab6ad84b54303bd2c25bbf46eb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37000350"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397440"
 ---
-# <a name="single-sign-on-event-10679"></a>单一登录： 事件 10679
+# <a name="single-sign-on-event-10679"></a>单一登录：事件 10679
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                                                                                                                                                |
@@ -30,18 +30,18 @@ ms.locfileid: "37000350"
 |  事件源   |                                                                                                                     ENTSSO                                                                                                                     |
 |    组件    |                                                                                                                      N\A                                                                                                                       |
 |  符号名称  |                                                                                                          SSO_WARN_PS_MAPPING_DISABLED                                                                                                          |
-|  消息正文   | 外部密码更改。 由于已禁用映射，因此未更改外部帐户的密码。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> 应用程序名称: %3 %r<br /><br /> 外部帐户： %4 |
+|  消息正文   | 外部密码更改。 密码未更改外部帐户因为映射被 disabled.%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> 应用程序名称: %3 %r<br /><br /> 外部帐户： %4 |
 
 ## <a name="explanation"></a>解释  
- 此警告事件表明由于已禁用映射而未更改外部帐户的密码。  
+ 此警告事件表示，密码未更改外部帐户因为已禁用映射。  
 
 ## <a name="user-action"></a>用户操作  
- 要解决此警告，请执行以下操作：  
+ 若要解决此警告，请执行以下操作：  
 
--   使用 SSO 管理工具启用此适配器的映射。  
+-   使用 SSO 管理工具来启用此适配器的映射。  
 
 ## <a name="more-info"></a>详细信息
 
 - [密码同步](../core/password-synchronization2.md)  
 
-- **密码同步适配器属性： 选项** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+- **密码同步适配器属性：选项** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]

@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10709 |Microsoft Docs
+title: 单一登录：Event 10709 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: b114b8afb55c41171ef537a9dfc56d341943a226
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f4f69e2226ab304e9d6b23ead1c9e2b84ffa9fb4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37014246"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397247"
 ---
-# <a name="single-sign-on-event-10709"></a>单一登录： 事件 10709
+# <a name="single-sign-on-event-10709"></a>单一登录：事件 10709
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                                                                                                                                                              |
@@ -30,15 +30,15 @@ ms.locfileid: "37014246"
 |  事件源   |                                                                                                                            ENTSSO                                                                                                                            |
 |    组件    |                                                                                                                             N\A                                                                                                                              |
 |  符号名称  |                                                                                                                SSO_WARN_PS_PCNS_ACCESS_DENIED                                                                                                                |
-|  消息正文   | 仅接受来自访问域中域控制器上 PCNS 的 Windows 密码更改。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 客户端用户: %2 %r<br /><br /> 访问域: %3 %r<br /><br /> 访问 Sid: %4 %r<br /><br /> 错误代码： %5 |
+|  消息正文   | 从 PCNS 的 Windows 密码更改将仅接受来自域控制器中访问 domain.%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 客户端用户: %2 %r<br /><br /> 访问域: %3 %r<br /><br /> 访问 Sid: %4 %r<br /><br /> 错误代码： %5 |
 
 ## <a name="explanation"></a>解释  
- 此警告事件表明，收到来自 ENTSSO 服务器域外某个服务器上密码更改通知服务 (PCNS) 的一个 Windows 密码更改。 仅接受来自 ENTSSO 服务器所在域中的域控制器的 Windows 密码更改。  
+ 此警告事件表明 Windows 密码更改已在 ENTSSO 服务器域之外的服务器上收到来自密码更改通知服务 (PCNS)。 Windows 密码更改将仅接受来自 ENTSSO 服务器所在域中的域控制器。  
 
 ## <a name="user-action"></a>用户操作  
- 若要解决此警告问题，请执行以下操作：  
+ 若要解决此警告，请执行以下操作：  
 
-- 将同一域中的 ENTSSO 服务器配置为 PCNS。  
+- ENTSSO 服务器配置为 PCNS 位于同一域中。  
 
   有关详细信息，请参阅下列资源：  
 

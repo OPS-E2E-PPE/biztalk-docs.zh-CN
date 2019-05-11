@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10670 |Microsoft Docs
+title: 单一登录：Event 10670 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dca094f48f8b9c367d46af2dc3ca866888f42bbe
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e544a9707e2765502c79029d10e6facad4a354c6
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37001758"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397522"
 ---
-# <a name="single-sign-on-event-10670"></a>单一登录： 事件 10670
+# <a name="single-sign-on-event-10670"></a>单一登录：事件 10670
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                                      |
@@ -30,15 +30,15 @@ ms.locfileid: "37001758"
 |  事件源   |                                                                ENTSSO                                                                |
 |    组件    |                                                                 N\A                                                                  |
 |  符号名称  |                                                  SSO_INFO_CHANGED_WINDOWS_PASSWORD                                                   |
-|  消息正文   | 已成功更改 Windows 密码。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> Windows 帐户： %3 |
+|  消息正文   | 已成功更改 Windows password.%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> Windows 帐户： %3 |
 
 ## <a name="explanation"></a>解释  
  此信息事件表明 SSO 已成功更改 Windows 密码。  
 
 ## <a name="user-action"></a>用户操作  
 
-- 不需要用户进行任何操作。  
+- 不不需要任何用户操作。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [密码同步](../core/password-synchronization2.md)

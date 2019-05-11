@@ -12,17 +12,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 69e172053151caa137f522491c37d241c6bee2e6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 215390027ffa36c59393643a543693787e529047
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015407"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395147"
 ---
 # <a name="what-you-should-know-before-programming-single-sign-on"></a>单一登录编程之前应了解哪些内容
 若要有效地使用本文档，应熟悉以下：  
   
-- Microsoft [!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)] 操作系统。 您应该熟悉尤其是 Windows 安全功能。  
+- Microsoft[!INCLUDE[btsPlatformsComApis](../includes/btsplatformscomapis-md.md)]操作系统。 您应该熟悉尤其是 Windows 安全功能。  
   
 - 管理功能的企业单一登录，尤其是如何执行管理操作使用的用户界面。  
   

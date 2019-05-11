@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10610 |Microsoft Docs
+title: 单一登录：Event 10610 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9c90855c1f136dc8204afe718ea4456c834ab667
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 451468316420c0653b967a25f233564303a6e1a5
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024403"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397726"
 ---
-# <a name="single-sign-on-event-10610"></a>单一登录： 事件 10610
+# <a name="single-sign-on-event-10610"></a>单一登录：事件 10610
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                       |
@@ -28,12 +28,12 @@ ms.locfileid: "37024403"
 | 产品版本 |                                      [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                       |
 |    事件 ID     |                                                                 10610                                                                 |
 |  事件源   |                                                                ENTSSO                                                                 |
-|    组件    |                                                                  N/A                                                                  |
+|    组件    |                                                                  不可用                                                                  |
 |  符号名称  |                                                      SSO_WARN_CRED_CACHE_FAILED                                                       |
-|  消息正文   | 凭据缓存遇到意外错误并已关闭。 这可能会影响 performance.%r<br /><br /> 错误代码： %1 |
+|  消息正文   | 凭据缓存遇到意外的错误，已经关闭。 这可能会影响 performance.%r<br /><br /> 错误代码： %1 |
   
 ## <a name="explanation"></a>解释  
- 凭据缓存遇到意外错误并已关闭。 尽管这可能会影响性能，但对功能运转没有影响。  
+ 凭据缓存遇到意外的错误，已经关闭。 虽然这可能会影响性能，它不会影响功能。  
   
 ## <a name="user-action"></a>用户操作  
- 在方便的时候重新启动 SSO 服务。
+ 重新启动 SSO 服务在方便的时候。

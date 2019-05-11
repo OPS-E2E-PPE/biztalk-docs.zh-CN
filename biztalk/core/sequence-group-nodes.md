@@ -12,24 +12,24 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c113d0cfd0f6055d55b0329bba3c1ec60bf835e8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: e0a8343fe49f104cc00622e6489237fde48d0f7c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37019739"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393339"
 ---
-# <a name="sequence-group-nodes"></a>“顺序组”节点
+# <a name="sequence-group-nodes"></a>序列组节点
 
 ## <a name="overview"></a>概述
-在 BizTalk 编辑器中，可以插入**序列组**节点以包含其他节点必须出现在实例消息中出现的相同顺序**序列组**节点。 包含的节点必须是与 XML 元素对应的节点，但不能是与 XML 属性对应的节点。  
+在 BizTalk 编辑器中，可以插入**序列组**节点以包含其他节点必须出现在实例消息中出现的相同顺序**序列组**节点。 包含的节点必须是与 XML 元素相对应的节点，但不能为对应于 XML 特性的节点。  
 
 > [!NOTE]
 >  在 BizTalk 编辑器中，**序列组**节点的表示方法的字符串的默认\<序列\>架构树视图中。 如果引用设置为**序列组**节点，如 x，它将表示为\<Group: x\>架构树视图中。  
 
  您可能想要添加**序列组**声明全局元素组。  
 
- 可能需要为 XML 创建架构，如下所示：  
+ 您可能需要为 XML，如下所示创建架构。  
 
 ```  
 <Root>  
@@ -46,7 +46,7 @@ ms.locfileid: "37019739"
 
 ```  
 
- 由于在两种情况下都存在 GroupItem1 和 GroupItem2，因此可以声明一个既是 Record1 的子项又是 Record2 的子项的全局顺序组。 有关如何声明全局顺序组的分步说明，请参阅[到另一个节点或类型创建引用](../core/how-to-create-references-to-another-node-or-type.md)。  
+ 因为 GroupItem1 和 GroupItem2 存在两种情况下，您可能会声明是 Record1 和 Record2 的子项的全局顺序组。 有关如何声明全局顺序组的分步说明，请参阅[到另一个节点或类型创建引用](../core/how-to-create-references-to-another-node-or-type.md)。  
 
  用户可以更改的隐藏的组要**选择组**节点或**全部组**节点 (因此它不一定是**序列组**节点) 通过更改**组顺序类型**属性。 此属性的详细信息[!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
 

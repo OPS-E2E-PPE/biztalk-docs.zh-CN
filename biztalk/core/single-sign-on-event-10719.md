@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10719 |Microsoft Docs
+title: 单一登录：Event 10719 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1b106555fd020d39c44b2ac3c01a657de195fb98
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4950abc1b283b3d587c4e3aebea0d864bcb64e0f
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978847"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397180"
 ---
-# <a name="single-sign-on-event-10719"></a>单一登录： 事件 10719
+# <a name="single-sign-on-event-10719"></a>单一登录：事件 10719
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                   |
@@ -30,14 +30,14 @@ ms.locfileid: "36978847"
 |  事件源   |                                              ENTSSO                                               |
 |    组件    |                                                N\A                                                |
 |  符号名称  |                                   SSO_INFO_REPLAY_FILE_CREATED                                    |
-|  消息正文   | 已成功创建新重播文件。%r<br /><br /> 适配器: %1 %r<br /><br /> 文件名称： %2 |
+|  消息正文   | 新的重播文件已成功 created.%r<br /><br /> 适配器: %1 %r<br /><br /> 文件名称： %2 |
 
 ## <a name="explanation"></a>解释  
- 此信息事件表示已成功创建新重播文件。  
+ 此信息事件表明已成功创建新重播文件。  
 
 ## <a name="user-action"></a>用户操作  
 
-- 不必进行用户操作。  
+- 不不需要任何用户操作  
 
   有关详细信息，请参阅下列资源：  
 

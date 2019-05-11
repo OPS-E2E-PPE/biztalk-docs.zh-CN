@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10760 |Microsoft Docs
+title: 单一登录：Event 10760 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 294cb6b540565e619de47b13b698cb3d84c8ef41
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 2014fe35e43b600d0d5376a2db02887f996a3e88
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36991942"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396679"
 ---
-# <a name="single-sign-on-event-10760"></a>单一登录： 事件 10760
+# <a name="single-sign-on-event-10760"></a>单一登录：事件 10760
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                                                                             |
@@ -28,12 +28,12 @@ ms.locfileid: "36991942"
 | 产品版本 |                                         [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]                                          |
 |    事件 ID     |                                                                    10760                                                                    |
 |  事件源   |                                                                   ENTSSO                                                                    |
-|    组件    |                                                                     N/A                                                                     |
+|    组件    |                                                                     不可用                                                                     |
 |  符号名称  |                                                         ENTSSO_E_NO_EXISTING_VALUE                                                          |
-|  消息正文   | 此属性包包含一个 VT_NULL 值，用来指示应该保留现有属性值，但是不存在现有值。 |
+|  消息正文   | 属性包包含 VT_NULL 值表明，应该保留现有的属性值，但没有任何现有值。 |
   
 ## <a name="explanation"></a>解释  
  这是内部错误。  
   
 ## <a name="user-action"></a>用户操作  
- 如果发生此错误，则请联系 Microsoft 产品支持服务。
+ 如果发生此错误，请联系 Microsoft 产品支持服务。

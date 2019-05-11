@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10685 |Microsoft Docs
+title: 单一登录：Event 10685 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1b276432363f6073627aaa9033c2b78b730ccda1
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f73b44e334c60a59211b59a46f5c9a2dacffa8ed
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36992512"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397401"
 ---
-# <a name="single-sign-on-event-10685"></a>单一登录： 事件 10685
+# <a name="single-sign-on-event-10685"></a>单一登录：事件 10685
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                      |
@@ -30,19 +30,19 @@ ms.locfileid: "36992512"
 |  事件源   |                                                ENTSSO                                                |
 |    组件    |                                                 N\A                                                  |
 |  符号名称  |                                     SSO_WARN_REPLAY_CANNOT_OPEN                                      |
-|  消息正文   | 无法打开重播文件或进度文件。%r<br /><br /> 文件名称: %1 %r<br /><br /> 错误代码： %2 |
+|  消息正文   | 无法打开重播文件或进度 file.%r<br /><br /> 文件名称: %1 %r<br /><br /> 错误代码： %2 |
 
 ## <a name="explanation"></a>解释  
- 此警告事件表明 SSO 已经与 SSO 数据库重新建立了联系，但无法打开重播文件或进度文件。 如果 SSO 无法打开重播文件，它将继续尝试打开下一个重播文件。  
+ 此警告事件表明 SSO 已重建与 SSO 数据库的联系，但无法打开重播或进度文件。 如果 SSO 无法打开重播文件，它将继续进行到下一个重播文件。  
 
- ENTSSO 服务器无法与 SSO 数据库取得联系时，密码同步使用重播文件。 进度文件指示，当在播放重播文件的过程中再次与 SSO 数据库失去联系时，SSO 能够读取多少重播文件。  
+ ENTSSO 服务器无法与 SSO 数据库取得联系时，密码同步使用重播文件。 进度文件指示距离通过 SSO 能够读取与 SSO 数据库的重播文件中用例联系人愉悦再次通过播放重播文件。  
 
 ## <a name="user-action"></a>用户操作  
  若要解决此警告事件，请执行以下操作：  
 
-- 您应检查系统和应用程序事件日志中的相关事件，确定 SSO 无法与 SSO 数据库取得联系的原因。  
+- 应检查相关事件，以确定为何 SSO 无法与 SSO 数据库联系的系统和应用程序事件日志。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [如何配置密码同步](../core/how-to-configure-password-synchronization.md)  
 

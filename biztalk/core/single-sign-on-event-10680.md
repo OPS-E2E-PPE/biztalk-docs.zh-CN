@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10680 |Microsoft Docs
+title: 单一登录：Event 10680 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d1ce2871618722af1fce4175be715c8ac1fa55a9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7a8b734006a8ec0181a3307386a32d8d249eaa25
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36974894"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397434"
 ---
-# <a name="single-sign-on-event-10680"></a>单一登录： 事件 10680
+# <a name="single-sign-on-event-10680"></a>单一登录：事件 10680
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                                                                                                                                                                                                                                                         |
@@ -30,20 +30,20 @@ ms.locfileid: "36974894"
 |  事件源   |                                                                                                                                                 ENTSSO                                                                                                                                                  |
 |    组件    |                                                                                                                                                   N\A                                                                                                                                                   |
 |  符号名称  |                                                                                                                                      SSO_WARN_PS_GET_CREDS_FAILED                                                                                                                                       |
-|  消息正文   | 外部帐户的密码未更改，因为无法从 SSO 数据库获取现有的外部凭据。%r<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> 应用程序名称: %3 %r<br /><br /> 外部帐户: %4 %r<br /><br /> 错误代码： %5 |
+|  消息正文   | 密码未更改外部帐户由于无法从 SSO database.%r 获得现有外部凭据<br /><br /> 跟踪 ID: %1 %r<br /><br /> 适配器: %2 %r<br /><br /> 应用程序名称: %3 %r<br /><br /> 外部帐户: %4 %r<br /><br /> 错误代码： %5 |
 
 ## <a name="explanation"></a>解释  
- 此警告事件表明，由于无法从 SSO 数据库获得现有外部凭据，因此，未更改外部帐户的密码。  
+ 此警告事件表示，密码未更改外部帐户由于无法从 SSO 数据库获得现有外部凭据。  
 
 ## <a name="user-action"></a>用户操作  
- 若要解决此警告问题，请执行以下操作：  
+ 若要解决此警告，请执行以下操作：  
 
 -   验证外部凭据。  
 
--   外部凭据无效，请使用 SSO 管理工具为此外部帐户设置外部凭据。 您必须在所有相关的应用程序中为给定的帐户设置外部密码。  
+-   外部凭据不是有效，请使用 SSO 管理工具设置此外部帐户的外部凭据。 必须在所有关联应用程序中设置 （适用于给定的帐户的外部密码。  
 
 ## <a name="more-info"></a>详细信息
 
 - [密码同步](../core/password-synchronization2.md)  
 
-- **密码同步适配器属性： 选项** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]
+- **密码同步适配器属性：选项** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]

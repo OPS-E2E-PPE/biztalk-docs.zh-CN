@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 5719d74517331b30de986424bc14e7d01d128cf3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c65a1a6313b70b03894c2d4adc41d7679d71b82c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36999342"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375329"
 ---
 # <a name="operations-on-plsql-apis"></a>对 PL/SQL Api 的操作
 Oracle E-business Suite 提供了一组封装的函数和存储的过程的窗体中的 PL/SQL Api。 这些打包函数和过程空间中的操作作为[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]。 

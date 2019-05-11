@@ -12,31 +12,31 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed8c37dbcca5c15e777cf6a98e50227f8752e324
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: bb3fcbb2799cba8e808c2bd2da66c09706fe7a33
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979294"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65393455"
 ---
 # <a name="other-activities-that-can-affect-dehydration-behavior"></a>其他可影响冻结行为的活动
-以下活动直接或间接影响冻结行为和总体性能，因此在所有的测试方案中都应考虑这些活动。  
+以下活动直接或间接影响冻结行为和总体性能，因此应考虑到所有测试方案。  
   
-- **BizTalk Server 管理控制台查询。** 这些查询会消耗资源并影响总体吞吐量，具体取决于查询的类型和频率。  
+- **BizTalk Server 管理控制台查询。** 这些查询会消耗资源并影响总体吞吐量，具体取决于的类型和查询的频率。  
   
-- **备份、 存档和清除活动。** 这些活动也会消耗资源，在所有测试方案中都应考虑到这些活动。  
+- **备份、 存档和清除活动。** 这些活动也消耗资源，应考虑到所有测试方案。  
   
-- **混合的 32 位和 64 位主机。** 混合使用 32 位和 64 位主机时应注意以下事项：  
+- **混合的 32 位和 64 位主机。** 下面是使用混合的 32 位和 64 位主机时要考虑一些事项：  
   
-  - 在任务繁忙的情况下，应测量所消耗的虚拟内存和物理内存，并将其与特定的阈值进行比较。 在 64 位系统中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]过程使用更多的内存，因此在冻结策略区别的 32 位使用相同的系统和相同的默认值。 请确保将业务流程、接收主机、发送主机和消息框主机分离开。  
+  - 在高负荷下我们测量已使用的虚拟和物理内存，并与特定的阈值进行比较的。 在 64 位系统中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]过程使用更多的内存，因此在冻结策略区别的 32 位使用相同的系统和相同的默认值。 请确保单独的业务流程、 接收、 发送和消息框主机。  
   
-     只要 64 位系统上只有业务流程主机，则对 64 位系统使用默认的 32 位阈值时不会存在明显的差异。 但是，在压力的各种**MemoryThrottlingCriteria**设置应至少增加一倍或增加两倍 （只要有足够的内存），但方案进行调整，因为有许多最大化吞吐量派上用场的因素。 应在任务繁忙时调整各个冻结阈值以找出它们的最佳值。  
+     没有存在明显的差异对于 64 位系统，使用默认 32 位阈值时，只要只有业务流程主机是在 64 位计算机上。 但是，在压力的各种**MemoryThrottlingCriteria**设置应至少增加一倍或增加两倍 （只要有足够的内存），但方案进行调整，因为有许多最大化吞吐量派上用场的因素。 应调整各个冻结阈值，若要查找什么是它们的最佳的压力下。  
   
-  - 冻结行为依赖于每个订阅的传送时间历史记录；订阅不同其历史记录可能也会不同，因此在调整冻结属性值时应考虑到这一点。  
+  - 冻结行为依赖于每个订阅; 的传送时间历史记录对于不同的订阅因此请这考虑在优化冻结属性值，则历史记录可能会有所不同。  
   
-  - 如果回收了一台主机上的业务流程主机服务，而没有回收另一台主机上的业务流程主机服务，则历史记录将不同。  
+  - 当业务流程主机服务回收在一台主机上但不是在另一台，则历史记录将不同。  
   
-  - 当服务器使用不同版本的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 时，这两个版本之间的冻结策略将存在差别。  
+  - 当服务器使用不同版本的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，将两者之间的冻结策略区别。  
   
 ## <a name="see-also"></a>请参阅  
  [BTSNTSvc.exe.config 文件](../core/btsntsvc-exe-config-file.md)

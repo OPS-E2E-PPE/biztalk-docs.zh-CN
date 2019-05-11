@@ -2,15 +2,15 @@
 redirect_url: /biztalk/core/security-in-biztalk-adapter-for-peoplesoft-enterprise/
 redirect_document_id: true
 ROBOTS: NOINDEX
-ms.openlocfilehash: 2c278864c45e045cd04c539ad8b077c998242fe9
-ms.sourcegitcommit: dd7c54feab783ae2f8fe75873363fe9ffc77cd66
+ms.openlocfilehash: 0bc66d9462bbd30e91c2c728bffdfac64229461e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2017
-ms.locfileid: "24014612"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396534"
 ---
 # <a name="using-single-sign-on"></a>使用单一登录
-用于 PeopleSoft Enterprise 的 Microsoft BizTalk 适配器提供了单一登录 (SSO) 支持。 企业单一登录工具创建的关联应用程序代表诸如 PeopleSoft 之类的服务器系统。  
+用于 PeopleSoft Enterprise 的 Microsoft BizTalk 适配器提供单一登录 (SSO) 支持。 由企业单一登录工具创建的关联应用程序代表诸如 PeopleSoft 之类的服务器系统。  
   
 ## <a name="in-this-section"></a>本节内容  
   

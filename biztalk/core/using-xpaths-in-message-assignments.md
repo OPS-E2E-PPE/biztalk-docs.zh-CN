@@ -1,5 +1,5 @@
 ---
-title: 在消息分配中使用 Xpath |Microsoft 文档
+title: 消息赋值中使用 Xpath |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -20,37 +20,37 @@ caps.latest.revision: 10
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: d9ec1e5b56f382601c79324df8651c91c483cb4a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 18968936cc1271d42fdf490ce2395c437b3ecfd7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22288109"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396729"
 ---
-# <a name="using-xpaths-in-message-assignments"></a>在消息分配中使用 Xpath
-你可以使用**xpath**函数将一个 XPath 值分配到消息部分，或将值分配给 XPath 引用消息部分。 将分配给消息和消息部分的详细信息，请参阅[构造消息](../core/constructing-messages.md)。  
+# <a name="using-xpaths-in-message-assignments"></a>消息赋值中使用 Xpath
+可以使用**xpath**函数将一个 XPath 值分配到消息部分，或将值分配为 XPath 引用消息部分。 将分配给消息和消息部分的详细信息，请参阅[构造消息](../core/constructing-messages.md)。  
   
 > [!NOTE]
->  有关 xpath 函数的详细信息，请参阅 XML Path 语言 (XPath) 的第三方文档。  
+>  Xpath 函数的详细信息，请参阅 XML 路径语言 (XPath) 上的第三方文档。  
   
 > [!NOTE]
->  使用**xpath**函数并不局限于消息赋值。 您还可以在任何表达式中使用它，例如：  
+>  利用**xpath**函数并不限于消息赋值。 您还可以使用它在任何表达式中，例如：  
   
 ```  
 If ((System.Double) xpath(_RequestMessage.part, "number(//book[last()]/price)") == 75.00 && (System.Boolean) xpath(msgBoolean, "string(//boolean)") == false)...  
 ```  
   
 > [!NOTE]
->  如果要对字符串赋值，请使用 XPath string() 函数。 例如：  
+>  如果你想要将值分配为字符串，使用 XPath string （） 函数。 例如：  
   
 ```  
 myString = xpath(msg, "string(/*/book[1]/title)");  
 ```  
   
 > [!NOTE]
->  引擎不识别架构，因此您只能从包含消息（必须存在完整路径）中现有的节点读取值或向其中写入值，否则引擎将引发异常。 即使您提供默认值，也是如此。  
+>  引擎不识别架构，因此只能读取值或将值写入到存在于包含一个节点 （完整路径必须存在） 的消息或引擎将引发异常。 这是 true，即使您提供默认值。  
   
-## <a name="assigning-to-an-xpath-in-a-message-part"></a>对消息部分中的 XPath 赋值  
+## <a name="assigning-to-an-xpath-in-a-message-part"></a>将分配到消息部分中的 XPath  
  请考虑以下架构：  
   
 ```  
@@ -82,7 +82,7 @@ myString = xpath(msg, "string(/*/book[1]/title)");
 </xs:schema>  
 ```  
   
- 您可以使用如下函数设置该架构类型的文档实例的值：  
+ 您可以按如下所示使用函数设置该架构类型的文档实例的值：  
   
 ```  
 //assumes that a message named _ResponseMessage is already constructed  
@@ -94,7 +94,7 @@ xpath(_ResponseMessage.part, "/*/book[1]/author/LastName") = "B";
 xpath(_ResponseMessage.part, "/*/book[1]/price") = 50;  
 ```  
   
-## <a name="assigning-to-a-message-part-from-an-xpath"></a>通过 XPath 对消息部分赋值  
+## <a name="assigning-to-a-message-part-from-an-xpath"></a>通过 XPath 将分配到消息部分  
   
 ```  
 //assumes that a message named objMessage is already constructed  
@@ -104,23 +104,23 @@ objMessage.StringPart = xpath("'Hello'");
 objMessage.StringPart2 = xpath("'World'");  
 ```  
   
-## <a name="using-xpath-to-assign-from-nodes-and-node-sets"></a>使用 XPath 从节点和节点集赋值  
- 您也可以使用 XPath 将 XML 节点和节点集赋予一个 XML 元素、一个类或者一条基于架构或基于类的消息。  
+## <a name="using-xpath-to-assign-from-nodes-and-node-sets"></a>使用 XPath 从节点和节点将分配设置  
+ 此外可以使用 XPath 将 XML 节点和节点集到 XML 元素、 一个类或基于架构或基于类的消息。  
   
- 假设有一个称为 Book 的 XML 序列化类，请考虑下列示例：  
+ 假设有 XML 可序列化的类称为 Book，并考虑下面的示例：  
   
 ```  
 [Serializable]  
 Class Book {...}  
 ```  
   
- 示例一 — 选择目录中的第四个书元素，并将其赋予一个 XML 元素变量：  
+ 示例一 — 选择目录中的第四个书元素，并将其分配给一个 XML 元素变量：  
   
 ```  
 myXmlElement = xpath(myMsg, "/catalog/book[3]");  
 ```  
   
- 示例二 — 选择目录中的第四个书元素，并使用 XML 反序列化将其转换为 Book 类实例：  
+ 示例二 — 选择目录中的第四个书元素，并将其使用 XML 反序列化到 Book 类实例转换：  
   
 ```  
 myBook = xpath(myMsg, "/catalog/book[3]");  
@@ -132,31 +132,31 @@ myBook = xpath(myMsg, "/catalog/book[3]");
 myBookMsg = xpath(myMsg, "/catalog/book[3]");  
 ```  
   
- 示例四 — 选择目录中的所有书元素，其中 MyMethod 将 XmlNodeSet 作为参数：  
+ 示例四 — 选择的目录，其中 MyMethod 将 XmlNodeSet 作为参数中的所有 book 元素：  
   
 ```  
 MyMethod(xpath(myMsg, "/catalog/book"));  
 ```  
   
- 示例五 — 将一个书元素添加到“BookOfTheMonth”容器：  
+ 示例五 — 将一个书元素添加到"BookOfTheMonth"容器：  
   
 ```  
 xpath(MyMsg2, "/RecommendedBooks/BookOfTheMonth") = myBook;  
 ```  
   
- 示例六 — 将价格不超过二十的所有书添加到一组推荐书中：  
+ 示例六 — 将价格不超过二十或到一组推荐书籍的所有书都添加：  
   
 ```  
 xpath(MyMsg2, "/RecommendedBooks/BestPriceBooks") = xpath(MyMsg, "/catalog/book[@price <= 20]");  
 ```  
   
- 示例七 — 调用返回 XML 元素的用户代码：  
+ 示例七 — 调用返回的 XML 元素的用户代码：  
   
 ```  
 xpath(MyMsg2, "/RecommendedBooks/AdvertisedByPartner") = GetPartnerAdvertisedBook();  
 ```  
   
- 应用示例五和示例七之前：  
+ 之前应用示例五和七个示例：  
   
 ```  
 <RecommendedBooks>  
@@ -166,7 +166,7 @@ xpath(MyMsg2, "/RecommendedBooks/AdvertisedByPartner") = GetPartnerAdvertisedBoo
 </RecommendedBooks>  
 ```  
   
- 应用示例五和示例七之后：  
+ 应用示例五和七个示例： 之后  
   
 ```  
 <RecommendedBooks>  

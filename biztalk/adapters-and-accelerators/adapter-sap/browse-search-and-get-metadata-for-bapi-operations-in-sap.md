@@ -20,12 +20,12 @@ caps.latest.revision: 13
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 97a043c08cf8d7ef258ceb2a2f311d2a86302881
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: c9ab474f5b111946cc77e5f9a1959d5e7edcfb7e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36978950"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374100"
 ---
 # <a name="browse-search-and-get-metadata-for-bapi-operations-in-sap"></a>浏览、 搜索和获取 BAPI 操作在 SAP 中的元数据
 本部分说明如何浏览、 搜索和检索 BAPI 操作使用的 sap 元数据[!INCLUDE[addadapterservrefshort](../../includes/addadapterservrefshort-md.md)]， [!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]，或[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。 说明的大多数都是相同的所有三个用户界面。 只要为相关的用户界面提供了适用的单独操作步骤。  

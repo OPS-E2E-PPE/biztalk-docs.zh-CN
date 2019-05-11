@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0939111bc0a62ecf31286045f412ed160a97c3f9
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 918b9e5d2f5ad4a3aeb0db54d54cdab943198cee
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36967726"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395115"
 ---
 # <a name="installing-and-running-the-dynamic-resolution-sample"></a>安装和运行动态解析示例
 动态解析示例演示了用于 ESB 调度程序和 ESB 调度程序反汇编程序管道组件的典型使用方案。 它演示了如何使用组件动态解析终结点位置、 设置路由属性和解析和执行而无需使用业务流程在消息级别的 Microsoft BizTalk 映射。 它还演示了单向和双向消息传送模式。  
@@ -33,7 +33,7 @@ ms.locfileid: "36967726"
 ## <a name="two-way-messaging-scenarios"></a>双向消息传送方案  
  所有的双向消息传送方案使用 ESB 的示例。NorthAmericanServices Web 服务位于 http://localhost/ESB.NorthAmericanServices/CustomerOrder.asmx 以将请求消息发布到 BizTalk。 您可以使用 Microsoft InfoPath 此 Web 服务或通过可从 Storm 之类的实用工具[CodePlex](http://go.microsoft.com/fwlink/?LinkID=187762&clcid=0x409)。  
   
- 每个示例动态解析终结点 URL，以便提交到 ESB 的示例消息。CanadianServices Web 服务位于http://localhost/ESB.CanadianServices/SubmitPOService.asmx。 该示例将执行**submitOrder**操作或**submitPurchase**操作，具体取决于解析过程的结果。 双向消息传送方案的接收位置是 DynamicResolutionReqResp_SOAP。 有 10 个双向消息传送示例中，所有由唯一绑定文件，您必须导入之前执行的每个示例。  
+ 每个示例动态解析终结点 URL，以便提交到 ESB 的示例消息。CanadianServices Web 服务位于 http://localhost/ESB.CanadianServices/SubmitPOService.asmx。 该示例将执行**submitOrder**操作或**submitPurchase**操作，具体取决于解析过程的结果。 双向消息传送方案的接收位置是 DynamicResolutionReqResp_SOAP。 有 10 个双向消息传送示例中，所有由唯一绑定文件，您必须导入之前执行的每个示例。  
   
 ## <a name="binding-files"></a>绑定文件  
  此示例的绑定文件位于名为 \Source\Samples\DynamicResolution\Samples\Release 的文件夹。  
@@ -47,31 +47,31 @@ ms.locfileid: "36967726"
   
 - **Microsoft.Practices.ESB.PipelineComponents.dll**。 这包含 ESB 调度程序管道组件。  
   
-- **Microsoft.Practices.ESB.Resolver.dll**。 这会实现调用管道的解析程序管理器。  
+- **Microsoft.Practices.ESB.Resolver.dll**. 这会实现调用管道的解析程序管理器。  
   
-- **Microsoft.Practices.ESB.Resolver.BRE.dll**。 这会实现业务规则引擎冲突解决程序。  
+- **Microsoft.Practices.ESB.Resolver.BRE.dll**. 这会实现业务规则引擎冲突解决程序。  
   
-- **Microsoft.Practices.ESB.Resolver.STATIC.dll**。 这会实现静态冲突解决程序。  
+- **Microsoft.Practices.ESB.Resolver.STATIC.dll**. 这会实现静态冲突解决程序。  
   
-- **Microsoft.Practices.ESB.Resolver.UDDI.dll**。 这会实现 UDDI 解析程序。  
+- **Microsoft.Practices.ESB.Resolver.UDDI.dll**. 这会实现 UDDI 解析程序。  
   
-- **Microsoft.Practices.ESB.Resolver.UDDI3.dll**。 这会实现 UDDI3 冲突解决程序。  
+- **Microsoft.Practices.ESB.Resolver.UDDI3.dll**. 这会实现 UDDI3 冲突解决程序。  
   
 - **Microsoft.Practices.ESB.Resolver.XPATH.dll**。 这会实现 XPATH 冲突解决程序。  
   
-- **Microsoft.Practices.ESB.Resolver.Schemas.dll**。 这包含冲突解决程序架构。  
+- **Microsoft.Practices.ESB.Resolver.Schemas.dll**. 这包含冲突解决程序架构。  
   
-- **Microsoft.Practices.ESB.Adapter.dll**。 这会实现适配器管理器。  
+- **Microsoft.Practices.ESB.Adapter.dll**. 这会实现适配器管理器。  
   
-- **Microsoft.Practices.ESB.Adapter.FTP.dll**。 这会实现 FTP 适配器提供程序。  
+- **Microsoft.Practices.ESB.Adapter.FTP.dll**. 这会实现 FTP 适配器提供程序。  
   
-- **Microsoft.Practices.ESB.Adapter.FILE.dll**。 这会实现文件适配器提供程序。  
+- **Microsoft.Practices.ESB.Adapter.FILE.dll**. 这会实现文件适配器提供程序。  
   
-- **Microsoft.Practices.ESB.Adapter.MQSeries.dll**。 这会实现 MQSeries 适配器提供程序。  
+- **Microsoft.Practices.ESB.Adapter.MQSeries.dll**. 这会实现 MQSeries 适配器提供程序。  
   
-- **Microsoft.Practices.ESB.Adapter.WcfBasicHttp.dll**。 这将实现 WCF BasicHttp 适配器提供程序。  
+- **Microsoft.Practices.ESB.Adapter.WcfBasicHttp.dll**. 这将实现 WCF BasicHttp 适配器提供程序。  
   
-- **Microsoft.Practices.ESB.Adapter.WcfWSHttp.dll**。 这会实现 Wcf-wshttp 适配器提供程序。  
+- **Microsoft.Practices.ESB.Adapter.WcfWSHttp.dll**. 这会实现 Wcf-wshttp 适配器提供程序。  
   
   动态解析示例也是依赖于前面的冲突解决程序和适配器的正确配置。 请确保安装中所述完成配置，这些过程[!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]。  
   

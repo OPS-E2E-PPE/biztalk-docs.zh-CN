@@ -1,5 +1,5 @@
 ---
-title: 架构应该让段处于以下顺序 ST ....SE |Microsoft Docs
+title: 架构应该让段处于以下顺序 ST ....SE | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c98bc756e4bd75a8a15111c54f433a7f9c6c0509
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: b975f28221941ef84f0683fae1597816640d48a1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37015166"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396906"
 ---
 # <a name="schema-should-have-segments-in-the-following-order-st--se"></a>架构应该让段处于以下顺序 ST ....SE
 ## <a name="details"></a>详细信息  

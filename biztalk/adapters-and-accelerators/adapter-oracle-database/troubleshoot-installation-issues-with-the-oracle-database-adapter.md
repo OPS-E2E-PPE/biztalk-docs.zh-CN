@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1fff4cc7948bd05043de9d9028b2c2a39bf940b4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d2e7d00f6d943318903388f58ce3aa1ee7f5568d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975958"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65375939"
 ---
 # <a name="troubleshoot-installation-issues-with-the-oracle-database-adapter"></a>对 Oracle 数据库适配器的安装问题进行故障排除
 安装 Microsoft[!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]复制产品二进制文件的计算机上并注册每个适配器的绑定。 本部分讨论如何使用故障排除技术来解决安装错误，并还列出了一些已知的问题。  

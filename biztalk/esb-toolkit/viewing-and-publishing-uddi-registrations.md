@@ -1,5 +1,5 @@
 ---
-title: 查看和发布 UDDI 注册 |Microsoft 文档
+title: 查看和发布 UDDI 注册 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,18 +12,18 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4d42ef85f0ebdc8af1b55449162bd10064e20498
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 03ca0cbde40c0a7b83c517556cf993e94cd56709
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22295173"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396352"
 ---
 # <a name="viewing-and-publishing-uddi-registrations"></a>查看和发布 UDDI 注册
-ESB 管理门户与通用、 描述、 发现和集成 (UDDI) 注册表集成，并且可以发布到该服务器除了显示现有注册项的项。 门户同时支持自动发布的功能和审批过程，使管理员能够控制到 UDDI 服务器的条目的发布。 本部分介绍下列常见任务：  
+ESB 管理门户使用通用描述、 发现和集成 (UDDI) 注册表集成，可以发布到服务器以及显示现有的注册项的项。 在门户同时支持自动发布的功能和审批流程，使管理员能够控制发布到 UDDI 服务器条目。 本部分介绍以下常见任务：  
   
 -   [发布 BizTalk 终结点](../esb-toolkit/publishing-biztalk-endpoints.md)  
   
--   [自动登记和审批过程](../esb-toolkit/the-auto-enlist-and-approval-process.md)  
+-   [自动登记和审核流程](../esb-toolkit/the-auto-enlist-and-approval-process.md)  
   
 -   [从 BizTalk Server 管理控制台发布](../esb-toolkit/publishing-from-the-biztalk-server-administration-console.md)

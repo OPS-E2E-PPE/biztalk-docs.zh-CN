@@ -12,14 +12,14 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 333657b16b0e4a0b9bbbb30c73641f7db8466b87
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ccabce0ce60f018f6d55d64a26c1f9540ed88fa2
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37006694"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65394099"
 ---
-# <a name="the-party-for-this-as2-interchange-must-contain-a-value-for-as2-to"></a>此 AS2 交换的参与方必须包含 AS2-To 的值
+# <a name="the-party-for-this-as2-interchange-must-contain-a-value-for-as2-to"></a>此 AS2 交换的参与方必须包含值为 AS2-到
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                                        |
@@ -30,18 +30,18 @@ ms.locfileid: "37006694"
 |  事件源   | [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] EDI |
 |    组件    |                                       AS2 引擎                                       |
 |  符号名称  |                               InvalidAgreementAS2ToName                                |
-|  消息正文   |          此 AS2 交换的参与方必须包含 AS2-To 的值。           |
+|  消息正文   |          此 AS2 交换的参与方必须包含值为 AS2-到。           |
   
 ## <a name="explanation"></a>解释  
- 此错误/警告/信息事件表明发送管道无法处理传出的 AS2 消息，因为没有为解析后的作为消息接收方的参与方设置 AS2-To 属性。 这表明通过将与参与方关联的发送端口与订阅消息的发送端口匹配来解析传出 AS2 消息的参与方。  
+ 此错误/警告/信息事件表明发送管道不无法处理传出的 AS2 消息，因为 AS2-作为消息接收方的解析参与方未设置属性。 这表示传出的 AS2 消息的参与方已通过匹配订阅该消息的发送端口的参与方与关联的发送端口来解决。  
   
 ## <a name="user-action"></a>用户操作  
  若要解决此错误，请执行，如下所示：  
   
 1.  打开 BizTalk Server 管理控制台。  
   
-2.  移动到“参与方”节点，并打开为消息解析的参与方的“AS2 属性”对话框。  
+2.  转到参与方节点，然后打开为消息解析的参与方 AS2 属性对话框。  
   
-3.  单击“作为 AS2 消息接收方的参与方”节点。  
+3.  为 AS2 消息接收方节点中单击的参与方。  
   
-4.  为 AS2-To 属性输入值。
+4.  输入 AS2 的值的属性。

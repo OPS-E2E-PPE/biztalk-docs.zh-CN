@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10696 |Microsoft Docs
+title: 单一登录：Event 10696 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 3332a8104b96731a1fcf75267ec6fd69100c441a
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 364abc55edf749a01828b5188a0ba55ad2a151b4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968566"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65397325"
 ---
-# <a name="single-sign-on-event-10696"></a>单一登录： 事件 10696
+# <a name="single-sign-on-event-10696"></a>单一登录：事件 10696
 ## <a name="details"></a>详细信息  
 
 |                 |                                                                           |
@@ -30,10 +30,10 @@ ms.locfileid: "36968566"
 |  事件源   |                                  ENTSSO                                   |
 |    组件    |                                    N\A                                    |
 |  符号名称  |                SSO_ERROR_PROGRESS_INCORRECT_RECORD_VERSION                |
-|  消息正文   | 检测到进度文件已损坏。%r<br /><br /> 文件名称： %1 |
+|  消息正文   | 进度 file.%r 中检测到损坏。<br /><br /> 文件名称： %1 |
 
 ## <a name="explanation"></a>解释  
- 此错误事件表明 SSO 已与 SSO 数据库重新建立联系，但是由于进度文件损坏而无法对其进行读取。 如果 SSO 无法打开进度文件，则将在第一个重播文件的开始记录处启动。  
+ 此错误事件表示 SSO 已重建与 SSO 数据库的联系，但无法读取进度文件由于损坏问题。 如果 SSO 无法打开进度文件，它将开始第一个重播文件的开始记录。  
 
  ENTSSO 服务器无法与 SSO 数据库取得联系时，密码同步使用重播文件。 进度文件指示，距离通过 SSO 无法重播文件中用例联系人与 SSO 数据库会再次读取。  
 
@@ -42,7 +42,7 @@ ms.locfileid: "36968566"
 
 - 检查有相关事件的系统和应用程序事件日志。  
 
-  有关详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 帮助中的以下资源：  
+  有关详细信息，请参阅中的以下资源[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]帮助：  
 
 - [如何配置密码同步](../core/how-to-configure-password-synchronization.md)  
 

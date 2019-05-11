@@ -1,5 +1,5 @@
 ---
-title: 单一登录： 事件 10819 |Microsoft Docs
+title: 单一登录：Event 10819 | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,14 +12,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: f196bb49cd0e5825551bbffe45757c327e2cbcca
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: d1f338b78cd9c19b337b83eb829736cb7e81612e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972110"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396640"
 ---
-# <a name="single-sign-on-event-10819"></a>单一登录： 事件 10819
+# <a name="single-sign-on-event-10819"></a>单一登录：事件 10819
 ## <a name="details"></a>详细信息  
   
 |                 |                                                                           |
@@ -28,14 +28,14 @@ ms.locfileid: "36972110"
 | 产品版本 |        [!INCLUDE[btsSSOVersion](../includes/btsssoversion-md.md)]         |
 |    事件 ID     |                                   10819                                   |
 |  事件源   |                                  ENTSSO                                   |
-|    组件    |                                    N/A                                    |
+|    组件    |                                    不可用                                    |
 |  符号名称  |                         ENTSSO_E_MAPPING_CONFLICT                         |
-|  消息正文   | 由于存在映射冲突，因此未更新外部帐户。 |
+|  消息正文   | 因为存在映射冲突未更新外部帐户。 |
   
 ## <a name="explanation"></a>解释  
- 由于存在映射冲突，因此未更新外部帐户。  
+ 因为存在映射冲突未更新外部帐户。  
   
 ## <a name="user-action"></a>用户操作  
- 如果这是预期的行为，则不需要执行任何操作，此消息只是提供信息。 若要允许映射冲突，请对应用程序进行相应配置。  
+ 如果这是预期的行为，则不不需要任何操作，此消息仅供参考。 如果应允许映射冲突然后相应地配置应用程序。  
   
- 有关映射冲突的详细信息，请参阅**密码同步适配器属性： 选项** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。
+ 有关映射冲突的详细信息，请参阅**密码同步适配器属性：选项** [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。

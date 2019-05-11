@@ -12,12 +12,12 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a847aeae8c3c6ee564c38acf0b87679cd8469840
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1968f0ab8e6d6c01a98db04379ea4df21fb59be4
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36994102"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363747"
 ---
 # <a name="consume-a-wcf-lob-adapter-sdk-adapter-in-a-net-project"></a>使用.NET 项目中的 WCF LOB 适配器 SDK 适配器
 若要使用使用构建适配器[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]从[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]，必须添加到项目的服务引用。 可以执行此操作：  
@@ -47,10 +47,10 @@ ms.locfileid: "36994102"
 
 7. 如果适配器支持搜索，搜索字段将处于活动状态。 否则为您可以按协定类型筛选器中，通过单击中的节点浏览类型和操作**类别**窗格。  
 
-8. 高级的代理生成选项，请单击**高级**。 您的选择包括:   
+8. 高级的代理生成选项，请单击**高级**。 您的选择包括：  
 
 
-   |                         选项                         |   等效的 svcutil.exe 选项    |                                                                     Description                                                                     |
+   |                         Option                         |   等效的 svcutil.exe 选项    |                                                                     Description                                                                     |
    |--------------------------------------------------------|------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
    |           **生成异步方法**            |               /async               | 生成这两个同步和异步方法签名。<br /><br /> 默认值 （如果尚未选中）： 生成仅同步方法签名。 |
    |             **生成消息协定**             |          /messageContract          |                                                          生成消息协定类型。                                                          |
@@ -62,7 +62,7 @@ ms.locfileid: "36994102"
    |             **不会生成 app.config**             |             /noConfig              |                                                  不会生成应用程序配置文件。                                                  |
    |          **序列化程序**<br /><br /> **Auto**           |          /serializer:Auto          |                                     会自动选择序列化和反序列化的序列化程序。                                      |
    | **序列化程序**<br /><br /> **DataContract 序列化程序** | /serializer:DataContractSerializer |                         生成使用数据协定序列化程序进行序列化和反序列化的数据类型                          |
-   |      **序列化程序**<br /><br /> **XmlSerializer**      |     /serializer: xmlserializer      |                               生成使用 XmlSerializer 进行序列化和反序列化的数据类型。                                |
+   |      **序列化程序**<br /><br /> **XmlSerializer**      |     /serializer:XmlSerializer      |                               生成使用 XmlSerializer 进行序列化和反序列化的数据类型。                                |
 
 
 9. 若要生成的代理服务器项目，单击**确定**。 根据协定类型的项目数而异。  
@@ -89,12 +89,12 @@ ms.locfileid: "36994102"
    > [!NOTE]
    >  如果您的适配器包含很多操作，则可以限制使用的查询字符串返回的操作 op = 跟你感兴趣的操作的名称。 例如：`svcutil.exe “http://localhost/adapter/AdapterService.svc?wsdl&op=Echo/EchoString&op=Echo/EchoArray”`仅 EchoString 和 EchoArray 操作为生成代理代码。  
 
-2. 打开的项目中[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]。  
+2. 在 [!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)] 中打开项目。  
 
    1.  在中**解决方案资源管理器**，右键单击项目，依次指向**添加**，然后单击**新项**。 在中**添加现有项**对话框中，选择前面创建的.cs 和 app.config 文件。  单击 **“添加”**。  
 
    2.  在中**解决方案资源管理器**，右键单击**引用**，然后单击**添加引用**。 上 **.NET**选项卡上，选择**System.ServiceModel**，然后单击**确定**。 现在可以在应用程序中使用该代理。  
 
 ## <a name="see-also"></a>请参阅  
- [教程 1： 开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)   
+ [教程 1:开发 Echo 适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/tutorial-1-develop-the-echo-adapter.md)   
  [使用创建使用 WCF LOB 适配器 SDK 的适配器](../../adapters-and-accelerators/wcf-lob-adapter-sdk/consume-an-adapter-created-using-the-wcf-lob-adapter-sdk.md)

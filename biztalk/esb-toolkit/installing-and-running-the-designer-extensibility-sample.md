@@ -1,5 +1,5 @@
 ---
-title: 安装和运行设计器扩展性示例 |Microsoft 文档
+title: 安装和运行设计器扩展性示例 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,12 +12,12 @@ caps.latest.revision: 2
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dccfe1ff9f6a6832b19b63498cfcce8323332a48
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 08954a2e1731c452241bae0e8a692344075bca10
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22293909"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395138"
 ---
 # <a name="installing-and-running-the-designer-extensibility-sample"></a>安装和运行设计器扩展性示例
 设计器扩展性示例演示如何设计器扩展可以开发自定义冲突解决程序的配置和路线服务的配置提供设计时支持。  
@@ -28,4 +28,4 @@ ms.locfileid: "22293909"
   
 -   [运行设计器扩展性示例](../esb-toolkit/running-the-designer-extensibility-sample.md)  
   
--   [设计器扩展性示例的工作原理](../esb-toolkit/how-the-designer-extensibility-sample-works.md)
+-   [设计器扩展性示例工作原理](../esb-toolkit/how-the-designer-extensibility-sample-works.md)

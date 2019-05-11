@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 03bf79d6a1324658101c2f12de758848ce7794fa
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 3033c038febae4dc13cb0681947eb55135b6e6f7
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36996942"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65374587"
 ---
 # <a name="secure-your-oracle-ebs-applications"></a>保护 Oracle EBS 应用程序
 Oracle 电子商务应用程序处理敏感商业信息，例如客户帐户详细信息。 使用的应用程序[!INCLUDE[adapteroracleebusinesslong](../../includes/adapteroracleebusinesslong-md.md)]访问和修改此信息是本地或分布式网络中可能会无意中使私钥暴露访问未经授权的参与者，除非工作进行防护和保护期间数据传输。 数据保护和安全性是通常认为的按下列术语：  

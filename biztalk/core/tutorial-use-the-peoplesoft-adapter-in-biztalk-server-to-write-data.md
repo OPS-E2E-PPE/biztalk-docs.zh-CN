@@ -1,5 +1,5 @@
 ---
-title: 教程： 使用用于 PeopleSoft Enterprise 的 BizTalk 适配器将数据写入 PeopleSoft Enterprise |Microsoft Docs
+title: 教程：使用用于 PeopleSoft Enterprise 的 BizTalk 适配器将数据写入 PeopleSoft Enterprise |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,32 +12,32 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 9663512bf84fefc56b8db0050cbed7ffa3997780
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 152579975225efd803aa7f07613da8962048130a
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012302"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65396622"
 ---
-# <a name="tutorial-using-the-biztalk-adapter-for-peoplesoft-enterprise-to-write-data-to-peoplesoft-enterprise"></a>教程：使用 BizTalk 适配器，以便让 PeopleSoft Enterprise 将数据写入 PeopleSoft Enterprise
-可以使用用于 PeopleSoft Enterprise 的 BizTalk 适配器将数据写入 PeopleSoft 系统接收来自贸易合作伙伴或内部应用程序的信息。 本演练介绍了可演示此功能的 SDK 示例。  
+# <a name="tutorial-using-the-biztalk-adapter-for-peoplesoft-enterprise-to-write-data-to-peoplesoft-enterprise"></a>教程：使用用于 PeopleSoft Enterprise 的 BizTalk 适配器将数据写入 PeopleSoft Enterprise
+可以使用用于 PeopleSoft Enterprise 的 BizTalk 适配器将数据写入 PeopleSoft 系统接收来自贸易合作伙伴或内部应用程序的信息。 本演练描述说明了此功能的 SDK 示例。  
 
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先决条件  
 
 - Java 2 平台必须安装在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]上运行用于 PeopleSoft Enterprise 的 BizTalk 适配器。  
 
 - PeopleSoft Java Object Adapter JAR 文件中， **psjoa.jar**应复制到可以访问的文件夹[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]上运行用于 PeopleSoft Enterprise 的 BizTalk 适配器。  
 
-- 为了构建和部署示例，[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 必须安装在运行有 PeopleSoft Enterprise 的 BizTalk 适配器的 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
+- [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 必须安装在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]用于 PeopleSoft Enterprise 的 BizTalk 适配器在运行，以便在生成和部署示例。  
 
 ## <a name="what-this-sample-does"></a>本示例的用途  
- 本示例从文件夹中提取 XML 文件，将此文件发送到业务流程，然后使用适用于 PeopleSoft Enterprise 的 BizTalk 适配器，在 PeopleSoft 系统中使用 XML 文件中的数据创建记录。  
+ 此示例选取一个文件夹中的 XML 文件、 将该文件发送到业务流程，，然后使用用于 PeopleSoft Enterprise 的 BizTalk 适配器以从 XML 文件中的数据在 PeopleSoft 系统中创建一条记录。  
 
 ## <a name="how-this-sample-is-designed-and-why"></a>此示例设计方式和原因  
- 此示例使用 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 设计和创建，用于说明将 PeopleSoft Enterprise 的 BizTalk 适配器用于 BizTalk 业务流程的基本功能。  
+ 此示例设计中[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]和创建，用于说明适用于 PeopleSoft Enterprise 的 BizTalk 适配器使用 BizTalk 业务流程的基本功能。  
 
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- 本示例位于以下文件夹中：  
+ 该示例位于以下文件夹：  
 
  \Program Files\Microsoft BizTalk Adapters for Enterprise Applications\PeopleSoft Enterprise(r)\Sdk\PeopleSoftOneWaySend  
 
@@ -46,12 +46,12 @@ ms.locfileid: "37012302"
 
 |                               **Runtime 项目文件名**                                |                                                                                                                                                                           **运行时项目文件说明**                                                                                                                                                                            |
 |-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                       OneWaySend.btproj,<br /><br /> OneWaySend.sln                       |                                                                                                                                                                      应用程序的项目和解决方案文件。                                                                                                                                                                      |
-| LOCATIONService.xsd，<br /><br /> LOCATIONService_1.xsd，<br /><br /> LOCATIONService_2.xsd | 应用程序的架构文件。 **注意：** 项目中的适配器架构文件最初创建使用**添加适配器元数据向导**。 有关“添加适配器元数据向导”的详细信息，请参阅 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 文档中的“如何向 BizTalk 项目添加适配器元数据”主题。 |
-|                                 PeopleSoftOneWaySend.odx                                  |                                                                                                                                                                        应用程序使用的业务流程。                                                                                                                                                                         |
-|                                 PeopleSoftOneWaySend.snk                                  |                                                                                                                                                                                强命名密钥文件。                                                                                                                                                                                |
+|                       OneWaySend.btproj，<br /><br /> OneWaySend.sln                       |                                                                                                                                                                      应用程序的项目和解决方案文件。                                                                                                                                                                      |
+| LOCATIONService.xsd,<br /><br /> LOCATIONService_1.xsd,<br /><br /> LOCATIONService_2.xsd | 应用程序的架构文件。 **注意：** 在项目中的适配器架构文件最初创建使用**添加适配器元数据向导**。 添加适配器元数据向导的详细信息请参阅主题"如何添加适配器元数据向 BizTalk 项目"中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]文档。 |
+|                                 PeopleSoftOneWaySend.odx                                  |                                                                                                                                                                        使用应用程序的业务流程。                                                                                                                                                                         |
+|                                 PeopleSoftOneWaySend.snk                                  |                                                                                                                                                                                强名称密钥文件。                                                                                                                                                                                |
 
-## <a name="how-to-use-this-sample"></a>如何使用本示例  
+## <a name="how-to-use-this-sample"></a>如何使用此示例  
 
 #### <a name="create-a-new-instance-of-the-peoplesoft-enterprise-adapter"></a>创建 PeopleSoft Enterprise 适配器的新实例  
 
@@ -83,11 +83,11 @@ ms.locfileid: "37012302"
 
    |       **属性**       |                                                                                                                                        **ReplTest1**                                                                                                                                         |
    |--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   | 应用程序服务器路径  | PeopleSoft Server 的计算机和端口位置，例如 //PSServer:8888。 **注意：** 如果不指定端口号，以便在上例中您可以输入值 //PSServer 如果 PeopleSoft 服务器使用默认端口值 9000 则使用默认端口为 9000。 |
-   |        JAVA_HOME         |                                                                                          与 Java 2 平台 SDK 文件相关联的主目录路径，例如 C:\j2sdk1.4.2_08                                                                                          |
+   | 应用程序服务器路径  | PeopleSoft 服务器的计算机和端口位置，例如 / / PSServer:8888。 **注意：** 如果不指定端口号，则使用默认端口为 9000，以便在上例中您可以输入值 //PSServer 如果 PeopleSoft 服务器使用默认端口值 9000。 |
+   |        JAVA_HOME         |                                                                                          与 Java 2 平台 SDK 文件，例如 C:\j2sdk1.4.2_08 相关联的主目录的路径                                                                                          |
    |         Password         |                                                                                                                 连接到 PeopleSoft 系统时使用的密码。                                                                                                                  |
    | PeopleSoft 8.x JAR 文件 |                                                                                          PeopleSoft Java Object Adapter JAR 文件的位置**psjoa.jar**，例如 C:\JARS\psjoa.jar。                                                                                          |
-   |        “用户名”         |                                                                                                                    用于 连接到 PeopleSoft 系统的用户名 。                                                                                                                     |
+   |        “用户名”         |                                                                                                                    用于连接到 PeopleSoft 系统的用户名。                                                                                                                     |
 
 
 6. 单击“确定” 。  
@@ -106,7 +106,7 @@ ms.locfileid: "37012302"
 
 #### <a name="create-a-file-receive-location"></a>创建文件接收位置  
 
-1.  创建文件接收位置监视的文件夹，例如 C:\Filesource。  
+1.  创建一个文件夹以监视由文件接收位置，例如 C:\Filesource。  
 
 2.  右键单击新接收端口，然后单击**新建**，**接收位置**以显示**接收位置属性**对话框。  
 
@@ -128,7 +128,7 @@ ms.locfileid: "37012302"
 
 3. 单击**视图**菜单，然后选择**解决方案资源管理器**以显示在解决方案资源管理器。  
 
-4. 双击“解决方案资源管理器”中的 LOCATIONService_1.xsd 文件以将其打开。  
+4. 双击解决方案资源管理器以将其打开中的 LOCATIONService_1.xsd 文件。  
 
 5. 右键单击**架构**节点的 LOCATIONService_1.xsd，然后选择**属性**菜单选项以显示架构的属性。  
 
@@ -160,7 +160,7 @@ ms.locfileid: "37012302"
 7.  指定的文件夹和输出文件实例名称，例如**C:\instance.xml**然后单击**保存**。  
 
     > [!NOTE]
-    >  请勿指定为此处的文件接收位置指定的文件夹位置。  
+    >  未指定为 file 接收位置在此处指定的文件夹的位置。  
 
 8.  右键单击解决方案资源管理器中的 LOCATIONService_1.xsd，然后单击**生成实例**以在指定位置生成文档实例。  
 
@@ -170,7 +170,7 @@ ms.locfileid: "37012302"
 
 #### <a name="modify-the-generated-document-instance"></a>修改生成的文档实例  
 
-1.  在文本编辑器中（如 Notepad），打开生成的文档实例，然后编辑文档实例的内容，以确保这些字段中的数据将在 PeopleSoft 系统中生成唯一的记录，例如，以下 XML 文件介绍了定义位置的记录中的字段：  
+1.  在诸如记事本之类的文本编辑器中打开生成的文档实例，并编辑文档实例，以确保这些字段中的数据将在 PeopleSoft 系统中生成唯一的记录，如下面的 XML 文件介绍了中的字段的内容定义位置的记录：  
 
     ```  
     <ns0:CreateEx xmlns:ns0="http://schemas.microsoft.com/[PeopleSoft://CI/LOCATION]">  
@@ -216,7 +216,7 @@ ms.locfileid: "37012302"
 
 4. 单击**绑定**以显示业务流程的绑定选项对话框的左窗格中。  
 
-5. 指定绑定选项的适当值，例如：  
+5. 指定适当的值的绑定选项，例如：  
 
 
    |      **参数**       |        **ReplTest1**         |
@@ -232,27 +232,27 @@ ms.locfileid: "37012302"
 
 - 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，右键单击该业务流程，然后单击**启动**以登记并启动业务流程。  
 
-#### <a name="drop-a-document-instance-into-the-folder-monitored-by-the-file-receive-location"></a>将文档实例拖到由文件接收位置监视的文件夹  
+#### <a name="drop-a-document-instance-into-the-folder-monitored-by-the-file-receive-location"></a>拖放到该文件所监视的文件夹的文档实例接收位置  
 
--   将以前创建的文档实例复制到文件接收位置配置为监视的文件夹中。  
+-   将文件接收位置的文件夹到先前创建的文档实例复制配置为监视。  
 
-#### <a name="verify-that-the-peoplesoft-system-is-updated"></a>验证 PeopleSoft 系统是否已更新  
+#### <a name="verify-that-the-peoplesoft-system-is-updated"></a>验证 PeopleSoft 系统已更新  
 
-- 使用 PeopleSoft Web 界面验证记录是否是从 XML 文件中的数据创建的。  
+- 使用 PeopleSoft web 界面验证记录已创建从 XML 文件中的数据。  
 
-  成功处理文档实例后，会发生以下事件序列：  
+  如果成功处理的文档实例，会发生以下事件序列：  
 
-1.  文件适配器从文件夹中检索文件，并作为 BizTalk 消息将其发布到 MessageBox。  
+1.  文件适配器从文件夹中检索该文件，并将其发布到 MessageBox 作为 BizTalk 消息。  
 
-2.  业务流程订阅此发布消息，以便 BizTalk 消息引擎会激活业务流程的实例，并将该消息发送到该业务流程实例。  
+2.  业务流程订阅此发布的消息，以便 BizTalk 消息引擎将激活业务流程的实例并将消息发送到业务流程实例。  
 
-3.  业务流程实例使用业务流程中指定的逻辑处理该消息，并将该消息发布回 MessageBox。  
+3.  业务流程实例处理使用业务流程中指定的逻辑消息，并将消息发布回 MessageBox。  
 
-4.  PeopleSoft 发送端口订阅此发布的消息，以便 BizTalk 消息引擎能够将此消息发布到 PeopleSoft 发送端口。  
+4.  PeopleSoft 发送端口订阅此发布消息，因此 BizTalk 消息引擎将消息发送到 PeopleSoft 发送端口。  
 
-5.  发送端口会将消息交给适用于 PeopleSoft Enterprise 的 BizTalk 适配器。  
+5.  发送端口将消息传递给 BizTalk 适配器，用于 PeopleSoft Enterprise。  
 
-6.  适用于 PeopleSoft Enterprise 的 izTalk 适配器调用 CreateEx 方法，以使用 XML 文件中的数据创建记录。  
+6.  用于 PeopleSoft Enterprise 的 BizTalk 适配器调用 CreateEx 方法来创建 XML 文件中使用的数据的记录。  
 
 ## <a name="see-also"></a>请参阅  
  [教程：使用用于 PeopleSoft Enterprise 的 BizTalk 适配器](../core/tutorials-using-biztalk-adapter-for-peoplesoft-enterprise.md)
