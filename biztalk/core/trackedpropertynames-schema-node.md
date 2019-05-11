@@ -1,5 +1,5 @@
 ---
-title: TrackedPropertyNames （架构节点） |Microsoft 文档
+title: TrackedPropertyNames （Schema 节点） |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,19 +14,19 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 57b405a4f8437cecd7cc1f0735780b678c074be8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 284cc9869ecc1024ebb2e3094efc08a763e2b410
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22279253"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65314003"
 ---
-# <a name="trackedpropertynames-schema-node"></a><span data-ttu-id="e47c0-102">TrackedPropertyNames（Schema 节点）</span><span class="sxs-lookup"><span data-stu-id="e47c0-102">TrackedPropertyNames (Schema Node)</span></span>
-<span data-ttu-id="e47c0-103">绑定文件的 TrackedPropertyNames 节点包含的元素指定跟踪父架构中的哪些属性。</span><span class="sxs-lookup"><span data-stu-id="e47c0-103">The TrackedPropertyNames node of a binding file contains elements that specify which properties in the parent schema are to be tracked.</span></span>  
+# <a name="trackedpropertynames-schema-node"></a><span data-ttu-id="76e17-102">TrackedPropertyNames （Schema 节点）</span><span class="sxs-lookup"><span data-stu-id="76e17-102">TrackedPropertyNames (Schema Node)</span></span>
+<span data-ttu-id="76e17-103">绑定文件的 TrackedPropertyNames 节点包含指定的父架构中的哪些属性是要跟踪的元素。</span><span class="sxs-lookup"><span data-stu-id="76e17-103">The TrackedPropertyNames node of a binding file contains elements that specify which properties in the parent schema are to be tracked.</span></span>  
   
-## <a name="nodes-in-the-trackedpropertyname-node"></a><span data-ttu-id="e47c0-104">TrackedPropertyName 节点中的节点</span><span class="sxs-lookup"><span data-stu-id="e47c0-104">Nodes in the TrackedPropertyName node</span></span>  
- <span data-ttu-id="e47c0-105">下表列出了可为绑定文件的此节点设置的属性：</span><span class="sxs-lookup"><span data-stu-id="e47c0-105">The following table lists the properties that can be set for this node of a binding file:</span></span>  
+## <a name="nodes-in-the-trackedpropertyname-node"></a><span data-ttu-id="76e17-104">TrackedPropertyName 节点中的节点</span><span class="sxs-lookup"><span data-stu-id="76e17-104">Nodes in the TrackedPropertyName node</span></span>  
+ <span data-ttu-id="76e17-105">下表列出了可为绑定文件的此节点设置的属性：</span><span class="sxs-lookup"><span data-stu-id="76e17-105">The following table lists the properties that can be set for this node of a binding file:</span></span>  
   
-|<span data-ttu-id="e47c0-106">**名称**</span><span class="sxs-lookup"><span data-stu-id="e47c0-106">**Name**</span></span>|<span data-ttu-id="e47c0-107">**节点类型**</span><span class="sxs-lookup"><span data-stu-id="e47c0-107">**Node Type**</span></span>|<span data-ttu-id="e47c0-108">**数据类型**</span><span class="sxs-lookup"><span data-stu-id="e47c0-108">**Data Type**</span></span>|<span data-ttu-id="e47c0-109">**Description**</span><span class="sxs-lookup"><span data-stu-id="e47c0-109">**Description**</span></span>|<span data-ttu-id="e47c0-110">**限制**</span><span class="sxs-lookup"><span data-stu-id="e47c0-110">**Restrictions**</span></span>|<span data-ttu-id="e47c0-111">**注释**</span><span class="sxs-lookup"><span data-stu-id="e47c0-111">**Comments**</span></span>|  
+|<span data-ttu-id="76e17-106">**名称**</span><span class="sxs-lookup"><span data-stu-id="76e17-106">**Name**</span></span>|<span data-ttu-id="76e17-107">**节点类型**</span><span class="sxs-lookup"><span data-stu-id="76e17-107">**Node Type**</span></span>|<span data-ttu-id="76e17-108">**数据类型**</span><span class="sxs-lookup"><span data-stu-id="76e17-108">**Data Type**</span></span>|<span data-ttu-id="76e17-109">**说明**</span><span class="sxs-lookup"><span data-stu-id="76e17-109">**Description**</span></span>|<span data-ttu-id="76e17-110">**限制**</span><span class="sxs-lookup"><span data-stu-id="76e17-110">**Restrictions**</span></span>|<span data-ttu-id="76e17-111">**注释**</span><span class="sxs-lookup"><span data-stu-id="76e17-111">**Comments**</span></span>|  
 |--------------|-------------------|-------------------|---------------------|----------------------|------------------|  
-|<span data-ttu-id="e47c0-112">string</span><span class="sxs-lookup"><span data-stu-id="e47c0-112">string</span></span>|<span data-ttu-id="e47c0-113">元素</span><span class="sxs-lookup"><span data-stu-id="e47c0-113">Element</span></span>|<span data-ttu-id="e47c0-114">xs:string</span><span class="sxs-lookup"><span data-stu-id="e47c0-114">xs:string</span></span>|<span data-ttu-id="e47c0-115">指定将跟踪的属性名称。</span><span class="sxs-lookup"><span data-stu-id="e47c0-115">Specifies a property name that will be tracked.</span></span>|<span data-ttu-id="e47c0-116">可选</span><span class="sxs-lookup"><span data-stu-id="e47c0-116">Not required</span></span>|<span data-ttu-id="e47c0-117">默认值：空</span><span class="sxs-lookup"><span data-stu-id="e47c0-117">Default value: empty</span></span>|
+|<span data-ttu-id="76e17-112">string</span><span class="sxs-lookup"><span data-stu-id="76e17-112">string</span></span>|<span data-ttu-id="76e17-113">元素</span><span class="sxs-lookup"><span data-stu-id="76e17-113">Element</span></span>|<span data-ttu-id="76e17-114">xs:string</span><span class="sxs-lookup"><span data-stu-id="76e17-114">xs:string</span></span>|<span data-ttu-id="76e17-115">指定要跟踪的属性名称。</span><span class="sxs-lookup"><span data-stu-id="76e17-115">Specifies a property name that will be tracked.</span></span>|<span data-ttu-id="76e17-116">可选</span><span class="sxs-lookup"><span data-stu-id="76e17-116">Not required</span></span>|<span data-ttu-id="76e17-117">默认值：空</span><span class="sxs-lookup"><span data-stu-id="76e17-117">Default value: empty</span></span>|

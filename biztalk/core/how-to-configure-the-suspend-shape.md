@@ -1,5 +1,5 @@
 ---
-title: 如何配置挂起形状 |Microsoft 文档
+title: 如何配置挂起形状 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -20,30 +20,30 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: c846001b5a2b39a4e23e0d06ed56fb91c8863832
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6a4a60bfc2d5a98d407e917e0271a9987e88c0bf
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22248517"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385955"
 ---
-# <a name="how-to-configure-the-suspend-shape"></a><span data-ttu-id="a4e16-102">如何配置挂起形状</span><span class="sxs-lookup"><span data-stu-id="a4e16-102">How to Configure the Suspend Shape</span></span>
-![](../core/media/ebiz-orch-suspend.gif "ebiz_orch_suspend")  
-<span data-ttu-id="a4e16-103">挂起形状</span><span class="sxs-lookup"><span data-stu-id="a4e16-103">Suspend shape</span></span>  
+# <a name="how-to-configure-the-suspend-shape"></a><span data-ttu-id="05389-102">如何配置挂起形状</span><span class="sxs-lookup"><span data-stu-id="05389-102">How to Configure the Suspend Shape</span></span>
+<span data-ttu-id="05389-103">![](../core/media/ebiz-orch-suspend.gif "ebiz_orch_suspend")</span><span class="sxs-lookup"><span data-stu-id="05389-103">![](../core/media/ebiz-orch-suspend.gif "ebiz_orch_suspend")</span></span>  
+<span data-ttu-id="05389-104">挂起形状</span><span class="sxs-lookup"><span data-stu-id="05389-104">Suspend shape</span></span>  
   
- <span data-ttu-id="a4e16-104">当业务流程实例处于挂起状态时，将记录错误。</span><span class="sxs-lookup"><span data-stu-id="a4e16-104">When an orchestration instance is suspended, an error is logged.</span></span> <span data-ttu-id="a4e16-105">你可以指定要伴随错误以帮助管理员在诊断这种情况的消息字符串。</span><span class="sxs-lookup"><span data-stu-id="a4e16-105">You can specify a message string to accompany the error to help the administrator diagnose the situation.</span></span>  
+ <span data-ttu-id="05389-105">当挂起业务流程实例时，记录一个错误。</span><span class="sxs-lookup"><span data-stu-id="05389-105">When an orchestration instance is suspended, an error is logged.</span></span> <span data-ttu-id="05389-106">您可以指定一个消息字符串来显示错误帮助管理员诊断这种情况。</span><span class="sxs-lookup"><span data-stu-id="05389-106">You can specify a message string to accompany the error to help the administrator diagnose the situation.</span></span>  
   
- <span data-ttu-id="a4e16-106">所有业务流程实例的状态信息保存，并且如果在管理员恢复业务流程实例恢复过程。</span><span class="sxs-lookup"><span data-stu-id="a4e16-106">All of the state information for the orchestration instance is saved, and is reinstated if and when the administrator resumes the orchestration instance.</span></span>  
-  
-> [!NOTE]
->  <span data-ttu-id="a4e16-107">如果**挂起**形状存在业务流程中同步调用 (与**调用**形状) 通过另一个业务流程，将嵌套的实例和所有封闭的业务流程实例已挂起。</span><span class="sxs-lookup"><span data-stu-id="a4e16-107">If a **Suspend** shape exists in an orchestration that has been called synchronously (as with the **Call** shape) by another orchestration, the nested instance and all enclosing orchestration instances will be suspended.</span></span>  
+ <span data-ttu-id="05389-107">所有业务流程实例的状态信息保存后，并在管理员恢复业务流程实例时恢复过程。</span><span class="sxs-lookup"><span data-stu-id="05389-107">All of the state information for the orchestration instance is saved, and is reinstated if and when the administrator resumes the orchestration instance.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="a4e16-108">不能放置**挂起**在原子事务的形状。</span><span class="sxs-lookup"><span data-stu-id="a4e16-108">You cannot place a **Suspend** shape inside an atomic transaction.</span></span>  
+>  <span data-ttu-id="05389-108">如果**挂起**形状同步调用的业务流程中存在 (如同**调用**形状) 由另一个业务流程，则嵌套的实例和所有封闭业务流程实例将被挂起。</span><span class="sxs-lookup"><span data-stu-id="05389-108">If a **Suspend** shape exists in an orchestration that has been called synchronously (as with the **Call** shape) by another orchestration, the nested instance and all enclosing orchestration instances will be suspended.</span></span>  
   
-### <a name="to-configure-a-suspend-shape"></a><span data-ttu-id="a4e16-109">若要配置挂起形状</span><span class="sxs-lookup"><span data-stu-id="a4e16-109">To configure a Suspend shape</span></span>  
+> [!NOTE]
+>  <span data-ttu-id="05389-109">不能将放置**挂起**在原子事务内的形状。</span><span class="sxs-lookup"><span data-stu-id="05389-109">You cannot place a **Suspend** shape inside an atomic transaction.</span></span>  
   
--   <span data-ttu-id="a4e16-110">你可以使用**错误消息**属性来指定你想要的文本记录时**挂起**遇到形状。</span><span class="sxs-lookup"><span data-stu-id="a4e16-110">You can use the **Error Message** property to specify text that you want to be logged when a **Suspend** shape is encountered.</span></span> <span data-ttu-id="a4e16-111">此文本可能是文字字符串或表达式计算结果为**System.String**。</span><span class="sxs-lookup"><span data-stu-id="a4e16-111">This text may be a literal string, or an expression that evaluates to a **System.String**.</span></span>  
+### <a name="to-configure-a-suspend-shape"></a><span data-ttu-id="05389-110">若要配置挂起形状</span><span class="sxs-lookup"><span data-stu-id="05389-110">To configure a Suspend shape</span></span>  
+  
+-   <span data-ttu-id="05389-111">可以使用**错误消息**属性来指定你想要的文本记录何时**挂起**遇到形状。</span><span class="sxs-lookup"><span data-stu-id="05389-111">You can use the **Error Message** property to specify text that you want to be logged when a **Suspend** shape is encountered.</span></span> <span data-ttu-id="05389-112">文本字符串或表达式的计算结果为此文本可能太**System.String**。</span><span class="sxs-lookup"><span data-stu-id="05389-112">This text may be a literal string, or an expression that evaluates to a **System.String**.</span></span>  
   
     > [!CAUTION]
-    >  <span data-ttu-id="a4e16-112">如果输入字符串，则必须将其括在引号中。</span><span class="sxs-lookup"><span data-stu-id="a4e16-112">If you enter a literal string, you must enclose it in quotation marks.</span></span>
+    >  <span data-ttu-id="05389-113">如果输入的文本字符串，必须将其括在引号中。</span><span class="sxs-lookup"><span data-stu-id="05389-113">If you enter a literal string, you must enclose it in quotation marks.</span></span>

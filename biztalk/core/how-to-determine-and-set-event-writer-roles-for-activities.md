@@ -1,5 +1,5 @@
 ---
-title: 如何确定并设置为活动的事件写入者角色 |Microsoft 文档
+title: 如何确定和设置活动的事件写入者角色 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,38 +12,38 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: dc9fa663d395fc36205e137da374f17cb9470521
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: fc3ff2fcc8ed4397db8d1eb8d5906cebd5c26af1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22249861"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65385262"
 ---
-# <a name="how-to-determine-and-set-event-writer-roles-for-activities"></a><span data-ttu-id="3d2d1-102">如何确定和设置活动的事件写入者角色</span><span class="sxs-lookup"><span data-stu-id="3d2d1-102">How to Determine and Set Event Writer Roles for Activities</span></span>
-<span data-ttu-id="3d2d1-103">BAM 在写入活动事件时提供两种安全模式。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-103">BAM provides two modes of security when writing events on activities.</span></span> <span data-ttu-id="3d2d1-104">您可以授予写入单独活动的事件的权限，或者授予写入所有已部署活动上的事件的权限。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-104">You can grant permissions to write events on individual activities or you can grant permissions to write events on all deployed activities.</span></span>  
+# <a name="how-to-determine-and-set-event-writer-roles-for-activities"></a><span data-ttu-id="916d6-102">如何确定和设置活动的事件写入者角色</span><span class="sxs-lookup"><span data-stu-id="916d6-102">How to Determine and Set Event Writer Roles for Activities</span></span>
+<span data-ttu-id="916d6-103">BAM 在写入活动事件时提供两种安全模式。</span><span class="sxs-lookup"><span data-stu-id="916d6-103">BAM provides two modes of security when writing events on activities.</span></span> <span data-ttu-id="916d6-104">您可以授予写入单独活动的事件的权限或您可以授予权限将事件写入上所有已部署的活动。</span><span class="sxs-lookup"><span data-stu-id="916d6-104">You can grant permissions to write events on individual activities or you can grant permissions to write events on all deployed activities.</span></span>  
   
- <span data-ttu-id="3d2d1-105">活动级别的安全性由您在部署某一 BAM 定义时创建的活动事件写入者角色提供。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-105">Activity-level security is provided by activity event writer roles that are created when you deploy a BAM definition.</span></span> <span data-ttu-id="3d2d1-106">例如，如果您为名为 CreditCard 的活动部署了一个定义，则 BAM 将创建一个名为 bam_CreditCard_EventWriter 的事件写入者角色。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-106">For example, if you deploy a definition for an activity named CreditCard, BAM creates an event writer role named bam_CreditCard_EventWriter.</span></span> <span data-ttu-id="3d2d1-107">该角色具有写入活动事件的权限。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-107">This role has permissions to write events for the activity.</span></span> <span data-ttu-id="3d2d1-108">若要授予某个用户写入活动事件的权限，您应该将该用户添加到该角色。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-108">To grant a user permissions to write events for the activity, you add the user to the role.</span></span>  
+ <span data-ttu-id="916d6-105">活动级别的安全性提供的部署 BAM 定义时创建的活动事件写入者角色。</span><span class="sxs-lookup"><span data-stu-id="916d6-105">Activity-level security is provided by activity event writer roles that are created when you deploy a BAM definition.</span></span> <span data-ttu-id="916d6-106">例如，如果部署为 CreditCard 的活动的定义，则 BAM 将创建名为 bam_CreditCard_EventWriter 的事件写入者角色。</span><span class="sxs-lookup"><span data-stu-id="916d6-106">For example, if you deploy a definition for an activity named CreditCard, BAM creates an event writer role named bam_CreditCard_EventWriter.</span></span> <span data-ttu-id="916d6-107">此角色具有写入活动事件的权限。</span><span class="sxs-lookup"><span data-stu-id="916d6-107">This role has permissions to write events for the activity.</span></span> <span data-ttu-id="916d6-108">若要授予用户写入活动事件的权限，请向角色添加用户。</span><span class="sxs-lookup"><span data-stu-id="916d6-108">To grant a user permissions to write events for the activity, you add the user to the role.</span></span>  
   
- <span data-ttu-id="3d2d1-109">或者，您可以授予用户权限，以将它们添加到超级角色 BAM_EVENT_WRITER，有权写入所有活动 eve2nts 都写入所有活动。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-109">Alternatively, you can grant users rights to write eve2nts to all activities by adding them to the super role BAM_EVENT_WRITER, which has permissions to write to all activities.</span></span>  
+ <span data-ttu-id="916d6-109">或者，可以授予用户权限，以便将它们添加到超级角色 BAM_EVENT_WRITER，有权写入所有活动 eve2nts 都写入所有活动。</span><span class="sxs-lookup"><span data-stu-id="916d6-109">Alternatively, you can grant users rights to write eve2nts to all activities by adding them to the super role BAM_EVENT_WRITER, which has permissions to write to all activities.</span></span>  
   
-## <a name="prerequisites"></a><span data-ttu-id="3d2d1-110">先决条件</span><span class="sxs-lookup"><span data-stu-id="3d2d1-110">Prerequisites</span></span>  
- <span data-ttu-id="3d2d1-111">若要执行此过程，您必须具有以下各项：</span><span class="sxs-lookup"><span data-stu-id="3d2d1-111">To perform this procedure, you must have the following:</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="916d6-110">先决条件</span><span class="sxs-lookup"><span data-stu-id="916d6-110">Prerequisites</span></span>  
+ <span data-ttu-id="916d6-111">若要执行此过程，您必须：</span><span class="sxs-lookup"><span data-stu-id="916d6-111">To perform this procedure, you must have the following:</span></span>  
   
--   <span data-ttu-id="3d2d1-112">与部署该活动的 BAMPrimaryImportDb 的连接。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-112">A connection to BAMPrimaryImportDb on which the activity is deployed.</span></span>  
+-   <span data-ttu-id="916d6-112">部署该活动的 bamprimaryimportdb 的连接。</span><span class="sxs-lookup"><span data-stu-id="916d6-112">A connection to BAMPrimaryImportDb on which the activity is deployed.</span></span>  
   
--   <span data-ttu-id="3d2d1-113">对数据库的 DBO 权限。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-113">DBO permissions on the database.</span></span>  
+-   <span data-ttu-id="916d6-113">数据库的 DBO 权限。</span><span class="sxs-lookup"><span data-stu-id="916d6-113">DBO permissions on the database.</span></span>  
   
-### <a name="to-add-a-user-to-an-event-writer-role"></a><span data-ttu-id="3d2d1-114">将用户添加到事件写入者角色</span><span class="sxs-lookup"><span data-stu-id="3d2d1-114">To add a user to an event writer role</span></span>  
+### <a name="to-add-a-user-to-an-event-writer-role"></a><span data-ttu-id="916d6-114">若要将用户添加到事件写入者角色</span><span class="sxs-lookup"><span data-stu-id="916d6-114">To add a user to an event writer role</span></span>  
   
-1.  <span data-ttu-id="3d2d1-115">单击**启动**，指向**所有程序**，单击**Microsoft SQL Server 2008**，然后单击**SQL Server Management Studio**。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-115">Click **Start**, point to **All Programs**, click **Microsoft SQL Server 2008**, and then click **SQL Server Management Studio**.</span></span>  
+1.  <span data-ttu-id="916d6-115">单击**启动**，依次指向**所有程序**，单击**Microsoft SQL Server 2008**，然后单击**SQL Server Management Studio**。</span><span class="sxs-lookup"><span data-stu-id="916d6-115">Click **Start**, point to **All Programs**, click **Microsoft SQL Server 2008**, and then click **SQL Server Management Studio**.</span></span>  
   
-2.  <span data-ttu-id="3d2d1-116">在**连接到 SQL Server**对话框中，选择 SQL Server 和适当的身份验证方法，，然后单击**连接**。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-116">In the **Connect to SQL Server** dialog box, select the SQL Server and the appropriate authentication method, and then click **Connect**.</span></span>  
+2.  <span data-ttu-id="916d6-116">在中**连接到 SQL Server**对话框中，选择 SQL Server 和相应的身份验证方法，然后单击**Connect**。</span><span class="sxs-lookup"><span data-stu-id="916d6-116">In the **Connect to SQL Server** dialog box, select the SQL Server and the appropriate authentication method, and then click **Connect**.</span></span>  
   
-3.  <span data-ttu-id="3d2d1-117">在**对象资源管理器**窗格中展开**数据库**，然后选择 BAM 主导入数据库。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-117">In the **Object Explorer** pane expand **Databases**, and then select the BAM Primary Import database.</span></span>  
+3.  <span data-ttu-id="916d6-117">在中**对象资源管理器**窗格中展开**数据库**，然后选择 BAM 主导入数据库。</span><span class="sxs-lookup"><span data-stu-id="916d6-117">In the **Object Explorer** pane expand **Databases**, and then select the BAM Primary Import database.</span></span>  
   
-4.  <span data-ttu-id="3d2d1-118">单击**新查询**工具栏上的图标。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-118">Click the **New Query** icon on the toolbar.</span></span>  
+4.  <span data-ttu-id="916d6-118">单击**新查询**工具栏上的图标。</span><span class="sxs-lookup"><span data-stu-id="916d6-118">Click the **New Query** icon on the toolbar.</span></span>  
   
-5.  <span data-ttu-id="3d2d1-119">复制以下命令并将它们粘贴到查询窗口中。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-119">Copy the following commands and paste them into the Query Window.</span></span> <span data-ttu-id="3d2d1-120">使用适当的值替换域名、用户名和活动名称占位符。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-120">Replace the domain name, user name, and activity name placeholders with the appropriate values.</span></span>  
+5.  <span data-ttu-id="916d6-119">复制以下命令并将其粘贴到查询窗口。</span><span class="sxs-lookup"><span data-stu-id="916d6-119">Copy the following commands and paste them into the Query Window.</span></span> <span data-ttu-id="916d6-120">域名、 用户名和活动名称占位符替换为适当的值。</span><span class="sxs-lookup"><span data-stu-id="916d6-120">Replace the domain name, user name, and activity name placeholders with the appropriate values.</span></span>  
   
     ```  
     EXEC sp_grantlogin '<domain name>\<user name>’  
@@ -52,21 +52,21 @@ ms.locfileid: "22249861"
     ```  
   
     > [!IMPORTANT]
-    >  <span data-ttu-id="3d2d1-121">角色名称区分大小写。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-121">Role names are case-sensitive.</span></span> <span data-ttu-id="3d2d1-122">活动名称也区分大小写，也就是说，它们必须匹配在部署活动时使用的大小写。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-122">Activity names are also case-sensitive, that is, they must match the case used when deploying the activity.</span></span>  
+    >  <span data-ttu-id="916d6-121">角色名称是区分大小写。</span><span class="sxs-lookup"><span data-stu-id="916d6-121">Role names are case-sensitive.</span></span> <span data-ttu-id="916d6-122">活动名称也是区分大小写，也就是说，它们必须匹配部署活动时使用这种情况。</span><span class="sxs-lookup"><span data-stu-id="916d6-122">Activity names are also case-sensitive, that is, they must match the case used when deploying the activity.</span></span>  
   
-6.  <span data-ttu-id="3d2d1-123">单击**执行**上工具栏或按 f5 键以运行命令的图标。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-123">Click the **Execute** icon on the toolbar or press F5 to run the commands.</span></span>  
+6.  <span data-ttu-id="916d6-123">单击**Execute**按 f5 键以运行命令的工具栏上的图标。</span><span class="sxs-lookup"><span data-stu-id="916d6-123">Click the **Execute** icon on the toolbar or press F5 to run the commands.</span></span>  
   
-### <a name="to-add-a-user-to-an-event-writer-super-role"></a><span data-ttu-id="3d2d1-124">将用户添加到事件写入者超级用户角色</span><span class="sxs-lookup"><span data-stu-id="3d2d1-124">To add a user to an event writer super role</span></span>  
+### <a name="to-add-a-user-to-an-event-writer-super-role"></a><span data-ttu-id="916d6-124">若要将用户添加到事件写入者超级角色</span><span class="sxs-lookup"><span data-stu-id="916d6-124">To add a user to an event writer super role</span></span>  
   
-1.  <span data-ttu-id="3d2d1-125">单击**启动**，指向**所有程序**，单击**Microsoft SQL Server 2008**，然后单击**SQL Server Management Studio**。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-125">Click **Start**, point to **All Programs**, click **Microsoft SQL Server 2008**, and then click **SQL Server Management Studio**.</span></span>  
+1.  <span data-ttu-id="916d6-125">单击**启动**，依次指向**所有程序**，单击**Microsoft SQL Server 2008**，然后单击**SQL Server Management Studio**。</span><span class="sxs-lookup"><span data-stu-id="916d6-125">Click **Start**, point to **All Programs**, click **Microsoft SQL Server 2008**, and then click **SQL Server Management Studio**.</span></span>  
   
-2.  <span data-ttu-id="3d2d1-126">在**连接到 SQL Server**对话框中，选择 SQL Server 和适当的身份验证方法，，然后单击**连接**。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-126">In the **Connect to SQL Server** dialog box, select the SQL Server and the appropriate authentication method, and then click **Connect**.</span></span>  
+2.  <span data-ttu-id="916d6-126">在中**连接到 SQL Server**对话框中，选择 SQL Server 和相应的身份验证方法，然后单击**Connect**。</span><span class="sxs-lookup"><span data-stu-id="916d6-126">In the **Connect to SQL Server** dialog box, select the SQL Server and the appropriate authentication method, and then click **Connect**.</span></span>  
   
-3.  <span data-ttu-id="3d2d1-127">在**对象资源管理器**窗格中展开**数据库**，然后选择 BAM 主导入数据库。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-127">In the **Object Explorer** pane expand **Databases**, and then select the BAM Primary Import database.</span></span>  
+3.  <span data-ttu-id="916d6-127">在中**对象资源管理器**窗格中展开**数据库**，然后选择 BAM 主导入数据库。</span><span class="sxs-lookup"><span data-stu-id="916d6-127">In the **Object Explorer** pane expand **Databases**, and then select the BAM Primary Import database.</span></span>  
   
-4.  <span data-ttu-id="3d2d1-128">单击**新查询**工具栏上的图标。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-128">Click the **New Query** icon on the toolbar.</span></span>  
+4.  <span data-ttu-id="916d6-128">单击**新查询**工具栏上的图标。</span><span class="sxs-lookup"><span data-stu-id="916d6-128">Click the **New Query** icon on the toolbar.</span></span>  
   
-5.  <span data-ttu-id="3d2d1-129">复制以下命令并将它们粘贴到查询窗口中。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-129">Copy the following commands and paste them into the Query Window.</span></span> <span data-ttu-id="3d2d1-130">使用适当的值替换域名和用户名。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-130">Replace the domain name and user name with the appropriate values.</span></span>  
+5.  <span data-ttu-id="916d6-129">复制以下命令并将其粘贴到查询窗口。</span><span class="sxs-lookup"><span data-stu-id="916d6-129">Copy the following commands and paste them into the Query Window.</span></span> <span data-ttu-id="916d6-130">使用适当的值替换域名和用户名。</span><span class="sxs-lookup"><span data-stu-id="916d6-130">Replace the domain name and user name with the appropriate values.</span></span>  
   
     ```  
     EXEC sp_grantlogin '<domain name>\<user name>’  
@@ -75,9 +75,9 @@ ms.locfileid: "22249861"
     ```  
   
     > [!IMPORTANT]
-    >  <span data-ttu-id="3d2d1-131">角色名称区分大小写。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-131">Role names are case sensitive.</span></span> <span data-ttu-id="3d2d1-132">您必须按指示指定事件写入者角色。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-132">You must specify the event writer role as specified.</span></span>  
+    >  <span data-ttu-id="916d6-131">角色名称是区分大小写。</span><span class="sxs-lookup"><span data-stu-id="916d6-131">Role names are case sensitive.</span></span> <span data-ttu-id="916d6-132">您必须指定为指定的事件写入者角色。</span><span class="sxs-lookup"><span data-stu-id="916d6-132">You must specify the event writer role as specified.</span></span>  
   
-6.  <span data-ttu-id="3d2d1-133">单击**执行**上工具栏或按 f5 键以运行命令的图标。</span><span class="sxs-lookup"><span data-stu-id="3d2d1-133">Click the **Execute** icon on the toolbar or press F5 to run the commands.</span></span>  
+6.  <span data-ttu-id="916d6-133">单击**Execute**按 f5 键以运行命令的工具栏上的图标。</span><span class="sxs-lookup"><span data-stu-id="916d6-133">Click the **Execute** icon on the toolbar or press F5 to run the commands.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="3d2d1-134">另请参阅</span><span class="sxs-lookup"><span data-stu-id="3d2d1-134">See Also</span></span>  
- [<span data-ttu-id="3d2d1-135">管理 BAM 安全性</span><span class="sxs-lookup"><span data-stu-id="3d2d1-135">Managing BAM Security</span></span>](../core/managing-bam-security.md)
+## <a name="see-also"></a><span data-ttu-id="916d6-134">请参阅</span><span class="sxs-lookup"><span data-stu-id="916d6-134">See Also</span></span>  
+ [<span data-ttu-id="916d6-135">管理 BAM 安全性</span><span class="sxs-lookup"><span data-stu-id="916d6-135">Managing BAM Security</span></span>](../core/managing-bam-security.md)

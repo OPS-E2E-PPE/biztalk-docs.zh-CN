@@ -1,5 +1,5 @@
 ---
-title: 如何配置构造消息形状 |Microsoft 文档
+title: 如何配置构造消息形状 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,23 +17,23 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 07b73e7fe62463767894808d7e95f12cf963e4dc
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 8a16900b1ee5c98c059b01f92a770f845330b9ba
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22248421"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65386169"
 ---
-# <a name="how-to-configure-the-construct-message-shape"></a><span data-ttu-id="b5c2f-102">如何配置构造消息形状</span><span class="sxs-lookup"><span data-stu-id="b5c2f-102">How to Configure the Construct Message Shape</span></span>
-![](../core/media/ebiz-orch-constructmsg.gif "ebiz_orch_constructmsg")  
-<span data-ttu-id="b5c2f-103">构造消息形状</span><span class="sxs-lookup"><span data-stu-id="b5c2f-103">Construct Message shape</span></span>  
+# <a name="how-to-configure-the-construct-message-shape"></a><span data-ttu-id="a84d7-102">如何配置构造消息形状</span><span class="sxs-lookup"><span data-stu-id="a84d7-102">How to Configure the Construct Message Shape</span></span>
+<span data-ttu-id="a84d7-103">![](../core/media/ebiz-orch-constructmsg.gif "ebiz_orch_constructmsg")</span><span class="sxs-lookup"><span data-stu-id="a84d7-103">![](../core/media/ebiz-orch-constructmsg.gif "ebiz_orch_constructmsg")</span></span>  
+<span data-ttu-id="a84d7-104">构造消息形状</span><span class="sxs-lookup"><span data-stu-id="a84d7-104">Construct Message shape</span></span>  
   
- <span data-ttu-id="b5c2f-104">指定要构造的消息变量，并对消息或其部分进行赋值。</span><span class="sxs-lookup"><span data-stu-id="b5c2f-104">You specify the message variable that you want to construct, and make assignments to the message or its parts.</span></span> <span data-ttu-id="b5c2f-105">必须在同一构造消息形状中对任何给定消息进行彻底赋值。</span><span class="sxs-lookup"><span data-stu-id="b5c2f-105">All assignments to any given message must take place within the same Construct Message shape.</span></span>  
+ <span data-ttu-id="a84d7-105">指定你想要构造，消息变量，并对消息或其成分进行赋值。</span><span class="sxs-lookup"><span data-stu-id="a84d7-105">You specify the message variable that you want to construct, and make assignments to the message or its parts.</span></span> <span data-ttu-id="a84d7-106">对任何给定消息的所有分配必须都发生在同一构造消息形状。</span><span class="sxs-lookup"><span data-stu-id="a84d7-106">All assignments to any given message must take place within the same Construct Message shape.</span></span>  
   
- <span data-ttu-id="b5c2f-106">若要修改已构造的消息的属性（例如已收到的消息），必须构造新的消息实例，方法是：将第一个值赋予第二个值，然后在新的消息实例中修改该属性；在同一构造消息形状中同时发生了构造和修改操作。</span><span class="sxs-lookup"><span data-stu-id="b5c2f-106">If you want to modify a property on a message that has already been constructed—such as a message that has been received—you must construct a new message instance by assigning the first to the second and then modifying the property on the new message instance; both the construction and modification occur within the same Construct Message shape.</span></span>  
+ <span data-ttu-id="a84d7-107">如果你想要修改已构造的消息的属性 — 例如已收到的消息，必须通过将第一个分配到第二个，然后修改新的消息实例; 属性来构造新的消息实例构造和修改发生在同一构造消息形状内。</span><span class="sxs-lookup"><span data-stu-id="a84d7-107">If you want to modify a property on a message that has already been constructed—such as a message that has been received—you must construct a new message instance by assigning the first to the second and then modifying the property on the new message instance; both the construction and modification occur within the same Construct Message shape.</span></span>  
   
-### <a name="to-configure-a-construct-message-shape"></a><span data-ttu-id="b5c2f-107">若要配置构造消息形状</span><span class="sxs-lookup"><span data-stu-id="b5c2f-107">To configure a Construct Message shape</span></span>  
+### <a name="to-configure-a-construct-message-shape"></a><span data-ttu-id="a84d7-108">若要配置构造消息形状</span><span class="sxs-lookup"><span data-stu-id="a84d7-108">To configure a Construct Message shape</span></span>  
   
-1.  <span data-ttu-id="b5c2f-108">在属性窗口中，使用**消息构造**属性来指定哪些消息此形状将构造。</span><span class="sxs-lookup"><span data-stu-id="b5c2f-108">In the Properties window, use the **Messages Constructed** property to specify which messages this shape will construct.</span></span>  
+1.  <span data-ttu-id="a84d7-109">在属性窗口中，使用**构造的消息**属性指定的消息此形状将构造。</span><span class="sxs-lookup"><span data-stu-id="a84d7-109">In the Properties window, use the **Messages Constructed** property to specify which messages this shape will construct.</span></span>  
   
-2.  <span data-ttu-id="b5c2f-109">添加和配置一个或多个**转换**或**消息分配**内的形状**构造消息形状**。</span><span class="sxs-lookup"><span data-stu-id="b5c2f-109">Add and configure one or more **Transform** or **Message Assignment** shapes inside the **Construct Message shape**.</span></span>
+2.  <span data-ttu-id="a84d7-110">添加并配置一个或多个**转换**或**消息赋值**形状内**构造消息形状**。</span><span class="sxs-lookup"><span data-stu-id="a84d7-110">Add and configure one or more **Transform** or **Message Assignment** shapes inside the **Construct Message shape**.</span></span>

@@ -1,5 +1,5 @@
 ---
-title: 用于博士 Edwards EnterpriseOne 的 BizTalk Adapter 的用户界面参考 |Microsoft 文档
+title: 用于 JD Edwards EnterpriseOne 的 BizTalk 适配器用户界面参考 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 93ec7e7ad9853378e03212acc4498095a07834e2
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b183b2cfa7ce1e00fd1beea7a9fc9d725be6de4d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286493"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65258584"
 ---
-# <a name="ui-reference-for-biztalk-adapter-for-jd-edwards-enterpriseone"></a><span data-ttu-id="bdd04-102">JD Edwards EnterpriseOne 的 BizTalk 适配器用户界面参考</span><span class="sxs-lookup"><span data-stu-id="bdd04-102">UI Reference for BizTalk Adapter for JD Edwards EnterpriseOne</span></span>
-<span data-ttu-id="bdd04-103">本部分中的主题介绍 JD Edwards EnterpriseOne 的 Microsoft BizTalk 适配器的用户界面。</span><span class="sxs-lookup"><span data-stu-id="bdd04-103">The topics in this section describe the user interface for Microsoft BizTalk Adapter for JD Edwards EnterpriseOne.</span></span>  
+# <a name="ui-reference-for-biztalk-adapter-for-jd-edwards-enterpriseone"></a><span data-ttu-id="642a8-102">用于 JD Edwards EnterpriseOne 的 BizTalk 适配器用户界面参考</span><span class="sxs-lookup"><span data-stu-id="642a8-102">UI Reference for BizTalk Adapter for JD Edwards EnterpriseOne</span></span>
+<span data-ttu-id="642a8-103">本部分中的主题介绍 JD Edwards EnterpriseOne 的 Microsoft BizTalk 适配器的用户界面。</span><span class="sxs-lookup"><span data-stu-id="642a8-103">The topics in this section describe the user interface for Microsoft BizTalk Adapter for JD Edwards EnterpriseOne.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="bdd04-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="bdd04-104">In This Section</span></span>  
- [<span data-ttu-id="bdd04-105">博士 Edwards EnterpriseOne 传输的属性对话框</span><span class="sxs-lookup"><span data-stu-id="bdd04-105">JD Edwards EnterpriseOne Transport Properties Dialog Box</span></span>](../core/jd-edwards-enterpriseone-transport-properties-dialog-box.md)  
+## <a name="in-this-section"></a><span data-ttu-id="642a8-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="642a8-104">In This Section</span></span>  
+ [<span data-ttu-id="642a8-105">“JD Edwards EnterpriseOne 传输属性”对话框</span><span class="sxs-lookup"><span data-stu-id="642a8-105">JD Edwards EnterpriseOne Transport Properties Dialog Box</span></span>](../core/jd-edwards-enterpriseone-transport-properties-dialog-box.md)  
   
- [<span data-ttu-id="bdd04-106">博士 Edwards EnterpriseOne 添加适配器元数据向导</span><span class="sxs-lookup"><span data-stu-id="bdd04-106">JD Edwards EnterpriseOne Add Adapter Metadata Wizard</span></span>](../core/jd-edwards-enterpriseone-add-adapter-metadata-wizard.md)
+ [<span data-ttu-id="642a8-106">JD Edwards EnterpriseOne“添加适配器元数据”向导</span><span class="sxs-lookup"><span data-stu-id="642a8-106">JD Edwards EnterpriseOne Add Adapter Metadata Wizard</span></span>](../core/jd-edwards-enterpriseone-add-adapter-metadata-wizard.md)

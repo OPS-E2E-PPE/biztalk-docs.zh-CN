@@ -1,5 +1,5 @@
 ---
-title: BTAD_ChangeRequestAction |Microsoft 文档
+title: BTAD_ChangeRequestAction |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,25 +14,25 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 19dac1650c00106e307567bba5e3f35253ba5991
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0c66b8db50820501d47ccea9ef8af8d17910bc29
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230573"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65357842"
 ---
-# <a name="btadchangerequestaction"></a><span data-ttu-id="943dc-102">BTAD_ChangeRequestAction</span><span class="sxs-lookup"><span data-stu-id="943dc-102">BTAD_ChangeRequestAction</span></span>
-<span data-ttu-id="943dc-103">BTAD_ChangeRequestAction 包含指示更改请求操作的值。</span><span class="sxs-lookup"><span data-stu-id="943dc-103">BTAD_ChangeRequestAction contains a value indicating a change request action.</span></span>  
+# <a name="btadchangerequestaction"></a><span data-ttu-id="470ea-102">BTAD_ChangeRequestAction</span><span class="sxs-lookup"><span data-stu-id="470ea-102">BTAD_ChangeRequestAction</span></span>
+<span data-ttu-id="470ea-103">BTAD_ChangeRequestAction 包含指示更改请求操作的值。</span><span class="sxs-lookup"><span data-stu-id="470ea-103">BTAD_ChangeRequestAction contains a value indicating a change request action.</span></span>  
   
-## <a name="remarks"></a><span data-ttu-id="943dc-104">注释</span><span class="sxs-lookup"><span data-stu-id="943dc-104">Remarks</span></span>  
- <span data-ttu-id="943dc-105">下表介绍 BTAD_ChangeRequestAction 的可能值。</span><span class="sxs-lookup"><span data-stu-id="943dc-105">The following table describes the possible values for BTAD_ChangeRequestAction.</span></span>  
+## <a name="remarks"></a><span data-ttu-id="470ea-104">备注</span><span class="sxs-lookup"><span data-stu-id="470ea-104">Remarks</span></span>  
+ <span data-ttu-id="470ea-105">下表介绍 BTAD_ChangeRequestAction 的可能值。</span><span class="sxs-lookup"><span data-stu-id="470ea-105">The following table describes the possible values for BTAD_ChangeRequestAction.</span></span>  
   
-|<span data-ttu-id="943dc-106">值</span><span class="sxs-lookup"><span data-stu-id="943dc-106">Value</span></span>|<span data-ttu-id="943dc-107">Description</span><span class="sxs-lookup"><span data-stu-id="943dc-107">Description</span></span>|  
+|<span data-ttu-id="470ea-106">ReplTest1</span><span class="sxs-lookup"><span data-stu-id="470ea-106">Value</span></span>|<span data-ttu-id="470ea-107">Description</span><span class="sxs-lookup"><span data-stu-id="470ea-107">Description</span></span>|  
 |-----------|-----------------|  
-|<span data-ttu-id="943dc-108">创建</span><span class="sxs-lookup"><span data-stu-id="943dc-108">Create</span></span>|<span data-ttu-id="943dc-109">导入（不指定覆盖）</span><span class="sxs-lookup"><span data-stu-id="943dc-109">Import without overwrite specified</span></span>|  
-|<span data-ttu-id="943dc-110">Update</span><span class="sxs-lookup"><span data-stu-id="943dc-110">Update</span></span>|<span data-ttu-id="943dc-111">导入或安装（指定覆盖）</span><span class="sxs-lookup"><span data-stu-id="943dc-111">Import or install with overwrite specified</span></span>|  
-|<span data-ttu-id="943dc-112">DELETE</span><span class="sxs-lookup"><span data-stu-id="943dc-112">Delete</span></span>|<span data-ttu-id="943dc-113">Uninstall</span><span class="sxs-lookup"><span data-stu-id="943dc-113">Uninstall</span></span>|  
+|<span data-ttu-id="470ea-108">创建</span><span class="sxs-lookup"><span data-stu-id="470ea-108">Create</span></span>|<span data-ttu-id="470ea-109">指定导入而无需覆盖</span><span class="sxs-lookup"><span data-stu-id="470ea-109">Import without overwrite specified</span></span>|  
+|<span data-ttu-id="470ea-110">Update</span><span class="sxs-lookup"><span data-stu-id="470ea-110">Update</span></span>|<span data-ttu-id="470ea-111">导入或安装 （指定覆盖）</span><span class="sxs-lookup"><span data-stu-id="470ea-111">Import or install with overwrite specified</span></span>|  
+|<span data-ttu-id="470ea-112">DELETE</span><span class="sxs-lookup"><span data-stu-id="470ea-112">Delete</span></span>|<span data-ttu-id="470ea-113">Uninstall</span><span class="sxs-lookup"><span data-stu-id="470ea-113">Uninstall</span></span>|  
   
-## <a name="see-also"></a><span data-ttu-id="943dc-114">另请参阅</span><span class="sxs-lookup"><span data-stu-id="943dc-114">See Also</span></span>  
- <span data-ttu-id="943dc-115">[前期和后期处理脚本环境变量](../core/pre-and-post-processing-script-environment-variables.md) </span><span class="sxs-lookup"><span data-stu-id="943dc-115">[Pre- and Post-processing Script Environment Variables](../core/pre-and-post-processing-script-environment-variables.md) </span></span>  
- [<span data-ttu-id="943dc-116">环境变量如何指示部署状态</span><span class="sxs-lookup"><span data-stu-id="943dc-116">How Environment Variables Indicate Deployment State</span></span>](../core/how-environment-variables-indicate-deployment-state.md)
+## <a name="see-also"></a><span data-ttu-id="470ea-114">请参阅</span><span class="sxs-lookup"><span data-stu-id="470ea-114">See Also</span></span>  
+ <span data-ttu-id="470ea-115">[预处理和后处理脚本环境变量](../core/pre-and-post-processing-script-environment-variables.md) </span><span class="sxs-lookup"><span data-stu-id="470ea-115">[Pre- and Post-processing Script Environment Variables](../core/pre-and-post-processing-script-environment-variables.md) </span></span>  
+ [<span data-ttu-id="470ea-116">环境变量如何指示部署状态</span><span class="sxs-lookup"><span data-stu-id="470ea-116">How Environment Variables Indicate Deployment State</span></span>](../core/how-environment-variables-indicate-deployment-state.md)

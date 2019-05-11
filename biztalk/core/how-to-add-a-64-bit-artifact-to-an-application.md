@@ -25,24 +25,24 @@ caps.latest.revision: 24
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 979b7be419be6b39c5a80fcd1548af7404588e01
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 041b08e6039e49376c14a83ba61fa6dab3a2e1fb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012862"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65387448"
 ---
-# <a name="how-to-add-a-64-bit-artifact-to-an-application"></a><span data-ttu-id="4b4d1-102">如何将一个 64 位项目添加到应用程序</span><span class="sxs-lookup"><span data-stu-id="4b4d1-102">How to Add a 64-Bit Artifact to an Application</span></span>
-[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]<span data-ttu-id="4b4d1-103"> 包括对 64 位应用程序的支持。</span><span class="sxs-lookup"><span data-stu-id="4b4d1-103"> includes support for 64-bit applications.</span></span> <span data-ttu-id="4b4d1-104">这意味着，您可以采用与 32 位项目相同的方式将 64 位项目添加到 BizTalk 应用程序中；但是，在 32 位计算机上安装以下 64 位项目时，您可能会遇到以下问题：</span><span class="sxs-lookup"><span data-stu-id="4b4d1-104">This means that you can add 64-bit artifacts to a BizTalk application in the same manner as 32-bit artifacts; however, you may encounter the following issues when installing the following 64-bit artifacts on a 32-bit computer:</span></span>  
+# <a name="how-to-add-a-64-bit-artifact-to-an-application"></a><span data-ttu-id="6fcb7-102">如何将一个 64 位项目添加到应用程序</span><span class="sxs-lookup"><span data-stu-id="6fcb7-102">How to Add a 64-Bit Artifact to an Application</span></span>
+[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] <span data-ttu-id="6fcb7-103">包括对 64 位应用程序的支持。</span><span class="sxs-lookup"><span data-stu-id="6fcb7-103">includes support for 64-bit applications.</span></span> <span data-ttu-id="6fcb7-104">这意味着，您可以添加 64 位项目到 BizTalk 应用程序与 32 位项目; 相同的方式但是，在 32 位计算机上安装以下 64 位项目时可能会遇到以下问题：</span><span class="sxs-lookup"><span data-stu-id="6fcb7-104">This means that you can add 64-bit artifacts to a BizTalk application in the same manner as 32-bit artifacts; however, you may encounter the following issues when installing the following 64-bit artifacts on a 32-bit computer:</span></span>  
   
-- <span data-ttu-id="4b4d1-105">**从 Web 服务器正在运行 64 位辅助进程的虚拟目录。**</span><span class="sxs-lookup"><span data-stu-id="4b4d1-105">**Virtual directory from a Web server that is running a 64-bit worker process.**</span></span> <span data-ttu-id="4b4d1-106">虚拟目录将安装在 32 位计算机上，但无法正常运行。</span><span class="sxs-lookup"><span data-stu-id="4b4d1-106">The virtual directory will install on a 32-bit computer, but it may not function correctly.</span></span> <span data-ttu-id="4b4d1-107">在日志中将记录不匹配。</span><span class="sxs-lookup"><span data-stu-id="4b4d1-107">A mismatch will be logged.</span></span>  
+- <span data-ttu-id="6fcb7-105">**从 Web 服务器正在运行 64 位辅助进程的虚拟目录。**</span><span class="sxs-lookup"><span data-stu-id="6fcb7-105">**Virtual directory from a Web server that is running a 64-bit worker process.**</span></span> <span data-ttu-id="6fcb7-106">虚拟目录将安装在 32 位计算机上，但它可能无法正常运行。</span><span class="sxs-lookup"><span data-stu-id="6fcb7-106">The virtual directory will install on a 32-bit computer, but it may not function correctly.</span></span> <span data-ttu-id="6fcb7-107">将记录不匹配。</span><span class="sxs-lookup"><span data-stu-id="6fcb7-107">A mismatch will be logged.</span></span>  
   
-- <span data-ttu-id="4b4d1-108">**非托管的 COM 或托管 COM + 组件标记为 64 位。**</span><span class="sxs-lookup"><span data-stu-id="4b4d1-108">**Unmanaged COM or Managed COM+ components marked as 64 bit.**</span></span> <span data-ttu-id="4b4d1-109">这些组件将不安装在 32 位计算机上。</span><span class="sxs-lookup"><span data-stu-id="4b4d1-109">These components will not install on a 32-bit computer.</span></span>  
+- <span data-ttu-id="6fcb7-108">**非托管的 COM 或托管 COM + 组件标记为 64 位。**</span><span class="sxs-lookup"><span data-stu-id="6fcb7-108">**Unmanaged COM or Managed COM+ components marked as 64 bit.**</span></span> <span data-ttu-id="6fcb7-109">这些组件将不安装在 32 位计算机上。</span><span class="sxs-lookup"><span data-stu-id="6fcb7-109">These components will not install on a 32-bit computer.</span></span>  
   
-- <span data-ttu-id="4b4d1-110">**64 位脚本另存为.exe 文件。**</span><span class="sxs-lookup"><span data-stu-id="4b4d1-110">**64-bit scripts saved as .exe files.**</span></span> <span data-ttu-id="4b4d1-111">此类型的脚本将无法正常运行。</span><span class="sxs-lookup"><span data-stu-id="4b4d1-111">This type of script may not function correctly.</span></span>  
+- <span data-ttu-id="6fcb7-110">**64 位脚本另存为.exe 文件。**</span><span class="sxs-lookup"><span data-stu-id="6fcb7-110">**64-bit scripts saved as .exe files.**</span></span> <span data-ttu-id="6fcb7-111">此类型的脚本可能无法正常工作。</span><span class="sxs-lookup"><span data-stu-id="6fcb7-111">This type of script may not function correctly.</span></span>  
   
-  <span data-ttu-id="4b4d1-112">添加项目的一般说明，请参阅[如何创建或添加项目](../core/how-to-create-or-add-an-artifact.md)。</span><span class="sxs-lookup"><span data-stu-id="4b4d1-112">For general instructions on adding artifacts, see [How to Create or Add an Artifact](../core/how-to-create-or-add-an-artifact.md).</span></span> <span data-ttu-id="4b4d1-113">有关添加特定项目类型的说明，请参阅[管理项目](../core/managing-artifacts.md)。</span><span class="sxs-lookup"><span data-stu-id="4b4d1-113">For instructions on adding specific artifact types, see [Managing Artifacts](../core/managing-artifacts.md).</span></span>  
+  <span data-ttu-id="6fcb7-112">添加项目的一般说明，请参阅[如何创建或添加项目](../core/how-to-create-or-add-an-artifact.md)。</span><span class="sxs-lookup"><span data-stu-id="6fcb7-112">For general instructions on adding artifacts, see [How to Create or Add an Artifact](../core/how-to-create-or-add-an-artifact.md).</span></span> <span data-ttu-id="6fcb7-113">有关添加特定项目类型的说明，请参阅[管理项目](../core/managing-artifacts.md)。</span><span class="sxs-lookup"><span data-stu-id="6fcb7-113">For instructions on adding specific artifact types, see [Managing Artifacts](../core/managing-artifacts.md).</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="4b4d1-114">请参阅</span><span class="sxs-lookup"><span data-stu-id="4b4d1-114">See Also</span></span>  
- <span data-ttu-id="4b4d1-115">[创建和修改 BizTalk 应用程序](../core/creating-and-modifying-biztalk-applications.md) </span><span class="sxs-lookup"><span data-stu-id="4b4d1-115">[Creating and Modifying BizTalk Applications](../core/creating-and-modifying-biztalk-applications.md) </span></span>  
- [<span data-ttu-id="4b4d1-116">如何安装 BizTalk 应用程序</span><span class="sxs-lookup"><span data-stu-id="4b4d1-116">How to Install a BizTalk Application</span></span>](../core/how-to-install-a-biztalk-application.md)
+## <a name="see-also"></a><span data-ttu-id="6fcb7-114">请参阅</span><span class="sxs-lookup"><span data-stu-id="6fcb7-114">See Also</span></span>  
+ <span data-ttu-id="6fcb7-115">[创建和修改 BizTalk 应用程序](../core/creating-and-modifying-biztalk-applications.md) </span><span class="sxs-lookup"><span data-stu-id="6fcb7-115">[Creating and Modifying BizTalk Applications](../core/creating-and-modifying-biztalk-applications.md) </span></span>  
+ [<span data-ttu-id="6fcb7-116">如何安装 BizTalk 应用程序</span><span class="sxs-lookup"><span data-stu-id="6fcb7-116">How to Install a BizTalk Application</span></span>](../core/how-to-install-a-biztalk-application.md)

@@ -1,5 +1,5 @@
 ---
-title: 扩展平面文件反汇编程序管道组件 |Microsoft 文档
+title: 扩展平面文件拆装器管道组件 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,17 +16,17 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 031189c0ecadfd8a7baff38200f044598e800437
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 6f19184087c18b901944382c4a421c14c1911e4e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22246229"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388225"
 ---
-# <a name="extending-the-flat-file-disassembler-pipeline-component"></a><span data-ttu-id="9420c-102">扩展平面文件反汇编程序管道组件</span><span class="sxs-lookup"><span data-stu-id="9420c-102">Extending the Flat File Disassembler Pipeline Component</span></span>
-<span data-ttu-id="9420c-103">下面的示例演示如何创建自定义拆装器以便解析用 UTF-7 编码的平面文件文档。</span><span class="sxs-lookup"><span data-stu-id="9420c-103">The following sample illustrates how to create a custom disassembler to parse flat file documents that are UTF-7 encoded.</span></span> <span data-ttu-id="9420c-104">若要处理 utf-7 文档，该组件，继承自**FFDasmComp**类，然后并重写其**GetDataReader**方法。</span><span class="sxs-lookup"><span data-stu-id="9420c-104">To process UTF-7 documents, the component inherits from the **FFDasmComp** class and then overrides its **GetDataReader** method.</span></span>  
+# <a name="extending-the-flat-file-disassembler-pipeline-component"></a><span data-ttu-id="47a05-102">扩展平面文件拆装器管道组件</span><span class="sxs-lookup"><span data-stu-id="47a05-102">Extending the Flat File Disassembler Pipeline Component</span></span>
+<span data-ttu-id="47a05-103">下面的示例说明了如何创建自定义拆装器以便解析用 utf-7 编码的平面文件文档。</span><span class="sxs-lookup"><span data-stu-id="47a05-103">The following sample illustrates how to create a custom disassembler to parse flat file documents that are UTF-7 encoded.</span></span> <span data-ttu-id="47a05-104">若要处理 utf-7 文档，该组件继承自**FFDasmComp**类，然后重写其**GetDataReader**方法。</span><span class="sxs-lookup"><span data-stu-id="47a05-104">To process UTF-7 documents, the component inherits from the **FFDasmComp** class and then overrides its **GetDataReader** method.</span></span>  
   
-## <a name="example"></a><span data-ttu-id="9420c-105">示例</span><span class="sxs-lookup"><span data-stu-id="9420c-105">Example</span></span>  
+## <a name="example"></a><span data-ttu-id="47a05-105">示例</span><span class="sxs-lookup"><span data-stu-id="47a05-105">Example</span></span>  
   
 ```  
 using System;  
@@ -107,11 +107,11 @@ namespace Microsoft.BizTalk.Test
 }  
 ```  
   
-## <a name="example"></a><span data-ttu-id="9420c-106">示例</span><span class="sxs-lookup"><span data-stu-id="9420c-106">Example</span></span>  
- <span data-ttu-id="9420c-107">下面的示例演示如何创建自定义拆装器以便执行平面文件交换的事务处理。</span><span class="sxs-lookup"><span data-stu-id="9420c-107">The following example illustrates how to create a custom disassembler for transactional processing of flat file interchanges.</span></span> <span data-ttu-id="9420c-108">自定义拆装器与标准平面文件拆装器的不同之处在于：前者在整个输入交换都完全处理前，并不生成任何已拆装的文档。</span><span class="sxs-lookup"><span data-stu-id="9420c-108">It differs from the standard Flat File Disassembler in that it does not produce any disassembled documents until the entire input interchange is completely processed.</span></span> <span data-ttu-id="9420c-109">此组件实现继承自**FFDasmComp**类，并重写**GetNext**方法。</span><span class="sxs-lookup"><span data-stu-id="9420c-109">This component implementation inherits from the **FFDasmComp** class and overrides the **GetNext** method.</span></span> <span data-ttu-id="9420c-110">在第一个调用**GetNext**方法，它会处理所有消息交换中的，将它们存储在**ArrayList**，并返回从第一条消息**ArrayList**。</span><span class="sxs-lookup"><span data-stu-id="9420c-110">On the first call to the **GetNext** method, it processes all messages in the interchange, stores them in an **ArrayList**, and returns the first message from the **ArrayList**.</span></span> <span data-ttu-id="9420c-111">后续调用中，它将返回从下一条消息**ArrayList**。</span><span class="sxs-lookup"><span data-stu-id="9420c-111">On subsequent calls, it returns the next message from the **ArrayList**.</span></span>  
+## <a name="example"></a><span data-ttu-id="47a05-106">示例</span><span class="sxs-lookup"><span data-stu-id="47a05-106">Example</span></span>  
+ <span data-ttu-id="47a05-107">下面的示例说明了如何创建自定义拆装器以便执行平面文件交换的事务处理。</span><span class="sxs-lookup"><span data-stu-id="47a05-107">The following example illustrates how to create a custom disassembler for transactional processing of flat file interchanges.</span></span> <span data-ttu-id="47a05-108">它不同于标准的平面文件拆装器，因为它不会生成任何已拆装的文档，直到整个输入的交换都完全处理。</span><span class="sxs-lookup"><span data-stu-id="47a05-108">It differs from the standard Flat File Disassembler in that it does not produce any disassembled documents until the entire input interchange is completely processed.</span></span> <span data-ttu-id="47a05-109">此组件实现继承自**FFDasmComp**类，并重写**GetNext**方法。</span><span class="sxs-lookup"><span data-stu-id="47a05-109">This component implementation inherits from the **FFDasmComp** class and overrides the **GetNext** method.</span></span> <span data-ttu-id="47a05-110">在首次调用**GetNext**方法，它处理交换中的所有消息，将它们存储在**ArrayList**，并返回从第一条消息**ArrayList**。</span><span class="sxs-lookup"><span data-stu-id="47a05-110">On the first call to the **GetNext** method, it processes all messages in the interchange, stores them in an **ArrayList**, and returns the first message from the **ArrayList**.</span></span> <span data-ttu-id="47a05-111">后续调用中，它将返回从下一条消息**ArrayList**。</span><span class="sxs-lookup"><span data-stu-id="47a05-111">On subsequent calls, it returns the next message from the **ArrayList**.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="9420c-112">在下面的代码示例中实现 GetNext() 方法的方式并不适合于处理大型文档，因为它将在内存中保留整个交换。</span><span class="sxs-lookup"><span data-stu-id="9420c-112">The implementation of the GetNext() method in the code sample below would not be suitable for the processing of large documents because it retains the entire interchange in memory.</span></span>  <span data-ttu-id="9420c-113">将此技术用于大型文档可能会用尽内存资源，从而导致性能下降或出现不稳定的行为。</span><span class="sxs-lookup"><span data-stu-id="9420c-113">Using this technique for large documents could exhaust memory resources and cause degraded performance or unstable behavior.</span></span>  
+>  <span data-ttu-id="47a05-112">下面的代码示例中的 getnext （） 方法的实现不适合处理大型文档，因为它将保留在内存中的整个交换。</span><span class="sxs-lookup"><span data-stu-id="47a05-112">The implementation of the GetNext() method in the code sample below would not be suitable for the processing of large documents because it retains the entire interchange in memory.</span></span>  <span data-ttu-id="47a05-113">将此技术用于大型文档可能会用尽内存资源，从而导致性能下降或不稳定行为。</span><span class="sxs-lookup"><span data-stu-id="47a05-113">Using this technique for large documents could exhaust memory resources and cause degraded performance or unstable behavior.</span></span>  
   
 ```  
 using System;  
@@ -232,5 +232,5 @@ namespace Microsoft.BizTalk.Component
   
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="9420c-114">另请参阅</span><span class="sxs-lookup"><span data-stu-id="9420c-114">See Also</span></span>  
- [<span data-ttu-id="9420c-115">开发分解的管道组件</span><span class="sxs-lookup"><span data-stu-id="9420c-115">Developing a Disassembling Pipeline Component</span></span>](../core/developing-a-disassembling-pipeline-component.md)
+## <a name="see-also"></a><span data-ttu-id="47a05-114">请参阅</span><span class="sxs-lookup"><span data-stu-id="47a05-114">See Also</span></span>  
+ [<span data-ttu-id="47a05-115">开发拆装管道组件</span><span class="sxs-lookup"><span data-stu-id="47a05-115">Developing a Disassembling Pipeline Component</span></span>](../core/developing-a-disassembling-pipeline-component.md)

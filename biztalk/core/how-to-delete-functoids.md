@@ -1,5 +1,5 @@
 ---
-title: 如何删除 Functoid |Microsoft 文档
+title: 如何删除 Functoid |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,31 +12,31 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 0f8214241710281d0b57c6dd1256f6154e61b9fa
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 70a006a016d84ea886aa617a7988f8b519c058d1
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22248973"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338601"
 ---
-# <a name="how-to-delete-functoids"></a><span data-ttu-id="1e6f8-102">如何删除 Functoid</span><span class="sxs-lookup"><span data-stu-id="1e6f8-102">How to Delete Functoids</span></span>
-<span data-ttu-id="1e6f8-103">建立映射时，有时会需要删除现有的 functoid。</span><span class="sxs-lookup"><span data-stu-id="1e6f8-103">When developing maps, you will sometimes need to delete an existing functoid.</span></span> <span data-ttu-id="1e6f8-104">删除 functoid 也会删除关联的输入链接和输出链接，以及其他任何输入参数、脚本规范和表网格配置。</span><span class="sxs-lookup"><span data-stu-id="1e6f8-104">Deleting a functoid also deletes the associated input and output links, as well as any additional input parameters, script specification, and table grid configuration.</span></span>  
+# <a name="how-to-delete-functoids"></a><span data-ttu-id="b828c-102">如何删除 Functoid</span><span class="sxs-lookup"><span data-stu-id="b828c-102">How to Delete Functoids</span></span>
+<span data-ttu-id="b828c-103">建立映射时，有时需要删除现有的 functoid。</span><span class="sxs-lookup"><span data-stu-id="b828c-103">When developing maps, you will sometimes need to delete an existing functoid.</span></span> <span data-ttu-id="b828c-104">删除 functoid 也会删除关联的输入和输出链接，以及任何其他输入的参数、 脚本规范和表网格配置。</span><span class="sxs-lookup"><span data-stu-id="b828c-104">Deleting a functoid also deletes the associated input and output links, as well as any additional input parameters, script specification, and table grid configuration.</span></span>  
   
-### <a name="to-delete-an-existing-functoid"></a><span data-ttu-id="1e6f8-105">删除现有的 functoid</span><span class="sxs-lookup"><span data-stu-id="1e6f8-105">To delete an existing functoid</span></span>  
+### <a name="to-delete-an-existing-functoid"></a><span data-ttu-id="b828c-105">若要删除现有的 functoid</span><span class="sxs-lookup"><span data-stu-id="b828c-105">To delete an existing functoid</span></span>  
   
-1.  <span data-ttu-id="1e6f8-106">显示包含要删除的 functoid 的网格页。</span><span class="sxs-lookup"><span data-stu-id="1e6f8-106">Display the grid page that contains the functoid you want to delete.</span></span> <span data-ttu-id="1e6f8-107">有关使用网格页，包括网格页面之间切换的详细信息请参阅[使用网格页](../core/working-with-grid-pages.md)。</span><span class="sxs-lookup"><span data-stu-id="1e6f8-107">For more information about working with grid pages, including switching between grid pages, see [Working with Grid Pages](../core/working-with-grid-pages.md).</span></span>  
+1.  <span data-ttu-id="b828c-106">显示包含你想要删除的 functoid 的网格页。</span><span class="sxs-lookup"><span data-stu-id="b828c-106">Display the grid page that contains the functoid you want to delete.</span></span> <span data-ttu-id="b828c-107">有关使用网格页，包括网格页之间切换的详细信息请参阅[使用网格页](../core/working-with-grid-pages.md)。</span><span class="sxs-lookup"><span data-stu-id="b828c-107">For more information about working with grid pages, including switching between grid pages, see [Working with Grid Pages](../core/working-with-grid-pages.md).</span></span>  
   
-2.  <span data-ttu-id="1e6f8-108">单击要删除的 functoid 以将其选定。</span><span class="sxs-lookup"><span data-stu-id="1e6f8-108">Select the functoid you want to delete by clicking on it.</span></span>  
+2.  <span data-ttu-id="b828c-108">选择你想要通过单击其上删除的 functoid。</span><span class="sxs-lookup"><span data-stu-id="b828c-108">Select the functoid you want to delete by clicking on it.</span></span>  
   
-     <span data-ttu-id="1e6f8-109">可以选择多个 functoid，然后一次性将它们删除。</span><span class="sxs-lookup"><span data-stu-id="1e6f8-109">You can select multiple functoids and then delete them at a time.</span></span> <span data-ttu-id="1e6f8-110">有关大容量选择 functoid 和链接的详细信息，请参阅[如何选择多个链接和 Functoid](../core/how-to-select-multiple-links-and-functoids.md)。</span><span class="sxs-lookup"><span data-stu-id="1e6f8-110">For more information about bulk-selecting the functoids and links, see [How to Select Multiple Links and Functoids](../core/how-to-select-multiple-links-and-functoids.md).</span></span>  
+     <span data-ttu-id="b828c-109">可以选择多个 functoid，然后将其删除一次。</span><span class="sxs-lookup"><span data-stu-id="b828c-109">You can select multiple functoids and then delete them at a time.</span></span> <span data-ttu-id="b828c-110">有关批量选择 functoid 和链接的详细信息，请参阅[如何选择多个链接和 Functoid](../core/how-to-select-multiple-links-and-functoids.md)。</span><span class="sxs-lookup"><span data-stu-id="b828c-110">For more information about bulk-selecting the functoids and links, see [How to Select Multiple Links and Functoids](../core/how-to-select-multiple-links-and-functoids.md).</span></span>  
   
-3.  <span data-ttu-id="1e6f8-111">上**编辑**菜单上，单击**删除**。</span><span class="sxs-lookup"><span data-stu-id="1e6f8-111">On the **Edit** menu, click **Delete**.</span></span>  
-  
-    > [!NOTE]
-    >  <span data-ttu-id="1e6f8-112">此外可以按 DELETE 键，或右键单击所选 functoid 相关网格页中的，单击**删除**从上下文菜单。</span><span class="sxs-lookup"><span data-stu-id="1e6f8-112">You can also press the DELETE key, or right-click the selected functoid in the relevant grid page and click **Delete** from the context menu.</span></span>  
+3.  <span data-ttu-id="b828c-111">上**编辑**菜单上，单击**删除**。</span><span class="sxs-lookup"><span data-stu-id="b828c-111">On the **Edit** menu, click **Delete**.</span></span>  
   
     > [!NOTE]
-    >  <span data-ttu-id="1e6f8-113">您无法撤消删除 functoid 或链接。</span><span class="sxs-lookup"><span data-stu-id="1e6f8-113">You cannot undo the functoid or link deletion.</span></span> <span data-ttu-id="1e6f8-114">有关如何撤消或重做用户操作的详细信息，请参阅[如何撤消或重做用户操作](../core/how-to-undo-or-redo-user-operations.md)。</span><span class="sxs-lookup"><span data-stu-id="1e6f8-114">For more information on how to undo or redo user operations, see [How to Undo or Redo User Operations](../core/how-to-undo-or-redo-user-operations.md).</span></span>  
+    >  <span data-ttu-id="b828c-112">此外可以按 DELETE 键，或右键单击相关网格页中选定的 functoid，单击**删除**从上下文菜单。</span><span class="sxs-lookup"><span data-stu-id="b828c-112">You can also press the DELETE key, or right-click the selected functoid in the relevant grid page and click **Delete** from the context menu.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="1e6f8-115">另请参阅</span><span class="sxs-lookup"><span data-stu-id="1e6f8-115">See Also</span></span>  
- [<span data-ttu-id="1e6f8-116">使用 Functoid 创建更复杂的映射</span><span class="sxs-lookup"><span data-stu-id="1e6f8-116">Using Functoids to Create More Complex Mappings</span></span>](../core/using-functoids-to-create-more-complex-mappings.md)
+    > [!NOTE]
+    >  <span data-ttu-id="b828c-113">您不能撤消 functoid 或链接删除。</span><span class="sxs-lookup"><span data-stu-id="b828c-113">You cannot undo the functoid or link deletion.</span></span> <span data-ttu-id="b828c-114">有关如何撤消或重做用户操作的详细信息，请参阅[如何撤消或重做用户操作](../core/how-to-undo-or-redo-user-operations.md)。</span><span class="sxs-lookup"><span data-stu-id="b828c-114">For more information on how to undo or redo user operations, see [How to Undo or Redo User Operations](../core/how-to-undo-or-redo-user-operations.md).</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="b828c-115">请参阅</span><span class="sxs-lookup"><span data-stu-id="b828c-115">See Also</span></span>  
+ [<span data-ttu-id="b828c-116">使用 Functoid 创建更复杂的映射</span><span class="sxs-lookup"><span data-stu-id="b828c-116">Using Functoids to Create More Complex Mappings</span></span>](../core/using-functoids-to-create-more-complex-mappings.md)

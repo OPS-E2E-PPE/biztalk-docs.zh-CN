@@ -17,31 +17,31 @@ caps.latest.revision: 12
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 4efc52ba5531bac17fa244edfbf7e197fa0028ba
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: f0cee3cb77368b8128ad5be66e4628f9c693f71c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36980990"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65335098"
 ---
-# <a name="how-to-remove-a-certificate-from-a-send-port"></a><span data-ttu-id="bfd62-102">如何从发送端口删除证书</span><span class="sxs-lookup"><span data-stu-id="bfd62-102">How to Remove a Certificate from a Send Port</span></span>
-<span data-ttu-id="bfd62-103">本主题将介绍如何使用 BizTalk Server 管理控制台从发送端口删除安全证书。</span><span class="sxs-lookup"><span data-stu-id="bfd62-103">This topic describes how to use the BizTalk Server Administration console to remove a security certificate from a send port.</span></span> <span data-ttu-id="bfd62-104">执行此操作后，发送端口将不再对消息进行加密，消息将以明文形式发送。</span><span class="sxs-lookup"><span data-stu-id="bfd62-104">When you do this, the send port will no longer encrypt messages; messages will be sent in clear text.</span></span> <span data-ttu-id="bfd62-105">从发送端口删除证书并不会从证书存储中删除该证书。</span><span class="sxs-lookup"><span data-stu-id="bfd62-105">Removing a certificate from a send port does not remove it from the certificate store.</span></span>  
+# <a name="how-to-remove-a-certificate-from-a-send-port"></a><span data-ttu-id="082c1-102">如何从发送端口删除证书</span><span class="sxs-lookup"><span data-stu-id="082c1-102">How to Remove a Certificate from a Send Port</span></span>
+<span data-ttu-id="082c1-103">本主题介绍如何使用 BizTalk Server 管理控制台从发送端口删除安全证书。</span><span class="sxs-lookup"><span data-stu-id="082c1-103">This topic describes how to use the BizTalk Server Administration console to remove a security certificate from a send port.</span></span> <span data-ttu-id="082c1-104">发送端口时执行此操作时，将无法再加密的消息;将以明文形式发送消息。</span><span class="sxs-lookup"><span data-stu-id="082c1-104">When you do this, the send port will no longer encrypt messages; messages will be sent in clear text.</span></span> <span data-ttu-id="082c1-105">从发送端口删除证书不会删除它从证书存储。</span><span class="sxs-lookup"><span data-stu-id="082c1-105">Removing a certificate from a send port does not remove it from the certificate store.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="bfd62-106">应用程序开发人员可以通过在开发过程中使用本主题中的过程来从发送端口删除安全证书。</span><span class="sxs-lookup"><span data-stu-id="bfd62-106">The application developer can remove a security certificate from a send port during the development process by using the procedure in this topic.</span></span>  
+>  <span data-ttu-id="082c1-106">应用程序开发人员可以删除安全证书从发送端口在开发过程中通过使用本主题中的过程。</span><span class="sxs-lookup"><span data-stu-id="082c1-106">The application developer can remove a security certificate from a send port during the development process by using the procedure in this topic.</span></span>  
   
-## <a name="prerequisites"></a><span data-ttu-id="bfd62-107">必要條件</span><span class="sxs-lookup"><span data-stu-id="bfd62-107">Prerequisites</span></span>  
- <span data-ttu-id="bfd62-108">若要执行本主题中的过程，必须是 BizTalk Server Administrators 组的成员的帐户登录。</span><span class="sxs-lookup"><span data-stu-id="bfd62-108">To perform the procedure in this topic, you must be logged on with an account that is a member of the BizTalk Server Administrators group.</span></span> <span data-ttu-id="bfd62-109">有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。</span><span class="sxs-lookup"><span data-stu-id="bfd62-109">For more detailed information on permissions, see [Permissions Required for Deploying and Managing a BizTalk Application](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md).</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="082c1-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="082c1-107">Prerequisites</span></span>  
+ <span data-ttu-id="082c1-108">若要执行本主题中的过程，必须是 BizTalk Server Administrators 组的成员的帐户登录。</span><span class="sxs-lookup"><span data-stu-id="082c1-108">To perform the procedure in this topic, you must be logged on with an account that is a member of the BizTalk Server Administrators group.</span></span> <span data-ttu-id="082c1-109">有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。</span><span class="sxs-lookup"><span data-stu-id="082c1-109">For more detailed information on permissions, see [Permissions Required for Deploying and Managing a BizTalk Application](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md).</span></span>  
   
-### <a name="to-remove-a-certificate-from-a-send-port"></a><span data-ttu-id="bfd62-110">从发送端口删除证书</span><span class="sxs-lookup"><span data-stu-id="bfd62-110">To remove a certificate from a send port</span></span>  
+### <a name="to-remove-a-certificate-from-a-send-port"></a><span data-ttu-id="082c1-110">若要从发送端口删除证书</span><span class="sxs-lookup"><span data-stu-id="082c1-110">To remove a certificate from a send port</span></span>  
   
-1. <span data-ttu-id="bfd62-111">单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。</span><span class="sxs-lookup"><span data-stu-id="bfd62-111">Click **Start**, click **All Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click **BizTalk Server Administration**.</span></span>  
+1. <span data-ttu-id="082c1-111">单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。</span><span class="sxs-lookup"><span data-stu-id="082c1-111">Click **Start**, click **All Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click **BizTalk Server Administration**.</span></span>  
   
-2. <span data-ttu-id="bfd62-112">在控制台树中，展开要为其删除证书的发送端口所属的 BizTalk 组和 BizTalk 应用程序。</span><span class="sxs-lookup"><span data-stu-id="bfd62-112">In the console tree, expand the BizTalk group and the BizTalk application for which you want to remove a certificate from a send port.</span></span>  
+2. <span data-ttu-id="082c1-112">在控制台树中，展开 BizTalk 组和 BizTalk 应用程序想要从发送端口删除证书。</span><span class="sxs-lookup"><span data-stu-id="082c1-112">In the console tree, expand the BizTalk group and the BizTalk application for which you want to remove a certificate from a send port.</span></span>  
   
-3. <span data-ttu-id="bfd62-113">展开**发送端口**，右键单击发送端口，单击**属性**，然后单击**证书**。</span><span class="sxs-lookup"><span data-stu-id="bfd62-113">Expand **Send Ports**, right-click the send port, click **Properties**, and then click **Certificates**.</span></span>  
+3. <span data-ttu-id="082c1-113">展开**发送端口**，右键单击发送端口，单击**属性**，然后单击**证书**。</span><span class="sxs-lookup"><span data-stu-id="082c1-113">Expand **Send Ports**, right-click the send port, click **Properties**, and then click **Certificates**.</span></span>  
   
-4. <span data-ttu-id="bfd62-114">单击**删除证书**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="bfd62-114">Click **Remove certificate**, and then click **OK**.</span></span>  
+4. <span data-ttu-id="082c1-114">单击**删除证书**，然后单击**确定**。</span><span class="sxs-lookup"><span data-stu-id="082c1-114">Click **Remove certificate**, and then click **OK**.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="bfd62-115">请参阅</span><span class="sxs-lookup"><span data-stu-id="bfd62-115">See Also</span></span>  
- [<span data-ttu-id="bfd62-116">创建和配置发送端口</span><span class="sxs-lookup"><span data-stu-id="bfd62-116">Creating and Configuring Send Ports</span></span>](../core/creating-and-configuring-send-ports.md)
+## <a name="see-also"></a><span data-ttu-id="082c1-115">请参阅</span><span class="sxs-lookup"><span data-stu-id="082c1-115">See Also</span></span>  
+ [<span data-ttu-id="082c1-116">创建和配置发送端口</span><span class="sxs-lookup"><span data-stu-id="082c1-116">Creating and Configuring Send Ports</span></span>](../core/creating-and-configuring-send-ports.md)

@@ -15,24 +15,24 @@ caps.latest.revision: 3
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1bb6520a142a7498dd36ac74e266e1d856e832f5
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 9d53c1038653a411666af4891a542e90fe988519
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968990"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65303706"
 ---
-# <a name="message-flow"></a><span data-ttu-id="a0bed-102">消息流</span><span class="sxs-lookup"><span data-stu-id="a0bed-102">Message Flow</span></span>
-<span data-ttu-id="a0bed-103">以下各节介绍如何运行状况护理消息流经 Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)])，以及如何[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]消息路由的工作原理。</span><span class="sxs-lookup"><span data-stu-id="a0bed-103">The following sections describe how health care messages flow through Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]), and how [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] messaging routing works.</span></span> <span data-ttu-id="a0bed-104">通过此路由，Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]提供增强的数据验证、 消息标头重写时和确认的功能。</span><span class="sxs-lookup"><span data-stu-id="a0bed-104">Through this routing, Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] offers enhanced functionality for data validation, message-header override, and acknowledgments.</span></span>  
+# <a name="message-flow"></a><span data-ttu-id="dd518-102">消息流</span><span class="sxs-lookup"><span data-stu-id="dd518-102">Message Flow</span></span>
+<span data-ttu-id="dd518-103">以下各节介绍如何运行状况护理消息流经 Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)])，以及如何[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]消息路由的工作原理。</span><span class="sxs-lookup"><span data-stu-id="dd518-103">The following sections describe how health care messages flow through Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]), and how [!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)] messaging routing works.</span></span> <span data-ttu-id="dd518-104">通过此路由，Microsoft[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]提供增强的数据验证、 消息标头重写时和确认的功能。</span><span class="sxs-lookup"><span data-stu-id="dd518-104">Through this routing, Microsoft [!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)] offers enhanced functionality for data validation, message-header override, and acknowledgments.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="a0bed-105">本节内容</span><span class="sxs-lookup"><span data-stu-id="a0bed-105">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="dd518-105">本节内容</span><span class="sxs-lookup"><span data-stu-id="dd518-105">In This Section</span></span>  
   
--   [<span data-ttu-id="a0bed-106">消息如何通过 BTAHL7</span><span class="sxs-lookup"><span data-stu-id="a0bed-106">How Messages Flow through BTAHL7</span></span>](../../adapters-and-accelerators/accelerator-hl7/how-messages-flow-through-btahl7.md)  
+-   [<span data-ttu-id="dd518-106">消息如何通过 BTAHL7</span><span class="sxs-lookup"><span data-stu-id="dd518-106">How Messages Flow through BTAHL7</span></span>](../../adapters-and-accelerators/accelerator-hl7/how-messages-flow-through-btahl7.md)  
   
--   [<span data-ttu-id="a0bed-107">BTAHL7 如何路由消息</span><span class="sxs-lookup"><span data-stu-id="a0bed-107">How BTAHL7 Routes Messages</span></span>](../../adapters-and-accelerators/accelerator-hl7/how-btahl7-routes-messages.md)  
+-   [<span data-ttu-id="dd518-107">BTAHL7 如何路由消息</span><span class="sxs-lookup"><span data-stu-id="dd518-107">How BTAHL7 Routes Messages</span></span>](../../adapters-and-accelerators/accelerator-hl7/how-btahl7-routes-messages.md)  
   
--   [<span data-ttu-id="a0bed-108">消息验证</span><span class="sxs-lookup"><span data-stu-id="a0bed-108">Message Validation</span></span>](../../adapters-and-accelerators/accelerator-hl7/message-validation.md)  
+-   [<span data-ttu-id="dd518-108">消息验证</span><span class="sxs-lookup"><span data-stu-id="dd518-108">Message Validation</span></span>](../../adapters-and-accelerators/accelerator-hl7/message-validation.md)  
   
--   [<span data-ttu-id="a0bed-109"> MSH 替代</span><span class="sxs-lookup"><span data-stu-id="a0bed-109">MSH Override</span></span>](../../adapters-and-accelerators/accelerator-hl7/msh-override.md)  
+-   [<span data-ttu-id="dd518-109"> MSH 替代</span><span class="sxs-lookup"><span data-stu-id="dd518-109">MSH Override</span></span>](../../adapters-and-accelerators/accelerator-hl7/msh-override.md)  
   
--   [<span data-ttu-id="a0bed-110">确认</span><span class="sxs-lookup"><span data-stu-id="a0bed-110">Acknowledgments</span></span>](../../adapters-and-accelerators/accelerator-hl7/acknowledgments.md)
+-   [<span data-ttu-id="dd518-110">确认</span><span class="sxs-lookup"><span data-stu-id="dd518-110">Acknowledgments</span></span>](../../adapters-and-accelerators/accelerator-hl7/acknowledgments.md)

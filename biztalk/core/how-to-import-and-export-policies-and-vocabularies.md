@@ -18,42 +18,42 @@ caps.latest.revision: 11
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1bb235d126ca775cc8bd5a752388c948a2203e4b
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 801ac848efe183a778bbd6a1155c96f4ab41f6c3
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36968838"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65384971"
 ---
-# <a name="how-to-import-and-export-policies-and-vocabularies"></a><span data-ttu-id="93e9d-102">如何导入和导出策略及词汇</span><span class="sxs-lookup"><span data-stu-id="93e9d-102">How to Import and Export Policies and Vocabularies</span></span>
-<span data-ttu-id="93e9d-103">可以使用规则引擎部署向导导入或导出策略或词汇。</span><span class="sxs-lookup"><span data-stu-id="93e9d-103">You can use the Rules Engine Deployment Wizard to import or export a policy or vocabulary.</span></span>  
+# <a name="how-to-import-and-export-policies-and-vocabularies"></a><span data-ttu-id="2494f-102">如何导入和导出策略及词汇</span><span class="sxs-lookup"><span data-stu-id="2494f-102">How to Import and Export Policies and Vocabularies</span></span>
+<span data-ttu-id="2494f-103">可以使用规则引擎部署向导导入或导出策略或词汇。</span><span class="sxs-lookup"><span data-stu-id="2494f-103">You can use the Rules Engine Deployment Wizard to import or export a policy or vocabulary.</span></span>  
 
 > [!NOTE]
->  <span data-ttu-id="93e9d-104">必须首先导入策略或词汇使用的所有词汇，否则将出现错误。</span><span class="sxs-lookup"><span data-stu-id="93e9d-104">All vocabularies used by a policy or vocabulary must be imported first or you will get an error.</span></span>  
+>  <span data-ttu-id="2494f-104">必须首先导入使用的策略或词汇的所有词汇，否则会收到错误。</span><span class="sxs-lookup"><span data-stu-id="2494f-104">All vocabularies used by a policy or vocabulary must be imported first or you will get an error.</span></span>  
 
-### <a name="to-import-or-export-a-policy-or-vocabulary"></a><span data-ttu-id="93e9d-105">导入或导出策略或词汇</span><span class="sxs-lookup"><span data-stu-id="93e9d-105">To import or export a policy or vocabulary</span></span>  
+### <a name="to-import-or-export-a-policy-or-vocabulary"></a><span data-ttu-id="2494f-105">若要导入或导出策略或词汇</span><span class="sxs-lookup"><span data-stu-id="2494f-105">To import or export a policy or vocabulary</span></span>  
 
-1. <span data-ttu-id="93e9d-106">单击**启动**，依次指向**所有程序**，指向[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**业务规则引擎部署向导**。</span><span class="sxs-lookup"><span data-stu-id="93e9d-106">Click **Start**, point to **All Programs**, point to [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click **Business Rules Engine Deployment Wizard**.</span></span>  
+1. <span data-ttu-id="2494f-106">单击**启动**，依次指向**所有程序**，指向[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**业务规则引擎部署向导**。</span><span class="sxs-lookup"><span data-stu-id="2494f-106">Click **Start**, point to **All Programs**, point to [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click **Business Rules Engine Deployment Wizard**.</span></span>  
 
    > [!NOTE]
-   >  <span data-ttu-id="93e9d-107">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="93e9d-107">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span> <span data-ttu-id="93e9d-108">要执行此操作，右键单击该应用程序，并选择**以管理员身份运行**。</span><span class="sxs-lookup"><span data-stu-id="93e9d-108">To do this, right-click the application, and then select **Run as administrator**.</span></span>  
+   >  <span data-ttu-id="2494f-107">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="2494f-107">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span> <span data-ttu-id="2494f-108">要执行此操作，右键单击该应用程序，并选择**以管理员身份运行**。</span><span class="sxs-lookup"><span data-stu-id="2494f-108">To do this, right-click the application, and then select **Run as administrator**.</span></span>  
 
-2. <span data-ttu-id="93e9d-109">在欢迎页上，单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="93e9d-109">On the welcome page, click **Next**.</span></span>  
+2. <span data-ttu-id="2494f-109">在欢迎页上，单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="2494f-109">On the welcome page, click **Next**.</span></span>  
 
-3. <span data-ttu-id="93e9d-110">上**部署任务**页上，选择**策略/词汇导出到文件从数据库**或**导入策略/词汇并发布到数据库文件从**，，然后单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="93e9d-110">On the **Deployment Task** page, select either **Export Policy/Vocabulary to file from database** or **Import and publish Policy/Vocabulary to database from file**, and then click **Next**.</span></span>  
+3. <span data-ttu-id="2494f-110">上**部署任务**页上，选择**策略/词汇导出到文件从数据库**或**导入策略/词汇并发布到数据库文件从**，，然后单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="2494f-110">On the **Deployment Task** page, select either **Export Policy/Vocabulary to file from database** or **Import and publish Policy/Vocabulary to database from file**, and then click **Next**.</span></span>  
 
-4. <span data-ttu-id="93e9d-111">上**策略存储区**页上，从下拉列表中，选择可用的 SQL Server 计算机和数据库，然后单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="93e9d-111">On the **Policy Store** page, from the drop-down lists, select an available SQL Server computer and database, and then click **Next**.</span></span>  
+4. <span data-ttu-id="2494f-111">上**策略存储区**页上，从下拉列表中，选择可用的 SQL Server 计算机和数据库，然后单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="2494f-111">On the **Policy Store** page, from the drop-down lists, select an available SQL Server computer and database, and then click **Next**.</span></span>  
 
-5. <span data-ttu-id="93e9d-112">上**导出策略/词汇**页上，执行以下操作，并单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="93e9d-112">On the **Export Policy/Vocabulary** page, do the following, and then click **Next**.</span></span>  
+5. <span data-ttu-id="2494f-112">上**导出策略/词汇**页上，执行以下操作，并单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="2494f-112">On the **Export Policy/Vocabulary** page, do the following, and then click **Next**.</span></span>  
 
-   1.  <span data-ttu-id="93e9d-113">选择**策略**或**词汇**具体取决于你想要导出/导入。</span><span class="sxs-lookup"><span data-stu-id="93e9d-113">Select **Policy** or **Vocabulary** depending on what you want to export/import.</span></span>  
+   1.  <span data-ttu-id="2494f-113">选择**策略**或**词汇**具体取决于你想要导出/导入。</span><span class="sxs-lookup"><span data-stu-id="2494f-113">Select **Policy** or **Vocabulary** depending on what you want to export/import.</span></span>  
 
-   2.  <span data-ttu-id="93e9d-114">从**策略/词汇**下拉列表中，选择所需的策略/词汇。</span><span class="sxs-lookup"><span data-stu-id="93e9d-114">From the **Policy/Vocabulary** drop-down list, select the desired policy/vocabulary.</span></span>  
+   2.  <span data-ttu-id="2494f-114">从**策略/词汇**下拉列表中，选择所需的策略/词汇。</span><span class="sxs-lookup"><span data-stu-id="2494f-114">From the **Policy/Vocabulary** drop-down list, select the desired policy/vocabulary.</span></span>  
 
-   3.  <span data-ttu-id="93e9d-115">单击**浏览**选择定义文件。</span><span class="sxs-lookup"><span data-stu-id="93e9d-115">Click **Browse** to select the definition file.</span></span>  
+   3.  <span data-ttu-id="2494f-115">单击**浏览**选择定义文件。</span><span class="sxs-lookup"><span data-stu-id="2494f-115">Click **Browse** to select the definition file.</span></span>  
 
-6. <span data-ttu-id="93e9d-116">查看服务器、 数据库和策略或词汇信息，然后单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="93e9d-116">Review the server, database, and policy or vocabulary information, and then click **Next**.</span></span>  
+6. <span data-ttu-id="2494f-116">查看服务器、 数据库和策略或词汇信息，然后单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="2494f-116">Review the server, database, and policy or vocabulary information, and then click **Next**.</span></span>  
 
-7. <span data-ttu-id="93e9d-117">完成导入或导出后，单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="93e9d-117">After the import or export is completed, click **Next**.</span></span>  
+7. <span data-ttu-id="2494f-117">完成导入或导出后，单击**下一步**。</span><span class="sxs-lookup"><span data-stu-id="2494f-117">After the import or export is completed, click **Next**.</span></span>  
 
-8. <span data-ttu-id="93e9d-118">查看导入或导出的完成状态，然后单击**完成**。</span><span class="sxs-lookup"><span data-stu-id="93e9d-118">Review the completion status of the import or export, and then click **Finish**.</span></span>
+8. <span data-ttu-id="2494f-118">查看导入或导出的完成状态，然后单击**完成**。</span><span class="sxs-lookup"><span data-stu-id="2494f-118">Review the completion status of the import or export, and then click **Finish**.</span></span>

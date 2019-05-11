@@ -1,5 +1,5 @@
 ---
-title: 如何显示性能收集规则 |Microsoft 文档
+title: 如何显示性能收集规则 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cd7b7d1d2e368572740a3c7a54799bc56b2330e3
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 9ddb8f0482864945a6dd89cc953523d0fb6642cb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22298181"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65253375"
 ---
-# <a name="how-to-display-performance-collection-rules"></a><span data-ttu-id="a843a-102">如何显示性能收集规则</span><span class="sxs-lookup"><span data-stu-id="a843a-102">How to Display Performance Collection Rules</span></span>
-<span data-ttu-id="a843a-103">若要显示性能收集规则，使用此部分中的脚本。</span><span class="sxs-lookup"><span data-stu-id="a843a-103">To display performance collection rules, use the script in this section.</span></span> <span data-ttu-id="a843a-104">此脚本适用于大多数规则。</span><span class="sxs-lookup"><span data-stu-id="a843a-104">This script works for the majority of rules.</span></span> <span data-ttu-id="a843a-105">它创建一个.csv 文件，包括下表中列出的列，并可以使用 Office Excel 查看。</span><span class="sxs-lookup"><span data-stu-id="a843a-105">It creates a .csv file that includes the columns listed in the following table, and can be viewed using Office Excel.</span></span>  
+# <a name="how-to-display-performance-collection-rules"></a><span data-ttu-id="3eee0-102">如何显示性能收集规则</span><span class="sxs-lookup"><span data-stu-id="3eee0-102">How to Display Performance Collection Rules</span></span>
+<span data-ttu-id="3eee0-103">若要显示性能收集规则，请在本部分中使用脚本。</span><span class="sxs-lookup"><span data-stu-id="3eee0-103">To display performance collection rules, use the script in this section.</span></span> <span data-ttu-id="3eee0-104">此脚本适用于大多数的规则。</span><span class="sxs-lookup"><span data-stu-id="3eee0-104">This script works for the majority of rules.</span></span> <span data-ttu-id="3eee0-105">它创建包含下表中列出的列的.csv 文件，可以使用 Office Excel 查看。</span><span class="sxs-lookup"><span data-stu-id="3eee0-105">It creates a .csv file that includes the columns listed in the following table, and can be viewed using Office Excel.</span></span>  
   
-|<span data-ttu-id="a843a-106">列</span><span class="sxs-lookup"><span data-stu-id="a843a-106">Column</span></span>|<span data-ttu-id="a843a-107">Description</span><span class="sxs-lookup"><span data-stu-id="a843a-107">Description</span></span>|  
+|<span data-ttu-id="3eee0-106">“列”</span><span class="sxs-lookup"><span data-stu-id="3eee0-106">Column</span></span>|<span data-ttu-id="3eee0-107">Description</span><span class="sxs-lookup"><span data-stu-id="3eee0-107">Description</span></span>|  
 |------------|-----------------|  
-|<span data-ttu-id="a843a-108">WriteToDB 或 CollectionPerformanceData</span><span class="sxs-lookup"><span data-stu-id="a843a-108">WriteToDB or CollectionPerformanceData</span></span>|<span data-ttu-id="a843a-109">写入 Operations Manager 数据库。</span><span class="sxs-lookup"><span data-stu-id="a843a-109">Writes to the Operations Manager database.</span></span>|  
-|<span data-ttu-id="a843a-110">WriteToDW 或 CollectPerfDataWarehouse</span><span class="sxs-lookup"><span data-stu-id="a843a-110">WriteToDW or CollectPerfDataWarehouse</span></span>|<span data-ttu-id="a843a-111">写入数据仓库。</span><span class="sxs-lookup"><span data-stu-id="a843a-111">Writes to the data warehouse.</span></span>|  
-|<span data-ttu-id="a843a-112">WC</span><span class="sxs-lookup"><span data-stu-id="a843a-112">WC</span></span>|<span data-ttu-id="a843a-113">将性能计数器的基准数据存储到操作数据库。</span><span class="sxs-lookup"><span data-stu-id="a843a-113">Stores baseline data for a performance counter into the operational database.</span></span>|  
+|<span data-ttu-id="3eee0-108">WriteToDB 或 CollectionPerformanceData</span><span class="sxs-lookup"><span data-stu-id="3eee0-108">WriteToDB or CollectionPerformanceData</span></span>|<span data-ttu-id="3eee0-109">将写入到 Operations Manager 数据库。</span><span class="sxs-lookup"><span data-stu-id="3eee0-109">Writes to the Operations Manager database.</span></span>|  
+|<span data-ttu-id="3eee0-110">WriteToDW 或 CollectPerfDataWarehouse</span><span class="sxs-lookup"><span data-stu-id="3eee0-110">WriteToDW or CollectPerfDataWarehouse</span></span>|<span data-ttu-id="3eee0-111">写入数据仓库。</span><span class="sxs-lookup"><span data-stu-id="3eee0-111">Writes to the data warehouse.</span></span>|  
+|<span data-ttu-id="3eee0-112">WC</span><span class="sxs-lookup"><span data-stu-id="3eee0-112">WC</span></span>|<span data-ttu-id="3eee0-113">将性能计数器的基准数据存储到操作数据库。</span><span class="sxs-lookup"><span data-stu-id="3eee0-113">Stores baseline data for a performance counter into the operational database.</span></span>|  
   
-#### <a name="to-display-performance-collection-rules"></a><span data-ttu-id="a843a-114">若要显示性能收集规则</span><span class="sxs-lookup"><span data-stu-id="a843a-114">To display performance collection rules</span></span>  
- <span data-ttu-id="a843a-115">若要显示管理组中的性能收集规则，请运行以下脚本：</span><span class="sxs-lookup"><span data-stu-id="a843a-115">To display the performance collection rules in the management group, run the following script:</span></span>  
+#### <a name="to-display-performance-collection-rules"></a><span data-ttu-id="3eee0-114">若要显示性能收集规则</span><span class="sxs-lookup"><span data-stu-id="3eee0-114">To display performance collection rules</span></span>  
+ <span data-ttu-id="3eee0-115">若要在管理组中显示的性能收集规则，请运行以下脚本：</span><span class="sxs-lookup"><span data-stu-id="3eee0-115">To display the performance collection rules in the management group, run the following script:</span></span>  
   
 ```  
 function GetPerfCounterName ([String] $configuration)   

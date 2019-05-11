@@ -1,5 +1,5 @@
 ---
-title: 完成异常 Message3 |Microsoft 文档
+title: 完成异常 Message3 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,17 +15,17 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7272cc84cf5475141aed80c3f114b5daa3e1c5d8
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 83570edee23340ef1ce36d1b91698fab6dfff369
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22231333"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65356799"
 ---
-# <a name="completing-the-exception-message"></a><span data-ttu-id="d2397-102">完成的异常消息</span><span class="sxs-lookup"><span data-stu-id="d2397-102">Completing the Exception Message</span></span>
-<span data-ttu-id="d2397-103">若要完成异常流，请添加发送形状以将错误 Message_3 发送到所监视的文件夹。</span><span class="sxs-lookup"><span data-stu-id="d2397-103">To complete the flow of the exception, add a Send shape to add the fault Message_3 to a monitored folder.</span></span>  
+# <a name="completing-the-exception-message"></a><span data-ttu-id="1cd88-102">完成异常消息</span><span class="sxs-lookup"><span data-stu-id="1cd88-102">Completing the Exception Message</span></span>
+<span data-ttu-id="1cd88-103">若要完成异常流，添加发送形状以将错误 message_3 发送添加到所监视的文件夹。</span><span class="sxs-lookup"><span data-stu-id="1cd88-103">To complete the flow of the exception, add a Send shape to add the fault Message_3 to a monitored folder.</span></span>  
   
- ![](../core/media/siebeladapter-15-exceptionhandling-start.gif "SiebelAdapter_15_ExceptionHandling_Start")  
+ <span data-ttu-id="1cd88-104">![](../core/media/siebeladapter-15-exceptionhandling-start.gif "SiebelAdapter_15_ExceptionHandling_Start")</span><span class="sxs-lookup"><span data-stu-id="1cd88-104">![](../core/media/siebeladapter-15-exceptionhandling-start.gif "SiebelAdapter_15_ExceptionHandling_Start")</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="d2397-104">另请参阅</span><span class="sxs-lookup"><span data-stu-id="d2397-104">See Also</span></span>  
- [<span data-ttu-id="d2397-105">使用 BizTalk Server 异常处理</span><span class="sxs-lookup"><span data-stu-id="d2397-105">Using BizTalk Server Exception Handling</span></span>](../core/using-biztalk-server-exception-handling2.md)
+## <a name="see-also"></a><span data-ttu-id="1cd88-105">请参阅</span><span class="sxs-lookup"><span data-stu-id="1cd88-105">See Also</span></span>  
+ [<span data-ttu-id="1cd88-106">使用 BizTalk Server 的异常处理</span><span class="sxs-lookup"><span data-stu-id="1cd88-106">Using BizTalk Server Exception Handling</span></span>](../core/using-biztalk-server-exception-handling2.md)

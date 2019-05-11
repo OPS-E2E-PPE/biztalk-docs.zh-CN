@@ -16,28 +16,28 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 65f72ad5bfef99bca7474ea01f3d07ecbe9ef2b8
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: a548620bb78aa0d2daf5a360ab1f0e1be8878760
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975150"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65338661"
 ---
-# <a name="how-to-delete-a-receive-port"></a><span data-ttu-id="c0fd5-102">如何删除接收端口</span><span class="sxs-lookup"><span data-stu-id="c0fd5-102">How to Delete a Receive Port</span></span>
-<span data-ttu-id="c0fd5-103">本主题介绍如何使用 BizTalk Server 管理控制台从 BizTalk 应用程序中删除接收端口。</span><span class="sxs-lookup"><span data-stu-id="c0fd5-103">This topic describes how to use the BizTalk Server Administration console to delete a receive port from a BizTalk application.</span></span> <span data-ttu-id="c0fd5-104">进行此操作时，还将删除该组的 BizTalk 管理数据库中的接收端口，与此同时此接收端口的所有接收位置也被删除。</span><span class="sxs-lookup"><span data-stu-id="c0fd5-104">When you do this, the receive port is also deleted from the BizTalk Management database for the group, as are all receive locations in this receive port.</span></span>  
+# <a name="how-to-delete-a-receive-port"></a><span data-ttu-id="fb177-102">如何删除接收端口</span><span class="sxs-lookup"><span data-stu-id="fb177-102">How to Delete a Receive Port</span></span>
+<span data-ttu-id="fb177-103">本主题介绍如何使用 BizTalk Server 管理控制台从 BizTalk 应用程序中删除接收端口。</span><span class="sxs-lookup"><span data-stu-id="fb177-103">This topic describes how to use the BizTalk Server Administration console to delete a receive port from a BizTalk application.</span></span> <span data-ttu-id="fb177-104">当执行此操作时，接收端口是还从组中，BizTalk 管理数据库删除，因为此接收端口中的所有接收位置。</span><span class="sxs-lookup"><span data-stu-id="fb177-104">When you do this, the receive port is also deleted from the BizTalk Management database for the group, as are all receive locations in this receive port.</span></span>  
   
- <span data-ttu-id="c0fd5-105">为了使此操作成功，不能将接收端口绑定到业务流程。</span><span class="sxs-lookup"><span data-stu-id="c0fd5-105">For this operation to succeed, the receive port cannot be bound to an orchestration.</span></span> <span data-ttu-id="c0fd5-106">有关删除接收端口的绑定的说明，请参阅[如何取消绑定业务流程](../core/how-to-unbind-an-orchestration.md)。</span><span class="sxs-lookup"><span data-stu-id="c0fd5-106">For instructions on removing the bindings for a receive port, see [How to Unbind an Orchestration](../core/how-to-unbind-an-orchestration.md).</span></span>  
+ <span data-ttu-id="fb177-105">若要成功执行此操作，接收端口不能绑定到业务流程。</span><span class="sxs-lookup"><span data-stu-id="fb177-105">For this operation to succeed, the receive port cannot be bound to an orchestration.</span></span> <span data-ttu-id="fb177-106">有关删除接收端口的绑定的说明，请参阅[如何取消绑定业务流程](../core/how-to-unbind-an-orchestration.md)。</span><span class="sxs-lookup"><span data-stu-id="fb177-106">For instructions on removing the bindings for a receive port, see [How to Unbind an Orchestration](../core/how-to-unbind-an-orchestration.md).</span></span>  
   
-## <a name="prerequisites"></a><span data-ttu-id="c0fd5-107">必要條件</span><span class="sxs-lookup"><span data-stu-id="c0fd5-107">Prerequisites</span></span>  
- <span data-ttu-id="c0fd5-108">若要执行本主题中的过程，必须是 BizTalk Server Administrators 组的成员的帐户登录。</span><span class="sxs-lookup"><span data-stu-id="c0fd5-108">To perform the procedure in this topic, you must be logged on with an account that is a member of the BizTalk Server Administrators group.</span></span> <span data-ttu-id="c0fd5-109">有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。</span><span class="sxs-lookup"><span data-stu-id="c0fd5-109">For more detailed information on permissions, see [Permissions Required for Deploying and Managing a BizTalk Application](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md).</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="fb177-107">先决条件</span><span class="sxs-lookup"><span data-stu-id="fb177-107">Prerequisites</span></span>  
+ <span data-ttu-id="fb177-108">若要执行本主题中的过程，必须是 BizTalk Server Administrators 组的成员的帐户登录。</span><span class="sxs-lookup"><span data-stu-id="fb177-108">To perform the procedure in this topic, you must be logged on with an account that is a member of the BizTalk Server Administrators group.</span></span> <span data-ttu-id="fb177-109">有关详细的权限的信息，请参阅[用于部署和管理 BizTalk 应用程序所需权限](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md)。</span><span class="sxs-lookup"><span data-stu-id="fb177-109">For more detailed information on permissions, see [Permissions Required for Deploying and Managing a BizTalk Application](../core/permissions-required-for-deploying-and-managing-a-biztalk-application.md).</span></span>  
   
-### <a name="to-delete-a-receive-port"></a><span data-ttu-id="c0fd5-110">删除接收端口</span><span class="sxs-lookup"><span data-stu-id="c0fd5-110">To delete a receive port</span></span>  
+### <a name="to-delete-a-receive-port"></a><span data-ttu-id="fb177-110">若要删除接收端口</span><span class="sxs-lookup"><span data-stu-id="fb177-110">To delete a receive port</span></span>  
   
-1. <span data-ttu-id="c0fd5-111">单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。</span><span class="sxs-lookup"><span data-stu-id="c0fd5-111">Click **Start**, click **All Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click **BizTalk Server Administration**.</span></span>  
+1. <span data-ttu-id="fb177-111">单击**启动**，单击**所有程序**，单击[!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)]，然后单击**BizTalk Server 管理**。</span><span class="sxs-lookup"><span data-stu-id="fb177-111">Click **Start**, click **All Programs**, click [!INCLUDE[btsBizTalkServerStartMenuItemui](../includes/btsbiztalkserverstartmenuitemui-md.md)], and then click **BizTalk Server Administration**.</span></span>  
   
-2. <span data-ttu-id="c0fd5-112">在控制台树中，展开[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，展开 BizTalk 组，展开**应用程序**，然后展开包含你想要删除的接收端口的应用程序。</span><span class="sxs-lookup"><span data-stu-id="c0fd5-112">In the console tree, expand [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], expand the BizTalk group, expand **Applications**, and then expand the application containing the receive port that you want to delete.</span></span>  
+2. <span data-ttu-id="fb177-112">在控制台树中，展开[!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)]，展开 BizTalk 组，展开**应用程序**，然后展开包含你想要删除的接收端口的应用程序。</span><span class="sxs-lookup"><span data-stu-id="fb177-112">In the console tree, expand [!INCLUDE[btsBizTalkServerAdminConsoleui](../includes/btsbiztalkserveradminconsoleui-md.md)], expand the BizTalk group, expand **Applications**, and then expand the application containing the receive port that you want to delete.</span></span>  
   
-3. <span data-ttu-id="c0fd5-113">单击**接收端口**，右键单击接收端口，然后单击**删除**。</span><span class="sxs-lookup"><span data-stu-id="c0fd5-113">Click **Receive Ports**, right-click the receive port, and then click **Delete**.</span></span>  
+3. <span data-ttu-id="fb177-113">单击**接收端口**，右键单击接收端口，然后单击**删除**。</span><span class="sxs-lookup"><span data-stu-id="fb177-113">Click **Receive Ports**, right-click the receive port, and then click **Delete**.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="c0fd5-114">请参阅</span><span class="sxs-lookup"><span data-stu-id="c0fd5-114">See Also</span></span>  
- [<span data-ttu-id="c0fd5-115">管理接收端口</span><span class="sxs-lookup"><span data-stu-id="c0fd5-115">Managing Receive Ports</span></span>](../core/managing-receive-ports.md)
+## <a name="see-also"></a><span data-ttu-id="fb177-114">请参阅</span><span class="sxs-lookup"><span data-stu-id="fb177-114">See Also</span></span>  
+ [<span data-ttu-id="fb177-115">管理接收端口</span><span class="sxs-lookup"><span data-stu-id="fb177-115">Managing Receive Ports</span></span>](../core/managing-receive-ports.md)

@@ -1,5 +1,5 @@
 ---
-title: 错误-未指定的错误 |Microsoft 文档
+title: 错误-未指明的错误 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -14,22 +14,22 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1aa53c7686a494fb85acae9360c1c310de9942f7
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: ed11bc890b1f3c0d1730fa5c93218c1032c041aa
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22240805"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65388357"
 ---
-# <a name="error---unspecified-fatal-error"></a><span data-ttu-id="9537a-102">错误-未指定的错误</span><span class="sxs-lookup"><span data-stu-id="9537a-102">Error - Unspecified Fatal Error</span></span>
-<span data-ttu-id="9537a-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="9537a-103">**Error Code**</span></span>  
+# <a name="error---unspecified-fatal-error"></a><span data-ttu-id="f8279-102">错误-未指明的错误</span><span class="sxs-lookup"><span data-stu-id="f8279-102">Error - Unspecified Fatal Error</span></span>
+<span data-ttu-id="f8279-103">**错误代码**</span><span class="sxs-lookup"><span data-stu-id="f8279-103">**Error Code**</span></span>  
   
- <span data-ttu-id="9537a-104">BEC1001、BEC2004、BEC3001</span><span class="sxs-lookup"><span data-stu-id="9537a-104">BEC1001, BEC2004, BEC3001</span></span>  
+ <span data-ttu-id="f8279-104">BEC1001、BEC2004、BEC3001</span><span class="sxs-lookup"><span data-stu-id="f8279-104">BEC1001, BEC2004, BEC3001</span></span>  
   
- <span data-ttu-id="9537a-105">**说明**</span><span class="sxs-lookup"><span data-stu-id="9537a-105">**Explanation**</span></span>  
+ <span data-ttu-id="f8279-105">**说明**</span><span class="sxs-lookup"><span data-stu-id="f8279-105">**Explanation**</span></span>  
   
- <span data-ttu-id="9537a-106">在架构编译过程中发生未指明的错误。</span><span class="sxs-lookup"><span data-stu-id="9537a-106">An unspecified fatal error has occurred during schema compilation.</span></span>  
+ <span data-ttu-id="f8279-106">在架构编译过程中发生未指明的错误。</span><span class="sxs-lookup"><span data-stu-id="f8279-106">An unspecified fatal error has occurred during schema compilation.</span></span>  
   
- <span data-ttu-id="9537a-107">**用户执行任何操作**</span><span class="sxs-lookup"><span data-stu-id="9537a-107">**User Action**</span></span>  
+ <span data-ttu-id="f8279-107">**用户执行任何操作**</span><span class="sxs-lookup"><span data-stu-id="f8279-107">**User Action**</span></span>  
   
- <span data-ttu-id="9537a-108">确保架构文件有效且未被破坏。</span><span class="sxs-lookup"><span data-stu-id="9537a-108">Make sure the schema file is valid and not corrupted.</span></span>
+ <span data-ttu-id="f8279-108">确保架构文件有效且未被破坏。</span><span class="sxs-lookup"><span data-stu-id="f8279-108">Make sure the schema file is valid and not corrupted.</span></span>

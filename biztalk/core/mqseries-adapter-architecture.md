@@ -1,5 +1,5 @@
 ---
-title: MQSeries 适配器体系结构 |Microsoft 文档
+title: MQSeries 适配器体系结构 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,20 +15,20 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: cf1d6dd42e47457cf4af83eb7b4669e872db2914
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 3d92d1b549586276e285b2ed7d11f7f995ca8476
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22263325"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65264551"
 ---
-# <a name="mqseries-adapter-architecture"></a><span data-ttu-id="d58c0-102">MQSeries 适配器体系结构</span><span class="sxs-lookup"><span data-stu-id="d58c0-102">MQSeries Adapter Architecture</span></span>
-<span data-ttu-id="d58c0-103">本部分介绍的组成部分 MQSeries 适配器以及它们进行交互时所在的方式。</span><span class="sxs-lookup"><span data-stu-id="d58c0-103">This section introduces the parts of the MQSeries adapter and the ways in which they interact.</span></span> <span data-ttu-id="d58c0-104">它还简要介绍 MQSeries 队列中的某些元素。</span><span class="sxs-lookup"><span data-stu-id="d58c0-104">It also briefly describes some elements of MQSeries queues.</span></span>  
+# <a name="mqseries-adapter-architecture"></a><span data-ttu-id="e1a31-102">MQSeries 适配器体系结构</span><span class="sxs-lookup"><span data-stu-id="e1a31-102">MQSeries Adapter Architecture</span></span>
+<span data-ttu-id="e1a31-103">本部分介绍的部分 MQSeries 适配器以及它们交互的方式。</span><span class="sxs-lookup"><span data-stu-id="e1a31-103">This section introduces the parts of the MQSeries adapter and the ways in which they interact.</span></span> <span data-ttu-id="e1a31-104">它还简要介绍了 MQSeries 队列的某些元素。</span><span class="sxs-lookup"><span data-stu-id="e1a31-104">It also briefly describes some elements of MQSeries queues.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="d58c0-105">本节内容</span><span class="sxs-lookup"><span data-stu-id="d58c0-105">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="e1a31-105">本节内容</span><span class="sxs-lookup"><span data-stu-id="e1a31-105">In This Section</span></span>  
   
--   [<span data-ttu-id="d58c0-106">MQSeries 适配器的结构</span><span class="sxs-lookup"><span data-stu-id="d58c0-106">Structure of the MQSeries Adapter</span></span>](../core/structure-of-the-mqseries-adapter.md)  
+-   [<span data-ttu-id="e1a31-106">MQSeries 适配器的结构</span><span class="sxs-lookup"><span data-stu-id="e1a31-106">Structure of the MQSeries Adapter</span></span>](../core/structure-of-the-mqseries-adapter.md)  
   
--   [<span data-ttu-id="d58c0-107">MQSeries 队列</span><span class="sxs-lookup"><span data-stu-id="d58c0-107">MQSeries Queues</span></span>](../core/mqseries-queues.md)  
+-   [<span data-ttu-id="e1a31-107">MQSeries 队列</span><span class="sxs-lookup"><span data-stu-id="e1a31-107">MQSeries Queues</span></span>](../core/mqseries-queues.md)  
   
--   [<span data-ttu-id="d58c0-108">对队列管理的支持</span><span class="sxs-lookup"><span data-stu-id="d58c0-108">Support for Queue Management</span></span>](../core/support-for-queue-management.md)
+-   [<span data-ttu-id="e1a31-108">队列管理支持</span><span class="sxs-lookup"><span data-stu-id="e1a31-108">Support for Queue Management</span></span>](../core/support-for-queue-management.md)

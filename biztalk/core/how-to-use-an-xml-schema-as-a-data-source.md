@@ -14,21 +14,21 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 7abfcd997b72cccf4cd5357a6d2c846d08069632
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7922cb3eb5af59cea1c5acf5d0ab8e8355d96e1c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37011670"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65383610"
 ---
-# <a name="how-to-use-an-xml-schema-as-a-data-source"></a><span data-ttu-id="57827-102">如何使用 XML 架构作为数据源</span><span class="sxs-lookup"><span data-stu-id="57827-102">How to Use an XML Schema as a Data Source</span></span>
-### <a name="to-specify-an-xml-schema-as-a-data-source"></a><span data-ttu-id="57827-103">指定 XML 架构作为数据源</span><span class="sxs-lookup"><span data-stu-id="57827-103">To specify an XML schema as a data source</span></span>  
+# <a name="how-to-use-an-xml-schema-as-a-data-source"></a><span data-ttu-id="9fe46-102">如何使用 XML 架构作为数据源</span><span class="sxs-lookup"><span data-stu-id="9fe46-102">How to Use an XML Schema as a Data Source</span></span>
+### <a name="to-specify-an-xml-schema-as-a-data-source"></a><span data-ttu-id="9fe46-103">若要指定 XML 架构作为数据源</span><span class="sxs-lookup"><span data-stu-id="9fe46-103">To specify an XML schema as a data source</span></span>  
   
-1. <span data-ttu-id="57827-104">在事实浏览器中，单击**XML 架构**选项卡。</span><span class="sxs-lookup"><span data-stu-id="57827-104">In the Facts Explorer, click the **XML Schemas** tab.</span></span>  
+1. <span data-ttu-id="9fe46-104">在事实浏览器中，单击**XML 架构**选项卡。</span><span class="sxs-lookup"><span data-stu-id="9fe46-104">In the Facts Explorer, click the **XML Schemas** tab.</span></span>  
   
-2. <span data-ttu-id="57827-105">右键单击**架构**文件夹，，然后单击**浏览**。</span><span class="sxs-lookup"><span data-stu-id="57827-105">Right-click the **Schemas** folder, and then click **Browse**.</span></span>  
+2. <span data-ttu-id="9fe46-105">右键单击**架构**文件夹，，然后单击**浏览**。</span><span class="sxs-lookup"><span data-stu-id="9fe46-105">Right-click the **Schemas** folder, and then click **Browse**.</span></span>  
   
-3. <span data-ttu-id="57827-106">在中**架构文件**对话框中，选择 XSD 文件，然后单击**打开**。</span><span class="sxs-lookup"><span data-stu-id="57827-106">In the **Schema Files** dialog box, select an XSD file, and then click **Open**.</span></span>  
+3. <span data-ttu-id="9fe46-106">在中**架构文件**对话框中，选择 XSD 文件，然后单击**打开**。</span><span class="sxs-lookup"><span data-stu-id="9fe46-106">In the **Schema Files** dialog box, select an XSD file, and then click **Open**.</span></span>  
   
-   <span data-ttu-id="57827-107">![事实浏览器对话框的屏幕截图。](../core/media/ebiz-bre-factsexplorer-xml.gif "ebiz_bre_factsexplorer_xml")</span><span class="sxs-lookup"><span data-stu-id="57827-107">![Screenshot of facts exlorer dialog.](../core/media/ebiz-bre-factsexplorer-xml.gif "ebiz_bre_factsexplorer_xml")</span></span>  
-   <span data-ttu-id="57827-108">浏览 XML 架构</span><span class="sxs-lookup"><span data-stu-id="57827-108">Browsing an XML Schema</span></span>
+   <span data-ttu-id="9fe46-107">![事实浏览器对话框的屏幕截图。](../core/media/ebiz-bre-factsexplorer-xml.gif "ebiz_bre_factsexplorer_xml")</span><span class="sxs-lookup"><span data-stu-id="9fe46-107">![Screenshot of facts exlorer dialog.](../core/media/ebiz-bre-factsexplorer-xml.gif "ebiz_bre_factsexplorer_xml")</span></span>  
+   <span data-ttu-id="9fe46-108">浏览 XML 架构</span><span class="sxs-lookup"><span data-stu-id="9fe46-108">Browsing an XML Schema</span></span>

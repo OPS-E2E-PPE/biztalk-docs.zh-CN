@@ -19,80 +19,80 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a6d6d488bf7431f805e8719e10fe17cef7d13fa4
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 1f188fb4b77babeb6e64260bc37004a6b15b7d28
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36982958"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65352190"
 ---
-# <a name="deleteparty-biztalk-server-sample"></a><span data-ttu-id="dea6d-102">DeleteParty （BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="dea6d-102">DeleteParty (BizTalk Server Sample)</span></span>
-<span data-ttu-id="dea6d-103">DeleteParty 示例演示如何删除指定参与方。</span><span class="sxs-lookup"><span data-stu-id="dea6d-103">The DeleteParty sample demonstrates how to delete a specified party.</span></span>  
+# <a name="deleteparty-biztalk-server-sample"></a><span data-ttu-id="bf179-102">DeleteParty （BizTalk Server 示例）</span><span class="sxs-lookup"><span data-stu-id="bf179-102">DeleteParty (BizTalk Server Sample)</span></span>
+<span data-ttu-id="bf179-103">DeleteParty 示例演示如何删除指定参与方。</span><span class="sxs-lookup"><span data-stu-id="bf179-103">The DeleteParty sample demonstrates how to delete a specified party.</span></span>  
   
 > [!WARNING]
->  <span data-ttu-id="dea6d-104">部署后，如果不再需要部署脚本，则应将其删除。</span><span class="sxs-lookup"><span data-stu-id="dea6d-104">Deployment scripts should be removed after deployment if not needed.</span></span> <span data-ttu-id="dea6d-105">应通过 ACL 确保必须保留的管理脚本和其他脚本的安全并加以密切监视。</span><span class="sxs-lookup"><span data-stu-id="dea6d-105">Administration scripts and other scripts that must remain should be secured by ACL’s and closely monitored.</span></span>  
+>  <span data-ttu-id="bf179-104">如果不需要应在部署后删除的部署脚本。</span><span class="sxs-lookup"><span data-stu-id="bf179-104">Deployment scripts should be removed after deployment if not needed.</span></span> <span data-ttu-id="bf179-105">管理脚本和其他必须保持的脚本应受 ACL 并加以密切监视。</span><span class="sxs-lookup"><span data-stu-id="bf179-105">Administration scripts and other scripts that must remain should be secured by ACL’s and closely monitored.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="dea6d-106">在删除参与方之前，必须先创建一个参与方。</span><span class="sxs-lookup"><span data-stu-id="dea6d-106">Before you can delete a party, you must first create one.</span></span> <span data-ttu-id="dea6d-107">执行操作的一种方法是运行[PartyResolution （BizTalk Server 示例）](../core/partyresolution-biztalk-server-sample.md)示例。</span><span class="sxs-lookup"><span data-stu-id="dea6d-107">One way to do this is to run the [PartyResolution (BizTalk Server Sample)](../core/partyresolution-biztalk-server-sample.md) sample.</span></span>  
+>  <span data-ttu-id="bf179-106">删除参与方之前，必须首先创建一个。</span><span class="sxs-lookup"><span data-stu-id="bf179-106">Before you can delete a party, you must first create one.</span></span> <span data-ttu-id="bf179-107">执行操作的一种方法是运行[PartyResolution （BizTalk Server 示例）](../core/partyresolution-biztalk-server-sample.md)示例。</span><span class="sxs-lookup"><span data-stu-id="bf179-107">One way to do this is to run the [PartyResolution (BizTalk Server Sample)](../core/partyresolution-biztalk-server-sample.md) sample.</span></span>  
   
-## <a name="prerequisites"></a><span data-ttu-id="dea6d-108">必要條件</span><span class="sxs-lookup"><span data-stu-id="dea6d-108">Prerequisites</span></span>  
+## <a name="prerequisites"></a><span data-ttu-id="bf179-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="bf179-108">Prerequisites</span></span>  
   
-- <span data-ttu-id="dea6d-109">您必须具有 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理权限才能使用此示例中的管理对象。</span><span class="sxs-lookup"><span data-stu-id="dea6d-109">You must have [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] administrative privileges to use the administrative objects in this sample.</span></span>  
+- <span data-ttu-id="bf179-109">您必须具有 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理权限才能使用此示例中的管理对象。</span><span class="sxs-lookup"><span data-stu-id="bf179-109">You must have [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] administrative privileges to use the administrative objects in this sample.</span></span>  
   
-- <span data-ttu-id="dea6d-110">Windows PowerShell 脚本需要 Windows PowerShell 执行策略以允许脚本执行。</span><span class="sxs-lookup"><span data-stu-id="dea6d-110">The Windows PowerShell script requires the Windows PowerShell execution policy to allow script execution.</span></span> <span data-ttu-id="dea6d-111">有关详细信息请参阅：[检查执行策略](http://go.microsoft.com/fwlink/?LinkId=128930)。</span><span class="sxs-lookup"><span data-stu-id="dea6d-111">For more information see: [Examining the Execution Policy](http://go.microsoft.com/fwlink/?LinkId=128930).</span></span>  
+- <span data-ttu-id="bf179-110">Windows PowerShell 脚本需要 Windows PowerShell 执行策略以允许脚本执行。</span><span class="sxs-lookup"><span data-stu-id="bf179-110">The Windows PowerShell script requires the Windows PowerShell execution policy to allow script execution.</span></span> <span data-ttu-id="bf179-111">有关详细信息，请参阅：[检查执行策略](http://go.microsoft.com/fwlink/?LinkId=128930)。</span><span class="sxs-lookup"><span data-stu-id="bf179-111">For more information see: [Examining the Execution Policy](http://go.microsoft.com/fwlink/?LinkId=128930).</span></span>  
   
-## <a name="what-this-sample-does"></a><span data-ttu-id="dea6d-112">本示例的用途</span><span class="sxs-lookup"><span data-stu-id="dea6d-112">What This Sample Does</span></span>  
- <span data-ttu-id="dea6d-113">本示例以 Microsoft Visual C# 编写，该示例使用 BizTalk 浏览器对象模型 (ExplorerOM) 中的对象执行下列操作：</span><span class="sxs-lookup"><span data-stu-id="dea6d-113">This sample, written in Microsoft Visual C#, using objects from the BizTalk Explorer object model (ExplorerOM), performs the following operations:</span></span>  
+## <a name="what-this-sample-does"></a><span data-ttu-id="bf179-112">本示例的用途</span><span class="sxs-lookup"><span data-stu-id="bf179-112">What This Sample Does</span></span>  
+ <span data-ttu-id="bf179-113">此示例中，Microsoft 视觉对象中写入C#，使用 BizTalk 浏览器对象模型 (ExplorerOM) 中的对象，将执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="bf179-113">This sample, written in Microsoft Visual C#, using objects from the BizTalk Explorer object model (ExplorerOM), performs the following operations:</span></span>  
   
--   <span data-ttu-id="dea6d-114">查询指定参与方。</span><span class="sxs-lookup"><span data-stu-id="dea6d-114">Query for a specified party.</span></span>  
+-   <span data-ttu-id="bf179-114">指定参与方的查询。</span><span class="sxs-lookup"><span data-stu-id="bf179-114">Query for a specified party.</span></span>  
   
--   <span data-ttu-id="dea6d-115">删除此参与方。</span><span class="sxs-lookup"><span data-stu-id="dea6d-115">Delete that party.</span></span>  
+-   <span data-ttu-id="bf179-115">删除该参与方。</span><span class="sxs-lookup"><span data-stu-id="bf179-115">Delete that party.</span></span>  
   
--   <span data-ttu-id="dea6d-116">处理所有错误，以便向用户返回有意义的信息。</span><span class="sxs-lookup"><span data-stu-id="dea6d-116">Handle any errors such that meaningful information is returned to the user.</span></span>  
+-   <span data-ttu-id="bf179-116">处理任何错误，以便向用户返回有意义的信息。</span><span class="sxs-lookup"><span data-stu-id="bf179-116">Handle any errors such that meaningful information is returned to the user.</span></span>  
   
-## <a name="where-to-find-this-sample"></a><span data-ttu-id="dea6d-117">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="dea6d-117">Where to Find This Sample</span></span>  
- <span data-ttu-id="dea6d-118">此示例将位于以下 SDK 位置：</span><span class="sxs-lookup"><span data-stu-id="dea6d-118">This sample is located in the following SDK location:</span></span>  
+## <a name="where-to-find-this-sample"></a><span data-ttu-id="bf179-117">本示例所在的位置</span><span class="sxs-lookup"><span data-stu-id="bf179-117">Where to Find This Sample</span></span>  
+ <span data-ttu-id="bf179-118">此示例将位于以下 SDK 位置：</span><span class="sxs-lookup"><span data-stu-id="bf179-118">This sample is located in the following SDK location:</span></span>  
   
- <span data-ttu-id="dea6d-119">\<*示例路径*\>\Admin\ExplorerOM\DeleteParty\\</span><span class="sxs-lookup"><span data-stu-id="dea6d-119">\<*Samples Path*\>\Admin\ExplorerOM\DeleteParty\\</span></span>  
+ <span data-ttu-id="bf179-119">\<*Samples Path*\>\Admin\ExplorerOM\DeleteParty\\</span><span class="sxs-lookup"><span data-stu-id="bf179-119">\<*Samples Path*\>\Admin\ExplorerOM\DeleteParty\\</span></span>  
   
- <span data-ttu-id="dea6d-120">下表显示了本示例中的文件及其用途说明：</span><span class="sxs-lookup"><span data-stu-id="dea6d-120">The following table shows the files in this sample and describes their purpose.</span></span>  
+ <span data-ttu-id="bf179-120">下表显示了本示例中的文件及其用途说明：</span><span class="sxs-lookup"><span data-stu-id="bf179-120">The following table shows the files in this sample and describes their purpose.</span></span>  
   
-|<span data-ttu-id="dea6d-121">文件</span><span class="sxs-lookup"><span data-stu-id="dea6d-121">File(s)</span></span>|<span data-ttu-id="dea6d-122">Description</span><span class="sxs-lookup"><span data-stu-id="dea6d-122">Description</span></span>|  
+|<span data-ttu-id="bf179-121">文件</span><span class="sxs-lookup"><span data-stu-id="bf179-121">File(s)</span></span>|<span data-ttu-id="bf179-122">Description</span><span class="sxs-lookup"><span data-stu-id="bf179-122">Description</span></span>|  
 |---------------|-----------------|  
-|<span data-ttu-id="dea6d-123">App.ico、AssemblyInfo.cs、DeleteParty.csproj、DeleteParty.sln 和 DeleteParty.cs</span><span class="sxs-lookup"><span data-stu-id="dea6d-123">App.ico, AssemblyInfo.cs, DeleteParty.csproj, DeleteParty.sln, DeleteParty.cs</span></span>|<span data-ttu-id="dea6d-124">用于生成删除指定参与方的 Visual C# 命令行应用程序的项目、解决方案和源文件。</span><span class="sxs-lookup"><span data-stu-id="dea6d-124">Project, solution, and source files for building a Visual C# command-line application that removes a specified party.</span></span>|  
+|<span data-ttu-id="bf179-123">App.ico、 AssemblyInfo.cs、 DeleteParty.csproj、 DeleteParty.sln 和 DeleteParty.cs</span><span class="sxs-lookup"><span data-stu-id="bf179-123">App.ico, AssemblyInfo.cs, DeleteParty.csproj, DeleteParty.sln, DeleteParty.cs</span></span>|<span data-ttu-id="bf179-124">项目、 解决方案和源代码文件生成视觉对象C#命令行中删除指定参与方的应用程序。</span><span class="sxs-lookup"><span data-stu-id="bf179-124">Project, solution, and source files for building a Visual C# command-line application that removes a specified party.</span></span>|  
   
-### <a name="to-build-and-initialize-this-sample"></a><span data-ttu-id="dea6d-125">构建和初始化此示例</span><span class="sxs-lookup"><span data-stu-id="dea6d-125">To build and initialize this sample</span></span>  
+### <a name="to-build-and-initialize-this-sample"></a><span data-ttu-id="bf179-125">若要生成并初始化本示例</span><span class="sxs-lookup"><span data-stu-id="bf179-125">To build and initialize this sample</span></span>  
   
-1. <span data-ttu-id="dea6d-126">在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，打开 DeleteParty.sln 解决方案文件。</span><span class="sxs-lookup"><span data-stu-id="dea6d-126">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the solution file DeleteParty.sln.</span></span>  
+1. <span data-ttu-id="bf179-126">在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，打开 DeleteParty.sln 解决方案文件。</span><span class="sxs-lookup"><span data-stu-id="bf179-126">In [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)], open the solution file DeleteParty.sln.</span></span>  
   
-2. <span data-ttu-id="dea6d-127">在“生成”  菜单上，单击“生成解决方案” 。</span><span class="sxs-lookup"><span data-stu-id="dea6d-127">On the **Build** menu, click **Build Solution**.</span></span>  
+2. <span data-ttu-id="bf179-127">在“生成”  菜单上，单击“生成解决方案” 。</span><span class="sxs-lookup"><span data-stu-id="bf179-127">On the **Build** menu, click **Build Solution**.</span></span>  
   
-### <a name="to-run-this-sample"></a><span data-ttu-id="dea6d-128">运行本示例的步骤</span><span class="sxs-lookup"><span data-stu-id="dea6d-128">To run this sample</span></span>  
+### <a name="to-run-this-sample"></a><span data-ttu-id="bf179-128">运行本示例的步骤</span><span class="sxs-lookup"><span data-stu-id="bf179-128">To run this sample</span></span>  
   
-1. <span data-ttu-id="dea6d-129">在命令窗口中，导航到下面的文件夹：</span><span class="sxs-lookup"><span data-stu-id="dea6d-129">In a command window, navigate to the following folder:</span></span>  
+1. <span data-ttu-id="bf179-129">在命令窗口中，导航到以下文件夹：</span><span class="sxs-lookup"><span data-stu-id="bf179-129">In a command window, navigate to the following folder:</span></span>  
   
-    <span data-ttu-id="dea6d-130">\<*示例路径*\>\Admin\ExplorerOM\DeleteParty\bin\Debug\\</span><span class="sxs-lookup"><span data-stu-id="dea6d-130">\<*Samples Path*\>\Admin\ExplorerOM\DeleteParty\bin\Debug\\</span></span>  
+    <span data-ttu-id="bf179-130">\<*Samples Path*\>\Admin\ExplorerOM\DeleteParty\bin\Debug\\</span><span class="sxs-lookup"><span data-stu-id="bf179-130">\<*Samples Path*\>\Admin\ExplorerOM\DeleteParty\bin\Debug\\</span></span>  
   
-2. <span data-ttu-id="dea6d-131">运行 DeleteParty.exe 文件，并传递下面两个命令行参数之一：</span><span class="sxs-lookup"><span data-stu-id="dea6d-131">Run the file DeleteParty.exe, passing one of the two following command-line arguments:</span></span>  
+2. <span data-ttu-id="bf179-131">运行 DeleteParty.exe，传递两个以下的命令行参数之一的文件：</span><span class="sxs-lookup"><span data-stu-id="bf179-131">Run the file DeleteParty.exe, passing one of the two following command-line arguments:</span></span>  
   
-   - <span data-ttu-id="dea6d-132">**\<** ***PartyName* \>。**</span><span class="sxs-lookup"><span data-stu-id="dea6d-132">**\<** ***PartyName* \>.**</span></span> <span data-ttu-id="dea6d-133">要删除的参与方的名称。</span><span class="sxs-lookup"><span data-stu-id="dea6d-133">The name of a party to be deleted.</span></span> <span data-ttu-id="dea6d-134">如果参与方名称包含空格，则将该名称置于引号中。</span><span class="sxs-lookup"><span data-stu-id="dea6d-134">If the party name contains spaces, enclose the name in quotes.</span></span>  
+   - <span data-ttu-id="bf179-132">**\<** ***PartyName* \>.**</span><span class="sxs-lookup"><span data-stu-id="bf179-132">**\<** ***PartyName* \>.**</span></span> <span data-ttu-id="bf179-133">要删除的参与方的名称。</span><span class="sxs-lookup"><span data-stu-id="bf179-133">The name of a party to be deleted.</span></span> <span data-ttu-id="bf179-134">如果参与方名称包含空格，将名称括起来。</span><span class="sxs-lookup"><span data-stu-id="bf179-134">If the party name contains spaces, enclose the name in quotes.</span></span>  
   
-   - <span data-ttu-id="dea6d-135">**/?.**</span><span class="sxs-lookup"><span data-stu-id="dea6d-135">**/?.**</span></span> <span data-ttu-id="dea6d-136">显示帮助。</span><span class="sxs-lookup"><span data-stu-id="dea6d-136">Displays help.</span></span>  
+   - <span data-ttu-id="bf179-135">**/?.**</span><span class="sxs-lookup"><span data-stu-id="bf179-135">**/?.**</span></span> <span data-ttu-id="bf179-136">显示帮助。</span><span class="sxs-lookup"><span data-stu-id="bf179-136">Displays help.</span></span>  
   
-     <span data-ttu-id="dea6d-137">例如：</span><span class="sxs-lookup"><span data-stu-id="dea6d-137">For example:</span></span>  
+     <span data-ttu-id="bf179-137">例如：</span><span class="sxs-lookup"><span data-stu-id="bf179-137">For example:</span></span>  
   
    ```  
    DeleteParty "My Party #3"  
    ```  
   
-    <span data-ttu-id="dea6d-138">-或-</span><span class="sxs-lookup"><span data-stu-id="dea6d-138">-OR-</span></span>  
+    <span data-ttu-id="bf179-138">-或-</span><span class="sxs-lookup"><span data-stu-id="bf179-138">-OR-</span></span>  
   
    ```  
    DeleteParty /?  
    ```  
   
-## <a name="windows-powershell-script-example"></a><span data-ttu-id="dea6d-139">Windows Powershell 脚本示例</span><span class="sxs-lookup"><span data-stu-id="dea6d-139">Windows Powershell Script example</span></span>  
- <span data-ttu-id="dea6d-140">以下 Windows PowerShell 脚本片段可用于演示的相同功能**ExplorerOM**类：</span><span class="sxs-lookup"><span data-stu-id="dea6d-140">The following Windows PowerShell script fragment can be used to demonstrate the same features of the **ExplorerOM** classes:</span></span>  
+## <a name="windows-powershell-script-example"></a><span data-ttu-id="bf179-139">Windows Powershell 脚本示例</span><span class="sxs-lookup"><span data-stu-id="bf179-139">Windows Powershell Script example</span></span>  
+ <span data-ttu-id="bf179-140">以下 Windows PowerShell 脚本片段可用于演示的相同功能**ExplorerOM**类：</span><span class="sxs-lookup"><span data-stu-id="bf179-140">The following Windows PowerShell script fragment can be used to demonstrate the same features of the **ExplorerOM** classes:</span></span>  
   
 ```  
   
@@ -134,7 +134,7 @@ else
 }  
 ```  
   
- <span data-ttu-id="dea6d-141">该脚本示例希望将单个参与方名称作为命令行参数来传递。</span><span class="sxs-lookup"><span data-stu-id="dea6d-141">The script example expects a single party name to be passed as a command line argument.</span></span>  <span data-ttu-id="dea6d-142">它通过名称来查找该参与方，并尝试将其删除。</span><span class="sxs-lookup"><span data-stu-id="dea6d-142">It looks for that party by name and attempts to delete it.</span></span>  <span data-ttu-id="dea6d-143">如果没有传递命令行参数给脚本，则该脚本会列出本地 Biztalk Server 上的所有参与方。</span><span class="sxs-lookup"><span data-stu-id="dea6d-143">The script will list all parties on the local Biztalk server if no commandline argument is passed to it.</span></span> <span data-ttu-id="dea6d-144">下面是该脚本的示例输出：</span><span class="sxs-lookup"><span data-stu-id="dea6d-144">Here is example output from the script:</span></span>  
+ <span data-ttu-id="bf179-141">脚本示例需要一个单个参与方名称作为命令行参数进行传递。</span><span class="sxs-lookup"><span data-stu-id="bf179-141">The script example expects a single party name to be passed as a command line argument.</span></span>  <span data-ttu-id="bf179-142">它按名称查找该参与方，并尝试将其删除。</span><span class="sxs-lookup"><span data-stu-id="bf179-142">It looks for that party by name and attempts to delete it.</span></span>  <span data-ttu-id="bf179-143">如果没有命令行参数传递给它，该脚本会列出本地 Biztalk 服务器上的所有参与方。</span><span class="sxs-lookup"><span data-stu-id="bf179-143">The script will list all parties on the local Biztalk server if no commandline argument is passed to it.</span></span> <span data-ttu-id="bf179-144">下面是脚本的示例输出：</span><span class="sxs-lookup"><span data-stu-id="bf179-144">Here is example output from the script:</span></span>  
   
 ```  
 PS C:\> .\DeletePart.ps1  
@@ -165,5 +165,5 @@ Name : Party2
   
 ```  
   
-## <a name="see-also"></a><span data-ttu-id="dea6d-145">请参阅</span><span class="sxs-lookup"><span data-stu-id="dea6d-145">See Also</span></span>  
- [<span data-ttu-id="dea6d-146">Admin-ExplorerOM（BizTalk Server 示例文件夹）</span><span class="sxs-lookup"><span data-stu-id="dea6d-146">Admin-ExplorerOM (BizTalk Server Samples Folder)</span></span>](../core/admin-explorerom-biztalk-server-samples-folder.md)
+## <a name="see-also"></a><span data-ttu-id="bf179-145">请参阅</span><span class="sxs-lookup"><span data-stu-id="bf179-145">See Also</span></span>  
+ [<span data-ttu-id="bf179-146">Admin-ExplorerOM（BizTalk Server 示例文件夹）</span><span class="sxs-lookup"><span data-stu-id="bf179-146">Admin-ExplorerOM (BizTalk Server Samples Folder)</span></span>](../core/admin-explorerom-biztalk-server-samples-folder.md)

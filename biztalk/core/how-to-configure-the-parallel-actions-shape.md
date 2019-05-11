@@ -1,5 +1,5 @@
 ---
-title: 如何配置并行操作形状 |Microsoft 文档
+title: 如何配置并行操作形状 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -21,30 +21,30 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 125d479a09eefb6771a884d2cddbfa98f34aeb36
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: f3179995031ea91243f602d554808c198863f2c9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22247797"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65386021"
 ---
-# <a name="how-to-configure-the-parallel-actions-shape"></a><span data-ttu-id="bfc3c-102">如何配置并行操作形状</span><span class="sxs-lookup"><span data-stu-id="bfc3c-102">How to Configure the Parallel Actions Shape</span></span>
-![](../core/media/ebiz-orch-paralactions.gif "ebiz_orch_paralactions")  
-<span data-ttu-id="bfc3c-103">并行操作形状</span><span class="sxs-lookup"><span data-stu-id="bfc3c-103">Parallel Actions shape</span></span>  
+# <a name="how-to-configure-the-parallel-actions-shape"></a><span data-ttu-id="50d54-102">如何配置并行操作形状</span><span class="sxs-lookup"><span data-stu-id="50d54-102">How to Configure the Parallel Actions Shape</span></span>
+<span data-ttu-id="50d54-103">![](../core/media/ebiz-orch-paralactions.gif "ebiz_orch_paralactions")</span><span class="sxs-lookup"><span data-stu-id="50d54-103">![](../core/media/ebiz-orch-paralactions.gif "ebiz_orch_paralactions")</span></span>  
+<span data-ttu-id="50d54-104">并行操作形状</span><span class="sxs-lookup"><span data-stu-id="50d54-104">Parallel Actions shape</span></span>  
   
 > [!CAUTION]
->  <span data-ttu-id="bfc3c-104">如果你将放置**终止**形状内**并行操作**形状和使用分支**终止**上运行，在实例完成立即，而不考虑是否其他分支已完成运行。</span><span class="sxs-lookup"><span data-stu-id="bfc3c-104">If you place a **Terminate** shape inside a **Parallel Actions** shape, and the branch with the **Terminate** on it is run, the instance completes immediately, regardless of whether other branches have finished running.</span></span> <span data-ttu-id="bfc3c-105">根据您的设计，在此情况下结果可能不可预测。</span><span class="sxs-lookup"><span data-stu-id="bfc3c-105">Depending on your design, results might be unpredictable in this case.</span></span>  
+>  <span data-ttu-id="50d54-105">如果将置于**Terminate**形状内**并行操作**形状，并使用分支**终止**上运行它时，该实例将立即完成，而不考虑是否其他分支完成运行。</span><span class="sxs-lookup"><span data-stu-id="50d54-105">If you place a **Terminate** shape inside a **Parallel Actions** shape, and the branch with the **Terminate** on it is run, the instance completes immediately, regardless of whether other branches have finished running.</span></span> <span data-ttu-id="50d54-106">根据你的设计，结果可能不可预测在这种情况下。</span><span class="sxs-lookup"><span data-stu-id="50d54-106">Depending on your design, results might be unpredictable in this case.</span></span>  
   
-## <a name="synchronization-of-data-access"></a><span data-ttu-id="bfc3c-106">同步数据访问</span><span class="sxs-lookup"><span data-stu-id="bfc3c-106">Synchronization of data access</span></span>  
- <span data-ttu-id="bfc3c-107">很可能该多个分支的**并行操作**形状将尝试访问相同的数据。</span><span class="sxs-lookup"><span data-stu-id="bfc3c-107">It is possible that more than one branch of a **Parallel Actions** shape will attempt to access the same data.</span></span> <span data-ttu-id="bfc3c-108">为避免出错，请将访问这些数据的所有形状都放入同步作用域。</span><span class="sxs-lookup"><span data-stu-id="bfc3c-108">To avoid errors, place any shapes that access the data inside synchronized scopes.</span></span> <span data-ttu-id="bfc3c-109">你可以指定的属性中**作用域**形状，它是同步或不为 synchronized。</span><span class="sxs-lookup"><span data-stu-id="bfc3c-109">You can specify in the properties of a **Scope** shape that it is synchronized or not synchronized.</span></span> <span data-ttu-id="bfc3c-110">有关详细信息，请参阅[作用域](../core/scopes.md)。</span><span class="sxs-lookup"><span data-stu-id="bfc3c-110">For more information, see [Scopes](../core/scopes.md).</span></span>  
+## <a name="synchronization-of-data-access"></a><span data-ttu-id="50d54-107">同步数据访问</span><span class="sxs-lookup"><span data-stu-id="50d54-107">Synchronization of data access</span></span>  
+ <span data-ttu-id="50d54-108">可能的多个分支**并行操作**形状将尝试访问相同的数据。</span><span class="sxs-lookup"><span data-stu-id="50d54-108">It is possible that more than one branch of a **Parallel Actions** shape will attempt to access the same data.</span></span> <span data-ttu-id="50d54-109">若要避免错误，将访问同步的作用域中的数据的所有形状。</span><span class="sxs-lookup"><span data-stu-id="50d54-109">To avoid errors, place any shapes that access the data inside synchronized scopes.</span></span> <span data-ttu-id="50d54-110">可以指定的属性中**作用域**形状，它是同步或不为 synchronized。</span><span class="sxs-lookup"><span data-stu-id="50d54-110">You can specify in the properties of a **Scope** shape that it is synchronized or not synchronized.</span></span> <span data-ttu-id="50d54-111">有关详细信息，请参阅[作用域](../core/scopes.md)。</span><span class="sxs-lookup"><span data-stu-id="50d54-111">For more information, see [Scopes](../core/scopes.md).</span></span>  
   
-#### <a name="to-add-a-branch-to-a-parallel-actions-shape"></a><span data-ttu-id="bfc3c-111">向并行操作形状添加分支</span><span class="sxs-lookup"><span data-stu-id="bfc3c-111">To add a branch to a Parallel Actions shape</span></span>  
+#### <a name="to-add-a-branch-to-a-parallel-actions-shape"></a><span data-ttu-id="50d54-112">若要向并行操作形状添加分支</span><span class="sxs-lookup"><span data-stu-id="50d54-112">To add a branch to a Parallel Actions shape</span></span>  
   
-1.  <span data-ttu-id="bfc3c-112">右键单击**并行操作**形状，并依次**新并行分支**。</span><span class="sxs-lookup"><span data-stu-id="bfc3c-112">Right-click the **Parallel Actions** shape, and then click **New Parallel Branch**.</span></span>  
+1.  <span data-ttu-id="50d54-113">右键单击**并行操作**形状，然后依次**新建并行分支**。</span><span class="sxs-lookup"><span data-stu-id="50d54-113">Right-click the **Parallel Actions** shape, and then click **New Parallel Branch**.</span></span>  
   
-     <span data-ttu-id="bfc3c-113">-或者-</span><span class="sxs-lookup"><span data-stu-id="bfc3c-113">—Or—</span></span>  
+     <span data-ttu-id="50d54-114">-或-</span><span class="sxs-lookup"><span data-stu-id="50d54-114">—Or—</span></span>  
   
-2.  <span data-ttu-id="bfc3c-114">将一个新形状拖到两个现有分支之间。</span><span class="sxs-lookup"><span data-stu-id="bfc3c-114">Drag a new shape between two existing branches.</span></span>  
+2.  <span data-ttu-id="50d54-115">两个现有分支之间将新形状。</span><span class="sxs-lookup"><span data-stu-id="50d54-115">Drag a new shape between two existing branches.</span></span>  
   
 > [!NOTE]
->  <span data-ttu-id="bfc3c-115">若要删除分支起源**并行操作**形状，右键单击你想要删除，，然后单击的分支**删除**。</span><span class="sxs-lookup"><span data-stu-id="bfc3c-115">To remove a branch from a **Parallel Actions** shape, right-click the branch you want to remove, and then click **Delete**.</span></span>
+>  <span data-ttu-id="50d54-116">若要删除分支起源**并行操作**形状中，右键单击你想要删除，然后单击的分支**删除**。</span><span class="sxs-lookup"><span data-stu-id="50d54-116">To remove a branch from a **Parallel Actions** shape, right-click the branch you want to remove, and then click **Delete**.</span></span>

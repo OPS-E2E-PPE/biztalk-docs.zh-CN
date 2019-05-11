@@ -1,5 +1,5 @@
 ---
-title: 附录 b： 数据类型 |Microsoft 文档
+title: 附录 B：数据类型 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -16,20 +16,20 @@ caps.latest.revision: 5
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 6062b7fe3947d368ce8173daa28527dd5a68da03
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: aa7fe2c608b68b02a3bfba4d4a93bf377e734964
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22230085"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65359527"
 ---
-# <a name="appendix-b-data-types"></a><span data-ttu-id="e1ced-102">附录 b： 数据类型</span><span class="sxs-lookup"><span data-stu-id="e1ced-102">Appendix B: Data Types</span></span>
-<span data-ttu-id="e1ced-103">本部分提供了有关使用为 Microsoft BizTalk Server 生成的架构的特定于 JD Edwards EnterpriseOne 的信息。</span><span class="sxs-lookup"><span data-stu-id="e1ced-103">This section provides JD Edwards EnterpriseOne-specific information about using generated schemas for Microsoft BizTalk Server.</span></span>  
+# <a name="appendix-b-data-types"></a><span data-ttu-id="7c6b9-102">附录 B：数据类型</span><span class="sxs-lookup"><span data-stu-id="7c6b9-102">Appendix B: Data Types</span></span>
+<span data-ttu-id="7c6b9-103">本部分提供了 JD Edwards EnterpriseOne 特定信息，有关使用 Microsoft BizTalk server 生成的架构。</span><span class="sxs-lookup"><span data-stu-id="7c6b9-103">This section provides JD Edwards EnterpriseOne-specific information about using generated schemas for Microsoft BizTalk Server.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="e1ced-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="e1ced-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="7c6b9-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="7c6b9-104">In This Section</span></span>  
   
--   [<span data-ttu-id="e1ced-105">基本类型</span><span class="sxs-lookup"><span data-stu-id="e1ced-105">Basic Types</span></span>](../core/basic-types2.md)  
+-   [<span data-ttu-id="7c6b9-105">基本类型</span><span class="sxs-lookup"><span data-stu-id="7c6b9-105">Basic Types</span></span>](../core/basic-types2.md)  
   
--   [<span data-ttu-id="e1ced-106">处理字符串值</span><span class="sxs-lookup"><span data-stu-id="e1ced-106">Handling String Values</span></span>](../core/handling-string-values2.md)  
+-   [<span data-ttu-id="7c6b9-106">处理字符串值</span><span class="sxs-lookup"><span data-stu-id="7c6b9-106">Handling String Values</span></span>](../core/handling-string-values2.md)  
   
--   [<span data-ttu-id="e1ced-107">使用 MATH_NUMERIC 类型</span><span class="sxs-lookup"><span data-stu-id="e1ced-107">Using the MATH_NUMERIC Type</span></span>](../core/using-the-math-numeric-type1.md)
+-   [<span data-ttu-id="7c6b9-107">使用 MATH_NUMERIC 类型</span><span class="sxs-lookup"><span data-stu-id="7c6b9-107">Using the MATH_NUMERIC Type</span></span>](../core/using-the-math-numeric-type1.md)
