@@ -1,5 +1,5 @@
 ---
-title: 了解 BizTalk 应用程序部署和管理 |Microsoft 文档
+title: 了解 BizTalk 应用程序部署和管理 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -24,38 +24,38 @@ caps.latest.revision: 33
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 82d9596f2f8261b35035ead291f2a7d1bb859a5e
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: 0a5b3d3a8a36b179baee2ab508915ec72d62ea52
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22286621"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65292694"
 ---
-# <a name="understanding-biztalk-application-deployment-and-management"></a><span data-ttu-id="e5779-102">了解 BizTalk 应用程序部署和管理</span><span class="sxs-lookup"><span data-stu-id="e5779-102">Understanding BizTalk Application Deployment and Management</span></span>
-<span data-ttu-id="e5779-103">本部分介绍应用程序部署和管理功能的新[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]并提供将帮助你了解如何使用这些功能来部署和管理 BizTalk 应用程序的背景信息。</span><span class="sxs-lookup"><span data-stu-id="e5779-103">This section introduces the new application deployment and management features of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and provides background information that will help you understand how to use these features to deploy and manage BizTalk applications.</span></span>  
+# <a name="understanding-biztalk-application-deployment-and-management"></a><span data-ttu-id="1c493-102">了解 BizTalk 应用程序部署和管理</span><span class="sxs-lookup"><span data-stu-id="1c493-102">Understanding BizTalk Application Deployment and Management</span></span>
+<span data-ttu-id="1c493-103">本部分介绍了应用程序部署和管理功能的新[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]，并提供将帮助你了解如何使用这些功能来部署和管理 BizTalk 应用程序的背景信息。</span><span class="sxs-lookup"><span data-stu-id="1c493-103">This section introduces the new application deployment and management features of [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] and provides background information that will help you understand how to use these features to deploy and manage BizTalk applications.</span></span>  
   
-## <a name="in-this-section"></a><span data-ttu-id="e5779-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="e5779-104">In This Section</span></span>  
+## <a name="in-this-section"></a><span data-ttu-id="1c493-104">本节内容</span><span class="sxs-lookup"><span data-stu-id="1c493-104">In This Section</span></span>  
   
--   [<span data-ttu-id="e5779-105">BizTalk 应用程序是什么？</span><span class="sxs-lookup"><span data-stu-id="e5779-105">What Is a BizTalk Application?</span></span>](../core/what-is-a-biztalk-application.md)  
+-   [<span data-ttu-id="1c493-105">BizTalk 应用程序概述</span><span class="sxs-lookup"><span data-stu-id="1c493-105">What Is a BizTalk Application?</span></span>](../core/what-is-a-biztalk-application.md)  
   
--   [<span data-ttu-id="e5779-106">应用程序部署过程</span><span class="sxs-lookup"><span data-stu-id="e5779-106">The Application Deployment Process</span></span>](../core/the-application-deployment-process.md)  
+-   [<span data-ttu-id="1c493-106">应用程序部署过程</span><span class="sxs-lookup"><span data-stu-id="1c493-106">The Application Deployment Process</span></span>](../core/the-application-deployment-process.md)  
   
--   [<span data-ttu-id="e5779-107">应用程序部署和管理功能</span><span class="sxs-lookup"><span data-stu-id="e5779-107">Application Deployment and Management Features</span></span>](../core/application-deployment-and-management-features.md)  
+-   [<span data-ttu-id="1c493-107">应用程序部署和管理功能</span><span class="sxs-lookup"><span data-stu-id="1c493-107">Application Deployment and Management Features</span></span>](../core/application-deployment-and-management-features.md)  
   
--   [<span data-ttu-id="e5779-108">应用程序部署和管理工具</span><span class="sxs-lookup"><span data-stu-id="e5779-108">Application Deployment and Management Tools</span></span>](../core/application-deployment-and-management-tools.md)  
+-   [<span data-ttu-id="1c493-108">应用程序部署和管理工具</span><span class="sxs-lookup"><span data-stu-id="1c493-108">Application Deployment and Management Tools</span></span>](../core/application-deployment-and-management-tools.md)  
   
--   [<span data-ttu-id="e5779-109">应用程序部署和管理方案</span><span class="sxs-lookup"><span data-stu-id="e5779-109">Application Deployment and Management Scenarios</span></span>](../core/application-deployment-and-management-scenarios.md)  
+-   [<span data-ttu-id="1c493-109">应用程序部署和管理方案</span><span class="sxs-lookup"><span data-stu-id="1c493-109">Application Deployment and Management Scenarios</span></span>](../core/application-deployment-and-management-scenarios.md)  
   
--   [<span data-ttu-id="e5779-110">会发生什么情况项目在应用程序部署过程</span><span class="sxs-lookup"><span data-stu-id="e5779-110">What Happens to Artifacts During Application Deployment</span></span>](../core/what-happens-to-artifacts-during-application-deployment.md)  
+-   [<span data-ttu-id="1c493-110">在应用程序部署期间对项目采取的操作</span><span class="sxs-lookup"><span data-stu-id="1c493-110">What Happens to Artifacts During Application Deployment</span></span>](../core/what-happens-to-artifacts-during-application-deployment.md)  
   
--   [<span data-ttu-id="e5779-111">应用程序部署任务</span><span class="sxs-lookup"><span data-stu-id="e5779-111">Application Deployment Tasks</span></span>](../core/application-deployment-tasks.md)  
+-   [<span data-ttu-id="1c493-111">应用程序部署任务</span><span class="sxs-lookup"><span data-stu-id="1c493-111">Application Deployment Tasks</span></span>](../core/application-deployment-tasks.md)  
   
--   [<span data-ttu-id="e5779-112">应用程序部署的安全注意事项</span><span class="sxs-lookup"><span data-stu-id="e5779-112">Security Considerations for Application Deployment</span></span>](../core/security-considerations-for-application-deployment.md)  
+-   [<span data-ttu-id="1c493-112">应用程序部署的安全注意事项</span><span class="sxs-lookup"><span data-stu-id="1c493-112">Security Considerations for Application Deployment</span></span>](../core/security-considerations-for-application-deployment.md)  
   
--   [<span data-ttu-id="e5779-113">依赖关系和应用程序部署</span><span class="sxs-lookup"><span data-stu-id="e5779-113">Dependencies and Application Deployment</span></span>](../core/dependencies-and-application-deployment.md)  
+-   [<span data-ttu-id="1c493-113">依赖关系和应用程序部署</span><span class="sxs-lookup"><span data-stu-id="1c493-113">Dependencies and Application Deployment</span></span>](../core/dependencies-and-application-deployment.md)  
   
--   [<span data-ttu-id="e5779-114">绑定文件和应用程序部署</span><span class="sxs-lookup"><span data-stu-id="e5779-114">Binding Files and Application Deployment</span></span>](../core/binding-files-and-application-deployment.md)  
+-   [<span data-ttu-id="1c493-114">绑定文件和应用程序部署</span><span class="sxs-lookup"><span data-stu-id="1c493-114">Binding Files and Application Deployment</span></span>](../core/binding-files-and-application-deployment.md)  
   
--   [<span data-ttu-id="e5779-115">必须是唯一的应用程序或组的项目</span><span class="sxs-lookup"><span data-stu-id="e5779-115">Artifacts That Must Be Unique in an Application or Group</span></span>](../core/artifacts-that-must-be-unique-in-an-application-or-group.md)  
+-   [<span data-ttu-id="1c493-115">在应用程序或组中必须唯一的项目</span><span class="sxs-lookup"><span data-stu-id="1c493-115">Artifacts That Must Be Unique in an Application or Group</span></span>](../core/artifacts-that-must-be-unique-in-an-application-or-group.md)  
   
--   [<span data-ttu-id="e5779-116">程序集安装在 gac 中</span><span class="sxs-lookup"><span data-stu-id="e5779-116">Assembly Installation in the GAC</span></span>](../core/assembly-installation-in-the-gac.md)
+-   [<span data-ttu-id="1c493-116">GAC 中的程序集安装</span><span class="sxs-lookup"><span data-stu-id="1c493-116">Assembly Installation in the GAC</span></span>](../core/assembly-installation-in-the-gac.md)
