@@ -123,7 +123,7 @@ ms.locfileid: "60164507"
   
        BizTalk Server 现已还原，并且应运行。 接下来，配置备份 BizTalk Server 作业，以开始向新目标服务器写入备份。 还应该重新配置新的目标系统。  
 
-## <a name="important"></a>重要提示**
+## <a name="important"></a>重要提示
 
 - 如果您使用规则引擎中，在还原数据库后，必须重新规则引擎更新服务的每个服务器上启动 BizTalk Server 组中。 请参见 [How to Start, Stop, Pause, Resume, or Restart BizTalk Server Services](../core/how-to-start-stop-pause-resume-or-restart-biztalk-server-services.md)。  
 - 如果您使用 BAM，现在是还原 BAM 数据库的时间。 请参见 [Backing Up and Restoring BAM](../core/backing-up-and-restoring-bam.md)。  

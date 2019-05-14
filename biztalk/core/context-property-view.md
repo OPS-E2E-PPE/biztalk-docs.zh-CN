@@ -1,5 +1,5 @@
 ---
-title: 上下文属性视图 |Microsoft 文档
+title: 上下文属性视图 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,26 +17,26 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 84a0f3a1d507e1440f67cd5f9e4afa18bff0b52a
-ms.sourcegitcommit: cb908c540d8f1a692d01dc8f313e16cb4b4e696d
+ms.openlocfilehash: b622c9a82bb199b066dc75b77822a4f0c2e06bdb
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2017
-ms.locfileid: "22237877"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65390315"
 ---
 # <a name="context-property-view"></a>上下文属性视图
-“上下文属性”视图显示与该属性相关联的 XML 消息的架构。 可以从“业务流程调度”视图中的某些形状的快捷菜单访问此视图。  
+上下文属性视图显示与属性关联的 XML 消息的架构。 该视图是可从某些业务流程调度视图中的形状的快捷菜单。  
   
 ## <a name="working-with-the-context-property-view"></a>使用上下文属性视图  
- 通过单击选择你的上下文属性视图**选择事件源**按钮并单击**选择上下文属性**菜单项。 然后，从已知上下文属性列表中选择一个上下文属性，以加载该属性的架构。 选择属性后，可以将相关架构中的元素拖到活动的数据项文件夹，以指示您希望从此操作的消息内的特定 XPath 表达式提取这些数据。  
+ 通过单击选择上下文属性视图**选择事件源**按钮，单击**选择上下文属性**菜单项。 然后从已知的上下文属性，若要加载该属性架构列表中选择上下文属性。 一旦您选择的属性，您可以将元素从关联的架构到活动的数据项文件夹以指示您希望从此操作的消息内的特定 XPath 表达式提取这些数据。  
   
- 可以从业务流程调度视图中打开上下文属性视图，方法是右键单击包含上下文属性的形状。 这将打开上下文菜单，从中你可以单击**上下文属性架构**菜单项以检索与图形相关联的上下文属性的列表。  
+ 通过右键单击包含上下文属性的形状，可以从业务流程调度视图中打开上下文属性视图。 这将打开一个上下文菜单，你可以单击**上下文属性架构**菜单项来检索与形状相关联的上下文属性的列表。  
   
- 可用的上下文属性的列表可能非常大。 如果你知道，而你要搜索的属性名称的一部分，您可以键入**中字符串**文本框中，然后单击**搜索**按钮。 搜索结果中将只显示那些包含您所输入的部分字符串的属性。  
+ 可用的上下文属性的列表可能非常大。 如果您知道要搜索的属性名称的一部分，您可以键入**字符串中**文本框中，然后单击**搜索**按钮。 这将选择包含您输入的部分字符串的那些属性。  
   
 > [!NOTE]
->  当选择从“上下文属性”视图映射时，可供选择的属性架构的列表为在 BizTalk Server 安装中配置的各个属性架构的完整列表。  您必须知道，提供的架构对您要处理的流程在运行中所使用的 BizTalk Server 的功能不敏感。 例如，当从上下文属性映射时，可以从提供的架构列表中选择 SOAP 属性的架构，但是正在运行的流程本身可能不使用 SOAP。 任何自未使用的属性映射的 BAM 活动项都会导致 BAM 捕获空数据。  
+>  当你选择从上下文属性视图映射时，潜在属性架构的列表是在 BizTalk Server 安装中配置每个属性架构的完整列表。  您必须知道提供的架构不敏感到 BizTalk Server 中的哪些功能由正在运行的进程在其使用。 例如，您可以从提供的上下文属性映射时的架构的列表中选择 SOAP 属性的架构，但正在运行的进程本身可能不使用 SOAP。 映射中未使用的属性会导致 bam 捕获的 null 或为空数据的任何 BAM 活动项。  
   
-## <a name="see-also"></a>另请参阅  
- [源事件视图是什么？](../core/what-is-the-source-event-view.md)   
+## <a name="see-also"></a>请参阅  
+ [什么是源事件视图？](../core/what-is-the-source-event-view.md)   
  [跟踪配置文件编辑器](../core/tracking-profile-editor.md)

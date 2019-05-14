@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 23d3128d8cb3298dbab7e2394d55f6c2d6ff6ac3
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7ff157896d15b99685379bef16c0b3fc87e2e76e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36971734"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65322504"
 ---
 # <a name="orchestration-variable-types"></a>业务流程变量类型
 您可以声明以下预定义类型的变量：  
@@ -28,7 +28,7 @@ ms.locfileid: "36971734"
 |-|-|-|-|  
 |boolean|byte|char|DATETIME|  
 |Decimal|double|int16|int32|  
-|int64|long|sbyte|single|  
+|int64|long|sbyte| single|  
 |string|timespan|uint16|uint32|  
 |uint64||||  
 

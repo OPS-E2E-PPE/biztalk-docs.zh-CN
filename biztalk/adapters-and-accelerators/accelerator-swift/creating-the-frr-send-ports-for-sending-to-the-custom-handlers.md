@@ -16,12 +16,12 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: ed467b149674580b9ed8921a59433c5402a24a0e
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: aeddd040dd3cfb0c423eea149a81a1395a468087
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37013934"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378387"
 ---
 # <a name="creating-the-frr-send-ports-for-sending-to-the-custom-handlers"></a>创建 FRR 发送端口将发送到自定义处理程序
 若要执行 FIN 响应对帐，需要创建一系列的发送端口，其中每个将发送一条消息 （原始消息或响应） 从[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]到的自定义处理程序处理相关的消息。  
@@ -73,11 +73,11 @@ ms.locfileid: "37013934"
     |使用此选项|执行的操作|  
     |--------------|----------------|  
     |**属性**|选择**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_SendingServiceType**。|  
-    |**“运算符”**|选择**==**。|  
+    |**“运算符”**|选择 ==。|  
     |**ReplTest1**|类型**A4SWIFT_FrrService**。|  
     |**分组**|**And**|  
     |**属性**|选择**BTS。操作**。|  
-    |**“运算符”**|选择**==**。|  
+    |**“运算符”**|选择 ==。|  
     |**ReplTest1**|一个 BTS 的类型。下表中的操作值。|  
 
      为 BTS。操作中，输入以下值之一：  
@@ -102,35 +102,35 @@ ms.locfileid: "37013934"
     |使用此选项|执行的操作|  
     |--------------|----------------|  
     |**属性**|选择**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_SendingServiceType**。|  
-    |**“运算符”**|选择**==**。|  
+    |**“运算符”**|选择 ==。|  
     |**ReplTest1**|类型**A4SWIFT_FrrService**。|  
     |**分组**|**And**|  
     |**属性**|选择**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FrrFailed**。|  
-    |**“运算符”**|选择**==**。|  
+    |**“运算符”**|选择 ==。|  
     |**ReplTest1**|类型 **，则返回 True**。|  
     |**分组**|**And**|  
     |**属性**|选择**BTS。操作**。|  
-    |**“运算符”**|选择**==**。|  
+    |**“运算符”**|选择 ==。|  
     |**ReplTest1**|类型**A4SWIFT_FrrSendMTMsg**。|  
     |**分组**|**And**|  
     |**属性**|选择**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**。|  
-    |**“运算符”**|选择**==**。|  
+    |**“运算符”**|选择 ==。|  
     |**ReplTest1**|类型 *\<NAKErrorCode\>*，如"Y01"。|  
     |**分组**|**Or**|  
     |**属性**|选择**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**。|  
-    |**“运算符”**|选择**==**。|  
+    |**“运算符”**|选择 ==。|  
     |**ReplTest1**|类型**TimedOut**。|  
     |**分组**|**Or**|  
     |**属性**|选择**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**。|  
-    |**“运算符”**|选择**==**。|  
+    |**“运算符”**|选择 ==。|  
     |**ReplTest1**|类型**TransportError**。|  
     |**分组**|**Or**|  
     |**属性**|选择**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**。|  
-    |**“运算符”**|选择**==**。|  
+    |**“运算符”**|选择 ==。|  
     |**ReplTest1**|类型**DelayedNAK**。|  
     |**分组**|**Or**|  
     |**属性**|选择**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_FRRFailedReason**。|  
-    |**“运算符”**|选择**==**。|  
+    |**“运算符”**|选择 ==。|  
     |**ReplTest1**|类型**AbortMessage**。|  
 
 12. 单击**Apply**，然后单击**确定**。  

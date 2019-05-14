@@ -1,5 +1,5 @@
 ---
-title: '演练 (EDIFACT): 接收 EDI 交换并发送回确认 |Microsoft Docs'
+title: 演练 (EDIFACT):接收 EDI 交换并发送回确认 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 4
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 2b221d47a64f603db697b99c7e5a60b1cb1a67bd
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: fae5bbda87851df48daeacf116739744153fa52d
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37018887"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65395963"
 ---
-# <a name="walkthrough-edifact-receiving-edi-interchanges-and-sending-back-an-acknowledgement"></a>演练 (EDIFACT)：接收 EDI 交换并发送回确认信息
-本演练将介绍使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 为接收 EDIFACT 交换创建解决方案的分步操作过程。 在此解决方案中，EDIFACT 交换从贸易合作伙伴 （Fabrikam) 发送到另一个贸易合作伙伴 Contoso。  
+# <a name="walkthrough-edifact-receiving-edi-interchanges-and-sending-back-an-acknowledgement"></a>演练 (EDIFACT):接收 EDI 交换并发送回确认
+本演练提供了一的分步过程，创建一个解决方案，为接收 EDIFACT 交换使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。 在此解决方案中，EDIFACT 交换从贸易合作伙伴 （Fabrikam) 发送到另一个贸易合作伙伴 Contoso。  
 
-## <a name="prerequisites"></a>必要條件  
- 必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组或 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators 组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 必须以成员的身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理员或[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]B2B Operators 组。  
 
 ## <a name="how-the-solution-receives-edifact-interchanges"></a>解决方案如何接收 EDIFACT 交换  
  该解决方案将执行以下操作：  
 
 > [!NOTE]
->  此列表中的事件可能不会按所示顺序发生。  
+>  显示的顺序可能不是此列表中的事件。  
 
 1.  接收来自贸易合作伙伴 Fabrikam 的平面文件 EDIFACT 交换。  
 
@@ -52,48 +52,48 @@ ms.locfileid: "37018887"
 10. 向 Fabrikam 发送功能确认。  
 
 ## <a name="the-functionality-in-this-solution"></a>此解决方案中的功能  
- 为进行此演练，将启用以下功能：  
+ 对于本演练的目的，将启用以下功能：  
 
 - 该解决方案专用于使用 EDIFACT 编码的交换  
 
   > [!NOTE]
-  >  有关如何创建类似的解决方案，对于 X12 交换的说明，请参阅[演练 (X12)： 接收 EDI 交换并发送回确认信息](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)。  
+  >  有关如何创建类似的解决方案，对于 X12 交换的说明，请参阅[演练 (X12):接收 EDI 交换并发送回确认](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)。  
 
-- EDI 类型和扩展的验证将在传入交换上执行。  
+- 将传入交换上执行 EDI 类型和扩展的验证。  
 
-- 将生成技术确认和功能确认，以返回给交换的发送方。  
+- 将返回到交换的发件人为生成技术和功能确认。  
 
-- 该解决方案使用传输类型为 FILE 的单向接收位置。  
+- 解决方案使用单向接收位置使用 FILE 传输类型。  
 
   > [!NOTE]
-  >  您可以使用双向要求响应接收端口和位置来接收消息，但如果这样，接收位置将无法使用 FILE 传输类型。 有关详细信息，请参阅[配置为接收 EDI 消息和确认的端口](../core/configuring-a-port-to-receive-edi-messages-and-acknowledgments.md)。  
+  >  可以使用双向要求响应接收端口和位置来接收消息，但如果这样做，您将不能为接收位置使用 FILE 传输类型。 有关详细信息，请参阅[配置为接收 EDI 消息和确认的端口](../core/configuring-a-port-to-receive-edi-messages-and-acknowledgments.md)。  
 
-- 系统将启用 EDI 报告功能，并保存事务集以便从交换状态报告进行查看。  
+- 将启用 EDI 报告，并保存事务集以从交换状态报告进行查看。  
 
-- 出于测试目的，解决方案使用三个发送端口将 EDIFACT 交换和创建的确认发送到本地文件夹。  
+- 出于测试目的，解决方案使用三个发送端口将 EDIFACT 交换和 Ack 创建发送到本地文件夹。  
 
-  下图显示了此解决方案的结构：  
+  下图显示了此解决方案的体系结构：  
 
   ![接收 EDIFACT 交换和发送确认](../core/media/edifact-walkthrough.gif "EDIFACT_Walkthrough")  
 
 ## <a name="configuring-and-testing-the-walkthrough"></a>配置和测试演练  
- 该解决方案所需的过程包括：  
+ 此解决方案所需的过程包括：  
 
-- 将必需的消息架构添加到 BizTalk 项目，然后生成并部署该项目，使 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 在处理收到的交换时可以使用相应架构。  
+- 将必需的消息架构添加到 BizTalk 项目，然后生成并部署该项目，使架构可供使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]中处理收到的交换。  
 
-- 为 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 创建一个单向接收端口，以便接收来自贸易合作伙伴的 EDIFACT 交换，并生成确认。 此接收位置与 Fabrikam 存放要发送到 Contoso 的 EDIFACT 交换的 file 文件夹相关联。  
+- 创建一个单向接收端口[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]以从贸易合作伙伴接收 EDIFACT 交换，并生成确认。 此接收位置与 Fabrikam 存放要发送到 Contoso 的 EDIFACT 交换文件文件夹相关联。  
 
   > [!NOTE]
   >  可以使用双向要求响应接收端口和位置来接收消息，但如果这样做，您将不能为接收位置使用 FILE 传输类型。  
 
-- 创建一个用于向地 Contoso 文件夹发送 EDI 交换的发送端口，以及一个用于向本地 Fabrikam 文件夹发送技术和功能确认的发送端口。  
+- 创建一个发送端口将 EDI 交换发送到一个本地 Contoso 文件夹，另一个向本地 Fabrikam 文件夹发送技术和功能确认。  
 
   > [!NOTE]
-  >  与 X12 确认不同，功能确认和技术确认的消息类型相同。 因此，使用 `BTS.MessageType` 上下文属性创建的发送端口筛选器将筛选这两种确认，并将其传递到同一文件夹。  
+  >  与 X12 确认，功能和技术确认的消息类型都相同。 因此，发送端口筛选器创建使用`BTS.MessageType`上下文属性筛选这两个确认，并将它们传递到同一文件夹。  
 
-- 为 Fabrikam 和 Contoso 创建参与方（贸易合作伙伴）。  
+- 为 Fabrikam 和 Contoso 创建参与方 （贸易合作伙伴）。  
 
-- 为两个贸易合作伙伴分别创建一个业务配置文件。  
+- 为这两个贸易合作伙伴创建业务配置文件每个。  
 
 - 创建通过配置要接收的消息的 EDI 属性的两个配置文件和确认之间的协议来发送。  
 
@@ -125,12 +125,12 @@ ms.locfileid: "37018887"
 ### <a name="configuring-the-walkthrough"></a>配置演练  
  本部分介绍配置本演练的步骤。  
 
-##### <a name="to-deploy-the-message-schema"></a>部署消息架构  
+##### <a name="to-deploy-the-message-schema"></a>若要部署的消息架构  
 
-1. 在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中，创建或打开 BizTalk 项目。  
+1. 在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，创建或打开 BizTalk 项目。  
 
    > [!NOTE]
-   >  本主题假定你已从你的应用程序添加了对包含 EDI 架构、管道和业务流程的 BizTalk EDI 应用程序的引用。 如果没有，请参阅[如何添加对 BizTalk Server EDI 应用程序的引用](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)。  
+   >  本主题假定你已从对 BizTalk EDI 应用程序，其中包含 EDI 架构、 管道和业务流程应用程序中添加了一个引用。 如果没有，请参阅[如何添加对 BizTalk Server EDI 应用程序的引用](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)。  
 
 2. 右键单击你的项目，指向**外**，然后单击**现有项**。 转到您的架构是中的文件夹[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI\EDIFACT\D98A，然后双击您的架构 (**EFACT_D98A_APERAK.xsd**)。  
 
@@ -243,7 +243,7 @@ ms.locfileid: "37018887"
    > [!NOTE]
    >  创建一个参与方时，还创建配置文件。 可以重命名，并使用该配置文件而不是创建一个新。 若要重命名配置文件，请右键单击该配置文件，然后选择**属性**。 在中**常规**页上，指定配置文件的名称。  
 
-##### <a name="to-create-an-agreement-between-the-two-business-profiles"></a>在两个业务配置文件之间创建协议  
+##### <a name="to-create-an-agreement-between-the-two-business-profiles"></a>若要创建的两个业务配置文件之间的协议  
 
 1. 右键单击**Fabrikam_Profile**，依次指向**新建**，然后单击**协议**。  
 
@@ -255,7 +255,7 @@ ms.locfileid: "37018887"
 
 5. 在中**第二个合作伙伴**部分中，从**配置文件**下拉列表中，选择**Contoso_Profile**。  
 
-    你将注意到两个新选项卡获取旁边添加**常规**选项卡。每个选项卡配置一个单向协议，每个单向协议代表消息的一次完整事务（包括消息传输和确认传输）。  
+    你将注意到两个新选项卡获取旁边添加**常规**选项卡。每个选项卡用于配置一个单向协议，每个单向协议代表消息 （包括消息传输和确认传输） 的一次完整事务。  
 
 6. 在中**常规**选项卡中，**常规属性**页上，在**公用主机设置**部分中，选择**打开报告**，，然后选择**存储消息负载以用于报告**。  
 
@@ -264,7 +264,7 @@ ms.locfileid: "37018887"
    1. 上**标识符**页**交换设置**部分中，输入限定符和标识符字段的值 (**UNB2.1**， **UNB2.2**， **UNB3.1**，和**UNB3.2**) 的测试消息中这些标头字段的值相对应。  
 
       > [!NOTE]
-      >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 要求为发送方和接收方的限定符和标识符字段输入值才能执行协议解析。 它将匹配的值**UNB2.1**， **UNB2.2**， **UNB3.1**，以及**UNB3.2**与中的属性的交换标头中协议。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 此外将通过匹配发送方限定符和标识符 （不接收方限定符和标识符） 来解析协议。 如果 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 无法解析协议，则将使用后备协议属性。  
+      >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 需要发送方和接收方限定符和标识符字段才能执行协议解析。 它将匹配的值**UNB2.1**， **UNB2.2**， **UNB3.1**，以及**UNB3.2**与中的属性的交换标头中协议。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 此外将通过匹配发送方限定符和标识符 （不接收方限定符和标识符） 来解析协议。 如果[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]不能解析协议，它将使用后备协议属性。  
       > 
       > [!NOTE]
       >  如果使用的提供作为测试消息的本主题中前面的示例消息，设置**UNB2.1**到**7654321**， **UNB2.2**到**ZZZ – 双方约定**， **UNB3.1**到**1234567**，并且**UNB3.2**到**ZZZ – 双方约定**。  
@@ -296,12 +296,12 @@ ms.locfileid: "37018887"
 
        |          使用此选项           |                                执行的操作                                 |
        |-----------------------------|---------------------------------------------------------------------------|
-       |         **Default**         |                            选择**默认**。                            |
+       |         **默认**         |                            选择**默认**。                            |
        | **对于消息类型 UNH2.1** |         选择你的测试消息的消息类型**APERAK**。         |
        |         **UNH2.2**          |                       输入 EDI 版本， **D**。                       |
        |         **UNH2.3**          |                    输入发行版号**98A**。                     |
        |         **UNH2.5**          |                         您可以将其留空。                         |
-       |    **目标命名空间**     |          选择**<http://schemas.microsoft.com/Edi/Edifact>**。           |
+       |    **目标命名空间**     |          选择 <http://schemas.microsoft.com/Edi/Edifact>。           |
        |          **UNG1**           |               指定功能组 ID **INVOIC**。                |
        |         **UNG2.1**          |         为应用程序发送方标识输入的值。          |
        |         **UNG2.1**          | 输入一个值，为应用程序发送方代码限定符，例如**ZZZ**。 |
@@ -320,9 +320,9 @@ ms.locfileid: "37018887"
    >  在本演练中，我们指定的选项卡中所需的值，以便可以成功创建协议。 若要成功创建协议，两个单向协议选项卡必须具有定义为值**UNG2.1**， **UNG2.2**， **UNG3.1**，和**UNG3.2**.  
 
    > [!NOTE]
-   >  即使确认是相同消息事务的一部分，应如何生成确认相关的属性中配置**Contoso-> Fabrikam**选项卡。这是必需的因为确认上下文属性发送方和接收方限定符设置为在指定的值相反**Contoso-> Fabrikam**选项卡。例如，如果发送方和接收方标识符设置为 7654321 和在 1234567 **Fabrikam-> Contoso**选项卡中，发送方和接收方上下文属性将设置为 1234567 和 7654321 确认中。 通常情况下，其他单向协议选项卡还会发送方和接收方的标识符分别设置为 1234567 和 7654321。 因此，确认消息将解析为该协议，并且将提取属性设置。 因此，如果你想要让确认使用不同的元素分隔符或如果想要让确认使用 CR LF，指定的属性中**Contoso-> Fabrikam**选项卡。  
+   >  即使确认是相同消息事务的一部分，应如何生成确认相关的属性中配置**Contoso-> Fabrikam**选项卡。这是必需的因为确认上下文属性发送方和接收方限定符设置为在指定的值相反**Contoso-> Fabrikam**选项卡。例如，如果发送方和接收方标识符设置为 7654321 和在 1234567 **Fabrikam-> Contoso**选项卡中，发送方和接收方上下文属性将设置为 1234567 和 7654321 确认中。 通常情况下，其他单向协议选项卡还会发送方和接收方的标识符分别设置为 1234567 和 7654321。 因此，确认消息将解析为该协议并将有选择地设置的属性。 因此，如果你想要让确认使用不同的元素分隔符或如果想要让确认使用 CR LF，指定的属性中**Contoso-> Fabrikam**选项卡。  
    >   
-   >  从概念上讲，将从任何单向协议选项卡上提取具有与确认上下文属性中设置的相同发件人和接收方限定符的确认的属性。 但是，为了便于实际使用，你通常会在你创建的交换将解析为的协议的其他单向协议选项卡中设置此属性。  
+   >  从概念上讲，确认属性将有选择地从任何单向协议选项卡中具有相同的发送方和接收方限定符的确认上下文属性中设置。 但是，对于便于实际使用，可以将通常设置这在您创建该交换将解析到协议的其他单向协议选项卡中。  
 
    1.  上**标识符**页**交换设置**部分中，输入限定符和标识符字段的值 (**UNG2.1**， **UNG2.2**， **UNG3.1**，和**UNG3.2**) 的测试消息中这些标头字段的值相对应。  
 
@@ -331,21 +331,21 @@ ms.locfileid: "37018887"
 
 9. 单击 **“应用”**。  
 
-10. 单击“确定” 。 中列出新添加的协议**协议**一部分**参与方和业务配置文件**窗格。 默认情况下，启用新添加的协议。  
+10. 单击“确定” 。 中列出新添加的协议**协议**一部分**参与方和业务配置文件**窗格。 默认情况下启用新添加的协议。  
 
 ### <a name="testing-the-walkthrough"></a>测试演练  
  本部分提供有关如何测试演练的信息。  
 
 ##### <a name="to-test-the-walkthrough"></a>若要测试演练  
 
-1. 在 Windows 资源管理器中，将测试 EDI 交换放置到本地接收文件夹中。  
+1. 在 Windows 资源管理器拖放测试 EDI 交换到本地接收文件夹中。  
 
    > [!NOTE]
-   >  对于测试消息，您可以使用本主题前面提供的示例消息。 将消息复制到文本文件，并使用 .txt 扩展名保存文件。 如果使用此消息，则必须部署 EFACT_D98A_APERAK.xsd 架构。 架构是可通过执行**MicrosoftEdiXSDTemplates.exe**文件 （位于 \XSD_Schema\EDI 文件夹中） 将该架构解压缩到默认文件夹。 然后可以在 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI\EDIFACT\D98A 下找到 EFACT_D98A_APERAK.xsd 架构。  
+   >  对于测试消息，可以使用本主题中前面提供的示例消息。 将消息复制到一个文本文件并带.txt 扩展名保存文件。 如果您使用此消息，则必须部署 EFACT_D98A_APERAK.xsd 架构。 架构是可通过执行**MicrosoftEdiXSDTemplates.exe**文件 （位于 \XSD_Schema\EDI 文件夹中） 将该架构解压缩到默认文件夹。 找到 EFACT_D98A_APERAK.xsd 架构位于然后下[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI\EDIFACT\D98A。  
 
-2. 打开与交换的发送端口关联的文件夹，并验证该文件夹是否包含 EDI 交换。  
+2. 打开与交换的发送端口关联的文件夹，并验证它包含 EDI 交换。  
 
-3. 打开与确认的发送端口关联的文件夹，并验证该文件夹是否包含技术确认和功能确认。  
+3. 打开与确认的发送端口关联的文件夹，并验证它包含技术和功能确认。  
 
 ## <a name="see-also"></a>请参阅  
  [开发和配置 BizTalk Server EDI 解决方案](../core/developing-and-configuring-biztalk-server-edi-solutions.md)

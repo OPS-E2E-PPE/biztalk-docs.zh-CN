@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: fa6e5f92bcb1ddd579b70912b98fc0f08165bca6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 7ca498313f74ac863cfb8d3c3846cb590cddebe8
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36975374"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65528984"
 ---
 # <a name="use-the-oracle-database-adapter-with-sharepoint"></a>使用包含 SharePoint 的 Oracle 数据库适配器
 WCF 适配器服务开发向导为[!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]使 Oracle 数据库和用于 Oracle E-business Suite 的 Microsoft BizTalk 适配器来直接被作为 Microsoft SharePoint 中外部数据源可以使用 Microsoft BizTalk 适配器。 使用启动添加服务开发向导支持此功能**WCF 适配器服务**模板，用于创建新 Visual C# Web 站点中[!INCLUDE[btsVStudioNoVersion_md](../../includes/btsvstudionoversion-md.md)]。 该模板是附带[!INCLUDE[adapterpacknoversion_md](../../includes/adapterpacknoversion-md.md)]。 此外必须安装 Microsoft Windows Communication Foundation (WCF) 业务线 (LOB) 适配器 SDK。  
@@ -29,13 +29,13 @@ WCF 适配器服务开发向导为[!INCLUDE[btsVStudioNoVersion_md](../../includ
   
 - **读取：** ReadItem_ 操作支持。  
   
-- **更新时间：** UpdateItem_ 操作支持。  
+- **更新：** UpdateItem_ 操作支持。  
   
 - **删除：** DeleteItem_ 操作支持。  
   
 - **查询：** ReadList 操作支持。  
   
-- **关联：** Associate_ 操作支持。  
+- **将相关联：** Associate_ 操作支持。  
   
   下面的服务协定使用生成的 Microsoft BizTalk 适配器对 Oracle 数据库作为示例。 适配器已配置为提供访问权限的 EMP 表  
   

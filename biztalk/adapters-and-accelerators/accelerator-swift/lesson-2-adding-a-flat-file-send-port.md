@@ -1,5 +1,5 @@
 ---
-title: 第 2 课： 添加平面文件发送端口 |Microsoft Docs
+title: 第 2 课：添加平面文件发送端口 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -17,14 +17,14 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 90b08dd8083e78d1e7cd98e8e8f705ac23d9bd17
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: dc7a9be734f2b4f360dd006492a9c9298bd0658b
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36997318"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377492"
 ---
-# <a name="lesson-2-adding-a-flat-file-send-port"></a>第 2 课： 添加平面文件发送端口
+# <a name="lesson-2-adding-a-flat-file-send-port"></a>第 2 课：添加平面文件发送端口
 在本课程中，你可以配置发送端口和发送位置。 使用发送端口以定义要发送的消息的方式。 您还创建了发送的消息文件文件夹位置。  
 
 ### <a name="to-add-a-flat-file-send-port"></a>若要添加平面文件发送端口  
@@ -53,7 +53,7 @@ ms.locfileid: "36997318"
     |   使用此选项   |           执行的操作            |
     |--------------|---------------------------------|
     | **属性** | 选择**BTS。ReceivePortName**。 |
-    | **“运算符”** |         选择**==**。          |
+    | **“运算符”** |         选择 ==。          |
     |  **ReplTest1**   | 类型**MT103_XML_ReceivePort**。 |
 
 
@@ -61,4 +61,4 @@ ms.locfileid: "36997318"
 
 12. 在中**发送端口**窗格中，右键单击**MT103_FlatFile_SendPort**，然后单击**启动**。  
 
-    请继续执行[模块 5： 添加平面文件接收位置和 XML 发送端口](../../adapters-and-accelerators/accelerator-swift/module-5-adding-a-flat-file-receive-location-and-xml-send-port.md)。
+    请继续执行[模块 5:添加平面文件接收位置和 XML 发送端口](../../adapters-and-accelerators/accelerator-swift/module-5-adding-a-flat-file-receive-location-and-xml-send-port.md)。

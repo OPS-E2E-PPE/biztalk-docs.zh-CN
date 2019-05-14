@@ -1,5 +1,5 @@
 ---
-title: 步骤 7： 实现 Echo 适配器的同步出站处理程序 |Microsoft Docs
+title: 步骤 7：实现 Echo 适配器的同步出站处理程序 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,24 +12,24 @@ caps.latest.revision: 17
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: e44c26c1708f54cceeb979cf20e5c43a95528a54
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 591b30f97fdfbe4c014f67b0be4b6ef1182765b8
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36979462"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65363158"
 ---
-# <a name="step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter"></a>步骤 7： 实现 Echo 适配器的同步出站处理程序
+# <a name="step-7-implement-the-synchronous-outbound-handler-for-the-echo-adapter"></a>步骤 7：实现 Echo 适配器的同步出站处理程序
 ![步骤 7 9](../../adapters-and-accelerators/wcf-lob-adapter-sdk/media/step-7of9.gif "Step_7of9")  
   
- **完成时间：** 30 分钟  
+ **若要完成的时间：** 30 分钟  
   
  在此步骤中，将实现 Echo 适配器的同步出站功能。 根据[!INCLUDE[afproductnameshort](../../includes/afproductnameshort-md.md)]，以支持同步的出站功能，必须实现`Microsoft.ServiceModel.Channels.Common.IOutboundHandler`接口。 Echo 适配器[!INCLUDE[afdevwizardnameshort](../../includes/afdevwizardnameshort-md.md)]自动生成一个名为 EchoAdapterOutboundHandler 的派生的类。  
   
  在以下部分中，你将更新 EchoAdapterOutboundHandler 类，以获取更好地了解如何实现`Microsoft.ServiceModel.Channels.Common.IOutboundHandler.Execute%2A`、 如何分析传入的 WCF 请求消息，以及如何生成传出的 WCF 响应消息。  
   
-## <a name="prerequisites"></a>必要條件  
- 在开始此步骤之前，你必须已成功完成[步骤 6： 实现 Echo 适配器的元数据解析处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter.md)。 基本熟悉`Microsoft.ServiceModel.Channels.Common.IOutboundHandler`也会有所帮助。  
+## <a name="prerequisites"></a>先决条件  
+ 在开始此步骤之前，你必须已成功完成[步骤 6:实现 Echo 适配器的元数据解析处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter.md)。 基本熟悉`Microsoft.ServiceModel.Channels.Common.IOutboundHandler`也会有所帮助。  
   
 ## <a name="the-ioutboundhandler-interface"></a>IOutboundHandler 接口  
  `Microsoft.ServiceModel.Channels.Common.IOutboundHandler`定义为：  
@@ -146,7 +146,7 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
     return null;              
     ```  
   
-4.  现在，添加**ExecuteEchoStrings**方法以处理字符串 [] EchoStrings （字符串数据） 操作。 此帮助器函数读取 WCF 请求消息，检查，以查看 echoInUpperCase URI 元素是否已设置为 true;如果是这样，它会将输入的字符串转换为大写无数次，指示计数变量中。 然后，它生成 WCF 响应消息的格式为： \<EchoStringsResponse\>\<EchoStringResult\>\<字符串\>{数据}\</string\> \</EchoStringResult\>\</EchoStringsResponse\>。  
+4.  现在，添加**ExecuteEchoStrings**方法以处理字符串 [] EchoStrings （字符串数据） 操作。 此帮助器函数读取 WCF 请求消息，检查，以查看 echoInUpperCase URI 元素是否已设置为 true;如果是这样，它会将输入的字符串转换为大写无数次，指示计数变量中。 然后，它生成 WCF 响应消息的格式为：\<EchoStringsResponse\>\<EchoStringResult\>\<字符串\>{数据}\</字符串\>\</EchoStringResult\> \</EchoStringsResponse\>。  
   
     ```csharp  
     private Message ExecuteEchoStrings(ParameterizedOperationMetadata om, Message message, TimeSpan timeout)  
@@ -188,7 +188,7 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-5.  继续通过添加**ExecuteEchoGreetings**方法以处理 EchoGreetings 操作。 此帮助器函数读取 WCF 请求消息时，解析操作并通过键入`ResolveOperationMetadata`并`ResolveTypeMetadata`方法的`Microsoft.ServiceModel.Channels.Common.IMetadataResolverHandler`接口，并生成 WCF 响应消息使用的格式： \<EchoGreetingsResponse\>\<EchoGreetingsResult\>...消息...\</EchoGreetingsResult\>\</EchoGreetingsResponse\>。  
+5.  继续通过添加**ExecuteEchoGreetings**方法以处理 EchoGreetings 操作。 此帮助器函数读取 WCF 请求消息时，解析操作并通过键入`ResolveOperationMetadata`并`ResolveTypeMetadata`方法的`Microsoft.ServiceModel.Channels.Common.IMetadataResolverHandler`接口，并生成 WCF 响应消息使用的格式：\<EchoGreetingsResponse\>\<EchoGreetingsResult\>...消息。\</EchoGreetingsResult\>\</EchoGreetingsResponse\>。  
   
     ```csharp  
     private Message ExecuteEchoGreetings(ParameterizedOperationMetadata om, Message message, TimeSpan timeout)  
@@ -233,7 +233,7 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
     }  
     ```  
   
-6.  现在，添加**ExecuteEchoCustomGreetingFromFile**方法以处理 EchoCustomGreetingFromFile 操作。 此帮助器函数读取 WCF 请求消息，从指定的文件，读取消息，然后生成 WCF 响应消息使用的格式： \<EchoGreetingsFromFileResponse\> \<EchoGreetingsFromFileResult\>...消息...\</EchoGreetingsFromFileResult\>\</EchoGreetingsFromFileResponse\>。  
+6.  现在，添加**ExecuteEchoCustomGreetingFromFile**方法以处理 EchoCustomGreetingFromFile 操作。 此帮助器函数读取 WCF 请求消息，从指定的文件，读取消息，然后生成 WCF 响应消息使用的格式：\<EchoGreetingsFromFileResponse\>\<EchoGreetingsFromFileResult\>...消息。\</EchoGreetingsFromFileResult\>\</EchoGreetingsFromFileResponse\>。  
   
     ```csharp  
     private Message ExecuteEchoCustomGreetingFromFile(OperationMetadata om, Message message, TimeSpan timeout)  
@@ -276,7 +276,7 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
   
 7.  在 Visual Studio 中，在**文件**菜单上，单击**全部保存**。  
   
-8.  在“生成”  菜单上，单击“生成解决方案” 。 它应编译错误。 如果没有，请确保您已按照上述每个步骤。 现在，可以安全地关闭 Visual Studio，或继续[步骤 8： 实现 Echo 适配器的同步入站处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)。  
+8.  在“生成”  菜单上，单击“生成解决方案” 。 它应编译错误。 如果没有，请确保您已按照上述每个步骤。 现在，可以安全地关闭 Visual Studio，或继续[步骤 8:实现 Echo 适配器的同步入站处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)。  
   
 ## <a name="what-did-i-just-do"></a>我只需做了什么？  
  在此步骤中，您学习了如何实现 Echo 适配器的同步出站消息传递功能。 若要执行此操作，应实现`Microsoft.ServiceModel.Channels.Common.IOutboundHandler.Execute%2A`方法的`Microsoft.ServiceModel.Channels.Common.IOutboundHandler`。 此方法分析传入的 WCF 请求消息，执行必要的操作，然后生成传出的 WCF 响应消息。  
@@ -287,5 +287,5 @@ public interface IOutboundHandler : IConnectionHandler, IDisposable
 生成并部署 Echo 适配器。  
   
 ## <a name="see-also"></a>请参阅  
- [步骤 6： 实现 Echo 适配器的元数据解析处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter.md)   
+ [步骤 6：实现 Echo 适配器的元数据解析处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-6-implement-the-metadata-resolve-handler-for-the-echo-adapter.md)   
  [步骤 8：实现 Echo 适配器的同步入站处理程序](../../adapters-and-accelerators/wcf-lob-adapter-sdk/step-8-implement-the-synchronous-inbound-handler-for-the-echo-adapter.md)

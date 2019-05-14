@@ -1,5 +1,5 @@
 ---
-title: 演练 (X12)： 发送批处理 EDI 交换 |Microsoft Docs
+title: 演练 (X12):发送批处理 EDI 交换 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,111 +12,111 @@ caps.latest.revision: 54
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 25a17a950cf857c21fe9f7d913ba58a5a68c4512
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 29ea3dd93d237fe87a9a8f7a5dd61d44ac2ab284
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36973214"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65279572"
 ---
-# <a name="walkthrough-x12-sending-batched-edi-interchanges"></a>演练 (X12)：发送批处理 EDI 交换
-本演练提供了一组使用 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 为在参与方间发送批处理 EDI 交换创建解决方案的分步操作过程。  
+# <a name="walkthrough-x12-sending-batched-edi-interchanges"></a>演练 (X12):发送批处理 EDI 交换
+本演练提供了为到另一个使用来自一个参与方发送批处理的 EDI 交换创建解决方案的分步操作过程一[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]。  
 
-## <a name="prerequisites"></a>必要條件  
- 必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组或 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators 组成员的身份登录。  
+## <a name="prerequisites"></a>先决条件  
+ 必须以成员的身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理员或[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]B2B Operators 组。  
 
-## <a name="how-the-solution-sends-batched-edi-interchanges"></a>解决方案如何发送批处理 EDI 交换  
+## <a name="how-the-solution-sends-batched-edi-interchanges"></a>解决方案如何发送批处理的 EDI 交换  
  该解决方案将执行以下操作：  
 
 1. 接收位置接收 EDI 交换**参与方 A**。  
 
    > [!NOTE]
-   >  此列表中的事件可能不会按所示顺序发生。  
+   >  显示的顺序可能不是此列表中的事件。  
 
-2. 接收管道将 EDI 格式的交换转换为内部 XML 格式。 接收管道确定要对交换进行批处理。 因此，BatchMarkerReceivePipeline 组件会升级 `EDI.ToBeBatched==True` 和 `EDI.BatchId` 属性。 然后，它将交换放入 MessageBox 中。  
+2. 接收管道将 EDI 格式的交换转换为内部 XML 格式。 接收管道确定交换为要进行批处理。 因此，BatchMarkerReceivePipeline 组件会升级`EDI.ToBeBatched==True`和`EDI.BatchId`属性。 然后，它将放入 MessageBox 交换。  
 
-3. 批处理业务流程从 MessageBox 检索收到的交换，因为它基于 `EDI.ToBeBatched==True` 和 `EDI.BatchId==%BatchID%` 订阅该消息。  
+3. 批处理业务流程从 MessageBox 检索收到的交换，因为它订阅基于消息`EDI.ToBeBatched==True`和`EDI.BatchId==%BatchID%`。  
 
-4. 接收位置接收来自发送第一个交换的同一参与方的第二个 EDI 交换。  
+4. 接收位置从同一发送的第一个交换的参与方接收第二个 EDI 交换。  
 
-5. 接收位置按照第 2 步中的说明处理交换，然后将交换放入 MessageBox 中。  
+5. 接收位置处理如下所示步骤 2，交换，然后存放到 MessageBox 的交换。  
 
-6. 批处理业务流程按照第 3 步中的说明检索交换。  
+6. 批处理业务流程检索如步骤 3 中所示的交换。  
 
-7. 在满足释放条件之后（释放条件定义了交换是如何匹配的），批处理业务流程就会组装包含所有交换的交换，然后升级 `EDI.ToBeBatched==False`、`EDI.BatchName` 和 `EDI.DestinationPartyName` 上下文属性。 它将批处理交换放入 MessageBox 中。  
+7. 发布后满足条件 （释放条件定义了如何交换具有要进行匹配），批处理业务流程就会组装包含所有交换，并将然后升级`EDI.ToBeBatched==False`， `EDI.BatchName` 和`EDI.DestinationPartyName`上下文属性。 它将放入 MessageBox 批处理的交换。  
 
-8. 发送端口通过订阅上下文属性 `EDI.ToBeBatched`==False、`EDI.BatchName` 和 `EDI.DestinationPartyName` 来提取批处理交换。  
+8. 发送端口通过订阅上下文属性提取批处理交换`EDI.ToBeBatched`= = False，`EDI.BatchName`和`EDI.DestinationPartyName`。  
 
 9. 发送管道对批处理交换的信封应用其他属性，然后将交换发送到目标参与方**参与方 B**。  
 
     > [!NOTE]
     >  有关详细信息，请参阅[装配批处理的 EDI 交换](../core/assembling-a-batched-edi-interchange.md)。  
 
-   下图显示出此解决方案的结构。  
+   下图显示了此解决方案的体系结构。  
 
    ![发送批处理 EDI 交换](../core/media/93a09e3c-476d-4bd2-a0e3-b5b219858791.gif "93a09e3c-476d-4bd2-a0e3-b5b219858791")  
 
 ## <a name="the-functionality-in-this-solution"></a>此解决方案中的功能  
- 为进行此演练，将启用以下功能：  
+ 对于本演练的目的，将启用以下功能：  
 
--   该解决方案专用于使用 X12 编码而不是 EDIFACT 编码的交换。  
-
-    > [!NOTE]
-    >  用于 HIPAA 和 EDIFACT 编码的配置与用于 X12 编码的配置几近相同。  
-
--   将不会返回技术确认或功能确认来响应最初接收的交换或发送的任何批处理交换。  
+-   该解决方案专用于使用 X12 编码而不是 EDIFACT 交换编码。  
 
     > [!NOTE]
-    >  有关生成 EDI 确认的信息，请参阅[演练 (X12)： 接收 EDI 交换并发送回确认信息](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)。  
+    >  用于 HIPAA 和 EDIFACT 编码的配置是近与用于 X12 编码。  
 
--   该解决方案使用一个单向接收端口和一个静态单向发送端口。 将使用 FILE 传输类型配置这些端口。  
+-   不会返回确认技术或功能确认以响应最初接收的交换或发送任何批处理的交换。  
+
+    > [!NOTE]
+    >  有关生成 EDI 确认的信息，请参阅[演练 (X12):接收 EDI 交换并发送回确认](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)。  
+
+-   此解决方案使用一个单向接收端口和一个静态单向发送端口。 将使用 FILE 传输类型配置这些端口。  
 
 -   将启用 EDI 报告。  
 
--   将保存事务集以从交换状态报告进行查看。  
+-   事务集将保存以从交换状态报告进行查看。  
 
 ## <a name="configuring-and-testing-the-walkthrough"></a>配置和测试演练  
- 该解决方案所需的过程包括：  
+ 此解决方案所需的过程包括：  
 
-- 将必需的消息架构添加到 BizTalk 项目，然后生成并部署该项目，以使架构可供 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 在处理消息时使用。  
+- 将必需的消息架构添加到 BizTalk 项目，然后生成并部署该项目，使架构可供使用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]在处理消息。  
 
 - 更新中的 SQL 适配器的轮询间隔**BatchControlMessageReccvLoc**接收位置，以便批处理业务流程将立即激活单击时**启动**按钮发送将激活批处理业务流程实例的控制消息。  
 
-- 为 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 创建一个接收端口，以从参与方接收 EDI X12 编码的 .txt 输入消息。  
+- 创建接收端口的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]接收 EDI X12 编码的.txt 输入消息从参与方。  
 
-- 为参与方 A 和参与方 B 创建一个参与方（贸易合作伙伴）。  
+- 为参与方 A 和参与方 B 创建参与方 （贸易合作伙伴）  
 
-- 为两个贸易合作伙伴分别创建一个业务配置文件。  
+- 为这两个贸易合作伙伴创建业务配置文件每个。  
 
-- 通过配置要接收的消息的 EDI 属性，在两个配置文件之间创建一个协议。 为要发送的批处理消息配置 EDI 属性。 对于此解决方案，只要收到两个 850 交换，就会配置这些协议，以便 BizTalk Server 向参与方 B 发送批。  
+- 创建通过配置要接收的消息的 EDI 属性的两个配置文件之间的协议。 配置要发送的批处理消息的 EDI 属性。 对于此解决方案，配置这些协议，以便 BizTalk Server 将发送批处理到参与方 B 只要收到两个 850 交换。  
 
-- 为 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 创建一个发送端口来将批处理 EDI 交换发送到贸易合作伙伴。 此发送端口将是一个静态单向发送端口。  
+- 创建发送端口的[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]向贸易合作伙伴发送批处理的 EDI 交换。 此发送端口将是一个静态单向发送端口。  
 
-- 将发送端口与处理交换并对其进行批量处理的协议相关联。  
+- 将发送端口与处理交换并对其进行批量的协议相关联。  
 
-- 将两个测试 EDI 交换放入与接收位置关联的本地文件夹，并验证 BizTalk Server 是否已将批处理交换放入与发送端口关联的文件夹。  
+- 两个测试 EDI 交换放入与接收位置相关联，并验证 BizTalk Server 已放入与发送端口关联的文件夹的批处理的交换的本地文件夹。  
 
 ### <a name="configuring-the-walkthrough"></a>配置演练  
  本部分介绍配置本演练的步骤。  
 
-##### <a name="to-deploy-the-message-schema"></a>部署消息架构  
+##### <a name="to-deploy-the-message-schema"></a>若要部署的消息架构  
 
-1. 在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中，创建或打开 BizTalk 项目。  
+1. 在[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，创建或打开 BizTalk 项目。  
 
    > [!NOTE]
-   >  本主题假定你已从你的应用程序添加了对包含 EDI 架构、管道和业务流程的 BizTalk EDI 应用程序的引用。 如果没有，请参阅[如何添加对 BizTalk Server EDI 应用程序的引用](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)。  
+   >  本主题假定你已从对 BizTalk EDI 应用程序，其中包含 EDI 架构、 管道和业务流程应用程序中添加了一个引用。 如果没有，请参阅[如何添加对 BizTalk Server EDI 应用程序的引用](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)。  
 
-2. 右键单击你的项目，指向**外**，然后单击**现有项**。 移动到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI\X12\00401，然后双击与测试消息对应的架构。  
+2. 右键单击你的项目，指向**外**，然后单击**现有项**。 将移动到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]XSD_Schema\EDI\X12\00401，然后双击与测试消息对应的架构。  
 
    > [!NOTE]
    >  如果 EDI 架构尚未解压缩到 \XSD_Schema\EDI 文件夹，则执行**MicrosoftEdiXSDTemplates.exe** \XSD_Schema\EDI 文件夹将架构解压缩到默认文件夹中的文件。  
    > 
    > [!NOTE]
-   >  对于测试消息，您可以使用在 EDI 接口开发人员教程中使用的 850 示例消息。 此文件是中的 SamplePO.txt [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\\。 如果要这样做，您必须使用位于 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\Inbound_EDI 的架构 x12_00401_850.xsd。  
+   >  对于测试消息，可以使用用于 EDI 接口开发人员教程的 850 示例消息。 此文件是中的 SamplePO.txt [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\\。 如果这样做，则必须使用 x12_00401_850.xsd 架构位于[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\Inbound_EDI。  
 
 3. 设置程序集密钥文件，然后生成并部署该程序集。  
 
-##### <a name="to-update-the-polling-interval"></a>更新轮询间隔  
+##### <a name="to-update-the-polling-interval"></a>若要更新的轮询间隔  
 
 1. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，打开**BizTalk 组**，**应用程序**， **BizTalk EDI 应用程序**节点，和**接收位置**节点。 下**接收位置**节点，右键单击**BatchControlMessageRecvLoc**，然后单击**属性**。  
 
@@ -129,7 +129,7 @@ ms.locfileid: "36973214"
 
 4. 单击**确定**，然后单击**确定**试。  
 
-##### <a name="to-create-a-one-way-receive-port-to-receive-the-edi-messages-to-be-batched"></a>创建接收要进行批处理的 EDI 消息的单向接收端口  
+##### <a name="to-create-a-one-way-receive-port-to-receive-the-edi-messages-to-be-batched"></a>若要创建一个单向接收端口以接收要进行批处理的 EDI 消息  
 
 1. 创建用于接收要进行批处理的 EDI 消息的本地文件夹。  
 
@@ -151,7 +151,7 @@ ms.locfileid: "36973214"
 
 10. 在控制台树中，单击**接收位置**。 在中**接收位置**窗格中，右键单击将接收位置，然后依次**启用**。  
 
-##### <a name="to-create-a-party-and-a-business-profile-for-party-a"></a>为参与方 A 创建团队和业务配置文件  
+##### <a name="to-create-a-party-and-a-business-profile-for-party-a"></a>若要为参与方 A 创建一个参与方和业务配置文件  
 
 1. 右键单击**参与方**中的节点[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，依次指向**新建**，然后单击**方**。  
 
@@ -167,7 +167,7 @@ ms.locfileid: "36973214"
    > [!NOTE]
    >  创建一个参与方时，还创建配置文件。 可以重命名，并使用该配置文件而不是创建一个新。 若要重命名配置文件，请右键单击该配置文件，然后选择**属性**。 在中**常规**页上，指定配置文件的名称。  
 
-##### <a name="to-create-a-party-and-a-business-profile-for-party-b"></a>为参与方 B 创建团队和业务配置文件  
+##### <a name="to-create-a-party-and-a-business-profile-for-party-b"></a>若要为参与方 B 创建一个参与方和业务配置文件  
 
 1. 右键单击**参与方**中的节点[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，依次指向**新建**，然后单击**方**。  
 
@@ -183,7 +183,7 @@ ms.locfileid: "36973214"
    > [!NOTE]
    >  创建一个参与方时，还创建配置文件。 可以重命名，并使用该配置文件而不是创建一个新。 若要重命名配置文件，请右键单击该配置文件，然后选择**属性**。 在中**常规**页上，指定配置文件的名称。  
 
-##### <a name="to-create-an-agreement-between-the-two-business-profiles"></a>在两个业务配置文件之间创建协议  
+##### <a name="to-create-an-agreement-between-the-two-business-profiles"></a>若要创建的两个业务配置文件之间的协议  
 
 1. 右键单击**PartyA_Profile**，依次指向**新建**，然后单击**协议**。  
 
@@ -195,7 +195,7 @@ ms.locfileid: "36973214"
 
 5. 在中**第二个合作伙伴**部分中，从**配置文件**下拉列表中，选择**PartyB_Profile**。  
 
-    你将注意到两个新选项卡获取旁边添加**常规**选项卡。每个选项卡配置一个单向协议，每个单向协议代表消息的一次完整事务（包括消息传输和确认传输）。  
+    你将注意到两个新选项卡获取旁边添加**常规**选项卡。每个选项卡用于配置一个单向协议，每个单向协议代表消息 （包括消息传输和确认传输） 的一次完整事务。  
 
 6. 在中**常规**选项卡中，**常规属性**页上，在**公用主机设置**部分中，选择**打开报告**，，然后选择**存储消息负载以用于报告**。  
 
@@ -204,7 +204,7 @@ ms.locfileid: "36973214"
    1. 上**标识符**页**交换设置**部分中，输入限定符和标识符字段的值 (**ISA5**， **ISA6**， **ISA7**，并**ISA8**) 的测试消息中这些标头字段的值相对应。  
 
       > [!NOTE]
-      >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 要求为发送方和接收方的限定符和标识符字段输入值才能执行协议解析。 它将匹配的值**ISA5**， **ISA6**， **ISA7**，以及**ISA8**与协议属性中的交换标头中。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 此外将通过匹配发送方限定符和标识符 （不接收方限定符和标识符） 来解析协议。 如果 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 无法解析协议，则将使用后备协议属性。  
+      >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 需要发送方和接收方限定符和标识符字段才能执行协议解析。 它将匹配的值**ISA5**， **ISA6**， **ISA7**，以及**ISA8**与协议属性中的交换标头中。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 此外将通过匹配发送方限定符和标识符 （不接收方限定符和标识符） 来解析协议。 如果[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]不能解析协议，它将使用后备协议属性。  
       > 
       > [!NOTE]
       >  如果将"EDI 接口开发人员教程"中的 SamplePO.txt 文件用作测试消息，设置**ISA5**到**ZZ**， **ISA6**到**THEM**， **ISA7**到**ZZ**，并**ISA8**到**美国**。  
@@ -241,20 +241,20 @@ ms.locfileid: "36973214"
 
       |       使用此选项       |                                                                                                                                    执行的操作                                                                                                                                    |
       |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-      |     **Default**      |   选择**默认**。 **注意：** 选择此行作为默认值的值**GS1**， **GS2**， **GS3**， **GS7**，和**GS8**使用即使的值**事务类型**，**版本/发行版**，并且**目标命名空间**不是消息的匹配项。    |
+      |     **默认**      |   选择**默认**。 **注意：** 选择此行作为默认值的值**GS1**， **GS2**， **GS3**， **GS7**，并**GS8**是即使使用的值**事务类型**，**版本/发行版**，并**目标命名空间**不是消息的匹配项。    |
       | **事务类型** |                                                                                                     选择你的测试消息的消息类型**850 – 采购订单**。                                                                                                      |
       | **版本/发行版**  |                                                                                                                        输入 EDI 版本， **00401**。                                                                                                                         |
-      | **目标命名空间** |                                                                                                         选择**<http://schemas.microsoft.com/BizTalk/Edi/X12/2006>**。                                                                                                          |
+      | **目标命名空间** |                                                                                                         选择 <http://schemas.microsoft.com/BizTalk/Edi/X12/2006>。                                                                                                          |
       |       **GS1**        |                                                                                           验证是否已选中的测试消息的消息类型， **PO-采购订单 (850)**。                                                                                           |
       |       **GS2**        |                                                                                                      例如，应用程序发送方输入的值**Purchasing**。                                                                                                      |
       |       **GS3**        |                                                                                                    例如，应用程序接收方输入的值**OrderControl**。                                                                                                    |
-      |       **GS4**        | 选择所需的日期格式。 **注意：** 需要下拉列表中选择一个值，而不仅仅是单击该字段以显示默认值。 如果你仅单击字段，而没有从下拉列表中选择值，则实际上并未选择值。 |
+      |       **GS4**        | 选择所需的日期格式。 **注意：** 您必须下拉列表中选择一个值，而不仅仅是单击该字段以显示默认值。 如果您单击字段而无需从下拉列表中选择值，该值将不实际选择。 |
       |       **GS5**        |                                                                                                                      选择所需的时间格式。                                                                                                                       |
       |       **GS7**        |                                                                                                                选择**X-公认的标准委员会 X12**。                                                                                                                |
       |       **GS8**        |                                                                                                             验证已输入 EDI 版本， **00401**。                                                                                                             |
 
       > [!NOTE]
-      >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将设置 GS01、 GS02、 GS03、 GS04、 GS05、 GS07 和基于为输入的值对出站确认的 GS08**事务类型**，**版本/发行版**，和**目标命名空间**。 发送管道尝试将事务集类型、X12 版本和目标命名空间与消息标头中的对应值相匹配。 如果成功，它将使用与关联的 GS 值**事务类型**，**版本/发行版**，并**目标命名空间**值。  
+      >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 将设置 GS01、 GS02、 GS03、 GS04、 GS05、 GS07 和基于为输入的值对出站确认的 GS08**事务类型**，**版本/发行版**，和**目标命名空间**。 发送管道将尝试匹配事务集类型、 X12 版本和消息的标头中的相应值的目标命名空间。 如果成功，它将使用与关联的 GS 值**事务类型**，**版本/发行版**，并**目标命名空间**值。  
 
 8. 在执行以下任务**参与-> PartyA**选项卡。  
 
@@ -268,11 +268,11 @@ ms.locfileid: "36973214"
 
 9. 单击 **“应用”**。  
 
-10. 单击“确定” 。 中列出新添加的协议**协议**一部分**参与方和业务配置文件**窗格。 默认情况下，启用新添加的协议。  
+10. 单击“确定” 。 中列出新添加的协议**协议**一部分**参与方和业务配置文件**窗格。 默认情况下启用新添加的协议。  
 
-##### <a name="to-create-a-static-one-way-send-port-to-send-the-batched-edi-interchange"></a>创建静态单向发送端口以发送批处理 EDI 交换  
+##### <a name="to-create-a-static-one-way-send-port-to-send-the-batched-edi-interchange"></a>若要创建静态单向发送端口以发送批处理的 EDI 交换  
 
-1. 创建要将批处理 EDI 消息发送到的本地文件夹。  
+1. 创建要发送到批处理的 EDI 消息的本地文件夹。  
 
 2. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，右键单击**发送端口**节点下的**BizTalk Application 1**节点，指向**新建**，然后单击**静态单向发送端口。**  
 
@@ -298,7 +298,7 @@ ms.locfileid: "36973214"
 
 10. 在控制台树中，单击**发送端口**。 在中**发送端口**窗格中，右键单击您的发送端口，然后依次**启动**。  
 
-##### <a name="to-associate-the-send-port-with-the-agreement-created-for-batching"></a>将发送端口与为进行批处理创建的协议相关联  
+##### <a name="to-associate-the-send-port-with-the-agreement-created-for-batching"></a>若要进行批处理创建的协议相关联的发送端口  
 
 1.  右键单击先前创建的协议，然后单击**属性**。  
 
@@ -313,19 +313,19 @@ ms.locfileid: "36973214"
 
 ##### <a name="to-test-the-walkthrough"></a>若要测试演练  
 
-1. 在 Windows 资源管理器中，打开与接收位置关联的本地文件夹，然后将测试 EDI 交换放入该文件夹。  
+1. 在 Windows 资源管理器，打开与接收位置关联的本地文件夹并将测试 EDI 交换放入该文件夹。  
 
    > [!NOTE]
-   >  对于测试消息，您可以使用在 EDI 接口开发人员教程中使用的 850 示例消息。 此文件是中的 SamplePO.txt [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\\。 如果要这样做，您必须使用位于 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\Inbound_EDI 的架构 x12_00401_850.xsd。  
+   >  对于测试消息，可以使用用于 EDI 接口开发人员教程的 850 示例消息。 此文件是中的 SamplePO.txt [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\\。 如果这样做，则必须使用 x12_00401_850.xsd 架构位于[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\EDI Interface Developer Tutorial\Inbound_EDI。  
 
 2. 测试 EDI 交换的第二个副本放入该文件夹中。  
 
-3. 打开与交换的发送端口关联的文件夹，并打开批处理交换。 验证交换是否包含一组 ISA 和 GS 标头以及两个事务集。  
+3. 打开与交换的发送端口关联的文件夹并打开批处理的交换。 验证该交换包含一组 ISA 和 GS 标头和两个事务集。  
 
 ## <a name="see-also"></a>请参阅  
  [开发和配置 BizTalk Server EDI 解决方案](../core/developing-and-configuring-biztalk-server-edi-solutions.md)   
  [配置传出批](../core/configuring-an-outgoing-batch.md)   
  [装配批处理的 EDI 交换](../core/assembling-a-batched-edi-interchange.md)   
  [装配批处理的 EDI 交换](../core/assembling-a-batched-edi-interchange.md)   
- [演练 (X12)： 接收 EDI 交换并发送回确认信息](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)   
- [演练 (X12)：发送 EDI 交换](../core/walkthrough-x12-sending-edi-interchanges.md)
+ [演练 (X12):接收 EDI 交换并发送回确认](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)   
+ [演练 (X12):发送 EDI 交换](../core/walkthrough-x12-sending-edi-interchanges.md)

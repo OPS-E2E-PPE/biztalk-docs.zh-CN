@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 807ebe51580a8139453b6116e03c84de71a16988
-ms.sourcegitcommit: 208d033f269a579012c756dafa5b71ffbee73911
+ms.openlocfilehash: 52d044df9e8a57b3c9e48d64eaa62567c48bc523
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2018
-ms.locfileid: "35324187"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401240"
 ---
 # <a name="biztalk-technical-guides"></a>BizTalk 技术指南
 

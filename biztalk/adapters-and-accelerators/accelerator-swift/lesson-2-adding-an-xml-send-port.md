@@ -1,5 +1,5 @@
 ---
-title: 第 2 课： 添加 XML 发送端口 |Microsoft Docs
+title: 第 2 课：添加 XML 发送端口 |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -15,14 +15,14 @@ caps.latest.revision: 7
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 63d955b46ca007aea7ea74960e756520a82f43b6
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: ac2a76fc7c614fbaed34845ae8c9f8f8bec69b4e
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37005326"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65377404"
 ---
-# <a name="lesson-2-adding-an-xml-send-port"></a>第 2 课： 添加 XML 发送端口
+# <a name="lesson-2-adding-an-xml-send-port"></a>第 2 课：添加 XML 发送端口
 使用发送端口以定义要发送的消息的方式。 在本课程中，您可以创建用于定义应如何发送 XML 消息的发送端口。  
 
 ### <a name="to-add-an-xml-send-port"></a>若要添加 XML 发送端口  
@@ -49,7 +49,7 @@ ms.locfileid: "37005326"
    |   使用此选项   |              执行的操作              |
    |--------------|--------------------------------------|
    | **属性** |   选择**BTS。ReceivePortName**。    |
-   | **“运算符”** |            选择**==**。            |
+   | **“运算符”** |            选择 ==。            |
    |  **ReplTest1**   | 类型**MT103_FlatFile_ReceivePort**。 |
    |  **分组**   |           选择**和**。            |
 
@@ -59,7 +59,7 @@ ms.locfileid: "37005326"
     |使用此选项|执行的操作|  
     |--------------|----------------|  
     |**属性**|选择**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_Failed**|  
-    |**“运算符”**|选择**==**。|  
+    |**“运算符”**|选择 ==。|  
     |**ReplTest1**|类型**False**为有效的消息。|  
 
     > [!NOTE]
@@ -70,4 +70,4 @@ ms.locfileid: "37005326"
 
 12. 在 BizTalk Server 管理控制台中，在**发送端口**，右键单击**MT103_XML_SendPort**，然后单击**启动**。  
 
-    请继续执行[模块 6： 部署业务规则](../../adapters-and-accelerators/accelerator-swift/module-6-deploying-the-business-rules.md)。
+    请继续执行[模块 6:部署业务规则](../../adapters-and-accelerators/accelerator-swift/module-6-deploying-the-business-rules.md)。

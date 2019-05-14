@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: a1074e2c526efb07597c0bb31dba891d2d6ce951
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 8b381e869597c11281f715ba0d05d504671cd062
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37012342"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65401705"
 ---
 # <a name="using-biztalk-adapter-tracing"></a>使用 BizTalk 适配器跟踪
 本主题介绍如何安装 Trace Log 工具以及如何启用 BizTalk 适配器跟踪。  
@@ -71,10 +71,10 @@ ms.locfileid: "37012342"
   
     例如，请键入以下命令，然后按 Enter：  
   
-    **trace-tools"C:\Program Files\Microsoft SDKs\Windows\v6.0\Bin"**  
+    **trace -tools "C:\Program Files\Microsoft SDKs\Windows\v6.0\Bin"**  
   
    > [!NOTE]
-   >  **-tools** 开关向 Trace.cmd 文件指明 Tracelog.exe 文件的位置。  
+   >   **-tools** 开关向 Trace.cmd 文件指明 Tracelog.exe 文件的位置。  
    >   
    >  如果成功运行该命令，输出结果将类似于以下内容：  
    >   
@@ -90,15 +90,15 @@ ms.locfileid: "37012342"
   
 2. 在命令提示符下，键入以下命令，然后按 Enter：  
   
-    **跟踪-启动**  
+    **trace -start**  
   
 3. 重现要捕获其跟踪输出的方案。  
   
 4. 在命令提示符下，键入以下命令，然后按 Enter：  
   
-    **跟踪-停止**  
+    **trace -stop**  
   
-5. 停止跟踪，名为的二进制文件之后**Btstrace.bin**的文件夹中生成其中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]安装。  
+5. 停止跟踪之后，将在安装 **的文件夹中生成一个名为** Btstrace.bin [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 的二进制文件。  
   
 6. 将 **Btstrace.bin** 文件发送到 Microsoft 产品支持服务部门进行分析。  
   

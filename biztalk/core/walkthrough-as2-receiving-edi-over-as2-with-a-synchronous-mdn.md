@@ -1,5 +1,5 @@
 ---
-title: '演练 (AS2): 使用同步 MDN 通过 AS2 接收 EDI |Microsoft Docs'
+title: 演练 (AS2):使用同步 MDN 通过 AS2 接收 EDI |Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2017
 ms.prod: biztalk-server
@@ -12,104 +12,104 @@ caps.latest.revision: 53
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 971620284a8058663f7c054cd6286cbd01d81d84
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 4486a45acb9d5a6fd9ed67ca23fa503e41b1d27c
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37024011"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65320753"
 ---
-# <a name="walkthrough-as2-receiving-edi-over-as2-with-a-synchronous-mdn"></a>演练 (AS2)：使用同步 MDN 通过 AS2 接收 EDI
-本演练将介绍创建一个通过 AS2 传输方法接收 EDI 消息并返回异步 MDN 的解决方案的分步操作过程。  
+# <a name="walkthrough-as2-receiving-edi-over-as2-with-a-synchronous-mdn"></a>演练 (AS2):使用同步 MDN 通过 AS2 接收 EDI
+本演练介绍创建通过 AS2 传输，返回异步 Mdn 接收 EDI 消息的解决方案的一组的分步过程。  
 
-## <a name="prerequisites"></a>必要條件  
- 以下为执行本主题中步骤的前提条件：  
+## <a name="prerequisites"></a>先决条件  
+ 以下是执行本主题中的过程的先决条件：  
 
-- 必须以 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 管理员组或 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] B2B Operators 组成员的身份登录。  
+- 必须以成员的身份登录[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理员或[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]B2B Operators 组。  
 
-- 运行演练的计算机必须安装了 Internet 信息服务 (IIS)。  
+- 运行此演练的计算机必须具有 Internet 信息服务 (IIS) 7 安装。  
 
-- 如果运行此演练的计算机安装了 64 位版本的 Windows，则您必须确保 BizTalk 主机标记只能为 32 位。 此外必须确保 IIS 已启用 32 位应用程序设置，应用程序池设置为 **，则返回 True**。 有关详细信息，请参阅[教程 3: AS2 教程](../core/tutorial-3-as2-tutorial.md)。  
+- 如果使用 64 位版本的 Windows 安装运行此演练的计算机，则必须确保 BizTalk 主机仅标记为 32 位。 此外必须确保 IIS 已启用 32 位应用程序设置，应用程序池设置为 **，则返回 True**。 有关详细信息，请参阅[教程 3:AS2 教程](../core/tutorial-3-as2-tutorial.md)。  
 
-## <a name="how-the-solution-receives-an-edias2-message-and-returns-a-synchronous-mdn"></a>解决方案如何接收 EDI/AS2 消息并返回同步 MDN  
- 该解决方案可进行以下操作：  
+## <a name="how-the-solution-receives-an-edias2-message-and-returns-a-synchronous-mdn"></a>该解决方案如何接收 EDI/AS2 消息并返回同步 MDN  
+ 该解决方案将执行以下操作：  
 
 1. 接收一个 AS2 消息，其中包含 EDI 从贸易合作伙伴 Fabrikam 通过 HTTP 交换并对来自 ediint/as2 的交换进行解码。  
 
    > [!NOTE]
-   >  此列表中的事件可能不会按所示顺序发生。  
+   >  显示的顺序可能不是此列表中的事件。  
 
 2. 返回同步 MDN 给贸易合作伙伴使用请求-响应接收端口。  
 
 3. 将 EDI 格式的交换转换为内部 XML 格式，并将其放入 MessageBox。  
 
-4. 具有 PassThruTransmit 管道的 FILE 发送端口将提取消息 XML 文件。  
+4. 具有 PassThruTransmit 管道的 FILE 发送端口提取消息 XML 文件。  
 
 5. 发送端口将 EDI 交换 XML 文件发送到 Contoso 参与方的文件夹。  
 
-   下图显示出此解决方案的结构。  
+   下图显示了此解决方案的体系结构。  
 
    ![使用同步 MDN 的 AS2 接收](../core/media/4ff20070-1c36-42e5-af14-832771d63b88.gif "4ff20070-1c36-42e5-af14-832771d63b88")  
 
 ## <a name="the-functionality-in-this-solution"></a>此解决方案中的功能  
- 本演练的功能具有以下特点：  
+ 以下内容适用于本演练的功能：  
 
--   不会生成 EDI 确认。 生成 EDI 确认进行了演示[演练 (X12)： 接收 EDI 交换并发送回确认信息](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)。 通过 AS2 传输发送 EDI 确认中所述[演练 (AS2): 使用同步 MDN 通过 AS2 发送 EDI](../core/walkthrough-as2-sending-edi-over-as2-with-a-synchronous-mdn.md)。  
+-   不会生成 EDI 确认。 生成 EDI 确认进行了演示[演练 (X12):接收 EDI 交换并发送回确认](../core/walkthrough-x12--receive-edi-interchanges-and-send-back-an-acknowledgement.md)。 中介绍了通过 AS2 传输发送 EDI 确认[演练 (AS2):使用同步 MDN 通过 AS2 发送 EDI](../core/walkthrough-as2-sending-edi-over-as2-with-a-synchronous-mdn.md)。  
 
--   该解决方案专用于使用 X12 编码而不是 EDIFACT 编码的交换。  
+-   该解决方案专用于使用 X12 编码而不是 EDIFACT 交换编码。  
 
     > [!NOTE]
-    >  用于 EDIFACT 编码的配置与用于 X12 编码的配置几近相同。  
+    >  用于 EDIFACT 编码的配置是近与用于 X12 编码。  
 
--   EDI 类型和扩展的验证将在传入交换上执行。  
+-   将传入交换上执行 EDI 类型和扩展的验证。  
 
--   系统将启用 AS2 和 EDI 报告功能，并保存事务集以从交换状态报告进行查看。  
+-   将启用 AS2 和 EDI 报告，并保存事务集以从交换状态报告进行查看。  
 
--   此解决方案不在不可否认数据库中配置签名、压缩、加密或消息存储。 有关配置这些属性的过程，请参阅[配置 AS2 属性](../core/configuring-as2-properties.md)。  
+-   此解决方案不会在不可否认数据库中配置签名、 压缩、 加密或消息存储。 有关配置这些属性的过程，请参阅[配置 AS2 属性](../core/configuring-as2-properties.md)。  
 
 ## <a name="configuring-and-testing-the-walkthrough"></a>配置和测试演练  
- 该解决方案所需的过程包括：  
+ 此解决方案所需的过程包括：  
 
-- 使用所需的消息架构生成并部署 BizTalk 项目，并将 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 设置为在处理接收的交换时使用这些架构。  
+- 生成和部署具有必需的消息架构，使架构可供使用的 BizTalk 项目[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]中处理收到的交换。  
 
-- 启用接收 AS2 消息时使用的 BTS ISAPI 筛选器。  
+- 启用接收 AS2 消息中使用的 BTS ISAPI 筛选器。  
 
-- 按照接收位置中的配置，创建一个用于从 Fabrikam 接收 AS2 消息的 Contoso 虚拟目录。  
+- 创建一个用于从 Fabrikam 接收 AS2 消息的 Contoso 虚拟目录，如接收位置中的配置。  
 
 - 指定 Contoso 虚拟目录不由 Windows SharePoint Services 托管。  
 
-- 为 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 创建一个静态双向 HTTP 接收端口以从贸易合作伙伴接收包含有 EDI 交换的 AS2 消息，并发送 MDN 响应。 将接收管道配置为 AS2EDIReceive 管道，将发送管道配置为 AS2Send 管道。  
+- 创建一个静态双向 HTTP 接收端口[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]以接收包含 EDI 交换的贸易合作伙伴的 AS2 消息并发送 MDN 响应。 接收管道配置为 AS2EDIReceive 管道和发送管道为 AS2Send 管道。  
 
-- 创建静态单向 FILE 发送端口以将 EDI 负载（XML 格式）发送到本地文件夹。 创建本地文件夹。  
+- 创建静态单向 FILE 发送端口以将 （采用 XML 格式） 的 EDI 负载路由到本地文件夹。 创建本地文件夹。  
 
-- 为 Fabrikam 和 Contoso 创建参与方（贸易合作伙伴）。  
+- 为 Fabrikam 和 Contoso 创建参与方 （贸易合作伙伴）。  
 
 - 为这两个贸易参与方创建业务配置文件每个。  
 
-- 在 Fabrikam 和 Contoso 的业务配置文件之间创建一个 AS2 协议。 AS2 协议应包含用于发送 AS2 消息并接收返回的同步 MDN 的属性。  
+- 创建 AS2 协议的业务配置文件，Fabrikam 和 Contoso 之间。 包含属性，以发送 AS2 消息，且接收返回同步 MDN 的 AS2 协议。  
 
 - 创建 X12 协议的业务配置文件，Fabrikam 和 Contoso 之间接收 X12 消息。  
 
-- AS2 教程文件中通过附带的 HTTP 发送方实用工具中测试解决方案。 该实用工具通过 AS2 传输方法发送一条包含有 EDI 交换的测试 AS2 消息（X12_00401_864-Sync.edi，也包括在 AS2 教程中）。 您必须对教程中附带的 HTTP 发送程序和测试消息进行修改。 这些更改将在以下相关各节进行介绍。  
+- AS2 教程文件中通过附带的 HTTP 发送方实用工具中测试解决方案。 此实用程序将发送一个测试通过 AS2 传输 (X12_00401_864-Sync.edi，还随附在 AS2 教程) 包含有 EDI 交换的 AS2 消息。 您必须修改 HTTP 发件人和测试消息从本教程中的版本。 这些更改相关的以下各节所述。  
 
 ### <a name="configuring-the-walkthrough"></a>配置演练  
  本部分介绍配置本演练的步骤。  
 
-##### <a name="to-deploy-the-message-schema"></a>部署消息架构  
+##### <a name="to-deploy-the-message-schema"></a>若要部署的消息架构  
 
-1. 在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中，打开项目 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\AS2 Tutorial\Schemas\Schemas.btproj。  
-
-   > [!NOTE]
-   >  此项目随 AS2 教程一起提供，其中包括一个 864 架构以与测试消息一起使用。  
+1. 在中[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，打开项目[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\AS2 Tutorial\Schemas\Schemas.btproj。  
 
    > [!NOTE]
-   >  本主题假定你已从你的应用程序添加了对包含 EDI 架构、管道和业务流程的 BizTalk EDI 应用程序的引用。 如果没有，请参阅[如何添加对 BizTalk Server EDI 应用程序的引用](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)。  
+   >  此 AS2 教程附带的项目包括一个 864 架构以与测试消息一起使用。  
+
+   > [!NOTE]
+   >  本主题假定你已从对 BizTalk EDI 应用程序，其中包含 EDI 架构、 管道和业务流程应用程序中添加了一个引用。 如果没有，请参阅[如何添加对 BizTalk Server EDI 应用程序的引用](http://msdn.microsoft.com/library/7af066fb-372f-4709-b566-c8d6b4a9d782)。  
 
 2. 右键单击**架构**项目在解决方案资源管理器，并单击**属性**。 单击**签名**选项卡在项目设计器中，检查**程序集签名**复选框，并从下拉列表中选择**新建**并提供所需的值来创建强名称密钥文件。 保存所做的更改并关闭项目属性窗口。  
 
 3. 生成并部署 Schemas.btproj。  
 
-##### <a name="to-enable-the-bts-isapi-filter"></a>启用 BTS ISAPI 筛选器  
+##### <a name="to-enable-the-bts-isapi-filter"></a>若要启用 BTS ISAPI 筛选器  
 
 1. 单击**启动**，依次指向**所有程序**，指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**.  
 
@@ -133,14 +133,14 @@ ms.locfileid: "37024011"
 
 8. 单击**确定**并在提示是否允许 ISAPI 扩展，请单击**是**。  
 
-##### <a name="to-configure-the-contoso-web-page"></a>配置 Contoso 网页  
+##### <a name="to-configure-the-contoso-web-page"></a>若要配置 Contoso 网页  
 
 1. 在 IIS 管理器中，右键单击**应用程序池**，然后选择**添加应用程序池**。  
 
 2. 在中**添加应用程序池**对话框框中，输入**BizTalkAppPool**中**名称**，然后选择 **.NET Framework V4.0.30210**中 **.NET framework 版本**下拉列表中。 单击“确定” 。  
 
    > [!NOTE]
-   >  根据计算机上安装的 [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] 版本，.NET Framework 的版本可能会有所不同。  
+   >  版本号可能会有所不同，具体取决于版本的[!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]在计算机上安装。  
 
 3. 选择**应用程序池**，在功能视图中，选择**BizTalkAppPool**，然后单击**高级设置**中**操作**窗格。  
 
@@ -164,12 +164,12 @@ ms.locfileid: "37024011"
 
 13. 在中**身份验证**页上，选择**匿名身份验证**，并验证**状态**是**已启用**。 如果**状态**是**禁用**，单击**启用**中**操作**窗格。  
 
-##### <a name="to-specify-that-your-virtual-directory-is-not-managed-by-windows-sharepoint-services"></a>指定虚拟目录不由 Windows SharePoint Services 托管  
+##### <a name="to-specify-that-your-virtual-directory-is-not-managed-by-windows-sharepoint-services"></a>若要指定虚拟目录不由 Windows SharePoint Services 托管  
 
 1.  如果您的计算机上安装 Windows SharePoint Services，请单击**启动**，依次指向**所有程序**，指向**管理工具**，然后单击**SharePoint 3.0 管理中心**。  
 
     > [!NOTE]
-    >  如果用于设置演练的同一计算机上还安装了 Windows SharePoint Server，则此过程是必需的。 在该情况下，您必须指定 IIS 虚拟目录不由 Windows SharePoint Server 托管。  
+    >  如果您设置演练了在同一台计算机上安装 Windows SharePoint 服务器，则需要此过程。 在这种情况下，必须指定 IIS 虚拟目录未正在由 Windows SharePoint Server 托管。  
 
 2.  上**Central Administration**页面上，在**管理中心**，单击**应用程序管理**。  
 
@@ -177,7 +177,7 @@ ms.locfileid: "37024011"
 
 4.  中**定义管理路径**页面上，在**添加新路径**，然后在**路径**文字框中，输入**Contoso**。 下**类型**，单击**排除的路径**，然后单击**确定**。  
 
-##### <a name="to-create-a-receive-port-to-receive-the-edi-over-as2-message-and-return-an-mdn"></a>创建通过 AS2 消息接收 EDI 并返回 MDN 的接收端口  
+##### <a name="to-create-a-receive-port-to-receive-the-edi-over-as2-message-and-return-an-mdn"></a>若要创建用于通过 AS2 消息接收 EDI 并返回 MDN 的接收端口  
 
 1. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，右键单击**接收端口**节点下的**BizTalk Application 1**节点，指向**新建**，然后单击**请求-响应接收端口**。  
 
@@ -199,7 +199,7 @@ ms.locfileid: "37024011"
 
 10. 在中**接收位置**窗格中的 BizTalk Server 管理控制台中，右键单击该接收位置，并单击**启用**。  
 
-##### <a name="to-create-a-send-port-to-send-the-edi-payload-to-a-local-folder"></a>创建用于将 EDI 负载发送到本地文件夹的发送端口  
+##### <a name="to-create-a-send-port-to-send-the-edi-payload-to-a-local-folder"></a>若要创建发送端口以将 EDI 负载发送到本地文件夹  
 
 1. 在 Windows 资源管理器，创建名为的本地文件夹**EDI_to_Contoso**用于接收 EDI 负载。  
 
@@ -249,7 +249,7 @@ ms.locfileid: "37024011"
    > [!NOTE]
    >  创建一个参与方时，还创建配置文件。 可以重命名，并使用该配置文件而不是创建一个新。 若要重命名配置文件，请右键单击该配置文件，然后选择**属性**。 在中**常规**页上，指定配置文件的名称。  
 
-##### <a name="to-create-an-as2-agreement-between-the-two-business-profiles"></a>在两个业务配置文件之间创建 AS2 协议  
+##### <a name="to-create-an-as2-agreement-between-the-two-business-profiles"></a>若要创建两个业务配置文件之间的 AS2 协议  
 
 1.  右键单击**Fabrikam_Profile**，依次指向**新建**，然后单击**协议**。  
 
@@ -261,7 +261,7 @@ ms.locfileid: "37024011"
 
 5.  在中**第二个合作伙伴**部分中，从**配置文件**下拉列表中，选择**Contoso_Profile**。  
 
-     你将注意到两个新选项卡获取旁边添加**常规**选项卡。每个选项卡用于配置一个单向 AS2 协议。  
+     你将注意到两个新选项卡获取旁边添加**常规**选项卡。每个选项卡是用于配置一个单向 AS2 协议。  
 
 6.  在中**常规**选项卡中，**常规属性**页上，在**公用主机设置**部分中，选择**打开报告**。  
 
@@ -278,9 +278,9 @@ ms.locfileid: "37024011"
 
 9. 单击 **“应用”**。  
 
-10. 单击“确定” 。 中列出新添加的协议**协议**一部分**参与方和业务配置文件**窗格。 默认情况下，启用新添加的协议。  
+10. 单击“确定” 。 中列出新添加的协议**协议**一部分**参与方和业务配置文件**窗格。 默认情况下启用新添加的协议。  
 
-##### <a name="to-create-an-x12-agreement-between-the-two-business-profiles"></a>在两个业务配置文件之间创建 X12 协议  
+##### <a name="to-create-an-x12-agreement-between-the-two-business-profiles"></a>若要创建 X12 协议之间的两个业务配置文件  
 
 1. 右键单击**Fabrikam_Profile**，依次指向**新建**，然后单击**协议**。  
 
@@ -301,7 +301,7 @@ ms.locfileid: "37024011"
    1. 上**标识符**页**交换设置**部分中，输入限定符和标识符字段的值 (**ISA5**， **ISA6**， **ISA7**，并**ISA8**) 的测试消息中这些标头字段的值相对应。  
 
       > [!NOTE]
-      >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 要求为发送方和接收方的限定符和标识符字段输入值才能执行协议解析。 它将匹配的值**ISA5**， **ISA6**， **ISA7**，以及**ISA8**与协议属性中的交换标头中。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 此外将通过匹配发送方限定符和标识符 （不接收方限定符和标识符） 来解析协议。 如果 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 无法解析协议，则将使用后备协议属性。  
+      >  [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 需要发送方和接收方限定符和标识符字段才能执行协议解析。 它将匹配的值**ISA5**， **ISA6**， **ISA7**，以及**ISA8**与协议属性中的交换标头中。 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 此外将通过匹配发送方限定符和标识符 （不接收方限定符和标识符） 来解析协议。 如果[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]不能解析协议，它将使用后备协议属性。  
       > 
       > [!NOTE]
       >  对于本演练中，设置**ISA5**到**ZZ**， **ISA6**到**7654321**， **ISA7**到**ZZ**，并**ISA8**到**1234567**。  
@@ -316,11 +316,11 @@ ms.locfileid: "37024011"
 
       |       使用此选项       |                           执行的操作                            |
       |----------------------|-----------------------------------------------------------------|
-      |     **Default**      |                选中列中的复选框                |
-      | **目标 Namespace** | 选择**<http://schemas.microsoft.com/BizTalk/EDI/X12/2006>**。 |
+      |     **默认**      |                列中选中的复选框                |
+      | **目标 Namespace** | 选择 <http://schemas.microsoft.com/BizTalk/EDI/X12/2006>。 |
 
       > [!NOTE]
-      >  设置属性可以使 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 确定处理传入 850 交换时使用的架构。 如果某一交换的 GS02 和 ST01 的值是在网格行上输入的，则将使用同一行的目标命名空间来确定要使用的架构。  
+      >  设置属性后，[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]来确定要处理传入 850 交换时使用的架构。 如果交换具有网格的行输入的 GS02 和 ST01 值，然后将使用在同一行的目标命名空间来确定要使用的架构。  
 
 8. 在执行以下任务**Contoso-> Fabrikam**选项卡。  
 
@@ -334,22 +334,22 @@ ms.locfileid: "37024011"
 
 9. 单击 **“应用”**。  
 
-10. 单击“确定” 。 中列出新添加的协议**协议**一部分**参与方和业务配置文件**窗格。 默认情况下，启用新添加的协议。  
+10. 单击“确定” 。 中列出新添加的协议**协议**一部分**参与方和业务配置文件**窗格。 默认情况下启用新添加的协议。  
 
 ### <a name="testing-the-walkthrough"></a>测试演练  
  本部分提供有关如何测试演练的信息。  
 
 ##### <a name="to-test-the-solution"></a>若要测试解决方案  
 
-1. 在 [!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)] 中，打开 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\AS2 Tutorial\Sender 文件夹中的 Sender.csproj 项目。  
+1. 在中[!INCLUDE[btsVStudioNoVersion](../includes/btsvstudionoversion-md.md)]，打开中的 Sender.csproj 项目[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\AS2 Tutorial\Sender 文件夹。  
 
-2. 在 HttpSender.cs 中，注释掉以下行（紧接着 //请求异步 MDN 注释行）：  
+2. 在 HttpSender.cs 中，注释掉以下行 （紧接在 //Request Asynchronous MDN 注释行) 下面：  
 
    ```  
    Stream sr = new FileStream(getBizTalkInstallPath() + @"SDK\AS2 Tutorial\X12_00401_864.edi", FileMode.Open, FileAccess.Read);  
    ```  
 
-3. 取消对以下行（紧接着 //请求同步 MDN 注释行）的注释：  
+3. 取消注释掉以下行 （紧接在 //Request Synchronous MDN 注释行) 下面：  
 
    ```  
    Stream sr = new FileStream(getBizTalkInstallPath() + @"SDK\AS2 Tutorial\X12_00401_864-Sync.edi", FileMode.Open, FileAccess.Read);  
@@ -357,19 +357,19 @@ ms.locfileid: "37024011"
 
 4. 生成此项目。  
 
-5. 在 Windows 资源管理器中，移至 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)] SDK\AS2 Tutorial。 在记事本中打开 X12_00401_864-Sync.edi。 删除用于定义 Disposition-Notification-Options 头的行，然后保存该文件。  
+5. 在 Windows 资源管理器，转到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\AS2 Tutorial。 在记事本中打开 X12_00401_864-Sync.edi。 删除定义的处理设置通知选项标头的行，然后保存文件。  
 
-6. 打开命令窗口。 移动到 [!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\AS2 Tutorial\Sender\bin\debug。 运行**Sender.exe**。  
+6. 打开命令窗口。 将移动到[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\AS2 Tutorial\Sender\bin\debug。 运行**Sender.exe**。  
 
    > [!NOTE]
-   >  在此实例中运行 Sender.exe 将把消息 X12_00401_864-sync.edi 发送到 Contoso 虚拟目录（BTS HTTP 接收位置）。  
+   >  此实例中运行 Sender.exe 将发布消息 X12_00401_864-sync.edi 发送到 Contoso 虚拟目录 （BTS HTTP 接收位置）。  
 
-7. 验证命令窗口中显示出 MDN。 验证在 MDN 中，AS2-From 是 Contoso，AS2-To 是 Fabrikam。  
+7. 验证在命令窗口中显示出 MDN。 验证在 MDN 的 AS2-从是 Contoso 和 AS2-To 是 Fabrikam。  
 
    > [!NOTE]
    >  Sender.exe 在命令窗口中显示该 MDN。  
 
-8. 打开创建用于接收 EDI 负载的 Contoso 本地文件夹 (**\EDI_to_Contoso**)。 验证该文件夹中有一个 .XML 文件。 打开该 XML 文件并验证它包含有一个 864 事务集。  
+8. 打开创建用于接收 EDI 负载的 Contoso 本地文件夹 (**\EDI_to_Contoso**)。 检查是否存在。XML 文件的文件夹中。 打开 XML 文件并验证它包含一个 864 事务集。  
 
 9. 在记事本中，打开测试消息 X12_00401_864-Sync.edi，并验证中的输出消息中的事务集**\EDI_to_Contoso**本地文件夹对应于 X12_00401_864-Sync.edi 输入中的事务集消息。  
 

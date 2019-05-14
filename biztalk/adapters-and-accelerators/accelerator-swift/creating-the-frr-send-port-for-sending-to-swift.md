@@ -16,12 +16,12 @@ caps.latest.revision: 6
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 1583072986eba20b5a0202e6973a5c08095aab01
-ms.sourcegitcommit: 266308ec5c6a9d8d80ff298ee6051b4843c5d626
+ms.openlocfilehash: 138fef11bd271979edb564b8639bffb6acc6e7a9
+ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36972318"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65378350"
 ---
 # <a name="creating-the-frr-send-port-for-sending-to-swift"></a>创建用于发送到 SWIFT 的 FRR 发送端口
 若要执行 FIN 响应对帐，需要创建一个发送端口将消息从发送[!INCLUDE[btaA4SWIFT2.3abbrevnonumber](../../includes/btaa4swift2-3abbrevnonumber-md.md)]到 SWIFT 网络。  
@@ -68,11 +68,11 @@ ms.locfileid: "36972318"
     |   使用此选项   |                            执行的操作                             |
     |--------------|-------------------------------------------------------------------|
     | **属性** |  选择**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_Failed**。  |
-    | **“运算符”** |                          选择**==**。                           |
+    | **“运算符”** |                          选择 ==。                           |
     |  **ReplTest1**   |                          类型**False**。                          |
     |  **分组**   |                          选择**和**。                          |
     | **属性** | 类型**Microsoft.Solutions.A4SWIFT.Property.A4SWIFT_SwiftBound**。 |
-    | **“运算符”** |                          选择**==**。                           |
+    | **“运算符”** |                          选择 ==。                           |
     |  **ReplTest1**   |                          类型 **，则返回 True**。                           |
 
 
