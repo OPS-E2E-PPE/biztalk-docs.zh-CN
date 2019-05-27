@@ -59,7 +59,7 @@ ms.locfileid: "65400112"
   
 3.  在记事本中，打开 Invalid.xml。  
   
-4.  更改**\<ns0:requestType\>10\</ns0:requestType\>到\<ns0:requestType\>十个\</ns0:requestType\>**.  
+4.  更改 **\<ns0:requestType\>10\</ns0:requestType\>到\<ns0:requestType\>十个\</ns0:requestType\>** .  
   
 5.  将 Invalid.xml 另存为 utf-8，，然后关闭记事本。  
   
@@ -183,7 +183,7 @@ ms.locfileid: "65400112"
   
     1.  单击**ItineraryFactKey**属性，并键入**Resolver.Itinerary**。  
   
-    2.  单击**ResolverConnectionString**属性，并键入**路线：\\\name=Validation;**。  
+    2.  单击**ResolverConnectionString**属性，并键入**路线：\\\name=Validation;** 。  
   
     3.  单击**确定**以关闭**配置管道**对话框。  
   
