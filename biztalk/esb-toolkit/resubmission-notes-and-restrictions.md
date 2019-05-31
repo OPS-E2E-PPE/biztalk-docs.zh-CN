@@ -26,7 +26,7 @@ ms.locfileid: "65401506"
   
 -   默认 url 为 WCF 帮手 http://localhost/ESB.ItineraryServices.WCF/ProcessItinerary.svc。  
   
--   门户网站的 Web.config 文件定义了 WCF 的途径，在终结点详细信息**\<客户端\>** 节点的**\<System.ServiceModel\>** 部分。 以下是默认值。  
+-   门户网站的 Web.config 文件定义了 WCF 的途径，在终结点详细信息 **\<客户端\>** 节点的 **\<System.ServiceModel\>** 部分。 以下是默认值。  
   
     ```  
     <endpoint  
@@ -42,7 +42,7 @@ ms.locfileid: "65401506"
   
 -   SOAP (ASMX) 接入点的默认 URL 是 http://localhost/ESB.ItineraryServices/ProcessItinerary.asmx。  
   
--   门户网站的 Web.config 文件定义了 SOAP (ASMX) 的途径中的配置**\<applicationSettings\>** 部分。 以下是默认值。  
+-   门户网站的 Web.config 文件定义了 SOAP (ASMX) 的途径中的配置 **\<applicationSettings\>** 部分。 以下是默认值。  
   
     ```  
     <setting   

@@ -55,7 +55,7 @@ ms.locfileid: "65383851"
   
 ### <a name="to-disable-the-enterprise-single-sign-on-system-using-the-mmc-snap-in"></a>若要禁用企业单一登录系统使用 Mmc 管理单元  
   
-1.  在“开始”  菜单上，依次单击“所有程序” 、“Microsoft Enterprise Single Sign-On” 和“SSO 管理” 。  
+1.  在“开始”  菜单上，依次单击“所有程序”  、“Microsoft Enterprise Single Sign-On”  和“SSO 管理”  。  
   
 2.  在 ENTSSO MMC 管理单元的作用域窗格中，展开“企业单一登录”  节点。  
   
@@ -84,7 +84,7 @@ ms.locfileid: "65383851"
   
 1. 上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2. 在命令行中，转至企业单一登录安装目录。 默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。  
+2. 在命令行中，转至企业单一登录安装目录。 默认安装目录 *\<驱动器\>* : \Program Files\Common Files\Enterprise Single Sign-on。  
   
 3. 类型 * * ssomanage – updatedb *\<更新文件\>**<em>，其中 *\<更新文件\></em>是路径和 XML 文件的名称。  
   
@@ -103,7 +103,7 @@ ms.locfileid: "65383851"
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行中，转至企业单一登录安装目录。 默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。  
+2.  在命令行中，转至企业单一登录安装目录。 默认安装目录 *\<驱动器\>* : \Program Files\Common Files\Enterprise Single Sign-on。  
   
 3.  类型**ssomanage – enablesso**。  
   

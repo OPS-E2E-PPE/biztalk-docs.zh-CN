@@ -36,7 +36,7 @@ ms.locfileid: "65243126"
 
  若要指定如何创建 BizTalk 消息正文，请选择中的下列选项之一**入站 BizTalk 消息正文**上面各图中的部分：  
 
-- **信封--整个\<soap: Envelope\>**。 使用 SOAP**信封**传入消息创建 BizTalk 消息正文部分的元素。 整个传入消息将成为 BizTalk 消息正文。 此选项用于创建 BizTalk 消息正文将合并所有标头。  
+- **信封--整个\<soap: Envelope\>** 。 使用 SOAP**信封**传入消息创建 BizTalk 消息正文部分的元素。 整个传入消息将成为 BizTalk 消息正文。 此选项用于创建 BizTalk 消息正文将合并所有标头。  
 
   > [!NOTE]
   >  SOAP 标头都将置于消息上下文，但它们不会自动升级。 自定义管道组件可进行升级。  
@@ -50,7 +50,7 @@ ms.locfileid: "65243126"
 > [!NOTE]
 >  有关**正文路径表达式**属性，仅支持 XML 的适用于只进处理的表达式的 XPath。 有关可用于此属性的 XPath 表达式的详细信息，请参阅"的这两个优势：将 XPath 与 XmlReader"处[ http://go.microsoft.com/fwlink/?LinkID=75701 ](http://go.microsoft.com/fwlink/?LinkID=75701)。  
 
- 如果**路径-按正文路径定位内容**选择选项和**节点编码**属性设置为**字符串**，则 WCF 适配器期望匹配的节点具有 utf-8编码的字符数据。 如果传入消息包含转义字符数据的 XML 特殊字符，如\<和\>，创建 BizTalk 消息正文部分时，WCF 适配器会还原转义的字符数据。 例如，如果匹配的节点已转义字符数据，如**&lt;FirstName&gt;CONTOSO&lt;/FirstName&gt;** WCF 适配器会创建**\<FirstName\>CONTOSO\</FirstName\>** 在入站 BizTalk 消息正文。  
+ 如果**路径-按正文路径定位内容**选择选项和**节点编码**属性设置为**字符串**，则 WCF 适配器期望匹配的节点具有 utf-8编码的字符数据。 如果传入消息包含转义字符数据的 XML 特殊字符，如\<和\>，创建 BizTalk 消息正文部分时，WCF 适配器会还原转义的字符数据。 例如，如果匹配的节点已转义字符数据，如 **&lt;FirstName&gt;CONTOSO&lt;/FirstName&gt;** WCF 适配器会创建 **\<FirstName\>CONTOSO\</FirstName\>** 在入站 BizTalk 消息正文。  
 
  如果**路径-按正文路径定位内容**选择选项和**节点编码**属性设置为**十六进制**或者**Base64**、匹配的节点可以有一个有效**BinHex**或**Base64**序列。 如果匹配的节点具有无效的序列，WCF 客户端将接收**FaultException**、 在您的 BizTalk Server 计算机上的事件日志中记录一条错误消息和不挂起任何消息。  
 
@@ -102,7 +102,7 @@ ms.locfileid: "65243126"
  在前面的传入 SOAP 消息，WCF 适配器使用的字符数据， **CONTOSO**的**CustomerID**元素来创建入站的 BizTalk 消息正文部分。  
 
 > [!NOTE]
->  不能使用 XPath，缩简的语法 **/Order/OrderDetail/CustomerID**，在前面的传入 SOAP 消息。 这是因为 XPath 缩简的语法返回未声明的命名空间的节点和**CustomerID**前面的 SOAP 消息中的元素中声明**http://Microsoft.Samples.BizTalk.NetNamedPipe/OrderProcess**命名空间默认命名空间。  
+>  不能使用 XPath，缩简的语法 **/Order/OrderDetail/CustomerID**，在前面的传入 SOAP 消息。 这是因为 XPath 缩简的语法返回未声明的命名空间的节点和**CustomerID**前面的 SOAP 消息中的元素中声明 **http://Microsoft.Samples.BizTalk.NetNamedPipe/OrderProcess** 命名空间默认命名空间。  
 
  如果你配置**BizTalk 消息正文**部分下表中所示**CustomID**前面的传入 SOAP 消息中的元素应具有一个有效**BinHex**或**Base64**序列。  
 

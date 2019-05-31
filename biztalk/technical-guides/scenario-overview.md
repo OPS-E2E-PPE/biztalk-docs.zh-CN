@@ -51,7 +51,7 @@ BizTalk Server 性能进行测量使用以下条件：
 
 1.  **总体吞吐量**– 使用测量**BizTalk： 消息传送 (*主机名*) 每秒接收 \Documents**并**BizTalk： 消息传送 (*主机名*)每秒处理 \Documents**接收的 BizTalk Server 性能计数器和处理主机。  
 
-2.  **CPU 使用率**– 使用测量**\Processor(_Total)\\%Processor Time** BizTalk Server 上的性能计数器] 和 SQL Server 计算机。 全面了解所有测试结果和中所述的任何性能瓶颈[观测和建议](../technical-guides/observations-and-recommendations.md)。  
+2.  **CPU 使用率**– 使用测量 **\Processor(_Total)\\%Processor Time** BizTalk Server 上的性能计数器] 和 SQL Server 计算机。 全面了解所有测试结果和中所述的任何性能瓶颈[观测和建议](../technical-guides/observations-and-recommendations.md)。  
 
 ## <a name="scaling-out-the-processing-tier-and-the-database-tier"></a>向外扩展的处理层和数据库层  
 BizTalk Server 能够轻松地通过将一个或多个 BizTalk Server 计算机添加到现有 BizTalk Server 组容纳更强的处理层功能。 BizTalk Server 适合于通过 MessageBox 数据库添加更高的数据库层功能。  

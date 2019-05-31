@@ -44,7 +44,7 @@ ms.locfileid: "65338622"
   
 1. 上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2. 在命令行中，转至企业单一登录安装目录。 默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。  
+2. 在命令行中，转至企业单一登录安装目录。 默认安装目录 *\<驱动器\>* : \Program Files\Common Files\Enterprise Single Sign-on。  
   
 3. 类型 * * ssomanage-deleteapp *\<应用程序名称\>**<em>，其中 *\<应用程序名称\></em>是你想要删除从关联应用程序的名称SSO 数据库。  
   
