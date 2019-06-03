@@ -45,9 +45,9 @@ ms.locfileid: "65385094"
   
 ### <a name="to-enable-the-sso-system-using-the-command-line"></a>若要启用 SSO 系统使用命令行  
   
-1.  依次单击 **“开始”** 和 **“运行”** ，然后键入 **cmd**。  
+1.  依次单击 **“开始”** 和 **“运行”**，然后键入 **cmd**。  
   
-2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录 **\<驱动器\>** : \Program Files\Common Files\Enterprise Single Sign-on。  
+2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录**\<驱动器\>**: \Program Files\Common Files\Enterprise Single Sign-on。  
   
 3.  类型**ssomanage – enablesso**。  
   
@@ -60,7 +60,7 @@ ms.locfileid: "65385094"
   
 2. 上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-3. 在命令行提示符下，转至企业单一登录安装目录。 默认安装目录 *\<驱动器\>* : \Program Files\Common Files\Enterprise Single Sign-on。  
+3. 在命令行提示符下，转至企业单一登录安装目录。 默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。  
   
 4. 类型**ssomanage enablesso**启用企业单一登录服务。  
   
@@ -69,7 +69,7 @@ ms.locfileid: "65385094"
   
 5. 作为 SSO 关联管理员身份登录。  
   
-6. 类型**ssomanage-createapps *\<应用程序文件\>* **创建关联应用程序，其中\<应用程序文件\>是 XML 文件包含关联应用程序的定义的。  
+6. 类型**ssomanage-createapps *\<应用程序文件\>*** 创建关联应用程序，其中\<应用程序文件\>是 XML 文件包含关联应用程序的定义的。  
   
    > [!NOTE]
    >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
