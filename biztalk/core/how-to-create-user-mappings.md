@@ -22,8 +22,8 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2019
 ms.locfileid: "65338919"
 ---
-# <a name="how-to-create-user-mappings"></a><span data-ttu-id="ac8bd-102">如何创建用户映射</span><span class="sxs-lookup"><span data-stu-id="ac8bd-102">How to Create User Mappings</span></span>
-<span data-ttu-id="ac8bd-103">使用此命令创建一个或多个用户映射，按照指定的 XML 文件中。</span><span class="sxs-lookup"><span data-stu-id="ac8bd-103">Use this command to create one or more user mappings, as specified in the XML file.</span></span> <span data-ttu-id="ac8bd-104">下面是示例 XML 文件。</span><span class="sxs-lookup"><span data-stu-id="ac8bd-104">The following is an example XML file.</span></span>  
+# <a name="how-to-create-user-mappings"></a><span data-ttu-id="38c4f-102">如何创建用户映射</span><span class="sxs-lookup"><span data-stu-id="38c4f-102">How to Create User Mappings</span></span>
+<span data-ttu-id="38c4f-103">使用此命令创建一个或多个用户映射，按照指定的 XML 文件中。</span><span class="sxs-lookup"><span data-stu-id="38c4f-103">Use this command to create one or more user mappings, as specified in the XML file.</span></span> <span data-ttu-id="38c4f-104">下面是示例 XML 文件。</span><span class="sxs-lookup"><span data-stu-id="38c4f-104">The following is an example XML file.</span></span>  
   
 ```  
 <sso>  
@@ -43,36 +43,36 @@ ms.locfileid: "65338919"
   
 ```  
   
- <span data-ttu-id="ac8bd-105">如果更改用户帐户，则必须使用此命令创建新的用户帐户的映射。</span><span class="sxs-lookup"><span data-stu-id="ac8bd-105">If a user account is changed, you must use this command to create a mapping for the new user account.</span></span> <span data-ttu-id="ac8bd-106">此外应删除旧的用户映射。</span><span class="sxs-lookup"><span data-stu-id="ac8bd-106">You should also remove the old user mapping.</span></span> <span data-ttu-id="ac8bd-107">有关删除映射的详细信息，请参阅[如何删除用户映射](../core/how-to-delete-user-mappings.md)。</span><span class="sxs-lookup"><span data-stu-id="ac8bd-107">For more information about removing a mapping, see [How to Delete User Mappings](../core/how-to-delete-user-mappings.md).</span></span>  
+ <span data-ttu-id="38c4f-105">如果更改用户帐户，则必须使用此命令创建新的用户帐户的映射。</span><span class="sxs-lookup"><span data-stu-id="38c4f-105">If a user account is changed, you must use this command to create a mapping for the new user account.</span></span> <span data-ttu-id="38c4f-106">此外应删除旧的用户映射。</span><span class="sxs-lookup"><span data-stu-id="38c4f-106">You should also remove the old user mapping.</span></span> <span data-ttu-id="38c4f-107">有关删除映射的详细信息，请参阅[如何删除用户映射](../core/how-to-delete-user-mappings.md)。</span><span class="sxs-lookup"><span data-stu-id="38c4f-107">For more information about removing a mapping, see [How to Delete User Mappings](../core/how-to-delete-user-mappings.md).</span></span>  
   
- <span data-ttu-id="ac8bd-108">创建用户映射后，你必须启用它，然后才能在 SSO 系统中使用此映射。</span><span class="sxs-lookup"><span data-stu-id="ac8bd-108">After you create a user mapping, you must enable it before you can use this mapping in the SSO system.</span></span> <span data-ttu-id="ac8bd-109">有关详细信息，请参阅[如何启用用户映射](../core/how-to-enable-a-user-mapping.md)。</span><span class="sxs-lookup"><span data-stu-id="ac8bd-109">For more information, see [How to Enable a User Mapping](../core/how-to-enable-a-user-mapping.md).</span></span>  
+ <span data-ttu-id="38c4f-108">创建用户映射后，你必须启用它，然后才能在 SSO 系统中使用此映射。</span><span class="sxs-lookup"><span data-stu-id="38c4f-108">After you create a user mapping, you must enable it before you can use this mapping in the SSO system.</span></span> <span data-ttu-id="38c4f-109">有关详细信息，请参阅[如何启用用户映射](../core/how-to-enable-a-user-mapping.md)。</span><span class="sxs-lookup"><span data-stu-id="38c4f-109">For more information, see [How to Enable a User Mapping](../core/how-to-enable-a-user-mapping.md).</span></span>  
   
 > [!IMPORTANT]
->  <span data-ttu-id="ac8bd-110">用户映射的支持仅域组。</span><span class="sxs-lookup"><span data-stu-id="ac8bd-110">Only domain groups are supported for user mappings.</span></span>  
+>  <span data-ttu-id="38c4f-110">用户映射的支持仅域组。</span><span class="sxs-lookup"><span data-stu-id="38c4f-110">Only domain groups are supported for user mappings.</span></span>  
   
-### <a name="to-create-user-mappings-using-the-administration-utility"></a><span data-ttu-id="ac8bd-111">若要创建使用管理实用工具的用户映射</span><span class="sxs-lookup"><span data-stu-id="ac8bd-111">To create user mappings using the administration utility</span></span>  
+### <a name="to-create-user-mappings-using-the-administration-utility"></a><span data-ttu-id="38c4f-111">若要创建使用管理实用工具的用户映射</span><span class="sxs-lookup"><span data-stu-id="38c4f-111">To create user mappings using the administration utility</span></span>  
   
-1. <span data-ttu-id="ac8bd-112">上**启动**菜单上，单击**运行**，然后键入**cmd**。</span><span class="sxs-lookup"><span data-stu-id="ac8bd-112">On the **Start** menu, click **Run**, and then type **cmd**.</span></span>  
+1. <span data-ttu-id="38c4f-112">上**启动**菜单上，单击**运行**，然后键入**cmd**。</span><span class="sxs-lookup"><span data-stu-id="38c4f-112">On the **Start** menu, click **Run**, and then type **cmd**.</span></span>  
   
-2. <span data-ttu-id="ac8bd-113">在命令行中，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="ac8bd-113">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="ac8bd-114">默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。</span><span class="sxs-lookup"><span data-stu-id="ac8bd-114">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
+2. <span data-ttu-id="38c4f-113">在命令行中，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="38c4f-113">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="38c4f-114">默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。</span><span class="sxs-lookup"><span data-stu-id="38c4f-114">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
   
-3. <span data-ttu-id="ac8bd-115">类型 \* \* ssomanage – createmappings \*\<映射文件名称\>\*\*<em>，其中 \*\<映射文件名称\></em>是包含你希望用户映射文件的名称若要创建。</span><span class="sxs-lookup"><span data-stu-id="ac8bd-115">Type \*\*ssomanage –createmappings \*\<mappings file name\>\*\*<em>, where \*\<mappings file name\></em> is the name of file that contains the user mapping(s) you want to create.</span></span>  
-  
-   > [!NOTE]
-   >  <span data-ttu-id="ac8bd-116">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="ac8bd-116">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
-  
-### <a name="to-create-user-mappings-using-the-client-utility"></a><span data-ttu-id="ac8bd-117">若要创建使用客户端实用工具的用户映射</span><span class="sxs-lookup"><span data-stu-id="ac8bd-117">To create user mappings using the client utility</span></span>  
-  
-1. <span data-ttu-id="ac8bd-118">上**启动**菜单上，单击**运行**，然后键入**cmd**。</span><span class="sxs-lookup"><span data-stu-id="ac8bd-118">On the **Start** menu, click **Run**, and then type **cmd**.</span></span>  
-  
-2. <span data-ttu-id="ac8bd-119">在命令行中，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="ac8bd-119">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="ac8bd-120">默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。</span><span class="sxs-lookup"><span data-stu-id="ac8bd-120">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
-  
-3. <span data-ttu-id="ac8bd-121">类型 \* \* ssoclient – setcredentials \*\<应用程序名称\> \*\* <em>，其中 \*\<应用程序名称\></em>是用户想要的关联应用程序的名称创建的映射。</span><span class="sxs-lookup"><span data-stu-id="ac8bd-121">Type \*\*ssoclient –setcredentials \*\<application name \>\*\*<em>, where \*\<application name \></em> is the name of affiliate application that the user wants to create a mapping for.</span></span>  
+3. <span data-ttu-id="38c4f-115">类型 \*\*ssomanage –createmappings \*\<映射文件名称\>\*\*<em>，其中 \*\<映射文件名称\></em>是包含你希望用户映射文件的名称若要创建。</span><span class="sxs-lookup"><span data-stu-id="38c4f-115">Type \*\*ssomanage –createmappings \*\<mappings file name\>\*\*<em>, where \*\<mappings file name\></em> is the name of file that contains the user mapping(s) you want to create.</span></span>  
   
    > [!NOTE]
-   >  <span data-ttu-id="ac8bd-122">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="ac8bd-122">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
+   >  <span data-ttu-id="38c4f-116">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="38c4f-116">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="ac8bd-123">请参阅</span><span class="sxs-lookup"><span data-stu-id="ac8bd-123">See Also</span></span>  
- <span data-ttu-id="ac8bd-124">[SSO 映射](../core/sso-mappings.md) </span><span class="sxs-lookup"><span data-stu-id="ac8bd-124">[SSO Mappings](../core/sso-mappings.md) </span></span>  
- <span data-ttu-id="ac8bd-125">[管理关联应用程序](../core/managing-affiliate-applications.md) </span><span class="sxs-lookup"><span data-stu-id="ac8bd-125">[Managing Affiliate Applications](../core/managing-affiliate-applications.md) </span></span>  
- [<span data-ttu-id="ac8bd-126">管理用户映射</span><span class="sxs-lookup"><span data-stu-id="ac8bd-126">Managing User Mappings</span></span>](../core/managing-user-mappings.md)
+### <a name="to-create-user-mappings-using-the-client-utility"></a><span data-ttu-id="38c4f-117">若要创建使用客户端实用工具的用户映射</span><span class="sxs-lookup"><span data-stu-id="38c4f-117">To create user mappings using the client utility</span></span>  
+  
+1. <span data-ttu-id="38c4f-118">上**启动**菜单上，单击**运行**，然后键入**cmd**。</span><span class="sxs-lookup"><span data-stu-id="38c4f-118">On the **Start** menu, click **Run**, and then type **cmd**.</span></span>  
+  
+2. <span data-ttu-id="38c4f-119">在命令行中，转至企业单一登录安装目录。</span><span class="sxs-lookup"><span data-stu-id="38c4f-119">At the command line, go to the Enterprise Single Sign-On installation directory.</span></span> <span data-ttu-id="38c4f-120">默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。</span><span class="sxs-lookup"><span data-stu-id="38c4f-120">The default installation directory is \<*drive*\>:\Program Files\Common Files\Enterprise Single Sign-On.</span></span>  
+  
+3. <span data-ttu-id="38c4f-121">类型 \*\*ssoclient –setcredentials \*\<应用程序名称\>\*\*<em>，其中 \*\<应用程序名称\></em>是用户想要的关联应用程序的名称创建的映射。</span><span class="sxs-lookup"><span data-stu-id="38c4f-121">Type \*\*ssoclient –setcredentials \*\<application name \>\*\*<em>, where \*\<application name \></em> is the name of affiliate application that the user wants to create a mapping for.</span></span>  
+  
+   > [!NOTE]
+   >  <span data-ttu-id="38c4f-122">在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。</span><span class="sxs-lookup"><span data-stu-id="38c4f-122">On a system that supports User Account Control (UAC), you may need to run the tool with Administrative privileges.</span></span>  
+  
+## <a name="see-also"></a><span data-ttu-id="38c4f-123">请参阅</span><span class="sxs-lookup"><span data-stu-id="38c4f-123">See Also</span></span>  
+ <span data-ttu-id="38c4f-124">[SSO 映射](../core/sso-mappings.md) </span><span class="sxs-lookup"><span data-stu-id="38c4f-124">[SSO Mappings](../core/sso-mappings.md) </span></span>  
+ <span data-ttu-id="38c4f-125">[管理关联应用程序](../core/managing-affiliate-applications.md) </span><span class="sxs-lookup"><span data-stu-id="38c4f-125">[Managing Affiliate Applications](../core/managing-affiliate-applications.md) </span></span>  
+ [<span data-ttu-id="38c4f-126">管理用户映射</span><span class="sxs-lookup"><span data-stu-id="38c4f-126">Managing User Mappings</span></span>](../core/managing-user-mappings.md)
