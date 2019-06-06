@@ -56,7 +56,7 @@ ms.locfileid: "65338919"
   
 2. 在命令行中，转至企业单一登录安装目录。 默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。  
   
-3. 类型 * * ssomanage – createmappings *\<映射文件名称\>**<em>，其中 *\<映射文件名称\></em>是包含你希望用户映射文件的名称若要创建。  
+3. 类型 **ssomanage –createmappings *\<映射文件名称\>**<em>，其中 *\<映射文件名称\></em>是包含你希望用户映射文件的名称若要创建。  
   
    > [!NOTE]
    >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
@@ -67,7 +67,7 @@ ms.locfileid: "65338919"
   
 2. 在命令行中，转至企业单一登录安装目录。 默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。  
   
-3. 类型 * * ssoclient – setcredentials *\<应用程序名称\> ** <em>，其中 *\<应用程序名称\></em>是用户想要的关联应用程序的名称创建的映射。  
+3. 类型 **ssoclient –setcredentials *\<应用程序名称\>**<em>，其中 *\<应用程序名称\></em>是用户想要的关联应用程序的名称创建的映射。  
   
    > [!NOTE]
    >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
