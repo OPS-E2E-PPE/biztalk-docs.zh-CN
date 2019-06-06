@@ -73,7 +73,7 @@ ms.locfileid: "65383340"
   
 #### <a name="access-a-web-service-with-internet-explorer"></a>访问使用 Internet Explorer 的 Web 服务  
   
-- 在 Internet Explorer 中，在**地址**框中，键入使用以下格式的 Web 服务 URL **http://<em>servername</em>/*apppath* /*webservicename*.asmx**。  
+- 在 Internet Explorer 中，在 **地址** 框中，键入使用以下格式的 Web 服务 URL **http://<em>servername</em>/*apppath*/*webservicename*.asmx** 。  
   
   |参数|ReplTest1|  
   |---------------|-----------|  
