@@ -86,7 +86,7 @@ ms.locfileid: "65383851"
   
 2. 在命令行中，转至企业单一登录安装目录。 默认安装目录 *\<驱动器\>* : \Program Files\Common Files\Enterprise Single Sign-on。  
   
-3. 类型 **ssomanage –updatedb *\<更新文件\>**<em>，其中 *\<更新文件\></em> 是路径和 XML 文件的名称。  
+3. 类型 * * ssomanage – updatedb *\<更新文件\>**<em>，其中 *\<更新文件\></em>是路径和 XML 文件的名称。  
   
    > [!NOTE]
    >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
