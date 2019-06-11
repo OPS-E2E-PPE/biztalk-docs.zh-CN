@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: df63045a5627bd3d7c356e76e4c836ee6ce28622
-ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 06/10/2019
 ms.locfileid: "65338919"
 ---
 # <a name="how-to-create-user-mappings"></a>如何创建用户映射
@@ -54,7 +54,7 @@ ms.locfileid: "65338919"
   
 1. 上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2. 在命令行中，转至企业单一登录安装目录。 默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。  
+2. 在命令行中，转至企业单一登录安装目录。 默认安装目录 \<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。  
   
 3. 类型 * * ssomanage – createmappings *\<映射文件名称\>**<em>，其中 *\<映射文件名称\></em>是包含你希望用户映射文件的名称若要创建。  
   
@@ -65,7 +65,7 @@ ms.locfileid: "65338919"
   
 1. 上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2. 在命令行中，转至企业单一登录安装目录。 默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。  
+2. 在命令行中，转至企业单一登录安装目录。 默认安装目录 \<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。  
   
 3. 类型 * * ssoclient – setcredentials *\<应用程序名称\> ** <em>，其中 *\<应用程序名称\></em>是用户想要的关联应用程序的名称创建的映射。  
   

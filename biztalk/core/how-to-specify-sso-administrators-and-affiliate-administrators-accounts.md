@@ -23,10 +23,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: faff8a6a8b8b9a639c4e03c4c48c287835667238
-ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 06/10/2019
 ms.locfileid: "65383851"
 ---
 # <a name="how-to-specify-sso-administrators-and-affiliate-administrators-accounts"></a>如何指定 SSO 管理员和关联管理员帐户
@@ -65,7 +65,7 @@ ms.locfileid: "65383851"
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行中，转至企业单一登录安装目录。 默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。  
+2.  在命令行中，转至企业单一登录安装目录。 默认安装目录 \<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。  
   
 3.  类型**ssomanage** –**disablesso**。  
   

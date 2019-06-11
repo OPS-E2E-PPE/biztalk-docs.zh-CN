@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b0f2ae68bc2eeafba4bb85abe8ec835dcb2b64b5
-ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 06/10/2019
 ms.locfileid: "65336856"
 ---
 # <a name="how-to-list-the-properties-of-an-affiliate-application"></a>如何列出关联应用程序的属性
@@ -31,7 +31,7 @@ ms.locfileid: "65336856"
   
 1. 上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2. 在命令行中，转至企业单一登录安装目录。 默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。  
+2. 在命令行中，转至企业单一登录安装目录。 默认安装目录 \<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。  
   
 3. 类型 * * ssomanage-displayapp *\<应用程序名称\>**<em>，其中 *\<应用程序名称\></em>是你想要显示的关联应用程序的名称属性。  
   

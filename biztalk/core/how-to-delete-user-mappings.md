@@ -16,10 +16,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b9a61a35059ff313506aca09898f489819f5064f
-ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
+ms.sourcegitcommit: d27732e569b0897361dfaebca8352aa97bb7efe1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 06/10/2019
 ms.locfileid: "65385330"
 ---
 # <a name="how-to-delete-user-mappings"></a>如何删除用户映射
@@ -50,7 +50,7 @@ ms.locfileid: "65385330"
   
 1. 上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2. 在命令行中，转至企业单一登录安装目录。 默认安装目录\<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。  
+2. 在命令行中，转至企业单一登录安装目录。 默认安装目录 \<*驱动器*\>: \Program Files\Common Files\Enterprise Single Sign-on。  
   
 3. 类型<strong>ssomanage-deletemappings *\<映射文件名称\></strong><em>，其中\<</em>映射文件的名称*\>是包含你想要删除用户映射文件的名称。  
   
