@@ -47,7 +47,7 @@ ms.locfileid: "65385094"
   
 1.  依次单击 **“开始”** 和 **“运行”**，然后键入 **cmd**。  
   
-2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录**\<驱动器\>**: \Program Files\Common Files\Enterprise Single Sign-on。  
+2.  在命令行提示符下，转至企业单一登录安装目录。 默认安装目录 **\<驱动器\>**: \Program Files\Common Files\Enterprise Single Sign-on。  
   
 3.  类型**ssomanage – enablesso**。  
   
@@ -60,7 +60,7 @@ ms.locfileid: "65385094"
   
 2. 上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-3. 在命令行提示符下，转至企业单一登录安装目录。 默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。  
+3. 在命令行提示符下，转至企业单一登录安装目录。 默认安装目录 *\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。  
   
 4. 类型**ssomanage enablesso**启用企业单一登录服务。  
   
