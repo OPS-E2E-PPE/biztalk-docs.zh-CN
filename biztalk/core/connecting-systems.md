@@ -12,18 +12,18 @@ caps.latest.revision: 16
 author: MandiOhlinger
 ms.author: mandia
 manager: anneta
-ms.openlocfilehash: 945c8d1efc191ac4a59d523d059b8a1e427ecbff
-ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
+ms.openlocfilehash: 949627c621dcedc26be98a175eae890193f61ac4
+ms.sourcegitcommit: bab8f4abca27edc45f9f4601ada6f3fc6a2b87cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65390418"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67189088"
 ---
 # <a name="connecting-systems"></a>连接系统
 有效的不同计算机上的不同软件之间的消息交换是绝对必需的集成。 考虑到现有通信方式多种多样，BizTalk Server 必须支持各种协议和消息格式。 按下文所述，该引擎的重要部分专门介绍实现此通信。 要记住，一个重要事实，但该引擎内部只使用 XML 文档。 在任何格式一条消息到达时，必须转换为 XML 文档是收到。 同样，如果文档的收件人不能接受该文档为 XML，则引擎将其转换为目标所需的格式。  
   
 ## <a name="sending-and-receiving-messages-adapters"></a>发送和接收消息：适配器  
- BizTalk Server 必须与各种其他软件进行通信，因为它依赖适配器来实现此类。 适配器是一种通信机制，例如特定的协议的实现。 开发人员确定要在给定情况下使用的适配器。 他可能会选择 BizTalk Server 提供，例如，内置适配器之一或使用为诸如 Windows SharePoint Services 之类的常用产品创建的适配器或甚至可以创建自定义适配器。 在每个这种情况下，适配器是基于名为适配器框架的标准结构。 此框架提供一种方式来创建和运行适配器的支持，并且它还支持相同的工具用于管理所有适配器类型。  
+ BizTalk Server 必须与各种其他软件进行通信，因为它依赖适配器来实现此类。 适配器是一种通信机制，例如特定的协议的实现。 开发人员确定要在给定情况下使用的适配器。 它们可能会选择 BizTalk Server 提供，例如，内置适配器之一或使用为诸如 Windows SharePoint Services 之类的常用产品创建的适配器或甚至可以创建自定义适配器。 在每个这种情况下，适配器是基于名为适配器框架的标准结构。 此框架提供一种方式来创建和运行适配器的支持，并且它还支持相同的工具用于管理所有适配器类型。  
   
  Microsoft BizTalk Server 包含以下本地适配器：  
   
