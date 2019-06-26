@@ -93,7 +93,7 @@ ms.locfileid: "65344859"
   
      <span data-ttu-id="e129e-147">默认情况下，IIS 上运行 Windows Server 2008 或 Windows Vista 的计算机的日志文件位于以下目录中：</span><span class="sxs-lookup"><span data-stu-id="e129e-147">By default the IIS log files on a computer running Windows Server 2008 or Windows Vista are located in the following directory:</span></span>  
   
-     <span data-ttu-id="e129e-148">C:\inetpub\logs\LogFiles\W3SVC1\\</span><span class="sxs-lookup"><span data-stu-id="e129e-148">C:\inetpub\logs\LogFiles\W3SVC1\\</span></span>  
+     <span data-ttu-id="e129e-148">C:\inetpub\logs\LogFiles\W3SVC1</span><span class="sxs-lookup"><span data-stu-id="e129e-148">C:\inetpub\logs\LogFiles\W3SVC1</span></span>\  
   
     -   <span data-ttu-id="e129e-149">如果 IIS 7.0 计算机包含 HTTP 401 错误，请按照 Microsoft 知识库文章 943891 中的步骤，IIS 日志文件，"HTTP 状态代码在 IIS 7.0 中"网址[ http://support.microsoft.com/kb/943891 ](http://support.microsoft.com/kb/943891)来确定子状态代码和对基于状态代码的权限问题进行故障排除。</span><span class="sxs-lookup"><span data-stu-id="e129e-149">If the IIS log file for an IIS 7.0 computer contains HTTP 401 errors, follow the steps in Microsoft Knowledge Base article 943891, "The HTTP status codes in IIS 7.0" available at [http://support.microsoft.com/kb/943891](http://support.microsoft.com/kb/943891) to determine the substatus code and to troubleshoot the permissions problem based on the status code.</span></span>  
   
