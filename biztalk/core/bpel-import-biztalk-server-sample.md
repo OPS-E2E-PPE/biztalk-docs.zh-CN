@@ -78,7 +78,7 @@ BPEL 导入示例演示如何从业务流程执行语言 (BPEL) 流程说明和�
    > [!NOTE]
    >  执行此过程之前，必须设置 ShipperProcess 应用程序来创建支持的流程和架构项目。  
 
-2. 在中**新的项目**对话框中，在项目类型窗格中，选择**BizTalk （项目）**。 在模板窗格中选择**BizTalk (Server) BPEL 导入项目**。  
+2. 在中**新的项目**对话框中，在项目类型窗格中，选择**BizTalk （项目）** 。 在模板窗格中选择**BizTalk (Server) BPEL 导入项目**。  
 
 3. 在中**名称**框中，输入**BPELShipping**。  
 
@@ -165,7 +165,7 @@ BPEL 导入示例演示如何从业务流程执行语言 (BPEL) 流程说明和�
 
 30. 从工具箱拖动**转换**形状揅 constructmessage1 形状。  
 
-31. 在属性窗口中，单击省略号按钮 (**...**)，然后打开**转换配置**对话框。  
+31. 在属性窗口中，单击省略号按钮 ( **...** )，然后打开**转换配置**对话框。  
 
 32. 选择**现有的映射**。  
 
@@ -222,13 +222,13 @@ BPEL 导入示例演示如何从业务流程执行语言 (BPEL) 流程说明和�
 
 44. 在业务流程视图中，展开**类型/相关类型**然后单击***OrderCorrelationSet_Type\\***。  
 
-45. 在属性窗口中，单击省略号按钮 (**...**) 上**相关属性**。  
+45. 在属性窗口中，单击省略号按钮 ( **...** ) 上**相关属性**。  
 
 46. 在上窗格相关联的属性，单击**BPELShipping.OrderID**，然后单击**删除**。  
 
 47. 在可用属性窗格中，展开**发货架构**，选择**订单 ID**，然后单击**添加**。  
 
-48. 单击“确定” 。  
+48. 单击“确定”  。  
 
 49. 保存所有文件并生成解决方案。  
 
@@ -335,9 +335,9 @@ The 'http://contoso.org/samples/Fragments:XXXX' element is not declared. An erro
 
 #### <a name="to-run-the-bpel-import-sample"></a>若要运行 BPEL 导入示例  
 
-1.  复制**Order.xml**文件从*\<示例路径\>* \Orchestrations\BPELImport\Solution 文件夹\<*示例路径\>* \Orchestrations\BPELImport\Solution\Ports\ReceiveOrder 文件夹。  
+1.  复制**Order.xml**文件从 *\<示例路径\>* \Orchestrations\BPELImport\Solution 文件夹\<*示例路径\>* \Orchestrations\BPELImport\Solution\Ports\ReceiveOrder 文件夹。  
 
-2.  BPELShipping 业务流程提取此文件作为订单从客户订单处理系统中，运行发货流程，并生成一个文件中的每个\<*示例路径*\>\Orchestrations\BPELImport\Solution\Ports\SendOrder 文件夹和\<*示例路径*\>\Orchestrations\BPELImport\Solution\Ports\FinalConfirmation 文件夹。 这些文件的名称的格式是\< *MessageID*\>.xml，其中*\<MessageID\>* 生成的 GUID 来唯一地标识消息。  
+2.  BPELShipping 业务流程提取此文件作为订单从客户订单处理系统中，运行发货流程，并生成一个文件中的每个\<*示例路径*\>\Orchestrations\BPELImport\Solution\Ports\SendOrder 文件夹和\<*示例路径*\>\Orchestrations\BPELImport\Solution\Ports\FinalConfirmation 文件夹。 这些文件的名称的格式是\< *MessageID*\>.xml，其中 *\<MessageID\>* 生成的 GUID 来唯一地标识消息。  
 
 ## <a name="uninstalling-this-sample"></a>卸载本示例  
 

@@ -28,7 +28,7 @@ ms.locfileid: "65280988"
 
 ### <a name="to-create-a-trade-agreement"></a>若要创建贸易协议  
 
-1. 在中**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台中，展开**BizTalk\<版本\>Accelerator for RosettaNet**，右键单击**协议**，单击**新建**，然后单击**协议**。  
+1. 在中 **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台中，展开**BizTalk\<版本\>Accelerator for RosettaNet**，右键单击**协议**，单击**新建**，然后单击**协议**。  
 
 2. 在中**新协议属性**对话框中，在**常规**选项卡上，执行以下操作：  
 
@@ -47,8 +47,8 @@ ms.locfileid: "65280988"
 
    |    使用此选项    |                                         执行的操作                                         |
    |----------------|--------------------------------------------------------------------------------------------|
-   | **操作 URL** |                   类型**<http://localhost/BTARNApp/RNIFReceive.aspx>**。                   |
-   | **信号 URL** |                   类型**<http://localhost/BTARNApp/RNIFReceive.aspx>**。                   |
+   | **操作 URL** |                   类型 **<http://localhost/BTARNApp/RNIFReceive.aspx>** 。                   |
+   | **信号 URL** |                   类型 **<http://localhost/BTARNApp/RNIFReceive.aspx>** 。                   |
    |  **同步 URL**  | 保留为空。 同步 URL 不需要的同步合作伙伴接口流程 (PIP)。 |
 
 

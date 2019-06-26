@@ -86,7 +86,7 @@ ms.locfileid: "65291667"
 </ns0:Root>  
 ```  
   
- `The following figure shows a map using the`  **表****循环**`functoid and`**表****提取程序**   `functoids to generate the desired output instance message.`  
+ `The following figure shows a map using the`  **表****循环**`functoid and`**表****提取程序    **  `functoids to generate the desired output instance message.`  
   
  ![映射表循环和表提取程序 functoid](../core/media/tableloopingextractorfunctoid.gif "tableloopingextractorfunctoid")  
 TableLooping 和提取程序 Functoid  

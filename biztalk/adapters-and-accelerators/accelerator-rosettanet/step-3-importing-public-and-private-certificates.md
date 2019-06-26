@@ -35,9 +35,9 @@ ms.locfileid: "65281057"
   
 1. 在 Contoso 计算机上，单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2. 在命令提示符处，转到**\<**<em>驱动器</em>**\>: \Program Files\Microsoft BizTalk\<版本\>Accelerator forRosettaNet\SDK** ，然后按**Enter**。  
+2. 在命令提示符处，转到 **\<** <em>驱动器</em> **\>: \Program Files\Microsoft BizTalk\<版本\>Accelerator forRosettaNet\SDK** ，然后按**Enter**。  
   
-3. 在命令提示符处，键入**CertWizard /Privatekey"\<**<em>驱动器</em>**\>: \Certs\Contoso Private Encryption.pfx"**，然后按**输入**。  
+3. 在命令提示符处，键入**CertWizard /Privatekey"\<** <em>驱动器</em> **\>: \Certs\Contoso Private Encryption.pfx"** ，然后按**输入**。  
   
 4. 在**请输入证书文件的密码**提示符下，键入**mysecret**，然后按**Enter**。  
   
@@ -56,9 +56,9 @@ ms.locfileid: "65281057"
   
 1.  在 Contoso 计算机上，单击**启动**，单击**运行，请**类型**cmd**，然后单击**确定**。  
   
-2.  在命令提示符处，转到*\<驱动器\>* * *:\Program Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK**，然后按**Enter**.  
+2.  在命令提示符处，转到 *\<驱动器\>* * *:\Program Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK**，然后按**Enter**.  
   
-3.  在命令提示符处，键入**CertWizard /Publickey"***\<驱动器\>***: \Certs\Fabrikam Public Encryption.cer"**，然后按**Enter**.  
+3.  在命令提示符处，键入**CertWizard /Publickey"***\<驱动器\>***: \Certs\Fabrikam Public Encryption.cer"** ，然后按**Enter**.  
   
 4.  为 Fabrikam Public Signature.cer 证书重复步骤 3。  
   
@@ -68,9 +68,9 @@ ms.locfileid: "65281057"
   
 2.  在 Fabrikum 计算机上，单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-3.  在命令提示符处，转到*\<驱动器\>* * *:\Program Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK**，然后按**Enter**.  
+3.  在命令提示符处，转到 *\<驱动器\>* * *:\Program Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK**，然后按**Enter**.  
   
-4.  在命令提示符处，键入**CertWizard /Privatekey"***\<驱动器\>***: \Certs\Fabrikam Private Encryption.pfx"**，然后按**Enter**.  
+4.  在命令提示符处，键入**CertWizard /Privatekey"***\<驱动器\>***: \Certs\Fabrikam Private Encryption.pfx"** ，然后按**Enter**.  
   
 5.  在**请输入证书文件的密码**提示符下，键入**mysecret**，然后按**Enter**。  
   
@@ -89,9 +89,9 @@ ms.locfileid: "65281057"
   
 1.  在 Fabrikum 计算机上，单击**启动**，单击**运行**，类型**cmd**，然后单击**确定**。  
   
-2.  在命令提示符处，转到*\<驱动器\>* * *:\Program Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK**，然后按**Enter**.  
+2.  在命令提示符处，转到 *\<驱动器\>* * *:\Program Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK**，然后按**Enter**.  
   
-3.  在命令提示符处，键入**CertWizard /Publickey"***\<驱动器\>***: \Certs\Contoso Public Encryption.cer"**，然后按**Enter**。  
+3.  在命令提示符处，键入**CertWizard /Publickey"***\<驱动器\>***: \Certs\Contoso Public Encryption.cer"** ，然后按**Enter**。  
   
 4.  为 Contoso Public Signature.cer 证书重复步骤 3。  
   

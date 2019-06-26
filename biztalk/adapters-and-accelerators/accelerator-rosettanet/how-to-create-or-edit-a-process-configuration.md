@@ -95,9 +95,9 @@ ms.locfileid: "65283573"
 
 4. 右键单击你想要编辑，然后单击流程配置**属性**。  
 
-5. 在中*\<流程配置\>* 属性对话框中，在**常规**并**联系人属性**选项卡上，根据更改设置必填。 有关这些设置的信息，请参阅上表。  
+5. 在中 *\<流程配置\>* 属性对话框中，在**常规**并**联系人属性**选项卡上，根据更改设置必填。 有关这些设置的信息，请参阅上表。  
 
-6. 单击“确定” 。  
+6. 单击“确定”  。  
 
 ## <a name="see-also"></a>请参阅  
  [使用 PIP 规范创建流程配置](../../adapters-and-accelerators/accelerator-rosettanet/using-the-pip-specification-to-create-a-process-configuration.md)   

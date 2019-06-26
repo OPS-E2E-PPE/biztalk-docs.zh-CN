@@ -34,7 +34,7 @@ ms.locfileid: "65280908"
   
 1. 单击**启动**，依次指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**。  
   
-2. 在 Internet Information Services 的左窗格中，展开**\<** <em>computer_name</em> **\>** (*本地计算机*)，展开**网站**，右键单击**Default Web Site**，然后单击**属性**。  
+2. 在 Internet Information Services 的左窗格中，展开 **\<** <em>computer_name</em> **\>** (*本地计算机*)，展开**网站**，右键单击**Default Web Site**，然后单击**属性**。  
   
 3. 在默认网站对话框中，在**目录安全性**选项卡上，单击**服务器证书**以启动**IIS 证书向导**。  
   
@@ -78,7 +78,7 @@ ms.locfileid: "65280908"
   
 6.  单击**浏览**以打开**选择文件**对话框。  
   
-7.  在中**选择文件**对话框框中，找到*\<驱动器\>*: \ 文件夹中，选择 certreq.txt 文件，然后单击**打开**。  
+7.  在中**选择文件**对话框框中，找到 *\<驱动器\>* : \ 文件夹中，选择 certreq.txt 文件，然后单击**打开**。  
   
 8.  上**提交证书申请或续订申请**页上，单击**读取**。  
   
@@ -129,15 +129,15 @@ ms.locfileid: "65280908"
   
 1.  单击**启动**，依次指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**。  
   
-2.  在 Internet Information Services 的左窗格中，单击 **（本地计算机）**，双击**服务器证书**右窗格中。 选择**完成证书申请**从操作窗格。  
+2.  在 Internet Information Services 的左窗格中，单击 **（本地计算机）** ，双击**服务器证书**右窗格中。 选择**完成证书申请**从操作窗格。  
   
-3.  在指定的证书颁发机构响应对话框框中键入**\<驱动器\>: \Certs\SSLCert.cer**中**包含证书颁发机构的响应文件的名称**文本框。 中的友好名称文本框中键入**ContosoSSLCert**。  
+3.  在指定的证书颁发机构响应对话框框中键入 **\<驱动器\>: \Certs\SSLCert.cer**中**包含证书颁发机构的响应文件的名称**文本框。 中的友好名称文本框中键入**ContosoSSLCert**。  
   
 ### <a name="to-enable-ssl-bindings-for-iis"></a>若要启用 IIS 的 SSL 绑定  
   
 1.  单击**启动**，依次指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**。  
   
-2.  在 Internet Information Services 的左窗格中，展开 **（本地计算机）**，展开**站点**，右键单击**Default Web Site**，然后单击**编辑绑定**。  
+2.  在 Internet Information Services 的左窗格中，展开 **（本地计算机）** ，展开**站点**，右键单击**Default Web Site**，然后单击**编辑绑定**。  
   
 3.  在站点绑定对话框中单击**添加**。 在添加网站绑定对话框中选择**https**从类型下拉列表中，选择**ContosoSSLCert** SSL 证书下拉列表中，单击**确定**，单击**关闭**.  
   
@@ -145,7 +145,7 @@ ms.locfileid: "65280908"
   
 1. 单击**启动**，依次指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**。  
   
-2. 在 Internet Information Services 的左窗格中，展开**\<** <em>computer_name</em> \> (*本地计算机*)，展开**Web站点**，右键单击**Default Web Site**，然后单击**属性**。  
+2. 在 Internet Information Services 的左窗格中，展开 **\<** <em>computer_name</em> \> (*本地计算机*)，展开**Web站点**，右键单击**Default Web Site**，然后单击**属性**。  
   
 3. 在默认网站属性对话框中，在**目录安全性**选项卡上，单击**服务器证书**以启动**IIS 证书向导**。  
   
@@ -153,7 +153,7 @@ ms.locfileid: "65280908"
   
 5. 上**挂起的证书申请**页上，选择**处理挂起的请求和安装证书**，然后单击**下一步**。  
   
-6. 上**处理挂起的申请**页上，在**路径和文件名**框中，键入**\<驱动器\>: \Certs\SSLCert.cer** （或浏览到该文件）然后单击**下一步**。  
+6. 上**处理挂起的申请**页上，在**路径和文件名**框中，键入 **\<驱动器\>: \Certs\SSLCert.cer** （或浏览到该文件）然后单击**下一步**。  
   
 7. 上**SSL 端口页**，单击**下一步**。  
   

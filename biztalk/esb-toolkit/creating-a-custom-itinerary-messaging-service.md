@@ -79,6 +79,6 @@ public IBaseMessage ExecuteRoute(IPipelineContext context, IBaseMessage msg, str
   
 1.  创建派生的类的程序集**IMessagingService;** 中**Execute**方法，包括对进行修改的消息或消息上下文 （如果有） 所需的所有逻辑。  
   
-2.  添加中的条目**itineraryServices**添加你的服务在 Esb.config 文件节**\<itineraryService\>** 具有一个 GUID 作为元素**id**属性，作为服务的名称**名称**属性，作为类的完全限定的名称**类型**属性，**消息传送**作为**作用域**特性，并且允许的阶段 (例如， **OnRampReceive**， **OnRampSend**， **OffRampSend**， **OffRampReceive**， **AllSend**， **AllReceive**，或**所有**) 作为**阶段**属性。  
+2.  添加中的条目**itineraryServices**添加你的服务在 Esb.config 文件节 **\<itineraryService\>** 具有一个 GUID 作为元素**id**属性，作为服务的名称**名称**属性，作为类的完全限定的名称**类型**属性，**消息传送**作为**作用域**特性，并且允许的阶段 (例如， **OnRampReceive**， **OnRampSend**， **OffRampSend**， **OffRampReceive**， **AllSend**， **AllReceive**，或**所有**) 作为**阶段**属性。  
   
 3.  在全局程序集缓存中注册新的程序集。

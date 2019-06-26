@@ -43,12 +43,12 @@ ms.locfileid: "65244236"
   
 4. 在中**发送端口属性**对话框中，选择**AS2EdiSend**有关**发送管道**。  
   
-5. 单击**筛选器**在控制台树中。 有关**属性**，选择**BTS。MessageType**。 有关**运算符**，选择**==**。 有关**值**，输入`http://schemas.microsoft.com/Edi/X12#X12_997_Root`。  
+5. 单击**筛选器**在控制台树中。 有关**属性**，选择**BTS。MessageType**。 有关**运算符**，选择 **==** 。 有关**值**，输入`http://schemas.microsoft.com/Edi/X12#X12_997_Root`。  
   
    > [!NOTE]
    >  此筛选器可确保发送端口仅将从 MessageBox 提取 997 确认。  
   
-6. 单击“确定” 。  
+6. 单击“确定”  。  
   
 7. 在中**发送端口**窗格[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，右键单击**Send_Async_997**发送端口，然后依次**启动**。  
   

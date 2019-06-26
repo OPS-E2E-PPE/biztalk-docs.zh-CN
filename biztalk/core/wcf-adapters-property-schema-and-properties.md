@@ -23,7 +23,7 @@ ms.locfileid: "65399145"
 阅读有关 WCF 适配器属性架构中升级的属性。 WCF 适配器将值分配给可以在应用程序中使用的属性。 WCF 适配器还提供了一种机制来编写，而不是升级到 BizTalk 消息上下文中，自定义属性和升级到 BizTalk 消息上下文的自定义属性的机制。 有关更多详细信息，请参阅[SOAP 标头发布 WCF 服务与](../core/soap-headers-with-published-wcf-services.md)。  
 
 ## <a name="promoted-properties"></a>升级的属性  
-**Namespace**： http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties  
+**Namespace**：http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties  
 
 #### <a name="action"></a>操作
 指定**SOAPAction**为传出消息的标头字段。 可以通过两种方式指定此值： 单一操作格式和操作映射格式。 如果将此属性设置在单一操作格式 — 例如， http://contoso.com/Svc/Op1 — **SOAPAction**标头传出消息将始终设置为此属性中指定的值。

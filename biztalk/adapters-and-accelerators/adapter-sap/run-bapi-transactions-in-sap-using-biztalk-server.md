@@ -229,7 +229,7 @@ SendToAdapter.isCommit == true
   
    有关使用索引 functoid 的详细信息，请参阅[索引 Functoid](../../core/index-functoid.md)。
        
-   映射架构后，可以测试映射使用映射文件的属性页。 有关详细信息，请参阅**<Map File>属性页对话框中，测试映射**选项卡[!INCLUDE[ui-guidance-developers-reference](../../includes/ui-guidance-developers-reference.md)]。
+   映射架构后，可以测试映射使用映射文件的属性页。 有关详细信息，请参阅 **<Map File>属性页对话框中，测试映射**选项卡[!INCLUDE[ui-guidance-developers-reference](../../includes/ui-guidance-developers-reference.md)]。
   
   在消息赋值形状中，指定要启动事务的消息上下文属性。 例如，可能是第一条消息的消息上下文属性：  
   

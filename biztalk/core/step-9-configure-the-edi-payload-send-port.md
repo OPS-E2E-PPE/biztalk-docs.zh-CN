@@ -36,19 +36,19 @@ ms.locfileid: "65244215"
    > [!NOTE]
    >  指定的文件类型，因为发送管道不在有效负载文件执行 AS2 处理。 它是只需将负载文件路由到本地文件夹以便您可以看到 EDI 事务集。  
   
-3. 在中**FILE 传输属性**对话框中，对于**目标文件夹**，浏览到并选择[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\AS2 Tutorial\\_EDIXMLToContoso。 将保留**文件名**作为 **%MessageID%.xml**。 单击“确定” 。  
+3. 在中**FILE 传输属性**对话框中，对于**目标文件夹**，浏览到并选择[!INCLUDE[btsBiztalkServerPath](../includes/btsbiztalkserverpath-md.md)]SDK\AS2 Tutorial\\_EDIXMLToContoso。 将保留**文件名**作为 **%MessageID%.xml**。 单击“确定”  。  
   
 4. 接受默认值为**PassThruTransmit**有关**发送管道**。  
   
    > [!NOTE]
    >  由于使用 PassThruTransmit 发送管道，因此管道将不会执行任何 EDI 负载消息处理，但将发送到本地文件夹以 XML 格式生成的 AS2EdiReceive 接收管道。  
   
-5. 单击**筛选器**在控制台树中。 有关**属性**，输入**BTS。MessageType**。 有关**运算符**，输入**==**。 有关**值**，输入`http://schemas.microsoft.com/BizTalk/Edi/X12/2006#X12_00401_864`。  
+5. 单击**筛选器**在控制台树中。 有关**属性**，输入**BTS。MessageType**。 有关**运算符**，输入 **==** 。 有关**值**，输入`http://schemas.microsoft.com/BizTalk/Edi/X12/2006#X12_00401_864`。  
   
    > [!NOTE]
    >  此筛选器可确保，此发送端口将仅提取 X12 864 负载消息从 MessageBox。  
   
-6. 单击“确定” 。  
+6. 单击“确定”  。  
   
 7. 在中**发送端口**窗格[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中，右键单击**Send_Payload_EdiXml**发送端口，然后依次**启动**。  
   

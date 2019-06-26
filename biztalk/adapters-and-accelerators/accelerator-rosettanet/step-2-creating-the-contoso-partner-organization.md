@@ -26,11 +26,11 @@ ms.locfileid: "65281283"
 
 ### <a name="to-start-the-btarn-management-console"></a>若要启动 BTARN 管理控制台  
 
-- 单击**启动**，依次指向**所有程序**，指向**Microsoft BizTalk\<版本\>Accelerator for RosettaNet**，然后单击**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台。  
+- 单击**启动**，依次指向**所有程序**，指向**Microsoft BizTalk\<版本\>Accelerator for RosettaNet**，然后单击 **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台。  
 
 ### <a name="to-create-fabrikam-as-a-trading-partner"></a>创建 Fabrikam 作为贸易合作伙伴  
 
-1. 在中**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台中，展开[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]，右键单击**合作伙伴**，指向**新建**，然后单击**合作伙伴**.  
+1. 在中 **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台中，展开[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]，右键单击**合作伙伴**，指向**新建**，然后单击**合作伙伴**.  
 
 2. 在新合作伙伴属性对话框中，在**常规**选项卡上，执行以下操作<strong>:</strong>  
 
@@ -56,7 +56,7 @@ ms.locfileid: "65281283"
    | **供应链代码** |     类型**电子元件**。     |
 
 
-4. 单击“确定” 。  
+4. 单击“确定”  。  
 
 ## <a name="see-also"></a>请参阅  
  [步骤 3：创建 Fabrikam 0C2 贸易合作伙伴协议](../../adapters-and-accelerators/accelerator-rosettanet/step-3-creating-the-fabrikam-0c2-trading-partner-agreement.md)

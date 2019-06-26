@@ -117,9 +117,9 @@ ms.locfileid: "65399648"
   
     3.  在中**传输名称**下拉列表中，单击**Wcf-basichttp**。  
   
-    4.  单击**传输位置**属性，并键入**http://localhost/ESB.CanadianServices/SubmitPOService.asmx**。  
+    4.  单击**传输位置**属性，并键入 **http://localhost/ESB.CanadianServices/SubmitPOService.asmx** 。  
   
-    5.  单击**目标 Namespace**属性，并键入**http://globalbank.esb.dynamicresolution.com/canadianservices**。  
+    5.  单击**目标 Namespace**属性，并键入 **http://globalbank.esb.dynamicresolution.com/canadianservices** 。  
   
     6.  单击**操作**属性，并键入**submitOrder**。  
   

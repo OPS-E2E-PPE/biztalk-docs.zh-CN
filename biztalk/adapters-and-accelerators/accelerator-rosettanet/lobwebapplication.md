@@ -41,7 +41,7 @@ ms.locfileid: "65283319"
   
 1.  单击**启动**，依次指向**所有程序**，指向**管理工具**，然后单击**Internet Information Services (IIS) Manager**.  
   
-2.  在信息服务管理器中，展开**\<计算机名\>（本地计算机）**，展开**网站**，然后右键单击**Default Web Site**.  
+2.  在信息服务管理器中，展开 **\<计算机名\>（本地计算机）** ，展开**网站**，然后右键单击**Default Web Site**.  
   
 3.  指向**新建**，然后单击**虚拟目录**。  
   
@@ -49,7 +49,7 @@ ms.locfileid: "65283319"
   
 5.  上**网站内容目录**页上，单击**浏览**，将移到\<*驱动器*\>\Program 文件 (x86) \Microsoft BizTalk \<版本\>Accelerator for RosettaNet\SDK\LOBWebApplication，单击**确定**，然后单击**下一步**。  
   
-6.  上**虚拟目录访问权限**页上，选择**读取**并**运行脚本**，然后单击**下一步**。 单击 **“完成”**。  
+6.  上**虚拟目录访问权限**页上，选择**读取**并**运行脚本**，然后单击**下一步**。 单击 **“完成”** 。  
   
 7.  添加配置 BTARN，（如 hostsvc) 到 STS_WPG 时所用的服务帐户用户。  
   
@@ -90,7 +90,7 @@ ms.locfileid: "65283319"
   
 4.  根据需要修改服务内容。  
   
-5.  单击“提交”。  
+5.  单击“提交”  。  
   
 ## <a name="remarks"></a>备注  
  LOBWebApplication 实用工具从指定的 PIP 生成消息实例，并生成的消息实例的服务内容输入到 ASPX 页。 若要执行此操作，该实用程序所用的技术，使用它来直接从 PIP 生成格式正确的消息实例。 有关详细信息，请参阅[根据 PIP 创建格式正确的消息实例](../../adapters-and-accelerators/accelerator-rosettanet/creating-a-well-formed-message-instance-from-a-pip.md)。 您可以填充 ASPX 页的实际数据来生成实际的消息实例中的服务内容的任何字段。  

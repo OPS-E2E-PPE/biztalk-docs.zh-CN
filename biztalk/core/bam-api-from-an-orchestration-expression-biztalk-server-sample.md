@@ -29,7 +29,7 @@ ms.locfileid: "65358631"
 -   创建使用跟踪配置文件，跟踪的 BAM 数据和使用 BAM API 跟踪的 BAM 数据之间的关系。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- 您可以找到在此示例*\<示例路径\>* \BAM\BamFromExpression。  
+ 您可以找到在此示例 *\<示例路径\>* \BAM\BamFromExpression。  
   
  下表列出了在此示例中的文件，并描述其用途。  
   
@@ -49,7 +49,7 @@ ms.locfileid: "65358631"
   
 ## <a name="create-the-tracking-profile"></a>创建跟踪配置文件  
   
-1.  打开命令提示符下以管理员身份，并运行*\<示例路径\>* \BAM\BAMFromExpression\Setup.bat。 Setup.bat 初始化此示例中，BAM 基础结构，并部署 BAM 活动。  
+1.  打开命令提示符下以管理员身份，并运行 *\<示例路径\>* \BAM\BAMFromExpression\Setup.bat。 Setup.bat 初始化此示例中，BAM 基础结构，并部署 BAM 活动。  
   
 2.  从你**程序** > **Microsoft BizTalk Server**，右键单击**跟踪配置文件编辑器**，和**以管理员身份运行**.
   
@@ -65,7 +65,7 @@ ms.locfileid: "65358631"
   
 8.  右键单击**Receive_1**形状，然后依次**消息负载架构**。  
   
-9. 展开**\<架构\>**，展开**PurchaseOrder**，展开**从**，然后将拖**PoID**方窗格**ActivityID**的左窗格中。  
+9. 展开 **\<架构\>** ，展开**PurchaseOrder**，展开**从**，然后将拖**PoID**方窗格**ActivityID**的左窗格中。  
   
 10. 从右窗格中，以下元素拖放到左窗格中已命名的节点上：  
   
@@ -83,7 +83,7 @@ ms.locfileid: "65358631"
   
 13. 拖动**Send_1**到右窗格中的形状**发送**的左窗格中。  
   
-14. 保存到跟踪配置文件*\<示例路径\>* \BAM\BamFromExpression\ BamFromExpression.btt。  
+14. 保存到跟踪配置文件 *\<示例路径\>* \BAM\BamFromExpression\ BamFromExpression.btt。  
   
 15. 上**工具**菜单上，单击**应用跟踪配置文件**。  
   
@@ -93,9 +93,9 @@ ms.locfileid: "65358631"
   
 ## <a name="run-this-sample"></a>运行此示例  
   
-将文件复制*\<示例路径\>* 到 \BamFromExpression\InputMessage.xml *\<示例路径\>* \BamFromExpression\Input。  
+将文件复制 *\<示例路径\>* 到 \BamFromExpression\InputMessage.xml *\<示例路径\>* \BamFromExpression\Input。  
   
-在大约 10 秒的输出消息将出现在*\<示例路径\>* \BamFromExpression\Output。  
+在大约 10 秒的输出消息将出现在 *\<示例路径\>* \BamFromExpression\Output。  
   
 ## <a name="view-the-bam-data"></a>查看 BAM 数据  
   
@@ -117,9 +117,9 @@ ms.locfileid: "65358631"
   
 ## <a name="re-run-the-sample"></a>重新运行该示例  
   
-1.  打开命令提示符下以管理员身份，并运行*\<示例路径\>* \BAM\BamFromExpression\Cleanup.bat，以删除跟踪配置文件和其他 BAM 基础结构。 
+1.  打开命令提示符下以管理员身份，并运行 *\<示例路径\>* \BAM\BamFromExpression\Cleanup.bat，以删除跟踪配置文件和其他 BAM 基础结构。 
   
-2.  运行*\<示例路径\>* \BAM\BamFromExpression\Setup.bat，以编译该示例并将其部署。  
+2.  运行 *\<示例路径\>* \BAM\BamFromExpression\Setup.bat，以编译该示例并将其部署。  
   
 ## <a name="see-also"></a>请参阅  
  [业务活动监视 （BizTalk Server 示例文件夹）](../core/business-activity-monitoring-biztalk-server-samples-folder.md)   

@@ -22,7 +22,7 @@ ms.locfileid: "65357963"
 # <a name="biztalk-representation-of-schemas"></a>BizTalk 架构表示法
 
 ## <a name="overview"></a>概述
-虽然 BizTalk 架构最终表示，并保留在 XML 架构定义 (XSD) 语言中，这些列表示为节点的图形化层次结构中，当 BizTalk 编辑器中使用。 在层次结构的顶层始终是**\<架构\>** 节点，然后其余类型的节点用于生成架构，使其表示通过使用 BizTalk 交换的特定消息。  
+虽然 BizTalk 架构最终表示，并保留在 XML 架构定义 (XSD) 语言中，这些列表示为节点的图形化层次结构中，当 BizTalk 编辑器中使用。 在层次结构的顶层始终是 **\<架构\>** 节点，然后其余类型的节点用于生成架构，使其表示通过使用 BizTalk 交换的特定消息。  
 
 ## <a name="insert-schema-node-options"></a>插入架构节点选项  
  BizTalk 编辑器提供了一种方法来构造 XSD 架构，而无需了解任何复杂的 XSD 语法。 使用时**插入 Schema 节点**命令**BizTalk**菜单或快捷菜单，要插入的节点的以下选项将出现在级联菜单。  

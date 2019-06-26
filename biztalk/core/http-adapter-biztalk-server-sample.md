@@ -119,7 +119,7 @@ HTTP 适配器示例演示如何实现中使用的请求/响应和要求/响应�
    | Description |      类型**示例 HTTP.NET 适配器**。       |
 
 
-5. 单击“确定” 。  
+5. 单击“确定”  。  
 
 6. 此时，适配器将显示在 BizTalk 管理控制台右侧窗口中的适配器列表中。  
 
@@ -140,7 +140,7 @@ HTTP 适配器示例演示如何实现中使用的请求/响应和要求/响应�
    现在，HTTP.NET 适配器已准备好应用程序使用。 配置适配器的格式时**虚拟目录**传输属性的形式： /httpreceive/httpreceive.aspx?optionalQueryString。  
 
 ## <a name="comments"></a>注释  
- 建立的 HTTP.NET 适配器中提供的 BaseAdapter 类用法*\<示例路径\>* \AdaptersDevelopment\BaseAdapter\v1.0...2\\。 BaseAdapter 项目中提供的类旨在加快适配器的开发速度。 请参考有关提供的类的详细信息的 BaseAdapter 代码注释。  
+ 建立的 HTTP.NET 适配器中提供的 BaseAdapter 类用法 *\<示例路径\>* \AdaptersDevelopment\BaseAdapter\v1.0...2\\。 BaseAdapter 项目中提供的类旨在加快适配器的开发速度。 请参考有关提供的类的详细信息的 BaseAdapter 代码注释。  
 
 ## <a name="see-also"></a>请参阅  
  [注册适配器](../core/registering-an-adapter.md)   

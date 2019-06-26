@@ -45,7 +45,7 @@ ms.locfileid: "65288001"
 
    |        使用此选项        |                                                                     执行的操作                                                                     |
    |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-   | **目标文件夹** | 浏览到**\<**<em>驱动器</em>**:\>\Program Files\Microsoft BizTalk\<版本\>HL7\SDK\End 端到端的快捷键Tutorial\Tutorial_sendMsg_RX**。 |
+   | **目标文件夹** | 浏览到 **\<** <em>驱动器</em> **:\>\Program Files\Microsoft BizTalk\<版本\>HL7\SDK\End 端到端的快捷键Tutorial\Tutorial_sendMsg_RX**。 |
    |     **文件名**      |                                   类型 **%MessageID%.txt** （替换带.txt 扩展名的.xml 扩展名）。                                   |
 
 
@@ -58,14 +58,14 @@ ms.locfileid: "65288001"
    |----------------------------|--------------------------------------------------------------------------------------------------|
    | **属性**（第一次行）  |                       选择**BTS。MessageType**从下拉列表。                        |
    |        **“运算符”**        |                              选择 **！ =** 从下拉列表。                              |
-   |         **ReplTest1**          |                类型**<http://microsoft.com/HealthCare/HL7/2X#ACK_24_GLO_DEF>**。                 |
+   |         **ReplTest1**          |                类型 **<http://microsoft.com/HealthCare/HL7/2X#ACK_24_GLO_DEF>** 。                 |
    |        **分组依据**        |                              选择**或**从下拉列表。                              |
    | **属性**（第二行） | 单击下的字段**属性**，然后选择**BTS。MessageType**从下拉列表。 |
    |        **“运算符”**        |                              选择 **！ =** 从下拉列表。                              |
    |         **ReplTest1**          |                类型 **<http://microsoft.com/HealthCare/HL7/2X#ACK_25_GLO_DEF>。**                 |
    |        **分组依据**        |                             选择**AND**从下拉列表。                              |
    | **属性**（第三个行）  |                                 选择**BTAHL7Schemas.MSH3_1**。                                 |
-   |        **“运算符”**        |                              选择**==** 从下拉列表。                              |
+   |        **“运算符”**        |                              选择 **==** 从下拉列表。                              |
    |         **ReplTest1**          |                                   类型**Tutorial_ADTSystem**。                                   |
 
    > [!NOTE]

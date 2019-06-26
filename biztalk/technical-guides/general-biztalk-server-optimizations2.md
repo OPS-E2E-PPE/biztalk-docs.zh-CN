@@ -98,7 +98,7 @@ ms.locfileid: "65392041"
 > [!NOTE]  
 >  这些值是仅; 作为指导请确保测试对这些参数的更改。  
   
- 有关优化的 ASP.NET 2.0 Web 应用程序的 machine.config 文件中的参数的详细信息，请参阅 Microsoft 知识库文章[821268"争用、 性能不佳和死锁时从 ASP.NET 发出 Web 服务请求应用程序"](http://go.microsoft.com/fwlink/?LinkID=66483) (http://go.microsoft.com/fwlink/?LinkID=66483)。  
+ 有关优化的 ASP.NET 2.0 Web 应用程序的 machine.config 文件中的参数的详细信息，请参阅 Microsoft 知识库文章[821268"争用、 性能不佳和死锁时从 ASP.NET 发出 Web 服务请求应用程序"](http://go.microsoft.com/fwlink/?LinkID=66483) (http://go.microsoft.com/fwlink/?LinkID=66483) 。  
   
 ### <a name="manage-the-number-of-concurrently-executing-requests-for-web-applications-that-host-orchestrations-on-iis-70-running-in-integrated-mode"></a>管理并发执行的 Web 应用程序托管在集成模式下运行的 IIS 7.0 上的业务流程的请求数  
  ASP.NET 2.0 承载于 IIS 7.0 中集成模式下，当使用线程处理方式不同于 IIS 6.0 或 IIS 7.0 上在经典模式下。 当 ASP.NET 2.0 承载于 IIS 7.0 中集成模式下时，ASP.NET 2.0 限制的并发执行数**请求**而不是数**线程**并发执行的请求。 同步方案这将间接限制线程数，但异步方案的请求和线程数可能会大不相同。 当在集成模式下，IIS 7.0 上运行 ASP.NET 2.0 **maxWorkerThreads**并**maxIoThreads** machine.config 文件中的参数不用于管理的正在运行的线程数。 相反，并发执行的请求的更改号从默认值为每个 CPU 的 12 通过修改为指定的值**maxConcurrentThreadsPerCPU**。 **MaxConcurrentThreadsPerCPU** reqistry 中或在 aspnet.config 文件的配置部分中，可以指定值。 请执行以下步骤，若要更改的默认值为**maxConcurrentThreadsPerCPU**来控制的同时执行的请求数：  
@@ -111,7 +111,7 @@ ms.locfileid: "65392041"
 > [!NOTE]  
 >  此设置是全局的并且不能更改为单个应用程序池或应用程序。  
   
-1. 依次单击 **启动”** 和 **运行”**，键入 **regedit.exe**，然后单击 **确定”** 以启动注册表编辑器。  
+1. 依次单击 **启动”** 和 **运行”** ，键入 **regedit.exe**，然后单击 **确定”** 以启动注册表编辑器。  
   
 2. 导航到**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\2.0.50727.0**  
   
@@ -156,8 +156,8 @@ ms.locfileid: "65392041"
   
 1. 停止 BizTalk 主机实例。  
   
-2. 依次单击 **启动”** 和 **运行”**，键入 **regedit.exe**，然后单击 **确定”** 以启动注册表编辑器。  
-   导航到**HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc$**<em>主机名</em>] 其中*主机名*是与主机相关联的主机名称实例。  
+2. 依次单击 **启动”** 和 **运行”** ，键入 **regedit.exe**，然后单击 **确定”** 以启动注册表编辑器。  
+   导航到**HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc$** <em>主机名</em>] 其中*主机名*是与主机相关联的主机名称实例。  
   
    > [!NOTE]  
    >  如果有从 BizTalk Server 2004 升级到 BizTalk Server 2006 安装，此注册表项可能表示为 **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BTSSvc * * * guid*] 其中*guid*是唯一的 BizTalk Server 主机的每个实例的 GUID。  

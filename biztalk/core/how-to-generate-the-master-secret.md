@@ -35,7 +35,7 @@ ms.locfileid: "65337708"
   
 ### <a name="to-generate-the-master-secret-using-the-mmc-snap-in"></a>若要生成使用 MMC 管理单元中的主密钥  
   
-1.  在“开始”  菜单上，依次单击“所有程序” 、“Microsoft Enterprise Single Sign-On” 和“SSO 管理” 。  
+1.  在“开始”  菜单上，依次单击“所有程序”  、“Microsoft Enterprise Single Sign-On”  和“SSO 管理”  。  
   
 2.  在 ENTSSO MMC 管理单元的作用域窗格中，展开“企业单一登录”  节点。  
   
@@ -45,9 +45,9 @@ ms.locfileid: "65337708"
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行中，转至企业单一登录安装目录。 默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。  
+2.  在命令行中，转至企业单一登录安装目录。 默认安装目录 *\<驱动器\>* : \Program Files\Common Files\Enterprise Single Sign-on。  
   
-3.  类型**ssoconfig-generateSecret \<*备份文件*\>**，其中\<*备份文件*\>的名称使用包含主密钥的文件。  
+3.  类型**ssoconfig-generateSecret \<*备份文件*\>** ，其中\<*备份文件*\>的名称使用包含主密钥的文件。  
   
      系统将提示您输入密码以保护刚刚创建的文件。  
   

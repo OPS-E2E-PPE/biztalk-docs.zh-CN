@@ -28,11 +28,11 @@ ms.locfileid: "65337931"
   
 ### <a name="to-enable-ssl-for-enterprise-single-sign-on"></a>若要为企业单一登录启用 SSL  
   
-1.  依次单击 **“开始”** 和 **“运行”**，然后键入 **cmd**。  
+1.  依次单击 **“开始”** 和 **“运行”** ，然后键入 **cmd**。  
   
-2.  在命令行中，转至企业单一登录安装目录。 默认安装目录**\<驱动器\>**: \Program Files\Common Files\Enterprise Single Sign-on。  
+2.  在命令行中，转至企业单一登录安装目录。 默认安装目录 **\<驱动器\>** : \Program Files\Common Files\Enterprise Single Sign-on。  
   
-3.  类型**ssoconfig – setSSL\<是/否\>**，其中\<**是/否**\>指示您是否希望在 SSO 系统中启用 SSL。  
+3.  类型**ssoconfig – setSSL\<是/否\>** ，其中\<**是/否**\>指示您是否希望在 SSO 系统中启用 SSL。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

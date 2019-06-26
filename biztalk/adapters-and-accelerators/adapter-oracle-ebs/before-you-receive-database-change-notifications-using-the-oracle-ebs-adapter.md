@@ -29,7 +29,7 @@ ms.locfileid: "65375782"
   
 - 该操作所影响的记录数不会影响操作的通知消息。 例如，而不考虑为 Oracle 数据库表中插入的记录数，适配器客户端收到一个通知消息。  
   
-- 我们建议适配器客户端应用程序包含的逻辑来解释的类型从 Oracle 数据库接收的通知。 适配器客户端应用程序可以执行操作来提取中的信息**\<信息\>** 收到的通知消息的元素。 下面是收到了插入操作的通知消息的示例。  
+- 我们建议适配器客户端应用程序包含的逻辑来解释的类型从 Oracle 数据库接收的通知。 适配器客户端应用程序可以执行操作来提取中的信息 **\<信息\>** 收到的通知消息的元素。 下面是收到了插入操作的通知消息的示例。  
   
   ```  
   <?xml version="1.0" encoding="utf-8" ?>   
@@ -50,7 +50,7 @@ ms.locfileid: "65375782"
   </Notification>  
   ```  
   
-   请注意内的值 **\<信息\>** 元素。 此值提供为其接收通知消息操作的信息。 你的应用程序应具有的功能中的值中提取 **\<信息\>** 元素，然后根据值，执行后续任务。 本主题[进程通知消息到 Oracle E-business Suite 中完成特定任务](../../adapters-and-accelerators/adapter-oracle-ebs/process-notification-messages-to-complete-specific-tasks-in-oracle-ebs.md)说明了如何在值中提取**\<信息\>** 元素.  
+   请注意内的值 **\<信息\>** 元素。 此值提供为其接收通知消息操作的信息。 你的应用程序应具有的功能中的值中提取 **\<信息\>** 元素，然后根据值，执行后续任务。 本主题[进程通知消息到 Oracle E-business Suite 中完成特定任务](../../adapters-and-accelerators/adapter-oracle-ebs/process-notification-messages-to-complete-specific-tasks-in-oracle-ebs.md)说明了如何在值中提取 **\<信息\>** 元素.  
   
 - 理想情况下，客户端应用程序收到通知后，它应更新为其已收到通知，以便后续通知不能用于同一条记录的记录。 例如，考虑**ACCOUNTACTIVITY**具有表**处理**列。 对于所有新记录插入到**ACCOUNTACTIVITY**表中的值**处理**列始终是 ' n '。 例如，在插入操作，在中记录**ACCOUNTACTIVITY**表将如下所示：  
   

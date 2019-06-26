@@ -69,11 +69,11 @@ ms.locfileid: "65341264"
   
 ## <a name="configure-the-job"></a>配置作业  
   
-1. 在托管 BizTalk 管理数据库的 SQL Server 上，打开 **“SQL Server Management Studio”**，然后连接到 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]。  
+1. 在托管 BizTalk 管理数据库的 SQL Server 上，打开 **“SQL Server Management Studio”** ，然后连接到 [!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]。  
   
-2. 展开 **“SQL Server 代理”**，然后展开 **“作业”**。  
+2. 展开 **“SQL Server 代理”** ，然后展开 **“作业”** 。  
   
-3. 右键单击 **“备份 BizTalk Server (BizTalkMgmtDb)”** ，然后选择 **“属性”**。 在“作业属性”中，选择 **“步骤”**。  
+3. 右键单击 **“备份 BizTalk Server (BizTalkMgmtDb)”** ，然后选择 **“属性”** 。 在“作业属性”中，选择 **“步骤”** 。  
   
 4. 选择**设置压缩选项**步骤，，然后选择**编辑**:  
 
@@ -91,12 +91,12 @@ ms.locfileid: "65341264"
   
    2. **名称**：默认值是**BTS**。 该名称用作备份文件名的一部分。  
   
-   3. **备份文件的位置**:替换为*\<目标路径\>* 替换为计算机和你想要备份的文件夹的完整路径 （该路径必须包含单引号）[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库或 blob 服务终结点到 Azure blob 存储帐户的 URL。  
+   3. **备份文件的位置**:替换为 *\<目标路径\>* 替换为计算机和你想要备份的文件夹的完整路径 （该路径必须包含单引号）[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库或 blob 服务终结点到 Azure blob 存储帐户的 URL。  
 
       > [!IMPORTANT]
       > - 如果输入本地路径，则必须将所有文件手动都复制到目标系统上的同一文件夹时备份[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]作业创建新文件。  
       > 
-      >      若要使用的远程路径，请如输入 UNC 共享\\ \\  *\<ServerName\>*\\*\<SharedDrive\>*  \\，其中*\<ServerName\>* 想文件，其中的服务器的名称和*\<SharedDrive\>* 是共享的驱动器或文件夹的名称。  
+      >      若要使用的远程路径，请如输入 UNC 共享\\ \\  *\<ServerName\>* \\ *\<SharedDrive\>*  \\，其中 *\<ServerName\>* 想文件，其中的服务器的名称和 *\<SharedDrive\>* 是共享的驱动器或文件夹的名称。  
       > 
       >      通过网络备份数据可能会受网络问题的影响。 当使用远程位置时，在备份 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 作业完成后，请验证备份是否成功。  
       > - 若要避免潜在的数据丢失，请将备份磁盘配置为除数据库数据和日志磁盘以外的磁盘。 这样做是必需的，以便你可以在数据或日志磁盘出现故障时访问备份。  
@@ -133,14 +133,14 @@ ms.locfileid: "65341264"
   
 6. 选择**MarkAndBackupLog**步骤，，然后选择**编辑**。 在中**命令**框中，更新参数值：  
   
-   1. <strong>@MarkName</strong>：这是备份文件的命名约定的一部分：\<服务器名称\>\_\<数据库名称\>**\_日志\_** \<日志标记名称\> \_ \<时间戳\>  
+   1. <strong>@MarkName</strong>：这是备份文件的命名约定的一部分：\<服务器名称\>\_\<数据库名称\> **\_日志\_** \<日志标记名称\> \_ \<时间戳\>  
     
    2. <strong>@BackupPath</strong>：完整的目标路径 （包括单引号） 的计算机和文件夹以存储[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库日志，或 Azure blob 存储帐户和容器。 *\<目标路径\>* 也可以是本地或另一台服务器的 UNC 路径。  
   
       MarkAndBackupLog 步骤将日志标记为备份，然后对其进行备份。  
   
    > [!IMPORTANT]
-   >  若要避免**潜在的数据丢失**和有关**性能改进**，则*\<目标路径\>* 应设置为另一台计算机或硬盘，不同于用于存储原始数据库日志。  
+   >  若要避免**潜在的数据丢失**和有关**性能改进**，则 *\<目标路径\>* 应设置为另一台计算机或硬盘，不同于用于存储原始数据库日志。  
   
     选择 **确定**。  
   
@@ -164,7 +164,7 @@ ms.locfileid: "65341264"
    > [!NOTE]
    >  第一次配置备份 [!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)] 作业时将运行该作业。 默认情况下，在后续运行中，备份[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]作业完成一次一天的完整备份和完成每隔 15 分钟的日志备份。  
   
-9. 右键单击**备份 BizTalk Server**作业，然后选择**启用**。 状态应更改为 **“成功”**。  
+9. 右键单击**备份 BizTalk Server**作业，然后选择**启用**。 状态应更改为 **“成功”** 。  
 
 ## <a name="execute-backupsetupallprocssql-and-logshippingdestinationlogicsql"></a>执行 Backup_Setup_All_Procs.sql 和 LogShipping_Destination_Logic.sql
 
@@ -176,7 +176,7 @@ ms.locfileid: "65341264"
 
     [返回自定义数据库](how-to-back-up-custom-databases.md)提供自定义数据库有关的更多详细信息。 
 
-2. **如果您使用[日志传送](log-shipping.md)**，SQL Server 中的目标系统上执行 LogShipping_Destination_Logic.sql 脚本。 如果不使用日志传送，则不执行此脚本。
+2. **如果您使用[日志传送](log-shipping.md)** ，SQL Server 中的目标系统上执行 LogShipping_Destination_Logic.sql 脚本。 如果不使用日志传送，则不执行此脚本。
 
     [为使日志传送配置的目标系统](how-to-configure-the-destination-system-for-log-shipping.md)目标系统上提供更多详细信息。
 

@@ -39,15 +39,15 @@ ms.locfileid: "65374544"
   
 4.  在中**窗体类别**列表中，单击**MS_SAMPLE_EMPLOYEE**。 在创建中的 Web 部件页时指定此名称[方案 1:使用业务数据列表 web 部件显示数据](../../adapters-and-accelerators/adapter-oracle-ebs/scenario-1-display-data-using-business-data-list-web-part.md)。  
   
-5.  搜索基于搜索字符串的员工。 例如，若要搜索的所有员工，请键入**%** 在文本框中，单击**检索数据**。 下图显示了从 Oracle E-business Suite 中检索到的记录：  
+5.  搜索基于搜索字符串的员工。 例如，若要搜索的所有员工，请键入 **%** 在文本框中，单击**检索数据**。 下图显示了从 Oracle E-business Suite 中检索到的记录：  
   
      ![搜索结果](../../adapters-and-accelerators/adapter-oracle-ebs/media/bdc-result.gif "BDC_Result")  
   
 6.  您还可以通过输入其名字或姓氏搜索特定雇员：  
   
-    -   若要使用第一个名称进行搜索，请键入后跟一个雇员的姓名首字母**%** 符号以返回与搜索条件匹配的所有员工记录。  
+    -   若要使用第一个名称进行搜索，请键入后跟一个雇员的姓名首字母 **%** 符号以返回与搜索条件匹配的所有员工记录。  
   
-    -   若要使用的最后一个名称进行搜索，请键入**%** 跟员工的姓氏。  
+    -   若要使用的最后一个名称进行搜索，请键入 **%** 跟员工的姓氏。  
   
     > [!NOTE]
     >  区分大小写的搜索字符串。  

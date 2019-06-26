@@ -38,7 +38,7 @@ TRFC 服务器调用是事务性的 RFC 服务器调用。 在事务上下文中
     有关绑定属性以及如何将其设置的详细信息，请参阅[了解用于 mySAP Business Suite 绑定属性的 BizTalk 适配器](../../adapters-and-accelerators/adapter-sap/read-about-biztalk-adapter-for-mysap-business-suite-binding-properties.md)。  
   
    > [!IMPORTANT]
-   >  [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装向导安装 SQL 脚本，SapAdapter-DbScript-Install.sql，必须运行由 SQL Server 管理员在 SQL Server 中创建数据库和数据库对象。 该脚本通常安装在*\<安装驱动器\>： 程序 FilesMicrosoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]* 。  
+   >  [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]安装向导安装 SQL 脚本，SapAdapter-DbScript-Install.sql，必须运行由 SQL Server 管理员在 SQL Server 中创建数据库和数据库对象。 该脚本通常安装在 *\<安装驱动器\>： 程序 FilesMicrosoft [!INCLUDE[adapterpacknoversion](../../includes/adapterpacknoversion-md.md)]* 。  
    > 
    >  [!INCLUDE[adaptersap_short](../../includes/adaptersap-short-md.md)]这些对象用于持久保存 Tid。 因此，SQL Server 管理员必须确保用户名称提供，如连接字符串的一部分具有足够权限来执行存储的过程。 如果 Windows 用户有足够的权限在数据库中执行存储的过程，也可以选择 Windows 身份验证。  
   

@@ -22,7 +22,7 @@ ms.locfileid: "65249319"
 # <a name="viewing-information-in-the-operations-manager-console"></a>在 Operations Manager 控制台中查看信息
 使用与提供的视图[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理包，以了解当前可用性、 配置、 运行状况，以及 BizTalk Server 环境的性能。 视图可能会包含很长的对象列表。 若要查找特定对象组，您可以使用 Operations Manager 工具栏上的作用域、 搜索和查找按钮。 有关详细信息，请参阅如何管理监视数据使用作用域、 搜索，并在 Operations Manager 2007 R2\2012 帮助中查找主题。  
   
- 以下视图正下方列出**[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]** 在操作控制台的监视窗格中的节点。  
+ 以下视图正下方列出 **[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]** 在操作控制台的监视窗格中的节点。  
   
 -   **应用程序视图**:BizTalk 管理员是希望监视的状态和运行状况的各种 BizTalk Server 项目和应用程序，如业务流程发送端口、 接收位置，依次类推。  
   

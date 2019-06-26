@@ -46,7 +46,7 @@ ms.locfileid: "65250233"
   
 1. 单击**启动**，依次指向**程序**，指向**管理工具**，然后单击**POP3 服务**。  
   
-2. 展开*\<servername\>* 单击你想要创建邮箱的域。  
+2. 展开 *\<servername\>* 单击你想要创建邮箱的域。  
   
 3. 在中**POP3 服务**对话框中，在右窗格中，单击**添加邮箱**选项。  
   
@@ -61,7 +61,7 @@ ms.locfileid: "65250233"
 ## <a name="create-the-receive-location"></a>创建接收位置  
  请执行以下步骤创建接收位置：  
   
-1. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中双击默认数据库**\<** <em>m a c h</em>**\>。BizTalkMgmtDb.dbo**，其中*m a c h*是您的计算机的名称。 单击**应用程序**，然后单击**BizTalk.Application.1**。  
+1. 在中[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]管理控制台中双击默认数据库 **\<** <em>m a c h</em> **\>。BizTalkMgmtDb.dbo**，其中*m a c h*是您的计算机的名称。 单击**应用程序**，然后单击**BizTalk.Application.1**。  
   
 2. 右键单击**接收端口**，单击**新建**，单击**单向接收端口**。  
   
@@ -108,7 +108,7 @@ ms.locfileid: "65250233"
   
 8. 在中**发送管道**框中，选择**Microsoft.BizTalk.DefaultPipelines.PassThruTransmit**。  
   
-9. 单击 **“筛选器”**。  
+9. 单击 **“筛选器”** 。  
   
 10. 在中**属性**框中，选择**BTS。ReceivePortName**。  
   
@@ -134,9 +134,9 @@ ms.locfileid: "65250233"
   
 4.  在中**显示名称**框中，键入显示名称，然后单击**下一步**。  
   
-5.  在中**Internet 电子邮件地址**对话框中**电子邮件地址**框中，键入**EmailTest @< 域名 >**，然后单击**下一步**.  
+5.  在中**Internet 电子邮件地址**对话框中**电子邮件地址**框中，键入**EmailTest @< 域名 >** ，然后单击**下一步**.  
   
-     请务必输入适当的值 *< 域名 >*。 此值应与在 Windows 服务器上的 POP3 服务管理接口中以其名义创建此邮箱的域的名称匹配。  
+     请务必输入适当的值 *< 域名 >* 。 此值应与在 Windows 服务器上的 POP3 服务管理接口中以其名义创建此邮箱的域的名称匹配。  
   
 6.  在中**电子邮件服务器名称**对话框中**传入邮件**并**传出邮件**框中，键入服务器名称或 IP 地址的 Windows 服务器，然后单击**下一步**。  
   

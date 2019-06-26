@@ -25,7 +25,7 @@ ms.lasthandoff: 05/07/2019
 ms.locfileid: "65390265"
 ---
 # <a name="consuming-web-services-with-soap-headers"></a>使用 SOAP 标头使用的 Web 服务
-使用具有定义的 SOAP 标头的 Web 服务后，这些标头可供你的业务流程和管道组件作为上下文属性。 这些上下文属性包含的 SOAP 标头的字符串表示形式。 对于 Web 服务中每个定义 SOAP 标头，你可以使用对应于 SOAP 标头的根元素的名称来创建上下文属性。 定义的 SOAP 标头上下文属性位于**http://schemas.microsoft.com/BizTalk/2003/SOAPHeader**命名空间。  
+使用具有定义的 SOAP 标头的 Web 服务后，这些标头可供你的业务流程和管道组件作为上下文属性。 这些上下文属性包含的 SOAP 标头的字符串表示形式。 对于 Web 服务中每个定义 SOAP 标头，你可以使用对应于 SOAP 标头的根元素的名称来创建上下文属性。 定义的 SOAP 标头上下文属性位于 **http://schemas.microsoft.com/BizTalk/2003/SOAPHeader** 命名空间。  
   
  下面的示例演示如何创建 SOAP 标头上下文属性**OrigDest**使用中的 SOAP 标头示例[与使用 Web 服务的 SOAP 标头](../core/soap-headers-with-consumed-web-services.md):  
   

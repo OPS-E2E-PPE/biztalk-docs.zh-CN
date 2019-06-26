@@ -52,11 +52,11 @@ ms.locfileid: "65356145"
   
 4. 有关**数据元素**，输入一个字符[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将用于分隔复合数据元素包含两个或多个简单数据元素和不属于复合元素的简单数据元素。 选择**Char**字符数据元素或**Hex**十六进制数据元素。 当您更改的格式时，会自动将更改你输入的字符**Char**到**Hex** ，反之亦然。  
   
-5. 有关**组件元素分隔符 (ISA16)**，输入一个字符[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将用于分隔复合数据元素中的简单数据元素。 选择**Char**字符数据元素或**Hex**十六进制数据元素。 当您更改的格式时，会自动将更改你输入的字符**Char**到**Hex** ，反之亦然。  
+5. 有关**组件元素分隔符 (ISA16)** ，输入一个字符[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将用于分隔复合数据元素中的简单数据元素。 选择**Char**字符数据元素或**Hex**十六进制数据元素。 当您更改的格式时，会自动将更改你输入的字符**Char**到**Hex** ，反之亦然。  
   
 6. 有关**段终止符**，输入单个字符，用于指示 EDI 段尾。 选择**Char**字符数据元素或**Hex**十六进制数据元素。  
   
-    如果类型为**Char**，默认值是**~**。  
+    如果类型为**Char**，默认值是 **~** 。  
   
     如果类型为**十六进制**，默认值是**7E**。  
   

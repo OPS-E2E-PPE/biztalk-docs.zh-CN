@@ -24,7 +24,7 @@ ms.locfileid: "65377084"
   
 1.  转到在上一步中生成的 InfoPath 窗体模板的输出文件夹 **...\MTXXX\TemplateDS\InfoPath 窗体模板**。  
   
-2.  在 Internet Explorer 中，打开**http://localhost/sites/BASSite/New%20SWIFT%20MT%20Messages**。  
+2.  在 Internet Explorer 中，打开 **http://localhost/sites/BASSite/New%20SWIFT%20MT%20Messages** 。  
   
 3.  在新 Swift MT 消息窗口中，单击**上载**。  
   
@@ -34,4 +34,4 @@ ms.locfileid: "65377084"
   
 6.  在上载文档窗口中，单击**确定**。  
   
-7.  在新的 SWIFT MT 消息：MTXXX 窗口中的，Namespace 框中，键入**http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMTxxx**，然后单击**确定**。
+7.  在新的 SWIFT MT 消息：MTXXX 窗口中的，Namespace 框中，键入 **http://schemas.microsoft.com/BizTalk/Solutions/FinancialServices/SWIFT/EnvelopeMTxxx** ，然后单击**确定**。

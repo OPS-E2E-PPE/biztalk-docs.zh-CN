@@ -31,14 +31,14 @@ Microsoft BizTalk Accelerator for HL7 ([!INCLUDE[btaBTAHL71.3abbrevnonumber](../
 
 HL7 从业务线 (LOB) 系统接收消息，并可能会收到它们使用 MLLP 适配器。 LOB 系统连接到处的 MLLP 适配器上[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]通过 TCP 端口，然后向处的 MLLP 适配器发送消息。
 
-在中**[!INCLUDE[bts2013r2_md](../../includes/bts2013r2-md.md)]和较旧版本**，HL7 MLLP 接收远程 LOB 系统连接到 MLLP 传输适配器等待。 LOB 系统远程 LOB 系统连接后，将使用为 MLLP 的消息发送[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 具体来说： 
+在中 **[!INCLUDE[bts2013r2_md](../../includes/bts2013r2-md.md)]和较旧版本**，HL7 MLLP 接收远程 LOB 系统连接到 MLLP 传输适配器等待。 LOB 系统远程 LOB 系统连接后，将使用为 MLLP 的消息发送[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]。 具体来说： 
 
 1. 远程 LOB 系统连接到本地处的 MLLP 适配器[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]使用 TCP 端口 
 2. BTA4HL7 的接收位置处的 MLLP 适配器接受连接 
 3. 远程 LOB 系统将一个或多个消息传递 
 4. 断开与远程 LOB 系统的连接
 
-在中**[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]和更高版本**、 由处的 MLLP 适配器，启动与 LOB 系统的连接，并为 MLLP 的 LOB 系统推送消息接收。 换而言之，远程 LOB 系统等待向 MLLP 发送消息传递之前的连接。 具体来说： 
+在中 **[!INCLUDE[bts2016_md](../../includes/bts2016-md.md)]和更高版本**、 由处的 MLLP 适配器，启动与 LOB 系统的连接，并为 MLLP 的 LOB 系统推送消息接收。 换而言之，远程 LOB 系统等待向 MLLP 发送消息传递之前的连接。 具体来说： 
 
 1. 本地[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]连接到远程 LOB 系统使用的 TCP 端口 
 2. BTA4HL7 的接收位置处的 MLLP 适配器启动连接 

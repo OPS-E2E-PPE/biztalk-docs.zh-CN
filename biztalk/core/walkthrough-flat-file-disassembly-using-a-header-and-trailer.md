@@ -77,7 +77,7 @@ ms.locfileid: "65395338"
   
     该文件可以具有一个或多个错误记录。  
   
-     * *--或者-* *
+     \* *--或者-* *
   
      将下面的示例数据复制到新的文件。 最后一行包含一个尾随的换行符：
   
@@ -111,7 +111,7 @@ ms.locfileid: "65395338"
   
      ![选用于头部架构的数据](../core/media/ffwiz-header-select-document-data.gif "ffwiz_header_select_document_data")  
   
-     单击“下一步” 。  
+     单击“下一步”  。  
   
 6.  上**选择记录格式**页上，单击**下一步**接受默认值。 你可以接受默认值"按分隔符符号"，因为数据文件不使用相对位置。  
   
@@ -129,7 +129,7 @@ ms.locfileid: "65395338"
   
      完成后，单击**完成**以完成向导。  
   
-10. 单击**\<架构\>** 标头架构窗格中的节点。 在属性窗格中更改**Element FormDefault**到**限定**。 这表示必须在实例文档中的目标命名空间限定本地声明的元素。  
+10. 单击 **\<架构\>** 标头架构窗格中的节点。 在属性窗格中更改**Element FormDefault**到**限定**。 这表示必须在实例文档中的目标命名空间限定本地声明的元素。  
   
 ##### <a name="use-the-flat-file-schema-wizard-to-create-the-trailer-schema"></a>使用平面文件架构向导创建尾部架构  
   
@@ -148,7 +148,7 @@ ms.locfileid: "65395338"
   
      ![选用于尾部架构的数据](../core/media/ffwiz-trailer-select-document-data.gif "ffwiz_trailer_select_document_data")  
   
-     单击“下一步” 。  
+     单击“下一步”  。  
   
 6.  上**选择记录格式**页上，单击**下一步**接受默认值。 你可以接受默认值"按分隔符符号"，因为数据文件不使用相对位置。  
   
@@ -166,7 +166,7 @@ ms.locfileid: "65395338"
   
      完成后，单击**完成**以完成向导。  
   
-10. 单击**\<架构\>** 尾部架构窗格中的节点。 在属性窗格中更改**elementFormDefault**到**限定**。 这表示必须在实例文档中的目标命名空间限定本地声明的元素。  
+10. 单击 **\<架构\>** 尾部架构窗格中的节点。 在属性窗格中更改**elementFormDefault**到**限定**。 这表示必须在实例文档中的目标命名空间限定本地声明的元素。  
   
 ##### <a name="use-the-flat-file-schema-wizard-to-create-the-body-schema"></a>使用平面文件架构向导创建正文架构  
   
@@ -185,7 +185,7 @@ ms.locfileid: "65395338"
   
      ![为正文架构选择的数据](../core/media/ffwiz-body-select-document-data.gif "ffwiz_body_select_document_data")  
   
-     单击“下一步” 。  
+     单击“下一步”  。  
   
 6.  上**选择记录格式**页上，单击**下一步**接受默认值。 你可以接受默认值"按分隔符符号"，因为数据文件不使用相对位置。  
   
@@ -203,13 +203,13 @@ ms.locfileid: "65395338"
   
      ![配置分隔记录具有标记标识符](../core/media/ffwiz-bodyerror-delimited-record.gif "ffwiz_bodyerror_delimited_record")  
   
-     单击“下一步” 。  
+     单击“下一步”  。  
   
 13. 现在定义的错误记录的子元素。  
   
      ![使用五个元素定义的错误记录](../core/media/ffwiz-bodyerror-child-elements.gif "ffwiz_bodyerror_child_elements")  
   
-     单击“下一步” 。  
+     单击“下一步”  。  
   
 14. 上**架构视图**页上，验证架构。  
   
@@ -217,9 +217,9 @@ ms.locfileid: "65395338"
   
      如果所做的任何错误，请单击**回**并进行必要的更正。 完成后，单击**完成**以完成向导。  
   
-15. 单击**\<架构\>** 正文架构窗格中的节点。 在属性窗格中更改**Element FormDefault**到**限定**。 这表示必须在实例文档中的目标命名空间限定本地声明的元素。  
+15. 单击 **\<架构\>** 正文架构窗格中的节点。 在属性窗格中更改**Element FormDefault**到**限定**。 这表示必须在实例文档中的目标命名空间限定本地声明的元素。  
   
-16. 单击**\<错误\>** 正文架构窗格上的节点。 在属性窗格中更改**Max Occurs**到**1**。 这将导致平面文件拆装器将每个错误拆分为其自己的消息。  
+16. 单击 **\<错误\>** 正文架构窗格上的节点。 在属性窗格中更改**Max Occurs**到**1**。 这将导致平面文件拆装器将每个错误拆分为其自己的消息。  
   
 ##### <a name="test-the-schemas-using-ffdasm"></a>测试使用 FFDasm 架构  
   
@@ -276,13 +276,13 @@ ms.locfileid: "65395338"
   
 4.  单击**接收位置**，然后单击**新建**添加接收位置。 新的接收位置"命名为 ReceiveErrorLocation"。 设置**接收管道**到**FFReceivePipeline**。 有关**传输类型**，选择**文件**，然后单击**配置**。 选择接收目录创建，并将**文件掩码**到 *.txt。  
   
-5.  单击“确定” 。 在接收端口应现在已配置。 单击**确定**关闭。  
+5.  单击“确定”  。 在接收端口应现在已配置。 单击**确定**关闭。  
   
 ##### <a name="configure-the-send-port"></a>配置发送端口  
   
 1.  使用 Windows 资源管理器下创建一个名为"发送" **FFDisassemblerWalkthrough**项目目录。  
   
-2.  在 BizTalk Server 管理控制台中，展开**FlatFileExample**应用程序中，右键单击**发送端口**，指向**新建**，然后单击**静态单向发送端口...**.  
+2.  在 BizTalk Server 管理控制台中，展开**FlatFileExample**应用程序中，右键单击**发送端口**，指向**新建**，然后单击**静态单向发送端口...** .  
   
 3.  在中**发送端口属性**对话框框中，设置为"Send"的端口的名称。  
   

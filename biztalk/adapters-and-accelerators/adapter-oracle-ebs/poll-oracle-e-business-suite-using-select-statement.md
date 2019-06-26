@@ -96,7 +96,7 @@ ms.locfileid: "65374987"
 ## <a name="generating-schema"></a>生成架构  
  必须生成的架构**轮询**MS_SAMPLE_EMPLOYEE 接口表上的操作**应用程序对象库**应用程序。 执行以下任务，同时生成架构使用[!INCLUDE[consumeadapterservshort](../../includes/consumeadapterservshort-md.md)]。  
 
-- 选择作为协定类型**服务 （入站操作）**。  
+- 选择作为协定类型**服务 （入站操作）** 。  
 
 - 生成架构**轮询**MS_SAMPLE_EMPLOYEE 接口表上的操作。 您可以选择该操作和接口表从**基于应用程序的视图**节点或**项目-基于视图**节点。  
 
@@ -149,7 +149,7 @@ ms.locfileid: "65374987"
 
     -   在中**属性**列表中，单击**BTS。ReceivePortName**。  
 
-    -   在中**运算符**列表中，单击**==**。  
+    -   在中**运算符**列表中，单击 **==** 。  
 
     -   在中**值**字段中，指定接收端口名称。  
 

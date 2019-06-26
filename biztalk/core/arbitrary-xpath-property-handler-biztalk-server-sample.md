@@ -91,7 +91,7 @@ ms.locfileid: "65528591"
   
    - 生成任意 XPath 属性处理程序管道组件。  
   
-   - 要为其生成的副本管道组件*\<安装路径\>* \Pipeline Components 目录。  
+   - 要为其生成的副本管道组件 *\<安装路径\>* \Pipeline Components 目录。  
   
    - 创建发送端口和接收端口。  
   
@@ -119,7 +119,7 @@ ms.locfileid: "65528591"
 2.  查看 \Output 目录中的内容。 请注意，新的文件创建包含复制到 \Input 目录的 DocInstance.xml 文件的所有信息。 在文件中的区别在于现在\<TotalAmount\>元素填入采购订单的总金额。  
   
 ## <a name="comments"></a>注释  
- 规范化 XPath 表达式是简单表达式，如"/ * [local-name = 元素的 name and =http://MyUri.org] /\*[本地名称 （) = 元素的 name] / @\*[本地名称 = attribute name]"。  
+ 规范化 XPath 表达式是简单表达式，如"/ * [local-name = 元素的 name and =http://MyUri.org ] /\* [本地名称 （) = 元素的 name] / @\* [本地名称 = attribute name]"。  
   
  任意 XPath 表达式可以是很复杂，比如"//element-name//* [本地名称 （) = 元素名称和位置 （） = 2]"。 如果这一事实，您将收到一个运行时错误，指出，不受非规范化 XPath 表达式[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]如果架构的 XPath 正文或某个 XPath 属性中使用了非规范化 XPath。 若要支持任意 XPath 表达式的解决方案是创建支持任意 XPath 正文和任意 XPath 属性表达式的自定义拆装器和组装器组件。  
   

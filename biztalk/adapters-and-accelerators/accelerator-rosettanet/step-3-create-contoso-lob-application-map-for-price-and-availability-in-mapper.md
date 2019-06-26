@@ -30,7 +30,7 @@ ms.locfileid: "65281150"
   
 2.  在添加引用对话框中，单击**浏览**。  
   
-3.  转到的文件夹*\<驱动器\>*: \Program Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\Bin，然后选择**Microsoft.Solutions.BTARN.Schemas.RNPIPs.dll**程序集。  
+3.  转到的文件夹 *\<驱动器\>* : \Program Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\Bin，然后选择**Microsoft.Solutions.BTARN.Schemas.RNPIPs.dll**程序集。  
   
 4.  单击**外**，然后单击**确定**。  
   
@@ -60,9 +60,9 @@ ms.locfileid: "65281150"
   
 ### <a name="to-link-schema-fields-in-the-pip3a2requesttocontosopricerequest-map"></a>若要 PIP3A2RequestToContosoPriceRequest 映射中链接架构字段  
   
-1.  在目标架构窗格中，右键单击**\<架构\>** 节点，，然后单击**展开树节点**。  
+1.  在目标架构窗格中，右键单击 **\<架构\>** 节点，，然后单击**展开树节点**。  
   
-2.  在源架构窗格中，右键单击**\<架构\>** 节点，，然后单击**展开树节点**。  
+2.  在源架构窗格中，右键单击 **\<架构\>** 节点，，然后单击**展开树节点**。  
   
 3.  拖动**GlobalProductIdentifier**字段**ProductID**字段在目标架构窗格中。  
   

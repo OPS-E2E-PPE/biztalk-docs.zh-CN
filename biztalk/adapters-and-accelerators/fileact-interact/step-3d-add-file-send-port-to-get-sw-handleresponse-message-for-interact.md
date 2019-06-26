@@ -48,15 +48,15 @@ ms.locfileid: "65366421"
     |**使用此**|**若要执行此操作**|  
     |------------------|--------------------|  
     |第一行：**属性**|从下拉列表中，选择**BTS。SPName**。|  
-    |第一行：**“运算符”**|从下拉列表中，选择**==**。|  
+    |第一行： **“运算符”**|从下拉列表中，选择 **==** 。|  
     |第一行：**ReplTest1**|类型**Tutorial_IA_HandleRequest_RealTime**。|  
     |第一行：**分组依据**|从下拉列表中，选择**或**。|  
     |第二行：**属性**|从下拉列表中，选择**BTS。MessageType**。|  
-    |第二行：**“运算符”**|从下拉列表中，选择**==**。|  
+    |第二行： **“运算符”**|从下拉列表中，选择 **==** 。|  
     |第二行：**ReplTest1**|类型**SwInt ExchangeResponse**。|  
     |第二行：**分组依据**|保留默认值。|  
   
-9. 单击“确定” 。  
+9. 单击“确定”  。  
   
 ## <a name="see-also"></a>请参阅  
  [步骤 3：创建发送和接收端口 InterAct 实时方案](../../adapters-and-accelerators/fileact-interact/step-3-create-send-and-receive-ports-for-the-interact-real-time-scenario.md)   

@@ -34,9 +34,9 @@ ms.locfileid: "65334523"
   
 1.  上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2.  在命令行中，转至企业单一登录安装目录。 默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。  
+2.  在命令行中，转至企业单一登录安装目录。 默认安装目录 *\<驱动器\>* : \Program Files\Common Files\Enterprise Single Sign-on。  
   
-3.  类型**ssoclient – setcredentials\<应用程序名称\>**，其中**\<应用程序名称\>** 是为其所需的特定应用程序若要设置的凭据。  
+3.  类型**ssoclient – setcredentials\<应用程序名称\>** ，其中 **\<应用程序名称\>** 是为其所需的特定应用程序若要设置的凭据。  
   
     > [!NOTE]
     >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  

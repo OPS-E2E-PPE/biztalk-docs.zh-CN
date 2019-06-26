@@ -27,7 +27,7 @@ ms.lasthandoff: 05/07/2019
 ms.locfileid: "65361895"
 ---
 # <a name="accessing-soap-headers-in-wcf-messages-with-pipeline-components"></a>访问管道组件使用的 WCF 消息中的 SOAP 标头
-若要访问管道组件中的 WCF 适配器的 SOAP 标头，您使用的上下文属性名称组合**InboundHeaders**，和目标命名空间**http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties**。 WCF 适配器将自定义 SOAP 标头和标准 SOAP 标头复制到的入站消息中**InboundHeaders**属性。 WCF 适配器还允许您以编程方式选择想要升级或写入至上下文属性以编程方式的属性。 请参阅[SOAP 标头发布 WCF 服务与](../core/soap-headers-with-published-wcf-services.md)的更多详细信息。  
+若要访问管道组件中的 WCF 适配器的 SOAP 标头，您使用的上下文属性名称组合**InboundHeaders**，和目标命名空间 **http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties** 。 WCF 适配器将自定义 SOAP 标头和标准 SOAP 标头复制到的入站消息中**InboundHeaders**属性。 WCF 适配器还允许您以编程方式选择想要升级或写入至上下文属性以编程方式的属性。 请参阅[SOAP 标头发布 WCF 服务与](../core/soap-headers-with-published-wcf-services.md)的更多详细信息。  
   
  上下文属性中包含的值是一个包含 XML 数据字符串\<**标头**\>根元素和传入的 SOAP 标头复制为子元素的\< **标头**\>元素。 有关如何对访问 SOAP 标头用于 WCF 适配器的详细信息，请参阅 SDK 示例"使用自定义 SOAP 标头与 WCF 适配器"处[ http://go.microsoft.com/fwlink/?LinkId=79960 ](http://go.microsoft.com/fwlink/?LinkId=79960)。  
   

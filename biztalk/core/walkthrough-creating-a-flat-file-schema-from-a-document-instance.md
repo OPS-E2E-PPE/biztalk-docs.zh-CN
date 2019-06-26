@@ -57,7 +57,7 @@ ITEMS,ITEM872-AA|Lawnmower|1|148.95|Confirm this is electric,ITEM926-AA|Baby Mon
 
    3.  在中**名称**字段中，输入**PurchaseOrder.xsd**新架构。  
 
-   4.  单击 **“添加”**。  
+   4.  单击 **“添加”** 。  
 
 4. BizTalk 平面文件架构向导打开时，会显示欢迎页。   
    若要在以后运行该向导时跳过此屏幕，请选择**不再显示此简介页面**框。 单击 **“下一步”** 继续。  
@@ -70,7 +70,7 @@ ITEMS,ITEM872-AA|Lawnmower|1|148.95|Confirm this is electric,ITEM926-AA|Baby Mon
 
     -   **记录名称：** 类型**PO**一点，这是架构根名称。  
 
-    -   **目标命名空间：** 类型**http://Flat_File_Project.PurchaseOrder**架构目标命名空间。  
+    -   **目标命名空间：** 类型 **http://Flat_File_Project.PurchaseOrder** 架构目标命名空间。  
 
     -   **代码页：** 选择**utf-8 (65001)** 的下拉列表选择列表中。  
 
@@ -97,15 +97,15 @@ ITEMS,ITEM872-AA|Lawnmower|1|148.95|Confirm this is electric,ITEM926-AA|Baby Mon
 
 - 上**分隔记录**屏幕中，输入以下命令以定义架构的第一级，完成后，单击**下一步**。  
 
-  - **子分隔符：** 选择 **{CR} {LF}**。  
+  - **子分隔符：** 选择 **{CR} {LF}** 。  
 
     > [!NOTE]
-    >  **子分隔符**属性是一个可编辑具有下拉选择列表框包含一组默认值。 **子分隔符**可以指定为字符或十六进制值。 例如，  **\\{** 或 **{0x0D0A}**。  
+    >  **子分隔符**属性是一个可编辑具有下拉选择列表框包含一组默认值。 **子分隔符**可以指定为字符或十六进制值。 例如，  **\\{** 或 **{0x0D0A}** 。  
 
   - **转义符：** 转义符是字符的取消其后的任何特殊含义的单个字符。 请参阅[转义符](../core/escape-characters.md)有关详细信息。 保留本演练为空。  
 
     > [!NOTE]
-    >  使用时**\\**， **{，** 并 **}** 对于**子分隔符**或**转义符**、必须使用反斜杠。 例如，  **\\ \\，** 并 **\\{**。  
+    >  使用时 **\\** ， **{，** 并 **}** 对于**子分隔符**或**转义符**、必须使用反斜杠。 例如，  **\\ \\，** 并 **\\{** 。  
 
   - 检查**记录带有标记标识符**框，然后输入**PO**中**标记**。 在多个记录文件中， **PO**将用于标识各个记录。 单击 **“下一步”** 继续。  
 
@@ -137,7 +137,7 @@ ITEMS,ITEM872-AA|Lawnmower|1|148.95|Confirm this is electric,ITEM926-AA|Baby Mon
     > [!NOTE]
     >  单击后**下一步**上**子元素**屏幕中，您将无法再单击**回**重新定义或更改的子元素。 您可能需要关闭向导并启动向导后，再次来定义平面文件架构。  
 
-3.  完成此过程中的步骤后，将生成的架构的第一个级别，如以下屏幕截图中所示。 定义了三个唯一元素，并将继续进一步定义采购订单记录中的元素的子记录。 单击“下一步” 。  
+3.  完成此过程中的步骤后，将生成的架构的第一个级别，如以下屏幕截图中所示。 定义了三个唯一元素，并将继续进一步定义采购订单记录中的元素的子记录。 单击“下一步”  。  
 
      ![示例架构屏幕](../core/media/flatfileschemawizard-schema1.gif "FlatFileSchemaWizard_Schema1")  
 
@@ -169,7 +169,7 @@ ITEMS,ITEM872-AA|Lawnmower|1|148.95|Confirm this is electric,ITEM926-AA|Baby Mon
     |**customer_Child2**|**fullName**|  
     |**customer_Child3**|**street**|  
     |**customer_Child4**|**city**|  
-    |**customer_Child5**|State|  
+    |**customer_Child5**|State |  
     |**customer_Child6**|**postalcode**|  
 
      单击 **“下一步”** 继续。  

@@ -39,7 +39,7 @@ ms.locfileid: "65280682"
     PIP3A2RequestMessage = Helper.NormalizeHeader(Microsoft.Solutions.BTARN.Shared.SCContainer.ConvertFromContainer(ActionMessage));  
     ```  
   
-5.  单击“确定” 。  
+5.  单击“确定”  。  
   
 ### <a name="to-configure-the-constructcontoso3a2requestmessage-transform-shape"></a>若要配置 ConstructContoso3A2RequestMessage 转换形状  
   
@@ -49,9 +49,9 @@ ms.locfileid: "65280682"
   
 3.  选择**Transform_1**形状内**ConstructContoso3A2RequestMessage**形状。  
   
-4.  在属性窗口中，选择**映射名称**属性，然后单击省略号按钮 (**...**) 以打开转换配置对话框。  
+4.  在属性窗口中，选择**映射名称**属性，然后单击省略号按钮 ( **...** ) 以打开转换配置对话框。  
   
-5.  在转换配置对话框中，单击**现有的映射**，然后在**完全限定的映射名称框**，选择**\<从引用的程序集中\>** 从下拉列表中打开选择项目类型对话框。  
+5.  在转换配置对话框中，单击**现有的映射**，然后在**完全限定的映射名称框**，选择 **\<从引用的程序集中\>** 从下拉列表中打开选择项目类型对话框。  
   
 6.  在选择项目类型对话框中，选择**ContosoPriceAndAvailability**程序集的左窗格中选择**PIP3A2RequestToContosoPriceRequest**在右窗格中，映射，然后单击**确定**。  
   
@@ -69,7 +69,7 @@ ms.locfileid: "65280682"
   
 3.  在中**指定策略参数**列表中，单击**单击此处可添加新行**，然后选择**Contoso3A2ResponseMessage**从下拉列表。  
   
-4.  单击“确定” 。  
+4.  单击“确定”  。  
   
 ### <a name="to-configure-the-construct3a2responsemessage-transform-shape"></a>若要配置 Construct3A2ResponseMessage 转换形状  
   
@@ -79,7 +79,7 @@ ms.locfileid: "65280682"
   
 3. 选择**Transform_2**形状内**Construct3A2ResponseMessage**形状。  
   
-4. 在属性窗口中，单击**映射名称**，然后单击省略号按钮 (**...**).  
+4. 在属性窗口中，单击**映射名称**，然后单击省略号按钮 ( **...** ).  
   
 5. 在转换配置对话框中，单击**新映射。**  
   
@@ -95,7 +95,7 @@ ms.locfileid: "65280682"
   
 11. 在解决方案资源管理器中右键单击**ContosoResponse3A2RequestMerge.btm**文件，，然后单击**打开**。  
   
-12. 在中**打开方式-ContosoResponse3A2RequestMerge.btm**对话框中，选择**XML 编辑器**从列表中的程序，并单击**确定**。 单击 **“是”**。  
+12. 在中**打开方式-ContosoResponse3A2RequestMerge.btm**对话框中，选择**XML 编辑器**从列表中的程序，并单击**确定**。 单击 **“是”** 。  
   
     > [!NOTE]
     >  由于大量的所需的此映射的链接，本教程使用[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]2008 HTML/XML 编辑器来构造映射通过手动复制映射信息。  
@@ -152,7 +152,7 @@ ms.locfileid: "65280682"
     }]]></Script></ScripterCode></Functoid><Functoid FunctoidID="3" X-Cell="54" Y-Cell="239" Functoid-FID="107" Functoid-Name="String Concatenate" Label=""><Input-Parameters><Parameter Type="Constant" Value="Response" Guid="{FA85B113-6FB4-4932-A125-5CF751A536B5}"/></Input-Parameters></Functoid></Functoids></Page></Pages></mapsource>  
     ```  
   
-15. 在“文件”  菜单上，单击“全部保存” 。  
+15. 在“文件”  菜单上，单击“全部保存”  。  
   
 ### <a name="to-configure-the-expression1-shape"></a>若要配置 Expression_1 形状  
   
@@ -175,7 +175,7 @@ ms.locfileid: "65280682"
     Helper.ReturnSCWithDocType(contosoResponseXML) );  
     ```  
   
-4.  单击“确定” 。  
+4.  单击“确定”  。  
   
 ## <a name="see-also"></a>请参阅  
  [步骤 7：创建和配置端口](../../adapters-and-accelerators/accelerator-rosettanet/step-7-creating-and-configuring-ports.md)

@@ -33,13 +33,13 @@ ms.locfileid: "65299949"
   
 2.  上**文件**，依次指向**打开**，然后单击**项目**。  
   
-3.  找到*\<驱动器\>* \Program Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\Schemas，单击**RNPIPs.btproj**，然后单击**打开**。  
+3.  找到 *\<驱动器\>* \Program Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\Schemas，单击**RNPIPs.btproj**，然后单击**打开**。  
   
 4.  在解决方案资源管理器，展开**Rnpip**，右键单击架构 XSD，想要用于验证消息实例，然后依次**属性**。  
   
 5.  在属性页对话框中，单击**输入实例文件名**，找到包含该文件的文件夹、 选择消息实例 XML 文件，并单击**打开**。  
   
-6.  单击“确定” 。  
+6.  单击“确定”  。  
   
 7.  在解决方案资源管理器中右键单击架构 XSD，想要用于验证消息实例，然后依次**验证实例**。  
   

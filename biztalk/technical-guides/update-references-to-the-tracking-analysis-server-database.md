@@ -42,7 +42,7 @@ ms.locfileid: "65400006"
 5.  修改与原始数据库，以引用新数据库的相应值相对应的列。  
   
     > [!NOTE]  
-    >  *\<DBType\>*  DBServerName 和*\<DBType\>* DBName 指示的位置的数据库，其中*\<DBType\>* 数据库，如 TrackingAnalysis 的类型相对应。  
+    >  *\<DBType\> * DBServerName 和* \<DBType\> * DBName 指示的位置的数据库，其中* \<DBType\> *数据库，如 TrackingAnalysis 的类型相对应。  
   
 6.  关闭该表以保存新值。  
   

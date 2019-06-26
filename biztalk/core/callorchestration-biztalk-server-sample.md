@@ -104,7 +104,7 @@ End If
   
 1.  将 InputPO.xml 文件的副本放到 In 文件夹。  
   
-2.  查看在 Out 文件夹中创建的已更新的 XML 采购订单文件。 它包含原始采购订单消息，修改为包含计算如前面所述的发货费用。 此文件的名称的格式\< *MessageID*\>.xml，其中*\<MessageID\>* 生成的 GUID 来唯一标识消息.  
+2.  查看在 Out 文件夹中创建的已更新的 XML 采购订单文件。 它包含原始采购订单消息，修改为包含计算如前面所述的发货费用。 此文件的名称的格式\< *MessageID*\>.xml，其中 *\<MessageID\>* 生成的 GUID 来唯一标识消息.  
   
 ## <a name="uninstalling-this-sample"></a>卸载本示例  
   

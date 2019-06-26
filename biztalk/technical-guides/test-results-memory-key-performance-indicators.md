@@ -20,10 +20,10 @@ ms.lasthandoff: 05/07/2019
 ms.locfileid: "65298467"
 ---
 # <a name="test-results-memory-key-performance-indicators"></a>测试结果：内存关键性能指标
-本主题总结了内存关键绩效指标 (KPI) 的测试方案期间观察到。 这些测试计算由可用内存**\Memory\Available Mbytes**性能监视器计数器。  
+本主题总结了内存关键绩效指标 (KPI) 的测试方案期间观察到。 这些测试计算由可用内存 **\Memory\Available Mbytes**性能监视器计数器。  
   
 ## <a name="summary-of-memory-key-performance-indicators"></a>内存关键绩效指标的摘要  
- **比较内存关键绩效指标 –** 的总内存供 SQL Server 和 BizTalk Server 测量**\Memory\Available Mbytes**所有性能监视器计数器是相当一致测试方案。 中可用的平均内存到物理 BizTalk Server 计算机以及可用于虚拟机上运行的 BizTalk Server 计算机的平均内存的区别是因为，两个物理 BizTalk Server 计算机用于测试时三个虚拟机上运行的 BizTalk Server 计算机已用于测试。  
+ **比较内存关键绩效指标 –** 的总内存供 SQL Server 和 BizTalk Server 测量 **\Memory\Available Mbytes**所有性能监视器计数器是相当一致测试方案。 中可用的平均内存到物理 BizTalk Server 计算机以及可用于虚拟机上运行的 BizTalk Server 计算机的平均内存的区别是因为，两个物理 BizTalk Server 计算机用于测试时三个虚拟机上运行的 BizTalk Server 计算机已用于测试。  
   
  下图阐释了在不同的测试平台上的内存性能：  
   

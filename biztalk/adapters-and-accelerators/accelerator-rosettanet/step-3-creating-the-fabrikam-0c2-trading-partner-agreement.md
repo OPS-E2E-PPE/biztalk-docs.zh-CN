@@ -26,11 +26,11 @@ ms.locfileid: "65281119"
 
 ### <a name="to-start-the-btarn-management-console"></a>若要启动 BTARN 管理控制台  
 
-- 单击**启动**，依次指向**所有程序**，指向**Microsoft BizTalk\<版本\>Accelerator for RosettaNet**，然后单击**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台。  
+- 单击**启动**，依次指向**所有程序**，指向**Microsoft BizTalk\<版本\>Accelerator for RosettaNet**，然后单击 **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台。  
 
 ### <a name="to-create-the-0c2-trading-partner-agreement"></a>创建 0 C 2 贸易合作伙伴协议  
 
-1. 在中**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台中，展开[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]，右键单击**协议**，指向**新建**，然后单击**协议**.  
+1. 在中 **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台中，展开[!INCLUDE[btaBTARNNoVersionui](../../includes/btabtarnnoversionui-md.md)]，右键单击**协议**，指向**新建**，然后单击**协议**.  
 
 2. 在新协议属性对话框中，在**常规**选项卡上，执行以下操作：  
 
@@ -56,7 +56,7 @@ ms.locfileid: "65281119"
    |  **同步 URL**  | 类型**https://<contoso_machine>/BTARNApp/RNIFReceive.aspx**。 |
 
 
-4. 单击“确定” 。  
+4. 单击“确定”  。  
 
 5. 右键单击**Fabrikam_To_Contoso_0C2**协议，，然后单击**激活**。  
 

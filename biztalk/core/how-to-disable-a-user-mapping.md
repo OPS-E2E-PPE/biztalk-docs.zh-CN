@@ -32,9 +32,9 @@ ms.locfileid: "65338110"
   
 1. 上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2. 在命令行中，转至企业单一登录安装目录。 默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。  
+2. 在命令行中，转至企业单一登录安装目录。 默认安装目录 *\<驱动器\>* : \Program Files\Common Files\Enterprise Single Sign-on。  
   
-3. 类型**ssomanage-disablemapping *\<域\>*\\*\<用户名\>\<应用程序名称\>**  <em>，其中 *\<域\></em>是 Windows 域用户帐户，并且*\<用户名\>* 是你想要禁用其凭据的 Windows 用户名和*\<应用程序名称\>* 是你想要删除其用户映射的关联应用程序的名称。  
+3. 类型**ssomanage-disablemapping *\<域\>* \\*\<用户名\>\<应用程序名称\>**  <em>，其中 *\<域\></em>是 Windows 域用户帐户，并且 *\<用户名\>* 是你想要禁用其凭据的 Windows 用户名和 *\<应用程序名称\>* 是你想要删除其用户映射的关联应用程序的名称。  
   
    > [!NOTE]
    >  在支持用户帐户控制 (UAC) 的系统上，可能需要具有管理权限才能运行该工具。  
@@ -43,7 +43,7 @@ ms.locfileid: "65338110"
   
 1. 上**启动**菜单上，单击**运行**，然后键入**cmd**。  
   
-2. 在命令行中，转至企业单一登录安装目录。 默认安装目录*\<驱动器\>*: \Program Files\Common Files\Enterprise Single Sign-on。  
+2. 在命令行中，转至企业单一登录安装目录。 默认安装目录 *\<驱动器\>* : \Program Files\Common Files\Enterprise Single Sign-on。  
   
 3. 类型 * * ssoclient-disablemapping *\<应用程序名称\>**<em>，其中 *\<应用程序名称\></em>是你想要删除关联应用程序的名称用户映射。  
   

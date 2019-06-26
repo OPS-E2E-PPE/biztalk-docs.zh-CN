@@ -20,7 +20,7 @@ ms.lasthandoff: 05/07/2019
 ms.locfileid: "65375548"
 ---
 # <a name="develop-biztalk-applications-using-the-oracle-e-business-suite-adapter"></a>开发 BizTalk 应用程序使用 Oracle E-business Suite 适配器
-开发 BizTalk 应用程序涉及到创建的 BizTalk 项目中[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]，并使用**[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]** 或**[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]** 生成 XML 架构。 后生成架构后，你可以使用基于内容的路由 (CBR)，或创建 BizTalk 业务流程发送和接收符合你生成的架构的消息。  
+开发 BizTalk 应用程序涉及到创建的 BizTalk 项目中[!INCLUDE[btsVStudioNoVersion](../../includes/btsvstudionoversion-md.md)]，并使用 **[!INCLUDE[consumeadapterservlong](../../includes/consumeadapterservlong-md.md)]** 或 **[!INCLUDE[addadapterwiz](../../includes/addadapterwiz-md.md)]** 生成 XML 架构。 后生成架构后，你可以使用基于内容的路由 (CBR)，或创建 BizTalk 业务流程发送和接收符合你生成的架构的消息。  
   
  CBR 可以在发送到 Oracle E-business Suite 的消息不需要任何密集型处理方案中使用。 例如，如果您知道，只有特定类型的接收端口接收消息，您可以将筛选器添加到消息路由到发送端口的筛选器表达式匹配的发送端口。  
 

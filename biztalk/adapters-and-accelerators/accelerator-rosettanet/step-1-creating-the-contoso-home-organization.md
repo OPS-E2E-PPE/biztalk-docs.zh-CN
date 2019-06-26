@@ -28,7 +28,7 @@ ms.locfileid: "65281593"
 
 ### <a name="to-start-the-btarn-management-console"></a>若要启动 BTARN 管理控制台  
 
-- 在 Contoso 计算机上，单击**启动**，依次指向**所有程序**，指向**Microsoft BizTalk\<版本\>Accelerator for RosettaNet**，然后单击**[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台。  
+- 在 Contoso 计算机上，单击**启动**，依次指向**所有程序**，指向**Microsoft BizTalk\<版本\>Accelerator for RosettaNet**，然后单击 **[!INCLUDE[BTARN_CurrentVersion_abbrev](../../includes/btarn-currentversion-abbrev-md.md)]** 管理控制台。  
 
 ### <a name="to-create-the-home-organization"></a>若要创建本组织  
 
@@ -56,7 +56,7 @@ ms.locfileid: "65281593"
    | **供应链代码** |     类型**电子元件**。     |
 
 
-4. 单击“确定” 。  
+4. 单击“确定”  。  
 
 ## <a name="see-also"></a>请参阅  
  [步骤 2：创建 Fabrikam 合作伙伴组织](../../adapters-and-accelerators/accelerator-rosettanet/step-2-creating-the-fabrikam-partner-organization.md)

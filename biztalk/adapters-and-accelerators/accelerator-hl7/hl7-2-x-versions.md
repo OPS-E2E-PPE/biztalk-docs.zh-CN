@@ -38,7 +38,7 @@ ms.locfileid: "65292982"
 > [!NOTE]
 >  因为版本 2.1、 2.2 和 2.3 已过时，但建议使用 2.3.1 或更高版本的 2.X 标准。  
 
- 当你安装[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]，安装向导将创建*\<驱动器\>*: \程序文件\\Microsoft BizTalk\<版本\>Accelerator for HL7\Templates\Schemas 文件夹结构，其中包含模板可以支持 HL7 中的事件。 下此文件夹中，第 2 版。X 文件夹包含的子文件夹为每个 HL7 2.X 版本：2.1、 2.2、 2.3、 2.3.1、 2.4 和 2.5。  
+ 当你安装[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]，安装向导将创建 *\<驱动器\>* : \程序文件\\Microsoft BizTalk\<版本\>Accelerator for HL7\Templates\Schemas 文件夹结构，其中包含模板可以支持 HL7 中的事件。 下此文件夹中，第 2 版。X 文件夹包含的子文件夹为每个 HL7 2.X 版本：2.1、 2.2、 2.3、 2.3.1、 2.4 和 2.5。  
 
 ## <a name="see-also"></a>请参阅  
  [HL7 2.X 子文件夹和事件](../../adapters-and-accelerators/accelerator-hl7/hl7-2-x-subfolders-and-events.md)

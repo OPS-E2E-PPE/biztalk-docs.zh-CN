@@ -22,7 +22,7 @@ ms.locfileid: "65394456"
 # <a name="mime-smime-property-schema-and-properties"></a>MIME-SMIME 属性架构和属性
 
 ## <a name="namespace-properties"></a>Namespace 属性
-**http://schemas.microsoft.com/BizTalk/2003/mime-properties**命名空间包含可用于设置 MIME/SMIME 编码器管道组件的消息和部分上下文属性的属性。 MIME/SMIME 编码器使用这些属性创建的消息中生成适当的 MIME/SMIME 标头。 下表介绍的 MIME/SMIME 属性。  
+**http://schemas.microsoft.com/BizTalk/2003/mime-properties** 命名空间包含可用于设置 MIME/SMIME 编码器管道组件的消息和部分上下文属性的属性。 MIME/SMIME 编码器使用这些属性创建的消息中生成适当的 MIME/SMIME 标头。 下表介绍的 MIME/SMIME 属性。  
   
 |属性|范围|类型|Description|  
 |--------------|-----------|----------|-----------------|  

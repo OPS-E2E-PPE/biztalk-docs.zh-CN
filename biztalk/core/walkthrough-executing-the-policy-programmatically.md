@@ -44,7 +44,7 @@ ms.locfileid: "65395360"
 
    |             使用此选项              |                             执行的操作                              |
    |-----------------------------------|---------------------------------------------------------------------|
-   |         **项目类型**         |                        单击**Visual C#**。                         |
+   |         **项目类型**         |                        单击**Visual C#** 。                         |
    |           **模板**           |                   单击**控制台应用程序**。                    |
    |             **名称**              |                       类型**ConsoleClient**。                       |
    |           **位置**            |     指定用于保存项目文件的文件夹。      |
@@ -52,11 +52,11 @@ ms.locfileid: "65395360"
    | **创建解决方案的目录** | 选中此复选框以创建解决方案文件的目录。 |
 
 
-4. 单击“确定” 。 **ConsoleClient**项目应该显示在解决方案资源管理器。 如果看不到解决方案资源管理器，请单击**解决方案资源管理器**上**视图**菜单。  
+4. 单击“确定”  。 **ConsoleClient**项目应该显示在解决方案资源管理器。 如果看不到解决方案资源管理器，请单击**解决方案资源管理器**上**视图**菜单。  
 
 5. 在解决方案资源管理器中右键单击**引用**，然后单击**添加引用**。  
 
-6. 单击**浏览**，浏览到**\Program Files\Common Files\Microsoft BizTalk**，然后双击**Microsoft.RuleEngine.dll**。  
+6. 单击**浏览**，浏览到 **\Program Files\Common Files\Microsoft BizTalk**，然后双击**Microsoft.RuleEngine.dll**。  
 
 7. 将以下行添加到顶部**Program.cs**之后的现有文件`using`语句：  
 
@@ -102,7 +102,7 @@ ms.locfileid: "65395360"
 
 1.  在解决方案资源管理器中右键单击**引用**，然后单击**添加引用**。  
 
-2.  单击**浏览**，浏览到**\Program Files\Common Files\Microsoft BizTalk**，然后双击**Microsoft.BizTalk.RuleEngineExtensions.dll**。  
+2.  单击**浏览**，浏览到 **\Program Files\Common Files\Microsoft BizTalk**，然后双击**Microsoft.BizTalk.RuleEngineExtensions.dll**。  
 
 3.  注释掉以下行中**Program.cs**文件：  
 

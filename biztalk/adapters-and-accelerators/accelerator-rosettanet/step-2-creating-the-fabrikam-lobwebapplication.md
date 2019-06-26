@@ -35,7 +35,7 @@ ms.locfileid: "65281218"
     > [!NOTE]
     >  如果你已完成双操作教程，你将已创建 LOBWebApplication 虚拟目录为该教程。 如果是这样，您无需执行这些步骤。 但是，将需要更改的虚拟目录的权限**运行脚本**到**读取**。  
   
-2.  在 Internet 信息服务管理器中，展开 **< 计算机名 > （本地计算机）**，然后展开**网站**。  
+2.  在 Internet 信息服务管理器中，展开 **< 计算机名 > （本地计算机）** ，然后展开**网站**。  
   
 3.  右键单击**Default Web Site**，依次指向**新建**，然后单击**虚拟目录**。  
   
@@ -43,7 +43,7 @@ ms.locfileid: "65281218"
   
 5.  上**虚拟目录别名**页上，在**别名**框中，键入**LOBWebApplication**，然后单击**下一步**。  
   
-6.  上**网站内容目录**页上，单击**浏览**，选择**\<驱动器\>: \Program Files\Microsoft BizTalk\<版本\>RosettaNet\SDK\LOBWebApplication 的加速器**文件夹，，然后单击**确定**。 单击“下一步” 。  
+6.  上**网站内容目录**页上，单击**浏览**，选择 **\<驱动器\>: \Program Files\Microsoft BizTalk\<版本\>RosettaNet\SDK\LOBWebApplication 的加速器**文件夹，，然后单击**确定**。 单击“下一步”  。  
   
 7.  上**虚拟目录访问权限**页上，单击**下一步**。  
   
@@ -72,11 +72,11 @@ ms.locfileid: "65281218"
   
 2.  从**文件**菜单，依次指向**打开**，然后单击**项目 \ 解决方案**。  
   
-3.  在打开项目对话框中，在**查找范围**，将移动到**\<驱动器\>: \Program Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\ SDK\LOBWebApplication**，选择**LOBWebApplication.sln**解决方案，，然后单击**打开**。  
+3.  在打开项目对话框中，在**查找范围**，将移动到 **\<驱动器\>: \Program Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\ SDK\LOBWebApplication**，选择**LOBWebApplication.sln**解决方案，，然后单击**打开**。  
   
-4.  在解决方案资源管理器中右键单击顶级节点 (http://localhost/LOBWebApplication)，然后单击**添加引用**。  
+4.  在解决方案资源管理器中右键单击顶级节点 (http://localhost/LOBWebApplication) ，然后单击**添加引用**。  
   
-5.  在添加引用对话框中，单击**浏览**并将移至**\<驱动器\>: \Program Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\bin**.  
+5.  在添加引用对话框中，单击**浏览**并将移至 **\<驱动器\>: \Program Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\bin**.  
   
 6.  **选择 Microsoft.Solutions.BTARN.ConfigurationManager.dll 和 Microsoft.Solutions.BTARN.Shared.dll**程序集 **，然后单击确定。**  
   

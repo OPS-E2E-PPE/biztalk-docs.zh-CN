@@ -29,7 +29,7 @@ ms.locfileid: "65280855"
   
 1. Contoso 解决方案显示在解决方案资源管理器中，右键单击**PrivateResponder**项目，并单击**添加引用**。  
   
-2. 在添加引用对话框中，单击**浏览**。 将移动到*\<驱动器\>*: \Program Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\Bin 文件夹，然后选择以下程序集<strong>:</strong>  
+2. 在添加引用对话框中，单击**浏览**。 将移动到 *\<驱动器\>* : \Program Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\Bin 文件夹，然后选择以下程序集<strong>:</strong>  
   
    -   Microsoft.Solutions.BTARN.CommonTypes.dll  
   
@@ -45,11 +45,11 @@ ms.locfileid: "65280855"
   
    -   Microsoft.Solutions.BTARN.XSDClasses.GlobalSchemas.dll  
   
-3. 单击 **“添加”**。  
+3. 单击 **“添加”** 。  
   
 4. 在添加引用对话框中，单击**项目**选项卡上，选择**ContosoPriceAndAvailability**并**HeaderHelper**项目，并单击**添加**。  
   
-5. 单击“确定” 。  
+5. 单击“确定”  。  
   
 6. 在 Microsoft 的开发环境对话框中，单击**确定**。  
   
@@ -63,7 +63,7 @@ ms.locfileid: "65280855"
   
 4.  在属性窗口中**标识符**框中，键入**PIP3A2RequestMessage**。  
   
-5.  在中**消息类型**框中，单击下拉箭头，展开**架构**，然后选择**\<从引用的程序集选择\>**。  
+5.  在中**消息类型**框中，单击下拉箭头，展开**架构**，然后选择 **\<从引用的程序集选择\>** 。  
   
 6.  在选择项目类型框中，选择**Microsoft.Solutions.BTARN.Schemas.RNPIPs**在左窗格中，选择 **_3A2PriceAndAvailabilityQueryMessageGuideline_v1_3**在右窗格中，并然后单击**确定**。  
   
@@ -99,13 +99,13 @@ ms.locfileid: "65280855"
   
 1.  在业务流程设计器中，选择**ReceiveFromPublicProcessResponder**形状。  
   
-2.  在属性窗口中**筛选器表达式**框中，单击值框，然后单击省略号按钮 (**...**) 以打开筛选器表达式对话框。  
+2.  在属性窗口中**筛选器表达式**框中，单击值框，然后单击省略号按钮 ( **...** ) 以打开筛选器表达式对话框。  
   
 3.  在筛选器表达式对话框中，在**Group By**部分中，单击**或者**值的第一行上，然后选择**AND**从下拉列表。  
   
 4.  在筛选器表达式对话框中，单击**单击此处可添加新行**，然后选择**Microsoft.Solutions.BTARN.GlobalSchemas.SCPIPCode**从下拉列表。  
   
-5.  在同一行中，单击**值**，然后键入 **"3A2"**。  
+5.  在同一行中，单击**值**，然后键入 **"3A2"** 。  
   
 6.  在同一行中，单击**AND**中**Group By**框，并选择**或**从下拉列表。  
   
@@ -113,7 +113,7 @@ ms.locfileid: "65280855"
   
 8.  单击**单击此处可添加新行**，然后选择**Microsoft.Solutions.BTARN.GlobalSchemas.SCPIPCode**从下拉列表。  
   
-9. 在同一行中，单击**值**，然后键入 **"3A2"**。  
+9. 在同一行中，单击**值**，然后键入 **"3A2"** 。  
   
 10. 单击“确定”。  
   

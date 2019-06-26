@@ -20,7 +20,7 @@ ms.lasthandoff: 05/07/2019
 ms.locfileid: "65401331"
 ---
 # <a name="apply-iis-configuration-settings"></a>应用 IIS 配置设置
-默认情况下，SOAP、 HTTP 和基于 HTTP 的 WCF 适配器 （和在常规的.NET） 只有两个并发 HTTP 连接从打开每个 BizTalk 主机实例到任何特定的目标服务器。 例如，如果有 SOAP 发送端口发送消息到**<http://www.contoso.com/SomeWebService.asmx>**，然后默认情况下，每个上运行每个主机实例[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将打开到只有两个并发 HTTP 连接<strong>www.contoso.com</strong>，无论需要发送的消息数。  
+默认情况下，SOAP、 HTTP 和基于 HTTP 的 WCF 适配器 （和在常规的.NET） 只有两个并发 HTTP 连接从打开每个 BizTalk 主机实例到任何特定的目标服务器。 例如，如果有 SOAP 发送端口发送消息到 **<http://www.contoso.com/SomeWebService.asmx>** ，然后默认情况下，每个上运行每个主机实例[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]将打开到只有两个并发 HTTP 连接<strong>www.contoso.com</strong>，无论需要发送的消息数。  
   
  此设置符合 HTTP 1.1 规范的 IETF rfc，尽管它是适用于用户方案，但未优化的高吞吐量服务器到服务器通信。 默认设置将有效地限制从每个将发送到两个并发为每个目标服务器的出站 SOAP 和 HTTP 调用[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]主机实例。  
   
@@ -37,7 +37,7 @@ ms.locfileid: "65401331"
   
  在 IIS 7.0 集成模式下，maxWorkerThreads 和 machine.config 文件的"processModel"部分中的 maxIoThreads 参数不用于控制数本身运行的请求，但仍然使用它们来控制 CLR 线程池的大小由 ASP.NET。 当在 machine.config 的"processModel"部分具有"autoConfig = true"（这是默认设置），这将为应用程序池提供每个逻辑 CPU 的最多 100 个工作线程 (MaxWorkerThreads)。 因此具有 2 个双核 Cpu 的常见商用服务器必须 400 MaxWorkerThreads。 这应足以满足所有要求最苛刻的应用程序除外。  
   
- 有关在 IIS 7.0 和 6.0 上配置 ASP.NET 线程使用情况的详细信息，请参阅[Thomas Marquardt 的博客上的 IIS 7.0 和 6.0 上 ASP.NET 线程使用情况](http://go.microsoft.com/fwlink/?LinkId=157518)(http://go.microsoft.com/fwlink/?LinkId=157518)。  
+ 有关在 IIS 7.0 和 6.0 上配置 ASP.NET 线程使用情况的详细信息，请参阅[Thomas Marquardt 的博客上的 IIS 7.0 和 6.0 上 ASP.NET 线程使用情况](http://go.microsoft.com/fwlink/?LinkId=157518)(http://go.microsoft.com/fwlink/?LinkId=157518) 。  
   
 ## <a name="log-only-essential-information-or-completely-disable-iis-logging"></a>仅记录基本信息或完全禁用 IIS 日志记录  
  应最小化或甚至在生产环境中禁用 IIS 日志记录。 若要禁用日志记录，请执行以下步骤：  
@@ -103,7 +103,7 @@ ms.locfileid: "65401331"
  此设置指定每个处理器创建的池线程的数。 池线程监视网络中的请求和处理传入的请求。 MaxPoolThreads 计数不包括 ISAPI 应用程序使用的线程。 通常情况下，不应创建每个处理器超过 20 个线程。 MaxPoolThreads 是位于 HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\InetInfo\Parameters\ 默认值为 4 的 REG_DWORD 注册表条目。  
   
 ## <a name="disable-wcf-services-tracing"></a>禁用跟踪的 WCF 服务  
- 使用配置编辑器工具 (SvcConfigEditor.exe) 来禁用 WCF 服务在生产环境中进行跟踪。 有关配置编辑器工具的详细信息，请参阅[配置编辑器工具 (SvcConfigEditor.exe)](http://go.microsoft.com/fwlink/?LinkID=127070) (http://go.microsoft.com/fwlink/?LinkID=127070)。  
+ 使用配置编辑器工具 (SvcConfigEditor.exe) 来禁用 WCF 服务在生产环境中进行跟踪。 有关配置编辑器工具的详细信息，请参阅[配置编辑器工具 (SvcConfigEditor.exe)](http://go.microsoft.com/fwlink/?LinkID=127070) (http://go.microsoft.com/fwlink/?LinkID=127070) 。  
   
 ## <a name="see-also"></a>请参阅  
  [清单：配置 BizTalk Server](../technical-guides/checklist-configuring-biztalk-server.md)

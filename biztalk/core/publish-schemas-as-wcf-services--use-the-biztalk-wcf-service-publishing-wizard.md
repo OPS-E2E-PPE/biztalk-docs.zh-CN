@@ -46,7 +46,7 @@ ms.locfileid: "65398400"
   
 4. 上**WCF 服务类型**页上，选中或清除**启用元数据终结点**复选框以指示独立的 WCF 接收位置由 Internet 信息服务 (IIS) 承载是否将发布使用 HTTP/GET 请求进行检索服务元数据。  
   
-    选中此复选框后，向导生成的 Web.config 文件中的**httpGetEnabled**的属性**\<serviceMetadata\>** 元素设置为 **，则返回 true**。 您可以使用元数据导入工具（如 SvcUtil.exe）生成在开发环境中调用此服务所需的客户端代码。 发布元数据的地址为终结点地址加上 **？ wsdl**查询字符串。  
+    选中此复选框后，向导生成的 Web.config 文件中的**httpGetEnabled**的属性 **\<serviceMetadata\>** 元素设置为 **，则返回 true**。 您可以使用元数据导入工具（如 SvcUtil.exe）生成在开发环境中调用此服务所需的客户端代码。 发布元数据的地址为终结点地址加上 **？ wsdl**查询字符串。  
   
    > [!NOTE]
    >  若要防止无意中泄漏可能敏感的服务元数据，我们建议禁用此行为在生产环境中。 这可以通过将 httpgetenabled 设置为 false，或删除 MEX 虚拟目录。  

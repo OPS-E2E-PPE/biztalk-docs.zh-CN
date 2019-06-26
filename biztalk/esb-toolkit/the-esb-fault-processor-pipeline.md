@@ -49,7 +49,7 @@ ms.locfileid: "65399803"
   
 - **EscapeCDATA。** 此属性确定是否该组件将转义任何**CDATA**中找到的部分保留消息，以便可通过 InfoPath 正确显示。  
   
-- **FaultDocumentNamespace.** 此属性具有默认值为**http://schemas.microsoft.biztalk.practices.esb.com/exceptionhandling**。 可以修改此保留的消息使用自定义出站命名空间。  
+- **FaultDocumentNamespace.** 此属性具有默认值为 **http://schemas.microsoft.biztalk.practices.esb.com/exceptionhandling** 。 可以修改此保留的消息使用自定义出站命名空间。  
   
 - **ProcessingInstruction。** 此属性可以包含任何符合 ESB 异常报告错误架构的 InfoPath 处理指令。 [!INCLUDE[esbToolkit](../includes/esbtoolkit-md.md)]包括符合以下处理指令的 InfoPath 模板。  
   
@@ -100,7 +100,7 @@ ms.locfileid: "65399803"
   
 - **已启用。** 此属性确定组件是否将处理该消息并将其写入到 BAM 数据库。 如果设置为**False**，组件只是将消息发送到管道中的下一个组件。  
   
-- **FaultDocumentNamespace.** 此属性具有默认值为**http://schemas.microsoft.biztalk.practices.esb.com/exceptionhandling**。  
+- **FaultDocumentNamespace.** 此属性具有默认值为 **http://schemas.microsoft.biztalk.practices.esb.com/exceptionhandling** 。  
   
 ## <a name="the-fault-processor-pipeline-transform-component"></a>故障处理器管道转换组件  
  ESB 故障处理器管道使用 ESB 转换管道组件执行编码的 ESB 错误消息转换为与架构匹配的 BizTalk SQL 适配器 (ExceptionSql.xsd) 格式的 BizTalk 映射。 然后，组件将转换后的消息传递到 SQL 适配器，ESB 管理门户数据库中插入 ESB 错误消息。  
