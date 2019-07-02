@@ -28,7 +28,7 @@ ms.locfileid: "65282236"
   
 - 向页面添加验证  
   
-  此示例位于*\<驱动器\>*: \Program Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\WebApplication\RNIFSender。  
+  此示例位于 *\<驱动器\>* : \Program Files\Microsoft BizTalk\<版本\>Accelerator for RosettaNet\SDK\WebApplication\RNIFSender。  
   
 ## <a name="demonstrates"></a>演示  
  此示例演示如何准备供 RNIF 处理，包括以下传出消息：  

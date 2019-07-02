@@ -48,7 +48,7 @@ Web 服务的规划可以分为两类，用于发布 Web 服务和规划使用 W
   
 |独立的主机名称|接收位置|  
 |------------------------|-----------------------|  
-|独立主机 1|HTTP_ReceiveLocation1A<br /><br /> HTTP_ReceiveLocation1B<br /><br /> SOAP_ReceiveLocation1**注意：****独立主机 1**用于 SOAP 和 HTTP 适配器的接收处理程序。|  
+|独立主机 1|HTTP_ReceiveLocation1A<br /><br /> HTTP_ReceiveLocation1B<br /><br /> SOAP_ReceiveLocation1 **注意：** **独立主机 1**用于 SOAP 和 HTTP 适配器的接收处理程序。|  
 |独立的主机 2|HTTP_ReceiveLocation2|  
   
  你可以创建四个虚拟目录，每个接收位置，按如下所示：  

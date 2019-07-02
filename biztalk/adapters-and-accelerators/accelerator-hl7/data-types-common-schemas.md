@@ -24,7 +24,7 @@ ms.lasthandoff: 05/07/2019
 ms.locfileid: "65255550"
 ---
 # <a name="data-types-common-schemas"></a>数据类型通用架构
-**Datatypes_*\<版本\>*.xsd**架构文件 (其中*\<版本\>* 是 HL7 版本号)包含相应的 HL7 版本的所有 HL7 基本和复合数据类型的定义。 Segments_*\<版本\>*.xsd 文件使用此文件与相应的 HL7 版本匹配。 DataStructures Access 数据库表生成 DataTypes_*\<版本\>*.xsd 架构文件。 下面的示例是用于 HL7 基本数据类型的条目**ST**:  
+**Datatypes_ *\<版本\>* .xsd**架构文件 (其中 *\<版本\>* 是 HL7 版本号)包含相应的 HL7 版本的所有 HL7 基本和复合数据类型的定义。 Segments_ *\<版本\>* .xsd 文件使用此文件与相应的 HL7 版本匹配。 DataStructures Access 数据库表生成 DataTypes_ *\<版本\>* .xsd 架构文件。 下面的示例是用于 HL7 基本数据类型的条目**ST**:  
   
 ```  
 <xsd:simpleType name="ST">  

@@ -63,7 +63,7 @@ ms.locfileid: "65363928"
   
 8. 如果需要，更改您的首选项有关选择加入 ceip，，然后选择**确定**。 
   
-9. 选择“完成”。  
+9. 选择“完成”  。  
   
 10. 如果您选择要删除适配器，在**准备好删除 Microsoft BizTalk Adapter Pack**对话框中，选择**删除**，然后选择**完成**。  
   
@@ -98,7 +98,7 @@ ms.locfileid: "65363928"
 ## <a name="uninstall-or-remove-the-biztalk-adapter-pack"></a>卸载或删除 BizTalk 适配器包  
   
 > [!IMPORTANT]
->  如果要使用的 tRFC 功能的 SQL Server 数据库中创建表[!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)]，则必须手动卸载之前删除它们[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]。 [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]安装副本`SapAdapter-DbScript-Uninstall.sql`文件通常位于*\<安装驱动器\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)] *。 运行此文件以删除你创建的表。  
+>  如果要使用的 tRFC 功能的 SQL Server 数据库中创建表[!INCLUDE[adaptersap_short](../includes/adaptersap-short-md.md)]，则必须手动卸载之前删除它们[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]。 [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]安装副本`SapAdapter-DbScript-Uninstall.sql`文件通常位于 *\<安装驱动器\>: \Program Files\Microsoft [!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]* 。 运行此文件以删除你创建的表。  
   
 完成以下步骤以删除[!INCLUDE[adapterpacknoversion](../includes/adapterpacknoversion-md.md)]从您的计算机。 请确保您具有[!INCLUDE[afproductnameshort](../includes/afproductnameshort-md.md)]安装，然后运行安装向导。  
   
@@ -138,7 +138,7 @@ ms.locfileid: "65363928"
 ## <a name="remove-the-bindings"></a>删除绑定  
  完成这些步骤*仅*如果安装向导无法从 machine.config 文件中删除适配器绑定或.NET Framework 数据提供程序注册。  
   
-1. 请转到计算机上的 machine.config 文件。 例如，在 32 位平台上，在 machine.config 位于下*\<系统驱动器\>: \WINDOWS\Microsoft.NET\Framework\\< 版本\>\CONFIG*。  
+1. 请转到计算机上的 machine.config 文件。 例如，在 32 位平台上，在 machine.config 位于下 *\<系统驱动器\>: \WINDOWS\Microsoft.NET\Framework\\< 版本\>\CONFIG*。  
   
 2. 打开文件使用文本编辑器。  
   

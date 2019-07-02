@@ -35,7 +35,7 @@ ms.locfileid: "65286398"
 
 - 升级时，注册表项和数据库会自动备份。  
 
-- 中的文件*\<驱动器\>*: \Program Files\Microsoft BizTalk\<版本\>Accelerator for HL7 文件夹进行更新。  
+- 中的文件 *\<驱动器\>* : \Program Files\Microsoft BizTalk\<版本\>Accelerator for HL7 文件夹进行更新。  
 
 > [!IMPORTANT]
 >  升级不会创建为升级后的文件中，新建一个文件夹，也不会更改现有文件夹的名称。  
@@ -57,7 +57,7 @@ ms.locfileid: "65286398"
 
 2. 备份[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]数据库和你 HL7 消息架构。  
 
-3. 备份下的任何文件 ***\<驱动器\>*:\Program Files\Microsoft BizTalk Accelerator for HL7**已更改的文件夹。 例如，在 SDK 中的文件备份。  
+3. 备份下的任何文件 * **\<驱动器\>*:\Program Files\Microsoft BizTalk Accelerator for HL7**已更改的文件夹。 例如，在 SDK 中的文件备份。  
 
 4. 安装你的版本的相应更新[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]:  
 

@@ -24,11 +24,11 @@ ms.locfileid: "65399898"
   
  **若要从安装脚本安装 Namespace 组件示例**  
   
-1.  在 **“开始”** 菜单上，单击 **“运行”**。  
+1.  在 **“开始”** 菜单上，单击 **“运行”** 。  
   
 2.  在中**运行**对话框中，键入**cmd**，然后按 ENTER 以打开命令提示符。  
   
-3.  运行以下命令，替换*\<路径\>* 参数替换为你想要安装的.cmd 文件的完整路径 （在此版本中的默认路径是 \Source\Samples\Namepace\Install\Scripts\\):  
+3.  运行以下命令，替换 *\<路径\>* 参数替换为你想要安装的.cmd 文件的完整路径 （在此版本中的默认路径是 \Source\Samples\Namepace\Install\Scripts\\):  
   
     ```  
     <path>\Setup_bin.cmd  

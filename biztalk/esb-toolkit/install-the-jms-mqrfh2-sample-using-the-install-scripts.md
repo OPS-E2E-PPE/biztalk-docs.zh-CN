@@ -36,11 +36,11 @@ ms.locfileid: "65399886"
   
     -   ESB。JMS。示例。SENDTOBIZTALK  
   
-3.  在 **“开始”** 菜单上，单击 **“运行”**。  
+3.  在 **“开始”** 菜单上，单击 **“运行”** 。  
   
 4.  在中**运行**对话框中，键入**cmd**，然后按 ENTER。  
   
-5.  运行以下命令，替换*\<路径\>* 参数替换为你想要安装的.cmd 文件的完整路径 (在此版本中的默认路径是 \Source\Samples\JMS\Install\Scripts\\):  
+5.  运行以下命令，替换 *\<路径\>* 参数替换为你想要安装的.cmd 文件的完整路径 (在此版本中的默认路径是 \Source\Samples\JMS\Install\Scripts\\):  
   
     ```  
     <path>\Setup_bin.cmd  

@@ -45,7 +45,7 @@ ms.locfileid: "65254485"
  此示例演示如何有选择地导入绑定文件从网络共享通过使用 BizTalk 应用程序.msi 文件中包含一个后处理脚本。  
   
 ## <a name="where-to-find-this-sample"></a>本示例所在的位置  
- 以下示例文件夹和文件下的可以找到*\<示例路径\>* \Application Deployment\SelectiveBindingImport:  
+ 以下示例文件夹和文件下的可以找到 *\<示例路径\>* \Application Deployment\SelectiveBindingImport:  
   
 -   Develop （文件夹）  
   
@@ -70,7 +70,7 @@ ms.locfileid: "65254485"
   
 ### <a name="to-run-the-sample"></a>若要运行示例  
   
-1. 运行**从 Build.Bat *\<示例路径\>* deployment\createapp**目录。 这将创建以下文件中的*\<示例路径\>* \Application Deployment\CreateApp\Dlls 文件夹：Schemas.dll、 Maps.dll 和 Orchestrations.dll。  
+1. 运行**从 Build.Bat *\<示例路径\>* deployment\createapp**目录。 这将创建以下文件中的 *\<示例路径\>* \Application Deployment\CreateApp\Dlls 文件夹：Schemas.dll、 Maps.dll 和 Orchestrations.dll。  
   
 2. **创建应用程序。** 在 BizTalk Server 管理控制台中，创建应用程序，如中所述[如何创建应用程序](../core/how-to-create-an-application.md)。  
   

@@ -185,19 +185,19 @@ ms.locfileid: "65301742"
 
   **SQL Server KPI**  
 
-- **SQL Server 的处理器使用率 –** 由度量**SQL\Processor(Total)\\%Processor Time**计数器。 此计数器测量的 CPU 使用率[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]处理[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]计算机。  
+- **SQL Server 的处理器使用率 –** 由度量 **SQL\Processor(Total)\\%Processor Time**计数器。 此计数器测量的 CPU 使用率[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]处理[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]计算机。  
 
-- **Transact SQL 命令处理性能 –** 由度量**\SQL Server:SQL Statistics\Batch 请求数/秒**计数器。 此计数器测量的每秒接收的 TRANSACT-SQL 命令批处理的数目。 使用此计数器来测量吞吐量上[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]计算机。  
+- **Transact SQL 命令处理性能 –** 由度量 **\SQL Server:SQL Statistics\Batch 请求数/秒**计数器。 此计数器测量的每秒接收的 TRANSACT-SQL 命令批处理的数目。 使用此计数器来测量吞吐量上[!INCLUDE[btsSQLServerNoVersion](../includes/btssqlservernoversion-md.md)]计算机。  
 
   **网络 KPI**  
 
-- **BizTalk Server 的网络吞吐量 –** 由度量**\Network 接口 (\*) \Bytes Total/sec**上的性能监视器计数器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机。  
+- **BizTalk Server 的网络吞吐量 –** 由度量 **\Network 接口 (\*) \Bytes Total/sec**上的性能监视器计数器[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机。  
 
 - **SQL Server 网络吞吐量 –** 由度量**SQL Network Interface\Bytes Total/sec (Avg)** 返回的 VSTS 2008 负载测试控制器。  
 
   **内存 KPI**  
 
-- **可用内存 — —** 由度量**\Memory\Available Mbytes**的各种方案的计数器。  
+- **可用内存 — —** 由度量 **\Memory\Available Mbytes**的各种方案的计数器。  
 
 ## <a name="physical-infrastructure-specifics"></a>物理基础结构详细信息  
  为每个已安装的服务器已调整以下设置。  

@@ -100,7 +100,7 @@ ms.locfileid: "65373471"
             </FIELDS>', @fields=@flds output  
   ```  
   
-- 创建**DataTable**参数中的复杂类型并设置 SAP 参数值的字段的列与**DataTable**。 此示例演示如何设置@fields通过使用复杂类型**DataTable**。  
+- 创建**DataTable**参数中的复杂类型并设置 SAP 参数值的字段的列与**DataTable**。 此示例演示如何设置@fields通过使用复杂类型 **DataTable**。  
   
   ```  
   cmd.CommandText = "exec rfc_read_table @query_table='BNKA', @fields = @p_fields";  
