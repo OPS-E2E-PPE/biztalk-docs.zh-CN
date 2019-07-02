@@ -23,8 +23,8 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 05/07/2019
 ms.locfileid: "65255550"
 ---
-# <a name="data-types-common-schemas"></a><span data-ttu-id="bf804-102">数据类型通用架构</span><span class="sxs-lookup"><span data-stu-id="bf804-102">Data Types Common Schemas</span></span>
-<span data-ttu-id="bf804-103">**Datatypes_*\<版本\>*.xsd**架构文件 (其中*\<版本\>* 是 HL7 版本号)包含相应的 HL7 版本的所有 HL7 基本和复合数据类型的定义。</span><span class="sxs-lookup"><span data-stu-id="bf804-103">The **datatypes_*\<version\>*.xsd** schema file (where *\<version\>* is the HL7 version number) contains the definition of all the HL7 elementary and composite data types for the corresponding HL7 version.</span></span> <span data-ttu-id="bf804-104">Segments_*\<版本\>*.xsd 文件使用此文件与相应的 HL7 版本匹配。</span><span class="sxs-lookup"><span data-stu-id="bf804-104">The segments_*\<version\>*.xsd file uses this file to match the corresponding HL7 version.</span></span> <span data-ttu-id="bf804-105">DataStructures Access 数据库表生成 DataTypes_*\<版本\>*.xsd 架构文件。</span><span class="sxs-lookup"><span data-stu-id="bf804-105">The DataStructures Access database table generates the DataTypes_*\<version\>*.xsd schema file.</span></span> <span data-ttu-id="bf804-106">下面的示例是用于 HL7 基本数据类型的条目**ST**:</span><span class="sxs-lookup"><span data-stu-id="bf804-106">The following example is an entry for the HL7 elementary data type **ST**:</span></span>  
+# <a name="data-types-common-schemas"></a><span data-ttu-id="dc4ac-102">数据类型通用架构</span><span class="sxs-lookup"><span data-stu-id="dc4ac-102">Data Types Common Schemas</span></span>
+<span data-ttu-id="dc4ac-103">**Datatypes_ *\<版本\>* .xsd**架构文件 (其中 *\<版本\>* 是 HL7 版本号)包含相应的 HL7 版本的所有 HL7 基本和复合数据类型的定义。</span><span class="sxs-lookup"><span data-stu-id="dc4ac-103">The **datatypes_*\<version\>*.xsd** schema file (where *\<version\>* is the HL7 version number) contains the definition of all the HL7 elementary and composite data types for the corresponding HL7 version.</span></span> <span data-ttu-id="dc4ac-104">Segments_ *\<版本\>* .xsd 文件使用此文件与相应的 HL7 版本匹配。</span><span class="sxs-lookup"><span data-stu-id="dc4ac-104">The segments_*\<version\>*.xsd file uses this file to match the corresponding HL7 version.</span></span> <span data-ttu-id="dc4ac-105">DataStructures Access 数据库表生成 DataTypes_ *\<版本\>* .xsd 架构文件。</span><span class="sxs-lookup"><span data-stu-id="dc4ac-105">The DataStructures Access database table generates the DataTypes_*\<version\>*.xsd schema file.</span></span> <span data-ttu-id="dc4ac-106">下面的示例是用于 HL7 基本数据类型的条目**ST**:</span><span class="sxs-lookup"><span data-stu-id="dc4ac-106">The following example is an entry for the HL7 elementary data type **ST**:</span></span>  
   
 ```  
 <xsd:simpleType name="ST">  
@@ -32,9 +32,9 @@ ms.locfileid: "65255550"
 </xsd:simpleType>  
 ```  
   
- <span data-ttu-id="bf804-107">此示例定义了**ST**作为**字符串**。</span><span class="sxs-lookup"><span data-stu-id="bf804-107">This example defines **ST** as a **string**.</span></span>  
+ <span data-ttu-id="dc4ac-107">此示例定义了**ST**作为**字符串**。</span><span class="sxs-lookup"><span data-stu-id="dc4ac-107">This example defines **ST** as a **string**.</span></span>  
   
-## <a name="see-also"></a><span data-ttu-id="bf804-108">请参阅</span><span class="sxs-lookup"><span data-stu-id="bf804-108">See Also</span></span>  
- <span data-ttu-id="bf804-109">[HL7 2.X 通用架构文件](../../adapters-and-accelerators/accelerator-hl7/hl7-2-x-common-schema-files.md) </span><span class="sxs-lookup"><span data-stu-id="bf804-109">[HL7 2.X Common Schema Files](../../adapters-and-accelerators/accelerator-hl7/hl7-2-x-common-schema-files.md) </span></span>  
- <span data-ttu-id="bf804-110">[段通用架构](../../adapters-and-accelerators/accelerator-hl7/segments-common-schemas.md) </span><span class="sxs-lookup"><span data-stu-id="bf804-110">[Segments Common Schemas](../../adapters-and-accelerators/accelerator-hl7/segments-common-schemas.md) </span></span>  
- [<span data-ttu-id="bf804-111">表值通用架构</span><span class="sxs-lookup"><span data-stu-id="bf804-111">Table Values Common Schemas</span></span>](../../adapters-and-accelerators/accelerator-hl7/table-values-common-schemas.md)
+## <a name="see-also"></a><span data-ttu-id="dc4ac-108">请参阅</span><span class="sxs-lookup"><span data-stu-id="dc4ac-108">See Also</span></span>  
+ <span data-ttu-id="dc4ac-109">[HL7 2.X 通用架构文件](../../adapters-and-accelerators/accelerator-hl7/hl7-2-x-common-schema-files.md) </span><span class="sxs-lookup"><span data-stu-id="dc4ac-109">[HL7 2.X Common Schema Files](../../adapters-and-accelerators/accelerator-hl7/hl7-2-x-common-schema-files.md) </span></span>  
+ <span data-ttu-id="dc4ac-110">[段通用架构](../../adapters-and-accelerators/accelerator-hl7/segments-common-schemas.md) </span><span class="sxs-lookup"><span data-stu-id="dc4ac-110">[Segments Common Schemas](../../adapters-and-accelerators/accelerator-hl7/segments-common-schemas.md) </span></span>  
+ [<span data-ttu-id="dc4ac-111">表值通用架构</span><span class="sxs-lookup"><span data-stu-id="dc4ac-111">Table Values Common Schemas</span></span>](../../adapters-and-accelerators/accelerator-hl7/table-values-common-schemas.md)
