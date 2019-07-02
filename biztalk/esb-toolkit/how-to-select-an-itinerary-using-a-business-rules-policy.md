@@ -76,7 +76,7 @@ ms.locfileid: "65258485"
   
 #### <a name="to-add-a-selection-rule-for-customer-globalbank-west"></a>若要添加客户 GlobalBank 西部选择规则  
   
-1.  在中**ResolveItineraryBasedOnCustomer**策略中，右键单击**版本 1.0 （未保存）**，然后单击**添加新规则**。 命名规则**SetGlobalBankWestItinerary**。  
+1.  在中**ResolveItineraryBasedOnCustomer**策略中，右键单击**版本 1.0 （未保存）** ，然后单击**添加新规则**。 命名规则**SetGlobalBankWestItinerary**。  
   
 2.  在事实浏览器中单击**XML 架构**选项卡上，右键单击**架构**，然后单击**浏览**。  
   
@@ -100,7 +100,7 @@ ms.locfileid: "65258485"
   
 9. 在事实浏览器中单击**词汇**选项卡。展开**ESB。路线**词汇，展开**版本 1.1**，然后将拖**集路线名称**定义**操作**。  
   
-10. 单击**\<空字符串\>**，然后键入**GlobalBankWestItinerary**。  
+10. 单击 **\<空字符串\>** ，然后键入 **GlobalBankWestItinerary**。  
   
     > [!NOTE]
     >  本操作指南主题中稍后将此路线创建处理消息从 GlobalBank 西部。  
@@ -109,7 +109,7 @@ ms.locfileid: "65258485"
   
 1.  在策略浏览器中右键单击**SetGlobalBankWestItinerary**规则，然后依次**副本**。  
   
-2.  右键单击**版本 1.0 （未保存）**，然后单击**粘贴**。  
+2.  右键单击**版本 1.0 （未保存）** ，然后单击**粘贴**。  
   
 3.  在中**新建规则名称**对话框中，键入**SetGlobalBankEastItinerary**，然后单击**确定**。  
   
@@ -121,14 +121,14 @@ ms.locfileid: "65258485"
   
 7.  在中**操作**部分中，右键单击**GlobalBankWestItinerary**，然后单击**重置参数**。  
   
-8.  单击**\<空字符串\>** ，然后键入**GlobalBankEastItinerary**。  
+8.  单击 **\<空字符串\>** ，然后键入 **GlobalBankEastItinerary**。  
   
     > [!NOTE]
     >  更高版本中的操作方法主题，您将创建来处理消息的此路线，从 GlobalBank 东部。  
   
 #### <a name="to-publish-and-deploy-the-policy"></a>若要发布和部署策略  
   
-1.  在策略浏览器下**ResolveItineraryBasedOnCustomer**策略中，右键单击**版本 1.0 （未保存）**，然后单击**发布**。  
+1.  在策略浏览器下**ResolveItineraryBasedOnCustomer**策略中，右键单击**版本 1.0 （未保存）** ，然后单击**发布**。  
   
 2.  在策略浏览器下**ResolveItineraryBasedOnCustomer**策略中，右键单击**版本 1.0-已发布**，然后单击**部署**。  
   

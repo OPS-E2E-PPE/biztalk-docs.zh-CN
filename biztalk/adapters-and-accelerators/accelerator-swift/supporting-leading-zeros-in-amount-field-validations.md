@@ -42,7 +42,7 @@ ms.locfileid: "65529798"
   
 1.  打开文本编辑器，如记事本。  
   
-2.  在编辑器中，浏览到想要启用或禁用前导零的消息验证策略的位置。 例如，您可以找到消息验证策略对于 MT103 消息类型，MT103_Validation_Policy.xml，在*\<驱动器\>*: / Program Files/Microsoft BizTalk Accelerator for SWIFT/SWIFT 消息/ 类别 1/MT103。 打开验证策略。  
+2.  在编辑器中，浏览到想要启用或禁用前导零的消息验证策略的位置。 例如，您可以找到消息验证策略对于 MT103 消息类型，MT103_Validation_Policy.xml，在 *\<驱动器\>* : / Program Files/Microsoft BizTalk Accelerator for SWIFT/SWIFT 消息/ 类别 1/MT103。 打开验证策略。  
   
 3.  在策略中，搜索**CheckValidAmount**方法。  
   

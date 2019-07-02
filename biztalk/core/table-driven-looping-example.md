@@ -86,7 +86,7 @@ ms.locfileid: "65291667"
 </ns0:Root>  
 ```  
   
- `The following figure shows a map using the`  **表****循环**`functoid and`**表****提取程序    **  `functoids to generate the desired output instance message.`  
+ `The following figure shows a map using the` **表** **循环**`functoid and`**表** **提取程序**  `functoids to generate the desired output instance message.`  
   
  ![映射表循环和表提取程序 functoid](../core/media/tableloopingextractorfunctoid.gif "tableloopingextractorfunctoid")  
 TableLooping 和提取程序 Functoid  
@@ -97,7 +97,7 @@ TableLooping 和提取程序 Functoid
   
  第二个参数是 functoid 的网格表中的列数： 一列分别表示地址类型、 名称、 街道、 城市、 州和邮政编码。 后面的第二个参数是所有可能会显示在网格表中的值的列表。 这些包括地址类型 （"ShipTo"、"BillTo"） 的字符串常量，以及指向地址的字段。 请注意，指向地址字段的名称。 命名在映射中的链接可以简化构造表。 否则，完整路径将显示在**配置表循环 Functoid**对话框。  
   
- 配置后**表循环**functoid，您可以构造表使用**配置表循环 Functoid**对话框。 单击省略号，此时将显示对话框 (**...**) 按钮与相关联**表循环网格**中的属性**属性**窗口。  
+ 配置后**表循环**functoid，您可以构造表使用**配置表循环 Functoid**对话框。 单击省略号，此时将显示对话框 ( **...** ) 按钮与相关联**表循环网格**中的属性**属性**窗口。  
   
  请注意，共有六个列中的规定**配置表循环 Functoid**对话框： 一列对应输出架构中每个字段。 下拉列表中显示的字段，还为指定的在第三个以及其后的参数的可能值**配置表循环 Functoid**对话框。 表中的两个行，一个用于每种类型的输出架构中的记录。 因为有两个行，此映射生成每个输入记录的两个的记录。 如果有四个行，将有每个输入记录的四个输出记录。  
   

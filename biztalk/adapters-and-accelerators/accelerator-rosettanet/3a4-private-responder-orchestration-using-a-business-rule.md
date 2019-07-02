@@ -28,7 +28,7 @@ PIP3A4PrivateResponder.odx 示例是演示如何实现合作伙伴接口流程 (
   
 #### <a name="to-build-and-initialize-this-sample"></a>若要生成并初始化本示例  
   
-1.  在命令提示符处，找到*\<驱动器\>*: files\ Microsoft BizTalk Accelerator for RosettaNet\<版本\>\SDK\PIPAutomation\3A4 文件夹。  
+1.  在命令提示符处，找到 *\<驱动器\>* : files\ Microsoft BizTalk Accelerator for RosettaNet\<版本\>\SDK\PIPAutomation\3A4 文件夹。  
   
 2.  运行文件 Setup.bat，以使用 Binding.xml 绑定文件来执行以下操作：  
   
@@ -48,7 +48,7 @@ PIP3A4PrivateResponder.odx 示例是演示如何实现合作伙伴接口流程 (
     >  必须完成 PIP3A4PrivateResponderProcess 业务流程使用 BizTalk 浏览器的端口绑定配置。  
   
     > [!NOTE]
-    >  若要撤消 setup.bat 所做的更改，请手动取消登记 PIP3A4PrivateResponder.odx 业务流程、 取消部署 Helper 和 PIP3A4PrivateResponder 程序集，并取消部署，然后删除 samplebtarnpolicy 规则策略。 不能使用中的 Cleanup.bat *\<驱动器\>*: files\ Microsoft BizTalk Accelerator for RosettaNet\<版本\>\SDK\PIPAutomation\3A4 文件夹，若要撤消更改setup.bat 所做的。  
+    >  若要撤消 setup.bat 所做的更改，请手动取消登记 PIP3A4PrivateResponder.odx 业务流程、 取消部署 Helper 和 PIP3A4PrivateResponder 程序集，并取消部署，然后删除 samplebtarnpolicy 规则策略。 不能使用中的 Cleanup.bat *\<驱动器\>* : files\ Microsoft BizTalk Accelerator for RosettaNet\<版本\>\SDK\PIPAutomation\3A4 文件夹，若要撤消更改setup.bat 所做的。  
   
 ## <a name="demonstrates"></a>演示  
  此示例订阅 3A4 请求操作和信号消息。 它适用于这两个 3A4 同步和异步进程。 所有其他 PIP 消息仍通过通用路由[!INCLUDE[btaBTARN3.3abbrevnonumber](../../includes/btabtarn3-3abbrevnonumber-md.md)]专用流程。 此示例调用[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]业务规则引擎，并将传递给规则引擎将传入 3A4 请求消息。  

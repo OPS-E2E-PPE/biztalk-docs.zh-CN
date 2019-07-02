@@ -99,7 +99,7 @@ ms.locfileid: "65398393"
     -   **创建 BizTalk 接收位置。** 此选项会自动创建 SOAP 适配器接收端口和对应于每个生成的.asmx 文件的位置。 如果另一个接收位置已存在，则不会替换该接收位置。 使用格式解析 SOAP 适配器的接收位置"/\<*虚拟目录名称*\>/\<*业务流程 namespace_typename_portname* \>.asmx"。 选择此选项后，选择接收端口和位置将生成的应用程序。  
   
         > [!NOTE]
-        >  项目位置可位于其他服务器上。 若要将 Web 服务发布到另一台服务器，键入项目名称设置为**`http://<servername>/<project_name>`** 。  
+        >  项目位置可位于其他服务器上。 若要将 Web 服务发布到另一台服务器，键入项目名称设置为 **`http://<servername>/<project_name>`** 。  
   
         > [!NOTE]
         >  项目位置可位于非默认网站上。 发布到非默认网站时，在 URL 中包括该网站的端口号： `http://localhost:8080/<project_name>`。  

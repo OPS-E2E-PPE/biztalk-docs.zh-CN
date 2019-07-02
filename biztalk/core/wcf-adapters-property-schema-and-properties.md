@@ -23,7 +23,7 @@ ms.locfileid: "65399145"
 阅读有关 WCF 适配器属性架构中升级的属性。 WCF 适配器将值分配给可以在应用程序中使用的属性。 WCF 适配器还提供了一种机制来编写，而不是升级到 BizTalk 消息上下文中，自定义属性和升级到 BizTalk 消息上下文的自定义属性的机制。 有关更多详细信息，请参阅[SOAP 标头发布 WCF 服务与](../core/soap-headers-with-published-wcf-services.md)。  
 
 ## <a name="promoted-properties"></a>升级的属性  
-**Namespace**：http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties  
+**Namespace**： http://schemas.microsoft.com/BizTalk/2006/01/Adapters/WCF-properties  
 
 #### <a name="action"></a>操作
 指定**SOAPAction**为传出消息的标头字段。 可以通过两种方式指定此值： 单一操作格式和操作映射格式。 如果将此属性设置在单一操作格式 — 例如， http://contoso.com/Svc/Op1 — **SOAPAction**标头传出消息将始终设置为此属性中指定的值。
@@ -628,10 +628,10 @@ Wcf-nettcp 适配器利用[NetTcpBinding](http://go.microsoft.com/fwlink/?LinkId
 #### <a name="referencedbindings"></a>ReferencedBindings
 指定引用的绑定配置 **bindingConfiguration** 的属性 **\<颁发者\>** 元素 **wsFederationHttpBinding** 并**customBinding**， 表示安全令牌服务 (STS) 颁发安全令牌。 有关详细信息 **\<颁发者\>** 元素中，请参阅本主题中，"\<颁发者\>"在[http://go.microsoft.com/fwlink/?LinkId=83476](http://go.microsoft.com/fwlink/?LinkId=83476)。
 
-绑定信息，包括**\<颁发者\>** 元素**wsFederationHttpBinding**并**customBinding**可以是通过配置**BindingConfiguration** Wcf-custom 和 Wcf-customisolated 适配器的属性。 此属性的引用的绑定配置的所有必须置于的窗体[\<绑定\>](http://go.microsoft.com/fwlink/?LinkID=80878)元素。 
+绑定信息，包括 **\<颁发者\>** 元素 **wsFederationHttpBinding**并**customBinding**可以是通过配置**BindingConfiguration** Wcf-custom 和 Wcf-customisolated 适配器的属性。 此属性的引用的绑定配置的所有必须置于的窗体[\<绑定\>](http://go.microsoft.com/fwlink/?LinkID=80878)元素。 
 
 **注意**  
-**BindingConfiguration**的属性**\<颁发者\>** 元素必须引用此属性中的有效绑定名称。 
+**BindingConfiguration**的属性 **\<颁发者\>** 元素必须引用此属性中的有效绑定名称。 
 
 **注意**  
 **\<颁发者\>** 中引用的绑定配置元素还可以对此属性中的其他绑定配置引用如果此引用链不会使循环依赖项。 

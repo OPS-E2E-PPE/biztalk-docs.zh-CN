@@ -28,7 +28,7 @@ MllpReceive 工具可用于从 MLLP 发送端口接收数据。
   
  安装此工具通过[!INCLUDE[HL7_CurrentVersion_FirstRef](../../includes/hl7-currentversion-firstref-md.md)]自定义安装过程。 如果您执行典型安装中安装 BTAHL7，然后必须运行自定义安装，并按本教程中正常工作的顺序安装测试工具。 在自定义设置屏幕中，选择**MLLP 测试工具**从**适配器**文件夹，然后选择**测试实例**从**项目**文件夹。 有关详细信息，请参阅[执行自定义安装](http://msdn.microsoft.com/library/e55c86e1-af63-49ba-8510-d177e1b96692)。  
   
- BTAHL7 安装程序将安装在此工具*\<驱动器\>*: \Program Files\Microsoft BizTalk\<版本\>Accelerator for HL7\SDK\MLLP 实用程序。  
+ BTAHL7 安装程序将安装在此工具 *\<驱动器\>* : \Program Files\Microsoft BizTalk\<版本\>Accelerator for HL7\SDK\MLLP 实用程序。  
   
  使用此工具中的[端到端教程](../../adapters-and-accelerators/accelerator-hl7/end-to-end-tutorial1.md)，则[询问教程](../../adapters-and-accelerators/accelerator-hl7/interrogative-tutorial.md)，则[批处理教程](../../adapters-and-accelerators/accelerator-hl7/batching-tutorial.md)，和[消息充实教程](../../adapters-and-accelerators/accelerator-hl7/message-enrichment-tutorial.md). 如果您安装了[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]通过默认安装中，且尚未安装和使用的 MLLPTest 工具 （包括 MllpReceive MllpSend），您将不能测试您的教程结果。  
   

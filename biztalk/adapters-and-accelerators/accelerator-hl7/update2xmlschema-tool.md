@@ -25,12 +25,12 @@ ms.lasthandoff: 05/07/2019
 ms.locfileid: "65286464"
 ---
 # <a name="update2xmlschema-tool"></a>Update2XMLSchema 工具
-Update2XMLSchema 工具，可修改 HL7 2.xml 架构以使用 BizTalk 编辑器。 这是必需的因为 Microsoft 中无法正常工作某些 HL7 2.xml 架构[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]无需修改即可。 修改后的架构，该工具将它们放在此架构文件夹位置[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]已安装，例如， *\<驱动器\>*: \Program Files\Microsoft BizTalk\<版本\>Accelerator for HL7\Templates\Schemas。  
+Update2XMLSchema 工具，可修改 HL7 2.xml 架构以使用 BizTalk 编辑器。 这是必需的因为 Microsoft 中无法正常工作某些 HL7 2.xml 架构[!INCLUDE[btsBizTalkServerNoVersion](../../includes/btsbiztalkservernoversion-md.md)]无需修改即可。 修改后的架构，该工具将它们放在此架构文件夹位置[!INCLUDE[btaBTAHL71.3abbrevnonumber](../../includes/btabtahl71-3abbrevnonumber-md.md)]已安装，例如， *\<驱动器\>* : \Program Files\Microsoft BizTalk\<版本\>Accelerator for HL7\Templates\Schemas。  
   
  需要更新手动运行 Update2XMLSchema 工具生成的架构的某些字段。 请参阅[所需的手动更新](../../adapters-and-accelerators/accelerator-hl7/required-manual-updates.md)有关这些架构的列表。  
   
 ## <a name="syntax"></a>语法  
- 此工具位于*\<驱动器\>*: \Program Files\Microsoft BizTalk\<版本\>Accelerator for HL7\SDK\2XML 实用程序。 在命令提示符处使用以下命令运行此工具：  
+ 此工具位于 *\<驱动器\>* : \Program Files\Microsoft BizTalk\<版本\>Accelerator for HL7\SDK\2XML 实用程序。 在命令提示符处使用以下命令运行此工具：  
   
 ```  
 Update2XMLSchema /s /v  
@@ -41,7 +41,7 @@ Update2XMLSchema /s /v
 |参数|“属性”|ReplTest1|  
 |---------------|----------|-----------|  
 |*S*|Source|原始的 HL7 架构的完整路径|  
-|*V*|版本|2.XML 架构的版本： 2.3.1、 2.4 或 2.5|  
+|*V*|版本|2\.XML 架构的版本： 2.3.1、 2.4 或 2.5|  
   
 ## <a name="example"></a>示例  
   

@@ -49,7 +49,7 @@ ms.locfileid: "65266175"
 
    在创建新网站：  
 
-  1. 打开**[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]配置**。  
+  1. 打开 **[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]配置**。  
 
   2. 配置 BAM 门户，并选择从新的网站**BAM 门户网站**列表。  
 

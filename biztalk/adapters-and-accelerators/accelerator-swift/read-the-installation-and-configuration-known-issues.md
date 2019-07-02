@@ -22,7 +22,7 @@ ms.locfileid: "65377068"
 # <a name="read-the-installation-and-configuration-known-issues"></a>阅读有关安装和配置的已知问题
   
 ## <a name="installing-over-terminal-server-creates-log-files-in-a-different-folder"></a>通过终端服务器安装在不同的文件夹中创建的日志文件  
- A4SWIFT 安装程序在 A4SWIFT 安装通过终端服务器连接时，创建中的安装和配置日志文件*\<驱动器\>*: \Documents and 设置\\*\<用户名\>* \Local 设置文件夹。 通常情况下，安装程序会创建这些文件置于*\<驱动器\>*: \Documents and 设置\\*\<用户名\>* \LocalSettings\temp 文件夹。 可以查看这些日志文件，以确保你的计算机进行设置并正确配置。  
+ A4SWIFT 安装程序在 A4SWIFT 安装通过终端服务器连接时，创建中的安装和配置日志文件 *\<驱动器\>* : \Documents and 设置\\ *\<用户名\>* \Local 设置文件夹。 通常情况下，安装程序会创建这些文件置于 *\<驱动器\>* : \Documents and 设置\\ *\<用户名\>* \LocalSettings\temp 文件夹。 可以查看这些日志文件，以确保你的计算机进行设置并正确配置。  
   
 ## <a name="silent-installation-is-not-recommended"></a>不建议无提示安装  
  无提示安装支持的 A4SWIFT 安装程序，但不是建议由于其他配置步骤所需的复杂性。  
@@ -42,7 +42,7 @@ ms.locfileid: "65377068"
  A4SWIFT 数据库将显示在**用于消息修复和新提交的 Web 组件**窗格 A4SWIFT 配置对话框中，即使该数据库不存在。 警告将显示 A4SWIFT 数据库中数据存储窗格中，但警告不会继续阻止配置过程。  
   
 ## <a name="upgrade-process-does-not-create-a-new-root-folder"></a>升级过程不会创建一个新的根文件夹  
- 升级进程会更新 A4SWIFT 文件中的现有*\<驱动器\>*: \Program Files\Microsoft BizTalk Accelerator for A4SWIFT 2.3/3.0 文件夹。 它不会创建新文件夹的升级后的文件，也不会改变现有文件夹的名称*\<驱动器\>*: \Program Files\Microsoft BizTalk Accelerator for SWIFT。  
+ 升级进程会更新 A4SWIFT 文件中的现有 *\<驱动器\>* : \Program Files\Microsoft BizTalk Accelerator for A4SWIFT 2.3/3.0 文件夹。 它不会创建新文件夹的升级后的文件，也不会改变现有文件夹的名称 *\<驱动器\>* : \Program Files\Microsoft BizTalk Accelerator for SWIFT。  
   
 ## <a name="canceling-setup-during-an-upgrade-for-a4swift-may-leave-your-system-in-an-unknown-state"></a>在升级过程的 A4SWIFT 取消安装程序可能会使系统处于未知状态  
  在某些情况下，单击**取消**按钮在升级过程中可能会原样保留文件、 程序集、 BizTalk Server 项目和注册表项并且安装程序完成回滚后。  
