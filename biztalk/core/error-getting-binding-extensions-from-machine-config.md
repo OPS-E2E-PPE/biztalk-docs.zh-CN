@@ -59,6 +59,6 @@ ms.locfileid: "65388826"
         ```  
   
 > [!NOTE]
->  此外可以将上面的代码添加到 WCF 扩展选项卡。如果扩展需要位于接收端，请参阅**\<主机名\>属性对话框中，WCF 扩展**选项卡 （Wcf-custom 或 Wcf-customisolated 适配器接收处理程序） [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。 如果扩展插件需要在发送端，请参阅**\<主机名\>属性对话框中，WCF 扩展**选项卡 （Wcf-custom 适配器发送处理程序） [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。  
+>  此外可以将上面的代码添加到 WCF 扩展选项卡。如果扩展需要位于接收端，请参阅 **\<主机名\>属性对话框中，WCF 扩展** 选项卡 （Wcf-custom 或 Wcf-customisolated 适配器接收处理程序） [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。 如果扩展插件需要在发送端，请参阅 **\<主机名\>属性对话框中，WCF 扩展**选项卡 （Wcf-custom 适配器发送处理程序） [!INCLUDE[ui-guidance-developers-reference](../includes/ui-guidance-developers-reference.md)]。  
   
  3. 关闭并重新打开管理控制台。 您应能够看到您在 WCF 自定义适配器的自定义行为，该端口应保持启用状态时启用它。

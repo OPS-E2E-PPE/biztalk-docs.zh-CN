@@ -78,7 +78,7 @@ ms.locfileid: "65389756"
 ## <a name="you-receive-a-the-file-send-adapter-cannot-open-file-for-writing-error-when-sending-using-a-dynamic-send-port"></a>发送使用动态发送端口时收到"文件发送适配器无法打开文件进行写入"错误  
   
 ### <a name="problem"></a>问题  
- 你收到"文件发送适配器无法打开文件*\<文件名\>* 进行写入"错误时使用动态发送，BizTalk Server 事件日志中的发送端口。  
+ 你收到"文件发送适配器无法打开文件 *\<文件名\>* 进行写入"错误时使用动态发送，BizTalk Server 事件日志中的发送端口。  
   
  发生此问题时**BTS。OutBoundTransportLocation**属性在业务流程表达式中定义和指定的文件传输，例如以下表达式将导致此错误在运行时：  
   

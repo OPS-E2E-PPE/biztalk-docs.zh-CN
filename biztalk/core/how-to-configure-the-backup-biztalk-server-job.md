@@ -87,9 +87,9 @@ ms.locfileid: "65341264"
   
 5. 选择**BackupFull**步骤，，然后选择**编辑**。 在中**命令**框中，更新参数值：  
   
-   1. **频率**:默认值是**d** （每天）; 这是建议的设置。 其他值包括 **h** （每小时）、 **w** （每周）、 **m** （每月）或 **y** （每年）。  
+   1. **频率**:默认值是 **d** （每天）; 这是建议的设置。 其他值包括 **h** （每小时）、 **w** （每周）、 **m** （每月）或 **y** （每年）。  
   
-   2. **名称**：默认值是**BTS**。 该名称用作备份文件名的一部分。  
+   2. **名称**：默认值是 **BTS**。 该名称用作备份文件名的一部分。  
   
    3. **备份文件的位置**:替换为 *\<目标路径\>* 替换为计算机和你想要备份的文件夹的完整路径 （该路径必须包含单引号）[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]数据库或 blob 服务终结点到 Azure blob 存储帐户的 URL。  
 
@@ -104,9 +104,9 @@ ms.locfileid: "65341264"
 
    4. 可选。 **部分备份失败后强制完全备份**(@ForceFullBackupAfterPartialSetFailure):默认值为 **0**。 如果日志备份失败，直到到达下一个完整备份频率间隔运行完整备份。 将替换为**1**如果您希望完整备份的日志备份失败时运行。
     
-   5. 可选。 **备份过程运行的本地时间**(@BackupHour):默认值是**NULL**。 备份作业不是与时区的关联[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机和运行在午夜 UTC 时间 (0000) 运行。 如果想要备份的时区中的特定小时在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机上，输入一个整数值介于 0 （午夜） 到 23 （晚上 11 点） 作为本地时间 （小时）。 
+   5. 可选。 **备份过程运行的本地时间**(@BackupHour):默认值是 **NULL**。 备份作业不是与时区的关联[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机和运行在午夜 UTC 时间 (0000) 运行。 如果想要备份的时区中的特定小时在[!INCLUDE[btsBizTalkServerNoVersion](../includes/btsbiztalkservernoversion-md.md)]计算机上，输入一个整数值介于 0 （午夜） 到 23 （晚上 11 点） 作为本地时间 （小时）。 
 
-   6. 可选。 **使用本地时间**(@UseLocalTime):指示要使用本地时间的过程。 默认值是**0**，并使用当前 UTC 时间 – getutcdate （） – 2007年-05-04 01:34:11.933。 如果设置为**1**，然后，它使用本地时间 – getdate （） – 2007年-05-03 18:34:11.933
+   6. 可选。 **使用本地时间**(@UseLocalTime):指示要使用本地时间的过程。 默认值是 **0**，并使用当前 UTC 时间 – getutcdate （） – 2007年-05-04 01:34:11.933。 如果设置为**1**，然后，它使用本地时间 – getdate （） – 2007年-05-03 18:34:11.933
   
    在以下示例中，每日备份会在凌晨 2 点创建并存储在 m:\ 驱动器：  
   
@@ -146,7 +146,7 @@ ms.locfileid: "65341264"
   
 7. 选择**清除备份历史记录**步骤，，然后选择**编辑**。 在中**命令**框中，更新参数值：  
   
-   1. <strong>@DaysToKeep</strong>：默认值是**14 天**。 确定多长时间的备份历史记录保留在`Adm_BackupHistory`表。 定期清除备份历史记录有助于保持`Adm_BackupHistory`到适当大小的表。 
+   1. <strong>@DaysToKeep</strong>：默认值是 **14 天**。 确定多长时间的备份历史记录保留在`Adm_BackupHistory`表。 定期清除备份历史记录有助于保持`Adm_BackupHistory`到适当大小的表。 
     
    2. 可选。 <strong>@UseLocalTime</strong>：指示要使用本地时间的过程。 默认值为 0。 它使用当前 UTC 时间 – getutcdate （） – 2007年-05-04 01:34:11.933。 如果设置为 1，然后使用本地时间 – getdate （） – 2007年-05-03 18:34:11.933
   
