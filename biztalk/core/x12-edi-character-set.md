@@ -13,10 +13,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: anneta
 ms.openlocfilehash: b6fb92d0b8a20e9ca4e1a71aead55af21b1daeea
-ms.sourcegitcommit: 381e83d43796a345488d54b3f7413e11d56ad7be
+ms.sourcegitcommit: bab8f4abca27edc45f9f4601ada6f3fc6a2b87cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2019
+ms.lasthandoff: 07/04/2019
 ms.locfileid: "65394785"
 ---
 # <a name="x12-edi-character-set"></a>X12 EDI 字符集
@@ -26,8 +26,8 @@ ms.locfileid: "65394785"
 |                                                                   |                                  字符集                                   |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------|
 |             仅 Ñ EDI 文档中的字符              |                            使用扩展的字符集                            |
-|           抑音符 (\`) 中的 EDI 文档 |                             使用 UTF8 字符集                              |
-| Ñ 字符**并**抑音符 (\`) 在同一文档中: | 的入站的文档必须具有 UTF8 编码<br />-使用 UTF8 字符集 |
+|           抑音符 (\`) EDI 文档中            |                              使用 UTF8 字符集                              |
+| Ñ 字符**并**抑音符 (\`) 在同一文档中： | -入站的文档必须具有 UTF8 编码<br />-使用 UTF8 字符集 |
 
  以下链接提供了有关 EDI 字符集的详细信息：  
 
