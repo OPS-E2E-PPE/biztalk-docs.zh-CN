@@ -1,0 +1,46 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/**.md",
+          "**/**.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.gif",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "breadcrumb_path": "/host-integration-server/breadcrumb/toc.json",
+      "layout": "Conceptual",
+      "titleSuffix": "Host Integration Server",
+      "uhfHeaderId": "MSDocsHeader-His",
+      "extendBreadcrumb": true
+    },
+    "fileMetadata": {},
+    "template": [],
+    "dest": "his",
+    "markdownEngineName": "markdig"
+  }
+}
