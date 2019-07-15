@@ -4,41 +4,8 @@
       "docset_name": "e2eppe-biztalk",
       "build_source_folder": "biztalk",
       "build_output_subfolder": "e2eppe-biztalk",
-      "locale": "zh-cn",
+      "locale": "zh-CN",
       "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "e2eppe-biztalk-technical-reference",
-      "build_source_folder": "technical-reference",
-      "build_output_subfolder": "e2eppe-biztalk-technical-reference",
-      "locale": "zh-cn",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "e2eppe-his",
-      "build_source_folder": "his",
-      "build_output_subfolder": "e2eppe-his",
-      "locale": "zh-cn",
-      "monikers": [],
-      "moniker_ranges": [],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
@@ -49,26 +16,32 @@
       "template_folder": "_themes"
     }
   ],
-  "notification_subscribers": [],
-  "sync_notification_subscribers": [],
+  "notification_subscribers": [
+    "pacort@microsoft.com"
+  ],
   "branches_to_filter": [
-    "live"
+  "live"
   ],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/biztalk-docs.zh-CN",
   "git_repository_branch_open_to_public_contributors": "live",
-  "continue_with_document_error": true,
-  "skip_source_output_uploading": false,
-  "need_preview_pull_request": true,
   "contribution_branch_mappings": {
     "live-sxs": "live"
   },
+  "continue_with_document_error": true,
+  "skip_source_output_uploading": false,
+  "need_preview_pull_request": true,
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.zh-cn",
+      "url": "https://github.com/Microsoft/templates.docs.msft.zh-CN",
       "branch": "master",
       "branch_mapping": {}
     },
+     {
+         "path_to_root": "_themes.pdf",
+         "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+         "branch": "master"
+     },
     {
       "path_to_root": "_repo.en-us",
       "url": "https://github.com/OPS-E2E-PPE/biztalk-docs",
@@ -79,11 +52,20 @@
       }
     }
   ],
-  "branch_target_mapping": {},
   "need_generate_pdf_url_template": true,
-  "targets": {
-    "pdf": {
-      "template_folder": "_themes.pdf"
-    }
-  }
+"branch_target_mapping": {
+     "live-sxs": [
+           "Publish",
+           "Pdf" 
+    ],
+    "live": [
+           "Publish",
+           "Pdf"
+    ]
+},
+"Targets": {
+     "Pdf": {
+               "template_folder": "_themes.pdf"
+     }
+}
 }
