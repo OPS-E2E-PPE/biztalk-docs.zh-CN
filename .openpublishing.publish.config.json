@@ -20,14 +20,16 @@
     "pacort@microsoft.com"
   ],
   "branches_to_filter": [
-  "live",
-  "docs-build-v3"
+    "live",
+    "docs-build-v3",
+    "docs-build-v3-loc"
   ],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/biztalk-docs.zh-CN",
   "git_repository_branch_open_to_public_contributors": "live",
   "contribution_branch_mappings": {
     "live-sxs": "live",
-    "docs-build-v3-sxs":"docs-build-v3"
+    "docs-build-v3-sxs":"docs-build-v3",
+    "docs-build-v3-loc-sxs": "docs-build-v3-loc"
   },
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
